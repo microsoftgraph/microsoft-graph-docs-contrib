@@ -1,25 +1,25 @@
 ---
 title: "Get shared or delegated Outlook calendar and its events"
-description: "Read events in a shared or delegated calendar. You can get a shared calendar or events directly from a calendar owner's mailbox or from a sharee's mailbox."
+description: "Read events in a shared or delegated calendar. You can get a shared calendar or events directly from a calendar owner's mailbox or from a share recipient's mailbox."
 author: "juforan"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Get shared or delegated Outlook calendar and its events
 
 In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the shared calendar can be the owner's primary calendar or a custom calendar created by the owner. The owner can also grant a delegate to their primary calendar and act on their behalf to receive or respond to meeting requests or create or change items in the primary calendar.
 
-Programmatically, Microsoft Graph supports reading and writing events in calendars that have been shared by other users, as well as reading the shared calendars and updating the calendar name for sharees. The support also applies to calendars that have been delegated. The rest of this article describes reading events in a shared or delegated calendar. For creating events, refer to [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md).
+Programmatically, Microsoft Graph supports reading and writing events in calendars that have been shared by other users, as well as reading the shared calendars and updating the calendar name for share recipients. The support also applies to calendars that have been delegated. The rest of this article describes reading events in a shared or delegated calendar. For creating events, refer to [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md).
 
-## Sharee: Get a shared calendar or its events directly from calendar owner's mailbox
+## Share recipient: Get a shared calendar or its events directly from calendar owner's mailbox
 
 The three examples below use this scenario: in Outlook, Alex has shared his primary calendar with Megan and given Megan read permissions. If Megan signs into your app and provides _delegated permissions_ (Calendars.Read.Shared or Calendars.ReadWrite.Shared), on behalf of Megan, your app can access Alex' primary calendar and its events directly from Alex' mailbox.
 
-The three examples specify the owner's identity (Alex' user ID or user principal name) and the `calendar` shortcut. They access calendar and event IDs that correspond to only the owner's mailbox. Specifying these calendar and event IDs in the sharee's mailbox (Megan's user ID or user principal name) would return an error. To use calendar and event IDs that correspond to the sharee's mailbox, see [Sharee: Get shared, custom calendar or its events from sharee's mailbox](#sharee-get-shared-custom-calendar-or-its-events-from-sharees-mailbox). 
+The three examples specify the owner's identity (Alex' user ID or user principal name) and the `calendar` shortcut. They access calendar and event IDs that correspond to only the owner's mailbox. Specifying these calendar and event IDs in the share recipient's mailbox (Megan's user ID or user principal name) would return an error. To use calendar and event IDs that correspond to the share recipient's mailbox, see [Share recipient: Get shared, custom calendar or its events from share recipient's mailbox](#share-recipient-get-shared-custom-calendar-or-its-events-from-share-recipients-mailbox).
 
 > [!NOTE]
-> The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
+> The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](change-notifications-overview.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
 
 ### Megan: Get the shared, primary calendar directly from Alex' mailbox
 
@@ -30,7 +30,7 @@ Signed in as Megan, get the primary calendar that Alex has shared with Megan, di
 GET https://graph.microsoft.com/v1.0/users/{Alex-userId | Alex-userPrincipalName}/calendar
 ```
 
-On successful completion, you'll get HTTP 200 OK and a [calendar](/graph/api/resources/calendar) instance that represents Alex' shared, primary calendar, in Alex' mailbox.
+On successful completion, you get HTTP 200 OK and a [calendar](/graph/api/resources/calendar) instance that represents Alex' shared, primary calendar, in Alex' mailbox.
 
 ### Megan: Get an event in the shared, primary calendar directly from Alex' mailbox
 
@@ -56,10 +56,10 @@ On successful completion, you'll get HTTP 200 OK and a collection of [event](/gr
 
 The same GET capabilities apply if Alex has delegated Megan access to Alex' primary calendar, or if Alex has delegated Megan his entire mailbox.
 
-If Alex has not shared nor delegated his primary calendar with Megan, specifying Alex’s user ID or user principal name in the preceding GET operations will return an error. 
+If Alex hasn't shared nor delegated his primary calendar with Megan, specifying Alex's user ID or user principal name in the preceding GET operations return an error.
 
 
-## Sharee: Get shared, custom calendar or its events from sharee's mailbox
+## Share recipient: Get shared, custom calendar or its events from share recipient's mailbox
 
 If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids parties") with Adele, and Adele has provided delegated permissions (Calendars.Read or Calendars.ReadWrite), your app can get the events or calendar from the local copy of Alex' calendar in Adele's mailbox, as described below.
 
@@ -74,7 +74,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
     GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars
     ```
 
-    A successful response includes the response code HTTP 200, and the collection of calendars that Adele has access to, including the calendar ("Kids parties") that has the owner name as "Alex Wilber" as the second calendar in the response. For a sharee, Adele, the **canShare** property of the shared calendar is always false.
+    A successful response includes the response code HTTP 200, and the collection of calendars that Adele has access to, including the calendar ("Kids parties") that has the owner name as "Alex Wilber" as the second calendar in the response. For a share recipient, Adele, the **canShare** property of the shared calendar is always false.
 
     <!-- {
       "blockType": "response",
@@ -100,7 +100,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
                 "canEdit": true,
                 "owner": {
                     "name": "Adele Vance",
-                    "address": "AdeleV@contoso.OnMicrosoft.com"
+                    "address": "AdeleV@contoso.com"
                 }
             },
             {
@@ -113,7 +113,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
                 "canEdit": false,
                 "owner": {
                     "name": "Alex Wilber",
-                    "address": "AlexW@contoso.OnMicrosoft.com"
+                    "address": "AlexW@contoso.com"
                 }
             }
         ]
@@ -134,7 +134,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
     GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars/AAMkADAABf0JlyAAA=/events
     ```
 
-On successful completion, you'll get HTTP 200 OK and the requested event, events, or calendar that Alex has shared with Adele.
+On successful completion, you get HTTP 200 OK and the requested event, events, or calendar that Alex has shared with Adele.
 
 ## Next steps
 

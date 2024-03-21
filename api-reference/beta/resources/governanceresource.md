@@ -1,10 +1,11 @@
 ---
 title: "governanceResource resource type"
-description: "Represents resources that could be managed by Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, a SQL database, etc."
+description: "Represents resources that are managed Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, etc."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governanceResource resource type
@@ -15,12 +16,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Represents resources that could be managed by Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, a SQL database, etc.
+Represents Privileged Identity Management (PIM) resources. For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, etc.
 
 
 ## Methods
 
-| Method		  | Return Type	|Description|
+| Method          | Return Type    |Description|
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md) collection|List a collection of resources the requestor has access to.|
 |[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Read properties and relationships of a resource entity specified by id.|
@@ -29,7 +30,7 @@ Represents resources that could be managed by Privileged Identity Management (PI
 No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity set for now.
 
 ## Properties
-| Property	        |Type	      |Description|
+| Property            |Type          |Description|
 |:------------------|:----------|:----------|
 |id                 |String     |The id of the resource. It is in GUID format.|
 |externalId           |String   |The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
@@ -38,22 +39,22 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity se
 |status             |String     |The status of a given resource. For example, it could represent whether the resource is locked or not (values: `Active`/`Locked`). Note: This property may be extended in the future to support more scenarios.|
 |registeredDateTime|DateTimeOffset      |Represents the date time when the resource is registered in PIM.|
 |registeredRoot|String      |The externalId of the resource's root scope that is registered in PIM. The root scope can be the parent, grandparent, or higher ancestor resources.|
-|roleAssignmentCount|Int32      |Optional. The number of role assignments for the given resource. To get the property, please explictly use `$select=roleAssignmentCount` in the query.|
-|roleDefinitionCount|Int32      |Optional. The number of role definitions for the given resource. To get the property, please explictly use `$select=roleDefinitionCount` in the query.|
-|permissions|[governancePermission](../resources/governancepermission.md)      |Optional. It represents the status of the requestor's access to the resource.To get the property, please explictly use `$select=permissions` in the query.|
+|roleAssignmentCount|Int32      |Optional. The number of role assignments for the given resource. To get the property, explicitly  use `$select=roleAssignmentCount` in the query.|
+|roleDefinitionCount|Int32      |Optional. The number of role definitions for the given resource. To get the property, explicitly  use `$select=roleDefinitionCount` in the query.|
+|permissions|[governancePermission](../resources/governancepermission.md)      |Optional. It represents the status of the requestor's access to the resource. To get the property, explicitly use `$select=permissions` in the query.|
 
 ## Relationships
-| Relationship   | Type	                                        |Description|
+| Relationship   | Type                                            |Description|
 |:---------------|:---------------------------------------------|:----------|
 |roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) collection|The collection of role assignments for the resource.|
-|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) collection|The collection of role defintions for the resource.|
+|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) collection|The collection of role definitions for the resource.|
 |roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) collection|The collection of role assignment requests for the resource.|
 |roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md) collection|The collection of role settings for the resource.|
 |parent          |[governanceResource](../resources/governanceresource.md)           |Read-only. The parent resource. for `pimforazurerbac` scenario, it can represent the subscription the resource belongs to.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -1,9 +1,9 @@
 ---
 title: "samlOrWsFedExternalDomainFederation resource type"
-description: "Represents SAML/WS-Fed federation set up with an Azure Active Directory (Azure AD) tenant"
+description: "Represents SAML/WS-Fed federation set up with a Microsoft Entra tenant"
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource that allows an Azure Active Directory (Azure AD) tenant to set up federation with another organization whose identity provider (IdP) supports either the SAML or WS-Fed protocol. This enables the Azure AD tenant to allow guest users to access its resources. For more information on SAML/WS-Fed IdP federation, see [Federation with SAML/WS-Fed identity providers for guest users](/azure/active-directory/external-identities/direct-federation).
+A resource that allows a Microsoft Entra tenant to set up federation with another organization whose identity provider (IdP) supports either the SAML or WS-Fed protocol. This enables the Microsoft Entra tenant to allow guest users to access its resources. For more information on SAML/WS-Fed IdP federation, see [Federation with SAML/WS-Fed identity providers for guest users](/azure/active-directory/external-identities/direct-federation).
 
 Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 
@@ -35,9 +35,9 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 |id|String|The identifier of the identity provider. Inherited from [entity](../resources/entity.md).|
 |issuerUri|String|Issuer URI of the federation server. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |metadataExchangeUri|String|URI of the metadata exchange endpoint used for authentication from rich client applications. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|passiveSignInUri|String|URI that web-based clients are directed to when signing in to Azure AD services. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|passiveSignInUri|String|URI that web-based clients are directed to when signing in to Microsoft Entra services. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |preferredAuthenticationProtocol|String|Preferred authentication protocol. Supported values include `saml` or `wsfed`. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|signingCertificate|String|Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.  <br/><br/> This property is used in the following scenarios: <ul><li> if a rollover is required outside of the autorollover update <li>a new federation service is being set up <li> if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated. </ul> <br/><br/> Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available. <br/><br/> Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|signingCertificate|String|Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.  <br/><br/> This property is used in the following scenarios: <ul><li> if a rollover is required outside of the autorollover update <li>a new federation service is being set up <li> if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated. </ul> <br/><br/> Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and will update the federation settings for the domain when a new certificate is available. <br/><br/> Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 
 ## Relationships
 |Relationship|Type|Description|

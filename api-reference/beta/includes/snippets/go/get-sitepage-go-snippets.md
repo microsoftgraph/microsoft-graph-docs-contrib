@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.SiteItemPageItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","title"},
-	Expand: [] string {"webparts"},
-}
-configuration := &graphconfig.SiteItemPageItemRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
 
-result, err := graphClient.SitesById("site-id").PagesById("sitePage-id").Get(context.Background(), configuration)
+
+graphSitePage, err := graphClient.Sites().BySiteId("site-id").Pages().ByBaseSitePageId("baseSitePage-id").GraphSitePage().Get(context.Background(), nil)
 
 
 ```

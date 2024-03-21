@@ -3,7 +3,7 @@ title: "customTaskExtensionCallbackData resource type"
 description: "Represents the operation status that the logic app returns indicating whether or not the Logic App successfully ran on basis of that the taskProcessingResult processing status will be updated."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -32,7 +32,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.identityGovernance.customTaskExtensionCallbackData"
+  "@odata.type": "microsoft.graph.identityGovernance.customTaskExtensionCallbackData",
+  "baseType": "microsoft.graph.customExtensionData"
 }
 -->
 ``` json

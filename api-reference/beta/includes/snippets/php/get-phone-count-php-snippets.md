@@ -6,24 +6,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ContactsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ContactsRequestBuilderGetQueryParameters();
-$queryParameters->search = "\"displayName:wa\"";
-$queryParameters->count = true;
-
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = ContactsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->search = "\"displayName:wa\"";
+$queryParameters->count = true;
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->contacts()->get($requestConfiguration);
 
+$result = $graphServiceClient->contacts()->get($requestConfiguration)->wait();
 
 ```

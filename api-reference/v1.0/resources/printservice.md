@@ -1,9 +1,9 @@
 ---
 title: printService resource type
-description: Represents an Azure AD tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (e.g., discovery, notifications, registration and IPP) and have one or more endpoints.
+description: Represents a Microsoft Entra tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (for example, discovery, notifications, registration and IPP) and have one or more endpoints.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure AD tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (discovery, notifications, registration, and IPP) and have one or more endpoints.
+Represents a Microsoft Entra tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (discovery, notifications, registration, and IPP) and have one or more endpoints.
 
 ## Methods
 |Method|Return type|Description|
@@ -23,7 +23,7 @@ Represents an Azure AD tenant-specific description of a print service instance. 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The service's identifier. Read-only.|
+|id|String|The identifier of the service. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -31,7 +31,7 @@ Represents an Azure AD tenant-specific description of a print service instance. 
 |endpoints|[printServiceEndpoint](printserviceendpoint.md) collection| Endpoints that can be used to access the service. Read-only. Nullable.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -45,4 +45,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-

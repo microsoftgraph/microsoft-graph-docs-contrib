@@ -3,7 +3,7 @@ title: "alertRecord resource type"
 description: "Represents the record of an alert event triggered by a rule."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -34,9 +34,9 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alertImpact|[microsoft.graph.deviceManagement.alertImpact](../resources/devicemanagement-alertimpact.md)|The impact of the alert event. Consists of a number followed by the aggregation type. For example, `6 affectedCloudPcCount` means that 6 Cloud PCs are affected. `12 affectedCloudPcPercentage` means 12% of Cloud PCs are affected.|
+|alertImpact|[microsoft.graph.deviceManagement.alertImpact](../resources/devicemanagement-alertimpact.md)|The impact of the alert event. Consists of a list of key-value pair and a number followed by the aggregation type. For example, `6 affectedCloudPcCount` means that 6 Cloud PCs are affected. `12 affectedCloudPcPercentage` means 12% of Cloud PCs are affected. The list of key-value pair indicates the details of the alert impact.|
 |alertRuleId|String|The corresponding ID of the alert rule.|
-|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](../resources/devicemanagement-alertrule.md#alertruletemplate-values)|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
+|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](../resources/devicemanagement-alertrule.md#alertruletemplate-values)|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`, `cloudPcInGracePeriodScenario`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `cloudPcInGracePeriodScenario`.|
 |detectedDateTime|DateTimeOffset|The date and time when the alert event was detected. The Timestamp type represents date and time information using ISO 8601 format. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayName|String|The display name of the alert record.|
 |id|String|The unique identifier for the alert record. Inherited from [entity](../resources/entity.md).|

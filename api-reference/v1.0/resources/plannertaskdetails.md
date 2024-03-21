@@ -3,7 +3,7 @@ title: "plannerTaskDetails resource type"
 description: "Represents the additional information about a task. Each task object has a details object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents the additional information about a task. Each [task](plannertask.md) 
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
 |description|String|Description of the task.|
-|id|String| Read-only. ID of the task details. It is 28 characters long and case-sensitive. [Format validation](planner-identifiers-disclaimer.md) is done on the service.|
+|id|String| Read-only. ID of the task details. It's 28 characters long and case-sensitive. [Format validation](planner-identifiers-disclaimer.md) is done on the service.|
 |previewType|string|This sets the type of preview that shows up on the task. The possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|The collection of references on the task.|
 
@@ -35,7 +35,7 @@ None.
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",

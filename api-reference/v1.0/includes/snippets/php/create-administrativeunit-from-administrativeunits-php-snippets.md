@@ -6,19 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AdministrativeUnit();
 $requestBody->setDisplayName('Seattle District Technical Schools');
-
 $requestBody->setDescription('Seattle district technical schools administration');
-
 $requestBody->setVisibility('HiddenMembership');
 
-
-
-$requestResult = $graphServiceClient->directory()->administrativeUnits()->post($requestBody);
-
+$result = $graphServiceClient->directory()->administrativeUnits()->post($requestBody)->wait();
 
 ```

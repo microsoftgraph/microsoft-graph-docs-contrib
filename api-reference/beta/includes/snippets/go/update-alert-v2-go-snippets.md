@@ -4,11 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewAlert()
-assignedTo := "secAdmin@contoso.onmicrosoft.com"
+
+requestBody := graphmodelssecurity.NewAlert()
+assignedTo := "secAdmin@contoso.com"
 requestBody.SetAssignedTo(&assignedTo) 
 classification := graphmodels.TRUEPOSITIVE_ALERTCLASSIFICATION 
 requestBody.SetClassification(&classification) 
@@ -17,7 +25,7 @@ requestBody.SetDetermination(&determination)
 status := graphmodels.INPROGRESS_ALERTSTATUS 
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.Security().Alerts_v2ById("alert-id").Patch(context.Background(), requestBody, nil)
+alerts_v2, err := graphClient.Security().Alerts_v2().ByAlertId("alert-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

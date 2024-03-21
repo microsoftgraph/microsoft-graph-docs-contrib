@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphprint "github.com/microsoftgraph/msgraph-sdk-go/print"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewCreatePostRequestBody()
+
+requestBody := graphprint.NewCreatePostRequestBody()
 displayName := "Test Printer"
 requestBody.SetDisplayName(&displayName) 
 manufacturer := "Test Printer Manufacturer"

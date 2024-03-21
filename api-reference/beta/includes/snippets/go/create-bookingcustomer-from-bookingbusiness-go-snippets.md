@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewBookingCustomer()
 displayName := "Joni Sherman"
@@ -48,7 +56,6 @@ physicalAddress1.SetType(&type)
 addresses := []graphmodels.PhysicalAddressable {
 	physicalAddress,
 	physicalAddress1,
-
 }
 requestBody.SetAddresses(addresses)
 
@@ -67,11 +74,10 @@ phone1.SetType(&type)
 phones := []graphmodels.Phoneable {
 	phone,
 	phone1,
-
 }
 requestBody.SetPhones(phones)
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").Customers().Post(context.Background(), requestBody, nil)
+customers, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Customers().Post(context.Background(), requestBody, nil)
 
 
 ```

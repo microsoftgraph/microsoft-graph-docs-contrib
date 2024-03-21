@@ -4,41 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Groups.Item.Team.TeamPutRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Team
 {
-	AdditionalData = new Dictionary<string, object>
+	MemberSettings = new TeamMemberSettings
 	{
-		{
-			"memberSettings" , new 
-			{
-				AllowCreateUpdateChannels = true,
-			}
-		},
-		{
-			"messagingSettings" , new 
-			{
-				AllowUserEditMessages = true,
-				AllowUserDeleteMessages = true,
-			}
-		},
-		{
-			"funSettings" , new 
-			{
-				AllowGiphy = true,
-				GiphyContentRating = "strict",
-			}
-		},
-		{
-			"discoverySettings" , new 
-			{
-				ShowInTeamsSearchAndSuggestions = true,
-			}
-		},
+		AllowCreateUpdateChannels = true,
+	},
+	MessagingSettings = new TeamMessagingSettings
+	{
+		AllowUserEditMessages = true,
+		AllowUserDeleteMessages = true,
+	},
+	FunSettings = new TeamFunSettings
+	{
+		AllowGiphy = true,
+		GiphyContentRating = GiphyRatingType.Strict,
+	},
+	DiscoverySettings = new TeamDiscoverySettings
+	{
+		ShowInTeamsSearchAndSuggestions = true,
 	},
 };
-await graphClient.Groups["{group-id}"].Team.PutAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Groups["{group-id}"].Team.PutAsync(requestBody);
 
 
 ```

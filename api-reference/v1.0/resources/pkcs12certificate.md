@@ -3,7 +3,7 @@ title: "pkcs12Certificate resource type"
 description: "Represents the configuration for uploading a pkcs12Certificate."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the configuration used to upload a certificate when using HTTPS client-certificate authentication for calling an API connector endpoint. Client certificate authentication is a mutual certificate-based authentication, where the client provides a client certificate to an API endpoint to prove its identity. The configured certificate of an API connector is sent by Azure AD to the given API endpoint, which then validates the certificate.
+Represents the configuration used to upload a certificate when using HTTPS client-certificate authentication for calling an API connector endpoint. Client certificate authentication is a mutual certificate-based authentication, where the client provides a client certificate to an API endpoint to prove its identity. Microsoft Entra ID sends the configured certificate to the given API endpoint, which then validates the certificate.
 
 Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md).
 
@@ -24,7 +24,7 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.pkcs12Certificate"

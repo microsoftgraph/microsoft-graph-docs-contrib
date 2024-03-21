@@ -1,9 +1,9 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "List resource"
-ms.localizationpriority: high
-ms.prod: "sharepoint"
-description: "The list resource represents a list in a site."
+ms.localizationpriority: medium
+ms.subservice: "sharepoint"
+description: "Represents a list in a site."
 doc_type: resourcePageType
 ---
 
@@ -11,86 +11,51 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **list** resource represents a list in a [site][].
-This resource contains the top level properties of the list, including template and field definitions.
+Represents a list in a [site](site.md). This resource contains the top level properties of the list, including template and field definitions.
 
-## Tasks on a list
+## Methods
 
-The following tasks are available for list resources.
+| Method                                                     | Return Type                                                                     | Description                                                                                                                      |
+|:-----------------------------------------------------------|:--------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
+| [Get list](../api/list-get.md)                             | [list](../resources/list.md)                                                    | Get the metadata for a **list**.                                                                                                 |
+| [Create list](../api/list-create.md)                       | [list](../resources/list.md)                                                    | Create a new **list** in a **site**.                                                                                             |
+| [Enumerate list items](../api/listitem-list.md)            | [listItem](../resources/listitem.md) collection                                 | Get the collection of [listItems]( ../resources/listitem.md) in a **list**.                                                      |
+| [Update list item](../api/listitem-update.md)              | [listItem](../resources/listitem.md)                                            | Update the properties on a [listItem]( ../resources/listitem.md).                                                                |
+| [Delete list item](../api/listitem-delete.md)              | None                                                                            | Delete a [listItem]( ../resources/listitem.md) from a **list**.                                                                  |
+| [Create list item](../api/listitem-create.md)              | [listItem](../resources/listitem.md)                                            | Create a new [listItem]( ../resources/listitem.md) in a **list**.                                                                |
+| [Get websocket endpoint](../api/subscriptions-socketio.md) | [subscription](../resources/subscription.md)                                    | Get near-real-time change notifications for a [drive](../resources/drive.md) and **list** using [socket.io](https://socket.io/). |
+| [List operations](../api/list-list-operations.md)          | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a **list**.               |
 
-All examples below are relative to a site, for example, `https://graph.microsoft.com/v1.0/sites/{site-id}`.
-
-| Common task               | HTTP method
-|:--------------------------|:------------------------------
-| [Get list][]              | GET /lists/{list-id}
-| [Create list][]           | POST /lists
-| [Enumerate list items][]  | GET /lists/{list-id}/items
-| [Update list item][]      | PATCH /lists/{list-id}/items/{item-id}
-| [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
-| [Create list item][]      | POST /lists/{list-id}
-| [Get WebSocket channel][] | GET /lists/{list-id}/subscriptions/socketIo
-| [List operations](../api/list-list-operations.md)| GET /lists/{list-id}/operations
-
-[Get list]: ../api/list-get.md
-[Create list]: ../api/list-create.md
-[Enumerate list items]: ../api/listitem-list.md
-[Update list item]: ../api/listitem-update.md
-[Delete list item]: ../api/listitem-delete.md
-[Create list item]: ../api/listitem-create.md
-[Get WebSocket channel]: ../api/subscriptions-socketio.md
 
 ## Properties
 
-The **list** resource has the following properties.
-
-| Property name   | Type            | Description                                                          |
-|:----------------|:----------------|:---------------------------------------------------------------------|
-| **displayName** | string          | The displayable title of the list.                                   |
-| **list**        | [listInfo][]    | Provides additional details about the list.                          |
-| **system**      | [systemFacet][] | If present, indicates that this is a system-managed list. Read-only. |
-
-The following properties are inherited from **[baseItem][]**.
-
-| Property name            | Type              | Description                                                              |
-|:-------------------------|:------------------|:-------------------------------------------------------------------------|
-| **createdBy**            | [identitySet][]   | Identity of the creator of this item. Read-only.                         |
-| **createdDateTime**      | DateTimeOffset    | The date and time the item was created. Read-only.                       |
-| **description**          | string            | The descriptive text for the item.                                       |
-| **eTag**                 | string            | ETag for the item.                                                       |
-| **id**                   | string            | The unique identifier of the item. Read-only.                            |
-| **name**                 | string            | The name of the item. Read-only.                                         |
-| **lastModifiedBy**       | [identitySet][]   | Identity of the last modifier of this item. Read-only.                   |
-| **lastModifiedDateTime** | DateTimeOffset    | The date and time the item was last modified. Read-only.                 |
-| **parentReference**      | [itemReference][] | Parent information, if the item has a parent. Read-write.                |
-| **sharepointIds**        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only. |
-| **webUrl**               | string (url)      | URL that displays the item in the browser. Read-only.                    |
+| Property             | Type                              | Description                                                                                           |
+|:---------------------|:----------------------------------|:------------------------------------------------------------------------------------------------------|
+| createdBy            | [identitySet](identityset.md)     | Identity of the creator of this item. Read-only. Inherited from [baseItem](baseitem.md).              |
+| createdDateTime      | DateTimeOffset                    | The date and time when the item was created. Read-only. Inherited from [baseItem](baseitem.md).       |
+| description          | String                            | The descriptive text for the item. Inherited from [baseItem](baseitem.md).                            |
+| displayName          | String                            | The displayable title of the list.                                                                    |
+| eTag                 | String                            | ETag for the item. Inherited from [baseItem](baseitem.md).                                            |
+| id                   | String                            | The unique identifier of the item. Read-only. Inherited from [baseItem](baseitem.md).                 |
+| lastModifiedBy       | [identitySet](identityset.md)     | Identity of the last modifier of this item. Read-only. Inherited from [baseItem](baseitem.md).        |
+| lastModifiedDateTime | DateTimeOffset                    | The date and time when the item was last modified. Read-only. Inherited from [baseItem](baseitem.md). |
+| list                 | [listInfo](listinfo.md)           | Contains more details about the list.                                                                 |
+| name                 | String                            | The name of the item. Read-only. Inherited from [baseItem](baseitem.md).                              |
+| parentReference      | [itemReference](itemreference.md) | Parent information if the item has a parent. Read-write. Inherited from [baseItem](baseitem.md).      |
+| sharepointIds        | [sharepointIds](sharepointids.md) | Returns identifiers useful for SharePoint REST compatibility. Read-only.                              |
+| system               | [systemFacet](systemfacet.md)     | If present, indicates that the list is system-managed. Read-only.                                     |
+| webUrl               | String                            | URL that displays the item in the browser. Read-only. Inherited from [baseItem](baseitem.md).         |
 
 ## Relationships
 
-The **list** resource has the following relationships to other resources.
-
-| Relationship name | Type                             | Description
-|:------------------|:---------------------------------|:----------------------
-| **columns**       | Collection([columnDefinition][]) | The collection of field definitions for this list.
-| **contentTypes**  | Collection([contentType][])      | The collection of content types present in this list.
-| **drive**         | [drive][]                        | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
-| **items**         | Collection([listItem][])         | All items contained in the list.
-| **operations** | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list. 
-| **subscriptions** | Collection([subscription][])     | The set of subscriptions on the list.
-
-[baseItem]: baseitem.md
-[contentType]: contenttype.md
-[drive]: drive.md
-[driveItem]: driveitem.md
-[columnDefinition]: columndefinition.md
-[identitySet]: identityset.md
-[itemReference]: itemreference.md
-[listInfo]: listinfo.md
-[listItem]: listitem.md
-[sharepointIds]: sharepointids.md
-[site]: site.md
-[systemFacet]: systemfacet.md
-[subscription]: subscription.md
+| Relationship  | Type                                                                            | Description                                                                                                            |
+|:--------------|:--------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
+| columns       | [columnDefinition](columndefinition.md) collection                              | The collection of field definitions for this list.                                                                     |
+| contentTypes  | [contentType](contenttype.md) collection                                        | The collection of content types present in this list.                                                                  |
+| drive         | [drive](drive.md)                                                               | Allows access to the list as a **drive** resource with [driveItems](driveitem.md). Only present on document libraries. |
+| items         | [listItem](listitem.md) collection                                              | All items contained in the list.                                                                                       |
+| operations    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list.                                                                 |
+| subscriptions | [subscription](subscription.md) collection                                      | The set of subscriptions on the list.                                                                                  |
 
 ## JSON representation
 
@@ -109,32 +74,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
-  "displayName": "title of list",
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
-  "list": {
-    "@odata.type": "microsoft.graph.listInfo",
-    "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
-  },
-  "operations": [ { "@odata.type": "microsoft.graph.richLongRunningOperation" }],
-  "system": false,
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of list",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of list",
-  "eTag": "string",
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "eTag": "String",
+  "id": "String (identifier)",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
+  "lastModifiedDateTime": "String (timestamp)",
+  "list": { "@odata.type": "microsoft.graph.listInfo" },
+  "name": "String",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "webUrl": "url to visit the list in a browser"
+  "system": "Boolean",
+  "webUrl": "String"
 }
 ```
 

@@ -2,33 +2,35 @@
 title: "chatMessage: setReaction"
 description: "Set a reaction to a single message or message reply in a channel or a chat."
 author: "sumanac"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---
 
-# chatMessage: SetReaction
+# chatMessage: setReaction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set a reaction to a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+Set a reaction to a single [chatMessage](../resources/chatmessage.md) or a [chat message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for channel
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.Send,  |
+|Delegated (work or school account)| ChannelMessage.Send  |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
 ### Permissions for chat
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| Chat.ReadWrite, ChatMessage.Send |
@@ -37,21 +39,30 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To set a reaction to a **chatMessage** in a **channel**:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/setReaction
 POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/setReaction
 POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/setReaction
+```
+
+To set a reaction to a **chatMessage** in a **chat**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /chats/{chatId}/messages/{chatMessageId}/setReaction
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

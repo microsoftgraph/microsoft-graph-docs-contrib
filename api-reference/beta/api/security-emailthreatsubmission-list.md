@@ -3,7 +3,7 @@ title: "List emailThreatSubmissions"
 description: "Get a list of the emailThreatSubmission objects and their properties."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -14,14 +14,13 @@ Namespace: microsoft.graph.security
 
 Get a list of the [emailThreatSubmission](../resources/security-emailthreatsubmission.md) objects and their properties.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ThreatSubmission.Read, ThreatSubmission.ReadWrite, ThreatSubmission.Read.All, ThreatSubmission.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|ThreatSubmission.Read.All, ThreatSubmission.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_emailthreatsubmission_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-emailthreatsubmission-list-permissions.md)]
 
 ## HTTP request
 
@@ -39,10 +38,10 @@ This method supports `$filter`, `$top`, `$skipToken` and `$count` to help custom
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,24 +65,32 @@ GET https://graph.microsoft.com/beta/security/threatSubmission/emailThreats
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-emailthreatsubmission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-emailthreatsubmission-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-emailthreatsubmission-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-emailthreatsubmission-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-emailthreatsubmission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-emailthreatsubmission-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-emailthreatsubmission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-emailthreatsubmission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-emailthreatsubmission-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-emailthreatsubmission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-emailthreatsubmission-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -108,7 +115,7 @@ Content-Type: application/json
         {
             "@odata.type": "#microsoft.graph.security.emailThreatSubmission",
             "category": "spam",
-            "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+            "recipientEmailAddress": "tifc@contoso.com",
             "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
             "createdDateTime": "2021-10-10T03:30:18.6890937Z",
             "contentType": "email",
@@ -119,7 +126,7 @@ Content-Type: application/json
                 "user": {
                     "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
                     "displayName": "Ronald Admin",
-                    "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+                    "email": "tifc@contoso.com"
                 }
             },
             "result": {
@@ -141,7 +148,7 @@ Content-Type: application/json
             "receivedDateTime": "2021-10-09T03:30:18.6890937Z",
             "originalCategory": "notSpam",
             "attackSimulationInfo": null,
-            "tenantAllowOrBlockListAction": 
+            "tenantAllowOrBlockListAction":
             {
                 "action": "allow",
                 "expirationDateTime": "2021-10-30T03:30:18.6890937Z",

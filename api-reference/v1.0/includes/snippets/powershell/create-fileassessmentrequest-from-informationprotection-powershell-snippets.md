@@ -8,10 +8,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAssessmentRequest"
-	ExpectedAssessment = "block"
-	Category = "malware"
-	FileName = "test.txt"
-	ContentData = "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
+	expectedAssessment = "block"
+	category = "malware"
+	fileName = "test.txt"
+	contentData = "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
 }
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params

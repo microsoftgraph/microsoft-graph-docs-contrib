@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The SearchResult resource indicates than an item is the response to a search query."
 ms.date: 09/10/2017
 title: SearchResult
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # SearchResult resource type
 

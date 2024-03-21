@@ -3,7 +3,7 @@ title: "downgradeJustification resource type"
 description: "Represents the user input on why downgrade was performed."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -18,14 +18,14 @@ Represents the user input on why downgrade was performed. The downgrade justific
 ## Properties
 | Property             | Type    | Description                                                                                          |
 | :------------------- | :------ | :--------------------------------------------------------------------------------------------------- |
-| isDowngradeJustified | Boolean | Indicates whether the downgrade is or is not justified.                                              |
-| justificationMessage | String  | Message that indicates why a downgrade is justified. The message will appear in administrative logs. |
+| isDowngradeJustified | Boolean | Indicates whether the downgrade is or isn't justified.                                              |
+| justificationMessage | String  | Message that indicates why a downgrade is justified. The message appears in administrative logs. |
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.downgradeJustification"

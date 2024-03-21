@@ -4,7 +4,7 @@ description: "Describes a reference to another object defined in the same direct
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # referencedObject resource type
@@ -39,7 +39,6 @@ The following is a JSON representation of the resource.
   "referencedObjectName": "String",
   "referencedProperty": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

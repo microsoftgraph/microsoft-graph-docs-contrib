@@ -3,7 +3,7 @@ title: "workforceIntegration resource type"
 description: "An instance of a workforce integration with shifts."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -29,12 +29,12 @@ An instance of a workforce integration with shifts.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|apiVersion|Int32|API version for the call back URL. Start with 1.|
+|apiVersion|Int32|API version for the callback URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supports|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. <br><br>The possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. <br><br>If selecting more than one value, all values must start with the first letter in uppercase.|
-|supportedEntities|workforceIntegrationSupportedEntities | This property has replaced **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property is still supported in beta for the time being. <br><br>The possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. <br><br>If selecting more than one value, all values must start with the first letter in uppercase.|
+|supports|workforceIntegrationSupportedEntities | The Shifts entities supported for synchronous change notifications. Shifts make a callback to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. <br><br>The possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. <br><br>If selecting more than one value, all values must start with the first letter in uppercase.|
+|supportedEntities|workforceIntegrationSupportedEntities | This property has replaced **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property is still supported in beta for the time being. <br><br>The possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`, `offerShiftRequest`, `unknownFutureValue`, `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `timeCard`, `timeOffReason`, `timeOff`, `timeOffRequest`. <br><br>If selecting more than one value, all values must start with the first letter in uppercase.|
 |url|String| Workforce Integration URL for callbacks from the Shifts service.|
 
 ## Relationships
@@ -43,7 +43,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -6,11 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$requestResult = $graphServiceClient->teamwork()->teamTemplatesById('teamTemplate-id')->definitionsById('teamTemplateDefinition-id')->teamDefinition()->get();
-
+$result = $graphServiceClient->teamwork()->teamTemplates()->byTeamTemplateId('teamTemplate-id')->definitions()->byTeamTemplateDefinitionId('teamTemplateDefinition-id')->teamDefinition()->get()->wait();
 
 ```

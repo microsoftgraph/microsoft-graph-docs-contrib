@@ -3,7 +3,7 @@ title: "provisioningErrorInfo resource type"
 description: "Describes the status of the provisioning event and the associated errors."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -18,7 +18,7 @@ Describes the status of the provisioning event and the associated errors.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|additionalDetails|String|Additional details in case of error.|
+|additionalDetails|String|Additional details if there's error.|
 |errorCategory|provisioningStatusErrorCategory|Categorizes the error code. Possible values are `failure`, `nonServiceFailure`, `success`, `unknownFutureValue`|
 |errorCode|String|Unique error code if any occurred. [Learn more](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |reason|String|Summarizes the status and describes why the status happened.|
@@ -26,7 +26,7 @@ Describes the status of the provisioning event and the associated errors.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

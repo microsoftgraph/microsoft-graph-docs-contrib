@@ -6,15 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OutlookTaskFolder();
 $requestBody->setName('Volunteer');
 
-
-
-$requestResult = $graphServiceClient->me()->outlook()->taskFolders()->post($requestBody);
-
+$result = $graphServiceClient->me()->outlook()->taskFolders()->post($requestBody)->wait();
 
 ```

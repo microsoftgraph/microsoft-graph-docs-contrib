@@ -5,7 +5,7 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
  
@@ -30,7 +30,7 @@ Represents the information specified for the current company in Dynamics 365 Bus
 |:-------------|:--------|:-------------------------------------|
 |id            |GUID|The unique ID of the company. Non-editable.|
 |displayName   |string   |The company's display name.           |
-|address       |[NAV.PostalAddress](../resources/dynamics-complextypes.md)|The company's address. View the complex type for additional detail.|
+|address       |[NAV.PostalAddress](../resources/dynamics-complextypes.md)|The company's address. View the complex type for more details.|
 |phoneNumber   |string   |The company's telephone number.       |
 |faxNumber     |string   |The company's fax number.             |
 |email         |string   |The company's email address.          |
@@ -49,7 +49,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the companyInformation
+Here's a JSON representation of the companyInformation
 ```json
 {
   "id": "GUID",

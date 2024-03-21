@@ -4,24 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String type = "edit";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String scope = "organization";
+com.microsoft.graph.beta.drives.item.items.item.createlink.CreateLinkPostRequestBody createLinkPostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.createlink.CreateLinkPostRequestBody();
+createLinkPostRequestBody.setType("edit");
+createLinkPostRequestBody.setScope("organization");
+var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").createLink().post(createLinkPostRequestBody);
 
-graphClient.me().drive().items("{item-id}")
-	.createLink(DriveItemCreateLinkParameterSet
-		.newBuilder()
-		.withType(type)
-		.withScope(scope)
-		.withExpirationDateTime(null)
-		.withPassword(null)
-		.withMessage(null)
-		.withRecipients(null)
-		.withRetainInheritedPermissions(null)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

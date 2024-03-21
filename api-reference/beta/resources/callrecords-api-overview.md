@@ -1,9 +1,9 @@
 ---
 title: "Working with the call records API in Microsoft Graph"
 description: "The Microsoft Graph call records API allows you to retrieve usage and diagnostics data for calls and online meetings within your organization."
-author: "williamlooney"
+author: "mcm223"
 doc_type: conceptualPageType
-ms.prod: cloud-communications
+ms.subservice: cloud-communications
 ms.localizationpriority: high
 ---
 
@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. You can use the call records APIs to subscribe to call records and look up call records by IDs.
+Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. You can use the call records APIs to subscribe to call records, list call records, and look up call records by IDs. A call record is created after a call or meeting ends and the record is retained for 30 days.
 
 The call records API is defined in the OData sub-namespace, `microsoft.graph.callRecords`.
 
@@ -19,15 +19,19 @@ The call records API is defined in the OData sub-namespace, `microsoft.graph.cal
 
 | Resource | Methods |
 | :-- | :-- |
-| [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
-| [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
-| [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
-| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
+| [callRecord](callrecords-callrecord.md) | [List callRecords](../api/callrecords-cloudcommunications-list-callrecords.md)<br />[Get callRecord](../api/callrecords-callrecord-get.md) |
 | [directRoutingLogRow](callrecords-directroutinglogrow.md) | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md)|
+| [participant](callrecords-participant.md) | [List participants_v2](../api/callrecords-callrecord-list-participants_v2.md) |
+| [pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) | [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md)|
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
+| [pstnOnlineMeetingDialoutReport](callrecords-pstnonlinemeetingdialoutreport.md) | [getPstnOnlineMeetingDialoutReport](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)|
+| [segment](callrecords-segment.md) | [List sessions](../api/callrecords-callrecord-list-sessions.md)<br />[Get callRecord](../api/callrecords-callrecord-get.md) |
+| [session](callrecords-session.md) | [List sessions](../api/callrecords-callrecord-list-sessions.md)<br />[Get callRecord](../api/callrecords-callrecord-get.md) |
+| [smsLogRow](callrecords-smslogrow.md) | [getSmsLog](../api/callrecords-callrecord-getsmslog.md)|
 
 ## Call record structure
 
-The [callRecord](callrecords-callrecord.md) entity represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting.
+The [callRecord](callrecords-callrecord.md) entity represents a single peer-to-peer call or a group call between multiple [participants](callrecords-participant.md), sometimes referred to as an online meeting.
 
 A peer-to-peer call contains a single [session](callrecords-session.md) between the two participants in the call. Group calls contain one or more **session** entities. In a group call, each **session** is between the participant and a service endpoint.
 
@@ -37,7 +41,7 @@ Each **session** contains one or more [segment](callrecords-segment.md) entities
 
 In the diagram above, the numbers denote how many children of each type can be present. For example, a 1..N relationship between a **callRecord** and a **session** means one **callRecord** instance can contain one or more **session** instances. Similarly, a 1..N relationship between a **segment** and a **media** means one **segment** instance can contain one or more [media](callrecords-media.md) streams.
 
-## See also
+## Related content
 
 - [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true)
 

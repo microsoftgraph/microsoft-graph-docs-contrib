@@ -1,9 +1,9 @@
 ---
 title: "plannerExternalReferences resource type"
-description: "The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the task details object. The value in the property-value pair is the externalReference object."
+description: "The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It's part of the task details object. The value in the property-value pair is the externalReference object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -11,15 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.
+The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It's part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.
 
 
 ## Properties
-Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`, `@`, `#` so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.
+Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types can't contain the following characters: `.`, `:`, `%`, `@`, `#` so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

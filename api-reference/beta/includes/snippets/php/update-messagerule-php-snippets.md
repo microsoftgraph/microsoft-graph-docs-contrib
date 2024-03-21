@@ -6,20 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new MessageRule();
 $requestBody->setDisplayName('Important from partner');
-
 $actions = new MessageRuleActions();
 $actions->setMarkImportance(new Importance('high'));
-
-
 $requestBody->setActions($actions);
 
-
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->messageRulesById('messageRule-id')->patch($requestBody);
-
+$result = $graphServiceClient->me()->mailFolders()->byMailFolderId('mailFolder-id')->messageRules()->byMessageRuleId('messageRule-id')->patch($requestBody)->wait();
 
 ```

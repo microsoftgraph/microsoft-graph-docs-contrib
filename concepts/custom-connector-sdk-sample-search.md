@@ -4,7 +4,7 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Follow the steps in this article to add Microsoft Graph connectors SDK data to Microsoft Search."
 ---
 
@@ -63,7 +63,7 @@ In this step, you'll verify that you've successfully added your data to Microsof
 
    ![Example of search results for the word hinge with results showing on the Appliance Parts tab.](images/connectors-sdk/build20.png)
 
-## See also
+## Related content
 
 * [Best practices](/graph/custom-connector-sdk-best-practices)
 * [Troubleshooting issues](/graph/custom-connector-sdk-troubleshooting)

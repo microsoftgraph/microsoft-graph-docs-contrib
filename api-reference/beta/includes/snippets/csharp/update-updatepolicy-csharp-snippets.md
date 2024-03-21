@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
+// Dependencies
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
+
+var requestBody = new UpdatePolicy
 {
 	OdataType = "#microsoft.graph.windowsUpdates.updatePolicy",
-	DeploymentSettings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
+	DeploymentSettings = new DeploymentSettings
 	{
 		OdataType = "microsoft.graph.windowsUpdates.deploymentSettings",
-		Schedule = new Microsoft.Graph.Beta.Models.WindowsUpdates.ScheduleSettings
+		Schedule = new ScheduleSettings
 		{
-			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.GradualRolloutSettings
+			GradualRollout = new RateDrivenRolloutSettings
 			{
 				OdataType = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
 				DurationBetweenOffers = TimeSpan.Parse("P1D"),
@@ -28,6 +31,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Admin.Windows.Updates.UpdatePolicies["{updatePolicy-id}"].PatchAsync(requestBody);
 
 

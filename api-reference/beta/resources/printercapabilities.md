@@ -3,7 +3,7 @@ title: printerCapabilities complex type
 description: Represents the capabilities reported by a printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Represents the capabilities reported by a printer.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|contentTypes|String collection|A list of supported content (MIME) types that the printer supports. It is not guaranteed that the Universal Print service supports printing all of these MIME types.|
+|contentTypes|String collection|A list of supported content (MIME) types that the printer supports. It isn't guaranteed that the Universal Print service supports printing all of these MIME types.|
 |isColorPrintingSupported|Boolean|True if color printing is supported by the printer; false otherwise. Read-only.|
 |feedOrientations|printerFeedOrientation collection|The list of feed orientations that are supported by the printer.|
 |isPageRangeSupported|Boolean|True if the printer supports printing by page ranges; false otherwise.|
@@ -28,7 +28,7 @@ Represents the capabilities reported by a printer.
 |queueBufferSizeInBytes|Int32|The maximum print job queue size that can be stored by the printer.|
 |copiesPerJob|[integerRange](integerrange.md)|The range of copies per job supported by the printer.|
 |finishings|printFinishing collection|Finishing processes the printer supports for a printed document.|
-|mediaColors|String collection|The media (i.e., paper) colors supported by the printer.|
+|mediaColors|String collection|The media (that is, paper) colors supported by the printer.|
 |mediaTypes|String collection|The media types supported by the printer.|
 |mediaSizes|String collection|The media sizes supported by the printer. Supports standard size names for ISO and ANSI media sizes. Valid values are in the following [table](#mediasizes-values).|
 |pagesPerSheet|Int32 collection|Supported number of Input Pages to impose upon a single Impression.|
@@ -42,33 +42,33 @@ Represents the capabilities reported by a printer.
 |bottomMargins|Int32 collection|A list of supported bottom margins(in microns) for the printer.|
 |rightMargins|Int32 collection|A list of supported right margins(in microns) for the printer.|
 |leftMargins|Int32 collection|A list of supported left margins(in microns) for the printer.|
-|collation|Boolean|True if the printer supports collating when printing muliple copies of a multi-page document; false otherwise.|
+|collation|Boolean|True if the printer supports collating when printing multiple copies of a multi-page document; false otherwise.|
 |scalings|printScaling collection|Supported print scalings.|
 
 ## printerFeedOrientation values
 
 |Member|Value|Description|
 |:---|:---|
-|longEdgeFirst|0|The printer will consume sheets from the active tray in "landscape" orientation, with the long edge of the sheet first.|
-|shortEdgeFirst|1|The printer will consume sheets from the active tray in "portrait" orientation, with the short edge of the sheet first.|
-|unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
+|longEdgeFirst|0|The printer consumes sheets from the active tray in "landscape" orientation, with the long edge of the sheet first.|
+|shortEdgeFirst|1|The printer consumes sheets from the active tray in "portrait" orientation, with the short edge of the sheet first.|
+|unknownFutureValue|2|Evolvable enumeration sentinel value. Don't use.|
 
 ### printQuality values
 
 |Member|Value|Description|
 |:---|:---|
-|low|0|The printer will print the job using low (commonly known as "draft") quality.|
-|medium|1|The printer will print the job using medim (commonly known as "normal") quality.|
-|high|2|The printer will print the job using high (commonly known as "best" or "fine") quality.|
-|unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
+|low|0|The printer prints the job using low (commonly known as "draft") quality.|
+|medium|1|The printer prints the job using medium (commonly known as "normal") quality.|
+|high|2|The printer prints the job using high (commonly known as "best" or "fine") quality.|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Don't use.|
 
 ### printDuplexMode values
 
 |Member|Value|Description|
 |:---|:---|:---|
-|flipOnLongEdge|0|The printer will print double-sided, and will flip documents along the long edge.|
-|flipOnShortEdge|1|The printer will print double-sided, and will flip documents along the short edge.|
-|oneSided|2|The printer will print single-sided.|
+|flipOnLongEdge|0|The printer prints double-sided, and flips documents along the long edge.|
+|flipOnShortEdge|1|The printer prints double-sided, and flips documents along the short edge.|
+|oneSided|2|The printer prints single-sided.|
 
 ### printFinishing values
 
@@ -76,7 +76,7 @@ Represents the capabilities reported by a printer.
 |:---|:---|:---|
 |none|3|No finishings. Including this value is equivalent to providing an empty collection of finishings.|
 |staple|4|Staple the document using the printer's default stapling configuration.|
-|punch|5|Hole punch the document using the printer's default hole punch configuration.|
+|punch|5|Hole punches the document using the printer's default hole punch configuration.|
 |cover|6|Apply a cover to the document.|
 |bind|7|Bind the document using the printer's default binding configuration.|
 |saddleStitch|8|Saddle-stich the document using the printer's default stitching configuration.|
@@ -93,16 +93,16 @@ Represents the capabilities reported by a printer.
 |stapleDualTop|29|Staple the document twice along the top edge.|
 |stapleDualRight|30|Staple the document twice along the right edge.|
 |stapleDualBottom|31|Staple the document twice along the bottom edge.|
-|unknownFutureValue|32|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|32|Evolvable enumeration sentinel value. Don't use.|
 
 ## printOrientation values
 
 |Member|Value|Description|
 |:---|:---|:---|
-|portrait|3|The printer will print impressions in the "portrait" orientation.|
-|landscape|4|The printer will print impressions in the "landscape" orientation.|
-|reverseLandscape|5|The printer will print impressions in the "reverse landscape" orientation.|
-|reversePortrait|6|The printer will print impressions in the "reverse portrait" orientation.|
+|portrait|3|The printer prints impressions in the "portrait" orientation.|
+|landscape|4|The printer prints impressions in the "landscape" orientation.|
+|reverseLandscape|5|The printer prints impressions in the "reverse landscape" orientation.|
+|reversePortrait|6|The printer prints impressions in the "reverse portrait" orientation.|
 
 ### printMultipageLayout values
 
@@ -130,12 +130,12 @@ Represents the capabilities reported by a printer.
 
 |Member|Value|Description|
 |:---|:---|:---|
-|auto|0|If the document is larger than the requested media and the margins are non-zero, the printer scales the document like the **fit** printScaling. Otherwise, the printer scales the document using the **fill** printScaling. If the document is smaller than the requested media, 'none' printScaling is used.|
+|auto|0|If the document is larger than the requested media and the margins are nonzero, the printer scales the document like the **fit** printScaling. Otherwise, the printer scales the document using the **fill** printScaling. If the document is smaller than the requested media, 'none' printScaling is used.|
 |shrinkToFit|1|If the document is larger than the requested media, the printer scales the document like the **fit** printScaling. Otherwise, the printer scales the document like the **none** printScaling.|
 |fill|2|The printer scales the document to fill the requested media size, preserving its aspect ratio but potentially cropping portions of the document.|
 |fit|3|The printer scales the document to fit the printable area of the requested media size, preserving the aspect ratio of the document data without cropping the document.|
-|none|4|The printer does not scale the document to fit the requested media size. If the document is larger than the requested media, the printer centers and clips the resulting output. If the document is smaller than the requested media, printer centers the resulting output.|
-|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
+|none|4|The printer doesn't scale the document to fit the requested media size. If the document is larger than the requested media, the printer centers and clips the resulting output. If the document is smaller than the requested media, printer centers the resulting output.|
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Don't use.|
 
 ### mediaSizes values
 
@@ -150,7 +150,7 @@ Represents the capabilities reported by a printer.
 |JPN Hagaki|
 |North America 5x7in|
 |North America Executive|
-|North America Goverment Letter|
+|North America Government Letter|
 |North America Index 3x5in|
 |North America Index 4x8in|
 |North America Index 5x8in|
@@ -164,7 +164,7 @@ Represents the capabilities reported by a printer.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -1,9 +1,9 @@
 ---
 title: "accessPackageAssignmentResourceRole resource type"
-description: "An access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment."
+description: "An access package assignment resource role indicates the resource-specific role that a subject has been assigned through an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package assignment resource role indicates the resource-specific role that a subject has been assigned through an access package assignment.
 
 ## Methods
 
@@ -29,7 +29,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |id|String| Read-only.|
 |originId|String|A unique identifier relative to the origin system, corresponding to the originId property of the [accessPackageResourceRole](accesspackageresourcerole.md). |
 |originSystem|String|The system where the role assignment is to be created or has been created for an access package assignment, such as `SharePointOnline`, `AadGroup` or `AadApplication`, corresponding to the originSystem property of the [accessPackageResourceRole](accesspackageresourcerole.md).|
-|status|String|The value is `PendingFulfillment` when the access package assignment has not yet been delivered to the origin system, and `Fulfilled` when the access package assignment has been delivered to the origin system.|
+|status|String|The value is `PendingFulfillment` when the access package assignment hasn't yet been delivered to the origin system, and `Fulfilled` when the access package assignment has been delivered to the origin system.|
 
 ## Relationships
 
@@ -43,7 +43,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -72,5 +72,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

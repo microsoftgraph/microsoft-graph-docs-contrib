@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCall()
 direction := graphmodels.OUTGOING_CALLDIRECTION 
@@ -35,7 +43,7 @@ id := "98da8a1a-1b87-452c-a713-65d3f10b5555"
 user.SetId(&id) 
 identity.SetUser(user)
 invitationParticipantInfo.SetIdentity(identity)
-invitationParticipantInfo1 := graphmodels.NewInvitationParticipantInfo()
+invitationParticipantInfo1 := graphmodels.NewParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 user := graphmodels.NewIdentity()
 displayName := "user2"
@@ -48,23 +56,21 @@ invitationParticipantInfo1.SetIdentity(identity)
 targets := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
 	invitationParticipantInfo1,
-
 }
 requestBody.SetTargets(targets)
 requestedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetRequestedModalities(requestedModalities)
-mediaConfig := graphmodels.NewMediaConfig()
+mediaConfig := graphmodels.NewServiceHostedMediaConfig()
 removeFromDefaultAudioGroup := false
 mediaConfig.SetRemoveFromDefaultAudioGroup(&removeFromDefaultAudioGroup) 
 requestBody.SetMediaConfig(mediaConfig)
 tenantId := "aa67bd4c-8475-432d-bd41-39f255720e0a"
 requestBody.SetTenantId(&tenantId) 
 
-result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
+calls, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcOnPremisesConnection cloudPcOnPremisesConnection = new CloudPcOnPremisesConnection();
-cloudPcOnPremisesConnection.displayName = "test-canary-02";
-cloudPcOnPremisesConnection.type = CloudPcOnPremisesConnectionType.HYBRID_AZURE_A_D_JOIN;
-cloudPcOnPremisesConnection.subscriptionId = "0ac520ee-14c0-480f-b6c9-0a90c585ffff";
-cloudPcOnPremisesConnection.subscriptionName = "CPC customer 001 test subscription";
-cloudPcOnPremisesConnection.adDomainName = "contoso001.com";
-cloudPcOnPremisesConnection.adDomainUsername = "dcadmin";
-cloudPcOnPremisesConnection.organizationalUnit = "OU=Domain Controllers, DC=contoso001, DC=com";
-cloudPcOnPremisesConnection.resourceGroupId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG";
-cloudPcOnPremisesConnection.virtualNetworkId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET";
-cloudPcOnPremisesConnection.subnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet";
+cloudPcOnPremisesConnection.setDisplayName("test-canary-02");
+cloudPcOnPremisesConnection.setConnectionType(CloudPcOnPremisesConnectionType.HybridAzureADJoin);
+cloudPcOnPremisesConnection.setType(CloudPcOnPremisesConnectionType.HybridAzureADJoin);
+cloudPcOnPremisesConnection.setSubscriptionId("0ac520ee-14c0-480f-b6c9-0a90c585ffff");
+cloudPcOnPremisesConnection.setAdDomainName("contoso001.com");
+cloudPcOnPremisesConnection.setAdDomainUsername("dcadmin");
+cloudPcOnPremisesConnection.setOrganizationalUnit("OU=Domain Controllers, DC=contoso001, DC=com");
+cloudPcOnPremisesConnection.setResourceGroupId("/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG");
+cloudPcOnPremisesConnection.setVirtualNetworkId("/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET");
+cloudPcOnPremisesConnection.setSubnetId("/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet");
+CloudPcOnPremisesConnection result = graphClient.deviceManagement().virtualEndpoint().onPremisesConnections().post(cloudPcOnPremisesConnection);
 
-graphClient.deviceManagement().virtualEndpoint().onPremisesConnections()
-	.buildRequest()
-	.post(cloudPcOnPremisesConnection);
 
 ```

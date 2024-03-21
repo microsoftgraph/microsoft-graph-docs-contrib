@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.DeviceManagement.ManagedDevices.BulkSetCloudPcReviewStatus.BulkSetCloudPcReviewStatusPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.DeviceManagement.ManagedDevices.BulkSetCloudPcReviewStatus;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new BulkSetCloudPcReviewStatusPostRequestBody
 {
 	ManagedDeviceIds = new List<string>
 	{
@@ -20,6 +24,8 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.ManagedDevices.BulkS
 		AzureStorageAccountId = "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceManagement.ManagedDevices.BulkSetCloudPcReviewStatus.PostAsync(requestBody);
 
 

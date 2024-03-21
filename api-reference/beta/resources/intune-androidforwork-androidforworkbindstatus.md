@@ -3,7 +3,7 @@ title: "androidForWorkBindStatus enum type"
 description: "Bind status of the tenant with the Google EMM API"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -20,7 +20,7 @@ Bind status of the tenant with the Google EMM API
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|notBound|0|Not yet documented|
-|bound|1|Not yet documented|
-|boundAndValidated|2|Not yet documented|
-|unbinding|3|Not yet documented|
+|notBound|0||
+|bound|1||
+|boundAndValidated|2||
+|unbinding|3||

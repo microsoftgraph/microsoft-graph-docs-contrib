@@ -1,17 +1,17 @@
 ---
 title: "identitySecurityDefaultsEnforcementPolicy resource type"
-description: "Represents the Azure Active Directory security defaults policy. Security defaults contain preconfigured security settings that protect against common attacks."
+description: "Represents the Microsoft Entra security defaults policy. Security defaults contain preconfigured security settings that protect against common attacks."
 ms.localizationpriority: medium
-author: "rohinigoyal1"
-ms.prod: "identity-and-sign-in"
-doc_type: apiPageType
+author: "Sammak"
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
 ---
 
 # identitySecurityDefaultsEnforcementPolicy resource type
 
 Namespace: microsoft.graph
 
-Represents the Azure Active Directory [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) policy. Security defaults contain preconfigured security settings that protect against common attacks.
+Represents the Microsoft Entra ID [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) policy. Security defaults contain preconfigured security settings that protect against common attacks.
 
 Inherits from [policyBase](../resources/policybase.md).
 
@@ -29,7 +29,7 @@ Inherits from [policyBase](../resources/policybase.md).
 |description|String|Description for this policy. Read-only.|
 |displayName|String|Display name for this policy. Read-only.|
 |id|String|Identifier for this policy. Read-only.|
-|isEnabled|Boolean|If set to `true`, Azure Active Directory security defaults is enabled for the tenant.|
+|isEnabled|Boolean|If set to `true`, Microsoft Entra security defaults are enabled for the tenant.|
 
 ## Relationships
 
@@ -37,7 +37,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

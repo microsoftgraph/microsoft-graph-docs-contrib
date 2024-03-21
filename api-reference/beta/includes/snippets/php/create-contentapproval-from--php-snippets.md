@@ -6,50 +6,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new ComplianceChange();
-$requestBody->set@odatatype('#microsoft.graph.windowsUpdates.contentApproval');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$additionalData = [
-'content' => $requestBody = new Content();
-$		requestBody->set@odatatype('#microsoft.graph.windowsUpdates.catalogContent');
-
-$catalogEntry = new CatalogEntry();
-$		catalogEntry->set@odatatype('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
-
-$		catalogEntry->setId('6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4');
-
-
-$requestBody->setCatalogEntry($catalogEntry);
-
+$requestBody = new ContentApproval();
+$requestBody->setOdataType('#microsoft.graph.windowsUpdates.contentApproval');
+$content = new CatalogContent();
+$content->setOdataType('#microsoft.graph.windowsUpdates.catalogContent');
+$contentCatalogEntry = new FeatureUpdateCatalogEntry();
+$contentCatalogEntry->setOdataType('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
+$contentCatalogEntry->setId('6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4');
+$content->setCatalogEntry($contentCatalogEntry);
 $requestBody->setContent($content);
-
-'deploymentSettings' => $requestBody = new DeploymentSettings();
-
+$deploymentSettings = new DeploymentSettings();
 $requestBody->setDeploymentSettings($deploymentSettings);
-
-'schedule' => $requestBody = new Schedule();
-$		requestBody->setStartDateTime('String (timestamp)');
-
-$gradualRollout = new GradualRollout();
-$		gradualRollout->set@odatatype('#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings');
-
-$		gradualRollout->setEndDateTime('String (timestamp)');
-
-
-$requestBody->setGradualRollout($gradualRollout);
-
-$requestBody->setSchedule($schedule);
-
+$additionalData = [
+	'schedule' => [
+		'startDateTime' => 'String (timestamp)',
+		'gradualRollout' => [
+			'@odata.type' => '#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings',
+			'endDateTime' => 'String (timestamp)',
+		],
+	],
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$requestResult = $graphServiceClient->admin()->windows()->updates()->updatePoliciesById('updatePolicy-id')->complianceChanges()->post($requestBody);
-
+$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->byUpdatePolicyId('updatePolicy-id')->complianceChanges()->post($requestBody)->wait();
 
 ```

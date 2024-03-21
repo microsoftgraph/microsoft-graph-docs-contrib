@@ -3,7 +3,7 @@ title: "attackSimulationUser resource type"
 description: "Represents a user in an attack simulation and training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,8 @@ Represents a user in an attack simulation and training campaign.
 |:---|:---|:---|
 |displayName|String|Display name of the user.|
 |email|String|Email address of the user.|
-|userId|String|This is the **id** property value of the [user](../resources/user.md) resource that represents the user in the Azure Active Directory tenant.|
+|outOfOfficeDays|Int32 | Number of days the user is OOF during a simulation journey/course of a campaign.|
+|userId|String|The **id** property value of the [user](../resources/user.md) resource that represents the user in the Microsoft Entra tenant.|
 
 ## Relationships
 None.
@@ -35,9 +36,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.attackSimulationUser",
-  "userId": "String",
   "displayName": "String",
-  "email": "String"
+  "email": "String",
+  "outOfOfficeDays": "Int",
+  "userId": "String"
 }
 ```
-

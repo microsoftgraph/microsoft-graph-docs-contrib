@@ -6,33 +6,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new StartHoldMusicPostRequestBody();
-$customPrompt = new Prompt();
-$customPrompt->set@odatatype('#microsoft.graph.mediaPrompt');
-
-$additionalData = [
-'mediaInfo' => $customPrompt = new MediaInfo();
-$		customPrompt->set@odatatype('#microsoft.graph.mediaInfo');
-
-$		customPrompt->setUri('https://bot.contoso.com/onHold.wav');
-
-
-$customPrompt->setMediaInfo($mediaInfo);
-
-];
-$customPrompt->setAdditionalData($additionalData);
-
-
-
+$customPrompt = new MediaPrompt();
+$customPrompt->setOdataType('#microsoft.graph.mediaPrompt');
+$customPromptMediaInfo = new MediaInfo();
+$customPromptMediaInfo->setOdataType('#microsoft.graph.mediaInfo');
+$customPromptMediaInfo->setUri('https://bot.contoso.com/onHold.wav');
+$customPrompt->setMediaInfo($customPromptMediaInfo);
 $requestBody->setCustomPrompt($customPrompt);
 $requestBody->setClientContext('d45324c1-fcb5-430a-902c-f20af696537c');
 
-
-
-$requestResult = $graphServiceClient->communications()->callsById('call-id')->participantsById('participant-id')->startHoldMusic()->post($requestBody);
-
+$result = $graphServiceClient->communications()->calls()->byCallId('call-id')->participants()->byParticipantId('participant-id')->startHoldMusic()->post($requestBody)->wait();
 
 ```

@@ -4,7 +4,7 @@ description: "Metadata of the Virtual Machine (VM) Microsoft Defender for Endpoi
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -31,14 +31,14 @@ Metadata of the virtual machine (VM) Microsoft Defender for Endpoint is running 
 | :--------------------------| :--------------------------------------------- |
 | unknown                    | Unknown provider.                               |
 | azure                      | The virtual machine is hosted in the Microsoft Azure cloud. |
-| unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.|
+| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.|
 
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.vmMetadata"

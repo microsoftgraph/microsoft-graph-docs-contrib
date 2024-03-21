@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ChatsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ChatsRequestBuilderGetQueryParameters();
+$queryParameters = ChatsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->orderby = ["lastMessagePreview/createdDateTime desc"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->chats()->get($requestConfiguration);
-
+$result = $graphServiceClient->chats()->get($requestConfiguration)->wait();
 
 ```

@@ -3,7 +3,7 @@ title: "educationAssignmentResource resource type"
 description: "A wrapper object that stores the resources associated with an assignment. The wrapper adds the **distributeForStudentWork** property and indicates that this resource will"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A wrapper object that stores the resources associated with an assignment. The wrapper adds the **distributeForStudentWork** property and indicates that this resource will
-be copied to the student submission.  If the object is not copied, each student will see a link to the resource on the assignment. The student will not be able to update this resource. This is a handout from the teacher to the student with nothing to be turned in. If the resource is distributed, each student 
-will receive a copy of this resource in the resource list of their submission. Each student will be able to modify their copy and submit it for grading.
+be copied to the student submission.  If the object isn't copied, each student sees a link to the resource on the assignment. The student won't be able to update this resource. This is a handout from the teacher to the student with nothing to be turned in. If the resource is distributed, each student 
+receives a copy of this resource in the resource list of their submission. Each student is able to modify their copy and submit it for grading.
 
 
 ## Methods
@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

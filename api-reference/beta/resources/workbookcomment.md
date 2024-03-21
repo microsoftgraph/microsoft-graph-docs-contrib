@@ -3,7 +3,7 @@ title: "workbookComment resource type"
 description: "Represents a comment in workbook."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "resourcePageType"
 ---
 
@@ -34,6 +34,7 @@ Represents a comment in workbook.
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |replies|[workbookCommentReply](workbookcommentreply.md) collection| Read-only. Nullable.|
+|task|[workbookDocumentTask](workbookdocumenttask.md)|The task associated with the comment. Read-only. Nullable.|
 
 ## JSON representation
 

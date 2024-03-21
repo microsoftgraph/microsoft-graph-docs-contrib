@@ -1,9 +1,9 @@
 --- 
 title: "communicationsPhoneIdentity resource type"
 description: "Represents the identity of a participant who joined the communication via phone."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -19,14 +19,14 @@ Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The user's E.164 telephone number. |
-| displayName | String | Inherited from **identity**. The display name associated with the phone number. |
+| Property                       | Type                        | Description    |
+| :----------------------------- | :---------------------------| :--------------|
+| displayName | String | The display name associated with the phone number. Inherited from **identity**. |
+| id | String | The user's E.164 telephone number. Inherited from **identity**. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "id": "String"
 }
 ```

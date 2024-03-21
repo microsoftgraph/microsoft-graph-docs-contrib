@@ -4,22 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsolutions "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestStart := "2018-04-30T00:00:00Z"
 requestEnd := "2018-05-10T00:00:00Z"
 
-requestParameters := &graphconfig.BookingBusinesseItemCalendarViewRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.SolutionsBookingBusinesseItemCalendarViewRequestBuilderGetQueryParameters{
 	Start: &requestStart,
 	End: &requestEnd,
 }
-configuration := &graphconfig.BookingBusinesseItemCalendarViewRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.SolutionsBookingBusinesseItemCalendarViewRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").CalendarView().Get(context.Background(), configuration)
+calendarView, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").CalendarView().Get(context.Background(), configuration)
 
 
 ```

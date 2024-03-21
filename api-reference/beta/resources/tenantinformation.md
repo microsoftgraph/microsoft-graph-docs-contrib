@@ -1,9 +1,9 @@
 ---
 title: "tenantInformation resource type"
-description: "Information about your Azure AD tenant that is publicly displayed to users in other Azure AD tenants."
+description: "Information about your Microsoft Entra tenant that is publicly displayed to users in other Microsoft Entra tenants."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Information about your Azure AD tenant that is publicly displayed to users in other Azure AD tenants.
+Information about your Microsoft Entra tenant that is publicly displayed to users in other Microsoft Entra tenants.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-| defaultDomainName | String | Primary domain name of an Azure AD tenant. |
-| displayName | String | Display name of an Azure AD tenant. |
-| federationBrandName | String | Name shown to users that sign in to an Azure AD tenant. |
-| tenantId | String | Unique identifier of an Azure AD tenant. |
+| defaultDomainName | String | Primary domain name of a Microsoft Entra tenant. |
+| displayName | String | Display name of a Microsoft Entra tenant. |
+| federationBrandName | String | Name shown to users that sign in to a Microsoft Entra tenant. |
+| tenantId | String | Unique identifier of a Microsoft Entra tenant. |
 
 ## Relationships
 

@@ -3,7 +3,7 @@ title: "onPremisesDirectorySynchronizationFeature resource type"
 description: "Consists of directory synchronization features that can be enabled or disabled."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -21,16 +21,16 @@ Consists of directory synchronization features that can be enabled or disabled. 
 | :----------------------------------------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | blockCloudObjectTakeoverThroughHardMatchEnabled  | Boolean | Used to block cloud object takeover via source anchor hard match if enabled.                                                                                 |
 | blockSoftMatchEnabled                            | Boolean | Use to block soft match for all objects if enabled for the  tenant. Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy. This flag should be enabled again after any soft matching has been completed and is no longer needed.                                                                                                  |
-| bypassDirSyncOverridesEnabled                    | Boolean | When `true`, persists the values of _Mobile_ and _OtherMobile_ in on-premises AD during sync cycles instead of values of _MobilePhone_ or _AlternateMobilePhones_ in Azure AD.                                    |
+| bypassDirSyncOverridesEnabled                    | Boolean | When `true`, persists the values of _Mobile_ and _OtherMobile_ in on-premises AD during sync cycles instead of values of _MobilePhone_ or _AlternateMobilePhones_ in Microsoft Entra ID.                                    |
 | cloudPasswordPolicyForPasswordSyncedUsersEnabled | Boolean | Used to indicate that cloud password policy applies to users whose passwords are synchronized from on-premises.                                              |
 | concurrentCredentialUpdateEnabled                | Boolean | Used to enable concurrent user credentials update in OrgId.                                                                                                  |
 | concurrentOrgIdProvisioningEnabled               | Boolean | Used to enable concurrent user creation in OrgId.                                                                                                            |
 | deviceWritebackEnabled                           | Boolean | Used to indicate that device write-back is enabled.                                                                                                          |
-| directoryExtensionsEnabled                       | Boolean | Used to indicate that [directory extensions](/graph/api/resources/extensionProperty) are being synced from on-premises AD to Azure AD.                                                                        |
+| directoryExtensionsEnabled                       | Boolean | Used to indicate that [directory extensions](/graph/api/resources/extensionProperty) are being synced from on-premises AD to Microsoft Entra ID.                                                                        |
 | fopeConflictResolutionEnabled                    | Boolean | Used to indicate that for a Microsoft Forefront Online Protection for Exchange (FOPE) migrated tenant, the conflicting proxy address should be migrated over. |
 | groupWriteBackEnabled                            | Boolean | Used to enable object-level group writeback feature for additional group types.                                                                              |
 | passwordSyncEnabled                              | Boolean | Used to indicate on-premise password synchronization is enabled.                                                                                             |
-| passwordWritebackEnabled                         | Boolean | Used to indicate that writeback of password resets from Azure AD to on-premises AD is enabled.                                                                       |
+| passwordWritebackEnabled                         | Boolean | Used to indicate that writeback of password resets from Microsoft Entra ID to on-premises AD is enabled.                                                                       |
 | quarantineUponProxyAddressesConflictEnabled      | Boolean | Used to indicate that we should quarantine objects with conflicting proxy address.                                                                           |
 | quarantineUponUpnConflictEnabled                 | Boolean | Used to indicate that we should quarantine objects conflicting with duplicate userPrincipalName.                                                                           |
 | softMatchOnUpnEnabled                            | Boolean | Used to indicate that we should soft match objects based on userPrincipalName.                                                                                |
@@ -75,4 +75,3 @@ The following is a JSON representation of the resource.
   "bypassDirSyncOverridesEnabled": "Boolean"
 }
 ```
-

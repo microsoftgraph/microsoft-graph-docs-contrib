@@ -1,9 +1,9 @@
 ---
 title: "cancelApproval action"
-description: "Cancels an already approved instance of an operationApprovalRequest"
+description: "Cancels an already approved instance of an operationApprovalRequest."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Cancels an already approved instance of an operationApprovalRequest
+Cancels an already approved instance of an operationApprovalRequest.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}/ca
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,7 +50,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|justification|String|Not yet documented|
+|justification|String|Indicates the justification for cancellation of a request that has already been approved. Maximum length of justification is 1024 characters. For example: 'Cancelled - Change 23423 no longer needed.'|
+|approvalSource|[operationApprovalSource](../resources/intune-rbac-operationapprovalsource.md)|Indicates the source of the action on the approval request. Possible values are: `unknown`, `adminConsole`, `email`. Default value is `unknown`.|
 
 
 
@@ -63,10 +66,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/{operationApprovalRequestId}/cancelApproval
 
 Content-type: application/json
-Content-length: 46
+Content-length: 83
 
 {
-  "justification": "Justification value"
+  "justification": "Justification value",
+  "approvalSource": "adminConsole"
 }
 ```
 

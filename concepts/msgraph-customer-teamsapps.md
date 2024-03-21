@@ -3,7 +3,7 @@ title: "Integrate your Teams app with education assignments"
 description: "Use Microsoft Graph to enable education students to access your Microsoft Teams app within assignments."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 
@@ -41,7 +41,7 @@ GET /appCatalogs/teamsApps?$filter=displayName eq 'APPLICATION NAME'
 
 **Request**
 
-The following is an example of the request. Use the **id** from the previous request for the **appId** property value.
+The following example shows a request. Use the **id** from the previous request for the **appId** property value.
 
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
@@ -62,7 +62,7 @@ Content-type: application/json
 
 **Response**
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

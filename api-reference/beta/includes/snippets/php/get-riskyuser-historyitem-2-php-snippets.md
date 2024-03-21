@@ -6,11 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$requestResult = $graphServiceClient->identityProtection()->riskyUsersById('riskyUser-id')->historyById('riskyUserHistoryItem-id')->get();
-
+$result = $graphServiceClient->identityProtection()->riskyUsers()->byRiskyUserId('riskyUser-id')->history()->byRiskyUserHistoryItemId('riskyUserHistoryItem-id')->get()->wait();
 
 ```

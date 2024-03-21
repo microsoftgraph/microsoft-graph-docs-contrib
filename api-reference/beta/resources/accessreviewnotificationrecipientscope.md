@@ -3,7 +3,7 @@ title: "accessreviewnotificationrecipientscope resource type"
 description: "Represents who will receive access review notifications."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **accessReviewNotificationRecipientScope** represents a base class for defining users who will receive notifications on instances of [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects. It is inherited by [accessReviewNotificationRecipientQueryScope](../resources/accessReviewNotificationRecipientQueryScope.md).
+The **accessReviewNotificationRecipientScope** represents a base class for defining users who receive notifications on instances of [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects. It's inherited by [accessReviewNotificationRecipientQueryScope](../resources/accessReviewNotificationRecipientQueryScope.md).
 ## Properties
 None.
 
@@ -23,7 +23,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewNotificationRecipientScope"

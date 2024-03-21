@@ -3,7 +3,7 @@ title: "onlineMeetingInfo resource type"
 description: "Details for an attendee to join the meeting online."
 ms.localizationpriority: medium
 author: "ananmishr"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -16,15 +16,15 @@ Details for an attendee to join the meeting online.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |conferenceId|String| The ID of the conference.|
-|joinUrl|String| The external link that launches the online meeting. This is a URL that clients will launch into a browser and will redirect the user to join the meeting.|
+|joinUrl|String| The external link that launches the online meeting. This is a URL that clients launch into a browser and will redirect the user to join the meeting.|
 |phones|[phone](phone.md) collection| All of the phone numbers associated with this conference.|
-|quickDial|String| The pre-formatted quickdial for this call.|
+|quickDial|String| The preformatted quick dial for this call.|
 |tollFreeNumbers|String collection| The toll free numbers that can be used to join the conference.|
 |tollNumber|String| The toll number that can be used to join the conference.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

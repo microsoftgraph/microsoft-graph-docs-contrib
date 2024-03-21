@@ -3,8 +3,9 @@ title: "governanceRoleDefinition resource type"
 description: "Represents the role definitions. For Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governanceRoleDefinition resource type
@@ -21,7 +22,7 @@ Represents the role definitions. For Azure resources, it can represent Azure RBA
 
 ## Methods
 
-| Method		  | Return Type	|Description|
+| Method          | Return Type    |Description|
 |:---------------|:--------|:--------|
 |[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) collection |List a collection of role definitions on a resource.|
 |[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Read properties and relationships of a role definition entity specified by id.|
@@ -38,7 +39,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set
 | templateId  | String |                                                                       |
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Read-only. The associated resource for the role definition.|
 |roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|The associated role setting for the role definition.|

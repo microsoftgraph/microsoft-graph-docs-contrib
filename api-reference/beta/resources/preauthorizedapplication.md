@@ -1,9 +1,9 @@
 ---
 title: "preAuthorizedApplication resource type"
-description: "Lists the pre-authorized client applications"
+description: "Lists the preauthorized client applications"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lists the client applications that are pre-authorized with the specified delegated permissions to access this application's APIs. Users are not required to consent to any pre-authorized application (for the permissions specified). However, any additional permissions not listed in preAuthorizedApplications (requested through incremental consent for example) will require user consent.
+Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs. Users aren't required to consent to any preauthorized application (for the permissions specified). However, any other permissions not listed in preAuthorizedApplications (requested through incremental consent for example) require user consent.
 
-In some rare cases, an identifier listed in the `permissionIds` property may refer to an [app role](approle.md) (from the service principal's `appRoles` property), indicating that the client application identified by the `appId` property has been pre-authorized for that app role.
+In some rare cases, an identifier listed in the `permissionIds` property may refer to an [app role](approle.md) (from the service principal's `appRoles` property), indicating that the client application identified by the `appId` property has been preauthorized for that app role.
 
 ## Properties
 
@@ -25,7 +25,7 @@ In some rare cases, an identifier listed in the `permissionIds` property may ref
 |permissionIds|String collection| The unique identifier for the [scopes](permissionscope.md) the client application is granted. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

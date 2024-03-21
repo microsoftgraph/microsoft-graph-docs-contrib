@@ -1,9 +1,9 @@
 ---
 title: "participantEndpoint resource type"
-description: "The participantEndpoint type"
+description: "Represents a participant endpoint (a user or user-like entity) in a call."
 ms.localizationpriority: medium
-author: "williamlooney"
-ms.prod: "cloud-communications"
+author: "mcm223"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -13,20 +13,26 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an participant endpoint in a call. The endpoint represents
-a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) type.
+Represents a participant endpoint (a user or user-like entity) in a call. 
+
+Inherits from [endpoint](callrecords-endpoint.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
+|associatedIdentity|[identity](identity.md)|Identity associated with the endpoint.|
+|cpuCoresCount|Int32|CPU number of cores used by the media endpoint.|
+|cpuName|String|CPU name used by the media endpoint.|
+|cpuProcessorSpeedInMhz|Int32|CPU processor speed used by the media endpoint.|
 |feedback|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|The feedback provided by the user of this endpoint about the quality of the session.|
-|identity|[identitySet](identityset.md)|Identity associated with the endpoint.|
+|name|String|Name of the device used by the media endpoint.|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
+|identity (deprecated)|[identitySet](identityset.md)|Identity associated with the endpoint. The **identity** property is deprecated and will stop returning data on June 30, 2026. Going forward, use the **associatedIdentity** property.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -39,9 +45,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"},
+  "associatedIdentity": {"@odata.type": "microsoft.graph.identity"},
+  "cpuCoresCount": "Int32",
+  "cpuName": "String",
+  "cpuProcessorSpeedInMhz": "Int32",
   "feedback": {"@odata.type": "microsoft.graph.callRecords.userFeedback"},
-  "identity": {"@odata.type": "microsoft.graph.identitySet"}
+  "identity": {"@odata.type": "microsoft.graph.identitySet"},
+  "name": "String",
+  "userAgent": {"@odata.type": "microsoft.graph.callRecords.userAgent"}
 }
 ```
 

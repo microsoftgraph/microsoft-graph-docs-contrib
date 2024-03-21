@@ -1,10 +1,10 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: UploadSession
 ms.localizationpriority: medium
 description: "The UploadSession resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or as file attachments to Outlook event and message objects."
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -16,7 +16,7 @@ The **uploadSession** resource provides information about how to upload large fi
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -38,10 +38,10 @@ Here is a JSON representation of the resource
 | Property	     | Type              |Description
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-| nextExpectedRanges | String collection | A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (e.g. "0-26" to indicate the first 27 bytes of the file). When uploading files as Outlook attachments, instead of a collection of ranges, this property always indicates a single value "{start}", the location in the file where the next upload should begin.
+| nextExpectedRanges | String collection | A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (for example "0-26" to indicate the first 27 bytes of the file). When uploading files as Outlook attachments, instead of a collection of ranges, this property always indicates a single value "{start}", the location in the file where the next upload should begin.
 | uploadUrl          | String            | The URL endpoint that accepts PUT requests for byte ranges of the file.
 
-## See also
+## Related content
 
 - [Attach large files to Outlook messages and events as attachments ](/graph/outlook-large-attachments)
 - [Upload large files with an upload session](../api/driveitem-createuploadsession.md)

@@ -1,9 +1,9 @@
 ---
 title: "inviteNewBotResponse resource type"
-description: "Contains a response to a request to have a participant joining notification sent out again as a incoming call notification to the desired location."
+description: "Contains a response to a request to have a participant joining notification sent out again as an incoming call notification to the desired location."
 author: "yizhenww"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains a response to a request to have a participant joining notification sent out again as a incoming call notification to the desired location.
+Contains a response to a request to have a participant joining notification sent out again as an incoming call notification to the desired location.
 
 ## Properties
 
@@ -21,7 +21,7 @@ Contains a response to a request to have a participant joining notification sent
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

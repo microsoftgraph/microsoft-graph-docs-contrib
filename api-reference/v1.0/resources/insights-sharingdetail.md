@@ -3,7 +3,7 @@ title: "sharingDetail resource type"
 description: "Complex type containing properties of Shared items. "
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Complex type containing properties of [sharedInsight](insights-shared.md) items. 
 
 ## JSON representation
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

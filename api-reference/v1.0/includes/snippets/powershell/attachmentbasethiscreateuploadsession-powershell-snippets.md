@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	AttachmentInfo = @{
-		AttachmentType = "file"
-		Name = "flower"
-		Size = 3483322
+	attachmentInfo = @{
+		attachmentType = "file"
+		name = "flower"
+		size = 3483322
 	}
 }
 

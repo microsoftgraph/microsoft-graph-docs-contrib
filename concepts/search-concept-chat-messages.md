@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to search Teams messages"
 description: "You can use the Microsoft Search API in Microsoft Graph to search for information in Teams messages and return messages ranked by relevance."
 author: "yiwenwang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to search Teams messages
@@ -18,7 +18,7 @@ Teams message search also looks for attachments. The [supported file types](/Sha
 ### Example 1: Search Teams chat message
 
 #### Request
-The following example queries Teams chat messages in the signed-in user's Teams chat storage that contain the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by descending **dateTime**.
+The following example queries Teams chat messages in the signed-in user's Teams chat storage that contains the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by descending **dateTime**.
 
 
 # [HTTP](#tab/http)
@@ -49,27 +49,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/basicsearchteamsmessage-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/basicsearchteamsmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/basicsearchteamsmessage-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/basicsearchteamsmessage-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/basicsearchteamsmessage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/basicsearchteamsmessage-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/basicsearchteamsmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/basicsearchteamsmessage-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/basicsearchteamsmessage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/basicsearchteamsmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/basicsearchteamsmessage-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/basicsearchteamsmessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/basicsearchteamsmessage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/basicsearchteamsmessage-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -165,27 +173,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/searchtopteamsmessage-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/searchtopteamsmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/searchtopteamsmessage-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/searchtopteamsmessage-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/searchtopteamsmessage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/searchtopteamsmessage-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/searchtopteamsmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/searchtopteamsmessage-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/searchtopteamsmessage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/searchtopteamsmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/searchtopteamsmessage-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/searchtopteamsmessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/searchtopteamsmessage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/searchtopteamsmessage-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -251,12 +267,12 @@ You can use the following  scope terms in your [Keyword Query Language (KQL)](/s
 | Scope Terms                           | Description   | Example   |
 |:-----------------------------------|:--------------|:--------------------|
 | from | Search only for messages sent by scoped person. | from:bob |
-| hasAttachment      | Search only for messages that contain or don't containt attachments. | hasAttachment:true |
-| IsRead       | Search only for messages that were or were not read. | IsRead:true | 
-| IsMentioned        | Search only for messages that did or did not mention you. | IsMentioned:true | 
-| mentions      | Search only for messages that mentioned somebody. | mentions:497b7a2a9e1a48d780e82965d2fc3a81 (This is user id without '-')| 
+| hasAttachment      | Search only for messages that contain or don't contain attachments. | hasAttachment:true |
+| IsRead       | Search only for messages that were or weren't read. | IsRead:true | 
+| IsMentioned        | Search only for messages that did or didn't mention you. | IsMentioned:true | 
+| mentions      | Search only for messages that mentioned somebody. | mentions:497b7a2a9e1a48d780e82965d2fc3a81 (This is user ID without '-')| 
 | sent | Search only for messages sent to the scoped date range. | sent > 2022-07-14 | 
-| to | Search only for messages sent to the scoped person, partially supported for the 1-on-1 message. | to:bob |
+| to | Search only for messages sent to the scoped person, partially supported for the one-on-one message. | to:bob |
 
 
 
@@ -295,27 +311,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/searchteamsmessagewithkql-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/searchteamsmessagewithkql-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/searchteamsmessagewithkql-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/searchteamsmessagewithkql-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/searchteamsmessagewithkql-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/searchteamsmessagewithkql-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/searchteamsmessagewithkql-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/searchteamsmessagewithkql-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/searchteamsmessagewithkql-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/searchteamsmessagewithkql-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/searchteamsmessagewithkql-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/searchteamsmessagewithkql-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/searchteamsmessagewithkql-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/searchteamsmessagewithkql-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -376,11 +400,29 @@ Content-type: application/json
 ## Known limitations
 
 - You can access only the signed-in user's Teams message or the message the user is included in.
-- The search Teams API does not return all properties defined in [chatMessage](/graph/api/resources/chatmessage). You can use the [Teams API](/graph/api/chatmessage-get) to retrieve more details about any single message.
+- The search Teams API doesn't return all properties defined in [chatMessage](/graph/api/resources/chatmessage). You can use the [Teams API](/graph/api/chatmessage-get) to retrieve more details about any single message.
 - For Teams messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer) type contains the number of results on the page, not the total number of matching results.
-- Sorting results is not supported for messages.
+- Sorting results isn't supported for messages.
 - You can't use this API with other entity types at this time.
 
+## JSON representation
+
+Here's a JSON representation of all retrievable properties currently available for [chatMessage](/graph/api/resources/chatmessage) search.
+
+```json
+{
+  "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
+  "chatId": "string",
+  "createdDateTime": "string (timestamp)",
+  "etag": "string",
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
+  "id": "string (identifier)",
+  "importance": "string",
+  "lastModifiedDateTime": "string (timestamp)",
+  "subject": "string",
+  "webUrl": "string"
+}
+```
 
 ## Next steps
 

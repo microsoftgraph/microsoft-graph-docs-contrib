@@ -6,25 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleDefinition();
 $requestBody->setDescription('Update basic properties and permission of application registrations');
-
 $requestBody->setDisplayName('ExampleCustomRole');
-
 $rolePermissionsUnifiedRolePermission1 = new UnifiedRolePermission();
-$rolePermissionsUnifiedRolePermission1->setAllowedResourceActions(['Microsoft.CloudPC/CloudPCs/Read', 'Microsoft.CloudPC/CloudPCs/Reprovision', ]);
-
-
+$rolePermissionsUnifiedRolePermission1->setAllowedResourceActions(['Microsoft.CloudPC/CloudPCs/Read', 'Microsoft.CloudPC/CloudPCs/Reprovision', 	]);
 $rolePermissionsArray []= $rolePermissionsUnifiedRolePermission1;
 $requestBody->setRolePermissions($rolePermissionsArray);
 
 
-
-
-$requestResult = $graphServiceClient->roleManagement()->cloudPC()->roleDefinitionsById('unifiedRoleDefinition-id')->patch($requestBody);
-
+$result = $graphServiceClient->roleManagement()->cloudPC()->roleDefinitions()->byUnifiedRoleDefinitionId('unifiedRoleDefinition-id')->patch($requestBody)->wait();
 
 ```

@@ -3,7 +3,7 @@ title: "FilterDatetime resource type"
 description: "Represents how to filter a date when filtering on values."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 author: "ruoyingl"
 ---
 
@@ -19,7 +19,7 @@ Represents how to filter a date when filtering on values.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |date|string|The date in ISO8601 format used to filter data.|
-|specificity|string|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of april 2009. Possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
+|specificity|string|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specificity is set to "month," the filter operation will keep all rows with a date in the month of April 2009. Possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## Relationships
 None
@@ -27,7 +27,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

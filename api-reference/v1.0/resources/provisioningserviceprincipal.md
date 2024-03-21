@@ -3,7 +3,7 @@ title: "provisioningServicePrincipal resource type"
 description: "Represents the service principal used for provisioning."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -23,7 +23,7 @@ Represents the service principal used for provisioning.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: printerStatus resource type
 description: Represents the processing status of the printer, including any errors.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -29,8 +29,8 @@ Represents the processing status of the printer, including any errors.
 |unknown|0|The processing state reported by the printer is unknown.|
 |idle|1|The printer is idle and ready to accept new print jobs.|
 |processing|2|The printer is currently processing a print job and will process any pending jobs upon completion.|
-|stopped|3|The printer encountered an issue (for example, ran out of paper in the active tray) and cannot continue the current print job until the issue is addressed. See the **details** value(s) or the **description** value for more information.|
-|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+|stopped|3|The printer encountered an issue (for example, ran out of paper in the active tray) and can't continue the current print job until the issue is addressed. See the **details** value(s) or the **description** value for more information.|
+|unknownFutureValue|4|Evolvable enumeration sentinel value. Don't use.|
 
 ### printerProcessingStateDetail values
 
@@ -38,7 +38,7 @@ Represents the processing status of the printer, including any errors.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

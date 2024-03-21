@@ -1,9 +1,9 @@
 ---
 title: "plannerChecklistItems resource type"
-description: "The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the task details object. The value in the property-value pair is the checklistItem object."
+description: "The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It's an Open Type. It's part of the task details object. The value in the property-value pair is the checklistItem object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.
+The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It's an Open Type. It's part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.
 
 
 ## Properties
@@ -19,7 +19,7 @@ Properties of an Open Type can be defined by the client. In this case, the clien
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

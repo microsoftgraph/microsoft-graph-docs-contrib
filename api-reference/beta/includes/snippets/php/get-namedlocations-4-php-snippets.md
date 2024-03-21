@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new NamedLocationsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new NamedLocationsRequestBuilderGetQueryParameters();
-$queryParameters->filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any";
-
+$queryParameters = NamedLocationsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->get($requestConfiguration);
-
+$result = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->get($requestConfiguration)->wait();
 
 ```

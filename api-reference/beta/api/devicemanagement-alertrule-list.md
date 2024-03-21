@@ -3,7 +3,7 @@ title: "List alertRules"
 description: "Get a list of the alertRule objects and their properties."
 author: "zhishending"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -15,15 +15,14 @@ Namespace: microsoft.graph.deviceManagement
 
 Get a list of the [alertRule](../resources/devicemanagement-alertrule.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "devicemanagement_alertrule_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/devicemanagement-alertrule-list-permissions.md)]
 
 ## HTTP request
 
@@ -39,11 +38,11 @@ GET /deviceManagement/monitoring/alertRules
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -70,27 +69,39 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-alertrule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-alertrule-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-alertrule-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-alertrule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-alertrule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-alertrule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-alertrule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-alertrule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-alertrule-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-alertrule-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -119,19 +130,22 @@ Content-Type: application/json
               "operator": "greaterOrEqual",
               "target": 90
           },
+          "conditions": [
+              {
+                "relationshipType": "or",
+                "conditionCategory": "azureNetworkConnectionCheckFailures",
+                "aggregation": "count",
+                "operator": "greaterOrEqual",
+                "thresholdValue": "90"
+              }
+          ],
           "notificationChannels": [
               {
                 "notificationChannelType": "portal",
-                "receivers": [
-                    ""
-                ],
                 "notificationReceivers": []
               },
               {
                 "notificationChannelType": "email",
-                "receivers": [
-                    "serena.davis@contoso.com"
-                ],
                 "notificationReceivers": [
                     {
                         "locale": "en-us",
@@ -154,19 +168,22 @@ Content-Type: application/json
               "operator": "greaterOrEqual",
               "target": 2
           },
+          "conditions": [
+              {
+                "relationshipType": "or",
+                "conditionCategory": "imageUploadFailures",
+                "aggregation": "count",
+                "operator": "greaterOrEqual",
+                "thresholdValue": "2"
+              }
+            ],
           "notificationChannels": [
               {
                 "notificationChannelType": "portal",
-                "receivers": [
-                    ""
-                ],
                 "notificationReceivers": []
               },
               {
                 "notificationChannelType": "email",
-                "receivers": [
-                    "serena.davis@contoso.com"
-                ],
                 "notificationReceivers": [
                     {
                         "locale": "en-us",
@@ -189,19 +206,22 @@ Content-Type: application/json
               "operator": "greaterOrEqual",
               "target": 1
           },
+          "conditions": [
+              {
+                "relationshipType": "or",
+                "conditionCategory": "provisionFailures",
+                "aggregation": "count",
+                "operator": "greaterOrEqual",
+                "thresholdValue": "1"
+              }
+          ],
           "notificationChannels": [
               {
                 "notificationChannelType": "portal",
-                "receivers": [
-                    ""
-                ],
                 "notificationReceivers": []
               },
               {
                 "notificationChannelType": "email",
-                "receivers": [
-                    "serena.davis@contoso.com"
-                ],
                 "notificationReceivers": [
                     {
                         "locale": "en-us",

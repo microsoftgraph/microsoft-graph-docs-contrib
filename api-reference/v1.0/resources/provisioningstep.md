@@ -3,7 +3,7 @@ title: "provisioningStep resource type"
 description: "Describes the steps taken to perform an action. "
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -39,7 +39,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "description": "String",
-  "details": {"@odata.type": "microsoft.graph.detailsInfo"},
+  "details": {
+    "@odata.type": "microsoft.graph.detailsInfo"
+  },
   "name": "String",
   "provisioningStepType": "String",
   "status": "String"

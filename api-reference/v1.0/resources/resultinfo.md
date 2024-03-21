@@ -3,7 +3,7 @@ title: "resultInfo resource type"
 description: "This contains success and failure specific result information."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ This contains success and failure specific result information.
 
 The code specifies if the result is a generic success or failure. If the code is 2xx it's a success, if it's a 4xx it's a client error, and if it's 5xx, it's a server error.
 
-The sub-codes provide supplementary information related to the type of success or failure (e.g. a call transfer was successful)
+The subcodes provide supplementary information related to the type of success or failure (for example, a call transfer was successful)
 
 
 ## Properties
@@ -24,11 +24,11 @@ The sub-codes provide supplementary information related to the type of success o
 | :------- | :----- | :------------------  |
 | code     | Int32 | The result code.     |
 | message  | String | The message.         |
-| subcode  | Int32 | The result sub-code. |
+| subcode  | Int32 | The result subcode. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

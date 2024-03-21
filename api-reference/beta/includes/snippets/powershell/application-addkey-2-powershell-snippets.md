@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
-	KeyCredential = @{
-		Type = "X509CertAndPassword"
-		Usage = "Sign"
-		Key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
+	keyCredential = @{
+		type = "X509CertAndPassword"
+		usage = "Sign"
+		key = [System.Text.Encoding]::ASCII.GetBytes("MIIDYDCCAki...")
 	}
-	PasswordCredential = @{
-		SecretText = "MKTr0w1..."
+	passwordCredential = @{
+		secretText = "MKTr0w1..."
 	}
-	Proof = "eyJ0eXAiOiJ..."
+	proof = "eyJ0eXAiOiJ..."
 }
 
-Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
+Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 
 ```

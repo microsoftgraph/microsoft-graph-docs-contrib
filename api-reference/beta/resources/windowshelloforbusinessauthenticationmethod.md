@@ -1,9 +1,10 @@
 ---
 title: "windowsHelloForBusinessAuthenticationMethod resource type"
 description: "A representation of a Windows Hello for Business instance registered to a user. Windows Hello for Business is a sign-in authentication method."
-author: "mmcla"
+author: "calvinlui"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

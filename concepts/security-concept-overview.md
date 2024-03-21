@@ -3,7 +3,7 @@ title: "Microsoft Graph security API overview"
 description: "Use the Microsoft Graph security API to connect Microsoft security products, services, and partners to streamline security operations and improve response capabilities."
 author: "preetikr"
 ms.localizationpriority: high
-ms.prod: "security"
+ms.subservice: "security"
 ms.custom: scenarios:getting-started
 ---
 
@@ -15,7 +15,7 @@ The Microsoft Graph security API is an intermediary service (or broker) that pro
 
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
-For information about authorization, see [Authorization and the Microsoft Graph security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions-reference.md#security-permissions).
+For information about authorization, see [Authorization and the Microsoft Graph security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions-reference.md).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
@@ -23,15 +23,18 @@ For information about authorization, see [Authorization and the Microsoft Graph 
 
 The [Microsoft Graph security API](/graph/api/resources/security-api-overview) makes it easy to connect with security solutions from Microsoft and partners. It allows you to more readily realize and enrich the value of these solutions. You can connect easily with the Microsoft Graph security API by using one of the following approaches, depending on your requirements:
 
-- Write code – Find [code samples](https://aka.ms/graphsecurityapicode) in C#, Java, NodeJS, and more.
-- [Connect using scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Find [PowerShell samples](https://aka.ms/graphsecuritypowershellsample).
+- Write code – Find [code samples](/graph/security-concept-overview) in C#, Java, NodeJS, and more.
+- [Connect using scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Find [PowerShell samples](/powershell/scripting/developer/prog-guide/windows-powershell-sample-code).
 - [Drag and drop into workflows and playbooks](https://aka.ms/graphsecurityconnectorsblogpost) – Use [Microsoft Graph security connectors](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) for [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/), and [Power Apps](https://powerapps.microsoft.com/).
 - [Get data into reports and dashboards](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – Use the [Microsoft Graph security connector for Power BI](/power-bi/connect-data/desktop-connect-graph-security).
-- [Connect using Jupyter notebooks](https://jupyter.org/) – Find [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks).  
+- [Connect using Jupyter notebooks](https://jupyter.org/) – Find [Jupyter notebook samples](/azure/machine-learning/samples-notebooks).
 
 ### Submit threats and trigger whole automation flow
 
 Submit threats across security solutions more easily with a unified security threat submission API. This allows you to not only submit threats but also get threat submission results and trigger downstream alert flows. The new unified security threat submission API supports both application and delegated permissions to help you build new security solutions.
+
+### Investigate email and collaboration-related threats and trigger response action
+Threat investigation and response capabilities provide detailed metadata and indicators about emails processed by Microsoft Defender for Office 365 and related response actions. These insights can help your organization's security team protect users from email- or file-based attacks.
 
 ### Unify and standardize alert tracking
 
@@ -47,7 +50,7 @@ Tag alerts with additional context or threat intelligence to inform response and
 
 ### Unlock security context to drive investigation
 
-Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Microsoft 365) to bring business and security contexts together and improve threat response.
+Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Microsoft Entra ID, Microsoft Intune, Microsoft 365) to bring business and security contexts together and improve threat response.
 
 ### Automate security workflows and reporting
 
@@ -106,5 +109,5 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- Explore [Microsoft Graph security API samples](https://aka.ms/graphsecurityapicode)
+- Explore [Microsoft Graph security API samples](/graph/security-concept-overview)
 - Interested in becoming a security provider? Reach out to [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).

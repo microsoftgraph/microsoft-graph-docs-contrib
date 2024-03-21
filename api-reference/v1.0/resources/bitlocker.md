@@ -1,9 +1,9 @@
 ---
 title: "bitLocker resource"
-description: "The parent resource for a stored BitLocker key with the navigation property bitlockerRecoveryKey which contains the actual recovery key."
-author: "hafowler"
+description: "The parent resource for a stored BitLocker key with the navigation property bitlockerRecoveryKey that contains the actual recovery key."
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ None.
 | recoveryKeys | [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection | The recovery keys associated with the bitlocker entity. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bitlocker",

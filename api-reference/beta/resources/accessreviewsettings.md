@@ -1,9 +1,9 @@
 ---
 title: "accessReviewSettings resource type (deprecated)"
-description: "Provides additional settings when creating an access review."
+description: "Provides more settings when creating an access review."
 ms.localizationpriority: medium
-author: "markwahl-msft"
-ms.prod: "governance"
+author: "shubhamguptacal"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Provides additional settings when creating an access review, to control the feature behavior when starting an access review.
+Provides more settings when creating an access review, to control the feature behavior when starting an access review.
 
 ## Properties
 
@@ -25,8 +25,8 @@ Provides additional settings when creating an access review, to control the feat
 | remindersEnabled | Boolean | Indicates whether sending reminder emails to reviewers is enabled. |
 | justificationRequiredOnApproval | Boolean | Indicates whether reviewers are required to provide a justification when reviewing access. |
 | activityDurationInDays | Int64 | The number of days of user activities to show to reviewers. |
-| autoReviewEnabled | Boolean | Indicates whether a decision should be set if the reviewer did not supply one. For use when auto-apply is enabled. If you don't want to have a review decision recorded unless the reviewer makes an explicit choice, set it to `false`.|
-| autoReviewSettings | [autoReviewSettings](autoreviewsettings.md) | Detailed settings for how the feature should set the review decision. For use when auto-apply is enabled. |
+| autoReviewEnabled | Boolean | Indicates whether a decision should be set if the reviewer didn't supply one. For use when, auto-apply is enabled. If you don't want to have a review decision recorded unless the reviewer makes an explicit choice, set it to `false`.|
+| autoReviewSettings | [autoReviewSettings](autoreviewsettings.md) | Detailed settings for how the feature should set the review decision. For use when, auto-apply is enabled. |
 | recurrenceSettings | [accessReviewRecurrenceSettings](accessreviewrecurrencesettings.md) | Detailed settings for recurrence. |
 | autoApplyReviewResultsEnabled | Boolean | Indicates whether the auto-apply capability, to automatically change the target object access resource, is enabled.  If not enabled, a user must, after the review completes, apply the access review. |
 | accessRecommendationsEnabled | Boolean | Indicates whether showing recommendations to reviewers is enabled. |

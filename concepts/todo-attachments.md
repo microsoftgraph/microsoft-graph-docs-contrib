@@ -3,7 +3,7 @@ title: "Attach files to a To Do task"
 description: "Learn how to attach large files to a Microsoft To Do task and how to choose the right approach to attach a file to a task."
 author: "avijityadav"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Attach files to a To Do task
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 #### Request
 
-The following is an example of a request to create an upload session.
+The following example shows a request to create an upload session.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -57,27 +57,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/todo-attachment-walkthrough-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/todo-attachment-walkthrough-createuploadsession-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/todo-attachment-walkthrough-createuploadsession-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/todo-attachment-walkthrough-createuploadsession-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/todo-attachment-walkthrough-createuploadsession-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/todo-attachment-walkthrough-createuploadsession-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/todo-attachment-walkthrough-createuploadsession-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/todo-attachment-walkthrough-createuploadsession-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/todo-attachment-walkthrough-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/todo-attachment-walkthrough-createuploadsession-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/todo-attachment-walkthrough-createuploadsession-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/todo-attachment-walkthrough-createuploadsession-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/todo-attachment-walkthrough-createuploadsession-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/todo-attachment-walkthrough-createuploadsession-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -142,7 +150,7 @@ A successful upload returns a `HTTP 200 OK` response code and an **uploadSession
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored"
@@ -186,7 +194,7 @@ The following examples show how to upload the last byte range of the file to the
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored"
@@ -222,7 +230,7 @@ At any point of time before the upload session expires, if you have to cancel th
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored"
@@ -233,7 +241,7 @@ DELETE https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f3
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "ignored"

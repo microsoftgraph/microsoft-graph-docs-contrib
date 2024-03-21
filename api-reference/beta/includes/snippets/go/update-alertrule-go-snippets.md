@@ -4,15 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsdevicemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/models/devicemanagement"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewAlertRule()
+
+requestBody := graphmodelsdevicemanagement.NewAlertRule()
 severity := graphmodels.INFORMATIONAL_RULESEVERITYTYPE 
 requestBody.SetSeverity(&severity) 
 enabled := true
 requestBody.SetEnabled(&enabled) 
-threshold := graphmodels.NewRuleThreshold()
+threshold := graphmodelsdevicemanagement.NewRuleThreshold()
 aggregation := graphmodels.COUNT_AGGREGATIONTYPE 
 threshold.SetAggregation(&aggregation) 
 operator := graphmodels.GREATEROREQUAL_OPERATORTYPE 
@@ -22,48 +30,54 @@ threshold.SetTarget(&target)
 requestBody.SetThreshold(threshold)
 
 
-notificationChannel := graphmodels.NewNotificationChannel()
+ruleCondition := graphmodelsdevicemanagement.NewRuleCondition()
+relationshipType := graphmodels.OR_RELATIONSHIPTYPE 
+ruleCondition.SetRelationshipType(&relationshipType) 
+conditionCategory := graphmodels.AZURENETWORKCONNECTIONCHECKFAILURES_CONDITIONCATEGORY 
+ruleCondition.SetConditionCategory(&conditionCategory) 
+aggregation := graphmodels.COUNT_AGGREGATIONTYPE 
+ruleCondition.SetAggregation(&aggregation) 
+operator := graphmodels.GREATEROREQUAL_OPERATORTYPE 
+ruleCondition.SetOperator(&operator) 
+thresholdValue := "90"
+ruleCondition.SetThresholdValue(&thresholdValue) 
+
+conditions := []graphmodelsdevicemanagement.RuleConditionable {
+	ruleCondition,
+}
+requestBody.SetConditions(conditions)
+
+
+notificationChannel := graphmodelsdevicemanagement.NewNotificationChannel()
 notificationChannelType := graphmodels.PORTAL_NOTIFICATIONCHANNELTYPE 
 notificationChannel.SetNotificationChannelType(&notificationChannelType) 
-receivers := []string {
-	"",
-
-}
-notificationChannel.SetReceivers(receivers)
-notificationReceivers := []graphmodels.NotificationReceiverable {
+notificationReceivers := []graphmodelsdevicemanagement.NotificationReceiverable {
 
 }
 notificationChannel.SetNotificationReceivers(notificationReceivers)
-notificationChannel1 := graphmodels.NewNotificationChannel()
+notificationChannel1 := graphmodelsdevicemanagement.NewNotificationChannel()
 notificationChannelType := graphmodels.EMAIL_NOTIFICATIONCHANNELTYPE 
 notificationChannel1.SetNotificationChannelType(&notificationChannelType) 
-receivers := []string {
-	"serena.davis@contoso.com",
-
-}
-notificationChannel1.SetReceivers(receivers)
 
 
-notificationReceiver := graphmodels.NewNotificationReceiver()
+notificationReceiver := graphmodelsdevicemanagement.NewNotificationReceiver()
 locale := "en-us"
 notificationReceiver.SetLocale(&locale) 
 contactInformation := "serena.davis@contoso.com"
 notificationReceiver.SetContactInformation(&contactInformation) 
 
-notificationReceivers := []graphmodels.NotificationReceiverable {
+notificationReceivers := []graphmodelsdevicemanagement.NotificationReceiverable {
 	notificationReceiver,
-
 }
 notificationChannel1.SetNotificationReceivers(notificationReceivers)
 
-notificationChannels := []graphmodels.NotificationChannelable {
+notificationChannels := []graphmodelsdevicemanagement.NotificationChannelable {
 	notificationChannel,
 	notificationChannel1,
-
 }
 requestBody.SetNotificationChannels(notificationChannels)
 
-result, err := graphClient.DeviceManagement().Monitoring().AlertRulesById("alertRule-id").Patch(context.Background(), requestBody, nil)
+alertRules, err := graphClient.DeviceManagement().Monitoring().AlertRules().ByAlertRuleId("alertRule-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

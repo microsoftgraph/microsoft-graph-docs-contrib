@@ -1,9 +1,9 @@
 ---
 title: "plannerExternalReference resource type"
-description: "The **plannerExternalReference** resource represents the metadata of a reference (attachments such as file, URL). It is the value of property-value pairs in the externalReferences object."
+description: "The **plannerExternalReference** resource represents the metadata of a reference (attachments such as file, URL). It's the value of property-value pairs in the externalReferences object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **plannerExternalReference** resource represents the metadata of a reference (attachments such as file, URL). It is the value of property-value pairs in the [externalReferences object](plannerexternalreferences.md).
+The **plannerExternalReference** resource represents the metadata of a reference (attachments such as file, URL). It's the value of property-value pairs in the [externalReferences object](plannerexternalreferences.md).
 
 
 
@@ -25,7 +25,7 @@ The **plannerExternalReference** resource represents the metadata of a reference
 |type|String|Used to describe the type of the reference. Types include: `PowerPoint`, `Word`, `Excel`, `Other`.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

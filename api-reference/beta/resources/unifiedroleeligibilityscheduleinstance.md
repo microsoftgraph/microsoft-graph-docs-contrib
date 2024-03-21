@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleEligibilityScheduleInstance resource type"
-description: "Represents a schedule instance for an eligible role assignment operations through Azure AD Privileged Identity Management."
+description: "Represents a schedule instance for an eligible role assignment operations through Microsoft Entra Privileged Identity Management."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -69,4 +69,3 @@ The following is a JSON representation of the resource.
   "roleEligibilityScheduleId": "String"
 }
 ```
-

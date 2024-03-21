@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.DeviceManagement.Monitoring.AlertRecords["{alertRecord-id}"].DeviceManagementSetPortalNotificationAsSent.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.DeviceManagement.Monitoring.AlertRecords["{alertRecord-id}"].MicrosoftGraphDeviceManagementSetPortalNotificationAsSent.PostAsync();
 
 
 ```

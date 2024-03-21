@@ -6,24 +6,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Extension();
-$requestBody->set@odatatype('microsoft.graph.openTypeExtension');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new OpenTypeExtension();
+$requestBody->setOdataType('microsoft.graph.openTypeExtension');
+$requestBody->setExtensionName('Com.Contoso.Deal');
 $additionalData = [
-'extensionName' => 'Com.Contoso.Deal', 
-'companyName' => 'Alpine Skis', 
-'dealValue' => 1010100,
-'expirationDate' => '2015-07-03T13:04:00.000Z', 
+	'companyName' => 'Alpine Skis',
+	'dealValue' => 1010100,
+	'expirationDate' => '2015-07-03T13:04:00.000Z',
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$requestResult = $graphServiceClient->groupsById('group-id')->eventsById('event-id')->extensions()->post($requestBody);
-
+$result = $graphServiceClient->groups()->byGroupId('group-id')->events()->byEventId('event-id')->extensions()->post($requestBody)->wait();
 
 ```

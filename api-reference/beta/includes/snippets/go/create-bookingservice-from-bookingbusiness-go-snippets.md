@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewBookingService()
 defaultDuration , err := abstractions.ParseISODuration("PT1H30M")
@@ -71,7 +80,6 @@ bookingReminder.SetAdditionalData(additionalData)
 
 defaultReminders := []graphmodels.BookingReminderable {
 	bookingReminder,
-
 }
 requestBody.SetDefaultReminders(defaultReminders)
 description := "Individual bento box lunch delivery"
@@ -82,6 +90,8 @@ isLocationOnline := true
 requestBody.SetIsLocationOnline(&isLocationOnline) 
 smsNotificationsEnabled := true
 requestBody.SetSmsNotificationsEnabled(&smsNotificationsEnabled) 
+isCustomerAllowedToManageBooking := true
+requestBody.SetIsCustomerAllowedToManageBooking(&isCustomerAllowedToManageBooking) 
 languageTag := "en-US"
 requestBody.SetLanguageTag(&languageTag) 
 isHiddenFromCustomers := false
@@ -107,7 +117,6 @@ requestBody.SetSchedulingPolicy(schedulingPolicy)
 staffMemberIds := []string {
 	"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
 	"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",
-
 }
 requestBody.SetStaffMemberIds(staffMemberIds)
 isAnonymousJoinEnabled := false
@@ -119,7 +128,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").Services().Post(context.Background(), requestBody, nil)
+services, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Services().Post(context.Background(), requestBody, nil)
 
 
 ```

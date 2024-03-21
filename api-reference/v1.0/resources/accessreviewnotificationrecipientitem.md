@@ -3,7 +3,7 @@ title: "accessReviewNotificationRecipientItem resource type"
 description: "Defines users or groups who will receive notifications access review notifications."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure AD [access review](accessreviewsv2-overview.md) notification event on an instance of a review. This item contains an email template type and recipient properties to enable sending certain type of notifications for a given [access review instance](accessreviewinstance.md).
+Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) notification event on an instance of a review. This item contains an email template type and recipient properties to enable sending certain type of notifications for a given [access review instance](accessreviewinstance.md).
 
 ## Properties
 

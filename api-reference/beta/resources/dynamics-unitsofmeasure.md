@@ -5,7 +5,7 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
@@ -29,10 +29,10 @@ Represents a unit of measure, which is a standard of measurement of a quantity, 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|GUID|The unique ID of the unitsOfMeasure. Non-editable.|
+|id|GUID|The unique ID of the unitsOfMeasure. Noneditable.|
 |code|string|Specifies the code for the unit of measure.|
 |displayName|string|Specifies the unit of measure's display name.|
-|internationalStandardCode|string|Specifies the unit of measure code expressed according to the UNECE Rec20 standard in connection with electronic sending of sales documents.|
+|internationalStandardCode|string|Specifies the unit of measure code expressed according to the UNECE Rec20 standard for electronically ending sales documents.|
 |lastModifiedDateTime|datetime|The last datetime the unit of measure was modified. Read-Only.|  
 
 
@@ -41,7 +41,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the **unitsOfMeasure** resource.
+Here's a JSON representation of the **unitsOfMeasure** resource.
 
 ```json
 {

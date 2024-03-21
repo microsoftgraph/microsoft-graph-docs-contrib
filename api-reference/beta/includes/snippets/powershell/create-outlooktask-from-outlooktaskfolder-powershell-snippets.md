@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
-	Subject = "Shop for dinner"
-	StartDateTime = @{
-		DateTime = "2016-04-23T18:00:00"
-		TimeZone = "Pacific Standard Time"
+	subject = "Shop for dinner"
+	startDateTime = @{
+		dateTime = "2016-04-23T18:00:00"
+		timeZone = "Pacific Standard Time"
 	}
-	DueDateTime = @{
-		DateTime = "2016-04-25T13:00:00"
-		TimeZone = "Pacific Standard Time"
+	dueDateTime = @{
+		dateTime = "2016-04-25T13:00:00"
+		timeZone = "Pacific Standard Time"
 	}
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserOutlookTaskFolderTask -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId -BodyParameter $params
+New-MgBetaUserOutlookTaskFolderTask -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId -BodyParameter $params
 
 ```

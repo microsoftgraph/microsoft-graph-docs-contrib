@@ -3,7 +3,7 @@ title: printJobStatus resource type
 description: Represents the current status of a print job.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -40,7 +40,7 @@ Represents the current status of a print job.
 
 |Member|Value|Description|
 |:---|:---|:---|
-|uploadPending|0|Document payload has not been uploaded.|
+|uploadPending|0|Document payload hasn't been uploaded.|
 |transforming|1|Document payload is being transformed.|
 |completedSuccessfully|2|Job has been completed successfully.|
 |completedWithWarnings|3|Job has been completed with warnings.|
@@ -50,7 +50,7 @@ Represents the current status of a print job.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

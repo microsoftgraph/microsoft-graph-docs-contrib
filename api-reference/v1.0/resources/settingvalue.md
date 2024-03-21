@@ -2,8 +2,9 @@
 title: "settingValue resource type"
 description: "A setting represented by a name/value pair."
 ms.localizationpriority: medium
-author: "dkershaw10"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 

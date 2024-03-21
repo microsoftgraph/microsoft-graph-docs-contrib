@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SourceCollection sourceCollection = new SourceCollection();
-sourceCollection.id = "1a9b4145d8f84e39bc45a7f68c5c5119";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-EnumSet<AdditionalDataOptions> additionalData = EnumSet.of(AdditionalDataOptions.LINKED_FILES);
+com.microsoft.graph.beta.compliance.ediscovery.cases.item.reviewsets.item.microsoftgraphediscoveryaddtoreviewset.AddToReviewSetPostRequestBody addToReviewSetPostRequestBody = new com.microsoft.graph.beta.compliance.ediscovery.cases.item.reviewsets.item.microsoftgraphediscoveryaddtoreviewset.AddToReviewSetPostRequestBody();
+com.microsoft.graph.beta.models.ediscovery.SourceCollection sourceCollection = new com.microsoft.graph.beta.models.ediscovery.SourceCollection();
+sourceCollection.setId("1a9b4145d8f84e39bc45a7f68c5c5119");
+addToReviewSetPostRequestBody.setSourceCollection(sourceCollection);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("additionalData", "linkedFiles");
+addToReviewSetPostRequestBody.setAdditionalData(additionalData);
+graphClient.compliance().ediscovery().cases().byCaseId("{case-id}").reviewSets().byReviewSetId("{reviewSet-id}").microsoftGraphEdiscoveryAddToReviewSet().post(addToReviewSetPostRequestBody);
 
-graphClient.compliance().ediscovery().cases("080e8cad-f21f-4452-8826-0ddf7e949fdd").reviewSets("6fe25d32-8167-4625-b75c-c4181ccbd9d5")
-	.addToReviewSet(ReviewSetAddToReviewSetParameterSet
-		.newBuilder()
-		.withSourceCollection(sourceCollection)
-		.withAdditionalData(additionalData)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

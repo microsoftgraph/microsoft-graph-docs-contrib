@@ -6,20 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PrintTaskDefinition();
 $requestBody->setDisplayName('Test TaskDefinitionName');
-
 $createdBy = new AppIdentity();
 $createdBy->setDisplayName('Requesting App Display Name');
-
-
 $requestBody->setCreatedBy($createdBy);
 
-
-$requestResult = $graphServiceClient->print()->taskDefinitionsById('printTaskDefinition-id')->patch($requestBody);
-
+$result = $graphServiceClient->escapedPrint()->taskDefinitions()->byPrintTaskDefinitionId('printTaskDefinition-id')->patch($requestBody)->wait();
 
 ```

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCloudPcUserSetting()
 displayName := "Example"
@@ -15,13 +23,17 @@ requestBody.SetSelfServiceEnabled(&selfServiceEnabled)
 restorePointSetting := graphmodels.NewCloudPcRestorePointSetting()
 frequencyInHours := int32(16)
 restorePointSetting.SetFrequencyInHours(&frequencyInHours) 
+frequencyType := graphmodels.SIXTEENHOURS_CLOUDPCRESTOREPOINTFREQUENCYTYPE 
+restorePointSetting.SetFrequencyType(&frequencyType) 
 userRestoreEnabled := true
 restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled) 
 requestBody.SetRestorePointSetting(restorePointSetting)
 localAdminEnabled := false
 requestBody.SetLocalAdminEnabled(&localAdminEnabled) 
+resetEnabled := true
+requestBody.SetResetEnabled(&resetEnabled) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById("cloudPcUserSetting-id").Patch(context.Background(), requestBody, nil)
+userSettings, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().ByCloudPcUserSettingId("cloudPcUserSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

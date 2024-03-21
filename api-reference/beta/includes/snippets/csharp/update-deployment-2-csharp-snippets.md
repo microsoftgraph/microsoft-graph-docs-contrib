@@ -4,28 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
+// Dependencies
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
+
+var requestBody = new Deployment
 {
 	OdataType = "#microsoft.graph.windowsUpdates.deployment",
-	Settings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
+	Settings = new DeploymentSettings
 	{
 		OdataType = "microsoft.graph.windowsUpdates.deploymentSettings",
-		Monitoring = new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSettings
+		Monitoring = new MonitoringSettings
 		{
-			MonitoringRules = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule>
+			MonitoringRules = new List<MonitoringRule>
 			{
-				new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule
+				new MonitoringRule
 				{
-					Signal = Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSignal.Rollback,
+					Signal = MonitoringSignal.Rollback,
 					Threshold = 5,
-					Action = Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringAction.PauseDeployment,
+					Action = MonitoringAction.PauseDeployment,
 				},
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Admin.Windows.Updates.Deployments["{deployment-id}"].PatchAsync(requestBody);
 
 

@@ -6,19 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new SitePageRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new SitePageRequestBuilderGetQueryParameters();
-$queryParameters->select = ["id","title"];
-$queryParameters->expand = ["webparts"];
-
-$requestConfiguration->queryParameters = $queryParameters;
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$requestResult = $graphServiceClient->sitesById('site-id')->pagesById('sitePage-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->sites()->bySiteId('site-id')->pages()->byBaseSitePageId('baseSitePage-id')->graphSitePage()->get()->wait();
 
 ```

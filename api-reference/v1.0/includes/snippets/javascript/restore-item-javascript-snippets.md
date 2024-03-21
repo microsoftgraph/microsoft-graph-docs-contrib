@@ -18,7 +18,6 @@ const driveItem = {
 };
 
 await client.api('/me/drive/items/{item-id}/restore')
-	.version('beta')
 	.post(driveItem);
 
 ```

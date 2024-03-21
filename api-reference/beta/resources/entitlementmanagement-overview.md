@@ -1,20 +1,20 @@
 ---
-title: "Working with the Azure AD entitlement management API"
-description: "Govern access to resources including groups, apps and sites through Azure AD entitlement management"
+title: "Working with the Microsoft Entra entitlement management API"
+description: "Govern access to resources including groups, apps and sites through Microsoft Entra entitlement management"
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "conceptualPageType"
 ms.date: 11/11/2022
 ---
 
-# Working with the Azure AD entitlement management API
+# Working with the Microsoft Entra entitlement management API
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) entitlement management can help you manage access to groups, applications, and SharePoint Online sites for internal users as well as users outside your organization.
+Microsoft Entra entitlement management can help you manage access to groups, applications, and SharePoint Online sites for internal users as well as users outside your organization.
 
 By creating access packages with the roles users need to have across those resources, and defining policies for who can request an access package and how long they can have an assignment to an access package, you can govern the lifecycle of access for both internal and external users.
 
@@ -30,14 +30,14 @@ The entitlement management resource types include:
 - [accessPackageResourceRequest](accesspackageresourcerequest.md): A request to add a resource to an access package catalog.
 - [accessPackageResourceEnvironment](accesspackageresourceenvironment.md): A reference to the geolocation of the resource. Applicable to Multi-Geo SharePoint Online sites.
 - [connectedOrganization](connectedorganization.md): A connected organization for external users who can request access.
-- [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Azure AD entitlement management.
+- [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Microsoft Entra entitlement management.
 - [approval](approval.md): represents the decisions associated with an access package request.
 
 In addition, you can manage role assignments for users, groups of users, and service principals to entitlement management-specific roles through entitlement management [role definitions](unifiedroledefinition.md).
 
 For a tutorial that shows you how to use entitlement management to create a package of resources that internal users can self-service request, see [Create an access package using Microsoft Graph APIs](/graph/tutorial-access-package-api).
 
-Note that the entitlement management feature, including the API, is included in Azure AD Premium P2. The tenant where entitlement management is being used must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription. For more information about license requirements for the entitlement management feature, see [Entitlement management license requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements).
+The tenant where entitlement management is being used must have sufficient purchased or trial licenses. For more information about license requirements for the entitlement management feature, see [Entitlement management license requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements).
 
 ## Methods
 
@@ -112,13 +112,13 @@ The following table lists the methods that you can use to interact with entitlem
 - [requestorSettings](requestorsettings.md), [approvalSettings](approvalsettings.md), [questions](accesspackagequestion.md) and [assignmentReviewSettings](assignmentreviewsettings.md) - Used in an [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) to specify who can request, who approves, and who reviews access package assignment requests on that policy.
 - [approvalStage](approvalstage.md) - Used in the [approvalSettings](approvalsettings.md) to specify the primary, backup, and escalation approvers.
 - [approvalStep](approvalstep.md) - Used in [approval](approval.md) to distinguish the different approval steps.
-- [userSet](userset.md) subtypes [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md) - Used in [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md), [approvalStep](approvalstep.md) and [assignmentReviewSettings](assignmentreviewsettings.md).
+- [userSet](userset.md) subtypes [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), [externalSponsors](externalsponsors.md) and [targetUserSponsors](targetusersponsors.md) - Used in [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md), [approvalStep](approvalstep.md) and [assignmentReviewSettings](assignmentreviewsettings.md).
 - [accessPackageSubject](accesspackagesubject.md) - Used in the [accessPackageAssignment](accesspackageassignment.md) as a subject user who has an access package assignment.
 - [identitySource](identitysource.md) - used in the [connectedOrganization](connectedorganization.md), one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md).
 
-## See also
+## Related content
 
- - [What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
+ - [What is Microsoft Entra entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
 
 
 

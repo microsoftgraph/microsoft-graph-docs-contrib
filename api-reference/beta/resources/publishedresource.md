@@ -2,8 +2,8 @@
 title: "publishedResource resource type"
 description: "publishedResource resource type."
 ms.localizationpriority: medium
-author: "japere"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

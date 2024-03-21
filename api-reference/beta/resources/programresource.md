@@ -2,8 +2,8 @@
 title: "programResource resource type (deprecated)"
 description: "Represents a reference to an object which is the target of the access review."
 ms.localizationpriority: medium
-author: "markwahl-msft"
-ms.prod: "governance"
+author: "shubhamguptacal"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

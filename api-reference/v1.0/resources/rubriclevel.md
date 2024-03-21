@@ -3,7 +3,7 @@ title: "rubricLevel resource type"
 description: "A level of a rubric."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -21,12 +21,12 @@ See [educationRubric](educationrubric.md) for a description of the relationship 
 |:-------------|:------------|:------------|
 |description|[itemBody](itembody.md)|The description of this rubric level.|
 |displayName|String|The name of this rubric level.|
-|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it is a points rubric.|
+|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it's a points rubric.|
 |levelId|String|The ID of this resource.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

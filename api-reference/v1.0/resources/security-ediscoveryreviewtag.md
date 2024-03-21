@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryReviewTag resource type"
-description: "Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and non-responsive content"
+description: "Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and nonresponsive content"
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 
 
-Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and non-responsive content.
+Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and nonresponsive content.
 
 ## Methods
 |Method|Return type|Description|
@@ -50,7 +50,7 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 |childTags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns the tags that are a child of a tag.|
 |parent|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Returns the parent tag of the specified tag.|
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

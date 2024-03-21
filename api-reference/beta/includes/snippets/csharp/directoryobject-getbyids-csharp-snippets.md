@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.DirectoryObjects.GetByIds.GetByIdsPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.DirectoryObjects.GetByIds;
+
+var requestBody = new GetByIdsPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -22,7 +25,9 @@ var requestBody = new Microsoft.Graph.Beta.DirectoryObjects.GetByIds.GetByIdsPos
 		"device",
 	},
 };
-var result = await graphClient.DirectoryObjects.GetByIds.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.DirectoryObjects.GetByIds.PostAsGetByIdsPostResponseAsync(requestBody);
 
 
 ```

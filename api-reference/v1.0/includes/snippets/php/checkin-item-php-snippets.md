@@ -6,15 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CheckinPostRequestBody();
 $requestBody->setComment('Updating the latest guidelines');
 
-
-
-$graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->checkin()->post($requestBody);
-
+$graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->checkin()->post($requestBody)->wait();
 
 ```

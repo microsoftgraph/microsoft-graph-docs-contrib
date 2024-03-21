@@ -6,15 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new UpdatableAsset();
-$requestBody->set@odatatype('#microsoft.graph.windowsUpdates.updatableAssetGroup');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new UpdatableAssetGroup();
+$requestBody->setOdataType('#microsoft.graph.windowsUpdates.updatableAssetGroup');
 
-
-$requestResult = $graphServiceClient->admin()->windows()->updates()->updatableAssets()->post($requestBody);
-
+$result = $graphServiceClient->admin()->windows()->updates()->updatableAssets()->post($requestBody)->wait();
 
 ```

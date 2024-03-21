@@ -27,15 +27,15 @@ This article provides information about the different Microsoft Graph national c
 
 ## App registration and token service root endpoints
 
-Before calling the Microsoft Graph APIs, you should first register your application and acquire a token. The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints to register your application and acquire tokens for each national cloud.
+Before calling the Microsoft Graph APIs, you should first register your application and acquire a token. The following table lists the base URLs for the endpoints to register your application and acquire tokens for each national cloud.
 
-| National cloud | Azure AD portal endpoint | Azure AD endpoint |
+| National cloud | Azure portal endpoint | Microsoft Entra ID endpoint |
 | -------------- | ------------------------ | ----------------- |
-| Azure AD (global service) | `https://portal.azure.com` | `https://login.microsoftonline.com` |
-| Azure AD for US Government | `https://portal.azure.us` | `https://login.microsoftonline.us` |
-| Azure AD China operated by 21Vianet | `https://portal.azure.cn` | `https://login.chinacloudapi.cn` |
+| Azure global service | `https://portal.azure.com` | `https://login.microsoftonline.com` |
+| Azure US Government | `https://portal.azure.us` | `https://login.microsoftonline.us` |
+| Azure China operated by 21Vianet | `https://portal.azure.cn` | `https://login.chinacloudapi.cn` |
 
-To learn more about access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](/azure/active-directory/develop/authentication-scenarios).
+To learn more about access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For authentication scenarios, see [Microsoft identity platform authentication basics](/azure/active-directory/develop/authentication-scenarios).
 
 ## Microsoft Graph and Graph Explorer service root endpoints
 
@@ -49,9 +49,9 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 | Microsoft Graph China operated by 21Vianet | `https://microsoftgraph.chinacloudapi.cn` | Not supported. |
 
 > [!IMPORTANT]
-> For an app in US Government:
+> For an app in US Government clouds, use the following root endpoints for the Azure portal and Microsoft Graph respectively.
 >
-> - If you're working in a Microsoft 365 GCC environment, continue using the worldwide endpoints: `https://graph.microsoft.com` and `https://portal.azure.com`.
+> - If you're working in a Microsoft 365 GCC environment, continue using the worldwide endpoints: `https://portal.azure.com` and `https://graph.microsoft.com`.
 > - If you're working in a Microsoft 365 GCC High environment, use `https://portal.azure.us` and `https://graph.microsoft.us`.
 > - If you're working in a Microsoft 365 DoD environment, use `https://portal.azure.us` and `https://dod-graph.microsoft.us`.
 
@@ -66,8 +66,8 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 |-------------------------------------|-----------------------------------|--------------------------------------------|
 | Access reviews                      | ✔                                | ✔                                          |
 | Applications and service principals | ✔                                | ✔                                          |
-| Change notifications (webhooks)     | ✔                                | ✔                                          |
-| Delta query                         | ✔                                | ✔                                          |
+| Change notifications (subscriptions)| ✔                                | ✔                                          |
+| Change tracking (delta query)       | ✔                                | ✔                                          |
 | Directory extensions                | ✔                                | ✔                                          |
 | Excel                               | ✔                                | ➖                                         |
 | Groups                              | ✔                                | ✔                                          |
@@ -79,18 +79,19 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Personal Contacts                   | ✔                                | ✔                                          |
 | Privileged identity management      | ✔                                | ✔                                          |
 | Planner                             | ✔                                | ✔                                          |
-| Reports (Azure AD activity reports) | ✔                                | ✔                                          |
+| Reports (Microsoft Entra activity reports) | ✔                                | ✔                                          |
 | Reports (Microsoft 365 reports)     | ➖                               | ➖                                         |
 | Search (Microsoft Search)           | ✔                                | ✔                                          |
 | Security                            | ✔                                | ✔                                          |
 | Service health and communications   | ✔                                | ✔                                          |
 | SharePoint                          | ✔                                | ✔                                          |
-| Teams                               | ✔                                | ➖                                          |
+| Teams                               | ✔                                | ➖                                         |
+| To Do                               | ✔                                | ➖                                         |
 | Users                               | ✔                                | ✔                                          |
 
 For more information about the availability of Microsoft 365 usage reports in national clouds, see [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report).
 
-(\*) Limited support for Exchange and OneDrive services only. Azure AD services aren't supported.
+(\*) Limited support for Exchange and OneDrive services only. Microsoft Entra services aren't supported.
 
 > [!IMPORTANT]
 > Certain services and features that are in specific regions of the global service might not be available in all of the national clouds. To find out what services are available, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).

@@ -1,9 +1,9 @@
 ---
 title: "authenticationStrength resource type"
 description: "Represents the custom authentication strength enforced in a conditional access policy."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "commsOperation resource type"
 description: "The status of certain long-running operations."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -17,16 +17,16 @@ Represents the status of certain long-running operations.
 
 This resource can be returned as the response to an action, or as the content of a [commsNotification](commsNotification.md).  
 
-When it is returned as a response to an action, the status indicates whether there will be subsequent notifications. If, for example, an operation with status of `completed` or `failed` is returned,  there will not be any subsequent operation via the notification channel. 
+When it's returned as a response to an action, the status indicates whether there will be subsequent notifications. If for example, an operation with status of `completed` or `failed` is returned,  there won't be any subsequent operation via the notification channel.
 
-If a `null` operation, or an operation with a status of `notStarted` or `running` is returned, subsequent updates will come via the notification channel.
+If an operation with a status of `notStarted`, `running` or `null` is returned, subsequent updates come via the notification channel.
 
 ## Properties
 
 | Property           | Type                        | Description                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | clientContext      | String                      | Unique Client Context string. Max limit is 256 chars.                           |
-| id                 | String                      | The operation ID. Read-only.                                                    |
+| ID                 | String                      | The operation ID. Read-only.                                                    |
 | resultInfo         | [resultInfo](resultinfo.md) | The result information. Read-only.                                              |
 | status             | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
@@ -35,7 +35,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

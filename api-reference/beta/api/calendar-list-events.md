@@ -3,7 +3,7 @@ title: "List events"
 description: "Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -17,6 +17,15 @@ Retrieve a list of events in a calendar.  The calendar can be one for a [user](.
 
 To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or
 [get the instances of an event](event-list-instances.md).
+
+> [!NOTE]
+> If your target mailbox calendar contains any private items, the caller must either:
+>  * Be granted `FullAccess` mailbox permissions over the target mailbox (via the [Add-MailboxPermission](/powershell/module/exchange/add-mailboxpermission) cmdlet).
+>  * Be granted the `Delegate` + `CanViewPrivateItems` flags (similar to the previous option, but through the [Add-MailboxFolderPermission](/powershell/module/exchange/add-mailboxfolderpermission) cmdlet). This option routes all meeting requests to the delegate mailbox. For a workaround, see [SharingPermissionFlags](/powershell/module/exchange/add-mailboxfolderpermission?view=exchange-ps#-sharingpermissionflags).
+>
+> Failure to meet these conditions will result in a `The specified object was not found in the store` response.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Depending on the type of calendar that the events are in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +63,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -65,7 +74,7 @@ If successful, this method returns a `200 OK` response code and collection of [E
 ### Example 1: List calendar events
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,35 +90,47 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-events-for-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-for-me-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-for-me-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/calendar-list-events-for-me-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-for-me-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-for-me-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-for-me-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/calendar-list-events-for-me-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/calendar-list-events-for-me-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/calendar-list-events-for-me-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
-<!-- 
+<!--
 {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
-} 
+}
 -->
 ```http
 HTTP/1.1 200 OK
@@ -133,8 +154,8 @@ Content-type: application/json
 ```
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
-<!-- 
+The following example shows the response. Note: The response object shown here might be shortened for readability.
+<!--
 {
   "blockType": "response",
   "truncated": true,
@@ -186,26 +207,38 @@ GET https://graph.microsoft.com/beta/me/calendar/events?$filter=startsWith(subje
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-events-for-me-by-subject-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-for-me-by-subject-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-for-me-by-subject-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/calendar-list-events-for-me-by-subject-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-for-me-by-subject-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-for-me-by-subject-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-for-me-by-subject-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/calendar-list-events-for-me-by-subject-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/calendar-list-events-for-me-by-subject-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/calendar-list-events-for-me-by-subject-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!--
 {
   "blockType": "response",
@@ -294,15 +327,15 @@ Content-type: application/json
                         "time": "0001-01-01T00:00:00Z"
                     },
                     "emailAddress": {
-                        "name": "admin@M365B877719.onmicrosoft.com",
-                        "address": "admin@M365B877719.onmicrosoft.com"
+                        "name": "admin@contoso.com",
+                        "address": "admin@contoso.com"
                     }
                 }
             ],
             "organizer": {
                 "emailAddress": {
                     "name": "Samantha Booth",
-                    "address": "samanthab@adatum.onmicrosoft.com"
+                    "address": "samanthab@contoso.com"
                 }
             },
             "onlineMeeting": {

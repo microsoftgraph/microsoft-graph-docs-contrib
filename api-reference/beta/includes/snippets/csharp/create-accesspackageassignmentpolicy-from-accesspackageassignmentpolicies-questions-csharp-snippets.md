@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new AccessPackageAssignmentPolicy
 {
@@ -35,21 +38,14 @@ var requestBody = new AccessPackageAssignmentPolicy
 				EscalationTimeInMinutes = 11520,
 				PrimaryApprovers = new List<UserSet>
 				{
-					new UserSet
+					new GroupMembers
 					{
 						OdataType = "#microsoft.graph.groupMembers",
 						IsBackup = true,
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"id" , "d2dcb9a1-a445-42ee-83a8-476522ed6cbf"
-							},
-							{
-								"description" , "group for users from connected organizations which have no external sponsor"
-							},
-						},
+						Id = "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
+						Description = "group for users from connected organizations which have no external sponsor",
 					},
-					new UserSet
+					new ExternalSponsors
 					{
 						OdataType = "#microsoft.graph.externalSponsors",
 						IsBackup = false,
@@ -60,7 +56,7 @@ var requestBody = new AccessPackageAssignmentPolicy
 	},
 	Questions = new List<AccessPackageQuestion>
 	{
-		new AccessPackageQuestion
+		new AccessPackageMultipleChoiceQuestion
 		{
 			IsRequired = false,
 			Text = new AccessPackageLocalizedContent
@@ -76,64 +72,57 @@ var requestBody = new AccessPackageAssignmentPolicy
 				},
 			},
 			OdataType = "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-			AdditionalData = new Dictionary<string, object>
+			Choices = new List<AccessPackageAnswerChoice>
 			{
+				new AccessPackageAnswerChoice
 				{
-					"choices" , new List<>
+					ActualValue = "AZ",
+					DisplayValue = new AccessPackageLocalizedContent
 					{
-						new 
+						LocalizedTexts = new List<AccessPackageLocalizedText>
 						{
-							ActualValue = "AZ",
-							DisplayValue = new 
+							new AccessPackageLocalizedText
 							{
-								LocalizedTexts = new List<>
-								{
-									new 
-									{
-										Text = "Arizona",
-										LanguageCode = "es",
-									},
-								},
+								Text = "Arizona",
+								LanguageCode = "es",
 							},
 						},
-						new 
-						{
-							ActualValue = "CA",
-							DisplayValue = new 
-							{
-								LocalizedTexts = new List<>
-								{
-									new 
-									{
-										Text = "California",
-										LanguageCode = "es",
-									},
-								},
-							},
-						},
-						new 
-						{
-							ActualValue = "OH",
-							DisplayValue = new 
-							{
-								LocalizedTexts = new List<>
-								{
-									new 
-									{
-										Text = "Ohio",
-										LanguageCode = "es",
-									},
-								},
-							},
-						},
-					}
+					},
 				},
+				new AccessPackageAnswerChoice
 				{
-					"allowsMultipleSelection" , false
+					ActualValue = "CA",
+					DisplayValue = new AccessPackageLocalizedContent
+					{
+						LocalizedTexts = new List<AccessPackageLocalizedText>
+						{
+							new AccessPackageLocalizedText
+							{
+								Text = "California",
+								LanguageCode = "es",
+							},
+						},
+					},
+				},
+				new AccessPackageAnswerChoice
+				{
+					ActualValue = "OH",
+					DisplayValue = new AccessPackageLocalizedContent
+					{
+						LocalizedTexts = new List<AccessPackageLocalizedText>
+						{
+							new AccessPackageLocalizedText
+							{
+								Text = "Ohio",
+								LanguageCode = "es",
+							},
+						},
+					},
 				},
 			},
+			AllowsMultipleSelection = false,
 		},
-		new AccessPackageQuestion
+		new AccessPackageTextInputQuestion
 		{
 			IsRequired = false,
 			Text = new AccessPackageLocalizedContent
@@ -149,15 +138,12 @@ var requestBody = new AccessPackageAssignmentPolicy
 				},
 			},
 			OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"isSingleLineQuestion" , false
-				},
-			},
+			IsSingleLineQuestion = false,
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies.PostAsync(requestBody);
 
 

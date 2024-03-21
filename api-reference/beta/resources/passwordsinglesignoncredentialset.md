@@ -2,8 +2,8 @@
 title: "passwordSingleSignOnCredentialSet resource type"
 description: "Indicates a set of credentials that completely define a sign in flow for a user or group to an application."
 ms.localizationpriority: medium
-author: "bharathramh92"
-ms.prod: "applications"
+author: "sureshja"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -19,8 +19,11 @@ Indicates a set of credentials that completely define a sign in flow for a user 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|credentials|[credential](credential.md) collection|A list of credential objects that define the complete sign in flow.|
+|credentials|[credential](../resources/credential.md) collection| A list of credential objects that define the complete sign in flow.|
 |id|String|The ID of the user or group this credential set belongs to.|
+
+## Relationships
+None.
 
 ## JSON representation
 
@@ -37,8 +40,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "credentials": [{"@odata.type": "microsoft.graph.credential"}],
-  "id": "String"
+  "@odata.type": "#microsoft.graph.passwordSingleSignOnCredentialSet",
+  "id": "String",
+  "credentials": [
+      {
+        "@odata.type": "microsoft.graph.credential"
+      }
+  ]
 }
 ```
 

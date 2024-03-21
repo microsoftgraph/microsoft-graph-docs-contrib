@@ -1,9 +1,9 @@
 ---
 title: "teamsAppInstallation resource type"
-description: "A teamsApp installed in a team, a chat, or a user's personal scope. "
+description: "Represents a teamsApp installed in a team, a chat, or a user's personal scope. "
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team, chat, or user's personal scope that the app is added to.
+Represents a [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or the personal scope of a [user](user.md). Any bots that are part of the app become part of any team, chat, or user's personal scope that the app is added to.
 
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
@@ -42,6 +42,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions consented to while installing or upgrading the teamsApp.|
 | id                  | string   | A unique ID (not the team's app ID). |
 
 ## Relationships
@@ -53,7 +54,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -63,11 +64,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "consentedPermissionSet": "#microsoft.graph.teamsAppPermissionSet",
   "id": "string"
 }
 ```
 
-## See also
+## Related content
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)

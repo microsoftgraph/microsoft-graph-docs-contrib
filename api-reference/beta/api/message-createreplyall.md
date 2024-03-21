@@ -2,8 +2,8 @@
 title: "message: createReplyAll"
 description: "Create a draft to reply to all recipients of a message in either JSON or MIME format"
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: "outlook"
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -17,7 +17,7 @@ Create a draft to reply to the sender and all recipients of a [message](../resou
 
 When using JSON format:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties. 
+- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.
 - You can [update](../api/message-update.md) the draft message later.
 
 When using MIME format:
@@ -28,14 +28,13 @@ When using MIME format:
 
 Alternatively, [reply-all to a message](../api/message-replyall.md) in a single action.
 
-## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "message_createreplyall" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-createreplyall-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +45,7 @@ POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
 ## Request headers
-| Name       | Type | Description| 
+| Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
@@ -72,7 +71,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Create a draft in JSON format to reply-all to an existing message
 The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,15 +85,15 @@ Content-Type: application/json
 
 {
     "message":{
-      "attachments": [ 
-        { 
-          "@odata.type": "#microsoft.graph.fileAttachment", 
-          "name": "guidelines.txt", 
-          "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk=" 
-        } 
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "name": "guidelines.txt",
+          "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+        }
       ]
     },
-    "comment": "if the project gets approved, please take a look at the attached guidelines before you decide on the name." 
+    "comment": "if the project gets approved, please take a look at the attached guidelines before you decide on the name."
 }
 ```
 
@@ -102,30 +101,38 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createreplyall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/message-createreplyall-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/message-createreplyall-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-createreplyall-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-createreplyall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/message-createreplyall-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-createreplyall-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/message-createreplyall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/message-createreplyall-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-createreplyall-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/message-createreplyall-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -148,7 +155,7 @@ Content-type: application/json
   "sender": {
     "emailAddress": {
       "name": "Admin",
-      "address": "admin@contoso.onmicrosoft.com"
+      "address": "admin@contoso.com"
     }
   },
   "from": null,
@@ -156,13 +163,13 @@ Content-type: application/json
     {
       "emailAddress": {
         "name": "Samantha Booth",
-        "address": "samanthab@contoso.onmicrosoft.com"
+        "address": "samanthab@contoso.com"
       }
     },
     {
       "emailAddress": {
         "name": "Randi Welch",
-        "address": "randiw@contoso.onmicrosoft.com"
+        "address": "randiw@contoso.com"
       }
     }
   ]
@@ -184,7 +191,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 ```
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -6,23 +6,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new EventsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new EventsRequestBuilderGetQueryParameters();
-$queryParameters->select = ["subject","body","bodyPreview","organizer","attendees","start","end","location"];
-
 $headers = [
-'Prefer' => 'outlook.timezone="Pacific Standard Time"',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'outlook.timezone="Pacific Standard Time"',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = EventsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["subject","body","bodyPreview","organizer","attendees","start","end","location"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->me()->events()->get($requestConfiguration);
 
+$result = $graphServiceClient->me()->events()->get($requestConfiguration)->wait();
 
 ```

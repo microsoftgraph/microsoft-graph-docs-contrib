@@ -1,6 +1,6 @@
 ---
 title: "dataSourceContainer resource type"
-description: "Base class for custodians and non-custodial data sources."
+description: "Base class for custodians and noncustodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Base class for the [eDiscoveryCustodian](../resources/security-ediscoverycustodian.md) and [eDiscoveryNonCutodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) resources.
 
-This is an abstract type.
+The type is an abstract type.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -44,7 +44,7 @@ None.
 
 |Member|Description|
 |:----|-----------|
-| notApplied | Data source container is not on hold.|
+| notApplied | Data source container isn't on hold.|
 | applied | Data source container is on hold.|
 | applying | Data source container is in applying hold state (applyHold operation triggered).|
 | removing | Data source container is in removing the hold state (removeHold operation triggered).|
@@ -53,7 +53,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

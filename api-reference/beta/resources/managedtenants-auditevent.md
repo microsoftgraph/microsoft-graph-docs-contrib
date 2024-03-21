@@ -3,7 +3,7 @@ title: "auditEvent resource type"
 description: "Represents an audit event for managed tenants in Microsoft 365 Lighthouse."
 author: "vkumar2015"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -24,10 +24,10 @@ Represents an audit event for managed tenants in Microsoft 365 Lighthouse.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activity|String|A string which uniquely represents the operation that occurred. Required. Read-only.|
-|activityDateTime|DateTimeOffset|The time when the activity ocurred. Required. Read-only.|
+|activity|String|A string that uniquely represents the operation that occurred. Required. Read-only.|
+|activityDateTime|DateTimeOffset|The time when the activity occurred. Required. Read-only.|
 |activityId|String|The identifier of the activity request that made the audit event. Required. Read-only.|
-|category|String|A category which represents a logical grouping of activities. Required. Read-only.|
+|category|String|A category that represents a logical grouping of activities. Required. Read-only.|
 |httpVerb|String|The HTTP verb that was used when making the API request. Required. Read-only.|
 |id|String|The unique identifier of the audit event. Required. Read-only.|
 |initiatedByAppId|String|The identifier of the app that was used to make the request. Required. Read-only.|
@@ -36,14 +36,14 @@ Represents an audit event for managed tenants in Microsoft 365 Lighthouse.
 |ipAddress|String|The IP address of where the activity was initiated. This may be an IPv4 or IPv6 address. Required. Read-only.|
 |requestBody|String|The raw HTTP request body. Some sensitive information may be removed.|
 |requestUrl|String|The raw HTTP request URL. Required. Read-only.|
-|tenantIds|String|The collection of Azure Active Directory tenant identifiers for the [managed tenants](../resources/managedtenants-tenant.md) that were impacted by this change. This is formatted as a list of comma-separated values. Required. Read-only.|
-|tenantNames|String|The collection of tenant names that were impacted by this change. This is formatted as a list of comma-separated values. Required. Read-only.|
+|tenantIds|String|The collection of Microsoft Entra tenant identifiers for the [managed tenants](../resources/managedtenants-tenant.md) that were affected by a change, and is formatted as a list of comma-separated values. Required. Read-only.|
+|tenantNames|String|The collection of tenant names that were affected by a change, and is formatted as a list of comma-separated values. Required. Read-only.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -70,4 +70,3 @@ The following is a JSON representation of the resource.
   "tenantNames": "String"
 }
 ```
-

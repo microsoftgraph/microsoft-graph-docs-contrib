@@ -1,9 +1,9 @@
 ---
 title: "plannerUserIds resource type"
-description: "The **plannerUserIds** resource represents the list of users ids that a plan is shared with. This is an Open Type. If you are leveraging Microsoft 365 groups, use the Groups API to manage group membership to share the group's plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group."
+description: "The **plannerUserIds** resource represents the list of users IDs that a plan is shared with, and is an Open Type. If you're using Microsoft 365 groups, use the Groups API to manage group membership to share the group's plan. You can also add existing members of the group to this collection though it isn't required for them to access the plan owned by the group."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -11,16 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with. This is an Open Type. If you are leveraging Microsoft 365 groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.
+The **plannerUserIds** resource represents the list of users IDs that a [plan](plannerplan.md) is shared with, and is an Open Type. If you're using Microsoft 365 groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it isn't required for them to access the plan owned by the group.
 
 
 ## Properties
-Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.
+The client defines the properties of an Open Type, and the client should provide user IDs as properties with their values being the `true` boolean. When user IDs are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

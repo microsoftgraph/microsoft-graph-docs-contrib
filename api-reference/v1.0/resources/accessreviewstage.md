@@ -3,7 +3,7 @@ title: "accessReviewStage resource type"
 description: "Represents a stage of an accessReviewInstance."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a stage of an Azure AD [access review](accessreviewsv2-overview.md). If the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has defined the **stageSettings** property, the [accessReviewInstance](accessReviewInstance.md) will be comprised of up to three subsequent stages. Each stage may have a different set of reviewers who can act on the stage decisions, and settings determining which decisions will pass from stage to stage.
+Represents a stage of a Microsoft Entra [access review](accessreviewsv2-overview.md). If the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has defined the **stageSettings** property, the [accessReviewInstance](accessReviewInstance.md) is comprised of up to three subsequent stages. Each stage may have a different set of reviewers who can act on the stage decisions, and settings determining which decisions pass from stage to stage.
 
-Every **accessReviewStage** contains a list of [decision items](accessreviewinstancedecisionitem.md) for reviewers. There is only one decision per identity being reviewed.
+Every **accessReviewStage** contains a list of [decision items](accessreviewinstancedecisionitem.md) for reviewers. There's only one decision per identity being reviewed.
 
 ## Methods
 |Method|Return type|Description|
@@ -29,7 +29,7 @@ Every **accessReviewStage** contains a list of [decision items](accessreviewinst
 |Property|Type|Description|
 |:---|:---|:---|
 |endDateTime|DateTimeOffset|The date and time in ISO 8601 format and UTC time when the review stage is scheduled to end. This property is the cumulative total of the **durationInDays** for all stages. Read-only. |
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.|
+|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist.|
 |id|String|Unique identifier of the stage. Read-only.|
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of access review scopes is used to define who the reviewers are. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).|
 |startDateTime|DateTimeOffset|The date and time in ISO 8601 format and UTC time when the review stage is scheduled to start. Read-only. |
@@ -41,7 +41,7 @@ Every **accessReviewStage** contains a list of [decision items](accessreviewinst
 |decisions|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -70,4 +70,3 @@ The following is a JSON representation of the resource.
   
 }
 ```
-

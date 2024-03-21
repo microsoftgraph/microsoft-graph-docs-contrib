@@ -1,9 +1,9 @@
 ---
 title: "delegatedPermissionClassification resource type"
-description: "Used to specify the classification of a delegated permission."
+description: "Specifies the classification of a delegated permission."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -11,7 +11,7 @@ author: "psignoret"
 
 Namespace: microsoft.graph
 
-Used to specify the classification of a delegated permission.
+Specifies the classification of a delegated permission.
 
 Delegated permission classifications can be used in combination with user consent settings to choose which permissions a user is allowed to consent to. See [Configure how end-users consent to applications](/azure/active-directory/manage-apps/configure-user-consent) to learn more about permission classifications.
 
@@ -19,14 +19,14 @@ Delegated permission classifications can be used in combination with user consen
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| classification | permissionClassificationType | The classification value being given. Possible value: `low`. Does not support `$filter`. |
+| classification | permissionClassificationType | The classification value. Possible values: `low`, `medium` (preview), `high` (preview). Doesn't support `$filter`. |
 | id | String | A unique identifier for the **delegatedPermissionClassification** Key. Not nullable. Read-only. |
-| permissionId | String | The unique identifier (**id**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Required on create. Does not support `$filter`. |
-| permissionName | String | The claim value (**value**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Does not support `$filter`. |
+| permissionId | String | The unique identifier (**id**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Required on create. Doesn't support `$filter`. |
+| permissionName | String | The claim value (**value**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Doesn't support `$filter`. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

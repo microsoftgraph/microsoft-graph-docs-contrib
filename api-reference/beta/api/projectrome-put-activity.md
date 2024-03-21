@@ -2,7 +2,7 @@
 title: "Create or replace an activity"
 description: "Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use deep insert."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
 ---
@@ -17,13 +17,10 @@ Create a new or replace an existing user activity for your app. If you'd like to
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | UserActivity.ReadWrite.CreatedByApp |
-| Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp |
-| Application                            | Not supported.                      |
+<!-- { "blockType": "permissions", "name": "projectrome_put_activity" } -->
+[!INCLUDE [permissions-table](../includes/permissions/projectrome-put-activity-permissions.md)]
 
 ## HTTP request
 
@@ -55,7 +52,7 @@ If successful, this method returns the `201 Created` response code if the activi
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
     "blockType": "ignored",
@@ -107,7 +104,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
     "blockType": "ignored",
@@ -167,7 +164,7 @@ This example creates a new activity and a history item for that activity in one 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
     "blockType": "ignored",
@@ -224,7 +221,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
     "blockType": "ignored",

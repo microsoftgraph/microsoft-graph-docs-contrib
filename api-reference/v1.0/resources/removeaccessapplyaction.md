@@ -3,7 +3,7 @@ title: "removeAccessApplyAction resource type"
 description: "Removes access to a resource for those denied in an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Removes access to a resource for those denied in an access review of that resource. This is the default option chosen for [accessReviewApplyAction](../resources/accessreviewapplyaction.md) if an option is not passed in.
+Removes access to a resource for those denied in an access review of that resource. This is the default option chosen for [accessReviewApplyAction](../resources/accessreviewapplyaction.md) if an option isn't passed in.
 
 Inherits from [accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 
@@ -22,7 +22,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.removeAccessApplyAction"

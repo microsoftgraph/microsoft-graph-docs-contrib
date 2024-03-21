@@ -3,7 +3,7 @@ title: "List microsoftTunnelHealthThresholds"
 description: "List properties and relationships of the microsoftTunnelHealthThreshold objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ GET /deviceManagement/microsoftTunnelHealthThresholds
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -49,12 +49,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelhealththreshold_list_list_microsofttunnelhealththresholds" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelHealthThresholds
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.microsoftTunnelHealthThreshold" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -6,11 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->me()->eventsById('event-id')->attachmentsById('attachment-id')->delete();
-
+$graphServiceClient->me()->events()->byEventId('event-id')->attachments()->byAttachmentId('attachment-id')->delete()->wait();
 
 ```

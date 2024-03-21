@@ -2,8 +2,8 @@
 title: "mailFolder resource type"
 description: "A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: "outlook"
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -28,11 +28,11 @@ the well-known folder names from the table below when accessing these folders. F
 GET /me/mailFolders/drafts
 ```
 
-Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of how it is named.
+Well-known names work regardless of the locale of the user's mailbox, so the above query will always return the user's Drafts folder regardless of how it's named.
 
 | Well-known folder name | Description |
 |:-----------------------|:------------|
-| archive | The archive folder messages are sent to when using the One_Click Archive feature in Outlook clients that support it. **Note:** this is not the same as the Archive Mailbox feature of Exchange online. |
+| archive | The archive folder messages are sent to when using the One_Click Archive feature in Outlook clients that support it. **Note:** this isn't the same as the Archive Mailbox feature of Exchange online. |
 | clutter | The clutter folder low-priority messages are moved to when using the Clutter feature. |
 | conflicts | The folder that contains conflicting items in the mailbox. |
 | conversationhistory | The folder where Skype saves IM conversations (if Skype is configured to do so). |
@@ -40,14 +40,14 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 | drafts | The folder that contains unsent messages. |
 | inbox | The inbox folder. |
 | junkemail | The junk email folder. |
-| localfailures | The folder that contains items that exist on the local client but could not be uploaded to the server. |
+| localfailures | The folder that contains items that exist on the local client but couldn't be uploaded to the server. |
 | msgfolderroot | The "Top of Information Store" folder. This folder is the parent folder for folders that are displayed in normal mail clients, such as the inbox. |
 | outbox | The outbox folder. |
-| recoverableitemsdeletions | The folder that contains soft-deleted items: deleted either from the Deleted Items folder, or by pressing shift+delete in Outlook. This folder is not visible in any Outlook email client, but end users can interact with it through the **Recover Deleted Items from Server** feature in Outlook or Outlook on the web. |
+| recoverableitemsdeletions | The folder that contains soft-deleted items: deleted either from the Deleted Items folder, or by pressing shift+delete in Outlook. This folder isn't visible in any Outlook email client, but end users can interact with it through the **Recover Deleted Items from Server** feature in Outlook or Outlook on the web. |
 | scheduled | The folder that contains messages that are scheduled to reappear in the inbox using the Schedule feature in Outlook for iOS. |
 | searchfolders | The parent folder for all search folders defined in the user's mailbox. |
 | sentitems | The sent items folder. |
-| serverfailures | The folder that contains items that exist on the server but could not be synchronized to the local client. |
+| serverfailures | The folder that contains items that exist on the server but couldn't be synchronized to the local client. |
 | syncissues | The folder that contains synchronization logs created by Outlook. |
 
 ## Methods
@@ -94,14 +94,14 @@ They let you avoid queries like the following that can incur significant latency
 https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
 ```
 
-Mail folders in Outlook can contain more than one type of items, for example, the Inbox can contain meeting request items which are distinct from mail items. `TotalItemCount` and `UnreadItemCount` include items in a mail folder irrespective of their item types.
+Mail folders in Outlook can contain more than one type of items, for example, the Inbox can contain meeting request items that are distinct from mail items. `TotalItemCount` and `UnreadItemCount` include items in a mail folder irrespective of their item types.
 
 ### Hidden mail folders
-The default value of the `isHidden` property is `false`. You can set **isHidden** only once when [creating the mailFolder](../api/user-post-mailfolders.md). You cannot update the property using a PATCH operation. To change the **isHidden** property of a folder, delete the existing folder and create a new one with the desired value.
+The default value of the `isHidden` property is `false`. You can set **isHidden** only once when [creating the mailFolder](../api/user-post-mailfolders.md). You can't update the property using a PATCH operation. To change the **isHidden** property of a folder, delete the existing folder and create a new one with the desired value.
 
 Hidden mail folders support all operations that are supported by a regular mail folder.
 
-By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only mail folders that are not hidden. To include hidden mail folders in the response, use the query parameter `includeHiddenFolders=true`. Then use the **isHidden** property to identify whether a mail folder is hidden. 
+By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only mail folders that aren't hidden. To include hidden mail folders in the response, use the query parameter `includeHiddenFolders=true`. Then use the **isHidden** property to identify whether a mail folder is hidden.
 
 ## Relationships
 
@@ -115,7 +115,7 @@ By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -148,7 +148,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Get incremental changes to messages in a folder](/graph/delta-query-messages)

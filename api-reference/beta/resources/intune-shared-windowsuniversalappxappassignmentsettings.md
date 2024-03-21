@@ -3,7 +3,7 @@ title: "windowsUniversalAppXAppAssignmentSettings resource type"
 description: "Contains properties used when assigning a Windows Universal AppX mobile app to a group."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|useDeviceContext|Boolean|Whether or not to use device execution context for Windows Universal AppX mobile app.|
+|useDeviceContext|Boolean|If true, uses device execution context for Windows Universal AppX mobile app. Device-context install is not allowed when this type of app is targeted with Available intent. Defaults to false.|
 
 ## Relationships
 None

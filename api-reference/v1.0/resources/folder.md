@@ -1,10 +1,10 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Folder
 ms.localizationpriority: medium
 description: "The Folder resource groups folder-related data on an item into a single structure. "
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **Folder** resource groups folder-related data on an item into a single structure. 
+The **Folder** resource groups folder-related data on an item into a single structure.
 [**DriveItems**](driveitem.md) with a non-null **folder** facet are containers for other DriveItems.
 
 ## JSON representation
@@ -41,7 +41,7 @@ Here is a JSON representation of the resource.
 | **childCount** | Int32          | Number of children contained immediately within this container.
 | **view**       | [folderView][] | A collection of properties defining the recommended view for the folder.
 
-## Remarks 
+## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem][].
 

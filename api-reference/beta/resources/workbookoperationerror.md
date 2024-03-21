@@ -3,7 +3,7 @@ title: "workbookOperationError resource type"
 description: "Represents an error from a failed workbook operation."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "resourcePageType"
 ---
 
@@ -17,11 +17,11 @@ Represents an error from a failed workbook operation.
 |:-------------|:------------|:------------|
 |code|String| The error code.|
 |message|String| The error message.|
-|innererror|error object| Optional. Additional error objects that may be more specific than the top level error.|
+|innererror|error object| Optional. Other error objects that may be more specific than the top level error.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

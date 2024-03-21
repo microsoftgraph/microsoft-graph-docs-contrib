@@ -2,8 +2,8 @@
 title: "Manage Focused Inbox"
 description: "Focused Inbox allows you to view important messages in the `Focused` tab of the Inbox, and the rest of the Inbox messages in the `Other` tab. The classification system "
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: mail
+author: "SuryaLashmiS"
+ms.subservice: mail
 doc_type: conceptualPageType
 ---
 

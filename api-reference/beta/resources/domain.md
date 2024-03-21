@@ -3,7 +3,7 @@ title: "domain resource type"
 description: "Represents a domain associated with the tenant."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -49,12 +49,12 @@ To associate a domain with a tenant:
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-|authenticationType|String| Indicates the configured authentication type for the domain. The value is either `Managed` or `Federated`. `Managed` indicates a cloud managed domain where Azure AD performs user authentication. `Federated` indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. This property is read-only and is not nullable. |
+|authenticationType|String| Indicates the configured authentication type for the domain. The value is either `Managed` or `Federated`. `Managed` indicates a cloud managed domain where Microsoft Entra ID performs user authentication. `Federated` indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable. |
 |availabilityStatus|String| This property is always `null` except when the [verify](../api/domain-verify.md) action is used. When the [verify](../api/domain-verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either `AvailableImmediately` or `EmailVerifiedDomainTakeoverScheduled`.|
 |id|String| The fully qualified name of the domain. Key, immutable, not nullable, unique. |
 |isAdminManaged|Boolean| The value of the property is `false` if the DNS record management of the domain has been delegated to Microsoft 365. Otherwise, the value is `true`. Not nullable |
 |isDefault|Boolean| `true` if this is the default domain that is used for user creation. There is only one default domain per company. Not nullable |
-|isInitial|Boolean| `true` if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial domain per company. Not nullable |
+|isInitial|Boolean| `true` if this is the initial domain created by Microsoft Online Services (contoso.com). There is only one initial domain per company. Not nullable |
 |isRoot|Boolean| `true` if the domain is a verified root domain. Otherwise, `false` if the domain is a subdomain or unverified. Not nullable |
 |isVerified|Boolean| `true` if the domain has completed domain ownership verification. Not nullable |
 |passwordNotificationWindowInDays|Int32|Specifies the number of days before a user receives notification that their password will expire. If the property is not set, a default value of 14 days will be used.|
@@ -70,8 +70,8 @@ Relationships between a domain and other objects in the directory such as its ve
 |:---------------|:--------|:----------|
 |domainNameReferences|[directoryObject](directoryobject.md) collection| The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports `$expand` and `$filter` by the OData type of objects returned. For example `/domains/{domainId}/domainNameReferences/microsoft.graph.user` and `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports `$expand`. |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports `$expand`.|
-|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Azure AD. Supports `$expand`.|
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID. Read-only, Nullable. Supports `$expand`.|
+|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Microsoft Entra ID. Supports `$expand`.|
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -115,5 +115,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

@@ -25,11 +25,13 @@
     "treatErrorsAsWarningsWorkloads": [
       "intune"
     ],
+    "skipPermissionTableUpdateForWorkloads": [
+      "intune"
+    ],
     "requiredYamlHeaders": [
       "author",
       "title",
       "description",
-      "ms.prod",
       "doc_type",
       "ms.localizationpriority"
     ]

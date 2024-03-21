@@ -4,20 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.Answer.AnswerPostRequestBody
+// Dependencies
+using Microsoft.Graph.Communications.Calls.Item.Answer;
+using Microsoft.Graph.Models;
+
+var requestBody = new AnswerPostRequestBody
 {
 	CallbackUri = "callbackUri-value",
-	MediaConfig = new MediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.appHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"blob" , "<Media Session Configuration Blob>"
-			},
-		},
+		Blob = "<Media Session Configuration Blob>",
 	},
 	AcceptedModalities = new List<Modality?>
 	{
@@ -30,6 +29,8 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Answer.AnswerPos
 	},
 	ParticipantCapacity = 200,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Communications.Calls["{call-id}"].Answer.PostAsync(requestBody);
 
 

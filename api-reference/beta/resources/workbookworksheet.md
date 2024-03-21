@@ -1,9 +1,9 @@
 ---
 title: "workbookWorksheet resource type"
-description: "An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc."
+description: "An Excel worksheet is a grid of cells."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-
+An Excel worksheet is a grid of cells. It can contain data, tables, charts, and so on.
 
 ## Methods
 
@@ -34,14 +33,15 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |[List](../api/worksheet-list.md) | [workbookWorksheet](workbookworksheet.md) collection |Get worksheet object collection. |
 |[Add](../api/worksheetcollection-add.md)|[workbookWorksheet](workbookworksheet.md)|Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. |
 |[List pivotTables](../api/workbookworksheet-list-pivottables.md) |[workbookPivotTable](workbookpivottable.md) collection| Get a workbookPivotTable object collection.|
+|[List tasks](../api/workbookworksheet-list-tasks.md)|[workbookDocumentTask](workbookdocumenttask.md) collection| Get a list of [workbookDocumentTask](../resources/workbookdocumenttask.md) objects.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|string|Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.|
-|name|string|The display name of the worksheet.|
-|position|int|The zero-based position of the worksheet within the workbook.|
-|visibility|string|The Visibility of the worksheet. The possible values are: `Visible`, `Hidden`, `VeryHidden`.|
+|id|String|Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.|
+|name|String|The display name of the worksheet.|
+|position|Int32|The zero-based position of the worksheet within the workbook.|
+|visibility|String|The visibility of the worksheet. The possible values are: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -51,10 +51,11 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |pivotTables|[workbookPivotTable](workbookpivottable.md) collection| Collection of PivotTables that are part of the worksheet. |
 |protection|[workbookWorksheetProtection](workbookworksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
 |tables|[workbookTable](workbooktable.md) collection|Collection of tables that are part of the worksheet. Read-only.|
+|tasks|[workbookDocumentTask](workbookdocumenttask.md) collection|Collection of document tasks on this worksheet. Read-only.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -66,12 +67,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string",
-  "name": "string",
-  "position": 1024,
-  "visibility": "string"
+  "id": "String (identifier)",
+  "name": "String",
+  "position": "Int32",
+  "visibility": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -86,5 +86,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

@@ -4,23 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new ThreatAssessmentRequest
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new EmailFileAssessmentRequest
 {
 	OdataType = "#microsoft.graph.emailFileAssessmentRequest",
+	RecipientEmail = "tifc@contoso.com",
 	ExpectedAssessment = ThreatExpectedAssessment.Block,
 	Category = ThreatCategory.Malware,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"recipientEmail" , "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com"
-		},
-		{
-			"contentData" , "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
-		},
-	},
+	ContentData = "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC.....",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.InformationProtection.ThreatAssessmentRequests.PostAsync(requestBody);
 
 

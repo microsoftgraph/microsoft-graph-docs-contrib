@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
 id := "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187"
@@ -64,29 +72,24 @@ durationBeforeEscalation , err := abstractions.ParseISODuration("PT0S")
 accessPackageApprovalStage.SetDurationBeforeEscalation(&durationBeforeEscalation) 
 
 
-subjectSet := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"managerLevel" : int32(1) , 
-}
-subjectSet.SetAdditionalData(additionalData)
+subjectSet := graphmodels.NewRequestorManager()
+managerLevel := int32(1)
+subjectSet.SetManagerLevel(&managerLevel) 
 
 primaryApprovers := []graphmodels.SubjectSetable {
 	subjectSet,
-
 }
 accessPackageApprovalStage.SetPrimaryApprovers(primaryApprovers)
 
 
-subjectSet := graphmodels.NewSubjectSet()
-additionalData := map[string]interface{}{
-	"userId" : "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2", 
-	"description" : "user", 
-}
-subjectSet.SetAdditionalData(additionalData)
+subjectSet := graphmodels.NewSingleUser()
+userId := "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2"
+subjectSet.SetUserId(&userId) 
+description := "user"
+subjectSet.SetDescription(&description) 
 
 fallbackPrimaryApprovers := []graphmodels.SubjectSetable {
 	subjectSet,
-
 }
 accessPackageApprovalStage.SetFallbackPrimaryApprovers(fallbackPrimaryApprovers)
 escalationApprovers := []graphmodels.SubjectSetable {
@@ -100,7 +103,6 @@ accessPackageApprovalStage.SetFallbackEscalationApprovers(fallbackEscalationAppr
 
 stages := []graphmodels.AccessPackageApprovalStageable {
 	accessPackageApprovalStage,
-
 }
 requestApprovalSettings.SetStages(stages)
 requestBody.SetRequestApprovalSettings(requestApprovalSettings)
@@ -109,7 +111,7 @@ id := "49d2c59b-0a81-463d-a8ec-ddad3935d8a0"
 accessPackage.SetId(&id) 
 requestBody.SetAccessPackage(accessPackage)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPoliciesById("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
+assignmentPolicies, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentPolicies().ByAccessPackageAssignmentPolicyId("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
 
 
 ```

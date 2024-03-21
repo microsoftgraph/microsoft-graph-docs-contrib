@@ -3,7 +3,7 @@ title: "Send device command (deprecated)"
 description: "This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the "
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: project-rome
+ms.subservice: project-rome
 author: "ailae"
 ---
 
@@ -19,16 +19,15 @@ Namespace: microsoft.graph
 This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the
 *type*, *payload*, *packageFamilyName*, and *appServiceName* parameters.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Device.Command    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "send_device_command" } -->
+[!INCLUDE [permissions-table](../includes/permissions/send-device-command-permissions.md)]
 
 ## HTTP request
 
@@ -43,7 +42,7 @@ POST me/devices/{id}/commands
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |
 
 ## Request body

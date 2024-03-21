@@ -1,9 +1,9 @@
 ---
 title: "usedInsight resource type"
-description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or modified."
+description: "An insight representing documents used by a specific user. The insights return the most relevant documents that a user viewed or modified."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or modified. This includes documents in:
+An insight representing documents used by a specific user. The insights return the most relevant documents that a user viewed or modified. This includes documents in:
 
 - OneDrive for Business
 - SharePoint
@@ -40,7 +40,7 @@ An insight representing documents used by a specific user. The insights returns 
 | resource    	| [entity](entity.md) collection	| Used for navigating to the item that was used. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
 
 ## JSON representation
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

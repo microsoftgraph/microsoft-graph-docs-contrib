@@ -3,7 +3,7 @@ title: "Create relation"
 description: "Create a new relation object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -12,14 +12,13 @@ Namespace: microsoft.graph.termStore
 
 Create a new [relation](../resources/termstore-relation.md) object. These are used to create pinned and reused relations between terms or between a term and set. If you create a pinned/reused term between term and set, then **fromTerm**  must be set to *null* in the post body.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account) |TermStore.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "termstore_relation_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/termstore-relation-post-permissions.md)]
 
 
 ## HTTP request
@@ -29,19 +28,19 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
+POST /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of the [relation](../resources/termstore-relation.md) object.
 
-The following table shows the properties that are required when you create the [relation](../resources/termstore-relation.md) object.
+The following table lists the properties that are required when you create the [relation](../resources/termstore-relation.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -61,13 +60,13 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 <!-- {
   "blockType": "request",
-  "name": "create_relation_from_",
+  "name": "create_relation_from_1",
   "sampleKeys": ["microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74", "27fd2d26-60d3-485c-9420-0c71f74a0cfd", "8861b57a-c777-49e7-826f-47d6afecf80d"]
 }
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
+POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStores/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
 Content-Type: application/json
 
 {
@@ -111,9 +110,9 @@ Content-Type: application/json
 }
 ```
 
-[microsoft.graph.termStore.set]: ../resources/termstore-set.md
+<!--[microsoft.graph.termStore.set]: ../resources/termstore-set.md
 [microsoft.graph.termStore.term]: ../resources/termstore-term.md
-[microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
+[microsoft.graph.termStore.relation]: ../resources/termstore-relation.md -->
 
 
 <!--
@@ -124,6 +123,12 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "termStore/Pinned term",
   "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/sites:
+      /sites/{var}/termStores/{var}/terms/{var}/relations
+      Uri path requires navigating into unknown object hierarchy: missing property 'terms' on 'store'. Possible issues:
+  	 1) Doc bug where 'terms' isn't defined on the resource.
+  	 2) Doc bug where 'terms' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'store' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
   ]
 }
 -->

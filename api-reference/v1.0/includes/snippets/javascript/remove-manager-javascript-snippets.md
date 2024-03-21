@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/users/{id}/manager/$ref')
+await client.api('/users/10f17b99-784c-4526-8747-aec8a3159d6a/manager/$ref')
 	.delete();
 
 ```

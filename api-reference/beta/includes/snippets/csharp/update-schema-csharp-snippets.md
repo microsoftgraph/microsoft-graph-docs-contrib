@@ -4,40 +4,45 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.Schema
+// Dependencies
+using Microsoft.Graph.Beta.Models.ExternalConnectors;
+
+var requestBody = new Schema
 {
 	BaseType = "microsoft.graph.externalItem",
-	Properties = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Property>
+	Properties = new List<Property>
 	{
-		new Microsoft.Graph.Beta.Models.ExternalConnectors.Property
+		new Property
 		{
 			Name = "ticketTitle",
-			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
+			Type = PropertyType.String,
 			IsSearchable = true,
 			IsRetrievable = true,
-			Labels = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Label?>
+			Labels = new List<Label?>
 			{
-				Microsoft.Graph.Beta.Models.ExternalConnectors.Label.Title,
+				Label.Title,
 			},
 		},
-		new Microsoft.Graph.Beta.Models.ExternalConnectors.Property
+		new Property
 		{
 			Name = "priority",
-			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
+			Type = PropertyType.String,
 			IsQueryable = true,
 			IsRetrievable = true,
 			IsSearchable = false,
 		},
-		new Microsoft.Graph.Beta.Models.ExternalConnectors.Property
+		new Property
 		{
 			Name = "assignee",
-			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.PropertyType.String,
+			Type = PropertyType.String,
 			IsRetrievable = true,
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.External.Connections["{externalConnection-id}"].Schema.PatchAsync(requestBody);
 
 

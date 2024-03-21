@@ -7,59 +7,59 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "Review employee access to LinkedIn"
-	DescriptionForAdmins = "Review employee access to LinkedIn"
-	Scope = @{
+	displayName = "Review employee access to LinkedIn"
+	descriptionForAdmins = "Review employee access to LinkedIn"
+	scope = @{
 		"@odata.type" = "#microsoft.graph.principalResourceMembershipsScope"
-		PrincipalScopes = @(
+		principalScopes = @(
 			@{
 				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				Query = "/users"
-				QueryType = "MicrosoftGraph"
+				query = "/users"
+				queryType = "MicrosoftGraph"
 			}
 		)
-		ResourceScopes = @(
+		resourceScopes = @(
 			@{
 				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
-				QueryType = "MicrosoftGraph"
+				query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
+				queryType = "MicrosoftGraph"
 			}
 		)
 	}
-	Reviewers = @(
+	reviewers = @(
 		@{
-			Query = "./manager"
-			QueryType = "MicrosoftGraph"
-			QueryRoot = "decisions"
+			query = "./manager"
+			queryType = "MicrosoftGraph"
+			queryRoot = "decisions"
 		}
 	)
-	BackupReviewers = @(
+	backupReviewers = @(
 	)
-	FallbackReviewers = @(
+	fallbackReviewers = @(
 		@{
-			Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
-			QueryType = "MicrosoftGraph"
+			query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+			queryType = "MicrosoftGraph"
 		}
 	)
-	Settings = @{
-		MailNotificationsEnabled = $true
-		ReminderNotificationsEnabled = $true
-		JustificationRequiredOnApproval = $true
-		DefaultDecisionEnabled = $true
-		DefaultDecision = "Recommendation"
-		InstanceDurationInDays = 180
-		AutoApplyDecisionsEnabled = $true
-		RecommendationsEnabled = $true
-		Recurrence = @{
-			Pattern = @{
-				Type = "absoluteMonthly"
-				Interval = 6
-				DayOfMonth = 0
+	settings = @{
+		mailNotificationsEnabled = $true
+		reminderNotificationsEnabled = $true
+		justificationRequiredOnApproval = $true
+		defaultDecisionEnabled = $true
+		defaultDecision = "Recommendation"
+		instanceDurationInDays = 180
+		autoApplyDecisionsEnabled = $true
+		recommendationsEnabled = $true
+		recurrence = @{
+			pattern = @{
+				type = "absoluteMonthly"
+				interval = 6
+				dayOfMonth = 0
 			}
-			Range = @{
-				Type = "numbered"
-				StartDate = "2021-05-05"
-				EndDate = "2022-05-05"
+			range = @{
+				type = "numbered"
+				startDate = "2021-05-05"
+				endDate = "2022-05-05"
 			}
 		}
 	}

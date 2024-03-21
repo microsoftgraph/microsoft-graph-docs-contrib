@@ -4,7 +4,7 @@ description: "Keep implementation and operational limits in mind when designing 
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Microsoft Graph connectors API limits
@@ -32,6 +32,7 @@ This article describes implementation and operational limits for Microsoft Graph
 | ---------- | ----- |
 | [External groups](/graph/api/resources/externalconnectors-externalgroup) per Microsoft 365 tenant | 100,000 | 
 | Requests allowed per second (requests/sec) in the group administration [throttling](#throttling) threshold | 1,000 |
+| [External groups](/graph/api/resources/externalconnectors-externalgroup) per user for search query | 10,000 | 
 
 ## Item ingestion
 
@@ -39,7 +40,10 @@ This article describes implementation and operational limits for Microsoft Graph
 | ---------- | ----- |
 | Throughput limit to ingest items through a connection | 25 items/sec |
 | Item size; this limit applies to the request body when [ingesting and indexing an item](/graph/api/externalconnectors-externalconnection-put-items) | 4 MB |
+| Number of [activities](/graph/api/resources/externalconnectors-externalactivity); this is the [throttling](#throttling) threshold per activities call | 20 activities |
 | Property size | N/A |
+
+> **Note:** The 4 MB item size limit refers to the total size of *parsed text content* that is typically 10% of the original file size for common formats (for example, docx, ppt, and PDF). To contextualize, 4 MB equals 4,000,000 bytes that translates to approximately 600K-700K words or 1,400 pages (averaging 500 words per page).
 
 ## Throttling
 

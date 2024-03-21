@@ -3,7 +3,7 @@ title: "Use the Planner REST API"
 description: "You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Microsoft 365."
 author: "TarkanSevilmis"
 ms.localizationpriority: high
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: conceptualPageType
 ---
 
@@ -112,7 +112,4 @@ The following are the possible values for the limit types.
 
 All Planner API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
 The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 

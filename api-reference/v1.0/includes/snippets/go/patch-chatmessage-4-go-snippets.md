@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewChatMessage()
 messageType := graphmodels.MESSAGE_CHATMESSAGETYPE 
@@ -54,7 +62,7 @@ contentType := "application/vnd.microsoft.card.hero"
 chatMessageAttachment.SetContentType(&contentType) 
 contentUrl := null
 chatMessageAttachment.SetContentUrl(&contentUrl) 
-content := "{\r\n  \"title\": \"*title*\",\r\n  \"subtitle\": \"*subtitle*\",\r\n  \"text\": \"Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.\",\r\n  \"images\": [\r\n    {\r\n      \"url\": \"https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview\"\r\n    }\r\n  ],\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"openUrl\",\r\n      \"image\": \"https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png\",\r\n      \"title\": \"😃😃 click me 😃😃\",\r\n      \"value\": \"http://microsoft.com\"\r\n    },\r\n    {\r\n      \"type\": \"imback\",\r\n      \"title\": \"&i am back& <>= \\"\",\r\n      \"value\": \"&i am back& <>= \\"\"\r\n    },\r\n    {\r\n      \"type\": \"openUrl\",\r\n      \"title\": \"Open URL\",\r\n      \"value\": \"http://google.com\"\r\n    }\r\n  ]\r\n}"
+content := "{\r\n  \"title\": \"*title*\",\r\n  \"subtitle\": \"*subtitle*\",\r\n  \"text\": \"Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.\",\r\n  \"images\": [\r\n    {\r\n      \"url\": \"https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview\"\r\n    }\r\n  ],\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"openUrl\",\r\n      \"image\": \"https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png\",\r\n      \"title\": \"😃😃 click me 😃😃\",\r\n      \"value\": \"http://microsoft.com\"\r\n    },\r\n    {\r\n      \"type\": \"imback\",\r\n      \"title\": \"&i am back& <>= \"\",\r\n      \"value\": \"&i am back& <>= \"\"\r\n    },\r\n    {\r\n      \"type\": \"openUrl\",\r\n      \"title\": \"Open URL\",\r\n      \"value\": \"http://google.com\"\r\n    }\r\n  ]\r\n}"
 chatMessageAttachment.SetContent(&content) 
 name := null
 chatMessageAttachment.SetName(&name) 
@@ -67,7 +75,7 @@ contentType := "application/vnd.microsoft.card.hero"
 chatMessageAttachment1.SetContentType(&contentType) 
 contentUrl := null
 chatMessageAttachment1.SetContentUrl(&contentUrl) 
-content := "{\r\n  \"title\": \"*title*\",\r\n  \"subtitle\": \"*subtitle*\",\r\n  \"text\": \"Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.\",\r\n  \"images\": [\r\n    {\r\n      \"url\": \"https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview\"\r\n    }\r\n  ],\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"&message back& <>= \\"\",\r\n      \"text\": \"text = &message back& <>= \\"\",\r\n      \"displayText\": \"displayText = &message back& <>= \\"\",\r\n      \"value\": {\r\n        \"text\": \"some text 2\"\r\n      }\r\n    }\r\n  ]\r\n}"
+content := "{\r\n  \"title\": \"*title*\",\r\n  \"subtitle\": \"*subtitle*\",\r\n  \"text\": \"Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.\",\r\n  \"images\": [\r\n    {\r\n      \"url\": \"https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview\"\r\n    }\r\n  ],\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"&message back& <>= \"\",\r\n      \"text\": \"text = &message back& <>= \"\",\r\n      \"displayText\": \"displayText = &message back& <>= \"\",\r\n      \"value\": {\r\n        \"text\": \"some text 2\"\r\n      }\r\n    }\r\n  ]\r\n}"
 chatMessageAttachment1.SetContent(&content) 
 name := null
 chatMessageAttachment1.SetName(&name) 
@@ -77,7 +85,6 @@ chatMessageAttachment1.SetThumbnailUrl(&thumbnailUrl)
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
 	chatMessageAttachment1,
-
 }
 requestBody.SetAttachments(attachments)
 mentions := []graphmodels.ChatMessageMentionable {
@@ -264,11 +271,224 @@ reactions := []graphmodels.ChatMessageReactionable {
 	chatMessageReaction5,
 	chatMessageReaction6,
 	chatMessageReaction7,
-
 }
 requestBody.SetReactions(reactions)
 
-result, err := graphClient.TeamsById("team-id").ChannelsById("channel-id").MessagesById("chatMessage-id").Patch(context.Background(), requestBody, nil)
+
+chatMessageHistoryItem := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:30.489Z")
+chatMessageHistoryItem.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "angry"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem.SetReaction(reaction)
+chatMessageHistoryItem1 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:32.489Z")
+chatMessageHistoryItem1.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem1.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "laugh"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem1.SetReaction(reaction)
+chatMessageHistoryItem2 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T02:17:14.67Z")
+chatMessageHistoryItem2.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem2.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "like"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem2.SetReaction(reaction)
+chatMessageHistoryItem3 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T02:34:40.3Z")
+chatMessageHistoryItem3.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem3.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "like"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "4c9041b7-449a-40f7-8855-56da239b9fd1"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem3.SetReaction(reaction)
+chatMessageHistoryItem4 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:25.489Z")
+chatMessageHistoryItem4.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem4.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "like"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem4.SetReaction(reaction)
+chatMessageHistoryItem5 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:31.489Z")
+chatMessageHistoryItem5.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem5.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "heart"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem5.SetReaction(reaction)
+chatMessageHistoryItem6 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:33.489Z")
+chatMessageHistoryItem6.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.REACTIONADDED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem6.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "sad"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem6.SetReaction(reaction)
+chatMessageHistoryItem7 := graphmodels.NewChatMessageHistoryItem()
+modifiedDateTime , err := time.Parse(time.RFC3339, "2018-10-21T08:10:34.489Z")
+chatMessageHistoryItem7.SetModifiedDateTime(&modifiedDateTime) 
+actions := graphmodels.SURPRISED_CHATMESSAGEACTIONS 
+chatMessageHistoryItem7.SetActions(&actions) 
+reaction := graphmodels.NewChatMessageReaction()
+reactionType := "sad"
+reaction.SetReactionType(&reactionType) 
+user := graphmodels.NewChatMessageReactionIdentitySet()
+application := null
+user.SetApplication(&application) 
+device := null
+user.SetDevice(&device) 
+user := graphmodels.NewIdentity()
+id := "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+user.SetId(&id) 
+displayName := null
+user.SetDisplayName(&displayName) 
+additionalData := map[string]interface{}{
+	"userIdentityType" : "aadUser", 
+}
+user.SetAdditionalData(additionalData)
+user.SetUser(user)
+reaction.SetUser(user)
+chatMessageHistoryItem7.SetReaction(reaction)
+
+messageHistory := []graphmodels.ChatMessageHistoryItemable {
+	chatMessageHistoryItem,
+	chatMessageHistoryItem1,
+	chatMessageHistoryItem2,
+	chatMessageHistoryItem3,
+	chatMessageHistoryItem4,
+	chatMessageHistoryItem5,
+	chatMessageHistoryItem6,
+	chatMessageHistoryItem7,
+}
+requestBody.SetMessageHistory(messageHistory)
+
+messages, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByChatMessageId("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

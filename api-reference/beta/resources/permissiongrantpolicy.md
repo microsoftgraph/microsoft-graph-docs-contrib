@@ -3,7 +3,7 @@ title: "permissionGrantPolicy resource type"
 description: "Specifies the conditions under which consent can be authorized."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -26,13 +26,13 @@ A permission grant policy consists of a list of **includes** condition sets, and
 |[Get permission grant policy](../api/permissiongrantpolicy-get.md) | [permissionGrantPolicy](permissiongrantpolicy.md) |Read properties and relationships of permissionGrantPolicy object.|
 |[Update permission grant policy](../api/permissiongrantpolicy-update.md) | [permissionGrantPolicy](permissiongrantpolicy.md)  |Update permissionGrantPolicy object. |
 |**Include condition sets**| | |
-|[List include condition sets](../api/permissiongrantpolicy-list-includes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Get the condition sets which are *included* in this permission grant policy.|
-|[Add include condition set](../api/permissiongrantpolicy-post-includes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) | Add a condition set which is *included* from this permission grant policy. |
-|[Remove include condition set](../api/permissiongrantpolicy-delete-includes.md) | None | Remove a condition set which is *excluded* from this permission grant policy.|
+|[List include condition sets](../api/permissiongrantpolicy-list-includes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Get the condition sets that are *included* in this permission grant policy.|
+|[Add include condition set](../api/permissiongrantpolicy-post-includes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) | Add a condition set that is *included* from this permission grant policy. |
+|[Remove include condition set](../api/permissiongrantpolicy-delete-includes.md) | None | Remove a condition set that is *excluded* from this permission grant policy.|
 |**Exclude condition sets**| | |
-|[List exclude condition sets](../api/permissiongrantpolicy-list-excludes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Get the condition sets which are *excluded* in this permission grant policy.|
-|[Add exclude condition set](../api/permissiongrantpolicy-post-excludes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) | Add a condition set which is *excluded* from this permission grant policy. |
-|[Remove exclude condition set](../api/permissiongrantpolicy-delete-excludes.md) | None | Remove a condition set which is *excluded* from this permission grant policy.|
+|[List exclude condition sets](../api/permissiongrantpolicy-list-excludes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Get the condition sets that are *excluded* in this permission grant policy.|
+|[Add exclude condition set](../api/permissiongrantpolicy-post-excludes.md) |[permissionGrantConditionSet](permissiongrantconditionset.md) | Add a condition set that is *excluded* from this permission grant policy. |
+|[Remove exclude condition set](../api/permissiongrantpolicy-delete-excludes.md) | None | Remove a condition set that is *excluded* from this permission grant policy.|
 
 ## Properties
 
@@ -41,15 +41,17 @@ A permission grant policy consists of a list of **includes** condition sets, and
 | id | String | The unique identifier for the permission grant policy. The **id** prefix `microsoft-` is reserved for built-in permission grant policies, and may not be used in a custom permission grant policy. Only letters, numbers, hyphens (`-`) and underscores (`_`) are allowed. Key. Not nullable. Required on create. Immutable. |
 | displayName | String |The display name for the permission grant policy.|
 | description |String| The description for the permission grant policy.|
-| includes | [permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets which are *included* in this permission grant policy. Automatically expanded on `GET`.|
-| excludes |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets which are *excluded* in this permission grant policy. Automatically expanded on `GET`.|
+| includes | [permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets that are *included* in this permission grant policy. Automatically expanded on `GET`.|
+| excludes |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets that are *excluded* in this permission grant policy. Automatically expanded on `GET`.|
+| includeAllPreApprovedApplications  | Boolean | Set to `true` to create all pre-approval policies in the tenant. Set to `false` to disable all pre-approval policies in the tenant. The default is `false`.|
+| resourceScopeType  |String| The resource type the pre-approval policy applies to. Possible values: `group` for [groups](../resources/group.md) and [teams](../resources/team.md), `chat` for [chats](../resources/chat.md), `tenant` for all supported resources in the tenant. Required.|
 
 ## Relationships
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|includes|[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets which are *included* in this permission grant policy. This navigation is automatically expanded on GET. |
-|excludes|[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets which are *excluded* in this permission grant policy. This navigation is automatically expanded on GET. |
+|includes|[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets that are *included* in this permission grant policy. This navigation is automatically expanded on GET. |
+|excludes|[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets that are *excluded* in this permission grant policy. This navigation is automatically expanded on GET. |
 
 ## JSON representation
 

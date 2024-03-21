@@ -3,8 +3,8 @@ title: "phone resource type"
 description: "Represents a phone number."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
-author: "jumasure"
+ms.subservice: "entra-directory-management"
+author: "dkershaw10"
 ---
 
 # phone resource type
@@ -17,7 +17,7 @@ Represents a phone number.
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |number|string|The phone number.|
 |type|String|The type of phone number. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|

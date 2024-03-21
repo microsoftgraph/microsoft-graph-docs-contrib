@@ -3,7 +3,7 @@ title: "sharedWithChannelTeamInfo resource type"
 description: "Represents information for a team with which a channel is shared."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 |displayName|String|The name of the [team](team.md). Inherited from [teamInfo](../resources/teaminfo.md).|
 |id|String|The unique identifier for the [team](team.md). Read-only.|
 |isHostTeam|Boolean|Indicates whether the [team](team.md) is the host of the [channel](channel.md).|
-|tenantId|String|The ID of the Azure Active Directory tenant. Inherited from [teamInfo](../resources/teaminfo.md).|
+|tenantId|String|The ID of the Microsoft Entra tenant. Inherited from [teamInfo](../resources/teaminfo.md).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -57,4 +57,3 @@ The following is a JSON representation of the resource.
   "tenantId": "String"
 }
 ```
-

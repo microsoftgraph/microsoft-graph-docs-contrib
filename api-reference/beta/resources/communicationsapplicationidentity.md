@@ -1,9 +1,9 @@
 --- 
 title: "communicationsApplicationIdentity resource type"
 description: "Represents the identity of an application."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,22 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of an application used for communications such as calling. These should be registered as enterprise applications in [Azure Active Directory](/azure/active-directory/).
+Represents the identity of an application used for communications such as calling. You need to register the application as an enterprise application in [Microsoft Entra ID](/azure/active-directory/).
 
 Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The application's client ID from Azure Active Directory. |
-| displayName | String | Inherited from **identity**. The display name associated with the application. |
-| applicationType | String | First party Microsoft application presenting this **identity**. |
-| hidden | Boolean | True if the participant would not like to be shown in other participants' rosters. |
+| Property                       | Type                        | Description                    |
+| :----------------------------- | :---------------------------| :------------------------------|
+| applicationType | String | First-party Microsoft application that presents this **identity**. |
+| displayName | String | The display name associated with the application. Inherited from **identity**. |
+| hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
+| id | String | The client ID of the application from Microsoft Entra ID. Inherited from **identity**. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -41,9 +41,9 @@ The following is a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
-  "displayName": "String",
   "applicationType": "String",
-  "hidden": false
+  "displayName": "String",
+  "hidden": "Boolean",
+  "id": "String"
 }
 ```

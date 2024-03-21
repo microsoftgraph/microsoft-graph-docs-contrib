@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new RiskDetectionsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new RiskDetectionsRequestBuilderGetQueryParameters();
+$queryParameters = RiskDetectionsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityProtection()->riskDetections()->get($requestConfiguration);
-
+$result = $graphServiceClient->identityProtection()->riskDetections()->get($requestConfiguration)->wait();
 
 ```

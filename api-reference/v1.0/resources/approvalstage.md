@@ -1,9 +1,9 @@
 ---
 title: "approvalStage resource type"
-description: "The approvalStage object associated with a userConsentRequest or an access package assignment request."
-author: "psignoret"
+description: "Specifies a decision stage in an approval in entitlement management and PIM."
+author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Specifies a decision stage in an [approval](approval.md).
+Specifies a decision stage in an [approval](approval.md) in entitlement management and PIM.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List approvalStages](../api/approval-list-stages.md) | [approvalStage](approvalstage.md) collection | List the **approvalStage** objects associated with an **approval** object in entitlement management. |
-|[Get approvalStage](../api/approvalstage-get.md) | [approvalStage](approvalstage.md) | Retrieve the properties of an **approvalStage** object in entitlement management. |
-|[Update approvalStage](../api/approvalstage-update.md) | None | Apply approve or deny decision on an **approvalStage** object in entitlement management. |
+|[List approvalStages](../api/approval-list-stages.md) | [approvalStage](approvalstage.md) collection | List the **approvalStage** objects associated with an **approval** object in entitlement management and PIM. |
+|[Get approvalStage](../api/approvalstage-get.md) | [approvalStage](approvalstage.md) | Retrieve the properties of an **approvalStage** object in entitlement management and PIM. |
+|[Update approvalStage](../api/approvalstage-update.md) | None | Apply approve or deny decision on an **approvalStage** object in entitlement management and PIM. |
 
 ## Properties
 

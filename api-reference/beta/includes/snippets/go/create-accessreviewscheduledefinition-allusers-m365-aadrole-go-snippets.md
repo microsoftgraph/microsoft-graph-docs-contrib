@@ -4,42 +4,47 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessReviewScheduleDefinition()
 displayName := "Review employee access to LinkedIn"
 requestBody.SetDisplayName(&displayName) 
 descriptionForAdmins := "Review employee access to LinkedIn"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
-scope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
+scope := graphmodels.NewPrincipalResourceMembershipsScope()
 
 
- := graphmodels.New()
+accessReviewScope := graphmodels.NewAccessReviewQueryScope()
 query := "/users"
-.SetQuery(&query) 
+accessReviewScope.SetQuery(&query) 
 queryType := "MicrosoftGraph"
-.SetQueryType(&queryType) 
+accessReviewScope.SetQueryType(&queryType) 
 
-	principalScopes := []graphmodels.Objectable {
-		,
-
-	}
-
-
- := graphmodels.New()
-query := "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
-.SetQuery(&query) 
-queryType := "MicrosoftGraph"
-.SetQueryType(&queryType) 
-
-	resourceScopes := []graphmodels.Objectable {
-		,
-
-	}
+principalScopes := []graphmodels.AccessReviewScopeable {
+	accessReviewScope,
 }
-scope.SetAdditionalData(additionalData)
+scope.SetPrincipalScopes(principalScopes)
+
+
+accessReviewScope := graphmodels.NewAccessReviewQueryScope()
+query := "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
+accessReviewScope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+accessReviewScope.SetQueryType(&queryType) 
+
+resourceScopes := []graphmodels.AccessReviewScopeable {
+	accessReviewScope,
+}
+scope.SetResourceScopes(resourceScopes)
 requestBody.SetScope(scope)
 
 
@@ -51,9 +56,8 @@ accessReviewReviewerScope.SetQueryType(&queryType)
 queryRoot := "decisions"
 accessReviewReviewerScope.SetQueryRoot(&queryRoot) 
 
-reviewers := []graphmodels.Objectable {
+reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetReviewers(reviewers)
 
@@ -64,9 +68,8 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-backupReviewers := []graphmodels.Objectable {
+backupReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetBackupReviewers(backupReviewers)
 
@@ -77,9 +80,8 @@ accessReviewReviewerScope.SetQuery(&query)
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
 
-fallbackReviewers := []graphmodels.Objectable {
+fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 settings := graphmodels.NewAccessReviewScheduleSettings()
@@ -119,7 +121,7 @@ recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
+definitions, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

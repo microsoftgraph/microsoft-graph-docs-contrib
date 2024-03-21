@@ -3,7 +3,7 @@ title: "crossTenantAccessPolicy resource type"
 description: "Cross-tenant access policy represents the base policy in the directory for cross-tenant access settings."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -31,8 +31,8 @@ Represents the base policy in the directory for cross-tenant access settings.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|default|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.|
-|partners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Defines partner-specific configurations for external Azure Active Directory organizations.|
+|default|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Defines the default configuration for how your organization interacts with external Microsoft Entra organizations.|
+|partners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Defines partner-specific configurations for external Microsoft Entra organizations.|
 
 ## JSON representation
 

@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Communications.GetPresencesByUserId.GetPresencesByUserIdPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Communications.GetPresencesByUserId;
+
+var requestBody = new GetPresencesByUserIdPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -14,7 +17,9 @@ var requestBody = new Microsoft.Graph.Beta.Communications.GetPresencesByUserId.G
 		"66825e03-7ef5-42da-9069-724602c31f6b",
 	},
 };
-var result = await graphClient.Communications.GetPresencesByUserId.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Communications.GetPresencesByUserId.PostAsGetPresencesByUserIdPostResponseAsync(requestBody);
 
 
 ```

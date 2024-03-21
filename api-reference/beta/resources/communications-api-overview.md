@@ -3,7 +3,7 @@ title: "Working with the cloud communications API in Microsoft Graph"
 description: "The Microsoft Graph cloud communications API adds a new dimension to how your apps and services can interact with users by enabling voice and video features."
 author: "ananmishr"
 doc_type: conceptualPageType
-ms.prod: cloud-communications
+ms.subservice: cloud-communications
 ms.localizationpriority: high
 ---
 
@@ -16,16 +16,19 @@ The Microsoft Graph cloud communications API adds a new dimension to how you or 
 You can use the cloud communications API to build service applications (bots) that act like participants in a call, and that create and retrieve meetings on behalf of users and to check their presence availability and activity.
 This API provides calling functionality as well as the ability to create and retrieve online meetings. You can use service applications (bots) with this API, where the bot can act as a participant in your VoIP calls or Microsoft Teams meetings, for example.
 
+> [!IMPORTANT]
+> You may NOT use the Cloud Communications APIs to record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure that you are compliant with the laws and regulations in your area regarding data protection and confidentiality of communications. Please see the Terms of Use and consult with your legal counsel for more information.
+
 ## Authorization
 
 One of the following [permissions](/graph/permissions-reference#calls-permissions) is required to access the cloud communications API. These permissions need to be granted by the administrator.
 
-| Scenario                 | Permissions                                  |
-|:------------------------------------|:---------------------------------------------|
-| Calling                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
-| Meetings                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
-| Presence                 | Presence.Read, Presence.Read.All |
-| Call records             | CallRecords.Read.All |
+| Scenario     | Permissions                                                                                                                     |
+|:-------------|:--------------------------------------------------------------------------------------------------------------------------------|
+| Calling      | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.AccessMedia.All |
+| Meetings     | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All                                                                           |
+| Presence     | Presence.Read, Presence.Read.All                                                                                                |
+| Call records | CallRecords.Read.All                                                                                                            |
 
 ## Common use cases
 
@@ -50,10 +53,7 @@ The following table lists some of the common uses for the cloud communications A
 | presence | [presence properties](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#properties) |
 | callRecord | [callRecord properties](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true#properties) |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
-## See also
+## Related content
 
 - [Cloud communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 - [Communication Signaling SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls/1.0.0-prerelease.494)

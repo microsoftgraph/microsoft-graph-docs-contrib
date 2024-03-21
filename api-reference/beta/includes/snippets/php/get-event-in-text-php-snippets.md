@@ -6,23 +6,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new EventRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new EventRequestBuilderGetQueryParameters();
-$queryParameters->select = ["subject","body","bodyPreview"];
-
+$requestConfiguration = new EventItemRequestBuilderGetRequestConfiguration();
 $headers = [
-'Prefer' => 'outlook.body-content-type="text"',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'outlook.body-content-type="text"',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = EventItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["subject","body","bodyPreview"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->me()->eventsById('event-id')->get($requestConfiguration);
 
+$result = $graphServiceClient->me()->events()->byEventId('event-id')->get($requestConfiguration)->wait();
 
 ```

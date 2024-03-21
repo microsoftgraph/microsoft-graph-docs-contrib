@@ -1,9 +1,9 @@
 ---
 title: "retentionDurationForever resource type"
-description: "Represents that content will be retained permanently and will not be deleted."
+description: "Represents that content is retained permanently and won't be deleted."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates that content will be retained permanently and will not be deleted.
+Indicates that content is retained permanently and won't be deleted.
 
 
 Inherits from [retentionDuration](../resources/security-retentionduration.md).
@@ -25,7 +25,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.retentionDurationForever"

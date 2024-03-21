@@ -3,7 +3,7 @@ title: "webApplication resource type"
 description: "Specifies settings for a web application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -19,11 +19,11 @@ Specifies settings for a web application.
 |:---------|:-----|:------------|
 | homePageUrl | String | Home page or landing page of the application. |
 | implicitGrantSettings | [implicitGrantSettings](implicitgrantsettings.md)| Specifies whether this web application can request tokens using the OAuth 2.0 implicit flow. |
-| logoutUrl | String | Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols. |
+| logoutUrl | String | Specifies the URL that is used by Microsoft's authorization service to log out a user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols. |
 | redirectUris | String collection | Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

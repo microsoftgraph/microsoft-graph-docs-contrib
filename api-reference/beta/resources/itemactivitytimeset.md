@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: ItemActivityTimeSet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # ItemActivityTimeSet resource type
@@ -44,8 +44,8 @@ The **ItemActivityTimeSet** resource provides information about when an [activit
 | recordedDateTime | DateTimeOffset | When the observation was recorded on the service. |
 
 The difference between **observed** and **recorded** times is especially important for offline collaboration scenarios.
-If a user comments on a file while offline, the time that they make the comment is set as the **observedDateTime**.
-At a later time when the user re-connects to the cloud and the changes get uploaded, that later time is set as the **recordedDateTime**.
+If a user comments on a file while offline, the time that they make the comment be set as the **observedDateTime**.
+At a later time when the user reconnects to the cloud and the changes get uploaded, that later time is set as the **recordedDateTime**.
 
 ## Remarks
 

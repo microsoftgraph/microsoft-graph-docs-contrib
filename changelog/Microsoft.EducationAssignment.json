@@ -3,6 +3,712 @@
     {
       "ChangeList": [
         {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationGradingSchemeGrade",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationGradingSchemeGrade](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingSchemeGrade?view=graph-rest-beta) resource type.",
+          "Target": "educationGradingSchemeGrade"
+        },
+        {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gradingScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingScheme** relationship to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "defaultGradingScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultGradingScheme** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gradingSchemes",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingSchemes** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationGradingScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationGradingScheme](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingScheme?view=graph-rest-beta) resource",
+          "Target": "educationGradingScheme"
+        }
+      ],
+      "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-15T18:05:21.1005157Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "291ce8b6-4d43-4b9b-8753-99857e72b666",
+          "ApiChange": "Member",
+          "ChangedApiName": "inactive",
+          "ChangeType": "Addition",
+          "Description": "Added the `inactive` member to the **educationAssignmentStatus** enumeration.",
+          "Target": "educationAssignmentStatus"
+        },
+        {
+          "Id": "291ce8b6-4d43-4b9b-8753-99857e72b666",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0) method to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationassignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "291ce8b6-4d43-4b9b-8753-99857e72b666",
+          "ApiChange": "Method",
+          "ChangedApiName": "deactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deactivate](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-1.0) method to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationassignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "291ce8b6-4d43-4b9b-8753-99857e72b666",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-26T21:07:29.9361123Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationModule",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "modules",
+          "ChangeType": "Addition",
+          "Description": "Added the **modules** relationship to the [educationClass](https://learn.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-1.0) resource.",
+          "Target": "educationClass"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationModuleResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "educationModuleResource"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationChannelResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationChannelResource](https://learn.microsoft.com/en-us/graph/api/resources/educationChannelResource?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "educationChannelResource"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationLinkedAssignmentResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationLinkedAssignmentResource](https://learn.microsoft.com/en-us/graph/api/resources/educationLinkedAssignmentResource?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "educationLinkedAssignmentResource"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "educationModuleStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationModuleStatus** enumeration type.",
+          "Target": "educationModuleStatus"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Property",
+          "ChangedApiName": "moduleUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **moduleUrl** property to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/graph/api/educationmodule-publish?view=graph-rest-1.0) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-1.0) resource.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "pin",
+          "ChangeType": "Addition",
+          "Description": "Added the [pin](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-1.0) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-1.0) resource.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "unpin",
+          "ChangeType": "Addition",
+          "Description": "Added the [unpin](https://learn.microsoft.com/graph/api/educationmodule-unpin?view=graph-rest-1.0) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-1.0) resource.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpResourcesFolder](https://learn.microsoft.com/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-1.0) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-1.0) resource.",
+          "Target": "educationModule"
+        }
+      ],
+      "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-02-15T17:22:42.5007887Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/graph/api/educationassignment-list-gradingcategory?view=graph-rest-v1.0) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-v1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
+          "ApiChange": "Method",
+          "ChangedApiName": "PUT",
+          "ChangeType": "Addition",
+          "Description": "Added the [post](https://learn.microsoft.com/graph/api/educationassignment-post-gradingcategory?view=graph-rest-v1.0) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-v1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [remove] (https://learn.microsoft.com/graph/api/educationassignment-delete-gradingcategory?view=graph-rest-v1.0) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-v1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update",
+          "ChangeType": "Addition",
+          "Description": "Added the [update] (https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-v1.0) operation to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-v1.0) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/graph/api/educationassignment-list-gradingcategory?view=graph-rest-v1.0) operation to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-v1.0) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "gradingCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingCategory** relationship to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-v1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "gradingCategories",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingCategories** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationGradingCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationGradingCategory](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingCategory?view=graph-rest-v1.0) resource",
+          "Target": "educationGradingCategory"
+        }
+      ],
+      "Id": "cf879894-1649-4065-8cf4-1f105766f478",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-11-30T16:40:45.6092486Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {  
+      
+        "ChangeList": [
+          
+            {
+              "Id": "66f141ef-5913-4694-b1d8-6eb7ac6c3d8f",
+              "ApiChange": "Property",
+              "ChangedApiName": "webUrl",
+              "ChangeType": "Addition",
+              "Description": "Added the **webUrl** property to the [educationSubmission](https://learn.microsoft.com/graph/api/resources/educationSubmission?view=graph-rest-v1.0) resource.",
+              "Target": "educationSubmission"
+            }
+          ],
+              "Id": "66f141ef-5913-4694-b1d8-6eb7ac6c3d8f",
+              "Cloud": "Prod",
+              "Version": "v1.0",
+              "CreatedDateTime": "2024-01-29T17:50:21.2564873Z",
+              "WorkloadArea": "Education",
+              "SubArea": ""
+    },
+    {
+        "ChangeList": [
+            {
+                "ApiChange": "Permission",
+                "ChangedApiName": "EduAssignments.ReadWrite.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Delete assignment](https://learn.microsoft.com/en-us/graph/api/educationassignment-delete?view=graph-rest-beta) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta).",
+                "Id": "7e0f7bd3-2622-4187-9545-d7eb5a652eaa",
+                "Target": "educationAssignment"
+            },
+            {
+                "ApiChange": "Permission",
+                "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Create assignment resource](https://learn.microsoft.com/en-us/graph/api/educationassignment-post-resources?view=graph-rest-beta) method of [assignment resource](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentresource?view=graph-rest-beta).",
+                "Id": "7e0f7bd3-2622-4187-9545-d7eb5a652eaa",
+                "Target": "educationAssignmentResource"
+            },
+            {
+                "ApiChange": "Permission",
+                "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Setup assignment resources folder](https://learn.microsoft.com/en-us/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-beta) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta).",
+                "Id": "7e0f7bd3-2622-4187-9545-d7eb5a652eaa",
+                "Target": "educationAssignment"
+            },
+            {
+                "ApiChange": "Permission",
+                "ChangedApiName": "EduAssignments.ReadWrite.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Update assignment](https://learn.microsoft.com/en-us/graph/api/educationassignment-update?view=graph-rest-beta) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta).",
+                "Id": "7e0f7bd3-2622-4187-9545-d7eb5a652eaa",
+                "Target": "educationAssignment"
+            },
+            {
+                "ApiChange": "Permission",
+                "ChangedApiName": "EduAssignments.ReadWrite.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Delete assignment resource](https://learn.microsoft.com/en-us/graph/api/educationassignmentresource-delete?view=graph-rest-beta) method of [assignment resource](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentresource?view=graph-rest-beta).",
+                "Id": "7e0f7bd3-2622-4187-9545-d7eb5a652eaa",
+                "Target": "educationAssignmentResource"
+            }
+        ],
+        "Id": "7e0f7bd3-2622-4187-9545-d7eb5a652eaa",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2023-09-26T00:00:00",
+        "WorkloadArea": "Education",
+        "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Delete assignment](https://learn.microsoft.com/en-us/graph/api/educationassignment-delete?view=graph-rest-1.0) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-1.0).",
+          "Id": "6c7e1673-5f35-4df3-a099-7b29652546b1",
+          "Target": "educationAssignment"
+        },
+        {
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Create assignment resource](https://learn.microsoft.com/en-us/graph/api/educationassignment-post-resources?view=graph-rest-1.0) method of [assignment resource](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentresource?view=graph-rest-1.0).",
+          "Id": "6c7e1673-5f35-4df3-a099-7b29652546b1",
+          "Target": "educationAssignmentResource"
+        },
+        {
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Setup assignment resources folder](https://learn.microsoft.com/en-us/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-1.0) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-1.0).",
+          "Id": "6c7e1673-5f35-4df3-a099-7b29652546b1",
+          "Target": "educationAssignment"
+        },
+        {
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Update assignment](https://learn.microsoft.com/en-us/graph/api/educationassignment-update?view=graph-rest-1.0) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-1.0).",
+          "Id": "6c7e1673-5f35-4df3-a099-7b29652546b1",
+          "Target": "educationAssignment"
+        },
+        {
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Delete assignment resource](https://learn.microsoft.com/en-us/graph/api/educationassignmentresource-delete?view=graph-rest-1.0) method of [assignment resource](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentresource?view=graph-rest-1.0).",
+          "Id": "6c7e1673-5f35-4df3-a099-7b29652546b1",
+          "Target": "educationAssignmentResource"
+        }
+      ],
+      "Id": "6c7e1673-5f35-4df3-a099-7b29652546b1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-09-26T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the following operations of the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource: [POST](https://learn.microsoft.com/en-us/graph/api/educationclass-post-module?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/educationmodule-update?view=graph-rest-beta), [DELETE](https://learn.microsoft.com/en-us/graph/api/educationmodule-delete?view=graph-rest-beta), [publish](https://learn.microsoft.com/en-us/graph/api/educationmodule-publish?view=graph-rest-beta), [pin](https://learn.microsoft.com/en-us/graph/api/educationmodule-pin?view=graph-rest-beta), [unpin](https://learn.microsoft.com/en-us/graph/api/educationmodule-unpin?view=graph-rest-beta), and [setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the following operations of the [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-beta) resource: [POST](https://learn.microsoft.com/en-us/graph/api/educationmodule-post-resources?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-update?view=graph-rest-beta), and [DELETE](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-delete?view=graph-rest-beta).",
+          "Target": "educationModuleResource"
+        }
+      ],
+      "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-26T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "ApiChange": "Method",
+          "ChangedApiName": "excuse",
+          "ChangeType": "Addition",
+          "Description": "Added the [excuse](https://learn.microsoft.com/en-us/graph/api/educationsubmission-excuse?view=graph-rest-beta) method to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+          "Id": "79a508b6-2af7-4efe-9253-efc0e104ffaf",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Cloud": "Prod",
+      "CreatedDateTime": "2023-11-13T03:14:22.628566Z",
+      "Id": "79a508b6-2af7-4efe-9253-efc0e104ffaf",
+      "Version": "beta",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f42a2acd-7e06-4b84-abdd-5df825fc2845",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment).",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "f42a2acd-7e06-4b84-abdd-5df825fc2845",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment).",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "f2ab8d6b-0439-418e-aa8a-7ac6267031e0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-23T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8ecf649b-9be2-4d02-b1cd-fc6f53bca6a6",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Create educationAssignment](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "8ecf649b-9be2-4d02-b1cd-fc6f53bca6a6",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Create educationAssignment](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "8ecf649b-9be2-4d02-b1cd-fc6f53bca6a6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-23T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationModule",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource and supported methods.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationModuleResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-beta) resource and supported methods.",
+          "Target": "educationModuleResource"
+        },
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationChannelResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationChannelResource](https://learn.microsoft.com/en-us/graph/api/resources/educationChannelResource?view=graph-rest-beta) resource and supported methods.",
+          "Target": "educationChannelResource"
+        },
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationLinkedAssignmentResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationLinkedAssignmentResource](https://learn.microsoft.com/en-us/graph/api/resources/educationLinkedAssignmentResource?view=graph-rest-beta) resource and supported methods.",
+          "Target": "educationLinkedAssignmentResource"
+        },
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "educationModuleStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationModuleStatus** enumeration type.",
+          "Target": "educationModuleStatus"
+        },
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Property",
+          "ChangedApiName": "moduleUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **moduleUrl** property to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/graph/api/educationmodule-publish?view=graph-rest-beta) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Method",
+          "ChangedApiName": "pin",
+          "ChangeType": "Addition",
+          "Description": "Added the [pin](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-beta) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Method",
+          "ChangedApiName": "unpin",
+          "ChangeType": "Addition",
+          "Description": "Added the [unpin](https://learn.microsoft.com/graph/api/educationmodule-unpin?view=graph-rest-beta) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpResourcesFolder](https://learn.microsoft.com/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource.",
+          "Target": "educationModule"
+        }
+      ],
+      "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-11T17:22:42.5007887Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "53dcb5cc-6ce2-4c0b-acf3-0b94cff013e3",
+          "ApiChange": "Member",
+          "ChangedApiName": "released",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `released` member from the **educationSubmissionStatus** enumeration.",
+          "Target": "educationSubmissionStatus"
+        }
+      ],
+      "Id": "53dcb5cc-6ce2-4c0b-acf3-0b94cff013e3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-12T21:07:29.9361123Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0a697e64-e12c-40ac-b133-a0faeab783c4",
+          "ApiChange": "Member",
+          "ChangedApiName": "released",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `released` member from the **educationSubmissionStatus** enumeration.",
+          "Target": "educationSubmissionStatus"
+        }
+      ],
+      "Id": "0a697e64-e12c-40ac-b133-a0faeab783c4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-05-31T21:07:29.9361123Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/graph/api/educationassignment-list-gradingcategory?view=graph-rest-beta) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Method",
+          "ChangedApiName": "PUT",
+          "ChangeType": "Addition",
+          "Description": "Added the [post](https://learn.microsoft.com/graph/api/educationassignment-post-gradingcategory?view=graph-rest-beta) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [remove] (https://learn.microsoft.com/graph/api/educationassignment-delete-gradingcategory?view=graph-rest-beta) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update",
+          "ChangeType": "Addition",
+          "Description": "Added the [update] (https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-beta) operation to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/graph/api/educationassignment-list-gradingcategory?view=graph-rest-beta) operation to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "gradingCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingCategory** relationship to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "gradingCategories",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingCategories** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationGradingCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationGradingCategory](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingCategory?view=graph-rest-beta) resource",
+          "Target": "educationGradingCategory"
+        }
+      ],
+      "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-15T16:40:45.6092486Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c5cda5a9-625a-436f-8d01-46d646d39b5d",
+          "ApiChange": "Member",
+          "ChangedApiName": "inactive",
+          "ChangeType": "Addition",
+          "Description": "Added the `inactive` member to the **educationAssignmentStatus** enumeration.",
+          "Target": "educationAssignmentStatus"
+        },
+        {
+          "Id": "c5cda5a9-625a-436f-8d01-46d646d39b5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-beta) method to the [educationassignment](https://learn.microsoft.com/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "c5cda5a9-625a-436f-8d01-46d646d39b5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "deactivate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deactivate](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-beta) method to the [educationassignment](https://learn.microsoft.com/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "c5cda5a9-625a-436f-8d01-46d646d39b5d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-04-12T21:07:29.9361123Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9bc3c118-c0b7-43ed-8fa8-679f566fea64",
           "ApiChange": "Resource",
           "ChangedApiName": "educationTeamsAppResource",
@@ -18,7 +724,7 @@
       "WorkloadArea": "Education",
       "SubArea": ""
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "42157def-1ce3-4ed4-8ca8-a17043171a27",
@@ -310,7 +1016,7 @@
     },
     {
       "ChangeList": [
-        {      
+        {
           "Id": "89d1da80-c72a-11ec-9d64-0242ac120002",
           "ApiChange": "Resource",
           "ChangedApiName": "educationTeamsAppResource",
@@ -348,10 +1054,10 @@
       "Id": "a85673b2-5302-459e-94d3-15d744c3b4dd",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-05-11T23:50:05.475343Z",          
+      "CreatedDateTime": "2022-05-11T23:50:05.475343Z",
       "WorkloadArea": "Education",
       "SubArea": ""
-    },          
+    },
     {
       "ChangeList": [
         {
@@ -443,15 +1149,15 @@
       "CreatedDateTime": "2021-12-01T15:35:00.000Z",
       "WorkloadArea": "Education",
       "SubArea": ""
-    },    
+    },
     {
       "ChangeList": [
-        {    
+        {
           "Id": "c18b29da-1826-463a-b628-d0c0b8a612df",
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) method to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/educationassignment-delta?view=graph-rest-beta) method to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
           "Target": "educationAssignment"
         },
         {
@@ -459,7 +1165,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/delta?view=graph-rest-beta) method to the [educationCategory](https://learn.microsoft.com/en-us/graph/api/resources/educationcategory?view=graph-rest-beta) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/educationcategory-delta?view=graph-rest-beta) method to the [educationCategory](https://learn.microsoft.com/en-us/graph/api/resources/educationcategory?view=graph-rest-beta) resource.",
           "Target": "educationCategory"
         }
       ],
@@ -563,7 +1269,7 @@
       "CreatedDateTime": "2021-09-23T01:11:35.5314928Z",
       "WorkloadArea": "Education",
       "SubArea": ""
-    },     
+    },
     {
       "ChangeList": [
         {
@@ -581,10 +1287,10 @@
       "CreatedDateTime": "2021-09-14T15:35:00.000Z",
       "WorkloadArea": "Education",
       "SubArea": ""
-    },    
+    },
     {
       "ChangeList": [
-        {      
+        {
           "Id": "3fad4d1e-437c-4171-bbed-12a853133314",
           "ApiChange": "Action",
           "ChangedApiName": "setUpResourcesFolder",
@@ -592,7 +1298,7 @@
           "Description": "Changed the [educationAssignment: setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-beta) method from a function to an action.",
           "Target": "educationAddToCalendarOptions"
         },
-         {
+        {
           "Id": "3fad4d1e-437c-4171-bbed-12a853133314",
           "ApiChange": "Action",
           "ChangedApiName": "setUpResourcesFolder",
@@ -607,7 +1313,7 @@
       "CreatedDateTime": "2021-09-03T23:46:18.701Z",
       "WorkloadArea": "Education",
       "SubArea": ""
-    }, 
+    },
     {
       "ChangeList": [
         {
@@ -618,7 +1324,7 @@
           "Description": "Changed the [educationAssignment: setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-1.0) method from a function to an action.",
           "Target": "educationAddToCalendarOptions"
         },
-         {
+        {
           "Id": "7f0cf8b1-75bf-4307-bdbe-743f12680c8c4",
           "ApiChange": "Action",
           "ChangedApiName": "setUpResourcesFolder",
@@ -977,7 +1683,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "publish",
           "ChangeType": "Addition",
-          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/publish?view=graph-rest-1.0) method to the [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/educationAssignment-publish?view=graph-rest-1.0) method to the [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-v1.0) resource.",
           "Target": "publish"
         },
         {
@@ -985,7 +1691,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "return",
           "ChangeType": "Addition",
-          "Description": "Added the [return](https://learn.microsoft.com/en-us/graph/api/return?view=graph-rest-1.0) method to the [submission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [return](https://learn.microsoft.com/en-us/graph/api/educationSubmission-return?view=graph-rest-1.0) method to the [submission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-v1.0) resource.",
           "Target": "return"
         },
         {
@@ -993,7 +1699,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "submit",
           "ChangeType": "Addition",
-          "Description": "Added the [submit](https://learn.microsoft.com/en-us/graph/api/submit?view=graph-rest-1.0) method to the [submission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [submit](https://learn.microsoft.com/en-us/graph/api/educationSubmission-submit?view=graph-rest-1.0) method to the [submission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-v1.0) resource.",
           "Target": "submit"
         },
         {
@@ -1001,7 +1707,7 @@
           "ApiChange": "Action",
           "ChangedApiName": "unsubmit",
           "ChangeType": "Addition",
-          "Description": "Added the [unsubmit](https://learn.microsoft.com/en-us/graph/api/unsubmit?view=graph-rest-1.0) method to the [submission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [unsubmit](https://learn.microsoft.com/en-us/graph/api/educationSubmission-unsubmit?view=graph-rest-1.0) method to the [submission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-v1.0) resource.",
           "Target": "unsubmit"
         },
         {
@@ -1009,7 +1715,7 @@
           "ApiChange": "Function",
           "ChangedApiName": "setUpResourcesFolder",
           "ChangeType": "Addition",
-          "Description": "Added the [setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/setUpResourcesFolder?view=graph-rest-1.0) method to the [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/educationAssignment-setUpResourcesFolder?view=graph-rest-1.0) method to the [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-v1.0) resource.",
           "Target": "setUpResourcesFolder"
         },
         {
@@ -1017,7 +1723,7 @@
           "ApiChange": "Function",
           "ChangedApiName": "setUpResourcesFolder",
           "ChangeType": "Addition",
-          "Description": "Added the [setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/setUpResourcesFolder?view=graph-rest-1.0) method to the [submission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/educationSubmission-setUpResourcesFolder?view=graph-rest-1.0) method to the [submission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-v1.0) resource.",
           "Target": "setUpResourcesFolder"
         }
       ],
@@ -1027,7 +1733,7 @@
       "CreatedDateTime": "2021-06-10T08:09:11.9403436Z",
       "WorkloadArea": "Education",
       "SubArea": ""
-    },   
+    },
     {
       "ChangeList": [
         {
@@ -1079,7 +1785,7 @@
       "CreatedDateTime": "2021-06-02T18:46:18.701Z",
       "WorkloadArea": "Education",
       "SubArea": ""
-    },  
+    },
     {
       "ChangeList": [
         {
@@ -1135,7 +1841,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getResourcesFolderUrl",
           "ChangeType": "Change",
-          "Description": "Removed the [getResourcesFolderUrl](https://learn.microsoft.com/en-us/graph/api/educationassignment-getresourcesfolderurl?view=graph-rest-beta) method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
+          "Description": "Removed the **getResourcesFolderUrl** method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "getResourcesFolderUrl"
         }
       ],
@@ -1301,7 +2007,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getResourcesFolderUrl",
           "ChangeType": "Change",
-          "Description": "Deprecated the [getResourcesFolderUrl](https://learn.microsoft.com/en-us/graph/api/educationassignment-getresourcesfolderurl?view=graph-rest-beta) method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
+          "Description": "Deprecated the **getResourcesFolderUrl** method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-assignments-api-beta).",
           "Target": "getResourcesFolderUrl"
         }
       ],

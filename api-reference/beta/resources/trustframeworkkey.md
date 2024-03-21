@@ -3,7 +3,7 @@ title: "trustFrameworkKey resource type"
 description: "Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that represents a cryptographic key. The structure of this resource follows the format defined in RFC 7517 Section 4."
 ms.localizationpriority: medium
 author: "valnav"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -23,16 +23,16 @@ Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that
 | kty | String | The **kty** (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are `rsa`, `oct`. |
 | use | String | The **use** (public key use) parameter identifies the intended use of the public key.  The **use** parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data. Possible values are: `sig` (signature), `enc` (encryption)  |
 | x5c | string collection | The **x5c** (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates [RFC 5280](https://tools.ietf.org/html/rfc5280). |
-| x5t | string | The **x5t** (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate [RFC 5280](https://tools.ietf.org/html/rfc5280). |
+| x5t | string | The **x5t** (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate [RFC 5280](https://tools.ietf.org/html/rfc5280). |
 | e | string | RSA Key - public exponent |
-| d| string | RSA Key - private exponent. Field cannot be read back. |
+| d| string | RSA Key - private exponent. Field can't be read back. |
 | n | string | RSA Key - modulus |
-| p | string | RSA Key - first prime. Field cannot be read back. |
-| q | string | RSA Key - second prime. Field cannot be read back. |
-| dp | string | RSA Key - first exponent. Field cannot be read back. |
-| dq | string | RSA Key - second exponent. Field cannot be read back. |
-| qi | string | RSA Key - Coefficient. Field cannot be read back. |
-| k | string | Symmetric Key for oct key type. Field cannot be read back.   |
+| p | string | RSA Key - first prime. Field can't be read back. |
+| q | string | RSA Key - second prime. Field can't be read back. |
+| dp | string | RSA Key - first exponent. Field can't be read back. |
+| dq | string | RSA Key - second exponent. Field can't be read back. |
+| qi | string | RSA Key - Coefficient. Field can't be read back. |
+| k | string | Symmetric Key for oct key type. Field can't be read back.   |
 | nbf | int | This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.) |
 | exp | int | This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.) |
 
@@ -40,7 +40,7 @@ Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

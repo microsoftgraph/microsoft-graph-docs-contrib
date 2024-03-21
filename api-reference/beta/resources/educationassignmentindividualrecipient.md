@@ -3,7 +3,7 @@ title: "educationAssignmentIndividualRecipient resource type"
 description: "Used inside the assignment.assignTo property. When set to individual recipient list, selected students in the class will "
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used inside the [assignment.assignTo](educationassignment.md) property. When set to individual recipient list, selected students in the class will 
-receive a submission object when the assignment is published.
+Used inside the [assignment.assignTo](educationassignment.md) property. When set to individual recipient list, selected students in the class receive a submission object when the assignment is published.
 
 This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).
 
@@ -25,7 +24,7 @@ This resource is a subclass of [educationAssignmentRecipient](educationassignmen
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

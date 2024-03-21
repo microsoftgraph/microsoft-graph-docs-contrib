@@ -1,9 +1,9 @@
 ---
 title: "authenticationEventsPolicy resource type"
 description: "Authentication events are used to invoke user flows at specific points in the authentication flow."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource that specifies the events in the authentication experience, with each event further defining the available types of listeners that can be created for the event. Events are inherent to the authentication experience; this resource is not user configurable.
+A resource that specifies the events in the authentication experience, with each event further defining the available types of listeners that can be created for the event. Events are inherent to the authentication experience; this resource isn't user configurable.
 
 ## Methods
 
@@ -36,7 +36,7 @@ A resource that specifies the events in the authentication experience, with each
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

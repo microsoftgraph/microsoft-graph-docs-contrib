@@ -1,9 +1,9 @@
 ---
 title: "educationUser resource type"
-description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
+description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph returns from the non-education-specific `/users` endpoint."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A user in the system. This is an education-specific variant of the standard [user] resource, with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.
+A user in the system. This resource is an education-specific variant of the standard [user] resource, with the same `id` that Microsoft Graph returns from the non-education-specific `/users` endpoint.
 
 This object provides a targeted subset of properties from the core [user] object and adds a set of education-specific properties such as `primaryRole`, `student`, and `teacher`.
 
@@ -42,22 +42,22 @@ This object provides a targeted subset of properties from the core [user] object
 | department           | String                       | The name for the department in which the user works. Supports \$filter.                                                                                                                       |
 | displayName          | String                       | The name displayed in the address book for the user. Supports $filter and $orderby.                                                                                                           |
 | externalSource       | String                       | The type of external source this resource was generated from (automatically determined from `externalSourceDetail`). Possible values are: `sis`, `lms`, or `manual`.                          |
-| externalSourceDetail | String                       | The name of the external source this resources was generated from.                                                                                                                            |
+| externalSourceDetail | String                       | The name of the external source this resource was generated from.                                                                                                                            |
 | givenName            | String                       | The given name (first name) of the user. Supports \$filter.                                                                                                                                   |
-| mail                 | String                       | The SMTP address for the user; for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports \$filter.                                                                                     |
+| mail                 | String                       | The SMTP address for the user; for example, "jeff@contoso.com". Read-Only. Supports \$filter.                                                                                     |
 | mailNickname         | String                       | The mail alias for the user. This property must be specified when a user is created. Supports \$filter.                                                                                       |
-| mailingAddress       | [physicalAddress]            | Mail address of user. Note: `type` and `postOfficeBox` are not supported for `educationUser` resources.                                                                                       |
+| mailingAddress       | [physicalAddress]            | Mail address of user. Note: `type` and `postOfficeBox` aren't supported for `educationUser` resources.                                                                                       |
 | middleName           | String                       | The middle name of user.                                                                                                                                                                      |
 | mobilePhone          | String                       | The primary cellular telephone number for the user.                                                                                                                                           |
-| onPremisesInfo       | [educationOnPremisesInfo]    | Additional information used to associate the AAD user with it's Active Directory counterpart.                                                                                                 |
-| passwordPolicies     | String                       | Specifies password policies for the user. See standard [user] resource for additional details.                                                                                                |
-| passwordProfile      | [passwordProfile]            | Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. See standard [user] resource for additional details. |
+| onPremisesInfo       | [educationOnPremisesInfo]    | Additional information used to associate the Microsoft Entra user with its Active Directory counterpart.                                                                                                 |
+| passwordPolicies     | String                       | Specifies password policies for the user. See standard [user] resource for more details.                                                                                                |
+| passwordProfile      | [passwordProfile]            | Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. See standard [user] resource for more details. |
 | preferredLanguage    | String                       | The preferred language for the user. Should follow ISO 639-1 Code; for example, "en-US".                                                                                                      |
 | primaryRole          | string                       | Default role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `faculty`. Supports \$filter.                                  |
 | provisionedPlans     | [provisionedPlan] collection | The plans that are provisioned for the user. Read-only. Not nullable.                                                                                                                         |
 | relatedContacts      | [relatedContact] collection  | Related records related to the user. Possible relationships are `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`                                    |
-| residenceAddress     | [physicalAddress]            | Address where user lives. Note: `type` and `postOfficeBox` are not supported for `educationUser` resources.                                                                                   |
-| student              | [educationStudent]           | If the primary role is student, this block will contain student specific data.                                                                                                                |
+| residenceAddress     | [physicalAddress]            | Address where user lives. Note: `type` and `postOfficeBox` aren't supported for `educationUser` resources.                                                                                   |
+| student              | [educationStudent]           | If the primary role is student, this block contains student specific data.                                                                                                                |
 | surname              | String                       | The user's surname (family name or last name). Supports \$filter.                                                                                                                             |
 | teacher              | [educationTeacher]           | If the primary role is teacher, this block will contain teacher specific data.                                                                                                                |
 | usageLocation        | String                       | A two-letter country code ([ISO 3166 Alpha-2]). Required for users who will be assigned licenses. Not nullable. Supports \$filter.                                                            |
@@ -79,7 +79,7 @@ This object provides a targeted subset of properties from the core [user] object
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -157,5 +157,3 @@ The following is a JSON representation of the resource.
 [educationonpremisesinfo]: educationonpremisesinfo.md
 [iso 3166 alpha-2]: https://www.iso.org/obp/ui/#search
 [rfc 822]: https://tools.ietf.org/html/rfc822
-
-

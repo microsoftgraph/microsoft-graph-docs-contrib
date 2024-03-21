@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationStringSettingValueDefinition resource type"
 description: "String constraints"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 String constraints
 
 
-Inherits from [deviceManagementConfigurationSettingValueDefinition](../resources/intune-shared-devicemanagementconfigurationsettingvaluedefinition.md)
+Inherits from [deviceManagementConfigurationSettingValueDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluedefinition.md)
 
 ## Properties
 |Property|Type|Description|

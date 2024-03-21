@@ -1,9 +1,9 @@
 ---
 title: "userFlowLanguagePage resource type"
 description: "Determines the strings that are shown to users during a user flow."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

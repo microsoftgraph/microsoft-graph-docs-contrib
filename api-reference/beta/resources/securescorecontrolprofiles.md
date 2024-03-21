@@ -4,7 +4,7 @@ description: "Represents a tenant's secure score per control data. By default, i
 ms.localizationpriority: medium
 doc_type: resourcePageType
 
-ms.prod: security
+ms.subservice: security
 author: "preetikr"
 ---
 
@@ -34,7 +34,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 | complianceInformation | [complianceInformation](complianceinformation.md) collection | The collection of compliance information associated with secure score control |
 |	controlCategory	|	String	|	Control action category (Account, Data, Device, Apps, Infrastructure).	|
 |	actionType	|	String	|	Control action type (Config, Review, Behavior).	|
-|	service	|	String	|	Service that owns the control (Exchange, Sharepoint, Azure AD).	|
+|	service	|	String	|	Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).	|
 |	maxScore |	String	|	Current obtained max score on specified date.	|
 |	tier |	String	|	Control tier (Core, Defense in Depth, Advanced.)	|
 |	userImpact |	String	| User impact of implementing control (low, moderate, high).	|
@@ -101,5 +101,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

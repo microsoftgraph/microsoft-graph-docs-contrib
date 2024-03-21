@@ -3,7 +3,7 @@ title: "accessPackageAssignment resource type"
 description: "An access package assignment is an assignment of an access package to a particular subject, for a period of time."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
+In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
 
 ## Methods
 
@@ -36,6 +36,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |assignmentState|String|The state of the access package assignment. Possible values are `Delivering`, `Delivered`, or `Expired`. Read-only. Supports `$filter` (`eq`).|
 |assignmentStatus|String|More information about the assignment lifecycle.  Possible values include `Delivering`, `Delivered`, `NearExpiry1DayNotificationTriggered`, or `ExpiredNotificationTriggered`.  Read-only.|
 |catalogId|String|The identifier of the catalog containing the access package. Read-only.|
+|customExtensionCalloutInstances|[customExtensionCalloutInstance](customextensioncalloutinstance.md) collection|Information about all the custom extension calls that were made during the access package assignment workflow.|
 |expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |isExtended|Boolean|Indicates whether the access package assignment is extended. Read-only.|
@@ -57,24 +58,31 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.accessPackageAssignment",
-  "keyProperty": "id"
-}-->
-
-```json
+  "openType": false
+}
+-->
+``` json
 {
-   "id":"9bdae7b4-6ece-487b-9eb8-9679dbd67aa2",
-   "catalogId":"cc30dc98-6d3c-4fa0-bed8-fd76d0efd993",
-   "accessPackageId":"e3f47362-993f-4fcb-8a38-532ffca16150",
-   "assignmentPolicyId":"63ebd106-8116-40e7-a0ab-01ae475d11bb",
-   "targetId":"ab4291f6-66b7-42bf-b597-a05b29414f5c",
-   "assignmentStatus":"ExpiredNotificationTriggered",
-   "assignmentState":"Expired",
-   "isExtended":false,
-   "expiredDateTime":"2019-04-25T23:45:40.42Z"
+  "@odata.type": "#microsoft.graph.accessPackageAssignment",
+  "id": "String (identifier)",
+  "catalogId": "String",
+  "accessPackageId": "String",
+  "assignmentPolicyId": "String",
+  "targetId": "String",
+  "assignmentStatus": "String",
+  "assignmentState": "String",
+  "isExtended": "Boolean",
+  "expiredDateTime": "String (timestamp)",
+  "schedule": {
+    "@odata.type": "microsoft.graph.requestSchedule"
+  },
+  "customExtensionCalloutInstances": [
+    {
+      "@odata.type": "microsoft.graph.customExtensionCalloutInstance"
+    }
+  ]
 }
 ```
 

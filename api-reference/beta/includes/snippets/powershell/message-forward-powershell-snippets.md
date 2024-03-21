@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	Message = @{
-		IsDeliveryReceiptRequested = $true
-		ToRecipients = @(
+	message = @{
+		isDeliveryReceiptRequested = $true
+		toRecipients = @(
 			@{
-				EmailAddress = @{
-					Address = "danas@contoso.onmicrosoft.com"
-					Name = "Dana Swope"
+				emailAddress = @{
+					address = "danas@contoso.com"
+					name = "Dana Swope"
 				}
 			}
 		)
 	}
-	Comment = "Dana, just want to make sure you get this."
+	comment = "Dana, just want to make sure you get this."
 }
 
 # A UPN can also be used as -UserId.
-Invoke-MgForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+Invoke-MgBetaForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

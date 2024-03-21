@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.localizationpriority: medium
 title: "hashes resource type"
 description: "The Hashes resource groups available hashes into a single structure for an item."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -51,7 +51,7 @@ In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Has
 
 In OneDrive Personal, **quickXorHash** is not available.
 
-To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).
+To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](/onedrive/developer/code-snippets/quickxorhash).
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 

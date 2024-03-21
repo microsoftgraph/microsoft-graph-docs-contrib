@@ -2,8 +2,8 @@
 title: "message: delta"
 description: "Get a set of messages that have been added, deleted, or updated in a specified folder."
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: "outlook"
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -15,19 +15,18 @@ Namespace: microsoft.graph
 
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 
-A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately 
-applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can [query for incremental changes in the messages in 
-that folder](/graph/delta-query-messages). This allows you to maintain and synchronize a local store of a user's messages without 
-having to fetch the entire set of messages from the server every time.  
+A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately
+applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can [query for incremental changes in the messages in
+that folder](/graph/delta-query-messages). This allows you to maintain and synchronize a local store of a user's messages without
+having to fetch the entire set of messages from the server every time.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "message_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-delta-permissions.md)]
 
 
 ## HTTP request
@@ -42,20 +41,20 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 To specifically get only created, updated, or deleted messages in the specified **mailFolder**:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailfolders/{id}/messages/delta?changeType=created
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=created
-GET /me/mailfolders/{id}/messages/delta?changeType=updated
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=updated
-GET /me/mailfolders/{id}/messages/delta?changeType=deleted
-GET /users/{id}/mailfolders/{id}/messages/delta?changeType=deleted
+GET /me/mailFolders/{id}/messages/delta?changeType=created
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=created
+GET /me/mailFolders/{id}/messages/delta?changeType=updated
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=updated
+GET /me/mailFolders/{id}/messages/delta?changeType=deleted
+GET /users/{id}/mailFolders/{id}/messages/delta?changeType=deleted
 ```
 
 ## Query parameters
 
-Tracking changes in messages incurs a round of one or more **delta** function calls. If you use any [OData system query option](/graph/query-parameters#odata-system-query-options) or the custom query option, `changeType`, you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
-into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. 
-You only need to specify any desired query parameters once upfront. 
-In subsequent requests, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already 
+Tracking changes in messages incurs a round of one or more **delta** function calls. If you use any [OData system query option](/graph/query-parameters#odata-system-query-options) or the custom query option, `changeType`, you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters
+into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
+You only need to specify any desired query parameters once upfront.
+In subsequent requests, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already
 includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
@@ -66,14 +65,14 @@ includes the encoded, desired parameters.
 
 ### OData query parameters
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
-_id_ property is always returned. 
-- Delta query support `$select`, `$top`, and `$expand` for messages. 
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The
+_id_ property is always returned.
+- Delta query support `$select`, `$top`, and `$expand` for messages.
 - There is limited support for `$filter` and `$orderby`:
-  * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}` 
+  * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}`
   or `$filter=receivedDateTime+gt+{value}`.
   * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
-  an `$orderby` expression, the return order is not guaranteed. 
+  an `$orderby` expression, the return order is not guaranteed.
 - There is no support for `$search`.
 
 ## Request headers
@@ -89,13 +88,13 @@ If successful, this method returns a `200 OK` response code and [message](../res
 
 ## Example
 ##### Request
-The following example shows how to make a single **delta** function call, and limit the maximum number of messages 
+The following example shows how to make a single **delta** function call, and limit the maximum number of messages
 in the response body to 2.
 
 To track changes in the messages in a folder, you would make one or more **delta** function calls to get the set
-of incremental changes since the last delta query. For an example that shows a round of delta query calls, see 
+of incremental changes since the last delta query. For an example that shows a round of delta query calls, see
 [Get incremental changes to messages in a folder](/graph/delta-query-messages).
- 
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,6 +107,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
 Prefer: odata.maxpagesize=2
 ```
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-delta-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,9 +118,9 @@ Prefer: odata.maxpagesize=2
 ---
 
 ##### Response
-If the request is successful, the response would include a state token, which is either a _skipToken_  
-(in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 
-Respectively, they indicate whether you should continue with the round or you have completed 
+If the request is successful, the response would include a state token, which is either a _skipToken_
+(in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header).
+Respectively, they indicate whether you should continue with the round or you have completed
 getting all the changes for that round.
 
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
@@ -134,7 +137,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders/{id}/messages/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "receivedDateTime": "datetime-value",
@@ -151,7 +154,7 @@ Content-type: application/json
 }
 ```
 
-### See also
+## Related content
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
 - [Get incremental changes to messages in a folder](/graph/delta-query-messages)

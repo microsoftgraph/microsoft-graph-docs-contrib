@@ -3,7 +3,7 @@ title: "emailPayloadDetail resource type"
 description: "Represents details of an email type payload."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Inherits from [payloadDetail](../resources/payloaddetail.md).
 |content|String|Payload content details. Inherited from [payloadDetail](../resources/payloaddetail.md).|
 |fromEmail|String|Email address of the user.|
 |fromName|String|Display name of the user.|
-|isExternalSender|Boolean|Indicates whether the sender is not from the user's organization.|
+|isExternalSender|Boolean|Indicates whether the sender isn't from the user's organization.|
 |phishingUrl|String|Phishing URL used to target a user. Inherited from [payloadDetail](../resources/payloaddetail.md).|
 |subject|String|The subject of the email address sent to the user.|
 
@@ -35,7 +35,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.emailPayloadDetail"

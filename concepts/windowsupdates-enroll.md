@@ -11,11 +11,11 @@ doc_type: conceptualPageType
 
 When you enroll a device in update management by the Windows Update for Business deployment service, you can use the deployment service to manage content delivered from Windows Update to that device. You can enroll a device in update management by update category.
 
-Today, the deployment service supports enrollment in management of Windows 10/11 feature updates and driver updates. At this time, the deployment service does not require enrollment in management of Windows 10/11 quality updates in order to deploy expedited quality updates.
+Today, the deployment service supports enrollment in management of Windows 10/11 feature updates and driver updates. At this time, the deployment service doesn't require enrollment in management of Windows 10/11 quality updates in order to deploy expedited quality updates.
 
 ## Enroll the device in update management
 
-When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, devices do not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](/graph/windowsupdates-deployments). Devices are automatically registered with the service when enrolled in management by the service (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist). For driver enrollment, see [enroll devices in driver management](/graph/windowsupdates-manage-driver-update#step-1-enroll-devices-in-driver-management).
+When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, devices don't receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](/graph/windowsupdates-deployments). Devices are automatically registered with the service when enrolled in management by the service (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it doesn't already exist). For driver enrollment, see [enroll devices in driver management](/graph/windowsupdates-manage-driver-update#step-1-enroll-devices-in-driver-management).
 
 The following example shows how to enroll a device in feature update management.
 
@@ -52,7 +52,7 @@ HTTP/1.1 202 Accepted
 
 ## Check the enrollment state of a device
 
-You can check the enrollment state of a device by [getting the device](/graph/api/windowsupdates-azureaddevice-get) and looking at the **enrollments** and **errors** properties on the **azureADDevice** object. A device that is successfully enrolled in update management has an [updateManagementEnrollment](/graph/api/resources/windowsupdates-updatemanagementenrollment) object in the enrollments collection, and it does not have any [updatableAssetError](/graph/api/resources/windowsupdates-updatableasseterror) objects in the errors collection. A device that the service tried to enroll but encountered an error has populated collections for both enrollments and errors. A device for which the service has not received any enrollment requests has empty collections for both enrollments and errors.
+You can check the enrollment state of a device by [getting the device](/graph/api/windowsupdates-azureaddevice-get) and looking at the **enrollments** and **errors** properties on the **azureADDevice** object. A device that is successfully enrolled in update management has an [updateManagementEnrollment](/graph/api/resources/windowsupdates-updatemanagementenrollment) object in the enrollments collection, and it doesn't have any [updatableAssetError](/graph/api/resources/windowsupdates-updatableasseterror) objects in the errors collection. A device that the service tried to enroll but encountered an error has populated collections for both enrollments and errors. A device for which the service hasn't received any enrollment requests has empty collections for both enrollments and errors.
 
 The following example shows a device that is successfully enrolled in management of feature updates by the service.
 
@@ -84,7 +84,7 @@ Content-Type: application/json
 
 ## Unenroll from management by the service or unregister from the service 
 
-When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management by the service for a given update category, the device is no longer managed by the deployment service and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contains content for the given update category. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management by the service for a given update category, the device is no longer managed by the deployment service and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contain content for the given update category. The device remains registered with the service and is still enrolled and receiving content for other update categories (if applicable).
 
 ### Request
 

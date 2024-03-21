@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEducationalActivity()
 completionMonthYear := date
@@ -59,7 +67,7 @@ requestBody.SetProgram(program)
 startMonthYear := date
 requestBody.SetStartMonthYear(&startMonthYear) 
 
-result, err := graphClient.Me().Profile().EducationalActivities().Post(context.Background(), requestBody, nil)
+educationalActivities, err := graphClient.Me().Profile().EducationalActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

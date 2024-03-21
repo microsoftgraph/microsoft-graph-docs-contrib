@@ -8,12 +8,12 @@ Import-Module Microsoft.Graph.Mail
 
 $params = @{
 	"@odata.type" = "microsoft.graph.mailSearchFolder"
-	DisplayName = "Weekly digests"
-	IncludeNestedFolders = $true
-	SourceFolderIds = @(
+	displayName = "Weekly digests"
+	includeNestedFolders = $true
+	sourceFolderIds = @(
 		"AQMkADYAAAIBDAAAAA=="
 	)
-	FilterQuery = "contains(subject, 'weekly digest')"
+	filterQuery = "contains(subject, 'weekly digest')"
 }
 
 # A UPN can also be used as -UserId.

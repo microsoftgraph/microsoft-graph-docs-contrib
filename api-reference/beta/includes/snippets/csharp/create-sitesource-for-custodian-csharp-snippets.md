@@ -4,15 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.Security.SiteSource
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SiteSource
 {
 	Site = new Site
 	{
 		WebUrl = "https://m365x809305.sharepoint.com/sites/Retail",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Custodians["{ediscoveryCustodian-id}"].SiteSources.PostAsync(requestBody);
 
 

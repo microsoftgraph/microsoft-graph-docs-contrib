@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewLearningProvider()
 displayName := "Microsoft"
@@ -20,8 +28,10 @@ longLogoWebUrlForLightTheme := "https://support.content.office.net/en-us/media/4
 requestBody.SetLongLogoWebUrlForLightTheme(&longLogoWebUrlForLightTheme) 
 loginWebUrl := "https://www.linkedin.com/learning-login/teams"
 requestBody.SetLoginWebUrl(&loginWebUrl) 
+isCourseActivitySyncEnabled := true
+requestBody.SetIsCourseActivitySyncEnabled(&isCourseActivitySyncEnabled) 
 
-result, err := graphClient.EmployeeExperience().LearningProvidersById("learningProvider-id").Patch(context.Background(), requestBody, nil)
+learningProviders, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

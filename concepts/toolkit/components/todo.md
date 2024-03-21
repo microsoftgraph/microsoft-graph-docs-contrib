@@ -1,6 +1,6 @@
 ---
 title: "To Do component in Microsoft Graph Toolkit"
-description: "The To Do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To-Do."
+description: "The To Do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To Do."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
@@ -13,9 +13,19 @@ The To Do component is used to enable the signed-in user to view, add, remove, c
 
 The following example displays the signed-in user's Microsoft To Do tasks using the `mgt-todo` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo--tasks&source=docs" height="500"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo--tasks&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo-html--todos&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo-html--todos&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-todo-react--todos&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-todo-react--todos&source=docs).
+
+---
 
 ## Properties
 
@@ -41,50 +51,24 @@ The following example shows only tasks from the folder with ID *12345* and does 
 
 The `mgt-todo` component defines the following CSS custom properties.
 
+```html
+<mgt-todo class="todo"></mgt-todo>
+```
+
 ````css
-mgt-todo {
-  --tasks-background-color
-  --tasks-header-padding
-  --tasks-title-padding
-  --tasks-plan-title-font-size
-  --tasks-plan-title-padding
-
-  --tasks-new-button-width
-  --tasks-new-button-height
-  --tasks-new-button-color
-  --tasks-new-button-background
-  --tasks-new-button-border
-  --tasks-new-button-hover-background
-  --tasks-new-button-active-background
-
-  --task-margin
-  --task-background
-  --task-border
-  --task-header-color
-  --task-header-margin
-
-  --task-new-margin
-  --task-new-border
-  --task-new-input-margin
-  --task-new-input-padding
-  --task-new-input-font-size
-  --task-new-select-border
-
-  --task-new-add-button-background
-  --task-new-add-button-disabled-background
-  --task-new-cancel-button-color
-
-  --task-complete-background
-  --task-complete-border
-
-  --task-icon-alignment: flex-start (default) | center | flex-end
-  --task-icon-background
-  --task-icon-background-completed
-  --task-icon-border
-  --task-icon-border-completed
-  --task-icon-border-radius
-  --task-icon-color
-  --task-icon-color-completed
+.todo {
+    --task-new-cancel-button-color: blue;
+    --task-detail-color: purple;
+    --task-color: black;
+    --task-background-color: white;
+    --task-complete-background-color: grey;
+    --task-date-input-active-color: blue;
+    --task-date-input-hover-color: green;
+    --task-background-color-hover: grey;
+    --task-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    --task-border: 1px solid black;
+    --task-border-completed: 1px solid grey;
+    --task-radio-background-color: green;
 }
 ````
 
@@ -102,12 +86,12 @@ For more information about handling events, see [events](../customize-components
 
 ## Templates
 
-The `tasks` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+The `todo` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` to one of the following values.
 
 | Data type     | Data context              | Description                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
-| task     | task: a to-do task object | Replaces the whole default task. |
-| task-details | task: a to-do task object | Template replaces the details section of the task. |
+| task     | task: a To Do task object | Replaces the whole default task. |
+| task-details | task: a To Do task object | Template replaces the details section of the task. |
 
 The following example defines a template for the tasks component.
 
@@ -123,18 +107,34 @@ The following example defines a template for the tasks component.
 
 ## Microsoft Graph permissions
 
-This control uses the following Microsoft Graph APIs and permissions.
+This control uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the listed permissions.
 
 | Configuration | Permission | API |
 | ------------- | ---------- | --- |
-| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
-| `targetId` not set | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` or `initialId` set  | Tasks.Read, Tasks.ReadWrite | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` not set | Tasks.Read, Tasks.ReadWrite | [/me/todo/lists](/graph/api/todo-list-lists?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
 | create, update or delete task | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## Authentication
 
-The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+The todo component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Cache
 
 The `mgt-todo` component doesn't cache any data.
+
+## Localization
+
+The control exposes the following variables that can be localized. For more information, see [Localizing components](../customize-components/localization.md).
+
+| String name                 | Default value                |
+| --------------------------- | -----------------------------|
+| cancelNewTaskSubtitle       | `Cancel`                     |
+| newTaskPlaceholder          | `Add a task`                 |
+| newTaskLabel                | `New Task Input`             |
+| addTaskButtonSubtitle       | `Add`                        |
+| deleteTaskLabel             | `Delete Task`                |
+| dueDate                     | `Due date`                   |
+| newTaskDateInputLabel       | `New Task Date Input`        |
+| newTaskNameInputLabel       | `New Task Name Input`        |
+| cancelAddingTask            | `Cancel adding a new task`  |

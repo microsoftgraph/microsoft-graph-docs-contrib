@@ -5,7 +5,7 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
@@ -43,7 +43,7 @@ Represents a vendor in Dynamics 365 Business Central.
 |paymentTermsId|GUID|The default payment terms ID for the vendor.|
 |paymentMethodId|GUID|The default payment method ID for the vendor.|
 |taxLiable|boolean|Specifies if the vendor is liable for tax.|
-|blocked|string|Specifies which transactions with the vendor that cannot be posted. Accepted values are blank, Payment or All|
+|blocked|string|Specifies which transactions with the vendor that can't be posted. Accepted values are blank, Payment or All|
 |balance|decimal|The vendor's balance. Read-Only.|
 |lastModifiedDateTime|datetime|The last datetime the vendor was modified. Read-Only.|  
 
@@ -60,7 +60,7 @@ None
   "@odata.type": "microsoft.graph.vendor"
 }-->
 
-Here is a JSON representation of the vendor.
+Here's a JSON representation of the vendor.
 
 ```json
 {

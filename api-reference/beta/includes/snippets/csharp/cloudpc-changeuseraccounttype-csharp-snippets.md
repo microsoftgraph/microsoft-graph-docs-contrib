@@ -4,12 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.CloudPCs.Item.ChangeUserAccountType.ChangeUserAccountTypePostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.CloudPCs.Item.ChangeUserAccountType;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ChangeUserAccountTypePostRequestBody
 {
 	UserAccountType = CloudPcUserAccountType.Administrator,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"].ChangeUserAccountType.PostAsync(requestBody);
 
 

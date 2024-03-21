@@ -3,7 +3,7 @@ title: "baseTaskList resource type"
 description: "Contains one or more task resources."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ This is the base resource for the following derived types of task lists.
 This is an abstract type.
 
 ## Methods
-The following method apply to any of the derived types of **baseTaskList** (**wellKnownTaskList**,**taskList**)
+The following methods apply to any of the derived types of **baseTaskList** (**wellKnownTaskList**,**taskList**)
 
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -46,7 +46,7 @@ The following method apply to any of the derived types of **baseTaskList** (**we
 |tasks|[baseTask](../resources/basetask.md) collection|The tasks in this task list. Read-only. Nullable.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

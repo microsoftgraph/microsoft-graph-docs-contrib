@@ -5,7 +5,7 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: conceptualPageType
 ---
 # Working with the Dynamics 365 Business Central API in Microsoft Graph
@@ -20,8 +20,11 @@ Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central API
 ## Common Dynamics 365 Business Central scenarios
 The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint. Use the API to, for example, get access to [customer](../resources/dynamics-customer.md) and [vendor](../resources/dynamics-vendor.md) information, or [view overdue payments](../resources/dynamics-agedaccountspayable.md).
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+## Environment
+To enable the Dynamics 365 Business Central API, you must ensure that the **Environment Name** in the Business Central Admin Center is **Production**. 
+
+:::image type="content" source="dynamics-tenant-admin-environment.png" alt-text="Business Central Admin Center setup":::
+
 
 ## Next steps
 The Dynamics 365 Business Central API can open up new ways for you to engage with users. To learn more, see the following:

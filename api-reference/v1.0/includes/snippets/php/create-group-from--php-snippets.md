@@ -6,15 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReferenceCreate();
-$requestBody->set@odataid('https://graph.microsoft.com/v1.0/groups/{groupId}');
+$requestBody->setOdataId('https://graph.microsoft.com/v1.0/groups/{groupId}');
 
-
-
-$graphServiceClient->print()->sharesById('printerShare-id')->allowedGroups()->ref()->post($requestBody);
-
+$graphServiceClient->escapedPrint()->shares()->byPrinterShareId('printerShare-id')->allowedGroups()->ref()->post($requestBody)->wait();
 
 ```

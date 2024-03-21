@@ -1,10 +1,10 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Restore a previous version of a ListItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the item."
 ms.date: 09/10/2017
 title: Restore a previous version of a SharePoint list item
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Restore a previous version of a ListItem
@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Restore a previous version of a ListItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|            Permission type             |         Permissions (from least to most privileged)          |
-| :------------------------------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
-| Delegated (personal Microsoft account) | n/a                                                          |
-| Application                            | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+<!-- { "blockType": "permissions", "name": "listitemversion_restore" } -->
+[!INCLUDE [permissions-table](../includes/permissions/listitemversion-restore-permissions.md)]
 
 ## HTTP request
 
@@ -45,7 +44,7 @@ This example restores a version of a listItem identified by `{item-id}` and `{ve
 <!-- { "blockType": "request", "name": "restore-item-version-listItem", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
+POST https://graph.microsoft.com/beta/sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
 ## Response

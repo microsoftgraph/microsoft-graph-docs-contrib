@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const settings = {
+const sharepointSettings = {
     deletedUserPersonalSiteRetentionPeriodInDays: 365,
     excludedFileExtensionsForSyncApp: ['.mp3'],
     imageTaggingOption: 'enhanced',
@@ -23,6 +23,6 @@ const settings = {
 
 await client.api('/admin/sharepoint/settings')
 	.version('beta')
-	.update(settings);
+	.update(sharepointSettings);
 
 ```

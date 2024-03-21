@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph compliance and privacy APIs"
-description: "The Microsoft Graph compliance and privacy APIs provide a unified interface and schema to integrate with solutions available in the compliance center from Microsoft and ecosystem partners. This can help customers streamline their compliance and privacy operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards."
+description: "The Microsoft Graph compliance and privacy APIs provide a unified interface and schema to integrate with solutions available in the Microsoft Purview compliance portal from Microsoft and ecosystem partners. This can help customers streamline their compliance and privacy operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards."
 ms.localizationpriority: high
 author: "mahage-msft"
 ms.prod: "compliance"
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Graph compliance and privacy APIs provide a unified interface and schema to integrate with solutions available in the compliance center from Microsoft and ecosystem partners. This can help customers streamline their compliance and privacy operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards. For more information, see [Microsoft 365 compliance documentation](/microsoft-365/compliance).
+The Microsoft Graph compliance and privacy APIs provide a unified interface and schema to integrate with solutions available in the Microsoft Purview compliance portal from Microsoft and ecosystem partners. This can help customers streamline their compliance and privacy operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards. For more information, see [Microsoft Purview documentation](/microsoft-365/compliance).
 
 Use the Microsoft Graph compliance and privacy APIs to build applications that:
 
@@ -21,18 +21,18 @@ Use the Microsoft Graph compliance and privacy APIs to build applications that:
 
 ## eDiscovery
 
-eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Learn more about [Microsoft 365 Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
+eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Learn more about [Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20).
 
 Explore the [Microsoft 365 eDiscovery APIs](ediscovery-ediscoveryapioverview.md).
 
 ## Records management (preview)
 
-Records management in Microsoft Purview provides the ability to manage regulatory, legal, and business-critical records across corporate data. It helps organizations manage retention and deletion of data to meet their legal obligations and compliance regulations, and increases efficiency by enabling the regular disposition of items that no longer have to be retained.
+Records management in Microsoft Purview enables customers to manage regulatory, legal, and business-critical records across corporate data. It helps organizations manage retention and deletion of data to meet their legal and compliance regulations, and increases efficiency by enabling the regular disposal of items that no longer have to be retained.
 
-For more details, see [Microsoft Purview records management](/microsoft-365/compliance/records-management).
+For more information, see [Microsoft Purview Records Management](/microsoft-365/compliance/records-management).
 
 The records management API is defined in the OData subnamespace, microsoft.graph.security.
-Explore the [Microsoft Purview records management APIs](security-recordsManagement-overview.md).
+Explore the [Microsoft Purview Records Management APIs](security-recordsManagement-overview.md).
 
 ## Subject rights request
 

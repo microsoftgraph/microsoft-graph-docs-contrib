@@ -3,8 +3,8 @@ title: "genericError resource type"
 description: "A general-purpose error."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: outlook
-author: "abheek-das"
+ms.subservice: outlook
+author: "SuryaLashmiS"
 ---
 
 # genericError resource type

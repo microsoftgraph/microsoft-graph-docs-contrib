@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	AccountEnabled = $false
+	accountEnabled = $false
 }
 
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params

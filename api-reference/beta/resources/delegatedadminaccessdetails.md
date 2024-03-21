@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminAccessDetails resource type"
 description: "Represents the administrative roles that a Microsoft partner has in a customer tenant through a delegated admin relationship and delegated admin access assignment."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 

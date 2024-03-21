@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to search Outlook calendar events"
 description: "Use the Microsoft Search API in Microsoft Graph to search for events in the signed-in user’s primary calendar. The user identity is based on the auth token."
 author: "knightsu"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to search Outlook calendar events
@@ -93,7 +93,7 @@ Content-type: application/json
 
 - You can access only the signed-in user’s own mailbox. Searching delegated mailboxes is not supported.
 - For events, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer) type contains the number of results on the page, not the total number of matching results.
-- Sorting results is not supported for events. A sort clause in the request will return a Bad Request error code in the response.
+- Sorting results is not supported for events. A sort clause in the request returns a Bad Request error code in the response.
 
 ## Next steps
 

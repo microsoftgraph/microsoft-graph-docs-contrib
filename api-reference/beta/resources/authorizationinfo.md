@@ -18,7 +18,7 @@ Represents the identifiers that can be used to identify and authenticate a user 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|certificateUserIds|String collection|The collection of unique identifiers that can be associated with a user and can be used to bind the Azure AD user to a certificate for authentication and authorization into non-Azure AD environments. The identifiers must be unique in the tenant.|
+|certificateUserIds|String collection|The collection of unique identifiers that can be associated with a user and can be used to bind the Microsoft Entra user to a certificate for authentication and authorization into non-Azure AD environments. The identifiers must be unique in the tenant.|
 
 ## Relationships
 None.
@@ -38,4 +38,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

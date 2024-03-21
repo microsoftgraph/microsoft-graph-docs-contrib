@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Shares.Item.Permission.Grant.GrantPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Shares.Item.Permission.Grant;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new GrantPostRequestBody
 {
 	Recipients = new List<DriveRecipient>
 	{
@@ -24,7 +28,9 @@ var requestBody = new Microsoft.Graph.Beta.Shares.Item.Permission.Grant.GrantPos
 		"read",
 	},
 };
-var result = await graphClient.Shares["{sharedDriveItem-id}"].Permission.Grant.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Shares["{sharedDriveItem-id}"].Permission.Grant.PostAsGrantPostResponseAsync(requestBody);
 
 
 ```

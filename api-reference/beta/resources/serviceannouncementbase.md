@@ -3,7 +3,7 @@ title: "serviceAnnouncementBase resource type"
 description: "This is an abstract base type for serviceHealthIssue and serviceUpdateMessage."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: resourcePageType
 ---
 
@@ -23,9 +23,9 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service event. This property doesn't support filters.|
+|details|Collection([keyValuePair](../resources/keyvaluepair.md))|Extra details about service event. This property doesn't support filters.|
 |endDateTime|DateTimeOffset|The end time of the service event.|
-|id|String|The id of the service event.|
+|id|String|The ID of the service event.|
 |lastModifiedDateTime|DateTimeOffset|The last modified time of the service event.|
 |startDateTime|DateTimeOffset|The start time of the service event.|
 |title|String|The title of the service event.|
@@ -34,7 +34,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

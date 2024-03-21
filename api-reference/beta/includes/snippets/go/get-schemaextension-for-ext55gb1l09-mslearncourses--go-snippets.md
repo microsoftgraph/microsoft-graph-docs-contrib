@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.UserItemRequestBuilderGetQueryParameters{
+
+requestParameters := &graphusers.UserItemRequestBuilderGetQueryParameters{
 	Select: [] string {"ext55gb1l09_msLearnCourses"},
 }
-configuration := &graphconfig.UserItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UserItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.UsersById("user-id").Get(context.Background(), configuration)
+users, err := graphClient.Users().ByUserId("user-id").Get(context.Background(), configuration)
 
 
 ```

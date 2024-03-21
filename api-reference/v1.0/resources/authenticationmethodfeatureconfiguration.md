@@ -2,8 +2,9 @@
 title: "authenticationMethodFeatureConfiguration resource type"
 description: "Defines the features that are allowed for different authentication methods. For each authentication method, defines the users who are enabled or excluded from using the feature."
 author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +18,7 @@ Defines the features that are allowed for different authentication methods. For 
 |:---|:---|:---|
 |excludeTarget|[featureTarget](../resources/featuretarget.md)|A single entity that is excluded from this feature.|
 |includeTarget|[featureTarget](../resources/featuretarget.md)|A single entity that is included in this feature.|
-|state|advancedConfigState|Enable or disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set and uses the default behavior of Azure AD for the setting. The default value is `disabled`.|
+|state|advancedConfigState|Enable or disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set and uses the default behavior of Microsoft Entra ID for the setting. The default value is `disabled`.|
 
 ## Relationships
 None.
@@ -41,4 +42,3 @@ The following is a JSON representation of the resource.
   "state": "String"
 }
 ```
-

@@ -3,7 +3,7 @@ title: "Update zebraFotaArtifact"
 description: "Update the properties of a zebraFotaArtifact object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [zebraFotaArtifact](../resources/intune-androidfotaservice-zebrafotaartifact.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /deviceManagement/zebraFotaArtifacts/{zebraFotaArtifactId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -90,7 +92,7 @@ Content-Length: 399
 
 {
   "@odata.type": "#microsoft.graph.zebraFotaArtifact",
-  "id": "37305f61-5f61-3730-615f-3037615f3037",
+  "id": "c81cfc78-fc78-c81c-78fc-1cc878fc1cc8",
   "deviceModel": "Device Model value",
   "osVersion": "Os Version value",
   "patchVersion": "Patch Version value",

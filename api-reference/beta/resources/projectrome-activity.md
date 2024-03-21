@@ -2,7 +2,7 @@
 title: "activity resource type"
 description: "Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: resourcePageType
 author: "ailae"
 ---
@@ -71,7 +71,7 @@ Here is a JSON representation of the resource.
     "historyItems"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.activity"
+  "@odata.type": "microsoft.graph.userActivity"
 }-->
 
 ```json

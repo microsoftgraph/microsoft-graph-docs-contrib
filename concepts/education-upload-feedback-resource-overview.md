@@ -2,8 +2,8 @@
 title: "Upload feedback files for education submissions"
 description: "Learn how to upload a feedback file to a submission resource by using the education API in Microsoft Graph."
 ms.localizationpriority: medium
-author: "Sureshpadimi88"
-ms.prod: "education"
+author: "cristobal-buenrostro"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 
@@ -19,7 +19,7 @@ Before you can upload files, set up a SharePoint folder to upload the files to f
 
 ## Upload a resource
 
-The [submission setUpResourcesFolder](/graph/api/educationsubmission-setupresourcesfolder) API returns a model that contains the **resourcesFolderUrl** property.
+The [submission setUpFeedbackResourcesFolder](/graph/api/educationassignment-setupfeedbackresourcesfolder) API returns a model that contains the **resourcesFolderUrl** property.
 ```http
 {
     ...

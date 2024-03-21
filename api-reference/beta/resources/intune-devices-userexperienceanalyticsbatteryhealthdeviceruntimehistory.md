@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory resource type"
 description: "The user experience analytics battery health runtime history entity contains the trend of runtime of a device over a period of 30 days"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -32,7 +32,7 @@ The user experience analytics battery health runtime history entity contains the
 |id|String|The unique identifier of the user experience analytics battery health runtime object.|
 |deviceId|String|The unique identifier of the device, Intune DeviceID or SCCM device id.|
 |runtimeDateTime|String|The datetime for the instance of runtime history.|
-|estimatedRuntimeInMinutes|Int32|The estimated runtime of the device when the battery is fully charged. Unit in minutes. Valid values -2147483648 to 2147483647|
+|estimatedRuntimeInMinutes|Int32|The estimated runtime of the device when the battery is fully charged. Unit in minutes. Valid values 0 to 2147483647|
 
 ## Relationships
 None

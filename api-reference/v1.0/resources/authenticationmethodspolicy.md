@@ -1,9 +1,10 @@
 ---
 title: "authenticationMethodsPolicy resource type"
-description: "Defines authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA)."
-author: "mmcla"
+description: "Defines authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA)."
+author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Defines authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
+Defines authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA) in Microsoft Entra ID.
 
 ## Methods
 |Method|Return type|Description|
@@ -28,6 +29,7 @@ Defines authentication methods and the users that are allowed to use them to sig
 |lastModifiedDateTime|DateTimeOffset|The date and time of the last update to the policy. Read-only.|
 |policyVersion|String|The version of the policy in use. Read-only.|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Enforce registration at sign-in time. This property can be used to remind users to set up targeted authentication methods.|
+|policyMigrationState|authenticationMethodsPolicyMigrationState|The state of migration of the authentication methods policy from the legacy multifactor authentication and self-service password reset (SSPR) policies. The possible values are: <br/><li>`premigration` - means the authentication methods policy is used for authentication only, legacy policies are respected. <li>`migrationInProgress` - means the authentication methods policy is used for both authentication and SSPR, legacy policies are respected. <li>`migrationComplete` - means the authentication methods policy is used for authentication and SSPR, legacy policies are ignored. <li>`unknownFutureValue` - Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -52,6 +54,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "policyVersion": "String",
+  "policyMigrationState": "String",
   "registrationEnforcement": {
     "@odata.type": "microsoft.graph.registrationEnforcement"
   } 

@@ -2,8 +2,8 @@
 title: "feedbackTokenSet resource type"
 description: "The feedbackTokenSet type"
 ms.localizationpriority: medium
-author: "williamlooney"
-ms.prod: "cloud-communications"
+author: "mcm223"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -11,15 +11,15 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph.callRecords
 
-This is an _open type_ that represents the set of feedback tokens provided by the user of this endpoint for the Session. This is a set of Boolean properties. The property names should not be relied upon since they may change depending on what tokens are offered to the user.
+This is an _open type_ that represents the set of feedback tokens provided by the user of this endpoint for the Session. This is a set of Boolean properties. The property names shouldn't be relied upon since they may change depending on what tokens are offered to the user.
 
 ## Properties
 
-Explicit property names will not be documented since the feedback token names can change, hence this is an [open type](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).
+Explicit property names won't be documented since the feedback token names can change, hence this is an [open type](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

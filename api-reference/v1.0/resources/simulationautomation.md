@@ -3,7 +3,7 @@ title: "simulationAutomation resource type"
 description: "Represents simulation automation created to run on a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -40,12 +40,12 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The status of the simulation automation is not defined. |
+|unknown| The status of the simulation automation isn't defined. |
 |draft| The simulation automation is in draft mode. |
-|notRunning| The simulation automation is not running. |
+|notRunning| The simulation automation isn't running. |
 |running| The simulation automation is running. |
 |completed| The simulation automation has completed. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -53,7 +53,7 @@ Inherits from [entity](../resources/entity.md).
 |runs|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|A collection of simulation automation runs. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

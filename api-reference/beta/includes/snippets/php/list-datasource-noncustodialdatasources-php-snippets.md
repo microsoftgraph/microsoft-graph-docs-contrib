@@ -6,11 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$requestResult = $graphServiceClient->compliance()->ediscovery()->casesById('case-id')->noncustodialDataSourcesById('noncustodialDataSource-id')->dataSource()->get();
-
+$result = $graphServiceClient->compliance()->ediscovery()->cases()->byCaseId('case-id')->noncustodialDataSources()->byNoncustodialDataSourceId('noncustodialDataSource-id')->dataSource()->get()->wait();
 
 ```

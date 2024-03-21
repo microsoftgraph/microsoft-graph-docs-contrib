@@ -3,7 +3,7 @@ title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -23,14 +23,14 @@ Contains additional properties about the participant identity
 | endpointType     | endpointType                          | The type of endpoint the participant is using. Possible values are: `default`, `voicemail`, `skypeForBusiness`, `skypeForBusinessVoipPhone` and `unknownFutureValue`. Read-only.                                                                    |
 | identity         | [identitySet](identityset.md)   | The [identitySet](identityset.md) associated with this participant. Read-only.                                                                                                                                   |
 | languageId       | String                          | The language culture string. Read-only.                                                                                                                                                                          |
-| region           | String                          | The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only. |
+| region           | String                          | The home region of the participant, and can be a country, a continent, or a larger geographic region. The region doesn't change based on the participant's current physical location, unlike countryCode. Read-only. |
 | platformId       | String                          | The client platform ID of the participant. Read-only.    |
 | participantId    | String                          | The participant ID of the participant. Read-only.    |
 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

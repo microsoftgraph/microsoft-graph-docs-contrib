@@ -3,7 +3,7 @@ title: "plannerAppliedCategories resource type"
 description: "Represents the collection of categories (or labels) that have been applied to a task, which is part of the plannerTask object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the collection of categories (or labels) that have been applied to a task, which is part of the [plannerTask](plannertask.md) object.
-Up to 25 categories can be applied to a task. Category descriptions, are part of the [plan details](plannerplandetails.md) object. This is an open type.
+Up to 25 categories can be applied to a task. Category descriptions are part of the [plan details](plannerplandetails.md) object. This is an open type.
 
 ## Properties
-Properties of an open type can be defined by the client. In this case, the client must provide **category1**, **category2**, **category3**, **category4**, **category5**, and so on up to **category25** as properties with their values being `true` when the corresponding categories are applied on the task. When they do not apply, properties are automatically removed by setting their values to `false`, as shown in the following example.
+Properties of an open type can be defined by the client. In this case, the client must provide **category1**, **category2**, **category3**, **category4**, **category5**, and so on, up to **category25** as properties with their values being `true` when the corresponding categories are applied on the task. When they don't apply, properties are automatically removed by setting their values to `false`, as shown in the following example.
 
 ```json
 {
@@ -30,7 +30,7 @@ Properties of an open type can be defined by the client. In this case, the clien
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

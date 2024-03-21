@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsBatteryHealthCapacityDetails resource type"
 description: "The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity > 80%, devices with capacity 50-80% and devices with capacity < 50 %.This API provides the count of devices in these 3 categories.."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -27,10 +27,10 @@ The user experience analytics battery health capacity entity contains count of d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics battery health capacity object.|
-|activeDevices|Int32|Number of active devices within the tenant. Valid values -2147483648 to 2147483647|
-|batteryCapacityGood|Int32|Number of devices whose battery maximum capacity is greater than 80%. Valid values -2147483648 to 2147483647|
-|batteryCapacityFair|Int32|Number of devices whose battery maximum capacity is greater than 50% but lesser than 80%. Valid values -2147483648 to 2147483647|
-|batteryCapacityPoor|Int32|Number of devices whose battery maximum capacity is lesser than 50%. Valid values -2147483648 to 2147483647|
+|activeDevices|Int32|Number of active devices within the tenant. Valid values 0 to 2147483647|
+|batteryCapacityGood|Int32|Number of devices whose battery maximum capacity is greater than 80%. Valid values 0 to 2147483647|
+|batteryCapacityFair|Int32|Number of devices whose battery maximum capacity is greater than 50% but lesser than 80%. Valid values 0 to 2147483647|
+|batteryCapacityPoor|Int32|Number of devices whose battery maximum capacity is lesser than 50%. Valid values 0 to 2147483647|
 |lastRefreshedDateTime|DateTimeOffset|Recorded date time of this capacity details instance.|
 
 ## Relationships

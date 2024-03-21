@@ -1,6 +1,6 @@
 ---
 title: "azureADDeviceRegistrationError resource type"
-description: "An error in the registration process of an Azure AD device that prevents the service from enrolling the device in update management or deploying content to the device."
+description: "An error in the registration process of a Microsoft Entra device that prevents the service from enrolling the device in update management or deploying content to the device."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An error in the registration process of an [Azure AD device](../resources/windowsupdates-azureaddevice.md) that prevents the service from enrolling the device in update management or deploying content to the device.
+An error in the registration process of an [Microsoft Entra device](../resources/windowsupdates-azureaddevice.md) that prevents the service from enrolling the device in update management or deploying content to the device.
 
 Inherits from [updatableAssetError](../resources/windowsupdates-updatableasseterror.md).
 
@@ -38,4 +38,3 @@ The following is a JSON representation of the resource.
   "reason": "String"
 }
 ```
-

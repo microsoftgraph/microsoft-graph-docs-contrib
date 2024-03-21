@@ -3,7 +3,7 @@ title: "clientCertificateAuthentication resource type"
 description: "Represents configuration for fetching a clientCertificateAuthentication in an API call."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A type derived from apiAuthenticationConfigurationBase which is used to represent Pkcs12 based client certificate authentication. This is used to retrieve the public properties of uploaded certificates.
+A type derived from apiAuthenticationConfigurationBase which is used to represent Pkcs12 based client certificate authentication. The type is used to retrieve the public properties of uploaded certificates.
 
 Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md).
 
@@ -25,7 +25,7 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.clientCertificateAuthentication"

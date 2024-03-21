@@ -1,9 +1,10 @@
 ---
 title: "unifiedRoleDefinition resource type"
-description: "A role definition is a collection of permissions in Azure Active Directory (Azure AD)."
+description: "A role definition is a collection of permissions in Microsoft Entra."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.reviewer: msodsrbac
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +12,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-A role definition is a collection of permissions in Azure Active Directory (Azure AD) listing the operations that can be performed and the resources against which they can performed.
+A role definition is a collection of permissions in Microsoft Entra listing the operations that can be performed and the resources against which they can performed.
 
 ## Methods
 
@@ -30,7 +31,7 @@ A role definition is a collection of permissions in Azure Active Directory (Azur
 |description|String| The description for the unifiedRoleDefinition. Read-only when **isBuiltIn** is `true`. |
 |displayName|String| The display name for the unifiedRoleDefinition. Read-only when **isBuiltIn** is `true`. Required.  Supports $filter (`eq`, `in`).|
 |id|String| The unique identifier for the role definition. Key, not nullable, Read-only. Inherited from [entity](../resources/entity.md). Supports $filter (`eq`, `in`). |
-|isBuiltIn|Boolean| Flag indicating whether the role definition is part of the default set included in Azure Active Directory (Azure AD) or a custom definition. Read-only. Supports $filter (`eq`, `in`). |
+|isBuiltIn|Boolean| Flag indicating whether the role definition is part of the default set included in Microsoft Entra or a custom definition. Read-only. Supports $filter (`eq`, `in`). |
 |isEnabled|Boolean| Flag indicating whether the role is enabled for assignment. If `false` the role is not available for assignment. Read-only when **isBuiltIn** is true. |
 |resourceScopes|String collection| List of the scopes or permissions the role definition applies to. Currently only `/` is supported. Read-only when **isBuiltIn** is true. **DO NOT USE. This will be deprecated soon. Attach scope to role assignment.** | 
 |rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when **isBuiltIn** is `true`. Required. |
@@ -41,7 +42,7 @@ A role definition is a collection of permissions in Azure Active Directory (Azur
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|inheritsPermissionsFrom| [unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (**isBuiltIn** is `true`) support this attribute. Supports `$expand`. |
+|inheritsPermissionsFrom| [unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only collection of role definitions that the given role definition inherits from. Only Microsoft Entra built-in roles (**isBuiltIn** is `true`) support this attribute. Supports `$expand`. |
 
 ## JSON representation
 
@@ -85,4 +86,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

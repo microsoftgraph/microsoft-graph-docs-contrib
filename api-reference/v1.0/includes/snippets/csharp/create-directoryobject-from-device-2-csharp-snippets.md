@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Devices.Item.RegisteredUsers.Item.RegisteredUser
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new ReferenceCreate
 {
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"@odata.id" , "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
-		},
-	},
+	OdataId = "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 };
-await graphClient.Devices["{device-id}"].RegisteredUsers["{directoryObject-id}"].PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Devices["{device-id}"].RegisteredUsers.Ref.PostAsync(requestBody);
 
 
 ```

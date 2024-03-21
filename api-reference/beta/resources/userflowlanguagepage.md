@@ -1,9 +1,9 @@
 ---
 title: "userFlowLanguagePage resource type"
-description: "User flow language pages are used determine the strings users will be shown during the user journey you have configured using user flows."
+description: "User flow language pages are used to determine the strings users will be shown during the user journey you have configured using user flows."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-User flow language pages are used determine the strings users will be shown during the user journey you have configured using user flows. These language pages include both the default language translations provided by Microsoft, or custom pages that can be created to customize the language translations.
+User flow language pages are used to determine the strings users will be shown during the user journey you have configured using user flows. These language pages include both the default language translations provided by Microsoft, or custom pages that can be created to customize the language translations.
 
 ## Methods
 
@@ -35,7 +35,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

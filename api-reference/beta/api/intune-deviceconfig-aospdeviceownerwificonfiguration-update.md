@@ -3,7 +3,7 @@ title: "Update aospDeviceOwnerWiFiConfiguration"
 description: "Update the properties of a aospDeviceOwnerWiFiConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [aospDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-aospdeviceownerwificonfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -68,6 +70,11 @@ The following table shows the properties that are required when you create the [
 |wiFiSecurityType|[aospDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-aospdeviceownerwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Possible values are: `open`, `wep`, `wpaPersonal`, `wpaEnterprise`.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 |preSharedKeyIsSet|Boolean|This is the pre-shared key for WPA Personal Wi-Fi network.|
+|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Specify the proxy setting for Wi-Fi configuration. Possible values include none, manual, and automatic. Possible values are: `none`, `manual`, `automatic`, `unknownFutureValue`.|
+|proxyManualAddress|String|Specify the proxy server IP address. Both IPv4 and IPv6 addresses are supported. For example: 192.168.1.1.|
+|proxyManualPort|Int32|Specify the proxy server port.|
+|proxyAutomaticConfigurationUrl|String|Specify the proxy server configuration script URL.|
+|proxyExclusionList|String collection|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
 
 
 
@@ -81,7 +88,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1279
+Content-length: 1548
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerWiFiConfiguration",
@@ -119,7 +126,14 @@ Content-length: 1279
   "connectWhenNetworkNameIsHidden": true,
   "wiFiSecurityType": "wep",
   "preSharedKey": "Pre Shared Key value",
-  "preSharedKeyIsSet": true
+  "preSharedKeyIsSet": true,
+  "proxySetting": "manual",
+  "proxyManualAddress": "Proxy Manual Address value",
+  "proxyManualPort": 15,
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "proxyExclusionList": [
+    "Proxy Exclusion List value"
+  ]
 }
 ```
 
@@ -128,7 +142,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1451
+Content-Length: 1720
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerWiFiConfiguration",
@@ -169,6 +183,13 @@ Content-Length: 1451
   "connectWhenNetworkNameIsHidden": true,
   "wiFiSecurityType": "wep",
   "preSharedKey": "Pre Shared Key value",
-  "preSharedKeyIsSet": true
+  "preSharedKeyIsSet": true,
+  "proxySetting": "manual",
+  "proxyManualAddress": "Proxy Manual Address value",
+  "proxyManualPort": 15,
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "proxyExclusionList": [
+    "Proxy Exclusion List value"
+  ]
 }
 ```

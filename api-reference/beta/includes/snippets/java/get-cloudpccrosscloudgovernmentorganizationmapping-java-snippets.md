@@ -4,13 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new HeaderOption("X-MS-CloudPC-USGovCloudTenantAADToken", "{token}"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-CloudPcCrossCloudGovernmentOrganizationMapping cloudPcCrossCloudGovernmentOrganizationMapping = graphClient.deviceManagement().virtualEndpoint().crossCloudGovernmentOrganizationMapping()
-	.buildRequest( requestOptions )
-	.get();
+CloudPcCrossCloudGovernmentOrganizationMapping result = graphClient.deviceManagement().virtualEndpoint().crossCloudGovernmentOrganizationMapping().get();
+
 
 ```

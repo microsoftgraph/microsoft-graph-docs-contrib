@@ -1,9 +1,9 @@
 ---
 title: "userFlowLanguageConfiguration resource type"
 description: "Allows a user flow to support multiple languages."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Allows a user flow to support the use of multiple languages.
 
-For [Azure Active Directory user flows](/azure/active-directory/external-identities/user-flow-customize-language), you can only leverage the built-in languages provided by Microsoft. User flows for Azure Active Directory support defining the language and strings shown to users as they go through the journeys you configure with your user flows.
+For [Microsoft Entra user flows](/azure/active-directory/external-identities/user-flow-customize-language), you can only use the built-in languages provided by Microsoft. User flows for Microsoft Entra ID support defining the language and strings shown to users as they go through the journeys you configure with your user flows.
 
 ## Methods
 
@@ -36,12 +36,12 @@ For [Azure Active Directory user flows](/azure/active-directory/external-identit
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|defaultPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) collection|Collection of pages with the default content to display in a user flow for a specified language. This collection does not allow any kind of modification.|
-|overridesPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) collection|Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).|
+|defaultPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) collection|Collection of pages with the default content to display in a user flow for a specified language. This collection doesn't allow any kind of modification.|
+|overridesPages|[userFlowLanguagePage](../resources/userflowlanguagepage.md) collection|Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows you to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

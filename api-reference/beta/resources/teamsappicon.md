@@ -1,9 +1,9 @@
 ---
 title: "teamsAppIcon resource type"
-description: "An icon associated with an app on Microsoft Teams."
+description: "Represents an icon associated with an app on Microsoft Teams."
 author: "jecha"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An icon associated with a [teamsApp](teamsapp.md).
+Represents an icon associated with a [teamsApp](teamsapp.md).
 
 ## Methods
 
 | Method                                            | Return Type                                       | Description                                                    | 
 | :------------------------------------------------ | :------------------------------------------------ | :------------------------------------------------------------- |
 | [Get icon](../api/teamsappicon-get.md)     | [teamsAppIcon](teamsappicon.md)                   | Get an icon associated with a specific version of a Teams app. |
-| [Get hosted content](../api/teamworkhostedcontent-get.md) | [teamworkHostedContent](teamworkhostedcontent.md) | Get hosted content (and its bytes) for an icon.                |
+| [Get hosted content](../api/teamworkhostedcontent-get.md) | [teamworkHostedContent](teamworkhostedcontent.md) | Get hosted content (and its bytes) for an icon.        |
 
 ## Properties
 
@@ -37,6 +37,8 @@ An icon associated with a [teamsApp](teamsapp.md).
 
 ## JSON representation
 
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppIcon",
@@ -50,7 +52,7 @@ An icon associated with a [teamsApp](teamsapp.md).
 }
 ```
 
-## See also
+## Related content
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)

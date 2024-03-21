@@ -3,7 +3,7 @@ title: "teamTemplateDefinition"
 description: "Generic representation of a team template definition for a team with a specific structure and configuration."
 author: "Charlieforce"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 Generic representation of a team template definition for a team with a specific structure and configuration.
 
 Inherits from [entity](../resources/entity.md).
-
-> **Note**: This API is currently in private preview only. When it reaches public preview, we will publish a blog post announcement on the [Microsoft 365 Developer blog](https://devblogs.microsoft.com/microsoft365dev/).
 
 
 ## Methods
@@ -79,7 +77,7 @@ The following is a JSON representation of the resource.
   "shortDescription": "String"
 }
 ```
-## See also
+## Related content
 
 - [team](team.md)
 - [teamsTemplate](teamsTemplate.md)

@@ -6,31 +6,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RegionalAndLanguageSettings();
 $authoringLanguagesLocaleInfo1 = new LocaleInfo();
 $authoringLanguagesLocaleInfo1->setLocale('en-US');
-
-
 $authoringLanguagesArray []= $authoringLanguagesLocaleInfo1;
 $authoringLanguagesLocaleInfo2 = new LocaleInfo();
 $authoringLanguagesLocaleInfo2->setLocale('es-MX');
-
-
 $authoringLanguagesArray []= $authoringLanguagesLocaleInfo2;
 $requestBody->setAuthoringLanguages($authoringLanguagesArray);
 
-
 $defaultRegionalFormat = new LocaleInfo();
 $defaultRegionalFormat->setLocale('en-US');
-
-
 $requestBody->setDefaultRegionalFormat($defaultRegionalFormat);
 
-
-$requestResult = $graphServiceClient->me()->settings()->regionalAndLanguageSettings()->patch($requestBody);
-
+$result = $graphServiceClient->me()->settings()->regionalAndLanguageSettings()->patch($requestBody)->wait();
 
 ```

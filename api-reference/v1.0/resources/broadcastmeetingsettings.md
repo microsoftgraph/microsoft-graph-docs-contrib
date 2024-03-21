@@ -1,9 +1,9 @@
 ---
 title: "broadcastMeetingSettings resource type"
 description: "Represents settings related to a live event in Microsoft Teams."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -28,14 +28,14 @@ Represents settings related to a [live event](/microsoftteams/teams-live-events/
 
 | Value              | Description                                                       |
 | ------------------ | ----------------------------------------------------------------- |
-| everyone           | This Teams live event will be open to anyone. This is the default value. |
+| everyone           | This Teams live event is open to anyone. This is the default value. |
 | organization       | Everyone in your org can join this Teams live event.                     |
 | roleIsAttendee     | Only the specified people can join this Teams live event.                |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.  |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.  |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

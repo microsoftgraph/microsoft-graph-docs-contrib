@@ -1,10 +1,10 @@
 ---
 title: "presence resource type"
 description: "Contains information about a user's presence, including their availability and user activity."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # presence resource type
@@ -35,11 +35,11 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 
 | Property        | Type                                          | Description                                                                                                                                                                                                                                                                                    |
 | :------------------ | :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                  | string                                        | The user object id                                                                                                                                                                                                                                                                             |
-| availability        | string collection                             | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`                                                                                                           |
-| activity            | string collection                             | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`. |
-| outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | The out of office settings for a user.                                                                                                                                                                                                                                                     |
-| statusMessage | [microsoft.graph.presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
+| activity            | String collection                             | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Offline`, `OffWork`, `OutOfOffice`, `PresenceUnknown`, `Presenting`, `UrgentInterruptionsOnly`. |
+| availability        | String collection                             | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`.                                                                                                           |
+| id                  | String                                        | The unique identifier for the user.                                                                                                                                                                                                                                                                             |
+| outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user.                                                                                                                                                                                                                                                     |
+| statusMessage | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
 
@@ -59,10 +59,10 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-   "id":"string",
-   "availability":"string",
-   "activity":"string",
-   "outOfOfficeSettings":{"@odata.type": "#microsoft.graph.outOfOfficeSettings"},
-   "statusMessage":{"@odata.type": "#microsoft.graph.presenceStatusMessage"}
+   "activity": "String",
+   "availability": "String",
+   "id": "String (identifier)",
+   "outOfOfficeSettings": {"@odata.type": "#microsoft.graph.outOfOfficeSettings"},
+   "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"}
 }
 ```

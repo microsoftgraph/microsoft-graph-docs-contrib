@@ -4,7 +4,7 @@ description: "Get the status of a command on a device. For the  full list of sta
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ailae"
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # Get device command status (deprecated)
@@ -18,15 +18,14 @@ Get the status of a command on a device. For the  full list of status codes, see
 > [!CAUTION]
 > This API is deprecated and stopped returning data on September 30, 2020.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Device.Command    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "get_device_command_status" } -->
+[!INCLUDE [permissions-table](../includes/permissions/get-device-command-status-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +39,7 @@ GET me/devices/{id}/commands/{id}
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |
 
 ## Response
@@ -85,7 +84,7 @@ HTTP/1.1 200 OK
 
 ## Example
 
-In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call to `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
+In this example, you need the ID of the device and the ID of the command that was issued to the device. The device ID is returned when issuing a GET call to `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
 
 #### Request
 
@@ -157,7 +156,7 @@ GET me/devices/{id}/commands/{id}/responsePayload
 
 | Header |Value
 |:----|:------|
-|Authorization| Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |
 
 ### Response
@@ -179,7 +178,7 @@ HTTP/1.1 200 OK
 
 ### Example
 
-In this example, you will need the ID of the device and the ID of the command that has been issued to a device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
+In this example, you need the ID of the device and the ID of the command that was issued to the device. The device ID is returned when issuing a GET call on `/me/devices`, and the command ID is returned when doing a POST call on `/me/devices/{id}/command`.
 
 #### Request
 

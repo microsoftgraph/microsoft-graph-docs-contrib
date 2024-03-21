@@ -6,19 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BusinessScenario();
-$requestBody->set@odatatype('#microsoft.graph.businessScenario');
-
+$requestBody->setOdataType('#microsoft.graph.businessScenario');
 $requestBody->setDisplayName('Contoso Order Tracking');
-
 $requestBody->setUniqueName('com.contoso.apps.ordertracking');
 
-
-
-$requestResult = $graphServiceClient->solutions()->businessScenarios()->post($requestBody);
-
+$result = $graphServiceClient->solutions()->businessScenarios()->post($requestBody)->wait();
 
 ```

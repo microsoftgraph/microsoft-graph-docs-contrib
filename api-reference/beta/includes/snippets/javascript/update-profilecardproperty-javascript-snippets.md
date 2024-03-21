@@ -13,17 +13,18 @@ const client = Client.init(options);
 const profileCardProperty = {
   annotations: [
     {
+      displayName: 'Cost Center',
       localizations: [
         {
-          languageTag: 'no-NB',
-          displayName: 'Kostnads Senter'
+          languageTag: 'no',
+          displayName: 'Kostnadssenter'
         }
       ]
     }
   ]
 };
 
-await client.api('/organization/{organizationId}/settings/profileCardProperties/CustomAttribute1')
+await client.api('/admin/people/profileCardProperties/CustomAttribute1')
 	.version('beta')
 	.update(profileCardProperty);
 

@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [workforceintegration](../resources/workforceintegration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "workforceintegration_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workforceintegration-update-permissions.md)]
 
 ## HTTP request
 
@@ -37,20 +36,21 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|apiVersion|Int32|API version for the call back url. Start with 1.|
+|apiVersion|Int32|API version for the callback url. Start with 1.|
 |displayName|String|Name of the workforce integration.|
 |encryption|workforceIntegrationEncryption|The workforce integration encryption resource. |
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
 |supports|string| Possible values are `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
-|supportedEntities|string| This property will replace **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property will still be supported in beta for the time being. Possible values are `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
+|supportedEntities|string| This property replaces **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property will still be supported in beta for the time being. Possible values are `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
 |url|String| Workforce Integration url for callbacks from the Shift service. |
 
 ## Response
@@ -65,7 +65,7 @@ The following example updates a **workforceIntegration** object.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,31 +94,39 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workforceintegration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-workforceintegration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-workforceintegration-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-workforceintegration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-workforceintegration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-workforceintegration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -151,7 +159,7 @@ The following example creates a new **workforceIntegration** with SwapRequest en
 
 #### Request
 
-The following is an example of the request. 
+The following example shows a request. 
 ```
 POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
@@ -173,7 +181,7 @@ Content-type: application/json
 ```
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 ```
 HTTP/1.1 200 OK
 {
@@ -195,11 +203,11 @@ To create a new **workforceIntegration** with SwapRequest enabled for eligibilit
 
 ### Example 3: Fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
 
-The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
+The interaction between Shifts app and workforce integration endpoints follow the existing pattern.
 
 #### Request
 
-The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+The following example shows a request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -216,7 +224,7 @@ Accept-Language: en-us
 ```
 #### Response
 
-The following is an example of the response from the workforce integration service.
+Here's an example of the response from the workforce integration service.
 ```
 HTTP/1.1 200 OK
 {
@@ -236,11 +244,11 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 4: Shifts synchronous call back to the workforce integration endpoint when enabled for real time notifications on timeCard changes.
+### Example 4: Shifts synchronous callback to the workforce integration endpoint when enabled for real time notifications on timeCard changes.
 
 #### Request
 
-The following is an example of the request. 
+The following example shows a request. 
 ```
 POST https://foobarWorkforceIntegration.com/foobar/v1/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/update
 Accept-Language: en-us
@@ -332,7 +340,7 @@ Content-type: application/json
 ```
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 ```
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -6,24 +6,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
-$queryParameters->filter = "isof or isof";
-$queryParameters->select = ["microsoft.graph.user/surname","microsoft.graph.group/displayName"];
-
 $headers = [
-'Prefer' => 'return=minimal',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'return=minimal',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "isof('microsoft.graph.user') or isof('microsoft.graph.group')";
+$queryParameters->select = ["microsoft.graph.user/surname","microsoft.graph.group/displayName"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->directoryObjects()->delta()->get($requestConfiguration);
 
+$result = $graphServiceClient->directoryObjects()->delta()->get($requestConfiguration)->wait();
 
 ```

@@ -6,17 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PersonAward();
 $requestBody->setIssuingAuthority('International Association of Branding Management');
-
 $requestBody->setThumbnailUrl('https://iabm.io/sdhdfhsdhshsd.jpg');
 
-
-
-$requestResult = $graphServiceClient->usersById('user-id')->profile()->awardsById('personAward-id')->patch($requestBody);
-
+$result = $graphServiceClient->users()->byUserId('user-id')->profile()->awards()->byPersonAwardId('personAward-id')->patch($requestBody)->wait();
 
 ```

@@ -1,19 +1,22 @@
 ---
-title: "cloudPcSharedUseServicePlan resource type"
-description: "Represents a shared-use service plan that can be used by up to three Cloud PCs."
+title: "cloudPcSharedUseServicePlan resource type (deprecated)"
+description: "Represents a shared-use service plan available for use by up to three Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcSharedUseServicePlan resource type
+# cloudPcSharedUseServicePlan resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a shared-use service plan that can be used by up to three Cloud PCs.
+> [!CAUTION]
+> The **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on April 24, 2024. Going forward, use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md).
+
+Represents a shared-use service plan available for use by up to three Cloud PCs.
 
 ## Methods
 

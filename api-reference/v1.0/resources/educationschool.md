@@ -3,7 +3,7 @@ title: "educationSchool resource type"
 description: "A resource representing a school and used to manage the classes, teachers, and students of the represented school.  "
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,7 @@ Inherits from [educationOrganization](../resources/educationorganization.md).
 | externalId           | String                                             | ID of school in syncing system.                                                                                                                                      |
 | externalPrincipalId  | String                                             | ID of principal in syncing system.                                                                                                                                   |
 | externalSource       | educationExternalSource                            | Source where this organization was created from. Inherited from [educationOrganization](../resources/educationorganization.md). Possible values are: `sis`, `manual`. |
-| externalSourceDetail | String                                             | The name of the external source this resources was generated from.                                                                                                   |
+| externalSourceDetail | String                                             | The name of the external source this resource was generated from.                                                                                                   |
 | highestGrade         | String                                             | Highest grade taught.                                                                                                                                                |
 | id                   | String                                             | Object identifier. Inherited from [entity](../resources/entity.md).                                                                                                   |
 | lowestGrade          | String                                             | Lowest grade taught.                                                                                                                                                 |
@@ -56,7 +56,7 @@ Inherits from [educationOrganization](../resources/educationorganization.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: printerBase resource type
 description: Represents base type for printer and printer share
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 # printerBase resource type
@@ -19,7 +19,7 @@ Represents a base type for [printer](printer.md) and [printerShare](printerShare
 |defaults|[printerDefaults](printerdefaults.md)|The default print settings of printer/printerShare.|
 |displayName|String|The name of the printer/printerShare.|
 |id|String|The identifier.|
-|isAcceptingJobs|Boolean|Whether the printer/printerShare is currently accepting new print jobs.|
+|isAcceptingJobs|Boolean|Specifies whether the printer/printerShare is currently accepting new print jobs.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer/printerShare.|
 |manufacturer|String|The manufacturer of the printer/printerShare.|
 |model|String|The model name of the printer/printerShare.|
@@ -31,7 +31,7 @@ Represents a base type for [printer](printer.md) and [printerShare](printerShare
 |jobs|[printJob](printjob.md) collection|The list of jobs that are queued for printing by the printer/printerShare.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

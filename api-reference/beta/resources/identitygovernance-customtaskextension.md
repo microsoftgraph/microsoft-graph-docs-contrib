@@ -3,7 +3,7 @@ title: "customTaskExtension resource type"
 description: "Defines the attributes of a custom task that allows you to integrate lifecycle workflows with Azure Logic Apps and trigger custom tasks through the logic app."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Defines the attributes of a customTaskExtension that allows you to integrate Lif
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
-For more information about using custom task extensions, refer to the links in the [see also](#see-also) section.
+For more information about using custom task extensions, refer to the links in the [see also](#related-content) section.
 
 ## Methods
 
@@ -34,8 +34,8 @@ For more information about using custom task extensions, refer to the links in t
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Required.|
-|callbackConfiguration|[microsoft.graph.customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
-|clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Azure AD can wait for a connection to a logic app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|callbackConfiguration|[microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md)|The callback configuration for a custom task extension.|
+|clientConfiguration|[microsoft.graph.customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Microsoft Entra ID can wait for a connection to a logic app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |createdDateTime|DateTimeOffset|When the custom task extension was created.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |description|String|Describes the purpose of the custom task extension for administrative use. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |displayName|String|A unique string that identifies the custom task extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Required.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
@@ -47,8 +47,8 @@ For more information about using custom task extensions, refer to the links in t
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|createdBy|[user](../resources/user.md)|The unique identifier of the Azure AD user that created the custom task extension.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
-|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the Azure AD user that modified the custom task extension last.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
+|createdBy|[user](../resources/user.md)|The unique identifier of the Microsoft Entra user that created the custom task extension.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
+|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the Microsoft Entra user that modified the custom task extension last.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 
 ## JSON representation
 
@@ -84,6 +84,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Lifecycle Workflows Custom Task Extension (Preview)](/azure/active-directory/governance/lifecycle-workflow-extensibility)

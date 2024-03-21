@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CrossDeviceExperiences
+Import-Module Microsoft.Graph.Beta.CrossDeviceExperiences
 
 # A UPN can also be used as -UserId.
-Remove-MgUserActivity -UserId $userId -UserActivityId $userActivityId
+Remove-MgBetaUserActivity -UserId $userId -UserActivityId $userActivityId
 
 ```

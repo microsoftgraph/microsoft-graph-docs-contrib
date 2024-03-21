@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph threat assessment API"
 description: "Microsoft Graph lets your app get authorized access to organization's threat assessment data."
 ms.localizationpriority: high
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ The Microsoft Graph threat assessment API helps organizations to assess the thre
 
 ## Authorization
 
-Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access threat assessment resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Threat assessment permissions](/graph/permissions-reference#threat-assessment-permissions).
+Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access threat assessment resources. Typically, you specify permissions in the Microsoft Entra admin center. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Threat assessment permissions](/graph/permissions-reference#threat-assessment-permissions).
 
 ## Common use cases
 
@@ -34,5 +34,3 @@ Threat assessment resources and APIs can open up new ways for you to engage with
 
 - Drill down on the [methods](../resources/threatassessmentrequest.md#methods), [properties](../resources/threatassessmentrequest.md#properties), and [relationships](../resources/threatassessmentrequest.md#relationships) of the [threat assessment request](../resources/threatassessmentrequest.md) and [threat asessment result](../resources/threatAssessmentResult.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-

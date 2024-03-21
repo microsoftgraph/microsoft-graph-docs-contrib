@@ -3,7 +3,7 @@ title: "meetingParticipantInfo resource type"
 description: "Information about a participant in a meeting."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Information about a participant in a meeting.
 
 ### onlineMeetingRole values
 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the the following values in this evolvable enum: `producer`, `coorganizer`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `producer`, `coorganizer`.
 
 | Value              | Description                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
@@ -31,7 +31,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 | presenter           | Participant's role is presenter. This value applies to meetings with **allowedPresenter** set to `roleIsPresenter`, or a Teams live event. |
 | producer            | Participant's role is producer. This value applies to Teams live event only.  |
 | coorganizer | Participant's role is co-organizer. This value applies to all meetings except Teams live event. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 > [!TIP]
 >
@@ -39,7 +39,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

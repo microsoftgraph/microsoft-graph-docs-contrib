@@ -3,7 +3,7 @@ title: "Create page"
 description: "Create a new OneNote page in the default section of the default notebook."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 
@@ -21,14 +21,13 @@ The `POST /onenote/pages` operation is used only to create pages in the current 
 
 > **Note:** There is a limit to the number of pages that can be added to a section using this API. For details, see [Create OneNote pages](/graph/onenote-create-page) for all limitations with this API.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite    |
-|Application | Notes.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "onenote_post_pages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/onenote-post-pages-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +56,7 @@ If successful, this method returns a `201 Created` response code and the new [on
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.
 
@@ -101,7 +100,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

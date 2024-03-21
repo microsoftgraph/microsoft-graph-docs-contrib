@@ -6,17 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcExternalPartnerSetting();
-$requestBody->set@odatatype('#microsoft.graph.cloudPcExternalPartnerSetting');
-
+$requestBody->setOdataType('#microsoft.graph.cloudPcExternalPartnerSetting');
 $requestBody->setEnableConnection(true);
 
-
-
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettingsById('cloudPcExternalPartnerSetting-id')->patch($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->externalPartnerSettings()->byCloudPcExternalPartnerSettingId('cloudPcExternalPartnerSetting-id')->patch($requestBody)->wait();
 
 ```

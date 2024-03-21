@@ -8,11 +8,11 @@ Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
 	AttachmentItem = @{
-		AttachmentType = "file"
-		Name = "scenary"
-		Size = 7208534
-		IsInline = $true
-		ContentId = "my_inline_picture"
+		attachmentType = "file"
+		name = "scenary"
+		size = 7208534
+		isInline = $true
+		contentId = "my_inline_picture"
 	}
 }
 

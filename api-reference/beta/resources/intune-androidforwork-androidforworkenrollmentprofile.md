@@ -3,7 +3,7 @@ title: "androidForWorkEnrollmentProfile resource type"
 description: "Enrollment Profile used to enroll COSU devices using Google's Cloud Management."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -25,8 +25,8 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 |[Create androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-create.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Create a new [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) object.|
 |[Delete androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-delete.md)|None|Deletes a [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).|
 |[Update androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-update.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Update the properties of a [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) object.|
-|[revokeToken action](../api/intune-androidforwork-androidforworkenrollmentprofile-revoketoken.md)|None|Not yet documented|
-|[createToken action](../api/intune-androidforwork-androidforworkenrollmentprofile-createtoken.md)|None|Not yet documented|
+|[revokeToken action](../api/intune-androidforwork-androidforworkenrollmentprofile-revoketoken.md)|None||
+|[createToken action](../api/intune-androidforwork-androidforworkenrollmentprofile-createtoken.md)|None||
 
 ## Properties
 |Property|Type|Description|

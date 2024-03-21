@@ -23,7 +23,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-10-27T01:51:01.8371121Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
     },
     {
@@ -65,7 +65,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-10-03T07:58:02.8273321Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
     },
     {
@@ -349,7 +349,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "riskyUser",
           "ChangeType": "Addition",
-          "Description": "Added the [riskyUser](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-riskyUser?view=graph-rest-beta) resource type.",
+          "Description": "Added the **riskyUser** resource type.",
           "Target": "riskyUser"
         },
         {
@@ -565,7 +565,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantRelationship",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantRelationship?view=graph-rest-beta) resource type.",
+          "Description": "Added the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-beta) resource type.",
           "Target": "tenantRelationship"
         },
         {
@@ -645,7 +645,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "apply",
           "ChangeType": "Addition",
-          "Description": "Added the [apply](https://learn.microsoft.com/en-us/graph/api/managedtenants-managementAction-apply?view=graph-rest-beta) method to the [managementAction](https://learn.microsoft.com/en-us/graph/api/resources/managementAction?view=graph-rest-beta) resource.",
+          "Description": "Added the [apply](https://learn.microsoft.com/en-us/graph/api/managedtenants-managementaction-apply?view=graph-rest-beta) method to the [managementAction](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementAction?view=graph-rest-beta) resource.",
           "Target": "managementAction"
         },
         {
@@ -653,7 +653,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "tenantSearch",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantSearch](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenantGroup-tenantSearch?view=graph-rest-beta) method to the [tenantGroup](https://learn.microsoft.com/en-us/graph/api/resources/tenantGroup?view=graph-rest-beta) resource.",
+          "Description": "Added the [tenantSearch](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenantGroup-tenantSearch?view=graph-rest-beta) method to the [tenantGroup](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantGroup?view=graph-rest-beta) resource.",
           "Target": "tenantGroup"
         },
         {
@@ -661,7 +661,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "changeDeploymentStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [changeDeploymentStatus](https://learn.microsoft.com/en-us/graph/api/managedtenants-managementActionTenantDeploymentStatus-changeDeploymentStatus?view=graph-rest-beta) method to the [managementActionTenantDeploymentStatus](https://learn.microsoft.com/en-us/graph/api/resources/managementActionTenantDeploymentStatus?view=graph-rest-beta) resource.",
+          "Description": "Added the [changeDeploymentStatus](https://learn.microsoft.com/en-us/graph/api/managedtenants-managementActionTenantDeploymentStatus-changeDeploymentStatus?view=graph-rest-beta) method to the [managementActionTenantDeploymentStatus](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-managementActionTenantDeploymentStatus?view=graph-rest-beta) resource.",
           "Target": "managementActionTenantDeploymentStatus"
         },
         {
@@ -669,7 +669,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "offboardTenant",
           "ChangeType": "Addition",
-          "Description": "Added the [offboardTenant](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenant-offboardTenant?view=graph-rest-beta) method to the [tenant](https://learn.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-beta) resource.",
+          "Description": "Added the [offboardTenant](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenant-offboardTenant?view=graph-rest-beta) method to the [tenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenant?view=graph-rest-beta) resource.",
           "Target": "tenant"
         },
         {
@@ -677,7 +677,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "resetTenantOnboardingStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [resetTenantOnboardingStatus](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenant-resetTenantOnboardingStatus?view=graph-rest-beta) method to the [tenant](https://learn.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-beta) resource.",
+          "Description": "Added the [resetTenantOnboardingStatus](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenant-resetTenantOnboardingStatus?view=graph-rest-beta) method to the [tenant](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenant?view=graph-rest-beta) resource.",
           "Target": "tenant"
         },
         {
@@ -685,7 +685,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "assignTag",
           "ChangeType": "Addition",
-          "Description": "Added the [assignTag](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenantTag-assignTag?view=graph-rest-beta) method to the [tenantTag](https://learn.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-beta) resource.",
+          "Description": "Added the [assignTag](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenantTag-assignTag?view=graph-rest-beta) method to the [tenantTag](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantTag?view=graph-rest-beta) resource.",
           "Target": "tenantTag"
         },
         {
@@ -693,7 +693,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unassignTag",
           "ChangeType": "Addition",
-          "Description": "Added the [unassignTag](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenantTag-unassignTag?view=graph-rest-beta) method to the [tenantTag](https://learn.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-beta) resource.",
+          "Description": "Added the [unassignTag](https://learn.microsoft.com/en-us/graph/api/managedtenants-tenantTag-unassignTag?view=graph-rest-beta) method to the [tenantTag](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-tenantTag?view=graph-rest-beta) resource.",
           "Target": "tenantTag"
         }
       ],
@@ -727,6 +727,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-12-06T23:54:12.684464Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Multi-tenant management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6b0952c8-afd7-4a0e-a915-f200d946d36c",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantLicenseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantLicenseType** property to [credentialUserRegistrationsSummary](https://learn.microsoft.com/en-us/graph/api/resources/managedtenants-credentialUserRegistrationsSummary?view=graph-rest-beta) resource.",
+          "Target": "credentialUserRegistrationsSummary"
+        }
+      ],
+      "Id": "6b0952c8-afd7-4a0e-a915-f200d946d36c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-10T18:00:00.684464Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
     }

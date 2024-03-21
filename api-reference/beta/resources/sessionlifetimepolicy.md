@@ -1,9 +1,9 @@
 ---
 title: "sessionlifetimepolicy resource type"
-description: "Describes the session lifetime policies Azure AD applied to a sign-in event."
-author: "besiler"
+description: "Describes the session lifetime policies Microsoft Entra ID applied to a sign-in event."
+author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the session lifetime policies Azure AD applied to a sign-in event. 
+Describes the session lifetime policies Microsoft Entra ID applied to a sign-in event. 
 
-For more details about session management with conditional access in Azure AD, see the [conditional access session management documentation](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). 
+For more details about session management with conditional access in Microsoft Entra ID, see the [conditional access session management documentation](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). 
 
 ## Properties
 |Property|Type|Description|
@@ -41,4 +41,3 @@ The following is a JSON representation of the resource.
   "detail": "String"
 }
 ```
-

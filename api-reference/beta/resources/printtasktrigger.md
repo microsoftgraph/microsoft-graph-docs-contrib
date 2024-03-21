@@ -3,7 +3,7 @@ title: printTaskTrigger resource type
 description: Determines the conditions under which a new printTask will be executed based on the associated printTaskDefinition.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -29,23 +29,23 @@ For details about how to use this resource to add pull printing support to Unive
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The printTaskTrigger's identifier. Read-only.|
-|event|printEvent|The Universal Print event that will cause a new [printTask](printtask.md) to be triggered. Valid values are described in the following table.|
+|event|printEvent|The Universal Print event that causes a new [printTask](printtask.md) to be triggered. Valid values are described in the following table.|
 
 ### printEvent values
 
 |Member|Value|Description|
 |:---|:---|:---|
 |jobStarted|0|Represents an event that occurs when a new print job is started.|
-|unknownFutureValue|1|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|1|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|definition|[printTaskDefinition](printtaskdefinition.md)|An abstract definition that will be used to create a [printTask](printtask.md) when triggered by a print event. Read-only.|
+|definition|[printTaskDefinition](printtaskdefinition.md)|An abstract definition that is used to create a [printTask](printtask.md) when triggered by a print event. Read-only.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

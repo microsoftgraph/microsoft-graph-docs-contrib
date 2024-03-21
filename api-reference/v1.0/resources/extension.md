@@ -3,7 +3,7 @@ title: "extension resource type"
 description: "An abstract type to support the OData v4 open type openTypeExtension."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ An abstract type to support the OData v4 open type [openTypeExtension](opentypee
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "abstract": "true",
@@ -45,7 +45,7 @@ None
 
 ## Methods
 
-See the methods of the derived type [openTypeExtension](opentypeextension.md) for actually supported methods.
+See the methods of the derived type [openTypeExtension](opentypeextension.md) for supported methods.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

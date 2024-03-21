@@ -1,9 +1,9 @@
 ---
 title: "invokeUserFlowListener resource type"
 description: "A listener that is used to invoke a user flow during an authentication event."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can create an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) for the onSignUpStart event. This associates an application with a user flow, which enables [external identities self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) for the application. Once an application is associated with a user flow, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
+You can create an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) for the onSignUpStart event. The listener associates an application with a user flow, which enables [external identities self-service sign up](/azure/active-directory/external-identities/self-service-sign-up-overview) for the application. Once an application is associated with a user flow, users who go to that application are able to initiate a sign-up flow that provisions a guest account.
 
 Inherits from the abstract base type [authenticationListener](../resources/authenticationlistener.md).
 
@@ -33,7 +33,7 @@ Inherits from the abstract base type [authenticationListener](../resources/authe
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

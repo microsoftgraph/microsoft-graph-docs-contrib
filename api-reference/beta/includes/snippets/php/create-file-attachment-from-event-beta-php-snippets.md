@@ -6,23 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Attachment();
-$requestBody->set@odatatype('#microsoft.graph.fileAttachment');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new FileAttachment();
+$requestBody->setOdataType('#microsoft.graph.fileAttachment');
 $requestBody->setName('menu.txt');
+$requestBody->setContentBytes(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('bWFjIGFuZCBjaGVlc2UgdG9kYXk=')));
 
-$additionalData = [
-'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$requestResult = $graphServiceClient->me()->eventsById('event-id')->attachments()->post($requestBody);
-
+$result = $graphServiceClient->me()->events()->byEventId('event-id')->attachments()->post($requestBody)->wait();
 
 ```

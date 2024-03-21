@@ -1,10 +1,10 @@
 ---
 title: "programControl resource type (deprecated)"
-description: "In the Azure AD access reviews feature, the program control object represents a control, linking an access review to a program."
+description: "In the Microsoft Entra access reviews feature, the program control object represents a control, linking an access review to a program."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
-author: "markwahl-msft"
+ms.subservice: "entra-id-governance"
+author: "shubhamguptacal"
 ---
 
 # programControl resource type (deprecated)
@@ -15,22 +15,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](accessreviews-root.md) feature, the program control object represents a control, linking an access review to a program.
+In the Microsoft Entra [access reviews](accessreviews-root.md) feature, the program control object represents a control, linking an access review to a program.
 
 
 ## Methods
 
 | Method | Return Type | Description |
 |:------ |:----------- |:----------- |
-| [Create programControl](../api/programcontrol-create.md) |	[programControl](programcontrol.md)	|	Add a programControl to a program. |
+| [Create programControl](../api/programcontrol-create.md) |    [programControl](programcontrol.md)    |    Add a programControl to a program. |
 | [Delete programControl](../api/programcontrol-delete.md) | None. | Remove a programControl from a program. |
 | [List programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) collection | List controls across all programs in the tenant. |
-| [List programControls of a program](../api/program-listcontrols.md) | [programControl](programcontrol.md) collection |	Get a collection of the controls of a program. |
+| [List programControls of a program](../api/program-listcontrols.md) | [programControl](programcontrol.md) collection |    Get a collection of the controls of a program. |
 | [List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
 ## Properties
 
-| Property | Type	| Description |
+| Property | Type    | Description |
 |:-------- |:---- |:----------- |
 | id | String | The feature-assigned identifier of the link between program and control. |
 | programId | String | The programId of the program this control is a part of. Required on create. |
@@ -44,7 +44,7 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the program con
 
 ## Relationships
 
-| Relationship | Type	| Description |
+| Relationship | Type    | Description |
 |:------------ |:---- |:----------- |
 | program | [program](program.md) | The program this control is part of. |
 
@@ -84,5 +84,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

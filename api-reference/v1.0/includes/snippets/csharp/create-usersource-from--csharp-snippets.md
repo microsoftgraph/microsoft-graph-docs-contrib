@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Models.Security.UserSource
+// Dependencies
+using Microsoft.Graph.Models.Security;
+
+var requestBody = new UserSource
 {
-	Email = "admin@M365x809305.onmicrosoft.com",
-	IncludedSources = Microsoft.Graph.Models.Security.SourceType.Mailbox | Microsoft.Graph.Models.Security.SourceType.Site,
+	Email = "admin@contoso.com",
+	IncludedSources = SourceType.Mailbox | SourceType.Site,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Custodians["{ediscoveryCustodian-id}"].UserSources.PostAsync(requestBody);
 
 

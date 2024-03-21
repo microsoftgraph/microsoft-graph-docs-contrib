@@ -2,8 +2,9 @@
 title: "authenticationMethod resource type"
 description: "Represents an authentication method registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
-ms.prod: "identity-and-sign-in"
+author: "jpettere"
+ms.reviewer: intelligentaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -25,7 +26,7 @@ The **authenticationMethod** resource type is an abstract type that's inherited 
 + [windowsHelloForBusinessAuthenticationMethod](windowshelloforbusinessauthenticationmethod.md)
 
 > [!IMPORTANT]
-> Listing users' authentication methods only returns methods supported on this API version and registered to the user. See [Azure AD authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
+> Listing users' authentication methods only returns methods supported on this API version and registered to the user. See [Microsoft Entra authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
 
 ## Methods
 

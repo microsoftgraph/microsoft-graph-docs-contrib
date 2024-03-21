@@ -3,7 +3,7 @@ title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -12,10 +12,10 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 The recurrence pattern and range. This shared object is used to define the recurrence of the following objects:
-+ [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects in Azure AD access reviews APIs
++ [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects in Microsoft Entra access reviews APIs
 + [event](event.md) objects in the calendar API
 + [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) and [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) objects in PIM
-+ [accessPackageAssignment](accesspackageassignment.md) objects in Azure AD entitlement management.
++ [accessPackageAssignment](accesspackageassignment.md) objects in Microsoft Entra entitlement management.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -52,4 +52,3 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
-

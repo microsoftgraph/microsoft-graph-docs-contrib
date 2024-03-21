@@ -1,9 +1,10 @@
 ---
 title: "excludeTarget resource type"
 description: "Represents the users or groups of users that are excluded from a policy."
-author: "mjsantani"
+author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +19,7 @@ Represents the users or groups of users that are excluded from a policy.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The object identifier of an Azure AD group.|
+|id|String|The object identifier of a Microsoft Entra group.|
 |targetType|authenticationMethodTargetType|The type of the authentication method target. Possible values are: `group` and `unknownFutureValue`.|
 
 ## Relationships

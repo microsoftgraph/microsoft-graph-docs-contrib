@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new PinnedMessagesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new PinnedMessagesRequestBuilderGetQueryParameters();
+$queryParameters = PinnedMessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["message"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->chatsById('chat-id')->pinnedMessages()->get($requestConfiguration);
-
+$result = $graphServiceClient->chats()->byChatId('chat-id')->pinnedMessages()->get($requestConfiguration)->wait();
 
 ```

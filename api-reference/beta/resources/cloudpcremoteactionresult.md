@@ -3,7 +3,7 @@ title: "cloudPcRemoteActionResult resource type"
 description: "Represents the Cloud PC-specified remote action result."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -39,11 +39,11 @@ Represents the Cloud PC-specified remote action result.
 |:---|:---|
 |none|Not a valid action state.|
 |pending|Action is pending.|
-|canceled|Action has been cancelled.|
+|canceled|Action has been canceled.|
 |active|Action is active.|
 |done|Action completed without errors.|
 |failed|Action failed.|
-|notSupported|Action is not supported.|
+|notSupported|Action isn't supported.|
 
 ## Relationships
 
@@ -51,7 +51,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcRemoteActionResult"

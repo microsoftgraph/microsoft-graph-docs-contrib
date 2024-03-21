@@ -6,25 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Contact();
 $requestBody->setParentFolderId('parentFolderId-value');
-
-$requestBody->setBirthday(new DateTime('datetime-value'));
-
+$requestBody->setBirthday(new \DateTime('datetime-value'));
 $requestBody->setFileAs('fileAs-value');
-
 $requestBody->setDisplayName('displayName-value');
-
 $requestBody->setGivenName('givenName-value');
-
 $requestBody->setInitials('initials-value');
 
-
-
-$requestResult = $graphServiceClient->me()->contactFoldersById('contactFolder-id')->contacts()->post($requestBody);
-
+$result = $graphServiceClient->me()->contactFolders()->byContactFolderId('contactFolder-id')->contacts()->post($requestBody)->wait();
 
 ```

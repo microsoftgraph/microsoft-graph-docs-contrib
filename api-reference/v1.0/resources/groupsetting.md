@@ -1,9 +1,10 @@
 ---
 title: "groupSetting resource type"
 description: "Group settings define the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. For examples, you can block word lists for group display names or define whether guest users are allowed to be group owners."
-author: "psaffaie"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 Group settings define the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. For examples, you can block word lists for group display names or define whether guest users are allowed to be group owners.
 
-By default, all groups inherit the preset defaults. To change the default settings, you must create a new settings object using the [groupSettingTemplates](groupsettingtemplate.md). When the same setting is defined at both the tenant-wide and to a specific group, the group-level setting overrides the tenant-wide setting. For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but an individual group setting can override and not allow guests to be invited by members of the group.
+By default, all groups inherit the preset defaults. To change the default settings, you must create a new settings object using the [groupSettingTemplates](groupsettingtemplate.md). When the same setting is defined at both the tenant-wide and to a specific group, the group-level setting overrides the tenant-wide setting. For example, the tenant-wide setting may allow guests to be invited by existing members of groups. However, an individual group setting can override and not allow guests to be invited by members of the group.
 
 Group settings apply to only Microsoft 365 groups.
 
@@ -27,7 +28,7 @@ Group settings apply to only Microsoft 365 groups.
 | [Create setting](../api/group-post-settings.md) | [groupSetting](groupsetting.md)            | Create a setting object based on a **groupSettingTemplate**. |
 | [Get setting](../api/groupsetting-get.md)       | [groupSetting](groupsetting.md)            | Read properties of a specific setting object.                |
 | [List settings](../api/group-list-settings.md)  | [groupSetting](groupsetting.md) collection | List properties of all setting objects.                      |
-| [Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md)            | Update groupsetting object.                                  |
+| [Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md)            | Update the groupsetting object.                                  |
 | [Delete setting](../api/groupsetting-delete.md) | None                                       | Delete a setting object.                                     |
 
 ## Properties
@@ -45,7 +46,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",

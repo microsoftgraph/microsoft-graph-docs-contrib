@@ -1,9 +1,9 @@
 ---
 title: "hostSecurityState resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications isn't supported."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: security
+ms.subservice: security
 author: "preetikr"
 ---
 
@@ -20,18 +20,18 @@ Contains stateful information about the host (including devices, computers, and 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |fqdn|String|Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).|
-|isAzureAadJoined|Boolean|True if the host is domain joined to Azure Active Directory Domain Services.|
-|isAzureAadRegistered|Boolean|True if the host registered with Azure Active Directory Device Registration (BYOD devices - that is, not fully managed by enterprise).|
+|isAzureAadJoined|Boolean|True if the host is domain joined to Microsoft Entra Domain Services.|
+|isAzureAadRegistered|Boolean|True if the host registered with Microsoft Entra Device Registration (BYOD devices - that is, not fully managed by enterprise).|
 |isHybridAzureDomainJoined|Boolean|True if the host is domain joined to an on-premises Active Directory domain.|
 |netBiosName|String|The local host name, without the DNS domain name.|
-|os|String|Host Operating System. (For example, Windows10, MacOS, RHEL, etc.).|
+|os|String|Host Operating System. (For example, Windows 10, macOS, RHEL, etc.).|
 |privateIpAddress|String|Private (not routable) IPv4 or IPv6 address (see [RFC 1918](https://tools.ietf.org/html/rfc1918)) at the time of the alert.|
 |publicIpAddress|String|Publicly routable IPv4 or IPv6 address (see [RFC 1918](https://tools.ietf.org/html/rfc1918)) at time of the alert.|
 |riskScore|String|Provider-generated/calculated risk score of the host.  Recommended value range of 0-1, which equates to a percentage.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -68,5 +68,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

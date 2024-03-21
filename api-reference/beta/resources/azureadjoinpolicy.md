@@ -1,27 +1,25 @@
 ---
-title: "azureAdJoinPolicy resource type"
-description: "Represents the policy scope of an Azure Active Directory tenant that controls device registration using Azure AD Join."
+title: "azureADJoinPolicy resource type"
+description: "Represents the policy scope of a Microsoft Entra tenant that controls device registration using Microsoft Entra join."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
-# azureAdJoinPolicy resource type
+# azureADJoinPolicy resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the policy scope of the Azure Active Directory (Azure AD) tenant that controls the ability for users and groups to register device identities to your organization using Azure AD Join.
+Represents the policy scope of the Microsoft Entra tenant that controls the ability for users and groups to register device identities to your organization using Microsoft Entra join.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedGroups|String collection|The identifiers of the groups that are in the scope of the policy. Required when the **appliesTo** property is set to `selected`. |
-|allowedUsers|String collection|The identifiers of users that are in the scope of the policy. Required when the **appliesTo** property is set to `selected`.|
-|appliesTo|policyScope|Specifies whether to block or allow fine-grained control of the policy scope. The possible values are: `0` (meaning `none`), `1` (meaning `all`), `2` (meaning `selected`), `3` (meaning `unknownFutureValue`). <br/><br/>The default value is `1`. When set to `2`, at least one user or group identifier must be specified in either **allowedUsers** or **allowedGroups**.  Setting this property to `0` or `1` removes all identifiers in both **allowedUsers** and **allowedGroups**.|
-|isAdminConfigurable|Boolean|Specifies whether this policy scope is configurable by the admin. The default value is `false`. When an admin has enabled Intune (MEM) to manage devices, this property is set to `false` and **appliesTo** defaults to `1` (meaning `all`).|
+|allowedToJoin|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Microsoft Entra join is allowed.|
+|isAdminConfigurable|Boolean|Determines if administrators can modify this policy.|
 
 ## Relationships
 
@@ -32,19 +30,15 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.azureAdJoinPolicy"
+  "@odata.type": "microsoft.graph.azureADJoinPolicy"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.azureAdJoinPolicy",
-  "appliesTo": "String",
+  "@odata.type": "#microsoft.graph.azureADJoinPolicy",
   "isAdminConfigurable": "Boolean",
-  "allowedUsers": [
-    "String"
-  ],
-  "allowedGroups": [
-    "String"
-  ]
+  "allowedToJoin": {
+    "@odata.type": "microsoft.graph.deviceRegistrationMembership"
+  }
 }
 ```

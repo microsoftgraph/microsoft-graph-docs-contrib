@@ -6,15 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Set();
 $requestBody->setDescription('mySet');
 
-
-
-$requestResult = $graphServiceClient->sitesById('site-id')->termStore()->setsById('set-id')->patch($requestBody);
-
+$result = $graphServiceClient->sites()->bySiteId('site-id')->termStore()->sets()->bySetId('set-id')->patch($requestBody)->wait();
 
 ```

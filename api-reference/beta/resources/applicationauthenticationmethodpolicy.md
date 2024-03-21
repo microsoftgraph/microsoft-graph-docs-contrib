@@ -1,19 +1,19 @@
 ---
-title: "Azure AD application authentication methods API overview"
+title: "Microsoft Entra application authentication methods API overview"
 description: "Application authentication methods allow apps to acquire tokens to access data in Azure AD."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ---
 
-# Azure AD application authentication methods API overview (preview)
+# Microsoft Entra application authentication methods API overview 
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Application authentication methods such as certificates and password secrets allow apps to acquire tokens to access data in Azure Active Directory (Azure AD). The policies allow IT admins to enforce best practices for how apps in their organizations use these application authentication methods. For example, an admin might configure a policy to block the use or limit the lifetime of password secrets, and use the creation date of the object to enforce the policy.
+Application authentication methods such as certificates and password secrets allow apps to acquire tokens to access data in Microsoft Entra ID. The policies allow IT admins to enforce best practices for how apps in their organizations use these application authentication methods. For example, an admin might configure a policy to block the use or limit the lifetime of password secrets, and use the creation date of the object to enforce the policy.
 
 These policies allow organizations to take advantage of the new app security hardening features. By enforcing restrictions that are based on the application or service principal created date, an organization can review their current app security posture, inventory apps, and enforce controls per their resourcing schedules and needs. This approach using the created date allows the organization to enforce the policy for new applications and also apply it to existing applications.
 
@@ -29,7 +29,7 @@ A tenant default policy is a single object that always exists and is disabled by
 - **applicationRestrictions** allows targeting applications owned by the tenant (application objects).
 - **servicePrincipalRestrictions** allows targeting provisioned from another tenant (service principal objects.
 
-These properties allow the organization to either lock down apps that originate within a tenant or raise the quality bar for apps that are provisioned from outside the tenant boundary.
+These properties enable an organization to lock down credential usage in apps that originate from their tenant and provide a mechanism to control credential addition in externally provisioned applications to protect them from credential abuse. The application owner of a multi-tenant app could still use any type of credentials in their application object, but the policy only protects the service principal from credential abuse. 
 
 ## App management policy for applications and service principals
 
@@ -51,12 +51,13 @@ The application authentication methods policy API offers the following restricti
 | customPasswordAddition | Restrict a custom password secret on application or service principal. | Restrict all new custom (non-Azure AD generated) password secrets on applications created after 01/01/2015. |
 | symmetricKeyAddition   | Restrict symmetric keys on applications.                               | Block new symmetric keys on applications created on or after 01/01/2019.                                    |
 | symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.          |
-| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key secrets to a maximum of 30 days for applications created after 01/01/2019.  |
+| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key credentials to a maximum of 30 days for applications created after 01/01/2019.  |
+| trustedCertificateAuthority  | Enforce the list of trusted certificate authorities.      | Block all new asymmetric key credentials if the issuer is not listed in the trusted certificate authority list.   |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
 >
-> Applying the **customPasswordAddition** restriction will block any legacy PowerShell modules that add a client-generated password secret to applications or service principals. This restriction does not block Azure AD-generated application or service principal password secrets.
+> Applying the **customPasswordAddition** restriction will block any legacy PowerShell modules that add a client-generated password secret to applications or service principals. This restriction does not block Microsoft Entra ID-generated application or service principal password secrets.
 
 ### Single vs multi-tenant apps
 
@@ -75,6 +76,11 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 | Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                            |
 | Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                         |
 | Applies all restrictions configured to all apps or service principals.             | Applies only the restrictions configured in the resource policy to the specified app or service principal, and doesn't inherit from default policy. |
+
+## Requirements
+
+- Management of application authentication method policies can be performed by a global administrator, application administrator, or cloud application administrator.
+- All app policy management operations require a [Microsoft Entra Workload ID Premium license](/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
 
 ## Next steps
 

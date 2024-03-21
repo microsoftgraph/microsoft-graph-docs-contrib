@@ -2,8 +2,9 @@
 title: "conditionalAccessRoot resource type"
 description: "The conditionalAccessRoot resource is the entry point for the Conditional Access (CA) object model. It doesn't contain any usable properties."
 ms.localizationpriority: medium
-author: "bakerCaleb"
-ms.prod: "identity-and-sign-in"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 The **conditionalAccessRoot** resource is the entry point for the Conditional Access (CA) object model. It doesn't contain any usable properties.
 
-For more information on Conditional Access in Azure Active Directory, see [What is Conditional Access](/azure/active-directory/conditional-access/overview)?
+For more information on Conditional Access in Microsoft Entra ID, see [What is Conditional Access](/azure/active-directory/conditional-access/overview)?
 
 ## Methods
 
@@ -30,10 +31,11 @@ None.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |authenticationContextClassReferences|[authenticationContextClassReference](authenticationcontextclassreference.md) collection|Read-only. Nullable. Returns a collection of the specified authentication context class references.|
+|authenticationStrength|[authenticationStrengthRoot](authenticationstrengthroot.md)|Defines the authentication strength policies, valid authentication method combinations, and authentication method mode details that can be required by a conditional access policy.|
 |namedLocations|[namedLocation](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
 |policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access policies.|
 |templates|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access templates.|
-|authenticationStrengths|[authenticationStrengthRoot](authenticationstrengthroot.md)|Defines the authentication strength policies, valid authentication method combinations, and authentication method mode details that can be required by a conditional access policy .|
+|authenticationStrengths (deprecated)|[authenticationStrengthRoot](authenticationstrengthroot.md)|**DEPRECATED**. See the **authenticationStrength** relationship instead.|
 
 ## JSON representation
 

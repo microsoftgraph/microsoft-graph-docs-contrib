@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: root resource type
 ms.localizationpriority: medium
 description: "The root facet indicates that an object is the top-most one in its hierarchy."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 

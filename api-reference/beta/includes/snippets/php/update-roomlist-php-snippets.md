@@ -6,45 +6,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Place();
-$requestBody->set@odatatype('microsoft.graph.roomList');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new RoomList();
+$requestBody->setOdataType('microsoft.graph.roomList');
 $requestBody->setDisplayName('Building 1');
-
 $requestBody->setPhone('555-555-0100');
-
 $address = new PhysicalAddress();
 $address->setStreet('4567 Main Street');
-
 $address->setCity('Buffalo');
-
 $address->setState('NY');
-
 $address->setPostalCode('98052');
-
 $address->setCountryOrRegion('USA');
-
-
 $requestBody->setAddress($address);
 $geoCoordinates = new OutlookGeoCoordinates();
-$GeoCoordinates->setAltitude(null);
-
+$geoCoordinates->setAltitude(null);
 $geoCoordinates->setLatitude(47);
-
 $geoCoordinates->setLongitude(-122);
-
-$GeoCoordinates->setAccuracy(null);
-
-$GeoCoordinates->setAltitudeAccuracy(null);
-
-
+$geoCoordinates->setAccuracy(null);
+$geoCoordinates->setAltitudeAccuracy(null);
 $requestBody->setGeoCoordinates($geoCoordinates);
 
-
-$requestResult = $graphServiceClient->placesById('place-id')->patch($requestBody);
-
+$result = $graphServiceClient->places()->byPlaceId('place-id')->patch($requestBody)->wait();
 
 ```

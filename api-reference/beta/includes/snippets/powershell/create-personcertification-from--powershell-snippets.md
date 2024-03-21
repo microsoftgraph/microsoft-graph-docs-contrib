@@ -4,17 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
-	CertificationId = "KB-1235466333663322"
-	Description = "Blackbelt in Marketing - Brand Management"
-	DisplayName = "Marketing Blackbelt - Brand Management"
-	ThumbnailUrl = "https://iame.io/dfhdfdfd334.jpg"
-	WebUrl = "https://www.iame.io/blackbelt"
+	certificationId = "KB-1235466333663322"
+	description = "Blackbelt in Marketing - Brand Management"
+	displayName = "Marketing Blackbelt - Brand Management"
+	thumbnailUrl = "https://iame.io/dfhdfdfd334.jpg"
+	webUrl = "https://www.iame.io/blackbelt"
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserProfileCertification -UserId $userId -BodyParameter $params
+New-MgBetaUserProfileCertification -UserId $userId -BodyParameter $params
 
 ```

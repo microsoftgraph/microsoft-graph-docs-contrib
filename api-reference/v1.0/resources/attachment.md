@@ -2,8 +2,8 @@
 title: "attachment resource type"
 description: "You can add related content to an event,"
 ms.localizationpriority: high
-author: "abheek-das"
-ms.prod: "outlook"
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -22,9 +22,9 @@ Events in group calendars do not support attachments.
 * An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource)
 
->**Note**: If you're attaching a file to a group post, or attaching an item to an event, message, or group post, limit the size of the attachment to 3 MB.  
+>**Note**: If you're attaching a file to a group post, or attaching an item to an event, message, or group post, limit the size of the attachment to 3 MB.
 >
-> If you're attaching a file under 3 MB, you can [add the file attachment to a user event](../api/event-post-attachments.md), [to a message](../api/message-post-attachments.md), or [to a group post](../api/post-post-attachments.md). 
+> If you're attaching a file under 3 MB, you can [add the file attachment to a user event](../api/event-post-attachments.md), [to a message](../api/message-post-attachments.md), or [to a group post](../api/post-post-attachments.md).
 >
 > If you're attaching a file between 3 MB and 150 MB to an event or message, you can [create an upload session](../api/attachment-createuploadsession.md) and iteratively upload ranges of the file to attach it. See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
 

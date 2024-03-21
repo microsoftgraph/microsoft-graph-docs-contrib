@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TokenLifetimePolicy tokenLifetimePolicy = new TokenLifetimePolicy();
-tokenLifetimePolicy.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.applications("{id}").tokenLifetimePolicies()
-	.buildRequest()
-	.post(tokenLifetimePolicy);
+com.microsoft.graph.beta.models.ReferenceCreate referenceCreate = new com.microsoft.graph.beta.models.ReferenceCreate();
+referenceCreate.setOdataId("https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4");
+graphClient.applications().byApplicationId("{application-id}").tokenLifetimePolicies().ref().post(referenceCreate);
+
 
 ```

@@ -4,25 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewUnenrollAssetsPostRequestBody()
+
+requestBody := graphadmin.NewUnenrollAssetsPostRequestBody()
 updateCategory := graphmodels.STRING_UPDATECATEGORY 
 requestBody.SetUpdateCategory(&updateCategory) 
 
 
-updatableAsset := graphmodels.NewUpdatableAsset()
+updatableAsset := graphmodelswindowsupdates.NewAzureADDevice()
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
-assets := []graphmodels.Objectable {
+assets := []graphmodelswindowsupdates.UpdatableAssetable {
 	updatableAsset,
-
 }
 requestBody.SetAssets(assets)
 
-graphClient.Admin().Windows().Updates().UpdatableAssets().WindowsUpdatesUnenrollAssets().Post(context.Background(), requestBody, nil)
+graphClient.Admin().Windows().Updates().UpdatableAssets().MicrosoftGraphWindowsUpdatesUnenrollAssets().Post(context.Background(), requestBody, nil)
 
 
 ```

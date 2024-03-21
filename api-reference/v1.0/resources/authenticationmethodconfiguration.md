@@ -1,10 +1,11 @@
 ---
 title: "authenticationMethodConfigurations"
 description: "authenticationMethodConfigurations object."
-author: "mmcla"
+author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
 ---
 
 # authenticationMethodConfiguration resource type
@@ -16,10 +17,16 @@ The following authentication methods are derived from the **authenticationMethod
 + [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
 + [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
 + [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
++ [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
++ [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [softwareOathAuthenticationMethodConfiguration](softwareoathauthenticationmethodconfiguration.md)
++ [temporaryAccessPassAuthenticationMethodConfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)
++ [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from a policy.|
 |id|String|The policy name.|
 |state|authenticationMethodState|The state of the policy. Possible values are: `enabled`, `disabled`.|
 
@@ -27,7 +34,7 @@ The following authentication methods are derived from the **authenticationMethod
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -39,6 +46,11 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.authenticationMethodConfiguration",
   "id": "String (identifier)",
-  "state": "String"
+  "state": "String",
+  "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ]
 }
 ```

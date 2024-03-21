@@ -3,7 +3,7 @@ title: "Update enterpriseCodeSigningCertificate"
 description: "Update the properties of a enterpriseCodeSigningCertificate object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,8 +65,10 @@ If successful, this method returns a `200 OK` response code and an updated [ente
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_update_update_enterprisecodesigningcertificate" }-->
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}
 Content-type: application/json
 Content-length: 390
 
@@ -85,6 +87,8 @@ Content-length: 390
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.enterpriseCodeSigningCertificate" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

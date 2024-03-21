@@ -1,0 +1,13 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```bash
+
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc-beta chats tabs patch --chat-id {chat-id} --teams-tab-id {teamsTab-id} --body '{\
+  "displayName": "My Contoso Tab - updated again"\
+}\
+'
+
+```

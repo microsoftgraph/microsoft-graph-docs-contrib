@@ -3,7 +3,7 @@ title: "User selection and filtering capabilities in Microsoft Graph Data Connec
 description: "Learn how to use Microsoft Graph Data Connect to select users that you want to extract data for and include filters to limit the data returned."
 author: "rimisra2"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ---
 
 # User selection and filtering capabilities in Microsoft Graph Data Connect
@@ -16,7 +16,7 @@ You can run pipelines on a set of users. The following are the options for user 
 
 - All users within the organization
 - Up to 10 groups of users within the organization
-- A set of users based on a predicate consisting of Azure Active Directory user properties
+- A set of users based on a predicate consisting of Microsoft Entra user properties
 
 Specify your user selection in the SourceDataSet of the Azure Synapse or Azure Data Factory copy activity. To run on a list of groups, add a new field **allowedGroups** under **typeProperties** and set this to a list of up to 10 groups' **Object Ids** separated by commas. If no groups are specified by default, data is extracted for the entire organization.
 
@@ -39,7 +39,7 @@ The following datasets require a filter to be provided on one of the correspondi
 > [!NOTE]
 > Pipelines requesting BasicDataSet_v0.CalendarView_v0 also require a DateTime filter, but no **dateFilterColumn** is specified in the SourceDataSet. However, a **startTime** and **endTime** are required, and only events that begin after the **startTime** and finish before the **endTime** are provided.
 
-## See also
+## Related content
 
 - [Integrate with PAM](data-connect-pam.md)
 - [Data Connect frequently asked questions](data-connect-faq.md)

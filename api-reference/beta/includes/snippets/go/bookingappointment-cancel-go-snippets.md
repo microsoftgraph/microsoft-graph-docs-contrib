@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsolutions "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewCancelPostRequestBody()
+
+requestBody := graphsolutions.NewCancelPostRequestBody()
 cancellationMessage := "Your appointment has been successfully cancelled. Please call us again."
 requestBody.SetCancellationMessage(&cancellationMessage) 
 
-graphClient.BookingBusinessesById("bookingBusiness-id").AppointmentsById("bookingAppointment-id").Cancel().Post(context.Background(), requestBody, nil)
+graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Appointments().ByBookingAppointmentId("bookingAppointment-id").Cancel().Post(context.Background(), requestBody, nil)
 
 
 ```

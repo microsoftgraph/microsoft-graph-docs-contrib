@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DriveItemRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DriveItemRequestBuilderGetQueryParameters();
+$queryParameters = DriveItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["children"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->sharesById('sharedDriveItem-id')->driveItem()->get($requestConfiguration);
-
+$result = $graphServiceClient->shares()->bySharedDriveItemId('sharedDriveItem-id')->driveItem()->get($requestConfiguration)->wait();
 
 ```

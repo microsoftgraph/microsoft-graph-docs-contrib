@@ -3,7 +3,7 @@ title: "term resource type"
 description: "Defines a term entity in a term store."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

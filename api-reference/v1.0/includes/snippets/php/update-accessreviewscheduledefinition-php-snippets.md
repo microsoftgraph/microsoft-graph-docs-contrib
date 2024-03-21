@@ -6,80 +6,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Definition();
-$additionalData = [
-'id' => '60860cdd-fb4d-4054-91ba-f75e04444aa6', 
-'displayName' => 'Test world UPDATED NAME!', 
-'descriptionForAdmins' => 'Test world', 
-'descriptionForReviewers' => 'Test world', 
-'scope' => $requestBody = new Scope();
-$		requestBody->set@odatatype('#microsoft.graph.accessReviewQueryScope');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$		requestBody->setQuery('/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers');
-
-$		requestBody->setQueryType('MicrosoftGraph');
-
-
+$requestBody = new AccessReviewScheduleDefinition();
+$requestBody->setId('60860cdd-fb4d-4054-91ba-f75e04444aa6');
+$requestBody->setDisplayName('Test world UPDATED NAME!');
+$requestBody->setDescriptionForAdmins('Test world');
+$requestBody->setDescriptionForReviewers('Test world');
+$scope = new AccessReviewQueryScope();
+$scope->setOdataType('#microsoft.graph.accessReviewQueryScope');
+$scope->setQuery('/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers');
+$scope->setQueryType('MicrosoftGraph');
 $requestBody->setScope($scope);
-
-'instanceEnumerationScope' => $requestBody = new InstanceEnumerationScope();
-$		requestBody->set@odatatype('#microsoft.graph.accessReviewQueryScope');
-
-$		requestBody->setQuery('/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f');
-
-$		requestBody->setQueryType('MicrosoftGraph');
-
-
+$instanceEnumerationScope = new AccessReviewQueryScope();
+$instanceEnumerationScope->setOdataType('#microsoft.graph.accessReviewQueryScope');
+$instanceEnumerationScope->setQuery('/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f');
+$instanceEnumerationScope->setQueryType('MicrosoftGraph');
 $requestBody->setInstanceEnumerationScope($instanceEnumerationScope);
-
-'reviewers' => [],
-'settings' => $requestBody = new Settings();
-	$requestBody->setMailNotificationsEnabled(true);
-
-	$requestBody->setReminderNotificationsEnabled(true);
-
-	$requestBody->setJustificationRequiredOnApproval(true);
-
-	$requestBody->setDefaultDecisionEnabled(false);
-
-$	requestBody->setDefaultDecision('None');
-
-	$requestBody->setInstanceDurationInDays(3);
-
-	$requestBody->setAutoApplyDecisionsEnabled(false);
-
-	$requestBody->setRecommendationsEnabled(true);
-
-$recurrence = new Recurrence();
-$recurrencePattern = new Pattern();
-$	recurrencePattern->setType('weekly');
-
-	$recurrencePattern->setInterval(1);
-
-
-$recurrence->setPattern($recurrencePattern);
-$recurrenceRange = new Range();
-$	recurrenceRange->setType('noEnd');
-
-$	recurrenceRange->setStartDate('2020-09-15');
-
-
-$recurrence->setRange($recurrenceRange);
-
-$requestBody->setRecurrence($recurrence);
-
+$requestBody->setReviewers([	]);
+$settings = new AccessReviewScheduleSettings();
+$settings->setMailNotificationsEnabled(true);
+$settings->setReminderNotificationsEnabled(true);
+$settings->setJustificationRequiredOnApproval(true);
+$settings->setDefaultDecisionEnabled(false);
+$settings->setDefaultDecision('None');
+$settings->setInstanceDurationInDays(3);
+$settings->setAutoApplyDecisionsEnabled(false);
+$settings->setRecommendationsEnabled(true);
+$settingsRecurrence = new PatternedRecurrence();
+$settingsRecurrencePattern = new RecurrencePattern();
+$settingsRecurrencePattern->setType(new RecurrencePatternType('weekly'));
+$settingsRecurrencePattern->setInterval(1);
+$settingsRecurrence->setPattern($settingsRecurrencePattern);
+$settingsRecurrenceRange = new RecurrenceRange();
+$settingsRecurrenceRange->setType(new RecurrenceRangeType('noEnd'));
+$settingsRecurrenceRange->setStartDate(new Date('2020-09-15'));
+$settingsRecurrence->setRange($settingsRecurrenceRange);
+$settings->setRecurrence($settingsRecurrence);
 $requestBody->setSettings($settings);
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->put($requestBody);
-
+$result = $graphServiceClient->identityGovernance()->accessReviews()->definitions()->byAccessReviewScheduleDefinitionId('accessReviewScheduleDefinition-id')->put($requestBody)->wait();
 
 ```

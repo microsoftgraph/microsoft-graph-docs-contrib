@@ -6,15 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ArchivePostRequestBody();
-$requestBody->setMessageIds(['MC172851', 'MC167983', ]);
+$requestBody->setMessageIds(['MC172851', 'MC167983', 	]);
 
-
-
-$requestResult = $graphServiceClient->admin()->serviceAnnouncement()->messages()->archive()->post($requestBody);
-
+$result = $graphServiceClient->admin()->serviceAnnouncement()->messages()->archive()->post($requestBody)->wait();
 
 ```

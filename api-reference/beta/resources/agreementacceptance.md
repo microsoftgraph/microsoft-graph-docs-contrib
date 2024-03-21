@@ -1,10 +1,10 @@
 ---
 title: "agreementAcceptance resource type"
-description: "Represents the current status of a user within scope of a company's customizable terms of use powered by Azure Active Directory (Azure AD)."
+description: "Represents the current status of a user within scope of a company's customizable terms of use powered by Microsoft Entra ID Governance."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
-author: raprakasMSFT
+ms.subservice: "entra-id-governance"
+author: AlexFilipin
 ---
 
 # agreementAcceptance resource type
@@ -13,17 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the current status of a user's response to a company's customizable terms of use agreement powered by Azure Active Directory (Azure AD).
+Represents the current status of a user's response to a company's customizable terms of use agreement powered by Microsoft Entra ID Governance.
 
-<!--
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementAcceptance](../api/agreementacceptance-get.md) | [agreementAcceptance](agreementacceptance.md) | Read properties and relationships of agreementAcceptance object. |
-| [Update](../api/agreementacceptance-update.md) | [agreementAcceptance](agreementacceptance.md) | Update an **agreementAcceptance** object. |
-| [Delete](../api/agreementacceptance-delete.md) | None | Delete an **agreementAcceptance** object. |
--->
+| [List agreementAcceptances for a user](../api/user-list-agreementacceptances.md) | [agreementAcceptance](agreementacceptance.md) | Retrieve a user's agreementAcceptance objects. |
+| [List acceptances](../api/agreement-list-acceptances.md) | [agreementAcceptance](agreementacceptance.md) | Retrieve acceptance for an agreement.  |
 
 ## Properties
 | Property     | Type        | Description |
@@ -90,5 +87,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

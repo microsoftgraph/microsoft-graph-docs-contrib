@@ -4,12 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.ReferenceUpdate
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ReferenceUpdate
 {
 	OdataId = "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Rubric.Ref.PutAsync(requestBody);
 
 

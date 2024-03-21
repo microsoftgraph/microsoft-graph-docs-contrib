@@ -1,9 +1,9 @@
 ---
 title: "Delete call"
 description: "Delete or hang up an active call."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 Delete or hang up an active call. For group calls, this will only delete your call leg and the underlying group call will still continue.
 
-## Permissions
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported.                         |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Calls.Initiate.All, Calls.AccessMedia.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "call_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/call-delete-permissions.md)]
 
 > **Note:** Permissions are checked when the call is created; no additional permission check is made when calling this API. Calls.AccessMedia.All is only necessary for calls that use app-hosted media.
 
@@ -36,13 +36,13 @@ DELETE /communications/calls/{id}
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
@@ -63,24 +63,32 @@ DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-call-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-call-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-call-1-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-call-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-call-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-call-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -164,7 +172,7 @@ Content-Type: application/json
 
 These are some of the common error codes received via notification when call is terminated.
 
-| Code | Sub-code | Termination reason                                                                                 |
+| Code | Subcode | Termination reason                                                                                 |
 | :--- | :------  | :------------------------------------------------------------------------------------------------  |
 | 200  | 4097     | Call ended by the other participant in the call.                                                   |
 | 200  | 4521     | Call ended by the other participant in peer-to-peer call.                                          |
@@ -177,7 +185,7 @@ These are some of the common error codes received via notification when call is 
 | 200  | 5012     | The conversation has ended as there are no participants in the incoming roster.                    |
 | 200  | 5013     | The conversation has ended as no one else has joined the group call.                               |
 | 200  | 5014     | The conversation has ended because we were unable to determine a potential host for the group call. |
-| 200  | 5020     | The conversation has ended as there are no non-hidden participants in the incoming roster.         |
+| 200  | 5020     | The conversation has ended as there are no nonhidden participants in the incoming roster.         |
 | 200  | 5030     | The conversation has ended as the breakout room duration has elapsed.                              |
 | 200  | 5300     | Participant was removed from the conversation by another participant.                              |
 | 200  | 5855     | Participant waiting in lobby was removed from the conversation after lobby inactivity timeout.     |
@@ -187,14 +195,14 @@ These are some of the common error codes received via notification when call is 
 | 200  | 18503    | The other participant in the peer-to-peer call left the conversation.                              |
 | 200  | 540000/560000   | Call ended by the PSTN User.                                                                |
 | 408  | 8537     | Keep Alive timeout, cleaned up inactive call.                                                      |
-| 408  | 1106     | An acknowledgement was not received for the call acceptance in the allotted time.                  |
+| 408  | 1106     | An acknowledgment wasn't received for the call acceptance in the allotted time.                  |
 | 408  | 10057    | Call timed out due to no signaling from callee endpoints.                                          |
 | 410  | 301005   | Media connectivity failure.                                                                        |
 | 480  | 10037    | No callee endpoints were found.                                                                    |
-| 480  | 10076    | Callee could not be reached.                                                                       |
+| 480  | 10076    | Callee couldn't be reached.                                                                       |
 | 480  | 10134    | Call rejected due to inability to route the call.                                                  |
 | 480  | 10199    | Call rejected as private calling is disabled for the user.                                         |
-| 500  | 1005     | Server encountered connectivity error with Bot's media. Please check media connectivity between Bot and Microsoft. |
+| 500  | 1005     | Server encountered connectivity error with Bot's media. Check media connectivity between Bot and Microsoft. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

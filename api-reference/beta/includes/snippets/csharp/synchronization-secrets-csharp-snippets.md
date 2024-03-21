@@ -4,40 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Secrets.SynchronizationSecretKeyStringValuePair
+// Dependencies
+using Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Secrets;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SecretsPutRequestBody
 {
-	AdditionalData = new Dictionary<string, object>
+	Value = new List<SynchronizationSecretKeyStringValuePair>
 	{
+		new SynchronizationSecretKeyStringValuePair
 		{
-			"value" , new List<>
-			{
-				new 
-				{
-					Key = "BaseAddress",
-					Value = "user@domain.com",
-				},
-				new 
-				{
-					Key = "SecretToken",
-					Value = "password-value",
-				},
-				new 
-				{
-					Key = "SyncNotificationSettings",
-					Value = "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}",
-				},
-				new 
-				{
-					Key = "SyncAll",
-					Value = "false",
-				},
-			}
+			Key = SynchronizationSecret.BaseAddress,
+			Value = "user@domain.com",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.SecretToken,
+			Value = "password-value",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.SyncNotificationSettings,
+			Value = "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}",
+		},
+		new SynchronizationSecretKeyStringValuePair
+		{
+			Key = SynchronizationSecret.SyncAll,
+			Value = "false",
 		},
 	},
 };
-var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Secrets.PutAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Secrets.PutAsSecretsPutResponseAsync(requestBody);
 
 
 ```

@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItem resource type"
 description: "Represents a decision on a user's access on an accessReviewInstance."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents an Azure AD [access review](accessreviewsv2-overview.md) decision on an instance of a review. This decision represents the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md).  This resource is an open type that allows other properties to be passed in.
+Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) decision on an instance of a review. This decision represents the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md).  This resource is an open type that allows other properties to be passed in.
 
 ## Methods
 

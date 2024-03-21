@@ -1,10 +1,10 @@
 ---
 title: "chatMessage resource type"
-description: "Represents an individual chat message in a channel or chat entity. The chat message can be a root chat message or part of a thread that is defined by the **replyToId** property in the chat message."
+description: "Represents an individual chat message in a channel or chat entity."
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # chatMessage resource type
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents an individual chat message within a [channel](channel.md) or [chat](chat.md). The message can be a root message or part of a thread that is defined by the **replyToId** property in the message.
 
-> **Note**: This resource supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatMessage).
+> **Note**: This resource supports subscribing to changes (create, update, and delete) using [change notifications](../resources/change-notifications-api-overview.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatMessage).
 
 ## Methods
 
@@ -90,8 +90,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
-|replies|[chatMessage](chatmessage.md)| Replies for a specified message. Supports `$expand` for channel messages. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams - for example, images or code snippets. |
+|replies|[chatMessage](chatmessage.md) collection| Replies for a specified message. Supports `$expand` for channel messages. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md) collection| Content in a message hosted by Microsoft Teams - for example, images or code snippets. |
 
 ## JSON representation
 
@@ -118,36 +118,30 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
-  "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
-  "etag": "string",
-  "messageType": "string",
-  "createdDateTime": "string (timestamp)",
-  "lastModifiedDateTime": "string (timestamp)",
-  "lastEditedDateTime": "string (timestamp)",
-  "deletedDateTime": "string (timestamp)",
-  "subject": "string",
-  "body": {"@odata.type": "microsoft.graph.itemBody"},
-  "summary": "string",
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
-  "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
-  "onBehalfOf": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
-  "importance": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
-  "messageHistory": [
-    {
-      "@odata.type": "microsoft.graph.chatMessageHistoryItem"
-    }
-  ],
-  "locale": "string",
-  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
-  "chatId": "string",
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "webUrl": "string",
-  "eventDetail": {
-    "@odata.type": "microsoft.graph.eventMessageDetail"
-  }
+  "chatId": "String",
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
+  "etag": "String",
+  "eventDetail": {"@odata.type": "microsoft.graph.eventMessageDetail"},
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
+  "id": "String (identifier)",
+  "importance": "String",
+  "lastEditedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "locale": "String",
+  "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
+  "messageHistory": [{"@odata.type": "microsoft.graph.chatMessageHistoryItem"}],
+  "messageType": "String",
+  "onBehalfOf": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
+  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
+  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
+  "replyToId": "String (identifier)",
+  "subject": "String",
+  "summary": "String",
+  "webUrl": "String"
 }
 ```
 

@@ -1,20 +1,21 @@
 ---
-title: "Azure AD authentication strengths API overview"
+title: "Microsoft Entra authentication strengths API overview"
 description: "Authentication strengths are sets of authentication method combinations that determine which methods your users can use to authenticate to access a resource."
 ms.localizationpriority: medium
-author: "mmcla"
-ms.prod: "identity-and-sign-in"
+author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 12/10/2022
+ms.date: 09/12/2023
 ---
 
-# Azure AD authentication strengths API overview
+# Microsoft Entra authentication strengths API overview
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Authentication strengths allow administrators to require specific combinations of Azure AD [authentication methods](authenticationmethods-overview.md) to access a resource. Each authentication strength comprises one or more combinations of authentication methods, where each combination is one or more authentication methods. When the strength is applied to a scenario as a [grant control](conditionalaccessgrantcontrols.md) in [Conditional Access](conditionalaccesspolicy.md), a user in scope of the policy is required to satisfy one of those allowed combinations at sign-in before they can access the resource. As part of Conditional Access, authentication strengths can also be paired with other Conditional Access controls such as user risk and location.
+Authentication strengths allow administrators to require specific combinations of Microsoft Entra [authentication methods](authenticationmethods-overview.md) to access a resource. Each authentication strength comprises one or more combinations of authentication methods, where each combination is one or more authentication methods. When the strength is applied to a scenario as a [grant control](conditionalaccessgrantcontrols.md) in [Conditional Access](conditionalaccesspolicy.md), a user in scope of the policy is required to satisfy one of those allowed combinations at sign-in before they can access the resource. As part of Conditional Access, authentication strengths can also be paired with other Conditional Access controls such as user risk and location.
 
 For example, an administrator can require users to authenticate using phishing-resistant authentication methods before they can access a sensitive resource. The administrator can also allow users to authenticate using less-secure multifactor authentication (MFA) combinations, such as password and SMS, for them to access non-sensitive applications.
 
@@ -28,11 +29,11 @@ Authentication strength policies define the authentication strengths that are av
 + Authentication method combinations that are part of the policy.
 + Whether the policy, when the authentication method requirements are satisfied, can be used to satisfy an MFA claim in the access token.
 
-Azure AD supports both built-in and custom authentication strength policies. Microsoft has supplied the following three built-in policies:
+Microsoft Entra ID supports both built-in and custom authentication strength policies. Microsoft has supplied the following three built-in policies:
 
 * Multifactor authentication
 * Passwordless multifactor authentication
-* Phishing-resistant multifactor authentication
+* Phishing resistant multifactor authentication
 
 You can only read built-in policies, but you can create up to 15 custom policies to suit your requirements.
 
@@ -46,7 +47,7 @@ Core to a policy are the authentication method combinations. A combination consi
 | `password,microsoftAuthenticatorPush` | The user must sign in using *both* password and Microsoft Authenticator push approval to satisfy the authentication strength requirement. |
 | `password,softwareOath` | The user must sign in using *both* password and software OATH token to satisfy the authentication strength requirement. |
 
-Azure AD provides the predefined, read-only combinations using the following principles:
+Microsoft Entra ID provides the predefined, read-only combinations using the following principles:
 
 * Single factor authentication methods that can be used as first factors such as password and SMS.
 * Combinations of password and a second factor that make a valid multifactor authentication combination ("something you have" and "something you know").
@@ -72,11 +73,11 @@ An authentication strength policy has zero or more combination configurations.
 
 ## Apply authentication strength policies in Conditional Access
 
-After defining the authentication strength policy, you apply and enforce it for the protected resource using Azure AD [conditional access policies](../resources/conditionalaccesspolicy.md). 
+After defining the authentication strength policy, you apply and enforce it for the protected resource using Microsoft Entra [conditional access policies](../resources/conditionalaccesspolicy.md).
 
 In the Conditional Access [grant controls](conditionalaccessgrantcontrols.md), configure the **authenticationStrength** relationship by assigning the [authenticationStrengthPolicy](authenticationstrengthpolicy.md) object that should be associated with the conditional access policy. When a conditional access policy applies to a sign-in and that policy has an authentication strength grant control, the user will be required to use one of the allowed authentication method combinations to sign in. Authentication strength policies can also be enforced for guest users through both conditional access policies and [cross-tenant access inbound trust settings](/graph/api/resources/crosstenantaccesspolicy-overview).
 
-The **authenticationStrength** object corresponds to the 'Require authentication strength' control of the Conditional Access policy's UX on the Azure portal.
+The **authenticationStrength** object corresponds to the 'Require authentication strength' control of the Conditional Access policy's UX on the Microsoft Entra admin center.
 
 You can't configure authentication strengths and the multifactor authentication grant control on the same conditional access policy.
 

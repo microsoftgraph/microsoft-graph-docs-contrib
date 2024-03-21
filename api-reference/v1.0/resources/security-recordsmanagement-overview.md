@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph records management API"
-description: "The Microsoft Purview records management APIs helps organizations manage retention and deletion of data to meet their legal obligations and compliance regulations, and increases efficiency by enabling the regular disposition of items that no longer have to be retained."
+description: "The Microsoft Purview Records Management APIs help organizations manage retention and deletion of data to meet their legal obligations and compliance regulations. The APIs increase efficiency by enabling the regular disposition of items that no longer have to be retained."
 ms.localizationpriority: medium
 author: sseth-msft
 ms.prod: "compliance"
@@ -11,12 +11,12 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Purview records management APIs help organizations manage retention and deletion of data to meet their legal obligations and compliance regulations, and increases efficiency by enabling the regular disposition of items that no longer have to be retained.
+The Microsoft Purview Records Management APIs help organizations manage retention and deletion of data to meet their legal obligations and compliance regulations. The APIs increase efficiency by enabling the regular disposition of items that no longer have to be retained.
 
-The records mangement solution is a part of the Microsoft Purview compliance center.
+The records management solution is a part of the Microsoft Purview compliance portal.
 
 ## Trigger events for an existing label
-When an employee leaves a company, information is updated in the HR management system. From the leave date, confidential documents need to be retained for a period for 7 years. These documents have the label `Employee_departure` applied.
+When an employee leaves a company, information is updated in the HR management system. From the leave date, confidential documents need to be retained for a period for seven years. These documents have the label `Employee_departure` applied.
 
 Developers and compliance administrators can use records management APIs to read the label `Employee_departure` and look up the associated event type `Event-employee_departure`.
 

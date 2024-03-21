@@ -11,10 +11,16 @@ const options = {
 const client = Client.init(options);
 
 const validateCredentials = {
-    credentials: [ 
-        { key: 'UserName', value: 'user@domain.com' },
-        { key: 'Password', value: 'password-value' }
-    ]
+  credentials: [
+    {
+      key: 'UserName',
+      value: 'user@domain.com'
+    },
+    {
+      key: 'Password',
+      value: 'password-value'
+    }
+  ]
 };
 
 await client.api('/servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials')

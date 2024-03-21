@@ -4,7 +4,7 @@ description: "Describes an operator that can be used in a filter."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # filterOperatorSchema resource type
@@ -43,7 +43,6 @@ The following is a JSON representation of the resource.
   "name": "String",
   "supportedAttributeTypes": ["String"]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

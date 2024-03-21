@@ -3,7 +3,7 @@ title: "certification resource type"
 description: "Represents the certification details of an application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "arpitha-dhanapathi"
 ---
 
@@ -21,13 +21,13 @@ The certification property of an application is read-only, and can't be manually
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |certificationDetailsUrl|String|URL that shows certification details for the application.|
-|certificationExpirationDateTime|DateTimeOffset|The timestamp when the current certification for the application will expire.|
+|certificationExpirationDateTime|DateTimeOffset|The timestamp when the current certification for the application expires.|
 |isCertifiedByMicrosoft|Boolean|Indicates whether the application is certified by Microsoft.|
 |isPublisherAttested|Boolean|Indicates whether the application has been self-attested by the application developer or the publisher.|
 |lastCertificationDateTime|DateTimeOffset|The timestamp when the certification for the application was most recently added or updated.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

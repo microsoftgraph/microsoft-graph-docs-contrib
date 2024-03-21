@@ -1,9 +1,9 @@
 ---
 title: "broadcastMeetingCaptionSettings resource type"
 description: "Represents caption settings of a Microsoft Teams live event."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -61,8 +61,8 @@ The following table shows the supported language codes for translation languages
 | Bulgarian (Bulgaria)                     | bg      |
 | Catalan                                  | ca      |
 | Chinese (Simplified, PRC)                | zh-Hans |
-| Chinese (Tranditional, Hong Kong S.A.R.) | yue     |
-| Chinese (Tranditional)                   | zh-Hant |
+| Chinese (Traditional, Hong Kong S.A.R.) | yue     |
+| Chinese (Traditional)                   | zh-Hant |
 | Creole (Haiti)                           | ht      |
 | Croatian (Croatia)                       | hr      |
 | Czech (Czech Republic)                   | cs      |
@@ -116,7 +116,7 @@ The following table shows the supported language codes for translation languages
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.broadcastMeetingCaptionSettings"

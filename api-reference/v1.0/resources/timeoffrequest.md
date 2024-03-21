@@ -3,7 +3,7 @@ title: "timeOffRequest resource type"
 description: "Represents a type of shift request to take timeOff."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -44,6 +44,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.timeOffRequest"
 }-->
 

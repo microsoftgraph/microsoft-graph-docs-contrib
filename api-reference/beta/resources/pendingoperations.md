@@ -2,9 +2,9 @@
 title: "pendingOperations"
 description: "The pendingOperations resource indicates that one or more operations that might affect the state of the driveItem are pending completion."
 ms.localizationpriority: medium
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ms.date: 08/06/2019
-ms.prod: files
+ms.subservice: onedrive
 doc_type: "resourcePageType"
 ---
 

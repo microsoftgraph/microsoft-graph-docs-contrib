@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsBatteryHealthDeviceAppImpact resource type"
 description: "The user experience analytics battery health device app impact entity contains battery usage related information at an app level for a given device."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ The user experience analytics battery health device app impact entity contains b
 |appDisplayName|String|User friendly display name for the app. Eg: Outlook|
 |appPublisher|String|App publisher. Eg: Microsoft Corporation|
 |isForegroundApp|Boolean|true if the user had active interaction with the app.|
-|batteryUsagePercentage|Double|The percent of total battery power used by this application when the device was not plugged into AC power, over 14 days. Unit in percentage. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|batteryUsagePercentage|Double|The percent of total battery power used by this application when the device was not plugged into AC power, over 14 days. Unit in percentage. Valid values 0 to 1.79769313486232E+308|
 
 ## Relationships
 None

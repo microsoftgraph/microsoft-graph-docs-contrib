@@ -3,7 +3,7 @@ title: "emailThreatSubmission resource type"
 description: "Reports suspected spam, malware or phishing emails to Microsoft Defender for Office 365."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type to report suspected spam, malware or phishing emails to Microsoft Defender for Office 365. You can also submit false positive cases, that should not have been blocked by Microsoft Defender for Office 365, for example, emails incorrectly categorized as junk or spam.
+An abstract type to report suspected spam, malware or phishing emails to Microsoft Defender for Office 365. You can also submit false positive cases, that shouldn't have been blocked by Microsoft Defender for Office 365, for example, emails incorrectly categorized as junk or spam.
 
 Inherits from [threatSubmission](../resources/security-threatsubmission.md). Base type of [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) and [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md).
 
@@ -28,21 +28,21 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md). Bas
 ## Properties
 | Property     | Type    | Description    |
 |:-----------------------------|:-----------------------------|:-------------------------------------------------------------------------------------------------------|
-| attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md) | If the email is phishing simulation, this field will not be null.|
-| internetMessageId            | String                       | Specifies the internet message id of the email being submitted. This information is present in the email header. |
+| attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md) | If the email is phishing simulation, this field won't be null.|
+| internetMessageId            | String                       | Specifies the internet message ID of the email being submitted. This information is present in the email header. |
 | originalCategory             | submissionCategory           | The original category of the submission. The possible values are: `notJunk`, `spam`, `phishing`, `malware` and `unkownFutureValue`. |
 | receivedDateTime             | DateTimeOffset               | Specifies the date and time stamp when the email was received.  | 
 | recipientEmailAddress        | String                       | Specifies the email address (in smtp format) of the recipient who received the email. |
 | sender                       | String                       | Specifies the email address of the sender. | 
 | senderIP                     | String                       | Specifies the IP address of the sender. |
-| subject                      | String                       | Specifies the subject of the email . |
-| tenantAllowOrBlockListAction | [security.tenantAllowOrBlockListAction](../resources/security-tenantalloworblocklistaction.md) | It is used to automatically add allows for the components such as URL, file, sender; which are deemed bad by Microsoft so that similar messages in the future can be allowed. |
+| subject                      | String                       | Specifies the subject of the email. |
+| tenantAllowOrBlockListAction | [security.tenantAllowOrBlockListAction](../resources/security-tenantalloworblocklistaction.md) | It's used to automatically add allows for the components such as URL, file, sender; which are deemed bad by Microsoft so that similar messages in the future can be allowed. |
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

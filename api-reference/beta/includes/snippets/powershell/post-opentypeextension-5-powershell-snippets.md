@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
 	Topic = "Does anyone have a second?"
@@ -19,10 +19,10 @@ $params = @{
 					Extensions = @(
 						@{
 							"@odata.type" = "microsoft.graph.openTypeExtension"
-							ExtensionName = "Com.Contoso.Benefits"
-							CompanyName = "Contoso"
-							ExpirationDate = "2016-08-03T11:00:00.000Z"
-							TopPicks = @(
+							extensionName = "Com.Contoso.Benefits"
+							companyName = "Contoso"
+							expirationDate = "2016-08-03T11:00:00.000Z"
+							topPicks = @(
 								"Employees only"
 								"Add spouse or guest"
 								"Add family"
@@ -35,6 +35,6 @@ $params = @{
 	)
 }
 
-New-MgGroupConversation -GroupId $groupId -BodyParameter $params
+New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
 
 ```

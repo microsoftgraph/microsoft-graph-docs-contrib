@@ -3,7 +3,7 @@ title: "educationSubmissionResource resource type"
 description: "A wrapper around a resource for use on a submission."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A wrapper around a resource for use on a submission. The wrapper adds a pointer to the assignment resource if this was copied from the assignment.  
+A wrapper around a resource for use on a submission. The wrapper adds a pointer to the assignment resource if the resource was copied from the assignment.  
 
 
 ## Methods
@@ -27,7 +27,7 @@ A wrapper around a resource for use on a submission. The wrapper adds a pointer 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String|Pointer to the assignment from which this resource was copied. If this is null, the student uploaded the resource.|
+|assignmentResourceUrl|String|Pointer to the assignment from which the resource was copied. If the value is null, the student uploaded the resource.|
 |id|String| Read-only.|
 |resource|[educationResource](educationresource.md)|Resource object.|
 
@@ -37,7 +37,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

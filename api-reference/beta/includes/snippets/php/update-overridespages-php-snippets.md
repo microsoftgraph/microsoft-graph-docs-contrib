@@ -6,34 +6,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new $valuePutRequestBody();
 $additionalData = [
-'LocalizedStrings' => $localizedStrings1 = new ();
-$		localizedStrings1->setElementType('UxElement');
-
-		$localizedStrings1->setElementId(null);
-
-$		localizedStrings1->setStringId('alert_message');
-
-		$localizedStrings1->setOverride(true);
-
-$		localizedStrings1->setValue('Are you sure that you want to cancel your selection?');
-
-
-$localizedStringsArray []= $localizedStrings1;
-$requestBody->setLocalizedStrings($localizedStringsArray);
-
-
+	'LocalizedStrings' => [
+			[
+				'elementType' => 'UxElement',
+				'elementId' => null,
+				'stringId' => 'alert_message',
+				'override' => true,
+				'value' => 'Are you sure that you want to cancel your selection?',
+			],
+		],
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$graphServiceClient->identity()->b2cUserFlowsById('b2cIdentityUserFlow-id')->languagesById('userFlowLanguageConfiguration-id')->overridesPagesById('userFlowLanguagePage-id')->value()->put($requestBody);
-
+$graphServiceClient->identity()->b2cUserFlows()->byB2cIdentityUserFlowId('b2cIdentityUserFlow-id')->languages()->byUserFlowLanguageConfigurationId('userFlowLanguageConfiguration-id')->overridesPages()->byUserFlowLanguagePageId('userFlowLanguagePage-id')->content()->put($requestBody)->wait();
 
 ```

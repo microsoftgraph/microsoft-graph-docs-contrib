@@ -3,7 +3,7 @@ title: "searchEntity: query"
 description: "Runs the query specified in the request body. Search results are provided in the response"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 
@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 Runs the query specified in the request body. Search results are provided in the response.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All, Acronym.Read.All, Bookmark.Read.All,  ChannelMessage.Read.All, Chat.Read |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Files.Read.All, Sites.Read.All |
+<!-- { "blockType": "permissions", "name": "search_query" } -->
+[!INCLUDE [permissions-table](../includes/permissions/search-query-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +33,7 @@ POST /search/query
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -52,11 +51,17 @@ If successful, this method returns `HTTP 200 OK` response code and a [searchResp
 
 ## Examples
 
-### Request
+### Example 1: Basic call to perform a search request
 
-The following is an example of the request.
+The following example shows how to search for expected connector items.
 
-```HTTP
+#### Request
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "search_query_v1_e1"
+} -->
+```http
 POST https://graph.microsoft.com/v1.0/search/query
 Content-type: application/json
 
@@ -64,10 +69,121 @@ Content-type: application/json
   "requests": [
     {
       "entityTypes": [
-        "message"
+        "externalItem"
       ],
-      "query": {
-        "queryString": "contoso"
+      "contentSources": [
+        "/external/connections/connectionfriendlyname"
+      ],
+       "region": "US",
+       "query": {
+        "queryString": "contoso product"
+      },
+      "from": 0,
+      "size": 25,
+      "fields": [
+        "title",
+        "description"
+      ]
+    }
+  ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/search-query-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/search-query-v1-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/search-query-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/search-query-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/search-query-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/search-query-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/search-query-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/search-query-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.searchResponse"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "searchTerms": [
+        "searchTerms-value"
+      ],
+      "hitsContainers": [
+        {
+          "hits": [
+            {
+              "hitId": "1",
+              "rank": 1,
+              "summary": "_summary-value",
+              "resource": "The source field will contain the underlying graph entity part of the response"
+            }
+          ],
+          "total": 47,
+          "moreResultsAvailable": true
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Example 2: Basic call to use queryTemplate
+
+The following example shows how to use the queryable property **createdBy** to retrieve all files created by a user.
+
+#### Request
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "search_query_v1_e2"
+} -->
+```http
+POST https://graph.microsoft.com/v1.0/search/query
+Content-type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "listItem"
+      ],
+        "region": "US",
+        "query": {
+        "queryString": "contoso",
+        "queryTemplate":"{searchTerms} CreatedBy:Bob"
       },
       "from": 0,
       "size": 25
@@ -76,80 +192,82 @@ Content-type: application/json
 }
 ```
 
-### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/search-query-v1-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-The following is an example of the response.
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/search-query-v1-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> **Note:** The response object shown here might be shortened for readability.
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/search-query-v1-e2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/search-query-v1-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/search-query-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/search-query-v1-e2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/search-query-v1-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/search-query-v1-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.searchResponse",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.searchResponse"
 } -->
 
-```HTTP
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
-```
 
-```json
 {
     "value": [
         {
             "searchTerms": [
-                "searchTerms-value"
+                "contoso"
             ],
             "hitsContainers": [
                 {
                     "hits": [
                         {
-                            "hitId": "AAMkADdmODdhN2NjLTMwZWYtNDBiNy1iMDYxLWZhZTkyOGM4YmRhZABGAAAAAACsLZF5BeQoRLYm4UlvnOXZBwCav2PZy/7/R52ssyzmS9f0AAAAAAEMAACav2PZy/7/R52ssyzmS9f0AABM0pr/AAA=",
+                            "hitId": "1",
                             "rank": 1,
-                            "summary": "...Identity Protection Weekly Digest <c0>Contoso</c0> New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2Fcontoso.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
+                            "summary": "_summary-value",
                             "resource": {
-                                "@odata.type": "#microsoft.graph.message",
-                                "createdDateTime": "2020-11-17T16:02:34Z",
-                                "lastModifiedDateTime": "2020-11-17T16:02:37Z",
-                                "changeKey": "CQAAAA==",
-                                "receivedDateTime": "2020-11-17T16:02:34Z",
-                                "sentDateTime": "2020-11-17T16:02:27Z",
-                                "hasAttachments": false,
-                                "internetMessageId": "<1e506769-c6da-4f44-bb54-6ba1bd59d300@az.northcentralus.production.microsoft.com>",
-                                "subject": "Azure AD Identity Protection Weekly Digest",
-                                "bodyPreview": "...Identity Protection Weekly Digest Contoso New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2Fcontoso.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
-                                "importance": "normal",
-                                "parentFolderId": "AQMkADdmODdhN2NjAC0zMGVmLTQwYjctYjA2MS1mYWU5MjhjOGJkYWQALgAAA6wtkXkF5ChEtibhSW+c5dkBAJq/Y9nL/v9HnayzLOZL1/QAAAIBDAAAAA==",
-                                "conversationId": "AAQkADdmODdhN2NjLTMwZWYtNDBiNy1iMDYxLWZhZTkyOGM4YmRhZAAQAKQ6a/rTEmVCtGMTER183jw=",
-                                "isRead": false,
-                                "isDraft": false,
-                                "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADdmODdhN2NjLTMwZWYtNDBiNy1iMDYxLWZhZTkyOGM4YmRhZABGAAAAAACsLZF5BeQoRLYm4UlvnOXZBwCav2PZy%2F7%2FR52ssyzmS9f0AAAAAAEMAACav2PZy%2F7%2FR52ssyzmS9f0AABM0pr%2FAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
-                                "inferenceClassification": "focused",
-                                "replyTo": [
-                                    {
-                                        "emailAddress": {
-                                            "name": "MOD Administrator"
-                                        }
-                                    }
-                                ],
-                                "sender": {
-                                    "emailAddress": {
-                                        "name": "Microsoft Azure",
-                                        "address": "azure-noreply@contoso.com"
+                                "@odata.type": "#microsoft.graph.listItem",
+                                "id": "c23c7035-73d6-4bad-8901-9e2930d4be8e",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Bob",
+                                        "email": "Bob@contoso.com"
                                     }
                                 },
-                                "from": {
-                                    "emailAddress": {
-                                        "name": "Microsoft Azure",
-                                        "address": "azure-noreply@contoso.com"
-                                    }
-                                }
+                                "createdDateTime": "2021-11-19T17:04:18Z",
+                                "lastModifiedDateTime": "2023-03-09T18:52:26Z"
                             }
                         }
                     ],
-                    "total": 47,
-                    "moreResultsAvailable": true
+                    "total": 1,
+                    "moreResultsAvailable": false
                 }
             ]
         }
@@ -157,11 +275,12 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
+- Search with [queryTemplate](/graph/search-concept-query-template)
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregation) to refine search results
 
@@ -175,5 +294,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

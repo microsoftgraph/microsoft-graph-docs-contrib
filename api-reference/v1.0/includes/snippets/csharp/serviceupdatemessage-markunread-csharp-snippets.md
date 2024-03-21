@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.MarkUnread.MarkUnreadPostRequestBody
+// Dependencies
+using Microsoft.Graph.Admin.ServiceAnnouncement.Messages.MarkUnread;
+
+var requestBody = new MarkUnreadPostRequestBody
 {
 	MessageIds = new List<string>
 	{
@@ -14,7 +17,9 @@ var requestBody = new Microsoft.Graph.Admin.ServiceAnnouncement.Messages.MarkUnr
 		"MC167983",
 	},
 };
-var result = await graphClient.Admin.ServiceAnnouncement.Messages.MarkUnread.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.ServiceAnnouncement.Messages.MarkUnread.PostAsMarkUnreadPostResponseAsync(requestBody);
 
 
 ```

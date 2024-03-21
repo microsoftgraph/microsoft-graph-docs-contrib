@@ -6,32 +6,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SecureScoreControlProfile();
 $vendorInformation = new SecurityVendorInformation();
 $vendorInformation->setProvider('SecureScore');
-
-$VendorInformation->setProviderVersion(null);
-
-$VendorInformation->setSubProvider(null);
-
+$vendorInformation->setProviderVersion(null);
+$vendorInformation->setSubProvider(null);
 $vendorInformation->setVendor('Microsoft');
-
-
 $requestBody->setVendorInformation($vendorInformation);
 $additionalData = [
-'assignedTo' => '', 
-'comment' => 'control is reviewed', 
-'state' => 'Reviewed', 
+	'assignedTo' => '',
+	'comment' => 'control is reviewed',
+	'state' => 'Reviewed',
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$requestResult = $graphServiceClient->security()->secureScoreControlProfilesById('secureScoreControlProfile-id')->patch($requestBody);
-
+$result = $graphServiceClient->security()->secureScoreControlProfiles()->bySecureScoreControlProfileId('secureScoreControlProfile-id')->patch($requestBody)->wait();
 
 ```

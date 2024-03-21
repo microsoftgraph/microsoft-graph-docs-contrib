@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new SecureScoresRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new SecureScoresRequestBuilderGetQueryParameters();
+$queryParameters = SecureScoresRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->top = 1;
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->security()->secureScores()->get($requestConfiguration);
-
+$result = $graphServiceClient->security()->secureScores()->get($requestConfiguration)->wait();
 
 ```

@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
-	Name = "menu.txt"
-	ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+	name = "menu.txt"
+	contentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
+New-MgBetaUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
 
 ```

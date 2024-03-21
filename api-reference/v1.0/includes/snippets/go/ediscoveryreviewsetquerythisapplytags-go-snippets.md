@@ -4,23 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphsecurity "github.com/microsoftgraph/msgraph-sdk-go/security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-sdk-go/models/security"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewApplyTagsPostRequestBody()
+
+requestBody := graphsecurity.NewApplyTagsPostRequestBody()
 
 
-ediscoveryReviewTag := graphmodels.NewEdiscoveryReviewTag()
+ediscoveryReviewTag := graphmodelssecurity.NewEdiscoveryReviewTag()
 id := "d3d99dc704a74801b792b3e1e722aa0d"
 ediscoveryReviewTag.SetId(&id) 
 
-tagsToAdd := []graphmodels.Objectable {
+tagsToAdd := []graphmodelssecurity.EdiscoveryReviewTagable {
 	ediscoveryReviewTag,
-
 }
 requestBody.SetTagsToAdd(tagsToAdd)
 
-graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").ReviewSetsById("ediscoveryReviewSet-id").QueriesById("ediscoveryReviewSetQuery-id").SecurityApplyTags().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByEdiscoveryReviewSetId("ediscoveryReviewSet-id").Queries().ByEdiscoveryReviewSetQueryId("ediscoveryReviewSetQuery-id").MicrosoftGraphSecurityApplyTags().Post(context.Background(), requestBody, nil)
 
 
 ```

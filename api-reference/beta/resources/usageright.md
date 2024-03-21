@@ -3,7 +3,7 @@ title: "usageRight resource type"
 description: "Contains information about a usageRight a user/device has assigned"
 author: "jeeshnair"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ A usage right represents a license that a user or device has for either third pa
 | Member             |  Description               |
 | :----------------- |  :------------------------ |
 |active              | Indicates that the usage right is active and can be used for provisioning benefits.|
-|inactive                | Indicates that the usage right is not active and cannot be used for provisioning benefits.|
+|inactive                | Indicates that the usage right isn't active and can't be used for provisioning benefits.|
 |warning                | Indicates that the usage right is in grace likely due to payment violation. This state can be used to either remind of pending payment or offer a degraded experience.|
 |suspended                | Indicates that the usage right is suspended likely due to Payment violation|
 |unknownFutureValue      | Sentinel value to indicate future values. |
@@ -51,7 +51,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

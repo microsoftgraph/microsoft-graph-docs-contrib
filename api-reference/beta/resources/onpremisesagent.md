@@ -2,8 +2,8 @@
 title: "onPremisesAgent resource type"
 description: "onPremisesAgent resource type."
 ms.localizationpriority: medium
-author: "japere"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -30,7 +30,7 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 |:-------------|:------------|:------------|
 |externalIp|String|The external IP address as detected by the service for the agent machine. Read-only|
 |id|String| The object id of the onPremisesAgent. Read-only.|
-|machineName|String|The name of the machine that the aggent is running on. Read-only|
+|machineName|String|The name of the machine that the agent is running on. Read-only|
 |status|agentStatus| Possible values are: `active`, `inactive`.|
 |publishingType|String| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
@@ -42,7 +42,7 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

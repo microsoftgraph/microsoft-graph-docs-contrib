@@ -3,7 +3,7 @@ title: "itemIdResolver resource type"
 description: Defines the rules for resolving a given URL to a connector item's ID."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,6 @@ Namespace: microsoft.graph.externalConnectors
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Defines the rules for resolving a URL to the ID of an [externalItem](externalconnectors-externalitem.md).
-
 
 Inherits from [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md).
 

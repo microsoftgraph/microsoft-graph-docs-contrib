@@ -1,9 +1,9 @@
 ---
 title: "deviceManagement resource type"
 description: "Singleton entity that acts as a container for all device management functionality."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -43,6 +43,3 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
-

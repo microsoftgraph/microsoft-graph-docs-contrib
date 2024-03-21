@@ -3,7 +3,7 @@ title: "usernameSource enum type"
 description: "Username source."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

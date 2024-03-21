@@ -6,19 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GroupLifecyclePolicy();
 $requestBody->setGroupLifetimeInDays(100);
-
 $requestBody->setManagedGroupTypes('Selected');
-
 $requestBody->setAlternateNotificationEmails('admin@contoso.com');
 
-
-
-$requestResult = $graphServiceClient->groupLifecyclePolicies()->post($requestBody);
-
+$result = $graphServiceClient->groupLifecyclePolicies()->post($requestBody)->wait();
 
 ```

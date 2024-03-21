@@ -6,57 +6,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new SchemaPostRequestBody();
-$additionalData = [
-'baseType' => 'microsoft.graph.externalItem', 
-'properties' => $properties1 = new ();
-$		properties1->setName('ticketTitle');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$		properties1->setType('string');
-
-$		properties1->setIsSearchable('true');
-
-$		properties1->setIsRetrievable('true');
-
-$properties1->setLabels(['title', ]);
-
-
-$propertiesArray []= $properties1;
-$properties2 = new ();
-$	properties2->setName('priority');
-
-$	properties2->setType('string');
-
-$	properties2->setIsQueryable('true');
-
-$	properties2->setIsRetrievable('true');
-
-$	properties2->setIsSearchable('false');
-
-
-$propertiesArray []= $properties2;
-$properties3 = new ();
-$	properties3->setName('assignee');
-
-$	properties3->setType('string');
-
-$	properties3->setIsRetrievable('true');
-
-
-$propertiesArray []= $properties3;
+$requestBody = new Schema();
+$requestBody->setBaseType('microsoft.graph.externalItem');
+$propertiesProperty1 = new Property();
+$propertiesProperty1->setName('ticketTitle');
+$propertiesProperty1->setType(new PropertyType('string'));
+$propertiesProperty1->setIsSearchable(true);
+$propertiesProperty1->setIsRetrievable(true);
+$propertiesProperty1->setLabels([new Label('title'),	]);
+$propertiesArray []= $propertiesProperty1;
+$propertiesProperty2 = new Property();
+$propertiesProperty2->setName('priority');
+$propertiesProperty2->setType(new PropertyType('string'));
+$propertiesProperty2->setIsQueryable(true);
+$propertiesProperty2->setIsRetrievable(true);
+$propertiesProperty2->setIsSearchable(false);
+$propertiesArray []= $propertiesProperty2;
+$propertiesProperty3 = new Property();
+$propertiesProperty3->setName('assignee');
+$propertiesProperty3->setType(new PropertyType('string'));
+$propertiesProperty3->setIsRetrievable(true);
+$propertiesArray []= $propertiesProperty3;
 $requestBody->setProperties($propertiesArray);
 
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$graphServiceClient->external()->connectionsById('externalConnection-id')->schema()->post($requestBody);
-
+$result = $graphServiceClient->external()->connections()->byExternalConnectionId('externalConnection-id')->schema()->patch($requestBody)->wait();
 
 ```

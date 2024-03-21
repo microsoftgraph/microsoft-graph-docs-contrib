@@ -3,7 +3,7 @@ title: trending resource type
 description: Rich relationship connecting a user to documents that are trending around the user (are relevant to the user). OneDrive files, and files stored on SharePoint team sites can trend around the user.
 author: simonhult
 ms.localizationpriority: medium
-ms.prod: insights
+ms.subservice: insights
 doc_type: resourcePageType
 ---
 
@@ -39,7 +39,7 @@ Rich relationship connecting a user to documents that are trending around the us
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

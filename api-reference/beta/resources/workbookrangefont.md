@@ -3,7 +3,7 @@ title: "workbookRangeFont resource type"
 description: "This object represents the font attributes (font name, font size, color, etc.) for an object."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -27,9 +27,9 @@ This object represents the font attributes (font name, font size, color, etc.) f
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |bold|boolean|Represents the bold status of font.|
-|color|string|HTML color code representation of the text color. E.g. #FF0000 represents Red.|
+|color|string|HTML color code representation of the text color. for example #FF0000 represents Red.|
 |italic|boolean|Represents the italic status of the font.|
-|name|string|Font name (e.g. "Calibri")|
+|name|string|Font name (for example "Calibri")|
 |size|double|Font size.|
 |underline| String |Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
@@ -39,7 +39,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

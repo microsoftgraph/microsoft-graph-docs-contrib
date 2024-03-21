@@ -1,9 +1,9 @@
 ---
 title: "externalIdentitiesPolicy resource type"
-description: "Represents the tenant-wide policy that controls whether external users can leave an Azure AD tenant via self-service controls."
+description: "Represents the tenant-wide policy that controls whether external users can leave a Microsoft Entra tenant via self-service controls."
 author: "KuiGithui"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant-wide policy that controls whether external users can leave the guest Azure AD tenant via self-service controls. When permitted by the administrator, external users can leave the guest Azure AD tenant through the **organizations** menu of the [My Account](https://myaccount.microsoft.com/) portal.
+Represents the tenant-wide policy that controls whether external users can leave the guest Microsoft Entra tenant via self-service controls. When permitted by the administrator, external users can leave the guest Microsoft Entra tenant through the **organizations** menu of the [My Account](https://myaccount.microsoft.com/) portal.
 
 Inherits from [policyBase](../resources/policybase.md).
 
@@ -34,7 +34,7 @@ Inherits from [policyBase](../resources/policybase.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -55,5 +55,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 + [Leave an organization as an external user](/azure/active-directory/external-identities/leave-the-organization)

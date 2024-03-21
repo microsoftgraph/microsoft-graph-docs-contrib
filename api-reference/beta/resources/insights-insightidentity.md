@@ -3,7 +3,7 @@ title: "insightIdentity"
 description: "Complex type containing properties of Shared items."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Complex type containing properties of [sharedInsight](insights-shared.md) items. 
 
 ## JSON representation
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +37,7 @@ Here is a JSON representation of the resource
 | Property              | Type          | Description  |
 | -------------         |-----------    | -------------|
 | displayName      	| String	      | The display name of the user who shared the item. |
-| id     		  | String        | The id of the user who shared the item.     |
+| id     		  | String        | The ID of the user who shared the item.     |
 | address      	      | String	    | The email address of the user who shared the item.  |
 
 

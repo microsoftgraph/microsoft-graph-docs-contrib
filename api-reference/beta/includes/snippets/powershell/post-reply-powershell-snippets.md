@@ -4,61 +4,61 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	Post = @{
-		Body = @{
-			ContentType = ""
-			Content = "content-value"
+	post = @{
+		body = @{
+			contentType = ""
+			content = "content-value"
 		}
-		ReceivedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
-		HasAttachments = $true
-		From = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
+		receivedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
+		hasAttachments = $true
+		from = @{
+			emailAddress = @{
+				name = "name-value"
+				address = "address-value"
 			}
 		}
-		Sender = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
+		sender = @{
+			emailAddress = @{
+				name = "name-value"
+				address = "address-value"
 			}
 		}
-		ConversationThreadId = "conversationThreadId-value"
-		NewParticipants = @(
+		conversationThreadId = "conversationThreadId-value"
+		newParticipants = @(
 			@{
-				EmailAddress = @{
-					Name = "name-value"
-					Address = "address-value"
+				emailAddress = @{
+					name = "name-value"
+					address = "address-value"
 				}
 			}
 		)
-		ConversationId = "conversationId-value"
-		CreatedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
-		LastModifiedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
-		ChangeKey = "changeKey-value"
-		Categories = @(
+		conversationId = "conversationId-value"
+		createdDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
+		lastModifiedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
+		changeKey = "changeKey-value"
+		categories = @(
 			"categories-value"
 		)
-		Id = "id-value"
-		InReplyTo = @{
+		id = "id-value"
+		inReplyTo = @{
 		}
-		Attachments = @(
+		attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
-				Name = "name-value"
-				ContentType = "contentType-value"
-				Size = 99
-				IsInline = $true
-				Id = "id-value"
+				lastModifiedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
+				name = "name-value"
+				contentType = "contentType-value"
+				size = 99
+				isInline = $true
+				id = "id-value"
 			}
 		)
 	}
 }
 
-Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 
 ```

@@ -2,8 +2,8 @@
 title: "Delete deviceManagementAutopilotEvent"
 description: "Deletes a deviceManagementAutopilotEvent."
 author: "jaiprakashmb"
-ms.localizationpriority: medium
-ms.prod: "intune"
+localization_priority: Normal
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -11,9 +11,13 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Deletes a [deviceManagementAutopilotEvent](../resources/intune-troubleshooting-devicemanagementautopilotevent.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +40,7 @@ DELETE /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -50,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 Here is an example of the request.
 ``` http
-DELETE https://graph.microsoft.com/v1/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ```
 
 ### Response

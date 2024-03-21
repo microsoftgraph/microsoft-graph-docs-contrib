@@ -1,10 +1,10 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Deleted
 ms.localizationpriority: medium
 description: "The Deleted resource indicates that the item has been deleted."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -40,7 +40,7 @@ Here is a JSON representation of the resource.
 |:---------|:-------|:------------------------------------------|
 | state    | String | Represents the state of the deleted item. |
 
-## Remarks 
+## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 

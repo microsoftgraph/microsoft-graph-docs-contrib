@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
 ms.localizationpriority: high
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ The Microsoft Search API provides a [query](../api/search-query.md) method to se
 
 This section lists the common use cases of the **query** method, based on the properties and parameters you set in the **query** [searchRequest](searchrequest.md) body.
 
-Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users cannot access more items in a search than they can otherwise obtain from a corresponding GET operation with the same permissions and access control.
+Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users can't access more items in a search than they can otherwise obtain from a corresponding GET operation with the same permissions and access control.
 
 | Use cases | Properties to define in the query request body |
 |:------------------|:---------|
@@ -53,8 +53,8 @@ The following table describes the types available to query and the supported per
 |[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
 |[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document libraries.|
 |[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Files, folders, pages, and news. |
-|[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
-|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
+|[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Document libraries are also returned as lists. |
+|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[externalItem](externalconnectors-externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
 |[person](person.md)|People.Read|Exchange Online|Personal contacts and contacts or addressable objects in your organization.|
 |[qna](search-qna.md)|QnA.Read.All|Microsoft Search|Questions and answers in Microsoft Search in your organization.|
@@ -93,17 +93,18 @@ When searching the **message** entity, specifying **enableTopResults** as `true`
 
 ## Get selected properties
 
-When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, or **person**, you can include in the **fields** property specific entity properties to return in the search results. This is similar to using the [OData system query option, $select](/graph/query-parameters#select-parameter) in REST requests. The search API does not technically support these query options because the behavior is expressed in the POST body.
+When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, or **person**, you can include in the **fields** property specific entity properties to return in the search results. This is similar to using the [OData system query option, $select](/graph/query-parameters#select-parameter) in REST requests. The search API doesn't technically support these query options because the behavior is expressed in the POST body.
 
 For all these entity types, specifying the **fields** property reduces the number of properties returned in the response, optimizing the payload over the wire.
 
-The **listItem** and **externalItem** entities are the only supported entities that allow getting extended retrievable fields configured in the schema. You cannot retrieve extended properties from all the other entities by using the search API. For example, if you created a retrievable field for **externalItem** in the search schema, or if you have a retrievable custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
+The **listItem**, **driveItem** and **externalItem** entities are the only supported entities that allow getting extended retrievable fields configured in the schema. You can't retrieve extended properties from all the other entities by using the search API. For example, if you created a retrievable field for **externalItem** in the search schema, or if you have a retrievable custom column on a **listItem** or **driveItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** or **driveItem** type in the request.
 
-If the **fields** specified in the request are either not present in the schema, or not marked as retrievable, they will not be returned in the response. Invalid fields in the request are silently ignored.
+If the **fields** specified in the request are either not present in the schema, or not marked as retrievable, they won't be returned in the response. Invalid fields in the request are silently ignored.
 
-If you do not specify any **fields** in the request,  you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request:
+If you don't specify any **fields** in the request,  you'll get the default set of properties for all types. For extended properties, **listItem**, **driveItem** and **externalItem** behave differently when no **fields** are passed in the request:
 
-- **listItem** will not return any custom field.
+- **listItem** won't return any custom field.
+- **driveItem** will return an internal listItem with an empty field.
 - **externalItem** will return all the fields marked with the **retrievable** attribute in the Microsoft Graph connector schema for that particular connection.
 
 ## Keyword Query Language (KQL) support
@@ -121,9 +122,9 @@ The **collapseProperties** property contains a set of criteria, fields, and limi
 
 The [query](../api/search-query.md) method lets you customize the collapse property by specifying **collapseProperties** on the `requests` parameter, which is a collection of [collapseProperty](collapseproperty.md) objects. This allows you to specify a set of one or more collapse properties.
 
-Note that collapsing results is currently supported on the following entity types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md), [externalItem](externalconnectors-externalitem.md).
+Collapsing results is currently supported on the following entity types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md), [externalItem](externalconnectors-externalitem.md).
 
-The properties on which the collapse clause are applied need to be queryable and either sortable or refinable. For multi-level collapse, each subsequent property limit size specified in a multi-level request should be less than or equal to the previous; otherwise, the response will return an `HTTP 400 Bad Request` error.
+The properties on which the collapse clause is applied need to be queryable and either sortable or refinable. For multi-level collapse, each subsequent property limit size specified in a multi-level request should be less than or equal to the previous; otherwise, the response returns an `HTTP 400 Bad Request` error.
 
 For examples that show how to collapse results, see [collapse search results](/graph/search-concept-collapse).
 
@@ -136,9 +137,9 @@ Search results in the response are sorted in the following default sort order:
 
 The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [sortProperty](sortproperty.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
 
-Note that sorting results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
+Sorting results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
 
-The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return an error, `HTTP 400 Bad Request`. Note that you cannot specify to sort documents by relevance using [sortProperty](sortproperty.md).
+The properties on which the sort clause is applied need to be sortable in the SharePoint [search schema](/sharepoint/manage-search-schema). If the property specified in the request isn't sortable or doesn't exist, the response returns an error, `HTTP 400 Bad Request`. You can't specify to sort documents by relevance using [sortProperty](sortproperty.md).
 
 When specifying the **name** of a [sortProperty](sortproperty.md) object, you can either use the property name from the Microsoft Graph type (for example, in [driveItem](driveitem.md)), or the name of the managed property in the search index.
 
@@ -146,13 +147,13 @@ See [sort search results](/graph/search-concept-sort) for examples that show how
 
 ## Refine results using aggregations
 
-Aggregations (also known as refiners in SharePoint) are a very popular way to enhance a search experience. In addition to the results, they provide some level of aggregate information on the matching set of search results. For example, you can provide information on the most represented authors of the documents matching the query, or the most represented file types, etc.
+Aggregations (also known as refiners in SharePoint) are a popular way to enhance a search experience. In addition to the results, they provide some level of aggregate information on the matching set of search results. For example, you can provide information on the most represented authors of the documents matching the query, or the most represented file types, etc.
 
 In the [searchRequest](./searchrequest.md), specify the aggregations that should be returned in addition to the search results. The description of each aggregation is defined in the [aggregationOption](./aggregationoption.md), which specifies the property on which the aggregation should be computed, and the number of [searchBucket](searchBucket.md) to be returned in the response.
 
-The properties on which the aggregation is requested need to be refinable in the SharePoint [search schema](/sharepoint/manage-search-schema). If the property specified is not refinable or does not exist, the response returns `HTTP 400 Bad Request`.
+The properties on which the aggregation is requested need to be refinable in the SharePoint [search schema](/sharepoint/manage-search-schema). If the property specified isn't refinable or doesn't exist, the response returns `HTTP 400 Bad Request`.
 
-Once the response is returned containing the collection of [searchBucket](searchBucket.md) objects, it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the **aggregationFilters** property of the subsequent [searchRequest](./searchrequest.md).
+Once the response is returned containing the collection of [searchBucket](searchBucket.md) objects, it's possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the **aggregationFilters** property of the subsequent [searchRequest](./searchrequest.md).
 
 Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Microsoft Graph connectors [externalItem](externalconnectors-externalitem.md).
 
@@ -174,6 +175,10 @@ To get the result template in the [searchResponse](searchresponse.md), you have 
 
 See [Use search display layout](/graph/search-concept-display-layout) for examples.
 
+## Guest search
+
+The Search API enables guest users to search for items within SharePoint or OneDrive that have been shared with them. To access the list of guest users, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, and in the left navigation, choose **Users**, and select **Guest users**. 
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -188,38 +193,42 @@ The search API has the following limitations:
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. The following table lists the combinations that are supported.
 
-| Entity Type |acronym     |bookmark     |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     |qna     | site       |
-|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|------------|------------|------------|
-|  acronym    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  bookmark    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     True   |     -      |
-|  message    |     -      |     -      |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-| chatMessage |     -      |     -      |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |     -      |
-|    drive    |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  driveItem  |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   event     |     -      |     -      |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |     -      |
-|externalItem |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   list      |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|  listItem   |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
-|   person    |     -      |     -      |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |     -      |
-|  qna    |     True   |     True   |     -      |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |  True      |     -      |
-|    site     |     -      |     -      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |     -      |  True      |
+    | Entity Type  | acronym | bookmark | message | chatMessage | drive | driveItem | event | externalItem | list | listItem | person | qna  | site |
+    |--------------|---------|----------|---------|-------------|-------|-----------|-------|--------------|------|----------|--------|------|------|
+    | acronym      | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | bookmark     | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | chatMessage  | -       | -        | -       | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+    | drive        | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | driveItem    | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | event        | -       | -        | -       | -           | -     | -         | True  | -            | -    | -        | -      | -    | -    |
+    | externalItem | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | list         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | listItem     | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
+    | message      | -       | -        | True    | -           | -     | -         | -     | -            | -    | -        | -      | -    | -    |  
+    | person       | -       | -        | -       | -           | -     | -         | -     | -            | -    | -        | True   | -    | -    |
+    | qna          | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
+    | site         | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **acronym**,**bookmark**,**message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- The search API doesn't support custom sort for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
-- The search API does not support aggregations for **acronym**,**bookmark**,**message**, **event**, **site**, **person**, **qna**, or **drive**.
+- The search API doesn't support aggregations for **acronym**, **bookmark**, **message**, **event**, **site**, **person**, **qna**, or **drive**.
 
-- The search API does not support xrank for **acronym**,**bookmark**,**message**,**chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+- The search API doesn't support xrank for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
+
+- Guest search doesn't support searches for **acronym**, **bookmark**, **message**, **chatMessage**, **event**, **person**, **qna**, or **externalItem**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
+- The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
+
 ## Schema change deprecation warning
+Effective August 31, 2023, the beta version of the [externalItem](./externalconnectors-externalitem.md) resource in the Microsoft Graph namespace will be deprecated. Going forward, use the version of the resource in the **Microsoft.Graph.ExternalConnectors** namespace. Make sure that you update any namespace dependencies before the specified date. Alternatively, consider transitioning to the v1.0 version of the API.
 
 **In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the following table.
 
-Start updating any existing apps to use current property and type names, and to get current property names in the response.
-For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
+We recommend that you update existing apps to use the current property and type names, and to get current property names in the response. For backward compatibility, the original properties and types are accessible and functional until **September 30, 2023**, after which they'll be removed.
 
 | Resource                           | Change type   | Original property | Current property|
 |:-----------------------------------|:--------------|:------------------|:----------------|
@@ -233,7 +242,7 @@ For backward compatibility, the original properties and types are accessible and
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 | [entityTypes](./enums.md)          | Rename enum value | **unknownfuturevalue**  | **unknownFutureValue**  |
 
-## See also
+## Related content
 
 - Learn more about a few key use cases:
   - [Search Teams messages](/graph/search-concept-chat-messages)
@@ -253,6 +262,3 @@ For backward compatibility, the original properties and types are accessible and
 
 - Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

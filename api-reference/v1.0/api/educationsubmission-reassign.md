@@ -3,7 +3,7 @@ title: "educationSubmission: reassign"
 description: "Reassign the submission to the student with feedback for review."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -15,18 +15,17 @@ Reassign the [submission](../resources/educationsubmission.md) to the student wi
 
 Only teachers can perform this action. 
 
-Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission will be treated as a returned submission. This means that the `reassigned` status will be mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties will be mapped to **returnedDateTime** and **returnedBy** respectively.
+Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission is treated as a returned submission. This means that the `reassigned` status is mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties are mapped to **returnedDateTime** and **returnedBy** respectively.
 
 If the header `Prefer: include-unknown-enum-members` is provided, a reassigned submission retains the `reassigned` status. For details, see the examples section.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite   |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Notes.ReadWrite.All, EduAssignments.ReadWrite.All | 
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "educationsubmission_reassign" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsubmission-reassign-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +35,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer  | `include-unknown-enum-members`. Optional.  |
 
 ## Request body
@@ -49,7 +48,7 @@ If successful, this method returns `200 OK` response code and an [educationSubmi
 ### Example 1: Request without optional Prefer header
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -60,37 +59,45 @@ The following is an example of the request.
 }-->
 
 ```http
-POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/reassign
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/4cc928e3-666c-4360-8688-a15776ce53b4/submissions/5883eaeb-9760-f8e0-6832-a122c4f020be/reassign
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-reassign-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-reassign-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-reassign-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/educationsubmission-reassign-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-reassign-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-reassign-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-reassign-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-reassign-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/educationsubmission-reassign-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-reassign-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/educationsubmission-reassign-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response when `Prefer: include-unknown-enum-members` is NOT provided in the request header and the submission hasn't been returned before.
+The following is an example of the response when `Prefer: include-unknown-enum-members` isn't provided in the request header and the submission hasn't been returned before.
 
 <!-- {
   "blockType": "response",
@@ -103,21 +110,22 @@ HTTP/1.1 200 OK
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
     "status": "returned",
-    "submittedDateTime": "2021-09-07T14:54:46.1606962Z",
-    "unsubmittedDateTime": "2021-09-07T14:41:18.9512645Z",
-    "returnedDateTime": "2021-09-07T21:38:40.5254847Z",
-    "reassignedDateTime": "2021-09-07T21:38:40.5254847Z",
+    "submittedDateTime": "2023-12-14T17:00:07.4647384Z",
+    "unsubmittedDateTime": null,
+    "returnedDateTime": "2023-12-18T12:52:04.6787138Z",
+    "reassignedDateTime": "2023-12-18T12:52:04.6787138Z",
     "resourcesFolderUrl": null,
-    "id": "02bb5de1-7205-2a25-fe33-f99cf53de1c4",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%224cc928e3-666c-4360-8688-a15776ce53b4%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%225883eaeb-9760-f8e0-6832-a122c4f020be%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "id": "5883eaeb-9760-f8e0-6832-a122c4f020be",
     "recipient": {
         "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+        "userId": "51cf5a99-d234-4e43-96de-cd65df14bfa1"
     },
     "submittedBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -125,7 +133,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "id": null,
             "displayName": null
         }
     },
@@ -133,7 +141,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -141,7 +149,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     }
@@ -152,7 +160,7 @@ HTTP/1.1 200 OK
 The following example shows how to call this method.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -163,7 +171,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/reassign
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/4cc928e3-666c-4360-8688-a15776ce53b4/submissions/5883eaeb-9760-f8e0-6832-a122c4f020be/reassign
 Prefer: include-unknown-enum-members
 ```
 
@@ -171,24 +179,32 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-prefer-reassign-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-prefer-reassign-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-prefer-reassign-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/educationsubmission-prefer-reassign-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-prefer-reassign-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-prefer-reassign-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-prefer-reassign-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-prefer-reassign-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/educationsubmission-prefer-reassign-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-prefer-reassign-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/educationsubmission-prefer-reassign-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -207,21 +223,22 @@ HTTP/1.1 200 OK
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
     "status": "reassigned",
-    "submittedDateTime": "2021-09-07T21:44:41.8377109Z",
-    "unsubmittedDateTime": "2021-09-07T14:41:18.9512645Z",
-    "returnedDateTime": null,
-    "reassignedDateTime": "2021-09-07T21:45:42.9027726Z",
+    "submittedDateTime": "2023-12-20T16:35:56.8904304Z",
+    "unsubmittedDateTime": "2023-12-18T13:07:52.9958996Z",
+    "returnedDateTime": "2023-12-18T13:03:04.3785597Z",
+    "reassignedDateTime": "2023-12-20T16:37:51.4559008Z",
     "resourcesFolderUrl": null,
-    "id": "02bb5de1-7205-2a25-fe33-f99cf53de1c4",
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%224cc928e3-666c-4360-8688-a15776ce53b4%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%225883eaeb-9760-f8e0-6832-a122c4f020be%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "id": "5883eaeb-9760-f8e0-6832-a122c4f020be",
     "recipient": {
         "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+        "userId": "51cf5a99-d234-4e43-96de-cd65df14bfa1"
     },
     "submittedBy": {
         "application": null,
         "device": null,
         "user": {
-            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -229,7 +246,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -237,7 +254,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": null,
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
@@ -245,16 +262,16 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     }
 }
 ```
 
-## See also
+## Related content
 
-* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
+[States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

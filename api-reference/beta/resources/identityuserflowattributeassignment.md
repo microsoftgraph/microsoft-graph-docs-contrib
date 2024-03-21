@@ -3,7 +3,7 @@ title: "identityUserFlowAttributeAssignment resource type"
 description: "identityUserFlowAttributeAssignments are used to collect specific identityUserFlowAttributes within a user flow."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ identityUserFlowAttributeAssignments are used to collect specific identityUserFl
 |:---|:---|:---|
 |id|String|The identifier of the identityUserFlowAttributeAssignment. This identifier is immutable after it is created. This is a read-only property.|
 |displayName|String|The display name of the identityUserFlowAttribute within a user flow.|
-|isOptional|Boolean|Determines whether the identityUserFlowAttribute is optional. `true` means the user doesn't have to provide a value. `false` means the user cannot complete sign-up without providing a value.|
+|isOptional|Boolean|Determines whether the identityUserFlowAttribute is optional. `true` means the user doesn't have to provide a value. `false` means the user can't complete sign-up without providing a value.|
 |requiresVerification|Boolean|Determines whether the identityUserFlowAttribute requires verification. This is only used for verifying the user's phone number or email address.|
 |userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) collection|The input options for the user flow attribute. Only applicable when the userInputType is `radioSingleSelect`, `dropdownSingleSelect`, or `checkboxMultiSelect`.|
 |userInputType|identityUserFlowAttributeInputType|The input type of the user flow attribute. Possible values are: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
@@ -42,7 +42,7 @@ identityUserFlowAttributeAssignments are used to collect specific identityUserFl
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

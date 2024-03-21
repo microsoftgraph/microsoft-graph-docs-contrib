@@ -6,11 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->me()->outlook()->masterCategoriesById('outlookCategory-id')->delete();
-
+$graphServiceClient->me()->outlook()->masterCategories()->byOutlookCategoryId('outlookCategory-id')->delete()->wait();
 
 ```

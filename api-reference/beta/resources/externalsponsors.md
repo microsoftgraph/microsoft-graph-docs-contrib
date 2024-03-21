@@ -3,7 +3,7 @@ title: "externalSponsors complex type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md). 
-It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.externalSponsors` indicates that a requesting user's connected organization external sponsors are to be the approver. This approver is only applicable to requests from users who are part of a connected organization.  When creating an access package assignment policy approval stage with externalSponsors, also include another approver, such as a single user or group member, in case the connected organization does not have an external sponsor.
+It's a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.externalSponsors` indicates that a requesting user's connected organization external sponsors are to be the approver. This approver is only applicable to requests from users who are part of a connected organization.  When creating an access package assignment policy approval stage with externalSponsors, also include another approver, such as a single user or group member, in case the connected organization doesn't have an external sponsor.
 
 ## Properties
 
@@ -24,7 +24,7 @@ It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#mic
 
 ## JSON representation
 
-The following is a JSON representation of this type.
+Here's a JSON representation of this type.
 
 <!-- {
   "blockType": "resource",

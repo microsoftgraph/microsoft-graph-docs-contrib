@@ -3,7 +3,7 @@ title: "searchAlterationOptions resource type"
 description: "Provides the search alteration options for spelling correction."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -17,12 +17,12 @@ Provides the search alteration options for spelling correction.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|enableModification|Boolean|Indicates whether spelling modifications are enabled. If enabled, the user will get the search results for the corrected query *in case of no results* for the original query with typos. The [response](/graph/api/resources/searchresponse) will also include the spelling modification information in the **queryAlterationResponse** property. Optional.|
-|enableSuggestion|Boolean|Indicates whether spelling suggestions are enabled. If enabled, the user will get the search results for the original search query and suggestions for spelling correction in the **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse) for the typos in the query. Optional.|
+|enableModification|Boolean|Indicates whether spelling modifications are enabled. If enabled, the user gets the search results for the corrected query *if there were no results* for the original query with typos. The [response](/graph/api/resources/searchresponse) will also include the spelling modification information in the **queryAlterationResponse** property. Optional.|
+|enableSuggestion|Boolean|Indicates whether spelling suggestions are enabled. If enabled, the user gets the search results for the original search query and suggestions for spelling correction in the **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse) for the typos in the query. Optional.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new AppConsentRequestsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new AppConsentRequestsRequestBuilderGetQueryParameters();
-$queryParameters->filter = "userConsentRequests/any ";
-
+$queryParameters = AppConsentRequestsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->filter = "userConsentRequests/any (u:u/status eq 'InProgress')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequests()->get($requestConfiguration);
-
+$result = $graphServiceClient->identityGovernance()->appConsent()->appConsentRequests()->get($requestConfiguration)->wait();
 
 ```

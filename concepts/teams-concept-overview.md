@@ -3,7 +3,7 @@ title: "Overview for using Microsoft Teams, Shifts, and Viva Learning to foster 
 description: "Microsoft Teams is the ultimate hub for team collaboration and intelligent communications, fostering a culture where employees can thrive. "
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -62,9 +62,8 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 | [Messaging extensions](/microsoftteams/platform/concepts/messaging-extensions) |Allow users to query and share information in conversations.|
 |Websites| Surface enhanced content in your webpages.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
-| [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
+| [Activity feed](/graph/teams-send-activityfeednotifications) |Engage users via feed notifications.|
 | [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
-
 
 ### Automate team lifecycles
 
@@ -198,13 +197,13 @@ Looking for the API reference for Teams, Shift, and Viva Learning?
 
 ## Next steps
 
-- [Calls permissions](./permissions-reference.md#calls-permissions)
+- [Calls permissions](./permissions-reference.md)
 - [Communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
 - [Delegated and application permissions](/azure/active-directory/develop/v1-permissions-and-consent)
 - Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team), [channel](/graph/api/resources/channel), and [group](/graph/api/resources/group) resources.
 - Get a jump-start with sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
 - Learn how to [use the Microsoft Teams API](/graph/api/resources/teams-api-overview).
-- [Online meeting permissions](./permissions-reference.md#online-meetings-permissions)
+- [Online meeting permissions](./permissions-reference.md)
 - Read more about the [Microsoft Teams programming model](/microsoftteams/platform/concepts/concepts-overview).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Watch the [overview video](https://aka.ms/teamsgraph/v1/video).

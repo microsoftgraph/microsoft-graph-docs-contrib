@@ -1,16 +1,16 @@
 ---
 title: "mfaDetail resource type"
-description: "Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in as well as auth details (for example: Phone, SMS or voicemail) "
+description: "Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in and auth details (for example: Phone, SMS or voicemail) "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-access-reports"
-author: "besiler"
+ms.subservice: "entra-monitoring-health"
+author: "egreenberg14"
 ---
 
 # mfaDetail resource type
 
 Namespace: microsoft.graph
-Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in as well as auth details (for example: Phone, SMS or voicemail)
+Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in and auth details (for example: Phone, SMS or voicemail)
 
 
 
@@ -22,7 +22,7 @@ Indicates MFA details for a specific sign-in. It includes the authentication met
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -6,28 +6,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new User();
 $requestBody->setAccountEnabled(true);
-
 $requestBody->setDisplayName('Adele Vance');
-
 $requestBody->setMailNickname('AdeleV');
-
-$requestBody->setUserPrincipalName('AdeleV@contoso.onmicrosoft.com');
-
+$requestBody->setUserPrincipalName('AdeleV@contoso.com');
 $passwordProfile = new PasswordProfile();
 $passwordProfile->setForceChangePasswordNextSignIn(true);
-
 $passwordProfile->setPassword('xWwvJ]6NMw+bWH-d');
-
-
 $requestBody->setPasswordProfile($passwordProfile);
 
-
-$requestResult = $graphServiceClient->users()->post($requestBody);
-
+$result = $graphServiceClient->users()->post($requestBody)->wait();
 
 ```

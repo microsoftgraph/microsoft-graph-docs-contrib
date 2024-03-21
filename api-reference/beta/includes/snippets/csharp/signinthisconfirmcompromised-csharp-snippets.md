@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.AuditLogs.SignIns.ConfirmCompromised.ConfirmCompromisedPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.AuditLogs.SignIns.ConfirmCompromised;
+
+var requestBody = new ConfirmCompromisedPostRequestBody
 {
 	RequestIds = new List<string>
 	{
@@ -15,6 +18,8 @@ var requestBody = new Microsoft.Graph.Beta.AuditLogs.SignIns.ConfirmCompromised.
 		"f09c8f14-8d8e-42cf-8a7e-732b0594e79b",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.AuditLogs.SignIns.ConfirmCompromised.PostAsync(requestBody);
 
 

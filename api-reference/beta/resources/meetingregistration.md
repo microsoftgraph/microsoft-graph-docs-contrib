@@ -1,9 +1,9 @@
 ---
 title: "meetingRegistration resource type"
 description: "Contains information about online meeting registration."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -21,10 +21,10 @@ Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
 
 | Method | Return Type | Description |
 | :----- | :---------- | :---------- |
-|[Create](../api/meetingregistration-post.md) | [meetingRegistration](meetingregistration.md) | Create and enable registration for an online meeting. |
-|[Get](../api/meetingregistration-get.md) | [meetingRegistration](meetingregistration.md) | Retrieve the details of a meeting registration. |
-|[Update](../api/meetingregistration-update.md) | [meetingRegistration](meetingregistration.md) | Update the details of a meeting registration. |
-|[Delete](../api/meetingregistration-delete.md) | [meetingRegistration](meetingregistration.md) | Disable and delete registration for an online meeting. |
+|[Create meetingRegistration](../api/meetingregistration-post.md) | [meetingRegistration](meetingregistration.md) | Create and enable registration for an online meeting. |
+|[Get meetingRegistration](../api/meetingregistration-get.md) | [meetingRegistration](meetingregistration.md) | Retrieve the details of a meeting registration. |
+|[Update meetingRegistration](../api/meetingregistration-update.md) | [meetingRegistration](meetingregistration.md) | Update the details of a meeting registration. |
+|[Delete meetingRegistration](../api/meetingregistration-delete.md) | [meetingRegistration](meetingregistration.md) | Disable and delete registration for an online meeting. |
 
 ## Properties
 
@@ -35,7 +35,7 @@ Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
 | endDateTime | DateTime | The meeting end time in UTC. |
 | registrationPageViewCount | Int32 | The number of times the registration page has been visited. Read-only. |
 | registrationPageWebUrl | String | The URL of the registration page. Read-only. |
-| speakers | [meetingSpeaker](meetingSpeaker.md) collection | The meeting speaker's information. |
+| speakers | [meetingSpeaker](meetingspeaker.md) collection | The meeting speaker's information. |
 | startDateTime | DateTime | The meeting start time in UTC. |
 | subject | String | The subject of the meeting. |
 
@@ -45,16 +45,18 @@ Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
 | ------------------ | ----------- |
 | everyone           | Everyone can register for the meeting. |
 | organization       | Everyone in the organizer’s organization can register for the meeting. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| customQuestions | [meetingRegistrationQuestion](meetingRegistrationQuestion.md) collection| Custom registration questions. |
-| registrants | [meetingRegistrant](meetingRegistrant.md) collection | Registrants of the online meeting. |
+| customQuestions | [meetingRegistrationQuestion](meetingregistrationquestion.md) collection| Custom registration questions. |
+| registrants | [meetingRegistrant](meetingregistrant.md) collection | Registrants of the online meeting. |
 
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -70,9 +72,6 @@ Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
   "registrationPageWebUrl": "String",
   "speakers": [{ "@odata.type": "microsoft.graph.meetingSpeaker" }],
   "startDateTime": "String (timestamp)",
-  "subject": "String",
-
-  "customQuestions": [{ "@odata.type": "microsoft.graph.meetingRegistrationQuestion" }],
-  "registrants": [{ "@odata.type": "microsoft.graph.meetingRegistrant" }]
+  "subject": "String"
 }
 ```

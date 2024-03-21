@@ -143,7 +143,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "delegatedAdminRelationships",
           "ChangeType": "Addition",
-          "Description": "Added the [delegatedAdminRelationships](https://learn.microsoft.com/en-us/graph/api/resources/delegatedadminrelationships?view=graph-rest-beta) navigation property to the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-beta) resource.",
+          "Description": "Added the [delegatedAdminRelationships](https://learn.microsoft.com/en-us/graph/api/resources/delegatedadminrelationship?view=graph-rest-beta) navigation property to the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-beta) resource.",
           "Target": "tenantRelationship"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "delegatedAdminServiceManagementDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [delegatedAdminServiceManagementDetails](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetails?view=graph-rest-beta) navigation property to the [delegatedAdminCustomer](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminCustomer?view=graph-rest-beta) resource.",
+          "Description": "Added the [delegatedAdminServiceManagementDetails](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetail?view=graph-rest-beta) navigation property to the [delegatedAdminCustomer](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminCustomer?view=graph-rest-beta) resource.",
           "Target": "delegatedAdminCustomer"
         },
         {
@@ -184,7 +184,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-03-30T23:33:05.8733913Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Partner customer administration"
     },
     {
       "ChangeList": [
@@ -234,10 +234,10 @@
       "Version": "beta",
       "CreatedDateTime": "2022-05-17T11:15:46.2343525Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
-    },    
+      "SubArea": "Partner customer administration"
+    },
     {
-      "ChangeList": 
+      "ChangeList":
       [
         {
           "Id": "143620a9-1156-453f-abf1-816e9c72a5ee",
@@ -380,7 +380,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "delegatedAdminRelationships",
           "ChangeType": "Addition",
-          "Description": "Added the [delegatedAdminRelationships](https://learn.microsoft.com/en-us/graph/api/resources/delegatedadminrelationships?view=graph-rest-1.0) navigation property to the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delegatedAdminRelationships](https://learn.microsoft.com/en-us/graph/api/resources/delegatedadminrelationship?view=graph-rest-1.0) navigation property to the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-1.0) resource.",
           "Target": "tenantRelationship"
         },
         {
@@ -396,7 +396,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "delegatedAdminServiceManagementDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [delegatedAdminServiceManagementDetails](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetails?view=graph-rest-1.0) navigation property to the [delegatedAdminCustomer](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminCustomer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delegatedAdminServiceManagementDetails](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetail?view=graph-rest-1.0) navigation property to the [delegatedAdminCustomer](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminCustomer?view=graph-rest-1.0) resource.",
           "Target": "delegatedAdminCustomer"
         },
         {
@@ -421,7 +421,127 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-02-02T09:00:05.8733913Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Partner customer administration"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0b023547-c61c-46df-a15c-a79570c6a0f6",
+          "ApiChange": "Member",
+          "ChangedApiName": "approve",
+          "ChangeType": "Addition",
+          "Description": "Added the `approve` member to the **delegatedAdminRelationshipRequestAction** enumeration.",
+          "Target": "delegatedAdminRelationshipRequestAction"
+        },
+        {
+          "Id": "0b023547-c61c-46df-a15c-a79570c6a0f6",
+          "ApiChange": "Member",
+          "ChangedApiName": "reject",
+          "ChangeType": "Addition",
+          "Description": "Added the `reject` member to the **delegatedAdminRelationshipRequestAction** enumeration.",
+          "Target": "delegatedAdminRelationshipRequestAction"
+        },
+        {
+          "Id": "0b023547-c61c-46df-a15c-a79570c6a0f6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resellerDelegatedAdminRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-beta) resource.",
+          "Target": "resellerDelegatedAdminRelationship"
+        }
+      ],
+      "Id": "0b023547-c61c-46df-a15c-a79570c6a0f6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-08T10:10:07.4078045Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Partner customer administration"
+    },
+    {
+      "ChangeList": [
+		    {
+          "Id": "d68a33be-ca1b-461a-b215-69ba3144a394",
+          "ApiChange": "Member",
+          "ChangedApiName": "approve",
+          "ChangeType": "Addition",
+          "Description": "Added the `approve` member to the **delegatedAdminRelationshipRequestAction** enumeration.",
+          "Target": "delegatedAdminRelationshipRequestAction"
+        },
+        {
+          "Id": "d68a33be-ca1b-461a-b215-69ba3144a394",
+          "ApiChange": "Member",
+          "ChangedApiName": "reject",
+          "ChangeType": "Addition",
+          "Description": "Added the `reject` member to the **delegatedAdminRelationshipRequestAction** enumeration.",
+          "Target": "delegatedAdminRelationshipRequestAction"
+        },
+        {
+          "Id": "d68a33be-ca1b-461a-b215-69ba3144a394",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resellerDelegatedAdminRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-1.0) resource type.",
+          "Target": "resellerDelegatedAdminRelationship"
+        }
+      ],
+      "Id": "d68a33be-ca1b-461a-b215-69ba3144a394",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-09-22T00:00:00.5515683Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Partner customer administration"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "dc7a0ac7-c74b-4473-84d8-47e35c796ce3",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoExtendDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoExtendDuration** property to the [delegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationship?view=graph-rest-beta) resource.",
+          "Target": "delegatedAdminRelationship"
+        },
+        {
+          "Id": "dc7a0ac7-c74b-4473-84d8-47e35c796ce3",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoExtendDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoExtendDuration** property to the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-beta) resource.",
+          "Target": "resellerDelegatedAdminRelationship"
+        }
+      ],
+      "Id": "dc7a0ac7-c74b-4473-84d8-47e35c796ce3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-22T00:00:00.5515683Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Partner customer administration"
+    },
+    {
+      "ChangeList": [
+            {
+              "Id": "80aec7bf-811c-46b9-bb97-9db36b618153",
+              "ApiChange": "Property",
+              "ChangedApiName": "autoExtendDuration",
+              "ChangeType": "Addition",
+              "Description": "Added the **autoExtendDuration** property to the [delegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationship?view=graph-rest-1.0) resource.",
+              "Target": "delegatedAdminRelationship"
+            },
+            {
+              "Id": "80aec7bf-811c-46b9-bb97-9db36b618153",
+              "ApiChange": "Property",
+              "ChangedApiName": "autoExtendDuration",
+              "ChangeType": "Addition",
+              "Description": "Added the **autoExtendDuration** property to the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-1.0) resource.",
+              "Target": "resellerDelegatedAdminRelationship"
+            }
+          ],
+          "Id": "80aec7bf-811c-46b9-bb97-9db36b618153",
+          "Cloud": "Prod",
+          "Version": "v1.0",
+          "CreatedDateTime": "2023-10-26T07:11:11.4334173Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Partner customer administration"
+        }
+      ]
     }
-  ]
-}

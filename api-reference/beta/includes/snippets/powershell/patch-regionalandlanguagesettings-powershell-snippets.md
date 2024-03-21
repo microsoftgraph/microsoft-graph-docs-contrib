@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
-	AuthoringLanguages = @(
+	authoringLanguages = @(
 		@{
-			Locale = "en-US"
+			locale = "en-US"
 		}
 		@{
-			Locale = "es-MX"
+			locale = "es-MX"
 		}
 	)
-	DefaultRegionalFormat = @{
-		Locale = "en-US"
+	defaultRegionalFormat = @{
+		locale = "en-US"
 	}
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
+Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
 
 ```

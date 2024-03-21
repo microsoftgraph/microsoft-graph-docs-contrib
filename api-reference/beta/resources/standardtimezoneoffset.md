@@ -3,8 +3,8 @@ title: "standardTimeZoneOffset resource type"
 description: "Specifies when a time zone switches from daylight saving time to standard time."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
-author: "abheek-das"
+ms.subservice: mail
+author: "SuryaLashmiS"
 ---
 
 # standardTimeZoneOffset resource type

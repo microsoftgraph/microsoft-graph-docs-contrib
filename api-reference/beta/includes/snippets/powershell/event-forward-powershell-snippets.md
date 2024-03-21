@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
 	ToRecipients = @(
 		@{
 			EmailAddress = @{
-				Address = "danas@contoso.onmicrosoft.com"
+				Address = "danas@contoso.com"
 				Name = "Dana Swope"
 			}
 		}
@@ -19,6 +19,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 
 ```

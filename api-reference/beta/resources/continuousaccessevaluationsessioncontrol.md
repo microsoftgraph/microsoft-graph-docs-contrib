@@ -3,7 +3,7 @@ title: "continuousAccessEvaluationSessionControl resource type"
 description: "Session control to control continuous access evaluation settings."
 author: "lujiangfeng666"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Session control to control continuous access evaluation settings.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|mode|continuousAccessEvaluationMode| Specifies continuous access evaluation settings. The possible values are: `strictEnforcement`, `disabled`, `unknownFutureValue`.|
+|mode|continuousAccessEvaluationMode| Specifies continuous access evaluation settings. The possible values are: `strictEnforcement`, `disabled`, `unknownFutureValue`, `strictLocation`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `strictLocation`.|
 
 ## Relationships
 None.

@@ -6,17 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerRosterMember();
-$requestBody->set@odatatype('#microsoft.graph.plannerRosterMember');
-
+$requestBody->setOdataType('#microsoft.graph.plannerRosterMember');
 $requestBody->setUserId('String');
 
-
-
-$requestResult = $graphServiceClient->planner()->rostersById('plannerRoster-id')->members()->post($requestBody);
-
+$result = $graphServiceClient->planner()->rosters()->byPlannerRosterId('plannerRoster-id')->members()->post($requestBody)->wait();
 
 ```

@@ -6,19 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EdiscoveryCase();
 $requestBody->setDisplayName('CONTOSO LITIGATION-005');
-
 $requestBody->setDescription('Project Bazooka');
-
 $requestBody->setExternalId('324516');
 
-
-
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCases()->post($requestBody);
-
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->post($requestBody)->wait();
 
 ```

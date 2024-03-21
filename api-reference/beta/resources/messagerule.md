@@ -1,9 +1,9 @@
 ---
 title: "messageRule resource type"
 description: "A rule that applies to messages in the Inbox of a user."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 A rule that applies to messages in the Inbox of a user.
 
-In Outlook, you can set up rules for incoming messages in the Inbox to carry out specific actions upon certain conditions. 
+In Outlook, you can set up rules for incoming messages in the Inbox to carry out specific actions upon certain conditions.
 
-Programmatically, you can access rules through the **messageRules** navigation property of the Inbox [folder](mailfolder.md). 
-Each rule is represented by this **messageRule** resource, available rule actions are represented by the [messageRuleActions](messageruleactions.md) complex type, 
+Programmatically, you can access rules through the **messageRules** navigation property of the Inbox [folder](mailfolder.md).
+Each rule is represented by this **messageRule** resource, available rule actions are represented by the [messageRuleActions](messageruleactions.md) complex type,
 and available rule conditions and exceptions are represented by the [messageRulePredicates](messagerulepredicates.md) complex type.
 
 ## Methods

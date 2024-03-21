@@ -3,16 +3,14 @@ title: "Overview of the industry data API in Microsoft Graph (preview)"
 description: "Use the industry data API in Microsoft Graph to build solutions that integrate with resources for insights and analytics scenarios."
 author: "vfranks"
 ms.localizationpriority: high
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 ms.custom: scenarios:getting-started
 doc_type: conceptual
 ---
 
 # Overview of the industry data API in Microsoft Graph (preview)
 
-The industry data API in Microsoft Graph is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. Use the API to retrieve statistics after the data is processed, and assist with monitoring and troubleshooting.
-
-Currently, the API is highly tailored to the education industry.
+The industry data API is an Education industry focused ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. The API provides resources that you can use to get statistics after the data is processed, and assist with monitoring and troubleshooting.
 
 ## Why integrate with the industry API?
 
@@ -22,8 +20,8 @@ Most education software developers learn early on that class roster is one of th
 
 [Microsoft School Data Sync](https://sds.microsoft.com/), combined with the industry data API, addresses this challenge for application developers and schools. The following are some of the scenarios that the industry data API enables:
 
-- [Uploading and validating CSV data](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true#uploading-and-validating-csv-data)
-- [Validating uploaded files](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true#validating-uploaded-files)
+- [Upload and validate CSV data](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true#upload-and-validate-csv-data)
+- [Validate uploaded files](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true#validate-uploaded-files)
 
 ### Enable school admins to manage identity and roster sync using School Data Sync (preview)
 
@@ -41,5 +39,5 @@ Looking for the API reference for this service?
 
 - To learn more about the industry data APIs as tailored to the education sector, see [Use the industry data API as an extract, transform, and load (ETL) engine](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true).
 - Learn more about [education scenarios in Microsoft Graph](education-concept-overview.md).
-- Set up an [education demo developer tenant](/graph/msgraph-onboarding-overview), [School Data Sync](msgraph-onboarding-sds.md), and [Microsoft Teams](msgraph-onboarding-msteams.md).
+- Set up an [education demo developer tenant](/graph/msgraph-onboarding-overview), [School Data Sync](/schooldatasync/school-data-sync-overview), and [Microsoft Teams](msgraph-onboarding-msteams.md).
 - Try the industry data APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

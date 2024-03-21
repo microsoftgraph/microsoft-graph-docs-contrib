@@ -2,8 +2,8 @@
 title: "updateWindow resource type"
 description: "updateWindow resource type."
 ms.localizationpriority: medium
-author: "japere"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

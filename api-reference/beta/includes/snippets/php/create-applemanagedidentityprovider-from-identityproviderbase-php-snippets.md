@@ -6,26 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new IdentityProviderBase();
-$requestBody->set@odatatype('microsoft.graph.appleManagedIdentityProvider');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestBody = new AppleManagedIdentityProvider();
+$requestBody->setOdataType('microsoft.graph.appleManagedIdentityProvider');
 $requestBody->setDisplayName('Sign in with Apple');
+$requestBody->setDeveloperId('UBF8T346G9');
+$requestBody->setServiceId('com.microsoft.rts.b2c.test.client');
+$requestBody->setKeyId('99P6D879C4');
+$requestBody->setCertificateData('******');
 
-$additionalData = [
-'developerId' => 'UBF8T346G9', 
-'serviceId' => 'com.microsoft.rts.b2c.test.client', 
-'keyId' => '99P6D879C4', 
-'certificateData' => '******', 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$requestResult = $graphServiceClient->identity()->identityProviders()->post($requestBody);
-
+$result = $graphServiceClient->identity()->identityProviders()->post($requestBody)->wait();
 
 ```

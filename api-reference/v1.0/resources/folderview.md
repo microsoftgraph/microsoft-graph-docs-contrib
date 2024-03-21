@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: folderView
 ms.localizationpriority: medium
 description: "The FolderView resource provides or sets recommendations on the user-experience of a folder."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 

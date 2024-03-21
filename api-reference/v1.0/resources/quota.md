@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: quota
 ms.localizationpriority: medium
-description: "The quota resource provides details about space constrains on a drive resource."
-ms.prod: files
+description: "The quota resource provides details about space constraints on a drive resource."
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **quota** resource provides details about space constrains on a [drive](drive.md) resource.
+The **quota** resource provides details about space constraints on a [drive](drive.md) resource. In OneDrive Personal, the values reflect the total/used unified storage quota across multiple Microsoft services.
 
 ## JSON representation
 

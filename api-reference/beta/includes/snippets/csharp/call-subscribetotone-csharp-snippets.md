@@ -4,12 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.SubscribeToTone.SubscribeToTonePostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Communications.Calls.Item.SubscribeToTone;
+
+var requestBody = new SubscribeToTonePostRequestBody
 {
 	ClientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Communications.Calls["{call-id}"].SubscribeToTone.PostAsync(requestBody);
 
 

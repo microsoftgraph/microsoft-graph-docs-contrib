@@ -1,9 +1,10 @@
 ---
 title: "conditionalAccessClientApplications resource type"
 description: "Represents client applications (service principals and workload identities) included in and excluded from the policy scope."
-author: "bakerCaleb"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

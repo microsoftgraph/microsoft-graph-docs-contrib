@@ -14,11 +14,13 @@
       "title",
       "description",
       "author",
-      "ms.prod",
       "doc_type",
       "ms.localizationpriority"
     ],
     "treatErrorsAsWarningsWorkloads": [
+      "intune"
+    ],
+    "skipPermissionTableUpdateForWorkloads": [
       "intune"
     ],
     "foldersToSkip": [

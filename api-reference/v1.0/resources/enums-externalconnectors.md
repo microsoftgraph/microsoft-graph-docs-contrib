@@ -3,7 +3,7 @@ title: "External connectors enum values"
 description: "Microsoft Graph external connectors enumeration values"
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 author: "emzho"
 ---
 
@@ -30,7 +30,6 @@ Namespace: microsoft.graph.externalConnectors
 | externalGroup
 | unknownFutureValue
 
-
 ### connectionOperationStatus values
 
 | Member
@@ -50,6 +49,16 @@ Namespace: microsoft.graph.externalConnectors
 | obsolete
 | limitExceeded
 | unknownFutureValue
+
+### externalActivityType values
+
+| Member             |
+|:-------------------|
+| viewed             |
+| modified           |
+| created            |
+| commented          |
+| unknownFutureValue |
 
 ### externalItemContentType values
 
@@ -81,6 +90,7 @@ Namespace: microsoft.graph.externalConnectors
 | lastModifiedDateTime
 | fileName
 | fileExtension
+| iconUrl
 | unknownFutureValue
 
 ### propertyType values
@@ -97,6 +107,20 @@ Namespace: microsoft.graph.externalConnectors
 | doubleCollection
 | dateTimeCollection
 | unknownFutureValue
+
+### ruleOperation values
+
+|Member|
+|:---|
+|null|
+|equals|
+|notEquals|
+|contains|
+|notContains|
+|lessThan|
+|greaterThan|
+|startsWith|
+|unknownFutureValue|
 
 <!--
 {

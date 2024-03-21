@@ -1,9 +1,9 @@
 ---
 title: "teamsAsyncOperationType enum type"
-description: "Types of teamsAsyncOperation. Members will be added here as more async operations are supported."
+description: "Types of teamsAsyncOperation. Members are added here as more async operations are supported."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: enumPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added here as more async operations are supported.
+Types of [teamsAsyncOperation](teamsasyncoperation.md). Members are added here as more async operations are supported.
 
 ## Members
 
@@ -24,6 +24,6 @@ Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added he
 |archiveTeam|Operation to archive a team.|
 |unarchiveTeam|Operation to restore an archived team.|
 |createTeam|Operation to create a team from scratch.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 |teamifyGroup |Operation to create a team from a group. |
 |createChannel |Operation to create a channel in a team. |

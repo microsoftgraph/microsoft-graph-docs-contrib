@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	DisplayName = "displayName-value"
-	ApiVersion = 99
-	Encryption = @{
-		Protocol = "protocol-value"
-		Secret = "secret-value"
+	displayName = "displayName-value"
+	apiVersion = 99
+	encryption = @{
+		protocol = "protocol-value"
+		secret = "secret-value"
 	}
-	IsActive = $true
-	Url = "url-value"
-	SupportedEntities = "supportedEntities-value"
+	isActive = $true
+	url = "url-value"
+	supportedEntities = "supportedEntities-value"
 }
 
 Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId -BodyParameter $params

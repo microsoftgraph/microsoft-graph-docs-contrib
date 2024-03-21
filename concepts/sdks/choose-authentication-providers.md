@@ -5,11 +5,11 @@ ms.localizationpriority: medium
 author: MichaelMainer
 ---
 
-<!-- markdownlint-disable MD001 MD024 MD051 -->
+<!-- markdownlint-disable MD024 MD051 -->
 
-# Choose a Microsoft Graph authentication provider based on scenario
+# Choose a Microsoft Graph authentication provider based on the scenario
 
-Authentication providers implement the code required to acquire a token using the Microsoft Authentication Library (MSAL); handle a number of potential errors for cases like incremental consent, expired passwords, and conditional access; and then set the HTTP request authorization header. The following table lists the set of providers that match the scenarios for different [application types](/azure/active-directory/develop/v2-app-types).
+Authentication providers implement the code required to acquire a token using the Microsoft Authentication Library (MSAL), handle some potential errors for cases like incremental consent, expired passwords, and conditional access, and then set the HTTP request authorization header. The following table lists the providers that match the scenarios for different [application types](/azure/active-directory/develop/v2-app-types).
 
 | Scenario                                                                                               | Flow/Grant         | Audience               | Provider |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
@@ -31,164 +31,49 @@ Authentication providers implement the code required to acquire a token using th
 |                                                                                                        | Interactive        | Delegated Consumer/Org | [Interactive provider](#interactive-provider) |
 
 > [!NOTE]
-> The following code snippets were written with the latest versions of their respective SDKs. If you encounter compiler errors with these snippets, make sure you have the latest versions. The authentication providers used are provided by the following Azure Identity libraries:
+> The following code snippets were written with the latest versions of their respective SDKs. If you encounter compiler errors with these snippets, make sure you have the latest versions. The following Azure Identity libraries provide the authentication providers used:
 >
 > - .NET developers need to add the [Azure.Identity](/dotnet/api/azure.identity) package.
-> - JavaScript developers need to add the [@azure/identity](/javascript/api/@azure/identity) library.
+> - TypeScript and JavaScript developers need to add the [@azure/identity](/javascript/api/@azure/identity) library.
 > - Java and Android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme) library.
 
 ## Authorization code provider
 
-The authorization code flow enables native and web apps to securely obtain tokens in the name of the user. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+The authorization code flow enables native and web apps to obtain tokens in the user's name securely. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
-```csharp
-var scopes = new[] { "User.Read" };
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="AuthorizationCodeSnippet":::
 
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+### [Go](#tab/go)
 
-// Values from app registration
-var clientId = "YOUR_CLIENT_ID";
-var clientSecret = "YOUR_CLIENT_SECRET";
+The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) doesn't support the authorization code flow.
 
-// For authorization code flow, the user signs into the Microsoft
-// identity platform, and the browser is redirected back to your app
-// with an authorization code in the query parameters
-var authorizationCode = "AUTH_CODE_FROM_REDIRECT";
+### [Java](#tab/java)
 
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
 
-// https://learn.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
-var authCodeCredential = new AuthorizationCodeCredential(
-    tenantId, clientId, clientSecret, authorizationCode, options);
+### [PHP](#tab/PHP)
 
-var graphClient = new GraphServiceClient(authCodeCredential, scopes);
-```
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. In this case, [AuthorizationCodeContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/AuthorizationCodeContext.php).
 
-# [Javascript](#tab/Javascript)
+:::code language="php" source="./snippets/php/snippets/CreateClients.php" id="AuthorizationCodeSnippet":::
 
-### Using @azure/msal-browser for  browser applications
+### [Python](#tab/python)
 
-```javascript
+In the following example, we're using the asynchronous [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.authorizationcodecredential?view=azure-python&preserve-view-true) of this credential.
 
-const {
-    PublicClientApplication,
-    InteractionType,
-    AccountInfo
-} = require("@azure/msal-browser");
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="AuthorizationCodeSnippet":::
 
-const {
-    AuthCodeMSALBrowserAuthenticationProvider,
-    AuthCodeMSALBrowserAuthenticationProviderOptions
-} = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
+### [TypeScript](#tab/typescript)
 
-const options: AuthCodeMSALBrowserAuthenticationProviderOptions = {
-    account: account, // the AccountInfo instance to acquire the token for.
-    interactionType: InteractionType.PopUp, // msal-browser InteractionType
-    scopes: ["user.read", "mail.send"] // example of the scopes to be passed
-}
+### Using @azure/MSAL-browser for browser applications
 
-// Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
-const authProvider = new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="BrowserSnippet":::
 
 ### Using @azure/identity for server-side applications
 
-```javascript
-const {
-    Client
-} = require("@microsoft/microsoft-graph-client");
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    AuthorizationCodeCredential
-} = require("@azure/identity");
-
-const credential = new AuthorizationCodeCredential(
-    "<YOUR_TENANT_ID>",
-    "<YOUR_CLIENT_ID>",
-    "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
-    "<REDIRECT_URL>"
-);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
-
-```
-
-# [Java](#tab/Java)
-
-```java
-final AuthorizationCodeCredential authCodeCredential = new AuthorizationCodeCredentialBuilder()
-        .clientId(clientId)
-        .clientSecret(clientSecret) //required for web apps, do not set for native apps
-        .authorizationCode(authorizationCode)
-        .redirectUrl(redirectUri)
-        .build();
-
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, authCodeCredential);
-
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
-
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-```go
-import (
-    "context"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewAuthorizationCodeCredential(
-    "TENANT_ID",
-    "CLIENT_ID",
-    "AUTH_CODE",
-    "REDIRECT_URL",
-    &azidentity.AuthorizationCodeCredentialOptions {
-        ClientSecret: "CLIENT_SECRET",
-    },
-)
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-
-result, err := client.Me().Get(nil)
-```
-
-# [Python](#tab/Python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
-You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true).
-
-```python
-from azure.identity.aio import AuthorizationCodeCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-credential=AuthorizationCodeCredential(
-    tenant_id = 'TENANT_ID',
-    client_id = 'CLIENT_ID',
-    authorization_code = 'AUTH_CODE',
-    redirect_uri = 'REDIRECT_URL')
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="AuthorizationCodeSnippet":::
 
 ---
 
@@ -196,420 +81,172 @@ auth_provider = AzureIdentityAuthenticationProvider(credential)
 
 The client credential flow enables service applications to run without user interaction. Access is based on the identity of the application. For more information, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-# [C#](#tab/CS)
-
-### Using a client secret
-
-```csharp
-// The client credentials flow requires that you request the
-// /.default scope, and preconfigure your permissions on the
-// app registration in Azure. An administrator must grant consent
-// to those permissions beforehand.
-var scopes = new[] { "https://graph.microsoft.com/.default" };
-
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
-
-// Values from app registration
-var clientId = "YOUR_CLIENT_ID";
-var clientSecret = "YOUR_CLIENT_SECRET";
-
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
-
-// https://learn.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
-var clientSecretCredential = new ClientSecretCredential(
-    tenantId, clientId, clientSecret, options);
-
-var graphClient = new GraphServiceClient(clientSecretCredential, scopes);
-```
+### [C#](#tab/csharp)
 
 ### Using a client certificate
 
-```csharp
-var scopes = new[] { "https://graph.microsoft.com/.default" };
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="ClientCertificateSnippet":::
 
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+### Using a client secret
 
-// Values from app registration
-var clientId = "YOUR_CLIENT_ID";
-var clientCertificate = new X509Certificate2("MyCertificate.pfx");
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="ClientSecretSnippet":::
 
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
+### [Go](#tab/go)
 
-// https://learn.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
-var clientCertCredential = new ClientCertificateCredential(
-    tenantId, clientId, clientCertificate, options);
+### Using a client certificate
 
-var graphClient = new GraphServiceClient(clientCertCredential, scopes);
-```
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="ClientCertificateSnippet":::
 
-# [Javascript](#tab/Javascript)
+### Using a client secret
 
-```javascript
-const {
-    Client
-} = require("@microsoft/microsoft-graph-client");
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    ClientSecretCredential
-} = require("@azure/identity");
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="ClientSecretSnippet":::
 
-const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
+### [Java](#tab/java)
 
-const client = Client.initWithMiddleware({
-    debugLogging: true,
-    authProvider
-    // Use the authProvider object to create the class.
-});
-```
+### Using a client certificate
 
-# [Java](#tab/Java)
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientCertificateSnippet":::
 
-```java
-final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
-        .clientId(clientId)
-        .clientSecret(clientSecret)
-        .tenantId(tenant)
-        .build();
+### Using a client secret
 
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, clientSecretCredential);
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientSecretSnippet":::
 
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
+### [PHP](#tab/PHP)
 
-final User me = graphClient.me().buildRequest().get();
-```
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. In this case, [ClientCredentialContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/ClientCredentialContext.php).
 
-# [Go](#tab/Go)
+### Using a client certificate
 
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+:::code language="php" source="./snippets/php/snippets/CreateClients.php" id="ClientCertificateSnippet":::
 
-```go
-import (
-    "context"
+### Using a client secret
 
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
+:::code language="php" source="./snippets/php/snippets/CreateClients.php" id="ClientSecretSnippet":::
 
-cred, err := azidentity.NewClientSecretCredential(
-    "TENANT_ID",
-    "CLIENT_ID",
-    "CLIENT_SECRET",
-    nil,
-)
+### [Python](#tab/python)
 
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
+### Using a client certificate
 
-result, err := client.Me().Get(nil)
-```
+In the following example, we're using the asynchronous [CertificateCredential](/python/api/azure-identity/azure.identity.aio.certificatecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.certificatecredential?view=azure-python&preserve-view-true) of this credential.
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientCertificateSnippet":::
 
-# [Python](#tab/Python)
+### Using a client secret
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+In the following example, we're using the asynchronous [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.clientsecretcredential?view=azure-python&preserve-view-true) of this credential.
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientSecretSnippet":::
 
-You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true).
+### [TypeScript](#tab/typescript)
 
-```python
-from azure.identity.aio import ClientSecretCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+### Using a client certificate
 
-credential=ClientSecretCredential(
-    tenant_id = 'TENANT_ID',
-    client_id = 'CLIENT_ID',
-    client_secret = 'CLIENT_SECRET')
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientCertificateSnippet":::
+
+### Using a client's secret
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientSecretSnippet":::
 
 ---
 
 ## On-behalf-of provider
 
-The on-behalf-of flow is applicable when your application calls a service/web API which in turns calls the Microsoft Graph API. Learn more by reading [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+The on-behalf-of flow is applicable when your application calls a service/web API, which calls the Microsoft Graph API. Learn more by reading [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
-The `Azure.Identity` package does not support the on-behalf-of flow as of version 1.4.0. Instead create a custom authentication provider using MSAL.
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="OnBehalfOfSnippet":::
 
-```csharp
-var scopes = new[] { "User.Read" };
+### [Go](#tab/go)
 
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="OnBehalfOfSnippet":::
 
-// Values from app registration
-var clientId = "YOUR_CLIENT_ID";
-var clientSecret = "YOUR_CLIENT_SECRET";
+### [Java](#tab/java)
 
-// using Azure.Identity;
-var options = new OnBehalfOfCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="OnBehalfOfSnippet":::
 
-// This is the incoming token to exchange using on-behalf-of flow
-var oboToken = "JWT_TOKEN_TO_EXCHANGE";
+### [PHP](#tab/PHP)
 
-var onBehalfOfCredential = new OnBehalfOfCredential(tenantId, clientId, clientSecret, oboToken, options);
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. In this case, [OnBehalfOfContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/OnBehalfOfContext.php).
 
-var graphClient = new GraphServiceClient(onBehalfOfCredential,scopes);
-```
+:::code language="php" source="./snippets/php/snippets/CreateClients.php" id="OnBehalfOfSnippet":::
 
-# [Javascript](#tab/Javascript)
+### [Python](#tab/python)
 
-On-behalf-of OAuth flows require that you implement a custom authentication provider at this time. Read [Using Custom Authentication Provider](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) for more information.
+In the following example, we're using the asynchronous [OnBehalfOfCredential](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.onbehalfofcredential?view=azure-python&preserve-view-true) of this credential.
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="OnBehalfOfSnippet":::
 
-# [Java](#tab/Java)
+### [TypeScript](#tab/typescript)
 
-```java
-final OnBehalfOfCredential onBehalfOfCredential = new OnBehalfOfCredentialBuilder()
-        .clientId(clientID)
-        .pfxCertificate(pfxCertificatePath) // or .pemCertificate(certificatePath) or .clientSecret("ClientSecret")
-        .clientCertificatePassword(pfxCertificatePassword) // remove if using pemCertificate or clientSecret
-        .tokenCachePersistenceOptions(tokenCachePersistenceOptions) //Optional: enables the persistent token cache which is disabled by default
-        .userAssertion(userAssertion)
-        .build();
-
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, onBehalfOfCredential);
-
-final GraphServiceClient graphClient = GraphServiceClient
-        .builder()
-        .authenticationProvider(tokenCredentialAuthProvider)
-        .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
-
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
-
-# [Python](#tab/Python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
-For details on the library see [OnBehalfOfCredential Class](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true).
-
-```python
-from azure.identity.aio import OnBehalfOfCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-credential=OnBehalfOfCredential(
-    tenant_id = 'TENANT_ID',
-    client_id = 'CLIENT_ID',
-    client_secret = 'CLIENT_SECRET',
-    user_assertion = 'USER_ASSERTION')
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="OnBehalfOfSnippet":::
 
 ---
 
 ## Implicit provider
 
-Implicit Authentication flow is not recommended due to its [disadvantages](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Public clients such as native apps and JavaScript apps should now use the authorization code flow with the PKCE extension instead. [Reference](https://oauth.net/2/grant-types/implicit/).
+Implicit Authentication flow isn't recommended due to its [disadvantages](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Public clients such as native apps and single-page apps should now use the authorization code flow with the PKCE extension instead. [Reference](https://oauth.net/2/grant-types/implicit/).
 
 ## Device code provider
 
-The device code flow enables sign in to devices by way of another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
+The device code flow enables sign-in to devices through another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
 
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
-```csharp
-var scopes = new[] { "User.Read" };
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+### [Go](#tab/go)
 
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
+### [Java](#tab/java)
 
-// Callback function that receives the user prompt
-// Prompt contains the generated device code that use must
-// enter during the auth process in the browser
-Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
-    Console.WriteLine(code.Message);
-    return Task.FromResult(0);
-};
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
-// https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
-var deviceCodeCredential = new DeviceCodeCredential(
-    callback, tenantId, clientId, options);
+### [PHP](#tab/PHP)
 
-var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
-```
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
-# [Javascript](#tab/Javascript)
+### [Python](#tab/python)
 
-```javascript
-const {
-    Client
-} = require("@microsoft/microsoft-graph-client");
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    DeviceCodeCredential
-} = require("@azure/identity");
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
-const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
+### [TypeScript](#tab/typescript)
 
-const client = Client.initWithMiddleware({
-    debugLogging: true,
-    authProvider
-    // Use the authProvider object to create the class.
-});
-```
-
-# [Java](#tab/Java)
-
-```java
-final DeviceCodeCredential deviceCodeCredential = new DeviceCodeCredentialBuilder()
-                    .clientId(clientId)
-                    .challengeConsumer(challenge -> {
-                        // lets user know of the challenge
-                        System.out.println(challenge.getMessage());
-                    })
-                    .build();
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, deviceCodeCredential);
-
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
-
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-```go
-import (
-    "context"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredentialOptions{
-    ClientID: "CLIENT_ID",
-    UserPrompt: func(ctx context.Context, message azidentity.DeviceCodeMessage) error {
-        fmt.Println(message.Message)
-        return nil
-    },
-})
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-
-result, err := client.Me().Get(nil)
-```
-
-# [Python](#tab/Python)
-
-```python
-from azure.identity import DeviceCodeCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-# Create authentication provider object. Used to authenticate request
-credential = DeviceCodeCredential(client_id = 'CLIENT_ID')
-scopes = ['https://graph.microsoft.com/.default']
-auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
 ---
 
 ## Integrated Windows provider
 
-The integrated Windows flow provides a way for Windows computers to silently acquire an access token when they are domain joined. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
+The integrated Windows flow allows Windows computers to acquire an access token when domain-joined silently. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
-The `Azure.Identity` package does not currently support Windows integrated authentication. Instead create a custom authentication provider using MSAL.
+The `Azure.Identity` package doesn't currently support Windows-integrated authentication. Instead, create a custom access token provider using MSAL.
 
-```csharp
-public class TokenProvider : IAccessTokenProvider
-{
-    private readonly IPublicClientApplication publicClientApplication;
-    public TokenProvider(string clientId, string tenantId)
-    {
-        publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .WithTenantId(tenantId)
-            .Build();
-        AllowedHostsValidator = new AllowedHostsValidator();
-    }
-    public async Task<string> GetAuthorizationTokenAsync(Uri uri, Dictionary<string, object> additionalAuthenticationContext = default,
-        CancellationToken cancellationToken = default)
-    {
-        var scopes = new[] { "User.Read" };
-        var result = await publicClientApplication.AcquireTokenByIntegratedWindowsAuth(scopes).ExecuteAsync(); ;
-        // get the token and return it in your own way
-        return Task.FromResult(result.A);
-    }
+### Access token provider
 
-    public AllowedHostsValidator AllowedHostsValidator { get; }
-}
-```
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/IntegratedWindowsTokenProvider.cs" id="IntegratedWindowsTokenProviderSnippet":::
 
-```csharp
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+### Create the client
 
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="IntegratedWindowsSnippet":::
 
-var authenticationProvider = new BaseBearerTokenAuthenticationProvider(new TokenProvider(clientId,tenantId));
-var graphServiceClient = new GraphServiceClient(authenticationProvider);
-```
-
-# [Javascript](#tab/Javascript)
+### [Go](#tab/go)
 
 Not applicable.
 
-# [Java](#tab/Java)
+### [Java](#tab/java)
 
 Not applicable.
 
-# [Go](#tab/Go)
+### [PHP](#tab/PHP)
+
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
+
+### [Python](#tab/python)
 
 Not applicable.
 
-# [Python](#tab/Python)
+### [TypeScript](#tab/typescript)
 
 Not applicable.
 
@@ -617,193 +254,66 @@ Not applicable.
 
 ## Interactive provider
 
-The interactive flow is used by mobile applications (Xamarin and UWP) and desktops applications to call Microsoft Graph in the name of a user. For details, see [Acquiring tokens interactively](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
+The interactive flow is used by mobile applications (Xamarin and UWP) and desktop applications to call Microsoft Graph in the name of a user. For details, see [Acquiring tokens interactively](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
-```csharp
-var scopes = new[] { "User.Read" };
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="InteractiveSnippet":::
 
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+### [Go](#tab/go)
 
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="InteractiveSnippet":::
 
-// using Azure.Identity;
-var options = new InteractiveBrowserCredentialOptions
-{
-    TenantId = tenantId,
-    ClientId = clientId,
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud,
-    // MUST be http://localhost or http://localhost:PORT
-    // See https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/System-Browser-on-.Net-Core
-    RedirectUri = new Uri("http://localhost"),
-};
+### [Java](#tab/java)
 
-// https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
-var interactiveCredential = new InteractiveBrowserCredential(options);
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="InteractiveSnippet":::
 
-var graphClient = new GraphServiceClient(interactiveCredential, scopes);
-```
+### [PHP](#tab/PHP)
 
-# [Javascript](#tab/Javascript)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
+### [Python](#tab/python)
 
-# [Java](#tab/Java)
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="InteractiveSnippet":::
 
-```java
-final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
-                .clientId(clientId)
-                .redirectUrl("http://localhost:8765")
-                .build();
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, interactiveBrowserCredential);
+### [TypeScript](#tab/typescript)
 
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
-
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-```go
-import (
-    "context"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewInteractiveBrowserCredential(&azidentity.InteractiveBrowserCredentialOptions {
-    TenantID: "TENANT_ID",
-    ClientID: "CLIENT_ID",
-    RedirectURL: "REDIRECT_URL",
-})
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-
-result, err := client.Me().Get(nil)
-```
-
-# [Python](#tab/Python)
-
-```python
-from azure.identity import InteractiveBrowserCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-# Create authentication provider object. Used to authenticate request
-credential = InteractiveBrowserCredential()
-scopes = ['https://graph.microsoft.com/.default']
-auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="InteractiveSnippet":::
 
 ---
 
 ## Username/password provider
 
-The username/password provider allows an application to sign in a user by using their username and password. Use this flow only when you cannot use any of the other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
+The username/password provider allows an application to sign in a user using their username and password. Use this flow only when you can't use any other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
 
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
-```csharp
-var scopes = new[] { "User.Read" };
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="UserNamePasswordSnippet":::
 
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+### [Go](#tab/go)
 
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="UserNamePasswordSnippet":::
 
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
+### [Java](#tab/java)
 
-var userName = "adelev@contoso.com";
-var password = "P@ssword1!";
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="UserNamePasswordSnippet":::
 
-// https://learn.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
-var userNamePasswordCredential = new UsernamePasswordCredential(
-    userName, password, tenantId, clientId, options);
+### [PHP](#tab/PHP)
 
-var graphClient = new GraphServiceClient(userNamePasswordCredential, scopes);
-```
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
-# [Javascript](#tab/Javascript)
+### [Python](#tab/python)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://aka.ms/graphrequests) if this is important to you.
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="UserNamePasswordSnippet":::
 
-# [Java](#tab/Java)
+### [TypeScript](#tab/typescript)
 
-```java
-final UsernamePasswordCredential usernamePasswordCredential = new UsernamePasswordCredentialBuilder()
-        .clientId(clientId)
-        .username(username)
-        .password(password)
-        .build();
-
-final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, usernamePasswordCredential);
-
-final GraphServiceClient graphClient =
-  GraphServiceClient
-    .builder()
-    .authenticationProvider(tokenCredentialAuthProvider)
-    .buildClient();
-
-final User me = graphClient.me().buildRequest().get();
-```
-
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-```go
-import (
-    "context"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewUsernamePasswordCredential(
-    "TENANT_ID",
-    "CLIENT_ID",
-    "USER_NAME",
-    "PASSWORD",
-    nil,
-)
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-
-result, err := client.Me().Get(nil)
-```
-
-# [Python](#tab/Python)
-
-```python
-from azure.identity import UsernamePasswordCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-# Create authentication provider object. Used to authenticate request
-credential = UsernamePasswordCredential(CLIENT_ID, USERNAME, PASSWORD)
-scopes = ['https://graph.microsoft.com/.default']
-auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="UserNamePasswordSnippet":::
 
 ---
 
 ## Next steps
 
 - For code samples that show you how to use the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
-- Authentication providers require an client ID. You'll want to [register your application](https://portal.azure.com/) after you set up your authentication provider.
+- Authentication providers require a client ID. You'll want to [register your application](https://entra.microsoft.com/) after you set up your authentication provider.
 - Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://aka.ms/graphrequests).

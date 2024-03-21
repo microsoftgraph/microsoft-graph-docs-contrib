@@ -3,7 +3,7 @@ title: "List enterpriseCodeSigningCertificates"
 description: "List properties and relationships of the enterpriseCodeSigningCertificate objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ GET /deviceAppManagement/enterpriseCodeSigningCertificates
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,13 +48,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ### Request
-Here is an example of the request.
+The following example shows a request.
+
+<!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_list_list_enterprisecodesigningcertificates" }-->
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.enterpriseCodeSigningCertificate" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

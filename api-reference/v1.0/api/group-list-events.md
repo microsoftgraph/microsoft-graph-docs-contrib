@@ -3,7 +3,7 @@ title: "List events"
 description: "Retrieve a list of event objects."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 Retrieve a list of [event](../resources/event.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
@@ -37,17 +39,17 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}. Required.  |
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
-| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header isn't specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [event](../resources/event.md) objects in the response body.
 
 ## Example
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,30 +65,38 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-events-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-events-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-group-events-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-group-events-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-events-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-events-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-events-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-events-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-group-events-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-events-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-group-events-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -175,7 +185,7 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "Joni Sherman",
-                  "address": "JoniS@contoso.onmicrosoft.com"
+                  "address": "JoniS@contoso.com"
               }
           },
           {
@@ -186,7 +196,7 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "HR Taskforce",
-                  "address": "HRTaskforce@contoso.onmicrosoft.com"
+                  "address": "HRTaskforce@contoso.com"
               }
           },
           {
@@ -197,7 +207,7 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "Megan Bowen",
-                  "address": "MeganB@contoso.onmicrosoft.com"
+                  "address": "MeganB@contoso.com"
               }
           },
           {
@@ -208,7 +218,7 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "Lidia Holloway",
-                  "address": "LidiaH@contoso.onmicrosoft.com"
+                  "address": "LidiaH@contoso.com"
               }
           },
           {
@@ -219,14 +229,14 @@ Content-type: application/json
               },
               "emailAddress": {
                   "name": "Emily Braun",
-                  "address": "EmilyB@contoso.onmicrosoft.com"
+                  "address": "EmilyB@contoso.com"
               }
           }
       ],
       "organizer": {
           "emailAddress": {
               "name": "HR Taskforce",
-              "address": "HRTaskforce@contoso.onmicrosoft.com"
+              "address": "HRTaskforce@contoso.com"
           }
       }
     }

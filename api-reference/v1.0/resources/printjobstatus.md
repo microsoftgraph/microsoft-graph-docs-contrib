@@ -3,7 +3,7 @@ title: printJobStatus resource type
 description: Represents the current status of a print job.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Represents the current status of a print job.
 
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|The processing state reported by the printer is not recognized.|
+|unknown|0|The processing state reported by the printer isn't recognized.|
 |pending|1|The print job is pending processing by the printer.|
 |processing|2|The print job is currently being processed by the printer.|
 |paused|3|The print job has been paused.|
@@ -38,7 +38,7 @@ Represents the current status of a print job.
 
 |Member|Value|Description|
 |:---|:---|:---|
-|uploadPending|0|Document payload has not been uploaded.|
+|uploadPending|0|Document payload hasn't been uploaded.|
 |transforming|1|Document payload is being transformed.|
 |completedSuccessfully|2|Job has been completed successfully.|
 |completedWithWarnings|3|Job has been completed with warnings.|
@@ -47,7 +47,7 @@ Represents the current status of a print job.
 |interpreting|6|Job is in 'processing' state, but more specifically, document payload is being interpreted.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printJobStatus"

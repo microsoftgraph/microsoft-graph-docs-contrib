@@ -3,8 +3,8 @@ title: "Identity governance enum values"
 description: "Microsoft Graph identity governance enumeration values"
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "governance"
-author: "FaithOmbongi"
+ms.subservice: "entra-id-governance"
+author: "AlexFilipin"
 ---
 
 # Identity governance enum values
@@ -87,6 +87,7 @@ Namespace: microsoft.graph.identityGovernance
 |employeeHireDate|
 |employeeLeaveDateTime|
 |unknownFutureValue|
+
 
 
 <!--

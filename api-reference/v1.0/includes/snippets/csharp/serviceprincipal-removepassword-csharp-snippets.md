@@ -4,12 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.ServicePrincipals.Item.RemovePassword.RemovePasswordPostRequestBody
+// Dependencies
+using Microsoft.Graph.ServicePrincipals.Item.RemovePassword;
+
+var requestBody = new RemovePasswordPostRequestBody
 {
 	KeyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6"),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.ServicePrincipals["{servicePrincipal-id}"].RemovePassword.PostAsync(requestBody);
 
 

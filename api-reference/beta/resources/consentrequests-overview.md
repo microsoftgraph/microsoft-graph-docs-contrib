@@ -1,24 +1,24 @@
 ---
-title: "Azure Active Directory consent requests"
+title: "Microsoft Entra consent requests"
 description: "Use the consent request APIs to configure the consent request workflow and to manage consent requests for users attempting to access apps that require admin consent."
 ms.localizationpriority: medium
-author: "psignoret"
-ms.prod: "governance"
+author: "eringreenlee"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 09/28/2022
 ---
 
-# Azure Active Directory consent requests
+# Microsoft Entra consent requests
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) consent requests help you manage the request workflow for users attempting to access apps that require admin approval.
+Microsoft Entra consent requests help you manage the request workflow for users attempting to access apps that require admin approval.
 
-Before an app can be used to access any data in your organization, the admin must consent for it to be used in the tenant. In addition, before a user can grant a consented application specific permissions to act on their behalf, the admin must also consent for users to be allowed to consent to those permissions for the app. Consent management is one way that Azure AD helps organizations to enforce application and data security.
+Before an app can be used to access any data in your organization, the admin must consent for it to be used in the tenant. In addition, before a user can grant a consented application specific permissions to act on their behalf, the admin must also consent for users to be allowed to consent to those permissions for the app. Consent management is one way that Microsoft Entra ID helps organizations to enforce application and data security.
 
-The Azure AD consent workflow allows users to request the tenant admins to grant consent to apps that require admin approval. The consent requests APIs in Microsoft Graph allows admin to configure the consent workflow and track consent requests for both apps and users.
+The Microsoft Entra consent workflow allows users to request the tenant admins to grant consent to apps that require admin approval. The consent requests APIs in Microsoft Graph allows admin to configure the consent workflow and track consent requests for both apps and users.
 
 >[!NOTE]
 >The current APIs are limited to configuring the workflow and reading the list of requests. At this time, there aren’t any methods available to programmatically approve or deny a request. However, the contents of the request can be used to recreate a URL which can be used to grant admin consent and approve a request.
@@ -59,10 +59,10 @@ The following directory roles are required for a calling application.
 |:------------------|:------------|:--------------------------------------------|
 | Read | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Global Reader, Cloud App Administrator, Application Administrator, or Global Administrator   |
 
-## See also
+## Related content
 
 - Learn more about how to [configure the admin consent workflow (preview)](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
-- Understand the user and admin consent flows in the [Azure AD application consent experiences](/azure/active-directory/develop/application-consent-experience).
+- Understand the user and admin consent flows in the [Microsoft Entra application consent experiences](/azure/active-directory/develop/application-consent-experience).
 
 
 <!--

@@ -2,8 +2,9 @@
 title: "phoneAuthenticationMethod resource type"
 description: "A representation of a phone registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
-ms.prod: "identity-and-sign-in"
+author: "luc-msft"
+ms.reviewer: intelligentaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -17,7 +18,7 @@ A representation of a phone registered to a user. This resource includes the pho
 
 A phone has one of three types: mobile, alternate mobile, or office. A user can have one number registered for each type, and must have a mobile phone before an alternate mobile phone is added. When using a phone for multi-factor authentication (MFA) or self-service password reset (SSPR), the mobile phone is the default and the alternate mobile phone is the backup. 
 
-Mobile phones can be used for both SMS and voice calls, depending on the tenant settings.
+Primary mobile phones can be used for both SMS and voice calls, depending on the tenant settings.
 
 An office phone can only receive voice calls, not SMS messages.
 
@@ -39,8 +40,8 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| The identifier of this phone registered to this user. Read-only. <br/><br/>The value of id is one of the following:<ul><li>`b6332ec1-7057-4abe-9331-3d72feddfe41` - where **phoneType** is `alternateMobile`.</li><li>`e37fc753-ff3b-4958-9484-eaa9425c82bc` - where **phoneType** is `office`.</li><li>`3179e48a-750b-4051-897c-87b9720928f7` - where **phoneType** is `mobile`.</li>|
-|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format. |
+|id|String| The identifier of this phone registered to this user. Read-only. <br/><br/>The value of ID is one of the following:<ul><li>`b6332ec1-7057-4abe-9331-3d72feddfe41` - where **phoneType** is `alternateMobile`.</li><li>`e37fc753-ff3b-4958-9484-eaa9425c82bc` - where **phoneType** is `office`.</li><li>`3179e48a-750b-4051-897c-87b9720928f7` - where **phoneType** is `mobile`.</li>|
+|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they don't match the required format. |
 |phoneType|authenticationPhoneType|The type of this phone. Possible values are: `mobile`, `alternateMobile`, or `office`.|
 |smsSignInState|authenticationMethodSignInState|Whether a phone is ready to be used for SMS sign-in or not. Possible values are: `notSupported`, `notAllowedByPolicy`, `notEnabled`, `phoneNumberNotUnique`, `ready`, or `notConfigured`, `unknownFutureValue`.|
 
@@ -51,7 +52,7 @@ Phones can be of three types, the following are the possible values.
 |Value|Description|
 |--------|-----------|
 |mobile|A primary mobile phone, usable for SMS and voice calls.|
-|alternateMobile|An alternate or backup mobile phone, usable for SMS and voice calls.|
+|alternateMobile|An alternate or backup mobile phone, usable only for voice calls.|
 |office|An office phone or landline, usable only for voice calls.|
 
 ### authenticationMethodSignInState values
@@ -62,10 +63,10 @@ The SMS sign-in state property gives information about whether or not a phone nu
 |--------|-----------|
 |notSupported|Primary sign-in not supported on this authentication method - for example, sign-in can be enabled only on a user's primary mobile number, not the alternate number.|
 |notAllowedByPolicy|This user isn't enabled by policy to use this method as a primary sign-in.|
-|notConfigured|This user is enabled by policy to use this method as primary sign-in but needs to take additional action to configure it.|
-|phoneNumberNotUnique|This user attempted to set up a phone number as primary sign-in but the number was not unique and can't be used as a sign-in name.|
+|notConfigured|This user is enabled by policy to use this method as primary sign-in but needs to take further action to configure it.|
+|phoneNumberNotUnique|This user attempted to set up a phone number as primary sign-in but the number wasn't unique and can't be used as a sign-in name.|
 |ready|This authentication method is ready for use in primary sign-in.|
-|notEnabled|This sign-in method is not enabled|
+|notEnabled|This sign-in method isn't enabled|
 
 ## Relationships
 
@@ -73,7 +74,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

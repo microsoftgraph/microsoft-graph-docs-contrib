@@ -3,7 +3,7 @@ title: printUsageByUser resource type
 description: Describes print activity for a user during a specified time period (usageDate).
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -26,12 +26,19 @@ Describes print activity for a user during a specified time period (usageDate).
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|blackAndWhitePageCount|Int64|The estimated number of black and white pages printed on behalf of the user based on reporting by the printer.|
+|colorPageCount|Int64|The estimated number of color pages printed on behalf of the user based on reporting by the printer.|
+|completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed on behalf of the user.|
+|completedColorJobCount|Int64|The number of color print jobs completed on behalf of the user.|
+|completedJobCount|Int64|The number of print jobs that were completed on behalf of the user.|
+|doubleSidedSheetCount|Int64|The estimated number of double-sided media sheets printed on behalf of the user based on reporting by the printer.|
 |id|String|The ID of this usage summary.|
-|userPrincipalName|String|The UPN of the user represented by these statistics.|
+|incompleteJobCount|Int64|The number of print jobs that were queued on behalf of the user, but not completed.|
+|mediaSheetCount|Int64|The estimated number of media sheets printed on behalf of the user based on reporting by the printer.|
+|pageCount|Int64|The estimated number of pages printed on behalf of the user based on reporting by the printer.|
+|singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed on behalf of the user based on reporting by the printer.|
 |usageDate|Date|The date associated with these statistics.|
-|completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed on behalf of the user on the associated date.|
-|completedColorJobCount|Int64|The number of color print jobs completed on behalf of the user on the associated date.|
-|incompleteJobCount|Int64|The number of print jobs that were queued on behalf of the user, but not completed, on the associated date.|
+|userPrincipalName|String|The UPN of the user represented by these statistics.|
 
 ## JSON representation
 
@@ -50,9 +57,16 @@ The following is a JSON representation of the resource.
     "id": "String (identifier)",
     "userPrincipalName": "String (identifier)",
     "usageDate": "String (timestamp)",
-    "completedBlackAndWhiteJobCount": 123456,
-    "completedColorJobCount": 123456,
-    "incompleteJobCount": 123456
+    "completedBlackAndWhiteJobCount": "Integer",
+    "completedColorJobCount": "Integer",
+    "completedJobCount": "Integer",
+    "incompleteJobCount": "Integer",
+    "pageCount": "Integer",
+    "blackAndWhitePageCount": "Integer",
+    "colorPageCount": "Integer",
+    "mediaSheetCount": "Integer",
+    "doubleSidedSheetCount": "Integer",
+    "singleSidedSheetCount": "Integer"
 }
 ```
 

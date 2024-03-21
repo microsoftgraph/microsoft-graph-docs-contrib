@@ -4,27 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Site> valueList = new LinkedList<Site>();
-Site value = new Site();
-value.id = "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-valueList.add(value);
-Site value1 = new Site();
-value1.id = "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851";
+com.microsoft.graph.users.item.followedsites.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.users.item.followedsites.add.AddPostRequestBody();
+LinkedList<Site> value = new LinkedList<Site>();
+Site site = new Site();
+site.setId("contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740");
+value.add(site);
+Site site1 = new Site();
+site1.setId("contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851");
+value.add(site1);
+addPostRequestBody.setValue(value);
+var result = graphClient.users().byUserId("{user-id}").followedSites().add().post(addPostRequestBody);
 
-valueList.add(value1);
-SiteCollectionResponse siteCollectionResponse = new SiteCollectionResponse();
-siteCollectionResponse.value = valueList;
-SiteCollectionPage siteCollectionPage = new SiteCollectionPage(siteCollectionResponse, null);
-
-graphClient.users("{user-id}").followedSites()
-	.add(SiteAddParameterSet
-		.newBuilder()
-		.withValue(valueList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

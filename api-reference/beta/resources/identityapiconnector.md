@@ -1,9 +1,9 @@
 ---
 title: "identityApiConnector resource type"
-description: "Represents API connectors in an Azure Active Directory tenant."
+description: "Represents API connectors in a Microsoft Entra tenant."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents API connectors in an Azure Active Directory (Azure AD) and Azure AD B2C tenants.
+Represents API connectors in a Microsoft Entra ID and Azure AD B2C tenants.
 
-An API connector used in your Azure AD External Identities self-service sign-up and Azure AD B2C sign-up user flows allows you to call an API during the execution of the user flow. An API connector provides the information needed to call an API including an endpoint URL and authentication. An API connector can be used at a specific step in a user flow to affect the execution of the user flow. For example, the API response can block a user from signing up, show an input validation error, or overwrite user collected attributes.
+An API connector used in your Microsoft Entra External ID self-service sign-up and Azure AD B2C sign-up user flows allows you to call an API during the execution of the user flow. An API connector provides the information needed to call an API including an endpoint URL and authentication. An API connector can be used at a specific step in a user flow to affect the execution of the user flow. For example, the API response can block a user from signing up, show an input validation error, or overwrite user collected attributes.
 
 Use the [b2xIdentityUserFlow](b2xidentityuserflow.md) API to use an API connector from an External Identities self-service sign-up user flow.
 

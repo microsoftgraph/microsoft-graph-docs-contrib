@@ -6,61 +6,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new Item();
-$additionalData = [
-'acl' => $acl1 = new ();
-$		acl1->setType('user');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$		acl1->setValue('e811976d-83df-4cbd-8b9b-5215b18aa874');
-
-$		acl1->setAccessType('grant');
-
-$		acl1->setIdentitySource('azureActiveDirectory');
-
-
-$aclArray []= $acl1;
-$acl2 = new ();
-$		acl2->setType('group');
-
-$		acl2->setValue('14m1b9c38qe647f6a');
-
-$		acl2->setAccessType('deny');
-
-$		acl2->setIdentitySource('external');
-
-
-$aclArray []= $acl2;
+$requestBody = new ExternalItem();
+$aclAcl1 = new Acl();
+$aclAcl1->setType(new AclType('user'));
+$aclAcl1->setValue('e811976d-83df-4cbd-8b9b-5215b18aa874');
+$aclAcl1->setAccessType(new AccessType('grant'));
+$aclAcl1->setIdentitySource(new IdentitySourceType('azureActiveDirectory'));
+$aclArray []= $aclAcl1;
+$aclAcl2 = new Acl();
+$aclAcl2->setType(new AclType('group'));
+$aclAcl2->setValue('14m1b9c38qe647f6a');
+$aclAcl2->setAccessType(new AccessType('deny'));
+$aclAcl2->setIdentitySource(new IdentitySourceType('external'));
+$aclArray []= $aclAcl2;
 $requestBody->setAcl($aclArray);
 
-
-'properties' => $requestBody = new Properties();
-$	requestBody->setTitle('Error in the payment gateway');
-
-	$requestBody->setPriority(1);
-
-$	requestBody->setAssignee('john@contoso.com');
-
-
+$properties = new Properties();
+$additionalData = [
+'title' => 'Error in the payment gateway',
+'priority' => 1,
+'assignee' => 'john@contoso.com',
+];
+$properties->setAdditionalData($additionalData);
 $requestBody->setProperties($properties);
-
-'content' => $requestBody = new Content();
-$	requestBody->setValue('Error in payment gateway...');
-
-$	requestBody->setType('text');
-
-
+$content = new ExternalItemContent();
+$content->setValue('Error in payment gateway...');
+$content->setType(new ExternalItemContentType('text'));
 $requestBody->setContent($content);
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$graphServiceClient->external()->connectionsById('externalConnection-id')->itemsById('externalItem-id')->put($requestBody);
-
+$result = $graphServiceClient->external()->connections()->byExternalConnectionId('externalConnection-id')->items()->byExternalItemId('externalItem-id')->put($requestBody)->wait();
 
 ```

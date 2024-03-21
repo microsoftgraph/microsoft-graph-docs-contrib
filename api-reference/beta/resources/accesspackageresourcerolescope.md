@@ -3,7 +3,7 @@ title: "accessPackageResourceRoleScope resource type"
 description: "An access package resource role scope is a reference to both a scope within a resource, and a role in that resource."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -13,14 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package resource role scope is a reference to both a scope within a resource, and a role in that resource for that scope.  An access package will have access package resource role scopes for the resources in its catalog which are relevant to that access package.  When a subject receives an access package assignment, the subject will be provisioned with the role in that scope of each access package resource role scope.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource role scope is a reference to both a scope within a resource, and a role in that resource for that scope.  An access package will have access package resource role scopes for the resources in its catalog which are relevant to that access package.  When a subject receives an access package assignment, the subject will be provisioned with the role in that scope of each access package resource role scope.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
-| [Create accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Create a new **accessPackageResourceRoleScope** object for an access package. |
+| [Create accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |[accessPackageResourceRoleScope](accesspackageresourcerolescope.md)  | Create a new **accessPackageResourceRoleScope** object for an access package. |
+| [Delete accessPackageResourceRoleScope](../api/accesspackage-delete-accesspackageresourcerolescopes.md) | None | Create a new **accessPackageResourceRoleScope** object for an access package. |
 
 ## Properties
 
@@ -84,5 +85,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

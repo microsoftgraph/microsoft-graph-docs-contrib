@@ -3,7 +3,7 @@ title: "Business rules to follow when creating or updating Bookings appointments
 description: "Follow these business rules for business-level settings and service-level settings when using the create or update Bookings appointments APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: kwekua
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: conceptualPageType
 ---
 
@@ -21,7 +21,7 @@ Follow these business rules for business-level settings.
 
 ### Business hours
 
-Use the [Update bookingBusiness](/graph/api/bookingbusiness-update) API to modify **businessHours**. Note that an appointment can't be set outside the business hours.
+Use the [Update bookingBusiness](/graph/api/bookingbusiness-update) API to modify **businessHours**. An appointment can't be set outside the business hours.
 
 ### Scheduling policy
 
@@ -29,7 +29,7 @@ For details about the scheduling policy, see [bookingSchedulingPolicy](/graph/ap
 
 **Time increments (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
-**Minimum lead time** indicates the minimum time before an appointment can be made or cancelled.
+**Minimum lead time** indicates the minimum time before an appointment can be made or canceled.
 
 **Maximum Lead time** indicates the maximum time before an appointment can be made.  
 
@@ -62,7 +62,7 @@ This is the extra time needed for an appointment before a following appointment.
 
 This is the extra time needed for an appointment after a previous appointment. In the staff member calendar, the appointment is of duration "appointment slot time" + "post buffer time".
 
-## See also
+## Related content
 
 - [Microsoft Bookings API overview](booking-concept-overview.md)
 - [Microsoft Bookings API in Microsoft Graph](/graph/api/resources/booking-api-overview)

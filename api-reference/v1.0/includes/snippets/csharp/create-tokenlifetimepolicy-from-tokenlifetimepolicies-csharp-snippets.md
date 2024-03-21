@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new TokenLifetimePolicy
 {
 	Definition = new List<string>
 	{
-		"definition-value",
+		"{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}",
 	},
-	DisplayName = "displayName-value",
+	DisplayName = "Contoso token lifetime policy",
 	IsOrganizationDefault = true,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Policies.TokenLifetimePolicies.PostAsync(requestBody);
 
 

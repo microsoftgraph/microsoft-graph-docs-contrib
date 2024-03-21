@@ -6,19 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TabsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new TabsRequestBuilderGetQueryParameters();
+$queryParameters = TabsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["teamsApp"];
 $queryParameters->filter = "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->teamsById('team-id')->channelsById('channel-id')->tabs()->get($requestConfiguration);
-
+$result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->tabs()->get($requestConfiguration)->wait();
 
 ```

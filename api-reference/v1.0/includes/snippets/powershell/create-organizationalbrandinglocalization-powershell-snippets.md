@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	BackgroundColor = "#00000F"
-	Id = "fr-FR"
-	SignInPageText = " "
+	backgroundColor = "#00000F"
+	id = "fr-FR"
+	signInPageText = " "
 }
 
 New-MgOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params

@@ -3,7 +3,7 @@ title: "team resource type"
 description: "A Microsoft Teams team is a collection of channels. "
 author: "AkJo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -31,13 +31,15 @@ For more information about working with groups and members in teams, see [Use th
 |[Add member](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member to the team.|
 |[Add members in bulk](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) collection|Add multiple members to the team in a single request.|
 |[Get member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
-|[Update member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
-|[Remove member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
+|[Get primary channel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
+|[Update member's role](../api/team-update-members.md)| [conversationMember](../resources/conversationmember.md) |Change a member to an owner or back to a regular member.|
+|[Remove member](../api/team-delete-members.md)| None |Remove an existing member from the team.|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
-|[List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) collection | Get the list of [teams](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with. |
+|[List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) collection | Get the list of [teams](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with.| 
+|[List all teams in an organization](../api/teams-list.md) | [team](team.md) collection | List all teams in an organization.
 |[Complete migration](../api/team-completemigration.md)|[team](team.md)| Removes migration mode from the team and makes the team available to users to post and read messages.|
 |[List all channels](../api/team-list-allchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) either in this [team](../resources/team.md) or shared with this [team](../resources/team.md) (incoming channels).|
 |[List channels](../api/channel-list.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) in a **team**.|
@@ -48,6 +50,7 @@ For more information about working with groups and members in teams, see [Use th
 |[Get app installed in team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get the specified app installed in a team.|
 |[Upgrade app installed in team](../api/team-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in a team to the latest version.|
 |[Remove app from team](../api/team-delete-installedapps.md) | None | Remove (uninstall) an app from a team.|
+|[List permission grants](../api/team-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to apps to access the team.|
 
 ## Properties
 
@@ -67,7 +70,7 @@ For more information about working with groups and members in teams, see [Use th
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
 |specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
 |summary|[teamSummary](teamsummary.md)| Contains summary information about the team, including number of owners, members, and guests. |
-|tenantId |string | The ID of the Azure Active Directory tenant. |
+|tenantId |string | The ID of the Microsoft Entra tenant. |
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 
@@ -96,6 +99,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |tags|[teamworkTag](teamworktag.md) collection|The tags associated with the team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](/MicrosoftTeams/get-started-with-teams-templates). |
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps to access the team.|
 
 ## JSON representation
 
@@ -139,7 +143,7 @@ The following is a JSON representation of the resource.
   "tocPath": ""
 }-->
 
-## See also
+## Related content
 
 - [Use the Microsoft Graph API to work with Microsoft Teams](teams-api-overview.md)
 - [Creating a group with a team](/graph/teams-create-group-and-team)

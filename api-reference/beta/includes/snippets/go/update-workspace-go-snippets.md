@@ -4,21 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewPlace()
-additionalData := map[string]interface{}{
-	"nickname" : "Conf Room", 
-	"building" : "1", 
-	"label" : "100", 
-	"capacity" : int32(50) , 
-	isWheelChairAccessible := false
-requestBody.SetIsWheelChairAccessible(&isWheelChairAccessible) 
-}
-requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.PlacesById("place-id").Patch(context.Background(), requestBody, nil)
+requestBody := graphmodels.NewPlace()
+nickname := "Conf Room"
+requestBody.SetNickname(&nickname) 
+building := "1"
+requestBody.SetBuilding(&building) 
+label := "100"
+requestBody.SetLabel(&label) 
+capacity := int32(50)
+requestBody.SetCapacity(&capacity) 
+isWheelChairAccessible := false
+requestBody.SetIsWheelChairAccessible(&isWheelChairAccessible) 
+
+places, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

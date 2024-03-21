@@ -3,14 +3,14 @@ title: "accessPackageAssignment resource type"
 description: "An access package assignment is an assignment of an access package to a particular subject, for a period of time."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackageAssignment resource type
 
 Namespace: microsoft.graph
 
-In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
+In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
 
 
 ## Methods
@@ -28,6 +28,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|customExtensionCalloutInstances|[customExtensionCalloutInstance](customextensioncalloutinstance.md) collection|Information about all the custom extension calls that were made during the access package assignment workflow.|
 |expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String|Read-only.|
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|When the access assignment is to be in place. Read-only.|
@@ -62,5 +63,3 @@ The following is a JSON representation of the resource.
   "status": "String"
 }
 ```
-
-

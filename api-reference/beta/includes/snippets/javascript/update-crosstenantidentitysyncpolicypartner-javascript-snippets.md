@@ -11,8 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const crossTenantIdentitySyncPolicyPartner = {
-  userSyncInbound: 
-  {
+  userSyncInbound: {
     isSyncAllowed: true
   }
 };

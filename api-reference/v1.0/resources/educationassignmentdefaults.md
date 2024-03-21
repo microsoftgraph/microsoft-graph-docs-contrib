@@ -1,17 +1,17 @@
 ---
 title: "educationAssignmentDefaults resource type"
-description: "Specify class-level defaults respected by new assignments created in a class."
+description: "Specifies class-level defaults respected by new assignments created in a class."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
-doc_type: apiPageType
+ms.subservice: "education"
+doc_type: resourcePageType
 ---
 
 # educationAssignmentDefaults resource type
 
 Namespace: microsoft.graph
 
-Specify class-level defaults respected by new assignments created in a class. Callers can continue to specify custom values on each assignment creation if they don't want the default behaviors.
+Specifies class-level defaults respected by new assignments created in a class. Callers can continue to specify custom values on each assignment creation if they don't want the default behaviors.
 
 ## Methods
 |Method|Return type|Description|
@@ -26,13 +26,13 @@ Specify class-level defaults respected by new assignments created in a class. Ca
 |addToCalendarAction| educationAddToCalendarOptions|Optional field to control adding assignments to students' and teachers' calendars when the assignment is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, and `studentsOnly`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. The default value is `none`.|
 |dueTime|TimeOfDay|Class-level default value for due time field. Default value is `23:59:00`.|
 |id|String|Unique identifier for the **educationAssignmentDefaults**.|
-|notificationChannelUrl|String|Default Teams channel to which notifications will be sent. Default value is `null`.|
+|notificationChannelUrl|String|Default Teams channel to which notifications are sent. Default value is `null`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

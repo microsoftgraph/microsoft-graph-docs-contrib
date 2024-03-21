@@ -3,7 +3,7 @@ title: "educationSchool resource type"
 description: "A school. The **educationSchool** resource currently corresponds to an administrativeUnit resource and shares the same ID.  "
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -45,7 +45,7 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 | externalId           | String                                | ID of school in syncing system.                                                                                                                                      |
 | externalPrincipalId  | String                                | ID of principal in syncing system.                                                                                                                                   |
 | externalSource       | String                                | The type of external source this resource was generated from (automatically determined from `externalSourceDetail`). Possible values are: `sis`, `lms`, or `manual`. |
-| externalSourceDetail | String                                | The name of the external source this resources was generated from.                                                                                                   |
+| externalSourceDetail | String                                | The name of the external source from which this resource was generated.                                                                                                   |
 | highestGrade         | String                                | Highest grade taught.                                                                                                                                                |
 | lowestGrade          | String                                | Lowest grade taught.                                                                                                                                                 |
 | phone                | String                                | Phone number of school.                                                                                                                                              |
@@ -62,7 +62,7 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
 "blockType": "resource",

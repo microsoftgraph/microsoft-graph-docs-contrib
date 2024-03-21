@@ -3,7 +3,7 @@ title: "richLongRunningOperation resource type"
 description: "Contains metadata about long running operation."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -32,7 +32,7 @@ Contains metadata about long running operation.
 |percentageComplete|Int32|A value between 0 and 100 that indicates the progress of the operation.|
 |resourceId|String|A unique identifier for the result.|
 |resourceLocation|String|Canonical url of the resource.|
-|status|longRunningOperationStatus|Status of the opertaion.The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|longRunningOperationStatus|Status of the opertaion.The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |statusDetail|String|Detail about the status value.|
 |type|String| Type of the operation.|
 

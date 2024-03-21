@@ -6,46 +6,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new TeamPutRequestBody();
-$additionalData = [
-'memberSettings' => $requestBody = new MemberSettings();
-		$requestBody->setAllowCreateUpdateChannels(true);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-
+$requestBody = new Team();
+$memberSettings = new TeamMemberSettings();
+$memberSettings->setAllowCreateUpdateChannels(true);
 $requestBody->setMemberSettings($memberSettings);
-
-'messagingSettings' => $requestBody = new MessagingSettings();
-		$requestBody->setAllowUserEditMessages(true);
-
-		$requestBody->setAllowUserDeleteMessages(true);
-
-
+$messagingSettings = new TeamMessagingSettings();
+$messagingSettings->setAllowUserEditMessages(true);
+$messagingSettings->setAllowUserDeleteMessages(true);
 $requestBody->setMessagingSettings($messagingSettings);
-
-'funSettings' => $requestBody = new FunSettings();
-		$requestBody->setAllowGiphy(true);
-
-$		requestBody->setGiphyContentRating('strict');
-
-
+$funSettings = new TeamFunSettings();
+$funSettings->setAllowGiphy(true);
+$funSettings->setGiphyContentRating(new GiphyRatingType('strict'));
 $requestBody->setFunSettings($funSettings);
-
-'discoverySettings' => $requestBody = new DiscoverySettings();
-		$requestBody->setShowInTeamsSearchAndSuggestions(true);
-
-
+$discoverySettings = new TeamDiscoverySettings();
+$discoverySettings->setShowInTeamsSearchAndSuggestions(true);
 $requestBody->setDiscoverySettings($discoverySettings);
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$graphServiceClient->groupsById('group-id')->team()->put($requestBody);
-
+$result = $graphServiceClient->groups()->byGroupId('group-id')->team()->put($requestBody)->wait();
 
 ```

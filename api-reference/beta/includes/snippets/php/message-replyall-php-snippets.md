@@ -6,34 +6,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReplyAllPostRequestBody();
 $message = new Message();
-$attachmentsAttachment1 = new Attachment();
-$attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
-
+$attachmentsAttachment1 = new FileAttachment();
+$attachmentsAttachment1->setOdataType('#microsoft.graph.fileAttachment');
 $attachmentsAttachment1->setName('guidelines.txt');
-
-$additionalData = [
-'contentBytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
-];
-$attachmentsAttachment1->setAdditionalData($additionalData);
-
-
-
+$attachmentsAttachment1->setContentBytes(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('bWFjIGFuZCBjaGVlc2UgdG9kYXk=')));
 $attachmentsArray []= $attachmentsAttachment1;
 $message->setAttachments($attachmentsArray);
-
-
 
 $requestBody->setMessage($message);
 $requestBody->setComment('Please take a look at the attached guidelines before you decide on the name.');
 
-
-
-$graphServiceClient->me()->messagesById('message-id')->replyAll()->post($requestBody);
-
+$graphServiceClient->me()->messages()->byMessageId('message-id')->replyAll()->post($requestBody)->wait();
 
 ```

@@ -1,25 +1,24 @@
 ---
 title: "List serviceManagementDetails"
 description: "Get a list of the delegatedAdminServiceManagementDetail objects and their properties."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 
 # List serviceManagementDetails
 Namespace: microsoft.graph
 
-Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects and their properties.
+Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegatedadminservicemanagementdetail.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+<!-- { "blockType": "permissions", "name": "delegatedadmincustomer_list_servicemanagementdetails" } -->
+[!INCLUDE [permissions-table](../includes/permissions/delegatedadmincustomer-list-servicemanagementdetails-permissions.md)]
 
 ## HTTP request
 
@@ -32,23 +31,25 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serv
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminServiceManagementDetail](../resources/delegatedadminservicemanagementdetail.md) objects in the response body.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -64,25 +65,40 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminCustomers
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-delegatedadminservicemanagementdetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-delegatedadminservicemanagementdetails-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-delegatedadminservicemanagementdetails-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-delegatedadminservicemanagementdetails-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-delegatedadminservicemanagementdetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-delegatedadminservicemanagementdetails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-delegatedadminservicemanagementdetails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-delegatedadminservicemanagementdetails-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-delegatedadminservicemanagementdetails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-delegatedadminservicemanagementdetails-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -100,7 +116,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "fa5fa04e-13df-4b7c-9e99-92573ba1fa55",
-      "serviceManagementUrl": "https://aad.portal.azure.com/contoso.onmicrosoft.com",
+      "serviceManagementUrl": "https://aad.portal.azure.com/contoso.com",
       "serviceName": "Azure Active Directory"
     },
     {
@@ -118,7 +134,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "ce0b42f4-bfde-4abe-a5f7-add83f104b23",
-      "serviceManagementUrl": "https://admin.teams.microsoft.com/?delegatedOrg=contoso.onmicrosoft.com",
+      "serviceManagementUrl": "https://admin.teams.microsoft.com/?delegatedOrg=contoso.com",
       "serviceName": "Teams"
     }
   ]

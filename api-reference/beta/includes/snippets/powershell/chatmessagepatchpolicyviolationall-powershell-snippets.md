@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
-	PolicyViolation = @{
-		PolicyTip = @{
-			GeneralText = "This item has been blocked by the administrator."
-			ComplianceUrl = "https://contoso.com/dlp-policy-page"
-			MatchedConditionDescriptions = @(
+	policyViolation = @{
+		policyTip = @{
+			generalText = "This item has been blocked by the administrator."
+			complianceUrl = "https://contoso.com/dlp-policy-page"
+			matchedConditionDescriptions = @(
 				"Credit Card Number"
 			)
 		}
-		VerdictDetails = "AllowOverrideWithoutJustification,AllowFalsePositiveOverride"
-		DlpAction = "BlockAccess"
+		verdictDetails = "AllowOverrideWithoutJustification,AllowFalsePositiveOverride"
+		dlpAction = "BlockAccess"
 	}
 }
 
-Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```

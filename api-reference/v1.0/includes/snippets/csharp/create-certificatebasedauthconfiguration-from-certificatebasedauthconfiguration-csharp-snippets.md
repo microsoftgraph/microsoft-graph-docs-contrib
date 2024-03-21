@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Organization.Item.CertificateBasedAuthConfiguration.CertificateBasedAuthConfigurationPostRequestBody
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new CertificateBasedAuthConfiguration
 {
-	AdditionalData = new Dictionary<string, object>
+	CertificateAuthorities = new List<CertificateAuthority>
 	{
+		new CertificateAuthority
 		{
-			"certificateAuthorities" , new List<>
-			{
-				new 
-				{
-					IsRootAuthority = true,
-					Certificate = "Binary",
-				},
-			}
+			IsRootAuthority = true,
+			Certificate = Convert.FromBase64String("Binary"),
 		},
 	},
 };
-await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Organization["{organization-id}"].CertificateBasedAuthConfiguration.PostAsync(requestBody);
 
 
 ```

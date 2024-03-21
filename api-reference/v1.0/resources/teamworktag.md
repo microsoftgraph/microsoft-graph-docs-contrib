@@ -3,7 +3,7 @@ title: "teamworkTag resource type"
 description: "Represents a tag associated with a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Represents a tag associated with a team.
 
 Tags provide a flexible way for customers to classify users or groups based on a common attribute within a team. For example, a Nurse, Manager, or Designer tag will enable users to reach groups of people in Teams without having to type every single name.
 
-When a tag is added, users can @mention it in a channel. Everyone who has been assigned that tag will receive a notification just as they would if they were @mentioned individually. Users can also use a tag to start a new chat with the members of that tag.
+When a tag is added, users can @mention it in a channel. Everyone who has been assigned that tag receives a notification just as they would if they were @mentioned individually. Users can also use a tag to start a new chat with the members of that tag.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,8 +31,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|The description of the tag as it will appear to the user in Microsoft Teams.|
-|displayName|String|The name of the tag as it will appear to the user in Microsoft Teams.|
+|description|String|The description of the tag as it appears to the user in Microsoft Teams. A **teamworkTag** can't have more than 200 **teamworkTagMembers**.|
+|displayName|String|The name of the tag as it appears to the user in Microsoft Teams.|
 |id|String|The unique identifier for the tag. Inherited from [entity](../resources/entity.md).|
 |memberCount|Int32|The number of users assigned to the tag.|
 |tagType|[teamworkTagType](../resources/teamworktag.md#teamworktagtype-values)|The type of the tag. Default is standard.|
@@ -43,7 +43,8 @@ Inherits from [entity](../resources/entity.md).
 | Member   | Description                                                                                               |
 |:---------|:----------------------------------------------------------------------------------------------------------|
 | standard | Default type for a tag. Tags of type standard can be managed in the team by members who have permissions. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                               |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                               |
+| scheduled | Shift-based tag created and managed from the Shifts app.                                                 |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -51,7 +52,7 @@ Inherits from [entity](../resources/entity.md).
 |members|[teamworkTagMember](../resources/teamworktagmember.md) collection|Users assigned to the tag.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -72,5 +73,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [teamworkTagMember](../resources/teamworktagmember.md)

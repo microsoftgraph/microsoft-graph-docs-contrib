@@ -6,22 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new InferenceClassificationOverride();
 $requestBody->setClassifyAs(new InferenceClassificationType('focused'));
-
 $senderEmailAddress = new EmailAddress();
 $senderEmailAddress->setName('Samantha Booth');
-
-$senderEmailAddress->setAddress('samanthab@adatum.onmicrosoft.com');
-
-
+$senderEmailAddress->setAddress('samanthab@contoso.com');
 $requestBody->setSenderEmailAddress($senderEmailAddress);
 
-
-$requestResult = $graphServiceClient->me()->inferenceClassification()->overrides()->post($requestBody);
-
+$result = $graphServiceClient->me()->inferenceClassification()->overrides()->post($requestBody)->wait();
 
 ```

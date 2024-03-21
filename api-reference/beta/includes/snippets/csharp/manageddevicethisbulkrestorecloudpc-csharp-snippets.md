@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.DeviceManagement.ManagedDevices.BulkRestoreCloudPc.BulkRestoreCloudPcPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.DeviceManagement.ManagedDevices.BulkRestoreCloudPc;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new BulkRestoreCloudPcPostRequestBody
 {
 	ManagedDeviceIds = new List<string>
 	{
@@ -16,6 +20,8 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.ManagedDevices.BulkR
 	RestorePointDateTime = DateTimeOffset.Parse("2021-09-23T04:00:00.0000000"),
 	TimeRange = RestoreTimeRange.Before,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceManagement.ManagedDevices.BulkRestoreCloudPc.PostAsync(requestBody);
 
 

@@ -3,7 +3,7 @@ title: "UserFlow resource type"
 description: "Represents an identity user flow that is included in a built-in authentication journey."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

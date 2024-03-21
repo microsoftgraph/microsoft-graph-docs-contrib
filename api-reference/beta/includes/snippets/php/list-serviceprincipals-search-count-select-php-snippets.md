@@ -6,25 +6,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ServicePrincipalsRequestBuilderGetRequestConfiguration();
+$headers = [
+		'ConsistencyLevel' => 'eventual',
+	];
+$requestConfiguration->headers = $headers;
 
-$queryParameters = new ServicePrincipalsRequestBuilderGetQueryParameters();
+$queryParameters = ServicePrincipalsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->search = "\"displayName:Team\"";
 $queryParameters->count = true;
 $queryParameters->select = ["accountEnabled","displayName","publisherName","servicePrincipalType","signInAudience"];
-
-$headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
 $requestConfiguration->queryParameters = $queryParameters;
-$requestConfiguration->headers = $headers;
 
 
-$requestResult = $graphServiceClient->servicePrincipals()->get($requestConfiguration);
-
+$result = $graphServiceClient->servicePrincipals()->get($requestConfiguration)->wait();
 
 ```

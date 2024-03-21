@@ -4,15 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.Security.Alert
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+
+var requestBody = new Alert
 {
-	AssignedTo = "secAdmin@contoso.onmicrosoft.com",
-	Classification = Microsoft.Graph.Beta.Models.Security.AlertClassification.TruePositive,
-	Determination = Microsoft.Graph.Beta.Models.Security.AlertDetermination.Malware,
-	Status = Microsoft.Graph.Beta.Models.Security.AlertStatus.InProgress,
+	AssignedTo = "secAdmin@contoso.com",
+	Classification = AlertClassification.TruePositive,
+	Determination = AlertDetermination.Malware,
+	Status = AlertStatus.InProgress,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Alerts_v2["{alert-id}"].PatchAsync(requestBody);
 
 

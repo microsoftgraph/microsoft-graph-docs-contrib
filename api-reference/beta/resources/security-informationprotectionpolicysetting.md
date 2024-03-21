@@ -3,7 +3,7 @@ title: "informationProtectionPolicySetting resource type"
 description: "Represents the settings for a Microsoft Purview Information Protection label policy."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -35,10 +35,10 @@ Represents the settings for a Microsoft Purview Information Protection label pol
 
 | Relationship | Type                                                          | Description                                                                                    |
 | :----------- | :------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
-| defaultLabel | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) | Represents the default label for an organization. If no label is selected, the default label will be applied. |
+| defaultLabel | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) | Represents the default label for an organization. If no label is selected, the default label is applied. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

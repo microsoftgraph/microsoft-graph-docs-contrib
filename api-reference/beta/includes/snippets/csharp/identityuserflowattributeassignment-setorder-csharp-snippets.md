@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Identity.B2cUserFlows.Item.UserAttributeAssignments.SetOrder.SetOrderPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Identity.B2cUserFlows.Item.UserAttributeAssignments.SetOrder;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SetOrderPostRequestBody
 {
 	NewAssignmentOrder = new AssignmentOrder
 	{
@@ -17,6 +21,8 @@ var requestBody = new Microsoft.Graph.Beta.Identity.B2cUserFlows.Item.UserAttrib
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments.SetOrder.PostAsync(requestBody);
 
 

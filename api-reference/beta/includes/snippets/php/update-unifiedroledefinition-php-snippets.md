@@ -6,25 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleDefinition();
 $requestBody->setDescription('Update basic properties of application registrations');
-
 $requestBody->setDisplayName('Application Registration Support Administrator');
-
 $rolePermissionsUnifiedRolePermission1 = new UnifiedRolePermission();
-$rolePermissionsUnifiedRolePermission1->setAllowedResourceActions(['microsoft.directory/applications/basic/read', ]);
-
-
+$rolePermissionsUnifiedRolePermission1->setAllowedResourceActions(['microsoft.directory/applications/basic/read', 	]);
 $rolePermissionsArray []= $rolePermissionsUnifiedRolePermission1;
 $requestBody->setRolePermissions($rolePermissionsArray);
 
 
-
-
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleDefinitionsById('unifiedRoleDefinition-id')->patch($requestBody);
-
+$result = $graphServiceClient->roleManagement()->directory()->roleDefinitions()->byUnifiedRoleDefinitionId('unifiedRoleDefinition-id')->patch($requestBody)->wait();
 
 ```

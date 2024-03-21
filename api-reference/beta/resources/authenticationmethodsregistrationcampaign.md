@@ -1,9 +1,10 @@
 ---
 title: "authenticationMethodsRegistrationCampaign resource type"
 description: "Represents the settings used to run campaigns to push users to set up targeted authentication methods."
-author: "mjsantani"
+author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,10 +19,11 @@ Represents the settings used to run campaigns to push users to set up targeted a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|enforceRegistrationAfterAllowedSnoozes|Boolean|Specifies whether a user is required to perform registration after snoozing 3 times. If `true`, the user is required to register after 3 snoozes. If `false`, the user can snooze indefinitely. The default value is `true`.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Users and groups of users that are excluded from being prompted to set up the authentication method.|
 |includeTargets|[authenticationMethodsRegistrationCampaignIncludeTarget](../resources/authenticationmethodsregistrationcampaignincludetarget.md) collection|Users and groups of users that are prompted to set up the authentication method.|
-|snoozeDurationInDays|Int32|Specifies the number of days that the user sees a prompt again if they select "Not now" and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is “0” – The user is prompted during every MFA attempt.|
-|state|advancedConfigState|Enable or disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set and uses the default behavior of Azure AD for the setting. The default value is `disabled`.|
+|snoozeDurationInDays|Int32|Specifies the number of days that the user sees a prompt again if they select "Not now" and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is `0` – The user is prompted during every MFA attempt.|
+|state|advancedConfigState|Enable or disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set and uses the default behavior of Microsoft Entra ID for the setting. The default value is `disabled`.|
 
 ## Relationships
 None.
@@ -47,6 +49,7 @@ The following is a JSON representation of the resource.
     }
   ],
   "snoozeDurationInDays": "Integer",
+  "enforceRegistrationAfterAllowedSnoozes": "Boolean",
   "state": "String"
 }
 ```

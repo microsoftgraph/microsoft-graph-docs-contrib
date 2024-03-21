@@ -3,7 +3,7 @@ title: "Update onPremEncryptedPayload"
 description: "Update the properties of a onPremEncryptedPayload object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,22 +50,22 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|Guid|Not yet documented|
-|userId|Guid|Not yet documented|
-|deviceId|Guid|Not yet documented|
-|payloadId|Guid|Not yet documented|
-|deviceKeyThumbprint|String|Not yet documented|
-|cert1PayloadUUID|String|Not yet documented|
-|cert2PayloadUUID|String|Not yet documented|
-|cert3PayloadUUID|String|Not yet documented|
-|plistTemplate|String|Not yet documented|
-|encryptedBlob|Binary|Not yet documented|
-|payloadVersion|Int32|Not yet documented|
-|status|Int32|Not yet documented|
-|createdTime|DateTimeOffset|Not yet documented|
-|lastModifiedTime|DateTimeOffset|Not yet documented|
-|eTag|String|Not yet documented|
-|isDeleted|Boolean|Not yet documented|
+|tenantId|Guid||
+|userId|Guid||
+|deviceId|Guid||
+|payloadId|Guid||
+|deviceKeyThumbprint|String||
+|cert1PayloadUUID|String||
+|cert2PayloadUUID|String||
+|cert3PayloadUUID|String||
+|plistTemplate|String||
+|encryptedBlob|Binary||
+|payloadVersion|Int32||
+|status|Int32||
+|createdTime|DateTimeOffset||
+|lastModifiedTime|DateTimeOffset||
+|eTag|String||
+|isDeleted|Boolean||
 
 
 

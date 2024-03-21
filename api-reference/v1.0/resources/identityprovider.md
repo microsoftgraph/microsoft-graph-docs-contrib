@@ -1,9 +1,9 @@
 ---
 title: "identityProvider resource type"
-description: "Represents an Azure Active Directory (Azure AD) identity provider."
+description: "Represents a Microsoft Entra identity provider."
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -12,14 +12,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be **Microsoft**, **Google**, **Facebook**, **Amazon**,  **LinkedIn**, or **Twitter**. The following Identity Providers are in Preview: **Weibo**, **QQ**, **WeChat**, **GitHub** and any OpenID Connect supported providers. 
+Represents a Microsoft Entra identity provider. The identity provider can be **Microsoft**, **Google**, **Facebook**, **Amazon**,  **LinkedIn**, or **Twitter**. The following Identity Providers are in Preview: **Weibo**, **QQ**, **WeChat**, **GitHub** and any OpenID Connect supported providers. 
 
 Configuring an identity provider in your Azure AD B2C tenant enables users to:
 
 * Sign up and sign in using a social account in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
 * Link an existing local account to a social account in a consumer application. For example, a user has created a username and password (local account) in the application. The user later decides to link the existing local account to their Facebook account so they can sign in using Facebook.
 
-Configuring an identity provider in your Azure AD tenant enables future B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
+Configuring an identity provider in your Microsoft Entra tenant enables future B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
 ## Methods
 
@@ -43,7 +43,7 @@ Configuring an identity provider in your Azure AD tenant enables future B2B gues
 
 ### Where to get the client ID and secret
 
-Each identity provider has a process for creating an app registration. For example, users create an app registration with Facebook at [developers.facebook.com](https://developers.facebook.com/). The resulting client ID and client secret can be passed to [create identityProvider](../api/identityprovider-post-identityproviders.md). Then, each user object in the directory can be federated to any of the tenant's identity providers for authentication. This enables the user to sign in by entering credentials on the identity provider's sign in page. The token from the identity provider is validated by Azure AD before the tenant issues a token to the application.
+Each identity provider has a process for creating an app registration. For example, users create an app registration with Facebook at [developers.facebook.com](https://developers.facebook.com/). The resulting client ID and client secret can be passed to [create identityProvider](../api/identityprovider-post-identityproviders.md). Then, each user object in the directory can be federated to any of the tenant's identity providers for authentication. This enables the user to sign in by entering credentials on the identity provider's sign in page. The token from the identity provider is validated by Microsoft Entra ID before the tenant issues a token to the application.
 
 ## JSON representation
 

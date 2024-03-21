@@ -3,7 +3,7 @@ title: "workbookRangeFormat resource type"
 description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -30,9 +30,9 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|columnWidth|double|Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.|
+|columnWidth|double|Gets or sets the width of all columns within the range. If the column widths aren't uniform, null will be returned.|
 |horizontalAlignment|string|Represents the horizontal alignment for the specified object. Possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
-|rowHeight|double|Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.|
+|rowHeight|double|Gets or sets the height of all rows in the range. If the row heights aren't uniform null will be returned.|
 |verticalAlignment|string|Represents the vertical alignment for the specified object. Possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
 
@@ -46,7 +46,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

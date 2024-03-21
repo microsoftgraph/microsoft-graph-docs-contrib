@@ -1,14 +1,14 @@
 ---
 title: "Obtain immutable identifiers for Outlook resources"
-description: "Use immutable identifiers (IDs) to enable your Outlook application to obtain an ID that does not change for the lifetime of the item."
-author: "abheek-das"
+description: "Use immutable identifiers (IDs) to enable your Outlook application to obtain an ID that doesn't change for the lifetime of the item."
+author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Obtain immutable identifiers for Outlook resources
 
-Outlook items (messages, events, contacts, tasks) have an interesting behavior that you've probably either never noticed or has caused you significant frustration: their IDs change. It doesn't happen often, only if the item is moved, but it can cause real problems for apps that store IDs offline for later use. Immutable identifiers (IDs) enable your application to obtain an ID that does not change for the lifetime of the item.
+Outlook items (messages, events, contacts, tasks) have an interesting behavior that you've probably either never noticed or has caused you significant frustration: their IDs change. It doesn't happen often, only if the item is moved, but it can cause real problems for apps that store IDs offline for later use. Immutable identifiers (IDs) enable your application to obtain an ID that doesn't change for the lifetime of the item.
 
 > [!NOTE]
 > Immutable identifiers, like all identifiers in Microsoft Graph, are case-sensitive. Keep this in mind if you are comparing IDs.
@@ -25,7 +25,7 @@ This header only applies to the request it is included with. If you want to alwa
 
 ## Lifetime of immutable IDs
 
-An item's immutable ID will not change so long as the item stays in the same mailbox. That means that immutable ID will NOT change if the item is moved to a different folder in the mailbox. However, the immutable ID will change if:
+An item's immutable ID won't change so long as the item stays in the same mailbox. That means that immutable ID will NOT change if the item is moved to a different folder in the mailbox. However, the immutable ID changes if:
 
 - The user moves the item to an archive mailbox.
 - The user exports the item (to a PST, as an MSG file, etc.) and re-imports it into their mailbox.
@@ -41,7 +41,7 @@ The following items support immutable IDs:
 - [contact resource type](/graph/api/resources/contact)
 - [outlookTask resource type](/graph/api/resources/outlooktask)
 
-Container types (mailFolder, calendar, etc.) do not support immutable ID, but their regular IDs were already constant.
+Container types (mailFolder, calendar, etc.) don't support immutable ID, but their regular IDs were already constant.
 
 ## Immutable ID with sending mail
 
@@ -56,11 +56,11 @@ You can use immutable IDs to find a message in the Sent Items folder after it ha
 
 ## Immutable ID with change notifications
 
-You can request that Microsoft Graph send immutable IDs in change notifications by including the `Prefer: IdType="ImmutableId"` header when [creating a subscription](/graph/api/subscription-post-subscriptions). Existing subscriptions created without the header will continue to use the default ID format. In order to switch existing subscriptions to use immutable IDs, you must delete and recreate them using the header.
+You can request that Microsoft Graph send immutable IDs in change notifications by including the `Prefer: IdType="ImmutableId"` header when [creating a subscription](/graph/api/subscription-post-subscriptions). Existing subscriptions created without the header continues to use the default ID format. In order to switch existing subscriptions to use immutable IDs, you must delete and recreate them using the header.
 
 ## Immutable ID with delta query
 
-You can request that Microsoft Graph return immutable IDs in [delta query responses](delta-query-overview.md) for supported resource types by including the `Prefer: IdType="ImmutableId"` header. The `@odata.nextLink` and `@odata.deltaLink` values returned by delta queries are compatible with both ID formats, so your application does not need to re-synchronize to take advantage of immutable ID. You can use the header to get immutable IDs going forward, and you can [update your app's storage](#updating-existing-data) separately.
+You can request that Microsoft Graph return immutable IDs in [delta query responses](delta-query-overview.md) for supported resource types by including the `Prefer: IdType="ImmutableId"` header. The `@odata.nextLink` and `@odata.deltaLink` values returned by delta queries are compatible with both ID formats, so your application doesn't need to re-synchronize to take advantage of immutable ID. You can use the header to get immutable IDs going forward, and you can [update your app's storage](#updating-existing-data) separately.
 
 ## Updating existing data
 

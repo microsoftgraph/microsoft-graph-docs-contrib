@@ -2,8 +2,8 @@
 title: "Company terms and conditions in Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune (REST) endpoints that support company terms and conditions."
 ms.localizationpriority: medium
-author: "dougeby"
-ms.prod: "intune"
+author: "jaiprakashmb"
+ms.subservice: "intune"
 doc_type: conceptualPageType
 ---
 

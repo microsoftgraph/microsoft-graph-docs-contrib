@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to collapse search results"
 description: "Use the Microsoft Graph Search API collapseProperties property to collapse search results."
 author: "cxiang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to collapse search results
@@ -21,7 +21,7 @@ The following table lists the collapse scenarios that you can enable.
 
 | Scenarios | Description | Example |
 | :----     | :----       | :----  |
-|**Basic collapse**|Collapse by any single queryable and either sortable or refineable property. This limit value must be an integer between 1 and 32767.|`"collapseProperties":[{"fields":["filename"],"limit":3}]`|
+|**Basic collapse**|Collapse by any single queryable and either sortable or refinable property. This limit value must be an integer between 1 and 32767.|`"collapseProperties":[{"fields":["filename"],"limit":3}]`|
 |**Compound collapse**|Collapse by compound fields of properties. There is no maximum number of fields, but at least two fields must be specified. This limit value must be an integer between 1 and 32767.|`"collapseProperties":[{"fields":["filename","author"],"limit":2}]`|
 |**Multi-level collapse**|Collapse by level-by-level **collapseProperty**. There is no maximum number of levels, but at least two levels must be specified. The limit value of each level must be an integer between 1 and 32767, and must be equal to or less than the upper-level limit value. |`"collapseProperties":[{"fields":["filename"],"limit":3},{"fields":["author"],"limit":1}]`|
 
@@ -161,7 +161,7 @@ Content-Type: application/json
     ]
 }
 ```
-In the following table, the ranking is maintained, but the results are collapsed first on Filename and then on Author. For the first -evel collapse on Filename, with a limit of 3, the first three rows remain, rows four and five are removed, and the last three rows remain as is. For the second-level collapse with a limit of 1, the first three rows don't change because each has a unique Author value. Row eight is excluded because James is listed again as Author and that property must have unique values.
+In the following table, the ranking is maintained, but the results are collapsed first on Filename and then on Author. For the first -level collapse on Filename, with a limit of 3, the first three rows remain, rows four and five are removed, and the last three rows remain as is. For the second-level collapse with a limit of 1, the first three rows don't change because each has a unique Author value. Row eight is excluded because James is listed again as Author and that property must have unique values.
 
 | Filename | Author | Subject | Rank |
 | :---- | :---- | :---- | :---- |
@@ -219,7 +219,7 @@ Content-type: application/json
 }
 ```
 ## Known limitations
-The **collapseProperties** property is not supported for the following resources: **message**,**chatMessage**, **event**, **person**, **externalItem**, **bookmark**, **acronym** or **qna**.
+The **collapseProperties** property isn't supported for the following resources: **message**,**chatMessage**, **event**, **person**, **externalItem**, **bookmark**, **acronym** or **qna**.
 
 ## Next steps
 

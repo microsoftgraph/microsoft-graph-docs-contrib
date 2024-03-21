@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Mail
+Import-Module Microsoft.Graph.Beta.Mail
 
 $params = @{
-	DisplayName = "Clutter"
-	IsHidden = $true
+	displayName = "Clutter"
+	isHidden = $true
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserMailFolder -UserId $userId -BodyParameter $params
+New-MgBetaUserMailFolder -UserId $userId -BodyParameter $params
 
 ```

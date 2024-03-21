@@ -1,6 +1,6 @@
 ---
 title: "Deploy a feature update using the Windows Update for Business deployment service"
-description: "Follow these steps to deploy Windows feature updates to devices in an Azure AD tenant by using the Windows Update for Business deployment service."
+description: "Follow these steps to deploy Windows feature updates to devices in a Microsoft Entra tenant by using the Windows Update for Business deployment service."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Deploy a feature update using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited security updates, and driver updates. This topic focuses on deployments of feature updates. For information on deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).  For infomation about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
+With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited security updates, and driver updates. This topic focuses on deployments of feature updates. For information on deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).  For infomation about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
 When you deploy a feature update to a device, Windows Update offers the specified update to the device if it has not yet received the update. For example, if you deploy Windows 10 feature update version 20H2 to a device that is enrolled in feature update management and is currently on an older version of Windows 10, the device updates to version 20H2. If the device is already at or above version 20H2, it stays on its current version. If the device is not enrolled in feature update management, the device is not affected by this operation.
 
@@ -45,19 +45,39 @@ Content-Type: application/json
     "value": [
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-            "id": "560a186a-1434-4364-8330-deb944b494ff",
-            "displayName": "Windows 10, version 20H2",
-            "releaseDate": "String (timestamp)",
-            "deployableUntilDateTime": "String (timestamp)",
-            "version": "20H2"
+            "id": "d9049ddb-0ca8-4bc1-bd3c-41a456ef300f",
+            "displayName": "Windows 11, version 22H2",
+            "deployableUntilDateTime": "2025-10-14T00:00:00Z",
+            "releaseDateTime": "2022-09-20T00:00:00Z",
+            "version": "Windows 11, version 22H2",
+            "buildNumber": "22621"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-            "id": "5e436dae-56bd-4925-bf8b-acf550e07227",
-            "displayName": "Windows 10, version 2004",
-            "releaseDate": "String (timestamp)",
-            "deployableUntilDateTime": "String (timestamp)",
-            "version": "2004"
+            "id": "7f4cee4c-9aa5-4e61-a4ca-c23a1bdba6f7",
+            "displayName": "Windows 11",
+            "deployableUntilDateTime": "2024-10-08T00:00:00Z",
+            "releaseDateTime": "2021-10-04T00:00:00Z",
+            "version": "Windows 11, version 21H2",
+            "buildNumber": "22000"
+        },
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "f341705b-0b15-4ce3-aaf2-6a1681d78606",
+            "displayName": "Windows 10, version 22H2",
+            "deployableUntilDateTime": "2025-10-14T00:00:00Z",
+            "releaseDateTime": "2022-10-18T00:00:00Z",
+            "version": "Windows 10, version 22H2",
+            "buildNumber": "19045"
+        },
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "53707a30-7816-448e-ab54-8cfedc48bfbc",
+            "displayName": "Windows 10, version 21H2",
+            "deployableUntilDateTime": "2024-06-11T00:00:00Z",
+            "releaseDateTime": "2021-11-16T00:00:00Z",
+            "version": "Windows 10, version 21H2",
+            "buildNumber": "19044"
         }
     ]
 }
@@ -157,7 +177,7 @@ After a deployment is created, you can assign devices to the [deployment audienc
 
 Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
 
-The following example shows how to add Azure AD devices as members of the deployment audience.
+The following example shows how to add Microsoft Entra devices as members of the deployment audience.
 
 ### Request
 
@@ -196,4 +216,3 @@ While a deployment is in progress, you can pause the deployment by updating its 
 ## After a deployment
 
 After all devices assigned to a deployment audience have been initially offered the update, it is possible that not all devices have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, Windows Update continues to offer the update to the assigned devices whenever they reconnect.
-

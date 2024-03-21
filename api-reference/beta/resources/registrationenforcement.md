@@ -2,8 +2,9 @@
 title: "registrationEnforcement resource type"
 description: "Enforce registration at sign-in time."
 author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,13 +19,13 @@ Enforce registration at sign-in time. This can currently only be used to remind 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMethodsRegistrationCampaign|[authenticationMethodsRegistrationCampaign](../resources/authenticationmethodsregistrationcampaign.md)|Run campaigns to remind users to setup targeted authentication methods.|
+|authenticationMethodsRegistrationCampaign|[authenticationMethodsRegistrationCampaign](../resources/authenticationmethodsregistrationcampaign.md)|Run campaigns to remind users to set up targeted authentication methods.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.registrationEnforcement"

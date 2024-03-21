@@ -3,8 +3,8 @@ title: "automaticRepliesMailTips resource type"
 description: "MailTips about any automatic replies that have been set up on a mailbox."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: mail
-author: "abheek-das"
+ms.subservice: mail
+author: "SuryaLashmiS"
 ---
 
 # automaticRepliesMailTips resource type

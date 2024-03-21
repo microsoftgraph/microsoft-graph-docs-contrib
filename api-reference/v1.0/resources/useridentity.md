@@ -1,6 +1,6 @@
 ---
 title: "userIdentity resource type"
-description: "In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity."
+description: "In the context of a Microsoft Entra audit log, the resource represents the user information that initiated or was affected by an audit activity."
 ms.localizationpriority: medium
 author: "dhanyahk"
 ms.prod: "users"
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
+In the context of a Microsoft Entra audit log, the resource represents the user information that initiated or was affected by an audit activity.
 
 ## Properties
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| displayName | String | The identity's display name. Note that this may not always be available or up-to-date.    |
+| displayName | String | The identity's display name. This may not always be available or up-to-date.    |
 | id          | String | Unique identifier for the identity.  |
 | ipAddress   | String| Indicates the client IP address used by user performing the activity (audit log only).|
 | userPrincipalName | String  | The userPrincipalName attribute of the user. |
@@ -26,7 +26,7 @@ In the context of an Azure AD audit log, this represents the user information th
 
 ## JSON representation
 
-Here is a JSON representation of the type.
+Here's a JSON representation of the type.
 
 <!-- {
   "blockType": "resource",
@@ -57,4 +57,3 @@ Here is a JSON representation of the type.
   ]
 }
 -->
-

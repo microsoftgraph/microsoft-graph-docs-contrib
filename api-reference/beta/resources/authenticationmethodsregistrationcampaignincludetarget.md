@@ -2,8 +2,9 @@
 title: "authenticationMethodsRegistrationCampaignIncludeTarget resource type"
 description: "Allow users and groups of users to be prompted to set up targeted authentication methods."
 author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +19,7 @@ Represents the users and groups that are targeted for authentication method regi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The object identifier of an Azure AD user or group.|
+|id|String|The object identifier of a Microsoft Entra user or group.|
 |targetedAuthenticationMethod|String|The authentication method that the user is prompted to register. The value must be `microsoftAuthenticator`.|
 |targetType|authenticationMethodTargetType|The type of the authentication method target. Possible values are: `user`, `group`, `unknownFutureValue`.|
 

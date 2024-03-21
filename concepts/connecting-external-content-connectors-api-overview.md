@@ -4,12 +4,12 @@ description: "Use the Microsoft Graph connectors API to build custom connectors 
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Work with the Microsoft Graph connectors API
 
-Microsoft Graph connectors bring external data into Microsoft Graph and enhance Microsoft 365 intelligent experiences. You might want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Microsoft Graph connectors REST API.
+Microsoft Graph connectors bring external data into Microsoft Graph and enhance Microsoft 365 intelligent experiences. You might want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Microsoft Graph connectors REST API. Items ingested through connections built with the APIs consume your item quota. To learn more about how to determine how much item quota you have and purchasing additional quota, see [licensing requirements and pricing](/microsoftsearch/licensing).
 
 ![Image showing the external data coming trough different types of connectors to Microsoft Graph](./images/connectors-images/api-overview.png)
 
@@ -40,12 +40,12 @@ To learn more, see [Create, update, and delete items added by your application v
 
 ## Sync external groups
 
-Items in the external service can be granted or denied access via ACL to different types of non-Azure Active Directory groups. For example, Salesforce items might have permission sets and profiles, while ServiceNow items might have local groups. When you ingest these items into Microsoft Graph, you need to honor these ACLs.
+Items in the external service can be granted or denied access via ACL to different types of non-Microsoft Entra groups. For example, Salesforce items might have permission sets and profiles, while ServiceNow items might have local groups. When you ingest these items into Microsoft Graph, you need to honor these ACLs.
 
-You can use the external group API to set permissions on external items ingested into Microsoft Graph. An [externalGroup](/graph/api/resources/externalconnectors-externalgroup) represents a non-Azure Active Directory group or group-like construct (such as business units, teams, and so on) and determines permissions on the content in your external data source.
+You can use the external group API to set permissions on external items ingested into Microsoft Graph. An [externalGroup](/graph/api/resources/externalconnectors-externalgroup) represents a non-Microsoft Entra group or group-like construct (such as business units, teams, and so on) and determines permissions on the content in your external data source.
 
 To learn more, see [Use external groups to manage permissions to Microsoft Graph connectors data sources](connecting-external-content-external-groups.md).
 
-## Next steps
+## Next step
 
 - [Build a custom connector](/graph/connecting-external-content-build-quickstart)

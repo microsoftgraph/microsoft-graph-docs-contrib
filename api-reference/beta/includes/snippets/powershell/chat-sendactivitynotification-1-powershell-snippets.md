@@ -4,29 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
-	Topic = @{
-		Source = "entityUrl"
-		Value = "https://graph.microsoft.com/beta/chats/{chatId}"
+	topic = @{
+		source = "entityUrl"
+		value = "https://graph.microsoft.com/beta/chats/{chatId}"
 	}
-	ActivityType = "taskCreated"
-	PreviewText = @{
-		Content = "New Task Created"
+	activityType = "taskCreated"
+	previewText = @{
+		content = "New Task Created"
 	}
-	Recipient = @{
+	recipient = @{
 		"@odata.type" = "microsoft.graph.aadUserNotificationRecipient"
-		UserId = "569363e2-4e49-4661-87f2-16f245c5d66a"
+		userId = "569363e2-4e49-4661-87f2-16f245c5d66a"
 	}
-	TemplateParameters = @(
+	templateParameters = @(
 		@{
-			Name = "taskId"
-			Value = "Task 12322"
+			name = "taskId"
+			value = "Task 12322"
 		}
 	)
 }
 
-Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
 ```

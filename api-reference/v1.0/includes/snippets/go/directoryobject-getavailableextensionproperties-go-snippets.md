@@ -4,11 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-sdk-go/directoryobjects"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-result, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(context.Background(), nil)
+requestBody := graphdirectoryobjects.NewGetAvailableExtensionPropertiesPostRequestBody()
+
+getAvailableExtensionProperties, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(context.Background(), requestBody, nil)
 
 
 ```

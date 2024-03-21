@@ -3,7 +3,7 @@ title: "anonymousGuestConversationMember resource type"
 description: "Represents an anonymous guest in a chat."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents an anonymous guest in a chat. 
 
-Anonymous users do not have a Microsoft Teams identity and can join meetings using meeting join links. For more details, see [Anonymous users](/microsoftteams/non-standard-users#anonymous-users).
+Anonymous users don't have a Microsoft Teams identity and can join meetings using meeting join links. For more information, see [Anonymous users](/microsoftteams/non-standard-users#anonymous-users).
 
 
 Inherits from [conversationMember](../resources/conversationmember.md).
@@ -33,7 +33,7 @@ Inherits from [conversationMember](../resources/conversationmember.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

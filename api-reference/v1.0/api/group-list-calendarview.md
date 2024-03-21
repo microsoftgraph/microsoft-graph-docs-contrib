@@ -1,28 +1,27 @@
 ---
-title: "List calendarView"
+title: "List group calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,"
 ms.localizationpriority: medium
-author: "psaffaie"
-ms.prod: "groups"
+author: "iamgirishck"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
-# List calendarView
+# List group calendarView
 
 Namespace: microsoft.graph
 
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
 from the default calendar of a group.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+<!-- { "blockType": "permissions", "name": "group_list_calendarview" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-calendarview-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +40,7 @@ In the request URL, provide the following required query parameters with values.
 | startDateTime | String | The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". |
 | endDateTime   | String | The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00".   |
 
-The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and are not impacted by the value of the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.
+The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and aren't impacted by the value of the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.
 
 This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
@@ -54,11 +53,11 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 | :-------------------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization                     | string | Bearer {token}. Required.                                                                                                                                                                                                                                                          |
 | Prefer: outlook.timezone          | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional.                                                                                                                                      |
-| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
+| Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header isn't specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -87,27 +86,35 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-get-calendarview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-get-calendarview-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/group-get-calendarview-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-get-calendarview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-get-calendarview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-get-calendarview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-get-calendarview-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-get-calendarview-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -184,7 +191,7 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"HR Taskforce",
-                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                        "address":"HRTaskforce@contoso.com"
                     }
                 },
                 {
@@ -195,14 +202,14 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"Megan Bowen",
-                        "address":"MeganB@contoso.onmicrosoft.com"
+                        "address":"MeganB@contoso.com"
                     }
                 }
              ],
             "organizer":{
                 "emailAddress":{
                     "name":"HR Taskforce",
-                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    "address":"HRTaskforce@contoso.com"
                 }
             }
         },
@@ -263,7 +270,7 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"HR Taskforce",
-                        "address":"HRTaskforce@contoso.onmicrosoft.com"
+                        "address":"HRTaskforce@contoso.com"
                     }
                 },
                 {
@@ -274,14 +281,14 @@ Preference-Applied: outlook.body-content-type="text"
                     },
                     "emailAddress":{
                         "name":"Megan Bowen",
-                        "address":"MeganB@contoso.onmicrosoft.com"
+                        "address":"MeganB@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"HR Taskforce",
-                    "address":"HRTaskforce@contoso.onmicrosoft.com"
+                    "address":"HRTaskforce@contoso.com"
                 }
             }
         }

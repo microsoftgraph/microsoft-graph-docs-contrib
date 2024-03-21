@@ -1,9 +1,9 @@
 ---
 title: "attendee resource type"
-description: "An event attendee. This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant."
+description: "An event attendee. The attendee can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "iamgirishck"
 ---
 
@@ -21,13 +21,13 @@ Derived from [attendeeBase](attendeebase.md).
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |emailAddress|[emailAddress](emailaddress.md)|Includes the name and SMTP address of the attendee.|
-|proposedNewTime|[timeSlot](timeslot.md)|An alternate date/time proposed by the attendee for a meeting request to start and end. If the attendee hasn't proposed another time, then this property is not included in a response of a GET event.|
+|proposedNewTime|[timeSlot](timeslot.md)|An alternate date/time proposed by the attendee for a meeting request to start and end. If the attendee hasn't proposed another time, then this property isn't included in a response of a GET event.|
 |status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `required`, `optional`, `resource`.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

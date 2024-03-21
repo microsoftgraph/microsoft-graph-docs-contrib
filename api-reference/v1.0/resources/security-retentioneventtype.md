@@ -1,9 +1,9 @@
 ---
 title: "retentionEventType resource type"
-description: "Represents a single group for the same type of retention events. An event type is a generic desription for similar events that can be used with any label with event-based retention."
+description: "Represents a single group for the same type of retention events. An event type is a generic description for similar events that can be used with any label with event-based retention."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 Represents a single group for the same type of retention events.
 
-When a [retention event](../resources/security-retentionevent.md) is created, it is associated with a specific event type which in turn is associated with a [retention label](/graph/api-reference/beta/resources/security-retentionlabel.md). Only content with that retention label applied will be retained for the specified retention period.
+When a [retention event](../resources/security-retentionevent.md) is created, it's associated with a specific event type that in turn is associated with a [retention label](/graph/api-reference/beta/resources/security-retentionlabel.md). Only content with that retention label applied will be retained for the specified retention period.
 For details, see [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
 
 
@@ -41,7 +41,7 @@ For details, see [Start retention when an event occurs](/microsoft-365/complianc
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

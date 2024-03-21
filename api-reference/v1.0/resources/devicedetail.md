@@ -1,9 +1,9 @@
 ---
 title: "deviceDetail resource type"
-description: "Indicates device details associated with a device used for signing in. This includes information like device browser and  operating system, and whether the device is Azure AD managed."
+description: "Indicates device details associated with a device used for signing in. The information includes information like device browser and  operating system, and whether the device is Microsoft Entra ID managed."
 ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Indicates device details associated with a device used for signing in. This includes information like device browser and  operating system, and whether the device is Azure AD managed.
+Indicates device details associated with a device used for signing in. The information includes information like device browser and operating system, and whether the device is Microsoft Entra ID managed.
 
 ## Properties
 
@@ -27,7 +27,7 @@ Indicates device details associated with a device used for signing in. This incl
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -58,4 +58,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

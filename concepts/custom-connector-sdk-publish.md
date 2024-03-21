@@ -4,7 +4,7 @@ author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 description: "Learn how to publish the connectors you build using the Microsoft Graph connectors SDK to the Microsoft 365 admin center."
 ---
 
@@ -49,7 +49,7 @@ Use the following steps to publish a connection for your custom connector:
 
     For details, see [Step 7: Manage schema](/microsoftsearch/configure-connector#step-7-manage-schema).
 
-9. You can manage search permissions basis Access control lists (ACLs) that determine which users in your organization can access each item. Only Azure AD-based Access Control Lists are supported for people with access to the data source. For details, see [Step 5: Manage search permissions](/microsoftsearch/configure-connector#step-5-manage-search-permissions).
+9. You can manage search permissions basis Access control lists (ACLs) that determine which users in your organization can access each item. Only Microsoft Entra ID-based Access Control Lists are supported for people with access to the data source. For details, see [Step 5: Manage search permissions](/microsoftsearch/configure-connector#step-5-manage-search-permissions).
 
 10. Choose the refresh frequencies of crawls. The refresh interval determines how often your data is synced between the data source and Microsoft Search. For details, see [Step 8: Refresh frequencies](/microsoftsearch/configure-connector#step-8-refresh-settings).
 
@@ -59,7 +59,7 @@ Use the following steps to publish a connection for your custom connector:
 
 13. Review the published connection under the **Data sources** tab to confirm that the connection setup worked. For details, see [Step 11: Confirm that the connection setup worked](/microsoftsearch/configure-connector#step-11-confirm-if-the-connection-setup-worked).
 
-## See also
+## Related content
 
 - [Best practices](/graph/custom-connector-sdk-best-practices)
 - [Troubleshooting](/graph/custom-connector-sdk-troubleshooting)

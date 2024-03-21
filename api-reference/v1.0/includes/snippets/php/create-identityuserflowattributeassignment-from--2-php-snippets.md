@@ -6,28 +6,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IdentityUserFlowAttributeAssignment();
 $requestBody->setIsOptional(false);
-
 $requestBody->setRequiresVerification(false);
-
-$requestBody->setUserInputType(new IdentityUserFlowAttributeInputType('textbox'));
-
+$requestBody->setUserInputType(new IdentityUserFlowAttributeInputType('textBox'));
 $requestBody->setDisplayName('Shoe size');
-
-$requestBody->setUserAttributeValues([]);
-
+$requestBody->setUserAttributeValues([	]);
 $userAttribute = new IdentityUserFlowAttribute();
 $userAttribute->setId('extension_guid_shoeSize');
-
-
 $requestBody->setUserAttribute($userAttribute);
 
-
-$requestResult = $graphServiceClient->identity()->b2xUserFlowsById('b2xIdentityUserFlow-id')->userAttributeAssignments()->post($requestBody);
-
+$result = $graphServiceClient->identity()->b2xUserFlows()->byB2xIdentityUserFlowId('b2xIdentityUserFlow-id')->userAttributeAssignments()->post($requestBody)->wait();
 
 ```

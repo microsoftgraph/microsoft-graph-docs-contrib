@@ -2,8 +2,8 @@
 title: "mailSearchFolder resource type"
 description: "A mailSearchFolder is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. mailSearchFolder inherits from mailFolder."
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: "outlook"
+author: "SuryaLashmiS"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **mailSearchFolder** is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. **mailSearchFolder** inherits from [mailFolder](mailfolder.md). Search folders can be created in any folder in a user's Exchange Online mailbox. However, for a search folder to appear in Outlook, Outlook for the web, or Outlook Live, the folder must be created in the **WellKnownFolderName.SearchFolders** folder. 
+A **mailSearchFolder** is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. **mailSearchFolder** inherits from [mailFolder](mailfolder.md). Search folders can be created in any folder in a user's Exchange Online mailbox. However, for a search folder to appear in Outlook, Outlook for the web, or Outlook Live, the folder must be created in the **WellKnownFolderName.SearchFolders** folder.
 
 ## Search folder lifecycle
 
 Search folders created by your application can be deleted by Exchange Online for one of the following reasons:
 
-1.	Search folders expire after 45 days of no usage. 
-2.	There are limits on the number of search folders that can be created per source folder. When this limit is breached, older search folders are deleted to make way for new ones. 
+1.	Search folders expire after 45 days of no usage.
+2.	There are limits on the number of search folders that can be created per source folder. When this limit is breached, older search folders are deleted to make way for new ones.
 
 When a search folder is deleted, your app should create a new search folder resource and use the same.
 

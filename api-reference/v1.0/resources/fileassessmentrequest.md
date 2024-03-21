@@ -3,7 +3,7 @@ title: "fileAssessmentRequest resource type"
 description: "Used to create and retrieve a file threat assessment."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -25,7 +25,7 @@ The file can be a text file or Word document or binary file received in an email
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
-|contentData|String|Base64 encoded file content. The file content cannot fetch back because it isn't stored.|
+|contentData|String|Base64 encoded file content. The file content can't fetch back because it isn't stored.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|The threat assessment request creator.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
@@ -39,11 +39,11 @@ The file can be a text file or Word document or binary file received in an email
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md) collection|A collection of threat assessment results. Read-only. By default, a `GET /threatAssessmentRequests/{id}` does not return this property unless you apply `$expand` on it.|
+|results|[threatAssessmentResult](threatassessmentresult.md) collection|A collection of threat assessment results. Read-only. By default, a `GET /threatAssessmentRequests/{id}` doesn't return this property unless you apply `$expand` on it.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -3,8 +3,8 @@ title: "educationSynchronizationOAuth2ClientCredentialsConnectionSettings resour
 description: "When OAuth2 Client Credentials Grant is to be used to connect to the data provider, this connection settings type should be used to set up the profile."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
-doc_type: apiPageType
+ms.subservice: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource

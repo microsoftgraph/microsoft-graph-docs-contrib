@@ -22,7 +22,7 @@ const outlookTask = {
   }
 };
 
-await client.api('/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks')
+await client.api('/me/outlook/taskFolders/AAMkADIyAAAhrbPXAAA=/tasks')
 	.version('beta')
 	.post(outlookTask);
 

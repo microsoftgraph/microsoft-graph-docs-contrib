@@ -3,7 +3,7 @@ title: "teamworkOnPremisesCalendarSyncConfiguration resource type"
 description: "Represents the details about the account used to sync calendars in the Microsoft Teams client of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

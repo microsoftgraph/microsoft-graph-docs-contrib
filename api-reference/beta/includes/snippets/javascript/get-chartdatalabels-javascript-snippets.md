@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let workbookChartDataLabels = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels')
+let workbookChartDataLabels = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels')
 	.version('beta')
 	.get();
 

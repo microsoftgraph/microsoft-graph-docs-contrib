@@ -3,7 +3,7 @@ title: "plannerAssignment resource type"
 description: "The **plannerAssignment** resource represents the assignment of a task to a user. This type is used in the open type plannerAssignments."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -19,12 +19,12 @@ The **plannerAssignment** resource represents the assignment of a task to a user
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|assignedBy|[identitySet](identityset.md)|The identity of the user that performed the assignment of the task, i.e. the assignor.|
+|assignedBy|[identitySet](identityset.md)|The identity of the user that performed the assignment of the task, that is, the assignor.|
 |assignedDateTime|DateTimeOffset|The time at which the task was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |orderHint|String|Hint used to order assignees in a task. The format is defined as outlined [here](planner-order-hint-format.md).|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

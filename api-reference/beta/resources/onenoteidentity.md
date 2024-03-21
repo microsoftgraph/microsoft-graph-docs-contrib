@@ -3,7 +3,7 @@ title: "oneNoteIdentity resource type"
 description: "**Support coming soon**"
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 
@@ -17,12 +17,12 @@ Namespace: microsoft.graph
 
 The OneNoteIdentity type represents an identity of a _user_.
 
-In future, this type will be merged with [identity](identity.md)
+In future, this type is merged with [identity](identity.md)
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

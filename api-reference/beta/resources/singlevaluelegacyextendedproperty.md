@@ -3,8 +3,8 @@ title: "singleValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a single value. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
-author: "abheek-das"
+ms.subservice: cloud-pc
+author: "SuryaLashmiS"
 ---
 
 # singleValueLegacyExtendedProperty resource type

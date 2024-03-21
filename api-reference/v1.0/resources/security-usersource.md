@@ -27,7 +27,7 @@ None.
 |displayName|String|The display name associated with the mailbox and site.|
 |email|String|Email address of the user's mailbox.|
 |holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **userSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
-|id|String|The ID of the **userSource**. This is not the ID of the actual group.|
+|id|String|The ID of the **userSource**. This isn't the ID of the actual group.|
 |includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 |siteWebUrl|String|The URL of the user's OneDrive for Business site. Read-only.|
 
@@ -36,7 +36,7 @@ None.
 
 |Name|Description|
 |:----|-----------|
-|notApplied|The userSource is not on hold (all sources in it are not on hold).|
+|notApplied|The userSource isn't on hold (all sources in it aren't on hold).|
 |applied|The userSource is on hold (all sources are on hold).|
 |applying|The userSource is in applying hold state (applyHold operation triggered).|
 |removing|The userSource is in removing the hold state (removeHold operation triggered).|
@@ -46,7 +46,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

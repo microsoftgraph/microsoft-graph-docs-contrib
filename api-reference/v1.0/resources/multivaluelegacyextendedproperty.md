@@ -2,8 +2,8 @@
 title: "multiValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a collection of values."
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: outlook
+author: "SuryaLashmiS"
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ open extensions or extended properties, and how to specify extended properties.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), or [contactFolder](../resources/contactfolder.md). Note that group [post](../resources/post.md) is not supported. | Create a **multiValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
+|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), or [contactFolder](../resources/contactfolder.md). Group [post](../resources/post.md) isn't supported. | Create a **multiValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
 |[Get](../api/multivaluelegacyextendedproperty-get.md) |A supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or group [post](../resources/post.md)) expanded with a [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand`.|
 
 ## Properties
@@ -35,7 +35,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",

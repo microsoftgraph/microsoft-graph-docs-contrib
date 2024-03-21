@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new Message
 {
@@ -16,7 +19,7 @@ var requestBody = new Message
 			EmailAddress = new EmailAddress
 			{
 				Name = "Samantha Booth",
-				Address = "samanthab@contoso.onmicrosoft.com",
+				Address = "samanthab@contoso.com",
 			},
 		},
 	},
@@ -27,11 +30,13 @@ var requestBody = new Message
 			Mentioned = new EmailAddress
 			{
 				Name = "Dana Swope",
-				Address = "danas@contoso.onmicrosoft.com",
+				Address = "danas@contoso.com",
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.Messages.PostAsync(requestBody);
 
 

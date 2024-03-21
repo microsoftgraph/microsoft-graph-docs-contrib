@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Me.SendMail.SendMailPostRequestBody
+// Dependencies
+using Microsoft.Graph.Me.SendMail;
+using Microsoft.Graph.Models;
+
+var requestBody = new SendMailPostRequestBody
 {
 	Message = new Message
 	{
@@ -22,27 +26,24 @@ var requestBody = new Microsoft.Graph.Me.SendMail.SendMailPostRequestBody
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "meganb@contoso.onmicrosoft.com",
+					Address = "meganb@contoso.com",
 				},
 			},
 		},
 		Attachments = new List<Attachment>
 		{
-			new Attachment
+			new FileAttachment
 			{
 				OdataType = "#microsoft.graph.fileAttachment",
 				Name = "attachment.txt",
 				ContentType = "text/plain",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"contentBytes" , "SGVsbG8gV29ybGQh"
-					},
-				},
+				ContentBytes = Convert.FromBase64String("SGVsbG8gV29ybGQh"),
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.SendMail.PostAsync(requestBody);
 
 

@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
-	Body = @{
-		Content = "Hello world"
+	body = @{
+		content = "Hello world"
 	}
 }
 
-New-MgChatMessage -ChatId $chatId -BodyParameter $params
+New-MgBetaChatMessage -ChatId $chatId -BodyParameter $params
 
 ```

@@ -1,9 +1,9 @@
 ---
 title: "educationAssignmentPointsGrade resource type"
-description: "When an assignment is set to a points grade type, each submission will have this object associated with the **submission.grade** property."
+description: "When an assignment is set to a points grade type, each submission has this object associated with the **submission.grade** property."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -11,8 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-When an assignment is set to a points grade type, each submission will have this object associated with the **submission.grade** property. This creates a subclass from [educationAssignmentGrade](educationassignmentgrade.md),
-which will add the who data to this property. The max points is stored in the **assignments.grading** property.
+When an assignment is set to a points grade type, each submission has this object associated with the **submission.grade** property. This creates a subclass from [educationAssignmentGrade](educationassignmentgrade.md),
+which will add the who data to this property. The max points are stored in the **assignments.grading** property.
 
 
 ## Properties
@@ -24,7 +24,7 @@ which will add the who data to this property. The max points is stored in the **
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewBookingStaffMember()
 
@@ -35,7 +43,6 @@ bookingWorkTimeSlot.SetStart(&start)
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
 	bookingWorkTimeSlot,
-
 }
 bookingWorkHours1.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
@@ -56,7 +63,6 @@ bookingWorkTimeSlot.SetStart(&start)
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
 	bookingWorkTimeSlot,
-
 }
 bookingWorkHours2.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
@@ -77,7 +83,6 @@ bookingWorkTimeSlot.SetStart(&start)
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
 	bookingWorkTimeSlot,
-
 }
 bookingWorkHours3.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
@@ -98,7 +103,6 @@ bookingWorkTimeSlot.SetStart(&start)
 
 timeSlots := []graphmodels.BookingWorkTimeSlotable {
 	bookingWorkTimeSlot,
-
 }
 bookingWorkHours4.SetTimeSlots(timeSlots)
 additionalData := map[string]interface{}{
@@ -113,11 +117,10 @@ workingHours := []graphmodels.BookingWorkHoursable {
 	bookingWorkHours2,
 	bookingWorkHours3,
 	bookingWorkHours4,
-
 }
 requestBody.SetWorkingHours(workingHours)
 
-result, err := graphClient.BookingBusinessesById("bookingBusiness-id").StaffMembersById("bookingStaffMember-id").Patch(context.Background(), requestBody, nil)
+staffMembers, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").StaffMembers().ByBookingStaffMemberId("bookingStaffMember-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

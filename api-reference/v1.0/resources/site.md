@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: "site resource type"
-description: The site resource provides metadata and relationships for a Sharepoint site. 
+description: The site resource provides metadata and relationships for a Sharepoint site.
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -19,9 +19,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 |:-------------------------|:-------------|:----------
 | [Get root site][]        | site | Access the root SharePoint site within a tenant.
 | [Get site][]             | site | Access a sharePoint site using the siteId.
+| [List sites across geographies][] |  collection of sites  | List sites across all geographies in an organization.
 | [Get site by path][]     | site | Access the root SharePoint site with a relative path.
 | [Get site for a group][] | site | Access the team site for a group.
-| [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource. 
+| [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource.
 | [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.
 | [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
 | [Follow site][]          | collection of site | Follow a user's site or multiple sites.
@@ -36,6 +37,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
+[List sites across geographies]: ../api/site-getallsites.md
 [Get site by path]: ../api/site-getbypath.md
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -60,6 +62,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **displayName**          | string                              | The full title for the site. Read-only.                                                        |
 | **eTag**                 | string                              | ETag for the item. Read-only.                                                                  |
 | **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
+| **isPersonalSite**       | bool                                | Identifies whether the site is personal or not. Read-only.                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | The date and time the item was last modified. Read-only.                                       |
 | **name**                 | string                              | The name / title of the item.                                                                  |
 | **root**                 | [root](root.md)                     | If present, indicates that this is the root site in the site collection. Read-only.            |
@@ -72,12 +75,12 @@ A **site** is identified by a unique ID that is a composite of the following val
 * Site collection hostname (contoso.sharepoint.com)
 * Site collection unique ID (GUID)
 * Site unique ID (GUID)
-  
+
 The `root` identifier always references the root site for a given target, as follows:
 
 * `/sites/root`: The tenant root site.
 * `/groups/{group-id}/sites/root`: The group's team site.
-  
+
 ## Relationships
 
 | Relationship      | Type                                             | Description
@@ -133,6 +136,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 ```json
 {
   "id": "string",
+  "isPersonalSite": "bool",
   "root": { "@odata.type": "microsoft.graph.root" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},

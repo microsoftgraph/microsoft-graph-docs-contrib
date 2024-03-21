@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItem resource type"
 description: "Represents a decision on an accessReviewInstance."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure AD [access review](accessreviewsv2-overview.md) decision on an instance of a review. This decision is the determination of an identity's access to a resource for a given [accessReviewInstance](accessreviewinstance.md). accessReviewInstanceDecisionItem is an open type and allows other properties to be passed in.
+Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) decision on an instance of a review. This decision is the determination of an identity's access to a resource for a given [accessReviewInstance](accessreviewinstance.md). accessReviewInstanceDecisionItem is an open type and allows other properties to be passed in.
 
 Each decision item is system-generated based off of the parent [accessReviewInstance](accessreviewinstance.md).
 
@@ -45,7 +45,9 @@ Inherits from [entity](../resources/entity.md).
 |reviewedDateTime|DateTimeOffset| The timestamp when the review decision occurred. Supports `$select`. Read-only.|
 
 ## Relationships
-None.
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+| insights |[governanceInsight](governanceinsight.md) collection | Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an **accessReviewInstanceDecisionItem**. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

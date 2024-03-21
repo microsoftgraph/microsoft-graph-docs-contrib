@@ -19,7 +19,7 @@ const workbookChartFont = {
   underline: 'underline-value'
 };
 
-await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font')
 	.version('beta')
 	.update(workbookChartFont);
 

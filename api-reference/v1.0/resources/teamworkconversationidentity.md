@@ -3,7 +3,7 @@ title: "teamworkConversationIdentity resource type"
 description: "Represents a conversation in Microsoft Teams."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [identity](../resources/identity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamworkConversationIdentity"

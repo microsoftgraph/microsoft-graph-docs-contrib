@@ -3,7 +3,7 @@ title: "androidDeviceOwnerEnrollmentMode enum type"
 description: "The enrollment mode for an enrollment profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -20,8 +20,8 @@ The enrollment mode for an enrollment profile.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|corporateOwnedDedicatedDevice|0|Not yet documented|
-|corporateOwnedFullyManaged|1|Not yet documented|
-|corporateOwnedWorkProfile|2|Not yet documented|
+|corporateOwnedDedicatedDevice|0||
+|corporateOwnedFullyManaged|1||
+|corporateOwnedWorkProfile|2||
 |corporateOwnedAOSPUserlessDevice|3|Corporate owned, userless Android Open Source Project (AOSP) device, without Google Mobile Services.|
 |corporateOwnedAOSPUserAssociatedDevice|4|Corporate owned, user-associated Android Open Source Project (AOSP) device, without Google Mobile Services.|

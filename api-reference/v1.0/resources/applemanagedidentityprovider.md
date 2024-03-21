@@ -3,7 +3,7 @@ title: "appleManagedIdentityProvider resource type"
 description: "Represents the Apple identity provider in an Azure AD B2C tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "namkedia"
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Represents the Apple identity provider in an Azure AD B2C tenant.
 
-You can configure Apple as a social identity provider for an Azure AD B2C tenant. Based on the information Apple provides, the API will generate a client secret. Apple needs the secret to be renewed every six months. You will have to manually rotate the secret.
+You can configure Apple as a social identity provider for an Azure AD B2C tenant. Based on the information, Apple provides, the API generates a client secret. Apple needs the secret to be renewed every six months. You have to manually rotate the secret.
 
 Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
@@ -22,7 +22,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant, including the Apple identity providers. There is no way to retrieve only the Apple identity providers in a tenant.|
+|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant, including the Apple identity providers. There's no way to retrieve only the Apple identity providers in a tenant.|
 |[Create](../api/identitycontainer-post-identityproviders.md)|[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Create a new Apple identity provider configuration.|
 |[Get](../api/identityproviderbase-get.md) |[appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Retrieve properties of the Apple identity provider configuration.|
 |[Update](../api/identityproviderbase-update.md)|None|Update the Apple identity provider configuration.|
@@ -45,7 +45,7 @@ Retrieve the **developerId**, **serviceId**, **keyId**, and the **certificateDat
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

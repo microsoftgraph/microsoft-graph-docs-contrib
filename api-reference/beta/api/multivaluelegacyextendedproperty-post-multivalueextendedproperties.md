@@ -3,8 +3,8 @@ title: "Create multi-value extended property"
 description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: non-product-specific
-author: "abheek-das"
+ms.subservice: non-product-specific
+author: "SuryaLashmiS"
 ---
 
 # Create multi-value extended property
@@ -28,7 +28,7 @@ The following user resources are supported:
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
 
-As well as the following group resources:
+And the following group resources:
 
 - group [calendar](../resources/calendar.md)
 - group [event](../resources/event.md)
@@ -36,6 +36,8 @@ As well as the following group resources:
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Depending on the resource you're creating the extended property in and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,7 +61,7 @@ You can create extended properties in a new or existing resource instance.
 
 To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
 instance, and include the properties of the new resource instance _and extended property_ in the request body.
-Note that some resources support creation in more than one way. For more information on creating these resource instances,
+Some resources support creation in more than one way. For more information on creating these resource instances,
 see the corresponding topics for creating a [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md),
 [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md),
 [contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md),
@@ -114,7 +116,7 @@ POST /groups/{id}/conversations
 To create one or more extended properties in an existing resource instance, specify the instance in the
 request, and include the extended property in the request body.
 
-**Note** You cannot create an extended property in an existing group post.
+**Note** You can't create an extended property in an existing group post.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -155,7 +157,7 @@ PATCH /groups/{id}/events/{id}
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body
@@ -189,14 +191,14 @@ the new or existing instance but not the new extended property. To see the newly
 created extended property, [get the instance expanded with the extended property](../api/multivaluelegacyextendedproperty-get.md).
 
 When creating an extended property in a _new_ group post, the response includes only a response code but not the new post nor
-the extended property. You cannot create an extended property in an existing group post.
+the extended property. You can't create an extended property in an existing group post.
 
 
 ## Example
 ##### Request 1
 
 The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally
-include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property.
+include for a new event, the request body includes the **multiValueExtendedProperties** collection that contains one extended property.
 The request body includes the following for that multi-value extended property:
 
 - **id** which specifies the property as an array of strings with the specified GUID and the name `Recreation`.
@@ -251,7 +253,7 @@ Content-Type: application/json
 
 A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event
 in the response body, similar to the response from [creating just an event](../api/user-post-events.md).
-The response does not include any newly created extended properties.
+The response doesn't include any newly created extended properties.
 
 To see the newly created extended property, [get the event expanded with the extended property](../api/multivaluelegacyextendedproperty-get.md).
 
@@ -286,7 +288,7 @@ Content-Type: application/json
 ##### Response 2
 
 A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body,
-similar to the response from [updating a message](../api/message-update.md). The response does not
+similar to the response from [updating a message](../api/message-update.md). The response doesn't
 include the newly created extended property.
 
 To see the newly created extended property, [get the message expanded with the extended property](../api/multivaluelegacyextendedproperty-get.md).

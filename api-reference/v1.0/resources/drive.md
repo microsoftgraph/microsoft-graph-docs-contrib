@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: drive resource type
 description: The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -92,7 +92,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 ```json
 {
-  
+
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",

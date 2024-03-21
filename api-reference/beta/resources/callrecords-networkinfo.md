@@ -2,8 +2,8 @@
 title: "networkInfo resource type"
 description: "Represents information about the network used in a call."
 ms.localizationpriority: medium
-author: "williamlooney"
-ms.prod: "cloud-communications"
+author: "mcm223"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -26,7 +26,7 @@ Represents information about the network used in a call.
 |dnsSuffix|String|DNS suffix associated with the network adapter of the media endpoint.|
 |ipAddress|String|IP address of the media endpoint.|
 |linkSpeed|Int64|Link speed in bits per second reported by the network adapter used by the media endpoint.|
-|macAddress|String|The media access control (MAC) address of the media endpoint's network device.|
+|macAddress|String|The media access control (MAC) address of the media endpoint's network device. This value may be missing or shown as `02:00:00:00:00:00` due to operating system privacy policies.|
 |networkTransportProtocol|microsoft.graph.callRecords.networkTransportProtocol|Network protocol used for the transmission of stream. Possible values are: `unknown`, `udp`, `tcp`, `unknownFutureValue`.|
 |port|Int32|Network port number used by media endpoint.|
 |receivedQualityEventRatio|Double|Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.|

@@ -3,7 +3,7 @@ title: "cloudPcExternalPartnerSetting resource type"
 description: "Represents an external partner setting on Cloud PC."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -36,17 +36,17 @@ Represents an external partner setting on Cloud PC.
 ### cloudPcExternalPartnerStatus values 
 |Member|Description|
 |:---|:---|
-|notAvailable|The connection has not been established or the customer disabled the connection.|
-|available|The connection has just been enabled, but no heartbeat received yet.|
+|notAvailable|The connection hasn't been established or the customer disabled the connection.|
+|available|The connection has been enabled, but no heartbeat received yet.|
 |healthy|The connection is enabled and heartbeat is being received.|
-|unhealthy|The connection is enabled and heartbeat is not being received.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unhealthy|The connection is enabled and heartbeat isn't being received.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

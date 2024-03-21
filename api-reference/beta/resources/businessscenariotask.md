@@ -3,7 +3,7 @@ title: "businessScenarioTask resource type"
 description: "Represents a plannerTask that is associated with a businessScenario and contains additional scenario data."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 
@@ -40,12 +40,12 @@ Inherits from [plannerTask](../resources/plannertask.md).
 |checklistItemCount|Int32|Number of checklist items that are present on the task. Inherited from [plannerTask](../resources/plannertask.md).|
 |completedBy|[identitySet](../resources/identityset.md)|Identity of the user who completed the task. Inherited from [plannerTask](../resources/plannertask.md). Read-Only.|
 |completedDateTime|DateTimeOffset|Date and time at which the **percentComplete** of the task is set to `100`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [plannerTask](../resources/plannertask.md). Read-only.|
-|conversationThreadId|String|Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the **group**. Inherited from [plannerTask](../resources/plannertask.md).|
+|conversationThreadId|String|Thread ID of the conversation on the task. This property contains the ID of the conversation thread object created in the **group**. Inherited from [plannerTask](../resources/plannertask.md).|
 |createdBy|[identitySet](../resources/identityset.md)|Identity of the user who created the task. Inherited from [plannerTask](../resources/plannertask.md). Read-Only.|
 |createdDateTime|DateTimeOffset|Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` Inherited from [plannerTask](../resources/plannertask.md). Read-only.|
 |creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Contains information about the origin of the task. Inherited from [plannerTask](../resources/plannertask.md).|
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [plannerTask](../resources/plannertask.md).|
-|hasDescription|Boolean|`True` indicates that the details object of the task has a non-empty description; otherwise, `false`. Inherited from [plannerTask](../resources/plannertask.md). Read-only.|
+|hasDescription|Boolean|`True` indicates that the details object of the task has a nonempty description; otherwise, `false`. Inherited from [plannerTask](../resources/plannertask.md). Read-only.|
 |id|String|The unique identifier for the task. Inherited from [entity](../resources/entity.md). Read-only.|
 |orderHint|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](planner-order-hint-format.md). Inherited from [plannerTask](../resources/plannertask.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. Inherited from [plannerTask](../resources/plannertask.md).|

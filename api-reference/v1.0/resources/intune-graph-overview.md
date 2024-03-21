@@ -1,9 +1,9 @@
 ---
 title: "Working with Intune in Microsoft Graph"
 description: "The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure Portal."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: high
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: conceptualPageType
 ---
 
@@ -25,15 +25,15 @@ The following example shows how you can determine whether an application is inst
 
 1. Get from Azure Active Directory a list of devices registered to a user: 
 
-    `https://graph.microsoft.com/users/{user}/ownedDevices`
+    `https://graph.microsoft.com/v1.0/users/{user}/ownedDevices` 
 
 2. Then view the list of applications for your tenant: 
 
-    `https://graph.microsoft.com/deviceAppManagement/mobileApps`
+    `https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps`  
 
 3. Take the ID from the application and determine the installation state for the application (and therefore user):
 
-    `https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/`
+    `https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{id}/deviceStatuses/`
 
 ## Accessing the Microsoft Graph API for Intune
 
@@ -51,9 +51,6 @@ Microsoft Graph includes two sets of APIs that you can use to manage Windows upd
 - [Windows updates APIs](/graph/windowsupdates-concept-overview)
 
 You can use either API to manage Windows updates; however, these two APIs are not compatible with each other. Each can overwrite the configurations made by the other without providing visibility into that action. Use of both APIs to manage updates can result in unexpected behaviors, including what appears to be temporary configurations for update deployments that are canceled or modified without an identified cause.   
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next Steps
 

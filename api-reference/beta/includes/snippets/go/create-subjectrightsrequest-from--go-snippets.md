@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSubjectRightsRequest()
 type := graphmodels.EXPORT_SUBJECTRIGHTSREQUESTTYPE 
@@ -42,10 +51,9 @@ pauseAfterEstimate := true
 requestBody.SetPauseAfterEstimate(&pauseAfterEstimate) 
 regulations := []string {
 	"CCPA",
-
 }
 requestBody.SetRegulations(regulations)
-siteLocations := graphmodels.NewSubjectRightsRequestSiteLocation()
+siteLocations := graphmodels.NewSubjectRightsRequestAllSiteLocation()
 requestBody.SetSiteLocations(siteLocations)
 
 
@@ -55,11 +63,10 @@ user.SetId(&id)
 
 approvers := []graphmodels.Userable {
 	user,
-
 }
 requestBody.SetApprovers(approvers)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
+subjectRightsRequests, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

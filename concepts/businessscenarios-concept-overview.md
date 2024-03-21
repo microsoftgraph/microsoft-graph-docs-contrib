@@ -3,7 +3,7 @@ title: "Business scenarios API overview (preview)"
 description: "Learn how to use the business scenarios API in Microsoft Graph to integrate data into Microsoft Graph entities."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 ---
 
 # Business scenarios API overview (preview)
@@ -18,11 +18,11 @@ Business scenarios are all about integrating data into existing Microsoft Graph 
 
 ### Least privileged access
 
-Business scenario applications do not require control over all the data in a tenant in order to accomplish their goals. Business scenarios only provide access to the data created for the scenario through the business scenario API path, and require business scenario-specific permission scopes to be consented to in order to have this access. Applications can use other API paths to gather or manipulate other data with additional permissions if needed in order to build a complete solution.
+Business scenario applications don't require control over all the data in a tenant in order to accomplish their goals. Business scenarios only provide access to the data created for the scenario through the business scenario API path, and require business scenario-specific permission scopes to be consented to in order to have this access. Applications can use other API paths to gather or manipulate other data with additional permissions if needed in order to build a complete solution.
 
 ### Control over user experience
 
-Business scenarios control how the users and other applications can interact with the data created for the scenario through scenario-managed data containers and configurable permissions. Applications can specify granular permissions and behaviors on the data to make sure the data cannot be manipulated in ways that are incompatible with the scenario requirements.
+Business scenarios control how the users and other applications can interact with the data created for the scenario through scenario-managed data containers and configurable permissions. Applications can specify granular permissions and behaviors on the data to make sure the data can't be manipulated in ways that are incompatible with the scenario requirements.
 
 ### Control over data
 
@@ -30,11 +30,11 @@ The business scenario controls the scenario-related data. The data created from 
 
 ### Central control over configuration
 
-Business scenarios provide a single configurationn point. The behavior of data and the user experience around them can be changed globally by simply updating the scenario, instead of finding and updating each data object separately.
+Business scenarios provide a single configuration point. The behavior of data and the user experience around them can be changed globally by simply updating the scenario, instead of finding and updating each data object separately.
 
 ### Integrate data from other sources
 
-Business scenarios are built for integrations. Data created for the scenario can be accessed with application-specified identifiers and therefore does not require applications to create mapping of identifiers when integrating data from any kind of data source.
+Business scenarios are built for integrations. Data created for the scenario can be accessed with application-specified identifiers and therefore doesn't require applications to create mapping of identifiers when integrating data from any kind of data source.
 
 ## API reference
 

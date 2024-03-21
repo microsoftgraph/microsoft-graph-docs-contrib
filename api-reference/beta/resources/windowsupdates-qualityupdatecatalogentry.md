@@ -1,6 +1,6 @@
 ---
 title: "qualityUpdateCatalogEntry resource type"
-description: "Metadata for a Windows 10 quality update that you can be approve for deployment."
+description: "Represents metadata for a Windows 10 quality update that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,27 +13,36 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata for a Windows 10 quality update that you can be approve for deployment.
+Represents metadata for a Windows 10 quality update that you can approve for deployment.
 
-Windows 10 quality updates are released one or more times per month. These updates contain both security and quality fixes and are typically released on the second Tuesday of every month, though they may be released at any time. These updates are cumulative, so later versions always contain all previous fixes. Microsoft strongly recommends keeping devices current by installing the most recent quality updates as soon as they are available. 
+Windows 10 quality updates are released one or more times per month. These updates contain both security and quality fixes and are typically released on the second Tuesday of every month; however, they might be released at any time. These updates are cumulative. Later versions always contain all previous fixes. We strongly recommend that you keep devices current by installing the most recent quality updates as soon as they are available.
 
 Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
+|catalogName|String|The catalog name of the content. Read-only.|
+|cveSeverityInformation|[microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation](../resources/windowsupdates-qualityupdatecveseverityinformation.md)|Severity information of the Common Vulnerabilities and Exposures associated with the content.|
+|deployableUntilDateTime|DateTimeOffset|The date on which the content is no longer available for deployment using the service. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |displayName|String|The display name of the content. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |id|String|The unique identifier for the catalog entry. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |isExpeditable|Boolean|Indicates whether the content can be deployed as an expedited quality update. Read-only.|
+|qualityUpdateCadence|microsoft.graph.windowsUpdates.qualityUpdateCadence|The publishing cadence of the quality update. Possible values are: `monthly`, `outOfBand`, `unknownFutureValue`. Read-only.|
 |qualityUpdateClassification|microsoft.graph.windowsUpdates.qualityUpdateClassification|The classification on the quality update. Possible values are: `all`, `security`, `nonSecurity`, `unknownFutureValue`. Read-only.|
-|releaseDateTime|DateTimeOffset|The release date of the content. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
+|releaseDateTime|DateTimeOffset|The release date of the content. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
+|shortName|String|The short name of the content. Read-only.|
 
 ## Relationships
-None.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|productRevisions|[microsoft.graph.windowsUpdates.productRevision](../resources/windowsupdates-productrevision.md) collection|The operating system product revisions that are released as part of this quality update.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -45,12 +54,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "releaseDateTime": "String (timestamp)",
+  "catalogName": "String",
+  "cveSeverityInformation": { "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation" },
   "deployableUntilDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
   "isExpeditable": "Boolean",
-  "qualityUpdateClassification": "String"
+  "qualityUpdateCadence": "String",
+  "qualityUpdateClassification": "String",
+  "releaseDateTime": "String (timestamp)",
+  "shortName": "String"
 }
 ```
-

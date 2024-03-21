@@ -6,19 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TokenLifetimePolicy();
-$requestBody->setDefinition(['definition-value', ]);
-
-$requestBody->setDisplayName('displayName-value');
-
+$requestBody->setDefinition(['{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}', 	]);
+$requestBody->setDisplayName('Contoso token lifetime policy');
 $requestBody->setIsOrganizationDefault(true);
 
-
-
-$requestResult = $graphServiceClient->policies()->tokenLifetimePolicies()->post($requestBody);
-
+$result = $graphServiceClient->policies()->tokenLifetimePolicies()->post($requestBody)->wait();
 
 ```

@@ -6,86 +6,52 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Call();
-$requestBody->set@odatatype('#microsoft.graph.call');
-
+$requestBody->setOdataType('#microsoft.graph.call');
 $requestBody->setCallbackUri('https://bot.contoso.com/callback');
-
-$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
-]);
-
-$mediaConfig = new MediaConfig();
-$mediaConfig->set@odatatype('#microsoft.graph.serviceHostedMediaConfig');
-
-$additionalData = [
-'preFetchMedia' => $preFetchMedia1 = new ();
-$	preFetchMedia1->setUri('https://cdn.contoso.com/beep.wav');
-
-$	preFetchMedia1->setResourceId('f8971b04-b53e-418c-9222-c82ce681a582');
-
-
-$preFetchMediaArray []= $preFetchMedia1;
-$preFetchMedia2 = new ();
-$	preFetchMedia2->setUri('https://cdn.contoso.com/cool.wav');
-
-$	preFetchMedia2->setResourceId('86dc814b-c172-4428-9112-60f8ecae1edb');
-
-
-$preFetchMediaArray []= $preFetchMedia2;
+$requestBody->setRequestedModalities([new Modality('audio'),	]);
+$mediaConfig = new ServiceHostedMediaConfig();
+$mediaConfig->setOdataType('#microsoft.graph.serviceHostedMediaConfig');
+$preFetchMediaMediaInfo1 = new MediaInfo();
+$preFetchMediaMediaInfo1->setUri('https://cdn.contoso.com/beep.wav');
+$preFetchMediaMediaInfo1->setResourceId('f8971b04-b53e-418c-9222-c82ce681a582');
+$preFetchMediaArray []= $preFetchMediaMediaInfo1;
+$preFetchMediaMediaInfo2 = new MediaInfo();
+$preFetchMediaMediaInfo2->setUri('https://cdn.contoso.com/cool.wav');
+$preFetchMediaMediaInfo2->setResourceId('86dc814b-c172-4428-9112-60f8ecae1edb');
+$preFetchMediaArray []= $preFetchMediaMediaInfo2;
 $mediaConfig->setPreFetchMedia($preFetchMediaArray);
-
-
-];
-$mediaConfig->setAdditionalData($additionalData);
-
-
 
 $requestBody->setMediaConfig($mediaConfig);
 $chatInfo = new ChatInfo();
-$chatInfo->set@odatatype('#microsoft.graph.chatInfo');
-
+$chatInfo->setOdataType('#microsoft.graph.chatInfo');
 $chatInfo->setThreadId('19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2');
-
 $chatInfo->setMessageId('0');
-
-
 $requestBody->setChatInfo($chatInfo);
-$meetingInfo = new MeetingInfo();
-$meetingInfo->set@odatatype('#microsoft.graph.organizerMeetingInfo');
-
+$meetingInfo = new OrganizerMeetingInfo();
+$meetingInfo->setOdataType('#microsoft.graph.organizerMeetingInfo');
+$meetingInfoOrganizer = new IdentitySet();
+$meetingInfoOrganizer->setOdataType('#microsoft.graph.identitySet');
+$meetingInfoOrganizerUser = new Identity();
+$meetingInfoOrganizerUser->setOdataType('#microsoft.graph.identity');
+$meetingInfoOrganizerUser->setId('5810cede-f3cc-42eb-b2c1-e9bd5d53ec96');
+$meetingInfoOrganizerUser->setDisplayName('Bob');
 $additionalData = [
-'organizer' => $meetingInfo = new Organizer();
-$meetingInfo->set@odatatype('#microsoft.graph.identitySet');
-
-$user = new User();
-$user->set@odatatype('#microsoft.graph.identity');
-
-$user->setId('5810cede-f3cc-42eb-b2c1-e9bd5d53ec96');
-
-$user->setDisplayName('Bob');
-
-$user->setTenantId('86dc81db-c112-4228-9222-63f3esaa1edb');
-
-
-$meetingInfo->setUser($user);
-
-$meetingInfo->setOrganizer($organizer);
-
+'tenantId' => '86dc81db-c112-4228-9222-63f3esaa1edb',
+];
+$meetingInfoOrganizerUser->setAdditionalData($additionalData);
+$meetingInfoOrganizer->setUser($meetingInfoOrganizerUser);
+$meetingInfo->setOrganizer($meetingInfoOrganizer);
+$additionalData = [
 'allowConversationWithoutHost' => true,
 ];
 $meetingInfo->setAdditionalData($additionalData);
-
-
-
 $requestBody->setMeetingInfo($meetingInfo);
 $requestBody->setTenantId('86dc81db-c112-4228-9222-63f3esaa1edb');
 
-
-
-$requestResult = $graphServiceClient->communications()->calls()->post($requestBody);
-
+$result = $graphServiceClient->communications()->calls()->post($requestBody)->wait();
 
 ```

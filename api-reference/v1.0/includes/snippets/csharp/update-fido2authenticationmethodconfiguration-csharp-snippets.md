@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new AuthenticationMethodConfiguration
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new Fido2AuthenticationMethodConfiguration
 {
 	OdataType = "#microsoft.graph.fido2AuthenticationMethodConfiguration",
 	State = AuthenticationMethodState.Enabled,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isAttestationEnforced" , "true"
-		},
-	},
+	IsAttestationEnforced = true,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 
 

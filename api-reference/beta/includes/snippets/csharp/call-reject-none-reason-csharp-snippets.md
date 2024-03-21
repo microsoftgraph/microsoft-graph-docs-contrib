@@ -4,12 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Reject.RejectPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Communications.Calls.Item.Reject;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new RejectPostRequestBody
 {
 	Reason = RejectReason.None,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Communications.Calls["{call-id}"].Reject.PostAsync(requestBody);
 
 

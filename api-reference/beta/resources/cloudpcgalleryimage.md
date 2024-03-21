@@ -1,9 +1,9 @@
 ---
 title: "cloudPcGalleryImage resource type"
-description: "Represents the gallery image resource of the current organization."
+description: "Represents the gallery image resource of the current organization that can be used to provision a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -13,41 +13,44 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the gallery image resource of the current organization which can be used to provision a Cloud PC.
+Represents the gallery image resource of the current organization that can be used to provision a Cloud PC.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List galleryImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) objects.|
-|[Get cloudPcGalleryImage](../api/cloudpcgalleryimage-get.md)|[cloudPcDeviceImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a [cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) object.|
+|[List galleryImages](../api/virtualendpoint-list-galleryimages.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.|
+|[Get cloudPcGalleryImage](../api/cloudpcgalleryimage-get.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a specific [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The official display name of the gallery image. Read-only.|
-|endDate|Date|The date in which this image is no longer within long-term support. The Cloud PC will continue to provide short-term support. Read-only.|
-|expirationDate|Date|The date when the image is no longer available. Read-only.|
-|id|String|Unique identifier for the gallery image resource on the Cloud PC. Read-only.|
-|offer|String|The offer name of the gallery image. This value will be passed to Azure to get the image resource. Read-only.|
-|offerDisplayName|String|The official display offer name of the gallery image. For example, Windows 10 Enterprise + OS Optimizations. Read-only.|
-|publisher|String|The publisher name of the gallery image. This value will be passed to Azure to get the image resource. Read-only.|
-|recommendedSku|String|Recommended Cloud PC SKU for this gallery image. Read-only.|
-|sizeInGB|Int32|The size of this image in gigabytes. Read-only.|
-|sku|String|The SKU name of the gallery image. This value will be passed to Azure to get the image resource. Read-only.|
-|skuDisplayName|String|The official display stock keeping unit (SKU) name of this gallery image. For example, 2004. Read-only.|
-|startDate|Date|The date when the image becomes available. Read-only.|
-|status|cloudPcGalleryImageStatus|The status of the gallery image on the Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. Read-only.|
+|displayName|String|The display name of this gallery image. For example, `Windows 11 Enterprise + Microsoft 365 Apps 22H2`. Read-only.|
+|endDate|Date|The date when the status of image becomes `supportedWithWarning`. Users can still provision new Cloud PCs if the current time is later than **endDate** and earlier than **expirationDate**. For example, assume the **endDate** of a gallery image is `2023-9-14` and **expirationDate** is `2024-3-14`, users are able to provision new Cloud PCs if today is 2023-10-01. Read-only.|
+|expirationDate|Date|The date when the image is no longer available. Users are unable to provision new Cloud PCs if the current time is later than **expirationDate**. The value is usually **endDate** plus six months. For example, if the **startDate** is `2025-10-14`, the **expirationDate** is usually `2026-04-14`. Read-only.|
+|id|String|The unique identifier (ID) of the gallery image resource on Cloud PC. The ID format is {publisherName_offerName_skuName}. For example, `MicrosoftWindowsDesktop_windows-ent-cpc_win11-22h2-ent-cpc-m365`. You can find the **publisherName**, **offerName**, and **skuName** in the Azure Marketplace. Read-only.|
+|offerName|String|The offer name of this gallery image that is passed to ARM to retrieve the image resource. Read-only.|
+|publisherName|String|The publisher name of this gallery image that is passed to ARM to retrieve the image resource. Read-only.|
+|sizeInGB|Int32|Indicates the size of this image in gigabytes. For example, `64`. Read-only.|
+|skuName|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only.|
+|startDate|Date| The date when the Cloud PC image is available for provisioning new Cloud PCs. For example, `2022-09-20`. Read-only.|
+|status|cloudPcGalleryImageStatus|The status of the gallery image on the Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. The default value is `supported`. Read-only.|
+|offer (deprecated)|String|The offer name of this gallery image that is passed to ARM to retrieve the image resource. Read-only. The **offer** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **offerName** property.|
+|offerDisplayName (deprecated)|String|The official display offer name of this gallery image. For example, `Windows 10 Enterprise + OS Optimizations`. The **offerDisplayName** property is deprecated and will stop returning data on January 31, 2024.|
+|publisher (deprecated)|String|The publisher name of this gallery image that is passed to ARM to retrieve the image resource. Read-only. The **publisher** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **publisherName** property.|
+|recommendedSku (deprecated)|String|The recommended Cloud PC SKU for this gallery image. Read-only. The **recommendedSku** property is deprecated and will stop returning data on January 31, 2024.|
+|sku (deprecated)|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only. The **sku** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **skuName** property.|
+|skuDisplayName (deprecated)|String|The official display SKU name of this gallery image. For example, `2004`. Read-only. The **skuDisplayName** property is deprecated and will stop returning data on January 31, 2024.|
 
 ### cloudPcGalleryImageStatus values
 
 |Member|Description|
 |:---|:---|
 |supported|The gallery image is active and ready to be used for provisioning.|
-|supportedWithWarning|The gallery image has expired, but the Cloud PC will continue support for 6 months, after which it will be unsupported and cannot be used.|
+|supportedWithWarning|The gallery image has expired, but the Cloud PC will continue support for six months, after which it will be unsupported and can't be used.|
 |notSupported|The gallery image is out of support. |
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
@@ -55,7 +58,8 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -64,22 +68,24 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
+  "@odata.type": "#microsoft.graph.cloudPcGalleryImage",
+  "displayName": "String",
+  "endDate": "String (Date)",
+  "expiredDate": "String (Date)",
   "id": "String (identifier)",
-  "displayName":"String",
-  "offerDisplayName":"String",
-  "skuDisplayName":"String",
-  "publisher":"String",
-  "offer":"String",
-  "sku":"String",
-  "recommendedSku":"String",
-  "status":"String",
-  "sizeInGB":"Int32",
-  "startDate":"String (Date)",
-  "endDate":"String (Date)",
-  "expiredDate":"String (Date)"
+  "offer": "String",
+  "offerDisplayName": "String",
+  "offerName": "String",
+  "publisher": "String",
+  "publisherName": "String",
+  "recommendedSku": "String",
+  "sizeInGB": "Int32",
+  "sku": "String",
+  "skuDisplayName": "String",
+  "skuName": "String",
+  "startDate": "String (Date)",
+  "status": "String"
 }
 ```

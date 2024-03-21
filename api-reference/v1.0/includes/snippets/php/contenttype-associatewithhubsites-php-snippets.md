@@ -6,17 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AssociateWithHubSitesPostRequestBody();
-$requestBody->setHubSiteUrls(['https://graph.microsoft.com/v1.0/sites/{site-id}', ]);
-
+$requestBody->setHubSiteUrls(['https://graph.microsoft.com/v1.0/sites/{site-id}', 	]);
 $requestBody->setPropagateToExistingLists(false);
 
-
-
-$graphServiceClient->sitesById('site-id')->contentTypesById('contentType-id')->associateWithHubSites()->post($requestBody);
-
+$graphServiceClient->sites()->bySiteId('site-id')->contentTypes()->byContentTypeId('contentType-id')->associateWithHubSites()->post($requestBody)->wait();
 
 ```

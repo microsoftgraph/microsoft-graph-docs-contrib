@@ -4,27 +4,26 @@ description: "Get a list of the incident objects and their properties."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
 # List incidents
 Namespace: microsoft.graph.security
 
-Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender has created to track attacks in an organization.
+Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender created to track attacks in an organization.
 
-Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple [alert](../resources/security-alert.md) objects. Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an **incident**. 
+Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple [alert](../resources/security-alert.md) objects. Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an **incident**.
 
 This operation allows you to filter and sort through incidents to create an informed cyber security response. It exposes a collection of incidents that were flagged in your network, within the time range you specified in your environment retention policy. The most recent incidents are displayed at the top of the list.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|SecurityIncident.Read.All, SecurityIncident.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|SecurityIncident.Read.All, SecurityIncident.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_list_incidents" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-list-incidents-permissions.md)]
 
 ## HTTP request
 
@@ -61,10 +60,10 @@ For general information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -74,6 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List all incidents
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,29 +89,40 @@ GET https://graph.microsoft.com/v1.0/security/incidents
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-incident-for-defender-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-incident-for-defender-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-incident-for-defender-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-incident-for-defender-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-incident-for-defender-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-incident-for-defender-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-incident-for-defender-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-incident-for-defender-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-incident-for-defender-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-incident-for-defender-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-incident-for-defender-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -137,7 +148,7 @@ Content-Type: application/json
         "displayName": "Multi-stage incident involving Initial access & Command and control on multiple endpoints reported by multiple sources",
         "createdDateTime": "2021-08-13T08:43:35.5533333Z",
         "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-        "assignedTo": "KaiC@contoso.onmicrosoft.com",
+        "assignedTo": "KaiC@contoso.com",
         "classification": "TruePositive",
         "determination": "MultiStagedAttack",
         "status": "Active",
@@ -148,10 +159,14 @@ Content-Type: application/json
         "comments": [
           {
 		        "comment": "Demo incident",
-		        "createdBy": "DavidS@contoso.onmicrosoft.com",
+		        "createdBy": "DavidS@contoso.com",
 		        "createdTime": "2021-09-30T12:07:37.2756993Z"
           }
-        ]
+        ],
+        "systemTags" : [
+            "Defender Experts"
+        ],
+        "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ..."
     }
   ]
 }
@@ -175,24 +190,32 @@ GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-incident-with-their-alerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-incident-with-their-alerts-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-incident-with-their-alerts-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-incident-with-their-alerts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-incident-with-their-alerts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-incident-with-their-alerts-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-incident-with-their-alerts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-incident-with-their-alerts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-incident-with-their-alerts-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-incident-with-their-alerts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-incident-with-their-alerts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -221,7 +244,7 @@ Content-Type: application/json
         "displayName": "Multi-stage incident involving Initial access & Command and control on multiple endpoints reported by multiple sources",
         "createdDateTime": "2021-08-13T08:43:35.5533333Z",
         "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-        "assignedTo": "KaiC@contoso.onmicrosoft.com",
+        "assignedTo": "KaiC@contoso.com",
         "classification": "truePositive",
         "determination": "multiStagedAttack",
         "status": "active",
@@ -232,10 +255,14 @@ Content-Type: application/json
         "comments": [
           {
 		        "comment": "Demo incident",
-		        "createdBy": "DavidS@contoso.onmicrosoft.com",
+		        "createdBy": "DavidS@contoso.com",
 		        "createdTime": "2021-09-30T12:07:37.2756993Z"
           }
         ],
+		"systemTags" : [
+            "Defender Experts"
+        ],
+        "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
         "alerts": [
             {
                 "@odata.type": "#microsoft.graph.security.alert",
@@ -289,9 +316,15 @@ Content-Type: application/json
                         "rbacGroupName": "UnassignedGroup",
                         "onboardingStatus": "onboarded",
                         "defenderAvStatus": "unknown",
+                        "ipInterfaces": [
+                            "1.1.1.1"
+                        ],
                         "loggedOnUsers": [],
                         "roles": [
                             "compromised"
+                        ],
+                        "detailedRoles": [
+                          "Main device"
                         ],
                         "tags": [
                             "Test Machine"
@@ -312,6 +345,9 @@ Content-Type: application/json
                         "detectionStatus": "detected",
                         "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
                         "roles": [],
+                        "detailedRoles": [
+                          "Referred in command line",
+                        ],
                         "tags": [],
                         "fileDetails": {
                             "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -338,6 +374,7 @@ Content-Type: application/json
                         "detectionStatus": "detected",
                         "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
                         "roles": [],
+                        "detailedRoles": [],
                         "tags": [],
                         "imageFile": {
                             "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -376,6 +413,7 @@ Content-Type: application/json
                         "registryKey": "SYSTEM\\CONTROLSET001\\CONTROL\\WMI\\AUTOLOGGER\\SENSEAUDITLOGGER",
                         "registryHive": "HKEY_LOCAL_MACHINE",
                         "roles": [],
+                        "detailedRoles": [],
                         "tags": [],
                     }
                 ]

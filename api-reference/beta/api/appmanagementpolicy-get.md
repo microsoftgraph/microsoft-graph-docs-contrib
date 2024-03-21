@@ -3,7 +3,7 @@ title: "Get appManagementPolicy"
 description: "Get an application management policy."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -15,15 +15,16 @@ Namespace: microsoft.graph
 
 Read the properties of an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                |
-| :------------------------------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                             |
-| Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+<!-- { "blockType": "permissions", "name": "appmanagementpolicy_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-get-permissions.md)]
+
+[!INCLUDE [rbac-app-auth-method-policy-api-get](../includes/rbac-for-apis/rbac-app-auth-method-policy-api-get.md)]
 
 ## HTTP request
 
@@ -37,11 +38,11 @@ GET /policies/appManagementPolicies/{id}
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a single [appMan
 
 ### Request
 
-The following is an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
+The following example shows a request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
 
 - Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
@@ -71,31 +72,39 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appmanagementpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-appmanagementpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-appmanagementpolicy-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-appmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-appmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-appmanagementpolicy-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-appmanagementpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-appmanagementpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-appmanagementpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-appmanagementpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -124,7 +133,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "passwordLifetime",
-                  "maxLifetime": "P4DT12H30M5S",
+                  "maxLifetime": "P90D",
                   "restrictForAppsCreatedAfterDateTime": "2017-10-19T10:37:00Z"
                },
                {
@@ -134,7 +143,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "symmetricKeyLifetime",
-                  "maxLifetime": "P4D",
+                  "maxLifetime": "P30D",
                   "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
                }
             ],
@@ -143,6 +152,15 @@ Content-type: application/json
                   "restrictionType": "asymmetricKeyLifetime",
                   "maxLifetime": "P90D",
                   "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+               },
+               {
+                  "restrictionType": "trustedCertificateAuthority",
+                  "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
+                  "certificateBasedApplicationConfigurationIds": [
+                     "eec5ba11-2fc0-4113-83a2-ed986ed13743",
+                     "bb8e164b-f9ed-4b98-bc45-65eddc14f4c1"
+                  ],
+                  "maxLifetime": null
                }
             ]
          }

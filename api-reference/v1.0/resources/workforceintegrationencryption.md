@@ -3,7 +3,7 @@ title: "workforceIntegrationEncryption resource type"
 description: "An encryption entity defining the protocol and secret for a workforce integration."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -22,7 +22,7 @@ An encryption entity defining the protocol and secret for a [workforceintegratio
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

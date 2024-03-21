@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendActivityNotificationPostRequestBody
+// Dependencies
+using Microsoft.Graph.Chats.Item.SendActivityNotification;
+using Microsoft.Graph.Models;
+
+var requestBody = new SendActivityNotificationPostRequestBody
 {
 	Topic = new TeamworkActivityTopic
 	{
@@ -19,15 +23,10 @@ var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendAc
 	{
 		Content = "New deployment requires your approval",
 	},
-	Recipient = new TeamworkNotificationRecipient
+	Recipient = new AadUserNotificationRecipient
 	{
 		OdataType = "microsoft.graph.aadUserNotificationRecipient",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"userId" , "569363e2-4e49-4661-87f2-16f245c5d66a"
-			},
-		},
+		UserId = "569363e2-4e49-4661-87f2-16f245c5d66a",
 	},
 	TemplateParameters = new List<KeyValuePair>
 	{
@@ -38,6 +37,8 @@ var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendAc
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Chats["{chat-id}"].SendActivityNotification.PostAsync(requestBody);
 
 

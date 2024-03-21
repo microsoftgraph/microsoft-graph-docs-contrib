@@ -6,21 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestBody = new MailFolder();
-$requestBody->set@odatatype('microsoft.graph.mailSearchFolder');
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$additionalData = [
-'filterQuery' => 'contains(subject, \'Analytics\')', 
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody = new MailSearchFolder();
+$requestBody->setOdataType('microsoft.graph.mailSearchFolder');
+$requestBody->setFilterQuery('contains(subject, \'Analytics\')');
 
-
-
-
-$requestResult = $graphServiceClient->me()->mailFoldersById('mailFolder-id')->patch($requestBody);
-
+$result = $graphServiceClient->me()->mailFolders()->byMailFolderId('mailFolder-id')->patch($requestBody)->wait();
 
 ```

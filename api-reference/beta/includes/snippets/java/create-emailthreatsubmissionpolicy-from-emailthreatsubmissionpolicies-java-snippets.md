@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EmailThreatSubmissionPolicy emailThreatSubmissionPolicy = new EmailThreatSubmissionPolicy();
-emailThreatSubmissionPolicy.isReportToMicrosoftEnabled = true;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().threatSubmission().emailThreatSubmissionPolicies()
-	.buildRequest()
-	.post(emailThreatSubmissionPolicy);
+com.microsoft.graph.beta.models.security.EmailThreatSubmissionPolicy emailThreatSubmissionPolicy = new com.microsoft.graph.beta.models.security.EmailThreatSubmissionPolicy();
+emailThreatSubmissionPolicy.setIsReportToMicrosoftEnabled(true);
+com.microsoft.graph.models.security.EmailThreatSubmissionPolicy result = graphClient.security().threatSubmission().emailThreatSubmissionPolicies().post(emailThreatSubmissionPolicy);
+
 
 ```

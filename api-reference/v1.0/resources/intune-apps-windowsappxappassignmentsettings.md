@@ -3,7 +3,7 @@ title: "windowsAppXAppAssignmentSettings resource type"
 description: "Contains properties used when assigning a Windows AppX mobile app to a group."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappas
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|useDeviceContext|Boolean|Whether or not to use device execution context for Windows AppX mobile app.|
+|useDeviceContext|Boolean|When TRUE, indicates that device execution context will be used for the AppX mobile app. When FALSE, indicates that user context will be used for the AppX mobile app. By default, this property is set to FALSE. Once this property has been set to TRUE it cannot be changed.|
 
 ## Relationships
 None

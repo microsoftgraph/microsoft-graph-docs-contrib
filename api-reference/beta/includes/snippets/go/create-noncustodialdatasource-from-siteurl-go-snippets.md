@@ -4,23 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewNoncustodialDataSource()
+
+requestBody := graphmodelsediscovery.NewNoncustodialDataSource()
 applyHoldToSource := false
 requestBody.SetApplyHoldToSource(&applyHoldToSource) 
-dataSource := graphmodels.NewDataSource()
-additionalData := map[string]interface{}{
-site := graphmodels.New()
+dataSource := graphmodelsediscovery.NewSiteSource()
+site := graphmodels.NewSite()
 webUrl := "https://contoso.sharepoint.com/sites/SecretSite"
 site.SetWebUrl(&webUrl) 
-	dataSource.SetSite(site)
-}
-dataSource.SetAdditionalData(additionalData)
+dataSource.SetSite(site)
 requestBody.SetDataSource(dataSource)
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").NoncustodialDataSources().Post(context.Background(), requestBody, nil)
+noncustodialDataSources, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").NoncustodialDataSources().Post(context.Background(), requestBody, nil)
 
 
 ```

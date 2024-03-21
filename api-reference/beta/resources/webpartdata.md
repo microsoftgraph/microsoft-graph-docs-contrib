@@ -3,7 +3,7 @@ title: "webPartData resource type"
 description: Represents the data of a given web part.
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Represents the data of a given web part.
 
 | Property               | Type                                                             | Description                                                                                                                                         |
 | :--------------------- | :--------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| audiences              | String collection                                                | Audience information of the web part. By using this property, specific content will be prioritized to specific audiences.                            |
+| audiences              | String collection                                                | Audience information of the web part. By using this property, specific content is prioritized to specific audiences.                            |
 | dataVersion            | String                                                           | Data version of the web part. The value is defined by the web part developer. Different dataVersions usually refers to a different property structure. |
 | description            | String                                                           | Description of the web part.                                                                                                                         |
 | properties             | [Json](../resources/json.md)                                     | Properties bag of the web part.                                                                                                                      |
@@ -32,7 +32,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

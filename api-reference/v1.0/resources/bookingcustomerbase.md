@@ -3,7 +3,7 @@ title: "bookingCustomerBase resource type"
 description: Abstract base type for Bookings customers.
 author: "davisjms"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ Base type of [bookingCustomer](bookingcustomer.md)
 |id|String|ID of the customer. Inherited from [entity](../resources/entity.md).|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

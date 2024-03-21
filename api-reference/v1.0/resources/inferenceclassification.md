@@ -2,8 +2,8 @@
 title: "inferenceClassification resource type"
 description: "Classification of a user's messages to enable focus on those that are more relevant or important to the user. "
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: outlook
+author: "SuryaLashmiS"
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ For more information, see [Manage Focused Inbox](manage-focused-inbox.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

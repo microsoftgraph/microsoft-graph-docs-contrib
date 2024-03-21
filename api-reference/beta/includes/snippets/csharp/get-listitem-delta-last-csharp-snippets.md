@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items.Delta.GetAsync((requestConfiguration) =>
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items.Delta.GetAsDeltaGetResponseAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Token = "1230919asd190410jlka";
 });

@@ -3,7 +3,7 @@ title: "provisioningStatusInfo resource type"
 description: "Describes the status of the provisioning summary event."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -19,12 +19,12 @@ Describes the status of the provisioning summary event.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|String| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
-|errorInfo|[provisioningErrorInfo](provisioningerrorinfo.md)| If status is not success/ skipped details for the error are contained in this.|
+|status|provisioningResult| Possible values are: `success`, `failure`, `skipped`, `warning`, `unknownFutureValue`. Supports `$filter` (`eq`, `contains`).|
+|errorInformation|[provisioningErrorInfo](provisioningerrorinfo.md)| If status isn't success/ skipped details for the error are contained in this.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -38,7 +38,10 @@ The following is a JSON representation of the resource.
 ```json
 {
   "status": "String",
-  "errorinfo": {"@odata.type": "microsoft.graph.provisioningErrorInfo"},}
+  "errorInformation": {
+    "@odata.type": "microsoft.graph.provisioningErrorInfo"
+  }
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

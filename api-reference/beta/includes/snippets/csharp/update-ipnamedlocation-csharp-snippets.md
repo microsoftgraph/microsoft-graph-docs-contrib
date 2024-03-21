@@ -4,29 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new NamedLocation
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new IpNamedLocation
 {
 	OdataType = "#microsoft.graph.ipNamedLocation",
 	DisplayName = "Untrusted named location with only IPv4 address",
-	AdditionalData = new Dictionary<string, object>
+	IsTrusted = false,
+	IpRanges = new List<IpRange>
 	{
+		new IPv4CidrRange
 		{
-			"isTrusted" , false
-		},
-		{
-			"ipRanges" , new List<>
-			{
-				new 
-				{
-					OdataType = "#microsoft.graph.iPv4CidrRange",
-					CidrAddress = "6.5.4.3/18",
-				},
-			}
+			OdataType = "#microsoft.graph.iPv4CidrRange",
+			CidrAddress = "6.5.4.3/18",
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Identity.ConditionalAccess.NamedLocations["{namedLocation-id}"].PatchAsync(requestBody);
 
 

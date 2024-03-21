@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	GroupLifetimeInDays = 180
-	ManagedGroupTypes = "Selected"
-	AlternateNotificationEmails = "admin@contoso.com"
+	groupLifetimeInDays = 180
+	managedGroupTypes = "Selected"
+	alternateNotificationEmails = "admin@contoso.com"
 }
 
-Update-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
+Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
 
 ```

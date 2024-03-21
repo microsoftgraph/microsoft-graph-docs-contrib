@@ -1,9 +1,9 @@
 ---
 title: "Update teamsApp"
-description: "Update an app previously published to the Microsoft Teams app catalog. "
+description: "Update an app previously published to the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -17,19 +17,21 @@ Update an [app](../resources/teamsapp.md) previously published to the Microsoft 
 
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).  
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
->**Note:** Only global administrators can call this API.
-
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
-| Delegated (personal Microsoft account) | Not supported|
+| Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note:**
+> * Only Global Administrators can call this API.
+> * Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -43,13 +45,13 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |Property|Type|Description|
 |----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
+|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set **requiresReview** to `true`. A user who has admin privileges can opt not to set **requiresReview** or set the value to `false`  and the app will be considered approved and will publish instantly.|
 
 ## Request headers
 
 | Header        | Value           |
 |:--------------|:--------------  |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/zip. Required. |
 
 ## Request body
@@ -66,52 +68,86 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example 1: Update an application previously published to the Microsoft Teams app catalog
 
-### Request
+#### Request
 
-<!-- { "blockType": "ignored" } -->
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsapp_beta_e1"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8/appDefinitions
 Content-type: application/zip
 
-[Zip file containing a Teams app package]
+app.zip
 ```
 
-For details about the Teams application zip file, see [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
-<!-- markdownlint-disable MD024 -->
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-teamsapp-beta-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-beta-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-teamsapp-beta-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+For details about the Teams application zip file, see [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
+
+#### Response
 
 If successful, this method returns a `204 No Content` response code.
 
+<!-- {
+  "blockType": "response"
+}-->
+```http
+HTTP/1.1 204 No Content
+```
+
 ### Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog
 
-### Request
+#### Request
 
-<!-- markdownlint-disable MD034 -->
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_teamsapp"
+  "name": "update_teamsapp_beta_e2"
 }-->
 
 ```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
 Content-type: application/zip
 
-[Zip file containing a Teams app package]
+app.zip
 ```
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-teamsapp-beta-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-beta-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-teamsapp-beta-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
 
-If successful, this method returns a `201 Created` response code and the key/value pair `publishingState`: `submitted` in the response body. *See* [teamsappdefinition](../resources/teamsappdefinition.md).
+If successful, this method returns a `201 Created` response code and the key-value pair `"publishingState": "submitted"` in the response body. For details, see [teamsAppDefinition](../resources/teamsappdefinition.md).
 
 <!-- {
   "blockType": "response",
@@ -139,6 +175,10 @@ Content-Type: application/json
          "Member.Read.Group"
     ],
     "publishingState": "submitted",
-    "lastModifiedDateTime": "2020-02-10 22:48:33.841",
+    "lastModifiedDateTime": "2020-02-10 22:48:33.841"
 }
 ```
+
+## Related content
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

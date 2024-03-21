@@ -3,7 +3,7 @@ title: "payload resource type"
 description: "Represents an attack simulation training payload in a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -29,10 +29,10 @@ Inherits from [entity](../resources/entity.md).
 
 | Property | Type        | Description |
 |:-------------|:------------|:------------|
-|brand|[payloadBrand](#payloadbrand-values)|The branch of a payload. Possible values are: `unknown`, `other`, `americanExpress`, `capitalOne`, `dhl`, `docuSign`, `dropbox`, `facebook`, `firstAmerican`, `microsoft`, `netflix`, `scotiabank`, `stewartTitle`, `tesco`, `wellsFargo`, `syrinxCloud`, `adobe`, `teams`, `zoom`, `unknownFutureValue`. |
-|complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload.Possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`|
+|brand|[payloadBrand](#payloadbrand-values)|The branch of a payload. Possible values are: `unknown`, `other`, `americanExpress`, `capitalOne`, `dhl`, `docuSign`, `dropbox`, `facebook`, `firstAmerican`, `microsoft`, `netflix`, `scotiabank`, `sendGrid`, `stewartTitle`, `tesco`, `wellsFargo`, `syrinxCloud`, `adobe`, `teams`, `zoom`, `unknownFutureValue`. |
+|complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload. Possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
-|createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload.|
+|createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Description of the attack simulation and training campaign payload.|
 |detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
 |displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
@@ -43,15 +43,15 @@ Inherits from [entity](../resources/entity.md).
 |isCurrentEvent|Boolean|Indicates whether the payload is from any recent event. |
 |language|String|Payload language.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign payload.|
-|lastModifiedDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |payloadTags|String collection|Free text tags for a payload.|
 |platform|payloadDeliveryPlatform|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
 |simulationAttackType|[simulationAttackType](../resources/simulation.md#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Simulation content source. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `tenant`, `global`, `unknownFutureValue`. Inherited from [simulation](../resources/simulation.md).|
-|status|[simulationContentStatus](../resources/simulation.md#simulationcontentsource-values)|Simulation content status. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`. Inherited from [simulation](../resources/simulation.md).|
-|technique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
-|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload. Possible values are: `unknown`, `other`, `accountActivation`, `accountVerification`, `billing`, `cleanUpMail`, `controversial`, `documentReceived`, `expense`, `incomingMessages`, `invoice`, `itemReceived`, `loginAlert`, `mailReceived`, `password`, `payment`, `payroll`, `personalizedOffer`, `quarantine`, `remoteWork`, `reviewMessage`, `securityUpdate`, `serviceSuspended`, `signatureRequired`, `upgradeMailboxStorage`, `verifyMailbox`, `voicemail`, `advertisement`, `employeeEngagement`, `unknownFutureValue`.|
+|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Simulation content source. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|status|[simulationContentStatus](../resources/simulation.md#simulationcontentstatus-values)|Simulation content status. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|technique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`, `oAuthConsentGrant`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `oAuthConsentGrant`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
+|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload. Possible values are: `unknown`, `other`, `accountActivation`, `accountVerification`, `billing`, `cleanUpMail`, `controversial`, `documentReceived`, `expense`, `fax`, `financeReport`, `incomingMessages`, `invoice`, `itemReceived`, `loginAlert`, `mailReceived`, `password`, `payment`, `payroll`, `personalizedOffer`, `quarantine`, `remoteWork`, `reviewMessage`, `securityUpdate`, `serviceSuspended`, `signatureRequired`, `upgradeMailboxStorage`, `verifyMailbox`, `voicemail`, `advertisement`, `employeeEngagement`, `unknownFutureValue`.|
 
 ### payloadTheme values
 
@@ -80,11 +80,11 @@ Inherits from [entity](../resources/entity.md).
 |quarantine| Payload with quarantine-related details.|
 |remoteWork| Payload related to as remote work.|
 |reviewMessage| Payload with a review message request.|
-|securityUpdate| Payload mentioning that a security update is required.|
-|serviceSuspended| Payload mentioning that a service has been suspended.|
-|signatureRequired| Payload telling that a signature is required.|
-|upgradeMailboxStorage| Payload asking to upgrade the mailbox storage.|
-|verifyMailbox| Payload asking for mailbox verification.|
+|securityUpdate| Payload mentions that a security update is required.|
+|serviceSuspended| Payload mentions that a service has been suspended.|
+|signatureRequired| Payload tells that a signature is required.|
+|upgradeMailboxStorage| Payload asks to upgrade the mailbox storage.|
+|verifyMailbox| Payload asks for mailbox verification.|
 |voicemail| Payload with voicemail details.|
 |advertisement| Payload with advertisement details.|
 |employeeEngagement| Payload with employee engagement details.|
@@ -155,7 +155,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.payload"
@@ -164,34 +164,33 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.type": "#microsoft.graph.payload",
-    "brand": {"@odata.type": "microsoft.graph.payloadBrand"},
-    "complexity": {"@odata.type": "microsoft.graph.payloadComplexity"},
+    "brand": "String",
+    "complexity": "String",
     "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
     "createdDateTime": "String (timestamp)",
     "description": "String",
     "detail": {"@odata.type": "microsoft.graph.payloadDetail"},
     "displayName": "String",
     "id": "String (identifier)",
-    "industry": {"@odata.type": "microsoft.graph.payloadIndustry"},
+    "industry": "String",
     "isAutomated": "Boolean",
     "isControversial": "Boolean",
     "isCurrentEvent": "Boolean",
     "language": "String",
     "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
     "lastModifiedDateTime": "String (timestamp)",
-    "name": "String",
     "payloadTags": ["String"],
-    "platform": {"@odata.type": "microsoft.graph.payloadDeliveryPlatform"},
+    "platform": "String",
     "predictedCompromiseRate": "Double",
-    "simulationAttackType": {"@odata.type": "microsoft.graph.simulationAttackType"},
-    "source": {"@odata.type": "microsoft.graph.simulationContentSource"},
-    "status": {"@odata.type": "microsoft.graph.simulationContentStatus"},
-    "technique": {"@odata.type": "microsoft.graph.simulationAttackType"},
-    "theme": {"@odata.type": "microsoft.graph.payloadTheme"}
+    "simulationAttackType": "String",
+    "source": "String",
+    "status": "String",
+    "technique": "String",
+    "theme": "String"
 }
 ```
 
 
-## See also
+## Related content
 - [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
 - [Get started using attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).

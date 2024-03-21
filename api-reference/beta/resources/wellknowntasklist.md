@@ -1,9 +1,9 @@
 ---
 title: "wellKnownTaskList resource type"
-description: "A built-in task list which cannot be renamed or deleted."
+description: "A built-in task list that can't be renamed or deleted."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
-A built-in task list which cannot be renamed or deleted. To Do has two built-in lists, **flagged email** and **tasks** list.
+A built-in task list that can't be renamed or deleted. To Do has two built-in lists, **flagged email** and **tasks** list.
 
 This resource supports adding your data to custom properties as [open extensions](/graph/extensibility-overview)
 
@@ -34,7 +34,7 @@ Inherits from [baseTaskList](../resources/basetasklist.md).
 |:---|:---|:---|
 |displayName|String|The name of the task list. Inherited from [baseTaskList](../resources/basetasklist.md).|
 |id|String|The identifier of the task list, unique in the user's mailbox. Read-only. Inherited from [baseTaskList](../resources/basetasklist.md).|
-|wellKnownListName|wellKnownListName_v2|Property indicating the list name if the given list is a well-known list.. The possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|wellKnownListName|wellKnownListName_v2|Property indicating the list name if the given list is a well-known list. The possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
 ### wellknownListName values
 |Member|Description|
@@ -42,7 +42,7 @@ Inherits from [baseTaskList](../resources/basetasklist.md).
 |none| User created list.|
 |defaultList| Built-in **tasks** list.|
 |flaggedEmails| Built-in **flagged email** list. Tasks from flagged emails are present in this list.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 |Relationship|Type|Description|

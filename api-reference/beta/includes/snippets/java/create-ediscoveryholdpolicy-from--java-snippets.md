@@ -4,16 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-EdiscoveryHoldPolicy ediscoveryHoldPolicy = new EdiscoveryHoldPolicy();
-ediscoveryHoldPolicy.displayname = "My legalHold with sources";
-ediscoveryHoldPolicy.description = "Created from Graph API";
-ediscoveryHoldPolicy.additionalDataManager().put("userSources@odata.bind", new JsonPrimitive("[  {    \"@odata.type\": \"microsoft.graph.security.userSource\",    \"email\": \"SalesTeam@M365x809305.OnMicrosoft.com\"  }]"));
-ediscoveryHoldPolicy.additionalDataManager().put("siteSources@odata.bind", new JsonPrimitive("[  {    \"@odata.type\": \"microsoft.graph.security.siteSource\",    \"site\": {      \"webUrl\": \"https://m365x809305.sharepoint.com/sites/Design-topsecret\"    }  }]"));
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.security().cases().ediscoveryCases("b0073e4e-4184-41c6-9eb7-8c8cc3e2288b").legalHolds()
-	.buildRequest()
-	.post(ediscoveryHoldPolicy);
+com.microsoft.graph.beta.models.security.EdiscoveryHoldPolicy ediscoveryHoldPolicy = new com.microsoft.graph.beta.models.security.EdiscoveryHoldPolicy();
+ediscoveryHoldPolicy.setDisplayName("My legalHold with sources");
+ediscoveryHoldPolicy.setDescription("Created from Graph API");
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+LinkedList<Object> userSourcesOdataBind = new LinkedList<Object>();
+ property = new ();
+property.setOdataType("microsoft.graph.security.userSource");
+property.setEmail("SalesTeam@contoso.com");
+userSourcesOdataBind.add(property);
+additionalData.put("userSources@odata.bind", userSourcesOdataBind);
+LinkedList<Object> siteSourcesOdataBind = new LinkedList<Object>();
+ property1 = new ();
+property1.setOdataType("microsoft.graph.security.siteSource");
+ site = new ();
+site.setWebUrl("https://m365x809305.sharepoint.com/sites/Design-topsecret");
+property1.setSite(site);
+siteSourcesOdataBind.add(property1);
+additionalData.put("siteSources@odata.bind", siteSourcesOdataBind);
+ediscoveryHoldPolicy.setAdditionalData(additionalData);
+com.microsoft.graph.models.security.EdiscoveryHoldPolicy result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").legalHolds().post(ediscoveryHoldPolicy);
+
 
 ```

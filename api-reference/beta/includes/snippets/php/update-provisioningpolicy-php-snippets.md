@@ -6,32 +6,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcProvisioningPolicy();
-$requestBody->set@odatatype('#microsoft.graph.cloudPcProvisioningPolicy');
-
+$requestBody->setOdataType('#microsoft.graph.cloudPcProvisioningPolicy');
 $requestBody->setDisplayName('HR provisioning policy');
-
 $requestBody->setDescription('Provisioning policy for India HR employees');
-
 $requestBody->setOnPremisesConnectionId('4e47d0f6-6f77-44f0-8893-c0fe1701ffff');
-
 $requestBody->setImageId('Image ID value');
-
 $requestBody->setImageDisplayName('Image Display Name value');
-
 $requestBody->setImageType(new CloudPcProvisioningPolicyImageType('custom'));
-
 $windowsSettings = new CloudPcWindowsSettings();
 $windowsSettings->setLanguage('en-US');
-
-
 $requestBody->setWindowsSettings($windowsSettings);
+$windowsSetting = new CloudPcWindowsSetting();
+$windowsSetting->setLocale('en-US');
+$requestBody->setWindowsSetting($windowsSetting);
 
-
-$requestResult = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPoliciesById('cloudPcProvisioningPolicy-id')->patch($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byCloudPcProvisioningPolicyId('cloudPcProvisioningPolicy-id')->patch($requestBody)->wait();
 
 ```

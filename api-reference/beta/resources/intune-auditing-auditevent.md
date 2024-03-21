@@ -3,7 +3,7 @@ title: "auditEvent resource type"
 description: "A class containing the properties for Audit Event."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -25,8 +25,8 @@ A class containing the properties for Audit Event.
 |[Create auditEvent](../api/intune-auditing-auditevent-create.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Create a new [auditEvent](../resources/intune-auditing-auditevent.md) object.|
 |[Delete auditEvent](../api/intune-auditing-auditevent-delete.md)|None|Deletes a [auditEvent](../resources/intune-auditing-auditevent.md).|
 |[Update auditEvent](../api/intune-auditing-auditevent-update.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.|
-|[getAuditCategories function](../api/intune-auditing-auditevent-getauditcategories.md)|String collection|Not yet documented|
-|[getAuditActivityTypes function](../api/intune-auditing-auditevent-getauditactivitytypes.md)|String collection|Not yet documented|
+|[getAuditCategories function](../api/intune-auditing-auditevent-getauditcategories.md)|String collection||
+|[getAuditActivityTypes function](../api/intune-auditing-auditevent-getauditactivitytypes.md)|String collection||
 
 ## Properties
 |Property|Type|Description|

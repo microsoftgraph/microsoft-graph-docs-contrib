@@ -10,7 +10,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth-register-app-v2.md) and [get authentication tokens for a user](auth-v2-user.md) or [service](auth-v2-service.md), you can make requests to the Microsoft Graph API.
 
 > [!IMPORTANT]
-> How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer guidance for Azure Active Directory Conditional Access](/azure/active-directory/develop/active-directory-conditional-access-developer).
+> How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer guidance for Microsoft Entra Conditional Access](/azure/active-directory/develop/active-directory-conditional-access-developer).
 
 ## OData namespace
 
@@ -35,12 +35,14 @@ The components of a request include:
 * [{version}](#version) - The version of the Microsoft Graph API your application is using.
 * [{resource}](#resource) - The resource in Microsoft Graph that you're referencing. 
 * [{query-parameters}](#query-parameters) - Optional OData query options or REST method parameters that customize the response.
+* [{headers}](#headers) - Request headers that customize the request. Can be optional or required depending on the API.
 
 After you make a request, a response is returned that includes: 
 
 * Status code - An HTTP status code that indicates success or failure. For details about HTTP error codes, see [Errors](errors.md).
 * Response message - The data that you requested or the result of the operation. The response message can be empty for some operations.
 * `@odata.nextLink` - If your request returns a lot of data, you need to page through it by using the URL returned in `@odata.nextLink`. For details, see [Paging](paging.md).
+* Response headers - Additional information about the response, such as the type of content returned and the request-id that you can use to correlate the response to the request.
 
 ## HTTP methods
 
@@ -50,7 +52,7 @@ Microsoft Graph uses the HTTP method on your request to determine what your requ
 | :----- | :------------------------------------------- |
 | GET    | Read data from a resource.                   |
 | POST   | Create a new resource, or perform an action. |
-| PATCH  | Update a resource with new values.           |
+| PATCH  | Update a resource with new values, or upsert a resource (create if resource doesn't exist, update otherwise). |
 | PUT    | Replace a resource with a new one.           |
 | DELETE | Remove a resource.                           |
 
@@ -110,6 +112,14 @@ Aside from OData query options, some methods require parameter values specified 
 ```http
 GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
 ```
+
+## Headers
+
+Microsoft Graph supports both HTTP standard headers and custom headers.
+
+Specific APIs may require additional headers to be included in the request. On the other hand, Microsoft Graph will always return mandatory headers, such as the `request-id` header in the response, or some headers may be specific to some APIs or functionality, for example, the `Retry-After` header is included when your app hits throttling limits; or the `Location` header that's included for long-running operations.
+
+Headers are case-insensitive as defined in [rfc 9110](https://www.rfc-editor.org/rfc/rfc9110.html) unless explicitly specified otherwise.
 
 ## Tools for interacting with Microsoft Graph
 

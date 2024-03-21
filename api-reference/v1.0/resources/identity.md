@@ -1,9 +1,9 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "identity resource type"
 ms.localizationpriority: medium
 description: "Represents an identity of an actor."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 Represents an identity of an _actor_. For example, an actor can be a user, device, or application.
 
 In some circumstances, the unique identifier for the actor might not be available.
-In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+In this case, the **displayName** property for the identity is returned, but the **id** property will be missing from the resource.
 
 ## Properties
 
 | Property    | Type   | Description                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).     |
+| displayName | String | The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).     |
 | id          | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
 
 ## JSON representation

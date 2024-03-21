@@ -24,6 +24,7 @@ Represents the static set of electronically stored information collected for use
 |[addToReviewSet](../api/security-ediscoveryreviewset-addtoreviewset.md)|None|Start the process of adding a collection from Microsoft 365 services to a [review set](../resources/security-ediscoveryreviewset.md).|
 |[List queries](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Get the list of [queries](../resources/security-ediscoveryreviewsetquery.md) associated with an eDiscovery review set.|
 |[Create ediscoveryReviewSetQuery](../api/security-ediscoveryreviewset-post-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Create a new ediscoveryReviewSetQuery object.|
+|[export](../api/security-ediscoveryreviewset-export.md)|None|Initiate an export of data from a [review set](../resources/security-ediscoveryreviewset.md).|
 
 ## Properties
 |Property|Type|Description|

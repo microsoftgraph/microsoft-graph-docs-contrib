@@ -1,9 +1,9 @@
 ---
 title: "privateLinkDetails resource type"
-description: "Provides details about Private Links in your Azure AD tenant"
-author: "besiler"
+description: "Provides details about Private Links in your Microsoft Entra tenant"
+author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -21,8 +21,8 @@ Provides details about the Azure Private Link associated with a sign-in event. F
 |Property|Type|Description|
 |:---|:---|:---|
 |policyId|String|The unique identifier for the Private Link policy. |
-|policyName|String|The name of the Private Link policy in Azure AD. |
-|policyTenantId|String|The tenant identifier of the Azure AD tenant the Private Link policy belongs to.|
+|policyName|String|The name of the Private Link policy in Microsoft Entra ID. |
+|policyTenantId|String|The tenant identifier of the Microsoft Entra tenant the Private Link policy belongs to.|
 |resourceId|String|The Azure Resource Manager (ARM) path for the Private Link policy resource.|
 
 ## Relationships

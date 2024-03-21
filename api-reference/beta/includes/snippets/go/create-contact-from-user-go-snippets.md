@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewContact()
 givenName := "Pavel"
@@ -15,14 +23,14 @@ requestBody.SetSurname(&surname)
 
 
 typedEmailAddress := graphmodels.NewTypedEmailAddress()
-address := "pavelb@contoso.onmicrosoft.com"
+address := "pavelb@contoso.com"
 typedEmailAddress.SetAddress(&address) 
 name := "Pavel Bansky"
 typedEmailAddress.SetName(&name) 
 type := graphmodels.PERSONAL_EMAILTYPE 
 typedEmailAddress.SetType(&type) 
 typedEmailAddress1 := graphmodels.NewTypedEmailAddress()
-address := "pavelb@fabrikam.onmicrosoft.com"
+address := "pavelb@contoso.com"
 typedEmailAddress1.SetAddress(&address) 
 name := "Pavel Bansky"
 typedEmailAddress1.SetName(&name) 
@@ -31,10 +39,9 @@ typedEmailAddress1.SetType(&type)
 otherLabel := "Volunteer work"
 typedEmailAddress1.SetOtherLabel(&otherLabel) 
 
-emailAddresses := []graphmodels.Objectable {
+emailAddresses := []graphmodels.TypedEmailAddressable {
 	typedEmailAddress,
 	typedEmailAddress1,
-
 }
 requestBody.SetEmailAddresses(emailAddresses)
 
@@ -47,11 +54,10 @@ phone.SetType(&type)
 
 phones := []graphmodels.Phoneable {
 	phone,
-
 }
 requestBody.SetPhones(phones)
 
-result, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
+contacts, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
 
 
 ```

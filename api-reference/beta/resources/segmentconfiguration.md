@@ -1,9 +1,9 @@
 ---
 title: "segmentConfiguration resource type"
-description: "An abstract type for defining application segments when publishing an on-premises wildcard application through Azure AD Application Proxy."
+description: "An abstract type for defining application segments when publishing an on-premises wildcard application through Microsoft Entra application proxy."
 ms.localizationpriority: medium
-author: "dhruvinshah"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type for defining application segments when publishing an on-premises wildcard application through Azure AD Application Proxy. The following types are derived from this abstract type:
+An abstract type for defining application segments when publishing an on-premises wildcard application through Microsoft Entra application proxy. The following types are derived from this abstract type:
 + [webSegmentConfiguration](websegmentconfiguration.md)
 
 ## Properties

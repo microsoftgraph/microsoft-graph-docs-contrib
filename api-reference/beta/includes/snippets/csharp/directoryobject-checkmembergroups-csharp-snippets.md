@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.DirectoryObjects.Item.CheckMemberGroups.CheckMemberGroupsPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.DirectoryObjects.Item.CheckMemberGroups;
+
+var requestBody = new CheckMemberGroupsPostRequestBody
 {
 	GroupIds = new List<string>
 	{
@@ -17,7 +20,9 @@ var requestBody = new Microsoft.Graph.Beta.DirectoryObjects.Item.CheckMemberGrou
 		"c9103f26-f3cf-4004-a611-2a14e81b8f79",
 	},
 };
-var result = await graphClient.DirectoryObjects["{directoryObject-id}"].CheckMemberGroups.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.DirectoryObjects["{directoryObject-id}"].CheckMemberGroups.PostAsCheckMemberGroupsPostResponseAsync(requestBody);
 
 
 ```

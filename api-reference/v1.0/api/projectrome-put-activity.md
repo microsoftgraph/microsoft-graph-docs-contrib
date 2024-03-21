@@ -2,7 +2,7 @@
 title: "Create or replace an activity"
 description: "Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use deep insert."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: apiPageType
 ---
@@ -11,17 +11,14 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).
+Create a new or replace an existing [user activity](../resources/projectrome-activity.md) for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | UserActivity.ReadWrite.CreatedByApp |
-| Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp |
-| Application                            | Not supported.                      |
+<!-- { "blockType": "permissions", "name": "projectrome_put_activity" } -->
+[!INCLUDE [permissions-table](../includes/permissions/projectrome-put-activity-permissions.md)]
 
 ## HTTP request
 
@@ -53,40 +50,35 @@ If successful, this method returns the `201 Created` response code if the activi
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
-    "blockType": "ignored",
-    "name": "upsert_activity"
+    "blockType": "request",
+    "name": "upsert_activity_v1_e1"
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/3F12345
 Content-type: application/json
 
 {
+  "activitySourceHost": "https://contoso.com",
+  "createdDateTime": "2017-06-09T20:54:43.969Z",
+  "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
+  "id": "14332800362997268276",
   "appActivityId": "/article?12345",
-  "activitySourceHost": "https://www.contoso.com",
-  "userTimezone": "Africa/Casablanca",
-  "appDisplayName": "Contoso, Ltd.",
-  "activationUrl": "https://www.contoso.com/article?id=12345",
-  "contentUrl": "https://www.contoso.com/article?id=12345",
-  "fallbackUrl": "https://www.contoso.com/article?id=12345",
-  "contentInfo": {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "author": "Jennifer Booth",
-    "name": "How to Tie a Reef Knot"
-  },
+  "status": "updated",
+  "expirationDateTime": "2017-02-26T20:20:48.114Z",
   "visualElements": {
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
-      "alternateText": "Contoso, Ltd.",
+      "alternateText": "Contoso Ltd",
       "addImageQuery": false
     },
-    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
-    "displayText": "Contoso How-To: How to Tie a Reef Knot",
     "content": {
       "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
       "type": "AdaptiveCard",
@@ -101,18 +93,21 @@ Content-type: application/json
 }
 ```
 
-<!-- markdownlint-disable MD024 -->
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upsert-activity-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "microsoft.graph.userActivity"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -131,7 +126,7 @@ Content-Type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "backgroundColor": "#ff0000",
     "content": {
@@ -165,40 +160,35 @@ This example creates a new activity and a history item for that activity in one 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
-    "blockType": "ignored",
-    "name": "upsert_activity"
+    "blockType": "request",
+    "name": "upsert_activity2_v1_e2"
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/12345
 Content-type: application/json
 
 {
+  "activitySourceHost": "https://contoso.com",
+  "createdDateTime": "2017-06-09T20:54:43.969Z",
+  "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
+  "id": "14332800362997268276",
   "appActivityId": "/article?12345",
-  "activitySourceHost": "https://www.contoso.com",
-  "userTimezone": "Africa/Casablanca",
-  "appDisplayName": "Contoso, Ltd.",
-  "activationUrl": "https://www.contoso.com/article?id=12345",
-  "contentUrl": "https://www.contoso.com/article?id=12345",
-  "fallbackUrl": "https://www.contoso.com/article?id=12345",
-  "contentInfo": {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "author": "Jennifer Booth",
-    "name": "How to Tie a Reef Knot"
-  },
+  "status": "updated",
+  "expirationDateTime": "2017-02-26T20:20:48.114Z",
   "visualElements": {
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
-      "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "alternateText": "Contoso Ltd",
+      "addImageQuery": false
     },
-    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
-    "displayText": "Contoso How-To: How to Tie a Reef Knot",
     "content": {
       "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
       "type": "AdaptiveCard",
@@ -220,12 +210,18 @@ Content-type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upsert-activity2-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "microsoft.graph.userActivity"
 } -->
@@ -248,7 +244,7 @@ Content-Type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "backgroundColor": "#ff0000",
     "content": {

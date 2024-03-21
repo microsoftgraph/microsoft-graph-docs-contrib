@@ -1,9 +1,9 @@
 ---
 title: "task resource type (lifecycle workflow tasks)"
-description: "Represents the built-in and custom tasks within workflows in Azure AD Lifecycle Workflows."
+description: "Represents the built-in and custom tasks within workflows in Microsoft Entra Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the built-in tasks available for lifecycle workflows. Tasks are the actions a workflow will execute when triggered. The built-in task "Run a custom task extension" can be used to trigger [custom task extensions](../resources/identitygovernance-customtaskextension.md) when you reach the limits of the other available built-in tasks, this allows integration with Azure Logic Apps.
+Represents the built-in tasks available for lifecycle workflows. Tasks are the actions a workflow executes when triggered. The built-in task "Run a custom task extension" can be used to trigger [custom task extensions](../resources/identitygovernance-customtaskextension.md) when you reach the limits of the other available built-in tasks. This task allows integration with Azure Logic Apps.
 
 A workflow can have up to 25 tasks.
 
@@ -34,21 +34,13 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |arguments|[microsoft.graph.keyValuePair](../resources/keyvaluepair.md) collection|Arguments included within the task. <br/> For guidance to configure this property, see [Configure the arguments for built-in Lifecycle Workflow tasks](/graph/identitygovernance-lifecycleworkflows-task-arguments). Required.|
 |category|microsoft.graph.identityGovernance.lifecycleTaskCategory|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. This property is multi-valued and the same task can apply to both `joiner` and `leaver` categories.<br><br>Supports `$filter`(`eq`, `ne`).|
-|continueOnError|Boolean|A boolean value that specifies whether, if this task fails, the workflow will stop, and subsequent tasks will not run. Optional.|
+|continueOnError|Boolean|A boolean value that specifies whether, if this task fails, the workflow stops, and subsequent tasks aren't run. Optional.|
 |description|String|A string that describes the purpose of the task for administrative use. Optional.|
 |displayName|String|A unique string that identifies the task. Required.<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
-|executionSequence|Int32|An integer that states in what order the task will run in a workflow.<br><br>Supports `$orderby`.|
+|executionSequence|Int32|An integer that states in what order the task runs in a workflow.<br><br>Supports `$orderby`.|
 |id|String|Identifier used for individually addressing a specific task. Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |isEnabled|Boolean|A boolean value that denotes whether the task is set to run or not. Optional.<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
-|taskDefinitionId|String|A unique template identifier for the task. For more information about the tasks that Lifecycle Workflows currently supports and their unique identifiers, see [supported tasks](../resources/identitygovernance-task.md#supported-tasks). Required.<br><br>Supports `$filter`(`eq`, `ne`).|
-
-### Supported tasks
-<!-- Comment out CRR until we can resolve the links problem
-
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md)]
--->
-
-[!INCLUDE [lifecycle-workflows-tasks-table](../includes/identitygovernance-lifecycleworkflows-tasks-table.md)]
+|taskDefinitionId|String|A unique template identifier for the task. For more information about the tasks that Lifecycle Workflows currently supports and their unique identifiers, see [Configure the arguments for built-in Lifecycle Workflow tasks](/graph/identitygovernance-lifecycleworkflows-task-arguments). Required.<br><br>Supports `$filter`(`eq`, `ne`).|
 
 ## Relationships
 
@@ -58,7 +50,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -86,7 +78,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Configure task arguments](/graph/identitygovernance-lifecycleworkflows-task-arguments)
 

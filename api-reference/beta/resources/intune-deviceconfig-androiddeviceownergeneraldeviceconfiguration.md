@@ -3,7 +3,7 @@ title: "androidDeviceOwnerGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the androidDeviceOwnerGeneralDeviceConfiguration resource."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -179,6 +179,9 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |workProfilePasswordRequireUnlock|[androidDeviceOwnerRequiredPasswordUnlock](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md)|Indicates the timeout period after which a work profile must be unlocked using a form of strong authentication. Possible values are: `deviceDefault`, `daily`, `unkownFutureValue`.|
 |locateDeviceUserlessDisabled|Boolean|Indicates whether or not LocateDevice for userless (COSU) devices is disabled.|
 |locateDeviceLostModeEnabled|Boolean|Indicates whether or not LocateDevice for devices with lost mode (COBO, COPE) is enabled.|
+|androidDeviceOwnerDelegatedScopeAppSettings|[androidDeviceOwnerDelegatedScopeAppSetting](../resources/intune-deviceconfig-androiddeviceownerdelegatedscopeappsetting.md) collection|Specifies the list of managed apps with app details and its associated delegated scope(s). This collection can contain a maximum of 500 elements.|
+|shareDeviceLocationDisabled|Boolean|Indicates whether or not location sharing is disabled for fully managed devices (COBO), and corporate owned devices with a work profile (COPE)|
+|deviceLocationMode|[androidDeviceOwnerLocationMode](../resources/intune-deviceconfig-androiddeviceownerlocationmode.md)|Indicates the location setting configuration for fully managed devices (COBO) and corporate owned devices with a work profile (COPE). Possible values are: `notConfigured`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -464,6 +467,23 @@ Here is a JSON representation of the resource.
   "workProfilePasswordRequiredType": "String",
   "workProfilePasswordRequireUnlock": "String",
   "locateDeviceUserlessDisabled": true,
-  "locateDeviceLostModeEnabled": true
+  "locateDeviceLostModeEnabled": true,
+  "androidDeviceOwnerDelegatedScopeAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+      "appDetail": {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "String",
+        "publisher": "String",
+        "appStoreUrl": "String",
+        "appId": "String"
+      },
+      "appScopes": [
+        "String"
+      ]
+    }
+  ],
+  "shareDeviceLocationDisabled": true,
+  "deviceLocationMode": "String"
 }
 ```

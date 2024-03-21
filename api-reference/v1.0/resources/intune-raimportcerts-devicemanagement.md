@@ -1,9 +1,9 @@
 ---
 title: "deviceManagement resource type"
 description: "Singleton that acts as container for a collection of UserPFXCertificate entities."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -43,6 +43,3 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
-

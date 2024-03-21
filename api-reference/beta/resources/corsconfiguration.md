@@ -2,8 +2,8 @@
 title: "corsConfiguration resource type (deprecated)"
 description: "Represents the CORS settings for an on-premises application segment published via Application Proxy."
 ms.localizationpriority: medium
-author: "dhruvinshah"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the CORS settings for the [onPremisesApplicationSegment](onPremisesApplicationSegment.md) resource when publishing an on-premises application through Azure AD Application Proxy. For more information, see [Understand and solve Azure Active Directory Application Proxy CORS issues](/azure/active-directory/app-proxy/application-proxy-understand-cors-issues).
+Represents the CORS settings for the [onPremisesApplicationSegment](onPremisesApplicationSegment.md) resource when publishing an on-premises application through Microsoft Entra application proxy. For more information, see [Understand and solve Microsoft Entra application proxy CORS issues](/azure/active-directory/app-proxy/application-proxy-understand-cors-issues).
 
 
 ## Properties

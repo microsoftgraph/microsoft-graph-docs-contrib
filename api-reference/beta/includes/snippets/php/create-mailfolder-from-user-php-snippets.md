@@ -6,17 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new MailFolder();
 $requestBody->setDisplayName('Clutter');
-
 $requestBody->setIsHidden(true);
 
-
-
-$requestResult = $graphServiceClient->me()->mailFolders()->post($requestBody);
-
+$result = $graphServiceClient->me()->mailFolders()->post($requestBody)->wait();
 
 ```

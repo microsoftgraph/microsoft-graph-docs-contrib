@@ -3,7 +3,7 @@ title: "Update defaultManagedAppProtection"
 description: "Update the properties of a defaultManagedAppProtection object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -101,6 +103,7 @@ The following table shows the properties that are required when you create the [
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
 |gracePeriodToBlockAppsDuringOffClockHours|Duration|A grace period before blocking app access during off clock hours. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|protectedMessagingRedirectAppType|[messagingRedirectAppType](../resources/intune-mam-messagingredirectapptype.md)|Defines how app messaging redirection is protected by an App Protection Policy. Default is anyApp. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `anyApp`, `anyManagedApp`, `specificApps`, `blocked`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
@@ -147,12 +150,16 @@ The following table shows the properties that are required when you create the [
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 |connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
 |appActionIfDevicePasscodeComplexityLessThanLow|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of low complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfAccountIsClockedOut|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or warn, if the user is clocked out (non-working time). Possible values are: `block`, `wipe`, `warn`.|
 |appActionIfDevicePasscodeComplexityLessThanMedium|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of medium complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
 |appActionIfDevicePasscodeComplexityLessThanHigh|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of high complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
 |requireClass3Biometrics|Boolean|Require user to apply Class 3 Biometrics on their Android device.|
 |requirePinAfterBiometricChange|Boolean|A PIN prompt will override biometric prompts if class 3 biometrics are updated on the device.|
 |fingerprintAndBiometricEnabled|Boolean|Indicate to the client to enable both biometrics and fingerprints for the app.|
 |minimumWarningSdkVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data. (iOS only)|
+|messagingRedirectAppUrlScheme|String|When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app url redirect schemes which are allowed to be used.|
+|messagingRedirectAppDisplayName|String|When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app name which are allowed to be used.|
+|messagingRedirectAppPackageId|String|When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app package ids which are allowed to be used.|
 
 
 
@@ -166,7 +173,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 5858
+Content-length: 6201
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -226,6 +233,7 @@ Content-length: 5858
   "appActionIfUnableToAuthenticateUser": "wipe",
   "dialerRestrictionLevel": "managedApps",
   "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+  "protectedMessagingRedirectAppType": "anyManagedApp",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -292,12 +300,16 @@ Content-length: 5858
   "appActionIfDeviceLockNotSet": "wipe",
   "connectToVpnOnLaunch": true,
   "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
+  "appActionIfAccountIsClockedOut": "wipe",
   "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
   "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
   "requireClass3Biometrics": true,
   "requirePinAfterBiometricChange": true,
   "fingerprintAndBiometricEnabled": true,
-  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
+  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value",
+  "messagingRedirectAppUrlScheme": "Messaging Redirect App Url Scheme value",
+  "messagingRedirectAppDisplayName": "Messaging Redirect App Display Name value",
+  "messagingRedirectAppPackageId": "Messaging Redirect App Package Id value"
 }
 ```
 
@@ -306,7 +318,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6030
+Content-Length: 6373
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -369,6 +381,7 @@ Content-Length: 6030
   "appActionIfUnableToAuthenticateUser": "wipe",
   "dialerRestrictionLevel": "managedApps",
   "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+  "protectedMessagingRedirectAppType": "anyManagedApp",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -435,11 +448,15 @@ Content-Length: 6030
   "appActionIfDeviceLockNotSet": "wipe",
   "connectToVpnOnLaunch": true,
   "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
+  "appActionIfAccountIsClockedOut": "wipe",
   "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
   "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
   "requireClass3Biometrics": true,
   "requirePinAfterBiometricChange": true,
   "fingerprintAndBiometricEnabled": true,
-  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
+  "minimumWarningSdkVersion": "Minimum Warning Sdk Version value",
+  "messagingRedirectAppUrlScheme": "Messaging Redirect App Url Scheme value",
+  "messagingRedirectAppDisplayName": "Messaging Redirect App Display Name value",
+  "messagingRedirectAppPackageId": "Messaging Redirect App Package Id value"
 }
 ```

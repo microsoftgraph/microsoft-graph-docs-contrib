@@ -1,10 +1,10 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: SpecialFolder
 ms.localizationpriority: medium
 description: "The SpecialFolder resource groups special folder-related data items into a single structure."
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -58,7 +58,7 @@ Here are the special folders available in OneDrive Personal and OneDrive for Bus
 | Music       | `music`      | The Music folder. Not available in OneDrive for Business.                |
 | Photos      | `photos`     | The Photos folder.                                                       |
 
-## Remarks 
+## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 

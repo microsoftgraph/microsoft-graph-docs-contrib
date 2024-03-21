@@ -2,7 +2,7 @@
 title: "resourceData resource type"
 description: "Represents the resouce data attached to the change notification sent to the subscriber."
 ms.localizationpriority: medium
-author: "jumasure"
+author: "keylimesoda"
 doc_type: resourcePageType
 ms.prod: "change-notifications"
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents the resource data attached to the change notification sent to the subscriber. This resource is an open type and allows other properties to be passed in.
 
-For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
+For details, see [Use Microsoft Graph to get change notifications](change-notifications-api-overview.md).
 
 ## Methods
 

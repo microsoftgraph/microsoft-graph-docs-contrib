@@ -5,7 +5,7 @@ ms.date: 10/06/2017
 title: IncompleteData
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 # incompleteData resource type
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **incompleteData** facet indicates that a resource was generated with incomplete data.
-The properties within may provide information about why there is incomplete data.
+The properties within may provide information about why there's incomplete data.
 
 ## JSON representation
 
@@ -31,8 +31,8 @@ The properties within may provide information about why there is incomplete data
 
 | Property                  | Type           | Description
 |:--------------------------|:---------------|:--------------------------------
-| missingDataBeforeDateTime | DateTimeOffset | The service does not have source data before the specified time.
-| wasThrottled              | Boolean        | Some data was not recorded due to excessive activity.
+| missingDataBeforeDateTime | DateTimeOffset | The service doesn't have source data before the specified time.
+| wasThrottled              | Boolean        | Some data wasn't recorded due to excessive activity.
 
 <!--
 {

@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new AuthenticationMethodConfiguration
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new MicrosoftAuthenticatorAuthenticationMethodConfiguration
 {
 	OdataType = "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
 	State = AuthenticationMethodState.Enabled,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 
 

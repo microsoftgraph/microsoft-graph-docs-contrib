@@ -3,7 +3,7 @@ title: "Get deviceHealthScript"
 description: "Read properties and relationships of the deviceHealthScript object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1488
+Content-Length: 1545
 
 {
   "value": {
@@ -85,6 +87,7 @@ Content-Length: 1488
     ],
     "isGlobalScript": true,
     "highestAvailableVersion": "Highest Available Version value",
+    "deviceHealthScriptType": "managedInstallerScript",
     "detectionScriptParameters": [
       {
         "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",

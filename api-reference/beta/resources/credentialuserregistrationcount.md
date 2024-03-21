@@ -1,9 +1,9 @@
 ---
 title: "credentialUserRegistrationCount resource type"
-description: "Represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities."
+description: "Represents the current state of how many users in your organization are registered for self-service password reset and multifactor authentication capabilities."
 ms.localizationpriority: medium
-author: "besiler"
-ms.prod: "identity-and-access-reports"
+author: "egreenberg14"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -13,20 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.
+Represents the current state of how many users in your organization are registered for self-service password reset and multifactor authentication capabilities. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount collection | Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities. |
+| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount collection | Report the current state of how many users in your organization are registered for self-service password reset and multifactor authentication (MFA) capabilities. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | id | String | The unique identifier for the activity. Read-only. |
-| totalUserCount | Int64 | Provides the total user count in the tenant. |
+| totalUserCount | Int64 | Provides the count of users with **accountEnabled** set to `true` in the tenant. |
 | userRegistrationCounts | [userRegistrationCount](userregistrationcount.md) collection | A collection of registration count and status information for users in your tenant. |
 
 ## Relationships

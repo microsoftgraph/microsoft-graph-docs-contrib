@@ -31,7 +31,7 @@ The container for a [custodian's](ediscovery-custodian.md) group.
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **unifiedGroupSource**.|
 |createdDateTime|DateTimeOffset|The date and time the **unifiedGroupSource** was created.|
 |displayName|String|The display name of the unified group - This is the name of the group.|
-|id|String|The ID of the **unifiedGroupSource**. This is not the ID of the actual group.|
+|id|String|The ID of the **unifiedGroupSource**. This isn't the ID of the actual group.|
 |includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 ### sourceType values
@@ -51,7 +51,7 @@ Types of source related to the user. Includes mailbox and site both by default.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

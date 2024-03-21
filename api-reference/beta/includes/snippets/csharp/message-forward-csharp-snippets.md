@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Forward.ForwardPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Me.Messages.Item.Forward;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ForwardPostRequestBody
 {
 	Message = new Message
 	{
@@ -17,7 +21,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Forward.ForwardPostR
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "danas@contoso.onmicrosoft.com",
+					Address = "danas@contoso.com",
 					Name = "Dana Swope",
 				},
 			},
@@ -25,6 +29,8 @@ var requestBody = new Microsoft.Graph.Beta.Me.Messages.Item.Forward.ForwardPostR
 	},
 	Comment = "Dana, just want to make sure you get this.",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.Messages["{message-id}"].Forward.PostAsync(requestBody);
 
 

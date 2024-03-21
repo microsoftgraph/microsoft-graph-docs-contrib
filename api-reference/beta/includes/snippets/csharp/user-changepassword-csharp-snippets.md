@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Me.ChangePassword.ChangePasswordPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Me.ChangePassword;
+
+var requestBody = new ChangePasswordPostRequestBody
 {
 	CurrentPassword = "xWwvJ]6NMw+bWH-d",
 	NewPassword = "0eM85N54wFxWwvJ]",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.ChangePassword.PostAsync(requestBody);
 
 

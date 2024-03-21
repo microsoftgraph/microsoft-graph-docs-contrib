@@ -3,7 +3,7 @@ title: "Update depMacOSEnrollmentProfile"
 description: "Update the properties of a depMacOSEnrollmentProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -17,14 +17,16 @@ Namespace: microsoft.graph
 
 Update the properties of a [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -38,7 +40,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMa
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -56,7 +58,7 @@ The following table shows the properties that are required when you create the [
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. [See here](/mem/intune/enrollment/windows-enrollment-methods) for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -75,6 +77,8 @@ The following table shows the properties that are required when you create the [
 |deviceNameTemplate|String|Sets a literal or name pattern. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |configurationWebUrl|Boolean|URL for setup assistant login Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |enabledSkipKeys|String collection|enabledSkipKeys contains all the enabled skip keys as strings Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|enrollmentTimeAzureAdGroupIds|Guid collection|EnrollmentTimeAzureAdGroupIds contains list of enrollment time Azure Group Ids to be associated with profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|waitForDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |registrationDisabled|Boolean|Indicates if registration is disabled|
 |fileVaultDisabled|Boolean|Indicates if file vault is disabled|
 |iCloudDiagnosticsDisabled|Boolean|Indicates if iCloud Analytics screen is disabled|
@@ -95,6 +99,7 @@ The following table shows the properties that are required when you create the [
 |adminAccountPassword|String|Indicates what the password for the admin account is|
 |hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
 |requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
+|autoAdvanceSetupEnabled|Boolean|Indicates if Setup Assistant will automatically advance through its screen|
 
 
 
@@ -108,7 +113,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 Content-type: application/json
-Content-length: 1951
+Content-length: 2123
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -140,6 +145,10 @@ Content-length: 1951
   "enabledSkipKeys": [
     "Enabled Skip Keys value"
   ],
+  "enrollmentTimeAzureAdGroupIds": [
+    "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
+  ],
+  "waitForDeviceConfiguredConfirmation": true,
   "registrationDisabled": true,
   "fileVaultDisabled": true,
   "iCloudDiagnosticsDisabled": true,
@@ -159,7 +168,8 @@ Content-length: 1951
   "adminAccountFullName": "Admin Account Full Name value",
   "adminAccountPassword": "Admin Account Password value",
   "hideAdminAccount": true,
-  "requestRequiresNetworkTether": true
+  "requestRequiresNetworkTether": true,
+  "autoAdvanceSetupEnabled": true
 }
 ```
 
@@ -168,7 +178,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2000
+Content-Length: 2172
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -201,6 +211,10 @@ Content-Length: 2000
   "enabledSkipKeys": [
     "Enabled Skip Keys value"
   ],
+  "enrollmentTimeAzureAdGroupIds": [
+    "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
+  ],
+  "waitForDeviceConfiguredConfirmation": true,
   "registrationDisabled": true,
   "fileVaultDisabled": true,
   "iCloudDiagnosticsDisabled": true,
@@ -220,6 +234,7 @@ Content-Length: 2000
   "adminAccountFullName": "Admin Account Full Name value",
   "adminAccountPassword": "Admin Account Password value",
   "hideAdminAccount": true,
-  "requestRequiresNetworkTether": true
+  "requestRequiresNetworkTether": true,
+  "autoAdvanceSetupEnabled": true
 }
 ```

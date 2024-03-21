@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminCustomer resource type"
 description: "Represents a customer who has a delegated admin relationship with a Microsoft partner."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure AD organization that is a customer of a Microsoft partner and has a delegated admin relationship with the Microsoft partner. This object is automatically created by the system when at least one delegated admin relationship exists between the partner and customer and is deleted when no more active relationships exist.
+Represents a Microsoft Entra organization that is a customer of a Microsoft partner and has a delegated admin relationship with the Microsoft partner. This object is automatically created by the system when at least one delegated admin relationship exists between the partner and customer and is deleted when no more active relationships exist.
 
 ## Methods
 |Method|Return type|Description|
@@ -22,9 +22,9 @@ Represents an Azure AD organization that is a customer of a Microsoft partner an
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The Azure AD display name of the customer tenant. Read-only. Supports `$orderBy`. |
-|id|String|The Azure AD-assigned unique identifier of the customer. Read-only. Inherited from [entity](../resources/entity.md).|
-|tenantId|String|The Azure AD-assigned tenant ID of the customer. Read-only.|
+|displayName|String|The Microsoft Entra ID display name of the customer tenant. Read-only. Supports `$orderby`. |
+|id|String|The Microsoft Entra ID-assigned unique identifier of the customer. Read-only. Inherited from [entity](../resources/entity.md).|
+|tenantId|String|The Microsoft Entra ID-assigned tenant ID of the customer. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|

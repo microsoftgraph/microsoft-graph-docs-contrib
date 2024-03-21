@@ -31,13 +31,13 @@ To use the deployment service, your organization must have one of the following 
 
 Additionally, devices managed by the deployment service must:
 * Have installed Windows 10 version 1709 or later
-* Be Azure AD joined or Hybrid AD joined
+* Be Microsoft Entra joined or Hybrid AD joined
 * Have one of the following Windows 10 or Windows 11 editions installed:
-    Pro
-    Enterprise
-    Education
-    Pro Education
-    Pro for Workstations
+    * Pro
+    * Enterprise
+    * Education
+    * Pro Education
+    * Pro for Workstations
 
 ## Feature updates
 
@@ -91,4 +91,3 @@ To learn more, see [Manage monitoring rules for a deployment](windowsupdates-man
 Looking for the API reference for this service?
 
 See [Windows updates API in Microsoft Graph beta](/graph/api/resources/adminwindowsupdates?view=graph-rest-beta&preserve-view=true).
-

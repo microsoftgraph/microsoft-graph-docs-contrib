@@ -3,7 +3,7 @@ title: "chatMessageHostedContent resource type"
 description: "A content hosted in a chat message"
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 
@@ -12,8 +12,8 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph
 
 Represents Teams content hosted in a chat message, such as images or code snippets.
-[File attachments](chatmessageattachment.md) are not hosted content;
-they are stored in SharePoint or OneDrive.
+[File attachments](chatmessageattachment.md) aren't hosted content;
+they're stored in SharePoint or OneDrive.
 
 ## Methods
 
@@ -28,7 +28,7 @@ chatMessageHostedContent derives from [teamworkHostedContent](teamworkhostedcont
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|contentBytes  |Edm.Binary   | Write-only. When posting new chat message hosted content, represents the bytes of the payload. These are represented as a base64Encoded string.|
+|contentBytes  |Edm.Binary   | Write-only. When posting new chat message hosted content, represents the bytes of the payload and are represented as a base64 encoded string.|
 |contentType   |String       | Write-only. When posting new chat message hosted content, represents the type of content, such as image/png.|
 |id            |String       | Read-only. Represents the chat message hosted content identifier.|
 
@@ -47,7 +47,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

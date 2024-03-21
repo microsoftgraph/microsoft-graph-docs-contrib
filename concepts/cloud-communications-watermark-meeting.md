@@ -3,7 +3,7 @@ title: "Manage watermarks for sensitive Teams meetings"
 description: "Use the cloud communications API in Microsoft Graph to manage a watermark for sensitive Microsoft Teams meetings."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Manage watermarks for sensitive Teams meetings
@@ -115,7 +115,7 @@ Content-type: application/json
 
 ## Restricted experience for meetings with the watermark option
 
-When a watermark is in use, applications using the [cloud communications calling APIs](/graph/api/application-post-calls) get a restricted media experience.
+When a watermark is in use (either watermark option is turned on), applications that use [cloud communications calling APIs](/graph/api/application-post-calls) get a restricted (audio only) media experience.
 
 To indicate this restricted experience, each [participant](/graph/api/resources/participant) in the [call roster](/graph/api/application-post-calls?view=graph-rest-beta&preserve-view=true#notification---roster) and the [list participants API](/graph/api/call-list-participants) have a new [restrictedExperience](/graph/api/resources/participant) property that shows [watermarkProtection](/graph/api/resources/onlinemeetingrestricted) as the reason for the restricted media experience.
 

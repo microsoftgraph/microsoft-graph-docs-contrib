@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new UnifiedRoleAssignmentMultiple
 {
@@ -21,6 +24,8 @@ var requestBody = new UnifiedRoleAssignmentMultiple
 		"allDevices",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.RoleManagement.DeviceManagement.RoleAssignments.PostAsync(requestBody);
 
 

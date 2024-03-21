@@ -3,7 +3,7 @@ title: "Customize people insights privacy in Microsoft Graph (preview)"
 description: "Learn about customizing people insights at the organization level by using the Microsoft Graph insightsSettings API."
 author: "anthona"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 ms.custom: scenarios:getting-started
 ---
 
@@ -30,20 +30,21 @@ The **Allow your organization to use People insights** toggle allows you to enab
 
 - Disable people insights for all users in the organization, by setting the **isEnabledInOrganization** property of the **insightsSettings** resource to `false`. (By default, the **isEnabledInOrganization** property is `true`.)
 
-- Disable people insights for a subset of users, by assigning these users to an Azure Active Directory (Azure AD) group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+- Disable people insights for a subset of users, by assigning these users to a Microsoft Entra group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
 Use the [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) operation to set the **isEnabledInOrganization** or **disabledForGroup** properties accordingly for people insights. 
 
 Keep the following in mind when updating item insights settings: 
 * People insights settings are available only in the beta endpoint. 
-* The update operation doesn’t verify that a group exists. Make sure to get the correct ID of the Azure AD group from the Azure portal, verify that the group exists, and that the intended users have been added to the group. If the group doesn’t exist, no changes will be made for any user in the organization. 
+* The update operation doesn't verify that a group exists. Make sure to get the correct ID of the Microsoft Entra group from the Microsoft Entra admin center, verify that the group exists, and that the intended users have been added to the group. If the group doesn't exist, no changes will be made for any user in the organization. 
 * It can take up to 24 hours or longer for updates to **insightsSettings** to be reflected. 
 
 ## Behavior changes in the Microsoft 365 UI and people API 
 
-Disabling people insights means that the data is not generated for a specified user. It doesn’t affect search and ranking of results.
+Disabling people insights means that the data is not generated for a specified user. It doesn't affect search and ranking of results.
 
 When customizing privacy for people insights, you can observe behavioral changes in the following areas:
 * Microsoft 365 [profile card](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
 * User profile in Delve
 * [Listing relevant people](/graph/api/user-list-people)
+* [Org Explorer](/viva/people-in-viva/introducing-org-explorer)

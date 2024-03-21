@@ -3,7 +3,7 @@ title: "onPremisesAccidentalDeletionPrevention resource type"
 description: "Contains the accidental deletion prevention configuration for a tenant."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains the accidental deletion prevention configuration for a tenant. This configuration is geared at administrators who accidentally make an on-premises Active Directory change which results in deleting a large number of objects on Azure Active Directory.
+Contains the accidental deletion prevention configuration for a tenant. This configuration is geared at administrators who accidentally make an on-premises Active Directory change which results in deleting a large number of objects on Microsoft Entra ID.
 
 ## Properties
 

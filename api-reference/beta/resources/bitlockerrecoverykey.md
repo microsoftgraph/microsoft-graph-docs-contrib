@@ -1,9 +1,9 @@
 ---
 title: "bitlockerRecoveryKey resource type"
 description: "BitLocker recovery key resource"
-author: "hafowler"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents a stored BitLocker key that contains the actual recovery key via the 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the key was originally backed up to Azure Active Directory.|
+|createdDateTime|DateTimeOffset|The date and time when the key was originally backed up to Microsoft Entra ID.|
 |deviceId|String|ID of the device the BitLocker key is originally backed up from.|
 |id|String|The unique identifier for the BitLocker key.|
 |key|String|The BitLocker recovery key.|
@@ -36,7 +36,7 @@ Represents a stored BitLocker key that contains the actual recovery key via the 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -55,4 +55,3 @@ The following is a JSON representation of the resource.
   "key": "123456-231453-873456-213546-654678-765689-123456-324565"
 }
 ```
-

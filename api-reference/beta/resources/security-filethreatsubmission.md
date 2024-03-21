@@ -3,7 +3,7 @@ title: "fileThreatSubmission resource type"
 description: "Represents a threat submission related to a file."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a threat submission related to a file. It is used to submit suspected malware email attachments to Microsoft Defender for Office 365. It could also be used to submit false positive cases which should not have been blocked by Microsoft Defender for Office 365, for example, a safe email attachment.
+Represents a threat submission related to a file. It's used to submit suspected malware email attachments to Microsoft Defender for Office 365. It could also be used to submit false positive cases that shouldn't have been blocked by Microsoft Defender for Office 365, for example, a safe email attachment.
 
-Currently, file threat submission is routed to Microsoft Defender for Office 365. In future, it may be routed to Microsoft Defender for Endpoint. This is a unified interface for file threat submission no matter where it is routed to.
+Currently, file threat submission is routed to Microsoft Defender for Office 365. In future, it may be routed to Microsoft Defender for Endpoint. This is a unified interface for file threat submission no matter where it's routed to.
 
 This is an abstract type. Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 
@@ -35,7 +35,7 @@ This is an abstract type. Inherits from [threatSubmission](../resources/security
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

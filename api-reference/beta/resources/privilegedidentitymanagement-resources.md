@@ -1,10 +1,11 @@
 ---
 title: "Privileged Identity Management - Azure resources"
-description: "APIs for Azure AD Privileged Identity Management to manage Azure resources."
+description: "APIs for Microsoft Entra Privileged Identity Management to manage Azure resources."
 ms.localizationpriority: high
 author: "rkarim-ms"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
+ROBOTS: NOINDEX
 ---
 
 # Privileged Identity Management - Azure resources
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-You can use [Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) for Azure resources to set up just-in-time access workflow for your Azure infrastructure roles at a management group, subscription, resource group, and resource level. These include built-in roles like Owner and Contributor as well as custom RBAC roles.
+You can use [Microsoft Entra Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) for Azure resources to set up just-in-time access workflow for your Azure infrastructure roles at a management group, subscription, resource group, and resource level. These include built-in roles like Owner and Contributor as well as custom RBAC roles.
 
 ## Common use cases for PIM and Azure resources using a REST API
 

@@ -2,8 +2,8 @@
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event, message, or post.  "
 ms.localizationpriority: high
-ms.prod: "outlook"
-author: "abheek-das"
+ms.subservice: "outlook"
+author: "SuryaLashmiS"
 doc_type: resourcePageType
 ---
 
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 A contact, event, or message that's attached to a user [event](../resources/event.md),
-[message](../resources/message.md), or [post](../resources/post.md).  
+[message](../resources/message.md), or [post](../resources/post.md).
 
 Derived from [attachment](attachment.md).
 

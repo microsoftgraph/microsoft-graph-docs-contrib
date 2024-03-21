@@ -1,9 +1,9 @@
 ---
 title: "webApplicationSegment resource type"
-description: "Represents the segment configurations that are allowed for an on-premises wildcard application published through Azure AD Application Proxy."
+description: "Represents the segment configurations that are allowed for an on-premises wildcard application published through Microsoft Entra application proxy."
 ms.localizationpriority: medium
-author: "dhruvinshah"
-ms.prod: "applications"
+author: "dhruvinrshah"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [webApplicationSegment](webapplicationsegment.md) object represents the segment configurations that are allowed for an on-premises wildcard application published through Azure AD Application Proxy.
+A [webApplicationSegment](webapplicationsegment.md) object represents the segment configurations that are allowed for an on-premises wildcard application published through Microsoft Entra application proxy.
 
 Inherits from [applicationSegment](applicationsegment.md).
 
@@ -23,7 +23,7 @@ Inherits from [applicationSegment](applicationsegment.md).
 |:-------------|:------------|:------------|
 |alternateUrl|String|If you're configuring a traffic manager in front of multiple App Proxy application segments, this property contains the user-friendly URL that will point to the traffic manager.|
 |externalUrl|String |The published external URL for the application segment; for example, `https://intranet.contoso.com/`.|
-|id|String|The unique identifier that is assigned to an applicationSegment by Azure AD. Not nullable. Read-only. Supports `$filter` (`eq`). Inherited from [applicationSegment](applicationsegment.md).|
+|id|String|The unique identifier that is assigned to an applicationSegment by Microsoft Entra ID. Not nullable. Read-only. Supports `$filter` (`eq`). Inherited from [applicationSegment](applicationsegment.md).|
 |internalUrl|String |The internal URL of the application segment; for example, `https://intranet/`.|
 
 ## Relationships

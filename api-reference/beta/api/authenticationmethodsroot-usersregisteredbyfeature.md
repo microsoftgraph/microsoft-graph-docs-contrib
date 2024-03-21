@@ -1,35 +1,30 @@
 ---
 title: "authenticationMethodsRoot: usersRegisteredByFeature"
 description: "Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
 # authenticationMethodsRoot: usersRegisteredByFeature
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|AuditLog.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-In order to access the API, [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) is required:
+<!-- { "blockType": "permissions", "name": "authenticationmethodsroot_usersregisteredbyfeature" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationmethodsroot-usersregisteredbyfeature-permissions.md)]
 
-* Reports reader
-* Security reader
-* Security admin
-* Global reader
-* Global admin
+[!INCLUDE [rbac-reports-registration-usage-apis](../includes/rbac-for-apis/rbac-reports-registration-usage-apis.md)]
 
 ## HTTP request
 
@@ -42,34 +37,37 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 ```
 
 ## Function parameters
+
 The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
+|includedUserRoles|includedUserRoles|The role type for the user. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`.|
 |includedUserTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`.|
-|includedUserRoles|includedUserRoles|User role type. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`.|
 
 The value `privilegedAdmin` consists of the following privileged admin roles:
 
-* Global admin
-* Security admin
-* Conditional Access admin
-* Exchange admin
-* SharePoint admin
-* Helpdesk admin
-* Billing admin
-* User admin
-* Authentication admin
+* Global Administrator
+* Security Administrator
+* Conditional Access Administrator
+* Exchange Administrator
+* SharePoint Administrator
+* Helpdesk Administrator
+* Billing Administrator
+* User Administrator
+* Authentication Administrator
 
-The value `admin` includes all Azure AD admin roles. 
+The value `admin` includes all Azure Active Director admin roles.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,6 +76,8 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,18 +89,21 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/authenticationmethodsroot-usersregisteredbyfeature-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/authenticationmethodsroot-usersregisteredbyfeature-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/authenticationmethodsroot-usersregisteredbyfeature-java-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/authenticationmethodsroot-usersregisteredbyfeature-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,29 +115,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"@odata.type": "#microsoft.graph.userRegistrationFeatureSummary",
-	"totalUserCount": 23123,
-	"userTypes": "all",
-	"userRoles": "all",
-	"userRegistrationFeatureCounts": [{
-			"feature": "ssprRegistered",
-			"userCount": 23423
-		},
-		{
-			"feature": "ssprEnabled",
-			"userCount": 4234
-		},
-		{
-			"feature": "ssprCapable",
-			"userCount": 4234
-		}, {
-			"feature": "passwordlessCapable",
-			"userCount": 323
-		},
-		{
-			"feature": "mfaCapable",
-			"userCount": 3345
-		}
-	]
+  "@odata.type": "#microsoft.graph.userRegistrationFeatureSummary",
+  "totalUserCount": 23123,
+  "userTypes": "all",
+  "userRoles": "all",
+  "userRegistrationFeatureCounts": [
+    {
+      "feature": "ssprRegistered",
+      "userCount": 23423
+    },
+    {
+      "feature": "ssprEnabled",
+      "userCount": 4234
+    },
+    {
+      "feature": "ssprCapable",
+      "userCount": 4234
+    },
+    {
+      "feature": "passwordlessCapable",
+      "userCount": 323
+    },
+    {
+      "feature": "mfaCapable",
+      "userCount": 3345
+    }
+  ]
 }
 ```

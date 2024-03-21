@@ -1,10 +1,11 @@
 ---
 title: "fido2KeyRestrictions resource type"
 description: "Represents the key restrictions that are enforced as part of the FIDO2 security keys authentication methods policy."
-author: "mmcla"
+author: "calvinlui"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
 ---
 
 # fido2KeyRestrictions resource type

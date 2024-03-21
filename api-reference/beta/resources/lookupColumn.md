@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The lookupColumn on a columnDefinition resource indicates that the column's values are looked up from another source in the site.
 ms.date: 09/11/2017
 title: LookupColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # LookupColumn resource type

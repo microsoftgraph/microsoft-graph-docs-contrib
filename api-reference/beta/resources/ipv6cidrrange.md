@@ -2,8 +2,9 @@
 title: "iPv6CidrRange resource type"
 description: "Represents an IPv6 range using the CIDR notation."
 ms.localizationpriority: medium
-author: "dkershaw10"
-ms.prod: "directory-management"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +26,7 @@ Inherits from [ipRange](../resources/iprange.md)
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

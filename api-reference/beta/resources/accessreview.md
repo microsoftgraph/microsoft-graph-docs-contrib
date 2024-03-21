@@ -1,9 +1,9 @@
 ---
 title: "accessReview resource type (deprecated)"
-description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
+description: "In the Microsoft Entra access reviews feature, the `accessReview` represents an access review.  "
 ms.localizationpriority: medium
-author: "markwahl-msft"
-ms.prod: "governance"
+author: "shubhamguptacal"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -15,30 +15,30 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Represents an Azure AD [access review](accessreviews-root.md).  
+Represents a Microsoft Entra [access review](accessreviews-root.md).  
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
 |[List accessReviews](../api/accessreview-list.md) | [accessReview](accessreview.md) collection | List accessReviews for a businessFlowTemplate. |
-|[Get accessReview](../api/accessreview-get.md) |	[accessReview](accessreview.md) |	Get an access review with a specific id. |
-|[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
-|[Update accessReview](../api/accessreview-update.md) |	[accessReview](accessreview.md)	| Update an accessReview. |
-|[Delete accessReview](../api/accessreview-delete.md) |	None.	| Delete an accessReview. |
-|[List accessReview reviewers](../api/accessreview-listreviewers.md) | [userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
-|[Add accessReview reviewer](../api/accessreview-addreviewer.md) | None.	|	Add a reviewer to an accessReview. |
-|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None. |	Remove a reviewer from an accessReview. |
-|[List accessReview decisions](../api/accessreview-listdecisions.md) | [accessReviewDecision](accessreviewdecision.md) collection |	Get the decisions of an accessReview. |
+|[Get accessReview](../api/accessreview-get.md) |    [accessReview](accessreview.md) |    Get an access review with a specific id. |
+|[Create accessReview](../api/accessreview-create.md) |    [accessReview](accessreview.md) |    Create a new accessReview. |
+|[Update accessReview](../api/accessreview-update.md) |    [accessReview](accessreview.md)    | Update an accessReview. |
+|[Delete accessReview](../api/accessreview-delete.md) |    None.    | Delete an accessReview. |
+|[List accessReview reviewers](../api/accessreview-listreviewers.md) | [userIdentity](useridentity.md) collection|    Get the reviewers of an accessReview. |
+|[Add accessReview reviewer](../api/accessreview-addreviewer.md) | None.    |    Add a reviewer to an accessReview. |
+|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None. |    Remove a reviewer from an accessReview. |
+|[List accessReview decisions](../api/accessreview-listdecisions.md) | [accessReviewDecision](accessreviewdecision.md) collection |    Get the decisions of an accessReview. |
 |[List my accessReview decisions](../api/accessreview-listmydecisions.md) | [accessReviewDecision](accessreviewdecision.md) collection | As a reviewer, get my decisions of an accessReview. |
 |[Send accessReview reminder](../api/accessreview-sendreminder.md) | None. | Send a reminder to the reviewers of an accessReview. |
-|[Stop accessReview](../api/accessreview-stop.md) | None. |	Stop an accessReview. |
-|[Reset accessReview decisions](../api/accessreview-reset.md) | None.	|	Reset the decisions in an in-progress accessReview. |
-|[Apply accessReview decisions](../api/accessreview-apply.md) | None. |	Apply the decisions from a completed accessReview. |
+|[Stop accessReview](../api/accessreview-stop.md) | None. |    Stop an accessReview. |
+|[Reset accessReview decisions](../api/accessreview-reset.md) | None.    |    Reset the decisions in an in-progress accessReview. |
+|[Apply accessReview decisions](../api/accessreview-apply.md) | None. |    Apply the decisions from a completed accessReview. |
 
 ## Properties
 
-| Property | Type	| Description |
+| Property | Type    | Description |
 |:-------- |:---- |:----------- |
 | id | String | The feature-assigned unique identifier of an access review. |
 | displayName | String | The access review name. Required on create. |
@@ -54,7 +54,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 ## Relationships
 
-| Relationship | Type	| Description |
+| Relationship | Type    | Description |
 |:------------ |:---- |:----------- |
 | reviewers | [userIdentity](useridentity.md) collection | The collection of reviewers for an access review, if access review reviewerType is of type `delegated`. |
 | decisions | [accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for this access review. |
@@ -71,7 +71,7 @@ Whether these relationships are present on an object, depends upon whether the o
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -110,5 +110,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

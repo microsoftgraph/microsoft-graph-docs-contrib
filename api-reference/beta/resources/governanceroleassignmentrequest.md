@@ -1,10 +1,11 @@
 ---
 title: "governanceRoleAssignmentRequest resource type"
-description: "Represents the request for role assignment operations in Priviledged Identity Management."
+description: "Represents the request for role assignment operations in Privileged Identity Management."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governanceRoleAssignmentRequest resource type
@@ -17,11 +18,11 @@ Namespace: microsoft.graph
 
 Represents the request for role assignment operations in Privileged Identity Management.
 
-`governanceRoleAssignmentRequest` is a ticket-modeled entity used to manage the lifecycle of role assignments. It represents the intention/decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent schduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `governanceRoleAssignment`.
+`governanceRoleAssignmentRequest` is a ticket-modeled entity used to manage the lifecycle of role assignments. It represents the intention/decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent scheduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `governanceRoleAssignment`.
 
 ## Methods
 
-| Method		  |Return Type	|Description|
+| Method          |Return Type    |Description|
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Get a role assignment request specified by ID.  
 |[List](../api/governanceroleassignmentrequest-list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)  collection|Get role assignment requests on a resource.|
@@ -30,7 +31,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 |[Update](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Administrators update the decisions on requests if the requests are in status of `PendingAdminDecision`.|
 
 ## Properties
-| Property	                | Type	        |Description|
+| Property                    | Type            |Description|
 |:--------------------------|:--------------|:----------|
 |id                         |String         |The identifier of the role assignment request.|
 |resourceId                 |String         |Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.|
@@ -59,7 +60,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 
 
 ## Relationships
-| Relationship | Type	                             |Description|
+| Relationship | Type                                 |Description|
 |:-------------|:----------------------------------|:----------|
 |resource      |[governanceResource](../resources/governanceresource.md)            |Read-only. The resource that the request aims to. |
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Read-only. The role definition that the request aims to. |
@@ -67,7 +68,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 
 ### JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

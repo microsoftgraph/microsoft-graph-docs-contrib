@@ -41,14 +41,14 @@ conceptualContent:
           text: Access and manipulate user resources directly.
     - title: Groups
       links:
-        - url: ./office365-groups-concept-overview.md
+        - url: ./microsoft365-groups-concept-overview.md
           itemType: overview
           text: Enable user collaboration and integration across services.
     - title: Identity and access management
       links:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
-          text: Use Azure AD methods to manage access and authenticate users.
+          text: Use Microsoft Entra methods to manage access and authenticate users.
     - title: Security
       links:
         - url: ./security-concept-overview.md
@@ -71,7 +71,10 @@ conceptualContent:
       links:
         - url: ./whats-new-overview.md
           itemType: whats-new
-          text: Discover new and updated Microsoft Graph APIs. 
+          text: Discover new and updated Microsoft Graph APIs.
+        - url: https://developer.microsoft.com/en-us/graph/changelog
+          itemType: whats-new
+          text: Explore the API changelog. 
     - title: All services and features
       links:
         - url: ./overview-major-services.md
@@ -131,4 +134,4 @@ additionalContent:
             - text: Microsoft Graph feedback portal
               url: https://feedbackportal.microsoft.com/feedback/forum/ebe2edae-97d1-ec11-a7b5-0022481f3c80
             - text: Known issues
-              url: ./known-issues.md          
+              url: https://developer.microsoft.com/en-us/graph/known-issues       

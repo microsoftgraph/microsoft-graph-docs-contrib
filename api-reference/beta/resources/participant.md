@@ -1,9 +1,9 @@
 ---
 title: "participant resource type"
-description: "The participant type."
+description: "Represents a participant in a call."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a participant in a call.
+Represents a participant in a [call](call.md).
 
 ## Methods
 
@@ -22,7 +22,6 @@ Represents a participant in a call.
 | [List participant](../api/participant-get.md)         | [participant](participant.md)                               | Retrieve a list of **participant** objects in the call. |
 | [Get participant](../api/participant-get.md)           | [participant](participant.md)                               | Read properties of the **participant** object. |
 | [Delete participant](../api/participant-delete.md)     | None   | Delete a participant in a call.                  |
-| [ConfigureMixer](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | Configure the participant audio mixer.         |
 | [Invite](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                         | Invite a participant to the call.              |
 | [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
 | [Mute all participants](../api/participant-muteall.md) | [commsOperation](commsoperation.md) | Mute all the participants in the meeting.      |
@@ -39,8 +38,11 @@ Represents a participant in a call.
 | isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
 | metadata             | String                                   | A blob of data provided by the participant in the roster.     |
+| preferredDisplayName | String        | The **participant**'s preferred display name that overrides the original display name. |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
+| removedState | [removedState](removedstate.md)        | Indicates the reason why the **participant** was removed from the roster. |
 | restrictedExperience | [onlineMeetingRestricted](onlinemeetingrestricted.md)        | Indicates the reason or reasons why media content from this participant is restricted. |
+| rosterSequenceNumber | Int64        | Indicates the roster sequence number the **participant** was last updated in. |
 
 ## Relationships
 
@@ -65,8 +67,11 @@ The following is a JSON representation of the resource.
   "isMuted": "Boolean",
   "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
   "metadata": "String",
+  "preferredDisplayName": "String",
   "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" },
-  "restrictedExperience": { "@odata.type": "#microsoft.graph.onlineMeetingRestricted" }
+  "removedState": { "@odata.type": "#microsoft.graph.removedState" },
+  "restrictedExperience": { "@odata.type": "#microsoft.graph.onlineMeetingRestricted" },
+  "rosterSequenceNumber": "Int64"
 }
 ```
 

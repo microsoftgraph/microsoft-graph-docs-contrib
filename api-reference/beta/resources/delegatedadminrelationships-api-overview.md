@@ -1,9 +1,9 @@
 ---
 title: "Granular delegated admin privileges (GDAP) API overview"
 description: "Granular delegated admin privileges (GDAP) allow Microsoft partners to configure and request granular and time-bound access to their customers' environments, allowing customers to enforce a least-privileged access for Microsoft partners."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As part of the Microsoft Partner Center ecosystem, Microsoft partners in the Cloud Solution Provider, Value Added Reseller, or Advisor programs can perform administrative operations on their customer tenants to help manage the customer's services, for example, Azure AD and Microsoft 365. This capability previously allowed partners to assume a Global Administrator role in the customer tenant indefinitely, creating potential security exposures and limiting market potential.
+As part of the Microsoft Partner Center ecosystem, Microsoft partners in the Cloud Solution Provider, Value Added Reseller, or Advisor programs can perform administrative operations on their customer tenants to help manage the customer's services, for example, Microsoft Entra ID and Microsoft 365. This capability previously allowed partners to assume a Global Administrator role in the customer tenant indefinitely, creating potential security exposures and limiting market potential.
 
 **Granular delegated admin privileges (GDAP)** provide partners with least-privileged access to their customer tenants following the [Zero Trust cybersecurity model](/security/zero-trust/). Through GDAP, partners configure and request granular and time-bound access to their customers' environments, and customers must explicitly grant this least-privileged access to partners. In addition, partners must request specific roles for customer tenant administration for a definite amount of time. This control eliminates the need for partners to have the Global Administrator role in their customer's tenant but rather, they now have lesser privileged permissions that they absolutely need for delegated administrative tasks.
 
@@ -24,9 +24,9 @@ For more information about GDAP, see:
 
 ## GDAP workflow
 
-### Lifecycle of a GDAP Relationship
+### Lifecycle of a GDAP relationship
 
-The status of the Delegated Admin relationship transitions as follows:
+The following diagram shows the status of the Delegated Admin relationship transitions.
 
 ![Delegated Admin relationship status transition diagram](relationship-status-transitions.png)
 
@@ -39,7 +39,19 @@ After running the [Create delegatedAdminRelationshipRequest](../api/delegatedadm
 
 `https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/{adminRelationshipID}`
 
-Send the invitation link to the customer for them to approve the GDAP request. For example, `https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5a6666c9-7282-0a41-67aa-25a5a3fbf339` is an invitation link, where `5a6666c9-7282-0a41-67aa-25a5a3fbf339` is the admin relationship request ID.
+Send the invitation link to the customer for them to approve the GDAP request. For example, `https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is an invitation link, where `5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is the admin relationship request ID. After the customer approves the GDAP request, the GDAP relationship will transition to an active state.
+
+To finalize the workflow for enabling admin on behalf of (AOBO) management of the customer's tenant, proceed by creating a new access assignment for the delegated admin relationship by using the [Create accessAssignments](../api/delegatedadminrelationship-post-accessassignments.md) API. 
+
+
+### Lifecycle of a GDAP relationship access assignment
+
+The delegated admin access assignment goes through the status transitions shown in the following diagram.
+
+![Delegated admin access assignment status transition diagram](access-assignment-status-transitions.png)
+
+1. [Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
+2. [Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)
 
 ## Use cases for GDAP APIs
 
@@ -90,20 +102,26 @@ This section describes the ways that Microsoft partners can use the GDAP APIs to
 | Get service management details for a delegated admin customer | [List serviceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md) |
 
 
-### Lifecycle of a GDAP Relationship Access Assignment
-
-The status of the Delegated Admin access assignment. The status transitions are as follows:
-
-![Delegated Admin access assignment status transition diagram](access-assignment-status-transitions.png)
-
-1. [Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
-2. [Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)
-
 ## Permissions
 
 To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [granular delegated admin privileges permissions](/graph/permissions-reference#granular-delegated-admin-privileges-gdap-permissions).
 
+<!-- Start of: Link to ZT guidance: H2 section -->
 
-## See also
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
+
+## Related content
 
 + [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
+
+
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "suppressions": []
+} -->

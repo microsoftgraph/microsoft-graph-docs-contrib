@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let virtualAppointment = await client.api('/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment')
+let virtualAppointment = await client.api('/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment')
 	.version('beta')
 	.get();
 

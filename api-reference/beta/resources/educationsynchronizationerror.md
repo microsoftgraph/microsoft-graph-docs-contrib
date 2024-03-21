@@ -1,9 +1,9 @@
 ---
 title: "educationSynchronizationError resource type"
-description: "Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD)."
+description: "Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Microsoft Entra ID."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD).
+Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Microsoft Entra ID.
 
 ## Methods
 
@@ -54,5 +54,3 @@ Represents an error during school data profile validation and/or sync. A unique 
   "reportableIdentifier": "String"
 }
 ```
-
-

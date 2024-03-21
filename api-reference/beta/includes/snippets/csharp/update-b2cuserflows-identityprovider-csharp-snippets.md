@@ -4,12 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.ReferenceCreate
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ReferenceCreate
 {
 	OdataId = "https://graph.microsoft.com/beta/identityProviders/{id}",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].IdentityProviders.Ref.PostAsync(requestBody);
 
 

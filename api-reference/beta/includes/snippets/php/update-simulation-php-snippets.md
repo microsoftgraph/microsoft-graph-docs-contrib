@@ -6,56 +6,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Simulation();
 $requestBody->setDisplayName('Graph Simulation');
-
 $requestBody->setDurationInDays(7);
-
-$requestBody->setAttackTechnique(new SimulationAttackTechnique('credentialharvesting'));
-
+$requestBody->setAttackTechnique(new SimulationAttackTechnique('credentialHarvesting'));
 $requestBody->setAttackType(new SimulationAttackType('social'));
-
 $requestBody->setStatus(new SimulationStatus('scheduled'));
-
-$includedAccountTarget = new AccountTargetContent();
-$includedAccountTarget->set@odatatype('#microsoft.graph.addressBookAccountTargetContent');
-
-$includedAccountTarget->setType(new AccountTargetContentType('addressbook'));
-
-$additionalData = [
-'accountTargetEmails' => ['faiza@contoso.com', ],
-];
-$includedAccountTarget->setAdditionalData($additionalData);
-
-
-
+$includedAccountTarget = new AddressBookAccountTargetContent();
+$includedAccountTarget->setOdataType('#microsoft.graph.addressBookAccountTargetContent');
+$includedAccountTarget->setType(new AccountTargetContentType('addressBook'));
+$includedAccountTarget->setAccountTargetEmails(['faiza@contoso.com', 	]);
 $requestBody->setIncludedAccountTarget($includedAccountTarget);
-$excludedAccountTarget = new AccountTargetContent();
-$excludedAccountTarget->set@odatatype('#microsoft.graph.addressBookAccountTargetContent');
-
-$excludedAccountTarget->setType(new AccountTargetContentType('addressbook'));
-
-$additionalData = [
-'accountTargetEmails' => ['sam@contoso.com', ],
-];
-$excludedAccountTarget->setAdditionalData($additionalData);
-
-
-
+$excludedAccountTarget = new AddressBookAccountTargetContent();
+$excludedAccountTarget->setOdataType('#microsoft.graph.addressBookAccountTargetContent');
+$excludedAccountTarget->setType(new AccountTargetContentType('addressBook'));
+$excludedAccountTarget->setAccountTargetEmails(['sam@contoso.com', 	]);
 $requestBody->setExcludedAccountTarget($excludedAccountTarget);
 $additionalData = [
-'@odata.etag' => '\"0100aa9b-0000-0100-0000-6396fa270000\"', 
-'payload@odata.bind' => 'https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a', 
+	'@odata.etag' => '\"0100aa9b-0000-0100-0000-6396fa270000\"',
+	'payload@odata.bind' => 'https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a',
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$requestResult = $graphServiceClient->security()->attackSimulation()->simulationsById('simulation-id')->patch($requestBody);
-
+$result = $graphServiceClient->security()->attackSimulation()->simulations()->bySimulationId('simulation-id')->patch($requestBody)->wait();
 
 ```

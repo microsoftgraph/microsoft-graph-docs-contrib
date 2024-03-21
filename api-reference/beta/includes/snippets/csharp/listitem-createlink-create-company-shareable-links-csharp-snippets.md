@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var type = "edit";
+// Dependencies
+using Microsoft.Graph.Beta.Sites.Item.Lists.Item.Items.Item.CreateLink;
 
-var scope = "organization";
+var requestBody = new CreateLinkPostRequestBody
+{
+	Type = "edit",
+	Scope = "organization",
+};
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"]
-	.CreateLink(type,scope,null,null,null,null)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].CreateLink.PostAsync(requestBody);
+
 
 ```

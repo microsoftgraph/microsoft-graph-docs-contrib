@@ -3,8 +3,8 @@ title: "verifiedPublisher resource type"
 description: "Represents the verified publisher of the application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
-author: "jesakowi"
+ms.subservice: "entra-applications"
+author: "xurobertMSFT"
 ---
 
 # verifiedPublisher resource type

@@ -6,29 +6,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationAssignmentResource();
 $requestBody->setDistributeForStudentWork(false);
-
-$resource = new EducationResource();
+$resource = new EducationLinkResource();
 $resource->setDisplayName('Where the Wonders of Learning Never Cease | Wonderopolis');
-
-$resource->set@odatatype('#microsoft.graph.educationLinkResource');
-
+$resource->setLink('https://wonderopolis.org/');
+$resource->setOdataType('#microsoft.graph.educationLinkResource');
 $additionalData = [
-'link' => 'https://wonderopolis.org/', 
-'thumbnailPreviewUrl' => 		null,
+	'thumbnailPreviewUrl' => null,
 ];
 $resource->setAdditionalData($additionalData);
-
-
-
 $requestBody->setResource($resource);
 
-
-$requestResult = $graphServiceClient->education()->classesById('educationClass-id')->assignmentsById('educationAssignment-id')->resources()->post($requestBody);
-
+$result = $graphServiceClient->education()->classes()->byEducationClassId('educationClass-id')->assignments()->byEducationAssignmentId('educationAssignment-id')->resources()->post($requestBody)->wait();
 
 ```

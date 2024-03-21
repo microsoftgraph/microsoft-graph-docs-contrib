@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
-Get-MgUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId
+Get-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId
 
 ```

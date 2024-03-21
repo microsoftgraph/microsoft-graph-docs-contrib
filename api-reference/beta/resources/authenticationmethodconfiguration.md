@@ -1,10 +1,11 @@
 ---
 title: "authenticationMethodConfigurations"
 description: "authenticationMethodConfigurations object."
-author: "mmcla"
+author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
 ---
 
 # authenticationMethodConfiguration resource type
@@ -17,9 +18,12 @@ This is an abstract type that represents the settings for each authentication me
 The following authentication methods are derived from the **authenticationMethodConfiguration** resource type:
 + [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
 + [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
++ [hardwareOathAuthenticationMethodConfiguration](hardwareoathauthenticationmethodconfiguration.md)
 + [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
 + [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
-+ [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [softwareOathAuthenticationMethodConfiguration](softwareoathauthenticationmethodconfiguration.md)
++ [temporaryAccessPassAuthenticationMethodConfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)
++ [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
 + [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
 
 ## Properties
@@ -33,7 +37,7 @@ The following authentication methods are derived from the **authenticationMethod
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -45,6 +49,11 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.authenticationMethodConfiguration",
   "id": "String (identifier)",
-  "state": "String"
+  "state": "String",
+  "excludeTargets": [
+    {
+      "@odata.type": "microsoft.graph.excludeTarget"
+    }
+  ]
 }
 ```

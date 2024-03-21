@@ -3,7 +3,7 @@ title: "qna resource type"
 description: "Represents a question and answer (Q&A) in Microsoft Search."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Q&As are administrative answer results in the search results page which provide answers for specific search keywords. Q&As allow administrators to answer the user's questions directly in search instead of providing a link to a webpage. A Q&A has many properties which allow administrators to make common resources more accessible in their organization.
+Represents a question and answer (Q&A) in Microsoft Search. Q&As are administrative answer results in the search results page that provide answers for specific search keywords. Q&As allow administrators to answer the user's questions directly in search instead of providing a link to a webpage. A Q&A has many properties that allow administrators to make common resources more accessible in their organization.
 
 Inherits from [searchAnswer](../resources/search-searchanswer.md).
 
@@ -31,21 +31,21 @@ Inherits from [searchAnswer](../resources/search-searchanswer.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|availabilityEndDateTime|DateTimeOffset|Timestamp of when the qna will stop to appear as a search result. Set as `null` for always available.|
-|availabilityStartDateTime|DateTimeOffset|Timestamp of when the qna will start to appear as a search result. Set as `null` for always available.|
-|description|String|Answer displayed in search results. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
-|displayName|String|Question displayed in search results. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
-|groupIds|String collection|List of security groups able to view this qna.|
-|id|String|The unique identifier (GUID) for the qna. Inherited from [entity](../resources/entity.md).|
-|isSuggested|Boolean| True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.|
-|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerkeyword.md)|Keywords that trigger this qna to appear in search results.|
-|languageTags|String collection|A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{region}. As an example, `en-us` is English as used in the United States. For the list of possible values, see [supported language tags](search-api-answers-overview.md#supported-language-tags). |
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the qna. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only. |
-|lastModifiedDateTime|DateTimeOffset| Timestamp of when the qna is created or edited. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only.|
-|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this qna. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
-|state|microsoft.graph.search.answerState|State of the qna. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
-|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answervariant.md) collection|Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
-|webUrl|String|Qna URL link. When users click this qna in search results, they will go to this URL. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|availabilityEndDateTime|DateTimeOffset|Date and time when the QnA stops appearing as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|availabilityStartDateTime|DateTimeOffset|Date and time when the QnA starts to appear as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|description|String|Answer that is displayed in search results. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|displayName|String|Question that is displayed in search results. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|groupIds|String collection|The list of security groups that are able to view this QnA.|
+|id|String|The unique identifier (GUID) for the QnA. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|isSuggested|Boolean| `True` if a user or Microsoft suggested this QnA to the admin. Read-only.|
+|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerkeyword.md)|Keywords that trigger this QnA to appear in search results.|
+|languageTags|String collection|A list of geographically specific language names in which this QnA can be viewed. Each language tag value follows the pattern {language}-{region}. For example, `en-us` is English as used in the United States. For the list of possible values, see [Supported language tags](../resources/search-api-answers-overview.md#supported-language-tags). |
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user who created or last modified the QnA. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only. |
+|lastModifiedDateTime|DateTimeOffset| Date and time when the QnA was created or last edited. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only.|
+|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems that are able to view this QnA. Possible values are: `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidASOP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`.|
+|state|microsoft.graph.search.answerState|State of the QnA. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
+|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answervariant.md) collection|Variations of a QnA for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.|
+|webUrl|String|The URL link for the QnA. When users select this QnA from the search results, they're directed to the specified URL. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Relationships
 
@@ -53,7 +53,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -70,31 +70,16 @@ The following is a JSON representation of the resource.
   "availabilityStartDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "groupIds": [
-    "String"
-  ],
+  "groupIds": ["String"],
   "id": "String (identifier)",
   "isSuggested": "Boolean",
-  "keywords": {
-    "@odata.type": "microsoft.graph.search.answerKeyword"
-  },
-  "languageTags": [
-    "String"
-  ],
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "keywords": {"@odata.type": "microsoft.graph.search.answerKeyword"},
+  "languageTags": ["String"],
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "platforms": [
-    "String"
-  ],
+  "platforms": ["String"],
   "state": "String",
-  "targetedVariations": [
-    {
-      "@odata.type": "microsoft.graph.search.answerVariant"
-    }
-  ],
+  "targetedVariations": [{"@odata.type": "microsoft.graph.search.answerVariant"}],
   "webUrl": "String"
 }
 ```
-

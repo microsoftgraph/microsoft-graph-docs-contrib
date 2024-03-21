@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "Connected organization new name"
-	Description = "Connected organization new description"
-	State = "configured"
+	displayName = "Connected organization new name"
+	description = "Connected organization new description"
+	state = "configured"
 }
 
 Update-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params

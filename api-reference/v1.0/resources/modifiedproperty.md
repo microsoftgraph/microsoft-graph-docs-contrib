@@ -1,9 +1,9 @@
 ---
 title: "modifiedProperty resource type"
-description: "Indicates all the properties on an Azure AD resource that have been modified, including the old and new values."
+description: "Indicates all the properties on a Microsoft Entra resource that have been modified, including the old and new values."
 ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Indicates all the properties on an Azure AD resource that have been modified, including the old and new values.
+Indicates all the properties on a Microsoft Entra resource that have been modified, including the old and new values.
 
 ## Properties
 
@@ -50,4 +50,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

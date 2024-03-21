@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const administrativeUnit = {
+    displayName: 'Executive Division',
     membershipType: 'Dynamic',
     membershipRule: '(user.country -eq \"United States\")',
     membershipRuleProcessingState: 'On'

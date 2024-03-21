@@ -2,7 +2,7 @@
 title: "Enabling human-centric notification experiences (deprecated)"
 description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation."
 ms.localizationpriority: high
-ms.prod: "notifications"
+ms.subservice: "notifications"
 ms.custom: scenarios:getting-started
 author: "merzink"
 ---
@@ -28,7 +28,7 @@ The Microsoft Graph notifications platform provides a user-centric notification 
 
 ### Effortlessly target your user for notification delivery across different endpoints
 
-You can use the notifications API to target a personal Microsoft account or a work or school Azure Active Directory (Azure AD) account to deliver notifications. The platform distributes this notification to all user endpoints running your application or service, including Windows UWP, iOS, Android, and web endpoints. This capability helps maximize outreach by ensuring appropriate notifications can reach your target, wherever they are.
+You can use the notifications API to target a personal Microsoft account or a work or school Microsoft Entra account to deliver notifications. The platform distributes this notification to all user endpoints running your application or service, including Windows UWP, iOS, Android, and web endpoints. This capability helps maximize outreach by ensuring appropriate notifications can reach your target, wherever they are.
 
 ### Easily manage notifications across endpoints
 

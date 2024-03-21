@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The FolderView resource provides or sets recommendations on the user-experience of a folder.
 ms.date: 09/10/2017
 title: FolderView
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # FolderView resource type

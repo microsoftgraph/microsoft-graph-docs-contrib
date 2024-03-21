@@ -5,7 +5,7 @@ services: "project-madeira"
 documentationcenter: ""
 author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Represents a method of payment in Dynamics 365 Business Central such as PayPal, 
 |:-------------------|:-------|:------------------------------------------------------------|
 |code                |String  |The payment method code.                                     |
 |displayName         |String  |The payment method display name.                             |
-|id                  |GUID    |The unique identifier of the **paymentMethods**. Non-editable.|
+|id                  |GUID    |The unique identifier of the **paymentMethods**. Noneditable.|
 |lastModifiedDateTime|Datetime|The date and time when the payment method was last modified. Read-Only.|  
 
 
@@ -40,7 +40,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 ```json
 {

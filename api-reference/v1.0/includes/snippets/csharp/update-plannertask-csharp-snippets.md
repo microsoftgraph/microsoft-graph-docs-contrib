@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new PlannerTask
 {
@@ -13,7 +16,7 @@ var requestBody = new PlannerTask
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"fbab97d0-4932-4511-b675-204639209557" , new 
+				"fbab97d0-4932-4511-b675-204639209557" , new PlannerAssignment
 				{
 					OdataType = "#microsoft.graph.plannerAssignment",
 					OrderHint = "N9917 U2883!",
@@ -34,6 +37,8 @@ var requestBody = new PlannerTask
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Planner.Tasks["{plannerTask-id}"].PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");

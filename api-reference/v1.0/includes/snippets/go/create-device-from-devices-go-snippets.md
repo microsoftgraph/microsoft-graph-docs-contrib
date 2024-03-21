@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewDevice()
 accountEnabled := false
@@ -20,7 +28,6 @@ alternativeSecurityId.SetKey(&key)
 
 alternativeSecurityIds := []graphmodels.AlternativeSecurityIdable {
 	alternativeSecurityId,
-
 }
 requestBody.SetAlternativeSecurityIds(alternativeSecurityIds)
 deviceId := "4c299165-6e8f-4b45-a5ba-c5d250a707ff"
@@ -32,7 +39,7 @@ requestBody.SetOperatingSystem(&operatingSystem)
 operatingSystemVersion := "1"
 requestBody.SetOperatingSystemVersion(&operatingSystemVersion) 
 
-result, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
+devices, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
 
 
 ```

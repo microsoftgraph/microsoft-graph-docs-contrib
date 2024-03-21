@@ -3,7 +3,7 @@ title: "relation resource type"
 description: "Represents the relationship between terms in a term store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Represents the relationship between [terms](../resources/termstore-term.md) in a
 
 In a pin relationship, a term can be pinned under a different term in a different term set. In a pinned relationship, new children to the term can only be added in the term set in which the term was created. Any change in the hierarchy under the term is reflected across the sets in which the term was pinned. 
 
-The reuse relationship is similar to the pinned relationship except that changes to the reused term can be made from any hierarchy in which the term is reused. Also, a change in hierarchy made to the reused term does not get reflected in the other term sets in which the term is reused.
+The reuse relationship is similar to the pinned relationship except that changes to the reused term can be made from any hierarchy in which the term is reused. Also, a change in hierarchy made to the reused term doesn't get reflected in the other term sets in which the term is reused.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 |toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The to [term] of the relation. The term to which the relationship is defined.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

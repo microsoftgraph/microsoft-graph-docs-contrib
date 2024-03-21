@@ -4,7 +4,7 @@ description: "An incident in Microsoft 365 Defender is a collection of correlate
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List incidents](../api/security-list-incidents.md)|[microsoft.graph.security.incident](../resources/security-incident.md) collection|Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender has created to track attacks in an organization.|
+|[List incidents](../api/security-list-incidents.md)|[microsoft.graph.security.incident](../resources/security-incident.md) collection|Get a list of [incident](../resources/security-incident.md) objects that Microsoft 365 Defender created to track attacks in an organization.|
 |[Get incident](../api/security-incident-get.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Read the properties and relationships of an [incident](../resources/security-incident.md) object.|
 |[Update incident](../api/security-incident-update.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Update the properties of an [incident](../resources/security-incident.md) object.|
 |[Create comment for incident](../api/security-incident-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [incident](../resources/security-incident.md) based on the specified incident **id** property.|
@@ -37,25 +37,33 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |classification|microsoft.graph.security.alertClassification|The specification for the incident. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |comments|[microsoft.graph.security.alertComment](security-alertcomment.md) collection|Array of comments created by the Security Operations (SecOps) team when the incident is managed.|
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
+|description|String|Description of the incident.|
 |determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|tenantId|String|The Azure Active Directory tenant in which the alert was created.|
+|tenantId|String|The Microsoft Entra tenant in which the alert was created.|
 |incidentWebUrl|String|The URL for the incident page in the Microsoft 365 Defender portal.|
+|lastModifiedBy|String|The identity that last modified the incident.|
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
 |redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`.|
-|customTags|String collection|Array of custom tags associated with an incident.|
+|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`, and `awaitingAction`.|
+|customTags|String collection|The collection of custom tags that are associated with an incident.|
+|systemTags|String collection|The collection of system tags that are associated with the incident.|
+|description|String|A rich text string describing the incident|
+|recommendedActions|String|A rich text string that represents the actions that are reccomnded to take in order to resolve the incident |
+|recommendedHuntingQueries|Collection(microsoft.graph.security.recommendedHuntingQuery)|List of hunting Kusto Query Language (KQL) queries related to the incident|
 
 
 ### incidentStatus values 
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `awaitingAction`.
 
-| Member              | Description                                                                                                           |
-| :-------------------| :-------------------------------------------------------------------------------------------------------------------- |
-| active			        | The incident is in active state.                                                                                      |
-| resolved            | The incident is in resolved state.                                                                                    |
-| inProgress          | The incident is in mitigation progress.                                                                               |
-| redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property. |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                     |
+| Member              | Description                                                                                                                                  |
+| :-------------------| :------------------------------------------------------------------------------------------------------------------------------------------- |
+| active			        | The incident is in active state.                                                                                                             |
+| resolved            | The incident is in resolved state.                                                                                                           |
+| inProgress          | The incident is in mitigation progress.                                                                                                      |
+| redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property.                        |
+| unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.                                                                                            |
+| awaitingAction      | This incident requires actions from Defender Experts awaiting your action. Only Microsoft 365 Defender experts can set this status.|
 
 
 
@@ -65,7 +73,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |alerts|[microsoft.graph.security.alert](security-alert.md) collection|The list of related alerts. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -96,7 +104,18 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.security.alertComment"
     }
-  ]
+  ],
+  "systemTags" : [
+    "String"
+  ],
+  "description" : "String",
+  "recommendedActions" : "String",
+  "recommendedHuntingQueries" : [
+  {
+    "@odata.type": "microsoft.graph.security.recommendedHuntingQuery"
+  }
+  ],
+  "lastModifiedBy": "String"
 }
 ```
 

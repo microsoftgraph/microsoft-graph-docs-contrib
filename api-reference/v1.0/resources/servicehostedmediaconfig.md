@@ -3,7 +3,7 @@ title: "serviceHostedMediaConfig resource type"
 description: "The serviceHostedMediaConfig type."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The media that's hosted remotely. This is inherited from [mediaConfig](mediaconfig.md).
+The media that's hosted remotely and is inherited from [mediaConfig](mediaconfig.md).
 
 ## Properties
 
@@ -22,7 +22,7 @@ The media that's hosted remotely. This is inherited from [mediaConfig](mediaconf
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

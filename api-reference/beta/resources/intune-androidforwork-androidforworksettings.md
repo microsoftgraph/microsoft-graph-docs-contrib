@@ -3,7 +3,7 @@ title: "androidForWorkSettings resource type"
 description: "Settings for Android For Work."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -22,10 +22,10 @@ Settings for Android For Work.
 |:---|:---|:---|
 |[Get androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-get.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Read properties and relationships of the [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) object.|
 |[Update androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-update.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Update the properties of a [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) object.|
-|[requestSignupUrl action](../api/intune-androidforwork-androidforworksettings-requestsignupurl.md)|String|Not yet documented|
-|[completeSignup action](../api/intune-androidforwork-androidforworksettings-completesignup.md)|None|Not yet documented|
-|[syncApps action](../api/intune-androidforwork-androidforworksettings-syncapps.md)|None|Not yet documented|
-|[unbind action](../api/intune-androidforwork-androidforworksettings-unbind.md)|None|Not yet documented|
+|[requestSignupUrl action](../api/intune-androidforwork-androidforworksettings-requestsignupurl.md)|String||
+|[completeSignup action](../api/intune-androidforwork-androidforworksettings-completesignup.md)|None||
+|[syncApps action](../api/intune-androidforwork-androidforworksettings-syncapps.md)|None||
+|[unbind action](../api/intune-androidforwork-androidforworksettings-unbind.md)|None||
 
 ## Properties
 |Property|Type|Description|

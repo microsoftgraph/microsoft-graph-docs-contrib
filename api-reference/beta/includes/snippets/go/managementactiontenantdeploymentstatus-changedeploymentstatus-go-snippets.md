@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphtenantrelationships "github.com/microsoftgraph/msgraph-beta-sdk-go/tenantrelationships"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewChangeDeploymentStatusPostRequestBody()
+
+requestBody := graphtenantrelationships.NewChangeDeploymentStatusPostRequestBody()
 tenantGroupId := "String"
 requestBody.SetTenantGroupId(&tenantGroupId) 
 tenantId := "String"
@@ -19,7 +27,7 @@ requestBody.SetManagementTemplateId(&managementTemplateId)
 status := "String"
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().ManagedTenantsChangeDeploymentStatus().Post(context.Background(), requestBody, nil)
+microsoftGraphManagedTenantsChangeDeploymentStatus, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionTenantDeploymentStatuses().MicrosoftGraphManagedTenantsChangeDeploymentStatus().Post(context.Background(), requestBody, nil)
 
 
 ```

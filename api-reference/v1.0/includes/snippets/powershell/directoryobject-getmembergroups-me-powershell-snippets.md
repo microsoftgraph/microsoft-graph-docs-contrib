@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	SecurityEnabledOnly = $true
+	securityEnabledOnly = $true
 }
 
 # A UPN can also be used as -UserId.

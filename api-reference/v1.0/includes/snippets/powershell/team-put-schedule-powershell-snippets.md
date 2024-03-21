@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	Enabled = $true
-	TimeZone = "America/Chicago"
+	enabled = $true
+	timeZone = "America/Chicago"
 }
 
 Set-MgTeamSchedule -TeamId $teamId -BodyParameter $params

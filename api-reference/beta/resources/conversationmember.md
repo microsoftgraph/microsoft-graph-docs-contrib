@@ -3,7 +3,7 @@ title: "conversationMember resource type"
 description: "Represents a user in a conversation."
 ms.localizationpriority: medium
 author: "akjo"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -49,7 +49,7 @@ Base type for the following supported conversation member types:
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the user.|
 |displayName| string | The display name of the user. |
-|roles| string collection | The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has `owner` privileges, the **roles** property contains `owner` as one of the values. Similarly, if the member is a guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property. |
+|roles| string collection | The roles for that user. This property contains additional qualifiers only when relevant - for example, if the member has `owner` privileges, the **roles** property contains `owner` as one of the values. Similarly, if the member is an in-tenant guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property. An Out-of-tenant external member is assigned the `owner` role.|
 |visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat. |
 
 ## JSON representation
@@ -76,7 +76,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [aadUserConversationMember](aaduserconversationmember.md)
 - [skypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)

@@ -1,5 +1,5 @@
-﻿{
-  "changelog": [    
+{
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -279,7 +279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtectionContentLabel",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [informationProtectionContentLabel](https://learn.microsoft.com/graph/api/resources/informationprotectioncontentlabel?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [informationProtectionContentLabel](https://learn.microsoft.com/graph/api/resources/security-informationprotectioncontentlabel?view=graph-rest-beta) in the microsoft.graph.security namespace.",
+          "Description": "Deprecated the [informationProtectionContentLabel](https://learn.microsoft.com/graph/api/resources/informationprotectioncontentlabel?view=graph-rest-beta) resource in the microsoft.graph namespace. Replaced with [informationProtectionContentLabel](https://learn.microsoft.com/graph/api/resources/security-informationprotection?view=graph-rest-beta) in the microsoft.graph.security namespace.",
           "Target": "informationProtectionContentLabel"
         },
         {

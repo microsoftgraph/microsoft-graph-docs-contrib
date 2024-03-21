@@ -6,67 +6,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReplyPostRequestBody();
 $post = new Post();
 $postBody = new ItemBody();
 $postBody->setContentType(new BodyType('text'));
-
 $postBody->setContent('I attached an event.');
-
-
 $post->setBody($postBody);
-$attachmentsAttachment1 = new Attachment();
-$attachmentsAttachment1->set@odatatype('#microsoft.graph.itemAttachment');
-
+$attachmentsAttachment1 = new ItemAttachment();
+$attachmentsAttachment1->setOdataType('#microsoft.graph.itemAttachment');
 $attachmentsAttachment1->setName('Holiday event');
-
-$additionalData = [
-'item' => $attachmentsAttachment1 = new Item();
-$		attachmentsAttachment1->set@odatatype('microsoft.graph.event');
-
-$		attachmentsAttachment1->setSubject('Discuss gifts for children');
-
-$body = new Body();
-$		body->setContentType('HTML');
-
-$		body->setContent('Let\'s look for funding!');
-
-
-$attachmentsAttachment1->setBody($body);
-$start = new Start();
-$		start->setDateTime('2019-12-02T18:00:00');
-
-$		start->setTimeZone('Pacific Standard Time');
-
-
-$attachmentsAttachment1->setStart($start);
-$end = new End();
-$		end->setDateTime('2019-12-02T19:00:00');
-
-$		end->setTimeZone('Pacific Standard Time');
-
-
-$attachmentsAttachment1->setEnd($end);
-
-$attachmentsAttachment1->setItem($item);
-
-];
-$attachmentsAttachment1->setAdditionalData($additionalData);
-
-
-
+$attachmentsAttachment1Item = new Event();
+$attachmentsAttachment1Item->setOdataType('microsoft.graph.event');
+$attachmentsAttachment1Item->setSubject('Discuss gifts for children');
+$attachmentsAttachment1ItemBody = new ItemBody();
+$attachmentsAttachment1ItemBody->setContentType(new BodyType('hTML'));
+$attachmentsAttachment1ItemBody->setContent('Let\'s look for funding!');
+$attachmentsAttachment1Item->setBody($attachmentsAttachment1ItemBody);
+$attachmentsAttachment1ItemStart = new DateTimeTimeZone();
+$attachmentsAttachment1ItemStart->setDateTime('2019-12-02T18:00:00');
+$attachmentsAttachment1ItemStart->setTimeZone('Pacific Standard Time');
+$attachmentsAttachment1Item->setStart($attachmentsAttachment1ItemStart);
+$attachmentsAttachment1ItemEnd = new DateTimeTimeZone();
+$attachmentsAttachment1ItemEnd->setDateTime('2019-12-02T19:00:00');
+$attachmentsAttachment1ItemEnd->setTimeZone('Pacific Standard Time');
+$attachmentsAttachment1Item->setEnd($attachmentsAttachment1ItemEnd);
+$attachmentsAttachment1->setItem($attachmentsAttachment1Item);
 $attachmentsArray []= $attachmentsAttachment1;
 $post->setAttachments($attachmentsArray);
 
-
-
 $requestBody->setPost($post);
 
-
-$graphServiceClient->groupsById('group-id')->threadsById('conversationThread-id')->reply()->post($requestBody);
-
+$graphServiceClient->groups()->byGroupId('group-id')->threads()->byConversationThreadId('conversationThread-id')->reply()->post($requestBody)->wait();
 
 ```

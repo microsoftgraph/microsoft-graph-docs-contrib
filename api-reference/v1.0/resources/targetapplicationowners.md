@@ -3,7 +3,7 @@ title: "targetApplicationOwners resource type"
 description: "Complex type for entitlement management to indicate the owners of an application as requestors."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # targetApplicationOwners resource type
@@ -19,7 +19,7 @@ None.
 ## Relationships
 None.
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.targetApplicationOwners"

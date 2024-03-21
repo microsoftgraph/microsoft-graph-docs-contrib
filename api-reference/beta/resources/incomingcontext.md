@@ -3,7 +3,7 @@ title: "incomingContext resource type"
 description: "The context associated with an incoming call."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ The context associated with an incoming call.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

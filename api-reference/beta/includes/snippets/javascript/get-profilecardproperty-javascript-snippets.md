@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let profileCardProperty = await client.api('/organization/{organizationId}/settings/profileCardProperties/{id}')
+let profileCardProperty = await client.api('/admin/people/profileCardProperties/CustomAttribute1')
 	.version('beta')
 	.get();
 

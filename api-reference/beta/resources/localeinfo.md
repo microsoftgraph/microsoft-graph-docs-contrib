@@ -3,8 +3,8 @@ title: "localeInfo resource type"
 description: "Information about the locale, including the preferred language and country/region, of the signed-in user."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
-author: "abheek-das"
+ms.subservice: "outlook"
+author: "SuryaLashmiS"
 ---
 
 # localeInfo resource type

@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: sharingLink resource type
 ms.localizationpriority: medium
 description: "The sharingLink resource groups link-related data items into a single structure."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 

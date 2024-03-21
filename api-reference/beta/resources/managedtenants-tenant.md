@@ -3,7 +3,7 @@ title: "tenant resource type"
 description: "Represents a tenant associated with the managing entity."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -29,9 +29,9 @@ Represents a tenant associated with the managing entity.
 |contract|[microsoft.graph.managedTenants.tenantContract](../resources/managedtenants-tenantcontract.md)|The relationship details for the tenant with the managing entity.|
 |createdDateTime|DateTimeOffset|The date and time the tenant was created in the multi-tenant management platform. Optional. Read-only.|
 |displayName|String|The display name for the tenant. Required. Read-only.|
-|id|String|The Azure Active Directory tenant identifier for the tenant. Required. Read-only.|
+|id|String|The Microsoft Entra tenant identifier for the tenant. Required. Read-only.|
 |lastUpdatedDateTime|DateTimeOffset|The date and time the tenant was last updated within the multi-tenant management platform. Optional. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
 |tenantStatusInformation|[microsoft.graph.managedTenants.tenantStatusInformation](../resources/managedtenants-tenantstatusinformation.md)|The onboarding status information for the tenant. Optional. Read-only.|
 
 ## Relationships
@@ -50,16 +50,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenant",
-  "id": "String (identifier)",
-  "tenantId": "String",
+  "contract": {"@odata.type": "microsoft.graph.managedTenants.tenantContract"},
+  "createdDateTime": "String (timestamp)",
   "displayName": "String",
-  "contract": {
-    "@odata.type": "microsoft.graph.managedTenants.tenantContract"
-  },
-  "tenantStatusInformation": {
-    "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"
-  },
+  "id": "String (identifier)",
   "lastUpdatedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)"
+  "tenantId": "String",
+  "tenantStatusInformation": {"@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"}
 }
 ```

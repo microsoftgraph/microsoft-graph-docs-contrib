@@ -3,7 +3,8 @@ title: "roleManagement resource type"
 description: "Microsoft 365 role-based access control (RBAC) resource."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.reviewer: msodsrbac
+ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -11,11 +12,11 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a Microsoft 365 role-based access control (RBAC) role management entity. This resource provides access to role definitions and role assignments surfaced from RBAC providers. **directory** (Azure Active Directory), **entitlementManagement**,  and **deviceManagement** (Intune) providers are currently supported.
+Represents a Microsoft 365 role-based access control (RBAC) role management entity. This resource provides access to role definitions and role assignments surfaced from RBAC providers. **directory** (Microsoft Entra ID), **entitlementManagement**,  and **deviceManagement** (Intune) providers are currently supported.
 
 For more information, see: 
-* [Administrator role permissions in Azure Active Directory](/azure/active-directory/roles/custom-overview).
-* [Delegation and roles in Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-delegate).
+* [Administrator role permissions in Microsoft Entra](/azure/active-directory/roles/custom-overview).
+* [Delegation and roles in Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-delegate).
 * [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 
 ## Methods

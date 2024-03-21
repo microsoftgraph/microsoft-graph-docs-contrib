@@ -2,8 +2,8 @@
 title: "timeStamp resource type"
 description: "Date and time information for a point in time."
 ms.localizationpriority: medium
-author: "JeremyKelley"
-ms.prod: sites-and-lists
+author: "spgraph-docs-team"
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	ClientContext = "clientContext-value"
+	clientContext = "clientContext-value"
 }
 
 Stop-MgCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params

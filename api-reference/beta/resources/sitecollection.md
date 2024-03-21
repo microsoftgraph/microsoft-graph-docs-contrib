@@ -1,26 +1,35 @@
 ---
-author: JeremyKelley
-description: The siteCollection resource provides more information about a site collection.
+author: spgraph-docs-team
+description: Provides more information about a site collection.
 ms.date: 09/10/2017
 title: SiteCollection
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
-# SiteCollection resource
+# siteCollection resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **siteCollection** resource provides more information about a site collection.
+Provides more information about a site collection.
 
 If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.
 
+## Properties
+
+| Property             | Type     | Description                                                                         |
+| :------------------- | :------- | :---------------------------------------------------------------------------------- |
+| **hostname**         | string   | The hostname for the site collection. Read-only.                                    |
+| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Only present for multi-geo tenants. Read-only.       |
+| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only. |
+
+
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,14 +46,6 @@ Here is a JSON representation of the resource.
   "root": { "@odata.type": "microsoft.graph.root" }
 }
 ```
-
-## Properties
-
-| Property             | Type     | Description                                                                         |
-| :------------------- | :------- | :---------------------------------------------------------------------------------- |
-| **hostname**         | string   | The hostname for the site collection. Read-only.                                    |
-| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.       |
-| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only. |
 
 [root]: root.md
 

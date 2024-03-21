@@ -3,7 +3,7 @@ title: "List deleted items (directory objects) owned by a user"
 description: "Retrieves a list of recently deleted application or group objects that are owned by the specified user."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-| --- | --- |
-| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) |  Not supported. |
-| Application | Group.Read.All, Group.ReadWrite.All  |
+<!-- { "blockType": "permissions", "name": "directory_deleteditems_getuserownedobjects" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directory-deleteditems-getuserownedobjects-permissions.md)]
 
 ## HTTP request
 
@@ -35,7 +32,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 | Name          | Description               |
 | ------------- | ------------------------- |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -54,7 +51,7 @@ Successful requests return `200 OK` response codes; the response object includes
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,27 +68,15 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-directory-deleteditem-getuserownedobjects-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directory-deleteditem-getuserownedobjects-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-directory-deleteditem-getuserownedobjects-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-directory-deleteditem-getuserownedobjects-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
 
-Here is an example of the response. Note: This response object may be truncated for brevity. All supported properties are returned
+The following example shows the response. Note: This response object may be truncated for brevity. All supported properties are returned
 from actual calls.
 
 <!-- {

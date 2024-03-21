@@ -1,9 +1,9 @@
 ---
 title: "outlookUser resource type"
 description: "Represents the Outlook services available to a user."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -41,7 +41,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|masterCategories|[outlookCategory](../resources/outlookcategory.md) collection| A list of categories defined for the user. | 
+|masterCategories|[outlookCategory](../resources/outlookcategory.md) collection| A list of categories defined for the user. |
 |taskFolders (deprecated)|[outlookTaskFolder](outlooktaskfolder.md) collection| The user's Outlook task folders. Read-only. Nullable.|
 |taskGroups (deprecated)|[outlookTaskGroup](outlooktaskgroup.md) collection| The user's Outlook task groups. Read-only. Nullable.|
 |tasks (deprecated)|[outlookTask](outlooktask.md) collection| The user's Outlook tasks. Read-only. Nullable.|
@@ -53,11 +53,11 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookUser"
 }-->
 ```json
-{  
+{
     "id": "string"
 }
 

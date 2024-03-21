@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.Transfer.TransferPostRequestBody
+// Dependencies
+using Microsoft.Graph.Communications.Calls.Item.Transfer;
+using Microsoft.Graph.Models;
+
+var requestBody = new TransferPostRequestBody
 {
 	TransferTarget = new InvitationParticipantInfo
 	{
@@ -43,6 +47,8 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Transfer.Transfe
 		ParticipantId = "909c6581-5130-43e9-88f3-fcb3582cde37",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Communications.Calls["{call-id}"].Transfer.PostAsync(requestBody);
 
 

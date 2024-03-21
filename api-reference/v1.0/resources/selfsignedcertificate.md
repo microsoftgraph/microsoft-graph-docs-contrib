@@ -3,8 +3,8 @@ title: "selfSignedCertificate resource type"
 description: "Contains information about the public part of a signing certificate."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
-author: "alamaral"
+ms.subservice: "entra-applications"
+author: "luleonpla"
 ---
 
 # selfSignedCertificate resource type
@@ -20,11 +20,11 @@ Property|Type|Description
 ----|--|---
 |customKeyIdentifier|Binary| Custom key identifier. |
 | displayName | String | The friendly name for the key. |
-|endDateTime|DateTimeOffset|The date and time at which the credential expires. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|endDateTime|DateTimeOffset|The date and time at which the credential expires. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on January 1, 2014 is `2014-01-01T00:00:00Z`.|
 |key|Binary| The value for the key credential. Should be a Base-64 encoded value. |
 |keyId|Guid|The unique identifier (GUID) for the key.|
-|startDateTime|DateTimeOffset|The date and time at which the credential becomes valid. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-|type|String|The type of key credential. "AsymmetricX509Cert".|
+|startDateTime|DateTimeOffset|The date and time at which the credential becomes valid. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on January 1, 2014 is `2014-01-01T00:00:00Z`. |
+|type|String|The type of key credential. `AsymmetricX509Cert`.|
 |usage|String|A string that describes the purpose for which the key can be used. The possible value is `Verify`.|
 |thumbprint| String | The thumbprint value for the key.|
 

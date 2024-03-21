@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let authenticationMethodModeDetail = await client.api('/identity/conditionalAccess/authenticationStrengths/authenticationMethodModes/windowsHelloForBusiness')
+let authenticationMethodModeDetail = await client.api('/identity/conditionalAccess/authenticationStrength/authenticationMethodModes/windowsHelloForBusiness')
 	.version('beta')
 	.get();
 

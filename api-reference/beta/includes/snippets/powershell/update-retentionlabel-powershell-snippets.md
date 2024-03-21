@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionLabel"
-	RetentionDuration = @{
+	retentionDuration = @{
 		"@odata.type" = "microsoft.graph.security.retentionDuration"
 	}
-	DescriptionForAdmins = "String"
-	DescriptionForUsers = "String"
-	LabelToBeApplied = "String"
-	DefaultRecordBehavior = "String"
+	descriptionForAdmins = "String"
+	descriptionForUsers = "String"
+	labelToBeApplied = "String"
+	defaultRecordBehavior = "String"
 }
 
-Update-MgSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId -BodyParameter $params
+Update-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId -BodyParameter $params
 
 ```

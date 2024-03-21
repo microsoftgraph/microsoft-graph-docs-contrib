@@ -15,7 +15,7 @@ const workbookTable = {
   hasHeaders: false
 };
 
-await client.api('/me/drive/items/{id}/workbook/tables/$/add')
+await client.api('/me/drive/items/{id}/workbook/tables/add')
 	.version('beta')
 	.post(workbookTable);
 

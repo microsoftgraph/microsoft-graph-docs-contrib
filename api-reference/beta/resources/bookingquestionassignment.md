@@ -3,7 +3,7 @@ title: "bookingQuestionAssignment resource type"
 description: "Contains the set of custom questions associated with a particular service."
 ms.localizationpriority: medium
 author: "razortbone"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -18,14 +18,14 @@ Contains the set of custom questions associated with a particular service.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isRequired|Boolean|Indicates whether it is mandatory to answer the custom question. |
-|questionId|String|If it is mandatory to answer the custom question. |
+|isRequired|Boolean|Indicates whether it's mandatory to answer the custom question. |
+|questionId|String|If it's mandatory to answer the custom question. |
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bookingQuestionAssignment"

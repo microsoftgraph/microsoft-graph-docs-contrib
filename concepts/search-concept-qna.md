@@ -3,12 +3,12 @@ title: "Use the Microsoft Search API to search questions and answers"
 description: "Find out how to use the Microsoft Search API in Microsoft Graph to search Q&As."
 author: "njerigrevious"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to search questions and answers
 
-You can use the Microsoft Search API in Microsoft Graph to search questions and answers (Q&As). The [**qna**](/graph/api/resources/search-qna) resource represents Q&As in Microsoft Search. Administrators can create Q&As in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas) or via the [Create qna](/graph/api/search-searchentity-post-qnas) API.
+You can use the Microsoft Search API in Microsoft Graph to search questions and answers (Q&As). The [qna](/graph/api/resources/search-qna) resource represents Q&As in Microsoft Search. Administrators can create Q&As in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas) or via the [Create qna](/graph/api/search-searchentity-post-qnas) API.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -19,7 +19,7 @@ After you create your Q&As, you can use the Microsoft Graph Search API to search
 ### Request
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -43,7 +43,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
   {
    "@odata.type": "#microsoft.graph.searchResponse",
@@ -74,8 +74,8 @@ Content-type: application/json
 
 ## Known issues
 
-- Sorting, aggregation, and pagination are not supported for [qna]((/graph/api/resources/search-qna) searches.
-- Combination search with non-Answer entityTypes (i.e. driveItem, list) is not supported. Only combination search with the other Answer entityTypes bookmarks, qna and acronym is supported.
+- Sorting, aggregation, and pagination aren't supported for [qna](/graph/api/resources/search-qna) searches.
+- Combination searches with non-answer entity types (for example, `driveItem` and `list`) aren't supported. Only combination searches with the other answer entity types **bookmark**, **qna**, and **acronym** are supported.
 
 ## Next steps
 

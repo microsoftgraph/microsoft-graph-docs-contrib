@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewTiIndicator()
 action := graphmodels.ALERT_TIACTION 
@@ -47,7 +56,7 @@ requestBody.SetThreatType(&threatType)
 tlpLevel := graphmodels.GREEN_TLPLEVEL 
 requestBody.SetTlpLevel(&tlpLevel) 
 
-result, err := graphClient.Security().TiIndicators().Post(context.Background(), requestBody, nil)
+tiIndicators, err := graphClient.Security().TiIndicators().Post(context.Background(), requestBody, nil)
 
 
 ```

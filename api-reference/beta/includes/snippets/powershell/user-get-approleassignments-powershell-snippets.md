@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgUserAppRoleAssignment -UserId $userId
+Get-MgBetaUserAppRoleAssignment -UserId $userId -CountVariable CountVar  -ConsistencyLevel eventual 
+
 
 ```

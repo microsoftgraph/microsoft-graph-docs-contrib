@@ -2,7 +2,7 @@
 title: "Create or replace a historyItem"
 description: "Create a new or replace an existing history item for an existing user activity."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: apiPageType
 ---
@@ -15,14 +15,11 @@ Create a new or replace an existing history item for an existing user activity.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "projectrome_put_historyitem" } -->
+[!INCLUDE [permissions-table](../includes/permissions/projectrome-put-historyitem-permissions.md)]
 
 ## HTTP request
 
@@ -32,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Id needs to be a GUID.
+`{id}` needs to be a GUID.
 
 ## Request headers
 
@@ -46,16 +43,17 @@ In the request body, supply a JSON representation of a [historyItem](../resource
 
 ## Response
 
-If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.
+If successful, this method returns a `201 Created` response code if the **historyItem** was created or `200 OK` if the **historyItem** was replaced.
 
 ## Example
 
-#### Request
+### Request
 
-Here is an example of the request.
+The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
-    "blockType": "ignored",
+    "blockType": "request",
     "name": "upsert_historyItem"
 } -->
 
@@ -70,12 +68,18 @@ Content-type: application/json
 }
 ```
 
-#### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upsert-historyitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Here is an example of the response.
+---
+
+### Response
+
+The following example shows the response.
 
 <!-- {
-    "blockType": "ignored",
+    "blockType": "response",
     "truncated": true,
     "@odata.type": "microsoft.graph.activityHistoryItem"
 } -->

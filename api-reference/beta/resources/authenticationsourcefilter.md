@@ -1,9 +1,9 @@
 ---
 title: "authenticationSourceFilter resource type"
-description: "Filter based on the source of the authentication which is used to determine whether the listener is executed or not."
-author: "jkdouglas"
+description: "Filter based on the source of the authentication that is used to determine whether the listener is executed or not."
+author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Filter based on the source of the authentication that is used to determine whether the listener is evaluated.
 
-The **includeApplications** property can be used to enable self-service sign up on an application in Azure Active Directory. Learn more by reading our documentation for [enabling applications in a self-service sign up user flow](/azure/active-directory/external-identities/self-service-sign-up-user-flow#add-applications-to-the-self-service-sign-up-user-flow).
+The **includeApplications** property can be used to enable self-service sign up on an application in Microsoft Entra ID. Learn more by reading our documentation for [enabling applications in a self-service sign up user flow](/azure/active-directory/external-identities/self-service-sign-up-user-flow#add-applications-to-the-self-service-sign-up-user-flow).
 
 ## Properties
 
@@ -29,7 +29,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationSourceFilter"

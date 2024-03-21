@@ -3,7 +3,7 @@ title: "submissionResult resource type"
 description: "Represents the result of a review after the threat submission is processed by Microsoft."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -19,9 +19,9 @@ Represents the result of a review after the threat submission is processed by Mi
 | Property           | Type                               | Description                                                             |
 |:-------------------|:-----------------------------------|:------------------------------------------------------------------------|
 | category           | submissionResultCategory           | The submission result category. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown`, `noResultAvailable` and `unkownFutureValue`. |
-| detail             | [security.submissionResultDetail](#submissionresultdetail-values)             | Specifies the additional details provided by Microsoft to substantiate their analysis result. |
+| detail             | [security.submissionResultDetail](#submissionresultdetail-values)             | Specifies the extra details provided by Microsoft to substantiate their analysis result. |
 | detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Specifies the files detected by Microsoft in the submitted emails.|
-| detectedUrls       | Collection(String)                 | Specifes the URLs detected by Microsoft in the submitted email.|
+| detectedUrls       | Collection(String)                 | Specifies the URLs detected by Microsoft in the submitted email.|
 | userMailboxSetting | [security.userMailboxSetting](#usermailboxsetting-values) | Specifies the setting for user mailbox denoted by a comma-separated string. |
 
 ### userMailboxSetting values
@@ -40,7 +40,7 @@ Represents the result of a review after the threat submission is processed by Mi
 | customRule | the submitted email was handled by one user custom rule. |
 | senderPraPresent | the submitted email was from sender who presents before. |
 | fromFirstTimeSender | the submitted email was from first time sender. |
-| exclusive | the recipient of the submitted email are exclusive to the recipient's address book while delivery was only allowed from address book contacts. |
+| exclusive | the recipients of the submitted email are exclusive to the recipient's address book while delivery was only allowed from address book contacts. |
 | priorSeenPass | the submitted email was prior seen passed. |
 | senderAuthenticationSucceeded | the sender authentication of the submitted email was succeeded. |
 | isJunkMailRuleEnabled | the junk mail rule was enabled. |
@@ -49,29 +49,29 @@ Represents the result of a review after the threat submission is processed by Mi
 ### submissionResultDetail values
 | Member                                  | Description                                                  |
 | :------------------------------------- | :----------------------------------------------------------- |
-| none                                   | Microsoft has no additional details on the result to share.            |
+| none                                   | Microsoft has no other details on the result to share.            |
 | underInvestigation                     | Microsoft is still analyzing the sample and the results should be available soon.      |
-| simulatedThreat                        |  The reported message was blocked as it is a phish simulated email send to users for phish education. To configure EOP/MDO to allow it check out advanced delivery|
+| simulatedThreat                        |  The reported message was blocked as it's a phish simulated email send to users for phish education. To configure EOP/MDO to allow, it checks out advanced delivery|
 | allowedBySecOps                          | The reported message was allowed due to advanced delivery flow for security operators mailbox. So, remove it from advanced delivery to block it |
-| allowedByThirdPartyFilters             | The reported message was allowed/blocked due third-party filters working in conjunction with EOP/MDO. Configure enhanced filtering so that EOP/MDO can filter accurately   |
-| messageNotFound                        | Microsoft cannot provide a verdict on the reported message as Microsoft cannot find the actual message. Please resubmit by uploading the email using submissions in security.microsoft.com |
+| allowedByThirdPartyFilters             | The reported message was allowed/blocked due third-party filters working with EOP/MDO. Configure enhanced filtering so that EOP/MDO can filter accurately   |
+| messageNotFound                        | Microsoft can't provide a verdict on the reported message as Microsoft can't find the actual message. Resubmit by uploading the email using submissions in security.microsoft.com |
 | urlFileShouldNotBeBlocked              | Microsoft finds the reported entity to be clean. Existing emails containing it have been released. The phish and malware filters will learn from this after a few weeks. Till then to allow it, create an allow entry in Tenant allow/block list if not done already. |
 | urlFileShouldBeBlocked                 | Microsoft finds the reported entity to be malicious. Existing emails containing it have been quarantined. The phish and malware filters will learn from this after a few weeks. Till then to block it, create a block entry in Tenant allow/block list if not done already |
-| urlFileCannotMakeDecision              | Microsoft cannot reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately allow/block it if not already done. |
+| urlFileCannotMakeDecision              | Microsoft can't reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately allow/block it if not already done. |
 | domainImpersonation                    | The reported message was allowed/blocked due to domain impersonation policy settings. Configure domain impersonation policy so that EOP/MDO can filter accordingly |
 | userImpersonation                      | The reported message was allowed/blocked due to user impersonation policy settings. Configure user impersonation policy so that EOP/MDO can filter accordingly |
 | brandImpersonation                     | The reported message was allowed/blocked due to brand impersonation policy settings. Configure brand impersonation policy so that EOP/MDO can filter accordingly |
 | outboundShouldNotBeBlocked             | The reported outgoing messages has been found clean and Microsoft will update its machine learning based outbound filters in the coming weeks. |
 | outboundShouldBeBlocked                | The reported outgoing messages has been found malicious and Microsoft will update its machine learning based outbound filters in the coming weeks. |
-| outboundBulk                           | Microsoft find the reported message to be spam/junk. The outbound filters will learn after a few weeks |
-| outboundCannotMakeDecision             | Microsoft cannot reach a verdict at this time. Resubmit it to get to a verdict on it after analysis.  |
-| outboundNotRescanned                   | Microsoft cannot provide a verdict on the reported outbound message as Microsoft cannot find the actual message. Please resubmit by uploading the email using submissions in security.microsoft.com |
+| outboundBulk                           | Microsoft finds the reported message to be spam/junk. The outbound filters will learn after a few weeks |
+| outboundCannotMakeDecision             | Microsoft can't reach a verdict at this time. Resubmit it to get to a verdict on it after analysis.  |
+| outboundNotRescanned                   | Microsoft can't provide a verdict on the reported outbound message as Microsoft can't find the actual message. Resubmit by uploading the email using submissions in security.microsoft.com |
 | zeroHourAutoPurgeAllowed               | The reported message was reverse zapped from quarantine as it was found to be clean. |
 | zeroHourAutoPurgeBlocked               | The Reported message was zapped as the message was found to be malicious.|
 | zeroHourAutoPurgeQuarantineReleased    | The reported message was released from Quarantine despite being quarantined due to zap as message turned malicious after delivery. |
-| onPremisesSkip                         | The reported message cannot be analyzed as this went through a onprem setup of exchange online protection. Configure your hybrid setup so that EOP/MDO can scan messages before delivering to exchange onprem mailboxes |
-| allowedByTenantAllowBlockList          | The reported message was allowed as one or more entities in the email are on the tenant allow/ block list. Remove allows from Tenant allow/block list so that EOP/MDO can filter accordingly |
-| blockedByTenantAllowBlockList          | The reported message was blocked as one or more entities in the email are on the tenant allow/ block list. Remove blocks from Tenant allow/block list so that EOP/MDO can filter accordingly |
+| onPremisesSkip                         | The reported message can't be analyzed as this went through an on-premises setup of exchange online protection. Configure your hybrid setup so that EOP/MDO can scan messages before delivering to exchange on-premises mailboxes |
+| allowedByTenantAllowBlockList          | The reported message was allowed as one or more entities in the email are on the tenant allow/block list. Remove allows from Tenant allow/block list so that EOP/MDO can filter accordingly |
+| blockedByTenantAllowBlockList          | The reported message was blocked as one or more entities in the email are on the tenant allow/block list. Remove blocks from Tenant allow/block list so that EOP/MDO can filter accordingly |
 | allowedUrlByTenantAllowBlockList       | The reported URL was allowed as it is on the Tenant allow/block list. Remove the allow from Tenant allow/block list so that EOP/MDO can filter accordingly |
 | allowedFileByTenantAllowBlockList      | The reported file was allowed as it is on the Tenant allow/block list. Remove the allow from Tenant allow/block list so that EOP/MDO can filter accordingly |
 | allowedSenderByTenantAllowBlockList    | The reported message was allowed as the sender of the email is on the Tenant allow/block list. Remove allow from Tenant allow/block list so that EOP/MDO can filter accordingly|
@@ -97,19 +97,19 @@ Represents the result of a review after the threat submission is processed by Mi
 | goodReclassifiedAsBad                  | Microsoft finds the reported message to be malicious. Existing emails have been quarantined. The phish and malware filters will learn from this after a few weeks. Till then to block it, create a block entry in Tenant allow/block list if not done already |
 | goodReclassifiedAsBulk                 | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this after a few weeks. Till then to block it, create a block entry in Tenant allow/block list if not done already |
 | goodReclassifiedAsGood                 | Microsoft finds the reported message to be clean. If you disagree with this verdict resubmit the email. Till then to block it, create a block entry in Tenant allow/block list if not done already |
-| goodReclassifiedAsCannotMakeDecision   | Microsoft cannot reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately block it if not done already. |
+| goodReclassifiedAsCannotMakeDecision   | Microsoft can't reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately block it if not done already. |
 | badReclassifiedAsGood                  | Microsoft finds the reported message to be clean. Existing emails have been released. The phish and malware filters will learn from this after a few weeks. Till then to allow it, create an allow entry in Tenant allow/block list if not done already |
 | badReclassifiedAsBulk                  | Microsoft finds the reported message to be spam. The spam and bulk filters will learn from this after a few weeks. Till then to allow it, create an allow entry in Tenant allow/block list if not done already |
 | badReclassifiedAsBad                   | Microsoft finds the reported message to be malicious. If you disagree with this verdict resubmit the email. Till then to allow it, create an allow entry in Tenant allow/block list if not done already |
-| badReclassifiedAsCannotMakeDecision    | Microsoft cannot reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately allow it if not done already. |
-| unknownFutureValue                     | Any future value which is not in use now.                     |
+| badReclassifiedAsCannotMakeDecision    | Microsoft can't reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately allow it if not done already. |
+| unknownFutureValue                     | Any future value, which isn't in use now.                     |
 
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.submissionResult"

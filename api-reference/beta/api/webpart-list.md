@@ -3,7 +3,7 @@ title: "List webparts"
 description: "Get the webPart collection from a sitePage."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Get the [webPart](../resources/webpart.md) resources from a [sitePage](../resour
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
+<!-- { "blockType": "permissions", "name": "webpart_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/webpart-list-permissions.md)]
 
 ## HTTP request
 
@@ -33,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /sites/{sitesId}/pages/{sitePageId}/webparts
-GET /sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
-GET /sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection/webparts
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webparts
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts
 ```
 
 ## Optional query parameters
@@ -46,11 +43,11 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,23 +57,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
+<!-- { "blockType": "ignored" } -->
 
-<!-- {
-  "blockType": "request",
-  "name": "list_webpart"
-}
--->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
+```http
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts
 ```
-
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -99,10 +90,11 @@ Content-Type: application/json
       "innerHtml": "<h2>How do you get started?</h2>"
     },
     {
-      "@odata.type": "#microsoft.graph.textWebPart",
+      "@odata.type": "#microsoft.graph.standardWebPart",
       "id": "6346d908-f20d-4528-902f-3c2a9c8c2442",
       "webPartType": "d1d91016-032f-456d-98a4-721247c305e8",
       "data": {
+        "audiences": [],
         "dataVersion": "1.9",
         "description": "Show an image on your page",
         "title": "Image",
@@ -121,14 +113,20 @@ Content-Type: application/json
           "alignment": "Center"
         },
         "serverProcessedContent": {
+          "componentDependencies": [],
+          "htmlStrings": [],
+          "links": [],
+          "searchablePlainTexts": [],
           "imageSources": [
             {
+              "@odata.type": "#microsoft.graph.metaDataKeyStringPair",
               "key": "imageSource",
               "value": "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG"
             }
           ],
           "customMetadata": [
             {
+              "@odata.type": "#microsoft.graph.metaDataKeyValuePair",
               "key": "imageSource",
               "value": {
                 "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",

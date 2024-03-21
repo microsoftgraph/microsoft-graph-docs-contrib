@@ -3,7 +3,7 @@ title: "managementActionTenantDeploymentStatus resource type"
 description: "Represents tenant level deployment status for the management action."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Represents tenant level deployment status for the management action.
 |id|String|The unique identifier for the tenant level deployment status. Required. Read-only.|
 |statuses|[microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md) collection|The collection of deployment status for each instance of a management action. Optional.|
 |tenantGroupId|String|The identifier for the tenant group that is associated with the management action. Required. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
 
 ## Relationships
 None.

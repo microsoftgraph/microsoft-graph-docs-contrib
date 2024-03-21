@@ -5,7 +5,7 @@ services: "project-madeira"
 documentationcenter: ""
 author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Represents a method of shipment in Dynamics 365 Business Central, such as UPS, F
 |:---------------|:--------|:----------|
 |code|String|The shipment method code.|
 |displayName|String|The display name for the shipment method.|
-|id|String|The unique identifier of the **shipmentMethod**. Non-editable.|
+|id|String|The unique identifier of the **shipmentMethod**. Noneditable.|
 |lastModifiedDateTime|Datetime|The date and time when the shipment method was last modified. Read-Only.|  
 
 
@@ -40,7 +40,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 ```json
 {

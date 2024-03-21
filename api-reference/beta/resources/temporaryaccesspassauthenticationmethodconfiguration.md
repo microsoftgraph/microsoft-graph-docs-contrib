@@ -2,9 +2,10 @@
 title: "temporaryAccessPassAuthenticationMethodConfiguration resource type"
 description: "Represents a Temporary Access Pass authentication methods policy that defines the configuration settings and users or groups who are enabled to use the authentication method."
 author: "tilarso"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
-doc_type: apiPageType
+ms.subservice: "entra-monitoring-health"
+doc_type: resourcePageType
 ---
 
 # temporaryAccessPassAuthenticationMethodConfiguration resource type
@@ -13,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a Temporary Access Pass authentication methods policy that defines the configuration settings and users or groups who are enabled to use the [Temporary Access Pass authentication method](temporaryaccesspassauthenticationmethod.md).
+
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
 ## Methods
 |Method|Return type|Description|

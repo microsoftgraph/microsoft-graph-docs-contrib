@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Me.SendMail.SendMailPostRequestBody
+// Dependencies
+using Microsoft.Graph.Me.SendMail;
+using Microsoft.Graph.Models;
+
+var requestBody = new SendMailPostRequestBody
 {
 	Message = new Message
 	{
@@ -22,7 +26,7 @@ var requestBody = new Microsoft.Graph.Me.SendMail.SendMailPostRequestBody
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "AlexW@contoso.OnMicrosoft.com",
+					Address = "AlexW@contoso.com",
 				},
 			},
 		},
@@ -41,6 +45,8 @@ var requestBody = new Microsoft.Graph.Me.SendMail.SendMailPostRequestBody
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.SendMail.PostAsync(requestBody);
 
 

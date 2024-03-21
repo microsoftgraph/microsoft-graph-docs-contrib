@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEducationUser()
 
@@ -36,11 +44,10 @@ relatedContact1.SetAccessConsent(&accessConsent)
 relatedContacts := []graphmodels.RelatedContactable {
 	relatedContact,
 	relatedContact1,
-
 }
 requestBody.SetRelatedContacts(relatedContacts)
 
-result, err := graphClient.Education().UsersById("educationUser-id").Patch(context.Background(), requestBody, nil)
+users, err := graphClient.Education().Users().ByEducationUserId("educationUser-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

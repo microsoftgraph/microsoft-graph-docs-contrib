@@ -6,49 +6,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();
 $requestBody->setId('4540a08f-8ab5-43f6-a923-015275799197');
-
 $requestBody->setDisplayName('policy with custom access package workflow extension');
-
 $requestBody->setDescription('Run specified custom access package workflow extension at different stages.');
-
 $requestBody->setAccessPackageId('ba5807c7-2aa9-4c8a-907e-4a17ee587500');
-
 $requestBody->setRequestApprovalSettings(null);
-
 $requestorSettings = new RequestorSettings();
 $requestorSettings->setAcceptRequests(true);
-
 $requestorSettings->setScopeType('AllExistingDirectorySubjects');
-
-$requestorSettings->setAllowedRequestors([]);
-
-
+$requestorSettings->setAllowedRequestors([	]);
 $requestBody->setRequestorSettings($requestorSettings);
 $requestBody->setAccessReviewSettings(null);
-
-$requestBody->setCustomExtensionHandlers([]);
-
+$requestBody->setCustomExtensionHandlers([	]);
 $additionalData = [
-'expiration' => $requestBody = new Expiration();
-$requestBody->setType('afterDuration');
-
-$requestBody->setDuration('P365D');
-
-
-$requestBody->setExpiration($expiration);
-
+	'expiration' => [
+		'type' => 'afterDuration',
+		'duration' => 'P365D',
+	],
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$requestResult = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPoliciesById('accessPackageAssignmentPolicy-id')->put($requestBody);
-
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentPolicies()->byAccessPackageAssignmentPolicyId('accessPackageAssignmentPolicy-id')->put($requestBody)->wait();
 
 ```

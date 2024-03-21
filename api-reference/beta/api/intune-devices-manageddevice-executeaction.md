@@ -1,9 +1,9 @@
 ---
 title: "executeAction action"
-description: "Not yet documented"
+description: "Intune Devices Manageddevice Executeaction Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +43,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -51,17 +53,17 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|Not yet documented|
-|keepEnrollmentData|Boolean|Not yet documented|
-|keepUserData|Boolean|Not yet documented|
-|persistEsimDataPlan|Boolean|Not yet documented|
-|deviceIds|String collection|Not yet documented|
-|notificationTitle|String|Not yet documented|
-|notificationBody|String|Not yet documented|
-|deviceName|String|Not yet documented|
-|carrierUrl|String|Not yet documented|
-|deprovisionReason|String|Not yet documented|
-|organizationalUnitPath|String|Not yet documented|
+|actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)||
+|keepEnrollmentData|Boolean||
+|keepUserData|Boolean||
+|persistEsimDataPlan|Boolean||
+|deviceIds|String collection||
+|notificationTitle|String||
+|notificationBody|String||
+|deviceName|String||
+|carrierUrl|String||
+|deprovisionReason|String||
+|organizationalUnitPath|String||
 
 
 

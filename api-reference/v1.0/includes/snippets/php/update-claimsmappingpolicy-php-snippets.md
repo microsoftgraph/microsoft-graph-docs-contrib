@@ -6,15 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ClaimsMappingPolicy();
 $requestBody->setDisplayName('UpdateClaimsPolicy');
 
-
-
-$requestResult = $graphServiceClient->policies()->claimsMappingPoliciesById('claimsMappingPolicy-id')->patch($requestBody);
-
+$result = $graphServiceClient->policies()->claimsMappingPolicies()->byClaimsMappingPolicyId('claimsMappingPolicy-id')->patch($requestBody)->wait();
 
 ```

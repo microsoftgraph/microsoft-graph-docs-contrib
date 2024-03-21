@@ -1,9 +1,9 @@
 ---
 title: "directoryObject resource type"
-description: "Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types generally referred to as directory objects."
+description: "Represents a Microsoft Entra object."
 ms.localizationpriority: high
 author: "keylimesoda"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory object. The **directoryObject** type is the base type for the following directory entity types generally referred to as directory objects:
+Represents a Microsoft Entra object. The **directoryObject** type is the base type for the following directory entity types generally referred to as directory objects:
 
 + [application](application.md)
 + [administrativeUnit](administrativeunit.md)
@@ -56,7 +56,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -81,7 +81,8 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "id": "string (identifier)"
+  "deletedDateTime": "String (timestamp)",
+  "id": "String (identifier)"
 }
 ```
 
@@ -94,4 +95,3 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
-

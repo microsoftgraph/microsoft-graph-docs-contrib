@@ -3,7 +3,7 @@ title: "outlookTaskGroup resource type"
 description: "A group of folders (outlookTaskFolder) that contain Outlook tasks (collection of outlookTask objects). "
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 A group of folders ([outlookTaskFolder](outlooktaskfolder.md)) that contain Outlook tasks (collection of [outlookTask](outlooktask.md) objects). 
 
-In Outlook, there is a default task group `My Tasks` which you cannot rename or delete. You can, however, create additional task groups. 
+In Outlook, there's a default task group `My Tasks` which you can't rename or delete. You can, however, create additional task groups. 
 
 
 ## Methods
@@ -46,7 +46,7 @@ In Outlook, there is a default task group `My Tasks` which you cannot rename or 
 |taskFolders|[outlookTaskFolder](outlooktaskfolder.md) collection| The collection of task folders in the task group. Read-only. Nullable.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

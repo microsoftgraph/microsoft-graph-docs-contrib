@@ -1,10 +1,10 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Permission
 ms.localizationpriority: high
 description: "The Permission resource provides information about a sharing permission granted for a DriveItem resource."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.
 
-Sharing permissions have a number of different forms.
+Sharing permissions have many different forms.
 The **permission** resource represents these different forms through facets on the resource.
 
-OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
-**grantedTo** and **grantedToIdentities** will be deprecated going forward and the response will be migrated to **grantedToV2** and **grantedToIdentitiesV2** respectively under appropriate property names.
+OneDrive for Business and SharePoint document libraries don't return the **inheritedFrom** property.
+**grantedTo** and **grantedToIdentities** are deprecated going forward and the response will be migrated to **grantedToV2** and **grantedToIdentitiesV2** respectively under appropriate property names.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!--{
   "blockType": "resource",
@@ -56,7 +56,7 @@ Here is a JSON representation of the resource
   "roles": ["string"],
   "shareId": "string",
   "expirationDateTime": "string (timestamp)",
-  "hasPassword": "boolean"  
+  "hasPassword": "boolean"
 }
 ```
 
@@ -64,23 +64,23 @@ Here is a JSON representation of the resource
 
 | Property                         | Type                                      | Description |
 |:---------------------------------|:------------------------------------------|:-----------------
-| expirationDateTime               | DateTimeOffset                            | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional. |
+| expirationDateTime               | DateTimeOffset                            | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there's no expiration set for this permission. Optional. |
 | id                               | String                                    | The unique identifier of the permission among all permissions on the item. Read-only. |
 | hasPassword                      | Boolean                                   | Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only.. |
 | grantedTo (deprecated)           | [IdentitySet](identityset.md)             | For user type permissions, the details of the users and applications for this permission. Read-only. |
 | grantedToIdentities (deprecated) | Collection([IdentitySet](identityset.md)) | For type permissions, the details of the users to whom permission was granted. Read-only. |
 | grantedToIdentitiesV2            | Collection([SharePointIdentitySet][]) | For link type permissions, the details of the users to whom permission was granted. Read-only. |
 | grantedToV2                      | [SharePointIdentitySet][]                 | For user type permissions, the details of the users and applications for this permission. Read-only. |
-| inheritedFrom                    | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only. |
+| inheritedFrom                    | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it's inherited from an ancestor. Read-only. |
 | invitation                       | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only. |
-| link                             | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only. |
+| link                             | [SharingLink][]                           | Provides the link details of the current permission, if it's a link type permission. Read-only. |
 | roles                            | Collection of String                      | The type of permission, for example, `read`. See below for the full list of roles. Read-only. |
 | shareId                          | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only. |
 
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
-Permissions with a [**link**][SharingLink] facet represent sharing links created on the item. 
+Permissions with a [**link**][SharingLink] facet represent sharing links created on the item.
 Sharing links contain a unique token that provides access to the item for anyone with the link.
 
 Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.
@@ -98,7 +98,7 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 | owner           | For SharePoint and OneDrive for Business this represents the owner role.       |
 
 ## Sharing links
-The most common type of permissions are sharing links.
+The most common type of permissions is sharing links.
 Sharing links provide a unique URL that includes both the resource being shared
 and an authentication token that provides access to the resource. Users don't
 need to sign-in to access the content shared with a sharing link. Users can
@@ -199,7 +199,7 @@ This link provides read and write access to the specific people in the `grantedT
 
 ### Existing access link
 
-This link does not grant any additional privileges to the user.
+This link doesn't grant any extra privileges to the user.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
 
@@ -218,13 +218,13 @@ This link does not grant any additional privileges to the user.
 
 ### Sharing Invitation
 In addition to creating sharing links, a user can be invited by e-mail address.
-In this scenario the permission creates an invitation that is sent to the user's
+In this scenario, the permission creates an invitation that is sent to the user's
 email.
 
 #### Invitation to an email address
-If the permission was sent via an email address to a recipient who does not have
+If the permission was sent via an email address to a recipient who doesn't have
 a matching account, the **grantedTo** property may not be set until the
-invitation is redeemed, which occurs the first time a user clicks the link and
+invitation is redeemed, which occurs the first time a user select the link and
 signs in.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->

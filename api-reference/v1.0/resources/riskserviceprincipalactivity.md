@@ -1,9 +1,9 @@
 ---
 title: "riskServicePrincipalActivity resource type"
-description: "Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection."
+description: "Represents the risk activity of a Microsoft Entra service principal as determined by Microsoft Entra ID Protection."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection. 
+Represents the risk activity of a Microsoft Entra service principal as determined by Microsoft Entra ID Protection. 
 
 ## Properties
 
@@ -43,4 +43,3 @@ Represents the risk activity of an Azure AD service principal as determined by A
   "suppressions": []
 }
 -->
-

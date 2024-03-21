@@ -3,7 +3,7 @@ title: "domainDnsRecord resource type"
 description: "The domainDnsRecord entity is used to present DNS records."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -30,15 +30,15 @@ None.
 |id|String| Unique identifier assigned to this entity. Not nullable, Read-only.|
 |isOptional|Boolean| If `false`, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. |
 |label|String| Value used when configuring the name of the DNS record at the DNS host. |
-|recordType|String| Indicates what type of DNS record this entity represents.</br></br>The value can be one of the following: `CName`, `Mx`, `Srv`, `Txt`. |
-|supportedService|String| Microsoft Online Service or feature that has a dependency on this DNS record.</br></br>Can be one of the following values: `null`, `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`.|
+|recordType|String| Indicates what type of DNS record this entity represents. The value can be `CName`, `Mx`, `Srv`, or `Txt`. |
+|supportedService|String| Microsoft Online Service or feature that has a dependency on this DNS record. Can be one of the following values: `null`, `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`.|
 |ttl|Int32| Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable. |
 
 ## Relationships
 None
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -6,22 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new User();
-$requestBody->setBusinessPhones(['+1 425 555 0109', ]);
-
+$requestBody->setBusinessPhones(['+1 425 555 0109', 	]);
 $requestBody->setOfficeLocation('18/2111');
-
 $authorizationInfo = new AuthorizationInfo();
-$authorizationInfo->setCertificateUserIds(['5432109876543210@mil', ]);
-
-
+$authorizationInfo->setCertificateUserIds(['5432109876543210@mil', 	]);
 $requestBody->setAuthorizationInfo($authorizationInfo);
 
-
-$requestResult = $graphServiceClient->usersById('user-id')->patch($requestBody);
-
+$result = $graphServiceClient->users()->byUserId('user-id')->patch($requestBody)->wait();
 
 ```

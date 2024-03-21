@@ -2,8 +2,9 @@
 title: "signInFrequencySessionControl resource type"
 description: "Session control to enforce signin frequency."
 ms.localizationpriority: medium
-author: "rckyplln"
-ms.prod: "identity-and-sign-in"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -17,8 +18,8 @@ Session control to enforce sign-in frequency. Inherits from [conditionalAccessSe
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`.|
-|frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`.|
+|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`. This property isn't required when using **frequencyInterval** with the value of `timeBased`.|
+|frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`. Sign-in frequency of `everyTime` is available for risky users, risky sign-ins, and Intune device enrollment. For more information, see [Require reauthentication every time](https://aka.ms/RequireReauthentication).|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 |type          |signinFrequencyType| Possible values are: `days`, `hours`.|
 |value         |Int32        | The number of `days` or `hours`.|
@@ -30,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

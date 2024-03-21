@@ -6,21 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GenerateKeyPostRequestBody();
-$requestBody->setUse('sig');
-
+$requestBody->setEscapedUse('sig');
 $requestBody->setKty('RSA');
-
 $requestBody->setNbf(1508969811);
-
 $requestBody->setExp(1508969811);
 
-
-
-$requestResult = $graphServiceClient->trustFramework()->keySetsById('trustFrameworkKeySet-id')->generateKey()->post($requestBody);
-
+$result = $graphServiceClient->trustFramework()->keySets()->byTrustFrameworkKeySetId('trustFrameworkKeySet-id')->generateKey()->post($requestBody)->wait();
 
 ```

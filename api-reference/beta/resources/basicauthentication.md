@@ -3,7 +3,7 @@ title: "basicAuthentication resource type"
 description: "Represents configuration for using Basic authentication in an API call."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 |Property|Type|Description|
 |:---|:---|:---|
 |username|String| The username. |
-|password|String| The password. It is not returned in the responses. |
+|password|String| The password. It isn't returned in the responses. |
 
 ## Relationships
 
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.basicAuthentication"

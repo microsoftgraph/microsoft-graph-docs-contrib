@@ -2,8 +2,8 @@
 title: "assignedPlan resource type"
 description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."
 ms.localizationpriority: medium
-author: "jconley76"
-ms.prod: "directory-management"
+author: "frank-masuelli"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

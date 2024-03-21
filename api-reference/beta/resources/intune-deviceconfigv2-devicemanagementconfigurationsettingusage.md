@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSettingUsage enum type"
 description: "Supported setting types"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -20,6 +20,7 @@ Supported setting types
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|No setting type specified|
-|configuration|1|Configuration setting|
-|compliance|2|Compliance setting|
+|none|0|Default. No setting type specified.|
+|configuration|1|Configuration setting type.|
+|compliance|2|Compliance setting type.|
+|unknownFutureValue|8|Evolvable enumeration sentinel value. Do not use.|

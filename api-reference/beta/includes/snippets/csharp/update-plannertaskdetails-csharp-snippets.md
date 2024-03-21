@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new PlannerTaskDetails
 {
@@ -14,7 +17,7 @@ var requestBody = new PlannerTaskDetails
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"http%3A//developer%2Emicrosoft%2Ecom" , new 
+				"http%3A//developer%2Emicrosoft%2Ecom" , new PlannerExternalReference
 				{
 					OdataType = "microsoft.graph.plannerExternalReference",
 					Alias = "Documentation",
@@ -23,7 +26,7 @@ var requestBody = new PlannerTaskDetails
 				}
 			},
 			{
-				"https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer" , new 
+				"https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer" , new PlannerExternalReference
 				{
 					OdataType = "microsoft.graph.plannerExternalReference",
 					PreviewPriority = "  !!",
@@ -39,7 +42,7 @@ var requestBody = new PlannerTaskDetails
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"95e27074-6c4a-447a-aa24-9d718a0b86fa" , new 
+				"95e27074-6c4a-447a-aa24-9d718a0b86fa" , new PlannerChecklistItem
 				{
 					OdataType = "microsoft.graph.plannerChecklistItem",
 					Title = "Update task details",
@@ -47,7 +50,7 @@ var requestBody = new PlannerTaskDetails
 				}
 			},
 			{
-				"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff" , new 
+				"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff" , new PlannerChecklistItem
 				{
 					OdataType = "microsoft.graph.plannerChecklistItem",
 					IsChecked = true,
@@ -60,6 +63,8 @@ var requestBody = new PlannerTaskDetails
 	},
 	Description = "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Planner.Tasks["{plannerTask-id}"].Details.PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");

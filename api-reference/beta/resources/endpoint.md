@@ -3,8 +3,9 @@ title: "Endpoint resource type"
 description: "Endpoints represent URLs for resources associated with an entity."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "groups"
-author: "psaffaie"
+ms.subservice: "entra-groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ---
 
 # Endpoint resource type
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Endpoints represent URLs for resources associated with an entity. For example, when a new Microsoft 365 group is created, additional resources are also created as part of the Microsoft 365 group. These include things like a group mailbox for conversations and a group OneDrive folder for documents and files. Further information about these Microsoft 365 group resources, including their associated resource URLs can now be read using the _endpoints_ navigation on the group resource-type. This allows applications to understand these resources, and even embed the resource URL experiences in their own experiences.
+Endpoints represent URLs for resources associated with an entity. For example, when a new Microsoft 365 group is created, other resources are also created as part of the Microsoft 365 group. These include things like a group mailbox for conversations and a group OneDrive folder for documents and files. Further information about these Microsoft 365 group resources, including their associated resource URLs can now be read using the _endpoints_ navigation on the group resource-type. This allows applications to understand these resources, and even embed the resource URL experiences in their own experiences.
 
 ## Methods
 
@@ -26,11 +27,11 @@ Endpoints represent URLs for resources associated with an entity. For example, w
 
 | Property           | Type   | Description                                                                                                                      |
 | :----------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------- |
-| capability         | String | Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.) Not nullable. Read-only.    |
+| capability         | String | Describes the capability that is associated with this resource. (for example, Messages, Conversations, etc.) Not nullable. Read-only.    |
 | id                 | String | Unique identifier for the endpoint; Key. Not nullable. Read-only.                                                                |
 | providerId         | String | Application id of the publishing underlying service. Not nullable. Read-only.                                                    |
 | providerName       | String | Name of the publishing underlying service. Read-only.                                                                            |
-| providerResourceId | String | For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only. |
+| providerResourceId | String | For Microsoft 365 groups, this is set to a well-known name for the resource (for example, Yammer.FeedURL etc.). Not nullable. Read-only. |
 | uri                | String | URL of the published resource. Not nullable. Read-only.                                                                          |
 
 ## Relationships
@@ -39,7 +40,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

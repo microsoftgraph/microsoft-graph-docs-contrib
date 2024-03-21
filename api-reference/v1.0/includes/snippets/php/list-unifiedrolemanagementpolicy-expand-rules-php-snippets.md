@@ -6,19 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new RoleManagementPoliciesRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new RoleManagementPoliciesRequestBuilderGetQueryParameters();
+$queryParameters = RoleManagementPoliciesRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "scopeId eq '/' and scopeType eq 'Directory'";
 $queryParameters->expand = ["rules"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->policies()->roleManagementPolicies()->get($requestConfiguration);
-
+$result = $graphServiceClient->policies()->roleManagementPolicies()->get($requestConfiguration)->wait();
 
 ```

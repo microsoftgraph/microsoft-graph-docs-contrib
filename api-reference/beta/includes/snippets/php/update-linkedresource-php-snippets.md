@@ -6,21 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new LinkedResource();
-$requestBody->set@odatatype('#microsoft.graph.linkedResource');
-
+$requestBody->setOdataType('#microsoft.graph.linkedResource');
 $requestBody->setWebUrl('http://microsoft.com');
-
 $requestBody->setApplicationName('Microsoft');
-
 $requestBody->setDisplayName('Microsoft');
 
-
-
-$requestResult = $graphServiceClient->me()->todo()->listsById('todoTaskList-id')->tasksById('todoTask-id')->linkedResourcesById('linkedResource-id')->patch($requestBody);
-
+$result = $graphServiceClient->me()->todo()->lists()->byTodoTaskListId('todoTaskList-id')->tasks()->byTodoTaskId('todoTask-id')->linkedResources()->byLinkedResourceId('linkedResource-id')->patch($requestBody)->wait();
 
 ```

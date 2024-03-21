@@ -1,15 +1,15 @@
 ---
 title: "Online meeting artifacts and permissions in the cloud communications API"
 description: "Learn about online meeting artifacts, such as attendance reports and recordings, and the permissions needed to fetch them by using the Microsoft Graph cloud communications API."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.date: "09/20/2021"
 ---
 
 # Online meeting artifacts and permissions
 
-Online meeting artifacts are content produced for the duration of an online meeting or [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). You can use the [Get onlineMeeting](/graph/api/onlinemeeting-get) operation to get the following meeting artifacts:
+Online meeting artifacts are content produced during an online meeting or [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). You can use the [Get onlineMeeting](/graph/api/onlinemeeting-get) operation to get the following meeting artifacts:
 
 - Attendance report of an online meeting, in the form of a JSON response. Attendance reports have the following characteristics:
   - Available for meetings other than Teams live events
@@ -39,8 +39,8 @@ Only the _OnlineMeetingArtifact.Read.All_ permissions are required to fetch onli
 - _OnlineMeeting.Read.All_
 - _OnlineMeeting.ReadWrite.All_
 
-After that date, the _OnlineMeetingArtifact.Read.All_ permissions will be required to fetch meeting artifacts; requests that do not have those permissions will be rejected.
+After that date, the _OnlineMeetingArtifact.Read.All_ permissions will be required to fetch meeting artifacts; requests that don't have those permissions will be rejected.
 
-## See also
+## Related content
 
 - [Teams API overview](teams-concept-overview.md)

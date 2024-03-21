@@ -6,29 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EdiscoveryNoncustodialDataSource();
-$dataSource = new DataSource();
-$dataSource->set@odatatype('microsoft.graph.security.siteSource');
-
-$additionalData = [
-'site' => $dataSource = new Site();
-$		dataSource->setWebUrl('https://m365x809305.sharepoint.com/sites/Design-topsecret');
-
-
-$dataSource->setSite($site);
-
-];
-$dataSource->setAdditionalData($additionalData);
-
-
-
+$dataSource = new SiteSource();
+$dataSource->setOdataType('microsoft.graph.security.siteSource');
+$dataSourceSite = new Site();
+$dataSourceSite->setWebUrl('https://m365x809305.sharepoint.com/sites/Design-topsecret');
+$dataSource->setSite($dataSourceSite);
 $requestBody->setDataSource($dataSource);
 
-
-$requestResult = $graphServiceClient->security()->cases()->ediscoveryCasesById('ediscoveryCase-id')->noncustodialDataSources()->post($requestBody);
-
+$result = $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->noncustodialDataSources()->post($requestBody)->wait();
 
 ```

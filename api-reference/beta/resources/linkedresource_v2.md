@@ -3,7 +3,7 @@ title: "linkedResource_v2 resource type"
 description: "Represents an item in a partner application related to a baseTask"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Represents an item in a partner application related to a [baseTask](./basetask.m
 
 ![Screenshot showing linked resource card in task details pane. Linked resource card shows Open in Jira, which is the partner application name, and Social media Plan which is the title of linked resource](/graph/images/todo-linkedresource-taskdetail.png)
 
-Some **linkedResource** objects are not associated with any web URLs, in which case, the **webUrl** property is not required. For example, the linked item can be from a custom business app or native platform app, such as an SMS app on a mobile phone. Here is how a **linkedResource** appears with and without a URL.
+Some **linkedResource** objects aren't associated with any web URLs, in which case, the **webUrl** property isn't required. For example, the linked item can be from a custom business app or native platform app, such as an SMS app on a mobile phone. Here's how a **linkedResource** appears with and without a URL.
 
 ![Image showing how linked resource card with and without URL is displayed. Linked resource card with URL contains Open with partner application Name while linked resource card without URL contains just partner Application name.](/graph/images/todo-linkedresource.png)
 
@@ -45,7 +45,7 @@ Some **linkedResource** objects are not associated with any web URLs, in which c
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

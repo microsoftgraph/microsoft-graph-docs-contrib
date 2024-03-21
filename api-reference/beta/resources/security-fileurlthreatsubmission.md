@@ -3,7 +3,7 @@ title: "fileUrlThreatSubmission resource type"
 description: "Represents file threat submission object created when a submission is made using a file URL."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,20 +13,20 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a file threat submission object created when a submission is made using a file URL. This API is reserved and is not currently supported.
+Represents a file threat submission object created when a submission is made using a file URL. This API is reserved and isn't currently supported.
 
 Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.md).
 
 ## Properties
 | Property | Type   | Description                   |
 |:---------|:-------|:------------------------------|
-| fileUrl  | String | It specifies the URL of the file which needs to be submitted. |
+| fileUrl  | String | It specifies the URL of the file that needs to be submitted. |
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

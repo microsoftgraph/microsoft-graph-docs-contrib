@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Groups.EvaluateDynamicMembership.EvaluateDynamicMembershipPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Groups.EvaluateDynamicMembership;
+
+var requestBody = new EvaluateDynamicMembershipPostRequestBody
 {
 	MemberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33",
 	MembershipRule = "(user.displayName -startsWith \"EndTestUser\")",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Groups.EvaluateDynamicMembership.PostAsync(requestBody);
 
 

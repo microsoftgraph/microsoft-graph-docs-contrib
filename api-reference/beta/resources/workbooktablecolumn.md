@@ -3,7 +3,7 @@ title: "workbookTableColumn resource type"
 description: "Represents a column in a table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,7 @@ Represents a column in a table.
 |id|string|Returns a unique key that identifies the column within the table. Read-only.|
 |index|int|Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.|
 |name|string|Returns the name of the table column.|
-|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contains an error returns the error string.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -46,7 +46,7 @@ Represents a column in a table.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

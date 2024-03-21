@@ -1,22 +1,22 @@
 ---
-title: "Azure AD synchronization API overview"
-description: "Automate the provisioning of identities from HR systems, Active Directory, and Azure Active Directory to cloud applications."
+title: "Microsoft Entra synchronization API overview"
+description: "Automate the provisioning of identities from HR systems, Active Directory, and Microsoft Entra ID to cloud applications."
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
-# Azure AD synchronization API overview
+# Microsoft Entra synchronization API overview
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of identities from any of the following:
-- Active Directory to Azure AD
-- Workday to Azure AD
-- Azure AD to cloud applications such as Dropbox, Salesforce, ServiceNow, and more 
+Microsoft Entra identity synchronization (also called "provisioning") allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of identities from any of the following:
+- Active Directory to Microsoft Entra ID
+- Workday to Microsoft Entra ID
+- Microsoft Entra ID to cloud applications such as Dropbox, Salesforce, ServiceNow, and more 
 
 You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:
 
@@ -24,10 +24,10 @@ You can use the synchronization APIs in Microsoft Graph to manage identity synch
 - Make changes to the synchronization schema for jobs
 - Verify the current synchronization status
 
-For more information about synchronization in Azure AD, see:
+For more information about synchronization in Microsoft Entra ID, see:
 
-* [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](/azure/active-directory/active-directory-saas-app-provisioning)
-* [Managing user account provisioning for enterprise apps in the Azure portal](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [Automate user provisioning and deprovisioning to SaaS applications with Microsoft Entra ID](/azure/active-directory/active-directory-saas-app-provisioning)
+* [Managing user account provisioning for enterprise apps in the Microsoft Entra admin center](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
 You can also try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) in a sample tenant or your own tenant.
 
@@ -61,7 +61,22 @@ Working with synchronization API primarily involves accessing the [synchronizati
 
 ### Authorization
 
-The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](/graph/auth/). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](/graph/permissions-reference#directory-permissions).
+To work with the Microsoft Entra synchronization APIs, Microsoft Graph supports the following granular permissions:
+
+- Synchronization.Read.All
+- Synchronization.ReadWrite.All
+- Application.ReadWrite.OwnedBy
+- Application.Read.All
+- Application.ReadWrite.All
+
+And the following [Microsoft Entra directory roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+
+- Application Administrator
+- Cloud Application Administrator
+- Hybrid Identity Administrator
+- Global Administrator
+
+For more information about the privileges you need to call each API, visit the respective API reference documentation.
 
 ### Find the service principal object by display name
 
@@ -201,7 +216,7 @@ HTTP/1.1 200 OK
     "synchronizationRules": []
 }
 ```
-## See also
+## Related content
 
 * [Configure synchronization with directory extension attributes](/graph/synchronization-configure-with-directory-extension-attributes)
 * [Configure synchronization with custom target attributes](/graph/synchronization-configure-with-custom-target-attributes)

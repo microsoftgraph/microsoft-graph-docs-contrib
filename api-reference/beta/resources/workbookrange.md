@@ -3,7 +3,7 @@ title: "workbookRange resource type"
 description: "Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -25,18 +25,18 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |[Boundingrect](../api/range-boundingrect.md)|[workbookRange](workbookrange.md)|Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".|
 |[Cell](../api/range-cell.md)|[workbookRange](workbookrange.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.|
 |[Column](../api/range-column.md)|[workbookRange](workbookrange.md)|Gets a column contained in the range.|
-|[Columnsafter](../api/workbookrange-columnsafter.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of columns to the right of the given range.|
-|[Columnsbefore](../api/workbookrange-columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of columns to the left of the given range.|
+|[Columnsafter](../api/workbookrange-columnsafter.md)|[workbookRangeView](workbookrangeview.md)|Gets some columns to the right of the given range.|
+|[Columnsbefore](../api/workbookrange-columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|Gets some columns to the left of the given range.|
 |[Entirecolumn](../api/range-entirecolumn.md)|[workbookRange](workbookrange.md)|Gets an object that represents the entire column of the range.|
 |[Entirerow](../api/range-entirerow.md)|[workbookRange](workbookrange.md)|Gets an object that represents the entire row of the range.|
 |[Intersection](../api/range-intersection.md)|[workbookRange](workbookrange.md)|Gets the range object that represents the rectangular intersection of the given ranges.|
 |[Lastcell](../api/range-lastcell.md)|[Range](workbookrange.md)|Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".|
 |[Lastcolumn](../api/range-lastcolumn.md)|[workbookRange](workbookrange.md)|Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".|
 |[Lastrow](../api/range-lastrow.md)|[Range](workbookrange.md)|Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".|
-|[Offsetrange](../api/range-offsetrange.md)|[workbookRange](workbookrange.md)|Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.|
+|[Offsetrange](../api/range-offsetrange.md)|[workbookRange](workbookrange.md)|Gets an object that represents a range that's offset from the specified range. The dimension of the returned range matches this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception is thrown.|
 |[Row](../api/range-row.md)|[Range](workbookrange.md)|Gets a row contained in the range.|
-|[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of rows above a given range.|
-|[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of rows below a given range.|
+|[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Gets some rows above a given range.|
+|[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Gets some rows below a given range.|
 |[Usedrange](../api/range-usedrange.md)|[workbookRange](workbookrange.md)|Returns the used range of the given range object.|
 |[Clear](../api/range-clear.md)|None|Clear range values, format, fill, border, etc.|
 |[Delete](../api/range-delete.md)|None|Deletes the cells associated with the range.|
@@ -49,7 +49,7 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|string|Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4). Read-only.|
+|address|string|Represents the range reference in A1-style. Address value contains the Sheet reference (for example, Sheet1!A1:B4). Read-only.|
 |addressLocal|string|Represents range reference for the specified range in the language of the user. Read-only.|
 |cellCount|int|Number of cells in the range. Read-only.|
 |columnCount|int|Represents the total number of columns in the range. Read-only.|
@@ -63,9 +63,9 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |rowCount|int|Returns the total number of rows in the range. Read-only.|
 |rowHidden|boolean|Represents if all rows of the current range are hidden.|
 |rowIndex|int|Returns the row number of the first cell in the range. Zero-indexed. Read-only.|
-|text|Json|Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.|
+|text|Json|Text values of the specified range. The Text value won't depend on the cell width. The # sign substitution that happens in Excel UI won't affect the text value returned by the API. Read-only.|
 |valueTypes|string|Represents the type of data of each cell. Possible values are: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean`, `Error`. Read-only.|
-|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contains an error returns the error string.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -76,7 +76,7 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

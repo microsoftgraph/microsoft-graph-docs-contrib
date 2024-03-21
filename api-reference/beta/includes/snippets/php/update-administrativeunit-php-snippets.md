@@ -6,21 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AdministrativeUnit();
-$additionalData = [
-'membershipType' => 'Dynamic', 
-'membershipRule' => '(user.country -eq \"United States\")', 
-'membershipRuleProcessingState' => 'On', 
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setDisplayName('Executive Division');
+$requestBody->setMembershipType('Dynamic');
+$requestBody->setMembershipRule('(user.country -eq \"United States\")');
+$requestBody->setMembershipRuleProcessingState('On');
 
-
-
-
-$requestResult = $graphServiceClient->administrativeUnitsById('administrativeUnit-id')->patch($requestBody);
-
+$result = $graphServiceClient->administrativeUnits()->byAdministrativeUnitId('administrativeUnit-id')->patch($requestBody)->wait();
 
 ```

@@ -3,7 +3,7 @@ title: "chat resource type"
 description: "A chat is a collection of chatMessages between one or more participants."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -26,6 +26,8 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Create chat](../api/chat-post.md) | [chat](chat.md) | Create a new chat.| 
 |[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.| 
 |[Update chat](../api/chat-patch.md) | [chat](chat.md) | Update properties of the chat.|
+|[Delete chat](../api/chat-delete.md)|None|Delete a chat.|
+|[removeAllAccessForUser](../api/chat-removeallaccessforuser.md)|None|Remove access to a chat for a user.|
 |[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.| 
 |[Add chat member](../api/chat-post-members.md) | Location header | Add a user to the chat.| 
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.| 
@@ -39,6 +41,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. | 
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. | 
 |[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in. |
+|[Get all retained chat messages](../api/chat-getallretainedmessages.md)|[chatMessage](../resources/chatmessage.md) collection| Get all retained messages from all [chats](../resources/chatmessage.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats. |
 | **Apps** |||
 |[List apps in chat](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a chat (and associated meeting).|
 |[Get app in chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get a specific app installed in a chat (and associated meeting).|
@@ -127,7 +130,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [channel](channel.md)
 - [chatMessage](chatmessage.md)

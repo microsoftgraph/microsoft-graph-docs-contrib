@@ -3,7 +3,7 @@ title: "taskViewpoint resource type"
 description: Contains personal properties of a task"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains personal properties of a [task](task.md). When sharing or assigning a **task**, these properties will not be seen by other users.
+Contains personal properties of a [task](task.md). When sharing or assigning a **task**, these properties won't be seen by other users.
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ Contains personal properties of a [task](task.md). When sharing or assigning a *
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.taskViewpoint"

@@ -1,9 +1,9 @@
 ---
 title: "Use the industry data API as an extract, transform, and load (ETL) engine (preview)"
-description: "The industry data API is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows."
+description: "The industry data API is an Education industry focused ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: conceptual
 ---
 
@@ -11,15 +11,13 @@ doc_type: conceptual
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The industry data API is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. The API provides resources that you can use to get statistics after the data is processed, and assist with monitoring and troubleshooting.
-
-Currently, the API is highly tailored to the education industry.
+The industry data API is an Education industry focused ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows. The API provides resources that you can use to get statistics after the data is processed, and assist with monitoring and troubleshooting.
 
 The industry data API is defined in the OData subnamespace `microsoft.graph.industryData`.
 
 ## Industry data API and education
 
-The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups <!-- with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into an organization's Azure Data Lake. After normalizing the data in Azure Data Lake, the API utilizes the data in multiple outbound flows, synchronizing data with [Insights for Education Leaders](https://support.microsoft.com/topic/leader-s-guide-to-education-insights-premium-8738d1b1-4e1c-49bd-9e8d-b5292474c347) and [Education Data Lake Export](/schooldatasync/enable-education-data-lake-export) for custom analytics scenarios.
+The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups <!-- with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into an organization's Azure Data Lake. After normalizing the data in Azure Data Lake <!-- the API utilizes the data in multiple outbound flows, --> SDS can synchronize the data with [Insights for Education Leaders](/schooldatasync/enable-sync-with-insights), for use with the Insights app in Teams for Education, and [Education Data Lake Export](/schooldatasync/enable-education-data-lake-export), for custom analytics scenarios.
 
 ![Illustration of the industry data ETL process](/graph/images/industrydata-overview.png)
 
@@ -29,7 +27,7 @@ When the run starts, it connects to the **sourceSystemDefinition** and **dataCon
 
 Next, the system transforms the data for import in preparation for advanced validation. As part of the data transformation, the data is associated based on the configured **yearTimePeriodDefinition**.
 
-The system stores the latest copy of the Azure Active Directory (Azure AD) of the tenant into the Azure Data Lake. The copy of the Azure AD assists with user matching between the **sourceSystemDefinition** and the Azure AD user object. At this stage, the match link is written only to the Azure Data Lake.
+The system stores the latest copy of the Microsoft Entra ID of the tenant into the Azure Data Lake. The copy of the Microsoft Entra assists with user matching between the **sourceSystemDefinition** and the Microsoft Entra user object. At this stage, the match link is written only to the Azure Data Lake.
 
 Next, the inbound flow performs advanced validation to determine data health. The validation focuses on identifying errors and warnings to ensure that good data comes in and bad data stays out. Errors indicate that a record didn't pass validation and was removed from further processing. Warnings indicate that the value on an optional field of a record didn't pass. The value is removed from the record, but the record is included for further processing.
 
@@ -69,8 +67,8 @@ You can integrate industry data APIs with third-party apps. For details about ho
 | Use case                                                   | REST resource                                                                | See also                                                                                         |
 | :---------------------------------------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
 | Create an activity to import a delimited data set          | [inboundFileFlow](../resources/industrydata-inboundfileflow.md)               | [inboundFileFlow methods](../resources/industrydata-inboundfileflow.md#methods)               |
-| Create a connector to retrieve data from an Azure Data Lake | [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) | [azureDataLakeConnector methods](../resources/industrydata-azuredatalakeconnector.md#methods) |
 | Define a source of inbound data                             | [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md) | [sourceSystemDefinition methods](../resources/industrydata-sourcesystemdefinition.md#methods) |
+| Create a connector to post data to an Azure Data Lake (if CSV)| [azureDataLakeConnector](../resources/industrydata-azuredatalakeconnector.md) | [azureDataLakeConnector methods](../resources/industrydata-azuredatalakeconnector.md#methods) |
 
 <!--
 ## Concepts
@@ -167,10 +165,6 @@ Uploaded data files must be validated before an inbound flow can process the dat
 
 The **validate** action creates a long-running [fileValidateOperation](industrydata-filevalidateoperation.md). The URI for the **fileValidateOperation** is provided in the `Location` header of the response. You can use this URI to track the status of the long-running operation, and any errors or warnings created during validation.
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 Use the Microsoft Graph industry data APIs as an extract, transform, and load (ETL) engine. To learn more:
@@ -178,6 +172,6 @@ Use the Microsoft Graph industry data APIs as an extract, transform, and load (E
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-## See also
+## Related content
 
 [Overview of the industry data API in Microsoft Graph](/graph/industrydata-concept-overview)

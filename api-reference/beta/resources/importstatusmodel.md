@@ -1,9 +1,9 @@
 ---
 title: "importStatusModel resource type"
-description: "Here is a JSON representation of the importStatusModel resource."
+description: "Here's a JSON representation of the importStatusModel resource."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: non-product-specific
+ms.subservice: non-product-specific
 author: "MSGraphDocsVteam"
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

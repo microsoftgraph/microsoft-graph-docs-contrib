@@ -1,69 +1,136 @@
 ---
-title: "Get started with the Microsoft Graph authentication methods API"
-description: "Learn how to manage your users' authentication methods and get users registered to do multi-factor authentication (MFA) and self-service password reset (SSPR)."
-author: "FaithOmbongi"
+title: Manage users' authentication methods using Microsoft Graph"
+description: "Learn how to manage your users' authentication methods and get users registered to do multifactor authentication (MFA) and self-service password reset (SSPR)."
+author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: michael.mclaughlin
+ms.reviewer: jpeterre
 ms.localizationpriority: high
-ms.prod: "identity-and-sign-in"
-ms.date: 10/18/2022
+ms.subservice: "entra-sign-in"
+ms.date: 01/18/2024
+ms.topic: concept-article
+#customer intent: As a developer, I want to understand what user authentication options are available for Microsoft Entra ID through Microsoft Graph, and how I can integrate them into my applications.
 ---
 
-# Get started with the Microsoft Graph authentication methods API
+# Manage users' authentication methods using Microsoft Graph
 
-[Authentication methods](/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (Azure AD). Authentication methods in Azure AD include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph today, among many others such as FIDO2 security keys and the Microsoft Authenticator app. Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
+[Authentication methods](/entra/identity/authentication/concept-authentication-methods) are the ways that users authenticate in Microsoft Entra ID. The following authentication methods are available in Microsoft Entra ID today and are manageable through Microsoft Graph:
 
-You can use the authentication method APIs to manage a user's authentication methods. For example, you can:
+- Windows Hello for Business
+- Microsoft Authenticator
+- FIDO2 security key
+- Certificate-based authentication
+- OATH hardware tokens (preview)
+- OATH software tokens
+- Temporary Access Pass (TAP)
+- SMS
+- Voice
+- Password
 
-* Add a phone number for a user, who can then use that number for SMS and voice call authentication if they're enabled to use it by policy
-* Update or delete the phone number assigned to a user
-* Enable or disable the number for SMS sign-in
-* Reset a user's password
+Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
 
-The APIs are a key tool to manage your users' authentication methods.
+## What can you do with the authentication methods APIs?
 
-In this tutorial, you'll learn how to:
+You can use the authentication method APIs to integrate to your apps for managing a user's authentication methods. For example, you can:
+
+- Add a phone number for a user, who can then use that number for SMS and voice call authentication if they're enabled to use it by policy
+- Update or delete the phone number assigned to a user
+- Enable or disable the number for SMS sign-in
+- Reset a user's password
+
+> [!IMPORTANT]
+> We don't recommend using the authentication methods APIs for scenarios where you need to iterate over your entire user population for auditing or security check purposes. For these types of scenarios, we recommend using the [authentication method registration and usage reporting APIs](/graph/api/resources/authenticationmethods-usage-insights-overview) (some APIs are available on the `beta` endpoint only).
+
+## Use policies to manage authentication methods in your tenant
+
+You can choose what authentication methods are allowed for users in your tenant by configuring **authentication method policies**. For each policy, you configure whether the authentication method is enabled, its settings, and can explicitly define the groups of users that are allowed or not allowed to use the method.
+
+## Sample scenario
+
+In this article, you learn how to:
 
 > [!div class="checklist"]
-> * Authenticate to Azure AD with the right roles and permissions
-> * Check the user's authentication methods
-> * Add new phone numbers for the user
-> * Remove a phone number from the user
-> * Reset the user's password
+> - Authenticate to Microsoft Entra ID with the right roles and permissions
+> - Check the user's authentication methods
+> - Add new phone numbers for the user
+> - Remove a phone number from the user
+> - Reset the user's password
 
-## Step 1: Authenticate to Azure AD with the right roles and permissions
+## Step 1: Authenticate to Microsoft Entra ID with the right roles and permissions
 
-Using your favorite [tool for interacting with Microsoft Graph](use-the-api.md#tools-for-interacting-with-microsoft-graph), sign in using an account with one of these roles:
+Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the *Privileged Authentication Administrator* or *Authentication Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). You can use a test tenant with sample data to try out the APIs.
 
-* Global administrator
-* Privileged authentication administrator
-* Authentication administrator
+Next, grant the app the *UserAuthenticationMethod.ReadWrite.All* permission. You need this permission to perform both the read and write operations in this scenario.
 
-Next, modify your permissions. We'll use [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions) for this tutorial, so make sure it's enabled in Graph Explorer or your app.
-
-Once the scope is assigned and consented, you can start using the API. The examples here use a standard user named Avery Howard. You should use a preexisting test account or create a new one following [these instructions](/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user). These APIs are live so don't test them on real users.
+You can now start using the APIs. In this scenario, you use the APIs to manage Cameron White's authentication methods.
 
 ## Step 2: Check the user's authentication methods
 
-Make a call to see the user's authentication methods. Take the URL to see a user's profile and add `/authentication/methods`:
-
 ### Request
 
-```http
-GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/methods
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "authenticationmethods-get-started-list-methods"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/methods
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/authenticationmethods-get-started-list-methods-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/authenticationmethods-get-started-list-methods-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/authenticationmethods-get-started-list-methods-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/authenticationmethods-get-started-list-methods-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/authenticationmethods-get-started-list-methods-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/authenticationmethods-get-started-list-methods-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/authenticationmethods-get-started-list-methods-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/authenticationmethods-get-started-list-methods-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-```json
+From this response, Cameron has only the password authentication method enabled. `28c10230-6103-485e-b985-444c60001490` is the globally unique ID of the password authentication method across Microsoft Entra ID.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationMethod"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('avery.howard%40wingtiptoysonline.com')/authentication/methods",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40contoso.com')/authentication/methods",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET users('<key>')/authentication/methods?$select=id",
     "value": [
         {
             "@odata.type": "#microsoft.graph.passwordAuthenticationMethod",
             "id": "28c10230-6103-485e-b985-444c60001490",
             "password": null,
-            "creationDateTime": null
+            "createdDateTime": "2023-09-18T10:38:07Z"
         }
     ]
 }
@@ -71,193 +138,391 @@ GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/au
 
 ## Step 3: Add new phone numbers for the user
 
-From the previous step, a new user (Avery) only has a password registered. To assign a new phone number for Avery to use, make a `POST` request with the phone type and number in the body. To tell the system that a phone number is being added, you'll also need to change the end of the URL from `methods` to `phoneMethods`.
+In this step, you add a new *mobile* phone number for Cameron to use.
 
 ### Request
-
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "authenticationmethods-get-started-add-phonemethod"
+}-->
 ```http
-POST https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/phoneMethods
+POST https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/phoneMethods
 Content-Type: application/json
-```
 
-```json
 {
-    "phoneType": "mobile",
-    "phoneNumber": "+1 2065550123"
+    "phoneNumber": "+1 2065555555",
+    "phoneType": "mobile"
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/authenticationmethods-get-started-add-phonemethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/authenticationmethods-get-started-add-phonemethod-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/authenticationmethods-get-started-add-phonemethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/authenticationmethods-get-started-add-phonemethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/authenticationmethods-get-started-add-phonemethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/authenticationmethods-get-started-add-phonemethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/authenticationmethods-get-started-add-phonemethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/authenticationmethods-get-started-add-phonemethod-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
-```json
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.phoneAuthenticationMethod"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('avery.howard%40wingtiptoysonline.com')/authentication/phoneMethods/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40contoso.com')/authentication/phoneMethods/$entity",
     "id": "3179e48a-750b-4051-897c-87b9720928f7",
-    "phoneNumber": "+1 2065550123",
+    "phoneNumber": "+1 2065555555",
     "phoneType": "mobile",
-    "smsSignInState": "ready"
+    "smsSignInState": "notAllowedByPolicy"
 }
 ```
 
-To add Avery's office number, you'll `POST` again to the same URL but update the phone type and number:
+Run the same request, adding an *office* phoneType.
+
+## Step 4: Verify the user's authentication methods
 
 ### Request
 
-```http
-POST https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/phoneMethods
-Content-Type: application/json
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "authenticationmethods-get-started-list-methods-2"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/methods
 ```
 
-```json
-{
-    "phoneType": "office",
-    "phoneNumber": "+1 4255550199"
-}
-```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/authenticationmethods-get-started-list-methods-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/authenticationmethods-get-started-list-methods-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/authenticationmethods-get-started-list-methods-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/authenticationmethods-get-started-list-methods-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/authenticationmethods-get-started-list-methods-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/authenticationmethods-get-started-list-methods-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/authenticationmethods-get-started-list-methods-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/authenticationmethods-get-started-list-methods-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-```json
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('avery.howard%40wingtiptoysonline.com')/authentication/phoneMethods/$entity",
-    "id": "e37fc753-ff3b-4958-9484-eaa9425c82bc",
-    "phoneNumber": "+1 4255550199",
-    "phoneType": "office",
-    "smsSignInState": "notSupported"
-}
-```
-
-Do one more `GET` to the phone methods URL to see all of Avery's phone numbers:
-
-### Request
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.phoneAuthenticationMethod)"
+} -->
 ```http
-GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/phoneMethods
-```
+HTTP/1.1 200 OK
+Content-type: application/json
 
-### Response
-
-```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('avery.howard%40wingtiptoysonline.com')/authentication/phoneMethods",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40contoso.com')/authentication/methods",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET users('<key>')/authentication/methods?$select=id",
     "value": [
         {
+            "@odata.type": "#microsoft.graph.phoneAuthenticationMethod",
             "id": "e37fc753-ff3b-4958-9484-eaa9425c82bc",
             "phoneNumber": "+1 4255550199",
             "phoneType": "office",
             "smsSignInState": "notSupported"
         },
         {
-            "id": "3179e48a-750b-4051-897c-87b9720928f7",
-            "phoneNumber": "+1 2065550123",
-            "phoneType": "mobile",
-            "smsSignInState": "ready"
-        }
-    ]
-}
-```
-
-Confirm that you can see both numbers as expected.
-
-## Step 4: Remove a phone number from the user
-
-In this scenario, Avery is now working from home you need to remove their office number from their account. You need to call `DELETE` on the office phone URL, which you can create by appending the office phone's ID to the phone methods URL. Look at Avery's list of phones above: the office phone ID starts with "e37f".
-
-### Request
-
-```http
-DELETE https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/phoneMethods/e37fc753-ff3b-4958-9484-eaa9425c82bc
-```
-
-There's no data in the response because there's no more office phone as intended. You can confirm it's gone by looking at all of Avery's methods, which is the same `GET` that was made previously:
-
-### Request
-
-```http
-GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/methods
-```
-
-### Response
-
-```json
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('avery.howard%40wingtiptoysonline.com')/authentication/methods",
-    "value": [
-        {
             "@odata.type": "#microsoft.graph.phoneAuthenticationMethod",
             "id": "3179e48a-750b-4051-897c-87b9720928f7",
-            "phoneNumber": "+1 2065550123",
+            "phoneNumber": "+1 2065555555",
             "phoneType": "mobile",
-            "smsSignInState": "ready"
+            "smsSignInState": "notAllowedByPolicy"
         },
         {
             "@odata.type": "#microsoft.graph.passwordAuthenticationMethod",
             "id": "28c10230-6103-485e-b985-444c60001490",
             "password": null,
-            "creationDateTime": null
+            "createdDateTime": "2023-09-18T10:38:07Z"
         }
     ]
 }
 ```
 
-As expected, the user is now back to only having one mobile phone and a password.
+Confirm that you can see both numbers as expected. The IDs of the different phone number types are globally the same across Microsoft Entra ID as follows:
 
-## Step 5: Reset the user's password
+- `b6332ec1-7057-4abe-9331-3d72feddfe41` for *alternateMobile* phone type
+- `e37fc753-ff3b-4958-9484-eaa9425c82bc` for *office* phone type
+- `3179e48a-750b-4051-897c-87b9720928f7` for *mobile* phone type
 
-In this scenario, Avery has forgotten their password and you need to reset it for them. To reset, you'll make a `POST` to their password's URL (see the ID starting with "28c1" above in Avery's list of authentication methods), specifying the "resetPassword" action. Provide the new password in the request body.
+## Step 5: Remove a phone number from the user
 
-### Request
+Cameron is now working from home so you need to remove the *office* number from his account.
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "authenticationmethods-get-started-remove-phonemethod"
+}-->
 ```http
-POST https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
-Content-Type: application/json
+DELETE https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/phoneMethods/e37fc753-ff3b-4958-9484-eaa9425c82bc
 ```
 
-```json
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/authenticationmethods-get-started-remove-phonemethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/authenticationmethods-get-started-remove-phonemethod-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/authenticationmethods-get-started-remove-phonemethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/authenticationmethods-get-started-remove-phonemethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/authenticationmethods-get-started-remove-phonemethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/authenticationmethods-get-started-remove-phonemethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/authenticationmethods-get-started-remove-phonemethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/authenticationmethods-get-started-remove-phonemethod-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The request returns a `204 No Content` response code. To verify that the *office* phone method was removed from Cameron's account, rerun the request in Step 4. Cameron should now have only the mobile phone and password authentication methods.
+
+## Step 6: Reset the user's password
+
+Cameron has forgotten their password and you need to reset it for them. You can reset a user's password and specify a temporary password, or you can let Microsoft Entra ID generate a temporary password.
+
+In both methods, the response includes a *Location* header with a URL you can use to check the status of the operation via a GET operation. The reset operation doesn't complete immediately as Microsoft Entra ID needs to sync the password, including down to Active Directory in the tenant's on-premises infrastructure (for on-premises users). The URL is valid for 24 hours.
+
+### Option 1: Reset the user's password and supply a temporary new password
+
+#### Request
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "authenticationmethods-get-started-reset-password-1"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
+Content-Type: application/json
+
 {
     "newPassword": "29sdjfw#fajsdA_a_3an3223"
 }
 ```
 
-### Response
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-``` http
-Location: https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/authentication/operations/74bfa1a6-c0e0-4957-8c37-f91048f4959e?aadgdc=BY01P&aadgsu=ssprprod-a
-```
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Because this is syncing the password down to Active Directory in the tenant's on-prem infrastructure, it might take a few minutes, so you have an address where you can check to see if it's complete. This address is in the location header of the response, and to see the status do a `GET` on that URL.
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Request
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/authenticationmethods-get-started-reset-password-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
-GET https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/authentication/operations/74bfa1a6-c0e0-4957-8c37-f91048f4959e?aadgdc=BY01P&aadgsu=ssprprod-a
+HTTP/1.1 202 Accepted
+
+Location: https://graph.microsoft.com/v1.0/users/a87cc624-b550-4559-b934-3bc0325a4808/authentication/operations/cc8e9b0e-7495-47f2-ad4a-3daa966543c6?aadgdc=DUB02P&aadgsu=ssprprod-a
 ```
 
-### Response
+### Option 2: Reset the user's password and let Microsoft Entra ID generate a temporary new password
 
-```json
+In this request, you don't provide a new password and instead let Microsoft Entra ID generate a password and return it in the response.
+
+<!-- {
+  "blockType": "request",
+  "name": "authenticationmethods-get-started-reset-password-1"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.phoneAuthenticationMethod)"
+} -->
+```http
+HTTP/1.1 202 Accepted
+
+Location: https://graph.microsoft.com/v1.0/users/a87cc624-b550-4559-b934-3bc0325a4808/authentication/operations/ba0c9a11-5163-4353-89ba-81501617ede0?aadgdc=AM4P&aadgsu=ssprprod-a
+Content-Type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ed178e23-7447-4892-baf8-fc46f8af26ce')/authentication/operations/$entity",
-    "id": "74bfa1a6-c0e0-4957-8c37-f91048f4959e",
-    "createdDateTime": "2020-05-14T00:23:40Z",
-    "lastActionDateTime": "2020-05-14T00:23:41Z",
-    "status": "succeeded",
-    "statusDetail": "ResetSuccess",
-    "resourceLocation": "https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/authentication/methods/28c10230-6103-485e-b985-444c60001490"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordResetResponse",
+    "newPassword": "Hopu0277"
 }
 ```
 
-And success! You've walked through seeing a user's profile, their auth methods, adding and removing phone numbers, and resetting their password. Now you're ready to go manage your own users' methods.
+### Check the status of the password reset operation
+
+#### Request
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "authenticationmethods-get-started-longrunningoperation-status"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/a87cc624-b550-4559-b934-3bc0325a4808/authentication/operations/ba0c9a11-5163-4353-89ba-81501617ede0?aadgdc=AM4P&aadgsu=ssprprod-a
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/authenticationmethods-get-started-longrunningoperation-status-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/authenticationmethods-get-started-longrunningoperation-status-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/authenticationmethods-get-started-longrunningoperation-status-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/authenticationmethods-get-started-longrunningoperation-status-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/authenticationmethods-get-started-longrunningoperation-status-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/authenticationmethods-get-started-longrunningoperation-status-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/authenticationmethods-get-started-longrunningoperation-status-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/authenticationmethods-get-started-longrunningoperation-status-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.longRunningOperation"
+} -->
+```http
+HTTP/1.1 202 Accepted
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('a87cc624-b550-4559-b934-3bc0325a4808')/authentication/operations/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET users('<guid>')/authentication/operations('<guid>')?$select=createdDateTime,lastActionDateTime",
+    "id": "ba0c9a11-5163-4353-89ba-81501617ede0",
+    "createdDateTime": "2024-01-18T16:37:10Z",
+    "lastActionDateTime": "2024-01-18T16:37:10Z",
+    "status": "succeeded",
+    "statusDetail": "ResetSuccess",
+    "resourceLocation": "https://graph.microsoft.com/v1.0/users/a87cc624-b550-4559-b934-3bc0325a4808/authentication/methods/28c10230-6103-485e-b985-444c60001490"
+}
+```
 
 ## API reference
 
 Looking for the API reference for authentication methods?
 
-* See [Azure AD authentication methods API overview](/graph/api/resources/authenticationmethods-overview)
-
-## Next steps
-
-* Use Azure AD to [authenticate](./auth/index.yml) to Microsoft Graph.
-* Integrate [Azure AD sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.
-* See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
-* Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.
+- See [Microsoft Entra authentication methods API overview](/graph/api/resources/authenticationmethods-overview)
+- See the [Microsoft Entra authentication methods policies API reference](/graph/api/resources/authenticationmethods-overview)

@@ -1,9 +1,9 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/11/2017
 title: ListInfo
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "The listInfo complex type provides additional information about a list."
 doc_type: resourcePageType
 ---
@@ -18,7 +18,7 @@ The **listInfo** complex type provides additional information about a [list][].
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -40,13 +40,13 @@ Here is a JSON representation of the resource.
 | Property name           | Type    | Description
 |:------------------------|:--------|:------------------------------------------------
 | **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.
-| **hidden**              | Boolean | If `true`, indicates that the list is not normally visible in the SharePoint user experience.
+| **hidden**              | Boolean | If `true`, indicates that the list isn't normally visible in the SharePoint user experience.
 | **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.
 
 ### Remarks
 
-While most lists created by users will have one of the values listed above, other values are possible as well.
-Your app should be prepared to handle any values that are not listed here.
+While most lists created by users have one of the values listed above, other values are possible as well.
+Your app should be prepared to handle any values that aren't listed here.
 For developers familiar with SharePoint's CSOM APIs, the `template` value corresponds to the `SPListTemplateType` enumeration.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

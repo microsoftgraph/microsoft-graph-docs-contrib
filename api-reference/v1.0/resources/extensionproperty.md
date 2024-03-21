@@ -2,7 +2,7 @@
 title: "extensionProperty resource type (directory extensions)"
 description: "Represents a directory extension."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: "resourcePageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a **directory extension** that can be used to add a custom property to directory objects without requiring an external data store. For example, if an organization has a line of business (LOB) application that requires a Skype ID for each user in the directory, Microsoft Graph can be used to register a new property named **skypeId** on the directory’s User object, and then write a value to the new property for a specific user. Directory extensions can also be available in multi-tenant apps that have been consented to in the tenant.
+Represents a **directory extension** that can be used to add a custom property to directory objects without requiring an external data store. For example, if an organization has a line of business (LOB) application that requires a Skype ID for each user in the directory, Microsoft Graph can be used to register a new property named **skypeId** on the directory's User object, and then write a value to the new property for a specific user. Directory extensions can also be available in multi-tenant apps that have been consented to in the tenant.
 
 Directory extensions can be added to following directory objects:
 + [user](../resources/user.md)
@@ -21,7 +21,7 @@ Directory extensions can be added to following directory objects:
 + [device](../resources/device.md)
 + [organization](../resources/organization.md)
 
-Only 100 extension values, across *all* types and *all* applications, can be written to any single Azure AD resource.
+Only 100 extension values, across *all* types and *all* applications, can be written to any single Microsoft Entra resource.
 
 Use this resource and associated methods to manage the directory extension definitions. To manage the directory extension data on the extended resource instance, use the same REST request that you use to manage the resource instance.
 
@@ -30,7 +30,7 @@ For more information about Microsoft Graph extensibility, see [Add custom proper
 Inherits from [directoryObject](directoryobject.md).
 
 > [!NOTE]
-> Extensions created through Azure AD Graph (deprecated) and custom data synchronized from on-premises Active Directory using Azure AD Connect Sync are represented as directory extensions in Microsoft Graph.
+> Extensions created through Azure AD Graph (currently in its retirement cycle) and custom data synchronized from on-premises Active Directory using Microsoft Entra Connect Sync are represented as directory extensions in Microsoft Graph.
 
 ## Methods
 
@@ -51,10 +51,11 @@ Inherits from [directoryObject](directoryobject.md).
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |appDisplayName|String| Display name of the application object on which this extension property is defined. Read-only. |
-|dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
+|dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>Not nullable. For multivalued directory extensions, these limits apply per value in the collection. |
 |deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](directoryobject.md).|
-|isSyncedFromOnPremises|Boolean| Indicates if this extension property was synced from on-premises active directory using Azure AD Connect. Read-only. |
+|isSyncedFromOnPremises|Boolean| Indicates if this extension property was synced from on-premises active directory using Microsoft Entra Connect. Read-only. |
 |name|String| Name of the extension property. Not nullable. Supports `$filter` (`eq`).|
+|isMultiValued|Boolean| Defines the directory extension as a multi-valued property. When `true`, the directory extension property can store a collection of objects of the **dataType**; for example, a collection of string types such as `"extension_b7b1c57b532f40b8b5ed4b7a7ba67401_jobGroupTracker": ["String 1", "String 2"]`. The default value is `false`. Supports `$filter` (`eq`).|
 |targetObjects|String collection| Following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`AdministrativeUnit`</li><li>`Application`</li><li>`Device`</li><li>`Organization`</li></ul>|
 
 ## Relationships
@@ -81,6 +82,7 @@ The following is a JSON representation of the resource.
   "deletedDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isSyncedFromOnPremises": "Boolean",
+  "isMultiValued": "Boolean",
   "name": "String",
   "targetObjects": [
     "String"
@@ -88,7 +90,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Add custom properties to resources using extensions](/graph/extensibility-overview)
 

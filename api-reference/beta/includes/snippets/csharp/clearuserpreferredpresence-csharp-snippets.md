@@ -4,12 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Users.Item.Presence.ClearUserPreferredPresence.ClearUserPreferredPresencePostRequestBody
-{
-};
-await graphClient.Users["{user-id}"].Presence.ClearUserPreferredPresence.PostAsync(requestBody);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Users["{user-id}"].Presence.ClearUserPreferredPresence.PostAsync();
 
 
 ```

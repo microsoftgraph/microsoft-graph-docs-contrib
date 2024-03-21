@@ -4,11 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphauditlogs "github.com/microsoftgraph/msgraph-beta-sdk-go/auditlogs"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-result, err := graphClient.AuditLogs().SignIns().Get(context.Background(), nil)
+
+requestFilter := "createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z"
+
+requestParameters := &graphauditlogs.AuditLogsSignInsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
+}
+configuration := &graphauditlogs.AuditLogsSignInsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
+
+signIns, err := graphClient.AuditLogs().SignIns().Get(context.Background(), configuration)
 
 
 ```

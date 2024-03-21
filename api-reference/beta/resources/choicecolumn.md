@@ -1,11 +1,11 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The choiceColumn on a columnDefinition resource indicates that the column's values can be selected from a list of choices.
 ms.date: 09/11/2017
 title: ChoiceColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 
 # ChoiceColumn resource type

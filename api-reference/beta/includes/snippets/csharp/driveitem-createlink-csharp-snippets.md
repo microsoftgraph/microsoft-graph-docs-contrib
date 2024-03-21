@@ -4,24 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var type = "view";
+// Dependencies
+using Microsoft.Graph.Beta.Drives.Item.Items.Item.CreateLink;
+using Microsoft.Graph.Beta.Models;
 
-var scope = "anonymous";
-
-var password = "String";
-
-var recipients = new List<DriveRecipient>()
+var requestBody = new CreateLinkPostRequestBody
 {
-	new DriveRecipient
+	Type = "view",
+	Scope = "anonymous",
+	Password = "String",
+	Recipients = new List<DriveRecipient>
 	{
-	}
+		new DriveRecipient
+		{
+			OdataType = "microsoft.graph.driveRecipient",
+		},
+	},
+	SendNotification = true,
+	RetainInheritedPermissions = false,
 };
 
-await graphClient.Me.Drive.Items["{driveItem-id}"]
-	.CreateLink(type,scope,null,password,null,recipients,null)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].CreateLink.PostAsync(requestBody);
+
 
 ```

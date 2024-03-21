@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var columnDefinition = new ColumnDefinition
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ColumnDefinition
 {
 	Required = true,
 	Hidden = false,
-	PropagateChanges = false
+	PropagateChanges = false,
 };
 
-await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].Columns["{columnDefinition-id}"]
-	.Request()
-	.UpdateAsync(columnDefinition);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].Columns["{columnDefinition-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -2,8 +2,8 @@
 title: "singleValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a single value. "
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: outlook
+author: "SuryaLashmiS"
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "timeClockSettings resource type"
 description: "Represents timeclock settings for a schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -18,12 +18,12 @@ Represents timeclock settings for a [schedule](schedule.md).
 ## Properties
 |Property               |Type           |Description                                                                |
 |-----------------------|---------------|---------------------------------------------------------------------------|
-| approvedLocation | [geoCoordinates](geocoordinates.md)  |The aprroved location of the **timeClock**. |
+| approvedLocation | [geoCoordinates](geocoordinates.md)  |The approved location of the **timeClock**. |
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

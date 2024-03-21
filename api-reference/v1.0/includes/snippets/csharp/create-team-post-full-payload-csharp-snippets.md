@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new Team
 {
@@ -97,10 +100,6 @@ var requestBody = new Team
 		AllowTeamMentions = true,
 		AllowChannelMentions = true,
 	},
-	DiscoverySettings = new TeamDiscoverySettings
-	{
-		ShowInTeamsSearchAndSuggestions = true,
-	},
 	InstalledApps = new List<TeamsAppInstallation>
 	{
 		new TeamsAppInstallation
@@ -125,10 +124,18 @@ var requestBody = new Team
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"template@odata.bind" , "https://graph.microsoft.com/beta/teamsTemplates('standard')"
+			"template@odata.bind" , "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+		},
+		{
+			"discoverySettings" , new 
+			{
+				ShowInTeamsSearchAndSuggestions = true,
+			}
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Teams.PostAsync(requestBody);
 
 

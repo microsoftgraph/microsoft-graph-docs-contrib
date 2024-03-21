@@ -3,7 +3,7 @@ title: "androidForWorkSyncStatus enum type"
 description: "Sync status of the tenant with the Google EMM API"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -20,9 +20,9 @@ Sync status of the tenant with the Google EMM API
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|success|0|Not yet documented|
-|credentialsNotValid|1|Not yet documented|
-|androidForWorkApiError|2|Not yet documented|
-|managementServiceError|3|Not yet documented|
-|unknownError|4|Not yet documented|
-|none|5|Not yet documented|
+|success|0||
+|credentialsNotValid|1||
+|androidForWorkApiError|2||
+|managementServiceError|3||
+|unknownError|4||
+|none|5||

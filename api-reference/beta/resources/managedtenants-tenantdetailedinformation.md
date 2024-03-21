@@ -3,7 +3,7 @@ title: "tenantDetailedInformation resource type"
 description: "Represents detailed information for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -33,7 +33,7 @@ Represents detailed information for a managed tenant.
 |industryName|String|The business industry associated with the managed tenant. Optional. Read-only.|
 |region|String|The region where the managed tenant is located. Optional. Read-only.|
 |segmentName|String|The business segment associated with the managed tenant. Optional. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |verticalName|String|The vertical associated with the managed tenant. Optional. Read-only.|
 
 ## Relationships
@@ -65,4 +65,3 @@ The following is a JSON representation of the resource.
   "segmentName": "String"
 }
 ```
-

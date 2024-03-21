@@ -3,7 +3,7 @@ title: "Create microsoftTunnelServer"
 description: "Create a new microsoftTunnelServer object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTun
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -62,6 +62,8 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelserver_create_create_microsofttunnelserver" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers
 Content-type: application/json
@@ -79,6 +81,8 @@ Content-length: 312
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.microsoftTunnelServer" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

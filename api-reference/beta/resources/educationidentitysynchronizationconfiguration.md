@@ -3,7 +3,7 @@ title: "educationIdentitySynchronizationConfiguration resource type"
 description: "Abstract base class for all school data profile identity synchronization configurations. The derived classes define the behavior for synchronizing identities. The following are the derived types."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -19,8 +19,8 @@ Abstract base class for all school data profile identity synchronization configu
 
 | Type                                                                                | Description                                                                         |
 | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) | Use this type to **match existing** user accounts in Azure Active Directory. |
-| [educationIdentityCreationConfiguration](educationidentitycreationconfiguration.md) | Use this type to **create new** user accounts in Azure Active Directory.                              |
+| [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) | Use this type to **match existing** user accounts in Microsoft Entra ID. |
+| [educationIdentityCreationConfiguration](educationidentitycreationconfiguration.md) | Use this type to **create new** user accounts in Microsoft Entra ID.                              |
 
 ## JSON representation
 
@@ -36,5 +36,3 @@ Abstract base class for all school data profile identity synchronization configu
 ```json
 {}
 ```
-
-

@@ -1,9 +1,9 @@
 ---
 title: "update action"
-description: "Not yet documented"
+description: "Intune Policyset Policyset Update Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,10 +50,10 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|addedPolicySetItems|[policySetItem](../resources/intune-policyset-policysetitem.md) collection|Not yet documented|
-|updatedPolicySetItems|[policySetItem](../resources/intune-policyset-policysetitem.md) collection|Not yet documented|
-|deletedPolicySetItems|String collection|Not yet documented|
-|assignments|[policySetAssignment](../resources/intune-policyset-policysetassignment.md) collection|Not yet documented|
+|addedPolicySetItems|[policySetItem](../resources/intune-policyset-policysetitem.md) collection||
+|updatedPolicySetItems|[policySetItem](../resources/intune-policyset-policysetitem.md) collection||
+|deletedPolicySetItems|String collection||
+|assignments|[policySetAssignment](../resources/intune-policyset-policysetassignment.md) collection||
 
 
 
@@ -66,7 +68,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/update
 
 Content-type: application/json
-Content-length: 1760
+Content-length: 1777
 
 {
   "addedPolicySetItems": [
@@ -110,10 +112,11 @@ Content-length: 1760
       "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]

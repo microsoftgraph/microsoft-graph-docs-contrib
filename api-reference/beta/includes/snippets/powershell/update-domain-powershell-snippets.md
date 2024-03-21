@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
-	IsDefault = $true
-	SupportedServices = @(
+	isDefault = $true
+	supportedServices = @(
 		"Email"
 		"OfficeCommunicationsOnline"
 	)
 }
 
-Update-MgDomain -DomainId $domainId -BodyParameter $params
+Update-MgBetaDomain -DomainId $domainId -BodyParameter $params
 
 ```

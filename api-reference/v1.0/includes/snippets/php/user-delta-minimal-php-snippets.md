@@ -6,23 +6,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeltaRequestBuilderGetQueryParameters();
-$queryParameters->select = ["displayName","jobTitle","mobilePhone"];
-
 $headers = [
-'Prefer' => 'return=minimal',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'Prefer' => 'return=minimal',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->select = ["displayName","jobTitle","mobilePhone"];
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->users()->delta()->get($requestConfiguration);
 
+$result = $graphServiceClient->users()->delta()->get($requestConfiguration)->wait();
 
 ```

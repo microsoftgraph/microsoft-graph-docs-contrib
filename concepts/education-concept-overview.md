@@ -3,7 +3,7 @@ title: "Education API overview"
 description: "Use the education API in Microsoft Graph to build solutions that integrate with educational resources for classroom scenarios such as rosters and assignments."
 author: "mmast-msft"
 ms.localizationpriority: high
-ms.prod: "education"
+ms.subservice: "education"
 ms.custom: scenarios:getting-started
 ---
 
@@ -46,7 +46,7 @@ The following are examples of a few scenarios enabled by the assignments API:
 
 ### Enable school admins to manage identity and roster sync using School Data Sync Management (preview)
 
-[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing student identity and roster data from student information systems with Azure Active Directory (Azure AD) and Microsoft 365. When the information is synchronized, you can use the roster APIs to read the roster information into the applications. 
+[School Data Sync](https://sds.microsoft.com/) helps to automate the process of importing and synchronizing student identity and roster data from student information systems with Microsoft Entra ID and Microsoft 365. When the information is synchronized, you can use the roster APIs to read the roster information into the applications. 
 
 If you're a system integrator setting up integration of a school's Student Information System with School Data Sync, you can use the [SDS management APIs](/graph/api/resources/educationsynchronizationprofile) in Microsoft Graph to set up synchronization from either a CSV file or a supported SIS API connector.
 

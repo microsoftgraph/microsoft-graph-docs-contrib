@@ -3,7 +3,7 @@ title: "educationSubmission resource type"
 description: "Represents the resources that an individual (or group) submit for an assignment and the outcomes (such as grades or feedback) associated with the submission."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Submissions are owned by an **assignment**. Submissions are automatically create
 
 The **status** property is read-only and the object is moved through the workflow via actions. 
 
-If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) has not been called on an **educationSubmission** resource, the **resourcesFolderUrl** property is `null`.
+If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) hasn't been called on an **educationSubmission** resource, the **resourcesFolderUrl** property is `null`.
 
 ## Methods
 
@@ -30,24 +30,25 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |[return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
 |[reassign](../api/educationsubmission-reassign.md)|[educationSubmission](educationsubmission.md)|Reassign the submission to the student with feedback for review.|
 |[Set up submission specific resources folder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Create a SharePoint folder (under pre-defined location) to upload files as submission resources. |
-|[submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the **assignment**. This will copy the resources into the **submittedResources** folder for grading and updates the status.|
-|[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This will copy the resources into the **workingResources** folder for grading and updates the status.|
+|[submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the **assignment**. This copies the resources into the **submittedResources** folder for grading and updates the status.|
+|[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This copies the resources into the **workingResources** folder for grading and updates the status.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String|Unique identifier for the submission.|
 |reassignedBy|[identitySet](identityset.md)|User who moved the status of this submission to reassigned.|
-|reassignedDateTime|DateTimeOffset|Moment in time when the submission was reassigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|reassignedDateTime|DateTimeOffset|Moment in time when the submission was reassigned. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Who this submission is assigned to.|
 |resourcesFolderUrl|String|Folder where all file resources for this submission need to be stored.|
 |returnedBy|[identitySet](identityset.md)|User who moved the status of this submission to returned.|
-|returnedDateTime|DateTimeOffset|Moment in time when the submission was returned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|status|string| Read-only. Possible values are: `working`, `submitted`, `released`, `returned`, and `reassigned`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned`.|
+|returnedDateTime|DateTimeOffset|Moment in time when the submission was returned. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|status|string| Read-only. Possible values are: `working`, `submitted`, `returned`, and `reassigned`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reassigned`.|
 |submittedBy|[identitySet](identityset.md)|User who moved the resource into the submitted state.|
-|submittedDateTime|DateTimeOffset|Moment in time when the submission was moved into the submitted state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|submittedDateTime|DateTimeOffset|Moment in time when the submission was moved into the submitted state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|
-|unsubmittedDateTime|DateTimeOffset|Moment in time when the submission was moved from submitted into the working state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|unsubmittedDateTime|DateTimeOffset|Moment in time when the submission was moved from submitted into the working state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|webUrl|String| The deep link URL for the given submission.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -58,7 +59,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -71,18 +72,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id":"String (identifier)",
-    "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
-    "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "reassignedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "reassignedDateTime":"String (timestamp)",
-    "resourcesFolderUrl":"String",
-    "returnedDateTime":"String (timestamp)",
-    "status":"string",
-    "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "submittedDateTime":"String (timestamp)",
-    "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "unsubmittedDateTime":"String (timestamp)"
+  "id": "String (identifier)",
+  "reassignedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "reassignedDateTime": "String (timestamp)",
+  "recipient": {"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
+  "resourcesFolderUrl": "String",
+  "returnedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "returnedDateTime": "String (timestamp)",
+  "status": "String",
+  "submittedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "submittedDateTime": "String (timestamp)",
+  "unsubmittedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "unsubmittedDateTime": "String (timestamp)",
+  "webUrl": "String"
 }
 ```
 

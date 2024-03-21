@@ -3,7 +3,7 @@ title: "managementAction resource type"
 description: "Represents a baseline management action for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a baseline management action for a given managed tenant. Examples of management actions are device encryption, perform configurations to allow Azure Active Directory device enrollment, and require multi-factor authentication for admins.
+Represents a baseline management action for a given managed tenant. Examples of management actions are device encryption, perform configurations to allow Microsoft Entra device enrollment, and require multi-factor authentication for admins.
 
 ## Methods
 |Method|Return type|Description|

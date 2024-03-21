@@ -3,7 +3,7 @@ title: "Create androidWorkProfileGeneralDeviceConfiguration"
 description: "Create a new androidWorkProfileGeneralDeviceConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -105,6 +107,9 @@ The following table shows the properties that are required when you create the a
 |vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
 |workProfileAllowWidgets|Boolean|Allow widgets from work profile apps.|
 |workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
+|workProfileAccountUse|[androidWorkProfileAccountUse](../resources/intune-deviceconfig-androidworkprofileaccountuse.md)|Control user's ability to add accounts in work profile including Google accounts. Possible values are: `allowAllExceptGoogleAccounts`, `blockAll`, `allowAll`, `unknownFutureValue`.|
+|allowedGoogleAccountDomains|String collection|Determine domains allow-list for accounts that can be added to work profile.|
+|blockUnifiedPasswordForWorkProfile|Boolean|Prevent using unified password for unlocking device and work profile.|
 
 
 
@@ -118,7 +123,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3232
+Content-length: 3405
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -194,7 +199,12 @@ Content-length: 3232
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
   "workProfileAllowWidgets": true,
-  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+  "workProfileAccountUse": "blockAll",
+  "allowedGoogleAccountDomains": [
+    "Allowed Google Account Domains value"
+  ],
+  "blockUnifiedPasswordForWorkProfile": true
 }
 ```
 
@@ -203,7 +213,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3404
+Content-Length: 3577
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -282,6 +292,11 @@ Content-Length: 3404
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
   "workProfileAllowWidgets": true,
-  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+  "workProfileAccountUse": "blockAll",
+  "allowedGoogleAccountDomains": [
+    "Allowed Google Account Domains value"
+  ],
+  "blockUnifiedPasswordForWorkProfile": true
 }
 ```

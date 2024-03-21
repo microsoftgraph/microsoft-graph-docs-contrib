@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
 
-$requestConfiguration = new UserRequestBuilderGetRequestConfiguration();
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$queryParameters = new UserRequestBuilderGetQueryParameters();
+$requestConfiguration = new UserItemRequestBuilderGetRequestConfiguration();
+$queryParameters = UserItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["ext55gb1l09_msLearnCourses"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->usersById('user-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->users()->byUserId('user-id')->get($requestConfiguration)->wait();
 
 ```

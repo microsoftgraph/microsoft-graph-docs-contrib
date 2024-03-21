@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Me.CheckMemberObjects.CheckMemberObjectsPostRequestBody
+// Dependencies
+using Microsoft.Graph.Me.CheckMemberObjects;
+
+var requestBody = new CheckMemberObjectsPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -16,7 +19,9 @@ var requestBody = new Microsoft.Graph.Me.CheckMemberObjects.CheckMemberObjectsPo
 		"ac38546e-ddf3-437a-ac5c-27a94cd7a0f1",
 	},
 };
-var result = await graphClient.Me.CheckMemberObjects.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.CheckMemberObjects.PostAsCheckMemberObjectsPostResponseAsync(requestBody);
 
 
 ```

@@ -3,7 +3,7 @@ title: "Send emails with MIME content using the Outlook mail API"
 description: "Email clients can send messages through Exchange in a MIME message format and communicate across multiple email platforms."
 author: "isvargasmsft"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Send messages with MIME content
@@ -38,7 +38,7 @@ For more information on MIME format, see [getting MIME content of a message](out
 
 
 ## Specify request header and MIME message body
-You can create a [message](/graph/api/resources/message.md) in JSON or MIME format. Specify the intended format in the request header:
+You can create a [message](/graph/api/resources/message) in JSON or MIME format. Specify the intended format in the request header:
 
 - `Content-Type: application/json` to use JSON format in the request body.
 - `Content-Type: text/plain` to use MIME format in the request body.

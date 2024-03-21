@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Mail
+Import-Module Microsoft.Graph.Beta.Mail
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.itemAttachment"
-	Name = "Holiday event"
-	Item = @{
+	name = "Holiday event"
+	item = @{
 		"@odata.type" = "microsoft.graph.event"
-		Subject = "Discuss gifts for children"
+		subject = "Discuss gifts for children"
 	}
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
+New-MgBetaUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

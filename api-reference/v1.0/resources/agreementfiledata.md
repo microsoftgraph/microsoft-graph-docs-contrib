@@ -1,17 +1,17 @@
 ---
 title: "agreementFileData resource type"
-description: "Represents an Azure Active Directory (Azure AD) terms of use agreement file."
+description: "Represents a Microsoft Entra terms of use agreement file."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
-author: "raprakasMSFT"
+ms.subservice: "entra-id-governance"
+author: "AlexFilipin"
 ---
 
 # agreementFileData resource type
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory (Azure AD) terms of use agreement file.
+Represents a Microsoft Entra terms of use agreement file.
 
 ## Properties
 | Property       | Type | Description |
@@ -49,5 +49,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

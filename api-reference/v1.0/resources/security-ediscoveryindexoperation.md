@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryIndexOperation resource type"
-description: "Represents the process of indexing data sources, including custodians and non-custodial data sources."
+description: "Represents the process of indexing data sources, including custodians and noncustodial data sources."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 
 
-Represents the process of indexing data sources, including custodians and non-custodial data sources.
+Represents the process of indexing data sources, including custodians and noncustodial data sources.
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
@@ -36,7 +36,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

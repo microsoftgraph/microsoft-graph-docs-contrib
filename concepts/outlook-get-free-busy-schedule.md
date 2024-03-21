@@ -3,14 +3,14 @@ title: "Get free/busy schedule of Outlook calendar users and resources"
 description: "Use the getSchedule action to get the availability information of one or more users, distribution lists, or resources for a specific period of time."
 author: "tariq-sharif"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Get free/busy schedule of Outlook calendar users and resources
 
 In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period.
 
-The [getSchedule](/graph/api/calendar-getschedule) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
+The [getSchedule](/graph/api/calendar-getschedule) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time.
 
 ## Example
 
@@ -21,12 +21,12 @@ A simple example is to find the free/busy schedule of a coworker, Alex, on a spe
   "name": "calendar_getSchedule_concept"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getschedule
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
-{        
-    "Schedules": ["AlexW@contoso.OnMicrosoft.com"],
+{
+    "Schedules": ["AlexW@contoso.com"],
     "StartTime": {
         "dateTime": "2018-08-06T09:00:00",
         "timeZone": "Pacific Standard Time"
@@ -55,7 +55,7 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value":[
         {
-            "scheduleId":"AlexW@contoso.OnMicrosoft.com",
+            "scheduleId":"AlexW@contoso.com",
             "availabilityView":"111111002222222200000000000000000000",
             "scheduleItems":[
                 {
@@ -118,13 +118,13 @@ Content-type: application/json
 
 ```
 
-Apart from the free/busy schedule and working hours of Alex, **getSchedule** also returns **availabilityView**, which is a merged view of Alex' availability for that day. The merged view is a string that consists of time slots covering that day, with each time slot indicating Alex' availability using the following convention: 
+Apart from the free/busy schedule and working hours of Alex, **getSchedule** also returns **availabilityView**, which is a merged view of Alex' availability for that day. The merged view is a string that consists of time slots covering that day, with each time slot indicating Alex' availability using the following convention:
 
 - `0`= free
 - `1`= tentative
 - `2`= busy
 - `3`= out of office
-- `4`= working elsewhere. 
+- `4`= working elsewhere.
 
 By default, the length of each time slot is 30 minutes. This example uses the **availabilityViewInterval** property to customize the time slot to be 15 minutes.
 
@@ -153,7 +153,7 @@ It is appropriate for scenarios that depend on [streamlining appointment booking
 ### Permissions
 The least privileged permissions required by **findmeetingtimes** is Calendars.Read.Shared.
 
-The least privileged permission required by **getSchedule** is Calendars.Read. 
+The least privileged permission required by **getSchedule** is Calendars.Read.
 
 ### Version support
 
@@ -163,11 +163,11 @@ The least privileged permission required by **getSchedule** is Calendars.Read.
 ## Event data returned
 The least privileged permission required by **getSchedule** for an app to get free/busy information is Calendars.Read. Depending on your app scenario, this can be consented by the signed-in user or administrator.
 
-While the consented permission lets an app use **getSchedule** on the requested users' calendars, through Outlook, the requested user controls which event data, if any, that **getSchedule** returns. 
+While the consented permission lets an app use **getSchedule** on the requested users' calendars, through Outlook, the requested user controls which event data, if any, that **getSchedule** returns.
 
 For example, **getSchedule** can return the free/busy status and working hours of the requested users, or it can also return the **subject**, **location**, and **isPrivate** properties of an event, provided that:
 
-- The event is marked with low sensitivity level - `normal` or `personal` - 
+- The event is marked with low sensitivity level - `normal` or `personal` -
 AND one or more of the following conditions apply:
 
   - The requested user’s calendar settings allow the signed-in user to view subject lines and locations
@@ -176,7 +176,7 @@ AND one or more of the following conditions apply:
 These conditions apply regardless of whether the signed-in user is an administrator in the organization. The requested user has control over the event data returned.
 
 ## Time zone representation
-By default, the start and end times of the returned schedule items are represented in UTC. You can use a `Prefer` header to specify a time zone appropriate for your app. As an example: 
+By default, the start and end times of the returned schedule items are represented in UTC. You can use a `Prefer` header to specify a time zone appropriate for your app. As an example:
 ``` http
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -186,9 +186,9 @@ Be aware of the following limits and error condition:
 
 - **getSchedule** can support looking up free/busy information for up to 20 entities at once. This limit applies to the number of users identified individually or as members of a distribution list, and to the number of resources as well.
 - The time period to look up must be less than 62 days.
-- If **getSchedule** cannot identify a specified user or resource, it returns a single schedule item and indicates the error. 
+- If **getSchedule** cannot identify a specified user or resource, it returns a single schedule item and indicates the error.
 
 
-## See also
-- [Permissions reference](permissions-reference.md#calendars-permissions)
+## Related content
+- [Permissions reference](permissions-reference.md)
 - [Find possible meeting times on the Outlook calendar](findmeetingtimes-example.md)

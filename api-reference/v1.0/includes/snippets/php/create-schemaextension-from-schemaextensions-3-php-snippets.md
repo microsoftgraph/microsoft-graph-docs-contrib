@@ -6,45 +6,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SchemaExtension();
 $requestBody->setId('courses');
-
 $requestBody->setDescription('Graph Learn training courses extensions');
-
-$requestBody->setTargetTypes(['Group', ]);
-
+$requestBody->setTargetTypes(['Group', 	]);
 $requestBody->setOwner('50897f70-a455-4adf-87bc-4cf17091d5ac');
-
 $propertiesExtensionSchemaProperty1 = new ExtensionSchemaProperty();
 $propertiesExtensionSchemaProperty1->setName('courseId');
-
 $propertiesExtensionSchemaProperty1->setType('Integer');
-
-
 $propertiesArray []= $propertiesExtensionSchemaProperty1;
 $propertiesExtensionSchemaProperty2 = new ExtensionSchemaProperty();
 $propertiesExtensionSchemaProperty2->setName('courseName');
-
 $propertiesExtensionSchemaProperty2->setType('String');
-
-
 $propertiesArray []= $propertiesExtensionSchemaProperty2;
 $propertiesExtensionSchemaProperty3 = new ExtensionSchemaProperty();
 $propertiesExtensionSchemaProperty3->setName('courseType');
-
 $propertiesExtensionSchemaProperty3->setType('String');
-
-
 $propertiesArray []= $propertiesExtensionSchemaProperty3;
 $requestBody->setProperties($propertiesArray);
 
 
-
-
-$requestResult = $graphServiceClient->schemaExtensions()->post($requestBody);
-
+$result = $graphServiceClient->schemaExtensions()->post($requestBody)->wait();
 
 ```
