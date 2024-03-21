@@ -137,7 +137,7 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to transcripts available for any meeting where a specific Teams app is installed
+## Subscribe to transcripts available for any online meeting where a specific Teams app is installed
 
 To get change notifications for any transcript available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
@@ -243,7 +243,7 @@ One of the following permissions is required to subscribe to `communications/onl
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
-> To subscribe to any recording available for a particular online meeting, using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
+> To subscribe to any recording available for a particular online meeting using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
 ### Example 1: Subscribe to recordings available for a particular online meeting using classic permissions
 
@@ -315,7 +315,7 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to recordings available for any meeting where a specific Teams app is installed
+## Subscribe to recordings available for any online meeting where a specific Teams app is installed
 
 To get change notifications for any recording available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
@@ -353,7 +353,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to recordings available for any online meeting where a specific Teams app is installed using only permissions that use resource-specific consent
+### Example 2: Subscribe to recordings available for any online meeting where a specific Teams app is installed using only resource-specific consent permissions
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
