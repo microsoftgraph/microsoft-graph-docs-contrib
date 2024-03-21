@@ -80,6 +80,13 @@ See the following pricing calculations for respective services:
 - [Azure Storage pricing](https://azure.microsoft.com/pricing/details/storage/blobs)
 - [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/)
 
+## Cost reduction for Log Analytics
+
+If you are ingesting the logs to Log Analytics Workspace but are only interested in a subset of logs filtered by a certain citeria, such as omitting certain columns or rows, you have the option to partially reduce costs by applying a workspace tranformation on the Microsoft Graph Activity Logs table. To find out more about worksapce tranformations, how it affects ingestion costs, and how to apply a tranformation to your Microsoft Graph Activity Logs, see [Data collection transformations in Azure Monitor](azure/azure-monitor/essentials/data-collection-transformations).
+
+As an alternative approach to reduct Log Analytics cost, you can switch to the Basic log data plan which lowers the bills at the expense of reduce capabilities. Find out more about Basic log data plan and how to switch to this plan here [Set a table's log data plan to Basic or Analytics](azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1)
+
+
 ## Azure Monitor Logs query examples
 
 If you send Microsoft Graph activity logs to a Log Analytics workspace, you can query the logs using Kusto Query Language (KQL). For more information about queries in Log Analytics Workspace, see [Analyze Microsoft Entra activity logs with Log Analytics](/azure/active-directory/reports-monitoring/howto-analyze-activity-logs-log-analytics). You can use these queries for data exploration, to build alert rules, build Azure dashboards, or integrate into your custom applications using the Azure Monitor Logs API or Query SDK.
@@ -116,6 +123,33 @@ MicrosoftGraphActivityLogs
     on $left.SignInActivityId == $right.UniqueTokenIdentifier
 ```
 
+The following Kusto query identifies apps that are getting throttled:
+
+```kusto
+MicrosoftGraphActivityLogs 
+| where TimeGenerated > ago(3d) 
+| where ResponseStatusCode == 429 
+| extend path = replace_string(replace_string(replace_regex(tostring(parse_url(RequestUri).Path), @'(\/)+','//'),'v1.0/',''),'beta/','') 
+| extend UriSegments =  extract_all(@'\/([A-z2]+|\$batch)($|\/|\(|\$)',dynamic([1]),tolower(path)) 
+| extend OperationResource = strcat_array(UriSegments,'/')| summarize RateLimitedCount=count() by AppId, OperationResource, RequestMethod 
+| sort by RateLimitedCount desc 
+| limit 100 
+```
+
+The following query allows you to render a time-series chart:
+
+```kusto
+MicrosoftGraphActivityLogs 
+| where TimeGenerated  between (ago(3d) .. ago(1h))  
+| summarize EventCount = count() by bin(TimeGenerated, 10m) 
+| render timechart 
+    with ( 
+    title="Recent traffic patterns", 
+    xtitle="Time", 
+    ytitle="Requests", 
+    legend=hidden 
+    )
+```
 
 ## Limitations
 
