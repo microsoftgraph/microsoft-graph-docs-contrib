@@ -4,7 +4,7 @@ description: "Update the properties of a fido2AuthenticationMethodConfiguration 
 author: "calvinlui"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

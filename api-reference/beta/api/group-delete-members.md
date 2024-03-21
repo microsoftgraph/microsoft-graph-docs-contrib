@@ -2,8 +2,9 @@
 title: "Remove member"
 description: "Remove a member from a Microsoft 365 group or a security group through the members navigation property."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

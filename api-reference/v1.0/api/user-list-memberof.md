@@ -1,7 +1,8 @@
 ---
 title: "List a user's direct memberships"
 description: "Get groups, directory roles, and administrative units that the user is a direct member of. This operation isn't transitive."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType

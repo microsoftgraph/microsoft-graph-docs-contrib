@@ -3,7 +3,7 @@ title: "Call Microsoft Graph from a Cloud Solution Provider application"
 description: "This article describes how to enable application access to partner-managed customer data via Microsoft Graph using either the authorization code grant flow or the service to service client credentials flow."
 author: koravvams
 ms.localizationpriority: high
-ms.prod: "partner-customer-administration"
+ms.subservice: "partner-customer-administration"
 ms.custom: graphiamtop20, has-azure-ad-ps-ref
 ---
 

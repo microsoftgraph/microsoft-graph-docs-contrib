@@ -3,7 +3,7 @@ title: "educationModule: pin"
 description: "Pin an educationModule in the class work list."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Pin an [educationModule](../resources/educationmodule.md) in the class work list. This action sets the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
+Pin an [educationModule](../resources/educationmodule.md) in the class work list. This action sets the **isPinned** property to `true` for an [educationModule](../resources/educationmodule.md).
 
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
 
@@ -31,7 +31,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ```http
 POST /education/classes/{id}/modules/{id}/pin
-
 ```
 
 ## Request headers
@@ -46,16 +45,15 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 Ok` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationModule](../resources/educationmodule.md) object in the response body.
 
 ## Example
 
-The following example shows how to call this API.
-
 ### Request
 
-Here's an example of a request.
+The following examples shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","ba8e4215-4fb2-4dba-abe7-a8f2585177d3"],
@@ -66,9 +64,43 @@ Here's an example of a request.
 POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/ba8e4215-4fb2-4dba-abe7-a8f2585177d3/pin
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationmodule-pin-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/educationmodule-pin-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationmodule-pin-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationmodule-pin-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationmodule-pin-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/educationmodule-pin-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationmodule-pin-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/educationmodule-pin-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
-Here's an example of a response.
+The following examples shows the response.
 
 <!-- {
   "blockType": "response",
@@ -77,7 +109,7 @@ Here's an example of a response.
 } -->
 
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationModule",

@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequestWorkflowExtension resource type"
 description: "Defines the attributes of a logic app that can be called at various stages of an access package request cycle."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

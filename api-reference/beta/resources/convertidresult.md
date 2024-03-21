@@ -3,7 +3,7 @@ title: "convertIdResult resource type"
 description: "The result of an ID format conversion performed by the translateExchangeIds function."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
 ---
 

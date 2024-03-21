@@ -3,7 +3,7 @@ title: "Create Outlook events in a shared or delegated calendar"
 description: "Learn how to create a meeting event in a shared or delegated Outlook calendar. You can share a calendar with other users or grant a delegate to act on your behalf."
 author: "juforan"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Create Outlook events in a shared or delegated calendar

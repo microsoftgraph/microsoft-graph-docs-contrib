@@ -1,9 +1,10 @@
 ---
 title: "Remove rejectedSender"
 description: "Remove a user or group from the rejected-senders list."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

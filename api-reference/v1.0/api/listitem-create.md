@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/11/2017
 title: Create a new entry in a SharePoint list
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Create a new listItem in a list."
 doc_type: apiPageType
 ---

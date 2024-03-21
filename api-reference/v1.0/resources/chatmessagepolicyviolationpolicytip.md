@@ -4,7 +4,7 @@ description: "Represents properties of a policy tip on a chatMessagePolicyViolat
 author: "RamjotSingh"
 doc_type: resourcePageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 # chatMessagePolicyTip resource type
 

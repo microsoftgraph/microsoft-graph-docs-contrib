@@ -3,7 +3,7 @@ title: "Get message"
 description: "Retrieve the properties and relationships of the message object."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -666,7 +666,6 @@ YW5vdGhlciBtYWlsLg0K
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: get_message_internet_headers/internetMessageHeaders/member/value:\r\n       Expected type String but actual was Binary. Property: value, actual value: 'binary'",
     "Error: getmessageinternet_headers/internetMessageHeaders/member/value:
       Expected type String but actual was Binary. Property: value, actual value: 'binary'"
   ]

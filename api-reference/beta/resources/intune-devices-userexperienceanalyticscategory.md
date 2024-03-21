@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsCategory resource type"
 description: "The user experience analytics category entity contains the scores and insights for the various metrics of a category."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

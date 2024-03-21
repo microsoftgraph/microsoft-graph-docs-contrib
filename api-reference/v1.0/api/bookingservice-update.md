@@ -3,7 +3,7 @@ title: "Update bookingService"
 description: "Update the properties of a bookingService object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -85,7 +85,7 @@ Content-type: application/json
 ```
 
 ### Response
-The Here's an example of the response.
+The The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

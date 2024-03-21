@@ -3,7 +3,7 @@ title: "cloudPcGalleryImage resource type"
 description: "Represents the gallery image resource of the current organization that can be used to provision a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -19,8 +19,8 @@ Represents the gallery image resource of the current organization that can be us
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List galleryImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) objects.|
-|[Get cloudPcGalleryImage](../api/cloudpcgalleryimage-get.md)|[cloudPcDeviceImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a [cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) object.|
+|[List galleryImages](../api/virtualendpoint-list-galleryimages.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.|
+|[Get cloudPcGalleryImage](../api/cloudpcgalleryimage-get.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a specific [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) object.|
 
 ## Properties
 
@@ -70,7 +70,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
+  "@odata.type": "#microsoft.graph.cloudPcGalleryImage",
   "displayName": "String",
   "endDate": "String (Date)",
   "expiredDate": "String (Date)",

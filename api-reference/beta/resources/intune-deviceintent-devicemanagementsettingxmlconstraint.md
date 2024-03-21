@@ -3,7 +3,7 @@ title: "deviceManagementSettingXmlConstraint resource type"
 description: "Constraint enforcing the setting is well formed XML"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
