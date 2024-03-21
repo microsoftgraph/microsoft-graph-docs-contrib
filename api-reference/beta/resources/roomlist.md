@@ -34,10 +34,10 @@ Derived from [place](place.md).
 | address        | [physicalAddress](physicaladdress.md)             | The street address of the room list. |
 | displayName    | String                                            | The name associated with the room list. |
 | emailAddress   | String                                            | The email address of the room list. |
-| geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude and (optionally) altitude coordinates. |
-| id             | String                                            | Unique identifier for the room list. Read-only.  This identifier is not immutable and can change if there are changes to the mailbox or to the tenant configuration. |
+| geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude, and (optionally) altitude coordinates. |
+| id             | String                                            | Unique identifier for the room list. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
 | phone          | String                                            | The phone number of the room list. |
-| placeId        | String                                            | Unique, immutable identifier for the room list.  Read-only.  The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet. |
+| placeId        | String                                            | Unique, immutable identifier for the room list. Read-only. The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet. |
 
 ## Relationships
 
@@ -48,7 +48,7 @@ Derived from [place](place.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
