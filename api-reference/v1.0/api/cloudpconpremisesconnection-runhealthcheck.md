@@ -1,6 +1,6 @@
 ---
 title: "CloudPcOnPremisesConnection: runHealthChecks"
-description: "Run health checks on the Cloud PC Azure network connection."
+description: "Run health checks on the cloudPcOnPremisesConnection object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -15,7 +15,7 @@ Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpre
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-It triggers a new health check for this [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object and changes the healthCheckStatus and [healthCheckStatusDetail](../resources/cloudpconpremisesconnectionstatusdetail.md) properties when check finished.
+It triggers a new health check for the [cloudPcOnPremisesConnection (../resources/cloudpconpremisesconnection.md) object and changes the healthCheckStatus and [healthCheckStatusDetail](../resources/cloudpconpremisesconnectionstatusdetail.md) properties when check finished.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
