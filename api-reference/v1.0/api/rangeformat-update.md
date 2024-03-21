@@ -3,7 +3,7 @@ title: "Update rangeformat"
 description: "Update the properties of rangeformat object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
