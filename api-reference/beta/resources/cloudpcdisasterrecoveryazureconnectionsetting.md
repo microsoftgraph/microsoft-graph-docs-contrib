@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDisasterRecoveryAzureConnectionSetting resource type"
-description: "Represents the AzureConnection configuration of back up Cloud PCs provisioned for cross region disaster recovery."
+description: "Represents the AzureConnection configuration of backup Cloud PCs provisioned for cross region disaster recovery."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the AzureConnection configuration of back up Cloud PCs provisioned for cross region disaster recovery.
+Represents the AzureConnection configuration of backup Cloud PCs provisioned for cross region disaster recovery.
 
 Inherits from [cloudPcDisasterRecoveryNetworkSetting](cloudpcdisasterrecoverynetworksetting.md).
 
@@ -21,7 +21,7 @@ Inherits from [cloudPcDisasterRecoveryNetworkSetting](cloudpcdisasterrecoverynet
 
 |Property|Type|Description|
 |:---|:---|:---|
-|onPremisesConnectionId|Edm.String|Indicates the unique ID of the virtual network that the new Cloud PC will join.|
+|onPremisesConnectionId|Edm.String|Indicates the unique ID of the virtual network that the new Cloud PC joins.|
 
 ## Relationships
 
