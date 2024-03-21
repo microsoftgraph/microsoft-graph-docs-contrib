@@ -3,7 +3,7 @@ title: "workbookChartSeriesFormat resource type"
 description: "encapsulates the format properties for the chart series"
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
