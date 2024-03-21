@@ -4,74 +4,26 @@
             "ChangeList": [
                 {
                     "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcProvisioningType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcProvisioningType** enumeration type.",
+                    "Target": "cloudPcProvisioningType"
+                },
+                {
+                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPC",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource type.",
+                    "Description": "Added the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource and supported methods.",
                     "Target": "cloudPC"
                 },
                 {
                     "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcProvisioningPolicy",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "cloudPCs",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-1.0) resource type.",
-                    "Target": "cloudPC"
-                },
-                {
-                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "endGracePeriod",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [EndGracePeriod](https://learn.microsoft.com/en-us/graph/api/cloudPc-endgraceperiod) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-v1.0) resource.",
-                    "Target": "cloudPC"
-                },
-                {
-                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "Restore",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [Restore](https://learn.microsoft.com/en-us/graph/api/cloudPc-restore) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-v1.0) resource.",
-                    "Target": "cloudPC"
-                },
-                {
-                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "Reboot",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [Reboot](https://learn.microsoft.com/en-us/graph/api/cloudPc-reboot) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-v1.0) resource.",
-                    "Target": "cloudPC"
-                },
-                {
-                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "Rename",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [Rename](https://learn.microsoft.com/en-us/graph/api/cloudPc-rename) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-v1.0) resource.",
-                    "Target": "cloudPC"
-                },
-                {
-                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "Troubleshoot",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [Troubleshoot](https://learn.microsoft.com/en-us/graph/api/cloudPc-troubleshoot) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-v1.0) resource.",
-                    "Target": "cloudPC"
-                },
-                {
-                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "Get",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [Get](https://learn.microsoft.com/en-us/graph/api/cloudPc-get) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-v1.0) resource.",
-                    "Target": "cloudPC"
-                },
-                {
-                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "List",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-v1.0) method to the[virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **cloudPCs** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
                     "Target": "virtualEndpoint"
                 }
             ],
