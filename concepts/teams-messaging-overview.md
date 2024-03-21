@@ -13,13 +13,13 @@ Microsoft Teams has a comprehensive set of APIs for performing messaging operati
 
 ## Understanding chatMessage schema
 
-[chatMessage](/graph/api/resources/chatMessage?preserve-view=true) represents messages in Microsoft Teams [chats](/graph/api/resources/chat?preserve-view=true) and [channels](/graph/api/resources/channel?preserve-view=true). In this section, we'll be describing various elements of the schema itself.
+[chatMessage](/graph/api/resources/chatMessage?preserve-view=true) represents messages in Microsoft Teams [chats](/graph/api/resources/chat?preserve-view=true) and [channels](/graph/api/resources/channel?preserve-view=true). In this section, we are describing various elements of the schema itself.
 
 > **Note:** Examples shared in this document only show the relevant schema elements and not the entire message payload
 
 ### attachments
 
-[Attachments](/graph/api/resources/chatmessageattachment?preserve-view=true) represents entities, which can be referenced from a [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). These entities include objects like files, tabs, cards, meetings or other messages. The items themselves might be located somewhere else. For example, files might be stored in SharePoint. Section below describes various possibilities
+[Attachments](/graph/api/resources/chatmessageattachment?preserve-view=true) represents entities, which can be referenced from a [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). These entities include objects like files, tabs, cards, meetings, or other messages. The items themselves might be located somewhere else. For example, files might be stored in SharePoint. Section below describes various possibilities
 
 #### file
 
@@ -64,7 +64,7 @@ Example of an attachment with reference to a tab
 ```
 #### card
 
-Cards represent visual elements backed by a predefined schema. Microsoft Teams supports various cards [as defined by Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object&preserve-view=true). Additionally, Microsoft Teams supports two additional cards
+Cards represent visual elements backed by a predefined schema. Microsoft Teams supports various cards [as defined by Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object&preserve-view=true). Additionally, Microsoft Teams supports two other cards
 
 - Code snippet - With `contentType` set to `application/vnd.microsoft.card.codesnippet`
 - Announcement card - With `contentType` set to `application/vnd.microsoft.card.announcement`
@@ -128,7 +128,7 @@ Example of an attachment with meeting reference in it
 
 #### message
 
-Attachment object refers to a message when a specific message is being replied to in a [chat](/graph/api/resources/chat?preserve-view=true). For message attachments, `id` represents ID of the message. `content` contains additional details, for example,  preview text of the message and sender of the message being replied to. `contentType` is set to `messageReference` for such attachments.
+Attachment object refers to a message when a specific message is being replied to in a [chat](/graph/api/resources/chat?preserve-view=true). For message attachments, `id` represents ID of the message. `content` contains more details, for example,  preview text of the message and sender of the message being replied to. `contentType` is set to `messageReference` for such attachments.
 
 Example of an attachment with message reference in it
 
@@ -151,12 +151,12 @@ Example of an attachment with message reference in it
 
 Microsoft Teams supports more schema elements, which are outside of the HTML specifications to support other elements like mentions. Following elements are supported by `chatMessage` schema, which aren't HTML elements
 
-- at - Reference to an [chatMessageMention](/graph/api/resources/chatmessagemention?preserve-view=true) representing details of a user, application, [channel](/graph/api/resources/channel?preserve-view=true), [team](/graph/api/resources/team?preserve-view=true) or [tag](/graph/api/resources/teamworktag?preserve-view=true) being @mentioned
+- at - Reference to an [chatMessageMention](/graph/api/resources/chatmessagemention?preserve-view=true) representing details of a user, application, [channel](/graph/api/resources/channel?preserve-view=true), [team](/graph/api/resources/team?preserve-view=true), or [tag](/graph/api/resources/teamworktag?preserve-view=true) being @mentioned
 - attachment - Representing the position of an attachment reference
 - systemEventMessage - When body `content` is set to `<systemEventMessage/>`, it means the message represents a special event. You can read more about system events [here](/graph/system-messages).
 - emoji - When body of the message contains an emoji, `$"<emoji id="IdOfTheEmoji" alt="AlternateRepresentationOfEmoji" title="TitleOfEmoji"></emoji>"` element represents various properties of an emoji
     - id - ID of the emoji
-    - alt - Alternate representation for the emoji, e.g.,  Unicode
+    - alt - Alternate representation for the emoji, for example, Unicode
     - title - Title for the emoji
 
 #### Example of a message with @mention for a team
@@ -274,7 +274,7 @@ Example of `chatId` in a message
 
 ### createdDateTime
 
-`createdDateTime` represents the time when the message was created on the server. This timestamp might be different than when the message was sent by the caller. Server records only server side timestamp. This property is usually read-only, however it can be written when [importing messages from an external system](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+`createdDateTime` represents the time when the message was created on the server. This timestamp might be different than when the message was sent by the caller. Server records only server side timestamp. This property is read-only, however it can be written when [importing messages from an external system](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ### deletedDateTime
 
@@ -292,7 +292,7 @@ If present, represents details of an event that happened in a [chat](/graph/api/
 
 ### from
 
-Represents the sender of the message. Microsoft Teams supports a variety of senders
+Represents the sender of the message. Microsoft Teams supports various senders
 
 - Azure AD users - Users who have a valid Azure AD user. This includes [Azure AD guests](/azure/active-directory/external-identities/what-is-b2b) and [native federation](/microsoftteams/manage-external-access)
 
@@ -414,7 +414,7 @@ Represents the sender of the message. Microsoft Teams supports a variety of send
     }
     ```
 
-- Email - Microsoft Teams allows sending emails to channels, when the user isn't known (part of the tenant or identity isn't known), the identity of sender is shown as email user with details of the email used to send the message. Following example shows the `from` element for a message sent from an email user
+- Email - Microsoft Teams allows sending emails to channels. When the user isn't known (part of the tenant or identity isn't known), the identity of sender is shown as email user with details of the email used to send the message. Following example shows the `from` element for a message sent from an email user
 
     ```json
     "from": {
@@ -471,7 +471,7 @@ Example of a message with importance set to high
 
 ### lastEditedDateTime
 
-Represents the timestamp when the message was edited by the user. This is represented in Microsoft Teams UI with `Edited` flag, `null` if the message has never neen edited.
+Represents the timestamp when the message was edited by the user. This is represented in Microsoft Teams UI with `Edited` flag, `null` if the message has never need edited.
 
 ### lastModifiedDateTime
 
@@ -479,7 +479,7 @@ Represents the timestamp when the message was last modified. This includes chang
 
 ### mentions
 
-Represents users, applications (bots, webhooks etc.), channels, teams or tags being @mentioned.
+Represents users, applications (bots, webhooks etc.), channels, teams, or tags being @mentioned.
 
 #### Example of a message with @mention for another user
 
@@ -622,7 +622,7 @@ Example of a message blocked due to policy
 
 ### reactions
 
-Represents reactions from other users on this message. This includes reactions like likes etc. Each element represents information about the reaction and the user who reacted.
+Represents reactions from other users on this message. This includes reactions such as likes etc. Each element represents information about the reaction and the user who reacted.
 
 Example of a message with reaction in it
 
@@ -672,7 +672,7 @@ Messaging APIs in Microsoft Teams are divided in three major categories
 
 ### Microsoft Teams UI aligned APIs
 
-These APIs allow you to get older methods similar to how Microsoft Teams UI does. These APIs are built to allow 'once in a while' sync to get messages in a specific context. These APIs are highly performant and any changes (messages sent, edited or deleted) are instantly visible through these APIs.
+These APIs allow you to get older methods similar to how Microsoft Teams UI does. These APIs are built to allow 'once in a while' sync to get messages in a specific context. These APIs are highly performant and any changes (messages sent, edited, or deleted) are instantly visible through these APIs.
 
 Following APIs belong to this set
 
@@ -699,5 +699,5 @@ These APIs typically work at a higher granularity than UI aligned APIs. These AP
 
 ### Real-time APIs
 
-Real-time APIs allow caller to get notified as soon as a change is made (message sent, edited, deleted etc.). These APIs are suitable for real time applications like rendering messages outside of Microsoft Teams UI. Additionally, these APIs allow creating subscriptions and thus allow receiving large amount of data without hitting throttling. Refer to [this](/graph/teams-changenotifications-chatmessage) document for more details.
+Real-time APIs allow caller to get notified as soon as a change is made (message sent, edited, deleted etc.). These APIs are suitable for real time applications like rendering messages outside of Microsoft Teams UI. Additionally, these APIs allow creating subscriptions and thus allow receiving large amount of data without hitting throttling. For more information see [this document](/graph/teams-changenotifications-chatmessage).
 
