@@ -48,9 +48,9 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 | address        | [physicalAddress](physicaladdress.md)             | The street address of the place. |
 | displayName    | String                                            | The name associated with the place. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the place location in latitude, longitude, and (optionally) altitude coordinates. |
-| id             | String                                            | Unique identifier for the place. Read-only.  This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
+| id             | String                                            | Unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
 | phone          | String                                            | The phone number of the place. |
-| placeId        | String                                            | Unique, immutable identifier for the place. Read-only.  The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet. |
+| placeId        | String                                            | Unique, immutable identifier for the place. Read-only. The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet. |
 
 ## Relationships
 
