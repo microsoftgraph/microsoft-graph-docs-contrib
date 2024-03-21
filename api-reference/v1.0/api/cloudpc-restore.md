@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: restore"
-description: "Restore a specific Cloud PC object."
+description: "Restore a specific cloud PC object to a previous state from a snapshot."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Rename a specific [cloudPC](../resources/cloudpc.md) object. Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
+Restore a specific [cloudPC](../resources/cloudpc.md) object to a previous state from a snapshot. Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
 ## Permissions
 
