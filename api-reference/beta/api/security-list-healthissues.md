@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "security_list_healthissue"
+  "name": "get_healthIssues"
 }
 -->
 ``` http
