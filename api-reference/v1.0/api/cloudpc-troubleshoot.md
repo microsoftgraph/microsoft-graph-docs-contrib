@@ -1,9 +1,9 @@
 ---
 title: "cloudPC: troubleshoot"
-description: "Troubleshoot a specific Cloud PC. Use this API to check the health status of the Cloud PC and the session host."
+description: "Troubleshoot a specific Cloud PC."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Troubleshoot a specific Cloud PC. Use this API to check the health status of the Cloud PC and the session host.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -52,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "troubleshoot_cloudpc"
@@ -63,10 +61,8 @@ If successful, this method returns a `204 No Content` response code.
 POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs/ff4eb6ab-d56a-4edf-90c1-baaec8dd6032/troubleshoot
 ```
 
----
-
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
