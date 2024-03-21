@@ -74,7 +74,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provision
 Content-Type: application/json
 
 {
-  "policySettings": ["region", "singleSignOn"]
+  "policySettings": "region"
 }
 ```
 
