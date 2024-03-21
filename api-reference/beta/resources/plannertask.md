@@ -73,7 +73,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

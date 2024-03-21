@@ -63,7 +63,7 @@ None.  Objects of this type can be retrieved from an access review using the [de
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
