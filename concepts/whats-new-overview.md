@@ -18,9 +18,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## March 2024: New and generally available
 
+### Applications
+
+[Perform a bulk upload as a synchronization job](/graph/api/synchronization-synchronizationjob-post-bulkupload) to ingest data into the Microsoft Entra ID synchronization service.
+
 ### Cross-device experiences
 
 Added the ability to list and get [Windows settings](/graph/api/resources/windowssetting) and [Windows settings instances](/graph/api/resources/windowssettinginstance).
+
+### Identity and access | Directory management
+
+The organization entity now returns the `CIAM` **tenantType** to identify tenants that are set up as Microsoft Entra ID for customers tenants, a customer identity & access management (CIAM) solution.
 
 ### Reports | Partner billing reports
 
@@ -28,9 +36,13 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ## March 2024: New in preview only
 
-### Files
+### Applications
 
-Use the [Get file by contentStream](/graph/api/driveitem-get-contentstream?view=graph-rest-beta&preserve-view=true) method to download file content directly instead of getting a `302` redirect URL.
+Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
+
+- [Upsert application](/graph/api/application-upsert)
+- [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert)
+- [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert)
 
 ### Device and app management | Cloud PC
 
@@ -40,6 +52,18 @@ The following properties are deprecated:
 - **healthCheckStatusDetails** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **healthCheckStatusDetail** property instead.
 - **additionalDetails** property on [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true); use the **additionalDetail** property instead.
 
+### Device and app management | Device updates
+
+Added methods to the Windows Updates API for Windows products, including [retrieval of known issues by time range](/graph/api/windowsupdates-product-getknownissuesbytimerange?view=graph-rest-beta&preserve-view=true), [finding product revisions by catalog ID](/graph/api/windowsupdates-product-findbycatalogid?view=graph-rest-beta&preserve-view=true), and [by knowledge base number](/graph/api/windowsupdates-product-findbykbnumber?view=graph-rest-beta&preserve-view=true).
+
+### Files
+
+Use the [Get file by contentStream](/graph/api/driveitem-get-contentstream?view=graph-rest-beta&preserve-view=true) method to download file content directly instead of getting a `302` redirect URL.
+
+### Groups
+
+Added the [upsert](/graph/api/group-upsert) capability to the [group resource type](/graph/api/resources/group). Use this capability to create a group if it doesn't exist, or update an existing group, by using the **uniqueName** client-provided key.
+
 ### Identity and access | Identity and sign-in
 
 Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-beta&preserve-view=true) and its associated methods to manage whether Microsoft Entra ID validates federation authentication tokens.
@@ -47,6 +71,10 @@ Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/fede
 ### Security | Email and collaboration protection
 
 Added the ability to list emails analyzed by Microsoft Defender for Office 365, get email related metadata, and perform response actions (soft delete, hard delete, move to junk, move to Inbox). 
+
+### Users
+
+Added the ability to convert an external user to an internal member user using the [user: convertExternalToInternalMemberUser](/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta&preserve-view=true) API. This conversion allows the converted users to maintain their existing user object and access, while gaining the full privileges of an internal member user in the tenant.
 
 ## February 2024: New and generally available
 
