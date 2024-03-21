@@ -62,7 +62,7 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH /directory/certificateAuthorities/certificateBasedApplicationConfigurations/d5b0af1c-9376-6b66-16b6-e402965862c1
+PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/certificateBasedApplicationConfigurations/d5b0af1c-9376-6b66-16b6-e402965862c1
 Content-Type: application/json
 
 {

@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/me/settings/windows/{windowsSettingId}/inst
 
 ---
 
-
 ### Response
 
 The following example shows the response.
