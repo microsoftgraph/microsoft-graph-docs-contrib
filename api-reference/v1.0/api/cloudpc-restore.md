@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Restore a specific Cloud PC. Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -44,7 +42,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/restore
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -58,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -76,8 +74,6 @@ Content-length: 37
     "cloudPcSnapshotId": "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8"
 }
 ```
-
----
 
 ### Response
 
