@@ -3,7 +3,7 @@ title: "Set up School Data Sync"
 description: "Learn how to set up School Data Sync to work with education APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

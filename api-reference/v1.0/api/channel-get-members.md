@@ -3,7 +3,7 @@ title: "Get member of channel"
 description: "Get member of channel."
 author: "akjo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Get member of team](team-get-members.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

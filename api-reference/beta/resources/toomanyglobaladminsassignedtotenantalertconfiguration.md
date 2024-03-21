@@ -3,7 +3,7 @@ title: "tooManyGlobalAdminsAssignedToTenantAlertConfiguration resource type"
 description: "Represents an alert configuration that is triggered if too many accounts in the tenant are assigned the Global Administrator Microsoft Entra role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

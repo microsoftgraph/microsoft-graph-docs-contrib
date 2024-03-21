@@ -3,7 +3,7 @@ title: "List people"
 description: "Retrieve a collection of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships."
 author: "anthona"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -199,7 +199,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - For details about the People API and more examples, see [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

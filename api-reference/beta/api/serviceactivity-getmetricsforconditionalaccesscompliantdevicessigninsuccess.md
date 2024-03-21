@@ -3,7 +3,7 @@ title: "serviceActivity: getMetricsForConditionalAccessCompliantDevicesSignInSuc
 description: "Get the number of user authentication requests, during a specified time period, that satisfy a Conditional Access policy that requires device compliance. Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid)."
 author: "Zacharypeng"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "cloudPcReports: getRealTimeRemoteConnectionLatency"
 description: "Get the real-time connection latency information for a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -55,7 +55,7 @@ If successful, this function returns a `200 OK` response code and a Stream in th
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

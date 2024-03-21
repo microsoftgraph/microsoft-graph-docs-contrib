@@ -3,7 +3,7 @@ title: "Update mobileAppCategory"
 description: "Update the properties of a mobileAppCategory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,9 +51,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The key of the entity.|
+|id|String|The key of the entity. This property is read-only.|
 |displayName|String|The name of the app category.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified. This property is read-only.|
 
 
 

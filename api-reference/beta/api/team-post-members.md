@@ -3,7 +3,7 @@ title: "Add member to team"
 description: "Add a new member to a team."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Add a new [conversation member](../resources/conversationmember.md) to a [team](../resources/team.md).
 
-> [!NOTE] 
+> [!NOTE]
 > The **roles** property will be empty by default for all members. This property only contains additional qualifiers when relevant - for example, if the member has `owner` privileges, the roles property contains `owner` as one of the values. Similarly, if the member is a guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -131,7 +131,7 @@ Content-type: application/json
     ],
     "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
     "displayName": "Cameron White",
-    "email": "CameronW@M365x987948.OnMicrosoft.com"
+    "email": "CameronW@contoso.com"
 }
 ```
 
@@ -215,7 +215,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Create member in channel](channel-post-members.md)
 

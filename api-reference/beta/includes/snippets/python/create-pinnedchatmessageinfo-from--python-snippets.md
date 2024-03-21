@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.pinned_chat_message_info import PinnedChatMessageInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

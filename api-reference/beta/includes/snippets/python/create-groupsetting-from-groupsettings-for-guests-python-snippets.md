@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.directory_setting import DirectorySetting
+from msgraph.generated.models.setting_value import SettingValue
 
 graph_client = GraphServiceClient(credentials, scopes)
 

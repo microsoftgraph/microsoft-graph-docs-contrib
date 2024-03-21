@@ -3,7 +3,7 @@ title: "Teacher and student actions for assignments and submissions"
 description: "Learn how to get the assignments and related submissions for Teachers and Students with state transition rules."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 
@@ -42,7 +42,7 @@ The following state transition rules are applicable for both student and teacher
 * A student can *turn in* the assignment only when the submission is in *working* or *reassigned* state.
 * The *return for revision* action makes the submission state as *reassigned*.
 
-## See also
+## Related content
 
 - [States, transitions, and limitations for assignments](./assignments-states-transition.md)
 - [States, transitions, and limitations for submissions](./submissions-states-transition.md)

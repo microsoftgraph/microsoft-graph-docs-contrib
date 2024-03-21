@@ -4,7 +4,7 @@ description: "Create a Focused Inbox override for a sender identified by an SMTP
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: mail
+ms.subservice: mail
 ---
 
 # Create inferenceClassificationOverride
@@ -50,7 +50,7 @@ If successful, this method returns `201 Created` response code and an [inference
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,7 +65,7 @@ Content-type: application/json
   "classifyAs": "focused",
   "senderEmailAddress": {
     "name": "Samantha Booth",
-    "address": "samanthab@adatum.onmicrosoft.com"
+    "address": "samanthab@contoso.com"
   }
 }
 ```
@@ -121,7 +121,7 @@ Content-type: application/json
   "classifyAs": "focused",
   "senderEmailAddress": {
     "name": "Samantha Booth",
-    "address": "samanthab@adatum.onmicrosoft.com"
+    "address": "samanthab@contoso.com"
   },
   "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
 }

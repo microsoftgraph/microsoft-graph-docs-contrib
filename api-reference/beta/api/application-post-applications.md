@@ -4,7 +4,7 @@ description: "Create a new application."
 author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Create application
@@ -50,7 +50,7 @@ If successful, this method returns `201 Created` response code and an [applicati
 
 ## Examples
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +101,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -127,7 +127,7 @@ Content-type: application/json
     "groupMembershipClaims": null,
     "optionalClaims": null,
     "addIns": [],
-    "publisherDomain": "contoso.onmicrosoft.com",
+    "publisherDomain": "contoso.com",
     "samlMetadataUrl": "https://graph.microsoft.com/2h5hjaj542de/app",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "tags": [],
@@ -166,7 +166,7 @@ Content-type: application/json
             "enableIdTokenIssuance": false,
             "enableAccessTokenIssuance": false
         }
-    }, 
+    },
     "windows" : null
 }
 ```

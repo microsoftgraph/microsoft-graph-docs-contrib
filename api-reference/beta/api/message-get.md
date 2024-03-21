@@ -3,7 +3,7 @@ title: "Get message"
 description: "Retrieve the properties and relationships of the message object."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -222,7 +222,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 ---
 
 #### Response
-The following example shows the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -243,32 +243,32 @@ Content-type: application/json
   "subject":"Start planning soon",
   "body":{
     "contentType":"HTML",
-    "content":"<html><head></head><body><p><a href=\"mailto:danas@contoso.onmicrosoft.com\">@Dana Swope</a>,<a href=\"mailto:randiw@contoso.onmicrosoft.com\">@Randi Welch</a>, forgot to mention, I will be away&nbsp;this weekend. I can start on Monday though.</p></body></html>"
+    "content":"<html><head></head><body><p><a href=\"mailto:danas@contoso.com\">@Dana Swope</a>,<a href=\"mailto:randiw@contoso.com\">@Randi Welch</a>, forgot to mention, I will be away&nbsp;this weekend. I can start on Monday though.</p></body></html>"
   },
-  "bodyPreview":"@Dana Swope<mailto:danas@contoso.onmicrosoft.com>, @Randi Welch, forgot to mention, I will be away this weekend. I can start on Monday though.",
+  "bodyPreview":"@Dana Swope<mailto:danas@contoso.com>, @Randi Welch, forgot to mention, I will be away this weekend. I can start on Monday though.",
   "sender":{
     "emailAddress":{
       "name":"Samantha Booth",
-      "address":"samanthab@contoso.onmicrosoft.com"
+      "address":"samanthab@contoso.com"
     }
   },
   "from":{
     "emailAddress":{
       "name":"Samantha Booth",
-      "address":"samanthab@contoso.onmicrosoft.com"
+      "address":"samanthab@contoso.com"
     }
   },
   "toRecipients":[
     {
       "emailAddress":{
         "name":"Dana Swope",
-        "address":"danas@contoso.onmicrosoft.com"
+        "address":"danas@contoso.com"
       }
     },
     {
       "emailAddress":{
         "name":"Randi Welch",
-        "address":"randiw@contoso.onmicrosoft.com"
+        "address":"randiw@contoso.com"
       }
     }
   ],
@@ -285,13 +285,13 @@ Content-type: application/json
       "id":"138f4c0a-1130-4776-b780-bf79d73abb3f",
       "mentioned":{
         "name":"Dana Swope",
-        "address":"danas@contoso.onmicrosoft.com"
+        "address":"danas@contoso.com"
       },
       "mentionText":null,
       "clientReference":null,
       "createdBy":{
         "name":"Samantha Booth",
-        "address":"samanthab@contoso.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
       },
       "createdDateTime":"2016-07-21T07:40:20.152Z",
       "serverCreatedDateTime":"2016-07-21T07:40:20.152Z",
@@ -303,13 +303,13 @@ Content-type: application/json
       "id":"7b94df1a-0086-482a-b0da-e62fae12f983",
       "mentioned":{
         "name":"Randi Welch",
-        "address":"randiw@contoso.onmicrosoft.com"
+        "address":"randiw@contoso.com"
       },
       "mentionText":null,
       "clientReference":null,
       "createdBy":{
         "name":"Samantha Booth",
-        "address":"samanthab@contoso.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
       },
       "createdDateTime":"2016-07-21T07:40:20.158Z",
       "serverCreatedDateTime":"2016-07-21T07:40:20.158Z",
@@ -457,7 +457,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 #### Response
 
-The following example shows the response. 
+The following example shows the response.
 
 >**Note:** The number of Internet message headers in the response object has been reduced for brevity.
 
@@ -650,7 +650,7 @@ YW5vdGhlciBtYWlsLg0K
 ```
 
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)
@@ -666,7 +666,6 @@ YW5vdGhlciBtYWlsLg0K
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: get_message_internet_headers/internetMessageHeaders/member/value:\r\n       Expected type String but actual was Binary. Property: value, actual value: 'binary'",
     "Error: getmessageinternet_headers/internetMessageHeaders/member/value:
       Expected type String but actual was Binary. Property: value, actual value: 'binary'"
   ]

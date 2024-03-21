@@ -3,7 +3,7 @@ title: "List roleAssignmentScheduleInstances"
 description: "Get the instances of active role assignments in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -19,6 +19,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "rbacapplication_list_roleassignmentscheduleinstances" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roleassignmentscheduleinstances-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

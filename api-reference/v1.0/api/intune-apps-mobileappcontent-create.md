@@ -3,7 +3,7 @@ title: "Create mobileAppContent"
 description: "Create a new mobileAppContent object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [mobileAp
 ### Request
 Here is an example of the request.
 
-<!-- { "blockType": "request" , "name" : "intune_apps_mobileappcontent_create_create_mobileappcontent" }-->
+<!-- { "blockType": "ignored" , "name" : "intune_apps_mobileappcontent_create_create_mobileappcontent" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions
 Content-type: application/json

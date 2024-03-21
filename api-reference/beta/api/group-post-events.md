@@ -1,9 +1,9 @@
 ---
 title: "Create event"
 description: "Use this API to create a new event."
-author: "Jordanndahl"
+author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code and an [event](
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -88,7 +88,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -215,14 +215,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "adelev@contoso.onmicrosoft.com"
+                "address": "adelev@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Retail",
-            "address": "Retail@contoso.onmicrosoft.com"
+            "address": "Retail@contoso.com"
         }
     }
 }

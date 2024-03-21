@@ -3,7 +3,7 @@ title: "operationApprovalSource enum type"
 description: "Source of the action on the approval request."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

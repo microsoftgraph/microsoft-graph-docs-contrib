@@ -2,11 +2,12 @@
 title: Manage users' authentication methods using Microsoft Graph"
 description: "Learn how to manage your users' authentication methods and get users registered to do multifactor authentication (MFA) and self-service password reset (SSPR)."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: jpeterre
 ms.localizationpriority: high
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ms.date: 01/18/2024
-ms.topic: conceptual
+ms.topic: concept-article
 #customer intent: As a developer, I want to understand what user authentication options are available for Microsoft Entra ID through Microsoft Graph, and how I can integrate them into my applications.
 ---
 
@@ -122,7 +123,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40M365x56085806.OnMicrosoft.com')/authentication/methods",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40contoso.com')/authentication/methods",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET users('<key>')/authentication/methods?$select=id",
     "value": [
         {
@@ -201,7 +202,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40M365x56085806.OnMicrosoft.com')/authentication/phoneMethods/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40contoso.com')/authentication/phoneMethods/$entity",
     "id": "3179e48a-750b-4051-897c-87b9720928f7",
     "phoneNumber": "+1 2065555555",
     "phoneType": "mobile",
@@ -270,7 +271,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40M365x56085806.OnMicrosoft.com')/authentication/methods",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('CameronW%40contoso.com')/authentication/methods",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET users('<key>')/authentication/methods?$select=id",
     "value": [
         {
@@ -388,7 +389,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/authenticationmethods-get-started-reset-password-1-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

@@ -1,16 +1,15 @@
 ---
 title: "Microsoft Graph SDK overview"
-description: "The Microsoft Graph SDK is available for the following languages: C#, PowerShell, TypeScript, JavaScript, Java, Go, PHP, and Python."
-ms.localizationpriority: medium
+description: Learn about the Microsoft Graph SDKs.
 author: MichaelMainer
 ms.custom: scenarios:getting-started
 ---
 
 # Microsoft Graph SDK overview
 
-The Microsoft Graph SDKs are designed to simplify building high-quality, efficient, resilient applications that access Microsoft Graph. The SDKs include two components: a service library and a core library.
+The Microsoft Graph software development kits (SDKs) are designed to simplify building high-quality, efficient, resilient applications that access Microsoft Graph. The SDKs include two components: a service library and a core library.
 
-The *service library* contains models and request builders generated from Microsoft Graph metadata. The service library provides a rich, strongly typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
+The *service library* contains models and request builders generated from Microsoft Graph metadata. The service library provides a rich, strongly-typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
 
 The *core library* provides features that enhance working with all the Microsoft Graph services. Embedded support for retry handling, secure redirects, transparent authentication, and payload compression improve the quality of your application's interactions with Microsoft Graph with no added complexity while leaving you entirely in control. The core library also supports everyday tasks such as paging through collections and creating batch requests.
 
@@ -35,12 +34,12 @@ In addition, don't use a preview release of an SDK in production apps, regardles
 
 A release of an SDK in *GA* status can use the Microsoft Graph API v1.0 endpoint or beta endpoint as specified. Because Microsoft Graph APIs in the beta endpoint are subject to breaking changes, don't use the production apps a GA release of an SDK that accesses the Microsoft Graph API beta endpoint.
 
-## Microsoft 365 developer subscription
+## SDK vs generated API client
 
-When you use Microsoft Graph to build applications, we recommend that you join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) to get a free Microsoft 365 developer subscription.
+In some cases, it's beneficial to use a Kiota-generated client instead of a Microsoft Graph SDK. For example, a developer that only uses a small subset of the Microsoft Graph APIs and wants to minimize the overall install size of their app can use Kiota to generate a smaller client library. For details, see [Generate Microsoft Graph client libraries with Kiota](generate-with-kiota.md).
 
-## See also
+## Related content
 
-- For more information about the features and capabilities of the SDK, see [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
+- Learn more about the features and capabilities of the SDK in the [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
 - Request or vote on new features at the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
-- For a list of samples for Microsoft Graph, see the [Microsoft Graph resources page](https://developer.microsoft.com/graph/gallery/?filterBy=Samples).
+- Learn about [generating Microsoft Graph client libraries with Kiota](generate-with-kiota.md) as an alternative to using an SDK.

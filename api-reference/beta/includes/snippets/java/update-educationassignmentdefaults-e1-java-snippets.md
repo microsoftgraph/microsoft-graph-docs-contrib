@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationAssignmentDefaults educationAssignmentDefaults = new EducationAssignmentDefaults();
-educationAssignmentDefaults.addedStudentAction = EducationAddedStudentAction.ASSIGN_IF_OPEN;
-educationAssignmentDefaults.addToCalendarAction = EducationAddToCalendarOptions.STUDENTS_AND_TEAM_OWNERS;
-educationAssignmentDefaults.notificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')";
+educationAssignmentDefaults.setAddedStudentAction(EducationAddedStudentAction.AssignIfOpen);
+educationAssignmentDefaults.setAddToCalendarAction(EducationAddToCalendarOptions.StudentsAndTeamOwners);
+educationAssignmentDefaults.setNotificationChannelUrl("https://graph.microsoft.com/beta/teams('id')/channels('id')");
+EducationAssignmentDefaults result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignmentDefaults().patch(educationAssignmentDefaults);
 
-graphClient.education().classes("{id}").assignmentDefaults()
-	.buildRequest()
-	.patch(educationAssignmentDefaults);
 
 ```

@@ -3,7 +3,7 @@ title: "Get userTeamwork"
 description: "Get user teamwork settings for a user such as user locale and user region."
 author: "mea"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ GET /users/{user-id}/teamwork
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [licenseDetails: getTeamsLicensingDetails](licenseDetails-getteamslicensingdetails.md)
 - [Get teamwork](teamwork-get.md)

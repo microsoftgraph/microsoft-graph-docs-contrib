@@ -3,7 +3,7 @@ title: "user: getMailTips"
 description: "Get the MailTips of one or more recipients as available to the signed-in user."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -65,8 +65,8 @@ Content-Type: application/json
 
 {
     "EmailAddresses": [
-        "danas@contoso.onmicrosoft.com",
-        "fannyd@contoso.onmicrosoft.com"
+        "danas@contoso.com",
+        "fannyd@contoso.com"
     ],
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
 }
@@ -107,7 +107,7 @@ Content-Type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -124,7 +124,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"",
-                "address":"danas@contoso.onmicrosoft.com"
+                "address":"danas@contoso.com"
             },
             "automaticReplies":{
                 "message":"<style type=\"text/css\" style=\"\">\r\n<!--\r\np\r\n\t{margin-top:0;\r\n\tmargin-bottom:0}\r\n-->\r\n</style>\r\n<div dir=\"ltr\">\r\n<div id=\"x_divtagdefaultwrapper\" style=\"font-size:12pt; color:#000000; background-color:#FFFFFF; font-family:Calibri,Arial,Helvetica,sans-serif\">\r\n<p>Hi, I am on vacation right now. I'll get back to you after I return.<br>\r\n</p>\r\n</div>\r\n</div>",
@@ -146,7 +146,7 @@ Content-type: application/json
         {
             "emailAddress":{
                 "name":"",
-                "address":"fannyd@contoso.onmicrosoft.com"
+                "address":"fannyd@contoso.com"
             },
             "automaticReplies":{
                 "message":""

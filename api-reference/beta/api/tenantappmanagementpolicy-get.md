@@ -3,7 +3,7 @@ title: "Get tenantAppManagementPolicy"
 description: "Read the default tenant policy that applies to applications and service principals objects."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "tenantappmanagementpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/tenantappmanagementpolicy-get-permissions.md)]
 
-[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
+[!INCLUDE [rbac-app-auth-method-policy-api-get](../includes/rbac-for-apis/rbac-app-auth-method-policy-api-get.md)]
 
 ## HTTP request
 

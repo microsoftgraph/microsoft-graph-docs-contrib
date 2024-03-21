@@ -22,6 +22,10 @@ var requestBody = new CloudPcProvisioningPolicy
 	{
 		Language = "en-US",
 	},
+	WindowsSetting = new CloudPcWindowsSetting
+	{
+		Locale = "en-US",
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPcProvisioningPolicy cloudPcProvisioningPolicy = graphClient.deviceManagement().virtualEndpoint().provisioningPolicies("{id}")
-	.buildRequest()
-	.expand("assignments")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+CloudPcProvisioningPolicy result = graphClient.deviceManagement().virtualEndpoint().provisioningPolicies().byCloudPcProvisioningPolicyId("{cloudPcProvisioningPolicy-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"assignments"};
+});
+
 
 ```

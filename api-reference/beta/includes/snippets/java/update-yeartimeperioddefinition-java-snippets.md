@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-YearTimePeriodDefinition yearTimePeriodDefinition = new YearTimePeriodDefinition();
-yearTimePeriodDefinition.displayName = "Fiscal Year 2022";
-yearTimePeriodDefinition.id = "ebf18762-ab92-487e-21d1-08daddab28bb";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().industryData().years("ebf18762-ab92-487e-21d1-08daddab28bb")
-	.buildRequest()
-	.patch(yearTimePeriodDefinition);
+com.microsoft.graph.beta.models.industrydata.YearTimePeriodDefinition yearTimePeriodDefinition = new com.microsoft.graph.beta.models.industrydata.YearTimePeriodDefinition();
+yearTimePeriodDefinition.setDisplayName("Fiscal Year 2022");
+yearTimePeriodDefinition.setId("ebf18762-ab92-487e-21d1-08daddab28bb");
+com.microsoft.graph.models.industrydata.YearTimePeriodDefinition result = graphClient.external().industryData().years().byYearTimePeriodDefinitionId("{yearTimePeriodDefinition-id}").patch(yearTimePeriodDefinition);
+
 
 ```

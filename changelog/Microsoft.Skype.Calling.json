@@ -3,6 +3,102 @@
     {
       "ChangeList": [
         {
+          "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatrestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatRestrictions](https://learn.microsoft.com/en-us/graph/api/resources/chatrestrictions?view=graph-rest-beta) resource type.",
+          "Target": "chatRestrictions"
+        },
+        {
+          "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatrestrictions** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-29T00:37:15.1713516Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "221bd9bc-1364-483a-a8b4-5dd149dccb0d",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingTemplateId** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "221bd9bc-1364-483a-a8b4-5dd149dccb0d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-13T18:42:26.7272329Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "email",
+          "ChangeType": "Addition",
+          "Description": "Added the **email** property to the [communicationsGuestIdentity](https://learn.microsoft.com/en-us/graph/api/resources/communicationsGuestIdentity?view=graph-rest-beta) resource.",
+          "Target": "communicationsGuestIdentity"
+        },
+        {
+          "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "identity",
+          "ChangeType": "Change",
+          "Description": "Changed the type in the **identity** property of the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        }
+      ],
+      "Id": "b431f36d-e22d-4af7-b67c-729c779785d5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-14T23:15:19.3741207Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8a7621e5-954c-4edc-a4f0-5b236c6fb333",
+          "ApiChange": "Property",
+          "ChangedApiName": "photo",
+          "ChangeType": "Addition",
+          "Description": "Added the **photo** property to the [virtualEventPresenterDetails](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenterDetails?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenterDetails"
+        },
+        {
+          "Id": "8a7621e5-954c-4edc-a4f0-5b236c6fb333",
+          "ApiChange": "Property",
+          "ChangedApiName": "profilePhoto",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **profilePhoto** property from the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        }
+      ],
+      "Id": "8a7621e5-954c-4edc-a4f0-5b236c6fb333",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-14T22:43:02.5475282Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "60037f2b-1ce0-4e10-9b3c-f7d0129153cd",
           "ApiChange": "Permission",
           "ChangedApiName": "VirtualEvent.ReadWrite",
@@ -233,6 +329,7 @@
       "CreatedDateTime": "2023-10-23T00:00:00Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+
     },
     {
       "ChangeList": [
@@ -3853,6 +3950,148 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-01-05T18:20:26.249248Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "virtualAppointmentMessageType",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualAppointmentMessageType** enumeration type.",
+          "Target": "virtualAppointmentMessageType"
+        },
+        {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "virtualAppointmentSmsType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `virtualAppointmentSmsType` parameter from the [virtualappointment-sendvirtualappointmentsms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta) method",
+          "Target": "virtualappointment-sendvirtualappointmentsms"
+        },
+        {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "remindBeforeTimeInMinutesType",
+          "ChangeType": "Addition",
+          "Description": "Added the **remindBeforeTimeInMinutesType** enumeration type.",
+          "Target": "remindBeforeTimeInMinutesType"
+        },
+        {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendeeNotificationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [attendeeNotificationInfo](https://learn.microsoft.com/en-us/graph/api/resources/attendeeNotificationInfo?view=graph-rest-beta) resource type.",
+          "Target": "attendeeNotificationInfo"
+        },
+        {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "phonenumbers",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the `phonenumbers` parameter from the [sendvirtualappointmentremindersms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-beta) method.",
+          "Target": "virtualappointment-sendvirtualappointmentremindersms"
+        },
+        {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "attendees",
+          "ChangeType": "Addition",
+          "Description": "Added the `attendees` parameter to the [sendvirtualappointmentremindersms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-beta) method.",
+          "Target": "virtualappointment-sendvirtualappointmentremindersms"
+        },
+         {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "phonenumbers",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the `phonenumbers` parameter from the [sendvirtualappointmentsms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta) method.",
+          "Target": "virtualappointment-sendvirtualappointmentsms"
+        },
+        {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "attendes",
+          "ChangeType": "Addition",
+          "Description": "Added the `attendees` parameter to the [sendvirtualappointmentsms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta) method.",
+          "Target": "virtualappointment-sendvirtualappointmentsms"
+        },
+         {
+          "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "messageType",
+          "ChangeType": "Addition",
+          "Description": "Added the `messageType` parameter to the [sendvirtualappointmentsms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-beta) method.",
+          "Target": "virtualappointment-sendvirtualappointmentsms"
+        }
+      ],
+      "Id": "0d548e18-3190-4395-92c9-94a3a648be76",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-13T18:27:56.0497959Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "109f50a2-73ac-4d8a-9163-6cb95135eeeb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "remindBeforeTimeInMinutesType",
+          "ChangeType": "Addition",
+          "Description": "Added the **remindBeforeTimeInMinutesType** enumeration type.",
+          "Target": "remindBeforeTimeInMinutesType"
+        },
+        {
+          "Id": "109f50a2-73ac-4d8a-9163-6cb95135eeeb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "virtualAppointmentMessageType",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualAppointmentMessageType** enumeration type.",
+          "Target": "virtualAppointmentMessageType"
+        },
+        {
+          "Id": "109f50a2-73ac-4d8a-9163-6cb95135eeeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendeeNotificationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [attendeeNotificationInfo](https://learn.microsoft.com/en-us/graph/api/resources/attendeeNotificationInfo?view=graph-rest-1.0) resource.",
+          "Target": "attendeeNotificationInfo"
+        }
+      ],
+      "Id": "109f50a2-73ac-4d8a-9163-6cb95135eeeb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-24T02:49:45.3700216Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2f739fed-64d3-476a-a49d-c2370af7bf9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "sendVirtualAppointmentReminderSms",
+          "ChangeType": "Addition",
+          "Description": "Added the [sendVirtualAppointmentReminderSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0) method to the [virtualappointment](https://learn.microsoft.com/en-us/graph/api/resources/virtualappointment?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "2f739fed-64d3-476a-a49d-c2370af7bf9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "sendVirtualAppointmentSms",
+          "ChangeType": "Addition",
+          "Description": "Added the [sendVirtualAppointmentSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0) method to the [virtualappointment](https://learn.microsoft.com/en-us/graph/api/resources/virtualappointment?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "2f739fed-64d3-476a-a49d-c2370af7bf9e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-24T02:49:45.3707057Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }

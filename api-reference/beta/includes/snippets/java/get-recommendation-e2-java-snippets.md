@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-RecommendationCollectionPage recommendations = graphClient.directory().recommendations()
-	.buildRequest()
-	.filter("recommendationType eq 'turnOffPerUserMFA'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+RecommendationCollectionResponse result = graphClient.directory().recommendations().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.filter = "recommendationType eq 'turnOffPerUserMFA'";
+});
+
 
 ```

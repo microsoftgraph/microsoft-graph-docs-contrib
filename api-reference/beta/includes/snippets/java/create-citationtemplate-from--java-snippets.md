@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CitationTemplate citationTemplate = new CitationTemplate();
-citationTemplate.displayName = "String";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.models.security.CitationTemplate citationTemplate = new com.microsoft.graph.beta.models.security.CitationTemplate();
+citationTemplate.setOdataType("#microsoft.graph.security.citationTemplate");
+citationTemplate.setDisplayName("String");
 IdentitySet createdBy = new IdentitySet();
-citationTemplate.createdBy = createdBy;
-citationTemplate.citationUrl = "String";
-citationTemplate.citationJurisdiction = "String";
+createdBy.setOdataType("microsoft.graph.identitySet");
+citationTemplate.setCreatedBy(createdBy);
+citationTemplate.setCitationUrl("String");
+citationTemplate.setCitationJurisdiction("String");
+com.microsoft.graph.models.security.CitationTemplate result = graphClient.security().labels().citations().post(citationTemplate);
 
-graphClient.security().labels().citations()
-	.buildRequest()
-	.post(citationTemplate);
 
 ```

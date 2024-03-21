@@ -3,7 +3,7 @@ title: "Delete tab from chat"
 description: "Remove (unpin) a tab from the specified chat. "
 author: "subray"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -102,7 +102,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-## See also
+## Related content
 
 - [Delete tab from channel](channel-delete-tabs.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

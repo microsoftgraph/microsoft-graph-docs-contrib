@@ -4,43 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String filter = "EventDateTime gt datetime'2023-04-16T07:40:41.694Z'";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String search = "";
+com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getconnectionqualityreports.GetConnectionQualityReportsPostRequestBody getConnectionQualityReportsPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getconnectionqualityreports.GetConnectionQualityReportsPostRequestBody();
+getConnectionQualityReportsPostRequestBody.setFilter("EventDateTime gt datetime'2023-04-16T07:40:41.694Z'");
+getConnectionQualityReportsPostRequestBody.setSearch("");
+LinkedList<String> select = new LinkedList<String>();
+select.add("CloudPcId");
+select.add("ManagedDeviceName");
+select.add("AvgRoundTripTimeInMsP50");
+select.add("LastConnectionRoundTripTimeInMs");
+select.add("AvgAvailableBandwidthInMBpsP50");
+select.add("LastConnectionAvailableBandWidthInMSps");
+select.add("AvgRemoteSignInTimeInSecP50");
+select.add("UDPConnectionPercentage");
+select.add("LastConnectionGateway");
+select.add("LastConnectionProtocol");
+select.add("EventDateTime");
+getConnectionQualityReportsPostRequestBody.setSelect(select);
+getConnectionQualityReportsPostRequestBody.setSkip(0);
+getConnectionQualityReportsPostRequestBody.setTop(25);
+LinkedList<String> orderBy = new LinkedList<String>();
+getConnectionQualityReportsPostRequestBody.setOrderBy(orderBy);
+graphClient.deviceManagement().virtualEndpoint().reports().getConnectionQualityReports().post(getConnectionQualityReportsPostRequestBody);
 
-LinkedList<String> selectList = new LinkedList<String>();
-selectList.add("CloudPcId");
-selectList.add("ManagedDeviceName");
-selectList.add("AvgRoundTripTimeInMsP50");
-selectList.add("LastConnectionRoundTripTimeInMs");
-selectList.add("AvgAvailableBandwidthInMBpsP50");
-selectList.add("LastConnectionAvailableBandWidthInMSps");
-selectList.add("AvgRemoteSignInTimeInSecP50");
-selectList.add("UDPConnectionPercentage");
-selectList.add("LastConnectionGateway");
-selectList.add("LastConnectionProtocol");
-selectList.add("EventDateTime");
-
-int skip = 0;
-
-int top = 25;
-
-LinkedList<String> orderByList = new LinkedList<String>();
-
-graphClient.deviceManagement().virtualEndpoint().reports()
-	.getConnectionQualityReports(CloudPcReportsGetConnectionQualityReportsParameterSet
-		.newBuilder()
-		.withFilter(filter)
-		.withSelect(selectList)
-		.withSearch(search)
-		.withGroupBy(null)
-		.withOrderBy(orderByList)
-		.withSkip(skip)
-		.withTop(top)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

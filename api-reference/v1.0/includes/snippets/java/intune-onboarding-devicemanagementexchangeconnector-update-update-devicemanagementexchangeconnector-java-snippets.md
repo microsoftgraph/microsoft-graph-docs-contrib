@@ -4,21 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceManagementExchangeConnector deviceManagementExchangeConnector = new DeviceManagementExchangeConnector();
-deviceManagementExchangeConnector.lastSyncDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:02:49.3205976+00:00");
-deviceManagementExchangeConnector.status = DeviceManagementExchangeConnectorStatus.CONNECTION_PENDING;
-deviceManagementExchangeConnector.primarySmtpAddress = "Primary Smtp Address value";
-deviceManagementExchangeConnector.serverName = "Server Name value";
-deviceManagementExchangeConnector.connectorServerName = "Connector Server Name value";
-deviceManagementExchangeConnector.exchangeConnectorType = DeviceManagementExchangeConnectorType.HOSTED;
-deviceManagementExchangeConnector.version = "Version value";
-deviceManagementExchangeConnector.exchangeAlias = "Exchange Alias value";
-deviceManagementExchangeConnector.exchangeOrganization = "Exchange Organization value";
+deviceManagementExchangeConnector.setOdataType("#microsoft.graph.deviceManagementExchangeConnector");
+OffsetDateTime lastSyncDateTime = OffsetDateTime.parse("2017-01-01T00:02:49.3205976-08:00");
+deviceManagementExchangeConnector.setLastSyncDateTime(lastSyncDateTime);
+deviceManagementExchangeConnector.setStatus(DeviceManagementExchangeConnectorStatus.ConnectionPending);
+deviceManagementExchangeConnector.setPrimarySmtpAddress("Primary Smtp Address value");
+deviceManagementExchangeConnector.setServerName("Server Name value");
+deviceManagementExchangeConnector.setConnectorServerName("Connector Server Name value");
+deviceManagementExchangeConnector.setExchangeConnectorType(DeviceManagementExchangeConnectorType.Hosted);
+deviceManagementExchangeConnector.setVersion("Version value");
+deviceManagementExchangeConnector.setExchangeAlias("Exchange Alias value");
+deviceManagementExchangeConnector.setExchangeOrganization("Exchange Organization value");
+DeviceManagementExchangeConnector result = graphClient.deviceManagement().exchangeConnectors().byDeviceManagementExchangeConnectorId("{deviceManagementExchangeConnector-id}").patch(deviceManagementExchangeConnector);
 
-graphClient.deviceManagement().exchangeConnectors("{deviceManagementExchangeConnectorId}")
-	.buildRequest()
-	.patch(deviceManagementExchangeConnector);
 
 ```

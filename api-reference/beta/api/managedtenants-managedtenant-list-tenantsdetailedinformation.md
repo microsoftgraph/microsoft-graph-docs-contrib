@@ -3,7 +3,7 @@ title: "List tenantDetailedInformation"
 description: "Get a list of the tenantDetailedInformation objects and their properties."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 
@@ -114,7 +114,7 @@ Content-Type: application/json
       "id": "34298981-4fc8-4974-9486-c8909ed1521b",
       "tenantId": "34298981-4fc8-4974-9486-c8909ed1521b",
       "companyName": "Fourth Coffee",
-      "defaultDomainName": "fourthcoffee001.onmicrosoft.com",
+      "defaultDomainName": "contoso.com",
       "countryName": "United States",
       "countryCode": "US",
       "city": "Redmond",
@@ -127,7 +127,7 @@ Content-Type: application/json
       "id": "38227791-a88b-4fcc-81c5-58cf77668320",
       "tenantId": "38227791-a88b-4fcc-81c5-58cf77668320",
       "companyName": "Consolidated Messenger",
-      "defaultDomainName": "consoldiatedmessenger001.onmicrosoft.com",
+      "defaultDomainName": "contoso.com",
       "countryName": "United States",
       "countryCode": "US",
       "city": "Redmond",

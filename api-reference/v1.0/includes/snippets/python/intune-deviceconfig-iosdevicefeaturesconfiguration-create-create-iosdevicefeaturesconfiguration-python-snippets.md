@@ -4,7 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.ios_device_features_configuration import IosDeviceFeaturesConfiguration
+from msgraph.generated.models.ios_home_screen_item import IosHomeScreenItem
+from msgraph.generated.models.ios_home_screen_folder import IosHomeScreenFolder
+from msgraph.generated.models.ios_home_screen_folder_page import IosHomeScreenFolderPage
+from msgraph.generated.models.ios_home_screen_app import IosHomeScreenApp
+from msgraph.generated.models.ios_home_screen_page import IosHomeScreenPage
+from msgraph.generated.models.ios_notification_settings import IosNotificationSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

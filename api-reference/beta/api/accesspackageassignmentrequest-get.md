@@ -3,7 +3,7 @@ title: "Get accessPackageAssignmentRequest"
 description: "Retrieve the properties and relationships of an accessPackageAssignmentRequest object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

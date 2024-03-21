@@ -3,7 +3,7 @@ title: "Get bookingAppointment"
 description: "Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/appointments/{id}
+GET /solutions/bookingBusinesses/{id}/appointments/{id}
 ```
 
 ## Optional query parameters
@@ -56,10 +56,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_bookingappointment",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "AAMkADKnAAA="]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "AAMkADKnAAA="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
+GET https://graph.microsoft.com/beta/solutions/bookingBusinesses/contosolunchdelivery@contoso.com/appointments/AAMkADKnAAA=
 ```
 
 # [C#](#tab/csharp)
@@ -86,10 +86,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/php/get-bookingappointment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingappointment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-bookingappointment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -111,7 +107,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/appointments/$entity",
     "id": "AAMkADKnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,
@@ -137,6 +133,7 @@ Content-type: application/json
     "invoiceAmount": 10.0,
     "invoiceId": "1001",
     "invoiceStatus": "open",
+    "isCustomerAllowedToManageBooking": false,
     "invoiceUrl": "theInvoiceUrl",
     "customerLocation": {
         "displayName": "Customer",
@@ -225,7 +222,7 @@ Content-type: application/json
             "emailAddress": "jordanm@contoso.com",
             "phone": "213-555-0199",
             "notes": null,
-            "location": 
+            "location":
             {
                 "displayName": "Customer",
                 "locationEmailAddress": null,
@@ -233,7 +230,7 @@ Content-type: application/json
                 "locationType": null,
                 "uniqueId": null,
                 "uniqueIdType": null,
-                "address": 
+                "address":
                 {
                     "type": "home",
                     "postOfficeBox": "",

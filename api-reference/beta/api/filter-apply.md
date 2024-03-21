@@ -4,7 +4,7 @@ description: "Apply the given filter criteria on the given column."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 ---
 
 # filter: apply
@@ -51,7 +51,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 ## Example
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ForwardingProfileCollectionPage forwardingProfiles = graphClient.networkAccess().connectivity().branches("{branchSiteId}").forwardingProfiles()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.models.networkaccess.ForwardingProfileCollectionResponse result = graphClient.networkAccess().connectivity().branches().byBranchSiteId("{branchSite-id}").forwardingProfiles().get();
+
 
 ```

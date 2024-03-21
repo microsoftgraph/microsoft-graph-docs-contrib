@@ -3,7 +3,7 @@ title: "Delete identityProvider"
 description: "Delete an existing identityProvider"
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

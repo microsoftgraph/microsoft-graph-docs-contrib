@@ -3,7 +3,7 @@ title: "Industry data enum values"
 description: "Microsoft Graph industry data subnamespace enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 author: "mlafleur"
 ---
 

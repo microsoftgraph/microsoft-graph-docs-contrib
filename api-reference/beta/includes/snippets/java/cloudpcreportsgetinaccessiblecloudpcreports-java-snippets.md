@@ -4,44 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String filter = "region eq 'westus2'";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<String> orderByList = new LinkedList<String>();
-orderByList.add("cloudPcId");
+com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getinaccessiblecloudpcreports.GetInaccessibleCloudPcReportsPostRequestBody getInaccessibleCloudPcReportsPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getinaccessiblecloudpcreports.GetInaccessibleCloudPcReportsPostRequestBody();
+getInaccessibleCloudPcReportsPostRequestBody.setFilter("region eq 'westus2'");
+LinkedList<String> orderBy = new LinkedList<String>();
+orderBy.add("cloudPcId");
+getInaccessibleCloudPcReportsPostRequestBody.setOrderBy(orderBy);
+LinkedList<String> select = new LinkedList<String>();
+select.add("cloudPcId");
+select.add("aadDeviceId");
+select.add("cloudPcName");
+select.add("userPrincipalName");
+select.add("provisioningStatus");
+select.add("region");
+select.add("deviceHealthStatus");
+select.add("deviceHealthStatusDateTime");
+select.add("recentDeviceHealthFailureCount");
+select.add("recentConnectionFailureCount");
+select.add("systemStatus");
+select.add("systemStatusDateTime");
+getInaccessibleCloudPcReportsPostRequestBody.setSelect(select);
+getInaccessibleCloudPcReportsPostRequestBody.setTop(10);
+getInaccessibleCloudPcReportsPostRequestBody.setSkip(0);
+graphClient.deviceManagement().virtualEndpoint().reports().getInaccessibleCloudPcReports().post(getInaccessibleCloudPcReportsPostRequestBody);
 
-LinkedList<String> selectList = new LinkedList<String>();
-selectList.add("cloudPcId");
-selectList.add("aadDeviceId");
-selectList.add("cloudPcName");
-selectList.add("userPrincipalName");
-selectList.add("provisioningStatus");
-selectList.add("region");
-selectList.add("deviceHealthStatus");
-selectList.add("deviceHealthStatusDateTime");
-selectList.add("recentDeviceHealthFailureCount");
-selectList.add("recentConnectionFailureCount");
-selectList.add("systemStatus");
-selectList.add("systemStatusDateTime");
-
-int top = 10;
-
-int skip = 0;
-
-graphClient.deviceManagement().virtualEndpoint().reports()
-	.getInaccessibleCloudPcReports(CloudPcReportsGetInaccessibleCloudPcReportsParameterSet
-		.newBuilder()
-		.withReportName(null)
-		.withFilter(filter)
-		.withSelect(selectList)
-		.withSearch(null)
-		.withGroupBy(null)
-		.withOrderBy(orderByList)
-		.withSkip(skip)
-		.withTop(top)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

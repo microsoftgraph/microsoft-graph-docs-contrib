@@ -3,7 +3,7 @@ title: "call: addLargeGalleryView"
 description: "Add the large gallery view to a call."
 author: "navali-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -160,7 +160,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Identify large gallery view participants in a roster](/graph/cloud-communications-identifylargegalleryview)
 

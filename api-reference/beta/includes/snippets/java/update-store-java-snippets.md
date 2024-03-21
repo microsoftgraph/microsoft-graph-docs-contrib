@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Store store = new Store();
-store.defaultLanguageTag = "en-US";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.termStore()
-	.buildRequest()
-	.patch(store);
+com.microsoft.graph.beta.models.termstore.Store store = new com.microsoft.graph.beta.models.termstore.Store();
+store.setDefaultLanguageTag("en-US");
+com.microsoft.graph.models.termstore.Store result = graphClient.termStore().patch(store);
+
 
 ```

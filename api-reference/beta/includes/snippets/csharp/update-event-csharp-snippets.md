@@ -19,7 +19,6 @@ var requestBody = new Event
 		Time = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
 	},
 	Recurrence = null,
-	Uid = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
 	IsOnlineMeeting = true,
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,

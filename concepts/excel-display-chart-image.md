@@ -3,7 +3,7 @@ title: "Display a chart image in Excel"
 description: "When you retrieve a chart image, the Excel API in Microsoft Graph returns the image as a base-64 string that you can display inside an HTML image tag."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Display a chart image in Excel
@@ -22,7 +22,7 @@ Following is an example of a chart image returned with the default parameters.
 
 If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
 
-## See also
+## Related content
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)

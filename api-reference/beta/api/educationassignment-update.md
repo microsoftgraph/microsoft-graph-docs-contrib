@@ -3,7 +3,7 @@ title: "Update educationassignment"
 description: "Update an educationAssigment object."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and an updated [educationAssignment](../resources/educationassignment.md) object in the response body.
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +117,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -179,7 +179,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 * [Specify the default channel for education assignment notifications](/graph/education-build-notificationchannelurl)

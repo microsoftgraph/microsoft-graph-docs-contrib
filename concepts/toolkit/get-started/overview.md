@@ -17,7 +17,7 @@ For a step-by-step tutorial, see the [Get started with Microsoft Graph Toolkit](
 
 ## Set up your Microsoft 365 tenant
 
-To use Microsoft Graph Toolkit to develop an app, you need access to a Microsoft 365 tenant. If you don't have one, you can get a free Microsoft 365 developer subscription by [joining the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). For details about how to configure your subscription, see [Set up a Microsoft 365 developer subscription](/office/developer-program/microsoft-365-developer-program-get-started).
+To use Microsoft Graph Toolkit to develop an app, you need access to a Microsoft 365 tenant. If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
 
 ## Set up your development environment
 
@@ -29,44 +29,80 @@ To develop with the toolkit, you need:
 
 ## Use Microsoft Graph Toolkit
 
-You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via `unpkg`) or by installing the `npm` package.
-
-# [unpkg](#tab/html)
-
-To use the toolkit via `mgt-loader`, add the reference in a script to your code:
-
-```html
-<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
-
-<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
-<mgt-login></mgt-login>
-```
+You can use Microsoft Graph Toolkit in your application by installing the `npm` packages or referencing the loader directly (via `unpkg`).
 
 # [package](#tab/package)
 
-Using the toolkit via ES6 modules gives you full control of the bundling process and allows you to bundle only the code that you need for your application. To use the ES6 modules, add the package to your project:
+Using the toolkit via ES6 modules gives you full control of the bundling process and allows you to bundle only the code that you need for your application. To use the ES6 modules, add the `@microsoft/mgt-element`, `@microsoft/mgt-components`, and `@microsoft/mgt-msal2-provider` packages to your project:
 
 ```cmd
-npm install @microsoft/mgt
+npm install @microsoft/mgt-element @microsoft/mgt-components @microsoft/mgt-msal2-provider
 ```
 
-Now you can reference all the components on the page that you're using:
+To use the components as a custom element in HTML, they must be registered. To use the components in your code, import and run the necessary component registration function. The following example shows how to do that for the agenda and login components:
 
 ```html
-<script
-  type="module"
-  src="node_modules/@microsoft/mgt/dist/es6/index.js"
-></script>
+<script type="module">
+  import { registerMgtMsal2Provider } from 'node_modules/@microsoft/mgt-msal2-provider/dist/es6/index.js';
+  import { registerMgtLoginComponent, registerMgtAgendaComponent } from 'node_modules/@microsoft/mgt-components/dist/es6/index.js';
+  registerMgtMsal2Provider();
+  registerMgtLoginComponent();
+  registerMgtAgendaComponent();
+</script>
 
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 <mgt-agenda></mgt-agenda>
 ```
 
----
+As a shortcut, if you want to register all the components from `@microsoft/mgt-components`, you can use the `registerMgtComponents()` helper method. Declarative usage of providers still requires that the appropriate provider is registered separately because they are sourced from different packages. 
+
+```html
+<script type="module">
+  import { registerMgtMsal2Provider } from 'node_modules/@microsoft/mgt-msal2-provider/dist/es6/index.js';
+  import { registerMgtComponents } from 'node_modules/@microsoft/mgt-components/dist/es6/index.js';
+  registerMgtMsal2Provider();
+  registerMgtComponents();
+</script>
+
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
+<mgt-login></mgt-login>
+<mgt-agenda></mgt-agenda>
+```
+
+> [!IMPORTANT]
+> When working with a tree-shaking supporting bundler such as Webpack or Rollup, you will want to import and register the individual components. This ensures that any unused components are tree-shaken out of your builds.
+
+You can also configure the provider imperatively, as shown in the following example:
+
+```html
+<script type="module">
+  import { Providers } from 'node_modules/@microsoft/mgt-element/dist/es6/index.js';
+  import { Msal2Provider } from 'node_modules/@microsoft/mgt-msal2-provider/dist/es6/index.js';
+  import { registerMgtComponents } from 'node_modules/@microsoft/mgt-components/dist/es6/index.js';
+  Providers.globalProvider = new Msal2Provider({clientId: '<YOUR_CLIENT_ID>'});
+  registerMgtComponents();
+</script>
+<mgt-login></mgt-login>
+<mgt-agenda></mgt-agenda>
+```
+
+# [CDN](#tab/html)
+
+To use the toolkit via a CDN, add the following script and markup to your HTML page:
+
+```html
+<script type="module">
+  import { registerMgtComponents, Providers, Msal2Provider } from 'https://unpkg.com/@microsoft/mgt@4';
+  Providers.globalProvider = new Msal2Provider({clientId: '[CLIENT-ID]'});
+  registerMgtComponents();
+</script>
+<mgt-login></mgt-login>
+```
 
 ### Packages
 
-Microsoft Graph Toolkit is made up of several packages, allowing you to only include the code that you need for your applications.
+Microsoft Graph Toolkit is made up of several packages. This allows you to include only the code that you need for your applications.
 
 <b>@microsoft/mgt-element</b>
 
@@ -94,7 +130,7 @@ Providers are available via a single package and can be installed as needed. The
 
 <b>@microsoft/mgt</b>
 
-The `@microsoft/mgt` package is the main package that includes all the preceding packages and re-exports them so they're available via a single package that you can install.
+The `@microsoft/mgt` package is a wrapper package that includes all the preceding packages and re-exports them so they're available via a single package that you can install. This package also includes the `mgt.js` script, which can be used via a CDN link.
 
 <b>@microsoft/mgt-react</b>
 

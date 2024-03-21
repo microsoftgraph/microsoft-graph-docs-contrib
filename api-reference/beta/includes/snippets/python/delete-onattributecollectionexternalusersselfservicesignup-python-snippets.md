@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.$ref_delete_request_body import $refDeleteRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

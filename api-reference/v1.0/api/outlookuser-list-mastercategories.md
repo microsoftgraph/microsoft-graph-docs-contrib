@@ -3,7 +3,7 @@ title: "List Outlook categories"
 description: "Get all the categories that have been defined for the user."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

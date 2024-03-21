@@ -3,7 +3,7 @@ title: "Create absolute positioned elements on OneNote pages using the OneNote A
 description: "Use the data-absolute-enabled and style attributes to create absolute positioned elements on a page, including multiple direct div, img, and object child elements."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 
@@ -155,7 +155,7 @@ For more information about permission scopes and how they work, see [OneNote per
 
 <a name="see-also"></a>
 
-## See also
+## Related content
 
 - [Create OneNote pages](onenote-create-page.md)
 - [Update OneNote page content](onenote-update-page.md)

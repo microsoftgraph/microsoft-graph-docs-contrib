@@ -3,7 +3,7 @@ title: "List printConnectors"
 description: "Retrieve a list of connectors."
 author: "nilakhan"
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

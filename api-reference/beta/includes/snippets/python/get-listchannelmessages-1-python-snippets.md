@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.teams.item.channels.item.messages.messages_request_builder import MessagesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
