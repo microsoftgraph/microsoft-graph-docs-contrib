@@ -3,7 +3,7 @@ title: "cloudPC: endGracePeriod"
 description: "End the grace period for a specific Cloud PC."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 End the grace period for a specific Cloud PC. The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned. It allows users to access Cloud PCs for up to seven days before deprovisioning occurs. Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -51,6 +49,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "endgraceperiod_cloudpc"
@@ -61,9 +61,9 @@ If successful, this method returns a `204 No Content` response code.
 POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs/4b18de4b-ab05-4059-8c61-0323a7df4ced/endGracePeriod
 ```
 
----
-
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
