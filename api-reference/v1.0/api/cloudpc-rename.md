@@ -1,9 +1,9 @@
 ---
 title: "cloudPC: rename"
-description: "Rename a specific Cloud PC. Use this API to update the displayName for the Cloud PC entity."
+description: "Rename a specific Cloud PC."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Rename a specific Cloud PC. Use this API to update the **displayName** for the Cloud PC entity.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+Rename a specific Cloud PC. Use this API to update the **displayName** of a Cloud PC entity.
 
 ## Permissions
 
@@ -46,7 +44,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/rename
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter thatyou can use with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -58,9 +56,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Rename the cloudPC for the administrator
+### Request
 
-#### Request
+The following example shows a request to rename a cloudPC for the administrator.
 
 <!-- {
   "blockType": "request",
@@ -77,10 +75,8 @@ Content-Type: application/json
 }
 ```
 
----
-
-#### Response
-
+### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
