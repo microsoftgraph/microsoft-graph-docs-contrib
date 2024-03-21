@@ -61,12 +61,12 @@ Represents a defined collection of Azure resource information that can be used t
 
 |Member|Description|
 |:---|:---|
-|pending|Default. Indicates the  Cloud PC Azure network connection health check is initiated and waiting for completion.|
+|pending|Default. Indicates the Cloud PC Azure network connection health check is initiated and waiting for completion.|
 |running|Indicates the Cloud PC Azure network connection health checks are still running.|
-|passed|Indicates Cloud the PC Azure network connection health checks are completed and passed. Customers can provision their Cloud PC without any issues.​|
-|failed|Indicates Cloud PC Azure network connection health checks are now completed, with failures. The customer's environment isn't properly configured, which leads to provisioning Cloud PC failure. The customer needs to identify the issue and resolve it using the guidance provided by the on-premises connection for provisioning successfully.|
-|warning|Indicates Cloud PC Azure network connection health checks are now completed, with failures. The customer's environment is not properly configured, which leads to provisioning Cloud PC failure. The customer needs to identify the issue and resolve it using the guidance provided by the on-premises connection for provisioning successfully.|
-|informational|Indicates Cloud PC Azure network connection health checks are now completed, with health check information. Health checks provide information to customers about current or associated prerequisite checks status on Cloud PC add-on features such as Single Sign-On. It doesn't affect the provisioning of our customers' Cloud PCs but intends to optimize user experience.|
+|passed|Indicates the Cloud the PC Azure network connection health checks are completed and passed. Customers can provision their Cloud PC without any issues.​|
+|failed|Indicates the Cloud PC Azure network connection health checks are now completed, with failures. The customer's environment isn't properly configured, which leads to provisioning Cloud PC failure. The customer needs to identify and resolve the issue using the guidance provided by the on-premises connection for provisioning successfully.|
+|warning|Indicates the Cloud PC Azure network connection health checks are now completed, with failures. The customer's environment is not properly configured, which leads to provisioning Cloud PC failure. The customer needs to identify and resolve the issue using the guidance provided by the on-premises connection for provisioning successfully.|
+|informational|Indicates the Cloud PC Azure network connection health checks are now completed, with health check information. Health checks provide information to customers about current or associated prerequisite checks status on Cloud PC add-on features such as Single Sign-On. It doesn't affect the provisioning of our customers' Cloud PCs but intends to optimize user experience.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
