@@ -68,7 +68,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
+PATCH https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/default
 Content-Type: application/json
 
 {
@@ -120,7 +120,7 @@ HTTP/1.1 204 No Content
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
+PATCH https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/default
 Content-Type: application/json
 
 {
@@ -157,7 +157,7 @@ HTTP/1.1 204 No Content
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
+PATCH https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/default
 Content-Type: application/json
 
 {
