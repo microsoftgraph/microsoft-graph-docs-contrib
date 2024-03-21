@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
+|[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices in a tenant.|
 
 ## Properties
 
@@ -32,8 +32,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPCs|[cloudPC](../resources/cloudpc.md) collection|This Cloud PC is also enrolled into Intune and managed through the Microsoft Endpoint Manager portal, so the Cloud PC also has a corresponding Intune managed device ID.|
-|provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
+|cloudPCs|[cloudPC](../resources/cloudpc.md) collection|A collection of cloud-managed virtual desktops.|
 
 ## JSON representation
 
