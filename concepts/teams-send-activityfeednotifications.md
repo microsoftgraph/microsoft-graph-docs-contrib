@@ -81,7 +81,7 @@ Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). T
   - By default, you can use the activity notification APIs without declaring the `activities` section in the manifest. The `systemDefault` activity type is reserved, allowing you to provide free-form text in the `Actor+Reason` line of the activity feed notification.  For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
     > [!NOTE]
     > The `systemDefault` activity type is available only in public preview.
-  - If you want to send a templated notification in the traditional mode, activity types must be declared in the [Activities](#activities-section-changes) section. For more information, see [Manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+  - If you want to send a templated notification in the traditional mode, activity types must be declared in the [Activities](#activities-update) section. For more information, see [Manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - The Teams app must be installed for the recipient, either personally or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they're part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
 ### Permissions
@@ -883,7 +883,7 @@ HTTP/1.1 204 No Content
 
 ## Reserved activity types
 
-- The `systemDefault` activity type is reserved and can't be used in the manifest while declaring [Activities](#activities-section-changes).
+- The `systemDefault` activity type is reserved and can't be used in the manifest while declaring [Activities](#activities-update).
 - You can use the `systemDefault` activity type to:
   - Easily test new scenarios and/or quickly try the activity feed notification APIs without defining activity types in your app's manifest.
   - For Store apps, it saves time and streamlines the process because you don't need to constantly adjust activity types in your app's manifest. The `systemDefault` activity type is ready to use from the get-go.
