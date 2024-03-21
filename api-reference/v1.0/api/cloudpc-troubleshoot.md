@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: troubleshoot"
-description: "Troubleshoot a specific cloud PC object."
+description: "Troubleshoot a specific cloudPC object."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
