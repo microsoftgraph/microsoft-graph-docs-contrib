@@ -85,8 +85,6 @@ There are two kinds of web parts that can be added to a [sitePage](../resources/
 
 ## Response
 
-## Response
-
 If successful, this method returns a `200 OK` response code and an updated [sitePage](../resources/sitepage.md) object in the response body.
 
 ## Examples
