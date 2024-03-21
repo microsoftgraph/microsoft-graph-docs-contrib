@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 Content-type: application/json
 
 {
-    "displayName": "Test #2",
+    "displayName": "Guest access to marketing group",
     "scope": {
         "@odata.type": "#microsoft.graph.accessReviewQueryScope",
         "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
@@ -171,7 +171,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions/$entity",
     "id": "c22ae540-b89a-4d24-bac0-4ef35e6591ea",
-    "displayName": "Test #2",
+    "displayName": "Guest access to marketing group",
     "createdDateTime": null,
     "lastModifiedDateTime": null,
     "status": "NotStarted",
