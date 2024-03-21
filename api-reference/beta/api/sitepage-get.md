@@ -257,7 +257,7 @@ Content-type: application/json
 
 #### Request
 
-To access the page with page content, append the `?expand=canvasLayout` query string.
+You can expand references in your URL with the _expand_ query parameter. To access the page with page content, append the `?expand=canvasLayout` query string.
 
 ```http
 GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?expand=canvasLayout

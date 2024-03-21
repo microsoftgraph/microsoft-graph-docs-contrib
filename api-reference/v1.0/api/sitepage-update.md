@@ -135,7 +135,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.sitePage",
   "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
   "name": "sample.aspx",
-  "webUrl": "https://contoso.com/SitePages/sample.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/sample.aspx",
   "title": "sample",
   "pageLayout": "article",
   "showComments": true,
