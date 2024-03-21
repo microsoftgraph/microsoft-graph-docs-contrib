@@ -3,7 +3,7 @@ title: "cloudPC: reboot"
 description: "Reboot a specific Cloud PC."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -12,8 +12,6 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Reboot a specific Cloud PC.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -51,9 +49,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Reboot the cloudPC for the administrator
+### Request
 
-#### Request
+The following example shows a request to reboot a cloudPC for the administrator.
 
 <!-- {
   "blockType": "request",
@@ -65,9 +63,9 @@ If successful, this method returns a `204 No Content` response code.
 POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs/831dd62e-cfa1-4d49-a3b4-58d4e9920f8e/reboot
 ```
 
----
+### Response
 
-#### Response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
