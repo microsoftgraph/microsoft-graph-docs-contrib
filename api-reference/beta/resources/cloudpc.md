@@ -19,34 +19,34 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.|
-|[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a [cloudPC](../resources/cloudpc.md) object.|
-|[Get provisioned cloudPCs](../api/cloudpc-getprovisionedcloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.|
+|[List Cloud PCs](../api/virtualendpoint-list-cloudpcs.md)|[Cloud PC](../resources/cloudpc.md) collection|List properties and relationships of the [Cloud PC](../resources/cloudpc.md) objects.|
+|[Get Cloud PC](../api/cloudpc-get.md)|[Cloud PC](../resources/cloudpc.md)|Read the properties and relationships of a [Cloud PC](../resources/cloudpc.md) object.|
+|[Get provisioned Cloud PCs](../api/cloudpc-getprovisionedcloudpcs.md)|[Cloud PC](../resources/cloudpc.md) collection|Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.|
 |[Change user account type](../api/cloudpc-changeuseraccounttype.md)|None|Change the account type of the user on a specific Cloud PC.|
-|[End grace period](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [cloudPC](../resources/cloudpc.md) object.|
+|[End grace period](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a [Cloud PC](../resources/cloudpc.md) object.|
 |[Get remote action results](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
-|[Power on](../api/cloudpc-poweron.md)|None|Power on a specific Windows Frontline [cloudPC](../resources/cloudpc.md) object. This action supports MEM admin scenarios.|
-|[Power off](../api/cloudpc-poweroff.md)|None|Power off a specific  Windows Frontline [cloudPC](../resources/cloudpc.md) object.This action supports MEM admin scenarios.|
-|[Reboot](../api/cloudpc-reboot.md)|None|Reboot a specific [cloudPC](../resources/cloudpc.md) object.|
-|[Rename](../api/cloudpc-rename.md)|None|Rename a specific [cloudPC](../resources/cloudpc.md) object. Use this API to update the **displayName** for the Cloud PC entity.|
-|[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a [cloudPC](../resources/cloudpc.md) object.|
+|[Power on](../api/cloudpc-poweron.md)|None|Power on a specific Windows Frontline [Cloud PC](../resources/cloudpc.md) object. This action supports MEM admin scenarios.|
+|[Power off](../api/cloudpc-poweroff.md)|None|Power off a specific  Windows Frontline [Cloud PC](../resources/cloudpc.md) object.This action supports MEM admin scenarios.|
+|[Reboot](../api/cloudpc-reboot.md)|None|Reboot a specific [Cloud PC](../resources/cloudpc.md) object.|
+|[Rename](../api/cloudpc-rename.md)|None|Rename a specific [Cloud PC](../resources/cloudpc.md) object. Use this API to update the **displayName** for the Cloud PC entity.|
+|[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a [Cloud PC](../resources/cloudpc.md) object.|
 |[Bulk reprovision remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
 |[Resize remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing Cloud PC to another configuration with new vCPU and storage size through Intune managed device ID.|
-|[Start](../api/cloudpc-start.md)|None|Start a specific [cloudPC](../resources/cloudpc.md) for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
-|[Stop](../api/cloudpc-stop.md)|None|Stop a specific [cloudPC](../resources/cloudpc.md) for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
-|[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
-|[Restore](../api/cloudpc-restore.md)|None|Restore a [cloudPC](../resources/cloudpc.md) object to a previous state from a snapshot.|
+|[Start](../api/cloudpc-start.md)|None|Start a specific [Cloud PC](../resources/cloudpc.md) for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
+|[Stop](../api/cloudpc-stop.md)|None|Stop a specific [Cloud PC](../resources/cloudpc.md) for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
+|[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [Cloud PC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
+|[Restore](../api/cloudpc-restore.md)|None|Restore a [Cloud PC](../resources/cloudpc.md) object to a previous state from a snapshot.|
 |[Bulk restore remote action](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.|
 |[Set review status](../api/manageddevice-setcloudpcreviewstatus.md)|None|Set the review status of a specific Cloud PC device.|
 |[Get review status](../api/manageddevice-getcloudpcreviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the review status of a specific Cloud PC device.|
 |[Bulk set review status](../api/manageddevice-bulksetcloudpcreviewstatus.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.|
-|[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
-|[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
+|[List for user](../api/user-list-cloudpcs.md)|[Cloud PC](../resources/cloudpc.md) collection|List the [Cloud PC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
+|[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[Cloud PC LaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [Cloud PC LaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 |[Get connectivity history](../api/cloudpc-getcloudpcconnectivityhistory.md)|[cloudPcConnectivityEvent](../resources/cloudpcconnectivityevent.md) collection|Get the Cloud PC connectivity history.|
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
-|[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents that failed to install on the [cloudPC](../resources/cloudpc.md).|
-|[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed validation (cloudPC: validateBulkResize). If any devices can't be resized, they're labeled as "resize failed", while the remaining devices are `provisioned` for the resize process.|
-|[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate that a set of [cloudPC](../resources/cloudpc.md) devices meet the requirements to be bulk resized.|
+|[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents that failed to install on the [Cloud PC](../resources/cloudpc.md).|
+|[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of [Cloud PCs](../resources/cloudpc.md) that have successfully passed validation (Cloud PC: validateBulkResize). If any devices can't be resized, they're labeled as "resize failed", while the remaining devices are `provisioned` for the resize process.|
+|[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate that a set of [Cloud PC](../resources/cloudpc.md) devices meet the requirements to be bulk resized.|
 |[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`.|
 |[Get shift work access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md) (deprecated)|[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values-deprecated)|Get the access state of the shift work Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `waitlisted`, `unknownFutureValue`, `standbyMode`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: `standbyMode`. This API is deprecated and will stop returning data on December 31, 2023. Going forward, use the [getFrontlineCloudPcAccessState](../api/cloudpc-getfrontlinecloudpcaccessstate.md) API.|
 |[Reprovision remote action](../api/manageddevice-reprovisioncloudpc.md) (deprecated)|None|Reprovision a Cloud PC with an Intune  [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [reprovision](../api/cloudpc-reprovision.md) API.|
