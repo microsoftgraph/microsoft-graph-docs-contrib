@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: reboot"
-description: "Reboot a specific Cloud PC."
+description: "Reboot a specific Cloud PC object."
 author: "xhhzuikeaiya"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Reboot a specific Cloud PC.
+Reboot a specific [cloudPC](../resources/cloudpc.md) object.
 
 ## Permissions
 
