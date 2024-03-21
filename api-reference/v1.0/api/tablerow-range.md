@@ -3,7 +3,7 @@ title: "TableRow: Range"
 description: "Returns the range object associated with the entire row."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

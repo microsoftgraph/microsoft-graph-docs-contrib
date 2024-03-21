@@ -3,7 +3,7 @@ title: "Update worksheet"
 description: "Update the properties of worksheet object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
