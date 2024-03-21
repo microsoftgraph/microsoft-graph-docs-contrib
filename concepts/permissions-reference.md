@@ -6263,7 +6263,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 97235f07-e226-4f63-ace3-39588e11d3a1 | b340eb25-3456-403f-be2f-af7a0d370277 
 | DisplayText | Read all users' basic profiles | Read all users' basic profiles 
-| Description | Allows the app to read a basic set of profile properties of other users in your organization without a signed-in user. Includes display name, first and last name, email address, open extensions, and photo. | Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address and photo. 
+| Description | Allows the app to read a basic set of profile properties of other users in your organization without a signed-in user. Includes display name, first and last name, email address, open extensions, photo and userPrincipalName. | Allows the app to read a basic set of profile properties of other users in your organization on behalf of the signed-in user. This includes display name, first and last name, email address, photo and userPrincipalName. 
 | AdminConsentRequired | Yes | No 
 
 ---
