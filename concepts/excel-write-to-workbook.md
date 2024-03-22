@@ -3,7 +3,7 @@ title: "Write data to an Excel workbook"
 description: "Use the Excel REST API in Microsoft Graph to write simple data sets to an Excel workbook on three web development frameworks: ASP.NET, Angular, and React."
 ms.localizationpriority: high
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Write data to an Excel workbook
