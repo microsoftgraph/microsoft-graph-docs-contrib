@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a container for APIs to manage Cloud PCs.https://github.com/microsoftgraph/microsoft-graph-docs/pull/23329/conflict?name=api-reference%252Fv1.0%252Ftoc.yml&ancestor_oid=b9f819ab19be197a13307cad34de43764a5564a5&base_oid=23ae6ea02251b179ba392ce9cc4c76c7ae2498bd&head_oid=b9ecf885729f56a550a2060359a585b9f0b1e362
+Represents a container for APIs to manage Cloud PCs.
 
 Use the Cloud PC API to provision and manage virtual desktops for employees in an organization, or along with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
 
