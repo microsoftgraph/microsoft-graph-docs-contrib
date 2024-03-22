@@ -1,19 +1,19 @@
 ---
-title: "WorksheetCollection: add"
-description: ".activate() on it."
+title: "worksheetCollection: add"
+description: "Add a new worksheet to the workbook."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# WorksheetCollection: add
+# worksheetCollection: add
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a new worksheet to the workbook. The worksheet is added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.
+Add a new worksheet to the workbook. The worksheet is added at the end of existing worksheets. If you want to activate the newly added worksheet, call ".activate() on it.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -34,7 +34,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/add
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -47,9 +47,9 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns `200 OK` response code and [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.
 
-## Example
-Here's an example of how to call this API.
-##### Request
+## Examples
+
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -96,8 +96,10 @@ Content-type: application/json
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{anal
 
 ---
 
-
 ### Response
 
 The following example shows the response.

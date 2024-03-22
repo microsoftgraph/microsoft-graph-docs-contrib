@@ -58,7 +58,7 @@ items:
                 href: api/user-invalidateallrefreshtokens.md
               - name: Retry service provisioning
                 href: api/user-retryserviceprovisioning.md
-              - name: Convert external to member user
+              - name: Convert external to internal user
                 href: api/user-convertexternaltointernalmemberuser.md
           - name: App role assignment
             href: resources/approleassignment.md
@@ -10291,6 +10291,15 @@ items:
                     href: api/windowsupdates-deploymentaudience-updateaudience.md
                   - name: Update by ID
                     href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+              - name: Product
+                href: resources/windowsupdates-product.md
+                items:
+                  - name: Get known issues by time range
+                    href: api/windowsupdates-product-getknownissuesbytimerange.md 
+                  - name: Find by catalog ID
+                    href: api/windowsupdates-product-findbycatalogid.md
+                  - name: Find by knowledge base number
+                    href: api/windowsupdates-product-findbykbnumber.md
               - name: Resource connection
                 href: resources/windowsupdates-resourceconnection.md
                 items:
@@ -17459,6 +17468,8 @@ items:
                 href: api/site-search.md
               - name: Unfollow site
                 href: api/site-unfollow.md
+              - name: Get delta
+                href: api/site-delta.md
           - name: List
             items:
               - name: List
