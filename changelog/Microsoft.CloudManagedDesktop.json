@@ -4,10 +4,10 @@
             "ChangeList": [
                {
                  "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
-                 "ApiChange": "Resource",
+                 "ApiChange": "Relationship",
                  "ChangedApiName": "auditEvents",
                  "ChangeType": "Addition",
-                 "Description": "Added the **auditEvents** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                 "Description": "Added the **auditEvents** navigation property to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
                  "Target": "virtualEndpoint"
               },
               {
@@ -16,63 +16,63 @@
                 "ChangedApiName": "cloudPcAuditEvent",
                 "ChangeType": "Addition",
                 "Description": "Added the [cloudPcAuditEvent](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-1.0) resource and its methods.",
-                "Target": "virtualEndpoint"
+                "Target": "cloudPcAuditEvent"
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
-                "ApiChange": "ComplexType",
+                "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcAuditActor",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcAuditActor](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditactor?view=graph-rest-1.0) complex type.",
-                "Target": "cloudPcAuditEvent"
+                "Description": "Added the [cloudPcAuditActor](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditactor?view=graph-rest-1.0) resource type.",
+                "Target": "cloudPcAuditActor"
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
-                "ApiChange": "ComplexType",
+                "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcUserRoleScopeTagInfo",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcUserRoleScopeTagInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcuserrolescopetaginfo?view=graph-rest-1.0) complex type.",
-                "Target": "cloudPcAuditEvent"
+                "Description": "Added the [cloudPcUserRoleScopeTagInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcuserrolescopetaginfo?view=graph-rest-1.0) resource type.",
+                "Target": "cloudPcUserRoleScopeTagInfo"
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
-                "ApiChange": "ComplexType",
+                "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcAuditResource",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcAuditResource](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditresource?view=graph-rest-1.0) complex type.",
-                "Target": "cloudPcAuditEvent"
+                "Description": "Added the [cloudPcAuditResource](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditresource?view=graph-rest-1.0) resource type.",
+                "Target": "cloudPcAuditResource"
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
-                "ApiChange": "ComplexType",
+                "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcAuditProperty",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcAuditProperty](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditproperty?view=graph-rest-1.0) complex type.",
-                "Target": "cloudPcAuditEvent"
+                "Description": "Added the [cloudPcAuditProperty](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditproperty?view=graph-rest-1.0) resource type.",
+                "Target": "cloudPcAuditProperty"
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "cloudPcAuditActivityOperationType",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcAuditActivityOperationType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-1.0#cloudpcauditactivityoperationtype-values) enumeration.",
-                "Target": "cloudPcAuditEvent"
+                "Description": "Added the **cloudPcAuditActivityOperationType** enumeration.",
+                "Target": "cloudPcAuditActivityOperationType"
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "cloudPcAuditActivityResult",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcAuditActivityResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-1.0#cloudpcauditactivityresult-values) enumeration.",
-                "Target": "cloudPcAuditEvent"
+                "Description": "Added the **cloudPcAuditActivityResult** enumeration.",
+                "Target": "cloudPcAuditActivityResult"
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
                 "ApiChange": "Enum type",
                 "ChangedApiName": "cloudPcAuditCategory",
                 "ChangeType": "Addition",
-                "Description": "Added the [cloudPcAuditCategory](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-1.0#cloudpcauditcategory-values) enumeration.",
-                "Target": "cloudPcAuditEvent"
+                "Description": "Added the **cloudPcAuditCategory** enumeration.",
+                "Target": "cloudPcAuditCategory"
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",

@@ -17,26 +17,16 @@ The audit actor represented by the Microsoft Entra user and application associat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `UnknownFutureValue`.|
-|userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
-|applicationId|String|Microsoft Entra application ID.|
 |applicationDisplayName|String|Name of the application.|
-|userPrincipalName|String|User Principal Name (UPN).|
-|servicePrincipalName|String|Service Principal Name (SPN).|
+|applicationId|String|Microsoft Entra application ID.|
 |ipAddress|String|IP address.|
-|userId|String|Microsoft Entra user ID.|
-|userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
 |remoteTenantId|String|The delegated partner tenant ID.|
 |remoteUserId|String|The delegated partner user ID.|
-
-### cloudPcAuditActorType values
-
-|Member|Description|
-|:---|:---|
-|itPro|Indicates operation was triggered by IT Pro/IT Admin.|
-|application|Indicates operation was triggered by application.|
-|partner|Indicates operation was triggered by partner.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|servicePrincipalName|String|Service Principal Name (SPN).|
+|userId|String|Microsoft Entra user ID.|
+|userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
+|userPrincipalName|String|User Principal Name (UPN).|
+|userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
 
 ## Relationships
 
@@ -54,7 +44,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcAuditActor",
-  "type": "String",
   "userPermissions": [
     "String"
   ],

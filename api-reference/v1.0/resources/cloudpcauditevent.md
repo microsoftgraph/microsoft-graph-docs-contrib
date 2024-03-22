@@ -43,26 +43,26 @@ Represents the audit event entity.
 
 |Member|Description|
 |:---|:---|
-|create|Indicate create operation, which is used for creating a target resource.|
-|delete|Indicate delete operation, which is used for deleting a target resource.|
-|patch|Indicate patch operation, which is used for updating a target resource.|
+|create|Indicates the operation used to create a target resource.|
+|delete|Indicates the operation used to delete a target resource.|
+|patch|Indicates the operation used to update a target resource.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcAuditActivityResult values
 
 |Member|Description|
 |:---|:---|
-|success|Indicate the operation succeeded.|
-|clientError|Indicate the operation failed with client error.|
-|failure|Indicate the operation failed.|
-|timeout|Indicate the operation failed with timeout.|
+|success|Indicates the operation succeeded.|
+|clientError|Indicates the operation failed with client error.|
+|failure|Indicates the operation failed.|
+|timeout|Indicates the operation failed with timeout.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcAuditCategory values
 
 |Member|Description|
 |:---|:---|
-|cloudPC|Indicate the category of the audit event is Cloud PC.|
+|cloudPC|Indicates that the category of the audit event is Cloud PC.|
 |unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships

@@ -25,8 +25,7 @@ Represents the audit property. This shows the edited property name, the old va
 None.
 
 ## JSON Representation
-
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcAuditProperty"
