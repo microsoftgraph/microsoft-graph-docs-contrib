@@ -3,7 +3,7 @@ title: "workbookFilter resource type"
 description: "Manages the filtering of a table's column."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "excel"
+ms.subservice: "excel"
 author: "ruoyingl"
 ---
 
