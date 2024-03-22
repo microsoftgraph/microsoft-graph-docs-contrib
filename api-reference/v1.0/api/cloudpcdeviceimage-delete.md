@@ -1,7 +1,7 @@
 ---
 title: "Delete cloudPcDeviceImage"
 description: "Delete a cloudPcDeviceImage object."
-author: "AshleyYangSZ"
+author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
@@ -11,11 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -53,6 +49,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_deviceimages_from_virtualendpoint"
@@ -60,12 +58,13 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/435849e6-0263-4621-9f93-8657667af3bb
+DELETE https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/deviceImages/435849e6-0263-4621-9f93-8657667af3bb
 ```
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
