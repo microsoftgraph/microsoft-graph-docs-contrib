@@ -76,11 +76,11 @@
               },
               {
                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
-                "ApiChange": "Function",
-                "ChangedApiName": "getAuditActivityTypes",
+                "ApiChange": "Method",
+                "ChangedApiName": "LIST",
                 "ChangeType": "Addition",
-                "Description": "Added the [getAuditActivityTypes](https://learn.microsoft.com/en-us/graph/api/cloudpcauditevent-getauditactivitytypes?view=graph-rest-1.0) method to the [cloudPcAuditEvent](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-1.0) resource.",
-                "Target": "cloudPcAuditEvent"
+                "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0) method to the [virtualendpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
+                "Target": "virtualendpoint"
               }
             ],
             "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
