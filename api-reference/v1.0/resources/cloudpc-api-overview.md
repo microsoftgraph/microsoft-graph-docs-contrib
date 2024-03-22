@@ -28,6 +28,7 @@ Microsoft Graph controls access to resources via permissions. As a developer, yo
 
 |Use cases|REST resources|See also|
 |:---|:---|:---|
+|List, get, end grace period, reboot, rename, restore, and troubleshoot Cloud PCs |[cloudPC](../resources/cloudpc.md)|[Cloud PCs lifecycle](/windows-365/enterprise/lifecycle)|
 |List, get, create, delete, and get source images|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](/windows-365/enterprise/device-images)|
 
 ## Next steps
