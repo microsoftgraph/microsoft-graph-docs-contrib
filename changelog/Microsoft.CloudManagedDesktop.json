@@ -2,7 +2,131 @@
     "changelog": [
         {
             "ChangeList": [
+               {
+                 "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                 "ApiChange": "Relationship",
+                 "ChangedApiName": "auditEvents",
+                 "ChangeType": "Addition",
+                 "Description": "Added the **auditEvents** navigation property to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                 "Target": "virtualEndpoint"
+              },
+              {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcAuditEvent",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcAuditEvent](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-1.0) resource and its methods.",
+                "Target": "cloudPcAuditEvent"
+              },
+              {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcAuditActor",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcAuditActor](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditactor?view=graph-rest-1.0) resource type.",
+                "Target": "cloudPcAuditActor"
+              },
+              {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcUserRoleScopeTagInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcUserRoleScopeTagInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcuserrolescopetaginfo?view=graph-rest-1.0) resource type.",
+                "Target": "cloudPcUserRoleScopeTagInfo"
+              },
+              {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcAuditResource",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcAuditResource](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditresource?view=graph-rest-1.0) resource type.",
+                "Target": "cloudPcAuditResource"
+              },
+              {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcAuditProperty",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcAuditProperty](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditproperty?view=graph-rest-1.0) resource type.",
+                "Target": "cloudPcAuditProperty"
+              },
+              {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcAuditActivityOperationType",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcAuditActivityOperationType** enumeration.",
+                "Target": "cloudPcAuditActivityOperationType"
+              },
+              {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcAuditActivityResult",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcAuditActivityResult** enumeration.",
+                "Target": "cloudPcAuditActivityResult"
+              },
+              {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcAuditCategory",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcAuditCategory** enumeration.",
+                "Target": "cloudPcAuditCategory"
+              },
+              {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Method",
+                "ChangedApiName": "LIST",
+                "ChangeType": "Addition",
+                "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0) method to the [virtualendpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
+                "Target": "virtualendpoint"
+              }
+            ],
+            "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2024-03-22T15:45:13.2794293Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                 {
+                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcProvisioningType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcProvisioningType** enumeration type.",
+                    "Target": "cloudPcProvisioningType"
+                },
+                {
+                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPC",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource and supported methods.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "cloudPCs",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPCs** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2024-03-22T09:24:41.3424906Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {          
                   "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                   "ApiChange": "Enum type",
                   "ChangedApiName": "cloudPcDeviceImageErrorCode",
@@ -4433,7 +4557,7 @@
             "ChangeType": "Deprecation",
             "Description": "Deprecated the [cloudPcOnPremisesConnectionStatusDetails](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetails?view=graph-rest-beta) resource. The **cloudPcOnPremisesConnectionStatusDetails** resource stopped returning data on January 31, 2024. Going forward, use the [cloudPcOnPremisesConnectionStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetail?view=graph-rest-beta) resource.",
             "Target": "cloudPcOnPremisesConnectionStatusDetails"
-          },            
+          },
           {
             "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
             "ApiChange": "Resource",
