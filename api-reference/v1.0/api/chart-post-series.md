@@ -3,7 +3,7 @@ title: "Create ChartSeries"
 description: "Use this API to create a new ChartSeries."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
