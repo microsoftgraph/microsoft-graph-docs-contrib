@@ -115,7 +115,7 @@ The following JSON representation shows the resource type.
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |location|[Location](location.md)|The location of the requested meeting.|
 |meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
-|meetingRequestType|String| The type of meeting request: `none`, `newMeetingRequest`, `fullUpdate`, `informationalUpdate`, `silentUpdate`, `outdated`, `principalWantsCopy`.|
+|meetingRequestType|String| The type of meeting request. Possible values are: `none`, `newMeetingRequest`, `fullUpdate`, `informationalUpdate`, `silentUpdate`, `outdated`, and `principalWantsCopy`.|
 |mentionsPreview|[mentionsPreview](mentionspreview.md)|Information about mentions in the message. When processing a `GET` /messages request, the server sets this property and includes it in the response by default. The server returns null if there are no mentions in the message. Optional. |
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)| If the meeting update changes the meeting end time, this property specifies the previous meeting end time.|
