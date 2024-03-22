@@ -1,7 +1,7 @@
 ---
 title: "Get cloudPcGalleryImage"
-description: "Read the properties and relationships of a cloudPcGalleryImage object."
-author: "AshleyYangSZ"
+description: "Read the properties and relationships of a specific cloudPcGalleryImage object."
+author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
@@ -11,11 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of a specific [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -43,7 +39,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 
 ## Request body
 
@@ -67,7 +63,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryImages/MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os
+GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/galleryImages/MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os
 ```
 
 ### Response
@@ -86,18 +82,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcGalleryImage",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#cloudPcGalleryImage",
   "id": "MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os",
   "displayName": "Windows 10 Enterprise + OS Optimizations 1909",
-  "offerDisplayName": "Windows 10 Enterprise + OS Optimizations",
-  "skuDisplayName": "1909",
-  "publisher": "MicrosoftWindowsDesktop",
   "publisherName": "MicrosoftWindowsDesktop",
-  "offer": "windows-ent-cpc",
   "offerName": "windows-ent-cpc",
-  "sku": "19h2-ent-cpc-os",
   "skuName": "19h2-ent-cpc-os",
-  "recommendedSku": "light",
   "status": "supported",
   "sizeInGB": 64,
   "startDate": "2019-11-12",
