@@ -17,11 +17,26 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 
 Inherits from [entity](../resources/entity.md).
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List deviceImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|List the properties and relationships of [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) objects (operating system images) uploaded to Cloud PC.|
+|[List galleryImages](../api/virtualendpoint-list-galleryimages.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.|
+|[Create cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
+
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier (ID) for the virtual endpoint. Read-only. Inherited from [entity](../resources/entity.md).|
+
+## Relationships
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|A collection of device image resources on Cloud PC.|
+|galleryImages|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|A collection of gallery image resources on Cloud PC.|
 
 ## JSON representation
 
