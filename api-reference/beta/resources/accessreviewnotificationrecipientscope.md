@@ -1,5 +1,5 @@
 ---
-title: "accessreviewnotificationrecipientscope resource type"
+title: "accessReviewNotificationRecipientScope resource type"
 description: "Represents who will receive access review notifications."
 author: "jyothig123"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
-# accessreviewnotificationrecipientscope resource type
+# accessReviewNotificationRecipientScope resource type
 
 Namespace: microsoft.graph
 

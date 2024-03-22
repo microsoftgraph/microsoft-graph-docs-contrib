@@ -42,14 +42,14 @@ Represents a Microsoft Entra [access review](accessreviews-root.md).
 |:-------- |:---- |:----------- |
 | id | String | The feature-assigned unique identifier of an access review. |
 | displayName | String | The access review name. Required on create. |
-| startDateTime | DateTimeOffset | The DateTime when the review is scheduled to be start.  This could be a date in the future.  Required on create. |
-| endDateTime | DateTimeOffset | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.  Required on create. |
+| startDateTime | DateTimeOffset | The date and time when the review is scheduled to be start. This date can be in the future.  Required on create. |
+| endDateTime | DateTimeOffset | The DateTime when the review is scheduled to end. This must be at least one day later than the start date. Required on create. |
 | status | String | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
 | description | String | The description provided by the access review creator, to show to the reviewers. |
-| businessFlowTemplateId | String | The business flow template identifier. Required on create.  This value is case sensitive. |
-| reviewerType | String | The relationship type of reviewer to the target object, one of `self`, `delegated` or `entityOwners`. Required on create. | 
+| businessFlowTemplateId | String | The business flow template identifier. Required on create. This value is case sensitive. |
+| reviewerType | String | The relationship type of reviewer to the target object, one of: `self`, `delegated`, `entityOwners`. Required on create. | 
 | createdBy | [userIdentity](useridentity.md) | The user who created this review. |
-| reviewedEntity | [identity](identity.md) | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
+| reviewedEntity | [identity](identity.md) | The object for which the access review is reviewing the access rights assignments. This identity can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
 | settings | [accessReviewSettings](accessreviewsettings.md) | The settings of an accessReview, see type definition below. |
 
 ## Relationships
@@ -59,7 +59,7 @@ Represents a Microsoft Entra [access review](accessreviews-root.md).
 | reviewers | [userIdentity](useridentity.md) collection | The collection of reviewers for an access review, if access review reviewerType is of type `delegated`. |
 | decisions | [accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for this access review. |
 | myDecisions | [accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for the caller, if the caller is a reviewer. |
-| instances | [accessReview](accessreview.md) collection | The collection of access reviews instances past, present and future, if this object is a recurring access review. |
+| instances | [accessReview](accessreview.md) collection | The collection of access reviews instances past, present, and future, if this object is a recurring access review. |
 
 Whether these relationships are present on an object, depends upon whether the object is a one-time access review, the series of a recurring access review, or an instance of a recurring access review.
 
