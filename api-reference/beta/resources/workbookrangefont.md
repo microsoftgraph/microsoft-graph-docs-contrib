@@ -3,7 +3,7 @@ title: "workbookRangeFont resource type"
 description: "This object represents the font attributes (font name, font size, color, etc.) for an object."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

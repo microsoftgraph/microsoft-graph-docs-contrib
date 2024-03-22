@@ -26,6 +26,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added the ability to list and get [Windows settings](/graph/api/resources/windowssetting) and [Windows settings instances](/graph/api/resources/windowssettinginstance).
 
+### Device and app management | Cloud PC
+
+- List, get, create, delete, and get source images operations available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
+- List and get operations available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
+
+### Education | Assignment
+
+Enabled the `$expand` query parameter for the [Get educationAssignment](/graph/api/educationassignment-get) method.
+
 ### Identity and access | Directory management
 
 The organization entity now returns the `CIAM` **tenantType** to identify tenants that are set up as Microsoft Entra ID for customers tenants, a customer identity & access management (CIAM) solution.
@@ -33,6 +42,10 @@ The organization entity now returns the `CIAM` **tenantType** to identify tenant
 ### Reports | Partner billing reports
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
+
+###Sites and Lists
+
+[Track changes for SharePoint site](/graph/api/site-delta) resources.
 
 ## March 2024: New in preview only
 
@@ -54,7 +67,7 @@ The following properties are deprecated:
 
 ### Device and app management | Device updates
 
-Added methods to the Windows Updates API for Windows products, including [retrieval of known issues by time range](/graph/api/resources/windowsupdates-product-getknownissuesbytimerange?view=graph-rest-beta&preserve-view=true), [finding product revisions by catalog ID](/graph/api/resources/windowsupdates-product-findbycatalogid?view=graph-rest-beta&preserve-view=true), and [by knowledge base number](/graph/api/resources/windowsupdates-product-findbykbnumber?view=graph-rest-beta&preserve-view=true).
+Added methods to the Windows Updates API for Windows products, including [retrieval of known issues by time range](/graph/api/windowsupdates-product-getknownissuesbytimerange?view=graph-rest-beta&preserve-view=true), [finding product revisions by catalog ID](/graph/api/windowsupdates-product-findbycatalogid?view=graph-rest-beta&preserve-view=true), and [by knowledge base number](/graph/api/windowsupdates-product-findbykbnumber?view=graph-rest-beta&preserve-view=true).
 
 ### Files
 
