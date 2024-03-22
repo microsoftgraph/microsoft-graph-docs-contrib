@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 03/08/2024
+ms.date: 03/22/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2685,6 +2685,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### IndustryData-OutboundFlow.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 61d0354c-5d88-483c-b974-a37ec3395a2c | 4741a003-8952-4be4-9217-33a0ac327122 
+| DisplayText | View outbound flow definitions | View outbound flow definitions 
+| Description | Allows the app to read outbound data flows without a signed-in user. | Allows the app to read outbound data flows on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### IndustryData-OutboundFlow.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 24a65b4a-e501-47e2-8849-d679517887f0 | aeb68e0b-e562-4a1f-b6dd-3484ad0cbb4b 
+| DisplayText | Manage outbound flow definitions | Manage outbound flow definitions 
+| Description | Allows the app to read and write outbound data flows without a signed-in user. | Allows the app to read and write outbound data flows on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### IndustryData-ReferenceDefinition.Read.All
 
 | Category | Application | Delegated |
@@ -3995,10 +4017,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | 9c7a330d-35b3-4aa1-963d-cb2b9f927841 
-| DisplayText | - | Read presence information of all users in your organization 
-| Description | - | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. 
-| AdminConsentRequired | - | No 
+| Identifier | a70e0c2d-e793-494c-94c4-118fa0a67f42 | 9c7a330d-35b3-4aa1-963d-cb2b9f927841 
+| DisplayText | Read presence information for all users | Read presence information of all users in your organization 
+| Description | Allows the app to read presence information of all users in the directory without a signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location.  | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. 
+| AdminConsentRequired | Yes | No 
 
 ---
 
@@ -6529,6 +6551,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Read and write your virtual events 
 | Description | - | Allows the app to read and write virtual events for you 
 | AdminConsentRequired | - | Yes 
+
+---
+
+### VirtualEventRegistration-Anon.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 23211fc1-f9d1-4e8e-8e9e-08a5d0a109bb | - 
+| DisplayText | Read and write anonymous users' virtual event registrations | - 
+| Description | Allows the app to read and write anonymous users' virtual event registrations, without a signed-in user | - 
+| AdminConsentRequired | Yes | - 
 
 ---
 
