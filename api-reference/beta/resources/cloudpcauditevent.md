@@ -45,9 +45,9 @@ Represents the audit event entity.
 
 |Member|Description|
 |:---|:---|
-|create|Indicate create operation, which is used for creating a target resource.|
-|delete|Indicate delete operation, which is used for deleting a target resource.|
-|patch|Indicate patch operation, which is used for updating a target resource.|
+|create|Indicates the operation used to create a target resource.|
+|delete|Indicates the operation used to delete a target resource.|
+|patch|Indicates the operation used to update a target resource.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcAuditActivityResult values

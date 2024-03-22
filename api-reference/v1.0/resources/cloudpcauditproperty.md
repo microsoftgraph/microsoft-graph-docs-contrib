@@ -17,8 +17,8 @@ Represents the audit property. This shows the edited property name, the old va
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name for this property.|
-|oldValue|String|The old value for this property.|
 |newValue|String|The new value for this property.|
+|oldValue|String|The old value for this property.|
 
 ## Relationships
 
@@ -36,7 +36,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.cloudPcAuditProperty",
   "displayName": "String",
-  "oldValue": "String",
-  "newValue": "String"
+  "newValue": "String",
+  "oldValue": "String"
 }
 ```

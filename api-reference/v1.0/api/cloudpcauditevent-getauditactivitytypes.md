@@ -1,6 +1,6 @@
 ---
 title: "cloudPcAuditEvent: getAuditActivityTypes"
-description: "Get audit activity types by tenant id."
+description: "Get audit activity types by tenant ID."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
