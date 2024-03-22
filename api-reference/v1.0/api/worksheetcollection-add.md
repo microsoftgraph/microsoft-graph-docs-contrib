@@ -3,7 +3,7 @@ title: "worksheetCollection: add"
 description: "Add a new worksheet to the workbook."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

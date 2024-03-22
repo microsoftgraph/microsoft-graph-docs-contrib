@@ -3,7 +3,7 @@ title: "ChartCollection: add"
 description: "Creates a new chart."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

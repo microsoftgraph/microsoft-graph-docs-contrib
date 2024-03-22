@@ -3,7 +3,7 @@ title: "itemBody resource type"
 description: "Represents properties of the body of an item, such as a message, event or group post."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "excel"
+ms.subservice: "excel"
 author: "grangeryy"
 ---
 
