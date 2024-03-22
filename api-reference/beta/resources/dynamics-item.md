@@ -1,5 +1,5 @@
 ---
-title: items resource type 
+title: item resource type
 description: An item object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -9,7 +9,7 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# items resource type
+# item resource type
 
 Namespace: microsoft.graph
 
@@ -21,10 +21,10 @@ Represents an item in Dynamics 365 Business Central.
 
 | Method                                      |Return Type|Description |
 |:--------------------------------------------|:----------|:-----------|
-|[Get items](../api/dynamics-item-get.md)      |items     |Gets an item object.   |
-|[Post items](../api/dynamics-create-item.md)  |items     |Creates an item object.|
-|[Patch item](../api/dynamics-item-update.md)  |items     |Updates an item object.|
-|[Delete items](../api/dynamics-item-delete.md)|none      |Deletes an item object.|
+|[Get item](../api/dynamics-item-get.md)      |item     |Gets an item object.   |
+|[Post item](../api/dynamics-create-item.md)  |item     |Creates an item object.|
+|[Patch item](../api/dynamics-item-update.md)  |item     |Updates an item object.|
+|[Delete item](../api/dynamics-item-delete.md)|none      |Deletes an item object.|
 
 ## Properties
 | Property	         | Type	|Description                                          |
@@ -44,7 +44,7 @@ Represents an item in Dynamics 365 Business Central.
 |unitCost            |decimal |Specifies the cost per unit of the item.             |
 |taxGroupId          |GUID    |Specifies the ID of the Tax Group for the item.      |
 |taxGroupCode        |numeric |A Tax Group represents a group of inventory items or resources that are subject to identical tax terms.|
-|lastModifiedDateTime|datetime|The last datetime the item was modified. Read-Only.  |  
+|lastModifiedDateTime|datetime|The last datetime the item was modified. Read-Only.  |
 
 
 ## Relationships

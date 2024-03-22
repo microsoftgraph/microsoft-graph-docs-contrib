@@ -1,5 +1,5 @@
 ---
-title: "accounts resource type"
+title: "account resource type"
 description: "Represents an account object in Dynamics 365 Business Central."
 services: "project-madeira"
 documentationcenter: ''
@@ -9,7 +9,7 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# accounts resource type
+# account resource type
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Represents an account object in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get accounts](../api/dynamics-account-get.md)|accounts|Get accounts object.|
+|[Get account](../api/dynamics-account-get.md)|account|Get accounts object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -44,7 +44,7 @@ Here's a JSON representation of the resource.
 
 ```json
 {
-  "blocked": "Boolean",  
+  "blocked": "Boolean",
   "category": "String",
   "displayName": "String",
   "id": "GUID",

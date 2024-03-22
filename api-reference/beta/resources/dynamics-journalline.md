@@ -1,5 +1,5 @@
 ---
-title: journalLines resource type 
+title: journalLine resource type
 description: A journal line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -9,7 +9,7 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# journalLines resource type
+# journalLine resource type
 
 Namespace: microsoft.graph
 
@@ -21,10 +21,10 @@ Represents a line in a journal in Dynamics 365 Business Central.
 
 | Method                                                    | Return Type|Description         |
 |:----------------------------------------------------------|:-----------|:-------------------|
-|[Get journalLines](../api/dynamics-journalline-get.md)      |journalLines|Gets a journal line.   |
-|[Post journalLines](../api/dynamics-create-journalline.md)  |journalLines|Creates a journal line.|
-|[Patch journalLines](../api/dynamics-journalline-update.md) |journalLines|Updates a journal line.|
-|[Delete journalLines](../api/dynamics-journalline-delete.md)|none        |Deletes a journal line.|
+|[Get journalLine](../api/dynamics-journalline-get.md)      |journalLine|Gets a journal line.   |
+|[Post journalLine](../api/dynamics-create-journalline.md)  |journalLine|Creates a journal line.|
+|[Patch journalLine](../api/dynamics-journalline-update.md) |journalLine|Updates a journal line.|
+|[Delete journalLine](../api/dynamics-journalline-delete.md)|none        |Deletes a journal line.|
 
 ## Properties
 | Property	           | Type	                |Description                                                        |

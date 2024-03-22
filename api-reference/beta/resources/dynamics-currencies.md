@@ -1,6 +1,6 @@
 ---
-title: "currencies resource type" 
-description: "Represents a currency used in Dynamics 365 Business Central." 
+title: "currency resource type"
+description: "Represents a currency used in Dynamics 365 Business Central."
 services: "project-madeira"
 documentationcenter: ""
 author: "SusanneWindfeldPedersen"
@@ -9,7 +9,7 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# currencies resource type
+# currency resource type
 
 Namespace: microsoft.graph
 
@@ -20,10 +20,10 @@ Represents a currency used in Dynamics 365 Business Central.
 ## Methods
 | Method                                                  |Return Type|Description       |
 |:--------------------------------------------------------|:----------|:-----------------|
-|[Get currencies](../api/dynamics-currencies-get.md)      |[currencies](dynamics-currencies.md) |Get a currency.   |
-|[Create currencies](../api/dynamics-create-currencies.md)  |[currencies](dynamics-currencies.md) |Create a currency.|
-|[Update currencies](../api/dynamics-currencies-update.md) |[currencies](dynamics-currencies.md) |Update a currency.|
-|[Delete currencies](../api/dynamics-currencies-delete.md)|None       |Delete a currency.|
+|[Get currency](../api/dynamics-currencies-get.md)      |[currency](dynamics-currencies.md) |Get a currency.   |
+|[Create currency](../api/dynamics-create-currencies.md)  |[currency](dynamics-currencies.md) |Create a currency.|
+|[Update currency](../api/dynamics-currencies-update.md) |[currency](dynamics-currencies.md) |Update a currency.|
+|[Delete currency](../api/dynamics-currencies-delete.md)|None       |Delete a currency.|
 
 ## Properties
 | Property	            | Type	 |Description                                                   |
@@ -33,7 +33,7 @@ Represents a currency used in Dynamics 365 Business Central.
 |code                   |String  |The currency code.                                  |
 |displayName            |String  |The display name for the currency.                          |
 |id                     |String    |The unique identifier of the currency. Non-editable.                  |
-|lastModifiedDateTime   |Datetime|The date and time the currency was last modified. Read-Only.       |  
+|lastModifiedDateTime   |Datetime|The date and time the currency was last modified. Read-Only.       |
 |symbol                 |String  |The symbol for this currency that appears on checks.|
 
 

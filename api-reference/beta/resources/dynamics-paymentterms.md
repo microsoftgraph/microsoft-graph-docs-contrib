@@ -1,6 +1,6 @@
 ---
-title: paymentTerms resource type 
-description: A payment terms object in Dynamics 365 Business Central.
+title: paymentTerm resource type
+description: A payment term object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -9,22 +9,22 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# paymentTerms resource type
+# paymentTerm resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [payment term](../resources/dynamics-paymentterms.md) in Dynamics 365 Business Central.
+Represents a payment term in Dynamics 365 Business Central.
 
 ## Methods
 
 | Method                                                      | Return Type|Description            |
 |:------------------------------------------------------------|:-----------|:----------------------|
-|[Get paymentTerms](../api/dynamics-paymentterms-get.md)      |**paymentTerms**|Get a payment terms object.   |
-|[Post paymentTerms](../api/dynamics-create-paymentterms.md)  |**paymentTerms**|Create a payment terms object.|
-|[Patch paymentTerms](../api/dynamics-paymentterms-update.md) |**paymentTerms**|Update a payment terms object.|
-|[Delete paymentTerms](../api/dynamics-paymentterms-delete.md)|none            |Delete a payment terms object.|
+|[Get paymentTerm](../api/dynamics-paymentterms-get.md)      |**paymentTerm**|Get a payment terms object.   |
+|[Post paymentTerm](../api/dynamics-create-paymentterms.md)  |**paymentTerm**|Create a payment terms object.|
+|[Patch paymentTerm](../api/dynamics-paymentterms-update.md) |**paymentTerm**|Update a payment terms object.|
+|[Delete paymentTerm](../api/dynamics-paymentterms-delete.md)|none            |Delete a payment terms object.|
 
 ## Properties
 | Property	                   | Type	  |Description                                                |
@@ -35,8 +35,8 @@ Represents a [payment term](../resources/dynamics-paymentterms.md) in Dynamics 3
 |discountPercent               |decimal |Specifies the discount percentage that is applied for early payment of an invoice amount.|
 |displayName                   |string  |Specifies the payment term display name.                   |
 |dueDateCalculation            |string  |Specifies the formula that is used to calculate the date that a payment must be made.|
-|id                            |GUID    |The unique identifier for the **paymentTerms**. Non-editable.           |
-|lastModifiedDateTime          |datetime|The date and time when the **paymentTerms** were last modified. Read-Only.|  
+|id                            |GUID    |The unique identifier for the **paymentTerm**. Non-editable.           |
+|lastModifiedDateTime          |datetime|The date and time when the **paymentTerm** were last modified. Read-Only.|
 
 
 ## Relationships
@@ -55,7 +55,7 @@ Here's a JSON representation of the resource.
   "discountPercent": "decimal",
   "displayName": "string",
   "dueDateCalculation": "string",
-  "id": "GUID", 
+  "id": "GUID",
   "lastModifiedDateTime": "datetime"
 }
 ```

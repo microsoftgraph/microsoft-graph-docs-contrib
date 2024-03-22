@@ -1,5 +1,5 @@
 ---
-title: employees resource type 
+title: employee resource type
 description: An employee object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -9,7 +9,7 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# employees resource type
+# employee resource type
 
 Namespace: microsoft.graph
 
@@ -21,10 +21,10 @@ Represents an employee in Dynamics 365 Business Central.
 
 | Method                                              | Return Type|Description               |
 |:----------------------------------------------------|:-----------|:-------------------------|
-|[Get employees](../api/dynamics-employee-get.md)      |employees  |Get an employee object.   |
-|[Post employees](../api/dynamics-create-employee.md)  |employees  |Create an employee object.|
-|[Patch employees](../api/dynamics-employee-update.md) |employees  |Update an employee object.|
-|[Delete employees](../api/dynamics-employee-delete.md)|none       |Delete an employee object.|
+|[Get employee](../api/dynamics-employee-get.md)      |employee  |Get an employee object.   |
+|[Post employee](../api/dynamics-create-employee.md)  |employee  |Create an employee object.|
+|[Patch employee](../api/dynamics-employee-update.md) |employee  |Update an employee object.|
+|[Delete employee](../api/dynamics-employee-delete.md)|none       |Delete an employee object.|
 
 ## Properties
 | Property	         | Type	  |Description                                            |
@@ -46,7 +46,7 @@ Represents an employee in Dynamics 365 Business Central.
 |status              |string  |Specifies the employee's status. Possible values are Active, Inactive or Terminated|
 |birthDate           |date    |Specifies the employee's date of birth.                |
 |picture             |stream  |The employee picture. Read-Only.                       |
-|lastModifiedDateTime|datetime|The last datetime the employee was modified. Read-Only.|  
+|lastModifiedDateTime|datetime|The last datetime the employee was modified. Read-Only.|
 
 
 ## Relationships

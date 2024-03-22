@@ -1,6 +1,6 @@
 ---
-title: "taxGroups resource type"
-description: "A tax group object in Dynamics 365 Business Central." 
+title: "taxGroup resource type"
+description: "A tax group object in Dynamics 365 Business Central."
 services: "project-madeira"
 documentationcenter: ""
 author: "SusanneWindfeldPedersen"
@@ -9,21 +9,21 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# taxGroups resource type
+# taxGroup resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [taxGroups](dynamics-taxgroups.md) object in Dynamics 365 Business Central.
+Represents a taxGroup object in Dynamics 365 Business Central.
 
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get taxGroups](../api/dynamics-taxgroups-get.md)|[taxGroups](dynamics-taxgroups.md)|Get a tax group object.|
-|[Post taxGroups](../api/dynamics-create-taxgroups.md)|[taxGroups](dynamics-taxgroups.md)|Create a tax group object.|
-|[Patch taxGroups](../api/dynamics-taxgroups-update.md)|[taxGroups](dynamics-taxgroups.md)|Update a tax group object.|
-|[Delete taxGroups](../api/dynamics-taxgroups-delete.md)|None|Delete a tax group object.|
+|[Get taxGroup](../api/dynamics-taxgroups-get.md)|taxGroup|Get a tax group object.|
+|[Post taxGroup](../api/dynamics-create-taxgroups.md)|taxGroup|Create a tax group object.|
+|[Patch taxGroup](../api/dynamics-taxgroups-update.md)|taxGroup|Update a tax group object.|
+|[Delete taxGroup](../api/dynamics-taxgroups-delete.md)|None|Delete a tax group object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,7 +31,7 @@ Represents a [taxGroups](dynamics-taxgroups.md) object in Dynamics 365 Business 
 |code|String|Indicates the tax group.|
 |displayName|String|The display name of the tax group.|
 |id|String|The unique identifier for the tax group. Read-Only.|
-|lastModifiedDateTime|datetime|The date and time when the tax group was last modified. Read-Only.|  
+|lastModifiedDateTime|datetime|The date and time when the tax group was last modified. Read-Only.|
 |taxType|string|The tax type for the group.|
 
 

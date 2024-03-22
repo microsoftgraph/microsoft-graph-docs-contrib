@@ -1,5 +1,5 @@
 ---
-title: companies resource type 
+title: company resource type
 description: A company in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -9,19 +9,19 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# companies resource type
+# company resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a companies resource type in Dynamics 365 Business Central. 
+Represents a company resource type in Dynamics 365 Business Central.
 
 ## Methods
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get companies](../api/dynamics-companies-get.md)|companies|Get a company.|
+|[Get company](../api/dynamics-companies-get.md)|company|Get a company.|
 
 ## Properties
 | Property	      | Type |Description                             |

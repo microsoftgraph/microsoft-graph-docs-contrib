@@ -1,5 +1,5 @@
 ---
-title: "customerPayments resource type"
+title: "customerPayment resource type"
 description: "Represents a customer payment in Dynamics 365 Business Central."
 services: "project-madeira"
 documentationcenter: ""
@@ -9,7 +9,7 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# customerPayments resource type
+# customerPayment resource type
 
 Namespace: microsoft.graph
 
@@ -21,10 +21,10 @@ Represents a customer payment in Dynamics 365 Business Central. A customer payme
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get customerPayments](../api/dynamics-customerpayment-get.md)|[customerPayments](dynamics-customerpayment.md)|Get a customer payment.|
-|[Post customerPayments](../api/dynamics-create-customerpayment.md)|[customerPayments](dynamics-customerpayment.md)|Create a customer payment.|
-|[Patch customerPayments](../api/dynamics-customerpayment-update.md)|[customerPayments](dynamics-customerpayment.md)|Update a customer payment.|
-|[Delete customerPayments](../api/dynamics-customerpayment-delete.md)|None|Delete a customer payment.|
+|[Get customerPayment](../api/dynamics-customerpayment-get.md)|[customerPayment](dynamics-customerpayment.md)|Get a customer payment.|
+|[Post customerPayment](../api/dynamics-create-customerpayment.md)|[customerPayment](dynamics-customerpayment.md)|Create a customer payment.|
+|[Patch customerPayment](../api/dynamics-customerpayment-update.md)|[customerPayment](dynamics-customerpayment.md)|Update a customer payment.|
+|[Delete customerPayment](../api/dynamics-customerpayment-delete.md)|None|Delete a customer payment.|
 
 ## Properties
 | Property	   | Type	 |Description|

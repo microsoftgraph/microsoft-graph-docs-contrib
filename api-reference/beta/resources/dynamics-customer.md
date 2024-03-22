@@ -1,5 +1,5 @@
 ---
-title: customers resource type 
+title: customer resource type
 description: Represents a customer in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# customers resource type
+# customer resource type
 
 Namespace: microsoft.graph
 
@@ -19,10 +19,10 @@ Represents a customer in Dynamics 365 Business Central.
 
 | Method                                              |Return Type| Description      |
 |:----------------------------------------------------|:----------|:-----------------|
-|[Get customers](../api/dynamics-customer-get.md)      |customers   |Gets a customer.   |
-|[Create customers](../api/dynamics-create-customer.md)|customers   |Creates a customer.|
-|[Update customers](../api/dynamics-customer-update.md)|customers   |Updates a customer.|
-|[Delete customers](../api/dynamics-customer-delete.md)|none        |Deletes a customer.|
+|[Get customer](../api/dynamics-customer-get.md)      |customer   |Gets a customer.   |
+|[Create customer](../api/dynamics-create-customer.md)|customer   |Creates a customer.|
+|[Update customer](../api/dynamics-customer-update.md)|customer   |Updates a customer.|
+|[Delete customer](../api/dynamics-customer-delete.md)|none        |Deletes a customer.|
 
 ## Properties
 | Property	  | Type	 |Description|
@@ -48,7 +48,7 @@ Represents a customer in Dynamics 365 Business Central.
 |balance      |numeric   |Specifies the payment amount that the customer owes for completed sales. This value is also known as the customer's balance. Read-Only.|
 |overdueAmount|numeric   |Specifies the customer's overdue amount.|
 |totalSalesExcludingTax|numeric|Specifies the total sales amount excluding tax of the customer.|
-|lastModifiedDateTime|datetime|The last datetime the customer was modified. Read-Only.|  
+|lastModifiedDateTime|datetime|The last datetime the customer was modified. Read-Only.|
 
 
 ## Relationships
