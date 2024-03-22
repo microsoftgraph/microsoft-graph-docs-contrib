@@ -1450,7 +1450,7 @@ items:
           - name: Cloud PC
             items:
               - name: Overview
-                href: resources/cloudpc-api-overview.md
+                href: resources-api-overview.md
               - name: Virtual endpoint
                 href: resources/virtualendpoint.md
               - name: Cloud PC Azure network connection
@@ -1468,6 +1468,26 @@ items:
                     href: api/cloudpconpremisesconnection-delete.md
                   - name: Run health checks
                     href: api/cloudpconpremisesconnection-runhealthcheck.md
+              - name: Cloud PC device image
+                href: resources/cloudpcdeviceimage.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-deviceimages.md
+                  - name: Create
+                    href: api/virtualendpoint-post-deviceimages.md
+                  - name: Get
+                    href: api/cloudpcdeviceimage-get.md
+                  - name: Delete
+                    href: api/cloudpcdeviceimage-delete.md
+                  - name: Get source images
+                    href: api/cloudpcdeviceimage-getsourceimages.md
+              - name: Cloud PC gallery image
+                href: resources/cloudpcgalleryimage.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-galleryimages.md
+                  - name: Get
+                    href: api/cloudpcgalleryimage-get.md
           - name: Cloud printing
             items:
               - name: Print
@@ -8390,6 +8410,8 @@ items:
                 href: api/site-search.md
               - name: Unfollow site
                 href: api/site-unfollow.md
+              - name: Get delta
+                href: api/site-delta.md
           - name: List
             items:
               - name: List

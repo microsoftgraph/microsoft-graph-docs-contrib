@@ -3,7 +3,7 @@ title: "Table: convertToRange"
 description: "Converts the table into a normal range of cells. All data is preserved."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
