@@ -38,6 +38,10 @@ The organization entity now returns the `CIAM` **tenantType** to identify tenant
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
 
+###Sites and Lists
+
+[Track changes for SharePoint site](/graph/api/site-delta) resources.
+
 ## March 2024: New in preview only
 
 ### Applications
