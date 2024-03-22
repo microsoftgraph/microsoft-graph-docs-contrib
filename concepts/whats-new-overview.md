@@ -28,6 +28,7 @@ Added the ability to list and get [Windows settings](/graph/api/resources/window
 
 ### Device and app management | Cloud PC
 
+- List, get, end grace period, reboot, rename, restore, and troubleshoot operations available on [cloudPC](/graph/api/resources/cloudpc).
 - List, get, create, delete, and get source images operations available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
 - List and get operations available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
 
@@ -43,7 +44,7 @@ The organization entity now returns the `CIAM` **tenantType** to identify tenant
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
 
-###Sites and Lists
+### Sites and lists
 
 [Track changes for SharePoint site](/graph/api/site-delta) resources.
 

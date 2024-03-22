@@ -3,6 +3,40 @@
         {
             "ChangeList": [
                 {
+                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcProvisioningType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcProvisioningType** enumeration type.",
+                    "Target": "cloudPcProvisioningType"
+                },
+                {
+                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPC",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource and supported methods.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "cloudPCs",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPCs** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "bf413e89-d397-4690-a64a-5a64a1d8af26",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2024-03-22T09:24:41.3424906Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {          
                   "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                   "ApiChange": "Enum type",
                   "ChangedApiName": "cloudPcDeviceImageErrorCode",
