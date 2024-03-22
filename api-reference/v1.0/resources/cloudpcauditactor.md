@@ -3,7 +3,7 @@ title: "cloudPcAuditActor resource type"
 description: "The audit actor represented by the Microsoft Entra user and application associated with the audit event."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 

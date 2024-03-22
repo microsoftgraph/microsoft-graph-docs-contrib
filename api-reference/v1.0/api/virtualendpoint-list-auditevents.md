@@ -3,7 +3,7 @@ title: "List auditEvents"
 description: "Get a list of the cloudPcAuditEvent objects and their properties."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

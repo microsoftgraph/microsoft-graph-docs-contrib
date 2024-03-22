@@ -3,7 +3,7 @@ title: "cloudPcAuditEvent: getAuditActivityTypes"
 description: "Get audit activity types by tenant ID."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

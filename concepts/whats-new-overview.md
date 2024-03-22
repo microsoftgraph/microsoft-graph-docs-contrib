@@ -28,9 +28,9 @@ Added the ability to list and get [Windows settings](/graph/api/resources/window
 
 ### Device and app management | Cloud PC
 
-- List and get operations available on [cloudPcAuditEvent](/graph/api/resources/cloudpcauditevent).
-- List, get, create, delete, and get source images operations available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
-- List and get operations available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
+- List and get operations are now available on [cloudPcAuditEvent](/graph/api/resources/cloudpcauditevent).
+- List, get, create, delete, and get source images operations are now available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
+- List and get operations are now available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
 
 ### Education | Assignment
 
