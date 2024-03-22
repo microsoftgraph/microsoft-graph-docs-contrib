@@ -47,6 +47,8 @@ If successful, this method returns a `200 OK` response code and a String collect
 
 ### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "cloudpcauditevent_getauditactivitytypes"
@@ -60,6 +62,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/auditEvent
 
 ### Response
 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
