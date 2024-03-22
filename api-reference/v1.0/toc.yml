@@ -1150,7 +1150,7 @@ items:
               - name: Create category
                 href: api/outlookuser-post-mastercategories.md
               - name: List modules
-                href: api/educationclass-list-modules.md                
+                href: api/educationclass-list-modules.md
               - name: Get category
                 href: api/outlookcategory-get.md
               - name: Update category
@@ -1289,9 +1289,9 @@ items:
                     href: api/usersettings-list-windows.md
                   - name: Get
                     href: api/windowssetting-get.md
-              - name: Windows setting instance                    
+              - name: Windows setting instance
                 href: resources/windowssettinginstance.md
-                items:              
+                items:
                   - name: List
                     href: api/windowssetting-list-instances.md
                   - name: Get
@@ -1470,6 +1470,15 @@ items:
                     href: api/cloudpc-restore.md
                   - name: Troubleshoot
                     href: api/cloudpc-troubleshoot.md
+              - name: Cloud PC audit event
+                href: resources/cloudpcauditevent.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-auditevents.md
+                  - name: Get
+                    href: api/cloudpcauditevent-get.md
+                  - name: Get audit activity types
+                    href: api/cloudpcauditevent-getauditactivitytypes.md
               - name: Cloud PC device image
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -4755,7 +4764,7 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md  
+                href: api/educationassignment-delta.md
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md
               - name: Update grading category
@@ -4828,7 +4837,7 @@ items:
             - name: Pin module
               href: api/educationmodule-pin.md
             - name: Unpin module
-              href: api/educationmodule-unpin.md                  
+              href: api/educationmodule-unpin.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
