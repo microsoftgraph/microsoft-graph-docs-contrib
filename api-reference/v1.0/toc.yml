@@ -1450,7 +1450,7 @@ items:
           - name: Cloud PC
             items:
               - name: Overview
-                href: resources-api-overview.md
+                href: resources/cloudpc-api-overview.md
               - name: Virtual endpoint
                 href: resources/virtualendpoint.md
               - name: Cloud PC Azure network connection
