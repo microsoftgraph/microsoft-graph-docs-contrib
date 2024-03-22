@@ -115,7 +115,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/usersettings/b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff?$expand=assignments
+GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/userSettings/b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff?$expand=assignments
 ```
 
 #### Response
