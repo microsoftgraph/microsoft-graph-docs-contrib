@@ -1,9 +1,9 @@
 ---
 title: "Update classGroupProvisioningFlow"
-description: "Update the properties of a microsoft.graph.industryData.classGroupProvisioningFlow object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Update the properties of a classGroupProvisioningFlow object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.industryData.classGroupProvisioningFlow](../resources/industrydata-classgroupprovisioningflow.md) object.
+Update the properties of a [classGroupProvisioningFlow](../resources/industrydata-classgroupprovisioningflow.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-classgroupprovisioningflow-update-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-classgroupprovisioningflow-update-permissions.md)]
 
 ## HTTP request
@@ -32,82 +33,88 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-PATCH /classGroupProvisioningFlow
+
+```http
+PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows/{id}
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). Optional.|
-|readinessStatus|microsoft.graph.industryData.readinessStatus|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. Optional.|
-|configuration|[microsoft.graph.industryData.classGroupConfiguration](../resources/industrydata-classgroupconfiguration.md)|**TODO: Add Description** Required.|
-
-
+| Property      | Type                                                                                                         | Description                                                                       |
+| :------------ | :----------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
+| configuration | [microsoft.graph.industryData.classGroupConfiguration](../resources/industrydata-classgroupconfiguration.md) | The different attribute choices for the class groups to be provisioned. Required. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.industryData.classGroupProvisioningFlow](../resources/industrydata-classgroupprovisioningflow.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_classgroupprovisioningflow"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/classGroupProvisioningFlow
+
+```http
+PATCH https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/9ab41255-5364-4c53-e15c-08dc4ab6ee03/provisioningFlows/417a82c8-7caa-4f82-3ac6-08dc4ac6fb7f
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.classGroupProvisioningFlow",
-  "readinessStatus": "String",
-  "configuration": {
-    "@odata.type": "microsoft.graph.industryData.classGroupConfiguration"
-  }
+    "@odata.type": "#microsoft.graph.industryData.classGroupProvisioningFlow",
+    "configuration": {
+        "@odata.type": "#microsoft.graph.industryData.classGroupConfiguration",
+        "additionalAttributes": [
+            "courseTitle",
+            "courseCode"
+        ],
+        "additionalOptions": {
+            "@odata.type": "#microsoft.graph.industryData.additionalClassGroupOptions",
+            "createTeam": false,
+            "writeDisplayNameOnCreateOnly": false
+        },
+        "enrollmentMappings": {
+            "@odata.type": "#microsoft.graph.industryData.enrollmentMappings",
+            "memberEnrollmentMappings": [
+                {
+                    "@odata.type": "#microsoft.graph.industryData.sectionRoleReferenceValue",
+                    "code": "substitute"
+                }
+            ],
+            "ownerEnrollmentMappings": [
+                {
+                    "@odata.type": "#microsoft.graph.industryData.sectionRoleReferenceValue",
+                    "code": "teacher"
+                }
+            ]
+        }
+    }
 }
 ```
-
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.industryData.classGroupProvisioningFlow",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "readinessStatus": "String",
-  "id": "6eb14a8c-e373-08cb-f352-64f045cbf6ef",
-  "configuration": {
-    "@odata.type": "microsoft.graph.industryData.classGroupConfiguration"
-  }
-}
+```http
+HTTP/1.1 204 No Content
 ```
-

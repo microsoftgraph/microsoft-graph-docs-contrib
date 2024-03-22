@@ -1,9 +1,9 @@
 ---
 title: "Get classGroupProvisioningFlow"
-description: "Read the properties and relationships of a microsoft.graph.industryData.classGroupProvisioningFlow object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Read the properties and relationships of a classGroupProvisioningFlow object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.industryData.classGroupProvisioningFlow](../resources/industrydata-classgroupprovisioningflow.md) object.
+Read the properties and relationships of a [classGroupProvisioningFlow](../resources/industrydata-classgroupprovisioningflow.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-classgroupprovisioningflow-get-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-classgroupprovisioningflow-get-permissions.md)]
 
 ## HTTP request
@@ -32,8 +33,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-GET /classGroupProvisioningFlow
+
+```http
+GET /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows/{id}
 ```
 
 ## Optional query parameters
@@ -42,9 +44,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -59,41 +61,121 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_classgroupprovisioningflow"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/classGroupProvisioningFlow
-```
 
+```http
+GET https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/9ab41255-5364-4c53-e15c-08dc4ab6ee03/provisioningFlows/417a82c8-7caa-4f82-3ac6-08dc4ac6fb7f
+```
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.industryData.classGroupProvisioningFlow"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/outboundProvisioningFlowSets('9ab41255-5364-4c53-e15c-08dc4ab6ee03')/provisioningFlows/$entity",
     "@odata.type": "#microsoft.graph.industryData.classGroupProvisioningFlow",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "readinessStatus": "String",
-    "id": "6eb14a8c-e373-08cb-f352-64f045cbf6ef",
+    "id": "417a82c8-7caa-4f82-3ac6-08dc4ac6fb7f",
+    "createdDateTime": "2024-03-22T23:34:18.5035988Z",
+    "lastModifiedDateTime": "2024-03-22T23:34:18.5035988Z",
+    "readinessStatus": "disabled",
     "configuration": {
-      "@odata.type": "microsoft.graph.industryData.classGroupConfiguration"
+        "additionalAttributes": [
+            "courseTitle",
+            "courseCode",
+            "courseSubject",
+            "courseGradeLevel",
+            "courseExternalId",
+            "academicSessionTitle",
+            "academicSessionExternalId"
+        ],
+        "additionalOptions": {
+            "createTeam": true,
+            "writeDisplayNameOnCreateOnly": true
+        },
+        "enrollmentMappings": {
+            "ownerEnrollmentMappings": [
+                {
+                    "code": "teacher"
+                },
+                {
+                    "code": "proctor"
+                },
+                {
+                    "code": "teacherAssistant"
+                },
+                {
+                    "code": "paraprofessional"
+                },
+                {
+                    "code": "physicalTherapist"
+                },
+                {
+                    "code": "speechTherapist"
+                },
+                {
+                    "code": "visionTherapist"
+                },
+                {
+                    "code": "occupationalTherapist"
+                },
+                {
+                    "code": "staff"
+                }
+            ],
+            "memberEnrollmentMappings": [
+                {
+                    "code": "student"
+                },
+                {
+                    "code": "substitute"
+                },
+                {
+                    "code": "aide"
+                },
+                {
+                    "code": "proctor"
+                },
+                {
+                    "code": "teacherAssistant"
+                },
+                {
+                    "code": "paraprofessional"
+                },
+                {
+                    "code": "physicalTherapist"
+                },
+                {
+                    "code": "speechTherapist"
+                },
+                {
+                    "code": "visionTherapist"
+                },
+                {
+                    "code": "occupationalTherapist"
+                },
+                {
+                    "code": "staff"
+                }
+            ]
+        }
     }
-  }
 }
 ```
-
