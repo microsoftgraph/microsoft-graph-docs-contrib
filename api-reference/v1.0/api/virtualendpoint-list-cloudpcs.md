@@ -144,9 +144,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/v1.0/$metadata#deviceManagement/virtualEndpoint/cloudPCs",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceManagement/virtualEndpoint/cloudPCs",
     "@odata.count": 200,
-    "@odata.nextLink": "https://canary.graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs?$top=2&$skiptoken=7d4e1527-fe5a-4d86-81eb-2c532ac567ce",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs?$top=2&$skiptoken=7d4e1527-fe5a-4d86-81eb-2c532ac567ce",
     "value": [
         {
             "id": "fd0230cd-4e05-4ecd-ad05-72f8a30042f1",
