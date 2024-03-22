@@ -1,7 +1,7 @@
 ---
 title: "Get deviceLink"
 description: "Retrieve the device link associated with a specific branch or remote network."
-author: Moti-ba
+author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: global-secure-access
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the device link associated with a specific branch or remote network.
+Retrieves a specific device link associated with a remote network.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -32,7 +32,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/deviceLinks/{deviceLinkId}
-GET /networkAccess
 ```
 
 ## Optional query parameters
@@ -63,36 +62,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04/deviceLinks/47aab2e9-7f5c-42ba-bbfc-1b049193126a
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-devicelink-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-devicelink-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-devicelink-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-devicelink-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-devicelink-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-devicelink-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-devicelink-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.

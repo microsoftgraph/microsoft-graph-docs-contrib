@@ -14852,8 +14852,12 @@ items:
                     items:
                       - name: List
                         href: api/networkaccess-remotenetwork-list-devicelinks.md
+                      - name: Get
+                        href: api/networkaccess-devicelink-get.md
                       - name: Create
                         href: api/networkaccess-remotenetwork-post-devicelinks.md
+                      - name: Delete
+                        href: api/networkaccess-branchsite-delete-devicelinks.md
                   - name: Connectivity configuration
                     href: resources/networkaccess-remotenetworkconnectivityconfiguration.md
                     items:
