@@ -36,6 +36,88 @@
         },
         {
             "ChangeList": [
+                {          
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "cloudPcDeviceImageErrorCode",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcDeviceImageErrorCode** enumeration type.",
+                  "Target": "cloudPcDeviceImageErrorCode"
+                },
+                {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "cloudPcDeviceImageOsStatus",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcDeviceImageOsStatus** enumeration type.",
+                  "Target": "cloudPcDeviceImageOsStatus"
+                },
+                {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "cloudPcDeviceImageStatus",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcDeviceImageStatus** enumeration type.",
+                  "Target": "cloudPcDeviceImageStatus"
+                },                
+                {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "cloudPcGalleryImageStatus",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcGalleryImageStatus** enumeration type.",
+                  "Target": "cloudPcGalleryImageStatus"
+                },
+                {
+                    "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "deviceImages",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **deviceImages** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "galleryImages",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **galleryImages** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "cloudPcDeviceImage",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDeviceImage?view=graph-rest-1.0) resource and supported methods.",
+                  "Target": "cloudPcDeviceImage"
+                },
+                {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "cloudPcSourceDeviceImage ",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-1.0) resource type.",
+                  "Target": "cloudPcSourceDeviceImage"
+                },
+                {
+                  "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "cloudPcGalleryImage",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-1.0) resource and supported methods.",
+                  "Target": "cloudPcGalleryImage"
+                }
+              ],
+              "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+              "Cloud": "Prod",
+              "Version": "v1.0",
+              "CreatedDateTime": "2024-03-21T08:15:15.7315291Z",
+              "WorkloadArea": "Device and app management",
+              "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                 {
                   "Id": "45fa9a2d-71fd-4e4d-943e-617cd5d926c7",
                   "ApiChange": "Method",

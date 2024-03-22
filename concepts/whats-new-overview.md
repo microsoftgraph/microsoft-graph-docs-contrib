@@ -28,7 +28,9 @@ Added the ability to list and get [Windows settings](/graph/api/resources/window
 
 ### Device and app management | Cloud PC
 
-List, get, end grace period, reboot, rename, restore, and troubleshoot operations available on [cloudPC](../resources/cloudpc.md).
+- List, get, end grace period, reboot, rename, restore, and troubleshoot operations available on [cloudPC](../resources/cloudpc.md).
+- List, get, create, delete, and get source images operations available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
+- List and get operations available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
 
 ### Education | Assignment
 
