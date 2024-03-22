@@ -58,7 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following example shows a request to rename a cloudPC for the administrator.
+The following example shows a request to rename a Cloud PC for the administrator.
 
 <!-- {
   "blockType": "request",
