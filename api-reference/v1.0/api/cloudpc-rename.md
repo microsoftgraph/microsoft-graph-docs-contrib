@@ -44,7 +44,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/rename
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameter thatyou can use with this action.
+The following table shows the parameter that you can use with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
