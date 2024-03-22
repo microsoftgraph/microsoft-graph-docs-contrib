@@ -1,9 +1,9 @@
 ---
 title: "Delete administrativeUnitProvisioningFlow"
-description: "Delete a microsoft.graph.industryData.administrativeUnitProvisioningFlow object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Delete an administrativeUnitProvisioningFlow object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [microsoft.graph.industryData.administrativeUnitProvisioningFlow](../resources/industrydata-administrativeunitprovisioningflow.md) object.
+Delete an [administrativeUnitProvisioningFlow](../resources/industrydata-administrativeunitprovisioningflow.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-administrativeunitprovisioningflow-delete-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-administrativeunitprovisioningflow-delete-permissions.md)]
 
 ## HTTP request
@@ -32,15 +33,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-DELETE /administrativeUnitProvisioningFlow
+
+```http
+DELETE /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows/{id}
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -55,26 +57,29 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_administrativeunitprovisioningflow"
 }
 -->
-``` http
-DELETE https://graph.microsoft.com/beta/administrativeUnitProvisioningFlow
-```
 
+```http
+DELETE https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/9ab41255-5364-4c53-e15c-08dc4ab6ee03/provisioningFlows/f66e97ad-0870-46e0-3ff3-08dc49dccdc9
+```
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```
-

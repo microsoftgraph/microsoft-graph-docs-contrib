@@ -1,9 +1,9 @@
 ---
 title: "Update administrativeUnitProvisioningFlow"
-description: "Update the properties of a microsoft.graph.industryData.administrativeUnitProvisioningFlow object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Update the properties of an administrativeUnitProvisioningFlow object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.industryData.administrativeUnitProvisioningFlow](../resources/industrydata-administrativeunitprovisioningflow.md) object.
+Update the properties of an [administrativeUnitProvisioningFlow](../resources/industrydata-administrativeunitprovisioningflow.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-administrativeunitprovisioningflow-update-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-administrativeunitprovisioningflow-update-permissions.md)]
 
 ## HTTP request
@@ -32,82 +33,69 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-PATCH /administrativeUnitProvisioningFlow
+
+```http
+PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows/{id}
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). Optional.|
-|readinessStatus|microsoft.graph.industryData.readinessStatus|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. Optional.|
-|creationOptions|[microsoft.graph.industryData.adminUnitCreationOptions](../resources/industrydata-adminunitcreationoptions.md)|**TODO: Add Description** Required.|
-
-
+|creationOptions|[microsoft.graph.industryData.adminUnitCreationOptions](../resources/industrydata-adminunitcreationoptions.md)|The different attribute choices for the administrative units to be provisioned. Required.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.industryData.administrativeUnitProvisioningFlow](../resources/industrydata-administrativeunitprovisioningflow.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_administrativeunitprovisioningflow"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/administrativeUnitProvisioningFlow
+
+```http
+PATCH https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/9ab41255-5364-4c53-e15c-08dc4ab6ee03/provisioningFlows/f66e97ad-0870-46e0-3ff3-08dc49dccdc9
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.industryData.administrativeUnitProvisioningFlow",
-  "readinessStatus": "String",
-  "creationOptions": {
-    "@odata.type": "microsoft.graph.industryData.adminUnitCreationOptions"
+  "creationOptions":
+  {
+    "createBasedOnOrg": true,
+    "createBasedOnOrgPlusroleGroup": false
   }
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.industryData.administrativeUnitProvisioningFlow",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "readinessStatus": "String",
-  "id": "c8847fd7-a4e0-d7de-70b1-a438601eb7ee",
-  "creationOptions": {
-    "@odata.type": "microsoft.graph.industryData.adminUnitCreationOptions"
-  }
-}
+```http
+HTTP/1.1 204 No Content
 ```
-
