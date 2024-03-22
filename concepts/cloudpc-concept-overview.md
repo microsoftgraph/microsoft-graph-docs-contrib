@@ -28,7 +28,7 @@ Upload and manage operating system [images](/graph/api/resources/cloudpcdeviceim
 
 ### View end users’ Cloud PCs and their properties
 
-Once provisioned, list and view end users’ [Cloud PCs](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) and all associated properties. This Cloud PC visibility allows for hands-on management and ease of troubleshooting when needed. 
+Once provisioned, list and view end users’ [Cloud PCs](/graph/api/resources/cloudpc) and all associated properties. This Cloud PC visibility allows for hands-on management and ease of troubleshooting when needed. 
 
 ## API reference
 
