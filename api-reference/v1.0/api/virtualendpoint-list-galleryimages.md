@@ -1,7 +1,7 @@
 ---
 title: "List galleryImages"
-description: "List the properties and relationships of gallery images of the organization."
-author: "AshleyYangSZ"
+description: "List the properties and relationships of cloudPcGalleryImage objects."
+author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
@@ -11,11 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-List the properties and relationships of the [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+List the properties and relationships of [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.
 
 ## Permissions
 
@@ -43,7 +39,7 @@ This method supports the `$select` and `$filter` OData query parameters to help 
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 
 ## Request body
 
@@ -59,49 +55,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_cloudpcgalleryimage"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryImages
+GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/galleryImages
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcgalleryimage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-cloudpcgalleryimage-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcgalleryimage-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcgalleryimage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcgalleryimage-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcgalleryimage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcgalleryimage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpcgalleryimage-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -120,20 +81,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/galleryImages",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceManagement/virtualEndpoint/galleryImages",
   "value": [
     {
       "id": "MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os",
       "displayName": "Windows 10 Enterprise + OS Optimizations 1909",
-      "offerDisplayName": "Windows 10 Enterprise + OS Optimizations",
-      "skuDisplayName": "1909",
-      "publisher": "MicrosoftWindowsDesktop",
       "publisherName": "MicrosoftWindowsDesktop",
-      "offer": "windows-ent-cpc",
       "offerName": "windows-ent-cpc",
-      "sku": "19h2-ent-cpc-os",
       "skuName": "19h2-ent-cpc-os",
-      "recommendedSku": "light",
       "status": "supported",
       "sizeInGB": 64,
       "startDate": "2019-11-12",
@@ -143,15 +98,9 @@ Content-Type: application/json
     {
       "id": "MicrosoftWindowsDesktop_windows-ent-cpc_20h1-ent-cpc-os",
       "displayName": "Windows 10 Enterprise + OS Optimizations 2004",
-      "offerDisplayName": "Windows 10 Enterprise + OS Optimizations",
-      "skuDisplayName": "2004",
-      "publisher": "MicrosoftWindowsDesktop",
       "publisherName": "MicrosoftWindowsDesktop",
-      "offer": "windows-ent-cpc",
       "offerName": "windows-ent-cpc",
-      "sku": "20h1-ent-cpc-os",
       "skuName": "20h1-ent-cpc-os",
-      "recommendedSku": "light",
       "status": "supported",
       "sizeInGB": 64,
       "startDate": "2020-05-27",

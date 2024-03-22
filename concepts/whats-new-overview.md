@@ -30,6 +30,8 @@ Added the ability to list and get [Windows settings](/graph/api/resources/window
 
 - List, get, create, update, delete, and assign provisioning policies operations available on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy).
 - List, get, create, update, delete, and assign user settings operations available on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting).
+- List, get, create, delete, and get source images operations available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
+- List and get operations available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
 
 ### Education | Assignment
 

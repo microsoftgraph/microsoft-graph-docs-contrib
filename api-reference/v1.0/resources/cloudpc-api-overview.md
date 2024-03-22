@@ -28,6 +28,7 @@ Microsoft Graph controls access to resources via permissions. As a developer, yo
 
 |Use cases|REST resources|See also|
 |:---|:---|:---|
+|List, get, create, delete, and get source images|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](/windows-365/enterprise/device-images)|
 |List, get, create, update, delete, or assign provisioning policies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|[Provisioning overview](/windows-365/enterprise/provisioning)|
 |List, get, create, update, delete, or assign user settings|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|[User settings overview](../resources/cloudpcusersetting.md)|
 
