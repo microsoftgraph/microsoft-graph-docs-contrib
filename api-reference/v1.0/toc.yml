@@ -1479,6 +1479,21 @@ items:
                     href: api/cloudpcauditevent-get.md
                   - name: Get audit activity types
                     href: api/cloudpcauditevent-getauditactivitytypes.md
+              - name: Cloud PC Azure network connection
+                href: resources/cloudpconpremisesconnection.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-onpremisesconnections.md
+                  - name: Create
+                    href: api/virtualendpoint-post-onpremisesconnections.md
+                  - name: Get
+                    href: api/cloudpconpremisesconnection-get.md
+                  - name: Update
+                    href: api/cloudpconpremisesconnection-update.md
+                  - name: Delete
+                    href: api/cloudpconpremisesconnection-delete.md
+                  - name: Run health checks
+                    href: api/cloudpconpremisesconnection-runhealthcheck.md
               - name: Cloud PC device image
                 href: resources/cloudpcdeviceimage.md
                 items:
