@@ -30,7 +30,7 @@ Derived from [place](place.md).
 | displayName    | String                                            | The name associated with the room list. |
 | emailAddress   | String                                            | The email address of the room list. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude, and (optionally) altitude coordinates. |
-| id             | String                                            | Unique identifier for the room list. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called "placeId", which provides an immutable ID |
+| id             | String                                            | Unique identifier for the room list. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called **placeId**, which provides an immutable ID |
 | phone          | String                                            | The phone number of the room list. |
 
 ## Relationships
