@@ -44,7 +44,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | phone                  | String                                            | The phone number of the room. |
-| placeId                | String                                            | Unique identifier for the room. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
+| placeId                | String                                            | A unique identifier for the room. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. |
 | tags                   | String collection                                 | Specifies other features of the room; for example, the type of view or furniture type. |
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
 
@@ -52,7 +52,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
-| standard | The room can be reserved based on the other settings in this cmdlet. It is the default value. |
+| standard | The room can be reserved based on the other settings in this cmdlet. This value is the default. |
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
 
 ## Relationships
