@@ -1,9 +1,9 @@
 ---
 title: "Update securityGroupProvisioningFlow"
-description: "Update the properties of a microsoft.graph.industryData.securityGroupProvisioningFlow object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Update the properties of a securityGroupProvisioningFlow object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.industryData.securityGroupProvisioningFlow](../resources/industrydata-securitygroupprovisioningflow.md) object.
+Update the properties of a [securityGroupProvisioningFlow](../resources/industrydata-securitygroupprovisioningflow.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-securitygroupprovisioningflow-update-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-securitygroupprovisioningflow-update-permissions.md)]
 
 ## HTTP request
@@ -32,82 +33,66 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-PATCH /securityGroupProvisioningFlow
+
+```http
+PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows/{id}
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). Optional.|
-|readinessStatus|microsoft.graph.industryData.readinessStatus|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. Optional.|
-|creationOptions|[microsoft.graph.industryData.securityGroupCreationOptions](../resources/industrydata-securitygroupcreationoptions.md)|**TODO: Add Description** Required.|
-
-
+| Property        | Type                                                                                                                   | Description                                                                       |
+| :-------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
+| creationOptions | [microsoft.graph.industryData.securityGroupCreationOptions](../resources/industrydata-securitygroupcreationoptions.md) | The different attribute choices for the class groups to be provisioned. Required. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.industryData.securityGroupProvisioningFlow](../resources/industrydata-securitygroupprovisioningflow.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_securitygroupprovisioningflow"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/securityGroupProvisioningFlow
+
+```http
+PATCH https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/9ab41255-5364-4c53-e15c-08dc4ab6ee03/provisioningFlows/4598f62a-7bd9-40a1-d38a-08dc4ac68cf2
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.industryData.securityGroupProvisioningFlow",
-  "readinessStatus": "String",
-  "creationOptions": {
-    "@odata.type": "microsoft.graph.industryData.securityGroupCreationOptions"
+  "creationOptions":
+  {
+    "createBasedOnRoleGroup": true,
+    "createBasedOnOrgPlusRoleGroup": true
   }
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.industryData.securityGroupProvisioningFlow",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "readinessStatus": "String",
-  "id": "756742db-e0f1-bd49-1dcb-a18f305a49b0",
-  "creationOptions": {
-    "@odata.type": "microsoft.graph.industryData.securityGroupCreationOptions"
-  }
-}
+```http
+HTTP/1.1 204 No Content
 ```
-
