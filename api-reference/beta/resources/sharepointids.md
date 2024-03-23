@@ -4,7 +4,7 @@ description: "The SharePointIds resource groups the various identifiers for an i
 ms.date: 09/10/2017
 title: SharePointIds
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # SharePointIds resource type

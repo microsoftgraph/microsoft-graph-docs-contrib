@@ -48,12 +48,6 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "azure_docs",
-      "url": "https://github.com/MicrosoftDocs/azure-docs/",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
       "path_to_root": "entra_docs",
       "url": "https://github.com/MicrosoftDocs/entra-docs/",
       "branch": "main",

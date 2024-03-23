@@ -3,7 +3,7 @@ title: 'Update verticalSection'
 description: "Update the properties of a verticalSection object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # Update verticalSection
@@ -55,7 +55,7 @@ If the vertical section does not exist, this method returns a `404 NotFound` res
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- { "blockType": "ignored" } -->
 

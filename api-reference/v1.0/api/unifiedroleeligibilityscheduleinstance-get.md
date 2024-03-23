@@ -3,7 +3,7 @@ title: "Get unifiedRoleEligibilityScheduleInstance"
 description: "Get the instance of a role eligibility."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

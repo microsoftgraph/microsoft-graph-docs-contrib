@@ -3,7 +3,7 @@ title: "device resource type"
 description: "Represents a device registered in the organization."
 ms.localizationpriority: medium
 author: "sandeo-MSFT"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

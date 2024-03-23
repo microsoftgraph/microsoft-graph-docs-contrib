@@ -53,6 +53,74 @@
     {
       "ChangeList": [
         {
+          "Id": "0e3407ba-55b3-4798-9d4b-c7e58b25d6b6",
+          "ApiChange": "Member",
+          "ChangedApiName": "userChangedPasswordOnPremises",
+          "ChangeType": "Addition",
+          "Description": "Added the `userChangedPasswordOnPremises` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "0e3407ba-55b3-4798-9d4b-c7e58b25d6b6",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminDismissedRiskForSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminDismissedRiskForSignIn` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "0e3407ba-55b3-4798-9d4b-c7e58b25d6b6",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminConfirmedAccountSafe",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminConfirmedAccountSafe` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "0e3407ba-55b3-4798-9d4b-c7e58b25d6b6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-05T00:00:00.2909376Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3b33c800-075c-44f3-b922-ed3e7bee6503",
+          "ApiChange": "Member",
+          "ChangedApiName": "userChangedPasswordOnPremises",
+          "ChangeType": "Addition",
+          "Description": "Added the `userChangedPasswordOnPremises` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "3b33c800-075c-44f3-b922-ed3e7bee6503",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminDismissedRiskForSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminDismissedRiskForSignIn` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "3b33c800-075c-44f3-b922-ed3e7bee6503",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminConfirmedAccountSafe",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminConfirmedAccountSafe` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "3b33c800-075c-44f3-b922-ed3e7bee6503",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-05T00:00:00.2913103Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "514fea21-1d51-46d0-847e-9c2cce1d6c58",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantSecureScore",
@@ -3138,6 +3206,40 @@
       "Version": "beta",
       "CreatedDateTime": "2023-10-24T19:42:37.8361251Z",
       "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+          "ApiChange": "Member",
+          "ChangedApiName": "aadGraphDeprecationApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the `aadGraphDeprecationApplication` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+          "ApiChange": "Member",
+          "ChangedApiName": "aadGraphDeprecationServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the `aadGraphDeprecationServicePrincipal` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        },
+        {
+          "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+          "ApiChange": "Member",
+          "ChangedApiName": "mfaServerDeprecation",
+          "ChangeType": "Addition",
+          "Description": "Added the `mfaServerDeprecation` member to the **recommendationType** enumeration.",
+          "Target": "recommendationType"
+        }
+      ],
+      "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-23T18:25:58.892085Z",
+      "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
     }
   ]

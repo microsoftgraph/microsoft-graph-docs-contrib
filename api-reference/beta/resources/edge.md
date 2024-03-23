@@ -3,7 +3,7 @@ title: "edge resource type"
 description: "Represents an entity that acts as a container for Microsoft Edge functionalities."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: resourcePageType
 ---
 

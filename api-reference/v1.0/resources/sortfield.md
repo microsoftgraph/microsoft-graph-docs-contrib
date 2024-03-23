@@ -3,7 +3,7 @@ title: "SortField resource type"
 description: "Represents a condition in a sorting operation."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: excel
+ms.subservice: excel
 doc_type: resourcePageType
 ---
 

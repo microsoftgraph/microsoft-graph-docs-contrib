@@ -1,11 +1,11 @@
 ---
 title: "Applications API overview"
 description: "Microsoft Graph APIs enable you to register apps, manage app properties and configurations, secure access to on-premises apps, and synchronize identities from on-premises and SaaS apps to Microsoft Entra ID."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.custom: scenarios:getting-started
 ms.date: 01/23/2024
 #customer intent: As a developer, I want to understand the capabilities available to manage a Microsoft Entra application programmatically using Microsoft Graph.
@@ -61,6 +61,8 @@ You can use Microsoft Graph APIs for application management to perform the follo
   - Manage the permissions that have been granted to the service principal.
 - Connect **on-premises applications** to Microsoft Entra ID, secure remote access to on-premises applications, and publish on-premises applications to remote users.
 - **Provision and synchronize** identities from an on-premises directory, or a SaaS application to Microsoft Entra ID.
+
+To discover all the API operations for managing applications and service principals, see [Manage Microsoft Entra applications and service principals using Microsoft Graph](/graph/api/resources/applications-api-overview).
 
 ## Other resources
 

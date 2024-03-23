@@ -3,7 +3,7 @@ title: "Get change notifications for Microsoft Teams meeting call updates"
 description: "Use change notifications in Microsoft Graph to enable you to subscribe to call started/ended and call roster updates for Microsoft Teams online meetings."
 author: "benlee-msft"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.custom: scenarios:getting-started
 ---
 

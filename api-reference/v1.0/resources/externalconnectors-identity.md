@@ -3,7 +3,7 @@ title: "identity resource type"
 description: "Represents an identity used to set permissions on external content added to Microsoft Graph."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

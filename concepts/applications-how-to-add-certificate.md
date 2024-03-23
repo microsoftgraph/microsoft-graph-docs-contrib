@@ -1,11 +1,12 @@
 ---
 title: "Add a certificate to an app or service principal using Microsoft Graph"
 description: "Learn how to update an app's certificate credentials programmatically using Microsoft Graph."
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: saurabh.madan
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.date: 09/08/2023
 ---
 
@@ -83,7 +84,7 @@ MIIDADCCAeigAwIBAgIQP6HEGDdZ65xJTcK4dCBvZzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAgy
 The following request adds the certificate details to an app. The settings are as follows:
 
 - The **startDateTime** is the date when or after the certificate was created.
-- The **endDateTime** can be a maximum of three years from the **startDateTime**. If unspecified, the system will automatically assign a date one year after the **startDateTime**.
+- The **endDateTime** can be a maximum of 1 year from the **startDateTime**. If unspecified, the system will automatically assign a date 1 year after the **startDateTime**.
 - The **type** and **usage** must be `AsymmetricX509Cert` and `Verify` respectively.
 - Assign the certificate subject name to the **displayName** property.
 - The **key** is the Base64 encoded value that you generated in the previous step.

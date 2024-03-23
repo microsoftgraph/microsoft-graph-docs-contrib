@@ -3,7 +3,7 @@ title: "Create windowsPhone81ImportedPFXCertificateProfile"
 description: "Create a new windowsPhone81ImportedPFXCertificateProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

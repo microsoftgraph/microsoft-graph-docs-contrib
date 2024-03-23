@@ -3,7 +3,7 @@ title: "payloadCoachmark resource type"
 description: "Represents the payload coachmark detail of a payload."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
