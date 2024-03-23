@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents basic location attributes such as name, physical address, and geographic coordinates. It is the base type for richer location types such as [room](room.md), [workspace](workspace.md), and [roomList](roomlist.md).
+Represents basic location attributes such as name, physical address, and geographic coordinates. This resource is the base type for richer location types such as [room](room.md), [workspace](workspace.md), and [roomList](roomlist.md).
 
 ### Using the places API
 Exchange Online administrators can organize meeting rooms and workspaces in a tenant into room lists. Using the places API, you can use the [list](../api/place-list.md) operation to get all the rooms, workspaces, or room lists in the tenant, or get the rooms and workspaces in a specific room list.
@@ -48,9 +48,9 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 | address        | [physicalAddress](physicaladdress.md)             | The street address of the place. |
 | displayName    | String                                            | The name associated with the place. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the place location in latitude, longitude, and (optionally) altitude coordinates. |
-| id             | String                                            | Unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
+| id             | String                                            | A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
 | phone          | String                                            | The phone number of the place. |
-| placeId        | String                                            | Unique, immutable identifier for the place. Read-only. The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet. |
+| placeId        | String                                            | A unique, immutable identifier for the place. Read-only. The value of this identifier is equal to the **ExternalDirectoryObjectId** returned from the `Get-Mailbox` cmdlet. |
 
 ## Relationships
 
