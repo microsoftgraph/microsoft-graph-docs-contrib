@@ -1,6 +1,6 @@
 ---
 title: "place resource type"
-description: "Represents a place. It is the base type for a room or roomList."
+description: "Represents a place. This resource is the base type for a room or roomList."
 ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: "outlook"
@@ -46,7 +46,7 @@ The [findRooms](/graph/api/user-findrooms) and [findRoomLists](/graph/api/user-f
 | address        | [physicalAddress](physicaladdress.md)             | The street address of the place. |
 | displayName    | String                                            | The name associated with the place. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the place location in latitude, longitude, and (optionally) altitude coordinates. |
-| id             | String                                            | Unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called "placeId", which provides an immutable ID. |
+| id             | String                                            | A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called **placeId**, which provides an immutable ID. |
 | phone          | String                                            | The phone number of the place. |
 
 ## Relationships
