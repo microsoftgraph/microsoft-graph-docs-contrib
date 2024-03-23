@@ -5,7 +5,7 @@ ms.author: maniksingh
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItem objects with the file property can be downloaded."
 ms.localizationpriority: medium
 ms.date: 3/6/2024
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get file by contentStream

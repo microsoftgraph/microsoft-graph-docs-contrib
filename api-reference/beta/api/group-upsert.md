@@ -3,7 +3,7 @@ title: "Upsert group"
 description: "Create a new Microsoft 365 group or security group if it doesn't exist, or update the properties of an existing group object."
 author: "Jordanndahl"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
