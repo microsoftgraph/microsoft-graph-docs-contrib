@@ -11,20 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a Cloud PC provisioning policy.
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List provisioningPolicies](../api/virtualendpoint-list-provisioningpolicies.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|List properties and relationships of the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) objects.|
-|[Get cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-get.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Read the properties and relationships of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
 |[Create cloudPcProvisioningPolicy](../api/virtualendpoint-post-provisioningpolicies.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Create a new [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
+|[Get cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-get.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Read the properties and relationships of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
 |[Update cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-update.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Update the properties of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
 |[Delete cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-delete.md)|None|Delete a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
-|[Assign cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-assign.md)|None |Assign a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
+|[Assign](../api/cloudpcprovisioningpolicy-assign.md)|None |Assign a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
 
 ## Properties
 
@@ -38,18 +38,22 @@ Represents a Cloud PC provisioning policy.
 |domainJoinConfigurations|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md) collection|Specifies a list ordered by priority on how Cloud PCs join Microsoft Entra ID (Azure AD). Supports `$select`.|
 |enableSingleSignOn|Boolean|`True` if the provisioned Cloud PC can be accessed by single sign-on. `False` indicates that the provisioned Cloud PC doesn't support this feature. The default value is `false`. Windows 365 users can use single sign-on to authenticate to Microsoft Entra ID with passwordless options (for example, FIDO keys) to access their Cloud PC. Optional.|
 |gracePeriodInHours|Int32|The number of hours to wait before reprovisioning/deprovisioning happens. Read-only.|
-|id|String|The unique identifier associated with the provisioning policy. This ID is auto populated during the creation of a new provisioning policy. Read-only. Supports `$filter`, `$select`, and `$orderBy`. |
+|id|String|The unique identifier associated with the provisioning policy. This ID is auto populated during the creation of a new provisioning policy. Supports `$filter`, `$select`, and `$orderBy`. Read-only. Inherited from [entity](../resources/entity.md). |
 |imageDisplayName|String|The display name of the operating system image that is used for provisioning. For example, `Windows 11 Preview + Microsoft 365 Apps 23H2 23H2`. Supports `$filter`, `$select`, and `$orderBy`. |
 |imageId|String|The unique identifier that represents an operating system image that is used for provisioning new Cloud PCs. The format for a gallery type image is: {publisherName_offerName_skuName}. Supported values for each of the parameters are:<ul><li>publisher: `Microsoftwindowsdesktop`</li> <li>offer: `windows-ent-cpc`</li> <li>sku: `21h1-ent-cpc-m365`, `21h1-ent-cpc-os`, `20h2-ent-cpc-m365`, `20h2-ent-cpc-os`, `20h1-ent-cpc-m365`, `20h1-ent-cpc-os`, `19h2-ent-cpc-m365`, and `19h2-ent-cpc-os`</li></ul> Supports `$filter`, `$select`, and `$orderBy`.|
-|imageType|cloudPcProvisioningPolicyImageType|The type of operating system image (custom or gallery) that is used for provisioning on Cloud PCs. Possible values are: `gallery`, `custom`. The default value is `gallery`. Supports $filter, $select, and $orderBy.|
+|imageType|[cloudPcProvisioningPolicyImageType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningpolicyimagetype-values)|The type of operating system image (custom or gallery) that is used for provisioning on Cloud PCs. Possible values are: `gallery`, `custom`. The default value is `gallery`. Supports $filter, $select, and $orderBy.|
 |localAdminEnabled|Boolean|When `true`, the local admin is enabled for Cloud PCs; `false` indicates that the local admin isn't enabled for Cloud PCs. The default value is `false`. Supports `$filter`, `$select`, and `$orderBy`.|
-|managedBy|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|Indicates the service that manages the provisioning policy. Possible values are: `windows365`, `devBox`, `unknownFutureValue`, `rpaBox`. The default value is `windows365`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rpaBox`. Supports `$filter`, `$select`, and `$orderBy`.|
 |microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftmanageddesktop.md)|The specific settings to **microsoftManagedDesktop** that enables Microsoft Managed Desktop customers to get device managed experience for Cloud PC. To enable **microsoftManagedDesktop** to provide more value, an admin needs to specify certain settings in it. Supports `$filter`, `$select`, and `$orderBy`.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs using this policy. By default, the license type is `dedicated` if the **provisioningType** isn't specified when you create the **cloudPcProvisioningPolicy**. You can't change this property after the **cloudPcProvisioningPolicy** was created. Possible values are: `dedicated`, `shared`, `unknownFutureValue`.|
-|windowsSetting|[cloudPcWindowsSettings](../resources/cloudpcwindowssetting.md)|Indicates a specific Windows setting to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. |
-|domainJoinConfiguration (deprecated)|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs join Microsoft Entra ID.|
-|onPremisesConnectionId (deprecated)|String|The ID of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
-|windowsSettings (deprecated)|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific Windows settings to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. The **windowsSettings** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **windowsSetting** property.|
+|windowsSetting|[cloudPcWindowsSetting](../resources/cloudpcwindowssetting.md)|Indicates a specific Windows setting to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. |
+
+### cloudPcProvisioningPolicyImageType values
+
+| Member             | Description                                                                                                                                                                           |
+|:-------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| custom             | Indicates that the provisioning policy for the Cloud PC operating system image is set to _Custom Image_. Custom images need to be created, configured, and uploaded by the IT admins. |
+| gallery            | Indicates that the provisioning policy for the Cloud PC operating system image is set to _Gallery Image_. Gallery images are optimized Windows images provided by Microsoft.          |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                                                                                      |
 
 ### cloudPcProvisioningType values
 
@@ -85,9 +89,6 @@ The following JSON representation shows the resource type.
   "cloudPcNamingTemplate": "String",
   "description": "String",
   "displayName": "String",
-  "domainJoinConfiguration": {
-    "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
-  },
   "domainJoinConfigurations": [{"@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"}],
   "enableSingleSignOn": "Boolean",
   "gracePeriodInHours": "Int32",
@@ -96,17 +97,8 @@ The following JSON representation shows the resource type.
   "imageId": "String",
   "imageType": "String",
   "localAdminEnabled": "Boolean",
-  "managedBy": "String",
-  "microsoftManagedDesktop": {
-    "@odata.type": "microsoft.graph.microsoftManagedDesktop"
-  },
-  "onPremisesConnectionId": "String",
+  "microsoftManagedDesktop": {"@odata.type": "microsoft.graph.microsoftManagedDesktop"},
   "provisioningType": "String",
-  "windowsSetting": {
-    "@odata.type": "microsoft.graph.cloudPcWindowsSetting"
-  },
-  "windowsSettings": {
-    "@odata.type": "microsoft.graph.cloudPcWindowsSettings"
-  }
+  "windowsSetting": {"@odata.type": "microsoft.graph.cloudPcWindowsSetting"}
 }
 ```

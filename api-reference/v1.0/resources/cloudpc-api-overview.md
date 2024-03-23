@@ -30,6 +30,8 @@ Microsoft Graph controls access to resources via permissions. As a developer, yo
 |:---|:---|:---|
 |List, get, end grace period, reboot, rename, restore, and troubleshoot Cloud PCs |[cloudPC](../resources/cloudpc.md)|[Cloud PCs lifecycle](/windows-365/enterprise/lifecycle)|
 |List, get, create, delete, and get source images|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](/windows-365/enterprise/device-images)|
+|List, get, create, update, delete, or assign provisioning policies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|[Provisioning overview](/windows-365/enterprise/provisioning)|
+|List, get, create, update, delete, or assign user settings|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|[User settings overview](../resources/cloudpcusersetting.md)|
 
 ## Next steps
 - Check out the [overview for Windows 365 Cloud PC on Microsoft Graph](/graph/cloudpc-concept-overview).
