@@ -37,7 +37,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude, and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the room. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called "placeId", which provides an immutable ID. |
+| id                     | String                                            | Unique identifier for the room. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called **placeId**, which provides an immutable ID. |
 | isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
@@ -50,7 +50,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
-| standard | The room is available and can be reserved. It is the default value. |
+| standard | The room is available and can be reserved. This value is the default. |
 
 ## Relationships
 
