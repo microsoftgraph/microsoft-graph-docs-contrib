@@ -695,7 +695,6 @@ items:
                 href: api/profilephoto-update.md
               - name: Delete photo
                 href: api/profilephoto-delete.md
-
           - name: Planner
             items:
               - name: Planner plan
