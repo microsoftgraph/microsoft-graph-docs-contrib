@@ -35,7 +35,6 @@ Microsoft Graph controls access to resources via permissions. As a developer, yo
 |List, get, create, update delete, and run health checks for Azure network connections.|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|[On-premises network connection overview](/windows-365/enterprise/on-premises-network-connections)|
 |List audit events for Cloud PCs, get a specific audit event, and get audit activity types.|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|[Get Cloud PC audit logs](/windows-365/enterprise/get-cloud-pc-audit-logs-using-powershell)|
 |List, get, create, update, delete or assign user settings.|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|[User settings overview](../resources/cloudpcusersetting.md)|
-|Set up rules to alert issues on the Microsoft Endpoint Manager admin center with provisioning Cloud PCs, uploading Cloud PC images, and checking Azure network connections.|[alertRecord](devicemanagement-alertrecord.md), [alertRule](devicemanagement-alertrule.md) | [Alert monitoring API](devicemanagement-monitoring.md)|
 
 ## Next steps
 - Check out the [overview for Windows 365 Cloud PC on Microsoft Graph](/graph/cloudpc-concept-overview).
