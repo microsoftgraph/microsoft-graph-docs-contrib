@@ -20,7 +20,7 @@ Create [Azure network connections](/graph/api/resources/cloudpconpremisesconnect
 
 ### Provision Cloud PCs
 
-Create [provisioning policies](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) and assign to user groups to provision Cloud PCs to them when they have licenses assigned as well. After provisioning policy creation, you can also list, update, and delete provisioning policies. 
+Create [provisioning policies](/graph/api/resources/cloudpcprovisioningpolicy) and assign to user groups to provision Cloud PCs to them when they have licenses assigned as well. After provisioning policy creation, you can also list, update, and delete provisioning policies. 
 
 ### Upload device images
 
