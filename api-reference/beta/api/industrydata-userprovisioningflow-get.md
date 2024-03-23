@@ -1,9 +1,9 @@
 ---
 title: "Get userProvisioningFlow"
-description: "Read the properties and relationships of a microsoft.graph.industryData.userProvisioningFlow object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Read the properties and relationships of a userProvisioningFlow object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.
+Read the properties and relationships of a [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-userprovisioningflow-get-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-userprovisioningflow-get-permissions.md)]
 
 ## HTTP request
@@ -32,8 +33,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-GET /userProvisioningFlow
+
+```http
+GET /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows/{id}
 ```
 
 ## Optional query parameters
@@ -42,9 +44,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -52,52 +54,183 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_userprovisioningflow"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/userProvisioningFlow
-```
 
+```http
+GET https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/9ab41255-5364-4c53-e15c-08dc4ab6ee03/provisioningFlows/dbd36d16-c574-4ed8-3ac7-08dc4ac6fb7f
+```
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.industryData.userProvisioningFlow"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/testprodbetalocal_sds-ppe/$metadata#external/industryData/outboundProvisioningFlowSets('9ab41255-5364-4c53-e15c-08dc4ab6ee03')/provisioningFlows/$entity",
     "@odata.type": "#microsoft.graph.industryData.userProvisioningFlow",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "readinessStatus": "String",
-    "id": "46d4012c-cdff-7a92-9105-a7529a28711f",
-    "createUnmatchedUsers": "Boolean",
+    "id": "dbd36d16-c574-4ed8-3ac7-08dc4ac6fb7f",
+    "createdDateTime": "2024-03-23T00:24:32.3286035Z",
+    "lastModifiedDateTime": "2024-03-23T00:24:32.3286035Z",
+    "readinessStatus": "disabled",
+    "createUnmatchedUsers": true,
     "managementOptions": {
-      "@odata.type": "microsoft.graph.industryData.userManagementOptions"
+        "additionalAttributes": [
+            "userGradeLevel"
+        ],
+        "additionalOptions": {
+            "markAllStudentsAsMinors": true,
+            "allowStudentContactAssociation": false
+        }
     },
     "creationOptions": {
-      "@odata.type": "microsoft.graph.industryData.userCreationOptions"
+        "configurations": [
+            {
+                "licenseSkus": [
+                    "Sku1"
+                ],
+                "defaultPasswordSettings": {
+                    "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
+                    "password": "***************"
+                },
+                "roleGroup@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/outboundProvisioningFlowSets('9ab41255-5364-4c53-e15c-08dc4ab6ee03')/provisioningFlows('dbd36d16-c574-4ed8-3ac7-08dc4ac6fb7f')/microsoft.graph.industryData.userProvisioningFlow/creationOptions/configurations/roleGroup/$entity",
+                "roleGroup": {
+                    "id": "students",
+                    "displayName": "Students",
+                    "roles": [
+                        {
+                            "code": "student"
+                        }
+                    ]
+                }
+            },
+            {
+                "licenseSkus": [
+                    "Sku2"
+                ],
+                "defaultPasswordSettings": {
+                    "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
+                    "password": "***************"
+                },
+                "roleGroup@odata.context": "https://canary.graph.microsoft.com/testprodbetalocal_sds-ppe/$metadata#external/industryData/outboundProvisioningFlowSets('9ab41255-5364-4c53-e15c-08dc4ab6ee03')/provisioningFlows('dbd36d16-c574-4ed8-3ac7-08dc4ac6fb7f')/microsoft.graph.industryData.userProvisioningFlow/creationOptions/configurations/roleGroup/$entity",
+                "roleGroup": {
+                    "id": "staff",
+                    "displayName": "Staff",
+                    "roles": [
+                        {
+                            "code": "adjunct"
+                        },
+                        {
+                            "code": "administrator"
+                        },
+                        {
+                            "code": "advisor"
+                        },
+                        {
+                            "code": "affiliate"
+                        },
+                        {
+                            "code": "aide"
+                        },
+                        {
+                            "code": "alumni"
+                        },
+                        {
+                            "code": "assistant"
+                        },
+                        {
+                            "code": "chair"
+                        },
+                        {
+                            "code": "coach"
+                        },
+                        {
+                            "code": "faculty"
+                        },
+                        {
+                            "code": "instructor"
+                        },
+                        {
+                            "code": "itAdmin"
+                        },
+                        {
+                            "code": "lecturer"
+                        },
+                        {
+                            "code": "nurse"
+                        },
+                        {
+                            "code": "occupationalTherapist"
+                        },
+                        {
+                            "code": "officeStaff"
+                        },
+                        {
+                            "code": "paraprofessional"
+                        },
+                        {
+                            "code": "physicalTherapist"
+                        },
+                        {
+                            "code": "principal"
+                        },
+                        {
+                            "code": "proctor"
+                        },
+                        {
+                            "code": "professor"
+                        },
+                        {
+                            "code": "researcher"
+                        },
+                        {
+                            "code": "specialServices"
+                        },
+                        {
+                            "code": "speechTherapist"
+                        },
+                        {
+                            "code": "staff"
+                        },
+                        {
+                            "code": "substitute"
+                        },
+                        {
+                            "code": "teacher"
+                        },
+                        {
+                            "code": "teacherAssistant"
+                        },
+                        {
+                            "code": "visionTherapist"
+                        }
+                    ]
+                }
+            }
+        ]
     }
-  }
 }
 ```
-
