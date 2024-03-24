@@ -62,7 +62,7 @@ Represents a content type in SharePoint. Content types allow you to define a set
 | baseTypes     | [contentType][] collection     | The collection of content types that are ancestors of this content type.|
 | columnLinks   | [columnLink][] collection | The collection of columns that are required by this content type.|
 | columnPositions         | [columnDefinition][] collection | Column order information in a content type.|
-| columns       | [columnDefinition][] collection  | The collection of column definitions for this contentType.|
+| columns       | [columnDefinition][] collection  | The collection of column definitions for this content type.|
 
 For more information, see [Introduction to content types and content type publishing][contentTypeIntro].
 
