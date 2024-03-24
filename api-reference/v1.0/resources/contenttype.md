@@ -59,8 +59,8 @@ Represents a content type in SharePoint. Content types allow you to define a set
 | Relationship    | Type                      | Description|
 |:----------------|:--------------------------|:-------------------------------|
 | base     | [contentType][]  | Parent contentType from which this content type is derived. |
-| columnLinks   | [columnLink][] collection | The collection of columns that are required by this content type.|
 | baseTypes     | [contentType][] collection     | The collection of content types that are ancestors of this content type.|
+| columnLinks   | [columnLink][] collection | The collection of columns that are required by this content type.|
 | columnPositions         | [columnDefinition][] collection | Column order information in a content type.|
 | columns       | [columnDefinition][] collection  | The collection of column definitions for this contentType.|
 
@@ -70,14 +70,14 @@ For more information, see [Introduction to content types and content type publis
 [contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
 [itemReference]: itemreference.md
 [contentTypeOrder]: contenttypeorder.md
-[columnDefinition]: columnDefinition.md
-[contentType]: contentType.md
-[documentSet]: documentSet.md
-[documentSetContent]: documentSetContent.md
+[columnDefinition]: columndefinition.md
+[contentType]: contenttype.md
+[documentSet]: documentset.md
+[documentSetContent]: documentsetcontent.md
 
 ## JSON representation
 
-The following is a JSON representation of a **contentType** resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
 
