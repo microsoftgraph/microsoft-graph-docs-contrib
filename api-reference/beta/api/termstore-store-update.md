@@ -45,8 +45,8 @@ The following table shows the properties that can be edited for the [store](../r
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguageTag|String|Default language of the [microsoft.graph.termStore.store](../resources/termstore-store.md)|
-|languageTags|String collection|Available languages in the [microsoft.graph.termStore.store](../resources/termstore-store.md)|
+|defaultLanguageTag|String|Default language of the [store](../resources/termstore-store.md)|
+|languageTags|String collection|Available languages in the [store](../resources/termstore-store.md)|
 
 
 
