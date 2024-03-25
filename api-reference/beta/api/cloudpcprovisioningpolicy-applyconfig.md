@@ -1,9 +1,9 @@
 ---
 title: "cloudPcProvisioningPolicy: applyConfig"
-description: "Update the provisioning policy configuration for a set of Cloud PC devices by their IDs, supporting retry and subset of Cloud PCs to initially test for the apply API."
+description: "Update the provisioning policy configuration for a set of Cloud PC devices by their IDs."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,19 +39,19 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/applyConfig
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this method.
+The following table shows the parameters that you can use with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |cloudPcIds|String collection|A collection of Cloud PC IDs.|
-|policySettings|cloudPcPolicySettingType collection|The target property of this apply action. Possible values are: `region`, `singleSignOn`, `unknownFutureValue`. Default value is `region`. This action applies `region` as a value if this parameter is `null`.|
+|policySettings|cloudPcPolicySettingType|The target property of this apply action. Possible values are: `region`, `singleSignOn`, `unknownFutureValue`. Default value is `region`. This action applies `region` as a value if this parameter is `null`.|
 
 ## Response
 
@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -77,13 +77,13 @@ Content-Type: application/json
     "52aa2645-36ee-47d2-9eb3-b8fbb17c3fc4",
     "ff117b6c-e3e6-41be-9cae-eb6743249a30"
   ],
-  "policySettings": ["region"]
+  "policySettings": "region"
 }
 ```
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
