@@ -1,9 +1,9 @@
 ---
 title: "Update userProvisioningFlow"
-description: "Update the properties of a microsoft.graph.industryData.userProvisioningFlow object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Update the properties of a userProvisioningFlow object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.
+Update the properties of a [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-userprovisioningflow-update-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-userprovisioningflow-update-permissions.md)]
 
 ## HTTP request
@@ -32,92 +33,96 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-PATCH /userProvisioningFlow
+
+```http
+PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows/{id}
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). Optional.|
-|readinessStatus|microsoft.graph.industryData.readinessStatus|**TODO: Add Description** Inherited from [microsoft.graph.industryData.provisioningFlow](../resources/industrydata-provisioningflow.md). The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`. Optional.|
-|createUnmatchedUsers|Boolean|**TODO: Add Description** Optional.|
-|managementOptions|[microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md)|**TODO: Add Description** Required.|
-|creationOptions|[microsoft.graph.industryData.userCreationOptions](../resources/industrydata-usercreationoptions.md)|**TODO: Add Description** Optional.|
-
-
+| Property             | Type                                                                        | Description                                                                                 |
+| :------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| createUnmatchedUsers | Boolean                                                                     | A boolean choice indicating whether unmatched users should be created or ignored. Optional. |
+| managementOptions    | [userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.               |
+| creationOptions      | [userCreationOptions](../resources/industrydata-usercreationoptions.md)     | The different management choices for the new users to be provisioned. Optional.             |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.industryData.userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_userprovisioningflow"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/userProvisioningFlow
+
+```http
+PATCH https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/9ab41255-5364-4c53-e15c-08dc4ab6ee03/provisioningFlows/dbd36d16-c574-4ed8-3ac7-08dc4ac6fb7f
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.userProvisioningFlow",
-  "readinessStatus": "String",
-  "createUnmatchedUsers": "Boolean",
-  "managementOptions": {
-    "@odata.type": "microsoft.graph.industryData.userManagementOptions"
-  },
-  "creationOptions": {
-    "@odata.type": "microsoft.graph.industryData.userCreationOptions"
-  }
+    "@odata.type": "#microsoft.graph.industryData.userProvisioningFlow",
+    "createUnmatchedUsers": true,
+    "managementOptions":
+    {
+        "additionalAttributes": ["userGradeLevel"],
+        "additionalOptions":
+        {
+            "markAllStudentsAsMinors": true,
+            "allowStudentContactAssociation"  : true
+        }
+    },
+    "creationOptions":
+    {
+        "configurations": [
+          {
+            "roleGroup@odata.bind": "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff",
+            "defaultPasswordSettings":
+            {
+              "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
+              "password": "********"
+            },
+            "licenseSkus": [ "SkuUpdated"]
+          },
+          {
+            "roleGroup@odata.bind": "https://graph.microsoft.com/beta/external/industryData/roleGroups/students",
+            "defaultPasswordSettings":
+            {
+              "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
+              "password": "********"
+            },
+            "licenseSkus": [ "SkuUpdated2"]
+          }
+        ]
+    }
 }
 ```
-
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.industryData.userProvisioningFlow",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "readinessStatus": "String",
-  "id": "46d4012c-cdff-7a92-9105-a7529a28711f",
-  "createUnmatchedUsers": "Boolean",
-  "managementOptions": {
-    "@odata.type": "microsoft.graph.industryData.userManagementOptions"
-  },
-  "creationOptions": {
-    "@odata.type": "microsoft.graph.industryData.userCreationOptions"
-  }
-}
+```http
+HTTP/1.1 204 No Content
 ```
-

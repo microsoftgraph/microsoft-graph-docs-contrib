@@ -493,7 +493,7 @@ Content-type: application/json
         "configurations": [
             {
                 "licenseSkus": [
-                    "leading-edge"
+                    "Sku1"
                 ],
                 "defaultPasswordSettings": {
                     "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
@@ -502,7 +502,7 @@ Content-type: application/json
             },
             {
                 "licenseSkus": [
-                    "Chips"
+                    "Sku2"
                 ],
                 "defaultPasswordSettings": {
                     "@odata.type": "#microsoft.graph.industryData.simplePasswordSettings",
