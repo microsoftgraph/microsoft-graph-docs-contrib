@@ -3,7 +3,7 @@ title: "workbookRangeFormat resource type"
 description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

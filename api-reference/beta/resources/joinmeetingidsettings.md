@@ -3,7 +3,7 @@ title: "joinMeetingIdSettings resource type"
 description: "Specifies the joinMeetingId, the meeting passcode, and the requirement for the passcode."
 author: "yuyaolian-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

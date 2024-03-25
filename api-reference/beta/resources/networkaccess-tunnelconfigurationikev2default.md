@@ -3,7 +3,7 @@ title: "tunnelConfigurationIKEv2Default resource type"
 description: "Specifies connectivity settings such as protocol, IPSec policy, and preshared key) for establishing connectivity."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

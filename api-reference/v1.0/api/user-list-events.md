@@ -3,7 +3,7 @@ title: "List events"
 description: "Get a list of event objects in the user's mailbox. The list contains single "
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -83,7 +83,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request. It specifies the following:
+The following example shows a request. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
@@ -134,7 +134,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 ##### Response
-Here is an example of the response. The **body** property is returned in the default HTML format.
+The following example shows the response. The **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
   "truncated": true,

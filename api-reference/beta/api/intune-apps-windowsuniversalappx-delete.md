@@ -3,7 +3,7 @@ title: "Delete windowsUniversalAppX"
 description: "Deletes a windowsUniversalAppX."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

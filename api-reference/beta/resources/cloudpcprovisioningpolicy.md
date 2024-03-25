@@ -3,7 +3,7 @@ title: "cloudPcProvisioningPolicy resource type"
 description: "Represents a Cloud PC provisioning policy."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -67,7 +67,7 @@ Represents a Cloud PC provisioning policy.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Change sharing permissions
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 ---
 # Update sharing permission
 
@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and updated [permiss
 
 ## Example
 
-Here is an example of the request that changes the role on the sharing permission to read-only.
+The following example shows a request that changes the role on the sharing permission to read-only.
 
 
 # [HTTP](#tab/http)

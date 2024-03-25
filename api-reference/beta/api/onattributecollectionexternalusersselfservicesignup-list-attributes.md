@@ -3,7 +3,7 @@ title: "List attributes (of a user flow)"
 description: "List attributes for an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ If no user flow attributes are assigned to the user flow, this method returns a 
 ## Examples
 
 #### Request
-Here's an example of a request to retrieve the attributes associated with a user flow.
+The following example shows a request to retrieve the attributes associated with a user flow.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 ---
 
 #### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

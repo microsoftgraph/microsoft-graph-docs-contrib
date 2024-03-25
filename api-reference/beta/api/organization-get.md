@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of currently authenticat
 ms.localizationpriority: medium
 author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ##### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 
 ##### Response
 
-Here's an example of the response. 
+The following example shows the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

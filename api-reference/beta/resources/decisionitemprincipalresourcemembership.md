@@ -3,7 +3,7 @@ title: "decisionItemPrincipalResourceMembership resource type"
 description: "Represents details of the type of membership that a principal has to the resource associated with an accessReviewInstanceDecisionItem object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

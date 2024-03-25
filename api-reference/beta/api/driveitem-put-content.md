@@ -4,7 +4,7 @@ description: "Provide the contents of a new file or update the contents of an ex
 ms.date: 09/10/2017
 title: Upload small files
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Upload or replace the contents of a driveItem
@@ -68,7 +68,7 @@ This example uploads the string "The contents of the file goes here." to a file 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
 ```http
-PUT /me/drive/root:/FolderA/FileB.txt:/content
+PUT https://graph.microsoft.com/beta/me/drive/root:/FolderA/FileB.txt:/content
 Content-Type: text/plain
 
 The contents of the file goes here.
@@ -101,7 +101,7 @@ This example replaces the contents of a file with a known ID.
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
-PUT /me/drive/items/{item-id}/content
+PUT https://graph.microsoft.com/beta/me/drive/items/{item-id}/content
 Content-Type: text/plain
 
 The contents of the file goes here.

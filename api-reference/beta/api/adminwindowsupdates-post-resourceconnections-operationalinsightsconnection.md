@@ -3,7 +3,7 @@ title: "Create operationalInsightsConnection"
 description: "Create a new operationalInsightsConnection object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 
@@ -66,7 +66,7 @@ The following errors are possible:
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

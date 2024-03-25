@@ -3,7 +3,7 @@ title: "List sessions"
 description: "Retrieve the list of session objects for a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and the requested [s
 
 #### Request
 
-Here's an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows a request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md).
 
 
 # [HTTP](#tab/http)
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -202,7 +202,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md) with [segments](../resources/callrecords-segment.md) included.
+The following example shows a request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md) with [segments](../resources/callrecords-segment.md) included.
 
 
 # [HTTP](#tab/http)
@@ -251,7 +251,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$e
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

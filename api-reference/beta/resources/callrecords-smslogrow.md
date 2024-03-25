@@ -3,7 +3,7 @@ title: "smsLogRow resource type"
 description: "Represents a row of data in the log of a sent or received SMS."
 author: "saurabhjain0804"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -28,6 +28,7 @@ For those countries, the three or four last digits of the external phone number 
 
 |Property|Type|Description|
 |:---|:---|:---|
+|administrativeUnitInfos| [microsoft.graph.callRecords.administrativeUnitInfo](callrecords-administrativeunitinfo.md) collection|Collection of administrative units associated to a call.|
 |callCharge|Decimal|Amount of money or cost of the SMS that is charged.|
 |currency|String|Currency used to calculate the cost of the call. For details, see [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).|
 |destinationContext|String|Indicates whether the SMS was `Domestic` (within a country or region) or `International` (outside a country or region) based on the user's location.|
@@ -45,7 +46,7 @@ For those countries, the three or four last digits of the external phone number 
 |userCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
 |userId|String|The unique identifier (GUID) of the user in Microsoft Entra ID.|
-|userPrincipalName|String|The user principal name (sign-in name) in Microsoft Entra ID. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
+|userPrincipalName|String|The user principal name (sign-in name) in Microsoft Entra ID. It is usually the same as the user's SIP address and can be the same as the user's e-mail address.|
 
 ## Relationships
 
@@ -53,7 +54,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecords.smsLogRow"
@@ -62,6 +63,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.callRecords.smsLogRow",
+  "administrativeUnitInfos": [{"@odata.type": "microsoft.graph.callRecords.administrativeUnitInfo"}],
   "callCharge": "Decimal",
   "currency": "String",
   "destinationContext": "String",

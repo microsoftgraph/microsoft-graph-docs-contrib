@@ -3,7 +3,7 @@ title: "educationModule resource type"
 description: "Represents group or individual learning resources."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "windowsInformationProtectionNetworkLearningSummary resource type"
 description: "Windows Information Protection Network learning Summary entity."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

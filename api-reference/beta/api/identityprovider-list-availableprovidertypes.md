@@ -4,7 +4,7 @@ description: "Retrieve all available identity provider types in the directory."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List availableProviderTypes (deprecated)

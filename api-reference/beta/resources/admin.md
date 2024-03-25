@@ -3,7 +3,7 @@ title: "admin resource type"
 description: "Represents an entity that acts as a container for administrator functionality."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 

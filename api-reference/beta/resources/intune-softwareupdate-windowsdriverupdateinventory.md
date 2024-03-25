@@ -3,7 +3,7 @@ title: "windowsDriverUpdateInventory resource type"
 description: "A new entity to represent driver inventories."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "physicalOfficeAddress resource type"
 description: "Represents the business address of a resource such as a contact or event."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

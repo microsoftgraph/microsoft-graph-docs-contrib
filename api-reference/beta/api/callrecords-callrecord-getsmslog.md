@@ -3,7 +3,7 @@ title: "callRecord: getSmsLog"
 description: "Get the log of a sent/received SMS as a collection of smsLogRow entries."
 author: "saurabhjain0804"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -149,7 +149,15 @@ Content-Type: application/json
             "destinationName": "United States",
             "otherPartyCountryCode": "US",
             "licenseCapability": "MCOSMS1",
-            "smsUnits": 1
+            "smsUnits": 1,
+            "administrativeUnitInfos": [
+               {
+                  "id": "639b616c-f164-4a6f-a933-24936b8eb210"
+               },
+               {
+                  "id": "cc6ea167-4e92-4c2d-9391-85791e978006"
+               }
+            ]            
         }
     ]
 }

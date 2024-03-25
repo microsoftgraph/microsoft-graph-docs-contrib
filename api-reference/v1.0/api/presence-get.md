@@ -4,7 +4,7 @@ description: "Get a user's presence information."
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Get presence
@@ -21,14 +21,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "presence_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/presence-get-permissions.md)]
 
-> **Note:** The maximum request rate for this API is 1500 API requests in a 30 second period, per application per tenant.
+> [!NOTE]
+> - You can't use application permissions to access APIs under the `/me` path.
+> - The maximum request rate for this API is 1500 API requests in a 30 second period, per application per tenant.
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/presence
 GET /users/{id}/presence
 GET /communications/presences
+GET /me/presence
 ```
 
 ## Request Headers

@@ -3,7 +3,7 @@ title: "singleUser complex type"
 description: "Identifies a user in the tenant who will be allowed as requestor, approver, or reviewer."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
