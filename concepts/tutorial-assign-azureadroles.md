@@ -28,9 +28,6 @@ In this tutorial, you learn how to:
 > * Make a role-assignable security group eligible to an administrative role.
 > * Grant just-in-time access to a user by activating their eligible assignment. 
 
->[!NOTE]
->The response objects shown in this tutorial might be shortened for readability.
-
 ## Prerequisites
 
 To complete this tutorial, you need the following resources and privileges:
@@ -109,12 +106,13 @@ Content-type: application/json
 
 ### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -202,12 +200,13 @@ Content-type: application/json
 
 ### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequests"
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -291,12 +290,13 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 ### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.unifiedRoleAssignments"
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -392,6 +392,7 @@ Content-type: application/json
 
 ### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -499,6 +500,7 @@ Content-type: application/json
 
 #### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
