@@ -51,7 +51,7 @@ The following table shows the parameters that you can use with this method.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |cloudPcIds|String collection|A collection of Cloud PC IDs.|
-|policySettings|cloudPcPolicySettingType|The target property of this apply action. Possible values are: `region`, `singleSignOn`, `unknownFutureValue`. Default value is `region`. This action applies `region` as a value if this parameter is `null`.|
+|policySettings|cloudPcPolicySettingType|The target property of this apply action. Possible values are: `region`, `singleSignOn`, `unknownFutureValue`. The default value is `region`. This action applies `region` as a value if this parameter is `null`.|
 
 ## Response
 
