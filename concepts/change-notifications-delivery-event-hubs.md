@@ -122,7 +122,7 @@ Steps:
 <!-- End of "Use the Azure portal" tab-->
 
 <!-- Start of "Use the Azure portal (RBAC)" tab-->
-# [Use the Azure portal (RBAC)](#tab/change-notifications-eventhubs-azure-portal)
+# [Use the Azure portal (RBAC)](#tab/change-notifications-eventhubs-azure-portal-rbac)
 
 ##### Configure the event hub
 
