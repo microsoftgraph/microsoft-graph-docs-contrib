@@ -31,6 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+GET /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/deviceLinks/{deviceLinkId}
 ```
 
