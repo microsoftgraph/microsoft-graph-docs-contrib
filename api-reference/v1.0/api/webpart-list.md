@@ -114,7 +114,6 @@ Content-Type: application/json
           "alignment": "Center"
         },
         "serverProcessedContent": {
-          "componentDependencies": [],
           "htmlStrings": [],
           "links": [],
           "searchablePlainTexts": [],
@@ -123,20 +122,6 @@ Content-Type: application/json
               "@odata.type": "#microsoft.graph.metaDataKeyStringPair",
               "key": "imageSource",
               "value": "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG"
-            }
-          ],
-          "customMetadata": [
-            {
-              "@odata.type": "#microsoft.graph.metaDataKeyValuePair",
-              "key": "imageSource",
-              "value": {
-                "siteid": "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
-                "webid": "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
-                "listid": "bdb41041-eb06-474e-ac29-87093386bb14",
-                "uniqueid": "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
-                "width": "4288",
-                "height": "2848"
-              }
             }
           ]
         }

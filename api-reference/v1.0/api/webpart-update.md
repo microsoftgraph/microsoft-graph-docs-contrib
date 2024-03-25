@@ -51,7 +51,7 @@ To ensure successful parsing of the request body, the `@odata.type=#microsoft.gr
 
 ### Supported standard web parts
 
-Only the following web parts are supported when updating a standard web part using the Microsoft Graph API. Attempting to update an unsupported web parts will result in a failure or exception.
+For [standardWebPart](../resources/standardWebPart.md), only the following are supported when updating using the Microsoft Graph API. Attempting to add unsupported web parts will result in a failure or exception.
 
 | #   | Web Part       | Type                                   |
 | --- | -------------- | -------------------------------------- |
