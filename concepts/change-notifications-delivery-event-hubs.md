@@ -28,7 +28,7 @@ The article guides you through the process of managing your Microsoft Graph subs
 - You need to provision an event hub.
 - You need to provision an Azure Key Vault.
 
-## Set up the Azure KeyVault and Azure Event Hubs
+## Set up the Azure Event Hubs authentication
 
 <!-- Start of "Use Azure CLI" tab-->
 # [Use Azure CLI](#tab/change-notifications-eventhubs-azure-cli)
