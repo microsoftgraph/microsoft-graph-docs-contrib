@@ -1,9 +1,9 @@
 ---
 title: "Create outboundProvisioningFlowSet"
-description: "Create a new microsoft.graph.industryData.outboundProvisioningFlowSet object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Create a new outboundProvisioningFlowSet object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.industryData.outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object.
+Create a new [outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-industrydataroot-post-outboundprovisioningflowsets-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-industrydataroot-post-outboundprovisioningflowsets-permissions.md)]
 
 ## HTTP request
@@ -32,84 +33,86 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-POST /external/industryData/outboundProvisioningFlowSets
+
+```http
+POST /external/industryData/OutboundProvisioningFlowSets
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.industryData.outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object.
-
-You can specify the following properties when creating a **outboundProvisioningFlowSet**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|filter|[microsoft.graph.industryData.filter](../resources/industrydata-filter.md)|**TODO: Add Description** Optional.|
-
-
+In the request body, supply a JSON representation of the [outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.industryData.outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_outboundprovisioningflowset_from_"
 }
 -->
-``` http
-POST https://graph.microsoft.com/beta/external/industryData/outboundProvisioningFlowSets
+
+```http
+POST https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.outboundProvisioningFlowSet",
-  "displayName": "String",
-  "filter": {
-    "@odata.type": "microsoft.graph.industryData.filter"
-  }
+    "@odata.type": "#microsoft.graph.industryData.outboundProvisioningFlowSet",
+    "displayName": "Outbound Provisioning Flow Test",
+    "filter": {
+        "@odata.type": "#microsoft.graph.industryData.basicFilter",
+        "attribute": "orgExternalId",
+        "in": [
+            "Quarter",
+            "Demo"
+        ]
+    }
 }
 ```
-
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.industryData.outboundProvisioningFlowSet"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.outboundProvisioningFlowSet",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "id": "a6085468-7b29-cb2b-0ddd-4b3a26d2e0a9",
-  "filter": {
-    "@odata.type": "microsoft.graph.industryData.filter"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/industryData/outboundProvisioningFlowSets/$entity",
+    "id": "8ac3c08f-6f93-465b-4bd9-08dc4ac773d0",
+    "createdDateTime": "2024-03-25T21:55:03.495336Z",
+    "lastModifiedDateTime": "2024-03-25T21:55:03.495336Z",
+    "displayName": "Outbound Provisioning Flow Test",
+    "filter": {
+        "@odata.type": "#microsoft.graph.industryData.basicFilter",
+        "attribute": "orgExternalId",
+        "in": [
+            "Quarter",
+            "Demo"
+        ]
+    }
 }
 ```
-

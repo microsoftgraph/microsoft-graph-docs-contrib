@@ -1,9 +1,9 @@
 ---
 title: "Update outboundProvisioningFlowSet"
-description: "Update the properties of a microsoft.graph.industryData.outboundProvisioningFlowSet object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Update the properties of an outboundProvisioningFlowSet object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.industryData.outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object.
+Update the properties of an [outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-outboundprovisioningflowset-update-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-outboundprovisioningflowset-update-permissions.md)]
 
 ## HTTP request
@@ -32,82 +33,63 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-PATCH /external/industryData/outboundProvisioningFlowSets/{outboundProvisioningFlowSetId}
+
+```http
+PATCH /external/industryData/outboundProvisioningFlowSets/{id}
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|filter|[microsoft.graph.industryData.filter](../resources/industrydata-filter.md)|**TODO: Add Description** Optional.|
-
-
+| Property    | Type                                                                       | Description                                                                                           |
+| :---------- | :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| displayName | String                                                                     | The display name of the flowSet provided by the caller. Required.                                     |
+| filter      | [microsoft.graph.industryData.filter](../resources/industrydata-filter.md) | The collection of provisioning filters applicable to all the flows under the given flowSet. Optional. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.industryData.outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_outboundprovisioningflowset"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/external/industryData/outboundProvisioningFlowSets/{outboundProvisioningFlowSetId}
+
+```http
+PATCH https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/8ac3c08f-6f93-465b-4bd9-08dc4ac773d0
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.industryData.outboundProvisioningFlowSet",
-  "displayName": "String",
-  "filter": {
-    "@odata.type": "microsoft.graph.industryData.filter"
-  }
+   "@odata.type": "#microsoft.graph.industryData.outboundProvisioningFlowSet",
+   "displayName": "Outbound provisioning flow Updated"
 }
 ```
-
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.industryData.outboundProvisioningFlowSet",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "id": "a6085468-7b29-cb2b-0ddd-4b3a26d2e0a9",
-  "filter": {
-    "@odata.type": "microsoft.graph.industryData.filter"
-  }
-}
+```http
+HTTP/1.1 204 No Content
 ```
-

@@ -1,9 +1,9 @@
 ---
 title: "Delete outboundProvisioningFlowSet"
-description: "Delete a microsoft.graph.industryData.outboundProvisioningFlowSet object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Delete an outboundProvisioningFlowSet object."
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [microsoft.graph.industryData.outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object.
+Delete an [outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) object.
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "industrydata-industrydataroot-delete-outboundprovisioningflowsets-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/industrydata-industrydataroot-delete-outboundprovisioningflowsets-permissions.md)]
 
 ## HTTP request
@@ -32,15 +33,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-DELETE /external/industryData/outboundProvisioningFlowSets/{outboundProvisioningFlowSetId}/$ref
+
+```http
+DELETE /external/industryData/outboundProvisioningFlowSets/{id}
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -55,26 +57,27 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_outboundprovisioningflowset"
 }
 -->
-``` http
-DELETE https://graph.microsoft.com/beta/external/industryData/outboundProvisioningFlowSets/{outboundProvisioningFlowSetId}
-```
 
+```http
+DELETE https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/8ac3c08f-6f93-465b-4bd9-08dc4ac773d0
+```
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```
-
