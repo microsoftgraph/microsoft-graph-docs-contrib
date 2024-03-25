@@ -26,7 +26,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[End grace period](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a Cloud PC object.|
 |[Get remote action results](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device.|
 |[Power on](../api/cloudpc-poweron.md)|None|Power on a specific Windows Frontline Cloud PC object. This action supports MEM admin scenarios.|
-|[Power off](../api/cloudpc-poweroff.md)|None|Power off a specific  Windows Frontline Cloud PC object.This action supports MEM admin scenarios.|
+|[Power off](../api/cloudpc-poweroff.md)|None|Power off a specific  Windows Frontline Cloud PC object. This action supports MEM admin scenarios.|
 |[Reboot](../api/cloudpc-reboot.md)|None|Reboot a specific Cloud PC object.|
 |[Rename](../api/cloudpc-rename.md)|None|Rename a specific Cloud PC object. Use this API to update the **displayName** for the Cloud PC entity.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a Cloud PC object.|
@@ -71,7 +71,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |onPremisesConnectionName|String|The Azure network connection that is applied during the provisioning of Cloud PCs.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. Possible values are: `windows10`, `windows11`, `unknownFutureValue`.|
 |partnerAgentInstallResults|[cloudPcPartnerAgentInstallResult](../resources/cloudpcpartneragentinstallresult.md) collection|The results of every partner agent's installation status on Cloud PC.|
-|powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The power state of a Cloud PC. The possible values are: `running`, `poweredOff` and `unknown`. This property only supports shift work Cloud PCs.|
+|powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The power state of a Cloud PC. The possible values are: `running`, `poweredOff`, `unknown`. This property only supports shift work Cloud PCs.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`. |
@@ -108,17 +108,17 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |:---|:---|
 |notProvisioned|The Cloud PC hasn't been provisioned yet.|
 |provisioning|Cloud PC provisioning is in progress.|
-|provisioned|The Cloud PC is provisioned and users can accesse it.|
+|provisioned|The Cloud PC is provisioned and users can access it.|
 |inGracePeriod|The Cloud PC is in the one week grace period before deprovision.|
 |deprovisioning|The Cloud PC is deprovisioning.|
 |failed|The operation on Cloud PC failed.|
-|provisionedWithWarnings|The Cloud PC is provisioned and end users can accesse it with some warnings. The user can continue to use this Cloud PC.|
+|provisionedWithWarnings|The Cloud PC is provisioned and end users can access it with some warnings. The user can continue to use this Cloud PC.|
 |resizing|The Cloud PC is resizing.|
 |pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in grace period is more than the number of total available licenses. |
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 |movingRegion|Indicates that the Cloud PC is being moved from one region to another.|
-|resizePendingLicense|Indicates that the Cloud PC resize process has initiated but can't be completed because the target license hasn't been identified. It's currently awaiting customer action to resolve the licensing issue.|
+|resizePendingLicense|Indicates that the Cloud PC resize process was initiated but can't be completed because the target license hasn't been identified. It's currently awaiting customer action to resolve the licensing issue.|
 
 ### frontlineCloudPcAccessState values
 
