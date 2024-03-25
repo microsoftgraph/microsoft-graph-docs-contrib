@@ -1479,6 +1479,21 @@ items:
                     href: api/cloudpcauditevent-get.md
                   - name: Get audit activity types
                     href: api/cloudpcauditevent-getauditactivitytypes.md
+              - name: Cloud PC Azure network connection
+                href: resources/cloudpconpremisesconnection.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-onpremisesconnections.md
+                  - name: Create
+                    href: api/virtualendpoint-post-onpremisesconnections.md
+                  - name: Get
+                    href: api/cloudpconpremisesconnection-get.md
+                  - name: Update
+                    href: api/cloudpconpremisesconnection-update.md
+                  - name: Delete
+                    href: api/cloudpconpremisesconnection-delete.md
+                  - name: Run health checks
+                    href: api/cloudpconpremisesconnection-runhealthcheck.md
               - name: Cloud PC device image
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -1499,6 +1514,36 @@ items:
                     href: api/virtualendpoint-list-galleryimages.md
                   - name: Get
                     href: api/cloudpcgalleryimage-get.md
+              - name: Cloud PC provisioning policy
+                href: resources/cloudpcprovisioningpolicy.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-provisioningpolicies.md
+                  - name: Create
+                    href: api/virtualendpoint-post-provisioningpolicies.md
+                  - name: Get
+                    href: api/cloudpcprovisioningpolicy-get.md
+                  - name: Update
+                    href: api/cloudpcprovisioningpolicy-update.md
+                  - name: Delete
+                    href: api/cloudpcprovisioningpolicy-delete.md
+                  - name: Assign
+                    href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Cloud PC user setting
+                href: resources/cloudpcusersetting.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-usersettings.md
+                  - name: Create
+                    href: api/virtualendpoint-post-usersettings.md
+                  - name: Get
+                    href: api/cloudpcusersetting-get.md
+                  - name: Update
+                    href: api/cloudpcusersetting-update.md
+                  - name: Delete
+                    href: api/cloudpcusersetting-delete.md
+                  - name: Assign
+                    href: api/cloudpcusersetting-assign.md
           - name: Cloud printing
             items:
               - name: Print
