@@ -137,7 +137,7 @@ Content-Type: application/json
 
 ### Error conditions
 
-In addition to [general errors](../../../resources/concepts/errors.md) that apply to Microsoft Graph and the error cases documented in [planner overview](../resources/planner-overview.md), some error conditions are specific to the API to add a member to the [plannerRoster](../resources/plannerrostermember.md) object.
+In addition to [general errors](../../../concepts/errors.md) that apply to Microsoft Graph and the error cases documented in [planner overview](../resources/planner-overview.md), some error conditions are specific to the API to add a member to the [plannerRoster](../resources/plannerrostermember.md) object.
 
 #### 403 Forbidden
 
