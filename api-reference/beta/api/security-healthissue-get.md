@@ -1,6 +1,6 @@
 ---
 title: "Get healthIssue"
-description: "Read the properties and relationships of a microsoft.graph.security.healthIssue object."
+description: "Read the properties and relationships of a healthIssue object."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.healthIssue](../resources/security-healthissue.md) object.
+Read the properties and relationships of a [healthIssue](../resources/security-healthissue.md) object.
 
 ## Permissions
 
