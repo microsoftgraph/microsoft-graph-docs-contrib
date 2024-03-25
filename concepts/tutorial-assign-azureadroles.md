@@ -523,6 +523,7 @@ Content-type: application/json
 
 The request returns a `204 No Content` response code.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-group_delete"
