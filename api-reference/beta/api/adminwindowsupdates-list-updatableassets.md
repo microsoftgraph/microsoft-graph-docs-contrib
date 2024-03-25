@@ -3,7 +3,7 @@ title: "List updatableAssets"
 description: "Get a list of updatableAsset objects and their properties."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 
