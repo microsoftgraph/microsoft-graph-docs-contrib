@@ -53,8 +53,6 @@ If-Match: "string"
 
 ### Error Conditions
 
-In addition to [general errors](../../../concepts/errors.md) that apply to Microsoft Graph and the error cases documented in [planner overview](../resources/planner-overview.md), some error conditions are specific to the API to assign sensitivity labels on plannerRoster.
-
 #### 400 Bad Request
 
 If the label has sublabels, then it cannot be applied to the roster. Only labels that have no sublabels can be applied.  The request will fail, and the **code** property on the error response will be "SensitivityLabelHasSublabels"

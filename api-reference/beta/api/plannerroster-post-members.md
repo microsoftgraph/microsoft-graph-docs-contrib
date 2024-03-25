@@ -137,8 +137,6 @@ Content-Type: application/json
 
 ### Error conditions
 
-In addition to [general errors](../../../concepts/errors.md) that apply to Microsoft Graph and the error cases documented in [planner overview](../resources/planner-overview.md), some error conditions are specific to the API to add a member to the [plannerRoster](../resources/plannerrostermember.md) object.
-
 #### 403 Forbidden
 
 If the sensitivityLabel on the roster disallows the addition of guest users, and the request would add guest users to the plannerRoster, the request will fail, and the **code** property on the error resource type will be "AddingGuestUsersProhibitedByLabel"
