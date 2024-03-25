@@ -19,8 +19,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List Cloud PCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the Cloud PC objects.|
-|[Get Cloud PC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a Cloud PC object.|
+|[List cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List properties and relationships of the Cloud PC objects.|
+|[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Read the properties and relationships of a Cloud PC object.|
 |[Get provisioned Cloud PCs](../api/cloudpc-getprovisionedcloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.|
 |[Change user account type](../api/cloudpc-changeuseraccounttype.md)|None|Change the account type of the user on a specific Cloud PC.|
 |[End grace period](../api/cloudpc-endgraceperiod.md)|None|End the grace period for a Cloud PC object.|
