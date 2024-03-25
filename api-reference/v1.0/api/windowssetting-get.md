@@ -3,7 +3,7 @@ title: "Get windowsSetting"
 description: "Read the properties and relationships of a windowsSetting object."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 ---
 
