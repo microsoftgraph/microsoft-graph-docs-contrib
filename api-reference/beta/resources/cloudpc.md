@@ -102,7 +102,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |unknown|The Cloud PC status is unknown.|
 
 ### cloudPcStatus values
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`.
 
 |Member|Description|
 |:---|:---|
