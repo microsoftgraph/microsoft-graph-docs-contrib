@@ -4,7 +4,7 @@ description: "Create a new servicePrincipal object if it doesn't exist, or updat
 author: "sureshja"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Upsert servicePrincipal
