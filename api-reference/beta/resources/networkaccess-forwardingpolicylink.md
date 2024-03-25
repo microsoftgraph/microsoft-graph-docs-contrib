@@ -3,7 +3,7 @@ title: "forwardingPolicyLink resource type"
 description: "A forwardingPolicyLink represents the association between a forwarding policy and another forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

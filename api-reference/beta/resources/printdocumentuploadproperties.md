@@ -4,7 +4,7 @@ description: "Represents information for print document upload"
 title: "printDocumentUploadProperties resource type"
 ms.localizationpriority: medium
 doc_type: "resourcePageType"
-ms.prod: cloud-printing
+ms.subservice: universal-print
 ---
 # printDocumentUploadProperties resource type
 

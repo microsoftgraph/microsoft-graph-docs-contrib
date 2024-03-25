@@ -3,7 +3,7 @@ title: "Create configManagerCollection"
 description: "Create a new configManagerCollection object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

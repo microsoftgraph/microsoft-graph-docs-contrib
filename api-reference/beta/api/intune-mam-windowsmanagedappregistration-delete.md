@@ -3,7 +3,7 @@ title: "Delete windowsManagedAppRegistration"
 description: "Deletes a windowsManagedAppRegistration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

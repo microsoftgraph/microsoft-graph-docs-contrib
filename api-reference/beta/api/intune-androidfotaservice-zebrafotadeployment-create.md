@@ -3,7 +3,7 @@ title: "Create zebraFotaDeployment"
 description: "Create a new zebraFotaDeployment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

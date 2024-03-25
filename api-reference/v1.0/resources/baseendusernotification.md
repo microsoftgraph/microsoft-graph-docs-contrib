@@ -3,7 +3,7 @@ title: "baseEndUserNotification resource type"
 description: "Represents details about an end user notification."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

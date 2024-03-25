@@ -3,7 +3,7 @@ title: "Get shared or delegated Outlook calendar and its events"
 description: "Read events in a shared or delegated calendar. You can get a shared calendar or events directly from a calendar owner's mailbox or from a share recipient's mailbox."
 author: "juforan"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Get shared or delegated Outlook calendar and its events

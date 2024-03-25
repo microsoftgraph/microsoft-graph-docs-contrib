@@ -3,7 +3,7 @@ title: "Get crossTenantAccessPolicyConfigurationPartner"
 description: "Read the properties and relationships of a partner-specific configuration."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

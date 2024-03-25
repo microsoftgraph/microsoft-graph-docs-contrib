@@ -2,7 +2,7 @@
 title: "Microsoft forms usage reports"
 description: "Use the Microsoft forms usage reports to get insights into the usage of Microsoft Forms in your organization."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
 ---

@@ -3,7 +3,7 @@ title: "localConnectivityConfiguration resource type"
 description: "Specifies Microsoft's end of the tunnel configuration for a device link."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

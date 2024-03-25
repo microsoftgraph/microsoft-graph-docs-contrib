@@ -3,7 +3,7 @@ title: "accessPackageUserDirectoryAttributeStore resource type"
 description: "The type used for objects that expose the Microsoft Entra ID end system to which the user configured values will be saved to."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get change notifications for meeting transcripts and recordings using Mi
 description: "Learn how to get notifications for meeting transcripts and recordings using Microsoft Graph APIs."
 author: "v-sdhakshina"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 

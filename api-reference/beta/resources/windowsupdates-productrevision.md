@@ -3,7 +3,7 @@ title: "productRevision resource type"
 description: "Represents a product revision that is associated with a quality update."
 author: "angiechen22"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 

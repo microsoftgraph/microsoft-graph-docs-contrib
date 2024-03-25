@@ -3,7 +3,7 @@ title: "scopeTagGroupAssignmentTarget resource type"
 description: "Represents a Scope Tag Assignment Target."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

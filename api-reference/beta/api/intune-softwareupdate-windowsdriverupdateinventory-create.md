@@ -3,7 +3,7 @@ title: "Create windowsDriverUpdateInventory"
 description: "Create a new windowsDriverUpdateInventory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

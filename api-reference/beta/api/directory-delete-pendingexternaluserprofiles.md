@@ -4,7 +4,7 @@ description: "Delete a pendingExternalUserProfile object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ---
 
 # Delete pendingExternalUserProfile
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Delete a [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) object.
 
 **Note:** To permanently delete the pendingExternalUserProfile, follow [permanently delete an item](directory-deleteditems-delete.md). To restore a pendingExternalUserProfile, follow [restore a deleted item](directory-deleteditems-restore.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

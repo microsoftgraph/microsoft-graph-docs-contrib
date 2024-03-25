@@ -3,7 +3,7 @@ title: "user: findRooms"
 description: "Get all the meeting rooms in the user's tenant or in a specific room list."
 ms.localizationpriority: high
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

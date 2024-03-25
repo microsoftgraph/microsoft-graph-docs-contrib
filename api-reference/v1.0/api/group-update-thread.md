@@ -3,7 +3,7 @@ title: "Update conversation thread"
 description: "Update a thread object."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

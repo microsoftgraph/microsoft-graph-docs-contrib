@@ -3,7 +3,7 @@ title: "unifiedRoleAssignmentSchedule: filterByCurrentUser"
 description: "Retrieve the schedules for active role assignment operations for which the signed-in user is the principal."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

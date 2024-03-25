@@ -3,7 +3,7 @@ title: "mobileAppPolicySetItem resource type"
 description: "A class containing the properties used for mobile app PolicySetItem."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

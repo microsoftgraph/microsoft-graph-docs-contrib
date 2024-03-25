@@ -3,7 +3,7 @@ title: "conditionalAccessAuthenticationFlows resource type"
 description: "Represents the authentication flows in scope for the policy."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
