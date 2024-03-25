@@ -633,6 +633,64 @@
       "CreatedDateTime": "2024-01-10T06:54:17.0841032Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d28efae5-a913-454d-9df5-dfa4f965bd06",
+          "ApiChange": "Member",
+          "ChangedApiName": "italyNorth",
+          "ChangeType": "Addition",
+          "Description": "Added the `italyNorth` member to the **region** enumeration.",
+          "Target": "region"
+        },
+        {
+          "Id": "d28efae5-a913-454d-9df5-dfa4f965bd06",
+          "ApiChange": "Member",
+          "ChangedApiName": "franceSouth",
+          "ChangeType": "Addition",
+          "Description": "Added the `franceSouth` member to the **region** enumeration.",
+          "Target": "region"
+        },
+        {
+          "Id": "d28efae5-a913-454d-9df5-dfa4f965bd06",
+          "ApiChange": "Member",
+          "ChangedApiName": "israelCentral",
+          "ChangeType": "Addition",
+          "Description": "Added the `israelCentral` member to the **region** enumeration.",
+          "Target": "region"
+        },
+        {
+          "Id": "d28efae5-a913-454d-9df5-dfa4f965bd06",
+          "ApiChange": "Property",
+          "ChangedApiName": "bandwidthCapacity",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **bandwidthCapacity** property from the [remoteNetwork](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-remoteNetwork?view=graph-rest-beta) resource.",
+          "Target": "remoteNetwork"
+        },
+        {
+          "Id": "d28efae5-a913-454d-9df5-dfa4f965bd06",
+          "ApiChange": "Property",
+          "ChangedApiName": "connectivityState",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **connectivityState** property from the [remoteNetwork](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-remoteNetwork?view=graph-rest-beta) resource.",
+          "Target": "remoteNetwork"
+        },
+        {
+          "Id": "d28efae5-a913-454d-9df5-dfa4f965bd06",
+          "ApiChange": "Property",
+          "ChangedApiName": "country",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **country** property from the [remoteNetwork](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-remoteNetwork?view=graph-rest-beta) resource.",
+          "Target": "remoteNetwork"
+        }
+      ],
+      "Id": "d28efae5-a913-454d-9df5-dfa4f965bd06",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-19T13:09:03.8805486Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
