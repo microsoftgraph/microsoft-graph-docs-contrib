@@ -3,7 +3,7 @@ title: "Range: Intersection"
 description: "Gets the range object that represents the rectangular intersection of the given ranges."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

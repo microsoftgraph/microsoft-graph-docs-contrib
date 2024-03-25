@@ -3,7 +3,7 @@ title: "workbookSortField resource type"
 description: "Represents a condition in a sorting operation."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "excel"
+ms.subservice: "excel"
 author: "ruoyingl"
 ---
 
