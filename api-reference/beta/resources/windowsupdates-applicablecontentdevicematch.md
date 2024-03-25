@@ -3,7 +3,7 @@ title: "applicableContentDeviceMatch resource type"
 description: "Represents a collection of devices and recommendations for the applicable catalog content."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
