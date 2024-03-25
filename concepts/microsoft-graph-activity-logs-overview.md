@@ -82,9 +82,9 @@ See the following pricing calculations for respective services:
 
 ## Cost reduction for Log Analytics
 
-If you are ingesting the logs to Log Analytics Workspace but are only interested in a subset of logs filtered by a certain citeria, such as omitting certain columns or rows, you have the option to partially reduce costs by applying a workspace tranformation on the Microsoft Graph Activity Logs table. To find out more about worksapce tranformations, how it affects ingestion costs, and how to apply a tranformation to your Microsoft Graph Activity Logs, see [Data collection transformations in Azure Monitor](azure/azure-monitor/essentials/data-collection-transformations).
+If you're ingesting the logs to a Log Analytics Workspace but are only interested in logs filtered by a criteria, such as omitting certain columns or rows, you can partially reduce costs by applying a workspace transformation on the Microsoft Graph activity logs table. To find out more about workspace transformations, how it affects ingestion costs, and how to apply a transformation to your Microsoft Graph activity logs, see [Data collection transformations in Azure Monitor](/azure/azure-monitor/essentials/data-collection-transformations).
 
-As an alternative approach to reduct Log Analytics cost, you can switch to the Basic log data plan which lowers the bills at the expense of reduce capabilities. Find out more about Basic log data plan and how to switch to this plan here [Set a table's log data plan to Basic or Analytics](azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1)
+An alternative approach to reduce Log Analytics cost is to switch to the Basic log data plan which lowers the bills by providing reduced capabilities. For more information, see [Set a table's log data plan to Basic or Analytics](/azure/azure-monitor/logs/basic-logs-configure).
 
 
 ## Azure Monitor Logs query examples
