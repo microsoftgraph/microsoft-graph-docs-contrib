@@ -3,7 +3,7 @@ title: "riskUserActivity resource type"
 description: author
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | detail     | riskDetail  | The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.  |
-| riskEventType | String collection | The type of risk event detected. The possible values are: `anonymizedIPAddress`, `investigationsThreatIntelligence`, `investigationsThreatIntelligenceSigninLinked`,`leakedCredentials`, `maliciousIPAddress`, `maliciousIPAddressValidCredentialsBlockedIP`, `malwareInfectedIPAddress`, `mcasImpossibleTravel`, `mcasSuspiciousInboxManipulationRules`, `suspiciousAPITraffic`, `suspiciousIPAddress`,   `unfamiliarFeatures`, `unlikelyTravel`. For more information about these values, see [riskDetection: riskEventType](../resources/riskdetection.md#riskeventtype-values). |
+| riskEventType | String collection | The type of risk event detected. The possible values are: `anonymizedIPAddress`, `investigationsThreatIntelligence`, `investigationsThreatIntelligenceSigninLinked`,`leakedCredentials`, `maliciousIPAddress`, `maliciousIPAddressValidCredentialsBlockedIP`, `malwareInfectedIPAddress`, `mcasImpossibleTravel`, `mcasSuspiciousInboxManipulationRules`, `suspiciousAPITraffic`, `suspiciousIPAddress`,   `unfamiliarFeatures`, `unlikelyTravel`. <br/>For more information about each value, see [Risk types and detection](/entra/id-protection/concept-identity-protection-risks#risk-types-and-detection). |
 | eventTypes (deprecated) | riskEventType collection |List of risk event types. Deprecated. Use **riskEventType** instead. |
 
 ## JSON representation

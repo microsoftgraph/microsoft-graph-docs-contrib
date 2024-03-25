@@ -3,7 +3,7 @@ title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

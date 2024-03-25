@@ -3,7 +3,7 @@ title: "Create bookingService"
 description: "Create a new bookingService for the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -47,10 +47,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesspostservices",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services
+POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/services
 Content-type: application/json
 
 {
@@ -162,7 +162,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/services/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/services/$entity",
     "id": "57da6774-a087-4d69-b0e6-6fb82c339976",
     "displayName": "Bento",
     "defaultDuration": "PT1H30M",
@@ -178,7 +178,7 @@ Content-type: application/json
     "isLocationOnline": true,
     "isAnonymousJoinEnabled": false,
     "smsNotificationsEnabled": true,
-    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
+    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",
         "locationEmailAddress": null,

@@ -3,7 +3,7 @@ title: "Delete bookingStaffMember"
 description: "Delete a staff member in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -43,16 +43,16 @@ If successful, this method returns `204, No Content` response code. It doesn't r
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_bookingstaffmember",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "5fae928f-6d2d-417a-ad96-4b0caeb362d6"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "5fae928f-6d2d-417a-ad96-4b0caeb362d6"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/5fae928f-6d2d-417a-ad96-4b0caeb362d6
+DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/staffMembers/5fae928f-6d2d-417a-ad96-4b0caeb362d6
 ```
 
 # [C#](#tab/csharp)
@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunch
 ---
 
 ##### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

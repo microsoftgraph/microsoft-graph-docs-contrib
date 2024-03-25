@@ -1,9 +1,11 @@
 ---
 title: "Microsoft 365 groups in Microsoft Graph"
 description: "Microsoft 365 groups are collections of users who share access to resources in Microsoft services. Create groups, manage group membership, and establish group policies."
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: conceptualPageType
 ms.custom: scenarios:getting-started
 ms.date: 05/19/2023

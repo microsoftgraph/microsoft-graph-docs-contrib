@@ -3,7 +3,7 @@ title: "Update bookingstaffmember"
 description: "Update the properties of a bookingStaffMember in the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -58,10 +58,10 @@ The following example changes the staff member's schedule to have Mondays off.
 <!-- {
   "blockType": "request",
   "name": "update_bookingstaffmember",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "8ee1c803-a1fa-406d-8259-7ab53233f148"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "8ee1c803-a1fa-406d-8259-7ab53233f148"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/8ee1c803-a1fa-406d-8259-7ab53233f148
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/staffMembers/8ee1c803-a1fa-406d-8259-7ab53233f148
 Content-type: application/json
 
 {

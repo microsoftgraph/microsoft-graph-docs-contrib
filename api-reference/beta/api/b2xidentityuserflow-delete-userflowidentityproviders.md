@@ -4,7 +4,7 @@ description: "Delete an identityProvider from a b2xIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Delete a userFlowIdentityProvider
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

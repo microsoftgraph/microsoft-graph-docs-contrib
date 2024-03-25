@@ -3,7 +3,7 @@ title: "Update bookingCustomQuestion"
 description: "Update the properties of a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -65,12 +65,12 @@ If successful, this method returns a `200 OK` response code and an updated [book
 <!-- {
   "blockType": "request",
   "name": "update_bookingcustomquestion",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 Content-Type: application/json
 
 {

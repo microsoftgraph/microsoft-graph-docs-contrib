@@ -3,7 +3,7 @@ title: "attackSimulationTrainingUserCoverage resource type"
 description: "Represents cumulative training data for a user in attack simulation and training."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

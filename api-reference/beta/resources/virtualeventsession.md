@@ -3,7 +3,7 @@ title: "virtualEventSession resource type"
 description: "Represents information about a virtual event session."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -125,5 +125,5 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 [List meetingAttendanceReports](../api/meetingattendancereport-list.md)

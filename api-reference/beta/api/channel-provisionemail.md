@@ -3,7 +3,7 @@ title: "channel: provisionEmail"
 description: "Provision an email address for a channel."
 author: "anandab-msft"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Provision an email address for a [channel](../resources/channel.md).
 
-Microsoft Teams doesn't automatically provision an email address for a **channel** by default. To have Teams provision an email address, you can call **provisionEmail**, or through the Teams user interface, select **Get email address**, which triggers Teams to generate an email address if it has not already provisioned one.
+Microsoft Teams doesn't automatically provision an email address for a **channel** by default. To have Teams provision an email address, you can call **provisionEmail**, or through the Teams user interface, select **Get email address**, which triggers Teams to generate an email address if it didn't provisioned one.
 
 To remove the email address of a **channel**, use the [removeEmail](channel-removeemail.md) method.
 
-> **Notes**: 
+> **Notes**:
 > This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [provisionChan
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 ---
 
 ### Response
-The following is an example of a response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,7 +113,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.provisionChannelEmailResult",
-    "email": "1df8f174.teamsgraph.onmicrosoft.com@amer.teams.ms"
+    "email": "contoso.com@amer.teams.ms"
 }
 ```
 <!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8

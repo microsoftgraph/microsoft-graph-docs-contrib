@@ -3,7 +3,7 @@ title: "Create bookingBusiness"
 description: "Create a new Microsoft Bookings business in a tenant."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -117,7 +117,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses/$entity",
-    "id":"fourthcoffee@contoso.onmicrosoft.com",
+    "id":"fourthcoffee@contoso.com",
     "displayName":"Fourth Coffee",
     "businessType":"",
     "phone":"206-555-0100",

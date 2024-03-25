@@ -3,7 +3,7 @@ title: "Excel workbooks and charts API overview"
 description: "You can use the Excel REST API in Microsoft Graph to extend the value of your Excel data, calculations, reporting, and dashboards."
 ms.localizationpriority: high
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 ms.custom: scenarios:getting-started
 ---
 

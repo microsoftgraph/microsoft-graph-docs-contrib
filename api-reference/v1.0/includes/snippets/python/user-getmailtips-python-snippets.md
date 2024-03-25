@@ -11,8 +11,8 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GetMailTipsPostRequestBody(
 	email_addresses = [
-		"danas@contoso.onmicrosoft.com",
-		"fannyd@contoso.onmicrosoft.com",
+		"danas@contoso.com",
+		"fannyd@contoso.com",
 	],
 	mail_tips_options = MailTipsType.AutomaticReplies | MailTipsType.MailboxFullStatus,
 )

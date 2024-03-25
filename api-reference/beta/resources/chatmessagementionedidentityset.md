@@ -3,7 +3,7 @@ title: "chatMessageMentionedIdentitySet resource type"
 description: "Represents the resource @mentioned in a message in a chat or a channel."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

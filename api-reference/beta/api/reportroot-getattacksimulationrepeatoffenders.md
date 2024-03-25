@@ -3,7 +3,7 @@ title: "reportRoot: getAttackSimulationRepeatOffenders"
 description: "List repeat offender users of a tenant in attack simulation and training campaigns."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -122,6 +122,6 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 [securityReportsRoot: getAttackSimulationRepeatOffenders](securityreportsroot-getattacksimulationrepeatoffenders.md)
 

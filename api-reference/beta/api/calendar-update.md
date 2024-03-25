@@ -3,7 +3,7 @@ title: "Update calendar"
 description: "Update the properties of a calendar object. The calendar can be one for a user, "
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md),
 or the default calendar of a Microsoft 365 [group](../resources/group.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -112,7 +112,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,7 +144,7 @@ Content-type: application/json
     "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
-        "address":"samanthab@adatum.onmicrosoft.com"
+        "address":"samanthab@contoso.com"
     }
 }
 ```

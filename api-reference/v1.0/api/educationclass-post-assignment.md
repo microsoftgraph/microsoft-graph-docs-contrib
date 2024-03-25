@@ -3,7 +3,7 @@ title: "Create educationAssignment"
 description: "Create a new assignment."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -171,7 +171,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 

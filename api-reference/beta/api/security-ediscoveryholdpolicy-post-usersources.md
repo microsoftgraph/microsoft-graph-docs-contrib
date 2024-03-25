@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -69,7 +69,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 Content-Type: application/json
 
 {
-    "email": "admin@M365x809305.onmicrosoft.com",
+    "email": "admin@contoso.com",
     "includedSources": "mailbox, site"
 }
 ```
@@ -127,14 +127,14 @@ Content-Type: application/json
     "createdDateTime": "0001-01-01T00:00:00Z",
     "holdStatus": "applied",
     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
-    "email": "admin@M365x809305.onmicrosoft.com",
+    "email": "admin@contoso.com",
     "includedSources": "mailbox,site",
     "siteWebUrl": "",
     "createdBy": {
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",

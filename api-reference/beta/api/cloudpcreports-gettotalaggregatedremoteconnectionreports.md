@@ -3,7 +3,7 @@ title: "cloudPcReports: getTotalAggregatedRemoteConnectionReports"
 description: "Get the total aggregated remote connection usage of a Cloud PC during a given time span."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -164,7 +164,7 @@ Content-Type: application/octet-stream
         [
             "40f9315c-5b63-4126-9f89-b7dcb145ffff",
             "CPC-DisplayName",
-            "connie@cpccontoso.onmicrosoft.com",
+            "connie@contoso.com",
             66.36944444444444,
             0
         ]

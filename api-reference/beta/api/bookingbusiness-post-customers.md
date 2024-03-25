@@ -3,7 +3,7 @@ title: "Create bookingCustomer"
 description: "Create a new bookingCustomer object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -49,10 +49,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_bookingcustomer_from_bookingbusiness",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customers
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customers
 Content-type: application/json
 
 {
@@ -135,7 +135,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/customers/$entity",
     "id": "36038f36-634e-44e4-9415-d7d59c2347aa",
     "displayName": "Joni Sherman",
     "emailAddress": "jonis@relecloud.com",

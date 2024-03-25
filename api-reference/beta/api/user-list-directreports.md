@@ -3,6 +3,7 @@ title: "List directReports"
 description: "Get a user's direct reports."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -63,7 +64,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +110,7 @@ GET https://graph.microsoft.com/beta/me/directReports
 ---
 
 ### Response
-Here is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -132,12 +133,12 @@ Content-type: application/json
             "displayName": "Conf Room Adams",
             "givenName": null,
             "jobTitle": null,
-            "mail": "Adams@Contoso.OnMicrosoft.com",
+            "mail": "Adams@contoso.com",
             "mobilePhone": null,
             "officeLocation": null,
             "preferredLanguage": null,
             "surname": null,
-            "userPrincipalName": "Adams@Contoso.OnMicrosoft.com"
+            "userPrincipalName": "Adams@contoso.com"
         }
     ]
 }

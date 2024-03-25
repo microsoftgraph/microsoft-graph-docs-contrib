@@ -4,7 +4,7 @@ description: "Session control to enforce signin frequency."
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

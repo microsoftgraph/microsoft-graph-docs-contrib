@@ -3,7 +3,7 @@ title: "Get operation"
 description: "Read the properties and relationships of an operation object."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/v1.0/reports/partners/billing/operations/6fe687d
 [!INCLUDE [sample-code](../includes/snippets/php/get-billing-operation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-billing-operation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-billing-operation-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -169,6 +173,10 @@ GET https://graph.microsoft.com/v1.0/reports/partners/billing/operations/6fe687d
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-billing-operation-failed-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-billing-operation-failed-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -244,6 +252,10 @@ GET https://graph.microsoft.com/v1.0/reports/partners/billing/operations/6fe687d
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-billing-operation-running-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-billing-operation-running-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

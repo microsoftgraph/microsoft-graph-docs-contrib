@@ -3,7 +3,7 @@ title: "Delete bookingService"
 description: "Delete a bookingService object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -42,16 +42,16 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_bookingservice",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "57da6774-a087-4d69-b0e6-6fb82c339976"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 
 # [C#](#tab/csharp)
@@ -85,7 +85,7 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunch
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

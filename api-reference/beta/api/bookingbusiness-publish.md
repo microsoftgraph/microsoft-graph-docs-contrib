@@ -3,7 +3,7 @@ title: "bookingBusiness: publish"
 description: "Make the scheduling page of this business available to external customers."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -49,10 +49,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_publish",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/publish
+POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/publish
 ```
 
 # [C#](#tab/csharp)

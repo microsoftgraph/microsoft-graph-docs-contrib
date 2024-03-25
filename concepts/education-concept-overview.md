@@ -3,7 +3,7 @@ title: "Education API overview"
 description: "Use the education API in Microsoft Graph to build solutions that integrate with educational resources for classroom scenarios such as rosters and assignments."
 author: "mmast-msft"
 ms.localizationpriority: high
-ms.prod: "education"
+ms.subservice: "education"
 ms.custom: scenarios:getting-started
 ---
 

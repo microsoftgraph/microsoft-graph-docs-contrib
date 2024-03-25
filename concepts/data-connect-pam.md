@@ -3,7 +3,7 @@ title: "Microsoft Graph Data Connect integration with PAM"
 description: "Microsoft Graph Data Connect relies on Privileged Access Management (PAM) to allow Microsoft 365 administrators to approve data movement requests."
 author: "rimisra2"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ---
 
 # Microsoft Graph Data Connect integration with PAM
@@ -119,14 +119,14 @@ You can also revoke requests that were previously approved. Similar to approving
    You get a response similar to the following:
 
    ```powershell
-   AuthorizedBy          : user@tenant.onmicrosoft.com
+   AuthorizedBy          : user@contoso.com
    Type                  : Task
    AuthorizedAccess      : Data Access Request
    StartTimeUtc          : 7/24/2018 6:02:42 PM
    EndTimeUtc            : 10/22/2018 6:02:42 PM
    Revoked               : True
    RevocationDateTimeUtc : 7/24/2018 9:12:55 PM
-   RevokedBy             : NAMPR00A001.prod.outlook.com/Microsoft Exchange Hosted  Organizations/tenant.onmicrosoft.com/user
+   RevokedBy             : NAMPR00A001.prod.outlook.com/Microsoft Exchange Hosted  Organizations/contoso.com/user
    RevocationComment     : Revoking this request!
    Identity              : bda75607-0d87-43cb-bdf1-284b18446b34
    DateCreatedUtc        : 1/1/0001 12:00:00 AM

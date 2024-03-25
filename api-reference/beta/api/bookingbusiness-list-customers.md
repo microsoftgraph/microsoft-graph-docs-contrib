@@ -3,7 +3,7 @@ title: "List customers"
 description: "Get a list of bookingCustomer objects."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -48,10 +48,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_customers",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customers
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customers
 ```
 
 # [C#](#tab/csharp)
@@ -100,7 +100,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/customers",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/customers",
     "value": [
         {
             "id": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",

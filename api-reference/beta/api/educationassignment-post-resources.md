@@ -3,7 +3,7 @@ title: "Create educationAssignmentResource"
 description: "Create an education assignment resource."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -802,7 +802,7 @@ Content-type: application/json
 
 
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 * [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)

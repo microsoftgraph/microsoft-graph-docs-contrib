@@ -3,7 +3,7 @@ title: "Get bookingBusiness"
 description: "Get the properties and relationships of a bookingBusiness object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -55,10 +55,10 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_bookingbusiness",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/fabrikam@contoso.onmicrosoft.com
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/fabrikam@contoso.com
 ```
 
 # [C#](#tab/csharp)
@@ -105,7 +105,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses/$entity",
-    "id":"Fabrikam@contoso.onmicrosoft.com",
+    "id":"Fabrikam@contoso.com",
     "displayName":"Fabrikam",
     "businessType":"",
     "phone":"206-555-0100",

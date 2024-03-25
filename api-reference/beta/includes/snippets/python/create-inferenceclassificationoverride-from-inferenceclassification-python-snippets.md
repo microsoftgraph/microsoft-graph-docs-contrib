@@ -14,7 +14,7 @@ request_body = InferenceClassificationOverride(
 	classify_as = InferenceClassificationType.Focused,
 	sender_email_address = EmailAddress(
 		name = "Samantha Booth",
-		address = "samanthab@adatum.onmicrosoft.com",
+		address = "samanthab@contoso.com",
 	),
 )
 

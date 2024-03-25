@@ -3,7 +3,7 @@ title: "contentType: addCopyFromContentTypeHub"
 description: "Add or sync a copy of a published content type from content type hub to a target site or a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

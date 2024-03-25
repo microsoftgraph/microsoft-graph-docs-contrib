@@ -952,7 +952,7 @@ Content-Length: 0
 ```
 
 
-## See also
+## Related content
 
 * [Complete migration for a team](team-completemigration.md)
 * [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)

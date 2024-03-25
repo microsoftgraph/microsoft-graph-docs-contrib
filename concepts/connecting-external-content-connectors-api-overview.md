@@ -4,7 +4,7 @@ description: "Use the Microsoft Graph connectors API to build custom connectors 
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Work with the Microsoft Graph connectors API

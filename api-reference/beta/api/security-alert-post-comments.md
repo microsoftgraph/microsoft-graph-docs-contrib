@@ -4,7 +4,7 @@ description: "Adds a comment to the end of the alert comments list"
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and an updated list 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -127,12 +127,12 @@ Content-type: application/json
     "value": [
         {
             "comment": "test",
-            "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
+            "createdByDisplayName": "secAdmin@contoso.com",
             "createdDateTime": "2022-10-13T07:08:30.1606766Z"
         },
         {
             "comment": "Demo for docs",
-            "createdByDisplayName": "secAdmin@contoso.onmicrosoft.com",
+            "createdByDisplayName": "secAdmin@contoso.com",
             "createdDateTime": "2022-10-13T07:08:40.3825324Z"
         }
     ]

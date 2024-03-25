@@ -3,7 +3,7 @@ title: "identitySecurityDefaultsEnforcementPolicy resource type"
 description: "Represents the Microsoft Entra security defaults policy. Security defaults contain preconfigured security settings that protect against common attacks."
 ms.localizationpriority: medium
 author: "Sammak"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

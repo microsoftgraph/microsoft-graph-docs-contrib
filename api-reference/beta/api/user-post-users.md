@@ -2,6 +2,7 @@
 title: "Create user"
 description: "Create a new user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -75,12 +76,12 @@ If successful, this method returns a `201 Created` response code and a [user](..
 ### Example 1: Create a user
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
-<!-- {	
-  "blockType": "request",	
-  "name": "create_user_from_users_2"	
+<!-- {
+  "blockType": "request",
+  "name": "create_user_from_users_2"
 }-->
 
 ```http
@@ -91,7 +92,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "Adele Vance",
   "mailNickname": "AdeleV",
-  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+  "userPrincipalName": "AdeleV@contoso.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "xWwvJ]6NMw+bWH-d"
@@ -135,7 +136,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 ##### Response
-Here is an example of the response. 
+The following example shows the response.
 
 >[!NOTE]
 >The response object shown here might be shortened for readability.
@@ -156,29 +157,29 @@ Content-type: application/json
     "displayName": "Adele Vance",
     "givenName": "Adele",
     "jobTitle": "Product Marketing Manager",
-    "mail": "AdeleV@contoso.onmicrosoft.com",
+    "mail": "AdeleV@contoso.com",
     "mobilePhone": "+1 425 555 0109",
     "officeLocation": "18/2111",
     "preferredLanguage": "en-US",
     "surname": "Vance",
-    "userPrincipalName": "AdeleV@contoso.onmicrosoft.com"
+    "userPrincipalName": "AdeleV@contoso.com"
 }
 ```
 
 ### Example 2: Create a user with social and local account identities
 
-Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.  
+Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.
 
->[!NOTE] 
+>[!NOTE]
 >For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
 
 #### Request
 
 
 # [HTTP](#tab/http)
-<!-- {	
-  "blockType": "request",	
-  "name": "create_user_from_users_identities"	
+<!-- {
+  "blockType": "request",
+  "name": "create_user_from_users_identities"
 }-->
 
 ```http
@@ -190,12 +191,12 @@ Content-type: application/json
   "identities": [
     {
       "signInType": "userName",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "johnsmith"
     },
     {
       "signInType": "emailAddress",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
@@ -248,7 +249,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. 
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -268,12 +269,12 @@ Content-type: application/json
   "identities": [
     {
       "signInType": "userName",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "johnsmith"
     },
     {
       "signInType": "emailAddress",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
@@ -286,7 +287,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

@@ -4,7 +4,7 @@ description: "Stop the synchronization job, and permanently delete all the state
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Delete synchronizationJob
@@ -48,7 +48,7 @@ If successful, returns a `204 No Content` response. It doesn't return anything i
 ## Example
 
 ##### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

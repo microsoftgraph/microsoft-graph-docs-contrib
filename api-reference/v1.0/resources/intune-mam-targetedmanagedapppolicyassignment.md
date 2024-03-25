@@ -3,7 +3,7 @@ title: "targetedManagedAppPolicyAssignment resource type"
 description: "The type for deployment of groups or apps."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

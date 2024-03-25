@@ -3,7 +3,7 @@ title: "Update contact"
 description: "Update the properties of a contact object."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ A [contact](../resources/contact.md) from a user's top level [contactFolder](../
 PATCH /me/contactFolders/{id}/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The 
+A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
 PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
@@ -152,7 +152,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following example shows the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -188,11 +188,11 @@ Content-type: application/json
   "emailAddresses": [
     {
       "name": "Garth",
-      "address": "garth@a830edad9050849NDA1.onmicrosoft.com"
+      "address": "garth@contoso.com"
     }
   ],
   "imAddresses": [
-    "sip:garthf@a830edad9050849nda1.onmicrosoft.com"
+    "sip:garthf@contoso.com"
   ],
   "jobTitle": "Web Marketing Manager",
   "companyName": "Contoso, Inc.",
@@ -218,7 +218,7 @@ Content-type: application/json
       "city": "Redmond",
       "state": "WA",
       "countryOrRegion": "USA",
-      "postalCode": "98075"  
+      "postalCode": "98075"
   },
   "otherAddress": {},
   "spouseName": null,

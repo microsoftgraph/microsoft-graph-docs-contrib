@@ -3,7 +3,7 @@ title: "Create windowsInformationProtectionAppLockerFile"
 description: "Create a new windowsInformationProtectionAppLockerFile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

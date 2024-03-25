@@ -15,7 +15,7 @@ HashMap<String, Object> additionalData = new HashMap<String, Object>();
 LinkedList<Object> userSourcesOdataBind = new LinkedList<Object>();
  property = new ();
 property.setOdataType("microsoft.graph.security.userSource");
-property.setEmail("SalesTeam@M365x809305.OnMicrosoft.com");
+property.setEmail("SalesTeam@contoso.com");
 userSourcesOdataBind.add(property);
 additionalData.put("userSources@odata.bind", userSourcesOdataBind);
 LinkedList<Object> siteSourcesOdataBind = new LinkedList<Object>();

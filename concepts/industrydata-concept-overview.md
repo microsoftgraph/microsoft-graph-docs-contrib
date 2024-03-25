@@ -3,7 +3,7 @@ title: "Overview of the industry data API in Microsoft Graph (preview)"
 description: "Use the industry data API in Microsoft Graph to build solutions that integrate with resources for insights and analytics scenarios."
 author: "vfranks"
 ms.localizationpriority: high
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 ms.custom: scenarios:getting-started
 doc_type: conceptual
 ---

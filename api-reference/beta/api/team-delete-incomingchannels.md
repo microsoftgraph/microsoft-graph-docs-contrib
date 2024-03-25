@@ -4,7 +4,7 @@ description: "Remove an incoming channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Remove channel
@@ -78,7 +78,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Remove member from channel](channel-delete-members.md)
 - [Remove member from team](team-delete-members.md)

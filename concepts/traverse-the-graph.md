@@ -25,7 +25,7 @@ https://graph.microsoft.com/v1.0/$metadata
 https://graph.microsoft.com/beta/$metadata
 ```
 
-The metadata allows you to see and understand the Microsoft Graph data model, including the entity types, complex types, and enumerations that make up the resources represented in the request and response packets. 
+The metadata allows you to see and understand the Microsoft Graph data model, including the entity types, complex types, and enumerations that make up the resources represented in the request and response packets.
 
 The metadata also supports defining types, methods, and enumerations in corresponding OData namespaces. The majority of the Microsoft Graph API is defined in the OData namespace, `microsoft.graph`. A few APIs are defined in subnamespaces, for example, `microsoft.graph.callRecords`.
 
@@ -74,12 +74,12 @@ Content-type: application/json
       "displayName":"CIE Administrator",
       "givenName":"CIE",
       "jobTitle":null,
-      "mail":"admin@contoso.onmicrosoft.com",
+      "mail":"admin@contoso.com",
       "mobilePhone":"+1 3528700812",
       "officeLocation":null,
       "preferredLanguage":"en-US",
       "surname":"Administrator",
-      "userPrincipalName":"admin@contoso.onmicrosoft.com"
+      "userPrincipalName":"admin@contoso.com"
     },
     {
       "id":"d66f2902-9d12-4ff8-ab01-21ec6706079f",
@@ -89,12 +89,12 @@ Content-type: application/json
       "displayName":"Alan Steiner",
       "givenName":"Alan",
       "jobTitle":"VP Corporate Marketing",
-      "mail":"alans@contoso.onmicrosoft.com",
+      "mail":"alans@contoso.com",
       "mobilePhone":null,
       "officeLocation":null,
       "preferredLanguage":"en-US",
       "surname":"Steiner",
-      "userPrincipalName":"alans@contoso.onmicrosoft.com"
+      "userPrincipalName":"alans@contoso.com"
     }
   ]
 }
@@ -112,7 +112,7 @@ Authorization : Bearer {access_token}
 # [cURL](#tab/curl)
 ```bash
 curl --location --request GET 'https://graph.microsoft.com/v1.0/me/mailFolders' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
 ---
@@ -165,13 +165,13 @@ The following request example uses the **userPrincipalName** value as the user's
 
 # [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com' \
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.com' \
 --header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
@@ -192,7 +192,7 @@ content-length: 982
     "department": "Help Center",
     "displayName": "John Doe",
     "givenName": "John",
-    "userPrincipalName": "john.doe@contoso.onmicrosoft.com",
+    "userPrincipalName": "john.doe@contoso.com",
 
     ...
 }
@@ -223,14 +223,14 @@ To retrieve only the user's biographical data, such as the user's provided _Abou
 
 # [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?%24select=displayName%2CaboutMe%2Cskills' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.com?%24select=displayName%2CaboutMe%2Cskills' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
 ---
@@ -296,7 +296,7 @@ Authorization : Bearer {access_token}
 # [cURL](#tab/curl)
 ```bash
 curl --location --request GET 'https://graph.microsoft.com/v1.0/me/drive/root/children?%24select=name' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
 ---
@@ -305,7 +305,7 @@ The successful response returns a 200 OK status code and a payload that contains
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/drive/root/children(name,type)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.com')/drive/root/children(name,type)",
   "value": [
     {
       "@odata.etag": "\"{896A8E4D-27BF-424B-A0DA-F073AE6570E2},2\"",
@@ -329,14 +329,14 @@ To query the list of the direct reports of a user, you can use the following HTT
 
 # [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
+GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.com/directReports HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 # [cURL](#tab/curl)
 ```bash
-curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
+curl --location --request GET 'https://graph.microsoft.com/v1.0/users/john.doe@contoso.com/directReports' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
 ---
@@ -372,7 +372,7 @@ Authorization : Bearer {access_token}
 # [cURL](#tab/curl)
 ```bash
 curl --location --request GET 'https://graph.microsoft.com/v1.0/me/messages' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q' 
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1Qi...8Q18N8vSgrd0Q'
 ```
 
 ---
@@ -387,7 +387,7 @@ odata-version: 4.0
 content-length: 147
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/Messages",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.com')/Messages",
   "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=1",
   "value": [
     {
@@ -435,7 +435,7 @@ content-length: 96
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "garthf@contoso.onmicrosoft.com"
+          "address": "garthf@contoso.com"
         }
       }
     ],
@@ -466,7 +466,7 @@ curl --location --request POST 'https://graph.microsoft.com/v1.0/me/sendMail' \
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "garthf@contoso.onmicrosoft.com"
+          "address": "garthf@contoso.com"
         }
       }
     ],

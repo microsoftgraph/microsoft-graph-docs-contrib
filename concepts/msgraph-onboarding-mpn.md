@@ -3,7 +3,7 @@ title: "Join the Microsoft Partner Network"
 description: "Learn how to join the Microsoft Partner Network as a first step to setting up an EDU tenant to build and test solutions using the Microsoft Graph education API."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

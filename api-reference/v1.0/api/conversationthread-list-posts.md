@@ -3,7 +3,7 @@ title: "List posts"
 description: "Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, "
 ms.localizationpriority: medium
 author: "mikemcleanlive"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, 
+Get the posts of the specified thread. You can specify both the parent conversation and the thread, or,
 you can specify the thread without referencing the parent conversation.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -44,7 +44,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Post](../resources/post.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,13 +121,13 @@ Content-type: application/json
             "from": {
                 "emailAddress": {
                     "name": "HR Taskforce",
-                    "address": "HRTaskforce@M365x214355.onmicrosoft.com"
+                    "address": "HRTaskforce@contoso.com"
                 }
             },
             "sender": {
                 "emailAddress": {
                     "name": "Joni Sherman",
-                    "address": "JoniS@M365x214355.onmicrosoft.com"
+                    "address": "JoniS@contoso.com"
                 }
             }
         }

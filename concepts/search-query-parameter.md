@@ -1,7 +1,7 @@
 ---
 title: "Use the $search query parameter in Microsoft Graph"
 description: "Microsoft Graph supports the $search OData query parameter to restrict the results of a request to match a search criterion."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
@@ -173,11 +173,11 @@ Content-type: application/json
            "department": "Finance",
            "officeLocation": "12/1110",
            "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
+           "userPrincipalName": "irenem@contoso.com",
+           "imAddress": "sip:irenem@contoso.com",
            "scoredEmailAddresses": [
                {
-                   "address": "irenem@contoso.onmicrosoft.com",
+                   "address": "irenem@contoso.com",
                    "relevanceScore": -16.446060612802224
                }
            ],
@@ -198,7 +198,7 @@ Content-type: application/json
 }
 ```
 
-To learn more about the People API, see [Get information about relevant people](./people-insights-overview.md#search-people).  
+To learn more about the People API, see [Get information about relevant people](./people-insights-overview.md#search-people).
 
 ## Using $search on directory object collections
 
@@ -267,7 +267,7 @@ ConsistencyLevel: eventual
 
 ---
 
-This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.  
+This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.
 
 `$search` can be used together with `$filter`:
 

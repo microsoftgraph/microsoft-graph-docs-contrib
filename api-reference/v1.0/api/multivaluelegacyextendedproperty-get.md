@@ -3,7 +3,7 @@ title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: non-product-specific
+ms.subservice: non-product-specific
 doc_type: apiPageType
 ---
 
@@ -281,7 +281,7 @@ Content-type: application/json
     "organizer": {
         "emailAddress": {
             "name": "MOD Administrator",
-            "address": "admin@M365x39866865.OnMicrosoft.com"
+            "address": "admin@contoso.com"
         }
     },
     "onlineMeeting": null,

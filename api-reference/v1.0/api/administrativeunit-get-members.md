@@ -3,7 +3,7 @@ title: "Get a member"
 description: "Use this API to get a specific member (user, group, or device) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ If successful, this method returns a `200 OK` response code and a [user](../reso
 ## Example
 
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9
 ---
 
 ### Response
-Here is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -83,11 +83,11 @@ Content-type: application/json
     "displayName": "MOD Administrator",
     "givenName": "MOD",
     "jobTitle": null,
-    "mail": "admin@M365x214355.onmicrosoft.com",
+    "mail": "admin@contoso.com",
     "mobilePhone": "5555555555",
     "officeLocation": null,
     "preferredLanguage": "en-US",
     "surname": "Administrator",
-    "userPrincipalName": "admin@M365x214355.onmicrosoft.com"
+    "userPrincipalName": "admin@contoso.com"
 }
 ```

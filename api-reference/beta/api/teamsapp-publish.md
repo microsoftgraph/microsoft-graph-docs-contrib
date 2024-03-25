@@ -3,7 +3,7 @@ title: "Publish teamsapp"
 description: "Publish an app to the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -328,7 +328,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [App catalog C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

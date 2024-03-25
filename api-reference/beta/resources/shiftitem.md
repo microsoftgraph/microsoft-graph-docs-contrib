@@ -3,7 +3,7 @@ title: "shiftItem resource type"
 description: "A shiftItem represents a version of the shift."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "accessReviewInstance: sendReminder"
 description: "Sends a reminder to the reviewers of a currently active accessReviewInstance."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

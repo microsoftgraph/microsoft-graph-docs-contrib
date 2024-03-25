@@ -4,7 +4,7 @@ description: "Add member to channel."
 author: "akjo" 
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Add member to channel
@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -139,7 +139,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -223,7 +223,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -306,7 +306,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -393,7 +393,7 @@ Content-length: 468
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -481,7 +481,7 @@ Content-length: 468
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

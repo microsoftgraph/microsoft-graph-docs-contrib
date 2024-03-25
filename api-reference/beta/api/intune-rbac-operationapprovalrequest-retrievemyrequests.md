@@ -3,7 +3,7 @@ title: "retrieveMyRequests function"
 description: "Intune Rbac Operationapprovalrequest Retrievemyrequests Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1822
+Content-Length: 1824
 
 {
   "value": [
@@ -113,7 +113,7 @@ Content-Length: 1822
       "approvalJustification": "Approval Justification value",
       "operationApprovalPolicies": "Operation Approval Policies value",
       "requiredOperationApprovalPolicyTypes": [
-        "deviceWipe"
+        "deviceAction"
       ]
     }
   ]

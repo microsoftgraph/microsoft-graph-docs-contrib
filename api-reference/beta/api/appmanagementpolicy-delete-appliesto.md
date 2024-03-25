@@ -3,7 +3,7 @@ title: "Remove appliesTo"
 description: "Remove an appManagementPolicy from an application or service principal object."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                     |
 | Application                            | Application.Read.All and Policy.ReadWrite.ApplicationConfiguration |
 
-[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
+[!INCLUDE [rbac-app-auth-method-custom-policy-api-update](../includes/rbac-for-apis/rbac-app-auth-method-custom-policy-api-update.md)]
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 #### Request
 
-The following is an example of the request to remove an appManagementPolicy from an application.
+The following example shows a request to remove an appManagementPolicy from an application.
 
 
 # [HTTP](#tab/http)
@@ -124,7 +124,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request to remove an appManagementPolicy from a service principal.
+The following example shows a request to remove an appManagementPolicy from a service principal.
 
 
 

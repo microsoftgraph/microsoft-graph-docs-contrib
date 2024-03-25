@@ -3,7 +3,7 @@ title: "List associatedTeamInfo"
 description: "Get the list of teams in Microsoft Teams that a user is associated with."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ GET /users/{user-id}/teamwork/associatedTeams
 ```
 
 ## Optional query parameters
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

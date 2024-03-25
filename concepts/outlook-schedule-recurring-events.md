@@ -3,7 +3,7 @@ title: "Schedule repeating appointments as recurring events in Outlook"
 description: "Create recurring events by using the recurrence rule, which includes the recurrence pattern - how often an event repeats - and the recurrence range - for how long."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Schedule repeating appointments as recurring events in Outlook

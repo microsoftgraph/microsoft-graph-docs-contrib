@@ -3,7 +3,7 @@ title: "Update unifiedRoleManagementPolicyRule"
 description: "Update a rule defined for a role management policy."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -192,7 +192,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 + [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
 + [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)

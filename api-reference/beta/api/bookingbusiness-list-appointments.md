@@ -3,7 +3,7 @@ title: "List appointments"
 description: "Get a list of bookingAppointment objects for the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -48,16 +48,16 @@ If successful, this method returns a `200 OK` response code and collection of [b
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_appointments",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/appointments
 ```
 
 # [C#](#tab/csharp)
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdel
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -105,7 +105,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/appointments",
     "value": [
         {
             "id": "AAMkADKoAAA=",
@@ -148,7 +148,7 @@ Content-type: application/json
                             "altitudeAccuracy": null
                         }
                     },
-                    "timeZone": "America/Chicago"                
+                    "timeZone": "America/Chicago"
                 }
             ],
             "customerTimeZone": "America/Chicago",
@@ -293,6 +293,7 @@ Content-type: application/json
             "invoiceAmount": 10.0,
             "invoiceId": "1001",
             "invoiceStatus": "open",
+            "isCustomerAllowedToManageBooking": true,
             "invoiceUrl": "theInvoiceUrl",
             "customerLocation": {
                 "displayName": "Customer",

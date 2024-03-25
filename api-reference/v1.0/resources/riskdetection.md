@@ -3,7 +3,7 @@ title: "riskDetection resource type"
 description: "risk detections"
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -42,7 +42,7 @@ For more information about risk detection, see [Microsoft Entra ID Protection](/
 |location|[signInLocation](../resources/signinlocation.md)|Location of the sign-in.|
 |requestId|String|Request ID of the sign-in associated with the risk detection. This property is `null` if the risk detection is not associated with a sign-in.|
 |riskDetail|riskDetail|Details of the detected risk. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`, `m365DAdminDismissedDetection`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `m365DAdminDismissedDetection`.|
-|riskEventType|String|The type of risk event detected. The possible values are `adminConfirmedUserCompromised`, `anomalousToken`, `anomalousUserActivity`, `anonymizedIPAddress`, `generic`, `impossibleTravel`, `investigationsThreatIntelligence`, `leakedCredentials`, `maliciousIPAddress`,`malwareInfectedIPAddress`, `mcasSuspiciousInboxManipulationRules`, `newCountry`, `passwordSpray`,`riskyIPAddress`, `suspiciousAPITraffic`, `suspiciousBrowser`,`suspiciousInboxForwarding`, `suspiciousIPAddress`, `tokenIssuerAnomaly`, `unfamiliarFeatures`, `unlikelyTravel`. If the risk detection is a premium detection, will show `generic`. <br/>For more information about each value, see [riskEventType values](#riskeventtype-values).|
+|riskEventType|String|The type of risk event detected. The possible values are `adminConfirmedUserCompromised`, `anomalousToken`, `anomalousUserActivity`, `anonymizedIPAddress`, `generic`, `impossibleTravel`, `investigationsThreatIntelligence`, `leakedCredentials`, `maliciousIPAddress`,`malwareInfectedIPAddress`, `mcasSuspiciousInboxManipulationRules`, `newCountry`, `passwordSpray`,`riskyIPAddress`, `suspiciousAPITraffic`, `suspiciousBrowser`,`suspiciousInboxForwarding`, `suspiciousIPAddress`, `tokenIssuerAnomaly`, `unfamiliarFeatures`, `unlikelyTravel`. If the risk detection is a premium detection, will show `generic`. <br/>For more information about each value, see [Risk types and detection](/entra/id-protection/concept-identity-protection-risks#risk-types-and-detection).|
 |riskLevel|riskLevel|Level of the detected risk. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|The state of a detected risky user or sign-in. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |source|String|Source of the risk detection. For example, `activeDirectory`. |
@@ -50,32 +50,6 @@ For more information about risk detection, see [Microsoft Entra ID Protection](/
 |userDisplayName|String|The user principal name (UPN) of the user. |
 |userId|String|Unique ID of the user.|
 |userPrincipalName|String|The user principal name (UPN) of the user.|
-
-### riskEventType values
-
-| Name | UI Display Name | Description |
-|--|--|--|
-| adminConfirmedUserCompromised | Admin confirmed user compromised | Indicates that an administrator has [confirmed the user is compromised](../api/riskyuser-confirmcompromised.md). |
-| anomalousToken | Anomalous Token | Indicates that there are abnormal characteristics in the token such as an unusual token lifetime or a token that is played from an unfamiliar location. |
-| anomalousUserActivity | Anomalous User Activity | Indicates a suspicious pattern of behavior for a user that is anomalous to past behavioral patterns. |
-| anonymizedIPAddress | Anonymous IP address | Indicates sign-ins from an anonymous IP address, for example, using an anonymous browser or VPN. |
-| generic | Additional risk detected | Indicates that the user was not enabled for Identity Protection. |
-| impossibleTravel | Impossible travel | Discovered by Microsoft Defender for Cloud Apps (MDCA). Identifies two user activities (a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. | 
-| investigationsThreatIntelligence | Microsoft Entra threat intelligence | Indicates a sign-in activity that is unusual for the given user or is consistent with known attack patterns based on Microsoft's internal and external threat intelligence sources. |
-| leakedCredentials | Leaked credentials | Indicates that the user's valid credentials have been leaked. This sharing is typically done by posting publicly on the dark web, paste sites, or by trading and selling the credentials on the black market. When the Microsoft leaked credentials service acquires user credentials from the dark web, paste sites, or other sources, they are checked against Microsoft Entra users' current valid credentials to find valid matches. |
-| maliciousIPAddress | Malicious IP address | Indicates sign-ins from a malicious IP address. An IP address is considered malicious based on high failure rates because of invalid credentials received from the IP address or other IP reputation sources. |
-| malwareInfectedIPAddress | Malware linked IP address | Indicates sign-ins from IP addresses infected with malware. Deprecated and no longer generated for new detections. |
-| mcasSuspiciousInboxManipulationRules | Suspicious inbox manipulation rules | Discovered by Microsoft Defender for Cloud Apps (MDCA). Identifies suspicious email forwarding rules, for example, if a user created an inbox rule that forwards a copy of all emails to an external address.|
-| newCountry | New country | This detection is discovered by Microsoft Cloud App Security (MCAS). The sign-in occurred from a location that wasn't recently or never visited by the given user. |
-| passwordSpray | Password spray | Indicates that multiple usernames are attacked using common passwords in a unified brute force manner to gain unauthorized access. |
-| riskyIPAddress | Activity from anonymous IP address | This detection is discovered by Microsoft Cloud App Security (MCAS). Users were active from an IP address that has been identified as an anonymous proxy IP address. |
-| suspiciousAPITraffic | Suspicious API Traffic | Indicates that a user's API traffic is suspicious based on the user's observed baseline activity. Possible types of suspicious activity are logged in the **additionalInfo** property and include the following values: <br/> <li> `AnomalousDirectoryEnumeration` which indicates that the user has made anomalous calls to the directory  <li> `AnomalousAPICallsExchange` which indicates that the user has made anomalous calls to an Exchange resource <li> `AnomalousAPICallsOneDrive` which indicates that the user has made anomalous calls to a OneDrive resource. <br/><br/>For each type of activity, the amount of variation from the user's baseline behavior can be `NoVolumeObserved` if the user has no observed baseline behavior, `FiveTimesGreater` if the activity is up to five times greater than the observed baseline, `HundredTimesGreater` if the activity is up to 100 times greater than the observed baseline, and `ThousandTimesGreater` if the activity is up to 1000 times greater than the observed baseline. |
-| suspiciousBrowser | Suspicious browser | Suspicious sign-in activity across multiple tenants from different countries in the same browser. |
-| suspiciousInboxForwarding | Suspicious inbox forwarding | This detection is discovered by Microsoft Cloud App Security (MCAS). It looks for suspicious email forwarding rules, for example, if a user created an inbox rule that forwards a copy of all emails to an external address. |
-| suspiciousIPAddress | Malicious IP address | Identifies logins from IP addresses that are known to be malicious at the time of the sign in. |
-| tokenIssuerAnomaly | Token Issuer Anomaly | Indicates that The SAML token issuer for the associated SAML token is potentially compromised. The claims included in the token are unusual or match known attacker patterns. |
-| unfamiliarFeatures | Unfamiliar sign-in properties | Indicates sign-ins with characteristics that deviate from past sign-in properties. |
-| unlikelyTravel | Atypical travel | Identifies two sign-ins originating from geographically distant locations, where at least one of the locations may also be atypical for the user, given past behavior.  |
 
 ### riskReasons values
 

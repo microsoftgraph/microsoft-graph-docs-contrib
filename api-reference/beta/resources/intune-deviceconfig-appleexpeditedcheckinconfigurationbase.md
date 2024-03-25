@@ -3,7 +3,7 @@ title: "appleExpeditedCheckinConfigurationBase resource type"
 description: "Experimental profile to increase the rate of device check-ins per day of iOS/macOS devices. This profile type is deprecated."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

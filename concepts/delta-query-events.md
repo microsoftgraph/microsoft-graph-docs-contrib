@@ -30,17 +30,17 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 A GET request with the **delta** function returns either:
 
-- A `@odata.nextLink` (that contains a URL with a **delta** function call and a `$skipToken`), or 
+- A `@odata.nextLink` (that contains a URL with a **delta** function call and a `$skipToken`), or
 - A `@odata.deltaLink` (that contains a URL with a **delta** function call and `$deltaToken`).
 
-These tokens are [state tokens](delta-query-overview.md#state-tokens) which encode the 
-_startDateTime_ and _endDateTime_ parameters, and any other query parameter 
+These tokens are [state tokens](delta-query-overview.md#state-tokens) which encode the
+_startDateTime_ and _endDateTime_ parameters, and any other query parameter
 in your initial delta query GET request. You do not need to include these parameters in subsequent requests as they are encoded in the tokens.
 
-State tokens are completely opaque to the client. 
-To proceed with a round of change tracking, simply copy and apply the `@odata.nextLink` or 
-`@odata.deltaLink` URL returned from the last GET 
-request to the next **delta** function call for that same calendar view. A `@odata.deltaLink` returned in a response 
+State tokens are completely opaque to the client.
+To proceed with a round of change tracking, simply copy and apply the `@odata.nextLink` or
+`@odata.deltaLink` URL returned from the last GET
+request to the next **delta** function call for that same calendar view. A `@odata.deltaLink` returned in a response
 signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL
 when you begin the next round.
 
@@ -54,7 +54,7 @@ See the [example](#example-synchronize-events-in-a-calendar-view) to learn how t
 
 ### Optional request header
 
-Each delta query GET request returns a collection of one or more events in the response. You can optionally specify 
+Each delta query GET request returns a collection of one or more events in the response. You can optionally specify
 the request header, `Prefer: odata.maxpagesize={x}`, to set the maximum number of events in a response.
 
 
@@ -67,14 +67,14 @@ The following example shows a series of 3 requests to synchronize the user's def
 - [Step 3: sample third request](#step-3-sample-third-request) and [final response](#sample-third-and-final-response)
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties
-are returned. 
+are returned.
 
 See what you'll do in the [next round](#the-next-round-sample-first-response).
 
 
 ### Step 1: sample initial request
 
-In this example, the specified calendar view in the signed-in user's default calendar is being synchronized for the first time, so the initial sync request does not include any state token. 
+In this example, the specified calendar view in the signed-in user's default calendar is being synchronized for the first time, so the initial sync request does not include any state token.
 This round will return all the events in that calendar view.
 
 The first request specifies the following:
@@ -125,7 +125,7 @@ Prefer: odata.maxpagesize=2
 
 ### Sample initial response
 
-The response includes two events and a `@odata.nextLink` response header with a `skipToken`. 
+The response includes two events and a `@odata.nextLink` response header with a `skipToken`.
 The `@odata.nextLink` URL indicates there are more events in the calendar view to get.
 
 <!-- {
@@ -164,9 +164,9 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@contoso.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
-            },      
+            },
             "id":"AAMkADNVxRAAA="
         },
         {
@@ -191,7 +191,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@contoso.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADVxSAAA="
@@ -246,9 +246,9 @@ Prefer: odata.maxpagesize=2
 
 ---
 
-### Sample second response 
+### Sample second response
 
-The second response returns the next 2 events in the calendar view and another `@odata.nextLink`, indicating there are 
+The second response returns the next 2 events in the calendar view and another `@odata.nextLink`, indicating there are
 more events to get from the calendar view.
 
 <!-- {
@@ -287,7 +287,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@contoso.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADVxTAAA="
@@ -314,7 +314,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@contoso.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADVxUAAA="
@@ -326,8 +326,8 @@ Content-type: application/json
 
 ### Step 3: sample third request
 
-The third request continues to use the latest `@odata.nextLink` returned from the last sync request. 
- 
+The third request continues to use the latest `@odata.nextLink` returned from the last sync request.
+
 
 
 # [HTTP](#tab/http)
@@ -372,8 +372,8 @@ Prefer: odata.maxpagesize=2
 
 ### Sample third and final response
 
-The third response returns the only remaining event in the calendar view, and a `@odata.deltaLink` URL which indicates 
-synchronization is complete for this calendar view. Save and use the `@odata.deltaLink` URL to 
+The third response returns the only remaining event in the calendar view, and a `@odata.deltaLink` URL which indicates
+synchronization is complete for this calendar view. Save and use the `@odata.deltaLink` URL to
 [synchronize that calendar view in the next round](#the-next-round-sample-first-request).
 
 
@@ -416,7 +416,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@contoso.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADj1HuAAA="
@@ -428,7 +428,7 @@ Content-type: application/json
 
 ### The next round: sample first request
 
-Using the `@odata.deltaLink` from the [last request](#step-3-sample-third-request) in the last round, 
+Using the `@odata.deltaLink` from the [last request](#step-3-sample-third-request) in the last round,
 you will be able to get only those events that have changed (by being added, deleted, or updated) in that calendar view since then.
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
@@ -532,7 +532,7 @@ Content-type: application/json
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@contoso.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             },
             "id":"AAMkADj1HvAAA="
@@ -547,7 +547,7 @@ Content-type: application/json
 - [Get incremental changes to messages](delta-query-messages.md)
 - [Get incremental changes to groups](delta-query-groups.md)
 - [Get incremental changes to users](delta-query-users.md)
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

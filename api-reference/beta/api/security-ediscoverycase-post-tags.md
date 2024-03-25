@@ -57,7 +57,7 @@ If successful, this method returns a `201 Created` response code and an [microso
 
 ### Example 1: Create a tag
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -133,7 +133,7 @@ Content-Type: application/json
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
@@ -145,7 +145,7 @@ Content-Type: application/json
 
 ### Example 2: Create a tag with a parent
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -222,7 +222,7 @@ Content-Type: application/json
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",

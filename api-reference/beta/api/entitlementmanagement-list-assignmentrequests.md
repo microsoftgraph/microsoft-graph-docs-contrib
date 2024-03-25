@@ -3,7 +3,7 @@ title: "List assignmentRequests"
 description: "Retrieve a list of accessPackageAssignmentRequest objects."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/as
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-accesspackageassignmentrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accesspackageassignmentrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

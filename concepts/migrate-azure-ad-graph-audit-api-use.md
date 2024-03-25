@@ -1,12 +1,13 @@
 ---
 title: "Examine Azure AD Graph APIs app usage"
 description: "Describes how to audit Azure Active Directory (Azure AD) Graph APIs to migrate an app to Microsoft Graph API."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
+ms.topic: concept-article
 ms.localizationpriority: medium
-ms.prod: "applications"
-ms.date: 11/11/2022
+ms.subservice: entra-applications
+ms.date: 02/14/2024
 #Customer intent: As a developer, I want to learn what to investigate in my app code and logic, so that I can migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
@@ -16,9 +17,9 @@ This is step 2 of the [process to migrate apps](migrate-azure-ad-graph-planning-
 
 While planning your migration to Microsoft Graph, take time to review your existing application and to catalog the Azure Active Directory (Azure AD) Graph APIs you're currently using.
 
-Compare your list to the known differences.  This helps identify specific changes you'll need to make to migrate your app.  These include simple changes easily resolved using an editor's search-and-replace features or more complicated updates that might require more analysis.
+Compare your list to the known differences. This helps identify specific changes you need to make to migrate your app. The nature of changes can range from simple changes easily resolved using an editor's search-and-replace features to more complicated updates that might require more analysis.
 
-Microsoft Graph supports many of the same features and capabilities of Azure AD Graph.  There are a few key differences:
+Microsoft Graph supports many of the same features and capabilities of Azure AD Graph, with a few key differences in the following categories:
 
 - [Request differences](migrate-azure-ad-graph-request-differences.md)
 - [Feature differences](migrate-azure-ad-graph-feature-differences.md)
@@ -26,10 +27,6 @@ Microsoft Graph supports many of the same features and capabilities of Azure AD 
 - [Property differences](migrate-azure-ad-graph-property-differences.md)
 - [Method differences](migrate-azure-ad-graph-method-differences.md)
 - [Permissions differences](migrate-azure-ad-graph-permissions-differences.md)
-
-You'll also want to verify the permissions required for the features your app is using.  In some cases, more granular permissions are available.
-
-To learn more, see [Permissions](permissions-reference.md).
 
 ## Next step
 

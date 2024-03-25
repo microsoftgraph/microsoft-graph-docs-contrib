@@ -3,7 +3,7 @@ title: "Get operationApprovalRequest"
 description: "Read properties and relationships of the operationApprovalRequest object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1712
+Content-Length: 1714
 
 {
   "value": {
@@ -115,7 +115,7 @@ Content-Length: 1712
     "approvalJustification": "Approval Justification value",
     "operationApprovalPolicies": "Operation Approval Policies value",
     "requiredOperationApprovalPolicyTypes": [
-      "deviceWipe"
+      "deviceAction"
     ]
   }
 }

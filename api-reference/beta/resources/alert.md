@@ -3,7 +3,7 @@ title: "alert resource type"
 description: "Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

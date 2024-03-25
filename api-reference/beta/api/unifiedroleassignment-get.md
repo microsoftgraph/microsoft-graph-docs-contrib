@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a unifiedRoleAssignme
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -172,7 +172,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request with the `$expand` query parameter.
+The following example shows a request with the `$expand` query parameter.
 
 
 # [HTTP](#tab/http)
