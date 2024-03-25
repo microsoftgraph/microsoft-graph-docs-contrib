@@ -16,6 +16,7 @@ The access reviews API in Microsoft Graph enables organizations to audit and att
 
 In this tutorial, you learn how to:
 
+> [!div class="checklist"]
 > * Create a recurring access review of memberships to security groups.
 > * Self-attest to the need to maintain access to a group.
 
