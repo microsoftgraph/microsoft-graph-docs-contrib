@@ -3,7 +3,7 @@ title: "Assign sensitivity label to planner roster"
 description: "Assign a sensitivity label to the **plannerRoster** object."
 ms.localizationpriority: medium
 author: "WiRawlinWork"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
