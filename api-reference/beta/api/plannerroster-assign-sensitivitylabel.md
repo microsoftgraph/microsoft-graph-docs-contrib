@@ -53,7 +53,7 @@ If-Match: "string"
 
 ### Error Conditions
 
-In addition to [general errors](../resources/graph/errors) that apply to Microsoft Graph and the error cases documented in [planner overview](../resources/planner-overview.md), some error conditions are specific to the API to assign sensitivity labels on plannerRoster.
+In addition to [general errors](../../../resources/concepts/errors.md) that apply to Microsoft Graph and the error cases documented in [planner overview](../resources/planner-overview.md), some error conditions are specific to the API to assign sensitivity labels on plannerRoster.
 
 #### 400 Bad Request
 
