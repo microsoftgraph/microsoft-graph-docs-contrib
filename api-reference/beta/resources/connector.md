@@ -28,7 +28,7 @@ Represents an Application Proxy connector. Connectors are lightweight agents tha
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|externalIp|String| The external IP address as detected by the the connector server. Read-only. |
+|externalIp|String| The external IP address as detected by the connector server. Read-only. |
 |id|String| The unique identifier of the connector. Read-only. |
 |machineName|String| The name of the computer the connector is installed and runs on. |
 |status|connectorStatus| Indicates the status of the connector. The possible values are: `active`, `inactive`. Read-only. |
