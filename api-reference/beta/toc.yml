@@ -16603,7 +16603,7 @@ items:
                   - name: Health issue
                     href: resources/security-healthissue.md
                   - name: List
-                    href: api/security-list-healthissues.md
+                    href: api/security-identityContainer-list-healthissues.md
                   - name: Get
                     href: api/security-healthissue-get.md
                   - name: Update
