@@ -51,7 +51,7 @@ To ensure successful parsing of the request body, the `@odata.type=#microsoft.gr
 
 ### Supported web parts
 
-There are two kinds of web parts that can be added to a sitePage: [standardWebPart](../resources/standardWebPart.md) and [textWebPart](../resources/textWebPart.md).
+There are two kinds of web parts that can be added to a [sitePage](../resources/sitePage.md): [standardWebPart](../resources/standardWebPart.md) and [textWebPart](../resources/textWebPart.md).
 
 For [standardWebPart](../resources/standardWebPart.md), only the following are supported when updating using the Microsoft Graph API. Attempting to add unsupported web parts will result in a failure or exception.
 

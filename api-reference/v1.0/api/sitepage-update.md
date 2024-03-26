@@ -151,14 +151,8 @@ Content-Type: application/json
     }
   },
   "publishingState": {
-    "level": "checkout",
-    "versionId": "0.1",
-    "checkedOutBy": {
-      "user": {
-        "displayName": "Rahul Mittal",
-        "email": "rahmit@contoso.com"
-      }
-    }
+    "level": "draft",
+    "versionId": "0.1"
   },
   "titleArea": {
     "enableGradientEffect": true,
