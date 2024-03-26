@@ -3,7 +3,7 @@ title: "Create deviceLink"
 description: "Create device link for a remote network"
 author: abhijeetsinha
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

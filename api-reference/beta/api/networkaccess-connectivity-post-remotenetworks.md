@@ -3,7 +3,7 @@ title: "Create remoteNetwork"
 description: "Create a new remote network."
 author: abhijeetsinha
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

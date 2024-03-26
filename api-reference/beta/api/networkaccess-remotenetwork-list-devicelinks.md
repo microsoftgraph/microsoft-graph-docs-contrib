@@ -3,7 +3,7 @@ title: "List deviceLinks"
 description: "Retrieve a list of device links associated with a specific remote network."
 author: abhijeetsinha
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

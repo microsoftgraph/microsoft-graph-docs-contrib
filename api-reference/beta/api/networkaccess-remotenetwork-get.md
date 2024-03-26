@@ -3,7 +3,7 @@ title: "Get remoteNetwork"
 description: "Retrieve information about a specific remote network."
 author: abhijeetsinha
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

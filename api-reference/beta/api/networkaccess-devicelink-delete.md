@@ -3,7 +3,7 @@ title: "Delete deviceLink"
 description: "Removes the link between the remote network and the CPE device, effectively removing the connection and associated configuration between them."
 author: abhijeetsinha
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

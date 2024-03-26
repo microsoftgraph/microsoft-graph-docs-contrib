@@ -3,7 +3,7 @@ title: "Update remoteNetwork"
 description: "Update the configuration or properties of a specific remote etwork."
 author: abhijeetsinha
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List remoteNetworks"
 description: "Retrieve a list of remote networks within a tenant connected to the Global Secure Access."
 author: abhijeetsinha
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

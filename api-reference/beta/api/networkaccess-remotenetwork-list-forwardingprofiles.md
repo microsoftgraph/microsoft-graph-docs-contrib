@@ -3,7 +3,7 @@ title: "List forwardingProfiles (for a remote network)"
 description: "Retrieve a list of traffic forwarding profiles associated with a remote network."
 author: abhijeetsinha
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 

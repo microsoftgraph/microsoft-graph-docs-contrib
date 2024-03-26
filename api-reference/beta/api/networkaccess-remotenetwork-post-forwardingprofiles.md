@@ -3,7 +3,7 @@ title: "Assign forwardingProfile"
 description: "Assign a forwarding profile to a remote network"
 author: abhijeetsinha
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
