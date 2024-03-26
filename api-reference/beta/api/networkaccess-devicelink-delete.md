@@ -7,7 +7,7 @@ ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# Delete deviceLink (deprecated)
+# Delete deviceLink
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -19,8 +19,8 @@ Removes the link between the branch or remote network and the CPE device, effect
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "networkaccess_branchsite_delete_devicelinks" } -->
-[!INCLUDE [permissions-table](../includes/permissions/networkaccess-branchsite-delete-devicelinks-permissions.md)]
+<!-- { "blockType": "permissions", "name": "networkaccess_devicelink_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-devicelink-delete-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 

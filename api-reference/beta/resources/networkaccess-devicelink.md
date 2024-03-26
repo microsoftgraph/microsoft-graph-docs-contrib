@@ -23,7 +23,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[List deviceLinks](../api/networkaccess-remotenetwork-list-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Get a list of the [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) objects and their properties.|
 |[Create deviceLink](../api/networkaccess-remotenetwork-post-devicelinks.md)|None|Create a new [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|
 |[Get deviceLink](../api/networkaccess-devicelink-get.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|
-|[Delete deviceLink](../api/networkaccess-remotenetwork-delete-devicelinks.md)|None|Delete a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|
+|[Delete deviceLink](../api/networkaccess-devicelink-delete.md)|None|Delete a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|
 |[List deviceLinks for a branchSite (deprecated)](../api/networkaccess-branchsite-list-devicelinks.md)|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Get a list of the [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) objects and their properties.|
 |[Create deviceLink for a branchSite (deprecated)](../api/networkaccess-branchsite-post-devicelinks.md)|None|Create a new [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object.|
 
