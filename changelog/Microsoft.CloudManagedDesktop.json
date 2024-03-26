@@ -4817,6 +4817,32 @@
             "CreatedDateTime": "2024-03-22T09:24:41.3424906Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+            {
+              "Id": "c17ffc38-abdb-4162-bb58-c855c82889c5",
+              "ApiChange": "Property",
+              "ChangedApiName": "domainJoinConfiguration",
+              "ChangeType": "Deprecation",
+              "Description": "Deprecated the **domainJoinConfiguration** property of the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource. The **domainJoinConfiguration** property is deprecated and will stop returning data on May 31, 2024. Going forward, use the **domainJoinConfigurations** property.",
+              "Target": "cloudPcProvisioningPolicy"
+            },
+            {
+              "Id": "c17ffc38-abdb-4162-bb58-c855c82889c5",
+              "ApiChange": "Property",
+              "ChangedApiName": "onPremisesConnectionId",
+              "ChangeType": "Deprecation",
+              "Description": "Deprecated the **onPremisesConnectionId** property of the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource. The **onPremisesConnectionId** property is deprecated and will stop returning data on May 31, 2024.",
+              "Target": "cloudPcProvisioningPolicy"
+            }
+          ],
+          "Id": "c17ffc38-abdb-4162-bb58-c855c82889c5",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2024-01-30T06:58:17.7596296Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
         }
     ]
 }
