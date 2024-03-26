@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
-ms.date: 03/22/2024
+ms.date: 03/25/2024
 #Customer intent: As a developer, I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
@@ -16,11 +16,9 @@ The access reviews API in Microsoft Graph enables organizations to audit and att
 
 In this tutorial, you learn how to:
 
+> [!div class="checklist"]
 > * Create a recurring access review of memberships to security groups.
 > * Self-attest to the need to maintain access to a group.
-
->[!NOTE]
->The response objects shown in this tutorial might be shortened for readability.
 
 ## Prerequisites
 
@@ -141,6 +139,7 @@ The status of the access review is **NotStarted**. You can retrieve the access r
   "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
 } -->
 
+> **Note:** The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -246,6 +245,8 @@ In this response, the **status** of the instance is `InProgress` because **start
   "@odata.type": "microsoft.graph.accessReviewInstance",
   "isCollection": "true"
 } -->
+
+> **Note:** The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -330,6 +331,8 @@ The following response shows that the two members of the security group were not
   "@odata.type": "microsoft.graph.accessReviewReviewer",
   "isCollection": "true"
 } -->
+
+> **Note:** The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -413,6 +416,8 @@ The following response shows the decisions taken on the instance of the review. 
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
   "isCollection": "true"
 } -->
+
+> **Note:** The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -525,6 +530,7 @@ GET https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definition
 ##### Response
 From the response, you (Adele Vance) have one pending access review (**decision** is `NotReviewed`) to self-attest to. The **principal** and **resource** properties indicate the principal that the decision applies to and the resource to which access is under review. In this case, Adele Vance and the security group respectively.
 
+> **Note:** The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
