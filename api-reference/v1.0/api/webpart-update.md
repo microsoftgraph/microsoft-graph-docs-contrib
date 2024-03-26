@@ -49,7 +49,9 @@ In the request body, supply a JSON representation of the [textWebPart](../resour
 
 To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.textwebpart` or `@odata.type=#microsoft.graph.standardwebpart` must be included in the request body.
 
-### Supported standard web parts
+### Supported web parts
+
+There are two kinds of web parts that can be added to a sitePage: [standardWebPart](../resources/standardWebPart.md) and [textWebPart](../resources/textWebPart.md).
 
 For [standardWebPart](../resources/standardWebPart.md), only the following are supported when updating using the Microsoft Graph API. Attempting to add unsupported web parts will result in a failure or exception.
 
