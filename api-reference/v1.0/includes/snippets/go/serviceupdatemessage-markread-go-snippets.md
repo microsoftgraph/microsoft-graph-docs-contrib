@@ -22,7 +22,7 @@ messageIds := []string {
 }
 requestBody.SetMessageIds(messageIds)
 
-markRead, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().Post(context.Background(), requestBody, nil)
+markRead, err := graphClient.Admin().ServiceAnnouncement().Messages().MarkRead().PostAsMarkReadPostResponse(context.Background(), requestBody, nil)
 
 
 ```

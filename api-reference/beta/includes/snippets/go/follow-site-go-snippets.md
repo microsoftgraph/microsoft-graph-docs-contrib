@@ -32,7 +32,7 @@ value := []graphmodels.Siteable {
 }
 requestBody.SetValue(value)
 
-add, err := graphClient.Users().ByUserId("user-id").FollowedSites().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Users().ByUserId("user-id").FollowedSites().Add().PostAsAddPostResponse(context.Background(), requestBody, nil)
 
 
 ```
