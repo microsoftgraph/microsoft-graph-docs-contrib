@@ -21,7 +21,7 @@ Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalat
 |Property|Type|Description|
 |:---|:---|:---|
 |approvalId|String|Read-only. Identifier of the approval, in approval service|
-|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|Status of the approval. Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md). The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only. You must use the `Prefer: include-unknown-enum-members` request header to get the value following `unknownFutureValue`, in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
+|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|Status of the approval. Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md). The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only.
 
 ### plannerApprovalStatus values 
 
