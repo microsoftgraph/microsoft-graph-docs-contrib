@@ -26,7 +26,15 @@ Choose the least privileged permission or permissions to download reports with t
 <!-- { "blockType": "permissions", "name": "cloudpcexportjob_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudpcexportjob-get-permissions.md)]
 
-Permission for specific reports can be found in cloud PC admin portal.
+Permission for specific reports are:
+- ActionStatus/Read
+- DeviceRecommendation/Read
+- CrossRegionDisasterRecovery/Read
+- FrontlineReports/Read
+- InaccessibleReports/Read
+- PerformanceReports/Read
+
+These permissions can be found in **Tenant administration** -> **Roles** ->  **My permissions** in cloud PC admin portal.  
  
 
 ## HTTP request
