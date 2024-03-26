@@ -16598,15 +16598,15 @@ items:
                     href: api/security-incident-post-comments.md
           - name: Identites
             items:
-              - name: Health Issue
+              - name: Health issue
                 items:
-                  - name: Health Issue
+                  - name: Health issue
                     href: resources/security-healthissue.md
-                  - name: List Health Issue
+                  - name: List
                     href: api/security-list-healthissues.md
-                  - name: Get Health Issue
+                  - name: Get
                     href: api/security-healthissue-get.md
-                  - name: Update Health Issue
+                  - name: Update
                     href: api/security-healthissue-update.md
           - name: Attack simulation and training
             items:
