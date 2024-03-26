@@ -3,7 +3,7 @@ title: "Get androidWorkProfileCertificateProfileBase"
 description: "Read properties and relationships of the androidWorkProfileCertificateProfileBase object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

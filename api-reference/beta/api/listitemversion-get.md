@@ -49,7 +49,7 @@ This example retrieves a version of a listItem and expands the fields collection
 <!-- { "blockType": "request", "name": "get-single-version-listItem", "scopes": "files.read" } -->
 
 ```http
-GET /sites/{site-id}/items/{item-id}/versions/{version-id}?expand=fields
+GET https://graph.microsoft.com/beta/sites/{site-id}/items/{item-id}/versions/{version-id}?expand=fields
 ```
 
 ### Response

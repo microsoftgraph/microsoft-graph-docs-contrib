@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a [contactMergeS
 
 ### Request
 
-The following is an example of the request to get **contactMergeSuggestions** settings for the user.
+The following example shows a request to get **contactMergeSuggestions** settings for the user.
 
 # [HTTP](#tab/http)
 <!-- {

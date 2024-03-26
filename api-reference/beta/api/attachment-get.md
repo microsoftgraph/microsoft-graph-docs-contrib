@@ -167,7 +167,7 @@ If you're getting the raw contents of a file or item attachment, the response bo
 
 #### Request
 
-Here is an example of the request to get the properties of a file attachment on a message.
+The following example shows a request to get the properties of a file attachment on a message.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_beta",
@@ -295,7 +295,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADA1M-zAAA=/attachments/AAM
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_item_attachment",
@@ -371,7 +371,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADA1M-zAAA=/attachments/AAM
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_and_expand_item_attachment",
@@ -591,7 +591,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request to get a reference attachment on an event.
+The following example shows a request to get a reference attachment on an event.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -639,7 +639,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -674,7 +674,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request to get the raw contents of a Word file that has been attached to a message.
+The following example shows a request to get the raw contents of a Word file that has been attached to a message.
 <!-- {
   "blockType": "ignored",
   "name": "get_value_file_attachment",
@@ -686,7 +686,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 The actual response body includes the raw bytes of the file attachment, which are abbreviated here for brevity.
 
 <!-- {
@@ -706,7 +706,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-Here is an example of the request to get the raw contents of a contact item that has been attached to a message.
+The following example shows a request to get the raw contents of a contact item that has been attached to a message.
 <!-- {
   "blockType": "ignored",
   "name": "get_value_contact_attachment",
@@ -718,7 +718,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADI5MAAGjk2PxAAA=/attachmen
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "ignored",
@@ -755,7 +755,7 @@ END:VCARD
 
 #### Request
 
-Here is an example of the request to get the raw contents of an event that has been attached to a message.
+The following example shows a request to get the raw contents of an event that has been attached to a message.
 <!-- {
   "blockType": "ignored",
   "name": "get_value_event_attachment",
@@ -767,7 +767,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADVIOAAA=/attachments/AAMkA
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "ignored",
@@ -835,7 +835,7 @@ END:VCALENDAR
 
 #### Request
 
-Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message. The **eventMessage** entity is based on the **message** type.
+The following example shows a request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message. The **eventMessage** entity is based on the **message** type.
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -847,7 +847,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/A
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 
 The response body includes the **eventMessage** attachment in MIME format. The body of the  **eventMessage** is truncated for brevity. The full message body is returned from an actual call.
 

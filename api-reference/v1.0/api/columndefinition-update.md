@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [colu
 }-->
 
 ```http
-PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 Content-Type: application/json
 
 {

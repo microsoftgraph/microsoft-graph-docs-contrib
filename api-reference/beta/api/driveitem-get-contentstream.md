@@ -5,7 +5,7 @@ ms.author: maniksingh
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItem objects with the file property can be downloaded."
 ms.localizationpriority: medium
 ms.date: 3/6/2024
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get file by contentStream
@@ -19,13 +19,8 @@ Download the contents of the primary stream (file) of a [driveItem](../resources
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
 <!-- { "blockType": "permissions", "name": "driveitem_get_contentstream" } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|Files.Read|Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
-|Delegated (personal Microsoft account)|Files.Read|Files.ReadWrite, Files.Read.All, Files.ReadWrite.All|
-|Application|Files.Read.All|Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-get-contentstream-permissions.md)]
 
 ## HTTP request
 
@@ -69,11 +64,18 @@ The following example shows how to download a file.
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content-stream", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drives/b!fMInbiL5dkK51VbATG0ddrCg6AJpEj9Lm4uGj5HgEi4guyuYp4W5SbH4dPfXTbCF/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/download-item-content-stream-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -97,11 +99,19 @@ Content-Type: text/plain
 To download a partial range of bytes from the file, your app can use the `Range` header, as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
 
 #### Request
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial-stream", "scopes": "files.read" } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drives/b!fMInbiL5dkK51VbATG0ddrCg6AJpEj9Lm4uGj5HgEi4guyuYp4W5SbH4dPfXTbCF/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
 Range: bytes=0-1023
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/download-item-partial-stream-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 The call returns a `206 Partial Content` HTTP response with the requested range of bytes from the file. If the range can't be generated, the `Range` header is ignored and a `200 OK` HTTP response is returned with the full contents of the file.

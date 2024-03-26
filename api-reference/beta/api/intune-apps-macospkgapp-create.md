@@ -3,7 +3,7 @@ title: "Create macOSPkgApp"
 description: "Create a new macOSPkgApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

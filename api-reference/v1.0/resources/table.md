@@ -3,7 +3,7 @@ title: "Table resource type"
 description: "Represents an Excel table."
 author: "lumine2008"
 ms.localizationpriority: high
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
