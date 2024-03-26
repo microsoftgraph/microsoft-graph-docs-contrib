@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|WindowsUpdates.Read.All|WindowsUpdates.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|WindowsUpdates.Read.All|WindowsUpdates.ReadWrite.All|
+

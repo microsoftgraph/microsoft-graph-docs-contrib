@@ -3,7 +3,7 @@ title: "List series"
 description: "Retrieve a list of chartseries objects."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Name      |Description|
 |:----------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 Don't supply a request body for this method.
