@@ -3,7 +3,7 @@ title: "List horizontalSections"
 description: "Get a list of the horizontalSection objects and their properties."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- { "blockType": "ignored" } -->
 

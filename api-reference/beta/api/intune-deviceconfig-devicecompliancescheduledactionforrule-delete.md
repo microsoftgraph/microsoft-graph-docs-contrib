@@ -3,7 +3,7 @@ title: "Delete deviceComplianceScheduledActionForRule"
 description: "Deletes a deviceComplianceScheduledActionForRule."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -68,7 +68,7 @@ The following example gets all custom security attribute definitions in a tenant
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -174,7 +174,7 @@ The following example retrieves custom security attribute definitions that are n
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -269,7 +269,7 @@ The following example retrieves custom security attribute definitions that are i
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

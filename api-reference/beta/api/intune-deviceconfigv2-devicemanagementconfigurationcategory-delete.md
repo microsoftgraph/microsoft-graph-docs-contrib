@@ -3,7 +3,7 @@ title: "Delete deviceManagementConfigurationCategory"
 description: "Deletes a deviceManagementConfigurationCategory."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

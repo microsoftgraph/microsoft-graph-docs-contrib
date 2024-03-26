@@ -3,7 +3,7 @@ title: "Call records in the cloud communications API"
 description: "Get insights into the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business."
 author: "mcm223"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Call records

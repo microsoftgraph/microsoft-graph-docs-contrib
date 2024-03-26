@@ -2,7 +2,7 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
@@ -1056,6 +1056,16 @@ Namespace: microsoft.graph
 | trafficCone        |
 | pin                |
 | sunny              |
+| unknownFutureValue |
+
+### windowsSettingType values 
+
+Possible types of Windows settings.
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
 | unknownFutureValue |
 
 ### workforceIntegrationEncryptionProtocol values

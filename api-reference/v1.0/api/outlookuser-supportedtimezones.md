@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ---
 
 ##### Response 1
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "user_supportedtimezones_default",
@@ -186,7 +186,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStand
 ---
 
 ##### Response 2
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

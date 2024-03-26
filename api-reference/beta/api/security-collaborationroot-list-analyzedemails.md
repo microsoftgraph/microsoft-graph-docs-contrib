@@ -3,7 +3,7 @@ title: "List analyzedEmails "
 description: "Get a list of analyzedEmail objects and their properties."
 author: "ajaj-shaikh"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -21,11 +21,7 @@ This API allows Security Operations teams to have direct access to hunt (query) 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-collaborationroot-list-analyzedemails-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_collaborationroot_list_analyzedemails" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-collaborationroot-list-analyzedemails-permissions.md)]
 
 ## HTTP request

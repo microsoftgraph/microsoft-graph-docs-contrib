@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationPolicy resource type"
 description: "Device Management Configuration Policy"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,6 +29,8 @@ Device Management Configuration Policy
 |[createCopy action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-createcopy.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)||
 |[reorder action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-reorder.md)|None||
 |[retrieveLatestUpgradeDefaultBaselinePolicy function](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-retrievelatestupgradedefaultbaselinepolicy.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)||
+|[retrieveJustInTimeConfiguration action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-retrievejustintimeconfiguration.md)|[deviceManagementConfigurationJustInTimeAssignmentPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationjustintimeassignmentpolicy.md)||
+|[assignJustInTimeConfiguration action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-assignjustintimeconfiguration.md)|Boolean||
 
 ## Properties
 |Property|Type|Description|
@@ -37,7 +39,7 @@ Device Management Configuration Policy
 |name|String|Policy name|
 |description|String|Policy description|
 |platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `mobileApplicationManagement`, `linuxMdm`, `enrollment`, `endpointPrivilegeManagement`, `unknownFutureValue`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `mobileApplicationManagement`, `linuxMdm`, `enrollment`, `endpointPrivilegeManagement`, `unknownFutureValue`, `windowsOsRecovery`.|
 |createdDateTime|DateTimeOffset|Policy creation date and time|
 |lastModifiedDateTime|DateTimeOffset|Policy last modification date and time|
 |settingCount|Int32|Number of settings|

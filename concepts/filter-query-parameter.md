@@ -319,9 +319,9 @@ Hiding because the latest iteration of the report doesn't include these properti
 
 | Operator (s)   | Syntax                                                                                    |
 |-----------------|--------------------------------------------------------------------------------------------|
-| `eq`           | `~/users?$filter=authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil')`<sup> [ ** ](#**) </sup>      |
-| `not` and `eq` | `~/users?$filter=not(authorizationInfo/certificateUserIds/any(x:x eq '9876543210@mil'))`<sup> [ ** ](#**) </sup> |
-| `startsWith`   | `~/users?$filter=authorizationInfo/certificateUserIds/any(x:startswith(x,'987654321'))`<sup> [ ** ](#**) </sup>  |
+| `eq`           | `~/users?$filter=certificateUserIds/any(x:x eq '9876543210@mil')`<sup> [ ** ](#**) </sup>      |
+| `not` and `eq` | `~/users?$filter=not(certificateUserIds/any(x:x eq '9876543210@mil'))`<sup> [ ** ](#**) </sup> |
+| `startsWith`   | `~/users?$filter=certificateUserIds/any(x:startswith(x,'987654321'))`<sup> [ ** ](#**) </sup>  |
 | `endsWith`     | `~/users?$filter=proxyAddresses/any(p:endsWith(p,'contoso.com'))`<sup> [ ** ](#**) </sup>                    |
 
 

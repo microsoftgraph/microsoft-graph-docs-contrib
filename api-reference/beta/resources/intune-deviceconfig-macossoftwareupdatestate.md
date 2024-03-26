@@ -3,7 +3,7 @@ title: "macOSSoftwareUpdateState enum type"
 description: "MacOS Software Update State"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
