@@ -141,9 +141,6 @@ Content-Type: application/json
       "imageDisplayName": "Image Display Name value",
       "imageId": "Image ID value",
       "imageType":"custom",
-      "windowsSettings": {
-        "language": "en-US"
-      },
       "windowsSetting": {
           "locale": "en-US"
       },
