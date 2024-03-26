@@ -40,6 +40,10 @@ GET /drives/{drive-id}/items/{item-id}/analytics/lastSevenDays
 GET /sites/{site-id}/analytics/lastSevenDays
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics/lastSevenDays
 ```
+
+> [!NOTE]
+> Here {item-id} for /sites/{site-id}/lists/{list-id}/items/{item-id} should be the listItemUniqueId.
+
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
