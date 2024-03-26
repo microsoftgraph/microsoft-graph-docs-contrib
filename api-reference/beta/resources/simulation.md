@@ -73,7 +73,7 @@ Inherits from [entity](../resources/entity.md).
 |failed| The simulation is complete with fail status. |
 |cancelled| The simulation is cancelled. |
 |excluded| The simulation is excluded. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ### simulationAttackTechnique values
 
@@ -85,7 +85,7 @@ Inherits from [entity](../resources/entity.md).
 |driveByUrl| Attack technique that involves an end user clicking a URL link in the phishing payload. |
 |linkInAttachment| Attack technique that involves an end user clicking a URL link in an attachment. |
 |linkToMalwareFile| Attack technique that involves an end user clicking a URL link to a malware file. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 |oAuthConsentGrant|  Attack technique that involves an end user who gives access consent to an app.|
 |phishTraining|  Attack technique that involves training end users on actions to be performed on a phish mail.|
 
@@ -97,7 +97,7 @@ Inherits from [entity](../resources/entity.md).
 |social| Attack that uses social skills to manipulate victims psychologically, creating a false sense of curiosity, urgency, or fear. |
 |cloud| Attack on a host or user in a cloud environment, for example, denial of service attacks.|
 |endpoint| Attack on endpoints of a corporate network, such as desktops, laptops, mobile phones, and Internet of Things (IoT) devices. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ### simulationContentStatus values
 
@@ -108,7 +108,7 @@ Inherits from [entity](../resources/entity.md).
 |ready| The simulation content status is in ready state. |
 |archive| The simulation content status is archive state. |
 |delete| The simulation content status is in delete state. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ### simulationContentSource values
 
@@ -117,7 +117,7 @@ Inherits from [entity](../resources/entity.md).
 |unknown| The simulation content source isn't defined. |
 |global| The simulation content source is global. |
 |tenant| The simulation content source is tenant. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
