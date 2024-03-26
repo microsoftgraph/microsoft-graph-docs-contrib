@@ -10339,6 +10339,24 @@
     {
       "ChangeList": [
         {
+          "Id": "2a9e477d-d980-4376-9793-566aac3bfe54",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesSecurityIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the `onPremisesSecurityIdentifier` property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "2a9e477d-d980-4376-9793-566aac3bfe54",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-25T04:21:11.8241053Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "18e6b218-1bd9-4dd9-975e-16bbc4ba6028",
           "ApiChange": "Resource",
           "ChangedApiName": "new delegated and application permissions,organization API,subcribedSku",
