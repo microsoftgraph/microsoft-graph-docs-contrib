@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Create an access package that users can self-service request.
 > * Assign a group resource to the access package.
-> * 
+> * Request an access package
 
 ## Prerequisites
 
@@ -33,6 +33,9 @@ To complete this tutorial, you need the following resources and privileges:
   - The group has the ID `f4892fac-e81c-4712-bdf2-a4450008a4b0` with the "Marketing group" description and "Marketing resources" display name.
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the *Identity Governance Administrator* role.
 - Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All`.
+
+> [!NOTE]
+> Some steps in this tutorial use the `beta` endpoint.
 
 ## Step 1: Add resources to a catalog and create an access package
 
@@ -115,7 +118,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 }
 ```
 
-### Add the group to the catalog
+### Step 1.2: Add the group to the catalog
 
 In this tutorial, the resource is a security group has the ID `e93e24d1-2b65-4a6c-a1dd-654a12225487`.
 
@@ -206,7 +209,7 @@ In this response, the **id** represents the ID for the group as a resource in th
 }
 ```
 
-### Get catalog resources
+### Step 1.3: Get catalog resources
 
 In this step, you retrieve the details of the resources that match the ID of the group resource that you added to the General catalog.
 
@@ -281,7 +284,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 }
 ```
 
-### Get resources roles
+### Step 1.4: Get resources roles
 
 The access package assigns users to the roles of a resource. The typical role of a group is the `Member` role. Other resources, such as SharePoint Online sites and applications, might have many roles. The typical role of a group used in an access package is the `Member` role. You need the member role to add a resource role to the access package later in this tutorial.
 
@@ -368,7 +371,7 @@ Because you filtered by the originId, display name and resource ID, if successfu
 }
 ```
 
-### Create the access package
+### Step 1.5: Create the access package
 
 You now have a catalog with a group resource, and you want to use the resource role of group member in the access package. The next step is to create the access package. After you have the access package, you can add the resource role to it, and create a policy for how users can request access to that resource role. You use the **id** of the catalog that you recorded earlier to create the access package. Record the **id** of the access package to use later in this tutorial.
 
@@ -446,7 +449,7 @@ Content-type: application/json
 }
 ```
 
-### Add a resource role to the access package
+### Step 1.6: Add a resource role to the access package
 
 #### Request
 
@@ -528,7 +531,7 @@ Content-type: application/json
 
 The access package now has one resource role, which is group membership. The role is assigned to any user who has the access package.
 
-### Create an access package policy
+### Step 1.7: Create an access package policy
 
 Now that you created the access package and added resources and roles, you can decide who can access it by creating an access package policy. In this tutorial, you enable the **Requestor1** account that you created to request access to the resources in the access package. For this task, you need these values:
 - **id** of the access package for the value of the **accessPackageId** property
@@ -652,7 +655,7 @@ Content-type: application/json
 }
 ```
 
-## Step 3: Request access
+## Step 2: Request access
 
 In this step, the **Requestor1** user account requests access to the resources in the access package.
 
@@ -743,11 +746,11 @@ Content-type: application/json
 
 You can now sign out and exit the anonymous session.
 
-## Step 4: Validate that access has been assigned
+## Step 3: Validate that access has been assigned
 
 In this step, you confirm that the **Requestor1** user account was assigned the access package and that they're now a member of the **Marketing resources** group. Return to the administrator session in Graph Explorer.
 
-### Get the status of the request
+### Step 3.1: Get the status of the request
 
 Use the value of the **id** property of the request to get the current status of it. In the response, you can see the status changed to **Fulfilled** and the state changed to **Delivered**.
 
@@ -817,7 +820,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 }
 ```
 
-### Get access package assignments
+### Step 3.2: Get access package assignments
 
 You can also use the **id** of the access package policy that you created to see that resources have been assigned to the **Requestor1** user account.
 
@@ -902,7 +905,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 }
 ```
 
-### Get the members of the group
+### Step 3.3: Get the members of the group
 
 After the request has been granted, you can use the **id** that you recorded for the **Marketing resources** group to see that the **Requestor1** user account has been added to it.
 
@@ -991,7 +994,7 @@ GET https://graph.microsoft.com/v1.0/groups/f4892fac-e81c-4712-bdf2-a4450008a4b0
 }
 ```
 
-## Step 5: Clean up resources
+## Step 4: Clean up resources
 
 In this step, you remove the changes you made and delete the **Marketing Campaign** access package.
 
