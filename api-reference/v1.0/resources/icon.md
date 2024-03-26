@@ -3,7 +3,7 @@ title: workbookIcon resource type
 description: "Represents a cell icon."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: excel
+ms.subservice: excel
 doc_type: resourcePageType
 ---
 

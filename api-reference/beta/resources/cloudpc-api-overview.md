@@ -11,7 +11,7 @@ ms.subservice: "cloud-pc"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Windows 365 is a cloud-based service that automatically creates a new type of Windows virtual machine (Cloud PCs) for your end users. Each Cloud PC is assigned to an individual user as a  dedicated Windows device. Windows 365 provides the productivity, security, and collaboration benefits of Microsoft 365.
+Windows 365 is a cloud-based service that automatically creates a new type of Windows virtual machine (Cloud PCs) for your end users. Each Cloud PC is assigned to an individual user as a dedicated Windows device. Windows 365 provides the productivity, security, and collaboration benefits of Microsoft 365.
 
 The Microsoft Graph API enables programmatic access to Cloud PC information and management actions on your organization. The API performs the same operations as those available through Microsoft Endpoint Manager.
 
@@ -30,13 +30,14 @@ Microsoft Graph controls access to resources via permissions. As a developer, yo
 
 |Use cases|REST resources|See also|
 |:---|:---|:---|
-|List, get, create, update, delete, or assign provisioning policies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|[Provisioning overview](/windows-365/enterprise/provisioning)|
-|Manage Cloud PCs including reprovision, end Cloud PC grace period, bulk reprovision, and resize Cloud PCs|[cloudPC](../resources/cloudpc.md)|[Cloud PCs lifecycle](/windows-365/enterprise/lifecycle)|
-|List, get, create, delete, get source images, and reupload Cloud PC OS images|[cloudPCDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](/windows-365/enterprise/device-images)|
-|List, get, create, update delete, update AD domain password, and run health checks for on-premises network connections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|[On-premises network connection overview](/windows-365/enterprise/on-premises-network-connections)|
-|List audit events for Cloud PCs, get a specific audit event, and get audit activity types|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|[Get Cloud PC audit logs](/windows-365/enterprise/get-cloud-pc-audit-logs-using-powershell)|
-|List, get, create, update, delete or assign user settings|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|[User settings overview](../resources/cloudpcusersetting.md)|
-|Set up rules to alert issues on the Microsoft Endpoint Manager admin center with provisioning Cloud PCs, uploading Cloud PC images, and checking Azure network connections. |[alertRecord](devicemanagement-alertrecord.md), [alertRule](devicemanagement-alertrule.md) | [Alert monitoring API](devicemanagement-monitoring.md) |
+|List, get, create, update, delete, or assign provisioning policies.|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|[Provisioning overview](/windows-365/enterprise/provisioning)|
+|Manage Cloud PCs including reprovision, end Cloud PC grace period, bulk reprovision, and resize Cloud PCs.|[cloudPC](../resources/cloudpc.md)|[Cloud PCs lifecycle](/windows-365/enterprise/lifecycle)|
+|List, get, create, delete, get source images, and reupload Cloud PC OS images.|[cloudPCDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](/windows-365/enterprise/device-images)|
+|List and get gallery images.|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|[Gallery images overview](/windows-365/enterprise/device-images)|
+|List, get, create, update delete, update AD domain password, and run health checks for Azure network connections.|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|[On-premises network connection overview](/windows-365/enterprise/on-premises-network-connections)|
+|List audit events for Cloud PCs, get a specific audit event, and get audit activity types.|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|[Get Cloud PC audit logs](/windows-365/enterprise/get-cloud-pc-audit-logs-using-powershell)|
+|List, get, create, update, delete or assign user settings.|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|[User settings overview](../resources/cloudpcusersetting.md)|
+|Set up rules to alert issues on the Microsoft Endpoint Manager admin center with provisioning Cloud PCs, uploading Cloud PC images, and checking Azure network connections.|[alertRecord](devicemanagement-alertrecord.md), [alertRule](devicemanagement-alertrule.md) | [Alert monitoring API](devicemanagement-monitoring.md) |
 
 ## Next steps
 - Check out the [overview for Windows 365 Cloud PC on Microsoft Graph](/graph/cloudpc-concept-overview).

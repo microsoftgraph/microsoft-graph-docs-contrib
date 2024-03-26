@@ -3,7 +3,7 @@ title: "workbookChartDataLabelFormat resource type"
 description: "Encapsulates the format properties for the chart data labels."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

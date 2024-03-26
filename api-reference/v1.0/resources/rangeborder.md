@@ -3,7 +3,7 @@ title: "workbookRangeBorder resource type"
 description: "Represents the border of an object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

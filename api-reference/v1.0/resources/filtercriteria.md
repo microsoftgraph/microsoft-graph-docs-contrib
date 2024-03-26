@@ -15,7 +15,7 @@ Represents the filtering criteria applied to a column.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -27,15 +27,14 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "color": "string",
-  "criterion1": "string",
-  "criterion2": "string",
-  "dynamicCriteria": "string",
-  "filterOn": "string",
+  "color": "String",
+  "criterion1": "String",
+  "criterion2": "String",
+  "dynamicCriteria": "String",
+  "filterOn": "String",
   "icon": {"@odata.type": "microsoft.graph.workbookIcon"},
   "values": {"@odata.type": "microsoft.graph.Json"}
 }
-
 ```
 
 <!-- {
