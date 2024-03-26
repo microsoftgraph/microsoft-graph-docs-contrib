@@ -21,16 +21,13 @@ Use this GET operation to verify the **exportJobStatus** property of the **cloud
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Make sure you have read access to the report that you need to export. Choose the least privileged permission or permissions to download reports with this API. App-only tokens with CloudPC.ReadWrite.All have higher previleged permission or permissions. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Choose the least privileged permission or permissions to download reports with this API. Delegated access require read access to the report that you need to export. App-only tokens with CloudPC.ReadWrite.All have permission or permissions to download all reports without specific permission. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Least privileged permissions|
-|:---|:---|
-|Application|Microsoft.CloudPC/ActionStatus/Read|
-|Application|Microsoft.CloudPC/DeviceRecommendation/Read|
-|Application|Microsoft.CloudPC/CrossRegionDisasterRecovery/Read|
-|Application|Microsoft.CloudPC/FrontlineReports/Read|
-|Application|Microsoft.CloudPC/InaccessibleReports/Read|
-|Application|Microsoft.CloudPC/PerformanceReports/Read|
+<!-- { "blockType": "permissions", "name": "cloudpcexportjob_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcexportjob-get-permissions.md)]
+
+Permission for specific reports can be found in cloud PC admin portal.
+ 
 
 ## HTTP request
 
