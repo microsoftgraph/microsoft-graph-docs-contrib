@@ -85,6 +85,9 @@ The following JSON representation shows the resource type.
   "cloudPcNamingTemplate": "String",
   "description": "String",
   "displayName": "String",
+  "domainJoinConfiguration": {
+    "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
+  },
   "domainJoinConfigurations": [{"@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"}],
   "enableSingleSignOn": "Boolean",
   "gracePeriodInHours": "Int32",
@@ -97,6 +100,7 @@ The following JSON representation shows the resource type.
   "microsoftManagedDesktop": {
     "@odata.type": "microsoft.graph.microsoftManagedDesktop"
   },
+  "onPremisesConnectionId": "String",
   "provisioningType": "String",
   "windowsSetting": {
     "@odata.type": "microsoft.graph.cloudPcWindowsSetting"
