@@ -3,6 +3,7 @@ title: "user: reprocessLicenseAssignment"
 description: "Reprocess all group-based license assignments for the user."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: "apiPageType" 
 ---
@@ -38,7 +39,7 @@ POST /users/{id}/reprocessLicenseAssignment
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

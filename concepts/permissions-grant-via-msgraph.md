@@ -1,11 +1,11 @@
 ---
 title: "Grant or revoke API permissions programmatically"
 description: "Learn how to use Microsoft Graph to programmatically grant and revoke delegated and application API permissions for an app. This method is an alternative to interactive admin consent."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: psignoret, jackson.woods
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 zone_pivot_groups: grant-api-permissions
 ms.custom: template-how-to
 ms.date: 07/25/2023
@@ -30,7 +30,7 @@ To complete these instructions, you need the following resources and privileges:
 
 - A working Microsoft Entra tenant.
 - You'll run the requests in this article as a user. You must complete the following steps:
-    - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
+    - Sign in to an API client such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user with privileges to create applications in the tenant.
     - In the app you've signed in to, consent to the *Application.Read.All* and *AppRoleAssignment.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
     - Get the object ID of the client service principal to which you'll grant app roles. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`. In the Microsoft Entra admin center, go to **Identity** > **Applications** > **Enterprise applications** > **App applications** to find the client service principal. Select it and on the **Overview** page, copy the Object ID value.
 
@@ -366,7 +366,7 @@ HTTP/1.1 204 No Content
 
 You've learned how to manage app role grants for a service principal. This method of granting permissions using Microsoft Graph is an alternative [interactive consent](/azure/active-directory/develop/application-consent-experience) and should be used with caution.
 
-## See also
+## Related content
 
 + [Tutorial: Grant app roles in Microsoft Entra ID using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-app-only-api-permissions)
 + [appRoleAssignment resource type](/graph/api/resources/approleassignment)
@@ -389,7 +389,7 @@ To complete these instructions, you need the following resources and privileges:
 
 - A working Microsoft Entra tenant.
 - You'll run the requests in this article as a user. You must complete the following steps:
-    - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
+    - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) as a user with privileges to create applications in the tenant.
     - In the app you've signed in to, consent to the *Application.Read.All*, *DelegatedPermissionGrant.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
     - Get the object ID of the client service principal to which you'll grant delegated permissions on behalf of a user. In this article, the client service principal is identified by ID `b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94`.
 
@@ -813,7 +813,7 @@ HTTP/1.1 204 No Content
 
 You've granted delegated permissions (or scopes) to a service principal. This method of granting permissions using Microsoft Graph is an alternative to [interactive consent](/azure/active-directory/develop/application-consent-experience) and should be used with caution.
 
-## See also
+## Related content
 
 - [Tutorial: Grant delegated permissions in Microsoft Entra ID using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-delegated-api-permissions)
 - [oAuth2PermissionGrant resource type](/graph/api/resources/oauth2permissiongrant)

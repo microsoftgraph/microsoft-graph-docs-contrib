@@ -3,7 +3,7 @@ title: "Create deviceLink (deprecated)"
 description: "Create a branch site with associated device links."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

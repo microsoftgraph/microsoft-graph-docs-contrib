@@ -3,7 +3,7 @@ title: "Remove owner"
 description: "Remove an owner from an application."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /applications(appId='{appId}')/owners/{id}/$ref
 ## Request headers
 | Name | Description|
 |:---- |:---------- |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply the identifier of the directory object to be assigned as owner.

@@ -3,7 +3,7 @@ title: "associatedTeamInfo resource type"
 description: "Represents a team that is associated with a user."
 author: "devjha-ms"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -55,5 +55,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [Get team](../api/team-get.md)

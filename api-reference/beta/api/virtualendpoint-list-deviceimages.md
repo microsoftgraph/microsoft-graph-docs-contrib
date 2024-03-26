@@ -3,7 +3,7 @@ title: "List deviceImages"
 description: "List the properties and relationships of OS images uploaded to Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports the `$select` and `$filter` OData query parameters to help 
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

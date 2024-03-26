@@ -37,7 +37,7 @@ This method does not support any OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -59,10 +59,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxQcml2aWxlZ2VFc2NhbGF0aW9uR2NwU2VydmljZUFjY291bnRGaW5kaW5nLDE0OTMwOQ/microsoft.graph.privilegeEscalationGcpServiceAccountFinding
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-privilegeescalationgcpserviceaccountfinding-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegeescalationgcpserviceaccountfinding-javascript-snippets.md)]

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.admin_todo import AdminTodo
+from msgraph.generated.models.todo_settings import TodoSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

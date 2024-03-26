@@ -3,7 +3,7 @@ title: "reports: deviceReport"
 description: "Provide a report of all devices with network traffic that the Global Secure Access services captured."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ The following table shows the parameters that can be used with this function.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -66,10 +66,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/networkaccess/reports/deviceReport(startDateTime=2023-08-20T12:12:59.076Z, endDateTime=2023-08-21T12:12:59.076Z) 
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportsthisdevicereport-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportsthisdevicereport-javascript-snippets.md)]

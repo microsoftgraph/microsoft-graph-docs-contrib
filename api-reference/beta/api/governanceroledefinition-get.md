@@ -3,8 +3,9 @@ title: "Get governanceRoleDefinition"
 description: "Retrieve the properties and relationships of a governanceRoleDefinition."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # Get governanceRoleDefinition

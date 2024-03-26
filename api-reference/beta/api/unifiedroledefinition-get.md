@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a unifiedRoleDefiniti
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -23,7 +23,7 @@ The following RBAC providers are currently supported:
 - entitlement management (Microsoft Entra entitlement management)
 - Exchange Online
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -114,7 +114,7 @@ This method supports OData query parameters to help customize the response. For 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

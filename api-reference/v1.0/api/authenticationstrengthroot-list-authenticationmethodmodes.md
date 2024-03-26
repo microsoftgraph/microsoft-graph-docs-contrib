@@ -4,7 +4,7 @@ description: "Get a list of all supported authentication methods, or all support
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ This method does not support OData query parameters.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Retrieve authenticationMethodModes objects and their descriptions
 
 #### Request
-The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
+The following example shows a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -206,7 +206,7 @@ Content-Type: application/json
 ### Example 2: Retrieve the allowed authentication combinations
 
 #### Request
-The following is an example of a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
+The following example shows a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -231,7 +231,7 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationSt
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-authenticationcombinations-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

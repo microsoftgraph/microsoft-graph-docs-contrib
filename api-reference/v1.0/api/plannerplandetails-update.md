@@ -3,7 +3,7 @@ title: "Update plannerplandetails"
 description: "Update the properties of **plannerplandetails** object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ PATCH /planner/plans/{id}/details
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 | If-Match  | Last known ETag value for the plannerPlanDetails to be updated. Required.|
 
@@ -51,7 +51,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,7 +111,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

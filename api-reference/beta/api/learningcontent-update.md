@@ -3,7 +3,7 @@ title: "Update learningContent"
 description: "Update the properties of a learningContent object."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContent
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -261,7 +261,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-learningcontent-externalid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

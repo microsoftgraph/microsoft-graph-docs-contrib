@@ -3,7 +3,7 @@ title: "Create invitation"
 description: "Create a new invitation. The invitation adds an external user to the organization."
 ms.localizationpriority: medium
 author: "ppolkadots"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ POST /invitations
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body

@@ -3,7 +3,7 @@ title: "Update delegatedAdminAccessAssignment"
 description: "Update the properties of a delegatedAdminAccessAssignment object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |If-Match|If-match: etag}. Last known ETag value for the **delegatedAdminAccessAssignment** to be updated. Required.|
 |Content-Type|application/json. Required.|
 

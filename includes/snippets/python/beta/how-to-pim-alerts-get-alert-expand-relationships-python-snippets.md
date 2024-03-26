@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.identityGovernance.roleManagementAlerts.alerts.item.unified_role_management_alert_item_request_builder import UnifiedRoleManagementAlertItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

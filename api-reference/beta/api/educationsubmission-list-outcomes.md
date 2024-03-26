@@ -3,7 +3,7 @@ title: "List outcomes"
 description: "Retrieve a list of educationOutcome objects."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 
@@ -53,7 +53,7 @@ All [properties](/graph/api/resources/educationoutcome#properties) are supported
 
 | Name          | Description    |
 | :------------ | :------------- |
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

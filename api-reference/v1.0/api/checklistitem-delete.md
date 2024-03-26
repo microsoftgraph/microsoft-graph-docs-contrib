@@ -3,7 +3,7 @@ title: "Delete checklistItem"
 description: "Delete a checklistItem object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ DELETE /users/{id | userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTa
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -47,6 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNG
 ---
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

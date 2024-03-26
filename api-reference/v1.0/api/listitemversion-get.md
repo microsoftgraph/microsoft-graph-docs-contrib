@@ -2,7 +2,7 @@
 title: "Get a ListItemVersion resource"
 description: "Retrieve the metadata for a specific version of a ListItem."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
@@ -36,7 +36,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

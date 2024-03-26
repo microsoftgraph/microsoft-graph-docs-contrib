@@ -3,7 +3,7 @@ title: "List contacts"
 description: "Get a contact collection from the default contacts folder of the signed-in user."
 author: "kevinbellinger"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ For general information on the `$filter` query parameter, see [OData query param
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -74,7 +74,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [contact](../resources/contact.md) objects in the response body.
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -120,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

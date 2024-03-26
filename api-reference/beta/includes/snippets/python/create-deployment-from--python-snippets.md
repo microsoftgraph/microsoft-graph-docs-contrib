@@ -4,7 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.deployment import Deployment
+from msgraph.generated.models.catalog_content import CatalogContent
+from msgraph.generated.models.feature_update_catalog_entry import FeatureUpdateCatalogEntry
+from msgraph.generated.models.deployment_settings import DeploymentSettings
+from msgraph.generated.models.schedule_settings import ScheduleSettings
+from msgraph.generated.models.rate_driven_rollout_settings import RateDrivenRolloutSettings
+from msgraph.generated.models.monitoring_settings import MonitoringSettings
+from msgraph.generated.models.monitoring_rule import MonitoringRule
 
 graph_client = GraphServiceClient(credentials, scopes)
 

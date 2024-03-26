@@ -4,7 +4,7 @@ description: "Create a new b2cIdentityUserFlow object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Create b2cIdentityUserFlow
@@ -41,7 +41,7 @@ POST /identity/b2cUserFlows
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -338,7 +338,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: create_b2cUserFlow_from_b2cuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: createb2cuserflowfromb2cuserflowsidentityProvider/userFlowTypeVersion:
       Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'",
     "Error: createb2cuserflowfromb2cuserflowsapiconnectors/userFlowTypeVersion:

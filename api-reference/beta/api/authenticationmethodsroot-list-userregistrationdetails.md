@@ -3,7 +3,7 @@ title: "List userRegistrationDetails"
 description: "Get a list of the authentication methods registered for a user as defined in the userRegistrationDetails object."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ This method supports the `$filter` [OData query parameter](/graph/query-paramete
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

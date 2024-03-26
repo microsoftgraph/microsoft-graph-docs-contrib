@@ -3,7 +3,7 @@ title: "Get teamwork."
 description: "Get organization settings for teamwork, such as the region of the organization and the Microsoft Teams enablement status."
 author: "mea"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ GET /teamwork
 
 | Header           | Value                      |
 | :--------------- | :------------------------- |
-| Authorization    | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [licenseDetails: getTeamsLicensingDetails](licenseDetails-getteamslicensingdetails.md)
 - [Get userTeamwork](userteamwork-get.md)

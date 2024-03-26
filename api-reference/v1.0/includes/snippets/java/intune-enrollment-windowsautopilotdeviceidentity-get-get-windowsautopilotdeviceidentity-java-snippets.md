@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-WindowsAutopilotDeviceIdentity windowsAutopilotDeviceIdentity = graphClient.deviceManagement().windowsAutopilotDeviceIdentities("{windowsAutopilotDeviceIdentityId}")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+WindowsAutopilotDeviceIdentity result = graphClient.deviceManagement().windowsAutopilotDeviceIdentities().byWindowsAutopilotDeviceIdentityId("{windowsAutopilotDeviceIdentity-id}").get();
+
 
 ```

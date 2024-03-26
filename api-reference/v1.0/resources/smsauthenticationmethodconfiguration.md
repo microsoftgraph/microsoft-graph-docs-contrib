@@ -4,7 +4,7 @@ description: "Represents a text message authentication methods policy."
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

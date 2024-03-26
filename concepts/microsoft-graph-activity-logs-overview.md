@@ -1,10 +1,11 @@
 ---
 title: "Access Microsoft Graph activity logs (preview)"
 description: "Microsoft Graph activity logs are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant."
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: yiheguo
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: conceptualPageType
 ms.date: 10/24/2023
 ---
@@ -36,12 +37,9 @@ To access the Microsoft Graph activity logs, you need the following privileges.
 
 ## What data is available in the Microsoft Graph activity logs?
 
-> [!WARNING]
-> The current field name `IpAddress` will change to `IPAddress` in the beta schema. When this change is released, you will need to update any queries that reference this field. The change has already rolled out to some regions.
-
 The following data relating to API requests is available for Microsoft Graph activity logs on the Logs Analytics interface.
 
-[!INCLUDE [microsoftgraphactivitylogs-include](~/../azure-reference-other/azure-monitor-ref/includes/microsoftgraphactivitylogs-include.md)]
+[!INCLUDE [microsoftgraphactivitylogs-include](~/../azure-reference-other/azure-monitor-ref/tables/includes/microsoftgraphactivitylogs-include.md)]
 
 ## Common use cases for Microsoft Graph activity logs
 
@@ -82,6 +80,13 @@ See the following pricing calculations for respective services:
 - [Azure Storage pricing](https://azure.microsoft.com/pricing/details/storage/blobs)
 - [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/)
 
+## Cost reduction for Log Analytics
+
+If you're ingesting the logs to a Log Analytics Workspace but are only interested in logs filtered by a criteria, such as omitting certain columns or rows, you can partially reduce costs by applying a workspace transformation on the Microsoft Graph Activity Logs table. To find out more about workspace transformations, how it affects ingestion costs, and how to apply a transformation to your Microsoft Graph Activity Logs, see [Data collection transformations in Azure Monitor](/azure/azure-monitor/essentials/data-collection-transformations).
+
+An alternative approach to reduce Log Analytics cost is to switch to the Basic log data plan which lowers the bills by providing reduced capabilities. For more information, see [Set a table's log data plan to Basic or Analytics](/azure/azure-monitor/logs/basic-logs-configure).
+
+
 ## Azure Monitor Logs query examples
 
 If you send Microsoft Graph activity logs to a Log Analytics workspace, you can query the logs using Kusto Query Language (KQL). For more information about queries in Log Analytics Workspace, see [Analyze Microsoft Entra activity logs with Log Analytics](/azure/active-directory/reports-monitoring/howto-analyze-activity-logs-log-analytics). You can use these queries for data exploration, to build alert rules, build Azure dashboards, or integrate into your custom applications using the Azure Monitor Logs API or Query SDK.
@@ -118,6 +123,33 @@ MicrosoftGraphActivityLogs
     on $left.SignInActivityId == $right.UniqueTokenIdentifier
 ```
 
+The following Kusto query identifies apps that are getting throttled:
+
+```kusto
+MicrosoftGraphActivityLogs 
+| where TimeGenerated > ago(3d) 
+| where ResponseStatusCode == 429 
+| extend path = replace_string(replace_string(replace_regex(tostring(parse_url(RequestUri).Path), @'(\/)+','//'),'v1.0/',''),'beta/','') 
+| extend UriSegments =  extract_all(@'\/([A-z2]+|\$batch)($|\/|\(|\$)',dynamic([1]),tolower(path)) 
+| extend OperationResource = strcat_array(UriSegments,'/')| summarize RateLimitedCount=count() by AppId, OperationResource, RequestMethod 
+| sort by RateLimitedCount desc 
+| limit 100 
+```
+
+The following query allows you to render a time-series chart:
+
+```kusto
+MicrosoftGraphActivityLogs 
+| where TimeGenerated  between (ago(3d) .. ago(1h))  
+| summarize EventCount = count() by bin(TimeGenerated, 10m) 
+| render timechart 
+    with ( 
+    title="Recent traffic patterns", 
+    xtitle="Time", 
+    ytitle="Requests", 
+    legend=hidden 
+    )
+```
 
 ## Limitations
 
@@ -125,7 +157,7 @@ MicrosoftGraphActivityLogs
 - You can't filter Microsoft Graph activity logs through diagnostic settings in Azure Monitor. However, options are available to reduce costs in Azure Log Analytics Workspace. For more information, see [Workspace transformation](/azure/azure-monitor/logs/tutorial-workspace-transformations-portal).
 - In most regions, the events will be available delivered to the configuration destination within 30 minutes. In less common cases, some events might take up to 2 hours to be delivered to the destination.
 
-## See also
+## Related content
 
 - [Azure Monitor Reference: MicrosoftGraphActivityLogs](/azure/azure-monitor/reference/tables/microsoftgraphactivitylogs)
 - [Stream data from Azure Monitor to an event hub or external partner](/azure/azure-monitor/essentials/stream-monitoring-data-event-hubs)

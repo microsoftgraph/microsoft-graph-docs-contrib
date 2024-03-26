@@ -3,7 +3,7 @@ title: "authenticationConfigurationValidation resource type"
 description: "The result of a validateAuthenticationConfiguration action that validates a customAuthenticationExtension configuration."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

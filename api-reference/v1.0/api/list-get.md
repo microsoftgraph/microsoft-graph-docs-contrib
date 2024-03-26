@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Get a SharePoint list
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Returns the metadata for a list."
 doc_type: apiPageType
 ---
@@ -35,7 +35,7 @@ GET /sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

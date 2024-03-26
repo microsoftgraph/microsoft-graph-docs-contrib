@@ -3,7 +3,7 @@ title: "educationCategory: delta"
 description: "Get a list of newly created or updated educationCategory objects without performing a full read of the collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ GET /education/classes/{educationClassId}/assignments/{educationAssignmentId}/ca
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -6,6 +6,8 @@ items:
   - name: API changelog
     href: https://developer.microsoft.com/en-us/graph/changelog
     displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
+  - name: Quick start
+    href: https://developer.microsoft.com/en-us/graph/quick-start
   - name: Authentication and authorization
     href: /graph/auth/index?context=graph/api/1.0
   - name: Permissions reference
@@ -610,6 +612,8 @@ items:
                 href: api/opentypeextension-get.md
       - name: Applications
         items:
+          - name: Overview
+            href: resources/applications-api-overview.md
           - name: Application
             href: resources/application.md
             items:
@@ -907,11 +911,11 @@ items:
                     href: resources/tokenlifetimepolicy.md
                     items:
                       - name: Assign
-                        href: api/application-post-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-post-tokenlifetimepolicies.md
                       - name: List
-                        href: api/application-list-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-list-tokenlifetimepolicies.md
                       - name: Remove
-                        href: api/application-delete-tokenlifetimepolicies.md
+                        href: api/serviceprincipal-delete-tokenlifetimepolicies.md
           - name: Synchronization
             items:
               - name: Overview
@@ -944,6 +948,11 @@ items:
                     href: api/synchronization-synchronizationjob-provisionondemand.md
                   - name: Validate credentials
                     href: api/synchronization-synchronizationjob-validatecredentials.md
+                  - name: Bulk upload
+                    href: resources/synchronization-bulkupload.md
+                    items:
+                      - name: Perform bulk upload
+                        href: api/synchronization-synchronizationjob-post-bulkupload.md
               - name: Schema
                 href: resources/synchronization-synchronizationschema.md
                 items:
@@ -1140,6 +1149,8 @@ items:
                 href: api/outlookuser-list-mastercategories.md
               - name: Create category
                 href: api/outlookuser-post-mastercategories.md
+              - name: List modules
+                href: api/educationclass-list-modules.md
               - name: Get category
                 href: api/outlookcategory-get.md
               - name: Update category
@@ -1257,6 +1268,34 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Delete a history item
                     href: api/projectrome-delete-historyitem.md
+          - name: Roaming data
+            items:
+              - name: Cloud clipboard
+                href: resources/cloudclipboardroot.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+              - name: Cloud clipboard item
+                href: resources/cloudclipboarditem.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+                  - name: Get
+                    href: api/cloudclipboarditem-get.md
+              - name: Windows settings
+                href: resources/windowssetting.md
+                items:
+                  - name: List
+                    href: api/usersettings-list-windows.md
+                  - name: Get
+                    href: api/windowssetting-get.md
+              - name: Windows setting instance
+                href: resources/windowssettinginstance.md
+                items:
+                  - name: List
+                    href: api/windowssetting-list-instances.md
+                  - name: Get
+                    href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
@@ -1358,7 +1397,6 @@ items:
               - name: Delete
                 href: api/bookingstaffmember-delete.md
       - name: Device and app management
-        expanded: true
         items:
           - name: Browser management
             displayName: Edge, Internet Explorer, IE mode, site list
@@ -1415,6 +1453,97 @@ items:
                 href: resources/cloudpc-api-overview.md
               - name: Virtual endpoint
                 href: resources/virtualendpoint.md
+              - name: Cloud PC
+                href: resources/cloudpc.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-cloudpcs.md
+                  - name: Get
+                    href: api/cloudpc-get.md
+                  - name: End grace period
+                    href: api/cloudpc-endgraceperiod.md
+                  - name: Reboot
+                    href: api/cloudpc-reboot.md
+                  - name: Rename
+                    href: api/cloudpc-rename.md
+                  - name: Restore
+                    href: api/cloudpc-restore.md
+                  - name: Troubleshoot
+                    href: api/cloudpc-troubleshoot.md
+              - name: Cloud PC audit event
+                href: resources/cloudpcauditevent.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-auditevents.md
+                  - name: Get
+                    href: api/cloudpcauditevent-get.md
+                  - name: Get audit activity types
+                    href: api/cloudpcauditevent-getauditactivitytypes.md
+              - name: Cloud PC Azure network connection
+                href: resources/cloudpconpremisesconnection.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-onpremisesconnections.md
+                  - name: Create
+                    href: api/virtualendpoint-post-onpremisesconnections.md
+                  - name: Get
+                    href: api/cloudpconpremisesconnection-get.md
+                  - name: Update
+                    href: api/cloudpconpremisesconnection-update.md
+                  - name: Delete
+                    href: api/cloudpconpremisesconnection-delete.md
+                  - name: Run health checks
+                    href: api/cloudpconpremisesconnection-runhealthcheck.md
+              - name: Cloud PC device image
+                href: resources/cloudpcdeviceimage.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-deviceimages.md
+                  - name: Create
+                    href: api/virtualendpoint-post-deviceimages.md
+                  - name: Get
+                    href: api/cloudpcdeviceimage-get.md
+                  - name: Delete
+                    href: api/cloudpcdeviceimage-delete.md
+                  - name: Get source images
+                    href: api/cloudpcdeviceimage-getsourceimages.md
+              - name: Cloud PC gallery image
+                href: resources/cloudpcgalleryimage.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-galleryimages.md
+                  - name: Get
+                    href: api/cloudpcgalleryimage-get.md
+              - name: Cloud PC provisioning policy
+                href: resources/cloudpcprovisioningpolicy.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-provisioningpolicies.md
+                  - name: Create
+                    href: api/virtualendpoint-post-provisioningpolicies.md
+                  - name: Get
+                    href: api/cloudpcprovisioningpolicy-get.md
+                  - name: Update
+                    href: api/cloudpcprovisioningpolicy-update.md
+                  - name: Delete
+                    href: api/cloudpcprovisioningpolicy-delete.md
+                  - name: Assign
+                    href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Cloud PC user setting
+                href: resources/cloudpcusersetting.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-usersettings.md
+                  - name: Create
+                    href: api/virtualendpoint-post-usersettings.md
+                  - name: Get
+                    href: api/cloudpcusersetting-get.md
+                  - name: Update
+                    href: api/cloudpcusersetting-update.md
+                  - name: Delete
+                    href: api/cloudpcusersetting-delete.md
+                  - name: Assign
+                    href: api/cloudpcusersetting-assign.md
           - name: Cloud printing
             items:
               - name: Print
@@ -4485,6 +4614,18 @@ items:
                         href: api/intune-tem-devicemanagement-get.md
                       - name: Update
                         href: api/intune-tem-devicemanagement-update.md
+          - name: Microsoft 365 apps
+            displayName: Microsoft 365 applications
+            items:
+              - name: Admin Microsoft 365 apps
+                href: resources/adminmicrosoft365apps.md
+              - name: Installation options
+                href: resources/m365appsinstallationoptions.md
+                items:
+                  - name: Get
+                    href: api/m365appsinstallationoptions-get.md
+                  - name: Update
+                    href: api/m365appsinstallationoptions-update.md
           - name: Service health and communications
             items:
               - name: Overview
@@ -4668,13 +4809,17 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md              
+                href: api/educationassignment-delta.md
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md
               - name: Update grading category
                 href: api/educationgradingcategory-update.md
               - name: Remove grading category
                 href: api/educationassignment-delete-gradingcategory.md
+              - name: Activate assignment
+                href: api/educationassignment-activate.md
+              - name: Deactivate assignment
+                href: api/educationassignment-deactivate.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -4709,6 +4854,35 @@ items:
                     href: api/educationgradingcategory-update.md
                   - name: Delete
                     href: api/educationassignment-delete-gradingcategory.md
+          - name: Module
+            href: resources/educationmodule.md
+            items:
+            - name: Create module
+              href: api/educationclass-post-module.md
+            - name: Get module
+              href: api/educationmodule-get.md
+            - name: Update module
+              href: api/educationmodule-update.md
+            - name: Delete module
+              href: api/educationmodule-delete.md
+            - name: List module resources
+              href: api/educationmodule-list-resources.md
+            - name: Create module resource
+              href: api/educationmodule-post-resources.md
+            - name: Get module resource
+              href: api/educationmoduleresource-get.md
+            - name: Update module resource
+              href: api/educationmoduleresource-update.md
+            - name: Delete resource from module
+              href: api/educationmoduleresource-delete.md
+            - name: Publish module
+              href: api/educationmodule-publish.md
+            - name: Set up module resources folder
+              href: api/educationmodule-setupresourcesfolder.md
+            - name: Pin module
+              href: api/educationmodule-pin.md
+            - name: Unpin module
+              href: api/educationmodule-unpin.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -7261,6 +7435,8 @@ items:
               items:
                 - name: Registration and usage
                   items:
+                    - name: Overview
+                      href: resources/authenticationmethods-usage-insights-overview.md
                     - name: User registration details
                       href: resources/userregistrationdetails.md
                       items:
@@ -7543,8 +7719,85 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Get training coverage for users
                     href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+          - name: Partner billing reports
+            items:
+              - name: Overview
+                href: resources/partners-billing-api-overview.md
+              - name: Billed reconciliation
+                items:
+                  - name: Billed reconciliation
+                    href: resources/partners-billing-billedreconciliation.md
+                  - name: Export
+                    href: api/partners-billing-billedreconciliation-export.md
+              - name: Billed usage
+                items:
+                  - name: Billed usage
+                    href: resources/partners-billing-billedusage.md
+                  - name: Export
+                    href: api/partners-billing-billedusage-export.md
+              - name: Manifest
+                items:
+                  - name: Manifest
+                    href: resources/partners-billing-manifest.md
+                  - name: Get
+                    href: api/partners-billing-manifest-get.md
+              - name: Operation
+                items:
+                  - name: Operation
+                    href: resources/partners-billing-operation.md
+                  - name: Get
+                    href: api/partners-billing-operation-get.md
+              - name: Unbilled usage
+                items:
+                  - name: Unbilled usage
+                    href: resources/partners-billing-unbilledusage.md
+                  - name: Export
+                    href: api/partners-billing-unbilledusage-export.md
       - name: Search
         items:
+          - name: Answer
+            items:
+              - name: Overview
+                href: resources/search-api-answers-overview.md
+              - name: Acronym
+                href: resources/search-acronym.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-acronyms.md
+                  - name: Create
+                    href: api/search-searchentity-post-acronyms.md
+                  - name: Get
+                    href: api/search-acronym-get.md
+                  - name: Update
+                    href: api/search-acronym-update.md
+                  - name: Delete
+                    href: api/search-acronym-delete.md
+              - name: Bookmark
+                href: resources/search-bookmark.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-bookmarks.md
+                  - name: Create
+                    href: api/search-searchentity-post-bookmarks.md
+                  - name: Get
+                    href: api/search-bookmark-get.md
+                  - name: Update
+                    href: api/search-bookmark-update.md
+                  - name: Delete
+                    href: api/search-bookmark-delete.md
+              - name: QnA
+                href: resources/search-qna.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-qnas.md
+                  - name: Create
+                    href: api/search-searchentity-post-qnas.md
+                  - name: Get
+                    href: api/search-qna-get.md
+                  - name: Update
+                    href: api/search-qna-update.md
+                  - name: Delete
+                    href: api/search-qna-delete.md
           - name: Query
             items:
               - name: Overview
@@ -8213,6 +8466,8 @@ items:
                 href: api/site-search.md
               - name: Unfollow site
                 href: api/site-unfollow.md
+              - name: Get delta
+                href: api/site-delta.md
           - name: List
             items:
               - name: List
@@ -8732,6 +8987,10 @@ items:
                     items:
                       - name: Get virtual appointment join link
                         href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+                      - name: Send virtual appointment reminder sms
+                        href: api/virtualappointment-sendvirtualappointmentremindersms.md
+                      - name: Send virtual appointment sms
+                        href: api/virtualappointment-sendvirtualappointmentsms.md
               - name: Presence
                 href: resources/presence.md
                 items:
@@ -8921,6 +9180,8 @@ items:
                     href: api/chat-get.md
                   - name: Update chat
                     href: api/chat-patch.md
+                  - name: Delete
+                    href: api/chat-delete.md
                   - name: List members
                     href: api/chat-list-members.md
                   - name: Add member
@@ -9009,6 +9270,13 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+              - name: Deleted chat
+                href: resources/deletedchat.md
+                items:
+                  - name: Get
+                    href: api/deletedchat-get.md
+                  - name: Undo delete
+                    href: api/deletedchat-undodelete.md
               - name: Team
                 href: resources/team.md
                 items:

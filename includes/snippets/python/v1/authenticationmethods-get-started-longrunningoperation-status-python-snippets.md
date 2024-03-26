@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.authentication.operations.item.long_running_operation_item_request_builder import LongRunningOperationItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -2,8 +2,9 @@
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "directory-management"
+author: "suawat"
+ms.reviewer: "alvarorahul, iamut"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -38,7 +39,7 @@ PATCH /organization/{id}
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json |
 
 
@@ -48,11 +49,17 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
+|businessPhones|String collection| Telephone number for the organization. Although this is a string collection, only one number can be set for this property. |
+|city|String| City name of the address for the organization. |
 |marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
 |onPremisesSyncEnabled|Boolean|`true` to enable this object to be synced from an on-premises directory; `false` to disable syncing from an on-premises directory; Nullable. `null` if this object has never been synced from an on-premises directory (default).            |
+|postalCode|String| Postal code of the address for the organization. |
+|preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example, en. |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
+|state|String| State name of the address for the organization. |
+|street|String| Street name of the address for organization. |
 |technicalNotificationMails|String collection|                                        **Notes**: not nullable.            |
 
 Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
@@ -64,7 +71,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -126,7 +133,7 @@ Content-type: application/json
 
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -135,7 +142,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

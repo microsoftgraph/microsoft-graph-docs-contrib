@@ -2,15 +2,13 @@
 author: spgraph-docs-team
 title: Download a file
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 doc_type: apiPageType
 ---
 # Download the contents of a DriveItem
 
 Namespace: microsoft.graph
-
-[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItems** with the **file** property can be downloaded.
 
@@ -41,7 +39,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | if-none-match | String . If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ## Example

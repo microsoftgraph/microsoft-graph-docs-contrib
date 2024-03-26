@@ -3,7 +3,7 @@ title: "Update accessReviewScheduleDefinition"
 description: "Update an existing accessReviewScheduleDefinition object to change one or more of its properties."
 ms.localizationpriority: medium
 author: "jyothig123"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 ## Request headers
 | Name         | Description |
 |:-------------|:------------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body

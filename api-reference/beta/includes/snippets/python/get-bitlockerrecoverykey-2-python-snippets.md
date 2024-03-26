@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.informationProtection.bitlocker.recoveryKeys.recovery_keys_request_builder import RecoveryKeysRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

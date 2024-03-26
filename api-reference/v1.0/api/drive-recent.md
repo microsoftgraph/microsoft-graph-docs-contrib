@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List Recent Files
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "List a set of items that have been recently used by the signed in user."
 doc_type: apiPageType
 ---
@@ -34,7 +34,7 @@ GET /me/drive/recent
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive has recently accessed.

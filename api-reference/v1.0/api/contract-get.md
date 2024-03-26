@@ -3,7 +3,7 @@ title: "Get Contract"
 description: "Retrieve the properties and relationships of contract object."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

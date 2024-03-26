@@ -3,7 +3,7 @@ title: "Use the industry data API as an extract, transform, and load (ETL) engin
 description: "The industry data API is an Education industry focused ETL (Extract-Transform-Load) platform that combines data from multiple sources into a single Azure Data Lake data store, normalizes the data, and exports it in outbound flows."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: conceptual
 ---
 
@@ -172,6 +172,6 @@ Use the Microsoft Graph industry data APIs as an extract, transform, and load (E
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-## See also
+## Related content
 
 [Overview of the industry data API in Microsoft Graph](/graph/industrydata-concept-overview)

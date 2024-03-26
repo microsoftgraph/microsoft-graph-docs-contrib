@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "calculatedColumn resource type"
 ms.localizationpriority: medium
 description: "The calculated column on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site."
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # calculatedColumn resource type
@@ -42,12 +42,7 @@ The following is a JSON representation of the resource.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
-      Found potential enums in resource example that weren't defined in a table:(dateOnly,dateTime) are in resource, but () are in table",
-    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
-      Found potential enums in resource example that weren't defined in a table:(boolean,currency,dateTime,number,text) are in resource, but () are in table"
-  ],
+  "suppressions": [],
   "tocPath": "Resources/CalculatedColumn"
 } -->
 

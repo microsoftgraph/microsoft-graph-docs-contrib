@@ -3,7 +3,7 @@ title: "Delete customAppScope"
 description: "Delete a customAppScope object of an RBAC provider."
 ms.localizationpriority: medium
 author: "cubika"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -38,7 +38,7 @@ DELETE /roleManagement/exchange/customAppScopes/{id}
 
 | Name | Description |
 |:---- |:----------- |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

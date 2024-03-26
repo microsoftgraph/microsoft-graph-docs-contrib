@@ -90,7 +90,7 @@ Other findings include:
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -102,7 +102,7 @@ To call the permissions management APIs, the caller doesn't need any Microsoft G
 
 For more information, see [Permissions Management roles and permissions levels](/entra/permissions-management/product-roles-permissions)
 
-## See also
+## Related content
 
 - [What's Microsoft Entra Permissions Management](/entra/permissions-management/overview)
 - [Quickstart guide to Microsoft Entra Permissions Management](/entra/permissions-management/permissions-management-quickstart-guide)
@@ -118,9 +118,6 @@ For more information, see [Permissions Management roles and permissions levels](
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /resources/permissions-management-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')",
     "Error: /resources/permissions-management-api-overview.md:
       Exception processing links.
       Value cannot be null. (Parameter 'linkUrl')"

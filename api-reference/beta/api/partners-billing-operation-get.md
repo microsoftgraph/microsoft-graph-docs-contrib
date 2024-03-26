@@ -3,7 +3,7 @@ title: "Get operation"
 description: "Read the properties and relationships of an operation object."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph.partners.billing
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
 Read the properties and relationships of an [operation](../resources/partners-billing-operation.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -42,7 +44,7 @@ This method doesn't support any OData query parameters to help customize the res
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -96,6 +98,10 @@ GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-billing-operation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-billing-operation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -168,6 +174,10 @@ GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-billing-operation-failed-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-billing-operation-failed-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -243,6 +253,10 @@ GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-billing-operation-running-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-billing-operation-running-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

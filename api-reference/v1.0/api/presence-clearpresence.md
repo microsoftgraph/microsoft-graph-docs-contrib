@@ -4,7 +4,7 @@ description: "Clear the presence information for a user's application presence s
 author: "jsandoval-msft"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # presence: clearPresence
@@ -32,7 +32,7 @@ POST /users/{userId}/presence/clearPresence
 ## Request headers
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

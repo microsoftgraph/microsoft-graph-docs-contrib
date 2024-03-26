@@ -1,10 +1,10 @@
 ---
 title: "sites: getAllSites"
-description: "List all sites across geographies in an organization - OneDrive API"
+description: "List all sites across geographies in an organization - OneDrive API."
 author: tushar20
 ms.author: tkanaujia
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 List [sites](../resources/site.md) across geographies in an organization. This API can also be used to enumerate all sites in a non-multi-geo tenant.
 
-For more details, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
+For more information, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -35,7 +35,7 @@ GET /sites/getAllSites
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Examples
 
@@ -50,7 +50,7 @@ GET /sites/getAllSites
 }
 -->
 ``` http
-GET /sites/getAllSites
+GET https://graph.microsoft.com/v1.0/sites/getAllSites
 ```
 
 # [C#](#tab/csharp)
@@ -100,6 +100,7 @@ Content-type: application/json
     {
       "id": "contoso-apc.sharepoint.com,bf6fb551-d508-4946-a439-b2a6154fc1d9,65a04b8b-1f44-442b-a1fc-9e5852fb946c",
       "name": "Root Site",
+      "isPersonalSite": false,
       "root": { },
       "siteCollection": {
         "hostName": "contoso-apc.sharepoint.com",
@@ -111,6 +112,7 @@ Content-type: application/json
     {
       "id": "contoso-apc.sharepoint.com,d9ecf079-9b13-4376-ac5d-f242dda55626,746dbcc1-fa2b-4120-b657-2670bae5bb6f",
       "name": "Site A",
+      "isPersonalSite": false,
       "root": { },
       "siteCollection": {
         "hostName": "contoso-apc.sharepoint.com"
@@ -120,6 +122,7 @@ Content-type: application/json
     {
       "id": "contoso-apc.sharepoint.com,fd1a778f-263e-4c43-acdf-d5c2519d80eb,c06016db-dfec-4f79-83a1-09c6dbfd7022",
       "name": "Site B",
+      "isPersonalSite": false,
       "root": { },
       "siteCollection": {
         "hostName": "contoso-apc.sharepoint.com"
@@ -131,7 +134,7 @@ Content-type: application/json
 }
 ```
 
-This response includes the first page of enumerated sites, and the @odata.nextLink property indicates that there are more items available in the current set of items. Your app should continue to request the URL value of @odata.nextLink until all pages of items have been retrieved.
+This response includes the first page of enumerated sites, and the @odata.nextLink property indicates that there are more items available in the current set of items. Your app should continue to request the URL value of @odata.nextLink until all pages of items are retrieved.
 
 ### Example 2: Subsequent request
 
@@ -195,6 +198,7 @@ Content-type: application/json
     {
       "id": "contoso-nam.sharepoint.com,bf6fb551-d508-4946-a439-b2a6154fc1d9,65a04b8b-1f44-442b-a1fc-9e5852fb946c",
       "name": "Root Site",
+      "isPersonalSite": false,
       "root": { },
       "siteCollection": {
         "hostName": "contoso-nam.sharepoint.com",
@@ -206,6 +210,7 @@ Content-type: application/json
     {
       "id": "contoso-nam.sharepoint.com,d9ecf079-9b13-4376-ac5d-f242dda55626,746dbcc1-fa2b-4120-b657-2670bae5bb6f",
       "name": "Site A",
+      "isPersonalSite": false,
       "root": { },
       "siteCollection": {
         "hostName": "contoso-nam.sharepoint.com"
@@ -215,6 +220,7 @@ Content-type: application/json
     {
       "id": "contoso-nam.sharepoint.com,fd1a778f-263e-4c43-acdf-d5c2519d80eb,c06016db-dfec-4f79-83a1-09c6dbfd7022",
       "name": "Site B",
+      "isPersonalSite": false,
       "root": { },
       "siteCollection": {
         "hostName": "contoso-nam.sharepoint.com"

@@ -26,7 +26,7 @@ var requestBody = new SendMailPostRequestBody
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "frannis@contoso.onmicrosoft.com",
+					Address = "frannis@contoso.com",
 				},
 			},
 		},
@@ -36,7 +36,7 @@ var requestBody = new SendMailPostRequestBody
 			{
 				EmailAddress = new EmailAddress
 				{
-					Address = "danas@contoso.onmicrosoft.com",
+					Address = "danas@contoso.com",
 				},
 			},
 		},

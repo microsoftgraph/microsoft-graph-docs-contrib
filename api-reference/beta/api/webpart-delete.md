@@ -3,7 +3,7 @@ title: "Delete webPart"
 description: "Delete a webPart object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout
 
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
-|Authorization|Bearer {token}.| Required|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).| Required|
 | _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted.
 
 ## Request body

@@ -3,7 +3,7 @@ title: "Create openShift"
 description: "Create an instance of openshift object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ POST /teams/{id}/schedule/openShifts
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required.|
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -135,7 +135,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

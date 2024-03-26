@@ -1,10 +1,10 @@
 ---
 title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. Includes common parameters."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 08/22/2023
@@ -421,7 +421,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 > [!NOTE]
 > + Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
 > 
-> + With Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 100 items for the expanded relationship and has no [@odata.nextLink](./paging.md). See more [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=Query%20parameters&search=).
+> + With Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 20 items for the expanded relationship and has no [@odata.nextLink](./paging.md). For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
 >
 > + `$expand` is not currently supported with [advanced queries](/graph/aad-advanced-queries).
 
@@ -901,7 +901,7 @@ However, it is important to note that query parameters specified in a request mi
 [skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
 [top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
-## See also
+## Related content
 
 - [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)
 - [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)

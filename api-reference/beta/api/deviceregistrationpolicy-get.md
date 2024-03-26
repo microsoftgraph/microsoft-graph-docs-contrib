@@ -3,7 +3,7 @@ title: "Get deviceRegistrationPolicy"
 description: "Read the properties and relationships of a deviceRegistrationPolicy object."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 # Get deviceRegistrationPolicy
@@ -43,7 +43,7 @@ GET /policies/deviceRegistrationPolicy
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

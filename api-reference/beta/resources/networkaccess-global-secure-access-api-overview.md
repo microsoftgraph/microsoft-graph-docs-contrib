@@ -3,7 +3,7 @@ title: "Secure access to cloud, public, and private apps using Microsoft Graph n
 description: "Learn how to use Microsoft Graph network access APIs to secure access to cloud, public, and private apps using Microsoft Entra Internet Access and Microsoft Entra Private Access."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -93,10 +93,10 @@ The Global Secure Access services enable you to enrich the [Microsoft 365 audit 
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
-## See also
+## Related content
 
 - [What is Global Secure Access?](/azure/global-secure-access/overview-what-is-global-secure-access)

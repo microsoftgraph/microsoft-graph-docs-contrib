@@ -3,7 +3,7 @@ title: "List attachments"
 description: "Get the list of attachments associated with a service message."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the OData query parameters to help customize the response. 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

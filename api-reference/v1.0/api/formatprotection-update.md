@@ -3,7 +3,7 @@ title: "Update formatprotection"
 description: "Update the properties of formatprotection object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 
@@ -50,7 +50,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and updated [FormatProtection](../resources/formatprotection.md) object in the response body.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -67,7 +67,7 @@ Content-type: application/json
 ```
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

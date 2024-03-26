@@ -3,7 +3,7 @@ author: kevklam
 title: Grant permission
 description: Grant a list of users access to use the specified link
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # permission: grant
@@ -35,7 +35,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

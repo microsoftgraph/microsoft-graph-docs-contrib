@@ -3,7 +3,7 @@ title: "tunnelConfiguration resource type"
 description: "Specifies connectivity settings such as protocol, IPSec policy, and preshared key for a customer premises equipment (CPE) in a branchSite."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

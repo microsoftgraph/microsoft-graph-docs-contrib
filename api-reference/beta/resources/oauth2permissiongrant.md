@@ -3,7 +3,7 @@ title: "oAuth2PermissionGrant resource type"
 description: "Represents the delegated permissions (OAuth 2.0 scopes) which have been granted to an application, often as a result of user or admin consent process."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -72,7 +72,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Grant or revoke delegated permissions using Microsoft Graph](/graph/permissions-grant-via-msgraph?pivots=grant-delegated-permissions)
 

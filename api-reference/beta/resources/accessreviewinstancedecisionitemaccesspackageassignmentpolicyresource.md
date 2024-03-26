@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource re
 description: "Represents an access package assignment policy for which access is represented through an accessReviewInstanceDecisionItem object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

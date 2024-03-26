@@ -3,7 +3,7 @@ title: "teamsAppInstallation resource type"
 description: "Represents a teamsApp installed in a team or the personal scope of a user."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -62,7 +62,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)

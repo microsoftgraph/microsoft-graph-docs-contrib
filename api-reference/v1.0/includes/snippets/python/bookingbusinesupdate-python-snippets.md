@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_business import BookingBusiness
+from msgraph.generated.models.booking_scheduling_policy import BookingSchedulingPolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 

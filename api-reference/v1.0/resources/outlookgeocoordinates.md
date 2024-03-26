@@ -3,7 +3,7 @@ title: "outlookGeoCoordinates resource type"
 description: "The geographic coordinates, elevation, and their degree of accuracy for a physical location."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.managed_device_mobile_app_configuration_assignment import ManagedDeviceMobileAppConfigurationAssignment
+from msgraph.generated.models.all_licensed_users_assignment_target import AllLicensedUsersAssignmentTarget
 
 graph_client = GraphServiceClient(credentials, scopes)
 

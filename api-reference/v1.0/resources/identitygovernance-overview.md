@@ -3,10 +3,9 @@ title: "Overview of Microsoft Entra ID Governance using Microsoft Graph"
 description: "Microsoft Entra ID Governance provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time. Use Microsoft Graph APIs to programmatically manage Microsoft Entra ID Governance features."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 11/15/2023
-ms.custom: zt-include
 ---
 
 # Overview of Microsoft Entra ID Governance using Microsoft Graph
@@ -23,7 +22,7 @@ You manage Microsoft Entra ID Governance capabilities programmatically by using 
 + [Privileged identity management](#manage-access-to-privileged-roles)
 + [Terms of use](#enforce-terms-of-use-for-your-resources)
 
-For more information about Microsoft Entra ID Governance, see [What is Microsoft Entra ID Governance?](#see-also).
+For more information about Microsoft Entra ID Governance, see [What is Microsoft Entra ID Governance?](#related-content).
 
 ## Manage the lifecycle of users in your organization
 
@@ -47,7 +46,7 @@ Access reviews are a form of auditing the effectiveness of the organization's in
 
 ## Manage access to privileged roles
 
-Every organization has employees that require privileged administrative roles to perform their duties. In Microsoft Entra ID, you can grant such privileged assignments through [Microsoft Entra built-in roles](#see-also). Because of the kind of permissions that these roles allow, it's important to mitigate the risks of excessive, unnecessary, or misused privileged roles.
+Every organization has employees that require privileged administrative roles to perform their duties. In Microsoft Entra ID, you can grant such privileged assignments through [Microsoft Entra built-in roles](#related-content). Because of the kind of permissions that these roles allow, it's important to mitigate the risks of excessive, unnecessary, or misused privileged roles.
 
 The [privileged identity management APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) in Microsoft Graph allow you to programmatically manage the lifecycle of privileged Microsoft Entra roles in your tenant.
 
@@ -61,11 +60,11 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
-## See also
+## Related content
 
 + [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview)
 + [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)

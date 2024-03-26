@@ -3,7 +3,7 @@ title: Get printer
 description: "Retrieve the properties and relationships of a printer object."
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -127,11 +127,6 @@ Content-Type: application/json
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "isAcceptingJobs": true,
-  "releaseMechanisms": [
-    {
-      "releaseType": "direct"
-    }
-  ],
   "status": {
     "state": "stopped",
     "details": [

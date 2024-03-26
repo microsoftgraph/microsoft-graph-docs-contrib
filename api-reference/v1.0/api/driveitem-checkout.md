@@ -3,7 +3,7 @@ author: learafa
 description: "Check out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is checked-in."
 title: "driveItem: checkout"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: checkout
@@ -37,7 +37,7 @@ POST /users/{userId}/drive/items/{itemId}/checkout
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -58,7 +58,7 @@ This example checks out a file identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "checkout-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/checkout
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/checkout
 ```
 
 # [C#](#tab/csharp)

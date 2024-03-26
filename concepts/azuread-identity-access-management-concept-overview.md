@@ -1,11 +1,11 @@
 ---
 title: "Microsoft Entra identity and access API overview"
 description: "Use the Microsoft Entra APIs in Microsoft Graph to manage and protect any identity and secure access to any resource on-premises, in hybrid environments, and cloud environments."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: high
-ms.prod: "identity-and-access"
+ms.subservice: "entra-id"
 ms.custom: scenarios:getting-started
 ms.date: 01/17/2024
 #customer intent: As a developer, I want to understand how I can use Microsoft Graph to integrate Microsoft Entra for identity and network access, and build custom apps that access services on-premises, hybrid, and in the cloud.
@@ -85,7 +85,7 @@ Use the **Global Secure Access APIs** for identity-centric configurations to sec
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [identity-zero-trust](../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
@@ -97,7 +97,7 @@ Looking for the API reference for this service?
 - [Microsoft Entra identity and access management API in Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0&preserve-view=true)
 - [Microsoft Entra identity and access management API in Microsoft Graph beta](/graph/api/resources/azure-ad-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Next step
 
-- Find out more about [Microsoft Entra REST APIs and features and the related Microsoft Graph resources](/graph/api/resources/azure-ad-overview).
-- To start building apps using Microsoft Entra APIs, see [authentication and authorization basics](/graph/auth/auth-concepts).
+> [!div class="nextstepaction"]
+> [Microsoft Entra REST APIs and features and the related Microsoft Graph resources](/graph/api/resources/azure-ad-overview)

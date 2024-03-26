@@ -3,7 +3,7 @@ title: "RangeFormat: autofitColumns"
 description: "Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
@@ -46,7 +46,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -57,7 +57,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 ```
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->

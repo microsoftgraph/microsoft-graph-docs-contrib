@@ -3,7 +3,7 @@ title: "List applicationSignInDetailedSummary"
 description: "Retrieve the applicationSignInDetailedSummary objects."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the `$filter` and `$top` OData query parameters to help cus
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

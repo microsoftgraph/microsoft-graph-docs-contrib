@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph security API"
 description: "The Microsoft Graph security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners."
 ms.localizationpriority: high
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -32,7 +32,7 @@ Take immediate action to defend against threats using the [securityAction](secur
 ## Advanced hunting
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
 
-Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kusto Query Language](/azure/data-explorer/kusto/query/) (KQL) query on data stored in Microsoft 365 Defender. Leverage the returned result set to enrich an existing investigation or uncover undetected threats in your network. 
+Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kusto Query Language](/azure/data-explorer/kusto/query/) (KQL) query on data stored in Microsoft 365 Defender. Leverage the returned result set to enrich an existing investigation or uncover undetected threats in your network.
 
 ### Quotas and resource allocation
 
@@ -49,6 +49,17 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 5. A response code of HTTP 429 means you have reached the quota for either the number of API calls or execution time. Refer to the response body to confirm the limit you have reached.
 
 6. The maximum query result size of a single request cannot exceed 124 MB. Exceeding the size limit results in HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again."
+
+## Custom detections
+You can create advanced hunting [Custom detection rules](/microsoft-365/security/defender/custom-detections-overview) specific to your security operations to allow you to proactively monitor for threats and take action. For instance, you can make custom detection rules that look for known indicators or misconfigured devices. These automatically trigger alerts and any response actions that you specify.
+
+### Quotas
+
+1.	[Get multiple rules](../api/security-detectionrule-list.md): 10 rules per minute per application, 300 rules per hour per application, 600 rules per hour per tenant
+2.	[Get a single rule](../api/security-detectionrule-get.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
+3.	[Create rule](../api/security-detectionrule-post-detectionRules.md): 10 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
+4.	[Update rule](../api/security-detectionrule-update.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
+5.  [Delete rule](../api/security-detectionrule-delete.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
 
 ## Alerts
 Alerts are detailed warnings about suspicious activities in a customer's tenant that Microsoft or partner security providers have identified and flagged for action. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
@@ -155,7 +166,7 @@ The [tiIndicator](tiindicator.md) entity allows customers to feed threat indicat
 You can integrate the [tiIndicator](tiindicator.md) entity into your application or use one of the following integrated threat intelligence platforms (TIP):
 
 - [Palo Alto Networks MineMeld Threat Intelligence Sharing](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)
-- [MISP Open Source Threat Intelligence Platform](http://www.misp-project.org/) available through the [TI sample](https://aka.ms/tipmispsample)
+- [MISP Open Source Threat Intelligence Platform](http://www.misp-project.org/) available through the TI sample
 
 Threat indicators sent via the Microsoft Graph security API are available today in the following products:
 
@@ -166,6 +177,12 @@ Threat indicators sent via the Microsoft Graph security API are available today 
 The Microsoft Graph threat submission API helps organizations to submit a threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft checks the submission against the organizational policies in effect and sends it to human graders for analysis. The result then helps tenant administrators understand the threat scanning verdict and adjust their organizational policy. Admins can also use the results to report legitimate emails to prevent them from getting blocked.
 
 > **Note:** We recommend that you use this API instead of the deprecated Information Protection threat assessment API. The threat submission API provides unified security threat submission functionality and adds unified result support, user submission query support, tenant allow block list support, admin review support and app-only mode support.
+
+## Email and collaboration protection (preview)
+
+[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true) is a cloud-based email filtering service that helps protect your organization against advanced threats to email and collaboration tools, like phishing, business email compromise, and malware attacks. You can use the Microsoft Graph **analyzedemails** and **remediate** APIs to retrieve email metadata and perform response actions (soft delete, hard delete, move to junk, move to Inbox) on analyzed messages.
+
+> **Note:** These APIs are only availbe for Defender for Office 365 Plan 2 or Microsoft 365 A5/E5/F5/G5 Security service plans. For the most up-to-date list of service plans, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 ## Common use cases
 
@@ -222,6 +239,11 @@ The following are some of the most popular requests for working with the Microso
 |Create email threat submission policy|[Create emailThreatSubmissionPolicy](../api/security-emailthreatsubmission-post-emailthreats.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies](https://developer.microsoft.com/graph/graph-explorer?request=/security/threatSubmission/emailThreats&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Update email threat submission policy|[Update emailThreatSubmissionPolicy](../api/security-emailthreatsubmission-post-emailthreats.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/security/threatSubmission/emailThreatSubmissionPolicies/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Delete email threat submission policy|[Delete emailThreatSubmissionPolicy](../api/security-emailthreatsubmissionpolicy-delete.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/emailThreatSubmissionPolicies/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Delete email threat submission policy|[Delete emailThreatSubmissionPolicy](../api/security-emailthreatsubmissionpolicy-delete.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/emailThreatSubmissionPolicies/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Email analysis and remediation**|||
+|Query email metadata|[LIST analyzedemails](../api/security-collaborationroot-list-analyzedemails.md)|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails?startTime={startTime}&endTime={endTime}](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails?startTime={startTime}&endTime={endTime}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Get details of a single message instance|[GET analyzedemails/Id](../api/security-analyzedemail-get.md)|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails/{Id}](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails/Id&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Remediate analyzed email|[analyzedEmai: remediate](../api/security-analyzedemail-remediate.md )|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails/remediate](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails/remediate&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 
 You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
 
@@ -233,20 +255,16 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
 - Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
 
-## See also
+## Related content
 
-[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph security API samples:
+[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to this Microsoft Graph security API sample:
 
-- [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
-- [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
-- [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
-- [PowerShell sample](https://aka.ms/graphsecuritypowershellsample)
-- [Other samples or contribute a new sample](https://aka.ms/graphsecurityapicode)
+- [PowerShell sample](/powershell/scripting/developer/prog-guide/windows-powershell-sample-code)
 
 Explore other options to connect with the Microsoft Graph security API:
 
 - [Microsoft Graph security connectors for Logic Apps, Flow and Power Apps](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
-- [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
+- [Jupyter notebook samples](/azure/machine-learning/samples-notebooks)
 
 Engage with the community:
 

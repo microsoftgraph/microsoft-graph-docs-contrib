@@ -2,7 +2,7 @@
 title: "Get a DriveItemVersion resource"
 description: "Retrieve the metadata for a specific version of a DriveItem."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
@@ -39,7 +39,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

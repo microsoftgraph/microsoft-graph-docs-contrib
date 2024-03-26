@@ -3,7 +3,7 @@ title: "Create cloudPcDeviceImage"
 description: "Upload a custom OS image that you can later provision on Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 | Name          | Description                |
 | :------------ | :------------------------  |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.|
 
 ## Request body

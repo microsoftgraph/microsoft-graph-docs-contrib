@@ -4,7 +4,7 @@ description: "Remove a member from a directoryRole."
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ DELETE /directoryRoles(roleTemplateId='{roleTemplateId}')/members/{id}/$ref
 
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

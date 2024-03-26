@@ -3,7 +3,7 @@ title: "Update authenticationEventListener"
 description: "Update the properties of an authenticationEventListener object."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ PATCH /identity/authenticationEventListeners/{authenticationEventListenerId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request to update an authentication event listener's trigger conditions or priority:
+The following example shows a request to update an authentication event listener's trigger conditions or priority:
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

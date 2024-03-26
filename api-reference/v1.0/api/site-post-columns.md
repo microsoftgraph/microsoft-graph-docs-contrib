@@ -4,7 +4,7 @@ title: "Create a columnDefinition in a site"
 description: "Create a site column."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Create a columnDefinition in a site
@@ -36,7 +36,7 @@ POST /sites/{site-id}/columns
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

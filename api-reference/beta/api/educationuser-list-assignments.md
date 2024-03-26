@@ -3,7 +3,7 @@ title: "List assignments of a user"
 description: "Returns a list of assignments assigned to a user for all classes."
 ms.localizationpriority: medium
 author: "Sureshpadimi88"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ All [properties](../resources/educationassignment.md#properties) are supported f
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

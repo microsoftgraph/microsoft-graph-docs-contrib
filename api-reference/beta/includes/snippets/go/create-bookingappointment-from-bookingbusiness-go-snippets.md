@@ -88,6 +88,8 @@ invoiceId := "1001"
 requestBody.SetInvoiceId(&invoiceId) 
 invoiceStatus := graphmodels.OPEN_BOOKINGINVOICESTATUS 
 requestBody.SetInvoiceStatus(&invoiceStatus) 
+isCustomerAllowedToManageBooking := true
+requestBody.SetIsCustomerAllowedToManageBooking(&isCustomerAllowedToManageBooking) 
 invoiceUrl := "theInvoiceUrl"
 requestBody.SetInvoiceUrl(&invoiceUrl) 
 isLocationOnline := true
@@ -298,7 +300,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-appointments, err := graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Appointments().Post(context.Background(), requestBody, nil)
+appointments, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Appointments().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -3,7 +3,7 @@ title: "Delete deletedItemContainer (permanently delete a deleted lifecycle work
 description: "Permanently delete a deleted lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

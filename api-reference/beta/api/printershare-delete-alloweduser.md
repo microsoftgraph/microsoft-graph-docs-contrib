@@ -3,7 +3,7 @@ title: Delete allowedUser from printerShare
 description: Revoke the specified user's access to submit print jobs to the associated printer share.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ DELETE /print/printerShares/{id}/allowedUsers/{id}/$ref
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

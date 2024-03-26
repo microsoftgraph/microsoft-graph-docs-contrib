@@ -3,7 +3,7 @@ title: "externalMeetingRegistration resource type"
 description: "Represents external registration details of an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 # externalMeetingRegistration resource type

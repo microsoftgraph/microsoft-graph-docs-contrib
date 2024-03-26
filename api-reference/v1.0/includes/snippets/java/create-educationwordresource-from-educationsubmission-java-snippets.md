@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationSubmissionResource educationSubmissionResource = new EducationSubmissionResource();
 EducationWordResource resource = new EducationWordResource();
-resource.displayName = "Report.docx";
-resource.fileUrl = "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2";
-educationSubmissionResource.resource = resource;
+resource.setOdataType("microsoft.graph.educationWordResource");
+resource.setDisplayName("Report.docx");
+resource.setFileUrl("https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2");
+educationSubmissionResource.setResource(resource);
+EducationSubmissionResource result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignments().byEducationAssignmentId("{educationAssignment-id}").submissions().byEducationSubmissionId("{educationSubmission-id}").resources().post(educationSubmissionResource);
 
-graphClient.education().classes("f4a941ff-9da6-4707-ba5b-0eae93cad0b4").assignments("3c77de7f-539b-49e1-9c96-1274f2f0ee3b").submissions("4af73d2b-6b9c-493f-0688-979087bed39b").resources()
-	.buildRequest()
-	.post(educationSubmissionResource);
 
 ```

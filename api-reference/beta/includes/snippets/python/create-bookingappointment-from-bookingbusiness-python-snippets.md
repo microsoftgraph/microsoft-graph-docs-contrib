@@ -4,7 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_appointment import BookingAppointment
+from msgraph.generated.models.location import Location
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph.generated.models.booking_reminder import BookingReminder
+from msgraph.generated.models.booking_customer_information_base import BookingCustomerInformationBase
+from msgraph.generated.models.booking_customer_information import BookingCustomerInformation
+from msgraph.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
+from msgraph.generated.models.booking_question_answer import BookingQuestionAnswer
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -56,6 +65,7 @@ request_body = BookingAppointment(
 	),
 	invoice_id = "1001",
 	invoice_status = BookingInvoiceStatus.Open,
+	is_customer_allowed_to_manage_booking = True,
 	invoice_url = "theInvoiceUrl",
 	is_location_online = True,
 	opt_out_of_customer_email = False,
@@ -187,7 +197,7 @@ request_body = BookingAppointment(
 	}
 )
 
-result = await graph_client.booking_businesses.by_booking_business_id('bookingBusiness-id').appointments.post(request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').appointments.post(request_body)
 
 
 ```

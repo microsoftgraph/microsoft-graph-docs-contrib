@@ -2,7 +2,7 @@
 title: "Restore a previous version of a ListItem"
 description: "Restore a previous version of a ListItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the item."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
@@ -35,7 +35,7 @@ POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/rest
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ### Request body
 
@@ -50,7 +50,7 @@ This example restores a version of a listItem identified by `{item-id}` and `{ve
 <!-- { "blockType": "request", "name": "restore-item-version-listItem", "scopes": "files.readwrite sites.readwrite.all", "target": "action", "tags": "service.graph service.sharepoint" } -->
 
 ```http
-POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
 # [C#](#tab/csharp)

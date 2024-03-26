@@ -3,7 +3,7 @@ title: "Delete externalItem"
 description: "Delete an externalItem."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 
@@ -43,7 +43,7 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -57,7 +57,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 
@@ -110,7 +110,7 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP
 ### Response
 <!-- markdownlint-enable MD024 -->
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

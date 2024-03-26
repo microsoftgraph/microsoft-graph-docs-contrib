@@ -3,7 +3,7 @@ title: "Update plannerBucketTaskBoardTaskFormat"
 description: "Update the properties of a plannerBucketTaskBoardTaskFormat object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ PATCH /planner/tasks/{id}/bucketTaskBoardFormat
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 | If-Match  | Last known ETag value for the **plannerBucketTaskBoardTaskFormat** to be updated. Required.|
 
@@ -52,7 +52,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

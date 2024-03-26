@@ -3,7 +3,7 @@ title: schedulingGroup resource type
 description: A logical grouping of members in the schedule (usually by role).
 author: shanemalone
 ms.localizationpriority: high
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 
 | Property             | Type                          | Description            |
 | -------------------- | ----------------------------- | ---------------------- |
-| code          | `string`                      | The code for the `schedulingGroup` to represent an external identifier. |
+| code          | `string`                      | The code for the `schedulingGroup` to represent an external identifier. This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters. |
 | createdDateTime      | `DateTimeOffset`              | The time stamp in which this `schedulingGroup` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |                 |
 | displayName          | `string`                      | The display name for the `schedulingGroup`. Required.      |
 | id                   | `string`                      | ID of the `schedulingGroup`.  

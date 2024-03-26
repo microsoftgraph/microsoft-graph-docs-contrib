@@ -3,7 +3,7 @@ title: "Get virtualEventSession"
 description: "Read the properties and relationships of a virtual event session."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ This method doesn't support the OData query parameters. For general information,
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

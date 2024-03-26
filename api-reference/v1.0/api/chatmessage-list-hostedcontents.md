@@ -3,7 +3,7 @@ title: "List hostedContents"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
 ms.localizationpriority: medium
 author: "RamjotSingh"
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: "apiPageType"
 ---
 
@@ -23,7 +23,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All |
 
 ### Permissions for chat
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
@@ -33,7 +33,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| Chat.Read.All, Chat.ReadWrite.All|
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:** The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** `contentBytes` and `contentType` are always set to null.
 
@@ -160,7 +160,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -209,7 +209,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** `contentBytes` and `contentType` are always set to null.
 
@@ -245,7 +245,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -294,7 +294,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** `contentBytes` and `contentType` are always set to null.
 

@@ -12,12 +12,9 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new AdministrativeUnit();
 $requestBody->setDisplayName('Seattle District Technical Schools');
 $requestBody->setDescription('Seattle district technical schools administration');
-$additionalData = [
-	'membershipType' => 'Dynamic',
-	'membershipRule' => '(user.country -eq \"United States\")',
-	'membershipRuleProcessingState' => 'On',
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setMembershipType('Dynamic');
+$requestBody->setMembershipRule('(user.country -eq \"United States\")');
+$requestBody->setMembershipRuleProcessingState('On');
 
 $result = $graphServiceClient->administrativeUnits()->post($requestBody)->wait();
 

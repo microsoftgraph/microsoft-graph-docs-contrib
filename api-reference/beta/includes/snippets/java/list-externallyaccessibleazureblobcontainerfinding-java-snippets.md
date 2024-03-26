@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ExternallyAccessibleAzureBlobContainerFindingCollectionPage externallyAccessibleAzureBlobContainerFinding = graphClient.identityGovernance().permissionsAnalytics().azure().findings().microsoft.graph.externallyAccessibleAzureBlobContainerFinding()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Finding result = graphClient.identityGovernance().permissionsAnalytics().azure().findings().byFindingId("{finding-id}").get();
+
 
 ```

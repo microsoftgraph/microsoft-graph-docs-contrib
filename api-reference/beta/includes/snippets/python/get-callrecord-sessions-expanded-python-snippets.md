@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.communications.callRecords.item.sessions.sessions_request_builder import SessionsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

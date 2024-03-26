@@ -3,7 +3,7 @@ title: "Get learningCourseActivity"
 description: "Get the specified learningCourseActivity object using either an ID or an externalCourseActivityId of the learning provider, or a courseActivityId of a user."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: apiPageType
 ---
 
@@ -67,7 +67,7 @@ This method supports the `$select` and other OData query parameters to customize
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -206,7 +206,7 @@ GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/01e8f8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-learning-courseactivity-details-externalid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

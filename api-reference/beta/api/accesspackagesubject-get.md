@@ -3,7 +3,7 @@ title: "Get accessPackageSubject"
 description: "Gets the properties of an accessPackageSubject object."
 author: "aakanshanagwani"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ GET /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -73,8 +73,16 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/su
 [!INCLUDE [sample-code](../includes/snippets/go/get-accesspackagesubject-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackagesubject-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-accesspackagesubject-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accesspackagesubject-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -85,7 +93,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/su
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -106,8 +114,8 @@ Content-type: application/json
     "objectId": "a382de66-b7bb-4c30-82b7-306c6ae6a4ae",
     "altSecId": null,
     "displayName": "Accessibility Test",
-    "principalName": "accessibility@contosodeb.onmicrosoft.com",
-    "email": "accessibility@contosodeb.onmicrosoft.com",
+    "principalName": "accessibility@contoso.com",
+    "email": "accessibility@contoso.com",
     "onPremisesSecurityIdentifier": null,
     "type": "User",
     "subjectLifecycle": "governed"

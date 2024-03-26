@@ -3,7 +3,7 @@ title: "Delete term"
 description: "Delete a term object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: "Sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ DELETE /termStore/sets/{setId}/terms/{termId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -24,6 +24,6 @@ $requestBody->setEmail('manager@fourthcoffee.com');
 $requestBody->setWebSiteUrl('https://www.fourthcoffee.com');
 $requestBody->setDefaultCurrencyIso('USD');
 
-$result = $graphServiceClient->bookingBusinesses()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->post($requestBody)->wait();
 
 ```

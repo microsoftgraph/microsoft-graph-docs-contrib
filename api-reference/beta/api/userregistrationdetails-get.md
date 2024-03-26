@@ -3,7 +3,7 @@ title: "Get userRegistrationDetails"
 description: "Read the properties and relationships of a userRegistrationDetails object."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ This method does not support the OData query parameters to help customize the re
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

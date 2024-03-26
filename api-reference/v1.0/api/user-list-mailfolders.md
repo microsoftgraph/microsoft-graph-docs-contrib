@@ -4,7 +4,7 @@ description: Get the mail folder collection under the root folder of the signed-
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 <!-- markdownlint-disable MD001 MD022 MD024 MD025 MD051-->
@@ -52,7 +52,7 @@ This method supports [OData query parameters](/graph/query-parameters) to help c
 
 | Header        | Value                     |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

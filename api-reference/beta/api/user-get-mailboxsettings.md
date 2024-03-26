@@ -3,7 +3,7 @@ title: "Get user mailbox settings"
 description: "Get the user's mailboxSettings. This includes settings for automatic replies (notify people automatically upon "
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -110,7 +110,7 @@ Get all the mailbox settings of the signed-in user's mailbox that include settin
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -217,7 +217,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -241,7 +241,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -296,7 +296,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3"
@@ -357,7 +357,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -381,7 +381,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-4-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -433,8 +433,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: get_mailboxsettings_4:
-      Unable to locate a definition for resource type: microsoft.graph.userPurpose",
     "Error: getmailboxsettings4:
       Unable to locate a definition for resource type: microsoft.graph.userPurpose"
   ]

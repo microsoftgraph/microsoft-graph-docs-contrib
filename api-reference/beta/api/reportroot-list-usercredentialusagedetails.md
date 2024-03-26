@@ -3,7 +3,7 @@ title: "List userCredentialUsageDetails"
 description: "Get a list of userCredentialUsageDetails objects for a given tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "apiPageType"
 ---
 
@@ -52,7 +52,7 @@ This function supports the optional OData query parameter **$filter**. You can a
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body

@@ -3,7 +3,7 @@ title: "licenseDetails: getTeamsLicensingDetails"
 description: "Get the license status of a user in Microsoft Teams."
 author: "mea"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ GET /users/{user-id}/licenseDetails/getTeamsLicensingDetails
 
 | Header           | Value                      |
 | :--------------- | :------------------------- |
-| Authorization    | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -110,11 +110,11 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.teamsLicensingDetails",
-    "hasTeamsLicense": true,
+    "hasTeamsLicense": true
 }
 ```
 
-## See also
+## Related content
 
 - [Get userTeamwork](userteamwork-get.md)
 - [Get teamwork](teamwork-get.md)

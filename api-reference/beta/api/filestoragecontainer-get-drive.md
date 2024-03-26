@@ -3,7 +3,7 @@ title: "Get drive for fileStorageContainer"
 description: "Get the properties of a drive associated with a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ GET /drives/{driveId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 
 ## Response

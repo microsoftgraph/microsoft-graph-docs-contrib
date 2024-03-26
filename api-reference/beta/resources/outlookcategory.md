@@ -3,7 +3,7 @@ title: "outlookCategory resource type"
 description: "Represents a category by which a user can group Outlook items such as messages and events."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

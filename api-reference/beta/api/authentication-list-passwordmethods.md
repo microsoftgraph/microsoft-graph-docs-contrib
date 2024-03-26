@@ -3,7 +3,7 @@ title: "List passwordMethods"
 description: "Retrieve a list of passwordauthenticationmethod objects."
 ms.localizationpriority: medium
 author: "zhvolosh"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -63,7 +63,7 @@ This method doesn't support optional query parameters to customize the response.
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

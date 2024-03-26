@@ -59,6 +59,7 @@ $invoiceDate->setTimeZone('UTC');
 $requestBody->setInvoiceDate($invoiceDate);
 $requestBody->setInvoiceId('1001');
 $requestBody->setInvoiceStatus(new BookingInvoiceStatus('open'));
+$requestBody->setIsCustomerAllowedToManageBooking(true);
 $requestBody->setInvoiceUrl('theInvoiceUrl');
 $requestBody->setIsLocationOnline(true);
 $requestBody->setOptOutOfCustomerEmail(false);
@@ -193,6 +194,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->appointments()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->appointments()->post($requestBody)->wait();
 
 ```

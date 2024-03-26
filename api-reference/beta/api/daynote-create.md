@@ -3,7 +3,7 @@ title: "Create dayNote"
 description: "Create a day note in the schedule."
 author: fmcgurrenw
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /teams/{teamsId}/schedule/dayNotes
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

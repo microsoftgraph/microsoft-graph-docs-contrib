@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.deviceManagement.virtualEndpoint.externalPartnerSettings.external_partner_settings_request_builder import ExternalPartnerSettingsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

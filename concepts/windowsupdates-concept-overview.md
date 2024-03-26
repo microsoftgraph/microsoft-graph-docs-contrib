@@ -3,7 +3,7 @@ title: "Windows updates API overview"
 description: "The Windows Update for Business deployment service gives control to your organization over the updates offered to your devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: conceptualPageType
 ---
 
@@ -33,11 +33,11 @@ Additionally, devices managed by the deployment service must:
 * Have installed Windows 10 version 1709 or later
 * Be Microsoft Entra joined or Hybrid AD joined
 * Have one of the following Windows 10 or Windows 11 editions installed:
-    Pro
-    Enterprise
-    Education
-    Pro Education
-    Pro for Workstations
+    * Pro
+    * Enterprise
+    * Education
+    * Pro Education
+    * Pro for Workstations
 
 ## Feature updates
 

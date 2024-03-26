@@ -2,7 +2,7 @@
 title: "driveItem: preview"
 description: "This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
@@ -45,7 +45,7 @@ POST /shares/{shareId}/driveItem/preview
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -3,7 +3,7 @@ title: "Delete deviceLink (deprecated)"
 description: "Removes the link between the branch or remote network and the CPE device, effectively removing the connection and associated configuration between them."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ DELETE /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLi
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

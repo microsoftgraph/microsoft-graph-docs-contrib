@@ -3,7 +3,7 @@ title: "Deployments in the Windows Update for Business deployment service"
 description: "Use the Windows Update for Business deployment service to create deployments, configure settings, and set lifecycle state. Assign a device to multiple deployments."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: conceptualPageType
 ---
 

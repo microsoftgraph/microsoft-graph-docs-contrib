@@ -3,7 +3,7 @@ title: "channelSharingUpdatedEventMessageDetail resource type"
 description: "Represents the details of an event message about a shared channel."
 author: "AgnesLiu"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -49,6 +49,6 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 - [Response example for an event message about a shared channel](/graph/system-messages/#channel-shared)
 - [System messages](/graph/system-messages)

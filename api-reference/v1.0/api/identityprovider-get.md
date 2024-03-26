@@ -3,7 +3,7 @@ title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider"
 ms.localizationpriority: high
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ GET /identityProviders/{id}
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

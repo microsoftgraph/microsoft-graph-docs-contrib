@@ -3,7 +3,7 @@ title: "Update term"
 description: "Update the properties of a term object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ PATCH /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

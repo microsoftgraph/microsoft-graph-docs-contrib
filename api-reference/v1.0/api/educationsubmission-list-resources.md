@@ -3,7 +3,7 @@ title: "List submission resources"
 description: "List the resources associated with a submission."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData quer
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "Get teamworkTag"
 description: "Read the properties and relationships of a teamworkTag object."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ This method does not support OData query parameters to help customize the respon
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkTag](
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

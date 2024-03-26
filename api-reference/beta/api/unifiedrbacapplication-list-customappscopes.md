@@ -3,7 +3,7 @@ title: "List customAppScopes"
 description: "Get a list of customAppScope objects for an RBAC provider."
 ms.localizationpriority: medium
 author: "cubika"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -44,7 +44,7 @@ This method supports the `$filter` and `$count` [OData query parameters](/graph/
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

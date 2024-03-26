@@ -3,7 +3,7 @@ title: "Delete userFlowLanguagePage"
 description: "Deletes the values in a userFlowLanguagePage object."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ DELETE /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/$value
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -71,10 +71,6 @@ Here's an example  of the request.
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/languages/en/overridesPages/phonefactor/$value
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-userflowlanguagepage-beta-e1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-userflowlanguagepage-beta-e1-javascript-snippets.md)]

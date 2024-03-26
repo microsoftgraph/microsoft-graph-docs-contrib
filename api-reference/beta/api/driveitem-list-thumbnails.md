@@ -1,26 +1,25 @@
 ---
 author: spgraph-docs-team
-description: "Retrieve a collection of ThumbnailSet resources for a DriveItem resource."
+description: "Retrieve a collection of thumbnailSet resources for a driveItem resource."
 ms.date: 09/10/2017
-title: Retrieve thumbnails for a file or folder
+title: List thumbnails for a driveItem
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# List thumbnails for a DriveItem
+# List thumbnails for a driveItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
-Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
+Retrieve a collection of [thumbnailSet](../resources/thumbnailset.md) resources for a [driveItem](../resources/driveitem.md) resource.
 
-A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.
+Zero or more [thumbnailSet](../resources/thumbnailset.md) resources can represent a driveItem.
 Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item.
 For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.
 
-There are many ways to work with thumbnails on OneDrive.
+There're many ways to work with thumbnails on OneDrive.
 Here are the most common ones:
 
 * Enumerate available thumbnails for an item
@@ -58,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
 Additionally, this method supports retrieving the thumbnail with the original orientation EXIF value and without the applied rotation by appending the `originalOrientation=true` query parameter.
-This is currently only supported on OneDrive Personal.
+It is currently only supported on OneDrive Personal.
 
 ## Response
 
@@ -66,7 +65,7 @@ If successful, this method returns a `200 OK` response code and collection of [T
 
 ## Example
 
-Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.
+The following example shows a request that retrieves available thumbnails for an item in the current user's OneDrive.
 
 
 # [HTTP](#tab/http)
@@ -110,7 +109,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 ---
 
-This returns an array of available **thumbnailSets** for the item.
+It returns an array of available **thumbnailSets** for the item.
 Any item in a drive can have zero or more thumbnails.
 
 **Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.
@@ -119,6 +118,7 @@ For example, `/thumbnails?select=medium` retrieves only the medium sized thumbna
 
 ### Response
 
+The following example shows the response.
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
 ```http
@@ -164,7 +164,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-one-thumbnail-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -190,8 +190,8 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 | Name         | Type   | Description                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | The unique identifier for the item referenced.                                           |
-| **thumb-id** | number | The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0. |
-| **size**     | string | The size of the thumbnail requested. This can be one of the standard sizes listed below or a custom size. |
+| **thumb-id** | number | The index of the thumbnail, usually 0-4. If there's a custom thumbnail, its index is 0. |
+| **size**     | string | The size of the thumbnail requested. It can be one of the standard sizes listed below or a custom size. |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -233,7 +233,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-thumbnail-content-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -265,13 +265,12 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-Thumbnail URLs are cache-safe. The URL will change, if the item changes in a way that requires a new thumbnail to be generated.
+Thumbnail URLs are cache-safe. The URL changes, if the item changes in a way that requires a new thumbnail to be generated.
 
+## Getting thumbnails while listing driveItems
 
-## Getting thumbnails while listing DriveItems
-
-If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.
-This enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.
+If you're retrieving a list of driveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.
+It enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.
 
 ### HTTP request
 
@@ -443,25 +442,25 @@ You can specify the following options after the size of the thumbnail requested:
 | Thumbnail identifier | Resolution             | Aspect ratio | Description                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | c300x400             | Bounded by 300x400 box | Original     | Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio                                                                 |
-| c300x400_crop        | 300x400                | Cropped      | Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box. |
+| c300x400_crop        | 300x400                | Cropped      | Generate a thumbnail that is 300x400 pixels. It works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box. |
 
-**Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.
+**Note:** The thumbnail returned may not exactly match the pixel dimensions that were requested, but does match the aspect ratio.
 In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.
 
 ## Remarks
 
 **Note** In OneDrive for Business and SharePoint:
 
-Using these calls to expand the thumbnails collection will not work:
+Using these calls to expand the thumbnails collection doesn't work:
 
 * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
 * `GET /drive/items/{item-id}/children?expand=thumbnails`
 
-Thumbnails are not supported on SharePoint Server 2016.
+Thumbnails aren't supported on SharePoint Server 2016.
 
 ### Error responses
 
-See [Error Responses][error-response] for more info about
+See [Error responses][error-response] for more info about
 how errors are returned.
 
 [error-response]: /graph/errors
