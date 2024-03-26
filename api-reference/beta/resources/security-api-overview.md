@@ -250,7 +250,7 @@ The following are some of the most popular requests for working with the Microso
 |Get details of a single message instance|[GET analyzedemails/Id](../api/security-analyzedemail-get.md)|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails/{Id}](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails/Id&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Remediate analyzed email|[analyzedEmai: remediate](../api/security-analyzedemail-remediate.md )|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails/remediate](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails/remediate&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Identites**|||
-| List health issues | [List health issues](../api/security-identityContainer-healthIssues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| List health issues | [List health issues](../api/security-identityContainer-list-healthIssues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 
 
 You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
