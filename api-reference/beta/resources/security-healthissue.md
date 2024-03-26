@@ -49,7 +49,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | low | Low severity health issues usually indicate minor issues that don't have a significant impact on your environment. These issues require further investigation, but they usually don't require immediate action. |
 | medium | Medium severity health issues indicate more significant issues that could potentially impact your environment. These issues may require further investigation and action to prevent any potential problems. |
 | high | High severity health issues indicate critical issues that could have a severe impact on your environment. These issues require immediate attention and action. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 #### healthIssueStatus values
 
@@ -58,7 +58,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | open | The issue is open and should be addressed. |
 | closed | The issue was addressed. Either someone manually closed the issue or took an action on the affected item, or it was closed automatically by the system. |
 | suppressed | The operator suppressed the issue manually. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 #### healthIssueType values
 
@@ -66,7 +66,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
 | Sensor | The issue is on specific sensor. |
 | Global | The issue is in the Defender for identity system configuration. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.

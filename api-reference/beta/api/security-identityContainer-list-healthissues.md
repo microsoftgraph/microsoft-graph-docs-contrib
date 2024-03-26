@@ -41,7 +41,7 @@ This method supports OData query parameters to help customize the response, for 
 
 The following are examples of their use:
 
-See all open health alerts
+See all open health alerts.
 <!-- {
   "blockType": "ignored"
 }
@@ -50,7 +50,7 @@ See all open health alerts
 GET /security/identities/healthIssues?$filter=Status eq 'open'
 ```
 
-See top 5 open health alerts
+See top five open health alerts.
 <!-- {
   "blockType": "ignored"
 }
@@ -59,7 +59,7 @@ See top 5 open health alerts
 GET /security/identities/healthIssues?$filter=Status eq 'open'&$top=5
 ```
 
-See open health alerts based on issue type
+See open health alerts based on issue type.
 <!-- {
   "blockType": "ignored"
 }
@@ -69,7 +69,7 @@ GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=healthIss
 GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=healthIssueType eq 'sensor'
 ```
 
-See open health alerts based on severity
+See open health alerts based on severity.
 <!-- {
   "blockType": "ignored"
 }
