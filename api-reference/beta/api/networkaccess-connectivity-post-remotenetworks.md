@@ -51,7 +51,7 @@ You can specify the following properties when creating a **remote network**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Name of the remote network.  Required.|
+|name|String|Name of the remote network. Required.|
 |region|String|Specify the region closest to the remote network location. Required.|
 
 
@@ -59,10 +59,10 @@ You can specify the following properties when creating a **remote network**.
 
 If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.remoteNetwork](../resources/networkaccess-remotenetwork.md) object in the response body.
 
-## Example 1 : Create a remote network with just name and region
+## Example 1: Create a remote network with just name and region
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-## Example 2 : Create a remote network with forwarding profile
+## Example 2: Create a remote network with forwarding profile
 To get the ID of forwarding profiles of your organization, refer to this article - [List forwardingProfiles](networkaccess-networkaccessroot-list-forwardingprofiles.md).
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_remoteNetwork_with_forwardingProfile"
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-## Example 3 : Create a remote network with device link and forwarding profile
+## Example 3: Create a remote network with device link and forwarding profile
 To get the ID of forwarding profiles of your organization, refer to this article - [List forwardingProfiles](networkaccess-networkaccessroot-list-forwardingprofiles.md).
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_remoteNetwork_with_forwardingProfile_deviceLink"
