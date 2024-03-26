@@ -37,7 +37,59 @@ GET /security/identities/healthIssues
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports OData query parameters to help customize the response, for example: `$count`, `$filter`, `$skip`, `$top`.
+
+The following are examples of their use:
+
+See all open health alerts
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/identities/healthIssues?$filter=Status eq 'open'
+```
+
+See top 5 open health alerts
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/identities/healthIssues?$filter=Status eq 'open'&$top=5
+```
+
+See open health alerts based on issue type
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=healthIssueType eq 'global'
+GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=healthIssueType eq 'sensor'
+```
+
+See open health alerts based on severity
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=severity eq 'medium'
+GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=severity eq 'low'
+```
+
+See open global health alerts that domain name \ sensor DNS name ends with spesific value (name=contoso.com)
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /security/identities/healthissues?$filter=Status eq 'open'&$filter=healthIssueType eq 'global'&$filter=domainNames/any(s:endswith(s,'contoso.com'))
+GET /security/identities/healthissues?$filter=Status eq 'open'&$filter=healthIssueType eq 'global'&$filter=sensorDNSNames/any(s:endswith(s,'contoso.com'))
+```
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

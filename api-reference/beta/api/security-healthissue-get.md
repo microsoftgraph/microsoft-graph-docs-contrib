@@ -35,9 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /security/identities/healthIssues/{healthIssueId}
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
