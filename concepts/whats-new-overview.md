@@ -72,7 +72,7 @@ Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/fede
 
 Added the ability to list emails analyzed by Microsoft Defender for Office 365, get email related metadata, and perform response actions (soft delete, hard delete, move to junk, move to Inbox). 
 
-### Security | Identities
+### Security | Identities | Health Issues
 
 Added the ability to get, get list, update Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue?view=graph-rest-beta&preserve-view=true).
 
