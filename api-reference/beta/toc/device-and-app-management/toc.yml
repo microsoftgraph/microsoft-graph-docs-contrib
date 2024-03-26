@@ -198,7 +198,7 @@ items:
     - name: Cloud PC gallery image
       href: ../../resources/cloudpcgalleryimage.md
     - name: List galleryImages
-      href: ../../api/virtualendpoint-list-deviceimages.md
+      href: ../../api/virtualendpoint-list-galleryimages.md
     - name: Get cloudPcGalleryImage
       href: ../../api/cloudpcgalleryimage-get.md
   - name: Cloud PC on-premises connection
@@ -215,7 +215,7 @@ items:
       href: ../../api/cloudpconpremisesconnection-update.md
     - name: Delete cloudPcOnPremisesConnection
       href: ../../api/cloudpconpremisesconnection-delete.md
-    - name: RunHealthChecks of cloudPcOnPremisesConnection
+    - name: RunHealthChecks of a cloudPcOnPremisesConnection
       href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
     - name: updateAdDomainPassword
       href: ../../api/cloudpconpremisesconnection-updateaddomainpassword.md
@@ -8289,6 +8289,16 @@ items:
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
     - name: Delete operationalInsightsConnection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
+  - name: Product
+    items:
+    - name: Product
+      href: ../../resources/windowsupdates-product.md
+    - name: Get known issues by time range
+      href: ../../api/windowsupdates-product-getknownissuesbytimerange.md
+    - name: Find by catalog ID
+      href: ../../api/windowsupdates-product-findbycatalogid.md
+    - name: Find by knowledge base number
+      href: ../../api/windowsupdates-product-findbykbnumber.md
   - name: Resource connection
     items:
     - name: Resource connection
@@ -8411,14 +8421,22 @@ items:
       href: ../../resources/windowsupdates-driverupdatefilter.md
     - name: Duration driven rollout settings
       href: ../../resources/windowsupdates-durationdrivenrolloutsettings.md
+    - name: Edition
+      href: ../../resources/windowsupdates-edition.md
     - name: Expedite settings
       href: ../../resources/windowsupdates-expeditesettings.md
     - name: Feature update catalog entry
       href: ../../resources/windowsupdates-featureupdatecatalogentry.md
     - name: Gradual rollout settings
       href: ../../resources/windowsupdates-gradualrolloutsettings.md
+    - name: Item body
+      href: ../../resources/windowsupdates-itembody.md
     - name: Knowledge base article
       href: ../../resources/windowsupdates-knowledgebasearticle.md
+    - name: Known issue
+      href: ../../resources/windowsupdates-knownissue.md
+    - name: Known issue history item
+      href: ../../resources/windowsupdates-knownissuehistoryitem.md
     - name: Microsoft Entra device registration error
       href: ../../resources/windowsupdates-azureaddeviceregistrationerror.md
     - name: Monitoring rule
@@ -8439,6 +8457,8 @@ items:
       href: ../../resources/windowsupdates-safeguardsettings.md
     - name: Schedule settings
       href: ../../resources/windowsupdates-schedulesettings.md
+    - name: Servicing period
+      href: ../../resources/windowsupdates-servicingperiod.md
     - name: Software update catalog entry
       href: ../../resources/windowsupdates-softwareupdatecatalogentry.md
     - name: Software update filter
