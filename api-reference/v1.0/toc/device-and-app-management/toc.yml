@@ -889,9 +889,9 @@ items:
         href: ../../api/intune-apps-windowsmobilemsi-delete.md
       - name: Update windowsMobileMSI
         href: ../../api/intune-apps-windowsmobilemsi-update.md
-    - name: Windows universal app x
+    - name: Windows Universal AppX
       items:
-      - name: Windows universal app x
+      - name: Windows Universal AppX
         href: ../../resources/intune-apps-windowsuniversalappx.md
       - name: List windowsUniversalAppXs
         href: ../../api/intune-apps-windowsuniversalappx-list.md
@@ -903,9 +903,9 @@ items:
         href: ../../api/intune-apps-windowsuniversalappx-delete.md
       - name: Update windowsUniversalAppX
         href: ../../api/intune-apps-windowsuniversalappx-update.md
-    - name: Windows universal app x contained app
+    - name: Windows Universal AppX contained app
       items:
-      - name: Windows universal app x contained app
+      - name: Windows Universal AppX contained app
         href: ../../resources/intune-apps-windowsuniversalappxcontainedapp.md
       - name: List windowsUniversalAppXContainedApps
         href: ../../api/intune-apps-windowsuniversalappxcontainedapp-list.md
@@ -1013,7 +1013,7 @@ items:
         href: ../../resources/intune-apps-windowsappxappassignmentsettings.md
       - name: Windows minimum operating system
         href: ../../resources/intune-apps-windowsminimumoperatingsystem.md
-      - name: Windows universal app x app assignment settings
+      - name: Windows Universal AppX app assignment settings
         href: ../../resources/intune-apps-windowsuniversalappxappassignmentsettings.md
   - name: Company terms
     items:
@@ -1733,9 +1733,9 @@ items:
         href: ../../api/intune-deviceconfig-windows10teamgeneralconfiguration-delete.md
       - name: Update windows10TeamGeneralConfiguration
         href: ../../api/intune-deviceconfig-windows10teamgeneralconfiguration-update.md
-    - name: Windows 81 compliance policy
+    - name: Windows 8.1 compliance policy
       items:
-      - name: Windows 81 compliance policy
+      - name: Windows 8.1 compliance policy
         href: ../../resources/intune-deviceconfig-windows81compliancepolicy.md
       - name: List windows81CompliancePolicies
         href: ../../api/intune-deviceconfig-windows81compliancepolicy-list.md
@@ -1747,9 +1747,9 @@ items:
         href: ../../api/intune-deviceconfig-windows81compliancepolicy-delete.md
       - name: Update windows81CompliancePolicy
         href: ../../api/intune-deviceconfig-windows81compliancepolicy-update.md
-    - name: Windows 81 general configuration
+    - name: Windows 8.1 general configuration
       items:
-      - name: Windows 81 general configuration
+      - name: Windows 8.1 general configuration
         href: ../../resources/intune-deviceconfig-windows81generalconfiguration.md
       - name: List windows81GeneralConfigurations
         href: ../../api/intune-deviceconfig-windows81generalconfiguration-list.md
@@ -1775,9 +1775,9 @@ items:
         href: ../../api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
       - name: Update windowsDefenderAdvancedThreatProtectionConfiguration
         href: ../../api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-    - name: Windows phone 81 compliance policy
+    - name: Windows Phone 8.1 compliance policy
       items:
-      - name: Windows phone 81 compliance policy
+      - name: Windows Phone 8.1 compliance policy
         href: ../../resources/intune-deviceconfig-windowsphone81compliancepolicy.md
       - name: List windowsPhone81CompliancePolicies
         href: ../../api/intune-deviceconfig-windowsphone81compliancepolicy-list.md
@@ -1789,9 +1789,9 @@ items:
         href: ../../api/intune-deviceconfig-windowsphone81compliancepolicy-delete.md
       - name: Update windowsPhone81CompliancePolicy
         href: ../../api/intune-deviceconfig-windowsphone81compliancepolicy-update.md
-    - name: Windows phone 81 custom configuration
+    - name: Windows Phone 8.1 custom configuration
       items:
-      - name: Windows phone 81 custom configuration
+      - name: Windows Phone 8.1 custom configuration
         href: ../../resources/intune-deviceconfig-windowsphone81customconfiguration.md
       - name: List windowsPhone81CustomConfigurations
         href: ../../api/intune-deviceconfig-windowsphone81customconfiguration-list.md
@@ -1803,9 +1803,9 @@ items:
         href: ../../api/intune-deviceconfig-windowsphone81customconfiguration-delete.md
       - name: Update windowsPhone81CustomConfiguration
         href: ../../api/intune-deviceconfig-windowsphone81customconfiguration-update.md
-    - name: Windows phone 81 general configuration
+    - name: Windows Phone 8.1 general configuration
       items:
-      - name: Windows phone 81 general configuration
+      - name: Windows Phone 8.1 general configuration
         href: ../../resources/intune-deviceconfig-windowsphone81generalconfiguration.md
       - name: List windowsPhone81GeneralConfigurations
         href: ../../api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
@@ -1919,11 +1919,11 @@ items:
         href: ../../resources/intune-deviceconfig-windows10networkproxyserver.md
       - name: Windows firewall network profile
         href: ../../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
-      - name: Windows update active hours install
+      - name: Windows Update active hours install
         href: ../../resources/intune-deviceconfig-windowsupdateactivehoursinstall.md
-      - name: Windows update install schedule type
+      - name: Windows Update install schedule type
         href: ../../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
-      - name: Windows update scheduled install
+      - name: Windows Update scheduled install
         href: ../../resources/intune-deviceconfig-windowsupdatescheduledinstall.md
   - name: Device management
     items:
@@ -2471,7 +2471,7 @@ items:
         href: ../../resources/intune-devices-windowsdeviceaccount.md
       - name: Windows device ad account
         href: ../../resources/intune-devices-windowsdeviceadaccount.md
-      - name: Windows device azure ad account
+      - name: Windows device Microsoft Entra account
         href: ../../resources/intune-devices-windowsdeviceazureadaccount.md
       - name: Windows malware category count
         href: ../../resources/intune-devices-windowsmalwarecategorycount.md

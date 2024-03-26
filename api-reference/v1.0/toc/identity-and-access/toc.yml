@@ -427,7 +427,7 @@ items:
         href: ../../resources/accessreviewinactiveusersqueryscope.md
       - name: Access review instance decision item access package assignment policy resource
         href: ../../resources/accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md
-      - name: Access review instance decision item azure role resource
+      - name: Access review instance decision item Azure role resource
         href: ../../resources/accessreviewinstancedecisionitemazureroleresource.md
       - name: Access review instance decision item resource
         href: ../../resources/accessreviewinstancedecisionitemresource.md
@@ -775,13 +775,11 @@ items:
         href: ../../resources/attributerulemembers.md
       - name: Azure active directory tenant
         href: ../../resources/azureactivedirectorytenant.md
-      - name: Azure ad pop token authentication
-        href: ../../resources/azureadpoptokenauthentication.md
       - name: Connected organization members
         href: ../../resources/connectedorganizationmembers.md
       - name: Connection info
         href: ../../resources/connectioninfo.md
-      - name: Cross cloud azure active directory tenant
+      - name: Cross cloud Azure active directory tenant
         href: ../../resources/crosscloudazureactivedirectorytenant.md
       - name: Custom callout extension
         href: ../../resources/customcalloutextension.md
@@ -819,6 +817,8 @@ items:
         href: ../../resources/internalsponsors.md
       - name: Logic app trigger endpoint configuration
         href: ../../resources/logicapptriggerendpointconfiguration.md
+      - name: Microsoft Entra pop token authentication
+        href: ../../resources/azureadpoptokenauthentication.md
       - name: Patterned recurrence
         href: ../../resources/patternedrecurrence.md
       - name: Recurrence pattern
@@ -985,8 +985,6 @@ items:
         href: ../../api/identitygovernance-workflowtemplate-get.md
     - name: Complex types
       items:
-      - name: Azure ad pop token authentication
-        href: ../../resources/azureadpoptokenauthentication.md
       - name: Custom callout extension
         href: ../../resources/customcalloutextension.md
       - name: Custom extension authentication configuration
@@ -1021,6 +1019,8 @@ items:
         href: ../../resources/identitygovernance-lifecycleworkflowscontainer.md
       - name: Logic app trigger endpoint configuration
         href: ../../resources/logicapptriggerendpointconfiguration.md
+      - name: Microsoft Entra pop token authentication
+        href: ../../resources/azureadpoptokenauthentication.md
       - name: On demand execution only
         href: ../../resources/identitygovernance-ondemandexecutiononly.md
       - name: Parameter
@@ -2097,9 +2097,9 @@ items:
           href: ../../api/x509certificateauthenticationmethodconfiguration-delete.md
   - name: User flows
     items:
-    - name: B 2 x identity user flow
+    - name: B2X identity user flow
       items:
-      - name: B 2 x identity user flow
+      - name: B2X identity user flow
         href: ../../resources/b2xidentityuserflow.md
       - name: List user flows
         href: ../../api/identitycontainer-list-b2xuserflows.md

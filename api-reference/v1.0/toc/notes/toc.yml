@@ -21,9 +21,9 @@ items:
     href: ../../api/notebook-list-sections.md
   - name: copyNotebook
     href: ../../api/notebook-copynotebook.md
-- name: Onenote
+- name: OneNote
   items:
-  - name: Onenote
+  - name: OneNote
     href: ../../resources/onenote.md
   - name: Create notebook
     href: ../../api/onenote-post-notebooks.md
@@ -37,15 +37,15 @@ items:
     href: ../../api/onenote-list-sectiongroups.md
   - name: List sections
     href: ../../api/onenote-list-sections.md
-- name: Onenote operation
+- name: OneNote operation
   items:
-  - name: Onenote operation
+  - name: OneNote operation
     href: ../../resources/onenoteoperation.md
   - name: Get operation
     href: ../../api/onenoteoperation-get.md
-- name: Onenote page
+- name: OneNote page
   items:
-  - name: Onenote page
+  - name: OneNote page
     href: ../../resources/page.md
   - name: Get page
     href: ../../api/page-get.md
@@ -55,15 +55,15 @@ items:
     href: ../../api/page-delete.md
   - name: copyToSection
     href: ../../api/page-copytosection.md
-- name: Onenote resource
+- name: OneNote resource
   items:
-  - name: Onenote resource
+  - name: OneNote resource
     href: ../../resources/resource.md
   - name: Get resource binary data
     href: ../../api/resource-get.md
-- name: Onenote section
+- name: OneNote section
   items:
-  - name: Onenote section
+  - name: OneNote section
     href: ../../resources/section.md
   - name: Get section
     href: ../../api/section-get.md
@@ -105,13 +105,13 @@ items:
     href: ../../resources/identityset.md
   - name: Notebook links
     href: ../../resources/notebooklinks.md
-  - name: Onenote entity base model
+  - name: OneNote entity base model
     href: ../../resources/onenotebasemodel.md
-  - name: Onenote entity hierarchy model
+  - name: OneNote entity hierarchy model
     href: ../../resources/onenoteentityhierarchymodel.md
-  - name: Onenote entity schema object model
+  - name: OneNote entity schema object model
     href: ../../resources/onenoteentityschemaobjectmodel.md
-  - name: Onenote operation error
+  - name: OneNote operation error
     href: ../../resources/onenoteoperationerror.md
   - name: Operation
     href: ../../resources/operation.md

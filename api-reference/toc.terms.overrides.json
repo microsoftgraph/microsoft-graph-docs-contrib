@@ -1,0 +1,388 @@
+[
+  {
+    "term": "81",
+    "override": "8.1"
+  },
+  {
+    "term": "On premises",
+    "override": "On-premises",
+    "caseSensitive": true
+  },
+  {
+    "term": "android",
+    "override": "Android"
+  },
+  {
+    "term": "android for work",
+    "override": "Android for Work"
+  },
+  {
+    "term": "aosp",
+    "override": "AOSP"
+  },
+  {
+    "term": "app x",
+    "override": "AppX"
+  },
+  {
+    "term": "apple",
+    "override": "Apple"
+  },
+  {
+    "term": "aws",
+    "override": "AWS"
+  },
+  {
+    "term": "azure",
+    "override": "Azure"
+  },
+  {
+    "term": "azure ad",
+    "override": "Microsoft Entra"
+  },
+  {
+    "term": "azure data lake",
+    "override": "Azure Data Lake"
+  },
+  {
+    "term": "b 2 c",
+    "override": "B2C"
+  },
+  {
+    "term": "b 2 x",
+    "override": "B2X"
+  },
+  {
+    "term": "bitlocker",
+    "override": "BitLocker"
+  },
+  {
+    "term": "cloud pc",
+    "override": "Cloud PC"
+  },
+  {
+    "term": "cors",
+    "override": "CORS"
+  },
+  {
+    "term": "cvss",
+    "override": "CVSS"
+  },
+  {
+    "term": "dep",
+    "override": "DEP"
+  },
+  {
+    "term": "device management exchange",
+    "override": "Device management Exchange"
+  },
+  {
+    "term": "dns",
+    "override": "DNS"
+  },
+  {
+    "term": "e book",
+    "override": "eBook"
+  },
+  {
+    "term": "eap",
+    "override": "EAP"
+  },
+  {
+    "term": "eas",
+    "override": "EAS"
+  },
+  {
+    "term": "ediscovery",
+    "override": "eDiscovery"
+  },
+  {
+    "term": "edu",
+    "override": "EDU"
+  },
+  {
+    "term": "esim",
+    "override": "eSIM"
+  },
+  {
+    "term": "fido 2",
+    "override": "FIDO2"
+  },
+  {
+    "term": "gcp",
+    "override": "GCP"
+  },
+  {
+    "term": "gmail",
+    "override": "Gmail"
+  },
+  {
+    "term": "ios",
+    "override": "iOS"
+  },
+  {
+    "term": "iosi pad",
+    "override": "iOS iPad"
+  },
+  {
+    "term": "iosik ev 2",
+    "override": "iOS IKEv2"
+  },
+  {
+    "term": "ip",
+    "override": "IP"
+  },
+  {
+    "term": "ipad",
+    "override": "iPad"
+  },
+  {
+    "term": "ipad os",
+    "override": "iPadOS"
+  },
+  {
+    "term": "lob",
+    "override": "LOB"
+  },
+  {
+    "term": "mac os",
+    "override": "macOS"
+  },
+  {
+    "term": "mac os office suite",
+    "override": "macOS Office Suite"
+  },
+  {
+    "term": "macos",
+    "override": "macOS"
+  },
+  {
+    "term": "macos office suite",
+    "override": "macOS Office Suite"
+  },
+  {
+    "term": "mfa",
+    "override": "MFA"
+  },
+  {
+    "term": "microsoft",
+    "override": "Microsoft"
+  },
+  {
+    "term": "microsoft authenticator",
+    "override": "Microsoft Authenticator"
+  },
+  {
+    "term": "microsoft defender",
+    "override": "Microsoft Defender"
+  },
+  {
+    "term": "microsoft edge",
+    "override": "Microsoft Edge"
+  },
+  {
+    "term": "microsoft store",
+    "override": "Microsoft Store"
+  },
+  {
+    "term": "microsoft store for business",
+    "override": "Microsoft Store for Business"
+  },
+  {
+    "term": "msi",
+    "override": "MSI"
+  },
+  {
+    "term": "ndes",
+    "override": "NDES"
+  },
+  {
+    "term": "nine work",
+    "override": "Nine Work"
+  },
+  {
+    "term": "o auth",
+    "override": "OAuth"
+  },
+  {
+    "term": "oma",
+    "override": "OMA"
+  },
+  {
+    "term": "oma cp",
+    "override": "OMA CP"
+  },
+  {
+    "term": "on premises",
+    "override": "on-premises",
+    "caseSensitive": true
+  },
+  {
+    "term": "onenote",
+    "override": "OneNote"
+  },
+  {
+    "term": "os",
+    "override": "OS"
+  },
+  {
+    "term": "pc",
+    "override": "PC"
+  },
+  {
+    "term": "pfx",
+    "override": "PFX"
+  },
+  {
+    "term": "pkcs",
+    "override": "PKCS"
+  },
+  {
+    "term": "pstn",
+    "override": "PSTN"
+  },
+  {
+    "term": "qna",
+    "override": "QnA"
+  },
+  {
+    "term": "rbac",
+    "override": "RBAC"
+  },
+  {
+    "term": "saml or ws fed",
+    "override": "SAML/WS-Fed"
+  },
+  {
+    "term": "scep",
+    "override": "SCEP"
+  },
+  {
+    "term": "sim",
+    "override": "SIM"
+  },
+  {
+    "term": "sku",
+    "override": "SKU"
+  },
+  {
+    "term": "sms",
+    "override": "SMS"
+  },
+  {
+    "term": "software oath",
+    "override": "Software OATH"
+  },
+  {
+    "term": "ssl",
+    "override": "SSL"
+  },
+  {
+    "term": "temporary access pass",
+    "override": "Temporary Access Pass"
+  },
+  {
+    "term": "ti",
+    "override": "Threat intelligence"
+  },
+  {
+    "term": "todo",
+    "override": "To-do"
+  },
+  {
+    "term": "url",
+    "override": "URL"
+  },
+  {
+    "term": "v 2",
+    "override": "v2"
+  },
+  {
+    "term": "vpn",
+    "override": "VPN"
+  },
+  {
+    "term": "vpp",
+    "override": "VPP"
+  },
+  {
+    "term": "whois",
+    "override": "WHOIS"
+  },
+  {
+    "term": "wi fi",
+    "override": "Wi-Fi"
+  },
+  {
+    "term": "wifi",
+    "override": "Wi-Fi"
+  },
+  {
+    "term": "win 32",
+    "override": "Win32"
+  },
+  {
+    "term": "win get",
+    "override": "WinGet"
+  },
+  {
+    "term": "windows app x",
+    "override": "Windows AppX"
+  },
+  {
+    "term": "windows autopilot",
+    "override": "Windows Autopilot"
+  },
+  {
+    "term": "windows defender advanced threat protection",
+    "override": "Windows Defender Advanced Threat Protection"
+  },
+  {
+    "term": "windows delivery optimization",
+    "override": "Windows Delivery Optimization"
+  },
+  {
+    "term": "windows health monitoring",
+    "override": "Windows Health Monitoring"
+  },
+  {
+    "term": "windows hello for business",
+    "override": "Windows Hello for Business"
+  },
+  {
+    "term": "windows mobile",
+    "override": "Windows Mobile"
+  },
+  {
+    "term": "windows phone",
+    "override": "Windows Phone"
+  },
+  {
+    "term": "windows store",
+    "override": "Windows Store"
+  },
+  {
+    "term": "windows universal",
+    "override": "Windows Universal"
+  },
+  {
+    "term": "windows update",
+    "override": "Windows Update"
+  },
+  {
+    "term": "windows update for business",
+    "override": "Windows Update for Business"
+  },
+  {
+    "term": "windows updates",
+    "override": "Windows Updates"
+  },
+  {
+    "term": "x 509",
+    "override": "X509"
+  },
+  {
+    "term": "xap",
+    "override": "XAP"
+  }
+]

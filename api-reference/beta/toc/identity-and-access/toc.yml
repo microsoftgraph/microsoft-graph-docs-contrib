@@ -445,9 +445,9 @@ items:
         href: ../../api/adminforms-get.md
       - name: Update adminForms
         href: ../../api/adminforms-update.md
-    - name: Admin todo
+    - name: Admin To-do
       items:
-      - name: Admin todo
+      - name: Admin To-do
         href: ../../resources/admintodo.md
       - name: Get adminTodo
         href: ../../api/admintodo-get.md
@@ -463,7 +463,7 @@ items:
         href: ../../resources/customervoicesettings.md
       - name: Forms settings
         href: ../../resources/formssettings.md
-      - name: Todo settings
+      - name: To-do settings
         href: ../../resources/todosettings.md
   - name: Role management
     items:

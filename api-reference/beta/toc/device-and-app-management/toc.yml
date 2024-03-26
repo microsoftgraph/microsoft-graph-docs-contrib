@@ -943,9 +943,9 @@ items:
         href: ../../api/intune-apps-enterprisecodesigningcertificate-delete.md
       - name: Update enterpriseCodeSigningCertificate
         href: ../../api/intune-apps-enterprisecodesigningcertificate-update.md
-    - name: iOS iPad OS web clip
+    - name: iOS iPadOS web clip
       items:
-      - name: iOS iPad OS web clip
+      - name: iOS iPadOS web clip
         href: ../../resources/intune-apps-iosipadoswebclip.md
       - name: List iosiPadOSWebClips
         href: ../../api/intune-apps-iosipadoswebclip-list.md
