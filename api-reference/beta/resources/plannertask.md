@@ -42,7 +42,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Contains information about the origin of the task.|
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |hasDescription|Boolean|Read-only. Value is `true` if the details object of the task has a nonempty description and `false` otherwise.|
-|id|String|Read-only. ID of the task. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|id|String|Read-only. A unique 28-character case-sensitive ID for the task. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |isOnMyDay|Boolean|A true value indicates that a task should be shown in MyDay view. Otherwise, false.|
 |isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
