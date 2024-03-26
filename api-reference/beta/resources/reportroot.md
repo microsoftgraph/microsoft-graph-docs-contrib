@@ -21,7 +21,7 @@ Represents a container for Microsoft Entra ID and Microsoft 365 reporting resour
 
 For details about report views and names, see [Microsoft 365 reports - Forms activity](/microsoft-365/admin/activity-reports/forms-activity-ww).
 
-| Function                                                                | Return type | Description                              |
+| Method                                                                  | Return type | Description                              |
 |:------------------------------------------------------------------------|:------------|:-----------------------------------------|
 | [Get user detail](../api/reportroot-getformsuseractivityuserdetail.md ) | Stream      | Get the detailed forms usage per user. |
 | [Get user counts](../api/reportroot-getformsuseractivityusercounts.md ) | Stream      | Get the trend in the number of active users for each user type. |

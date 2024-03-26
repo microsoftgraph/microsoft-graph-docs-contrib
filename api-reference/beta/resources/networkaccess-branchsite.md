@@ -1,5 +1,5 @@
 ---
-title: "branch resource type"
+title: "branchSite resource type"
 description: "A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network."
 author: "Moti-ba"
 ms.localizationpriority: medium
