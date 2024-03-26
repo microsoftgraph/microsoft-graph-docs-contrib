@@ -2117,59 +2117,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **alertPolicyId** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
           "Target": "alert"
-        },
-	  {
-      "ChangeList": [
-        {
-          "Id": "e501ceb5-f3e6-4465-afd7-15ffd7f4791d",
-          "ApiChange": "Method",
-          "ChangedApiName": "runHuntingQuery",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **runHuntingQuery** method from the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-beta) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "e501ceb5-f3e6-4465-afd7-15ffd7f4791d",
-          "ApiChange": "Method",
-          "ChangedApiName": "runHuntingQuery",
-          "ChangeType": "Addition",
-          "Description": "Added the [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runHuntingQuery?view=graph-rest-beta) method to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-beta) resource.",
-          "Target": "security"
         }
-      ],
-      "Id": "e501ceb5-f3e6-4465-afd7-15ffd7f4791d",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-03-26T12:08:37.2692607Z",
-      "WorkloadArea": "Security",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "be4ad5fc-2bcd-4daf-901b-4d26021594e2",
-          "ApiChange": "Method",
-          "ChangedApiName": "runHuntingQuery",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **runHuntingQuery** method from the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-1.0) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "be4ad5fc-2bcd-4daf-901b-4d26021594e2",
-          "ApiChange": "Method",
-          "ChangedApiName": "runHuntingQuery",
-          "ChangeType": "Addition",
-          "Description": "Added the [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runHuntingQuery?view=graph-rest-1.0) method to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-1.0) resource.",
-          "Target": "security"
-        }
-      ],
-      "Id": "be4ad5fc-2bcd-4daf-901b-4d26021594e2",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-03-26T12:08:37.269494Z",
-      "WorkloadArea": "Security",
-      "SubArea": ""
-    }
       ],
       "Id": "9b72fe2b-b375-467e-9d74-b62aff7bba94",
       "Cloud": "Prod",
@@ -2177,6 +2125,58 @@
       "CreatedDateTime": "2023-07-19T13:00:00.0000000Z",
       "WorkloadArea": "Security",
       "SubArea": "Alerts and incidents"
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "6314802c-fa7d-4266-b448-bc0c1404c0c9",
+          "ApiChange": "Method",
+          "ChangedApiName": "runHuntingQuery",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **runHuntingQuery** method from the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "6314802c-fa7d-4266-b448-bc0c1404c0c9",
+          "ApiChange": "Method",
+          "ChangedApiName": "runHuntingQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runHuntingQuery?view=graph-rest-beta) method to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        }
+      ],
+      "Id": "6314802c-fa7d-4266-b448-bc0c1404c0c9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-20T14:25:35.9320581Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
+          "ApiChange": "Method",
+          "ChangedApiName": "runHuntingQuery",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **runHuntingQuery** method from the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-1.0) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
+          "ApiChange": "Method",
+          "ChangedApiName": "runHuntingQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runHuntingQuery?view=graph-rest-1.0) method to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-1.0) resource.",
+          "Target": "security"
+        }
+      ],
+      "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-20T14:25:35.9322853Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }
