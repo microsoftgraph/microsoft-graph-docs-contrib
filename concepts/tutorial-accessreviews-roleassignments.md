@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.topic: tutorial
 ms.reviewer: jgangadhar, rianakarim
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance"
+ms.subservice: entra-id-governance
 ms.date: 03/26/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use the access reviews APIs to review and attest to the privileged admin roles that principals in my organization, so that I can ensure proper security and compliance in my organization.
 ---
