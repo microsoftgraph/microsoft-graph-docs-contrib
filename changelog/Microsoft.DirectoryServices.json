@@ -4313,6 +4313,24 @@
     {
       "ChangeList": [
         {
+          "Id": "4496e9d1-6019-4068-a26b-6328d1bd8137",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Organizational Branding Administrator",
+          "ChangeType": "Addition",
+          "Description": "Added the `Organizational Branding Administrator` Microsoft Entra role to the read and write operations of [organizationalBranding](https://learn.microsoft.com/graph/api/resources/organizationalbranding?view=graph-rest-1.0). Where only the *Global Administrator* was previously authorized to manage tenant branding, you can now use the lesser privileged *Organizational Branding Administrator* role instead.",
+          "Target": "organizationalBranding"
+        }
+      ],
+      "Id": "4496e9d1-6019-4068-a26b-6328d1bd8137",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-25T00:00:00.304139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cc9daa2b-0fbd-42b3-8bfb-b7593e031739",
           "ApiChange": "Method",
           "ChangedApiName": "validatePassword",
@@ -10367,6 +10385,24 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-02-21T19:54:41.7365558Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2a9e477d-d980-4376-9793-566aac3bfe54",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesSecurityIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the `onPremisesSecurityIdentifier` property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "2a9e477d-d980-4376-9793-566aac3bfe54",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-25T04:21:11.8241053Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
