@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`. `CloudPcId` is required in the filter. if it is missed, malformed or invalid query config will be thrown.|
+|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`. `CloudPcId` filter is required. For example: `CloudPcId eq xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. If it is missed, malformed or invalid query config will be thrown.|
 |select|String collection|OData select syntax. The columns to include in the report.|
 |search|String|The string to search for.|
 |groupBy|String collection|A list of columns that describe how to group the data in the report.|
