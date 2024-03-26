@@ -19,6 +19,8 @@ items:
     href: ../../api/itemanalytics-get.md
   - name: Get activities by interval
     href: ../../api/itemactivitystat-getactivitybyinterval.md
+  - name: Get delta
+    href: ../../api/site-delta.md
   - name: Search for sites
     href: ../../api/site-search.md
   - name: Follow site

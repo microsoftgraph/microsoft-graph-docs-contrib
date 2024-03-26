@@ -705,9 +705,9 @@ items:
         href: ../../api/intune-apps-managedmobilelobapp-list.md
       - name: Get managedMobileLobApp
         href: ../../api/intune-apps-managedmobilelobapp-get.md
-    - name: Microsoft Store for business app
+    - name: Microsoft Store for Business app
       items:
-      - name: Microsoft Store for business app
+      - name: Microsoft Store for Business app
         href: ../../resources/intune-apps-microsoftstoreforbusinessapp.md
       - name: List microsoftStoreForBusinessApps
         href: ../../api/intune-apps-microsoftstoreforbusinessapp-list.md
@@ -833,9 +833,9 @@ items:
         href: ../../api/intune-apps-webapp-delete.md
       - name: Update webApp
         href: ../../api/intune-apps-webapp-update.md
-    - name: Win 32 LOB app
+    - name: Win32 LOB app
       items:
-      - name: Win 32 LOB app
+      - name: Win32 LOB app
         href: ../../resources/intune-apps-win32lobapp.md
       - name: List win32LobApps
         href: ../../api/intune-apps-win32lobapp-list.md
@@ -977,7 +977,7 @@ items:
         href: ../../resources/intune-apps-macoslobchildapp.md
       - name: macOS minimum operating system
         href: ../../resources/intune-apps-macosminimumoperatingsystem.md
-      - name: Microsoft Store for business app assignment settings
+      - name: Microsoft Store for Business app assignment settings
         href: ../../resources/intune-apps-microsoftstoreforbusinessappassignmentsettings.md
       - name: Mime content
         href: ../../resources/intune-shared-mimecontent.md
@@ -989,25 +989,25 @@ items:
         href: ../../resources/intune-apps-mobileappinstalltimesettings.md
       - name: VPP licensing type
         href: ../../resources/intune-apps-vpplicensingtype.md
-      - name: Win 32 LOB app assignment settings
+      - name: Win32 LOB app assignment settings
         href: ../../resources/intune-apps-win32lobappassignmentsettings.md
-      - name: Win 32 LOB app file system rule
+      - name: Win32 LOB app file system rule
         href: ../../resources/intune-apps-win32lobappfilesystemrule.md
-      - name: Win 32 LOB app install experience
+      - name: Win32 LOB app install experience
         href: ../../resources/intune-apps-win32lobappinstallexperience.md
-      - name: Win 32 LOB app MSI information
+      - name: Win32 LOB app MSI information
         href: ../../resources/intune-apps-win32lobappmsiinformation.md
-      - name: Win 32 LOB app power shell script rule
+      - name: Win32 LOB app power shell script rule
         href: ../../resources/intune-apps-win32lobapppowershellscriptrule.md
-      - name: Win 32 LOB app product code rule
+      - name: Win32 LOB app product code rule
         href: ../../resources/intune-apps-win32lobappproductcoderule.md
-      - name: Win 32 LOB app registry rule
+      - name: Win32 LOB app registry rule
         href: ../../resources/intune-apps-win32lobappregistryrule.md
-      - name: Win 32 LOB app restart settings
+      - name: Win32 LOB app restart settings
         href: ../../resources/intune-apps-win32lobapprestartsettings.md
-      - name: Win 32 LOB app return code
+      - name: Win32 LOB app return code
         href: ../../resources/intune-apps-win32lobappreturncode.md
-      - name: Win 32 LOB app rule
+      - name: Win32 LOB app rule
         href: ../../resources/intune-apps-win32lobapprule.md
       - name: Windows AppX app assignment settings
         href: ../../resources/intune-apps-windowsappxappassignmentsettings.md
@@ -1017,6 +1017,8 @@ items:
         href: ../../resources/intune-apps-windowsuniversalappxappassignmentsettings.md
   - name: Company terms
     items:
+    - name: Overview
+      href: ../../resources/intune-company-conceptual.md
     - name: Terms and conditions
       items:
       - name: Terms and conditions
@@ -1075,9 +1077,11 @@ items:
         href: ../../resources/intune-shared-groupassignmenttarget.md
   - name: Corporate enrollment
     items:
-    - name: Imported windows autopilot device identity
+    - name: Overview
+      href: ../../resources/intune-enrollment-conceptual.md
+    - name: Imported Windows Autopilot device identity
       items:
-      - name: Imported windows autopilot device identity
+      - name: Imported Windows Autopilot device identity
         href: ../../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
       - name: List importedWindowsAutopilotDeviceIdentities
         href: ../../api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
@@ -1089,9 +1093,9 @@ items:
         href: ../../api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
       - name: import action
         href: ../../api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md
-    - name: Windows autopilot device identity
+    - name: Windows Autopilot device identity
       items:
-      - name: Windows autopilot device identity
+      - name: Windows Autopilot device identity
         href: ../../resources/intune-enrollment-windowsautopilotdeviceidentity.md
       - name: List windowsAutopilotDeviceIdentities
         href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-list.md
@@ -1109,10 +1113,12 @@ items:
         href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md
     - name: Complex types
       items:
-      - name: Imported windows autopilot device identity state
+      - name: Imported Windows Autopilot device identity state
         href: ../../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
   - name: Device configuration
     items:
+    - name: Overview
+      href: ../../resources/intune-device-cfg-conceptual.md
     - name: Android compliance policy
       items:
       - name: Android compliance policy
@@ -1593,9 +1599,9 @@ items:
         href: ../../api/intune-deviceconfig-settingstatedevicesummary-delete.md
       - name: Update settingStateDeviceSummary
         href: ../../api/intune-deviceconfig-settingstatedevicesummary-update.md
-    - name: Shared pc configuration
+    - name: Shared PC configuration
       items:
-      - name: Shared pc configuration
+      - name: Shared PC configuration
         href: ../../resources/intune-deviceconfig-sharedpcconfiguration.md
       - name: List sharedPCConfigurations
         href: ../../api/intune-deviceconfig-sharedpcconfiguration-list.md
@@ -1755,9 +1761,9 @@ items:
         href: ../../api/intune-deviceconfig-windows81generalconfiguration-delete.md
       - name: Update windows81GeneralConfiguration
         href: ../../api/intune-deviceconfig-windows81generalconfiguration-update.md
-    - name: Windows defender advanced threat protection configuration
+    - name: Windows Defender Advanced Threat Protection configuration
       items:
-      - name: Windows defender advanced threat protection configuration
+      - name: Windows Defender Advanced Threat Protection configuration
         href: ../../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md
       - name: List windowsDefenderAdvancedThreatProtectionConfigurations
         href: ../../api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-list.md
@@ -1811,9 +1817,9 @@ items:
         href: ../../api/intune-deviceconfig-windowsphone81generalconfiguration-delete.md
       - name: Update windowsPhone81GeneralConfiguration
         href: ../../api/intune-deviceconfig-windowsphone81generalconfiguration-update.md
-    - name: Windows update for business configuration
+    - name: Windows Update for Business configuration
       items:
-      - name: Windows update for business configuration
+      - name: Windows Update for Business configuration
         href: ../../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md
       - name: List windowsUpdateForBusinessConfigurations
         href: ../../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
@@ -1907,7 +1913,7 @@ items:
         href: ../../resources/intune-deviceconfig-omasettingstringxml.md
       - name: Setting source
         href: ../../resources/intune-deviceconfig-settingsource.md
-      - name: Shared pc account manager policy
+      - name: Shared PC account manager policy
         href: ../../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md
       - name: Windows 10 network proxy server
         href: ../../resources/intune-deviceconfig-windows10networkproxyserver.md
@@ -1921,6 +1927,8 @@ items:
         href: ../../resources/intune-deviceconfig-windowsupdatescheduledinstall.md
   - name: Device management
     items:
+    - name: Overview
+      href: ../../resources/intune-device-mgt-conceptual.md
     - name: App log collection request
       items:
       - name: App log collection request
@@ -2413,7 +2421,7 @@ items:
         href: ../../resources/intune-devices-applogcollectiondownloaddetails.md
       - name: Configuration manager client enabled features
         href: ../../resources/intune-devices-configurationmanagerclientenabledfeatures.md
-      - name: Delete user from shared apple device action result
+      - name: Delete user from shared Apple device action result
         href: ../../resources/intune-devices-deleteuserfromsharedappledeviceactionresult.md
       - name: Device action result
         href: ../../resources/intune-devices-deviceactionresult.md
@@ -2479,6 +2487,8 @@ items:
         href: ../../resources/intune-devices-windowsmalwarestatecount.md
   - name: Mobile app management (MAM)
     items:
+    - name: Overview
+      href: ../../resources/intune-mam-conceptual.md
     - name: Android managed app protection
       items:
       - name: Android managed app protection
@@ -2723,6 +2733,130 @@ items:
         href: ../../api/intune-mam-windowsinformationprotectionpolicy-delete.md
       - name: Update windowsInformationProtectionPolicy
         href: ../../api/intune-mam-windowsinformationprotectionpolicy-update.md
+    - name: Cloud PC
+      items:
+      - name: Cloud PC
+        href: ../../resources/cloudpc.md
+      - name: List cloudPCs
+        href: ../../api/virtualendpoint-list-cloudpcs.md
+      - name: Get cloudPC
+        href: ../../api/cloudpc-get.md
+      - name: End grace period
+        href: ../../api/cloudpc-endgraceperiod.md
+      - name: Reboot
+        href: ../../api/cloudpc-reboot.md
+      - name: Rename
+        href: ../../api/cloudpc-rename.md
+      - name: Troubleshoot
+        href: ../../api/cloudpc-troubleshoot.md
+      - name: Restore
+        href: ../../api/cloudpc-restore.md
+    - name: Cloud PC audit event
+      items:
+      - name: Cloud PC audit event
+        href: ../../resources/cloudpcauditevent.md
+      - name: List auditEvents
+        href: ../../api/virtualendpoint-list-auditevents.md
+      - name: Get cloudPcAuditEvent
+        href: ../../api/cloudpcauditevent-get.md
+      - name: getAuditActivityTypes function
+        href: ../../api/cloudpcauditevent-getauditactivitytypes.md
+    - name: Cloud PC device image
+      items:
+      - name: Cloud PC device image
+        href: ../../resources/cloudpcdeviceimage.md
+      - name: List deviceImages
+        href: ../../api/virtualendpoint-list-deviceimages.md
+      - name: Get cloudPcDeviceImage
+        href: ../../api/cloudpcdeviceimage-get.md
+      - name: Create cloudPcDeviceImage
+        href: ../../api/virtualendpoint-post-deviceimages.md
+      - name: Delete cloudPcDeviceImage
+        href: ../../api/cloudpcdeviceimage-delete.md
+      - name: getSourceImages
+        href: ../../api/cloudpcdeviceimage-getsourceimages.md
+    - name: Cloud PC gallery image
+      items:
+      - name: Cloud PC gallery image
+        href: ../../resources/cloudpcgalleryimage.md
+      - name: List galleryImages
+        href: ../../api/virtualendpoint-list-galleryimages.md
+      - name: Get cloudPcGalleryImage
+        href: ../../api/cloudpcgalleryimage-get.md
+    - name: Cloud PC on-premises connection
+      items:
+      - name: Cloud PC on-premises connection
+        href: ../../resources/cloudpconpremisesconnection.md
+      - name: List onPremisesConnections
+        href: ../../api/virtualendpoint-list-onpremisesconnections.md
+      - name: Get cloudPcOnPremisesConnection
+        href: ../../api/cloudpconpremisesconnection-get.md
+      - name: Create cloudPcOnPremisesConnection
+        href: ../../api/virtualendpoint-post-onpremisesconnections.md
+      - name: Update cloudPcOnPremisesConnection
+        href: ../../api/cloudpconpremisesconnection-update.md
+      - name: Delete cloudPcOnPremisesConnection
+        href: ../../api/cloudpconpremisesconnection-delete.md
+      - name: RunHealthChecks of a cloudPcOnPremisesConnection
+        href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
+    - name: Cloud PC provisioning policy
+      items:
+      - name: Cloud PC provisioning policy
+        href: ../../resources/cloudpcprovisioningpolicy.md
+      - name: List provisioningPolicies
+        href: ../../api/virtualendpoint-list-provisioningpolicies.md
+      - name: Create cloudPcProvisioningPolicy
+        href: ../../api/virtualendpoint-post-provisioningpolicies.md
+      - name: Get cloudPcProvisioningPolicy
+        href: ../../api/cloudpcprovisioningpolicy-get.md
+      - name: Update cloudPcProvisioningPolicy
+        href: ../../api/cloudpcprovisioningpolicy-update.md
+      - name: Delete cloudPcProvisioningPolicy
+        href: ../../api/cloudpcprovisioningpolicy-delete.md
+      - name: Assign
+        href: ../../api/cloudpcprovisioningpolicy-assign.md
+    - name: Cloud PC user setting
+      items:
+      - name: Cloud PC user setting
+        href: ../../resources/cloudpcusersetting.md
+      - name: List userSettings
+        href: ../../api/virtualendpoint-list-usersettings.md
+      - name: Create cloudPcUserSetting
+        href: ../../api/virtualendpoint-post-usersettings.md
+      - name: Get cloudPcUserSetting
+        href: ../../api/cloudpcusersetting-get.md
+      - name: Update cloudPcUserSetting
+        href: ../../api/cloudpcusersetting-update.md
+      - name: Delete cloudPcUserSetting
+        href: ../../api/cloudpcusersetting-delete.md
+      - name: Assign
+        href: ../../api/cloudpcusersetting-assign.md
+    - name: Virtual endpoint
+      items:
+      - name: Virtual endpoint
+        href: ../../resources/virtualendpoint.md
+      - name: List auditEvents
+        href: ../../api/virtualendpoint-list-auditevents.md
+      - name: List cloudPCs
+        href: ../../api/virtualendpoint-list-cloudpcs.md
+      - name: List onPremisesConnections
+        href: ../../api/virtualendpoint-list-onpremisesconnections.md
+      - name: List deviceImages
+        href: ../../api/virtualendpoint-list-deviceimages.md
+      - name: List galleryImages
+        href: ../../api/virtualendpoint-list-galleryimages.md
+      - name: List provisioningPolicies
+        href: ../../api/virtualendpoint-list-provisioningpolicies.md
+      - name: List userSettings
+        href: ../../api/virtualendpoint-list-usersettings.md
+      - name: Create cloudPcDeviceImage
+        href: ../../api/virtualendpoint-post-deviceimages.md
+      - name: Create cloudPcProvisioningPolicy
+        href: ../../api/virtualendpoint-post-provisioningpolicies.md
+      - name: Create cloudPcOnPremisesConnection
+        href: ../../api/virtualendpoint-post-onpremisesconnections.md
+      - name: Create cloudPcUserSetting
+        href: ../../api/virtualendpoint-post-usersettings.md
     - name: Windows information protection app learning summary
       items:
       - name: Windows information protection app learning summary
@@ -2759,6 +2893,34 @@ items:
         href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
       - name: Android mobile app identifier
         href: ../../resources/intune-mam-androidmobileappidentifier.md
+      - name: Cloud PC audit actor
+        href: ../../resources/cloudpcauditactor.md
+      - name: Cloud PC audit property
+        href: ../../resources/cloudpcauditproperty.md
+      - name: Cloud PC audit resource
+        href: ../../resources/cloudpcauditresource.md
+      - name: Cloud PC domain join configuration
+        href: ../../resources/cloudpcdomainjoinconfiguration.md
+      - name: Cloud PC management assignment target
+        href: ../../resources/cloudpcmanagementassignmenttarget.md
+      - name: Cloud PC management group assignment target
+        href: ../../resources/cloudpcmanagementgroupassignmenttarget.md
+      - name: Cloud PC on-premises connection health check
+        href: ../../resources/cloudpconpremisesconnectionhealthcheck.md
+      - name: Cloud PC on-premises connection status detail
+        href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
+      - name: Cloud PC provisioning policy assignment
+        href: ../../resources/cloudpcprovisioningpolicyassignment.md
+      - name: Cloud PC restore point setting
+        href: ../../resources/cloudpcrestorepointsetting.md
+      - name: Cloud PC source device image
+        href: ../../resources/cloudpcsourcedeviceimage.md
+      - name: Cloud PC user role scope tag info
+        href: ../../resources/cloudpcuserrolescopetaginfo.md
+      - name: Cloud PC user setting assignment
+        href: ../../resources/cloudpcusersettingassignment.md
+      - name: Cloud PC windows setting
+        href: ../../resources/cloudpcwindowssetting.md
       - name: Configuration manager collection assignment target
         href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
       - name: Device and app management assignment target
@@ -2783,12 +2945,12 @@ items:
         href: ../../resources/intune-mam-managedappdiagnosticstatus.md
       - name: Managed app policy deployment summary per app
         href: ../../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md
+      - name: Microsoft managed desktop
+        href: ../../resources/microsoftmanageddesktop.md
       - name: Mobile app identifier
         href: ../../resources/intune-mam-mobileappidentifier.md
       - name: Proxied domain
         href: ../../resources/intune-mam-proxieddomain.md
-      - name: Virtual endpoint
-        href: ../../resources/virtualendpoint.md
       - name: Windows information protection app
         href: ../../resources/intune-mam-windowsinformationprotectionapp.md
       - name: Windows information protection data recovery certificate
@@ -2805,6 +2967,8 @@ items:
         href: ../../resources/intune-mam-windowsinformationprotectionstoreapp.md
   - name: Role-based access control (RBAC)
     items:
+    - name: Overview
+      href: ../../resources/intune-rbac-conceptual.md
     - name: Device and app management role assignment
       items:
       - name: Device and app management role assignment

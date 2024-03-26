@@ -1,9 +1,9 @@
 items:
 - name: Overview
   href: ../../resources/todo-overview.md
-- name: Todo task list
+- name: To-do task list
   items:
-  - name: Todo task list
+  - name: To-do task list
     href: ../../resources/todotasklist.md
   - name: List lists
     href: ../../api/todo-list-lists.md
@@ -19,9 +19,9 @@ items:
     href: ../../api/todotasklist-list-tasks.md
   - name: Create task
     href: ../../api/todotasklist-post-tasks.md
-- name: Todo task
+- name: To-do task
   items:
-  - name: Todo task
+  - name: To-do task
     href: ../../resources/todotask.md
   - name: List tasks
     href: ../../api/todotasklist-list-tasks.md

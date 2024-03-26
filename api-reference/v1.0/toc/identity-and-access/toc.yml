@@ -222,7 +222,13 @@ items:
     - name: List subscribedsku
       href: ../../api/subscribedsku-list.md
   - name: Tenant information
-    href: ../../resources/tenantinformation.md
+    items:
+    - name: Tenant information
+      href: ../../resources/tenantinformation.md
+    - name: Find tenant by domain name
+      href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
+    - name: Find tenant by tenant ID
+      href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -851,18 +857,6 @@ items:
         href: ../../api/identitygovernance-customtaskextension-update.md
       - name: Delete customTaskExtension
         href: ../../api/identitygovernance-customtaskextension-delete.md
-    - name: Deleted item container
-      items:
-      - name: Deleted item container
-        href: ../../resources/deleteditemcontainer.md
-      - name: List deletedItems
-        href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md
-      - name: Get deletedItemContainer
-        href: ../../api/identitygovernance-deleteditemcontainer-get.md
-      - name: Restore
-        href: ../../api/identitygovernance-workflow-restore.md
-      - name: Permanently delete workflow from deletedItemsContainer
-        href: ../../api/identitygovernance-deletedItemcontainer-delete.md
     - name: Lifecycle management settings
       items:
       - name: Lifecycle management settings
@@ -871,16 +865,6 @@ items:
         href: ../../api/identitygovernance-lifecyclemanagementsettings-get.md
       - name: Update lifecycleManagementSettings
         href: ../../api/identitygovernance-lifecyclemanagementsettings-update.md
-    - name: Task
-      items:
-      - name: Task
-        href: ../../resources/identitygovernance-task.md
-      - name: List tasks
-        href: ../../api/identitygovernance-workflow-list-task.md
-      - name: Get task
-        href: ../../api/identitygovernance-task-get.md
-      - name: Update task
-        href: ../../api/identitygovernance-task-update.md
     - name: Task definition
       items:
       - name: Task definition
@@ -925,6 +909,72 @@ items:
         href: ../../api/identitygovernance-workflow-list-task.md
       - name: List versions
         href: ../../api/identitygovernance-workflow-list-versions.md
+      - name: Task
+        items:
+        - name: Task
+          href: ../../resources/identitygovernance-task.md
+        - name: List tasks
+          href: ../../api/identitygovernance-workflow-list-task.md
+        - name: Get task
+          href: ../../api/identitygovernance-task-get.md
+        - name: Update task
+          href: ../../api/identitygovernance-task-update.md
+      - name: Workflow version
+        items:
+        - name: Workflow version
+          href: ../../resources/identitygovernance-workflowversion.md
+        - name: List workflowVersions
+          href: ../../api/identitygovernance-workflow-list-versions.md
+        - name: Get workflowVersion
+          href: ../../api/identitygovernance-workflowversion-get.md
+        - name: List tasks
+          href: ../../api/identitygovernance-workflowversion-list-tasks.md
+        - name: Get task
+          href: ../../api/identitygovernance-task-get.md
+      - name: Reports
+        items:
+        - name: Overview
+          href: ../../resources/identitygovernance-lifecycleworkflows-reporting-overview.md
+        - name: User processing result
+          items:
+          - name: User processing result
+            href: ../../resources/identitygovernance-userprocessingresult.md
+          - name: List userProcessingResults
+            href: ../../api/identitygovernance-workflow-list-userprocessingresults.md
+          - name: Get userProcessingResult
+            href: ../../api/identitygovernance-userprocessingresult-get.md
+          - name: summary
+            href: ../../api/identitygovernance-userprocessingresult-summary.md
+          - name: List taskProcessingResults for a userProcessingResult
+            href: ../../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+        - name: Task report
+          items:
+          - name: Task report
+            href: ../../resources/identitygovernance-taskreport.md
+          - name: List taskReports
+            href: ../../api/identitygovernance-workflow-list-taskreports.md
+          - name: Summary
+            href: ../../api/identitygovernance-taskreport-summary.md
+          - name: List taskProcessingResults
+            href: ../../api/identitygovernance-taskreport-list-taskprocessingresults.md
+        - name: Run
+          items:
+          - name: Run
+            href: ../../resources/identitygovernance-run.md
+          - name: List runs
+            href: ../../api/identitygovernance-workflow-list-runs.md
+          - name: Get run
+            href: ../../api/identitygovernance-run-get.md
+          - name: summary
+            href: ../../api/identitygovernance-run-summary.md
+          - name: List task processing results of a run
+            href: ../../api/identitygovernance-run-list-taskprocessingresults.md
+        - name: Task processing result
+          items:
+          - name: Task processing result
+            href: ../../resources/identitygovernance-taskprocessingresult.md
+          - name: resume
+            href: ../../api/identitygovernance-taskprocessingresult-resume.md
     - name: Workflow template
       items:
       - name: Workflow template
@@ -933,62 +983,6 @@ items:
         href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates.md
       - name: Get workflowTemplate
         href: ../../api/identitygovernance-workflowtemplate-get.md
-    - name: Workflow version
-      items:
-      - name: Workflow version
-        href: ../../resources/identitygovernance-workflowversion.md
-      - name: List workflowVersions
-        href: ../../api/identitygovernance-workflow-list-versions.md
-      - name: Get workflowVersion
-        href: ../../api/identitygovernance-workflowversion-get.md
-      - name: List tasks
-        href: ../../api/identitygovernance-workflowversion-list-tasks.md
-      - name: Get task
-        href: ../../api/identitygovernance-task-get.md
-    - name: Reports
-      items:
-      - name: Overview
-        href: ../../resources/identitygovernance-lifecycleworkflows-reporting-overview.md
-      - name: User processing result
-        items:
-        - name: User processing result
-          href: ../../resources/identitygovernance-userprocessingresult.md
-        - name: List userProcessingResults
-          href: ../../api/identitygovernance-workflow-list-userprocessingresults.md
-        - name: Get userProcessingResult
-          href: ../../api/identitygovernance-userprocessingresult-get.md
-        - name: summary
-          href: ../../api/identitygovernance-userprocessingresult-summary.md
-        - name: List taskProcessingResults for a userProcessingResult
-          href: ../../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
-      - name: Task report
-        items:
-        - name: Task report
-          href: ../../resources/identitygovernance-taskreport.md
-        - name: List taskReports
-          href: ../../api/identitygovernance-workflow-list-taskreports.md
-        - name: Summary
-          href: ../../api/identitygovernance-taskreport-summary.md
-        - name: List taskProcessingResults
-          href: ../../api/identitygovernance-taskreport-list-taskprocessingresults.md
-      - name: Run
-        items:
-        - name: Run
-          href: ../../resources/identitygovernance-run.md
-        - name: List runs
-          href: ../../api/identitygovernance-workflow-list-runs.md
-        - name: Get run
-          href: ../../api/identitygovernance-run-get.md
-        - name: summary
-          href: ../../api/identitygovernance-run-summary.md
-        - name: List task processing results of a run
-          href: ../../api/identitygovernance-run-list-taskprocessingresults.md
-      - name: Task processing result
-        items:
-        - name: Task processing result
-          href: ../../resources/identitygovernance-taskprocessingresult.md
-        - name: resume
-          href: ../../api/identitygovernance-taskprocessingresult-resume.md
     - name: Complex types
       items:
       - name: Azure ad pop token authentication
@@ -1051,7 +1045,7 @@ items:
         href: ../../resources/identitygovernance-workflowexecutionconditions.md
       - name: Workflow execution trigger
         href: ../../resources/identitygovernance-workflowexecutiontrigger.md
-  - name: Privileged identity management
+  - name: Privileged Identity Management
     items:
     - name: PIM for Microsoft Entra roles
       items:
@@ -1136,6 +1130,16 @@ items:
         - name: Update unifiedRoleManagementPolicy
           href: ../../api/unifiedrolemanagementpolicy-update.md
         - name: List rules
+          href: ../../api/unifiedrolemanagementpolicy-list-rules.md
+        - name: Get unifiedRoleManagementPolicyRule
+          href: ../../api/unifiedrolemanagementpolicyrule-get.md
+        - name: Update unifiedRoleManagementPolicyRule
+          href: ../../api/unifiedrolemanagementpolicyrule-update.md
+      - name: Unified role management policy rule
+        items:
+        - name: Unified role management policy rule
+          href: ../../resources/unifiedrolemanagementpolicyrule.md
+        - name: List unifiedRoleManagementPolicyRules
           href: ../../api/unifiedrolemanagementpolicy-list-rules.md
         - name: Get unifiedRoleManagementPolicyRule
           href: ../../api/unifiedrolemanagementpolicyrule-get.md
@@ -1319,72 +1323,6 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
-  - name: Data policy operation
-    items:
-    - name: Data policy operation
-      href: ../../resources/datapolicyoperation.md
-    - name: Get dataPolicyOperation
-      href: ../../api/datapolicyoperation-get.md
-    - name: Export personal data
-      href: ../../api/user-exportpersonaldata.md
-  - name: OAuth 2 permission grant
-    items:
-    - name: OAuth 2 permission grant
-      href: ../../resources/oauth2permissiongrant.md
-    - name: List oAuth2PermissionGrants
-      href: ../../api/oauth2permissiongrant-list.md
-    - name: Get oAuth2PermissionGrant
-      href: ../../api/oauth2permissiongrant-get.md
-    - name: Create oAuth2PermissionGrant
-      href: ../../api/oauth2permissiongrant-post.md
-    - name: Update oAuth2PermissionGrant
-      href: ../../api/oauth2permissiongrant-update.md
-    - name: Delete oAuth2PermissionGrant
-      href: ../../api/oauth2permissiongrant-delete.md
-    - name: Get delta
-      href: ../../api/oauth2permissiongrant-delta.md
-  - name: Organizational branding
-    items:
-    - name: Organizational branding
-      href: ../../resources/organizationalbranding.md
-    - name: Get organizationalBranding
-      href: ../../api/organizationalbranding-get.md
-    - name: Update organizationalBranding
-      href: ../../api/organizationalbranding-update.md
-  - name: Organizational branding properties
-    href: ../../resources/organizationalbrandingproperties.md
-  - name: Organizational branding localization
-    items:
-    - name: Organizational branding localization
-      href: ../../resources/organizationalbrandinglocalization.md
-    - name: List organizationalBrandingLocalizations
-      href: ../../api/organizationalbranding-list-localizations.md
-    - name: Create organizationalBrandingLocalization
-      href: ../../api/organizationalbranding-post-localizations.md
-    - name: Get organizationalBrandingLocalization
-      href: ../../api/organizationalbrandinglocalization-get.md
-    - name: Update organizationalBrandingLocalization
-      href: ../../api/organizationalbrandinglocalization-update.md
-    - name: Delete organizationalBrandingLocalization
-      href: ../../api/organizationalbrandinglocalization-delete.md
-  - name: Certificate based auth configuration
-    items:
-    - name: Certificate based auth configuration
-      href: ../../resources/certificatebasedauthconfiguration.md
-    - name: List certificateBasedAuthConfiguration
-      href: ../../api/certificatebasedauthconfiguration-list.md
-    - name: Create certificateBasedAuthConfiguration
-      href: ../../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-    - name: Get certificateBasedAuthConfiguration
-      href: ../../api/certificatebasedauthconfiguration-get.md
-    - name: Delete certificateBasedAuthConfiguration
-      href: ../../api/certificatebasedauthconfiguration-delete.md
-  - name: Invitation
-    items:
-    - name: Invitation
-      href: ../../resources/invitation.md
-    - name: Create invitation
-      href: ../../api/invitation-post.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1493,6 +1431,24 @@ items:
     items:
     - name: Overview
       href: ../../src/authenticationstrengths-overview.md
+    - name: Authentication strength policy
+      items:
+      - name: Authentication strength policy
+        href: ../../resources/authenticationstrengthpolicy.md
+      - name: List authenticationStrengthPolicies
+        href: ../../api/authenticationstrengthroot-list-policies.md
+      - name: Create authenticationStrengthPolicy
+        href: ../../api/authenticationstrengthroot-post-policies.md
+      - name: Get authenticationStrengthPolicy
+        href: ../../api/authenticationstrengthpolicy-get.md
+      - name: Update authenticationStrengthPolicy
+        href: ../../api/authenticationstrengthpolicy-update.md
+      - name: Delete authenticationStrengthPolicy
+        href: ../../api/authenticationstrengthroot-delete-policies.md
+      - name: List usage
+        href: ../../api/authenticationstrengthpolicy-usage.md
+      - name: updateAllowedCombinations
+        href: ../../api/authenticationstrengthpolicy-updateallowedcombinations.md
     - name: Authentication combination configuration
       items:
       - name: Authentication combination configuration
@@ -1507,8 +1463,6 @@ items:
         href: ../../api/authenticationcombinationconfiguration-update.md
       - name: Delete
         href: ../../api/authenticationstrengthpolicy-delete-combinationconfigurations.md
-    - name: FIDO2 combination configuration
-      href: ../../resources/fido2combinationconfiguration.md
     - name: Authentication method mode detail
       items:
       - name: Authentication method mode detail
@@ -1517,6 +1471,18 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authenticationMethodModeDetail
         href: ../../api/authenticationmethodmodedetail-get.md
+  - name: Certificate based auth configuration
+    items:
+    - name: Certificate based auth configuration
+      href: ../../resources/certificatebasedauthconfiguration.md
+    - name: List certificateBasedAuthConfiguration
+      href: ../../api/certificatebasedauthconfiguration-list.md
+    - name: Create certificateBasedAuthConfiguration
+      href: ../../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+    - name: Get certificateBasedAuthConfiguration
+      href: ../../api/certificatebasedauthconfiguration-get.md
+    - name: Delete certificateBasedAuthConfiguration
+      href: ../../api/certificatebasedauthconfiguration-delete.md
   - name: Conditional access
     items:
     - name: Conditional access policy
@@ -1639,8 +1605,18 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-update.md
       - name: Delete crossTenantIdentitySyncPolicyPartner
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
+  - name: Data policy operation
+    items:
+    - name: Data policy operation
+      href: ../../resources/datapolicyoperation.md
+    - name: Get dataPolicyOperation
+      href: ../../api/datapolicyoperation-get.md
+    - name: Export personal data
+      href: ../../api/user-exportpersonaldata.md
   - name: Identity protection
     items:
+    - name: Overview
+      href: ../../resources/identityprotection-overview.md
     - name: Risk detection
       items:
       - name: Risk detection
@@ -1801,6 +1777,52 @@ items:
         href: ../../api/identityprovider-delete.md
       - name: List identityProviders
         href: ../../api/identityprovider-list.md
+  - name: Invitation
+    items:
+    - name: Invitation
+      href: ../../resources/invitation.md
+    - name: Create invitation
+      href: ../../api/invitation-post.md
+  - name: OAuth 2 permission grant
+    items:
+    - name: OAuth 2 permission grant
+      href: ../../resources/oauth2permissiongrant.md
+    - name: List oAuth2PermissionGrants
+      href: ../../api/oauth2permissiongrant-list.md
+    - name: Get oAuth2PermissionGrant
+      href: ../../api/oauth2permissiongrant-get.md
+    - name: Create oAuth2PermissionGrant
+      href: ../../api/oauth2permissiongrant-post.md
+    - name: Update oAuth2PermissionGrant
+      href: ../../api/oauth2permissiongrant-update.md
+    - name: Delete oAuth2PermissionGrant
+      href: ../../api/oauth2permissiongrant-delete.md
+    - name: Get delta
+      href: ../../api/oauth2permissiongrant-delta.md
+  - name: Organizational branding
+    items:
+    - name: Organizational branding
+      href: ../../resources/organizationalbranding.md
+    - name: Get organizationalBranding
+      href: ../../api/organizationalbranding-get.md
+    - name: Update organizationalBranding
+      href: ../../api/organizationalbranding-update.md
+  - name: Organizational branding localization
+    items:
+    - name: Organizational branding localization
+      href: ../../resources/organizationalbrandinglocalization.md
+    - name: List organizationalBrandingLocalizations
+      href: ../../api/organizationalbranding-list-localizations.md
+    - name: Create organizationalBrandingLocalization
+      href: ../../api/organizationalbranding-post-localizations.md
+    - name: Get organizationalBrandingLocalization
+      href: ../../api/organizationalbrandinglocalization-get.md
+    - name: Update organizationalBrandingLocalization
+      href: ../../api/organizationalbrandinglocalization-update.md
+    - name: Delete organizationalBrandingLocalization
+      href: ../../api/organizationalbrandinglocalization-delete.md
+  - name: Organizational branding properties
+    href: ../../resources/organizationalbrandingproperties.md
   - name: Policies
     items:
     - name: Overview
@@ -2160,7 +2182,7 @@ items:
 - name: Granular delegated admin privileges
   items:
   - name: Overview
-    href: ../../src/delegatedadminrelationships-api-overview.md
+    href: ../../resources/delegatedadminrelationships-api-overview.md
   - name: Delegated admin access assignment
     items:
     - name: Delegated admin access assignment
