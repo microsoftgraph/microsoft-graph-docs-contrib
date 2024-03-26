@@ -51,15 +51,18 @@ POST /security/runHuntingQuery
 
 In the request body, provide a JSON object for the parameter, `Query`. 
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|Query|String|The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).|
+| Parameter    | Type            | Description                                                                                                                      | Example                                                            |
+|:-------------|:----------------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
+| Query        | String          | The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
+| Timespan     | String (optional) | The timespan for the query in Kusto Query Language (KQL). If provided, the query will be executed within this timespan. If not provided, the default timespan of 30 days will be used, specified in ISO 8601 format. | **Date/Date**: `"2024-02-01T08:00:00Z/2024-02-15T08:00:00Z"`<br>**Duration/EndDate**: `"P30D/2024-02-15T08:00:00Z"`<br>**Start/Duration**: `"2024-02-01T08:00:00Z/P30D"`<br>**ISO8601 Duration**: `"P30D"`<br>**Single Date/Time**: `"2024-02-01T08:00:00Z"` |
 
 ## Response
 
 If successful, this action returns a `200 OK` response code and a [huntingQueryResults](../resources/security-huntingqueryresults.md) in the response body.
 
 ## Examples
+
+## Example 1: Query with default timespan
 
 ### Request
 
@@ -69,7 +72,6 @@ This example specifies a KQL query which does the following:
 - Specifies the output of 3 columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
 - Sorts the output by the `Timestamp` value.
 - Limits the output to 2 records (2 rows).
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,6 +84,106 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 {
     "Query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
+}
+```
+
+### Response
+
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
+    "schema": [
+        {
+            "name": "Timestamp",
+            "type": "DateTime"
+        },
+        {
+            "name": "FileName",
+            "type": "String"
+        },
+        {
+            "name": "InitiatingProcessFileName",
+            "type": "String"
+        }
+    ],
+    "results": [
+        {
+            "Timestamp": "2024-03-26T09:39:50.7688641Z",
+            "FileName": "cmd.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        },
+        {
+            "Timestamp": "2024-03-26T09:39:49.4353788Z",
+            "FileName": "cmd.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        }
+    ]
+}
+```
+
+## Example 2: Query with optional Timespan parameter specified
+
+### Request
+
+This example specifies a KQL query which does the following:
+- Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "security_runhuntingquery"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
+
+{
+    "Query": "DeviceProcessEvents",
+    "Timespan": "P90D"
+}
+```
+
+### Response
+
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
+    "schema": [
+        {
+            "name": "Timestamp",
+            "type": "DateTime"
+        },
+        {
+            "name": "FileName",
+            "type": "String"
+        },
+        {
+            "name": "InitiatingProcessFileName",
+            "type": "String"
+        }
+    ],
+    "results": [
+        {
+            "Timestamp": "2024-12-26T09:39:50.7688641Z",
+            "FileName": "cmd.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        },
+        {
+            "Timestamp": "2024-09-26T09:39:49.4353788Z",
+            "FileName": "explorer.exe",
+            "InitiatingProcessFileName": "cmd.exe"
+        },
+        {
+            "Timestamp": "2024-06-26T09:39:49.4353788Z",
+            "FileName": "notepad.exe",
+            "InitiatingProcessFileName": "explorer.exe"
+        },
+        {
+            "Timestamp": "2024-03-26T09:39:49.4353788Z",
+            "FileName": "cmd.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        }
+    ]
 }
 ```
 
