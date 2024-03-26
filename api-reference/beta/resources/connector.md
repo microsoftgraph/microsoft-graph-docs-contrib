@@ -30,14 +30,14 @@ Represents an Application Proxy connector. Connectors are lightweight agents tha
 |:-------------|:------------|:------------|
 |externalIp|String| The external IP address as detected by the connector server. Read-only. |
 |id|String| The unique identifier of the connector. Read-only. |
-|machineName|String| The name of the computer the connector is installed and runs on. |
+|machineName|String| The name of the computer on which the connector is installed and runs on. |
 |status|connectorStatus| Indicates the status of the connector. The possible values are: `active`, `inactive`. Read-only. |
 |version|String|The version of the connector.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|memberOf|[connectorGroup](connectorgroup.md) collection| The connectorGroup that the connector is a member of. Read-only. |
+|memberOf|[connectorGroup](connectorgroup.md) collection| The **connectorGroup** that the connector is a member of. Read-only. |
 
 ## JSON representation
 
@@ -60,7 +60,6 @@ The following JSON representation shows the resource type.
   "status": "String",
   "version": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
