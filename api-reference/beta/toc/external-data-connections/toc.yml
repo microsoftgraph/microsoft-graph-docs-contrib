@@ -1,0 +1,117 @@
+items:
+- name: Overview
+  href: ../../resources/connectors-api-overview.md
+- name: Connection operation
+  items:
+  - name: Connection operation
+    href: ../../resources/externalconnectors-connectionoperation.md
+  - name: Get connectionOperation
+    href: ../../api/externalconnectors-connectionoperation-get.md
+- name: Connection quota
+  items:
+  - name: Connection quota
+    href: ../../resources/externalconnectors-connectionquota.md
+  - name: Get connectionQuota
+    href: ../../api/externalconnectors-connectionquota-get.md
+- name: External connection
+  items:
+  - name: External connection
+    href: ../../resources/externalconnectors-externalconnection.md
+  - name: Create externalConnection
+    href: ../../api/externalconnectors-external-post-connections.md
+  - name: List externalConnections
+    href: ../../api/externalconnectors-externalconnection-list.md
+  - name: Get externalConnection
+    href: ../../api/externalconnectors-externalconnection-get.md
+  - name: Update externalConnection
+    href: ../../api/externalconnectors-externalconnection-update.md
+  - name: Delete externalConnection
+    href: ../../api/externalconnectors-externalconnection-delete.md
+  - name: Create schema
+    href: ../../api/externalconnectors-externalconnection-patch-schema.md
+  - name: Get operation
+    href: ../../api/externalconnectors-connectionoperation-get.md
+  - name: Create externalItem
+    href: ../../api/externalconnectors-externalconnection-put-items.md
+  - name: Get connectionQuota
+    href: ../../api/externalconnectors-connectionquota-get.md
+- name: External group
+  items:
+  - name: External group
+    href: ../../resources/externalconnectors-externalgroup.md
+  - name: Create externalGroup
+    href: ../../api/externalconnectors-externalconnection-post-groups.md
+  - name: Delete externalGroup
+    href: ../../api/externalconnectors-externalgroup-delete.md
+  - name: Create member
+    href: ../../api/externalconnectors-externalgroup-post-members.md
+- name: External item
+  items:
+  - name: External item
+    href: ../../resources/externalconnectors-externalitem.md
+  - name: Create externalItem
+    href: ../../api/externalconnectors-externalconnection-put-items.md
+  - name: Get externalItem
+    href: ../../api/externalconnectors-externalitem-get.md
+  - name: Update externalItem
+    href: ../../api/externalconnectors-externalitem-update.md
+  - name: Delete externalItem
+    href: ../../api/externalconnectors-externalitem-delete.md
+  - name: Add activities
+    href: ../../api/externalconnectors-externalitem-addactivities.md
+- name: Identity
+  items:
+  - name: Identity
+    href: ../../resources/externalconnectors-identity.md
+  - name: Create identity
+    href: ../../api/externalconnectors-externalgroup-post-members.md
+  - name: Delete identity
+    href: ../../api/externalconnectors-externalgroup-delete.md
+- name: Schema
+  items:
+  - name: Schema
+    href: ../../resources/externalconnectors-schema.md
+  - name: Create schema
+    href: ../../api/externalconnectors-externalconnection-patch-schema.md
+  - name: Get schema
+    href: ../../api/externalconnectors-schema-get.md
+  - name: Update schema
+    href: ../../api/externalconnectors-schema-update.md
+- name: Complex types
+  items:
+  - name: Acl
+    href: ../../resources/externalconnectors-acl.md
+  - name: Activity settings
+    href: ../../resources/externalconnectors-activitysettings.md
+  - name: Configuration
+    href: ../../resources/externalconnectors-configuration.md
+  - name: Display template
+    href: ../../resources/externalconnectors-displaytemplate.md
+  - name: External activity
+    href: ../../resources/externalconnectors-externalactivity.md
+  - name: External activity result
+    href: ../../resources/externalconnectors-externalactivityresult.md
+  - name: External item content
+    href: ../../resources/externalconnectors-externalitemcontent.md
+  - name: Item id resolver
+    href: ../../resources/externalconnectors-itemidresolver.md
+  - name: Json
+    href: ../../resources/json.md
+  - name: Property
+    href: ../../resources/externalconnectors-property.md
+  - name: Property rule
+    href: ../../resources/externalconnectors-propertyrule.md
+  - name: Public error
+    href: ../../resources/publicerror.md
+  - name: Public error detail
+    href: ../../resources/publicerrordetail.md
+  - name: Public inner error
+    href: ../../resources/publicinnererror.md
+  - name: Ranking hint
+    href: ../../resources/externalconnectors-rankinghint.md
+  - name: Search settings
+    href: ../../resources/externalconnectors-searchsettings.md
+  - name: URL match info
+    href: ../../resources/externalconnectors-urlmatchinfo.md
+  - name: URL to item resolver base
+    href: ../../resources/externalconnectors-urltoitemresolverbase.md

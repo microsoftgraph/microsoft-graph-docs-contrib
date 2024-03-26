@@ -1,0 +1,289 @@
+items:
+- name: Overview
+  href: ../../resources/sharepoint.md
+- name: Site
+  items:
+  - name: Site
+    href: ../../resources/site.md
+  - name: Get root site
+    href: ../../api/site-get.md
+  - name: Get site
+    href: ../../api/site-get.md
+  - name: Get site by path
+    href: ../../api/site-getbypath.md
+  - name: Get site for a group
+    href: ../../api/site-get.md
+  - name: Get analytics
+    href: ../../api/itemanalytics-get.md
+  - name: Get activities by interval
+    href: ../../api/itemactivity-getbyinterval.md
+  - name: List pages
+    href: ../../api/baseSitePage-list.md
+  - name: List root sites
+    href: ../../api/site-list.md
+  - name: List sites across geographies
+    href: ../../api/site-getallsites.md
+  - name: Search for sites
+    href: ../../api/site-search.md
+  - name: Follow site
+    href: ../../api/site-follow.md
+  - name: Unfollow site
+    href: ../../api/site-unfollow.md
+  - name: List followed sites
+    href: ../../api/sites-list-followed.md
+  - name: Get permission
+    href: ../../api/site-get-permission.md
+  - name: List permissions
+    href: ../../api/site-list-permissions.md
+  - name: Create permissions
+    href: ../../api/site-post-permissions.md
+  - name: Delete permission
+    href: ../../api/site-delete-permission.md
+  - name: Update permission
+    href: ../../api/site-update-permission.md
+  - name: List content types
+    href: ../../api/site-list-contenttypes.md
+  - name: Create contentType
+    href: ../../api/site-post-contenttypes.md
+  - name: List columns
+    href: ../../api/site-list-columns.md
+  - name: Create column
+    href: ../../api/site-post-columns.md
+  - name: List operations
+    href: ../../api/site-list-operations.md
+  - name: Get site settings
+    href: ../../api/sitesettings-get.md
+- name: List
+  items:
+  - name: List
+    href: ../../resources/list.md
+  - name: Get lists in a site
+    href: ../../api/list-list.md
+  - name: Create list
+    href: ../../api/list-create.md
+  - name: Get list
+    href: ../../api/list-get.md
+  - name: Get recent activities
+    href: ../../api/activities-list.md
+  - name: Enumerate list items
+    href: ../../api/listitem-list.md
+  - name: Update list item
+    href: ../../api/listitem-update.md
+  - name: Delete list item
+    href: ../../api/listitem-delete.md
+  - name: Create list item
+    href: ../../api/listitem-create.md
+  - name: Get websocket endpoint
+    href: ../../api/subscriptions-socketio.md
+  - name: List operations
+    href: ../../api/list-list-operations.md
+  - name: List content types
+    href: ../../api/list-list-contenttypes.md
+  - name: Add copy of content type from site
+    href: ../../api/contenttype-addcopy.md
+  - name: List columns
+    href: ../../api/list-list-columns.md
+  - name: Create column
+    href: ../../api/list-post-columns.md
+- name: Column definition
+  items:
+  - name: Column definition
+    href: ../../resources/columndefinition.md
+  - name: List columns in a site
+    href: ../../api/site-list-columns.md
+  - name: List columns in a list
+    href: ../../api/list-list-columns.md
+  - name: List columns in a content type
+    href: ../../api/contenttype-list-columns.md
+  - name: Create columnDefinition for a site
+    href: ../../api/site-post-columns.md
+  - name: Create columnDefinition for a list
+    href: ../../api/list-post-columns.md
+  - name: Create columnDefinition for a content type
+    href: ../../api/contenttype-post-columns.md
+  - name: Get columnDefinition
+    href: ../../api/columndefinition-get.md
+  - name: Update columnDefinition
+    href: ../../api/columndefinition-update.md
+  - name: Delete columnDefinition
+    href: ../../api/columndefinition-delete.md
+- name: Content type
+  href: ../../resources/contenttype.md
+- name: List item
+  href: ../../resources/listitem.md
+- name: Document set version
+  items:
+  - name: Document set version
+    href: ../../resources/documentsetversion.md
+  - name: List documentSetVersions
+    href: ../../api/listitem-list-documentsetversions.md
+  - name: Create documentSetVersion
+    href: ../../api/listitem-post-documentsetversions.md
+  - name: Get documentSetVersion
+    href: ../../api/documentsetversion-get.md
+  - name: Delete documentSetVersion
+    href: ../../api/documentsetversion-delete.md
+  - name: restore
+    href: ../../api/documentsetversion-restore.md
+- name: Recycle bin item
+  items:
+  - name: Recycle bin item
+    href: ../../resources/recyclebinitem.md
+  - name: List items
+    href: ../../api/recyclebin-list-items.md
+- name: Rich long running operation
+  items:
+  - name: Rich long running operation
+    href: ../../resources/richlongrunningoperation.md
+  - name: List richLongRunningOperations in a site
+    href: ../../api/site-list-operations.md
+  - name: List richLongRunningOperations in a list
+    href: ../../api/list-list-operations.md
+  - name: Get richLongRunningOperation
+    href: ../../api/richlongrunningoperation-get.md
+- name: Permission
+  items:
+  - name: Permission
+    href: ../../resources/permission.md
+  - name: List permissions
+    href: ../../api/driveitem-list-permissions.md
+  - name: Get permission
+    href: ../../api/permission-get.md
+  - name: Create link
+    href: ../../api/driveitem-createlink.md
+  - name: Invite people
+    href: ../../api/driveitem-invite.md
+  - name: Update
+    href: ../../api/permission-update.md
+  - name: Delete
+    href: ../../api/permission-delete.md
+  - name: Add users to sharing link
+    href: ../../api/permission-grant.md
+  - name: Revoke grants
+    href: ../../api/permission-revokegrants.md
+- name: Sharepoint settings
+  items:
+  - name: Sharepoint settings
+    href: ../../resources/sharepointsettings.md
+  - name: Get settings
+    href: ../../api/sharepointsettings-get.md
+  - name: Update settings
+    href: ../../api/sharepointsettings-update.md
+- name: Pages (preview)
+  items:
+  - name: Base site page
+    items:
+    - name: Base site page
+      href: ../../resources/basesitepage.md
+    - name: List baseSitePage
+      href: ../../api/basesitepage-list.md
+    - name: Get baseSitePage
+      href: ../../api/baseSitePage-get.md
+    - name: Delete baseSitePage
+      href: ../../api/baseSitePage-delete.md
+  - name: Site page
+    items:
+    - name: Site page
+      href: ../../resources/sitepage.md
+    - name: List sitePages
+      href: ../../api/sitepage-list.md
+    - name: Create sitePage
+      href: ../../api/sitepage-create.md
+    - name: Get sitePage
+      href: ../../api/sitepage-get.md
+    - name: Update sitePage
+      href: ../../api/sitepage-update.md
+    - name: Delete sitePage
+      href: ../../api/basesitepage-delete.md
+    - name: Publish sitePage
+      href: ../../api/sitepage-publish.md
+    - name: Get a collection of WebParts by position information
+      href: ../../api/sitepage-getwebpartsbyposition.md
+  - name: Web part
+    items:
+    - name: Web part
+      href: ../../resources/webpart.md
+    - name: List webParts
+      href: ../../api/webpart-list.md
+    - name: Get webPart
+      href: ../../api/webpart-get.md
+    - name: Delete webPart
+      href: ../../api/webpart-delete.md
+    - name: Create webPart
+      href: ../../api/sitepage-create-webpart.md
+    - name: Update webPart
+      href: ../../api/webpart-update.md
+    - name: Get webPart position
+      href: ../../api/webpart-getposition.md
+    - name: Get webPart collection by position
+      href: ../../api/sitePage-getwebpartsbyposition.md
+    - name: Text web part
+      href: ../../resources/textwebpart.md
+    - name: Standard web part
+      href: ../../resources/standardwebpart.md
+- name: Taxonomy
+  items:
+  - name: Store
+    items:
+    - name: Store
+      href: ../../resources/termstore-store.md
+    - name: List groups
+      href: ../../api/termstore-list-groups.md
+    - name: Get store
+      href: ../../api/termstore-store-get.md
+    - name: Update store
+      href: ../../api/termstore-store-update.md
+  - name: Group
+    items:
+    - name: Group
+      href: ../../resources/termstore-group.md
+    - name: Create group
+      href: ../../api/termstore-group-post.md
+    - name: Get group
+      href: ../../api/termstore-group-get.md
+    - name: Delete group
+      href: ../../api/termstore-group-delete.md
+  - name: Set
+    items:
+    - name: Set
+      href: ../../resources/termstore-set.md
+    - name: List sets
+      href: ../../api/termstore-group-list-sets.md
+    - name: Create set
+      href: ../../api/termstore-set-post.md
+    - name: Create term
+      href: ../../api/termstore-term-post.md
+    - name: Get set
+      href: ../../api/termstore-set-get.md
+    - name: Get term
+      href: ../../api/termstore-term-get.md
+    - name: Update set
+      href: ../../api/termstore-set-update.md
+    - name: Delete set
+      href: ../../api/termstore-set-delete.md
+  - name: Term
+    items:
+    - name: Term
+      href: ../../resources/termstore-term.md
+    - name: List children
+      href: ../../api/termstore-term-list-children.md
+    - name: List relations
+      href: ../../api/termstore-term-list-relations.md
+    - name: Create relation
+      href: ../../api/termstore-relation-post.md
+    - name: Create term
+      href: ../../api/termstore-term-post.md
+    - name: Get term
+      href: ../../api/termstore-term-get.md
+    - name: Update term
+      href: ../../api/termstore-term-update.md
+    - name: Delete term
+      href: ../../api/termstore-term-delete.md
+  - name: Relation
+    items:
+    - name: Relation
+      href: ../../resources/termstore-relation.md
+    - name: List relations
+      href: ../../api/termstore-term-list-relations.md
+    - name: Create relation
+      href: ../../api/termstore-relation-post.md

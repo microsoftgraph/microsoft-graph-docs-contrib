@@ -1,0 +1,119 @@
+items:
+- name: Overview
+  href: ../../resources/onenote-api-overview.md
+- name: Notebook
+  items:
+  - name: Notebook
+    href: ../../resources/notebook.md
+  - name: Get notebook
+    href: ../../api/notebook-get.md
+  - name: getRecentNotebooks
+    href: ../../api/notebook-getrecentnotebooks.md
+  - name: getNotebookFromWebUrl
+    href: ../../api/notebook-getnotebookfromweburl.md
+  - name: Create section group
+    href: ../../api/notebook-post-sectiongroups.md
+  - name: List section groups
+    href: ../../api/notebook-list-sectiongroups.md
+  - name: Create section
+    href: ../../api/notebook-post-sections.md
+  - name: List sections
+    href: ../../api/notebook-list-sections.md
+  - name: copyNotebook
+    href: ../../api/notebook-copynotebook.md
+- name: OneNote
+  items:
+  - name: OneNote
+    href: ../../resources/onenote.md
+  - name: Create notebook
+    href: ../../api/onenote-post-notebooks.md
+  - name: List notebooks
+    href: ../../api/onenote-list-notebooks.md
+  - name: Create page
+    href: ../../api/onenote-post-pages.md
+  - name: List pages
+    href: ../../api/onenote-list-pages.md
+  - name: List section groups
+    href: ../../api/onenote-list-sectiongroups.md
+  - name: List sections
+    href: ../../api/onenote-list-sections.md
+- name: OneNote operation
+  items:
+  - name: OneNote operation
+    href: ../../resources/onenoteoperation.md
+  - name: Get operation
+    href: ../../api/onenoteoperation-get.md
+- name: OneNote page
+  items:
+  - name: OneNote page
+    href: ../../resources/onenotepage.md
+  - name: Get page
+    href: ../../api/page-get.md
+  - name: Update page content
+    href: ../../api/page-update.md
+  - name: Delete page
+    href: ../../api/page-delete.md
+  - name: copyToSection
+    href: ../../api/page-copytosection.md
+- name: OneNote resource
+  items:
+  - name: OneNote resource
+    href: ../../resources/onenoteresource.md
+  - name: Get resource binary data
+    href: ../../api/resource-get.md
+- name: OneNote section
+  items:
+  - name: OneNote section
+    href: ../../resources/onenotesection.md
+  - name: Get section
+    href: ../../api/section-get.md
+  - name: Create page
+    href: ../../api/section-post-pages.md
+  - name: List pages
+    href: ../../api/section-list-pages.md
+  - name: copyToNotebook
+    href: ../../api/section-copytonotebook.md
+  - name: copyToSectionGroup
+    href: ../../api/section-copytosectiongroup.md
+- name: Recent notebook
+  items:
+  - name: Recent notebook
+    href: ../../resources/recentnotebook.md
+  - name: getRecentNotebooks
+    href: ../../api/notebook-getrecentnotebooks.md
+- name: Section group
+  items:
+  - name: Section group
+    href: ../../resources/sectiongroup.md
+  - name: Get section group
+    href: ../../api/sectiongroup-get.md
+  - name: Create section group
+    href: ../../api/sectiongroup-post-sectiongroups.md
+  - name: List section groups
+    href: ../../api/sectiongroup-list-sectiongroups.md
+  - name: Create section
+    href: ../../api/sectiongroup-post-sections.md
+  - name: List sections
+    href: ../../api/sectiongroup-list-sections.md
+- name: Complex types
+  items:
+  - name: Diagnostic
+    href: ../../resources/diagnostic.md
+  - name: External link
+    href: ../../resources/externallink.md
+  - name: Identity
+    href: ../../resources/identity.md
+  - name: Identity set
+    href: ../../resources/identityset.md
+  - name: Notebook links
+    href: ../../resources/notebooklinks.md
+  - name: OneNote operation error
+    href: ../../resources/onenoteoperationerror.md
+  - name: Operation
+    href: ../../resources/operation.md
+  - name: Page links
+    href: ../../resources/pagelinks.md
+  - name: Recent notebook links
+    href: ../../resources/recentnotebooklinks.md
+  - name: Section links
+    href: ../../resources/sectionlinks.md

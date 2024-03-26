@@ -1,0 +1,41 @@
+items:
+- name: Overview
+  href: ../../graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http
+- name: Extension property
+  items:
+  - name: Extension property
+    href: ../../resources/extensionproperty.md
+  - name: Create extensionProperties
+    href: ../../api/application-post-extensionproperty.md
+  - name: List extensionProperties
+    href: ../../api/application-list-extensionproperty.md
+  - name: Get extensionProperty
+    href: ../../api/extensionproperty-get.md
+  - name: Delete extensionProperty
+    href: ../../api/extensionproperty-delete.md
+- name: Open type extension
+  items:
+  - name: Open type extension
+    href: ../../resources/opentypeextension.md
+  - name: Create
+    href: ../../api/opentypeextension-post-opentypeextension.md
+  - name: Get
+    href: ../../api/opentypeextension-get.md
+  - name: Update
+    href: ../../api/opentypeextension-update.md
+  - name: Delete
+    href: ../../api/opentypeextension-delete.md
+- name: Schema extension
+  items:
+  - name: Schema extension
+    href: ../../resources/schemaextension.md
+  - name: Create
+    href: ../../api/schemaextension-post-schemaextensions.md
+  - name: List
+    href: ../../api/schemaextension-list.md
+  - name: Get
+    href: ../../api/schemaextension-get.md
+  - name: Update
+    href: ../../api/schemaextension-update.md
+  - name: Delete
+    href: ../../api/schemaextension-delete.md

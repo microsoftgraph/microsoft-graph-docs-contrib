@@ -1,0 +1,437 @@
+items:
+- name: Overview
+  href: ../../resources/education-overview.md
+- name: Education school
+  items:
+  - name: Education school
+    href: ../../resources/educationschool.md
+  - name: Get
+    href: ../../api/educationschool-get.md
+  - name: Add class
+    href: ../../api/educationschool-post-classes.md
+  - name: List classes
+    href: ../../api/educationschool-list-classes.md
+  - name: Remove class
+    href: ../../api/educationschool-delete-classes.md
+  - name: Add user
+    href: ../../api/educationschool-post-users.md
+  - name: List users
+    href: ../../api/educationschool-list-users.md
+  - name: Remove user
+    href: ../../api/educationschool-delete-users.md
+  - name: Get administrativeUnit
+    href: ../../api/educationschool-get-administrativeunit.md
+  - name: Update
+    href: ../../api/educationschool-update.md
+  - name: Delete
+    href: ../../api/educationschool-delete.md
+  - name: Delta
+    href: ../../api/educationschool-delta.md
+- name: Education class
+  items:
+  - name: Education class
+    href: ../../resources/educationclass.md
+  - name: Get educationClass
+    href: ../../api/educationclass-get.md
+  - name: Add member
+    href: ../../api/educationclass-post-members.md
+  - name: List members
+    href: ../../api/educationclass-list-members.md
+  - name: Remove student
+    href: ../../api/educationclass-delete-members.md
+  - name: List schools
+    href: ../../api/educationclass-list-schools.md
+  - name: Add teacher
+    href: ../../api/educationclass-post-teachers.md
+  - name: List teachers
+    href: ../../api/educationclass-list-teachers.md
+  - name: Remove teacher
+    href: ../../api/educationclass-delete-teachers.md
+  - name: Create educationAssignment
+    href: ../../api/educationclass-post-assignments.md
+  - name: List assignments
+    href: ../../api/educationclass-list-assignments.md
+  - name: List modules
+    href: ../../api/educationclass-list-modules.md
+  - name: Get group
+    href: ../../api/educationclass-get-group.md
+  - name: Create educationCategory
+    href: ../../api/educationclass-post-category.md
+  - name: List categories
+    href: ../../api/educationclass-list-categories.md
+  - name: Update
+    href: ../../api/educationclass-update.md
+  - name: Delete
+    href: ../../api/educationclass-delete.md
+  - name: Get delta
+    href: ../../api/educationclass-delta.md
+- name: Education user
+  items:
+  - name: Education user
+    href: ../../resources/educationuser.md
+  - name: Get educationUser
+    href: ../../api/educationuser-get.md
+  - name: List classes
+    href: ../../api/educationuser-list-classes.md
+  - name: List schools
+    href: ../../api/educationuser-list-schools.md
+  - name: Get user
+    href: ../../api/educationuser-get-user.md
+  - name: Update
+    href: ../../api/educationuser-update.md
+  - name: Delete
+    href: ../../api/educationuser-delete.md
+  - name: Delta
+    href: ../../api/educationuser-delta.md
+- name: Education assignment
+  items:
+  - name: Education assignment
+    href: ../../resources/educationassignment.md
+  - name: Create assignment resource
+    href: ../../api/educationassignment-post-resources.md
+  - name: Get assignment
+    href: ../../api/educationassignment-get.md
+  - name: Update
+    href: ../../api/educationassignment-update.md
+  - name: Delete
+    href: ../../api/educationassignment-delete.md
+  - name: Publish
+    href: ../../api/educationassignment-publish.md
+  - name: Set up assignment resources folder
+    href: ../../api/educationassignment-setupresourcesfolder.md
+  - name: Set up assignment feedback resources folder
+    href: ../../api/educationassignment-setupfeedbackresourcesfolder.md
+  - name: List resources
+    href: ../../api/educationassignment-list-resources.md
+  - name: List submissions
+    href: ../../api/educationassignment-list-submissions.md
+  - name: List categories
+    href: ../../api/educationassignment-list-categories.md
+  - name: Add categories
+    href: ../../api/educationassignment-post-categories.md
+  - name: Remove category
+    href: ../../api/educationassignment-remove-category.md
+  - name: Attach rubric
+    href: ../../api/educationassignment-put-rubric.md
+  - name: Remove rubric
+    href: ../../api/educationassignment-delete-rubric.md
+  - name: Get delta
+    href: ../../api/educationassignment-delta.md
+  - name: Add educationGradingCategory
+    href: ../../api/educationassignment-post-gradingcategory.md
+  - name: Remove educationGradingCategory
+    href: ../../api/educationassignment-delete-gradingcategory.md
+  - name: Activate assignment
+    href: ../../api/educationassignment-activate.md
+  - name: Deactivate assignment
+    href: ../../api/educationassignment-deactivate.md
+- name: Education assignment defaults
+  items:
+  - name: Education assignment defaults
+    href: ../../resources/educationassignmentdefaults.md
+  - name: Get educationAssignmentDefaults
+    href: ../../api/educationassignmentdefaults-get.md
+  - name: Update educationAssignmentDefaults
+    href: ../../api/educationassignmentdefaults-update.md
+- name: Education assignment resource
+  items:
+  - name: Education assignment resource
+    href: ../../resources/educationassignmentresource.md
+  - name: Get educationAssignmentResource
+    href: ../../api/educationassignmentresource-get.md
+  - name: Delete
+    href: ../../api/educationassignmentresource-delete.md
+- name: Education assignment settings
+  items:
+  - name: Education assignment settings
+    href: ../../resources/educationassignmentsettings.md
+  - name: Get educationAssignmentSettings
+    href: ../../api/educationassignmentsettings-get.md
+  - name: Update educationAssignmentSettings
+    href: ../../api/educationassignmentsettings-update.md
+- name: Education category
+  items:
+  - name: Education category
+    href: ../../resources/educationcategory.md
+  - name: Create category
+    href: ../../api/educationclass-post-category.md
+  - name: Get educationCategory
+    href: ../../api/educationcategory-get.md
+  - name: Delete category
+    href: ../../api/educationcategory-delete.md
+  - name: Get delta
+    href: ../../api/educationcategory-delta.md
+- name: Education feedback outcome
+  items:
+  - name: Education feedback outcome
+    href: ../../resources/educationfeedbackoutcome.md
+  - name: Update educationOutcome
+    href: ../../api/educationoutcome-update.md
+- name: Education feedback resource outcome
+  items:
+  - name: Education feedback resource outcome
+    href: ../../resources/educationfeedbackresourceoutcome.md
+  - name: Create educationFeedbackResourceOutcome
+    href: ../../api/educationfeedbackresourceoutcome-post-outcomes.md
+  - name: Delete educationFeedbackResourceOutcome
+    href: ../../api/educationfeedbackresourceoutcome-delete.md
+- name: Education grading category
+  items:
+  - name: Education grading category
+    href: ../../resources/educationgradingcategory.md
+  - name: Add gradingCategory
+    href: ../../api/educationassignment-post-gradingcategory.md
+  - name: Remove gradingCategory
+    href: ../../api/educationassignment-delete-gradingcategory.md
+  - name: Update gradingCategory
+    href: ../../api/educationgradingcategory-update.md
+- name: Education grading scheme
+  items:
+  - name: Education grading scheme
+    href: ../../resources/educationgradingscheme.md
+  - name: List educationGradingScheme objects
+    href: ../../api/educationassignmentsettings-get.md
+  - name: Create educationGradingScheme
+    href: ../../api/educationassignment-post-gradingscheme.md
+  - name: Get educationGradingScheme
+    href: ../../api/educationgradingscheme-get.md
+  - name: Update educationGradingScheme
+    href: ../../api/educationgradingscheme-update.md
+  - name: Delete educationGradingScheme
+    href: ../../api/educationgradingscheme-delete.md
+- name: Education module
+  items:
+  - name: Education module
+    href: ../../resources/educationmodule.md
+  - name: List modules
+    href: ../../api/educationclass-list-modules.md
+  - name: Create
+    href: ../../api/educationclass-post-module.md
+  - name: Get module
+    href: ../../api/educationmodule-get.md
+  - name: Update
+    href: ../../api/educationmodule-update.md
+  - name: Delete
+    href: ../../api/educationmodule-delete.md
+  - name: Pin
+    href: ../../api/educationmodule-pin.md
+  - name: Unpin
+    href: ../../api/educationmodule-unpin.md
+  - name: Publish
+    href: ../../api/educationmodule-publish.md
+  - name: Set up module resources folder
+    href: ../../api/educationmodule-setupresourcesfolder.md
+- name: Education module resource
+  items:
+  - name: Education module resource
+    href: ../../resources/educationmoduleresource.md
+  - name: List resources
+    href: ../../api/educationmodule-list-resources.md
+  - name: Create educationModuleResource
+    href: ../../api/educationmodule-post-resources.md
+  - name: Get educationModuleResource
+    href: ../../api/educationmoduleresource-get.md
+  - name: Update educationModuleResource
+    href: ../../api/educationmoduleresource-update.md
+  - name: Delete educationModuleResource
+    href: ../../api/educationmoduleresource-delete.md
+- name: Education outcome
+  items:
+  - name: Education outcome
+    href: ../../resources/educationoutcome.md
+  - name: Update educationOutcome
+    href: ../../api/educationoutcome-update.md
+- name: Education points outcome
+  items:
+  - name: Education points outcome
+    href: ../../resources/educationpointsoutcome.md
+  - name: Update educationOutcome
+    href: ../../api/educationoutcome-update.md
+- name: Education rubric
+  items:
+  - name: Education rubric
+    href: ../../resources/educationrubric.md
+  - name: Create educationRubric
+    href: ../../api/educationuser-post-rubrics.md
+  - name: Get educationRubric
+    href: ../../api/educationrubric-get.md
+  - name: Update educationRubric
+    href: ../../api/educationrubric-update.md
+  - name: Delete educationRubric
+    href: ../../api/educationrubric-delete.md
+- name: Education rubric outcome
+  items:
+  - name: Education rubric outcome
+    href: ../../resources/educationrubricoutcome.md
+  - name: Update educationOutcome
+    href: ../../api/educationoutcome-update.md
+- name: Education submission
+  items:
+  - name: Education submission
+    href: ../../resources/educationsubmission.md
+  - name: Get educationSubmission
+    href: ../../api/educationsubmission-get.md
+  - name: List resources
+    href: ../../api/educationsubmission-list-resources.md
+  - name: List submittedResources
+    href: ../../api/educationsubmission-list-submittedresources.md
+  - name: List outcomes
+    href: ../../api/educationsubmission-list-outcomes.md
+  - name: Excuse a submission
+    href: ../../api/educationsubmission-excuse.md
+  - name: Return a submission
+    href: ../../api/educationsubmission-return.md
+  - name: Reassign a submission
+    href: ../../api/educationsubmission-reassign.md
+  - name: Set up submission specific resources folder
+    href: ../../api/educationsubmission-setupResourcesFolder.md
+  - name: Submit a submission
+    href: ../../api/educationsubmission-submit.md
+  - name: Unsubmit a submission
+    href: ../../api/educationsubmission-unsubmit.md
+- name: Education submission resource
+  items:
+  - name: Education submission resource
+    href: ../../resources/educationsubmissionresource.md
+  - name: List resources
+    href: ../../api/educationsubmission-list-resources.md
+  - name: Get educationSubmissionResource
+    href: ../../api/educationsubmissionresource-get.md
+  - name: Delete
+    href: ../../api/educationsubmissionresource-delete.md
+- name: Education synchronization error
+  items:
+  - name: Education synchronization error
+    href: ../../resources/educationsynchronizationerror.md
+  - name: Get synchronization errors
+    href: ../../api/educationsynchronizationerrors-get.md
+- name: Education synchronization profile
+  items:
+  - name: Education synchronization profile
+    href: ../../resources/educationsynchronizationprofile.md
+  - name: List profiles
+    href: ../../api/educationsynchronizationprofile-list.md
+  - name: Get profile
+    href: ../../api/educationsynchronizationprofile-get.md
+  - name: Create profile
+    href: ../../api/educationsynchronizationprofile-post.md
+  - name: Delete profile
+    href: ../../api/educationsynchronizationprofile-delete.md
+  - name: Pause profile
+    href: ../../api/educationsynchronizationprofile-pause.md
+  - name: Resume profile
+    href: ../../api/educationsynchronizationprofile-resume.md
+  - name: Reset profile
+    href: ../../api/educationsynchronizationprofile-reset.md
+  - name: Start CSV profile
+    href: ../../api/educationsynchronizationprofile-start.md
+  - name: Get CSV upload URL
+    href: ../../api/educationsynchronizationprofile-uploadurl.md
+  - name: Get status
+    href: ../../api/educationsynchronizationprofilestatus-get.md
+  - name: Get errors
+    href: ../../api/educationsynchronizationerrors-get.md
+- name: Education synchronization profile status
+  items:
+  - name: Education synchronization profile status
+    href: ../../resources/educationsynchronizationprofilestatus.md
+  - name: Get status of a sync
+    href: ../../api/educationsynchronizationprofilestatus-get.md
+- name: Related contact
+  items:
+  - name: Related contact
+    href: ../../resources/relatedcontact.md
+  - name: Update
+    href: ../../api/relatedcontact-update.md
+- name: Complex types
+  items:
+  - name: Education assignment class recipient
+    href: ../../resources/educationassignmentclassrecipient.md
+  - name: Education assignment grade
+    href: ../../resources/educationassignmentgrade.md
+  - name: Education assignment grade type
+    href: ../../resources/educationassignmentgradetype.md
+  - name: Education assignment individual recipient
+    href: ../../resources/educationassignmentindividualrecipient.md
+  - name: Education assignment points grade
+    href: ../../resources/educationassignmentpointsgrade.md
+  - name: Education assignment points grade type
+    href: ../../resources/educationassignmentpointsgradetype.md
+  - name: Education assignment recipient
+    href: ../../resources/educationassignmentrecipient.md
+  - name: Education channel resource
+    href: ../../resources/educationchannelresource.md
+  - name: Education csv data provider
+    href: ../../resources/educationcsvdataprovider.md
+  - name: Education excel resource
+    href: ../../resources/educationexcelresource.md
+  - name: Education external resource
+    href: ../../resources/educationexternalresource.md
+  - name: Education feedback
+    href: ../../resources/educationfeedback.md
+  - name: Education file resource
+    href: ../../resources/educationfileresource.md
+  - name: Education file synchronization verification message
+    href: ../../resources/educationfilesynchronizationverificationmessage.md
+  - name: Education grading scheme grade
+    href: ../../resources/educationgradingschemegrade.md
+  - name: Education identity creation configuration
+    href: ../../resources/educationidentitycreationconfiguration.md
+  - name: Education identity domain
+    href: ../../resources/educationidentitydomain.md
+  - name: Education identity matching configuration
+    href: ../../resources/educationidentitymatchingconfiguration.md
+  - name: Education identity matching options
+    href: ../../resources/educationidentitymatchingoptions.md
+  - name: Education identity synchronization configuration
+    href: ../../resources/educationidentitysynchronizationconfiguration.md
+  - name: Education link resource
+    href: ../../resources/educationlinkresource.md
+  - name: Education linked assignment resource
+    href: ../../resources/educationlinkedassignmentresource.md
+  - name: Education media resource
+    href: ../../resources/educationmediaresource.md
+  - name: Education one roster api data provider
+    href: ../../resources/educationonerosterapidataprovider.md
+  - name: Education power point resource
+    href: ../../resources/educationpowerpointresource.md
+  - name: Education power school data provider
+    href: ../../resources/educationpowerschooldataprovider.md
+  - name: Education resource
+    href: ../../resources/educationresource.md
+  - name: Education submission individual recipient
+    href: ../../resources/educationsubmissionindividualrecipient.md
+  - name: Education submission recipient
+    href: ../../resources/educationsubmissionrecipient.md
+  - name: Education synchronization connection settings
+    href: ../../resources/educationsynchronizationconnectionsettings.md
+  - name: Education synchronization customization
+    href: ../../resources/educationsynchronizationcustomization.md
+  - name: Education synchronization customizations
+    href: ../../resources/educationsynchronizationcustomizations.md
+  - name: Education synchronization data provider
+    href: ../../resources/educationsynchronizationdataprovider.md
+  - name: Education synchronization license assignment
+    href: ../../resources/educationsynchronizationlicenseassignment.md
+  - name: Education synchronization OAuth 1 connection settings
+    href: ../../resources/educationsynchronizationoauth1connectionsettings.md
+  - name: Education synchronization OAuth 2 client credentials connection settings
+    href: ../../resources/educationsynchronizationoauth2clientcredentialsconnectionsettings.md
+  - name: Education teams app resource
+    href: ../../resources/educationteamsappresource.md
+  - name: Education word resource
+    href: ../../resources/educationwordresource.md
+  - name: Identity
+    href: ../../resources/identity.md
+  - name: Identity set
+    href: ../../resources/identityset.md
+  - name: Rubric criterion
+    href: ../../resources/rubriccriterion.md
+  - name: Rubric level
+    href: ../../resources/rubriclevel.md
+  - name: Rubric quality
+    href: ../../resources/rubricquality.md
+  - name: Rubric quality feedback model
+    href: ../../resources/rubricqualityfeedbackmodel.md
+  - name: Rubric quality selected column model
+    href: ../../resources/rubricqualityselectedcolumnmodel.md

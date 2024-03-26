@@ -1,0 +1,257 @@
+items:
+- name: Overview
+  href: ../../resources/dynamics-graph-reference.md
+- name: Account
+  items:
+  - name: Account
+    href: ../../resources/dynamics-account.md
+  - name: Get account
+    href: ../../api/dynamics-account-get.md
+- name: Aged accounts payable
+  items:
+  - name: Aged accounts payable
+    href: ../../resources/dynamics-agedaccountspayable.md
+  - name: Get agedAccountsPayable
+    href: ../../api/dynamics-agedaccountspayable-get.md
+- name: Aged accounts receivable
+  items:
+  - name: Aged accounts receivable
+    href: ../../resources/dynamics-agedaccountsreceivable.md
+  - name: Get agedAccountsReceivable
+    href: ../../api/dynamics-agedaccountsreceivable-get.md
+- name: Company
+  items:
+  - name: Company
+    href: ../../resources/dynamics-companies.md
+  - name: Get company
+    href: ../../api/dynamics-companies-get.md
+- name: Company information
+  items:
+  - name: Company information
+    href: ../../resources/dynamics-companyinformation.md
+  - name: Get companyInformation
+    href: ../../api/dynamics-companyinformation-get.md
+  - name: Patch companyInformation
+    href: ../../api/dynamics-companyinformation-update.md
+- name: Country region
+  items:
+  - name: Country region
+    href: ../../resources/dynamics-countriesregions.md
+  - name: Get countryRegion
+    href: ../../api/dynamics-countriesregions-get.md
+  - name: Post countryRegion
+    href: ../../api/dynamics-create-countriesregions.md
+  - name: Patch countryRegion
+    href: ../../api/dynamics-countriesregions-update.md
+  - name: Delete countryRegion
+    href: ../../api/dynamics-countriesregions-delete.md
+- name: Currency
+  items:
+  - name: Currency
+    href: ../../resources/dynamics-currencies.md
+  - name: Get currency
+    href: ../../api/dynamics-currencies-get.md
+  - name: Create currency
+    href: ../../api/dynamics-create-currencies.md
+  - name: Update currency
+    href: ../../api/dynamics-currencies-update.md
+  - name: Delete currency
+    href: ../../api/dynamics-currencies-delete.md
+- name: Customer
+  items:
+  - name: Customer
+    href: ../../resources/dynamics-customer.md
+  - name: Get customer
+    href: ../../api/dynamics-customer-get.md
+  - name: Create customer
+    href: ../../api/dynamics-create-customer.md
+  - name: Update customer
+    href: ../../api/dynamics-customer-update.md
+  - name: Delete customer
+    href: ../../api/dynamics-customer-delete.md
+- name: Customer payment
+  items:
+  - name: Customer payment
+    href: ../../resources/dynamics-customerpayment.md
+  - name: Get customerPayment
+    href: ../../api/dynamics-customerpayment-get.md
+  - name: Post customerPayment
+    href: ../../api/dynamics-create-customerpayment.md
+  - name: Patch customerPayment
+    href: ../../api/dynamics-customerpayment-update.md
+  - name: Delete customerPayment
+    href: ../../api/dynamics-customerpayment-delete.md
+- name: Customer payment journal
+  items:
+  - name: Customer payment journal
+    href: ../../resources/dynamics-customerpaymentsjournal.md
+  - name: Get customerPaymentJournal
+    href: ../../api/dynamics-customerpaymentsjournal-get.md
+  - name: Post customerPaymentJournal
+    href: ../../api/dynamics-create-customerpaymentsjournal.md
+  - name: Patch customerPaymentJournal
+    href: ../../api/dynamics-customerpaymentsjournal-update.md
+  - name: Delete customerPaymentJournal
+    href: ../../api/dynamics-customerpaymentsjournal-delete.md
+- name: Dimension
+  items:
+  - name: Dimension
+    href: ../../resources/dynamics-dimension.md
+  - name: Get dimension
+    href: ../../api/dynamics-dimension-get.md
+- name: Dimension value
+  items:
+  - name: Dimension value
+    href: ../../resources/dynamics-dimensionvalue.md
+  - name: Get dimensionValue
+    href: ../../api/dynamics-dimensionvalue-get.md
+- name: Employee
+  items:
+  - name: Employee
+    href: ../../resources/dynamics-employee.md
+  - name: Get employee
+    href: ../../api/dynamics-employee-get.md
+  - name: Post employee
+    href: ../../api/dynamics-create-employee.md
+  - name: Patch employee
+    href: ../../api/dynamics-employee-update.md
+  - name: Delete employee
+    href: ../../api/dynamics-employee-delete.md
+- name: General ledger entry
+  items:
+  - name: General ledger entry
+    href: ../../resources/dynamics-generalledgerentries.md
+  - name: Get generalLedgerEntry
+    href: ../../api/dynamics-generalledgerentries-get.md
+- name: Item
+  items:
+  - name: Item
+    href: ../../resources/dynamics-item.md
+  - name: Get item
+    href: ../../api/dynamics-item-get.md
+  - name: Post item
+    href: ../../api/dynamics-create-item.md
+  - name: Patch item
+    href: ../../api/dynamics-item-update.md
+  - name: Delete item
+    href: ../../api/dynamics-item-delete.md
+- name: Item category
+  items:
+  - name: Item category
+    href: ../../resources/dynamics-itemcategories.md
+  - name: Get itemCategory
+    href: ../../api/dynamics-itemcategories-get.md
+  - name: Post itemCategory
+    href: ../../api/dynamics-create-itemcategories.md
+  - name: Patch itemCategory
+    href: ../../api/dynamics-itemcategories-update.md
+  - name: Delete itemCategory
+    href: ../../api/dynamics-itemcategories-delete.md
+- name: Journal
+  items:
+  - name: Journal
+    href: ../../resources/dynamics-journal.md
+  - name: Get journal
+    href: ../../api/dynamics-journal-get.md
+  - name: Post journal
+    href: ../../api/dynamics-create-journal.md
+  - name: Patch journal
+    href: ../../api/dynamics-journal-update.md
+  - name: Delete journal
+    href: ../../api/dynamics-journal-delete.md
+- name: Journal line
+  items:
+  - name: Journal line
+    href: ../../resources/dynamics-journalline.md
+  - name: Get journalLine
+    href: ../../api/dynamics-journalline-get.md
+  - name: Post journalLine
+    href: ../../api/dynamics-create-journalline.md
+  - name: Patch journalLine
+    href: ../../api/dynamics-journalline-update.md
+  - name: Delete journalLine
+    href: ../../api/dynamics-journalline-delete.md
+- name: Payment method
+  items:
+  - name: Payment method
+    href: ../../resources/dynamics-paymentmethods.md
+  - name: Get paymentMethod
+    href: ../../api/dynamics-paymentmethods-get.md
+  - name: Post paymentMethod
+    href: ../../api/dynamics-create-paymentmethods.md
+  - name: Patch paymentMethod
+    href: ../../api/dynamics-paymentmethods-update.md
+  - name: Delete paymentMethod
+    href: ../../api/dynamics-paymentmethods-delete.md
+- name: Payment term
+  items:
+  - name: Payment term
+    href: ../../resources/dynamics-paymentterms.md
+  - name: Get paymentTerm
+    href: ../../api/dynamics-paymentterms-get.md
+  - name: Post paymentTerm
+    href: ../../api/dynamics-create-paymentterms.md
+  - name: Patch paymentTerm
+    href: ../../api/dynamics-paymentterms-update.md
+  - name: Delete paymentTerm
+    href: ../../api/dynamics-paymentterms-delete.md
+- name: Shipment method
+  items:
+  - name: Shipment method
+    href: ../../resources/dynamics-shipmentmethods.md
+  - name: Get shipmentMethod
+    href: ../../api/dynamics-shipmentmethods-get.md
+  - name: Create shipmentMethod
+    href: ../../api/dynamics-create-shipmentmethods.md
+  - name: Update shipmentMethod
+    href: ../../api/dynamics-shipmentmethods-update.md
+  - name: Delete shipmentMethod
+    href: ../../api/dynamics-shipmentmethods-delete.md
+- name: Tax area
+  items:
+  - name: Tax area
+    href: ../../resources/dynamics-taxarea.md
+  - name: Get taxArea
+    href: ../../api/dynamics-taxarea-get.md
+  - name: Post taxArea
+    href: ../../api/dynamics-create-taxarea.md
+  - name: Patch taxArea
+    href: ../../api/dynamics-taxarea-update.md
+  - name: Delete taxArea
+    href: ../../api/dynamics-taxarea-delete.md
+- name: Tax group
+  items:
+  - name: Tax group
+    href: ../../resources/dynamics-taxgroups.md
+  - name: Get taxGroup
+    href: ../../api/dynamics-taxgroups-get.md
+  - name: Post taxGroup
+    href: ../../api/dynamics-create-taxgroups.md
+  - name: Patch taxGroup
+    href: ../../api/dynamics-taxgroups-update.md
+  - name: Delete taxGroup
+    href: ../../api/dynamics-taxgroups-delete.md
+- name: Unit of measure
+  items:
+  - name: Unit of measure
+    href: ../../resources/dynamics-unitsofmeasure.md
+  - name: Get unitOfMeasure
+    href: ../../api/dynamics-unitsofmeasure-get.md
+  - name: Post unitOfMeasure
+    href: ../../api/dynamics-create-unitsofmeasure.md
+  - name: Patch unitOfMeasure
+    href: ../../api/dynamics-unitsofmeasure-update.md
+  - name: Delete unitOfMeasure
+    href: ../../api/dynamics-unitsofmeasure-delete.md
+- name: Vendor
+  items:
+  - name: Vendor
+    href: ../../resources/dynamics-vendor.md
+  - name: Get vendor
+    href: ../../api/dynamics-vendor-get.md
+  - name: Post vendor
+    href: ../../api/dynamics-create-vendor.md
+  - name: Patch vendor
+    href: ../../api/dynamics-vendor-update.md
+  - name: Delete vendor
+    href: ../../api/dynamics-vendor-delete.md

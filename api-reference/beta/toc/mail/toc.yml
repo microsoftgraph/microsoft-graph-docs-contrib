@@ -1,0 +1,209 @@
+items:
+- name: Overview
+  href: ../../resources/mail-api-overview.md
+- name: Message
+  items:
+  - name: Message
+    href: ../../resources/message.md
+  - name: List messages
+    href: ../../api/user-list-messages.md
+  - name: Create message
+    href: ../../api/user-post-messages.md
+  - name: Get message
+    href: ../../api/message-get.md
+  - name: Update
+    href: ../../api/message-update.md
+  - name: Delete
+    href: ../../api/message-delete.md
+  - name: copy
+    href: ../../api/message-copy.md
+  - name: createForward
+    href: ../../api/message-createforward.md
+  - name: createReply
+    href: ../../api/message-createreply.md
+  - name: createReplyAll
+    href: ../../api/message-createreplyall.md
+  - name: delta
+    href: ../../api/message-delta.md
+  - name: forward
+    href: ../../api/message-forward.md
+  - name: markAsJunk
+    href: ../../api/message-markasjunk.md
+  - name: markAsNotJunk
+    href: ../../api/message-markasnotjunk.md
+  - name: move
+    href: ../../api/message-move.md
+  - name: reply
+    href: ../../api/message-reply.md
+  - name: replyAll
+    href: ../../api/message-replyall.md
+  - name: send
+    href: ../../api/message-send.md
+  - name: unsubscribe
+    href: ../../api/message-unsubscribe.md
+  - name: Attachments
+    items:
+    - name: List attachments
+      href: ../../api/message-list-attachments.md
+    - name: Add attachment
+      href: ../../api/message-post-attachments.md
+  - name: Open extensions
+    items:
+    - name: Create open extension
+      href: ../../api/opentypeextension-post-opentypeextension.md
+    - name: Get open extension
+      href: ../../api/opentypeextension-get.md
+  - name: Schema extensions
+    items:
+    - name: Add schema extension values
+      href: ../../graph/extensibility-schema-groups
+  - name: Extended properties
+    items:
+    - name: Create single-value extended property
+      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    - name: Get message with single-value extended property
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
+    - name: Create multi-value extended property
+      href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    - name: Get message with multi-value extended property
+      href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Attachment
+  items:
+  - name: Attachment
+    href: ../../resources/attachment.md
+  - name: Get attachment
+    href: ../../api/attachment-get.md
+  - name: Add attachment to a user event
+    href: ../../api/event-post-attachments.md
+  - name: Add attachment to a message
+    href: ../../api/message-post-attachments.md
+  - name: Create session to attach large file
+    href: ../../api/attachment-createuploadsession.md
+  - name: Add attachment to an Outlook task
+    href: ../../api/outlooktask-post-attachments.md
+  - name: Add attachment to a post
+    href: ../../api/post-post-attachments.md
+  - name: List attachments of a user event
+    href: ../../api/event-list-attachments.md
+  - name: List attachments of a message
+    href: ../../api/message-list-attachments.md
+  - name: List attachments of an Outlook task
+    href: ../../api/outlooktask-list-attachments.md
+  - name: List attachments of a post
+    href: ../../api/post-list-attachments.md
+  - name: Delete
+    href: ../../api/attachment-delete.md
+- name: Outlook category
+  items:
+  - name: Outlook category
+    href: ../../resources/outlookcategory.md
+  - name: List categories
+    href: ../../api/outlookuser-list-mastercategories.md
+  - name: Get category
+    href: ../../api/outlookcategory-get.md
+  - name: Create
+    href: ../../api/outlookuser-post-mastercategories.md
+  - name: Update
+    href: ../../api/outlookcategory-update.md
+  - name: Delete
+    href: ../../api/outlookcategory-delete.md
+- name: Mail folder
+  items:
+  - name: Mail folder
+    href: ../../resources/mailfolder.md
+  - name: List mailFolders
+    href: ../../api/user-list-mailfolders.md
+  - name: Get mailFolder
+    href: ../../api/mailfolder-get.md
+  - name: Create mailFolder
+    href: ../../api/user-post-mailfolders.md
+  - name: List childFolders
+    href: ../../api/mailfolder-list-childfolders.md
+  - name: Create childFolder
+    href: ../../api/mailfolder-post-childfolders.md
+  - name: Create Message
+    href: ../../api/mailfolder-post-messages.md
+  - name: List messages
+    href: ../../api/mailfolder-list-messages.md
+  - name: Update
+    href: ../../api/mailfolder-update.md
+  - name: Delete
+    href: ../../api/mailfolder-delete.md
+  - name: copy
+    href: ../../api/mailfolder-copy.md
+  - name: delta
+    href: ../../api/mailfolder-delta.md
+  - name: move
+    href: ../../api/mailfolder-move.md
+  - name: Extended properties
+    items:
+    - name: Create single-value extended property
+      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    - name: Get mailFolder with single-value extended property
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
+    - name: Create multi-value extended property
+      href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    - name: Get mailFolder with multi-value extended property
+      href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Mail search folder
+  items:
+  - name: Mail search folder
+    href: ../../resources/mailsearchfolder.md
+  - name: Create a search folder
+    href: ../../api/mailsearchfolder-post.md
+  - name: List search folders
+    href: ../../api/mailfolder-list-childfolders.md
+  - name: Get a search folder
+    href: ../../api/mailfolder-get.md
+  - name: Update a search folder
+    href: ../../api/mailsearchfolder-update.md
+  - name: Delete a search folder
+    href: ../../api/mailfolder-delete.md
+  - name: List all messages in a search folder
+    href: ../../api/mailfolder-list-messages.md
+- name: Message rule
+  items:
+  - name: Message rule
+    href: ../../resources/messagerule.md
+  - name: List rules
+    href: ../../api/mailfolder-list-messagerules.md
+  - name: Get rule
+    href: ../../api/messagerule-get.md
+  - name: Create
+    href: ../../api/mailfolder-post-messagerules.md
+  - name: Update
+    href: ../../api/messagerule-update.md
+  - name: Delete
+    href: ../../api/messagerule-delete.md
+- name: Focused Inbox
+  items:
+  - name: Overview
+    href: ../../resources/manage-focused-inbox.md
+  - name: Inference classification override
+    items:
+    - name: Inference classification override
+      href: ../../resources/inferenceclassificationoverride.md
+    - name: Update
+      href: ../../api/inferenceclassificationoverride-update.md
+    - name: Delete
+      href: ../../api/inferenceclassificationoverride-delete.md
+- name: Extended properties
+  items:
+  - name: Overview
+    href: ../../resources/extended-properties-overview.md
+  - name: Single value legacy extended property
+    items:
+    - name: Single value legacy extended property
+      href: ../../resources/singlevaluelegacyextendedproperty.md
+    - name: Post
+      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    - name: Get
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
+  - name: Multi value legacy extended property
+    items:
+    - name: Multi value legacy extended property
+      href: ../../resources/multivaluelegacyextendedproperty.md
+    - name: Post
+      href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+    - name: Get
+      href: ../../api/multivaluelegacyextendedproperty-get.md

@@ -1,0 +1,299 @@
+items:
+- name: Overview
+  href: ../../resources/planner-overview.md
+- name: Planner bucket
+  items:
+  - name: Planner bucket
+    href: ../../resources/plannerbucket.md
+  - name: Get plannerBucket
+    href: ../../api/plannerbucket-get.md
+  - name: List plannerTasks
+    href: ../../api/plannerbucket-list-tasks.md
+  - name: Create
+    href: ../../api/planner-post-buckets.md
+  - name: Update
+    href: ../../api/plannerbucket-update.md
+  - name: Delete
+    href: ../../api/plannerbucket-delete.md
+  - name: Get delta
+    href: ../../api/plannerbucket-delta.md
+- name: Planner plan
+  items:
+  - name: Planner plan
+    href: ../../resources/plannerplan.md
+  - name: Get plannerPlan
+    href: ../../api/plannerplan-get.md
+  - name: List buckets
+    href: ../../api/plannerplan-list-buckets.md
+  - name: List tasks
+    href: ../../api/plannerplan-list-tasks.md
+  - name: Update
+    href: ../../api/plannerplan-update.md
+  - name: Delete
+    href: ../../api/plannerplan-delete.md
+  - name: Get delta
+    href: ../../api/plannerplan-delta.md
+  - name: Move plannerPlan to Container
+    href: ../../api/plannerplan-movetocontainer.md
+- name: Planner plan details
+  items:
+  - name: Planner plan details
+    href: ../../resources/plannerplandetails.md
+  - name: Get plannerPlanDetails
+    href: ../../api/plannerplandetails-get.md
+  - name: Update
+    href: ../../api/plannerplandetails-update.md
+- name: Planner roster
+  items:
+  - name: Planner roster
+    href: ../../resources/plannerroster.md
+  - name: Create plannerRoster
+    href: ../../api/planner-post-rosters.md
+  - name: Get plannerRoster
+    href: ../../api/plannerroster-get.md
+  - name: Delete plannerRoster
+    href: ../../api/plannerroster-delete.md
+  - name: List members
+    href: ../../api/plannerroster-list-members.md
+  - name: Create plannerRosterMember
+    href: ../../api/plannerroster-post-members.md
+  - name: List plans
+    href: ../../api/plannerroster-list-plans.md
+  - name: List user's rosterPlans
+    href: ../../api/planneruser-list-rosterplans.md
+- name: Planner task
+  items:
+  - name: Planner task
+    href: ../../resources/plannertask.md
+  - name: Get plannerTask
+    href: ../../api/plannertask-get.md
+  - name: Update
+    href: ../../api/plannertask-update.md
+  - name: Delete
+    href: ../../api/plannertask-delete.md
+  - name: Get delta
+    href: ../../api/plannertask-delta.md
+- name: Planner task details
+  items:
+  - name: Planner task details
+    href: ../../resources/plannertaskdetails.md
+  - name: Get plannerTaskDetails
+    href: ../../api/plannertaskdetails-get.md
+  - name: Update
+    href: ../../api/plannertaskdetails-update.md
+- name: Planner user
+  items:
+  - name: Planner user
+    href: ../../resources/planneruser.md
+  - name: List tasks
+    href: ../../api/planneruser-list-tasks.md
+  - name: List favoritePlans
+    href: ../../api/planneruser-list-favoriteplans.md
+  - name: List recentPlans
+    href: ../../api/planneruser-list-recentplans.md
+  - name: List rosterPlans
+    href: ../../api/planneruser-list-rosterplans.md
+  - name: Update
+    href: ../../api/planneruser-update.md
+- name: Business scenarios (preview)
+  items:
+  - name: Overview
+    href: ../../resources/businessscenario-overview.md
+  - name: Business scenario
+    items:
+    - name: Business scenario
+      href: ../../resources/businessscenario.md
+    - name: List businessScenarios
+      href: ../../api/solutionsroot-list-businessscenarios.md
+    - name: Create businessScenario
+      href: ../../api/solutionsroot-post-businessscenarios.md
+    - name: Get businessScenario
+      href: ../../api/businessscenario-get.md
+    - name: Update businessScenario
+      href: ../../api/businessscenario-update.md
+    - name: Delete businessScenario
+      href: ../../api/businessscenario-delete.md
+    - name: Get businessScenarioPlanner
+      href: ../../api/businessscenarioplanner-get.md
+  - name: Use with Planner
+    items:
+    - name: Overview
+      href: ../../resources/businessscenario-planner-overview.md
+    - name: Business scenario planner
+      items:
+      - name: Business scenario planner
+        href: ../../resources/businessscenarioplanner.md
+      - name: Get businessScenarioPlanner
+        href: ../../api/businessscenarioplanner-get.md
+      - name: getPlan
+        href: ../../api/businessscenarioplanner-getplan.md
+      - name: Get plannerPlanConfiguration
+        href: ../../api/plannerplanconfiguration-get.md
+      - name: Get plannerTaskConfiguration
+        href: ../../api/plannertaskconfiguration-get.md
+      - name: List tasks
+        href: ../../api/businessscenarioplanner-list-tasks.md
+      - name: Create businessScenarioTask
+        href: ../../api/businessscenarioplanner-post-tasks.md
+    - name: Planner plan configuration
+      items:
+      - name: Planner plan configuration
+        href: ../../resources/plannerplanconfiguration.md
+      - name: Get plannerPlanConfiguration
+        href: ../../api/plannerplanconfiguration-get.md
+      - name: Update plannerPlanConfiguration
+        href: ../../api/plannerplanconfiguration-update.md
+      - name: List localizations
+        href: ../../api/plannerplanconfiguration-list-localizations.md
+      - name: Create plannerPlanConfigurationLocalization
+        href: ../../api/plannerplanconfiguration-post-localizations.md
+    - name: Planner plan configuration localization
+      items:
+      - name: Planner plan configuration localization
+        href: ../../resources/plannerplanconfigurationlocalization.md
+      - name: List plannerPlanConfigurationLocalizations
+        href: ../../api/plannerplanconfiguration-list-localizations.md
+      - name: Create plannerPlanConfigurationLocalization
+        href: ../../api/plannerplanconfiguration-post-localizations.md
+      - name: Get plannerPlanConfigurationLocalization
+        href: ../../api/plannerplanconfigurationlocalization-get.md
+      - name: Update plannerPlanConfigurationLocalization
+        href: ../../api/plannerplanconfigurationlocalization-update.md
+      - name: Delete plannerPlanConfigurationLocalization
+        href: ../../api/plannerplanconfiguration-delete-localizations.md
+    - name: Planner task configuration
+      items:
+      - name: Planner task configuration
+        href: ../../resources/plannertaskconfiguration.md
+      - name: Get plannerTaskConfiguration
+        href: ../../api/plannertaskconfiguration-get.md
+      - name: Update plannerTaskConfiguration
+        href: ../../api/plannertaskconfiguration-update.md
+    - name: Business scenario task
+      items:
+      - name: Business scenario task
+        href: ../../resources/businessscenariotask.md
+      - name: List businessScenarioTasks
+        href: ../../api/businessscenarioplanner-list-tasks.md
+      - name: Create businessScenarioTask
+        href: ../../api/businessscenarioplanner-post-tasks.md
+      - name: Get businessScenarioTask
+        href: ../../api/businessscenariotask-get.md
+      - name: Update businessScenarioTask
+        href: ../../api/businessscenariotask-update.md
+      - name: Delete businessScenarioTask
+        href: ../../api/businessscenarioplanner-delete-tasks.md
+- name: Task formats
+  items:
+  - name: Planner assigned to task board task format
+    items:
+    - name: Planner assigned to task board task format
+      href: ../../resources/plannerassignedtotaskboardtaskformat.md
+    - name: Get plannerAssignedToTaskBoardTaskFormat
+      href: ../../api/plannerassignedtotaskboardtaskformat-get.md
+    - name: Update
+      href: ../../api/plannerassignedtotaskboardtaskformat-update.md
+  - name: Planner bucket task board task format
+    items:
+    - name: Planner bucket task board task format
+      href: ../../resources/plannerbuckettaskboardtaskformat.md
+    - name: Get plannerBucketTaskBoardTaskFormat
+      href: ../../api/plannerbuckettaskboardtaskformat-get.md
+    - name: Update
+      href: ../../api/plannerbuckettaskboardtaskformat-update.md
+  - name: Planner progress task board task format
+    items:
+    - name: Planner progress task board task format
+      href: ../../resources/plannerprogresstaskboardtaskformat.md
+    - name: Get plannerProgressTaskBoardTaskFormat
+      href: ../../api/plannerprogresstaskboardtaskformat-get.md
+    - name: Update
+      href: ../../api/plannerprogresstaskboardtaskformat-update.md
+- name: Complex types
+  items:
+  - name: Business scenario group target
+    href: ../../resources/businessscenariogrouptarget.md
+  - name: Business scenario properties
+    href: ../../resources/businessscenarioproperties.md
+  - name: Business scenario task target base
+    href: ../../resources/businessscenariotasktargetbase.md
+  - name: Identity
+    href: ../../resources/identity.md
+  - name: Identity set
+    href: ../../resources/identityset.md
+  - name: Item body
+    href: ../../resources/itembody.md
+  - name: Planner applied categories
+    href: ../../resources/plannerappliedcategories.md
+  - name: Planner assignment
+    href: ../../resources/plannerassignment.md
+  - name: Planner assignments
+    href: ../../resources/plannerassignments.md
+  - name: Planner bucket creation
+    href: ../../resources/plannerbucketcreation.md
+  - name: Planner category descriptions
+    href: ../../resources/plannercategorydescriptions.md
+  - name: Planner checklist item
+    href: ../../resources/plannerchecklistitem.md
+  - name: Planner checklist items
+    href: ../../resources/plannerchecklistitems.md
+  - name: Planner checklist requirement
+    href: ../../resources/plannerchecklistrequirement.md
+  - name: Planner external bucket source
+    href: ../../resources/plannerexternalbucketsource.md
+  - name: Planner external plan source
+    href: ../../resources/plannerexternalplansource.md
+  - name: Planner external reference
+    href: ../../resources/plannerexternalreference.md
+  - name: Planner external references
+    href: ../../resources/plannerexternalreferences.md
+  - name: Planner external task source
+    href: ../../resources/plannerexternaltasksource.md
+  - name: Planner favorite plan reference
+    href: ../../resources/plannerfavoriteplanreference.md
+  - name: Planner favorite plan reference collection
+    href: ../../resources/plannerfavoriteplanreferencecollection.md
+  - name: Planner field rules
+    href: ../../resources/plannerfieldrules.md
+  - name: Planner order hints by assignee
+    href: ../../resources/plannerorderhintsbyassignee.md
+  - name: Planner plan container
+    href: ../../resources/plannerplancontainer.md
+  - name: Planner plan context
+    href: ../../resources/plannerplancontext.md
+  - name: Planner plan context collection
+    href: ../../resources/plannerplancontextcollection.md
+  - name: Planner plan context details
+    href: ../../resources/plannerplancontextdetails.md
+  - name: Planner plan context details collection
+    href: ../../resources/plannerplancontextdetailscollection.md
+  - name: Planner plan creation
+    href: ../../resources/plannerplancreation.md
+  - name: Planner property rule
+    href: ../../resources/plannerpropertyrule.md
+  - name: Planner recent plan reference
+    href: ../../resources/plannerrecentplanreference.md
+  - name: Planner recent plan reference collection
+    href: ../../resources/plannerrecentplanreferencecollection.md
+  - name: Planner recurrence schedule
+    href: ../../resources/plannerrecurrenceschedule.md
+  - name: Planner rule override
+    href: ../../resources/plannerruleoverride.md
+  - name: Planner shared with container
+    href: ../../resources/plannersharedwithcontainer.md
+  - name: Planner task completion requirement details
+    href: ../../resources/plannertaskcompletionrequirementdetails.md
+  - name: Planner task creation
+    href: ../../resources/plannertaskcreation.md
+  - name: Planner task property rule
+    href: ../../resources/plannertaskpropertyrule.md
+  - name: Planner task recurrence
+    href: ../../resources/plannertaskrecurrence.md
+  - name: Planner teams publication info
+    href: ../../resources/plannerteamspublicationinfo.md
+  - name: Planner user ids
+    href: ../../resources/planneruserids.md
+  - name: Recurrence pattern
+    href: ../../resources/recurrencepattern.md
+  - name: Sensitivity label assignment
+    href: ../../resources/sensitivitylabelassignment.md

@@ -1,0 +1,537 @@
+items:
+- name: Identity and access reports
+  items:
+  - name: Microsoft Entra activity reports
+    items:
+    - name: Overview
+      href: ../../resources/report-identity-access.md
+    - name: AD FS application activity
+      items:
+      - name: Relying party detailed summary
+        items:
+        - name: Relying party detailed summary
+          href: ../../resources/relyingpartydetailedsummary.md
+        - name: List relyingPartyDetailedSummary
+          href: ../../api/reportroot-getrelyingpartydetailedsummary.md
+    - name: App credential sign in activity
+      items:
+      - name: App credential sign in activity
+        href: ../../resources/appcredentialsigninactivity.md
+      - name: List appCredentialSignInActivities
+        href: ../../api/reportroot-list-appcredentialsigninactivities.md
+      - name: Get appCredentialSignInActivity
+        href: ../../api/appcredentialsigninactivity-get.md
+    - name: Application sign-in
+      items:
+      - name: Application sign in summary
+        items:
+        - name: Application sign in summary
+          href: ../../resources/applicationsigninsummary.md
+        - name: getAzureADApplicationSignInSummary
+          href: ../../api/reportroot-getazureadapplicationsigninsummary.md
+      - name: Application sign in detailed summary
+        items:
+        - name: Application sign in detailed summary
+          href: ../../resources/applicationsignindetailedsummary.md
+        - name: List applicationSignInDetailedSummary
+          href: ../../api/reportroot-list-applicationsignindetailedsummary.md
+        - name: Get applicationSignInDetailedSummary
+          href: ../../api/applicationsignindetailedsummary-get.md
+    - name: Application user activity (preview)
+      items:
+      - name: Daily user insight metrics root
+        href: ../../resources/dailyuserinsightmetricsroot.md
+      - name: Monthly user insight metrics root
+        href: ../../resources/monthlyuserinsightmetricsroot.md
+      - name: Active users breakdown metric
+        items:
+        - name: Active users breakdown metric
+          href: ../../resources/activeusersbreakdownmetric.md
+        - name: List daily activeUsersBreakdown
+          href: ../../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
+        - name: List monthly activeUsersBreakdown
+          href: ../../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
+      - name: Active users metric
+        items:
+        - name: Active users metric
+          href: ../../resources/activeusersmetric.md
+        - name: List daily activeUsers
+          href: ../../api/dailyuserinsightmetricsroot-list-activeusers.md
+        - name: List monthly activeUsers
+          href: ../../api/monthlyuserinsightmetricsroot-list-activeusers.md
+      - name: Authentications metric
+        items:
+        - name: Authentications metric
+          href: ../../resources/authenticationsmetric.md
+        - name: List daily authentications
+          href: ../../api/dailyuserinsightmetricsroot-list-authentications.md
+        - name: List monthly authentications
+          href: ../../api/monthlyuserinsightmetricsroot-list-authentications.md
+      - name: Insight summary
+        items:
+        - name: Insight summary
+          href: ../../resources/insightsummary.md
+        - name: List daily summary
+          href: ../../api/dailyuserinsightmetricsroot-list-summary.md
+        - name: List monthly summary
+          href: ../../api/monthlyuserinsightmetricsroot-list-summary.md
+      - name: MFA completion metric
+        items:
+        - name: MFA completion metric
+          href: ../../resources/mfacompletionmetric.md
+        - name: List daily mfaCompletions
+          href: ../../api/dailyuserinsightmetricsroot-list-mfacompletions.md
+        - name: List monthly mfaCompletions
+          href: ../../api/monthlyuserinsightmetricsroot-list-mfacompletions.md
+      - name: User count metric
+        items:
+        - name: User count metric
+          href: ../../resources/usercountmetric.md
+        - name: List daily userCount
+          href: ../../api/dailyuserinsightmetricsroot-list-usercount.md
+      - name: User requests metric
+        items:
+        - name: User requests metric
+          href: ../../resources/userrequestsmetric.md
+        - name: List daily requests
+          href: ../../api/dailyuserinsightmetricsroot-list-requests.md
+        - name: List monthly requests
+          href: ../../api/monthlyuserinsightmetricsroot-list-requests.md
+      - name: User sign up metric
+        items:
+        - name: User sign up metric
+          href: ../../resources/usersignupmetric.md
+        - name: List daily signUps
+          href: ../../api/dailyuserinsightmetricsroot-list-signups.md
+        - name: List monthly signUps
+          href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
+    - name: Microsoft Entra authentication
+      items:
+      - name: Microsoft Entra authentication
+        href: ../../resources/azureadauthentication.md
+      - name: Get azureADAuthentication
+        href: ../../api/azureadauthentication-get.md
+    - name: Registration and usage
+      items:
+      - name: Overview
+        href: ../../resources/authenticationmethods-usage-insights-overview.md
+      - name: Credential usage summary
+        items:
+        - name: Credential usage summary
+          href: ../../resources/credentialusagesummary.md
+        - name: getCredentialUsageSummary
+          href: ../../api/reportroot-getcredentialusagesummary.md
+      - name: Credential user registration count
+        items:
+        - name: Credential user registration count
+          href: ../../resources/credentialuserregistrationcount.md
+        - name: getCredentialUserRegistrationCount
+          href: ../../api/reportroot-getcredentialuserregistrationcount.md
+      - name: Credential user registration details
+        items:
+        - name: Credential user registration details
+          href: ../../resources/credentialuserregistrationdetails.md
+        - name: List credentialUserRegistrationDetails
+          href: ../../api/reportroot-list-credentialuserregistrationdetails.md
+      - name: User credential usage details
+        items:
+        - name: User credential usage details
+          href: ../../resources/usercredentialusagedetails.md
+        - name: List userCredentialUsageDetails
+          href: ../../api/reportroot-list-usercredentialusagedetails.md
+      - name: User registration details
+        items:
+        - name: User registration details
+          href: ../../resources/userregistrationdetails.md
+        - name: List userRegistrationDetails
+          href: ../../api/authenticationmethodsroot-list-userregistrationdetails.md
+        - name: Get userRegistrationDetails
+          href: ../../api/userregistrationdetails-get.md
+      - name: User registration feature summary
+        items:
+        - name: User registration feature summary
+          href: ../../resources/userregistrationfeaturesummary.md
+        - name: usersRegisteredByFeature
+          href: ../../api/authenticationmethodsroot-usersregisteredbyfeature.md
+      - name: User registration method summary
+        items:
+        - name: User registration method summary
+          href: ../../resources/userregistrationmethodsummary.md
+        - name: usersRegisteredByMethod
+          href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
+    - name: Service activity
+      items:
+      - name: Service activity
+        href: ../../resources/serviceactivity.md
+      - name: getMetricsForMfaSignInSuccess
+        href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
+      - name: getMetricsForMfaSignInFailure
+        href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
+      - name: getMetricsForConditionalAccessManagedDevicesSignInSuccess
+        href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+      - name: getMetricsForConditionalAccessCompliantDevicesSignInSuccess
+        href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
+      - name: getMetricsForSamlSignInSuccess
+        href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
+    - name: Service principal sign in activity
+      items:
+      - name: Service principal sign in activity
+        href: ../../resources/serviceprincipalsigninactivity.md
+      - name: List servicePrincipalSignInActivities
+        href: ../../api/reportroot-list-serviceprincipalsigninactivities.md
+      - name: Get servicePrincipalSignInActivity
+        href: ../../api/serviceprincipalsigninactivity-get.md
+  - name: Microsoft Entra audit logs
+    items:
+    - name: Overview
+      href: ../../resources/azure-ad-auditlog-overview.md
+    - name: Custom security attribute audit
+      items:
+      - name: Custom security attribute audit
+        href: ../../resources/customsecurityattributeaudit.md
+      - name: List customSecurityAttributeAudits
+        href: ../../api/auditlogroot-list-customsecurityattributeaudits.md
+      - name: Get customSecurityAttributeAudit
+        href: ../../api/customsecurityattributeaudit-get.md
+    - name: Directory audit
+      items:
+      - name: Directory audit
+        href: ../../resources/directoryaudit.md
+      - name: List directoryAudits
+        href: ../../api/directoryaudit-list.md
+      - name: Get directoryAudit
+        href: ../../api/directoryaudit-get.md
+    - name: Sign in
+      items:
+      - name: Sign in
+        href: ../../resources/signin.md
+      - name: List signIn
+        href: ../../api/signin-list.md
+      - name: Get signIn
+        href: ../../api/signin-get.md
+      - name: Confirm compromised
+        href: ../../api/signin-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/signin-confirmsafe.md
+    - name: Provisioning object summary
+      items:
+      - name: Provisioning object summary
+        href: ../../resources/provisioningobjectsummary.md
+      - name: List provisioningObjectSummary
+        href: ../../api/provisioningobjectsummary-list.md
+- name: Microsoft 365 usage reports
+  items:
+  - name: Overview
+    href: ../../resources/report.md
+  - name: Admin report settings
+    items:
+    - name: Admin report settings
+      href: ../../resources/adminreportsettings.md
+    - name: Get adminReportSettings
+      href: ../../api/adminreportsettings-get.md
+    - name: Update adminReportSettings
+      href: ../../api/adminreportsettings-update.md
+  - name: Report root
+    items:
+    - name: Report root
+      href: ../../resources/reportroot.md
+    - name: Forms activity
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getformsuseractivityuserdetail.md
+      - name: Get user counts
+        href: ../../api/reportroot-getformsuseractivityusercounts.md
+      - name: Get activity counts
+        href: ../../api/reportroot-getformsuseractivitycounts.md
+    - name: Microsoft Teams device usage
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getteamsdeviceusageuserdetail.md
+      - name: Get user counts
+        href: ../../api/reportroot-getteamsdeviceusageusercounts.md
+      - name: Get total user counts
+        href: ../../api/reportroot-getteamsdeviceusagetotalusercounts.md
+      - name: Get distribution user counts
+        href: ../../api/reportroot-getteamsdeviceusagedistributionusercounts.md
+      - name: Get distribution total user counts
+        href: ../../api/reportroot-getteamsdeviceusagedistributiontotalusercounts.md
+    - name: Microsoft Teams user activity
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getteamsuseractivityuserdetail.md
+      - name: Get activity counts
+        href: ../../api/reportroot-getteamsuseractivitycounts.md
+      - name: Get activity total counts
+        href: ../../api/reportroot-getteamsuseractivitytotalcounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getteamsuseractivityusercounts.md
+      - name: Get total user counts
+        href: ../../api/reportroot-getteamsuseractivitytotalusercounts.md
+      - name: Get distribution user counts
+        href: ../../api/reportroot-getteamsuseractivitydistributionusercounts.md
+      - name: Get distribution total user counts
+        href: ../../api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
+      - name: Get total distribution activity counts
+        href: ../../api/reportroot-getteamsuseractivitytotaldistributioncounts.md
+    - name: Microsoft Teams team activity
+      items:
+      - name: Get team detail
+        href: ../../api/reportroot-getteamsteamactivitydetail.md
+      - name: Get team activity counts
+        href: ../../api/reportroot-getteamsteamactivitycounts.md
+      - name: Get team activity distribution counts
+        href: ../../api/reportroot-getteamsteamactivitydistributioncounts.md
+      - name: Get team counts
+        href: ../../api/reportroot-getteamsteamcounts.md
+    - name: Outlook activity
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getemailactivityuserdetail.md
+      - name: Get activity counts
+        href: ../../api/reportroot-getemailactivitycounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getemailactivityusercounts.md
+    - name: Outlook app usage
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getemailappusageuserdetail.md
+      - name: Get apps user counts
+        href: ../../api/reportroot-getemailappusageappsusercounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getemailappusageusercounts.md
+      - name: Get versions user counts
+        href: ../../api/reportroot-getemailappusageversionsusercounts.md
+    - name: Outlook mailbox usage
+      items:
+      - name: Get mailbox detail
+        href: ../../api/reportroot-getmailboxusagedetail.md
+      - name: Get mailbox counts
+        href: ../../api/reportroot-getmailboxusagemailboxcounts.md
+      - name: Get quota status mailbox counts
+        href: ../../api/reportroot-getmailboxusagequotastatusmailboxcounts.md
+      - name: Get storage
+        href: ../../api/reportroot-getmailboxusagestorage.md
+    - name: Microsoft 365 activations
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getoffice365activationsuserdetail.md
+      - name: Get activation counts
+        href: ../../api/reportroot-getoffice365activationcounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getoffice365activationsusercounts.md
+    - name: Microsoft 365 active users
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getoffice365activeuserdetail.md
+      - name: Get user counts
+        href: ../../api/reportroot-getoffice365activeusercounts.md
+      - name: Get services user counts
+        href: ../../api/reportroot-getoffice365servicesusercounts.md
+    - name: Microsoft 365 apps usage
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getm365appuserdetail.md
+      - name: Get user counts
+        href: ../../api/reportroot-getm365appusercounts.md
+      - name: Get platform user counts
+        href: ../../api/reportroot-getm365appplatformusercounts.md
+    - name: Microsoft 365 browser usage
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getbrowseruserdetail.md
+      - name: Get user counts
+        href: ../../api/reportroot-getbrowserusercounts.md
+      - name: Get distribution user counts
+        href: ../../api/reportroot-getbrowserdistributionusercounts.md
+    - name: Microsoft 365 groups activity
+      items:
+      - name: Get group detail
+        href: ../../api/reportroot-getoffice365groupsactivitydetail.md
+      - name: Get activity counts
+        href: ../../api/reportroot-getoffice365groupsactivitycounts.md
+      - name: Get group counts
+        href: ../../api/reportroot-getoffice365groupsactivitygroupcounts.md
+      - name: Get storage
+        href: ../../api/reportroot-getoffice365groupsactivitystorage.md
+      - name: Get file counts
+        href: ../../api/reportroot-getoffice365groupsactivityfilecounts.md
+    - name: OneDrive activity
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getonedriveactivityuserdetail.md
+      - name: Get user counts
+        href: ../../api/reportroot-getonedriveactivityusercounts.md
+      - name: Get file counts
+        href: ../../api/reportroot-getonedriveactivityfilecounts.md
+    - name: OneDrive usage
+      items:
+      - name: Get account detail
+        href: ../../api/reportroot-getonedriveusageaccountdetail.md
+      - name: Get account counts
+        href: ../../api/reportroot-getonedriveusageaccountcounts.md
+      - name: Get file counts
+        href: ../../api/reportroot-getonedriveusagefilecounts.md
+      - name: Get storage
+        href: ../../api/reportroot-getonedriveusagestorage.md
+    - name: SharePoint activity
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getsharepointactivityuserdetail.md
+      - name: Get file counts
+        href: ../../api/reportroot-getsharepointactivityfilecounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getsharepointactivityusercounts.md
+      - name: Get pages
+        href: ../../api/reportroot-getsharepointactivitypages.md
+    - name: SharePoint site usage
+      items:
+      - name: Get site detail
+        href: ../../api/reportroot-getsharepointsiteusagedetail.md
+      - name: Get file counts
+        href: ../../api/reportroot-getsharepointsiteusagefilecounts.md
+      - name: Get site counts
+        href: ../../api/reportroot-getsharepointsiteusagesitecounts.md
+      - name: Get storage
+        href: ../../api/reportroot-getsharepointsiteusagestorage.md
+      - name: Get pages
+        href: ../../api/reportroot-getsharepointsiteusagepages.md
+    - name: Skype for Business activity
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getskypeforbusinessactivityuserdetail.md
+      - name: Get activity counts
+        href: ../../api/reportroot-getskypeforbusinessactivitycounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getskypeforbusinessactivityusercounts.md
+    - name: Skype for Business device usage
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
+      - name: Get distribution user counts
+        href: ../../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getskypeforbusinessdeviceusageusercounts.md
+    - name: Skype for Business organizer activity
+      items:
+      - name: Get activity counts
+        href: ../../api/reportroot-getskypeforbusinessorganizeractivitycounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
+      - name: Get minute counts
+        href: ../../api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
+    - name: Skype for Business participant activity
+      items:
+      - name: Get activity counts
+        href: ../../api/reportroot-getskypeforbusinessparticipantactivitycounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
+      - name: Get minute counts
+        href: ../../api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
+    - name: Skype for Business peer-to-peer activity
+      items:
+      - name: Get activity counts
+        href: ../../api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
+      - name: Get minute counts
+        href: ../../api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
+    - name: Viva Engage activity
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getyammeractivityuserdetail.md
+      - name: Get activity counts
+        href: ../../api/reportroot-getyammeractivitycounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getyammeractivityusercounts.md
+    - name: Viva Engage device usage
+      items:
+      - name: Get user detail
+        href: ../../api/reportroot-getyammerdeviceusageuserdetail.md
+      - name: Get distribution user counts
+        href: ../../api/reportroot-getyammerdeviceusagedistributionusercounts.md
+      - name: Get user counts
+        href: ../../api/reportroot-getyammerdeviceusageusercounts.md
+    - name: Viva Engage groups activity
+      items:
+      - name: Get group detail
+        href: ../../api/reportroot-getyammergroupsactivitydetail.md
+      - name: Get group counts
+        href: ../../api/reportroot-getyammergroupsactivitygroupcounts.md
+      - name: Get activity counts
+        href: ../../api/reportroot-getyammergroupsactivitycounts.md
+  - name: Complex types
+    items:
+    - name: Admin
+      href: ../../resources/admin.md
+    - name: Office 365 active user counts
+      href: ../../resources/office365activeusercounts.md
+    - name: Office 365 active user detail
+      href: ../../resources/office365activeuserdetail.md
+    - name: Office 365 groups activity counts
+      href: ../../resources/office365groupsactivitycounts.md
+    - name: Office 365 groups activity detail
+      href: ../../resources/office365groupsactivitydetail.md
+    - name: Office 365 groups activity file counts
+      href: ../../resources/office365groupsactivityfilecounts.md
+    - name: Office 365 groups activity group counts
+      href: ../../resources/office365groupsactivitygroupcounts.md
+    - name: Office 365 groups activity storage
+      href: ../../resources/office365groupsactivitystorage.md
+    - name: Office 365 services user counts
+      href: ../../resources/office365servicesusercounts.md
+- name: Microsoft Defender for Office 365 security reports
+  items:
+  - name: Overview
+    href: ../../resources/report-m365defender-reports-overview.md
+  - name: Attack simulation repeat offender
+    items:
+    - name: Attack simulation repeat offender
+      href: ../../resources/attacksimulationrepeatoffender.md
+    - name: Get repeat offenders
+      href: ../../api/securityreportsroot-getattacksimulationrepeatoffenders.md
+  - name: Attack simulation simulation user coverage
+    items:
+    - name: Attack simulation simulation user coverage
+      href: ../../resources/attacksimulationsimulationusercoverage.md
+    - name: Get simulation coverage for users
+      href: ../../api/securityreportsroot-getattacksimulationsimulationusercoverage.md
+  - name: Attack simulation training user coverage
+    items:
+    - name: Attack simulation training user coverage
+      href: ../../resources/attacksimulationtrainingusercoverage.md
+    - name: Get training coverage for users
+      href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+- name: Partner billing reports
+  items:
+  - name: Overview
+    href: ../../resources/partners-billing-api-overview.md
+  - name: Billed reconciliation
+    items:
+    - name: Billed reconciliation
+      href: ../../resources/partners-billing-billedreconciliation.md
+    - name: export
+      href: ../../api/partners-billing-billedreconciliation-export.md
+  - name: Billed usage
+    items:
+    - name: Billed usage
+      href: ../../resources/partners-billing-billedusage.md
+    - name: export
+      href: ../../api/partners-billing-billedusage-export.md
+  - name: Manifest
+    items:
+    - name: Manifest
+      href: ../../resources/partners-billing-manifest.md
+    - name: Get manifest
+      href: ../../api/partners-billing-manifest-get.md
+  - name: Operation
+    items:
+    - name: Operation
+      href: ../../resources/partners-billing-operation.md
+    - name: Get operation
+      href: ../../api/partners-billing-operation-get.md
+  - name: Unbilled usage
+    items:
+    - name: Unbilled usage
+      href: ../../resources/partners-billing-unbilledusage.md
+    - name: export
+      href: ../../api/partners-billing-unbilledusage-export.md
