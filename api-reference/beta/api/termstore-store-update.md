@@ -3,7 +3,7 @@ title: "Update store"
 description: "Update the properties of a store object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 

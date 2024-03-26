@@ -3,7 +3,7 @@ title: "Create windowsDefenderApplicationControlSupplementalPolicy"
 description: "Create a new windowsDefenderApplicationControlSupplementalPolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

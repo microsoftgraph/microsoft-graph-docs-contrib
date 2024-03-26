@@ -3,7 +3,7 @@ title: "List deviceManagementConfigurationRedirectSettingDefinitions"
 description: "List properties and relationships of the deviceManagementConfigurationRedirectSettingDefinition objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

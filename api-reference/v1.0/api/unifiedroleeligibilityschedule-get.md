@@ -3,7 +3,7 @@ title: "Get unifiedRoleEligibilitySchedule"
 description: "Retrieve the schedule for a role eligibility operation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "redirectUriSettings resource type"
 description: "Specifies the index for a redirectUri"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 

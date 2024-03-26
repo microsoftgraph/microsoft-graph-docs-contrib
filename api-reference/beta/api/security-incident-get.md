@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an incident."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

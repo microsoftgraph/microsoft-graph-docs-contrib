@@ -3,7 +3,7 @@ title: "Update pendingExternalUserProfile"
 description: "Update the properties of a pendingExternalUserProfile object."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of a [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -3,7 +3,7 @@ title: "callParticipantInfo resource type"
 description: "Represents the details for a call participant."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

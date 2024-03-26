@@ -1,12 +1,12 @@
 ---
 title: "Manage application authenticationBehaviors"
 description: "Manage the application authenticationBehaviors to adopt new breaking changes."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: medbhargava
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 06/26/2023
 #customer intent: As a developer, I want to use Microsoft Graph to configure my app's behavior to adopt new breaking changes.
 ---

@@ -3,7 +3,7 @@ title: "Working with the cloud communications API in Microsoft Graph"
 description: "The Microsoft Graph cloud communications API adds a new dimension to how your apps and services can interact with users by enabling voice and video features."
 author: "ananmishr"
 doc_type: conceptualPageType
-ms.prod: cloud-communications
+ms.subservice: cloud-communications
 ms.localizationpriority: high
 ---
 

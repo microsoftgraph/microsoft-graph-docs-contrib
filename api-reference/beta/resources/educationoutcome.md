@@ -3,7 +3,7 @@ title: "educationOutcome resource type"
 description: "Represents a base class for the result of grading an assignment."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 

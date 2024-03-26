@@ -3,7 +3,7 @@ title: "Delete resourceOperation"
 description: "Deletes a resourceOperation."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

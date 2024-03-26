@@ -3,7 +3,7 @@ title: "chatActivityStatistics resource type"
 description: "Represents information about chat activities for users."
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "resourcePageType"
 ---
 

@@ -4,7 +4,7 @@ description: "Describes an object and its attributes."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # objectDefinition resource type

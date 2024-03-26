@@ -3,7 +3,7 @@ title: "Get audioRoutingGroup"
 description: "Retrieve the properties and relationships of an audioRoutingGroup object."
 author: "hanknguyen"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

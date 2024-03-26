@@ -3,7 +3,7 @@ title: "sitePage resource type"
 description: Represents a site page in the sitePages list.
 author: Sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Represents a reaction to a chatMessage entity. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "RamjotSingh"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # chatMessageReaction resource type

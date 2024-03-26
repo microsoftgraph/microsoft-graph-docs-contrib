@@ -3,7 +3,7 @@ title: "fileUrlThreatSubmission resource type"
 description: "Represents file threat submission object created when a submission is made using a file URL."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

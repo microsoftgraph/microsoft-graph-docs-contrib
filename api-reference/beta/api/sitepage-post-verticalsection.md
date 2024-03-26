@@ -3,7 +3,7 @@ title: 'Create verticalSection'
 description: "Create a verticalSection in a page"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 # Create verticalSection
@@ -55,7 +55,7 @@ If the vertical section already exists, this method returns a `409 Conflict` res
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 

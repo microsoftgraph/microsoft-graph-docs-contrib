@@ -3,7 +3,7 @@ title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

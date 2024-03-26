@@ -3,7 +3,7 @@ title: "Update accessReviewPolicy"
 description: "Update the properties of an accessReviewPolicy object."
 author: "kafen"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

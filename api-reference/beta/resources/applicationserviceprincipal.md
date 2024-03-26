@@ -3,7 +3,7 @@ title: "applicationServicePrincipal resource type"
 description: "A combination of an application and a servicePrincipal."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
