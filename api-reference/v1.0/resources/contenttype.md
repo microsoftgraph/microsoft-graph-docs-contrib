@@ -21,7 +21,7 @@ Represents a content type in SharePoint. Content types allow you to define a set
 |[Get contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Read the properties and relationships of a [contentType](../resources/contenttype.md) object.|
 |[Update contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Update the properties of a [contentType](../resources/contenttype.md) object.|
 |[Delete contentType](../api/contenttype-delete.md)|None|Delete a [contentType](../resources/contenttype.md) object.|
-|[isPublished](../api/contenttype-ispublished.md)|Boolean| Check if the [contentType](../resources/contenttype.md) is published.|
+|[isPublished](../api/contenttype-ispublished.md)|Boolean| Indicates whether the [contentType](../resources/contenttype.md) is published.|
 |[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Publish a [contentType](../resources/contenttype.md).|
 |[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Unpublish a [contentType](../resources/contenttype.md).|
 |[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Add copy of a [contentType](../resources/contenttype.md) from a [site](../resources/site.md) to a [list](../resources/list.md).|
