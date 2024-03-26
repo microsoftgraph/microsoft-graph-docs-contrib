@@ -54,7 +54,8 @@ If successful, this method returns a `201 Created` response code and a [conversa
 For best results, stagger calls with a 2 second buffer.
 
 > [!NOTE]
-> The response code 404 Not Found is returned when attempting to add a disabled/blocked user.
+> The response code `404 Not Found` is returned when you attempt to add a disabled/blocked user.
+
 ## Examples
 
 ### Example 1: Add a member to a team
