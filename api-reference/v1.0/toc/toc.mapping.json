@@ -272,6 +272,7 @@
             },
             {
               "name": "Company terms",
+              "overview": "../../resources/intune-company-conceptual.md",
               "workloads": [
                 {
                   "id": "Microsoft.Intune.CompanyTerms"
@@ -280,6 +281,7 @@
             },
             {
               "name": "Corporate enrollment",
+              "overview": "../../resources/intune-enrollment-conceptual.md",
               "workloads": [
                 {
                   "id": "Microsoft.Intune.Enrollment"
@@ -288,6 +290,7 @@
             },
             {
               "name": "Device configuration",
+              "overview": "../../resources/intune-device-cfg-conceptual.md",
               "workloads": [
                 {
                   "id": "Microsoft.Intune.DeviceConfiguration",
@@ -299,6 +302,7 @@
             },
             {
               "name": "Device management",
+              "overview": "../../resources/intune-device-mgt-conceptual.md",
               "workloads": [
                 {
                   "id": "Microsoft.Intune.Devices"
@@ -307,6 +311,7 @@
             },
             {
               "name": "Mobile app management (MAM)",
+              "overview": "../../resources/intune-mam-conceptual.md",
               "workloads": [
                 {
                   "id": "Microsoft.Intune.ManagedApplications"
@@ -321,6 +326,7 @@
             },
             {
               "name": "Role-based access control (RBAC)",
+              "overview": "../../resources/intune-rbac-conceptual.md",
               "workloads": [
                 {
                   "id": "Microsoft.Intune.Rbac"
@@ -543,26 +549,43 @@
                   "id": "Microsoft.AAD.LCM",
                   "excludedResources": [
                     "application",
+                    "deletedItemContainer",
                     "user",
                     "userProcessingResult",
                     "taskReport",
                     "run",
-                    "taskProcessingResult"
+                    "taskProcessingResult",
+                    "task",
+                    "workflowVersion"
                   ]
                 }
               ],
               "childNodes": [
                 {
-                  "name": "Reports",
-                  "overview": "../../resources/identitygovernance-lifecycleworkflows-reporting-overview.md",
+                  "name": "Workflow",
                   "workloads": [
                     {
                       "id": "Microsoft.AAD.LCM",
                       "includedResources": [
-                        "userProcessingResult",
-                        "taskReport",
-                        "run",
-                        "taskProcessingResult"
+                        "task",
+                        "workflowVersion"
+                      ]
+                    }
+                  ],
+                  "childNodes": [
+                    {
+                      "name": "Reports",
+                      "overview": "../../resources/identitygovernance-lifecycleworkflows-reporting-overview.md",
+                      "workloads": [
+                        {
+                          "id": "Microsoft.AAD.LCM",
+                          "includedResources": [
+                            "userProcessingResult",
+                            "taskReport",
+                            "run",
+                            "taskProcessingResult"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -570,7 +593,7 @@
               ]
             },
             {
-              "name": "Privileged identity management",
+              "name": "Privileged Identity Management",
               "childNodes": [
                 {
                   "name": "PIM for Microsoft Entra roles",
@@ -586,6 +609,7 @@
                         "unifiedRoleEligibilitySchedule",
                         "unifiedRoleEligibilityScheduleInstance",
                         "unifiedRoleManagementPolicy",
+                        "unifiedRoleManagementPolicyRule",
                         "unifiedRoleManagementPolicyAssignment"
                       ]
                     }
@@ -638,6 +662,7 @@
         },
         {
           "name": "Identity and sign-in",
+          "shouldSort": true,
           "workloads": [
             {
               "id": "Microsoft.PXS",
@@ -690,8 +715,8 @@
                 {
                   "id": "Microsoft.AuthenticationMethodsPolicy",
                   "includedResources": [
+                    "authenticationStrengthPolicy",
                     "authenticationCombinationConfiguration",
-                    "fido2CombinationConfiguration",
                     "authenticationMethodModeDetail"
                   ]
                 }
@@ -742,6 +767,7 @@
             },
             {
               "name": "Identity protection",
+              "overview": "../../resources/identityprotection-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.IdentityProtectionServices",
@@ -908,7 +934,7 @@
         },
         {
           "name": "Granular delegated admin privileges",
-          "overview": "delegatedadminrelationships-api-overview.md",
+          "overview": "../../resources/delegatedadminrelationships-api-overview.md",
           "workloads": [
             {
               "id": "Microsoft.Partner.CustomerSvcAdmin",
@@ -1641,6 +1667,10 @@
       "override": "Microsoft Store"
     },
     {
+      "term": "microsoft store for business",
+      "override": "Microsoft Store for Business"
+    },
+    {
       "term": "windows app x",
       "override": "Windows AppX"
     },
@@ -1753,6 +1783,98 @@
     {
       "term": "ipad os",
       "override": "iPadOS"
+    },
+    {
+      "term": "win 32",
+      "override": "Win32"
+    },
+    {
+      "term": "windows autopilot",
+      "override": "Windows Autopilot"
+    },
+    {
+      "term": "apple",
+      "override": "Apple"
+    },
+    {
+      "term": "wi fi",
+      "override": "Wi-Fi"
+    },
+    {
+      "term": "pfx",
+      "override": "PFX"
+    },
+    {
+      "term": "pkcs",
+      "override": "PKCS"
+    },
+    {
+      "term": "scep",
+      "override": "SCEP"
+    },
+    {
+      "term": "vpn",
+      "override": "VPN"
+    },
+    {
+      "term": "eas",
+      "override": "EAS"
+    },
+    {
+      "term": "gmail",
+      "override": "Gmail"
+    },
+    {
+      "term": "nine work",
+      "override": "Nine Work"
+    },
+    {
+      "term": "oma cp",
+      "override": "OMA CP"
+    },
+    {
+      "term": "aosp",
+      "override": "AOSP"
+    },
+    {
+      "term": "edu",
+      "override": "EDU"
+    },
+    {
+      "term": "iosik ev 2",
+      "override": "iOS IKEv2"
+    },
+    {
+      "term": "ndes",
+      "override": "NDES"
+    },
+    {
+      "term": "pc",
+      "override": "PC"
+    },
+    {
+      "term": "windows defender advanced threat protection",
+      "override": "Windows Defender Advanced Threat Protection"
+    },
+    {
+      "term": "windows delivery optimization",
+      "override": "Windows Delivery Optimization"
+    },
+    {
+      "term": "windows health monitoring",
+      "override": "Windows Health Monitoring"
+    },
+    {
+      "term": "windows update for business",
+      "override": "Windows Update for Business"
+    },
+    {
+      "term": "eap",
+      "override": "EAP"
+    },
+    {
+      "term": "todo",
+      "override": "To-do"
     }
   ]
 }
