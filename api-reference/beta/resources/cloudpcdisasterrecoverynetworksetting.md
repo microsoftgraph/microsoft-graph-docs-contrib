@@ -1,9 +1,9 @@
 ---
 title: "cloudPcDisasterRecoveryNetworkSetting resource type"
-description: "Represents the network configuration of back up Cloud PCs provisioned for cross region disaster recovery."
+description: "Represents the network configuration of backup Cloud PCs provisioned for cross-region disaster recovery."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the network configuration of back up Cloud PCs provisioned for cross region disaster recovery.
+Represents the network configuration of backup Cloud PCs provisioned for cross-region disaster recovery.
 
 ## Properties
 
@@ -25,7 +25,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcDisasterRecoveryNetworkSetting"
@@ -34,6 +34,6 @@ Here's a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcDisasterRecoveryNetworkSetting",
+  "@odata.type": "#microsoft.graph.cloudPcDisasterRecoveryNetworkSetting"
 }
 ```
