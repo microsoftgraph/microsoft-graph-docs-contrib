@@ -3,7 +3,7 @@ title: "List Windows setting instances"
 description: "Get a list of windowsSettingInstance objects and their properties."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 ---
 
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/me/settings/windows/{windowsSettingId}/inst
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
