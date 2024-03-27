@@ -4,7 +4,8 @@ description: "Use delta query to discover changes without fetching the entire se
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
-ms.prod: "change-notifications"
+ms.topic: tutorial
+ms.prod: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 01/12/2024
