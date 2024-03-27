@@ -1,224 +1,51 @@
 ---
-title: "Manage access to resources using the entitlement management APIs in Microsoft Graph"
-description: "Learn how to use Microsoft Graph APIs to develop code to create a package of resources for a marketing campaign that internal users can self-service request."
+title: "Manage access to resources using the entitlement management APIs"
+description: "Learn how to use Microsoft Graph APIs to create a package of resources that internal users can request themselves."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Mark.Wahl
+ms.topic: tutorial
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance"
-ms.date: 11/01/2022
+ms.subservice: entra-id-governance
+ms.date: 03/26/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to understand how to use entitlement management APIs to manage access to resources.
 ---
 
-# Manage access to resources using the entitlement management APIs in Microsoft Graph
+# Manage access to resources using the entitlement management APIs
 
-Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Microsoft Entra entitlement management](/entra/id-governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
+Microsoft Entra entitlement management allows you to manage access to resources that employees need to be productive. In this tutorial, you use the entitlement management APIs to create a package of resources that internal users request themselves. The APIs are the programmatic alternative for creating custom apps instead of using the Microsoft Entra admin center.
 
-In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.  This tutorial uses the [entitlement management beta APIs](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true); entitlement management also has [v1.0 APIs](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-1.0&preserve-view=true).
+In this tutorial, you learn how to:
 
-> [!NOTE]
-> The response objects shown in this tutorial might be shortened for readability.
+> [!div class="checklist"]
+> * Create an access package that users can self-service request.
+> * Assign a group resource to the access package.
+> * Request an access package
 
 ## Prerequisites
 
-To successfully complete this tutorial, make sure that you have the required prerequisites:
-- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/entra/id-governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses is required in your tenant:
-    - Microsoft Entra ID P2
-    - Microsoft Entra ID Governance
-- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
+To complete this tutorial, you need the following resources and privileges:
+
+- A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled. Either of these licenses are sufficient for the capabilities in this tutorial.
+- A test guest account and a test security group in your tenant. The security group is the resource in this tutorial. Be sure to be either the owner of the group or assigned the *Groups Administrator* role. In this tutorial:
+  - The user has the ID `007d1c7e-7fa8-4e33-b678-5e437acdcddc` and is named `Requestor1`.
+    - [Optional] Open a new anonymous browser window. You sign in later in this tutorial.
+  - The group has the ID `f4892fac-e81c-4712-bdf2-a4450008a4b0` with the "Marketing group" description and "Marketing resources" display name.
+- Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an account that has at least the *Identity Governance Administrator* role.
 - Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All`.
 
-## Step 1: Create a user account and a group
+> [!NOTE]
+> Some steps in this tutorial use the `beta` endpoint.
 
-In this step, you create a group named **Marketing resources** in the directory that is the target resource for entitlement management. You also create a user account that is set up as an internal requestor.
+## Step 1: Add resources to a catalog and create an access package
 
-### Create a user account
+An *access package* is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. Catalogs can reference resources, such as groups, apps, and sites, that are used in the access package. Entitlement management includes a default `General` catalog.
 
-For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change contoso.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
+In this step, you create a **Marketing Campaign** access package in the General catalog.
 
-#### Request
+### Step 1.1: Get the identifier for the General catalog
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial_entitlementmanagement_create_user"
-}-->
-``` http
-POST https://graph.microsoft.com/v1.0/users
-Content-type: application/json
-
-{
-  "accountEnabled":true,
-  "displayName":"Requestor1",
-  "mailNickname":"Requestor1",
-  "userPrincipalName":"Requestor1@contoso.com",
-  "passwordProfile": {
-    "forceChangePasswordNextSignIn":true,
-    "password":"Contoso1234"
-  }
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-create-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-create-user-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-create-user-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-entitlementmanagement-create-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-entitlementmanagement-create-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-entitlementmanagement-create-user-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-entitlementmanagement-create-user-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-entitlementmanagement-create-user-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-  "id": "007d1c7e-7fa8-4e33-b678-5e437acdcddc",
-  "deletedDateTime": null,
-  "accountEnabled": true,
-  "ageGroup": null,
-  "businessPhones": [],
-  "city": null,
-  "createdDateTime": null,
-  "creationType": null,
-  "companyName": null,
-  "consentProvidedForMinor": null,
-  "country": null,
-  "department": null,
-  "displayName": "Requestor1",
-  "employeeId": null,
-  "faxNumber": null,
-  "givenName": null,
-  "imAddresses": [],
-  "infoCatalogs": [],
-  "isResourceAccount": null,
-  "jobTitle": null,
-  "legalAgeGroupClassification": null,
-  "mail": null,
-  "mailNickname": "Requestor1",
-}
-```
-
-### Create a group
-
-In this tutorial, you create a group named **Marketing resources** that is the target resource for entitlement management. You can use an existing group if you already have one. Record the value of the **id** property that is returned to use later in this tutorial.
-
-#### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial_entitlementmanagement_create_group"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/groups
-Content-type: application/json
-
-{
-  "description":"Marketing group",
-  "displayName":"Marketing resources",
-  "mailEnabled":false,
-  "mailNickname":"markres",
-  "securityEnabled":true
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-create-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-create-group-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-create-group-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-entitlementmanagement-create-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-entitlementmanagement-create-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-entitlementmanagement-create-group-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-entitlementmanagement-create-group-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-entitlementmanagement-create-group-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
-} -->
-```http
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
-  "id": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
-  "deletedDateTime": null,
-  "classification": null,
-  "createdDateTime": "2020-06-24T16:47:37Z",
-  "createdByAppId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
-  "description": "Marketing group",
-  "displayName": "Marketing resources",
-  "expirationDateTime": null,
-  "groupTypes": [],
-  "infoCatalogs": [],
-  "isAssignableToRole": null,
-  "mail": null,
-  "mailEnabled": false,
-  "mailNickname": "markres"
-}
-```
-
-## Step 2: Add resources to a catalog and create an access package
-
-An *access package* is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. Catalogs can reference resources, such as groups, apps and sites, that are used in the access package. In this step, you create a **Marketing Campaign** access package in the General catalog. If you have a different catalog, use its name in the next section.
-
-### Get the catalog identifier
-
-To add resources to the catalog, you must first get the identifier of it. If you are using the General catalog, run the following request to get its identifier. If you are using a different catalog, change the filter value in the request to the name of your catalog. Record the value of the **id** property that is returned to use later in this tutorial.
+First, get the ID of the catalog to which you want to add resources.
 
 #### Request
 
@@ -228,7 +55,7 @@ To add resources to the catalog, you must first get the identifier of it. If you
   "name": "tutorial_entitlementmanagement_get_accesspackagecatalog"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs?$filter=(displayName eq 'General')
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs?$filter=(displayName eq 'General')
 ```
 
 # [C#](#tab/csharp)
@@ -266,6 +93,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ---
 
 #### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -273,36 +101,34 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 } -->
 ```http
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageCatalogs",
-  "value": [
-    {
-      "id": "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
-      "displayName": "General",
-      "description": "Built-in catalog.",
-      "catalogType": "ServiceDefault",
-      "catalogStatus": "Published",
-      "isExternallyVisible": true,
-      "createdBy": "Azure AD",
-      "createdDateTime": "2020-05-30T10:58:05.363Z",
-      "modifiedBy": "Azure AD",
-      "modifiedDateTime": "2020-05-30T10:58:05.363Z"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/catalogs",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/entitlementManagement/catalogs?$select=catalogType,createdDateTime",
+    "value": [
+        {
+            "id": "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
+            "displayName": "General",
+            "description": "Built-in catalog.",
+            "catalogType": "serviceDefault",
+            "state": "published",
+            "isExternallyVisible": true,
+            "createdDateTime": "2023-04-13T14:43:19.44Z",
+            "modifiedDateTime": "2023-04-13T14:43:19.44Z"
+        }
+    ]
 }
 ```
 
-The response should only contain the catalog whose name you provided in the request. If there are no values returned, check that the name of the catalog is correct before you proceed.
+### Step 1.2: Add the group to the catalog
 
-### Add the group to the catalog
+In this tutorial, the resource is a security group has the ID `e93e24d1-2b65-4a6c-a1dd-654a12225487`.
 
 To add the group that you created to the catalog, provide the following property values:
-- **catalogId** - the **id** of the catalog that you are using
-- **displayName** - the name of the group
-- **description** - the description of the group
+- **catalogId** - the **id** of the catalog that you're using
 - **originId** - the **id** of the group that you created
 
-#### Request
+If you're not the owner of the group that you reference in **originId** or aren't assigned the *Groups Administrator* role, then this request fails with a `403 Forbidden` error code.
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -310,7 +136,7 @@ To add the group that you created to the catalog, provide the following property
   "name": "tutorial_entitlementmanagement_get_accesspackageresourcerequest"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
 Content-type: application/json
 
 {
@@ -318,8 +144,6 @@ Content-type: application/json
   "requestType": "AdminAdd",
   "justification": "",
   "accessPackageResource": {
-    "displayName": "Marketing resources",
-    "description": "Marketing group",
     "resourceType": "AadGroup",
     "originId": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
     "originSystem": "AadGroup"
@@ -362,6 +186,10 @@ Content-type: application/json
 ---
 
 #### Response
+
+In this response, the **id** represents the ID for the group as a resource in the General catalog. This ID isn't the group ID. Record this ID. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -369,24 +197,21 @@ Content-type: application/json
 } -->
 ```http
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity",
-  "catalogId": "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
-  "executeImmediately": false,
-  "id": "44e521e0-fb6b-4d5e-a282-e7e68dc59493",
-  "requestType": "AdminAdd",
-  "requestState": "Delivered",
-  "requestStatus": "Fulfilled",
-  "isValidationOnly": false,
-  "expirationDateTime": null,
-  "justification": ""
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/resourceRequests/$entity",
+    "id": "44e521e0-fb6b-4d5e-a282-e7e68dc59493",
+    "requestType": "AdminAdd",
+    "requestState": "Delivered",
+    "requestStatus": "Fulfilled",
+    "catalogId": "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
+    "executeImmediately": false,
+    "justification": "",
+    "expirationDateTime": null
 }
 ```
 
-### Get catalog resources
+### Step 1.3: Get catalog resources
 
-In later steps in this tutorial, you need the **id** that was assigned to the group resource in the catalog. This identifier, which represents the group as a resource in the catalog, is different than the identifier of the group itself in Microsoft Graph. This is because a catalog can have resources which aren't represented in Microsoft Graph.
-
-In the request, provide the **id** of the catalog that you are using. Record the value of the **id** property for the group catalog resource.
+In this step, you retrieve the details of the resources that match the ID of the group resource that you added to the General catalog.
 
 #### Request
 
@@ -395,8 +220,8 @@ In the request, provide the **id** of the catalog that you are using. Record the
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_accesspackageresources"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/accessPackageResources?$filter=(displayName eq 'Marketing resources')
+```http
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/resources?$filter=originId eq 'e93e24d1-2b65-4a6c-a1dd-654a12225487'
 ```
 
 # [C#](#tab/csharp)
@@ -434,6 +259,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ---
 
 #### Response
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -441,27 +268,25 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 } -->
 ```http
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageResources",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/catalogs('cec5d6ab-c75d-47c0-9c1c-92e89f66e384')/resources",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/entitlementManagement/catalogs('<guid>')/resources?$select=attributes,createdDateTime",
   "value": [
     {
       "id": "4a1e21c5-8a76-4578-acb1-641160e076e8",
       "displayName": "Marketing resources",
       "description": "Marketing group",
-      "url": "https://account.activedirectory.windowsazure.com/r?tenantId=d3030981-8fb9-4919-9980-5580caeddd75#/manageMembership?objectType=Group&objectId=e93e24d1-2b65-4a6c-a1dd-654a12225487",
-      "resourceType": "Security Group",
       "originId": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
       "originSystem": "AadGroup",
-      "isPendingOnboarding": false,
-      "addedBy": "admin@contoso.com",
-      "addedOn": "2020-08-21T19:27:29.967Z"
+      "createdDateTime": "2024-03-26T09:44:50.527Z",
+      "attributes": []
     }
   ]
 }
 ```
 
-### Get resources roles
+### Step 1.4: Get resources roles
 
-The access package assigns users to the roles of a resource. The typical role of a group is the member role. Other resources, such as SharePoint Online sites and applications, might have many roles. The typical role of a group used in an access package is the member role. You'll need the member role when you add a resource role to the access package later in this tutorial.
+The access package assigns users to the roles of a resource. The typical role of a group is the `Member` role. Other resources, such as SharePoint Online sites and applications, might have many roles. The typical role of a group used in an access package is the `Member` role. You need the member role to add a resource role to the access package later in this tutorial.
 
 In the request, use the **id** of the catalog and the **id** of the group resource in the catalog that you recorded to get the **originId** of the Member resource role. Record the value of the **originId** property to use later in this tutorial.
 
@@ -472,8 +297,8 @@ In the request, use the **id** of the catalog and the **id** of the group resour
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_accesspackageresourceroles"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/accessPackageResourceRoles?$filter=(originSystem+eq+%27AadGroup%27+and+accessPackageResource/id+eq+%274a1e21c5-8a76-4578-acb1-641160e076e8%27+and+displayName+eq+%27Member%27)&$expand=accessPackageResource
+```http
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/ede67938-cda7-4127-a9ca-7c7bf86a19b7/resourceRoles?$filter=(originSystem eq 'AadGroup' and displayName eq 'Member' and resource/id eq '274a1e21c5-8a76-4578-acb1-641160e076e')&$expand=resource
 ```
 
 # [C#](#tab/csharp)
@@ -511,6 +336,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ---
 
 #### Response
+
+Because you filtered by the originId, display name and resource ID, if successful, a single value is returned, which represents the Member role of that group. If no roles are returned, check the **id** values of the catalog and the access package resource.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -518,37 +347,33 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 } -->
 ```http
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('ede67938-cda7-4127-a9ca-7c7bf86a19b7')/accessPackageResourceRoles(accessPackageResource())",
-  "value": [
-    {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "displayName": "Member",
-      "description": null,
-      "originSystem": "AadGroup",
-      "originId": "Member_e93e24d1-2b65-4a6c-a1dd-654a12225487",
-      "accessPackageResource": {
-        "id": "4a1e21c5-8a76-4578-acb1-641160e076e8",
-        "displayName": "Marketing resources",
-        "description": "Marketing group",
-        "url": "https://account.activedirectory.windowsazure.com/r?tenantId=d3030981-8fb9-4919-9980-5580caeddd75#/manageMembership?objectType=Group&objectId=e93e24d1-2b65-4a6c-a1dd-654a12225487",
-        "resourceType": "Security Group",
-        "originId": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
-        "originSystem": "AadGroup",
-        "isPendingOnboarding": false,
-        "addedBy": "admin@contoso.com",
-        "addedOn": "2020-06-26T17:13:23.723Z",
-        "accessPackageResourceScopes": []
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/catalogs('ede67938-cda7-4127-a9ca-7c7bf86a19b7')/resourceRoles(resource())",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/entitlementManagement/catalogs('<guid>')/resourceRoles?$select=description,displayName",
+    "value": [
+        {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "displayName": "Member",
+            "description": null,
+            "originSystem": "AadGroup",
+            "originId": "Member_e93e24d1-2b65-4a6c-a1dd-654a12225487",
+            "resource@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/catalogs('ede67938-cda7-4127-a9ca-7c7bf86a19b7')/resourceRoles('00000000-0000-0000-0000-000000000000')/resource/$entity",
+            "resource": {
+                "id": "ec09e90e-e021-4599-a8c3-bce77c2b2000",
+                "displayName": "Marketing resources",
+                "description": "Marketing group",
+                "originId": "e93e24d1-2b65-4a6c-a1dd-654a12225487",
+                "originSystem": "AadGroup",
+                "createdDateTime": "2023-04-13T14:43:21.43Z",
+                "attributes": []
+            }
+        }
+    ]
 }
 ```
 
-If successful, a single value is returned, which represents the Member role of that group. If no roles are returned, check the **id** values of the catalog and the access package resource.
+### Step 1.5: Create the access package
 
-### Create the access package
-
-At this point, you have a catalog with a group resource, and you know that you'll use the resource role of group member in the access package. The next step is to create the access package. After you have the access package, you can add the resource role to it, and create a policy for how users can request access to that resource role. You use the **id** of the catalog that you recorded earlier to create the access package. Record the **id** of the access package to use later in this tutorial.
+You now have a catalog with a group resource, and you want to use the resource role of group member in the access package. The next step is to create the access package. After you have the access package, you can add the resource role to it, and create a policy for how users can request access to that resource role. You use the **id** of the catalog that you recorded earlier to create the access package. Record the **id** of the access package to use later in this tutorial.
 
 #### Request
 
@@ -558,7 +383,7 @@ At this point, you have a catalog with a group resource, and you know that you'l
   "name": "tutorial_entitlementmanagement_create_accesspackage"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages
 Content-type: application/json
 
 {
@@ -610,23 +435,21 @@ Content-type: application/json
 } -->
 ```http
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity",
-  "id": "88203d16-0e31-41d4-87b2-dd402f1435e9",
-  "catalogId": "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
-  "displayName": "Marketing Campaign",
-  "description": "Access to resources for the campaign",
-  "isHidden": false,
-  "isRoleScopesVisible": false,
-  "createdBy": "admin@contoso.com",
-  "createdDateTime": "2020-08-21T19:45:33.2042281Z",
-  "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2020-08-21T19:45:33.2042281Z"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity",
+    "id": "88203d16-0e31-41d4-87b2-dd402f1435e9",
+    "catalogId": "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
+    "displayName": "Marketing Campaign",
+    "description": "Access to resources for the campaign",
+    "isHidden": false,
+    "isRoleScopesVisible": false,
+    "createdBy": "admin@contoso.com",
+    "createdDateTime": "2024-03-26T17:36:45.411033Z",
+    "modifiedBy": "admin@contoso.com",
+    "modifiedDateTime": "2024-03-26T17:36:45.411033Z"
 }
 ```
 
-### Add a resource role to the access package
-
-Add the Member role of the group resource to the access package. In the request, provide the **id** of the access package. In the request body provide the **id** of the group catalog resource for accessPackageResource, and provide the **originId** of the Member role that you previously recorded.
+### Step 1.6: Add a resource role to the access package
 
 #### Request
 
@@ -636,21 +459,24 @@ Add the Member role of the group resource to the access package. In the request,
   "name": "tutorial_entitlementmanagement_get_accesspackageresourcerolescope"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/88203d16-0e31-41d4-87b2-dd402f1435e9/accessPackageResourceRoleScopes
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/88203d16-0e31-41d4-87b2-dd402f1435e9/accessPackageResourceRoleScopes
 Content-type: application/json
 
 {
-  "accessPackageResourceRole": {
-    "originId":"Member_e93e24d1-2b65-4a6c-a1dd-654a12225487",
+  "role": {
+    "originId":"Member_f4892fac-e81c-4712-bdf2-a4450008a4b0",
     "displayName":"Member",
     "originSystem":"AadGroup",
-    "accessPackageResource": {
-      "id":"4a1e21c5-8a76-4578-acb1-641160e076e8","resourceType":"Security Group",
-      "originId":"e93e24d1-2b65-4a6c-a1dd-654a12225487","originSystem":"AadGroup"
+    "resource": {
+      "id":"4a1e21c5-8a76-4578-acb1-641160e076e8",
+      "resourceType":"Security Group",
+      "originId":"f4892fac-e81c-4712-bdf2-a4450008a4b0",
+      "originSystem":"AadGroup"
     }
   },
-  "accessPackageResourceScope": {
-    "originId":"e93e24d1-2b65-4a6c-a1dd-654a12225487","originSystem":"AadGroup"
+  "scope": {
+    "originId":"f4892fac-e81c-4712-bdf2-a4450008a4b0",
+    "originSystem":"AadGroup"
   }
 }
 ```
@@ -697,18 +523,15 @@ Content-type: application/json
 } -->
 ```http
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages('88203d16-0e31-41d4-87b2-dd402f1435e9')/accessPackageResourceRoleScopes/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/accessPackages('88203d16-0e31-41d4-87b2-dd402f1435e9')/accessPackageResourceRoleScopes/$entity",
   "id": "e081321b-2802-4834-a6ca-6f598ce3cdf7_6dbd2209-9d14-4c76-b92b-fcb00e835fe1",
-  "createdBy": "admin@contoso.com",
-  "createdDateTime": "2020-08-21T19:56:00.6320729Z",
-  "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2020-08-21T19:56:00.6320729Z"
+  "createdDateTime": "2024-03-26T19:56:00.6320729Z",
 }
 ```
 
 The access package now has one resource role, which is group membership. The role is assigned to any user who has the access package.
 
-### Create an access package policy
+### Step 1.7: Create an access package policy
 
 Now that you created the access package and added resources and roles, you can decide who can access it by creating an access package policy. In this tutorial, you enable the **Requestor1** account that you created to request access to the resources in the access package. For this task, you need these values:
 - **id** of the access package for the value of the **accessPackageId** property
@@ -832,7 +655,7 @@ Content-type: application/json
 }
 ```
 
-## Step 3: Request access
+## Step 2: Request access
 
 In this step, the **Requestor1** user account requests access to the resources in the access package.
 
@@ -841,9 +664,9 @@ To request access to resources in the access package, you need to provide these 
 - **id** of the assignment policy for the value of the **assignmentPolicyId** property
 - **id** of the access package for the value of **accessPackageId** property
 
-In the response you can see the status of **Accepted** and a state of **Submitted**. Record the value of the **id** property that is returned to get the status of the request later.
+In the response, the status is `Accepted` and a state is `Submitted`. Record the value of the **id** property that is returned to get the status of the request later.
 
-If you haven't done so already, sign out of the administrator account that you were using in Microsoft Graph Explorer. Sign in to the **Requestor1** user account that you created. You will be asked to change the password if it is the first time you are signing in.
+Start a new anonymous browser session, and sign in **Requestor1**. By doing so, you don't interrupt your current administrator session. Alternatively, you can interrupt your current administrator session by logging out of Graph Explorer and logging back in as **Requestor1**
 
 #### Request
 
@@ -921,13 +744,13 @@ Content-type: application/json
 }
 ```
 
-## Step 4: Validate that access has been assigned
+You can now sign out and exit the anonymous session.
 
-In this step, you confirm that the **Requestor1** user account was assigned the access package and that they are now a member of the **Marketing resources** group.
+## Step 3: Validate that access has been assigned
 
-Sign out of the Requestor1 account and sign back in to the administrator account to see the status of the request.
+In this step, you confirm that the **Requestor1** user account was assigned the access package and that they're now a member of the **Marketing resources** group. Return to the administrator session in Graph Explorer.
 
-### Get the status of the request
+### Step 3.1: Get the status of the request
 
 Use the value of the **id** property of the request to get the current status of it. In the response, you can see the status changed to **Fulfilled** and the state changed to **Delivered**.
 
@@ -938,7 +761,7 @@ Use the value of the **id** property of the request to get the current status of
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_accesspackageassignmentrequest"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/a6bb6942-3ae1-4259-9908-0133aaee9377
 ```
 
@@ -997,7 +820,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 }
 ```
 
-### Get access package assignments
+### Step 3.2: Get access package assignments
 
 You can also use the **id** of the access package policy that you created to see that resources have been assigned to the **Requestor1** user account.
 
@@ -1008,7 +831,7 @@ You can also use the **id** of the access package policy that you created to see
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_accesspackageassignment"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'&$expand=target,accessPackageAssignmentResourceRoles
 ```
 
@@ -1082,7 +905,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 }
 ```
 
-### Get the members of the group
+### Step 3.3: Get the members of the group
 
 After the request has been granted, you can use the **id** that you recorded for the **Marketing resources** group to see that the **Requestor1** user account has been added to it.
 
@@ -1093,8 +916,8 @@ After the request has been granted, you can use the **id** that you recorded for
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_group_members"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/e93e24d1-2b65-4a6c-a1dd-654a12225487/members
+```http
+GET https://graph.microsoft.com/v1.0/groups/f4892fac-e81c-4712-bdf2-a4450008a4b0/members
 ```
 
 # [C#](#tab/csharp)
@@ -1171,7 +994,7 @@ GET https://graph.microsoft.com/v1.0/groups/e93e24d1-2b65-4a6c-a1dd-654a12225487
 }
 ```
 
-## Step 5: Clean up resources
+## Step 4: Clean up resources
 
 In this step, you remove the changes you made and delete the **Marketing Campaign** access package.
 
@@ -1255,9 +1078,7 @@ Content-type: application/json
 
 ### Delete the access package assignment policy
 
-Use the **id** of the assignment policy that you previously recorded to delete it. Make sure all assignments are removed first.
-
-#### Request
+Use the **id** of the assignment policy that you previously recorded to delete it. Make sure all assignments are removed first. The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -1302,17 +1123,9 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ---
 
-#### Response
-<!-- {
-  "blockType": "response"
-} -->
-```http
-No Content - 204
-```
-
 ### Delete the access package
 
-Use the **id** of the access package that you previously recorded to delete it.
+Use the **id** of the access package that you previously recorded to delete it. The request returns a `204 No Content` response code.
 
 #### Request
 
@@ -1359,130 +1172,12 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ---
 
-#### Response
-<!-- {
-  "blockType": "response"
-} -->
-```http
-No Content - 204
-```
+## Conclusion
 
-### Delete the user account
+In this tutorial, the marketing campaign resources were membership in a single group, which could have access to other resources. The resources can also be a collection of groups, applications, or SharePoint Online sites.
 
-Delete the **Requestor1** user account.
-
-#### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial_entitlementmanagement_delete_user"
-}-->
-```http
-DELETE https://graph.microsoft.com/v1.0/users/ce02eca8-752b-4ecf-ac29-aa9bccd87606
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-delete-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-delete-user-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-delete-user-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-entitlementmanagement-delete-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-entitlementmanagement-delete-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-entitlementmanagement-delete-user-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-entitlementmanagement-delete-user-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-entitlementmanagement-delete-user-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-<!-- {
-  "blockType": "response"
-} -->
-```http
-No Content - 204
-```
-
-### Delete the group
-
-Delete the **Marketing resources** group.
-
-#### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial_entitlementmanagement_delete_group"
-}-->
-```http
-DELETE https://graph.microsoft.com/v1.0/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4209
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-delete-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-delete-group-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-delete-group-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-entitlementmanagement-delete-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-entitlementmanagement-delete-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-entitlementmanagement-delete-group-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-entitlementmanagement-delete-group-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-entitlementmanagement-delete-group-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-<!-- {
-  "blockType": "response"
-} -->
-```http
-No Content - 204
-```
+The capabilities in this tutorial are supported in Microsoft Entra ID P2 or Microsoft Entra ID Governance licenses. However, other advanced entitlement management capabilities require additional licensing. For more information, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
 
 ## Related content
 
-In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do:
-
-- [Working with the Microsoft Entra entitlement management API](/graph/api/resources/entitlementmanagement-overview)
+- [Working with the Microsoft Entra entitlement management APIs](/graph/api/resources/entitlementmanagement-overview)
