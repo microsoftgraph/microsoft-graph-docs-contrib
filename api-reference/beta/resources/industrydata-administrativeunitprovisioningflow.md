@@ -1,6 +1,6 @@
 ---
 title: "administrativeUnitProvisioningFlow resource type"
-description: "Represents the parameters that School Data Sync will use to create Administrative Units from your inbound data."
+description: "Represents the parameters that school data sync uses to create administrative units from your inbound data."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "industry-data-etl"
