@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	allowedCloudEndpoints = @(
-		"microsoftonline.us"
-	)
+	"microsoftonline.us"
+)
 }
 
 Update-MgPolicyCrossTenantAccessPolicy -BodyParameter $params
