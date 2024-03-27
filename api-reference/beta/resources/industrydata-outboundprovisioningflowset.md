@@ -1,6 +1,6 @@
 ---
 title: "outboundProvisioningFlowSet resource type"
-description: "Represents a collection of Outbound Provisioning Flows used to configure how School Data Sync populates data in Microsoft 365 and Entra ID."
+description: "Represents a collection of outbound provisioning flows used to configure how school data sync populates data in Microsoft 365 and Entra ID."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "industry-data-etl"
