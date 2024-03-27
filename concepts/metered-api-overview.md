@@ -46,4 +46,5 @@ Keep the following considerations in mind when you use metered APIs and services
 
 - [Metered APIs and services in Microsoft Graph](/graph/metered-api-list)
 - [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)
+- [Metered APIs Frequently Asked Questions](/graph/metered-api-faq)
 - [Payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md)
