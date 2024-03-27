@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance"
+ms.subservice: entra-id-governance
 ms.topic: how-to
 ms.date: 03/14/2024
 #customer intent: As a developer, I want to understand how to configure all reviewer types in Microsoft Entra access reviews through Microsoft Graph, so that I can automate the process of reviewing and managing access to Microsoft Entra resources.
