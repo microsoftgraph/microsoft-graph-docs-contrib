@@ -3,7 +3,7 @@ title: "channel: archive"
 description: "Archive a channel in a team. "
 author: "sumitgupta3"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

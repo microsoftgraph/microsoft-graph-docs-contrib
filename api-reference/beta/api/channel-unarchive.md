@@ -3,7 +3,7 @@ title: "channel: unarchive"
 description: "Restore an archived channel in a team. Unarchiving restores the ability for users to send messages and edit the channel."
 ms.localizationpriority: medium
 author: "sumitgupta3"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -28,8 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | ChannelSettings.ReadWrite.All | 
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelSettings.ReadWrite.All | 
-
-[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
