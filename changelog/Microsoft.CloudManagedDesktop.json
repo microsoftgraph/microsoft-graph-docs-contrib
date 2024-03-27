@@ -578,6 +578,14 @@
             "ChangeList": [
                 {
                     "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "crossRegionDisasterRecoverySetting",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **crossRegionDisasterRecoverySetting** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcUserSetting"
+                },
+                {
+                    "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcCrossRegionDisasterRecoverySetting",
                     "ChangeType": "Addition",
@@ -612,7 +620,7 @@
             "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-11-20T02:11:25.5385096Z",
+            "CreatedDateTime": "2024-03-27T02:11:25.5385096Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
