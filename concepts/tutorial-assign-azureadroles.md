@@ -250,7 +250,7 @@ While the group members are now *eligible* for the User Administrator role, they
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignments_list"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'
 ```
 
