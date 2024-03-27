@@ -1,6 +1,24 @@
 {
     "changelog": [
         {
+            "ChangeList": [
+              {
+                "Id": "e71cd5c7-4f63-a7b7-d230-7a27783fe81a",
+                "ApiChange": "Method",
+                "ChangedApiName": "changeAlertRecordsPortalNotificationAsSent",
+                "ChangeType": "Addition",
+                "Description": "Added the **changeAlertRecordsPortalNotificationAsSent** method to the [alertRecord](https://learn.microsoft.com/en-us/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta) resource.",
+                "Target": "changeAlertRecordsPortalNotificationAsSent"
+              }
+            ],
+            "Id": "e71cd5c7-4f63-a7b7-d230-7a27783fe81a",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-03-25T10:40:03.4590295Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+          },
+        {
           "ChangeList": [
             {
               "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
