@@ -15,7 +15,7 @@ Namespace: microsoft.graph.industryData
 
 Represents the parameters that School Data Sync will use to create Class Groups and teams in Microsoft365 from your inbound data. Class groups provide a space for users to connect with each other, communicate, and collaborate across various Microsoft 365 applications including Teams.
 
-classGroupProvisioningFlow is defined within an [OutboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) that may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data.
+classGroupProvisioningFlow is defined within an [outboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) that may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data.
 
 There may be multiple classGroupProvisioningFlows, defined within separate OutboundProvsioningFlowSets (editor note, hyperlink to related docs) allowing different configurations for different organizations.
 
