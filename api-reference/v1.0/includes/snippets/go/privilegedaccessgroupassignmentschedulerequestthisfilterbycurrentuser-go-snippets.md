@@ -26,7 +26,7 @@ configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGrou
 }
 
 on := "principal"
-filterByCurrentUser, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().AssignmentScheduleRequests().FilterByCurrentUserWithOn(&on).Get(context.Background(), configuration)
+filterByCurrentUser, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().AssignmentScheduleRequests().FilterByCurrentUserWithOn(&on).GetAsFilterByCurrentUserWithOnGetResponse(context.Background(), configuration)
 
 
 ```
