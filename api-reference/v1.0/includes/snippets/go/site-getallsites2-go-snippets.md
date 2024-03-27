@@ -25,7 +25,7 @@ configuration := &graphsites.SitesGetAllSites()RequestBuilderGetRequestConfigura
 	QueryParameters: requestParameters,
 }
 
-getAllSites, err := graphClient.Sites().GetAllSites().Get(context.Background(), configuration)
+getAllSites, err := graphClient.Sites().GetAllSites().GetAsGetAllSitesGetResponse(context.Background(), configuration)
 
 
 ```

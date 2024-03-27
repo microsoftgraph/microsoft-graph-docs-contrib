@@ -56,7 +56,7 @@ value := []graphmodels.Alertable {
 }
 requestBody.SetValue(value)
 
-updateAlerts, err := graphClient.Security().Alerts().UpdateAlerts().Post(context.Background(), requestBody, nil)
+updateAlerts, err := graphClient.Security().Alerts().UpdateAlerts().PostAsUpdateAlertsPostResponse(context.Background(), requestBody, nil)
 
 
 ```

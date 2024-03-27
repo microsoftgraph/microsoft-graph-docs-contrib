@@ -4,8 +4,9 @@ description: "You can extend Microsoft Graph with your own application data. Add
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
+ms.topic: concept-article
 ms.localizationpriority: high
-ms.prod: "extensions"
+ms.prod: extensions
 ms.topic: overview
 ms.custom: graphiamtop20
 ms.date: 11/29/2023

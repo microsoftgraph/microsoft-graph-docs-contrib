@@ -23,6 +23,12 @@ $params = @{
 		maximumRetries = 1
 	}
 	claimsForTokenConfiguration = @(
+		@{
+			claimIdInApiResponse = "DateOfBirth"
+		}
+		@{
+			claimIdInApiResponse = "CustomRoles"
+		}
 	)
 }
 
