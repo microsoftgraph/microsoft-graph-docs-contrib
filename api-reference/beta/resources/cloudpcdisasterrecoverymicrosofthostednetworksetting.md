@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting resource type"
-description: "Represents the MicrosoftHostedNetwork configuration of backup Cloud PCs provisioned for cross region disaster recovery."
+description: "Represents the configuration of Microsoft-hosted network for backup Cloud PCs provisioned for cross-region disaster recovery."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the MicrosoftHostedNetwork configuration of backup Cloud PCs provisioned for cross region disaster recovery.
+Represents the configuration of Microsoft-hosted network for backup Cloud PCs provisioned for cross-region disaster recovery.
 
 Inherits from [cloudPcDisasterRecoveryNetworkSetting](../resources/cloudpcdisasterrecoverynetworksetting.md).
 
