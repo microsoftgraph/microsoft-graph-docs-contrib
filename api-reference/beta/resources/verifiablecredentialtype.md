@@ -19,7 +19,7 @@ Contains details of a verifiable credential type, including the type of the cred
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|issuers|String collection| List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, `did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W\<SNIP\>...`. |
+|issuers|[verifiableCredentialIssuer](verifiableCredentialIssuer.md) collection| The different authorities that have issued this Verified ID to the appropriate users. |
 |credentialType|String| The type of credential issued, for example, `BusinessCardCredential`.|
 
 ## Relationships
@@ -36,7 +36,9 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.verifiableCredentialType",
   "issuers": [
-    "String"
+    {
+      "@odata.type": "microsoft.graph.verifiableCredentialIssuer"
+    }
   ],
   "credentialType": "String"
 }
