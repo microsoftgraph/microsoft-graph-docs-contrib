@@ -613,7 +613,7 @@ Content-type: application/json
 The following example shows a request.
 
 >**Notes:**
-> - The file to attach must already be in SharePoint. To access the file properties, use the [driveitem-get](/graph/api/driveitem-get) endpoint for the file. The **eTag** of the **driveItem** has a GUID that is your attachment ID. Use the file share link as **contentURL**. Users must have permission to drive items using the file [share link](https://learn.microsoft.com/en-us/graph/api/shares-get?view=graph-rest-1.0&tabs=http). 
+> - The file to attach must already be in SharePoint. Use any GUID for your attachment ID. Use the file share link as **contentURL**. Users must have permission to drive items using the file [share link](https://learn.microsoft.com/en-us/graph/api/shares-get?view=graph-rest-1.0&tabs=http). You can use the name of the **driveItem** as your attachment name.
 > - Using the file share link endpoint for sending messages is not supported in [migration](https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) scenarios. 
 
 # [HTTP](#tab/http)
@@ -635,7 +635,8 @@ Content-type: application/json
         {
             "id": "668f7fa8-8129-4de7-b32b-fe1b442e6ef1",
             "contentType": "reference",
-            "contentUrl": "https://teamsgraph-my.sharepoint.com/:w:/g/personal/test_teamsgraph_onmicrosoft_com/Eah_j2YpgedNsyv-G0QubvEBma6Sd_76UtYkXwoJ-nYVEg?e=0H2Ibm"
+            "contentUrl": "https://teamsgraph-my.sharepoint.com/:w:/g/personal/test_teamsgraph_onmicrosoft_com/Eah_j2YpgedNsyv-G0QubvEBma6Sd_76UtYkXwoJ-nYVEg?e=0H2Ibm",
+            "name": "Personal Drive file.docx"
         }
     ]
 }
