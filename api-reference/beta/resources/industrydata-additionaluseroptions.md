@@ -19,8 +19,8 @@ The different management choices for the users to be provisioned.
 
 | Property                       | Type    | Description                                                     |
 | :----------------------------- | :------ | :-------------------------------------------------------------- |
-| allowStudentContactAssociation | Boolean | Indicates whether student contact association should be allowed |
-| markAllStudentsAsMinors        | Boolean | Indicates whether all students should be marked as minors       |
+| allowStudentContactAssociation | Boolean | Indicates whether student contact association should be allowed. |
+| markAllStudentsAsMinors        | Boolean | Indicates whether all students should be marked as minors.       |
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 ---
 title: "enrollmentMappings resource type"
-description: "The different management choices for the class groups to be provisioned"
+description: "The different management choices for the class groups to be provisioned."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "industry-data-etl"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The different management choices for the class groups to be provisioned
+The different management choices for the class groups to be provisioned.
 
 ## Properties
 
 | Property                 | Type                                                                                                                        | Description                                       |
 | :----------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------ |
-| memberEnrollmentMappings | [microsoft.graph.industryData.sectionRoleReferenceValue](../resources/industrydata-sectionrolereferencevalue.md) collection | The owner enrollmentMappings for the class group  |
-| ownerEnrollmentMappings  | [microsoft.graph.industryData.sectionRoleReferenceValue](../resources/industrydata-sectionrolereferencevalue.md) collection | The member enrollmentMappings for the class group |
+| memberEnrollmentMappings | [microsoft.graph.industryData.sectionRoleReferenceValue](../resources/industrydata-sectionrolereferencevalue.md) collection | The owner enrollmentMappings for the class group.  |
+| ownerEnrollmentMappings  | [microsoft.graph.industryData.sectionRoleReferenceValue](../resources/industrydata-sectionrolereferencevalue.md) collection | The member enrollmentMappings for the class group. |
 
 ## Relationships
 

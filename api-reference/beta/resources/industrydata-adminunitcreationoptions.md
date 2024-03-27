@@ -19,8 +19,8 @@ The different management choices for the administrative units to be provisioned.
 
 | Property                      | Type    | Description                                                                                 |
 | :---------------------------- | :------ | :------------------------------------------------------------------------------------------ |
-| createBasedOnOrg              | Boolean | Indicates whether the administrative unit should be created based on the org                |
-| createBasedOnOrgPlusRoleGroup | Boolean | indicates whether the administrative unit should be created based on the org and role group |
+| createBasedOnOrg              | Boolean | Indicates whether the administrative unit should be created based on the org.                |
+| createBasedOnOrgPlusRoleGroup | Boolean | indicates whether the administrative unit should be created based on the org and role group. |
 
 ## Relationships
 

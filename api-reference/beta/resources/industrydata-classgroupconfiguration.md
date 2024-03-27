@@ -19,9 +19,9 @@ The different configurations choices for the class groups to be provisioned with
 
 | Property             | Type                                                                                                                 | Description                                                                  |
 | :------------------- | :------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
-| additionalAttributes | microsoft.graph.industryData.additionalClassGroupAttributes collection                                               | The different attributes to sync for the class groups                        |
-| additionalOptions    | [microsoft.graph.industryData.additionalClassGroupOptions](../resources/industrydata-additionalclassgroupoptions.md) | The different options for the class groups to be provisioned with            |
-| enrollmentMappings   | [microsoft.graph.industryData.enrollmentMappings](../resources/industrydata-enrollmentmappings.md)                   | The different enrollmentMappings for the class groups to be provisioned with |
+| additionalAttributes | microsoft.graph.industryData.additionalClassGroupAttributes collection                                               | The different attributes to sync for the class groups.                        |
+| additionalOptions    | [microsoft.graph.industryData.additionalClassGroupOptions](../resources/industrydata-additionalclassgroupoptions.md) | The different options for the class groups to be provisioned with.            |
+| enrollmentMappings   | [microsoft.graph.industryData.enrollmentMappings](../resources/industrydata-enrollmentmappings.md)                   | The different enrollmentMappings for the class groups to be provisioned with. |
 
 ## Relationships
 
