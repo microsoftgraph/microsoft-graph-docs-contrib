@@ -15,7 +15,7 @@ Namespace: microsoft.graph.industryData
 
 Represents a collection of Outbound Provisioning Flows used to configure how School Data Sync populates data in Microsoft 365 and Entra ID. A flow set may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data. There may be multiple OutboundProvisioningFlowSets, allowing different configurations for different organizations. Each Outbound Provisioning Flow Set does not need to include every Provisioning Flow type.
 
-Outbound Provisioning Flow Set may contain not more than one (1) of each Provisioning Flow configuration that is being configured: [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md), [classGroupProvisioingFlow](../resources/industrydata-classgroupprovisioningflow.md), [securityGroupProvisioingFlow](../resources/industrydata-securityprovisioningflow.md), [administrativeUnitProvisioingFlow](../resources/industrydata-administrativeunitprovisioningflow.md).
+Outbound provisioning flow set may contain no more than one (1) of each provisioning flow configuration that is being configured: [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md), [classGroupProvisioingFlow](../resources/industrydata-classgroupprovisioningflow.md), [securityGroupProvisioingFlow](../resources/industrydata-securityprovisioningflow.md), [administrativeUnitProvisioingFlow](../resources/industrydata-administrativeunitprovisioningflow.md).
 
 ## Methods
 
