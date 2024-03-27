@@ -10,23 +10,22 @@ ms.custom: scenarios:getting-started
 
 ## Billing setup FAQs
 
-### What permissions are required to setup billing?
+### What permissions are required to set up billing?
 Setting up billing requires permissions both for the application registration and the Azure subscription you wish to use. Required permissions for the application registration are Application Owner or Application Administrator. Required permissions for the Azure subscription are Subscription Contributor, Owner / Resource Group Contributor, or Owner.
 
-### Can I use a Service Principal to setup billing on my App registration?
-Yes, this requires an Application Administrator or similar role for the App Registration assigned to the Service Principal. The role can be scoped to only the target application that is being setup for billing to prevent overly broad permissions from being granted.
+### Can I use a Service Principal to set up billing on my App registration?
+Yes, it requires an application administrator or similar role for the App Registration assigned to the Service Principal. The role can be scoped to only the target application set up for billing to prevent overly broad permissions from being granted.
 
-### Can I use a Managed Identity to setup billing on my App registration?
-Yes, you can create a Managed Identity for Azure resources. Assign role based access control to your subscription or resource group, and add Entra Application Administrator role to the Service Principal associated with the Managed Identity. See [Use a managed identity to access Azure Resource Manager - Windows - Microsoft Entra](/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-ua-arm) for an example.
+### Can I use a Managed Identity to set up billing on my App registration?
+Yes, you can create a Managed Identity for Azure resources. Assign role-based access control to your subscription or resource group, and add the Microsoft Entra application administrator role to the service principal associated with the managed identity. See [Use a managed identity to access Azure Resource Manager - Windows - Microsoft Entra](/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-ua-arm) for an example.
 
-### How can I verify that my application is properly setup for billing?
+### How can I verify that my application is properly set up for billing?
 Instructions for verifying billing setup can be found [here](/graph/metered-api-setup?tabs=azurecloudshell#verify-setup)
 
 ## Microsoft Teams export API billing FAQs
 
-### Are there additional requirements beyond setting up billing to call Microsoft Teams export APIs?
-Yes, Microsoft Teams export APIs require a Model parameter to be passed as part of the API call. Depending on the value of the Model parameter a user license may also be required for certain data. Please see [Teams API payment models and licensing requirements](teams-licenses.md) for details about the required Model parameters and user licenses.
-
+### Are there more requirements beyond setting up billing to call Microsoft Teams export APIs?
+Yes, Microsoft Teams export APIs require a Model parameter to be passed as part of the API call. Depending on the value of the model parameter, a user license may also be required for certain data. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
 ### How do I know which model parameter is being used in API calls?
 Inspecting the code of the calling application is the best way to determine which model parameter is being used.
 
@@ -34,28 +33,28 @@ Inspecting the code of the calling application is the best way to determine whic
 Seeded capacity for Teams export APIs being called with the model A parameter is calculated based on the number of eligible users in the target tenant. Seeded capacity is then applied to each application running against that tenant.
 
 ### How is seeded capacity applied?
-Seeded capacity is evaluated at the beginning of the month, any eligible license counts to the tenant level calculation of seeded capacity. Each application then consumes the seeded capacity allocated to it until it is depleted. Further consumption by the application is then metered and appears on the monthly bill.
+Seeded capacity is evaluated at the beginning of the month, and any eligible license counts to the tenant-level calculation of seeded capacity. Each application then consumes the seeded capacity allocated to it until it is depleted. Further consumption by the application is then metered and appears on the monthly bill.
 
-### What happens when an app that is registered but not setup for billing calls a metered Teams export API?
-The API call will fail with a 402 Payment Required error. This is the case even if targeting a user with a valid user license and passing the model A parameter.
+### What happens when an app that is registered but not set up for billing calls a metered Teams export API?
+The API call fails with a 402 Payment Required error. This is the case even if targeting a user with a valid user license and passing the model A parameter.
 
 ### What happens when the model parameter is excluded from a call to a Microsoft Teams export API that requires it?
-When calling an API without a required model parameter the API will default to evaluation mode behavior. Evaluation mode provides a limited number of API calls per month before returning the 402 Payment Required error. Evaluation mode is provided for evaluation and development only and not intended for production use.  
+When calling an API without a required model parameter the API defaults to evaluation mode behavior. The evaluation mode provides a limited number of API calls per month before returning the 402 Payment Required error. The evaluation mode is provided for evaluation and development only and isn't intended for production use.  
 
 ## Application consumer FAQ
 
-### Why is my application provider asking me to setup billing?
-Billing for metered APIs and services in Microsoft Graph is handled by the owner of the application registration. If you have acquired an application that requires you to be the owner of the application registration you will be responsible for any metered APIs and services used by the application.
+### Why is my application provider asking me to set up billing?
+The owner of the application registration handles billing for metered APIs and services in Microsoft Graph. If you acquired an application that requires you to be the owner of the application registration, you are responsible for any metered APIs and services used by the application.
 
 ### Do I need licenses for every user in my tenant?
-A license is required for each user that is subject to security and compliance policies. Other scenarios may not require a license, see [Teams API payment models and licensing requirements](teams-licenses.md) for more details about user license requirements for Microsoft Teams export APIs.
+A license is required for each user subject to security and compliance policies. Other scenarios may not require a license, see [Teams API payment models and licensing requirements](teams-licenses.md) for more details about user license requirements for Microsoft Teams export APIs.
 
-## Cost Management and billing FAQ
+## Cost management and billing FAQ
 
 ### Where can I get the billing information for metered APIs and Services?
-Billing data is submitted to the Azure Subscription used to create the Graph billing resource under Service Name "Microsoft Graph Services" typically available after 24 hours after the transactions ocurred.
+Billing data is submitted to the Azure Subscription used to create the Graph billing resource under the service name "Microsoft Graph Services" typically available 24 hours after the transactions occur.
 
-For a complete list of capabilities visit [Azure Cost Management and Billing overview](/azure/cost-management-billing/cost-management-billing-overview).
+For more information, see [Azure Cost Management and Billing overview](/azure/cost-management-billing/cost-management-billing-overview).
 
 Most frequently used tools to review and monitor billing charges:
 
@@ -76,7 +75,7 @@ The billing details can be aggregated or broken down by:
   | Tags | TenantId | TenantId |
   | AdditionalInfo | AppId, TenantId |  |
 
-Some endpoints might share a meter, and billing data can not be broken down by endpoint. Alternatively, a client app can setup client side API logging or use [Microsoft Graph activity logs](microsoft-graph-activity-logs-overview.md).
+Some endpoints might share a meter, and billing data can not be broken down by endpoint. Alternatively, a client app can set up client-side API logging or use [Microsoft Graph activity logs](microsoft-graph-activity-logs-overview.md).
 
 [!INCLUDE [Metered API Known Limitations](includes/metered-api-known-limitations.md)]
 
