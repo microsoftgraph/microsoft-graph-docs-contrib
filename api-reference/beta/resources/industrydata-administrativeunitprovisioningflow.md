@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the parameters that School Data Sync will use to create Administrative Units from your inbound data. Administrative Units provide a grouping construct for delegated IT administration and scoped role assignments. Scoped role assignments allow admins to manage a subset of the broader Microsoft 365 directory.
+Represents the parameters that school data sync uses to create administrative units from your inbound data. Administrative units provide a grouping construct for delegated IT administration and scoped role assignments. Scoped role assignments allow admins to manage a subset of the broader Microsoft 365 directory.
 
 administrativeUnitProvisioningFlow is defined within an [OutboundProvisioningFlowSet](../resources/industrydata-outboundprovisioningflowset.md) that may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data.
 
