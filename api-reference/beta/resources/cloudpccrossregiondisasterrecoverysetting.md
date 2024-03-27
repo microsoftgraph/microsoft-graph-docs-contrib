@@ -1,9 +1,9 @@
 ---
 title: "cloudPcCrossRegionDisasterRecoverySetting resource type"
-description: "Describes the settings of cross region disaster recovery."
+description: "Represents the settings for cross-region disaster recovery configurations."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings of cross region disaster recovery.
+Represents the settings for cross-region disaster recovery configurations.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|crossRegionDisasterRecoveryEnabled|Edm.Boolean|True if an end-user is allowed to set up Cloud PC cross region disaster recovery functionality, false if an end-user is not allowed to. Default value is false.|
-|maintainCrossRegionRestorePointEnabled|Edm.Boolean|Indicates whether Windows 365 maintain the cross region disaster recovery function generated restore points. When true, means the Windows 365 stored restore points. When false, Windows 365 don't generate or keep restore point from original Cloud PC. In the event of a disaster, the new Cloud PC can only be provisioned using the initial image, which would result in the loss of some user data on the original Cloud PC. The default value is false.|
-|disasterRecoveryNetworkSetting|microsoft.graph.cloudPcDisasterRecoveryNetworkSetting|Indicates the Cloud PC's network setting while performing cross region disaster recovery operation.|
+|crossRegionDisasterRecoveryEnabled|Boolean|`True` if an end user is allowed to set up cross-region disaster recovery for Cloud PC; otherwise, `false`. The default value is `false`.|
+|disasterRecoveryNetworkSetting|[cloudPcDisasterRecoveryNetworkSetting](../resources/cloudpcdisasterrecoverynetworksetting.md)|Indicates the network settings of the Cloud PC during a cross-region disaster recovery operation.|
+|maintainCrossRegionRestorePointEnabled|Boolean|Indicates whether Windows 365 maintain the cross-region disaster recovery function generated restore points. If `true`, the Windows 365 stored restore points; `false` indicates that Windows 365 doesn't generate or keep the restore point from the original Cloud PC. In the event of a disaster, the new Cloud PC can only be provisioned using the initial image, which results in the loss of some user data on the original Cloud PC. The default value is `false`.|
 
 ## Relationships
 
@@ -29,7 +29,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcCrossRegionDisasterRecoverySetting"
@@ -40,9 +40,7 @@ Here's a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcRestorePointSetting",
   "crossRegionDisasterRecoveryEnabled": "Boolean",
-  "maintainCrossRegionRestorePointEnabled": "Boolean",
-  "disasterRecoveryNetworkSetting": {
-    "@odata.type": "microsoft.graph.cloudPcDisasterRecoveryNetworkSetting"
-  }
+  "disasterRecoveryNetworkSetting": {"@odata.type": "microsoft.graph.cloudPcDisasterRecoveryNetworkSetting"},
+  "maintainCrossRegionRestorePointEnabled": "Boolean"
 }
 ```
