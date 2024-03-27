@@ -16555,18 +16555,6 @@ items:
                 href: resources/security-huntingrowresult.md
               - name: Single property schema
                 href: resources/security-singlepropertyschema.md
-          - name: Custom detection rules
-            items:
-              - name: List custom detection rules
-                href: api/security-detectionrule-list.md
-              - name: Get custom detection rule
-                href: api/security-detectionrule-get.md
-              - name: Create custom detection rule
-                href: api/security-detectionrule-post-detectionRules.md
-              - name: Update custom detection rule
-                href: api/security-detectionrule-update.md
-              - name: Delete custom detection rule
-                href: api/security-detectionrule-delete.md
           - name: Alerts and incidents
             items:
               - name: Alert
@@ -16597,18 +16585,18 @@ items:
                     href: api/security-incident-update.md
                   - name: Create comment for incident
                     href: api/security-incident-post-comments.md
-          - name: Identites
+          - name: Custom detection rules
             items:
-              - name: Health issue
-                items:
-                  - name: Health issue
-                    href: resources/security-healthissue.md
-                  - name: List
-                    href: api/security-identityContainer-list-healthissues.md
-                  - name: Get
-                    href: api/security-healthissue-get.md
-                  - name: Update
-                    href: api/security-healthissue-update.md
+              - name: List custom detection rules
+                href: api/security-detectionrule-list.md
+              - name: Get custom detection rule
+                href: api/security-detectionrule-get.md
+              - name: Create custom detection rule
+                href: api/security-detectionrule-post-detectionRules.md
+              - name: Update custom detection rule
+                href: api/security-detectionrule-update.md
+              - name: Delete custom detection rule
+                href: api/security-detectionrule-delete.md
           - name: Attack simulation and training
             items:
               - name: Simulations
@@ -16977,6 +16965,18 @@ items:
                   href: api/security-analyzedemail-get.md
                 - name: Remediate
                   href: api/security-analyzedemail-remediate.md
+          - name: Identites
+            items:
+              - name: Health issue
+                items:
+                  - name: Health issue
+                    href: resources/security-healthissue.md
+                  - name: List
+                    href: api/security-identityContainer-list-healthissues.md
+                  - name: Get
+                    href: api/security-healthissue-get.md
+                  - name: Update
+                    href: api/security-healthissue-update.md
           - name: Information protection
             items:
               - name: Labels (deprecated)
