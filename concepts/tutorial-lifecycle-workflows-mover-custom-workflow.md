@@ -84,8 +84,8 @@ Content-type: application/json
     "tasks": [
         {
             "continueOnError": false,
-            "description": "Send email to boss",
-            "displayName": "Send Email to boss",
+            "description": "Send email to moving employee's manager",
+            "displayName": "Notify manager of move",
             "isEnabled": true,
             "taskDefinitionId": "aab41899-9972-422a-9d97-f626014578b7",
             "arguments": []
