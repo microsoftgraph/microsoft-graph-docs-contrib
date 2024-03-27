@@ -1038,6 +1038,8 @@ items:
         href: throttling-limits.md
     - name: Enable metered APIs
       href: metered-api-setup.md
+    - name: Metered APIs FAQ
+      href: metered-api-faq.md
     - name: Work with Graph Explorer
       href: graph-explorer/graph-explorer-features.md
     - name: Use Postman
