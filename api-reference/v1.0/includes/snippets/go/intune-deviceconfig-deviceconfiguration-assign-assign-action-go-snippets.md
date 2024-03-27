@@ -32,7 +32,7 @@ assignments := []graphmodels.DeviceConfigurationAssignmentable {
 }
 requestBody.SetAssignments(assignments)
 
-assign, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Assign().Post(context.Background(), requestBody, nil)
+assign, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Assign().PostAsAssignPostResponse(context.Background(), requestBody, nil)
 
 
 ```
