@@ -22,7 +22,7 @@ value := []string {
 }
 requestBody.SetValue(value)
 
-deleteTiIndicators, err := graphClient.Security().TiIndicators().DeleteTiIndicators().Post(context.Background(), requestBody, nil)
+deleteTiIndicators, err := graphClient.Security().TiIndicators().DeleteTiIndicators().PostAsDeleteTiIndicatorsPostResponse(context.Background(), requestBody, nil)
 
 
 ```
