@@ -2,7 +2,7 @@
 title: "chatMessage: setReaction"
 description: "Set a reaction to a single message or message reply in a channel or a chat."
 author: "sumanac"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ---
@@ -62,7 +62,7 @@ POST /chats/{chatId}/messages/{chatMessageId}/setReaction
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -15,7 +15,7 @@ const contact = {
   surname: 'Bansky',
   emailAddresses: [
     {
-      address: 'pavelb@fabrikam.onmicrosoft.com',
+      address: 'pavelb@contoso.com',
       name: 'Pavel Bansky'
     }
   ],

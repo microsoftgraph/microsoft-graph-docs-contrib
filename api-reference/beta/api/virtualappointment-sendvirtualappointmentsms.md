@@ -3,7 +3,7 @@ title: "virtualAppointment: sendVirtualAppointmentSms"
 description: "Send a virtual appointment SMS notification."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Send an SMS notification to external attendees when a Teams Virtual Appointment 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                          |
-|:---------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | VirtualAppointment.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                       |
-| Application                            | VirtualAppointment.ReadWrite.All                                        |
+<!-- { "blockType": "permissions", "name": "virtualappointment_sendvirtualappointmentsms" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualappointment-sendvirtualappointmentsms-permissions.md)]
 
 
 ## HTTP request
@@ -43,7 +40,7 @@ POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional.       |
 
 ## Request body
@@ -52,8 +49,8 @@ In the request body, supply a JSON object with the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|phonenumbers|String|The list of phone numbers to which to send the notification. Required.|
-|virtualAppointmentSmsType|String|A value that indicates the type of the SMS notification to send. The allowable values are `confirmation`, `reschedule`, and `cancellation`. Required.|
+|attendees|[attendeeNotificationInfo](../resources/attendeenotificationinfo.md) collection|Represents the phone number and time zone of an external attendee. Required.|
+|messageType|[virtualAppointmentMessageType](../resources/virtualappointmentmessagetype.md) collection|Indicates the type of SMS notification to send. The possible values are: `confirmation`, `reschedule`, and `cancellation`. Required.|
 
 ## Response
 
@@ -75,10 +72,19 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSms
 
-{
-"phoneNumbers": [ "+13129224122", "+1242421412"],
-"virtualAppointmentSmsType": "confirmation"
-}
+{ 
+    "attendees": [ 
+        {
+            "phoneNumber":  "+13129224122",
+            "timeZone": "Pacific Standard Time"
+        },
+        {
+            "phoneNumber":  "+1242421412",
+            "timeZone": "Eastern Standard Time"
+        }
+    ], 
+    "messageType": "confirmation"
+} 
 ```
 
 # [C#](#tab/csharp)
@@ -93,12 +99,20 @@ POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
 [!INCLUDE [sample-code](../includes/snippets/go/get-virtualappointment-sendvirtualappointmentsms-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-virtualappointment-sendvirtualappointmentsms-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-virtualappointment-sendvirtualappointmentsms-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-virtualappointment-sendvirtualappointmentsms-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-virtualappointment-sendvirtualappointmentsms-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

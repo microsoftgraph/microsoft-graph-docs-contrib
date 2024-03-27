@@ -3,7 +3,7 @@ title: "Create samlOrWsFedExternalDomainFederation"
 description: "Create a new samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ POST /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDoma
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

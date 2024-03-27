@@ -3,7 +3,7 @@ title: "Get x509CertificateAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a x509CertificateAuthenticationMethodConfiguration object."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method does not support the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

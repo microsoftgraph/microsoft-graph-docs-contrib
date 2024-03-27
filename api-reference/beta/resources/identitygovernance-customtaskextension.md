@@ -3,7 +3,7 @@ title: "customTaskExtension resource type"
 description: "Defines the attributes of a custom task that allows you to integrate lifecycle workflows with Azure Logic Apps and trigger custom tasks through the logic app."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Defines the attributes of a customTaskExtension that allows you to integrate Lif
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
-For more information about using custom task extensions, refer to the links in the [see also](#see-also) section.
+For more information about using custom task extensions, refer to the links in the [see also](#related-content) section.
 
 ## Methods
 
@@ -84,6 +84,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Lifecycle Workflows Custom Task Extension (Preview)](/azure/active-directory/governance/lifecycle-workflow-extensibility)

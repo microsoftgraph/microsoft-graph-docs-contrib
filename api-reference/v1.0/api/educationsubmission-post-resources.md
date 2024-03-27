@@ -3,7 +3,7 @@ title: "Create educationSubmissionResource"
 description: "Add a resource to the submission resource list."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{subm
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -665,7 +665,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related content
 
 * [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
 * [Upload files for education assignments and submissions](/graph/education-upload-resource-overview)

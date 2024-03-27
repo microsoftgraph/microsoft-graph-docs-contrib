@@ -3,7 +3,7 @@ title: "delegatedAdminRelationshipOperation resource type"
 description: "Represents a long-running operation related to a delegated admin relationship."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 

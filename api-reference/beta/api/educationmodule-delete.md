@@ -3,7 +3,7 @@ title: "Delete educationModule"
 description: "Delete an existing module. Only teachers within a class can delete modules."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ DELETE /education/classes/{id}/modules/{id}
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "windowsApplication resource type"
 description: "Represents settings for apps running Microsoft Windows and published in the Microsoft Store or Xbox games store."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "aricrowe57"
 ---
 

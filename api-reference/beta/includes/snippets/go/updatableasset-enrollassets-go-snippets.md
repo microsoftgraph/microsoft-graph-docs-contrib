@@ -25,7 +25,7 @@ updatableAsset := graphmodelswindowsupdates.NewAzureADDevice()
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
-assets := []graphmodelswindowsupdates.updatableAssetable {
+assets := []graphmodelswindowsupdates.UpdatableAssetable {
 	updatableAsset,
 }
 requestBody.SetAssets(assets)

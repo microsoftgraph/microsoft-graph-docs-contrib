@@ -3,7 +3,7 @@ title: "List members"
 description: "Use this API to get the members list (users, groups, or devices) in an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method (when used without `$ref`) supports the [OData query parameters](/gr
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel  | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -187,7 +187,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

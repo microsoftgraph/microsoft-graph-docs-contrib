@@ -3,7 +3,7 @@ title: "Get change notifications for chats using Microsoft Graph"
 description: "Learn how to get notifications for changes (create and update) for chats using Microsoft Graph APIs."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -204,7 +204,7 @@ The following payload describes the information sent in the request for notifica
 
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat details. GET calls always return the current state of the chat details. If the chat details were updated between when the notification is sent and when the chat details are retrieved, the operation returns the updated chat details.
 
-## See also
+## Related content
 
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)

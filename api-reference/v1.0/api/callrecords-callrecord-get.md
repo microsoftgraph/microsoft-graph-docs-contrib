@@ -3,7 +3,7 @@ title: "Get callRecord"
 description: "Retrieve the properties and relationships of callrecord object."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
@@ -54,7 +54,7 @@ This method supports the following OData query parameters to help customize the 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
 | Prefer: include-unknown-enum-members | Enables evolveable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
 
@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and the requested [m
 
 #### Request
 
-The following is an example of the request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows a request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).
 
 
 # [HTTP](#tab/http)
@@ -176,7 +176,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.
+The following example shows a request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.
 
 
 # [HTTP](#tab/http)

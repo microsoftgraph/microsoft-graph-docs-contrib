@@ -4,7 +4,7 @@ description: "Delete a user's temporaryAccessPassAuthenticationMethod object."
 author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ DELETE /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getManagedDevicesWithAppFailures, err := graphClient.Users().ByUserId("user-id").GetManagedDevicesWithAppFailures().Get(context.Background(), nil)
+getManagedDevicesWithAppFailures, err := graphClient.Users().ByUserId("user-id").GetManagedDevicesWithAppFailures().GetAsGetManagedDevicesWithAppFailuresGetResponse(context.Background(), nil)
 
 
 ```

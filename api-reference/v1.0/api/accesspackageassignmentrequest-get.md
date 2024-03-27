@@ -3,7 +3,7 @@ title: "Get accessPackageAssignmentRequest"
 description: "Retrieve the properties and relationships of an accessPackageAssignmentRequest object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Get accessPackageAssignmentRequest
@@ -40,7 +40,7 @@ This method supports the `$expand` OData query parameter to expand the relations
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

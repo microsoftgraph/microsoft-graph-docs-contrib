@@ -9,12 +9,14 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "breadcrumb/**",
           "concepts/sdks/snippets/dotnet/**",
           "concepts/sdks/snippets/go/**",
           "concepts/sdks/snippets/java/**",
           "concepts/sdks/snippets/python/**",
           "concepts/sdks/snippets/typescript/**",
           "concepts/includes/connecting-external-content/snippets/**",
+          "concepts/changelog-archive.md",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -49,21 +51,23 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs-contrib",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
+      "feedback_help_link_url": "https://learn.microsoft.com/en-us/answers/tags/161/ms-graph",
+      "feedback_help_link_type": "get-help-at-qna",
+      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs-contrib",
       "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "ms.suite": "microsoft-graph",
-      "ms.prod": "non-product-specific",
+      "ms.subservice": "non-product-specific",
       "searchScope": ["graph"],
       "toc_preview": true,
       "recommendations": false
     },
     "fileMetadata": {
-      "ms.technology": {
+      "ms.service": {
         "**/*.md": "microsoft-graph"
       },
       "ms.topic": {

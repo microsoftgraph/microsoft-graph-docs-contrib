@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment to a group"
 description: "Grant an app role assignment to a group."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 author: "psignoret"
 ---
 
@@ -44,7 +44,7 @@ POST /groups/{groupId}/appRoleAssignments
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 ### Request
 
-Here is an example of the request. In this example, ID in the URL and value of **principalId** would both be the ID of the assigned group.
+The following example shows a request. In this example, ID in the URL and value of **principalId** would both be the ID of the assigned group.
 
 
 # [HTTP](#tab/http)
@@ -123,7 +123,7 @@ Content-Type: application/json
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

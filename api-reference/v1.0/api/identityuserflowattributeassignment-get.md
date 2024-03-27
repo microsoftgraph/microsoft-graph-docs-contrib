@@ -3,7 +3,7 @@ title: "Get userAttributeAssignments"
 description: "Read the properties and relationships of an identityUserFlowAttributeAssignment object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ This method supports the `$select` and `$expand` query parameters to get the det
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

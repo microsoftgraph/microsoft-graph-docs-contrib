@@ -39,7 +39,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reopen
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -61,7 +61,7 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/security/cases/ediscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/reopen
+POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/reopen
 ```
 
 # [C#](#tab/csharp)

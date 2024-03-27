@@ -3,7 +3,7 @@ title: "chatMessageInfo resource type"
 description: "Represents a preview of a chatMessage resource."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -59,7 +59,7 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)

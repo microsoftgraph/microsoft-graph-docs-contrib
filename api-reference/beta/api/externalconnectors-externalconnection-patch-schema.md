@@ -3,7 +3,7 @@ title: "Create schema"
 description: "Create the schema for a Microsoft Search connection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ PATCH /external/connections/{id}/schema
 
 | Name                  | Description                                                        |
 |:----------------------|:-------------------------------------------------------------------|
-| Authorization         | Bearer {token}. Required.                                          |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type          | application/json. Required.                                        |
 | Prefer: respond-async | Use this to cause the request to execute asynchronously. Optional. |
 

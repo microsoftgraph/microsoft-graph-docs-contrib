@@ -4,35 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SourceSystemDefinition sourceSystemDefinition = new SourceSystemDefinition();
-sourceSystemDefinition.displayName = "Rostering source";
-LinkedList<UserMatchingSetting> userMatchingSettingsList = new LinkedList<UserMatchingSetting>();
-UserMatchingSetting userMatchingSettings = new UserMatchingSetting();
-UserMatchTargetReferenceValue matchTarget = new UserMatchTargetReferenceValue();
-matchTarget.code = "userPrincipalName";
-userMatchingSettings.matchTarget = matchTarget;
-userMatchingSettings.priorityOrder = 0;
-userMatchingSettings.additionalDataManager().put("roleGroup@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/external/industryData/roleGroups/staff"));
-IdentifierTypeReferenceValue sourceIdentifier = new IdentifierTypeReferenceValue();
-sourceIdentifier.code = "username";
-userMatchingSettings.sourceIdentifier = sourceIdentifier;
-userMatchingSettingsList.add(userMatchingSettings);
-UserMatchingSetting userMatchingSettings1 = new UserMatchingSetting();
-UserMatchTargetReferenceValue matchTarget1 = new UserMatchTargetReferenceValue();
-matchTarget1.code = "userPrincipalName";
-userMatchingSettings1.matchTarget = matchTarget1;
-userMatchingSettings1.priorityOrder = 1;
-userMatchingSettings1.additionalDataManager().put("roleGroup@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/external/industryData/roleGroups('students')"));
-IdentifierTypeReferenceValue sourceIdentifier1 = new IdentifierTypeReferenceValue();
-sourceIdentifier1.code = "username";
-userMatchingSettings1.sourceIdentifier = sourceIdentifier1;
-userMatchingSettingsList.add(userMatchingSettings1);
-sourceSystemDefinition.userMatchingSettings = userMatchingSettingsList;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().industryData().sourceSystems()
-	.buildRequest()
-	.post(sourceSystemDefinition);
+com.microsoft.graph.beta.models.industrydata.SourceSystemDefinition sourceSystemDefinition = new com.microsoft.graph.beta.models.industrydata.SourceSystemDefinition();
+sourceSystemDefinition.setDisplayName("Rostering source");
+LinkedList<com.microsoft.graph.beta.models.industrydata.UserMatchingSetting> userMatchingSettings = new LinkedList<com.microsoft.graph.beta.models.industrydata.UserMatchingSetting>();
+com.microsoft.graph.beta.models.industrydata.UserMatchingSetting userMatchingSetting = new com.microsoft.graph.beta.models.industrydata.UserMatchingSetting();
+com.microsoft.graph.beta.models.industrydata.UserMatchTargetReferenceValue matchTarget = new com.microsoft.graph.beta.models.industrydata.UserMatchTargetReferenceValue();
+matchTarget.setCode("userPrincipalName");
+userMatchingSetting.setMatchTarget(matchTarget);
+userMatchingSetting.setPriorityOrder(0);
+com.microsoft.graph.beta.models.industrydata.IdentifierTypeReferenceValue sourceIdentifier = new com.microsoft.graph.beta.models.industrydata.IdentifierTypeReferenceValue();
+sourceIdentifier.setCode("username");
+userMatchingSetting.setSourceIdentifier(sourceIdentifier);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("roleGroup@odata.bind", "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff");
+userMatchingSetting.setAdditionalData(additionalData);
+userMatchingSettings.add(userMatchingSetting);
+com.microsoft.graph.beta.models.industrydata.UserMatchingSetting userMatchingSetting1 = new com.microsoft.graph.beta.models.industrydata.UserMatchingSetting();
+com.microsoft.graph.beta.models.industrydata.UserMatchTargetReferenceValue matchTarget1 = new com.microsoft.graph.beta.models.industrydata.UserMatchTargetReferenceValue();
+matchTarget1.setCode("userPrincipalName");
+userMatchingSetting1.setMatchTarget(matchTarget1);
+userMatchingSetting1.setPriorityOrder(1);
+com.microsoft.graph.beta.models.industrydata.IdentifierTypeReferenceValue sourceIdentifier1 = new com.microsoft.graph.beta.models.industrydata.IdentifierTypeReferenceValue();
+sourceIdentifier1.setCode("username");
+userMatchingSetting1.setSourceIdentifier(sourceIdentifier1);
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
+additionalData1.put("roleGroup@odata.bind", "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')");
+userMatchingSetting1.setAdditionalData(additionalData1);
+userMatchingSettings.add(userMatchingSetting1);
+sourceSystemDefinition.setUserMatchingSettings(userMatchingSettings);
+com.microsoft.graph.models.industrydata.SourceSystemDefinition result = graphClient.external().industryData().sourceSystems().post(sourceSystemDefinition);
+
 
 ```

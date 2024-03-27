@@ -3,7 +3,7 @@ title: "Delete x509CertificateAuthenticationMethodConfiguration"
 description: "Delete the tenant-customized x509CertificateAuthenticationMethodConfiguration object and restore the default configuration."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

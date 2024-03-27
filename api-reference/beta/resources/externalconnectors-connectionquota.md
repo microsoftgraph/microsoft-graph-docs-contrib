@@ -3,7 +3,7 @@ title: "connectionQuota resource type"
 description: "Represents the connection quota that contains calculated information about the quota utilization of an external connection."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

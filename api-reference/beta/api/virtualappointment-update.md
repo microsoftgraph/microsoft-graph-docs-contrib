@@ -3,7 +3,7 @@ title: "Update virtualAppointment"
 description: "Update the properties of a virtualAppointment object."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ PATCH /users/{userId}/onlineMeetings/{onlineMeetingId}/virtualAppointment
 
 | Name            | Description                |
 | :-------------- | :--------------------------|
-| Authorization   | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language | Language. Optional.        |
 | Content-Type    | application/json. Required.|
 
@@ -67,7 +67,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

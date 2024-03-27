@@ -3,7 +3,7 @@ title: "chat: removeAllAccessForUser"
 description: "Remove access to a chat for a user."
 author: "DiegoCont"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /chats/{chatsId}/removeAllAccessForUser
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

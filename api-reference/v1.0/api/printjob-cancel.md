@@ -3,7 +3,7 @@ title: "printJob: cancel"
 description: Cancel a print job.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /print/printers/{printerId}/jobs/{printJobId}/cancel
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Do not supply a request body with this method.
@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -20,6 +20,9 @@ const cloudPcProvisioningPolicy = {
   imageType: 'custom',
   windowsSettings: {
     language: 'en-US'
+  },
+  windowsSetting: {
+      locale: 'en-US'
   }
 };
 

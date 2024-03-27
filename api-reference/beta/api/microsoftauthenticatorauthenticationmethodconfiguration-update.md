@@ -4,7 +4,7 @@ description: "Update the properties of a microsoftAuthenticatorAuthenticationMet
 author: "mjsantani"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/m
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

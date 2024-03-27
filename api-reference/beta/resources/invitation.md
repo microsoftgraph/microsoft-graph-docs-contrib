@@ -3,7 +3,7 @@ title: "invitation resource type"
 description: "Represents an invitation that is used to add external users to an organization as part of Microsoft Entra business-to-business (Microsoft Entra B2B) collaboration."
 ms.localizationpriority: medium
 author: "ppolkadots"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

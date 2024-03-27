@@ -4,16 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String verifiedPublisherId = "1234567";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.applications("{id}")
-	.setVerifiedPublisher(ApplicationSetVerifiedPublisherParameterSet
-		.newBuilder()
-		.withVerifiedPublisherId(verifiedPublisherId)
-		.build())
-	.buildRequest()
-	.post();
+com.microsoft.graph.beta.applications.item.setverifiedpublisher.SetVerifiedPublisherPostRequestBody setVerifiedPublisherPostRequestBody = new com.microsoft.graph.beta.applications.item.setverifiedpublisher.SetVerifiedPublisherPostRequestBody();
+setVerifiedPublisherPostRequestBody.setVerifiedPublisherId("1234567");
+graphClient.applications().byApplicationId("{application-id}").setVerifiedPublisher().post(setVerifiedPublisherPostRequestBody);
+
 
 ```

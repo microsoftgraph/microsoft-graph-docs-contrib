@@ -3,7 +3,7 @@ title: "accessReviewInstance: batchRecordDecisions"
 description: "Enables reviewers to review all accessReviewInstanceDecisionItems in batches."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

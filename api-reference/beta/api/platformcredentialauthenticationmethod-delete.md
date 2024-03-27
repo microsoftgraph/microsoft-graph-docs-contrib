@@ -3,7 +3,7 @@ title: "Delete platformCredentialAuthenticationMethod"
 description: "Delete a platformCredentialAuthenticationMethod object."
 author: "Veena11"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -50,14 +50,14 @@ DELETE /users/{id | userPrincipalName}/authentication/platformCredentialMethods/
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content`. It does not return anything in the response body.
+If successful, this method returns a `204 No Content`. It doesn't return anything in the response body.
 
 ## Examples
 

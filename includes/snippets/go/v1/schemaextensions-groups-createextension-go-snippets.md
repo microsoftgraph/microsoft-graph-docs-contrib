@@ -16,14 +16,16 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSchemaExtension()
-id := "graphlearn_courses"
+id := "bellowscollege_courses"
 requestBody.SetId(&id) 
-description := "Graph Learn training courses extensions"
+description := "Bellows College training courses extensions"
 requestBody.SetDescription(&description) 
 targetTypes := []string {
 	"Group",
 }
 requestBody.SetTargetTypes(targetTypes)
+owner := "d1e6f196-fca3-48ad-8cd3-1a98e3bd46d2"
+requestBody.SetOwner(&owner) 
 
 
 extensionSchemaProperty := graphmodels.NewExtensionSchemaProperty()

@@ -18,9 +18,19 @@ You can also allow signing in with multiple accounts. This lists all your signed
 
 The following example shows the `mgt-login` component with a signed-in user.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-login-html--login&source=docs" height="350"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-login-html--login&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-login-react--login&source=docs" height="350"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-login-react--login&source=docs).
+
+---
 
 ## Using the control without an authentication provider
 
@@ -71,6 +81,7 @@ The `mgt-login` component defines the following CSS custom properties.
   --login-command-button-background-color: orange;
   --login-command-button-hover-background-color: purple;
   --login-command-button-text-color: black;
+  --login-person-avatar-size: 60px;
 
   /** person component tokens **/
   --person-line1-text-color: whitesmoke;
@@ -110,13 +121,16 @@ The `mgt-login` component supports several [templates](../customize-components/t
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions:
+This component uses the following Microsoft Graph APIs. For each of the API requests, one of the permissions listed is required.
 
 | Configuration | Permission | API                               |
 | ------------- | ---------- | --------------------------------- |
-| default       | User.Read  | [/users/me/](/graph/api/user-get) |
+| default       | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All   | [/users/me/](/graph/api/user-get) |
+| default       | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                | [/users/me//photo/$value](/graph/api/profilephoto-get) |
 
-When using the default `signed-in-button-content` and `flyout-person-details` templates, this component uses the [Person component](./person.md) to display the user and inherits all permissions.
+### Subcomponents
+
+The `mgt-login` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-person](person.md).
 
 ## Authentication
 

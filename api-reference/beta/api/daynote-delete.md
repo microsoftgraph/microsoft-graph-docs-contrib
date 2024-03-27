@@ -3,7 +3,7 @@ title: "Delete dayNote"
 description: "Delete a day note."
 author: fmcgurrenw
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ DELETE /teams/{teamsId}/schedule/dayNotes/{dayNoteId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

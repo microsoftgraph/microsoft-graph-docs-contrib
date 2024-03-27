@@ -3,7 +3,7 @@ title: "workbookRange: resizedRange"
 description: "Get a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/resizedRange(de
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body

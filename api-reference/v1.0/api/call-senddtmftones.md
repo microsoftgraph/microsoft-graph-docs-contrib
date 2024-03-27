@@ -3,7 +3,7 @@ title: "call: sendDtmfTones"
 description: "Send DTMF tones in a call."
 author: "jackry2023"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ POST /communications/calls/{id}/sendDtmfTones
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -112,6 +112,10 @@ Content-Length: 166
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/call-senddtmftones-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-senddtmftones-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

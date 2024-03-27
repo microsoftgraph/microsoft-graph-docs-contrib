@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphusers.NewItemGetMailTipsPostRequestBody()
 emailAddresses := []string {
-	"danas@contoso.onmicrosoft.com",
-	"fannyd@contoso.onmicrosoft.com",
+	"danas@contoso.com",
+	"fannyd@contoso.com",
 }
 requestBody.SetEmailAddresses(emailAddresses)
 mailTipsOptions := graphmodels.AUTOMATICREPLIES, MAILBOXFULLSTATUS_MAILTIPSTYPE 
 requestBody.SetMailTipsOptions(&mailTipsOptions) 
 
-getMailTips, err := graphClient.Me().GetMailTips().Post(context.Background(), requestBody, nil)
+getMailTips, err := graphClient.Me().GetMailTips().PostAsGetMailTipsPostResponse(context.Background(), requestBody, nil)
 
 
 ```

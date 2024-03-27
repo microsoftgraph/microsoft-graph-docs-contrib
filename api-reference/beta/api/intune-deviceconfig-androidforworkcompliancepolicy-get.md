@@ -3,7 +3,7 @@ title: "Get androidForWorkCompliancePolicy"
 description: "Read properties and relationships of the androidForWorkCompliancePolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1653
+Content-Length: 2008
 
 {
   "value": {
@@ -87,6 +87,13 @@ Content-Length: 1653
     "passwordExpirationDays": 6,
     "passwordPreviousPasswordBlockCount": 2,
     "passwordSignInFailureCountBeforeFactoryReset": 12,
+    "workProfilePasswordExpirationInDays": 3,
+    "workProfilePasswordMinimumLength": 0,
+    "workProfileInactiveBeforeScreenLockInMinutes": 12,
+    "workProfilePreviousPasswordBlockCount": 5,
+    "workProfilePasswordRequiredType": "lowSecurityBiometric",
+    "workProfileRequiredPasswordComplexity": "low",
+    "workProfileRequirePassword": true,
     "securityPreventInstallAppsFromUnknownSources": true,
     "securityDisableUsbDebugging": true,
     "securityRequireVerifyApps": true,

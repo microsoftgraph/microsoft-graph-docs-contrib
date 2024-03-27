@@ -3,6 +3,7 @@ title: "Assign a manager"
 description: "Assign a user's manager."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -33,7 +34,7 @@ PUT /users/{id}/manager/$ref
 ## Request headers
 | Name       | Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, supply a JSON object and pass an `@odata.id` parameter with the read URL of the [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.

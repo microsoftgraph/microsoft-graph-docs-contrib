@@ -3,7 +3,7 @@ title: "privilegedAccessScheduleInstance resource type"
 description: "An abstract type that exposes properties relating to the instances of membership and ownership assignments and eligibilities to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

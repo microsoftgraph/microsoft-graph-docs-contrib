@@ -3,7 +3,7 @@ title: "onPremisesPublishing resource type"
 description: "Represents an Application Proxy onPremisesPublishing object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

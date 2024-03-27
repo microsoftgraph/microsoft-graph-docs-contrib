@@ -4,7 +4,7 @@ description: "Performs synchronization by periodically running in the background
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationJob resource type

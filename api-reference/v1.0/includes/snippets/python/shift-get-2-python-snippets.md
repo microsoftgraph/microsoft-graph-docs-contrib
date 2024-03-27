@@ -4,7 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.shift_preferences import ShiftPreferences
+from msgraph.generated.models.shift_availability import ShiftAvailability
+from msgraph.generated.models.patterned_recurrence import PatternedRecurrence
+from msgraph.generated.models.recurrence_pattern import RecurrencePattern
+from msgraph.generated.models.day_of_week import DayOfWeek
+from msgraph.generated.models.recurrence_range import RecurrenceRange
 
 graph_client = GraphServiceClient(credentials, scopes)
 

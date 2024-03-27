@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PermissionGrantConditionSet permissionGrantConditionSet = new PermissionGrantConditionSet();
-permissionGrantConditionSet.permissionType = PermissionType.DELEGATED;
-permissionGrantConditionSet.resourceApplication = "00000003-0000-0000-c000-000000000000";
+permissionGrantConditionSet.setPermissionType(PermissionType.Delegated);
+permissionGrantConditionSet.setResourceApplication("00000003-0000-0000-c000-000000000000");
+PermissionGrantConditionSet result = graphClient.policies().permissionGrantPolicies().byPermissionGrantPolicyId("{permissionGrantPolicy-id}").excludes().post(permissionGrantConditionSet);
 
-graphClient.policies().permissionGrantPolicies("my-custom-consent-policy").excludes()
-	.buildRequest()
-	.post(permissionGrantConditionSet);
 
 ```

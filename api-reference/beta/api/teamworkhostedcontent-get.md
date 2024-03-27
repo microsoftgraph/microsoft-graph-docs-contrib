@@ -3,7 +3,7 @@ title: "Get teamworkHostedContent"
 description: "Retrieve the hosted content in a teamsAppIcon."
 ms.localizationpriority: medium
 author: "jecha"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -45,7 +45,7 @@ This operation supports the `$select` [OData query parameters](/graph/query-para
 
 | Header           | Value                      |
 | :--------------- | :------------------------- |
-| Authorization    | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -195,7 +195,7 @@ HTTP/1.1 200 OK
 Content-type: image/png
 ```
 
-## See also
+## Related content
 
 - [Get icons of a Teams app](teamsappicon-get.md)
 - [List apps in catalog](appcatalogs-list-teamsapps.md)

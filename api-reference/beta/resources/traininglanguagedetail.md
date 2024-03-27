@@ -3,7 +3,7 @@ title: "trainingLanguageDetail resource type"
 description: "Represents an attack simulation training language detail."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

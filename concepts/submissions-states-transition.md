@@ -3,7 +3,7 @@ title: "States, transitions, and limitations for submissions"
 description: "Learn about the transitions that occur in the submission states throughout the process flow and which education APIs in Microsoft Graph are involved."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 
@@ -78,6 +78,6 @@ The following limits apply to all API calls:
 * The maximum size allowed for resources is 500 MB.
 * Throttling limits apply; for details, see [Microsoft Graph throttling guidance](/graph/throttling).
 
-## See also
+## Related content
 
 - [States, transitions, and limitations for assignments](./assignments-states-transition.md)

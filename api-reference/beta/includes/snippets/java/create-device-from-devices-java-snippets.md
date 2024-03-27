@@ -4,24 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Device device = new Device();
-device.accountEnabled = true;
-LinkedList<AlternativeSecurityId> alternativeSecurityIdsList = new LinkedList<AlternativeSecurityId>();
-AlternativeSecurityId alternativeSecurityIds = new AlternativeSecurityId();
-alternativeSecurityIds.type = 99;
-alternativeSecurityIds.identityProvider = "identityProvider-value";
-alternativeSecurityIds.key = Base64.getDecoder().decode("base64Y3YxN2E1MWFlYw==");
-alternativeSecurityIdsList.add(alternativeSecurityIds);
-device.alternativeSecurityIds = alternativeSecurityIdsList;
-device.approximateLastSignInDateTime = OffsetDateTimeSerializer.deserialize("2016-10-19T10:37:00Z");
-device.deviceId = "deviceId-value";
-device.deviceMetadata = "deviceMetadata-value";
-device.deviceVersion = 99;
+device.setAccountEnabled(true);
+LinkedList<AlternativeSecurityId> alternativeSecurityIds = new LinkedList<AlternativeSecurityId>();
+AlternativeSecurityId alternativeSecurityId = new AlternativeSecurityId();
+alternativeSecurityId.setType(99);
+alternativeSecurityId.setIdentityProvider("identityProvider-value");
+byte[] key = Base64.getDecoder().decode("base64Y3YxN2E1MWFlYw==");
+alternativeSecurityId.setKey(key);
+alternativeSecurityIds.add(alternativeSecurityId);
+device.setAlternativeSecurityIds(alternativeSecurityIds);
+OffsetDateTime approximateLastSignInDateTime = OffsetDateTime.parse("2016-10-19T10:37:00Z");
+device.setApproximateLastSignInDateTime(approximateLastSignInDateTime);
+device.setDeviceId("deviceId-value");
+device.setDeviceMetadata("deviceMetadata-value");
+device.setDeviceVersion(99);
+Device result = graphClient.devices().post(device);
 
-graphClient.devices()
-	.buildRequest()
-	.post(device);
 
 ```

@@ -3,7 +3,7 @@ title: "application: delta"
 description: "Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection. See Using Delta Query for details."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ _id_ property is always returned.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body

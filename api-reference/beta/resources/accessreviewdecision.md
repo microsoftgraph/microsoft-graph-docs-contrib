@@ -3,7 +3,7 @@ title: "accessReviewDecision resource type (deprecated)"
 description: "The accessReviewDecision represents a Microsoft Entra access review decision of a particular entity's access."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -54,7 +54,7 @@ In addition, more properties may be present depending on the object type of the 
 
 None.  Objects of this type can be retrieved from an access review using the [decisions](../api/accessreview-listdecisions.md) and [mydecisions](../api/accessreview-listmydecisions.md) relationships of the [accessReview](accessreview.md) object.
 
-## See also
+## Related content
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|

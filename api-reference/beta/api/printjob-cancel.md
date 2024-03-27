@@ -3,7 +3,7 @@ title: "printJob: cancel"
 description: Cancel a print job.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ POST /print/printers/{id}/jobs/{id}/cancel
 ## Request headers
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Do not supply a request body with this method.

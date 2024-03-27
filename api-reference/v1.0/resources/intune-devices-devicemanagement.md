@@ -3,7 +3,7 @@ title: "deviceManagement resource type"
 description: "Singleton entity that acts as a container for all device management functionality."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -62,6 +62,7 @@ Singleton entity that acts as a container for all device management functionalit
 |userExperienceAnalyticsWorkFromAnywhereModelPerformance|[userExperienceAnalyticsWorkFromAnywhereModelPerformance](../resources/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md) collection|The user experience analytics work from anywhere model performance|
 |userExperienceAnalyticsDeviceScores|[userExperienceAnalyticsDeviceScores](../resources/intune-devices-userexperienceanalyticsdevicescores.md) collection|User experience analytics device scores|
 |userExperienceAnalyticsModelScores|[userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) collection|User experience analytics model scores|
+|virtualEndpoint|[virtualEndpoint](../resources/virtualendpoint.md)|Virtual endpoint|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

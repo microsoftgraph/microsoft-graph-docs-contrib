@@ -3,7 +3,7 @@ title: "Delete bookingBusiness"
 description: "Delete a bookingBusiness object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -41,18 +41,18 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.com
 ```
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -3,7 +3,7 @@ title: "Get change notifications for Microsoft Teams call records"
 description: "Use change notifications in Microsoft Graph to receive notifications for created and updated call records."
 author: "mcm223"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.custom: scenarios:getting-started
 ---
 
@@ -62,7 +62,7 @@ The latency of change notifications and the maximum subscription expiration peri
 
 - The **Call ID** property corresponds to a specific [call record resource](/graph/api/resources/callrecords-callrecord), which can be retrieved using the [Get callRecord](/graph/api/callrecords-callrecord-get) API.
 
-## See also
+## Related content
 
 - [Microsoft Graph change notifications](/graph/webhooks)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)

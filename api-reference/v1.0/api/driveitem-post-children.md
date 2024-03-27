@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Create a new folder
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Create a new folder or DriveItem in a Drive with a specified parent item or path."
 doc_type: apiPageType
 ---
@@ -34,6 +34,13 @@ POST /sites/{site-id}/drive/items/{parent-item-id}/children
 POST /users/{user-id}/drive/items/{parent-item-id}/children
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
 In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.
@@ -46,7 +53,7 @@ If successful, this method returns `201 Created` response code and a [Driveitem]
 
 ### Request
 
-Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.
+The following example shows a request to create a new folder in the signed-in user's OneDrive root folder.
 The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.
 
 
@@ -54,7 +61,7 @@ The `@microsoft.graph.conflictBehavior` property used indicates that if an item 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
 ```http
-POST /me/drive/root/children
+POST https://graph.microsoft.com/v1.0/me/drive/root/children
 Content-Type: application/json
 
 {

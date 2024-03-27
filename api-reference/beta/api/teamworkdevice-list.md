@@ -3,7 +3,7 @@ title: "List teamworkDevices"
 description: "Get a list of all Microsoft Teams-enabled devices provisioned for a tenant."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,7 @@ This method supports the `$filter` (**deviceType**, **hardwareDetail/uniqueId**,
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

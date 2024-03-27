@@ -1,0 +1,61 @@
+{
+  "tool": "Credential Scanner",
+  "suppressions": [
+    {
+      "hash": "4HFMaPyHf2Oq0UHssXYQ+IzVZIRgG18pB/v4dtou7sw=",
+      "_justification": "authenticationmethod-resetpassword.md line 184 Sample password in JSON example"
+    },
+    {
+      "hash": "Dl8lVS64t7J9YPKUCrs6IvmGgwA9lkG/9TTJvKLyIfw=",
+      "_justification": "externallyaccessibleawsstoragebucketfinding-list.md line 118 Sample Azure storage account access key in JSON example"
+    },
+    {
+      "hash": "6uNofS5cYXMBA0lB/CvV80FLhrnf5Pgi8z1A4ouVNzE=",
+      "_justification": "security-passivednsrecord-get.md line 66 Sample general symmetric key in HTTP request example"
+    },
+    {
+      "hash": "DqnzqSuPoql8CRa0NwVQjvMWVEdB/1JVZhMLf5a7caw=",
+      "_justification": "serviceprincipal-createpasswordsinglesignoncredentials.md line 90 Sample common default password in JSON example"
+    },
+    {
+      "hash": "YGEAcd2dkpni4zKf2vds0XCBd4ETjyy6VSqP6wF8K4Y=",
+      "_justification": "security-whoishistoryrecord-get.md line 64 Sample symmetric key in HTTP request example"
+    },
+    {
+      "hash": "yuNZ6vrD0RfK/gi2biOeRwncQ7QBOUsptruQ9gF4fGE=",
+      "_justification": "user-changepassword.md line 67 Sample password in JSON example"
+    },
+    {
+      "hash": "XQQz4syNsXVwCQBB+ROKXms/PeYf1xxMiu93rtFGQzE=",
+      "_justification": "user-validatepassword.md line 69 Sample password in JSON example"
+    },
+    {
+      "hash": "449XS9qz2RDCs4hRlMopVw7CCRxp01qRBUh152CBj1w=",
+      "_justification": "send-sharing-invite-go-snippets.md line 40 Sample password in JSON example"
+    },
+    {
+      "hash": "ezuuJrz3tJVuhDI3QayaAQnoJmJ7OdePNofJCf9yRos=",
+      "_justification": "update-planneruser-go-snippets.md line 22 Sample general symmetric key in code snippets"
+    },
+    {
+      "hash": "4HFMaPyHf2Oq0UHssXYQ+IzVZIRgG18pB/v4dtou7sw=",
+      "_justification": "passwordauthenticationmethod-resetpassword-adminprovided-java-snippets.md line 9 Sample password in code snippets"
+    },
+    {
+      "hash": "pFG5S9mElRlcOZ+ByQRi1yN4nzkV+sW0DBJStZwB13I=",
+      "_justification": "application-saml-sso-configure-api.md line 1004 Sample general symmetric key in JSON example"
+    },
+    {
+      "hash": "lrucAcVPXoYUsoNE7NH+dQDxA5dKVl04BhLUkL2i+k8=",
+      "_justification": "auth-v2-service.md line 166 Sample Azure AD client secret in cURL example"
+    },
+    {
+      "hash": "Yq6kyr67P2hd5i71eNVIOL8EHosrVwv9Mg0R6PdiF6c=",
+      "_justification": "authenticationmethods-get-started.md line 451 Sample general password in JSON example"
+    },
+    {
+      "hash": "ncUPsLmVZWNkFs8Upvo2loZCG/3RAMIinoJ0OennEZ0=",
+      "_justification": "tutorial-accessreviews-roleassignments.md line 773 Sample Azure Storage Account Shared Access Signature"
+    }
+  ]
+}

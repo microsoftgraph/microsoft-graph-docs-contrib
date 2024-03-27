@@ -3,7 +3,7 @@ title: "driveItem: lockOrUnlockRecord"
 description: "Lock or unlock a retention label on a driveItem that classifies content as records."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ PATCH /drives/{drive-id}/items/{item-id}/retentionLabel
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

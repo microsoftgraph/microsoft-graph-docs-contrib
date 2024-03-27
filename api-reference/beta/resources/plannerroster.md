@@ -3,7 +3,7 @@ title: "plannerRoster resource type"
 description: "Represents a collection of users who are collaborating on a plannerPlan."
 author: "tarkansevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

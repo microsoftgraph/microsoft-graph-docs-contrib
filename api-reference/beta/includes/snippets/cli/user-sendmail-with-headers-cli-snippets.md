@@ -15,7 +15,7 @@ mgc-beta users send-mail post --user-id {user-id} --body '{\
     "toRecipients": [\
       {\
         "emailAddress": {\
-          "address": "AlexW@contoso.OnMicrosoft.com"\
+          "address": "AlexW@contoso.com"\
         }\
       }\
     ],\

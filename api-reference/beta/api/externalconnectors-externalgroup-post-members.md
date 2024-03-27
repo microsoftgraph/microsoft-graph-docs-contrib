@@ -3,7 +3,7 @@ title: "Create externalGroupMember"
 description: "Create a new externalGroupMember object."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 | Name          | Description                 |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

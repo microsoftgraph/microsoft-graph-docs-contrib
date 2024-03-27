@@ -3,7 +3,7 @@ title: "Create webPart"
 description: "Create a new webPart at a specified position in the sitePage"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ POST /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/h
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

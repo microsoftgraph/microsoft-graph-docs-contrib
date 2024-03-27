@@ -3,7 +3,7 @@ title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body
@@ -96,11 +96,11 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["M365x214355.onmicrosoft.com"],
+  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/domains/M365x214355.onmicrosoft.com
+GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 
 # [C#](#tab/csharp)
@@ -152,7 +152,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#domains/$entity",
     "authenticationType": "Managed",
     "availabilityStatus": null,
-    "id": "M365x214355.onmicrosoft.com",
+    "id": "contoso.com",
     "isAdminManaged": true,
     "isDefault": true,
     "isInitial": true,

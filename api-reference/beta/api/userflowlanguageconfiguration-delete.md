@@ -3,7 +3,7 @@ title: "Delete userFlowLanguageConfiguration"
 description: "Deletes a userFlowLanguageConfiguration object from a B2C user flow."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ DELETE /identity/b2cUserFlows/{id}/languages/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

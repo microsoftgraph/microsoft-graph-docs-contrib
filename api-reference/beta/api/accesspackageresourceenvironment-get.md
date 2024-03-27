@@ -3,7 +3,7 @@ title: "Get accessPackageResourceEnvironment"
 description: "Read the properties and relationships of an accessPackageResourceEnvironment object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method does not currently support [OData query parameters](/graph/query-par
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

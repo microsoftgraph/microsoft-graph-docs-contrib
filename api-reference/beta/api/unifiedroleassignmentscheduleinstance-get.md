@@ -3,7 +3,7 @@ title: "Get unifiedRoleAssignmentScheduleInstance"
 description: "Get the instance of an active role assignment."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "unifiedroleassignmentscheduleinstance_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentscheduleinstance-get-permissions.md)]
 
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -38,7 +40,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
