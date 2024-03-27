@@ -6,16 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc identity-governance access-reviews definitions create --body '{\
-    "displayName": "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)",\
-    "descriptionForAdmins": "",\
-    "descriptionForReviewers": "",\
+    "displayName": "Guest access to marketing group",\
     "scope": {\
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",\
         "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",\
         "queryType": "MicrosoftGraph"\
     },\
     "instanceEnumerationScope": {\
-        "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",\
-        "queryType": "MicrosoftGraph"\
+        "@odata.type": "#microsoft.graph.accessReviewQueryScope",\
+        "query": "/v1.0/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",\
+        "queryType": "MicrosoftGraph",\
+        "queryRoot": null\
     },\
     "reviewers": [\
         {\
@@ -27,8 +28,7 @@ mgc identity-governance access-reviews definitions create --body '{\
     "fallbackReviewers": [\
         {\
             "query": "/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4",\
-            "queryType": "MicrosoftGraph",\
-            "queryRoot": null\
+            "queryType": "MicrosoftGraph"\
         }\
     ],\
     "settings": {\
@@ -36,10 +36,12 @@ mgc identity-governance access-reviews definitions create --body '{\
         "reminderNotificationsEnabled": true,\
         "justificationRequiredOnApproval": true,\
         "defaultDecisionEnabled": true,\
-        "defaultDecision": "Approve",\
-        "instanceDurationInDays": 0,\
+        "defaultDecision": "Deny",\
+        "instanceDurationInDays": 3,\
         "autoApplyDecisionsEnabled": true,\
         "recommendationsEnabled": true,\
+        "recommendationLookBackDuration": "P30D",\
+        "decisionHistoriesForReviewersEnabled": false,\
         "recurrence": {\
             "pattern": {\
                 "type": "absoluteMonthly",\
@@ -51,11 +53,11 @@ mgc identity-governance access-reviews definitions create --body '{\
                 "index": "first"\
             },\
             "range": {\
-                "type": "numbered",\
+                "type": "endDate",\
                 "numberOfOccurrences": 0,\
                 "recurrenceTimeZone": null,\
-                "startDate": "2021-02-10",\
-                "endDate": "2022-12-21"\
+                "startDate": "2024-03-21",\
+                "endDate": "2025-03-21"\
             }\
         },\
         "applyActions": [\

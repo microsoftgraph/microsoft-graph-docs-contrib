@@ -28,8 +28,12 @@ Added the ability to list and get [Windows settings](/graph/api/resources/window
 
 ### Device and app management | Cloud PC
 
-- List, get, create, delete, and get source images operations available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
-- List and get operations available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
+- List, get, end grace period, reboot, rename, restore, and troubleshoot operations are now available on [cloudPC](/graph/api/resources/cloudpc).
+- List and get operations are now available on [cloudPcAuditEvent](/graph/api/resources/cloudpcauditevent).
+- List, get, create, update, delete, and assign provisioning policies operations are now available on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy).
+- List, get, create, update, delete, and assign user settings operations are now available on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting).
+- List, get, create, delete, and get source images operations are now available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
+- List and get operations are now available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
 
 ### Education | Assignment
 
@@ -43,7 +47,7 @@ The organization entity now returns the `CIAM` **tenantType** to identify tenant
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
 
-###Sites and Lists
+### Sites and lists
 
 [Track changes for SharePoint site](/graph/api/site-delta) resources.
 
@@ -59,7 +63,9 @@ Use the upsert capability to create an [application](/graph/api/resources/applic
 
 ### Device and app management | Cloud PC
 
-The following properties are deprecated:
+Added the ability to mark specified **alertRecord** objects as sent via the **isPortalNotificationSent** property.
+
+Deprecated he following properties:
 
 - **type** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **connectionType** property instead.
 - **healthCheckStatusDetails** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **healthCheckStatusDetail** property instead.
@@ -83,7 +89,7 @@ Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/fede
 
 ### Security | Email and collaboration protection
 
-Added the ability to list emails analyzed by Microsoft Defender for Office 365, get email related metadata, and perform response actions (soft delete, hard delete, move to junk, move to Inbox). 
+Added the ability to list emails analyzed by Microsoft Defender for Office 365, get email related metadata, and perform response actions (soft delete, hard delete, move to junk, move to Inbox).
 
 ### Users
 
@@ -122,7 +128,7 @@ Set up [acronym](/graph/api/resources/search-acronym), [bookmark](/graph/api/res
 - Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
 - Enabled tenants to [update](/graph/api/organization-update?view=graph-rest-beta&preserve-view=true) the following properties of the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) entity: **businessPhones**, **city**, **postalCode**, **preferredLanguage**, **state**, **street**.
 - You can now invite external users to Teams and manage the lifecycle of their invitation through the [pendingExternalUserProfile resource type](/graph/api/resources/pendingexternaluserprofile?view=graph-rest-beta&preserve-view=true) and its associated methods. After the user redeems their pending profile, you can manage their profile in your tenant through the [externalUserProfile resource type](/graph/api/resources/externaluserprofile?view=graph-rest-beta&preserve-view=true) and its associated methods.
- 
+
 ### Identity and access | Identity and sign-in
 - Added the ability to target the device code authentication flow using Microsoft Entra Conditional Access. Configure the [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true) > **conditions** property > **authenticationFlows** property of [conditionalAccessConditionSet complex type](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true) > **transferMethods** property of [conditionalAccessAuthenticationFlows complex type](/graph/api/resources/conditionalaccessauthenticationflows?view=graph-rest-beta&preserve-view=true).
 
@@ -152,7 +158,7 @@ Microsoft Teams custom meeting templates allow you to specify values for many of
 
 ## Contribute to Microsoft Graph
 
-Are there scenarios you'd like Microsoft Graph to support? 
+Are there scenarios you'd like Microsoft Graph to support?
 
 - Suggest and vote for new features by using the [Microsoft Graph Feedback Portal](https://aka.ms/graphfeedback). Some new features originate as popular requests from the developer community. The Microsoft Graph team regularly evaluates customer needs and releases new features to the beta (`https://graph.microsoft.com/beta`) and v1.0 (`https://graph.microsoft.com/v1.0`) endpoints.
 
