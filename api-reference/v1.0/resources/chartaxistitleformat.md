@@ -3,7 +3,7 @@ title: "ChartAxisTitleFormat resource type"
 description: "Represents the chart axis title formatting."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 q := "{q}"
-search, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").SearchWithQ(&q).Get(context.Background(), nil)
+search, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").SearchWithQ(&q).GetAsSearchWithQGetResponse(context.Background(), nil)
 
 
 ```
