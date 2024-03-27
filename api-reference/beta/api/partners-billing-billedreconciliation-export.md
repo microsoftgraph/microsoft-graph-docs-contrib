@@ -3,7 +3,7 @@ title: "billedReconciliation: export"
 description: "Export the billed invoice reconciliation data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: apiPageType
 ---
 
@@ -17,16 +17,14 @@ Namespace: microsoft.graph.partners.billing
 
 Export the billed invoice reconciliation data.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "partners-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
+<!-- { "blockType": "permissions", "name": "partners_billing_billedreconciliation_export" } -->
+[!INCLUDE [permissions-table](../includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]
 
 ## HTTP request
 
@@ -104,6 +102,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/billedreconciliationthisexport-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/billedreconciliationthisexport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

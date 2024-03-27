@@ -2,7 +2,7 @@
 title: "disableUserResponseAction resource type"
 description: "Describes a response action that temporarily prevents a user from logging in to the on premises network."
 author: "mmekler"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ms.localizationpriority: medium
 ---

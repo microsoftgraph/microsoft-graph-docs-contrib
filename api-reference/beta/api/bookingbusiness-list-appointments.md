@@ -3,7 +3,7 @@ title: "List appointments"
 description: "Get a list of bookingAppointment objects for the specified bookingbusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and collection of [b
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdel
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -293,6 +293,7 @@ Content-type: application/json
             "invoiceAmount": 10.0,
             "invoiceId": "1001",
             "invoiceStatus": "open",
+            "isCustomerAllowedToManageBooking": true,
             "invoiceUrl": "theInvoiceUrl",
             "customerLocation": {
                 "displayName": "Customer",

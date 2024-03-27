@@ -3,7 +3,7 @@ title: "Delete groupPolicyPresentationValueMultiText"
 description: "Deletes a groupPolicyPresentationValueMultiText."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

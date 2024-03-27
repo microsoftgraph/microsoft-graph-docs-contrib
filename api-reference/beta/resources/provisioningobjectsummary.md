@@ -3,7 +3,7 @@ title: "provisioningObjectSummary resource type"
 description: "Represents an action performed by the Microsoft Entra provisioning service and its associated properties."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 

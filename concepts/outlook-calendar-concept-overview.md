@@ -3,7 +3,7 @@ title: "Outlook calendar API overview"
 description: "Use Outlook calendar to schedule meetings, manage emails and contacts, organize your time, and collaborate all in one place on the web, mobile, or desktop."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 ---
 

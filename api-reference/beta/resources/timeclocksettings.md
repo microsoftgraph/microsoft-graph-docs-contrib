@@ -3,7 +3,7 @@ title: "timeClockSettings resource type"
 description: "Represents timeclock settings for a schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Get a list of all supported authentication methods, or all support
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Retrieve authenticationMethodModes objects and their descriptions
 
 #### Request
-The following is an example of a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
+The following example shows a request to retrieve the collection of **authenticationMethodModes** objects and their descriptions.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -208,7 +208,7 @@ Content-Type: application/json
 ### Example 2: Retrieve the allowed authentication combinations
 
 #### Request
-The following is an example of a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
+The following example shows a request to retrieve the flat collection of authenticationCombinations objects, representing all the possible allowed combinations (allowedCombinations) that may be used in an authenticationStrengthPolicy object.
 
 
 # [HTTP](#tab/http)

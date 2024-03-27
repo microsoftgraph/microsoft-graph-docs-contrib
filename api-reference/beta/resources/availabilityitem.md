@@ -3,7 +3,7 @@ title: "availabilityItem resource type"
 description: "Indicates the status of a staff member for a given time slot."
 author: "kwekua"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

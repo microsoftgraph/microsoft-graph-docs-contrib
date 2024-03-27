@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.beta.devicemanagement.devicecompliancepolicies.item.scheduleactionsforrules.ScheduleActionsForRulesPostRequestBody scheduleActionsForRulesPostRequestBody = new com.microsoft.graph.beta.devicemanagement.devicecompliancepolicies.item.scheduleactionsforrules.ScheduleActionsForRulesPostRequestBody();
+com.microsoft.graph.devicemanagement.devicecompliancepolicies.item.scheduleactionsforrules.ScheduleActionsForRulesPostRequestBody scheduleActionsForRulesPostRequestBody = new com.microsoft.graph.devicemanagement.devicecompliancepolicies.item.scheduleactionsforrules.ScheduleActionsForRulesPostRequestBody();
 LinkedList<DeviceComplianceScheduledActionForRule> deviceComplianceScheduledActionForRules = new LinkedList<DeviceComplianceScheduledActionForRule>();
 DeviceComplianceScheduledActionForRule deviceComplianceScheduledActionForRule = new DeviceComplianceScheduledActionForRule();
 deviceComplianceScheduledActionForRule.setOdataType("#microsoft.graph.deviceComplianceScheduledActionForRule");

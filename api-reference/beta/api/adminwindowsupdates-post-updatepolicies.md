@@ -3,7 +3,7 @@ title: "Create updatePolicy"
 description: "Create a new updatePolicy object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and an [microso
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

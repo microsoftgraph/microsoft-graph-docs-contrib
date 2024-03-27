@@ -3,7 +3,7 @@ title: "Get dayNote"
 description: "Read the properties and relationships of a day note."
 author: fmcgurrenw
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 

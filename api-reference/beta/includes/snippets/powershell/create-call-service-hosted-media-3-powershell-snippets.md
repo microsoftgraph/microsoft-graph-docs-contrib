@@ -37,13 +37,13 @@ $params = @{
 		}
 	)
 	requestedModalities = @(
-		"audio"
-	)
-	mediaConfig = @{
-		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
-	}
-	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+	"audio"
+)
+mediaConfig = @{
+	"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+	blob = "<Media Session Configuration>"
+}
+tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params

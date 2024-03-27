@@ -3,7 +3,7 @@ title: "Create roleAssignmentScheduleRequests"
 description: "In PIM, request for an active and persistent role assignment through the unifiedRoleAssignmentScheduleRequest object. Use this API to activate eligible roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

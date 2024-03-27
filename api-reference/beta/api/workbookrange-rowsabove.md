@@ -3,7 +3,7 @@ title: "workbookRange: rowsAbove"
 description: "Gets a specified number of rows above a given range."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ If successful, this method returns `200 OK` response code and [workbookRange](..
 ## Example
 Here's an example of how to call this API.
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/r
 ```
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

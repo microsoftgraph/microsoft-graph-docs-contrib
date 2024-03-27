@@ -3,7 +3,7 @@ title: "List windows10GeneralConfigurations"
 description: "List properties and relationships of the windows10GeneralConfiguration objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

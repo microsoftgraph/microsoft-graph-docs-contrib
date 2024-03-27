@@ -3,7 +3,7 @@ title: "accessReviewQueryScope resource type"
 description: "Defines what needs to be reviewed in an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

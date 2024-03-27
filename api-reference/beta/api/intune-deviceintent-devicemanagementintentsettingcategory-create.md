@@ -3,7 +3,7 @@ title: "Create deviceManagementIntentSettingCategory"
 description: "Create a new deviceManagementIntentSettingCategory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

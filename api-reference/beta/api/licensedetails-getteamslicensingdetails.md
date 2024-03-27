@@ -3,7 +3,7 @@ title: "licenseDetails: getTeamsLicensingDetails"
 description: "Get the license status of a user in Microsoft Teams."
 author: "mea"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

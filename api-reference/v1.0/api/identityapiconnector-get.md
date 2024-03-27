@@ -3,7 +3,7 @@ title: "Get identityApiConnector"
 description: "Read the properties of an API connector."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

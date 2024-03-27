@@ -3,7 +3,7 @@ title: "List programControls (deprecated)"
 description: "In the Microsoft Entra access reviews feature, list all the programControl objects, across all programs in the tenant."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 
