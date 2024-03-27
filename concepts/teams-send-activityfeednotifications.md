@@ -53,7 +53,7 @@ The following variants show the kinds of activity feed notification cards you ca
 
 # [Desktop](#tab/desktop)
 
-:::image type="content" source="../assets/images/activity-feed/activity-feed-notifications-desktop.png" alt-text="Screenshot shows the activity feed notifications in a desktop."  lightbox="../assets/images/activity-feed/activity-feed-notifications-desktop.png" border="false":::
+:::image type="content" source="images/activity-feed-notifications-desktop.png" alt-text="Screenshot shows the activity feed notifications in a desktop."  lightbox="images/activity-feed-notifications-desktop.png" border="false":::
 
   |Counter  |Description  |
   |---------|---------|
@@ -63,7 +63,7 @@ The following variants show the kinds of activity feed notification cards you ca
 
 # [Mobile](#tab/mobile)
 
-:::image type="content" source="../assets/images/activity-feed/activity-feed-notifications-mobile.png" alt-text="Screenshot shows the activity feed notifications in a mobile." border="false":::
+:::image type="content" source="images/activity-feed-notifications-mobile.png" alt-text="Screenshot shows the activity feed notifications in a mobile." border="false":::
 
   |Counter  |Description  |
   |---------|---------|
