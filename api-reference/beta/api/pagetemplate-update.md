@@ -37,10 +37,10 @@ PATCH /sites/{sitesId}/pageTemplates/{pageTemplateId}
 
 ## Request headers
 
-| Name          | Description                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
-| Content-Type  | application/json. Required. |
+|Name|Description|
+|:---|:----------|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -50,13 +50,13 @@ PATCH /sites/{sitesId}/pageTemplates/{pageTemplateId}
 
 These fields and be used in update requests.
 
-| Property             | Type                                         | Description                                                                                                                                                                                                        |
-| :------------------- | :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| description                | String                                       | Description of the page template. Optional.                                                                                                                                                                                  |
-| thumbnailWebUrl                | String                                       | Url of the page template's thumbnail image. Optional.                                                                                                                                                                                  |
-| title                | String                                       | Title of the page template. Optional.                                                                                                                                                                                  |
-| titleArea            | [titleArea](../resources/titlearea.md)       | Title area on the page template. Optional.                                                                                                                                                                       |
-| canvasLayout         | [canvasLayout](../resources/canvaslayout.md) | The layout of the content in a page template, including horizontal sections and vertical section. The content of the entire page layout must be provided, because the update function doesn't support partial updates. Optional. |
+|Property|Type|Description|
+|:-------|:---|:----------|
+|description|String|The description of the page template. Optional.|
+|thumbnailWebUrl|String|The URL of the page template's thumbnail image. Optional.|
+|title|String|The title of the page template. Optional.|
+|titleArea|[titleArea](../resources/titlearea.md)|The title area on the page template. Optional.|
+|canvasLayout|[canvasLayout](../resources/canvaslayout.md)|The layout of the content in a page template, including horizontal sections and vertical section. The content of the entire page layout must be provided, because the update function doesn't support partial updates. Optional.|
 
 ## Response
 
