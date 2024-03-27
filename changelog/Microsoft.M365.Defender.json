@@ -2159,6 +2159,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [healthIssue](https://learn.microsoft.com/en-us/graph/api/resources/security-healthIssue?view=graph-rest-beta) resource.",
           "Target": "healthIssue"
+        },
+        {
+          "Id": "413ee7bf-c1c5-4fc9-bc15-df0060a80895",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-beta) resource.",
+          "Target": "identityContainer"
         }
       ],
       "Id": "413ee7bf-c1c5-4fc9-bc15-df0060a80895",
