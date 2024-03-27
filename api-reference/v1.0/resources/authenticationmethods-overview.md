@@ -50,8 +50,6 @@ The following authentication methods are not yet supported in Microsoft Graph v1
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../api-reference/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
-
 ## Require re-register multifactor authentication
 
 To require users to set up a new multifactor authentication the next time they sign in, call the individual DELETE authentication method operations to delete each of the user's current authentication methods. After the user has no more methods, they're prompted to register the next time they sign in where strong authentication is required.
