@@ -1,6 +1,6 @@
 ---
 title: "identityContainer resource type"
-description: "Container for security identities APIs."
+description: "A container for security identities APIs."
 author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Container for security identities APIs. Currently exposes the [health issue](security-healthissue.md) relationships.
+A container for security identities APIs. Currently exposes the [healthIssues](security-healthissue.md) relationship.
 
 ## Methods
 
@@ -27,7 +27,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|healthIssues|[health issue](security-healthissue.md) collection| Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.|
+|healthIssues|[healthIssue](security-healthissue.md) collection| Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.|
 
 ## JSON representation
 
