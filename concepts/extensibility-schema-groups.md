@@ -4,7 +4,7 @@ description: "Learn how to register a schema extension definition, extend a grou
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
-ms.prod: "extensions"
+ms.prod: extensions
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.topic: tutorial

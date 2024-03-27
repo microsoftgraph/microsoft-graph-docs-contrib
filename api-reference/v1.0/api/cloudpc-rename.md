@@ -60,6 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request to rename a Cloud PC for the administrator.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "rename_cloudpc"
@@ -74,6 +75,16 @@ Content-Type: application/json
   displayName: "Cloud PC-HR"
 }
 ```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/rename-cloudpc-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/rename-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

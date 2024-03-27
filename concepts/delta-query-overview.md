@@ -4,7 +4,8 @@ description: "Use delta query to discover newly created, updated, or deleted ent
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
-ms.prod: "change-notifications"
+ms.topic: concept-article
+ms.prod: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 01/12/2024
