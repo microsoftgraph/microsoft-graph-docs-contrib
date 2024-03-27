@@ -35,6 +35,7 @@ None.
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
 |tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
 |threatSubmission|[security.threatSubmission](../resources/security-threatsubmission.md)|A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.|
+|identities|[identityContianer](../resources/security-identityContainer.md)|Container for security identities APIs.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
