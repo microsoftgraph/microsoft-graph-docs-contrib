@@ -11824,7 +11824,7 @@ items:
                         href: api/organizationsettings-list-contactinsights.md
                       - name: Update
                         href: api/insightssettings-update.md
-                  - name: Org control for item insights (preview)
+                  - name: Org control for item insights (deprecated)
                     items:
                       - name: Insights settings
                         href: resources/insightssettings.md
