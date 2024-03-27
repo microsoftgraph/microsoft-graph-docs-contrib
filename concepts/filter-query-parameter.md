@@ -3,9 +3,10 @@ title: "Use the filter query parameter to filter a collection of objects"
 description: "Learn how to use the filter OData query parameter and its operators against different types of properties in Microsoft Graph."
 author: FaithOmbongi
 ms.author: ombongifaith
+ms.topic: how-to
 ms.reviewer: "Luca.Spolidoro"
 ms.localizationpriority: high
-ms.subservice: "entra-applications"
+ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 04/14/2023
 #Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use filter expressions to get only the items that meet specific criteria, and reduce the amount of data the app processes, improving app efficiency.

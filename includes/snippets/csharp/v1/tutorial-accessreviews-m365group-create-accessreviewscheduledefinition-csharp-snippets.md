@@ -11,32 +11,19 @@ using Microsoft.Graph.Models;
 
 var requestBody = new AccessReviewScheduleDefinition
 {
-	DisplayName = "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)",
-	DescriptionForAdmins = "",
-	DescriptionForReviewers = "",
-	Scope = new AccessReviewScope
+	DisplayName = "Guest access to marketing group",
+	Scope = new AccessReviewQueryScope
 	{
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"query" , "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')"
-			},
-			{
-				"queryType" , "MicrosoftGraph"
-			},
-		},
+		OdataType = "#microsoft.graph.accessReviewQueryScope",
+		Query = "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+		QueryType = "MicrosoftGraph",
 	},
-	InstanceEnumerationScope = new AccessReviewScope
+	InstanceEnumerationScope = new AccessReviewQueryScope
 	{
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"query" , "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true"
-			},
-			{
-				"queryType" , "MicrosoftGraph"
-			},
-		},
+		OdataType = "#microsoft.graph.accessReviewQueryScope",
+		Query = "/v1.0/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",
+		QueryType = "MicrosoftGraph",
+		QueryRoot = null,
 	},
 	Reviewers = new List<AccessReviewReviewerScope>
 	{
@@ -53,7 +40,6 @@ var requestBody = new AccessReviewScheduleDefinition
 		{
 			Query = "/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4",
 			QueryType = "MicrosoftGraph",
-			QueryRoot = null,
 		},
 	},
 	Settings = new AccessReviewScheduleSettings
@@ -62,10 +48,12 @@ var requestBody = new AccessReviewScheduleDefinition
 		ReminderNotificationsEnabled = true,
 		JustificationRequiredOnApproval = true,
 		DefaultDecisionEnabled = true,
-		DefaultDecision = "Approve",
-		InstanceDurationInDays = 0,
+		DefaultDecision = "Deny",
+		InstanceDurationInDays = 3,
 		AutoApplyDecisionsEnabled = true,
 		RecommendationsEnabled = true,
+		RecommendationLookBackDuration = TimeSpan.Parse("P30D"),
+		DecisionHistoriesForReviewersEnabled = false,
 		Recurrence = new PatternedRecurrence
 		{
 			Pattern = new RecurrencePattern
@@ -82,11 +70,11 @@ var requestBody = new AccessReviewScheduleDefinition
 			},
 			Range = new RecurrenceRange
 			{
-				Type = RecurrenceRangeType.Numbered,
+				Type = RecurrenceRangeType.EndDate,
 				NumberOfOccurrences = 0,
 				RecurrenceTimeZone = null,
-				StartDate = new Date(DateTime.Parse("2021-02-10")),
-				EndDate = new Date(DateTime.Parse("2022-12-21")),
+				StartDate = new Date(DateTime.Parse("2024-03-21")),
+				EndDate = new Date(DateTime.Parse("2025-03-21")),
 			},
 		},
 		ApplyActions = new List<AccessReviewApplyAction>

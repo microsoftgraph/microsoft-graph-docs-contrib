@@ -4,6 +4,7 @@ description: "Learn how to use the access reviews API to review access to a secu
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
+ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
 ms.date: 03/25/2024

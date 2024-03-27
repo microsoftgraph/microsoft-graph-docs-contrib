@@ -45,7 +45,7 @@ var requestBody = new AccessReviewScheduleDefinition
 	{
 		new AccessReviewReviewerScope
 		{
-			Query = "/users/f674a1c9-4a40-439c-bfa3-4b61a9f29d85",
+			Query = "/users/2560f739-2e0e-4550-9fa0-1a1e67ae0ab8",
 			QueryType = "MicrosoftGraph",
 		},
 	},
@@ -56,7 +56,7 @@ var requestBody = new AccessReviewScheduleDefinition
 		JustificationRequiredOnApproval = true,
 		DefaultDecisionEnabled = false,
 		DefaultDecision = "None",
-		InstanceDurationInDays = 3,
+		InstanceDurationInDays = 1,
 		RecommendationsEnabled = false,
 		Recurrence = new PatternedRecurrence
 		{
@@ -68,7 +68,7 @@ var requestBody = new AccessReviewScheduleDefinition
 			Range = new RecurrenceRange
 			{
 				Type = RecurrenceRangeType.NoEnd,
-				StartDate = new Date(DateTime.Parse("2022-03-02")),
+				StartDate = new Date(DateTime.Parse("2024-03-25")),
 			},
 		},
 	},
