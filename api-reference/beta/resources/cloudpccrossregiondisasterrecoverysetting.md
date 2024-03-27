@@ -1,6 +1,6 @@
 ---
 title: "cloudPcCrossRegionDisasterRecoverySetting resource type"
-description: "Represents the settings for cross-region disaster recovery configurations."
+description: "Represents the settings for cross-region disaster recovery."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings for cross-region disaster recovery configurations.
+Represents the settings for cross-region disaster recovery.
 
 ## Properties
 
