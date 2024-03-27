@@ -18,7 +18,7 @@ var requestBody = new UnifiedRoleAssignmentScheduleRequest
 	Justification = "Need to invalidate all app refresh tokens for Contoso users.",
 	ScheduleInfo = new RequestSchedule
 	{
-		StartDateTime = DateTimeOffset.Parse("2021-09-04T15:13:00.000Z"),
+		StartDateTime = DateTimeOffset.Parse("2024-03-25T15:13:00.000Z"),
 		Expiration = new ExpirationPattern
 		{
 			Type = ExpirationPatternType.AfterDuration,
