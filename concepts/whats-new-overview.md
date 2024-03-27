@@ -61,6 +61,8 @@ Use the upsert capability to create an [application](/graph/api/resources/applic
 
 ### Device and app management | Cloud PC
 
+- Use the **crossRegionDisasterRecoverySetting** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to define cross-region disaster recovery settings.
+
 The following properties are deprecated:
 
 - **type** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **connectionType** property instead.
