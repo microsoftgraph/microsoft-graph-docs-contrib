@@ -16,6 +16,9 @@ $params = @{
 		actionInfo = @{
 			"@odata.type" = "microsoft.graph.awsPolicyPermissionsDefinitionAction"
 			policies = @(
+				@{
+					id = "arn:aws:iam::956987887735:policy/AddUserToGroup"
+				}
 			)
 			assignToRoleId = "arn:aws:aim::956987887735:role/saml-user"
 		}

@@ -3,7 +3,7 @@ title: "updatePolicy resource type"
 description: "Represents an entity that governs the deployment of content to an associated deploymentAudience."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 

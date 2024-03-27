@@ -30,6 +30,8 @@ Added the ability to list and get [Windows settings](/graph/api/resources/window
 
 - List, get, end grace period, reboot, rename, restore, and troubleshoot operations are now available on [cloudPC](/graph/api/resources/cloudpc).
 - List and get operations are now available on [cloudPcAuditEvent](/graph/api/resources/cloudpcauditevent).
+- List, get, create, update, delete, and assign provisioning policies operations are now available on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy).
+- List, get, create, update, delete, and assign user settings operations are now available on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting).
 - List, get, create, delete, and get source images operations are now available on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage).
 - List and get operations are now available on [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage).
 
@@ -61,9 +63,10 @@ Use the upsert capability to create an [application](/graph/api/resources/applic
 
 ### Device and app management | Cloud PC
 
+- Added the ability to mark specified **alertRecord** objects as sent via the **isPortalNotificationSent** property.
 - Use the **crossRegionDisasterRecoverySetting** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to define cross-region disaster recovery settings.
 
-The following properties are deprecated:
+Deprecated the following properties:
 
 - **type** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **connectionType** property instead.
 - **healthCheckStatusDetails** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **healthCheckStatusDetail** property instead.
