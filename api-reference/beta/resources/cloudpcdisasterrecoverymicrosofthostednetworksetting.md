@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 Represents the MicrosoftHostedNetwork configuration of backup Cloud PCs provisioned for cross region disaster recovery.
 
-Inherits from [cloudPcDisasterRecoveryNetworkSetting](cloudpcdisasterrecoverynetworksetting.md).
+Inherits from [cloudPcDisasterRecoveryNetworkSetting](../resources/cloudpcdisasterrecoverynetworksetting.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|regionName|Edm.String|Indicates the supported Azure region that the new Cloud PC is put under. Windows 365 service create and manage the underlying virtual network.|
-|regionGroup|microsoft.graph.cloudPcRegionGroup|Indicates the logic geographic group this region belongs to. Multiple regions could belong to one region group. Once a regionGroup was configured for disaster recovery, the new Cloud PC is put under one of the regions under the group based on resource status. For example, Europe region group contains North Europe and West Europe regions. Possible values are: `default`, `Australia`, `Canada`, `usCentral`, `usEast`, `usWest`, `France`, `Germany`, `Europe`, `unitedKingdom`, `Japan`, `Asia`, `India`, `southAmerica`, `China`, `Africa`, `uae`, `euap`, `usGovernment`, `usGovrnmentDod`, `Norway`, `Switzerland` and `southKorea`.|
+|regionGroup|[cloudPcRegionGroup](../resources/cloudpcsupportedregion.md#cloudpcregiongroup-values)|Indicates the logic geographic group this region belongs to. Multiple regions can belong to one region group. When a region group was configured for disaster recovery, the new Cloud PC is assigned to one of the regions under the group based on the resource status. For example, the `europeUnion` region group contains the North Europe and West Europe regions. Possible values are: `default`, `australia`, `canada`, `usCentral`, `usEast`, `usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `euap`, `usGovernment`, `usGovernmentDOD`, `unknownFutureValue`, `norway`, `switzerland`，`southKorea`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `norway`, `switzerland`，`southKorea`. Read-only.|
+|regionName|String|Indicates the Azure region that the new Cloud PC is assigned to. The Windows 365 service creates and manages the underlying virtual network.|
 
 ## Relationships
 
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting"
@@ -40,9 +40,7 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
-  "regionName": "String",
-  "regionGroup": {
-    "@odata.type": "#microsoft.graph.cloudPcRegionGroup"
-  }
+  "regionGroup": "String",
+  "regionName": "String"
 }
 ```
