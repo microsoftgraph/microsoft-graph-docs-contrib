@@ -21,10 +21,13 @@ The following table lists the metered APIs and services.
 | Teams chat / channel [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) |
 | Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) |
 | Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update) | [Teams API payment models and licensing requirements](teams-licenses.md) |
+| Teams meeting [transcript](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) | [Teams API payment models and licensing requirements](teams-licenses.md) |
+| Teams meeting [transcript metadata](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) | [Teams API payment models and licensing requirements](teams-licenses.md) |
+| Teams meeting [recording](/graph/api/callrecording-get#example-2-get-callrecording-content) | [Teams API payment models and licensing requirements](teams-licenses.md) |
 | SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | $0.00185 (USD) per API call<br/>[Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup) |
 
 ## Related content
 
 - [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
 - [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)
-
+- [Metered APIs Frequently Asked Questions](/graph/metered-api-faq)
