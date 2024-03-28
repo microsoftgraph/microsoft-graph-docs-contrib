@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update delegatedAdminRelationship
 Namespace: microsoft.graph
 
-Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status** which are not long-running operations. Upddate of Entra Role is allowed in active, which is a long running operation.
+Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status**.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -54,16 +54,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 ## Response
 
-If successful, this method returns a 200 OK or a 202 Accepted response code.  [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body incase of 200 OK.
-
-### Response headers
-|Name|Description|
-|:---|:---|
-|Content-Type|application/json.|
-|Location|The location of the long-running operation.|
-|Retry-After|The time after which a subsequent API call can be made to the Location URL to check the status of the long-running operation.|
-
-This method typically returns a `202 Accepted` response code with a URL to a long-running operation in the **Location** response header that can be monitored for completion. If the values specified in the call are identical to the values in the existing object, the API returns a `200 OK` response code with the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body.
 
 ## Examples
 
