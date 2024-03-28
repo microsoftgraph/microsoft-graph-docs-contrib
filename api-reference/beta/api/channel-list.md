@@ -26,12 +26,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All\*\*, Group.ReadWrite.All\*\*, Directory.Read.All\*\*, Directory.ReadWrite.All\*\* |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelSettings.Read.Group\*, ChannelSettings.ReadWrite.Group\*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All\*\*, Group.ReadWrite.All\*\*, Directory.Read.All\*\*, Directory.ReadWrite.All\*\* |
-
 <!-- { "blockType": "permissions", "name": "channel_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-permissions.md)]
 
