@@ -16725,6 +16725,7 @@ items:
                 href: api/security-detectionrule-update.md
               - name: Delete custom detection rule
                 href: api/security-detectionrule-delete.md- name: eDiscovery (preview)
+          - name: eDiscovery (preview)
             items:
               - name: Case
                 href: resources/security-ediscoverycase.md
@@ -16964,7 +16965,7 @@ items:
                   href: api/security-analyzedemail-get.md
                 - name: Remediate
                   href: api/security-analyzedemail-remediate.md
-          - name: Identites
+          - name: Identites (preview)
             items:
               - name: Health issue
                 items:
