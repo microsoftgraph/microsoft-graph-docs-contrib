@@ -139,25 +139,56 @@ Content-Type: application/json
 
 ## Run the workflow
 
+Now that the workflow is created, add the user you want to test the workflow on to the sales department. After 30 minutes you can check to see if the user is queued to have the workflow run for them by checking the execution scope of your workflow.
+
+
+
+
 Although the workflow is scheduled, it can also be run on demand. In the following request, the user that's the target of the workflow is identified by ID `2390e6j8-wiu9-9030-6239-2g5y9082xc2e`. The request returns a `204 No Content` response.
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial_lifecycle_workflows_mover_run_workflow"
+  "name": "tutorial_lifecycle_workflows_mover_scope_workflow"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2bb05c85-556a-429a-8c16-16f6be5ef880/activate
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2bb05c85-556a-429a-8c16-16f6be5ef880/executionScope
+
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workflow"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
-    "subjects": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.identityGovernance.userProcessingResult)",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/workflows('<guid>')/executionScope?$select=completedDateTime,failedTasksCount",
+    "value": [
         {
-            "id": "2390e6j8-wiu9-9030-6239-2g5y9082xc2e"
+            "id": "2bb05c85-556a-429a-8c16-16f6be5ef880_1_2bb05c85-556a-429a-8c16-16f6be5ef880_638472334281668424_6324d383-5034-49dc-a62d-30d61e01b613",
+            "completedDateTime": null,
+            "failedTasksCount": 0,
+            "processingStatus": "queued",
+            "scheduledDateTime": "2024-03-28T14:37:08.1668424Z",
+            "startedDateTime": null,
+            "totalTasksCount": 1,
+            "totalUnprocessedTasksCount": 1,
+            "workflowExecutionType": "scheduled",
+            "workflowVersion": 1,
+            "subject": {
+                "id": "6324d383-5034-49dc-a62d-30d61e01b613"
+            }
         }
     ]
 }
 ```
 
----
 
 ## Check tasks and workflow status
 
