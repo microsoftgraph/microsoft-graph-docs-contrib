@@ -3,7 +3,7 @@ title: "product: getKnownIssuesByTimeRange"
 description: "Get known issues related to a particular product based on a specified timeframe in the past."
 author: "skandula"
 ms.localizationpriority: medium
-ms.service: "windows-update-business"
+ms.subservice: "windows-update-business"
 doc_type: apiPageType
 ---
 
