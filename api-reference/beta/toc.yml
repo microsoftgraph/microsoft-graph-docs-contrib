@@ -16631,9 +16631,9 @@ items:
                     href: api/trainingcampaign-update.md
                   - name: Delete
                     href: api/attacksimulationroot-delete-trainingcampaigns.md
-                  - name: List trainingCampaign users
+                  - name: List users
                     href: api/usertrainingcampaigndetails-list.md
-                  - name: Get trainingCampaign overview
+                  - name: Get overview
                     href: api/trainingcampaignreportoverview-get.md
               - name: Attack simulation operation
                 items:
