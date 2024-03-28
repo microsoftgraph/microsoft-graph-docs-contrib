@@ -1,6 +1,6 @@
 ---
 title: "userTrainingCompletionSummary resource type"
-description: "Aggregate data of users training progress"
+description: "Contains aggregate data about userss training progress."
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aggregate data of users training progress
+Contains aggregate data about userss training progress.
 
 ## Properties
 |Property|Type|Description|
