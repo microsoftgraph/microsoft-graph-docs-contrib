@@ -48,7 +48,7 @@ You can specify the following properties when you create a **cloudPcBulkAction**
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of this bulk action. Required.|
-|cloudPcIDs|String collection|ID of Cloud PCs this bulk action applies to. Required.|
+|cloudPcIds|String collection|ID of Cloud PCs this bulk action applies to. Required.|
 
 ## Response
 
@@ -70,7 +70,7 @@ Content-type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcBulkAction",
   "displayName": "String",
-  "cloudPcIDs": [
+  "cloudPcIds": [
     "guid"
   ],
   "actionSummary": {
@@ -96,7 +96,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcBulkAction",
   "id": "231ad98f-41b3-872b-dd37-c70bf22cbdac",
   "displayName": "String",
-  "cloudPcIDs": [
+  "cloudPcIds": [
     "guid"
   ],
   "actionSummary": {
