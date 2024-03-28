@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the collection of [pageTemplate](../resources/pagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination). The collection is sorted alphabetically by `name` in ascending order.
+Get the collection of [pageTemplate](../resources/pagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination). Sort alphabetically by `name` in ascending order.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, 
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -65,7 +65,7 @@ If successful, this method returns a `200` and a list of [pageTemplate](../resou
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pageTemplates
+GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates
 ```
 
 ### Response

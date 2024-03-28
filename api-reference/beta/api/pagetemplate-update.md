@@ -37,26 +37,26 @@ PATCH /sites/{sitesId}/pageTemplates/{pageTemplateId}
 
 ## Request headers
 
-|Name|Description|
-|:---|:----------|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
-> **Notes:** : To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.pageTemplate` must be included in the request body.
+> **Notes:** : To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.pageTemplate` must be included in the request body. The `@odata.type=#microsoft.graph.pageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint. It's crucial for successful request body parsing.
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 These fields and be used in update requests.
 
-|Property|Type|Description|
-|:-------|:---|:----------|
-|description|String|The description of the page template. Optional.|
-|thumbnailWebUrl|String|The URL of the page template's thumbnail image. Optional.|
-|title|String|The title of the page template. Optional.|
-|titleArea|[titleArea](../resources/titlearea.md)|The title area on the page template. Optional.|
-|canvasLayout|[canvasLayout](../resources/canvaslayout.md)|The layout of the content in a page template, including horizontal sections and vertical section. The content of the entire page layout must be provided, because the update function doesn't support partial updates. Optional.|
+| Property             | Type                                         | Description                                                                                                                                                                                                        |
+| :------------------- | :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| description                | String                                       | Description of the page template. Optional.                                                                                                                                                                                  |
+| thumbnailWebUrl                | String                                       | Url of the page template's thumbnail image. Optional.                                                                                                                                                                                  |
+| title                | String                                       | Title of the page template. Optional.                                                                                                                                                                                  |
+| titleArea            | [titleArea](../resources/titlearea.md)       | Title area on the page template. Optional.                                                                                                                                                                       |
+| canvasLayout         | [canvasLayout](../resources/canvaslayout.md) | The layout of the content in a page template, including horizontal sections and vertical section. The content of the entire page layout must be provided, because the update function doesn't support partial updates. Optional. |
 
 ## Response
 
@@ -75,7 +75,7 @@ The following example shows a request.
 -->
 
 ```http
-PATCH /sites/{sitesId}/pageTemplates/{pageTemplateId}
+PATCH /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/8fbff3f5-0e5d-49e7-89c7-2b042b3bfaa6
 Content-Type: application/json
 
 {

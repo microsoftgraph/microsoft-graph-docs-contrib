@@ -36,19 +36,19 @@ POST /sites/{site-id}/pageTemplates
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of the [pageTemplate](../resources/pagetemplate.md) resource that you want to create.
+In the request body, supply a JSON representation of the [pageTemplate](../resources/pagetemplate.md) resource to create.
 
 > **Notes:** :
-> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.pageTemplate` must be included in the request body.
-> 2. If you're using the response from the [GET pageTemplate](../api/pagetemplate-get.md) operation to create a **page template**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
+> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.pageTemplate` must be included in the request body. The `@odata.type=#microsoft.graph.pageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint. It's crucial for successful request body parsing.
+> 2. If you're using the response from the [Get pageTemplate](../api/pagetemplate-get.md) operation to create a **page template**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
 ## Response
 
-If successful, this method returns a `201` response and the created [pageTemplate](../resources/pagetemplate.md) object.
+If successful, this method returns a `201` and the created [pageTemplate](../resources/pagetemplate.md) object.
 
 ## Example
 
@@ -60,7 +60,7 @@ The following example shows how to create a new page template.
 
 
 ```http
-POST /sites/{site-id}/pageTemplates
+POST /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates
 Content-Type: application/json
 
 {

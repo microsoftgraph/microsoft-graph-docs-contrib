@@ -43,10 +43,10 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 
 ## Request headers
 
-| Name       | Description |
+| Name         | Description |
 |:---------------|:--------|
-|Authorization|Bearer {token}. Required.|
-| Content-Type  | application/json. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type   | application/json. Required. |
 | Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response is used in another request. |
 
 ## Request body
@@ -66,7 +66,7 @@ If successful, this method returns a `200` and a [pageTemplate](../resources/pag
 <!-- { "blockType": "request", "name": "get-pageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pageTemplates/{pageTemplateId}
+GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb
 ```
 
 #### Response

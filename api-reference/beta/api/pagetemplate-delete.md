@@ -35,10 +35,10 @@ DELETE /sites/{site-id}/pageTemplates/{pageTemplateId}
 
 ## Request headers
 
-| Name       | Value | Description
-|:-----------|:------|:--------------------------------------------------------
-|Authorization|Bearer {token}.| Required|
-| _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted.
+| Name       | Description
+|:-----------|:----------------------------------------
+|Authorization|Bearer {token} Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| _if-match_ | etag. If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted.|
 
 ## Request body
 
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content`. It doesn't return anythin
 The following example shows a request.
 
 ```http
-DELETE /sites/{site-id}/pageTemplates/{pageTemplateId}
+DELETE /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/7bf14f9b-8764-4e54-bc5a-ee7d83dd09f7
 ```
 ### Response
 
