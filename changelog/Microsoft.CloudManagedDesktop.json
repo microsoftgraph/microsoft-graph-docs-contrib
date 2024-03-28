@@ -1011,7 +1011,7 @@
                     "ChangeType": "Addition",
                     "Description": "Added the [cloudPcBulkTroubleshoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkTroubleshoot?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkTroubleshoot"
-                }
+                },
                 {
                     "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
                     "ApiChange": "Relationship",
