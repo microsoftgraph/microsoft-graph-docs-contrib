@@ -3,7 +3,7 @@ title: "Get cloudPcBulkAction"
 description: "Read the properties and relationships of a cloudPcBulkAction object."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcBulkAc
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcbulkaction"
@@ -61,9 +61,8 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkActions/{cloudPcBulkActionId}
 ```
 
-
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
