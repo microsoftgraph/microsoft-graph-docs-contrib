@@ -24,8 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/user-list-memberof-permissions.md)]
 
 > [!TIP]
-> 1. Calling the `/me/memberOf` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me/memberOf` endpoint.
-> 2. To list the members of a group with hidden membership, the Member.Read.Hidden permission is required.
+> - Calling the `/me/memberOf` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when you use the `/me/memberOf` endpoint.
+> - To list the members of a group with hidden membership, the `Member.Read.Hidden` permission is required.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
