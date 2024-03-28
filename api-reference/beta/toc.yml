@@ -16585,18 +16585,6 @@ items:
                     href: api/security-incident-update.md
                   - name: Create comment for incident
                     href: api/security-incident-post-comments.md
-          - name: Custom detection rules
-            items:
-              - name: List custom detection rules
-                href: api/security-detectionrule-list.md
-              - name: Get custom detection rule
-                href: api/security-detectionrule-get.md
-              - name: Create custom detection rule
-                href: api/security-detectionrule-post-detectionRules.md
-              - name: Update custom detection rule
-                href: api/security-detectionrule-update.md
-              - name: Delete custom detection rule
-                href: api/security-detectionrule-delete.md
           - name: Attack simulation and training
             items:
               - name: Simulations
@@ -16725,7 +16713,18 @@ items:
                 items:
                   - name: List
                     href: api/security-auditlogquery-list-records.md
-          - name: eDiscovery (preview)
+          - name: Custom detection rules
+            items:
+              - name: List custom detection rules
+                href: api/security-detectionrule-list.md
+              - name: Get custom detection rule
+                href: api/security-detectionrule-get.md
+              - name: Create custom detection rule
+                href: api/security-detectionrule-post-detectionRules.md
+              - name: Update custom detection rule
+                href: api/security-detectionrule-update.md
+              - name: Delete custom detection rule
+                href: api/security-detectionrule-delete.md- name: eDiscovery (preview)
             items:
               - name: Case
                 href: resources/security-ediscoverycase.md
