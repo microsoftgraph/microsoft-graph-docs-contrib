@@ -16967,16 +16967,16 @@ items:
                   href: api/security-analyzedemail-remediate.md
           - name: Identites (preview)
             items:
-              - name: Health issue
-                items:
-                  - name: Health issue
-                    href: resources/security-healthissue.md
-                  - name: List
-                    href: api/security-identityContainer-list-healthissues.md
-                  - name: Get
-                    href: api/security-healthissue-get.md
-                  - name: Update
-                    href: api/security-healthissue-update.md
+            - name: Health issue
+              items:
+                - name: Health issue
+                  href: resources/security-healthissue.md
+                - name: List
+                  href: api/security-identityContainer-list-healthissues.md
+                - name: Get
+                  href: api/security-healthissue-get.md
+                - name: Update
+                  href: api/security-healthissue-update.md
           - name: Information protection
             items:
               - name: Labels (deprecated)
