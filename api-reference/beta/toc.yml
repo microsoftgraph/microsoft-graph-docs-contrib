@@ -16746,7 +16746,7 @@ items:
               - name: Update custom detection rule
                 href: api/security-detectionrule-update.md
               - name: Delete custom detection rule
-                href: api/security-detectionrule-delete.md- name: eDiscovery (preview)
+                href: api/security-detectionrule-delete.md
           - name: eDiscovery (preview)
             items:
               - name: Case
