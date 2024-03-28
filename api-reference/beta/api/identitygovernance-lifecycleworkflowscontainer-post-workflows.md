@@ -347,7 +347,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
     "category": "leaver",
     "description": "Configure offboarding tasks for employees on their last day of work",
-    "displayName": "Offboard an employee API example",
+    "displayName": "Offboard an employee",
     "isEnabled": true,
     "isSchedulingEnabled": true,
     "lastModifiedDateTime": "2024-03-28T20:20:05.6599449Z",
