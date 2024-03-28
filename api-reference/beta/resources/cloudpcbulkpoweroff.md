@@ -43,7 +43,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcBulkAction",
+  "@odata.type": "#microsoft.graph.cloudPcBulkPowerOff",
   "actionSummary": {"@odata.type": "microsoft.graph.cloudPcBulkActionSummary"},
   "cloudPcIds": ["String"],
   "createdDateTime": "String (timestamp)",
