@@ -2,6 +2,32 @@
     "changelog": [
         {
             "ChangeList": [
+                {
+                    "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
+                    "ApiChange": "ComplexType",
+                    "ChangedApiName": "cloudPcProvisioningPolicyAutopatch",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcProvisioningPolicyAutopatch] complex type.",
+                    "Target": "cloudPcProvisioningPolicyAutopatch"
+                },
+                {
+                    "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "autopatch",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **autopatch** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                }
+            ],
+            "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2024-04-22T09:24:41.3424906Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                {
                  "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
                  "ApiChange": "Relationship",
