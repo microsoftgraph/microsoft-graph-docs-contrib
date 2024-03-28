@@ -20,8 +20,8 @@ This tutorial provides step-by-step guidance for automating mover tasks with Lif
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Configure a lifecycle workflow to check for employees who were removed from a group.
-> * Configure a task to notify the manager of the user who was removed from the group via email.
+> * Configure a lifecycle workflow to check for employees who are added to a department
+> * Configure a task to notify the manager of the user who was moved to the department via email.
 > * Monitor the status of the workflow and its associated tasks.
 
 ## Prerequisites
@@ -35,9 +35,9 @@ To complete this tutorial, you need the following resources and privileges:
 
     | User property | Description |Set on|
     |:--- |:---|:-----|
-    |mail|Used to notify the manager that the employee was removed from the group. Both the manager and employee should have active mailboxes to receive emails.|Employee, Manager|
+    |mail|Used to notify the manager that the employee was moved to the department. Both the manager and employee should have active mailboxes to receive emails.|Employee, Manager|
     |manager|This attribute is used by the workflow task.|Employee|
-    |Group|Used to provide the scope for the workflow. Set to `Sales`.|Employee, Manager|
+    |Department|Used to provide the scope for the workflow. Set to `Sales`.|Employee, Manager|
 
 ## Create a "mover" workflow
 
@@ -45,40 +45,39 @@ To complete this tutorial, you need the following resources and privileges:
 
 The following request creates a mover workflow with the following settings:
 
-+ It can be run on-demand but not on schedule.
-+ The workflow runs when an employee is removed from the group named "Sales", which has the id `668e7540-7f8e-4ca4-a207-b7dffbb6d038`.
++ It rns on schedule, but also can be run on demand
++ The workflow runs when an employee is added to the "Sales" department.
 + Only one built-in task runs in this workflow: to send an email to the employee's manager notifying them of the move. This task is identified in Lifecycle Workflows by the **taskDefinitionId** `aab41899-9972-422a-9d97-f626014578b7`.
 
-> [!NOTE]
-> You will have to confirm what the Sales group id is in your environment, and use that id as the value.
+
 
 <!-- {
   "blockType": "request",
   "name": "tutorial_lifecycle_workflows_mover_create_workflow"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-type: application/json
 
 {
     "category": "mover",
-    "description": "Configure mover tasks for a user when their job changes",
-    "displayName": "Sales group mover task",
+    "description": "Configure mover tasks for a user when their job profile changes",
+    "displayName": "Sales contractor moves to full time employee",
     "isEnabled": true,
     "isSchedulingEnabled": true,
     "executionConditions": {
         "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
         "scope": {
-            "@odata.type": "#microsoft.graph.identityGovernance.groupBasedSubjectSet",
-            "groups": [
-                {
-                    "id": "668e7540-7f8e-4ca4-a207-b7dffbb6d038"
-                }
-            ]
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(department eq 'Sales')"
         },
         "trigger": {
-            "@odata.type": "#microsoft.graph.identityGovernance.membershipChangeTrigger",
-            "changeType": "remove"
+            "@odata.type": "#microsoft.graph.identityGovernance.attributeChangeTrigger",
+            "triggerAttributes": [
+                {
+                    "name": "department"
+                }
+            ]
         }
     },
     "tasks": [
@@ -110,24 +109,29 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
     "category": "mover",
-    "description": "Configure mover tasks for a user when their job changes",
-    "displayName": "Sales group mover task",
+    "description": "Configure mover tasks for a user when their job profile changes",
+    "displayName": "Sales contractor moves to full time employee",
     "isEnabled": true,
     "isSchedulingEnabled": true,
-    "lastModifiedDateTime": "2024-03-26T23:56:19.2036435Z",
-    "createdDateTime": "2024-03-26T23:56:19.2036342Z",
+    "lastModifiedDateTime": "2024-03-28T12:46:10.0505943Z",
+    "createdDateTime": "2024-03-28T12:46:10.0505809Z",
     "deletedDateTime": null,
-    "id": "fe2554e1-a141-4814-a9ff-b2b526679744",
-    "nextScheduleRunDateTime": "2024-03-27T00:37:08Z",
+    "id": "2bb05c85-556a-429a-8c16-16f6be5ef880",
+    "nextScheduleRunDateTime": "2024-03-28T13:37:08Z",
     "version": 1,
     "executionConditions": {
         "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
         "scope": {
-            "@odata.type": "#microsoft.graph.identityGovernance.groupBasedSubjectSet"
+            "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+            "rule": "(department eq 'Sales')"
         },
         "trigger": {
-            "@odata.type": "#microsoft.graph.identityGovernance.membershipChangeTrigger",
-            "changeType": "remove"
+            "@odata.type": "#microsoft.graph.identityGovernance.attributeChangeTrigger",
+            "triggerAttributes": [
+                {
+                    "name": "department"
+                }
+            ]
         }
     }
 }
@@ -135,14 +139,14 @@ Content-Type: application/json
 
 ## Run the workflow
 
-Because the workflow isn't scheduled to run, it must be run manually. In the following request, the user that's the target of the workflow is identified by ID `2390e6j8-wiu9-9030-6239-2g5y9082xc2e`. The request returns a `204 No Content` response.
+Although the workflow is scheduled, it can also be run on demand. In the following request, the user that's the target of the workflow is identified by ID `2390e6j8-wiu9-9030-6239-2g5y9082xc2e`. The request returns a `204 No Content` response.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial_lifecycle_workflows_mover_run_workflow"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/fe2554e1-a141-4814-a9ff-b2b526679744/activate
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2bb05c85-556a-429a-8c16-16f6be5ef880/activate
 
 {
     "subjects": [
@@ -171,7 +175,7 @@ At any time, you can monitor the status of the workflows and their associated ta
   "name": "tutorial_lifecycle_workflows_mover_list_userProcessingResults"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/fe2554e1-a141-4814-a9ff-b2b526679744/userProcessingResults
+GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2bb05c85-556a-429a-8c16-16f6be5ef880/userProcessingResults
 ```
 
 ---
@@ -188,11 +192,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('fe2554e1-a141-4814-a9ff-b2b526679744')/userProcessingResults",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('2bb05c85-556a-429a-8c16-16f6be5ef880')/userProcessingResults",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/workflows('<guid>')/userProcessingResults?$select=completedDateTime,failedTasksCount",
     "value": [
         {
-            "id": "fe2554e1-a141-4814-a9ff-b2b526679744_1_fe2554e1-a141-4814-a9ff-b2b526679744_638470955486351520_6324d383-5034-49dc-a62d-30d61e01b613",
+            "id": "2bb05c85-556a-429a-8c16-16f6be5ef880_1_2bb05c85-556a-429a-8c16-16f6be5ef880_638470955486351520_6324d383-5034-49dc-a62d-30d61e01b613",
             "completedDateTime": "2024-03-27T00:19:22.5753749Z",
             "failedTasksCount": 1,
             "processingStatus": "completedWithErrors",
@@ -219,7 +223,7 @@ Content-Type: application/json
   "name": "tutorial_lifecycle_workflows_mover_list_userProcessingResults.summary"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/fe2554e1-a141-4814-a9ff-b2b526679744/userProcessingResults/summary(startDateTime=2024-03-01T00:00:00Z,endDateTime=2024-03-30T00:00:00Z)
+GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2bb05c85-556a-429a-8c16-16f6be5ef880/userProcessingResults/summary(startDateTime=2024-03-01T00:00:00Z,endDateTime=2024-03-30T00:00:00Z)
 ```
 
 ---
