@@ -51,4 +51,3 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
-
