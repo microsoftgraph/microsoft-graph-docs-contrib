@@ -22,11 +22,11 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). Run summary of this bulk action.|
-|cloudPcIds|Guid collection|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). IDs of the Cloud PCs the bulk action applies to.|
-|createdDateTime|DateTimeOffset|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). Time when the bulk action was created.|
-|displayName|String|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). Name of the bulk action.|
-|id|String|Inherited from [entity](../resources/entity.md). ID of the bulk action.|
+|actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
+|cloudPcIds|String collection|IDs of the Cloud PCs the bulk action applies to. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
+|createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
+|displayName|String|Name of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). |
+|id|String|ID of the bulk action. Inherited from [entity](../resources/entity.md). |
 
 ## Relationships
 None.
@@ -43,16 +43,12 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcBulkPowerOff",
-  "id": "String (identifier)",
+  "@odata.type": "#microsoft.graph.cloudPcBulkAction",
+  "actionSummary": {"@odata.type": "microsoft.graph.cloudPcBulkActionSummary"},
+  "cloudPcIds": ["String"],
+  "createdDateTime": "String (timestamp)",
   "displayName": "String",
-  "cloudPcIds": [
-    "Guid"
-  ],
-  "actionSummary": {
-    "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
-  },
-  "createdDateTime": "String (timestamp)"
+  "id": "String (identifier)"
 }
 ```
 
