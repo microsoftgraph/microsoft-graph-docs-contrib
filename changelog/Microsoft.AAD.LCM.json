@@ -413,6 +413,60 @@
       "SubArea": "Governance"
     },
     {
+      "changelog": [
+        {
+          "ChangeList": [
+            {
+              "Id": "981188a9-0741-4471-8022-029200432395",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "membershipChangeType",
+              "ChangeType": "Addition",
+              "Description": "Added the **membershipChangeType** enumeration type.",
+              "Target": "membershipChangeType"
+            },
+            {
+              "Id": "981188a9-0741-4471-8022-029200432395",
+              "ApiChange": "Resource",
+              "ChangedApiName": "attributeChangeTrigger",
+              "ChangeType": "Addition",
+              "Description": "Added the [attributeChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-attributeChangeTrigger?view=graph-rest-beta) resource.",
+              "Target": "attributeChangeTrigger"
+            },
+            {
+              "Id": "981188a9-0741-4471-8022-029200432395",
+              "ApiChange": "Resource",
+              "ChangedApiName": "groupBasedSubjectSet",
+              "ChangeType": "Addition",
+              "Description": "Added the [groupBasedSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-groupBasedSubjectSet?view=graph-rest-beta) resource.",
+              "Target": "groupBasedSubjectSet"
+            },
+            {
+              "Id": "981188a9-0741-4471-8022-029200432395",
+              "ApiChange": "Resource",
+              "ChangedApiName": "membershipChangeTrigger",
+              "ChangeType": "Addition",
+              "Description": "Added the [membershipChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-membershipChangeTrigger?view=graph-rest-beta) resource.",
+              "Target": "membershipChangeTrigger"
+            },
+            {
+              "Id": "981188a9-0741-4471-8022-029200432395",
+              "ApiChange": "Resource",
+              "ChangedApiName": "triggerAttribute",
+              "ChangeType": "Addition",
+              "Description": "Added the [triggerAttribute](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-triggerAttribute?view=graph-rest-beta) resource.",
+              "Target": "triggerAttribute"
+            }
+          ],
+          "Id": "981188a9-0741-4471-8022-029200432395",
+          "Cloud": "Review",
+          "Version": "beta",
+          "CreatedDateTime": "2024-03-27T23:18:12.5211522Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Identity governance"
+        }
+      ]
+    },
+    {
       "ChangeList": [
         {
           "Id": "a5836c6f-a370-4034-a659-cb47d086cb4d",
