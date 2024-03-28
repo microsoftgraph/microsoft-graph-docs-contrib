@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 An abstract type tha represents the bulk action applied to Cloud PCs specified in a parameter.
 
-Inherits from [entity](entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -28,7 +28,7 @@ Inherits from [entity](entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action.|
-|cloudPcIDs|String collection|ID of the Cloud PCs the bulk action applies to. |
+|cloudPcIDs|String collection|IDs of the Cloud PCs the bulk action applies to. |
 |createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayName|String|Name of the bulk action.|
 |id|String|ID of the bulk action. Inherited from [entity](entity.md).|
