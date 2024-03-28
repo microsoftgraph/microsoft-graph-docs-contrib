@@ -3,19 +3,19 @@ title: "Create cloudPcBulkAction"
 description: "Create a new cloudPcBulkAction object."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
-doc_type: apipagetype
+ms.subservice: "cloud-pc"
+doc_type: apiPageType
 ---
 
-# create cloudpcbulkaction
-namespace: microsoft.graph
+# Create cloudPcBulkAction
+Namespace: microsoft.graph
 
-[!include [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [cloudpcbulkaction](../resources/cloudpcbulkaction.md) object.
+Create a new [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.
 
-## permissions
-One of the following permissions is required to call this API. to learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -23,86 +23,85 @@ One of the following permissions is required to call this API. to learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CloudPC.ReadWrite.All|
 
-## http request
+## Permissions
 
 <!-- {
-  "blocktype": "ignored"
+  "blockType": "ignored"
 }
 -->
 ``` http
-post /devicemanagement/virtualendpoint/bulkactions
+POST /deviceManagement/virtualEndpoint/bulkActions
 ```
 
-## request headers
-|name|description|
+## Request headers
+
+|Name|Description|
 |:---|:---|
-|authorization|bearer {token}. required.|
-|content-type|application/json. required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
-## request body
-In the request body, supply a json representation of the [cloudpcbulkaction](../resources/cloudpcbulkaction.md) object.
+## Request body
+In the request body, supply a JSON representation of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.
 
-You can specify the following properties when creating a **cloudpcbulkaction**.
+You can specify the following properties when you create a **cloudPcBulkAction**.
 
-|property|type|description|
+|Property|Type|Description|
 |:---|:---|:---|
-|displayname|string|Name of this bulk action, required.|
-|cloudpcids|guid collection|ID of Cloud PCs this bulk action applies to, required.|
+|displayName|String|Name of this bulk action. Required.|
+|cloudPcIDs|Guid collection|ID of Cloud PCs this bulk action applies to. Required.|
 
-## response
+## Response
 
-If successful, this method returns a `201 created` response code and a [cloudpcbulkaction](../resources/cloudpcbulkaction.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object in the response body.
 
-## examples
+## Examples
 
-### request
-The following content is an example of a request.
+### Request
+The following example shows a request.
 <!-- {
-  "blocktype": "request",
+  "blockType": "request",
   "name": "create_cloudpcbulkaction_from_"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/devicemanagement/virtualendpoint/bulkactions
-content-type: application/json
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkActions
+Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcBulkAction",
-  "displayname": "string",
-  "cloudpcids": [
+  "displayName": "String",
+  "cloudPcIDs": [
     "guid"
   ],
-  "actionsummary": {
+  "actionSummary": {
     "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
   }
 }
 ```
 
-
-### response
-The following content is an example of the response.
->**note:** the response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blocktype": "response",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.cloudPcBulkAction"
 }
 -->
 ``` http
-http/1.1 201 created
-content-type: application/json
+HTTP/1.1 201 Created
+Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcBulkAction",
   "id": "231ad98f-41b3-872b-dd37-c70bf22cbdac",
-  "displayname": "string",
-  "cloudpcids": [
+  "displayName": "String",
+  "cloudPcIDs": [
     "guid"
   ],
-  "actionsummary": {
+  "actionSummary": {
     "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
   },
-  "createddatetime": "string (timestamp)"
+  "createdDateTime": "String (timestamp)"
 }
 ```
-
