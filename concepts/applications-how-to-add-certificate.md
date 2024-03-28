@@ -64,7 +64,7 @@ To read the certificate's key using PowerShell, run the following request.
 ```powershell-interactive
 ## Replace the file path with the location of your certificate
 
-[convert]::ToBase64String((Get-Content C:\Users\admin\Desktop\20230112.cer -Encoding byte))  | Out-File -FilePath "C:\Users\admin\Desktop\20230112.key.txt"
+[convert]::ToBase64String((Get-Content C:\Users\admin\Desktop\20230112.cer -AsByteStream))  | Out-File -FilePath "C:\Users\admin\Desktop\20230112.key.txt"
 ```
 
 #### Response
