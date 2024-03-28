@@ -49,11 +49,20 @@ POST /security/runHuntingQuery
 
 ## Request body
 
-In the request body, provide a JSON object for the parameter, `Query`. 
+In the request body, provide a JSON object for the `Query` parameter, and optionally include a `Timespan` parameter.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|Query|String|The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).|
+| Parameter    | Type    | Description                                                                                                                      |
+|:-------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------|
+| Query        | String  | Required. The hunting query in Kusto Query Language (KQL). For more information about KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |
+| Timespan     | String  | Optional. The timespan over which to query data. This is an ISO8601 time period value. This timespan is applied in addition to any that are specified in the query expression. The default value is 30 days. |
+
+### Timespan format examples
+
+- **Date/Date**: `"2024-02-01T08:00:00Z/2024-02-15T08:00:00Z"` - Start and end dates.
+- **Duration/EndDate**: `"P30D/2024-02-15T08:00:00Z"` - A period before the end date.
+- **Start/Duration**: `"2024-02-01T08:00:00Z/P30D"` - Start date and duration.
+- **ISO8601 Duration**: `"P30D"` - Duration from now backwards.
+- **Single Date/Time**: `"2024-02-01T08:00:00Z"` - Start time with end time as the current time by default.
 
 ## Response
 
@@ -63,7 +72,7 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 
 ### Request
 
-This example specifies a KQL query which does the following:
+The following example specifies a KQL query that does the following:
 - Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema.
 - Filters on the condition that the event is initiated by the powershell.exe process.
 - Specifies the output of 3 columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
@@ -82,6 +91,47 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 {
     "Query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
+}
+```
+
+Example with 'timespan'
+
+``` http
+POST https://graph.microsoft.com/beta/security/runHuntingQuery
+{
+    "query":"DeviceProcessEvents | where InitiatingProcessFileName =~ 'powershell.exe' | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc",
+    "timespan": "P28D"
+}
+```
+
+```json
+{
+  "schema": [
+    {
+      "name": "Timestamp",
+      "type": "DateTime"
+    },
+    {
+      "name": "FileName",
+      "type": "String"
+    },
+    {
+      "name": "InitiatingProcessFileName",
+      "type": "String"
+    }
+  ],
+  "results": [
+    {
+      "Timestamp": "2024-03-01T06:38:35.7664356Z",
+      "FileName": "conhost.exe",
+      "InitiatingProcessFileName": "powershell.exe"
+    },
+    {
+      "Timestamp": "2024-03-28T06:38:30.5163363Z",
+      "FileName": "conhost.exe",
+      "InitiatingProcessFileName": "powershell.exe"
+    }
+  ]
 }
 ```
 
