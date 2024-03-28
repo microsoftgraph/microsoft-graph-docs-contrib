@@ -299,6 +299,32 @@
       "CreatedDateTime": "2024-03-19T06:50:48.0647108Z",
       "WorkloadArea": "Microsoft.Viva.Learning",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e3a761e5-c279-4c6f-af37-01dc9afbaac4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "level",
+          "ChangeType": "Addition",
+          "Description": "Added the **level** enumeration type.",
+          "Target": "level"
+        },
+        {
+          "Id": "e3a761e5-c279-4c6f-af37-01dc9afbaac4",
+          "ApiChange": "Property",
+          "ChangedApiName": "level",
+          "ChangeType": "Addition",
+          "Description": "Added the **level** property to the [learningContent](https://learn.microsoft.com/en-us/graph/api/resources/learningContent?view=graph-rest-1.0) resource.",
+          "Target": "learningContent"
+        }
+      ],
+      "Id": "e3a761e5-c279-4c6f-af37-01dc9afbaac4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-28T08:28:26.3329574Z",
+      "WorkloadArea": "Viva Learning",
+      "SubArea": ""
     }
   ]
 }
