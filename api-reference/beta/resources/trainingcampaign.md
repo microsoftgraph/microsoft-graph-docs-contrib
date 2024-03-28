@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, training campaigns are a fast, direct way to provide security training to users. Instead of creating and launching simulated phishing attacks that eventually lead to training, you can create and assign training campaigns directly to users.
+Represents a training campaign. In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, training campaigns are a fast, direct way to provide security training to users. Instead of creating and launching simulated phishing attacks that eventually lead to training, you can create and assign training campaigns directly to users.
 
 A training campaign contains one or more built-in training modules that you select. Currently, there are over 70 training modules to select from. For more information about training modules, see training modules for Training campaigns in Attack simulation training.
 
@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List trainingCampaign objects](../api/attacksimulationroot-list-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md) collection|Get a list of the [trainingCampaign](../resources/trainingcampaign.md) objects and their properties.|
+|[List trainingCampaigns](../api/attacksimulationroot-list-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md) collection|Get a list of the [trainingCampaign](../resources/trainingcampaign.md) objects and their properties.|
 |[Create trainingCampaign](../api/attacksimulationroot-post-trainingcampaigns.md)|[trainingCampaign](../resources/trainingcampaign.md)|Create a new [trainingCampaign](../resources/trainingcampaign.md) object.|
 |[Get trainingCampaign](../api/trainingcampaign-get.md)|[trainingCampaign](../resources/trainingcampaign.md)|Read the properties and relationships of a [trainingCampaign](../resources/trainingcampaign.md) object.|
 |[Update trainingCampaign](../api/trainingcampaign-update.md)|[trainingCampaign](../resources/trainingcampaign.md)|Update the properties of a [trainingCampaign](../resources/trainingcampaign.md) object.|
