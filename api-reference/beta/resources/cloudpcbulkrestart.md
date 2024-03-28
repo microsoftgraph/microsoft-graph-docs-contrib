@@ -3,7 +3,7 @@ title: "cloudPcBulkRestart resource type"
 description: "Represents the entity that performs a bulk restart action with the executeAction API."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
