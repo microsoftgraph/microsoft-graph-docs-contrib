@@ -951,30 +951,6 @@
                 {
                     "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "bulkActions",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **bulkActions** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
-                    "Target": "virtualEndpoint"
-                },
-                 {
-                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "List",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-bulkactions?view=graph-rest-beta) method to [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
-                    "Target": "virtualEndpoint"
-                },
-                 {
-                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "Create",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-bulkactions?view=graph-rest-beta) method to [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
-                    "Target": "virtualEndpoint"
-                },
-                {
-                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
-                    "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkActionSummary",
                     "ChangeType": "Addition",
                     "Description": "Added the [cloudPcBulkActionSummary](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkActionSummary?view=graph-rest-beta) resource type.",
@@ -985,7 +961,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkPowerOff",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkPowerOff](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOff?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcBulkPowerOff](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOff?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkPowerOff"
                 },
                 {
@@ -993,7 +969,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkPowerOn",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkPowerOn](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOn?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcBulkPowerOn](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOn?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkPowerOn"
                 },
                 {
@@ -1001,7 +977,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkReprovision",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkReprovision](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkReprovision?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcBulkReprovision](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkReprovision?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkReprovision"
                 },
                 {
@@ -1009,7 +985,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkResize",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkResize](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkResize?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcBulkResize](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkResize?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkResize"
                 },
                 {
@@ -1017,7 +993,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkRestart",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkRestart](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestart?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcBulkRestart](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestart?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkRestart"
                 },
                 {
@@ -1025,7 +1001,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkRestore",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkRestore](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestore?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcBulkRestore](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestore?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkRestore"
                 },
                 {
@@ -1033,8 +1009,16 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkTroubleshoot",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkTroubleshoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkTroubleshoot?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcBulkTroubleshoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkTroubleshoot?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkTroubleshoot"
+                }
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "bulkActions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bulkActions** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
                 }
             ],
             "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
