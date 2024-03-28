@@ -3,7 +3,7 @@ title: "cloudPcBulkPowerOff resource type"
 description: "Defines the bulk power-off action using the executeAction API, with Cloud PC IDs as the only input parameter for the bulk power-off operation."
 author: "Guoan-Tang "
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
