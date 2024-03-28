@@ -3,7 +3,7 @@ title: "passwordSettings resource type"
 description: "The different password settings for the users to be provisioned"
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

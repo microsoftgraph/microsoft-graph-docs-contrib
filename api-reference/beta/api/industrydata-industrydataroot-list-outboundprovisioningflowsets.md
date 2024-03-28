@@ -3,7 +3,7 @@ title: "List outboundProvisioningFlowSet objects"
 description: "Get a list of the outboundProvisioningFlowSet objects and their properties."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "sectionRoleReferenceValue resource type"
 description: " A reference value for a role in a section."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

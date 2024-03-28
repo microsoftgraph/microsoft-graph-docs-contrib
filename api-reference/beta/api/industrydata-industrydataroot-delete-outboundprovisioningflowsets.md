@@ -3,7 +3,7 @@ title: "Delete outboundProvisioningFlowSet"
 description: "Delete an outboundProvisioningFlowSet object."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

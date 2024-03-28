@@ -3,7 +3,7 @@ title: "Update administrativeUnitProvisioningFlow"
 description: "Update the properties of an administrativeUnitProvisioningFlow object."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

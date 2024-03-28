@@ -3,7 +3,7 @@ title: "Update securityGroupProvisioningFlow"
 description: "Update the properties of a securityGroupProvisioningFlow object."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

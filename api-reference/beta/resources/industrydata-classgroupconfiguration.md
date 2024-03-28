@@ -3,7 +3,7 @@ title: "classGroupConfiguration resource type"
 description: "The different configurations choices for the class groups to be provisioned with."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

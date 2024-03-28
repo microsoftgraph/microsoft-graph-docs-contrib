@@ -3,7 +3,7 @@ title: "adminUnitCreationOptions resource type"
 description: "The different management choices for the administrative units to be provisioned."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

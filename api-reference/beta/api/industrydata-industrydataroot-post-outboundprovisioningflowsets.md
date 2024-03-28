@@ -3,7 +3,7 @@ title: "Create outboundProvisioningFlowSet"
 description: "Create a new outboundProvisioningFlowSet object."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 

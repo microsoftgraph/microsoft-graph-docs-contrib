@@ -3,7 +3,7 @@ title: "securityGroupCreationOptions resource type"
 description: "The different options for the security groups to be provisioned."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

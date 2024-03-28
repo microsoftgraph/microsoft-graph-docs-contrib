@@ -3,7 +3,7 @@ title: "filter resource type"
 description: "A filter base type"
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
