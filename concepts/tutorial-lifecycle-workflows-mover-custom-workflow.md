@@ -20,7 +20,7 @@ This tutorial provides step-by-step guidance for automating mover tasks with Lif
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Configure a lifecycle workflow to check for employees who are added to a department
+> * Configure a lifecycle workflow to check for employees who are added(moved) to a department
 > * Configure a task to notify the manager of the user who was moved to the department via email.
 > * Monitor the status of the workflow and its associated tasks.
 
