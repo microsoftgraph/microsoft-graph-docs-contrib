@@ -16,8 +16,8 @@ Represents how to filter a date when filtering on values.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|date|string|The date in ISO8601 format used to filter data.|
-|specificity|string|Defines how specific you should use the **date** to keep data. For example, if the date is `2005-04-02` and the **specificity** property is set to `month`, the filter operation keeps all rows with a date in the month of April 2009. The possible values are: `Year`, `Month`, `Day`, `Hour`, `Minute`, `Second`.|
+|date|String|The date in ISO 8601 format used to filter data.|
+|specificity|String|Defines how specific you should use the **date** to keep data. For example, if the date is `2005-04-02` and the **specificity** property is set to `month`, the filter operation keeps all rows with a date in the month of April 2009. The possible values are: `Year`, `Month`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## Relationships
 None.
