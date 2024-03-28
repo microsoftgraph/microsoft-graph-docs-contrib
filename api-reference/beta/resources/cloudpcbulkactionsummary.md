@@ -3,7 +3,7 @@ title: "cloudPcBulkActionSummary resource type"
 description: "Represents a run summary of the bulk actions."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -37,11 +37,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcBulkActionSummary",
-  "failedCount": "Integer",
-  "inProgressCount": "Integer",
-  "notSupportedCount": "Integer",
-  "pendingCount": "Integer",
-  "successfulCount": "Integer"
+  "failedCount": "Int32",
+  "inProgressCount": "Int32",
+  "notSupportedCount": "Int32",
+  "pendingCount": "Int32",
+  "successfulCount": "Int32"
 }
 ```
-
