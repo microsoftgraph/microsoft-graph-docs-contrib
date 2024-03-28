@@ -1,5 +1,224 @@
 {
   "changelog": [
+
+    {
+      "ChangeList": [
+        {
+          "Id": "08ee507d-09f1-4d15-8b8f-a3ab260aceb4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "win32LobAutoUpdateSupersededAppsState",
+          "ChangeType": "Addition",
+          "Description": "Added the **win32LobAutoUpdateSupersededAppsState** enumeration type.",
+          "Target": "win32LobAutoUpdateSupersededAppsState"
+        },
+        {
+          "Id": "bcbdc795-2ba0-40a2-bd71-26b52eb00ebe",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "win32LobAutoUpdateSupersededAppsState",
+          "ChangeType": "Addition",
+          "Description": "Added the **win32LobAutoUpdateSupersededAppsState** enumeration type.",
+          "Target": "win32LobAutoUpdateSupersededAppsState"
+        },
+        {
+          "Id": "137487c2-5100-4b1e-ac67-12bb7c9649c8",
+          "ApiChange": "Member",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added the `delete` member to the **remoteAction** enumeration.",
+          "Target": "remoteAction"
+        },
+        {
+          "Id": "137487c2-5100-4b1e-ac67-12bb7c9649c8",
+          "ApiChange": "Method",
+          "ChangedApiName": "downloadDeviceLogs",
+          "ChangeType": "Addition",
+          "Description": "Added the [downloadDeviceLogs](https://learn.microsoft.com/graph/api/intune-deviceLogCollectionResponse-downloadDeviceLogs?view=graph-rest-beta) method to the [deviceLogCollectionResponse](https://learn.microsoft.com/graph/api/resources/intune-deviceLogCollectionResponse?view=graph-rest-beta) resource.",
+          "Target": "deviceLogCollectionResponse"
+        },
+        {
+          "Id": "472aed01-4cc9-48ec-8895-634941fce4b7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outOfBoxExperienceSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [outOfBoxExperienceSetting](https://learn.microsoft.com/graph/api/resources/intune-outOfBoxExperienceSetting?view=graph-rest-beta) resource.",
+          "Target": "outOfBoxExperienceSetting"
+        },
+        {
+          "Id": "472aed01-4cc9-48ec-8895-634941fce4b7",
+          "ApiChange": "Property",
+          "ChangedApiName": "hardwareHashExtractionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwareHashExtractionEnabled** property to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-windowsAutopilotDeploymentProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeploymentProfile"
+        },
+        {
+          "Id": "472aed01-4cc9-48ec-8895-634941fce4b7",
+          "ApiChange": "Property",
+          "ChangedApiName": "locale",
+          "ChangeType": "Addition",
+          "Description": "Added the **locale** property to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-windowsAutopilotDeploymentProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeploymentProfile"
+        },
+        {
+          "Id": "472aed01-4cc9-48ec-8895-634941fce4b7",
+          "ApiChange": "Property",
+          "ChangedApiName": "outOfBoxExperienceSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the **outOfBoxExperienceSetting** property to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-windowsAutopilotDeploymentProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeploymentProfile"
+        },
+        {
+          "Id": "472aed01-4cc9-48ec-8895-634941fce4b7",
+          "ApiChange": "Property",
+          "ChangedApiName": "preprovisioningAllowed",
+          "ChangeType": "Addition",
+          "Description": "Added the **preprovisioningAllowed** property to the [windowsAutopilotDeploymentProfile](https://learn.microsoft.com/graph/api/resources/intune-windowsAutopilotDeploymentProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeploymentProfile"
+        },
+        {
+          "Id": "1915fa0c-d0fd-49aa-874e-adb9a8f8396d",
+          "ApiChange": "Method",
+          "ChangedApiName": "revoke",
+          "ChangeType": "Addition",
+          "Description": "Added the [revoke](https://learn.microsoft.com/graph/api/intune-privilegeManagementElevationRequest-revoke?view=graph-rest-beta) method to the [privilegeManagementElevationRequest](https://learn.microsoft.com/graph/api/resources/intune-privilegeManagementElevationRequest?view=graph-rest-beta) resource.",
+          "Target": "privilegeManagementElevationRequest"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "managedAppLogUploadConsent",
+          "ChangeType": "Addition",
+          "Description": "Added the **managedAppLogUploadConsent** enumeration type.",
+          "Target": "managedAppLogUploadConsent"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknown",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknown` member to the **managedAppLogUploadConsent** enumeration.",
+          "Target": "managedAppLogUploadConsent"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "declined",
+          "ChangeType": "Addition",
+          "Description": "Added the `declined` member to the **managedAppLogUploadConsent** enumeration.",
+          "Target": "managedAppLogUploadConsent"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "accepted",
+          "ChangeType": "Addition",
+          "Description": "Added the `accepted` member to the **managedAppLogUploadConsent** enumeration.",
+          "Target": "managedAppLogUploadConsent"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknownFutureValue` member to the **managedAppLogUploadConsent** enumeration.",
+          "Target": "managedAppLogUploadConsent"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "pending",
+          "ChangeType": "Addition",
+          "Description": "Added the `pending` member to the **managedAppLogUploadState** enumeration.",
+          "Target": "managedAppLogUploadState"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "timedOut",
+          "ChangeType": "Addition",
+          "Description": "Added the `timedOut` member to the **managedAppLogUploadState** enumeration.",
+          "Target": "managedAppLogUploadState"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "failed",
+          "ChangeType": "Addition",
+          "Description": "Added the `failed` member to the **managedAppLogUploadState** enumeration.",
+          "Target": "managedAppLogUploadState"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknownFutureValue` member to the **managedAppLogUploadState** enumeration.",
+          "Target": "managedAppLogUploadState"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedAppLogUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedAppLogUpload](https://learn.microsoft.com/graph/api/resources/intune-managedAppLogUpload?view=graph-rest-beta) resource.",
+          "Target": "managedAppLogUpload"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Property",
+          "ChangedApiName": "managedAppComponentDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **managedAppComponentDescription** property to the [managedAppLogUpload](https://learn.microsoft.com/graph/api/resources/intune-managedAppLogUpload?view=graph-rest-beta) resource.",
+          "Target": "managedAppLogUpload"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Property",
+          "ChangedApiName": "appActionIfAccountIsClockedOut",
+          "ChangeType": "Addition",
+          "Description": "Added the **appActionIfAccountIsClockedOut** property to the [iosManagedAppProtection](https://learn.microsoft.com/graph/api/resources/intune-iosManagedAppProtection?view=graph-rest-beta) resource.",
+          "Target": "iosManagedAppProtection"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedAppLogCollectionRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedAppLogCollectionRequest](https://learn.microsoft.com/graph/api/resources/intune-managedAppLogCollectionRequest?view=graph-rest-beta) resource.",
+          "Target": "managedAppLogCollectionRequest"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Property",
+          "ChangedApiName": "requestedByUserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the **requestedByUserPrincipalName** property to the [managedAppLogCollectionRequest](https://learn.microsoft.com/graph/api/resources/intune-managedAppLogCollectionRequest?view=graph-rest-beta) resource.",
+          "Target": "managedAppLogCollectionRequest"
+        },
+        {
+          "Id": "e008fac3-ce8b-445b-9a11-3a235675b26d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "deploymentSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the **deploymentSummary** relationship to the [windowsManagedAppProtection](https://learn.microsoft.com/graph/api/resources/intune-windowsManagedAppProtection?view=graph-rest-beta) resource.",
+          "Target": "windowsManagedAppProtection"
+        },
+        {
+          "Id": "7632ac9d-b02d-4856-a7fa-6b2b6325e14b",
+          "ApiChange": "Property",
+          "ChangedApiName": "operationApprovalPolicies",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **operationApprovalPolicies** property from the [operationApprovalRequest](https://learn.microsoft.com/graph/api/resources/intune-operationApprovalRequest?view=graph-rest-beta) resource.",
+          "Target": "operationApprovalRequest"
+        }
+      ],
+      "Id": "08ee507d-09f1-4d15-8b8f-a3ab260aceb4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-28T20:54:56.9639116Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
     {
       "ChangeList": [
         {
