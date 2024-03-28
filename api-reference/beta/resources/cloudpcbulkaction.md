@@ -1,9 +1,9 @@
 ---
 title: "cloudPcBulkAction resource type"
-description: "Represents the bulk action applied to Cloud PCs specified in a parameter."
+description: "An abstract type tha represents the bulk action applied to Cloud PCs specified in a parameter."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the bulk action applied to Cloud PCs specified in a parameter. This resource is an abstract type.
+An abstract type tha represents the bulk action applied to Cloud PCs specified in a parameter.
+
+Inherits from [entity](entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcBulkActions](../api/virtualendpoint-list-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
+|[List bulkActions](../api/virtualendpoint-list-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
 |[Create cloudPcBulkAction](../api/virtualendpoint-post-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Create a new [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
 |[Get cloudPcBulkAction](../api/cloudpcbulkaction-get.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Read the properties and relationships of a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
 
@@ -26,10 +28,10 @@ Represents the bulk action applied to Cloud PCs specified in a parameter. This r
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action.|
-|cloudPcIDs|Guid collection|ID of the Cloud PCs the bulk action applies to. |
-|createdDateTime|DateTimeOffset|Time when the bulk action was created.|
+|cloudPcIDs|String collection|ID of the Cloud PCs the bulk action applies to. |
+|createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayName|String|Name of the bulk action.|
-|id|Guid|ID of the bulk action.|
+|id|String|ID of the bulk action. Inherited from [entity](entity.md).|
 
 ## Relationships
 None.
@@ -46,15 +48,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcBulkAction",
+  "actionSummary": {"@odata.type": "microsoft.graph.cloudPcBulkActionSummary"},
+  "cloudPcIds": ["String"],
+  "createdDateTime": "String (timestamp)",
   "displayName": "String",
-  "id": "String (identifier)",
-  "cloudPcIds": [
-    "Guid"
-  ],
-  "actionSummary": {
-    "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
-  },
-  "createdDateTime": "String (timestamp)"
+  "id": "String (identifier)"
 }
 ```
-
