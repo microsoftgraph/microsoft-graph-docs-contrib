@@ -55,7 +55,7 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ### Security | Attack simulation and training
 
-Use the [Training only campaigns](/graph/api/resources/trainingcampaign?view=graph-rest-beta&preserve-view=true) API to directly assign users security trainings.
+Use the [training campaign](/graph/api/resources/trainingcampaign?view=graph-rest-beta&preserve-view=true) API to directly assign security trainings to users.
 
 ### Applications
 
