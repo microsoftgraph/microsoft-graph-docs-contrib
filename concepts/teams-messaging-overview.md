@@ -1,5 +1,5 @@
 ---
-title: "Working with Microsoft Teams messaging"
+title: "Working with Microsoft Teams messaging APIs in Microsoft Graph"
 description: "Working with Microsoft Teams messaging"
 author: "RamjotSingh"
 ms.localizationpriority: high
@@ -7,27 +7,28 @@ ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Working with Microsoft Teams messaging
+# Working with Microsoft Teams messaging APIs in Microsoft Graph
 
-Microsoft Teams has a comprehensive set of APIs for performing messaging operations on Microsoft Teams using Microsoft Graph. This document lists the various schema elements used by these APIs and makes suggestions on the APIs to use based on the scenario being targeted by the caller. The list of scenarios is in no way comprehensive but should guide the callers which API to invoke based on high level scenarios.
+Microsoft Graph provides a comprehensive set of Microsoft Teams APIs that enable you to perform operations on Teams messages. This article describes the primary Teams API schema elements and provides an overview of the APIs to use based on high-level scenarios. For more details about Teams APIs in Microsoft Graph, see
+[Use the Microsoft Graph API to work with Teams](/graph/api/resources/teams-api-overview).
 
-## Understanding chatMessage schema
+## chatMessage schema
 
-[chatMessage](/graph/api/resources/chatMessage?preserve-view=true) represents messages in Microsoft Teams [chats](/graph/api/resources/chat?preserve-view=true) and [channels](/graph/api/resources/channel?preserve-view=true). In this section, we're describing various elements of the schema itself.
+[chatMessage](/graph/api/resources/chatMessage) represents messages in Teams [chats](/graph/api/resources/chat) and [channels](/graph/api/resources/channel). This section describes the elements of the **chatMessage** schema.
 
-> **Note:** Examples shared in this document only show the relevant schema elements and not the entire message payload
+> **Note:** The examples in this section show only the relevant schema elements and not the entire message payload.
 
 ### attachments
 
-[Attachments](/graph/api/resources/chatmessageattachment?preserve-view=true) represents entities, which can be referenced from a [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). These entities include objects like files, tabs, cards, meetings, or other messages. The items themselves might be located somewhere else. For example, files might be stored in SharePoint. Section below describes various possibilities.
+[Attachments](/graph/api/resources/chatmessageattachment) represent entities that can be referenced from a [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). These entities include files, tabs, cards, meetings, or other messages. The items themselves might be located somewhere else. For example, files might be stored in SharePoint. The following sections describe the possible types of attachments on a **chatMessage** object.
 
-#### file
+#### file attachment
 
-When an [attachment](/graph/api/resources/chatmessageattachment?preserve-view=true) object refers to a file, it has information about the file including the link to open the file. The file itself is located in an accessible store like SharePoint. When referring to a file attachment, `contentType` is set to `reference`. Additionally, the file url is located in `contentUrl`.
+When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a file, it contains information about the file, including the link to open the file. The file itself is located in an accessible store like SharePoint. When a **chatMessage** has an attachment of type file, the value of the **contentType** property on the [attachment](/graph/api/resources/chatmessageattachment) resource is set to `reference`, and the **contentUrl** property contains the file URL.
 
-> **Note:** The SharePoint url is link used to render the file, it is not the Microsoft Graph url. Callers can however use [Access shared items](/graph/api/shares-get?preserve-view=true) API to get the info and content of the file.
+> **Note:** The SharePoint URL is the link that opens the file; it is not the Microsoft Graph URL. Callers can, however, use the [access shared items](/graph/api/shares-get) API to get the information about the contents of the file.
 
-Example of an attachment with reference to a file.
+The following example shows the schema for an attachment that references a file.
 
 ```json
     "attachments": [
@@ -43,9 +44,9 @@ Example of an attachment with reference to a file.
     ],
 ```
 
-#### tab
+#### tab attachment
 
-[Attachment](/graph/api/resources/chatmessageattachment?preserve-view=true) object refers to a [tab](/graph/api/resources/teamstab?preserve-view=true) hosted in the present context. This is often used to refer to newly added tab. When referring to a [tab](/graph/api/resources/teamstab?preserve-view=true), `contentType` is set to `tabReference`, and `id` is set to the ID of the tab. Additionally, name is set to the provided name of the [tab](/graph/api/resources/teamstab?preserve-view=true).
+[Attachment](/graph/api/resources/chatmessageattachment) object refers to a [tab](/graph/api/resources/teamstab) hosted in the present context. This is often used to refer to newly added tab. When referring to a [tab](/graph/api/resources/teamstab), `contentType` is set to `tabReference`, and `id` is set to the ID of the tab. Additionally, name is set to the provided name of the [tab](/graph/api/resources/teamstab).
 
 Example of an attachment with reference to a tab
 
@@ -62,16 +63,16 @@ Example of an attachment with reference to a tab
         }
     ],
 ```
-#### card
+#### card attachment
 
-Cards represent visual elements backed by a predefined schema. Microsoft Teams supports various cards [as defined by Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object&preserve-view=true). Additionally, Microsoft Teams supports two other cards.
+Cards represent visual elements backed by a predefined schema. Microsoft Teams supports various cards [as defined by Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object). Additionally, Microsoft Teams supports two other cards.
 
 - Code snippet - With `contentType` set to `application/vnd.microsoft.card.codesnippet`
 - Announcement card - With `contentType` set to `application/vnd.microsoft.card.announcement`
 
 For cards `contentType` is set to the type of card, while `content` itself represents the serialized json for the card.
 
-> **Note:** Additionally, aspects of cards like images might refer to external resources of resources hosted by Microsoft Teams as [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent?preserve-view=true).
+> **Note:** Additionally, aspects of cards like images might refer to external resources of resources hosted by Microsoft Teams as [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent).
 
 Example of an attachment with adaptive card in it. This card has images in it hosted by Microsoft Teams.
 
@@ -107,7 +108,7 @@ Additionally, `teamsAppId` field is filled for messages sent a user where a team
 
 > **Note:** While sending cards, Graph only supports cards with `openUrl` action. Every other action like `invoke` is unsupported. However, Graph allows reading messages posted by Bots which have other actions in them.
 
-#### meeting
+#### meeting attachment
 
 When a meeting is scheduled in a channel, a message with meeting details is posted in the channel. A meeting attachment represents this object along with details of the meeting. `id` represents ID of the meeting, while `content` has details regarding organizer of the meeting and Exchange ID of the meeting. This ID can be used to look up the meeting using calendar APIs. `contentType` is set to `meetingReference` for meeting attachments.
 
@@ -126,9 +127,9 @@ Example of an attachment with meeting reference in it
     ],
 ```
 
-#### message
+#### message attachment
 
-Attachment object refers to a message when a specific message is being replied to in a [chat](/graph/api/resources/chat?preserve-view=true). For message attachments, `id` represents ID of the message. `content` contains more details, for example,  preview text of the message and sender of the message being replied to. `contentType` is set to `messageReference` for such attachments.
+Attachment object refers to a message when a specific message is being replied to in a [chat](/graph/api/resources/chat). For message attachments, `id` represents ID of the message. `content` contains more details, for example,  preview text of the message and sender of the message being replied to. `contentType` is set to `messageReference` for such attachments.
 
 Example of an attachment with message reference in it
 
@@ -151,7 +152,7 @@ Example of an attachment with message reference in it
 
 Microsoft Teams supports more schema elements, which are outside of the HTML specifications to support other elements like mentions. Following elements are supported by `chatMessage` schema, which aren't HTML elements.
 
-- at - Reference to an [chatMessageMention](/graph/api/resources/chatmessagemention?preserve-view=true) representing details of a user, application, [channel](/graph/api/resources/channel?preserve-view=true), [team](/graph/api/resources/team?preserve-view=true), or [tag](/graph/api/resources/teamworktag?preserve-view=true) being @mentioned
+- at - Reference to an [chatMessageMention](/graph/api/resources/chatmessagemention) representing details of a user, application, [channel](/graph/api/resources/channel?preserve-view=true), [team](/graph/api/resources/team), or [tag](/graph/api/resources/teamworktag) being @mentioned
 - attachment - Representing the position of an attachment reference
 - systemEventMessage - When body `content` is set to `<systemEventMessage/>`, it means the message represents a special event. You can read more about system events [here](/graph/system-messages).
 - emoji - When body of the message contains an emoji, `$"<emoji id="IdOfTheEmoji" alt="AlternateRepresentationOfEmoji" title="TitleOfEmoji"></emoji>"` element represents various properties of an emoji
@@ -251,7 +252,7 @@ Microsoft Teams supports more schema elements, which are outside of the HTML spe
 
 ### channelIdentity
 
-If [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) was sent in a [channel](/graph/api/resources/channel?preserve-view=true), `channelIdentity` represents the details about the channel. This includes ID of the [channel](/graph/api/resources/channel?preserve-view=true) and ID of the [team](/graph/api/resources/team?preserve-view=true). This property is read-only.
+If [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) was sent in a [channel](/graph/api/resources/channel), `channelIdentity` represents the details about the channel. This includes ID of the [channel](/graph/api/resources/channel) and ID of the [team](/graph/api/resources/team). This property is read-only.
 
 Example of `channelIdentity` in a message
 
@@ -264,7 +265,7 @@ Example of `channelIdentity` in a message
 
 ### chatId
 
-If [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) was sent in a [chat](/graph/api/resources/chat?preserve-view=true), `chatId` represents the ID of the chat in which message was sent. This property is read-only.
+If [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) was sent in a [chat](/graph/api/resources/chat), `chatId` represents the ID of the chat in which message was sent. This property is read-only.
 
 Example of `chatId` in a message
 
@@ -278,7 +279,7 @@ Example of `chatId` in a message
 
 ### deletedDateTime
 
-If [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) was deleted, `deletedDateTime` represents the time of deletion for the message. This property is read-only.
+If [chatMessage](/graph/api/resources/chatmessage) was deleted, `deletedDateTime` represents the time of deletion for the message. This property is read-only.
 
 > **Note:** Deleted messages are not always returned by all the APIs. [Change notifications](/graph/teams-changenotifications-chatmessage) always return deleted message notifications if subscription includes `deleted` change type.
 
@@ -288,7 +289,7 @@ If [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) was delete
 
 ### eventDetail
 
-If present, represents details of an event that happened in a [chat](/graph/api/resources/chat?preserve-view=true), a [channel](/graph/api/resources/channel?preserve-view=true), or a [team](/graph/api/resources/team?preserve-view=true), for example, adding new members. For event messages, the messageType property is set to `systemEventMessage`. You can read more about system events [here](/graph/system-messages).
+If present, represents details of an event that happened in a [chat](/graph/api/resources/chat), a [channel](/graph/api/resources/channel), or a [team](/graph/api/resources/team), for example, adding new members. For event messages, the messageType property is set to `systemEventMessage`. You can read more about system events [here](/graph/system-messages).
 
 ### from
 
@@ -676,26 +677,26 @@ These APIs allow you to get older methods similar to how Microsoft Teams UI does
 
 Following APIs belong to this set.
 
-- [List messages in a chat](/graph/api/chat-list-messages?preserve-view=true)
-- [List messages in a channel](/graph/api/channel-list-messages?preserve-view=true)
-- [List replies to a message in a channel](/graph/api/chatmessage-list-replies?preserve-view=true)
-- [Send message in a chat](/graph/api/chat-post-messages?preserve-view=true)
-- [Send message in a channel](/graph/api/chatmessage-post?preserve-view=true)
-- [Reply to a message in a channel](/graph/api/chatmessage-post-replies?preserve-view=true)
-- [List hostedContents associated with a message](/graph/api/chatmessage-list-hostedcontents?preserve-view=true)
-- [Get hostedContent associated with a message](/graph/api/chatmessagehostedcontent-get?preserve-view=true)
+- [List messages in a chat](/graph/api/chat-list-messages)
+- [List messages in a channel](/graph/api/channel-list-messages)
+- [List replies to a message in a channel](/graph/api/chatmessage-list-replies)
+- [Send message in a chat](/graph/api/chat-post-messages)
+- [Send message in a channel](/graph/api/chatmessage-post)
+- [Reply to a message in a channel](/graph/api/chatmessage-post-replies)
+- [List hostedContents associated with a message](/graph/api/chatmessage-list-hostedcontents)
+- [Get hostedContent associated with a message](/graph/api/chatmessagehostedcontent-get)
 
 Additionally, following APIs act along with the APIs above to serve specific scenarios regarding fetching specific instances or changing order of traversal.
 
-- [Get a message or reply in a channel or a chat](/graph/api/chatmessage-get?preserve-view=true)
-- [Continuous sync using /delta for channel messages](/graph/api/chatmessage-delta?preserve-view=true)
+- [Get a message or reply in a channel or a chat](/graph/api/chatmessage-get)
+- [Continuous sync using /delta for channel messages](/graph/api/chatmessage-delta)
 
 ### APIs for exporting data from Microsoft Teams
 
 These APIs typically work at a higher granularity than UI aligned APIs. These APIs focus on allowing fetching large amount of data. It might take a while (upto 24 hours in certain cases) for data to get synced and being available through these APIs.
 
-- [List messages across a user's chats](/graph/api/chats-getallmessages?preserve-view=true)
-- [List messages across channels in a team](/graph/api/channel-getallmessages?preserve-view=true)
+- [List messages across a user's chats](/graph/api/chats-getallmessages)
+- [List messages across channels in a team](/graph/api/channel-getallmessages)
 
 ### Real-time APIs
 
