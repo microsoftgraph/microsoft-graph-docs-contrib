@@ -1,6 +1,6 @@
 ---
 title: "trainingNotificationDelivery resource type"
-description: "Aggregate data of training mail delivery over the course of the training campaign"
+description: "Contains aggregate data about training mail delivery over the course of the training campaign."
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aggregate data of training mail delivery over the course of the training campaign
+Contains aggregate data about training mail delivery over the course of the training campaign.
 
 ## Properties
 |Property|Type|Description|
