@@ -3,7 +3,7 @@ title: "alertRecord: changeAlertRecordsPortalNotificationAsSent"
 description: "Change the isPortalNotificationSent property to true for a list of alert records for the current user."
 author: "abbyzhccc"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
