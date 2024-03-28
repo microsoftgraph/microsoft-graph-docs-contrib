@@ -1,6 +1,6 @@
 ---
 title: "campaignSchedule resource type"
-description: "Represents a schedule for launching a campaign"
+description: "Represents a schedule for launching a campaign."
 author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a schedule for launching a campaign
+Represents a schedule for launching a campaign.
 
 ## Properties
 |Property|Type|Description|
