@@ -26,7 +26,7 @@ Choose the least privileged permission or permissions to download reports with t
 <!-- { "blockType": "permissions", "name": "cloudpcexportjob_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudpcexportjob-get-permissions.md)]
 
-Permission for specific reports are:
+The following permissions provide access to specific kinds of reports:
 - ActionStatus/Read
 - DeviceRecommendation/Read
 - CrossRegionDisasterRecovery/Read
@@ -34,8 +34,7 @@ Permission for specific reports are:
 - InaccessibleReports/Read
 - PerformanceReports/Read
 
-These permissions can be found in **Tenant administration** -> **Roles** ->  **My permissions** in cloud PC admin portal.  
- 
+Permissions can be found in [cloud PC admin portal](https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/RolesLandingMenuBlade/~/myPermissions).
 
 ## HTTP request
 
