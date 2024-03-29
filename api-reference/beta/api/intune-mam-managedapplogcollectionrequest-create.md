@@ -3,7 +3,7 @@ title: "Create managedAppLogCollectionRequest"
 description: "Create a new managedAppLogCollectionRequest object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

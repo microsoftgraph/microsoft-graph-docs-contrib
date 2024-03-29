@@ -3,7 +3,7 @@ title: "Create androidForWorkNineWorkEasConfiguration"
 description: "Create a new androidForWorkNineWorkEasConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

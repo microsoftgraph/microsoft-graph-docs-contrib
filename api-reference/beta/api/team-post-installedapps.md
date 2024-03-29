@@ -77,7 +77,7 @@ The following example shows a request.
   "sampleKeys": ["87654321-0abc-zqf0-321456789q"]
 }-->
 ```http
-POST /teams/87654321-0abc-zqf0-321456789q/installedApps
+POST https://graph.microsoft.com/beta/teams/87654321-0abc-zqf0-321456789q/installedApps
 Content-type: application/json
 
 {

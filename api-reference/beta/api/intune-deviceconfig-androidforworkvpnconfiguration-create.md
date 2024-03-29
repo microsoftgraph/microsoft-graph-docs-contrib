@@ -3,7 +3,7 @@ title: "Create androidForWorkVpnConfiguration"
 description: "Create a new androidForWorkVpnConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

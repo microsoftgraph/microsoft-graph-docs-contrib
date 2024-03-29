@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 ## Examples
 
 #### Request
-Here's an example of a request that adds Google as identity provider option for account creation.
+The following example shows a request that adds Google as identity provider option for account creation.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -99,7 +99,7 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc3
 ---
 
 #### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

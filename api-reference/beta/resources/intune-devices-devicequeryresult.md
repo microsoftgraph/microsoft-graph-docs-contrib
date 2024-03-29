@@ -3,7 +3,7 @@ title: "deviceQueryResult resource type"
 description: "Results of Intune Pivot device queries ran for this device."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

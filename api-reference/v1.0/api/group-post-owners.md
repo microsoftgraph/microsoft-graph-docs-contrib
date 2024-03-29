@@ -68,7 +68,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following is an example of the request that adds a user as a group owner.
+The following example shows a request that adds a user as a group owner.
 
 # [HTTP](#tab/http)
 

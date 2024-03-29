@@ -123,7 +123,7 @@ Content-Length: 211
 ---
 
 #### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response"
@@ -369,7 +369,7 @@ Content-Type: application/json
   "name": "call-answer-app-hosted-media"
 }-->
 ```http
-POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
+POST https://graph.microsoft.com/beta/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Content-Type: application/json
 
 {
