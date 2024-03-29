@@ -66,4 +66,4 @@ stages:
     - pwsh: $(tocGeneratorApp) --api-docs $(v1ReferenceRoot)/api --resource-docs $(v1ReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(v1ReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(v1ReferenceRoot)/toc.yml --static-toc $(v1ReferenceRoot)/toc/static-toc.yml
       displayName: Generate v1 reference TOC
 
-    - pwsh: git diff --porcelain
+    - pwsh: git status --porcelain
