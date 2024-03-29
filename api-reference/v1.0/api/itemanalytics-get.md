@@ -42,7 +42,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics/lastSevenDays
 ```
 
 > [!NOTE]
-> The value for `{item-id}` in the `/sites/{site-id}/lists/{list-id}/items/{item-id}` request is the `listItemUniqueId`.
+> The value for `{item-id}` in the `/sites/{site-id}/lists/{list-id}/items/{item-id}` request is the `listItemUniqueId`. To get the `listItemUniqueId` of an item, call the `/sites/{site-id}/lists/{list-id}/items/{item-id}?$select=sharepointIds` endpoint. For details, see [sharePointIds](/graph/api/resources/sharepointids).
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
