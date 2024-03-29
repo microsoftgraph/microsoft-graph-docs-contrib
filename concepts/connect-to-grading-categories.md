@@ -8,7 +8,7 @@ doc_type: conceptualPageType
 ---
 
 # Grading Categories
-This page provides guidance on setting up and using the grading categories for a class.
+This article provides guidance on setting up and using the grading categories for a class.
 
 Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from homework assignments and 40% from test assignments.
 
