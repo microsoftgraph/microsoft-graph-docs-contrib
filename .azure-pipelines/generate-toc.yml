@@ -68,6 +68,12 @@ stages:
       displayName: Generate beta reference TOC
 
     - pwsh: |
+        git config user.email "GraphTooling@service.microsoft.com"
+        git config user.name "Microsoft Graph DevX Tooling"
+      displayName: Configure git
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
+
+    - pwsh: |
         $status = git status --porcelain
         if ($status -eq $null) {
           Write-Host "No changes to commit." -ForegroundColor Green
