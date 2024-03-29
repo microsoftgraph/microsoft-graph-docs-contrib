@@ -48,7 +48,7 @@ You can specify the following properties when you create a **cloudPcBulkAction**
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of this bulk action. Required.|
-|cloudPcIds|String collection|ID of Cloud PCs this bulk action applies to. Required.|
+|cloudPcIds|String collection|IDs of the Cloud PCs the bulk action applies to. Required.|
 
 ## Response
 
