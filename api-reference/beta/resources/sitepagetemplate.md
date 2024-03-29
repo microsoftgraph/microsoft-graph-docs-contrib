@@ -3,7 +3,6 @@ title: "sitePageTemplate resource type"
 description: "Represents a page template in the templates folder."
 author: Yadong1106
 ms.localizationpriority: medium
-ms.prod: sharepoint
 doc_type: resourcePageType
 ---
 
