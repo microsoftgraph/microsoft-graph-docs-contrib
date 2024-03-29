@@ -2069,7 +2069,7 @@ items:
                     href: api/virtualendpoint-post-bulkactions.md
                   - name: Get
                     href: api/cloudpcbulkaction-get.md
-                - name: Alert monitoring
+              - name: Alert monitoring
                 items:
                   - name: Monitoring
                     href: resources/devicemanagement-monitoring.md
