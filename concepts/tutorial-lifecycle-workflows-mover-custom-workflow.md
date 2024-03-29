@@ -20,8 +20,8 @@ This tutorial provides step-by-step guidance for automating mover tasks with Lif
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Configure a lifecycle workflow to check for employees who are added(moved) to a department
-> * Configure a task to notify the manager of the user who was moved to the department via email.
+> * Configure a lifecycle workflow to check for employees who are moved from a department
+> * Configure a task to notify the manager of the user who was moved via email.
 > * Monitor the status of the workflow and its associated tasks.
 
 ## Prerequisites
@@ -46,7 +46,7 @@ To complete this tutorial, you need the following resources and privileges:
 The following request creates a mover workflow with the following settings:
 
 + It rns on schedule, but also can be run on demand
-+ The workflow runs when an employee is added to the "Sales" department.
++ The workflow runs when an employee is removed from the "Sales" department.
 + Only one built-in task runs in this workflow: to send an email to the employee's manager notifying them of the move. This task is identified in Lifecycle Workflows by the **taskDefinitionId** `aab41899-9972-422a-9d97-f626014578b7`.
 
 
@@ -139,12 +139,7 @@ Content-Type: application/json
 
 ## Run the workflow
 
-Now that the workflow is created, add the user you want to test the workflow on to the sales department. After 30 minutes you can check to see if the user is queued to have the workflow run for them by checking the execution scope of your workflow.
-
-
-
-
-Although the workflow is scheduled, it can also be run on demand. In the following request, the user that's the target of the workflow is identified by ID `2390e6j8-wiu9-9030-6239-2g5y9082xc2e`. The request returns a `204 No Content` response.
+Now that the workflow is created, remove the user you want to test the workflow on from the sales department. After 30 minutes you can check to see if the user is queued to have the workflow run for them by checking the execution scope of your workflow. To see if a user is queued to have the workflow run for them, you would check execution scope by doing the following:
 
 <!-- {
   "blockType": "request",
