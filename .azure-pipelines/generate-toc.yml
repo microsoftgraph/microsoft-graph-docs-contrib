@@ -44,5 +44,5 @@ stages:
             displayName: Build TOC generator project
             inputs:
              command: build
-             projects: '$(Build.SourcesDirectory)/src/GenerateTOC.csproj'
+             projects: '$(Build.SourcesDirectory)/msgraph-toc-gen/src/GenerateTOC.csproj'
              arguments: '--configuration Release'
