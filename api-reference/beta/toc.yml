@@ -18537,6 +18537,10 @@ items:
                     href: api/channel-patch.md
                   - name: Delete channel
                     href: api/channel-delete.md
+                  - name: Archive channel
+                    href: api/channel-archive.md
+                  - name: Unarchive channel
+                    href: api/channel-unarchive.md  
                   - name: Remove incoming channel
                     href: api/team-delete-incomingchannels.md
                   - name: Add member
