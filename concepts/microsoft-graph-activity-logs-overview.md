@@ -4,9 +4,9 @@ description: "Microsoft Graph activity logs are an audit trail of all HTTP reque
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: yiheguo
+ms.topic: concept-article
 ms.localizationpriority: high
-ms.subservice: "entra-applications"
-doc_type: conceptualPageType
+ms.subservice: non-product-specific
 ms.date: 10/24/2023
 ---
 
