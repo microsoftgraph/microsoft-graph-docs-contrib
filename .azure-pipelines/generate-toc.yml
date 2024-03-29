@@ -27,9 +27,10 @@ pool:
 variables:
   tocGeneratorPath: $(Build.SourcesDirectory)/msgraph-toc-gen/src
   tocGeneratorProject: $(tocGeneratorPath)/GenerateTOC.csproj
-  tocGeneratorApp: $(tocGeneratorPath)/bin/Release/net8.0/GenerateTOC.exe
-  v1ReferenceRoot: $(Build.SourcesDirectory)/microsoft-graph-docs/api-reference/v1.0
-  betaReferenceRoot: $(Build.SourcesDirectory)/microsoft-graph-docs/api-reference/beta
+  tocGeneratorApp: $(tocGeneratorPath)/bin/Release/net8.0/GenerateTOC
+  referenceRoot: $(Build.SourcesDirectory)/microsoft-graph-docs/api-reference
+  v1ReferenceRoot: $(referenceRoot)/v1.0
+  betaReferenceRoot: $(referenceRoot)/beta
   workloadsFolderPath: $(Build.SourcesDirectory)/AD-AggregatorService-Workloads/Workloads
 
 stages:
@@ -60,4 +61,21 @@ stages:
         projects: $(tocGeneratorProject)
         arguments: '--configuration Release'
 
-    - pwsh: ls $(workloadsFolderPath)
+    - pwsh: $(tocGeneratorApp) --api-docs $(v1ReferenceRoot)/api --resource-docs $(v1ReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(v1ReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(v1ReferenceRoot)/toc.yml --static-toc $(v1ReferenceRoot)/toc/static-toc.yml
+      displayName: Generate v1 reference TOC
+
+    - pwsh: $(tocGeneratorApp) --api-docs $(betaReferenceRoot)/api --resource-docs $(betaReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(betaReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(betaReferenceRoot)/toc.yml --static-toc $(betaReferenceRoot)/toc/static-toc.yml
+      displayName: Generate beta reference TOC
+
+    - pwsh: |
+        $status = git status --porcelain
+        if ($status -eq $null) {
+          Write-Host "No changes to commit." -ForegroundColor Green
+        } else {
+          $timestamp = Get-Date -Format FileDateTimeUniversal
+          git checkout toc-gen/$timestamp
+          git add .
+          git commit -m "Generated reference TOC"
+          git push --set-upstream origin toc-gen/$timestamp
+        }
+      displayName: Commit and push TOC updates
