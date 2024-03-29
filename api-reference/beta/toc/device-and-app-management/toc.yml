@@ -8475,9 +8475,9 @@ items:
       href: ../../resources/windowsupdates-windowsupdatefilter.md
 - name: Microsoft 365 apps
   items:
-  - name: M 365 apps installation options
+  - name: Installation options
     items:
-    - name: M 365 apps installation options
+    - name: Installation options
       href: ../../resources/m365appsinstallationoptions.md
     - name: Get m365AppsInstallationOptions
       href: ../../api/m365AppsInstallationOptions-get.md

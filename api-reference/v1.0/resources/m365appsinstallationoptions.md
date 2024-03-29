@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "reports"
 author: "yan-git"
+toc.title: Installation options
 ---
 
 # m365AppsInstallationOptions resource type
