@@ -2046,78 +2046,30 @@ items:
                   - name: Assign
                     href: api/cloudpcusersetting-assign.md
               - name: Cloud PC bulk action
-                href: resources/cloudpcbulkaction.md
                 items:
+                  - name: Cloud PC bulk action
+                    href: resources/cloudpcbulkaction.md
+                  - name: Cloud PC bulk power off
+                    href: resources/cloudpcbulkpoweroff.md
+                  - name: Cloud PC bulk power on
+                    href: resources/cloudpcbulkpoweron.md
+                  - name: Cloud PC bulk reprovision
+                    href: resources/cloudpcbulkreprovision.md
+                  - name: Cloud PC bulk resize
+                    href: resources/cloudpcbulkresize.md
+                  - name: Cloud PC bulk restart
+                    href: resources/cloudpcbulkrestart.md
+                  - name: Cloud PC bulk restore
+                    href: resources/cloudpcbulkrestore.md
+                  - name: Cloud PC bulk troubleshoot
+                    href: resources/cloudpcbulktroubleshoot.md
                   - name: List
                     href: api/virtualendpoint-list-bulkactions.md
                   - name: Create
                     href: api/virtualendpoint-post-bulkactions.md
                   - name: Get
                     href: api/cloudpcbulkaction-get.md
-              - name: Cloud PC bulk power off
-                href: resources/cloudpcbulkpoweroff.md
-                items:
-                  - name: List
-                    href: api/virtualendpoint-list-bulkactions.md
-                  - name: Create
-                    href: api/virtualendpoint-post-bulkactions.md
-                  - name: Get
-                    href: api/cloudpcbulkaction-get.md
-              - name: Cloud PC bulk power on
-                href: resources/cloudpcbulkpoweron.md
-                items:
-                  - name: List
-                    href: api/virtualendpoint-list-bulkactions.md
-                  - name: Create
-                    href: api/virtualendpoint-post-bulkactions.md
-                  - name: Get
-                    href: api/cloudpcbulkaction-get.md
-              - name: Cloud PC bulk reprovision
-                href: resources/cloudpcbulkreprovision.md
-                items:
-                  - name: List
-                    href: api/virtualendpoint-list-bulkactions.md
-                  - name: Create
-                    href: api/virtualendpoint-post-bulkactions.md
-                  - name: Get
-                    href: api/cloudpcbulkaction-get.md
-              - name: Cloud PC bulk resize
-                href: resources/cloudpcbulkresize.md
-                items:
-                  - name: List
-                    href: api/virtualendpoint-list-bulkactions.md
-                  - name: Create
-                    href: api/virtualendpoint-post-bulkactions.md
-                  - name: Get
-                    href: api/cloudpcbulkaction-get.md
-              - name: Cloud PC bulk restart
-                href: resources/cloudpcbulkrestart.md
-                items:
-                  - name: List
-                    href: api/virtualendpoint-list-bulkactions.md
-                  - name: Create
-                    href: api/virtualendpoint-post-bulkactions.md
-                  - name: Get
-                    href: api/cloudpcbulkaction-get.md
-              - name: Cloud PC bulk restore
-                href: resources/cloudpcbulkrestore.md
-                items:
-                  - name: List
-                    href: api/virtualendpoint-list-bulkactions.md
-                  - name: Create
-                    href: api/virtualendpoint-post-bulkactions.md
-                  - name: Get
-                    href: api/cloudpcbulkaction-get.md
-              - name: Cloud PC bulk troubleshoot
-                href: resources/cloudpcbulktroubleshoot.md
-                items:
-                  - name: List
-                    href: api/virtualendpoint-list-bulkactions.md
-                  - name: Create
-                    href: api/virtualendpoint-post-bulkactions.md
-                  - name: Get
-                    href: api/cloudpcbulkaction-get.md
-              - name: Alert monitoring
+                - name: Alert monitoring
                 items:
                   - name: Monitoring
                     href: resources/devicemanagement-monitoring.md
