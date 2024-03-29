@@ -22,7 +22,7 @@ messageIds := []string {
 }
 requestBody.SetMessageIds(messageIds)
 
-unarchive, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().Post(context.Background(), requestBody, nil)
+unarchive, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().PostAsUnarchivePostResponse(context.Background(), requestBody, nil)
 
 
 ```

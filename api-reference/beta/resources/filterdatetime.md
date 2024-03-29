@@ -18,16 +18,16 @@ Represents how to filter a date when filtering on values.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|date|string|The date in ISO8601 format used to filter data.|
-|specificity|string|How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specificity is set to "month," the filter operation will keep all rows with a date in the month of April 2009. Possible values are: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
+|date|String|The date in ISO 8601 format used to filter data.|
+|specificity|String|Defines how specific you should use the **date** to keep data. For example, if the date is `2005-04-02` and the **specificity** property is set to `month`, the filter operation keeps all rows with a date in the month of April 2009. The possible values are: `Year`, `Month`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -39,10 +39,9 @@ Here's a JSON representation of the resource.
 
 ```json
 {
-  "date": "string",
-  "specificity": "string"
+  "date": "String",
+  "specificity": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -57,5 +56,3 @@ Here's a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

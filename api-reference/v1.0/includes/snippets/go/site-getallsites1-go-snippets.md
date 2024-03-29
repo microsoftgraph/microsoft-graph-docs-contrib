@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getAllSites, err := graphClient.Sites().GetAllSites().Get(context.Background(), nil)
+getAllSites, err := graphClient.Sites().GetAllSites().GetAsGetAllSitesGetResponse(context.Background(), nil)
 
 
 ```
