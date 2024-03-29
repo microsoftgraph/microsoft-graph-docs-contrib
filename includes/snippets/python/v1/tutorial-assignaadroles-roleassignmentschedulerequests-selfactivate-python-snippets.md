@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.unified_role_assignment_schedule_request import UnifiedRoleAssignmentScheduleRequest
+from msgraph.generated.models.request_schedule import RequestSchedule
+from msgraph.generated.models.expiration_pattern import ExpirationPattern
+from msgraph.generated.models.ticket_info import TicketInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -15,7 +19,7 @@ request_body = UnifiedRoleAssignmentScheduleRequest(
 	directory_scope_id = "/",
 	justification = "Need to invalidate all app refresh tokens for Contoso users.",
 	schedule_info = RequestSchedule(
-		start_date_time = "2021-09-04T15:13:00.000Z",
+		start_date_time = "2024-03-25T15:13:00.000Z",
 		expiration = ExpirationPattern(
 			type = ExpirationPatternType.AfterDuration,
 			duration = "PT5H",

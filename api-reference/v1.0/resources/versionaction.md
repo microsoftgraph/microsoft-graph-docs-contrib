@@ -3,7 +3,7 @@ author: daspek
 title: versionAction resource type
 description: The VersionAction object provides information about an activity that resulted in a new item version.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # versionAction resource type

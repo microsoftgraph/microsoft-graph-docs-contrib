@@ -3,7 +3,7 @@ title: "List overridesPages"
 description: "Get the userFlowLanguagePage resources from the overridesPages navigation property."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get the userFlowLanguagePage resources from the overridesPages navigation property. These pages are used to customize the values shown to the user during a user journey in a user flow.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -42,7 +42,7 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

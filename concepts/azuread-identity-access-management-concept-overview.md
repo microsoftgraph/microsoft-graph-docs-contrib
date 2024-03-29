@@ -1,80 +1,95 @@
 ---
-title: "Microsoft Entra identity and access management API overview"
-description: "Use Microsoft Entra ID to manage identities and devices and control access in on-premises, hybrid, and cloud environments."
-author: "FaithOmbongi"
+title: "Microsoft Entra identity and access API overview"
+description: "Use the Microsoft Entra APIs in Microsoft Graph to manage and protect any identity and secure access to any resource on-premises, in hybrid environments, and cloud environments."
+author: FaithOmbongi
 ms.author: ombongifaith
+ms.topic: concept-article
 ms.reviewer: dkershaw
 ms.localizationpriority: high
-ms.prod: "identity-and-access"
+ms.subservice: entra-id
 ms.custom: scenarios:getting-started
-ms.date: 06/22/2022
+ms.date: 01/17/2024
+#customer intent: As a developer, I want to understand how I can use Microsoft Graph to integrate Microsoft Entra for identity and network access, and build custom apps that access services on-premises, hybrid, and in the cloud.
 ---
 
-# Microsoft Entra identity and access management API overview
+# Microsoft Entra identity and access API overview
 
-Microsoft Entra ID helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure. Organizations can use Microsoft Entra ID to manage identities and control access in on-premises, hybrid, and cloud environments.
-
-You can use the Microsoft Entra REST APIs in Microsoft Graph to create unique workflows between Microsoft Entra ID [resources](/graph/api/resources/azure-ad-overview) and third-party services.
-
-<a name='why-use-the-azure-ad-apis'></a>
+The Microsoft Entra family of identity and network access solutions help you to protect any identity and secure access to any resource. You can use the [Microsoft Entra REST APIs in Microsoft Graph](/graph/api/resources/azure-ad-overview) to automate identity and access management tasks and integrate with any application.
 
 ## Why use the Microsoft Entra APIs?
 
-More than 15 million organizations use Microsoft Entra ID while subscribing to Microsoft cloud services like Microsoft 365, Microsoft Azure, and Enterprise Mobility Suite.
+Application developers integrate with Microsoft Entra APIs through Microsoft Graph to automate operations and integrate with third-party applications for custom solutions.
 
-Enterprise developers use Microsoft Graph to integrate Microsoft Entra identity management and other services to automate administrative workflows, such as employee onboarding (and termination), profile maintenance, license deployment, and more.
+Enterprise developers, for example, can use Microsoft Graph to automate administrative workflows, such as employee lifecycle from onboarding to exit, profile maintenance, license deployment, collaboration with guests, integrate with SIEM tools, and much more. Developers of consumer-facing applications on the other hand can use Microsoft Graph to integrate sign-in options, self-service registration, and account management.
 
-For many enterprise developers, Microsoft Graph and Microsoft Entra ID help "lift and shift" existing applications to the cloud, speeding an organization's digital transformation. You can take advantage of Microsoft Entra capabilities to add access control mechanisms to applications, including verifying a user's group membership, directory role, or administrative unit membership.
+## Manage user identities and control access to your apps, data, and resources
 
-You can use Microsoft Graph and Microsoft Entra ID as a way to quickly and easily reach more than 15 million organizations, including 90% of the Fortune 500 companies that already use Microsoft Entra services. Integrated applications feature seamless sign-in experiences and can use existing organizational data to create personalized experiences.
+Millions of customers and organizations subscribe to Microsoft cloud services like Microsoft 365, Microsoft Azure, and the Enterprise Mobile + Security suite of products. These services use Microsoft Entra ID as their identity and access management solution. You can also integrate Microsoft Entra ID into your custom applications.
 
-You can use the Microsoft Entra APIs in Microsoft Graph to query the user's profile, find other users, manage organizational relationships, track assignments, or create original solutions that incorporate existing organizational data. These APIs provide a solid foundation to seamlessly integrate custom business applications into an organization's existing digital services.
+Some Microsoft Entra ID capabilities that you can integrate to your apps using Microsoft Graph include:
 
-### Manage users and groups
-
-You can use Microsoft Entra APIs in Microsoft Graph to:
-
-- Look up and manage [user profile](/graph/api/resources/user) information for users in your organization, such as name, photo, email address, job title, office location, and more.
-- Create [groups](/graph/api/resources/groups-overview) for projects and teams in your organization. Add and remove members from the group to control access to resources. (Dynamic groups can automatically change membership based on user property values.)
-- Check for [transitive membership](/graph/api/user-checkmembergroups) in a list of groups or get all the resources of a specified type (like user or group) from a list of [generic resource IDs](/graph/api/directoryobject-getbyids) to control access.
-
-### Manage directory roles
-
-You can assign users to predefined Microsoft Entra administrative [directory roles](/graph/api/resources/directoryrole), which grants permission to perform specific tasks.
-
-### Manage devices
-
-[Manage devices](/azure/active-directory/device-management-introduction) registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication.
-
-### Partner tenant management
-
-Microsoft partners that resell and manage Microsoft Online Services (such as Microsoft 365, Microsoft Azure, and CRM Online) can view the [organization tenants](/graph/api/resources/contract) they currently manage.
-
-You can also [manage domains](/graph/api/resources/domain) associated with a tenant. Domain operations enable Microsoft partners to automate domain registration for services such as Microsoft 365.
+- **User management** - Look up and manage user profiles, license assignment, memberships, and privileges in the tenant. Manage organizational relationships, track assignments, or create original solutions that incorporate existing organizational data. Manage authentication methods for users.
+- **Group management** - Create groups to manage users and control access to resources. Use administrative units to organize groups, users, and device for easier management and delegated administration.
+- **Application management** - Register cloud applications, manage application permissions and privileges, and users who can sign in. Provide secure remote access to on-premises applications.
+- Manage **administrative roles**, which grant permission to perform specific tasks.
+- Automatically provision and manage user identities and roles to other SaaS apps that users need to access.
 
 ### Tenant management
 
 Microsoft Entra APIs for tenant management allow you to:
 
-- Get information about an [organization](/graph/api/resources/organization), such as its business address, technical and notification contacts, active service subscriptions, and the domains associated with it.
-- Get information about the [service SKUs](/graph/api/resources/subscribedsku) that a company is subscribed to.
-- [Invite external](/graph/api/resources/invitation) (guest) users to an organization.
+- Get information about an **organization** (the tenant), such as its business address, technical and notification contacts, active service subscriptions, and the domains associated with it.
+- Get information about the **service SKUs** that a company is subscribed to.
+- Set up **cross-tenant synchronization** to synchronize user accounts between the multiple Microsoft Entra tenants that your organization owns.
+- Identify basic information about other Microsoft Entra tenants.
 
-### Monitor identity risks
+### Partner tenant management
 
-Most security breaches are the result of attackers stealing a user’s identity, and attackers have become terrifyingly effective in taking advantage of third-party breaches, password spray attacks, and sophisticated phishing attacks. This means you need to protect all your user accounts from these attacks and proactively prevent compromised identities from being abused.
+Microsoft partners that resell and manage Microsoft Online Services, such as Microsoft 365 and Microsoft Azure, can view the **organization tenants** they currently manage. They can also use **granular delegated administrative privileges** for least-privilege access to the tenants they currently manage.
 
-Microsoft Entra ID uses adaptive machine learning algorithms and heuristics to detect anomalies that indicate potentially compromised accounts. Using this data, Microsoft Entra ID Protection protects your users with risk-based conditional access policies and generates reports and alerts on its detections.
+As a Microsoft partner, you can also **manage domains** associated with a tenant. Domain operations enable Microsoft partners to automate domain registration for services such as Microsoft 365.
 
-Today, Microsoft Graph gives easy access to customers of Microsoft Entra ID P2 to [query risk events detected by Identity Protection](/graph/api/resources/identityprotectionroot), including the risk event’s type, severity, date, time, location, impacted user, and more. Customers can then use those events in SIEM systems and security applications.
+### Protect, monitor, and audit access to critical assets
 
-### Review access to organizational resources
+Use Microsoft Entra ID Governance APIs to ensure that the right people have the right access to the right apps and services at the right time.
 
-Review access to groups, applications, and even privileged roles in your organization. [Access reviews](/graph/api/resources/accessreviews-root) is featured in Microsoft Entra ID P2.
+- Automatically grant access for internal and external users to resources using **entitlement management** APIs. Enforce separation of duties to avoid conflicting access.
+- Regularly review access to groups, applications, and privileged roles in your organization. For more information, see **access reviews** APIs.
+- Automate employee onboarding, internal movement, and offboarding using the **lifecycle workflows** APIs.
+- Use **privileged identity management for Microsoft Entra roles APIs** to activate time-bound administrator privilege on demand, enforce mandatory justification of role activation, and multifactor authentication for actors in privileged roles.
+- Use **privileged identity management for groups APIs** to govern access to groups that have privileged access to resources.
 
-### Activate users into privileged roles
+### Strengthen security for your identities
 
-Use the [Privileged Identity Management (PIM) API](/graph/api/resources/rolemanagement) to activate administrator privilege on demand. Enforce mandatory justification of role activation, and multifactor authentication for actors in privileged roles.
+Use Microsoft Entra ID Protection APIs and Microsoft Entra Workload ID APIs to detect and mitigate identity-based risks before they cause damage.
+
+- Use the **authentication methods APIs** Configure multifactor authentication, including phishing-resistant multifactor authentication methods, to reduce risks associated with compromised credentials.
+- Enforce risk-based **conditional access policies** to adapt near real-time to risk conditions.
+- Detect, report, and react to anomalies that indicate potentially compromised accounts.
+- **Detect risks** for both human and nonhuman.
+
+### Secure access to apps for external identities
+
+Collaboration with external users like customers and business partners is a common part of daily business for many organizations. Microsoft Entra External ID APIs allow you to:
+
+- **Invite external users** to your organization.
+- For **customers**, customize their sign-in and sign up experiences, allow them to bring their own identity (BYOI) to your application, secure access to customer-facing applications.
+- For **business partners**, govern **collaboration** with other Microsoft Entra ID tenants, secure their access to your applications, and manage the lifecycle of their access to resources in your organization.
+
+## Manage permissions in multicloud deployments
+
+Use the **Microsoft Entra permissions management APIs** to discover, remediate, and monitor permissions in multicloud infrastructures, including Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP).
+
+## Use identity-centric configurations to strengthen your network traffic
+
+Use the **Global Secure Access APIs** for identity-centric configurations to secure access to private apps and resources; protect access to internet, software as a service (SaaS), and Microsoft 365 apps and resources.
+
+<!-- Start of: Link to ZT guidance: H2 section -->
+
+[!INCLUDE [identity-zero-trust](../includes/identity-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
+
 
 ## API reference
 
@@ -83,10 +98,7 @@ Looking for the API reference for this service?
 - [Microsoft Entra identity and access management API in Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0&preserve-view=true)
 - [Microsoft Entra identity and access management API in Microsoft Graph beta](/graph/api/resources/azure-ad-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Next step
 
-- Find out how to [Use the Microsoft Entra REST APIs](/graph/api/resources/azure-ad-overview).
-- Use Microsoft Entra ID to [authenticate](./auth/index.yml) to Microsoft Graph.
-- Integrate [Microsoft Entra sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.
-- See the [Changelog](changelog.md) for information about what's new in the Microsoft Entra APIs.
-- Explore [samples](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples) for more ideas about how to use Microsoft Graph.
+> [!div class="nextstepaction"]
+> [Microsoft Entra REST APIs and features and the related Microsoft Graph resources](/graph/api/resources/azure-ad-overview)

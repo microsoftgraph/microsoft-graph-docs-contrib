@@ -3,7 +3,7 @@ title: "cloudPcAuditEvent resource type"
 description: "Represents the audit event entity."
 author: "ecmadao"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -29,13 +29,13 @@ Represents the audit event entity.
 |:---|:---|:---|
 |activity|String|Friendly name of the activity. Optional.|
 |activityDateTime|DateTimeOffset|The date time in UTC when the activity was performed. Read-only.|
-|activityOperationType|[cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values)|The HTTP operation type of the activity. Possible values include `create`, `delete`, `patch` and `other`. Read-only.|
-|activityResult|[cloudPcAuditActivityResult](#cloudpcauditactivityresult-values)|The result of the activity. Read-only.|
-|activityType|String|The type of activity that was performed. Read-only.|
+|activityOperationType|[cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values)|The HTTP operation type of the activity. Possible values include `create`, `delete`, `patch` and `unknownFutureValue`. Read-only.|
+|activityResult|[cloudPcAuditActivityResult](#cloudpcauditactivityresult-values)|The result of the activity. Possible values include `success`, `clientError`, `failure`, `timeout` and `unknownFutureValue`. Read-only.|
+|activityType|String|The type of the activity that was performed. Read-only.|
 |actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Microsoft Entra user and application associated with the audit event. Read-only.|
-|category|[cloudPcAuditCategory](#cloudpcauditcategory-values)|Audit category. Read-only.|
+|category|[cloudPcAuditCategory](#cloudpcauditcategory-values)|Audit category. Possible values include `cloudPC` and `unknownFutureValue`. Read-only.|
 |componentName|String|Component name. Read-only.|
-|correlationId|String|The client request identifier, used to correlate activity within the system. Read-only.|
+|correlationId|String|The client request ID that is used to correlate activity within the system. Read-only.|
 |displayName|String|Event display name. Read-only.|
 |id|String|Key of the audit entity. Read-only.|
 |resources|[cloudPcAuditResource](../resources/cloudpcauditresource.md) collection|List of cloudPcAuditResource objects. Read-only.|
@@ -45,10 +45,10 @@ Represents the audit event entity.
 
 |Member|Description|
 |:---|:---|
-|create|Create operation.|
-|delete|Delete operation.|
-|patch|Patch operation.|
-|other|Other operation.|
+|create|Indicates the operation used to create a target resource.|
+|delete|Indicates the operation used to delete a target resource.|
+|patch|Indicates the operation used to update a target resource.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcAuditActivityResult values
 
@@ -57,15 +57,15 @@ Represents the audit event entity.
 |success|Operation succeeded.|
 |clientError|Operation failed with client error.|
 |failure|Operation failed.|
-|timeExceeded|Operation failed with timeout.|
-|other|Other result.|
+|timeout|Operation failed with timeout.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcAuditCategory values
 
 |Member|Description|
 |:---|:---|
 |cloudPC|Cloud PC category.|
-|other |Other category.|
+|unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -73,7 +73,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

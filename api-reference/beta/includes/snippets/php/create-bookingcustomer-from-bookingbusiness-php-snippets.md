@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BookingCustomer();
@@ -43,6 +43,6 @@ $phonesArray []= $phonesPhone2;
 $requestBody->setPhones($phonesArray);
 
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customers()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customers()->post($requestBody)->wait();
 
 ```

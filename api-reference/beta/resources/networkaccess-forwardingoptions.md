@@ -3,7 +3,7 @@ title: "forwardingOptions resource type"
 description: "ForwardingOptions object includes the skipDnsLookupState settings, which determine whether DNS lookup will be performed at the client. This setting allows Microsoft 365 traffic to be forwarded directly to Azure Front Door. Alternatively, DNS resolution can be conducted at the Edge. This operation provides control over the traffic flow and DNS resolution strategy within the network infrastructure."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 

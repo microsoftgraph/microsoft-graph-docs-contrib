@@ -3,7 +3,7 @@ title: "Get change notifications for presence updates in Microsoft Teams"
 description: "Use change notifications in Microsoft Graph to subscribe to presence changes for Microsoft Teams users."
 author: "awang119"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.custom: "scenarios:getting-started"
 ---
 
@@ -11,7 +11,7 @@ ms.custom: "scenarios:getting-started"
 
 Change notifications in Microsoft Graph enable you to subscribe to changes in [user presence](/microsoftteams/presence-admins) information in Microsoft Teams. Change notifications provide an alternative to polling for presence by using the [GET presence](/graph/api/presence-get) and [POST getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) APIs.
 
-Use webhooks to subscribe to users' presence information and get notifications when changes occur. For general information on webhooks, see [Microsoft Graph API change notifications](/graph/api/resources/webhooks).
+Use webhooks to subscribe to users' presence information and get notifications when changes occur. For general information on webhooks, see [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview).
 
 ## Permissions
 
@@ -23,7 +23,7 @@ Use webhooks to subscribe to users' presence information and get notifications w
 
 ## Supported resources for presence
 
-Subscriptions have a maximum expiration time of an hour. A subscription can be renewed via the [Update subscription API](/graph/api/subscription-update) before it expires, or a new subscription can be created for the same resource after expiration. Presence subscriptions support notifications with resource data, allowing more detailed information to be delivered along with change notifications. For more information, see [Set up change notifications with resource data](webhooks-with-resource-data.md).
+Subscriptions have a maximum expiration time of an hour. A subscription can be renewed via the [Update subscription API](/graph/api/subscription-update) before it expires, or a new subscription can be created for the same resource after expiration. Presence subscriptions support notifications with resource data, allowing more detailed information to be delivered along with change notifications. For more information, see [Set up change notifications with resource data](change-notifications-with-resource-data.md).
 
 The following table lists the types of presence changes you can subscribe to. For more information, see [Create subscription](/graph/api/subscription-post-subscriptions).
 
@@ -99,7 +99,7 @@ Change notifications for presence events are triggered when changes to a user's 
 
 Presence notifications with resource data have the following additional properties encrypted in the payload:
 - Availability or base presence information (available, away, busy)
-- Activity or information that’s supplemental to the availability (in a meeting, in call)
+- Activity or information that's supplemental to the availability (in a meeting, in call)
 
 > [Note]:
 > The availability and activity can be the same value.
@@ -144,7 +144,7 @@ For more information about possible combinations of availability and activity, s
 }
 ```
 
-## See also
+## Related content
 - [Presence](/graph/api/resources/presence)
 - [Change notifications through webhooks](change-notifications-delivery-webhooks.md)
-- [Microsoft Graph API change notifications](/graph/api/resources/webhooks)
+- [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview)

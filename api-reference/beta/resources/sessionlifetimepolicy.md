@@ -3,7 +3,7 @@ title: "sessionlifetimepolicy resource type"
 description: "Describes the session lifetime policies Microsoft Entra ID applied to a sign-in event."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

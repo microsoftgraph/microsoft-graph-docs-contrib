@@ -3,7 +3,7 @@ title: "Get subCategoryTemplate"
 description: "Read the properties and relationships of a subCategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -58,10 +58,6 @@ Here's an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/labels/categories/82d00422-1f60-46cd-9809-33ca0b4d2286/subCategories/2ac39915-dbeb-e933-82e2-92b981835fa0
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-subcategorytemplate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subcategorytemplate-javascript-snippets.md)]

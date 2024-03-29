@@ -4,7 +4,7 @@ description: "Retrieve a user's passwordAuthenticationMethod object."
 ms.localizationpriority: medium
 author: "zhvolosh"
 ms.reviewer: intelligentaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -19,17 +19,23 @@ Retrieve a password that's registered to a user, represented by a [passwordAuthe
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions acting on self
-
-<!-- { "blockType": "permissions", "name": "passwordauthenticationmethod_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/passwordauthenticationmethod-get-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ### Permissions acting on other users
-
-<!-- { "blockType": "permissions", "name": "passwordauthenticationmethod_get_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/passwordauthenticationmethod-get-2-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 [!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
 
@@ -57,7 +63,7 @@ This method does not support optional query parameters to customize the response
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

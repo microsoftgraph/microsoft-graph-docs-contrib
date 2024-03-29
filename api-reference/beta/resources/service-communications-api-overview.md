@@ -3,7 +3,7 @@ title: "Working with service communications APIs in Microsoft Graph"
 description: You can use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft services."
 author: "payiAzure"
 ms.localizationpriority: medium
-ms.prod: "service-communications"
+ms.subservice: "service-communications"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ The service communications API applies role-based access control (RBAC) to ident
 
 For more information about the Microsoft Entra administrator roles, see:
 * [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles)
-* [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json)
+* [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)
 * [Roles in Microsoft 365, including Microsoft Entra ID, service-specific and cross-service roles](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
 
 ### Access service communications API without user
@@ -61,9 +61,6 @@ That service communications API is available in all Microsoft national cloud dep
 
 To guarantee the service performance, the service communications API has throttling limits for the requests per tenant per application. For details about the limits, see  [throttling limits for the service communications service](/graph/throttling#service-communications-service-limits).
 
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 

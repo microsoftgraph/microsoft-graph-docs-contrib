@@ -3,7 +3,7 @@ title: "Delete userFlowLanguagePage"
 description: "Deletes the values in an userFlowLanguagePage object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ DELETE /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/$value
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -71,10 +71,6 @@ Here's an example of the request.
 DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/languages/en/overridesPages/selfasserted1_1/$value
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-userflowlanguagepage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-userflowlanguagepage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/lang
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

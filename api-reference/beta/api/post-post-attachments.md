@@ -3,7 +3,7 @@ title: "Add attachment"
 description: "Add an attachment when creating a group post."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -29,10 +29,13 @@ resource.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "post_post_attachments" } -->
-[!INCLUDE [permissions-table](../includes/permissions/post-post-attachments-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 Include an attachment when creating a [post](../resources/post.md) in a [conversationThread](../resources/conversationthread.md) of a group. Specifying the parent [conversation](../resources/conversation.md) is optional.
@@ -45,7 +48,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, provide a JSON object that includes a **post** parameter.
@@ -61,7 +64,7 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 ## Examples
 ### Example 1: Include a file attachment
 #### Request
-Here is an example of a request that includes a file as an attachment when creating a post.
+The following example shows a request that includes a file as an attachment when creating a post.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,7 +126,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_with_post"
@@ -135,7 +138,7 @@ HTTP/1.1 202 Accpted
 ### Example 2: Include an item attachment
 
 #### Request
-Here is an example of a request that includes an event as an attachment when creating a post.
+The following example shows a request that includes an event as an attachment when creating a post.
 
 
 # [HTTP](#tab/http)
@@ -213,7 +216,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_with_post"
@@ -225,7 +228,7 @@ HTTP/1.1 202 Accepted
 ### Example 3: Include a reference attachment
 
 #### Request
-Here is an example of a request that includes a reference attachment when creating a post.
+The following example shows a request that includes a reference attachment when creating a post.
 The attachment points to a folder on OneDrive.
 
 # [HTTP](#tab/http)
@@ -291,7 +294,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_with_post"

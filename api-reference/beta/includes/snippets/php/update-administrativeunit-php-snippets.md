@@ -6,17 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AdministrativeUnit();
 $requestBody->setDisplayName('Executive Division');
-$additionalData = [
-	'membershipType' => 'Dynamic',
-	'membershipRule' => '(user.country -eq \"United States\")',
-	'membershipRuleProcessingState' => 'On',
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setMembershipType('Dynamic');
+$requestBody->setMembershipRule('(user.country -eq \"United States\")');
+$requestBody->setMembershipRuleProcessingState('On');
 
 $result = $graphServiceClient->administrativeUnits()->byAdministrativeUnitId('administrativeUnit-id')->patch($requestBody)->wait();
 

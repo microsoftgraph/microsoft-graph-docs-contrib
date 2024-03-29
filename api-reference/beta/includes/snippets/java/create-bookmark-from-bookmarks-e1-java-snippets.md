@@ -4,38 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-Bookmark bookmark = new Bookmark();
-bookmark.displayName = "Contoso Install Site";
-bookmark.webUrl = "http://www.contoso.com/";
-bookmark.description = "Try or buy Contoso for Home or Business and view product information";
-AnswerKeyword keywords = new AnswerKeyword();
-LinkedList<String> keywordsList = new LinkedList<String>();
-keywordsList.add("Contoso");
-keywordsList.add("install");
-keywords.keywords = keywordsList;
-LinkedList<String> reservedKeywordsList = new LinkedList<String>();
-reservedKeywordsList.add("Contoso");
-keywords.reservedKeywords = reservedKeywordsList;
-keywords.matchSimilarKeywords = true;
-bookmark.keywords = keywords;
-bookmark.availabilityStartDateTime = OffsetDateTimeSerializer.deserialize("null");
-bookmark.availabilityEndDateTime = OffsetDateTimeSerializer.deserialize("null");
-LinkedList<DevicePlatformType> platformsList = new LinkedList<DevicePlatformType>();
-platformsList.add(DevicePlatformType.ANDROID);
-bookmark.platforms = platformsList;
-LinkedList<AnswerVariant> targetedVariationsList = new LinkedList<AnswerVariant>();
-AnswerVariant targetedVariations = new AnswerVariant();
-targetedVariations.languageTag = "es-es";
-targetedVariations.displayName = "Sitio de instalación Contoso";
-targetedVariations.description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto";
-targetedVariationsList.add(targetedVariations);
-bookmark.targetedVariations = targetedVariationsList;
-bookmark.state = AnswerState.PUBLISHED;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.search().bookmarks()
-	.buildRequest()
-	.post(bookmark);
+com.microsoft.graph.beta.models.search.Bookmark bookmark = new com.microsoft.graph.beta.models.search.Bookmark();
+bookmark.setDisplayName("Contoso Install Site");
+bookmark.setWebUrl("http://www.contoso.com/");
+bookmark.setDescription("Try or buy Contoso for Home or Business and view product information");
+com.microsoft.graph.beta.models.search.AnswerKeyword keywords = new com.microsoft.graph.beta.models.search.AnswerKeyword();
+LinkedList<String> keywords1 = new LinkedList<String>();
+keywords1.add("Contoso");
+keywords1.add("install");
+keywords.setKeywords(keywords1);
+LinkedList<String> reservedKeywords = new LinkedList<String>();
+reservedKeywords.add("Contoso");
+keywords.setReservedKeywords(reservedKeywords);
+keywords.setMatchSimilarKeywords(true);
+bookmark.setKeywords(keywords);
+bookmark.setAvailabilityStartDateTime(null);
+bookmark.setAvailabilityEndDateTime(null);
+LinkedList<DevicePlatformType> platforms = new LinkedList<DevicePlatformType>();
+platforms.add(DevicePlatformType.Android);
+bookmark.setPlatforms(platforms);
+LinkedList<com.microsoft.graph.beta.models.search.AnswerVariant> targetedVariations = new LinkedList<com.microsoft.graph.beta.models.search.AnswerVariant>();
+com.microsoft.graph.beta.models.search.AnswerVariant answerVariant = new com.microsoft.graph.beta.models.search.AnswerVariant();
+answerVariant.setLanguageTag("es-es");
+answerVariant.setDisplayName("Sitio de instalación Contoso");
+answerVariant.setDescription("Pruebe o compre Contoso hogar o negocios y vea la información del producto");
+targetedVariations.add(answerVariant);
+bookmark.setTargetedVariations(targetedVariations);
+bookmark.setState(com.microsoft.graph.beta.models.search.AnswerState.Published);
+com.microsoft.graph.models.search.Bookmark result = graphClient.search().bookmarks().post(bookmark);
+
 
 ```

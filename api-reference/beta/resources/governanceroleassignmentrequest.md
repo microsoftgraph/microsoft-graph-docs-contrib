@@ -3,8 +3,9 @@ title: "governanceRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Privileged Identity Management."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governanceRoleAssignmentRequest resource type
@@ -21,7 +22,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 
 ## Methods
 
-| Method		  |Return Type	|Description|
+| Method          |Return Type    |Description|
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Get a role assignment request specified by ID.  
 |[List](../api/governanceroleassignmentrequest-list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)  collection|Get role assignment requests on a resource.|
@@ -30,7 +31,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 |[Update](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Administrators update the decisions on requests if the requests are in status of `PendingAdminDecision`.|
 
 ## Properties
-| Property	                | Type	        |Description|
+| Property                    | Type            |Description|
 |:--------------------------|:--------------|:----------|
 |id                         |String         |The identifier of the role assignment request.|
 |resourceId                 |String         |Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.|
@@ -59,7 +60,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 
 
 ## Relationships
-| Relationship | Type	                             |Description|
+| Relationship | Type                                 |Description|
 |:-------------|:----------------------------------|:----------|
 |resource      |[governanceResource](../resources/governanceresource.md)            |Read-only. The resource that the request aims to. |
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Read-only. The role definition that the request aims to. |

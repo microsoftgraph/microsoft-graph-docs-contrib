@@ -3,7 +3,7 @@ title: "Create plannerTask"
 description: "Create a new plannerTask."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ POST /planner/tasks
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required.|
 
 ## Request body
@@ -46,7 +46,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,6 +80,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-plannertask-from-planner-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-plannertask-from-planner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

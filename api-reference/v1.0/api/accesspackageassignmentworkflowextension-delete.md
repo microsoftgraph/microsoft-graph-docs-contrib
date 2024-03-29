@@ -3,7 +3,7 @@ title: "Delete accessPackageAssignmentWorkflowExtension"
 description: "Delete an accessPackageAssignmentWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 Delete an [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object. The custom workflow extension must first be removed from any associated [policies](../resources/accesspackageassignmentpolicy.md) before it can be deleted. Follow these steps to remove the custom workflow extension from any associated policies:
 
-1. First retrieve the accessPackageCatalogId by calling the [Get accessPackageAssignmentPolicies](accesspackageassignmentpolicy-get.md) operation and appending `?$expand=accessPackage($expand=accessPackageCatalog)` to the query. For example, `https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies?$expand=accessPackage($expand=accessPackageCatalog)`.
+1. First retrieve the accessPackageCatalogId by calling the [Get accessPackageAssignmentPolicies](accesspackageassignmentpolicy-get.md) operation and appending `?$expand=accessPackage($expand=catalog)` to the query. For example, `https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/{id}?$expand=accessPackage($expand=catalog)`.
 2. Use the access package catalog ID and retrieve the ID of the **accessPackageCustomWorkflowExtension** object that you want to delete by running the [List accessPackageCustomWorkflowExtensions](accesspackagecatalog-list-accesspackagecustomworkflowextensions.md) operation.
 3. Call the [Update accessPackageAssignmentPolicy](accesspackageassignmentpolicy-update.md) operation to remove the custom workflow extension object from the policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -40,7 +40,7 @@ DELETE /identityGovernance/entitlementManagement/catalogs/{catalogId}/customWork
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE /identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions/5FD6D8D5-E8F1-4B54-A1E6-1D0FE0B6E6EC
+DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions/5FD6D8D5-E8F1-4B54-A1E6-1D0FE0B6E6EC
 ```
 
 # [C#](#tab/csharp)

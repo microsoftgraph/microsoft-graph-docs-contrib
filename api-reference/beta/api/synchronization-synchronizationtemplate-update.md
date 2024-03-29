@@ -4,7 +4,7 @@ description: "Update (override) the synchronization template associated with a g
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Update synchronizationTemplate
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ### Examples
 
 ##### Request
-The following is an example of a request. 
+The following example shows a request. 
 
 >**Note:** The request object shown here is shortened for readability. Include all the properties in an actual call.
 
@@ -68,10 +68,6 @@ Content-type: application/json
 }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-synchronizationtemplate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -79,7 +75,7 @@ Content-type: application/json
 ---
 
 ##### Response
-The following is an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

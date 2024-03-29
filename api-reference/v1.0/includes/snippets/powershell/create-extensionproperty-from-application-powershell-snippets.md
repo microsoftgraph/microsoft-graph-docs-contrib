@@ -9,9 +9,10 @@ Import-Module Microsoft.Graph.Applications
 $params = @{
 	name = "jobGroup"
 	dataType = "String"
+	isMultiValued = $true
 	targetObjects = @(
-		"User"
-	)
+	"User"
+)
 }
 
 New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params

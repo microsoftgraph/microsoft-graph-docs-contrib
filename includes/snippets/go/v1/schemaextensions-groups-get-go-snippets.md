@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "id eq 'graphlearn_test'"
+requestFilter := "id eq 'bellowscollege_courses'"
 
 requestParameters := &graphschemaextensions.SchemaExtensionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

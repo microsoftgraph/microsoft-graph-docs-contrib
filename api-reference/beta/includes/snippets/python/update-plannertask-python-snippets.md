@@ -4,7 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.planner.tasks.item.planner_task_item_request_builder import PlannerTaskItemRequestBuilder
+from msgraph.generated.models.planner_task import PlannerTask
+from msgraph.generated.models.planner_assignments import PlannerAssignments
+from msgraph.generated.models.planner_assignment import PlannerAssignment
+from msgraph.generated.models.planner_applied_categories import PlannerAppliedCategories
+from msgraph.generated.models.planner_task_recurrence import PlannerTaskRecurrence
+from msgraph.generated.models.planner_recurrence_schedule import PlannerRecurrenceSchedule
+from msgraph.generated.models.recurrence_pattern import RecurrencePattern
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -34,13 +42,10 @@ request_body = PlannerTask(
 	),
 )
 
-request_configuration = PlannerTaskItemRequestBuilder.PlannerTaskItemRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-		'If-Match' : "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
+request_configuration = PlannerTaskItemRequestBuilder.PlannerTaskItemRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
+request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-)
 
 result = await graph_client.planner.tasks.by_planner_task_id('plannerTask-id').patch(request_body, request_configuration = request_configuration)
 

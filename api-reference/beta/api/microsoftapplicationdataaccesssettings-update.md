@@ -3,7 +3,7 @@ title: "Update microsoftApplicationDataAccessSettings"
 description: "Update the properties of a microsoftApplicationDataAccessSettings object."
 author: "ttomi"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ PATCH /organization/{organizationId}/settings/microsoftApplicationDataAccess
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

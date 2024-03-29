@@ -3,7 +3,7 @@ title: "Use the Microsoft Bookings API in Microsoft Graph"
 description: "Microsoft Bookings lets enterprise organization and small business owners manage customer bookings and information with minimal setup."
 ms.localizationpriority: high
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: conceptualPageType
 ---
 
@@ -91,10 +91,7 @@ The following table lists the common operations for a business in the Bookings A
 | Get appointments in a date range | [bookingBusiness](bookingbusiness.md) | [List Bookings calendarView](../api/bookingbusiness-list-calendarview.md) |
 | Get currency | [bookingCurrency](bookingcurrency.md) | [Methods of bookingCurrency](bookingcurrency.md#methods) |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
-## See also
+## Related content
 
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Learn how to choose [permissions](/graph/permissions-reference) in Microsoft Graph.

@@ -4,7 +4,7 @@ description: "Update the properties of a countryNamedLocation object."
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type  | application/json. Required. |
 
 ## Request body

@@ -3,7 +3,7 @@ title: "List taskDefinitions"
 description: "Get a list of the taskDefinition objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -42,7 +42,7 @@ This method supports the `$select`, `$orderby`, and `$filter` OData query parame
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -302,7 +302,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request. Because the **category** is a flagged enumeration that can be one of `joiner`, `joiner,leaver`, or `leaver`, the `has` operator checks tasks where the category includes "joiner".
+The following example shows a request. Because the **category** is a flagged enumeration that can be one of `joiner`, `joiner,leaver`, or `leaver`, the `has` operator checks tasks where the category includes "joiner".
 
 # [HTTP](#tab/http)
 <!-- {

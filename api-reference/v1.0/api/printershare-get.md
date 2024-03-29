@@ -3,7 +3,7 @@ title: Get printerShare
 description: Retrieve the properties and relationships of a printer share.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 
@@ -15,10 +15,15 @@ Retrieve the properties and relationships of a printer share.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "printershare_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/printershare-get-permissions.md)]
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type | Permissions (from least to most privileged) |
+|:---------------|:--------------------------------------------|
+|Delegated (work or school account)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not Supported.|
+|Application|Not Supported.|
 
 ## HTTP request
 
@@ -46,7 +51,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

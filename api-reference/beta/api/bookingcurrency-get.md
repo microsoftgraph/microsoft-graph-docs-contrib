@@ -3,7 +3,7 @@ title: "Get bookingCurrency"
 description: "Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingCurrencies/{id}
+GET /solutions/bookingCurrencies/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -51,7 +51,7 @@ The following example shows a request.
   "sampleKeys": ["USD"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingCurrencies/USD
+GET https://graph.microsoft.com/beta/solutions/bookingCurrencies/USD
 ```
 
 # [C#](#tab/csharp)
@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-bookingcurrency-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingcurrency-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

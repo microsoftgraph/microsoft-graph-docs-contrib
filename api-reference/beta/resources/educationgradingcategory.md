@@ -1,9 +1,9 @@
 ---
 title: "educationGradingCategory resource type"
-description: "Add grading categories to the existing class-wide settings to weight assignments differently when computing a class average grade."
+description: "Represents the weighted contribution of an assignment to a class average grade."
 author: "AshwaniBansal1"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add grading categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
+Represents the weighted contribution of an assignment to a class average grade.
 
 **Note:** Configure grading categories using [Assignment settings](../resources/educationassignmentsettings.md).
 

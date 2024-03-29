@@ -1,13 +1,15 @@
 ---
 title: "Overview of Microsoft Graph permissions"
 description: "Microsoft Graph exposes granular permissions that help you control the access that apps have to Microsoft Graph resources, like users, groups, and mail. Learn more about working with Microsoft Graph permissions to allow your app to access your data securely."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
+ms.topic: concept-article
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: entra-applications
 ms.date: 10/26/2023
 ms.custom: graphiamtop20, scenarios:getting-started
+#Customer-intent: As a developer integrating with Microsoft Graph, I want to learn about using Microsoft Graph permissions, so that I can properly request and manage permissions for my app.
 ---
 
 # Overview of Microsoft Graph permissions
@@ -47,7 +49,7 @@ In a delegated access scenario, an app may allow users to sign in with their per
 When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, the app can access resources and APIs within the boundaries of the user's permissions.
 
 > [!NOTE]
-> Permissions granted through [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
+> Permissions granted through [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
 
 ### Application permissions
 
@@ -61,11 +63,11 @@ Apart from being assigned Microsoft Graph application permissions, an app may al
 - When the app is assigned a Microsoft Entra built-in or custom administrative roles.
 
 > [!NOTE]
-> Permissions granted through [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
+> Permissions granted through [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
 
 ### Comparison of delegated and application permissions
 
-| <!-- No header--> | Delegated permissions | Application permissions |
+| Category | Delegated permissions | Application permissions |
 |--|--|--|
 | Types of apps | Web app / Mobile / Single-page app (SPA) | Web / Daemon |
 | Access context | [Get access on behalf of a user](auth-v2-user.md) | [Get access without a user](auth-v2-service.md) |
@@ -217,7 +219,7 @@ Apply the principle of least privilege when assigning and granting Microsoft Gra
 
 ## Retrieve permission IDs through Microsoft Graph
 
-To set permissions using the Azure CLI, PowerShell, or infrastructure as code frameworks, you may need the identifier for the permission that you want to use instead of the name. The [permissions reference](permissions-reference.md) lists IDs for all Microsoft Graph permissions. Alternatively, you can read information about all Microsoft Graph permissions programmatically through the [Get servicePrincipal](/graph/api/serviceprincipal-get) API in Microsoft Graph. The following is an example of the request.
+To set permissions using the Azure CLI, PowerShell, or infrastructure as code frameworks, you may need the identifier for the permission that you want to use instead of the name. The [permissions reference](permissions-reference.md) lists IDs for all Microsoft Graph permissions. Alternatively, you can read information about all Microsoft Graph permissions programmatically through the [Get servicePrincipal](/graph/api/serviceprincipal-get) API in Microsoft Graph. The following example shows a request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,oauth2PermissionScopes,resourceSpecificApplicationPermissions
@@ -225,7 +227,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 The **appRoles**, **oauth2PermissionScopes**, and **resourceSpecificApplicationPermissions** objects store the application, delegated, and resource-specific consent permissions respectively.
 
-## See also
+## Related content
 
 - [Microsoft Graph permissions reference](permissions-reference.md).
 - [Overview of role-based access control in Microsoft Entra ID](/azure/active-directory/roles/custom-overview).

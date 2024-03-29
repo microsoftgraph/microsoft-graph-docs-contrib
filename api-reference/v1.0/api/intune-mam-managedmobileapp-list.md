@@ -3,7 +3,7 @@ title: "List managedMobileApps"
 description: "List properties and relationships of the managedMobileApp objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [managedMobileApp](../resources/intune-mam-managedmobileapp.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

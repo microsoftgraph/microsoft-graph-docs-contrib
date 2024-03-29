@@ -3,7 +3,7 @@ title: "dynamicColumnValue resource type"
 description: "Represents a dynamic column in a huntingRowResult row."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

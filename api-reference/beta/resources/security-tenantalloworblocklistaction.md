@@ -3,7 +3,7 @@ title: "tenantAllowOrBlockListAction resource type"
 description: "Represents tenant the allow or block list action"
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "reports: transactionSummaries"
-description: "Provides a high-level summary of transactions, including a breakdown by traffic type and counts for allowed and blocked transactions."
+description: "Get the total number of transactions and the number of blocked transactions, grouped by traffic type."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides a high-level summary of transactions, including a breakdown by traffic type and counts for allowed and blocked transactions.
+Get the total number of transactions and the number of blocked transactions, grouped by traffic type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -40,14 +40,13 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Sets the starting date and time.|
-|endDateTime|DateTimeOffset|Sets the ending date and time.|
-
+|startDateTime|DateTimeOffset|The date and time when the reporting period begins.|
+|endDateTime|DateTimeOffset|The date and time when the reporting period ends.|
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -59,14 +58,14 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "reportsthis.transactionsummaries"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/reports/transactionSummaries(startDate=2023-01-01T00:00:00Z,endDate=2023-01-31T00:00:00Z)?$filter=trafficType  eq 'microsoft365'
+GET https://graph.microsoft.com/beta/networkAccess/reports/transactionSummaries(startDate=2023-01-01T00:00:00Z,endDate=2023-01-31T00:00:00Z) 
 ```
 
 
@@ -84,8 +83,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/networkAccess/reports/$metadata#transactionSummaries",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.networkaccess.transactionSummary)",
   "value": [
+    {
+      "trafficType": "internet",
+      "totalCount": 469000,
+      "blockedCount": 400
+    },
+    {
+      "trafficType": "private",
+      "totalCount": 220302,
+      "blockedCount": 0
+    },
     {
       "trafficType": "microsoft365",
       "totalCount": 280443,

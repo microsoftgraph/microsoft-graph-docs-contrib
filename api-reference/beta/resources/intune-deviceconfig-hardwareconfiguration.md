@@ -3,7 +3,7 @@ title: "hardwareConfiguration resource type"
 description: "Intune will provide customer the ability to configure hardware/bios settings on the enrolled windows 10 Azure Active Directory joined devices."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,6 @@ Intune will provide customer the ability to configure hardware/bios settings on 
 |[Create hardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-create.md)|[hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md)|Create a new [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) object.|
 |[Delete hardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-delete.md)|None|Deletes a [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md).|
 |[Update hardwareConfiguration](../api/intune-deviceconfig-hardwareconfiguration-update.md)|[hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md)|Update the properties of a [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) object.|
-|[assignHardwareConfiguration action](../api/intune-deviceconfig-hardwareconfiguration-assignhardwareconfiguration.md)|[hardwareConfigurationAssignment](../resources/intune-deviceconfig-hardwareconfigurationassignment.md) collection||
 |[assign action](../api/intune-deviceconfig-hardwareconfiguration-assign.md)|[hardwareConfigurationAssignment](../resources/intune-deviceconfig-hardwareconfigurationassignment.md) collection||
 
 ## Properties

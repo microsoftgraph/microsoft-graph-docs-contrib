@@ -1,17 +1,17 @@
 ---
 author: swapnil1993
 title: "Delete columnDefinition"
-description: "Delete a column from a site, list or content type."
+description: "Delete a column from a site, list, or content type."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Delete columnDefinition
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Remove a [column][columndefinition] from a [site][], [list][] or [content type][contentType].
+Remove a [column][columndefinition] from a [site][], [list][], or [content type][contentType].
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -35,7 +35,7 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{c
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -47,6 +47,8 @@ If successful, this method returns a `204 No Content` response code.
 ## Example
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,6 +97,7 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentTyp
 
 ### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

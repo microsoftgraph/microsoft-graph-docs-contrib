@@ -3,7 +3,7 @@ title: "intelligenceProfile resource type"
 description: "Provides up-to-date threat actor infrastructure visibility."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

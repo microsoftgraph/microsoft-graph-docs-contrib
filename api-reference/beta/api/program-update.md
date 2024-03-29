@@ -3,7 +3,7 @@ title: "Update program (deprecated)"
 description: "In the Microsoft Entra access reviews feature, update an existing program object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 
@@ -122,7 +122,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 | Method           | Return Type    |Description|
 |:---------------|:--------|:----------|

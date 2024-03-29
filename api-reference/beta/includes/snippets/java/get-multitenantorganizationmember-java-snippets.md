@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-MultiTenantOrganizationMember multiTenantOrganizationMember = graphClient.tenantRelationships().multiTenantOrganization().tenants("1fd6544e-e994-4de2-9f1b-787b51c7d325")
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+MultiTenantOrganizationMember result = graphClient.tenantRelationships().multiTenantOrganization().tenants().byMultiTenantOrganizationMemberId("{multiTenantOrganizationMember-id}").get();
+
 
 ```

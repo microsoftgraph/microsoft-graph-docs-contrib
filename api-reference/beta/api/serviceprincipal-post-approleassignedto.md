@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment for a service principal"
 description: "Grant an app role assignment for a service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -23,7 +23,7 @@ To grant an app role assignment, you need three identifiers:
 - `resourceId`: The `id` of the resource **servicePrincipal** which has defined the app role.
 - `appRoleId`: The `id` of the **appRole** (defined on the resource service principal) to assign to a user, group, or service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -35,6 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All |
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 
@@ -50,7 +52,7 @@ POST /servicePrincipals(appId='{appId}')/appRoleAssignedTo
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -65,7 +67,7 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -123,7 +125,7 @@ In this example, `{id}` and `{resourceId-value}` would both be the `id` of the r
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

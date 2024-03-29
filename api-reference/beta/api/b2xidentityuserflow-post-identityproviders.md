@@ -4,7 +4,7 @@ description: "Add identityProvider in a b2xIdentityUserFlow (deprecated)."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Add identityProvider to a b2xIdentityUserFlow (deprecated)
@@ -40,7 +40,7 @@ POST /identity/b2xUserFlows/{id}/identityProviders/$ref
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -74,10 +74,6 @@ Content-type: application/json
 }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-identityprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-b2xuserflows-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,7 +82,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

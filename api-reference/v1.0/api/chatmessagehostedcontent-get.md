@@ -3,7 +3,7 @@ title: "Get chatMessageHostedContent"
 description: "Retrieve the properties and relationships of chatMessageHostedContent object."
 ms.localizationpriority: medium
 author: RamjotSingh
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -17,22 +17,25 @@ Retrieve the properties and relationships of [chatMessageHostedContent](../resou
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for channel
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All |
 
 ### Permissions for chat
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)| Chat.Read, Chat.ReadWrite|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| Chat.Read.All, Chat.ReadWrite.All|
 
-<!-- { "blockType": "permissions", "name": "chatmessagehostedcontent_get_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessagehostedcontent-get-2-permissions.md)]
-
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note:** The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

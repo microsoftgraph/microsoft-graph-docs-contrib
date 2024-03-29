@@ -3,7 +3,7 @@ title: "List teamworkTags"
 description: "Get a list of the teamworkTag objects and their properties."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the `$filter` [OData query parameter](/graph/query-paramete
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

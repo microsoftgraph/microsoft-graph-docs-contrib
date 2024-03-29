@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Create a SharePoint List
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Create a new list in a site."
 doc_type: apiPageType
 ---
@@ -33,7 +33,7 @@ POST /sites/{site-id}/lists
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -60,7 +60,7 @@ If the **list** facet or **template** is unspecified, the list defaults to the `
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/{site-id}/lists
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 Content-Type: application/json
 
 {

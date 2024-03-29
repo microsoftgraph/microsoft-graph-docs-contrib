@@ -3,7 +3,7 @@ title: "citationTemplate resource type"
 description: "The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getSubscriptions, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().GetSubscriptions().Get(context.Background(), nil)
+getSubscriptions, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().GetSubscriptions().GetAsGetSubscriptionsGetResponse(context.Background(), nil)
 
 
 ```

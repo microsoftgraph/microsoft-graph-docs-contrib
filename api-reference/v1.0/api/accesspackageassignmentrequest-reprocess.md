@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest: reprocess"
 description: "Reprocess accessPackageAssignmentRequest objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -38,7 +38,7 @@ POST /identityGovernance/entitlementManagement/assignmentRequests/{id}/reprocess
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -52,7 +52,7 @@ If successful, this method returns a  `202 Accepted` response code and retries t
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 
 <!-- {

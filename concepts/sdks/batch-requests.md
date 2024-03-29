@@ -40,39 +40,11 @@ This example shows how to send multiple requests in a batch that are not depende
 
 ### [PHP](#tab/PHP)
 
-```php
-<?php
-use Microsoft\Graph\Core\Requests\BatchRequestContent;
-use Microsoft\Graph\Core\Requests\BatchResponseItem;
-use Microsoft\Graph\Generated\Models\Message;
-use Microsoft\Graph\BatchRequestBuilder;
-
-$message = new Message();
-$message->setSubject("Test Subject");
-
-$batchRequestContent = new BatchRequestContent([
-    $graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('id')->toDeleteRequestInformation(),
-    $graphServiceClient->users()->byUserId(USER_ID)->messages()->toPostRequestInformation($message),
-    $graphServiceClient->users()->byUserId(USER_ID)->toGetRequestInformation()
-]);
-
-// Send the request
-$requestBuilder = new BatchRequestBuilder($graphServiceClient->getRequestAdapter());
-/** @var BatchResponseContent $batchResponse  */
-$batchResponse = $requestBuilder->postAsync($batchRequestContent)->wait();
-
-// Get response back
-$batchRequests = $batchRequestContent->getRequests();
-// Uses the auto-generated ID added to the batch request content
-$response1 = $batchResponse->getResponse($batchRequests[0]->getId());
-echo "Response1 status code: {$response1->getStatusCode()}";
-
-```
+:::code language="php" source="./snippets/php/snippets/BatchRequests.php" id="SimpleBatchSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="SimpleBatchSnippet":::
-
 
 ---
 
@@ -97,23 +69,7 @@ This example shows how to send multiple requests in a batch that are dependent o
 
 ### [PHP](#tab/PHP)
 
-```php
-use Microsoft\Graph\Core\Requests\BatchRequestContent;
-use Microsoft\Graph\Core\Requests\BatchRequestItem;
-use Microsoft\Graph\Generated\Models\Message;
-
-$message = new Message();
-$message->setSubject("Test Subject");
-
-$request1 = new BatchRequestItem($graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('[id]')->toGetRequestInformation());
-$request2 = new BatchRequestItem($graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('[id]')->toPatchRequestInformation($message));
-$request2->dependsOn([$request1]);
-
-$batchRequestContent = new BatchRequestContent([
-    $request1, $request2
-]);
-
-```
+:::code language="php" source="./snippets/php/snippets/BatchRequests.php" id="DependentBatchSnippet":::
 
 ### [TypeScript](#tab/typescript)
 

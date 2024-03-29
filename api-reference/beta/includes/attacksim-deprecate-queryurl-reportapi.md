@@ -1,7 +1,7 @@
 ---
 author: "stuartcl"
 ms.localizationpriority: high
-ms.prod: "reports"
+ms.subservice: "reports"
 ms.topic: include
 ---
 

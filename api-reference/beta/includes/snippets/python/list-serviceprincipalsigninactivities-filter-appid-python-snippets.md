@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.reports.servicePrincipalSignInActivities.service_principal_sign_in_activities_request_builder import ServicePrincipalSignInActivitiesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

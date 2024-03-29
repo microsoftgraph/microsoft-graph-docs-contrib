@@ -3,7 +3,7 @@ title: "conditionalAccessSettings resource type"
 description: "Conditional access settings define how you can restore users source IP and how you can use compliant network validation to ensure that the user is connecting from a verified network."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.networkaccess
 
 Conditional access settings define how you can restore users source IP and how you can use compliant network validation. Source IP restoration preserves your original user IP context for all Microsoft Entra ID and Microsoft 365 traffic, and compliant network validation ensures the user is connecting from a verified network.
 
-For more information about conditional access settings, see [Universal Conditional Access through Global Secure Access](https://github.com/azure/global-secure-access/how-to-target-resource) and [Source IP restoration](https://github.com/azure/global-secure-access/how-to-universal-tenant-restrictions).
+For more information about conditional access settings, see [Universal Conditional Access through Global Secure Access](/entra/global-secure-access/concept-universal-conditional-access) and [Source IP restoration](/entra/global-secure-access/how-to-universal-tenant-restrictions).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

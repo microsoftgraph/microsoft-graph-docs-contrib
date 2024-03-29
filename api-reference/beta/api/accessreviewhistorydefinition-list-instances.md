@@ -3,7 +3,7 @@ title: "List instances (of an accessReviewHistoryDefinition)"
 description: "Retrieve the instances of an access review history definition."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the [instances](../resources/accessreviewhistoryinstance.md) of an [access review history definition](../resources/accessreviewhistorydefinition.md) created in the last 30 days.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDef
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

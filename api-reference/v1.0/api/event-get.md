@@ -3,7 +3,7 @@ title: "Get event"
 description: "Get the properties and relationships of the specified event object."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -27,26 +27,29 @@ Since the **event** resource supports [extensions](/graph/extensibility-overview
 
 ### Support various time zones
 
-For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response. 
+For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.
 
 For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.
 ```http
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. 
-See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end 
+If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header.
+See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end
 times are returned in UTC.
 
-You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
+You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to
 find out the time zone used when the event was created.
 
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "event_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/event-get-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read        |
+|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read    |
+|Application | Calendars.ReadBasic, Calendars.Read                               |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -84,7 +87,7 @@ If successful, this method returns a `200 OK` response code and [event](../resou
 ##### Request 1
 The first example gets the specified event. It specifies the following:
 
-- A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
+- A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 
 
@@ -96,7 +99,7 @@ The first example gets the specified event. It specifies the following:
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAAa_WKzAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees 
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAAa_WKzAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -136,7 +139,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ##### Response 1
 
-Here is an example of the response. The **body** property is returned in the default format of HTML.
+The following example shows the response. The **body** property is returned in the default format of HTML.
 
 <!-- {
   "blockType": "response",
@@ -158,7 +161,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
     "hideAttendees": false,
     "body": {
         "contentType": "html",
-        "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>New Product Regulations Strategy Online Touchpoint Meeting<div id=\"a59ada49-a492-4f1d-ac57-74be3a4194fc\" style=\"display:inline-block\"><table cellspacing=\"0\" style=\"table-layout:fixed; width:50px; border:0 none black\"><tbody><tr><td style=\"height:18px; padding:0; border-width:0 0 1px 0; border-style:none none solid none; border-color:#EAEAEA\">&nbsp;</td></tr></tbody></table><table cellspacing=\"0\" style=\"table-layout:fixed; width:90%; line-height:17px; border:0 none black\"><tbody><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr><tr><td style=\"padding:0; border:0 none black; color:#666666; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">You're receiving this message because you're a member of the <a href=\"https://outlook.office365.com/owa/engineering@M365x214355.onmicrosoft.com/groupsubscription.ashx?realm=M365x214355.onmicrosoft.com&amp;source=EscalatedMessage&amp;action=conversations\" style=\"color:#0072C6; text-decoration:none; font-size:12px; font-family:'Segoe UI Semibold','Segoe WP Semibold','Segoe UI','Segoe WP',sans-serif\">Engineering</a> group. If you don't want to receive any messages or events from this group,<a href=\"https://outlook.office365.com/owa/engineering@M365x214355.onmicrosoft.com/groupsubscription.ashx?realm=M365x214355.onmicrosoft.com&amp;source=EscalatedMessage&amp;action=unsubscribe\" id=\"BD5134C6-8D33-4ABA-A0C4-08581FDF89DB\" style=\"color:#0072C6; text-decoration:none; font-size:12px; font-family:'Segoe UI Semibold','Segoe WP Semibold','Segoe UI','Segoe WP',sans-serif\">stop following it in your inbox</a>.</td></tr><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr><tr><td style=\"padding:0; border:0 none black; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\"><span style=\"display:inline-block\"><a href=\"https://outlook.office365.com/owa/engineering@M365x214355.onmicrosoft.com/groupsubscription.ashx?realm=M365x214355.onmicrosoft.com&amp;source=EscalatedMessage&amp;action=conversations\" style=\"color:#666666; text-decoration:none; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">View group conversations</a></span><span style=\"color:#C8C8C8\">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><span style=\"display:inline-block\"><a href=\"https://outlook.office365.com/owa/engineering@M365x214355.onmicrosoft.com/groupsubscription.ashx?realm=M365x214355.onmicrosoft.com&amp;source=EscalatedMessage&amp;action=files\" style=\"color:#666666; text-decoration:none; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">View group files</a></span></td></tr><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr></tbody></table></div></body></html>"
+        "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>New Product Regulations Strategy Online Touchpoint Meeting<div id=\"a59ada49-a492-4f1d-ac57-74be3a4194fc\" style=\"display:inline-block\"><table cellspacing=\"0\" style=\"table-layout:fixed; width:50px; border:0 none black\"><tbody><tr><td style=\"height:18px; padding:0; border-width:0 0 1px 0; border-style:none none solid none; border-color:#EAEAEA\">&nbsp;</td></tr></tbody></table><table cellspacing=\"0\" style=\"table-layout:fixed; width:90%; line-height:17px; border:0 none black\"><tbody><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr><tr><td style=\"padding:0; border:0 none black; color:#666666; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">You're receiving this message because you're a member of the <a href=\"https://outlook.office365.com/owa/engineering@contoso.com/groupsubscription.ashx?realm=contoso.com&amp;source=EscalatedMessage&amp;action=conversations\" style=\"color:#0072C6; text-decoration:none; font-size:12px; font-family:'Segoe UI Semibold','Segoe WP Semibold','Segoe UI','Segoe WP',sans-serif\">Engineering</a> group. If you don't want to receive any messages or events from this group,<a href=\"https://outlook.office365.com/owa/engineering@contoso.com/groupsubscription.ashx?realm=contoso.com&amp;source=EscalatedMessage&amp;action=unsubscribe\" id=\"BD5134C6-8D33-4ABA-A0C4-08581FDF89DB\" style=\"color:#0072C6; text-decoration:none; font-size:12px; font-family:'Segoe UI Semibold','Segoe WP Semibold','Segoe UI','Segoe WP',sans-serif\">stop following it in your inbox</a>.</td></tr><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr><tr><td style=\"padding:0; border:0 none black; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\"><span style=\"display:inline-block\"><a href=\"https://outlook.office365.com/owa/engineering@contoso.com/groupsubscription.ashx?realm=contoso.com&amp;source=EscalatedMessage&amp;action=conversations\" style=\"color:#666666; text-decoration:none; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">View group conversations</a></span><span style=\"color:#C8C8C8\">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><span style=\"display:inline-block\"><a href=\"https://outlook.office365.com/owa/engineering@contoso.com/groupsubscription.ashx?realm=contoso.com&amp;source=EscalatedMessage&amp;action=files\" style=\"color:#666666; text-decoration:none; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">View group files</a></span></td></tr><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr></tbody></table></div></body></html>"
     },
     "start": {
         "dateTime": "2014-11-03T17:00:00.0000000",
@@ -183,7 +186,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
             },
             "emailAddress": {
                 "name": "Engineering",
-                "address": "engineering@M365x214355.onmicrosoft.com"
+                "address": "engineering@contoso.com"
             }
         },
         {
@@ -194,14 +197,14 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
             },
             "emailAddress": {
                 "name": "Irvin Sayers",
-                "address": "IrvinS@M365x214355.onmicrosoft.com"
+                "address": "IrvinS@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Engineering",
-            "address": "engineering@M365x214355.onmicrosoft.com"
+            "address": "engineering@contoso.com"
         }
     },
     "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('48d31887-5fad-4d73-a9f5-3c356e68a038')/calendars('AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA=')/$ref",
@@ -212,8 +215,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 
 ##### Request 2
 
-The second example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
-to return specific properties. 
+The second example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter
+to return specific properties.
 
 
 # [HTTP](#tab/http)
@@ -261,12 +264,12 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hM
 ---
 
 ##### Response 2
-Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
+The following example shows the response. The **locations** property includes details for the 3 locations that the event is organized for.
 
-Because the request does not specify any `Prefer: outlook.timezone` header, 
-the **start** and **end** properties are displayed in the default UTC time zone. 
+Because the request does not specify any `Prefer: outlook.timezone` header,
+the **start** and **end** properties are displayed in the default UTC time zone.
 
-The event body is in the default HTML format.  
+The event body is in the default HTML format.
 
 <!-- {
   "blockType": "response",
@@ -286,7 +289,7 @@ Content-type: application/json
     "bodyPreview": "New Product Regulations Strategy Online Touchpoint MeetingYou're receiving this message because you're a member of the Engineering group. If you don't want to receive any messages or events from this group, stop following it in your inbox.View g",
     "body": {
         "contentType": "html",
-        "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>New Product Regulations Strategy Online Touchpoint Meeting<div id=\"a59ada49-a492-4f1d-ac57-74be3a4194fc\" style=\"display:inline-block\"><table cellspacing=\"0\" style=\"table-layout:fixed; width:50px; border:0 none black\"><tbody><tr><td style=\"height:18px; padding:0; border-width:0 0 1px 0; border-style:none none solid none; border-color:#EAEAEA\">&nbsp;</td></tr></tbody></table><table cellspacing=\"0\" style=\"table-layout:fixed; width:90%; line-height:17px; border:0 none black\"><tbody><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr><tr><td style=\"padding:0; border:0 none black; color:#666666; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">You're receiving this message because you're a member of the <a href=\"https://outlook.office365.com/owa/engineering@M365x214355.onmicrosoft.com/groupsubscription.ashx?realm=M365x214355.onmicrosoft.com&amp;source=EscalatedMessage&amp;action=conversations\" style=\"color:#0072C6; text-decoration:none; font-size:12px; font-family:'Segoe UI Semibold','Segoe WP Semibold','Segoe UI','Segoe WP',sans-serif\">Engineering</a> group. If you don't want to receive any messages or events from this group,<a href=\"https://outlook.office365.com/owa/engineering@M365x214355.onmicrosoft.com/groupsubscription.ashx?realm=M365x214355.onmicrosoft.com&amp;source=EscalatedMessage&amp;action=unsubscribe\" id=\"BD5134C6-8D33-4ABA-A0C4-08581FDF89DB\" style=\"color:#0072C6; text-decoration:none; font-size:12px; font-family:'Segoe UI Semibold','Segoe WP Semibold','Segoe UI','Segoe WP',sans-serif\">stop following it in your inbox</a>.</td></tr><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr><tr><td style=\"padding:0; border:0 none black; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\"><span style=\"display:inline-block\"><a href=\"https://outlook.office365.com/owa/engineering@M365x214355.onmicrosoft.com/groupsubscription.ashx?realm=M365x214355.onmicrosoft.com&amp;source=EscalatedMessage&amp;action=conversations\" style=\"color:#666666; text-decoration:none; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">View group conversations</a></span><span style=\"color:#C8C8C8\">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><span style=\"display:inline-block\"><a href=\"https://outlook.office365.com/owa/engineering@M365x214355.onmicrosoft.com/groupsubscription.ashx?realm=M365x214355.onmicrosoft.com&amp;source=EscalatedMessage&amp;action=files\" style=\"color:#666666; text-decoration:none; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">View group files</a></span></td></tr><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr></tbody></table></div></body></html>"
+        "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>New Product Regulations Strategy Online Touchpoint Meeting<div id=\"a59ada49-a492-4f1d-ac57-74be3a4194fc\" style=\"display:inline-block\"><table cellspacing=\"0\" style=\"table-layout:fixed; width:50px; border:0 none black\"><tbody><tr><td style=\"height:18px; padding:0; border-width:0 0 1px 0; border-style:none none solid none; border-color:#EAEAEA\">&nbsp;</td></tr></tbody></table><table cellspacing=\"0\" style=\"table-layout:fixed; width:90%; line-height:17px; border:0 none black\"><tbody><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr><tr><td style=\"padding:0; border:0 none black; color:#666666; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">You're receiving this message because you're a member of the <a href=\"https://outlook.office365.com/owa/engineering@contoso.com/groupsubscription.ashx?realm=contoso.com&amp;source=EscalatedMessage&amp;action=conversations\" style=\"color:#0072C6; text-decoration:none; font-size:12px; font-family:'Segoe UI Semibold','Segoe WP Semibold','Segoe UI','Segoe WP',sans-serif\">Engineering</a> group. If you don't want to receive any messages or events from this group,<a href=\"https://outlook.office365.com/owa/engineering@contoso.com/groupsubscription.ashx?realm=contoso.com&amp;source=EscalatedMessage&amp;action=unsubscribe\" id=\"BD5134C6-8D33-4ABA-A0C4-08581FDF89DB\" style=\"color:#0072C6; text-decoration:none; font-size:12px; font-family:'Segoe UI Semibold','Segoe WP Semibold','Segoe UI','Segoe WP',sans-serif\">stop following it in your inbox</a>.</td></tr><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr><tr><td style=\"padding:0; border:0 none black; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\"><span style=\"display:inline-block\"><a href=\"https://outlook.office365.com/owa/engineering@contoso.com/groupsubscription.ashx?realm=contoso.com&amp;source=EscalatedMessage&amp;action=conversations\" style=\"color:#666666; text-decoration:none; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">View group conversations</a></span><span style=\"color:#C8C8C8\">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><span style=\"display:inline-block\"><a href=\"https://outlook.office365.com/owa/engineering@contoso.com/groupsubscription.ashx?realm=contoso.com&amp;source=EscalatedMessage&amp;action=files\" style=\"color:#666666; text-decoration:none; font-size:12px; font-family:'Segoe UI','Segoe WP',sans-serif\">View group files</a></span></td></tr><tr><td style=\"height:17px; padding:0; border:0 none black\">&nbsp;</td></tr></tbody></table></div></body></html>"
     },
     "start": {
         "dateTime": "2014-11-03T17:00:00.0000000",
@@ -319,7 +322,7 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Engineering",
-                "address": "engineering@M365x214355.onmicrosoft.com"
+                "address": "engineering@contoso.com"
             }
         },
         {
@@ -330,14 +333,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Irvin Sayers",
-                "address": "IrvinS@M365x214355.onmicrosoft.com"
+                "address": "IrvinS@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Engineering",
-            "address": "engineering@M365x214355.onmicrosoft.com"
+            "address": "engineering@contoso.com"
         }
     },
     "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('48d31887-5fad-4d73-a9f5-3c356e68a038')/calendars('AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OAAuAAAAAAAiQ8W967B7TKBjgx9rVEURAQAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAA=')/$ref",
@@ -347,7 +350,7 @@ Content-type: application/json
 
 
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

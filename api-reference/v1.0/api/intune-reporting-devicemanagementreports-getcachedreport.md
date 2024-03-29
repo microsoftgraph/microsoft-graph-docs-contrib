@@ -3,7 +3,7 @@ title: "getCachedReport action"
 description: "Not yet documented"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Not yet documented
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +38,7 @@ POST /deviceManagement/reports/getCachedReport
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -68,7 +70,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementreports_getcachedreport_getcachedreport_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getCachedReport
-
 Content-type: application/json
 Content-length: 209
 
@@ -89,12 +90,36 @@ Content-length: 209
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-reporting-devicemanagementreports-getcachedreport-getcachedreport-action-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [CLI](#tab/cli)
 [!INCLUDE [sample-code](../includes/snippets/cli/intune-reporting-devicemanagementreports-getcachedreport-getcachedreport-action-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-reporting-devicemanagementreports-getcachedreport-getcachedreport-action-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-reporting-devicemanagementreports-getcachedreport-getcachedreport-action-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-reporting-devicemanagementreports-getcachedreport-getcachedreport-action-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-reporting-devicemanagementreports-getcachedreport-getcachedreport-action-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-reporting-devicemanagementreports-getcachedreport-getcachedreport-action-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-reporting-devicemanagementreports-getcachedreport-getcachedreport-action-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

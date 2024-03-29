@@ -3,7 +3,7 @@ title: "workflowVersion resource type"
 description: "The version of a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`,`ne`) and `$orderby`|
+|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `mover`,`unknownFutureValue`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`,`ne`) and `$orderby`|
 |createdDateTime|DateTimeOffset|The date time when the `workflow` was versioned. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |description|String|The description of the `workflowversion`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 |displayName|String|The display name of the `workflowversion`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `orderby`.|

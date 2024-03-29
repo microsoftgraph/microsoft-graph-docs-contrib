@@ -1,5 +1,47 @@
-﻿{
+{
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "containerFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [containerFilter](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-containerFilter?view=graph-rest-beta) resource type.",
+          "Target": "containerFilter"
+        },
+        {
+          "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupFilter](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-groupFilter?view=graph-rest-beta) resource type.",
+          "Target": "groupFilter"
+        },
+        {
+          "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
+          "ApiChange": "Property",
+          "ChangedApiName": "containerFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the `containerFilter` property to the [synchronizationRule](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
+          "Target": "synchronizationRule"
+        },
+        {
+          "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the `groupFilter` property to the [synchronizationRule](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta) resource.",
+          "Target": "synchronizationRule"
+        }
+      ],
+      "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-03T00:00:00.8019646Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -105,6 +147,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-05T07:08:26.9619605Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "162a31c1-d0f9-4eef-a6a0-932212a49b03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bulkUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the [bulkUpload](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-bulkUpload?view=graph-rest-1.0) resource and its associated method.",
+          "Target": "bulkUpload"
+        },
+        {
+          "Id": "162a31c1-d0f9-4eef-a6a0-932212a49b03",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "bulkUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the **bulkUpload** relationship to the [synchronizationJob](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJob?view=graph-rest-1.0) resource.",
+          "Target": "synchronizationJob"
+        }
+      ],
+      "Id": "162a31c1-d0f9-4eef-a6a0-932212a49b03",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-06T16:55:54.1915168Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
     },

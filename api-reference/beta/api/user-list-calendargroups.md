@@ -3,7 +3,7 @@ title: "List calendarGroups"
 description: "Get the user's calendar groups."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [CalendarGroup](../resources/calendargroup.md) objects in the response body.
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

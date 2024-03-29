@@ -2,6 +2,7 @@
 title: "Create user"
 description: "Create a new user."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -25,10 +26,13 @@ This operation returns by default only a subset of the properties for each user.
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "ignored", "name": "user_post_users" } -->
-[!INCLUDE [permissions-table](../includes/permissions/user-post-users-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,23 +42,23 @@ POST /users
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
-The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required, and **passwordPolicies** must be set to `DisablePasswordExpiration`. For a social identity, none of the properties are required.
+The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a social identity, none of the properties are required.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
 |accountEnabled |Boolean |True if the account is enabled; otherwise, false.|
-|displayName |string |The name to display in the address book for the user.|
-|onPremisesImmutableId |string |Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.|
-|mailNickname |string |The mail alias for the user.|
+|displayName |String |The name to display in the address book for the user.|
+|onPremisesImmutableId |String |Required only when creating a new user account if you are using a federated domain for the user's **userPrincipalName** (UPN) property.|
+|mailNickname |String |The mail alias for the user.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
-|userPrincipalName |string |The user principal name (someuser@contoso.com). It's an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
+|userPrincipalName |String |The user principal name (someuser@contoso.com). It's an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
 
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
@@ -72,12 +76,12 @@ If successful, this method returns a `201 Created` response code and a [user](..
 ### Example 1: Create a user
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
-<!-- {	
-  "blockType": "request",	
-  "name": "create_user_from_users_2"	
+<!-- {
+  "blockType": "request",
+  "name": "create_user_from_users_2"
 }-->
 
 ```http
@@ -88,7 +92,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "Adele Vance",
   "mailNickname": "AdeleV",
-  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+  "userPrincipalName": "AdeleV@contoso.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "xWwvJ]6NMw+bWH-d"
@@ -132,7 +136,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 ##### Response
-Here is an example of the response. 
+The following example shows the response.
 
 >[!NOTE]
 >The response object shown here might be shortened for readability.
@@ -153,29 +157,29 @@ Content-type: application/json
     "displayName": "Adele Vance",
     "givenName": "Adele",
     "jobTitle": "Product Marketing Manager",
-    "mail": "AdeleV@contoso.onmicrosoft.com",
+    "mail": "AdeleV@contoso.com",
     "mobilePhone": "+1 425 555 0109",
     "officeLocation": "18/2111",
     "preferredLanguage": "en-US",
     "surname": "Vance",
-    "userPrincipalName": "AdeleV@contoso.onmicrosoft.com"
+    "userPrincipalName": "AdeleV@contoso.com"
 }
 ```
 
 ### Example 2: Create a user with social and local account identities
 
-Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.  
+Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.
 
->[!NOTE] 
+>[!NOTE]
 >For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
 
 #### Request
 
 
 # [HTTP](#tab/http)
-<!-- {	
-  "blockType": "request",	
-  "name": "create_user_from_users_identities"	
+<!-- {
+  "blockType": "request",
+  "name": "create_user_from_users_identities"
 }-->
 
 ```http
@@ -187,12 +191,12 @@ Content-type: application/json
   "identities": [
     {
       "signInType": "userName",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "johnsmith"
     },
     {
       "signInType": "emailAddress",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
@@ -245,7 +249,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. 
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -265,12 +269,12 @@ Content-type: application/json
   "identities": [
     {
       "signInType": "userName",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "johnsmith"
     },
     {
       "signInType": "emailAddress",
-      "issuer": "contoso.onmicrosoft.com",
+      "issuer": "contoso.com",
       "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
@@ -283,7 +287,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

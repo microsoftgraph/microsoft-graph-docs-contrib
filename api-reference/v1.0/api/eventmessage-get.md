@@ -3,7 +3,7 @@ title: "Get eventMessage"
 description: "expand parameter on the **event** navigation property to get the associated event in an attendee's calendar."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -18,10 +18,13 @@ Currently, this operation returns event message bodies in only HTML format.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "eventmessage_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/eventmessage-get-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.Read    |
+|Delegated (personal Microsoft account) | Mail.Read    |
+|Application | Mail.Read |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -97,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -143,20 +146,20 @@ Content-type: application/json
     "sender":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "from":{
         "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
         }
     },
     "toRecipients":[
         {
             "emailAddress":{
                 "name":"Alex Wilber",
-                "address":"AlexW@contoso.onmicrosoft.com"
+                "address":"AlexW@contoso.com"
             }
         }
     ],
@@ -174,8 +177,8 @@ Content-type: application/json
 
 ### Example 2
 #### Request
-The second example shows how to get the event associated with an event message. It uses 
-the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, 
+The second example shows how to get the event associated with an event message. It uses
+the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property,
 and apply an $expand parameter to get the properties of the event.
 
 # [HTTP](#tab/http)
@@ -201,11 +204,11 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-based-on-eventmessage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -223,7 +226,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 ---
 
 #### Response
-Here is an example of the response. The properties of the associated event are returned in the response. 
+The following example shows the response. The properties of the associated event are returned in the response.
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -270,20 +273,20 @@ Content-type: application/json
    "sender":{
       "emailAddress":{
          "name":"Administrator",
-         "address":"admin@contoso.onmicrosoft.com"
+         "address":"admin@contoso.com"
       }
    },
    "from":{
       "emailAddress":{
          "name":"Administrator",
-         "address":"admin@contoso.onmicrosoft.com"
+         "address":"admin@contoso.com"
       }
    },
    "toRecipients":[
       {
          "emailAddress":{
             "name":"Alex Wilber",
-            "address":"AlexW@contoso.onmicrosoft.com"
+            "address":"AlexW@contoso.com"
          }
       }
    ],
@@ -353,7 +356,7 @@ Content-type: application/json
             },
             "emailAddress":{
                "name":"Administrator",
-               "address":"admin@contoso.onmicrosoft.com"
+               "address":"admin@contoso.com"
             }
          },
          {
@@ -364,19 +367,19 @@ Content-type: application/json
             },
             "emailAddress":{
                "name":"Alex Wilber",
-               "address":"AlexW@contoso.onmicrosoft.com"
+               "address":"AlexW@contoso.com"
             }
          }
       ],
       "organizer":{
          "emailAddress":{
             "name":"Administrator",
-            "address":"admin@contoso.onmicrosoft.com"
+            "address":"admin@contoso.com"
          }
       }
    }
 }
-``` 
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

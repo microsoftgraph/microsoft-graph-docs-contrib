@@ -3,7 +3,7 @@ title: "List trustFrameworkPolicies"
 description: "This operation lists all trustFrameworkPolicy objects in an Azure AD B2C tenant."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # List trustFrameworkPolicies
@@ -39,7 +39,7 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

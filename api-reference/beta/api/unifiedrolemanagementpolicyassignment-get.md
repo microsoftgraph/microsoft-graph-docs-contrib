@@ -3,7 +3,7 @@ title: "Get unifiedRoleManagementPolicyAssignment"
 description: "Read the properties and relationships of an unifiedRoleManagementPolicyAssignment object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -17,17 +17,27 @@ Get the details of a policy assignment in PIM that's assigned to Microsoft Entra
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+<a name='for-pim-for-azure-ad-roles'></a>
 
 ### For PIM for Microsoft Entra roles
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 
-<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyassignment_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyassignment-get-permissions.md)]
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ### For PIM for groups
-
-<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyassignment_get_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyassignment-get-2-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
 
 ## HTTP request
 
@@ -46,7 +56,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

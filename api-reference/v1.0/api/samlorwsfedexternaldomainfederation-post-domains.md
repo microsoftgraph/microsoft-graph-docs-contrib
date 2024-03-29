@@ -3,7 +3,7 @@ title: "Create externalDomainName"
 description: "Create a new externalDomainName object."
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -18,7 +18,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "samlorwsfedexternaldomainfederation_post_domains" } -->
 [!INCLUDE [permissions-table](../includes/permissions/samlorwsfedexternaldomainfederation-post-domains-permissions.md)]
 
-The work or school account needs to belong to one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+The work or school account needs to belong to one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Global Administrator
 * External Identity Provider Administrator
@@ -38,7 +38,7 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -76,10 +76,6 @@ Content-Type: application/json
     "id": "contososuites.com"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-externaldomainname-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-externaldomainname-from--javascript-snippets.md)]

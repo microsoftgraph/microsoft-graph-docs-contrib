@@ -3,7 +3,7 @@ title: "beginOnboarding action"
 description: "A request to start onboarding.  Must be coupled with the appropriate TeamViewer account information"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 A request to start onboarding.  Must be coupled with the appropriate TeamViewer account information
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/begi
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

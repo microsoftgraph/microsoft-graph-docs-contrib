@@ -2,6 +2,7 @@
 title: "authorizationSystemIdentity resource type"
 description: "A container representing an identity in an authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

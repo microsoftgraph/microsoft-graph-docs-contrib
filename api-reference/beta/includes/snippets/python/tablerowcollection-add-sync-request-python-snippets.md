@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.drives.item.items.item.workbook.tables.item.rows.rows_request_builder import RowsRequestBuilder
+from msgraph.generated.models.workbook_table_row import WorkbookTableRow
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -23,13 +25,10 @@ request_body = WorkbookTableRow(
 	],
 )
 
-request_configuration = RowsRequestBuilder.RowsRequestBuilderPostRequestConfiguration(
-headers = {
-		'Prefer' : "respond-async",
-		'Workbook-Session-Id' : "{Workbook-Session-Id}",
-}
+request_configuration = RowsRequestBuilder.RowsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Prefer", "respond-async")
+request_configuration.headers.add("Workbook-Session-Id", "{Workbook-Session-Id}")
 
-)
 
 result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.tables.by_workbook_table_id('workbookTable-id').rows.post(request_body, request_configuration = request_configuration)
 

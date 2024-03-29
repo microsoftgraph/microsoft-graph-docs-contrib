@@ -3,7 +3,7 @@ title: "filePlanDescriptorBase resource type"
 description: "Specifies properties common to file plan descriptor resources."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

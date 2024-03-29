@@ -3,7 +3,7 @@ title: "Update message"
 description: "Update the properties of message object."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -18,10 +18,13 @@ Update the properties of a message object.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "message_update" } -->
-[!INCLUDE [permissions-table](../includes/permissions/message-update-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite    |
+|Application | Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -69,7 +72,7 @@ add, update, or delete your own app-specific data in custom properties of an ext
 If successful, this method returns a `200 OK` response code and updated [message](../resources/message.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -125,7 +128,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -149,7 +152,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

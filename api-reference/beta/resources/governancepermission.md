@@ -3,8 +3,9 @@ title: "governancePermission resource type"
 description: "Represents the access permission that a governanceSubject has to a specific governanceResource.  "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
+ROBOTS: NOINDEX
 ---
 
 # governancePermission resource type
@@ -19,7 +20,7 @@ Represents the access permission that a [governanceSubject](../resources/governa
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |accessLevel|String|The access level. Valid values: ``None``, ``UserRead``, ``AdminRead``, and ``AdminReadWrite``.|
 |isActive|Boolean|Indicate if the requestor has any active role assignment for the access level.|

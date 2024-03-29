@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSettingValueTemplateReference resource type
 description: "Setting value template reference information"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

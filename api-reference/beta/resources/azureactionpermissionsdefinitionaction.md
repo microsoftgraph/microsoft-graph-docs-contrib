@@ -2,6 +2,7 @@
 title: "azureActionPermissionsDefinitionAction resource type"
 description: "Represents Azure actions."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

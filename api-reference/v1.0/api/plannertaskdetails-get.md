@@ -3,7 +3,7 @@ title: "Get plannerTaskDetails"
 description: "Retrieve the properties and relationships of a plannerTaskDetails object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ GET /planner/tasks/{id}/details
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -43,7 +43,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

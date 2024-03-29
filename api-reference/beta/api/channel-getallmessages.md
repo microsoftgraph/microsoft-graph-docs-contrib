@@ -3,7 +3,7 @@ title: "channel: getAllMessages"
 description: "Retrieve all messages across channels in a team."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -39,16 +39,16 @@ GET /teams/{team-id}/channels/getAllMessages
 
 You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
 as shown in the following examples.  
-If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
 
 ```http
 GET /teams/{team-id}/channels/getAllMessages?model=A
 GET /teams/{team-id}/channels/getAllMessages?model=B
 ```
-If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
+If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used. 
 
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
-Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) are not currently supported.
+Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
 ## Request body
 
@@ -105,6 +105,8 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 ---
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -3,7 +3,7 @@ title: "List targetDeviceGroups"
 description: "Get a list of the targetDeviceGroup objects and their properties on the remoteDesktopSecurityConfiguration resource on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -12,14 +12,13 @@ Namespace: microsoft.graph
 
 Get a list of the [targetDeviceGroup](../resources/targetdevicegroup.md) objects and their properties on the remoteDesktopSecurityConfiguration resource on the servicePrincipal. Any user authenticating using the Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136) to a [Microsoft Entra joined](/azure/active-directory/devices/concept-directory-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-hybrid-join) device that belongs to the targetDeviceGroup will get SSO.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All|
-|Delegated (personal Microsoft account) | Not supported.|
-|Application | Application.Read.All, Directory.Read.All, Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "remotedesktopsecurityconfiguration_list_targetdevicegroups" } -->
+[!INCLUDE [permissions-table](../includes/permissions/remotedesktopsecurityconfiguration-list-targetdevicegroups-permissions.md)]
 
 [!INCLUDE [rbac-remote-desktop-security-config-apis](../includes/rbac-for-apis/rbac-remote-desktop-security-config-apis.md)]
 
@@ -39,7 +38,7 @@ This method doesn't support OData query parameters to help customize the respons
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -84,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a677-0
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-targetdevicegroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-targetdevicegroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

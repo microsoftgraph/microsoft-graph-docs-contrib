@@ -3,7 +3,7 @@ title: "Add includeApplication (to a user flow)"
 description: "Add application to an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Add or link an application to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This enables the authentication experience that's defined by the user flow to be enabled for the application. An application can only be linked to one user flow.
 
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -36,7 +38,7 @@ POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/condition
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -49,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a new [auth
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -67,6 +69,18 @@ Content-Type: application/json
 
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-includeapplications-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-includeapplications-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-includeapplications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-includeapplications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -75,10 +89,22 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-includeapplications-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-includeapplications-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-includeapplications-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-includeapplications-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.authenticationConditionApplication",

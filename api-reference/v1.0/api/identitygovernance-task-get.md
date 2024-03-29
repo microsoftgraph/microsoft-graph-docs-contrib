@@ -3,7 +3,7 @@ title: "Get task"
 description: "Read the properties of a task object in a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a specific task from a [workflow](../resources/identitygovernance-workflow.md) or [workflowVersion](../resources/identitygovernance-workflowversion.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -54,7 +54,7 @@ This method does not support OData query parameters to help customize the respon
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 #### Request
 
-The following is an example of a request to get a task from a workflow.
+The following example shows a request to get a task from a workflow.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -147,7 +147,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request to get a task from a workflow version.
+The following example shows a request to get a task from a workflow version.
 
 # [HTTP](#tab/http)
 <!-- {

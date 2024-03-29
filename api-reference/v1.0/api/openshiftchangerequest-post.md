@@ -3,7 +3,7 @@ title: "Create openShiftChangeRequest"
 description: "Create an instance of an openShiftChangeRequest object."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ POST /teams/{id}/schedule/openShiftChangeRequests
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 

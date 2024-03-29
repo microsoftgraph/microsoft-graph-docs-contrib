@@ -3,7 +3,7 @@ title: "List targetDeviceGroups"
 description: "Get a list of the targetDeviceGroup objects and their properties on the remoteDesktopSecurityConfiguration resource on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [targetDeviceGroup](../resources/targetdevicegroup.md) objects and their properties on the remoteDesktopSecurityConfiguration resource on the servicePrincipal. Any user authenticating using the Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136) to a [Microsoft Entra joined](/azure/active-directory/devices/concept-directory-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-hybrid-join) device that belongs to the targetDeviceGroup will get SSO.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,7 +40,7 @@ This method doesn't support OData query parameters to help customize the respons
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -50,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-Here's an example of the request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -96,7 +98,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

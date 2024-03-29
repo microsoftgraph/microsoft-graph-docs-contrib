@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to search OneDrive and SharePoint content"
 description: "Use the Microsoft Search API in Microsoft Graph to search content stored in OneDrive or SharePoint: files, folders, lists, list items, or sites."
 author: "njerigrevious"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to search OneDrive and SharePoint content
@@ -499,7 +499,9 @@ Content-Type: application/json
 
 ## Known limitations
 
-When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
+- When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
+
+- The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
 
 ## Next steps
 

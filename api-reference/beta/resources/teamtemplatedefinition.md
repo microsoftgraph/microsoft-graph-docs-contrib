@@ -3,7 +3,7 @@ title: "teamTemplateDefinition"
 description: "Generic representation of a team template definition for a team with a specific structure and configuration."
 author: "Charlieforce"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -77,7 +77,7 @@ The following is a JSON representation of the resource.
   "shortDescription": "String"
 }
 ```
-## See also
+## Related content
 
 - [team](team.md)
 - [teamsTemplate](teamsTemplate.md)

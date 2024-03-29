@@ -3,7 +3,7 @@ title: "call: recordResponse"
 description: "Records a short audio response from the caller. This is useful if the bot wishes to capture a voice response from the caller following a prompt."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /communications/calls/{id}/recordResponse
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

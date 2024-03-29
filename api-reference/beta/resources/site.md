@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: The site resource provides metadata and relationships for a SharePoint site.
 title: site resource type
 ms.localizationpriority: high
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -79,8 +79,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
 | **displayName**          | string             | The full title for the site. Read-only.                                                        |
 | **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
-| **name**                 | string             | The name / title of the item.                                                                  |
-| **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.            |
+| **name**                 | string             | The name/title of the item.                                                                  |
+| **root**                 | [root][]           | If present, provides the root site in the site collection. Read-only.            |
 | **settings**             | [siteSettings]     | The settings on this site. Read-only.                                |
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
@@ -102,16 +102,16 @@ The `root` identifier always references the root site for a given target, as fol
 
 | Relationship    | Type                                                                            | Description                                                                                                                                |
 | :---------------| :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
-| analytics       | [itemAnalytics][]                                                      | Analytics about the view activities that took place in this site.                                                                          |
+| analytics       | [itemAnalytics][]                                                      | Analytics about the view activities that took place on this site.                                                                          |
 | columns         | [columnDefinition][] collection                                                | The collection of column definitions reusable across lists under this site.                                                                |
 | contentTypes    | [contentType][] collection                                                     | The collection of content types defined for this site.                                                                                     |
 | drive           | [drive][]                                                                       | The default drive (document library) for this site.                                                                                        |
 | drives          | [drive][] collection                                                           | The collection of drives (document libraries) under this site.                                                                             |
-| externalColumns | [columnDefinition][] collection                                                | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site. |
-| items           | [baseItem][] collection                                                        | Used to address any item contained in this site. This collection cannot be enumerated.                                                     |
+| externalColumns | [columnDefinition][] collection                                                | The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site. |
+| items           | [baseItem][] collection                                                        | Used to address any item contained in this site. This collection can't be enumerated.                                                     |
 | lists           | [list][] collection                                                            | The collection of lists under this site.                                                                                                   |
 | operations      | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the site.                                                                                    |
-| pages           | [baseSitePage][] collection                                                    | The collection of pages in the baseSitePages list in this site.                                                                                |
+| pages           | [baseSitePage][] collection                                                    | The collection of pages in the baseSitePages list on this site.                                                                                |
 | permissions     | [permission][] collection                                                      | The permissions associated with the site. Nullable.                                                                                        |
 | recycleBin      | [recycleBin][]                                                                 | A container for a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in this site. |
 | sites           | [site][] collection                                                            | The collection of the sub-sites under this site.                                                                                           |
@@ -136,7 +136,7 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 The **site** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 

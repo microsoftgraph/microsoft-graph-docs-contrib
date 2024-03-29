@@ -38,13 +38,13 @@ additionalData := map[string]interface{}{
 }
 conversationMember1.SetAdditionalData(additionalData)
 
-values := []graphmodels.conversationMemberable {
+values := []graphmodels.ConversationMemberable {
 	conversationMember,
 	conversationMember1,
 }
 requestBody.SetValues(values)
 
-add, err := graphClient.Teams().ByTeamId("team-id").Members().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Teams().ByTeamId("team-id").Members().Add().PostAsAddPostResponse(context.Background(), requestBody, nil)
 
 
 ```

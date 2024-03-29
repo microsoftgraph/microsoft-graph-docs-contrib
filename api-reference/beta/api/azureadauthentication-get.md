@@ -3,7 +3,7 @@ title: "Get azureADAuthentication"
 description: "Read the properties and relationships of an azureADAuthentication object to find Microsoft Entra SLA attainment for your tenant."
 author: "SarahBar"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "azureadauthentication_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/azureadauthentication-get-permissions.md)]
 
-In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Global Administrator
 + Global Reader
 + Reports Reader
@@ -46,7 +46,7 @@ This method doesn't take any parameters.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [azureADAuthe
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -3,7 +3,7 @@ title: "Get companySubscription"
 description: "Get a specific commercial subscription that an organization has acquired."
 ms.localizationpriority: medium
 author: "arp19690"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -128,8 +128,7 @@ Content-length: 450
       "appliesTo": "User",
       "provisioningStatus": "Success",
       "servicePlanId": "8b8269e5-f841-416c-ab3a-f5dfb9737986",
-      "servicePlanName": "MyPlanName",
-      "serviceType": "YammerEnterprise"
+      "servicePlanName": "MyPlanName"
     }
   ],
   "skuId": "0816ccb9-3785-4d19-bf78-6c53e2106509",

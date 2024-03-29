@@ -2,6 +2,7 @@
 title: "azureIdentity resource type"
 description: "Represents identities in Azure including managed identities, service principals, users, groups, and serverless functions."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

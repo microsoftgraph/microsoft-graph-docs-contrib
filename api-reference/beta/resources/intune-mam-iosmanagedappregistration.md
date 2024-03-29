@@ -3,7 +3,7 @@ title: "iosManagedAppRegistration resource type"
 description: "Represents the synchronization details of an ios app, with management capabilities, for a specific user. The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -53,6 +53,7 @@ Inherits from [managedAppRegistration](../resources/intune-mam-managedappregistr
 |:---|:---|:---|
 |appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |intendedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Zero or more policies admin intended for the app as of now. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|managedAppLogCollectionRequests|[managedAppLogCollectionRequest](../resources/intune-mam-managedapplogcollectionrequest.md) collection|Zero or more log collection requests triggered for the app. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |operations|[managedAppOperation](../resources/intune-mam-managedappoperation.md) collection|Zero or more long running operations triggered on the app registration. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
 ## JSON Representation

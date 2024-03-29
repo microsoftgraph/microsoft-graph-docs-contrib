@@ -3,7 +3,7 @@ title: "outlookTaskGroup resource type"
 description: "A group of folders (outlookTaskFolder) that contain Outlook tasks (collection of outlookTask objects). "
 author: "mashriv"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

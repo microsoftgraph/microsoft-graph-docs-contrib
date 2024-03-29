@@ -1,9 +1,9 @@
 ---
 title: "Update event"
 description: "Update an event object."
-author: "Jordanndahl"
+author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -17,10 +17,13 @@ Update an [event](../resources/event.md) object.
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "group_update_event" } -->
-[!INCLUDE [permissions-table](../includes/permissions/group-update-event-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -184,7 +187,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Johanna Lorenz",
-                "address": "JohannaL@contoso.OnMicrosoft.com"
+                "address": "JohannaL@contoso.com"
             }
         },
         {
@@ -195,7 +198,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Retail",
-                "address": "Retail@contoso.onmicrosoft.com"
+                "address": "Retail@contoso.com"
             }
         },
         {
@@ -206,7 +209,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+                "address": "AlexW@contoso.com"
             }
         },
         {
@@ -217,7 +220,7 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Megan Bowen",
-                "address": "MeganB@contoso.OnMicrosoft.com"
+                "address": "MeganB@contoso.com"
             }
         },
         {
@@ -228,14 +231,14 @@ HTTP/1.1 200 OK
             },
             "emailAddress": {
                 "name": "Nestor Wilke",
-                "address": "NestorW@contoso.OnMicrosoft.com"
+                "address": "NestorW@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Retail",
-            "address": "Retail@contoso.onmicrosoft.com"
+            "address": "Retail@contoso.com"
         }
     }
 }

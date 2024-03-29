@@ -1,13 +1,14 @@
 ---
 title: Set employeeLeaveDateTime
-description: Configure the employeeLeaveDateTime property for a user object using Microsoft Graph. 
-author: "FaithOmbongi"
-ms.reviewer: Alexander.Filipin
+description: Configure the employeeLeaveDateTime property for a user using Microsoft Graph. 
+author: FaithOmbongi
 ms.author: ombongifaith
+ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
-ms.prod: "governance"
-doc_type: conceptualPageType
-ms.date: 12/08/2022
+ms.subservice: entra-id-governance
+ms.topic: how-to
+ms.date: 01/03/2024
+#Customer intent: As a developer integrating with Microsoft Graph, I want programmatically configure the employeeLeaveDateTime property for a user, so that I can trigger scheduled "leaver" workflows using Lifecycle Workflows.
 ---
 
 # Configure the employeeLeaveDateTime property for a user
@@ -16,24 +17,24 @@ This article describes how to configure the **employeeLeaveDateTime** attribute 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|User.Read.All and User-LifeCycleInfo.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|User.Read.All and User-LifeCycleInfo.ReadWrite.All|
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.Read.All and User-LifeCycleInfo.ReadWrite.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|User.Read.All and User-LifeCycleInfo.ReadWrite.All|Not available.|
 
 For delegated scenarios, the admin must also have the Global Administrator [Microsoft Entra role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## Request
 
-The following example shows a user who will leave on September 30, 2022 at 23:59.
+The following example configures September 30, 2022 at 23:59 as the date and time when the user will leave the organization.
 
 # [HTTP](#tab/http)
 
 ```http
-PATCH https://graph.microsoft.com/beta/users/df744d9e-2148-4922-88a8-633896c1e929
+PATCH https://graph.microsoft.com/v1.0/users/df744d9e-2148-4922-88a8-633896c1e929
 
 {
     "employeeLeaveDateTime": "2022-09-30T23:59:59Z"
@@ -44,19 +45,20 @@ PATCH https://graph.microsoft.com/beta/users/df744d9e-2148-4922-88a8-633896c1e92
 
 ```powershell    
     Connect-MgGraph -Scopes "User.Read.All","User-LifeCycleInfo.ReadWrite.All"
-    Select-MgProfile -Name "beta"
+    Select-MgProfile -Name "v1.0"
 
     $UserId = "528492ea-779a-4b59-b9a3-b3773ef6da6d"
     $employeeLeaveDateTime = "2022-09-30T23:59:59Z"
     
-    Update-MgUser -UserId $UserId -EmployeeLeaveDateTime $employeeLeaveDateTime
+    Update-MgUser -UserId $UserId -EmployeeLeaveDateTime $employeeLeaveDateTime 
 
-    $User = Get-MgUser -UserId $UserId
+    $User = Get-MgUser -UserId $UserId -Property EmployeeLeaveDateTime
     $User.EmployeeLeaveDateTime
- ```
+```
+
 ---
 
-## Next steps
+## Related content
 
 - [Lifecycle Workflows API overview](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
 - [How to synchronize attributes for Lifecycle workflows](/azure/active-directory/governance/how-to-lifecycle-workflow-sync-attributes)

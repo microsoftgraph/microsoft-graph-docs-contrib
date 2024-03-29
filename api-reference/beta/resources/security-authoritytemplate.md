@@ -3,7 +3,7 @@ title: "authorityTemplate resource type"
 description: "Specifies the underlying authority that describes the type of content to be retained and its retention schedule."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

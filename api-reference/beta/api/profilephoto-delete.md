@@ -62,7 +62,7 @@ DELETE /groups/{id}/photo/$value
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -86,10 +86,6 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/photo/$value
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-profilephoto-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-profilephoto-javascript-snippets.md)]

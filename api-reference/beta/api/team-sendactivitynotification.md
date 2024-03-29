@@ -3,7 +3,7 @@ title: "team: sendActivityNotification"
 description:  Send an activity feed notification in the scope of a team.
 author: RamjotSingh
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /teams/{teamId}/sendActivityNotification
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -50,12 +50,13 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Topic of the notification. Specifies the resource being talked about.|
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|The topic of the notification. Specifies the resource being talked about.|
 |activityType|String|The activity type must be declared in the [Teams app manifest](/microsoftteams/platform/overview), except for `systemDefault` [Reserved activity type](/graph/teams-send-activityfeednotifications/#reserved-activity-types), which provides free-form text in the `Actor+Reason` line of the notification.|
-|chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
-|previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams only shows the first 150 characters.|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. For more information, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md), [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md), and [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). |
+|chainId|Int64|Optional. The chain ID of the notification. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
+|previewText|[itemBody](../resources/itembody.md)|The preview text for the notification. Microsoft Teams only shows the first 150 characters.|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview).|
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|The recipient of the notification. For more information, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md), [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md), and [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). |
+| teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
 
@@ -682,7 +683,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Activity feed notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/csharp)
 - [Activity feed notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/nodejs)

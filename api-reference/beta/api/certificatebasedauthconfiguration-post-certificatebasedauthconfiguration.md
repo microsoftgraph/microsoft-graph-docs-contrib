@@ -3,7 +3,7 @@ title: "Create certificateBasedAuthConfiguration"
 description: "Use this API to create a new certificateBasedAuthConfiguration."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -41,7 +41,7 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body

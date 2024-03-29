@@ -4,16 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ReportsEntitiesSummariesCollectionPage entitiesSummaries = graphClient.networkAccess().reports()
-	.entitiesSummaries(ReportsEntitiesSummariesParameterSet
-		.newBuilder()
-		.withStartDateTime(2023-01-01T00:00:00Z)
-		.withEndDateTime(2023-01-31T00:00:00Z)
-		.build())
-	.buildRequest()
-	.filter("trafficType eq 'microsoft365'")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.networkAccess().reports().microsoftGraphNetworkaccessEntitiesSummariesWithStartDateTimeWithEndDateTime(OffsetDateTime.parse("{endDateTime}"), OffsetDateTime.parse("{startDateTime}")).get();
+
 
 ```

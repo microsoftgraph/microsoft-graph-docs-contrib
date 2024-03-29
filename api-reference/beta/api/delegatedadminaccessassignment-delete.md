@@ -3,7 +3,7 @@ title: "Delete delegatedAdminAccessAssignment"
 description: "Delete a delegatedAdminAccessAssignment object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminAccessAssignment** to be deleted. Required. Retrieve the ETag value from a LIST or GET operation.|
 
 ## Request body

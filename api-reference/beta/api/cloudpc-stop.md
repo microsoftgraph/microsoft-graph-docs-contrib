@@ -3,7 +3,7 @@ title: "cloudPC: stop"
 description: "Stop a specific Cloud PC for a user."
 author: "rbayetov"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /me/cloudPCs/{cloudPCId}/stop
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

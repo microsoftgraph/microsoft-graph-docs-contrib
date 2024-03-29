@@ -3,7 +3,7 @@ title: "List events"
 description: "Get a list of event objects from the user's default calendar or "
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -44,10 +44,13 @@ You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties
 find out the time zone used when the event was created.
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "user_list_events" } -->
-[!INCLUDE [permissions-table](../includes/permissions/user-list-events-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite|
+|Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -134,7 +137,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 ##### Response 1
-Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
+The following example shows the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
   "name": "get_events",
@@ -189,7 +192,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Samantha Booth",
-                        "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"samanthab@contoso.com"
                     }
                 },
                 {
@@ -200,14 +203,14 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Dana Swope",
-                        "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"danas@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             }
         }
@@ -265,7 +268,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 ##### Response 2
-Here is an example of the response. The **body** property is returned in text format.
+The following example shows the response. The **body** property is returned in text format.
 
 <!-- {
   "blockType": "response",

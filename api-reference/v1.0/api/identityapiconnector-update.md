@@ -3,7 +3,7 @@ title: "Update identityApiConnector"
 description: "Update the properties of an identityApiConnector object."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Update the properties of an [identityApiConnector](../resources/identityapiconnector.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -41,7 +41,7 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

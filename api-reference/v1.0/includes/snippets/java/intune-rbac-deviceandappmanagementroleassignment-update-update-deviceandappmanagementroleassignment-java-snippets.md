@@ -4,20 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 DeviceAndAppManagementRoleAssignment deviceAndAppManagementRoleAssignment = new DeviceAndAppManagementRoleAssignment();
-deviceAndAppManagementRoleAssignment.displayName = "Display Name value";
-deviceAndAppManagementRoleAssignment.description = "Description value";
-LinkedList<String> resourceScopesList = new LinkedList<String>();
-resourceScopesList.add("Resource Scopes value");
-deviceAndAppManagementRoleAssignment.resourceScopes = resourceScopesList;
-LinkedList<String> membersList = new LinkedList<String>();
-membersList.add("Members value");
-deviceAndAppManagementRoleAssignment.members = membersList;
+deviceAndAppManagementRoleAssignment.setOdataType("#microsoft.graph.deviceAndAppManagementRoleAssignment");
+deviceAndAppManagementRoleAssignment.setDisplayName("Display Name value");
+deviceAndAppManagementRoleAssignment.setDescription("Description value");
+LinkedList<String> resourceScopes = new LinkedList<String>();
+resourceScopes.add("Resource Scopes value");
+deviceAndAppManagementRoleAssignment.setResourceScopes(resourceScopes);
+LinkedList<String> members = new LinkedList<String>();
+members.add("Members value");
+deviceAndAppManagementRoleAssignment.setMembers(members);
+DeviceAndAppManagementRoleAssignment result = graphClient.deviceManagement().roleAssignments().byDeviceAndAppManagementRoleAssignmentId("{deviceAndAppManagementRoleAssignment-id}").patch(deviceAndAppManagementRoleAssignment);
 
-graphClient.deviceManagement().roleAssignments("{deviceAndAppManagementRoleAssignmentId}")
-	.buildRequest()
-	.patch(deviceAndAppManagementRoleAssignment);
 
 ```

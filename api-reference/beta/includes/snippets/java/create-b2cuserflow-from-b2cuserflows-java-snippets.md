@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 B2cIdentityUserFlow b2cIdentityUserFlow = new B2cIdentityUserFlow();
-b2cIdentityUserFlow.id = "Customer";
-b2cIdentityUserFlow.userFlowType = UserFlowType.SIGN_UP_OR_SIGN_IN;
-b2cIdentityUserFlow.userFlowTypeVersion = 3;
+b2cIdentityUserFlow.setId("Customer");
+b2cIdentityUserFlow.setUserFlowType(UserFlowType.SignUpOrSignIn);
+b2cIdentityUserFlow.setUserFlowTypeVersion(3f);
+B2cIdentityUserFlow result = graphClient.identity().b2cUserFlows().post(b2cIdentityUserFlow);
 
-graphClient.identity().b2cUserFlows()
-	.buildRequest()
-	.post(b2cIdentityUserFlow);
 
 ```

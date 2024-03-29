@@ -3,7 +3,7 @@ title: "huntingRowResult resource type"
 description: "One row results of hunting query API"
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

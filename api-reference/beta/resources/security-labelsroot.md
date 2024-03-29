@@ -3,7 +3,7 @@ title: "labelsRoot resource type"
 description: "A root resource for capabilities that support records management for Microsoft 365 data in an organization."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

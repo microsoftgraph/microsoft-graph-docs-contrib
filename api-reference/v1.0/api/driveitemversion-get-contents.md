@@ -2,7 +2,7 @@
 title: "Download contents of a driveItemVersion resource"
 description: "Retrieve the contents of a specific version of a driveItem."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
@@ -37,6 +37,11 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ```
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

@@ -3,7 +3,7 @@ title: "teamsAppInstallation in a team: upgrade"
 description: "Upgrade an app installation in a team"
 author: "akjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ POST /teams/{team-id}/installedApps/{app-installation-id}/upgrade
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -107,7 +107,7 @@ POST https://graph.microsoft.com/v1.0/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/upgrade-teamsapp-in-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -206,7 +206,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

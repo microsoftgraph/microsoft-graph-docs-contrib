@@ -4,7 +4,7 @@ description: "Delete an identityProvider from a b2cIdentityUserFlow. (deprecated
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Delete an identityProvider from a b2cIdentityUserFlow (deprecated)
@@ -42,7 +42,7 @@ DELETE /identity/b2cUserFlows/{id}/identityProviders/{id}/$ref
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

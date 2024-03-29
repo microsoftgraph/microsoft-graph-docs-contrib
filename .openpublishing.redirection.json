@@ -1,0 +1,14 @@
+{
+    "redirections": [
+        {
+            "source_path": "api-reference/v1.0/resources/printreleasemechanism.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
+            "redirect_document_id": true
+        },    
+        {
+            "source_path": "api-reference/beta/resources/printreleasemechanism.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
+            "redirect_document_id": false
+        }
+    ]
+}

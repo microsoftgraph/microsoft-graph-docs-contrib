@@ -3,7 +3,7 @@ title: "Add tab to chat"
 description: "Adds (pins) a tab to the specified chat. "
 author: "subray"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ POST /chats/{chat-id}/tabs
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Add tab to channel](channel-post-tabs.md)

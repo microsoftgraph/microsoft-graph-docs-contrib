@@ -3,7 +3,7 @@ title: "Delete subCategoryTemplate"
 description: "Delete a subCategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ DELETE /security/labels/categories/{categoryTemplateId}/subCategories/{subCatego
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -45,7 +45,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -55,10 +55,6 @@ Here's an example of a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/security/labels/categories/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5/subCategories/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-subcategorytemplate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-subcategorytemplate-javascript-snippets.md)]

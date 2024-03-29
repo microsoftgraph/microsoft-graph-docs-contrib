@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CrossTenantAccessPolicy crossTenantAccessPolicy = new CrossTenantAccessPolicy();
-LinkedList<String> allowedCloudEndpointsList = new LinkedList<String>();
-allowedCloudEndpointsList.add("microsoftonline.us");
-allowedCloudEndpointsList.add("partner.microsoftonline.cn");
-crossTenantAccessPolicy.allowedCloudEndpoints = allowedCloudEndpointsList;
+LinkedList<String> allowedCloudEndpoints = new LinkedList<String>();
+allowedCloudEndpoints.add("microsoftonline.us");
+allowedCloudEndpoints.add("partner.microsoftonline.cn");
+crossTenantAccessPolicy.setAllowedCloudEndpoints(allowedCloudEndpoints);
+CrossTenantAccessPolicy result = graphClient.policies().crossTenantAccessPolicy().patch(crossTenantAccessPolicy);
 
-graphClient.policies().crossTenantAccessPolicy()
-	.buildRequest()
-	.patch(crossTenantAccessPolicy);
 
 ```

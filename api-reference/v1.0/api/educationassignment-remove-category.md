@@ -3,7 +3,7 @@ title: "Remove educationCategory"
 description: "Remove an existing educationCategory from this educationAssignment."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

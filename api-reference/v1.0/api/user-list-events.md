@@ -3,7 +3,7 @@ title: "List events"
 description: "Get a list of event objects in the user's mailbox. The list contains single "
 ms.localizationpriority: high
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -11,10 +11,10 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 
+Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single
 instance meetings and series masters.
 
-To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
+To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or
 [get the instances of an event](event-list-instances.md).
 
 Currently, this operation returns event bodies in only HTML format.
@@ -28,25 +28,28 @@ There are two scenarios where an app can get events in another user's calendar:
 
 ### Support various time zones
 
-For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response. 
+For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.
 
 For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.
 ```http
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. 
-See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end 
+If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header.
+See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end
 times are returned in UTC.
 
-You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
+You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to
 find out the time zone used when the event was created.
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "user_list_events" } -->
-[!INCLUDE [permissions-table](../includes/permissions/user-list-events-permissions.md)]
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -80,9 +83,9 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request. It specifies the following:
+The following example shows a request. It specifies the following:
 
-- A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
+- A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 
 
@@ -131,7 +134,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 ##### Response
-Here is an example of the response. The **body** property is returned in the default HTML format.
+The following example shows the response. The **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -185,7 +188,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Samantha Booth",
-                        "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"samanthab@contoso.com"
                     }
                 },
                 {
@@ -196,14 +199,14 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     },
                     "emailAddress":{
                         "name":"Dana Swope",
-                        "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+                        "address":"danas@contoso.com"
                     }
                 }
             ],
             "organizer":{
                 "emailAddress":{
                     "name":"Samantha Booth",
-                    "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
+                    "address":"samanthab@contoso.com"
                 }
             }
         }

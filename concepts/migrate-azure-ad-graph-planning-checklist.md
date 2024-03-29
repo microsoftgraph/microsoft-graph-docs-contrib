@@ -1,12 +1,14 @@
 ---
 title: "Azure Active Directory (Azure AD) Graph app migration checklist"
 description: "Use this checklist to migrate your apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
+ms.topic: quickstart
 ms.localizationpriority: medium
-ms.prod: "applications"
-ms.date: 11/11/2022
+ms.subservice: entra-applications
+ms.date: 01/12/2024
+#Customer intent: As a developer, what are some of the things I need to consider when migrating my app from Azure AD Graph to Microsoft Graph?
 ---
 
 # Azure AD Graph app migration planning checklist
@@ -15,9 +17,9 @@ Use the following checklist to plan your migration from Azure Active Directory (
 
 ## Step 1: Review the differences between the APIs
 
-In many respects, Microsoft Graph is similar to the earlier Azure AD Graph. In many cases, simply change the endpoint service name and version in your code, and everything should continue to work.
+In many respects, Microsoft Graph is similar to the earlier Azure AD Graph. In many cases, change the endpoint, version, and resource name in your code, and everything should continue to work.
 
-Nonetheless, there are differences. Certain resources, properties, methods, and core capabilities have changed.
+Nonetheless, there are differences. Certain resources, properties, methods, and core capabilities changed.
 
 Specifically, look for differences in the following areas:
 
@@ -32,26 +34,23 @@ Specifically, look for differences in the following areas:
 
 [Examine the APIs](migrate-azure-ad-graph-audit-api-use.md) used by your app, the permissions they require, and compare to the list of known differences.  
 
-Verify that the APIs your app needs are generally available in Microsoft Graph v1.0 and that these APIs work the same way.
+For production, verify that the APIs your app needs are generally available in Microsoft Graph v1.0 and inspect whether they work like in Azure AD Graph or differently.
 
-In some cases, new capabilities and features are designed to replace earlier approaches.
-
-Use [Graph Explorer](https://aka.ms/ge) to experiment with new calls and to develop new approaches. For best results, sign in using the credentials of a test user in a test tenant so that you see what the API does over important data sets.
+For testing, use [Graph Explorer](https://aka.ms/ge) to experiment with API calls and to develop new approaches. For best results, sign in using the credentials of a test user in a test tenant so that you verify the API behavior in a realistic environment.
 
 ## Step 3: Review app details
 
-- [App registration](migrate-azure-ad-graph-app-registration.md) and consent changes (which should be none).
+- [App registration](migrate-azure-ad-graph-app-registration.md) and consent changes.
 - Token acquisition and [authentication libraries](migrate-azure-ad-graph-authentication-library.md).
 - For .NET applications, use of [client libraries](migrate-azure-ad-graph-client-libraries.md).
 
 ## Step 4: Deploy, test, and extend your app
 
-Before updating your app for everyone, ensure you test thoroughly and stage your rollout to your customer audience.
+Before updating your app for production, ensure you test thoroughly and stage your rollout to your customer audience.
 
-Now you've made the switch to Microsoft Graph, it's never been easier for you to unlock many more datasets and features that are now at your fingertips. You can get a taste of what's possible by looking at some of the [Major services and features in Microsoft Graph](./overview-major-services.md).
+After switching to Microsoft Graph, you unlock many more datasets and features that are defined in [Major services and features in Microsoft Graph](./overview-major-services.md).
 
-[Microsoft Authentication Library](/azure/active-directory/develop/reference-v2-libraries) (MSAL) is now the recommended authentication library for use with the Microsoft identity platform. If you're currently using the [Azure Active Directory Authentication Library](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), plan to switch to MSAL. See further guidance to [migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
+## Next step
 
-## Next steps
-
-- Learn about [request call syntax](migrate-azure-ad-graph-request-differences.md) to start step 1: reviewing API differences.
+> [!div class="nextstepaction"]
+> [Learn about the request call syntax](migrate-azure-ad-graph-request-differences.md)

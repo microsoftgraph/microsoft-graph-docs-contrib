@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a unifiedRoleAssignme
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -20,35 +20,44 @@ Retrieve the properties and relationships of a [unifiedRoleAssignment](../resour
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For Directory (Microsoft Entra ID) provider
+<a name='for-directory-azure-ad-provider'></a>
 
-<!-- { "blockType": "permissions", "name": "unifiedroleassignment_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-get-permissions.md)]
+### For directory (Microsoft Entra ID) provider
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
-### For Entitlement management provider
-
-<!-- { "blockType": "permissions", "name": "unifiedroleassignment_get_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-get-2-permissions.md)]
+### For entitlement management provider
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ### For an Exchange Online provider
-
-<!-- { "blockType": "permissions", "name": "unifiedroleassignment_get_3" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-get-3-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange |
 
 ## HTTP request
 
 Get a role assignment for a directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /roleManagement/directory/roleAssignments/{id}
 ```
 
 Get a role assignment for the entitlement management provider:
-
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -58,20 +67,19 @@ GET /roleManagement/entitlementManagement/roleAssignments/{id}
 Get a role assignment for the Exchange Online provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /roleManagement/exchange/roleAssignments/{id}
 ```
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports th `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -160,11 +168,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get details of a role assignment with `$expand`
+### Example 2: Get details of a role assignment and expand the role definition
 
 #### Request
 
-The following is an example of the request with the `$expand` query parameter.
+The following example shows a request with the `$expand` query parameter.
 
 
 # [HTTP](#tab/http)
@@ -250,6 +258,7 @@ Content-type: application/json
     "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d"
 }
 ```
+
 ### Example 3: Get details of a role assignment from Exchange Online Provider
 
 #### Request
@@ -293,7 +302,7 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments/6f0
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

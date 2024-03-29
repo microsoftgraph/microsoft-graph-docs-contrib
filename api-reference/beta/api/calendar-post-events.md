@@ -3,7 +3,7 @@ title: "Create event"
 description: "Use this API to create a new event in the default or the specified calendar."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md). 
+Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -96,7 +96,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -141,7 +141,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. All  the properties will be returned from an actual call.
 <!-- {
@@ -226,14 +226,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Megan Bowen",
-            "address": "MeganB@contoso.OnMicrosoft.com"
+            "address": "MeganB@contoso.com"
         }
     }
 }
@@ -276,7 +276,7 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
+        "address":"adelev@contoso.com",
         "name": "Adele Vance"
       },
       "type": "required"
@@ -322,7 +322,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -405,14 +405,14 @@ Content-type: application/json
             },
             "emailAddress": {
                 "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
+                "address": "AdeleV@contoso.com"
             }
         }
     ],
     "organizer": {
         "emailAddress": {
             "name": "Megan Bowen",
-            "address": "MeganB@contoso.OnMicrosoft.com"
+            "address": "MeganB@contoso.com"
         }
     },
     "onlineMeeting": {

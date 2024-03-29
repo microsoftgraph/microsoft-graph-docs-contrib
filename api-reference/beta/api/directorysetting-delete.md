@@ -1,9 +1,10 @@
 ---
 title: "Delete directorySetting"
 description: "Delete a directory setting."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -32,6 +33,8 @@ The following permissions are required to update the "Consent Policy Settings" *
 <!-- { "blockType": "permissions", "name": "directorysetting_delete_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directorysetting-delete-2-permissions.md)]
 
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 Delete a tenant-wide setting.
@@ -48,7 +51,7 @@ DELETE /groups/{groupId}/settings/{directorySettingId}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -59,7 +62,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -3,7 +3,7 @@ title: "List channel messages"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. To get the replies for a message, call the list message replies or the get message reply API. "
 ms.localizationpriority: high
 author: RamjotSingh
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -17,21 +17,18 @@ To get the replies for a message, call the [list message replies](chatmessage-li
 
 This method supports federation. To list channel messages in application context, the request must be made from the tenant that the channel owner belongs to (represented by the **tenantId** property on the channel).
 
-> **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
+> **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/change-notifications-api-overview.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| ChannelMessage.Read.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
+<!-- { "blockType": "permissions", "name": "channel_list_messages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-list-messages-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Note**: The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -57,7 +54,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -73,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request with $top query option and without optional prefer header.
+The following example shows a request with the $top query option and without the optional prefer header.
 
 
 # [HTTP](#tab/http)
@@ -122,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 ---
 
 #### Response
-The following is an example of the request. `@odata.nextLink` in the response can be used to get the next page of messages.
+The following example shows a request. `@odata.nextLink` in the response can be used to get the next page of messages.
 
 <!-- {
   "blockType": "response",
@@ -312,7 +309,7 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-listchannelmessages-2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -334,7 +331,7 @@ Prefer: include-unknown-enum-members
 ---
 
 #### Response
-The following is an example of the response  when `Prefer: include-unknown-enum-members` is provided in the request header.
+The following example shows the response when `Prefer: include-unknown-enum-members` is provided in the request header.
 
 <!-- {
   "blockType": "response",
