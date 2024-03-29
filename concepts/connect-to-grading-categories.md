@@ -131,7 +131,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## Update a grading category
-You might want to change the criteria or the weight of a grading category for your assignment. For example, this can help you fine-tune your evaluation and better reflect your expectations and goals. In this article, we will show you how to update a grading category, and how it affects your existing and future assignments. You will also learn about some common scenarios where updating a grading category can be useful. 
+You might want to change the criteria or the weight of a grading category for your assignment. For example, this can help you fine-tune your evaluation and better reflect your expectations and goals. In this section, we will show you how to update a grading category, and how it affects your existing and future assignments. You will also learn about some common scenarios where updating a grading category can be useful. 
 
 - [Update single gradingCategory](/graph/api/educationgradingcategory-update): This is used to update a single gradingCategory.
 
