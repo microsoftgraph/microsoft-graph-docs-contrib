@@ -18,6 +18,11 @@ Represents the entity that performs a bulk restore action. Perform a bulk restor
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
 ## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List bulkActions](../api/virtualendpoint-list-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
+|[Create cloudPcBulkAction](../api/virtualendpoint-post-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Create a new [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
+|[Get cloudPcBulkAction](../api/cloudpcbulkaction-get.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Read the properties and relationships of a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
 
 ## Properties
 |Property|Type|Description|
