@@ -17,8 +17,6 @@ This is an abstract type noting the workflow execution conditions in [workflowTe
 
 + [onDemandExecutionOnly](../resources/identitygovernance-ondemandexecutiononly.md)
 + [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md)
-+ Attribute Changes
-+ Group Membership changes
 
 ## Properties
 

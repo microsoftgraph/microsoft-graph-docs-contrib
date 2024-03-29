@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 This is an abstract type that represents the workflow execution trigger when the [workflow runs on schedule](../resources/identitygovernance-triggerandscopebasedconditions.md). It's inherited by the following derived types:
 + [timeBasedAttributeTrigger](../resources/identitygovernance-timebasedattributetrigger.md)
++ [Attribute Changes]
++ [Membership Changes]
 
 ## Properties
 
