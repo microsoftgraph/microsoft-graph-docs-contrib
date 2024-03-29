@@ -521,7 +521,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "getCloudPcRecommendationReports",
                 "ChangeType": "Addition",
-                "Description": "Added the getCloudPcRecommendationReports method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
+                "Description": "Added the [getCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
                 "Target": "cloudPcReports"
               }
             ],
