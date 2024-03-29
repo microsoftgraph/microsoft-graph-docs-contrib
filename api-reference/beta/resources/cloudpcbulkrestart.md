@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkRestart resource type"
-description: "Represents the entity that performs a bulk restart action with the executeAction API."
+description: "Represents the entity that performs a bulk restart action."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk restart action with the executeAction API.
+Represents the entity that performs a bulk restart action.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 

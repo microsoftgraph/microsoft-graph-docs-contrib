@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkPowerOn resource type"
-description: "Defines the bulk power-on action using the executeAction API, with Cloud PC IDs as the only input parameter for the bulk power-on operation."
+description: "Defines the bulk power-on actionsing the executeAction API, with Cloud PC IDs as the only input parameter for the bulk power-on operation."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the bulk power-on action using the executeAction API, with Cloud PC IDs as the only input parameter for the bulk power-on operation.
+Defines the bulk power-on action, with Cloud PC IDs as the only input parameter for the bulk power-on operation.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 

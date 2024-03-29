@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkTroubleshoot resource type"
-description: "Represents the entity that performs a bulk troubleshooting action with the executeAction API."
+description: "Represents the entity that performs a bulk troubleshooting action."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk troubleshooting action with the executeAction API. This API triggers an action to troubleshoot a specific Cloud PC. Check the Cloud PC and sessionHost health status.
+Represents the entity that performs a bulk troubleshooting action. This resource triggers an action that troubleshoots the Cloud PC and session host health status.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 

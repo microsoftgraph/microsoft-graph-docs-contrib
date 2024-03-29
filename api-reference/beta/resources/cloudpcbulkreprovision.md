@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkReprovision resource type"
-description: "Represents the entity that performs a bulk reprovision action with the executeAction API."
+description: "Represents the entity that performs a bulk reprovision action."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk reprovision action with the executeAction API. If provisioning a Cloud PC device through the standard steps (creating a provisioning policy and assigning it to trigger Cloud PC provisioning for a new user), customers can use this API to re-create the Cloud PC by providing the Cloud PC ID.
+Represents the entity that performs a bulk reprovision action. If provisioning a Cloud PC device through the standard steps (creating a provisioning policy and assigning it to trigger Cloud PC provisioning for a new user), customers can use this API to re-create the Cloud PC by providing the Cloud PC ID.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 

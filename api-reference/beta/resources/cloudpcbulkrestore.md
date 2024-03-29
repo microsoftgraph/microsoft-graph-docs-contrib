@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkRestore resource type"
-description: "Represents the entity that performs a bulk restore action with the executeAction API."
+description: "Represents the entity that performs a bulk restore action."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk restore action with the executeAction API. Perform a bulk restore for a set of Cloud PCs with associated Cloud PC ID and restore point. If some of the devices don't have any snapshots to restore, they're set as restore failed, while the others with snapshots still be triggered successfully.
+Represents the entity that performs a bulk restore action. Perform a bulk restore for a set of Cloud PCs with associated Cloud PC ID and restore point. If some of the devices don't have any snapshots to restore, they're set as restore failed, while the others with snapshots still be triggered successfully.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 

@@ -69,13 +69,11 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcBulkAction",
-  "displayName": "String",
+  "displayName": "Bulk Power Off by Andy",
   "cloudPcIds": [
-    "guid"
-  ],
-  "actionSummary": {
-    "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
-  }
+    "d6e0b8ee-8836-4b8d-b038-6130a97a3a9d",
+    "85994912-197b-4927-b569-447bd81350ec"
+  ]
 }
 ```
 
@@ -95,13 +93,18 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcBulkAction",
   "id": "231ad98f-41b3-872b-dd37-c70bf22cbdac",
-  "displayName": "String",
+  "displayName": "Bulk Power Off by Andy",
   "cloudPcIds": [
-    "guid"
+    "d6e0b8ee-8836-4b8d-b038-6130a97a3a9d",
+    "85994912-197b-4927-b569-447bd81350ec"
   ],
   "actionSummary": {
-    "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
+    "failedCount": 0,
+    "inProgressCount": 0,
+    "notSupportedCount": 0,
+    "pendingCount": 2,
+    "successfulCount": 0
   },
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime": "2024-02-05T10:29:57Z"
 }
 ```
