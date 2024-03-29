@@ -34,7 +34,7 @@ GET /deviceManagement/virtualEndpoint/bulkActions/{cloudPcBulkActionId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -90,6 +90,7 @@ Content-Type: application/json
       "pendingCount": 1,
       "successfulCount": 0
     },
+    "scheduledDuringMaintenanceWindow": true,
     "createdDateTime": "2024-02-05T10:29:57Z"
   }
 }

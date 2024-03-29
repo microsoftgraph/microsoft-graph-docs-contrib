@@ -34,6 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayName|String|Name of the bulk action.|
 |id|String|ID of the bulk action. Inherited from [entity](entity.md).|
+|scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk actions can be initiated during maintenance window. When `true`, bulk action will use maintenance window to schedule action, When `false` means bulk action will not use the maintenance window. Default value is `false`.|
 
 ## Relationships
 None.
@@ -54,6 +55,7 @@ The following JSON representation shows the resource type.
   "cloudPcIds": ["String"],
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "scheduledDuringMaintenanceWindow": "Boolean"
 }
 ```

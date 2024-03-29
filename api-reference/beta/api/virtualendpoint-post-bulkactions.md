@@ -49,6 +49,7 @@ You can specify the following properties when you create a **cloudPcBulkAction**
 |:---|:---|:---|
 |displayName|String|Name of this bulk action. Required.|
 |cloudPcIds|String collection|IDs of the Cloud PCs the bulk action applies to. Required.|
+|scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk actions can be initiated during maintenance window. When `true`, bulk action will use maintenance window to schedule action, When `false` means bulk action will not use the maintenance window. Default value is `false`.|
 
 ## Response
 
@@ -73,7 +74,8 @@ Content-type: application/json
   "cloudPcIds": [
     "d6e0b8ee-8836-4b8d-b038-6130a97a3a9d",
     "85994912-197b-4927-b569-447bd81350ec"
-  ]
+  ],
+  "scheduledDuringMaintenanceWindow": true
 }
 ```
 
@@ -105,6 +107,7 @@ Content-Type: application/json
     "pendingCount": 2,
     "successfulCount": 0
   },
+  "scheduledDuringMaintenanceWindow": true,
   "createdDateTime": "2024-02-05T10:29:57Z"
 }
 ```
