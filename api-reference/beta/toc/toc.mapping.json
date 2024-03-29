@@ -1080,7 +1080,7 @@
             },
             {
               "name": "Authentication strengths",
-              "overview": "authenticationstrengths-overview.md",
+              "overview": "../../resources/authenticationstrengths-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.AuthenticationMethodsPolicy",
@@ -1122,7 +1122,7 @@
             },
             {
               "name": "Cross-tenant access",
-              "overview": "crosstenantaccesspolicy-overview.md",
+              "overview": "../../resources/crosstenantaccesspolicy-overview.md",
               "workloads": [
                 {
                   "id": "Microsoft.DirectoryServices",
