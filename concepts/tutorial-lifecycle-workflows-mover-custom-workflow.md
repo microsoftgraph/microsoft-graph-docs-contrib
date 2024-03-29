@@ -184,7 +184,6 @@ Content-Type: application/json
 }
 ```
 
-
 ## Check tasks and workflow status
 
 At any time, you can monitor the status of the workflows and their associated tasks at three levels.
