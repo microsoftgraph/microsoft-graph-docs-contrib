@@ -27,6 +27,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 |restartSettings|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|The reboot settings to apply for this app assignment.|
 |installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)|The install time settings to apply for this app assignment.|
 |deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-shared-win32lobappdeliveryoptimizationpriority.md)|The delivery optimization priority for this app assignment. This setting is not supported in National Cloud environments. Possible values are: `notConfigured`, `foreground`.|
+|autoUpdateSettings|[win32LobAppAutoUpdateSettings](../resources/intune-policyset-win32lobappautoupdatesettings.md)|The auto-update settings to apply for this app assignment.|
 
 ## Relationships
 None
@@ -54,6 +55,10 @@ Here is a JSON representation of the resource.
     "startDateTime": "String (timestamp)",
     "deadlineDateTime": "String (timestamp)"
   },
-  "deliveryOptimizationPriority": "String"
+  "deliveryOptimizationPriority": "String",
+  "autoUpdateSettings": {
+    "@odata.type": "microsoft.graph.win32LobAppAutoUpdateSettings",
+    "autoUpdateSupersededApps": "String"
+  }
 }
 ```

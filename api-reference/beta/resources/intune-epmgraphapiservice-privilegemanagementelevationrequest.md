@@ -25,6 +25,7 @@ These are elevation approval requests for EPM support arbitrated scenario initia
 |[getAllElevationRequests action](../api/intune-epmgraphapiservice-privilegemanagementelevationrequest-getallelevationrequests.md)|[privilegeManagementElevationRequest](../resources/intune-epmgraphapiservice-privilegemanagementelevationrequest.md) collection||
 |[approve action](../api/intune-epmgraphapiservice-privilegemanagementelevationrequest-approve.md)|[privilegeManagementElevationRequest](../resources/intune-epmgraphapiservice-privilegemanagementelevationrequest.md)||
 |[deny action](../api/intune-epmgraphapiservice-privilegemanagementelevationrequest-deny.md)|[privilegeManagementElevationRequest](../resources/intune-epmgraphapiservice-privilegemanagementelevationrequest.md)||
+|[revoke action](../api/intune-epmgraphapiservice-privilegemanagementelevationrequest-revoke.md)|[privilegeManagementElevationRequest](../resources/intune-epmgraphapiservice-privilegemanagementelevationrequest.md)||
 
 ## Properties
 |Property|Type|Description|

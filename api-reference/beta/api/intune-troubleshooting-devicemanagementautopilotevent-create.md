@@ -60,7 +60,7 @@ The following table shows the properties that are required when you create the d
 |managedDeviceName|String|Managed device name.|
 |userPrincipalName|String|User principal name used to enroll the device.|
 |windowsAutopilotDeploymentProfileDisplayName|String|Autopilot profile name.|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Enrollment state like Enrolled, Failed. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentState|[enrollmentState](../resources/intune-troubleshooting-enrollmentstate.md)|Enrollment state like Enrolled, Failed. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|Enrollment Status Page profile name|
 |windows10EnrollmentCompletionPageConfigurationId|String|Enrollment Status Page profile ID|
 |deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment state like Success, Failure, InProgress, SuccessWithTimeout. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`, `successOnRetry`.|

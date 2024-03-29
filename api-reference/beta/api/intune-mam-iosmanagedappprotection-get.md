@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4213
+Content-Length: 4260
 
 {
   "value": {
@@ -147,6 +147,7 @@ Content-Length: 4213
     "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
     "allowedIosDeviceModels": "Allowed Ios Device Models value",
     "appActionIfIosDeviceModelNotAllowed": "wipe",
+    "appActionIfAccountIsClockedOut": "wipe",
     "thirdPartyKeyboardsBlocked": true,
     "filterOpenInToOnlyManagedApps": true,
     "disableProtectionOfManagedOutboundOpenInData": true,

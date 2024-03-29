@@ -115,6 +115,7 @@ The following table shows the properties that are required when you create the [
 |minimumWipeSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |allowedIosDeviceModels|String|Semicolon seperated list of device models allowed, as a string, for the managed app to work.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfAccountIsClockedOut|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or warn, if the user is clocked out (non-working time). Possible values are: `block`, `wipe`, `warn`.|
 |thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected. This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False.|
 |disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.|
@@ -138,7 +139,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 3838
+Content-length: 3883
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -216,6 +217,7 @@ Content-length: 3838
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
+  "appActionIfAccountIsClockedOut": "wipe",
   "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
@@ -238,7 +240,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4010
+Content-Length: 4055
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -319,6 +321,7 @@ Content-Length: 4010
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
+  "appActionIfAccountIsClockedOut": "wipe",
   "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,

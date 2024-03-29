@@ -51,38 +51,38 @@ The following table shows the properties that are required when you create the w
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |changeUefiSettingsPermission|[changeUefiSettingsPermission](../resources/intune-deviceconfig-changeuefisettingspermission.md)|Defines the permission level granted to users to change UEFI settings. Possible values are: `notConfiguredOnly`, `none`.|
-|virtualizationOfCpuAndIO|[enablement](../resources/intune-shared-enablement.md)|Defines whether CPU and IO virtualization is enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|cameras|[enablement](../resources/intune-shared-enablement.md)|Defines whether built-in cameras are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|microphonesAndSpeakers|[enablement](../resources/intune-shared-enablement.md)|Defines whether built-in microphones or speakers are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|radios|[enablement](../resources/intune-shared-enablement.md)|Defines whether built-in radios e.g. WIFI, NFC, Bluetooth, are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|bootFromExternalMedia|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from external media. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from built-in network adapters. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|windowsPlatformBinaryTable|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Windows Platform Binary Table. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|simultaneousMultiThreading|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Simultaneous MultiThreading. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|frontCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Front Camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|rearCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable rear camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|infraredCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Infrared camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|microphone|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Microphone. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|bluetooth|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Bluetooth. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|wirelessWideAreaNetwork|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wireless Wide Area Network. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|nearFieldCommunication|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Near Field Communication. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|wiFi|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable WiFi. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|usbTypeAPort|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable USB Type A Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|sdCard|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable SD Card Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|wakeOnLAN|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wake on LAN. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|wakeOnPower|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wake On Power. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|virtualizationOfCpuAndIO|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether CPU and IO virtualization is enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|cameras|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether built-in cameras are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|microphonesAndSpeakers|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether built-in microphones or speakers are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|radios|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether built-in radios e.g. WIFI, NFC, Bluetooth, are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|bootFromExternalMedia|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to boot from external media. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to boot from built-in network adapters. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|windowsPlatformBinaryTable|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Windows Platform Binary Table. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|simultaneousMultiThreading|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Simultaneous MultiThreading. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|frontCamera|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Front Camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|rearCamera|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable rear camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|infraredCamera|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Infrared camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|microphone|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Microphone. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|bluetooth|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Bluetooth. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wirelessWideAreaNetwork|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Wireless Wide Area Network. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|nearFieldCommunication|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Near Field Communication. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wiFi|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable WiFi. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|usbTypeAPort|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable USB Type A Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|sdCard|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable SD Card Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnLAN|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Wake on LAN. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnPower|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to enable Wake On Power. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 
 

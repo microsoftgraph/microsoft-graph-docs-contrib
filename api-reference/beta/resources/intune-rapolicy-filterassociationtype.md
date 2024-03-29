@@ -1,13 +1,13 @@
 ---
-title: "deviceQueryResultStatus enum type"
-description: "Status of Intune Pivot device query."
+title: "filterAssociationType enum type"
+description: "Intune Rapolicy Filterassociationtype Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
-# deviceQueryResultStatus enum type
+# filterAssociationType enum type
 
 Namespace: microsoft.graph
 
@@ -15,16 +15,11 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Status of Intune Pivot device query.
+
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|created|0|Created|
-|notified|1|Notified|
-|pending|2|Pending|
-|timedOut|3|TimedOut|
-|internalServiceError|4|InternalServiceError|
-|successful|5|Successful|
-|failed|6|Failed|
-|unknownFutureValue|7|UnknownFutureValue|
+|unknown|0||
+|include|1||
+|exclude|2||

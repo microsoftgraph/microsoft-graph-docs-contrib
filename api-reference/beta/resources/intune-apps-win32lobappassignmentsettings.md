@@ -58,7 +58,8 @@ Here is a JSON representation of the resource.
   "deliveryOptimizationPriority": "String",
   "autoUpdateSettings": {
     "@odata.type": "microsoft.graph.win32LobAppAutoUpdateSettings",
-    "autoUpdateSupersededApps": "String"
+    "autoUpdateSupersededApps": "String",
+    "autoUpdateSupersededAppsState": "String"
   }
 }
 ```

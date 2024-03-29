@@ -57,6 +57,7 @@ The following table shows the properties that are required when you create the w
 |creationDateTime|DateTimeOffset|DateTime profile was created Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime profile was last modified Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |roleScopeTagIds|String collection|Scope Tags Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
+|serverApplicabilityRules|[applicabilityRule](../resources/intune-rapolicy-applicabilityrule.md) collection|The list of Applicability Rules for a Device Configuration Profile Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Possible values are: `days`, `months`, `years`.|
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period|
@@ -83,7 +84,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles
 Content-type: application/json
-Content-length: 1178
+Content-length: 1321
 
 {
   "@odata.type": "#microsoft.graph.windows10XSCEPCertificateProfile",
@@ -93,6 +94,12 @@ Content-length: 1178
   "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
+  ],
+  "serverApplicabilityRules": [
+    {
+      "@odata.type": "microsoft.graph.applicabilityRule",
+      "filterType": "include"
+    }
   ],
   "certificateStore": "machine",
   "certificateValidityPeriodScale": "months",
@@ -131,7 +138,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1291
+Content-Length: 1434
 
 {
   "@odata.type": "#microsoft.graph.windows10XSCEPCertificateProfile",
@@ -143,6 +150,12 @@ Content-Length: 1291
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
+  ],
+  "serverApplicabilityRules": [
+    {
+      "@odata.type": "microsoft.graph.applicabilityRule",
+      "filterType": "include"
+    }
   ],
   "certificateStore": "machine",
   "certificateValidityPeriodScale": "months",

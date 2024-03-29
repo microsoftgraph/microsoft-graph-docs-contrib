@@ -42,6 +42,9 @@ Singleton entity that acts as a container for all device management functionalit
 |complianceCategories|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) collection|List of all compliance categories|
 |reusablePolicySettings|[deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) collection|List of all reusable settings that can be referred in a policy|
 |templateInsights|[deviceManagementTemplateInsightsDefinition](../resources/intune-deviceconfigv2-devicemanagementtemplateinsightsdefinition.md) collection|List of setting insights in a template|
+|inventoryPolicies|[deviceManagementInventoryPolicy](../resources/intune-deviceconfigv2-devicemanagementinventorypolicy.md) collection|List of all inventory policies|
+|inventorySettings|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) collection|List of all inventory settings|
+|inventoryCategories|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) collection|List of all inventory categories|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

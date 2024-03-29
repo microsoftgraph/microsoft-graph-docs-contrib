@@ -1,13 +1,13 @@
 ---
-title: "assignJustInTimeConfiguration action"
-description: "Intune Deviceconfigv2 Devicemanagementconfigurationpolicy Assignjustintimeconfiguration Api ."
+title: "Update deviceManagement"
+description: "Update the properties of a deviceManagement object."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
-# assignJustInTimeConfiguration action
+# Update deviceManagement
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-
+Update the properties of a [deviceManagement](../resources/intune-cloudpkigraphservice-devicemanagement.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -34,8 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignJustInTimeConfiguration
-POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}/assignJustInTimeConfiguration
+PATCH /deviceManagement
 ```
 
 ## Request headers
@@ -45,37 +44,30 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 |Accept|application/json|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-cloudpkigraphservice-devicemanagement.md) object.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-cloudpkigraphservice-devicemanagement.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|justInTimeAssignments|[deviceManagementConfigurationJustInTimeAssignmentPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationjustintimeassignmentpolicy.md)||
+|id|String|Required Graph property|
 
 
 
 ## Response
-If successful, this action returns a `200 OK` response code and a Boolean in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-cloudpkigraphservice-devicemanagement.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignJustInTimeConfiguration
-
+PATCH https://graph.microsoft.com/beta/deviceManagement
 Content-type: application/json
-Content-length: 221
+Content-length: 58
 
 {
-  "justInTimeAssignments": {
-    "@odata.type": "microsoft.graph.deviceManagementConfigurationJustInTimeAssignmentPolicy",
-    "targetType": "entraSecurityGroup",
-    "target": [
-      "Target value"
-    ]
-  }
+  "@odata.type": "#microsoft.graph.deviceManagement"
 }
 ```
 
@@ -84,9 +76,10 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 21
+Content-Length: 107
 
 {
-  "value": true
+  "@odata.type": "#microsoft.graph.deviceManagement",
+  "id": "0b283420-3420-0b28-2034-280b2034280b"
 }
 ```

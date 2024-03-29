@@ -24,7 +24,6 @@ An abstract class containing the base properties for Intune mobile apps. Note: L
 |[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune-apps-mobileapp.md) object.|
 |[assign action](../api/intune-apps-mobileapp-assign.md)|None||
 |[validateXml action](../api/intune-apps-mobileapp-validatexml.md)|String||
-|[convertMobileAppCatalogPackageToMobileApp function](../api/intune-apps-mobileapp-convertmobileappcatalogpackagetomobileapp.md)|[mobileApp](../resources/intune-apps-mobileapp.md)||
 |[createCatalogApp action](../api/intune-apps-mobileapp-createcatalogapp.md)|[mobileApp](../resources/intune-apps-mobileapp.md)||
 |[convertFromMobileAppCatalogPackage function](../api/intune-apps-mobileapp-convertfrommobileappcatalogpackage.md)|[mobileApp](../resources/intune-apps-mobileapp.md)||
 |[updateRelationships action](../api/intune-apps-mobileapp-updaterelationships.md)|None||
