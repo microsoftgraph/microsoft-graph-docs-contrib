@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkPowerOn resource type"
-description: "efines the bulk power-on action, with Cloud PC IDs as the only input parameter for the bulk power-on operation."
+description: "Defines the bulk power-on action, with Cloud PC IDs as the only input parameter for the bulk power-on operation."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
