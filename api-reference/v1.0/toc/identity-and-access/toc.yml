@@ -1430,7 +1430,7 @@ items:
   - name: Authentication strengths
     items:
     - name: Overview
-      href: ../../src/authenticationstrengths-overview.md
+      href: ../../resources/authenticationstrengths-overview.md
     - name: Authentication strength policy
       items:
       - name: Authentication strength policy
@@ -1560,7 +1560,7 @@ items:
   - name: Cross-tenant access
     items:
     - name: Overview
-      href: ../../src/crosstenantaccesspolicy-overview.md
+      href: ../../resources/crosstenantaccesspolicy-overview.md
     - name: Cross tenant access policy
       items:
       - name: Cross tenant access policy
