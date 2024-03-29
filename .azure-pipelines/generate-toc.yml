@@ -10,39 +10,54 @@ schedules:
     - jasonjoh/toc-gen
 
 resources:
- repositories:
-   - repository: msgraph-toc-gen
-     type: github
-     name: microsoftgraph/msgraph-toc-gen
-     ref: main
-     endpoint: github.com_jasonjoh
+  repositories:
+  - repository: msgraph-toc-gen
+    type: github
+    name: microsoftgraph/msgraph-toc-gen
+    ref: main
+    endpoint: github.com_jasonjoh
+  - repository: AD-AggregatorService-Workloads
+    type: git
+    name: One/AD-AggregatorService-Workloads
+    endpoint: MSAzure/One
 
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  tocGeneratorPath: $(Build.SourcesDirectory)/msgraph-toc-gen/src
+  tocGeneratorProject: $(tocGeneratorPath)/GenerateTOC.csproj
+  tocGeneratorApp: $(tocGeneratorPath)/bin/Release/net8.0/GenerateTOC.exe
+  v1ReferenceRoot: $(Build.SourcesDirectory)/microsoft-graph-docs/api-reference/v1.0
+  betaReferenceRoot: $(Build.SourcesDirectory)/microsoft-graph-docs/api-reference/beta
+  workloadsFolderPath: $(Build.SourcesDirectory)/AD-AggregatorService-Workloads/Workloads
+
 stages:
-  - stage: GenerateTOC
+- stage: GenerateTOC
+  displayName: Generate reference TOC
+  jobs:
+  - job: GenerateTOC
     displayName: Generate reference TOC
-    jobs:
-      - job: GenerateTOC
-        displayName: Generate reference TOC
-        steps:
-          - checkout: self
-            displayName: Checkout docs repo
-            fetchDepth: 1
+    steps:
+    - checkout: self
+      displayName: Checkout docs repo
 
-          - checkout: msgraph-toc-gen
-            displayName: Checkout TOC generator repo
-            fetchDepth: 1
+    - checkout: msgraph-toc-gen
+      displayName: Checkout TOC generator repo
 
-          - task: UseDotNet@2
-            displayName: Install .NET SDK 8
-            inputs:
-              version: 8.x
+    - checkout: AD-AggregatorService-Workloads
+      displayName: Checkout workloads repo
 
-          - task: DotNetCoreCLI@2
-            displayName: Build TOC generator project
-            inputs:
-             command: build
-             projects: '$(Build.SourcesDirectory)/msgraph-toc-gen/src/GenerateTOC.csproj'
-             arguments: '--configuration Release'
+    - task: UseDotNet@2
+      displayName: Install .NET SDK 8
+      inputs:
+        version: 8.x
+
+    - task: DotNetCoreCLI@2
+      displayName: Build TOC generator project
+      inputs:
+        command: build
+        projects: $(tocGeneratorProject)
+        arguments: '--configuration Release'
+
+    - pwsh: ls $(workloadsFolderPath)
