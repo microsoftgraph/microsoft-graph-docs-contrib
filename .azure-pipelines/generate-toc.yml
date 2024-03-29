@@ -9,6 +9,14 @@ schedules:
     include:
     - jasonjoh/toc-gen
 
+resources:
+ repositories:
+   - repository: msgraph-toc-gen
+     type: github
+     name: microsoftgraph/msgraph-toc-gen
+     ref: main
+     endpoint: github.com_jasonjoh
+
 pool:
   vmImage: ubuntu-latest
 
@@ -23,7 +31,7 @@ stages:
             displayName: Checkout docs repo
             fetchDepth: 1
 
-          - checkout: git://microsoftgraph/msgraph-toc-gen
+          - checkout: msgraph-toc-gen
             displayName: Checkout TOC generator repo
             fetchDepth: 1
 
