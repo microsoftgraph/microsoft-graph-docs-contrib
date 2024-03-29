@@ -1,6 +1,0 @@
-schedules:
-- cron: 0 11 * * *
-  displayName: Daily TOC generation at 6 AM EST
-  branches:
-    include:
-    - jasonjoh/toc-gen
