@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkAction resource type"
-description: "An abstract type tha represents the bulk action applied to Cloud PCs specified in a parameter."
+description: "An abstract type that represents the bulk action applied to Cloud PCs specified in a parameter."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type tha represents the bulk action applied to Cloud PCs specified in a parameter.
+An abstract type that represents the bulk action applied to Cloud PCs specified in a parameter.
+
+Base type of [cloudPcBulkPowerOff](../resources/cloudpcbulkpoweroff.md), [cloudPcBulkPowerOn](../resources/cloudpcbulkpoweron.md), [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md), [cloudPcBulkResize](../resources/cloudpcbulkresize.md), [cloudPcBulkRestart](../resources/cloudpcbulkrestart.md), [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md), and [cloudPcBulkTroubleshoot](../resources/cloudpcbulktroubleshoot.md).
 
 Inherits from [entity](../resources/entity.md).
 
