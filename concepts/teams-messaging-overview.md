@@ -74,7 +74,7 @@ For cards, the **contentType** property is set to the type of card, and the **co
 
 > **Note:** Aspects of cards such as images might refer to external resources or resources hosted by Teams as [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent).
 
-The following example shows the schema for an adaptive card. This card has images that are hosted by Teams.
+The following example shows the schema for an adaptive card attachment. This card has images that are hosted by Teams.
 
 ```json
     "attachments": [
@@ -90,7 +90,9 @@ The following example shows the schema for an adaptive card. This card has image
     ]
 ```
 
-In addition, the **teamsAppId** property is filled for messages sent a user where a teamsApp created the original message, for example using [messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions). Example of a message from messaging extensions
+For messages that are created by a Teams app, for example via [messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions), the **teamsAppId** property contains the ID of the app that sent the message. 
+
+The following example shows the schema for an adaptive card attachment when the message was sent by a Teams app.
 
 ```json
     "attachments": [
@@ -106,13 +108,13 @@ In addition, the **teamsAppId** property is filled for messages sent a user wher
     ]
 ```
 
-> **Note:** While sending cards, Graph only supports cards with `openUrl` action. Every other action like `invoke` is unsupported. However, Graph allows reading messages posted by Bots which have other actions in them.
+> **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** are not unsupported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
 
 #### meeting attachment
 
-When a meeting is scheduled in a channel, a message with meeting details is posted in the channel. A meeting attachment represents this object along with details of the meeting. `id` represents ID of the meeting, while `content` has details regarding organizer of the meeting and Exchange ID of the meeting. This ID can be used to look up the meeting using calendar APIs. `contentType` is set to `meetingReference` for meeting attachments.
+When a meeting is scheduled in a channel, a message with meeting details is posted in the channel. A meeting attachment represents this object and includes the meeting details. The **id** property contains the ID of the meeting, and the **content** property includes details about the meeting organizer and the Exchange ID of the meeting. You can use the Exchange ID to look up the meeting by using the calendar APIs. The **contentType** property is set to `meetingReference` for meeting attachments.
 
-Example of an attachment with meeting reference in it
+The following example shows the schema for an adaptive card attachment.
 
 ```json
     "attachments": [
@@ -129,10 +131,9 @@ Example of an attachment with meeting reference in it
 
 #### message attachment
 
-Attachment object refers to a message when a specific message is being replied to in a [chat](/graph/api/resources/chat). For message attachments, `id` represents ID of the message. `content` contains more details, for example,  preview text of the message and sender of the message being replied to. `contentType` is set to `messageReference` for such attachments.
+An [attachment](/graph/api/resources/chatmessageattachment) object contains a message when a [chat](/graph/api/resources/chat) includes a reply to a specific message. For message attachments, the **id** property contains the ID of the message. The **content** property contains more details about the message; for example, the message preview text and sender. For message attachments, the **contentType** property is set to `messageReference`.
 
-Example of an attachment with message reference in it
-
+The following example shows the schema for a message attachment.
 ```json
     "attachments": [
         {
