@@ -1,6 +1,40 @@
+# Pipeline for reference TOC generation
+
+trigger: none
+pr: none
 schedules:
 - cron: 0 11 * * *
   displayName: Daily TOC generation at 6 AM EST
   branches:
     include:
     - jasonjoh/toc-gen
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: GenerateTOC
+    displayName: Generate reference TOC
+    jobs:
+      - job: GenerateTOC
+        displayName: Generate reference TOC
+        steps:
+          - checkout: self
+            displayName: Checkout docs repo
+            fetchDepth: 1
+
+          - checkout: git://microsoftgraph/msgraph-toc-gen
+            displayName: Checkout TOC generator repo
+            fetchDepth: 1
+
+          - task: UseDotNet@2
+            displayName: Install .NET SDK 8
+            inputs:
+              version: 8.x
+
+          - task: DotNetCoreCLI@2
+            displayName: Build TOC generator project
+            inputs:
+             command: build
+             projects: '$(Build.SourcesDirectory)/src/GenerateTOC.csproj'
+             arguments: '--configuration Release'
