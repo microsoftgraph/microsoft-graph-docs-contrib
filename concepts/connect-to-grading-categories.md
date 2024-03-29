@@ -10,18 +10,18 @@ doc_type: conceptualPageType
 # Grading Categories
 This page provides guidance on setting up and using the grading categories for a class.
 
-Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from "Homework" assignments and 40% from "Test" assignments.
+Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from homework assignments and 40% from test assignments.
 
-Grading categories are defined on the class's settings. Each assignment that should be included in the final average grade needs to have a grading category added to it.
+Grading categories are defined on the class's settings. Every assignment that contributes to the final average grade needs to have a grading category.
 
 > [!NOTE]
 > You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
 
 ## Get a class
 
-A class is a group of students and teachers who share assignments and feedback in different languages. You can join an existing class or create your own. Get the list of classes from your education tenant and locate the class where you want to set grading categories.
+A class is a group of students and teachers who share assignments and feedback. You get the list of classes from your education tenant. Then, you can locate the class where you want to set grading categories on assignments.
 
-- [List Classes](/graph/api/educationclass-list): List the classes, find the one you want, and copy the class's ID to use below.
+- [List Classes](/graph/api/educationclass-list): List the classes, find the one you want, and copy the class's ID.
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes
@@ -29,9 +29,9 @@ GET https://graph.microsoft.com/beta/education/classes
 
 ## Get assignment settings
 
-To create and manage assignments, you need to set up grading categories. Use these criteria to evaluate the quality of the assignment output. This article shows how to create and update grading categories for your assignments. 
+To create and manage assignments, you need to set up grading categories. You can get all the assignment settings in a class. Then, you can inspect them to see which ones need grading categories.
 
-- [Get assignment settings](/graph/api/educationassignmentsettings-get): Allows you to see if the assignment settings have any grading categories information already added.
+- [Get assignment settings](/graph/api/educationassignmentsettings-get): Gets the assignment settings for a class.
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
@@ -131,8 +131,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## Update a grading category
-
-Sometimes, you might want to change the criteria or the weight of a grading category for your assignment. For example, this can help you fine-tune your evaluation and better reflect your expectations and goals. In this article, we will show you how to update a grading category, and how it affects your existing and future assignments. You will also learn about some common scenarios where updating a grading category can be useful. 
+You might want to change the criteria or the weight of a grading category for your assignment. For example, this can help you fine-tune your evaluation and better reflect your expectations and goals. In this article, we will show you how to update a grading category, and how it affects your existing and future assignments. You will also learn about some common scenarios where updating a grading category can be useful. 
 
 - [Update single gradingCategory](/graph/api/educationgradingcategory-update): This is used to update a single gradingCategory.
 
