@@ -8,10 +8,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	definition = @(
-		"definition-value"
-	)
-	displayName = "displayName-value"
-	isOrganizationDefault = $true
+	"definition-value"
+)
+displayName = "displayName-value"
+isOrganizationDefault = $true
 }
 
 New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter $params

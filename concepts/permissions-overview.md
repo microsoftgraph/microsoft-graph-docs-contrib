@@ -4,8 +4,9 @@ description: "Microsoft Graph exposes granular permissions that help you control
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
+ms.topic: concept-article
 ms.localizationpriority: high
-ms.subservice: "entra-applications"
+ms.subservice: entra-applications
 ms.date: 10/26/2023
 ms.custom: graphiamtop20, scenarios:getting-started
 #Customer-intent: As a developer integrating with Microsoft Graph, I want to learn about using Microsoft Graph permissions, so that I can properly request and manage permissions for my app.

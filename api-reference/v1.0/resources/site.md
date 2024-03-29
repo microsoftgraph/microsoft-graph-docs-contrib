@@ -24,10 +24,11 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get site for a group][] | site | Access the team site for a group.
 | [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource.
 | [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.
-| [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
+| [Get delta](../api/site-delta.md) | [site](../resources/site.md) collection | Get newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.
+| [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match the keywords provided.
 | [Follow site][]          | collection of site | Follow a user's site or multiple sites.
 | [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
-| [List followed sites][]  | collection of site | List the sites that have been followed by the signed in user.
+| [List followed sites][]  | collection of site | List the sites that are followed by the signed-in user.
 | [Get permission][]             | GET /sites/{site-id}/permissions/{permission-id}
 | [List permissions][]           | GET /sites/{site-id}/permissions
 | [Create permissions][]         | POST /sites/{site-id}/permissions
@@ -64,8 +65,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
 | **isPersonalSite**       | bool                                | Identifies whether the site is personal or not. Read-only.                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | The date and time the item was last modified. Read-only.                                       |
-| **name**                 | string                              | The name / title of the item.                                                                  |
-| **root**                 | [root](root.md)                     | If present, indicates that this is the root site in the site collection. Read-only.            |
+| **name**                 | string                              | The name/title of the item.                                                                  |
+| **root**                 | [root](root.md)                     | If present, provides the root site in the site collection. Read-only.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | **webUrl**               | string (url)                        | URL that displays the item in the browser. Read-only.                                          |
@@ -85,7 +86,7 @@ The `root` identifier always references the root site for a given target, as fol
 
 | Relationship      | Type                                             | Description
 |:------------------|:-------------------------------------------------|:----------------------
-| **analytics**     | [itemAnalytics][] resource                       | Analytics about the view activities that took place in this site.
+| **analytics**     | [itemAnalytics][] resource                       | Analytics about the view activities that took place on this site.
 | **columns**       | Collection([columnDefinition][])                 | The collection of column definitions reusable across lists under this site.
 | **contentTypes**  | Collection([contentType][])                      | The collection of content types defined for this site.
 | **drive**         | [drive][]                                        | The default drive (document library) for this site.
@@ -113,7 +114,7 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 The **site** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 

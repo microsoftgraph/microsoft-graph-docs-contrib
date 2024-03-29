@@ -3,7 +3,7 @@ title: "Get windowsSettingInstance"
 description: "Read the properties and relationships of a windowsSettingInstance object."
 author: "MS-Arko"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 ---
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/me/settings/windows/{windowsSettingId}/inst
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-windowssettinginstance-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-windowssettinginstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

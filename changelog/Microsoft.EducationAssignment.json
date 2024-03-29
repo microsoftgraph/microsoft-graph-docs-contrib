@@ -2565,6 +2565,24 @@
       "CreatedDateTime": "2017-11-01T00:00:00",
       "WorkloadArea": "Education",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "719aaf78-b8a3-4756-a690-7e703139542b",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$expand` query parameter for the [Get educationAssignment](https://learn.microsoft.com/graph/api/educationassignment-get?view=graph-rest-1.0) method of the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "719aaf78-b8a3-4756-a690-7e703139542b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-20T17:22:42.5007887Z",
+      "WorkloadArea": "Education",
+      "SubArea": "Assignment"
     }
   ]
 }
