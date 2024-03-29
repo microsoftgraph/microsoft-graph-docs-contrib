@@ -6,6 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|WindowsUpdates.Read.All|WindowsUpdates.Read.All|
+|Delegated (work or school account)|WindowsUpdates.ReadWrite.All|Not Available|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|WindowsUpdates.Read.All|WindowsUpdates.Read.All|
+|Application|WindowsUpdates.ReadWrite.All|Not Available|
