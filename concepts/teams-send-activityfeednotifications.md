@@ -903,6 +903,16 @@ Users can click **Edit** next to an app and customize the notifications, as show
 
 ![Screenshot showing notifications customized to Banner and feed for a Teams app](images/teams-activityfeednotifications/applevelnotificationsettings.png)
 
+## Code sample
+
+| Sample name | Description | .NET | Node.js |
+|-------------|-------------|------|
+|Send activity feed notifications |Sample app demonstrates how to send activity feed notifications using Microsoft Graph API.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs)|
+
+## Step-by-step guide
+
+Follow the [step-by-step guide](../sbs-graphactivity-feedbroadcast.yml) to send activity feed notifications in Teams.
+
 ## FAQs
 
 ### Who needs to install the Teams app?
@@ -925,12 +935,6 @@ The settings appear after the Teams app sends the first notification. This reduc
 ### I started getting a 409 (conflict) error; how do I resolve it?
 
 `Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Microsoft Entra appId in the `webApplicationInfo` section of the manifest. When this happens, you get an error like `Found multiple applications with the same Microsoft Entra App ID 'Your Microsoft Entra AppId'.`. Make sure that you use unique Microsoft Entra apps for unique Teams apps.  You can install the same Teams app in multiple scopes (team + user, for example).
-
-## Code sample
-
-| Sample name | Description | .NET | Node.js |
-|-------------|-------------|------|
-|Send activity feed notifications |Sample app demonstrates how to send activity feed notifications using Microsoft Graph API.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs)|
 
 ## Related content
 
