@@ -3,6 +3,144 @@
     {
       "ChangeList": [
         {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "hardwareConfigurationFormat",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwareConfigurationFormat** enumeration type.",
+          "Target": "hardwareConfigurationFormat"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Member",
+          "ChangedApiName": "dell",
+          "ChangeType": "Addition",
+          "Description": "Added the `dell` member to the **hardwareConfigurationFormat** enumeration.",
+          "Target": "hardwareConfigurationFormat"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Member",
+          "ChangedApiName": "surface",
+          "ChangeType": "Addition",
+          "Description": "Added the `surface` member to the **hardwareConfigurationFormat** enumeration.",
+          "Target": "hardwareConfigurationFormat"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Member",
+          "ChangedApiName": "surfaceDock",
+          "ChangeType": "Addition",
+          "Description": "Added the `surfaceDock` member to the **hardwareConfigurationFormat** enumeration.",
+          "Target": "hardwareConfigurationFormat"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hardwareConfigurations",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwareConfigurations** relationship to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hardwarePasswordInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **hardwarePasswordInfo** relationship to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfiguration](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfiguration?view=graph-rest-beta) resource.",
+          "Target": "hardwareConfiguration"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfigurationAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfigurationAssignment](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfigurationAssignment?view=graph-rest-beta) resource.",
+          "Target": "hardwareConfigurationAssignment"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfigurationDeviceState",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfigurationDeviceState](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfigurationDeviceState?view=graph-rest-beta) resource.",
+          "Target": "hardwareConfigurationDeviceState"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfigurationRunSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfigurationRunSummary](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfigurationRunSummary?view=graph-rest-beta) resource.",
+          "Target": "hardwareConfigurationRunSummary"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareConfigurationUserState",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareConfigurationUserState](https://learn.microsoft.com/graph/api/resources/intune-hardwareConfigurationUserState?view=graph-rest-beta) resource.",
+          "Target": "hardwareConfigurationUserState"
+        },
+        {
+          "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwarePasswordInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwarePasswordInfo](https://learn.microsoft.com/graph/api/resources/intune-hardwarePasswordInfo?view=graph-rest-beta) resource.",
+          "Target": "hardwarePasswordInfo"
+        },
+        {
+          "Id": "7368b5fe-9711-48c8-9f05-9ad35923e8cb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "platformType",
+          "ChangeType": "Addition",
+          "Description": "Added the **platformType** enumeration type.",
+          "Target": "platformType"
+        },
+        {
+          "Id": "7368b5fe-9711-48c8-9f05-9ad35923e8cb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "profileType",
+          "ChangeType": "Addition",
+          "Description": "Added the **profileType** enumeration type.",
+          "Target": "profileType"
+        },
+        {
+          "Id": "7368b5fe-9711-48c8-9f05-9ad35923e8cb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceConfigurationProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceConfigurationProfile](https://learn.microsoft.com/graph/api/resources/deviceConfigurationProfile?view=graph-rest-beta) resource.",
+          "Target": "deviceConfigurationProfile"
+        },
+        {
+          "Id": "7368b5fe-9711-48c8-9f05-9ad35923e8cb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagement](https://learn.microsoft.com/graph/api/resources/deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        }
+      ],
+      "Id": "a71a0f4a-90cd-4b95-bff1-50fa613ec61f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-29T22:18:16.4380988Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "08ee507d-09f1-4d15-8b8f-a3ab260aceb4",
           "ApiChange": "Enumeration",
           "ChangedApiName": "win32LobAutoUpdateSupersededAppsState",
