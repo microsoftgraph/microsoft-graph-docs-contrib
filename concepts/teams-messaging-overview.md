@@ -28,7 +28,7 @@ When an [attachment](/graph/api/resources/chatmessageattachment) object refers t
 
 > **Note:** The SharePoint URL is the link that opens the file; it is not the Microsoft Graph URL. Callers can, however, use the [access shared items](/graph/api/shares-get) API to get the information about the contents of the file.
 
-The following example shows the schema for an attachment that references a file.
+The following example shows the schema for a file attachment.
 
 ```json
     "attachments": [
@@ -46,9 +46,9 @@ The following example shows the schema for an attachment that references a file.
 
 #### tab attachment
 
-[Attachment](/graph/api/resources/chatmessageattachment) object refers to a [tab](/graph/api/resources/teamstab) hosted in the present context. This is often used to refer to newly added tab. When referring to a [tab](/graph/api/resources/teamstab), `contentType` is set to `tabReference`, and `id` is set to the ID of the tab. Additionally, name is set to the provided name of the [tab](/graph/api/resources/teamstab).
+When an [attachment](/graph/api/resources/chatmessageattachment) object refers to a [tab](/graph/api/resources/teamstab) hosted in the present context, the **contentType** property is set to `tabReference`, the **id** property is set to the ID of the tab, and the **name** property is set to the tab name. This scenario often applies when tabs are newly added. 
 
-Example of an attachment with reference to a tab
+The following example shows the schema for an tab attachment.
 
 ``` json
 "attachments": [
@@ -65,16 +65,16 @@ Example of an attachment with reference to a tab
 ```
 #### card attachment
 
-Cards represent visual elements backed by a predefined schema. Microsoft Teams supports various cards [as defined by Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object). Additionally, Microsoft Teams supports two other cards.
+Cards represent visual elements backed by a predefined schema. Teams supports the cards defined by the [Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object) in addition to the following card types:
 
-- Code snippet - With `contentType` set to `application/vnd.microsoft.card.codesnippet`
-- Announcement card - With `contentType` set to `application/vnd.microsoft.card.announcement`
+- Code snippet - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
+- Announcement card - Set **contentType** set to `application/vnd.microsoft.card.announcement`
 
-For cards `contentType` is set to the type of card, while `content` itself represents the serialized json for the card.
+For cards, the **contentType** property is set to the type of card, and the **content** property contains the serialized json for the card.
 
-> **Note:** Additionally, aspects of cards like images might refer to external resources of resources hosted by Microsoft Teams as [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent).
+> **Note:** Aspects of cards such as images might refer to external resources or resources hosted by Teams as [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent).
 
-Example of an attachment with adaptive card in it. This card has images in it hosted by Microsoft Teams.
+The following example shows the schema for an adaptive card. This card has images that are hosted by Teams.
 
 ```json
     "attachments": [
@@ -90,7 +90,7 @@ Example of an attachment with adaptive card in it. This card has images in it ho
     ]
 ```
 
-Additionally, `teamsAppId` field is filled for messages sent a user where a teamsApp created the original message, for example using [messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions). Example of a message from messaging extensions
+In addition, the **teamsAppId** property is filled for messages sent a user where a teamsApp created the original message, for example using [messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions). Example of a message from messaging extensions
 
 ```json
     "attachments": [
