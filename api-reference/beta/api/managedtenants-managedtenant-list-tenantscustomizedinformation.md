@@ -125,6 +125,18 @@ Content-Type: application/json
           "email": "hector@fourthcoffee.com",
           "phone": "5558009732"
         }
+      ],
+      "businessRelationship": "String",
+      "complianceRequirements": [
+        "String"
+      ],
+      "managedServicesPlans": [
+        "String"
+      ],
+      "note": "String",
+      "noteLastModifiedDateTime": "String (timestamp)",
+      "partnerRelationshipManagerUserIds": [
+        "String"
       ]
     },
     {
@@ -142,6 +154,18 @@ Content-Type: application/json
           "email": "timothy@consolidatedmessenger.com",
           "phone": "5558001379"
         }
+      ],
+      "businessRelationship": "String",
+      "complianceRequirements": [
+        "String"
+      ],
+      "managedServicesPlans": [
+        "String"
+      ],
+      "note": "String",
+      "noteLastModifiedDateTime": "String (timestamp)",
+      "partnerRelationshipManagerUserIds": [
+        "String"
       ]
     }
   ]
