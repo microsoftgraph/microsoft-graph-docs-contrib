@@ -3760,34 +3760,34 @@
         {
           "Id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
           "ApiChange": "Resource",
-          "ChangedApiName": "pageTemplate",
+          "ChangedApiName": "sitePageTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
-          "Target": "pageTemplate"
+          "Description": "Added the [sitePageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/sitepagetemplate?view=graph-rest-beta) resource",
+          "Target": "sitePageTemplate"
         },
         {
           "Id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
           "ApiChange": "Method",
           "ChangedApiName": "create",
           "ChangeType": "Addition",
-          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/pagetemplate-create?view=graph-rest-beta) method to the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
-          "Target": "pageTemplate"
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/sitepagetemplate-create?view=graph-rest-beta) method to the [sitePageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/sitepagetemplate?view=graph-rest-beta) resource",
+          "Target": "sitePageTemplate"
         },
         {
           "Id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Addition",
-          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/pagetemplate-update?view=graph-rest-beta) method to the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
-          "Target": "pageTemplate"
+          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/sitepagetemplate-update?view=graph-rest-beta) method to the [sitePageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/sitepagetemplate?view=graph-rest-beta) resource",
+          "Target": "sitePageTemplate"
         },
         {
           "Id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
           "ApiChange": "Method",
           "ChangedApiName": "delete",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/pagetemplate-delete?view=graph-rest-beta) method to the [pageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/pagetemplate?view=graph-rest-beta) resource",
-          "Target": "pageTemplate"
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/sitepagetemplate-delete?view=graph-rest-beta) method to the [sitePageTemplate](https://learn.microsoft.com/en-us/graph/api/resources/sitepagetemplate?view=graph-rest-beta) resource",
+          "Target": "sitePageTemplate"
         }
       ],
       "Id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",

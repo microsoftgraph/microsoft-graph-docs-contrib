@@ -2,18 +2,18 @@
 author: Yadong1106
 description: "Create a new page template in the templates folder in a site."
 ms.date: 05/07/2018
-title: Create a new page template in a site
+title: Create sitePageTemplate
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# Create a page template in a site
+# Create SitePageTemplate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [pageTemplate](../resources/pagetemplate.md) in the templates folder in a [site](../resources/site.md).
+Create a new [sitePageTemplate](../resources/sitepagetemplate.md) in the templates folder in a [site](../resources/site.md).
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /sites/{site-id}/pageTemplates
+POST /sites/{site-id}/pageTemplates/microsoft.graph.sitePageTemplate
 ```
 ## Request headers
 
@@ -41,14 +41,14 @@ POST /sites/{site-id}/pageTemplates
 
 ## Request body
 
-In the request body, supply a JSON representation of the [pageTemplate](../resources/pagetemplate.md) resource to create.
+In the request body, supply a JSON representation of the [sitePageTemplate](../resources/sitepagetemplate.md) resource to create.
 
 > **Notes:** :
-> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.pageTemplate` must be included in the request body. The `@odata.type=#microsoft.graph.pageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint. It's crucial for successful request body parsing.
-> 2. If you're using the response from the [Get pageTemplate](../api/pagetemplate-get.md) operation to create a **page template**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
+> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePageTemplate` must be included in the request body. The `@odata.type=#microsoft.graph.sitePageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint. It's crucial for successful request body parsing.
+> 2. If you're using the response from the [Get sitePageTemplate](../api/sitepagetemplate-get.md) operation to create a **page template**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
 ## Response
 
-If successful, this method returns a `201` and the created [pageTemplate](../resources/pagetemplate.md) object.
+If successful, this method returns a `201` and the created [sitePageTemplate](../resources/sitepagetemplate.md) object.
 
 ## Example
 
@@ -60,11 +60,11 @@ The following example shows how to create a new page template.
 
 
 ```http
-POST /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates
+POST /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.sitePageTemplate
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.pageTemplate",
+  "@odata.type": "#microsoft.graph.sitePageTemplate",
   "name": "test.aspx",
   "title": "test",
   "pageLayout": "article",
@@ -158,16 +158,16 @@ Content-Type: application/json
 
 ### Response
 
-If successful, this method returns a [pageTemplate](../resources/pagetemplate.md) in the response body for the created page template.
+If successful, this method returns a [sitePageTemplate](../resources/sitepagetemplate.md) in the response body for the created page template.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.pageTemplate", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePageTemplate", "truncated": true } -->
 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.type": "microsoft.graph.pageTemplate",
+    "@odata.type": "microsoft.graph.sitePageTemplate",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e726371",
     "name": "test.aspx",
     "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/test.aspx",
@@ -214,18 +214,13 @@ Content-type: application/json
 
 **Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
 
-[list]: ../resources/list.md
-[listitem]: ../resources/listitem.md
-[site]: ../resources/site.md
-[pageTemplate]: ../resources/pagetemplate.md
-
 <!--
 {
-  "type": "#pageTemplate.annotation",
+  "type": "#sitePageTemplate.annotation",
   "description": "Create a page template in the templates folder in a site.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "PageTemplates/Create",
+  "tocPath": "SitePageTemplates/Create",
   "suppressions": []
 }
 -->

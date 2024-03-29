@@ -17614,19 +17614,19 @@ items:
                     href: api/webpart-getposition.md
                   - name: Get by position
                     href: api/sitepage-getwebpartsbyposition.md
-              - name: Page template
-                href: resources/pagetemplate.md
+              - name: SitePage template
+                href: resources/sitepagetemplate.md
                 items:
                   - name: List
-                    href: api/pagetemplate-list.md
+                    href: api/sitepagetemplate-list.md
                   - name: Create
-                    href: api/pagetemplate-create.md
+                    href: api/sitepagetemplate-create.md
                   - name: Get
-                    href: api/pagetemplate-get.md
+                    href: api/sitepagetemplate-get.md
                   - name: Update
-                    href: api/pagetemplate-update.md
+                    href: api/sitepagetemplate-update.md
                   - name: Delete
-                    href: api/pagetemplate-delete.md
+                    href: api/sitepagetemplate-delete.md
           - name: Recycle bin item (preview)
             href: resources/recyclebinitem.md
             items:

@@ -1,18 +1,18 @@
 ---
 title: "Update Page Template"
-description: "Update the properties of a pageTemplate object."
+description: "Update the properties of a sitePageTemplate object."
 author: Yadong1106
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# Update page template
+# Update SitePageTemplate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [pageTemplate](../resources/pagetemplate.md) object.
+Update the properties of a [sitePageTemplate](../resources/sitepagetemplate.md) object.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /sites/{sitesId}/pageTemplates/{pageTemplateId}
+PATCH /sites/{sitesId}/pageTemplates/microsoft.graph.sitePageTemplate/{page-template-id}
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ PATCH /sites/{sitesId}/pageTemplates/{pageTemplateId}
 
 ## Request body
 
-> **Notes:** : To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.pageTemplate` must be included in the request body. The `@odata.type=#microsoft.graph.pageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint. It's crucial for successful request body parsing.
+> **Notes:** : To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePageTemplate` must be included in the request body. The `@odata.type=#microsoft.graph.sitePageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint. It's crucial for successful request body parsing.
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
@@ -60,7 +60,7 @@ These fields and be used in update requests.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [pageTemplate](../resources/pagetemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [sitePageTemplate](../resources/sitepagetemplate.md) object in the response body.
 
 ## Examples
 
@@ -70,16 +70,16 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_pageTemplate"
+  "name": "update_sitePageTemplate"
 }
 -->
 
 ```http
-PATCH /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/8fbff3f5-0e5d-49e7-89c7-2b042b3bfaa6
+PATCH /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.sitePageTemplate/8fbff3f5-0e5d-49e7-89c7-2b042b3bfaa6
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.pageTemplate",
+  "@odata.type": "#microsoft.graph.sitePageTemplate",
   "title": "sample",
   "showRecommendedPages": false
 }
@@ -93,7 +93,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.pageTemplate",
+  "@odata.type": "microsoft.graph.sitePageTemplate",
   "truncated": true
 }
 -->
@@ -103,7 +103,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.pageTemplate",
+  "@odata.type": "#microsoft.graph.sitePageTemplate",
   "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
   "name": "sample.aspx",
   "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Templates/sample.aspx",

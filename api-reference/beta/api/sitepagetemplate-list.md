@@ -1,19 +1,19 @@
 ---
 author: Yadong1106
-description: "Get the collection of pageTemplate objects from the page templates in a site. All page templates in the site are returned."
+description: "Get the collection of sitePageTemplate objects from the page templates in a site. All page templates in the site are returned."
 ms.date: 03/15/2018
-title: List PageTemplate
+title: List sitePageTemplate
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# List PageTemplate
+# List SitePageTemplate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the collection of [pageTemplate](../resources/pagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination). Sort alphabetically by `name` in ascending order.
+Get the collection of [sitePageTemplate](../resources/sitepagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination). Sort alphabetically by `name` in ascending order.
 
 ## Permissions
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{site-id}/pageTemplates
+GET /sites/{site-id}/pageTemplates/microsoft.graph.sitePageTemplate
 ```
 
 ## Optional query parameters
@@ -50,7 +50,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200` and a list of [pageTemplate](../resources/pagetemplate.md) object in the response body.
+If successful, this method returns a `200` and a list of [sitePageTemplate](../resources/sitepagetemplate.md) object in the response body.
 
 ## Example
 
@@ -58,14 +58,14 @@ If successful, this method returns a `200` and a list of [pageTemplate](../resou
 
 <!--{
 	"blockType": "request",
-	"name": "get-pageTemplates",
+	"name": "get-sitePageTemplates",
 	"scopes": "sites.read.all",
 	"tags": "service.sharepoint"
 }
 -->
 
 ```msgraph-interactive
-GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates
+GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.sitePageTemplate
 ```
 
 ### Response
@@ -73,7 +73,7 @@ GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates
 <!--
 {
     "blockType": "response",
-    "@odata.type": "microsoft.graph.pageTemplate",
+    "@odata.type": "microsoft.graph.sitePageTemplate",
     "truncated": true,
     "isCollection":true
 }
@@ -185,11 +185,11 @@ Content-type: application/json
 
 <!--
 {
-  "type": "#pageTemplate.annotation",
+  "type": "#sitePageTemplate.annotation",
   "description": "Enumerate the list of page templates in a site",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "PageTemplates/Enumerate",
+  "tocPath": "SitePageTemplates/Enumerate",
   "suppressions": [
   ]
 }

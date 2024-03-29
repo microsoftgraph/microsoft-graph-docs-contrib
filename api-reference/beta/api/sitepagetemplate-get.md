@@ -2,18 +2,18 @@
 author: Yadong1106
 description: "Returns the metadata for a page template in the templates folder in a site."
 ms.date: 03/15/2018
-title: Get page template
+title: Get sitePageTemplate
 ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
-# Get page template
+# Get SitePageTemplate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the metadata for a [pageTemplate](../resources/pagetemplate.md) in the templates folder in a [site](../resources/site.md).
+Returns the metadata for a [sitePageTemplate](../resources/sitepagetemplate.md) in the templates folder in a [site](../resources/site.md).
 
 ## Permissions
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites/{site-id}/pageTemplates/{pageTemplateId}
+GET /sites/{site-id}/pageTemplates/microsoft.graph.sitePageTemplate/{page-template-id}
 ```
 
 ## Optional query parameters
@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200` and a [pageTemplate](../resources/pagetemplate.md) object in the response body.
+If successful, this method returns a `200` and a [sitePageTemplate](../resources/sitepagetemplate.md) object in the response body.
 
 
 ## Examples
@@ -63,22 +63,22 @@ If successful, this method returns a `200` and a [pageTemplate](../resources/pag
 ### Example 1: Get a page template in the templates folder of a site
 #### Request
 
-<!-- { "blockType": "request", "name": "get-pageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-sitePageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
-GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb
+GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.sitePageTemplate/f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb
 ```
 
 #### Response
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.pageTemplate", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePageTemplate", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.pageTemplate",
+  "@odata.type": "microsoft.graph.sitePageTemplate",
   "description": "Here's the page description",
   "id": "65e59907-59d5-44ff-a038-7c0bf3034567",
   "name": "Home.aspx",
@@ -113,11 +113,11 @@ Content-type: application/json
 
 <!--
 {
-  "type": "#pageTemplate.annotation",
+  "type": "#sitePageTemplate.annotation",
   "description": "Get a page template in a site",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "PageTemplates/Get",
+  "tocPath": "SitePageTemplates/Get",
   "suppressions": [
   ]
 }
