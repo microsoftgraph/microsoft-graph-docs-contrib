@@ -65,3 +65,4 @@ stages:
       displayName: Generate v1 reference TOC
 
     - pwsh: git status --porcelain
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
