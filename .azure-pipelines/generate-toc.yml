@@ -19,6 +19,7 @@ resources:
   - repository: AD-AggregatorService-Workloads
     type: git
     name: One/AD-AggregatorService-Workloads
+    ref: master
     endpoint: MSAzure/One
 
 pool:
@@ -79,7 +80,7 @@ stages:
           Write-Host "No changes to commit." -ForegroundColor Green
         } else {
           $timestamp = Get-Date -Format FileDateTimeUniversal
-          git checkout toc-gen/$timestamp
+          git checkout -b toc-gen/$timestamp
           git add .
           git commit -m "Generated reference TOC"
           git push --set-upstream origin toc-gen/$timestamp
