@@ -61,8 +61,6 @@ stages:
         projects: $(tocGeneratorProject)
         arguments: '--configuration Release'
 
-    - pwsh: ls $(tocGeneratorPath)/bin/Release/net8.0
-
     - pwsh: $(tocGeneratorApp) --api-docs $(v1ReferenceRoot)/api --resource-docs $(v1ReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(v1ReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(v1ReferenceRoot)/toc.yml --static-toc $(v1ReferenceRoot)/toc/static-toc.yml
       displayName: Generate v1 reference TOC
 
