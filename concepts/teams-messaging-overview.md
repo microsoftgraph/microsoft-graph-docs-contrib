@@ -151,7 +151,7 @@ The following example shows the schema for a message attachment.
 
 The **body** property of a **chatMessage** object represents the body of the message. The **body** property can refer to other elements in the schema such as mentions or attachments. The contents can be `text` or `html`, as specified by the **contentType** property of the [itemBody](/graph/api/resources/itembody) resource type.
 
-Teams supports more schema elements beyond the HTML specifications to support other elements like mentions. The **chatMessage** schema supports the following non-HTML elements:
+The **chatMessage** schema supports the following non-HTML elements that Teams also supports:
 
 - at - A reference to an [chatMessageMention](/graph/api/resources/chatmessagemention) that represents the details of a user, application, [channel](/graph/api/resources/channel?preserve-view=true), [team](/graph/api/resources/team), or [tag](/graph/api/resources/teamworktag) that is @mentioned.
 - attachment - Represents the position of an attachment reference.
@@ -161,7 +161,7 @@ Teams supports more schema elements beyond the HTML specifications to support ot
     - alt - An alternate representation for the emoji; for example, Unicode.
     - title - A title for the emoji.
 
-#### Example: chatMessage schema of a message with @mention for a team
+#### Example: A message that @mentions a team
 
 ```json
     "body": {
@@ -187,7 +187,7 @@ Teams supports more schema elements beyond the HTML specifications to support ot
     ],
 ```
 
-#### Example of a message with attachment
+#### Example: A message with an attachment
 
 ```json
     "body": {
@@ -206,7 +206,7 @@ Teams supports more schema elements beyond the HTML specifications to support ot
     ],
 ```
 
-#### Example of a message with system event in it
+#### Example: A message with a system event
 
 ```json
     "body": {
@@ -240,7 +240,7 @@ Teams supports more schema elements beyond the HTML specifications to support ot
     }
 ```
 
-#### Example of a message with emoji in it
+#### Example: A message with an emoji
 
 ```json
 {
@@ -253,9 +253,9 @@ Teams supports more schema elements beyond the HTML specifications to support ot
 
 ### channelIdentity
 
-If [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) was sent in a [channel](/graph/api/resources/channel), `channelIdentity` represents the details about the channel. This includes ID of the [channel](/graph/api/resources/channel) and ID of the [team](/graph/api/resources/team). This property is read-only.
+If a [chatMessage](/graph/api/resources/chatmessage) is sent in a [channel](/graph/api/resources/channel), the **channelIdentity** property contains details about the channel. This includes the ID of the [channel](/graph/api/resources/channel) and the [team](/graph/api/resources/team). This property is read-only.
 
-Example of `channelIdentity` in a message
+The following example shows the schema for a **channelIdentity** in a message.
 
 ```json
     "channelIdentity": {
@@ -266,9 +266,9 @@ Example of `channelIdentity` in a message
 
 ### chatId
 
-If [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) was sent in a [chat](/graph/api/resources/chat), `chatId` represents the ID of the chat in which message was sent. This property is read-only.
+If a [chatMessage](/graph/api/resources/chatmessage?preserve-view=true) is sent in a [chat](/graph/api/resources/chat), the **chatId** property contains the ID of the chat. This property is read-only.
 
-Example of `chatId` in a message
+The following example shows the schema for a **chatId**.
 
 ```json
 "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
@@ -276,29 +276,29 @@ Example of `chatId` in a message
 
 ### createdDateTime
 
-`createdDateTime` represents the time when the message was created on the server. This timestamp might be different than when the message was sent by the caller. Server records only server side timestamp. This property is read-only, however it can be written when [importing messages from an external system](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+The **createdDateTime** property represents the time when the message was created on the server. This timestamp might be different than the time when the message was sent by the caller. The server only records the server-side timestamp. This property is read-only; however, it can be written when you [import messages from an external system](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ### deletedDateTime
 
-If [chatMessage](/graph/api/resources/chatmessage) was deleted, `deletedDateTime` represents the time of deletion for the message. This property is read-only.
+If a [chatMessage](/graph/api/resources/chatmessage) is deleted, the **deletedDateTime** property contains the time that the message was deleted. This property is read-only.
 
-> **Note:** Deleted messages are not always returned by all the APIs. [Change notifications](/graph/teams-changenotifications-chatmessage) always return deleted message notifications if subscription includes `deleted` change type.
+> **Note:** Deleted messages are not always returned by all APIs. [Change notifications](/graph/teams-changenotifications-chatmessage) always return deleted message notifications if the **changeType** of the subscription includes `deleted`.
 
 ### etag
 
-`etag` represents the version of the message. Any changes to message (including reactions, edits etc.) change the `etag` of the message. This property is read-only.
+The **etag** property represents the version of the message. Any changes to the message (including reactions and edits) changes the **etag** value of the message. This property is read-only.
 
 ### eventDetail
 
-If present, represents details of an event that happened in a [chat](/graph/api/resources/chat), a [channel](/graph/api/resources/channel), or a [team](/graph/api/resources/team), for example, adding new members. For event messages, the messageType property is set to `systemEventMessage`. You can read more about system events [here](/graph/system-messages).
+If present, the **eventDetails** property represents details of an event that happened in a [chat](/graph/api/resources/chat), a [channel](/graph/api/resources/channel), or a [team](/graph/api/resources/team); for example, the addition of new members. For event messages, the **messageType** property of the **chatMessage** is set to `systemEventMessage`. For more information, see [Get system messages](/graph/system-messages).
 
 ### from
 
-Represents the sender of the message. Microsoft Teams supports various senders.
+The **from** property represents the sender of the message. Microsoft Teams supports the following sender types.
 
-- Azure AD users - Users who have a valid Azure AD user. This includes [Azure AD guests](/azure/active-directory/external-identities/what-is-b2b) and [native federation](/microsoftteams/manage-external-access)
+- Entra ID users - Users who have a valid Entra ID. This includes [Entra External ID guests](/azure/active-directory/external-identities/what-is-b2b) and [external access](/microsoftteams/manage-external-access) users.
 
-    Following example shows the `from` element for a message sent by Azure AD user
+    The following example shows the **from** property for a message sent by an Entra ID user.
     ```json
     "from": {
         "application": null,
@@ -310,9 +310,9 @@ Represents the sender of the message. Microsoft Teams supports various senders.
         }
     },
     ```
-- Anonymous guests - Users who join a meeting using join link. These users provide a display name when joining meeting. They have no persistent identity in Microsoft 365.
+- Anonymous guests - Users who join a meeting by using a join link. These users provide a display name when they join the meeting. They have no persistent identity in Microsoft 365.
     
-    Following example shows the `from` element for a message sent by an anonymous guest
+    The following example shows the **from** property for a message sent by an anonymous guest.
     ```json
     "from": {
         "application": null,
@@ -325,9 +325,9 @@ Represents the sender of the message. Microsoft Teams supports various senders.
     },
     ```
 
-- Personal Microsoft account users - Users using their personal Microsoft account to sign-in into Microsoft Teams
+- Personal Microsoft account users - Users who use their personal Microsoft account to sign in to Teams.
 
-    Following example shows the `from` element for a message sent by anonymous guest
+    The following example shows the **from** property for a message sent by an anonymous guest.
 
     ```json
     "from": {
@@ -340,9 +340,9 @@ Represents the sender of the message. Microsoft Teams supports various senders.
         }
     },
     ```
-- Skype users - Skype (for consumer) users. You can learn more about this interop [here](/microsoftteams/teams-skype-interop)
+- Skype users - Skype (for consumer) users. For more information, see [Teams and Skype interoperability](/microsoftteams/teams-skype-interop).
     
-    Following example shows the `from` element for a message sent by anonymous guest
+    The following example shows the **from** property for a message sent by a Skype user.
 
     ```json
     "from": {
@@ -355,9 +355,9 @@ Represents the sender of the message. Microsoft Teams supports various senders.
         }
     },
     ```
-- Skype for business on-premises users - Users using Skype For Business on-premises offering. You learn more about this [here](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability)
+- Skype for business on-premises users - Users who use the Skype For Business on-premises offering. For more information, see [Teams and Skype for Business coexistence and interoperability](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability).
 
-     Following example shows the `from` element for a message sent by anonymous guest
+     The following example shows the **from** property for a message sent by a Skype for business on-premises user.
 
     ```json
     "from": {
@@ -370,9 +370,9 @@ Represents the sender of the message. Microsoft Teams supports various senders.
         }
     },
     ```
-- Bots - Bots using [Microsoft Bot Framework](/azure/bot-service/?view=azure-bot-service-4.0&preserve-view=true) to write conversational bots
+- Bots - Bots using the [Microsoft Bot Framework](/azure/bot-service/?view=azure-bot-service-4.0&preserve-view=true) to write conversational bots.
 
-    Following example shows the `from` element for a message sent by bot
+    The following example shows the **from** property for a message sent by a bot.
 
     ```json
     "from": {
@@ -385,9 +385,9 @@ Represents the sender of the message. Microsoft Teams supports various senders.
         }
     }
     ```
-- Outgoing webhooks - Outgoing webhooks allow developers to build a low cost solution, which is in some respects similar to bots. You can read more about outgoing webhooks [here](/microsoftteams/platform/webhooks-and-connectors/how-to/add-outgoing-webhook)
+- Outgoing webhooks - Outgoing webhooks allow developers to build a low-cost solution that is similar to bots. For more information, see [Create outgoing webhooks](/microsoftteams/platform/webhooks-and-connectors/how-to/add-outgoing-webhook).
 
-    Following example shows the `from` element for a message sent by bot
+    The following example shows the **from** property for a message sent by a bot.
 
     ```json
     "from": {
@@ -400,9 +400,9 @@ Represents the sender of the message. Microsoft Teams supports various senders.
         }
     }
     ```
-- Office 365 connectors - Office 365 connectors allow posting one way message to Microsoft Teams. You can learn more about this integration [here](/microsoftteams/platform/webhooks-and-connectors/how-to/connectors-creating)
+- Office 365 connectors - Office 365 connectors allow posting one-way message to Teams. For more information, see [Create connectors for Microsoft 365 Groups](/microsoftteams/platform/webhooks-and-connectors/how-to/connectors-creating).
     
-    Following example shows the `from` element for a message from Office 365 connector
+    The following example shows the **from** property for a message from an Office 365 connector.
 
     ```json
     "from": {
@@ -416,7 +416,9 @@ Represents the sender of the message. Microsoft Teams supports various senders.
     }
     ```
 
-- Email - Microsoft Teams allows sending emails to channels. When the user isn't known (part of the tenant or identity isn't known), the identity of sender is shown as email user with details of the email used to send the message. Following example shows the `from` element for a message sent from an email user
+- Email - Teams allows emails to be sent to channels. When the user isn't known, the identity of the sender is shown as an email user with the details of the email used to send the message.
+
+     The following example shows the **from** property for a message sent from an email user.
 
     ```json
     "from": {
@@ -431,10 +433,11 @@ Represents the sender of the message. Microsoft Teams supports various senders.
         }
     ```
 
-- Azure Communication Services user - If a message is sent by an Azure Communication Services user, the identity details of the sender are represented in `from` field. Following is an example of the same
+- Azure Communication Services user - If a message is sent by an Azure Communication Services user, the identity details of the sender are represented in the **from** field.
+
+    The following example shows the **from** property of an email send from an Azure Communication Services user.
 
     ```json
-
     "from": {
         "application": null,
         "device": null,
@@ -447,25 +450,25 @@ Represents the sender of the message. Microsoft Teams supports various senders.
     }
     ```
 
-This property is read-only, however it can be written when [importing messages from an external system](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+This property is read-only; however, you can write to it when you [import messages from an external system](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
-> **Note:** Display name isn't always present
+> **Note:** The display name isn't always present.
 
 ### id
 
-Unique ID representing the message. This property is read-only.
+The **id** property contains a unique ID that represents the message. This property is read-only.
 
-> **Note:** Id is unique only under a specific scope i.e. chat or a channel. Different messages across chats and channels might have same Id.
+> **Note:** The ID is unique only within a specific scope, such as a chat or channel. Different messages across chats and channels might have the same ID.
 
 ### importance
 
-Represents importance of the message. Possible values are
+The **importance** property represents the importance of the message. The following are the possible values:
 
 - normal
 - high
 - urgent
 
-Example of a message with importance set to high
+The following example shows a message with the importance set to high.
 
 ```json
 "importance": "high",
@@ -473,17 +476,17 @@ Example of a message with importance set to high
 
 ### lastEditedDateTime
 
-Represents the timestamp when the message was edited by the user. This is represented in Microsoft Teams UI with `Edited` flag, `null` if the message has never need edited.
+The **lastEditedDateTime** property represents the timestamp when the message was edited by the user. This is represented in the Teams UI with the `Edited` flag. It is set to `null` if the message has never been edited.
 
 ### lastModifiedDateTime
 
-Represents the timestamp when the message was last modified. This includes changes like reactions. `eTag` and `lastModifiedDateTime` both change together.
+The **lastModifiedDateTime** property represents the timestamp when the message was last modified. This includes changes such as reactions. Both the **eTag** and **lastModifiedDateTime** properties when a message is modified.
 
 ### mentions
 
-Represents users, applications (bots, webhooks etc.), channels, teams, or tags being @mentioned.
+The **mentions** property represents users, applications (bots, webhooks), channels, teams, or tags that are @mentioned.
 
-#### Example of a message with @mention for another user
+#### Example: A message that @mentions another user
 
 ```json
     "body": {
@@ -509,7 +512,7 @@ Represents users, applications (bots, webhooks etc.), channels, teams, or tags b
     ],
 ```
 
-#### Example of a message with @mention for a bot
+#### Example: A message that @mentions a bot
 
 ```json
     "body": {
@@ -535,7 +538,7 @@ Represents users, applications (bots, webhooks etc.), channels, teams, or tags b
     ],
 ```
 
-#### Example of a message with @mention for a team
+#### Example: A message that @mentions a team
 
 ```json
     "body": {
@@ -561,25 +564,25 @@ Represents users, applications (bots, webhooks etc.), channels, teams, or tags b
     ],
 ```
 
-> **Note:** @mentions can also appear inside cards
+> **Note:** @mentions can also appear inside cards.
 
 ### messageType
 
-Represents the type of message. The values in use are 
+The **messageType** property represents the type of message. The following are the possible values: 
 
-- message - Representing messages sent by users, applications etc.
-- systemEventMessage - Represents messages sent by Microsoft Teams with details about various events like adding members, deleting channels etc. You can read more about system events [here](/graph/system-messages).
+- message - Represents messages sent by users and applications.
+- systemEventMessage - Represents messages sent by Teams with details about various events such as adding members or deleting channels. For more information, see [Get system messages](/graph/system-messages).
 
-Other values not used right now
+The following values are not currently in use:
 
 - typing
 - chatEvent
 
 ### onBehalfOf
 
-User attribution of the message when bot sends a message on behalf of a user. You can read more about user attribution [here](/microsoftteams/platform/messaging-extensions/how-to/action-commands/respond-to-task-module-submit?tabs=dotnet%2Cdotnet-1#user-attribution-for-bots-messages).
+The **onBehalfOf** property represents the user attribution for messages sent by a bot on behalf of a user. For more information, see [User attribution for bots messages](/microsoftteams/platform/messaging-extensions/how-to/action-commands/respond-to-task-module-submit?tabs=dotnet%2Cdotnet-1#user-attribution-for-bots-messages).
 
-Example of a message sent by a bot on behalf of a user
+The following example shows a message sent by a bot on behalf of a user.
 
 ```json
 "from": {
@@ -604,9 +607,9 @@ Example of a message sent by a bot on behalf of a user
 
 ### policyViolation
 
-If the message violated any data loss prevention (DLP) policies set by the tenant, a message PATCH can be invoked with the details of the policy being violated. This hides the message from the Microsoft Teams UI. This element represents the details of the policy being violated, along with the action.
+If a message violates any data loss prevention (DLP) policies set by the tenant, a message PATCH can be invoked with the details of the policy that was violated. This hides the message from the Teams UI. The **policyViolation** property represents the details of the policy that was violated, along with the action.
 
-Example of a message blocked due to policy
+The following example shows a message that was blocked due to policy.
 
 ```json
     "body": {
@@ -624,9 +627,9 @@ Example of a message blocked due to policy
 
 ### reactions
 
-Represents reactions from other users on this message. This includes reactions such as likes etc. Each element represents information about the reaction and the user who reacted.
+The **reactions** property represents reactions from other users on the message, such as likes. Each element represents information about the reaction and the user who reacted.
 
-Example of a message with reaction in it
+The following example shows a message with reactions.
 
 ```json
     "reactions": [
@@ -646,37 +649,37 @@ Example of a message with reaction in it
     ]
 ```
 
-> **Note:** Display name isn't always present
+> **Note:** The display name isn't always present.
 
 ### replyToId
 
-Represents the ID of the message this message is a reply to in a reply chain. This property is only set for channel messages. This property is read-only.
+The **replyToId** property represents the ID of the message that a message is a reply to in a reply chain. This property is only set for channel messages. This property is read-only.
 
 > **Note:** For replying to messages in a chat, message reference is used. Additionally, chats allowing multiple of message reference elements.
 
 ### subject
 
-Subject of the message. This is valid only for messages sent in channel.
+The **subject** property contains the subject of the message. This is valid only for messages sent in a channel.
 
 ### webUrl
 
-Url pointing to the message in Microsoft Teams UI. This url can be used to open the message directly in Microsoft Teams UI in a browser.
+The **webUrl** property contains a URL that points to the message in the Teams UI. This URL opens the message directly in the Teams UI in a browser.
 
-## Choosing the right API for your scenarios
+## Choosing the right API for your scenario
 
-Choosing the right API is essential for getting the best experience. Additionally, using the right set of APIs allows you to fetch data without hitting throttling.
+Choosing the right API is essential for you to build the best possible experience. Using the right set of APIs also ensure that you to fetch data without hitting throttling.
 
-Messaging APIs in Microsoft Teams are divided in three major categories.
+The messaging APIs in Microsoft Graph fall into three:
 
-- APIs focused on the way Microsoft Teams UI work. Any changes are instantly visible
-- Slow sync APIs focused on users and teams. Any changes can take up to 24 hours to be available
-- Change notifications based APIs to get notified in real time
+- APIs that map to the Teams UI. Any changes are immediately visible.
+- Slow sync APIs that are focused on users and teams. Any changes can take up to 24 hours to be available.
+- Change notifications-based APIs to get notified in real time.
 
-### Microsoft Teams UI aligned APIs
+### Teams UI-aligned APIs
 
-These APIs allow you to get older methods similar to how Microsoft Teams UI does. These APIs are built to allow 'once in a while' sync to get messages in a specific context. These APIs are highly performant and any changes (messages sent, edited, or deleted) are instantly visible through these APIs.
+APIs that align to the Teams UI allow you to get older methods similar to how the Teams UI works. These APIs are built to for _once in a while_ syncs to get messages in a specific context. These APIs are highly performant and any changes (messages sent, edited, or deleted) are immediately visible.
 
-Following APIs belong to this set.
+The following are Teams UI-aligned APIs:
 
 - [List messages in a chat](/graph/api/chat-list-messages)
 - [List messages in a channel](/graph/api/channel-list-messages)
@@ -687,19 +690,21 @@ Following APIs belong to this set.
 - [List hostedContents associated with a message](/graph/api/chatmessage-list-hostedcontents)
 - [Get hostedContent associated with a message](/graph/api/chatmessagehostedcontent-get)
 
-Additionally, following APIs act along with the APIs above to serve specific scenarios regarding fetching specific instances or changing order of traversal.
+In addition, the following APIs act along with these APIs to serve specific scenarios, such as fetching specific instances or changing the order of traversal.
 
 - [Get a message or reply in a channel or a chat](/graph/api/chatmessage-get)
 - [Continuous sync using /delta for channel messages](/graph/api/chatmessage-delta)
 
-### APIs for exporting data from Microsoft Teams
+### APIs for exporting data from Teams
 
-These APIs typically work at a higher granularity than UI aligned APIs. These APIs focus on allowing fetching large amount of data. It might take a while (upto 24 hours in certain cases) for data to get synced and being available through these APIs.
+APIs that export data typically work at a higher granularity than UI-aligned APIs. These APIs focus on allowing the fetching of large amount of data. It might take a while (up to 24 hours in certain cases) for data to sync and become available through these APIs.
+
+The following APIs fall into this category:
 
 - [List messages across a user's chats](/graph/api/chats-getallmessages)
 - [List messages across channels in a team](/graph/api/channel-getallmessages)
 
 ### Real-time APIs
 
-Real-time APIs allow caller to get notified as soon as a change is made (message sent, edited, deleted etc.). These APIs are suitable for real time applications like rendering messages outside of Microsoft Teams UI. Additionally, these APIs allow creating subscriptions and thus allow receiving large amount of data without hitting throttling. For more information, see [this document](/graph/teams-changenotifications-chatmessage).
+Real-time APIs allow a caller to get notified as soon as a change is made (message sent, edited, deleted, and so on). These APIs are suitable for real-time applications like rendering messages outside of the Teams UI. In addition, these APIs allow for the creation of subscriptions and therefore the reception of large amount of data without hitting throttling. For more information, see [Change notifications for channles and chats](/graph/teams-changenotifications-chatmessage).
 
