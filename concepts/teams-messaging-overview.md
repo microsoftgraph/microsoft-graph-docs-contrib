@@ -14,13 +14,13 @@ Microsoft Graph provides a comprehensive set of Microsoft Teams APIs that enable
 
 ## chatMessage schema
 
-[chatMessage](/graph/api/resources/chatMessage) represents messages in Teams [chats](/graph/api/resources/chat) and [channels](/graph/api/resources/channel). This section describes the elements of the **chatMessage** schema.
+The [chatMessage](/graph/api/resources/chatMessage) resource type represents messages in Teams [chats](/graph/api/resources/chat) and [channels](/graph/api/resources/channel). This section describes the elements of the **chatMessage** schema.
 
 > **Note:** The examples in this section show only the relevant schema elements and not the entire message payload.
 
 ### attachments
 
-[Attachments](/graph/api/resources/chatmessageattachment) represent entities that can be referenced from a [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). These entities include files, tabs, cards, meetings, or other messages. The items themselves might be located somewhere else. For example, files might be stored in SharePoint. The following sections describe the possible types of attachments on a **chatMessage** object.
+The [chatMessageAttachment](/graph/api/resources/chatmessageattachment) resource type represents entities that can be referenced from a [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). These entities include files, tabs, cards, meetings, or other messages. The items themselves might be located somewhere else. For example, files might be stored in SharePoint. The following sections describe the possible types of attachments on a **chatMessage** object.
 
 #### file attachment
 
@@ -108,7 +108,7 @@ The following example shows the schema for an adaptive card attachment when the 
     ]
 ```
 
-> **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** are not unsupported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
+> **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** are not supported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
 
 #### meeting attachment
 
@@ -149,19 +149,19 @@ The following example shows the schema for a message attachment.
 
 ### body
 
-`body` represents the body of the message. `body` in itself can refer to other elements in the schema like mentions, attachments. Body can be `text` or `html` as represented by the `contentType` property.
+The **body** property of a **chatMessage** object represents the body of the message. The **body** property can refer to other elements in the schema such as mentions or attachments. The contents can be `text` or `html`, as specified by the **contentType** property of the [itemBody](/graph/api/resources/itembody) resource type.
 
-Microsoft Teams supports more schema elements, which are outside of the HTML specifications to support other elements like mentions. Following elements are supported by `chatMessage` schema, which aren't HTML elements.
+Teams supports more schema elements beyond the HTML specifications to support other elements like mentions. The **chatMessage** schema supports the following non-HTML elements:
 
-- at - Reference to an [chatMessageMention](/graph/api/resources/chatmessagemention) representing details of a user, application, [channel](/graph/api/resources/channel?preserve-view=true), [team](/graph/api/resources/team), or [tag](/graph/api/resources/teamworktag) being @mentioned
-- attachment - Representing the position of an attachment reference
-- systemEventMessage - When body `content` is set to `<systemEventMessage/>`, it means the message represents a special event. You can read more about system events [here](/graph/system-messages).
-- emoji - When body of the message contains an emoji, `$"<emoji id="IdOfTheEmoji" alt="AlternateRepresentationOfEmoji" title="TitleOfEmoji"></emoji>"` element represents various properties of an emoji
-    - id - ID of the emoji
-    - alt - Alternate representation for the emoji, for example, Unicode
-    - title - Title for the emoji
+- at - A reference to an [chatMessageMention](/graph/api/resources/chatmessagemention) that represents the details of a user, application, [channel](/graph/api/resources/channel?preserve-view=true), [team](/graph/api/resources/team), or [tag](/graph/api/resources/teamworktag) that is @mentioned.
+- attachment - Represents the position of an attachment reference.
+- systemEventMessage - When the **content** property of the **itemBody** resource is set to `<systemEventMessage/>`, the message represents a special event. For more information, see [Get system messages](/graph/system-messages).
+- emoji - When body of the message contains an emoji, the `$"<emoji id="IdOfTheEmoji" alt="AlternateRepresentationOfEmoji" title="TitleOfEmoji"></emoji>"` element represents the properties of an emoji:
+    - id - IThe D of the emoji.
+    - alt - An alternate representation for the emoji; for example, Unicode.
+    - title - A title for the emoji.
 
-#### Example of a message with @mention for a team
+#### Example: chatMessage schema of a message with @mention for a team
 
 ```json
     "body": {
