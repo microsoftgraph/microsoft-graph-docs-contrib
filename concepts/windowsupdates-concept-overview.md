@@ -3,7 +3,7 @@ title: "Windows updates API overview"
 description: "The Windows Update for Business deployment service gives control to your organization over the updates offered to your devices."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: conceptualPageType
 ---
 

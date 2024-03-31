@@ -3,7 +3,7 @@ title: "workbookNamedItem resource type"
 description: "Represents a defined name for a range of cells or value."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "excel"
+ms.subservice: "excel"
 author: "ruoyingl"
 ---
 

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-revokeSignInSessions, err := graphClient.Me().RevokeSignInSessions().Post(context.Background(), nil)
+revokeSignInSessions, err := graphClient.Me().RevokeSignInSessions().PostAsRevokeSignInSessionsPostResponse(context.Background(), nil)
 
 
 ```

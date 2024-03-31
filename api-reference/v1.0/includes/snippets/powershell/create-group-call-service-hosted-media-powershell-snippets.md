@@ -47,12 +47,12 @@ $params = @{
 		}
 	)
 	requestedModalities = @(
-		"audio"
-	)
-	mediaConfig = @{
-		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-		removeFromDefaultAudioGroup = $false
-	}
+	"audio"
+)
+mediaConfig = @{
+	"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+	removeFromDefaultAudioGroup = $false
+}
 }
 
 New-MgCommunicationCall -BodyParameter $params

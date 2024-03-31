@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 role := "{role}"
-getByUserRole, err := graphClient.Solutions().VirtualEvents().Webinars().GetByUserRoleWithRole(&role).Get(context.Background(), nil)
+getByUserRole, err := graphClient.Solutions().VirtualEvents().Webinars().GetByUserRoleWithRole(&role).GetAsGetByUserRoleWithRoleGetResponse(context.Background(), nil)
 
 
 ```
