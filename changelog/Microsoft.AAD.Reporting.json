@@ -50,6 +50,56 @@
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "93d4b9ff-d48e-4081-8835-e6c54baf5e5e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "conditionalAccessAudienceReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessAudienceReason** enumeration type.",
+          "Target": "conditionalAccessAudienceReason"
+        },
+        {
+          "Id": "93d4b9ff-d48e-4081-8835-e6c54baf5e5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessAudience](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAudience?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessAudience"
+        },
+        {
+          "Id": "93d4b9ff-d48e-4081-8835-e6c54baf5e5e",
+          "ApiChange": "Property",
+          "ChangedApiName": "conditionalAccessAudiences",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessAudiences** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "93d4b9ff-d48e-4081-8835-e6c54baf5e5e",
+          "ApiChange": "Property",
+          "ChangedApiName": "globalSecureAccessIpAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **globalSecureAccessIpAddress** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "93d4b9ff-d48e-4081-8835-e6c54baf5e5e",
+          "ApiChange": "Property",
+          "ChangedApiName": "isThroughGlobalSecureAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the **isThroughGlobalSecureAccess** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "93d4b9ff-d48e-4081-8835-e6c54baf5e5e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-18T15:49:07.7137256Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+     },
     {
       "ChangeList": [
         {
