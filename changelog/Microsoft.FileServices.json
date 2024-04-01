@@ -3,6 +3,81 @@
      {
       "ChangeList": [
         {
+          "Id": "f4107556-04e1-4da4-a1a1-daaff4dd3cca",
+          "ApiChange": "Member",
+          "ChangedApiName": "newsLink",
+          "ChangeType": "Addition",
+          "Description": "Added the `newsLink` member to the **pageLayoutType** enumeration.",
+          "Target": "pageLayoutType"
+        },
+        {
+          "Id": "f4107556-04e1-4da4-a1a1-daaff4dd3cca",
+          "ApiChange": "Member",
+          "ChangedApiName": "videoNewsLink",
+          "ChangeType": "Addition",
+          "Description": "Added the `videoNewsLink` member to the **pageLayoutType** enumeration.",
+          "Target": "pageLayoutType"
+        },
+        {
+          "Id": "f4107556-04e1-4da4-a1a1-daaff4dd3cca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "newsLinkPage",
+          "ChangeType": "Addition",
+          "Description": "Added the [newsLinkPage](https://learn.microsoft.com/en-us/graph/api/resources/newsLinkPage?view=graph-rest-beta) resource.",
+          "Target": "newsLinkPage"
+        },
+        {
+          "Id": "f4107556-04e1-4da4-a1a1-daaff4dd3cca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "videoNewsLinkPage",
+          "ChangeType": "Addition",
+          "Description": "Added the [videoNewsLinkPage](https://learn.microsoft.com/en-us/graph/api/resources/videoNewsLinkPage?view=graph-rest-beta) resource.",
+          "Target": "videoNewsLinkPage"
+        },
+        {
+          "Id": "f4107556-04e1-4da4-a1a1-daaff4dd3cca",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/newsLinkPage-publish?view=graph-rest-beta) method to the [newsLinkPage](https://learn.microsoft.com/en-us/graph/api/resources/newsLinkPage?view=graph-rest-beta) resource.",
+          "Target": "newsLinkPage"
+        },
+        {
+          "Id": "f4107556-04e1-4da4-a1a1-daaff4dd3cca",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/videoNewsLinkPage-publish?view=graph-rest-beta) method to the [videoNewsLinkPage](https://learn.microsoft.com/en-us/graph/api/resources/videoNewsLinkPage?view=graph-rest-beta) resource.",
+          "Target": "videoNewsLinkPage"
+        },
+        {
+          "Id": "f4107556-04e1-4da4-a1a1-daaff4dd3cca",
+          "ApiChange": "Term",
+          "ChangedApiName": "bannerImageWebUrlContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [bannerImageWebUrlContent](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "oneDrive"
+        },
+        {
+          "Id": "f4107556-04e1-4da4-a1a1-daaff4dd3cca",
+          "ApiChange": "Term",
+          "ChangedApiName": "bannerImageWebUrlContentError",
+          "ChangeType": "Addition",
+          "Description": "Added the [bannerImageWebUrlContentError](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "oneDrive"
+        }
+      ],
+      "Id": "f4107556-04e1-4da4-a1a1-daaff4dd3cca",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-01T23:11:05.461914Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    }, 
+    {
+      "ChangeList": [
+        
+        {
           "Id": "400279c6-8c1b-4a1d-92ff-c49987587f79",
           "ApiChange": "Method",
           "ChangedApiName": "delta",
