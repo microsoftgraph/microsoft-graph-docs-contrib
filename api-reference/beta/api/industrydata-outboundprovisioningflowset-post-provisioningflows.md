@@ -356,7 +356,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "post_classgroup"
+  "name": "post_securitygroup"
 }-->
 
 ```http
@@ -411,7 +411,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "post_classgroup"
+  "name": "post_user"
 }-->
 
 ```http
