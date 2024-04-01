@@ -19,7 +19,7 @@ Represents a form completion requirement on a [plannerTask](plannertask.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|requiredForms|String collection|Read-only. A collection of keys from the [plannerFormsDictionary](plannerformsdictionary.md) that identify the [plannerFormReference](plannerformreference.md) objects specifying the requirements to complete the [plannerTask](plannertask.md).|
+|requiredForms|String collection|Read-only. A collection of keys from the [plannerFormsDictionary](plannerformsdictionary.md) that identify the [plannerFormReference](plannerformreference.md) objects that specify the requirements to complete the [plannerTask](plannertask.md).|
 
 ## Relationships
 
