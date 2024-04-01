@@ -53,6 +53,10 @@ Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconci
 
 ## March 2024: New in preview only
 
+### Security | Attack simulation and training
+
+Use the [training campaign](/graph/api/resources/trainingcampaign?view=graph-rest-beta&preserve-view=true) API to directly assign security trainings to users.
+
 ### Applications
 
 Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
@@ -63,7 +67,12 @@ Use the upsert capability to create an [application](/graph/api/resources/applic
 
 ### Device and app management | Cloud PC
 
-The following properties are deprecated:
+- [Apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) the current [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) configuration across all Cloud PC devices under a specified policy.
+- [Update](/graph/api/cloudpcprovisioningpolicy-applyconfig?view=graph-rest-beta&preserve-view=true) the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) configuration for a specific set of Cloud PC devices using their IDs. 
+
+Added the ability to mark specified **alertRecord** objects as sent via the **isPortalNotificationSent** property.
+
+Deprecated the following properties:
 
 - **type** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **connectionType** property instead.
 - **healthCheckStatusDetails** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **healthCheckStatusDetail** property instead.
@@ -90,6 +99,10 @@ Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/fede
 ### Security | Email and collaboration protection
 
 Added the ability to list emails analyzed by Microsoft Defender for Office 365, get email related metadata, and perform response actions (soft delete, hard delete, move to junk, move to Inbox).
+
+### Security | Identities
+
+Added the ability to get, get list, update Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue?view=graph-rest-beta&preserve-view=true).
 
 ### Users
 
