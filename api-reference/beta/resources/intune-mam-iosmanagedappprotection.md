@@ -23,11 +23,11 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List iosManagedAppProtections](../api/intune-mam-iosmanagedappprotection-list.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) collection|List properties and relationships of the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) objects.|
-|[Get iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-get.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Read properties and relationships of the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.|
-|[Create iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-create.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Create a new [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.|
-|[Delete iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-delete.md)|None|Deletes a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
-|[Update iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-update.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.|
+|[List iosManagedAppProtections](../api/intune-mam-iosmanagedappprotection-list.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) collection|List properties and relationships of the [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) objects.|
+|[Get iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-get.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Read properties and relationships of the [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
+|[Create iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-create.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Create a new [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
+|[Delete iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-delete.md)|None|Deletes a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md).|
+|[Update iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-update.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
 
 ## Properties
 |Property|Type|Description|

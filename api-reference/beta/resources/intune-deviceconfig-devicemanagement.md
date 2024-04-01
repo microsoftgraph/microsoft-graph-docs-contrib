@@ -20,8 +20,8 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-deviceconfig-devicemanagement-get.md)|[deviceManagement](../resources/intune-deviceconfig-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-deviceconfig-devicemanagement-update.md)|[deviceManagement](../resources/intune-deviceconfig-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-deviceconfig-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-deviceconfig-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 |[enableUnlicensedAdminstrators action](../api/intune-deviceconfig-devicemanagement-enableunlicensedadminstrators.md)|None|Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license. You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators. Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.|
 |[enableLegacyPcManagement action](../api/intune-deviceconfig-devicemanagement-enablelegacypcmanagement.md)|None||
 |[enableAndroidDeviceAdministratorEnrollment action](../api/intune-deviceconfig-devicemanagement-enableandroiddeviceadministratorenrollment.md)|None||
@@ -42,8 +42,8 @@ Singleton entity that acts as a container for all device management functionalit
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceConfigurations|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) collection|The device configurations.|
-|deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) collection|The device compliance policies.|
+|deviceConfigurations|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) collection|The device configurations.|
+|deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) collection|The device compliance policies.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|The software update status summary.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)|The device compliance state summary for this account.|
 |deviceCompliancePolicySettingStateSummaries|[deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|

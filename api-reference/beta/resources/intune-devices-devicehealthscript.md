@@ -45,7 +45,7 @@ Intune will provide customer the ability to run their Powershell Health scripts 
 |remediationScriptContent|Binary|The entire content of the remediation powershell script|
 |createdDateTime|DateTimeOffset|The timestamp of when the device health script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of when the device health script was modified. This property is read-only.|
-|runAsAccount|[runAsAccountType](../resources/intune-devices-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked|
 |runAs32Bit|Boolean|Indicate whether PowerShell script(s) should run as 32-bit|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the device health script|

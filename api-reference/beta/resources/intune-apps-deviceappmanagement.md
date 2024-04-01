@@ -20,8 +20,8 @@ Singleton entity that acts as a container for all device app management function
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceAppManagement](../api/intune-apps-deviceappmanagement-get.md)|[deviceAppManagement](../resources/intune-apps-deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune-apps-deviceappmanagement.md) object.|
-|[Update deviceAppManagement](../api/intune-apps-deviceappmanagement-update.md)|[deviceAppManagement](../resources/intune-apps-deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune-apps-deviceappmanagement.md) object.|
+|[Get deviceAppManagement](../api/intune-apps-deviceappmanagement-get.md)|[deviceAppManagement](../resources/intune-shared-deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) object.|
+|[Update deviceAppManagement](../api/intune-apps-deviceappmanagement-update.md)|[deviceAppManagement](../resources/intune-shared-deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -31,10 +31,10 @@ Singleton entity that acts as a container for all device app management function
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|mobileApps|[mobileApp](../resources/intune-apps-mobileapp.md) collection|The mobile apps.|
+|mobileApps|[mobileApp](../resources/intune-shared-mobileapp.md) collection|The mobile apps.|
 |mobileAppCategories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The mobile app categories.|
 |enterpriseCodeSigningCertificates|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) collection|The Windows Enterprise Code Signing Certificate.|
-|iosLobAppProvisioningConfigurations|[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) collection|The IOS Lob App Provisioning Configurations.|
+|iosLobAppProvisioningConfigurations|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) collection|The IOS Lob App Provisioning Configurations.|
 |symantecCodeSigningCertificate|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|The WinPhone Symantec Code Signing Certificate.|
 |mobileAppConfigurations|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) collection|The Managed Device Mobile Application Configurations.|
 |mobileAppCatalogPackages|[mobileAppCatalogPackage](../resources/intune-apps-mobileappcatalogpackage.md) collection|MobileAppCatalogPackage entities.|

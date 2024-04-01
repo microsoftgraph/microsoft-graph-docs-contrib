@@ -20,8 +20,8 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-devices-devicemanagement-get.md)|[deviceManagement](../resources/intune-devices-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-devices-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-devices-devicemanagement-update.md)|[deviceManagement](../resources/intune-devices-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-devices-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-devices-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-devices-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 |[sendCustomNotificationToCompanyPortal action](../api/intune-devices-devicemanagement-sendcustomnotificationtocompanyportal.md)|None||
 |[userExperienceAnalyticsSummarizeWorkFromAnywhereDevices function](../api/intune-devices-devicemanagement-userexperienceanalyticssummarizeworkfromanywheredevices.md)|[userExperienceAnalyticsWorkFromAnywhereDevicesSummary](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)||
 |[userExperienceAnalyticsSummarizedDeviceScopes function](../api/intune-devices-devicemanagement-userexperienceanalyticssummarizeddevicescopes.md)|[userExperienceAnalyticsDeviceScopeSummary](../resources/intune-devices-userexperienceanalyticsdevicescopesummary.md)||
@@ -48,7 +48,7 @@ Singleton entity that acts as a container for all device management functionalit
 |:---|:---|:---|
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) collection|The list of device remote action audits with the tenant.|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Apple push notification certificate.|
-|deviceManagementScripts|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) collection|The list of device management scripts associated with the tenant.|
+|deviceManagementScripts|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) collection|The list of device management scripts associated with the tenant.|
 |deviceShellScripts|[deviceShellScript](../resources/intune-devices-deviceshellscript.md) collection|The list of device shell scripts associated with the tenant.|
 |deviceCustomAttributeShellScripts|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md) collection|The list of device custom attribute shell scripts associated with the tenant.|
 |deviceHealthScripts|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md) collection|The list of device health scripts associated with the tenant.|
@@ -59,7 +59,7 @@ Singleton entity that acts as a container for all device management functionalit
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The list of managed devices.|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md) collection|Data sharing consents.|
-|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) collection|The collection property of MobileAppTroubleshootingEvent.|
+|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) collection|The collection property of MobileAppTroubleshootingEvent.|
 |userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|User experience analytics overview|
 |userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) collection|User experience analytics baselines|
 |userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md) collection|User experience analytics categories|

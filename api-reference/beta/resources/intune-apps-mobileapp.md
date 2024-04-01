@@ -20,12 +20,12 @@ An abstract class containing the base properties for Intune mobile apps. Note: L
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List mobileApps](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-apps-mobileapp.md) collection|List properties and relationships of the [mobileApp](../resources/intune-apps-mobileapp.md) objects.|
-|[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune-apps-mobileapp.md) object.|
+|[List mobileApps](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-shared-mobileapp.md) collection|List properties and relationships of the [mobileApp](../resources/intune-shared-mobileapp.md) objects.|
+|[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-shared-mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune-shared-mobileapp.md) object.|
 |[assign action](../api/intune-apps-mobileapp-assign.md)|None||
 |[validateXml action](../api/intune-apps-mobileapp-validatexml.md)|String||
-|[createCatalogApp action](../api/intune-apps-mobileapp-createcatalogapp.md)|[mobileApp](../resources/intune-apps-mobileapp.md)||
-|[convertFromMobileAppCatalogPackage function](../api/intune-apps-mobileapp-convertfrommobileappcatalogpackage.md)|[mobileApp](../resources/intune-apps-mobileapp.md)||
+|[createCatalogApp action](../api/intune-apps-mobileapp-createcatalogapp.md)|[mobileApp](../resources/intune-shared-mobileapp.md)||
+|[convertFromMobileAppCatalogPackage function](../api/intune-apps-mobileapp-convertfrommobileappcatalogpackage.md)|[mobileApp](../resources/intune-shared-mobileapp.md)||
 |[updateRelationships action](../api/intune-apps-mobileapp-updaterelationships.md)|None||
 |[getPublishingConstraints function](../api/intune-apps-mobileapp-getpublishingconstraints.md)|[mobileAppPublishingConstraints](../resources/intune-apps-mobileapppublishingconstraints.md)||
 

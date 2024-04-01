@@ -20,8 +20,8 @@ Singleton that acts as container for a collection of Cloud PKI entities.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-cloudpkigraphservice-devicemanagement-get.md)|[deviceManagement](../resources/intune-cloudpkigraphservice-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-cloudpkigraphservice-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-cloudpkigraphservice-devicemanagement-update.md)|[deviceManagement](../resources/intune-cloudpkigraphservice-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-cloudpkigraphservice-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-cloudpkigraphservice-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-cloudpkigraphservice-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|

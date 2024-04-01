@@ -20,8 +20,8 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-partnerintegration-devicemanagement-get.md)|[deviceManagement](../resources/intune-partnerintegration-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-partnerintegration-devicemanagement-update.md)|[deviceManagement](../resources/intune-partnerintegration-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-partnerintegration-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-partnerintegration-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-partnerintegration-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 |[getOrganizationalMessageTenantConsent function](../api/intune-partnerintegration-devicemanagement-getorganizationalmessagetenantconsent.md)|[organizationalMessageTenantConsent](../resources/intune-partnerintegration-organizationalmessagetenantconsent.md)||
 |[postOrganizationalMessageTenantConsent action](../api/intune-partnerintegration-devicemanagement-postorganizationalmessagetenantconsent.md)|[organizationalMessageTenantConsent](../resources/intune-partnerintegration-organizationalmessagetenantconsent.md)||
 |[updateOrganizationalMessageTenantConsent action](../api/intune-partnerintegration-devicemanagement-updateorganizationalmessagetenantconsent.md)|[organizationalMessageTenantConsent](../resources/intune-partnerintegration-organizationalmessagetenantconsent.md)||
