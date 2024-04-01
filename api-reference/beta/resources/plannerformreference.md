@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents complete details about a form, including the form's display name, URL, and the response data. This object is typically used as a value in the [plannerFormsDictionary] object, where each value must be a (plannerFormsDictionary.md) object.
+Represents complete details about a form, including the form's display name, URL, and the response data. This object is typically used as a value in the [plannerFormsDictionary](plannerFormsDictionary.md) object.
 
 ## Properties
 | Property       | Type    |Description|
