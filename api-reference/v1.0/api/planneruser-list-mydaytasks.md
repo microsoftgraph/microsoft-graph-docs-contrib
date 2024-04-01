@@ -1,6 +1,6 @@
 ---
 title: "List myDayTasks"
-description: "Retrieve a list of **plannerTask** objects to be shown in the MyDay view of the user."
+description: "Retrieve a list of planner tasks to be shown in the MyDay view of the user."
 ms.localizationpriority: medium
 author: "NupurGarg"
 ms.prod: "planner"
