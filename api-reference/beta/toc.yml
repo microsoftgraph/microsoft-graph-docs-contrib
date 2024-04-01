@@ -17911,7 +17911,7 @@ items:
                 href: api/planneruser-list-recentplans.md
               - name: List user's assigned tasks
                 href: api/planneruser-list-tasks.md
-              - name: List user's myDay tasks
+              - name: List user's MyDay tasks
                 href: api/planneruser-list-mydaytasks.md
           - name: Task details
             href: resources/plannertaskdetails.md
