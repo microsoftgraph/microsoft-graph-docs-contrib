@@ -3,7 +3,7 @@ title: "Get task"
 description: "Read the properties of a task object in a lifecycle workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 #### Request
 
-The following is an example of a request to get a task from a workflow.
+The following example shows a request to get a task from a workflow.
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_get_workflow_task"
@@ -114,7 +114,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request to get a task from a workflow version.
+The following example shows a request to get a task from a workflow version.
 
 # [HTTP](#tab/http)
 <!-- {

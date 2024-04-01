@@ -3,7 +3,7 @@ title: "Delete virtualAppointment"
 description: "Delete a virtualAppointment object."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

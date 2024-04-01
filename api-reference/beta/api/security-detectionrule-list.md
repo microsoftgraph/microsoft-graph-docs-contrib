@@ -3,7 +3,7 @@ title: "List detectionRules"
 description: "Get a list of the custom detection rules and their properties."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/security/rules/detectionRules?$top=3
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-detectionrule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-detectionrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

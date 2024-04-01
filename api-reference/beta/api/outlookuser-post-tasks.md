@@ -3,7 +3,7 @@ title: "Create outlookTask"
 description: "Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox."
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

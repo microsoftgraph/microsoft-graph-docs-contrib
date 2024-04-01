@@ -32,7 +32,7 @@ assignments := []graphmodels.DeviceCompliancePolicyAssignmentable {
 }
 requestBody.SetAssignments(assignments)
 
-assign, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicyId("deviceCompliancePolicy-id").Assign().Post(context.Background(), requestBody, nil)
+assign, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicyId("deviceCompliancePolicy-id").Assign().PostAsAssignPostResponse(context.Background(), requestBody, nil)
 
 
 ```

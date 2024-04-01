@@ -3,7 +3,7 @@ title: "deviceAppManagementTaskCategory enum type"
 description: "Device app management task category."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

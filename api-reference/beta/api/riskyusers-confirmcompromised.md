@@ -1,9 +1,9 @@
 ---
-title: Confirm riskyUser compromised
+title: riskyUser: confirmCompromised
 description: Confirm a riskyUser object as compromised.
 author: tracyshi
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
 # riskyUser: confirmCompromised
@@ -39,7 +39,7 @@ POST /riskyUsers/confirmCompromised
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Specify the risky user IDs to dismiss in the request body.
+Specify the user IDs to confirm as compromised in the request body.
 
 ## Response
 
@@ -109,7 +109,7 @@ HTTP/1.1 204 No Content
 <!--
 ### Example 2: Confirm a user as compromised
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -127,7 +127,7 @@ Content-type: application/json
 ```
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

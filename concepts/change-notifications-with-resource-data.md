@@ -4,7 +4,7 @@ description: "Microsoft Graph uses a webhook mechanism to deliver change notific
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
-ms.topic: conceptual
+ms.topic: concept-article
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.date: 06/23/2023

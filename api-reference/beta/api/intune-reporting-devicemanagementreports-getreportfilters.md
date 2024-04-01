@@ -3,7 +3,7 @@ title: "getReportFilters action"
 description: "Intune Reporting Devicemanagementreports Getreportfilters Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

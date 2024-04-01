@@ -3,7 +3,7 @@ title: "roleGroup resource type"
 description: "Represents a named collection of individual roles."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

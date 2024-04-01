@@ -3,7 +3,7 @@ title: "List userSettings"
 description: "Retrieve a list of cloudPcUserSetting objects."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

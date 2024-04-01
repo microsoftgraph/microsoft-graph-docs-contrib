@@ -4,7 +4,7 @@ description: "Delete a pendingExternalUserProfile object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ---
 
 # Delete pendingExternalUserProfile
@@ -92,6 +92,10 @@ DELETE https://graph.microsoft.com/beta/directory/pendingExternalUserProfiles/{i
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-pendingexternaluserprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-pendingexternaluserprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -4,7 +4,7 @@ description: "Retrieve the metadata for a specific version of a ListItem."
 ms.date: 09/10/2017
 title: Get a previous version of a list item - SharePoint API
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get a ListItemVersion resource (preview)
@@ -49,7 +49,7 @@ This example retrieves a version of a listItem and expands the fields collection
 <!-- { "blockType": "request", "name": "get-single-version-listItem", "scopes": "files.read" } -->
 
 ```http
-GET /sites/{site-id}/items/{item-id}/versions/{version-id}?expand=fields
+GET https://graph.microsoft.com/beta/sites/{site-id}/items/{item-id}/versions/{version-id}?expand=fields
 ```
 
 ### Response

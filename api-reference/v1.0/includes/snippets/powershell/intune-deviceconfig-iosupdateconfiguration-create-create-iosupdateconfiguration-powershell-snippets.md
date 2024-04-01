@@ -14,9 +14,9 @@ $params = @{
 	activeHoursStart = "12:00:05.5020000"
 	activeHoursEnd = "11:59:00.8990000"
 	scheduledInstallDays = @(
-		"monday"
-	)
-	utcTimeOffsetInMinutes = 
+	"monday"
+)
+utcTimeOffsetInMinutes = 
 }
 
 New-MgDeviceManagementDeviceConfiguration -BodyParameter $params

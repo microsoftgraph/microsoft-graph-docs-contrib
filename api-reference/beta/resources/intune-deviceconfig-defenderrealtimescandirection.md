@@ -3,7 +3,7 @@ title: "defenderRealtimeScanDirection enum type"
 description: "Possible values for monitoring file activity."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

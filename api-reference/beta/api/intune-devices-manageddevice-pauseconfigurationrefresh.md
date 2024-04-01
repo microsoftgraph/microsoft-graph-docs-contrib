@@ -3,7 +3,7 @@ title: "pauseConfigurationRefresh action"
 description: "Initiates a command to pause config refresh for the device."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update remoteDesktopSecurityConfiguration"
 description: "Update the properties of a remoteDesktopSecurityConfiguration object on the servicePincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [remo
 ## Examples
 
 ### Request
-Here's an example of the request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -109,7 +109,7 @@ Content-Type: application/json
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

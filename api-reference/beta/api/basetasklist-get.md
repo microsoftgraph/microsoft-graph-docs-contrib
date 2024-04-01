@@ -3,7 +3,7 @@ title: "Get baseTaskList"
 description: "Read the properties and relationships of a baseTaskList object."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

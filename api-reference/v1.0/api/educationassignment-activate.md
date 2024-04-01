@@ -3,7 +3,7 @@ title: "educationAssignment: activate"
 description: "Activate an inactive assignment to signal that the assignment has further action items for teachers or students."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

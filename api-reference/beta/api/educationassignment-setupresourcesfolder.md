@@ -3,7 +3,7 @@ title: "educationAssignment: setUpResourcesFolder"
 description: "Create a SharePoint folder to upload files for a given educationAssignment."
 ms.localizationpriority: medium
 author: "sharmas"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ If the specified **assignment** already has a folder, this method returns a `400
 The following example shows how to call this API.
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

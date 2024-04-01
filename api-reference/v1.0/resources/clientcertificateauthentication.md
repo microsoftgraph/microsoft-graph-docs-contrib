@@ -3,7 +3,7 @@ title: "clientCertificateAuthentication resource type"
 description: "Represents the configuration for retrieving a clientCertificateAuthentication."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

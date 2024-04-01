@@ -3,7 +3,7 @@ title: "accessReviewInactiveUsersQueryScope resource type"
 description: "A type of accessReviewQueryScope that allows only inactive users to be selected in the scope of an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

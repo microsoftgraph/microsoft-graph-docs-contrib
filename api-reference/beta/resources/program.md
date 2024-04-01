@@ -3,7 +3,7 @@ title: "program resource type (deprecated)"
 description: "In the Microsoft Entra access reviews feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 

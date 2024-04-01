@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: saurabh.madan
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.prod: "applications"
+ms.subservice: entra-applications
 ms.date: 09/08/2023
 ---
 

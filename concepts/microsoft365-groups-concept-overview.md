@@ -5,8 +5,8 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.localizationpriority: high
-ms.prod: "groups"
-doc_type: conceptualPageType
+ms.subservice: entra-groups
+ms.topic: concept-article
 ms.custom: scenarios:getting-started
 ms.date: 05/19/2023
 ---

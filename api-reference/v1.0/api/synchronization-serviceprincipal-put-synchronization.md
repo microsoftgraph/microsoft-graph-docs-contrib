@@ -4,7 +4,7 @@ description: "Provide credentials for establishing connectivity with the target 
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Add synchronization secrets

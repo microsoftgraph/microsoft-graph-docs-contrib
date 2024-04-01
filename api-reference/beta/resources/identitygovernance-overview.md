@@ -3,7 +3,7 @@ title: "Overview of Microsoft Entra ID Governance using Microsoft Graph"
 description: "Microsoft Entra ID Governance provides you with capabilities to ensure that the right principals have the right access to the right resources and at the right time. Use Microsoft Graph APIs to programmatically manage Microsoft Entra ID Governance features."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 11/29/2022
 ---

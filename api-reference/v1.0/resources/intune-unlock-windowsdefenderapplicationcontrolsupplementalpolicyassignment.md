@@ -3,7 +3,7 @@ title: "windowsDefenderApplicationControlSupplementalPolicyAssignment resource t
 description: "A class containing the properties used for assignment of a WindowsDefenderApplicationControl supplemental policy to a group."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

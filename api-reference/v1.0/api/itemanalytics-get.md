@@ -3,7 +3,7 @@ author: daspek
 title: Get itemAnalytics
 description: Get itemAnalytics about the views that took place under this resource.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get itemAnalytics
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->

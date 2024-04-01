@@ -3,7 +3,7 @@ title: "cloudPcProvisioningPolicy resource type"
 description: "Represents a Cloud PC provisioning policy."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -25,6 +25,8 @@ Represents a Cloud PC provisioning policy.
 |[Update cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-update.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Update the properties of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
 |[Delete cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-delete.md)|None|Delete a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.|
 |[Assign cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-assign.md)|None |Assign a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
+|[Apply cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-apply.md)|None|Apply the current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. Currently, you can only change the region.|
+|[applyConfig](../api/cloudpcprovisioningpolicy-applyconfig.md)|None|Update the [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration for a set of Cloud PC devices by their IDs.|
 
 ## Properties
 
@@ -67,7 +69,7 @@ Represents a Cloud PC provisioning policy.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

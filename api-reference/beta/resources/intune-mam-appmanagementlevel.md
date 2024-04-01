@@ -3,7 +3,7 @@ title: "appManagementLevel enum type"
 description: "Management levels for apps"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

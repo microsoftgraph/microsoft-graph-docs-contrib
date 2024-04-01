@@ -65,6 +65,7 @@ request_body = BookingAppointment(
 	),
 	invoice_id = "1001",
 	invoice_status = BookingInvoiceStatus.Open,
+	is_customer_allowed_to_manage_booking = True,
 	invoice_url = "theInvoiceUrl",
 	is_location_online = True,
 	opt_out_of_customer_email = False,

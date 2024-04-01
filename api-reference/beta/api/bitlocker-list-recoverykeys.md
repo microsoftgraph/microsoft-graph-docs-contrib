@@ -3,7 +3,7 @@ title: "List recoveryKeys"
 description: "Get a list of the bitlockerRecoveryKey objects and their properties."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

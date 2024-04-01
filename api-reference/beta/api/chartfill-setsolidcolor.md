@@ -3,7 +3,7 @@ title: "ChartFill: setSolidColor"
 description: "Sets the fill formatting of a chart element to a uniform color."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/le
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -54,7 +54,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 ## Example
 Here's an example of how to call this API.
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +101,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here's an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->
