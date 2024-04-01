@@ -2875,6 +2875,23 @@ Possible values for user account types (group membership), per Windows definitio
 |unbound|
 |unknownFutureValue|
 
+### conditionalAccessAudienceReason values
+
+| Member |
+| :----- |
+|none|
+| resourcelessRequest|
+| confidentialClientIdToken|
+|confidentialClientNonIdToken|
+|resourceMapping|
+|resourceMappingDefault|
+|scopeMapping|
+|scopeMappingDefault|
+|delegatedScope  |
+|firstPartyResourceDefault|
+|thirdPartyResourceDefault|
+|unknownFutureValue|
+
 ### persistentBrowserSessionMode values
 
 | Member |
