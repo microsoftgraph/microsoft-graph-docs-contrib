@@ -27,7 +27,7 @@ configuration := &graphcontacts.ContactsDelta()RequestBuilderGetRequestConfigura
 	QueryParameters: requestParameters,
 }
 
-delta, err := graphClient.Contacts().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.Contacts().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```
