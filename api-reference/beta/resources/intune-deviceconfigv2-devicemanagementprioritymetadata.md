@@ -3,7 +3,7 @@ title: "deviceManagementPriorityMetaData resource type"
 description: "Priority metadata of the policy."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -35,7 +35,7 @@ Provides access to Planner resources for a [user](user.md). It doesn't contain a
 |myDayTasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) to be shown in MyDay view of the user.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

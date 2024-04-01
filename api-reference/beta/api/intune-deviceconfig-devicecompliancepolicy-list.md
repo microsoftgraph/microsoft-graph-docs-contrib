@@ -3,7 +3,7 @@ title: "List deviceCompliancePolicies"
 description: "List properties and relationships of the deviceCompliancePolicy objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

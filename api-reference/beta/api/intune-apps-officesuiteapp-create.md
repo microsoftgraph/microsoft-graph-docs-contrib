@@ -3,7 +3,7 @@ title: "Create officeSuiteApp"
 description: "Create a new officeSuiteApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

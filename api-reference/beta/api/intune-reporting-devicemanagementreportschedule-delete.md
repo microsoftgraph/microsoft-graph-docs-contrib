@@ -3,7 +3,7 @@ title: "Delete deviceManagementReportSchedule"
 description: "Deletes a deviceManagementReportSchedule."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

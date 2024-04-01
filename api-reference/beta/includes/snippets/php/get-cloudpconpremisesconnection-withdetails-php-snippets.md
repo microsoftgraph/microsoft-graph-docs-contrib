@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new CloudPcOnPremisesConnectionItemRequestBuilderGetRequestConfiguration();
 $queryParameters = CloudPcOnPremisesConnectionItemRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse"];
+$queryParameters->select = ["id","displayName","healthCheckStatus","healthCheckStatusDetail","healthCheckStatusDetails","inUse"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

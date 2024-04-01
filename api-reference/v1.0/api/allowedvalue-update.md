@@ -116,7 +116,7 @@ Content-length: 80
 
 ### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

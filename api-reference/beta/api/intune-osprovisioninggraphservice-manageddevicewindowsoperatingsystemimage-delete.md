@@ -3,7 +3,7 @@ title: "Delete managedDeviceWindowsOperatingSystemImage"
 description: "Deletes a managedDeviceWindowsOperatingSystemImage."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

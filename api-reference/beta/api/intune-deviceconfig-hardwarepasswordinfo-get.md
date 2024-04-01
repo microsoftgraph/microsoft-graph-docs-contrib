@@ -3,7 +3,7 @@ title: "Get hardwarePasswordInfo"
 description: "Read properties and relationships of the hardwarePasswordInfo object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Intune devices and apps API overview"
 description: "Use the Intune API in Microsoft Graph to manage devices and apps and automate Intune in your organization. ISVs can use the Intune API to manage client tenants."
 author: "dougeby"
 ms.localizationpriority: high
-ms.prod: "intune"
+ms.subservice: "intune"
 ---
 
 # Intune devices and apps API overview

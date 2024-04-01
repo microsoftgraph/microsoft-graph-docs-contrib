@@ -3,7 +3,7 @@ title: "TableCollection: add"
 description: "Create a new table. The range source address determines the worksheet under which the table is added. If the table can't be added (for example, because the address is invalid, or the table would overlap with another table), an error is generated."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -55,7 +55,7 @@ If successful, this method returns `200 OK` response code and [WorkbookTable](..
 ## Example
 Here's an example of how to call this API.
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +103,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

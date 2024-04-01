@@ -3,7 +3,7 @@ title: "mobileAppSupersedence resource type"
 description: "Describes a supersedence relationship between two mobile apps."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
