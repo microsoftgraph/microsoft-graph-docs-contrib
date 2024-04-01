@@ -20,7 +20,7 @@ The different management choices for the class groups to be provisioned.
 | Property                     | Type    | Description                                                            |
 | :--------------------------- | :------ | :--------------------------------------------------------------------- |
 | createTeam                   | Boolean | Indicates whether a team should be created for the class group.        |
-| writeDisplayNameOnCreateOnly | Boolean | Indicates whether the class group display name should be set on create |
+| writeDisplayNameOnCreateOnly | Boolean | Indicates whether the class group display name should be set on create. |
 
 ## Relationships
 
