@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.
+Update the properties of a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,9 +44,9 @@ PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.
+In the request body, supply a JSON representation for the [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.
 
-The following table shows the properties that are required when you create the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).
+The following table shows the properties that are required when you create the [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -130,7 +130,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object in the response body.
 
 ## Example
 

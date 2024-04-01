@@ -50,14 +50,14 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|mobileApp|[mobileApp](../resources/intune-apps-mobileapp.md)||
+|mobileApp|[mobileApp](../resources/intune-shared-mobileapp.md)||
 |relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection||
 |mobileAppAssignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection||
 
 
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [mobileApp](../resources/intune-apps-mobileapp.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [mobileApp](../resources/intune-shared-mobileapp.md) in the response body.
 
 ## Example
 
