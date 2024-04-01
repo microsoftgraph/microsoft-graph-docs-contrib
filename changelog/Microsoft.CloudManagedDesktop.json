@@ -2,6 +2,24 @@
     "changelog": [
         {
             "ChangeList": [
+                {
+                    "Id": "b3b442cf-70ba-f2d3-a43e-89c05542829a",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "allotmentDisplayName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **allotmentDisplayName** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "b3b442cf-70ba-f2d3-a43e-89c05542829a",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2024-04-02T15:36:41.3424906Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                {
                  "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
                  "ApiChange": "Relationship",
