@@ -51,9 +51,8 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 #### Request
 
-Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
+The following example shows a request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_userSponsors"
@@ -70,7 +69,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -82,9 +81,8 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
+The following example shows a request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_groupSponsors"
@@ -101,7 +99,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

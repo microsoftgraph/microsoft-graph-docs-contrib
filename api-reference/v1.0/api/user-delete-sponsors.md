@@ -53,7 +53,6 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_sponsors_from_user"
