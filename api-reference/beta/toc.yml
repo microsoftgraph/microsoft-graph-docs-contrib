@@ -17568,7 +17568,7 @@ items:
                 href: api/documentsetversion-delete.md
               - name: Restore
                 href: api/documentsetversion-restore.md
-          - name: Pages (preview)
+          - name: Pages
             items:
               - name: Base site page
                 href: resources/basesitepage.md
