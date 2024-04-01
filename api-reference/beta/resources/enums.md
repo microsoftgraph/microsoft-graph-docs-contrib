@@ -4674,3 +4674,15 @@ Possible values for user account types (group membership), per Windows definitio
 |deviceCodeFlow|
 |authenticationTransfer|
 |unknownFutureValue|
+
+### pageLayoutType values 
+
+|Member|
+|:---|
+|microsoftReserved|
+|article|
+|home|
+|unknownFutureValue|
+|newsLink|
+|videoNewsLink|
+
