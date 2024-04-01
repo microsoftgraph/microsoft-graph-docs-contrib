@@ -18,11 +18,11 @@ Update the properties of a [sitePageTemplate](../resources/sitepagetemplate.md) 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+|Permission type|Permissions (from least to most privileged)|
+|:--------------|:------------------------------------------|
+|Delegated (work or school account)|Sites.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Sites.ReadWrite.All|
 
 ## HTTP request
 
@@ -37,26 +37,26 @@ PATCH /sites/{sitesId}/pageTemplates/microsoft.graph.sitePageTemplate/{page-temp
 
 ## Request headers
 
-| Name          | Description                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+|Name|Description|
+|:---|:----------|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-> **Notes:** : To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePageTemplate` must be included in the request body. The `@odata.type=#microsoft.graph.sitePageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint. It's crucial for successful request body parsing.
+> **Notes:** : To ensure successful parsing of the request body, include `@odata.type=#microsoft.graph.sitePageTemplate` in the request body.
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-These fields and be used in update requests.
+These fields can be used in update requests.
 
-| Property             | Type                                         | Description                                                                                                                                                                                                        |
-| :------------------- | :------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| description                | String                                       | Description of the page template. Optional.                                                                                                                                                                                  |
-| thumbnailWebUrl                | String                                       | Url of the page template's thumbnail image. Optional.                                                                                                                                                                                  |
-| title                | String                                       | Title of the page template. Optional.                                                                                                                                                                                  |
-| titleArea            | [titleArea](../resources/titlearea.md)       | Title area on the page template. Optional.                                                                                                                                                                       |
-| canvasLayout         | [canvasLayout](../resources/canvaslayout.md) | The layout of the content in a page template, including horizontal sections and vertical section. The content of the entire page layout must be provided, because the update function doesn't support partial updates. Optional. |
+|Property|Type|Description|
+|:-------|:---|:----------|
+|description|String|The description of the page template. Optional.|
+|thumbnailWebUrl|String|The URL of the page template's thumbnail image. Optional.|
+|title|String|The title of the page template. Optional.|
+|titleArea|[titleArea](../resources/titlearea.md)|The title area on the page template. Optional.|
+|canvasLayout|[canvasLayout](../resources/canvaslayout.md)|The layout of the content in a page template, including horizontal sections and vertical section. The content of the entire page layout must be provided, because the update function doesn't support partial updates. Optional.|
 
 ## Response
 

@@ -38,7 +38,7 @@ GET /sites/{site-id}/pageTemplates/microsoft.graph.sitePageTemplate/{page-templa
 
 This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use the `$expand=canvasLayout` query string parameter to include the content of an item when retrieving the metadata of an item if the item has a **=canvasLayout** relationship.
+You can use the `$expand=canvasLayout` query string parameter to include the content of an item when retrieving the metadata of an item if the item has a **canvasLayout** relationship.
 
 
 ## Request headers
@@ -47,7 +47,7 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required. |
-| Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response is used in another request. |
+| Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. Use this header to reuse the response in another request. |
 
 ## Request body
 

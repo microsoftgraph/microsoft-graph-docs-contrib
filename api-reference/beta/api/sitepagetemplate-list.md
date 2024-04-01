@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the collection of [sitePageTemplate](../resources/sitepagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination). Sort alphabetically by `name` in ascending order.
+Get the collection of [sitePageTemplate](../resources/sitepagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination), sorted alphabetically by `name` in ascending order.
 
 ## Permissions
 

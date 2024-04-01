@@ -44,8 +44,8 @@ POST /sites/{site-id}/pageTemplates/microsoft.graph.sitePageTemplate
 In the request body, supply a JSON representation of the [sitePageTemplate](../resources/sitepagetemplate.md) resource to create.
 
 > **Notes:** :
-> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePageTemplate` must be included in the request body. The `@odata.type=#microsoft.graph.sitePageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint. It's crucial for successful request body parsing.
-> 2. If you're using the response from the [Get sitePageTemplate](../api/sitepagetemplate-get.md) operation to create a **page template**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
+> 1. To ensure successful parsing of the request body, you must include `@odata.type=#microsoft.graph.sitePageTemplate` in the request body.
+> 2. If you're using the response from the [Get sitePageTemplate](../api/sitepagetemplate-get.md) operation to create a **page template**, add the HTTP header `Accept: application/json;odata.metadata=none` to remove all OData metadata from the response, or manually remove all OData metadata.
 ## Response
 
 If successful, this method returns a `201` and the created [sitePageTemplate](../resources/sitepagetemplate.md) object.
