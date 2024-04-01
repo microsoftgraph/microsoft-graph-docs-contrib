@@ -274,28 +274,6 @@ Content-Type: application/json
 }
 ```
 
-## [Optional] Schedule the workflow to run automatically
-
-After running your workflow on-demand and checking that everything is working fine, you might want to enable the workflow so that it can run automatically on a tenant-defined schedule. Run the following request.
-
-The request returns a `204 No Content` response. When a workflow is scheduled, the Lifecycle Workflows engine checks every three hours for user objects that match the associated execution condition and executes the configured tasks for those users. You can customize this recurrence from between one hour to 24 hours.
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial_lifecycle_workflows_mover_update_workflow"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/ea71190c-075a-4ae7-9bca-34abf3b7b056
-Content-type: application/json
-
-{
-    "isEnabled": true,
-    "isSchedulingEnabled": true
-}
-```
-
----
-
 ## Related content
 
 - [Automate employee onboarding tasks before their first day of work by using the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal)
