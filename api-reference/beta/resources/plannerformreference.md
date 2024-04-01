@@ -18,7 +18,7 @@ Represents complete details about a form, including the form's display name, URL
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|displayName|String|the display name of the form.|
+|displayName|String|The display name of the form.|
 |formWebUrl|String|The URL of the form associated with the **plannerFormReference** object.|
 |formResponse|String|The unique identifier of the response.|
 
