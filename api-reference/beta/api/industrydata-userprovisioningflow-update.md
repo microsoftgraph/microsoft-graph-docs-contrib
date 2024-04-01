@@ -52,8 +52,8 @@ PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows
 | Property             | Type                                                                        | Description                                                                                 |
 | :------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
 | createUnmatchedUsers | Boolean                                                                     | A boolean choice indicating whether unmatched users should be created or ignored. Optional. |
-| managementOptions    | [userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.               |
-| creationOptions      | [userCreationOptions](../resources/industrydata-usercreationoptions.md)     | The different management choices for the new users to be provisioned. Optional.             |
+| managementOptions    | [microsoft.graph.industryData.userManagementOptions](../resources/industrydata-usermanagementoptions.md) | The different attribute choices for all the users to be considered. Required.               |
+| creationOptions      | [microsoft.graph.industryData.userCreationOptions](../resources/industrydata-usercreationoptions.md)     | The different management choices for the new users to be provisioned. Optional.             |
 
 ## Response
 
