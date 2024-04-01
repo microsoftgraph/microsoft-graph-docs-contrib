@@ -3131,6 +3131,14 @@ Possible values for user account types (group membership), per Windows definitio
 | gallery |
 | unknownFutureValue |
 
+### cloudPcPolicySettingType values 
+
+|Member|
+|:---|
+|region|
+|singleSignOn|
+|unknownFutureValue|
+
 ### chatType values
 
 | Member             | Value | Description                                                                                                                                                        |
