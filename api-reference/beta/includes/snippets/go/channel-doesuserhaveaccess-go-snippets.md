@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-doesUserHaveAccess, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").DoesUserHaveAccessWithUserIdWithTenantIdWithUserPrincipalName(&userId, &tenantId, &userPrincipalName).Get(context.Background(), nil)
+doesUserHaveAccess, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").DoesUserHaveAccessWithUserIdWithTenantIdWithUserPrincipalName(&userId, &tenantId, &userPrincipalName).GetAsDoesUserHaveAccessGetResponse(context.Background(), nil)
 
 
 ```
