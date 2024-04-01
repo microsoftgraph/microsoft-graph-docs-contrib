@@ -43,6 +43,7 @@ stages:
     steps:
     - checkout: self
       displayName: Checkout docs repo
+      persistCredentials: true
 
     - checkout: msgraph-toc-gen
       displayName: Checkout TOC generator repo
