@@ -17,8 +17,6 @@ Represents the entity that performs a bulk resize action. When IT administrators
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
-## Methods
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
