@@ -13814,6 +13814,15 @@ items:
                         href: api/claimsmappingpolicy-delete.md
                       - name: List applied to applications
                         href: api/claimsmappingpolicy-list-appliesto.md
+                  - name: Claims policy
+                    href: resources/customclaimspolicy.md
+                    items:
+                      - name: Get
+                        href: api/customclaimspolicy-get.md
+                      - name: Update
+                        href: api/customclaimspolicy-update.md
+                      - name: Delete
+                        href: api/policyroot-delete-claimspolicy.md
                   - name: Continuous access evaluation policy
                     href: resources/continuousaccessevaluationpolicy.md
                     items:
