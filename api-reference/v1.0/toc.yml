@@ -301,6 +301,27 @@ items:
                 href: api/chat-get.md
               - name: List chats for user
                 href: api/chat-list.md
+              - name: Settings
+                items:
+                  - name: License details
+                    href: resources/licensedetails.md
+                    items:
+                    - name: Get
+                      href: api/licenseDetails-getteamslicensingdetails.md
+                  - name: Organization settings
+                    items:
+                    - name: Teamwork
+                      href: resources/teamwork.md
+                      items:
+                      - name: Get
+                        href: api/teamwork-get.md
+                  - name: User settings
+                    items:
+                    - name: User teamwork
+                      href: resources/userteamwork.md
+                      items:
+                        - name: Get
+                          href: api/userteamwork-get.md
           - name: To-do task
             items:
               - name: To-do task
