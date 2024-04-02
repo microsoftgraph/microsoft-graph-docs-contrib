@@ -1,18 +1,18 @@
 ---
-title: "Create subCategoryTemplate"
-description: "Create a new subCategoryTemplate object."
+title: "Create subcategoryTemplate"
+description: "Create a new subcategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Create subCategoryTemplate
+# Create subcategoryTemplate
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [subCategoryTemplate](../resources/security-subcategorytemplate.md) object.
+Create a new [subcategoryTemplate](../resources/security-subcategorytemplate.md) object.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /security/labels/categories/{categoryTemplateId}/subCategories
+POST /security/labels/categories/{categoryTemplateId}/subcategories
 ```
 
 ## Request headers
@@ -37,9 +37,9 @@ POST /security/labels/categories/{categoryTemplateId}/subCategories
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object.
 
-You can specify the following properties when creating a **subCategoryTemplate**.
+You can specify the following properties when creating a **subcategoryTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -49,7 +49,7 @@ You can specify the following properties when creating a **subCategoryTemplate**
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/labels/categories/{categoryTemplateId}/subCategories
+POST https://graph.microsoft.com/beta/security/labels/categories/{categoryTemplateId}/subcategories
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
+  "@odata.type": "#microsoft.graph.security.subcategoryTemplate",
   "displayName": "Vendor Invoice",
 }
 ```
@@ -83,7 +83,7 @@ Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.subCategoryTemplate"
+  "@odata.type": "microsoft.graph.security.subcategoryTemplate"
 }
 -->
 ``` http
@@ -91,7 +91,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
+  "@odata.type": "#microsoft.graph.security.subcategoryTemplate",
   "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
   "displayName": "Vendor Invoice",
   "createdBy":  {
