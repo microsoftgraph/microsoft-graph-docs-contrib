@@ -62,8 +62,8 @@ See open health alerts based on issue type.
 }
 -->
 ``` http
-GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=healthIssueType eq 'global'
-GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=healthIssueType eq 'sensor'
+GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueType eq 'global'
+GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueType eq 'sensor'
 ```
 
 See open health alerts based on severity.
@@ -72,8 +72,8 @@ See open health alerts based on severity.
 }
 -->
 ``` http
-GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=severity eq 'medium'
-GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=severity eq 'low'
+GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'medium'
+GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'low'
 ```
 
 See open global health alerts that domain name \ sensor DNS name ends with spesific value (name=contoso.com)
@@ -82,8 +82,8 @@ See open global health alerts that domain name \ sensor DNS name ends with spesi
 }
 -->
 ``` http
-GET /security/identities/healthissues?$filter=Status eq 'open'&$filter=healthIssueType eq 'global'&$filter=domainNames/any(s:endswith(s,'contoso.com'))
-GET /security/identities/healthissues?$filter=Status eq 'open'&$filter=healthIssueType eq 'global'&$filter=sensorDNSNames/any(s:endswith(s,'contoso.com'))
+GET /security/identities/healthissues?$filter=Status eq 'open' and healthIssueType eq 'global' and domainNames/any(s:endswith(s,'contoso.com'))
+GET /security/identities/healthissues?$filter=Status eq 'open' and healthIssueType eq 'global' and sensorDNSNames/any(s:endswith(s,'contoso.com'))
 ```
 
 For general information, see [OData query parameters](/graph/query-parameters).
