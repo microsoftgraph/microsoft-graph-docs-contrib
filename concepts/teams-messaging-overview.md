@@ -370,7 +370,7 @@ The **from** property represents the sender of the message. Microsoft Teams supp
         }
     },
     ```
-- Bots - Bots using the [Microsoft Bot Framework](/azure/bot-service/?view=azure-bot-service-4.0&preserve-view=true) to write conversational bots.
+- Bots - Conversational bots created via the [Microsoft Bot Framework](/azure/bot-service/?view=azure-bot-service-4.0&preserve-view=true).
 
     The following example shows the **from** property for a message sent by a bot.
 
@@ -400,7 +400,7 @@ The **from** property represents the sender of the message. Microsoft Teams supp
         }
     }
     ```
-- Office 365 connectors - Office 365 connectors allow posting one-way message to Teams. For more information, see [Create connectors for Microsoft 365 Groups](/microsoftteams/platform/webhooks-and-connectors/how-to/connectors-creating).
+- Connectors for Microsoft 365 groups - Connectors allow posting one-way message to Teams. For more information, see [Create connectors for Microsoft 365 Groups](/microsoftteams/platform/webhooks-and-connectors/how-to/connectors-creating).
     
     The following example shows the **from** property for a message from an Office 365 connector.
 
@@ -655,7 +655,7 @@ The following example shows a message with reactions.
 
 The **replyToId** property represents the ID of the message that a message is a reply to in a reply chain. This property is only set for channel messages. This property is read-only.
 
-> **Note:** For replying to messages in a chat, message reference is used. Additionally, chats allowing multiple of message reference elements.
+> **Note:** For replying to messages in a chat, message reference is used.
 
 ### subject
 
@@ -672,12 +672,12 @@ Choosing the right API is essential for you to build the best possible experienc
 The messaging APIs in Microsoft Graph fall into three:
 
 - APIs that map to the Teams UI. Any changes are immediately visible.
-- Slow sync APIs that are focused on users and teams. Any changes can take up to 24 hours to be available.
+- APIs that export data focused on users and teams. Any changes can take up to 24 hours to be available.
 - Change notifications-based APIs to get notified in real time.
 
 ### Teams UI-aligned APIs
 
-APIs that align to the Teams UI allow you to get older methods similar to how the Teams UI works. These APIs are built to for _once in a while_ syncs to get messages in a specific context. These APIs are highly performant and any changes (messages sent, edited, or deleted) are immediately visible.
+APIs that align to the Teams UI work in a similar way to how the Teams UI works. These APIs are built to for _once in a while_ syncs to get messages in a specific context. These APIs are highly performant and any changes (messages sent, edited, or deleted) are immediately visible.
 
 The following are Teams UI-aligned APIs:
 
