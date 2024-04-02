@@ -34,7 +34,7 @@ The following permissions provide access to specific kinds of reports:
 - InaccessibleReports/Read
 - PerformanceReports/Read
 
-Permissions can be found in [cloud PC admin portal](https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/RolesLandingMenuBlade/~/myPermissions).
+Permissions can be found in the [cloud PC admin portal](https://intune.microsoft.com/#view/Microsoft_Intune_DeviceSettings/RolesLandingMenuBlade/~/myPermissions).
 
 ## HTTP request
 
