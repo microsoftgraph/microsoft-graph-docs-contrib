@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.industryData.filter](../resources/industrydata-fi
 
 | Property  | Type                                       | Description                                                                                 |
 | :-------- | :----------------------------------------- | :------------------------------------------------------------------------------------------ |
-| attribute | microsoft.graph.industrydata.filteroptions | The attribute to filter on. The possible values are: `orgExternalId`, `unknownFutureValue`. |
+| attribute | microsoft.graph.industryData.filteroptions | The attribute to filter on. The possible values are: `orgExternalId`, `unknownFutureValue`. |
 | in        | String collection                          | The condition to filter with.                                                                |
 
 ## Relationships

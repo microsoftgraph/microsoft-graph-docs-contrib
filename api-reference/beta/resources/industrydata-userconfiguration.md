@@ -26,7 +26,7 @@ The different configurations choices for the users to be provisioned with.
 
 | Relationship | Type                                                | Description                                   |
 | :----------- | :-------------------------------------------------- | :-------------------------------------------- |
-| roleGroup    | [roleGroup](../resources/industrydata-rolegroup.md) | The role for the users to be provisioned with. |
+| roleGroup    | [microsoft.graph.industryData.roleGroup](../resources/industrydata-rolegroup.md) | The role for the users to be provisioned with. |
 
 ## JSON representation
 
