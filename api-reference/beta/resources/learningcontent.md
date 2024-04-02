@@ -55,8 +55,8 @@ Inherits from [entity](../resources/entity.md).
 |Property|Description|
 |:---|:---|
 |Beginner|For learning content at a beginner level.|
-|Intermediate|For learning content with Intermediate level|
-|Advanced|For learning content with Advanced level|
+|Intermediate|For learning content at an intermediate level.|
+|Advanced|For learning content at an advanced level.|
 |UnknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
