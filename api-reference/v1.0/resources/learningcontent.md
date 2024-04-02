@@ -52,10 +52,10 @@ Inherits from [entity](../resources/entity.md).
 ## Level values
 |Property|Description|
 |:---|:---|
-|Beginner|For learning content with Beginner level|
-|Intermediate|For learning content with Intermediate level|
-|Advanced|For learning content with Advanced level|
-|UnknownFutureValue|Evolvable enumeration sentinel value. Do not use|
+|Beginner|For learning content at a beginner level.|
+|Intermediate|For learning content at an intermediate level.|
+|Advanced|For learning content at an advanced level.|
+|UnknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
