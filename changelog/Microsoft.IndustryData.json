@@ -143,7 +143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "administrativeUnitProvisioningFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [administrativeUnitProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-administrativeUnitProvisioningFlow?view=graph-rest-beta) resource.",
+          "Description": "Added the [administrativeUnitProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-administrativeUnitProvisioningFlow?view=graph-rest-beta) resource and its methods.",
           "Target": "administrativeUnitProvisioningFlow"
         },
         {
@@ -151,23 +151,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "classGroupProvisioningFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [classGroupProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-classGroupProvisioningFlow?view=graph-rest-beta) resource.",
+          "Description": "Added the [classGroupProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-classGroupProvisioningFlow?view=graph-rest-beta) resource and its methods.",
           "Target": "classGroupProvisioningFlow"
-        },
-        {
-          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "outboundProvisioningFlowSets",
-          "ChangeType": "Addition",
-          "Description": "Added the **outboundProvisioningFlowSets** relationship to the [industryDataRoot](https://learn.microsoft.com/en-us/graph/api/resources/industryData-industryDataRoot?view=graph-rest-beta) resource.",
-          "Target": "industryDataRoot"
         },
         {
           "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
           "ApiChange": "Resource",
           "ChangedApiName": "outboundProvisioningFlowSet",
           "ChangeType": "Addition",
-          "Description": "Added the [outboundProvisioningFlowSet](https://learn.microsoft.com/en-us/graph/api/resources/industryData-outboundProvisioningFlowSet?view=graph-rest-beta) resource.",
+          "Description": "Added the [outboundProvisioningFlowSet](https://learn.microsoft.com/en-us/graph/api/resources/industryData-outboundProvisioningFlowSet?view=graph-rest-beta) resource and its methods.",
           "Target": "outboundProvisioningFlowSet"
         },
         {
@@ -175,7 +167,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "provisioningFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [provisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-provisioningFlow?view=graph-rest-beta) resource.",
+          "Description": "Added the [provisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-provisioningFlow?view=graph-rest-beta) resource and its methods.",
           "Target": "provisioningFlow"
         },
         {
@@ -183,7 +175,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "securityGroupProvisioningFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [securityGroupProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-securityGroupProvisioningFlow?view=graph-rest-beta) resource.",
+          "Description": "Added the [securityGroupProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-securityGroupProvisioningFlow?view=graph-rest-beta) resource and its methods.",
           "Target": "securityGroupProvisioningFlow"
         },
         {
@@ -191,14 +183,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userProvisioningFlow",
           "ChangeType": "Addition",
-          "Description": "Added the [userProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-userProvisioningFlow?view=graph-rest-beta) resource.",
+          "Description": "Added the [userProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-userProvisioningFlow?view=graph-rest-beta) resource and its methods.",
           "Target": "userProvisioningFlow"
         }
       ],
       "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-03-21T20:01:05.2704004Z",
+      "CreatedDateTime": "2024-04-01T20:01:05.2704004Z",
       "WorkloadArea": "IndustryData",
       "SubArea": ""
     },

@@ -15,7 +15,7 @@ Namespace: microsoft.graph.industryData
 
 Represents the configuration parameters that allow you to automate creation and matching to Microsoft 365 users from your inbound data.
 
-userProvisioningFlow is defined within an [OutboundProvisioningFlowSet](industrydata-outboundprovisioningflowset.md) that may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data.
+userProvisioningFlow is defined within an [outboundProvisioningFlowSet](industrydata-outboundprovisioningflowset.md) that may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data.
 
 There may be multiple userProvisioningFlows, defined within separate outboundProvsioningFlowSets allowing different configurations for different organizations.
 

@@ -63,6 +63,28 @@ Enum values for the industry data API in Microsoft Graph.
 | orgExternalId      |
 | unknownFutureValue |
 
+### additionalUserAttributes values
+
+| Member             |
+|:-------------------|
+| userGradeLevel     |
+| userNumber         |
+| unknownFutureValue |
+
+### additionalClassGroupAttributes values
+
+| Member                    |
+|:--------------------------|
+| courseTitle               |
+| courseCode                |
+| courseSubject             |
+| courseGradeLevel          |
+| courseExternalId          |
+| academicSessionTitle      |
+| academicSessionExternalId |
+| classCode                 |
+| unknownFutureValue        |
+
 <!--
 {
   "type": "#page.annotation",
