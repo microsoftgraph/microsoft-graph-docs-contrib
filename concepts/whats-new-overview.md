@@ -16,6 +16,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## April 2024: New and generally available
+
+### Sites and lists
+
+- [Track changes for SharePoint site](/graph/api/site-delta) resources.
+- [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
+
 ## March 2024: New and generally available
 
 ### Applications
@@ -47,11 +54,11 @@ The organization entity now returns the `CIAM` **tenantType** to identify tenant
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
 
-### Sites and lists
-
-[Track changes for SharePoint site](/graph/api/site-delta) resources.
-
 ## March 2024: New in preview only
+
+### Security | Attack simulation and training
+
+Use the [training campaign](/graph/api/resources/trainingcampaign?view=graph-rest-beta&preserve-view=true) API to directly assign security trainings to users.
 
 ### Applications
 
@@ -63,11 +70,18 @@ Use the upsert capability to create an [application](/graph/api/resources/applic
 
 ### Device and app management | Cloud PC
 
-The following properties are deprecated:
+- [Apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) the current [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) configuration across all Cloud PC devices under a specified policy.
+- [Update](/graph/api/cloudpcprovisioningpolicy-applyconfig?view=graph-rest-beta&preserve-view=true) the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) configuration for a specific set of Cloud PC devices using their IDs. 
+
+Added the ability to mark specified **alertRecord** objects as sent via the **isPortalNotificationSent** property.
+
+Deprecated the following properties:
 
 - **type** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **connectionType** property instead.
 - **healthCheckStatusDetails** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **healthCheckStatusDetail** property instead.
 - **additionalDetails** property on [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true); use the **additionalDetail** property instead.
+- **domainJoinConfiguration** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) in favor of the **domainJoinConfigurations** property.
+- **onPremisesConnectionId** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) in favor of the **domainJoinConfigurations** property.
 
 ### Device and app management | Device updates
 
@@ -88,6 +102,10 @@ Use the [federatedTokenValidationPolicy resource type](/graph/api/resources/fede
 ### Security | Email and collaboration protection
 
 Added the ability to list emails analyzed by Microsoft Defender for Office 365, get email related metadata, and perform response actions (soft delete, hard delete, move to junk, move to Inbox).
+
+### Security | Identities
+
+Added the ability to get, get list, update Microsoft Defender for Identity [health issues](/graph/api/resources/security-healthissue?view=graph-rest-beta&preserve-view=true).
 
 ### Users
 

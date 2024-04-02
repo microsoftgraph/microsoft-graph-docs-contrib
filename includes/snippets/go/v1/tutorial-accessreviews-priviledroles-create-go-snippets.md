@@ -55,7 +55,7 @@ requestBody.SetScope(scope)
 
 
 accessReviewReviewerScope := graphmodels.NewAccessReviewReviewerScope()
-query := "/users/f674a1c9-4a40-439c-bfa3-4b61a9f29d85"
+query := "/users/2560f739-2e0e-4550-9fa0-1a1e67ae0ab8"
 accessReviewReviewerScope.SetQuery(&query) 
 queryType := "MicrosoftGraph"
 accessReviewReviewerScope.SetQueryType(&queryType) 
@@ -75,7 +75,7 @@ defaultDecisionEnabled := false
 settings.SetDefaultDecisionEnabled(&defaultDecisionEnabled) 
 defaultDecision := "None"
 settings.SetDefaultDecision(&defaultDecision) 
-instanceDurationInDays := int32(3)
+instanceDurationInDays := int32(1)
 settings.SetInstanceDurationInDays(&instanceDurationInDays) 
 recommendationsEnabled := false
 settings.SetRecommendationsEnabled(&recommendationsEnabled) 
@@ -89,7 +89,7 @@ recurrence.SetPattern(pattern)
 range := graphmodels.NewRecurrenceRange()
 type := graphmodels.NOEND_RECURRENCERANGETYPE 
 range.SetType(&type) 
-startDate := 2022-03-02
+startDate := 2024-03-25
 range.SetStartDate(&startDate) 
 recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)

@@ -1960,6 +1960,10 @@ items:
                     href: api/cloudpcprovisioningpolicy-update.md
                   - name: Delete
                     href: api/cloudpcprovisioningpolicy-delete.md
+                  - name: Apply
+                    href: api/cloudpcprovisioningpolicy-apply.md
+                  - name: Apply configuration
+                    href: api/cloudpcprovisioningpolicy-applyconfig.md
                   - name: Assign
                     href: api/cloudpcprovisioningpolicy-assign.md
               - name: Cloud PC reports
@@ -2057,6 +2061,8 @@ items:
                         href: api/devicemanagement-alertrecord-getportalnotifications.md
                       - name: Set portal notification as sent
                         href: api/devicemanagement-alertrecord-setportalnotificationassent.md
+                      - name: Set list of portal notifications as sent
+                        href: api/devicemanagement-alertrecord-changealertrecordsportalnotificationassent.md
                   - name: Alert rule
                     href: resources/devicemanagement-alertrule.md
                     items:
@@ -16561,18 +16567,6 @@ items:
                 href: resources/security-huntingrowresult.md
               - name: Single property schema
                 href: resources/security-singlepropertyschema.md
-          - name: Custom detection rules
-            items:
-              - name: List custom detection rules
-                href: api/security-detectionrule-list.md
-              - name: Get custom detection rule
-                href: api/security-detectionrule-get.md
-              - name: Create custom detection rule
-                href: api/security-detectionrule-post-detectionRules.md
-              - name: Update custom detection rule
-                href: api/security-detectionrule-update.md
-              - name: Delete custom detection rule
-                href: api/security-detectionrule-delete.md
           - name: Alerts and incidents
             items:
               - name: Alert
@@ -16623,6 +16617,24 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: Get simulation overview
                     href: api/simulationreportoverview-get.md
+              - name: Training campaigns (preview)
+                items:
+                  - name: Training campaign
+                    href: resources/trainingcampaign.md
+                  - name: List
+                    href: api/attacksimulationroot-list-trainingcampaigns.md
+                  - name: Create
+                    href: api/attacksimulationroot-post-trainingcampaigns.md
+                  - name: Get
+                    href: api/trainingcampaign-get.md
+                  - name: Update
+                    href: api/trainingcampaign-update.md
+                  - name: Delete
+                    href: api/attacksimulationroot-delete-trainingcampaigns.md
+                  - name: List users
+                    href: api/usertrainingcampaigndetails-list.md
+                  - name: Get overview
+                    href: api/trainingcampaignreportoverview-get.md
               - name: Attack simulation operation
                 items:
                   - name: Attack simulation operation
@@ -16731,6 +16743,18 @@ items:
                 items:
                   - name: List
                     href: api/security-auditlogquery-list-records.md
+          - name: Custom detection rules
+            items:
+              - name: List custom detection rules
+                href: api/security-detectionrule-list.md
+              - name: Get custom detection rule
+                href: api/security-detectionrule-get.md
+              - name: Create custom detection rule
+                href: api/security-detectionrule-post-detectionRules.md
+              - name: Update custom detection rule
+                href: api/security-detectionrule-update.md
+              - name: Delete custom detection rule
+                href: api/security-detectionrule-delete.md
           - name: eDiscovery (preview)
             items:
               - name: Case
@@ -16971,6 +16995,18 @@ items:
                   href: api/security-analyzedemail-get.md
                 - name: Remediate
                   href: api/security-analyzedemail-remediate.md
+          - name: Identites (preview)
+            items:
+            - name: Health issue
+              items:
+                - name: Health issue
+                  href: resources/security-healthissue.md
+                - name: List
+                  href: api/security-identityContainer-list-healthissues.md
+                - name: Get
+                  href: api/security-healthissue-get.md
+                - name: Update
+                  href: api/security-healthissue-update.md
           - name: Information protection
             items:
               - name: Labels (deprecated)
@@ -17557,12 +17593,12 @@ items:
                 href: api/listitem-createlink.md
               - name: Get activities by interval
                 href: api/itemactivity-getbyinterval.md
+              - name: Get delta
+                href: api/listitem-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
               - name: List versions
                 href: api/listitem-list-versions.md
-              - name: Get delta
-                href: api/listitem-delta.md
           - name: Document set version
             items:
               - name: Document set version
@@ -18509,6 +18545,10 @@ items:
                     href: api/channel-patch.md
                   - name: Delete channel
                     href: api/channel-delete.md
+                  - name: Archive channel
+                    href: api/channel-archive.md
+                  - name: Unarchive channel
+                    href: api/channel-unarchive.md  
                   - name: Remove incoming channel
                     href: api/team-delete-incomingchannels.md
                   - name: Add member

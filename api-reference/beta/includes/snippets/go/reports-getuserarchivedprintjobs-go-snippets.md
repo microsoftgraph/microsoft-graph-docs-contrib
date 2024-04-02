@@ -18,7 +18,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 userId := "{userId}"
 startDateTime , err := time.Parse(time.RFC3339, "{startDateTime}")
 endDateTime , err := time.Parse(time.RFC3339, "{endDateTime}")
-getUserArchivedPrintJobs, err := graphClient.Reports().GetUserArchivedPrintJobsWithUserIdWithStartDateTimeWithEndDateTime(&userId, &startDateTime, &endDateTime).Get(context.Background(), nil)
+getUserArchivedPrintJobs, err := graphClient.Reports().GetUserArchivedPrintJobsWithUserIdWithStartDateTimeWithEndDateTime(&userId, &startDateTime, &endDateTime).GetAsGetUserArchivedPrintJobsWithUserIdWithStartDateTimeWithEndDateTimeGetResponse(context.Background(), nil)
 
 
 ```

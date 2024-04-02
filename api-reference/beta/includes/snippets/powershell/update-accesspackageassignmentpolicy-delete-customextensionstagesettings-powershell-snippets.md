@@ -11,6 +11,10 @@ $params = @{
 	displayName = "policy with access package custom workflow extension"
 	description = "Run specified access package custom workflow extension at different stages."
 	accessPackageId = "ba5807c7-2aa9-4c8a-907e-4a17ee587500"
+	expiration = @{
+		type = "afterDuration"
+		duration = "P365D"
+	}
 	requestApprovalSettings = $null
 	requestorSettings = @{
 		acceptRequests = $true
