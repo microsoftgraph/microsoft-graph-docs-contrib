@@ -19,8 +19,8 @@ The different management choices for the class groups to be provisioned.
 
 | Property                 | Type                                                                                                                        | Description                                       |
 | :----------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------ |
-| memberEnrollmentMappings | [microsoft.graph.industryData.sectionRoleReferenceValue](../resources/industrydata-sectionrolereferencevalue.md) collection | The member enrollmentMappings for the class group.  |
-| ownerEnrollmentMappings  | [microsoft.graph.industryData.sectionRoleReferenceValue](../resources/industrydata-sectionrolereferencevalue.md) collection | The owner enrollmentMappings for the class group. |
+| memberEnrollmentMappings | [microsoft.graph.industryData.sectionRoleReferenceValue](../resources/industrydata-sectionrolereferencevalue.md) collection | The enrollmentMappings member for the class group.  |
+| ownerEnrollmentMappings  | [microsoft.graph.industryData.sectionRoleReferenceValue](../resources/industrydata-sectionrolereferencevalue.md) collection | The enrollmentMappings owner for the class group. |
 
 ## Relationships
 
