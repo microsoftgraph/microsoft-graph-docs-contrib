@@ -31,6 +31,7 @@ This resource supports:
 |[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
 |[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
 |[Update application](../api/application-update.md) | None |Update application object. |
+|[Upsert application](../api/application-upsert.md) | [application](application.md) | Create a new application if it doesn't exist, or update the properties of an existing application.|
 |[Delete application](../api/application-delete.md) | None |Delete application object. |
 |[Get delta](../api/application-delta.md)|[application](application.md)|Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.|
 |[List deleted applications](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
