@@ -8533,18 +8533,20 @@ items:
           - name: List item
             href: resources/listitem.md
             items:
-              - name: Get item
-                href: api/listitem-get.md
               - name: Create item
                 href: api/listitem-create.md
-              - name: Update item
+              - name: Get
+                href: api/listitem-get.md
+              - name: Update
                 href: api/listitem-update.md
-              - name: Delete item
+              - name: Delete
                 href: api/listitem-delete.md
-              - name: List versions
-                href: api/listitem-list-versions.md
+              - name: Get delta
+                href: api/listitem-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
+              - name: List versions
+                href: api/listitem-list-versions.md
           - name: Document set version
             items:
               - name: Document set version
