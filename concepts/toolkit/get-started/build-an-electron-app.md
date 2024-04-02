@@ -92,7 +92,7 @@ contextBridge.exposeInMainWorld("main", {
 
 The `ElectronContextBridgeProvider` is responsible for communicating with `ElectronAuthenticator` (in the main process) to request access tokens and receive information regarding signed in state that is required for the mgt components to work.
 
-To use mgt components in your applications, they must be registered in the browser window that they execute. To do this the register functions for each component you wish to use must be imported.
+To use MGT components in your applications, they must be registered in the browser window that they execute. To do this the register functions for each component you wish to use must be imported.
 
 To initialize the `ElectronContextBridgeProvider` and register the Microsoft Graph Toolkit components, add the following code to the _src/renderer.ts_ file.
 
