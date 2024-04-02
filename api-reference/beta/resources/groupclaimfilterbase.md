@@ -1,6 +1,6 @@
 ---
 title: "groupClaimFilterBase resource type"
-description: "Base group filter."
+description: "This is an abstract type for base group filter."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "directory-management"

@@ -21,7 +21,7 @@ Inherits from [customClaimAttributeBase](../resources/customclaimattributebase.m
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier of the attribute on the specified source.|
-|isExtensionAttribute|Boolean|Flag indicating if the name specified is that of an extension attribute.|
+|isExtensionAttribute|Boolean|A flag that indicates if the name specified is that of an extension attribute.|
 |source|String|The source where the claim is going to retrieve its value. Valid sources include user, application, resource, audience and company.|
 
 ## Relationships

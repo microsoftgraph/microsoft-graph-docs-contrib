@@ -20,8 +20,8 @@ Inherits from [groupClaimFilterBase](../resources/groupclaimfilterbase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|matchOn|matchOn|The matchOn property identifies the group attribute on which to apply the filter. The possible values are: `displayName`, `samAccountName`, `unknownFutureValue`.|
-|type|filterType|The type property selects the type of filter you wish to apply to the attribute selected by the MatchOn property. The possible values are: `prefix`, `suffix`, `contains`, `unknownFutureValue`.|
+|matchOn|matchOn|Identifies the group attribute on which the filter would be applied. The possible values are: `displayName`, `samAccountName`, `unknownFutureValue`.|
+|type|filterType| Selects the type of filter you wish to apply to the attribute selected by the MatchOn property. The possible values are: `prefix`, `suffix`, `contains`, `unknownFutureValue`.|
 |value|String|The value of the filter to be applied.|
 
 ## Relationships

@@ -1,6 +1,6 @@
 ---
 title: "containsTransformation resource type"
-description: "Outputs an attribute or constant if the input matches the specified value."
+description: "Outputs an attribute or constant with transformation applied on the input if the input matches the specified value."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outputs an attribute or constant if the input matches the specified value.
+Outputs an attribute or constant with transformation applied on the input if the input matches the specified value.
 
 Inherits from [customClaimTransformation](../resources/customclaimtransformation.md).
 
