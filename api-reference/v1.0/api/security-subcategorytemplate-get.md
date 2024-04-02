@@ -1,16 +1,16 @@
 ---
-title: "Get subCategoryTemplate"
-description: "Read the properties and relationships of a subCategoryTemplate object."
+title: "Get subcategoryTemplate"
+description: "Read the properties and relationships of a subcategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get subCategoryTemplate
+# Get subcategoryTemplate
 Namespace: microsoft.graph.security
 
-Read the properties and relationships of a [subCategoryTemplate](../resources/security-subcategorytemplate.md) object.
+Read the properties and relationships of a [subcategoryTemplate](../resources/security-subcategorytemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/labels/categories/{categoryTemplateId}/subCategories/{subCategoryTemplateId}
+GET /security/labels/categories/{categoryTemplateId}/subcategories/{subcategoryTemplateId}
 ```
 
 ## Optional query parameters
@@ -44,7 +44,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) object in the response body.
 
 ## Examples
 
@@ -57,7 +57,7 @@ Here's an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/labels/categories/82d00422-1f60-46cd-9809-33ca0b4d2286/subCategories/2ac39915-dbeb-e933-82e2-92b981835fa0
+GET https://graph.microsoft.com/v1.0/security/labels/categories/82d00422-1f60-46cd-9809-33ca0b4d2286/subcategories/2ac39915-dbeb-e933-82e2-92b981835fa0
 ```
 
 
@@ -67,7 +67,7 @@ Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.subCategoryTemplate"
+  "@odata.type": "microsoft.graph.security.subcategoryTemplate"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
+    "@odata.type": "#microsoft.graph.security.subcategoryTemplate",
     "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
     "displayName": "Vendor Invoice",
     "createdBy": {

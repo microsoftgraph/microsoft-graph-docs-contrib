@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Supports CRUD operations to apply and manage the [appliedCategory](security-appliedcategory.md) descriptor, and any [subCategory](security-subcategory.md) descriptor for a [retentionLabel](security-retentionlabel.md). These file plan descriptors supplement a retention label to improve the manageability and organization of Microsoft 365 content.
+Supports CRUD operations to apply and manage the [appliedCategory](security-appliedcategory.md) descriptor, and any [subcategory](security-subcategory.md) descriptor for a [retentionLabel](security-retentionlabel.md). These file plan descriptors supplement a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
@@ -22,8 +22,8 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 |[Create categories](../api/security-labelsroot-post-categories.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Create a new [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
 |[Get categories](../api/security-categorytemplate-get.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
 |[Delete categories](../api/security-labelsroot-delete-categories.md)|None|Delete a [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
-|[List subCategories](../api/security-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) collection|Get the subCategoryTemplate resources from the subCategories navigation property.|
-|[Create subCategories](../api/security-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md)|Create a new subCategoryTemplate object.|
+|[List subcategories](../api/security-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) collection|Get the subcategoryTemplate resources from the subcategories navigation property.|
+|[Create subcategories](../api/security-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md)|Create a new subcategoryTemplate object.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +36,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|subCategories|[microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) collection|Represents all subcategories under a particular category.|
+|subcategories|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) collection|Represents all subcategories under a particular category.|
 
 ## JSON representation
 Here's a JSON representation of the resource.
