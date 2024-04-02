@@ -49,7 +49,6 @@ PATCH /external/industryData/OutboundProvisioningFlowSets/{id}/provisioningFlows
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |creationOptions|[microsoft.graph.industryData.adminUnitCreationOptions](../resources/industrydata-adminunitcreationoptions.md)|The different attribute choices for the administrative units to be provisioned. Required.|

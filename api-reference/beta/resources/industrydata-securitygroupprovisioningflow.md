@@ -1,6 +1,6 @@
 ---
 title: "securityGroupProvisioningFlow resource type"
-description: "**TODO: Add Description**"
+description: "Represents the parameters that school data sync uses to create security groups and teams in Microsoft 365 from your inbound data."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,11 +13,11 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the parameters that School Data Sync will use to create Security Groups and teams in Microsoft365 from your inbound data. Security Groups provide a grouping construct for use within various identity management, application management, and device management scenarios in Microsoft 365.
+Represents the parameters that school data sync uses to create security groups and teams in Microsoft 365 from your inbound data. Security groups provide a grouping construct for use within various identity management, application management, and device management scenarios in Microsoft 365.
 
-securityGroupProvisioningFlow is defined within an [OutboundProvisioningFlowSet](industrydata-outboundprovisioningflowset.md) that may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data.
+securityGroupProvisioningFlow is defined within an [outboundProvisioningFlowSet](industrydata-outboundprovisioningflowset.md) that may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data.
 
-There may be multiple securityGroupProvisioningFlows, defined within separate OutboundProvsioningFlowSets allowing different configurations for different organizations.
+There may be multiple securityGroupProvisioningFlows, defined within separate outboundProvsioningFlowSets allowing different configurations for different organizations.
 
 Inherits from [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md).
 

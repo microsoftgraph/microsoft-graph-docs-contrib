@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.industryData.passwordSettings](../resources/indus
 
 | Property | Type   | Description               |
 | :------- | :----- | :------------------------ |
-| password | String | The password for the user |
+| password | String | The password for the user. |
 
 ## Relationships
 

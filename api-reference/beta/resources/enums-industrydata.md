@@ -56,6 +56,13 @@ Enum values for the industry data API in Microsoft Graph.
 | expired            |
 | unknownFutureValue |
 
+### filteroptions values
+
+| Member             |
+|:-------------------|
+| orgExternalId      |
+| unknownFutureValue |
+
 <!--
 {
   "type": "#page.annotation",

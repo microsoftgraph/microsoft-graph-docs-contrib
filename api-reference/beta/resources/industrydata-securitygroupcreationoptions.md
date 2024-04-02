@@ -19,7 +19,7 @@ The different options for the security groups to be provisioned.
 
 | Property                      | Type    | Description                                                                                               |
 | :---------------------------- | :------ | :-------------------------------------------------------------------------------------------------------- |
-| createBasedOnOrgPlusRoleGroup | Boolean | A boolean choice indicating whether the security group should be created based on the org and role group. |
+| createBasedOnOrgPlusRoleGroup | Boolean | Indicates whether the security group should be created based on the org and role group. |
 | createBasedOnRoleGroup        | Boolean | A boolean choice indicating whether the security group should be created based on the role group          |
 
 ## Relationships

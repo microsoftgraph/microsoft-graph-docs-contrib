@@ -1,6 +1,6 @@
 ---
 title: "provisioningFlow resource type"
-description: "A flow that provisions relevant records of a given entity type in the M365 tenant."
+description: "A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A flow that provisions relevant records of a given entity type in the M365 tenant.
+A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
 This is an abstract type.
 
 ## Methods
@@ -27,9 +27,9 @@ This is an abstract type.
 
 | Property             | Type                                         | Description                                                                                                                                                                                                                                          |
 | :------------------- | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| createdDateTime      | DateTimeOffset                               | The date and time when the provisioning flow was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.               |
+| createdDateTime      | DateTimeOffset                               | The date and time when the provisioning flow was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.               |
 | id                   | String                                       | The unique identifier for the provisioning flow. Inherited from [entity](entity.md).                                                                                                                                                    |
-| lastModifiedDateTime | DateTimeOffset                               | The date and time when the provisioning flow was most recently changed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime | DateTimeOffset                               | The date and time when the provisioning flow was most recently changed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | readinessStatus      | microsoft.graph.industryData.readinessStatus | The state of the activity from creation through to ready to do work. The possible values are: `notReady`, `ready`, `failed`, `disabled`, `expired`, `unknownFutureValue`.                                                                            |
 
 ## Relationships

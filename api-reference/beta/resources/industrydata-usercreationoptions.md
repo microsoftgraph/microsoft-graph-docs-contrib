@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The different management choices for the users to be provisioned
+The different management choices for the users to be provisioned.
 
 ## Properties
 

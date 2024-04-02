@@ -1,6 +1,6 @@
 ---
 title: "outboundProvisioningFlowSet resource type"
-description: "Represents a collection of outbound provisioning flows used to configure how school data sync populates data in Microsoft 365 and Entra ID."
+description: "Represents a collection of outbound provisioning flows used to configure how school data sync populates data in Microsoft 365 and Microsoft Entra ID."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of outbound provisioning flows used to configure how school data sync populates data in Microsoft 365 and Entra ID. A flow set may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data. There may be multiple outboundProvisioningFlowSets, allowing different configurations for different organizations. Each outbound provisioning flow set does not need to include every provisioning flow type.
+Represents a collection of outbound provisioning flows used to configure how school data sync populates data in Microsoft 365 and Microsoft Entra ID. A flow set may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data. There may be multiple outboundProvisioningFlowSets, allowing different configurations for different organizations. Each outbound provisioning flow set doesn't need to include every provisioning flow type.
 
 Outbound provisioning flow set may contain no more than one (1) of each provisioning flow configuration that is being configured: [userProvisioningFlow](industrydata-userprovisioningflow.md), [classGroupProvisioingFlow](industrydata-classgroupprovisioningflow.md), [securityGroupProvisioingFlow](industrydata-securitygroupprovisioningflow.md), [administrativeUnitProvisioingFlow](industrydata-administrativeunitprovisioningflow.md).
 
@@ -33,17 +33,17 @@ Outbound provisioning flow set may contain no more than one (1) of each provisio
 
 | Property             | Type                                                                       | Description                                                                                                                                                                                                                                |
 | :------------------- | :------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| createdDateTime      | DateTimeOffset                                                             | The date and time when the flowSet was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.               |
+| createdDateTime      | DateTimeOffset                                                             | The date and time when the flowSet was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.               |
 | displayName          | String                                                                     | The display name of the flowSet provided by the caller.                                                                                                                                                                                     |
 | filter               | [microsoft.graph.industryData.filter](industrydata-filter.md) | The collection of provisioning filters applicable to all the flows under the given flowSet.                                                                                                                                                 |
 | id                   | String                                                                     | The unique identifier for the flowSet. Inherited from [entity](entity.md).                                                                                                                                                    |
-| lastModifiedDateTime | DateTimeOffset                                                             | The date and time when the flowSet was most recently changed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime | DateTimeOffset                                                             | The date and time when the flowSet was most recently changed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 
 ## Relationships
 
 | Relationship      | Type                                                                                                      | Description                                                                       |
 | :---------------- | :-------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
-| provisioningFlows | [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md) collection | A flow that provisions relevant records of a given entity type in the M365 tenant. |
+| provisioningFlows | [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md) collection | A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant. |
 
 ## JSON representation
 

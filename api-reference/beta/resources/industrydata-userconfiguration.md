@@ -19,14 +19,14 @@ The different configurations choices for the users to be provisioned with.
 
 | Property                | Type                                                                                           | Description                                                |
 | :---------------------- | :--------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
-| defaultPasswordSettings | [microsoft.graph.industryData.passwordSettings](../resources/industrydata-passwordsettings.md) | The password settings for the users to be provisioned with |
-| licenseSkus             | String collection                                                                              | The license skus for the users to be provisioned with      |
+| defaultPasswordSettings | [microsoft.graph.industryData.passwordSettings](../resources/industrydata-passwordsettings.md) | The password settings for the users to be provisioned with. |
+| licenseSkus             | String collection                                                                              | The license skus for the users to be provisioned with.      |
 
 ## Relationships
 
 | Relationship | Type                                                | Description                                   |
 | :----------- | :-------------------------------------------------- | :-------------------------------------------- |
-| roleGroup    | [roleGroup](../resources/industrydata-rolegroup.md) | The role for the users to be provisioned with |
+| roleGroup    | [roleGroup](../resources/industrydata-rolegroup.md) | The role for the users to be provisioned with. |
 
 ## JSON representation
 
