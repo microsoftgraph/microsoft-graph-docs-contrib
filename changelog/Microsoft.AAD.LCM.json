@@ -429,7 +429,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "attributeChangeTrigger",
               "ChangeType": "Addition",
-              "Description": "Added the [attributeChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-attributeChangeTrigger?view=graph-rest-beta) resource.",
+              "Description": "Added the [attributeChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-attributechangetrigger?view=graph-rest-beta) resource.",
               "Target": "attributeChangeTrigger"
             },
             {
@@ -437,7 +437,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "groupBasedSubjectSet",
               "ChangeType": "Addition",
-              "Description": "Added the [groupBasedSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-groupBasedSubjectSet?view=graph-rest-beta) resource.",
+              "Description": "Added the [groupBasedSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-groupbasedsubjectset?view=graph-rest-beta) resource.",
               "Target": "groupBasedSubjectSet"
             },
             {
@@ -445,7 +445,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "membershipChangeTrigger",
               "ChangeType": "Addition",
-              "Description": "Added the [membershipChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-membershipChangeTrigger?view=graph-rest-beta) resource.",
+              "Description": "Added the [membershipChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-membershipchangetrigger?view=graph-rest-beta) resource.",
               "Target": "membershipChangeTrigger"
             },
             {
@@ -453,7 +453,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "triggerAttribute",
               "ChangeType": "Addition",
-              "Description": "Added the [triggerAttribute](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-triggerAttribute?view=graph-rest-beta) resource.",
+              "Description": "Added the [triggerAttribute](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-triggerattribute?view=graph-rest-beta) resource.",
               "Target": "triggerAttribute"
             }
           ],
