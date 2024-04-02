@@ -17,7 +17,7 @@ Represents the configuration parameters that allow you to automate creation and 
 
 userProvisioningFlow is defined within an [OutboundProvisioningFlowSet](industrydata-outboundprovisioningflowset.md) that may specify a filter based on a subset of available organizations (schools) or may include all of the organizations in the inbound data.
 
-There may be multiple userProvisioningFlows, defined within separate OutboundProvsioningFlowSets allowing different configurations for different organizations.
+There may be multiple userProvisioningFlows, defined within separate outboundProvsioningFlowSets allowing different configurations for different organizations.
 
 Inherits from [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md).
 
