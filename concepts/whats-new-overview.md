@@ -16,6 +16,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## April 2024: New and generally available
+
+### Sites and lists
+
+- [Track changes for SharePoint site](/graph/api/site-delta) resources.
+- [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
+
 ## March 2024: New and generally available
 
 ### Applications
@@ -46,10 +53,6 @@ The organization entity now returns the `CIAM` **tenantType** to identify tenant
 ### Reports | Partner billing reports
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
-
-### Sites and lists
-
-[Track changes for SharePoint site](/graph/api/site-delta) resources.
 
 ## March 2024: New in preview only
 
