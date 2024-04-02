@@ -20,7 +20,7 @@ The different configurations choices for the users to be provisioned.
 | Property             | Type                                                                                                     | Description                                                      |
 | :------------------- | :------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
 | additionalAttributes | microsoft.graph.industryData.additionalUserAttributes collection                                         | The different attribute choices for the users to be provisioned.  |
-| additionalOptions    | [microsoft.graph.industryData.additionalUserOptions](../resources/industrydata-additionaluseroptions.md) | The different management choices for the users to be provisioned |
+| additionalOptions    | [microsoft.graph.industryData.additionalUserOptions](../resources/industrydata-additionaluseroptions.md) | The different management choices for the users to be provisioned. |
 
 ## Relationships
 
