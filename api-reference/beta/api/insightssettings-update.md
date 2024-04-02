@@ -25,16 +25,16 @@ To learn more about customizing insights privacy for your organization, see:
 
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### To update **contact insights** settings for organization
+### To update **contact insights** settings for an organization
 <!-- { "blockType": "permissions", "name": "insightssettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/insightssettings-update-permissions.md)]
 
 
-### To update **item insights** settings for organization
+### To update **item insights** settings for an organization
 <!-- { "blockType": "permissions", "name": "insightssettings_update_iteminsights" } -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-iteminsights-permissions.md)]
 
-### To update **people insights** settings for organization
+### To update **people insights** settings for an organization
 <!-- { "blockType": "permissions", "name": "insightssettings_update_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/insightssettings-update-2-permissions.md)]
 
