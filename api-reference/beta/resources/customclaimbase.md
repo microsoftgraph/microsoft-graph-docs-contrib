@@ -3,7 +3,7 @@ title: "customClaimBase resource type"
 description: "An abstract type for a claim, contains a collection of configurations for a claim."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

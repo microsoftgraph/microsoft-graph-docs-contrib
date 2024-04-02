@@ -3,7 +3,7 @@ title: "endsWithTransformation resource type"
 description: "Outputs an attribute or constant if the input ends with the specified value."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

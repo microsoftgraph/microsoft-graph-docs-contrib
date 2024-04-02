@@ -3,7 +3,7 @@ title: "customClaimTransformation resource type"
 description: "Base transformation property that contains a single input attribute."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

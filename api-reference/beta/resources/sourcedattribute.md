@@ -3,7 +3,7 @@ title: "sourcedAttribute resource type"
 description: "An attribute specifying where the claim data is sourced."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

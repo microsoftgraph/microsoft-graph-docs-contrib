@@ -3,7 +3,7 @@ title: "toUppercaseTransformation resource type"
 description: "Converts the characters of the selected attribute into uppercase characters."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "customClaimConfiguration resource type"
 description: "Claim configuration that details the conditions and sources of any custom claim."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

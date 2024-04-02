@@ -3,7 +3,7 @@ title: "regexReplaceTransformation resource type"
 description: "Creates a new value by performing a regex replacement on the input."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

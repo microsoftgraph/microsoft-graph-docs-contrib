@@ -3,7 +3,7 @@ title: "containsTransformation resource type"
 description: "Outputs an attribute or constant with transformation applied on the input if the input matches the specified value."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

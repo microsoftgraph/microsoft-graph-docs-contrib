@@ -3,7 +3,7 @@ title: "groupClaimFilter resource type"
 description: "Use this property to apply a filter on the user’s groups to be included in the group claim."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

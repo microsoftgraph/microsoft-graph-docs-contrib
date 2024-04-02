@@ -3,7 +3,7 @@ title: "Update policyRoot"
 description: "Update the properties of a policyRoot object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "ifNotEmptyTransformation resource type"
 description: "Outputs an attribute or constant if the input is not null or empty."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

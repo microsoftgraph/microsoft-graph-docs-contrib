@@ -3,7 +3,7 @@ title: "substringTransformation resource type"
 description: "Creates a new value by extracting a substring, you can provide a zero-based starting index for the substring."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update customClaimsPolicy"
 description: "Update the properties of a customClaimsPolicy object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: apiPageType
 ---
 

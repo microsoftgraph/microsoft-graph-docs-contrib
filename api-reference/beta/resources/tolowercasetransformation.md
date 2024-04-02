@@ -3,7 +3,7 @@ title: "toLowercaseTransformation resource type"
 description: "Converts the characters of the selected attribute into lowercase characters."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

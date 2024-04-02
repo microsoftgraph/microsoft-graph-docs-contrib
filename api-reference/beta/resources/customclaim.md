@@ -3,7 +3,7 @@ title: "customClaim resource type"
 description: "An individual claim included in the tokens affected by this policy."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

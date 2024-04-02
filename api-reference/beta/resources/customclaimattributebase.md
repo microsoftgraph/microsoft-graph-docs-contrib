@@ -3,7 +3,7 @@ title: "customClaimAttributeBase resource type"
 description: "Custom claim attribute base"
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 

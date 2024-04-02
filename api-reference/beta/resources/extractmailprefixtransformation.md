@@ -3,7 +3,7 @@ title: "extractMailPrefixTransformation resource type"
 description: "Removes the domain suffix from either the email address or the user principal name."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.service: entra-id
 doc_type: resourcePageType
 ---
 
