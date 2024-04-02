@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-recent, err := graphClient.Me().Activities().Recent().Get(context.Background(), nil)
+recent, err := graphClient.Me().Activities().Recent().GetAsRecentGetResponse(context.Background(), nil)
 
 
 ```

@@ -57,7 +57,7 @@ classificationResults := []graphmodelssecurity.ClassificationResultable {
 }
 requestBody.SetClassificationResults(classificationResults)
 
-microsoftGraphSecurityEvaluateClassificationResults, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().MicrosoftGraphSecurityEvaluateClassificationResults().Post(context.Background(), requestBody, configuration)
+microsoftGraphSecurityEvaluateClassificationResults, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().MicrosoftGraphSecurityEvaluateClassificationResults().PostAsEvaluateClassificationResultsPostResponse(context.Background(), requestBody, configuration)
 
 
 ```

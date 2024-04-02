@@ -18,6 +18,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewCloudPcOnPremisesConnection()
 displayName := "test-canary-02"
 requestBody.SetDisplayName(&displayName) 
+connectionType := graphmodels.HYBRIDAZUREADJOIN_CLOUDPCONPREMISESCONNECTIONTYPE 
+requestBody.SetConnectionType(&connectionType) 
 type := graphmodels.HYBRIDAZUREADJOIN_CLOUDPCONPREMISESCONNECTIONTYPE 
 requestBody.SetType(&type) 
 subscriptionId := "0ac520ee-14c0-480f-b6c9-0a90c585ffff"

@@ -1150,7 +1150,7 @@ items:
               - name: Create category
                 href: api/outlookuser-post-mastercategories.md
               - name: List modules
-                href: api/educationclass-list-modules.md                
+                href: api/educationclass-list-modules.md
               - name: Get category
                 href: api/outlookcategory-get.md
               - name: Update category
@@ -1289,9 +1289,9 @@ items:
                     href: api/usersettings-list-windows.md
                   - name: Get
                     href: api/windowssetting-get.md
-              - name: Windows setting instance                    
+              - name: Windows setting instance
                 href: resources/windowssettinginstance.md
-                items:              
+                items:
                   - name: List
                     href: api/windowssetting-list-instances.md
                   - name: Get
@@ -1453,6 +1453,97 @@ items:
                 href: resources/cloudpc-api-overview.md
               - name: Virtual endpoint
                 href: resources/virtualendpoint.md
+              - name: Cloud PC
+                href: resources/cloudpc.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-cloudpcs.md
+                  - name: Get
+                    href: api/cloudpc-get.md
+                  - name: End grace period
+                    href: api/cloudpc-endgraceperiod.md
+                  - name: Reboot
+                    href: api/cloudpc-reboot.md
+                  - name: Rename
+                    href: api/cloudpc-rename.md
+                  - name: Restore
+                    href: api/cloudpc-restore.md
+                  - name: Troubleshoot
+                    href: api/cloudpc-troubleshoot.md
+              - name: Cloud PC audit event
+                href: resources/cloudpcauditevent.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-auditevents.md
+                  - name: Get
+                    href: api/cloudpcauditevent-get.md
+                  - name: Get audit activity types
+                    href: api/cloudpcauditevent-getauditactivitytypes.md
+              - name: Cloud PC Azure network connection
+                href: resources/cloudpconpremisesconnection.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-onpremisesconnections.md
+                  - name: Create
+                    href: api/virtualendpoint-post-onpremisesconnections.md
+                  - name: Get
+                    href: api/cloudpconpremisesconnection-get.md
+                  - name: Update
+                    href: api/cloudpconpremisesconnection-update.md
+                  - name: Delete
+                    href: api/cloudpconpremisesconnection-delete.md
+                  - name: Run health checks
+                    href: api/cloudpconpremisesconnection-runhealthcheck.md
+              - name: Cloud PC device image
+                href: resources/cloudpcdeviceimage.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-deviceimages.md
+                  - name: Create
+                    href: api/virtualendpoint-post-deviceimages.md
+                  - name: Get
+                    href: api/cloudpcdeviceimage-get.md
+                  - name: Delete
+                    href: api/cloudpcdeviceimage-delete.md
+                  - name: Get source images
+                    href: api/cloudpcdeviceimage-getsourceimages.md
+              - name: Cloud PC gallery image
+                href: resources/cloudpcgalleryimage.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-galleryimages.md
+                  - name: Get
+                    href: api/cloudpcgalleryimage-get.md
+              - name: Cloud PC provisioning policy
+                href: resources/cloudpcprovisioningpolicy.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-provisioningpolicies.md
+                  - name: Create
+                    href: api/virtualendpoint-post-provisioningpolicies.md
+                  - name: Get
+                    href: api/cloudpcprovisioningpolicy-get.md
+                  - name: Update
+                    href: api/cloudpcprovisioningpolicy-update.md
+                  - name: Delete
+                    href: api/cloudpcprovisioningpolicy-delete.md
+                  - name: Assign
+                    href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Cloud PC user setting
+                href: resources/cloudpcusersetting.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-usersettings.md
+                  - name: Create
+                    href: api/virtualendpoint-post-usersettings.md
+                  - name: Get
+                    href: api/cloudpcusersetting-get.md
+                  - name: Update
+                    href: api/cloudpcusersetting-update.md
+                  - name: Delete
+                    href: api/cloudpcusersetting-delete.md
+                  - name: Assign
+                    href: api/cloudpcusersetting-assign.md
           - name: Cloud printing
             items:
               - name: Print
@@ -4718,7 +4809,7 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md  
+                href: api/educationassignment-delta.md
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md
               - name: Update grading category
@@ -4791,7 +4882,7 @@ items:
             - name: Pin module
               href: api/educationmodule-pin.md
             - name: Unpin module
-              href: api/educationmodule-unpin.md                  
+              href: api/educationmodule-unpin.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -7342,6 +7433,13 @@ items:
             items:
             - name: Microsoft Entra activity reports
               items:
+                - name: AD FS application activity
+                  items:
+                    - name: Relying party detailed summary
+                      href: resources/relyingpartydetailedsummary.md
+                      items:
+                        - name: Get relying party detailed summary
+                          href: api/reportroot-getrelyingpartydetailedsummary.md
                 - name: Registration and usage
                   items:
                     - name: Overview
@@ -8375,6 +8473,8 @@ items:
                 href: api/site-search.md
               - name: Unfollow site
                 href: api/site-unfollow.md
+              - name: Get delta
+                href: api/site-delta.md
           - name: List
             items:
               - name: List
@@ -8440,18 +8540,20 @@ items:
           - name: List item
             href: resources/listitem.md
             items:
-              - name: Get item
-                href: api/listitem-get.md
               - name: Create item
                 href: api/listitem-create.md
-              - name: Update item
+              - name: Get
+                href: api/listitem-get.md
+              - name: Update
                 href: api/listitem-update.md
-              - name: Delete item
+              - name: Delete
                 href: api/listitem-delete.md
-              - name: List versions
-                href: api/listitem-list-versions.md
+              - name: Get delta
+                href: api/listitem-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
+              - name: List versions
+                href: api/listitem-list-versions.md
           - name: Document set version
             items:
               - name: Document set version

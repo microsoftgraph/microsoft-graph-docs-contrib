@@ -12,7 +12,7 @@ mgc role-management directory role-assignment-schedule-requests create --body '{
     "directoryScopeId": "/",\
     "justification": "Need to invalidate all app refresh tokens for Contoso users.",\
     "scheduleInfo": {\
-        "startDateTime": "2021-09-04T15:13:00.000Z",\
+        "startDateTime": "2024-03-25T15:13:00.000Z",\
         "expiration": {\
             "type": "AfterDuration",\
             "duration": "PT5H"\

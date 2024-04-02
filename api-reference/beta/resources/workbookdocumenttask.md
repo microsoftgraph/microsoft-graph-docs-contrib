@@ -3,7 +3,7 @@ title: "workbookDocumentTask resource type"
 description: "Represents a document task in a workbook."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

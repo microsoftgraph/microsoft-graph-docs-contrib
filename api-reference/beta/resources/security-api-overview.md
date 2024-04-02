@@ -184,6 +184,11 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 
 > **Note:** These APIs are only availbe for Defender for Office 365 Plan 2 or Microsoft 365 A5/E5/F5/G5 Security service plans. For the most up-to-date list of service plans, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
+## Identities
+
+### Health Issues
+The Defender for Identity health issues API allows you to monitor the health status of your sensors and agents across your hybrid identity infrastructure. You can use this API to retrieve information about the current health issues of your sensors, such as the issue type, status, configuration, and severity. You can also use this API to identify and resolve any issues that may affect the functionality or security of your sensors and agents.
+
 ## Common use cases
 
 The following are some of the most popular requests for working with the Microsoft Graph security API.
@@ -244,6 +249,9 @@ The following are some of the most popular requests for working with the Microso
 |Query email metadata|[LIST analyzedemails](../api/security-collaborationroot-list-analyzedemails.md)|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails?startTime={startTime}&endTime={endTime}](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails?startTime={startTime}&endTime={endTime}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Get details of a single message instance|[GET analyzedemails/Id](../api/security-analyzedemail-get.md)|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails/{Id}](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails/Id&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Remediate analyzed email|[analyzedEmai: remediate](../api/security-analyzedemail-remediate.md )|[https://graph.microsoft.com/beta/security/collaboration/analyzedemails/remediate](https://developer.microsoft.com/graph/graph-explorer?request=security/collaboration/analyzedemails/remediate&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Identities**|||
+| List health issues | [List health issues](../api/security-identityContainer-list-healthIssues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+
 
 You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
 
@@ -257,11 +265,8 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 
 ## Related content
 
-[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph security API samples:
+[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to this Microsoft Graph security API sample:
 
-- [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
-- [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
-- [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
 - [PowerShell sample](/powershell/scripting/developer/prog-guide/windows-powershell-sample-code)
 
 Explore other options to connect with the Microsoft Graph security API:

@@ -55,7 +55,7 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns a `200 OK` response code and a [muteParticipantOperation](../resources/muteParticipantoperation.md) object in the response body.
 
-> **Note:** After this operation returns a successful response, all participants will receive a roster update
+> **Note:** After this operation returns a successful response, all participants receive a roster update.
 
 ## Example
 
@@ -114,8 +114,9 @@ Content-Type: application/json
 
 ---
 
-##### Response
+### Response
 
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability. 
  
 <!-- { 
