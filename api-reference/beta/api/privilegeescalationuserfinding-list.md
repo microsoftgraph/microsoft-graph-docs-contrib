@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding
 ```
 
 # [C#](#tab/csharp)

@@ -76,7 +76,7 @@ If successful, this method returns a `201 Created` response code and a [user](..
 ### Example 1: Create a user
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -136,7 +136,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 
 >[!NOTE]
 >The response object shown here might be shortened for readability.
@@ -249,7 +249,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

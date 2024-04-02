@@ -4,7 +4,7 @@ description: "Delete an externalUserProfile object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ---
 
 # Delete externalUserProfile
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Delete an [externalUserProfile](../resources/externaluserprofile.md) object.
 
 **Note:** To permanently delete the externalUserProfile, follow [permanently delete an item](directory-deleteditems-delete.md). To restore an externalUserProfile, follow [restore a deleted item](directory-deleteditems-restore.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -91,6 +93,10 @@ DELETE https://graph.microsoft.com/beta/directory/externalUserProfiles/{id}
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-externaluserprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-externaluserprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -1,12 +1,12 @@
 ---
 title: "Rules in PIM - mapping guide"
 description: "Learn how rules in PIM are structured in Microsoft Graph and how they map with the descriptions on the Microsoft Entra admin center."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
-ms.topic: conceptual
-ms.prod: "governance"
+ms.topic: concept-article
+ms.subservice: entra-id-governance
 ms.date: 06/08/2023
 #Customer intent: As a developer, I want to understand how to map PIM settings in the Microsoft Entra admin center to the corresponding rules in Microsoft Graph, so that I can configure and update the rules effectively.
 ---

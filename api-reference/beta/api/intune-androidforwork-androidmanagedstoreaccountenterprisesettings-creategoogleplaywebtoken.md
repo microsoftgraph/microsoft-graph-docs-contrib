@@ -3,7 +3,7 @@ title: "createGooglePlayWebToken action"
 description: "Generates a web token that is used in an embeddable component."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

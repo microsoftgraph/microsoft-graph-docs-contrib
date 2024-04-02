@@ -3,7 +3,7 @@ title: "List tokenLifetimePolicies"
 description: "Get a list of tokenLifetimePolicy objects."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

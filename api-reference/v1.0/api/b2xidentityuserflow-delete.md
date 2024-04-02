@@ -4,7 +4,7 @@ description: "Delete a b2xIdentityUserFlow object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Delete b2xIdentityUserFlow
@@ -52,7 +52,7 @@ If successful, this method returns `204 No Content` response code.
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -103,7 +103,7 @@ DELETE https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 

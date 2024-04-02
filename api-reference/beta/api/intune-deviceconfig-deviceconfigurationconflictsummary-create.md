@@ -3,7 +3,7 @@ title: "Create deviceConfigurationConflictSummary"
 description: "Create a new deviceConfigurationConflictSummary object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

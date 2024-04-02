@@ -4,7 +4,7 @@ description: "Add or remove licenses on the group. Licenses assigned to the grou
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "apiPageType"
 ---
 

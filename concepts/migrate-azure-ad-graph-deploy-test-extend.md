@@ -2,10 +2,11 @@
 title: "Deploy, test, and extend migrated apps"
 description: "Describes how to migrate Azure Active Directory (Azure AD) Graph apps to use the Microsoft Graph APIs."
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: dkershaw
-ms.topic: conceptual
+ms.topic: quickstart
 ms.localizationpriority: medium
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 02/14/2024
 #Customer intent: As a developer migrating apps to Microsoft Graph, I want to understand some best practices for confidently deploying changes to my app, so that I can ensure a smooth transition from Azure AD Graph to Microsoft Graph.
 ---

@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 fromDateTime , err := time.Parse(time.RFC3339, "{fromDateTime}")
 toDateTime , err := time.Parse(time.RFC3339, "{toDateTime}")
-microsoftGraphCallRecordsGetSmsLog, err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetSmsLogWithFromDateTimeWithToDateTime(&fromDateTime, &toDateTime).Get(context.Background(), nil)
+microsoftGraphCallRecordsGetSmsLog, err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetSmsLogWithFromDateTimeWithToDateTime(&fromDateTime, &toDateTime).GetAsGetSmsLogWithFromDateTimeWithToDateTimeGetResponse(context.Background(), nil)
 
 
 ```

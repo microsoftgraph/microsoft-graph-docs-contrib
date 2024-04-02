@@ -3,7 +3,7 @@ title: "requestorManager complex type"
 description: "Identifies a relationship to another user in the tenant who is allowed as approver."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # requestorManager complex type

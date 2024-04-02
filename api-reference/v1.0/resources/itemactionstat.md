@@ -3,7 +3,7 @@ author: daspek
 title: itemActionStat resource type
 description: The itemActionStat object provides aggregate details about an action over a period of time.
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # itemActionStat resource type

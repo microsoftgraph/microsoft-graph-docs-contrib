@@ -3,7 +3,7 @@ title: "educationTeacher resource type"
 description: "Additional information added to an educationUser that is present when the primaryRole of a user is `teacher`."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

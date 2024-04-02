@@ -3,7 +3,7 @@ title: "customExtensionStageSetting resource type"
 description: "Defines when to execute an access package custom workflow extension."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

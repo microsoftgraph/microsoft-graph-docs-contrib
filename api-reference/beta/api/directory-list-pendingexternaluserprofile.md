@@ -4,7 +4,7 @@ description: "List all pendingExternalUserProfile objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 ---
 
 # List pendingExternalUserProfiles
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of all [pendingExternalUserProfiles](../resources/pendingexternaluserprofile.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -95,6 +97,10 @@ GET https://graph.microsoft.com/beta/directory/pendingExternalUserProfiles
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-pendingexternaluserprofiles-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-pendingexternaluserprofiles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

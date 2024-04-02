@@ -3,7 +3,7 @@ title: "Create trustedCertificateAuthority"
 description: "Create a new trusted certificate authority in a certificateBasedApplicationConfiguration object."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [certific
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_certificateauthorityasentity_from_"

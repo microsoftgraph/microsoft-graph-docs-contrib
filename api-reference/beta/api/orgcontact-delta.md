@@ -3,7 +3,7 @@ title: "orgContact: delta"
 description: "Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection." 
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -102,7 +102,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request
 
-Here's an example of the request. Because there's no `$select` parameter, a default set of properties is tracked and returned.
+The following example shows a request. Because there's no `$select` parameter, a default set of properties is tracked and returned.
 
 
 # [HTTP](#tab/http)

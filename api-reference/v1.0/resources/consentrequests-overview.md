@@ -3,7 +3,7 @@ title: "Microsoft Entra consent requests"
 description: "Use the consent request APIs to configure the consent request workflow and to manage consent requests for users attempting to access apps that require admin consent."
 ms.localizationpriority: medium
 author: "eringreenlee"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 09/28/2022
 ---

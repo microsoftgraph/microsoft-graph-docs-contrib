@@ -3,7 +3,7 @@ title: "Remove a member"
 description: "Use this API to remove a member (user, group, or device) from an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -97,7 +97,7 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id1}/memb
 ---
 
 ### Response
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

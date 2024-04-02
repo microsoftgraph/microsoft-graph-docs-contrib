@@ -1,9 +1,9 @@
 ---
 author: "vanshisingh"
-title: "List items in recycleBin"
-description: "Get a list of recycleBinItems under the specified site."
+title: "List items"
+description: "Get a collection of recycleBinItem resources in the recycleBin of the specified SharePoint site."
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recyleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).
+Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request to list all **recycleBinItems** under a specific site.
+The following example shows a request to list all **recycleBinItem** resources under a specific site.
 
 # [HTTP](#tab/http)
 <!-- {

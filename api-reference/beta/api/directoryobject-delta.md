@@ -3,7 +3,7 @@ title: "directoryObject: delta"
 description: "Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection."
 ms.localizationpriority: medium
 author: "jzhu2017"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -113,7 +113,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request
 
-Here's an example of the request using the `$filter=isof('{resource type}')` parameter on users and groups. There's no `$select` parameter, so a default set of properties is tracked and returned.
+The following example shows a request using the `$filter=isof('{resource type}')` parameter on users and groups. There's no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
 <!-- {

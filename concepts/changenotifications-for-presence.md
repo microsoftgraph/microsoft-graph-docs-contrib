@@ -3,7 +3,7 @@ title: "Get change notifications for presence updates in Microsoft Teams"
 description: "Use change notifications in Microsoft Graph to subscribe to presence changes for Microsoft Teams users."
 author: "awang119"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.custom: "scenarios:getting-started"
 ---
 
