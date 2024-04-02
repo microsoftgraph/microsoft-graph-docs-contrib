@@ -27,7 +27,7 @@ Inherits from [microsoft.graph.industryData.referenceValue](../resources/industr
 
 | Relationship | Type                                                                    | Description                                                                                               |
 | :----------- | :---------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| value        | [microsoft.graph.industryData.referencedefinition](../resources/industrydata-referencedefinition.md) | Inherited from [microsoft.graph.industryData.referenceValue](../resources/industrydata-referencevalue.md). |
+| value        | [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) | Inherited from [microsoft.graph.industryData.referenceValue](../resources/industrydata-referencevalue.md). |
 
 ## JSON representation
 
