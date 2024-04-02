@@ -16,7 +16,7 @@ Your app begins by calling `delta` without any parameters.
 The service starts enumerating the hierarchy of the list, returning pages of items, and either an **@odata.nextLink** or an **@odata.deltaLink**.
 Your app should continue calling with the **@odata.nextLink** until you see an **@odata.deltaLink** returned.
 
-After you received all the changes, you may apply them to your local state.
+After you received all the changes, you can apply them to your local state.
 To check for changes in the future, call `delta` again with the **@odata.deltaLink** from the previous response.
 
 The delta feed shows the latest state for each item, not each change. If an item was renamed twice, it only shows up once, with its latest name.
