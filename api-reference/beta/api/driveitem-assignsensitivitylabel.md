@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 Asynchronously assign a sensitivity label to a [driveItem][item-resource]. 
 
-This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have more validation, beyond permission and consent, before you can use them. Before you call this API, you must [request access](https://aka.ms/PreviewSPOPremiumAPI). 
+This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have more validation, beyond permission and consent, before you can use them. Before you call this API, you must [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup?tabs=azurecloudshell). 
 
 For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
 
 > [!NOTE] 
-> This is a metered API and some charges for use may apply. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview).
+> This is a metered API and some charges for use may apply. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview). This API applies sensitivity labels to files at rest, no watermarks, headers, or footers are applied by the Office clients containing the label information. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
