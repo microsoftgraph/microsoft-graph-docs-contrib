@@ -3,7 +3,7 @@ title: "catalogEntry resource type"
 description: "An abstract type that represents metadata for a piece of content that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 

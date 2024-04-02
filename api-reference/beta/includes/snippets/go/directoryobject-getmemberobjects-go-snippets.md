@@ -19,7 +19,7 @@ requestBody := graphusers.NewItemGetMemberObjectsPostRequestBody()
 securityEnabledOnly := true
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
 
-getMemberObjects, err := graphClient.Me().GetMemberObjects().Post(context.Background(), requestBody, nil)
+getMemberObjects, err := graphClient.Me().GetMemberObjects().PostAsGetMemberObjectsPostResponse(context.Background(), requestBody, nil)
 
 
 ```
