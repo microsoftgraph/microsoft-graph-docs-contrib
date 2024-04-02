@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the collection of [sitePageTemplate](../resources/sitepagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination), sorted alphabetically by `name` in ascending order.
+Get the collection of [sitePageTemplate](../resources/sitepagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination). Sort alphabetically by `name` in ascending order.
 
 ## Permissions
 
@@ -56,6 +56,8 @@ If successful, this method returns a `200` and a list of [sitePageTemplate](../r
 
 ### Request
 
+The following example shows a request.
+
 <!--{
 	"blockType": "request",
 	"name": "get-sitePageTemplates",
@@ -69,6 +71,8 @@ GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.si
 ```
 
 ### Response
+
+The following example shows the response.
 
 <!--
 {

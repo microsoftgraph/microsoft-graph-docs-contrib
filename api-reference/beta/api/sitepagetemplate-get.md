@@ -38,7 +38,7 @@ GET /sites/{site-id}/pageTemplates/microsoft.graph.sitePageTemplate/{page-templa
 
 This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can use the `$expand=canvasLayout` query string parameter to include the content of an item when retrieving the metadata of an item if the item has a **canvasLayout** relationship.
+You can use the `$expand=canvasLayout` query string parameter to include the content of an item when retrieving the metadata of an item if the item has a **=canvasLayout** relationship.
 
 
 ## Request headers
@@ -47,7 +47,7 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required. |
-| Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. Use this header to reuse the response in another request. |
+| Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response is used in another request. |
 
 ## Request body
 
@@ -63,6 +63,8 @@ If successful, this method returns a `200` and a [sitePageTemplate](../resources
 ### Example 1: Get a page template in the templates folder of a site
 #### Request
 
+The following example shows a request.
+
 <!-- { "blockType": "request", "name": "get-sitePageTemplate", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
@@ -70,6 +72,8 @@ GET /sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pageTemplates/microsoft.graph.si
 ```
 
 #### Response
+
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePageTemplate", "truncated": true } -->
 
