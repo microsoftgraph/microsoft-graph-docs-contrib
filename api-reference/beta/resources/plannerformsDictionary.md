@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An open type that represents a dictionary of data about the forms associated with a task. This resource is a part of the [task details](plannertaskdetails.md) object. Each entry in the dictionary is a key-value pair, where the value is a [plannerFormReference](plannerformreference.md) object.
+An open type that represents a dictionary of data about the forms associated with a task. This resource is a part of the [plannerTaskDetails](plannertaskdetails.md) object. Each entry in the dictionary is a key-value pair, where the value is a [plannerFormReference](plannerformreference.md) object.
 
 
 ## Properties
