@@ -52,7 +52,7 @@ Inherits from [entity](../resources/entity.md).
 |title|String|The title of the learning content. Required.|
 
 ## Level values
-|Property|Description|
+|Member|Description|
 |:---|:---|
 |Beginner|For learning content at a beginner level.|
 |Intermediate|For learning content at an intermediate level.|
