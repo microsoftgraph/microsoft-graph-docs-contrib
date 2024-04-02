@@ -1,6 +1,6 @@
 ---
 title: "List myDayTasks"
-description: "Retrieve a list of planner tasks to be shown in the MyDay view of the user."
+description: "Retrieve a list of planner tasks to be shown in the My Day view of the user."
 ms.localizationpriority: medium
 author: "NupurGarg"
 ms.prod: "planner"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of **plannerTask** objects to be shown in the MyDay view of the user.
+Retrieve a list of **plannerTask** objects to be shown in the My Day view of the user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -43,7 +43,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 <!-- {
@@ -55,10 +55,10 @@ GET https://graph.microsoft.com/v1.0/me/planner/myDayTasks
 ```
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
