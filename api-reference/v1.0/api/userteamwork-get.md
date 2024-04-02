@@ -55,7 +55,7 @@ The following example shows a request.
   "name": "get_userTeamworkSettings_for_user",
   "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/2f39ffba-51ca-4d2d-a66f-a020a83ce208/teamwork
 ```
 

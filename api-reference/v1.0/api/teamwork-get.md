@@ -54,7 +54,8 @@ The following example shows a request.
   "blockType": "request",
   "name": "get_teamworkSettings_for_organization",
 }-->
-```msgraph-interactive
+
+```http
 GET https://graph.microsoft.com/v1.0/teamwork
 ```
 
