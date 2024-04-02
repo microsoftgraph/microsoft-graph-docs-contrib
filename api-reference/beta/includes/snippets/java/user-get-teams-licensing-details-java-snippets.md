@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TeamsLicensingDetails teamsLicensingDetails = graphClient.users("2f39ffba-51ca-4d2d-a66f-a020a83ce208").licenseDetails()
-	.getTeamsLicensingDetails()
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.users().byUserId("{user-id}").licenseDetails().getTeamsLicensingDetails().get();
+
 
 ```

@@ -3,7 +3,7 @@ title: Create printJob for a printerShare
 description: Create a new printJob for a printerShare. 
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: apiPageType
 ---
 

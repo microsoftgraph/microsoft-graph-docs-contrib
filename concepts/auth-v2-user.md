@@ -1,11 +1,12 @@
 ---
 title: "Get access on behalf of a user"
 description: "Learn how an app obtains an access token from the Microsoft identity platform and calls Microsoft Graph on behalf of a user."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
+ms.topic: tutorial
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: entra-applications
 ms.custom: graphiamtop20
 ms.date: 09/08/2023
 #customer intent: As a developer, I want to understand how my app can run with it's own identity, without a signed in user, and call Microsoft Graph to access resources in a tenant.
@@ -34,9 +35,11 @@ For an app to get authorization and access to Microsoft Graph using the authoriz
 4. Use the access token to call Microsoft Graph.
 5. [Optional] Use the refresh token to renew an expired access token.
 
+<!--
 > [!TIP]
 > [![Try steps 2-5 in Postman](./images/auth-v2/runinpostman.png)](https://app.getpostman.com/run-collection/f77994d794bab767596d)<br/>
 > Try steps 2-5 in Postman. Don't forget to replace tokens and IDs!
+-->
 
 ## 1. Register the app
 
@@ -246,12 +249,12 @@ Content-Length: 407
     "displayName": "MOD Administrator",
     "givenName": "MOD",
     "jobTitle": null,
-    "mail": "admin@contoso.OnMicrosoft.com",
+    "mail": "admin@contoso.com",
     "mobilePhone": "425-555-0101",
     "officeLocation": null,
     "preferredLanguage": "en-US",
     "surname": "Administrator",
-    "userPrincipalName": "admin@contoso.onmicrosoft.com",
+    "userPrincipalName": "admin@contoso.com",
     "id": "10a08e2e-3ea2-4ce0-80cb-d5fdd4b05ea6"
 }
 ```

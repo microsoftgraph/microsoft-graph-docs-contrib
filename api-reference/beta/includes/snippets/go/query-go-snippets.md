@@ -29,6 +29,8 @@ contentSources := []string {
 	"/external/connections/connectionfriendlyname",
 }
 searchRequest.SetContentSources(contentSources)
+region := "US"
+searchRequest.SetRegion(&region) 
 query := graphmodels.NewSearchQuery()
 queryString := "contoso product"
 query.SetQueryString(&queryString) 
@@ -48,7 +50,7 @@ requests := []graphmodels.SearchRequestable {
 }
 requestBody.SetRequests(requests)
 
-query, err := graphClient.Search().Query().Post(context.Background(), requestBody, nil)
+query, err := graphClient.Search().Query().PostAsQueryPostResponse(context.Background(), requestBody, nil)
 
 
 ```

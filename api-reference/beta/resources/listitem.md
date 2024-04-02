@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 description: "Represents an item in a SharePoint list."
 title: "listItem resource"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

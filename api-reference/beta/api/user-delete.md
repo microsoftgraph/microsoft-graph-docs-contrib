@@ -2,6 +2,7 @@
 title: "Delete a user - Microsoft Graph API"
 description: "Describes the delete method of the user resource (entity) of the Microsoft Graph API (REST)."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -61,7 +62,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

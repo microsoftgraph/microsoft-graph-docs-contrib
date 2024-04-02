@@ -3,7 +3,7 @@ title: "reportRoot resource type"
 description: "Represents a container for Microsoft Entra reporting resources."
 author: "kvenkit"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -31,6 +31,7 @@ None.
 | monthlyPrintUsageByPrinter | [printUsageByPrinter](../resources/printusagebyprinter.md) collection | Retrieve a list of monthly print usage summaries, grouped by printer. |
 | monthlyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of monthly print usage summaries, grouped by user. |
 | security | [securityReportsRoot](../resources/securityreportsroot.md) | Represents an abstract type that contains resources for attack simulation and training reports.  |
+| partners | [partners](../resources/partners.md) | Represents billing details for a Microsoft direct partner. |
 
 ## JSON representation
 

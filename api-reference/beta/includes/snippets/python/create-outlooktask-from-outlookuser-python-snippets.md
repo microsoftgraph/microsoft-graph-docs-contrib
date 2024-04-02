@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.outlook.tasks.tasks_request_builder import TasksRequestBuilder
+from msgraph.generated.models.outlook_task import OutlookTask
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)
 

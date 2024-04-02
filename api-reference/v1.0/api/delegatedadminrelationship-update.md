@@ -3,7 +3,7 @@ title: "Update delegatedAdminRelationship"
 description: "Update the properties of a delegatedAdminRelationship object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -19,6 +19,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "delegatedadminrelationship_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/delegatedadminrelationship-update-permissions.md)]
+
+[!INCLUDE [rbac-gdap-apis-customer-only](../includes/rbac-for-apis/rbac-gdap-apis-customer-only.md)]
 
 ## HTTP request
 
@@ -46,7 +48,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner requests or has access to in the customer tenant.|
 |autoExtendDuration|Duration| The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: `P0D`, `PT0S`, `P180D`. The default value is `PT0S`. `PT0S` indicates that the relationship expires when the **endDateTime** is reached and it isn't automatically extended.|
 |customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship.|
-|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner.|
+|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. Maximum length is 50 characters.|
 |duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive.|
 
 

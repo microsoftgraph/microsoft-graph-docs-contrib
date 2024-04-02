@@ -3,7 +3,7 @@ title: "Get teamworkBot"
 description: "Read the properties and relationships of a teamworkBot object."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - To get bots installed in a team, see example 2 in [List apps in team](team-list-installedapps.md).
 - To get bots installed in a chat, see example 2 in [List apps in chat](chat-list-installedapps.md).

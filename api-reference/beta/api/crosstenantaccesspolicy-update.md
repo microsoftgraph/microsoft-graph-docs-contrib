@@ -3,7 +3,7 @@ title: "Update crossTenantAccessPolicy"
 description: "Update the properties of a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

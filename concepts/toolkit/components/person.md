@@ -15,9 +15,19 @@ The person component also uses the [mgt-person-card](./person-card.md) to displa
 
 The following example displays a person using the `mgt-person` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
+# [HTML](#tab/html)
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-html--person&source=docs" height="400"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-html--person&source=docs).
+
+# [React](#tab/react)
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-react--person&source=docs" height="400"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-react--person&source=docs).
+
+---
 
 ## Setting the person details
 
@@ -45,7 +55,7 @@ You can use three properties to set the person details. Use only one of the foll
 
   If no image is provided, one will be fetched (if available).
 
-* By default, the person component will only request the standard Microsoft Graph user set of [properties](/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`.
+* By default, the person component only requests the standard Microsoft Graph user set of [properties](/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`.
 
 
 ## Properties
@@ -63,15 +73,16 @@ You can use several properties to customize the component.
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
 | disable-image-fetch | disableImageFetch | Set flag to disable fetching of person image. Can be used to avoid unnecessary fetching from Microsoft Graph when specifying `personImage` property.
 | avatar-type     | avatarType     | Set to `initials` or `photo` to render either display state - default is photo. |
-| avatar-size     | avatarSize     | Set to `small`, `large`, or `auto` to  determine the size of avatar. This helps to set the correct size for the presence badge. Default is auto. |
+| avatar-size     | avatarSize     | Set the avatar size to `small`, `large`, or `auto`, helping also determine the correct size for the presence badge. The default value is `auto`. If the `view` attribute is set to `threelines` or `fourlines`, `avatar-size` is automatically treated as `large`, regardless of its actual value. |
 | vertical-layout | verticalLayout | Set the component layout to vertical.|
-| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `jobTitle` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `jobTitle` and `department` by default) <br /> `fourlines` - show avatar and four lines of text (`displayName`, `jobTitle`, `department` and `email` by default) <br /> In `vertical-layout`, view changes. <br /> `twolines` - show avatar and two lines of text (`displayName` and `email` by default) <br /> `threelines` - show avatar and three lines of text (`displayName` , `email` and `department` by default) |
+| view            | view           | Set to control how the person is rendered. Default is `image`. <br /> `image` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `jobTitle` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `jobTitle` and `department` by default) <br /> `fourlines` - show avatar and four lines of text (`displayName`, `jobTitle`, `department` and `email` by default) <br /> In `vertical-layout`, view changes. <br /> `twolines` - show avatar and two lines of text (`displayName` and `email` by default) <br /> `threelines` - show avatar and three lines of text (`displayName` , `email` and `department` by default) |
 | line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
 | line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `jobTitle`.|
 | line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `department`.|
 | line4-property  | line4Property  | Sets the property of the personDetails to use for the fourth line of text. Default is `email`.|
 | show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
 | usage | usage | Specify where the component is being used in order to add customized personalization for it. Currently only supports `people` as used in the people component. |
+| person-card      | personCardInteraction | Sets the behavior to show the person card on the rendered person component. The allowed values are `none`, `hover` or `click`. Default is `none`. |
 
 ## CSS custom properties
 
@@ -131,7 +142,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Templates
 
-The `mgt-person` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
+The `mgt-person` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` to one of the following values:
 
 | Data type | Data context | Description |
 | --------- | ------------ | ----------- |
@@ -245,22 +256,32 @@ The following properties are available on the config object.
 
 ## Microsoft Graph permissions
 
-This control uses the following Microsoft Graph APIs and permissions.
+This control uses the following Microsoft Graph APIs and permissions. For each API called, the user must have at least one of the permissions listed. Some configurations can result in multiple calls to Microsoft Graph. When these calls can use different permissions, each API and permission set is in a separate row.
 
 | Configuration | Permission | API |
 | ------------- | ---------- | --- |
-| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo`, retrieved person is a contact and `useContactApis` set to `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
-| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and person is not a contact or `useContactApis` is set to `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
-| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and user specified via email | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
-| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and contact specified via email | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
-| `userId` set | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people) |
-| `personQuery` set to `me` and `avatarType` set to `photo` | User.Read | [/me/photo/$value](/graph/api/profilephoto-get) |
-| `personQuery` set to `me` and `avatarType` set to something else than `photo` | User.Read | [/me](/graph/api/user-get) |
-| `personQuery` set to a value other than `me` and `useContactApis` set to `true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/\*](/graph/api/user-list-contacts) |
-| `personQuery` set to a value other than `me` and `useContactApis` set to `false` | People.Read, User.ReadBasic.All | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people) |
-| `showPresence` set to `true` and `personQuery` set to `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
-| `showPresence` set to `true` and `personQuery` set to a value other than `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
-| `personCardInteraction` set to a value other than `PersonCardInteraction.none` | See [person card permissions](/graph/toolkit/components/person-card#microsoft-graph-permissions) | See [person card API calls](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo`, retrieved person is a contact and `useContactApis` set to `true`            | Contacts.Read, Contacts.ReadWrite                                                                                                 | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and person isn't a contact or `useContactApis` is set to `false`             | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                                             | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and user specified via email                                                 | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All                                | [/users?$search=](/graph/api/user-list) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and user specified via email                                                 | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                                             | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` set without image, `fetchImage` set to `true`, `avatarType` set to `photo` and contact specified via email and `useContactApis` set to true             | Contacts.Read, Contacts.ReadWrite                                                                                                 | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` set without image to a group, `fetchImage` set to `true`, `avatarType` set to `photo`                                                                   | Group.Read.All, Group.ReadWrite.All'                                                                                              | [/groups/${groupId}/photo/$value](/graph/api/profilephoto-get) |
+| `userId` set                                                                                                                                                            | User.ReadBasic.All                                                                                                                | [/users/{id}](/graph/api/user-list-people) |
+| `userId` set or `personQuery` set to `me` and `avatarType` set to `photo` and `disableImageFetch` is `false`                                                            | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All                                | [/users/{id}](/graph/api/user-get) |
+| `userId` set or `personQuery` set to `me` and `avatarType` set to `photo` and `disableImageFetch` is `false`                                                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                                             | [users/${userId}/photo/*](/graph/api/profilephoto-get) |
+| `userId` set to `me` and `avatarType` set to `photo` and `disableImageFetch` is `false`                                                                                 | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All     | [/me](/graph/api/user-get) |
+| `userId` set to `me` and `avatarType` set to `photo` and `disableImageFetch` is `false`                                                                                 | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All                                                  | [/me/photo/$value](/graph/api/profilephoto-get) |
+| `personQuery` set to `me` and `avatarType` set to something else than `photo`                                                                                           | User.Read, User.ReadWrite                                                                                                         | [/me](/graph/api/user-get) |
+| `personQuery` set to a value other than `me` and `avatarType` set to something else than `photo`                                                                        | People.Read, People.Read.All                                                                                                      | [/me/people](/graph/api/user-list-people) |
+| `personQuery` set to a value other than `me` and `avatarType` set to something else than `photo` and `/me/people` returned no data matching the supplied `personQuery`  | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All                                | [/user?$search=](/graph/api/user-list-people) |
+| `personQuery` set to a value other than `me` and `useContactApis` set to `false`                                                                                        | People.Read, User.ReadBasic.All                                                                                                   | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list) |
+| `showPresence` set to `true` and `personQuery` set to `me`                                                                                                              | Presence.Read                                                                                                                     | [/me/presence](/graph/api/presence-get) |
+| `showPresence` set to `true` and `personQuery` set to a value other than `me`                                                                                           | Presence.Read.All                                                                                                                 | [/users/{id}/presence](/graph/api/presence-get) |
+| `personCardInteraction` set to a value other than `PersonCardInteraction.none`                                                                                          | See [person card permissions](/graph/toolkit/components/person-card#microsoft-graph-permissions) | See [person card API calls](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
+
+### Subcomponents
+
+The `mgt-person` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-person-card](person-card.md).
 
 ## Authentication
 
@@ -295,4 +316,3 @@ The control exposes the following variables that can be localized. For details a
 | ---------------- | --------------- |
 | photoFor         | `Photo for`     |
 | emailAddress     | `Email address` |
-| initials         | `Initials`      |

@@ -3,7 +3,7 @@ title: "List business calendarView"
 description: "Get the collection of bookingAppointment objects for a bookingBusiness that occurs in the specified date range."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -59,16 +59,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bookingbusinesslistcalendarview",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 
 # [C#](#tab/csharp)
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 
 ### Response
 
-Here's an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -122,7 +122,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/calendarView",
+    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.com')/calendarView",
     "value": [
         {
             "id": "AAMkADKpAAA=",

@@ -3,7 +3,7 @@ title: "List provisioningPolicies"
 description: "List the properties and relationships of all Cloud PC provisioning policies."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -112,8 +112,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.cloudPcProvisioningPolicy)"
 }
 -->
 
@@ -127,10 +126,6 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
       "description": "Description value",
       "displayName": "Display Name value",
-      "domainJoinConfiguration": {
-          "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-          "type": "hybridAzureADJoin"
-      },
       "domainJoinConfigurations": [
         {
           "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
@@ -143,12 +138,11 @@ Content-Type: application/json
       ],
       "enableSingleSignOn": true,
       "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
       "imageDisplayName": "Image Display Name value",
       "imageId": "Image ID value",
       "imageType":"custom",
-      "windowsSettings": {
-        "language": "en-US"
+      "windowsSetting": {
+          "locale": "en-US"
       },
       "managedBy": "windows365",
       "provisioningType": "dedicated"

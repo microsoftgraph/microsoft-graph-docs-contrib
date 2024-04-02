@@ -3,7 +3,7 @@ title: "Create multiTenantOrganization"
 description: "Create a new multi-tenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -79,10 +79,6 @@ Content-Type: application/json
   "description": "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-multitenantorganization-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-multitenantorganization-from--javascript-snippets.md)]

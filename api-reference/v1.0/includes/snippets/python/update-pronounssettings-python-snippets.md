@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.pronouns_settings import PronounsSettings
 
 graph_client = GraphServiceClient(credentials, scopes)
 

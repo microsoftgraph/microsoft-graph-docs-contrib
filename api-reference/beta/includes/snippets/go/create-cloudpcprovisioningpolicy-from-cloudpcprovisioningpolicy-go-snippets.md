@@ -60,6 +60,10 @@ windowsSettings := graphmodels.NewCloudPcWindowsSettings()
 language := "en-US"
 windowsSettings.SetLanguage(&language) 
 requestBody.SetWindowsSettings(windowsSettings)
+windowsSetting := graphmodels.NewCloudPcWindowsSetting()
+locale := "en-US"
+windowsSetting.SetLocale(&locale) 
+requestBody.SetWindowsSetting(windowsSetting)
 provisioningType := graphmodels.DEDICATED_CLOUDPCPROVISIONINGTYPE 
 requestBody.SetProvisioningType(&provisioningType) 
 

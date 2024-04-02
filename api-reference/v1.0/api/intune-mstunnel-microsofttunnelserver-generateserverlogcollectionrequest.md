@@ -3,7 +3,7 @@ title: "generateServerLogCollectionRequest action"
 description: "Not yet documented"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,6 @@ Here is an example of the request.
 <!-- { "blockType": "request" , "name" : "intune_mstunnel_microsofttunnelserver_generateserverlogcollectionrequest_generateserverlogcollectionrequest_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/generateServerLogCollectionRequest
-
 Content-type: application/json
 Content-length: 115
 

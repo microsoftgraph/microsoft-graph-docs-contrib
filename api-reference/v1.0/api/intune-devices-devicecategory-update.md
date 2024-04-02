@@ -3,7 +3,7 @@ title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -69,10 +69,6 @@ Content-length: 56
   "@odata.type": "#microsoft.graph.deviceCategory"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-devices-devicecategory-update-update-devicecategory-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/intune-devices-devicecategory-update-update-devicecategory-javascript-snippets.md)]

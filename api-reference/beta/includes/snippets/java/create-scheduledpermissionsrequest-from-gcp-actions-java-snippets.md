@@ -4,43 +4,47 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ScheduledPermissionsRequest scheduledPermissionsRequest = new ScheduledPermissionsRequest();
 SingleResourceGcpPermissionsDefinition requestedPermissions = new SingleResourceGcpPermissionsDefinition();
+requestedPermissions.setOdataType("microsoft.graph.singleResourceGcpPermissionsDefinition");
 PermissionsDefinitionAuthorizationSystem authorizationSystemInfo = new PermissionsDefinitionAuthorizationSystem();
-authorizationSystemInfo.authorizationSystemId = "carbide-bonsai-205017";
-authorizationSystemInfo.authorizationSystemType = "GCP";
-requestedPermissions.authorizationSystemInfo = authorizationSystemInfo;
+authorizationSystemInfo.setAuthorizationSystemId("carbide-bonsai-205017");
+authorizationSystemInfo.setAuthorizationSystemType("GCP");
+requestedPermissions.setAuthorizationSystemInfo(authorizationSystemInfo);
 GcpActionPermissionsDefinitionAction actionInfo = new GcpActionPermissionsDefinitionAction();
-LinkedList<String> actionsList = new LinkedList<String>();
-actionsList.add("aiplatform:dataitems");
-actionInfo.actions = actionsList;
-requestedPermissions.actionInfo = actionInfo;
+actionInfo.setOdataType("microsoft.graph.gcpActionPermissionsDefinitionAction");
+LinkedList<String> actions = new LinkedList<String>();
+actions.add("aiplatform:dataitems");
+actionInfo.setActions(actions);
+requestedPermissions.setActionInfo(actionInfo);
 PermissionsDefinitionAuthorizationSystemIdentity identityInfo = new PermissionsDefinitionAuthorizationSystemIdentity();
-identityInfo.externalId = "alex@contoso.com";
+identityInfo.setExternalId("alex@contoso.com");
 EdIdentitySource source = new EdIdentitySource();
-identityInfo.source = source;
-identityInfo.identityType = PermissionsDefinitionIdentityType.USER;
-requestedPermissions.identityInfo = identityInfo;
-requestedPermissions.resourceId = "carbide-bonsai-205017";
-scheduledPermissionsRequest.requestedPermissions = requestedPermissions;
-scheduledPermissionsRequest.justification = "I need to do this because I want to code my own chat GPT-3 bot on GCP";
-scheduledPermissionsRequest.notes = "Pretty Pleaseeeee";
+source.setOdataType("microsoft.graph.edIdentitySource");
+identityInfo.setSource(source);
+identityInfo.setIdentityType(PermissionsDefinitionIdentityType.User);
+requestedPermissions.setIdentityInfo(identityInfo);
+requestedPermissions.setResourceId("carbide-bonsai-205017");
+scheduledPermissionsRequest.setRequestedPermissions(requestedPermissions);
+scheduledPermissionsRequest.setJustification("I need to do this because I want to code my own chat GPT-3 bot on GCP");
+scheduledPermissionsRequest.setNotes("Pretty Pleaseeeee");
 RequestSchedule scheduleInfo = new RequestSchedule();
 ExpirationPattern expiration = new ExpirationPattern();
-expiration.duration = DatatypeFactory.newInstance().newDuration("PT1H");
-scheduleInfo.expiration = expiration;
-scheduledPermissionsRequest.scheduleInfo = scheduleInfo;
+PeriodAndDuration duration = PeriodAndDuration.ofDuration(Duration.parse("PT1H"));
+expiration.setDuration(duration);
+scheduleInfo.setExpiration(expiration);
+scheduledPermissionsRequest.setScheduleInfo(scheduleInfo);
 TicketInfo ticketInfo = new TicketInfo();
-ticketInfo.ticketNumber = "INC1234567";
-ticketInfo.ticketSystem = "ServiceNow";
-ticketInfo.ticketSubmitterIdentityId = "alex@contoso.com";
-ticketInfo.ticketApproverIdentityId = "alexmanager@contoso.com";
-scheduledPermissionsRequest.ticketInfo = ticketInfo;
+ticketInfo.setTicketNumber("INC1234567");
+ticketInfo.setTicketSystem("ServiceNow");
+ticketInfo.setTicketSubmitterIdentityId("alex@contoso.com");
+ticketInfo.setTicketApproverIdentityId("alexmanager@contoso.com");
+scheduledPermissionsRequest.setTicketInfo(ticketInfo);
+ScheduledPermissionsRequest result = graphClient.identityGovernance().permissionsManagement().scheduledPermissionsRequests().post(scheduledPermissionsRequest);
 
-graphClient.identityGovernance().permissionsManagement().scheduledPermissionsRequests()
-	.buildRequest()
-	.post(scheduledPermissionsRequest);
 
 ```

@@ -3,7 +3,7 @@ title: "On-premises publishing profiles"
 description: "Various Azure services (for example, Microsoft Entra Connect Passthrough Authentication, Workday to Microsoft Entra users provisioning) allow a conditional access to various on-premises resources from outside the corporate network."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 01/20/2022
 ---
@@ -21,7 +21,7 @@ A tenant admin can configure for each **onPremisesPublishingProfile** the [time 
 
 For a tutorial about configuring Application Proxy, see [Automate the configuration of Application Proxy using the Microsoft Graph API](/graph/application-proxy-configure-api).
 
-## See also
+## Related content
 
 - [On-premises agent](onpremisesagent.md)
 - [On-premises agent group](onpremisesagentgroup.md)

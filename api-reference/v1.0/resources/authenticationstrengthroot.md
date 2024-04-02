@@ -4,7 +4,7 @@ description: "The authenticationStrengthRoot resource is the entry point for the
 ms.localizationpriority: medium
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

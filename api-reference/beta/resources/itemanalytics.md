@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: ItemAnalytics
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 ---
 # itemAnalytics resource type
 

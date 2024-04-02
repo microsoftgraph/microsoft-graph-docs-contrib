@@ -3,7 +3,7 @@ title: "Get change notifications for meeting transcripts and recordings using Mi
 description: "Learn how to get notifications for meeting transcripts and recordings using Microsoft Graph APIs."
 author: "v-sdhakshina"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -373,7 +373,7 @@ For notifications without resource data, the payload looks like the following. T
 
 The **resource** and **@odata.id** properties can be used to call Microsoft Graph to get the transcript or recording.
 
-## See also
+## Related content
 
 * [Microsoft Graph change notifications](change-notifications-overview.md)
 * [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)

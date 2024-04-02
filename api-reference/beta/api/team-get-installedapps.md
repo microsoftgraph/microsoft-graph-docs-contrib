@@ -3,7 +3,7 @@ title: "Get installed app in team"
 description: "Get an app installed in team."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -296,7 +296,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

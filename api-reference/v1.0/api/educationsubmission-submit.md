@@ -3,7 +3,7 @@ title: "educationSubmission: submit"
 description: "An action that indicates that a student is done with the work and is ready to hand in the assignment. This action can only be taken by the student."
 author: "sharad-sharma-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -154,7 +154,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See also
+## Related content
 
 [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition).
 

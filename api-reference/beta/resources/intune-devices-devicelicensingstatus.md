@@ -3,7 +3,7 @@ title: "deviceLicensingStatus enum type"
 description: "Indicates the device licensing status after Windows device based subscription has been enabled."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

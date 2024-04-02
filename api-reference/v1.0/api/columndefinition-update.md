@@ -4,7 +4,7 @@ title: "Update columnDefinition"
 description: "Update a site, a list, or a content type column."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # Update columnDefinition
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [colu
 }-->
 
 ```http
-PATCH /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 Content-Type: application/json
 
 {

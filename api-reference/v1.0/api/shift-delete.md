@@ -3,7 +3,7 @@ title: "Delete shift"
 description: "Delete a shift from the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -121,6 +121,6 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

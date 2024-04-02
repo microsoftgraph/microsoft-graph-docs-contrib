@@ -3,7 +3,7 @@ title: "Working with the authentication methods usage report API"
 description: "The authentication methods usage report helps you understand how users in your organization are using Microsoft Entra authentication capabilities such as self-service password reset and multifactor authentication (MFA)."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "conceptualPageType"
 ms.date: 01/18/2024
 ---
@@ -40,7 +40,7 @@ The following table lists some common requests that you can use with this API.
 | [usersRegisteredByMethod](../resources/userregistrationmethodsummary.md) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=beta) | Get the number of users registered for each authentication method. |
 | [userRegistrationDetails](../resources/userRegistrationDetails.md) | [GET /authenticationMethods/userRegistrationDetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/userRegistrationDetails&version=beta) | Get the MFA registration details for all users. |
 
-## See also
+## Related content
 
 - Learn how to [deploy Microsoft Entra self-service password reset](/azure/active-directory/authentication/howto-sspr-deployment).
 - Learn how to deploy [Microsoft Entra multifactor authentication](/azure/active-directory/authentication/howto-mfa-getstarted).

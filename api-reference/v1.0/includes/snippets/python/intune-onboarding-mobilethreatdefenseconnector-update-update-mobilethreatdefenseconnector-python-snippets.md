@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.mobile_threat_defense_connector import MobileThreatDefenseConnector
 
 graph_client = GraphServiceClient(credentials, scopes)
 

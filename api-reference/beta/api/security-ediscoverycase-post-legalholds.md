@@ -55,7 +55,7 @@ If successful, this method returns a `201 Created` response code and an [microso
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,7 +73,7 @@ Content-Type: application/json
     "userSources@odata.bind": [
         {
             "@odata.type": "microsoft.graph.security.userSource",
-            "email": "SalesTeam@M365x809305.OnMicrosoft.com"
+            "email": "SalesTeam@contoso.com"
         }
     ],
     "siteSources@odata.bind": [

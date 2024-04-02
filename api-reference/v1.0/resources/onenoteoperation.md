@@ -3,7 +3,7 @@ title: "onenoteOperation resource type"
 description: "The status of certain long-running OneNote operations."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 

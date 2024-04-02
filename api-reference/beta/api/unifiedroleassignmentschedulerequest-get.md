@@ -3,7 +3,7 @@ title: "Get unifiedRoleAssignmentScheduleRequest"
 description: "In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "unifiedroleassignmentschedulerequest_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentschedulerequest-get-permissions.md)]
+
+[!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
 ## HTTP request
 

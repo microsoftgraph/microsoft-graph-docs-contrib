@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ItemAddress itemAddress = new ItemAddress();
-itemAddress.allowedAudiences = EnumSet.of(AllowedAudiences.ME);
-itemAddress.displayName = "Secret Hideout";
+itemAddress.setAllowedAudiences(EnumSet.of(AllowedAudiences.Me));
+itemAddress.setDisplayName("Secret Hideout");
+ItemAddress result = graphClient.users().byUserId("{user-id}").profile().addresses().byItemAddressId("{itemAddress-id}").patch(itemAddress);
 
-graphClient.users("{userId}").profile().addresses("{id}")
-	.buildRequest()
-	.patch(itemAddress);
 
 ```

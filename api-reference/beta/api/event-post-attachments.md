@@ -3,7 +3,7 @@ title: "Add attachment"
 description: "Use this API to add an attachment to an event. Since there"
 author: "svpsiva"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ If successful, this method returns `201 Created` response code and [attachment](
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +116,7 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_beta",
@@ -219,7 +219,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
@@ -248,7 +248,7 @@ Content-type: application/json
 
 ### Request
 
-Here is an example of a request that adds a reference attachment to an existing event.
+The following example shows a request that adds a reference attachment to an existing event.
 The attachment points to a folder on OneDrive.
 
 # [HTTP](#tab/http)

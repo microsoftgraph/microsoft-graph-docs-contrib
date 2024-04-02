@@ -3,7 +3,7 @@ title: "azureDataLakeConnector: getUploadSession"
 description: "Retrieve an upload session used to supply file-based data to an inbound flow."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,10 +72,6 @@ The following is an example of a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271/microsoft.graph.industryData.azureDataLakeConnector/getUploadSession
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/azuredatalakeconnectorthisgetuploadsession-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/azuredatalakeconnectorthisgetuploadsession-javascript-snippets.md)]

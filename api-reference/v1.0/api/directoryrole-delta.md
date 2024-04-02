@@ -4,7 +4,7 @@ description: "Get newly created, updated, or deleted directory roles without hav
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -162,7 +162,7 @@ Content-type: application/json
 }
 ```
 
-### See also
+### Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for more details
 - [Get incremental changes for users](/graph/delta-query-users) for an example requests.

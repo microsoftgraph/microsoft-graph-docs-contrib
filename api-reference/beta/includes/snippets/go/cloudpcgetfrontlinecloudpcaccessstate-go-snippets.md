@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getFrontlineCloudPcAccessState, err := graphClient.Me().CloudPCs().ByCloudPCId("cloudPC-id").GetFrontlineCloudPcAccessState().Get(context.Background(), nil)
+getFrontlineCloudPcAccessState, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().ByCloudPCId("cloudPC-id").GetFrontlineCloudPcAccessState().Get(context.Background(), nil)
 
 
 ```

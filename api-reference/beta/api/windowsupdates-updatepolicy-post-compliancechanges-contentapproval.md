@@ -3,7 +3,7 @@ title: "Create contentApproval"
 description: "Create a new contentApproval object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-contentapproval-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-contentapproval-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

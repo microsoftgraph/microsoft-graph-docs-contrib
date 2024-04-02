@@ -3,7 +3,7 @@ title: "Create androidDeviceOwnerCompliancePolicy"
 description: "Create a new androidDeviceOwnerCompliancePolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [androidDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -78,6 +80,7 @@ The following table shows the properties that are required when you create the a
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
 |securityRequireIntuneAppIntegrity|Boolean|If setting is set to true, checks that the Intune app installed on fully managed, dedicated, or corporate-owned work profile Android Enterprise enrolled devices, is the one provided by Microsoft from the Managed Google Playstore. If the check fails, the device will be reported as non-compliant.|
 |requireNoPendingSystemUpdates|Boolean|Require device to have no pending Android system updates.|
+|securityRequiredAndroidSafetyNetEvaluationType|[androidSafetyNetEvaluationType](../resources/intune-deviceconfig-androidsafetynetevaluationtype.md)|Require a specific Play Integrity evaluation type for compliance. Possible values are: `basic`, `hardwareBacked`.|
 
 
 
@@ -91,7 +94,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1311
+Content-length: 1382
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -123,7 +126,8 @@ Content-length: 1311
   "passwordPreviousPasswordCountToBlock": 4,
   "storageRequireEncryption": true,
   "securityRequireIntuneAppIntegrity": true,
-  "requireNoPendingSystemUpdates": true
+  "requireNoPendingSystemUpdates": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
 
@@ -132,7 +136,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1483
+Content-Length: 1554
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -167,6 +171,7 @@ Content-Length: 1483
   "passwordPreviousPasswordCountToBlock": 4,
   "storageRequireEncryption": true,
   "securityRequireIntuneAppIntegrity": true,
-  "requireNoPendingSystemUpdates": true
+  "requireNoPendingSystemUpdates": true,
+  "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```

@@ -3,7 +3,7 @@ title: "deviceQueryResultStatus enum type"
 description: "Status of Intune Pivot device query."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

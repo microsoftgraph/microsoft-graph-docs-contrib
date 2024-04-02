@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IdentityUserFlow identityUserFlow = new IdentityUserFlow();
-identityUserFlow.id = "Pol1";
-identityUserFlow.userFlowType = UserFlowType.SIGN_UP_OR_SIGN_IN;
-identityUserFlow.userFlowTypeVersion = 1;
+identityUserFlow.setId("Pol1");
+identityUserFlow.setUserFlowType(UserFlowType.SignUpOrSignIn);
+identityUserFlow.setUserFlowTypeVersion(1f);
+IdentityUserFlow result = graphClient.identity().userFlows().post(identityUserFlow);
 
-graphClient.identity().userFlows()
-	.buildRequest()
-	.post(identityUserFlow);
 
 ```

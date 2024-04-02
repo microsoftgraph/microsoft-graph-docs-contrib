@@ -3,7 +3,7 @@ title: "Configure an API connector in a user flow"
 description: "Enable or disable an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -79,10 +79,6 @@ Content-Type: application/json
 }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/put-b2cuserflows-apiconnectorconfiguration-postfederationsignup-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-b2cuserflows-apiconnectorconfiguration-postfederationsignup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -91,7 +87,7 @@ Content-Type: application/json
 
 #### Response 
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -106,7 +102,7 @@ HTTP/1.1 204 No Content
 
 #### Request 
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -126,10 +122,6 @@ Content-Type: application/json
 }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/put-b2cuserflows-apiconnectorconfiguration-postattributecollection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-b2cuserflows-apiconnectorconfiguration-postattributecollection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -138,7 +130,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -153,7 +145,7 @@ HTTP/1.1 204 No Content
 
 #### Request 
 
-Here's an example of the request.
+The following example shows a request.
 
 
 
@@ -172,10 +164,6 @@ Content-Type: application/json
 { }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/put-b2cuserflows-apiconnectorconfiguration-disable-postattributecollection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-b2cuserflows-apiconnectorconfiguration-disable-postattributecollection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -184,7 +172,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

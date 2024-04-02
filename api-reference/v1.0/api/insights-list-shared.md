@@ -3,7 +3,7 @@ title: "List shared"
 description: "Calculated insight that returns the list of files shared with a user."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a list of [share
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request",

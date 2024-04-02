@@ -3,7 +3,7 @@ title: "domainState resource type"
 description: "Represents the status of asynchronous operations scheduled on a domain."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

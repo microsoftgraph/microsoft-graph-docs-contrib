@@ -4,7 +4,7 @@ description: "Returns the metadata for a sitePage in the site pages list in a si
 ms.date: 03/15/2018
 title: Get sitePage
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -219,7 +219,7 @@ Content-type: application/json
     "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
     "lastModifiedDateTime": "2023-04-16T10:01:41Z",
     "name": "Electronic Convertible.aspx",
-    "webUrl": https://a830edad9050849yd.sharepoint.com/"SitePages/Electronic Convertible.aspx",
+    "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Electronic%20Convertible.aspx",
     "title": "Electronic Convertible",
     "pageLayout": "article",
     "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/_layouts/15/images/sitepagethumbnail.png",
@@ -233,13 +233,13 @@ Content-type: application/json
     "createdBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "lastModifiedBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "parentReference": {

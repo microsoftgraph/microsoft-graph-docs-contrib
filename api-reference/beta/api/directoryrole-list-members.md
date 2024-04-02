@@ -4,7 +4,7 @@ description: "Retrieve a list of the users that are assigned to the directory ro
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ GET /directoryRoles(roleTemplateId='{roleTemplateId}')/members
 ```
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response. It returns a default of 1,000 objects and doesn't support pagination using `$top`.
 ## Request headers
 | Name       | Description|
 |:-----------|:------|
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ### Example 1: Get the members of a directory role using role id
 
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

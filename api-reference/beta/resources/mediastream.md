@@ -3,7 +3,7 @@ title: "mediaStream resource type"
 description: "Contains information about the media channel."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

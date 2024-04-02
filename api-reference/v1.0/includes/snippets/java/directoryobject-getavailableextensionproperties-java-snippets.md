@@ -4,14 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-graphClient.directoryObjects()
-	.getAvailableExtensionProperties(DirectoryObjectGetAvailableExtensionPropertiesParameterSet
-		.newBuilder()
-		.withIsSyncedFromOnPremises(null)
-		.build())
-	.buildRequest()
-	.post();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.directoryobjects.getavailableextensionproperties.GetAvailableExtensionPropertiesPostRequestBody getAvailableExtensionPropertiesPostRequestBody = new com.microsoft.graph.directoryobjects.getavailableextensionproperties.GetAvailableExtensionPropertiesPostRequestBody();
+var result = graphClient.directoryObjects().getAvailableExtensionProperties().post(getAvailableExtensionPropertiesPostRequestBody);
+
 
 ```

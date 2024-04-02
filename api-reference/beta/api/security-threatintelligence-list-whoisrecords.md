@@ -3,7 +3,7 @@ title: "List whoisRecords"
 description: "Get a list of whoisRecord objects."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -96,7 +96,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,6 +119,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/whoisRecords?$s
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-whoisrecord-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-whoisrecord-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

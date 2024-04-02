@@ -55,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,7 +67,7 @@ The following is an example of a request.
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/userSources
 
 {
-    "email": "admin@M365x809305.onmicrosoft.com",
+    "email": "admin@contoso.com",
     "includedSources": "mailbox, site"
 }
 ```
@@ -96,6 +96,10 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 [!INCLUDE [sample-code](../includes/snippets/php/create-usersource-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-usersource-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -121,14 +125,14 @@ Content-Type: application/json
     "createdDateTime": "0001-01-01T00:00:00Z",
     "holdStatus": "applied",
     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
-    "email": "admin@M365x809305.onmicrosoft.com",
+    "email": "admin@contoso.com",
     "includedSources": "mailbox,site",
     "siteWebUrl": "",
     "createdBy": {
         "user": {
             "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
             "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+            "userPrincipalName": "admin@contoso.com"
         },
         "application": {
             "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",

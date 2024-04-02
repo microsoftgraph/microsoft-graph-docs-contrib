@@ -4,7 +4,7 @@ description: "Delete a unifiedRoleDefinition object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -51,7 +51,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -100,7 +100,7 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

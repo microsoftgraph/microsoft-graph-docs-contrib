@@ -3,7 +3,7 @@ title: "privilegedAccessGroupEligibilitySchedule: filterByCurrentUser"
 description: "Retrieve schedules of membership and ownership eligibility requests for the calling principal."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ Note: this method requires either the principalId or groupId filter property.
 ### Example 1: Retrieve eligibility schedules for the calling principal
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

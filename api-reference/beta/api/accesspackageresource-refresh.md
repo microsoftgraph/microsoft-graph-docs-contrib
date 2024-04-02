@@ -3,7 +3,7 @@ title: "accessPackageResource: refresh"
 description: "Refresh an accessPackageResource object from an origin system."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), refresh the [accessPackageResource](../resources/accesspackageresource.md) object to fetch the latest details for **displayName**, **description**, and **resourceType** from the origin system. For the `AadApplication` originSystem, this operation also updates the **displayName** and **description** for the [accessPackageResourceRole](../resources/accesspackageresourcerole.md). 
 
 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -48,7 +50,7 @@ If successful, this action returns a `200 OK` response code and no object in the
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -4,7 +4,7 @@ description: "Represents the identity of a channel in Microsoft Teams."
 author: "Kanaka"
 doc_type: resourcePageType
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 ---
 # channelIdentity resource type
 
