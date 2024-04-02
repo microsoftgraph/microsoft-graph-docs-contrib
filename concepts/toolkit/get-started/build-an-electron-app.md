@@ -69,7 +69,7 @@ To create the app in Microsoft Entra ID:
 
 ### Initialize a ContextBridge in your preload script
 
-Since Electron v12 context isolation is enabled by default and it's a recommended security setting for all applications. With context isolation developers must explicitly expose APIs from their main process for use in the renderer process via a ContextBridge. For more information, see the Electron docs: [https://www.electronjs.org/docs/latest/tutorial/context-isolation](https://www.electronjs.org/docs/latest/tutorial/context-isolation)
+Since Electron v12, context isolation is enabled by default and it's a recommended security setting for all applications. With context isolation developers must explicitly expose APIs from their main process for use in the renderer process via a ContextBridge. For more information, see the Electron docs: [https://www.electronjs.org/docs/latest/tutorial/context-isolation](https://www.electronjs.org/docs/latest/tutorial/context-isolation)
 
 Open the _src/preload.ts_ file and add the following code:
 
