@@ -15,7 +15,6 @@ Namespace: microsoft.graph.identityGovernance
 
 Defines the group that is the scope of a lifecycle workflow [membershipChangeTrigger](../resources/identitygovernance-membershipchangetrigger.md) configuration.
 
-
 Inherits from [microsoft.graph.subjectSet](../resources/subjectset.md).
 
 ## Properties
