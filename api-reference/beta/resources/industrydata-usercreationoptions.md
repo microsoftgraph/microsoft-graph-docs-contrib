@@ -19,7 +19,7 @@ The different management choices for the users to be provisioned
 
 | Property       | Type                                                                                                        | Description                                                      |
 | :------------- | :---------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
-| configurations | [microsoft.graph.industryData.userConfiguration](../resources/industrydata-userconfiguration.md) collection | The different management choices for the users to be provisioned |
+| configurations | [microsoft.graph.industryData.userConfiguration](../resources/industrydata-userconfiguration.md) collection | The different management choices for the users to be provisioned. |
 
 ## Relationships
 
