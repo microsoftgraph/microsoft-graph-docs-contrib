@@ -1,6 +1,6 @@
 ---
 title: "plannerApprovalRequirement resource type"
-description: "The **plannerApprovalRequirement** resource represents approval completion requirement on a plannerTask."
+description: "Represents whether there is an approval completion requirement must be created for a plannerTask."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerApprovalRequirement** resource represents approval completion requirement on a [plannerTask](plannertask.md).
+Represents whether there is an approval completion requirement must be created for a [plannerTask](plannertask.md).
 
 ## Properties
 |Property|Type|Description|

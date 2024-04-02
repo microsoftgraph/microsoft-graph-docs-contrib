@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerBaseApprovalAttachment** resource represents the base approval attachment that is added to a [plannerTask](plannertask.md), which contains the common properties that are required for an approval. 
+Represents the base approval attachment, which contains the common properties that are required for an approval, that is added to a [plannerTask](plannertask.md). 
 While the derived types, such as [plannerBasicApprovalAttachment](plannerbasicapprovalattachment.md), have details corresponding to the type of approval.
 This type is abstract.
 
