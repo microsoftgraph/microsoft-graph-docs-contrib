@@ -49,7 +49,6 @@ The following are current known limitations:
 - An application is limited to 25 concurrent operations on a connection.
 - Connections have a capacity limit of 5,000,000 items or ~350 GB of data.
 - Maximum size of an **externalItem** entity is 4 MB.
-- Sorting results is not supported.
 
 ## Next steps
 
