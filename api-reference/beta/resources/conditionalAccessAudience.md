@@ -25,7 +25,7 @@ Indicates information about the audience during conditional access sign-ins
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.conditionalAccessAudience"
