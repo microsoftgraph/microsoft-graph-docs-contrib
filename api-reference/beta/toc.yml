@@ -17606,12 +17606,12 @@ items:
                 href: api/listitem-createlink.md
               - name: Get activities by interval
                 href: api/itemactivity-getbyinterval.md
+              - name: Get delta
+                href: api/listitem-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
               - name: List versions
                 href: api/listitem-list-versions.md
-              - name: Get delta
-                href: api/listitem-delta.md
           - name: Document set version
             items:
               - name: Document set version
