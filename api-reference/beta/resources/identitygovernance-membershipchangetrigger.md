@@ -13,14 +13,14 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type that defines what change happens to a user's group membership that will trigger the execution conditions of a workflow.
+This is an abstract type that defines what change happens to a user's group membership that triggers the execution conditions of a workflow.
 
 Inherits from [microsoft.graph.identityGovernance.workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|changeType|microsoft.graph.identityGovernance.membershipChangeType|Defines what change that happens to the workflow group to trigger the [workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md).The possible values are: `add`, `remove`, `unknownFutureValue`.|
+|changeType|microsoft.graph.identityGovernance.membershipChangeType|Defines what change that happens to the workflow group to trigger the [workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md). Possible values are: `add`, `remove`, `unknownFutureValue`.|
 
 ## Relationships
 None.
