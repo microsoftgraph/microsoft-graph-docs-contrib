@@ -33,7 +33,6 @@ This section describes implementation differences in the Microsoft Graph for US 
 |[Get chat](/graph/api/chat-get)| Chats with meetings associated with them are not supported in application context in the GCC High and DOD environments. |
 |[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported. |
 | **Meeting recordings**            |                                                          |
-|[List recordings](/graph/api/onlinemeeting-list-recordings) | Not supported. |
 |[Get recording](/graph/api/callrecording-get) | Not supported. |
 |[Get delta by organizer](/graph/api/callrecording-delta) | Not supported. |
 |[List recordings by organizer](/graph/api/onlinemeeting-getallrecordings) | Not supported. |
