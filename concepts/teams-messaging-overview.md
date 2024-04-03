@@ -161,7 +161,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
     - alt - An alternate representation for the emoji; for example, Unicode.
     - title - A title for the emoji.
 
-#### Example: A message that @mentions a team
+**Example: A message that @mentions a team**
 
 ```json
     "body": {
@@ -187,7 +187,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
     ],
 ```
 
-#### Example: A message with an attachment
+**Example: A message with an attachment**
 
 ```json
     "body": {
@@ -206,7 +206,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
     ],
 ```
 
-#### Example: A message with a system event
+**Example: A message with a system event**
 
 ```json
     "body": {
@@ -240,7 +240,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
     }
 ```
 
-#### Example: A message with an emoji
+**Example: A message with an emoji**
 
 ```json
 {
@@ -486,7 +486,7 @@ The **lastModifiedDateTime** property represents the timestamp when the message 
 
 The **mentions** property represents users, applications (bots, webhooks), channels, teams, or tags that are @mentioned.
 
-#### Example: A message that @mentions another user
+**Example: A message that @mentions another user**
 
 ```json
     "body": {
@@ -512,7 +512,7 @@ The **mentions** property represents users, applications (bots, webhooks), chann
     ],
 ```
 
-#### Example: A message that @mentions a bot
+**Example: A message that @mentions a bot**
 
 ```json
     "body": {
@@ -538,7 +538,7 @@ The **mentions** property represents users, applications (bots, webhooks), chann
     ],
 ```
 
-#### Example: A message that @mentions a team
+**Example: A message that @mentions a team**
 
 ```json
     "body": {
