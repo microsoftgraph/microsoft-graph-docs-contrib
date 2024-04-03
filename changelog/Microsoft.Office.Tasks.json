@@ -1925,7 +1925,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "formsRequirement",
           "ChangeType": "Addition",
-          "Description": "Added the `formsRequirement` property to the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCompletionRequirementDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **formsRequirement** property to the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCompletionRequirementDetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskCompletionRequirementDetails"
         },
         {
@@ -1933,7 +1933,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "forms",
           "ChangeType": "Addition",
-          "Description": "Added the `forms` property to the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource.",
+          "Description": "Added the **forms** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource.",
           "Target": "plannerTaskPropertyRule"
         },
         {
@@ -1941,14 +1941,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "forms",
           "ChangeType": "Addition",
-          "Description": "Added the `forms` property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **forms** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         }
       ],
       "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-12-06T12:10:19.8563344Z",
+      "CreatedDateTime": "2024-04-03T12:10:19.8563344Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     }
