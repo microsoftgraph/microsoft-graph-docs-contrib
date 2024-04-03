@@ -56,7 +56,8 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 ## Response
 
-If successful, this method returns a 200 OK or a 202 Accepted response code.  [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body incase of 200 OK.
+If successful, this method returns either a `200 OK` or a `202 Accepted` response code. The response body contains a 
+ [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object when the response is `200 OK`.
 
 ### Response headers
 |Name|Description|
