@@ -8,4 +8,4 @@ ms.localizationpriority: medium
 | :------------------------------------- | :-------------------------------------- | :---------------------------- |
 | Delegated (work or school account)     | IndustryData-OutboundFlow.ReadWrite.All |                               |
 | Delegated (personal Microsoft account) | Not supported.                          | Not supported.                |
-| Application                            | IndustryData-OutboundFlow.ReadWrite.All |                               |
+| Application                            | IndustryData-OutboundFlow.ReadWrite.All | Not available.                               |
