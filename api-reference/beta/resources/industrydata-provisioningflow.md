@@ -20,8 +20,8 @@ This is an abstract type.
 
 | Method                                                                                                     | Return type                                                                                               | Description                                                                                                                                       |
 | :--------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [List provisioningFlow objects](../api/industrydata-outboundprovisioningflowset-list-provisioningflows.md). | [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md) collection | Get a list of the [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md) objects and their properties.    |
-| [Create provisioningFlow](../api/industrydata-outboundprovisioningflowset-post-provisioningflows.md).       | [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md)            | Create a new [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md) object.                               |
+| [List provisioningFlow objects](../api/industrydata-outboundprovisioningflowset-list-provisioningflows.md) | [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md) collection | Get a list of the provisioningflow objects and their properties.    |
+| [Create provisioningFlow](../api/industrydata-outboundprovisioningflowset-post-provisioningflows.md)       | [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md)            | Create a new provisioningflow object.                               |
 
 ## Properties
 
