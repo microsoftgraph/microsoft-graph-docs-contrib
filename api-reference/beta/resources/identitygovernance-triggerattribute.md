@@ -18,7 +18,7 @@ An abstract type that defines the trigger attribute that is changed to trigger a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The name of the trigger attribute that is changed to trigger a [attributeChangeTrigger](../resources/identitygovernance-attributechangetrigger.md) workflow.|
+|name|String|The name of the trigger attribute that is changed to trigger an [attributeChangeTrigger](../resources/identitygovernance-attributechangetrigger.md) workflow.|
 
 ## Relationships
 None.
