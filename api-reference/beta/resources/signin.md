@@ -55,7 +55,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |deviceDetail|[deviceDetail](devicedetail.md)|The device information from where the sign-in occurred. Includes information such as deviceId, OS, and browser. <br/><br/> Supports `$filter` (`eq`, `startsWith`) on **browser** and **operatingSystem** properties.|
 |federatedCredentialId|String|Contains the identifier of an application's federated identity credential, if a federated identity credential was used to sign in.|
 |flaggedForReview|Boolean|During a failed sign-in, a user can select a button in the Azure portal to mark the failed event for tenant admins. If a user selects the button to flag the failed sign-in, this value is `true`.|
-|globalSecureAccessIpAddress|String|Global secure IP address that the sign-in was initiated from.|
+|globalSecureAccessIpAddress|String|The Global Secure Access IP address that the sign-in was initiated from.|
 |homeTenantId|String|The tenant identifier of the user initiating the sign-in. Not applicable in Managed Identity or service principal sign ins.|
 |homeTenantName|String|For user sign ins, the identifier of the tenant that the user is a member of. Only populated in cases where the home tenant has provided affirmative consent to Microsoft Entra ID to show the tenant content.|
 |id|String|The identifier representing the sign-in activity. Inherited from [entity](entity.md). <br/><br/> Supports `$filter` (`eq`).|
