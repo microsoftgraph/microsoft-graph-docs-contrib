@@ -16,6 +16,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## April 2024: New and generally available
+
+### Sites and lists
+
+- [Track changes for SharePoint site](/graph/api/site-delta) resources.
+- [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
+
 ## March 2024: New and generally available
 
 ### Applications
@@ -47,10 +54,6 @@ The organization entity now returns the `CIAM` **tenantType** to identify tenant
 
 Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export) API to access billed invoice reconciliation data.
 
-### Sites and lists
-
-[Track changes for SharePoint site](/graph/api/site-delta) resources.
-
 ## March 2024: New in preview only
 
 ### Security | Attack simulation and training
@@ -77,6 +80,8 @@ Deprecated the following properties:
 - **type** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **connectionType** property instead.
 - **healthCheckStatusDetails** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true); use the **healthCheckStatusDetail** property instead.
 - **additionalDetails** property on [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true); use the **additionalDetail** property instead.
+- **domainJoinConfiguration** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) in favor of the **domainJoinConfigurations** property.
+- **onPremisesConnectionId** property on [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) in favor of the **domainJoinConfigurations** property.
 
 ### Device and app management | Device updates
 

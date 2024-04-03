@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories
+GET /security/labels/categories/{categoryTemplateId}/subCategories
 ```
 
 ## Optional query parameters
@@ -56,7 +56,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories
+GET https://graph.microsoft.com/beta/security/labels/categories/{categoryTemplateId}/subCategories
 ```
 
 # [JavaScript](#tab/javascript)
@@ -83,11 +83,14 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
       "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
-      "displayName": "String",
+      "displayName": "Vendor Invoice",
       "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Admin"
+        }
       },
-      "createdDateTime": "String (timestamp)"
+      "createdDateTime": "2021-03-24T02:09:08Z"
     }
   ]
 }
