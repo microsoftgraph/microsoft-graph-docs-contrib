@@ -36,9 +36,9 @@ GET /tenantRelationships/managedTenants/tenantsCustomizedInformation
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top`.
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Name          | Description                                                                                               |
+| :------------ | :-------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 
 ## Request body
 Don't supply a request body for this method.
@@ -126,17 +126,18 @@ Content-Type: application/json
           "phone": "5558009732"
         }
       ],
-      "businessRelationship": "String",
+      "businessRelationship": "Managed",
       "complianceRequirements": [
-        "String"
+        "NIST",
+        "HIPPA"
       ],
       "managedServicesPlans": [
-        "String"
+        "Microsoft Entra ID P1"
       ],
-      "note": "String",
-      "noteLastModifiedDateTime": "String (timestamp)",
+      "note": "This is a test note.",
+      "noteLastModifiedDateTime": "2024-04-03 00:10:21.1989208",
       "partnerRelationshipManagerUserIds": [
-        "String"
+        "3c23994c-711b-46f6-ab1e-0aeef19413f3"
       ]
     },
     {
@@ -155,17 +156,17 @@ Content-Type: application/json
           "phone": "5558001379"
         }
       ],
-      "businessRelationship": "String",
+      "businessRelationship": "Managed",
       "complianceRequirements": [
-        "String"
+        "CMMC"
       ],
       "managedServicesPlans": [
-        "String"
+        "Microsoft 365 Business Premium"
       ],
-      "note": "String",
-      "noteLastModifiedDateTime": "String (timestamp)",
+      "note": "This is another test note",
+      "noteLastModifiedDateTime": "2024-04-01 18:15:23.00",
       "partnerRelationshipManagerUserIds": [
-        "String"
+        "8c6881ca-8968-4650-adeb-6ec34180098c"
       ]
     }
   ]
