@@ -65,7 +65,7 @@ If successful, this method returns a 200 OK or a 202 Accepted response code.  [d
 |Location|The location of the long-running operation.|
 |Retry-After|The time after which a subsequent API call can be made to the Location URL to check the status of the long-running operation.|
 
-This method typically returns a `202 Accepted` response code with a URL to a long-running operation in the **Location** response header that can be monitored for completion. If the values specified in the call are identical to the values in the existing object, the API returns a `200 OK` response code with the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
+This method typically returns a `202 Accepted` response code with a URL to a long-running operation in the **Location** response header. You can monitor this URL to see when the operation completes. If you supply values that are identical to the onesin the existing object, the API returns a `200 OK` response code with the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
 
 ## Examples
 
