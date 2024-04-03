@@ -3228,3 +3228,15 @@ Possible values for user account types (group membership), per Windows definitio
 | assigned           |
 | unknownFutureValue |
 | inactive           |
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
+|unknownFutureValue|
