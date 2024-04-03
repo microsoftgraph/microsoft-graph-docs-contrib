@@ -5,6 +5,7 @@ author: "anandjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.topic: reference
 ---
 
 # Add member to a chat

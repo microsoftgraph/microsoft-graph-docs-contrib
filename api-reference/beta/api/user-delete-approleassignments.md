@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "users"
 author: "psignoret"
+ms.topic: reference
 ---
 
 # Delete appRoleAssignment

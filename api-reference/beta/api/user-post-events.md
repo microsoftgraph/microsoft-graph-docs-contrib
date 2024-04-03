@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "iamgirishck"
 ms.subservice: "outlook"
+ms.topic: reference
 ---
 
 # Create event
