@@ -3,7 +3,7 @@ title: "Overview of Lifecycle Workflows APIs"
 description: "Use Lifecycle Workflows to manage the lifecycle of users in your organization."
 ms.localizationpriority: medium
 author: "AlexFilipin"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 03/12/2024
 ---
@@ -16,7 +16,7 @@ Lifecycle Workflows is an Identity Governance service in Microsoft Entra ID that
 2. **Mover**: When an individual moves between boundaries within an organization; for example, a user who was in marketing is now a member of the sales organization. This movement might require more access or authorization, or revocation of other privileges.
 3. **Leaver**: When an individual leaves the scope of needing access, access might need to be revoked, and the user deprovisioned. For example, an employee who is retiring or has been terminated.
 
-For this reason, Lifecycle Workflows can be referred to as the **Joiner-Mover-Leaver** (JML) workflow. Only the *joiner* and *leaver* processes are currently implemented.
+For this reason, Lifecycle Workflows can be referred to as the **Joiner-Mover-Leaver** (JML) workflow.
 
 The lifecycle workflows APIs in Microsoft Graph allow you to automate the Lifecycle Workflows capabilities for your organization. This article introduced the set of APIs that enable the Lifecycle Workflows service in Microsoft Entra ID.
 
@@ -82,8 +82,8 @@ When creating or updating a workflow, use the [workflowExecutionConditions resou
 
 After identifying the tasks and execution conditions that you want to define for your workflow, use the [workflow resource type](identitygovernance-workflow.md), and its associated methods to create and manage the workflow. You can create up to 50 workflows in a tenant. The category of the task must match the category of the workflow. Each workflow can have up to 25 tasks. Therefore:
 
-+ A task supported for only the "leaver" workflow category can't be specified in a "joiner" workflow scenario, and vice versa.
-+ A task supported for both "leaver" and "joiner" workflow categories can be specified in either a "joiner" or "leaver" workflow scenario.
++ A task supported for only the "leaver" workflow category can't be specified in a "joiner" or "mover" workflow scenario, and vice versa.
++ A task supported for both "joiner", "mover", and "leaver" workflow categories can be specified in either a "joiner", "mover" or "leaver" workflow scenario.
 
 You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. The tenant schedule can take care of regular new hires and terminations, while you can run a workflow on-demand to immediately terminate an employee's access if there was a sensitive event.
 

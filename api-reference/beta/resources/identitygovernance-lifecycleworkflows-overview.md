@@ -3,7 +3,7 @@ title: "Overview of Lifecycle Workflows APIs"
 description: "Use Lifecycle Workflows to manage the lifecycle of users in your organization."
 ms.localizationpriority: medium
 author: "AlexFilipin"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 03/12/2024
 ---
