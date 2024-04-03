@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status** which are not long-running operations. Upddate of Entra Role is allowed in active, which is a long running operation.
+Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status**, which are not long-running operations. You can update the Entra Role when the value is `active`, which indicates a long running operation.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
