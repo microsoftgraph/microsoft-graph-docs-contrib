@@ -25,8 +25,7 @@ If you're creating a private channel, you can add a maximum of 200 members.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-> [!NOTE]
-> This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
