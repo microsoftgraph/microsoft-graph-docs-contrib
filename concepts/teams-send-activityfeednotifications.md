@@ -911,7 +911,7 @@ Users can click **Edit** next to an app and customize the notifications, as show
 
 ## Step-by-step guide
 
-Follow the [step-by-step guide](../sbs-graphactivity-feedbroadcast.yml) to send activity feed notifications in Teams.
+Follow the [step-by-step guide](/microsoftteams/platform/sbs-graphactivity-feedbroadcast) to send activity feed notifications in Teams.
 
 ## FAQs
 
