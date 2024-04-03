@@ -677,7 +677,7 @@ The messaging APIs in Microsoft Graph fall into three:
 
 ### Teams UI-aligned APIs
 
-APIs that align to the Teams UI work in a similar way to how the Teams UI works. These APIs are built to for _once in a while_ syncs to get messages in a specific context. These APIs are highly performant and any changes (messages sent, edited, or deleted) are immediately visible.
+APIs that align to the Teams UI work in a similar way to how the Teams UI works. These APIs are built for _once in a while_ syncs to get messages in a specific context. These APIs are highly performant and any changes (messages sent, edited, or deleted) are immediately visible.
 
 The following are Teams UI-aligned APIs:
 
