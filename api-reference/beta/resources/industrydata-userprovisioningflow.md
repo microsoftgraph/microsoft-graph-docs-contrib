@@ -25,9 +25,9 @@ Inherits from [microsoft.graph.industryData.provisioningFlow](industrydata-provi
 
 | Method                                                                                | Return type                                                                                                       | Description                                                                                                                                               |
 | :------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Get userProvisioningFlow](../api/industrydata-userprovisioningflow-get.md)          | [microsoft.graph.industryData.userProvisioningFlow](industrydata-userprovisioningflow.md)            | Read the properties and relationships of an userprovisioningflow object. |
-| [Update userProvisioningFlow](../api/industrydata-userprovisioningflow-update.md)   | [microsoft.graph.industryData.userProvisioningFlow](industrydata-userprovisioningflow.md)            | Update the properties of an userprovisioningflow object.                 |
-| [Delete userProvisioningFlow](../api/industrydata-userprovisioningflow-delete.md)   | None                                                                                                              | Delete an userprovisioningflow object.                                   |
+| [Get userProvisioningFlow](../api/industrydata-userprovisioningflow-get.md)          | [microsoft.graph.industryData.userProvisioningFlow](industrydata-userprovisioningflow.md)            | Read the properties and relationships of a userprovisioningflow object. |
+| [Update userProvisioningFlow](../api/industrydata-userprovisioningflow-update.md)   | [microsoft.graph.industryData.userProvisioningFlow](industrydata-userprovisioningflow.md)            | Update the properties of a userprovisioningflow object.                 |
+| [Delete userProvisioningFlow](../api/industrydata-userprovisioningflow-delete.md)   | None                                                                                                              | Delete a userprovisioningflow object.                                   |
 
 ## Properties
 
