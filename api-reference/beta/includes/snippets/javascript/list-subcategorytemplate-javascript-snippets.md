@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let subCategories = await client.api('/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories')
+let subcategories = await client.api('/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories')
 	.version('beta')
 	.get();
 
