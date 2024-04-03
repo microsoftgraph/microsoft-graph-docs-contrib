@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
+Supports CRUD operations to apply and manage the [authority](security-authority.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **authority** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
@@ -28,10 +28,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the authority. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the authority is created. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|displayName|String|Unique string that defines an authority name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|id|String|Unique ID of the authority. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the authority descriptor. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only. |
+|createdDateTime|DateTimeOffset|Represents the date and time in which the authority descriptor is created. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
+|displayName|String|Unique string that defines an authority name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
+|id|String|Unique ID of the authority. Inherited from [microsoft.graph.entity](../resources/entity.md). Read-only.|
 
 ## Relationships
 None.
