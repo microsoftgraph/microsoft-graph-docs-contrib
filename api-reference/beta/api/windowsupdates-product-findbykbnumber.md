@@ -3,7 +3,7 @@ title: "product: findByKbNumber"
 description: "Find the product revisions associated with a knowledge base number and the known issues directly or indirectly related to the knowledge base number."
 author: "skandula"
 ms.localizationpriority: medium
-ms.service: "windows-update-business"
+ms.subservice: "windows-update-business"
 doc_type: apiPageType
 ---
 

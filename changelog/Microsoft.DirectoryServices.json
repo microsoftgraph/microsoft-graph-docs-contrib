@@ -2,6 +2,48 @@
   "changelog": [
     {
       "ChangeList": [
+      {
+        "Id": "77c6af58-c093-4350-8664-d2ee116fb949",
+        "ApiChange": "Enumeration",
+        "ChangedApiName": "b2bIdentityProvidersType",
+        "ChangeType": "Addition",
+        "Description": "Added the **b2bIdentityProvidersType** enumeration type.",
+        "Target": "b2bIdentityProvidersType"
+      },
+      {
+        "Id": "77c6af58-c093-4350-8664-d2ee116fb949",
+        "ApiChange": "Resource",
+        "ChangedApiName": "defaultInvitationRedemptionIdentityProviderConfiguration",
+        "ChangeType": "Addition",
+        "Description": "Added the [defaultInvitationRedemptionIdentityProviderConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/defaultInvitationRedemptionIdentityProviderConfiguration?view=graph-rest-1.0) resource type.",
+        "Target": "defaultInvitationRedemptionIdentityProviderConfiguration"
+      },
+      {
+        "Id": "77c6af58-c093-4350-8664-d2ee116fb949",
+        "ApiChange": "Resource",
+        "ChangedApiName": "invitationRedemptionIdentityProviderConfiguration",
+        "ChangeType": "Addition",
+        "Description": "Added the [invitationRedemptionIdentityProviderConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/invitationRedemptionIdentityProviderConfiguration?view=graph-rest-1.0) resource type.",
+        "Target": "invitationRedemptionIdentityProviderConfiguration"
+      },
+      {
+        "Id": "77c6af58-c093-4350-8664-d2ee116fb949",
+        "ApiChange": "Property",
+        "ChangedApiName": "invitationRedemptionIdentityProviderConfiguration",
+        "ChangeType": "Addition",
+        "Description": "Added the `invitationRedemptionIdentityProviderConfiguration` property to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyConfigurationDefault?view=graph-rest-1.0) resource.",
+        "Target": "crossTenantAccessPolicyConfigurationDefault"
+      }
+    ],
+    "Id": "77c6af58-c093-4350-8664-d2ee116fb949",
+    "Cloud": "Prod",
+    "Version": "v1.0",
+    "CreatedDateTime": "2024-04-02T16:45:20.304139Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "b1aeb18c-7b04-4232-98a2-8b1cb3afb6d9",
           "ApiChange": "Property",
