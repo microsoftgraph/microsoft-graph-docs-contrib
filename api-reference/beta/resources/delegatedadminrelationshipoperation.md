@@ -28,7 +28,7 @@ Represents a long-running operation related to a delegated admin relationship. A
 |data|String|The data (payload) for the operation. Read-only.|
 |id|String|The unique identifier of the delegated admin long-running operation. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The time in ISO 8601 format and in UTC time when the long-running operation was last modified. Read-only.|
-|operationType|delegatedAdminRelationshipOperationType|The type of long-running operation. The possible values are: `delegatedAdminAccessAssignmentUpdate`, `unknownFutureValue`,`delegatedAdminRelationshipUpdate`. Read-only.|
+|operationType|delegatedAdminRelationshipOperationType|The type of long-running operation. The possible values are: `delegatedAdminAccessAssignmentUpdate`, `unknownFutureValue`,`delegatedAdminRelationshipUpdate`. Read-only. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)|
 |status|longRunningOperationStatus|The status of the operation. Read-only. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`. Read-only. Supports `$orderby`.|
 
 ## Relationships
