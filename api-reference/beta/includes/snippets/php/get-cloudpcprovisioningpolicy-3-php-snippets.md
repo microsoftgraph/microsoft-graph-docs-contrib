@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new CloudPcProvisioningPolicyItemRequestBuilderGetRequestConfiguration();
 $queryParameters = CloudPcProvisioningPolicyItemRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["id","description","displayName","domainJoinConfiguration","imageDisplayName","imageId","imageType","onPremisesConnectionId","windowsSetting","managedBy","cloudPcGroupDisplayName","gracePeriodInHours","localAdminEnabled","alternateResourceUrl"];
+$queryParameters->select = ["id","description","displayName","domainJoinConfigurations","imageDisplayName","imageId","imageType","windowsSetting","managedBy","cloudPcGroupDisplayName","gracePeriodInHours","localAdminEnabled","alternateResourceUrl"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
