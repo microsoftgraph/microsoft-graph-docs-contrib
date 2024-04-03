@@ -1,5 +1,40 @@
 {
   "changelog": [
+
+    {
+      "ChangeList": [
+        {
+          "Id": "774e26ef-ae3c-40c9-8956-f009666137ea",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDependency",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDependency** property to the [mobileAppContentFile](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileAppContentFile?view=graph-rest-1.0) resource.",
+          "Target": "mobileAppContentFile"
+        },
+        {
+          "Id": "cd37ba9d-4809-4560-9203-36168d4760cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCode** property to the [resetPasscodeActionResult](https://learn.microsoft.com/en-us/graph/api/resources/intune-resetPasscodeActionResult?view=graph-rest-1.0) resource.",
+          "Target": "resetPasscodeActionResult"
+        },
+        {
+          "Id": "cd37ba9d-4809-4560-9203-36168d4760cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentProfileName",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentProfileName** property to the [managedDevice](https://learn.microsoft.com/en-us/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Target": "managedDevice"
+        }
+      ],
+      "Id": "cd37ba9d-4809-4560-9203-36168d4760cc",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-02T18:23:20.9946476Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },  
     {
       "ChangeList": [
         {
