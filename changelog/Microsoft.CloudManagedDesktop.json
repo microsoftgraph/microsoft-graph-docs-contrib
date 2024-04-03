@@ -4877,6 +4877,40 @@
           "CreatedDateTime": "2024-04-01T06:58:17.7596296Z",
           "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
-        }
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "27ce80fa-f3e3-45f0-ae3f-1dcba1aed7ce",
+                "ApiChange": "Member",
+                "ChangedApiName": "shared",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecated the **shared** member to the **cloudPcProvisioningType** enumeration. The **shared** member is deprecated and will stop returning data on April 30, 2027. Going forward, use the **sharedbyuser** member.",
+                "Target": "cloudPcProvisioningType"
+              },
+              {
+                "Id": "27ce80fa-f3e3-45f0-ae3f-1dcba1aed7ce",
+                "ApiChange": "Member",
+                "ChangedApiName": "sharedbyuser",
+                "ChangeType": "Addition",
+                "Description": "Added the `sharedbyuser` member to the **cloudPcProvisioningType ** enumeration.",
+                "Target": "cloudPcProvisioningType"
+            },
+            {
+                "Id": "27ce80fa-f3e3-45f0-ae3f-1dcba1aed7ce",
+                "ApiChange": "Member",
+                "ChangedApiName": "sharedbyEntraGroup ",
+                "ChangeType": "Addition",
+                "Description": "Added the `sharedbyEntraGroup` member to the **cloudPcProvisioningType ** enumeration.",
+                "Target": "cloudPcProvisioningType"
+            }
+            ],
+            "Id": "27ce80fa-f3e3-45f0-ae3f-1dcba1aed7ce",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-04-03T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+          }
     ]
 }
