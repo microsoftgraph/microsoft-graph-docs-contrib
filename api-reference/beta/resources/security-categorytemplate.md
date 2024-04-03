@@ -24,7 +24,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 |[Create categories](../api/security-labelsroot-post-categories.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Create a new [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
 |[Get categories](../api/security-categorytemplate-get.md)|[microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md)|Read the properties and relationships of a [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
 |[Delete categories](../api/security-labelsroot-delete-categories.md)|None|Delete a [microsoft.graph.security.categoryTemplate](../resources/security-categorytemplate.md) object.|
-|[List subcategories](../api/security-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) collection|Get the subcategoryTemplate resources from the subCategories navigation property.|
+|[List subcategories](../api/security-categorytemplate-list-subcategories.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) collection|Get the subcategoryTemplate resources from the subcategories navigation property.|
 |[Create subcategories](../api/security-categorytemplate-post-subcategories.md)|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md)|Create a new subcategoryTemplate object.|
 
 ## Properties

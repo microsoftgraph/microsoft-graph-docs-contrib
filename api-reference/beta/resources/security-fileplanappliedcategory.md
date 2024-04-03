@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.filePlanAppliedCategory",
   "displayName": "String",
   "subCategory": {
-    "@odata.type": "microsoft.graph.security.filePlanAppliedCategory"
+    "@odata.type": "microsoft.graph.security.filePlanSubcategory"
   }
 }
 ```
