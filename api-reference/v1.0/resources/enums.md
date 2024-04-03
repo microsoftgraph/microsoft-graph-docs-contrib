@@ -56,6 +56,15 @@ Namespace: microsoft.graph
 | serviceProvider        |
 | unknownFutureValue     |
 
+### migrationStatus values 
+
+|Member|
+|:---|
+|ready|
+|needsReview|
+|additionalStepsRequired|
+|unknownFutureValue|
+
 ### appCredentialRestrictionType values
 
 | Member               |
