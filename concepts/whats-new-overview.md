@@ -23,6 +23,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - [Track changes for SharePoint site](/graph/api/site-delta) resources.
 - [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
 
+### Industry data | Outbound provisioning flow set
+
+Debut of the [outbound provisioning flow set](/graph/api/resources/industrydata-outboundprovisioningflowset), which represents a collection of [outbound provisioning flows](/graph/api/resources/industrydata-provisioningflow) used to configure how school data sync populates data in Microsoft 365 and Microsoft Entra ID.
+
+Outbound provisioning flow set may contain no more than one of each provisioning flow configuration that is being configured: [userProvisioningFlow](/graph/api/resources/industrydata-userprovisioningflow), [classGroupProvisioingFlow](/graph/api/resources/industrydata-classgroupprovisioningflow), [securityGroupProvisioingFlow](/graph/api/resources/industrydata-securitygroupprovisioningflow), [administrativeUnitProvisioingFlow](/graph/api/resources/industrydata-administrativeunitprovisioningflow).
+
+When calling the [industry data ETL API](/graph/api/resources/industrydata-overview), take advantage of more granular permissions added for reading or writing outbound provisioning flow set data, by using the new permissions `IndustryData-OutboundFlow.Read.All` and `IndustryData-OutboundFlow.ReadWrite.All`.
+
 ## March 2024: New and generally available
 
 ### Applications
