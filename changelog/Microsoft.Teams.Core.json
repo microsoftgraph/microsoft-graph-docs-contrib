@@ -2811,6 +2811,48 @@
     {
       "ChangeList": [
         {
+          "Id": "35kjn2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Method",
+          "ChangedApiName": "archive",
+          "ChangeType": "Addition",
+          "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/channel-archive?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "35kjn2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Method",
+          "ChangedApiName": "unarchive",
+          "ChangeType": "Addition",
+          "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/channel-unarchive?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "35kjn2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAsyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Introduced new enum member `archiveChannel` to **teamsAsyncOperationType**.",
+          "Target": "teamsAsyncOperation"
+        },
+        {
+          "Id": "35kjn2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAsyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Introduced new enum member `unarchiveChannel` to **teamsAsyncOperationType**.",
+          "Target": "teamsAsyncOperation"
+        }
+      ],
+      "Id": "35kjn2i8-3b10-4cd3-u890-351a2d9fd678",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-28T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Resource",
           "ChangedApiName": "List channel messages,Get channel message,List replies to a message,Get a reply to a message",
