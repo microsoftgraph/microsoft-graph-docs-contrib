@@ -83,6 +83,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflowTemplates",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/workflowTemplates?$select=category,description",
