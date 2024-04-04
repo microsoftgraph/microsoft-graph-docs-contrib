@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "Add item to a bundle"
 description: "Add item to a bundle of driveItems."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 ### Request
 
-The following is an example of a request that adds an existing item to the specified bundle.
+The following example shows a request that adds an existing item to the specified bundle.
 
 
 # [HTTP](#tab/http)

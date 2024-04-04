@@ -3,7 +3,7 @@ title: "kubernetesPodEvidence resource type"
 description: "Represents a Kubernetes pod entity."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

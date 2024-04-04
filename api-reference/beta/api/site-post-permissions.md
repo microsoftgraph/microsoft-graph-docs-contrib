@@ -3,7 +3,7 @@ title: "Create permission"
 description: "Create a new permission object."
 author: "BarrySh"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a [permissi
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

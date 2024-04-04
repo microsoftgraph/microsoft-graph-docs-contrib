@@ -3,7 +3,7 @@ title: "Get OneNote content and structure by using the OneNote API"
 description: "Get OneNote content and structure by sending a GET request to the target endpoint. Then use query string options to filter your queries and improve performance."
 author: "jewan-microsoft"
 ms.localizationpriority: high
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ---
 
 # Get OneNote content and structure

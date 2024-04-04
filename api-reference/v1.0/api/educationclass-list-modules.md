@@ -3,7 +3,7 @@ title: "List class modules"
 description: "Retrieve a list of module objects."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

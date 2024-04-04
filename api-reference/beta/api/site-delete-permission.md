@@ -3,7 +3,7 @@ title: "Delete permission"
 description: "Delete a permission object on a site."
 author: "BarrySh"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +95,7 @@ DELETE https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

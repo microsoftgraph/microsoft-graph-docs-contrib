@@ -3,7 +3,7 @@ title: "itemRetentionLabel resource type"
 description: "Groups retention and compliance-related properties on an item into a single structure."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: resourcePageType
 ---
 

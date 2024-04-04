@@ -3,7 +3,7 @@ title: "agreementFile resource type"
 description: "Represents a customizable terms-of-use agreement file that a tenant manages with Microsoft Entra."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: AlexFilipin
 ---
 

@@ -3,7 +3,7 @@ title: "appRole resource type"
 description: "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 

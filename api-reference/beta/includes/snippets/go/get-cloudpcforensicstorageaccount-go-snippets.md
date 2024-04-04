@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 subscriptionId := "{subscriptionId}"
-getStorageAccounts, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().GetStorageAccountsWithSubscriptionId(&subscriptionId).Get(context.Background(), nil)
+getStorageAccounts, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().GetStorageAccountsWithSubscriptionId(&subscriptionId).GetAsGetStorageAccountsWithSubscriptionIdGetResponse(context.Background(), nil)
 
 
 ```

@@ -3,7 +3,7 @@ title: "servicePrincipal: deletePasswordSingleSignOnCredentials"
 description: "Delete single sign-on credentials using a password for a user or group."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -64,7 +64,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

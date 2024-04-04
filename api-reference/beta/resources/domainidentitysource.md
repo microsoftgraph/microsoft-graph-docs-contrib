@@ -3,7 +3,7 @@ title: "domainIdentitySource resource type"
 description: "The domainIdentitySource type identifies a nontenant domain as an identity source for a connected organization."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "Device management in Microsoft Intune"
 description: "Device management resources in Microsoft Intune"
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: conceptualPageType
 ---
 

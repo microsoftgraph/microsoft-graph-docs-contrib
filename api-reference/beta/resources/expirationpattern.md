@@ -3,7 +3,7 @@ title: "expirationPattern resource type"
 description: "The expiration pattern in a request schedule can be included in an access package assignment request and is present in an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "Get accessPackageSubject"
 description: "Gets the properties of an accessPackageSubject object."
 author: "aakanshanagwani"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/su
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

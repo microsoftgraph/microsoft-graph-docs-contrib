@@ -3,7 +3,7 @@ title: "crossTenantAccessPolicy resource type"
 description: "Cross-tenant access policy represents the base policy in the directory for cross-tenant access settings."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

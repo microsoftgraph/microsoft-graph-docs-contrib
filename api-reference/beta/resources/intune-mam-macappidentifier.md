@@ -3,7 +3,7 @@ title: "macAppIdentifier resource type"
 description: "The identifier for a Mac app."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

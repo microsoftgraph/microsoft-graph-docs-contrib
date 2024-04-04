@@ -3,7 +3,7 @@ title: "Get shiftsRoleDefinition"
 description: "Read the properties and relationships of a shiftsRoleDefinition object."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

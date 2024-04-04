@@ -3,7 +3,7 @@ title: "Delete printConnector"
 description: "Delete (unregister) a printConnector."
 author: "nilakhan"
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.subservice: "universal-print"
 doc_type: apiPageType
 ---
 
