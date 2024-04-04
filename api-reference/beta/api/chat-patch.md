@@ -5,6 +5,7 @@ author: "anandjo"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Update chat
@@ -24,7 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_patch" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-patch-permissions.md)]
 
-> **Note:**S The ChatSettings.ReadWrite.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChatSettings.ReadWrite.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

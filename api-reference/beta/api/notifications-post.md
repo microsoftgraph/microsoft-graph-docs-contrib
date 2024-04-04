@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "notifications"
 doc_type: apiPageType
 author: "merzink"
+ms.topic: reference
 ---
 
 # Create and send a notification

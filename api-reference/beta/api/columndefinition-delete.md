@@ -5,6 +5,7 @@ description: "Delete a column from a site, list, or content type."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.topic: reference
 ---
 
 # Delete columnDefinition

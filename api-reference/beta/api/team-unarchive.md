@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "nkramer"
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Unarchive team

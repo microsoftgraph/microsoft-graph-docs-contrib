@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "tariq-sharif"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # calendar: getSchedule

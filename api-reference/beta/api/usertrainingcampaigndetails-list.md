@@ -5,6 +5,7 @@ author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List trainingCampaignUsers
@@ -65,6 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_campaignusersdetails"
@@ -73,6 +75,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/f1b13829-3829-f1b1-2938-b1f12938b1a/report/campaignUsers
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-campaignusersdetails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

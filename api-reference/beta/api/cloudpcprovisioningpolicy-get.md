@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get cloudPcProvisioningPolicy
@@ -127,10 +128,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
     "description": "Description value",
     "displayName": "Display Name value",
-    "domainJoinConfiguration": {
-        "domainJoinType": "hybridAzureADJoin",
-        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
-    },
     "domainJoinConfigurations": [
       {
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
@@ -146,10 +143,6 @@ Content-Type: application/json
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
     "imageType": "custom",
-    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-    "windowsSettings": {
-      "language": "en-US"
-    },
     "windowsSetting": {
         "locale": "en-US"
     },
@@ -229,11 +222,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
     "description": "Description value",
     "displayName": "Display Name value",
-    "domainJoinConfiguration": {
-        "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-        "regionName": null,
-        "type": "hybridAzureADJoin"
-    },
     "domainJoinConfigurations": [
       {
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
@@ -249,10 +237,6 @@ Content-Type: application/json
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
     "imageType": "custom",
-    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-    "windowsSettings": {
-      "language": "en-US"
-    },
     "windowsSetting": {
         "locale": "en-US"
     },
@@ -288,7 +272,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSetting,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,domainJoinConfigurations,imageDisplayName,imageId,imageType,windowsSetting,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
 ```
 
 # [C#](#tab/csharp)
@@ -347,11 +331,6 @@ Content-Type: application/json
     "cloudPcGroupDisplayName": "MyCloudPcGroup",
     "description": "The ProvisioningPolicy for West US employees.",
     "displayName": "WestUsPolicy",
-    "domainJoinConfiguration": {
-        "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-        "regionName": null,
-        "type": "hybridAzureADJoin"
-    },
     "domainJoinConfigurations": [
       {
         "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
@@ -370,10 +349,6 @@ Content-Type: application/json
     "imageType": "custom",
     "localAdminEnabled": true,
     "managedBy": "windows365",
-    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-    "windowsSettings": {
-      "language": "en-US"
-    },
     "windowsSetting": {
         "locale": "en-US"
     },

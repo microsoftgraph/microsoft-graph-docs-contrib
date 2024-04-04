@@ -22,7 +22,7 @@ Indicates MFA details for a specific sign-in. It includes the authentication met
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

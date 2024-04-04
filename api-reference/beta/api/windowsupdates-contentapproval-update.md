@@ -5,6 +5,7 @@ author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.subservice: windows-update-business
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Update contentApproval

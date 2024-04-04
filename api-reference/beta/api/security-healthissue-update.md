@@ -5,6 +5,7 @@ author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.date: 03/20/2024
+ms.topic: reference
 ---
 
 # Update healthIssue
@@ -19,11 +20,8 @@ Update the properties of a [healthIssue](../resources/security-healthissue.md) o
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Least privileged permission|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|SecurityIdentitiesHealth.ReadWrite.All|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|SecurityIdentitiesHealth.ReadWrite.All|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_healthissue_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-healthissue-update-permissions.md)]
 
 ## HTTP request
 

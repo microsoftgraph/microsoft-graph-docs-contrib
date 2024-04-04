@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "jecha"
 ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # Get teamsAppIcon

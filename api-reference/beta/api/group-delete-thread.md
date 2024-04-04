@@ -5,6 +5,7 @@ author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Delete conversation thread

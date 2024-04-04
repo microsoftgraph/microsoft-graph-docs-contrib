@@ -5,6 +5,7 @@ description: "Get a collection of recycleBinItem resources in the recycleBin of 
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List items

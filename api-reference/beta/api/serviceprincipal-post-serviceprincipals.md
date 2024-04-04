@@ -5,6 +5,7 @@ author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
+ms.topic: reference
 ---
 
 # Create servicePrincipal
