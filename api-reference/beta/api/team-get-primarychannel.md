@@ -22,8 +22,7 @@ Get the default [channel](../resources/channel.md), **General**, of a [team](../
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-> [!NOTE] 
-> This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+This API supports admin permissions. Global admins can access groups that they aren't a member of.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
