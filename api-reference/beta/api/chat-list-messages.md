@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "RamjotSingh"
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List messages in a chat
@@ -30,7 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_list_messages" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-list-messages-permissions.md)]
 
-> **Note:** The ChatMessage.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChatMessage.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -51,7 +53,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | [$orderby](/graph/query-parameters#orderby-parameter)  | Currently supports the **lastModifiedDateTime** (default) and **createdDateTime** properties in descending order. The ascending order is currently not supported.|
 | [$filter](/graph/query-parameters#filter-parameter) | Sets the date range filter for the **lastModifiedDateTime** and **createdDateTime** properties. The **lastModifiedDateTime** property supports the `gt` and `lt` operators. The **createdDateTime** property supports the `lt` operator. You can only filter results if the request URL contains the `$orderby` and `$filter` query parameters configured for the same property; otherwise, the `$filter` query option is ignored.|
 
-The other [OData query parameters](/graph/query-parameters) are not currently supported.
+The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
 ## Request headers
 

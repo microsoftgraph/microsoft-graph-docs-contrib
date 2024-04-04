@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "nickgmicrosoft"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # identityApiConnector: uploadClientCertificate

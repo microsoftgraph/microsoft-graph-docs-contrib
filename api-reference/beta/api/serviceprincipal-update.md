@@ -5,6 +5,7 @@ author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
+ms.topic: reference
 ---
 
 # Update servicePrincipal

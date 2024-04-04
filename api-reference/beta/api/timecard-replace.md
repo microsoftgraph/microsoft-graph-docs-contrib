@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Replace timeCard
@@ -23,9 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Schedule.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All*  |
+|Application | Schedule.ReadWrite.All |
 
->\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
+> [!IMPORTANT]
+> When you use the Schedule.ReadWrite.All application permission, you must include the `MS-APP-ACTS-AS` header in the request.
 
 ## HTTP request
 

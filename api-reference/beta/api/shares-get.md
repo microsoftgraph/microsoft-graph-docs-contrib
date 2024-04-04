@@ -6,6 +6,7 @@ title: Access shared items
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: onedrive
+ms.topic: reference
 ---
 # Accessing shared DriveItems
 

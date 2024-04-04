@@ -5,6 +5,7 @@ author: sangle7
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Create webPart

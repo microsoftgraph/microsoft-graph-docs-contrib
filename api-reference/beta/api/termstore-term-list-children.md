@@ -5,6 +5,7 @@ author: mohitpcad
 ms.subservice: sharepoint
 ms.localizationpriority: medium
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List children

@@ -5,6 +5,7 @@ author: "jecha"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List operations on a chat
@@ -22,7 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_list_operations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-list-operations-permissions.md)]
 
-> **Note:** The ChatSettings.Read.Chat and ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChatSettings.Read.Chat and ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { 

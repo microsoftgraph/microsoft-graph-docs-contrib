@@ -5,6 +5,7 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.subservice: teams
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # chat: sendActivityNotification
@@ -22,7 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_sendactivitynotification" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-sendactivitynotification-permissions.md)]
 
->**Note:** The TeamsActivity.Send.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamsActivity.Send.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

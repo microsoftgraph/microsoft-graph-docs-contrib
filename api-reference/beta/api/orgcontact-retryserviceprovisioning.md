@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # orgContact: retryServiceProvisioning

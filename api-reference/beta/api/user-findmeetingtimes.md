@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # user: findMeetingTimes

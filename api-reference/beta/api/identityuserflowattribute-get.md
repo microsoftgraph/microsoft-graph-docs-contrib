@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
 ms.subservice: "entra-sign-in"
+ms.topic: reference
 ---
 
 # Get identityUserFlowAttribute
