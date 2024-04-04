@@ -23,7 +23,7 @@ jobs:
         pull_number: ${{ github.event.issue.number }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - uses: Azure/pipelines@v1.x
+    - uses: Azure/pipelines@v1.2
       with:
         azure-devops-project-url: https://dev.azure.com/microsoftgraph/Graph%20Developer%20Experiences
         azure-pipeline-name: 'On-demand TOC generation'
