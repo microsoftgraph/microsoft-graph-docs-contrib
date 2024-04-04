@@ -5,6 +5,7 @@ description: "Add item to a bundle of driveItems."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Add item to a bundle
