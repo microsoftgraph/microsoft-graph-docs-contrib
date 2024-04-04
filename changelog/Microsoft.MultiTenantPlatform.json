@@ -747,6 +747,24 @@
       "CreatedDateTime": "2023-08-10T18:00:00.684464Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "917d0827-7807-4f39-b1ee-e53981def050",
+          "ApiChange": "Property",
+          "ChangedApiName": "frontlineLicensesCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **frontlineLicensesCount** property to the [cloudPcOverview](https://learn.microsoft.com/en-us/graph/api/resources/managedTenants-cloudPcOverview?view=graph-rest-beta) resource.",
+          "Target": "cloudPcOverview"
+        }
+      ],
+      "Id": "917d0827-7807-4f39-b1ee-e53981def050",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-03T21:09:22.0957769Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Multi-tenant management"
     }
   ]
 }
