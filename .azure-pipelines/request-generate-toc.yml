@@ -15,10 +15,6 @@ resources:
     name: One/AD-AggregatorService-Workloads
     endpoint: MSAzure/One
 
-parameters:
-- name: toc_branch
-  type: string
-
 pool:
   vmImage: ubuntu-latest
 
@@ -38,7 +34,7 @@ stages:
   - job: GenerateTOC
     displayName: Generate reference TOC
     steps:
-    - script: echo Received request to build TOC for ${{ parameters.toc_branch }} branch.
+    - script: echo Received request to build TOC for $(toc_branch) branch.
 
 # - checkout: self
 #   displayName: Checkout docs repo
