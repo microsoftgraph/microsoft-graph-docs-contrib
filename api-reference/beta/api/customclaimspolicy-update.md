@@ -49,9 +49,9 @@ PATCH /policies/claimsPolicy
 
 |Property|Type|Description|
 |:---|:---|:---|
-|includeBasicClaimSet|Boolean|This property determines whether the basic claim set is included in tokens affected by this policy. If set to True, all claims in the basic claim set are emitted in tokens affected by the policy. By default the basic claim set aren't in the tokens, unless they'e explicitly configured in this policy. Optional.|
-|includeApplicationIdInIssuer|Boolean|If set to true then the application id is added to the Issuer claim. Relevant only for SAML2.0 and if custom signing key is used. Optional.|
-|audienceOverride|String|If specified overrides the content of the Audience claim for WS-Federation and SAML2 protocols. A custom signing key must be used for audienceOverride to be applied, otherwise audienceOverride value is ignored. The value provided must be in the format of an absolute URI. Optional.|
+|includeBasicClaimSet|Boolean|This property determines whether the basic claim set is included in tokens affected by this policy. If set to `true`, all claims in the basic claim set are emitted in tokens affected by the policy. By default the basic claim set isn't in the tokens, unless they're explicitly configured in this policy. Optional.|
+|includeApplicationIdInIssuer|Boolean|If set to `true`, the application ID is added to the issuer claim. It is relevant only for SAML2.0 and if a custom signing key is used. Optional.|
+|audienceOverride|String|If specified, it overrides the content of the audience claim for WS-Federation and SAML2 protocols. A custom signing key must be used for audienceOverride to be applied, otherwise audienceOverride value is ignored. The value provided must be in the format of an absolute URI. Optional.|
 
 ## Response
 
