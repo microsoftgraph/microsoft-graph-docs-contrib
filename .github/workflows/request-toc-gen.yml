@@ -23,6 +23,6 @@ jobs:
         pull_number: ${{ github.event.issue.number }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - run: "echo latest release: '$TOC_GEN_BRANCH'"
+    - run: "echo latest release: $TOC_GEN_BRANCH"
       env:
         TOC_GEN_BRANCH: ${{ fromJson(steps.get_pull_request.outputs.data).head.ref }}
