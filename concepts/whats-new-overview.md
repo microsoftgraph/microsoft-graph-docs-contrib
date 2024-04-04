@@ -23,6 +23,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - [Track changes for SharePoint site](/graph/api/site-delta) resources.
 - [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
 
+## April 2024: New in preview only
+
+### People and workplace intelligence | People 
+
+Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights) method on the **peopleAdminSettings** resource..
+
 ## March 2024: New and generally available
 
 ### Applications
