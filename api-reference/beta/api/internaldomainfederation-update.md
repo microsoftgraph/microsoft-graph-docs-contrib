@@ -175,3 +175,18 @@ Content-Type: application/json
    "federatedIdpMfaBehavior": "acceptIfMfaDoneByFederatedIdp"
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api/internaldomainfederation-update.md:
+      Exception processing links.
+      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
+  ]
+}
+-->
