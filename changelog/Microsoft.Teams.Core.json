@@ -6865,24 +6865,6 @@
       "CreatedDateTime": "2024-01-29T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "32b8432a-834b-4ee0-8aeb-7775dd55a496",
-          "ApiChange": "Method",
-          "ChangedApiName": "chatMessage",
-          "ChangeType": "Addition",
-          "Description": "Added an example to the (https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta) operation of the [chatmessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
-          "Target": "chatmessage"
-        }
-      ],
-      "Id": "32b8432a-834b-4ee0-8aeb-7775dd55a496",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2024-03-05T10:52:40.595Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
     }
   ]
 }
