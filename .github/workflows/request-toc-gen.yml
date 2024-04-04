@@ -23,6 +23,9 @@ jobs:
         pull_number: ${{ github.event.issue.number }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - run: "echo latest release: $TOC_GEN_BRANCH"
-      env:
-        TOC_GEN_BRANCH: ${{ fromJson(steps.get_pull_request.outputs.data).head.ref }}
+    - uses: Azure/pipelines@v1.x
+      with:
+        azure-devops-project-url: https://dev.azure.com/microsoftgraph/Graph%20Developer%20Experiences
+        azure-pipeline-name: 'On-demand TOC generation'
+        azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
+        azure-pipeline-variables: '{ "toc_branch" : "${{ fromJson(steps.get_pull_request.outputs.data).head.ref }}" }'
