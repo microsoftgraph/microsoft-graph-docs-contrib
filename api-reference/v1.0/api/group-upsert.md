@@ -175,7 +175,7 @@ Content-type: application/json
 
 ### Example 2: Create a security group with an owner and members if it doesn't exist
 
-The following example creates a security group with an owner and members specified because a group with the specified **uniqueName** value does not exist. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add multiple additional members by using  [add member](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API or JSON batching.
+The following example creates a security group with an owner and members specified because a group with the specified **uniqueName** value does not exist. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add multiple additional members by using the [add member](group-post-members.md) API or JSON batching.
 
 #### Request
 
