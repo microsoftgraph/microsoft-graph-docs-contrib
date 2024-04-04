@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get chat
@@ -27,7 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-get-permissions.md)]
 
-> **Note**: The ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, and Chat.Manage.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

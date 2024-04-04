@@ -24,7 +24,7 @@ Represents the status of asynchronous operations scheduled on a domain.
 | status | String | Current status of the operation. <br> *Scheduled* - Operation has been scheduled but has not started. <br> *InProgress* - Task has started and is in progress. <br> *Failed* - Operation has failed. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

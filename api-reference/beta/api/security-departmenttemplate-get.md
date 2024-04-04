@@ -5,6 +5,7 @@ author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get departmentTemplate
@@ -59,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/departments/{departmentTemplateId}
+GET https://graph.microsoft.com/beta/security/labels/departments/11b44677-9f06-c85a-4a0b-766b66904bf8
 ```
 
 # [C#](#tab/csharp)
@@ -97,7 +98,7 @@ GET https://graph.microsoft.com/beta/security/labels/departments/{departmentTemp
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,12 +114,15 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.security.departmentTemplate",
     "id": "11b44677-9f06-c85a-4a0b-766b66904bf8",
-    "displayName": "String",
+    "displayName": "Finance",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)"
-  }
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
+  },
+  "createdDateTime" : "2021-03-24T02:09:08Z"
+}
 }
 ```
 

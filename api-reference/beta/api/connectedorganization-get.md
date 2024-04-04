@@ -5,6 +5,7 @@ author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 ms.localizationpriority: medium
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get connectedOrganization

@@ -5,6 +5,7 @@ author: "subray"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Add app to chat
@@ -27,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_post_installedapps" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-post-installedapps-permissions.md)]
 
-> **Notes:**
+> [!NOTE]
 > - The TeamsAppInstallation.ReadWriteSelfForChat,  TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteSelfForChat.All, and TeamsAppInstallation.ReadWriteForChat.All permissions cannot be used to install apps that require consent to resource-specific permissions.
 > - The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
