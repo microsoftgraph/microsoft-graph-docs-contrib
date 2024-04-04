@@ -23,7 +23,7 @@ Inherits from [customClaimBase](../resources/customclaimbase.md).
 |configurations|[customClaimConfiguration](../resources/customclaimconfiguration.md) collection|One or more configurations that describe how the claim is sourced and under what conditions. Inherited from [customClaimBase](../resources/customclaimbase.md).|
 |name|String|The name of the claim to be emitted.|
 |namespace|String|An optional namespace to be included as part of the claim name.|
-|samlAttributeNameFormat|samlAttributeNameFormat|If specified, sets the `NameFormat` attribute associated with the claim in the SAML response. The possible values are: `unspecified`, `uri`, `basic`, `unknownFutureValue`.|
+|samlAttributeNameFormat|samlAttributeNameFormat|If specified, it sets the `nameFormat` attribute associated with the claim in the SAML response. The possible values are: `unspecified`, `uri`, `basic`, `unknownFutureValue`.|
 |tokenFormat|tokenFormat collection|List of token formats for which this claim should be emitted.|
 
 ## Relationships
