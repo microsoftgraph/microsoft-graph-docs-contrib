@@ -155,6 +155,10 @@ Content-type: application/json
                 }
             ],
             "customerTimeZone": "America/Chicago",
+			"customerName": "John Doe",
+			"customerEmailAddress": "testemailaddress",
+			"customerPhone": "213-555-0103",
+			"customerNotes": "This is a test note",
             "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
