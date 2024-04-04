@@ -11,9 +11,7 @@ jobs:
     if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '#gen-toc') && github.event.issue.state == 'open' }}
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        echo "$GITHUB_CONTEXT"
-        echo TOC generation requested for base "$BASE_REF", head "$HEAD_REF"
+    - run: echo '${{ toJSON(github) }}'
       env:
         BASE_REF: ${{ github.base_ref }}
         HEAD_REF: ${{ github.head_ref }}
