@@ -24,9 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-|Application | Schedule.ReadWrite.All*  |
+|Application | Schedule.ReadWrite.All  |
 
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+> [!NOTE]
+> The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
 
 ## HTTP request
 
@@ -56,9 +57,7 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns a `200, OK` response code. It doesn't return anything in the response body.
 
-## Examples
-
-The following is an example of how to call this API.
+## Example
 
 ### Request
 
