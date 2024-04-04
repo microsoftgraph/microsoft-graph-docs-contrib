@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
 
-[sitePage]: ../resources/sitePage.md
+[sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -48,7 +48,7 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 
 | Name       | Description |
 |:---------------|:--------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 | Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response will be used in another request. |
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
 
-[sitePage]: ../resources/sitePage.md
+[sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 

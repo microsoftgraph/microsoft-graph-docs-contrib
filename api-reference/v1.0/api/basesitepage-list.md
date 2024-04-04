@@ -22,7 +22,7 @@ Get the collection of [baseSitePage][] objects from the site pages [list][] in a
 | [sitePage][] | Represents a regular page. |
 
 [basesitepage]: ../resources/baseSitePage.md
-[sitepage]: ../resources/sitePage.md
+[sitepage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -52,7 +52,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, 
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

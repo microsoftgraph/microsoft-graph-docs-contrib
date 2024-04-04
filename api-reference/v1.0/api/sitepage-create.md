@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
-[sitePage]: ../resources/sitePage.md
+[sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -39,7 +39,7 @@ POST /sites/{site-id}/pages
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

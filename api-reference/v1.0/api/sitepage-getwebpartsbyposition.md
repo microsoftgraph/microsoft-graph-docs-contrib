@@ -1,13 +1,13 @@
 ---
-title: "sitepage: getWebPartsByPosition"
-description: "Get a collection of webParts by position information"
+title: "sitePage getWebPartsByPosition"
+description: "Get a collection of webParts by position."
 author: sangle7
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
-# sitepage: getWebPartsByPosition
+# sitePage: getWebPartsByPosition
 
 Namespace: microsoft.graph
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/getWebPartsByPosition
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitepage/getWebPartsByPosition
 ```
 
 ## Function parameters
@@ -40,10 +40,10 @@ In the request URL, provide one or more following parameters with a valid value.
 
 | Parameter           | Type    | Description                                                                                                                                                    |
 | :------------------ | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| columnId            | Double  | Indicate the identifier of the column where the WebPart located in. Only works if `horizontalSectionId` is provided.                                           |
-| horizontalSectionId | Double  | Indicate the horizontal section where the WebPart located in.                                                                                                  |
-| isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.                                                                                                  |
-| webPartIndex        | Double  | Index of the current WebPart. Represents the order of WebPart in this column or section. Only works if either `columnId` or `isInVerticalSection` is provided. |
+| columnId            | Double  | Indicates the identifier of the column where the WebPart located. Only works if `horizontalSectionId` is provided.                                           |
+| horizontalSectionId | Double  | Indicates the horizontal section where the WebPart located.                                                                                                  |
+| isInVerticalSection | boolean | Indicate whether the WebPart is contained in the current vertical section.                                                                                                  |
+| webPartIndex        | Double  | The index of the current WebPart. Represents the order of WebPart in the current column or section. Only works if either `columnId` or `isInVerticalSection` is provided. |
 
 ## Optional query parameters
 
@@ -53,7 +53,7 @@ This method supports the  `$expand`, `$filter`, and `$select` [OData query param
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

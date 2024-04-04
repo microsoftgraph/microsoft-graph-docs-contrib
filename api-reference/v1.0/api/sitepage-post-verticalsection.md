@@ -39,7 +39,7 @@ PUT /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verti
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create a new [webPart] at a specified position in the [sitePage].
 
-[sitepage]: ../resources/sitePage.md
+[sitepage]: ../resources/sitepage.md
 [webPart]: ../resources/webPart.md
 
 
@@ -46,7 +46,7 @@ POST /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/hori
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -57,7 +57,7 @@ To ensure successful parsing of the request body, the `@odata.type=#microsoft.gr
 
 ### Supported web parts
 
-There are two kinds of web parts that can be added to a [sitePage](../resources/sitePage.md): [standardWebPart](../resources/standardWebPart.md) and [textWebPart](../resources/textWebPart.md).
+There are two kinds of web parts that can be added to a [sitePage](../resources/sitepage.md): [standardWebPart](../resources/standardWebPart.md) and [textWebPart](../resources/textWebPart.md).
 
 For [standardWebPart](../resources/standardWebPart.md), only the following are supported when updating using the Microsoft Graph API. Attempting to add unsupported web parts will result in a failure or exception.
 
