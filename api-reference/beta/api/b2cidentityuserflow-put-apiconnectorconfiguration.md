@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) to enable or disable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step one at a time as shown below.
+Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) to enable or disable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step in the user flow at a time.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Enable API connector for Post IDP Federation on sign up
+### Example 1: Enable API connector for Post IdP Federation on sign-up
 
 #### Request
 
@@ -95,7 +95,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Enable API connector for Post Attribute Collection on sign up
+### Example 2: Enable API connector for Post Attribute Collection on sign-up
 
 #### Request 
 
@@ -138,7 +138,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Disable an API connector for Post Attribute Collection on sign up
+### Example 3: Disable an API connector for Post Attribute Collection on sign-up
 
 #### Request 
 
