@@ -215,7 +215,7 @@ items:
                   - name: Insights settings
                     href: resources/insightssettings.md
                   - name: List
-                    href: api/organizationsettings-list-iteminsights.md
+                    href: api/peopleadminsettings-list-iteminsights.md
                   - name: Update
                     href: api/insightssettings-update.md
               - name: User control (preview)
@@ -11838,7 +11838,7 @@ items:
                         href: api/organizationsettings-list-contactinsights.md
                       - name: Update
                         href: api/insightssettings-update.md
-                  - name: Org control for item insights (preview)
+                  - name: Org control for item insights (deprecated)
                     items:
                       - name: Insights settings
                         href: resources/insightssettings.md
@@ -15509,6 +15509,14 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
+              - name: Org control for item insights settings (preview)
+                items:
+                - name: Insights settings
+                  href: resources/insightssettings.md
+                - name: List
+                  href: api/peopleadminsettings-list-iteminsights.md
+                - name: Update
+                  href: api/insightssettings-update.md
               - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
@@ -15836,7 +15844,7 @@ items:
                   - name: Insights settings
                     href: resources/insightssettings.md
                   - name: List
-                    href: api/organizationsettings-list-iteminsights.md
+                    href: api/peopleadminsettings-list-iteminsights.md
                   - name: Update
                     href: api/insightssettings-update.md
               - name: User control (preview)
