@@ -39,7 +39,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 
 ## Create grading categories
 
-Grading categories are used to grade the creativity, accuracy, style, or tone of your output, you can create custom grading categories that suit your needs. In this article, we will explain how to create, update, and delete grading categories for your assignments. 
+Grading categories are used to grade the creativity, accuracy, style, or tone of your output, you can create custom grading categories that suit your needs. This section shows how to create grading categories for your assignments. 
 
 ### Request
 
@@ -101,7 +101,7 @@ Content-type: application/json
 
 ## Add a grading category to an assignment
 
-Grading categories let you assess your assignments with more flexibility and clarity. You can create different categories to measure various aspects of the output, such as accuracy, creativity, or style. You can also assign different weights and scoring types to each category. You can use the following API to add a grading category to an assignment.
+An assignment can be weighted by grading categories. These are different criteria that evaluate the output on things like accuracy, creativity, or style. Each category can have different weights and scoring types. You can use the following API to add a grading category to an assignment.
 
 - [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory): Allows you to give an assignment a grading category, causing it to contribute to the class average grade as part of that grading category.
 
@@ -131,7 +131,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## Update a grading category
-You might want to change the criteria or the weight of a grading category for your assignment. For example, this can help you fine-tune your evaluation and better reflect your expectations and goals. In this section, we will show you how to update a grading category, and how it affects your existing and future assignments. You will also learn about some common scenarios where updating a grading category can be useful. 
+You might want to change the criteria or the weight of a grading category for your assignment. For example, this can help you fine-tune your evaluation and better reflect your expectations and goals. This section shows you how to update a grading category. You will also learn about some common scenarios where updating a grading category can be useful. 
 
 - [Update single gradingCategory](/graph/api/educationgradingcategory-update): This is used to update a single gradingCategory.
 
@@ -251,7 +251,7 @@ Content-type: application/json
 
 ## Delete grading categories
 
-You can delete a grading category when you no longer need it for your assignment, or if you want to simplify your evaluation process. Deleting a grading category removes it from the assignment settings and the grading interface. In this section, we will guide you through the steps of deleting a grading category. 
+You can delete a grading category when you no longer need it for your assignment, or if you want to simplify your evaluation process. Deleting a grading category removes it from the assignment settings and the grading interface. This section shows deleting a grading category. 
 
 - [Remove gradingCategory](/graph/api/educationassignment-delete-gradingcategory): Use this method to remove a grading category from the assignment settings and the grading interface.
 
