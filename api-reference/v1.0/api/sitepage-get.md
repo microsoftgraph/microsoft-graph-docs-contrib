@@ -54,7 +54,7 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200` and a [sitePage](../resources/sitepag
 ### Example 1: Get a page in the site pages list of a site
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -79,7 +79,7 @@ GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -141,7 +141,7 @@ GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -202,7 +202,7 @@ GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 ```json
 {
   "description": "Reiciendis placeat dolores.",

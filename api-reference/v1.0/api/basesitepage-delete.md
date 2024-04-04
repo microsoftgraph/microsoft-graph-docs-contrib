@@ -45,7 +45,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 
 ## Request body
 
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content`. It doesn't return anythin
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- { "blockType": "request", "name": "delete-page", "scopes": "files.readwrite sites.readwrite.all" } -->
 ```http
@@ -63,7 +63,7 @@ DELETE /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0
 ```
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 

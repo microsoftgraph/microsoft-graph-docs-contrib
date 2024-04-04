@@ -57,7 +57,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 <!--
 {
   "blockType": "request",
@@ -85,7 +85,7 @@ GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!--
 {
