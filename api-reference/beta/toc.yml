@@ -10732,14 +10732,6 @@ items:
                 href: api/educationassignment-update.md
               - name: Delete assignment
                 href: api/educationassignment-delete.md
-              - name: List assignment resources
-                href: api/educationassignment-list-resources.md
-              - name: Create assignment resource
-                href: api/educationassignment-post-resources.md
-              - name: Get assignment resource
-                href: api/educationassignmentresource-get.md
-              - name: Delete resource from assignment
-                href: api/educationassignmentresource-delete.md
               - name: Publish assignment
                 href: api/educationassignment-publish.md
               - name: List submissions for assignment
@@ -10752,9 +10744,9 @@ items:
                 href: api/educationassignment-get-rubric.md
               - name: List categories
                 href: api/educationassignment-list-categories.md
-              - name: Add category
+              - name: Attach category to assignment
                 href: api/educationassignment-post-categories.md
-              - name: Remove category
+              - name: Remove category from assignment
                 href: api/educationassignment-remove-category.md
               - name: Attach rubric to assignment
                 href: api/educationassignment-put-rubric.md
@@ -10762,11 +10754,9 @@ items:
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
                 href: api/educationassignment-delta.md
-              - name: Add grading category
+              - name: Attach grading category to assignment
                 href: api/educationassignment-post-gradingcategories.md
-              - name: Update grading category
-                href: api/educationgradingcategory-update.md
-              - name: Remove grading category
+              - name: Remove grading category from assignment
                 href: api/educationassignment-delete-gradingcategory.md
               - name: Activate assignment
                 href: api/educationassignment-activate.md
@@ -10774,6 +10764,17 @@ items:
                 href: api/educationassignment-deactivate.md
               - name: Create grading scheme
                 href: api/educationassignment-post-gradingscheme.md
+          - name: Assignment Resources
+            href: resources/educationassignmentresource.md
+            items:
+              - name: List assignment resources
+                href: api/educationassignment-list-resources.md
+              - name: Create assignment resource
+                href: api/educationassignment-post-resource.md
+              - name: Get assignment resource
+                href: api/educationassignmentresource-get.md
+              - name: Delete resource from assignment
+                href: api/educationassignmentresource-delete.md                 
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
