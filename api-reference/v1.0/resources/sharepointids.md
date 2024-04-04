@@ -18,7 +18,7 @@ The **SharePointIds** resource groups the various identifiers for an item stored
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

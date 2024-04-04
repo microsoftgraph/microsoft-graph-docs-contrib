@@ -5,6 +5,7 @@ author: "AkJo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.topic: reference
 ---
 
 # Get chat between user and teamsApp

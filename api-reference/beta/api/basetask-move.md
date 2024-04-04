@@ -5,6 +5,7 @@ author: "devindrajit"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # baseTask: move (deprecated)

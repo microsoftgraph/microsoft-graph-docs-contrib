@@ -5,6 +5,7 @@ author: "rahulsharm0210"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # accessReviewInstance: stopApplyDecisions

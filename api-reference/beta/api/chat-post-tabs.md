@@ -5,6 +5,7 @@ author: "nkramer"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Add tab to chat

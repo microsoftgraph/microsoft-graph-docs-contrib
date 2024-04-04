@@ -7,6 +7,7 @@ ms.date: 5/3/2023
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # sites: getAllSites

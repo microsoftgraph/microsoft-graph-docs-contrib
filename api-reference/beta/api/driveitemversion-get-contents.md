@@ -6,6 +6,7 @@ title: Download a previous version
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 # Download contents of a DriveItemVersion resource (preview)
 
