@@ -1099,6 +1099,24 @@
     {
       "ChangeList": [
         {
+          "Id": "58082105-0d7f-4fad-a743-769515af32b7",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/listitem-delta?view=graph-rest-1.0) method to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0) resource.",
+          "Target": "listItem"
+        }
+      ],
+      "Id": "58082105-0d7f-4fad-a743-769515af32b7",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-01T12:44:48Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",
