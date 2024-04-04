@@ -1369,11 +1369,7 @@ items:
                 href: api/place-get.md
               - name: Update place
                 href: api/place-update.md
-          - name: Workplace (preview)
-            items:
-              - name: Workplace
-                href: resources/workplace.md
-              - name: Workplace sensor device
+              - name: Devices (preview)
                 items:
                   - name: Workplace sensor device
                     href: resources/workplacesensordevice.md
