@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Create internalDomainFederation

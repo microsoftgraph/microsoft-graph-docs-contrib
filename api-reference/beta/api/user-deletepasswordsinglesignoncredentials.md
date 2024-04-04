@@ -5,6 +5,7 @@ author: "AllisonAm"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # user: deletePasswordSingleSignOnCredentials

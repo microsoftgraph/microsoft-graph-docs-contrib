@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: security
 author: "preetikr"
+ms.topic: reference
 ---
 
 # Update secureScoreControlProfiles

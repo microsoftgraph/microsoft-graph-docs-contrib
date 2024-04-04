@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # searchEntity: query

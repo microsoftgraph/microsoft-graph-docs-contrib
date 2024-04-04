@@ -6,6 +6,7 @@ title: Get permission
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.topic: reference
 ---
 # Get sharing permission for a file or folder
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mmast-msft"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Start sync after uploading files to an educationSynchronizationProfile

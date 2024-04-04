@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vrod9429"
 ms.subservice: calendar
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # Update place

@@ -5,6 +5,7 @@ title: Get a SharePoint Site
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 # Get a site resource
 

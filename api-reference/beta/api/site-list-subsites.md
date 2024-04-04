@@ -5,6 +5,7 @@ title: List subsites for a site
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 # List subsites for a site
 

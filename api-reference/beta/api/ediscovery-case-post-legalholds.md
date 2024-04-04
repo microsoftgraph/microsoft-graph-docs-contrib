@@ -5,6 +5,7 @@ author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
+ms.topic: reference
 ---
 
 # Create legalHold
