@@ -5,6 +5,7 @@ ms.localizationpriority: high
 author: "RamjotSingh"
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List channel messages

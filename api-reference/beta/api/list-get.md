@@ -5,6 +5,7 @@ description: Return the metadata for a list.
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 # Get metadata for a list
 

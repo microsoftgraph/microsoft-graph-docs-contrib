@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # Create trustFrameworkKeySet

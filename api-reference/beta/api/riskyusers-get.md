@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "tracyshi"
 doc_type: apiPageType
 ms.subservice: "entra-sign-in"
+ms.topic: reference
 ---
 # Get riskyUser
 

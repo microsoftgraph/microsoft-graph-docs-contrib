@@ -6,6 +6,7 @@ title: Create a new page in a SharePoint site
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Create a page in the site pages list of a site

@@ -5,6 +5,7 @@ description: "List the recent activities that took place on an item or under a h
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: onedrive
+ms.topic: reference
 ---
 # List activities (preview)
 

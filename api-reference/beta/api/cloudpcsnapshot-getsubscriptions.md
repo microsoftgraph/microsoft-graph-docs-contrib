@@ -5,6 +5,7 @@ author: "xhan2077"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get cloudPcSubscription

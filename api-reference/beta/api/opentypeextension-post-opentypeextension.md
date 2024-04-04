@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
 ms.prod: "extensions"
+ms.topic: reference
 ---
 
 # Create openTypeExtension

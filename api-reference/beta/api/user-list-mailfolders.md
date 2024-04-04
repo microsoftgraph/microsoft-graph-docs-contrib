@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
+ms.topic: reference
 ---
 
 <!-- markdownlint-disable MD001 MD022 MD024 MD025 MD051-->

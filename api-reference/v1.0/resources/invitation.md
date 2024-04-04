@@ -48,7 +48,7 @@ Creating an invitation returns a redemption URL in the response (*inviteRedeemUr
 |invitedUser|[User](user.md)|The user created as part of the invitation creation. Read-Only|
 
 ## JSON representation
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "baseType": "microsoft.graph.entity", "@odata.type": "microsoft.graph.invitation" } -->
 ```json

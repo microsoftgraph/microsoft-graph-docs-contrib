@@ -5,6 +5,7 @@ description: "List columns in a site."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.topic: reference
 ---
 
 # List columns in a site
