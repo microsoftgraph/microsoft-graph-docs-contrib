@@ -1,5 +1,5 @@
 ---
-title: "FilterCriteria resource type"
+title: "filterCriteria resource type"
 description: "Represents the filtering criteria applied to a column."
 ms.localizationpriority: medium
 author: "ruoyingl"
@@ -7,7 +7,7 @@ ms.subservice: excel
 doc_type: resourcePageType
 ---
 
-# FilterCriteria resource type
+# filterCriteria resource type
 
 Namespace: microsoft.graph
 
@@ -27,15 +27,14 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "color": "string",
-  "criterion1": "string",
-  "criterion2": "string",
-  "dynamicCriteria": "string",
-  "filterOn": "string",
+  "color": "String",
+  "criterion1": "String",
+  "criterion2": "String",
+  "dynamicCriteria": "String",
+  "filterOn": "String",
   "icon": {"@odata.type": "microsoft.graph.workbookIcon"},
   "values": {"@odata.type": "microsoft.graph.Json"}
 }
-
 ```
 
 <!-- {

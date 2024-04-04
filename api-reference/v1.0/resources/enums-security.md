@@ -11,6 +11,15 @@ author: "BenAlfasi"
 
 Namespace: microsoft.graph.security
 
+### actionAfterRetentionPeriod values
+
+| Member                 |
+| :--------------------- |
+| none                   |
+| delete                 |
+| startDispositionReview |
+| unknownFutureValue     |
+
 ### behaviorDuringRetentionPeriod values
 
 | Member                   |
@@ -28,6 +37,14 @@ Namespace: microsoft.graph.security
 | text               |
 | html               |
 | markdown           |
+| unknownFutureValue |
+
+### defaultRecordBehavior values
+
+| Member             |
+| :----------------- |
+| startLocked        |
+| startUnlocked      |
 | unknownFutureValue |
 
 ### detectionStatus values
@@ -119,6 +136,16 @@ Namespace: microsoft.graph.security
 | :----------------- |
 | files              |
 | messages           |
+| unknownFutureValue |
+
+### retentionTrigger values
+
+| Member             |
+| :----------------- |
+| dateLabeled        |
+| dateCreated        |
+| dateModified       |
+| dateOfEvent        |
 | unknownFutureValue |
 
 ### vulnerabilitySeverity values

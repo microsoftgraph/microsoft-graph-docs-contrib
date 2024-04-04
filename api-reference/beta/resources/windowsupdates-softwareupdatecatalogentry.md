@@ -3,7 +3,7 @@ title: "softwareUpdateCatalogEntry resource type"
 description: "Metadata for a software update that you can approve for deployment."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 

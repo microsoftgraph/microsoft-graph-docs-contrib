@@ -52,6 +52,10 @@
     {
       "hash": "Yq6kyr67P2hd5i71eNVIOL8EHosrVwv9Mg0R6PdiF6c=",
       "_justification": "authenticationmethods-get-started.md line 451 Sample general password in JSON example"
+    },
+    {
+      "hash": "ncUPsLmVZWNkFs8Upvo2loZCG/3RAMIinoJ0OennEZ0=",
+      "_justification": "tutorial-accessreviews-roleassignments.md line 773 Sample Azure Storage Account Shared Access Signature"
     }
   ]
 }

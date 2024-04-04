@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getAuditCategories, err := graphClient.DeviceManagement().AuditEvents().GetAuditCategories().Get(context.Background(), nil)
+getAuditCategories, err := graphClient.DeviceManagement().AuditEvents().GetAuditCategories().GetAsGetAuditCategoriesGetResponse(context.Background(), nil)
 
 
 ```
