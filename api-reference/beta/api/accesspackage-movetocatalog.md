@@ -5,6 +5,7 @@ author: "fsheik"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # accessPackage: moveToCatalog

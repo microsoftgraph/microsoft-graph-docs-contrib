@@ -5,6 +5,7 @@ author: "zadinsmo"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Update adminTodo

@@ -41,7 +41,7 @@ RangeView represents a set of visible cells of the parent range.
 |rows|[workbookRangeView](workbookrangeview.md) collection| Represents a collection of range views associated with the range. Read-only.	Read-only.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",

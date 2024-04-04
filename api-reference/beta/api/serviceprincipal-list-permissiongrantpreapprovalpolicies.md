@@ -5,6 +5,7 @@ author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List permissionGrantPreApprovalPolicies for a servicePrincipal
