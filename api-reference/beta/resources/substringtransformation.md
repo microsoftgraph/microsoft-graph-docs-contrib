@@ -21,8 +21,8 @@ Inherits from [customClaimTransformation](../resources/customclaimtransformation
 |Property|Type|Description|
 |:---|:---|:---|
 |index|Int32|The start index of the substring operation, where 0 is the first character in the string.|
-|input|[transformationAttribute](../resources/transformationattribute.md)|The input attribute that will provide the source for the transformation. This parameter is required if it is the first or only transformation in the list of transformations to be applied. Subsequent transformations will use the output of the prior transformation as input. Inherited from [customClaimTransformation](../resources/customclaimtransformation.md).|
-|length|Int32|The maximum length of the string, starting from the provided index|
+|input|[transformationAttribute](../resources/transformationattribute.md)|The input attribute that will provide the source for the transformation. This parameter is required if it is the first or only transformation in the list of transformations to be applied. Subsequent transformations use the output of the prior transformation as input. Inherited from [customClaimTransformation](../resources/customclaimtransformation.md).|
+|length|Int32|The maximum length of the string, starting from the provided index.|
 
 ## Relationships
 None.
