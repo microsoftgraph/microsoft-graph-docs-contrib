@@ -395,6 +395,106 @@ Content-type: application/json
     "messageHistory": []
 }
 ```
+### Example 4: Get chat message that has custom emoji in the message body and has custom reaction
+#### Request
+The following example shows a request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessage_4",
+  "sampleKeys": ["19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2", "1706763669648"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648
+```
+---
+
+#### Response
+The following example shows the response. Message body contains a `<customemoji></customemoji>` and the message has a custom reaction. Custom emojis and reactions can be accessed as chat message hosted content.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsgraphdev/$metadata#chats('19%3Abcf84b15c2994a909770f7d05bc4fe16%40thread.v2')/messages/$entity",
+    "id": "1706763669648",
+    "replyToId": null,
+    "etag": "1707948456260",
+    "messageType": "message",
+    "createdDateTime": "2024-02-01T05:01:09.648Z",
+    "lastModifiedDateTime": "2024-02-14T22:07:36.26Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "670374fa-3b0e-4a3b-9d33-0e1bc5ff1956",
+            "displayName": "Sumana NonAdmin",
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<p>I am looking&nbsp;<emoji id=\"1f440_eyes\" alt=\"👀\" title=\"Eyes\"></emoji><customemoji id=\"dGVzdHNjOzAtd3VzLWQyLTdiNWRkZGQ2ZGVjMDNkYzIwNTgxY2NkYTE1MmEyZTM4\" alt=\"testsc\" source=\"https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706638496169/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1jYW5hcnkuYXN5bmNndy50ZWFtcy5taWNyb3NvZnQuY29tL3YxL29iamVjdHMvMC13dXMtZDItN2I1ZGRkZDZkZWMwM2RjMjA1ODFjY2RhMTUyYTJlMzgvdmlld3MvaW1ndDJfYW5pbQ==/$value\"></customemoji></p>"
+    },
+    "attachments": [],
+    "mentions": [],
+    "reactions": [
+        {
+            "reactionType": "💯",
+            "reactionContentUrl": null,
+            "createdDateTime": "2024-02-14T22:07:36.3Z",
+            "user": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "670374fa-3b0e-4a3b-9d33-0e1bc5ff1956",
+                    "displayName": null,
+                    "userIdentityType": "aadUser"
+                }
+            }
+        },
+        {
+            "reactionType": "custom",
+            "reactionContentUrl": "https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648/hostedContents/aWQ9MC13dXMtZDExLTc3ZmI2NmY4MTMwMGI2OGEzYzRkOWUyNmU1YTc5ZmMyLHR5cGU9MSx1cmw9/$value",
+            "createdDateTime": "2024-02-14T22:07:02.288Z",
+            "user": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+                    "displayName": null,
+                    "userIdentityType": "aadUser"
+                }
+            }
+        }
+    ]
+}
+```
 
 ## Related content
 
