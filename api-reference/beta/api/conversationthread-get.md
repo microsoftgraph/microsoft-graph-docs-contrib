@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "mikemcleanlive"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get conversationThread

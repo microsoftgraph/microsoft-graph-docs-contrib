@@ -5,6 +5,7 @@ author: "akgraph"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Delete trainingCampaign

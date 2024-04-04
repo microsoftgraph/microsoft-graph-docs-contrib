@@ -5,6 +5,7 @@ author: "amirfeldman"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.date: 03/20/2024
+ms.topic: reference
 ---
 
 # Update healthIssue

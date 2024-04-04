@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: apiPageType
 ms.prod: "change-notifications"
+ms.topic: reference
 ---
 
 # Get subscription

@@ -21,7 +21,7 @@ Base type of [bookingCustomer](bookingcustomer.md)
 |id|String|ID of the customer. Inherited from [entity](../resources/entity.md).|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

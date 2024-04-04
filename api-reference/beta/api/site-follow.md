@@ -5,6 +5,7 @@ description: Follow a user's site/sites.
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 # Follow site 
 

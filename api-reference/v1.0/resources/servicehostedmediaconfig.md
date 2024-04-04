@@ -22,7 +22,7 @@ The media that's hosted remotely and is inherited from [mediaConfig](mediaconfig
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
