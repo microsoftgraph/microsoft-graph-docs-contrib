@@ -22,15 +22,16 @@ Retrieve the properties and relationships of a [timeOff](../resources/timeoff.md
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+This API supports admin permissions. Global admins can access groups that they aren't a member of.
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+|Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
-
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> [!NOTE]
+> The Schedule.Read.All and Schedule.ReadWrite.All application permissions are currently in private preview only and aren't available for public use.
 
 ## HTTP request
 
@@ -42,7 +43,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to customize the response.
+This method doesn't support OData query parameters to customize the response.
 
 
 ## Request headers
