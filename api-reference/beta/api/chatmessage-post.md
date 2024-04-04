@@ -608,7 +608,8 @@ Content-type: application/json
     "messageHistory": []
 }
 ```
-### Example 6: Send inline images along with the message
+
+### Example 5: Send inline images along with the message
 
 #### Request
 The following example shows a request.
@@ -621,7 +622,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_6",
+  "name": "post_chatmessage_5",
   "sampleKeys": ["19:2da4c29f6d7041eca70b638b43d45437@thread.v2"]
 }-->
 ```http
@@ -731,7 +732,7 @@ Content-type: application/json
 }
 ```
 
-### Example 7: Send a card with inline images
+### Example 6: Send a card with inline images
 
 #### Request
 The following example shows a request.
@@ -746,7 +747,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_7",
+  "name": "post_chatmessage_6",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 ```http
@@ -880,7 +881,7 @@ Content-type: application/json
 }
 ```
 
-### Example 8: @mention a channel in a channel message
+### Example 7: @mention a channel in a channel message
 
 #### Request
 The following example shows a request. For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).
@@ -1026,7 +1027,7 @@ Content-type: application/json
 }
 ```
 
-### Example 9: @mention a team in a channel message
+### Example 8: @mention a team in a channel message
 
 #### Request
 The following example shows a request.
@@ -1174,7 +1175,7 @@ Content-type: application/json
 }
 ```
 
-### Example 10: @mention a tag in a channel message
+### Example 9: @mention a tag in a channel message
 
 #### Request
 The following example shows a request. For information about how to get a list of tags in a team, see [List teamworkTags](../api/teamworktag-list.md).
@@ -1316,7 +1317,7 @@ Content-type: application/json
 }
 ```
 
-### Example 11: Send message that contains cards that are attributed to a Teams app
+### Example 10: Send message that contains cards that are attributed to a Teams app
 
 #### Request
 
@@ -1330,7 +1331,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_11",
+  "name": "post_chatmessage_e10",
   "sampleKeys": ["fbe2bf47-16c8-47cf-b4a5-4b9b187c508b", "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"]
 }-->
 
@@ -1460,7 +1461,7 @@ Content-type: application/json
 }
 ```
 
-### Example 12: Send a message that contains an announcement
+### Example 11: Send a message that contains an announcement
 
 #### Request
 
@@ -1471,7 +1472,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_12",
+  "name": "post_chatmessage_11",
   "sampleKeys": ["5c884e2f-83f8-4cff-af8e-0177f260b9f8", "19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2"]
 }-->
 
@@ -1610,7 +1611,7 @@ Content-type: application/json
 
 ```
 
-### Example 13: Send a message with an emoji
+### Example 12: Send a message with an emoji
 
 #### Request
 
@@ -1619,7 +1620,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_chatmessage_13",
+  "name": "post_chatmessage_12",
   "sampleKeys": ["19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2"]
 }-->
 
