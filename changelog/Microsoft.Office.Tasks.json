@@ -1885,6 +1885,72 @@
       "CreatedDateTime": "2023-11-15T13:40:50.502Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Member",
+          "ChangedApiName": "formCompletion",
+          "ChangeType": "Addition",
+          "Description": "Added the `formCompletion` member to the **plannerTaskCompletionRequirements** enumeration.",
+          "Target": "plannerTaskCompletionRequirements"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerFormReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerFormReference](https://learn.microsoft.com/en-us/graph/api/resources/plannerFormReference?view=graph-rest-beta) resource type.",
+          "Target": "plannerFormReference"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerFormsDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerFormsDictionary](https://learn.microsoft.com/en-us/graph/api/resources/plannerFormsDictionary?view=graph-rest-beta) resource type.",
+          "Target": "plannerFormsDictionary"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerFormsRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerFormsRequirement](https://learn.microsoft.com/en-us/graph/api/resources/plannerFormsRequirement?view=graph-rest-beta) resource type.",
+          "Target": "plannerFormsRequirement"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Property",
+          "ChangedApiName": "formsRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the **formsRequirement** property to the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCompletionRequirementDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskCompletionRequirementDetails"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Property",
+          "ChangedApiName": "forms",
+          "ChangeType": "Addition",
+          "Description": "Added the **forms** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskPropertyRule"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Property",
+          "ChangedApiName": "forms",
+          "ChangeType": "Addition",
+          "Description": "Added the **forms** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskDetails"
+        }
+      ],
+      "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-03T12:10:19.8563344Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }

@@ -193,3 +193,14 @@ Specifies whether the task title can be changed. Accepted values are:
 * `allow`: Task title can be changed.
 
 The collection must contain only one of these values.
+
+### forms
+
+The **forms** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Possible values are:
+
+* `block`: Forms can't be changed.
+* `addResponse`: Responses can be added to the form.
+* `add`: New forms can be added.
+* `update`: Existing forms can be updated.
+* `remove`: Existing forms can be removed.
+* `allow`: All forms actions are allowed.
