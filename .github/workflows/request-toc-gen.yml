@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo TOC generation requested for base $BASE_REF, head $HEAD_REF
+        echo "$GITHUB_CONTEXT"
+        echo TOC generation requested for base "$BASE_REF", head "$HEAD_REF"
       env:
         BASE_REF: ${{ github.base_ref }}
         HEAD_REF: ${{ github.head_ref }}
