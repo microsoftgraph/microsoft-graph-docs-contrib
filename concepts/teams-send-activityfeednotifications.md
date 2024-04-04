@@ -19,10 +19,10 @@ The Microsoft Teams activity feed enables users to triage items that require att
 
 ## Advantages of activity feed notifications
 
-* Activity feed notification is a native Teams integration that brings user seamlessly into the Tab app, bringing additional user engagement from *Activity* to your app.
+* Activity feed notification is a native Teams integration that brings user seamlessly into the Tab app, bringing additional user engagement from **Activity** to your app.
 * Activity feed notification comes with an OS notification in Teams desktop and mobile clients, so that user attention is grabbed from the system pop-up and sound.
 * Notification content is highly customizable, allowing users to preview the summary of the notified events.
-* You can deep link your app to a notification so that when a user selects the notification it increases user app engagement.
+* You can deep link your tab app, personal app, bot message, or Adaptive Card to a notification, so that when a user selects the notification it increases user app engagement.
 * You can send activity feed notification to various recipients. For example, sending a personal notification or sending batch notifications to a group of users.
 * App manifest (previously called Teams app manifest) localization supports the templated text in activity feed notifications.
 
