@@ -19,7 +19,7 @@ Attribute used to support transformations.
 |Property|Type|Description|
 |:---|:---|:---|
 |attribute|[customClaimAttributeBase](../resources/customclaimattributebase.md)|Attribute to be used as input for the transformation.|
-|treatAsMultiValue|Boolean|This flag is only relevant in the case where the attribute is multivalued. By default, transformations will only be applied to the first element in a multi-valued claim, however setting this flag to 'true' ensures the transformation will be applied to all values, resulting in a multivalued outputs|
+|treatAsMultiValue|Boolean|This flag is only relevant in the case where the attribute is multivalued. By default, transformations will only be applied to the first element in a multi-valued claim, however setting this flag to `true` ensures the transformation is applied to all values, resulting in a multivalued output.|
 
 ## Relationships
 None.
