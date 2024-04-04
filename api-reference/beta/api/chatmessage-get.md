@@ -403,13 +403,11 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessage_4",
-  "sampleKeys": ["19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2", "1706763669648"]
+  "name": "get_chatmessage_4"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648
 ```
----
 
 #### Response
 The following example shows the response. Message body contains a `<customemoji></customemoji>` and the message has a custom reaction. Custom emojis and reactions can be accessed as chat message hosted content.
