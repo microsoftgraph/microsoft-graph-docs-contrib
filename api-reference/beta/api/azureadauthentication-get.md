@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "azureadauthentication_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/azureadauthentication-get-permissions.md)]
 
-For delegated scenarions, the calling user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+For delegated scenarios, the calling user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Global Reader
 + Reports Reader
 + Security Administrator
