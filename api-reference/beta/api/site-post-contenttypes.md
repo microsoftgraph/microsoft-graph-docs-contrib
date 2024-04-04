@@ -5,6 +5,7 @@ description: "Create a Content type for a site."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.topic: reference
 ---
 
 # Create contentType

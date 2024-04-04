@@ -5,6 +5,7 @@ author: "frank-masuelli"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List licenseDetails

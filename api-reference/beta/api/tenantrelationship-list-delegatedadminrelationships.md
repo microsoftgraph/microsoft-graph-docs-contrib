@@ -5,6 +5,7 @@ author: "adtangir"
 ms.localizationpriority: medium
 ms.subservice: partner-customer-administration
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List delegatedAdminRelationships

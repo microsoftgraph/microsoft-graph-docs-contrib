@@ -5,6 +5,7 @@ author: "sureshja"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
+ms.topic: reference
 ---
 
 # Upsert servicePrincipal

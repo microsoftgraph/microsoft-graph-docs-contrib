@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # reportRoot: getTeamsUserActivityDistributionUserCounts

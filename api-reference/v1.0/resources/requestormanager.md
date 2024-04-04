@@ -21,7 +21,7 @@ It's a subtype of [subjectSet](subjectset.md), in which the `@odata.type` value 
 ## Relationships
 None.
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.requestorManager",
