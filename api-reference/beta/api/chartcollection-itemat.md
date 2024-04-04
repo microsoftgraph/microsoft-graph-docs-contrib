@@ -3,8 +3,9 @@ title: "workbookChartCollection: ItemAt"
 description: "Gets a workbookchart based on its position in the collection."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # ChartCollection: ItemAt
@@ -42,7 +43,7 @@ The following table shows the parameters that can be used with this function.
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 

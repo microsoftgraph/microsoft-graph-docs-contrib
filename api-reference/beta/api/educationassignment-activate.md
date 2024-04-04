@@ -5,6 +5,7 @@ author: "AshwaniBansal1"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # educationAssignment: activate

@@ -3,8 +3,9 @@ title: "deploymentAudience: updateAudience"
 description: "Update the members and exclusions collections of a deploymentAudience."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # deploymentAudience: updateAudience

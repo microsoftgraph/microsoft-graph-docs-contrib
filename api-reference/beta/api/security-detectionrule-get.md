@@ -5,6 +5,7 @@ author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get detectionRule
@@ -86,6 +87,10 @@ GET https://graph.microsoft.com/beta/security/rules/detectionRules/7506
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-detectionrule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-detectionrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

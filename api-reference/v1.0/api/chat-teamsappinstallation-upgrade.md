@@ -46,7 +46,7 @@ POST /chats/{chat-id}/installedApps/{app-installation-id}/upgrade
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists more parameters that can be used with the upgrade action.
+The following table lists other parameters that can be used with the upgrade action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

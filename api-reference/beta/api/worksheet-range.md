@@ -3,8 +3,9 @@ title: "Worksheet: Range"
 description: "Gets the range object specified by the address or name."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Worksheet: Range

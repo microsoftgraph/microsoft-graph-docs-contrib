@@ -3,8 +3,9 @@ title: "Update chartseries"
 description: "Update the properties of chartseries object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Update chartseries

@@ -3,8 +3,9 @@ title: "workbookApplication: calculate"
 description: "Recalculate all currently opened workbooks in Excel."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # workbookApplication: calculate

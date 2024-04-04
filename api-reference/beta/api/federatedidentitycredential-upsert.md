@@ -3,8 +3,9 @@ title: "Upsert federatedIdentityCredential"
 description: "Create a new federatedIdentityCredential object if it doesn't exist, or update the properties of an existing federatedIdentityCredential object."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Upsert federatedIdentityCredential

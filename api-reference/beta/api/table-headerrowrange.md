@@ -3,8 +3,9 @@ title: "Table: HeaderRowRange"
 description: "Gets the range object associated with header row of the table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Table: HeaderRowRange

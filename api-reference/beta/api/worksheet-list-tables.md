@@ -3,8 +3,9 @@ title: "List tables"
 description: "Retrieve a list of table objects."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List tables

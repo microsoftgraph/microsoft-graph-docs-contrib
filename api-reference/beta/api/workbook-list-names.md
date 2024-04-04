@@ -3,8 +3,9 @@ title: "List names"
 description: "Retrieve a list of nameditem objects."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List names

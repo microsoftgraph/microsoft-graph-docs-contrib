@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 <!-- markdownlint-disable MD001 MD022 MD024 -->
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed.
+Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -26,10 +27,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_post_calls" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-post-calls-permissions.md)]
 
-> **Notes:** 
-> - For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the previous table.
-> - Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
+> [!NOTE]
 > - The Calls.JoinGroupCalls.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the previous table.
+
+Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -480,7 +482,7 @@ Content-Type: application/json
 
 ---
 
-`<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack. Specific information about audio, video, VBSS session information should be passed here.
+`<Media Session Configuration>` is the serialized media session configuration, which contains the session information of the media stack. Specific information about audio, video, VBSS session information should be passed here.
 
 The following is an example of an audio media session blob.
 
@@ -492,6 +494,7 @@ The following is an example of an audio media session blob.
 
 #### Response
 
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -568,11 +571,12 @@ Content-Type: application/json
 
 ### Example 3: Create a group call with service hosted media
 
-This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
+You can support up to 5 VoIP users. It shows how to create a group call with two VoIP users.
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -672,6 +676,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -748,7 +753,7 @@ Content-Type: application/json
 
 ### Example 4: Create a group call with application hosted media
 
-This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
+You can support up 5 VoIP users. The example shows how to create a group call with two VoIP users.
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
 #### Request
@@ -853,6 +858,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -931,7 +937,7 @@ Content-Type: application/json
 
 ### Example 5: Join scheduled meeting with service hosted media
 
-To join the scheduled meeting we will need to get the thread ID, message ID, organizer ID and the tenant ID in which the meeting is scheduled.
+To join the scheduled meeting, you need to get the thread ID, message ID, organizer ID and the tenant ID in which the meeting is scheduled.
 This information can be obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
 The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
@@ -1028,6 +1034,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": "true",
@@ -1417,10 +1424,11 @@ Content-Type: application/json
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
 ### Example 6: Join a scheduled meeting with joinMeetingId and passcode
-The following shows an example that requires a **joinMeetingId** and a **passcode** to join an existing meeting. You can retrieve these properties from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
+The following example  requires a **joinMeetingId** and a **passcode** to join an existing meeting. You can retrieve these properties from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
 #### Request
 
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -1495,6 +1503,8 @@ Content-Type: application/json
 ---
 
 #### Response
+
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "join-meeting-with-join-meeting-id-and-passcode",
@@ -1573,7 +1583,7 @@ Content-Type: application/json
 ```
 
 ### Example 7: Join a scheduled meeting with joinMeetingId
-The following shows an example that requires a **joinMeetingId** but doesn't require a **passcode** to join an existing meeting. You can retrieve the **joinMeetingId** property from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
+The following example requires a **joinMeetingId** but doesn't require a **passcode** to join an existing meeting. You can retrieve the **joinMeetingId** property from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
 #### Request
 
@@ -1652,6 +1662,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "join-meeting-with-join-meeting-id-and-without-passcode",
@@ -1734,7 +1745,7 @@ To join the meeting with application hosted media, update the media config with 
 
 #### Request
 
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -1815,6 +1826,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response
 <!-- {
   "blockType": "response",
   "name": "join-meeting-app-hosted-media",
@@ -1988,6 +2000,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "join-channel-meeting-service-hosted-media",
@@ -2074,14 +2087,14 @@ Content-Type: application/json
 ```
 
 ### Example 10: Join channel meeting as a guest with service hosted media
-For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.
+For joining a channel meeting as a guest, you need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.
 The display name is the name you want to be displayed in the meeting for your guest identity. The ID may be a unique ID identifying the guest identity.
 
 > **Note:** This example needs the `Calls.JoinGroupCallsAsGuest.All` permission.
 
 #### Request
 
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -2182,6 +2195,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "join-channel-meeting-as-guest-service-hosted-media",
@@ -2378,7 +2392,7 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby.
+> **Note:** The application doesn't receive the roster for participants in the meeting until its admitted from lobby.
 
 ### Example 11: Create peer-to-peer PSTN call with service hosted media
 
@@ -2478,6 +2492,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -2665,6 +2680,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {

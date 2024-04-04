@@ -6,6 +6,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List manager

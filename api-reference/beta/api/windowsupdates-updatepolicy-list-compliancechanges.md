@@ -3,8 +3,9 @@ title: "List complianceChanges"
 description: "Get a list of the complianceChange objects and their properties."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List complianceChanges

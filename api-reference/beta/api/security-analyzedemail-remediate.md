@@ -5,6 +5,7 @@ author: MishraSoumyaMS
 ms.localizationpriority: medium
 ms.subservice: security
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # analyzedEmail: remediate
@@ -128,7 +129,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

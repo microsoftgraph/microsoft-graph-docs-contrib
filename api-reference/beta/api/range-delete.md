@@ -3,8 +3,9 @@ title: "Range: delete"
 description: "Deletes the cells associated with the range."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Range: delete

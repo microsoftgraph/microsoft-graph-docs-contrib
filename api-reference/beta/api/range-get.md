@@ -3,8 +3,9 @@ title: "Get Range"
 description: "Retrieve the properties and relationships of range object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get Range

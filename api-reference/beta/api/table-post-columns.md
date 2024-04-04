@@ -3,8 +3,9 @@ title: "Create TableColumn"
 description: "Use this API to create a new TableColumn."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Create TableColumn

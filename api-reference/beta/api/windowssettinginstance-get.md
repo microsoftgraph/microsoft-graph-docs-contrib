@@ -5,6 +5,7 @@ author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get windowsSettingInstance
@@ -89,6 +90,10 @@ GET https://graph.microsoft.com/beta/me/settings/windows/{windowsSettingId}/inst
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-windowssettinginstance-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-windowssettinginstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

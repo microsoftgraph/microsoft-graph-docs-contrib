@@ -5,6 +5,7 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # call: redirect
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet. The terms "redirecting" and "forwarding" a call are used interchangeably.
+Redirect an incoming call that wasn't [answered](./call-answer.md) or [rejected](./call-reject.md) yet. The terms "redirecting" and "forwarding" a call are used interchangeably.
 
 The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.
 
@@ -61,7 +62,7 @@ If successful, this method returns a `202 Accepted` response code.
 ## Examples
 These examples cover a workflow of an incoming call notification and how that call is redirected.
 
-> **Note:** The response objects shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response objects shown here might be shortened for readability. All the properties are returned from an actual call.
 
 ### Example 1: Forward a call to a target
 
@@ -317,6 +318,8 @@ Content-Type: application/json
 
 #### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "ignored", 
   "name": "call-redirect-simuring"
@@ -360,6 +363,7 @@ Content-Type: application/json
 
 #### Response
 
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -489,6 +493,7 @@ This call requires an application instance with a PSTN number assigned. For deta
 
 #### Request
 
+The following example shows a request.
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
@@ -515,6 +520,7 @@ Content-Type: application/json
 ```
 #### Response
 
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->

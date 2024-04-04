@@ -3,8 +3,9 @@ title: "RangeSort: apply"
 description: "Perform a sort operation."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # RangeSort: apply

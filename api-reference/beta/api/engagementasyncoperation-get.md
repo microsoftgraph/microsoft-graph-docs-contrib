@@ -5,6 +5,7 @@ author: "aditijha4"
 ms.localizationpriority: medium
 ms.prod: "employee-engagement"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get engagementAsyncOperation

@@ -3,8 +3,9 @@ title: "Table: reapplyFilters"
 description: "Reapplies all the filters currently on the table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Table: reapplyFilters

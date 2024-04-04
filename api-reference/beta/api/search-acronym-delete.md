@@ -5,6 +5,7 @@ author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Delete acronym
@@ -97,7 +98,6 @@ DELETE https://graph.microsoft.com/beta/search/acronyms/733b26d5-af76-4eea-ac69-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

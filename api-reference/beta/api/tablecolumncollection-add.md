@@ -3,8 +3,9 @@ title: "TableColumnCollection: add"
 description: "Adds a new column to the table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # TableColumnCollection: add

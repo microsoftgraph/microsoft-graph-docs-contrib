@@ -5,6 +5,7 @@ author: "akjo"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.topic: reference
 ---
 
 # Add member to channel
@@ -49,6 +50,9 @@ Include the following properties in the request body.
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
+
+> [!NOTE]
+> The response code `404 Not Found` is returned when you attempt to add a disabled/blocked user.
 
 ## Examples
 

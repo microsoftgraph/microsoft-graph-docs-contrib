@@ -3,7 +3,7 @@ title: "Update macOSEndpointProtectionConfiguration"
 description: "Update the properties of a macOSEndpointProtectionConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

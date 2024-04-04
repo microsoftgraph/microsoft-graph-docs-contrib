@@ -3,8 +3,9 @@ title: "updatableAssetGroup: addMembersById"
 description: "Add members of the same type to an updatableAssetGroup."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # updatableAssetGroup: addMembersById

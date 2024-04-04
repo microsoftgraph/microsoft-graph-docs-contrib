@@ -3,8 +3,9 @@ title: "Delete operationalInsightsConnection"
 description: "Delete an operationalInsightsConnection object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Delete operationalInsightsConnection

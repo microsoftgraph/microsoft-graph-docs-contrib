@@ -3,8 +3,9 @@ title: "RangeFormat: autofitColumns"
 description: "Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # RangeFormat: autofitColumns

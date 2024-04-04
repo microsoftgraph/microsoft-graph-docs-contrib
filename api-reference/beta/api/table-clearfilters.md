@@ -3,8 +3,9 @@ title: "Table: clearFilters"
 description: "Clears all the filters currently applied on the table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Table: clearFilters

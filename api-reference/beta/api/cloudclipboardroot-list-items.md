@@ -5,6 +5,7 @@ author: "yuechen7"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List cloudClipboard items
@@ -113,7 +114,6 @@ GET https://graph.microsoft.com/beta/me/cloudClipboard/items
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

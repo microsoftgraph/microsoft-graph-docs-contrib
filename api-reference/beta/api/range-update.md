@@ -3,8 +3,9 @@ title: "Update range"
 description: "Update the properties of range object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Update range

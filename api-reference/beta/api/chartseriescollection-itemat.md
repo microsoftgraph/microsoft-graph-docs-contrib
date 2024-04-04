@@ -3,8 +3,9 @@ title: "ChartSeriesCollection: ItemAt"
 description: "Retrieves a series based on its position in the collection"
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # ChartSeriesCollection: ItemAt

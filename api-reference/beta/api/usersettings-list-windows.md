@@ -5,6 +5,7 @@ author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List Windows settings
@@ -100,6 +101,10 @@ GET https://graph.microsoft.com/beta/me/settings/windows
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-windowssetting1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-windowssetting1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -201,6 +206,10 @@ GET https://graph.microsoft.com/beta/me/settings/windows?$filter=settingType eq 
 [!INCLUDE [sample-code](../includes/snippets/php/list-windowssetting2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-windowssetting2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-windowssetting2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -295,6 +304,10 @@ GET https://graph.microsoft.com/beta/me/settings/windows?$filter=settingType eq 
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-windowssetting3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-windowssetting3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -393,6 +406,10 @@ GET https://graph.microsoft.com/beta/me/settings/windows?$filter=windowsDeviceId
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-windowssetting4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-windowssetting4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "avijityadav"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # todoTask: delta

@@ -27,9 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chatmessage_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chatmessage-post-permissions.md)]
 
-> **Note**: The Group.ReadWrite.All permissino is supported only for backward compatibility. We recommend that you update your solutions to use the alternative permissions listed in the table.
-
-> **Note**: Application permissions are only supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft might require you or your customers to pay additional fees based on the amount of data imported.
+> [!NOTE]
+> - The Group.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use the alternative permissions listed in the table.
+> - Application permissions are only supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft might require you or your customers to pay additional fees based on the amount of data imported.
 
 ### Permissions for chat
 <!-- { "blockType": "permissions", "name": "chatmessage_post_2" } -->

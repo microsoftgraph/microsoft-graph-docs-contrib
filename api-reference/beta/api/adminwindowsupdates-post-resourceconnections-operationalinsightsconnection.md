@@ -3,8 +3,9 @@ title: "Create operationalInsightsConnection"
 description: "Create a new operationalInsightsConnection object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Create operationalInsightsConnection

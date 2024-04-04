@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get cloudPcDeviceImage
@@ -57,7 +58,6 @@ If successful, this method returns a `200 OK` response code and a [cloudPcDevice
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcDevice
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/eda7ed64-7705-4079-9d08-c2bd883f4fff
 ```
 
 # [C#](#tab/csharp)

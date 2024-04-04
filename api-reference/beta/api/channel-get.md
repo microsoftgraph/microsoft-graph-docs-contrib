@@ -5,6 +5,7 @@ author: "nkramer"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.topic: reference
 ---
 
 # Get channel
@@ -21,15 +22,13 @@ This method supports federation. Only a user who is a member of the shared chann
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelSettings.Read.Group, ChannelSettings.ReadWrite.Group, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+<!-- { "blockType": "permissions", "name": "channel_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-get-permissions.md)]
 
 > [!NOTE]
 > - The ChannelSettings.Read.Group and ChannelSettings.ReadWrite.Group permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
@@ -157,6 +156,7 @@ HTTP/1.1 200 OK
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
     "membershipType": "standard",
+    "isArchived": false,
     "moderationSettings": {
         "userNewMessageRestriction": "everyone",
         "replyRestriction": "everyone",
@@ -188,6 +188,7 @@ Content-type: application/json
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
     "membershipType": "standard",
+    "isArchived": false,
     "moderationSettings": {
         "userNewMessageRestriction": "moderators",
         "replyRestriction": "everyone",
@@ -217,6 +218,7 @@ Content-type: application/json
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19%3Ad468258bc90f4a358361b5d73b89d39b%40thread.skype/General?groupId=8bb12236-b929-42e0-94a0-1c417466ebf8&tenantId=139d16b4-7223-43ad-b9a8-674ba63c7924",
     "membershipType": "private",
+    "isArchived": false,
     "moderationSettings": null
 }
 ```

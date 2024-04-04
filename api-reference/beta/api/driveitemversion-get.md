@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 author: "spgraph-docs-team"
+ms.topic: reference
 ---
 
 # Get a DriveItemVersion resource (preview)

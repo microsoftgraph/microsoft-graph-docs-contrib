@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "tommoser"
 ms.subservice: "security"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # informationProtectionLabel: evaluateApplication (deprecated)

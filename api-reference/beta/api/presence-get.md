@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "cloud-communications"
+ms.topic: reference
 ---
 
 # Get presence
@@ -23,12 +24,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "presence_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/presence-get-permissions.md)]
 
+> [!NOTE]
+> You can't use application permissions to access APIs under the `/me` path.
+
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/presence
 GET /users/{id}/presence
 GET /communications/presences
+GET /me/presence
 ```
 
 ## Request Headers

@@ -3,8 +3,9 @@ title: "RangeBorderCollection: ItemAt"
 description: "Gets a border object using its index"
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # RangeBorderCollection: ItemAt

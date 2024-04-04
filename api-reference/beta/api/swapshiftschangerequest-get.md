@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "akumar39"
 ms.subservice: "teams"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # Get swapShiftsChangeRequest
@@ -25,9 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+| Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+> [!NOTE]
+> The Schedule.Read.All and Schedule.ReadWrite.All application permissions are currently in private preview only and are not available for public use.
 
 ## HTTP request
 

@@ -24,7 +24,7 @@ In [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) a
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.requestSchedule"

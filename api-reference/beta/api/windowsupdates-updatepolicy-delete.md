@@ -3,8 +3,9 @@ title: "Delete updatePolicy"
 description: "Delete an updatePolicy object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Delete updatePolicy

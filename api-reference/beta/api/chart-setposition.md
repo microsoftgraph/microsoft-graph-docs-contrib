@@ -3,8 +3,9 @@ title: "Chart: setPosition"
 description: "Positions the chart relative to cells on the worksheet."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Chart: setPosition
@@ -34,15 +35,15 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|startCell|string|The start cell. This is where the chart is moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.|
-|endCell|string|Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.|
+|startCell|string|The start cell. It is where the chart is moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.|
+|endCell|string|Optional. The end cell. If specified, the chart's width and height is set to fully cover up this cell/range.|
 
 ## Response
 

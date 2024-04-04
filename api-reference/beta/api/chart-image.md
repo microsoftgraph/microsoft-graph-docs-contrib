@@ -3,8 +3,9 @@ title: "Chart: Image"
 description: "Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Chart: Image
@@ -34,16 +35,16 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/Ima
 | Name       | Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter | Type|Description|
 |:---------------|:--------|:----------|
 |height|number|Optional. The desired height of the resulting image.|
 |width|number|Optional. The desired width of the resulting image.|
-|fittingMode|string|Optional. The method used to scale the chart to the specified to the specified dimensions (if both height and width are set)."  Possible values are: `Fit`, `FitAndCenter`, `Fill`.|
+|fittingMode|string|Optional. The method used to scale the chart to the specified dimensions (if both height and width are set)." The possible values are: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## Response
 
@@ -74,12 +75,11 @@ Content-type: application/json
 
 You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 
-For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. Here is an example of a chart image returned with the default parameters.
+For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. The following example shows a chart image returned with the default parameters.
 
 :::image type="content" source="images/GetChart-default.png" alt-text="Screenshot of an Excel chart image displayed with the default height and width." loc-scope="third-party":::
 
-
-If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
+If you want to customize the display of the image, specify a height, width, and a fitting mode. The following example shows the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
 
 :::image type="content" source="images/GetChart-fill.png" alt-text="Screenshot of an Excel chart image displayed with the specified height and width." loc-scope="third-party":::
 

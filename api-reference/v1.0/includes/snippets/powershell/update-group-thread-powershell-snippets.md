@@ -9,6 +9,10 @@ Import-Module Microsoft.Graph.Groups
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
 	originalEndTimeZone = "originalEndTimeZone-value"
+	responseStatus = @{
+		response = ""
+		time = "datetime-value"
+	}
 	iCalUId = "iCalUId-value"
 	reminderMinutesBeforeStart = 
 	isReminderOn = $true

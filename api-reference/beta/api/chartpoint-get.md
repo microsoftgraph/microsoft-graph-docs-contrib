@@ -3,8 +3,9 @@ title: "Get ChartPoint"
 description: "Retrieve the properties and relationships of chartpoint object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get ChartPoint
@@ -44,6 +45,7 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [workbookChartPoint](../resources/workbookchartpoint.md) object in the response body.
+
 ## Example
 ##### Request
 The following example shows a request.

@@ -5,6 +5,7 @@ author: mohitpcad
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Update store
@@ -45,19 +46,19 @@ The following table shows the properties that can be edited for the [store](../r
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguageTag|String|Default language of the [microsoft.graph.termstore.store](../resources/termstore-store.md)|
-|languageTags|String collection|Available languages in the [microsoft.graph.termstore.store](../resources/termstore-store.md)|
+|defaultLanguageTag|String|Default language of the [store](../resources/termstore-store.md)|
+|languageTags|String collection|Available languages in the [store](../resources/termstore-store.md)|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [store](../resources/termstore-store.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.termStore.store](../resources/termstore-store.md) object in the response body.
 
 ## Examples
 
 ### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -104,7 +105,8 @@ Content-Type: application/json
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -136,6 +138,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-
-

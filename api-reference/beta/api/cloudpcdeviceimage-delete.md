@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Delete cloudPcDeviceImage
@@ -53,7 +54,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/{id}
+DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/435849e6-0263-4621-9f93-8657667af3bb
 ```
 
 # [C#](#tab/csharp)

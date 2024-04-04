@@ -5,6 +5,7 @@ author: "malvika-balaraj"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get analyzedEmail
@@ -95,7 +96,6 @@ GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{anal
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

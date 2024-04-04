@@ -3,8 +3,9 @@ title: "TableColumn: TotalRowRange"
 description: "Gets the range object associated with the totals row of the column."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # TableColumn: TotalRowRange
