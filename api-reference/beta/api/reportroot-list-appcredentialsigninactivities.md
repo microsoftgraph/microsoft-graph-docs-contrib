@@ -5,6 +5,7 @@ description: "Get a list of appCredentialSignInActivity object that contains rec
 ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
+ms.topic: reference
 ---
 
 # List appCredentialSignInActivities

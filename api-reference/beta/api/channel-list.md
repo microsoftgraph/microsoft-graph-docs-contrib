@@ -5,6 +5,7 @@ author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.subservice: "teams"
+ms.topic: reference
 ---
 
 # List channels

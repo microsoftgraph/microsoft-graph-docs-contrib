@@ -5,6 +5,7 @@ author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get subCategoryTemplate
@@ -27,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}
+GET /security/labels/categories/{categoryTemplateId}/subCategories/{subCategoryTemplateId}
 ```
 
 ## Optional query parameters
@@ -56,7 +57,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}
+GET https://graph.microsoft.com/beta/security/labels/categories/82d00422-1f60-46cd-9809-33ca0b4d2286/subCategories/2ac39915-dbeb-e933-82e2-92b981835fa0
 ```
 
 # [JavaScript](#tab/javascript)
@@ -66,7 +67,7 @@ GET https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionL
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -82,12 +83,16 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
     "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
-    "displayName": "String",
+    "displayName": "Vendor Invoice",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)"
-  }
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
+  },
+  "createdDateTime" : "2021-03-24T02:09:08Z"
+}
+
 }
 ```
 

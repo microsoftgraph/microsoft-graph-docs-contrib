@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
+ms.topic: reference
 ---
 
 # List files (terms of use agreement files)

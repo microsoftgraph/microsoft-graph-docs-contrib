@@ -5,6 +5,7 @@ author: "ttomi"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Update microsoftApplicationDataAccessSettings

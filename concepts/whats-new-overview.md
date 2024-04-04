@@ -23,6 +23,21 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - [Track changes for SharePoint site](/graph/api/site-delta) resources.
 - [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
 
+
+## April 2024: New in preview only
+
+### Industry data ETL
+
+The [outbound provisioning flow set](/graph/api/resources/industrydata-outboundprovisioningflowset), which represents a collection of [outbound provisioning flows](/graph/api/resources/industrydata-provisioningflow) used to configure how school data sync populates data in Microsoft 365 and Microsoft Entra ID, is now generally available.
+
+An outbound provisioning flow set can contain no more than one of each provisioning flow configuration: [userProvisioningFlow](/graph/api/resources/industrydata-userprovisioningflow), [classGroupProvisioingFlow](/graph/api/resources/industrydata-classgroupprovisioningflow), [securityGroupProvisioingFlow](/graph/api/resources/industrydata-securitygroupprovisioningflow), [administrativeUnitProvisioingFlow](/graph/api/resources/industrydata-administrativeunitprovisioningflow).
+
+When calling the [industry data ETL API](/graph/api/resources/industrydata-overview), take advantage of more granular permissions added for reading or writing outbound provisioning flow set data by using the new permissions `IndustryData-OutboundFlow.Read.All` and `IndustryData-OutboundFlow.ReadWrite.All`.
+
+### People and workplace intelligence | People 
+
+Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights) method on the **peopleAdminSettings** resource..
+
 ## March 2024: New and generally available
 
 ### Applications
@@ -110,67 +125,6 @@ Added the ability to get, get list, update Microsoft Defender for Identity [heal
 ### Users
 
 Added the ability to convert an external user to an internal member user using the [user: convertExternalToInternalMemberUser](/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta&preserve-view=true) API. This conversion allows the converted users to maintain their existing user object and access, while gaining the full privileges of an internal member user in the tenant.
-
-## February 2024: New and generally available
-
-### Microsoft Graph Toolkit
-
-Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
-
-### Identity and access | Identity and sign-in
-
-- Introduced the following more granular delegated and application permissions for managing tenant branding through the [organizationalBranding](/graph/api/resources/organizationalbranding?view=graph-rest-beta&preserve-view=true) and [organizationalBrandingLocalization](/graph/api/resources/organizationalbrandinglocalization?view=graph-rest-beta&preserve-view=true) resource types:
-  - Use *OrganizationalBranding.Read.All* permission for read operations instead of the *Organization.Read.All* permission.
-  - Use *OrganizationalBranding.ReadWrite.All* permission for read and write operations instead of the *Organization.ReadWrite.All* permission.
-
-## February 2024: New in preview only
-
-
-### Calendars
-
-Use the **iCalUId** property on [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to get the unique identifier for an event across calendars.
-
-### Search
-
-Set up [acronym](/graph/api/resources/search-acronym), [bookmark](/graph/api/resources/search-bookmark), and [qna](/graph/api/resources/search-qna) resources as [administrative search answers for users in an organization](search-concept-answers.md).
-
-### Education
-
-- Teachers can [activate](/graph/api/educationassignment-activate?view=graph-rest-beta&preserve-view=true) an inactive [assignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) to signal that the assignment has further action items for teachers or students.
-- Teachers can [deactivate](/graph/api/educationassignment-deactivate?view=graph-rest-beta&preserve-view=true) and mark an assignment as inactive to signal that the assignment has no further action items for teachers and students.
-
-### Identity and access | Directory management
-
-- Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
-- Enabled tenants to [update](/graph/api/organization-update?view=graph-rest-beta&preserve-view=true) the following properties of the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) entity: **businessPhones**, **city**, **postalCode**, **preferredLanguage**, **state**, **street**.
-- You can now invite external users to Teams and manage the lifecycle of their invitation through the [pendingExternalUserProfile resource type](/graph/api/resources/pendingexternaluserprofile?view=graph-rest-beta&preserve-view=true) and its associated methods. After the user redeems their pending profile, you can manage their profile in your tenant through the [externalUserProfile resource type](/graph/api/resources/externaluserprofile?view=graph-rest-beta&preserve-view=true) and its associated methods.
-
-### Identity and access | Identity and sign-in
-- Added the ability to target the device code authentication flow using Microsoft Entra Conditional Access. Configure the [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true) > **conditions** property > **authenticationFlows** property of [conditionalAccessConditionSet complex type](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true) > **transferMethods** property of [conditionalAccessAuthenticationFlows complex type](/graph/api/resources/conditionalaccessauthenticationflows?view=graph-rest-beta&preserve-view=true).
-
-### Reports | Partner billing reports
-
-Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-beta&preserve-view=true) API to access billed invoice reconciliation data.
-
-### Teamwork and communications | Apps
-
-Use the **dashboardCards** navigation property on [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) to get dashboard cards specified in the manifest of a [teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true).
-
-### Teamwork and communications | Calls and online meetings
-
-Microsoft Teams custom meeting templates allow you to specify values for many of the meeting options available to meeting organizers. Use the **meetingTemplateId** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) to create an online meeting with a meeting template.
-
-### Teamwork and communications | Messaging
-
-- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List members of channel](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true) method.
-- Enabled the `$top` query parameter for the [List members of team](/graph/api/team-list-members?view=graph-rest-beta&preserve-view=true) method.
-
-### Teamwork and communications | Shift management
-
-- Added the ability to [get shifts](/graph/api/team-getshifts?view=graph-rest-beta&preserve-view=true) and [get time offs](/graph/api/team-gettimesoff?view=graph-rest-beta&preserve-view=true) across all teams that a user is a direct member of.
-- Added the **isCrossLocationShiftRequestApprovalRequired** and **isCrossLocationShiftsEnabled** properties on [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true) to support two cross location scenarios.
-- Added the ability to [get](/graph/api/shiftsroledefinition-get) and [update](/graph/api/shiftsroledefinition-update) front-line managers' capabilities in a Shifts schedule.
-- Added the ability to [get](/graph/api/shiftsroledefinition-get) and [update](/graph/api/shiftsroledefinition-update) frontline managers' capabilities in a Shifts schedule.
 
 ## Contribute to Microsoft Graph
 

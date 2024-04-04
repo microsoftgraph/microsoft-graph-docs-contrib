@@ -5,6 +5,7 @@ title: Create a SharePoint List
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 # Create a new list
 

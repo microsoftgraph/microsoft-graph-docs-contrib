@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: "RamjotSingh"
 ms.subservice: "teams"
+ms.topic: reference
 ---
 
 # chatMessage: delta

@@ -23,7 +23,7 @@ Specifies the maximum and minimum sizes (in kilobytes) that an incoming message 
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

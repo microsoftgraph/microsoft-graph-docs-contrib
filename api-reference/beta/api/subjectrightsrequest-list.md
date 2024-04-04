@@ -5,6 +5,7 @@ author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List subjectRightsRequests

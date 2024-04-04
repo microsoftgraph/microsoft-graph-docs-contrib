@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const subCategoryTemplate = {
+const subcategoryTemplate = {
   '@odata.type': '#microsoft.graph.security.subCategoryTemplate',
   displayName: 'String',
   createdBy: {
@@ -20,6 +20,6 @@ const subCategoryTemplate = {
 
 await client.api('/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories')
 	.version('beta')
-	.post(subCategoryTemplate);
+	.post(subcategoryTemplate);
 
 ```

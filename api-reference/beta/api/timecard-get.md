@@ -5,6 +5,7 @@ author: "akumar39"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get timeCard
@@ -25,9 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+|Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
->\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
+> [!IMPORTANT]
+> When you use the Schedule.Read.All and Schedule.ReadWrite.All application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
 
 ## HTTP request
 
@@ -38,7 +40,7 @@ GET /teams/{teamId}/schedule/timeCards/{timeCardId}
 ```
 
 ## Optional query parameters
-This method does not support [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 

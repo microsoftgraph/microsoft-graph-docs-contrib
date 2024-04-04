@@ -5,6 +5,7 @@ author: "ishatyagiit"
 ms.localizationpriority: medium
 ms.prod: "employee-goals"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Create goalsExportJob
