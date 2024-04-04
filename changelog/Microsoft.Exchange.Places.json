@@ -13,14 +13,6 @@
         {
           "Id": "67d4720a-8fd3-415d-bc76-1f71ca43e1e0",
           "ApiChange": "Resource",
-          "ChangedApiName": "workplace",
-          "ChangeType": "Addition",
-          "Description": "Added the [workplace](https://learn.microsoft.com/en-us/graph/api/resources/workplace?view=graph-rest-beta) resource type.",
-          "Target": "workplace"
-        },
-        {
-          "Id": "67d4720a-8fd3-415d-bc76-1f71ca43e1e0",
-          "ApiChange": "Resource",
           "ChangedApiName": "workplaceSensor",
           "ChangeType": "Addition",
           "Description": "Added the [workplaceSensor](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensor?view=graph-rest-beta) resource type.",
@@ -48,7 +40,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-09-26T18:53:24.5258032Z",
       "WorkloadArea": "Calendars",
-      "SubArea": "Workplace"
+      "SubArea": "Places"
     },
     {
       "ChangeList": [
