@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 description: "Permanently delete a driveItem by using its ID."
 doc_type: apiPageType
+ms.topic: reference
 ---
 # driveItem: permanentDelete
 

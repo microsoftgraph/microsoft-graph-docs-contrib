@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "madhavpatel6"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # Delete featureRolloutPolicy

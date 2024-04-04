@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List Bookings calendarView

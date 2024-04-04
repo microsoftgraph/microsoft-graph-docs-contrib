@@ -5,6 +5,7 @@ description: " Get a site, list, or content type column."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.topic: reference
 ---
 
 # Get columnDefinition

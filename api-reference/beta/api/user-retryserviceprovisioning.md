@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.prod: "users"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # user: retryServiceProvisioning

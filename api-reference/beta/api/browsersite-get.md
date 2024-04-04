@@ -5,6 +5,7 @@ author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.subservice: "edge-browser-management"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get browserSite

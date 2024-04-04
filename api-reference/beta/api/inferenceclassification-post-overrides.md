@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
 ms.subservice: mail
+ms.topic: reference
 ---
 
 # Create inferenceClassificationOverride

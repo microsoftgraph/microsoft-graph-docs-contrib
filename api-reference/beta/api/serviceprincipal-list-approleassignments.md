@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
+ms.topic: reference
 ---
 
 # List appRoleAssignments granted to a service principal

@@ -5,6 +5,7 @@ author: "linkhp"
 ms.localizationpriority: high
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get authenticationFlowsPolicy
