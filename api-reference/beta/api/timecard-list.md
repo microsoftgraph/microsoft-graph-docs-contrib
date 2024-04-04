@@ -3,7 +3,7 @@ title: "List timeCard"
 description: "Retrieve a list of timeCard entries in the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

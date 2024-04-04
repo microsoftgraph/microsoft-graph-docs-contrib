@@ -3,7 +3,7 @@ title: "tenantRelationship: findTenantInformationByDomainName"
 description: "Given a domain name, search for a tenant and read its tenantInformation."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

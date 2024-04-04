@@ -3,7 +3,7 @@ title: "riskDetection resource type"
 description: "risk detections"
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

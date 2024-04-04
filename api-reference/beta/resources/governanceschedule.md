@@ -3,7 +3,7 @@ title: "governanceSchedule resource type"
 description: "Represents the schedule for a governanceRoleAssignmentRequest. For a role assignment request, the schedule controls when to perform the role assignment operation, when to stop the role assignment, and how frequently to do the role assignment operation. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
 ---

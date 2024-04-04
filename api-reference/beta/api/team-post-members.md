@@ -3,7 +3,7 @@ title: "Add member to team"
 description: "Add a new member to a team."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -53,6 +53,9 @@ In the request body, supply a JSON representation of the [conversationMember](..
 If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body. For best results, stagger calls with 2 seconds of buffer.
 
 For best results, stagger calls with a 2 second buffer.
+
+> [!NOTE]
+> The response code `404 Not Found` is returned when you attempt to add a disabled/blocked user.
 
 ## Examples
 

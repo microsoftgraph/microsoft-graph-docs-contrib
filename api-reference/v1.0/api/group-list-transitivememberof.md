@@ -4,7 +4,7 @@ description: "Get groups that the group is a member of.  This operation is trans
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -139,7 +139,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -153,7 +153,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -170,7 +170,7 @@ Content-type: text/plain
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -184,7 +184,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -201,7 +201,7 @@ Content-type: text/plain
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -215,7 +215,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -246,7 +246,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -260,7 +260,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

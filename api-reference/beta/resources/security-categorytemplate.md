@@ -3,7 +3,7 @@ title: "categoryTemplate resource type"
 description: "Specifies a group of similar types of content in a particular department."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies a group of similar types of content in a particular department.
-
+Supports CRUD operations to apply and manage the [appliedCategory](security-appliedcategory.md) descriptor, and any [subCategory](security-subcategory.md) descriptor for a [retentionLabel](security-retentionlabel.md). These file plan descriptors supplement a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
@@ -31,10 +30,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the category. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the category is created. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|displayName|String|Unique string that defines a category name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|id|String|Unique ID of the category. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the category descriptor. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the category descriptor is created. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
+|displayName|String|Unique string that defines a category name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
+|id|String|Unique ID of the category. Inherited from [microsoft.graph.entity](../resources/entity.md). Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|

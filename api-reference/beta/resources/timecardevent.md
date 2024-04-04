@@ -3,7 +3,7 @@ title: "timeCardEvent resource type"
 description: "Represents a specific timecard event."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

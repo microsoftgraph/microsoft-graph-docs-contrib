@@ -3,7 +3,7 @@ title: "reportRoot resource type"
 description: "Represents a container for Microsoft Entra ID reporting resources."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Use the Microsoft Graph connectors API to build custom connectors 
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Work with the Microsoft Graph connectors API
@@ -48,4 +48,5 @@ To learn more, see [Use external groups to manage permissions to Microsoft Graph
 
 ## Next step
 
-- [Build a custom connector](/graph/connecting-external-content-build-quickstart)
+> [!div class="nextstepaction"]
+> [Build a custom connector](/graph/connecting-external-content-build-quickstart)

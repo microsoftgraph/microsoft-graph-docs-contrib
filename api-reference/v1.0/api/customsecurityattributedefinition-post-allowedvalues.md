@@ -3,7 +3,7 @@ title: "Create allowedValue"
 description: "Create a new allowedValue object."
 author: "CecilyK"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

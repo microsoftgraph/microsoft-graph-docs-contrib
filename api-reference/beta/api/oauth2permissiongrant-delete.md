@@ -3,7 +3,7 @@ title: "Delete oAuth2PermissionGrant (a delegated permission grant)"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -55,7 +55,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

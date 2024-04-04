@@ -3,7 +3,7 @@ title: "Create timeOff"
 description: "Create a new timeOff."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

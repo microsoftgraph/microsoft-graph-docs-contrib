@@ -3,7 +3,7 @@ title: "Get samlOrWsFedExternalDomainFederation"
 description: "Read the properties and relationships of a samlOrWsFedExternalDomainFederation object."
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List identityApiConnectors"
 description: "Get a list of the identityApiConnector objects and their properties."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

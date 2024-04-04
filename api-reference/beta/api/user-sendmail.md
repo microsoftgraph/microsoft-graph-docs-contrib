@@ -3,7 +3,7 @@ title: "user: sendMail"
 description: "Send the message specified in the request body using either JSON or MIME format."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -453,7 +453,7 @@ MDRNQjY5ODFhcGNwXy0t
 ```
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

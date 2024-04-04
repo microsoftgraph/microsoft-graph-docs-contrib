@@ -11,25 +11,27 @@ $params = @{
 	displayName = "String"
 	filterStartDateTime = [System.DateTime]::Parse("String (timestamp)")
 	filterEndDateTime = [System.DateTime]::Parse("String (timestamp)")
-	recordTypeFilter = "String"
-	keywordFilter = "String"
-	serviceFilter = "String"
-	operationFilters = @(
-		"String"
-	)
-	userPrincipalNameFilters = @(
-		"String"
-	)
-	ipAddressFilters = @(
-		"String"
-	)
-	objectIdFilters = @(
-		"String"
-	)
-	administrativeUnitIdFilters = @(
-		"String"
-	)
-	status = "String"
+	recordTypeFilters = @(
+	"String"
+)
+keywordFilter = "String"
+serviceFilter = "String"
+operationFilters = @(
+"String"
+)
+userPrincipalNameFilters = @(
+"String"
+)
+ipAddressFilters = @(
+"String"
+)
+objectIdFilters = @(
+"String"
+)
+administrativeUnitIdFilters = @(
+"String"
+)
+status = "String"
 }
 
 New-MgBetaSecurityAuditLogQuery -BodyParameter $params

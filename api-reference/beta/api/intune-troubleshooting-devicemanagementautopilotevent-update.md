@@ -3,7 +3,7 @@ title: "Update deviceManagementAutopilotEvent"
 description: "Update the properties of a deviceManagementAutopilotEvent object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

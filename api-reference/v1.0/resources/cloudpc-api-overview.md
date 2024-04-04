@@ -3,19 +3,18 @@ title: "Working with Windows 365 Cloud PCs using the Microsoft Graph API"
 description: "The Microsoft Graph API enables programmatic access to Cloud PC information and management actions on your organization."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
 # Working with Windows 365 Cloud PCs using the Microsoft Graph API
 
-Windows 365 is a cloud-based service that automatically creates a new type of Windows virtual machine (Cloud PCs) for your end users. Each Cloud PC is assigned to an individual user as a  dedicated Windows device. Windows 365 provides the productivity, security, and collaboration benefits of Microsoft 365.
+Windows 365 is a cloud-based service that automatically creates a new type of Windows virtual machine (Cloud PCs) for your end users. Each Cloud PC is assigned to an individual user as a dedicated Windows device. Windows 365 provides the productivity, security, and collaboration benefits of Microsoft 365.
 
 The Microsoft Graph API enables programmatic access to Cloud PC information and management actions on your organization. The API performs the same operations as those available through Microsoft Endpoint Manager.
 
 > [!IMPORTANT]
-> * Currently, only the [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available. All other Cloud PC endpoints are in beta only.
-> * Using the Microsoft Graph API for Cloud PCs requires an active [Windows 365 license](https://www.microsoft.com/windows-365) for the organization. Currently, the Microsoft Graph API is available for both Windows 365 Enterprise and Windows 365 Business.
+> Using the Microsoft Graph API for Cloud PCs requires an active [Windows 365 license](https://www.microsoft.com/windows-365) for the organization. Currently, the Microsoft Graph API is available for both Windows 365 Enterprise and Windows 365 Business.
 
 ## Using the Microsoft Graph API for Cloud PCs
 
@@ -24,6 +23,18 @@ With Microsoft Graph, you can provision and manage Cloud PCs in your organizatio
 ## Using Microsoft Graph permissions
 
 Microsoft Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Windows 365 resources. Typically, you specify the permissions in the Microsoft Entra admin center. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+## Common use cases
+
+|Use cases|REST resources|See also|
+|:---|:---|:---|
+|List, get, create, update, delete, or assign provisioning policies.|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|[Provisioning overview](/windows-365/enterprise/provisioning)|
+|Manage Cloud PCs including end Cloud PC grace period, troubleshoot, reboot, rename, and restore a Cloud PC.|[cloudPC](../resources/cloudpc.md)|[Cloud PCs lifecycle](/windows-365/enterprise/lifecycle)|
+|List, get, create, delete, and get source images.|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|[Device images overview](/windows-365/enterprise/device-images)|
+|List and get gallery images.|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|[Gallery images overview](/windows-365/enterprise/device-images)|
+|List, get, create, update delete, and run health checks for Azure network connections.|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|[On-premises network connection overview](/windows-365/enterprise/on-premises-network-connections)|
+|List audit events for Cloud PCs, get a specific audit event, and get audit activity types.|[cloudPcAuditEvent](../resources/cloudpcauditevent.md)|[Get Cloud PC audit logs](/windows-365/enterprise/get-cloud-pc-audit-logs-using-powershell)|
+|List, get, create, update, delete or assign user settings.|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|[User settings overview](../resources/cloudpcusersetting.md)|
 
 ## Next steps
 - Check out the [overview for Windows 365 Cloud PC on Microsoft Graph](/graph/cloudpc-concept-overview).

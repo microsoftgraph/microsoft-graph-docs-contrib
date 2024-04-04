@@ -3,7 +3,7 @@ title: "timeCard: endBreak"
 description: "End the open break in a specific timecard."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

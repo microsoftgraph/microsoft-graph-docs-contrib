@@ -3,7 +3,7 @@ title: "emailIdentity resource type"
 description: "Represents the email identity of a user."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

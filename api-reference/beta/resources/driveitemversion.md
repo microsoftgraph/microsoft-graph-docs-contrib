@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 description: "Represents a specific version of a driveItem."
 title: "driveItemVersion resource type"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

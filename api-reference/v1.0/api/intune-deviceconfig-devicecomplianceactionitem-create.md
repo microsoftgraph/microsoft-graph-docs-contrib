@@ -3,7 +3,7 @@ title: "Create deviceComplianceActionItem"
 description: "Create a new deviceComplianceActionItem object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

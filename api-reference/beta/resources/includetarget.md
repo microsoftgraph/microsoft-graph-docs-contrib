@@ -3,7 +3,7 @@ title: "includeTarget resource type"
 description: "Defines the users and groups that are included in a set of changes."
 author: "msft-poulomi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

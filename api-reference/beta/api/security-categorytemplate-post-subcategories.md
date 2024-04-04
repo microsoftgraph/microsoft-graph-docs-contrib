@@ -3,7 +3,7 @@ title: "Create subCategoryTemplate"
 description: "Create a new subCategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories
+POST /security/labels/categories/{categoryTemplateId}/subCategories
 ```
 
 ## Request headers
@@ -43,19 +43,18 @@ You can specify the following properties when creating a **subCategoryTemplate**
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String| Unique string that defines a sub-category name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
+|displayName|String| Unique string that defines a subcategory name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
 
 
 
 
 ## Response
-
 If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object in the response body.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -63,15 +62,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories
+POST https://graph.microsoft.com/beta/security/labels/categories/{categoryTemplateId}/subCategories
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
-  "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
+  "displayName": "Vendor Invoice",
 }
 ```
 
@@ -82,7 +78,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -97,11 +93,14 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
   "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
-  "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)"
-}
+  "displayName": "Vendor Invoice",
+  "createdBy":  {
+        "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Admin"
+        }
+      },
+      "createdDateTime": "2021-03-24T02:09:08Z"
+    }
 ```
 

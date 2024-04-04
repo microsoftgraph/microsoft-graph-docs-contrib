@@ -3,7 +3,7 @@ title: "Update unifiedRoleManagementPolicy"
 description: "Update the details of a role management policy."
 author: "weijie-lin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -252,7 +252,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

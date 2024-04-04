@@ -3,7 +3,7 @@ title: "Get timeCard"
 description: "Get the properties and relationships of a timeCard object by ID."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
