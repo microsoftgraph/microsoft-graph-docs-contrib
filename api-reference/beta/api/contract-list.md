@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "adimitui"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List contracts

@@ -5,6 +5,7 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List dailyPrintUsageByPrinter

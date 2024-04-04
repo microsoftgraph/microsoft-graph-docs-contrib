@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "michaelrm97"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Delete registeredUser

@@ -5,6 +5,7 @@ author: "MS-Arko"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get windowsSetting

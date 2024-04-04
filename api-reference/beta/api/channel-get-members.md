@@ -5,6 +5,7 @@ author: "akjo"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get member of channel

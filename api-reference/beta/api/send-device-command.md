@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: project-rome
 author: "ailae"
+ms.topic: reference
 ---
 
 # Send device command (deprecated)

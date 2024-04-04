@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vasrinwork"
 ms.subservice: "planner"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # plannerPlan: moveToContainer

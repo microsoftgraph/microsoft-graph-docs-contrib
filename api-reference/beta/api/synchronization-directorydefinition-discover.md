@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # directoryDefinition: discover

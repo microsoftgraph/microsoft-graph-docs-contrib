@@ -5,6 +5,7 @@ author: "nkramer"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.subservice: "teams"
+ms.topic: reference
 ---
 
 # conversationMember: add

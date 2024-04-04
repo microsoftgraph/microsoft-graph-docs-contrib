@@ -1452,6 +1452,7 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+|excused|
 
 ### educationFeedbackResourceOutcomeStatus values
 

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: "outlook"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Get eventMessage
