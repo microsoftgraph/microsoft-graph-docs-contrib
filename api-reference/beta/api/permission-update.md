@@ -6,6 +6,7 @@ title: Change sharing permissions
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
+ms.topic: reference
 ---
 # Update sharing permission
 

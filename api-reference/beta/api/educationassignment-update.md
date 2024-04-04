@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Update educationassignment

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
+ms.topic: reference
 ---
 
 # Get attachment

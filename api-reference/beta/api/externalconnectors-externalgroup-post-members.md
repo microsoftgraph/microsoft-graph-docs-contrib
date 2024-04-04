@@ -5,6 +5,7 @@ author: "snlraju-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Create externalGroupMember

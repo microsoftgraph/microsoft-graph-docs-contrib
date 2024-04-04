@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
 ms.subservice: excel
+ms.topic: reference
 ---
 
 # Update icon

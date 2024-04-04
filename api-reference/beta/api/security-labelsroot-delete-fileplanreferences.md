@@ -5,6 +5,7 @@ author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Delete filePlanReferenceTemplate
@@ -56,7 +57,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/labels/filePlanReferences/{filePlanReferenceTemplateId}
+DELETE https://graph.microsoft.com/beta/security/labels/filePlanReferences/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
 # [C#](#tab/csharp)
@@ -94,7 +95,7 @@ DELETE https://graph.microsoft.com/beta/security/labels/filePlanReferences/{file
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >
 <!-- {
   "blockType": "response",

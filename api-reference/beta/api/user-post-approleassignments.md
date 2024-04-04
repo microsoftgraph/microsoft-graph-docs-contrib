@@ -5,6 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "users"
 author: "psignoret"
+ms.topic: reference
 ---
 
 # Grant an appRoleAssignment to a user

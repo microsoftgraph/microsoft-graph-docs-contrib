@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "hafen-ms"
 ms.subservice: "security"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # List threatAssessmentRequests

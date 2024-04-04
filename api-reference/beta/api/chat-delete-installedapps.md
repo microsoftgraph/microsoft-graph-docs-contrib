@@ -5,6 +5,7 @@ author: "subray"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # Uninstall app in a chat
@@ -26,7 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_delete_installedapps" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-delete-installedapps-permissions.md)]
 
-> **Note**: The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

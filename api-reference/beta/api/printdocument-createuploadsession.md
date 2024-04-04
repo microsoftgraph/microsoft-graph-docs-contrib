@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "nilakhan"
 ms.subservice: "universal-print"
 doc_type: "apiPageType"
+ms.topic: reference
 ---
 
 # printDocument: createUploadSession

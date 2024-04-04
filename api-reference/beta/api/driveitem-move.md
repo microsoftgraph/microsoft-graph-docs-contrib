@@ -6,6 +6,7 @@ title: Move a file or folder
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 # Move a DriveItem to a new folder
 
