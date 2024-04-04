@@ -5,13 +5,22 @@ on:
     types:
     - created
 
+permissions:
+  pull-requests: write
+
 jobs:
   request_toc_gen:
     name: Request TOC generation
     if: ${{ github.event.issue.pull_request && contains(github.event.comment.body, '#gen-toc') && github.event.issue.state == 'open' }}
     runs-on: ubuntu-latest
     steps:
-    - run: echo '${{ toJSON(github) }}'
+    - uses: octokit/request-action@v2.x
+      id: get_pull_request
+      with:
+        route: GET /repos/{owner}/{repo}/pulls/{pull_number}
+        owner: ${{ github.repository_owner }}
+        repo: ${{ github.event.repository.name }}
+        pull_number: ${{ github.event.issue.number }}
       env:
-        BASE_REF: ${{ github.base_ref }}
-        HEAD_REF: ${{ github.head_ref }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: "echo latest release: '${{ steps.get_pull_request.outputs.data }}'"
