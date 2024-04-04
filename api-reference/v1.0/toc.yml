@@ -4811,7 +4811,7 @@ items:
               - name: Get delta
                 href: api/educationassignment-delta.md
               - name: Add grading category
-                href: api/educationassignment-post-gradingcategory.md
+                href: api/educationassignment-post-gradingcategories.md
               - name: Update grading category
                 href: api/educationgradingcategory-update.md
               - name: Remove grading category
