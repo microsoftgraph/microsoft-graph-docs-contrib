@@ -6,6 +6,7 @@ title: Get an entry from a SharePoint list
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
+ms.topic: reference
 ---
 # Get an item in a list
 

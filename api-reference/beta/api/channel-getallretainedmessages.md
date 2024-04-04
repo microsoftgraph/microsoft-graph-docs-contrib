@@ -5,6 +5,7 @@ author: "AgnesLiu"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # channel: getAllRetainedMessages

@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
 author: "ailae"
+ms.topic: reference
 ---
 
 # Get recent user activities

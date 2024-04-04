@@ -5,6 +5,7 @@ author: "saurabhjain0804"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # callRecord: getPstnBlockedUsersLog

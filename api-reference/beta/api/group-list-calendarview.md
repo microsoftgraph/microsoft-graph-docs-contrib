@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "iamgirishck"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List calendarView

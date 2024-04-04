@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
+ms.topic: reference
 ---
 
 # List accessReview reviewers (deprecated)

@@ -5,6 +5,7 @@ author: "nkramer"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.subservice: "teams"
+ms.topic: reference
 ---
 
 # Get channel
