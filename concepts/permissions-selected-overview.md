@@ -14,7 +14,7 @@
 
 # Overview of Selected Permissions in OneDrive and SharePoint
 
-SharePoint and OneDrive have a long-established permissions model that doesn't fit exactly into the scopes model. For example there couldn't exist a global scope that provides ReadWrite access to a single list in your tenant. Instead we have create the concept of *.Selected scopes to support these scenarios. Initially this was limited to Sites.Selected for Applications as a way to restrict an application's access to a single site collection. We have now added support for Lists, List Items, Folders, and Files as outlined in the table below - and all *.Selected scopes now support delegated and application modes.
+SharePoint and OneDrive have a long-established permissions model that doesn't fit exactly into the scopes model. For example, there couldn't exist a global scope that provides ReadWrite access to a single list in your tenant. Instead we have create the concept of *.Selected scopes to support these scenarios. Initially limited to Sites.Selected for Applications as a way to restrict an application's access to a single site collection. Lists, List Items, Folders, and Files as outlined in the table are now supported - and all *.Selected scopes now support delegated and application modes.
 
 > Due to the evolution of scope naming requirements the newer scopes are listed as a full tuple `*.SelectedOperations.Selected`, there is no functional difference compared to the `Sites.Selected` format.
 
@@ -29,22 +29,22 @@ SharePoint and OneDrive have a long-established permissions model that doesn't f
 
 ## How *.Selected Scopes work with SharePoint & OneDrive Permissions
 
-When an administrator consents to one or more of the *.Selected permissions for an application they are effectively delegating the management of permissions to the administrators of the resource. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. With *.Selected scopes an additional assignment action is required, an application consented for Lists.SelectedOperations.Selected would initially have no access.
+When an administrator consents to one or more of the *.Selected permissions for an application they are effectively delegating the management of permissions to the administrators of the resource. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. With *.Selected scopes an assignment action is required, an application consented for Lists.SelectedOperations.Selected would initially have no access.
 
 > Assigning application permissions breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design.
 
-An example of setting permissions is show below, in this case for a [site](../api-reference/beta/api/site-get-permission.md) but the logic is similar for [lists](), [list items](), [files](), or [folders]().
+An example of setting permissions is shown for [sites](../api-reference/beta/api/site-get-permission.md) but the logic is similar for [lists](../api-reference/beta/api/list-get-permission.md), [list items](../api-reference/beta/api/listitem-get-permission.md), [files](../api-reference/beta/api/driveitem-post-permission.md), or [folders](../api-reference/beta/api/listitem-get-permission.md).
 
 ### Roles
 
-There are four roles which can be assigned to an application for a given resource:
+There are four roles, which can be assigned to an application for a given resource:
 
 |Role|Description|
 |---|---|
-|read|Provides the ability to read the metadata and contents of the resource|
-|write|Provides the ability to read and modify the metadata and contents of the resource|
-|owner|For SharePoint and OneDrive for Business this represents the owner role|
-|fullcontrol|For SharePoint and OneDrive for Business this represents full control of the resource|
+|read|Read the metadata and contents of the resource|
+|write|Read and modify the metadata and contents of the resource|
+|owner|Represents the owner role|
+|fullcontrol|Represents full control of the resource|
 
 ### Request
 
@@ -122,19 +122,19 @@ The permission requirements vary by level, in all delegated cases the current us
 
 ### How Access is Calculated
 
-There are two types of tokens, Application Only and Delegated. In application only scenarios no user is present and are considered higher risk as the application can do everything at any time forwhich it is consented. With delegated the application can never exceed the current user's existing permissions and can be considered lower-risk for many scenarios. Delegated should be preferred when possible, but both modes are available to meet your needs.
+There are two types of tokens, Application Only and Delegated. Application only scenarios have no user present and are considered higher risk as the application can do everything at any time forwhich it is consented. With delegated the application can never exceed the current user's existing permissions and can be considered lower-risk for many scenarios. Delegated should be preferred when possible, but both modes are available to meet your needs.
 
-In all cases we conceptually store a tuple of Application Id, Resource Id, and Role. This means that [application] has [role] access to [resource]. You specify the application and role when a permissions is created through the API, the resolved path gives us the resource. For example, application Z has "read" access to the list at "/sites/dev/lists/list1".
+We conceptually store a tuple of Application Id, Resource Id, and Role. This means that [application] has [role] access to [resource]. You specify the application and role when a permissions is created through the API, the resolved path gives us the resource. For example, application Z has "read" access to the list at "/sites/dev/lists/list1".
 
-When calculating access we use the values provided in the token to roughly follow this flow:
+When calculating access, we use the values provided in the token to roughly follow this flow:
 
 1. Token type (Application/Delegated)
-2. Application ACL exists for supplied application id on resource or a securable heirarchical parent (inheritance)
+2. Application record exists for supplied application id on resource or a securable heirarchical parent (inheritance)
 3. Then:
 
     *Application Access*
 
-    For application access if an ACL is found for the application, and the role allows for the operation requested (read an item, update a list) then access is granted. 
+    For application access if a record is found for the application, and the role allows for the operation requested (read an item, update a list) then access is granted. 
 
     *Delegated Access*
 
@@ -143,9 +143,9 @@ When calculating access we use the values provided in the token to roughly follo
 ### Behavior of Consents / Notes
 
 * It is possible for an application to have multiple *.Selected consents and for those to be applied at various level across the tenant.
-* As soon as a scope is revoked from an application, access through that scope is lost. So IF an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection and then the Sites.* consent is revoke it would maintain access to the list it was given specific access to via the Lists.* consent and the previous call to list/permissions.
-* Higher level scopes such as Sites.* can be used to grant file specific level permissions, but lower scopes can never provide access to higher level resources. In this way you can limit the application to ONLY have access at the specific file level
-* Consent is an EntraID concept and is consumed by OneDrive and SharePoint through the provided token. We do not track/manage/enforce an additional level of consent. Once a token is presented with a given scope we honor it.
+* As soon as a scope is revoked from an application, access through that scope is lost. So if an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection and then the Sites.* consent is revoke it would maintain access to the list it was given specific access to via the Lists.* consent and the previous call to list/permissions.
+* Higher level scopes such as Sites.* can be used to grant file specific level permissions, but lower scopes can never provide access to higher level resources. Aloowing applications to ONLY have access at a specific level
+* Consent is an EntraID concept and is consumed by OneDrive and SharePoint through the provided token. We do not track/manage/enforce an additional level of consent. Once a token is presented with a given scope, we honor it.
 
 
 
