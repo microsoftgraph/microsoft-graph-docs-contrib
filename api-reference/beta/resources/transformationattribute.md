@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Attribute used to support transformations.
+Represents an attribute used to support transformations.
 
 ## Properties
 |Property|Type|Description|
