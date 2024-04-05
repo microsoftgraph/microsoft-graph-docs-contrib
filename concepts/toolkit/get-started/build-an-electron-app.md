@@ -230,7 +230,7 @@ let config: MsalElectronConfig = {
 
 For more information about how to implement this, see the [Microsoft Authentication Library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) sample.
 
-## Next Steps
+## Related content
 
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Microsoft Q&A](/answers/products/m365#microsoft-graph).
