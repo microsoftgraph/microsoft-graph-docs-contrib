@@ -11206,6 +11206,8 @@ items:
                 href: api/driveitem-list-permissions.md
               - name: Add permissions
                 href: api/driveitem-invite.md
+              - name: Add Application permissions
+                href: api/driveitem-post-permissions.md
               - name: Get permission
                 href: api/permission-get.md
               - name: Update permission
@@ -17548,6 +17550,19 @@ items:
                 href: api/contenttype-addcopy.md
               - name: List operations
                 href: api/list-list-operations.md
+              - name: Permissions
+                href: resources/permission.md
+                items:
+                  - name: Get list permissions
+                    href: api/list-get-permission.md
+                  - name: List list permissions
+                    href: api/list-list-permissions.md
+                  - name: Create list permissions
+                    href: api/list-post-permissions.md
+                  - name: Update list permissions
+                    href: api/list-update-permission.md
+                  - name: Delete list permissions
+                    href: api/list-delete-permission.md
           - name: Column definition
             items:
               - name: Column definition
@@ -17612,6 +17627,19 @@ items:
                 href: api/itemanalytics-get.md
               - name: List versions
                 href: api/listitem-list-versions.md
+              - name: Permissions
+                href: resources/permission.md
+                items:
+                  - name: Get listitem permissions
+                    href: api/listitem-get-permission.md
+                  - name: List listitem permissions
+                    href: api/listitem-list-permissions.md
+                  - name: Create listitem permissions
+                    href: api/listitem-post-permissions.md
+                  - name: Update listitem permissions
+                    href: api/listitem-update-permission.md
+                  - name: Delete listitem permissions
+                    href: api/listitem-delete-permission.md
           - name: Document set version
             items:
               - name: Document set version

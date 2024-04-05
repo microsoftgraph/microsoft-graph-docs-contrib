@@ -995,6 +995,9 @@ items:
       - name: Microsoft Entra built-in roles
         displayName: Microsoft Graph permissions
         href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
+      - name: Selected Permissions in OneDrive and SharePoint
+        displayName: Selected Permissions in OneDrive and SharePoint
+        href: permissions-selected-overview.md
     - name: Manage app access (CSPs)
       href: auth-cloudsolutionprovider.md
     - name: Limit mailbox access
