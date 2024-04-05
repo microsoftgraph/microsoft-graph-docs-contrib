@@ -92,7 +92,7 @@ contextBridge.exposeInMainWorld("main", {
 
 The `ElectronContextBridgeProvider` is responsible for communicating with `ElectronAuthenticator` (in the main process) to request access tokens and receive information regarding signed in state that is required for the mgt components to work.
 
-To use MGT components in your applications, they must be registered in the browser window that they execute. To do this the register functions for each component you wish to use must be imported.
+To use Microsoft Graph Toolkit components in your applications, they must be registered in the browser window that they open. To do this, you must import the register functions for each component you want to use.
 
 To initialize the `ElectronContextBridgeProvider` and register the Microsoft Graph Toolkit components, add the following code to the _src/renderer.ts_ file.
 
@@ -167,7 +167,7 @@ ElectronAuthenticator.initialize(config);
 
 ### Add a development Content Security Policy
 
-The application scaffolded by Electron Forge includes a default Content Security Policy, CSP, which disallows fetching data from a remote server. For development purposes we can add a CSP that is highly permissive. For production apps, you need to craft a robust CSP that enables your application to function while reducing the attack surface for bad actors.
+The application that Electron Forge scaffolds includes a default Content Security Policy (CSP), which disallows fetching data from a remote server. For development purposes, you can add a CSP that is highly permissive. For production apps, you need to craft a robust CSP that enables your application to function while reducing the attack surface for bad actors.
 
 Open the _forge.config.ts_ file and replace the existing config object being passed to the WebpackPlugin constructor with the following config object.
 
