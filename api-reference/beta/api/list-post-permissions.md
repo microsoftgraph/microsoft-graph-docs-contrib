@@ -1,5 +1,5 @@
 ---
-title: "Create permission"
+title: "Create list permission"
 description: "Create a new permission object."
 author: "BarrySh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Create permission
+# Create list permission
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
