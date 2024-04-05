@@ -56,7 +56,7 @@ None
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "id": "String (identifier)",
   "@odata.type": "microsoft.graph.policyRoot",
   "openType": false
 }
