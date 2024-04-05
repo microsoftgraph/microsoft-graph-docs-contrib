@@ -24,7 +24,7 @@ Planner provides a shared space where you can build a team, [create tasks](/grap
 
 ### Collaborate across Microsoft 365
 
-Planner integrates into collaboration experiences across Microsoft 365. In addition to Planner web and mobile clients, users can view and update Planner plans and tasks from within SharePoint and Microsoft Teams.  
+Planner integrates into collaboration experiences across Microsoft 365. In addition to Planner web and mobile clients, users can view and update Planner plans, Project tasks and tasks from within SharePoint and Microsoft Teams. However, the changes to Project tasks are restricted to updating the "Progress" of the task (percentage complete) and marking the task as complete.
 
 Planner itself is also powered by the Microsoft Graph and the Microsoft 365 group service. Files that you upload and attach to Planner tasks are stored in SharePoint. Planner comments are based on Outlook group conversations.
 
