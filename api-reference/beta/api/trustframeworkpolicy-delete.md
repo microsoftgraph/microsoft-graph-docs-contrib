@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Delete trustFrameworkPolicy
 
@@ -24,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "trustframeworkpolicy_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframeworkpolicy-delete-permissions.md)]
 
-The work or school account must be a global administrator of the tenant.
+The work or school account must have at least the *B2C IEF Keyset Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 

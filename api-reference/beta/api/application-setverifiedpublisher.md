@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "xurobertMSFT"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # application: setVerifiedPublisher

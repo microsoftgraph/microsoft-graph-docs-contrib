@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "grangeryy"
 ms.subservice: "excel"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # List workbookCommentReplies

@@ -6,7 +6,6 @@ title: List children of a driveItem
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # List children of a driveItem
 

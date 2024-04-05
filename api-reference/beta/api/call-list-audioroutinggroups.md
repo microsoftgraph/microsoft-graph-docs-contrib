@@ -5,7 +5,6 @@ author: "hanknguyen"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List audio routing groups

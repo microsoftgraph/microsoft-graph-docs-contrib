@@ -5,7 +5,6 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get crossTenantIdentitySyncPolicyPartner

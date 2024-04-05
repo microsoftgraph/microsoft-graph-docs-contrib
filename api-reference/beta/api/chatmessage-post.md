@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Send chatMessage in a channel or a chat

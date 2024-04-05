@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "arp19690"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List subscriptions

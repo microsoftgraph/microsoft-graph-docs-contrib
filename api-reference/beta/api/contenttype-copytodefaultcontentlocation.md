@@ -5,7 +5,6 @@ description: "Copy a file to a default content location in a content type."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
-ms.topic: reference
 ---
 
 # contentType: copyToDefaultContentLocation

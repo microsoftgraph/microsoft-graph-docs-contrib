@@ -5,7 +5,6 @@ author: "benmicrosoft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Update virtualAppointment (deprecated)

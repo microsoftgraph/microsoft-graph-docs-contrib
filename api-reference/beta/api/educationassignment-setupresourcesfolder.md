@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "sharmas"
 ms.subservice: "education"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # educationAssignment: setUpResourcesFolder
