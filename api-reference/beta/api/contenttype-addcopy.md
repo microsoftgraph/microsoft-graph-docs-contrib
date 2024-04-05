@@ -5,7 +5,6 @@ description: "Add a copy of a site content type to a list."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
-ms.topic: reference
 ---
 
 # contentType: addCopy

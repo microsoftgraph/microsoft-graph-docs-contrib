@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.subservice: "entra-sign-in"
-ms.topic: reference
 ---
 
 # List all identityProviders in a b2cIdentityUserFlow (deprecated)

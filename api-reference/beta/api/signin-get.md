@@ -5,7 +5,6 @@ description: "Get a signIn object that contains all sign-ins for a Microsoft Ent
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
-ms.topic: reference
 ---
 
 # Get signIn

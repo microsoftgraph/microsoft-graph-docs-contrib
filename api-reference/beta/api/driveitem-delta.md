@@ -6,7 +6,6 @@ title: "driveItem: delta"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # driveItem: delta
 

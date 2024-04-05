@@ -5,7 +5,6 @@ description: "List content types in a list"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
-ms.topic: reference
 ---
 
 # List contentTypes in a list

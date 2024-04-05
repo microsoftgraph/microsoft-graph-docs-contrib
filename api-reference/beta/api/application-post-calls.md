@@ -5,7 +5,6 @@ author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 <!-- markdownlint-disable MD001 MD022 MD024 -->

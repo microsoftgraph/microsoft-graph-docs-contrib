@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "frank-masuelli"
 ms.prod: "users"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # user: assignLicense

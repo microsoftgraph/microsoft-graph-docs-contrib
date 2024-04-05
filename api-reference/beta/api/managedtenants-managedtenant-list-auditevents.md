@@ -5,7 +5,6 @@ author: "vkumar2015"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List auditEvents

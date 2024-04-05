@@ -5,7 +5,6 @@ author: "AkJo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
 ms.subservice: "teams"
-ms.topic: reference
 ---
 
 # Get installed app for user
