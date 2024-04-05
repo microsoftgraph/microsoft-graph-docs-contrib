@@ -24,7 +24,7 @@ Inherits from [customClaimBase](../resources/customclaimbase.md).
 |name|String|The name of the claim to be emitted.|
 |namespace|String|An optional namespace to be included as part of the claim name.|
 |samlAttributeNameFormat|samlAttributeNameFormat|If specified, it sets the `nameFormat` attribute associated with the claim in the SAML response. The possible values are: `unspecified`, `uri`, `basic`, `unknownFutureValue`.|
-|tokenFormat|tokenFormat collection|List of token formats for which this claim should be emitted.|
+|tokenFormat|tokenFormat collection|List of token formats for which this claim should be emitted. The possible values are: `saml`,`jwt`, `unknownFutureValue`|
 
 ## Relationships
 None.
