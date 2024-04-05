@@ -1,6 +1,6 @@
 ---
 title: "membershipChangeTrigger resource type"
-description: "An abstract type that represents what change to group membership triggers a workflow's execution conditions for a user."
+description: "An abstract type representing the change in group membership that triggers the execution conditions of a workflow for a user."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
