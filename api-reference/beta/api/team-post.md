@@ -5,7 +5,6 @@ author: "anandjo"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Create team

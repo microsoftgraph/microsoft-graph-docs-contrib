@@ -5,7 +5,6 @@ description: "Get a list of the user sign-ins in a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
-ms.topic: reference
 ---
 
 # List signIns

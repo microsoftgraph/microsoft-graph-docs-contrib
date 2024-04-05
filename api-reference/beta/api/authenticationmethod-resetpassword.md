@@ -6,7 +6,6 @@ author: "zhvolosh"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # passwordAuthenticationMethod: resetPassword

@@ -5,7 +5,6 @@ author: "dipakboyed"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get educationAssignmentSettings

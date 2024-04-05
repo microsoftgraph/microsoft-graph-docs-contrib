@@ -5,7 +5,6 @@ description: Grant a list of users access to use the specified link
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # permission: grant
 

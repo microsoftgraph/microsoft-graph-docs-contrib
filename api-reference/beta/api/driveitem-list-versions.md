@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 author: "spgraph-docs-team"
-ms.topic: reference
 ---
 
 # List versions of a driveItem

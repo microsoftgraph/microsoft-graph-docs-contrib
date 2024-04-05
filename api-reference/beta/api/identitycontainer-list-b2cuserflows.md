@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
 ms.subservice: "entra-sign-in"
-ms.topic: reference
 ---
 
 # List b2cIdentityUserFlows

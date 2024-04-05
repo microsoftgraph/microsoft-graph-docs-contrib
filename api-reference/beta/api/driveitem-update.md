@@ -6,7 +6,6 @@ title: Update a file or folder
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Update DriveItem properties
 
