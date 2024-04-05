@@ -27,7 +27,7 @@ This object is an abstract base type from which the following resources are deri
 + [requestorManager](requestormanager.md)
 + [ruleBasedSubjectSet](../resources/identitygovernance-ruleBasedSubjectSet.md)
 + [singleUser](singleuser.md)
-+ [GroupBasedSubjectSet](../resources/identitygovernance-groupbasedsubjectset.md)
++ [groupBasedSubjectSet](../resources/identitygovernance-groupbasedsubjectset.md)
 
 ## Properties
 
