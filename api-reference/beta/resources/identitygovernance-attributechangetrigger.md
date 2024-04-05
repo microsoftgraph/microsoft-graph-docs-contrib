@@ -1,6 +1,6 @@
 ---
 title: "attributeChangeTrigger resource type"
-description: "An abstract type that represents what user's attribute change triggers a workflow's execution conditions for a user."
+description: "An abstract type representing changes in user attributes that trigger the execution of workload conditions for a user."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
