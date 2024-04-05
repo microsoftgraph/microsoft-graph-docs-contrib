@@ -20,7 +20,7 @@ Inherits from [microsoft.graph.identityGovernance.workflowExecutionTrigger](../r
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|triggerAttributes|[microsoft.graph.identityGovernance.triggerAttribute](../resources/identitygovernance-triggerattribute.md) collection|The trigger attribute being changed that triggers the [workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md of a workflow.)|
+|triggerAttributes|[microsoft.graph.identityGovernance.triggerAttribute](../resources/identitygovernance-triggerattribute.md) collection|The trigger attribute being changed that triggers the workflowexecutiontrigger of a workflow.)|
 
 ## Relationships
 None.
