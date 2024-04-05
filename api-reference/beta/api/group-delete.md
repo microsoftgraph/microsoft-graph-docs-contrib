@@ -29,8 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/group-delete-permissions.md)]
 
 The following conditions apply for apps to delete role-assignable groups:
-+ For delegated scenarios, the app must be assigned the _RoleManagement.ReadWrite.Directory_ delegated permission, and the calling user must be the creator of the group or a global administrator or a privileged role administrator.
-+ For app-only scenarios, the calling app must be the owner of the group or be assigned the _RoleManagement.ReadWrite.Directory_ application permission or be assigned the Global Administrator or Privileged Role Administrator Microsoft Entra role.
++ For delegated scenarios, the app must be assigned the _RoleManagement.ReadWrite.Directory_ delegated permission, and the calling user must be the creator of the group or a privileged role administrator.
++ For app-only scenarios, the calling app must be the owner of the group or be assigned the _RoleManagement.ReadWrite.Directory_ application permission or be assigned the Privileged Role Administrator Microsoft Entra role.
 
 ## HTTP request
 

@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this function.
 |includedUserRoles|includedUserRoles|The role type for the user. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`.|
 |includedUserTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`.|
 
-The value `privilegedAdmin` consists of the following privileged admin roles:
+The value `privilegedAdmin` consists of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Global Administrator
 * Security Administrator
@@ -58,7 +58,7 @@ The value `privilegedAdmin` consists of the following privileged admin roles:
 * User Administrator
 * Authentication Administrator
 
-The value `admin` includes all Azure Active Director admin roles.
+The value `admin` includes all Microsoft Entra admin roles.
 
 ## Request headers
 
