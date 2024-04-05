@@ -1,9 +1,8 @@
 ---
 title: "policyRoot resource type"
 description: "Resource type exposing navigation properties for the policies singleton."
-author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance"
+ms.subservice: "non-product-specific"
 doc_type: resourcePageType
 ---
 
@@ -50,7 +49,7 @@ None
 | tokenLifetimePolicies                     | [tokenLifetimePolicy](tokenlifetimepolicy.md) collection                                                  | The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Microsoft Entra ID.                                                |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
