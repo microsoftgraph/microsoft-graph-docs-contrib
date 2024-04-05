@@ -41,7 +41,7 @@ The **extensionAttributes** property of the [device](device.md) entity is manage
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

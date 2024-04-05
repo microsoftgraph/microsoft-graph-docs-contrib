@@ -9,7 +9,6 @@ ms.localizationpriority: medium
 <!-- ### Viewing applied conditional access (CA) policies in sign-ins-->
 The applied CA policies listed in **appliedConditionalAccessPolicies** property are only available to users and apps with roles that allow them to read [conditional access data](/graph/api/resources/appliedconditionalaccesspolicy). If a user or app has permissions to read sign-in logs but not permission to read conditional access data, the **appliedConditionalAccessPolicies** property in the response will be omitted. The following Microsoft Entra roles grant users permissions to view conditional access data:
 
-+ Global Administrator
 + Global Reader
 + Security Administrator
 + Security Reader
