@@ -1,5 +1,5 @@
 ---
-title: "Automate employee mover tasks when they change jobs using Lifecycle Workflows APIs"
+title: "Automate employee mover tasks when they change jobs using lifecycle workflows APIs"
 description: "Learn how to automate employee mover tasks when they change jobs using lifecycle workflows APIs in Microsoft Graph."
 author: owinfreyATL
 ms.author: owinfrey
