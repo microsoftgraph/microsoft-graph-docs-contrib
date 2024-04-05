@@ -1,6 +1,6 @@
 ---
 title: "customClaimsPolicy resource type"
-description: "Represents a claims policy allows application admins the ability to customize the claims emitted in tokens affected by this policy."
+description: "Represents a claims policy which allows application admins the ability to customize the claims emitted in tokens affected by this policy."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a claims policy allows application admins the ability to customize the claims emitted in tokens affected by this policy.
+Represents a claims policy which allows application admins the ability to customize the claims emitted in tokens affected by this policy.
 
 Inherits from [entity](../resources/entity.md).
 
