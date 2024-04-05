@@ -29,7 +29,7 @@ SharePoint and OneDrive have a long-established permissions model that doesn't f
 
 ## How Selected Scopes work with SharePoint & OneDrive Permissions
 
-When an administrator consents to Selected scopes for an application they're delegating management of resource permissions to the owners of that resource within the workload. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. With Selected scopes an assignment action is required, an application consented for Lists.SelectedOperations.Selected would initially have no access.
+When an administrator consents to Selected scopes for an application they're delegating management of resource permissions to the owners of that resource within the workload. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. Selected scopes require an additional assignment action, an application consented for Lists.SelectedOperations.Selected would initially have no access.
 
 > Assigning application permissions breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design.
 
