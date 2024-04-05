@@ -50,10 +50,11 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_teamworkSettings_for_organization",
+  "name": "user_get_teams_licensing_details",
+  "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teamwork
+GET https://graph.microsoft.com/beta/users/2f39ffba-51ca-4d2d-a66f-a020a83ce208/licenseDetails/getTeamsLicensingDetails
 ```
 
 ### Response

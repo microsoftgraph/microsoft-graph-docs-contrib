@@ -74,7 +74,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('2f39ffba-51ca-4d2d-a66f-a020a83ce208')/teamwork/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('2f39ffba-51ca-4d2d-a66f-a020a83ce208')/teamwork/$entity",
     "id": "userTeamwork",
     "locale": "en-us",
     "region": "Americas"
