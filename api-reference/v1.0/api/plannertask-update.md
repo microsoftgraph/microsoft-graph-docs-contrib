@@ -54,6 +54,8 @@ PATCH /planner/tasks/{id}
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |title|String|Title of the task.|
 
+For Project tasks replicated to Planner, only "percentComplete" field can be updated.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code and an empty content. If the request specifies the `Prefer` header with a `return=representation` preference, then this method returns a `200 OK` response code and an updated [plannerTask](../resources/plannertask.md) object in the response body.
