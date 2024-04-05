@@ -5,7 +5,6 @@ author: "eringreenlee"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List appRoleAssignedResources

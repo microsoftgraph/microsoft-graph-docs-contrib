@@ -5,7 +5,6 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "psignoret"
-ms.topic: reference
 ---
 
 # List appRoleAssignments granted to a group

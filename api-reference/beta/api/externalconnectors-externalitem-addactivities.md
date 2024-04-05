@@ -5,7 +5,6 @@ author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.subservice: "search"
 doc_type: resourcePageType
-ms.topic: reference
 ---
 
 # externalItem: addActivities

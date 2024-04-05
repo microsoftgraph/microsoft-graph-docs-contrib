@@ -5,7 +5,6 @@ title: "site: delta"
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # site: delta

@@ -5,7 +5,6 @@ author: "kristinmcleod"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List photos

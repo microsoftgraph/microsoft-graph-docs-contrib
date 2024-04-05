@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "jyothig123"
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List definitions

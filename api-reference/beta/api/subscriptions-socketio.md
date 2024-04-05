@@ -5,7 +5,6 @@ description: "Use of these APIs in production applications is not supported."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get websocket endpoint
