@@ -24,7 +24,7 @@ The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

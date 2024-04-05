@@ -25,9 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_upsert" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-upsert-permissions.md)]
 
-For multitenant apps, the calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+For multitenant apps, the calling user must also be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-+ Global Administrator
 + Application Administrator
 + Cloud Application Administrator roles
 
