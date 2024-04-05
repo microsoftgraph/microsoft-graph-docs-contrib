@@ -56,7 +56,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

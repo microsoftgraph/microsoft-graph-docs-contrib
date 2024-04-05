@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Complex type containing properties of [sharedInsight](insights-shared.md) items.
 
 ## JSON representation
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

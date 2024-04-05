@@ -44,7 +44,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

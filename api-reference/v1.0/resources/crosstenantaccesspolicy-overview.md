@@ -342,6 +342,27 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 </td>
 <td> Users in group 'g1' are blocked from accessing application 'a1' only. All users, including users in group 'g1' are able to access any other application. </td>
 </tr>
+<tr>
+<td>
+    Prioritize using an external federation over Entra ID during guest user invitation redemption
+</td>
+<td>
+
+``` json 
+"invitationRedemptionIdentityProviderConfiguration": { 
+    "primaryIdentityProviderPrecedenceOrder": [ 
+        "externalFederation",
+        "azureActiveDirectory", 
+        "socialIdentityProviders" 
+    ], 
+    "fallbackIdentityProvider": "defaultConfiguredIdp" 
+} 
+```
+</td>
+<td>
+Check if the guest user is from an externally federated partner before trying Entra ID for authentication.
+</td>
+</tr>
 </table>
 
 ## Cross-tenant access settings vs tenant restrictions

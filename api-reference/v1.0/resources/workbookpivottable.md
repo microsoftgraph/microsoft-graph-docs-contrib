@@ -33,7 +33,7 @@ Represents an Excel PivotTable.
 |worksheet|[workbookWorksheet](worksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

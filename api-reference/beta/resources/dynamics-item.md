@@ -52,7 +52,7 @@ A Tax Group(taxGroupCode) must exist in the Tax Group table.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json
