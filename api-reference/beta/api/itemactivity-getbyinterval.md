@@ -5,7 +5,6 @@ title: Get item activity stats by interval
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "onedrive"
-ms.topic: reference
 ---
 # Get item activity stats by interval
 

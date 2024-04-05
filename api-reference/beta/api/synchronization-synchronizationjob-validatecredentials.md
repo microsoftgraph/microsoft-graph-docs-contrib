@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
-ms.topic: reference
 ---
 
 # synchronizationJob: validateCredentials

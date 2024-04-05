@@ -6,7 +6,6 @@ title: List thumbnails for a driveItem
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # List thumbnails for a driveItem
 

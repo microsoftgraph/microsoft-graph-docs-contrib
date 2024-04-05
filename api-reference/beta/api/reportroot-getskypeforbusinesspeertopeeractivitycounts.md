@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # reportRoot: getSkypeForBusinessPeerToPeerActivityCounts

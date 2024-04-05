@@ -5,7 +5,6 @@ description: "Get a content type in a site or a list."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
-ms.topic: reference
 ---
 
 # Get contentType

@@ -7,7 +7,6 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 ms.subservice: "d365-business-central"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Update journals

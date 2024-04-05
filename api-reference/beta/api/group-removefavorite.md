@@ -6,7 +6,6 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # group: removeFavorite
