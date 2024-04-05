@@ -5,7 +5,6 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List pages

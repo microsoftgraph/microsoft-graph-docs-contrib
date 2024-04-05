@@ -6,7 +6,6 @@ title: Update a record in a SharePoint list
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Update an item in a list
 

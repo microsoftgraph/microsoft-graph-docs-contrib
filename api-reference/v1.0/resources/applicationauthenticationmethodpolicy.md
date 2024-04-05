@@ -74,7 +74,7 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 
 ## Requirements
 
-- Management of application authentication method policies can be performed by a global administrator, application administrator, or cloud application administrator.
+- The least privileged Microsoft Entra roles for the management of application authentication method policies are Application Administrator and Cloud Application Administrator.
 - All app policy management operations require a [Microsoft Entra Workload ID Premium license](/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
 
 ## Next steps

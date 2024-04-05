@@ -5,7 +5,6 @@ author: "awang119"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "cloud-communications"
-ms.topic: reference
 ---
 
 # presence: clearUserPreferredPresence

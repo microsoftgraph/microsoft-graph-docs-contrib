@@ -5,7 +5,6 @@ author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List devices
@@ -28,7 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-* Global Administrator
 * Users
 * Directory Readers
 * Directory Writers

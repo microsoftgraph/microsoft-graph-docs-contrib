@@ -5,7 +5,6 @@ author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # impactedResource: reactivate

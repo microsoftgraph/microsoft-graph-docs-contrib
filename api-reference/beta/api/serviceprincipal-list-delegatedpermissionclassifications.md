@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "psignoret"
-ms.topic: reference
 ---
 
 # List delegatedPermissionClassifications collection of servicePrincipal

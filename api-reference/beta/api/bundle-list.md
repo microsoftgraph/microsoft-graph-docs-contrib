@@ -5,7 +5,6 @@ description: "List the bundles in a user's drive."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List bundles

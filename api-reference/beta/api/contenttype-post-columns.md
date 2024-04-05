@@ -6,7 +6,6 @@ description: "Add column to a content type."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
-ms.topic: reference
 ---
 
 # Create columnDefinition for a content type

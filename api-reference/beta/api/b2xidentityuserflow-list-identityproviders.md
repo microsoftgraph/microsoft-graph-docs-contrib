@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
 ms.subservice: "entra-sign-in"
-ms.topic: reference
 ---
 
 # List all identityProviders in a b2xIdentityUserFlow (deprecated)
@@ -26,10 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "b2xidentityuserflow_list_identityproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/b2xidentityuserflow-list-identityproviders-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
