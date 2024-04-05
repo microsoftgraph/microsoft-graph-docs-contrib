@@ -1,6 +1,6 @@
 ---
  "Overview of SharePoint & OneDrive Selected Microsoft Graph permissions"
- "OneDrive and SharePoint services on Microsoft Graph expose a set of *.Selected scopes allowing for granular consent down to the file/list item level."
+ "OneDrive and SharePoint services on Microsoft Graph expose a set of Selected scopes allowing for granular consent down to the file/list item level."
  patrodg
  patrodg
  patrodg
@@ -9,12 +9,12 @@
  entra-applications
  4/3/2024
  graphiamtop20, scenarios:getting-started
- As a developer integrating with Microsoft Graph, I want to learn about using *.Selected permissions to access SharePoint and OneDrive resources in the least priveldged way.
+ As a developer integrating with Microsoft Graph, I want to learn about using Selected permissions to access SharePoint and OneDrive resources in the least priveldged way.
 ---
 
 # Overview of Selected Permissions in OneDrive and SharePoint
 
-SharePoint and OneDrive have a long-established permissions model that doesn't fit exactly into the scopes model. For example, there couldn't exist a global scope that provides ReadWrite access to a single list in your tenant. Instead we have create the concept of *.Selected scopes to support these scenarios. Initially limited to Sites.Selected for Applications as a way to restrict an application's access to a single site collection. Lists, List Items, Folders, and Files as outlined in the table are now supported - and all *.Selected scopes now support delegated and application modes.
+SharePoint and OneDrive have a long-established permissions model that doesn't fit exactly into the scopes model. For example, there couldn't exist a global scope that provides ReadWrite access to a single list in your tenant. Instead we created Selected scopes to support these scenarios. Initially limited to Sites.Selected for Applications as a way to restrict an application's access to a single site collection. Lists, List Items, Folders, and Files as outlined in the table are now supported - and all Selected scopes now support delegated and application modes.
 
 > Due to the evolution of scope naming requirements the newer scopes are listed as a full tuple `*.SelectedOperations.Selected`, there is no functional difference compared to the `Sites.Selected` format.
 
@@ -27,9 +27,9 @@ SharePoint and OneDrive have a long-established permissions model that doesn't f
 |ListItems.SelectedOperations.Selected|Manages application access at the list item or folder level, providing access to one or more list items|
 |Files.SelectedOperations.Selected|Manages application access at the file or library folder level, providing access to one or more files|
 
-## How *.Selected Scopes work with SharePoint & OneDrive Permissions
+## How Selected Scopes work with SharePoint & OneDrive Permissions
 
-When an administrator consents to one or more of the *.Selected permissions for an application they are effectively delegating the management of permissions to the administrators of the resource. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. With *.Selected scopes an assignment action is required, an application consented for Lists.SelectedOperations.Selected would initially have no access.
+When an administrator consents to one or more of the Selected permissions for an application they're effectively delegating the management of permissions to the administrators of the resource. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. With Selected scopes an assignment action is required, an application consented for Lists.SelectedOperations.Selected would initially have no access.
 
 > Assigning application permissions breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design.
 
@@ -122,30 +122,30 @@ The permission requirements vary by level, in all delegated cases the current us
 
 ### How Access is Calculated
 
-There are two types of tokens, Application Only and Delegated. Application only scenarios have no user present and are considered higher risk as the application can do everything at any time forwhich it is consented. With delegated the application can never exceed the current user's existing permissions and can be considered lower-risk for many scenarios. Delegated should be preferred when possible, but both modes are available to meet your needs.
+There are two types of tokens, Application Only and Delegated. Application only scenarios have no user present and are considered higher risk as the application can do everything at any time for which it's consented. With delegated the application can never exceed the current user's existing permissions and can be considered lower-risk for many scenarios. Delegated should be preferred when possible, but both modes are available to meet your needs.
 
-We conceptually store a tuple of Application Id, Resource Id, and Role. This means that [application] has [role] access to [resource]. You specify the application and role when a permissions is created through the API, the resolved path gives us the resource. For example, application Z has "read" access to the list at "/sites/dev/lists/list1".
+We conceptually store a tuple of Application ID, Resource ID, and Role. This means that [application] has [role] access to [resource]. You specify the application and role when a permission is created through the API, the resolved path gives us the resource. For example, application Z has "read" access to the list at "/sites/dev/lists/list1."
 
 When calculating access, we use the values provided in the token to roughly follow this flow:
 
-1. Token type (Application/Delegated)
-2. Application record exists for supplied application id on resource or a securable heirarchical parent (inheritance)
+1. Review Token type (Application/Delegated)
+2. Find Application record for supplied application ID on resource or a securable hierarchical parent (inheritance)
 3. Then:
 
     *Application Access*
 
-    For application access if a record is found for the application, and the role allows for the operation requested (read an item, update a list) then access is granted. 
+    For application access if a record is found for the application, and the role allows for the operation requested (read an item, update a list) then access is granted
 
     *Delegated Access*
 
-    In the delegated scenario both the application and user permissions are calculated and then intersected, meaning the application can never exceed the user's permissions and the user can never exceed (through the application) the consented application permissions.
+    In the delegated scenario both the application and user permissions are calculated and then intersected, meaning the application can never exceed the user's permissions and the user can never exceed (through the application) the consented application permissions
 
 ### Behavior of Consents / Notes
 
-* It is possible for an application to have multiple *.Selected consents and for those to be applied at various level across the tenant.
-* As soon as a scope is revoked from an application, access through that scope is lost. So if an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection and then the Sites.* consent is revoke it would maintain access to the list it was given specific access to via the Lists.* consent and the previous call to list/permissions.
-* Higher level scopes such as Sites.* can be used to grant file specific level permissions, but lower scopes can never provide access to higher level resources. Aloowing applications to ONLY have access at a specific level
-* Consent is an EntraID concept and is consumed by OneDrive and SharePoint through the provided token. We do not track/manage/enforce an additional level of consent. Once a token is presented with a given scope, we honor it.
+* Applications can have have multiple Selected consents and for those consents to apply at various level across the tenant
+* As soon as a scope is revoked from an application, access through that scope is lost. So if an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection and then the Sites.* consent is revoke it would maintain access to the list it was given specific access to via the Lists.* consent and the previous call to list/permissions
+* Higher level scopes such as Sites.* can be used to grant file specific level permissions, but lower scopes can never provide access to higher level resources. Allowing applications to ONLY have access at a specific level
+* Consent is an external concept, consumed by OneDrive and SharePoint through the provided token, and once a token is presented with a given scope, we honor it
 
 
 
