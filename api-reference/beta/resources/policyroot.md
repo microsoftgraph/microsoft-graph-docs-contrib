@@ -56,7 +56,7 @@ None
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "id": "String (identifier)",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.policyRoot",
   "openType": false
 }
@@ -64,5 +64,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.policyRoot"
+  "id": "String (identifier)",
 }
 ```
