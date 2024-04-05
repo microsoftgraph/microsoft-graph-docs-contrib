@@ -6,7 +6,6 @@ title: Convert to other formats
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Download a file in another format
 

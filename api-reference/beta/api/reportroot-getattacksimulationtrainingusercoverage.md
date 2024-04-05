@@ -5,7 +5,6 @@ author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # reportRoot: getAttackSimulationTrainingUserCoverage (deprecated)

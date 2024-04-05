@@ -5,7 +5,6 @@ author: "vrod9429"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # user: findRoomLists
