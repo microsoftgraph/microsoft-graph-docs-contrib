@@ -7,11 +7,11 @@ author: sebastienlevert
 
 # Use the Microsoft Graph Toolkit with Electron
 
-This article describes the step-by-step process of using the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have an Electron app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
+This article describes how to use the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have an Electron app that shows the upcoming appointments of the currently signed-in user from Microsoft 365.
 
 ## Create an Electron app
 
-Scaffold a new Electron app using [Electron Forge](https://www.electronforge.io/). Doing this creates a new Electron app using TypeScript, which helps you write more robust code and avoid runtime errors.
+Scaffold a new Electron app by using [Electron Forge](https://www.electronforge.io/). Doing this creates a new Electron app in TypeScript, which helps you write more robust code and avoid runtime errors.
 
 ```cmd
 npm init electron-app@latest mgt-app -- --template=webpack-typescript
@@ -69,7 +69,7 @@ To create the app in Microsoft Entra ID:
 
 ### Initialize a ContextBridge in your preload script
 
-Since Electron v12, context isolation is enabled by default and it's a recommended security setting for all applications. With context isolation developers must explicitly expose APIs from their main process for use in the renderer process via a ContextBridge. For more information, see the Electron docs: [https://www.electronjs.org/docs/latest/tutorial/context-isolation](https://www.electronjs.org/docs/latest/tutorial/context-isolation)
+Starting with Electron v12, context isolation is enabled by default and this is a recommended security setting for all applications. With context isolation, developers must explicitly expose APIs from their main process for use in the renderer process via a ContextBridge. For more information, see [Context Isolation in the Electron docs](https://www.electronjs.org/docs/latest/tutorial/context-isolation).
 
 Open the _src/preload.ts_ file and add the following code:
 
@@ -90,7 +90,7 @@ contextBridge.exposeInMainWorld("main", {
 
 ### Initializing ElectronContextBridgeProvider in your renderer process
 
-The `ElectronContextBridgeProvider` is responsible for communicating with `ElectronAuthenticator` (in the main process) to request access tokens and receive information regarding signed in state that is required for the mgt components to work.
+The `ElectronContextBridgeProvider` is responsible for communicating with `ElectronAuthenticator` (in the main process) to request access tokens and receive information about the signed in state that is required for the toolkit components to work.
 
 To use Microsoft Graph Toolkit components in your applications, they must be registered in the browser window that they open. To do this, you must import the register functions for each component you want to use.
 
