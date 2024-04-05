@@ -46,7 +46,7 @@ To complete this tutorial, you need the following resources and privileges:
 The following request creates a mover workflow with the following settings:
 
 + It rns on schedule, but also can be run on demand
-+ The workflow runs when an employee is removed from the "Sales" department.
++ The workflow runs when an employee is removed from the **sales** department.
 + Only one built-in task runs in this workflow: to send an email to the employee's manager notifying them of the move. This task is identified in Lifecycle Workflows by the **taskDefinitionId** `aab41899-9972-422a-9d97-f626014578b7`.
 
 
