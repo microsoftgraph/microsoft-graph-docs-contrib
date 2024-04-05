@@ -11,7 +11,7 @@ ms.date: 03/26/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use lifecycle workflows APIs to automate employee mover tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
-# Automate employee mover tasks when they change jobs using Lifecycle Workflows APIs
+# Automate employee mover tasks when they change jobs using lifecycle workflows APIs
 
 This tutorial provides step-by-step guidance for automating mover tasks with Lifecycle Workflows APIs.
 
