@@ -31,7 +31,7 @@ Represents the legend in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartLegendFormat](workbookchartlegendormat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
+|format|[WorkbookChartLegendFormat](workbookchartlegendformat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 
