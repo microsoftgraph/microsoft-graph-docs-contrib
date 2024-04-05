@@ -1,6 +1,6 @@
 ---
 title: "riskDetection resource type"
-description: "Represents all risk detections in Microsoft Entra tenants."
+description: "Represents all risk detections in a Microsoft Entra tenant."
 author: "tracyshi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
