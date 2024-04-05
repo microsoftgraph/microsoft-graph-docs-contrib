@@ -51,7 +51,7 @@ Represents the Cloud PC organization settings for a tenant. A tenant has only on
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

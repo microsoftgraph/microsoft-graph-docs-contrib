@@ -279,6 +279,14 @@ items:
                 href: resources/plannertask.md
               - name: List tasks
                 href: api/planneruser-list-tasks.md
+          - name: Sponsors
+            items:
+              - name: Add sponsor
+                href: api/user-post-sponsors.md
+              - name: List sponsors
+                href: api/user-list-sponsors.md
+              - name: Remove sponsor
+                href: api/user-delete-sponsors.md
           - name: Teamwork and communications
             items:
               - name: Installed app
@@ -8192,32 +8200,137 @@ items:
                 href: api/alert-update.md
           - name: Records management
             items:
-              - name: Overview
-                href: resources/security-recordsManagement-overview.md
-              - name: Retention event
-                href: resources/security-retentionevent.md
+            - name: Overview
+              href: resources/security-recordsmanagement-overview.md
+            - name: Retention label
+              href: resources/security-retentionlabel.md
+              items:
+              - name: List
+                href: api/security-labelsroot-list-retentionlabel.md
+              - name: Create
+                href: api/security-labelsroot-post-retentionlabel.md
+              - name: Get
+                href: api/security-retentionlabel-get.md
+              - name: Update
+                href: api/security-retentionlabel-update.md
+              - name: Delete
+                href: api/security-retentionlabel-delete.md
+            - name: File plan descriptors
+              items:
+              - name: File plan descriptors
                 items:
-                  - name: List
-                    href: api/security-retentionevent-list.md
-                  - name: Create
-                    href: api/security-retentionevent-post.md
-                  - name: Get
-                    href: api/security-retentionevent-get.md
-                  - name: Delete
-                    href: api/security-retentionevent-delete.md
-              - name: Retention event type
-                href: resources/security-retentioneventtype.md
+                - name: File plan descriptor set
+                  href: resources/security-fileplandescriptor.md
+                - name: Applied category
+                  href: resources/security-appliedcategory.md
+                - name: Authority
+                  href: resources/security-authority.md
+                - name: Citation
+                  href: resources/security-citation.md
+                - name: Department
+                  href: resources/security-department.md
+                - name: File plan reference
+                  href: resources/security-fileplanreference.md
+                - name: Subcategory
+                  href: resources/security-subcategory.md
+              - name: File plan descriptor templates
                 items:
+                - name: Applied category template
+                  items:
+                  - name: Category template
+                    href: resources/security-categorytemplate.md
                   - name: List
-                    href: api/security-retentioneventtype-list.md
+                    href: api/security-labelsroot-list-categories.md
                   - name: Create
-                    href: api/security-retentioneventtype-post.md
+                    href: api/security-labelsroot-post-categories.md
                   - name: Get
-                    href: api/security-retentioneventtype-get.md
-                  - name: Update
-                    href: api/security-retentioneventtype-update.md
+                    href: api/security-categorytemplate-get.md
                   - name: Delete
-                    href: api/security-retentioneventtype-delete.md
+                    href: api/security-labelsroot-delete-categories.md
+                - name: Authority template
+                  items:
+                  - name: Authority template
+                    href: resources/security-authoritytemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-authorities.md
+                  - name: Create
+                    href: api/security-labelsroot-post-authorities.md
+                  - name: Get
+                    href: api/security-authoritytemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-authorities.md
+                - name: Citation template
+                  items:
+                  - name: Citation template
+                    href: resources/security-citationtemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-citations.md
+                  - name: Create
+                    href: api/security-labelsroot-post-citations.md
+                  - name: Get
+                    href: api/security-citationtemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-citations.md
+                - name: Department template
+                  items:
+                  - name: Department template
+                    href: resources/security-departmenttemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-departments.md
+                  - name: Create
+                    href: api/security-labelsroot-post-departments.md
+                  - name: Get
+                    href: api/security-departmenttemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-departments.md              
+                - name: File plan reference template
+                  items:
+                  - name: File plan reference template
+                    href: resources/security-fileplanreferencetemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-fileplanreferences.md
+                  - name: Create
+                    href: api/security-labelsroot-post-fileplanreferences.md
+                  - name: Get
+                    href: api/security-fileplanreferencetemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-fileplanreferences.md
+                - name: Subcategory template
+                  items:
+                  - name: Subcategory template
+                    href: resources/security-subcategorytemplate.md
+                  - name: List
+                    href: api/security-categorytemplate-list-subcategories.md
+                  - name: Create
+                    href: api/security-categorytemplate-post-subcategories.md
+                  - name: Get
+                    href: api/security-subcategorytemplate-get.md
+                  - name: Delete
+                    href: api/security-categorytemplate-delete-subcategories.md
+            - name: Retention event
+              href: resources/security-retentionevent.md
+              items:
+              - name: List
+                href: api/security-retentionevent-list.md
+              - name: Create
+                href: api/security-retentionevent-post.md
+              - name: Get
+                href: api/security-retentionevent-get.md
+              - name: Delete
+                href: api/security-retentionevent-delete.md
+            - name: Retention event type
+              href: resources/security-retentioneventtype.md
+              items:
+              - name: List
+                href: api/security-retentioneventtype-list.md
+              - name: Create
+                href: api/security-retentioneventtype-post.md
+              - name: Get
+                href: api/security-retentioneventtype-get.md
+              - name: Update
+                href: api/security-retentioneventtype-update.md
+              - name: Delete
+                href: api/security-retentioneventtype-delete.md
           - name: Secure score
             href: resources/securescore.md
             items:

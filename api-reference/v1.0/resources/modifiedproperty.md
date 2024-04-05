@@ -23,7 +23,7 @@ Indicates all the properties on a Microsoft Entra resource that have been modifi
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
