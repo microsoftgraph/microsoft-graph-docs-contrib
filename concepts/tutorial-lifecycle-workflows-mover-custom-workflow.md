@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 To complete this tutorial, you need the following resources and privileges:
 
 + This feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with account that has at least the *Lifecycle Administrator* Microsoft Entra role.
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with account that has at least the *lifecycle administrator* Microsoft Entra role.
 + Grant yourself the *LifecycleWorkflows.ReadWrite.All* Microsoft Graph delegated permission.
 + Create two user accounts to use in this tutorial: one for the employee and another for their manager and have the following settings configured as applicable.
 
