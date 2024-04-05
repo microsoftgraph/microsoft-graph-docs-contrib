@@ -6,7 +6,6 @@ title: Get SharePoint site by path
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Get a site resource by path
 

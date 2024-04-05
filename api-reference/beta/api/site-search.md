@@ -6,7 +6,6 @@ title: Find SharePoint sites by keyword
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Search for sites
 

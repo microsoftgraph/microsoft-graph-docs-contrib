@@ -7,7 +7,6 @@ ms.localizationpriority: medium
 ms.date: 3/6/2024
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Get file by contentStream
 

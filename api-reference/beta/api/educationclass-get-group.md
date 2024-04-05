@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "mmast-msft"
 ms.subservice: "education"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get group

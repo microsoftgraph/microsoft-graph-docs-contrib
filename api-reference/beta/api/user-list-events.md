@@ -5,7 +5,6 @@ ms.localizationpriority: high
 author: "iamgirishck"
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List events

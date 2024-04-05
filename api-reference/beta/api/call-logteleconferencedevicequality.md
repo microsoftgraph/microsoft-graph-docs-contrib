@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "dongkyun"
 ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # call: logTeleconferenceDeviceQuality

@@ -6,7 +6,6 @@ title: Upload small files
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Upload or replace the contents of a driveItem
 

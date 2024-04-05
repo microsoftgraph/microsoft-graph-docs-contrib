@@ -5,7 +5,6 @@ author: "mea"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get teamwork
