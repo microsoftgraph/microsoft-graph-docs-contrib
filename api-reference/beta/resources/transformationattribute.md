@@ -1,6 +1,6 @@
 ---
 title: "transformationAttribute resource type"
-description: "Attribute used to support transformations."
+description: "Represents an attribute used to support transformations."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
