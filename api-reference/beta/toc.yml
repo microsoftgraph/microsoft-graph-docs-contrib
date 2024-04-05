@@ -16085,13 +16085,6 @@ items:
                     href: resources/dailyuserinsightmetricsroot.md
                   - name: Monthly user insight
                     href: resources/monthlyuserinsightmetricsroot.md
-                  - name: Active users breakdown (deprecated)
-                    href: resources/activeusersbreakdownmetric.md
-                    items:
-                    - name: List daily
-                      href: api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
-                    - name: List monthly
-                      href: api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
                   - name: Active users
                     href: resources/activeusersmetric.md
                     items:
