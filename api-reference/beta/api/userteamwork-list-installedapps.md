@@ -5,7 +5,6 @@ author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
 ms.subservice: "teams"
-ms.topic: reference
 ---
 
 # List apps installed for user

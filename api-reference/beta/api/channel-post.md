@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "akjo"
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Create channel

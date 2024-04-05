@@ -6,7 +6,6 @@ author: "swetha-rai"
 ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Create authenticationContextClassReference

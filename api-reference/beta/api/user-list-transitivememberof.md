@@ -6,7 +6,6 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.prod: "users"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List a user's memberships (direct and transitive)

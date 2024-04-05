@@ -5,7 +5,6 @@ author: "anthona"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List people

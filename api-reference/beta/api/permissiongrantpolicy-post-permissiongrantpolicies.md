@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-sign-in"
 author: "psignoret"
-ms.topic: reference
 ---
 
 # Create permissionGrantPolicy

@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Delete extensionProperty (directory extension)

@@ -6,7 +6,6 @@ title: Create a new entry in a SharePoint list
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Create a new item in a list
 

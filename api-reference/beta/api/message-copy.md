@@ -5,7 +5,6 @@ author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # message: copy
