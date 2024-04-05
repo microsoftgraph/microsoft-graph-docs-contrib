@@ -18,10 +18,10 @@ Represents the border of an object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeBorder](../api/rangeborder-get.md) | [WorkbookRangeBorder](rangeborder.md) |Read properties and relationships of rangeBorder object.|
-|[Update](../api/rangeborder-update.md) | [WorkbookRangeBorder](rangeborder.md)	|Update RangeBorder object. |
-|[List](../api/rangeborder-list.md) | [WorkbookRangeBorder](rangeborder.md) collection |Get rangeBorder object collection. |
-|[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](rangeborder.md)|Gets a border object using its index|
+|[Get RangeBorder](../api/rangeborder-get.md) | [WorkbookRangeBorder](workbookrangeborder.md) |Read properties and relationships of rangeBorder object.|
+|[Update](../api/rangeborder-update.md) | [WorkbookRangeBorder](workbookrangeborder.md)	|Update RangeBorder object. |
+|[List](../api/rangeborder-list.md) | [WorkbookRangeBorder](workbookrangeborder.md) collection |Get rangeBorder object collection. |
+|[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](workbookrangeborder.md)|Gets a border object using its index|
 
 ## Properties
 | Property	   | Type	|Description|

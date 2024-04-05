@@ -18,8 +18,8 @@ Enapsulates the formatting options for line elements.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
-|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](workbookchartlineformat.md) |Read properties and relationships of chartLineFormat object.|
+|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](workbookchartlineformat.md)	|Update ChartLineFormat object. |
 |[Clear](../api/chartlineformat-clear.md)|None|Clear the line format of a chart element.|
 
 ## Properties

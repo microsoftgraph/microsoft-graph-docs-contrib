@@ -18,8 +18,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFont](../api/rangefont-get.md) | [WorkbookRangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
-|[Update](../api/rangefont-update.md) | [WorkbookRangeFont](rangefont.md)	|Update RangeFont object. |
+|[Get RangeFont](../api/rangefont-get.md) | [WorkbookRangeFont](workbookrangefont.md) |Read properties and relationships of rangeFont object.|
+|[Update](../api/rangefont-update.md) | [WorkbookRangeFont](workbookrangefont.md)	|Update RangeFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

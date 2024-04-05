@@ -18,8 +18,8 @@ Represents the legend in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
-|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md)	|Update ChartLegend object. |
+|[Get ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](workbookchartlegend.md) |Read properties and relationships of chartLegend object.|
+|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](workbookchartlegend.md)	|Update ChartLegend object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,7 +31,7 @@ Represents the legend in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartLegendFormat](chartlegendformat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
+|format|[WorkbookChartLegendFormat](workbookchartlegendormat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 

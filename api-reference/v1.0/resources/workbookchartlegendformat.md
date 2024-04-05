@@ -1,17 +1,17 @@
 ---
-title: "ChartSeriesFormat resource type"
-description: "encapsulates the format properties for the chart series"
+title: "ChartLegendFormat resource type"
+description: "Encapsulates the format properties of a chart legend."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartSeriesFormat resource type
+# ChartLegendFormat resource type
 
 Namespace: microsoft.graph
 
-encapsulates the format properties for the chart series
+Encapsulates the format properties of a chart legend.
 
 
 ## Methods
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of a chart series, which includes background formatting information. Read-only.|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|Represents line formatting. Read-only.|
+|fill|[WorkbookChartFill](workbookchartfill.md)|Represents the fill format of an object, which includes background formating information. Read-only.|
+|font|[WorkbookChartFont](workbookchartfont.md)|Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.|
 
 
 ## JSON representation
@@ -35,13 +35,13 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "optionalProperties": [],
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartSeriesFormat"
+  "@odata.type": "microsoft.graph.workbookChartLegendFormat"
 }-->
 
 ```json
 {
   "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
+  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
 }
 ```
 
@@ -50,7 +50,7 @@ The following JSON representation shows the resource type.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartSeriesFormat resource",
+  "description": "ChartLegendFormat resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

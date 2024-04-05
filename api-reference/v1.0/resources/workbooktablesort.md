@@ -18,7 +18,7 @@ Manages sorting operations on Table objects.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort-get.md) | [WorkbookTableSort](tablesort.md) |Read properties and relationships of tableSort object.|
+|[Get TableSort](../api/tablesort-get.md) | [WorkbookTableSort](workbooktablesort.md) |Read properties and relationships of tableSort object.|
 |[Apply](../api/tablesort-apply.md)|None|Perform a sort operation.|
 |[Clear](../api/tablesort-clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
 |[Reapply](../api/tablesort-reapply.md)|None|Reapplies the current sorting parameters to the table.|

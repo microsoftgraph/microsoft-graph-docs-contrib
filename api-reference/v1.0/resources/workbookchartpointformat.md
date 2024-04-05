@@ -1,17 +1,17 @@
 ---
-title: "ChartAxisTitleFormat resource type"
-description: "Represents the chart axis title formatting."
+title: "ChartPointFormat resource type"
+description: "Represents formatting object for chart points."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAxisTitleFormat resource type
+# ChartPointFormat resource type
 
 Namespace: microsoft.graph
 
-Represents the chart axis title formatting.
+Represents formatting object for chart points.
 
 
 ## Methods
@@ -23,7 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.|
+|fill|[WorkbookChartFill](workbookchartfill.md)|Represents the fill format of a chart, which includes background formatting information. Read-only.|
+
 
 ## JSON representation
 
@@ -33,20 +34,21 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "optionalProperties": [],
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartAxisTitleFormat"
+  "@odata.type": "microsoft.graph.workbookChartPointFormat"
 }-->
 
 ```json
 {
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
+  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"}
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartAxisTitleFormat resource",
+  "description": "ChartPointFormat resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

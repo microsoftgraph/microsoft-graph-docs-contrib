@@ -18,8 +18,8 @@ Represents a chart title object of a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
-|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)	|Update ChartTitle object. |
+|[Get ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](workbookcharttitle.md) |Read properties and relationships of chartTitle object.|
+|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](workbookcharttitle.md)	|Update ChartTitle object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,7 +31,7 @@ Represents a chart title object of a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartTitleFormat](charttitleformat.md)|Represents the formatting of a chart title, which includes fill and font formatting. Read-only.|
+|format|[WorkbookChartTitleFormat](workbookcharttitleformat.md)|Represents the formatting of a chart title, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 

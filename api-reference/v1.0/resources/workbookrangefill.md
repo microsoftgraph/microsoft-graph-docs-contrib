@@ -18,8 +18,8 @@ Represents the background of a range object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |Read properties and relationships of rangeFill object.|
-|[Update](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)	|Update RangeFill object. |
+|[Get RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](workbookrangefill.md) |Read properties and relationships of rangeFill object.|
+|[Update](../api/rangefill-update.md) | [WorkbookRangeFill](workbookrangefill.md)	|Update RangeFill object. |
 |[Clear](../api/rangefill-clear.md)|None|Resets the range background.|
 
 ## Properties

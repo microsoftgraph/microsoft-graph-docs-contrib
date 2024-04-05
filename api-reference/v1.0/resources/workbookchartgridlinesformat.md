@@ -1,17 +1,17 @@
 ---
-title: "ChartPointFormat resource type"
-description: "Represents formatting object for chart points."
+title: "ChartGridlinesFormat resource type"
+description: "Encapsulates the format properties for chart gridlines."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartPointFormat resource type
+# ChartGridlinesFormat resource type
 
 Namespace: microsoft.graph
 
-Represents formatting object for chart points.
+Encapsulates the format properties for chart gridlines.
 
 
 ## Methods
@@ -23,7 +23,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of a chart, which includes background formatting information. Read-only.|
+|line|[WorkbookChartLineFormat](workbookchartlineformat.md)|Represents chart line formatting. Read-only.|
 
 
 ## JSON representation
@@ -34,12 +34,12 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "optionalProperties": [],
   "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartPointFormat"
+  "@odata.type": "microsoft.graph.workbookChartGridlinesFormat"
 }-->
 
 ```json
 {
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"}
+  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
 }
 ```
 
@@ -48,7 +48,7 @@ The following JSON representation shows the resource type.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "ChartPointFormat resource",
+  "description": "ChartGridlinesFormat resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -18,8 +18,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
-|[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)	|Update ChartFont object. |
+|[Get ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](workbookchartfont.md) |Read properties and relationships of chartFont object.|
+|[Update](../api/chartfont-update.md) | [WorkbookChartFont](workbookchartfont.md)	|Update ChartFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

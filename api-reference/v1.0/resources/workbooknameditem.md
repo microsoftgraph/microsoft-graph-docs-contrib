@@ -18,12 +18,12 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add](../api/nameditem-add.md)|[WorkbookNamedItem](nameditem.md)|Adds a new name to the collection of the given scope.|
-|[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[WorkbookNamedItem](nameditem.md)|Adds a new name to the collection of the given scope using the user's locale for the formula.|
-|[Get NamedItem](../api/nameditem-get.md) | [WorkbookNamedItem](nameditem.md) |Read properties and relationships of namedItem object.|
-|[Update](../api/nameditem-update.md) | [WorkbookNamedItem](nameditem.md)	|Update NamedItem object. |
-|[Range](../api/nameditem-range.md)|[Range](range.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type isn't a range.|
-|[List](../api/nameditem-list.md) | [WorkbookNamedItem](nameditem.md) collection |Get namedItem object collection. |
+|[Add](../api/nameditem-add.md)|[WorkbookNamedItem](workbooknameditem.md)|Adds a new name to the collection of the given scope.|
+|[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[WorkbookNamedItem](workbooknameditem.md)|Adds a new name to the collection of the given scope using the user's locale for the formula.|
+|[Get NamedItem](../api/nameditem-get.md) | [WorkbookNamedItem](workbooknameditem.md) |Read properties and relationships of namedItem object.|
+|[Update](../api/nameditem-update.md) | [WorkbookNamedItem](workbooknameditem.md)	|Update NamedItem object. |
+|[Range](../api/nameditem-range.md)|[Range](workbookrange.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type isn't a range.|
+|[List](../api/nameditem-list.md) | [WorkbookNamedItem](workbooknameditem.md) collection |Get namedItem object collection. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -38,7 +38,7 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 ## Relationships
 | Relationship	   | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[WorkbookWorksheet](worksheet.md)|Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet. Read-only.|
+|worksheet|[WorkbookWorksheet](workbookworksheet.md)|Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet. Read-only.|
 
 ## JSON representation
 

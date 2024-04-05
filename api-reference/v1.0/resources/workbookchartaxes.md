@@ -23,9 +23,9 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|categoryAxis|[WorkbookChartAxis](chartaxis.md)|Represents the category axis in a chart. Read-only.|
-|seriesAxis|[WorkbookChartAxis](chartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
-|valueAxis|[WorkbookChartAxis](chartaxis.md)|Represents the value axis in an axis. Read-only.|
+|categoryAxis|[WorkbookChartAxis](workbookchartaxis.md)|Represents the category axis in a chart. Read-only.|
+|seriesAxis|[WorkbookChartAxis](workbookchartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
+|valueAxis|[WorkbookChartAxis](workbookchartaxis.md)|Represents the value axis in an axis. Read-only.|
 
 ## JSON representation
 

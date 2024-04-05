@@ -18,9 +18,9 @@ Represents a point of a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint-get.md) | [WorkbookChartPoint](chartpoint.md) |Read properties and relationships of chartPoint object.|
-|[List](../api/chartpoint-list.md) | [WorkbookChartPoint](chartpoint.md) collection |Get chartPoint object collection. |
-|[ItemAt](../api/chartpointscollection-itemat.md)|[WorkbookChartPoint](chartpoint.md)|Retrieve a point based on its position within the series.|
+|[Get ChartPoint](../api/chartpoint-get.md) | [WorkbookChartPoint](workbookchartpoint.md) |Read properties and relationships of chartPoint object.|
+|[List](../api/chartpoint-list.md) | [WorkbookChartPoint](workbookchartpoint.md) collection |Get chartPoint object collection. |
+|[ItemAt](../api/chartpointscollection-itemat.md)|[WorkbookChartPoint](workbookchartpoint.md)|Retrieve a point based on its position within the series.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,7 +31,7 @@ Represents a point of a series in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartPointFormat](chartpointformat.md)|Encapsulates the format properties chart point. Read-only.|
+|format|[WorkbookChartPointFormat](workbookchartpointformat.md)|Encapsulates the format properties chart point. Read-only.|
 
 ## JSON representation
 

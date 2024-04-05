@@ -22,8 +22,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|Represents chart line formatting. Read-only.|
+|font|[WorkbookChartFont](workbookchartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|
+|line|[WorkbookChartLineFormat](workbookchartlineformat.md)|Represents chart line formatting. Read-only.|
 
 
 ## JSON representation

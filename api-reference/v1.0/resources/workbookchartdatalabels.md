@@ -18,8 +18,8 @@ Represents a collection of all the data labels on a chart point.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](chartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
-|[Update](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](chartdatalabels.md)	|Update ChartDataLabels object. |
+|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](workbookchardatalabels.md) |Read properties and relationships of chartDataLabels object.|
+|[Update](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](workbookchardatalabels.md)	|Update ChartDataLabels object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -36,7 +36,7 @@ Represents a collection of all the data labels on a chart point.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|Represents the format of chart data labels, which includes fill and font formatting. Read-only.|
+|format|[WorkbookChartDataLabelFormat](workbookchartdatalabelformat.md)|Represents the format of chart data labels, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 

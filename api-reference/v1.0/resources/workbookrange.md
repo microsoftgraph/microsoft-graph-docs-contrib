@@ -18,27 +18,27 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Range](../api/range-get.md) | [Range](range.md) |Read properties and relationships of range object.|
-|[Update](../api/range-update.md) | [Range](range.md)	|Update Range object. |
-|[Boundingrect](../api/range-boundingrect.md)|[Range](range.md)|Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".|
-|[Cell](../api/range-cell.md)|[Range](range.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.|
-|[Column](../api/range-column.md)|[Range](range.md)|Gets a column contained in the range.|
+|[Get Range](../api/range-get.md) | [Range](workbookrange.md) |Read properties and relationships of range object.|
+|[Update](../api/range-update.md) | [Range](workbookrange.md)	|Update Range object. |
+|[Boundingrect](../api/range-boundingrect.md)|[Range](workbookrange.md)|Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".|
+|[Cell](../api/range-cell.md)|[Range](workbookrange.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.|
+|[Column](../api/range-column.md)|[Range](workbookrange.md)|Gets a column contained in the range.|
 |[Columnsafter](../api/workbookrange-columnsafter.md)|[workbookRangeView](workbookrangeview.md)|Gets some columns to the right of the given range.|
 |[Columnsbefore](../api/workbookrange-columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|Gets some columns to the left of the given range.|
-|[Entirecolumn](../api/range-entirecolumn.md)|[Range](range.md)|Gets an object that represents the entire column of the range.|
-|[Entirerow](../api/range-entirerow.md)|[Range](range.md)|Gets an object that represents the entire row of the range.|
-|[Intersection](../api/range-intersection.md)|[Range](range.md)|Gets the range object that represents the rectangular intersection of the given ranges.|
-|[Lastcell](../api/range-lastcell.md)|[Range](range.md)|Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".|
-|[Lastcolumn](../api/range-lastcolumn.md)|[Range](range.md)|Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".|
-|[Lastrow](../api/range-lastrow.md)|[Range](range.md)|Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".|
-|[Offsetrange](../api/range-offsetrange.md)|[Range](range.md)|Gets an object that represents a range that's offset from the specified range. The dimension of the returned range matches this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception is thrown.|
-|[Row](../api/range-row.md)|[Range](range.md)|Gets a row contained in the range.|
+|[Entirecolumn](../api/range-entirecolumn.md)|[Range](workbookrange.md)|Gets an object that represents the entire column of the range.|
+|[Entirerow](../api/range-entirerow.md)|[Range](workbookrange.md)|Gets an object that represents the entire row of the range.|
+|[Intersection](../api/range-intersection.md)|[Range](workbookrange.md)|Gets the range object that represents the rectangular intersection of the given ranges.|
+|[Lastcell](../api/range-lastcell.md)|[Range](workbookrange.md)|Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".|
+|[Lastcolumn](../api/range-lastcolumn.md)|[Range](workbookrange.md)|Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".|
+|[Lastrow](../api/range-lastrow.md)|[Range](workbookrange.md)|Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".|
+|[Offsetrange](../api/range-offsetrange.md)|[Range](workbookrange.md)|Gets an object that represents a range that's offset from the specified range. The dimension of the returned range matches this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception is thrown.|
+|[Row](../api/range-row.md)|[Range](workbookrange.md)|Gets a row contained in the range.|
 |[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Gets some rows above a given range.|
 |[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Gets some rows below a given range.|
-|[Usedrange](../api/range-usedrange.md)|[Range](range.md)|Returns the used range of the given range object.|
+|[Usedrange](../api/range-usedrange.md)|[Range](workbookrange.md)|Returns the used range of the given range object.|
 |[Clear](../api/range-clear.md)|None|Clear range values, format, fill, border, etc.|
 |[Delete](../api/range-delete.md)|None|Deletes the cells associated with the range.|
-|[Insert](../api/range-insert.md)|[Range](range.md)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.|
+|[Insert](../api/range-insert.md)|[Range](workbookrange.md)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.|
 |[Merge](../api/range-merge.md)|None|Merge the range cells into one region in the worksheet.|
 |[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.|
 |[Unmerge](../api/range-unmerge.md)|None|Unmerge the range cells into separate cells.|
@@ -68,9 +68,9 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookRangeFormat](rangeformat.md)|Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.|
-|sort|[WorkbookRangeSort](rangesort.md)|The worksheet containing the current range. Read-only.|
-|worksheet|[WorkbookWorksheet](worksheet.md)|The worksheet containing the current range. Read-only.|
+|format|[WorkbookRangeFormat](workbookrangeformat.md)|Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.|
+|sort|[WorkbookRangeSort](workbookrangesort.md)|The worksheet containing the current range. Read-only.|
+|worksheet|[WorkbookWorksheet](workbookworksheet.md)|The worksheet containing the current range. Read-only.|
 
 ## JSON representation
 
