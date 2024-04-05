@@ -1,6 +1,6 @@
 ---
 title: "customClaimBase resource type"
-description: "An abstract type for a claim, contains a collection of configurations for a claim."
+description: "Represents an abstract type for a claim, contains a collection of configurations for a claim."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This ia an abstract type for a custom claim. It contains a collection of configurations for a claim.
+Represents an abstract type for a custom claim. It contains a collection of configurations for a claim.
 
 ## Properties
 |Property|Type|Description|

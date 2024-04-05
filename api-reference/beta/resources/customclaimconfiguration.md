@@ -1,6 +1,6 @@
 ---
 title: "customClaimConfiguration resource type"
-description: "Claim configuration that details the conditions and sources of any custom claim."
+description: "Represents a claim configuration that details the conditions and sources of any custom claim."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Claim configuration that details the conditions and sources of any custom claim. Typically, either an attribute or a set of transforms should be provided to source the claim value. In the case where both are provided then the output of the transforms take priority. If the transforms result in no output then the attribute value is used.
+Represents a claim configuration that details the conditions and sources of any custom claim. Typically, an attribute or a set of transforms should be provided to source the claim value. In the case where both are provided, the output of the transforms takes priority. If the transform results in no output then the attribute value is used.
 
 ## Properties
 |Property|Type|Description|

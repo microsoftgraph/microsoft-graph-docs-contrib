@@ -1,6 +1,6 @@
 ---
 title: "customClaimConditionBase resource type"
-description: "Custom claim condition base."
+description: "Represents a custom claim condition base."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type for a custom claim condition base.
+Represents an abstract type for a custom claim condition base.
 
 ## Properties
 |Property|Type|Description|

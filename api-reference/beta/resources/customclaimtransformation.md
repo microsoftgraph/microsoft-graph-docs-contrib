@@ -1,6 +1,6 @@
 ---
 title: "customClaimTransformation resource type"
-description: "Base transformation property that contains a single input attribute."
+description: "Represents an abstract type for a single input attribute."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type for base transformation property that contains a single input attribute.
+Represents an abstract type for a single input attribute.
 
 ## Properties
 |Property|Type|Description|
