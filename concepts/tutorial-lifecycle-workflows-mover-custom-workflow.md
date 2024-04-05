@@ -13,7 +13,7 @@ ms.date: 03/26/2024
 
 # Automate employee mover tasks when they change jobs using lifecycle workflows APIs
 
-This tutorial provides step-by-step guidance for automating mover tasks with Lifecycle Workflows APIs.
+This tutorial offers step-by-step guidance on automating mover tasks using lifecycle workflows APIs.
 
 :::image type="content" source="images/tutorial-lifecycle-workflows/arch-2.png" alt-text="Screenshot of the Lifecycle Workflows scenario." lightbox="images/tutorial-lifecycle-workflows/arch-2.png":::
 
