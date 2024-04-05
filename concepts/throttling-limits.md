@@ -59,8 +59,8 @@ The preceding limits apply to the following resources:
 
 | Resource      | Limits per app    |
 | -------------- | ------------ |
-| [Calls](/graph/api/resources/call) | 15,000 requests in a 60-second period, per application per tenant |
-| [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
+| [Calls](/graph/api/resources/call) | 50,000 requests in a 15-second period, per application per tenant |
+| [Meeting information](/graph/api/resources/meetinginfo)   | 2,000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1,500 requests in a 30-second period, per application per tenant |
 | [Virtual event](/graph/api/resources/virtualevent) | 10,000 requests/app each month |
 
@@ -481,11 +481,6 @@ The following limits apply to any type of requests for service communications un
 | ------------ | ------------------------ |
 | Any | 240 requests per 60 seconds |
 |Any | 800 requests per hour |
-
-
-## Skype service limits
-
-[!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
 
 ## Subscription service limits
 
