@@ -18,7 +18,7 @@ Represents a collection of all the data labels on a chart point.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](workbookchardatalabels.md) |Read properties and relationships of chartDataLabels object.|
+|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](workbookchartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
 |[Update](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](workbookchardatalabels.md)	|Update ChartDataLabels object. |
 
 ## Properties

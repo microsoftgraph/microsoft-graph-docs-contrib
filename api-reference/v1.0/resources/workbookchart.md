@@ -44,7 +44,7 @@ Represents a chart object in a workbook.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |axes|[WorkbookChartAxes](workbookchartaxes.md)|Represents chart axes. Read-only.|
-|dataLabels|[WorkbookChartDataLabels](workbookchardatalabels.md)|Represents the datalabels on the chart. Read-only.|
+|dataLabels|[WorkbookChartDataLabels](workbookchartdatalabels.md)|Represents the datalabels on the chart. Read-only.|
 |format|[WorkbookChartAreaFormat](workbookchartareaformat.md)|Encapsulates the format properties for the chart area. Read-only.|
 |legend|[WorkbookChartLegend](workbookchartlegend.md)|Represents the legend for the chart. Read-only.|
 |series|[WorkbookChartSeries](workbookchartseries.md) collection|Represents either a single series or collection of series in the chart. Read-only.|

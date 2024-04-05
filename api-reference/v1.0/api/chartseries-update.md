@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of [chartSeries](../resources/chartseries.md) object.
+Update the properties of [chartSeries](../resources/workbookchartseries.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -46,7 +46,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/s
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookChartSeries](../resources/chartseries.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [WorkbookChartSeries](../resources/workbookchartseries.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.
