@@ -185,20 +185,6 @@ items:
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Update gradingCategory
     href: ../../api/educationgradingcategory-update.md
-- name: Education grading scheme
-  items:
-  - name: Education grading scheme
-    href: ../../resources/educationgradingscheme.md
-  - name: List educationGradingScheme objects
-    href: ../../api/educationassignmentsettings-get.md
-  - name: Create educationGradingScheme
-    href: ../../api/educationassignment-post-gradingscheme.md
-  - name: Get educationGradingScheme
-    href: ../../api/educationgradingscheme-get.md
-  - name: Update educationGradingScheme
-    href: ../../api/educationgradingscheme-update.md
-  - name: Delete educationGradingScheme
-    href: ../../api/educationgradingscheme-delete.md
 - name: Education module
   items:
   - name: Education module
@@ -299,44 +285,6 @@ items:
     href: ../../api/educationsubmissionresource-get.md
   - name: Delete
     href: ../../api/educationsubmissionresource-delete.md
-- name: Education synchronization error
-  items:
-  - name: Education synchronization error
-    href: ../../resources/educationsynchronizationerror.md
-  - name: Get synchronization errors
-    href: ../../api/educationsynchronizationerrors-get.md
-- name: Education synchronization profile
-  items:
-  - name: Education synchronization profile
-    href: ../../resources/educationsynchronizationprofile.md
-  - name: List profiles
-    href: ../../api/educationsynchronizationprofile-list.md
-  - name: Get profile
-    href: ../../api/educationsynchronizationprofile-get.md
-  - name: Create profile
-    href: ../../api/educationsynchronizationprofile-post.md
-  - name: Delete profile
-    href: ../../api/educationsynchronizationprofile-delete.md
-  - name: Pause profile
-    href: ../../api/educationsynchronizationprofile-pause.md
-  - name: Resume profile
-    href: ../../api/educationsynchronizationprofile-resume.md
-  - name: Reset profile
-    href: ../../api/educationsynchronizationprofile-reset.md
-  - name: Start CSV profile
-    href: ../../api/educationsynchronizationprofile-start.md
-  - name: Get CSV upload URL
-    href: ../../api/educationsynchronizationprofile-uploadurl.md
-  - name: Get status
-    href: ../../api/educationsynchronizationprofilestatus-get.md
-  - name: Get errors
-    href: ../../api/educationsynchronizationerrors-get.md
-- name: Education synchronization profile status
-  items:
-  - name: Education synchronization profile status
-    href: ../../resources/educationsynchronizationprofilestatus.md
-  - name: Get status of a sync
-    href: ../../api/educationsynchronizationprofilestatus-get.md
 - name: Related contact
   items:
   - name: Related contact
@@ -361,8 +309,6 @@ items:
     href: ../../resources/educationassignmentrecipient.md
   - name: Education channel resource
     href: ../../resources/educationchannelresource.md
-  - name: Education csv data provider
-    href: ../../resources/educationcsvdataprovider.md
   - name: Education excel resource
     href: ../../resources/educationexcelresource.md
   - name: Education external resource
@@ -371,52 +317,20 @@ items:
     href: ../../resources/educationfeedback.md
   - name: Education file resource
     href: ../../resources/educationfileresource.md
-  - name: Education file synchronization verification message
-    href: ../../resources/educationfilesynchronizationverificationmessage.md
-  - name: Education grading scheme grade
-    href: ../../resources/educationgradingschemegrade.md
-  - name: Education identity creation configuration
-    href: ../../resources/educationidentitycreationconfiguration.md
-  - name: Education identity domain
-    href: ../../resources/educationidentitydomain.md
-  - name: Education identity matching configuration
-    href: ../../resources/educationidentitymatchingconfiguration.md
-  - name: Education identity matching options
-    href: ../../resources/educationidentitymatchingoptions.md
-  - name: Education identity synchronization configuration
-    href: ../../resources/educationidentitysynchronizationconfiguration.md
   - name: Education link resource
     href: ../../resources/educationlinkresource.md
   - name: Education linked assignment resource
     href: ../../resources/educationlinkedassignmentresource.md
   - name: Education media resource
     href: ../../resources/educationmediaresource.md
-  - name: Education one roster api data provider
-    href: ../../resources/educationonerosterapidataprovider.md
   - name: Education power point resource
     href: ../../resources/educationpowerpointresource.md
-  - name: Education power school data provider
-    href: ../../resources/educationpowerschooldataprovider.md
   - name: Education resource
     href: ../../resources/educationresource.md
   - name: Education submission individual recipient
     href: ../../resources/educationsubmissionindividualrecipient.md
   - name: Education submission recipient
     href: ../../resources/educationsubmissionrecipient.md
-  - name: Education synchronization connection settings
-    href: ../../resources/educationsynchronizationconnectionsettings.md
-  - name: Education synchronization customization
-    href: ../../resources/educationsynchronizationcustomization.md
-  - name: Education synchronization customizations
-    href: ../../resources/educationsynchronizationcustomizations.md
-  - name: Education synchronization data provider
-    href: ../../resources/educationsynchronizationdataprovider.md
-  - name: Education synchronization license assignment
-    href: ../../resources/educationsynchronizationlicenseassignment.md
-  - name: Education synchronization OAuth 1 connection settings
-    href: ../../resources/educationsynchronizationoauth1connectionsettings.md
-  - name: Education synchronization OAuth 2 client credentials connection settings
-    href: ../../resources/educationsynchronizationoauth2clientcredentialsconnectionsettings.md
   - name: Education teams app resource
     href: ../../resources/educationteamsappresource.md
   - name: Education word resource

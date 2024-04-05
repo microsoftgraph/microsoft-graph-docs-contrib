@@ -13,10 +13,10 @@ items:
     href: ../../api/application-get.md
   - name: Update application
     href: ../../api/application-update.md
-  - name: Upsert application
-    href: ../../api/application-upsert.md
   - name: Delete application
     href: ../../api/application-delete.md
+  - name: Get delta
+    href: ../../api/application-delta.md
   - name: List deleted applications
     href: ../../api/directory-deleteditems-list.md
   - name: List deleted applications owned by user
@@ -27,12 +27,6 @@ items:
     href: ../../api/directory-deleteditems-delete.md
   - name: Restore deleted application
     href: ../../api/directory-deleteditems-restore.md
-  - name: delta
-    href: ../../api/application-delta.md
-  - name: Create call
-    href: ../../api/application-post-calls.md
-  - name: Create online meeting
-    href: ../../api/application-post-onlinemeetings.md
   - name: Certificates and secrets
     items:
     - name: Add password
@@ -53,6 +47,8 @@ items:
       href: ../../api/extensionproperty-delete.md
     - name: Delete extensionProperty
       href: ../../api/extensionproperty-delete.md
+    - name: Get available extension properties
+      href: ../../api/directoryobject-getavailableextensionproperties.md
   - name: Federated identity credentials
     items:
     - name: List federatedIdentityCredential
@@ -117,8 +113,6 @@ items:
     href: ../../api/federatedidentitycredential-get.md
   - name: Update federatedIdentityCredential
     href: ../../api/federatedidentitycredential-update.md
-  - name: Upsert federatedIdentityCredential
-    href: ../../api/federatedidentitycredential-upsert.md
   - name: Delete federatedIdentityCredential
     href: ../../api/federatedidentitycredential-delete.md
 - name: Service principal
@@ -133,8 +127,6 @@ items:
     href: ../../api/serviceprincipal-get.md
   - name: Update servicePrincipal
     href: ../../api/serviceprincipal-update.md
-  - name: Upsert servicePrincipal
-    href: ../../api/serviceprincipal-upsert.md
   - name: Delete servicePrincipal
     href: ../../api/serviceprincipal-delete.md
   - name: List deleted servicePrincipals
@@ -149,7 +141,7 @@ items:
     href: ../../api/serviceprincipal-list-createdobjects.md
   - name: List ownedObjects
     href: ../../api/serviceprincipal-list-ownedobjects.md
-  - name: delta
+  - name: Get delta
     href: ../../api/serviceprincipal-delta.md
   - name: Create remoteDesktopSecurityConfiguration
     href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
@@ -243,26 +235,6 @@ items:
       href: ../../api/serviceprincipal-list-tokenlifetimepolicies.md
     - name: Remove tokenLifetimePolicy
       href: ../../api/serviceprincipal-delete-tokenlifetimepolicies.md
-    - name: List permissionGrantPreApprovalPolicy
-      href: ../../api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
-    - name: Assign permissionGrantPreApprovalPolicy
-      href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
-    - name: Remove permissionGrantPreApprovalPolicy
-      href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
-  - name: Single sign on
-    items:
-    - name: createPasswordSingleSignOnCredentials
-      href: ../../api/serviceprincipal-createpasswordsinglesignoncredentials.md
-    - name: getPasswordSingleSignOnCredentials
-      href: ../../api/serviceprincipal-getpasswordsinglesignoncredentials.md
-    - name: updatePasswordSingleSignOnCredentials
-      href: ../../api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-    - name: deletePasswordSingleSignOnCredentials
-      href: ../../api/serviceprincipal-deletepasswordsinglesignoncredentials.md
-- name: On-premises publishing
-  items:
-  - name: Overview
-    href: ../../resources/onpremisespublishingprofile-root.md
 - name: Policies
   items:
   - name: Remote desktop security configuration
@@ -281,12 +253,12 @@ items:
     items:
     - name: Token issuance policy
       href: ../../resources/tokenissuancepolicy.md
+    - name: List tokenIssuancePolicy
+      href: ../../api/tokenissuancepolicy-list.md
     - name: Create tokenIssuancePolicy
       href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
     - name: Get tokenIssuancePolicy
       href: ../../api/tokenissuancepolicy-get.md
-    - name: List tokenIssuancePolicy
-      href: ../../api/tokenissuancepolicy-list.md
     - name: Update tokenIssuancePolicy
       href: ../../api/tokenissuancepolicy-update.md
     - name: Delete tokenIssuancePolicy

@@ -7,12 +7,6 @@ items:
     href: ../../resources/externalconnectors-connectionoperation.md
   - name: Get connectionOperation
     href: ../../api/externalconnectors-connectionoperation-get.md
-- name: Connection quota
-  items:
-  - name: Connection quota
-    href: ../../resources/externalconnectors-connectionquota.md
-  - name: Get connectionQuota
-    href: ../../api/externalconnectors-connectionquota-get.md
 - name: External connection
   items:
   - name: External connection
@@ -107,8 +101,6 @@ items:
     href: ../../resources/publicerrordetail.md
   - name: Public inner error
     href: ../../resources/publicinnererror.md
-  - name: Ranking hint
-    href: ../../resources/externalconnectors-rankinghint.md
   - name: Search settings
     href: ../../resources/externalconnectors-searchsettings.md
   - name: URL match info

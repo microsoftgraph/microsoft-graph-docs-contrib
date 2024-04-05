@@ -411,6 +411,106 @@ items:
   items:
   - name: Overview
     href: ../../resources/security-recordsmanagement-overview.md
+  - name: Authority template
+    items:
+    - name: Authority template
+      href: ../../resources/security-authoritytemplate.md
+    - name: List authorities
+      href: ../../api/security-labelsroot-list-authorities.md
+    - name: Create authorities
+      href: ../../api/security-labelsroot-post-authorities.md
+    - name: Get authorities
+      href: ../../api/security-authoritytemplate-get.md
+    - name: Delete authorities
+      href: ../../api/security-labelsroot-delete-authorities.md
+  - name: Category template
+    items:
+    - name: Category template
+      href: ../../resources/security-categorytemplate.md
+    - name: List categories
+      href: ../../api/security-labelsroot-list-categories.md
+    - name: Create categories
+      href: ../../api/security-labelsroot-post-categories.md
+    - name: Get categories
+      href: ../../api/security-categorytemplate-get.md
+    - name: Delete categories
+      href: ../../api/security-labelsroot-delete-categories.md
+    - name: List subCategories
+      href: ../../api/security-categorytemplate-list-subcategories.md
+    - name: Create subCategories
+      href: ../../api/security-categorytemplate-post-subcategories.md
+  - name: Citation template
+    items:
+    - name: Citation template
+      href: ../../resources/security-citationtemplate.md
+    - name: List citations
+      href: ../../api/security-labelsroot-list-citations.md
+    - name: Create citations
+      href: ../../api/security-labelsroot-post-citations.md
+    - name: Get citations
+      href: ../../api/security-citationtemplate-get.md
+    - name: Delete citations
+      href: ../../api/security-labelsroot-delete-citations.md
+  - name: Department template
+    items:
+    - name: Department template
+      href: ../../resources/security-departmenttemplate.md
+    - name: List departments
+      href: ../../api/security-labelsroot-list-departments.md
+    - name: Create departments
+      href: ../../api/security-labelsroot-post-departments.md
+    - name: Get departments
+      href: ../../api/security-departmenttemplate-get.md
+    - name: Delete departments
+      href: ../../api/security-labelsroot-delete-departments.md
+  - name: Disposition review stage
+    items:
+    - name: Disposition review stage
+      href: ../../resources/security-dispositionreviewstage.md
+    - name: Create retentionLabel
+      href: ../../api/security-labelsroot-post-retentionlabel.md
+    - name: Update retentionLabel
+      href: ../../api/security-retentionlabel-update.md
+  - name: File plan reference template
+    items:
+    - name: File plan reference template
+      href: ../../resources/security-fileplanreferencetemplate.md
+    - name: List filePlanReferences
+      href: ../../api/security-labelsroot-list-fileplanreferences.md
+    - name: Create filePlanReferences
+      href: ../../api/security-labelsroot-post-fileplanreferences.md
+    - name: Get filePlanReferences
+      href: ../../api/security-fileplanreferencetemplate-get.md
+    - name: Delete filePlanReferences
+      href: ../../api/security-labelsroot-delete-fileplanreferences.md
+  - name: Labels root
+    items:
+    - name: Labels root
+      href: ../../resources/security-labelsroot.md
+    - name: List retentionLabels
+      href: ../../api/security-labelsroot-list-retentionlabel.md
+    - name: Create retentionLabel
+      href: ../../api/security-labelsroot-post-retentionlabel.md
+    - name: List authorities
+      href: ../../api/security-labelsroot-list-authorities.md
+    - name: Create authorities
+      href: ../../api/security-labelsroot-post-authorities.md
+    - name: List categories
+      href: ../../api/security-labelsroot-list-categories.md
+    - name: Create categories
+      href: ../../api/security-labelsroot-post-categories.md
+    - name: List citations
+      href: ../../api/security-labelsroot-list-citations.md
+    - name: Create citations
+      href: ../../api/security-labelsroot-post-citations.md
+    - name: List departments
+      href: ../../api/security-labelsroot-list-departments.md
+    - name: Create departments
+      href: ../../api/security-labelsroot-post-departments.md
+    - name: List filePlanReferences
+      href: ../../api/security-labelsroot-list-fileplanreferences.md
+    - name: Create filePlanReferences
+      href: ../../api/security-labelsroot-post-fileplanreferences.md
   - name: Retention event
     items:
     - name: Retention event
@@ -441,12 +541,50 @@ items:
       href: ../../api/security-retentioneventtype-update.md
     - name: Delete retentionEventType
       href: ../../api/security-retentioneventtype-delete.md
+  - name: Retention label
+    items:
+    - name: Retention label
+      href: ../../resources/security-retentionlabel.md
+    - name: List retentionLabels
+      href: ../../api/security-labelsroot-list-retentionlabel.md
+    - name: Create retentionLabel
+      href: ../../api/security-labelsroot-post-retentionlabel.md
+    - name: Get retentionLabel
+      href: ../../api/security-retentionlabel-get.md
+    - name: Update retentionLabel
+      href: ../../api/security-retentionlabel-update.md
+    - name: Delete retentionLabel
+      href: ../../api/security-retentionlabel-delete.md
+    - name: List retentionEventType
+      href: ../../api/security-retentioneventtype-list.md
+    - name: Add retentionEventType
+      href: ../../api/security-retentioneventtype-post.md
+  - name: Subcategory template
+    items:
+    - name: Subcategory template
+      href: ../../resources/security-subcategorytemplate.md
+    - name: List subCategories
+      href: ../../api/security-categorytemplate-list-subcategories.md
+    - name: Create subCategories
+      href: ../../api/security-categorytemplate-post-subcategories.md
+    - name: Get subCategories
+      href: ../../api/security-subcategorytemplate-get.md
+    - name: Delete subCategories
+      href: ../../api/security-categorytemplate-delete-subcategories.md
   - name: Complex types
     items:
     - name: Event propagation result
       href: ../../resources/security-eventpropagationresult.md
     - name: Event query
       href: ../../resources/security-eventquery.md
+    - name: File plan descriptor
+      href: ../../resources/security-fileplandescriptor.md
+    - name: File plan descriptor base
+      href: ../../resources/security-fileplandescriptorbase.md
+    - name: File plan descriptor template
+      href: ../../resources/security-fileplandescriptortemplate.md
+    - name: File plan reference
+      href: ../../resources/security-fileplanreference.md
     - name: Identity
       href: ../../resources/identity.md
     - name: Identity set
@@ -457,6 +595,12 @@ items:
       href: ../../resources/publicerrordetail.md
     - name: Public inner error
       href: ../../resources/publicinnererror.md
+    - name: Retention duration
+      href: ../../resources/security-retentionduration.md
+    - name: Retention duration forever
+      href: ../../resources/security-retentiondurationforever.md
+    - name: Retention duration in days
+      href: ../../resources/security-retentiondurationindays.md
     - name: Retention event status
       href: ../../resources/security-retentioneventstatus.md
 - name: Secure score

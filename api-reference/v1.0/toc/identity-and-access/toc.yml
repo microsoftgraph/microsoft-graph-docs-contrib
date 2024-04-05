@@ -839,6 +839,8 @@ items:
         href: ../../resources/targetapplicationowners.md
       - name: Target manager
         href: ../../resources/targetmanager.md
+      - name: Target user sponsors
+        href: ../../resources/targetusersponsors.md
   - name: Lifecycle workflows
     items:
     - name: Overview

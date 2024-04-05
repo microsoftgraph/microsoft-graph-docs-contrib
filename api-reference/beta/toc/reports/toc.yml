@@ -13,132 +13,14 @@ items:
           href: ../../resources/relyingpartydetailedsummary.md
         - name: List relyingPartyDetailedSummary
           href: ../../api/reportroot-getrelyingpartydetailedsummary.md
-    - name: App credential sign in activity
-      items:
-      - name: App credential sign in activity
-        href: ../../resources/appcredentialsigninactivity.md
-      - name: List appCredentialSignInActivities
-        href: ../../api/reportroot-list-appcredentialsigninactivities.md
-      - name: Get appCredentialSignInActivity
-        href: ../../api/appcredentialsigninactivity-get.md
     - name: Application sign-in
-      items:
-      - name: Application sign in summary
-        items:
-        - name: Application sign in summary
-          href: ../../resources/applicationsigninsummary.md
-        - name: getAzureADApplicationSignInSummary
-          href: ../../api/reportroot-getazureadapplicationsigninsummary.md
-      - name: Application sign in detailed summary
-        items:
-        - name: Application sign in detailed summary
-          href: ../../resources/applicationsignindetailedsummary.md
-        - name: List applicationSignInDetailedSummary
-          href: ../../api/reportroot-list-applicationsignindetailedsummary.md
-        - name: Get applicationSignInDetailedSummary
-          href: ../../api/applicationsignindetailedsummary-get.md
+      items: []
     - name: Application user activity (preview)
-      items:
-      - name: Daily user insight metrics root
-        href: ../../resources/dailyuserinsightmetricsroot.md
-      - name: Monthly user insight metrics root
-        href: ../../resources/monthlyuserinsightmetricsroot.md
-      - name: Active users breakdown metric
-        items:
-        - name: Active users breakdown metric
-          href: ../../resources/activeusersbreakdownmetric.md
-        - name: List daily activeUsersBreakdown
-          href: ../../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
-        - name: List monthly activeUsersBreakdown
-          href: ../../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
-      - name: Active users metric
-        items:
-        - name: Active users metric
-          href: ../../resources/activeusersmetric.md
-        - name: List daily activeUsers
-          href: ../../api/dailyuserinsightmetricsroot-list-activeusers.md
-        - name: List monthly activeUsers
-          href: ../../api/monthlyuserinsightmetricsroot-list-activeusers.md
-      - name: Authentications metric
-        items:
-        - name: Authentications metric
-          href: ../../resources/authenticationsmetric.md
-        - name: List daily authentications
-          href: ../../api/dailyuserinsightmetricsroot-list-authentications.md
-        - name: List monthly authentications
-          href: ../../api/monthlyuserinsightmetricsroot-list-authentications.md
-      - name: Insight summary
-        items:
-        - name: Insight summary
-          href: ../../resources/insightsummary.md
-        - name: List daily summary
-          href: ../../api/dailyuserinsightmetricsroot-list-summary.md
-        - name: List monthly summary
-          href: ../../api/monthlyuserinsightmetricsroot-list-summary.md
-      - name: MFA completion metric
-        items:
-        - name: MFA completion metric
-          href: ../../resources/mfacompletionmetric.md
-        - name: List daily mfaCompletions
-          href: ../../api/dailyuserinsightmetricsroot-list-mfacompletions.md
-        - name: List monthly mfaCompletions
-          href: ../../api/monthlyuserinsightmetricsroot-list-mfacompletions.md
-      - name: User count metric
-        items:
-        - name: User count metric
-          href: ../../resources/usercountmetric.md
-        - name: List daily userCount
-          href: ../../api/dailyuserinsightmetricsroot-list-usercount.md
-      - name: User requests metric
-        items:
-        - name: User requests metric
-          href: ../../resources/userrequestsmetric.md
-        - name: List daily requests
-          href: ../../api/dailyuserinsightmetricsroot-list-requests.md
-        - name: List monthly requests
-          href: ../../api/monthlyuserinsightmetricsroot-list-requests.md
-      - name: User sign up metric
-        items:
-        - name: User sign up metric
-          href: ../../resources/usersignupmetric.md
-        - name: List daily signUps
-          href: ../../api/dailyuserinsightmetricsroot-list-signups.md
-        - name: List monthly signUps
-          href: ../../api/monthlyuserinsightmetricsroot-list-signups.md
-    - name: Microsoft Entra authentication
-      items:
-      - name: Microsoft Entra authentication
-        href: ../../resources/azureadauthentication.md
-      - name: Get azureADAuthentication
-        href: ../../api/azureadauthentication-get.md
+      items: []
     - name: Registration and usage
       items:
       - name: Overview
         href: ../../resources/authenticationmethods-usage-insights-overview.md
-      - name: Credential usage summary
-        items:
-        - name: Credential usage summary
-          href: ../../resources/credentialusagesummary.md
-        - name: getCredentialUsageSummary
-          href: ../../api/reportroot-getcredentialusagesummary.md
-      - name: Credential user registration count
-        items:
-        - name: Credential user registration count
-          href: ../../resources/credentialuserregistrationcount.md
-        - name: getCredentialUserRegistrationCount
-          href: ../../api/reportroot-getcredentialuserregistrationcount.md
-      - name: Credential user registration details
-        items:
-        - name: Credential user registration details
-          href: ../../resources/credentialuserregistrationdetails.md
-        - name: List credentialUserRegistrationDetails
-          href: ../../api/reportroot-list-credentialuserregistrationdetails.md
-      - name: User credential usage details
-        items:
-        - name: User credential usage details
-          href: ../../resources/usercredentialusagedetails.md
-        - name: List userCredentialUsageDetails
-          href: ../../api/reportroot-list-usercredentialusagedetails.md
       - name: User registration details
         items:
         - name: User registration details
@@ -159,40 +41,10 @@ items:
           href: ../../resources/userregistrationmethodsummary.md
         - name: usersRegisteredByMethod
           href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
-    - name: Service activity
-      items:
-      - name: Service activity
-        href: ../../resources/serviceactivity.md
-      - name: getMetricsForMfaSignInSuccess
-        href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
-      - name: getMetricsForMfaSignInFailure
-        href: ../../api/serviceactivity-getmetricsformfasigninfailure.md
-      - name: getMetricsForConditionalAccessManagedDevicesSignInSuccess
-        href: ../../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
-      - name: getMetricsForConditionalAccessCompliantDevicesSignInSuccess
-        href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
-      - name: getMetricsForSamlSignInSuccess
-        href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
-    - name: Service principal sign in activity
-      items:
-      - name: Service principal sign in activity
-        href: ../../resources/serviceprincipalsigninactivity.md
-      - name: List servicePrincipalSignInActivities
-        href: ../../api/reportroot-list-serviceprincipalsigninactivities.md
-      - name: Get servicePrincipalSignInActivity
-        href: ../../api/serviceprincipalsigninactivity-get.md
   - name: Microsoft Entra audit logs
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
-    - name: Custom security attribute audit
-      items:
-      - name: Custom security attribute audit
-        href: ../../resources/customsecurityattributeaudit.md
-      - name: List customSecurityAttributeAudits
-        href: ../../api/auditlogroot-list-customsecurityattributeaudits.md
-      - name: Get customSecurityAttributeAudit
-        href: ../../api/customsecurityattributeaudit-get.md
     - name: Directory audit
       items:
       - name: Directory audit
@@ -223,14 +75,6 @@ items:
   items:
   - name: Overview
     href: ../../resources/report.md
-  - name: Admin report settings
-    items:
-    - name: Admin report settings
-      href: ../../resources/adminreportsettings.md
-    - name: Get adminReportSettings
-      href: ../../api/adminreportsettings-get.md
-    - name: Update adminReportSettings
-      href: ../../api/adminreportsettings-update.md
   - name: Report root
     items:
     - name: Report root
@@ -459,26 +303,6 @@ items:
         href: ../../api/reportroot-getyammergroupsactivitygroupcounts.md
       - name: Get activity counts
         href: ../../api/reportroot-getyammergroupsactivitycounts.md
-  - name: Complex types
-    items:
-    - name: Admin
-      href: ../../resources/admin.md
-    - name: Office 365 active user counts
-      href: ../../resources/office365activeusercounts.md
-    - name: Office 365 active user detail
-      href: ../../resources/office365activeuserdetail.md
-    - name: Office 365 groups activity counts
-      href: ../../resources/office365groupsactivitycounts.md
-    - name: Office 365 groups activity detail
-      href: ../../resources/office365groupsactivitydetail.md
-    - name: Office 365 groups activity file counts
-      href: ../../resources/office365groupsactivityfilecounts.md
-    - name: Office 365 groups activity group counts
-      href: ../../resources/office365groupsactivitygroupcounts.md
-    - name: Office 365 groups activity storage
-      href: ../../resources/office365groupsactivitystorage.md
-    - name: Office 365 services user counts
-      href: ../../resources/office365servicesusercounts.md
 - name: Microsoft Defender for Office 365 security reports
   items:
   - name: Overview

@@ -131,12 +131,6 @@ items:
     href: ../../resources/bookingcustomerinformation.md
   - name: Booking customer information base
     href: ../../resources/bookingcustomerinformationbase.md
-  - name: Booking named entity
-    href: ../../resources/bookingnamedentity.md
-  - name: Booking page settings
-    href: ../../resources/bookingpagesettings.md
-  - name: Booking person
-    href: ../../resources/bookingperson.md
   - name: Booking question answer
     href: ../../resources/bookingquestionanswer.md
   - name: Booking question assignment
@@ -149,10 +143,6 @@ items:
     href: ../../resources/bookingworkhours.md
   - name: Booking work time slot
     href: ../../resources/bookingworktimeslot.md
-  - name: Bookings availability
-    href: ../../resources/bookingsavailability.md
-  - name: Bookings availability window
-    href: ../../resources/bookingsavailabilitywindow.md
   - name: Date time time zone
     href: ../../resources/datetimetimezone.md
   - name: Location

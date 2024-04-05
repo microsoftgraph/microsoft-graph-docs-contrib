@@ -145,6 +145,8 @@ items:
     href: ../../api/listitem-post-documentsetversions.md
   - name: Restore documentSetVersion
     href: ../../api/documentsetversion-restore.md
+  - name: Get delta
+    href: ../../api/listitem-delta.md
 - name: Document set version
   items:
   - name: Document set version
