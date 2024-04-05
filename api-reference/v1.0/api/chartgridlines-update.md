@@ -1,17 +1,17 @@
 ---
-title: "Update chartgridlines"
-description: "Update the properties of chartgridlines object."
+title: "Update chartGridLines"
+description: "Update the properties of chartGridLines object."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Update chartgridlines
+# Update chartGridLines
 
 Namespace: microsoft.graph
 
-Update the properties of chartgridlines object.
+Update the properties of chartGridLines object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

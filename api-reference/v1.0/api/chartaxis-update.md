@@ -1,17 +1,17 @@
 ---
-title: "Update chartaxis"
-description: "Update the properties of chartaxis object."
+title: "Update chartAxis"
+description: "Update the properties of chartAxis object."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Update chartaxis
+# Update chartAxis
 
 Namespace: microsoft.graph
 
-Update the properties of chartaxis object.
+Update the properties of chartAxis object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
