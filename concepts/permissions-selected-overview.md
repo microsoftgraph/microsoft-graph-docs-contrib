@@ -29,7 +29,7 @@ SharePoint and OneDrive have a long-established permissions model that doesn't f
 
 ## How Selected Scopes work with SharePoint & OneDrive Permissions
 
-When an administrator consents to one or more of the Selected permissions for an application they're effectively delegating the management of permissions to the administrators of the resource. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. With Selected scopes an assignment action is required, an application consented for Lists.SelectedOperations.Selected would initially have no access.
+When an administrator consents to Selected scopes for an application they're delegating management of resource permissions to the owners of that resource within the workload. For other scopes, such as Files.Read.All, as soon as the scope is consented the application can access the resources it represents. With Selected scopes an assignment action is required, an application consented for Lists.SelectedOperations.Selected would initially have no access.
 
 > Assigning application permissions breaks inheritance on the assigned resource, so be mindful of [service limits for unique permissions](https://learn.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library) in your solution design.
 
@@ -122,7 +122,7 @@ The permission requirements vary by level, in all delegated cases the current us
 
 ### How Access is Calculated
 
-There are two types of tokens, Application Only and Delegated. Application only scenarios have no user present and are considered higher risk as the application can do everything at any time for which it's consented. With delegated the application can never exceed the current user's existing permissions and can be considered lower-risk for many scenarios. Delegated should be preferred when possible, but both modes are available to meet your needs.
+There are two types of tokens, Application Only and Delegated. Application only scenarios have no user present and are considered higher risk. With delegated the application can never exceed the current user's existing permissions and can be considered lower-risk for many scenarios. Delegated should be preferred when possible, but both modes are available to meet your needs.
 
 We conceptually store a tuple of Application ID, Resource ID, and Role. This means that [application] has [role] access to [resource]. You specify the application and role when a permission is created through the API, the resolved path gives us the resource. For example, application Z has "read" access to the list at "/sites/dev/lists/list1."
 
@@ -142,10 +142,10 @@ When calculating access, we use the values provided in the token to roughly foll
 
 ### Behavior of Consents / Notes
 
-* Applications can have have multiple Selected consents and for those consents to apply at various level across the tenant
-* As soon as a scope is revoked from an application, access through that scope is lost. So if an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection and then the Sites.* consent is revoke it would maintain access to the list it was given specific access to via the Lists.* consent and the previous call to list/permissions
+* Applications can have multiple Selected consents and for those consents to apply at various level across the tenant
+* application access is lost as soon as a scope is revoked, if an application has Lists.* and Sites.* and is given access to a site collection and a specific list in that site collection and then the Sites.* consent is revoked it would maintain access to the list it was given specific access to via the Lists.* consent and the previous call to list/permissions
 * Higher level scopes such as Sites.* can be used to grant file specific level permissions, but lower scopes can never provide access to higher level resources. Allowing applications to ONLY have access at a specific level
-* Consent is an external concept, consumed by OneDrive and SharePoint through the provided token, and once a token is presented with a given scope, we honor it
+* Consent is an external concept, consumed by OneDrive and SharePoint through the provided token, and we honor any scopes presented in the token
 
 
 
