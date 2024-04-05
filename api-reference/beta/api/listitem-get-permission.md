@@ -1,5 +1,5 @@
 ---
-title: "Get permission"
+title: "Get listitem permission"
 description: "Retrieve the properties and relationships of a permission object on a list item."
 author: "patrodg"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Get permission
+# Get listitem permission
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

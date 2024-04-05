@@ -1,5 +1,5 @@
 ---
-title: "Update permission"
+title: "Update list permission"
 description: "Update the permission object on a list."
 author: "patrodg"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Update permission
+# Update list permission
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

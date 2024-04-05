@@ -1,5 +1,5 @@
 ---
-title: "Delete permission"
+title: "Delete listitem permission"
 description: "Delete a permission object on a list item."
 author: "patrodg"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Delete permission
+# Delete listitem permission
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
