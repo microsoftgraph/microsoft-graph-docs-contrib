@@ -22,7 +22,6 @@ To check for changes in the future, call `delta` again with the **@odata.deltaL
 The delta feed shows the latest state for each item, not each change. If an item was renamed twice, it only shows up once, with its latest name.
 The same item might appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
 
-Deleted items are returned with the [deleted](../resources/deleted.md) facet. `Deleted` indicates that the item is deleted and can't be restored.
 Items with this property should be removed from your local state.
 
 > **Note:** You should only delete a folder locally if it's empty after syncing all the changes.
