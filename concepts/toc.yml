@@ -637,8 +637,10 @@ items:
           href: tutorial-lifecycle-workflows-scheduled-leaver.md
         - name: Automate employee offboarding
           href: tutorial-lifecycle-workflows-offboard-custom-workflow.md
+        - name: Automate employee mover tasks (Preview)
+          href: tutorial-lifecycle-workflows-mover-custom-workflow.md  
         - name: Configure employeeLeaveDateTime
-          href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md
+          href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md 
       - name: Manage access to resources
         href: tutorial-access-package-api.md
         displayName: governance, identity
