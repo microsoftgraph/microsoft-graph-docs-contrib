@@ -19,7 +19,7 @@ The **detailsInfo** resource is a JSON string that contains more properties such
 ## Relationships
 None
 ## JSON Representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.detailsInfo",

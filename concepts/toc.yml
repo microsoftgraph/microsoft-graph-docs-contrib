@@ -1110,7 +1110,7 @@ items:
       href: extensibility-open-users.md
     - name: Use schema extensions
       href: extensibility-schema-groups.md
-  - name: Microsoft Graph activity logs (preview)
+  - name: Microsoft Graph activity logs
     href: microsoft-graph-activity-logs-overview.md
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio

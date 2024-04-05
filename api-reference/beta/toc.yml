@@ -215,7 +215,7 @@ items:
                   - name: Insights settings
                     href: resources/insightssettings.md
                   - name: List
-                    href: api/organizationsettings-list-iteminsights.md
+                    href: api/peopleadminsettings-list-iteminsights.md
                   - name: Update
                     href: api/insightssettings-update.md
               - name: User control (preview)
@@ -1369,6 +1369,23 @@ items:
                 href: api/place-get.md
               - name: Update place
                 href: api/place-update.md
+              - name: Devices (preview)
+                items:
+                  - name: Workplace sensor device
+                    href: resources/workplacesensordevice.md
+                    items:
+                      - name: List
+                        href: api/workplace-list-sensordevices.md
+                      - name: Create
+                        href: api/workplace-post-sensordevices.md
+                      - name: Get
+                        href: api/workplacesensordevice-get.md
+                      - name: Update
+                        href: api/workplacesensordevice-update.md
+                      - name: Delete
+                        href: api/workplacesensordevice-delete.md
+                      - name: Ingest telemetry
+                        href: api/workplacesensordevice-ingesttelemetry.md    
       - name: Change notifications
         items:
           - name: Overview
@@ -11840,7 +11857,7 @@ items:
                         href: api/organizationsettings-list-contactinsights.md
                       - name: Update
                         href: api/insightssettings-update.md
-                  - name: Org control for item insights (preview)
+                  - name: Org control for item insights (deprecated)
                     items:
                       - name: Insights settings
                         href: resources/insightssettings.md
@@ -15110,6 +15127,62 @@ items:
                 href: api/industrydata-industrydatarun-get.md
               - name: Get statistics
                 href: api/industrydata-industrydatarun-getstatistics.md
+          - name: Outbound provisioning flow set
+            href: resources/industrydata-outboundprovisioningflowset.md
+            items:
+              - name: List
+                href: api/industrydata-industrydataroot-list-outboundprovisioningflowsets.md
+              - name: Create
+                href: api/industrydata-industrydataroot-post-outboundprovisioningflowsets.md
+              - name: Get
+                href: api/industrydata-outboundprovisioningflowset-get.md
+              - name: Update
+                href: api/industrydata-outboundprovisioningflowset-update.md
+              - name: Delete
+                href: api/industrydata-industrydataroot-delete-outboundprovisioningflowsets.md
+          - name: Provisioning flow
+            href: resources/industrydata-provisioningflow.md
+            items:
+              - name: List
+                href: api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
+              - name: Create
+                href: api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+              - name: Administrative unit provisioning flow
+                href: resources/industrydata-administrativeunitprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-administrativeunitprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-administrativeunitprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-administrativeunitprovisioningflow-delete.md
+              - name: Class group provisioning flow
+                href: resources/industrydata-classgroupprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-classgroupprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-classgroupprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-classgroupprovisioningflow-delete.md
+              - name: Security group provisioning flow
+                href: resources/industrydata-securitygroupprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-securitygroupprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-securitygroupprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-securitygroupprovisioningflow-delete.md
+              - name: User provisioning flow
+                href: resources/industrydata-userprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-userprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-userprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-userprovisioningflow-delete.md
           - name: Reference definition
             href: resources/industrydata-referencedefinition.md
             items:
@@ -15455,6 +15528,14 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
+              - name: Org control for item insights settings (preview)
+                items:
+                - name: Insights settings
+                  href: resources/insightssettings.md
+                - name: List
+                  href: api/peopleadminsettings-list-iteminsights.md
+                - name: Update
+                  href: api/insightssettings-update.md
               - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
@@ -15782,7 +15863,7 @@ items:
                   - name: Insights settings
                     href: resources/insightssettings.md
                   - name: List
-                    href: api/organizationsettings-list-iteminsights.md
+                    href: api/peopleadminsettings-list-iteminsights.md
                   - name: Update
                     href: api/insightssettings-update.md
               - name: User control (preview)

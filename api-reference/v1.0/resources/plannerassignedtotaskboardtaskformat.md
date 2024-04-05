@@ -32,7 +32,7 @@ Represents the information used to render a task correctly in the **AssignedTo**
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
