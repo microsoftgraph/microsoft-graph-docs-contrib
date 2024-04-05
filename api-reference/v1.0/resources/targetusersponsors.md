@@ -12,13 +12,13 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Used in the approval settings of an [access package assignment policy](accesspackageassignmentpolicy.md).
-It's a subtype of [subjectSet](subjectset.md), in which the `@odata.type` value `#microsoft.graph.targetUserSponsors` indicates that a requesting user's sponsors are the approvers. When creating an access package assignment policy approval stage with **targetUserSponsors**, also include another approver, such as a single user or group member, in case the requesting user doesn't have sponsors.
+This resource is a subtype of [subjectSet](subjectset.md), in which the `@odata.type` value `#microsoft.graph.targetUserSponsors` indicates that a requesting user's sponsors are the approvers. When creating an access package assignment policy approval stage with **targetUserSponsors**, also include another approver, such as a single user or group member, in case the requesting user doesn't have sponsors.
 
 Inherits from [subjectSet](subjectset.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.targetUserSponsors"
