@@ -87,7 +87,6 @@ Content-length: 312
             ]
         }
     },
-    "priority": 500,
     "handler": {
         "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler",
         "customExtension": {

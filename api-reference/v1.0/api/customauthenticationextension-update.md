@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH hhttps://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
+PATCH https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
 Content-Type: application/json
 Content-length: 468
 
