@@ -39,6 +39,7 @@ stages:
 
     - checkout: self
       displayName: Checkout docs repo
+      persistCredentials: true
 
     - checkout: msgraph-toc-gen
       displayName: Checkout TOC generator repo
@@ -57,9 +58,16 @@ stages:
         command: build
         projects: $(tocGeneratorProject)
         arguments: '--configuration Release'
-    
+
+    - pwsh: |
+        git config user.email "GraphTooling@service.microsoft.com"
+        git config user.name "Microsoft Graph DevX Tooling"
+      displayName: Configure git
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
+
     - pwsh: git switch $(toc_branch)
       displayName: Checkout requested branch
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
 
     - pwsh: $(tocGeneratorApp) --api-docs $(v1ReferenceRoot)/api --resource-docs $(v1ReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(v1ReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(v1ReferenceRoot)/toc.yml --static-toc $(v1ReferenceRoot)/toc/static-toc.yml
       displayName: Generate v1 reference TOC
@@ -76,4 +84,5 @@ stages:
           git commit -m "Generated reference TOC"
           git push
         }
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
       displayName: Commit and push TOC updates
