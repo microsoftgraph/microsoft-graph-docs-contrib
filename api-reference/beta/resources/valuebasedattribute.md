@@ -1,6 +1,6 @@
 ---
 title: "valueBasedAttribute resource type"
-description: "An attribute backed by a static value."
+description: "Represents an attribute backed by a static value."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An attribute backed by a static value.
+Represents an attribute backed by a static value.
 
 Inherits from [customClaimAttributeBase](../resources/customclaimattributebase.md).
 
