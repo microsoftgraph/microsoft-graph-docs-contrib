@@ -423,6 +423,7 @@ The following example shows the response. The value of the **preferredDataLocati
 HTTP/1.1 204 No Content
 ```
 
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
