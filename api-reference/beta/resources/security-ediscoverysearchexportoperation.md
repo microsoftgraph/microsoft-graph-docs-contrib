@@ -1,7 +1,7 @@
 ---
 title: "ediscoverySearchExportOperation resource type"
-description: "**TODO: Add Description**"
-author: "**himadrinayak**"
+description: "Represents the process of an eDiscovery search export."
+author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the process of an eDiscovery search export.
 
 Inherits from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).
 
@@ -26,27 +25,26 @@ Inherits from [microsoft.graph.security.caseOperation](../resources/security-cas
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.security.caseAction|**TODO: Add Description** Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).The possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData` , `exportReport` , `exportResult`.|
-|additionalOptions|microsoft.graph.security.additionalOptions|**TODO: Add Description**.The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|exportCriteria|microsoft.graph.security.exportCriteria|**TODO: Add Description**.The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
-|exportFileMetadata|[microsoft.graph.security.exportFileMetadata](../resources/security-exportfilemetadata.md) collection|**TODO: Add Description**|
-|exportFormat|microsoft.graph.security.exportFormat|**TODO: Add Description**.The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`.|
-|exportLocation|microsoft.graph.security.exportLocation|**TODO: Add Description**.The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`.|
-|exportSingleItems|Boolean|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|percentProgress|Int32|**TODO: Add Description** Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|**TODO: Add Description** Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|status|microsoft.graph.security.caseOperationStatus|**TODO: Add Description** Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`.|
+|additionalOptions|microsoft.graph.security.additionalOptions|Additonal items to include in the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`.|
+|completedDateTime|DateTimeOffset|The date and time the operation was completed. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
+|createdBy|[microsoft.graph.identitySet](../resources/intune-identityset.md)|The user that created the operation.  Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
+|createdDateTime|DateTimeOffset|The date and time the operation was created. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
+|description|String|The name of export provided by user.|
+|displayName|String|The description of the export by the user.|
+|exportCriteria|microsoft.graph.security.exportCriteria|Items to be inclded in the exports. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
+|exportFileMetadata|[microsoft.graph.security.exportFileMetadata](../resources/security-exportfilemetadata.md) collection|This contains filename, size and downloadurl for the respective file.|
+|exportFormat|microsoft.graph.security.exportFormat|Format of the emails of the export. The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`.|
+|exportLocation|microsoft.graph.security.exportLocation|Locations to be included in the search .The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`.|
+|exportSingleItems|Boolean|Export single items.|
+|id|String| The ID for the operation. Read-only. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|percentProgress|Int32|The progress of the operation. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
+|resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
+|status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|search|[ediscoverySearch](../resources/security-ediscoverysearch.md)|**TODO: Add Description**|
+|search|[ediscoverySearch](../resources/security-ediscoverysearch.md)|ediscovery seaches under each case|
 
 ## JSON representation
 The following is a JSON representation of the resource.
