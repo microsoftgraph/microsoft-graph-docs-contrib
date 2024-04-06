@@ -41,6 +41,47 @@ Inherits from [microsoft.graph.security.caseOperation](../resources/security-cas
 |resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
 |status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`.|
 
+### additionalOptions values
+
+|Member|Description|
+|:----|-----------|
+| none                        | No additional options selected.|
+| teamsAndYammerConversations | Collect up to 12 hours of related conversations when a message matches a search.|
+| cloudAtttachments           | Collect items from links to SharePoint or OneDrive.|
+| allDocumentVersions         | Collect all versions of SharePoint documents. If not selected, only current versions are collected.|
+| subfolderContents           | Collect items inside subfolders of a matched folder.|
+| listAttachments             | Collect files attached to SharePoint lists and their child items.|
+
+### exportCriteria values
+
+|Member|Description|
+|:----|-----------|
+| searchHits | Export collected items with search hits.|
+| partiallyIndexed | Include partially indexed (unrecognized format, are encrypted, or weren’t indexed for other reasons)|
+
+### exportFormat values
+
+|Member|Description|
+|:----|-----------|
+| pst | Mails will be grouped in pst format. |
+| msg | Include .msg for each message        |
+| eml | Include .eml for each message        |
+
+### exportFileMetadata values
+
+|Member|Description|
+|:----|-----------|
+| fileName | The name of the file          |
+| size | The size of the file in Byte. |
+| downloadUrl | The url to download the file  |
+
+### exportLocation values
+
+|Member|Description|
+|:----|-----------|
+| responsiveLocations    | Locations with search hits only.|
+| nonresponsiveLocations | Locations with no search hits.|
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
