@@ -44,7 +44,7 @@ Represents an eDiscovery search. For details, see [Collect data for a case in eD
 |contentQuery|String|The query string in KQL (Keyword Query Language) query. For details, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions). You can refine searches by using fields paired with values; for example, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **eDiscovery search**.|
 |createdDateTime|DateTimeOffset|The date and time the **eDiscovery search** was created.|
-|dataSourceScopes|microsoft.graph.security.dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
+|dataSourceScopes|microsoft.graph.security.dataSourceScopes|When specified, the collection spans across a service for an entire workload. Possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
 |description|String|The description of the **eDiscovery search**.|
 |displayName|String|The display name of the **eDiscovery search**.|
 |id|String| The ID for the **eDiscovery search**. Read-only. |
@@ -55,7 +55,7 @@ Represents an eDiscovery search. For details, see [Collect data for a case in eD
 
 |Member|Description|
 |:----|-----------|
-|none|Do not specify any scopes - locations would be referenced separately.|
+|none|Don't specify any scopes - locations would be referenced separately.|
 |allTenantMailboxes|Include all tenant mailboxes in the **eDiscovery search**.|
 |allTenantSites|Include all tenant sites in the **eDiscovery search**.|
 |allCaseCustodians|Include all custodian locations in the **eDiscovery search**.|
