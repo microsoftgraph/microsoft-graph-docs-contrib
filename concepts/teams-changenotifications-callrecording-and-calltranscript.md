@@ -62,12 +62,11 @@ One of the following permissions is required to subscribe to `communications/onl
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetingTranscript.Read.All            |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            |  OnlineMeetingTranscript.Read.Chat*, OnlineMeetingTranscript.Read.All            |
-
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+| Application                            | OnlineMeetingTranscript.Read.Chat, OnlineMeetingTranscript.Read.All            |
 
 > [!NOTE]
-> To subscribe to any transcript available for a particular online meeting using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
+> - The OnlineMeetingTranscript.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - To subscribe to any transcript available for a particular online meeting by using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
 ### Example 1: Subscribe to transcripts available for a particular online meeting using classic permissions
 
