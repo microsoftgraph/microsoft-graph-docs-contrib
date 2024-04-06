@@ -50,11 +50,11 @@ The following table shows the parameters that can be used with this action.
 | --- | --- | --- |
 | displayName | Edm.String | The display name of the export result. |
 | description | Edm.String | The description of the export result. |
-| exportCriteria | microsoft.graph.security.exportCriteria | The criteria for selecting the content to be exported. |
-| exportLocation | microsoft.graph.security.exportLocation | The locations to be included in the export. |
-| additionalOptions | microsoft.graph.security.additionalOptions | The additional options for customizing the export result. |
-| exportFormat | microsoft.graph.security.exportFormat | The format of the exported content. |
-| exportSingleItems | Edm.Boolean | A flag indicating whether to export single items or not. |
+| exportCriteria | microsoft.graph.security.exportCriteria | The portion of the estimate results to be exported. The possible values are: searchHits, partiallyIndexed, and unknownFutureValue. Required.|
+| exportLocation | microsoft.graph.security.exportLocation | Location scoping option for partially indexed items, either include only responsive locations with hits or include locations with no search hits. The possible values are: responsiveLocations, nonresponsiveLocations, and unknownFutureValue. Required.|
+| additionalOptions | microsoft.graph.security.additionalOptions | The additionals options for the export. The possible values are: none, teamsAndYammerConvesrations, cloudAttachments, allDocumentVersions, subfolderContents, listAttachments, unkownFutureValue. Required.|
+| exportFormat | microsoft.graph.security.exportFormat | The format of the exported content. The possible values are: pst, msg, eml, and unknownFutureValue. Reqruied. |
+| exportSingleItems | Edm.Boolean | A flag indicating whether to export single items or not. Required.|
 
 ## Response
 
