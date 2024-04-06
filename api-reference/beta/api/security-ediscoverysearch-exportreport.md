@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "ediscoverySearch: export report"
 description: "Initiate an export from a search."
@@ -665,6 +666,8 @@ HTTP/1.1 202 Accepted
 
 >>>>>>> 259e0179d53 (Update api-reference/beta/api/security-ediscoverysearch-exportreport.md)
 =======
+=======
+>>>>>>> 996e83817cf (himaddri progress)
 ---
 title: "ediscoverySearch: export report"
 description: "Initiate an export from a search."
@@ -798,4 +801,7 @@ Here's an example  of the response.
 HTTP/1.1 202 Accepted
 ```
 
+<<<<<<< HEAD
 >>>>>>> 09312def7e9 (Update api-reference/beta/api/security-ediscoverysearch-exportreport.md)
+=======
+>>>>>>> 996e83817cf (himaddri progress)
