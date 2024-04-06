@@ -24,16 +24,16 @@ Inherits from [microsoft.graph.security.caseOperation](../resources/security-cas
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|additionalOptions|microsoft.graph.security.additionalOptions|Additonal items to include in the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`.|
+|additionalOptions|microsoft.graph.security.additionalOptions|Additional items to include in the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`.|
 |completedDateTime|DateTimeOffset|The date and time the operation was completed. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
-|createdBy|microsoft.graph.identitySet|The user that created the operation.  Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
+|createdBy|microsoft.graph.identitySet|The user that created the operation. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
 |createdDateTime|DateTimeOffset|The date and time the operation was created. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
 |description|String|The name of export provided by user.|
 |displayName|String|The description of the export by the user.|
-|exportCriteria|microsoft.graph.security.exportCriteria|Items to be inclded in the exports. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
-|exportFileMetadata|microsoft.graph.security.exportFileMetadata|This contains filename, size and downloadurl for the respective file.|
+|exportCriteria|microsoft.graph.security.exportCriteria|Items to be included in the exports. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
+|exportFileMetadata|microsoft.graph.security.exportFileMetadata|The filename, size, and the download url for the respective file.|
 |exportFormat|microsoft.graph.security.exportFormat|Format of the emails of the export. The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`.|
-|exportLocation|microsoft.graph.security.exportLocation|Locations to be included in the search .The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`.|
+|exportLocation|microsoft.graph.security.exportLocation|Locations to be included in the search. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`.|
 |exportSingleItems|Boolean|Export single items.|
 |id|String| The ID for the operation. Read-only. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |percentProgress|Int32|The progress of the operation. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
