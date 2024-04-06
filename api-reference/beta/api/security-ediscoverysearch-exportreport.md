@@ -8,6 +8,7 @@ doc_type: "apiPageType"
 ---
 
 # ediscoverySearch: Export report
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -16,6 +17,7 @@ Export an item report from a **search**.  For details, see [Manage a collection 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -35,12 +37,14 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
@@ -60,6 +64,7 @@ If the export has started successfully, this action returns a `202 Accepted` res
 ## Examples
 
 ### Request
+
 Here's an example  of a request.
 
 ``` http
@@ -73,6 +78,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('2eef613a-c
 ```
 
 ### Response
+
 Here's an example  of the response.
 
 <!-- {

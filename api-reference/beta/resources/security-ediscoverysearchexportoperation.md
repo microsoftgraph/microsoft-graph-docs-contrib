@@ -21,7 +21,6 @@ Inherits from [microsoft.graph.security.caseOperation](../resources/security-cas
 |Method|Return type|Description|
 |:---|:---|:---|
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
