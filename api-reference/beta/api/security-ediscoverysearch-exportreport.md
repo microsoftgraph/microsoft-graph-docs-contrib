@@ -1,6 +1,6 @@
 ---
 title: "ediscoverySearch: Export report"
-description: "Initiate an export from a search."
+description: "Export a report from a search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Initiate an export report from a **search**.  For details, see [Export documents from a review set in eDiscovery (Premium)](/microsoft-365/compliance/export-documents-from-review-set).
-
+Export an item report from a **search**.  For details, see [Manage a collection estimate](/purview/ediscovery-create-draft-collection#manage-a-collection-estimate).
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -50,9 +49,9 @@ The following table shows the parameters that can be used with this action.
 | --- | --- | --- |
 | displayName | Edm.String | The display name of the export result. |
 | description | Edm.String | The description of the export result. |
-| exportCriteria | microsoft.graph.security.exportCriteria | The portion of the estimate results to be exported for example items with search hits, partially indexed items, etc.|
-| exportLocation | microsoft.graph.security.exportLocation | For exports with partially indexed items, are all locations included or only locations with search hits responsive to the query.|
-| additionalOptions | microsoft.graph.security.additionalOptions | These are the options selected for the export for example include conversation threads, cloud attachments. |
+| exportCriteria | microsoft.graph.security.exportCriteria | The portion of the estimate results to be exported. The possible values are: searchHits, partiallyIndexed, and unknownFutureValue. Required.|
+| exportLocation | microsoft.graph.security.exportLocation | Location scoping option for partially indexed items, either include only responsive locations with hits or include locations with no search hits. The possible values are: responsiveLocations, nonresponsiveLocations, and unknownFutureValue. Required.|
+| additionalOptions | microsoft.graph.security.additionalOptions | The additionals options for the export. The possible values are: none, teamsAndYammerConvesrations, cloudAttachments, allDocumentVersions, subfolderContents, listAttachments, unkownFutureValue. Required.|
 
 ## Response
 
@@ -64,14 +63,13 @@ If the export has started successfully, this action returns a `202 Accepted` res
 Here's an example  of a request.
 
 ``` http
- POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('2eef613a-ca2d-42f4-89fe-84d5198ddedf')/searches('6b5358b0-2ce2-4369-b9cf-65392fe56807')/exportReport
-    {
-        "displayName" :"Test Export",
-        "exportCriteria" : "partiallyIndexed",
-        "exportLocation" : "responsiveLocations"
-        "additionalOptions": 
-        "teamsAndYammerConversations | cloudAtachments"
-    }
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('2eef613a-ca2d-42f4-89fe-84d5198ddedf')/searches('6b5358b0-2ce2-4369-b9cf-65392fe56807')/exportReport
+{
+    "displayName": "Test Export",
+    "exportCriteria" : "partiallyIndexed",
+    "exportLocation" : "responsiveLocations"
+    "additionalOptions": "teamsAndYammerConversations | cloudAtachments"
+}
 ```
 
 ### Response
