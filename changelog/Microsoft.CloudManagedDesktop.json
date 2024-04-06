@@ -7,13 +7,13 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "allotmentDisplayName",
                     "ChangeType": "Addition",
-                    "Description": "Added the **allotmentDisplayName** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource.",
+                    "Description": "Added the **allotmentDisplayName** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
                 }
             ],
             "Id": "b3b442cf-70ba-f2d3-a43e-89c05542829a",
             "Cloud": "Prod",
-            "Version": "v1.0",
+            "Version": "beta",
             "CreatedDateTime": "2024-04-02T15:36:41.3424906Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
@@ -144,7 +144,7 @@
         },
         {
             "ChangeList": [
-                {          
+                {
                   "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                   "ApiChange": "Enum type",
                   "ChangedApiName": "cloudPcDeviceImageErrorCode",
@@ -167,7 +167,7 @@
                   "ChangeType": "Addition",
                   "Description": "Added the **cloudPcDeviceImageStatus** enumeration type.",
                   "Target": "cloudPcDeviceImageStatus"
-                },                
+                },
                 {
                   "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                   "ApiChange": "Enum type",
