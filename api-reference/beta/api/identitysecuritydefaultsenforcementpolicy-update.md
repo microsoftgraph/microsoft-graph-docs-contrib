@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "Sammak"
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Update identitySecurityDefaultsEnforcementPolicy

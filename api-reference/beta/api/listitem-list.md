@@ -5,7 +5,6 @@ title: Retrieve items from a SharePoint list
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Enumerate items in a list
 

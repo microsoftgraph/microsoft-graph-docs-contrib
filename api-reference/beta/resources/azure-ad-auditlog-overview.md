@@ -37,7 +37,7 @@ The directory audit report provides you with access to the history of every task
 
 ### Custom security attribute audit logs
 
-Custom security attribute audit logs provide you with the history of activities related to custom security attributes, such as adding a new definition or assigning an attribute value to a user. Custom security attribute audit logs are separate from directory audit logs and have a different endpoint. To view custom security attribute audit logs, you must be assigned the Attribute Log Reader or Attribute Log Administrator role. By default, a Global Administrator does not have access to these audit logs.
+Custom security attribute audit logs provide you with the history of activities related to custom security attributes, such as adding a new definition or assigning an attribute value to a user. Custom security attribute audit logs are separate from directory audit logs and have a different endpoint. To view custom security attribute audit logs, you must be assigned the Attribute Log Reader or Attribute Log Administrator role. By default, a Global Administrator doesn't have access to these audit logs.
 
 ### Sign-ins
 

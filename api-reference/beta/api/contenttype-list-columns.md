@@ -5,7 +5,6 @@ description: "List columns in a content type."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "sharepoint"
-ms.topic: reference
 ---
 
 # List columns in a content type

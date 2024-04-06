@@ -5,7 +5,6 @@ author: "iamgirishck"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Create event

@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "sadia353"
 ms.prod: "users"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List sponsors
