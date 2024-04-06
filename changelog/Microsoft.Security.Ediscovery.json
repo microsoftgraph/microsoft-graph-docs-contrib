@@ -671,17 +671,9 @@
         {
           "Id": "df278ca9-077c-4380-b333-19d93ed06495",
           "ApiChange": "Method",
-          "ChangedApiName": "export",
-          "ChangeType": "Addition",
-          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) resource.",
-          "Target": "ediscoverySearch"
-        },
-        {
-          "Id": "df278ca9-077c-4380-b333-19d93ed06495",
-          "ApiChange": "Method",
           "ChangedApiName": "exportReport",
           "ChangeType": "Addition",
-          "Description": "Added the [exportReport](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) resource.",
+          "Description": "Added the [exportReport](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverysearch-exportreport?view=graph-rest-beta) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverysearch?view=graph-rest-beta) resource.",
           "Target": "ediscoverySearch"
         },
         {
@@ -689,7 +681,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "exportResult",
           "ChangeType": "Addition",
-          "Description": "Added the [exportResult](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) resource.",
+          "Description": "Added the [exportResult](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverysearch-exportresult?view=graph-rest-beta) method to the [ediscoverySearch]https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverysearch?view=graph-rest-beta) resource.",
           "Target": "ediscoverySearch"
         }
       ],
