@@ -126,7 +126,7 @@
         },
         {
             "ChangeList": [
-                {          
+                {
                   "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                   "ApiChange": "Enum type",
                   "ChangedApiName": "cloudPcDeviceImageErrorCode",
@@ -149,7 +149,7 @@
                   "ChangeType": "Addition",
                   "Description": "Added the **cloudPcDeviceImageStatus** enumeration type.",
                   "Target": "cloudPcDeviceImageStatus"
-                },                
+                },
                 {
                   "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                   "ApiChange": "Enum type",
@@ -4891,17 +4891,17 @@
               {
                 "Id": "27ce80fa-f3e3-45f0-ae3f-1dcba1aed7ce",
                 "ApiChange": "Member",
-                "ChangedApiName": "sharedbyuser",
+                "ChangedApiName": "sharedByUser",
                 "ChangeType": "Addition",
-                "Description": "Added the `sharedbyuser` member to the **cloudPcProvisioningType ** enumeration.",
+                "Description": "Added the `sharedByUser` member to the **cloudPcProvisioningType ** enumeration.",
                 "Target": "cloudPcProvisioningType"
             },
             {
                 "Id": "27ce80fa-f3e3-45f0-ae3f-1dcba1aed7ce",
                 "ApiChange": "Member",
-                "ChangedApiName": "sharedbyEntraGroup ",
+                "ChangedApiName": "sharedByEntraGroup ",
                 "ChangeType": "Addition",
-                "Description": "Added the `sharedbyEntraGroup` member to the **cloudPcProvisioningType ** enumeration.",
+                "Description": "Added the `sharedByEntraGroup` member to the **cloudPcProvisioningType ** enumeration.",
                 "Target": "cloudPcProvisioningType"
             }
             ],
