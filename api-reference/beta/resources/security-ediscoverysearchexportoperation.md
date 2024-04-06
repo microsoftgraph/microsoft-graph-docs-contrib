@@ -71,7 +71,7 @@ Inherits from [microsoft.graph.security.caseOperation](../resources/security-cas
 
 |Member|Description|
 |:----|-----------|
-| fileName | The name of the file          |
+| fileName | The name of the file |
 | size | The size of the file in Byte. |
 | downloadUrl | The url to download the file  |
 
