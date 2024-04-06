@@ -16979,6 +16979,10 @@ items:
                     href: api/security-ediscoverysearch-estimatestatistics.md
                   - name: Purge data
                     href: api/security-ediscoverysearch-purgedata.md
+                  - name: Export report
+                    href: api/security-ediscoverysearch-exportreport.md
+                  - name: Export result
+                    href: api/security-ediscoverysearch-exportresult.md
                   - name: List custodian sources
                     href: api/security-ediscoverysearch-list-custodiansources.md
                   - name: Add custodian sources
