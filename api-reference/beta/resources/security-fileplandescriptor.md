@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Represents a _set_ of optional file plan descriptors to supplement a [retention label](security-retentionlabel.md) and improve the manageability and organization of Microsoft 365 content.
 
-You can add a descriptor by using the POST operation of the corresponding file plan descriptor _template_, and specifying data for the descriptor. For example, to include a [citation](security-citation.md) descriptor, use the [create citationTemplate](../api/security-labelsroot-post-citations.md) operation. Similarly, you can use the GET or DELETE operations on the template resource for the descriptor.
+You can add a descriptor by using the POST operation of the corresponding file plan descriptor _template_, and specifying data for the descriptor. For example, to include a [filePlanCitation](security-fileplancitation.md) descriptor, use the [create citationTemplate](../api/security-labelsroot-post-citations.md) operation. Similarly, you can use the GET or DELETE operations on the template resource for the descriptor.
 
 To list the descriptors that supplement a retention label, use the [GET](../api/security-retentionlabel-get.md) operation on that [retentionLabel](security-retentionlabel.md) resource and  apply `$expand` on the **descriptors** relationship.
 

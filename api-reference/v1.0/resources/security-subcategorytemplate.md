@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Supports CRUD operations to apply and manage the [subcategory](security-subcategory.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **subcategory** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
+Supports CRUD operations to apply and manage the [filePlanSubcategory](security-fileplansubcategory.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **subcategory** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
