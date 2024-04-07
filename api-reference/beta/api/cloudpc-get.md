@@ -163,7 +163,6 @@ Content-Type: application/json
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
     "provisioningType": "sharedByUser",
-    "allotmentDisplayName": null,
     "diskEncryptionState": "notAvailable"
 }
 ```
@@ -183,7 +182,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName
 ```
 
 # [C#](#tab/csharp)
@@ -265,7 +264,8 @@ Content-Type: application/json
           "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain"
         }
       ]
-    }
+    },
+    "allotmentDisplayName": null
 }
 ```
 
@@ -368,7 +368,6 @@ Content-Type: application/json
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
     "provisioningType": "dedicated",
-    "allotmentDisplayName": null,
     "diskEncryptionState": "notAvailable"
 }
 ```
