@@ -30,7 +30,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptorBase](../resources/sec
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.filePlanSubcategory"
