@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Get Worksheet
+# Get worksheet
 
 Namespace: microsoft.graph
 

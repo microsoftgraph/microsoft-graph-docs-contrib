@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Get WorksheetProtection
+# Get worksheetProtection
 
 Namespace: microsoft.graph
 
