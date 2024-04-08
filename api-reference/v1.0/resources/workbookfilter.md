@@ -7,7 +7,7 @@ ms.subservice: excel
 doc_type: resourcePageType
 ---
 
-# Filter resource type
+# workbookFilter resource type
 
 Namespace: microsoft.graph
 
@@ -25,7 +25,7 @@ Manages the filtering of a table's column.
 
 | Name | Type	|Description|
 |:---------------|:--------|:----------|
-|criteria|[WorkbookFilterCriteria](filtercriteria.md)|The currently applied filter on the given column. Read-only.|
+|criteria|[workbookFilterCriteria](filtercriteria.md)|The currently applied filter on the given column. Read-only.|
 
 ## JSON representation
 

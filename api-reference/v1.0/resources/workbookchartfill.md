@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartFill resource type
+# workbookChartFill resource type
 
 Namespace: microsoft.graph
 

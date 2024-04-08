@@ -18,16 +18,16 @@ Represents a column in a table.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableColumn](../api/tablecolumn-get.md) | [WorkbookTableColumn](workbooktablecolumn.md) |Read properties and relationships of tableColumn object.|
-|[Update](../api/tablecolumn-update.md) | [WorkbookTableColumn](workbooktablecolumn.md)	|Update TableColumn object. |
+|[Get TableColumn](../api/tablecolumn-get.md) | [workbookTableColumn](workbooktablecolumn.md) |Read properties and relationships of tableColumn object.|
+|[Update](../api/tablecolumn-update.md) | [workbookTableColumn](workbooktablecolumn.md)	|Update TableColumn object. |
 |[Databodyrange](../api/tablecolumn-databodyrange.md)|[Range](workbookrange.md)|Gets the range object associated with the data body of the column.|
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](workbookrange.md)|Gets the range object associated with the header row of the column.|
 |[Range](../api/tablecolumn-range.md)|[Range](workbookrange.md)|Gets the range object associated with the entire column.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](workbookrange.md)|Gets the range object associated with the totals row of the column.|
 |[Delete](../api/tablecolumn-delete.md)|None|Deletes the column from the table.|
-|[List](../api/tablecolumn-list.md) | [WorkbookTableColumn](workbooktablecolumn.md) collection |Get tableColumn object collection. |
-|[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Gets a column based on its position in the collection.|
-|[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Adds a new column to the table.|
+|[List](../api/tablecolumn-list.md) | [workbookTableColumn](workbooktablecolumn.md) collection |Get tableColumn object collection. |
+|[Itemat](../api/tablecolumncollection-itemat.md)|[workbookTableColumn](workbooktablecolumn.md)|Gets a column based on its position in the collection.|
+|[Add](../api/tablecolumncollection-add.md)|[workbookTableColumn](workbooktablecolumn.md)|Adds a new column to the table.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -40,7 +40,7 @@ Represents a column in a table.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|filter|[WorkbookFilter](workbookfilter.md)|Retrieve the filter applied to the column. Read-only.|
+|filter|[workbookFilter](workbookfilter.md)|Retrieve the filter applied to the column. Read-only.|
 
 ## JSON representation
 

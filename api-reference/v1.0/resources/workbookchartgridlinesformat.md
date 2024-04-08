@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartGridlinesFormat resource type
+# workbookChartGridlinesFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|line|[WorkbookChartLineFormat](workbookchartlineformat.md)|Represents chart line formatting. Read-only.|
+|line|[workbookChartLineFormat](workbookchartlineformat.md)|Represents chart line formatting. Read-only.|
 
 
 ## JSON representation

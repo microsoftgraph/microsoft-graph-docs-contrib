@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartFont resource type
+# workbookChartFont resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](workbookchartfont.md) |Read properties and relationships of chartFont object.|
-|[Update](../api/chartfont-update.md) | [WorkbookChartFont](workbookchartfont.md)	|Update ChartFont object. |
+|[Get ChartFont](../api/chartfont-get.md) | [workbookChartFont](workbookchartfont.md) |Read properties and relationships of chartFont object.|
+|[Update](../api/chartfont-update.md) | [workbookChartFont](workbookchartfont.md)	|Update ChartFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

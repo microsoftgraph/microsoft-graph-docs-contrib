@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# RangeSort resource type
+# workbookRangeSort resource type
 
 Namespace: microsoft.graph
 

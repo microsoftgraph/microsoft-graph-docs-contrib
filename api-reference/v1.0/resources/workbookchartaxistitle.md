@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAxisTitle resource type
+# workbookChartAxisTitle resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Represents the title of a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [WorkbookChartAxisTitle](workbookchartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
-|[Update](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](workbookchartaxistitle.md)	|Update ChartAxisTitle object. |
+|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [workbookChartAxisTitle](workbookchartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
+|[Update](../api/chartaxistitle-update.md) | [workbookChartAxisTitle](workbookchartaxistitle.md)	|Update ChartAxisTitle object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -30,7 +30,7 @@ Represents the title of a chart axis.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartAxisTitleFormat](workbookchartaxistitleformat.md)|Represents the formatting of chart axis title. Read-only.|
+|format|[workbookChartAxisTitleFormat](workbookchartaxistitleformat.md)|Represents the formatting of chart axis title. Read-only.|
 
 ## JSON representation
 

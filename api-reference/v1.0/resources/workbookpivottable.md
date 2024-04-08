@@ -30,7 +30,7 @@ Represents an Excel PivotTable.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[WorkbookWorksheet](workbookworksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
+|worksheet|[workbookWorksheet](workbookworksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ## JSON representation
 The following JSON representation shows the resource type.

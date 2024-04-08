@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartLegendFormat resource type
+# workbookChartLegendFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](workbookchartfill.md)|Represents the fill format of an object, which includes background formating information. Read-only.|
-|font|[WorkbookChartFont](workbookchartfont.md)|Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.|
+|fill|[workbookChartFill](workbookchartfill.md)|Represents the fill format of an object, which includes background formating information. Read-only.|
+|font|[workbookChartFont](workbookchartfont.md)|Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.|
 
 
 ## JSON representation

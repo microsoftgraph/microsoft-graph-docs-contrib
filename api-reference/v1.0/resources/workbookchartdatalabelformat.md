@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartDataLabelFormat resource type
+# workbookChartDataLabelFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](workbookchartfill.md)|Represents the fill format of the current chart data label. Read-only.|
-|font|[WorkbookChartFont](workbookchartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.|
+|fill|[workbookChartFill](workbookchartfill.md)|Represents the fill format of the current chart data label. Read-only.|
+|font|[workbookChartFont](workbookchartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.|
 
 
 ## JSON representation

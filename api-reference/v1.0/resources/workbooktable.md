@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# Table resource type
+# workbookTable resource type
 
 Namespace: microsoft.graph
 
@@ -18,12 +18,12 @@ Represents an Excel table.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Table](../api/table-get.md) | [WorkbookTable](workbooktable.md) |Read properties and relationships of table object.|
-|[Create TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
-|[List columns](../api/table-list-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md) collection| Get a TableColumn object collection.|
-|[Create TableRow](../api/table-post-rows.md) |[WorkbookTableRow]( workbooktablerow.md)| Create a new TableRow by posting to the rows collection.|
-|[List rows](../api/table-list-rows.md) |[WorkbookTableRow]( workbooktablerow.md) collection| Get a TableRow object collection.|
-|[Update](../api/table-update.md) | [WorkbookTable](workbooktable.md)	|Update Table object. |
+|[Get Table](../api/table-get.md) | [workbookTable](workbooktable.md) |Read properties and relationships of table object.|
+|[Create TableColumn](../api/table-post-columns.md) |[workbookTableColumn](workbooktablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
+|[List columns](../api/table-list-columns.md) |[workbookTableColumn](workbooktablecolumn.md) collection| Get a TableColumn object collection.|
+|[Create TableRow](../api/table-post-rows.md) |[workbookTableRow]( workbooktablerow.md)| Create a new TableRow by posting to the rows collection.|
+|[List rows](../api/table-list-rows.md) |[workbookTableRow]( workbooktablerow.md) collection| Get a TableRow object collection.|
+|[Update](../api/table-update.md) | [workbookTable](workbooktable.md)	|Update Table object. |
 |[Databodyrange](../api/table-databodyrange.md)|[Range](workbookrange.md)|Gets the range object associated with the data body of the table.|
 |[Headerrowrange](../api/table-headerrowrange.md)|[Range](workbookrange.md)|Gets the range object associated with header row of the table.|
 |[Range](../api/table-range.md)|[Range](workbookrange.md)|Gets the range object associated with the entire table.|
@@ -32,8 +32,8 @@ Represents an Excel table.
 |[Converttorange](../api/table-converttorange.md)|[Range](workbookrange.md)|Converts the table into a normal range of cells. All data is preserved.|
 |[Delete](../api/table-delete.md)|None|Deletes the table.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|None|Reapplies all the filters currently on the table.|
-|[List](../api/table-list.md) | [WorkbookTable](workbooktable.md) collection |Get table object collection. |
-|[Add](../api/tablecollection-add.md)|[WorkbookTable](workbooktable.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table can't be added (for example, because the address is invalid, or the table would overlap with another table), an error is thrown.|
+|[List](../api/table-list.md) | [workbookTable](workbooktable.md) collection |Get table object collection. |
+|[Add](../api/tablecollection-add.md)|[workbookTable](workbooktable.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table can't be added (for example, because the address is invalid, or the table would overlap with another table), an error is thrown.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -53,10 +53,10 @@ Represents an Excel table.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|columns|[WorkbookTableColumn](workbooktablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
-|rows|[WorkbookTableRow]( workbooktablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
-|sort|[WorkbookTableSort](workbooktablesort.md)|Represents the sorting for the table. Read-only.|
-|worksheet|[WorkbookWorksheet](workbookworksheet.md)|The worksheet containing the current table. Read-only.|
+|columns|[workbookTableColumn](workbooktablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
+|rows|[workbookTableRow]( workbooktablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
+|sort|[workbookTableSort](workbooktablesort.md)|Represents the sorting for the table. Read-only.|
+|worksheet|[workbookWorksheet](workbookworksheet.md)|The worksheet containing the current table. Read-only.|
 
 ## JSON representation
 

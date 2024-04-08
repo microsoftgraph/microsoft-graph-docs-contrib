@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAxis resource type
+# workbookChartAxis resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Represents a single axis in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis-get.md) | [WorkbookChartAxis](workbookchartaxis.md) |Read properties and relationships of chartAxis object.|
-|[Update](../api/chartaxis-update.md) | [WorkbookChartAxis](workbookchartaxis.md)	|Update ChartAxis object. |
+|[Get ChartAxis](../api/chartaxis-get.md) | [workbookChartAxis](workbookchartaxis.md) |Read properties and relationships of chartAxis object.|
+|[Update](../api/chartaxis-update.md) | [workbookChartAxis](workbookchartaxis.md)	|Update ChartAxis object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -33,10 +33,10 @@ Represents a single axis in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartAxisFormat](workbookchartaxisformat.md)|Represents the formatting of a chart object, which includes line and font formatting. Read-only.|
-|majorGridlines|[WorkbookChartGridlines](workbookchartgridlines.md)|Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.|
-|minorGridlines|[WorkbookChartGridlines](workbookchartgridlines.md)|Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.|
-|title|[WorkbookChartAxisTitle](workbookchartaxistitle.md)|Represents the axis title. Read-only.|
+|format|[workbookChartAxisFormat](workbookchartaxisformat.md)|Represents the formatting of a chart object, which includes line and font formatting. Read-only.|
+|majorGridlines|[workbookChartGridlines](workbookchartgridlines.md)|Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.|
+|minorGridlines|[workbookChartGridlines](workbookchartgridlines.md)|Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.|
+|title|[workbookChartAxisTitle](workbookchartaxistitle.md)|Represents the axis title. Read-only.|
 
 ## JSON representation
 

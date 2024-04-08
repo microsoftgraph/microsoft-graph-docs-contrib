@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartDataLabels resource type
+# workbookChartDataLabels resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,8 @@ Represents a collection of all the data labels on a chart point.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](workbookchartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
-|[Update](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](workbookchartdatalabels.md)	|Update ChartDataLabels object. |
+|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [workbookChartDataLabels](workbookchartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
+|[Update](../api/chartdatalabels-update.md) | [workbookChartDataLabels](workbookchartdatalabels.md)	|Update ChartDataLabels object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -36,7 +36,7 @@ Represents a collection of all the data labels on a chart point.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartDataLabelFormat](workbookchartdatalabelformat.md)|Represents the format of chart data labels, which includes fill and font formatting. Read-only.|
+|format|[workbookChartDataLabelFormat](workbookchartdatalabelformat.md)|Represents the format of chart data labels, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 

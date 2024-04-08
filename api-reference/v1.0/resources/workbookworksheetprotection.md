@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# WorksheetProtection resource type
+# workbookWorksheetProtection resource type
 
 Namespace: microsoft.graph
 
@@ -18,7 +18,7 @@ Represents the protection of a sheet object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [WorkbookWorksheetProtection](workbookworksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
+|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](workbookworksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
 |[Protect](../api/worksheetprotection-protect.md)|None|Protect a worksheet. It throws if the worksheet has been protected.|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|None|Unprotect a worksheet|
 

@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAxes resource type
+# workbookChartAxes resource type
 
 Namespace: microsoft.graph
 
@@ -23,9 +23,9 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|categoryAxis|[WorkbookChartAxis](workbookchartaxis.md)|Represents the category axis in a chart. Read-only.|
-|seriesAxis|[WorkbookChartAxis](workbookchartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
-|valueAxis|[WorkbookChartAxis](workbookchartaxis.md)|Represents the value axis in an axis. Read-only.|
+|categoryAxis|[workbookChartAxis](workbookchartaxis.md)|Represents the category axis in a chart. Read-only.|
+|seriesAxis|[workbookChartAxis](workbookchartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
+|valueAxis|[workbookChartAxis](workbookchartaxis.md)|Represents the value axis in an axis. Read-only.|
 
 ## JSON representation
 

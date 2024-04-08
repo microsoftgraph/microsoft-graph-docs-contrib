@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAxisFormat resource type
+# workbookChartAxisFormat resource type
 
 Namespace: microsoft.graph
 
@@ -22,8 +22,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](workbookchartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|
-|line|[WorkbookChartLineFormat](workbookchartlineformat.md)|Represents chart line formatting. Read-only.|
+|font|[workbookChartFont](workbookchartfont.md)|Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.|
+|line|[workbookChartLineFormat](workbookchartlineformat.md)|Represents chart line formatting. Read-only.|
 
 
 ## JSON representation

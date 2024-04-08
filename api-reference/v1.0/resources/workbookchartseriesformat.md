@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartSeriesFormat resource type
+# workbookChartSeriesFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](workbookchartfill.md)|Represents the fill format of a chart series, which includes background formatting information. Read-only.|
-|line|[WorkbookChartLineFormat](workbookchartlineformat.md)|Represents line formatting. Read-only.|
+|fill|[workbookChartFill](workbookchartfill.md)|Represents the fill format of a chart series, which includes background formatting information. Read-only.|
+|line|[workbookChartLineFormat](workbookchartlineformat.md)|Represents line formatting. Read-only.|
 
 
 ## JSON representation

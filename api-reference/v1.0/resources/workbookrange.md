@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# Range resource type
+# workbookRange resource type
 
 Namespace: microsoft.graph
 
@@ -68,9 +68,9 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookRangeFormat](workbookrangeformat.md)|Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.|
-|sort|[WorkbookRangeSort](workbookrangesort.md)|The worksheet containing the current range. Read-only.|
-|worksheet|[WorkbookWorksheet](workbookworksheet.md)|The worksheet containing the current range. Read-only.|
+|format|[workbookRangeFormat](workbookrangeformat.md)|Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.|
+|sort|[workbookRangeSort](workbookrangesort.md)|The worksheet containing the current range. Read-only.|
+|worksheet|[workbookWorksheet](workbookworksheet.md)|The worksheet containing the current range. Read-only.|
 
 ## JSON representation
 

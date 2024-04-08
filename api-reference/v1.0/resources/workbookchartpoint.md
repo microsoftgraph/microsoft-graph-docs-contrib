@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartPoint resource type
+# workbookChartPoint resource type
 
 Namespace: microsoft.graph
 
@@ -18,9 +18,9 @@ Represents a point of a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint-get.md) | [WorkbookChartPoint](workbookchartpoint.md) |Read properties and relationships of chartPoint object.|
-|[List](../api/chartpoint-list.md) | [WorkbookChartPoint](workbookchartpoint.md) collection |Get chartPoint object collection. |
-|[ItemAt](../api/chartpointscollection-itemat.md)|[WorkbookChartPoint](workbookchartpoint.md)|Retrieve a point based on its position within the series.|
+|[Get ChartPoint](../api/chartpoint-get.md) | [workbookChartPoint](workbookchartpoint.md) |Read properties and relationships of chartPoint object.|
+|[List](../api/chartpoint-list.md) | [workbookChartPoint](workbookchartpoint.md) collection |Get chartPoint object collection. |
+|[ItemAt](../api/chartpointscollection-itemat.md)|[workbookChartPoint](workbookchartpoint.md)|Retrieve a point based on its position within the series.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,7 +31,7 @@ Represents a point of a series in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartPointFormat](workbookchartpointformat.md)|Encapsulates the format properties chart point. Read-only.|
+|format|[workbookChartPointFormat](workbookchartpointformat.md)|Encapsulates the format properties chart point. Read-only.|
 
 ## JSON representation
 

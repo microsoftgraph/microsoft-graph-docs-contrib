@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartSeries resource type
+# workbookChartSeries resource type
 
 Namespace: microsoft.graph
 
@@ -18,12 +18,12 @@ Represents a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries-get.md) | [WorkbookChartSeries](workbookchartseries.md) |Read properties and relationships of chartSeries object.|
+|[Get ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](workbookchartseries.md) |Read properties and relationships of chartSeries object.|
 |[Create ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](workbookchartpoint.md)| Create a new ChartPoints by posting to the points collection.|
 |[List points](../api/chartseries-list-points.md) |[ChartPoints](workbookchartpoint.md) collection| Get a ChartPoints object collection.|
-|[Update](../api/chartseries-update.md) | [WorkbookChartSeries](workbookchartseries.md)	|Update ChartSeries object. |
-|[List](../api/chartseries-list.md) | [WorkbookChartSeries](workbookchartseries.md) collection |Get chartSeries object collection. |
-|[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](workbookchartseries.md)|Retrieves a series based on its position in the collection|
+|[Update](../api/chartseries-update.md) | [workbookChartSeries](workbookchartseries.md)	|Update ChartSeries object. |
+|[List](../api/chartseries-list.md) | [workbookChartSeries](workbookchartseries.md) collection |Get chartSeries object collection. |
+|[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](workbookchartseries.md)|Retrieves a series based on its position in the collection|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -33,8 +33,8 @@ Represents a series in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartSeriesFormat](workbookchartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
-|points|[WorkbookChartPoint](workbookchartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
+|format|[workbookChartSeriesFormat](workbookchartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
+|points|[workbookChartPoint](workbookchartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
 
 ## JSON representation
 

@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# ChartAreaFormat resource type
+# workbookChartAreaFormat resource type
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](workbookchartfill.md)|Represents the fill format of an object, which includes background formatting information. Read-only.|
-|font|[WorkbookChartFont](workbookchartfont.md)|Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.|
+|fill|[workbookChartFill](workbookchartfill.md)|Represents the fill format of an object, which includes background formatting information. Read-only.|
+|font|[workbookChartFont](workbookchartfont.md)|Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.|
 
 ## JSON representation
 
