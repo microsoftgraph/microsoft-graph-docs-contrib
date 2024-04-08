@@ -150,12 +150,11 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | OnlineMeetingTranscript.Read.Chat*, OnlineMeetingTranscript.Read.All |
-
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+| Application                            | OnlineMeetingTranscript.Read.Chat, OnlineMeetingTranscript.Read.All |
 
 > [!NOTE]
-> To subscribe to transcripts available for any online meeting where a specific Teams app is installed using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
+> - The OnlineMeetingTranscript.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - To subscribe to transcripts available for any online meeting where a specific Teams app is installed using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
 ### Example 1: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using classic permissions
 
@@ -237,12 +236,11 @@ One of the following permissions is required to subscribe to `communications/onl
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetingRecording.Read.All             |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | OnlineMeetingRecording.Read.Chat*, OnlineMeetingRecording.Read.All |
-
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+| Application                            | OnlineMeetingRecording.Read.Chat, OnlineMeetingRecording.Read.All |
 
 > [!NOTE]
-> To subscribe to any recording available for a particular online meeting using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
+> - The OnlineMeetingRecording.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - To subscribe to any recording available for a particular online meeting using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
 ### Example 1: Subscribe to recordings available for a particular online meeting using classic permissions
 
@@ -328,12 +326,11 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | OnlineMeetingRecording.Read.Chat*, OnlineMeetingRecording.Read.All |
-
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+| Application                            | OnlineMeetingRecording.Read.Chat, OnlineMeetingRecording.Read.All |
 
 > [!NOTE]
-> To subscribe to recordings available for any online meeting where a specific Teams app is installed using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
+> - The OnlineMeetingRecording.Read.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - To subscribe to recordings available for any online meeting where a specific Teams app is installed using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
 ### Example 1: Subscribe to recordings available for any online meeting where a specific Teams app is installed using required classic permissions
 
