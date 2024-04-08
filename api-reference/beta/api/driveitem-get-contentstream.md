@@ -118,65 +118,6 @@ Content-Type: text/plain
 <File Content>
 ```
 
-### Example 2: Download a partial range of bytes
-
-To download a partial range of bytes from the file, your app can use the `Range` header, as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
-
-#### Request
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial-stream", "scopes": "files.read" } -->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/drives/b!fMInbiL5dkK51VbATG0ddrCg6AJpEj9Lm4uGj5HgEi4guyuYp4W5SbH4dPfXTbCF/items/014Y52UITTNSVUQI43PZBJMKLAY6LJBUVE/contentStream
-Range: bytes=0-1023
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/download-item-partial-stream-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/download-item-partial-stream-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/download-item-partial-stream-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/download-item-partial-stream-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/download-item-partial-stream-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/download-item-partial-stream-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/download-item-partial-stream-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-
-The call returns a `206 Partial Content` HTTP response with the requested range of bytes from the file. If the range can't be generated, the `Range` header is ignored and a `200 OK` HTTP response is returned with the full contents of the file.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
-
-```http
-HTTP/1.1 206 Partial Content
-Content-Type: text/plain
-
-<First 1024 bytes of the file>
-```
-
 <!-- {
   "type": "#page.annotation",
   "description": "Download the contents of a driveItem.",
