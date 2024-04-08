@@ -70,6 +70,8 @@ The application now has two permissions configured. `Mail.Read` is added as a de
 
 ## Step 4: Configure authentication
 
+**IMPORTANT:** In the following steps, <u>always set values in the "Current value" column</u>, not the "Initial value" column. This ensures that your secrets and tokens are saved locally on your machine.
+
 In this step, you set up the environment variables in Postman that you use to retrieve an access token.
 
 1. Go to [Fork environment](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/environment/455214-efbc69b2-69bd-402e-9e72-850b3a49bb21/fork).
