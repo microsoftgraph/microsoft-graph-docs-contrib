@@ -48,28 +48,10 @@ This resource supports:
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password or secret from an application.|
 |[Add key](../api/application-addkey.md)|[keyCredential](keycredential.md)|Add a key credential to an application.|
 |[Remove key](../api/application-removekey.md)|None|Remove a key credential from an application.|
-|**Extensions**| | |
-| [List extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
-| [Create extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
-| [Get extensionProperty](../api/extensionproperty-delete.md) | None | Get an extension property from an application object. |
-| [Delete extensionProperty](../api/extensionproperty-delete.md) | None | Delete an extension property from an application object. |
-|**Federated identity credentials**| | |
-| [List federatedIdentityCredential](../api/application-list-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) collection | List federated identity credentials on an application object. |
-| [Create federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Create a federated identity credential on an application object. |
-| [Get federatedIdentityCredential](../api/federatedidentitycredential-get.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Retrieve the properties of a federated identity credential. |
-| [Update federatedIdentityCredential](../api/federatedidentitycredential-update.md) | None | Update a federated identity credential of an application object. |
-| [Delete federatedIdentityCredential](../api/federatedidentitycredential-delete.md) | None | Delete a federated identity credential from an application object. |
 |**Owners**| | |
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of an application. |
 |[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Assign an owner to an application. Application owners can be users or service principals. |
 |[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application. As a recommended best practice, apps should have at least two owners.|
-|**Policies**| | |
-|[Assign tokenIssuancePolicy](../api/application-post-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Assign a tokenIssuancePolicy to this object.|
-|[List tokenIssuancePolicies](../api/application-list-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Get all tokenIssuancePolicies assigned to this object.|
-|[Remove tokenIssuancePolicy](../api/application-delete-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Remove a tokenIssuancePolicy from this object.|
-|[Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Assign a tokenLifetimePolicy to this object.|
-|[List tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Get all tokenLifetimePolicies assigned to this object.|
-|[Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
 |**Verified publisher**| | |
 |[Set verified publisher](../api/application-setverifiedpublisher.md)| None | Set the verified publisher of an application.|
 |[Unset verified publisher](../api/application-unsetverifiedpublisher.md)| None | Unset the verified publisher of an application.|
