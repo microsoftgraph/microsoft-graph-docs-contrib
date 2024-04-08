@@ -263,6 +263,124 @@ items:
   items:
   - name: Overview
     href: ../../resources/onpremisespublishingprofile-root.md
+  - name: Connector
+    items:
+    - name: Connector
+      href: ../../resources/connector.md
+    - name: List connectors
+      href: ../../api/connector-list.md
+    - name: Get connector
+      href: ../../api/connector-get.md
+    - name: List memberOf
+      href: ../../api/connector-list-memberof.md
+    - name: Add connector to connectorGroup
+      href: ../../api/connector-post-memberof.md
+  - name: Connector group
+    items:
+    - name: Connector group
+      href: ../../resources/connectorgroup.md
+    - name: List connectorGroup
+      href: ../../api/connectorgroup-list.md
+    - name: Create connectorGroup
+      href: ../../api/connectorgroup-post.md
+    - name: Get connectorGroup
+      href: ../../api/connectorgroup-get.md
+    - name: Update connectorGroup
+      href: ../../api/connectorgroup-update.md
+    - name: Delete connectorGroup
+      href: ../../api/connectorgroup-delete.md
+    - name: List members
+      href: ../../api/connectorgroup-list-members.md
+    - name: List applications
+      href: ../../api/connectorgroup-list-applications.md
+    - name: Add application
+      href: ../../api/connectorgroup-post-applications.md
+    - name: Add connector
+      href: ../../api/connectorgroup-post-members.md
+  - name: On-premises agent
+    items:
+    - name: On-premises agent
+      href: ../../resources/onpremisesagent.md
+    - name: List onPremisesAgents
+      href: ../../api/onpremisesagent-list.md
+    - name: Get onPremisesAgent
+      href: ../../api/onpremisesagent-get.md
+    - name: Assign onPremisesAgent to onPremisesAgentGroup
+      href: ../../api/onpremisesagent-post-agentgroups.md
+    - name: Remove onpremisesAgent from an onPremisesAgentGroup
+      href: ../../api/onpremisesagent-delete-agentgroups.md
+  - name: On-premises agent group
+    items:
+    - name: On-premises agent group
+      href: ../../resources/onpremisesagentgroup.md
+    - name: List onPremisesAgentGroups
+      href: ../../api/onpremisesagentgroup-list.md
+    - name: Get onPremisesAgentGroup
+      href: ../../api/onpremisesagentgroup-get.md
+    - name: Create onPremisesAgentGroup
+      href: ../../api/onpremisesagentgroup-post.md
+    - name: Update onPremisesAgentGroup
+      href: ../../api/onpremisesagentgroup-update.md
+    - name: Delete  onPremisesAgentGroup
+      href: ../../api/onpremisesagentgroup-delete.md
+  - name: On-premises publishing profile
+    items:
+    - name: On-premises publishing profile
+      href: ../../resources/onpremisespublishingprofile.md
+    - name: Get onPremisesPublishingProfile
+      href: ../../api/onpremisespublishingprofile-get.md
+    - name: Update onPremisesPublishingProfile
+      href: ../../api/onpremisespublishingprofile-update.md
+  - name: Published resource
+    items:
+    - name: Published resource
+      href: ../../resources/publishedresource.md
+    - name: List publishedResources
+      href: ../../api/publishedresource-list.md
+    - name: Get publishedResource
+      href: ../../api/publishedresource-get.md
+    - name: Create publishedResource
+      href: ../../api/publishedresource-post.md
+    - name: Update publishedResource
+      href: ../../api/publishedresource-update.md
+    - name: Delete  publishedResource
+      href: ../../api/publishedresource-delete.md
+    - name: Assign publishedResource to onPremisesAgentGroup
+      href: ../../api/publishedresource-post-agentgroups.md
+    - name: Remove publishedResource from onPremisesAgentGroup
+      href: ../../api/publishedresource-delete-agentgroups.md
+  - name: Complex types
+    items:
+    - name: Application segment
+      href: ../../resources/applicationsegment.md
+    - name: CORS configuration
+      href: ../../resources/corsconfiguration.md
+    - name: CORS configuration v2
+      href: ../../resources/corsconfiguration_v2.md
+    - name: Hybrid agent updater configuration
+      href: ../../resources/hybridagentupdaterconfiguration.md
+    - name: Kerberos sign on settings
+      href: ../../resources/kerberossignonsettings.md
+    - name: Key credential
+      href: ../../resources/keycredential.md
+    - name: On-premises application segment
+      href: ../../resources/onpremisesapplicationsegment.md
+    - name: On-premises publishing
+      href: ../../resources/onpremisespublishing.md
+    - name: On-premises publishing single sign on
+      href: ../../resources/onpremisespublishingsinglesignon.md
+    - name: Password credential
+      href: ../../resources/passwordcredential.md
+    - name: Segment configuration
+      href: ../../resources/segmentconfiguration.md
+    - name: Update window
+      href: ../../resources/updatewindow.md
+    - name: Verified custom domain certificates metadata
+      href: ../../resources/verifiedcustomdomaincertificatesmetadata.md
+    - name: Web application segment
+      href: ../../resources/webapplicationsegment.md
+    - name: Web segment configuration
+      href: ../../resources/websegmentconfiguration.md
 - name: Policies
   items:
   - name: Remote desktop security configuration

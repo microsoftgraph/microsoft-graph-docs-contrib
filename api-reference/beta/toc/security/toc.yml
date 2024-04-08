@@ -162,7 +162,45 @@ items:
       - name: Get training coverage for users
         href: ../../api/securityreportsroot-getattacksimulationtrainingusercoverage.md
 - name: Audit log query
-  items: []
+  items:
+  - name: Audit log query
+    items:
+    - name: Audit log query
+      href: ../../resources/security-auditlogquery.md
+    - name: List auditLogQueries
+      href: ../../api/security-auditcoreroot-list-auditlogqueries.md
+    - name: Create auditLogQuery
+      href: ../../api/security-auditcoreroot-post-auditlogqueries.md
+    - name: Get auditLogQuery
+      href: ../../api/security-auditlogquery-get.md
+    - name: List records
+      href: ../../api/security-auditlogquery-list-records.md
+  - name: Audit log record
+    items:
+    - name: Audit log record
+      href: ../../resources/security-auditlogrecord.md
+    - name: List auditLogRecords
+      href: ../../api/security-auditlogquery-list-records.md
+  - name: Complex types
+    items:
+    - name: Audit data
+      href: ../../resources/security-auditdata.md
+    - name: Default audit data
+      href: ../../resources/security-defaultauditdata.md
+- name: Detection rule
+  items:
+  - name: Detection rule
+    href: ../../resources/security-detectionrule.md
+  - name: List detectionRules
+    href: ../../api/security-detectionrule-list.md
+  - name: Get detectionRule
+    href: ../../api/security-detectionrule-get.md
+  - name: Create detectionRule
+    href: ../../api/security-detectionrule-post-detectionRules.md
+  - name: Update detectionRule
+    href: ../../api/security-detectionrule-update.md
+  - name: Delete detectionRule
+    href: ../../api/security-detectionrule-delete.md
 - name: eDiscovery
   items:
   - name: eDiscovery case
@@ -277,6 +315,28 @@ items:
       href: ../../api/security-ediscoverynoncustodialdatasource-removehold.md
     - name: List ediscoveryIndexOperation
       href: ../../api/security-ediscoverycustodian-list-lastindexoperation.md
+  - name: eDiscovery hold policy
+    items:
+    - name: eDiscovery hold policy
+      href: ../../resources/security-ediscoveryholdpolicy.md
+    - name: List ediscoveryHoldPolicies
+      href: ../../api/security-ediscoverycase-list-legalholds.md
+    - name: Create ediscoveryHoldPolicy
+      href: ../../api/security-ediscoverycase-post-legalholds.md
+    - name: Get ediscoveryHoldPolicy
+      href: ../../api/security-ediscoveryholdpolicy-get.md
+    - name: Update ediscoveryHoldPolicy
+      href: ../../api/security-ediscoveryholdpolicy-update.md
+    - name: Delete ediscoveryHoldPolicy
+      href: ../../api/security-ediscoverycase-delete-legalholds.md
+    - name: List siteSources
+      href: ../../api/security-ediscoverycustodian-list-sitesources.md
+    - name: Create siteSource
+      href: ../../api/security-ediscoveryholdpolicy-post-sitesources.md
+    - name: List userSources
+      href: ../../api/security-ediscoverycustodian-list-usersources.md
+    - name: Create userSource
+      href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
   - name: eDiscovery search
     items:
     - name: eDiscovery search
@@ -350,9 +410,77 @@ items:
     - name: asHierarchy
       href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
 - name: Email and collaboration protection
-  items: []
+  items:
+  - name: Analyzed email
+    items:
+    - name: Analyzed email
+      href: ../../resources/security-analyzedemail.md
+    - name: List analyzedEmail objects
+      href: ../../api/security-collaborationroot-list-analyzedemails.md
+    - name: Get analyzedEmail
+      href: ../../api/security-analyzedemail-get.md
+    - name: remediate
+      href: ../../api/security-analyzedemail-remediate.md
+  - name: Complex types
+    items:
+    - name: Analyzed email attachment
+      href: ../../resources/security-analyzedemailattachment.md
+    - name: Analyzed email authentication detail
+      href: ../../resources/security-analyzedemailauthenticationdetail.md
+    - name: Analyzed email delivery detail
+      href: ../../resources/security-analyzedemaildeliverydetail.md
+    - name: Analyzed email exchange transport rule info
+      href: ../../resources/security-analyzedemailexchangetransportruleinfo.md
+    - name: Analyzed email sender detail
+      href: ../../resources/security-analyzedemailsenderdetail.md
+    - name: Analyzed email URL
+      href: ../../resources/security-analyzedemailurl.md
+    - name: Detonation chain
+      href: ../../resources/security-detonationchain.md
+    - name: Detonation details
+      href: ../../resources/security-detonationdetails.md
+    - name: Detonation observables
+      href: ../../resources/security-detonationobservables.md
 - name: Information protection
   items:
+  - name: Information protection label
+    items:
+    - name: Information protection label
+      href: ../../resources/informationprotectionlabel.md
+    - name: List informationProtectionLabel
+      href: ../../api/informationprotectionpolicy-list-labels.md
+    - name: Get informationProtectionLabel
+      href: ../../api/informationprotectionlabel-get.md
+    - name: evaluateapplication
+      href: ../../api/informationprotectionlabel-evaluateapplication.md
+    - name: evaluateClassificationResults
+      href: ../../api/informationprotectionlabel-evaluateclassificationresults.md
+    - name: evaluateRemoval
+      href: ../../api/informationprotectionlabel-evaluateremoval.md
+    - name: extractLabel
+      href: ../../api/informationprotectionlabel-extractlabel.md
+  - name: Sensitivity label
+    items:
+    - name: Sensitivity label
+      href: ../../resources/security-sensitivitylabel.md
+    - name: List sensitivityLabels
+      href: ../../api/security-informationprotection-list-sensitivitylabels.md
+    - name: Get sensitivityLabel
+      href: ../../api/security-sensitivitylabel-get.md
+    - name: evaluateApplication
+      href: ../../api/security-sensitivitylabel-evaluateapplication.md
+    - name: evaluateClassificationResults
+      href: ../../api/security-sensitivitylabel-evaluateclassificationresults.md
+    - name: evaluateRemoval
+      href: ../../api/security-sensitivitylabel-evaluateremoval.md
+    - name: extractContentLabel
+      href: ../../api/security-sensitivitylabel-extractcontentlabel.md
+  - name: Information protection policy setting
+    items:
+    - name: Information protection policy setting
+      href: ../../resources/security-informationprotectionpolicysetting.md
+    - name: Get informationProtectionPolicySetting
+      href: ../../api/security-informationprotectionpolicysetting-get.md
   - name: Threat assessment
     items:
     - name: Overview
@@ -519,6 +647,18 @@ items:
     href: ../../resources/securescorecontrolprofiles.md
   - name: List secureScoreControlProfiles
     href: ../../api/securescorecontrolprofiles-list.md
+- name: Security action
+  items:
+  - name: Security action
+    href: ../../resources/securityaction.md
+  - name: Get security action
+    href: ../../api/securityaction-get.md
+  - name: Create security action
+    href: ../../api/securityactions-post.md
+  - name: List security actions
+    href: ../../api/securityactions-list.md
+  - name: Cancel security action
+    href: ../../api/securityaction-cancelsecurityaction.md
 - name: Threat intelligence
   items:
   - name: Overview
@@ -723,5 +863,88 @@ items:
       href: ../../resources/security-whoiscontact.md
     - name: WHOIS nameserver
       href: ../../resources/security-whoisnameserver.md
+- name: Threat intelligence indicator
+  items:
+  - name: Threat intelligence indicator
+    href: ../../resources/tiindicator.md
+  - name: Get tiIndicator
+    href: ../../api/tiindicator-get.md
+  - name: Create tiIndicator
+    href: ../../api/tiindicators-post.md
+  - name: List tiIndicators
+    href: ../../api/tiindicators-list.md
+  - name: Update
+    href: ../../api/tiindicator-update.md
+  - name: Delete
+    href: ../../api/tiindicator-delete.md
+  - name: deleteTiIndicators
+    href: ../../api/tiindicator-deletetiindicators.md
+  - name: deleteTiIndicatorsByExternalId
+    href: ../../api/tiindicator-deletetiindicatorsbyexternalid.md
+  - name: submitTiIndicators
+    href: ../../api/tiindicator-submittiindicators.md
+  - name: updateTiIndicators
+    href: ../../api/tiindicator-updatetiindicators.md
+  - name: Methods supported by each target product
+    items:
+    - name: Create tiIndicator
+      href: ../../api/tiindicators-post.md
+    - name: Submit tiIndicators
+      href: ../../api/tiindicator-submittiindicators.md
+    - name: Update tiIndicator
+      href: ../../api/tiindicator-update.md
+    - name: Update tiIndicators
+      href: ../../api/tiindicator-updatetiindicators.md
+    - name: Delete tiIndicator
+      href: ../../api/tiindicator-delete.md
+    - name: Delete tiIndicators
+      href: ../../api/tiindicator-deletetiindicators.md
 - name: Threat submission
-  items: []
+  href: ../../resources/security-threatsubmission.md
+  items:
+  - name: Email threat submission
+    items:
+    - name: Email threat submission
+      href: ../../resources/security-emailthreatsubmission.md
+    - name: List emailThreatSubmissions
+      href: ../../api/security-emailthreatsubmission-list.md
+    - name: Create emailThreatSubmission
+      href: ../../api/security-emailthreatsubmission-post-emailthreats.md
+    - name: Get emailThreatSubmission
+      href: ../../api/security-emailthreatsubmission-get.md
+    - name: review
+      href: ../../api/security-emailthreatsubmission-review.md
+  - name: Email threat submission policy
+    items:
+    - name: Email threat submission policy
+      href: ../../resources/security-emailthreatsubmissionpolicy.md
+    - name: List emailThreatSubmissionPolicies
+      href: ../../api/security-emailthreatsubmissionpolicy-list.md
+    - name: Create emailThreatSubmissionPolicy
+      href: ../../api/security-emailthreatsubmissionpolicy-post-emailthreatsubmissionpolicies.md
+    - name: Get emailThreatSubmissionPolicy
+      href: ../../api/security-emailthreatsubmissionpolicy-get.md
+    - name: Update emailThreatSubmissionPolicy
+      href: ../../api/security-emailthreatsubmissionpolicy-update.md
+    - name: Delete emailThreatSubmissionPolicy
+      href: ../../api/security-emailthreatsubmissionpolicy-delete.md
+  - name: File threat submission
+    items:
+    - name: File threat submission
+      href: ../../resources/security-filethreatsubmission.md
+    - name: List fileThreatSubmissions
+      href: ../../api/security-filethreatsubmission-list.md
+    - name: Create fileThreatSubmission
+      href: ../../api/security-filethreatsubmission-post-filethreats.md
+    - name: Get fileThreatSubmission
+      href: ../../api/security-filethreatsubmission-get.md
+  - name: URL threat submission
+    items:
+    - name: URL threat submission
+      href: ../../resources/security-urlthreatsubmission.md
+    - name: List urlThreatSubmissions
+      href: ../../api/security-urlthreatsubmission-list.md
+    - name: Create urlThreatSubmission
+      href: ../../api/security-urlthreatsubmission-post-urlthreats.md
+    - name: Get urlThreatSubmission
+      href: ../../api/security-urlthreatsubmission-get.md

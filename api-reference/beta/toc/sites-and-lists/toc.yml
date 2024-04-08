@@ -127,6 +127,12 @@ items:
     href: ../../api/documentsetversion-delete.md
   - name: restore
     href: ../../api/documentsetversion-restore.md
+- name: Recycle bin item
+  items:
+  - name: Recycle bin item
+    href: ../../resources/recyclebinitem.md
+  - name: List items
+    href: ../../api/recyclebin-list-items.md
 - name: Rich long running operation
   items:
   - name: Rich long running operation

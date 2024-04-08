@@ -163,6 +163,24 @@ items:
     href: ../../api/workbookcommentreply-get.md
   - name: Create workbookCommentReply
     href: ../../api/workbookcomment-post-replies.md
+- name: Workbook document task
+  items:
+  - name: Workbook document task
+    href: ../../resources/workbookdocumenttask.md
+  - name: List workbookDocumentTasks
+    href: ../../api/workbookdocumenttask-get.md
+  - name: Get workbookDocumentTask
+    href: ../../api/workbookdocumenttask-get.md
+  - name: List workbookDocumentTaskChanges
+    href: ../../api/workbookdocumenttask-list-changes.md
+- name: Workbook document task change
+  items:
+  - name: Workbook document task change
+    href: ../../resources/workbookdocumenttaskchange.md
+  - name: Get workbookDocumentTaskChange
+    href: ../../api/workbookdocumenttaskchange-get.md
+  - name: List workbookDocumentTaskChanges
+    href: ../../api/workbookdocumenttask-list-changes.md
 - name: Workbook filter
   items:
   - name: Workbook filter
@@ -497,6 +515,10 @@ items:
     href: ../../resources/workbookchartseriesformat.md
   - name: Workbook chart title format
     href: ../../resources/workbookcharttitleformat.md
+  - name: Workbook document task schedule
+    href: ../../resources/workbookdocumenttaskschedule.md
+  - name: Workbook email identity
+    href: ../../resources/workbookemailidentity.md
   - name: Workbook filter criteria
     href: ../../resources/workbookfiltercriteria.md
   - name: Workbook filter datetime

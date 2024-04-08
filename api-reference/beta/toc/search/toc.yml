@@ -89,6 +89,8 @@ items:
       href: ../../resources/searchhitscontainer.md
     - name: Search query
       href: ../../resources/searchquery.md
+    - name: Search query string
+      href: ../../resources/searchquerystring.md
     - name: Search request
       href: ../../resources/searchrequest.md
     - name: Search response

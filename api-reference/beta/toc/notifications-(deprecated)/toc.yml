@@ -1,3 +1,9 @@
 items:
 - name: Overview
   href: ../../resources/notifications-api-overview.md
+- name: Notification
+  items:
+  - name: Notification
+    href: ../../resources/projectrome-notification.md
+  - name: Create notification
+    href: ../../api/user-post-notifications.md

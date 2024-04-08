@@ -77,6 +77,26 @@ items:
     href: ../../api/outlookcategory-update.md
   - name: Delete
     href: ../../api/outlookcategory-delete.md
+- name: Contact merge suggestions
+  items:
+  - name: Contact merge suggestions
+    href: ../../resources/contactmergesuggestions.md
+  - name: Get
+    href: ../../api/contactmergesuggestions-get.md
+  - name: Update
+    href: ../../api/contactmergesuggestions-update.md
+- name: Insights settings
+  items:
+  - name: Insights settings
+    href: ../../resources/insightssettings.md
+  - name: List contactInsights
+    href: ../../api/organizationsettings-list-contactinsights.md
+  - name: List itemInsights
+    href: ../../api/peopleadminsettings-list-iteminsights.md
+  - name: List peopleInsights
+    href: ../../api/organizationsettings-list-peopleinsights.md
+  - name: Update insightsSettings
+    href: ../../api/insightssettings-update.md
 - name: Extended properties
   items:
   - name: Overview

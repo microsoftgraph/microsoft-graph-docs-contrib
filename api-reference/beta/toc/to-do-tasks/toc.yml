@@ -92,4 +92,70 @@ items:
   - name: To-do API with base tasks
     href: ../../resources/tasks-overview.md
   - name: Outlook tasks
-    items: []
+    items:
+    - name: Outlook task
+      items:
+      - name: Outlook task
+        href: ../../resources/outlooktask.md
+      - name: Get outlookTask
+        href: ../../api/outlooktask-get.md
+      - name: Update
+        href: ../../api/outlooktask-update.md
+      - name: Delete
+        href: ../../api/outlooktask-delete.md
+      - name: Complete
+        href: ../../api/outlooktask-complete.md
+      - name: Attachments
+        items:
+        - name: List attachments
+          href: ../../api/outlooktask-list-attachments.md
+        - name: Add attachment
+          href: ../../api/outlooktask-post-attachments.md
+      - name: Extended properties
+        items:
+        - name: Create single-value extended property
+          href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+        - name: Get task with single-value extended property
+          href: ../../api/singlevaluelegacyextendedproperty-get.md
+        - name: Create multi-value extended property
+          href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+        - name: Get task with multi-value extended property
+          href: ../../api/multivaluelegacyextendedproperty-get.md
+    - name: Outlook task folder
+      items:
+      - name: Outlook task folder
+        href: ../../resources/outlooktaskfolder.md
+      - name: Get outlookTaskFolder
+        href: ../../api/outlooktaskfolder-get.md
+      - name: Create outlookTask
+        href: ../../api/outlooktaskfolder-post-tasks.md
+      - name: List tasks
+        href: ../../api/outlooktaskfolder-list-tasks.md
+      - name: Update
+        href: ../../api/outlooktaskfolder-update.md
+      - name: Delete
+        href: ../../api/outlooktaskfolder-delete.md
+      - name: Extended properties
+        items:
+        - name: Create single-value extended property
+          href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+        - name: Get task folder with single-value extended property
+          href: ../../api/singlevaluelegacyextendedproperty-get.md
+        - name: Create multi-value extended property
+          href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+        - name: Get task folder with multi-value extended property
+          href: ../../api/multivaluelegacyextendedproperty-get.md
+    - name: Outlook task group
+      items:
+      - name: Outlook task group
+        href: ../../resources/outlooktaskgroup.md
+      - name: Get outlookTaskGroup
+        href: ../../api/outlooktaskgroup-get.md
+      - name: Create outlookTaskFolder
+        href: ../../api/outlooktaskgroup-post-taskfolders.md
+      - name: List taskFolders
+        href: ../../api/outlooktaskgroup-list-taskfolders.md
+      - name: Update
+        href: ../../api/outlooktaskgroup-update.md
+      - name: Delete
+        href: ../../api/outlooktaskgroup-delete.md

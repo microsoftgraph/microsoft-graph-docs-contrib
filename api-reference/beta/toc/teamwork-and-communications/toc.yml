@@ -17,6 +17,14 @@ items:
       href: ../../api/teamsapp-delete.md
     - name: Get bot associated with app in catalog
       href: ../../api/teamworkbot-get.md
+  - name: Teams app icon
+    items:
+    - name: Teams app icon
+      href: ../../resources/teamsappicon.md
+    - name: Get icon
+      href: ../../api/teamsappicon-get.md
+    - name: Get hosted content
+      href: ../../api/teamworkhostedcontent-get.md
   - name: Teams app installation
     items:
     - name: Teams app installation
@@ -255,18 +263,42 @@ items:
         href: ../../resources/callrecords-directroutinglogrow.md
       - name: getDirectRoutingCalls
         href: ../../api/callrecords-callrecord-getdirectroutingcalls.md
+    - name: Participant
+      items:
+      - name: Participant
+        href: ../../resources/callrecords-participant.md
+      - name: List participants_v2
+        href: ../../api/callrecords-callrecord-list-participants_v2.md
+    - name: PSTN blocked users log row
+      items:
+      - name: PSTN blocked users log row
+        href: ../../resources/callrecords-pstnblockeduserslogrow.md
+      - name: getPstnBlockedUsersLog
+        href: ../../api/callrecords-callrecord-getpstnblockeduserslog.md
     - name: PSTN call log row
       items:
       - name: PSTN call log row
         href: ../../resources/callrecords-pstncalllogrow.md
       - name: getPstnCalls
         href: ../../api/callrecords-callrecord-getpstncalls.md
+    - name: PSTN online meeting dialout report
+      items:
+      - name: PSTN online meeting dialout report
+        href: ../../resources/callrecords-pstnonlinemeetingdialoutreport.md
+      - name: getPstnOnlineMeetingDialoutReport
+        href: ../../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md
     - name: Session
       items:
       - name: Session
         href: ../../resources/callrecords-session.md
       - name: List sessions
         href: ../../api/callrecords-callrecord-list-sessions.md
+    - name: SMS log row
+      items:
+      - name: SMS log row
+        href: ../../resources/callrecords-smslogrow.md
+      - name: getSmsLog
+        href: ../../api/callrecords-callrecord-getsmslog.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -301,6 +333,28 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: List recordings of an onlineMeeting
         href: ../../api/onlinemeeting-list-recordings.md
+    - name: External meeting registration
+      items:
+      - name: External meeting registration
+        href: ../../resources/externalmeetingregistration.md
+      - name: Create externalMeetingRegistration
+        href: ../../api/externalmeetingregistration-post.md
+      - name: Get externalMeetingRegistration
+        href: ../../api/externalmeetingregistration-get.md
+      - name: Delete externalMeetingRegistration
+        href: ../../api/externalmeetingregistration-delete.md
+    - name: Meeting registration
+      items:
+      - name: Meeting registration
+        href: ../../resources/meetingregistration.md
+      - name: Create meetingRegistration
+        href: ../../api/meetingregistration-post.md
+      - name: Get meetingRegistration
+        href: ../../api/meetingregistration-get.md
+      - name: Update meetingRegistration
+        href: ../../api/meetingregistration-update.md
+      - name: Delete meetingRegistration
+        href: ../../api/meetingregistration-delete.md
     - name: Call recording
       items:
       - name: Call recording
@@ -364,7 +418,49 @@ items:
       - name: Get virtualEventSession
         href: ../../api/virtualeventsession-get.md
 - name: Devices (preview)
-  items: []
+  items:
+  - name: Teamwork device
+    items:
+    - name: Teamwork device
+      href: ../../resources/teamworkdevice.md
+    - name: List teamworkDevices
+      href: ../../api/teamworkdevice-list.md
+    - name: Get teamworkDevice
+      href: ../../api/teamworkdevice-get.md
+    - name: restart
+      href: ../../api/teamworkdevice-restart.md
+    - name: runDiagnostics
+      href: ../../api/teamworkdevice-rundiagnostics.md
+    - name: updateSoftware
+      href: ../../api/teamworkdevice-updatesoftware.md
+    - name: List operations
+      href: ../../api/teamworkdeviceoperation-list.md
+  - name: Teamwork device activity
+    items:
+    - name: Teamwork device activity
+      href: ../../resources/teamworkdeviceactivity.md
+    - name: Get teamworkDeviceActivity
+      href: ../../api/teamworkdeviceactivity-get.md
+  - name: Teamwork device configuration
+    items:
+    - name: Teamwork device configuration
+      href: ../../resources/teamworkdeviceconfiguration.md
+    - name: Get teamworkDeviceConfiguration
+      href: ../../api/teamworkdeviceconfiguration-get.md
+  - name: Teamwork device health
+    items:
+    - name: Teamwork device health
+      href: ../../resources/teamworkdevicehealth.md
+    - name: Get teamworkDeviceHealth
+      href: ../../api/teamworkdevicehealth-get.md
+  - name: Teamwork device operation
+    items:
+    - name: Teamwork device operation
+      href: ../../resources/teamworkdeviceoperation.md
+    - name: List teamworkDeviceOperations
+      href: ../../api/teamworkdeviceoperation-list.md
+    - name: Get teamworkDeviceOperation
+      href: ../../api/teamworkdeviceoperation-get.md
 - name: Settings (preview)
   items:
   - name: License details
@@ -809,6 +905,20 @@ items:
       href: ../../api/teamwork-sendactivitynotificationtorecipients.md
 - name: Shift management
   items:
+  - name: Day note
+    items:
+    - name: Day note
+      href: ../../resources/daynote.md
+    - name: List dayNotes
+      href: ../../api/daynote-list.md
+    - name: Create dayNote
+      href: ../../api/daynote-create.md
+    - name: Get dayNote
+      href: ../../api/daynote-get.md
+    - name: Update dayNote
+      href: ../../api/daynote-update.md
+    - name: Delete dayNote
+      href: ../../api/daynote-delete.md
   - name: Offer shift request
     items:
     - name: Offer shift request
@@ -903,6 +1013,14 @@ items:
       href: ../../api/shiftpreferences-get.md
     - name: Update
       href: ../../api/shiftpreferences-put.md
+  - name: Shifts role definition
+    items:
+    - name: Shifts role definition
+      href: ../../resources/shiftsroledefinition.md
+    - name: Get shiftsRoleDefinition
+      href: ../../api/shiftsroledefinition-get.md
+    - name: Set shiftsRoleDefinition
+      href: ../../api/shiftsroledefinition-update.md
   - name: Swap shifts change request
     items:
     - name: Swap shifts change request
@@ -917,6 +1035,30 @@ items:
       href: ../../api/swapshiftschangerequest-approve.md
     - name: Decline
       href: ../../api/swapshiftschangerequest-decline.md
+  - name: Time card
+    items:
+    - name: Time card
+      href: ../../resources/timecard.md
+    - name: List
+      href: ../../api/timecard-list.md
+    - name: Create
+      href: ../../api/timecard-post.md
+    - name: Get
+      href: ../../api/timecard-get.md
+    - name: Replace
+      href: ../../api/timecard-replace.md
+    - name: Delete
+      href: ../../api/timecard-delete.md
+    - name: clockIn
+      href: ../../api/timecard-clockin.md
+    - name: clockOut
+      href: ../../api/timecard-clockout.md
+    - name: startBreak
+      href: ../../api/timecard-startbreak.md
+    - name: endBreak
+      href: ../../api/timecard-endbreak.md
+    - name: confirmTimeCard
+      href: ../../api/timecard-confirm.md
   - name: Time off
     items:
     - name: Time off
@@ -977,10 +1119,14 @@ items:
       href: ../../api/workforceintegration-delete.md
   - name: Complex types
     items:
+    - name: Geo coordinates
+      href: ../../resources/geocoordinates.md
     - name: Identity
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+    - name: Item body
+      href: ../../resources/itembody.md
     - name: Open shift item
       href: ../../resources/openshiftitem.md
     - name: Patterned recurrence
@@ -989,12 +1135,28 @@ items:
       href: ../../resources/recurrencepattern.md
     - name: Recurrence range
       href: ../../resources/recurrencerange.md
+    - name: Scheduling group info
+      href: ../../resources/schedulinggroupinfo.md
     - name: Shift activity
       href: ../../resources/shiftactivity.md
     - name: Shift availability
       href: ../../resources/shiftavailability.md
     - name: Shift item
       href: ../../resources/shiftitem.md
+    - name: Shifts role permission
+      href: ../../resources/shiftsrolepermission.md
+    - name: Shifts team info
+      href: ../../resources/shiftsteaminfo.md
+    - name: Shifts user info
+      href: ../../resources/shiftsuserinfo.md
+    - name: Time card break
+      href: ../../resources/timecardbreak.md
+    - name: Time card entry
+      href: ../../resources/timecardentry.md
+    - name: Time card event
+      href: ../../resources/timecardevent.md
+    - name: Time clock settings
+      href: ../../resources/timeclocksettings.md
     - name: Time off item
       href: ../../resources/timeoffitem.md
     - name: Time range

@@ -53,6 +53,14 @@ items:
       href: ../../api/bitlocker-list-recoverykeys.md
     - name: Get bitlockerRecoveryKey
       href: ../../api/bitlockerrecoverykey-get.md
+  - name: Company subscription
+    items:
+    - name: Company subscription
+      href: ../../resources/companysubscription.md
+    - name: Get companySubscription
+      href: ../../api/companysubscription-get.md
+    - name: List companySubscriptions
+      href: ../../api/directory-list-subscriptions.md
   - name: Contract
     items:
     - name: Contract
@@ -213,6 +221,28 @@ items:
       href: ../../resources/directoryroletemplate.md
     - name: Get directoryRoleTemplate
       href: ../../api/directoryroletemplate-get.md
+  - name: Directory setting
+    items:
+    - name: Directory setting
+      href: ../../resources/directorysetting.md
+    - name: Create setting
+      href: ../../api/group-post-settings.md
+    - name: Get setting
+      href: ../../api/directorysetting-get.md
+    - name: List settings
+      href: ../../api/group-list-settings.md
+    - name: Update setting
+      href: ../../api/directorysetting-update.md
+    - name: Delete setting
+      href: ../../api/directorysetting-delete.md
+  - name: Directory setting template
+    items:
+    - name: Directory setting template
+      href: ../../resources/directorysettingtemplate.md
+    - name: Get directorySettingTemplate
+      href: ../../api/directorysettingtemplate-get.md
+    - name: List directorySettingTemplate
+      href: ../../api/directorysettingtemplate-list.md
   - name: Domain
     items:
     - name: Domain
@@ -240,7 +270,33 @@ items:
     - name: Promote domain
       href: ../../api/domain-promote.md
   - name: External user profiles
-    items: []
+    items:
+    - name: External user profile
+      items:
+      - name: External user profile
+        href: ../../resources/externaluserprofile.md
+      - name: Get externalUserProfile
+        href: ../../api/externaluserprofile-get.md
+      - name: List externalUserProfiles
+        href: ../../api/directory-list-externaluserprofiles.md
+      - name: Update externalUserProfile
+        href: ../../api/externaluserprofile-update.md
+      - name: Delete externalUserProfile
+        href: ../../api/directory-delete-externaluserprofiles.md
+    - name: Pending external user profile
+      items:
+      - name: Pending external user profile
+        href: ../../resources/pendingexternaluserprofile.md
+      - name: Get pendingExternalUserProfile
+        href: ../../api/pendingexternaluserprofile-get.md
+      - name: List pendingExternalUserProfiles
+        href: ../../api/directory-list-pendingexternaluserprofile.md
+      - name: Create pendingExternalUserProfile
+        href: ../../api/directory-post-pendingexternaluserprofile.md
+      - name: Update pendingExternalUserProfile
+        href: ../../api/pendingexternaluserprofile-update.md
+      - name: Delete pendingExternalUserProfile
+        href: ../../api/directory-delete-pendingexternaluserprofiles.md
   - name: Feature rollout policy
     items:
     - name: Feature rollout policy
@@ -259,6 +315,34 @@ items:
       href: ../../api/featurerolloutpolicy-post-appliesto.md
     - name: Remove appliesTo
       href: ../../api/featurerolloutpolicy-delete-appliesto.md
+  - name: Mobility management policy
+    items:
+    - name: Mobility management policy
+      href: ../../resources/mobilitymanagementpolicy.md
+    - name: List mobileDeviceManagementPolicies
+      href: ../../api/mobiledevicemanagementpolicies-list.md
+    - name: Get mobileDeviceManagementPolicy
+      href: ../../api/mobiledevicemanagementpolicies-get.md
+    - name: Update mobileDeviceManagementPolicy
+      href: ../../api/mobiledevicemanagementpolicies-update.md
+    - name: List includedGroups of mobileDeviceManagementPolicy
+      href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
+    - name: Add group to mobileDeviceManagementPolicy
+      href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
+    - name: Delete group from mobileDeviceManagementPolicy
+      href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
+    - name: List mobileAppManagementPolicies
+      href: ../../api/mobileappmanagementpolicies-list.md
+    - name: Get mobileAppManagementPolicy
+      href: ../../api/mobileappmanagementpolicies-get.md
+    - name: Update mobileAppManagementPolicy
+      href: ../../api/mobileappmanagementpolicies-update.md
+    - name: List includedGroups of mobileAppManagementPolicy
+      href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
+    - name: Add group to mobileAppManagementPolicy
+      href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
+    - name: Delete group from mobileAppManagementPolicy
+      href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -306,7 +390,81 @@ items:
     - name: Update organization
       href: ../../api/organization-update.md
   - name: Organization settings
-    items: []
+    items:
+    - name: Organization settings
+      href: ../../resources/organizationsettings.md
+    - name: List contactInsights
+      href: ../../api/organizationsettings-list-contactinsights.md
+    - name: List microsoftApplicationDataAccessSettings
+      href: ../../api/organizationsettings-list-microsoftapplicationdataaccess.md
+    - name: List peopleInsights
+      href: ../../api/organizationsettings-list-peopleinsights.md
+    - name: List itemInsights
+      href: ../../api/organizationsettings-list-iteminsights.md
+    - name: Microsoft application data access settings
+      items:
+      - name: Microsoft application data access settings
+        href: ../../resources/microsoftapplicationdataaccesssettings.md
+      - name: List microsoftApplicationDataAccessSettings
+        href: ../../api/organizationsettings-list-microsoftapplicationdataaccess.md
+      - name: Update microsoftApplicationDataAccessSettings
+        href: ../../api/microsoftapplicationdataaccesssettings-update.md
+    - name: Insights settings
+      items:
+      - name: Insights settings
+        href: ../../resources/insightssettings.md
+      - name: List contactInsights
+        href: ../../api/organizationsettings-list-contactinsights.md
+      - name: List itemInsights
+        href: ../../api/peopleadminsettings-list-iteminsights.md
+      - name: List peopleInsights
+        href: ../../api/organizationsettings-list-peopleinsights.md
+      - name: Update insightsSettings
+        href: ../../api/insightssettings-update.md
+    - name: Admin apps and services
+      items:
+      - name: Admin apps and services
+        href: ../../resources/adminappsandservices.md
+      - name: Get adminAppsAndServices
+        href: ../../api/adminappsandservices-get.md
+      - name: Update adminAppsAndServices
+        href: ../../api/adminappsandservices-update.md
+    - name: Admin dynamics
+      items:
+      - name: Admin dynamics
+        href: ../../resources/admindynamics.md
+      - name: Get adminDynamics
+        href: ../../api/admindynamics-get.md
+      - name: Update adminDynamics
+        href: ../../api/admindynamics-update.md
+    - name: Admin forms
+      items:
+      - name: Admin forms
+        href: ../../resources/adminforms.md
+      - name: Get adminForms
+        href: ../../api/adminforms-get.md
+      - name: Update adminForms
+        href: ../../api/adminforms-update.md
+    - name: Admin To-do
+      items:
+      - name: Admin To-do
+        href: ../../resources/admintodo.md
+      - name: Get adminTodo
+        href: ../../api/admintodo-get.md
+      - name: Update adminTodo
+        href: ../../api/admintodo-update.md
+    - name: Complex types
+      items:
+      - name: Admin
+        href: ../../resources/admin.md
+      - name: Apps and services settings
+        href: ../../resources/appsandservicessettings.md
+      - name: Customer voice settings
+        href: ../../resources/customervoicesettings.md
+      - name: Forms settings
+        href: ../../resources/formssettings.md
+      - name: To-do settings
+        href: ../../resources/todosettings.md
   - name: Role management
     items:
     - name: Role management
@@ -341,6 +499,20 @@ items:
         href: ../../api/rbacapplication-post-roleassignments.md
       - name: Delete unifiedRoleAssignment
         href: ../../api/unifiedroleassignment-delete.md
+    - name: Unified role assignment multiple
+      items:
+      - name: Unified role assignment multiple
+        href: ../../resources/unifiedroleassignmentmultiple.md
+      - name: List roleAssignments
+        href: ../../api/rbacapplicationmultiple-list-roleassignments.md
+      - name: Create unifiedRoleAssignmentMultiple
+        href: ../../api/rbacapplicationmultiple-post-roleassignments.md
+      - name: Get unifiedRoleAssignmentMultiple
+        href: ../../api/unifiedroleassignmentmultiple-get.md
+      - name: Update unifiedRoleAssignmentMultiple
+        href: ../../api/unifiedroleassignmentmultiple-update.md
+      - name: Delete unifiedRoleAssignmentMultiple
+        href: ../../api/unifiedroleassignmentmultiple-delete.md
     - name: Unified RBAC resource namespace
       items:
       - name: Unified RBAC resource namespace
@@ -357,6 +529,20 @@ items:
         href: ../../api/unifiedrbacresourcenamespace-list-resourceactions.md
       - name: Get unifiedRbacResourceAction
         href: ../../api/unifiedrbacresourceaction-get.md
+    - name: Custom app scope
+      items:
+      - name: Custom app scope
+        href: ../../resources/customappscope.md
+      - name: List customAppScope
+        href: ../../api/unifiedrbacapplication-list-customappscopes.md
+      - name: Create customAppScope
+        href: ../../api/unifiedrbacapplication-post-customappscope.md
+      - name: Get customAppScope
+        href: ../../api/customappscope-get.md
+      - name: Update customAppScope
+        href: ../../api/customappscope-update.md
+      - name: Delete customAppScope
+        href: ../../api/customappscope-delete.md
   - name: Subscribed SKU
     items:
     - name: Subscribed SKU
@@ -374,7 +560,33 @@ items:
     - name: Find tenant by tenant ID
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
   - name: Trusted certificate authorities for apps (preview)
-    items: []
+    items:
+    - name: Certificate based application configuration
+      items:
+      - name: Certificate based application configuration
+        href: ../../resources/certificatebasedapplicationconfiguration.md
+      - name: List certificateBasedApplicationConfigurations
+        href: ../../api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
+      - name: Create certificateBasedApplicationConfiguration
+        href: ../../api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
+      - name: Get certificateBasedApplicationConfiguration
+        href: ../../api/certificatebasedapplicationconfiguration-get.md
+      - name: Update certificateBasedApplicationConfiguration
+        href: ../../api/certificatebasedapplicationconfiguration-update.md
+    - name: Certificate authority as entity
+      items:
+      - name: Certificate authority as entity
+        href: ../../resources/certificateauthorityasentity.md
+      - name: List certificateAuthorityAsEntities
+        href: ../../api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
+      - name: Create certificateAuthorityAsEntity
+        href: ../../api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
+      - name: Get certificateAuthorityAsEntity
+        href: ../../api/certificateauthorityasentity-get.md
+      - name: Update certificateAuthorityAsEntity
+        href: ../../api/certificateauthorityasentity-update.md
+      - name: Delete certificateAuthorityAsEntity
+        href: ../../api/certificateauthorityasentity-delete.md
 - name: Governance
   items:
   - name: Overview
@@ -451,6 +663,14 @@ items:
         href: ../../api/accessreviewinstancedecisionitem-filterbycurrentuser.md
       - name: List accessReviewInstanceDecisionItems pending approval (deprecated)
         href: ../../api/accessreviewinstancedecisionitem-listpendingapproval.md
+    - name: Access review policy
+      items:
+      - name: Access review policy
+        href: ../../resources/accessreviewpolicy.md
+      - name: Get accessReviewPolicy
+        href: ../../api/accessreviewpolicy-get.md
+      - name: Update accessReviewPolicy
+        href: ../../api/accessreviewpolicy-update.md
     - name: Access review schedule definition
       items:
       - name: Access review schedule definition
@@ -487,6 +707,8 @@ items:
       items:
       - name: Access review apply action
         href: ../../resources/accessreviewapplyaction.md
+      - name: Access review error
+        href: ../../resources/accessreviewerror.md
       - name: Access review history schedule settings
         href: ../../resources/accessreviewhistoryschedulesettings.md
       - name: Access review inactive users query scope
@@ -499,6 +721,12 @@ items:
         href: ../../resources/accessreviewinstancedecisionitemresource.md
       - name: Access review instance decision item service principal resource
         href: ../../resources/accessreviewinstancedecisionitemserviceprincipalresource.md
+      - name: Access review instance decision item service principal target
+        href: ../../resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
+      - name: Access review instance decision item target
+        href: ../../resources/accessreviewinstancedecisionitemtarget.md
+      - name: Access review instance decision item user target
+        href: ../../resources/accessreviewinstancedecisionitemusertarget.md
       - name: Access review notification recipient item
         href: ../../resources/accessreviewnotificationrecipientitem.md
       - name: Access review notification recipient query scope
@@ -525,8 +753,8 @@ items:
         href: ../../resources/appconsentapprovalroute.md
       - name: App consent request scope
         href: ../../resources/appconsentrequestscope.md
-      - name: Approval stage
-        href: ../../resources/approvalstage.md
+      - name: Decision item principal resource membership
+        href: ../../resources/decisionitemprincipalresourcemembership.md
       - name: Disable and delete user apply action
         href: ../../resources/disableanddeleteuserapplyaction.md
       - name: Group peer outlier recommendation insight settings
@@ -551,6 +779,78 @@ items:
     items:
     - name: Overview
       href: ../../resources/accessreviews-root.md
+    - name: Access review
+      items:
+      - name: Access review
+        href: ../../resources/accessreview.md
+      - name: List accessReviews
+        href: ../../api/accessreview-list.md
+      - name: Get accessReview
+        href: ../../api/accessreview-get.md
+      - name: Create accessReview
+        href: ../../api/accessreview-create.md
+      - name: Update accessReview
+        href: ../../api/accessreview-update.md
+      - name: Delete accessReview
+        href: ../../api/accessreview-delete.md
+      - name: List accessReview reviewers
+        href: ../../api/accessreview-listreviewers.md
+      - name: Add accessReview reviewer
+        href: ../../api/accessreview-addreviewer.md
+      - name: Remove accessReview reviewer
+        href: ../../api/accessreview-removereviewer.md
+      - name: List accessReview decisions
+        href: ../../api/accessreview-listdecisions.md
+      - name: List my accessReview decisions
+        href: ../../api/accessreview-listmydecisions.md
+      - name: Send accessReview reminder
+        href: ../../api/accessreview-sendreminder.md
+      - name: Stop accessReview
+        href: ../../api/accessreview-stop.md
+      - name: Reset accessReview decisions
+        href: ../../api/accessreview-reset.md
+      - name: Apply accessReview decisions
+        href: ../../api/accessreview-apply.md
+    - name: Business flow template
+      items:
+      - name: Business flow template
+        href: ../../resources/businessflowtemplate.md
+      - name: List businessFlowTemplates
+        href: ../../api/businessflowtemplate-list.md
+    - name: Program
+      items:
+      - name: Program
+        href: ../../resources/program.md
+      - name: Create program
+        href: ../../api/program-create.md
+      - name: Delete program
+        href: ../../api/program-delete.md
+      - name: List programs
+        href: ../../api/program-list.md
+      - name: List programControls of a program
+        href: ../../api/program-listcontrols.md
+      - name: Update program
+        href: ../../api/program-update.md
+    - name: Program control
+      items:
+      - name: Program control
+        href: ../../resources/programcontrol.md
+      - name: Create programControl
+        href: ../../api/programcontrol-create.md
+      - name: Delete programControl
+        href: ../../api/programcontrol-delete.md
+      - name: List programControls
+        href: ../../api/programcontrol-list.md
+      - name: List programControls of a program
+        href: ../../api/program-listcontrols.md
+      - name: List programControlTypes
+        href: ../../api/programcontroltype-list.md
+    - name: Program control type
+      items:
+      - name: Program control type
+        href: ../../resources/programcontroltype.md
+      - name: List programControlTypes
+        href: ../../api/programcontroltype-list.md
   - name: Consent requests
     items:
     - name: Overview
@@ -687,6 +987,14 @@ items:
         href: ../../api/accesspackageassignmentrequestworkflowextension-update.md
       - name: Delete accessPackageAssignmentRequestWorkflowExtension
         href: ../../api/accesspackageassignmentrequestworkflowextension-delete.md
+    - name: Access package assignment resource role
+      items:
+      - name: Access package assignment resource role
+        href: ../../resources/accesspackageassignmentresourcerole.md
+      - name: Get accessPackageAssignmentResourceRole
+        href: ../../api/accesspackageassignmentresourcerole-get.md
+      - name: List accessPackageAssignmentResourceRoles
+        href: ../../api/entitlementmanagement-list-accesspackageassignmentresourceroles.md
     - name: Access package assignment workflow extension
       items:
       - name: Access package assignment workflow extension
@@ -835,6 +1143,20 @@ items:
         href: ../../api/connectedorganization-delete-internalsponsors.md
       - name: Remove externalSponsors
         href: ../../api/connectedorganization-delete-externalsponsors.md
+    - name: Custom access package workflow extension
+      items:
+      - name: Custom access package workflow extension
+        href: ../../resources/customaccesspackageworkflowextension.md
+      - name: List customAccessPackageWorkflowExtensions
+        href: ../../api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md
+      - name: Create customAccessPackageWorkflowExtensions
+        href: ../../api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md
+      - name: Get customAccessPackageWorkflowExtension
+        href: ../../api/customaccesspackageworkflowextension-get.md
+      - name: Update customAccessPackageWorkflowExtension
+        href: ../../api/customaccesspackageworkflowextension-update.md
+      - name: Delete customAccessPackageWorkflowExtension
+        href: ../../api/customaccesspackageworkflowextension-delete.md
     - name: Entitlement management settings
       items:
       - name: Entitlement management settings
@@ -855,6 +1177,8 @@ items:
         href: ../../resources/accesspackageassignmentrequestcallbackdata.md
       - name: Access package assignment request requirements
         href: ../../resources/accesspackageassignmentrequestrequirements.md
+      - name: Access package localized content
+        href: ../../resources/accesspackagelocalizedcontent.md
       - name: Access package localized text
         href: ../../resources/accesspackagelocalizedtext.md
       - name: Access package multiple choice question
@@ -875,6 +1199,12 @@ items:
         href: ../../resources/accesspackagetextinputquestion.md
       - name: Access package user directory attribute store
         href: ../../resources/accesspackageuserdirectoryattributestore.md
+      - name: Approval settings
+        href: ../../resources/approvalsettings.md
+      - name: Approval stage
+        href: ../../resources/approvalstage.md
+      - name: Assignment review settings
+        href: ../../resources/assignmentreviewsettings.md
       - name: Azure active directory tenant
         href: ../../resources/azureactivedirectorytenant.md
       - name: Connected organization members
@@ -897,6 +1227,10 @@ items:
         href: ../../resources/customextensiondata.md
       - name: Custom extension endpoint configuration
         href: ../../resources/customextensionendpointconfiguration.md
+      - name: Custom extension handler
+        href: ../../resources/customextensionhandler.md
+      - name: Custom extension handler instance
+        href: ../../resources/customextensionhandlerinstance.md
       - name: Custom extension stage setting
         href: ../../resources/customextensionstagesetting.md
       - name: Domain identity source
@@ -919,14 +1253,20 @@ items:
         href: ../../resources/logicapptriggerendpointconfiguration.md
       - name: Microsoft Entra pop token authentication
         href: ../../resources/azureadpoptokenauthentication.md
+      - name: Microsoft Entra token authentication
+        href: ../../resources/azureadtokenauthentication.md
       - name: Patterned recurrence
         href: ../../resources/patternedrecurrence.md
       - name: Recurrence pattern
         href: ../../resources/recurrencepattern.md
       - name: Recurrence range
         href: ../../resources/recurrencerange.md
+      - name: Request schedule
+        href: ../../resources/requestschedule.md
       - name: Requestor manager
         href: ../../resources/requestormanager.md
+      - name: Requestor settings
+        href: ../../resources/requestorsettings.md
       - name: Single user
         href: ../../resources/singleuser.md
       - name: Social identity source
@@ -935,6 +1275,24 @@ items:
         href: ../../resources/subjectset.md
       - name: Target user sponsors
         href: ../../resources/targetusersponsors.md
+      - name: User set
+        href: ../../resources/userset.md
+      - name: Verifiable credential required
+        href: ../../resources/verifiablecredentialrequired.md
+      - name: Verifiable credential requirement status
+        href: ../../resources/verifiablecredentialrequirementstatus.md
+      - name: Verifiable credential retrieved
+        href: ../../resources/verifiablecredentialretrieved.md
+      - name: Verifiable credential settings
+        href: ../../resources/verifiablecredentialsettings.md
+      - name: Verifiable credential type
+        href: ../../resources/verifiablecredentialtype.md
+      - name: Verifiable credential verified
+        href: ../../resources/verifiablecredentialverified.md
+      - name: Verified credential claims
+        href: ../../resources/verifiedcredentialclaims.md
+      - name: Verified credential data
+        href: ../../resources/verifiedcredentialdata.md
   - name: Lifecycle workflows
     items:
     - name: Overview
@@ -1117,6 +1475,8 @@ items:
         href: ../../resources/logicapptriggerendpointconfiguration.md
       - name: Microsoft Entra pop token authentication
         href: ../../resources/azureadpoptokenauthentication.md
+      - name: Microsoft Entra token authentication
+        href: ../../resources/azureadtokenauthentication.md
       - name: On demand execution only
         href: ../../resources/identitygovernance-ondemandexecutiononly.md
       - name: Parameter
@@ -1257,6 +1617,16 @@ items:
           href: ../../api/approval-get.md
         - name: filterByCurrentUser
           href: ../../api/approval-filterbycurrentuser.md
+      - name: Approval step
+        items:
+        - name: Approval step
+          href: ../../resources/approvalstep.md
+        - name: List approvalSteps
+          href: ../../api/approval-list-steps.md
+        - name: Get approvalStep
+          href: ../../api/approvalstep-get.md
+        - name: Update approvalStep
+          href: ../../api/approvalstep-update.md
     - name: PIM for Groups
       items:
       - name: Overview
@@ -1371,6 +1741,16 @@ items:
           href: ../../api/approval-get.md
         - name: filterByCurrentUser
           href: ../../api/approval-filterbycurrentuser.md
+      - name: Approval step
+        items:
+        - name: Approval step
+          href: ../../resources/approvalstep.md
+        - name: List approvalSteps
+          href: ../../api/approval-list-steps.md
+        - name: Get approvalStep
+          href: ../../api/approvalstep-get.md
+        - name: Update approvalStep
+          href: ../../api/approvalstep-update.md
   - name: Privileged Identity Management iteration 2
     items:
     - name: Overview
@@ -1379,6 +1759,58 @@ items:
       items:
       - name: Overview
         href: ../../resources/privilegedidentitymanagement-resources.md
+      - name: Governance resource
+        items:
+        - name: Governance resource
+          href: ../../resources/governanceresource.md
+        - name: List
+          href: ../../api/governanceresource-list.md
+        - name: Get
+          href: ../../api/governanceresource-get.md
+        - name: Register
+          href: ../../api/governanceresource-register.md
+      - name: Governance role definition
+        items:
+        - name: Governance role definition
+          href: ../../resources/governanceroledefinition.md
+        - name: List
+          href: ../../api/governanceroledefinition-list.md
+        - name: Get
+          href: ../../api/governanceroledefinition-get.md
+      - name: Governance role setting
+        items:
+        - name: Governance role setting
+          href: ../../resources/governancerolesetting.md
+        - name: List
+          href: ../../api/governancerolesetting-list.md
+        - name: Get
+          href: ../../api/governancerolesetting-get.md
+        - name: Update
+          href: ../../api/governancerolesetting-update.md
+      - name: Governance role assignment
+        items:
+        - name: Governance role assignment
+          href: ../../resources/governanceroleassignment.md
+        - name: Get
+          href: ../../api/governanceroleassignment-get.md
+        - name: List
+          href: ../../api/governanceroleassignment-list.md
+        - name: Export
+          href: ../../api/governanceroleassignment-export.md
+      - name: Governance role assignment request
+        items:
+        - name: Governance role assignment request
+          href: ../../resources/governanceroleassignmentrequest.md
+        - name: Get
+          href: ../../api/governanceroleassignmentrequest-get.md
+        - name: List
+          href: ../../api/governanceroleassignmentrequest-list.md
+        - name: Create
+          href: ../../api/governanceroleassignmentrequest-post.md
+        - name: Cancel
+          href: ../../api/governanceroleassignmentrequest-cancel.md
+        - name: Update
+          href: ../../api/governanceroleassignmentrequest-update.md
   - name: Terms of use
     items:
     - name: Agreement
@@ -1436,7 +1868,119 @@ items:
 - name: Identity and sign-in
   items:
   - name: Authentication event listeners (preview)
-    items: []
+    items:
+    - name: Authentication event listener
+      items:
+      - name: Authentication event listener
+        href: ../../resources/authenticationeventlistener.md
+      - name: List authenticationEventListeners
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create authenticationEventListener
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get authenticationEventListener
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update authenticationEventListener
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete authenticationEventListener
+        href: ../../api/authenticationeventlistener-delete.md
+    - name: On attribute collection listener
+      items:
+      - name: On attribute collection listener
+        href: ../../resources/onattributecollectionlistener.md
+      - name: List authenticationEventListeners
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create authenticationEventListener
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get authenticationEventListener
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update authenticationEventListener
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete authenticationEventListener
+        href: ../../api/authenticationeventlistener-delete.md
+    - name: On attribute collection start listener
+      items:
+      - name: On attribute collection start listener
+        href: ../../resources/onattributecollectionstartlistener.md
+      - name: List authenticationEventListeners
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create authenticationEventListener
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get authenticationEventListener
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update authenticationEventListener
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete authenticationEventListener
+        href: ../../api/authenticationeventlistener-delete.md
+    - name: On attribute collection submit listener
+      items:
+      - name: On attribute collection submit listener
+        href: ../../resources/onattributecollectionsubmitlistener.md
+      - name: List authenticationEventListeners
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create authenticationEventListener
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get authenticationEventListener
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update authenticationEventListener
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete authenticationEventListener
+        href: ../../api/authenticationeventlistener-delete.md
+    - name: On authentication method load start listener
+      items:
+      - name: On authentication method load start listener
+        href: ../../resources/onauthenticationmethodloadstartlistener.md
+      - name: List authenticationEventListeners
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create authenticationEventListener
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get authenticationEventListener
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update authenticationEventListener
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete authenticationEventListener
+        href: ../../api/authenticationeventlistener-delete.md
+    - name: On interactive auth flow start listener
+      items:
+      - name: On interactive auth flow start listener
+        href: ../../resources/oninteractiveauthflowstartlistener.md
+      - name: List authenticationEventListeners
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create authenticationEventListener
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get authenticationEventListener
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update authenticationEventListener
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete authenticationEventListener
+        href: ../../api/authenticationeventlistener-delete.md
+    - name: On token issuance start listener
+      items:
+      - name: On token issuance start listener
+        href: ../../resources/ontokenissuancestartlistener.md
+      - name: List authenticationEventListeners
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create authenticationEventListener
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get authenticationEventListener
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update authenticationEventListener
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete authenticationEventListener
+        href: ../../api/authenticationeventlistener-delete.md
+    - name: On user create start listener
+      items:
+      - name: On user create start listener
+        href: ../../resources/onusercreatestartlistener.md
+      - name: List authenticationEventListeners
+        href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+      - name: Create authenticationEventListener
+        href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+      - name: Get authenticationEventListener
+        href: ../../api/authenticationeventlistener-get.md
+      - name: Update authenticationEventListener
+        href: ../../api/authenticationeventlistener-update.md
+      - name: Delete authenticationEventListener
+        href: ../../api/authenticationeventlistener-delete.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1549,6 +2093,26 @@ items:
         href: ../../api/windowshelloforbusinessauthenticationmethod-get.md
       - name: Delete windowsHelloForBusinessAuthenticationMethod
         href: ../../api/windowshelloforbusinessauthenticationmethod-delete.md
+    - name: Passwordless Microsoft Authenticator authentication method
+      items:
+      - name: Passwordless Microsoft Authenticator authentication method
+        href: ../../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
+      - name: List
+        href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
+      - name: Get
+        href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+    - name: Platform credential authentication method
+      items:
+      - name: Platform credential authentication method
+        href: ../../resources/platformcredentialauthenticationmethod.md
+      - name: List platformCredentialAuthenticationMethods
+        href: ../../api/platformcredentialauthenticationmethod-list.md
+      - name: Get platformCredentialAuthenticationMethod
+        href: ../../api/platformcredentialauthenticationmethod-get.md
+      - name: Delete platformCredentialAuthenticationMethod
+        href: ../../api/platformcredentialauthenticationmethod-delete.md
   - name: Authentication strengths
     items:
     - name: Overview
@@ -1736,15 +2300,81 @@ items:
       - name: Delete crossTenantIdentitySyncPolicyPartner
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
   - name: Cross-tenant shared user profiles
-    items: []
+    items:
+    - name: Inbound shared user profile
+      items:
+      - name: Inbound shared user profile
+        href: ../../resources/inboundshareduserprofile.md
+      - name: Get inboundSharedUserProfile
+        href: ../../api/inboundshareduserprofile-get.md
+      - name: List inboundSharedUserProfile
+        href: ../../api/directory-list-inboundshareduserprofiles.md
+      - name: Remove personal data
+        href: ../../api/inboundshareduserprofile-removepersonaldata.md
+      - name: Export personal data
+        href: ../../api/inboundshareduserprofile-exportpersonaldata.md
+    - name: Outbound shared user profile
+      items:
+      - name: Outbound shared user profile
+        href: ../../resources/outboundshareduserprofile.md
+      - name: List outboundSharedUserProfiles
+        href: ../../api/directory-list-outboundshareduserprofiles.md
+      - name: Get outboundSharedUserProfile
+        href: ../../api/outboundshareduserprofile-get.md
+      - name: List tenantReferences
+        href: ../../api/outboundshareduserprofile-list-tenants.md
+      - name: Remove personal data
+        href: ../../api/tenantreference-removepersonaldata.md
   - name: Custom authentication extensions (preview)
-    items: []
+    items:
+    - name: Custom authentication extension
+      items:
+      - name: Custom authentication extension
+        href: ../../resources/customauthenticationextension.md
+      - name: List customAuthenticationExtensions
+        href: ../../api/identitycontainer-list-customauthenticationextensions.md
+      - name: Create customAuthenticationExtension
+        href: ../../api/identitycontainer-post-customauthenticationextensions.md
+      - name: Get customAuthenticationExtension
+        href: ../../api/customauthenticationextension-get.md
+      - name: Update customAuthenticationExtension
+        href: ../../api/customauthenticationextension-update.md
+      - name: Delete customAuthenticationExtension
+        href: ../../api/customauthenticationextension-delete.md
+      - name: validateAuthenticationConfiguration
+        href: ../../api/customauthenticationextension-validateauthenticationconfiguration.md
+    - name: On attribute collection start custom extension
+      items:
+      - name: On attribute collection start custom extension
+        href: ../../resources/onattributecollectionstartcustomextension.md
+      - name: Get onAttributeCollectionStartCustomExtension
+        href: ../../api/onattributecollectionstartcustomextension-get.md
+      - name: Update onAttributeCollectionStartCustomExtension
+        href: ../../api/onattributecollectionstartcustomextension-update.md
+    - name: On attribute collection submit custom extension
+      items:
+      - name: On attribute collection submit custom extension
+        href: ../../resources/onattributecollectionsubmitcustomextension.md
+      - name: Get onAttributeCollectionSubmitCustomExtension
+        href: ../../api/onattributecollectionsubmitcustomextension-get.md
+      - name: Update onAttributeCollectionSubmitCustomExtension
+        href: ../../api/onattributecollectionsubmitcustomextension-update.md
+    - name: On token issuance start custom extension
+      href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation
     items:
     - name: Data policy operation
       href: ../../resources/datapolicyoperation.md
     - name: Get dataPolicyOperation
       href: ../../api/datapolicyoperation-get.md
+  - name: External identities policy
+    items:
+    - name: External identities policy
+      href: ../../resources/externalidentitiespolicy.md
+    - name: Get externalIdentitiesPolicy
+      href: ../../api/externalidentitiespolicy-get.md
+    - name: Update externalIdentitiesPolicy
+      href: ../../api/externalidentitiespolicy-update.md
   - name: Identity protection
     items:
     - name: Overview
@@ -1855,6 +2485,22 @@ items:
           href: ../../api/identityproviderbase-delete.md
         - name: List available provider types
           href: ../../api/identityproviderbase-availableprovidertypes.md
+      - name: Open id connect identity provider
+        items:
+        - name: Open id connect identity provider
+          href: ../../resources/openidconnectidentityprovider.md
+        - name: List
+          href: ../../api/identitycontainer-list-identityproviders.md
+        - name: Create
+          href: ../../api/identitycontainer-post-identityproviders.md
+        - name: Get
+          href: ../../api/identityproviderbase-get.md
+        - name: Update
+          href: ../../api/identityproviderbase-update.md
+        - name: Delete
+          href: ../../api/identityproviderbase-delete.md
+        - name: List available provider types
+          href: ../../api/identityproviderbase-availableprovidertypes.md
     - name: Domain-based external identities
       items:
       - name: SAML/WS-Fed external domain federation
@@ -1919,6 +2565,58 @@ items:
     items:
     - name: Overview
       href: ../../resources/multitenantorganization-overview.md
+    - name: Multi tenant organization
+      items:
+      - name: Multi tenant organization
+        href: ../../resources/multitenantorganization.md
+      - name: Create multiTenantOrganization
+        href: ../../api/tenantrelationship-put-multitenantorganization.md
+      - name: Get multiTenantOrganization
+        href: ../../api/multitenantorganization-get.md
+      - name: Update multiTenantOrganization
+        href: ../../api/multitenantorganization-update.md
+    - name: Multi tenant organization member
+      items:
+      - name: Multi tenant organization member
+        href: ../../resources/multitenantorganizationmember.md
+      - name: List multiTenantOrganizationMembers
+        href: ../../api/multitenantorganization-list-tenants.md
+      - name: Add multiTenantOrganizationMember
+        href: ../../api/multitenantorganization-post-tenants.md
+      - name: Get multiTenantOrganizationMember
+        href: ../../api/multitenantorganizationmember-get.md
+      - name: Update multiTenantOrganizationMember
+        href: ../../api/multitenantorganizationmember-update.md
+      - name: Remove multiTenantOrganizationMember
+        href: ../../api/multitenantorganization-delete-tenants.md
+    - name: Multi tenant organization join request record
+      items:
+      - name: Multi tenant organization join request record
+        href: ../../resources/multitenantorganizationjoinrequestrecord.md
+      - name: Get multiTenantOrganizationJoinRequestRecord
+        href: ../../api/multitenantorganizationjoinrequestrecord-get.md
+      - name: Update multiTenantOrganizationJoinRequestRecord
+        href: ../../api/multitenantorganizationjoinrequestrecord-update.md
+    - name: Multi tenant organization partner configuration template
+      items:
+      - name: Multi tenant organization partner configuration template
+        href: ../../resources/multitenantorganizationpartnerconfigurationtemplate.md
+      - name: Get multiTenantOrganizationPartnerConfigurationTemplate
+        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-get.md
+      - name: Update multiTenantOrganizationPartnerConfigurationTemplate
+        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-update.md
+      - name: resetToDefaultSettings
+        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+    - name: Multi tenant organization identity sync policy template
+      items:
+      - name: Multi tenant organization identity sync policy template
+        href: ../../resources/multitenantorganizationidentitysyncpolicytemplate.md
+      - name: Get multiTenantOrganizationIdentitySyncPolicyTemplate
+        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-get.md
+      - name: Update multiTenantOrganizationIdentitySyncPolicyTemplate
+        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
+      - name: resetToDefaultSettings
+        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
   - name: OAuth 2 permission grant
     items:
     - name: OAuth 2 permission grant
@@ -2017,6 +2715,14 @@ items:
           href: ../../api/appmanagementpolicy-list-appliesto.md
         - name: Assign appliesTo
           href: ../../api/appmanagementpolicy-post-appliesto.md
+    - name: Authentication events policy
+      items:
+      - name: Authentication events policy
+        href: ../../resources/authenticationeventspolicy.md
+      - name: List onSignUpStart listeners
+        href: ../../api/authenticationeventspolicy-list-onsignupstart.md
+      - name: Create authenticationListener
+        href: ../../api/authenticationeventspolicy-post-onsignupstart.md
     - name: Authentication flows policy
       href: ../../resources/authenticationflowspolicy.md
     - name: Authentication methods policy
@@ -2119,6 +2825,14 @@ items:
         href: ../../api/authorizationpolicy-get.md
       - name: Update authorizationPolicy
         href: ../../api/authorizationpolicy-update.md
+    - name: B2C authentication methods policy
+      items:
+      - name: B2C authentication methods policy
+        href: ../../resources/b2cauthenticationmethodspolicy.md
+      - name: Get b2cAuthenticationMethodsPolicy
+        href: ../../api/b2cauthenticationmethodspolicy-get.md
+      - name: Update b2cAuthenticationMethodsPolicy
+        href: ../../api/b2cauthenticationmethodspolicy-update.md
     - name: Claims mapping policy
       items:
       - name: Claims mapping policy
@@ -2143,6 +2857,14 @@ items:
           href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
         - name: Remove claimsMappingPolicy
           href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
+    - name: Continuous access evaluation policy
+      items:
+      - name: Continuous access evaluation policy
+        href: ../../resources/continuousaccessevaluationpolicy.md
+      - name: Get continuousAccessEvaluationPolicy
+        href: ../../api/continuousaccessevaluationpolicy-get.md
+      - name: Update continuousAccessEvaluationPolicy
+        href: ../../api/continuousaccessevaluationpolicy-update.md
     - name: Device registration policy
       items:
       - name: Device registration policy
@@ -2199,6 +2921,8 @@ items:
         href: ../../api/identitysecuritydefaultsenforcementpolicy-get.md
       - name: Update
         href: ../../api/identitysecuritydefaultsenforcementpolicy-update.md
+    - name: Invoke user flow listener
+      href: ../../resources/invokeuserflowlistener.md
     - name: Permission grant policy
       items:
       - name: Permission grant policy
@@ -2227,6 +2951,26 @@ items:
           href: ../../api/permissiongrantpolicy-post-excludes.md
         - name: Remove exclude condition set
           href: ../../api/permissiongrantpolicy-delete-excludes.md
+    - name: Permission grant pre approval policy
+      items:
+      - name: Permission grant pre approval policy
+        href: ../../resources/permissiongrantpreapprovalpolicy.md
+      - name: List permissionGrantPreApprovalPolicies
+        href: ../../api/policyroot-list-permissiongrantpreapprovalpolicies.md
+      - name: Create permissionGrantPreApprovalPolicy
+        href: ../../api/policyroot-post-permissiongrantpreapprovalpolicies.md
+      - name: Get permissionGrantPreApprovalPolicy
+        href: ../../api/permissiongrantpreapprovalpolicy-get.md
+      - name: Update permissionGrantPreApprovalPolicy
+        href: ../../api/permissiongrantpreapprovalpolicy-update.md
+      - name: Delete permissionGrantPreApprovalPolicy
+        href: ../../api/permissiongrantpreapprovalpolicy-delete.md
+      - name: List permissionGrantPreApprovalPolicy assigned to servicePrincipal
+        href: ../../api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
+      - name: Assign permissionGrantPreApprovalPolicy to servicePrincipal
+        href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
+      - name: Remove permissionGrantPreApprovalPolicy from servicePrincipal
+        href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
     - name: Token issuance policy
       items:
       - name: Token issuance policy
@@ -2275,6 +3019,44 @@ items:
         href: ../../resources/azureadregistrationpolicy.md
       - name: No device registration membership
         href: ../../resources/nodeviceregistrationmembership.md
+  - name: Trust framework key set
+    items:
+    - name: Trust framework key set
+      href: ../../resources/trustframeworkkeyset.md
+    - name: List
+      href: ../../api/trustframework-list-keysets.md
+    - name: Create
+      href: ../../api/trustframework-post-keysets.md
+    - name: Get
+      href: ../../api/trustframeworkkeyset-get.md
+    - name: Update
+      href: ../../api/trustframeworkkeyset-update.md
+    - name: Delete
+      href: ../../api/trustframeworkkeyset-delete.md
+    - name: Generate key
+      href: ../../api/trustframeworkkeyset-generatekey.md
+    - name: Get active key
+      href: ../../api/trustframeworkkeyset-getactivekey.md
+    - name: Upload certificate
+      href: ../../api/trustframeworkkeyset-uploadcertificate.md
+    - name: Upload PKCS12
+      href: ../../api/trustframeworkkeyset-uploadpkcs12.md
+    - name: Upload secret
+      href: ../../api/trustframeworkkeyset-uploadsecret.md
+  - name: Trust framework policy
+    items:
+    - name: Trust framework policy
+      href: ../../resources/trustframeworkpolicy.md
+    - name: Create trustFrameworkPolicy
+      href: ../../api/trustframework-post-trustframeworkpolicy.md
+    - name: Get trustFrameworkPolicy
+      href: ../../api/trustframeworkpolicy-get.md
+    - name: List trustFrameworkPolicies
+      href: ../../api/trustframework-list-trustframeworkpolicies.md
+    - name: Update or create trustFrameworkPolicy
+      href: ../../api/trustframework-put-trustframeworkpolicy.md
+    - name: Delete trustFrameworkPolicy
+      href: ../../api/trustframeworkpolicy-delete.md
   - name: User flows for Microsoft Entra ID and Azure AD B2C
     items:
     - name: Identity user flow
@@ -2289,6 +3071,44 @@ items:
         href: ../../api/identityuserflow-get.md
       - name: Delete
         href: ../../api/identityuserflow-delete.md
+    - name: B2C identity user flow
+      items:
+      - name: B2C identity user flow
+        href: ../../resources/b2cidentityuserflow.md
+      - name: List user flows
+        href: ../../api/identitycontainer-list-b2cuserflows.md
+      - name: Get user flow
+        href: ../../api/b2cidentityuserflow-get.md
+      - name: Create user flow
+        href: ../../api/identitycontainer-post-b2cuserflows.md
+      - name: Update user flow
+        href: ../../api/b2cidentityuserflow-update.md
+      - name: Delete user flow
+        href: ../../api/b2cidentityuserflow-delete.md
+      - name: List identity providers
+        href: ../../api/b2cidentityuserflow-list-userflowidentityproviders.md
+      - name: Add identity provider
+        href: ../../api/b2cidentityuserflow-userflowidentityproviders-update.md
+      - name: Delete identity provider
+        href: ../../api/b2cidentityuserflow-delete-userflowidentityproviders.md
+      - name: List user attribute assignments
+        href: ../../api/b2cidentityuserflow-list-userattributeassignments.md
+      - name: Create user attribute assignment
+        href: ../../api/b2cidentityuserflow-post-userattributeassignments.md
+      - name: List languages
+        href: ../../api/b2cidentityuserflow-list-languages.md
+      - name: Create language
+        href: ../../api/b2cidentityuserflow-put-languages.md
+      - name: Get API connectors configuration for user flow
+        href: ../../api/b2cidentityuserflow-get-apiConnectorConfiguration.md
+      - name: Configure an API connector in a user flow
+        href: ../../api/b2cidentityuserflow-put-apiConnectorConfiguration.md
+      - name: List identity providers
+        href: ../../api/b2cidentityuserflow-list-identityproviders.md
+      - name: Add identity provider
+        href: ../../api/b2cidentityuserflow-post-identityproviders.md
+      - name: Delete identity provider
+        href: ../../api/b2cidentityuserflow-delete-identityproviders.md
     - name: B2X identity user flow
       items:
       - name: B2X identity user flow
@@ -2381,6 +3201,58 @@ items:
         href: ../../api/identityapiconnector-delete.md
   - name: User flows for Microsoft Entra ID for customers (preview)
     items:
+    - name: Authentication events flow
+      items:
+      - name: Authentication events flow
+        href: ../../resources/authenticationeventsflow.md
+      - name: List
+        href: ../../api/identitycontainer-list-authenticationeventsflows.md
+      - name: Create
+        href: ../../api/identitycontainer-post-authenticationeventsflows.md
+      - name: Get
+        href: ../../api/authenticationeventsflow-get.md
+      - name: Update
+        href: ../../api/authenticationeventsflow-update.md
+      - name: Delete
+        href: ../../api/authenticationeventsflow-delete.md
+      - name: List linked applications
+        href: ../../api/authenticationconditionsapplications-list-includeapplications.md
+      - name: Add linked application
+        href: ../../api/authenticationconditionsapplications-post-includeapplications.md
+      - name: Remove linked application
+        href: ../../api/authenticationconditionapplication-delete.md
+    - name: External users self service sign up events flow
+      items:
+      - name: External users self service sign up events flow
+        href: ../../resources/externalusersselfservicesignupeventsflow.md
+      - name: List
+        href: ../../api/identitycontainer-list-authenticationeventsflows.md
+      - name: Create
+        href: ../../api/identitycontainer-post-authenticationeventsflows.md
+      - name: Get
+        href: ../../api/authenticationeventsflow-get.md
+      - name: Update
+        href: ../../api/authenticationeventsflow-update.md
+      - name: Delete
+        href: ../../api/authenticationeventsflow-delete.md
+      - name: List linked applications
+        href: ../../api/authenticationconditionsapplications-list-includeapplications.md
+      - name: Add linked application
+        href: ../../api/authenticationconditionsapplications-post-includeapplications.md
+      - name: Remove linked application
+        href: ../../api/authenticationconditionapplication-delete.md
+      - name: List identity providers
+        href: ../../api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
+      - name: Add identity providers
+        href: ../../api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
+      - name: Remove identity providers
+        href: ../../api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
+      - name: List attributes
+        href: ../../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
+      - name: Add an attribute
+        href: ../../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
+      - name: Delete an attribute
+        href: ../../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
     - name: Identity user flow attribute
       items:
       - name: Identity user flow attribute
@@ -2395,54 +3267,870 @@ items:
         href: ../../api/identityuserflowattribute-update.md
       - name: Delete
         href: ../../api/identityuserflowattribute-delete.md
+    - name: Authentication condition application
+      items:
+      - name: Authentication condition application
+        href: ../../resources/authenticationconditionapplication.md
+      - name: List linked applications
+        href: ../../api/authenticationconditionsapplications-list-includeapplications.md
+      - name: Add linked application
+        href: ../../api/authenticationconditionsapplications-post-includeapplications.md
+      - name: Remove linked application
+        href: ../../api/authenticationconditionapplication-delete.md
 - name: Multicloud permissions management (preview)
   items:
   - name: Overview
     href: ../../resources/permissions-management-api-overview.md
   - name: Authorization system
     items:
+    - name: Authorization system
+      href: ../../resources/authorizationsystem.md
+    - name: List authorizationSystems
+      href: ../../api/externalconnectors-external-list-authorizationsystems.md
+    - name: Get authorizationSystem
+      href: ../../api/authorizationsystem-get.md
     - name: AWS authorization system
       items:
+      - name: AWS authorization system
+        href: ../../resources/awsauthorizationsystem.md
+      - name: List awsAuthorizationSystems
+        href: ../../api/awsauthorizationsystem-list.md
       - name: AWS authorization system inventory
         items:
+        - name: AWS authorization system type action
+          items:
+          - name: AWS authorization system type action
+            href: ../../resources/awsauthorizationsystemtypeaction.md
+          - name: List awsAuthorizationSystemTypeActions
+            href: ../../api/awsauthorizationsystem-list-actions.md
+          - name: Get awsAuthorizationSystemTypeAction
+            href: ../../api/awsauthorizationsystemtypeaction-get.md
+        - name: AWS policy
+          items:
+          - name: AWS policy
+            href: ../../resources/awspolicy.md
+          - name: List awsPolicies
+            href: ../../api/awsauthorizationsystem-list-policies.md
+          - name: Get awsPolicy
+            href: ../../api/awspolicy-get.md
+        - name: AWS authorization system resource
+          items:
+          - name: AWS authorization system resource
+            href: ../../resources/awsauthorizationsystemresource.md
+          - name: List awsAuthorizationSystemResources
+            href: ../../api/awsauthorizationsystem-list-resources.md
+          - name: Get awsAuthorizationSystemResource
+            href: ../../api/awsauthorizationsystemresource-get.md
+        - name: Authorization system type service
+          items:
+          - name: Authorization system type service
+            href: ../../resources/authorizationsystemtypeservice.md
+          - name: List AWS authorization system services
+            href: ../../api/awsauthorizationsystem-list-services.md
+          - name: List Azure authorization system type services
+            href: ../../api/azureauthorizationsystem-list-services.md
+          - name: List GCP authorization system type services
+            href: ../../api/gcpauthorizationsystem-list-services.md
+          - name: Get authorization system services
+            href: ../../api/authorizationsystemtypeservice-get.md
         - name: AWS identities
-          items: []
+          items:
+          - name: AWS identity
+            items:
+            - name: AWS identity
+              href: ../../resources/awsidentity.md
+            - name: List all (AWS identities)
+              href: ../../api/awsassociatedidentities-list-all.md
+            - name: Get awsIdentity
+              href: ../../api/awsidentity-get.md
+          - name: AWS role
+            items:
+            - name: AWS role
+              href: ../../resources/awsrole.md
+            - name: List roles
+              href: ../../api/awsassociatedidentities-list-roles.md
+            - name: Get AWS Role
+              href: ../../api/awsrole-get.md
+          - name: AWS user
+            items:
+            - name: AWS user
+              href: ../../resources/awsuser.md
+            - name: List AWS users
+              href: ../../api/awsassociatedidentities-list-users.md
+            - name: Get AWS user
+              href: ../../api/awsuser-get.md
+            - name: List AWS users with assumable roles
+              href: ../../api/awsuser-list-assumableroles.md
     - name: Azure authorization system
       items:
+      - name: Azure authorization system
+        href: ../../resources/azureauthorizationsystem.md
+      - name: List azureAuthorizationSystems
+        href: ../../api/azureauthorizationsystem-list.md
       - name: Azure authorization system inventory
         items:
+        - name: Azure authorization system type action
+          items:
+          - name: Azure authorization system type action
+            href: ../../resources/azureauthorizationsystemtypeaction.md
+          - name: List azureAuthorizationSystemTypeActions
+            href: ../../api/azureauthorizationsystem-list-actions.md
+          - name: Get azureAuthorizationSystemTypeAction
+            href: ../../api/azureauthorizationsystemtypeaction-get.md
+        - name: Azure authorization system resource
+          items:
+          - name: Azure authorization system resource
+            href: ../../resources/azureauthorizationsystemresource.md
+          - name: List azureAuthorizationSystemResources
+            href: ../../api/azureauthorizationsystem-list-resources.md
+          - name: Get azureAuthorizationSystemResource
+            href: ../../api/azureauthorizationsystemresource-get.md
+        - name: Azure role definition
+          items:
+          - name: Azure role definition
+            href: ../../resources/azureroledefinition.md
+          - name: List azureRoleDefinitions
+            href: ../../api/azureauthorizationsystem-list-roledefinitions.md
+          - name: Get azureRoleDefinition
+            href: ../../api/azureroledefinition-get.md
+        - name: Authorization system type service
+          items:
+          - name: Authorization system type service
+            href: ../../resources/authorizationsystemtypeservice.md
+          - name: List AWS authorization system services
+            href: ../../api/awsauthorizationsystem-list-services.md
+          - name: List Azure authorization system type services
+            href: ../../api/azureauthorizationsystem-list-services.md
+          - name: List GCP authorization system type services
+            href: ../../api/gcpauthorizationsystem-list-services.md
+          - name: Get authorization system services
+            href: ../../api/authorizationsystemtypeservice-get.md
         - name: Azure identities
-          items: []
+          items:
+          - name: Azure identity
+            items:
+            - name: Azure identity
+              href: ../../resources/azureidentity.md
+            - name: List all identities
+              href: ../../api/azureassociatedidentities-list-all.md
+            - name: Get azureIdentity
+              href: ../../api/azureidentity-get.md
+          - name: Azure managed identity
+            items:
+            - name: Azure managed identity
+              href: ../../resources/azuremanagedidentity.md
+            - name: List managedIdentities
+              href: ../../api/azureassociatedidentities-list-managedidentities.md
+            - name: Get azureManagedIdentity
+              href: ../../api/azuremanagedidentity-get.md
+          - name: Azure service principal
+            items:
+            - name: Azure service principal
+              href: ../../resources/azureserviceprincipal.md
+            - name: List servicePrincipals
+              href: ../../api/azureassociatedidentities-list-serviceprincipals.md
+            - name: Get azureServicePrincipal
+              href: ../../api/azureserviceprincipal-get.md
+          - name: Azure user
+            items:
+            - name: Azure user
+              href: ../../resources/azureuser.md
+            - name: List users
+              href: ../../api/azureassociatedidentities-list-users.md
+            - name: Get azureUser
+              href: ../../api/azureuser-get.md
     - name: GCP authorization system
       items:
+      - name: GCP authorization system
+        href: ../../resources/gcpauthorizationsystem.md
+      - name: List gcpAuthorizationSystems
+        href: ../../api/gcpauthorizationsystem-list.md
       - name: GCP authorization system inventory
         items:
+        - name: GCP authorization system type action
+          items:
+          - name: GCP authorization system type action
+            href: ../../resources/gcpauthorizationsystemtypeaction.md
+          - name: List gcpAuthorizationSystemTypeActions
+            href: ../../api/gcpauthorizationsystem-list-actions.md
+          - name: Get gcpAuthorizationSystemTypeAction
+            href: ../../api/gcpauthorizationsystemtypeaction-get.md
+        - name: GCP authorization system resource
+          items:
+          - name: GCP authorization system resource
+            href: ../../resources/gcpauthorizationsystemresource.md
+          - name: List gcpAuthorizationSystemResources
+            href: ../../api/gcpauthorizationsystem-list-resources.md
+          - name: Get gcpAuthorizationSystemResource
+            href: ../../api/gcpauthorizationsystemresource-get.md
+        - name: GCP role
+          items:
+          - name: GCP role
+            href: ../../resources/gcprole.md
+          - name: List gcpRoles
+            href: ../../api/gcpauthorizationsystem-list-roles.md
+          - name: Get gcpRole
+            href: ../../api/gcprole-get.md
+        - name: Authorization system type service
+          items:
+          - name: Authorization system type service
+            href: ../../resources/authorizationsystemtypeservice.md
+          - name: List AWS authorization system services
+            href: ../../api/awsauthorizationsystem-list-services.md
+          - name: List Azure authorization system type services
+            href: ../../api/azureauthorizationsystem-list-services.md
+          - name: List GCP authorization system type services
+            href: ../../api/gcpauthorizationsystem-list-services.md
+          - name: Get authorization system services
+            href: ../../api/authorizationsystemtypeservice-get.md
         - name: GCP identities
-          items: []
+          items:
+          - name: GCP identity
+            items:
+            - name: GCP identity
+              href: ../../resources/gcpidentity.md
+            - name: List gcpIdentities
+              href: ../../api/gcpassociatedidentities-list-all.md
+            - name: Get gcpIdentity
+              href: ../../api/gcpidentity-get.md
+          - name: GCP user
+            items:
+            - name: GCP user
+              href: ../../resources/gcpuser.md
+            - name: List gcpUsers
+              href: ../../api/gcpassociatedidentities-list-users.md
+            - name: Get gcpUser
+              href: ../../api/gcpuser-get.md
+          - name: GCP service account
+            items:
+            - name: GCP service account
+              href: ../../resources/gcpserviceaccount.md
+            - name: List gcpServiceAccounts
+              href: ../../api/gcpassociatedidentities-list-serviceaccounts.md
+            - name: Get gcpServiceAccount
+              href: ../../api/gcpserviceaccount-get.md
   - name: Permissions requests
-    items: []
+    items:
+    - name: Scheduled permissions request
+      items:
+      - name: Scheduled permissions request
+        href: ../../resources/scheduledpermissionsrequest.md
+      - name: Create scheduledPermissionsRequest
+        href: ../../api/permissionsmanagement-post-scheduledpermissionsrequests.md
+      - name: Cancel scheduledPermissionsRequest
+        href: ../../api/scheduledpermissionsrequest-cancelall.md
+    - name: Permissions request change
+      items:
+      - name: Permissions request change
+        href: ../../resources/permissionsrequestchange.md
+      - name: List permissionsRequestChanges
+        href: ../../api/permissionsmanagement-list-permissionsrequestchanges.md
+      - name: Get permissionsRequestChange
+        href: ../../api/permissionsrequestchange-get.md
   - name: Permissions analytics
     items:
+    - name: Permissions creep index distribution
+      items:
+      - name: Permissions creep index distribution
+        href: ../../resources/permissionscreepindexdistribution.md
+      - name: List permissionsCreepIndexDistributions
+        href: ../../api/permissionsanalytics-list-permissionscreepindexdistributions.md
+      - name: Get permissionsCreepIndexDistribution
+        href: ../../api/permissionscreepindexdistribution-get.md
+    - name: Encrypted AWS storage bucket finding
+      items:
+      - name: Encrypted AWS storage bucket finding
+        href: ../../resources/encryptedawsstoragebucketfinding.md
+      - name: List encryptedAwsStorageBucketFinding objects
+        href: ../../api/encryptedawsstoragebucketfinding-list.md
+      - name: Get encryptedAwsStorageBucketFinding
+        href: ../../api/encryptedawsstoragebucketfinding-get.md
+    - name: Encrypted Azure storage account finding
+      items:
+      - name: Encrypted Azure storage account finding
+        href: ../../resources/encryptedazurestorageaccountfinding.md
+      - name: List encryptedAzureStorageAccountFinding objects
+        href: ../../api/encryptedazurestorageaccountfinding-list.md
+      - name: Get encryptedAzureStorageAccountFinding
+        href: ../../api/encryptedazurestorageaccountfinding-get.md
+    - name: Encrypted GCP storage bucket finding
+      items:
+      - name: Encrypted GCP storage bucket finding
+        href: ../../resources/encryptedgcpstoragebucketfinding.md
+      - name: List encryptedGcpStorageBucketFinding objects
+        href: ../../api/encryptedgcpstoragebucketfinding-list.md
+      - name: Get encryptedGcpStorageBucketFinding
+        href: ../../api/encryptedgcpstoragebucketfinding-get.md
+    - name: Externally accessible AWS storage bucket finding
+      items:
+      - name: Externally accessible AWS storage bucket finding
+        href: ../../resources/externallyaccessibleawsstoragebucketfinding.md
+      - name: List externallyAccessibleAwsStorageBucketFinding objects
+        href: ../../api/externallyaccessibleawsstoragebucketfinding-list.md
+      - name: Get externallyAccessibleAwsStorageBucketFinding
+        href: ../../api/externallyaccessibleawsstoragebucketfinding-get.md
+    - name: Externally accessible Azure blob container finding
+      items:
+      - name: Externally accessible Azure blob container finding
+        href: ../../resources/externallyaccessibleazureblobcontainerfinding.md
+      - name: List externallyAccessibleAzureBlobContainerFinding objects
+        href: ../../api/externallyaccessibleazureblobcontainerfinding-list.md
+      - name: Get externallyAccessibleAzureBlobContainerFinding
+        href: ../../api/externallyaccessibleazureblobcontainerfinding-get.md
+    - name: Externally accessible GCP storage bucket finding
+      items:
+      - name: Externally accessible GCP storage bucket finding
+        href: ../../resources/externallyaccessiblegcpstoragebucketfinding.md
+      - name: List externallyAccessibleGcpStorageBucketFinding objects
+        href: ../../api/externallyaccessiblegcpstoragebucketfinding-list.md
+      - name: Get externallyAccessibleGcpStorageBucketFinding
+        href: ../../api/externallyaccessiblegcpstoragebucketfinding-get.md
+    - name: Open AWS security group finding
+      items:
+      - name: Open AWS security group finding
+        href: ../../resources/openawssecuritygroupfinding.md
+      - name: List openAwsSecurityGroupFinding objects
+        href: ../../api/openawssecuritygroupfinding-list.md
+      - name: Get openAwsSecurityGroupFinding
+        href: ../../api/openawssecuritygroupfinding-get.md
+    - name: Open network Azure security group finding
+      items:
+      - name: Open network Azure security group finding
+        href: ../../resources/opennetworkazuresecuritygroupfinding.md
+      - name: List openNetworkAzureSecurityGroupFinding objects
+        href: ../../api/opennetworkazuresecuritygroupfinding-list.md
+      - name: Get openNetworkAzureSecurityGroupFinding
+        href: ../../api/opennetworkazuresecuritygroupfinding-get.md
+    - name: AWS external system access finding
+      items:
+      - name: AWS external system access finding
+        href: ../../resources/awsexternalsystemaccessfinding.md
+      - name: List awsExternalSystemAccessFinding objects
+        href: ../../api/awsexternalsystemaccessfinding-list.md
+      - name: Get awsExternalSystemAccessFinding
+        href: ../../api/awsexternalsystemaccessfinding-get.md
+    - name: AWS external system access role finding
+      items:
+      - name: AWS external system access role finding
+        href: ../../resources/awsexternalsystemaccessrolefinding.md
+      - name: List awsExternalSystemAccessRoleFinding objects
+        href: ../../api/awsexternalsystemaccessrolefinding-list.md
+      - name: Get awsExternalSystemAccessRoleFinding
+        href: ../../api/awsexternalsystemaccessrolefinding-get.md
+    - name: AWS identity access management key age finding
+      items:
+      - name: AWS identity access management key age finding
+        href: ../../resources/awsidentityaccessmanagementkeyagefinding.md
+      - name: List awsIdentityAccessManagementKeyAgeFinding objects
+        href: ../../api/awsidentityaccessmanagementkeyagefinding-list.md
+      - name: Get awsIdentityAccessManagementKeyAgeFinding
+        href: ../../api/awsidentityaccessmanagementkeyagefinding-get.md
+      - name: Get aggregatedSummary
+        href: ../../api/awsidentityaccessmanagementkeyagefinding-aggregatedSummary.md
+    - name: AWS identity access management key usage finding
+      items:
+      - name: AWS identity access management key usage finding
+        href: ../../resources/awsidentityaccessmanagementkeyusagefinding.md
+      - name: List awsIdentityAccessManagementKeyUsageFinding objects
+        href: ../../api/awsidentityaccessmanagementkeyusagefinding-list.md
+      - name: Get awsIdentityAccessManagementKeyUsageFinding
+        href: ../../api/awsidentityaccessmanagementkeyusagefinding-get.md
+      - name: Get awsIdentityAccessManagementKeyUsageFinding-aggregatedSummary
+        href: ../../api/awsidentityaccessmanagementkeyusagefinding-aggregatedSummary.md
     - name: Identity findings
-      items: []
+      items:
+      - name: Inactive user finding
+        items:
+        - name: Inactive user finding
+          href: ../../resources/inactiveuserfinding.md
+        - name: List inactiveUserFinding objects
+          href: ../../api/inactiveuserfinding-list.md
+        - name: Get inactiveUserFinding
+          href: ../../api/inactiveuserfinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/inactiveuserfinding-aggregatedsummary.md
+      - name: Inactive group finding
+        items:
+        - name: Inactive group finding
+          href: ../../resources/inactivegroupfinding.md
+        - name: List inactiveGroupFinding objects
+          href: ../../api/inactivegroupfinding-list.md
+        - name: Get inactiveGroupFinding
+          href: ../../api/inactivegroupfinding-get.md
+      - name: Inactive serverless function finding
+        items:
+        - name: Inactive serverless function finding
+          href: ../../resources/inactiveserverlessfunctionfinding.md
+        - name: List inactiveServerlessFunctionFinding objects
+          href: ../../api/inactiveserverlessfunctionfinding-list.md
+        - name: Get inactiveServerlessFunctionFinding
+          href: ../../api/inactiveserverlessfunctionfinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/inactiveserverlessfunctionfinding-aggregatedsummary.md
+      - name: Inactive AWS role finding
+        items:
+        - name: Inactive AWS role finding
+          href: ../../resources/inactiveawsrolefinding.md
+        - name: List inactiveAwsRoleFinding objects
+          href: ../../api/inactiveawsrolefinding-list.md
+        - name: Get inactiveAwsRoleFinding
+          href: ../../api/inactiveawsrolefinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/inactiveawsrolefinding-aggregatedsummary.md
+      - name: Inactive AWS resource finding
+        items:
+        - name: Inactive AWS resource finding
+          href: ../../resources/inactiveawsresourcefinding.md
+        - name: List inactiveAwsResourceFinding objects
+          href: ../../api/inactiveawsresourcefinding-list.md
+        - name: Get inactiveAwsResourceFinding
+          href: ../../api/inactiveawsresourcefinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/inactiveawsresourcefinding-aggregatedsummary.md
+      - name: Inactive Azure service principal finding
+        items:
+        - name: Inactive Azure service principal finding
+          href: ../../resources/inactiveazureserviceprincipalfinding.md
+        - name: List inactiveAzureServicePrincipalFinding objects
+          href: ../../api/inactiveazureserviceprincipalfinding-list.md
+        - name: Get inactiveAzureServicePrincipalFinding
+          href: ../../api/inactiveazureserviceprincipalfinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/inactiveazureserviceprincipalfinding-aggregatedsummary.md
+      - name: Inactive GCP service account finding
+        items:
+        - name: Inactive GCP service account finding
+          href: ../../resources/inactivegcpserviceaccountfinding.md
+        - name: List inactiveGcpServiceAccountFinding objects
+          href: ../../api/inactivegcpserviceaccountfinding-list.md
+        - name: Get inactiveGcpServiceAccountFinding
+          href: ../../api/inactivegcpserviceaccountfinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/inactivegcpserviceaccountfinding-aggregatedsummary.md
+      - name: Super user finding
+        items:
+        - name: Super user finding
+          href: ../../resources/superuserfinding.md
+        - name: List superUserFinding objects
+          href: ../../api/superuserfinding-list.md
+        - name: Get superUserFinding
+          href: ../../api/superuserfinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/superuserfinding-aggregatedsummary.md
+      - name: Super serverless function finding
+        items:
+        - name: Super serverless function finding
+          href: ../../resources/superserverlessfunctionfinding.md
+        - name: List superServerlessFunctionFinding objects
+          href: ../../api/superserverlessfunctionfinding-list.md
+        - name: Get superServerlessFunctionFinding
+          href: ../../api/superserverlessfunctionfinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/superserverlessfunctionfinding-aggregatedsummary.md
+      - name: Super AWS role finding
+        items:
+        - name: Super AWS role finding
+          href: ../../resources/superawsrolefinding.md
+        - name: List superAwsRoleFinding objects
+          href: ../../api/superawsrolefinding-list.md
+        - name: Get superAwsRoleFinding
+          href: ../../api/superawsrolefinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/superawsrolefinding-aggregatedsummary.md
+      - name: Super AWS resource finding
+        items:
+        - name: Super AWS resource finding
+          href: ../../resources/superawsresourcefinding.md
+        - name: List superAwsResourceFinding objects
+          href: ../../api/superawsresourcefinding-list.md
+        - name: Get superAwsResourceFinding
+          href: ../../api/superawsresourcefinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/superawsresourcefinding-aggregatedsummary.md
+      - name: Super Azure service principal finding
+        items:
+        - name: Super Azure service principal finding
+          href: ../../resources/superazureserviceprincipalfinding.md
+        - name: List superAzureServicePrincipalFinding objects
+          href: ../../api/superazureserviceprincipalfinding-list.md
+        - name: Get superAzureServicePrincipalFinding
+          href: ../../api/superazureserviceprincipalfinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/superazureserviceprincipalfinding-aggregatedsummary.md
+      - name: Super GCP service account finding
+        items:
+        - name: Super GCP service account finding
+          href: ../../resources/supergcpserviceaccountfinding.md
+        - name: List superGcpServiceAccountFinding objects
+          href: ../../api/supergcpserviceaccountfinding-list.md
+        - name: Get superGcpServiceAccountFinding
+          href: ../../api/supergcpserviceaccountfinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/supergcpserviceaccountfinding-aggregatedsummary.md
+      - name: Overprovisioned user finding
+        items:
+        - name: Overprovisioned user finding
+          href: ../../resources/overprovisioneduserfinding.md
+        - name: List overprovisionedUserFinding objects
+          href: ../../api/overprovisioneduserfinding-list.md
+        - name: Get overprovisionedUserFinding
+          href: ../../api/overprovisioneduserfinding-get.md
+      - name: Overprovisioned serverless function finding
+        items:
+        - name: Overprovisioned serverless function finding
+          href: ../../resources/overprovisionedserverlessfunctionfinding.md
+        - name: List overprovisionedServerlessFunctionFinding objects
+          href: ../../api/overprovisionedserverlessfunctionfinding-list.md
+        - name: Get overprovisionedServerlessFunctionFinding
+          href: ../../api/overprovisionedserverlessfunctionfinding-get.md
+      - name: Overprovisioned AWS role finding
+        items:
+        - name: Overprovisioned AWS role finding
+          href: ../../resources/overprovisionedawsrolefinding.md
+        - name: List overprovisionedAwsRoleFinding objects
+          href: ../../api/overprovisionedawsrolefinding-list.md
+        - name: Get overprovisionedAwsRoleFinding
+          href: ../../api/overprovisionedawsrolefinding-get.md
+      - name: Overprovisioned AWS resource finding
+        items:
+        - name: Overprovisioned AWS resource finding
+          href: ../../resources/overprovisionedawsresourcefinding.md
+        - name: List overprovisionedAwsResourceFinding objects
+          href: ../../api/overprovisionedawsresourcefinding-list.md
+        - name: Get overprovisionedAwsResourceFinding
+          href: ../../api/overprovisionedawsresourcefinding-get.md
+      - name: Overprovisioned Azure service principal finding
+        items:
+        - name: Overprovisioned Azure service principal finding
+          href: ../../resources/overprovisionedazureserviceprincipalfinding.md
+        - name: List overprovisionedAzureServicePrincipalFinding objects
+          href: ../../api/overprovisionedazureserviceprincipalfinding-list.md
+        - name: Get overprovisionedAzureServicePrincipalFinding
+          href: ../../api/overprovisionedazureserviceprincipalfinding-get.md
+      - name: Overprovisioned GCP service account finding
+        items:
+        - name: Overprovisioned GCP service account finding
+          href: ../../resources/overprovisionedgcpserviceaccountfinding.md
+        - name: List overprovisionedGcpServiceAccountFinding objects
+          href: ../../api/overprovisionedgcpserviceaccountfinding-list.md
+        - name: Get overprovisionedGcpServiceAccountFinding
+          href: ../../api/overprovisionedgcpserviceaccountfinding-get.md
+      - name: Unenforced MFA AWS user finding
+        items:
+        - name: Unenforced MFA AWS user finding
+          href: ../../resources/unenforcedmfaawsuserfinding.md
+        - name: List unenforcedMfaAwsUserFinding objects
+          href: ../../api/unenforcedmfaawsuserfinding-list.md
+        - name: Get unenforcedMfaAwsUserFinding
+          href: ../../api/unenforcedmfaawsuserfinding-get.md
+        - name: aggregatedSummary
+          href: ../../api/unenforcedMfaAwsUserFinding-aggregatedsummary.md
     - name: Privilege escalation findings
-      items: []
+      items:
+      - name: Privilege escalation user finding
+        items:
+        - name: Privilege escalation user finding
+          href: ../../resources/privilegeescalationuserfinding.md
+        - name: List privilegeEscalationUserFinding objects
+          href: ../../api/privilegeescalationuserfinding-list.md
+        - name: Get privilegeEscalationUserFinding
+          href: ../../api/privilegeescalationuserfinding-get.md
+      - name: Privilege escalation AWS role finding
+        items:
+        - name: Privilege escalation AWS role finding
+          href: ../../resources/privilegeescalationawsrolefinding.md
+        - name: List privilegeEscalationAwsRoleFinding objects
+          href: ../../api/privilegeescalationawsrolefinding-list.md
+        - name: Get privilegeEscalationAwsRoleFinding
+          href: ../../api/privilegeescalationawsrolefinding-get.md
+      - name: Privilege escalation AWS resource finding
+        items:
+        - name: Privilege escalation AWS resource finding
+          href: ../../resources/privilegeescalationawsresourcefinding.md
+        - name: List privilegeEscalationAwsResourceFinding objects
+          href: ../../api/privilegeescalationawsresourcefinding-list.md
+        - name: Get privilegeEscalationAwsResourceFinding
+          href: ../../api/privilegeescalationawsresourcefinding-get.md
+      - name: Privilege escalation GCP service account finding
+        items:
+        - name: Privilege escalation GCP service account finding
+          href: ../../resources/privilegeescalationgcpserviceaccountfinding.md
+        - name: List privilegeEscalationGcpServiceAccountFinding objects
+          href: ../../api/privilegeescalationgcpserviceaccountfinding-list.md
+        - name: Get privilegeEscalationGcpServiceAccountFinding
+          href: ../../api/privilegeescalationgcpserviceaccountfinding-get.md
     - name: AWS identities that can access secret information
-      items: []
+      items:
+      - name: Secret information access AWS user finding
+        items:
+        - name: Secret information access AWS user finding
+          href: ../../resources/secretinformationaccessawsuserfinding.md
+        - name: List secretInformationAccessAwsUserFinding objects
+          href: ../../api/secretinformationaccessawsuserfinding-list.md
+        - name: Get secretInformationAccessAwsUserFinding
+          href: ../../api/secretinformationaccessawsuserfinding-get.md
+      - name: Secret information access AWS role finding
+        items:
+        - name: Secret information access AWS role finding
+          href: ../../resources/secretinformationaccessawsrolefinding.md
+        - name: List secretInformationAccessAwsRoleFinding objects
+          href: ../../api/secretinformationaccessawsrolefinding-list.md
+        - name: Get secretInformationAccessAwsRoleFinding
+          href: ../../api/secretinformationaccessawsrolefinding-get.md
+      - name: Secret information access AWS resource finding
+        items:
+        - name: Secret information access AWS resource finding
+          href: ../../resources/secretinformationaccessawsresourcefinding.md
+        - name: List secretInformationAccessAwsResourceFinding objects
+          href: ../../api/secretinformationaccessawsresourcefinding-list.md
+        - name: Get secretInformationAccessAwsResourceFinding
+          href: ../../api/secretinformationaccessawsresourcefinding-get.md
+      - name: Secret information access AWS serverless function finding
+        items:
+        - name: Secret information access AWS serverless function finding
+          href: ../../resources/secretinformationaccessawsserverlessfunctionfinding.md
+        - name: List secretInformationAccessAwsServerlessFunctionFinding objects
+          href: ../../api/secretinformationaccessawsserverlessfunctionfinding-list.md
+        - name: Get secretInformationAccessAwsServerlessFunctionFinding
+          href: ../../api/secretinformationaccessawsserverlessfunctionfinding-get.md
     - name: AWS administrators that can use security tools
-      items: []
+      items:
+      - name: Security tool AWS user administrator finding
+        items:
+        - name: Security tool AWS user administrator finding
+          href: ../../resources/securitytoolawsuseradministratorfinding.md
+        - name: List securityToolAwsUserAdministratorFinding objects
+          href: ../../api/securitytoolawsuseradministratorfinding-list.md
+        - name: Get securityToolAwsUserAdministratorFinding
+          href: ../../api/securitytoolawsuseradministratorfinding-get.md
+      - name: Security tool AWS role administrator finding
+        items:
+        - name: Security tool AWS role administrator finding
+          href: ../../resources/securitytoolawsroleadministratorfinding.md
+        - name: List securityToolAwsRoleAdministratorFinding objects
+          href: ../../api/securitytoolawsroleadministratorfinding-list.md
+        - name: Get securityToolAwsRoleAdministratorFinding
+          href: ../../api/securitytoolawsroleadministratorfinding-get.md
+      - name: Security tool AWS resource administrator finding
+        items:
+        - name: Security tool AWS resource administrator finding
+          href: ../../resources/securitytoolawsresourceadministratorfinding.md
+        - name: List securityToolAwsResourceAdministratorFinding objects
+          href: ../../api/securitytoolawsresourceadministratorfinding-list.md
+        - name: Get securityToolAwsResourceAdministratorFinding
+          href: ../../api/securitytoolawsresourceadministratorfinding-get.md
+      - name: Security tool AWS serverless function administrator finding
+        items:
+        - name: Security tool AWS serverless function administrator finding
+          href: ../../resources/securitytoolawsserverlessfunctionadministratorfinding.md
+        - name: List securityToolAwsServerlessFunctionAdministratorFinding objects
+          href: ../../api/securitytoolawsserverlessfunctionadministratorfinding-list.md
+        - name: Get securityToolAwsServerlessFunctionAdministratorFinding
+          href: ../../api/securitytoolawsserverlessfunctionadministratorfinding-get.md
 - name: Network access (preview)
   items:
   - name: Overview
     href: ../../resources/networkaccess-global-secure-access-api-overview.md
+  - name: Tenant status
+    items:
+    - name: Tenant status
+      href: ../../resources/networkaccess-tenantstatus.md
+    - name: Get tenantStatus
+      href: ../../api/networkaccess-tenantstatus-get.md
+    - name: Onboard
+      href: ../../api/networkaccess-networkaccessroot-onboard.md
   - name: Branch site
-    items: []
+    items:
+    - name: Branch site
+      href: ../../resources/networkaccess-branchsite.md
+    - name: List branchSites
+      href: ../../api/networkaccess-connectivity-list-branches.md
+    - name: Create branchSite
+      href: ../../api/networkaccess-connectivity-post-branches.md
+    - name: Get branchSite
+      href: ../../api/networkaccess-branchsite-get.md
+    - name: Update branchSite
+      href: ../../api/networkaccess-branchsite-update.md
+    - name: Delete branchSite
+      href: ../../api/networkaccess-branchsite-delete.md
+    - name: List deviceLinks
+      href: ../../api/networkaccess-branchsite-list-devicelinks.md
+    - name: Create deviceLink
+      href: ../../api/networkaccess-branchsite-post-devicelinks.md
+    - name: List forwardingProfiles
+      href: ../../api/networkaccess-branchsite-list-forwardingprofiles.md
+    - name: Create forwardingProfile
+      href: ../../api/networkaccess-branchsite-post-forwardingprofiles.md
+    - name: Device link
+      items:
+      - name: Device link
+        href: ../../resources/networkaccess-devicelink.md
+      - name: List deviceLinks
+        href: ../../api/networkaccess-branchsite-list-devicelinks.md
+      - name: Create deviceLink
+        href: ../../api/networkaccess-branchsite-post-devicelinks.md
+      - name: Get deviceLink
+        href: ../../api/networkaccess-devicelink-get.md
+      - name: Update deviceLink
+        href: ../../api/networkaccess-devicelink-update.md
+      - name: Delete deviceLink
+        href: ../../api/networkaccess-branchsite-delete-devicelinks.md
+    - name: Connectivity configuration link
+      href: ../../resources/networkaccess-connectivityconfigurationlink.md
+  - name: Enriched audit logs
+    items:
+    - name: Enriched audit logs
+      href: ../../resources/networkaccess-enrichedauditlogs.md
+    - name: Get enrichedAuditLogs
+      href: ../../api/networkaccess-settings-list-enrichedauditlogs.md
+    - name: Update enrichedAuditLogs
+      href: ../../api/networkaccess-enrichedauditlogs-update.md
+  - name: Logs
+    items:
+    - name: Logs
+      href: ../../resources/networkaccess-logs.md
+    - name: List remoteNetworks
+      href: ../../api/networkaccess-remotenetworkhealthstatusevent-list.md
+    - name: List traffic
+      href: ../../api/networkaccess-logs-list-traffic.md
+  - name: Reports
+    items:
+    - name: Reports
+      href: ../../resources/networkaccess-reports.md
+    - name: transactionSummaries
+      href: ../../api/networkaccess-reports-transactionsummaries.md
+    - name: entitiesSummaries
+      href: ../../api/networkaccess-reports-entitiessummaries.md
+    - name: getCrossTenantSummary
+      href: ../../api/networkaccess-reports-getcrosstenantsummary.md
+    - name: getDeviceUsageSummary
+      href: ../../api/networkaccess-reports-getdeviceusagesummary.md
+    - name: getDestinationSummaries
+      href: ../../api/networkaccess-reports-getdestinationsummaries.md
+  - name: Remote network health event
+    href: ../../resources/networkaccess-remotenetworkhealthevent.md
   - name: Settings
-    items: []
+    items:
+    - name: Cross tenant access settings
+      items:
+      - name: Cross tenant access settings
+        href: ../../resources/networkaccess-crosstenantaccesssettings.md
+      - name: Get crossTenantAccessSettings
+        href: ../../api/networkaccess-crosstenantaccesssettings-get.md
+      - name: Update crossTenantAccessSettings
+        href: ../../api/networkaccess-crosstenantaccesssettings-update.md
+    - name: Conditional access settings
+      items:
+      - name: Conditional access settings
+        href: ../../resources/networkaccess-conditionalaccesssettings.md
+      - name: Get conditionalAccessSettings
+        href: ../../api/networkaccess-conditionalaccesssettings-get.md
+      - name: Update conditionalAccessSettings
+        href: ../../api/networkaccess-conditionalaccesssettings-update.md
+    - name: Forwarding options
+      items:
+      - name: Forwarding options
+        href: ../../resources/networkaccess-forwardingoptions.md
+      - name: Get forwardingOptions
+        href: ../../api/networkaccess-forwardingoptions-get.md
+      - name: Update forwardingOptions
+        href: ../../api/networkaccess-forwardingoptions-update.md
   - name: Forwarding traffic
-    items: []
+    items:
+    - name: Forwarding profile
+      items:
+      - name: Forwarding profile
+        href: ../../resources/networkaccess-forwardingprofile.md
+      - name: List forwardingProfiles
+        href: ../../api/networkaccess-networkaccessroot-list-forwardingprofiles.md
+      - name: Get forwardingProfile
+        href: ../../api/networkaccess-forwardingprofile-get.md
+      - name: Update forwardingProfile
+        href: ../../api/networkaccess-forwardingprofile-update.md
+    - name: Forwarding policy
+      items:
+      - name: Forwarding policy
+        href: ../../resources/networkaccess-forwardingpolicy.md
+      - name: List forwardingPolicies
+        href: ../../api/networkaccess-networkaccessroot-list-forwardingpolicies.md
+      - name: Get forwardingPolicy
+        href: ../../api/networkaccess-forwardingpolicy-get.md
+      - name: Update policy rule
+        href: ../../api/networkaccess-forwardingpolicy-updatepolicyrules.md
+    - name: Forwarding policy link
+      items:
+      - name: Forwarding policy link
+        href: ../../resources/networkaccess-forwardingpolicylink.md
+      - name: List forwardingPolicyLinks
+        href: ../../api/networkaccess-forwardingprofile-list-policies.md
+      - name: Get forwardingPolicyLink
+        href: ../../api/networkaccess-forwardingpolicylink-get.md
+      - name: Update forwardingPolicyLink
+        href: ../../api/networkaccess-forwardingpolicylink-update.md
+      - name: Delete forwardingPolicyLink
+        href: ../../api/networkaccess-forwardingpolicylink-delete.md
+    - name: Policy rule
+      items:
+      - name: Policy rule
+        href: ../../resources/networkaccess-policyrule.md
+      - name: List policyRules
+        href: ../../api/networkaccess-policy-list-policyrules.md
+      - name: Get policyRule
+        href: ../../api/networkaccess-policyrule-get.md
+      - name: Update policyRule
+        href: ../../api/networkaccess-policyrule-update.md
+    - name: Forwarding rule
+      href: ../../resources/networkaccess-forwardingrule.md
   - name: Filtering traffic
-    items: []
+    items:
+    - name: Filtering profile
+      items:
+      - name: Filtering profile
+        href: ../../resources/networkaccess-filteringprofile.md
+      - name: List filteringProfiles
+        href: ../../api/networkaccess-filteringprofile-list.md
+      - name: Get filteringProfile
+        href: ../../api/networkaccess-filteringprofile-get.md
+      - name: Update filteringProfile
+        href: ../../api/networkaccess-filteringprofile-update.md
+    - name: Filtering policy
+      items:
+      - name: Filtering policy
+        href: ../../resources/networkaccess-filteringpolicy.md
+      - name: List filteringPolicies
+        href: ../../api/networkaccess-networkaccessroot-list-filteringpolicies.md
+      - name: Create filteringPolicy
+        href: ../../api/networkaccess-filteringpolicy-post-policyrules.md
+      - name: Get filteringPolicy
+        href: ../../api/networkaccess-filteringpolicy-get.md
+      - name: Update filteringPolicy
+        href: ../../api/networkaccess-filteringprofile-update.md
+      - name: Delete filteringPolicy
+        href: ../../api/networkaccess-filteringprofile-delete-policies.md
+    - name: Filtering policy link
+      items:
+      - name: Filtering policy link
+        href: ../../resources/networkaccess-filteringpolicylink.md
+      - name: List filteringPolicyLink objects
+        href: ../../api/networkaccess-filteringpolicylink-list.md
+      - name: Get filteringPolicyLink
+        href: ../../api/networkaccess-filteringpolicylink-get.md
+      - name: Update filteringPolicyLink
+        href: ../../api/networkaccess-filteringpolicylink-update.md
+      - name: Delete filteringPolicyLink
+        href: ../../api/networkaccess-filteringpolicylink-delete.md
+    - name: Filtering rule
+      items:
+      - name: Filtering rule
+        href: ../../resources/networkaccess-filteringrule.md
+      - name: List filteringRules
+        href: ../../api/networkaccess-filteringrule-list.md
+      - name: Get filteringRule
+        href: ../../api/networkaccess-filteringrule-get.md
+      - name: Update filteringRule
+        href: ../../api/networkaccess-filteringrule-update.md
+      - name: Delete filteringRule
+        href: ../../api/networkaccess-filteringrule-delete.md
 - name: Partner customer administration
   items:
   - name: Granular delegated admin privileges

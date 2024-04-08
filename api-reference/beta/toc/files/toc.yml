@@ -137,3 +137,37 @@ items:
     href: ../../api/permission-grant.md
   - name: Revoke grants
     href: ../../api/permission-revokegrants.md
+- name: File storage container
+  items:
+  - name: File storage container
+    href: ../../resources/filestoragecontainer.md
+  - name: List fileStorageContainers
+    href: ../../api/filestorage-list-containers.md
+  - name: Create fileStorageContainer
+    href: ../../api/filestoragecontainer-post.md
+  - name: Get fileStorageContainer
+    href: ../../api/filestoragecontainer-get.md
+  - name: Update fileStorageContainer
+    href: ../../api/filestoragecontainer-update.md
+  - name: Delete fileStorageContainer
+    href: ../../api/filestorage-delete-containers.md
+  - name: Activate fileStorageContainer
+    href: ../../api/filestoragecontainer-activate.md
+  - name: Get drive
+    href: ../../api/filestoragecontainer-get-drive.md
+  - name: List permissions
+    href: ../../api/filestoragecontainer-list-permissions.md
+  - name: Create permissions
+    href: ../../api/filestoragecontainer-post-permissions.md
+  - name: Update permissions
+    href: ../../api/filestoragecontainer-update-permissions.md
+  - name: Delete permissions
+    href: ../../api/filestoragecontainer-delete-permissions.md
+  - name: List fileStorageContainer custom property
+    href: ../../api/filestoragecontainer-list-customproperty.md
+  - name: Create fileStorageContainer custom property
+    href: ../../api/filestoragecontainer-post-customproperty.md
+  - name: Update fileStorageContainer custom property
+    href: ../../api/filestoragecontainer-update-customproperty.md
+  - name: Delete fileStorageContainer custom property
+    href: ../../api/filestoragecontainer-delete-customproperty.md
