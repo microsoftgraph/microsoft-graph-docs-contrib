@@ -24,7 +24,7 @@ Provides the city, state and country/region from where the sign-in happened.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

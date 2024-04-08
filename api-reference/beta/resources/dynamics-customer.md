@@ -64,7 +64,7 @@ A Tax Area(taxArea) must exist in the Tax Area table.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json

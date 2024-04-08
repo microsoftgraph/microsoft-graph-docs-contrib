@@ -22,7 +22,7 @@ Identity the resource object that initiates the activity. The initiator can be a
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

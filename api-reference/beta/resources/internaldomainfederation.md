@@ -3,7 +3,7 @@ title: "internalDomainFederation resource type"
 description: "Represents configurations of the domains in a tenant that are federated with Azure AD."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.custom: has-azure-ad-ps-ref
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
@@ -46,6 +46,8 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate.|
 |signOutUri|String|URI that clients are redirected to when they sign out of Microsoft Entra services. Corresponds to the **LogOffUri** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings).|
 
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../api-reference/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+
 ### federatedIdpMfaBehavior values
 
 | Member | Description |
@@ -65,7 +67,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -97,3 +99,18 @@ Here's a JSON representation of the resource.
   "federatedIdpMfaBehavior": "String"
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /resources/internaldomainfederation.md:
+      Exception processing links.
+      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
+  ]
+}
+-->
