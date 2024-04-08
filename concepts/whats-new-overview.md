@@ -23,6 +23,9 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - [Track changes for SharePoint site](/graph/api/site-delta) resources.
 - [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
 
+### Identity and access | Identity and sign-in
+
+Configure the [default identity provider](/graph/api/resources/defaultInvitationRedemptionIdentityProviderConfiguration) to use in redemption flow settings for Microsoft Entra ID B2B collaboration.
 
 ## April 2024: New in preview only
 
