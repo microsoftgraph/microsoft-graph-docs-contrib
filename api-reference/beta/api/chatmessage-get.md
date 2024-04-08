@@ -394,22 +394,26 @@ Content-type: application/json
     "messageHistory": []
 }
 ```
-### Example 4: Get chat message that has custom emoji in the message body and has custom reaction
+### Example 4: Get a chat message with custom emojis and reactions
+
+The following example shows a request to get a chat message that contains custom emojis in the message body and includes custom reactions.
+
 #### Request
+
 The following example shows a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chatmessage_4"
+  "name": "get_chatmessage_4",
+  "sampleKeys": ["19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2", "1706763669648"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648
 ```
 
 #### Response
-The following example shows the response. Message body contains a `<customemoji></customemoji>` and the message has a custom reaction. Custom emojis and reactions can be accessed as chat message hosted content.
+
+The following example shows the response. The message body contains a `<customemoji></customemoji>` tag, and the message includes a custom reaction indicated by `"reactionType": "custom"`. You can access both custom emojis and reactions as content hosted within a chat message.
 
 <!-- {
   "blockType": "response",
