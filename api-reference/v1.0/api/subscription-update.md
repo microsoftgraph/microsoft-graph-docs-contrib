@@ -107,7 +107,7 @@ PATCH /subscriptions/{id}
 ## Request body
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-Must include at least one of the following:
+Body must include at least one of the following:
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | expirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription length of time varies depending on the resource. |
