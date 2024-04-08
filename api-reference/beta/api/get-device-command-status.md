@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ailae"
 ms.subservice: sharepoint
-ms.topic: reference
 ---
 
 # Get device command status (deprecated)

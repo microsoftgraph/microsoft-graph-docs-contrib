@@ -5,7 +5,6 @@ author: "swapnil1993"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List operations

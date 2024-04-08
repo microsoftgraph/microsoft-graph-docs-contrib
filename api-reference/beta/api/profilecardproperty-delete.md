@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Delete profileCardProperty

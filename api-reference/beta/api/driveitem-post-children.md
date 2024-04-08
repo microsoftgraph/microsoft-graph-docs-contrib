@@ -6,7 +6,6 @@ title: Create a new folder
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Create a new folder in a drive
 

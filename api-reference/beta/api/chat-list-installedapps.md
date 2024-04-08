@@ -5,7 +5,6 @@ author: "subray"
 ms.localizationpriority: high
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List apps in chat

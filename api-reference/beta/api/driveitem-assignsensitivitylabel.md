@@ -5,7 +5,6 @@ author: "jaLuthra"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # driveItem: assignSensitivityLabel
