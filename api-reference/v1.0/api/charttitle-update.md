@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookChartTitle](../resources/workbookcharttitle.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookChartTitle](../resources/workbookcharttitle.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.

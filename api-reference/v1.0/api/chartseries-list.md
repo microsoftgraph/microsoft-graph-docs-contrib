@@ -41,7 +41,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [WorkbookChartSeries](../resources/workbookchartseries.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [workbookChartSeries](../resources/workbookchartseries.md) objects in the response body.
 ## Example
 ##### Request
 The following example shows a request.

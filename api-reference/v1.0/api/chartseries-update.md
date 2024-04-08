@@ -46,7 +46,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/s
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [WorkbookChartSeries](../resources/workbookchartseries.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookChartSeries](../resources/workbookchartseries.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.

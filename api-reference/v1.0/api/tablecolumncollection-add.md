@@ -46,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 |name|string|name
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
 
 ## Example
 Here's an example of how to call this API.

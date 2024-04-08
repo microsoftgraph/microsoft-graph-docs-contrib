@@ -36,11 +36,11 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply a JSON representation of [WorkbookRangeBorder](../resources/workbookrangeborder.md) object.
+In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookRangeBorder](../resources/workbookrangeborder.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookRangeBorder](../resources/workbookrangeborder.md) object in the response body.
 
 ## Example
 ##### Request
@@ -63,7 +63,7 @@ Content-type: application/json
 }
 ```
 
-In the request body, supply a JSON representation of [WorkbookRangeBorder](../resources/workbookrangeborder.md) object.
+In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.
 ##### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
