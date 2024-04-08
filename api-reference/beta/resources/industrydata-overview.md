@@ -17,7 +17,7 @@ The industry data API is defined in the OData subnamespace `microsoft.graph.indu
 
 ## Industry data API and education
 
-The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups <!-- with Azure Active Directory (Azure AD) and Office 365 --> from student information systems (SIS) and student management systems (SMS) into an organization's Azure Data Lake. After normalizing the data in Azure Data Lake <!-- the API utilizes the data in multiple outbound flows, --> SDS can synchronize the data with [Insights for Education Leaders](/schooldatasync/enable-sync-with-insights), for use with the Insights app in Teams for Education, and [Education Data Lake Export](/schooldatasync/enable-education-data-lake-export), for custom analytics scenarios.
+The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups with Microsoft Entra ID and Microsoft 365 from student information systems (SIS) and student management systems (SMS). After normalizing the data the API utilizes the data through multiple outbound provisioning flows to manage users, class groups, administrative units and security groups.
 
 ![Illustration of the industry data ETL process](/graph/images/industrydata-overview.png)
 
@@ -44,11 +44,9 @@ At the end of each run, [industryDataRunStatistics](industrydata-industrydatarun
 
 Errors and warnings related to **industryDataRunStatistics** are produced to help provide an initial understanding of data health. When you investigate data health, industry data provides the ability to download a log file that contains information based on the errors and warnings found to begin the data investigation process to correct the data in the source system.
 
-After investigating and addressing any data errors or warnings, when you're comfortable with the current state of the data health, you can enable the scenarios with the data that is now in the education data lake. When you enable a scenario to use this data, the scenario creates an outbound flow. <!-- Outbound flows are defined by Microsoft 365 provisioning, Insights & Analytics. -->
+After investigating and addressing any data errors or warnings, when you're comfortable with the current state of the data health, you can enable the scenarios with the data. When you enable a scenario to use this data, the scenario creates an outbound provisioning flow. 
 
-<!-- Microsoft 365 Provisioning outbound flows help with simplifying management of users and classes. Only active and matched users are included in the data that will be used to write the link to the AAD user object between the SIS/ SMS and their sections for groups and Teams classrooms. -->
-
-Insights and analytics help provide analysis for student progress and activity within their classes. Guided by this data, educators have the information they need to ensure that their students' emotional, social, and academic needs are met.
+Managing data with outbound provisioning flows help with simplifying management of users and classes. Only active and matched users are included in the data that will be used to write the link to the AAD user object between the SIS/ SMS and their sections for groups and Teams classrooms.
 
 For more information, see the sections School Data Sync, SDS prerequisites, and SDS core concepts of the [School Data Sync overview](/schooldatasync/school-data-sync-overview).
 
