@@ -45,6 +45,8 @@ Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint i
 
 Use the **reactionContentUrl** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) to represent the hosted content URL for a custom reaction in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
 
+"Added **customEmoji** support to chat message body [content](https://learn.microsoft.com/en-us/graph/api/resources/itembody?view=graph-rest-beta) in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta). The change will show up in the actual content string of the message body when [Get chatMessage in a channel or chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta&tabs=http) with custom emojis in the message body."
+
 ## March 2024: New and generally available
 
 ### Applications
