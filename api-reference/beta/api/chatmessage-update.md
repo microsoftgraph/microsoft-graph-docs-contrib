@@ -17,7 +17,7 @@ You can update all the properties of **chatMessage** in delegated permissions sc
 
 Updating works only for chats where conversation members are Microsoft Teams users. If one of the members is using Skype, the operation fails.
 
-This method does not support federation. Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
+This method doesn't support federation. Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
@@ -35,7 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | ChannelMessage.UpdatePolicyViolation.All, Group.ReadWrite.All** |
 
-> **Note:** The Group.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> [!NOTE]
+> The Group.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ### Permissions for chat
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
@@ -73,7 +74,7 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{repl
 PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
 ```
 
-If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
 
 ## Request headers
 
@@ -410,7 +411,6 @@ HTTP/1.1 204 NoContent
 #### Request
 
 The following example shows a request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
-
 
 # [HTTP](#tab/http)
 <!-- {
