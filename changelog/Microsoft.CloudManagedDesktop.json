@@ -4899,7 +4899,7 @@
             {
                 "Id": "27ce80fa-f3e3-45f0-ae3f-1dcba1aed7ce",
                 "ApiChange": "Member",
-                "ChangedApiName": "sharedByEntraGroup ",
+                "ChangedApiName": "sharedByEntraGroup",
                 "ChangeType": "Addition",
                 "Description": "Added the `sharedByEntraGroup` member to the **cloudPcProvisioningType ** enumeration.",
                 "Target": "cloudPcProvisioningType"
