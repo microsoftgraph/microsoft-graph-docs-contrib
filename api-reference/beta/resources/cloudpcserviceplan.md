@@ -35,7 +35,7 @@ For examples of currently available service plans, see [Windows 365 compare plan
 |userProfileInGB|Int32|The size of the user profile disk in GB. Read-only.|
 |vCpuCount|Int32|The number of vCPUs. Read-only.|
 |supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`, `unknownFutureValue`. Read-only.|
-|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs. By default, the license type is `dedicated`. Possible values are dedicated, sharedByUser and sharedByEntraGroup, shared will be deprecated.|
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs. By default, the license type is `dedicated`. Possible values are dedicated, sharedByUser and sharedByEntraGroup, shared is deprecated, and will stop to be supported on April 30, 2027.|
 
 ### cloudPcServicePlanType values
 
@@ -51,7 +51,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following json is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
