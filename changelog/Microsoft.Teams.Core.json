@@ -6873,7 +6873,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "reactionContentUrl",
           "ChangeType": "Addition",
-          "Description": "Added the **reactionContentUrl** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-beta) resource to represent the hosted content URL of custom reaction in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).",
+          "Description": "Added the **reactionContentUrl** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-beta) resource to represent the hosted content URL for a custom reaction in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).",
           "Target": "chatMessageReaction"
         }
       ],
