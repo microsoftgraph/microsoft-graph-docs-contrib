@@ -37,8 +37,8 @@ An outbound provisioning flow set can contain no more than one of each provision
 
 When calling the [industry data ETL API](/graph/api/resources/industrydata-overview), take advantage of more granular permissions added for reading or writing outbound provisioning flow set data by using the new permissions `IndustryData-OutboundFlow.Read.All` and `IndustryData-OutboundFlow.ReadWrite.All`.
 
-### Custom Claims Policy
-The [custom claims policy](/graph/api/resources/customclaimspolicy) allows application admins the ability to customize the claims emitted in tokens affected by this policy. This policy allows admins to manage the claims for their application from Microsoft Entra portal and MS Graph API interchangeably allowing more flexibility in their application claims management experience.
+### Custom claims policy
+The [custom claims policy](/graph/api/resources/customclaimspolicy) allows application admins the ability to customize the claims emitted in tokens affected by this policy. This policy enables admins to manage the claims for their application from Microsoft Entra portal and Microsoft Graph API interchangeably allowing more flexibility in their application claims management experience.
 
 ### People and workplace intelligence | People 
 
