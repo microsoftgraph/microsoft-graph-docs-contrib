@@ -5,7 +5,6 @@ author: "jasonbro"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get regionalAndLanguageSettings

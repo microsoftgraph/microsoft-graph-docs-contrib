@@ -5,7 +5,6 @@ ms.localizationpriority: high
 author: "namkedia"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Get b2cAuthenticationMethodsPolicy

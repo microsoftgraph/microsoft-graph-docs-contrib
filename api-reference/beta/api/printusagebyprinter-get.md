@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.subservice: universal-print
 ms.date: 2/4/2020
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get printUsageByPrinter

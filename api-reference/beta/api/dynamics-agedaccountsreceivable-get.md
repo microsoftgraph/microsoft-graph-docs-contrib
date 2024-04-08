@@ -7,7 +7,6 @@ author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "d365-business-central"
-ms.topic: reference
 ---
 
 # Get agedAccountsReceivable

@@ -5,7 +5,6 @@ author: "mayankbansal018"
 ms.localizationpriority: medium
 ms.subservice: "universal-print"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List recentPrinterShares

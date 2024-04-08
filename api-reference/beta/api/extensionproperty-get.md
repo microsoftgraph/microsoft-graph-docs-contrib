@@ -5,7 +5,6 @@ author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "extensions"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get extensionProperty (directory extension)

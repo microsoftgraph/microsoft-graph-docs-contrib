@@ -5,7 +5,6 @@ description: Update a bundle of driveItems.
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Update bundle

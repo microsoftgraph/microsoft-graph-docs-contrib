@@ -5,7 +5,6 @@ description: "Get a list of servicePrincipalSignInActivity objects that contains
 ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
-ms.topic: reference
 ---
 
 
