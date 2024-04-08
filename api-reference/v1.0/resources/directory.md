@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+toc.title: Deleted item
 ---
 
 # directory resource type

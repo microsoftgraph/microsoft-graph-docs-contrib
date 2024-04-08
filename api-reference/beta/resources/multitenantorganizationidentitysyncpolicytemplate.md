@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Identity sync policy template
 ---
 
 # multiTenantOrganizationIdentitySyncPolicyTemplate resource type

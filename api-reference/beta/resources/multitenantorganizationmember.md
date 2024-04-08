@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Member
 ---
 
 # multiTenantOrganizationMember resource type

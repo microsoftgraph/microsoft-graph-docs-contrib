@@ -675,7 +675,6 @@
               "includedResources": [
                 "oAuth2PermissionGrant",
                 "organizationalBranding",
-                "organizationalBrandingProperties",
                 "organizationalBrandingLocalization",
                 "certificateBasedAuthConfiguration"
               ]

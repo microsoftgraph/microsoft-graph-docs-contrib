@@ -502,7 +502,7 @@
           ]
         },
         {
-          "name": "Multi-tenant management (preview)",
+          "name": "Multitenant management (preview)",
           "workloads": [
             {
               "id": "Microsoft.Lighthouse.Onboarding"
@@ -1016,7 +1016,6 @@
                 "oAuth2PermissionGrant",
                 "organization",
                 "organizationalBranding",
-                "organizationalBrandingProperties",
                 "organizationalBrandingLocalization",
                 "certificateBasedAuthConfiguration",
                 "externalIdentitiesPolicy"
@@ -1237,7 +1236,7 @@
               ]
             },
             {
-              "name": "Multi-tenant organization",
+              "name": "Multitenant organization",
               "overview": "../../resources/multitenantorganization-overview.md",
               "workloads": [
                 {

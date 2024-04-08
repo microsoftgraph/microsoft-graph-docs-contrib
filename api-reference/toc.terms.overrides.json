@@ -189,6 +189,26 @@
     "override": "Microsoft Store for Business"
   },
   {
+    "term": "multi tenant",
+    "override": "multitenant",
+    "caseSensitive": true
+  },
+  {
+    "term": "Multi tenant",
+    "override": "Multitenant",
+    "caseSensitive": true
+  },
+  {
+    "term": "multi value",
+    "override": "multivalue",
+    "caseSensitive": true
+  },
+  {
+    "term": "Multi value",
+    "override": "Multivalue",
+    "caseSensitive": true
+  },
+  {
     "term": "msi",
     "override": "MSI"
   },

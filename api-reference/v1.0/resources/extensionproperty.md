@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: "resourcePageType"
+toc.title: Directory extension
 ---
 
 # extensionProperty resource type (directory extensions)
