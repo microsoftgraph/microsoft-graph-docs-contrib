@@ -13,6 +13,7 @@ resources:
   - repository: AD-AggregatorService-Workloads
     type: git
     name: One/AD-AggregatorService-Workloads
+    ref: master
     endpoint: MSAzure/One
 
 pool:
@@ -36,42 +37,52 @@ stages:
     steps:
     - script: echo Received request to build TOC for $(toc_branch) branch.
 
-# - checkout: self
-#   displayName: Checkout docs repo
+    - checkout: self
+      displayName: Checkout docs repo
+      persistCredentials: true
 
-# - checkout: msgraph-toc-gen
-#   displayName: Checkout TOC generator repo
+    - checkout: msgraph-toc-gen
+      displayName: Checkout TOC generator repo
 
-# - checkout: AD-AggregatorService-Workloads
-#   displayName: Checkout workloads repo
+    - checkout: AD-AggregatorService-Workloads
+      displayName: Checkout workloads repo
 
-# - task: UseDotNet@2
-#   displayName: Install .NET SDK 8
-#   inputs:
-#     version: 8.x
+    - task: UseDotNet@2
+      displayName: Install .NET SDK 8
+      inputs:
+        version: 8.x
 
-# - task: DotNetCoreCLI@2
-#   displayName: Build TOC generator project
-#   inputs:
-#     command: build
-#     projects: $(tocGeneratorProject)
-#     arguments: '--configuration Release'
+    - task: DotNetCoreCLI@2
+      displayName: Build TOC generator project
+      inputs:
+        command: build
+        projects: $(tocGeneratorProject)
+        arguments: '--configuration Release'
 
-# - pwsh: $(tocGeneratorApp) --api-docs $(v1ReferenceRoot)/api --resource-docs $(v1ReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(v1ReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(v1ReferenceRoot)/toc.yml --static-toc $(v1ReferenceRoot)/toc/static-toc.yml
-#   displayName: Generate v1 reference TOC
+    - pwsh: |
+        git config user.email "GraphTooling@service.microsoft.com"
+        git config user.name "Microsoft Graph DevX Tooling"
+      displayName: Configure git
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
 
-# - pwsh: $(tocGeneratorApp) --api-docs $(betaReferenceRoot)/api --resource-docs $(betaReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(betaReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(betaReferenceRoot)/toc.yml --static-toc $(betaReferenceRoot)/toc/static-toc.yml
-#   displayName: Generate beta reference TOC
+    - pwsh: git switch $(toc_branch)
+      displayName: Checkout requested branch
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
 
-# - pwsh: |
-#     $status = git status --porcelain
-#     if ($status -eq $null) {
-#       Write-Host "No changes to commit." -ForegroundColor Green
-#     } else {
-#       $timestamp = Get-Date -Format FileDateTimeUniversal
-#       git checkout toc-gen/$timestamp
-#       git add .
-#       git commit -m "Generated reference TOC"
-#       git push --set-upstream origin toc-gen/$timestamp
-#     }
-#   displayName: Commit and push TOC updates
+    - pwsh: $(tocGeneratorApp) --api-docs $(v1ReferenceRoot)/api --resource-docs $(v1ReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(v1ReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(v1ReferenceRoot)/toc.yml --static-toc $(v1ReferenceRoot)/toc/static-toc.yml
+      displayName: Generate v1 reference TOC
+
+    - pwsh: $(tocGeneratorApp) --api-docs $(betaReferenceRoot)/api --resource-docs $(betaReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(betaReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(betaReferenceRoot)/toc.yml --static-toc $(betaReferenceRoot)/toc/static-toc.yml --api-version beta
+      displayName: Generate beta reference TOC
+
+    - pwsh: |
+        $status = git status --porcelain
+        if ($status -eq $null) {
+          Write-Host "No changes to commit." -ForegroundColor Green
+        } else {
+          git add .
+          git commit -m "Generated reference TOC"
+          git push
+        }
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
+      displayName: Commit and push TOC updates
