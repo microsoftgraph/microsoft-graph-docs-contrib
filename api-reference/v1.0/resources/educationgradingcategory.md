@@ -20,7 +20,7 @@ Represents the weighted contribution of an assignment to a class average grade.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add gradingCategory](../api/educationassignment-post-gradingcategory.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
+|[Add gradingCategory](../api/educationassignment-post-gradingcategories.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
 |[Remove gradingCategory](../api/educationassignment-delete-gradingcategory.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
 |[Update gradingCategory](../api/educationgradingcategory-update.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
 
