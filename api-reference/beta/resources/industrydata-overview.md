@@ -129,7 +129,7 @@ Transformation of the data is often shaped by each individual user's role within
 
 ### Industry data connectors
 
-An [industryDataConnector](industrydata-industrydataconnector.md) acts as a bridge between a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) and an [inboundFlow](industrydata-inboundflow.md). It is responsible for acquiring data from an external source and providing the data to inbound data flows.
+An [industryDataConnector](industrydata-industrydataconnector.md) acts as a bridge between a [sourceSystemDefinition](industrydata-sourcesystemdefinition.md) and an [inboundFlow](industrydata-inboundflow.md). It's responsible for acquiring data from an external source and providing the data to inbound data flows.
 
 #### Upload and validate CSV data
 
