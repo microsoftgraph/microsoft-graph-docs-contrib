@@ -48,6 +48,9 @@ Include the following properties in the request body.
 
 If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
 
+> [!NOTE]
+> The response code `404 Not Found` is returned when you attempt to add a disabled/blocked user.
+
 ## Examples
 
 ### Example 1: Add a member to a private channel

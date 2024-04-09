@@ -3,7 +3,7 @@ title: "knowledgeBaseArticle resource type"
 description: "Represents a knowledge base article."
 author: "angiechen22"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "workbookRangeView resource type"
 description: "RangeView represents a set of visible cells of the parent range."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -43,7 +43,7 @@ RangeView represents a set of visible cells of the parent range.
 |rows|[workbookRangeView](workbookrangeview.md) collection| Represents a collection of range views associated with the range. Read-only.	Read-only.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [  ],
