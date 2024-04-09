@@ -12,7 +12,6 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.  This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -62,6 +61,7 @@ If this is an `adminAdd` request, then subsequently an [accessPackageAssignment]
 ## Examples
 
 ### Example 1: Admin requests a direct assignment for a user already in the directory
+
 #### Request
 
 The following example shows a request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user. Because the [accessPackageSubject](../resources/accesspackagesubject.md) might not yet exist, the value of the **targetID** is the object ID of the user being assigned, the value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
@@ -163,6 +163,7 @@ Content-type: application/json
     "requestStatus": "Accepted"
 }
 ```
+
 ### Example 3: Request an assignment by providing answers to questions
 
 The following example shows how a user can request an access package assignment for themselves by answering questions required by the policy while making the request.
