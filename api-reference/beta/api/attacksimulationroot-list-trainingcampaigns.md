@@ -121,7 +121,6 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns
 
 ---
 
-
 ### Response
 
 The following example shows the response.

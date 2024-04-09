@@ -8,10 +8,7 @@ Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.categoryTemplate"
-	displayName = "String"
-	createdBy = @{
-		"@odata.type" = "microsoft.graph.identitySet"
-	}
+	displayName = "Accounts Payable"
 }
 
 New-MgBetaSecurityLabelCategory -BodyParameter $params
