@@ -41,6 +41,9 @@ When calling the [industry data ETL API](/graph/api/resources/industrydata-overv
 
 Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights) method on the **peopleAdminSettings** resource..
 
+### Teamwork and communications | Messaging
+[Send chatMessage in a channel or a chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta&tabs=http) with a file attachment in it using file share link. 
+
 ## March 2024: New and generally available
 
 ### Applications
@@ -90,8 +93,8 @@ Use the upsert capability to create an [application](/graph/api/resources/applic
 
 - [Apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) the current [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) configuration across all Cloud PC devices under a specified policy.
 - [Update](/graph/api/cloudpcprovisioningpolicy-applyconfig?view=graph-rest-beta&preserve-view=true) the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) configuration for a specific set of Cloud PC devices using their IDs. 
-
-Added the ability to mark specified **alertRecord** objects as sent via the **isPortalNotificationSent** property.
+- Added the ability to mark specified **alertRecord** objects as sent via the **isPortalNotificationSent** property.
+- Run bulk [power-off](/graph/api/resources/cloudpcbulkpoweroff?view=graph-rest-beta&preserve-view=true), [power-on](/graph/api/resources/cloudpcbulkpoweron?view=graph-rest-beta&preserve-view=true), [reprovision](/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta&preserve-view=true), [resize](/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta&preserve-view=true), [restart](/graph/api/resources/cloudpcbulkrestart?view=graph-rest-beta&preserve-view=true), [restore](/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta&preserve-view=true), and [troubleshoot](/graph/api/resources/cloudpcbulktroubleshoot?view=graph-rest-beta&preserve-view=true) actions on Cloud PC devices using their IDs.
 
 Deprecated the following properties:
 
