@@ -56,7 +56,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_devicelink"
+  "name": "delete_devicelink_deprecated"
 }
 -->
 ``` http
