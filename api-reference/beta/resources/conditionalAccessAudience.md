@@ -19,8 +19,8 @@ Indicates information about the audience during conditional access sign-ins
 
 | Property   | Type    |Description|
 |:---------------|:--------|:----------|
-|applicationId|String|The id of the application|
-|audienceReasons|conditionalAccessAudienceReason|flagged enum that details the reasons why this audience was included for this specific sign-in request|
+|applicationId|String|The id of the application.|
+|audienceReasons|conditionalAccessAudienceReason|An enumeration value that that indicates the reasons this audience was included for a sign-in request.|
 
 
 ## JSON representation
