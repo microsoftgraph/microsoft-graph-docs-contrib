@@ -33,7 +33,7 @@ Represents the health information of a service subscribed by a tenant.
 |issues|Collection([serviceHealthIssue](../resources/servicehealthissue.md))|A collection of issues that happened on the service, with detailed information for each issue.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
