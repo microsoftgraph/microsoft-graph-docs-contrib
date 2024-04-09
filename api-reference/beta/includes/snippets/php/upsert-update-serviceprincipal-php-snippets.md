@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\ServicePrincipals(appId='{appId}')\ServicePrincipalsWithAppIdRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Generated\Models\ServicePrincipal;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

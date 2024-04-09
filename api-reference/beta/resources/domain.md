@@ -74,7 +74,7 @@ Relationships between a domain and other objects in the directory such as its ve
 |federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Microsoft Entra ID. Supports `$expand`.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
