@@ -14,88 +14,106 @@ $params = @{
 			target = @{
 				caller = "EndUser"
 				operations = @(
-					"All"
-				)
-				level = "Assignment"
-				inheritableSettings = @(
-				)
-				enforcedSettings = @(
-				)
-			}
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyAuthenticationContextRule"
-			id = "AuthenticationContext_EndUser_Assignment"
-			isEnabled = $false
-			claimValue = ""
-			target = @{
-				caller = "EndUser"
-				operations = @(
-					"All"
-				)
-				level = "Assignment"
-				inheritableSettings = @(
-				)
-				enforcedSettings = @(
-				)
-			}
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule"
-			id = "Enablement_Admin_Eligibility"
-			enabledRules = @(
+				"All"
 			)
-			target = @{
-				caller = "Admin"
-				operations = @(
-					"All"
-				)
-				level = "Eligibility"
-				inheritableSettings = @(
-				)
-				enforcedSettings = @(
-				)
-			}
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
-			id = "Expiration_Admin_Eligibility"
-			isExpirationRequired = $false
-			maximumDuration = "P365D"
-			target = @{
-				caller = "Admin"
-				operations = @(
-					"All"
-				)
-				level = "Eligibility"
-				inheritableSettings = @(
-				)
-				enforcedSettings = @(
-				)
-			}
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule"
-			id = "Notification_Admin_Admin_Eligibility"
-			notificationType = "Email"
-			recipientType = "Admin"
-			notificationLevel = "All"
-			isDefaultRecipientsEnabled = $true
-			notificationRecipients = @(
+			level = "Assignment"
+			inheritableSettings = @(
 			)
-			target = @{
-				caller = "Admin"
-				operations = @(
-					"All"
-				)
-				level = "Eligibility"
-				inheritableSettings = @(
-				)
-				enforcedSettings = @(
-				)
-			}
+			enforcedSettings = @(
+			)
 		}
+		setting = @{
+			isApprovalRequired = $false
+			isApprovalRequiredForExtension = $false
+			isRequestorJustificationRequired = $true
+			approvalMode = "SingleStage"
+			approvalStages = @(
+				@{
+					approvalStageTimeOutInDays = 
+					isApproverJustificationRequired = $true
+					escalationTimeInMinutes = 
+					isEscalationEnabled = $false
+					primaryApprovers = @(
+					)
+					escalationApprovers = @(
+					)
+				}
+			)
+		}
+	}
+	@{
+		"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyAuthenticationContextRule"
+		id = "AuthenticationContext_EndUser_Assignment"
+		isEnabled = $false
+		claimValue = ""
+		target = @{
+			caller = "EndUser"
+			operations = @(
+			"All"
+		)
+		level = "Assignment"
+		inheritableSettings = @(
+		)
+		enforcedSettings = @(
+		)
+	}
+}
+@{
+	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule"
+	id = "Enablement_Admin_Eligibility"
+	enabledRules = @(
 	)
+	target = @{
+		caller = "Admin"
+		operations = @(
+		"All"
+	)
+	level = "Eligibility"
+	inheritableSettings = @(
+	)
+	enforcedSettings = @(
+	)
+}
+}
+@{
+"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
+id = "Expiration_Admin_Eligibility"
+isExpirationRequired = $false
+maximumDuration = "P365D"
+target = @{
+	caller = "Admin"
+	operations = @(
+	"All"
+)
+level = "Eligibility"
+inheritableSettings = @(
+)
+enforcedSettings = @(
+)
+}
+}
+@{
+"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule"
+id = "Notification_Admin_Admin_Eligibility"
+notificationType = "Email"
+recipientType = "Admin"
+notificationLevel = "All"
+isDefaultRecipientsEnabled = $true
+notificationRecipients = @(
+)
+target = @{
+caller = "Admin"
+operations = @(
+"All"
+)
+level = "Eligibility"
+inheritableSettings = @(
+)
+enforcedSettings = @(
+)
+}
+}
+)
 }
 
 Update-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -BodyParameter $params

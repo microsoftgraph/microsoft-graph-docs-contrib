@@ -56,6 +56,15 @@ Namespace: microsoft.graph
 | serviceProvider        |
 | unknownFutureValue     |
 
+### migrationStatus values 
+
+|Member|
+|:---|
+|ready|
+|needsReview|
+|additionalStepsRequired|
+|unknownFutureValue|
+
 ### appCredentialRestrictionType values
 
 | Member               |
@@ -3219,3 +3228,15 @@ Possible values for user account types (group membership), per Windows definitio
 | assigned           |
 | unknownFutureValue |
 | inactive           |
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
+|unknownFutureValue|

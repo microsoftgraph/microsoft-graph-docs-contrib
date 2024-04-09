@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 03/22/2024
+ms.date: 04/05/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2406,6 +2406,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### FileStorageContainer.Selected
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 40dc41bc-0f7e-42ff-89bd-d9516947e474 | 085ca537-6565-41c2-aca7-db852babc212 
+| DisplayText | Access selected file storage containers | Access selected file storage containers 
+| Description | Allows the application to utilize the file storage container platform to manage containers, without a signed-in user. The specific file storage containers and the permissions granted to them will be configured in Microsoft 365 by the developer of each container type. | Allows the application to utilize the file storage container platform to manage containers on behalf of the signed in user. The specific file storage containers and the permissions granted to them will be configured in Microsoft 365 by the developer of each container type. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### Financials.ReadWrite.All
 
 | Category | Application | Delegated |
@@ -3757,6 +3768,39 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Read and write organization places 
 | Description | - | Allows the app to manage organization places (conference rooms and room lists) for calendar events and other applications, on behalf of the signed-in user. 
 | AdminConsentRequired | - | Yes 
+
+---
+
+### PlaceDevice.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 8b724a84-ceac-4fd9-897e-e31ba8f2d7a3 | 4c7f93d2-6b0b-4e05-91aa-87842f0a2142 
+| DisplayText | Read all workplace devices | Read all workplace devices 
+| Description | Allows the app to read all workplace devices, without a signed-in user. | Allows the app to read all workplace devices, on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### PlaceDevice.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2d510721-5c4e-43cd-bfdb-ac0f8819fb92 | eafd6a71-e95a-4f8a-bb6e-fb84ab7fbd9e 
+| DisplayText | Read and write all workplace devices | Read and write all workplace devices 
+| Description | Allows the app to read and write all workplace devices, without a signed-in user. | Allows the app to read and write all workplace devices, on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### PlaceDeviceTelemetry.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 27fc435f-44e2-4b30-bf3c-e0ce74aed618 | - 
+| DisplayText | Read and write telemetry for all workplace devices. | - 
+| Description | Allows the app to read and write telemetry for all workplace devices, without a signed-in user. | - 
+| AdminConsentRequired | Yes | - 
 
 ---
 
@@ -5143,6 +5187,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Send emails from mailboxes using SMTP AUTH. 
 | Description | - | Allows the app to be able to send emails from the user's mailbox using the SMTP AUTH client submission protocol. 
 | AdminConsentRequired | - | No 
+
+---
+
+### SpiffeTrustDomain.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | dcdfc277-41fd-4d68-ad0c-c3057235bd8e | 9b4aa4b1-aaf3-41b7-b743-698b27e77ff6 
+| DisplayText | Read SPIFFE trust domains and child resources | Read SPIFFE trust domains and child resources 
+| Description | Allows the app to read your organization's SPIFFE trust domains and child resources without a signed in user. | Allows the app to read your organization's SPIFFE trust domains and child resources on behalf of the user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### SpiffeTrustDomain.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 17b78cfd-eeff-447d-8bab-2795af00055a | 8ba47079-8c47-4bfe-b2ce-13f28ef37247 
+| DisplayText | Read and write SPIFFE trust domains and child resources | Read and write SPIFFE trust domains and child resources 
+| Description | Allows the app to read and write your organization's SPIFFE trust domains and child resources without a signed in user. | Allows the app to read and write your organization's SPIFFE trust domains and child resources on behalf of the user. 
+| AdminConsentRequired | Yes | Yes 
 
 ---
 
@@ -6622,11 +6688,14 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | ChannelMeetingRecording.Read.Group | 30a40618-9b50-4764-b62e-b04023a8f5f3 | Read the recordings of all channel meetings associated with this team | Allows the app to read recordings of all the channel meetings associated with this team, without a signed-in user. 
 | ChannelMeetingTranscript.Read.Group | 37e59e88-1a46-482b-b623-0a4aa6abdf67 | Read the transcripts of all channel meetings associated with this team | Allows the app to read transcripts of all the channel meetings associated with this team, without a signed-in user. 
 | ChannelMessage.Read.Group | 19103a54-c397-4bcd-be5a-ef111e0406fa | Read this team's channel messages | Allows the app to read this team's channel's messages, without a signed-in user. 
+| ChannelMessage.Send.Group | 3e38d437-815b-4368-9f19-e39dea9a6c7f | Send mesages to this team's channels | Allows the app to send messages to this team's channels, without a signed-in user. 
 | ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team's channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. 
 | ChannelSettings.ReadWrite.Group | d057ad03-b27b-49f7-8219-e0d4a706da55 | Update the names, descriptions, and settings of this team's channels | Allows the app to update and read the names, descriptions, and settings of this team's channels, without a signed-in user. 
 | Chat.Manage.Chat | 4a14842e-6bb6-4088-b21a-7d0a24f835a6 | Manage this chat | Allows the app to manage the chat, the chat's members and grant access to the chat's data, without a signed-in user.  
 | ChatMember.Read.Chat | e854bbc6-07e3-45cc-af99-b6e78fab5b80 | Read this chat's members | Allows the app to read the members of this chat, without a signed-in user. 
 | ChatMessage.Read.Chat | 9398c3de-3f6b-4958-90f3-5098714ff50c | Read this chat's messages | Allows the app to read this chat's messages, without a signed-in user. 
+| ChatMessage.Send.Chat | 19cbeeb2-02a0-49d7-95cd-ab0841beed7f | Send messages to this chat | Allows the app to send messages to this chat, without a signed-in user. 
+| ChatMessageReadReceipt.Read.Chat | a236cb34-7076-45a1-9381-22db8111a3d3 | Read the ID of the last seen message in this chat | Allows the app to read the ID of the last message seen by the users in this chat. 
 | ChatSettings.Read.Chat | 40d35d7c-9cc3-4f2d-912b-464457412a00 | Read this chat's settings | Allows the app to read this chat's settings, without a signed-in user. 
 | ChatSettings.ReadWrite.Chat | ed928a9c-7530-496a-a624-4c0a460ab3ed | Read and write this chat's settings | Allows the app to read and write this chat's settings, without a signed-in user. 
 | Member.Read.Group | 0a8ce3c7-89dd-46cf-b2c3-5ef0064437a8 | Read this group's members | Allows the app to read the basic profile of this group's members, without a signed-in user. 

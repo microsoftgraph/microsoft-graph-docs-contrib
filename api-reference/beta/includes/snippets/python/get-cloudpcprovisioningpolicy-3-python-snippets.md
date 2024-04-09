@@ -10,7 +10,7 @@ from msgraph.generated.deviceManagement.virtualEndpoint.provisioningPolicies.ite
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = CloudPcProvisioningPolicyItemRequestBuilder.CloudPcProvisioningPolicyItemRequestBuilderGetQueryParameters(
-		select = ["id","description","displayName","domainJoinConfiguration","imageDisplayName","imageId","imageType","onPremisesConnectionId","windowsSetting","managedBy","cloudPcGroupDisplayName","gracePeriodInHours","localAdminEnabled","alternateResourceUrl"],
+		select = ["id","description","displayName","domainJoinConfigurations","imageDisplayName","imageId","imageType","windowsSetting","managedBy","cloudPcGroupDisplayName","gracePeriodInHours","localAdminEnabled","alternateResourceUrl"],
 )
 
 request_configuration = CloudPcProvisioningPolicyItemRequestBuilder.CloudPcProvisioningPolicyItemRequestBuilderGetRequestConfiguration(

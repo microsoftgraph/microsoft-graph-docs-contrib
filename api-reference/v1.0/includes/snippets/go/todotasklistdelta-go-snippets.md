@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-delta, err := graphClient.Me().Todo().Lists().Delta().Get(context.Background(), nil)
+delta, err := graphClient.Me().Todo().Lists().Delta().GetAsDeltaGetResponse(context.Background(), nil)
 
 
 ```

@@ -11,9 +11,9 @@ $params = @{
 	displayName = "Contoso authentication level"
 	description = "The only authentication level allowed to access our secret apps"
 	allowedCombinations = @(
-		"password, hardwareOath"
-		"password, sms"
-	)
+	"password, hardwareOath"
+"password, sms"
+)
 }
 
 New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter $params
