@@ -21,8 +21,8 @@ Get the collection of [baseSitePage][] objects from the site pages [list][] in a
 | :----------- | :------------------------- |
 | [sitePage][] | Represents a regular page. |
 
-[basesitepage]: ../resources/baseSitePage.md
-[sitepage]: ../resources/sitepage.md
+[baseSitePage]: ../resources/baseSitePage.md
+[sitePage]: ../resources/sitePage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 

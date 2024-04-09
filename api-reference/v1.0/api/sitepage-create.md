@@ -243,7 +243,7 @@ Content-type: application/json
 [list]: ../resources/list.md
 [listitem]: ../resources/listitem.md
 [site]: ../resources/site.md
-[sitepage]: ../resources/sitepage.md
+[sitePage]: ../resources/sitepage.md
 
 <!--
 {

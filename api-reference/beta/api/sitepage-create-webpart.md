@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [webPart] at a specified position in the [sitePage].
 
-[sitepage]: ../resources/sitePage.md
+[sitePage]: ../resources/sitePage.md
 [webPart]: ../resources/webPart.md
 
 ## Permissions
