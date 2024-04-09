@@ -1,9 +1,9 @@
 ---
 title: "directSharingAbilities resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes direct sharing abilities."
+author: "ziebd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes direct sharing abilities.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|addInternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|requestGrantAccess|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
+|addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add existing external user recipients to this item using direct sharing.|
+|addInternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add internal recipients to this item using direct sharing.|
+|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add new external user recipients to this item using direct sharing.|
+|requestGrantAccess|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the user querying this endpoint can request access for the user or on behalf of other users, after which site admins will be able to approve or deny the creation of a potential sharing link.|
 
 ## Relationships
 None.

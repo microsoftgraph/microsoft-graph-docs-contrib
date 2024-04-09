@@ -1,9 +1,9 @@
 ---
 title: "linkScopeAbilities resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes sharing abilities for each possible sharingRole within a particular sharing link scope*"
+author: "ziebd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes sharing abilities for each possible sharingRole within a particular sharing link scope.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|blockDownloadLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|**TODO: Add Description**|
-|editLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|**TODO: Add Description**|
-|manageListLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|**TODO: Add Description**|
-|readLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|**TODO: Add Description**|
-|reviewLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|**TODO: Add Description**|
-|submitOnlyLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|**TODO: Add Description**|
+|blockDownloadLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes blockDownload link abilities.|
+|editLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes edit link abilities.|
+|manageListLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes manageList link abilities.|
+|readLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes read link abilities.|
+|reviewLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes review link abilities.|
+|submitOnlyLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes submitOnly link abilities.|
 
 ## Relationships
 None.

@@ -1,9 +1,9 @@
 ---
 title: "sharingViewpoint resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes sharing operations the current user can take on the specified item."
+author: "ziebd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes sharing operations the current user can take on the specified item.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultSharingLink|[defaultSharingLink](../resources/defaultsharinglink.md)|**TODO: Add Description**|
-|sharingAbilities|[sharePointSharingAbilities](../resources/sharepointsharingabilities.md)|**TODO: Add Description**|
+|defaultSharingLink|[defaultSharingLink](../resources/defaultsharinglink.md)|Describes the default sharing link that the user will be able to create for this item.|
+|sharingAbilities|[sharePointSharingAbilities](../resources/sharepointsharingabilities.md)|Provides information on which sharing links are available to the user.|
 
 ## Relationships
 None.

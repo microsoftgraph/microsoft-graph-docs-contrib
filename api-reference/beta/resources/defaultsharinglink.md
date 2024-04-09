@@ -1,6 +1,6 @@
 ---
 title: "defaultSharingLink resource type"
-description: "**TODO: Add Description**"
+description: "Describes default sharing link the user is able to create."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
 ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes default sharing link the user is able to create.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultToExistingAccess|Boolean|**TODO: Add Description**|
-|role|sharingRole|**TODO: Add Description**.The possible values are: `none`, `view`, `edit`, `manageList`, `review`, `restrictedView`, `submitOnly`, `unknownFutureValue`.|
-|scope|sharingScope|**TODO: Add Description**.The possible values are: `anyone`, `organization`, `specificPeople`, `anonymous`, `users`, `unknownFutureValue`.|
+|defaultToExistingAccess|Boolean|Indicates whether the default link setting for this object is a direct URL rather than a sharing link.|
+|role|sharingRole|The default sharing link role. The possible values are: `none`, `view`, `edit`, `manageList`, `review`, `restrictedView`, `submitOnly`, `unknownFutureValue`.|
+|scope|sharingScope|The default sharing link scope. The possible values are: `anyone`, `organization`, `specificPeople`, `anonymous`, `users`, `unknownFutureValue`.|
 
 ## Relationships
 None.

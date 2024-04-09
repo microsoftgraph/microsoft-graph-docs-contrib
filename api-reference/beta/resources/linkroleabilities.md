@@ -1,9 +1,9 @@
 ---
 title: "linkRoleAbilities resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes sharing link operations for a link of a specified role."
+author: "ziebd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -13,20 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes sharing link operations for a link of a specified role.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|applyVariants|[sharingLinkVariants](../resources/sharinglinkvariants.md)|**TODO: Add Description**|
-|createLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|deleteLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|linkAllowsExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|linkExpiration|[sharingLinkExpirationStatus](../resources/sharinglinkexpirationstatus.md)|**TODO: Add Description**|
-|retrieveLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|updateLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
+|addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add existing external user recipients to this sharing link.|
+|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add new external user recipients to this sharing link.|
+|applyVariants|[sharingLinkVariants](../resources/sharinglinkvariants.md)|Describes the status of potential sharing link variants, which, if selected, will generate a separate sharing link from the sharing link that would otherwise be generated without the variant, yet with identical role and scope.|
+|createLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether links of this role can be created.|
+|deleteLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether links of this role can be deleted.|
+|linkAllowsExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether this link can include external users.|
+|linkExpiration|[sharingLinkExpirationStatus](../resources/sharinglinkexpirationstatus.md)|Describes whether links must expire, meaning that the link will no longer be usable after a specified amount of time. If link expiration is enabled, a default link expiration time is provided.|
+|retrieveLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether links of this role can be retrieved.|
+|updateLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether links of this role can be updated.|
 
 ## Relationships
 None.

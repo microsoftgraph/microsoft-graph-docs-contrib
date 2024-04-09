@@ -1,9 +1,9 @@
 ---
 title: "sharingLinkVariants resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes the status of potential sharing link variants which will generate a separate sharing link from the link that would otherwise be generated without the variant, yet with identical role and scope."
+author: "ziebd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes the status of potential sharing link variants which will generate a separate sharing link from the link that would otherwise be generated without the variant, yet with identical role and scope.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|addressBarLinkPermission|sharingRole|**TODO: Add Description**.The possible values are: `none`, `view`, `edit`, `manageList`, `review`, `restrictedView`, `submitOnly`, `unknownFutureValue`.|
-|allowEmbed|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|passwordProtected|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
-|requiresAuthentication|[sharingOperationStatus](../resources/sharingoperationstatus.md)|**TODO: Add Description**|
+|addressBarLinkPermission|sharingRole|Returns the most permissive role with which an address bar link can be created. The possible values are: `none`, `view`, `edit`, `manageList`, `review`, `restrictedView`, `submitOnly`, `unknownFutureValue`.|
+|allowEmbed|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Whether a link can be embedded.|
+|passwordProtected|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Whether a link can be password protected, meaning that link users would need to enter a password to access the item for which the sharing link is produced. Creating a passwordProtected link for the first time requires providing a password.|
+|requiresAuthentication|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Whether a link requires identity authentication for recipients. Users can be verified through either an email address or identity.|
 
 ## Relationships
 None.

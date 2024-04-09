@@ -1,6 +1,6 @@
 ---
 title: "driveItemViewpoint resource type"
-description: "**TODO: Add Description**"
+description: "Returns information specific to the calling user for this drive item."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Returns information specific to the calling user for this drive item.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessOperations|[driveItemAccessOperationsViewpoint](../resources/driveitemaccessoperationsviewpoint.md)|**TODO: Add Description**|
-|sharing|[sharingViewpoint](../resources/sharingviewpoint.md)|**TODO: Add Description**|
+|accessOperations|[driveItemAccessOperationsViewpoint](../resources/driveitemaccessoperationsviewpoint.md)| Describes whether the user is able to carry out the described actions on this item.|
+|sharing|[sharingViewpoint](../resources/sharingviewpoint.md)|Describes sharing operations the user can take on the specified item.|
 
 ## Relationships
 None.

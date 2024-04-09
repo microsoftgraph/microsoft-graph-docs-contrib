@@ -1,9 +1,9 @@
 ---
 title: "sharePointSharingAbilities resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Provides information on which sharing links are available to the user."
+author: "ziebd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Provides information on which sharing links are available to the user.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|anyoneLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|**TODO: Add Description**|
-|directSharingAbilities|[directSharingAbilities](../resources/directsharingabilities.md)|**TODO: Add Description**|
+|anyoneLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|Describes anyone link abilities.|
+|directSharingAbilities|[directSharingAbilities](../resources/directsharingabilities.md)|Describes direct sharing abilities.|
 |organizationLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|**TODO: Add Description**|
 |specificPeopleLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|**TODO: Add Description**|
 

@@ -1,9 +1,9 @@
 ---
 title: "sharingOperationStatus resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes the status of a particular sharing operation."
+author: "ziebd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes the status of a particular sharing operation.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|disabledReason|String|**TODO: Add Description**|
-|enabled|Boolean|**TODO: Add Description**|
+|disabledReason|String|Provides a description of why this operation is not enabled. Only returned if this operation is not enabled.|
+|enabled|Boolean|Indicates whether this operation is enabled.|
 
 ## Relationships
 None.

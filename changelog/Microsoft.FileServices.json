@@ -3940,6 +3940,136 @@
       "CreatedDateTime": "2024-02-08T11:42:39.4965347Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharingRole",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingRole** enumeration type.",
+          "Target": "sharingRole"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharingScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingScope** enumeration type.",
+          "Target": "sharingScope"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharingVariant",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingVariant** enumeration type.",
+          "Target": "sharingVariant"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "defaultSharingLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [defaultSharingLink](https://learn.microsoft.com/en-us/graph/api/resources/defaultSharingLink?view=graph-rest-beta) resource.",
+          "Target": "defaultSharingLink"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directSharingAbilities",
+          "ChangeType": "Addition",
+          "Description": "Added the [directSharingAbilities](https://learn.microsoft.com/en-us/graph/api/resources/directSharingAbilities?view=graph-rest-beta) resource.",
+          "Target": "directSharingAbilities"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveItemAccessOperationsViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [driveItemAccessOperationsViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/driveItemAccessOperationsViewpoint?view=graph-rest-beta) resource.",
+          "Target": "driveItemAccessOperationsViewpoint"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveItemViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [driveItemViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/driveItemViewpoint?view=graph-rest-beta) resource.",
+          "Target": "driveItemViewpoint"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "linkRoleAbilities",
+          "ChangeType": "Addition",
+          "Description": "Added the [linkRoleAbilities](https://learn.microsoft.com/en-us/graph/api/resources/linkRoleAbilities?view=graph-rest-beta) resource.",
+          "Target": "linkRoleAbilities"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "linkScopeAbilities",
+          "ChangeType": "Addition",
+          "Description": "Added the [linkScopeAbilities](https://learn.microsoft.com/en-us/graph/api/resources/linkScopeAbilities?view=graph-rest-beta) resource.",
+          "Target": "linkScopeAbilities"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointSharingAbilities",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointSharingAbilities](https://learn.microsoft.com/en-us/graph/api/resources/sharePointSharingAbilities?view=graph-rest-beta) resource.",
+          "Target": "sharePointSharingAbilities"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharingLinkExpirationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharingLinkExpirationStatus](https://learn.microsoft.com/en-us/graph/api/resources/sharingLinkExpirationStatus?view=graph-rest-beta) resource.",
+          "Target": "sharingLinkExpirationStatus"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharingLinkVariants",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharingLinkVariants](https://learn.microsoft.com/en-us/graph/api/resources/sharingLinkVariants?view=graph-rest-beta) resource.",
+          "Target": "sharingLinkVariants"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharingOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharingOperationStatus](https://learn.microsoft.com/en-us/graph/api/resources/sharingOperationStatus?view=graph-rest-beta) resource.",
+          "Target": "sharingOperationStatus"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharingViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharingViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/sharingViewpoint?view=graph-rest-beta) resource.",
+          "Target": "sharingViewpoint"
+        },
+        {
+          "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+          "ApiChange": "Property",
+          "ChangedApiName": "viewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the **viewpoint** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "51560117-2290-4d03-8487-2e3a26dd9a1c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-03T21:49:48.9554726Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }

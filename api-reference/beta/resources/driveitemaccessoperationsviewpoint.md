@@ -1,9 +1,9 @@
 ---
 title: "driveItemAccessOperationsViewpoint resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Describes whether the user is able to carry out the described actions on this item."
+author: "ziebd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Describes whether the user is able to carry out the described actions on this item.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|canComment|Boolean|**TODO: Add Description**|
-|canCreateFile|Boolean|**TODO: Add Description**|
-|canCreateFolder|Boolean|**TODO: Add Description**|
-|canDelete|Boolean|**TODO: Add Description**|
-|canDownload|Boolean|**TODO: Add Description**|
-|canRead|Boolean|**TODO: Add Description**|
-|canUpdate|Boolean|**TODO: Add Description**|
+|canComment|Boolean|Whether the user can comment on this item.|
+|canCreateFile|Boolean|Whether the user can create files within this object. Returned only on folders.|
+|canCreateFolder|Boolean|Whether the user can create folders within this object. Returned only on folders.|
+|canDelete|Boolean|Whether the user can delete this item.|
+|canDownload|Boolean|Whether the user can download this item.|
+|canRead|Boolean|Whether the user can read this item.|
+|canUpdate|Boolean|Whether the user can update this item.|
 
 ## Relationships
 None.
