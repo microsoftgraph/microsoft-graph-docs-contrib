@@ -106,7 +106,7 @@ Content-type: application/json
 
 {
 
-  "id": "7e382d02-4454-436b-b700-59c7dd77f466",
+  "id": "46184453-e63b-4f20-86c2-c557ed5d5df9",
   "requestType": "adminAdd",
   "requestState": "Submitted",
   "requestStatus": "Accepted"
@@ -411,8 +411,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
 
 ### Example 6: Request an update to answers for an assignment
 
