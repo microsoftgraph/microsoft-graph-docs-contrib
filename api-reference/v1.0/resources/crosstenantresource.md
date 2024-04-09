@@ -3,7 +3,7 @@ title: "crossTenantResource resource type"
 description: "Contains origin information about a synchronized object from a source Microsoft Entra tenant."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

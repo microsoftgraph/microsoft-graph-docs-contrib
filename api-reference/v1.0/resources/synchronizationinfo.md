@@ -3,7 +3,7 @@ title: "synchronizationInfo resource type"
 description: "Contains information about how an object was synchronized. This information is only populated for objects that are synchronized using cross-tenant synchronization or multitenant organizations."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

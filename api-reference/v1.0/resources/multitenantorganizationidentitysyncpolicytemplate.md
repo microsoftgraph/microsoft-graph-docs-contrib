@@ -3,7 +3,7 @@ title: "multiTenantOrganizationIdentitySyncPolicyTemplate resource type"
 description: "Defines an optional cross-tenant access policy template with user synchronization settings for multitenant organization tenants."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
