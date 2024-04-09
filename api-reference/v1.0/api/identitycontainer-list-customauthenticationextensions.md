@@ -56,7 +56,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions
+GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions?$filter=isOf('microsoft.graph.onTokenIssuanceStartCustomExtension')
 ```
 
 ### Response

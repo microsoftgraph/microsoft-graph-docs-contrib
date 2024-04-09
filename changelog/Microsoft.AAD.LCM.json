@@ -905,6 +905,24 @@
       "CreatedDateTime": "2022-10-10T00:00:00.0000000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "927921b0-bbc6-46cb-a99e-b58b3001b7ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "maximumRetries",
+          "ChangeType": "Addition",
+          "Description": "Added the **maximumRetries** property to the [customExtensionClientConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "customExtensionClientConfiguration"
+        }
+      ],
+      "Id": "927921b0-bbc6-46cb-a99e-b58b3001b7ef",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-05T15:31:43.4881624Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
     }
   ]
 }

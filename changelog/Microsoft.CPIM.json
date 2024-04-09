@@ -409,7 +409,7 @@
     {
       "ChangeList": [
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationConditions",
           "ChangeType": "Addition",
@@ -417,7 +417,7 @@
           "Target": "authenticationConditions"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationConditionsApplications",
           "ChangeType": "Addition",
@@ -425,7 +425,7 @@
           "Target": "authenticationConditionsApplications"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationConfigurationValidation",
           "ChangeType": "Addition",
@@ -433,7 +433,7 @@
           "Target": "authenticationConfigurationValidation"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "azureAdTokenAuthentication",
           "ChangeType": "Addition",
@@ -441,7 +441,7 @@
           "Target": "azureAdTokenAuthentication"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionAuthenticationConfiguration",
           "ChangeType": "Addition",
@@ -449,7 +449,7 @@
           "Target": "customExtensionAuthenticationConfiguration"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionClientConfiguration",
           "ChangeType": "Addition",
@@ -457,7 +457,7 @@
           "Target": "customExtensionClientConfiguration"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionEndpointConfiguration",
           "ChangeType": "Addition",
@@ -465,7 +465,7 @@
           "Target": "customExtensionEndpointConfiguration"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionOverwriteConfiguration",
           "ChangeType": "Addition",
@@ -473,7 +473,7 @@
           "Target": "customExtensionOverwriteConfiguration"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "genericError",
           "ChangeType": "Addition",
@@ -481,7 +481,7 @@
           "Target": "genericError"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "httpRequestEndpoint",
           "ChangeType": "Addition",
@@ -489,7 +489,7 @@
           "Target": "httpRequestEndpoint"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "onTokenIssuanceStartCustomExtensionHandler",
           "ChangeType": "Addition",
@@ -497,7 +497,7 @@
           "Target": "onTokenIssuanceStartCustomExtensionHandler"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "onTokenIssuanceStartHandler",
           "ChangeType": "Addition",
@@ -505,7 +505,7 @@
           "Target": "onTokenIssuanceStartHandler"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "onTokenIssuanceStartReturnClaim",
           "ChangeType": "Addition",
@@ -513,7 +513,7 @@
           "Target": "onTokenIssuanceStartReturnClaim"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationConditionApplication",
           "ChangeType": "Addition",
@@ -521,7 +521,7 @@
           "Target": "authenticationConditionApplication"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationEventListener",
           "ChangeType": "Addition",
@@ -529,7 +529,7 @@
           "Target": "authenticationEventListener"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "customAuthenticationExtension",
           "ChangeType": "Addition",
@@ -537,7 +537,7 @@
           "Target": "customAuthenticationExtension"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "customCalloutExtension",
           "ChangeType": "Addition",
@@ -545,7 +545,7 @@
           "Target": "customCalloutExtension"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Relationship",
           "ChangedApiName": "authenticationEventListeners",
           "ChangeType": "Addition",
@@ -553,7 +553,7 @@
           "Target": "identityContainer"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Relationship",
           "ChangedApiName": "customAuthenticationExtensions",
           "ChangeType": "Addition",
@@ -561,7 +561,7 @@
           "Target": "identityContainer"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "onTokenIssuanceStartCustomExtension",
           "ChangeType": "Addition",
@@ -569,7 +569,7 @@
           "Target": "onTokenIssuanceStartCustomExtension"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
           "ChangedApiName": "onTokenIssuanceStartListener",
           "ChangeType": "Addition",
@@ -577,7 +577,7 @@
           "Target": "onTokenIssuanceStartListener"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Method",
           "ChangedApiName": "validateAuthenticationConfiguration",
           "ChangeType": "Addition",
@@ -585,7 +585,7 @@
           "Target": "customAuthenticationExtension"
         },
         {
-          "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Method",
           "ChangedApiName": "validateAuthenticationConfiguration",
           "ChangeType": "Addition",
@@ -593,10 +593,10 @@
           "Target": "customAuthenticationExtension"
         }
       ],
-      "Id": "11c22e69-acd5-4c51-ba4c-a6c1e4bea6f9",
+      "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2024-02-22T17:10:58.9360594Z",
+      "CreatedDateTime": "2024-04-05T15:31:43.488417Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

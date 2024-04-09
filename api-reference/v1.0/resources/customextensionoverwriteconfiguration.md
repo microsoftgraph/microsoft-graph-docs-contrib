@@ -1,9 +1,9 @@
 ---
 title: "customExtensionOverwriteConfiguration resource type"
-description: "Configuration regarding properties of the custom extension which are can be overwritten per-event listener. If no values are provided, the properties on the custom extension are used."
+description: "Configuration regarding properties of the custom extension which can be overwritten per event listener. If no values are provided, the properties on the custom extension are used."
 author: "soneff"
 ms.localizationpriority: medium
-ms.subservice: "identity-and-sign-in"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -11,12 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Configuration regarding properties of the custom extension which are can be overwritten per-event listener. If no values are provided, the properties on the custom extension are used.
+Configuration regarding properties of the custom extension which can be overwritten per event listener. If no values are provided, the properties on the custom extension are used.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|Configuration regarding properties of the custom extension which are can be overwritten per-event listener. If no values are provided, the properties on the custom extension are used.|
+|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|Configuration regarding properties of the custom extension which can be overwritten per event listener. If no values are provided, the properties on the custom extension are used.|
 
 ## Relationships
 None.

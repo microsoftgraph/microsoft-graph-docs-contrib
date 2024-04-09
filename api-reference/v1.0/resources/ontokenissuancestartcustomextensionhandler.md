@@ -21,8 +21,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customExtension|[onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md)|The custom extension to invoke to handle the event when a token is about to be issued to your application.|
-|configuration|[customExtensionOverwriteConfiguration](../resources/customExtensionOverwriteConfiguration.md)|Configuration regarding properties of the custom extension which are can be overwritten per-event listener. If no values are provided, the properties on the custom extension are used.|
+|customExtension|[onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md)|The custom extension to invoke to handle the event when a token is about to be issued to your application. This object is autoexpanded.|
+|configuration|[customExtensionOverwriteConfiguration](../resources/customExtensionOverwriteConfiguration.md)|Configuration regarding properties of the custom extension which can be overwritten per event listener. If no values are provided, the properties on the custom extension are used.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
