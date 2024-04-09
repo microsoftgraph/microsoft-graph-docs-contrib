@@ -26,7 +26,7 @@ Represents the public information of a Pkcs12 certificate.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.pkcs12CertificateInformation"
