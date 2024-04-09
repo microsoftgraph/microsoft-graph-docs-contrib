@@ -420,7 +420,7 @@ The following example shows how an admin can request updates to an assignment to
 
 <!-- {
   "blockType": "request",
-  "name": "update_accesspackageassignmentrequest_from_accesspackageassignmentrequests_requestor_answer_to_approver"
+  "name": "update_accesspackageassignmentrequest_from_assignmentrequests_requestor_answer_to_approver"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests

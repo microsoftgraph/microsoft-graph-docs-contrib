@@ -433,3 +433,103 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
+### Example 6: Request an update to answers for an assignment
+
+The following example shows how an admin can request updates to an assignment to edit their responses to questions that were answered while requesting the assignment.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentrequest_from_accesspackageassignmentrequests_requestor_answer_to_approver"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.accessPackageAssignmentRequest",
+    "id": "7a6ab703-0780-4b37-8445-81f679b2d75c",
+    "requestType": "adminUpdate",
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "UpdatedAnswerValue",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "My updated answer.",
+            "displayValue": "This is my updated answer to the question.",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "id": "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6"
+            }
+        }
+    ],
+    "assignment": {
+        "id": "44c741c1-2cf4-40db-83b6-e0112f8e5a83"
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentRequests/$entity",
+    "id": "0c471116-e439-40a6-8441-fe739dd48dab",
+    "requestType": "adminUpdate",
+    "state": "submitted",
+    "status": "Accepted",
+    "createdDateTime": null,
+    "completedDateTime": null,
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": "notSpecified"
+        }
+    },
+    "answers": [
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "UpdatedAnswerValue",
+            "displayValue": "This is the answer to a multiple choice question",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+                "id": "8fe745e7-80b2-490d-bd22-4e708c77288c"   
+            }         
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+            "value": "My updated answer.",
+            "displayValue": "This is my updated answer to the question.",
+            "answeredQuestion": {
+                "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                "id": "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6"
+            }
+        }
+    ]
+}
+```
