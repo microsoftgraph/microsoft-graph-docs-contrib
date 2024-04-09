@@ -40,7 +40,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
   "id": "String (identifier)",
-  "priority": "Integer",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
