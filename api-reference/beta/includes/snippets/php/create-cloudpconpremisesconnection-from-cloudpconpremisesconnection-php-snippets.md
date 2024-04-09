@@ -5,12 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\CloudPcOnPremisesConnection;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CloudPcOnPremisesConnection();
 $requestBody->setDisplayName('test-canary-02');
+$requestBody->setConnectionType(new CloudPcOnPremisesConnectionType('hybridAzureADJoin'));
 $requestBody->setType(new CloudPcOnPremisesConnectionType('hybridAzureADJoin'));
 $requestBody->setSubscriptionId('0ac520ee-14c0-480f-b6c9-0a90c585ffff');
 $requestBody->setAdDomainName('contoso001.com');

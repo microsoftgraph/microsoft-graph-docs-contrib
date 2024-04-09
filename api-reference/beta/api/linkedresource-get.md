@@ -3,12 +3,14 @@ title: "Get linkedResource"
 description: "Read the properties and relationships of a linkedResource object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
 # Get linkedResource
+
 Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [linkedResource](../resources/linkedresource.md) object.
@@ -35,7 +37,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/lin
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -47,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [linkedResourc
 ## Examples
 
 ### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,7 +96,8 @@ GET https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,12 +110,12 @@ Content-Type: application/json
 
 {
   "value": {
-     "@odata.type": "#microsoft.graph.linkedResource",
-      "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
-      "webUrl": "http://microsoft.com",
-      "applicationName": "Microsoft",
-      "displayName": "Microsoft",
-      "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
+    "@odata.type": "#microsoft.graph.linkedResource",
+    "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
+    "webUrl": "http://microsoft.com",
+    "applicationName": "Microsoft",
+    "displayName": "Microsoft",
+    "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
   }
 }
 ```

@@ -5,8 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessPackageAssignmentPolicy;
+use Microsoft\Graph\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Generated\Models\AccessPackageAssignmentRequestorSettings;
+use Microsoft\Graph\Generated\Models\AccessPackageAssignmentApprovalSettings;
+use Microsoft\Graph\Generated\Models\AccessPackageApprovalStage;
+use Microsoft\Graph\Generated\Models\SubjectSet;
+use Microsoft\Graph\Generated\Models\SingleUser;
+use Microsoft\Graph\Generated\Models\AccessPackageQuestion;
+use Microsoft\Graph\Generated\Models\AccessPackageMultipleChoiceQuestion;
+use Microsoft\Graph\Generated\Models\AccessPackageAnswerChoice;
+use Microsoft\Graph\Generated\Models\AccessPackageTextInputQuestion;
+use Microsoft\Graph\Generated\Models\AccessPackageLocalizedText;
+use Microsoft\Graph\Generated\Models\AccessPackage;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();

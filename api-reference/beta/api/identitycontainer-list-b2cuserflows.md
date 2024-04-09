@@ -4,7 +4,7 @@ description: "Retrieve a list of b2cIdentityUserFlow objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List b2cIdentityUserFlows
@@ -24,10 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identitycontainer_list_b2cuserflows" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identitycontainer-list-b2cuserflows-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
@@ -47,7 +44,7 @@ For more information, see [OData query parameters](/graph/query-parameters).
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -265,7 +262,6 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
     "Error: list_b2cUserFlows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: list_b2cUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: listb2cUserFlowsexpand/container/userFlowTypeVersion:
       Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
     "Error: listb2cUserFlowsexpand/container/userFlowTypeVersion:

@@ -5,8 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\BookingBusiness;
+use Microsoft\Graph\Generated\Models\PhysicalAddress;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new BookingBusiness();
@@ -24,6 +27,6 @@ $requestBody->setEmail('manager@fourthcoffee.com');
 $requestBody->setWebSiteUrl('https://www.fourthcoffee.com');
 $requestBody->setDefaultCurrencyIso('USD');
 
-$result = $graphServiceClient->bookingBusinesses()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->post($requestBody)->wait();
 
 ```

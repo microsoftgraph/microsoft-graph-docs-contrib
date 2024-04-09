@@ -3,7 +3,7 @@ title: "Update operationApprovalPolicy"
 description: "Update the properties of a operationApprovalPolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ PATCH /deviceManagement/operationApprovalPolicies/{operationApprovalPolicyId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -48,12 +50,14 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of the OperationApprovalPolicy. This property is read-only.|
-|displayName|String|The display name of this OperationApprovalPolicy|
-|description|String|The description of this OperationApprovalPolicy|
-|lastModifiedDateTime|DateTimeOffset|The last modified date and time of this OperationApprovalPolicy. This property is read-only.|
-|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|The policy type for this OperationApprovalPolicy. Possible values are: `deviceActions`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `deviceErase`, `deviceDisableActivationLock`, `windowsEnrollment`, `compliancePolicies`, `configurationPolicies`, `appProtectionPolicies`, `policySets`, `filters`, `endpointSecurity`, `apps`, `scripts`, `roles`, `deviceResetPasscode`, `organizationalMessages`, `unknownFutureValue`.|
-|approverGroupIds|String collection|The group IDs for the approvers for this OperationApprovalPolicy|
+|id|String|The unique identifier of the policy. This ID is assigned at when the policy is created. Read-only. This property is read-only.|
+|displayName|String|Indicates the display name of the policy. Maximum length of the display name is 128 characters. This property is required when the policy is created, and is defined by the user to identify the policy.|
+|description|String|Indicates the description of the policy. Maximum length of the description is 1024 characters. This property is not required, but can be used by the user to describe the policy.|
+|lastModifiedDateTime|DateTimeOffset|Indicates the last DateTime that the policy was modified. The value cannot be modified and is automatically populated whenever values in the request are updated. For example, when the 'policyType' property changes from `apps` to `scripts`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default. Read-only. This property is read-only.|
+|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|Indicates the policy type for the policy. Possible values are: `deviceAction`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `deviceErase`, `deviceDisableActivationLock`, `windowsEnrollment`, `compliancePolicy`, `configurationPolicy`, `appProtectionPolicy`, `policySet`, `filter`, `EndpointSecurityPolicy`, `app`, `script`, `role`, `deviceResetPasscode`, `customOrganizationalMessage`. Possible values are: `unknown`, `deviceAction`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `deviceErase`, `deviceDisableActivationLock`, `windowsEnrollment`, `compliancePolicy`, `configurationPolicy`, `appProtectionPolicy`, `policySet`, `filter`, `endpointSecurityPolicy`, `apps`, `script`, `role`, `deviceResetPasscode`, `customOrganizationalMessage`, `unknownFutureValue`.|
+|policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|Indicates the applicable platform for the policy. Possible values are: `notApplicable`, `androidDeviceAdministrator`, `androidEnterprise`, `iOSiPadOS`, `macOS`, `windows10AndLater`, `windows81AndLater`, `windows10X`. Default value is `notApplicable`. Possible values are: `notApplicable`, `androidDeviceAdministrator`, `androidEnterprise`, `iOSiPadOS`, `macOS`, `windows10AndLater`, `windows81AndLater`, `windows10X`, `unknownFutureValue`.|
+|policySet|[operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md)|Indicates areas of the Intune UX that could support MAA UX for the current logged in user. This property is required, and is defined by the user in order to correctly show the expected experience.|
+|approverGroupIds|String collection|The Microsoft Entra ID (Azure AD) security group IDs for the approvers for the policy. This property is required when the policy is created, and is defined by the user to define the possible approvers for the policy.|
 
 
 
@@ -67,13 +71,19 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/operationApprovalPolicies/{operationApprovalPolicyId}
 Content-type: application/json
-Content-length: 238
+Content-length: 468
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
-  "policyType": "deviceWipe",
+  "policyType": "deviceAction",
+  "policyPlatform": "androidDeviceAdministrator",
+  "policySet": {
+    "@odata.type": "microsoft.graph.operationApprovalPolicySet",
+    "policyType": "deviceAction",
+    "policyPlatform": "androidDeviceAdministrator"
+  },
   "approverGroupIds": [
     "Approver Group Ids value"
   ]
@@ -85,7 +95,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 351
+Content-Length: 581
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalPolicy",
@@ -93,7 +103,13 @@ Content-Length: 351
   "displayName": "Display Name value",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "policyType": "deviceWipe",
+  "policyType": "deviceAction",
+  "policyPlatform": "androidDeviceAdministrator",
+  "policySet": {
+    "@odata.type": "microsoft.graph.operationApprovalPolicySet",
+    "policyType": "deviceAction",
+    "policyPlatform": "androidDeviceAdministrator"
+  },
   "approverGroupIds": [
     "Approver Group Ids value"
   ]

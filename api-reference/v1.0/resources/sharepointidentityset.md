@@ -3,7 +3,7 @@ author: tushar20
 title: sharePointIdentitySet resource type
 ms.localizationpriority: medium
 description: "Represents a keyed collection of sharePointIdentity and identity resources."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # sharePointIdentitySet resource type

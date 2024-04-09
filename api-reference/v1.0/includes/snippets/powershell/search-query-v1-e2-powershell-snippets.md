@@ -10,16 +10,17 @@ $params = @{
 	requests = @(
 		@{
 			entityTypes = @(
-				"listItem"
-			)
-			query = @{
-				queryString = "contoso"
-				queryTemplate = '{searchTerms} CreatedBy:Bob"
-			}
-			from = 0
-			size = 25
+			"listItem"
+		)
+		region = "US"
+		query = @{
+			queryString = "contoso"
+			queryTemplate = '{searchTerms} CreatedBy:Bob"
 		}
-	)
+		from = 0
+		size = 25
+	}
+)
 }
 
 Invoke-MgQuerySearch -BodyParameter $params

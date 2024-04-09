@@ -15,7 +15,7 @@ Delete the [profileCardProperty](../resources/profilecardproperty.md) object spe
 
 [!INCLUDE [profilecardproperty-add-remove-note](../../../includes/profilecardproperty-add-remove-note.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -38,7 +38,7 @@ DELETE /admin/people/profileCardProperties/{id}
 
 | Name          | Description    |
 |:--------------|:---------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -4,7 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.booking_appointment import BookingAppointment
+from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
+from msgraph.generated.models.booking_reminder import BookingReminder
+from msgraph.generated.models.location import Location
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.booking_customer_information_base import BookingCustomerInformationBase
+from msgraph.generated.models.booking_customer_information import BookingCustomerInformation
+from msgraph.generated.models.outlook_geo_coordinates import OutlookGeoCoordinates
+from msgraph.generated.models.booking_question_answer import BookingQuestionAnswer
 
 graph_client = GraphServiceClient(credentials, scopes)
 

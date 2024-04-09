@@ -3,7 +3,7 @@ title: "userRegistrationMethodSummary resource type"
 description: "Represents the summary of the number of users registered for each authentication method."
 author: "kvenkit"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the summary of number of users registered for each authentication method.
+Represents the summary of number of users registered for each authentication method. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
 ## Methods
 
@@ -28,7 +28,7 @@ Represents the summary of number of users registered for each authentication met
 |userRoles|includedUserRoles|The role type of the user. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`, `unknownFutureValue`.|
 |userTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`, `unknownFutureValue`.|
 
-The value `privilegedAdmin` consists of the following privileged admin roles:
+The value `privilegedAdmin` consists of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 * Global Administrator
 * Security Administrator

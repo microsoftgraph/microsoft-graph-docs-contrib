@@ -3,7 +3,7 @@ title: "Delete crossTenantIdentitySyncPolicyPartner"
 description: "Delete the user synchronization policy for a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ DELETE /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

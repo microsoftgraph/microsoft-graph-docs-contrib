@@ -5,20 +5,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\User;
+use Microsoft\Graph\Generated\Models\ObjectIdentity;
+use Microsoft\Graph\Generated\Models\PasswordProfile;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new User();
 $requestBody->setDisplayName('John Smith');
 $identitiesObjectIdentity1 = new ObjectIdentity();
 $identitiesObjectIdentity1->setSignInType('userName');
-$identitiesObjectIdentity1->setIssuer('contoso.onmicrosoft.com');
+$identitiesObjectIdentity1->setIssuer('contoso.com');
 $identitiesObjectIdentity1->setIssuerAssignedId('johnsmith');
 $identitiesArray []= $identitiesObjectIdentity1;
 $identitiesObjectIdentity2 = new ObjectIdentity();
 $identitiesObjectIdentity2->setSignInType('emailAddress');
-$identitiesObjectIdentity2->setIssuer('contoso.onmicrosoft.com');
+$identitiesObjectIdentity2->setIssuer('contoso.com');
 $identitiesObjectIdentity2->setIssuerAssignedId('jsmith@yahoo.com');
 $identitiesArray []= $identitiesObjectIdentity2;
 $identitiesObjectIdentity3 = new ObjectIdentity();

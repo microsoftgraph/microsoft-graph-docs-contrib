@@ -1,26 +1,6 @@
 {
     "redirections": [
         {
-            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageassignmentrequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-post-assignmentrequests?view=graph-rest-1.0",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-assignmentrequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageassignmentrequests?view=graph-rest-beta",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageassignmentrequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-list-assignmentrequests?view=graph-rest-1.0",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-assignmentrequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignmentrequests?view=graph-rest-beta",
-            "redirect_document_id": false
-        },
-        {
             "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageassignmentpolicies.md",
             "redirect_url": "/graph/api/entitlementmanagement-post-assignmentpolicies?view=graph-rest-1.0",
             "redirect_document_id": false
@@ -68,6 +48,86 @@
         {
             "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-assignments.md",
             "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignments?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageresourceenvironment.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-resourceenvironments?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-resourceenvironments.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageresourceenvironment?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageresourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-resourcerequests?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-resourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageresourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-resourcerequests?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-resourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageresourcerequests?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackagecatalog-list-accesspackageresources.md",
+            "redirect_url": "/graph/api/accesspackagecatalog-list-resources?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackagecatalog-list-resources.md",
+            "redirect_url": "/graph/api/accesspackagecatalog-list-accesspackageresources?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackagecatalog-list-accesspackageresourceroles.md",
+            "redirect_url": "/graph/api/accesspackagecatalog-list-resourceroles?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackagecatalog-list-resourceroles.md",
+            "redirect_url": "/graph/api/accesspackagecatalog-list-accesspackageresourceroles?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackage-list-accesspackageresourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-list-resourcerolescopes?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackage-list-resourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-list-accesspackageresourcerolescopes?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackage-post-accesspackageresourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-post-resourcerolescopes?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackage-post-resourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackage-delete-accesspackageresourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-delete-resourcerolescopes?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackage-delete-resourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-delete-accesspackageresourcerolescopes?view=graph-rest-beta",
             "redirect_document_id": false
         },
         {

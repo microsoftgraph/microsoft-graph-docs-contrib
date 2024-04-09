@@ -28,16 +28,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /permissionsManagement/scheduledPermissionsRequests/{scheduledPermissionsRequestId}/cancelAll
+POST /identityGovernance/permissionsManagement/scheduledPermissionsRequests/{scheduledPermissionsRequestId}/cancelAll
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -47,15 +47,21 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "scheduledpermissionsrequestthis.cancelall"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/permissionsManagement/scheduledPermissionsRequests/{scheduledPermissionsRequestId}/cancelAll
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests/{scheduledPermissionsRequestId}/cancelAll
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/scheduledpermissionsrequestthiscancelall-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

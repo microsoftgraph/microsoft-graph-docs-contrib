@@ -3,7 +3,7 @@ title: "activityBasedTimeoutPolicy resource type"
 description: "Represents a policy that can control the idle timeout for web sessions for applications that support activity-based timeout functionality."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -64,7 +64,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

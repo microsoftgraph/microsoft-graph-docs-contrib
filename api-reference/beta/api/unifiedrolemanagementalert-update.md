@@ -3,7 +3,7 @@ title: "Update unifiedRoleManagementAlert"
 description: "Dismiss a unifiedRoleManagementAlert object by setting the isActive property to false."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ PATCH /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAler
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request to dismiss an alert by specifying the alert id and setting the isActive to false.
+The following example shows a request to dismiss an alert by specifying the alert id and setting the isActive to false.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -4,7 +4,7 @@ description: "Add an identityProvider to a b2cIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Add a userFlowIdentityProvider
@@ -22,24 +22,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "b2cidentityuserflow_userflowidentityproviders_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/b2cidentityuserflow-userflowidentityproviders-update-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External ID user flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders/$ref
+POST /identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders/$ref
 ```
 
 ## Request headers
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -66,18 +63,13 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders/$ref
+POST https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signup/userflowIdentityProviders/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}",
-  "@odata.type": "#microsoft.graph.identityProvider"
+  "@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-b2cuserflows-userflowidentityproviders-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-b2cuserflows-userflowidentityproviders-javascript-snippets.md)]

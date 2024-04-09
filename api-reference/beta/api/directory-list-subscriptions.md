@@ -3,7 +3,7 @@ title: "List subscriptions"
 description: "Get the list of commercial subscriptions that an organization has acquired."
 ms.localizationpriority: medium
 author: "arp19690"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

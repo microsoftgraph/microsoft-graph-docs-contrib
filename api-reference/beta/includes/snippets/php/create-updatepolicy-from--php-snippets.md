@@ -5,8 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\UpdatePolicy;
+use Microsoft\Graph\Generated\Models\DeploymentAudience;
+use Microsoft\Graph\Generated\Models\ComplianceChange;
+use Microsoft\Graph\Generated\Models\ContentApproval;
+use Microsoft\Graph\Generated\Models\ComplianceChangeRule;
+use Microsoft\Graph\Generated\Models\ContentApprovalRule;
+use Microsoft\Graph\Generated\Models\DriverUpdateFilter;
+use Microsoft\Graph\Generated\Models\DeploymentSettings;
+use Microsoft\Graph\Generated\Models\ScheduleSettings;
+use Microsoft\Graph\Generated\Models\RateDrivenRolloutSettings;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UpdatePolicy();

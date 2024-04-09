@@ -5,8 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Deployment;
+use Microsoft\Graph\Generated\Models\CatalogContent;
+use Microsoft\Graph\Generated\Models\FeatureUpdateCatalogEntry;
+use Microsoft\Graph\Generated\Models\DeploymentSettings;
+use Microsoft\Graph\Generated\Models\ScheduleSettings;
+use Microsoft\Graph\Generated\Models\RateDrivenRolloutSettings;
+use Microsoft\Graph\Generated\Models\MonitoringSettings;
+use Microsoft\Graph\Generated\Models\MonitoringRule;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Deployment();

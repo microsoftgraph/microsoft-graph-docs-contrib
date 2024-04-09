@@ -3,7 +3,7 @@ title: "microsoftCustomTrainingSetting resource type"
 description: "Represents a Microsoft custom training setting for simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

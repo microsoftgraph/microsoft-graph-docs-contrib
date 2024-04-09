@@ -4,14 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-SiteGetApplicableContentTypesForListCollectionPage getApplicableContentTypesForList = graphClient.sites("{siteId}")
-	.getApplicableContentTypesForList(SiteGetApplicableContentTypesForListParameterSet
-		.newBuilder()
-		.withListId("{list-id}")
-		.build())
-	.buildRequest()
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+var result = graphClient.sites().bySiteId("{site-id}").getApplicableContentTypesForListWithListId("{listId}").get();
+
 
 ```

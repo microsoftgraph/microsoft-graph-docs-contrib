@@ -3,7 +3,7 @@ title: "sslCertificateEntity resource type"
 description: "Represents an entity related to an sslCertificate."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

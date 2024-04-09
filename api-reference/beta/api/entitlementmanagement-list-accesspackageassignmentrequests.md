@@ -3,7 +3,7 @@ title: "List accessPackageAssignmentRequests"
 description: "Retrieve a list of accessPackageAssignmentRequest objects."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -25,6 +25,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-list-accesspackageassignmentrequests-permissions.md)]
 
 ## HTTP request
+
+> [!NOTE]
+> This API will be retired soon. Use the [List assignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md) API instead.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -50,7 +53,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

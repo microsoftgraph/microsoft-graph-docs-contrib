@@ -3,7 +3,7 @@ title: "privacyProfile resource type"
 description: "Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "adimitui"
 ---
 
@@ -23,7 +23,7 @@ Represents a company's privacy profile, which includes a privacy statement URL a
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

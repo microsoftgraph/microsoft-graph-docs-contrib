@@ -27,8 +27,8 @@ The following limits apply to requests on the assignment service API:
 
 | Request type                 | Limit per app per tenant     | Limit per tenant for all apps |
 |---------------------------|------------------------------|----------------------------|
-| Any         | 500 requests per 10 seconds   | 1000 requests per 10 seconds
-|Any          | 15,000 requests per 3600 seconds|30,000 requests per 3600 seconds|
+| Any         | 500 requests per 10 seconds   | 1,000 requests per 10 seconds
+|Any          | 15,000 requests per 3,600 seconds|30,000 requests per 3,600 seconds|
 | GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |
 
 
@@ -59,9 +59,9 @@ The preceding limits apply to the following resources:
 
 | Resource      | Limits per app    |
 | -------------- | ------------ |
-| [Calls](/graph/api/resources/call) | 15,000 requests in a 60-second period, per application per tenant |
-| [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence)   | 1500 requests in a 30-second period, per application per tenant |
+| [Calls](/graph/api/resources/call) | 50,000 requests in a 15-second period, per application per tenant |
+| [Meeting information](/graph/api/resources/meetinginfo)   | 2,000 meetings/user each month |
+| [Presence](/graph/api/resources/presence)   | 1,500 requests in a 30-second period, per application per tenant |
 | [Virtual event](/graph/api/resources/virtualevent) | 10,000 requests/app each month |
 
 ### Call records limits
@@ -72,7 +72,8 @@ The limits listed in the following table apply to the following resource:
 
 | Limit type      | Limit    |
 | -------------- | ------------ |
-| Per tenant | 10,000 requests per 20 seconds |
+| Per application for all tenants | 15,000 requests per 20 seconds |
+| Per tenant for all applications | 10,000 requests per 20 seconds |
 | Per application per tenant  | 1,500 requests per 20 seconds |
 | Per call record | 10 requests per 20 seconds (first page) <br/> 50 requests per 5 minutes (subsequent pages) |
 
@@ -100,16 +101,16 @@ The preceding information applies to the following resources:
 
 | Request type |  Limit per app per tenant |
 | ------------ | ------------------------ |
-| Any | 5 requests per 10 seconds |
+| Any | Five requests per 10 seconds |
 
 The preceding limits apply to the following resources:
 
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
 ### Identity and access reports best practices
-Microsoft Entra reporting APIs are throttled when Microsoft Entra ID receives too many calls during a given timeframe from a tenant or app. Calls may also be throttled if the service takes too long to respond. If your requests still fail with a `429 Too Many Requests` error code despite applying the [best practices to handle throttling](throttling.md#best-practices-to-handle-throttling), try reducing the amount of data returned. Try these approaches first:
+Microsoft Entra reporting APIs are throttled when Microsoft Entra ID receives too many calls during a given timeframe from a tenant or app. Calls might also be throttled if the service takes too long to respond. If your requests still fail with a `429 Too Many Requests` error code despite applying the [best practices to handle throttling](throttling.md#best-practices-to-handle-throttling), try reducing the amount of data returned. Try these approaches first:
 - Use filters to target your query to just the data you need. If you only need a certain type of event or a subset of users, for example, filter out other events using the `$filter` and `$select` query parameters to reduce the size of your response object and the risk of throttling.
-- If you need a broad set of Microsoft Entra ID reporting data, use `$filter` on the **createdDateTime** to limit the number of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you are being throttled, you can begin with a call that requests three days of data and iterate with shorter timespans until your requests are no longer throttled.
+- If you need a broad set of Microsoft Entra ID reporting data, use `$filter` on the **createdDateTime** to limit the number of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you're being throttled, you can begin with a call that requests three days of data and iterate with shorter timespans until your requests are no longer throttled.
 
 
 ## Identity and access service limits
@@ -170,7 +171,7 @@ Other factors that affect a request cost:
 - Using `$select` decreases cost by 1
 - Using `$expand` increases cost by 1
 - Using `$top` with a value of less than 20 decreases cost by 1
-- Creating a user in an Azure AD B2C tenant increases cost by 4
+- Creating a user in a Microsoft Entra ID B2C tenant increases cost by 4
 
 > [!NOTE]
 > A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
@@ -179,7 +180,7 @@ Other factors that affect a request cost:
 
 #### Request headers
 
-- **x-ms-throttle-priority** - If the header doesn't exist or is set to any other value, it indicates a normal request. We recommend setting priority to `high` only for the requests initiated by the user. The values of this header can be the following:
+- **x-ms-throttle-priority** - If the header doesn't exist or is set to any other value, it indicates a normal request. We recommend setting priority to `high` only for the requests initiated by the user. This header can have one of the following values:
   - Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
   - Normal - Default if no value is provided. Indicates that the request is default priority.
   - High - Indicates that the request is high priority. Throttling this request causes user-visible failures.
@@ -190,7 +191,7 @@ Other factors that affect a request cost:
 #### Regular responses requests
 
 - **x-ms-resource-unit** - Indicates the resource unit used for this request. Values are positive integers.
-- **x-ms-throttle-limit-percentage** - Returned only when the application consumed more than 0.8 of its limit. The value ranges from 0.8 to 1.8 and is a percentage of the use of the limit. The value can be used by the callers to set up an alert and take action.
+- **x-ms-throttle-limit-percentage** - Returned only when the application consumed more than 0.8 of its limit. The value ranges from 0.8 to 1.8 and is a percentage of the use of the limit. Callers can use this value to set up an alert and take action.
 
 #### Throttled responses requests
 
@@ -215,7 +216,7 @@ Other factors that affect a request cost:
 
 | Request type | Limit per tenant |
 | ------------ | ---------------- |
-| POST on `exportPersonalData` | 1000 requests per day for any subject and 100 per subject per day |
+| POST on `exportPersonalData` | 1,000 requests per day for any subject and 100 per subject per day |
 | Any other request | 10,000 requests per hour |
 
 The preceding limits apply to the following resources:
@@ -229,7 +230,7 @@ The preceding limits apply to the following resources:
 
 | Request type | Limit per tenant for all apps |
 | ------------ | ------- |
-| Any | 1 request per second |
+| Any | One request per second |
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
 
@@ -248,7 +249,7 @@ For email, the resource is a unique network message ID/recipient pair. For examp
 
 | Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|
-| POST                      | 150 requests per 15 minutes and 10,000 requests per 24 hours | 1 request per 15 minutes and 3 requests per 24 hours |
+| POST                      | 150 requests per 15 minutes and 10,000 requests per 24 hours | One request per 15 minutes and 3 requests per 24 hours |
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-information-protection.md)]
 
@@ -262,7 +263,7 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 | Limit                                                      | Applies to      |
 |------------------------------------------------------------|-----------------|
 | 10,000 API requests in a 10-minute period                  | v1.0 and beta endpoints |
-| 4 concurrent requests                                      | v1.0 and beta endpoints   |
+| Four concurrent requests                                      | v1.0 and beta endpoints   |
 
 The preceding limits apply to the following resources:
 
@@ -320,7 +321,7 @@ The following limits apply to any request on `/reports`.
 | Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
 | Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
 
-The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes count as one request out of 14 for each API, not two requests out of 14 for both.
 
 The preceding limits apply to all [usage reports](/graph/api/resources/report) resources.
 
@@ -336,7 +337,7 @@ Limits are expressed as requests per second (rps).
 | GET installedApps for [chat](/graph/api/chat-get-installedapps), [user](/graph/api/userteamwork-get-installedapps),  [team](/graph/api/team-get-installedapps) | 30 rps                          | 600 rps |
 | GET [appCatalogs](/graph/api/appcatalogs-list-teamsapps)   | 30 rps                          | 600 rps |
 | POST [channel](/graph/api/channel-post) |  30 rps                         | 300 rps  |
-| POST tab for [channel](/graph/api/channel-post-tabs), [chat](/graph/api/chat-post-tabs)|  30 rps                         | 300 rps  |
+| POST tab for [channel](/graph/api/channel-post-tabs) or [chat](/graph/api/chat-post-tabs)|  30 rps                         | 300 rps  |
 | POST installedApps for [chat](/graph/api/chat-post-installedapps), [user](/graph/api/userteamwork-post-installedapps), [team](/graph/api/team-post-installedapps) |  30 rps                         | 300 rps  |
  POST [appCatalogs](/graph/api/teamsapp-publish)    |  30 rps                         | 300 rps  |
 | PATCH [team](/graph/api/team-update), [channel](/graph/api/channel-patch), [tab](/graph/api/channel-patch-tabs)|  30 rps                         | 300 rps  |
@@ -346,8 +347,8 @@ Limits are expressed as requests per second (rps).
 | DELETE   [appCatalogs](/graph/api/teamsapp-delete)      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, [joinedTeams](/graph/api/user-list-joinedteams)              |  30 rps                         | 300 rps  |
 | POST /[teams](/graph/api/team-post) | 10 rps | 100 rps  |
-| PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams)| 6 rps | 150 rps  |
-| POST /```{team-id}```/ [clone](/graph/api/team-clone) | 6 rps | 150 rps  |
+| PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams)| Six rps | 150 rps  |
+| POST /```{team-id}```/ [clone](/graph/api/team-clone) | Six rps | 150 rps  |
 | GET [channel message](/graph/api/chatmessage-get)  | 20 rps | 200 rps |
 | GET 1:1/[group chat message](/graph/api/chat-get#example-3-get-a-chat-and-all-its-members)  | 20 rps | 200 rps |
 | POST [channel message](/graph/api/channel-post-messages) | 50 rps | 500 rps |
@@ -355,9 +356,10 @@ Limits are expressed as requests per second (rps).
 | GET /teams/```{team-id}```/[schedule](/graph/api/schedule-get) and all APIs under this path | 30 rps | 600 rps |
 | POST /teams/```{team-id}```/[schedule](/graph/api/schedule-share) and all APIs under this path | 30 rps | 300 rps |
 |PUT /teams/```{team-id}```/[schedule](/graph//api/team-put-schedule) and all APIs under this path | 30 rps | 300 rps |
-| POST /teams/```{team-id}```/[sendActivityNotification](/graph/api/team-sendactivitynotification) | 5 rps | 50 rps |
-| POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | 5 rps | 50 rps |
-| POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | 5 rps | 50 rps |
+| POST /teams/```{team-id}```/[sendActivityNotification](/graph/api/team-sendactivitynotification) | Five rps | 50 rps |
+| POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | Five rps | 50 rps |
+| POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | Five rps | 50 rps |
+| POST /teamwork/[sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients) | Two rps | 20 rps |
 | GET /teams/```{team-id}```/[members](/graph/api/team-get-members) | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/[channels](/graph/api/channel-get) | 60 rps | 1200 rps |
 | GET /teams/```{team-id}```/channels/```{channel-id}```/[members](/graph/api/channel-get-members) | 60 rps | 1200 rps |
@@ -366,9 +368,9 @@ Limits are expressed as requests per second (rps).
 | Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps |
 | Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
-A maximum of 4 requests per second per app can be issued on a given team or channel.
-A maximum of 3000 messages per app per day can be sent to a given channel 
-(except when using [migration mode](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+A maximum of four requests per second per app can be issued on a given team or channel.
+
+A maximum of one request per second per user can be issued when doing POST message in a given chat or channel (This throttling limit doesn't apply to [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
@@ -385,7 +387,7 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 | Limit type | Limit per app per user (delegated context) | Limit per app (app-only context) |
 | ------------ | ------- | ------- |
 | Requests rate | 120 requests per 1 minute and 400 per 1 hour | 240 requests per 1 minute and 800 per 1 hour |
-| Concurrent requests | 5 concurrent requests | 20 concurrent requests |
+| Concurrent requests | Five concurrent requests | 20 concurrent requests |
 
 The preceding limits apply to the following resources:
 
@@ -411,13 +413,13 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 
 ### Limits per app ID and mailbox combination
 
-The Outlook service applies limits to each app ID and mailbox combination - that is, a specific app accessing a specific user or group mailbox. Exceeding the limit for one mailbox does not affect the ability of the application to access another mailbox.
+The Outlook service applies limits to each app ID and mailbox combination - that is, a specific app accessing a specific user or group mailbox. Exceeding the limit for one mailbox doesn't affect the ability of the application to access another mailbox.
 
 | Limit                                                             | Applies to              |
 |-------------------------------------------------------------------|-------------------------|
 | 10,000 API requests in a 10 minute period                         | v1.0 and beta endpoints |
-| 4 concurrent requests                                             | v1.0 and beta endpoints |
-| 150 megabytes (MB) upload (PATCH, POST, PUT) in a 5 minute period | v1.0 and beta endpoints |
+| Four concurrent requests                                             | v1.0 and beta endpoints |
+| 150 megabytes (MB) upload (PATCH, POST, PUT) in a 5-minute period | v1.0 and beta endpoints |
 
 ### Outlook service resources
 
@@ -433,20 +435,20 @@ The Outlook service applies limits to each app ID and mailbox combination - that
 
 ### Outlook service limits for JSON batching
 
-When an app makes a [JSON batch](json-batching.md) request that consists of multiple, _unordered_ individual requests to the Outlook service, by default, Microsoft Graph sends the Outlook service up to 4 individual requests from the batch at a time, regardless of the target mailboxes of those requests. The Outlook service can execute these requests in parallel at any point, also irrespective of the target mailbox. Since Microsoft Graph sends only up to 4 requests to run in parallel, the execution of that batch stays within [Outlook's concurrency limits for the same mailbox](#limits-per-app-id-and-mailbox-combination). 
+When an app makes a [JSON batch](json-batching.md) request that consists of multiple, _unordered_ individual requests to the Outlook service, by default, Microsoft Graph sends the Outlook service up to four individual requests from the batch at a time, regardless of the target mailboxes of those requests. The Outlook service can execute these requests in parallel at any point, also irrespective of the target mailbox. Since Microsoft Graph sends only up to four requests to run in parallel, the execution of that batch stays within [Outlook's concurrency limits for the same mailbox](#limits-per-app-id-and-mailbox-combination). 
 
 Alternatively, an app can use the [dependsOn](json-batching.md#sequencing-requests-with-the-dependson-property) property to order requests within a batch. Microsoft Graph sends the Outlook service one request from the batch at a time following the specified order, and Outlook executes each individual request in the batch sequentially.
   
 In other words, when targeting the _same mailbox_, apps that allow multiple batch requests to run in parallel can use either of the following approaches: 
 - If the individual requests don't have to be ordered, have individual requests from a single batch run concurrently. 
-- Use the `dependsOn` property to order requests in a batch, and have up to 4 such batch requests run concurrently.
+- Use the `dependsOn` property to order requests in a batch, and have up to four such batch requests run concurrently.
 
 ## Project Rome service limits
 
 | Request type | Limit per user for all apps |
 | ------------ | --------------------------- |
-| GET          | 400 requests per 5 minutes and 12,000 requests per 1 day |
-| POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
+| GET          | 400 requests per 5 minutes and 12,000 requests per one day |
+| POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8,000 requests per one day |
 
 The preceding limits apply to the following resources:
 
@@ -460,9 +462,9 @@ The following limits apply to any request on `/security`.
 | Operation                  | Limit per app per tenant     |
 |----------------------------|------------------------------|
 | Any operation on `alert`, `securityActions`,  `secureScore` | 150 requests per minute      |
-| Any operation on `tiIndicator` | 1000 requests per minute |
+| Any operation on `tiIndicator` | 1,000 requests per minute |
 | Any operation on `secureScore` or `secureScorecontrolProfile` | 10,000 API requests in a 10-minute period |
-| Any operation on `secureScore` or `secureScorecontrolProfile` | 4 concurrent requests |
+| Any operation on `secureScore` or `secureScorecontrolProfile` | Four concurrent requests |
 
 ## Security eDiscovery service limits
 
@@ -470,7 +472,7 @@ The following limits apply to any request on `/security/eDiscoveryCases`.
 
 | Operation                  | Limit per app per tenant     |
 |----------------------------|------------------------------|
-| Any | 5 requests per minute |
+| Any | Five requests per minute |
 
 ## Service Communications service limits
 The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.
@@ -479,11 +481,6 @@ The following limits apply to any type of requests for service communications un
 | ------------ | ------------------------ |
 | Any | 240 requests per 60 seconds |
 |Any | 800 requests per hour |
-
-
-## Skype service limits
-
-[!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
 
 ## Subscription service limits
 
@@ -499,3 +496,7 @@ The preceding information applies to the following resources:
 ## Viva Engage service limits
 
 Viva Engage API calls are subject to rate limiting, allowing 10 requests per user, per app, within a 30-second time period. When you exceed the rate limit, all subsequent requests return a `429 Too Many Requests` response code. 
+
+## Related content
+
+- [Best practices for working with Microsoft Graph](best-practices-concept.md)

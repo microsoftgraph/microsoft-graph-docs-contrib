@@ -5,8 +5,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ExternalUsersSelfServiceSignUpEventsFlow;
+use Microsoft\Graph\Generated\Models\OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp;
+use Microsoft\Graph\Generated\Models\IdentityProviderBase;
+use Microsoft\Graph\Generated\Models\OnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp;
+use Microsoft\Graph\Generated\Models\OnAttributeCollectionExternalUsersSelfServiceSignUp;
+use Microsoft\Graph\Generated\Models\IdentityUserFlowAttribute;
+use Microsoft\Graph\Generated\Models\AuthenticationAttributeCollectionPage;
+use Microsoft\Graph\Generated\Models\AuthenticationAttributeCollectionPageViewConfiguration;
+use Microsoft\Graph\Generated\Models\AuthenticationAttributeCollectionInputConfiguration;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ExternalUsersSelfServiceSignUpEventsFlow();

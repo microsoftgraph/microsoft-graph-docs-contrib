@@ -43,7 +43,7 @@ This method supports the `$filter`, `$top`, and `$orderBy` OData query parameter
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/pe
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-permissionsrequestchange-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-permissionsrequestchange-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

@@ -1,10 +1,12 @@
 ---
 title: "Microsoft 365 groups in Microsoft Graph"
 description: "Microsoft 365 groups are collections of users who share access to resources in Microsoft services. Create groups, manage group membership, and establish group policies."
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.localizationpriority: high
-ms.prod: "groups"
-doc_type: conceptualPageType
+ms.subservice: entra-groups
+ms.topic: concept-article
 ms.custom: scenarios:getting-started
 ms.date: 05/19/2023
 ---
@@ -67,7 +69,7 @@ Looking for the API reference for this service?
 - [Groups API in Microsoft Graph v1.0](/graph/api/resources/groups-overview?view=graph-rest-1.0&preserve-view=true)
 - [Groups API in Microsoft Graph beta](/graph/api/resources/groups-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Next step
 
-- Try out some sample API requests in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Learn more about how to [use the groups API](/graph/api/resources/groups-overview) in Microsoft Graph.
+> [!div class="nextstepaction"]
+> [Try API requests in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)

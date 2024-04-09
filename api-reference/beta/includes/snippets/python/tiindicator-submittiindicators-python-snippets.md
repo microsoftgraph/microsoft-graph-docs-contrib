@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.models.submit_ti_indicators_post_request_body import SubmitTiIndicatorsPostRequestBody
+from msgraph.generated.models.ti_indicator import TiIndicator
 
 graph_client = GraphServiceClient(credentials, scopes)
 

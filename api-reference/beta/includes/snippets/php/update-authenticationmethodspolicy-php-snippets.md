@@ -5,8 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AuthenticationMethodsPolicy;
+use Microsoft\Graph\Generated\Models\RegistrationEnforcement;
+use Microsoft\Graph\Generated\Models\AuthenticationMethodsRegistrationCampaign;
+use Microsoft\Graph\Generated\Models\ExcludeTarget;
+use Microsoft\Graph\Generated\Models\AuthenticationMethodsRegistrationCampaignIncludeTarget;
+use Microsoft\Graph\Generated\Models\ReportSuspiciousActivitySettings;
+use Microsoft\Graph\Generated\Models\IncludeTarget;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthenticationMethodsPolicy();

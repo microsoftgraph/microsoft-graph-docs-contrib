@@ -3,7 +3,7 @@ title: "bulkUpload resource type"
 description: "Represents capability of the synchronization service to process bulk uploads."
 author: "cmmdesai"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType 
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the capability of the Microsoft Entra synchronization service to process bulk uploads.
+Represents the capability of the Microsoft Entra synchronization service to process bulk uploads. For more information, see [API-driven inbound provisioning concepts](/entra/identity/app-provisioning/inbound-provisioning-api-concepts).
 
 ## Methods
 

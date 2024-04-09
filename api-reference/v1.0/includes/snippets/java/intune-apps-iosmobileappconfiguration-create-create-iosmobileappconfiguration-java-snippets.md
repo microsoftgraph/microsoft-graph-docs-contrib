@@ -4,26 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IosMobileAppConfiguration managedDeviceMobileAppConfiguration = new IosMobileAppConfiguration();
-LinkedList<String> targetedMobileAppsList = new LinkedList<String>();
-targetedMobileAppsList.add("Targeted Mobile Apps value");
-managedDeviceMobileAppConfiguration.targetedMobileApps = targetedMobileAppsList;
-managedDeviceMobileAppConfiguration.description = "Description value";
-managedDeviceMobileAppConfiguration.displayName = "Display Name value";
-managedDeviceMobileAppConfiguration.version = 7;
-managedDeviceMobileAppConfiguration.encodedSettingXml = Base64.getDecoder().decode("ZW5jb2RlZFNldHRpbmdYbWw=");
-LinkedList<AppConfigurationSettingItem> settingsList = new LinkedList<AppConfigurationSettingItem>();
-AppConfigurationSettingItem settings = new AppConfigurationSettingItem();
-settings.appConfigKey = "App Config Key value";
-settings.appConfigKeyType = MdmAppConfigKeyType.INTEGER_TYPE;
-settings.appConfigKeyValue = "App Config Key Value value";
-settingsList.add(settings);
-managedDeviceMobileAppConfiguration.settings = settingsList;
+managedDeviceMobileAppConfiguration.setOdataType("#microsoft.graph.iosMobileAppConfiguration");
+LinkedList<String> targetedMobileApps = new LinkedList<String>();
+targetedMobileApps.add("Targeted Mobile Apps value");
+managedDeviceMobileAppConfiguration.setTargetedMobileApps(targetedMobileApps);
+managedDeviceMobileAppConfiguration.setDescription("Description value");
+managedDeviceMobileAppConfiguration.setDisplayName("Display Name value");
+managedDeviceMobileAppConfiguration.setVersion(7);
+byte[] encodedSettingXml = Base64.getDecoder().decode("ZW5jb2RlZFNldHRpbmdYbWw=");
+managedDeviceMobileAppConfiguration.setEncodedSettingXml(encodedSettingXml);
+LinkedList<AppConfigurationSettingItem> settings = new LinkedList<AppConfigurationSettingItem>();
+AppConfigurationSettingItem appConfigurationSettingItem = new AppConfigurationSettingItem();
+appConfigurationSettingItem.setOdataType("microsoft.graph.appConfigurationSettingItem");
+appConfigurationSettingItem.setAppConfigKey("App Config Key value");
+appConfigurationSettingItem.setAppConfigKeyType(MdmAppConfigKeyType.IntegerType);
+appConfigurationSettingItem.setAppConfigKeyValue("App Config Key Value value");
+settings.add(appConfigurationSettingItem);
+managedDeviceMobileAppConfiguration.setSettings(settings);
+ManagedDeviceMobileAppConfiguration result = graphClient.deviceAppManagement().mobileAppConfigurations().post(managedDeviceMobileAppConfiguration);
 
-graphClient.deviceAppManagement().mobileAppConfigurations()
-	.buildRequest()
-	.post(managedDeviceMobileAppConfiguration);
 
 ```

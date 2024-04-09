@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PersonWebsite personWebsite = new PersonWebsite();
-personWebsite.description = "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway";
+personWebsite.setDescription("Lyn Damer play in the Women's 1st Division (Toppserien) in Norway");
+PersonWebsite result = graphClient.me().profile().websites().byPersonWebsiteId("{personWebsite-id}").patch(personWebsite);
 
-graphClient.me().profile().websites("{id}")
-	.buildRequest()
-	.patch(personWebsite);
 
 ```

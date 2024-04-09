@@ -5,8 +5,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicy;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyRule;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyApprovalRule;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyRuleTarget;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyRuleTargetOperations;
+use Microsoft\Graph\Generated\Models\ApprovalSettings;
+use Microsoft\Graph\Generated\Models\UnifiedApprovalStage;
+use Microsoft\Graph\Generated\Models\SubjectSet;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyAuthenticationContextRule;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyEnablementRule;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyExpirationRule;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyNotificationRule;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleManagementPolicy();

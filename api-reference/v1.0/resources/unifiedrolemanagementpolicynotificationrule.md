@@ -3,7 +3,7 @@ title: "unifiedRoleManagementPolicyNotificationRule resource type"
 description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the email notification rules for role assignments, activations, and approvals."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

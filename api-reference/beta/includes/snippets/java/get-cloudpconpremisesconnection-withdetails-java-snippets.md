@@ -4,11 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-CloudPcOnPremisesConnection cloudPcOnPremisesConnection = graphClient.deviceManagement().virtualEndpoint().onPremisesConnections("{id}")
-	.buildRequest()
-	.select("id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+CloudPcOnPremisesConnection result = graphClient.deviceManagement().virtualEndpoint().onPremisesConnections().byCloudPcOnPremisesConnectionId("{cloudPcOnPremisesConnection-id}").get(requestConfiguration -> {
+	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "healthCheckStatus", "healthCheckStatusDetail", "healthCheckStatusDetails", "inUse"};
+});
+
 
 ```

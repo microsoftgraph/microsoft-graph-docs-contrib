@@ -3,7 +3,7 @@ title: "accessReviewInstance: acceptRecommendations"
 description: "Allows the acceptance of recommendations on decisions for an access review instance that hasn't been reviewed by the calling user who is a reviewer."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

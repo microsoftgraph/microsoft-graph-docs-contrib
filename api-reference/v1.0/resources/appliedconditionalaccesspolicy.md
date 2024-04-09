@@ -20,12 +20,12 @@ Indicates the attributes related to applied conditional access policy or policie
 |displayName|String|Refers to the Name of the conditional access policy (example: “Require MFA for Salesforce”).|
 |enforcedGrantControls|String collection|Refers to the grant controls enforced by the conditional access policy (example: “Require multifactor authentication”).|
 |enforcedSessionControls|String collection|Refers to the session controls enforced by the conditional access policy (example: “Require app enforced controls”).|
-|id|String|An identifier of the conditional access policy.|
-|result|appliedConditionalAccessPolicyResult| Indicates the result of the CA policy that was triggered. Possible values are: `success`, `failure`, `notApplied` (Policy isn't applied because policy conditions weren't met),`notEnabled` (This is due to the policy in disabled state), `unknown`, `unknownFutureValue`.|
+|id|String|An identifier of the conditional access policy. Supports `$filter` (`eq`).|
+|result|appliedConditionalAccessPolicyResult| Indicates the result of the CA policy that was triggered. Possible values are: `success`, `failure`, `notApplied` (policy isn't applied because policy conditions weren't met), `notEnabled` (This is due to the policy in a disabled state), `unknown`, `unknownFutureValue`, `reportOnlySuccess`, `reportOnlyFailure`, `reportOnlyNotApplied`, `reportOnlyInterrupted`.  You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reportOnlySuccess`, `reportOnlyFailure`, `reportOnlyNotApplied`, `reportOnlyInterrupted`.|
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

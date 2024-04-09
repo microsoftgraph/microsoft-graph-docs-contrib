@@ -3,7 +3,7 @@ title: "virtualEventRegistrationQuestion resource type"
 description: "Information about a virtual event registration question."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 ---
@@ -39,7 +39,7 @@ Represents a registration question associated with a [virtualEventRegistration](
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

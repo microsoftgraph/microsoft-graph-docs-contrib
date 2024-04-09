@@ -3,7 +3,7 @@ title: "List sessions"
 description: "Retrieve the list of session objects for a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
@@ -45,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
 | Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. For more information, see [Best practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
 | Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |

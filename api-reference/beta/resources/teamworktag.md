@@ -3,7 +3,7 @@ title: "teamworkTag resource type"
 description: "Represents a tag associated with a team."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -51,7 +51,7 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |members|[teamworkTagMember](../resources/teamworktagmember.md) collection|Users assigned to the tag.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -72,5 +72,5 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 - [teamworkTagMember](../resources/teamworktagmember.md)

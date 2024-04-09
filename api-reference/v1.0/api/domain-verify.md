@@ -3,7 +3,7 @@ title: "domain: verify"
 description: "Validates the ownership of the domain."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -26,10 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_verify" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-verify-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* Domain Name Administrator
+The work or school account needs to belong to at least the *Domain Name Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -44,7 +41,7 @@ POST /domains/{id}/verify
 
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body

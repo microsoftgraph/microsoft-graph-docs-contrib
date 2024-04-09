@@ -3,7 +3,7 @@ title: "Use the Outlook mail REST API"
 description: "Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: conceptualPageType
 ---
 
@@ -73,9 +73,6 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility-overview) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
 
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 

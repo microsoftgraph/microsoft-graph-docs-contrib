@@ -3,7 +3,7 @@ title: "List virtualEventRegistrations"
 description: "Get a list of all registration records of a webinar."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a list of all [registration](../resources/virtualeventregistration.md) records of a [webinar](../resources/virtualeventwebinar.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -41,7 +43,7 @@ This method does not support OData query parameters to help customize the respon
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "filePlanReferenceTemplate resource type"
 description: "Specifies a unique alpha-numeric identifier for an organization’s retention schedule."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
-
+Supports CRUD operations to apply and manage the [filePlanReference](security-fileplanreference.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **filePlanReference** descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
@@ -29,9 +28,9 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the file plan reference. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the filePlanReference is created. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|displayName|String|Unique string that defines a filePlanReference name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the file plan reference descriptor. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the filePlanReference descriptor is created. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
+|displayName|String|Unique string that defines a filePlanReference name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
 |id|String|Unique ID of the filePlanReference. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships

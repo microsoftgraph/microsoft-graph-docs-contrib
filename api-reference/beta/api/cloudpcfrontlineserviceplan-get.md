@@ -3,7 +3,7 @@ title: "Get cloudPcFrontLineServicePlan"
 description: "Get the properties and relationships of a cloudPcFrontLineServicePlan object."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

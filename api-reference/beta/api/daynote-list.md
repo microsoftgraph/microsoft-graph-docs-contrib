@@ -3,7 +3,7 @@ title: "List dayNote"
 description: "Retrieve the properties and relationships of all day notes in a team."
 author: fmcgurrenw
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ GET /teams/{teamsId}/schedule/dayNotes?$filter=dayNoteDate eq 2023-11-3
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

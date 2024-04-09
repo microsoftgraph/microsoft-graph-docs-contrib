@@ -3,7 +3,7 @@ title: "provisionedPlan resource type"
 description: "The **provisionedPlans** property of the user entity and the organization entity is a collection of **provisionedPlan**."
 ms.localizationpriority: medium
 author: "adimitui"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ The **provisionedPlans** property of the [user](user.md) entity and the [organiz
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AuditEvent;
+use Microsoft\Graph\Generated\Models\AuditActor;
+use Microsoft\Graph\Generated\Models\AuditResource;
+use Microsoft\Graph\Generated\Models\AuditProperty;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuditEvent();

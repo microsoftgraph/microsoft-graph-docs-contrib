@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleDefinition;
+use Microsoft\Graph\Generated\Models\AccessReviewScope;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleSettings;
+use Microsoft\Graph\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Generated\Models\RecurrenceRange;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessReviewScheduleDefinition();
@@ -42,8 +48,8 @@ $settingsRecurrenceRange = new RecurrenceRange();
 $settingsRecurrenceRange->setType(new RecurrenceRangeType('numbered'));
 $settingsRecurrenceRange->setNumberOfOccurrences(0);
 $settingsRecurrenceRange->setRecurrenceTimeZone(null);
-$settingsRecurrenceRange->setStartDate(new Date('2022-02-11'));
-$settingsRecurrenceRange->setEndDate(new Date('2022-02-16'));
+$settingsRecurrenceRange->setStartDate(new Date('2024-03-21'));
+$settingsRecurrenceRange->setEndDate(new Date('2024-03-30'));
 $settingsRecurrence->setRange($settingsRecurrenceRange);
 $settings->setRecurrence($settingsRecurrence);
 $requestBody->setSettings($settings);

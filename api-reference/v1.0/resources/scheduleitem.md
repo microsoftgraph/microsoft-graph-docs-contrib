@@ -3,7 +3,7 @@ title: "scheduleItem resource type"
 description: "An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource (room or equipment) as well."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: ""
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource (room or equipment) as well.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |The date, time, and time zone that the corresponding event ends. |
 |isPrivate |Boolean |The sensitivity of the corresponding event. True if the event is marked `private`, false otherwise. Optional.|

@@ -25,7 +25,7 @@ configuration := &graphusers.ItemTodoListItemTasksDelta()RequestBuilderGetReques
 	QueryParameters: requestParameters,
 }
 
-delta, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Tasks().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Tasks().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

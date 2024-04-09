@@ -3,7 +3,7 @@ title: "List updatableAssetGroup resources"
 description: "Get a list of updatableAssetGroup objects and their properties."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ This method supports some of the [OData query parameters](/graph/query-parameter
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

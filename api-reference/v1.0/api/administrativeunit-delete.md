@@ -3,7 +3,7 @@ title: "Delete administrativeUnit"
 description: "Delete an administrativeUnit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -22,10 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-delete-permissions.md)]
 
-To delete an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Privileged Role Administrator
-* Global Administrator
+To delete an administrative unit, the calling principal must be assigned at least the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +33,7 @@ DELETE /directory/administrativeUnits/{id}
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -47,7 +44,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -94,7 +91,7 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

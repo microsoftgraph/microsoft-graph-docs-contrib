@@ -1,9 +1,10 @@
 ---
 title: "Working with groups in Microsoft Graph"
 description: "Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: conceptualPageType
 ms.date: 09/12/2023
 ---
@@ -12,7 +13,7 @@ ms.date: 09/12/2023
 
 Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources.
 
-Microsoft Graph exposes the groups API to create and manage different types of groups and group functionality. 
+Microsoft Graph exposes the groups API to create and manage different types of groups and group functionality.
 
 > [!NOTE]
 > 1. Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
@@ -79,7 +80,7 @@ Content-type: application/json
     "mailNickname": "outlookgroup101",
     "preferredLanguage": null,
     "proxyAddresses": [
-        "smtp:outlookgroup101@microsoft.onmicrosoft.com",
+        "smtp:outlookgroup101@contoso.com",
         "SMTP:outlookgroup101@service.microsoft.com"
     ],
     "securityEnabled": false,
@@ -101,7 +102,7 @@ Apart from configuring the standard group properties, you can also configure the
 
 **Security groups** are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users, other security groups, devices, and service principals as members.
 
-**Mail-enabled security groups** are used in the same way as security groups, but can be used to send emails to group members. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups). 
+**Mail-enabled security groups** are used in the same way as security groups, but can be used to send emails to group members. Mail-enabled security groups can't be created or updated through the API; instead, they're read-only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
 
 The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
 
@@ -288,6 +289,3 @@ Using Microsoft Graph, you can perform the following common operations on groups
 | Determine whether a user is a member of a group, get all the groups the user is a member of. | [user](user.md) <br/> [group](group.md) <br/> [servicePrincipal](serviceprincipal.md) <br/> [orgContact](orgcontact.md) | [Check member groups](../api/directoryobject-checkmembergroups.md) <br/> [Get member groups](../api/directoryobject-getmembergroups.md) |
 | List the owners of a group, and add or remove owners. | [user](user.md) <br/> [group](group.md) | [List owners](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md) |
 
-## What's new
-
-Find out about the [latest features and updates](/graph/whats-new-overview) for the groups API.

@@ -3,7 +3,7 @@ title: "serviceActivity: getMetricsForMfaSignInFailure"
 description: "Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period."
 author: "Zacharypeng"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -20,16 +20,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceactivity_getmetricsformfasigninfailure" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceactivity-getmetricsformfasigninfailure-permissions.md)]
 
-In addition to the delegated permissions, the signed-in user who is accessing the data needs to belong to one of the following directory roles, which allow them to read sign-in reports:
+In addition to the delegated permissions, the signed-in user who is accessing the data needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json), which allow them to read sign-in reports:
 
-+ Global Administrator
 + Global Reader
 + Reports Reader
 + Security Administrator
 + Security Operator
 + Security Reader
-
-To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)
 
 ## HTTP request
 
@@ -54,7 +51,7 @@ In the request URL, provide the following query parameters with values.
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

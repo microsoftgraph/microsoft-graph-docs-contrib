@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-ChatCollectionPage chats = graphClient.users("8b081ef6-4792-4def-b2c9-c363a1bf41d5").chats()
-	.buildRequest()
-	.filter("members/any(o: o/displayname eq 'Peter Parker')")
-	.expand("members")
-	.get();
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+ChatCollectionResponse result = graphClient.users().byUserId("{user-id}").chats().get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"members"};
+	requestConfiguration.queryParameters.filter = "members/any(o: o/displayname eq 'Peter Parker')";
+});
+
 
 ```

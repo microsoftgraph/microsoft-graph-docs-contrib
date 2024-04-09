@@ -4,7 +4,7 @@ description: "List the directory roles that are activated in the tenant."
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ This method supports the `$select`, `$filter` (`eq` only), and `$expand` [OData 
 ## Request headers
 | Name       | Description|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryRole](../resources/directoryrole.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/directoryRoles
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

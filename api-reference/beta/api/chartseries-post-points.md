@@ -3,7 +3,7 @@ title: "Create ChartPoints"
 description: "Use this API to create a new ChartPoints."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
@@ -45,7 +45,7 @@ If successful, this method returns `201 Created` response code and [workbookChar
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [workbookChartPoint](../resources/workbookchartpoint.md) object.
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

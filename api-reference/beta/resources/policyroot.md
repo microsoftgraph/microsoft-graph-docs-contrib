@@ -1,9 +1,9 @@
 ---
 title: "policyRoot resource type"
 description: "Resource type exposing navigation properties for the policies singleton."
-author: "rkarim-ms"
+author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "non-product-specific"
 doc_type: resourcePageType
 ---
 
@@ -38,6 +38,7 @@ None
 | defaultAppManagementPolicy                | [tenantAppManagementPolicy](tenantappmanagementpolicy.md)                                                 | The tenant-wide policy that enforces app management restrictions for all applications and service principals.                                                        |
 | externalIdentitiesPolicy                  | [externalIdentitiesPolicy](externalidentitiespolicy.md)                                                   | Represents the tenant-wide policy that controls whether guests can leave a Microsoft Entra tenant via self-service controls.                                       |
 | featureRolloutPolicies                    | [featureRolloutPolicy](featurerolloutpolicy.md) collection                                                | The feature rollout policy associated with a directory object.                                                                                                       |
+| federatedTokenValidationPolicy| [federatedTokenValidationPolicy](federatedtokenvalidationpolicy.md)                                                 | Represents a policy to control enabling or disabling validation of federation authentication tokens.                                                                                                       |
 | homeRealmDiscoveryPolicies                | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection                                        | The policy to control Microsoft Entra authentication behavior for federated users.                                                                                          |
 | identitySecurityDefaultsEnforcementPolicy | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md)                 | The policy that represents the security defaults that protect against common attacks.                                                                                |
 | mobileAppManagementPolicies               | [mobilityManagementPolicy](mobilitymanagementpolicy.md) collection                                        | The policy that defines autoenrollment configuration for a mobility management (MDM or MAM) application.                                                            |
@@ -49,7 +50,7 @@ None
 | tokenLifetimePolicies                     | [tokenLifetimePolicy](tokenlifetimepolicy.md) collection                                                  | The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Microsoft Entra ID.                                                |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

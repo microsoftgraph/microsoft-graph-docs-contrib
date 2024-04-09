@@ -4,32 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OnTokenIssuanceStartCustomExtension customAuthenticationExtension = new OnTokenIssuanceStartCustomExtension();
-customAuthenticationExtension.displayName = "onTokenIssuanceStartCustomExtension";
-customAuthenticationExtension.description = "Fetch additional claims from custom user store";
+customAuthenticationExtension.setOdataType("#microsoft.graph.onTokenIssuanceStartCustomExtension");
+customAuthenticationExtension.setDisplayName("onTokenIssuanceStartCustomExtension");
+customAuthenticationExtension.setDescription("Fetch additional claims from custom user store");
 HttpRequestEndpoint endpointConfiguration = new HttpRequestEndpoint();
-endpointConfiguration.targetUrl = "https://authenticationeventsAPI.contoso.com";
-customAuthenticationExtension.endpointConfiguration = endpointConfiguration;
+endpointConfiguration.setOdataType("#microsoft.graph.httpRequestEndpoint");
+endpointConfiguration.setTargetUrl("https://authenticationeventsAPI.contoso.com");
+customAuthenticationExtension.setEndpointConfiguration(endpointConfiguration);
 AzureAdTokenAuthentication authenticationConfiguration = new AzureAdTokenAuthentication();
-authenticationConfiguration.resourceId = "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4";
-customAuthenticationExtension.authenticationConfiguration = authenticationConfiguration;
+authenticationConfiguration.setOdataType("#microsoft.graph.azureAdTokenAuthentication");
+authenticationConfiguration.setResourceId("api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4");
+customAuthenticationExtension.setAuthenticationConfiguration(authenticationConfiguration);
 CustomExtensionClientConfiguration clientConfiguration = new CustomExtensionClientConfiguration();
-clientConfiguration.timeoutInMilliseconds = 2000;
-clientConfiguration.maximumRetries = 1;
-customAuthenticationExtension.clientConfiguration = clientConfiguration;
-LinkedList<OnTokenIssuanceStartReturnClaim> claimsForTokenConfigurationList = new LinkedList<OnTokenIssuanceStartReturnClaim>();
-OnTokenIssuanceStartReturnClaim claimsForTokenConfiguration = new OnTokenIssuanceStartReturnClaim();
-claimsForTokenConfiguration.claimIdInApiResponse = "DateOfBirth";
-claimsForTokenConfigurationList.add(claimsForTokenConfiguration);
-OnTokenIssuanceStartReturnClaim claimsForTokenConfiguration1 = new OnTokenIssuanceStartReturnClaim();
-claimsForTokenConfiguration1.claimIdInApiResponse = "CustomRoles";
-claimsForTokenConfigurationList.add(claimsForTokenConfiguration1);
-customAuthenticationExtension.claimsForTokenConfiguration = claimsForTokenConfigurationList;
+clientConfiguration.setTimeoutInMilliseconds(2000);
+clientConfiguration.setMaximumRetries(1);
+customAuthenticationExtension.setClientConfiguration(clientConfiguration);
+LinkedList<OnTokenIssuanceStartReturnClaim> claimsForTokenConfiguration = new LinkedList<OnTokenIssuanceStartReturnClaim>();
+OnTokenIssuanceStartReturnClaim onTokenIssuanceStartReturnClaim = new OnTokenIssuanceStartReturnClaim();
+onTokenIssuanceStartReturnClaim.setClaimIdInApiResponse("DateOfBirth");
+claimsForTokenConfiguration.add(onTokenIssuanceStartReturnClaim);
+OnTokenIssuanceStartReturnClaim onTokenIssuanceStartReturnClaim1 = new OnTokenIssuanceStartReturnClaim();
+onTokenIssuanceStartReturnClaim1.setClaimIdInApiResponse("CustomRoles");
+claimsForTokenConfiguration.add(onTokenIssuanceStartReturnClaim1);
+customAuthenticationExtension.setClaimsForTokenConfiguration(claimsForTokenConfiguration);
+CustomAuthenticationExtension result = graphClient.identity().customAuthenticationExtensions().post(customAuthenticationExtension);
 
-graphClient.identity().customAuthenticationExtensions()
-	.buildRequest()
-	.post(customAuthenticationExtension);
 
 ```

@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcExternalPartnerSetting cloudPcExternalPartnerSetting = new CloudPcExternalPartnerSetting();
-cloudPcExternalPartnerSetting.enableConnection = true;
+cloudPcExternalPartnerSetting.setOdataType("#microsoft.graph.cloudPcExternalPartnerSetting");
+cloudPcExternalPartnerSetting.setEnableConnection(true);
+CloudPcExternalPartnerSetting result = graphClient.deviceManagement().virtualEndpoint().externalPartnerSettings().byCloudPcExternalPartnerSettingId("{cloudPcExternalPartnerSetting-id}").patch(cloudPcExternalPartnerSetting);
 
-graphClient.deviceManagement().virtualEndpoint().externalPartnerSettings("b3548526-e615-3785-3118-be70b3968ec5")
-	.buildRequest()
-	.patch(cloudPcExternalPartnerSetting);
 
 ```

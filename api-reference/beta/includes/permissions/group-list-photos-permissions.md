@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Group.Read.All|Not available.|
+|Delegated (work or school account)|ProfilePhoto.Read.All|Group.Read.All, ProfilePhoto.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Group.Read.All|Not available.|
+|Application|ProfilePhoto.Read.All|Group.Read.All, ProfilePhoto.ReadWrite.All|
 

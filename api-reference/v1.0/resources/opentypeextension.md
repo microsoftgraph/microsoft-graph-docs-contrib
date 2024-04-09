@@ -75,7 +75,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -92,7 +92,7 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [Add custom properties to resources using extensions](/graph/extensibility-overview)
 + [Add custom data to users using open extensions](/graph/extensibility-open-users)

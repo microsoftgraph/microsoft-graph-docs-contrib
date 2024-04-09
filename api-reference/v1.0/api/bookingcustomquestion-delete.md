@@ -3,7 +3,7 @@ title: "Delete bookingCustomQuestion"
 description: "Delete a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ DELETE /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{booki
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -52,10 +52,10 @@ If successful, this method returns a `204 No Content` response code.
 <!-- {
   "blockType": "request",
   "name": "bookingcustomquestiondetete",
-  "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e"]
+  "sampleKeys": ["Contosolunchdelivery@contoso.com", "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
+DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/customQuestions/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
 ```
 
 # [C#](#tab/csharp)

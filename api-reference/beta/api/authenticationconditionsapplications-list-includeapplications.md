@@ -3,7 +3,7 @@ title: "List includeApplications (for a user flow)"
 description: "List applications for an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the applications linked to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. These are the applications for which the authentication experience that's defined by the user flow is enabled.
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,7 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -51,7 +53,7 @@ If successful, this method returns a `200 OK` and a collection of [identityUserF
 ## Examples
 
 ### Request
-Here's an example of a request to retrieve the list of applications associated with a user flow.
+The following example shows a request to retrieve the list of applications associated with a user flow.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -97,7 +99,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 ---
 
 ### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

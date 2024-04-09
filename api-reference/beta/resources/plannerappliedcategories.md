@@ -3,7 +3,7 @@ title: "plannerAppliedCategories resource type"
 description: "Represents the collection of categories (or labels) that have been applied to a task, which is part of the plannerTask object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ Properties of an open type can be defined by the client. In this case, the clien
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

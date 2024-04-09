@@ -4,43 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.groups.item.threads.item.reply.ReplyPostRequestBody replyPostRequestBody = new com.microsoft.graph.beta.groups.item.threads.item.reply.ReplyPostRequestBody();
 Post post = new Post();
 ItemBody body = new ItemBody();
-body.contentType = BodyType.TEXT;
-body.content = "I attached an event.";
-post.body = body;
-LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
-ItemAttachment attachments = new ItemAttachment();
-attachments.name = "Holiday event";
+body.setContentType(BodyType.Text);
+body.setContent("I attached an event.");
+post.setBody(body);
+LinkedList<Attachment> attachments = new LinkedList<Attachment>();
+ItemAttachment attachment = new ItemAttachment();
+attachment.setOdataType("#microsoft.graph.itemAttachment");
+attachment.setName("Holiday event");
 Event item = new Event();
-item.subject = "Discuss gifts for children";
+item.setOdataType("microsoft.graph.event");
+item.setSubject("Discuss gifts for children");
 ItemBody body1 = new ItemBody();
-body1.contentType = BodyType.HTML;
-body1.content = "Let's look for funding!";
-item.body = body1;
+body1.setContentType(BodyType.Html);
+body1.setContent("Let's look for funding!");
+item.setBody(body1);
 DateTimeTimeZone start = new DateTimeTimeZone();
-start.dateTime = "2019-12-02T18:00:00";
-start.timeZone = "Pacific Standard Time";
-item.start = start;
+start.setDateTime("2019-12-02T18:00:00");
+start.setTimeZone("Pacific Standard Time");
+item.setStart(start);
 DateTimeTimeZone end = new DateTimeTimeZone();
-end.dateTime = "2019-12-02T19:00:00";
-end.timeZone = "Pacific Standard Time";
-item.end = end;
-attachments.item = item;
-attachmentsList.add(attachments);
-AttachmentCollectionResponse attachmentCollectionResponse = new AttachmentCollectionResponse();
-attachmentCollectionResponse.value = attachmentsList;
-AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
-post.attachments = attachmentCollectionPage;
+end.setDateTime("2019-12-02T19:00:00");
+end.setTimeZone("Pacific Standard Time");
+item.setEnd(end);
+attachment.setItem(item);
+attachments.add(attachment);
+post.setAttachments(attachments);
+replyPostRequestBody.setPost(post);
+graphClient.groups().byGroupId("{group-id}").threads().byConversationThreadId("{conversationThread-id}").reply().post(replyPostRequestBody);
 
-graphClient.groups("1848753d-185d-4c08-a4e4-6ee40521d115").threads("AAQkADJUdfolA==")
-	.reply(ConversationThreadReplyParameterSet
-		.newBuilder()
-		.withPost(post)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

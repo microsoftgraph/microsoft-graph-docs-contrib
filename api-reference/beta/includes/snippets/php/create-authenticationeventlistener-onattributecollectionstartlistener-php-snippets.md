@@ -5,8 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\OnAttributeCollectionStartListener;
+use Microsoft\Graph\Generated\Models\AuthenticationConditions;
+use Microsoft\Graph\Generated\Models\AuthenticationConditionsApplications;
+use Microsoft\Graph\Generated\Models\AuthenticationConditionApplication;
+use Microsoft\Graph\Generated\Models\OnAttributeCollectionStartCustomExtensionHandler;
+use Microsoft\Graph\Generated\Models\OnAttributeCollectionStartCustomExtension;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new OnAttributeCollectionStartListener();

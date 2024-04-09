@@ -3,7 +3,7 @@ title: "List filteringPolicies"
 description: "Get a list of the microsoft.graph.networkaccess.filteringPolicy objects and their properties."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method supports the `$expand` [OData query parameter](/graph/query-paramete
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

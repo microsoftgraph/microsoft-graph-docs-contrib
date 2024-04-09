@@ -5,8 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\PlannerTaskConfiguration;
+use Microsoft\Graph\Generated\Models\PlannerTaskPolicy;
+use Microsoft\Graph\Generated\Models\PlannerTaskRoleBasedRule;
+use Microsoft\Graph\Generated\Models\PlannerRelationshipBasedUserType;
+use Microsoft\Graph\Generated\Models\PlannerTaskPropertyRule;
+use Microsoft\Graph\Generated\Models\PlannerFieldRules;
+use Microsoft\Graph\Generated\Models\PlannerRuleOverride;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerTaskConfiguration();

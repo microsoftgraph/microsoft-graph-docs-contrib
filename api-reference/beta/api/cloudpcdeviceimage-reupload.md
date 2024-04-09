@@ -3,7 +3,7 @@ title: "cloudPcDeviceImage: reupload"
 description: "Reupload a cloudPcDeviceImage object."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /deviceManagement/virtualEndpoint/deviceImages/{cloudPcDeviceImageId}/reupl
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

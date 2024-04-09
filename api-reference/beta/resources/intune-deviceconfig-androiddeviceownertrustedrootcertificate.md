@@ -3,7 +3,7 @@ title: "androidDeviceOwnerTrustedRootCertificate resource type"
 description: "Android Device Owner Trusted Root Certificate configuration profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

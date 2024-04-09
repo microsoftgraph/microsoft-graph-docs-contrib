@@ -3,7 +3,7 @@ title: "Update bookingbusiness"
 description: "Update the properties of a bookingBusiness object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -56,10 +56,10 @@ The following example updates the business email address and scheduling policy, 
 <!-- {
   "blockType": "request",
   "name" : "bookingbusinesupdate",
-  "sampleKeys": ["fabrikam@contoso.onmicrosoft.com"]
+  "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/fabrikam@contoso.com
 Content-type: application/json
 
 {

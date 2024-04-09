@@ -28,10 +28,9 @@ In general, subscription operations require read permission to the resource. For
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][]                                        |
 | Application                            | [alert][], [callRecord][], [callRecording][], [callTranscript][], [channel][], [chatMessage][], [contact][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [printer][], [printTaskDefinition][], [team][], [user][]|
 
-## See also
+## Related content
 
 - [subscription resource type](./subscription.md)
-- [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](/graph/change-notifications-lifecycle-events)
 - [Change notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/csharp)
 - [Change notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/nodejs)

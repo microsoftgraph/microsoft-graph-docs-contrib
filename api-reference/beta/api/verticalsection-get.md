@@ -3,7 +3,7 @@ title: 'Get verticalSection'
 description: 'Read the properties and relationships of a verticalSection object.'
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [verticalSecti
 ### Example 1: Get a verticalSection object
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- { "blockType": "ignored" } -->
 

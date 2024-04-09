@@ -3,7 +3,7 @@ title: "List places"
 description: "Retrieve a list of place objects."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -76,7 +76,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -343,11 +343,11 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 <!-- {
   "blockType": "request",
   "name": "get_rooms_in_roomlist",
-  "sampleKeys": ["Building2Rooms@M365x214355.onmicrosoft.com"]
+  "sampleKeys": ["Building2Rooms@contoso.com"]
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/places/Building2Rooms@M365x214355.onmicrosoft.com/microsoft.graph.roomlist/rooms
+GET https://graph.microsoft.com/v1.0/places/Building2Rooms@contoso.com/microsoft.graph.roomlist/rooms
 ```
 
 # [C#](#tab/csharp)
@@ -403,7 +403,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('Building2Rooms%40M365x214355.onmicrosoft.com')/microsoft.graph.roomList/rooms",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('Building2Rooms%40contoso.com')/microsoft.graph.roomList/rooms",
     "value": [
         {
             "id": "f4119db7-9a33-4bfe-a387-4444b9e7fd54",
@@ -412,7 +412,7 @@ Content-type: application/json
             "geoCoordinates": null,
             "phone": "",
             "nickname": "Conf Room Rainier",
-            "emailAddress": "Rainier@M365x214355.onmicrosoft.com",
+            "emailAddress": "Rainier@contoso.com",
             "building": null,
             "floorNumber": null,
             "floorLabel": null,
@@ -432,7 +432,7 @@ Content-type: application/json
             "geoCoordinates": null,
             "phone": "",
             "nickname": "Conf Room Hood",
-            "emailAddress": "Hood@M365x214355.onmicrosoft.com",
+            "emailAddress": "Hood@contoso.com",
             "building": null,
             "floorNumber": null,
             "floorLabel": null,
@@ -452,7 +452,7 @@ Content-type: application/json
             "geoCoordinates": null,
             "phone": "",
             "nickname": "Conf Room Baker",
-            "emailAddress": "Baker@M365x214355.onmicrosoft.com",
+            "emailAddress": "Baker@contoso.com",
             "building": null,
             "floorNumber": null,
             "floorLabel": null,

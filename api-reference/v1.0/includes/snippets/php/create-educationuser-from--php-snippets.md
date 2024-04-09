@@ -5,8 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\EducationUser;
+use Microsoft\Graph\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Generated\Models\EducationStudent;
+use Microsoft\Graph\Generated\Models\EducationTeacher;
+use Microsoft\Graph\Generated\Models\IdentitySet;
+use Microsoft\Graph\Generated\Models\AssignedLicense;
+use Microsoft\Graph\Generated\Models\AssignedPlan;
+use Microsoft\Graph\Generated\Models\PasswordProfile;
+use Microsoft\Graph\Generated\Models\ProvisionedPlan;
+use Microsoft\Graph\Generated\Models\EducationOnPremisesInfo;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationUser();

@@ -30,13 +30,13 @@ tiIndicator1.SetId(&id)
 additionalInformation := "test again"
 tiIndicator1.SetAdditionalInformation(&additionalInformation) 
 
-value := []graphmodels.tiIndicatorable {
+value := []graphmodels.TiIndicatorable {
 	tiIndicator,
 	tiIndicator1,
 }
 requestBody.SetValue(value)
 
-updateTiIndicators, err := graphClient.Security().TiIndicators().UpdateTiIndicators().Post(context.Background(), requestBody, nil)
+updateTiIndicators, err := graphClient.Security().TiIndicators().UpdateTiIndicators().PostAsUpdateTiIndicatorsPostResponse(context.Background(), requestBody, nil)
 
 
 ```

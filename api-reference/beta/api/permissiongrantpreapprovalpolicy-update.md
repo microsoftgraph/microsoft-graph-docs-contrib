@@ -3,7 +3,7 @@ title: "Update permissionGrantPreApprovalPolicy"
 description: "Update the properties of a permissionGrantPreApprovalPolicy object."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ PATCH /policies/permissionGrantPreApprovalPolicies/{id}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

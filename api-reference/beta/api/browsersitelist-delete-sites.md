@@ -3,7 +3,7 @@ title: "Delete browserSite"
 description: "Delete a browserSite from a browserSiteList."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "browser-management"
+ms.subservice: "edge-browser-management"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ DELETE /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites/{bro
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -49,7 +49,7 @@ If the site was not previously published, then this method returns a `204 No Con
 ### Example 1: Delete a site that was not previously published
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ HTTP/1.1 204 No Content
 ### Example 2: Delete a site that was previously published
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

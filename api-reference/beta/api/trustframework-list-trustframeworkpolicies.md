@@ -3,7 +3,7 @@ title: "List trustFrameworkPolicies"
 description: "This operation lists all trustFrameworkPolicy objects in an Azure AD B2C tenant."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 # List trustFrameworkPolicies
@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "trustframework_list_trustframeworkpolicies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/trustframework-list-trustframeworkpolicies-permissions.md)]
 
-The work or school account must be a global administrator of the tenant.
+The work or school account must have at least the *B2C IEF Keyset Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -39,7 +39,7 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

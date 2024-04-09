@@ -45,7 +45,7 @@ This API supports the $filter [OData query parameter](/graph/query-parameters). 
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |odata.maxpagesize|Set the max result page size pereference. Optional.|
 
 ## Request body

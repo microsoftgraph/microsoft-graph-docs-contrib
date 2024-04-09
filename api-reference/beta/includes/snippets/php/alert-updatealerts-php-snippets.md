@@ -5,8 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\UpdateAlertsPostRequestBody;
+use Microsoft\Graph\Generated\Models\Alert;
+use Microsoft\Graph\Generated\Models\AlertFeedback;
+use Microsoft\Graph\Generated\Models\AlertStatus;
+use Microsoft\Graph\Generated\Models\SecurityVendorInformation;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UpdateAlertsPostRequestBody();

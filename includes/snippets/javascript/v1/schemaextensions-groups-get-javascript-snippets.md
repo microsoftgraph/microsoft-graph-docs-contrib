@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 let schemaExtensions = await client.api('/schemaExtensions')
-	.filter('id eq \'graphlearn_test\'')
+	.filter('id eq \'bellowscollege_courses\'')
 	.get();
 
 ```

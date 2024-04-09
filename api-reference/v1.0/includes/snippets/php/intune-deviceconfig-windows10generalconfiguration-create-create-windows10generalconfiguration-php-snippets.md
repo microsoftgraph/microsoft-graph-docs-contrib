@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Windows10GeneralConfiguration;
+use Microsoft\Graph\Generated\Models\DefenderDetectedMalwareActions;
+use Microsoft\Graph\Generated\Models\Windows10NetworkProxyServer;
+use Microsoft\Graph\Generated\Models\EdgeSearchEngineBase;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Windows10GeneralConfiguration();

@@ -2,14 +2,16 @@
 title: "Update deviceManagementAutopilotEvent"
 description: "Update the properties of a deviceManagementAutopilotEvent object."
 author: "jaiprakashmb"
-ms.localizationpriority: medium
-ms.prod: "intune"
+localization_priority: Normal
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
 # Update deviceManagementAutopilotEvent
 
 Namespace: microsoft.graph
+
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -38,7 +40,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -61,9 +63,9 @@ The following table shows the properties that are required when you create the [
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Enrollment state like Enrolled, Failed. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|Enrollment Status Page profile name|
 |windows10EnrollmentCompletionPageConfigurationId|String|Enrollment Status Page profile ID|
-|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment state like Success, Failure, InProgress, SuccessWithTimeout. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
-|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page device setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
-|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page account setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
+|deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment state like Success, Failure, InProgress, SuccessWithTimeout. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`, `successOnRetry`.|
+|deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page’s device setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`, `successOnRetry`.|
+|accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Deployment status for the enrollment status page’s account setup phase. Possible values are: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`, `successOnRetry`.|
 |osVersion|String|Device operating system version.|
 |deploymentDuration|Duration|Autopilot deployment duration including enrollment.|
 |deploymentTotalDuration|Duration|Total deployment duration from enrollment to Desktop screen.|
@@ -86,7 +88,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/v1/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 Content-type: application/json
 Content-length: 1545
 

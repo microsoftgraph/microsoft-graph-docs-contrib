@@ -3,7 +3,7 @@ title: "educationSchool resource type"
 description: "A school. The **educationSchool** resource currently corresponds to an administrativeUnit resource and shares the same ID.  "
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -62,7 +62,7 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
 "blockType": "resource",

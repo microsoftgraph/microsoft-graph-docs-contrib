@@ -3,7 +3,7 @@ title: "Delete accessPackageAssignmentWorkflowExtension"
 description: "Delete an accessPackageAssignmentWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogI
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customAccessPackageWorkflowExtensions/5FD6D8D5-E8F1-4B54-A1E6-1D0FE0B6E6EC
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customAccessPackageWorkflowExtensions/5FD6D8D5-E8F1-4B54-A1E6-1D0FE0B6E6EC
 ```
 
 # [C#](#tab/csharp)

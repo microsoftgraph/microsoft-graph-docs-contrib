@@ -3,7 +3,7 @@ title: "Update entitlementManagementSettings"
 description: "Update a entitlementManagementSettings object to change one or more of its properties."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Update entitlementManagementSettings
@@ -35,7 +35,7 @@ PATCH /identityGovernance/entitlementManagement/settings
 ## Request headers
 | Name         | Description |
 |:-------------|:------------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body

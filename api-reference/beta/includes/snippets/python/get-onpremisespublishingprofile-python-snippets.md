@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+from msgraph import GraphServiceClient
+from msgraph.generated.onPremisesPublishingProfiles.item.on_premises_publishing_profile_item_request_builder import OnPremisesPublishingProfileItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

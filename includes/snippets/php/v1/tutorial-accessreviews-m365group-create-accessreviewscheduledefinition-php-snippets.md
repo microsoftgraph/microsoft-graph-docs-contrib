@@ -5,27 +5,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleDefinition;
+use Microsoft\Graph\Generated\Models\AccessReviewQueryScope;
+use Microsoft\Graph\Generated\Models\AccessReviewReviewerScope;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleSettings;
+use Microsoft\Graph\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Generated\Models\DayOfWeek;
+use Microsoft\Graph\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Generated\Models\AccessReviewApplyAction;
+use Microsoft\Graph\Generated\Models\RemoveAccessApplyAction;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessReviewScheduleDefinition();
-$requestBody->setDisplayName('Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)');
-$requestBody->setDescriptionForAdmins('');
-$requestBody->setDescriptionForReviewers('');
-$scope = new AccessReviewScope();
-$additionalData = [
-	'query' => './members/microsoft.graph.user/?$count=true&$filter=(userType eq \'Guest\')',
-	'queryType' => 'MicrosoftGraph',
-];
-$scope->setAdditionalData($additionalData);
+$requestBody->setDisplayName('Guest access to marketing group');
+$scope = new AccessReviewQueryScope();
+$scope->setOdataType('#microsoft.graph.accessReviewQueryScope');
+$scope->setQuery('./members/microsoft.graph.user/?$count=true&$filter=(userType eq \'Guest\')');
+$scope->setQueryType('MicrosoftGraph');
 $requestBody->setScope($scope);
-$instanceEnumerationScope = new AccessReviewScope();
-$additionalData = [
-	'query' => '/groups?$filter=(groupTypes/any(c:c+eq+\'Unified\'))&$count=true',
-	'queryType' => 'MicrosoftGraph',
-];
-$instanceEnumerationScope->setAdditionalData($additionalData);
+$instanceEnumerationScope = new AccessReviewQueryScope();
+$instanceEnumerationScope->setOdataType('#microsoft.graph.accessReviewQueryScope');
+$instanceEnumerationScope->setQuery('/v1.0/groups?$filter=(groupTypes/any(c:c+eq+\'Unified\'))&$count=true');
+$instanceEnumerationScope->setQueryType('MicrosoftGraph');
+$instanceEnumerationScope->setQueryRoot(null);
 $requestBody->setInstanceEnumerationScope($instanceEnumerationScope);
 $reviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
 $reviewersAccessReviewReviewerScope1->setQuery('./owners');
@@ -37,7 +43,6 @@ $requestBody->setReviewers($reviewersArray);
 $fallbackReviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
 $fallbackReviewersAccessReviewReviewerScope1->setQuery('/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4');
 $fallbackReviewersAccessReviewReviewerScope1->setQueryType('MicrosoftGraph');
-$fallbackReviewersAccessReviewReviewerScope1->setQueryRoot(null);
 $fallbackReviewersArray []= $fallbackReviewersAccessReviewReviewerScope1;
 $requestBody->setFallbackReviewers($fallbackReviewersArray);
 
@@ -46,10 +51,12 @@ $settings->setMailNotificationsEnabled(true);
 $settings->setReminderNotificationsEnabled(true);
 $settings->setJustificationRequiredOnApproval(true);
 $settings->setDefaultDecisionEnabled(true);
-$settings->setDefaultDecision('Approve');
-$settings->setInstanceDurationInDays(0);
+$settings->setDefaultDecision('Deny');
+$settings->setInstanceDurationInDays(3);
 $settings->setAutoApplyDecisionsEnabled(true);
 $settings->setRecommendationsEnabled(true);
+$settings->setRecommendationLookBackDuration(new \DateInterval('P30D'));
+$settings->setDecisionHistoriesForReviewersEnabled(false);
 $settingsRecurrence = new PatternedRecurrence();
 $settingsRecurrencePattern = new RecurrencePattern();
 $settingsRecurrencePattern->setType(new RecurrencePatternType('absoluteMonthly'));
@@ -61,11 +68,11 @@ $settingsRecurrencePattern->setFirstDayOfWeek(new DayOfWeek('sunday'));
 $settingsRecurrencePattern->setIndex(new WeekIndex('first'));
 $settingsRecurrence->setPattern($settingsRecurrencePattern);
 $settingsRecurrenceRange = new RecurrenceRange();
-$settingsRecurrenceRange->setType(new RecurrenceRangeType('numbered'));
+$settingsRecurrenceRange->setType(new RecurrenceRangeType('endDate'));
 $settingsRecurrenceRange->setNumberOfOccurrences(0);
 $settingsRecurrenceRange->setRecurrenceTimeZone(null);
-$settingsRecurrenceRange->setStartDate(new Date('2021-02-10'));
-$settingsRecurrenceRange->setEndDate(new Date('2022-12-21'));
+$settingsRecurrenceRange->setStartDate(new Date('2024-03-21'));
+$settingsRecurrenceRange->setEndDate(new Date('2025-03-21'));
 $settingsRecurrence->setRange($settingsRecurrenceRange);
 $settings->setRecurrence($settingsRecurrence);
 $applyActionsAccessReviewApplyAction1 = new RemoveAccessApplyAction();

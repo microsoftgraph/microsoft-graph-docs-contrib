@@ -3,7 +3,7 @@ title: "List activityStatistics"
 description: "Get a collection of activityStatistics objects."
 ms.localizationpriority: medium
 author: "madehmer"
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: "apiPageType"
 ---
 
@@ -41,7 +41,7 @@ This method does not support optional query parameters to customize the response
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request of all related activity statistics for the signed-in user.
+The following example shows a request of all related activity statistics for the signed-in user.
 
 # [HTTP](#tab/http)
 <!-- {

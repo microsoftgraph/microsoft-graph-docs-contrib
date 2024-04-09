@@ -5,8 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Team;
+use Microsoft\Graph\Generated\Models\Channel;
+use Microsoft\Graph\Generated\Models\TeamsTab;
+use Microsoft\Graph\Generated\Models\TeamsTabConfiguration;
+use Microsoft\Graph\Generated\Models\TeamMemberSettings;
+use Microsoft\Graph\Generated\Models\TeamGuestSettings;
+use Microsoft\Graph\Generated\Models\TeamFunSettings;
+use Microsoft\Graph\Generated\Models\TeamMessagingSettings;
+use Microsoft\Graph\Generated\Models\TeamDiscoverySettings;
+use Microsoft\Graph\Generated\Models\TeamsAppInstallation;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Team();

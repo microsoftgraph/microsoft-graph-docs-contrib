@@ -3,7 +3,7 @@ title: "hardwareConfigurationRunSummary resource type"
 description: "Contains properties for the run summary of a hardware configuration script."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

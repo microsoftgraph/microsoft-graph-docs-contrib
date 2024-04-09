@@ -3,7 +3,7 @@ title: "contactFolder resource type"
 description: "A folder that contains contacts."
 author: "kevinbellinger"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -92,7 +92,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Get incremental changes to messages in a folder](/graph/delta-query-messages)

@@ -3,7 +3,7 @@ title: "Delete userFlowLanguageConfiguration"
 description: "Deletes a userFlowLanguageConfiguration object from a B2C user flow."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -26,10 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "userflowlanguageconfiguration_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/userflowlanguageconfiguration-delete-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
@@ -46,7 +43,7 @@ DELETE /identity/b2cUserFlows/{id}/languages/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

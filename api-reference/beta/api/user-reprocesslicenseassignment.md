@@ -3,6 +3,7 @@ title: "user: reprocessLicenseAssignment"
 description: "Reprocess all group-based license assignments for the user."
 ms.localizationpriority: medium
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.prod: "users"
 doc_type: "apiPageType" 
 ---
@@ -24,12 +25,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_reprocesslicenseassignment" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-reprocesslicenseassignment-permissions.md)]
 
-For delegated scenarios, the calling user needs one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+For delegated scenarios, the calling user needs at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 - Directory Writers
 - License Administrator
 - User Administrator
-- Global Administrator
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /users/{id}/reprocessLicenseAssignment
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

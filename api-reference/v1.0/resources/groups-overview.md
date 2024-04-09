@@ -1,9 +1,10 @@
 ---
 title: "Working with groups in Microsoft Graph"
 description: "Use the groups API to create and manage different types of groups such as Microsoft 365 groups, security groups, mail-enabled security groups, and distribution groups."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: conceptualPageType
 ms.date: 11/16/2022
 ---
@@ -79,7 +80,7 @@ Content-type: application/json
     "mailNickname": "outlookgroup101",
     "preferredLanguage": null,
     "proxyAddresses": [
-        "smtp:outlookgroup101@microsoft.onmicrosoft.com",
+        "smtp:outlookgroup101@contoso.com",
         "SMTP:outlookgroup101@service.microsoft.com"
     ],
     "securityEnabled": false,
@@ -280,6 +281,3 @@ Using Microsoft Graph, you can perform the following common operations on groups
 | Determine whether a user is a member of a group, get all the groups the user is a member of. | [user](user.md) <br/> [group](group.md) <br/> [servicePrincipal](serviceprincipal.md) <br/> [orgContact](orgcontact.md) | [Check member groups](../api/directoryobject-checkmembergroups.md) <br/> [Get member groups](../api/directoryobject-getmembergroups.md) |
 | List the owners of a group, and add or remove owners. | [user](user.md) <br/> [group](group.md) | [List owners](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md) |
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

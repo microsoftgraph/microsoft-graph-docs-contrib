@@ -2,8 +2,8 @@
 title: "List certificateBasedAuthConfigurations"
 description: "Get a list of certificatebasedauthconfiguration objects."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "identity-and-sign-in"
+author: "vimrang"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -39,7 +39,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Overview of Microsoft Graph
 
-Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access the tremendous amount of data in Microsoft 365, Windows, and Enterprise Mobility + Security. Use the wealth of data in Microsoft Graph to build apps for organizations and consumers that interact with millions of users.
+Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access the tremendous amount of data in Microsoft 365, Windows, and Enterprise Mobility + Security. Use the wealth of data accessible through Microsoft Graph to build apps for organizations and consumers that interact with millions of users.
 
 ![Microsoft Graph, Microsoft Graph Data Connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-enhance.png)
 
@@ -122,12 +122,13 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 | **Admin consent** | Entire organization<br>Resource types | Select groups of users<br>Resource types and properties<br>Excludes users |
 | **Access tools** | RESTful web queries | Azure Data Factory |
 
-## Next steps
+## Related content
 
-- Check out some [partner solutions](https://developer.microsoft.com/graph/partners).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
-- Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios.
+- Explore the [services and features](overview-major-services.md) that you can use in your scenarios.
+- Explore the [integration patterns](/graph/integration-patterns-overview) that might apply to your scenario.
+- See [what's new](whats-new-overview.md) in Microsoft Graph.
 - Learn about [metered APIs and services in Microsoft Graph](metered-api-overview.md).
 - Find out how to [get an auth token](auth/auth-concepts.md) in your app.
 - Start [using the API](use-the-api.md).

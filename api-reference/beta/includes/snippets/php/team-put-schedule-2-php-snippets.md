@@ -5,8 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Schedule;
+use Microsoft\Graph\Generated\Models\TimeClockSettings;
+use Microsoft\Graph\Generated\Models\GeoCoordinates;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Schedule();
@@ -20,6 +24,8 @@ $requestBody->setOfferShiftRequestsEnabled(true);
 $requestBody->setTimeOffRequestsEnabled(true);
 $requestBody->setStartDayOfWeek(new DayOfWeek('tuesday'));
 $requestBody->setActivitiesIncludedWhenCopyingShiftsEnabled(true);
+$requestBody->setIsCrossLocationShiftsEnabled(true);
+$requestBody->setIsCrossLocationShiftRequestApprovalRequired(true);
 $requestBody->setTimeClockEnabled(true);
 $timeClockSettings = new TimeClockSettings();
 $timeClockSettingsApprovedLocation = new GeoCoordinates();

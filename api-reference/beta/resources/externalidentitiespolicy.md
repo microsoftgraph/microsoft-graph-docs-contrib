@@ -3,7 +3,7 @@ title: "externalIdentitiesPolicy resource type"
 description: "Represents the tenant-wide policy that controls whether external users can leave a Microsoft Entra tenant via self-service controls."
 author: "KuiGithui"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ Inherits from [policyBase](../resources/policybase.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -55,5 +55,5 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 + [Leave an organization as an external user](/azure/active-directory/external-identities/leave-the-organization)

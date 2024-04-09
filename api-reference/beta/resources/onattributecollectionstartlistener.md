@@ -3,7 +3,7 @@ title: "onAttributeCollectionStartListener resource type"
 description: "A listener for the start of the user attribute collection stage of a sign up flow represented by an externalUsersSelfServiceSignUpEventsFlow object."
 author: "garrodonnell"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -63,7 +63,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
-## See also
+## Related content
 
 - [Custom authentication extensions for attribute collection start and submit events](/entra/identity-platform/custom-extension-attribute-collection)
 - [OnAttributeCollectionStart event reference](/entra/identity-platform/custom-extension-onattributecollectionstart-reference)

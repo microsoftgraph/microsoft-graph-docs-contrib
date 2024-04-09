@@ -3,7 +3,7 @@ title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -25,9 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-get-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
+The work or school account needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
-* Global Administrator
 * User Administrator
 * Helpdesk Administrator
 * Service Support Administrator
@@ -61,7 +60,7 @@ The work or school account needs to belong to one of the following roles:
 * Global Reader
 * Volume Licensing Business Center User
 * Volume Licensing Service Center User
-* Modern Commerce User
+* Modern Commerce Administrator
 * Microsoft Store for Business User
 * Directory Reviewer
 
@@ -82,7 +81,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json |
 
 ## Request body

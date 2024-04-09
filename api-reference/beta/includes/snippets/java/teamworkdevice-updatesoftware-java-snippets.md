@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-TeamworkSoftwareType softwareType = TeamworkSoftwareType.TEAMS_CLIENT;
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String softwareVersion = "1.0.96.22";
+com.microsoft.graph.beta.teamwork.devices.item.updatesoftware.UpdateSoftwarePostRequestBody updateSoftwarePostRequestBody = new com.microsoft.graph.beta.teamwork.devices.item.updatesoftware.UpdateSoftwarePostRequestBody();
+updateSoftwarePostRequestBody.setSoftwareType(TeamworkSoftwareType.TeamsClient);
+updateSoftwarePostRequestBody.setSoftwareVersion("1.0.96.22");
+graphClient.teamwork().devices().byTeamworkDeviceId("{teamworkDevice-id}").updateSoftware().post(updateSoftwarePostRequestBody);
 
-graphClient.teamwork().devices("0f3ce432-e432-0f3c-32e4-3c0f32e43c0f")
-	.updateSoftware(TeamworkDeviceUpdateSoftwareParameterSet
-		.newBuilder()
-		.withSoftwareType(softwareType)
-		.withSoftwareVersion(softwareVersion)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

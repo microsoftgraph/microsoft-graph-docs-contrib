@@ -5,8 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Simulation;
+use Microsoft\Graph\Generated\Models\EmailIdentity;
+use Microsoft\Graph\Generated\Models\AddressBookAccountTargetContent;
+use Microsoft\Graph\Generated\Models\TrainingSetting;
+use Microsoft\Graph\Generated\Models\EndUserNotificationSetting;
+use Microsoft\Graph\Generated\Models\PositiveReinforcementNotification;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Simulation();

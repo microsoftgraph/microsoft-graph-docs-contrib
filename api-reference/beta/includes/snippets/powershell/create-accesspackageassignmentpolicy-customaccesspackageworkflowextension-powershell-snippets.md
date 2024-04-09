@@ -10,6 +10,10 @@ $params = @{
 	displayName = "extension-policy"
 	description = "test"
 	accessPackageId = "ba5807c7-2aa9-4c8a-907e-4a17ee587500"
+	expiration = @{
+		type = "afterDuration"
+		duration = "P365D"
+	}
 	canExtend = $false
 	requestApprovalSettings = $null
 	requestorSettings = @{

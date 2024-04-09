@@ -5,8 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\InvitePostRequestBody;
+use Microsoft\Graph\Generated\Models\InvitationParticipantInfo;
+use Microsoft\Graph\Generated\Models\IdentitySet;
+use Microsoft\Graph\Generated\Models\Identity;
 
-// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new InvitePostRequestBody();
