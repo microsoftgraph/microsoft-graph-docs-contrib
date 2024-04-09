@@ -41,6 +41,9 @@ When calling the [industry data ETL API](/graph/api/resources/industrydata-overv
 
 Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights) method on the **peopleAdminSettings** resource..
 
+### Teamwork and communications | Messaging
+[Send chatMessage in a channel or a chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta&tabs=http) with a file attachment in it using file share link. 
+
 ## March 2024: New and generally available
 
 ### Applications
