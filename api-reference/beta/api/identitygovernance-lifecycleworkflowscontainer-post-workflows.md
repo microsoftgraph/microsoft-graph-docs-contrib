@@ -51,10 +51,10 @@ You can specify the following properties when creating a **workflow**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|[microsoft.graph.identityGovernance.lifecycleWorkflowCategory](../resources/identitygovernance-workflow.md)|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. Can be only one value. Required.|
+|category|[microsoft.graph.identityGovernance.lifecycleWorkflowCategory](../resources/identitygovernance-workflow.md)|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. It can be only one value. Required.|
 |description|String|A string that describes the purpose of the workflow for administrative use.|
 |displayName|String|A unique string that identifies the workflow. Required.|
-|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow will run. Required. |
+|executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines for who and when a workflow runs. Required. |
 |id|String|Identifier used for individually addressing a specific workflow.|
 |isEnabled|Boolean|A Boolean value that denotes whether the workflow is set to run or not.|
 |isSchedulingEnabled|Boolean|A Boolean value that denotes whether scheduling is enabled or not. |
@@ -71,8 +71,8 @@ If successful, this method returns a `201 Created` response code and a [microsof
 #### Request
 
 The following example shows a request that creates a workflow with the following configuration:
-+ It's a "joiner" workflow that's enabled and schedule to run.
-+ It runs for new users that are based in Australia, on their employeeHireDate using the time based attribute trigger.
++ It's a "joiner" workflow-enabled and scheduled to run.
++ It runs for new users based in Australia, on their employeeHireDate using the time-based attribute trigger.
 + Two tasks are carried out when the workflow runs: the user's account is enabled and a "Welcome" email is sent to the user.
 
 <!-- {
@@ -170,9 +170,9 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request that creates a workflow with the following configuration:
-+ It's a "mover" workflow that's enabled and schedule to run.
-+ It runs for existing users that are added to the "Sales" department using the attribute changes trigger.
-+ One task is carried out, which is to send a n email to notify the user's manager of the move.
++ It's a "mover" workflow-enabled and scheduled to run.
++ It runs for existing users added to the "Sales" department using the attribute changes trigger.
++ One task is carried out, which is to send an email to notify the user's manager of the move.
 
 <!-- {
   "blockType": "request",
@@ -187,7 +187,7 @@ Content-length: 631
 {
     "category": "mover",
     "description": "Configure mover tasks for a user when their job profile changes",
-    "displayName": "Sales contractor moves to full time employee",
+    "displayName": "Sales contractor moves to full-time employee",
     "isEnabled": true,
     "isSchedulingEnabled": true,
     "executionConditions": {
@@ -272,8 +272,8 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request that creates a workflow with the following configuration:
-+ It's a "leaver" workflow that's enabled and schedule to run.
-+ It runs for users that are removed from the Sales group using the group based trigger
++ It's a "leaver" workflow enabled and scheduled to run.
++ It runs for users who are removed from the Sales group using the group-based trigger.
 + Two tasks are carried out when the workflow runs: Remove user from all Teams, Remove user from all groups.
 
 <!-- {
