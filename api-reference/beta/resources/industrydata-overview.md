@@ -17,7 +17,7 @@ The industry data API is defined in the OData subnamespace `microsoft.graph.indu
 
 ## Industry data API and education
 
-The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups with Microsoft Entra ID and Microsoft 365 from student information systems (SIS) and student management systems (SMS). After normalizing the data the API utilizes the data through multiple outbound provisioning flows to manage users, class groups, administrative units and security groups.
+The industry data API powers the [Microsoft School Data Sync](https://sds.microsoft.com) (SDS) platform to help automate the process of importing data and synchronizing organizations, users and users associations, and groups with Microsoft Entra ID and Microsoft 365 from student information systems (SIS) and student management systems (SMS). After normalizing the data the API utilizes the data through multiple outbound provisioning flows to manage users, class groups, administrative units, and security groups.
 
 ![Illustration of the industry data ETL process](/graph/images/industrydata-overview.png)
 
@@ -46,7 +46,7 @@ Errors and warnings related to **industryDataRunStatistics** are produced to hel
 
 After investigating and addressing any data errors or warnings, when you're comfortable with the current state of the data health, you can enable the scenarios with the data. When you enable a scenario to use this data, the scenario creates an outbound provisioning flow. 
 
-Managing data with outbound provisioning flows help with simplifying management of users and classes. Only active and matched users are included in the data that will be used to write the link to the AAD user object between the SIS/ SMS and their sections for groups and Teams classrooms.
+Managing data through outbound provisioning flows simplifies the management of users and classes. Only active and matched users are included in the data that is used to write the link to the Microsoft Entra user object. This link facilitates the integration between the SIS/SMS and their sections for groups and Microsoft Teams classrooms.
 
 For more information, see the sections School Data Sync, SDS prerequisites, and SDS core concepts of the [School Data Sync overview](/schooldatasync/school-data-sync-overview).
 
