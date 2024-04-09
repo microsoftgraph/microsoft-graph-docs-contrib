@@ -167,7 +167,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: User requests a package and answers questions for approval
+### Example 3: Request an assignment by providing answers to questions
 
 #### Request
 
