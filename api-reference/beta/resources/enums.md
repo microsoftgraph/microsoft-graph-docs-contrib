@@ -2880,8 +2880,8 @@ Possible values for user account types (group membership), per Windows definitio
 | Member |
 | :----- |
 |none|
-| resourcelessRequest|
-| confidentialClientIdToken|
+|resourcelessRequest|
+|confidentialClientIdToken|
 |confidentialClientNonIdToken|
 |resourceMapping|
 |resourceMappingDefault|
