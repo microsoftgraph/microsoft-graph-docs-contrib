@@ -35,9 +35,9 @@ To complete this tutorial, you need the following resources and privileges:
 
     | User property | Description |Set on|
     |:--- |:---|:-----|
-    |mail|Used to notify the manager that the employee was moved to the department. Both the manager and employee should have active mailboxes to receive emails.|Employee, Manager|
+    |mail|Notifies the manager that the employee was moved to the department. Both the manager and employee should have active mailboxes to receive emails.|Employee, Manager|
     |manager|This attribute is used by the workflow task.|Employee|
-    |Department|Used to provide the scope for the workflow. Set to `Sales`.|Employee, Manager|
+    |Department|Provides the scope for the workflow. Set to `Sales`.|Employee, Manager|
 
 ## Create a "mover" workflow
 
@@ -45,7 +45,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 The following request creates a mover workflow with the following settings:
 
-+ It rns on schedule, but also can be run on demand
++ It runs on schedule but also can be run on demand.
 + The workflow runs when an employee is removed from the **sales** department.
 + Only one built-in task runs in this workflow: to send an email to the employee's manager notifying them of the move. This task is identified in lifecycle workflows by the **taskDefinitionId** `aab41899-9972-422a-9d97-f626014578b7`.
 
@@ -278,5 +278,5 @@ Content-Type: application/json
 
 - [Automate employee onboarding tasks before their first day of work by using the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal).
 - [Overview of Microsoft Entra lifecycle workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview).
-- [Overview of reporting in Microsoft Entra Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)
+- [Overview of reporting in Microsoft Entra lifecycle workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)
 
