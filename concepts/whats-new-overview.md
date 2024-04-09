@@ -18,6 +18,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## April 2024: New and generally available
 
+### Applications
+
+Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
+
+- [Upsert application](/graph/api/application-upsert)
+- [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert)
+- [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert)
+
+### Groups
+
+Added the [upsert](/graph/api/group-upsert) capability to the [group resource type](/graph/api/resources/group). Use this capability to create a group if it doesn't exist, or update an existing group, by using the **uniqueName** client-provided key.
+
 ### Sites and lists
 
 - [Track changes for SharePoint site](/graph/api/site-delta) resources.
@@ -26,6 +38,9 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Identity and access | Identity and sign-in
 
 Configure the [default identity provider](/graph/api/resources/defaultInvitationRedemptionIdentityProviderConfiguration) to use in redemption flow settings for Microsoft Entra ID B2B collaboration.
+
+### Users
+Associate users or groups as sponsors for a guest user's privileges in the tenant and keep the guest user's information and access updated. You can [assign a sponsor](/graph/api/user-post-sponsors), [list sponsors](/graph/api/user-list-sponsors), and [remove a sponsor](/graph/api/user-delete-sponsors).
 
 ## April 2024: New in preview only
 
@@ -83,11 +98,11 @@ Use the [training campaign](/graph/api/resources/trainingcampaign?view=graph-res
 
 ### Applications
 
-Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
+Use the upsert capability to create an [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential?view=graph-rest-beta&preserve-view=true), or [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
 
-- [Upsert application](/graph/api/application-upsert)
-- [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert)
-- [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert)
+- [Upsert application](/graph/api/application-upsert?view=graph-rest-beta&preserve-view=true)
+- [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert?view=graph-rest-beta&preserve-view=true)
+- [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert?view=graph-rest-beta&preserve-view=true)
 
 ### Device and app management | Cloud PC
 
