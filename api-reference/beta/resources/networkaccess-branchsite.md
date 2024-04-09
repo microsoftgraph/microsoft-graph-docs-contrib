@@ -37,7 +37,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |id|String|Identifier for the branch. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|last modified time.|
 |name|String|Name.|
-|region|String|The branch site is created in the specified location. The possible value are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`, `australiaEast`, `westCentralUS`, `centralIndia`, `southEastAsia`, `swedenCentral`, `southIndia`, `australiaSouthEast`, `koreaCentral`, `polandCentral`, `brazilSouth`, `japanEast`, `japanWest`, `unknownFutureValue`.|
+|region|microsoft.graph.networkaccess.region|Specify the region closest to your remote network. The possible value are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`, `australiaEast`, `westCentralUS`, `centralIndia`, `southEastAsia`, `swedenCentral`, `southIndia`, `australiaSouthEast`, `koreaCentral`, `koreaSouth`, `polandCentral`, `brazilSouth`, `japanEast`, `japanWest`, `koreaSouth`, `italyNorth`, `franceSouth`, `israelCentral`, `unknownFutureValue`.|
 |version|String|The branch version.|
 |country (deprecated)|String|The branch site is created in the specified country. **DO NOT USE.**|
 
