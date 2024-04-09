@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Provides information on which sharing links are available to the user.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |anyoneLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|Describes anyone link abilities.|
@@ -24,9 +25,11 @@ Provides information on which sharing links are available to the user.
 |specificPeopleLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|**TODO: Add Description**|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -50,4 +53,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

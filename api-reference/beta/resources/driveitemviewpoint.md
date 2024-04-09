@@ -16,15 +16,18 @@ Namespace: microsoft.graph
 Returns information specific to the calling user for this drive item.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |accessOperations|[driveItemAccessOperationsViewpoint](../resources/driveitemaccessoperationsviewpoint.md)| Describes whether the user is able to carry out the described actions on this item.|
 |sharing|[sharingViewpoint](../resources/sharingviewpoint.md)|Describes sharing operations the user can take on the specified item.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -42,4 +45,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

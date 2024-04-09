@@ -16,15 +16,18 @@ Namespace: microsoft.graph
 Describes the status of a particular sharing operation.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |disabledReason|String|Provides a description of why this operation is not enabled. Only returned if this operation is not enabled.|
 |enabled|Boolean|Indicates whether this operation is enabled.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -38,4 +41,3 @@ The following JSON representation shows the resource type.
   "disabledReason": "String"
 }
 ```
-

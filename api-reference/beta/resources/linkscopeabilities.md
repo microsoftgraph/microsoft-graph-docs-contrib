@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Describes sharing abilities for each possible sharingRole within a particular sharing link scope.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |blockDownloadLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes blockDownload link abilities.|
@@ -26,9 +27,11 @@ Describes sharing abilities for each possible sharingRole within a particular sh
 |submitOnlyLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes submitOnly link abilities.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -58,4 +61,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

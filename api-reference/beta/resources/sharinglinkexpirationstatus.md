@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Describes whether links must expire, and if link expiration is enabled, a default link expiration time is provided.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |defaultExpirationInDays|Int32|Default link expiration in days. Returns -1 if there is no required expiration time.|
@@ -23,9 +24,11 @@ Describes whether links must expire, and if link expiration is enabled, a defaul
 |enabled|Boolean|Indicates whether this operation is enabled.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -40,4 +43,3 @@ The following JSON representation shows the resource type.
   "defaultExpirationInDays": "Integer"
 }
 ```
-

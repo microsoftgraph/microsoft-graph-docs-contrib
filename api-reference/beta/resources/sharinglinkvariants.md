@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Describes the status of potential sharing link variants which will generate a separate sharing link from the link that would otherwise be generated without the variant, yet with identical role and scope.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |addressBarLinkPermission|sharingRole|Returns the most permissive role with which an address bar link can be created. The possible values are: `none`, `view`, `edit`, `manageList`, `review`, `restrictedView`, `submitOnly`, `unknownFutureValue`.|
@@ -24,9 +25,11 @@ Describes the status of potential sharing link variants which will generate a se
 |requiresAuthentication|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Whether a link requires identity authentication for recipients. Users can be verified through either an email address or identity.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -48,4 +51,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

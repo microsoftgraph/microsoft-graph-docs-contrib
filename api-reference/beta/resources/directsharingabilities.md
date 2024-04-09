@@ -16,17 +16,20 @@ Namespace: microsoft.graph
 Describes direct sharing abilities.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add existing external user recipients to this item using direct sharing.|
+|addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add existing guest recipients to this item using direct sharing.|
 |addInternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add internal recipients to this item using direct sharing.|
-|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add new external user recipients to this item using direct sharing.|
+|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add new guest recipients to this item using direct sharing.|
 |requestGrantAccess|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the user querying this endpoint can request access for the user or on behalf of other users, after which site admins will be able to approve or deny the creation of a potential sharing link.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -50,4 +53,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

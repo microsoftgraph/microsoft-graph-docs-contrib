@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Describes sharing link operations for a link of a specified role.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add existing external user recipients to this sharing link.|
@@ -29,9 +30,11 @@ Describes sharing link operations for a link of a specified role.
 |updateLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether links of this role can be updated.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -70,4 +73,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

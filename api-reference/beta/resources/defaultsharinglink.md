@@ -1,9 +1,9 @@
 ---
 title: "defaultSharingLink resource type"
 description: "Describes default sharing link the user is able to create."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ziebd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Describes default sharing link the user is able to create.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |defaultToExistingAccess|Boolean|Indicates whether the default link setting for this object is a direct URL rather than a sharing link.|
@@ -23,9 +24,11 @@ Describes default sharing link the user is able to create.
 |scope|sharingScope|The default sharing link scope. The possible values are: `anyone`, `organization`, `specificPeople`, `anonymous`, `users`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -40,4 +43,3 @@ The following JSON representation shows the resource type.
   "defaultToExistingAccess": "Boolean"
 }
 ```
-

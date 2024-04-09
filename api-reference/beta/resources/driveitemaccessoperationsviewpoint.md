@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Describes whether the user is able to carry out the described actions on this item.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |canComment|Boolean|Whether the user can comment on this item.|
@@ -27,9 +28,11 @@ Describes whether the user is able to carry out the described actions on this it
 |canUpdate|Boolean|Whether the user can update this item.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -48,4 +51,3 @@ The following JSON representation shows the resource type.
   "canUpdate": "Boolean"
 }
 ```
-
