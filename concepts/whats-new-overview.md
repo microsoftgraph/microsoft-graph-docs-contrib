@@ -95,8 +95,7 @@ Use the [training campaign](/graph/api/resources/trainingcampaign?view=graph-res
 
 ### Applications
 
-Use the upsert
- capability to create an [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential?view=graph-rest-beta&preserve-view=true), or [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
+Use the upsert capability to create an [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential?view=graph-rest-beta&preserve-view=true), or [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
 
 - [Upsert application](/graph/api/application-upsert?view=graph-rest-beta&preserve-view=true)
 - [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert?view=graph-rest-beta&preserve-view=true)
