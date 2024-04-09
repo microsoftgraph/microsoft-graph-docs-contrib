@@ -14,7 +14,7 @@ retentionEvent.setDisplayName("String");
 retentionEvent.setDescription("String");
 LinkedList<com.microsoft.graph.beta.models.security.EventQuery> eventQueries = new LinkedList<com.microsoft.graph.beta.models.security.EventQuery>();
 com.microsoft.graph.beta.models.security.EventQuery eventQuery = new com.microsoft.graph.beta.models.security.EventQuery();
-eventQuery.setOdataType("microsoft.graph.security.eventQueries");
+eventQuery.setOdataType("microsoft.graph.security.eventQuery");
 eventQueries.add(eventQuery);
 retentionEvent.setEventQueries(eventQueries);
 OffsetDateTime eventTriggerDateTime = OffsetDateTime.parse("String (timestamp)");
