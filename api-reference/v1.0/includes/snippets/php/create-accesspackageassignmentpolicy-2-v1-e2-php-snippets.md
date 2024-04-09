@@ -5,6 +5,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessPackageAssignmentPolicy;
+use Microsoft\Graph\Generated\Models\SubjectSet;
+use Microsoft\Graph\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Generated\Models\AccessPackageAssignmentRequestorSettings;
+use Microsoft\Graph\Generated\Models\AccessPackageAssignmentApprovalSettings;
+use Microsoft\Graph\Generated\Models\AccessPackageApprovalStage;
+use Microsoft\Graph\Generated\Models\InternalSponsors;
+use Microsoft\Graph\Generated\Models\SingleUser;
+use Microsoft\Graph\Generated\Models\GroupMembers;
+use Microsoft\Graph\Generated\Models\AccessPackageAssignmentReviewSettings;
+use Microsoft\Graph\Generated\Models\EntitlementManagementSchedule;
+use Microsoft\Graph\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Generated\Models\DayOfWeek;
+use Microsoft\Graph\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Generated\Models\AccessPackage;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -9,7 +9,6 @@ import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
@@ -17,13 +16,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewCitationTemplate()
-displayName := "String"
+displayName := "Contoso Company Policy"
 requestBody.SetDisplayName(&displayName) 
-createdBy := graphmodels.NewIdentitySet()
-requestBody.SetCreatedBy(createdBy)
-citationUrl := "String"
+citationUrl := "www.citationUrl.com"
 requestBody.SetCitationUrl(&citationUrl) 
-citationJurisdiction := "String"
+citationJurisdiction := "Contoso"
 requestBody.SetCitationJurisdiction(&citationJurisdiction) 
 
 citations, err := graphClient.Security().Labels().Citations().Post(context.Background(), requestBody, nil)
