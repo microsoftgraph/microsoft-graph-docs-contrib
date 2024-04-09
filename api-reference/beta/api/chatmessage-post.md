@@ -616,7 +616,7 @@ The following example shows a request
 > - The file to attach must already be in SharePoint. Use any GUID for your attachment ID. Use the file share link as **contentURL**. User must have permissions to drive item using the file [share link](https://learn.microsoft.com/en-us/graph/api/shares-get?view=graph-rest-1.0&tabs=http). 
 > - Using file share link for sending messages is not supported in [migration](https://learn.microsoft.com/en-us/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) scenario. 
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_5",
