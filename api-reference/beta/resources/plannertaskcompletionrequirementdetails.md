@@ -20,6 +20,7 @@ Represents detailed information about [completionRequirements](plannertask.md#pl
 |Property|Type|Description|
 |:---|:---|:---|
 |checklistRequirement|[plannerChecklistRequirement](plannerchecklistrequirement.md)|Information about the requirements for completing the checklist.|
+|formsRequirement|[plannerFormsRequirement](plannerformsrequirement.md)|Information about the requirements for completing the forms.|
 
 ## Relationships
 
@@ -27,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -36,6 +37,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.plannerTaskCompletionRequirementDetails",
-  "checklistRequirement": {"@odata.type": "microsoft.graph.plannerChecklistRequirement"}
+  "checklistRequirement": {"@odata.type": "microsoft.graph.plannerChecklistRequirement"},
+  "formsRequirement": {"@odata.type": "microsoft.graph.plannerFormsRequirement"}
 }
 ```
