@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 startDateTime , err := time.Parse(time.RFC3339, "{startDateTime}")
 endDateTime , err := time.Parse(time.RFC3339, "{endDateTime}")
-microsoftGraphNetworkaccessEntitiesSummaries, err := graphClient.NetworkAccess().Reports().MicrosoftGraphNetworkaccessEntitiesSummariesWithStartDateTimeWithEndDateTime(&startDateTime, &endDateTime).Get(context.Background(), nil)
+microsoftGraphNetworkaccessEntitiesSummaries, err := graphClient.NetworkAccess().Reports().MicrosoftGraphNetworkaccessEntitiesSummariesWithStartDateTimeWithEndDateTime(&startDateTime, &endDateTime).GetAsEntitiesSummariesWithStartDateTimeWithEndDateTimeGetResponse(context.Background(), nil)
 
 
 ```

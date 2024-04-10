@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\InformationProtection\Policy\Labels\EvaluateApplication\EvaluateApplicationRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Generated\Models\EvaluateApplicationPostRequestBody;
+use Microsoft\Graph\Generated\Models\ContentInfo;
+use Microsoft\Graph\Generated\Models\KeyValuePair;
+use Microsoft\Graph\Generated\Models\LabelingOptions;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

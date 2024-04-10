@@ -1,6 +1,6 @@
 ---
 title: "outlookItem resource type"
-description: "Here's a JSON representation of the resource"
+description: "The following JSON representation shows the resource type."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

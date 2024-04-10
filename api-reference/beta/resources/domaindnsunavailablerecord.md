@@ -27,7 +27,7 @@ Direct queries to this resource aren't supported. See the [domain](domain.md) ar
 None
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

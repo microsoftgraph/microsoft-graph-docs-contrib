@@ -5,6 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\LearningSelfInitiatedCourse;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

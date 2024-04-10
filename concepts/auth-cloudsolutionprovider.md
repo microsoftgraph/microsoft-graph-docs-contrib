@@ -40,6 +40,8 @@ The initial steps required here follow most of the same steps used to register a
 
 Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using [Azure AD PowerShell V2](https://www.powershellgallery.com/packages/AzureAD) or [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
 
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../api-reference/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+
 # [Azure AD PowerShell](#tab/azuread)
 
 1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.

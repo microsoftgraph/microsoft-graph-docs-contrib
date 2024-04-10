@@ -1,16 +1,16 @@
 ---
-title: "Access Microsoft Graph activity logs (preview)"
+title: "Access Microsoft Graph activity logs"
 description: "Microsoft Graph activity logs are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: yiheguo
+ms.topic: concept-article
 ms.localizationpriority: high
-ms.subservice: "entra-applications"
-doc_type: conceptualPageType
+ms.subservice: non-product-specific
 ms.date: 10/24/2023
 ---
 
-# Access Microsoft Graph activity logs (preview)
+# Access Microsoft Graph activity logs
 
 **Microsoft Graph activity logs** are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant. Tenant administrators can enable the collection and configure downstream destinations for these logs using diagnostic settings in Azure Monitor. The logs are stored in Log Analytics for analysis, and you can export them to Azure Storage for long-term storage, or stream with Azure Event Hubs to external SIEM tools for alerting, analysis, or archival.
 
