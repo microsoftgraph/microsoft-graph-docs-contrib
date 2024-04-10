@@ -111,7 +111,6 @@ GET https://graph.microsoft.com/v1.0/reports/getRelyingPartyDetailedSummary(peri
 
 ---
 
-
 ### Response
 
 The following example shows the response.

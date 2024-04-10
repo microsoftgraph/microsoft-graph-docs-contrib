@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs
 [!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcs-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcs-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-cloudpcs-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -181,6 +185,10 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs?$
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-cloudpcs-with-top-query-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcs-with-top-query-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
