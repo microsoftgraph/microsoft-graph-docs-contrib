@@ -42,6 +42,7 @@ The following JSON representation shows the resource type.
   "dataLocationCode": "EUR",
   "root": { "@odata.type": "microsoft.graph.root" },
   "archivalDetails": {
+    "@odata.type": "microsoft.graph.siteArchivalDetails",
     "archiveStatus": "fullyArchived"
   }
 }
