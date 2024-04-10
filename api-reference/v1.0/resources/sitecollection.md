@@ -40,7 +40,7 @@ The following JSON representation shows the resource type.
 {
   "hostname": "contoso.sharepoint.com",
   "dataLocationCode": "EUR",
-  "root": { "@odata.type": "microsoft.graph.root" }
+  "root": { "@odata.type": "microsoft.graph.root" },
   "archivalDetails": {
     "archiveStatus": "fullyArchived"
   }
