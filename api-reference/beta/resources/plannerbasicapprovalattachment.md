@@ -20,8 +20,8 @@ Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalId|String|Read-only. Identifier of the approval, in approval service|
-|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|Status of the approval. Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md). The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only.
+|approvalId|String|Read-only. The identifier of the approval in the approval service|
+|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|The status of the approval. Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md). The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only.
 
 ### plannerApprovalStatus values 
 
