@@ -12,13 +12,10 @@ const client = Client.init(options);
 
 const subcategoryTemplate = {
   '@odata.type': '#microsoft.graph.security.subCategoryTemplate',
-  displayName: 'String',
-  createdBy: {
-    '@odata.type': 'microsoft.graph.identitySet'
-  }
+  displayName: 'Vendor Invoice',
 };
 
-await client.api('/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories')
+await client.api('/security/labels/categories/{categoryTemplateId}/subCategories')
 	.version('beta')
 	.post(subcategoryTemplate);
 
