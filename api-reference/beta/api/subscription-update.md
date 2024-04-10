@@ -25,8 +25,7 @@ Subscriptions expire after a length of time that varies by resource type. In ord
 
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-> **Note**:
->
+> [!NOTE]
 > Some resources support change notifications in multiple scenarios, each of which may require different permissions. In those cases, use the resource path to differentiate the scenarios.
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
