@@ -11,7 +11,7 @@ mgc-beta security triggers retention-events create --body '{\
   "description": "String",\
   "eventQueries": [\
     {\
-      "@odata.type": "microsoft.graph.security.eventQueries"\
+      "@odata.type": "microsoft.graph.security.eventQuery"\
     }\
   ],\
   "eventTriggerDateTime": "String (timestamp)",\

@@ -10,10 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.models.security.CategoryTemplate categoryTemplate = new com.microsoft.graph.beta.models.security.CategoryTemplate();
 categoryTemplate.setOdataType("#microsoft.graph.security.categoryTemplate");
-categoryTemplate.setDisplayName("String");
-IdentitySet createdBy = new IdentitySet();
-createdBy.setOdataType("microsoft.graph.identitySet");
-categoryTemplate.setCreatedBy(createdBy);
+categoryTemplate.setDisplayName("Accounts Payable");
 com.microsoft.graph.models.security.CategoryTemplate result = graphClient.security().labels().categories().post(categoryTemplate);
 
 

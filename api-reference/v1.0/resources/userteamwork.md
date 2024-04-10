@@ -13,11 +13,19 @@ Namespace: microsoft.graph
 
 Represents a container for the range of Microsoft Teams functionalities that are available per user in the tenant.
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get userTeamwork](../api/userteamwork-get.md)|[userTeamwork](../resources/userteamwork.md)|Get userTeamwork settings for the specified [user](../resources/user.md), which includes the Microsoft Teams region and the locale chosen by the user.|
+
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|id|string| The unique identifier for the **userTeamwork** object. |
+|id| String|The unique identifier for the **userTeamwork** object.|
+|locale|String |The chosen locale of a user in Microsoft Teams.|  
+|region |String|The region of the user in Microsoft Teams.|
 
 ## Relationships
 
@@ -38,7 +46,9 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "locale" : "String",
+  "region" : "String"
 }
 ```
 
@@ -55,3 +65,6 @@ The following JSON representation shows the resource type.
 }
 -->
 
+## Related content
+
+- [teamwork resource type](teamwork.md)

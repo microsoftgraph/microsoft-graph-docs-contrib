@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Remove-MgBetaDeviceRegisteredOwnerByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
+Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
 
 ```

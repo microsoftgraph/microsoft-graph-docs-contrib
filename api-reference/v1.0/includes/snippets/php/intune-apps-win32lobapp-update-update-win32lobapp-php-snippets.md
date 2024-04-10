@@ -5,6 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Win32LobApp;
+use Microsoft\Graph\Generated\Models\MimeContent;
+use Microsoft\Graph\Generated\Models\Win32LobAppRule;
+use Microsoft\Graph\Generated\Models\Win32LobAppRegistryRule;
+use Microsoft\Graph\Generated\Models\Win32LobAppInstallExperience;
+use Microsoft\Graph\Generated\Models\Win32LobAppReturnCode;
+use Microsoft\Graph\Generated\Models\Win32LobAppMsiInformation;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
