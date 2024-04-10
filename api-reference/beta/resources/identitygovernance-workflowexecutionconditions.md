@@ -1,6 +1,6 @@
 ---
 title: "workflowExecutionConditions resource type"
-description: "An abstract typebinherited by derived types that define different conditions that trigger execution of a workflow."
+description: "An abstract type inherited by derived types that define different conditions that trigger execution of a workflow."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"

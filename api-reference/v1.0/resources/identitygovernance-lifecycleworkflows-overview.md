@@ -83,9 +83,9 @@ When creating or updating a workflow, use the [workflowExecutionConditions resou
 After identifying the tasks and execution conditions that you want to define for your workflow, use the [workflow resource type](identitygovernance-workflow.md), and its associated methods to create and manage the workflow. You can create up to 50 workflows in a tenant. The category of the task must match the category of the workflow. Each workflow can have up to 25 tasks. Therefore:
 
 + A task supported for only the "leaver" workflow category can't be specified in a "joiner" or "mover" workflow scenario, and vice versa.
-+ A task supported for both "joiner", "mover", and "leaver" workflow categories can be specified in either a "joiner", "mover" or "leaver" workflow scenario.
++ A task supported for "joiner", "mover", and "leaver" workflow categories can be specified in either a "joiner", "mover" or "leaver" workflow scenario.
 
-You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. The tenant schedule can take care of regular new hires and terminations, while you can run a workflow on-demand immediately to terminate an employee's access if there is a sensitive event.
+You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. The tenant schedule can take care of scheduled new hires and terminations, while you can run a workflow on-demand immediately to terminate an employee's access if there is a sensitive event.
 
 ### Workflow versions
 
