@@ -8,16 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models.Security;
-using Microsoft.Graph.Beta.Models;
 
 var requestBody = new FilePlanReferenceTemplate
 {
 	OdataType = "#microsoft.graph.security.filePlanReferenceTemplate",
-	DisplayName = "String",
-	CreatedBy = new IdentitySet
-	{
-		OdataType = "microsoft.graph.identitySet",
-	},
+	DisplayName = "FIN 01-02-001",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
