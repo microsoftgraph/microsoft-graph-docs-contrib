@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\EducationPointsOutcome;
+use Microsoft\Graph\Generated\Models\EducationAssignmentPointsGrade;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
