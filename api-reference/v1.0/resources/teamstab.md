@@ -43,7 +43,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 <!-- {

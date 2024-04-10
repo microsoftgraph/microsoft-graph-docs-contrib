@@ -109,6 +109,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/userthisconvertexternaltointernalmemberuser-cloudonly-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userthisconvertexternaltointernalmemberuser-cloudonly-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/userthisconvertexternaltointernalmemberuser-cloudonly-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -187,6 +191,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -253,6 +261,10 @@ POST https://graph.microsoft.com/beta/users/0b8cc234-ef87-4015-9785-cbb42000d41c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/userthisconvertexternaltointernalmemberuser-synceduser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userthisconvertexternaltointernalmemberuser-synceduser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

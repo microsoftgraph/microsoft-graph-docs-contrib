@@ -215,7 +215,7 @@ items:
                   - name: Insights settings
                     href: resources/insightssettings.md
                   - name: List
-                    href: api/organizationsettings-list-iteminsights.md
+                    href: api/peopleadminsettings-list-iteminsights.md
                   - name: Update
                     href: api/insightssettings-update.md
               - name: User control (preview)
@@ -1369,6 +1369,23 @@ items:
                 href: api/place-get.md
               - name: Update place
                 href: api/place-update.md
+              - name: Devices (preview)
+                items:
+                  - name: Workplace sensor device
+                    href: resources/workplacesensordevice.md
+                    items:
+                      - name: List
+                        href: api/workplace-list-sensordevices.md
+                      - name: Create
+                        href: api/workplace-post-sensordevices.md
+                      - name: Get
+                        href: api/workplacesensordevice-get.md
+                      - name: Update
+                        href: api/workplacesensordevice-update.md
+                      - name: Delete
+                        href: api/workplacesensordevice-delete.md
+                      - name: Ingest telemetry
+                        href: api/workplacesensordevice-ingesttelemetry.md    
       - name: Change notifications
         items:
           - name: Overview
@@ -2045,6 +2062,30 @@ items:
                     href: api/cloudpcusersetting-delete.md
                   - name: Assign
                     href: api/cloudpcusersetting-assign.md
+              - name: Cloud PC bulk action
+                items:
+                  - name: Cloud PC bulk action
+                    href: resources/cloudpcbulkaction.md
+                  - name: Cloud PC bulk power off
+                    href: resources/cloudpcbulkpoweroff.md
+                  - name: Cloud PC bulk power on
+                    href: resources/cloudpcbulkpoweron.md
+                  - name: Cloud PC bulk reprovision
+                    href: resources/cloudpcbulkreprovision.md
+                  - name: Cloud PC bulk resize
+                    href: resources/cloudpcbulkresize.md
+                  - name: Cloud PC bulk restart
+                    href: resources/cloudpcbulkrestart.md
+                  - name: Cloud PC bulk restore
+                    href: resources/cloudpcbulkrestore.md
+                  - name: Cloud PC bulk troubleshoot
+                    href: resources/cloudpcbulktroubleshoot.md
+                  - name: List
+                    href: api/virtualendpoint-list-bulkactions.md
+                  - name: Create
+                    href: api/virtualendpoint-post-bulkactions.md
+                  - name: Get
+                    href: api/cloudpcbulkaction-get.md
               - name: Alert monitoring
                 items:
                   - name: Monitoring
@@ -11838,7 +11879,7 @@ items:
                         href: api/organizationsettings-list-contactinsights.md
                       - name: Update
                         href: api/insightssettings-update.md
-                  - name: Org control for item insights (preview)
+                  - name: Org control for item insights (deprecated)
                     items:
                       - name: Insights settings
                         href: resources/insightssettings.md
@@ -15108,6 +15149,62 @@ items:
                 href: api/industrydata-industrydatarun-get.md
               - name: Get statistics
                 href: api/industrydata-industrydatarun-getstatistics.md
+          - name: Outbound provisioning flow set
+            href: resources/industrydata-outboundprovisioningflowset.md
+            items:
+              - name: List
+                href: api/industrydata-industrydataroot-list-outboundprovisioningflowsets.md
+              - name: Create
+                href: api/industrydata-industrydataroot-post-outboundprovisioningflowsets.md
+              - name: Get
+                href: api/industrydata-outboundprovisioningflowset-get.md
+              - name: Update
+                href: api/industrydata-outboundprovisioningflowset-update.md
+              - name: Delete
+                href: api/industrydata-industrydataroot-delete-outboundprovisioningflowsets.md
+          - name: Provisioning flow
+            href: resources/industrydata-provisioningflow.md
+            items:
+              - name: List
+                href: api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
+              - name: Create
+                href: api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+              - name: Administrative unit provisioning flow
+                href: resources/industrydata-administrativeunitprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-administrativeunitprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-administrativeunitprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-administrativeunitprovisioningflow-delete.md
+              - name: Class group provisioning flow
+                href: resources/industrydata-classgroupprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-classgroupprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-classgroupprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-classgroupprovisioningflow-delete.md
+              - name: Security group provisioning flow
+                href: resources/industrydata-securitygroupprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-securitygroupprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-securitygroupprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-securitygroupprovisioningflow-delete.md
+              - name: User provisioning flow
+                href: resources/industrydata-userprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-userprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-userprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-userprovisioningflow-delete.md
           - name: Reference definition
             href: resources/industrydata-referencedefinition.md
             items:
@@ -15453,6 +15550,14 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
+              - name: Org control for item insights settings (preview)
+                items:
+                - name: Insights settings
+                  href: resources/insightssettings.md
+                - name: List
+                  href: api/peopleadminsettings-list-iteminsights.md
+                - name: Update
+                  href: api/insightssettings-update.md
               - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
@@ -15780,7 +15885,7 @@ items:
                   - name: Insights settings
                     href: resources/insightssettings.md
                   - name: List
-                    href: api/organizationsettings-list-iteminsights.md
+                    href: api/peopleadminsettings-list-iteminsights.md
                   - name: Update
                     href: api/insightssettings-update.md
               - name: User control (preview)
@@ -17072,9 +17177,7 @@ items:
             items:
               - name: Overview
                 href: resources/security-recordsmanagement-overview.md
-              - name: Label (preview)
-                href: resources/security-labelsroot.md
-              - name: Retention label (preview)
+              - name: Retention label
                 href: resources/security-retentionlabel.md
                 items:
                   - name: List
@@ -17088,74 +17191,97 @@ items:
                   - name: Delete
                     href: api/security-retentionlabel-delete.md
               - name: File plan descriptors
-                href: resources/security-fileplandescriptor.md
                 items:
-                  - name: File plan reference
-                    href: resources/security-fileplanreference.md
-                    items:
-                      - name: List
-                        href: api/security-labelsroot-list-fileplanreferences.md
-                      - name: Create
-                        href: api/security-labelsroot-post-fileplanreferences.md
-                      - name: Get
-                        href: api/security-fileplanreferencetemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-fileplanreferences.md
+                - name: File plan descriptors
+                  items:
+                  - name: File plan descriptor set
+                    href: resources/security-fileplandescriptor.md
+                  - name: Applied category
+                    href: resources/security-appliedcategory.md
                   - name: Authority
                     href: resources/security-authority.md
-                    items:
-                      - name: List
-                        href: api/security-labelsroot-list-authorities.md
-                      - name: Create
-                        href: api/security-labelsroot-post-authorities.md
-                      - name: Get
-                        href: api/security-authoritytemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-authorities.md
-                  - name: Category
-                    href: resources/security-appliedcategory.md
-                    items:
-                      - name: List
-                        href: api/security-labelsroot-list-categories.md
-                      - name: Create
-                        href: api/security-labelsroot-post-categories.md
-                      - name: Get
-                        href: api/security-categorytemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-categories.md
-                  - name: Subcategory
-                    href: resources/security-subcategory.md
-                    items:
-                      - name: List
-                        href: api/security-categorytemplate-list-subcategories.md
-                      - name: Create
-                        href: api/security-categorytemplate-post-subcategories.md
-                      - name: Get
-                        href: api/security-subcategorytemplate-get.md
-                      - name: Delete
-                        href: api/security-categorytemplate-delete-subcategories.md
-                  - name: Department
-                    href: resources/security-department.md
-                    items:
-                      - name: List
-                        href: api/security-labelsroot-list-departments.md
-                      - name: Create
-                        href: api/security-labelsroot-post-departments.md
-                      - name: Get
-                        href: api/security-departmenttemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-departments.md
                   - name: Citation
                     href: resources/security-citation.md
+                  - name: Department
+                    href: resources/security-department.md
+                  - name: File plan reference
+                    href: resources/security-fileplanreference.md
+                  - name: Subcategory
+                    href: resources/security-subcategory.md
+                - name: File plan descriptor templates
+                  items:
+                  - name: Applied category template
                     items:
-                      - name: List
-                        href: api/security-labelsroot-list-citations.md
-                      - name: Create
-                        href: api/security-labelsroot-post-citations.md
-                      - name: Get
-                        href: api/security-citationtemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-citations.md
+                    - name: Category template
+                      href: resources/security-categorytemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-categories.md
+                    - name: Create
+                      href: api/security-labelsroot-post-categories.md
+                    - name: Get
+                      href: api/security-categorytemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-categories.md
+                  - name: Authority template
+                    items:
+                    - name: Authority template
+                      href: resources/security-authoritytemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-authorities.md
+                    - name: Create
+                      href: api/security-labelsroot-post-authorities.md
+                    - name: Get
+                      href: api/security-authoritytemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-authorities.md
+                  - name: Citation template
+                    items:
+                    - name: Citation template
+                      href: resources/security-citationtemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-citations.md
+                    - name: Create
+                      href: api/security-labelsroot-post-citations.md
+                    - name: Get
+                      href: api/security-citationtemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-citations.md
+                  - name: Department template
+                    items:
+                    - name: Department template
+                      href: resources/security-departmenttemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-departments.md
+                    - name: Create
+                      href: api/security-labelsroot-post-departments.md
+                    - name: Get
+                      href: api/security-departmenttemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-departments.md              
+                  - name: File plan reference template
+                    items:
+                    - name: File plan reference template
+                      href: resources/security-fileplanreferencetemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-fileplanreferences.md
+                    - name: Create
+                      href: api/security-labelsroot-post-fileplanreferences.md
+                    - name: Get
+                      href: api/security-fileplanreferencetemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-fileplanreferences.md
+                  - name: Subcategory template
+                    items:
+                    - name: Subcategory template
+                      href: resources/security-subcategorytemplate.md
+                    - name: List
+                      href: api/security-categorytemplate-list-subcategories.md
+                    - name: Create
+                      href: api/security-categorytemplate-post-subcategories.md
+                    - name: Get
+                      href: api/security-subcategorytemplate-get.md
+                    - name: Delete
+                      href: api/security-categorytemplate-delete-subcategories.md
               - name: Retention event
                 href: resources/security-retentionevent.md
                 items:
@@ -17585,12 +17711,12 @@ items:
                 href: api/listitem-createlink.md
               - name: Get activities by interval
                 href: api/itemactivity-getbyinterval.md
+              - name: Get delta
+                href: api/listitem-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
               - name: List versions
                 href: api/listitem-list-versions.md
-              - name: Get delta
-                href: api/listitem-delta.md
           - name: Document set version
             items:
               - name: Document set version
