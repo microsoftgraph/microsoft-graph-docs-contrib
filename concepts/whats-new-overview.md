@@ -84,7 +84,8 @@ Enabled the `$expand` query parameter for the [Get educationAssignment](/graph/a
 
 ### Identity and access | Directory management
 
-The organization entity now returns the `CIAM` **tenantType** to identify tenants that are set up as Microsoft Entra ID for customers tenants, a customer identity & access management (CIAM) solution.
+- The organization entity now returns the `CIAM` **tenantType** to identify tenants that are set up as Microsoft Entra ID for customers tenants, a customer identity & access management (CIAM) solution.
+- New properties set by Intune on the [device](/graph/api/resources/device) resource: **enrollmentType**, **isRooted**, and **managementType**. 
 
 ### Reports | Partner billing reports
 
