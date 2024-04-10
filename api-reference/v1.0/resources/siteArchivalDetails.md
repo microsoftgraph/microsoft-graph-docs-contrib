@@ -4,7 +4,6 @@ description: "Archival Details Facet"
 title: "siteArchivalDetails"
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
-doc_type: apiPageType
 ---
 
 # siteArchivalDetails resource type
