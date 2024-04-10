@@ -28,7 +28,8 @@ For details about which resources support which types of change notifications, s
 
 The following table lists the Microsoft Teams resources that support change notifications and their corresponding resource paths. Apply the resource path for your scenario as specified when [creating a subscription](/graph/api/subscription-post-subscriptions). The type of the resource path payload is the type under the "Resource" column or a collection of that type.
 
-> **Note:** Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
+> [!NOTE]
+> Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications** |
 |:----------------|:------------|:-----------------------------------------|

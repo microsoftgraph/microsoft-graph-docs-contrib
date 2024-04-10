@@ -11,7 +11,8 @@ ms.localizationpriority: high
 
 An app can subscribe to changes on the Microsoft Graph resources listed in the table.
 
-> **Note:** Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
+> [!NOTE]
+> Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
 
 | Resource | Supported resource paths | Limitations |
 |---|---|---|
@@ -39,7 +40,8 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | [todoTask][] | Changes to all task in a specific task list: `/me/todo/lists/{todoTaskListId}/tasks` | - |
 | [user][] | Changes to all users: `/users` <br><br> Changes to a specific user: `/users/{id}` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for personal Microsoft accounts like outlook.com.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of users also trigger the `updated` **changeType**. |
 
-> **Note:** Many resources have limits or quotas on how many subscriptions can be made against that resource.  When exceeding that limit, attempts to create a subscription will result in a `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
+> [!NOTE]
+> Many resources have limits or quotas on how many subscriptions can be made against that resource.  When exceeding that limit, attempts to create a subscription will result in a `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
 
 Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
 
