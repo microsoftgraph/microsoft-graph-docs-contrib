@@ -36,6 +36,7 @@ Represents a trust framework keyset/policy key. The Identity Experience framewor
 |:-------------|:------------|:------------|
 |id|String| Unique identifier of the trustframework keyset |
 |keys|[trustFrameworkKey](trustframeworkkey.md) collection| A collection of the keys. |
+|keys_v2|[trustFrameworkKey_v2](trustframeworkkey_v2.md) collection| A collection of the keys. |
 
 ## Relationships
 
