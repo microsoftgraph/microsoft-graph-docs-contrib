@@ -4,7 +4,6 @@ description: "Archive Status Enum Type"
 title: "archiveStatus enum type"
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
-doc_type: apiPageType
 ---
 
 # archiveStatus enum type
