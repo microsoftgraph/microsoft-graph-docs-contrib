@@ -44,7 +44,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 | lastModifiedDateTime | DateTimeOffset                                                       | The date and time the item was last modified. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).                                                                            |
 | name                 | String                                                               | The name of the item. Inherited from [baseSitePage](../resources/basesitepage.md).    |
 | pageLayout           | [pageLayoutType](../resources/basesitepage.md#pagelayouttype-values)       | The name of the page layout of the page. The possible values are: `microsoftReserved`, `article`, `home`, `unknownFutureValue`. Inherited from [baseSitePage](../resources/basesitepage.md). |
-| parentReference      | [itemReference](../resources/itemreference.md)                         | Parent information, if the item has a parent. Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
+| parentReference      | [itemReference](../resources/itemreference.md)                         | Parent information, if the item has a parent. Inherited from [baseSitePage](../resources/basesitepage.md).                                                                            |
 | promotionKind        | [pagePromotionType](../resources/sitepage.md#pagepromotiontype-values) | Indicates the promotion kind of the sitePage. The possible values are: `microsoftReserved`, `page`, `newsPost`, `unknownFutureValue`.                                                                                    |
 | publishingState      | [publicationFacet](../resources/publicationfacet.md)                   | The publishing status and the MM.mm version of the page.  Inherited from [baseSitePage](../resources/basesitepage.md).                                                                       |
 | reactions            | [reactionsFacet](../resources/reactionsfacet.md)                       | Reactions information for the page.                                                                                             |
@@ -53,7 +53,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 | thumbnailWebUrl      | String                                                                 | Url of the sitePage's thumbnail image                                                                                           |
 | title                | String                                                                 | Title of the sitePage.  Inherited from [baseSitePage](../resources/basesitepage.md). |
 | titleArea            | [titleArea](../resources/titlearea.md)                                 | Title area on the SharePoint page.                                                                                              |
-| webUrl               | String                                                                 | URL that displays the resource in the browser. Read-only. Inherited from [baseSitePage](../resources/baseSitePage.md).                                                                            |
+| webUrl               | String                                                                 | URL that displays the resource in the browser. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).                                                                            |
 
 ### pagePromotionType values
 
@@ -69,8 +69,8 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 | Relationship       | Type                                          | Description                                                                                                        |
 | :----------------- | :-------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 | canvasLayout       | [canvasLayout](../resources/canvaslayout.md)  | Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical sections. |
-| createdByUser      | [user](../resources/user.md)                  | Identity of the creator of this item. Read-only. Inherited from [baseSitePage](../resources/baseSitePage.md).               |
-| lastModifiedByUser | [user](../resources/user.md)                  | Identity of the last modifier of this item. Read-only. Inherited from [baseSitePage](../resources/baseSitePage.md).         |
+| createdByUser      | [user](../resources/user.md)                  | Identity of the creator of this item. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).               |
+| lastModifiedByUser | [user](../resources/user.md)                  | Identity of the last modifier of this item. Read-only. Inherited from [baseSitePage](../resources/basesitepage.md).         |
 | webParts           | [webPart](../resources/webpart.md) collection | Collection of webparts on the SharePoint page.                                                                     |
 
 ## JSON representation

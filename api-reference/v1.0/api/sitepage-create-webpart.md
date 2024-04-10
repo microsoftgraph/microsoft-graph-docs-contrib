@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create a new [webPart] at a specified position in the [sitePage].
 
-[sitePage]: ../resources/sitePage.md
+[sitePage]: ../resources/sitepage.md
 [webPart]: ../resources/webPart.md
 
 

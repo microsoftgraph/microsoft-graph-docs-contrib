@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the metadata for a [baseSitePage][] in the site pages [list][] in a [site][].
 
-[baseSitePage]: ../resources/baseSitePage.md
+[baseSitePage]: ../resources/basesitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200` and a [baseSitePage](../resources/baseSitePage.md) object in the response body.
+If successful, this method returns a `200` and a [baseSitePage](../resources/basesitepage.md) object in the response body.
 
 ## Example
 

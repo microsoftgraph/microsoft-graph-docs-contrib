@@ -73,7 +73,7 @@ There are two kinds of web parts that can be added to a [sitePage](../resources/
 
 ## Response
 
-If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
+If successful, this method returns a `201` and the created [sitePage](../resources/basesitepage.md) object.
 
 ## Example
 
