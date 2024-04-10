@@ -25,13 +25,13 @@ Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalat
 
 ### plannerApprovalStatus values 
 
-| Member             |
-|:-------------------|
-| requested          |
-| approved           |
-| rejected           |
-| cancelled          |
-| unknownFutureValue |
+| Member             | Description                                      |
+|:-------------------|:-------------------------------------------------|
+| requested          | The default status of the approval               |
+| approved           | When the approval is approved by the approver    |
+| rejected           | When the approval is rejected by the approver    |
+| cancelled          | When the approval is cancelled by the requestor  |
+| unknownFutureValue | The unkonwnFutureValue                           |
 
 ## Relationships
 None.
