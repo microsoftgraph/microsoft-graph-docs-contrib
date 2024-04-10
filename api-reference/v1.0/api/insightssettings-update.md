@@ -1,7 +1,7 @@
 ---
 title: "Update insights"
 description: "Update privacy settings to display or return the specified type of insights in an organization."
-author: "simonhult"
+author: "larsb"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: "apiPageType"

@@ -1,7 +1,7 @@
 ---
 title: "List insightsSettings"
 description: "Retrieve properties of insightsSettings object for displaying or returning item insights in an organization."
-author: "jolintve"
+author: "larsb"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: apiPageType

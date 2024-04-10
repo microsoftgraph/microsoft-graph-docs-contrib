@@ -2,7 +2,7 @@
 title: "insightsSettings resource type"
 description: "Represents privacy settings for insights."
 ms.localizationpriority: medium
-author: "simonhult"
+author: "larsb"
 ms.subservice: "insights"
 doc_type: resourcePageType
 ---
