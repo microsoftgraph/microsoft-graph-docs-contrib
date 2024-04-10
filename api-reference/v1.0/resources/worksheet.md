@@ -52,7 +52,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

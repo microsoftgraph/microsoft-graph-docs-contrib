@@ -10,6 +10,6 @@ $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/identityProviders/Google-OAUTH"
 }
 
-New-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
 
 ```

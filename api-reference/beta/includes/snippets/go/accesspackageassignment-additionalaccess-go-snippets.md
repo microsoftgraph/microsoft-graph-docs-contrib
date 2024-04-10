@@ -24,7 +24,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagemen
 
 accessPackageId := "{accessPackageId}"
 incompatibleAccessPackageId := "{incompatibleAccessPackageId}"
-additionalAccess, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignments().AdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageId(&accessPackageId, &incompatibleAccessPackageId).Get(context.Background(), configuration)
+additionalAccess, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignments().AdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageId(&accessPackageId, &incompatibleAccessPackageId).GetAsAdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageIdGetResponse(context.Background(), configuration)
 
 
 ```

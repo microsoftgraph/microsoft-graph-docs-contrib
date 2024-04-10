@@ -33,7 +33,7 @@ That means the transition from daylight saving time to standard occurs at 2 AM o
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

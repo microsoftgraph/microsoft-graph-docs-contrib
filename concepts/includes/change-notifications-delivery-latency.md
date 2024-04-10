@@ -2,7 +2,7 @@
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: ric.lewis
-ms.prod: "change-notifications"
+ms.prod: change-notifications
 ms.topic: include
 ms.localizationpriority: high
 ---
@@ -27,7 +27,7 @@ The following table lists the latency to expect between an event happening in th
 | [conversationMember][]  | Less than 10 seconds | 60 minutes      |
 | [driveItem][]           | Less than 1 minute   | 5 minutes       |
 | [event][]               | Unknown              | Unknown         |
-| [group][]               | Less than 2 minutes  | 15 minutes      |
+| [group][]               | Unknown              | Unknown         |
 | [list][]                | Less than 1 minute   | 5 minutes       |
 | [message][]             | Less than 1 minute   | 3 minutes       |
 | [onlineMeeting][]       | Less than 10 seconds | 1 minute        |
