@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the file plan descriptor of type subcategory for retention labels.
-
+Supports CRUD operations to apply and manage the [subCategory](security-subcategory.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **subCategory** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
@@ -29,16 +28,16 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the subcategory. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the subcategory is created. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|displayName|String|Unique string that defines a subcategory name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|ID|String|Unique ID of the subcategory. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the subcategory descriptor. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the subcategory descriptor is created. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
+|displayName|String|Unique string that defines a subcategory name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
+|id|String|Unique ID of the subcategory. Inherited from [microsoft.graph.entity](../resources/entity.md). Read-only.|
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

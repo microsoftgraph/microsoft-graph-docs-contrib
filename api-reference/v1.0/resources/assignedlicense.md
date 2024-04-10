@@ -21,7 +21,7 @@ Represents a license assigned to a user. The **assignedLicenses** property of th
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
