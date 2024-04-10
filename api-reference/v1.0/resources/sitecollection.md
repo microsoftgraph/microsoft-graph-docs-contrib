@@ -23,6 +23,7 @@ If a [**site**](site.md) resource has a non-null **siteCollection** property, th
 | **dataLocationCode** | string   | The geographic region code for where this site collection resides. Only present for multi-geo tenants. Read-only.
 | **hostname**         | string   | The hostname for the site collection. Read-only.
 | **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only.
+| **archivalDetails**  | [siteArchivalDetails][] | Represents the archival details of the site collection
 
 ## JSON representation
 
@@ -40,10 +41,14 @@ The following JSON representation shows the resource type.
   "hostname": "contoso.sharepoint.com",
   "dataLocationCode": "EUR",
   "root": { "@odata.type": "microsoft.graph.root" }
+  "archivalDetails": {
+    "archiveStatus": "fullyArchived"
+  }
 }
 ```
 
 [root]: root.md
+[siteArchivalDetails]: siteArchivalDetails.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
