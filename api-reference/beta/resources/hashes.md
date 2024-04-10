@@ -31,7 +31,7 @@ Groups available hashes into a single structure for an item.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

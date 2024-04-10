@@ -42,7 +42,7 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

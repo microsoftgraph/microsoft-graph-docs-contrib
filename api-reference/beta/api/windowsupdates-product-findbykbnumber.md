@@ -3,7 +3,7 @@ title: "product: findByKbNumber"
 description: "Find the product revisions associated with a knowledge base number and the known issues directly or indirectly related to the knowledge base number."
 author: "skandula"
 ms.localizationpriority: medium
-ms.service: "windows-update-business"
+ms.subservice: "windows-update-business"
 doc_type: apiPageType
 ---
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/products/FindByKbNumb
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/windowsupdatesfindbycatalogid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/windowsupdatesfindbycatalogid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
