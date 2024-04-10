@@ -1,19 +1,28 @@
 ---
-title: "trustFrameworkKey resource type"
-description: "Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that represents a cryptographic key. The structure of this resource follows the format defined in RFC 7517 Section 4."
+title: "trustFrameworkKey_v2 resource type"
+description: "Represents a JWK (JSON Web Key). TrustFrameworkKey_v2 is a JSON data structure that represents a cryptographic key. The structure of this resource follows the format defined in RFC 7517 Section 4."
 ms.localizationpriority: medium
 author: "valnav"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
-# trustFrameworkKey resource type
+# trustFrameworkKey_v2 resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that represents a cryptographic key. The structure of this resource follows the format defined in [RFC 7517 Section 4](https://tools.ietf.org/html/rfc7517#section-4).
+Represents a JWK (JSON Web Key). TrustFrameworkKey_v2 is a JSON data structure that represents a cryptographic key. The structure of this resource follows the format defined in [RFC 7517 Section 4](https://tools.ietf.org/html/rfc7517#section-4).
+
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Get Key from TrustFrameworkKeySet](../api/trustframeworkkeyset-getkey.md)       | [trustFrameworkKey_v2](trustframeworkkey_v2.md)  | Read properties and members of trustFrameworkKeySet.                                                 |
+| [Patch Key in TrustFrameworkKeySet](../api/trustframeworkkeyset-patchkeystatus.md)       | None                                  | Update target key status in trustFrameworkKeySet.
+
+### POST and PUT Key operation in TrustFrameworkKeySet are not supported for trustFrameworkKey_v2.
 
 ## Properties
 
@@ -37,18 +46,16 @@ Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that
 | nbf | int | This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.) |
 | exp | int | This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.) |
 
-
-
 ## JSON representation
 
-The following JSON representation shows the resource type.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.trustFrameworkKey",
+  "@odata.type": "microsoft.graph.trustFrameworkKey_v2",
   "baseType": null
 }-->
 
@@ -78,7 +85,7 @@ The following JSON representation shows the resource type.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "trustFrameworkKey resource",
+  "description": "trustFrameworkKey_v2 resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
