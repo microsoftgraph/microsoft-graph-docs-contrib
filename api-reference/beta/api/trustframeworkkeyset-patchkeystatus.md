@@ -84,6 +84,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 204  No Content
 Content-type: application/json
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2024-04-10 14:57:30 UTC -->
