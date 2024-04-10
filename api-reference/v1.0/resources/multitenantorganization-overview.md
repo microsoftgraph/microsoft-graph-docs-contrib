@@ -5,7 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: conceptualPageType
-ms.date: 01/15/2024
+ms.date: 04/23/2024
 ---
 
 # Multitenant organization API overview
@@ -30,11 +30,9 @@ Optional multitenant organization templates for partner configurations and user 
 
 ## Multitenant organization size limitation
 
-A multitenant organization has a default maximum of five active tenants, including owner tenants. If this maximum is exceeded by any submitted join request, the join request fails.
+A multitenant organization has a default maximum of 100 active tenants, including owner tenants. If this maximum is exceeded by any submitted join request, the join request fails.
 
-Also, at the time of joining, multitenant organization tenants can have a default maximum of 100,000 internal users per active tenant. If this maximum is exceeded at the time of any submitted join request, the join request fails.
-
-If you need to increase these limits, you can submit a support request using the Azure portal or Microsoft Entra admin center. In your request, include the tenant ID of one owner tenant and a list of all tenant IDs that are intended to be part of the finalized multitenant organization.
+If you need to increase this limit, you can submit a support request using the Azure portal or Microsoft Entra admin center. In your request, include the tenant ID of one owner tenant and a list of all tenant IDs that are intended to be part of the finalized multitenant organization.
 
 ## Next steps
 
