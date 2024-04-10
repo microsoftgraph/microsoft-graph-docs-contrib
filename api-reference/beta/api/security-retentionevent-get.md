@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -96,6 +96,7 @@ GET https://graph.microsoft.com/beta/security/triggers/retentionEvents/{retentio
 ---
 
 ### Response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -115,7 +116,7 @@ Content-Type: application/json
     "description": "String",
     "eventQueries": [
       {
-        "@odata.type": "microsoft.graph.security.eventQueries"
+        "@odata.type": "microsoft.graph.security.eventQuery"
       }
     ],
     "eventTriggerDateTime": "String (timestamp)",

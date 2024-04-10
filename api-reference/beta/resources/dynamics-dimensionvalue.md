@@ -35,7 +35,7 @@ Represents a dimension value in Dynamics 365 Business Central.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json
