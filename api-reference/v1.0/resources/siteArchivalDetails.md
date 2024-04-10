@@ -14,6 +14,7 @@ The **SiteArchivalDetails** facet represents the archival details of the siteCol
 | Property      | Type   | Description                                    |
 |:------------- |:------ |:-----------------------------------------------|
 | archiveStatus | [archiveStatus][] | Represents the current archive status of the site collection. Returned only on $select.|
+
 [archiveStatus]: archiveStatus.md
 
 ## JSON Representation
