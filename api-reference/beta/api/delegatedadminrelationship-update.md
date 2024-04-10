@@ -12,7 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status**, which are not long-running operations. You can update the Entra Role when the value is `active`, which indicates a long running operation.
+Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status**. You can remove Microsoft Entra Role (Global Administrator) when the relationship is `active` **status**
+, which is a long running operation.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -66,7 +67,9 @@ If successful, this method returns either a `200 OK` or a `202 Accepted` respons
 |Location|The location of the long-running operation.|
 |Retry-After|The time after which a subsequent API call can be made to the Location URL to check the status of the long-running operation.|
 
-This method typically returns a `202 Accepted` response code with a URL to a long-running operation in the **Location** response header. You can monitor this URL to see when the operation completes. If you supply values that are identical to the onesin the existing object, the API returns a `200 OK` response code with the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
+This method returns a `202 Accepted` if you remove Microsoft Entra Role Global Administrator from the existing relationship in `active` **status**. It includes a URL in the Location header for monitoring the operation's completion.
+
+If you supply values other than Microsoft Entra Roles to the ones in the existing object, the API returns a `200 OK` response code with the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
 
 ## Examples
 
