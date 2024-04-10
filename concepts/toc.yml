@@ -878,6 +878,10 @@ items:
     - name: Overview
       href: teams-concept-overview.md
       displayName: teams, team, teamwork, Microsoft Teams
+    - name: Messaging APIs
+      items:
+        - name: Working with Microsoft Teams messaging
+          href: teams-messaging-overview.md
     - name: Activity feed notifications
       items:
       - name: Send activity feed notifications
