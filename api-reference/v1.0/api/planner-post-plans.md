@@ -1,6 +1,6 @@
 ---
 title: "Create plannerPlan"
-description: "Use this API to create a new **plannerPlan**."
+description: "Create a new plannerPlan object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to create a new **plannerPlan**.
+Create a new [plannerPlan](../resources/plannerplan.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -43,10 +43,10 @@ The following table shows the properties that are required when you create a [pl
 
 |Property|Type|Description|
 |:---|:---|:---|
-|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it is set, this property can’t be updated.|
+|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it's set, this property can't be updated.|
 |title|String|The title of the plan.|
 
->**Note:** If the container is a Microsoft 365 group, the user who is creating the plan must be a member of the group that will contain the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
+>**Note:** If the container is a Microsoft 365 group, the user who creates the plan must be a member of the group that contains the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you aren't added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
 
 ## Response
