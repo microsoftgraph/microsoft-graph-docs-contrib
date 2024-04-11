@@ -84,6 +84,8 @@ Alerts from the following security providers are available via these rich alerts
 
 ### Legacy alerts
 
+**Note:** Legacy alerts will deprecate by April 2026. Please migrate to the new alerts and incidents resources.
+
 These [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline the management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response. 
 
 With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph security API by updating your **alert** entity.
@@ -163,6 +165,8 @@ Microsoft Defender Threat Intelligence delivers world-class threat intelligence 
 The threat intelligence APIs (preview) allow you to operationalize intelligence found within the user interface. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including IoCs and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
 
 ## Threat intelligence indicators (preview)
+
+**Note:** The [tiIndicator](tiindicator.md) entity will deprecate by April 2026.
 
 Threat indicators also referred to as indicators of compromise (IoCs), represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers can generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. These indicators are then used in various security tools to defend against related threats.
 

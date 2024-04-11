@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+**Note:** The [tiIndicator](tiindicator.md) entity will deprecate by April 2026.
+
 Represents data used to identify malicious activities. 
 
 If your organization works with threat indicators, either by generating your own, obtaining them from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, you might want to use these indicators in various security tools for matching with log data. The **tiIndicators** entity allows you to upload your threat indicators to Microsoft security tools for the actions of allow, block, or alert.

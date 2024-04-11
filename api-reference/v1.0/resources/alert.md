@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+**Note:** Legacy alerts will deprecate by April 2026. Please migrate to the new alerts and incidents resources.
+
 This resource corresponds to the first generation of alerts in the Microsoft Graph security API, representing potential security issues within a customer's tenant that Microsoft or a partner security solution has identified.
 
 This type of alerts federates calling of supported Azure and Microsoft 365 Defender security providers listed in [Use the Microsoft Graph security API](security-api-overview.md#legacy-alerts). It aggregates common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions.
