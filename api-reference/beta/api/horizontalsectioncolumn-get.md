@@ -92,12 +92,12 @@ Content-Type: application/json
 ### Example 2: Get a horizontalSectionColumn using select and expand
 #### Request
 
-With `select` and `expand` statements, you can retrieve horizontalSectionColumn metadata and associated webParts in a single request.
+With `$select` and `$expand` statements, you can retrieve horizontalSectionColumn metadata and associated webParts in a single request.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}?select=id,expand=webparts
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}?$select=id&$expand=webparts
 ```
 
 #### Response

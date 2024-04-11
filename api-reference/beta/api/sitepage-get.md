@@ -155,7 +155,7 @@ Content-type: application/json
 
 #### Request
 
-With `select` and `expand` statements, you can retrieve sitePage metadata and page content in a single request.
+With `$select` and `$expand` statements, you can retrieve sitePage metadata and page content in a single request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -165,7 +165,7 @@ With `select` and `expand` statements, you can retrieve sitePage metadata and pa
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?$select=id,name
 ```
 
 # [C#](#tab/csharp)
@@ -214,42 +214,8 @@ Content-type: application/json
 
 {
     "@odata.etag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",
-    "description": "Reiciendis placeat dolores.Mollitia veniam tempora tempora quidem voluptatum.Quos animi maiores facilis.Dolores officiis consequatur provident beatae deleniti accusamus magni quam tenetur.",
-    "eTag": "\"{F45354CB-D634-45DF-8B88-2B4E96A1DC45},8\"",
     "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
-    "lastModifiedDateTime": "2023-04-16T10:01:41Z",
-    "name": "Electronic Convertible.aspx",
-    "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Electronic%20Convertible.aspx",
-    "title": "Electronic Convertible",
-    "pageLayout": "article",
-    "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/_layouts/15/images/sitepagethumbnail.png",
-    "promotionKind": "page",
-    "showComments": false,
-    "showRecommendedPages": true,
-    "contentType": {
-        "id": "0x0101009D1CB255DA76424F860D91F20E6C4118009E6554A5E299E84FB2E07731DD6C6D4A",
-        "name": "Site Page"
-    },
-    "createdBy": {
-        "user": {
-            "displayName": "admin_contoso",
-            "email": "admin@contoso.com"
-        }
-    },
-    "lastModifiedBy": {
-        "user": {
-            "displayName": "admin_contoso",
-            "email": "admin@contoso.com"
-        }
-    },
-    "parentReference": {
-        "siteId": "45bb2a3b-0a4e-46f4-8c68-749c3fea75d3"
-    },
-    "publishingState": {
-        "level": "draft",
-        "versionId": "0.4"
-    },
-    "reactions": {}
+    "name": "Electronic Convertible.aspx"
 }
 ```
 
@@ -257,10 +223,10 @@ Content-type: application/json
 
 #### Request
 
-You can expand references in your URL with the _expand_ query parameter. To access the page with page content, append the `?expand=canvasLayout` query string.
+You can expand references in your URL with the _$expand_ query parameter. To access the page with page content, append the `?$expand=canvasLayout` query string.
 
 ```http
-GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?expand=canvasLayout
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?$expand=canvasLayout
 ```
 
 #### Response

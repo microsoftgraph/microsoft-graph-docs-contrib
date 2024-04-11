@@ -93,15 +93,15 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get a webPart object using select and expand
+### Example 2: Get a webPart object using select
 #### Request
 
-With `select` statement, you can retrieve selected webpart metadata in a request.
+With `$select` statement, you can retrieve selected webpart metadata in a request.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/webParts/2?select=id
+GET https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/webParts/2?$select=id
 ```
 
 #### Response

@@ -92,7 +92,7 @@ Content-Type: application/json
 ### Example 2: Get a horizontalSection object using select and expand
 #### Request
 
-With `select` and `expand` statements, you can retrieve horizontalSection metadata and column information in a single request.
+With `$select` and `$expand` statements, you can retrieve horizontalSection metadata and column information in a single request.
 
 <!-- { "blockType": "ignored" } -->
 

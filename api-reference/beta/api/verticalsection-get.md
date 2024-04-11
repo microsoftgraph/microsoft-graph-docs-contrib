@@ -90,12 +90,12 @@ Content-Type: application/json
 ### Example 2: Get a verticalSection object using select and expand
 #### Request
 
-With `select` and `expand` statements, you can retrieve verticalSection metadata and associated webParts in a single request.
+With `$select` and `$expand` statements, you can retrieve verticalSection metadata and associated webParts in a single request.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection?select=emphasis,expand=webparts
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection?$select=emphasis&$expand=webparts
 ```
 
 #### Response
