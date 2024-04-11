@@ -15526,7 +15526,7 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
-              - name: Org control for item insights settings (preview)
+              - name: Org control for item insights settings
                 items:
                 - name: Insights settings
                   href: resources/insightssettings.md
