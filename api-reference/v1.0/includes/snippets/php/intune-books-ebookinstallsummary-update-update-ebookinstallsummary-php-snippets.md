@@ -5,6 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\EBookInstallSummary;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

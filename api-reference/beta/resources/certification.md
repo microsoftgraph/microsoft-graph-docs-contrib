@@ -27,7 +27,7 @@ The certification property of an application is read-only, and can't be manually
 |lastCertificationDateTime|DateTimeOffset|The timestamp when the certification for the application was most recently added or updated.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -1277,6 +1277,8 @@ Namespace: microsoft.graph
 | gpsLocationCondition                              |
 | riskBasedPolicy                                   |
 | unknownFutureValue                                |
+| scopeBasedAuthRequirementPolicy                   |
+| authenticationStrengths                           |
 
 
 ### riskDetail values
@@ -1452,6 +1454,7 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+|excused|
 
 ### educationFeedbackResourceOutcomeStatus values
 
