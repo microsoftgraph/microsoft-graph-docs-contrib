@@ -4,28 +4,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-<details>
-  <summary><i>After you've created your PR</i>, expand this section for tips and additional instructions.</summary>
+<details><summary><i>After you've created your PR</i>, expand this section for tips and additional instructions.</summary>
 
 
 - **do not merge** is the default PR status and is automatically added to all open PRs that don't have the **ready to merge** label.
