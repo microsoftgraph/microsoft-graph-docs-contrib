@@ -1,5 +1,5 @@
 ---
-title: "ChartPoint resource type"
+title: "workbookChartPoint resource type"
 description: "Represents a point of a series in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium

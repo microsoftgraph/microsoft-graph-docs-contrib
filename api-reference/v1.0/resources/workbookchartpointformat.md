@@ -1,5 +1,5 @@
 ---
-title: "ChartPointFormat resource type"
+title: "workbookChartPointFormat resource type"
 description: "Represents formatting object for chart points."
 author: "lumine2008"
 ms.localizationpriority: medium

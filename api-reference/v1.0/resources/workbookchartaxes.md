@@ -1,5 +1,5 @@
 ---
-title: "ChartAxes resource type"
+title: "workbookChartAxes resource type"
 description: "Represents the chart axes."
 author: "lumine2008"
 ms.localizationpriority: medium

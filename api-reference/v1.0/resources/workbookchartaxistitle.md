@@ -1,5 +1,5 @@
 ---
-title: "ChartAxisTitle resource type"
+title: "workbookChartAxisTitle resource type"
 description: "Represents the title of a chart axis."
 author: "lumine2008"
 ms.localizationpriority: medium

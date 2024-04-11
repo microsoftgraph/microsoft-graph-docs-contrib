@@ -1,5 +1,5 @@
 ---
-title: "ChartSeries resource type"
+title: "workbookChartSeries resource type"
 description: "Represents a series in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium

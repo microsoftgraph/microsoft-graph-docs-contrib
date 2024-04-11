@@ -1,5 +1,5 @@
 ---
-title: "Table resource type"
+title: "workbookTable resource type"
 description: "Represents an Excel table."
 author: "lumine2008"
 ms.localizationpriority: high

@@ -1,5 +1,5 @@
 ---
-title: "ChartAreaFormat resource type"
+title: "workbookChartAreaFormat resource type"
 description: "Encapsulates the format properties for the overall chart area."
 author: "lumine2008"
 ms.localizationpriority: medium

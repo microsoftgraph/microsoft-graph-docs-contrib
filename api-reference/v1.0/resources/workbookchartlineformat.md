@@ -1,5 +1,5 @@
 ---
-title: "ChartLineFormat resource type"
+title: "workbookChartLineFormat resource type"
 description: "Encapsulates the formatting options for line elements."
 author: "lumine2008"
 ms.localizationpriority: medium

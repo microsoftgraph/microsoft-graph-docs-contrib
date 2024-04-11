@@ -1,5 +1,5 @@
 ---
-title: "rangeView resource type"
+title: "workbookRangeView resource type"
 description: "RangeView represents a set of visible cells of the parent range."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# rangeView resource type
+# workbookRangeView resource type
 
 Namespace: microsoft.graph
 RangeView represents a set of visible cells of the parent range.

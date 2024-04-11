@@ -1,5 +1,5 @@
 ---
-title: "ChartFont resource type"
+title: "workbookChartFont resource type"
 description: "This object represents the font attributes (font name, font size, color, etc.) for a chart object."
 ms.localizationpriority: medium
 author: "lumine2008"

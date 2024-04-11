@@ -1,5 +1,5 @@
 ---
-title: "Range resource type"
+title: "workbookRange resource type"
 description: "Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc."
 ms.localizationpriority: high
 author: "lumine2008"

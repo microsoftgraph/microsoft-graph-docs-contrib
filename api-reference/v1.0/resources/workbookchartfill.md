@@ -1,5 +1,5 @@
 ---
-title: "ChartFill resource type"
+title: "workbookChartFill resource type"
 description: "Represents the fill formatting for a chart element."
 author: "lumine2008"
 ms.localizationpriority: medium

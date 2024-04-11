@@ -1,5 +1,5 @@
 ---
-title: "ChartGridlinesFormat resource type"
+title: "workbookChartGridlinesFormat resource type"
 description: "Encapsulates the format properties for chart gridlines."
 author: "lumine2008"
 ms.localizationpriority: medium

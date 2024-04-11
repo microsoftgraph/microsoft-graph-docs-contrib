@@ -1,5 +1,5 @@
 ---
-title: "ChartLegendFormat resource type"
+title: "workbookChartLegendFormat resource type"
 description: "Encapsulates the format properties of a chart legend."
 author: "lumine2008"
 ms.localizationpriority: medium

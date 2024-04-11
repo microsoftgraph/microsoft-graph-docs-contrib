@@ -1,5 +1,5 @@
 ---
-title: "ChartAxisFormat resource type"
+title: "workbookChartAxisFormat resource type"
 description: "Encapsulates the format properties for the chart axis."
 author: "lumine2008"
 ms.localizationpriority: medium

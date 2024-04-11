@@ -1,5 +1,5 @@
 ---
-title: "ChartDataLabelFormat resource type"
+title: "workbookChartDataLabelFormat resource type"
 description: "Encapsulates the format properties for the chart data labels."
 author: "lumine2008"
 ms.localizationpriority: medium

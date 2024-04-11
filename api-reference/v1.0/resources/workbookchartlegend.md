@@ -1,5 +1,5 @@
 ---
-title: "ChartLegend resource type"
+title: "workbookChartLegend resource type"
 description: "Represents the legend in a chart."
 author: "lumine2008"
 ms.localizationpriority: medium

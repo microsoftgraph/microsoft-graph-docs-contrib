@@ -1,5 +1,5 @@
 ---
-title: "RangeBorder resource type"
+title: "workbookRangeBorder resource type"
 description: "Represents the border of an object."
 author: "lumine2008"
 ms.localizationpriority: medium

@@ -1,5 +1,5 @@
 ---
-title: "ChartSeriesFormat resource type"
+title: "workbookChartSeriesFormat resource type"
 description: "encapsulates the format properties for the chart series"
 author: "lumine2008"
 ms.localizationpriority: medium

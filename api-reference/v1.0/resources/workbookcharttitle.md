@@ -1,5 +1,5 @@
 ---
-title: "ChartTitle resource type"
+title: "workbookChartTitle resource type"
 description: "Represents a chart title object of a chart."
 author: "lumine2008"
 ms.localizationpriority: medium

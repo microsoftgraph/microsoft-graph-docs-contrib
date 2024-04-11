@@ -1,5 +1,5 @@
 ---
-title: "ChartDataLabels resource type"
+title: "workbookChartDataLabels resource type"
 description: "Represents a collection of all the data labels on a chart point."
 author: "lumine2008"
 ms.localizationpriority: medium

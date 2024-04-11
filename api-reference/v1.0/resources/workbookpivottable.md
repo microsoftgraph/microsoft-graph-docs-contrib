@@ -1,5 +1,5 @@
 ---
-title: "pivotTable resource type"
+title: "workbookPivotTable resource type"
 description: "Represents an Excel PivotTable."
 author: "lumine2008"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# pivotTable resource type
+# workbookPivotTable resource type
 
 Namespace: microsoft.graph
 

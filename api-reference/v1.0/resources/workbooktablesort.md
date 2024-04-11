@@ -1,5 +1,5 @@
 ---
-title: "TableSort resource type"
+title: "workbookTableSort resource type"
 description: "Manages sorting operations on Table objects."
 author: "lumine2008"
 ms.localizationpriority: medium

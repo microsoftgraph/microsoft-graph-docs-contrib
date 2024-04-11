@@ -1,5 +1,5 @@
 ---
-title: "Filter resource type"
+title: "workbookFilter resource type"
 description: "Manages the filtering of a table's column."
 ms.localizationpriority: medium
 author: "ruoyingl"

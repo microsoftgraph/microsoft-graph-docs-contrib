@@ -1,5 +1,5 @@
 ---
-title: "ChartTitleFormat resource type"
+title: "workbookChartTitleFormat resource type"
 description: "Encapsulates the format properties for the chart title."
 author: "lumine2008"
 ms.localizationpriority: medium
