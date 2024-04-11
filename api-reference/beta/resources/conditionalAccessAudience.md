@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessAudience resource type"
-description: "Indicates the audience evaluated by Conditional Access during a sign-in event."
+description: "Indicates the audience, or a list of resources, evaluated by Conditional Access during a sign-in event."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
