@@ -58,7 +58,7 @@ Represents a Cloud PC provisioning policy.
 | Member              | Description                                                                           |
 |:--------------------|:--------------------------------------------------------------------------------------|
 | dedicated           | Indicates that a dedicated license is used for provisioning Cloud PCs. Default value. |
-| shared              | Indicates that a shared license is used for provisioning Cloud PCs. The `shared` member is deprecated and will stop returning on April 30, 2027.                  |
+| shared (deprecated) | Indicates that a shared license is used for provisioning Cloud PCs. The `shared` member is deprecated and will stop returning on April 30, 2027.                  |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.                                      |
 | sharedByUser | TODO |
 | sharedByEntraGroup | TODO |
