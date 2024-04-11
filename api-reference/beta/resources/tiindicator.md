@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Note:** The [tiIndicator](tiindicator.md) entity will deprecate by April 2026.
+**Note:** The [tiIndicator](tiindicator.md) entity is deprecated, will be removed by April 2026.
 
 Represents data used to identify malicious activities. 
 
