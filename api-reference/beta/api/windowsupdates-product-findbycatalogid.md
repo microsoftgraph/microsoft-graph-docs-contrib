@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/products/FindByCatalo
 [!INCLUDE [sample-code](../includes/snippets/php/windowsupdatesfindbycatalogid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/windowsupdatesfindbycatalogid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/windowsupdatesfindbycatalogid-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

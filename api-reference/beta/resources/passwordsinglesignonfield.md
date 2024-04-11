@@ -24,7 +24,7 @@ Contains the fields to capture to fill the use credentials for Password-based si
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
