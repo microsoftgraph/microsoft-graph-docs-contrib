@@ -59,35 +59,35 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackagecatalog-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackagecatalog-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-get-accesspackagecatalog-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-entitlementmanagement-get-accesspackagecatalog-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-entitlementmanagement-get-accesspackagecatalog-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-entitlementmanagement-get-accesspackagecatalog-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-entitlementmanagement-get-accesspackagecatalog-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-entitlementmanagement-get-accesspackagecatalog-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -152,35 +152,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageresourcerequest-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageresourcerequest-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-get-accesspackageresourcerequest-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-entitlementmanagement-get-accesspackageresourcerequest-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-entitlementmanagement-get-accesspackageresourcerequest-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-entitlementmanagement-get-accesspackageresourcerequest-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-entitlementmanagement-get-accesspackageresourcerequest-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-entitlementmanagement-get-accesspackageresourcerequest-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -220,40 +220,40 @@ In this step, you retrieve the details of the resources that match the ID of the
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_accesspackageresources"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/resources?$filter=originId eq 'e93e24d1-2b65-4a6c-a1dd-654a12225487'
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageresources-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackageresources-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageresources-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackageresources-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-get-accesspackageresources-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-get-accesspackageresources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-entitlementmanagement-get-accesspackageresources-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-entitlementmanagement-get-accesspackageresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-entitlementmanagement-get-accesspackageresources-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-entitlementmanagement-get-accesspackageresources-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-entitlementmanagement-get-accesspackageresources-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-entitlementmanagement-get-accesspackageresources-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-entitlementmanagement-get-accesspackageresources-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-entitlementmanagement-get-accesspackageresources-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-entitlementmanagement-get-accesspackageresources-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-entitlementmanagement-get-accesspackageresources-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -297,40 +297,40 @@ In the request, use the **id** of the catalog and the **id** of the group resour
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_accesspackageresourceroles"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/ede67938-cda7-4127-a9ca-7c7bf86a19b7/resourceRoles?$filter=(originSystem eq 'AadGroup' and displayName eq 'Member' and resource/id eq '274a1e21c5-8a76-4578-acb1-641160e076e')&$expand=resource
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageresourceroles-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageresourceroles-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-get-accesspackageresourceroles-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-entitlementmanagement-get-accesspackageresourceroles-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-entitlementmanagement-get-accesspackageresourceroles-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-entitlementmanagement-get-accesspackageresourceroles-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-entitlementmanagement-get-accesspackageresourceroles-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-entitlementmanagement-get-accesspackageresourceroles-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -394,35 +394,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-create-accesspackage-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-create-accesspackage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-create-accesspackage-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-create-accesspackage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-create-accesspackage-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-create-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-entitlementmanagement-create-accesspackage-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-entitlementmanagement-create-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-entitlementmanagement-create-accesspackage-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-entitlementmanagement-create-accesspackage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-entitlementmanagement-create-accesspackage-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-entitlementmanagement-create-accesspackage-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-entitlementmanagement-create-accesspackage-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-entitlementmanagement-create-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-entitlementmanagement-create-accesspackage-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-entitlementmanagement-create-accesspackage-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -453,7 +453,6 @@ Content-type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_accesspackageresourcerolescope"
@@ -480,40 +479,6 @@ Content-type: application/json
   }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageresourcerolescope-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageresourcerolescope-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-get-accesspackageresourcerolescope-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-entitlementmanagement-get-accesspackageresourcerolescope-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-entitlementmanagement-get-accesspackageresourcerolescope-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-entitlementmanagement-get-accesspackageresourcerolescope-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-entitlementmanagement-get-accesspackageresourcerolescope-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-entitlementmanagement-get-accesspackageresourcerolescope-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {
@@ -761,7 +726,7 @@ Use the value of the **id** property of the request to get the current status of
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_accesspackageassignmentrequest"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/a6bb6942-3ae1-4259-9908-0133aaee9377
 ```
 
@@ -831,7 +796,7 @@ You can also use the **id** of the access package policy that you created to see
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_accesspackageassignment"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'&$expand=target,accessPackageAssignmentResourceRoles
 ```
 
@@ -916,7 +881,7 @@ After the request has been granted, you can use the **id** that you recorded for
   "blockType": "request",
   "name": "tutorial_entitlementmanagement_get_group_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/f4892fac-e81c-4712-bdf2-a4450008a4b0/members
 ```
 

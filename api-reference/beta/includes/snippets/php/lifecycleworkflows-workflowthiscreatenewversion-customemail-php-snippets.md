@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\CreateNewVersionPostRequestBody;
+use Microsoft\Graph\Generated\Models\TriggerAndScopeBasedConditions;
+use Microsoft\Graph\Generated\Models\RuleBasedSubjectSet;
+use Microsoft\Graph\Generated\Models\TimeBasedAttributeTrigger;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
