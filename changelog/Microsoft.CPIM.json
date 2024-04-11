@@ -475,14 +475,6 @@
         {
           "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
           "ApiChange": "Resource",
-          "ChangedApiName": "genericError",
-          "ChangeType": "Addition",
-          "Description": "Added the [genericError](https://learn.microsoft.com/en-us/graph/api/resources/genericError?view=graph-rest-1.0) resource.",
-          "Target": "genericError"
-        },
-        {
-          "Id": "266f2fc3-f48b-4873-a2b1-63c9b4ff38e3",
-          "ApiChange": "Resource",
           "ChangedApiName": "httpRequestEndpoint",
           "ChangeType": "Addition",
           "Description": "Added the [httpRequestEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/httpRequestEndpoint?view=graph-rest-1.0) resource.",
