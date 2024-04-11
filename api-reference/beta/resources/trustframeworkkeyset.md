@@ -1,10 +1,10 @@
 ---
 title: "trustFrameworkKeySet resource type"
 description: "Represents a trust framework keyset/policy key."
+author: "gysingh"
 ms.localizationpriority: medium
-author: "Nickgmicrosoft"
 ms.subservice: "entra-sign-in"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # trustFrameworkKeySet resource type
@@ -15,61 +15,52 @@ Namespace: microsoft.graph
 
 Represents a trust framework keyset/policy key. The Identity Experience framework stores the secrets, which can be used in the policies. The secrets can be passwords, certificates, or other files. In the portal, these entities are shown as `Policy keys`. The Identity Experience framework uses the JSON Web Key (JWK) standard for the keysets. This entity follows the format specified in [RFC 7517 Section 5](https://tools.ietf.org/html/rfc7517#section-5).
 
-## Methods
+Inherits from [entity](../resources/entity.md).
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List](../api/trustframework-list-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) Collection | List trustFrameworkKeySets. |
-| [Create](../api/trustframework-post-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Create  trustFrameworkKeySet. |
-| [Get](../api/trustframeworkkeyset-get.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Read properties and relationships of trustFrameworkKeySet object. |
-| [Update](../api/trustframeworkkeyset-update.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Update trustFrameworkKeySet object. |
-| [Delete](../api/trustframeworkkeyset-delete.md) | None | Delete trustFrameworkKeySet object. |
-|[Generate key](../api/trustframeworkkeyset-generatekey.md)|[trustFrameworkKey](trustframeworkkey.md)| Generate a key in keyset. |
-|[Get active key](../api/trustframeworkkeyset-getactivekey.md)|[trustFrameworkKey](trustframeworkkey.md)| Get currently active key in the keyset. |
-|[Upload certificate](../api/trustframeworkkeyset-uploadcertificate.md)|[trustFrameworkKey](trustframeworkkey.md)| Upload a X.509 certificate. |
-|[Upload PKCS12](../api/trustframeworkkeyset-uploadpkcs12.md)|[trustFrameworkKey](trustframeworkkey.md)| Upload a PKCS12 format certificate. |
-|[Upload secret](../api/trustframeworkkeyset-uploadsecret.md)|[trustFrameworkKey](trustframeworkkey.md)| Upload a string based secret. |
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/trustframework-list-keysets.md)|[trustFrameworkKeySet](../resources/trustframeworkkeyset.md) collection|Get a list of the [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) objects and their properties.|
+|[Create](../api/trustframework-post-keysets.md)|[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)|Create a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.|
+|[Get](../api/trustframeworkkeyset-get.md)|[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)|Read the properties and relationships of a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.|
+|[Update](../api/trustframeworkkeyset-update.md)|[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)|Update the properties of a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.|
+|[Delete](../api/trustframework-delete-keysets.md)|None|Delete a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.|
+|[generateKey](../api/trustframeworkkeyset-generatekey.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Generate a key in keyset.|
+|[uploadSecret](../api/trustframeworkkeyset-uploadsecret.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Upload a string based secret.|
+|[getActiveKey](../api/trustframeworkkeyset-getactivekey.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Get currently active key in the keyset.|
+|[uploadCertificate](../api/trustframeworkkeyset-uploadcertificate.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Upload a X.509 certificate.|
+|[uploadPkcs12](../api/trustframeworkkeyset-uploadpkcs12.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Upload a PKCS12 format certificate.|
 
 ## Properties
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id|String| Unique identifier of the trustframework keyset |
-|keys|[trustFrameworkKey](trustframeworkkey.md) collection| A collection of the keys. |
-|keys_v2|[trustFrameworkKey_v2](trustframeworkkey_v2.md) collection| A collection of the keys. |
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Unique identifier of the trustframework keyset Inherited from [entity](../resources/entity.md).|
+|keys|[trustFrameworkKey](../resources/trustframeworkkey.md) collection|A collection of the keys.|
 
 ## Relationships
-
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|keys_v2|[trustFrameworkKey_v2](../resources/trustframeworkkey_v2.md) collection|A collection of the keys.|
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.trustFrameworkKeySet",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.trustFrameworkKeySet",
   "id": "String (identifier)",
-  "keys": [{"@odata.type": "microsoft.graph.trustFrameworkKey"}]
+  "keys": [
+    {
+      "@odata.type": "microsoft.graph.trustFrameworkKey"
+    }
+  ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "trustFrameworkKeySet resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
 
