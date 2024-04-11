@@ -21,15 +21,15 @@ The landing page of the Data Connect applications portal provides a quick view o
 You find the following types of applications in the portal:
 
 - **Single-tenant apps** — Applications that are registered in your tenant, and require access to data. These apps are typically enterprise scenarios.
-- **Multitenant applications** — Applications that are hosted in another tenant, and require access to data from your tenant. These apps are typically ISV scenarios. Review these apps carefully. When you authorize multitenant apps, data from your tenant can be migrated to the app developer's tenant.
+- **Multitenant applications** — Applications that are hosted in another tenant, and require access to data from your tenant. These apps are typically independent software vendor (ISV) scenarios. Review these apps carefully. When you authorize multitenant apps, data from your tenant can be migrated to the app developer's tenant.
 
 All single-tenant apps are populated in the table by default. Only approved, denied, or expired multitenant apps are included in the table. Other apps might be shown in the table with the following statuses:
 
-- **Pending authorization** — Apps that haven't been acted upon yet. This status is only possible for single-tenant apps. Apps in this state always fail at runtime.
+- **Pending authorization** — Apps that are pending action. This status is only possible for single-tenant apps. Apps in this state always fail at runtime.
 - **Approved** — Apps that an admin approved to access Microsoft 365 data for your tenant.
 - **Denied** — Apps that an admin denied accessing Microsoft 365 data for your tenant. Apps in this state always fail at runtime.
 - **Expired** — Apps that an admin approved to access Microsoft 365 data for your tenant, but the approval expired. Apps in this state always fail at runtime.
-- **Update available** — Apps that an admin previously reviewed and acted upon, but have since been updated. Apps in this state continue working as per previous authorization. When the admin provides a new approval, the new definition of the app overwrites the old one.
+- **Update available** — Apps that an admin previously reviewed and acted upon, but are now updated. Apps in this state continue working as per previous authorization. When the admin provides a new approval, the new definition of the app overwrites the old one.
 
 ### App details view
 
@@ -59,7 +59,7 @@ For details about how authorization works with different scopes, see [Authorizat
 
 Finally, the wizard confirms some key information on the app for you to review. You can select **Approve**, **Decline**, or **Cancel**. An action on an app is all or nothing. Authorizing an app means you're authorizing all access specified in the previous steps.
 
-An approval remains valid for 180 days, after which it is considered **Expired**. To renew an approval, an admin can revisit the details of the application in the Microsoft 365 admin center and **Approve** the authorization for another 180 days. To revoke an approval, an admin can also access the Microsoft 365 admin center to **Decline** the authorization of an application.
+An approval remains valid for 180 days, after which it's considered **Expired**. To renew an approval, an admin can revisit the details of the application in the Microsoft 365 admin center and **Approve** the authorization for another 180 days. To revoke an approval, an admin can also access the Microsoft 365 admin center to **Decline** the authorization of an application.
 
 When authorizing an app, you might encounter these error messages:
 
@@ -70,7 +70,7 @@ If an unexpected error occurs, the error message includes an error code. Make a 
 
 ### Discovering multitenant applications
 
-To discover multitenant applications, select **Add new multi-tenant app** above the app summary table. If your tenant is enabled for cross-tenant data migration, you'll see two text boxes. After you enter the application ID and tenant ID, choose **Find**, and the portal will launch the app details view for the app you're searching for.
+To discover multitenant applications, select **Add new multi-tenant app** above the app summary table. If your tenant is enabled for cross-tenant data migration, you see two text boxes. After you enter the application ID and tenant ID, choose **Find**, and the portal will launch the app details view for the app you're searching for.
 
 ![Screenshot showing page for adding a multitenant app in Data Connect portal.](images/authorization-multitenant-app-search.png)
 
