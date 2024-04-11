@@ -7313,6 +7313,14 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
+              - name: Org control for item insights settings
+                items:
+                - name: Insights settings
+                  href: resources/insightssettings.md
+                - name: List
+                  href: api/peopleadminsettings-list-iteminsights.md
+                - name: Update
+                  href: api/insightssettings-update.md
               - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
