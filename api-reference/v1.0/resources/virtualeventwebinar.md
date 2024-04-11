@@ -33,8 +33,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information for the creator of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | displayName | String | Display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. Reference this doc to get all available time zones: [Powershell: Get all available time zones](/powershell/module/microsoft.powershell.management/get-timezone?view=powershell-7.4#example-3-get-all-available-time-zones).|
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. Reference this doc to get all available time zones: [Powershell: Get all available time zones](/powershell/module/microsoft.powershell.management/get-timezone?view=powershell-7.4#example-3-get-all-available-time-zones).|
 | id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
 
