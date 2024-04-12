@@ -127,7 +127,7 @@ Content-type: application/json
         {
             "id": "08f48aa6-02e3-407c-bbcb-ff61cec653fa",
             "name": "sample.aspx",
-            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/sample.aspx",
+            "webUrl": "https://contoso.sharepoint.com/SitePages/sample.aspx",
             "title": "sample",
             "pageLayout": "article",
             "showComments": true,
@@ -174,7 +174,7 @@ Content-type: application/json
         {
             "id": "7d87eee1-7c77-46b5-b2c4-ad6e4e432a8e",
             "name": "Home.aspx",
-            "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Home.aspx",
+            "webUrl": "https://contoso.sharepoint.com/SitePages/Home.aspx",
             "title": "Home",
             "pageLayout": "home",
             "showComments": true,

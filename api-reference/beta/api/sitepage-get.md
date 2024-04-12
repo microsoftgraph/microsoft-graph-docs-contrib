@@ -122,7 +122,7 @@ Content-type: application/json
   "description": "Here's the page description",
   "id": "65e59907-59d5-44ff-a038-7c0bf3098c01",
   "name": "Home.aspx",
-  "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/Home.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/Home.aspx",
   "title": "Organization Home",
   "thumbnailWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/00210d24-bba0-42e6-9a31-1d452a95dd75/thumbnails/large.jpg?file=163352059.jpg",
   "promotionKind": "page",
@@ -165,7 +165,7 @@ With `$select` and `$expand` statements, you can retrieve sitePage metadata and 
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?$select=id,name
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage?$select=id,name
 ```
 
 # [C#](#tab/csharp)
@@ -226,7 +226,7 @@ Content-type: application/json
 You can expand references in your URL with the _$expand_ query parameter. To access the page with page content, append the `?$expand=canvasLayout` query string.
 
 ```http
-GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?$expand=canvasLayout
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage?$expand=canvasLayout
 ```
 
 #### Response
@@ -237,7 +237,7 @@ GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?$expand=canvasLayo
   "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
   "lastModifiedDateTime": "2023-04-16T10:01:41Z",
   "name": "autotest Electronic Convertible.aspx",
-  "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/autotest Electronic Convertible.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/autotest Electronic Convertible.aspx",
   "title": "autotest Electronic Convertible",
   "pageLayout": "article",
   "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/sitepagethumbnail.png",
