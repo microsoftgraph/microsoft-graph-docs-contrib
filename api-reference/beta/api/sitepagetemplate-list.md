@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the collection of [sitePageTemplate](../resources/sitepagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination). Sort alphabetically by `name` in ascending order.
+Get the collection of [sitePageTemplate](../resources/sitepagetemplate.md) objects in a site [site](../resources/site.md). All page templates in the site are returned (with pagination), sorted alphabetically by `name` in ascending order.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
+|Permission type|Permissions (from least to most privileged)|
+|:--------------|:------------------------------------------|
+|Delegated (work or school account)|Sites.Read.All, Sites.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Sites.Read.All, Sites.ReadWrite.All|
 
 ## HTTP request
 
@@ -39,10 +39,10 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, 
 
 ## Request headers
 
-| Name          | Description                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+|Name|Description|
+|:---|:----------|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 

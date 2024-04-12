@@ -17,7 +17,7 @@ Delete a [sitePageTemplate](../resources/sitepagetemplate.md) from the templates
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
->**Note:** To delete an item, the user must have granted the application write access to the item to be deleted.
+>**Note:** To delete an item, the user must grant the application write access to the item to be deleted.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

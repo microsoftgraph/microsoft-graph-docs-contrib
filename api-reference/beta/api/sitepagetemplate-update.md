@@ -44,7 +44,7 @@ PATCH /sites/{sitesId}/pageTemplates/microsoft.graph.sitePageTemplate/{page-temp
 
 ## Request body
 
-> **Notes:** : You must include `@odata.type=#microsoft.graph.sitePageTemplate` in the request body. The `@odata.type=#microsoft.graph.sitePageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint. It's crucial for successful request body parsing.
+> **Notes:** : You must include `@odata.type=#microsoft.graph.sitePageTemplate` in the request body. The `@odata.type=#microsoft.graph.sitePageTemplate` is a property in the HTTP request body for the Microsoft Graph API, specifying the page template type for SharePoint.
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
