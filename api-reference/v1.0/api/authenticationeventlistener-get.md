@@ -54,7 +54,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
+GET https://graph.microsoft.com/v1.0/identity/authenticationEventListeners/6fc5012e-7665-43d6-9708-4370863f4e6e
 ```
 
 ### Response
@@ -71,29 +71,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/customAuthenticationExtensions/$entity",
-    "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
     "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
-    "displayName": "onTokenIssuanceStartCustomExtension",
-    "description": "Fetch additional claims from custom user store",
-    "clientConfiguration": null,
-    "behaviorOnError": null,
-    "authenticationConfiguration": {
-        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
-    },
-    "endpointConfiguration": {
-        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://authenticationeventsAPI.contoso.com"
-    },
-    "claimsForTokenConfiguration": [
-        {
-            "claimIdInApiResponse": "DateOfBirth"
-        },
-        {
-            "claimIdInApiResponse": "CustomRoles"
+    "authenticationEventsFlowId": null,
+    "conditions": {
+        "applications": {
+            "includeApplications@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners('6fc5012e-7665-43d6-9708-4370863f4e6e')/microsoft.graph.onTokenIssuanceStartListener/conditions/applications/includeApplications",
+            "includeApplications": [
+                {
+                    "appId": "77552a27-2fbf-4fb0-873e-af165ec071d5"
+                }
+            ]
         }
-    ]
+    }
 }
 ```
 

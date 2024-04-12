@@ -71,7 +71,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/customAuthenticationExtensions/$entity",
     "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",
     "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
     "displayName": "onTokenIssuanceStartCustomExtension",

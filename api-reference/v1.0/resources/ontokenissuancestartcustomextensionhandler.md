@@ -33,7 +33,13 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler"
+  "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler",
+  "customExtension": {
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",
+  },
+  "configuration": {
+    "@odata.type": "#microsoft.graph.customExtensionOverwriteConfiguration",
+  },
 }
 ```
 

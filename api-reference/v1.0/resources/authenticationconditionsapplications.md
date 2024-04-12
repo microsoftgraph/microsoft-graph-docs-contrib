@@ -32,6 +32,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.authenticationConditionsApplications",
+  "includeApplications": {
+    "@odata.type": "#microsoft.graph.authenticationConditionApplication",
+  }
 }
 ```
 
