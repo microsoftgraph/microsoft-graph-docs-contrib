@@ -1,6 +1,6 @@
 ---
 title: "directSharingAbilities resource type"
-description: "Describes direct sharing abilities."
+description: "Represents the direct sharing abilities."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes direct sharing abilities.
+Represents the direct sharing abilities.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add existing guest recipients to this item using direct sharing.|
-|addInternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add internal recipients to this item using direct sharing.|
-|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add new guest recipients to this item using direct sharing.|
-|requestGrantAccess|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the user querying this endpoint can request access for the user or on behalf of other users, after which site admins will be able to approve or deny the creation of a potential sharing link.|
+|addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates whether the current user can add existing guest recipients to this item using direct sharing.|
+|addInternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates whether the current user can add internal recipients to this item using direct sharing.|
+|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates whether the current user can add new guest recipients to this item using direct sharing.|
+|requestGrantAccess|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates whether the user querying this endpoint can request access for the user or on behalf of other users, after which, site admins, can approve or deny the creation of a potential sharing link.|
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 ---
 title: "driveItemAccessOperationsViewpoint resource type"
-description: "Describes whether the user is able to carry out the described actions on this item."
+description: "Indicates whether the user can carry out the described actions on this item."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes whether the user is able to carry out the described actions on this item.
+Indicates whether the user can carry out the described actions on this item.
 
 ## Properties
 
