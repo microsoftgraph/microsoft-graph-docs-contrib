@@ -69,7 +69,7 @@ The following example shows a request. The **id** that is specified in the reque
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/applications/{id}/addPassword
+POST https://graph.microsoft.com/beta/applications/{id}/addPassword
 Content-type: application/json
 
 {
@@ -146,7 +146,7 @@ Content-type: application/json
 The following example shows a request. The **id** that is specified in the request is the value of the **id** property of the application, not the value of the **appId** property. 
 
 ```http
-POST https://graph.microsoft.com/v1.0/applications/{id}
+POST https://graph.microsoft.com/beta/applications/{id}
 Content-type: application/json
 
 {
@@ -175,7 +175,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
     "id": "83ab4737-da9d-4084-86f2-f8fbec220647",
     "deletedDateTime": null,
     "appId": "9519e58c-bd06-4120-a7fd-2220d4de8409",
