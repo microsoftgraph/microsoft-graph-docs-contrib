@@ -18601,7 +18601,7 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
-          - name: Settings (preview)
+          - name: Settings
             items:
               - name: License details
                 href: resources/licensedetails.md

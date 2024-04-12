@@ -44,6 +44,10 @@ Associate users or groups as sponsors for a guest user's privileges in the tenan
 
 ## April 2024: New in preview only
 
+### Identity and access | Network access
+
+Updated the definition of physical locations for customer premises equipment in the Global Secure Access services from the [branchSite resource type](/graph/api/resources/networkaccess-branchsite?view=graph-rest-beta&perserve-view=true) to the [remoteNetwork resource type](/graph/api/resources/networkaccess-remotenetwork?view=graph-rest-beta&perserve-view=true). The **branchSite** resource type and its associated properties, relationships, and endpoints are deprecated will be retired soon. Use the **remoteNetwork** resource type and its associated properties, relationships, and endpoints.
+
 ### Industry data ETL
 
 The [outbound provisioning flow set](/graph/api/resources/industrydata-outboundprovisioningflowset), which represents a collection of [outbound provisioning flows](/graph/api/resources/industrydata-provisioningflow) used to configure how school data sync populates data in Microsoft 365 and Microsoft Entra ID, is now generally available.
