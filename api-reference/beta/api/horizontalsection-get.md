@@ -97,7 +97,7 @@ With `$select` and `$expand` statements, you can retrieve horizontalSection meta
 <!-- { "blockType": "ignored" } -->
 
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}?select=id,expand=columns
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}?$select=id&$expand=columns
 ```
 
 #### Response
