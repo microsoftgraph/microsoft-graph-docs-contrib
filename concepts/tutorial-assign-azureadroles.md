@@ -1,142 +1,55 @@
 ---
-title: "Assign Microsoft Entra roles through Privileged Identity Management (PIM) APIs in Microsoft Graph"
+title: "Assign administrative roles by using PIM for Microsoft Entra roles APIs"
 description: "Learn how to create a role-assignable security group for IT Helpdesk and use the PIM API to assign the security group eligibility to the User Administrator role."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rianakarim
+ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: "governance"
-ms.date: 12/20/2022
-#Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to integrate Privileged Identity Management (PIM) APIs for just in time access to Microsoft Entra roles, so that I can strengthen my organization's Zero Trust posture by enforcing the principle of least privilege.
+ms.subservice: entra-id-governance
+ms.date: 03/25/2024
+#Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to integrate PIM APIs for just in time access to Microsoft Entra roles, so that I can strengthen my organization's Zero Trust posture by enforcing the principle of least privilege.
 ---
 
 
-# Assign Microsoft Entra roles through Privileged Identity Management (PIM) APIs in Microsoft Graph
+# Assign administrative roles by using PIM for Microsoft Entra roles APIs
 
-Microsoft Graph PIM API enables organizations to manage privileged access to resources in Microsoft Entra ID. It also helps to manage the risks of privileged access by limiting when access is active, managing the scope of access, and providing an auditable log of privileged access.
+Privileged Identity Management (PIM) enables organizations to manage administrative access to resources in Microsoft Entra ID. The administrative access can be through role-assignable groups or Microsoft Entra roles. PIM helps to manage the risks of privileged access by limiting when access is active, managing the scope of access, and providing an auditable log of privileged access.
 
-In this tutorial, a fictitious company called Contoso Limited wishes to have its IT Helpdesk manage the lifecycle of employees' access. The company has identified the Microsoft Entra *User Administrator* role as the appropriate privileged role required by IT Helpdesk, and will use the PIM API to assign the role.
+Contoso wants to assign administrative roles to principals using security groups. The company assigns eligibility instead of persistently active administrative roles. This method is effective in the following ways:
+- Remove existing or adding more group members also removes administrators.
+- Group members inherit the eligible role assignment. You can assign more roles to a group instead of assigning roles directly to individual users.
+- Assigning eligibility instead of a persistently active User Administrator privilege allows the company to enforce **just-in-time access**, which grants temporary permissions to carry out the privileged tasks. When a group member needs to use the privileges, they activate their assignment for a temporary period. All records of role activations are auditable by the company.
 
-You'll create a role-assignable security group for IT Helpdesk and using the PIM API, assign the security group eligibility to the User Administrator role. By assigning the eligible role to a security group, Contoso has a more efficient way to manage administrator access to resources such as Microsoft Entra roles. For example:
+In this tutorial, you learn how to:
 
-+ Removing existing or adding more group members also removes administrators.
-+ Adding more roles to the group members instead of assigning roles to individual users.
-
-Assigning eligibility instead of a persistently active User Administrator privilege allows the company to enforce **just-in-time access**, which grants temporary permissions to carry out the privileged tasks. After defining the role eligibility, the eligible group member then activates their assignment for a temporary period. All records of role activations will be auditable by the company.
-
->[!NOTE]
->The response objects shown in this tutorial might be shortened for readability.
+> [!div class="checklist"]
+> * Create a role-assignable security group.
+> * Make a role-assignable security group eligible to an administrative role.
+> * Grant just-in-time access to a user by activating their eligible assignment. 
 
 ## Prerequisites
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled.
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
-  + [Optional] Start a new session in another browser. You'll sign in later in this tutorial.
-+ Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
-+ Authenticator app installed on your phone to register a user for multifactor authentication (MFA).
++ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled. 
++ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph with an account that has at least the *Privileged Role Administrator* role.
+  + [Optional] Start a new anonymous session in another browser. You sign in later in this tutorial.
+A test user that's enabled for MFA and you have access to their Microsoft Authenticator app account.
++ Grant yourself the following delegated permissions: `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
 
-## Step 1: Create a test user
+## Step 1: Create a role-assignable security group
 
-Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Microsoft Entra admin center and enable multifactor authentication (MFA) for the user. For more information about enabling MFA, see the [Related content](#related-content) section.
-
-
-### Request
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-assignaadroles-createUser"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/users
-Content-Type: application/json
-
-{
-    "accountEnabled": true,
-    "displayName": "Aline Dupuy",
-    "mailNickname": "AlineD",
-    "userPrincipalName": "AlineD@Contoso.com",
-    "passwordProfile": {
-        "forceChangePasswordNextSignIn": true,
-        "password": "xWwvJ]6NMw+bWH-d"
-    }
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-assignaadroles-createuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-assignaadroles-createuser-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-assignaadroles-createuser-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-assignaadroles-createuser-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-assignaadroles-createuser-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-assignaadroles-createuser-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-assignaadroles-createuser-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-assignaadroles-createuser-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-    "@odata.id": "https://graph.microsoft.com/v2/29a4f813-9274-4e1b-858d-0afa98ae66d4/directoryObjects/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2/Microsoft.DirectoryServices.User",
-    "id": "7146daa8-1b4b-4a66-b2f7-cf593d03c8d2",
-    "displayName": "Aline Dupuy",
-    "userPrincipalName": "AlineD@Contoso.com"
-}
-```
-
-<a name='step-2-create-a-security-group-that-can-be-assigned-an-azure-ad-role'></a>
-
-## Step 2: Create a security group that can be assigned a Microsoft Entra role
-
-Create a group that's assignable to a Microsoft Entra role. Assign yourself as the group owner and both you and Aline (the user created in Step 1) as members.
+Assign yourself as the group owner and both you and the test user as members.
 
 ### Request: Create a role-assignable group
-
-Replace `1ed8ac56-4827-4733-8f80-86adc2e67db5` with your ID and `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's ID.
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-createSecurityGroup"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
 
@@ -193,12 +106,13 @@ Content-type: application/json
 
 ### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -219,24 +133,18 @@ Content-type: application/json
 }
 ```
 
-## Step 3: Create a unifiedRoleEligibilityScheduleRequest
+## Step 2: Create a unifiedRoleEligibilityScheduleRequest
 
-Now that you have a security group, assign it as eligible for the User Administrator role. In this step:
-
-+ Create a unifiedRoleEligibilityScheduleRequest object that identifies the group **IT Helpdesk (User)** as eligible for the User Administrator role for one year. Microsoft Entra ID extends this eligible assignment to the group members, that is, you and Aline.
-+ Scope the eligible assignment to your entire tenant. This allows the user admin to use their privilege against all users in your tenant, except higher privileged users such as the Global Administrator.
+Now that you have a role-assignable security group, assign it as eligible for the User Administrator role for one year. Scope the eligible assignment to your entire tenant. This tenant-level scoping allows the user admin to use their privilege against all users in your tenant, except higher privileged users such as the Global Administrator.
 
 ### Request
-
-Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the value of the **id** of the **IT Helpdesk (User)** security group. This **principalId** identifies the assignee of eligibility to the User Administrator role. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the Microsoft Entra *User Administrator* role.
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-unifiedRoleEligibilityScheduleRequest_create"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests
 Content-type: application/json
 
@@ -292,12 +200,13 @@ Content-type: application/json
 
 ### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequests"
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -330,15 +239,11 @@ Content-type: application/json
 }
 ```
 
-## Step 4: Confirm the user's current role assignments
+## Step 3: Confirm the user's current role assignments
 
-While the group members are now eligible for the User Administrator role, they're still unable to use the role. This is because they're yet to activate their eligibility. You can confirm by checking the user's current role assignments.
-
+While the group members are now *eligible* for the User Administrator role, they're still unable to use the role unless they explicitly activate the role. You can confirm by checking the user's current role assignments.
 
 ### Request
-
-In the following request, replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -385,12 +290,13 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 ### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.unifiedRoleAssignments"
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -400,23 +306,21 @@ Content-type: application/json
 }
 ```
 
-The empty response object shows that Aline has no existing Microsoft Entra roles in Contoso. Aline will now activate their eligible User Administrator role for a limited time.
+The empty response object shows that the user has no existing Microsoft Entra roles in Contoso. The user will now activate their eligible User Administrator role for a limited time.
 
-## Step 5: User self-activates their eligible assignment
+## Step 4: User self-activates their eligible assignment
 
 An incident ticket CONTOSO: Security-012345 has been raised in Contoso's incident management system and the company requires that all employee's refresh tokens be invalidated. As a member of IT Helpdesk, Aline is responsible for fulfilling this task.
 
 First, start the Authenticator app on your phone and open Aline Dupuy's account.
 
-Sign in to Graph Explorer as Aline. You may use another browser for this step. By doing so, you won't interrupt your current session as a user in the Global Administrator role. Alternatively, you can interrupt your current session by signing out of Graph Explorer and signing back in as Aline.
-
-Signed in as Aline, you'll first change your password because this was specified during account creation. Then, because the administrator configured your account for MFA, you'll be prompted to set up your account in the Authenticator app and be challenged for MFA sign-in. This is because PIM requires that MFA for all active role assignments.
+Sign in to Graph Explorer as Aline. You can use another browser for this step. By doing so, you won't interrupt your current session. Alternatively, you can interrupt your current session by signing out of Graph Explorer and signing back in as Aline.
 
 After signing in, activate your User Administrator role for five hours.
 
 ### Request
 
-To activate a role, call the `roleAssignmentScheduleRequests` endpoint. In this request, the `UserActivate` action allows you to activate your eligible assignment, in this case for five hours.
+To activate a role, call the `roleAssignmentScheduleRequests` endpoint. In this request, the `UserActivate` action allows you to activate your eligible assignment.
 
 + For **principalId**, supply the value of your (Aline's) **id**.
 + The **roleDefinitionId** is the **id** of the role you're eligible for, in this case, the User Administrator role.
@@ -428,7 +332,7 @@ To activate a role, call the `roleAssignmentScheduleRequests` endpoint. In this 
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignmentScheduleRequests_selfActivate"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests
 Content-type: application/json
 
@@ -439,7 +343,7 @@ Content-type: application/json
     "directoryScopeId": "/",
     "justification": "Need to invalidate all app refresh tokens for Contoso users.",
     "scheduleInfo": {
-        "startDateTime": "2021-09-04T15:13:00.000Z",
+        "startDateTime": "2024-03-25T15:13:00.000Z",
         "expiration": {
             "type": "AfterDuration",
             "duration": "PT5H"
@@ -488,6 +392,7 @@ Content-type: application/json
 
 ### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -531,27 +436,22 @@ Content-type: application/json
 }
 ```
 
-You may confirm your assignment by running `GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')`. The response object returns your newly activated role assignment with its status set to `Granted`. With your new privilege, carry out any allowed actions within five hours your assignment is active for. This includes invalidating all employees' refresh tokens. After five hours, the active assignment expires but through your membership in the **IT Support (Users)** group, you still remain eligible for the User Administrator role.
-
-Back in the global administrator session, you have received notifications of both the eligible assignment and the role activation. This allows the global administrator to be aware of all elevations to administrator privileges across your organization.
+You can confirm your assignment by running `GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')`. The response object returns your newly activated role assignment with its status set to `Granted`. With your new privilege, carry out any allowed actions within five hours your assignment is active for. After five hours, the active assignment expires but through your membership in the **IT Support (Users)** group, you're eligible for the User Administrator role.
 
 ## Step 6: Clean up resources
 
-Sign in as the Global Administrator and delete the following resources that you created for this tutorial: the role eligibility request, IT Support (Users) group, and the test user (Aline Dupuy).
+Sign in as the Global Administrator and delete the following resources that you created for this tutorial: the role eligibility request and IT Support (Users) group.
 
 ### Revoke the role eligibility request
 
 #### Request
-
-Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleEligibilityScheduleRequests_revoke"
 }-->
-```msgraph-interactive
+```http
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests
 Content-type: application/json
 
@@ -600,6 +500,7 @@ Content-type: application/json
 
 #### Response
 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -622,17 +523,14 @@ Content-type: application/json
 
 ### Delete the IT Support (Users) group
 
-#### Request
-
-Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the **id** of IT Support (Users) group.
-
+The request returns a `204 No Content` response code.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-group_delete"
 }-->
-```msgraph-interactive
+```http
 DELETE https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269752
 ```
 
@@ -670,77 +568,18 @@ DELETE https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269
 
 ---
 
-#### Response
+## Conclusion
 
-<!-- {
-  "blockType": "response",
-  "truncated": false
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
-### Delete the test user
-
-#### Request
-
-Replace `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-assignaadroles-user_delete"
-}-->
-```msgraph-interactive
-DELETE https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-assignaadroles-user-delete-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-assignaadroles-user-delete-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-assignaadroles-user-delete-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-assignaadroles-user-delete-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-assignaadroles-user-delete-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-assignaadroles-user-delete-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-assignaadroles-user-delete-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-assignaadroles-user-delete-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": false
-} -->
-```http
-HTTP/1.1 204 No Content
-```
+In this tutorial, you learned how to manage administrative role assignments in Microsoft Entra ID by using PIM APIs. 
+- While you made the group eligible for the administrative role, you can alternatively assign an active role to the group and make the members eligible to the group. In this scenario, use the PIM for groups APIs.
+- The test user required MFA to activate their role. This requirement is part of the settings for the Microsoft Entra role and you can change the rules to not require MFA.
+- As part of the configurable rules, you can also configure the following settings:
+  - Limit the maximum allowed duration for the role activation.
+  - Require or not require justification and ticket information for activating the role.
 
 ## Related content
 
 + [Tutorial: Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-pim)
 + [Overview of role management through PIM](/graph/api/resources/privilegedidentitymanagementv3-overview)
++ [Govern membership and ownership of groups using PIM for groups](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview)
++ [Rules in PIM - mapping guide](/graph/identity-governance-pim-rules-overview)

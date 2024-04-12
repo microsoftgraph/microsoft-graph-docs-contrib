@@ -3,7 +3,7 @@ title: "Customize item insights privacy in Microsoft Graph"
 description: "Configure the visibility of insights derived from Microsoft Graph by using the Microsoft admin center, PowerShell, or the REST API userInsightsSettings resource."
 author: "simonhult"
 ms.localizationpriority: high
-ms.prod: "insights"
+ms.subservice: "insights"
 ms.custom: scenarios:getting-started
 ---
 
@@ -99,7 +99,7 @@ Alternatively, you can change the default and disable item insights for a specif
 
 ### Configure item insights settings using the REST API
 
-As stated earlier, by default, item insights privacy settings are enabled for the entire organization. These settings are exposed through a navigation property named **itemInsights** in [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). You can change the default in one of two ways:
+Because item insights privacy settings are enabled for the entire organization, they are exposed through a navigation property named **itemInsights** in [peopleAdminSettings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true). You can change the default in one of two ways:
 
 - Disable item insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) resource to `false`. 
 - Disable item insights for a _subset_ of users, by assigning these users in a Microsoft Entra group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 

@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcOnPremisesConnection result = graphClient.deviceManagement().virtualEndpoint().onPremisesConnections().byCloudPcOnPremisesConnectionId("{cloudPcOnPremisesConnection-id}").get(requestConfiguration -> {
-	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "healthCheckStatus", "healthCheckStatusDetails", "inUse"};
+	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "healthCheckStatus", "healthCheckStatusDetail", "healthCheckStatusDetails", "inUse"};
 });
 
 

@@ -3,7 +3,7 @@ title: "initiateDeviceAttestation action"
 description: "Perform Device Attestation"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

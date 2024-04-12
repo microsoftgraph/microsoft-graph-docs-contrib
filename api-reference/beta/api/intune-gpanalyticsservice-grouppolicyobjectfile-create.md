@@ -3,7 +3,7 @@ title: "Create groupPolicyObjectFile"
 description: "Create a new groupPolicyObjectFile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

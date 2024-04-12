@@ -3,7 +3,7 @@ title: "bookingService resource type"
 description: "Represents information about a particular service provided by a booking business, such as the service name, price, and the staff that usually provides such service."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -62,7 +62,7 @@ None
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

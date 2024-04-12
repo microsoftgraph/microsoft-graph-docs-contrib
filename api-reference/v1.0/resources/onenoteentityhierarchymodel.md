@@ -3,7 +3,7 @@ title: "onenoteEntityHierarchyModel resource"
 description: "A base type for OneNote entities."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: notes
+ms.subservice: onenote
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ A base type for OneNote entities.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

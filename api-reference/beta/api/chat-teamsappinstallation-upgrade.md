@@ -3,7 +3,7 @@ title: "teamsAppInstallation: upgrade"
 description: "Update an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
 author: "subray"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_teamsappinstallation_upgrade" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-teamsappinstallation-upgrade-permissions.md)]
 
-> **Notes:**
+> [!NOTE]
 > - The TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteSelfForChat.All, and TeamsAppInstallation.ReadWriteForChat.All permissions can't be used to install apps that require consent to resource-specific permissions.
 > - The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 

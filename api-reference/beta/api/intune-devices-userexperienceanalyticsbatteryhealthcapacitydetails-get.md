@@ -3,7 +3,7 @@ title: "Get userExperienceAnalyticsBatteryHealthCapacityDetails"
 description: "Read properties and relationships of the userExperienceAnalyticsBatteryHealthCapacityDetails object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -50,7 +50,7 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 |childTags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns the tags that are a child of a tag.|
 |parent|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Returns the parent tag of the specified tag.|
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

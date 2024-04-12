@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+Import-Module Microsoft.Graph.DeviceManagement.Actions
 
 $params = @{
 	deviceComplianceScheduledActionForRules = @(
@@ -16,6 +16,6 @@ $params = @{
 	)
 }
 
-Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
+Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule -DeviceCompliancePolicyId $deviceCompliancePolicyId -BodyParameter $params
 
 ```

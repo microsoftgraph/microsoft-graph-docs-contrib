@@ -22,7 +22,7 @@ A general-purpose error.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -33,6 +33,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.genericError",
   "code": "String",
   "message": "String"
 }

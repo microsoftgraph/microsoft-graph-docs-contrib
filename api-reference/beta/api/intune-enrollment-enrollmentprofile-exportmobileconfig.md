@@ -3,7 +3,7 @@ title: "exportMobileConfig function"
 description: "Exports the mobile configuration"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

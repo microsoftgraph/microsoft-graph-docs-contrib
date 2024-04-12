@@ -3,7 +3,7 @@ author: learafa
 title: Unfollow site
 description: Unfollow a user's site
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Unfollow site 
@@ -59,7 +59,7 @@ The following example shows how to unfollow multiple sites.
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /users/{user-id}/followedSites/remove
+POST https://graph.microsoft.com/v1.0/users/{user-id}/followedSites/remove
 Content-Type: application/json
 
 {
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/unfollow-site-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unfollow-site-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

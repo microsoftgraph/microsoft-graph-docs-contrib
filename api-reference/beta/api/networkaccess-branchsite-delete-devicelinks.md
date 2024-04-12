@@ -1,18 +1,21 @@
 ---
-title: "Delete deviceLink"
-description: "Removes the link between the branch and the CPE device, effectively removing the connection and associated configuration between them."
+title: "Delete deviceLink (deprecated)"
+description: "Removes the link between the branch or remote network and the CPE device, effectively removing the connection and associated configuration between them."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# Delete deviceLink
+# Delete deviceLink (deprecated)
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes the link between the branch and the CPE device, effectively removing the connection and associated configuration between them.
+> [!IMPORTANT]
+> Deprecated and to be retired soon. Use the [remoteNetwork resource type](../resources/networkaccess-remotenetwork.md) and its associated methods instead.
+
+Removes the link between the branch or remote network and the CPE device, effectively removing the connection and associated configuration between them.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -49,11 +52,11 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_devicelink"
+  "name": "delete_devicelink_deprecated"
 }
 -->
 ``` http

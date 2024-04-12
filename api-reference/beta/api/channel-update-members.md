@@ -4,7 +4,7 @@ description: "Update the role of member in a channel."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Update member in channel

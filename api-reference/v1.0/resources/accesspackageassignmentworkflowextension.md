@@ -3,7 +3,7 @@ title: "accessPackageAssignmentWorkflowExtension resource type"
 description: "Defines the attributes of a logic app that can be called at various stages of an access package assignment cycle."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -52,7 +52,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

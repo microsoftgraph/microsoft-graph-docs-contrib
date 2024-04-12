@@ -3,7 +3,7 @@ title: "resultInfo resource type"
 description: "This contains success and failure specific result information."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ The subcodes provide supplementary information related to the type of success or
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

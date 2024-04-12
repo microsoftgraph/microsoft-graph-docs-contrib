@@ -3,7 +3,7 @@ title: "Update shiftsRoleDefinition"
 description: "Updates shifts role definition."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

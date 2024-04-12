@@ -3,7 +3,7 @@ title: "applicationSignInDetailedSummary resource type"
 description: "Represents a detailed summary of an application sign-in."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

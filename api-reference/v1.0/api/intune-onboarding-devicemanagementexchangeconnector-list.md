@@ -3,7 +3,7 @@ title: "List deviceManagementExchangeConnectors"
 description: "List properties and relationships of the deviceManagementExchangeConnector objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

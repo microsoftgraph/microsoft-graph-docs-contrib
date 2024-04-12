@@ -3,7 +3,7 @@ title: "Delete iosVpnConfiguration"
 description: "Deletes a iosVpnConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

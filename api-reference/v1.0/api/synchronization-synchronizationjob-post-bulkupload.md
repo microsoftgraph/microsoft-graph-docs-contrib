@@ -49,6 +49,8 @@ In the request body, supply a [bulkUpload](../resources/synchronization-bulkuplo
 
 ## Response
 
+If successful, returns a `202 Accepted` response and nothing in the response body. It also returns a **Location** header for checking the status of the bulk request provisioning.
+
 | HTTP Status Code | Explanation |
 |:---|:---|
 | 202 (Accepted) | The bulk request is staged for execution and will be processed by the associated provisioning job. The `Location` key in the response header points to the [provisioning logs endpoint](../api/provisioningobjectsummary-list.md) that can be used to check the status of the bulk request provisioning. |
@@ -70,6 +72,7 @@ The following bulk request uses the SCIM standard Core User and Enterprise User 
 **Processing details:** The provisioning service reads the two user records. It uses the matching attribute for `userName` and `externalId` that's configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. It resolves the manager reference using the `manager.value` field. Specify the `externalId` of the user's manager in this field. In the following example, the provisioning service assigns *Barbara Jensen* as the manager for *Kathy Jensen*.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_from_SCIM_standard_schema"
@@ -214,26 +217,29 @@ Content-Type: application/scim+json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-from-scim-standard-schema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bulkUpload"
+  "truncated": true
 }
 -->
 ```http
 HTTP/1.1 202 Accepted
-Content-Type: application/json
+Content-Type: application/scim+json
+client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
+content-length: "0"
+location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
-{
-    "client-request-id": "92cd10f6-fcc3-5d61-098e-a6dd35e460ef",
-    "content-length": "0",
-    "location": "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
-    "request-id": "beeb9ea0-f7e4-4fe7-8507-cd834c88f18b"
-}
+{}
 ```
 
 ### Example 2: Bulk upload using SCIM custom schema namespace
@@ -244,6 +250,7 @@ The following bulk request uses the SCIM standard Core User and Enterprise User 
 **Processing details:** The provisioning service reads the two user records. It uses the matching attribute for `userName` and `externalId` that's configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. If you include the two custom attributes `urn:contoso:employee:HireDate` and `urn:contoso:employee:JobCode` in your provisioning job attribute mapping, it's processed, and the corresponding target attributes are set.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_from_SCIM_custom_schema"
@@ -399,25 +406,29 @@ Content-Type: application/scim+json
 
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-from-scim-custom-schema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bulkUpload"
+  "truncated": true
 }
 -->
 ```http
 HTTP/1.1 202 Accepted
-Content-Type: application/json
+Content-Type: application/scim+json
+client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
+content-length: "0"
+location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
-{
-    "client-request-id": "92cd10f6-fcc3-5d61-098e-a6dd35e460ef",
-    "content-length": "0",
-    "location": "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
-    "request-id": "beeb9ea0-f7e4-4fe7-8507-cd834c88f18b"
-}
+{}
 ```
 
 ### Example 3: Bulk upload for updating an existing user
@@ -426,6 +437,7 @@ Content-Type: application/json
 
 The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, change the user's department, and disable sign-in for the user.  This example assumes you have configured a mapping for the **externalId**, **department**, and **active** fields, and you have an existing Microsoft Entra user that has an attribute matching the **externalId**.  
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_for_update"
@@ -458,26 +470,29 @@ Content-Type: application/scim+json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-for-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bulkUpload"
+  "truncated": true
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Content-Type: application/json
+Content-Type: application/scim+json
+client-request-id: 92cd20f6-fcc3-5d61-098e-a6dd35e460ef
+content-length: "0"
+location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+request-id: beec9ea0-f7e4-4fe7-8507-cd834c88f18b
 
-{
-    "client-request-id": "92cd20f6-fcc3-5d61-098e-a6dd35e460ef",
-    "content-length": "0",
-    "location": "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
-    "request-id": "beec9ea0-f7e4-4fe7-8507-cd834c88f18b"
-}
+{}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -490,6 +505,12 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: bulkuploadfor_update:
+      Resource type was null or missing in response metadata, so we assume there is no response to validate.",
+    "Error: bulkuploadfromSCIMcustom_schema:
+      Resource type was null or missing in response metadata, so we assume there is no response to validate.",
+    "Error: bulkuploadfromSCIMstandard_schema:
+      Resource type was null or missing in response metadata, so we assume there is no response to validate.",
     "Error: microsoft.graph.microsoft.graph/servicePrincipals:
       /servicePrincipals/{var}/synchronization/jobs/{var}/bulkUpload
       Uri path requires navigating into unknown object hierarchy: missing property 'jobs' on 'synchronization'. Possible issues:

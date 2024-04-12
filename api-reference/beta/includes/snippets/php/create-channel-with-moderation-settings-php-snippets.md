@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Channel;
+use Microsoft\Graph\Generated\Models\ChannelModerationSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
