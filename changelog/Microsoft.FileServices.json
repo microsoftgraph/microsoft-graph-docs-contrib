@@ -1,5 +1,73 @@
 {
   "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "43cab0d0-c619-4751-b31b-92ee9b0ce28d",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "siteArchiveStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **siteArchiveStatus** enumeration type.",
+            "Target": "siteArchiveStatus"
+          },
+          {
+            "Id": "43cab0d0-c619-4751-b31b-92ee9b0ce28d",
+            "ApiChange": "Resource",
+            "ChangedApiName": "siteArchivalDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the [siteArchivalDetails](https://learn.microsoft.com/en-us/graph/api/resources/siteArchivalDetails?view=graph-rest-beta) resource.",
+            "Target": "siteArchivalDetails"
+          },
+          {
+            "Id": "43cab0d0-c619-4751-b31b-92ee9b0ce28d",
+            "ApiChange": "Property",
+            "ChangedApiName": "archivalDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the **archivalDetails** property to the [siteCollection](https://learn.microsoft.com/en-us/graph/api/resources/siteCollection?view=graph-rest-beta) resource.",
+            "Target": "siteCollection"
+          }
+        ],
+        "Id": "43cab0d0-c619-4751-b31b-92ee9b0ce28d",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-04-12T05:16:15.6700992Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "71407360-e7db-411b-b44d-52e5ef17dd1f",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "siteArchiveStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **siteArchiveStatus** enumeration type.",
+            "Target": "siteArchiveStatus"
+          },
+          {
+            "Id": "71407360-e7db-411b-b44d-52e5ef17dd1f",
+            "ApiChange": "Resource",
+            "ChangedApiName": "siteArchivalDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the [siteArchivalDetails](https://learn.microsoft.com/en-us/graph/api/resources/siteArchivalDetails?view=graph-rest-1.0) resource.",
+            "Target": "siteArchivalDetails"
+          },
+          {
+            "Id": "71407360-e7db-411b-b44d-52e5ef17dd1f",
+            "ApiChange": "Property",
+            "ChangedApiName": "archivalDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the **archivalDetails** property to the [siteCollection](https://learn.microsoft.com/en-us/graph/api/resources/siteCollection?view=graph-rest-1.0) resource.",
+            "Target": "siteCollection"
+          }
+        ],
+        "Id": "71407360-e7db-411b-b44d-52e5ef17dd1f",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2024-04-12T05:16:15.670353Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+      },
      {
       "ChangeList": [
         {
