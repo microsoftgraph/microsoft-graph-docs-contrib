@@ -21,7 +21,7 @@ Represents the direct sharing abilities.
 |:---|:---|:---|
 |addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates whether the current user can add existing guest recipients to this item using direct sharing.|
 |addInternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates whether the current user can add internal recipients to this item using direct sharing.|
-|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add new guest recipients to this item using direct sharing.|
+|addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates whether the current user can add new guest recipients to this item using direct sharing.|
 |requestGrantAccess|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the user querying this endpoint can request access for the user or on behalf of other users, after which site admins will be able to approve or deny the creation of a potential sharing link.|
 
 ## Relationships
