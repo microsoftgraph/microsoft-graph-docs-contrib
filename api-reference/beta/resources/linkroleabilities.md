@@ -21,7 +21,7 @@ Describes sharing link operations for a link of a specified role.
 |:---|:---|:---|
 |addExistingExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add existing external user recipients to this sharing link.|
 |addNewExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether the current user can add new external user recipients to this sharing link.|
-|applyVariants|[sharingLinkVariants](../resources/sharinglinkvariants.md)|Describes the status of potential sharing link variants, which, if selected, will generate a separate sharing link from the sharing link that would otherwise be generated without the variant, yet with identical role and scope.|
+|applyVariants|[sharingLinkVariants](../resources/sharinglinkvariants.md)|The status of the potential sharing link variants. If selected, it generates a separate sharing link from the sharing link that would otherwise be generated without the variant, yet with an identical role and scope.|
 |createLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether links of this role can be created.|
 |deleteLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether links of this role can be deleted.|
 |linkAllowsExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Describes whether this link can include external users.|
