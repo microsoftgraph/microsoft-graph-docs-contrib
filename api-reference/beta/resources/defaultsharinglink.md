@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes default sharing link the user is able to create.
+Represents the default sharing link a user can create.
 
 ## Properties
 
