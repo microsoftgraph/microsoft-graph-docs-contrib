@@ -8,14 +8,14 @@ ms.subservice: "teams"
 
 # Send activity feed notifications to users in Microsoft Teams
 
-The Microsoft Teams activity feed enables users to triage items that require attention by notifying them of changes. You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. It also allows your apps to provide richer experiences and better engage users by helping to keep them up to date with changes in the tools and workflows they use.
+The Microsoft Teams activity feed enables users to triage items that require attention by notifying them of changes. You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. In this way, you can provide richer experiences and better engage users by helping to keep them up to date with changes in the tools and workflows they use.
 
-## Use cases of activity feed notifications
+The activity feed notification APIs in Microsoft Graph enable the following use cases:
 
-* **News**: Helps users to stay updated with the latest information like new assignments or new posts.
-* **Collaboration**: When you share a file or @ mention a user in a comment, users can see a text preview in the notification banner.
-* **Reminders**: A notification to let you know about an event or a task. For example, you have a training due date today, and the app sends you a reminder notification to help you remember the task or event.
-* **Alerts**: Notifications, which require urgent or immediate attention. For example, a training's due date has passed, or an admin has sent a request to fix a bug with the highest priority.
+* **News** - Users can stay updated with the latest information, such as new assignments or new posts.
+* **Collaboration** - When someone shares a file or @ mentiosn a user in a comment, users can see a text preview in the notification banner.
+* **Reminders** - Apps send notifications to users about events or a tasks.
+* **Alerts** - Apps send notifications that require urgent or immediate attention, such as a past due date or high priority work item.
 
 ## Advantages of activity feed notifications
 
