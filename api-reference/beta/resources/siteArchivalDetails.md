@@ -13,8 +13,8 @@ The **SiteArchivalDetails** facet represents the archival details of the siteCol
 ## Properties
 | Property      | Type   | Description                                    |
 |:------------- |:------ |:-----------------------------------------------|
-| archiveStatus | [archiveStatus][] | Represents the current archive status of the site collection. Returned only on $select.|
-[archiveStatus]: archiveStatus.md
+| siteArchiveStatus | [siteArchiveStatus][] | Represents the current archive status of the site collection. Returned only on $select.|
+[siteArchiveStatus]: siteArchiveStatus.md
 
 ## JSON Representation
 Here is a JSON representation of a **microsoft.graph.siteArchivalDetails** resource.
