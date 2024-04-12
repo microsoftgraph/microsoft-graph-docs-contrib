@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes direct sharing abilities.
+Represents the direct sharing abilities.
 
 ## Properties
 
