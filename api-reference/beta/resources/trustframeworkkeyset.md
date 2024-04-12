@@ -24,7 +24,6 @@ Inherits from [entity](../resources/entity.md).
 |[Create](../api/trustframework-post-keysets.md)|[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)|Create a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.|
 |[Get](../api/trustframeworkkeyset-get.md)|[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)|Read the properties and relationships of a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.|
 |[Update](../api/trustframeworkkeyset-update.md)|[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)|Update the properties of a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.|
-|[Delete](../api/trustframework-delete-keysets.md)|None|Delete a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.|
 |[generateKey](../api/trustframeworkkeyset-generatekey.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Generate a key in keyset.|
 |[uploadSecret](../api/trustframeworkkeyset-uploadsecret.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Upload a string based secret.|
 |[getActiveKey](../api/trustframeworkkeyset-getactivekey.md)|[trustFrameworkKey](../resources/trustframeworkkey.md)|Get currently active key in the keyset.|
