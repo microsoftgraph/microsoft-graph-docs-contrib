@@ -27,7 +27,7 @@ Learn how to use this API when [Configuring a custom claim provider token issuan
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List customAuthenticationExtensions](../api/identitycontainer-list-customauthenticationextensions.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md) collection|Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties.|
-|[Create customAuthenticationExtension](../api/identitycontainer-post-customauthenticationextensions.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Create a new [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
+|[Create customAuthenticationExtension](../api/identitycontainer-post-customauthenticationextensions.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Create a new [customAuthenticationExtension](../resources/customauthenticationextension.md) object. The maximum number of policies is 100.|
 |[Get customAuthenticationExtension](../api/customauthenticationextension-get.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Read the properties and relationships of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[Update customAuthenticationExtension](../api/customauthenticationextension-update.md)|None|Update the properties of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[Delete customAuthenticationExtension](../api/customauthenticationextension-delete.md)|None|Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
