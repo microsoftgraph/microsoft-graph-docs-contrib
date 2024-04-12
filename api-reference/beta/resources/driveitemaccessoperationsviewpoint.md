@@ -19,13 +19,13 @@ Describes whether the user is able to carry out the described actions on this it
 
 |Property|Type|Description|
 |:---|:---|:---|
-|canComment|Boolean|Whether the user can comment on this item.|
-|canCreateFile|Boolean|Whether the user can create files within this object. Returned only on folders.|
-|canCreateFolder|Boolean|Whether the user can create folders within this object. Returned only on folders.|
-|canDelete|Boolean|Whether the user can delete this item.|
-|canDownload|Boolean|Whether the user can download this item.|
-|canRead|Boolean|Whether the user can read this item.|
-|canUpdate|Boolean|Whether the user can update this item.|
+|canComment|Boolean|Indicates if the user can comment on this item.|
+|canCreateFile|Boolean|Indicates if the user can create files within this object. Returned only on folders.|
+|canCreateFolder|Boolean|Indicates if the user can create folders within this object. Returned only on folders.|
+|canDelete|Boolean|Indicates if the user can delete this item.|
+|canDownload|Boolean|Indicates if the user can download this item.|
+|canRead|Boolean|Indicates if the user can read this item.|
+|canUpdate|Boolean|Indicates if the user can update this item.|
 
 ## Relationships
 
