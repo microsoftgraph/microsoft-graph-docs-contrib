@@ -18,13 +18,13 @@ The **SiteArchivalDetails** facet represents the archival details of the siteCol
 
 | Value         | Description                                           |
 |:--------------|:------------------------------------------------------|
-| recentlyArchived | If the site collection has been recently archived. |
-| fullyArchived | If the site collection has been fully archived.       |
-| reactivating | If the site collection is getting reactivated.         |
-| unknownFutureValue | For any upcoming unknown future value.           |
+| recentlyArchived | The site collection was recently archived. |
+| fullyArchived | The site collection is fully archived.       |
+| reactivating | The site collection is reactivating.         |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.  |
 
 ## JSON Representation
-Here is a JSON representation of a **microsoft.graph.siteArchivalDetails** resource.
+The following JSON representation shows the resource type.
 <!-- {
 "blockType": "resource",
 "@odata.type": "microsoft.graph.siteArchivalDetails",
