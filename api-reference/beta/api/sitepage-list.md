@@ -70,7 +70,7 @@ If successful, this method returns a `200` and a list of [sitePage](../resources
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages/microsoft.graph.sitePage
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/microsoft.graph.sitePage
 ```
 
 # [C#](#tab/csharp)
