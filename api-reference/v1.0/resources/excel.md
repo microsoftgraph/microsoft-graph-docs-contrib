@@ -3,7 +3,7 @@ title: "Working with Excel in Microsoft Graph"
 description: "You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive."
 ms.localizationpriority: high
 author: "AmandaHan123"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: conceptualPageType
 ---
 

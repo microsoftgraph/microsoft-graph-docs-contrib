@@ -16,9 +16,9 @@ $params = @{
 	status = "String"
 	contentQuery = "String"
 	errors = @(
-		"String"
-	)
-	displayName = "String"
+	"String"
+)
+displayName = "String"
 }
 
 New-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId $caseId -BodyParameter $params

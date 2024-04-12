@@ -22,7 +22,7 @@ For more information about subscriptions and change notifications, including res
 | [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
 | [Create subscription](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive change notifications when Microsoft Graph data changes. |
 | [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Reads properties and relationships of subscription object. |
-| [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | Renews a subscription by updating its expiration time. |
+| [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | Updates a subscription expiration time for renewal and/or updates the notificationUrl for delivery. |
 | [Delete subscription](../api/subscription-delete.md) | None | Deletes a subscription object. |
 |[Reauthorize](../api/subscription-reauthorize.md)|None|Reauthorize a subscription when you receive a **reauthorizationRequired** challenge. |
 
