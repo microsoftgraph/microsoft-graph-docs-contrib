@@ -67,7 +67,7 @@ The owner app can move the extension through different states of a lifecycle, us
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

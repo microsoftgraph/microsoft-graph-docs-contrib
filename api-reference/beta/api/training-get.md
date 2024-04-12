@@ -39,7 +39,7 @@ GET /security/attackSimulation/trainings/{trainingId}
 
 ## Optional query parameters
 
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -155,6 +155,7 @@ Content-Type: application/json
         "email": "yibsu",
         "id": null,
         "displayName": null
-    }
+    },
+    "customUrl" : null
 }
 ```
