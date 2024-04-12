@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Create a new [application](../resources/application.md) object.
 
 > [!IMPORTANT]
-> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported. Use the [addPassword](application-addpassword.md) method to add passwords or secrets for an application.
+> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is now supported. You may also use the [addPassword](application-addpassword.md) method to add passwords or secrets for an application.
 >
 > Do not share application client IDs (**appId**) in API documentation or code samples.
 
