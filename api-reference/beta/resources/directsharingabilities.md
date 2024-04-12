@@ -1,6 +1,6 @@
 ---
 title: "directSharingAbilities resource type"
-description: "Describes direct sharing abilities."
+description: "Represents the direct sharing abilities."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
