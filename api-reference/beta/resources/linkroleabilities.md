@@ -25,7 +25,7 @@ Represents the sharing link operations for a link of a specified role.
 |createLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates if links of this role can be created.|
 |deleteLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates if links of this role can be deleted.|
 |linkAllowsExternalUsers|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates if this link can include external users.|
-|linkExpiration|[sharingLinkExpirationStatus](../resources/sharinglinkexpirationstatus.md)|Indicates if links must expire, meaning that the link will no longer be usable after a specified amount of time. If link expiration is enabled, a default link expiration time is provided.|
+|linkExpiration|[sharingLinkExpirationStatus](../resources/sharinglinkexpirationstatus.md)|Indicates if links must expire, meaning the link is no longer usable after a specified time. If link expiration is enabled, a default link expiration time is provided.|
 |retrieveLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates if links of this role can be retrieved.|
 |updateLink|[sharingOperationStatus](../resources/sharingoperationstatus.md)|Indicates if links of this role can be updated.|
 
