@@ -185,28 +185,29 @@ You can also use [Teams app installation](/graph/api/resources/teamsappinstallat
 ## Send activity feed notifications to users
 
 > [!NOTE]
-> The app must be included in the allow list to show activity feed notifications on iOS and Android clients. Only third-party apps are supported.
+> To show activity feed notifications on iOS and Android clients, the app must be included in the allow list. Only third-party apps are supported.
 
-Because a Teams app can be installed for a user, in a team, or a chat, the notifications can be sent in these three contexts as well:
+Because a Teams app can be installed for a user, in a team, or in a chat, the notifications can be sent in three contexts. For details about how to send notifications in each context, see the following topics:
 
-- [Send notification to user in a chat](/graph/api/chat-sendactivitynotification)
 - [Send notification to user in a team](/graph/api/team-sendactivitynotification)
 - [Send notification to user](/graph/api/userteamwork-sendactivitynotification)
+- [Send notification to user in a chat](/graph/api/chat-sendactivitynotification)
 
-Additionally, notifications can be sent in bulk up to 100 users at a time:
+In addition, notifications can be sent in bulk to up to 100 users at a time. For details, see the following topic:
 
-[Send notifications to multiple users in bulk](/graph/api/teamwork-sendactivitynotificationtorecipients)
+- [Send notifications to multiple users in bulk](/graph/api/teamwork-sendactivitynotificationtorecipients)
 
 For details about what topics are supported for each scenario, see the specific APIs. Custom text-based topics are supported for all scenarios.
 
-You can use Activity feed notification in the following scenarios:
+You can use activity feed notifications to do the following:
 
 * Notify individuals about customized content that requires their attention.
-* Show rich content in Tab app or URL​.
+* Show rich content in a Tab app or URL​.
 * Support complex user interactions​.
-* Send delegated notifications from the user who initiated the notification​.
-* Put template in the app manifest​.
-* Teams handles localization for notifications.
+* Send delegated notifications from the user who initiated a notification​.
+* Put a template in the app manifest​.
+
+Teams handles the localization for notifications.
 
 > [!NOTE]
 > The activity icon is based on the context in which the request is made. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as the activity icon. In an application-only context, the Teams app icon is used as the avatar, and the activity icon is omitted.
