@@ -1,27 +1,27 @@
 ---
-title: "Automate employee mover tasks when they change jobs using lifecycle workflows APIs"
-description: "Learn how to automate employee mover tasks when they change jobs using lifecycle workflows APIs in Microsoft Graph."
+title: "Automate mover tasks when employees change jobs by using the Microsoft Graph lifecycle workflows APIs"
+description: "Learn how to automate employee mover tasks when an employee changes jobs using lifecycle workflows APIs in Microsoft Graph."
 author: owinfreyATL
 ms.author: owinfrey
 ms.reviewer: Alexander.Filipin
 ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
-ms.date: 03/26/2024
+ms.date: 04/13/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use lifecycle workflows APIs to automate employee mover tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
-# Automate employee mover tasks when they change jobs using lifecycle workflows APIs
+# Automate mover tasks when employees change jobs by using the Microsoft Graph lifecycle workflows APIs
 
-This tutorial offers step-by-step guidance on automating mover tasks using lifecycle workflows APIs.
+This tutorial offers step-by-step guidance on automating mover tasks when employees changes jobs within your organization using Microsoft Graph lifecycle workflow APIs.
 
 :::image type="content" source="images/tutorial-lifecycle-workflows/arch-2.png" alt-text="Screenshot of the Lifecycle Workflows scenario." lightbox="images/tutorial-lifecycle-workflows/arch-2.png":::
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Configure a lifecycle workflow to check for employees who are moved from a department.
-> * Configure a task to notify the manager of the user who was moved via email.
+> * Configure a lifecycle workflow to check for employees moving into a new department.
+> * Configure a task to notify the manager of the users moved via email.
 > * Monitor the status of the workflow and its associated tasks.
 
 ## Prerequisites
@@ -37,16 +37,15 @@ To complete this tutorial, you need the following resources and privileges:
     |:--- |:---|:-----|
     |mail|Notifies the manager that the employee was moved to the department. Both the manager and employee should have active mailboxes to receive emails.|Employee, Manager|
     |manager|This attribute is used by the workflow task.|Employee|
-    |Department|Provides the scope for the workflow. Set to `Sales`.|Employee, Manager|
 
-## Create a "mover" workflow
+## Create a mover workflow
 
 ### Request
 
 The following request creates a mover workflow with the following settings:
 
 + It runs on schedule but also can be run on demand.
-+ The workflow runs when an employee is removed from the **sales** department.
++ The workflow runs when an employee is added to the **Sales** department.
 + Only one built-in task runs in this workflow: to send an email to the employee's manager notifying them of the move. This task is identified in lifecycle workflows by the **taskDefinitionId** `aab41899-9972-422a-9d97-f626014578b7`.
 
 
@@ -61,8 +60,8 @@ Content-type: application/json
 
 {
     "category": "mover",
-    "description": "Configure mover tasks for a user when their job profile changes",
-    "displayName": "Sales contractor moves to full time employee",
+    "description": "Configure mover tasks for a user moved to the Sales department",
+    "displayName": "Added to Sales department workflow.",
     "isEnabled": true,
     "isSchedulingEnabled": true,
     "executionConditions": {
@@ -139,7 +138,7 @@ Content-Type: application/json
 
 ## Run the workflow
 
-Now that the workflow is created, remove the user you want to test the workflow on from the sales department. After 30 minutes you can check to see if the user is queued to have the workflow run for them by checking the execution scope of your workflow. To see if a user is queued to have the workflow run for them, you would check execution scope by doing the following:
+Now that the workflow is created take note of your workflow ID and then add the user you want to test the workflow on to the *Sales* department. After 15-30 minutes you can check to see if the user is queued to have the workflow run for them by checking the execution scope of your workflow. To see if a user is queued to have the workflow run for them, you would check execution scope by doing the following:
 
 <!-- {
   "blockType": "request",
@@ -279,4 +278,3 @@ Content-Type: application/json
 - [Automate employee onboarding tasks before their first day of work by using the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal).
 - [Overview of Microsoft Entra lifecycle workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview).
 - [Overview of reporting in Microsoft Entra lifecycle workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)
-
