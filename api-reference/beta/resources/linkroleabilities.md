@@ -1,6 +1,6 @@
 ---
 title: "linkRoleAbilities resource type"
-description: "Describes sharing link operations for a link of a specified role."
+description: "Represents the sharing link operations for a link of a specified role."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
