@@ -904,16 +904,6 @@ Users can click **Edit** next to an app and customize the notifications, as show
 
 ![Screenshot showing notifications customized to Banner and feed for a Teams app](images/teams-activityfeednotifications/applevelnotificationsettings.png)
 
-## Code sample
-
-| Sample name | Description | .NET | Node.js |
-|-------------|-------------|------|
-|Send activity feed notifications |Sample app demonstrates how to send activity feed notifications using Microsoft Graph API.|[View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)| [View](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs)|
-
-## Step-by-step guide
-
-Follow the [step-by-step guide](/microsoftteams/platform/sbs-graphactivity-feedbroadcast) to send activity feed notifications in Teams.
-
 ## FAQs
 
 ### Who needs to install the Teams app?
@@ -921,7 +911,6 @@ Follow the [step-by-step guide](/microsoftteams/platform/sbs-graphactivity-feedb
 The target user must have the Teams app that is sending notifications installed.
 
 ### Can a user send notifications to themselves?
-``
 
 No, a user can't send notifications to themselves. For this scenario, use application permissions.
 
@@ -939,6 +928,10 @@ The settings appear after the Teams app sends the first notification. This reduc
 
 ## Related content
 
+- [Tutorial: Send activity feed notifications](/microsoftteams/platform/sbs-graphactivity-feedbroadcast)
 - [Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md)
 - [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
-- [Microsoft Teams API overview](teams-concept-overview.md)
+- [Send activity feed notifications .NET sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)
+- [Send activity feed notifications Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/nodejs)
+
+
