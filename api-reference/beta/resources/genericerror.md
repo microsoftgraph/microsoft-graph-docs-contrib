@@ -35,6 +35,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.genericError",
   "message": "String",
   "code": "String"
 }

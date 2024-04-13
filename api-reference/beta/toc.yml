@@ -2062,6 +2062,30 @@ items:
                     href: api/cloudpcusersetting-delete.md
                   - name: Assign
                     href: api/cloudpcusersetting-assign.md
+              - name: Cloud PC bulk action
+                items:
+                  - name: Cloud PC bulk action
+                    href: resources/cloudpcbulkaction.md
+                  - name: Cloud PC bulk power off
+                    href: resources/cloudpcbulkpoweroff.md
+                  - name: Cloud PC bulk power on
+                    href: resources/cloudpcbulkpoweron.md
+                  - name: Cloud PC bulk reprovision
+                    href: resources/cloudpcbulkreprovision.md
+                  - name: Cloud PC bulk resize
+                    href: resources/cloudpcbulkresize.md
+                  - name: Cloud PC bulk restart
+                    href: resources/cloudpcbulkrestart.md
+                  - name: Cloud PC bulk restore
+                    href: resources/cloudpcbulkrestore.md
+                  - name: Cloud PC bulk troubleshoot
+                    href: resources/cloudpcbulktroubleshoot.md
+                  - name: List
+                    href: api/virtualendpoint-list-bulkactions.md
+                  - name: Create
+                    href: api/virtualendpoint-post-bulkactions.md
+                  - name: Get
+                    href: api/cloudpcbulkaction-get.md
               - name: Alert monitoring
                 items:
                   - name: Monitoring
@@ -14907,7 +14931,7 @@ items:
                         href: api/networkaccess-filteringrule-update.md
                       - name: Delete
                         href: api/networkaccess-filteringrule-delete.md
-              - name: Branch site
+              - name: Branch site (deprecated)
                 href: resources/networkaccess-branchsite.md
                 items:
                   - name: List
@@ -14946,6 +14970,41 @@ items:
                         href: api/networkaccess-branchsite-post-forwardingprofiles.md
                       - name: Update forwarding profile for branch
                         href: api/networkaccess-forwardingprofile-update.md
+              - name: Remote network
+                href: resources/networkaccess-remotenetwork.md
+                items:
+                  - name: List
+                    href: api/networkaccess-connectivity-list-remotenetworks.md
+                  - name: Create
+                    href: api/networkaccess-connectivity-post-remotenetworks.md
+                  - name: Get
+                    href: api/networkaccess-remotenetwork-get.md
+                  - name: Update
+                    href: api/networkaccess-remotenetwork-update.md
+                  - name: Delete
+                    href: api/networkaccess-connectivity-delete-remotenetworks.md
+                  - name: Device link
+                    href: resources/networkaccess-devicelink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-remotenetwork-list-devicelinks.md
+                      - name: Get
+                        href: api/networkaccess-devicelink-get.md
+                      - name: Create
+                        href: api/networkaccess-remotenetwork-post-devicelinks.md
+                      - name: Delete
+                        href: api/networkaccess-devicelink-delete.md
+                  - name: Connectivity configuration
+                    href: resources/networkaccess-remotenetworkconnectivityconfiguration.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-remotenetworkconnectivityconfiguration-get.md
+                  - name: Forwarding profile
+                    items:
+                      - name: List
+                        href: api/networkaccess-remotenetwork-list-forwardingprofiles.md
+                      - name: Update forwarding profile for remote network
+                        href: api/networkaccess-remotenetwork-post-forwardingprofiles.md
               - name: Traffic logs
                 href: resources/networkaccess-logs.md
                 items:
@@ -17711,7 +17770,7 @@ items:
                 href: api/documentsetversion-delete.md
               - name: Restore
                 href: api/documentsetversion-restore.md
-          - name: Pages (preview)
+          - name: Pages
             items:
               - name: Base site page
                 href: resources/basesitepage.md
@@ -18546,7 +18605,7 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
-          - name: Settings (preview)
+          - name: Settings
             items:
               - name: License details
                 href: resources/licensedetails.md
