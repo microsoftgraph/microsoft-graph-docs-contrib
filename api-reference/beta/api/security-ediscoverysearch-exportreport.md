@@ -1,6 +1,6 @@
 ---
 title: "ediscoverySearch: exportReport"
-description: "Export an item report from a search."
+description: "Export an item report from an ediscoverySearch."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Export an item report from a **search**. For details, see [Manage a collection estimate](/purview/ediscovery-create-draft-collection#manage-a-collection-estimate).
+Export an item report from an [ediscoverySearch](../resources/security-ediscoverysearch.md). For details, see [Manage a collection estimate](/purview/ediscovery-create-draft-collection#manage-a-collection-estimate).
 
 ## Permissions
 
@@ -58,7 +58,7 @@ The following table shows the parameters that you can use with this action.
 
 ## Response
 
-If the export has started successfully, this action returns a `202 Accepted` response code. The response also contains a `Location` header that contains the location of the [ediscoverySearchExportOperation](../resources/security-ediscoverysearchexportoperation.md)  that was created to handle the export.
+If the export has started successfully, this action returns a `202 Accepted` response code. The response also contains a `Location` header that contains the location of the [ediscoverySearchExportOperation](../resources/security-ediscoverysearchexportoperation.md) that was created to handle the export.
 
 ## Examples
 
