@@ -74,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('2eef613a-ca2d-42f4-89fe-84d5198ddedf')/searches('6b5358b0-2ce2-4369-b9cf-65392fe56807')/exportResult
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/2eef613a-ca2d-42f4-89fe-84d5198ddedf/searches/6b5358b0-2ce2-4369-b9cf-65392fe56807/exportResult
 Content-Type: application/json
 
 {
