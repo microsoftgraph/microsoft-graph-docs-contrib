@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes sharing link operations for a link of a specified role.
+Represents the sharing link operations for a link of a specified role.
 
 ## Properties
 
