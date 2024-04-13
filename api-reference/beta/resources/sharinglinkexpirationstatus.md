@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes whether links must expire, and if link expiration is enabled, a default link expiration time is provided.
+Indicates whether links must expire, and if link expiration is enabled, a default link expiration time is provided.
 
 ## Properties
 
