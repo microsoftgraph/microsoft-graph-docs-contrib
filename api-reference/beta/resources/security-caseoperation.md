@@ -54,7 +54,7 @@ Inherits from [entity](../resources/entity.md).
 | index | The operation represents indexing data sources of custodians and non-custodial data sources to make them searchable. |
 | estimateStatistics  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint, and OneDrive for Business. |
 | addToReviewSet | The operation represents adding data to a review set from an eDiscovery collection. |
-| holdUpdate | The operation represent updating legal hold (apply/remove) for custodians and non-custodial data sources.
+| holdUpdate | The operation represents updating legal hold (apply/remove) for custodians and non-custodial data sources.
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 | purgeData | The operation represents purging content from the source workloads. |
 | exportReport | TODO |
@@ -64,7 +64,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:----|-----------|
-| notStarted | The operation has not yet started. |
+| notStarted | The operation hasn't yet started. |
 | submissionFailed | Submission of the operation failed. |
 | running | The operation is currently running. |
 | succeeded | The operation was successfully completed without any errors. |
@@ -76,7 +76,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
