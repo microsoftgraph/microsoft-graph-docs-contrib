@@ -118,7 +118,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | specialFolder        | [specialFolder][]  | If the current item is also available as a special folder, this facet is returned. Read-only.
 | source               | [driveItemSource][]| Information about the drive item source. Read-only. Only on OneDrive for Business and SharePoint.
 | video                | [video][]          | Video metadata, if the item is a video. Read-only.
-| viewpoint            | [driveItemViewpoint][]          | Returns information specific to the calling user for this drive item. Read-only.
+| viewpoint            | [driveItemViewpoint][] | Returns information specific to the calling user for this drive item. Read-only.
 | webDavUrl            | String             | WebDAV compatible URL for the item.
 | webUrl               | String             | URL that displays the resource in the browser. Read-only.
 

@@ -19,10 +19,10 @@ Provides information on which sharing links are available to the user.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|anyoneLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|Describes anyone link abilities.|
-|directSharingAbilities|[directSharingAbilities](../resources/directsharingabilities.md)|Describes direct sharing abilities.|
-|organizationLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|**TODO: Add Description**|
-|specificPeopleLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|**TODO: Add Description**|
+|anyoneLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|Indicates anyone link abilities.|
+|directSharingAbilities|[directSharingAbilities](../resources/directsharingabilities.md)|Indicates direct sharing abilities.|
+|organizationLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|Indicates organization link abilities.|
+|specificPeopleLinkAbilities|[linkScopeAbilities](../resources/linkscopeabilities.md)|Indicates specificPeople link abilities.|
 
 ## Relationships
 

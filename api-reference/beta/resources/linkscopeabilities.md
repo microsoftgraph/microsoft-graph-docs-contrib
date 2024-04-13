@@ -19,12 +19,12 @@ Represents the sharing abilities for each possible sharingRole within a particul
 
 |Property|Type|Description|
 |:---|:---|:---|
-|blockDownloadLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes blockDownload link abilities.|
-|editLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes edit link abilities.|
-|manageListLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes manageList link abilities.|
-|readLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes read link abilities.|
-|reviewLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes review link abilities.|
-|submitOnlyLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Describes submitOnly link abilities.|
+|blockDownloadLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Indicates blockDownload link abilities.|
+|editLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Indicates edit link abilities.|
+|manageListLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Indicates manageList link abilities.|
+|readLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Indicates read link abilities.|
+|reviewLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Indicates review link abilities.|
+|submitOnlyLinkAbilities|[linkRoleAbilities](../resources/linkroleabilities.md)|Indicates submitOnly link abilities.|
 
 ## Relationships
 
