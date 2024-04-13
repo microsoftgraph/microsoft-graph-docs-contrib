@@ -1,6 +1,6 @@
 ---
 title: "linkScopeAbilities resource type"
-description: "Describes sharing abilities for each possible sharingRole within a particular sharing link scope*"
+description: "Represents the sharing abilities for each possible sharingRole within a particular sharing link scope."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
