@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes sharing abilities for each possible sharingRole within a particular sharing link scope.
+Represents the sharing abilities for each possible sharingRole within a particular sharing link scope.
 
 ## Properties
 
