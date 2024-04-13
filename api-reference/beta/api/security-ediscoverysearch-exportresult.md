@@ -1,6 +1,6 @@
 ---
 title: "ediscoverySearch: exportResult"
-description: "Export results from a search."
+description: "Export results from an ediscoverySearch."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
