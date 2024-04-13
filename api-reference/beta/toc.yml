@@ -2328,8 +2328,6 @@ items:
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
                       - name: createToken action
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
-                      - name: getDefaultTeamsDeviceNonGmsEnrollmentProfile action
-                        href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-getdefaultteamsdevicenongmsenrollmentprofile.md
                   - name: Android device owner enrollment token type
                     href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
                   - name: Android enrollment company code
