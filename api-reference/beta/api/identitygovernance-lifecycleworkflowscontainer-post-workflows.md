@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ## Examples
 
-### Example 1: Create a new workflow
+### Example 1: Create a joiner workflow using the time based trigger
 
 #### Request
 
@@ -165,7 +165,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a workflow using the attribute changes trigger
+### Example 2: Create a mover workflow using the attribute changes trigger
 
 #### Request
 
@@ -267,7 +267,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Create a new workflow using the group based trigger
+### Example 3: Create a leaver workflow using the group based trigger
 
 #### Request
 
