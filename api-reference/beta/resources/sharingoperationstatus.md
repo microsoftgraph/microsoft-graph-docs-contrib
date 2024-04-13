@@ -1,6 +1,6 @@
 ---
 title: "sharingOperationStatus resource type"
-description: "Describes the status of a particular sharing operation."
+description: "Represents the status of a particular sharing operation."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
