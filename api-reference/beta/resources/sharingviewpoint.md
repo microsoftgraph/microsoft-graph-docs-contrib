@@ -19,7 +19,7 @@ Describes sharing operations the current user can take on the specified item.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultSharingLink|[defaultSharingLink](../resources/defaultsharinglink.md)|Describes the default sharing link that the user will be able to create for this item.|
+|defaultSharingLink|[defaultSharingLink](../resources/defaultsharinglink.md)|The default sharing link the user can create for this item.|
 |sharingAbilities|[sharePointSharingAbilities](../resources/sharepointsharingabilities.md)|Provides information on which sharing links are available to the user.|
 
 ## Relationships
