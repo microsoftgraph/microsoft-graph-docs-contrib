@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes sharing operations the current user can take on the specified item.
+Represents sharing operations the current user can take on the specified item.
 
 ## Properties
 
