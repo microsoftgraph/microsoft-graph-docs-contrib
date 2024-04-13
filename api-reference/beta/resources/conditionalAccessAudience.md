@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessAudience resource type"
-description: "Indicates the audience (list of resources) evaluated by Conditional Access during a sign-in event."
+description: "Represents the audience evaluated by Conditional Access during a sign-in event."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates information about the audience during conditional access sign-ins 
+Represents the audience evaluated by Conditional Access during a sign-in event.
 
 ## Properties
 
