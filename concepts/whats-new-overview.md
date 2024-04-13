@@ -29,6 +29,10 @@ Configure the [default identity provider](/graph/api/resources/defaultInvitation
 
 ## April 2024: New in preview only
 
+### Security | eDiscovery
+
+- Export [results](/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-beta&preserve-view=true) and a [report](/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-beta&preserve-view=true) from an [ediscoverySearch](/graph/api/resources/security-ediscoverysearch?view=graph-rest-beta&preserve-view=true).
+
 ### Industry data ETL
 
 The [outbound provisioning flow set](/graph/api/resources/industrydata-outboundprovisioningflowset), which represents a collection of [outbound provisioning flows](/graph/api/resources/industrydata-provisioningflow) used to configure how school data sync populates data in Microsoft 365 and Microsoft Entra ID, is now generally available.
