@@ -49,11 +49,11 @@ The following image shows an example of an activity feed notification about a us
 
 ### Types of activity feed notification cards
 
-The following variants show the kinds of activity feed notification cards you can display. The app logo replaces the user avatar for app-generated notifications:
+The following tabs show the types of activity feed notification cards that you can display. For app-generated notifications, the user logo is replaced with the app logo.
 
 # [Desktop](#tab/desktop)
 
-:::image type="content" source="images/activity-feed-notifications-desktop.png" alt-text="Screenshot shows the activity feed notifications in a desktop."  lightbox="images/activity-feed-notifications-desktop.png" border="false":::
+:::image type="content" source="images/activity-feed-notifications-desktop.png" alt-text="Screenshot that shows activity feed notifications in a desktop."  lightbox="images/activity-feed-notifications-desktop.png" border="false":::
 
   |Counter  |Description  |
   |---------|---------|
