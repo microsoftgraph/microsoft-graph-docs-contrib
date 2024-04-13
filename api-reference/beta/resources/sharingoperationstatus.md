@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the status of a particular sharing operation.
+Represents the status of a particular sharing operation.
 
 ## Properties
 
