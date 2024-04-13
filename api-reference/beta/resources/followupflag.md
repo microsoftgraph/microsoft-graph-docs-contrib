@@ -25,7 +25,7 @@ Allows setting a flag for the user to follow up on an item later. Supported item
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

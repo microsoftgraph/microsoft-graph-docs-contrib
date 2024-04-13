@@ -75,7 +75,7 @@ This resource lets you add your own data to custom properties using [extensions]
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

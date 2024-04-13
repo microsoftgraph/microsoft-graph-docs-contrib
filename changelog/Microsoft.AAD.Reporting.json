@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "migrationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationStatus** enumeration type.",
+          "Target": "migrationStatus"
+        },
+        {
+          "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relyingPartyDetailedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingPartyDetailedSummary?view=graph-rest-1.0) resource and its associated methods.",
+          "Target": "relyingPartyDetailedSummary"
+        },
+        {
+          "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getRelyingPartyDetailedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [getRelyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/reportRoot-getRelyingPartyDetailedSummary?view=graph-rest-1.0) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportRoot"
+        }
+      ],
+      "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-01T00:00:00.5014179Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "59d08010-8301-4111-b32b-251f53a5e836",
           "ApiChange": "Enumeration",
           "ChangedApiName": "filteringPolicyAction",
