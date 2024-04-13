@@ -55,7 +55,7 @@ PATCH /planner/tasks/{id}
 |title|String|Title of the task.|
 
 > [!NOTE]
-> For Project tasks that are replicated to Planner, only the **percentComplete** field can be updated.
+> For Project tasks that are replicated to Planner, only the **percentComplete** property can be updated.
 
 ## Response
 
