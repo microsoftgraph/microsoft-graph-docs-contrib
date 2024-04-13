@@ -1,6 +1,6 @@
 ---
 title: "sharingLinkExpirationStatus resource type"
-description: "Describes whether links must expire, and if link expiration is enabled, a default link expiration time is provided."
+description: "Indicates whether links must expire, and if link expiration is enabled, a default link expiration time is provided."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
