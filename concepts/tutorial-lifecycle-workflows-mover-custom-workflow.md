@@ -1,6 +1,6 @@
 ---
 title: "Automate mover tasks when employees change jobs by using the Microsoft Graph lifecycle workflows APIs"
-description: "Learn how to automate employee mover tasks when an employee changes jobs using lifecycle workflows APIs in Microsoft Graph."
+description: "Follow the steps in this tutorial to create a mover workflow to automate tasks when employees change jobs."
 author: owinfreyATL
 ms.author: owinfrey
 ms.reviewer: Alexander.Filipin
@@ -60,8 +60,8 @@ Content-type: application/json
 
 {
     "category": "mover",
-    "description": "Configure mover tasks for a user moved to the Sales department",
-    "displayName": "Added to Sales department workflow.",
+    "description": "Configure mover tasks for a user moved to the Sales department.",
+    "displayName": "Added to Sales department workflow",
     "isEnabled": true,
     "isSchedulingEnabled": true,
     "executionConditions": {
@@ -108,8 +108,8 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
     "category": "mover",
-    "description": "Configure mover tasks for a user when their job profile changes",
-    "displayName": "Sales contractor moves to full time employee",
+    "description": "Configure mover tasks for a user moved to the Sales department.",
+    "displayName": "Added to Sales department workflow",
     "isEnabled": true,
     "isSchedulingEnabled": true,
     "lastModifiedDateTime": "2024-03-28T12:46:10.0505943Z",
