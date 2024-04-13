@@ -8,44 +8,44 @@ ms.subservice: "teams"
 
 # Send activity feed notifications to users in Microsoft Teams
 
-The Microsoft Teams activity feed enables users to triage items that require attention by notifying them of changes. You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. In this way, you can provide richer experiences and better engage users by helping to keep them up to date with changes in the tools and workflows they use.
+The Microsoft Teams activity feed notifies users of changes to enable them to triage items that require attention. Activity feed notifications in Teams including the following features:
+
+* Native integration with Teams that brings the user seamlessly into the Tab app, bringing additional user engagement from **Activity** to your app.
+* Operating system notifications in Teams desktop and mobile clients that include a pop-up and sound.
+* Customizable notification content that gives users a summary of the notification event.
+* Ability to deep link your tab, personal app, bot message, or Adaptive Card to a notification to increase user engagement with your app.
+* Ability to send activity feed notification to multiple recipients, such as batch notifications to a group of users.
+* App manifest (formerly Teams app manifest) localization to support templated text in activity feed notifications.
+
+You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. In this way, you can provide richer experiences and engage users by helping them stay up to date with changes in the tools and workflows they use.
 
 The activity feed notification APIs in Microsoft Graph enable the following use cases:
 
-* **News** - Users can stay updated with the latest information, such as new assignments or new posts.
-* **Collaboration** - When someone shares a file or @ mentiosn a user in a comment, users can see a text preview in the notification banner.
-* **Reminders** - Apps send notifications to users about events or a tasks.
-* **Alerts** - Apps send notifications that require urgent or immediate attention, such as a past due date or high priority work item.
+* **News** - Keep users updated with the latest information, such as new assignments or new posts.
+* **Collaboration** - Show users a preview in the notification banner when someone shares a file or @ mentions them in a comment.
+* **Reminders** - Send notifications to users about events or tasks.
+* **Alerts** - Send notifications that require urgent or immediate attention, such as a past due date or high priority work item.
 
-## Advantages of activity feed notifications
+## Components of activity feed notifications
 
-* Activity feed notification is a native Teams integration that brings user seamlessly into the Tab app, bringing additional user engagement from **Activity** to your app.
-* Activity feed notification comes with an OS notification in Teams desktop and mobile clients, so that user attention is grabbed from the system pop-up and sound.
-* Notification content is highly customizable, allowing users to preview the summary of the notified events.
-* You can deep link your tab app, personal app, bot message, or Adaptive Card to a notification, so that when a user selects the notification it increases user app engagement.
-* You can send activity feed notification to various recipients. For example, sending a personal notification or sending batch notifications to a group of users.
-* App manifest (previously called Teams app manifest) localization supports the templated text in activity feed notifications.
+Activity feed notifications in Teams are comprised of multiple pieces of information displayed together, as shown in the following image.
 
-## Understand the basics of activity feed notification
-
-The following image shows that activity feed notifications in Microsoft Teams comprise multiple bits of information displayed together.
-
-![Image showing components of an activity feed notification](images/teams-activityfeednotifications/notificationtemplate.png)
+![Image showing the components of an activity feed notification, including actor, reason, time stamp, preview, and topic.](images/teams-activityfeednotifications/notificationtemplate.png)
 
 The components include:
 
 |Counter|Description|
 |----------|-----------|
 |1|**Avatar**: Shows who initiated the activity.|
-|2|**Activity type or app icon**: The activity type or app icon depicts the type of activity. For app notifications, the line icon gets replaced with an app icon. |
-|3|**Title: Actor + reason**: *Actor*: Name of the user or app that initiated the activity. *Reason*: Describes the activity.|
+|2|**Activity type or app icon**: The type of activity. For app notifications, the line icon is replaced with an app icon. |
+|3|**Title: Actor + reason**: *Actor* is the name of the user or app that initiated the activity. *Reason* describes the activity.|
 |4|**Timestamp**: Shows when the activity happened.|
 |5|**Text preview**: Shows a truncated line from the start of the notification.|
 |6|**Location**: Shows where the activity happened in Teams.|
 
-The following example shows how these components provide the details about a notification. This example is a notification about a user mentioned in a Yammer community.
+The following image shows an example of an activity feed notification about a user mentioned in a Yammer community.
 
-![Yammer actifity notification example](images/teams-activityfeednotifications/examplefeednotification.png)
+![An image of a Yammer activity feed notification](images/teams-activityfeednotifications/examplefeednotification.png)
 
 ### Types of activity feed notification cards
 
