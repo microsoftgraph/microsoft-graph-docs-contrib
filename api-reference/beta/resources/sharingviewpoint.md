@@ -1,6 +1,6 @@
 ---
 title: "sharingViewpoint resource type"
-description: "Describes sharing operations the current user can take on the specified item."
+description: "Represents the sharing operations the current user can take on the specified item."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
