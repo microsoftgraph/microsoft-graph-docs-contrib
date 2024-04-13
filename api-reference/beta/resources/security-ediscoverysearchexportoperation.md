@@ -102,7 +102,7 @@ The following JSON representation shows the resource type.
   "description": "String",
   "displayName": "String",
   "exportCriteria": "String",
-  "exportFileMetadata": [{"@odata.type": "microsoft.graph.security.exportFileMetadata"}],
+  "exportFileMetadata": [{"@odata.type": "microsoft.graph.security.ediscoveryExportFileMetadata"}],
   "exportFormat": "String",
   "exportLocation": "String",
   "exportSingleItems": "Boolean",
