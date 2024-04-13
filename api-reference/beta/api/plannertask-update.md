@@ -41,7 +41,7 @@ PATCH /planner/tasks/{id}
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Specifies the categories to which the Planner task has been applied. See [applied Categories](../resources/plannerappliedcategories.md) for possible values.|
+|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Specifies the categories to which the Planner task was applied. See [applied Categories](../resources/plannerappliedcategories.md) for possible values.|
 |assigneePriority|String|Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of users the task is assigned to.|
 |bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. This value 28 characters long and case-sensitive. [Format validation](../resources/tasks-identifiers-disclaimer.md) is done on the service. |
