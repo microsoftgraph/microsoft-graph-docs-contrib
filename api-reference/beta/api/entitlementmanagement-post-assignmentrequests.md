@@ -117,8 +117,8 @@ Content-type: application/json
 
 To remove assignments, create a new **accessPackageAssignmentRequest** object with the following settings:
 
-+ The value of the **requestType** property set to `adminRemove`.
-+ In the assignment property, include an object with the identifier of the **accessPackageAssignment** object to delete.
+* The value of the **requestType** property set to `adminRemove`.
+* In the assignment property, include an object with the identifier of the **accessPackageAssignment** object to delete.
 
 #### Request
 
@@ -403,16 +403,6 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create accessPackageAssignmentRequest",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
 ### Example 6: Request an update to answers for an assignment
 
 The following example shows how an admin can request updates to an assignment to edit their responses to questions that were answered during the request for the assignment.
@@ -511,3 +501,13 @@ Content-type: application/json
     ]
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create accessPackageAssignmentRequest",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
