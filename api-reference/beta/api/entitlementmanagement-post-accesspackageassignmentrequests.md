@@ -66,7 +66,7 @@ If this is an `AdminAdd` request, then subsequently an [accessPackageAssignment]
 
 #### Request
 
-The following example shows a request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user. Because the [accessPackageSubject](../resources/accesspackagesubject.md) might not yet exist, the value of the **targetID** is the object ID of the user being assigned, the value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
+The following example shows a request for a direct assignment, in which the administrator requests the creation of an assignment for a user. Because the [accessPackageSubject](../resources/accesspackagesubject.md) might not yet exist, the value of the **targetID** is the object ID of the user being assigned, the value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
 
 <!-- {
   "blockType": "request",
@@ -104,7 +104,6 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-
   "id": "7e382d02-4454-436b-b700-59c7dd77f466",
   "requestType": "AdminAdd",
   "requestState": "Submitted",
@@ -117,8 +116,8 @@ Content-type: application/json
 
 To remove assignments, create a new accessPackageAssignmentRequest object with the following settings:
 
-+ The value of the **requestType** property set to `AdminRemove`.
-+ In the accessPackageAssignment property, include an object with the identifier of the accessPackageAssignment objects to delete.
+* The value of the **requestType** property set to `AdminRemove`.
+* In the **accessPackageAssignment** property, include an object with the identifier of the **accessPackageAssignment** objects to delete.
 
 #### Request
 
@@ -145,7 +144,7 @@ Content-type: application/json
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -169,9 +168,11 @@ Content-type: application/json
 
 ### Example 3: Request an assignment by providing answers to questions
 
+The following example shows a request where the requestor provided answers to the approver to help them make their decision.
+
 #### Request
 
-The following example shows a request where the requestor provided answers to the approver to help them make their decision.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -312,9 +313,11 @@ Content-type: application/json
 
 ### Example 4: Request a package and provide a justification
 
+The following example shows how to request an access package and provide justification to the approver.
+
 #### Request
 
-The following example shows how to request an access package and provide justification to the approver.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -338,7 +341,7 @@ Content-type: application/json
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -375,7 +378,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user, for a user who does not exist in the directory. The value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
+The following example shows a request for a direct assignment, in which the administrator requests the creation of an assignment for a user who doesn't exist in the directory. The value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
 
 <!-- {
   "blockType": "request",
@@ -415,7 +418,6 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-
   "id": "7e382d02-4454-436b-b700-59c7dd77f466",
   "requestType": "AdminAdd",
   "requestState": "Submitted",
@@ -424,22 +426,13 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create accessPackageAssignmentRequest",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
-
 ### Example 6: Request an update to answers for an assignment
 
-The following example shows how an admin can request updates to an assignment to edit their responses to questions that were answered while requesting the assignment.
+The following example shows how an admin can request updates to an assignment to edit their responses to questions that were answered during the request for the assignment.
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -482,7 +475,7 @@ Content-type: application/json
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -533,3 +526,13 @@ Content-type: application/json
     ]
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create accessPackageAssignmentRequest",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
