@@ -23,6 +23,8 @@ To customize the authentication process, listeners can be registered which speci
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
 
+You can have a maximum of 250 event listeners.
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
