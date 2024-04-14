@@ -105,7 +105,6 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-
   "id": "46184453-e63b-4f20-86c2-c557ed5d5df9",
   "requestType": "adminAdd",
   "requestState": "Submitted",
@@ -118,7 +117,7 @@ Content-type: application/json
 To remove assignments, create a new **accessPackageAssignmentRequest** object with the following settings:
 
 * The value of the **requestType** property set to `adminRemove`.
-* In the assignment property, include an object with the identifier of the **accessPackageAssignment** object to delete.
+* In the **assignment** property, include an object with the identifier of the **accessPackageAssignment** object to delete.
 
 #### Request
 
@@ -145,7 +144,7 @@ Content-type: application/json
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -216,7 +215,7 @@ Content-type: application/json
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -270,9 +269,11 @@ Content-type: application/json
 
 ### Example 4: Request a package and provide a justification
 
+The following example shows how to request an access package and provide justification to the approver.
+
 #### Request
 
-The following example shows how to request an access package and provide justification to the approver.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -296,7 +297,7 @@ Content-type: application/json
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -409,6 +410,8 @@ The following example shows how an admin can request updates to an assignment to
 
 #### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentrequest_from_assignmentrequests_requestor_answer_to_approver"
@@ -450,7 +453,7 @@ Content-type: application/json
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",
