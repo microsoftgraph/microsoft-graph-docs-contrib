@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of the parameters.
 The following table shows the parameters that you can use with this action.
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+|:---|:---|:---|
 | additionalOptions | [microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values) | The additionals options for the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`. Required.|
 | description | String | The description of the export result. |
 | displayName | String | The display name of the export result. |
