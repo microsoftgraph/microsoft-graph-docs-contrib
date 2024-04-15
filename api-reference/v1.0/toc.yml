@@ -9248,7 +9248,7 @@ items:
                       - name: Get
                         href: api/virtualeventsession-get.md
           - name: Settings
-                items:
+            items:
                   - name: License details
                     href: resources/licensedetails.md
                     items:
