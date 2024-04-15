@@ -43,13 +43,8 @@ You can specify the following properties when creating an **authenticationEventL
 
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationEventsFlowId|String|The identifier of the authentication events flow. Optional.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
-|handler|[onAuthenticationMethodLoadStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAuthenticationMethodLoadStartListener** listener type.|
-|handler|[onInteractiveAuthFlowStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onInteractiveAuthFlowStartListener** listener type.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
-|handler|[onUserCreateStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onUserCreateStartListener** listener type.|
-|priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 
 ## Response
 
@@ -110,8 +105,6 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity",
     "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
     "id": "990d94e5-cc8f-4c4b-97b4-27e2678aac28",
-    "priority": 500,
-    "authenticationEventsFlowId": null,
     "conditions": {
         "applications": {
             "includeApplications": [

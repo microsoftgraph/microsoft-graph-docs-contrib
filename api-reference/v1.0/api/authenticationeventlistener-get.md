@@ -74,7 +74,6 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
     "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
     "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
-    "authenticationEventsFlowId": null,
     "conditions": {
         "applications": {
             "includeApplications@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners('6fc5012e-7665-43d6-9708-4370863f4e6e')/microsoft.graph.onTokenIssuanceStartListener/conditions/applications/includeApplications",

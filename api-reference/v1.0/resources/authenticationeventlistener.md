@@ -30,7 +30,6 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger.|
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
-|priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority).|
 
 ## Relationships
 None.
@@ -49,11 +48,9 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.authenticationEventListener",
   "id": "String (identifier)",
-  "priority": "Integer",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
-  "authenticationEventsFlowId": "String"
 }
 ```
 

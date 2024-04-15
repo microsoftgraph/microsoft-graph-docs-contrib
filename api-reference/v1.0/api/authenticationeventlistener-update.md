@@ -41,7 +41,6 @@ You must specify the **@odata.type** property and the value of the [authenticati
 
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationEventsFlowId|String|The identifier of the authentication events flow.  Optional.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onTokenIssuanceStartListener** listener type.|
 
