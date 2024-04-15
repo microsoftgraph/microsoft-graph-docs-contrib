@@ -33,8 +33,11 @@ Added the [upsert](/graph/api/group-upsert) capability to the [group resource ty
 
 ### Sites and lists
 
+You can now:
 - [Track changes for SharePoint site](/graph/api/site-delta) resources.
 - [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
+
+Work with [site pages](/graph/api/resources/sitepage) and [horizonal](/graph/api/resources/horizontalsection) and [vertical](/graph/api/resources/verticalsection) sections of pages.  
 
 ### Identity and access | Identity and sign-in
 
