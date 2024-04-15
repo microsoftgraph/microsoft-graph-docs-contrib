@@ -3,7 +3,7 @@ title: "cloudPcDeviceImage resource type"
 description: "Represents the image resource on Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -73,7 +73,7 @@ Represents the image resource on a Cloud PC.
 |:---|:---|
 |pending|The image upload is in progress.|
 |ready|The image is ready for use on Cloud PCs.|
-|failed|The image couldn’t be uploaded. |
+|failed|Indicates that the image failed to upload. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcDeviceImageStatusDetails values

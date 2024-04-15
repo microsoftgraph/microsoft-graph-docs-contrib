@@ -3,7 +3,7 @@ title: "Add educationClass to educationSchool"
 description: "Add a class to a school."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

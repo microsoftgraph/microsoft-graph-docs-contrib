@@ -3,7 +3,7 @@ title: "assignmentReviewSettings resource type"
 description: "The assignmentReviewSettings type, used for the accessReviewSettings property of an access package assignment policy, provides additional settings to select who must review access package assignments from this policy, and how often they must be reviewed."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -42,7 +42,7 @@ This type has the following properties:
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.assignmentReviewSettings"

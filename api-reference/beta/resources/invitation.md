@@ -3,7 +3,7 @@ title: "invitation resource type"
 description: "Represents an invitation that is used to add external users to an organization as part of Microsoft Entra business-to-business (Microsoft Entra B2B) collaboration."
 ms.localizationpriority: medium
 author: "ppolkadots"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -52,7 +52,7 @@ Creating an invitation returns a redemption URL in the response (*inviteRedeemUr
 |invitedUserSponsors|[directoryObject](../resources/directoryobject.md) collection|The users or groups who are sponsors of the invited user. Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date. |
 
 ## JSON representation
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- 
 { 

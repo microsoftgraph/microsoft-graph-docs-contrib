@@ -3,7 +3,7 @@ title: "identitySecurityDefaultsEnforcementPolicy resource type"
 description: "Represents the Microsoft Entra security defaults policy. Security defaults contain preconfigured security settings that protect against common attacks."
 ms.localizationpriority: medium
 author: "Sammak"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

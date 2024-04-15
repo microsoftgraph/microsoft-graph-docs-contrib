@@ -3,7 +3,7 @@ title: "unifiedRoleManagementPolicyRule resource type"
 description: "An abstract type that defines the rules or settings associated with role management policies."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

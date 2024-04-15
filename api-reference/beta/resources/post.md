@@ -3,7 +3,7 @@ title: "post resource type"
 description: "Represents an individual post item within a conversationThread entity."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -75,7 +75,7 @@ This resource lets you add your own data to custom properties using [extensions]
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

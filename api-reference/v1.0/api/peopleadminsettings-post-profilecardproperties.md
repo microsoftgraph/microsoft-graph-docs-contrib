@@ -53,7 +53,7 @@ You can specify the following properties when you create a **profileCardProperty
 
 |Property|Type|Description|
 |:---|:---|:---|
-|annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Any alternative or localized labels that an administrator has chosen to specify.|
+|annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Any alternative or localized labels that an administrator chose to specify.|
 |directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card.|
 
 ## Response
@@ -82,7 +82,7 @@ Content-type: application/json; charset=utf-8
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "ru-RU",
+          "languageTag": "ru",
           "displayName": "центр затрат"
         }
       ]
@@ -148,7 +148,7 @@ Content-type: application/json; charset=utf-8
       "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "ru-RU",
+          "languageTag": "ru",
           "displayName": "центр затрат"
         }
       ]

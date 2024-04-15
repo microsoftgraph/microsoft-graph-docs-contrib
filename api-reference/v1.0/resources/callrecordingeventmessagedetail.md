@@ -3,7 +3,7 @@ title: "callRecordingEventMessageDetail resource type"
 description: "Represents the details of an event message about call recording."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

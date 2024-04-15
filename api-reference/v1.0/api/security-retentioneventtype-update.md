@@ -3,7 +3,7 @@ title: "Update retentionEventType"
 description: "Update the properties of a retentionEventType object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

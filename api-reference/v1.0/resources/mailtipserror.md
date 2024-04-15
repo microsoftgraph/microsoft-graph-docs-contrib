@@ -3,7 +3,7 @@ title: "mailTipsError resource type"
 description: "An error that occurs during an action."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ An error that occurs during an action.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

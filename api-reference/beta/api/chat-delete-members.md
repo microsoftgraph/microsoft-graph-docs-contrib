@@ -3,7 +3,7 @@ title: "Remove member from chat"
 description: "Remove a conversationMember from a chat."
 author: "AkJo"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -17,15 +17,13 @@ Remove a [conversationMember](../resources/conversationmember.md) from a [chat](
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| ChatMember.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application| Chat.Manage.Chat*, ChatMember.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chat_delete_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-delete-members-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

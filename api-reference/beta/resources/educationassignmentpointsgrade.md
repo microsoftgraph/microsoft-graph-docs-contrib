@@ -3,7 +3,7 @@ title: "educationAssignmentPointsGrade resource type"
 description: "When an assignment is set to a points grade type, each submission has this object associated with the **submission.grade** property. This creates a subclass from educationAssignmentGrade,"
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ which will add the who data to this property. The max points are stored in the *
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationWindowsSkus enum type"
 description: "Intune Deviceconfigv2 Devicemanagementconfigurationwindowsskus Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

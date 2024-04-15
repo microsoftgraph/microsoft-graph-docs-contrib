@@ -3,7 +3,7 @@ title: "Remove attribute (from user flow)"
 description: "Remove an attribute from an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.  If unsucce
 ## Examples
 
 #### Request
-Here's an example of a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow. After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
+The following example shows a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow. After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 [!INCLUDE [sample-code](../includes/snippets/php/delete-onattributecollectionexternalusersselfservicesignup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-onattributecollectionexternalusersselfservicesignup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-onattributecollectionexternalusersselfservicesignup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,7 +100,7 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 ---
 
 #### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

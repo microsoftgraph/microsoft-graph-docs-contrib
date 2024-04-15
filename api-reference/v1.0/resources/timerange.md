@@ -3,7 +3,7 @@ title: "timeRange resource type"
 description: "A time range resource with a start and end time."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 

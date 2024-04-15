@@ -3,7 +3,7 @@ title: "windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus reso
 description: "Contains properties for the deployment state of a WindowsDefenderApplicationControl supplemental policy for a device."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

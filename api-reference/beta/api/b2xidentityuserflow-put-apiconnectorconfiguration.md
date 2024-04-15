@@ -3,7 +3,7 @@ title: "Configure an API connector in a user flow"
 description: "Enable or disable an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -24,10 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "b2xidentityuserflow_put_apiconnectorconfiguration" } -->
 [!INCLUDE [permissions-table](../includes/permissions/b2xidentityuserflow-put-apiconnectorconfiguration-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
@@ -61,7 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +113,7 @@ Content-Type: application/json
 
 #### Response 
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -131,7 +128,7 @@ HTTP/1.1 204 No Content
 
 #### Request 
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -187,7 +184,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -202,7 +199,7 @@ HTTP/1.1 204 No Content
 
 #### Request 
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -256,7 +253,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -3,7 +3,7 @@ title: "multiTenantOrganizationIdentitySyncPolicyTemplate resource type"
 description: "Defines an optional cross-tenant access policy template with user synchronization settings for multitenant organization tenants."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -42,7 +42,7 @@ In its default and unconfigured state, where all template properties (other than
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: SharingLink
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 # sharingLink resource type
 
@@ -19,7 +19,7 @@ If a [**permission**](permission.md) resource has a non-null **sharingLink** fac
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

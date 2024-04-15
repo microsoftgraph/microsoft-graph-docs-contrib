@@ -3,7 +3,7 @@ title: "domain resource type"
 description: "Represents a domain associated with the tenant."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -72,7 +72,7 @@ Relationships between a domain and other objects in the directory such as its ve
 |federationConfiguration|[internalDomainFederation](internaldomainfederation.md)| Domain settings configured by a customer when federated with Microsoft Entra ID. Supports `$expand`.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

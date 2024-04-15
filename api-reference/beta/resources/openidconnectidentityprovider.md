@@ -3,7 +3,7 @@ title: "openIdConnectIdentityProvider resource type"
 description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "namkedia"
 ---
 
@@ -60,7 +60,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

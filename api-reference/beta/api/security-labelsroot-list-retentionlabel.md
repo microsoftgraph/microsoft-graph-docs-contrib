@@ -3,7 +3,7 @@ title: "List retentionLabels"
 description: "Get a list of the retentionLabel objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -102,6 +102,7 @@ GET https://graph.microsoft.com/beta/security/labels/retentionLabels
 ---
 
 ### Response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -118,26 +119,33 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.retentionLabel",
       "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
-      "displayName": "String",
-      "behaviorDuringRetentionPeriod": "String",
-      "actionAfterRetentionPeriod": "String",
-      "retentionTrigger": "String",
+      "displayName": "Retention Schedule 10004",
+      "behaviorDuringRetentionPeriod": "retain",
+      "actionAfterRetentionPeriod": "relabel",
+      "retentionTrigger": "dateCreated",
       "retentionDuration": {
-        "@odata.type": "microsoft.graph.security.retentionDuration"
+        "@odata.type": "microsoft.graph.security.retentionDurationInDays",
+        "days": "730"
       },
-      "isInUse": "Boolean",
-      "descriptionForAdmins": "String",
-      "descriptionForUsers": "String",
+      "isInUse": true,
+      "descriptionForAdmins": "creation based retention label for schedule 10004",
+      "descriptionForUsers": "retains for 2 years then relabeled",
       "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Admin"
+        }
       },
-      "createdDateTime": "String (timestamp)",
+      "createdDateTime": "2017-11-27T02:10:12Z",
       "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+          "id": "9563a605-e827-4324-a5a9-09efddff1e90",
+          "displayName": "Records Manager"
+        }
       },
-      "lastModifiedDateTime": "String (timestamp)",
-      "labelToBeApplied": "String",
-      "defaultRecordBehavior": "String"
+      "lastModifiedDateTime": "2020-08-28T22:13:09Z",
+      "labelToBeApplied": "Retention schedule 10005",
+      "defaultRecordBehavior": "startLocked"
     }
   ]
 }

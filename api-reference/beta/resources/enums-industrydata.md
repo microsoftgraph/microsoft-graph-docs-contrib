@@ -3,7 +3,7 @@ title: "Industry data enum values"
 description: "Microsoft Graph industry data subnamespace enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 author: "mlafleur"
 ---
 
@@ -55,6 +55,35 @@ Enum values for the industry data API in Microsoft Graph.
 | disabled           |
 | expired            |
 | unknownFutureValue |
+
+### filteroptions values
+
+| Member             |
+|:-------------------|
+| orgExternalId      |
+| unknownFutureValue |
+
+### additionalUserAttributes values
+
+| Member             |
+|:-------------------|
+| userGradeLevel     |
+| userNumber         |
+| unknownFutureValue |
+
+### additionalClassGroupAttributes values
+
+| Member                    |
+|:--------------------------|
+| courseTitle               |
+| courseCode                |
+| courseSubject             |
+| courseGradeLevel          |
+| courseExternalId          |
+| academicSessionTitle      |
+| academicSessionExternalId |
+| classCode                 |
+| unknownFutureValue        |
 
 <!--
 {

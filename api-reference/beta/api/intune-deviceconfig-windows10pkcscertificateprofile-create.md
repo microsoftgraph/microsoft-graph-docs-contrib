@@ -3,7 +3,7 @@ title: "Create windows10PkcsCertificateProfile"
 description: "Create a new windows10PkcsCertificateProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

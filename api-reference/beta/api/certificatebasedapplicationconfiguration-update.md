@@ -3,7 +3,7 @@ title: "Update certificateBasedApplicationConfiguration"
 description: "Update the properties of a certificateBasedApplicationConfiguration object."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code and does not
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -62,7 +62,7 @@ The following is an example of a request.
 -->
 
 ``` http
-PATCH /directory/certificateAuthorities/certificateBasedApplicationConfigurations/d5b0af1c-9376-6b66-16b6-e402965862c1
+PATCH https://graph.microsoft.com/beta/directory/certificateAuthorities/certificateBasedApplicationConfigurations/d5b0af1c-9376-6b66-16b6-e402965862c1
 Content-Type: application/json
 
 {

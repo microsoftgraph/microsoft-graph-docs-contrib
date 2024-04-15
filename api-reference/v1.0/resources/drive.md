@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: drive resource type
 description: The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

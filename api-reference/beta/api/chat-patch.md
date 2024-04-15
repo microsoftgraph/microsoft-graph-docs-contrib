@@ -3,7 +3,7 @@ title: "Update chat"
 description: "Update the properties of a chat object."
 author: "anandjo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -19,15 +19,13 @@ Update the properties of a [chat](../resources/chat.md) object.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Chat.ReadWrite|
-|Delegated (personal Microsoft account) | Not supported. |
-|Application | ChatSettings.ReadWrite.Chat*, Chat.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chat_patch" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-patch-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChatSettings.ReadWrite.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -52,7 +50,7 @@ The following table shows the properties that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|String|The title of the chat. This can only be set for a chat with a **chatType** value of `group`. Maximum length is **250** characters. Use of **':'** is not allowed.|
+|topic|String|The title of the chat. **topic** can only be set for a chat with a **chatType** value of `group`. Maximum length is **250** characters. Use of **':'** isn't allowed.|
 
 
 ## Response

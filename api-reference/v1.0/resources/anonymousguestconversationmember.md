@@ -3,7 +3,7 @@ title: "anonymousGuestConversationMember resource type"
 description: "Represents an anonymous guest in a chat."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Inherits from [conversationMember](../resources/conversationmember.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

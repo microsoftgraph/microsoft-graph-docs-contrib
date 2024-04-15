@@ -279,6 +279,14 @@ items:
                 href: resources/plannertask.md
               - name: List tasks
                 href: api/planneruser-list-tasks.md
+          - name: Sponsors
+            items:
+              - name: Add sponsor
+                href: api/user-post-sponsors.md
+              - name: List sponsors
+                href: api/user-list-sponsors.md
+              - name: Remove sponsor
+                href: api/user-delete-sponsors.md
           - name: Teamwork and communications
             items:
               - name: Installed app
@@ -301,6 +309,27 @@ items:
                 href: api/chat-get.md
               - name: List chats for user
                 href: api/chat-list.md
+              - name: Settings
+                items:
+                  - name: License details
+                    href: resources/licensedetails.md
+                    items:
+                    - name: Get
+                      href: api/licenseDetails-getteamslicensingdetails.md
+                  - name: Organization settings
+                    items:
+                    - name: Teamwork
+                      href: resources/teamwork.md
+                      items:
+                      - name: Get
+                        href: api/teamwork-get.md
+                  - name: User settings
+                    items:
+                    - name: User teamwork
+                      href: resources/userteamwork.md
+                      items:
+                        - name: Get
+                          href: api/userteamwork-get.md
           - name: To-do task
             items:
               - name: To-do task
@@ -336,6 +365,8 @@ items:
                 href: api/group-get.md
               - name: Update group
                 href: api/group-update.md
+              - name: Upsert group
+                href: api/group-upsert.md
               - name: Delete group
                 href: api/group-delete.md
               - name: Renew group
@@ -612,6 +643,8 @@ items:
                 href: api/opentypeextension-get.md
       - name: Applications
         items:
+          - name: Overview
+            href: resources/applications-api-overview.md
           - name: Application
             href: resources/application.md
             items:
@@ -623,6 +656,8 @@ items:
                 href: api/application-get.md
               - name: Update application
                 href: api/application-update.md
+              - name: Upsert application
+                href: api/application-upsert.md  
               - name: Delete application
                 href: api/application-delete.md
               - name: Get delta
@@ -691,6 +726,8 @@ items:
                         href: api/federatedidentitycredential-get.md
                       - name: Update
                         href: api/federatedidentitycredential-update.md
+                      - name: Upsert
+                        href: api/federatedidentitycredential-upsert.md
                       - name: Delete
                         href: api/federatedidentitycredential-delete.md
               - name: Owners
@@ -762,6 +799,8 @@ items:
                 href: api/serviceprincipal-get.md
               - name: Update
                 href: api/serviceprincipal-update.md
+              - name: Upsert
+                href: api/serviceprincipal-upsert.md
               - name: Delete
                 href: api/serviceprincipal-delete.md
               - name: List deleted service principals
@@ -946,6 +985,11 @@ items:
                     href: api/synchronization-synchronizationjob-provisionondemand.md
                   - name: Validate credentials
                     href: api/synchronization-synchronizationjob-validatecredentials.md
+                  - name: Bulk upload
+                    href: resources/synchronization-bulkupload.md
+                    items:
+                      - name: Perform bulk upload
+                        href: api/synchronization-synchronizationjob-post-bulkupload.md
               - name: Schema
                 href: resources/synchronization-synchronizationschema.md
                 items:
@@ -1143,7 +1187,7 @@ items:
               - name: Create category
                 href: api/outlookuser-post-mastercategories.md
               - name: List modules
-                href: api/educationclass-list-modules.md                
+                href: api/educationclass-list-modules.md
               - name: Get category
                 href: api/outlookcategory-get.md
               - name: Update category
@@ -1261,6 +1305,34 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Delete a history item
                     href: api/projectrome-delete-historyitem.md
+          - name: Roaming data
+            items:
+              - name: Cloud clipboard
+                href: resources/cloudclipboardroot.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+              - name: Cloud clipboard item
+                href: resources/cloudclipboarditem.md
+                items:
+                  - name: List
+                    href: api/cloudclipboardroot-list-items.md
+                  - name: Get
+                    href: api/cloudclipboarditem-get.md
+              - name: Windows settings
+                href: resources/windowssetting.md
+                items:
+                  - name: List
+                    href: api/usersettings-list-windows.md
+                  - name: Get
+                    href: api/windowssetting-get.md
+              - name: Windows setting instance
+                href: resources/windowssettinginstance.md
+                items:
+                  - name: List
+                    href: api/windowssetting-list-instances.md
+                  - name: Get
+                    href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
@@ -1362,7 +1434,6 @@ items:
               - name: Delete
                 href: api/bookingstaffmember-delete.md
       - name: Device and app management
-        expanded: true
         items:
           - name: Browser management
             displayName: Edge, Internet Explorer, IE mode, site list
@@ -1419,6 +1490,97 @@ items:
                 href: resources/cloudpc-api-overview.md
               - name: Virtual endpoint
                 href: resources/virtualendpoint.md
+              - name: Cloud PC
+                href: resources/cloudpc.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-cloudpcs.md
+                  - name: Get
+                    href: api/cloudpc-get.md
+                  - name: End grace period
+                    href: api/cloudpc-endgraceperiod.md
+                  - name: Reboot
+                    href: api/cloudpc-reboot.md
+                  - name: Rename
+                    href: api/cloudpc-rename.md
+                  - name: Restore
+                    href: api/cloudpc-restore.md
+                  - name: Troubleshoot
+                    href: api/cloudpc-troubleshoot.md
+              - name: Cloud PC audit event
+                href: resources/cloudpcauditevent.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-auditevents.md
+                  - name: Get
+                    href: api/cloudpcauditevent-get.md
+                  - name: Get audit activity types
+                    href: api/cloudpcauditevent-getauditactivitytypes.md
+              - name: Cloud PC Azure network connection
+                href: resources/cloudpconpremisesconnection.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-onpremisesconnections.md
+                  - name: Create
+                    href: api/virtualendpoint-post-onpremisesconnections.md
+                  - name: Get
+                    href: api/cloudpconpremisesconnection-get.md
+                  - name: Update
+                    href: api/cloudpconpremisesconnection-update.md
+                  - name: Delete
+                    href: api/cloudpconpremisesconnection-delete.md
+                  - name: Run health checks
+                    href: api/cloudpconpremisesconnection-runhealthcheck.md
+              - name: Cloud PC device image
+                href: resources/cloudpcdeviceimage.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-deviceimages.md
+                  - name: Create
+                    href: api/virtualendpoint-post-deviceimages.md
+                  - name: Get
+                    href: api/cloudpcdeviceimage-get.md
+                  - name: Delete
+                    href: api/cloudpcdeviceimage-delete.md
+                  - name: Get source images
+                    href: api/cloudpcdeviceimage-getsourceimages.md
+              - name: Cloud PC gallery image
+                href: resources/cloudpcgalleryimage.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-galleryimages.md
+                  - name: Get
+                    href: api/cloudpcgalleryimage-get.md
+              - name: Cloud PC provisioning policy
+                href: resources/cloudpcprovisioningpolicy.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-provisioningpolicies.md
+                  - name: Create
+                    href: api/virtualendpoint-post-provisioningpolicies.md
+                  - name: Get
+                    href: api/cloudpcprovisioningpolicy-get.md
+                  - name: Update
+                    href: api/cloudpcprovisioningpolicy-update.md
+                  - name: Delete
+                    href: api/cloudpcprovisioningpolicy-delete.md
+                  - name: Assign
+                    href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Cloud PC user setting
+                href: resources/cloudpcusersetting.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-usersettings.md
+                  - name: Create
+                    href: api/virtualendpoint-post-usersettings.md
+                  - name: Get
+                    href: api/cloudpcusersetting-get.md
+                  - name: Update
+                    href: api/cloudpcusersetting-update.md
+                  - name: Delete
+                    href: api/cloudpcusersetting-delete.md
+                  - name: Assign
+                    href: api/cloudpcusersetting-assign.md
           - name: Cloud printing
             items:
               - name: Print
@@ -4489,6 +4651,18 @@ items:
                         href: api/intune-tem-devicemanagement-get.md
                       - name: Update
                         href: api/intune-tem-devicemanagement-update.md
+          - name: Microsoft 365 apps
+            displayName: Microsoft 365 applications
+            items:
+              - name: Admin Microsoft 365 apps
+                href: resources/adminmicrosoft365apps.md
+              - name: Installation options
+                href: resources/m365appsinstallationoptions.md
+                items:
+                  - name: Get
+                    href: api/m365appsinstallationoptions-get.md
+                  - name: Update
+                    href: api/m365appsinstallationoptions-update.md
           - name: Service health and communications
             items:
               - name: Overview
@@ -4672,7 +4846,7 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md  
+                href: api/educationassignment-delta.md
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md
               - name: Update grading category
@@ -4745,7 +4919,7 @@ items:
             - name: Pin module
               href: api/educationmodule-pin.md
             - name: Unpin module
-              href: api/educationmodule-unpin.md                  
+              href: api/educationmodule-unpin.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -7326,6 +7500,13 @@ items:
             items:
             - name: Microsoft Entra activity reports
               items:
+                - name: AD FS application activity
+                  items:
+                    - name: Relying party detailed summary
+                      href: resources/relyingpartydetailedsummary.md
+                      items:
+                        - name: Get relying party detailed summary
+                          href: api/reportroot-getrelyingpartydetailedsummary.md
                 - name: Registration and usage
                   items:
                     - name: Overview
@@ -7616,6 +7797,12 @@ items:
             items:
               - name: Overview
                 href: resources/partners-billing-api-overview.md
+              - name: Billed reconciliation
+                items:
+                  - name: Billed reconciliation
+                    href: resources/partners-billing-billedreconciliation.md
+                  - name: Export
+                    href: api/partners-billing-billedreconciliation-export.md
               - name: Billed usage
                 items:
                   - name: Billed usage
@@ -7642,6 +7829,49 @@ items:
                     href: api/partners-billing-unbilledusage-export.md
       - name: Search
         items:
+          - name: Answer
+            items:
+              - name: Overview
+                href: resources/search-api-answers-overview.md
+              - name: Acronym
+                href: resources/search-acronym.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-acronyms.md
+                  - name: Create
+                    href: api/search-searchentity-post-acronyms.md
+                  - name: Get
+                    href: api/search-acronym-get.md
+                  - name: Update
+                    href: api/search-acronym-update.md
+                  - name: Delete
+                    href: api/search-acronym-delete.md
+              - name: Bookmark
+                href: resources/search-bookmark.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-bookmarks.md
+                  - name: Create
+                    href: api/search-searchentity-post-bookmarks.md
+                  - name: Get
+                    href: api/search-bookmark-get.md
+                  - name: Update
+                    href: api/search-bookmark-update.md
+                  - name: Delete
+                    href: api/search-bookmark-delete.md
+              - name: QnA
+                href: resources/search-qna.md
+                items:
+                  - name: List
+                    href: api/search-searchentity-list-qnas.md
+                  - name: Create
+                    href: api/search-searchentity-post-qnas.md
+                  - name: Get
+                    href: api/search-qna-get.md
+                  - name: Update
+                    href: api/search-qna-update.md
+                  - name: Delete
+                    href: api/search-qna-delete.md
           - name: Query
             items:
               - name: Overview
@@ -8029,32 +8259,137 @@ items:
                 href: api/alert-update.md
           - name: Records management
             items:
-              - name: Overview
-                href: resources/security-recordsManagement-overview.md
-              - name: Retention event
-                href: resources/security-retentionevent.md
+            - name: Overview
+              href: resources/security-recordsmanagement-overview.md
+            - name: Retention label
+              href: resources/security-retentionlabel.md
+              items:
+              - name: List
+                href: api/security-labelsroot-list-retentionlabel.md
+              - name: Create
+                href: api/security-labelsroot-post-retentionlabel.md
+              - name: Get
+                href: api/security-retentionlabel-get.md
+              - name: Update
+                href: api/security-retentionlabel-update.md
+              - name: Delete
+                href: api/security-retentionlabel-delete.md
+            - name: File plan descriptors
+              items:
+              - name: File plan descriptors
                 items:
-                  - name: List
-                    href: api/security-retentionevent-list.md
-                  - name: Create
-                    href: api/security-retentionevent-post.md
-                  - name: Get
-                    href: api/security-retentionevent-get.md
-                  - name: Delete
-                    href: api/security-retentionevent-delete.md
-              - name: Retention event type
-                href: resources/security-retentioneventtype.md
+                - name: File plan descriptor set
+                  href: resources/security-fileplandescriptor.md
+                - name: Applied category
+                  href: resources/security-appliedcategory.md
+                - name: Authority
+                  href: resources/security-authority.md
+                - name: Citation
+                  href: resources/security-citation.md
+                - name: Department
+                  href: resources/security-department.md
+                - name: File plan reference
+                  href: resources/security-fileplanreference.md
+                - name: Subcategory
+                  href: resources/security-subcategory.md
+              - name: File plan descriptor templates
                 items:
+                - name: Applied category template
+                  items:
+                  - name: Category template
+                    href: resources/security-categorytemplate.md
                   - name: List
-                    href: api/security-retentioneventtype-list.md
+                    href: api/security-labelsroot-list-categories.md
                   - name: Create
-                    href: api/security-retentioneventtype-post.md
+                    href: api/security-labelsroot-post-categories.md
                   - name: Get
-                    href: api/security-retentioneventtype-get.md
-                  - name: Update
-                    href: api/security-retentioneventtype-update.md
+                    href: api/security-categorytemplate-get.md
                   - name: Delete
-                    href: api/security-retentioneventtype-delete.md
+                    href: api/security-labelsroot-delete-categories.md
+                - name: Authority template
+                  items:
+                  - name: Authority template
+                    href: resources/security-authoritytemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-authorities.md
+                  - name: Create
+                    href: api/security-labelsroot-post-authorities.md
+                  - name: Get
+                    href: api/security-authoritytemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-authorities.md
+                - name: Citation template
+                  items:
+                  - name: Citation template
+                    href: resources/security-citationtemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-citations.md
+                  - name: Create
+                    href: api/security-labelsroot-post-citations.md
+                  - name: Get
+                    href: api/security-citationtemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-citations.md
+                - name: Department template
+                  items:
+                  - name: Department template
+                    href: resources/security-departmenttemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-departments.md
+                  - name: Create
+                    href: api/security-labelsroot-post-departments.md
+                  - name: Get
+                    href: api/security-departmenttemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-departments.md              
+                - name: File plan reference template
+                  items:
+                  - name: File plan reference template
+                    href: resources/security-fileplanreferencetemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-fileplanreferences.md
+                  - name: Create
+                    href: api/security-labelsroot-post-fileplanreferences.md
+                  - name: Get
+                    href: api/security-fileplanreferencetemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-fileplanreferences.md
+                - name: Subcategory template
+                  items:
+                  - name: Subcategory template
+                    href: resources/security-subcategorytemplate.md
+                  - name: List
+                    href: api/security-categorytemplate-list-subcategories.md
+                  - name: Create
+                    href: api/security-categorytemplate-post-subcategories.md
+                  - name: Get
+                    href: api/security-subcategorytemplate-get.md
+                  - name: Delete
+                    href: api/security-categorytemplate-delete-subcategories.md
+            - name: Retention event
+              href: resources/security-retentionevent.md
+              items:
+              - name: List
+                href: api/security-retentionevent-list.md
+              - name: Create
+                href: api/security-retentionevent-post.md
+              - name: Get
+                href: api/security-retentionevent-get.md
+              - name: Delete
+                href: api/security-retentionevent-delete.md
+            - name: Retention event type
+              href: resources/security-retentioneventtype.md
+              items:
+              - name: List
+                href: api/security-retentioneventtype-list.md
+              - name: Create
+                href: api/security-retentioneventtype-post.md
+              - name: Get
+                href: api/security-retentioneventtype-get.md
+              - name: Update
+                href: api/security-retentioneventtype-update.md
+              - name: Delete
+                href: api/security-retentioneventtype-delete.md
           - name: Secure score
             href: resources/securescore.md
             items:
@@ -8310,6 +8645,8 @@ items:
                 href: api/site-search.md
               - name: Unfollow site
                 href: api/site-unfollow.md
+              - name: Get delta
+                href: api/site-delta.md
           - name: List
             items:
               - name: List
@@ -8375,18 +8712,20 @@ items:
           - name: List item
             href: resources/listitem.md
             items:
-              - name: Get item
-                href: api/listitem-get.md
               - name: Create item
                 href: api/listitem-create.md
-              - name: Update item
+              - name: Get
+                href: api/listitem-get.md
+              - name: Update
                 href: api/listitem-update.md
-              - name: Delete item
+              - name: Delete
                 href: api/listitem-delete.md
-              - name: List versions
-                href: api/listitem-list-versions.md
+              - name: Get delta
+                href: api/listitem-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
+              - name: List versions
+                href: api/listitem-list-versions.md
           - name: Document set version
             items:
               - name: Document set version
@@ -8401,6 +8740,88 @@ items:
                 href: api/documentsetversion-delete.md
               - name: Restore
                 href: api/documentsetversion-restore.md
+          - name: Pages
+            items:
+              - name: Base site page
+                href: resources/basesitepage.md
+                items:
+                  - name: List
+                    href: api/basesitepage-list.md
+                  - name: Get
+                    href: api/basesitepage-get.md
+                  - name: Delete
+                    href: api/basesitepage-delete.md
+              - name: Site page
+                href: resources/sitepage.md
+                items:
+                  - name: List
+                    href: api/sitepage-list.md
+                  - name: Create
+                    href: api/sitepage-create.md
+                  - name: Get
+                    href: api/sitepage-get.md
+                  - name: Update
+                    href: api/sitepage-update.md
+                  - name: Delete
+                    href: api/basesitepage-delete.md
+                  - name: Publish
+                    href: api/sitepage-publish.md
+                  - name: Horizontal section
+                    items:
+                      - name: Horizontal section
+                        href: resources/horizontalsection.md
+                      - name: List
+                        href: api/horizontalsection-list.md
+                      - name: Create
+                        href: api/sitepage-post-horizontalsection.md
+                      - name: Get
+                        href: api/horizontalsection-get.md
+                      - name: Update
+                        href: api/horizontalsection-update.md
+                      - name: Delete
+                        href: api/horizontalsection-delete.md
+                      - name: Column
+                        items:
+                          - name: Horizontal section column
+                            href: resources/horizontalsectioncolumn.md
+                          - name: List
+                            href: api/horizontalsectioncolumn-list.md
+                          - name: Get
+                            href: api/horizontalsectioncolumn-get.md
+                  - name: Vertical section
+                    items:
+                      - name: Vertical section
+                        href: resources/verticalsection.md
+                      - name: Create
+                        href: api/sitepage-post-verticalsection.md
+                      - name: Get
+                        href: api/verticalsection-get.md
+                      - name: Update
+                        href: api/verticalsection-update.md
+                      - name: Delete
+                        href: api/verticalsection-delete.md
+              - name: Web part
+                items:
+                  - name: Web part
+                    href: resources/webpart.md
+                  - name: Text web part
+                    href: resources/textwebpart.md
+                  - name: Standard web part
+                    href: resources/standardwebpart.md
+                  - name: List
+                    href: api/webpart-list.md
+                  - name: Create
+                    href: api/sitepage-create-webpart.md
+                  - name: Get
+                    href: api/webpart-get.md
+                  - name: Update
+                    href: api/webpart-update.md
+                  - name: Delete
+                    href: api/webpart-delete.md
+                  - name: Get position
+                    href: api/webpart-getposition.md
+                  - name: Get by position
+                    href: api/sitepage-getwebpartsbyposition.md
           - name: Rich long-running operation
             items:
               - name: Rich long-running operation
@@ -9022,6 +9443,8 @@ items:
                     href: api/chat-get.md
                   - name: Update chat
                     href: api/chat-patch.md
+                  - name: Delete
+                    href: api/chat-delete.md
                   - name: List members
                     href: api/chat-list-members.md
                   - name: Add member
@@ -9110,6 +9533,13 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+              - name: Deleted chat
+                href: resources/deletedchat.md
+                items:
+                  - name: Get
+                    href: api/deletedchat-get.md
+                  - name: Undo delete
+                    href: api/deletedchat-undodelete.md
               - name: Team
                 href: resources/team.md
                 items:
