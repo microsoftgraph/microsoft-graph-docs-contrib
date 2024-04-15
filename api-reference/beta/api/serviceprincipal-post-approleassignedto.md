@@ -5,7 +5,6 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "psignoret"
-ms.topic: reference
 ---
 
 # Grant an appRoleAssignment for a service principal

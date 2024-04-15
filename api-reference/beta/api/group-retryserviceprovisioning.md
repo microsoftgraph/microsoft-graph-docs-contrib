@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "PaulEkirapa"
 ms.subservice: "entra-groups"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # group: retryServiceProvisioning

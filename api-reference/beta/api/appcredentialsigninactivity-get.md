@@ -5,7 +5,6 @@ description: "Get an appCredentialSignInActivity object that contains recent act
 ms.localizationpriority: medium
 author: "madansr7"
 ms.subservice: "entra-sign-in"
-ms.topic: reference
 ---
 
 # Get appCredentialSignInActivity

@@ -6,7 +6,6 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Update settings

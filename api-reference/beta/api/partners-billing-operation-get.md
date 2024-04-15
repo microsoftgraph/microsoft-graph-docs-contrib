@@ -5,7 +5,6 @@ author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get operation

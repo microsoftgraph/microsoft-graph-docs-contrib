@@ -1,17 +1,19 @@
 ---
-title: "Delete branchSite"
+title: "Delete branchSite (deprecated)"
 description: "Delete a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
-ms.topic: reference
 ---
 
-# Delete branchSite
+# Delete branchSite (deprecated)
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> Deprecated and to be retired soon. Use the [remoteNetwork resource type](../resources/networkaccess-remotenetwork.md) and its associated methods instead.
 
 Delete a specific branch.
 
