@@ -627,7 +627,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Addition",
-          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/insightssettings-update.md?view=graph-rest-1.0) operation to the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-1.0) resource",
+          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/insightssettings-update?view=graph-rest-1.0) operation to the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-1.0) resource",
           "Target": "insightsSettings"
         },
       ],
