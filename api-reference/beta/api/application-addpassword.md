@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a strong password to an [application](../resources/application.md).
+Adds a strong password to an [application](../resources/application.md). You can also [add passwords while creating the application](../api/application-post-applications.md#example-2-create-a-new-application-and-add-a-password-secret).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

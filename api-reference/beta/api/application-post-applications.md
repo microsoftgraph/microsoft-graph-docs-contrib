@@ -206,6 +206,7 @@ The following example shows the response. The **secretText** property in the res
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
     "id": "83ab4737-da9d-4084-86f2-f8fbec220647",
