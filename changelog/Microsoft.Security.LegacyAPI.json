@@ -16,7 +16,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2024-04-15T20:34:41.7424684Z",
       "WorkloadArea": "Security",
-      "SubArea": "Legacy API"
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -42,7 +42,7 @@
       "Version": "beta",
       "CreatedDateTime": "2024-04-15T20:34:41.7424684Z",
       "WorkloadArea": "Security",
-      "SubArea": "Legacy API"
+      "SubArea": ""
     }    
   ]
 }
