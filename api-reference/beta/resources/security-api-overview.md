@@ -167,7 +167,8 @@ The threat intelligence APIs (preview) allow you to operationalize intelligence 
 
 ## Threat intelligence indicators (preview)
 
-**Note:** The [tiIndicator](tiindicator.md) entity is deprecated, will be removed by April 2026.
+> [!NOTE]
+> The [tiIndicator](tiindicator.md) entity is deprecated and will be removed by April 2026.
 
 Threat indicators also referred to as indicators of compromise (IoCs), represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers can generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. These indicators are then used in various security tools to defend against related threats.
 
