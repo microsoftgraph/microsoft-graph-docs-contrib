@@ -47,6 +47,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
 |orderHint|String|The hint used to order items of this type in a list view. For more information, see [Using order hints in Planner](planner-order-hint-format.md)n.|
 |percentComplete|Int32|The percentage of task completion. When set to `100`, the task is completed. |
+|priority|Int32|The priority of the task. Valid values are between `0` and `10`, inclusive. Larger values indicate lower priority. For example, `0` has the highest priority and `10` has the lowest priority. Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low". Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
 |previewType|String|The type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Defines active or inactive recurrence for the task. `null` when the recurrence has never been defined for the task.|
