@@ -20,35 +20,35 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerTask](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read properties and relationships of **plannerTask** object.|
-|[Update](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update **plannerTask** object. |
-|[Delete](../api/plannertask-delete.md) | None |Delete **plannerTask** object. |
+|[Get plannerTask](../api/plannertask-get.md) | [plannerTask](plannertask.md) |Read the properties and relationships of **plannerTask** object.|
+|[Update](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update a **plannerTask** object. |
+|[Delete](../api/plannertask-delete.md) | None |Delete a **plannerTask** object. |
 |[Get delta](../api/plannertask-delta.md)|[plannerTask](../resources/plannertask.md) collection| Get newly created, updated, or deleted **plannerTask** objects in either a **plannerPlan** or assigned to the signed-in user without having to perform a full read of the entire resource collection. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|Number of checklist items with value set to `false`, representing incomplete items.|
+|activeChecklistItemCount|Int32|The number of checklist items with value set to `false`, representing incomplete items.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task is applied. See [plannerAppliedCategories resource type](plannerappliedcategories.md) for possible values.|
-|assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|assigneePriority|String|A hint that is used to order items of this type in a list view. For more information, see [Using order hints in Planner](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|The set of assignees the task is assigned to.|
 |bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the same plan as the task. The value of the bucketId property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service. |
-|checklistItemCount|Int32|Number of checklist items that are present on the task.|
-|completedBy|[identitySet](identityset.md)|Identity of the user that completed the task.|
-|completedDateTime|DateTimeOffset|Read-only. Date and time at which the `'percentComplete'` of the task is set to `'100'`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|conversationThreadId|String|Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.|
-|createdBy|[identitySet](identityset.md)|Identity of the user that created the task.|
-|createdDateTime|DateTimeOffset|Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Contains information about the origin of the task.|
-|dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|hasDescription|Boolean|Read-only. Value is `true` if the details object of the task has a nonempty description and `false` otherwise.|
+|checklistItemCount|Int32|The number of checklist items that are present on the task.|
+|completedBy|[identitySet](identityset.md)|The identity of the user that completed the task.|
+|completedDateTime|DateTimeOffset|Read-only. The date and time at which the `'percentComplete'` of the task is set to `'100'`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|conversationThreadId|String|The thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.|
+|createdBy|[identitySet](identityset.md)|The identity of the user who created the task.|
+|createdDateTime|DateTimeOffset|Read-only. The date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Information about the origin of the task.|
+|dueDateTime|DateTimeOffset|The date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|hasDescription|Boolean|Read-only. This value is `true` if the details object of the task has a nonempty description. Otherwise,`false`.|
 |id|String|Read-only. The unique identifier of the task. The value of this property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |isOnMyDay|Boolean|A Boolean value that indicates whether to show this task in the MyDay view. `true` to show the task. Otherwise, `false`.|
 |isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
-|percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
+|orderHint|String|The hint used to order items of this type in a list view. For more information, see [Using order hints in Planner](planner-order-hint-format.md)n.|
+|percentComplete|Int32|The percentage of task completion. When set to `100`, the task is completed. |
 |planId|String|Plan ID to which the task belongs.|
-|previewType|String|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|previewType|String|The type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Defines active or inactive recurrence for the task. `null` when the recurrence has never been defined for the task.|
 |referenceCount|Int32|Number of external references that exist on the task.|
 |specifiedCompletionRequirements|[plannerTaskCompletionRequirements](../resources/plannertask.md#plannertaskcompletionrequirements-values)|Indicates all the requirements specified on the **plannerTask**. Possible values are: `none`, `checklistCompletion`, `unknownFutureValue`, `formCompletion`, `approvalCompletion`. Read-only. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `formCompletion`, `approvalCompletion`. The [plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md) in [plannerTaskDetails](plannertaskdetails.md) has details of the requirements specified, if any. |

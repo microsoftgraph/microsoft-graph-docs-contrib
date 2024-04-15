@@ -1,6 +1,6 @@
 ---
 title: "plannerBasicApprovalAttachment resource type"
-description: "The **plannerBasicApprovalAttachment** resource represents the approval attachment, which is added to a plannerTask."
+description: "Represents the approval attachment, which is added to a plannerTask."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerBasicApprovalAttachment** resource represents the approval attachment, of type basic, which is created by the approval extensibility service and is added to a [plannerTask](plannertask.md).
+Resource represents the approval attachment, of type basic, which is created by the approval extensibility service and is added to a [plannerTask](plannertask.md).
 
 Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).
 
@@ -25,13 +25,13 @@ Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalat
 
 ### plannerApprovalStatus values 
 
-| Member             | Description                                      |
-|:-------------------|:-------------------------------------------------|
-| requested          | The default status of the approval               |
-| approved           | When the approver approves the approval          |
-| rejected           | When the approver rejects the approval           |
-| cancelled          | When the requestor cancels the approval          |
-| unknownFutureValue | The unkonwnFutureValue                           |
+|Member|Description|
+|:-----|:----------|
+|requested|Default. Approval is requested.|
+|approved|The plannerTask is approved.|
+|rejected|The plannerTask is rejected.|
+|cancelled|The requestor canceled the approval.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.||
 
 ## Relationships
 None.

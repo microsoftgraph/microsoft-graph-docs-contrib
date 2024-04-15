@@ -1,6 +1,6 @@
 ---
 title: "plannerApprovalRequirement resource type"
-description: "Represents whether there is an approval completion requirement must be created for a plannerTask."
+description: "Represents whether a plannerTask must have an approval completion requirement created for it."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents whether there is an approval completion requirement must be created for a [plannerTask](plannertask.md).
+Represents whether a [plannerTask](plannertask.md) must have an approval completion requirement created for it.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isApprovalRequired|Boolean|Specifies if [approval](plannerbaseapprovalattachment.md) is required, to complete the [plannerTask](plannertask.md). When this property is set to true, the task can only be marked complete if an approval is created for the task and approved.|
+|isApprovalRequired|Boolean|Specifies whether [approval](plannerbaseapprovalattachment.md) is required to complete the [plannerTask](plannertask.md). When this property is set to true, the task can only be marked complete if an approval is created for the task and approved.|
 
 ## Relationships
 None.
