@@ -113,7 +113,7 @@ The following properties of the **device** entity support `$count` of a collecti
 
 ## Group properties
 
-| Property                                          | eq               | startsWith       | ge/le            | eq Null             |
+| Property                                                   | eq               | startsWith       | ge/le            | eq Null             |
 |------------------------------------------------------------|------------------|------------------|------------------|---------------------|
 | appRoleAssignments/any(a:a/id)                             | ![Default][RDS]  |                  |                  |                     |
 | assignedLicenses/any(a:a/skuId)                            | ![Default][RDS]  |                  |                  |                     |
@@ -135,7 +135,7 @@ The following properties of the **device** entity support `$count` of a collecti
 | onPremisesProvisioningErrors/any(o:o/category)             | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
 | onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
 | onPremisesSamAccountName                                   | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![NotSupported][NS] |
-| onPremisesSecurityIdentifier                               | ![Default][RDS]  |                  |                  |                     |
+| onPremisesSecurityIdentifier                               | ![Default][RDS]  |                  |                  | ![Advanced][AQP]    |
 | onPremisesSyncEnabled                                      | ![Default][RDS]  |                  |                  | ![Advanced][AQP]    |
 | preferredLanguage                                          | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
 | proxyAddresses/any(p:p)                                    | ![Default][RDS]  | ![Default][RDS]  |                  |                     |
@@ -147,7 +147,6 @@ The following properties of the **device** entity support `$count` of a collecti
 | settings/any(s:s/id)                                       | ![Default][RDS]  |                  |                  |                     |
 | uniqueName                                                 | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |
 
-
 The following properties of the **group** entity support `$count` of a collection in a filter expression.
 
 | Property                            | eq Count 0       | eq Count 1          |
@@ -158,7 +157,7 @@ The following properties of the **group** entity support `$count` of a collectio
 
 ## Organizational contact properties
 
-| Property                                          | eq               | startsWith       | ge/le           | eq Null             |
+| Property                                                   | eq               | startsWith       | ge/le           | eq Null             |
 |------------------------------------------------------------|------------------|------------------|-----------------|---------------------|
 | companyName                                                | ![Advanced][AQP] | ![Advanced][AQP] |                 | ![Advanced][AQP]    |
 | department                                                 | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
@@ -184,7 +183,7 @@ The following properties of the **orgContact** entity support `$count` of a coll
 
 ## Service principal properties
 
-| Property                                                          | eq                  | startsWith          | ge/le           | eq Null             |
+| Property                                                                   | eq                  | startsWith          | ge/le           | eq Null             |
 |----------------------------------------------------------------------------|---------------------|---------------------|-----------------|---------------------|
 | accountEnabled                                                             | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
 | alternativeNames/any(p:p)                                                  | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
@@ -226,7 +225,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 
 ## User properties
 
-| Property                                                   | eq                  | startsWith          | ge/le            | eq Null             |
+| Property                                                            | eq                  | startsWith          | ge/le            | eq Null             |
 |---------------------------------------------------------------------|---------------------|---------------------|------------------|---------------------|
 | accountEnabled                                                      | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | ageGroup                                                            | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
@@ -248,13 +247,10 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | department                                                          | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
 | displayName                                                         | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
 | employeeHireDate                                                    | ![Advanced][AQP]    |                     | ![Advanced][AQP] | ![NotSupported][NS] |
-| employeeId                                                          | ![Default][RDS]     |                     |                  |                     |
+| employeeId                                                          | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
 | employeeOrgData/costCenter                                          | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
 | employeeOrgData/division                                            | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
 | employeeType                                                        | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
-| extension_4750531c75d84e8698ecd21bbd5da9f5_fruitPreference          |                     |                     |                  | ![Advanced][AQP]    |
-| extension_4750531c75d84e8698ecd21bbd5da9f5_fruitPreference/any(p:p) | ![Default][RDS]     | ![Default][RDS]     |                  |                     |
-| extension_4750531c75d84e8698ecd21bbd5da9f5_test                     | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
 | externalUserState                                                   | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | faxNumber                                                           | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
 | givenName                                                           | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
@@ -278,7 +274,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | onPremisesProvisioningErrors/any(o:o/category)                      | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | onPremisesProvisioningErrors/any(o:o/propertyCausingError)          | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | onPremisesSamAccountName                                            | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
-| onPremisesSecurityIdentifier                                        | ![Default][RDS]     |                     |                  |                     |
+| onPremisesSecurityIdentifier                                        | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
 | onPremisesSipInfo/isSipEnabled                                      | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
 | onPremisesSyncEnabled                                               | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
 | otherMails/any(p:p)                                                 | ![Default][RDS]     | ![Default][RDS]     |                  |                     |
@@ -311,11 +307,11 @@ The following properties of the **user** entity support `$count` of a collection
 
 The following table shows support for `$filter` by other extension properties on the **user** object.
 
-| Extension type                                                                           | eq                  | startsWith          | eq null             |
-|------------------------------------------------------------------------------------------|---------------------|---------------------|---------------------|
-| [Schema extensions](/graph/extensibility-overview#schema-extensions)                     | ![Advanced][AQP]    | ![Advanced][AQP]    | ![Advanced][AQP]    |
-| [Open extensions](/graph/extensibility-overview#open-extensions)                         | ![NotSupported][NS] | ![NotSupported][NS] | ![NotSupported][NS] |
-| [Directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions)      | ![Default][RDS]     | ![Advanced][AQP]    | ![Advanced][AQP]    |
+| Extension type                                                                      | eq                  | startsWith          | eq null             |
+|-------------------------------------------------------------------------------------|---------------------|---------------------|---------------------|
+| [Schema extensions](/graph/extensibility-overview#schema-extensions)                | ![Advanced][AQP]    | ![Advanced][AQP]    | ![Advanced][AQP]    |
+| [Open extensions](/graph/extensibility-overview#open-extensions)                    | ![NotSupported][NS] | ![NotSupported][NS] | ![NotSupported][NS] |
+| [Directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions) | ![Default][RDS]     | ![Advanced][AQP]    | ![Advanced][AQP]    |
 
 [RDS]: ../images/yesandnosymbols/greencheck.svg
 [AQP]: ../images/yesandnosymbols/whitecheck-in-greencircle.svg
