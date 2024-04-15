@@ -70,7 +70,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "export_report"
+  "name": "export_result"
 }
 -->
 ``` http
