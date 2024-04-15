@@ -99,7 +99,6 @@ DELETE https://graph.microsoft.com/beta/security/attackSimulation/trainingCampai
 
 ---
 
-
 ### Response
 
 The following example shows the response.
