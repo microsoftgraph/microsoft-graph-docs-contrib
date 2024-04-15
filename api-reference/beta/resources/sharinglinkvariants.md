@@ -1,6 +1,6 @@
 ---
 title: "sharingLinkVariants resource type"
-description: "Describes the status of potential sharing link variants which will generate a separate sharing link from the link that would otherwise be generated without the variant, yet with identical role and scope."
+description: "Represents the status of potential sharing link variants which generate a separate sharing link from the link that would otherwise be generated without the variant, yet with identical role and scope."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the status of potential sharing link variants which will generate a separate sharing link from the link that would otherwise be generated without the variant, yet with identical role and scope.
+Represents the status of potential sharing link variants which generate a separate sharing link from the link that would otherwise be generated without the variant, yet with identical role and scope.
 
 ## Properties
 
