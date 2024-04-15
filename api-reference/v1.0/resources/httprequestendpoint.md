@@ -3,7 +3,7 @@ title: "httpRequestEndpoint resource type"
 description: "The HTTP endpoint that a custom extension calls."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

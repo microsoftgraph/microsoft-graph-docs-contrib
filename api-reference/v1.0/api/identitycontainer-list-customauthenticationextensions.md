@@ -3,7 +3,7 @@ title: "List customAuthenticationExtensions"
 description: "Get a list of the customAuthenticationExtension objects and their properties."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

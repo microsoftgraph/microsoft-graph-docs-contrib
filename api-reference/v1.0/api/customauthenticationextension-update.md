@@ -3,7 +3,7 @@ title: "Update customAuthenticationExtension"
 description: "Update the properties of a customAuthenticationExtension object."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

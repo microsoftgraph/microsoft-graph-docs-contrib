@@ -3,7 +3,7 @@ title: "authenticationConditionApplication resource type"
 description: "An object representing the application that will be triggered for an authenticationEventListener."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

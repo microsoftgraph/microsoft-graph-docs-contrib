@@ -3,7 +3,7 @@ title: "onTokenIssuanceStartCustomExtension resource type"
 description: "Custom extension to invoke when handling the event when a token is about to be issued to your application."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "authenticationEventListener resource type"
 description: "**Representation of listener for on events in the authentication process**"
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
