@@ -84,7 +84,8 @@ Alerts from the following security providers are available via these rich alerts
 
 ### Legacy alerts
 
-**Note:** Legacy alerts are deprecated, will be removed by April 2026. Migrate to the new alerts and incidents resources.
+> [!NOTE]
+> The legacy alerts API is deprecated and will be removed by April 2026. We recommend that you migrate to the new [alerts and incidents](/graph/api/resources/security-alert) API.
 
 These [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline the management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response. 
 
