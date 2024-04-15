@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|ChannelSettings.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|ChannelSettings.ReadWrite.All|Not available.|
+
