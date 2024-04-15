@@ -28,9 +28,9 @@ Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalat
 | Member             | Description                                      |
 |:-------------------|:-------------------------------------------------|
 | requested          | The default status of the approval               |
-| approved           | When the approval is approved by the approver    |
-| rejected           | When the approval is rejected by the approver    |
-| cancelled          | When the approval is cancelled by the requestor  |
+| approved           | When the approver approves the approval          |
+| rejected           | When the approver rejects the approval           |
+| cancelled          | When the requestor cancels the approval          |
 | unknownFutureValue | The unkonwnFutureValue                           |
 
 ## Relationships
