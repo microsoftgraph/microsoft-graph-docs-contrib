@@ -57,25 +57,19 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.trustFrameworkKey_v2",
-  "k": "String",
+  "k": "AQHF",
   "x5c": [
-    "String"
+    ""MIICDTCCAXagAwIBAgIQAkiG9w0zWT5PduVXKynAjHTATBgNVHSUEDDAKBggrBgEFBQcDATANBgkqhkiG9w0BAQUFAAOBgQAhrtp6oz5QYwRMFGfHqvb0HzDIyYQ5ryxYFpQaUW4+0vzMP4NRdN7WM89BeEh73YdAlOTif9T6i/KXK5G3qyUKnvO884rIYHsjvA3sS+zESU1lcyvFpD4a602xeobYqm6yHHJWRJr2yzIICkVW6QX8a3W3KteMUZY0vm0o5IU/uw==""
   ],
-  "x5t": "String",
-  "kty": "String",
-  "use": "String",
-  "status": "String",
-  "exp": "Integer",
-  "nbf": "Integer",
-  "kid": "String (identifier)",
-  "e": "String",
-  "n": "String",
-  "d": "String",
-  "p": "String",
-  "q": "String",
-  "dp": "String",
-  "dq": "String",
-  "qi": "String"
+  "x5t": "kr03PNLOFr9InfdsfbIyoC4KCKS8",
+  "kty": "oct",
+  "use": "sig",
+  "status": "enabled",
+  "exp": "1712952360",
+  "nbf": "1712952300",
+  "kid": "aTREvwojOB9ph3fr2r6eTf_5eD5fmQsfsapVMwYI3o",
+  "e": "AQHF",
+  "n": "oNuJk44jzFgZ9R26gfdgfgtR_9Btg8vRKh3Y0",
 }
 ```
 
