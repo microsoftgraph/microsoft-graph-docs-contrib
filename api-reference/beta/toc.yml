@@ -14012,7 +14012,7 @@ items:
                     - name: Get
                       href: api/trustframeworkkey_v2-get.md
                     - name: Update
-                      href: api/trustframeworkkey_v2-update.md   
+                      href: api/trustframeworkkey_v2-update.md                    
               - name: Trust Framework policy
                 href: resources/trustframeworkpolicy.md
                 items:
