@@ -96,7 +96,6 @@ Content-Type: application/json
                     "displayName": "onTokenIssuanceStartCustomExtension",
                     "description": "Fetch additional claims from custom user store",
                     "clientConfiguration": null,
-                    "behaviorOnError": null,
                     "authenticationConfiguration": {
                         "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
                         "resourceId": "api://authenticationeventsAPI.contoso.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
