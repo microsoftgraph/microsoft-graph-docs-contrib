@@ -69,7 +69,7 @@ PATCH https://graph.microsoft.com/beta/trustFramework/keySets/{trustFrameworkKey
 Content-Type: application/json
 
 {
-  "status": "String"
+  "status": "enabled"
 }
 ```
 
@@ -77,7 +77,9 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+- > **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

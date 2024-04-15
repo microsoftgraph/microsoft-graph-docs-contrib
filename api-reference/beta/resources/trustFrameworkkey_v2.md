@@ -22,6 +22,7 @@ Represents a JWK (JSON Web Key). TrustFrameworkKey_v2 is a JSON data structure t
 |[Update](../api/trustframeworkkey_v2-update.md)|[trustFrameworkKey_v2](../resources/trustframeworkkey_v2.md)|Update the properties of a [trustFrameworkKey_v2](../resources/trustframeworkkey_v2.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |d|String|RSA Key - private exponent. The field is not readable.|

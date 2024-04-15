@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|keys_v2|[trustFrameworkKey_v2](../resources/trustframeworkkey_v2.md) collection|A collection of the keys.|
+|keys_v2|[trustFrameworkKey_v2](../resources/trustframeworkkey_v2.md) collection|A collection of the keys. Expanded by default.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
