@@ -11,7 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**Note:** Legacy alerts are deprecated, this resource type will be removed by April 2026. Migrate to the new alerts and incidents resources.
+> [!NOTE]
+> The legacy alerts API is deprecated and will be removed by April 2026. We recommend that you migrate to the new [alerts and incidents](/graph/api/resources/security-alert) API.
 
 This resource corresponds to the first generation of alerts in the Microsoft Graph security API, representing potential security issues within a customer's tenant that Microsoft or a partner security solution has identified.
 
