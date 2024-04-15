@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
-          "Description": "Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/applications-post-applications?view=graph-rest-1.0).",
+          "Description": "Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0).",
           "Target": "application"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
-          "Description": "Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/applications-post-applications?view=graph-rest-beta).",
+          "Description": "Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta).",
           "Target": "application"
         }
       ],
