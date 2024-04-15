@@ -437,7 +437,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "trustFrameworkKey_v2",
           "ChangeType": "Addition",
-          "Description": "Added the [trustFrameworkKey_v2](https://learn.microsoft.com/en-us/graph/api/resources/trustFrameworkKey_v2?view=graph-rest-beta) resource.",
+          "Description": "Added the [trustFrameworkKey_v2](https://learn.microsoft.com/en-us/graph/api/resources/trustFrameworkKey_v2?view=graph-rest-beta) resource and its associated methods.",
           "Target": "trustFrameworkKey_v2"
         }
       ],

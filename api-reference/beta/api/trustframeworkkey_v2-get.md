@@ -36,10 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /trustFramework/keySets/{trustFrameworkKeySetId}/keys_v2/{trustFrameworkKey_v2Id}
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -86,26 +82,20 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.trustFrameworkKey_v2",
-    "k": "String",
+    "k": "AQHF",
     "x5c": [
-      "String"
+      ""MIICDTCCAXagAwIBAgIQAkiG9w0zWT5PduVXKynAjHTATBgNVHSUEDDAKBggrBgEFBQcDATANBgkqhkiG9w0BAQUFAAOBgQAhrtp6oz5QYwRMFGfHqvb0HzDIyYQ5ryxYFpQaUW4+0vzMP4NRdN7WM89BeEh73YdAlOTif9T6i/KXK5G3qyUKnvO884rIYHsjvA3sS+zESU1lcyvFpD4a602xeobYqm6yHHJWRJr2yzIICkVW6QX8a3W3KteMUZY0vm0o5IU/uw==""
     ],
-    "x5t": "String",
-    "kty": "String",
-    "use": "String",
-    "status": "String",
-    "exp": "Integer",
-    "nbf": "Integer",
-    "kid": "7d22aa4e-81ea-99e9-c640-0a903612103d",
-    "e": "String",
-    "n": "String",
-    "d": "String",
-    "p": "String",
-    "q": "String",
-    "dp": "String",
-    "dq": "String",
-    "qi": "String"
+    "x5t": "kr03PNLOFr9InfdsfbIyoC4KCKS8",
+    "kty": "oct",
+    "use": "sig",
+    "status": "enabled",
+    "exp": "1712952360",
+    "nbf": "1712952300",
+    "kid": "aTREvwojOB9ph3fr2r6eTf_5eD5fmQsfsapVMwYI3o",
+    "e": "AQHF",
+    "n": "oNuJk44jzFgZ9R26gfdgfgtR_9Btg8vRKh3Y0",
   }
 }
-```
 
+```

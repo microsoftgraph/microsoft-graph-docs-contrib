@@ -14006,6 +14006,13 @@ items:
                     href: api/trustframeworkkeyset-uploadpkcs12.md
                   - name: Upload secret
                     href: api/trustframeworkkeyset-uploadsecret.md
+                  - name: Keys
+                    href: resources/trustFrameworkKey_v2.md
+                    items:
+                    - name: Get
+                      href: api/trustframeworkkey_v2-get.md
+                    - name: Update
+                      href: api/trustframeworkkey_v2-update.md   
               - name: Trust Framework policy
                 href: resources/trustframeworkpolicy.md
                 items:
