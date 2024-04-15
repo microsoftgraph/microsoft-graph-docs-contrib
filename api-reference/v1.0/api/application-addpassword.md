@@ -43,7 +43,7 @@ POST /applications(appId='{appId}')/addPassword
 
 In the request body, provide an optional `passwordCredential` object with the following properties.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | displayName | String | Friendly name for the password. Optional. |
 | endDateTime | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional. The default value is "startDateTime + 2 years". |
@@ -55,9 +55,9 @@ If successful, this method returns a `200 OK` response code and a new [passwordC
 
 ## Examples
 
-### Example 1: The following example shows how to call add a password secret to an application. 
+The following example shows how to call this API.
 
-#### Request
+### Request
 
 The following example shows a request. The **id** that is specified in the request is the value of the **id** property of the application, not the value of the **appId** property. 
 
@@ -112,7 +112,7 @@ Content-type: application/json
 
 ---
 
-#### Response
+### Response
 
 The following example shows the response.
 
@@ -134,74 +134,6 @@ Content-type: application/json
     "secretText": "[6gyXA5S20@MN+WRXAJ]I-TO7g1:h2P8",
     "hint": "[6g",
     "displayName": "Password friendly name"
-}
-```
-
-
-### Example 2: How to add a password secret while creating a new application 
-
-#### Request
-
-The following example shows a request. The **id** that is specified in the request is the value of the **id** property of the application, not the value of the **appId** property. 
-
-```http
-POST https://graph.microsoft.com/v1.0/applications/{id}
-Content-type: application/json
-
-{
-  "displayName": "MyAppName"
-  "passwordCredential": [{
-    "displayName": "Password name"
-  }]
-}
-```
-
-#### Response
-
-The following example shows the response.
-
-> **Note**: The response object shown here might be shortened for readability.
-
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordCredential"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
-    "id": "83ab4737-da9d-4084-86f2-f8fbec220647",
-    "deletedDateTime": null,
-    "appId": "9519e58c-bd06-4120-a7fd-2220d4de8409",
-    "applicationTemplateId": null,
-    "disabledByMicrosoftStatus": null,
-    "createdDateTime": "2024-04-01T19:10:02.6626202Z",
-    "displayName": "MyAppName",
-    "description": null,
-    "keyCredentials": [],
-    "parentalControlSettings": {
-        "countriesBlockedForMinors": [],
-        "legalAgeGroupRule": "Allow"
-    },
-    "passwordCredentials": [
-        {
-            "customKeyIdentifier": null,
-            "displayName": "Password name",
-            "endDateTime": "2026-04-01T19:10:02.6576213Z",
-            "hint": "puE",
-            "keyId": "09a0c91a-1bc3-4eaf-a945-c88c041fad6c",
-            "secretText": "puE8Q~IWkcVp1ZjAsVAWQOtGTQzJ5m-BKkBkhauv",
-            "startDateTime": "2024-04-01T19:10:02.6576213Z"
-        }
-    ],
-    "publicClient": {
-        "redirectUris": []
-    }
 }
 ```
 

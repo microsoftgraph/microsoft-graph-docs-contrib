@@ -20,11 +20,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Applications
 
-Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
+- Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/applications-post-applications?). Previously, you could only add secrets to existing apps through the [Update application](https://learn.microsoft.com/en-us/graph/api/application-update) or the [addPassword](https://learn.microsoft.com/en-us/graph/api/application-addpassword) operations.
+- Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
 
-- [Upsert application](/graph/api/application-upsert)
-- [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert)
-- [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert)
+    - [Upsert application](/graph/api/application-upsert)
+    - [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert)
+    - [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert)
 
 ### Groups
 
