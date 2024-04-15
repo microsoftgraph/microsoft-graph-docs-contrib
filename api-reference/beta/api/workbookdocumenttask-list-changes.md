@@ -3,7 +3,7 @@ title: "List workbookDocumentTaskChanges"
 description: "Get a list of workbookDocumentTaskChange objects."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

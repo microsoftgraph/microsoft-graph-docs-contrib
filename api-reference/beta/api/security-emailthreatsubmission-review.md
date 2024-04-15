@@ -3,7 +3,7 @@ title: "emailThreatSubmission: review"
 description: "Review a threat submission."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

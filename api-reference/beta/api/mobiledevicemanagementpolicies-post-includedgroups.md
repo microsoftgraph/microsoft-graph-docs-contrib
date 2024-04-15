@@ -3,7 +3,7 @@ title: "Add includedGroups"
 description: "Add groups to be included in a mobile app management policy."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "booleanColumn resource type"
 ms.localizationpriority: medium
 description: "Indicates that the column in a columnDefinition holds a boolean value."
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # booleanColumn resource type

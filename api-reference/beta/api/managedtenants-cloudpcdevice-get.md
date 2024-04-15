@@ -3,7 +3,7 @@ title: "Get cloudPcDevice"
 description: "Read the properties and relationships of a cloudPcDevice object."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ---
 

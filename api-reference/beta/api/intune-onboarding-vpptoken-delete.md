@@ -3,7 +3,7 @@ title: "Delete vppToken"
 description: "Deletes a vppToken."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

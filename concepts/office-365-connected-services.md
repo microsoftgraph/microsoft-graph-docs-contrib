@@ -2,7 +2,7 @@
 title: "Configure Microsoft 365 services with the Microsoft Graph API in Visual Studio"
 description: "Learn how to configure Connected Services in Visual Studio to use Microsoft Graph in an ASP.NET MVC application that displays events from the currently signed in user's calendar."
 ms.localizationpriority: high
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 ---
 

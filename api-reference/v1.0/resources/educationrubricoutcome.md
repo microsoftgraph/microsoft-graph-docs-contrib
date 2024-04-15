@@ -3,7 +3,7 @@ title: "educationRubricOutcome resource type"
 description: "An educationOutcome that provides a graded rubric."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 

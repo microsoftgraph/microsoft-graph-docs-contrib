@@ -4,7 +4,7 @@ description: "Provides preconfigured synchronization settings for a particular a
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationTemplate resource type
@@ -42,7 +42,7 @@ You can provide multiple templates for an application, and designate a default t
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

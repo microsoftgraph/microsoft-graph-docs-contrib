@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "386945e6-5671-43ad-8c17-24dc5f67f4e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "isOnMyDay",
+          "ChangeType": "Addition",
+          "Description": "Added the `isOnMyDay` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "386945e6-5671-43ad-8c17-24dc5f67f4e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "isOnMyDayLastModifiedDate",
+          "ChangeType": "Addition",
+          "Description": "Added the `isOnMyDayLastModifiedDate` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        }
+      ],
+      "Id": "386945e6-5671-43ad-8c17-24dc5f67f4e2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-01T07:12:02.5980006Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9125b26a-eff1-4f7a-acd0-46c133b934fa",
           "ApiChange": "Enum type",
           "ChangedApiName": "plannerTaskCompletionRequirements",
@@ -741,166 +767,166 @@
       "SubArea": ""
     },
     {
-	  "ChangeList":[
+      "ChangeList": [
         {
-          "Id":"7f24040c-6b0c-11eb-83a5-b441f1c9dab3",
-		  "ApiChange":"Property",
-		  "ChangedApiName":"category7",
-		  "ChangeType":"Addition",
-		  "Description":"Added the **category7** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-		  "Target":"plannerCategoryDescriptions"
+          "Id": "7f24040c-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category7",
+          "ChangeType": "Addition",
+          "Description": "Added the **category7** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f2666c5-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category8",
-          "ChangeType":"Addition",
-          "Description":"Added the **category8** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f2666c5-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category8",
+          "ChangeType": "Addition",
+          "Description": "Added the **category8** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f28cbc3-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category9",
-          "ChangeType":"Addition",
-          "Description":"Added the **category9** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f28cbc3-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category9",
+          "ChangeType": "Addition",
+          "Description": "Added the **category9** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f2c3ba1-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category10",
-          "ChangeType":"Addition",
-          "Description":"Added the **category10** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f2c3ba1-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category10",
+          "ChangeType": "Addition",
+          "Description": "Added the **category10** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f2e93ed-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category11",
-          "ChangeType":"Addition",
-          "Description":"Added the **category11** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f2e93ed-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category11",
+          "ChangeType": "Addition",
+          "Description": "Added the **category11** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f30f7d2-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category12",
-          "ChangeType":"Addition",
-          "Description":"Added the **category12** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f30f7d2-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category12",
+          "ChangeType": "Addition",
+          "Description": "Added the **category12** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f335ac0-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category13",
-          "ChangeType":"Addition",
-          "Description":"Added the **category13** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f335ac0-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category13",
+          "ChangeType": "Addition",
+          "Description": "Added the **category13** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f35bdbc-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category14",
-          "ChangeType":"Addition",
-          "Description":"Added the **category14** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f35bdbc-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category14",
+          "ChangeType": "Addition",
+          "Description": "Added the **category14** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f382054-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category15",
-          "ChangeType":"Addition",
-          "Description":"Added the **category15** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f382054-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category15",
+          "ChangeType": "Addition",
+          "Description": "Added the **category15** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f3a80b0-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category16",
-          "ChangeType":"Addition",
-          "Description":"Added the **category16** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f3a80b0-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category16",
+          "ChangeType": "Addition",
+          "Description": "Added the **category16** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f3ce3db-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category17",
-          "ChangeType":"Addition",
-          "Description":"Added the **category17** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f3ce3db-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category17",
+          "ChangeType": "Addition",
+          "Description": "Added the **category17** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f3f4972-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category18",
-          "ChangeType":"Addition",
-          "Description":"Added the **category18** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f3f4972-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category18",
+          "ChangeType": "Addition",
+          "Description": "Added the **category18** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f41a8ba-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category19",
-          "ChangeType":"Addition",
-          "Description":"Added the **category19** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f41a8ba-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category19",
+          "ChangeType": "Addition",
+          "Description": "Added the **category19** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f440af3-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category20",
-          "ChangeType":"Addition",
-          "Description":"Added the **category20** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f440af3-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category20",
+          "ChangeType": "Addition",
+          "Description": "Added the **category20** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f466dd7-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category21",
-          "ChangeType":"Addition",
-          "Description":"Added the **category21** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f466dd7-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category21",
+          "ChangeType": "Addition",
+          "Description": "Added the **category21** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f48cfc5-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category22",
-          "ChangeType":"Addition",
-          "Description":"Added the **category22** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f48cfc5-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category22",
+          "ChangeType": "Addition",
+          "Description": "Added the **category22** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f4b33b7-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category23",
-          "ChangeType":"Addition",
-          "Description":"Added the **category23** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f4b33b7-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category23",
+          "ChangeType": "Addition",
+          "Description": "Added the **category23** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f4d9595-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category24",
-          "ChangeType":"Addition",
-          "Description":"Added the **category24** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f4d9595-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category24",
+          "ChangeType": "Addition",
+          "Description": "Added the **category24** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         },
         {
-          "Id":"7f4ff7be-6b0c-11eb-83a5-b441f1c9dab3",
-          "ApiChange":"Property",
-          "ChangedApiName":"category25",
-          "ChangeType":"Addition",
-          "Description":"Added the **category25** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
-          "Target":"plannerCategoryDescriptions"
+          "Id": "7f4ff7be-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "category25",
+          "ChangeType": "Addition",
+          "Description": "Added the **category25** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target": "plannerCategoryDescriptions"
         }
       ],
-      "Id":"7f21a1fd-6b0c-11eb-83a5-b441f1c9dab3",
-      "Cloud":"prd",
-      "Version":"beta",
-      "CreatedDateTime":"2021-02-10T19:24:58.162Z",
-      "WorkloadArea":"Tasks and plans",
-      "SubArea":""
+      "Id": "7f21a1fd-6b0c-11eb-83a5-b441f1c9dab3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-10T19:24:58.162Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -1857,6 +1883,72 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-15T13:40:50.502Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Member",
+          "ChangedApiName": "formCompletion",
+          "ChangeType": "Addition",
+          "Description": "Added the `formCompletion` member to the **plannerTaskCompletionRequirements** enumeration.",
+          "Target": "plannerTaskCompletionRequirements"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerFormReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerFormReference](https://learn.microsoft.com/en-us/graph/api/resources/plannerFormReference?view=graph-rest-beta) resource type.",
+          "Target": "plannerFormReference"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerFormsDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerFormsDictionary](https://learn.microsoft.com/en-us/graph/api/resources/plannerFormsDictionary?view=graph-rest-beta) resource type.",
+          "Target": "plannerFormsDictionary"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerFormsRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerFormsRequirement](https://learn.microsoft.com/en-us/graph/api/resources/plannerFormsRequirement?view=graph-rest-beta) resource type.",
+          "Target": "plannerFormsRequirement"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Property",
+          "ChangedApiName": "formsRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the **formsRequirement** property to the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCompletionRequirementDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskCompletionRequirementDetails"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Property",
+          "ChangedApiName": "forms",
+          "ChangeType": "Addition",
+          "Description": "Added the **forms** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskPropertyRule"
+        },
+        {
+          "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+          "ApiChange": "Property",
+          "ChangedApiName": "forms",
+          "ChangeType": "Addition",
+          "Description": "Added the **forms** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskDetails"
+        }
+      ],
+      "Id": "4a762a19-54ac-4f1d-b2bb-9ecf39df329b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-03T12:10:19.8563344Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },

@@ -3,7 +3,7 @@ title: "plannerTask resource type"
 description: "Represents a Planner task in Microsoft 365."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|Number of checklist items with value set to `false`, representing incomplete items.|
-|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task is applied. See [applied Categories](plannerappliedcategories.md) for possible values.|
+|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task is applied. See [plannerAppliedCategories resource type](plannerappliedcategories.md) for possible values.|
 |assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|The set of assignees the task is assigned to.|
 |bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the same plan as the task. The value of the bucketId property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service. |
@@ -43,9 +43,10 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |hasDescription|Boolean|Read-only. Value is `true` if the details object of the task has a nonempty description and `false` otherwise.|
 |id|String|Read-only. The unique identifier of the task. The value of this property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|isOnMyDay|Boolean|A Boolean value that indicates whether to show this task in the MyDay view. `true` to show the task. Otherwise, `false`.|
+|isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
-|priority|Int32|The priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority). Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low". Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
 |previewType|String|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Defines active or inactive recurrence for the task. `null` when the recurrence has never been defined for the task.|
@@ -75,7 +76,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -103,6 +104,8 @@ Here's a JSON representation of the resource.
   "dueDateTime": "String (timestamp)",
   "hasDescription": "Boolean",
   "id": "String (identifier)",
+  "isOnMyDay": "Boolean",
+  "isOnMyDayLastModifiedDate": "Date",
   "orderHint": "String",
   "percentComplete": "Int32",
   "planId": "String",

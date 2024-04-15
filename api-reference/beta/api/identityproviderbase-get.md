@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an identityProvider o
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Get identityProvider
@@ -26,11 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identityproviderbase_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityproviderbase-get-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* External Identity Provider Administrator
-* External ID user flow administrator
+The work or school account needs to belong to at least the *External Identity Provider Administrator* or *External Identity User Flow administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 

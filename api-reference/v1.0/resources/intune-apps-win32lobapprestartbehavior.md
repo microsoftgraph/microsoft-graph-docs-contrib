@@ -3,7 +3,7 @@ title: "win32LobAppRestartBehavior enum type"
 description: "Indicates the type of restart action."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Delete featureRolloutPolicy"
 description: "Delete a featureRolloutPolicy object."
 ms.localizationpriority: medium
 author: "madhavpatel6"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,7 @@ DELETE https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -9,6 +9,67 @@ ms.localizationpriority: medium
 
 Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources.
 
+## February 2024: New and generally available
+
+### Microsoft Graph Toolkit
+
+Microsoft Graph Toolkit v4 is now available. For details about changes in the latest release, see [Upgrade to the latest version of Microsoft Graph Toolkit](/graph/toolkit/upgrade).
+
+### Identity and access | Identity and sign-in
+
+- Introduced the following more granular delegated and application permissions for managing tenant branding through the [organizationalBranding](/graph/api/resources/organizationalbranding?view=graph-rest-beta&preserve-view=true) and [organizationalBrandingLocalization](/graph/api/resources/organizationalbrandinglocalization?view=graph-rest-beta&preserve-view=true) resource types:
+  - Use *OrganizationalBranding.Read.All* permission for read operations instead of the *Organization.Read.All* permission.
+  - Use *OrganizationalBranding.ReadWrite.All* permission for read and write operations instead of the *Organization.ReadWrite.All* permission.
+
+## February 2024: New in preview only
+
+
+### Calendars
+
+Use the **iCalUId** property on [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to get the unique identifier for an event across calendars.
+
+### Search
+
+Set up [acronym](/graph/api/resources/search-acronym), [bookmark](/graph/api/resources/search-bookmark), and [qna](/graph/api/resources/search-qna) resources as [administrative search answers for users in an organization](search-concept-answers.md).
+
+### Education
+
+- Teachers can [activate](/graph/api/educationassignment-activate?view=graph-rest-beta&preserve-view=true) an inactive [assignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) to signal that the assignment has further action items for teachers or students.
+- Teachers can [deactivate](/graph/api/educationassignment-deactivate?view=graph-rest-beta&preserve-view=true) and mark an assignment as inactive to signal that the assignment has no further action items for teachers and students.
+
+### Identity and access | Directory management
+
+- Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
+- Enabled tenants to [update](/graph/api/organization-update?view=graph-rest-beta&preserve-view=true) the following properties of the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) entity: **businessPhones**, **city**, **postalCode**, **preferredLanguage**, **state**, **street**.
+- You can now invite external users to Teams and manage the lifecycle of their invitation through the [pendingExternalUserProfile resource type](/graph/api/resources/pendingexternaluserprofile?view=graph-rest-beta&preserve-view=true) and its associated methods. After the user redeems their pending profile, you can manage their profile in your tenant through the [externalUserProfile resource type](/graph/api/resources/externaluserprofile?view=graph-rest-beta&preserve-view=true) and its associated methods.
+
+### Identity and access | Identity and sign-in
+- Added the ability to target the device code authentication flow using Microsoft Entra Conditional Access. Configure the [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true) > **conditions** property > **authenticationFlows** property of [conditionalAccessConditionSet complex type](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true) > **transferMethods** property of [conditionalAccessAuthenticationFlows complex type](/graph/api/resources/conditionalaccessauthenticationflows?view=graph-rest-beta&preserve-view=true).
+
+### Reports | Partner billing reports
+
+Use the [billedReconciliation: export](/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-beta&preserve-view=true) API to access billed invoice reconciliation data.
+
+### Teamwork and communications | Apps
+
+Use the **dashboardCards** navigation property on [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) to get dashboard cards specified in the manifest of a [teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Calls and online meetings
+
+Microsoft Teams custom meeting templates allow you to specify values for many of the meeting options available to meeting organizers. Use the **meetingTemplateId** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) to create an online meeting with a meeting template.
+
+### Teamwork and communications | Messaging
+
+- Enabled the `$filter`, `$select`, and `$top` query parameters for the [List members of channel](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true) method.
+- Enabled the `$top` query parameter for the [List members of team](/graph/api/team-list-members?view=graph-rest-beta&preserve-view=true) method.
+
+### Teamwork and communications | Shift management
+
+- Added the ability to [get shifts](/graph/api/team-getshifts?view=graph-rest-beta&preserve-view=true) and [get time offs](/graph/api/team-gettimesoff?view=graph-rest-beta&preserve-view=true) across all teams that a user is a direct member of.
+- Added the **isCrossLocationShiftRequestApprovalRequired** and **isCrossLocationShiftsEnabled** properties on [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true) to support two cross location scenarios.
+- Added the ability to [get](/graph/api/shiftsroledefinition-get) and [update](/graph/api/shiftsroledefinition-update) front-line managers' capabilities in a Shifts schedule.
+- Added the ability to [get](/graph/api/shiftsroledefinition-get) and [update](/graph/api/shiftsroledefinition-update) frontline managers' capabilities in a Shifts schedule.
+
 ## January 2024: New and generally available
 
 ### Device and app management | Cloud PC
@@ -84,6 +145,7 @@ The new partner billing API in Microsoft Graph offers Microsoft direct partners 
 ### Users
 
 Added the [deletePasswordSingleSignOnCredentials](/graph/api/user-deletepasswordsinglesignoncredentials?view=graph-rest-beta&preserve-view=true) and [getPasswordSingleSignOnCredentials](/graph/api/user-getpasswordsinglesignoncredentials?view=graph-rest-beta&preserve-view=true) methods to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource for deleting and retrieving the password-based single sign-on credentials for a user to a given service principal.
+
 ## December 2023: New and generally available
 
 ### Identity and access | Directory management
@@ -509,7 +571,7 @@ Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-res
 [Listing](/graph/api/teamworkdevice-list?view=graph-rest-beta&preserve-view=true) teamwork devices now includes SIP analog devices provisioned for the tenant. These SIP analog devices are legacy endpoints such as elevator phones, parking lot phones, or factory floor devices, registered with Microsoft Teams through the SIP Gateway.
 
 ### Users
-Associate users or groups as sponsors for a guest user's privileges in the tenant and keep the guest user's information and access updated. You can [assisn a sponsor](/graph/api/user-post-sponsors?view=graph-rest-beta&preserve-view=true), [list sponsors](/graph/api/user-list-sponsors?view=graph-rest-beta&preserve-view=true), and [remove a sponsor](/graph/api/user-delete-sponsors?view=graph-rest-beta&preserve-view=true).
+Associate users or groups as sponsors for a guest user's privileges in the tenant and keep the guest user's information and access updated. You can [assign a sponsor](/graph/api/user-post-sponsors?view=graph-rest-beta&preserve-view=true), [list sponsors](/graph/api/user-list-sponsors?view=graph-rest-beta&preserve-view=true), and [remove a sponsor](/graph/api/user-delete-sponsors?view=graph-rest-beta&preserve-view=true).
 
 ## June 2023: New and generally available
 

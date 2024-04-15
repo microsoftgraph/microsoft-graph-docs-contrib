@@ -3,7 +3,7 @@ title: "Configuring task rules in Planner (preview)"
 description: "Rules allow customization of what can and can't be done on tasks, and the Planner API in Microsoft Graph supports them."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 ---
 
 # Configuring task rules in Planner (preview)
@@ -202,3 +202,14 @@ The **approvalAttachment** property is configured with [fieldRules](/graph/api/r
 * `add`: A new approval can be added.
 * `remove`: An existing approval can be removed.
 * `allow`: All Approval actions are allowed.
+
+### forms
+
+The **forms** property is configured with [fieldRules](/graph/api/resources/plannerfieldrules), providing default values and overrides for specific conditions. Possible values are:
+
+* `block`: Forms can't be changed.
+* `addResponse`: Responses can be added to the form.
+* `add`: New forms can be added.
+* `update`: Existing forms can be updated.
+* `remove`: Existing forms can be removed.
+* `allow`: All forms actions are allowed.

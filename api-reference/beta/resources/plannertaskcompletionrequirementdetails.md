@@ -3,7 +3,7 @@ title: "plannerTaskCompletionRequirementDetails resource type"
 description: "Represents detailed information about completionRequirements for a plannerTask."
 author: "prasad5596"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -21,6 +21,7 @@ Represents detailed information about [completionRequirements](plannertask.md#pl
 |:---|:---|:---|
 |approvalRequirement |[plannerApprovalRequirement](plannerapprovalrequirement.md)  |Information about the requirements of an approval.|
 |checklistRequirement|[plannerChecklistRequirement](plannerchecklistrequirement.md)|Information about the requirements for completing the checklist.|
+|formsRequirement|[plannerFormsRequirement](plannerformsrequirement.md)|Information about the requirements for completing the forms.|
 
 ## Relationships
 
@@ -38,6 +39,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.plannerTaskCompletionRequirementDetails",
   "checklistRequirement": {"@odata.type": "microsoft.graph.plannerChecklistRequirement"},
+  "formsRequirement": {"@odata.type": "microsoft.graph.plannerFormsRequirement"},
   "approvalRequirement":  {"@odata.type": "microsoft.graph.plannerApprovalRequirement" }
 }
 ```

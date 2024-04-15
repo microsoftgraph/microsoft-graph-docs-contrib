@@ -3,7 +3,7 @@ title: "timeOffItem resource type"
 description: "Represents a version of the timeOff."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType_
 ---
 
@@ -24,7 +24,7 @@ Represents a version of the [timeOff](timeoff.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

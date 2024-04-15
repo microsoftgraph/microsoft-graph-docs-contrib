@@ -4,7 +4,7 @@ description: "Contains information about a user's presence, including their avai
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # presence resource type

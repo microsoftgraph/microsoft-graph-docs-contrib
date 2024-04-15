@@ -3,7 +3,7 @@ title: "searchHit resource type"
 description: "Description of searchHit entity"
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

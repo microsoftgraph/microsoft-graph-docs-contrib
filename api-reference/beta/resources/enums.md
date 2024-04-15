@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
@@ -1297,6 +1297,8 @@ Namespace: microsoft.graph
 | gpsLocationCondition                              |
 | riskBasedPolicy                                   |
 | unknownFutureValue                                |
+| scopeBasedAuthRequirementPolicy                   |
+| authenticationStrengths                           |
 
 
 ### riskDetail values
@@ -1318,6 +1320,9 @@ Namespace: microsoft.graph
 | adminConfirmedServicePrincipalCompromised |
 | adminDismissedAllRiskForServicePrincipal  |
 | m365DAdminDismissedDetection              |
+| userChangedPasswordOnPremises             |
+| adminDismissedRiskForSignIn               |
+| adminConfirmedAccountSafe                 |
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -1469,6 +1474,7 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+|excused|
 
 ### educationFeedbackResourceOutcomeStatus values
 
@@ -3146,6 +3152,14 @@ Possible values for user account types (group membership), per Windows definitio
 | gallery |
 | unknownFutureValue |
 
+### cloudPcPolicySettingType values 
+
+|Member|
+|:---|
+|region|
+|singleSignOn|
+|unknownFutureValue|
+
 ### chatType values
 
 | Member             | Value | Description                                                                                                                                                        |
@@ -4658,20 +4672,21 @@ Possible values for user account types (group membership), per Windows definitio
 | iOSMobileApplicationManagement|
 | unknownFutureValue|
 
-### printReleaseType values 
-
-|Member|
-|:---|
-|direct|
-|qrCode|
-|unknownFutureValue|
-
 ### bookingPageAccessControl values 
 
 |Member|
 |:---|
 |unrestricted|
 |restrictedToOrganization|
+|unknownFutureValue|
+
+### bookingsServiceAvailabilityType values 
+
+|Member|
+|:---|
+|bookWhenStaffAreFree|
+|notBookable|
+|customWeeklyHours|
 |unknownFutureValue|
 
 ### conditionalAccessTransferMethods values

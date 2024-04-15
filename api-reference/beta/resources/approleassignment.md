@@ -3,7 +3,7 @@ title: "appRoleAssignment resource type"
 description: "Used to record when a user, group, or service principal is assigned to an app role on an application's service principal. You can create, read and delete app role assignments."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -55,7 +55,7 @@ An app role assignment where the assigned principal is a service principal is an
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

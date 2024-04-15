@@ -3,7 +3,7 @@ title: "Update table"
 description: "Update the properties of table object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and an updated [table](../resources/workbooktable.md) object in the response body.
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

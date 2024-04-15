@@ -3,7 +3,7 @@ title: "communicationsApplicationIdentity resource type"
 description: "Represents the identity of an application."
 author: "rahulva-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

@@ -25,7 +25,7 @@ configuration := &graphusers.UserItemOnlineMeetingsGetAllTranscripts()RequestBui
 	QueryParameters: requestParameters,
 }
 
-getAllTranscripts, err := graphClient.Users().ByUserId("user-id").OnlineMeetings().GetAllTranscripts().Get(context.Background(), configuration)
+getAllTranscripts, err := graphClient.Users().ByUserId("user-id").OnlineMeetings().GetAllTranscripts().GetAsGetAllTranscriptsGetResponse(context.Background(), configuration)
 
 
 ```

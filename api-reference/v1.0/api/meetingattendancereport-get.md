@@ -3,7 +3,7 @@ title: "Get meetingAttendanceReport"
 description: "Get the attendance report for an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -194,7 +194,7 @@ The following example shows how to get the attendance report for a webinar sessi
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 

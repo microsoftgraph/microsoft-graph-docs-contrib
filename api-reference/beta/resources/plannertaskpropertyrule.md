@@ -3,7 +3,7 @@ title: "plannerTaskPropertyRule resource type"
 description: "Represents specific restrictions that apply to editing a plannerTask."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 
@@ -28,6 +28,7 @@ Inherits from [plannerPropertyRule](../resources/plannerpropertyrule.md).
 |completionRequirements|String collection|Rules and restrictions for completion requirements of the task. Accepted values are `allow`, `add`, `remove`, `edit`, and `block`.  |
 |delete|String collection|Rules and restrictions for deleting the task. Accepted values are `allow` and `block`.|
 |dueDate|String collection|Rules and restrictions for changing the due date of the task. Accepted values are `allow` and `block`.|
+|forms|[plannerFieldRules](../resources/plannerfieldrules.md)|Rules and restrictions for forms. Allowed overrides are `userCreated` and `applicationCreated`. The following are the accepted values for the default rule and individual overrides: `allow`, `add`, `addResponse`, `remove`, `update`, `block`.|
 |move|String collection|Rules and restrictions for moving the task between buckets or plans. Accepted values are `allow`, `moveBetweenPlans`, `moveBetweenBuckets`, and `block`.|
 |notes|String collection|Rules and restrictions for changing the notes of the task. Accepted values are `allow` and `block`.|
 |order|String collection|Rules and restrictions for changing the order of the task. Accepted values are `allow` and `block`.|

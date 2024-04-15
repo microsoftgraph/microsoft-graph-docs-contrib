@@ -3,7 +3,7 @@ title: "Delete restrictedAppsViolation"
 description: "Deletes a restrictedAppsViolation."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "failedOperation resource type"
 description: "Represents an export operation that failed to complete."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

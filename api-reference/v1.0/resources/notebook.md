@@ -3,7 +3,7 @@ title: "notebook resource type"
 description: "A OneNote notebook."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ A OneNote notebook.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

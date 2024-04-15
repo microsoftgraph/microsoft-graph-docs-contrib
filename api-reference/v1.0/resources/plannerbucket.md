@@ -3,7 +3,7 @@ title: "plannerBucket resource type"
 description: "Represents a bucket for tasks in a plan in Microsoft 365."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -38,7 +38,7 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. The collection of tasks in the bucket.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "Update rule"
 description: "Change writable properties on a messageRule object and save the changes."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -112,7 +112,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

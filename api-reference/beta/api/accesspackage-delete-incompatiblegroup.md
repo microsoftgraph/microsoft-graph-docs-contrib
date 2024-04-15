@@ -3,7 +3,7 @@ title: "Remove group from incompatibleGroups"
 description: "Remove a link that indicates a group is incompatible with a specified access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [group](../resources/group.md) from the list of groups that have been marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
+Remove a [group](../resources/group.md) from the list of groups marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -85,10 +85,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/remove-incompatiblegroup-from-accesspackage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/remove-incompatiblegroup-from-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

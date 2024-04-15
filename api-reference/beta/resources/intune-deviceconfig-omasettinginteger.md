@@ -3,7 +3,7 @@ title: "omaSettingInteger resource type"
 description: "OMA Settings Integer definition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

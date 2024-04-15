@@ -3,7 +3,7 @@ title: "message: move"
 description: "Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -112,7 +112,7 @@ Content-type: application/json
 
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

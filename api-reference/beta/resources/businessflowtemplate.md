@@ -3,7 +3,7 @@ title: "businessFlowTemplate resource type (deprecated)"
 description: "In the Microsoft Entra access reviews feature, the `businesFlowTemplate` represents a Microsoft Entra business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

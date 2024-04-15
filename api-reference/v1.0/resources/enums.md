@@ -2,7 +2,7 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
@@ -55,6 +55,15 @@ Namespace: microsoft.graph
 | otherExternalUser      |
 | serviceProvider        |
 | unknownFutureValue     |
+
+### migrationStatus values 
+
+|Member|
+|:---|
+|ready|
+|needsReview|
+|additionalStepsRequired|
+|unknownFutureValue|
 
 ### appCredentialRestrictionType values
 
@@ -1058,6 +1067,16 @@ Namespace: microsoft.graph
 | sunny              |
 | unknownFutureValue |
 
+### windowsSettingType values 
+
+Possible types of Windows settings.
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
+
 ### workforceIntegrationEncryptionProtocol values
 
 | Member
@@ -1684,6 +1703,9 @@ Possible values for user account types (group membership), per Windows definitio
 | adminConfirmedServicePrincipalCompromised |
 | adminDismissedAllRiskForServicePrincipal  |
 | m365DAdminDismissedDetection              |
+| userChangedPasswordOnPremises             |
+| adminDismissedRiskForSignIn               |
+| adminConfirmedAccountSafe                 |
 
 ### riskEventTypes values
 
@@ -3197,14 +3219,6 @@ Possible values for user account types (group membership), per Windows definitio
 | iOSMobileApplicationManagement|
 | unknownFutureValue|
 
-### printReleaseType values 
-
-|Member|
-|:---|
-|direct|
-|qrCode|
-|unknownFutureValue|
-
 ### educationAssignmentStatus values
 
 | Member             |
@@ -3214,3 +3228,15 @@ Possible values for user account types (group membership), per Windows definitio
 | assigned           |
 | unknownFutureValue |
 | inactive           |
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
+|unknownFutureValue|
