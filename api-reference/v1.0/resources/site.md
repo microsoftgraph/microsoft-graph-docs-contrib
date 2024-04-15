@@ -35,6 +35,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 | [List operations](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
+| [List pages][]                                    | GET /sites/{site-id}/pages                                  |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -53,6 +54,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Create permissions]: ../api/site-post-permissions.md
 [Delete permission]: ../api/site-delete-permission.md
 [Update permission]: ../api/site-update-permission.md
+[List pages]: ../api/baseSitePage-list.md
 
 ## Properties
 
@@ -95,6 +97,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **lists**         | Collection([list][])                             | The collection of lists under this site.
 | **onenote**       | [onenote][]                                      | Calls the OneNote service for notebook related operations.
 | **operations**    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the site.
+| **pages**           | Collection([baseSitePage][])                                                        | The collection of pages in the baseSitePages list in this site.                                                                                |
 | **permissions**   | Collection([permission][])                       | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])                             | The collection of the sub-sites under this site.
 | **termStore**     | [microsoft.graph.termStore.store]                | The default termStore under this site.
@@ -103,6 +106,7 @@ The `root` identifier always references the root site for a given target, as fol
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
+[baseSitePage]: baseSitePage.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
