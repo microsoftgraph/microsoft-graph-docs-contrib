@@ -84,7 +84,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.trustFrameworkKey_v2",
     "k": "AQHF",
     "x5c": [
-      ""MIICDTCCAXagAwIBAgIQAkiG9w0zWT5PduVXKynAjHTATBgNVHSUEDDAKBggrBgEFBQcDATANBgkqhkiG9w0BAQUFAAOBgQAhrtp6oz5QYwRMFGfHqvb0HzDIyYQ5ryxYFpQaUW4+0vzMP4NRdN7WM89BeEh73YdAlOTif9T6i/KXK5G3qyUKnvO884rIYHsjvA3sS+zESU1lcyvFpD4a602xeobYqm6yHHJWRJr2yzIICkVW6QX8a3W3KteMUZY0vm0o5IU/uw==""
+      "MIICDTCCAXagAwIBAgIQAkiG9w0zWT5PduVXKynAjHTATBgNVHSUEDDAKBggrBgEFBQcDATANBgkqhkiG9w.."
     ],
     "x5t": "kr03PNLOFr9InfdsfbIyoC4KCKS8",
     "kty": "oct",
