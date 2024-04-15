@@ -5,7 +5,6 @@ author: "arishojaswi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Create auditLogQuery

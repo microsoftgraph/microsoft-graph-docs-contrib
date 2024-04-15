@@ -6,7 +6,6 @@ title: Send a sharing invitation
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Send a sharing invitation
 

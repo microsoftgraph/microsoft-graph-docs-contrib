@@ -5,7 +5,6 @@ author: "RamjotSingh"
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.subservice: "teams"
-ms.topic: reference
 ---
 
 # Update chatMessage

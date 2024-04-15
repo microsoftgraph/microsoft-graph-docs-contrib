@@ -5,7 +5,6 @@ author: "sumanac"
 ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.topic: reference
 ---
 
 # chatMessage: unsetReaction

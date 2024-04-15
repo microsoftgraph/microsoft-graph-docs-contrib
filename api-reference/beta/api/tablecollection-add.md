@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # TableCollection: add

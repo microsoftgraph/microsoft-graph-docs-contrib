@@ -1,17 +1,19 @@
 ---
-title: "Assign a forwardingProfile to a branchSite"
+title: "Assign a forwardingProfile (deprecated)"
 description: "Create a new branch and assign a forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
-ms.topic: reference
 ---
 
-# Create forwardingProfile
+# Create forwardingProfile (deprecated)
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> Deprecated and to be retired soon. Use the [remoteNetwork resource type](../resources/networkaccess-remotenetwork.md) and its associated methods instead.
 
 Create a new branch and assign a forwarding profile.
 

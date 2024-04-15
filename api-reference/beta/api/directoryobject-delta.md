@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "jzhu2017"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # directoryObject: delta

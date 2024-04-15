@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
-ms.topic: reference
 ---
 
 # Create program (deprecated)

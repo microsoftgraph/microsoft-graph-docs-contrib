@@ -5,7 +5,6 @@ author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
 ms.subservice: "teams"
-ms.topic: reference
 ---
 
 # Get sharedWithChannelTeamInfo

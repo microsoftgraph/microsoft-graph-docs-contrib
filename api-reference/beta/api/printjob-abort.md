@@ -5,7 +5,6 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # printJob: abort

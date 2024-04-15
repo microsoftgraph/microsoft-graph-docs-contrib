@@ -5,7 +5,6 @@ author: "keylimesoda"
 ms.localizationpriority: medium
 ms.prod: "change-notifications"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # subscription: reauthorize

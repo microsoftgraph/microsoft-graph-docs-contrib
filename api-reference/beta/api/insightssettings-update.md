@@ -5,7 +5,6 @@ author: "simonhult"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Update insightsSettings
@@ -32,12 +31,12 @@ The following tables show the least privileged permission or permissions require
 
 
 ### To update **item insights** settings for an organization
-<!-- { "blockType": "permissions", "name": "insightssettings_update_iteminsights" } -->
-[!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-iteminsights-permissions.md)]
-
-### To update **people insights** settings for an organization
 <!-- { "blockType": "permissions", "name": "insightssettings_update_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/insightssettings-update-2-permissions.md)]
+
+### To update **people insights** settings for an organization
+<!-- { "blockType": "permissions", "name": "insightssettings_update_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/insightssettings-update-3-permissions.md)]
 
 >**Note:** Using delegated permissions for this operation to update insights for contacts, item, or people requires the signed-in user to have a Global Administrator role.
 

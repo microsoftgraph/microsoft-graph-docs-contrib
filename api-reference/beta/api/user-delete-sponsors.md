@@ -5,7 +5,6 @@ author: "sadia353"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Remove sponsor

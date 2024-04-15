@@ -279,6 +279,14 @@ items:
                 href: resources/plannertask.md
               - name: List tasks
                 href: api/planneruser-list-tasks.md
+          - name: Sponsors
+            items:
+              - name: Add sponsor
+                href: api/user-post-sponsors.md
+              - name: List sponsors
+                href: api/user-list-sponsors.md
+              - name: Remove sponsor
+                href: api/user-delete-sponsors.md
           - name: Teamwork and communications
             items:
               - name: Installed app
@@ -301,6 +309,27 @@ items:
                 href: api/chat-get.md
               - name: List chats for user
                 href: api/chat-list.md
+              - name: Settings
+                items:
+                  - name: License details
+                    href: resources/licensedetails.md
+                    items:
+                    - name: Get
+                      href: api/licenseDetails-getteamslicensingdetails.md
+                  - name: Organization settings
+                    items:
+                    - name: Teamwork
+                      href: resources/teamwork.md
+                      items:
+                      - name: Get
+                        href: api/teamwork-get.md
+                  - name: User settings
+                    items:
+                    - name: User teamwork
+                      href: resources/userteamwork.md
+                      items:
+                        - name: Get
+                          href: api/userteamwork-get.md
           - name: To-do task
             items:
               - name: To-do task
@@ -336,6 +365,8 @@ items:
                 href: api/group-get.md
               - name: Update group
                 href: api/group-update.md
+              - name: Upsert group
+                href: api/group-upsert.md
               - name: Delete group
                 href: api/group-delete.md
               - name: Renew group
@@ -625,6 +656,8 @@ items:
                 href: api/application-get.md
               - name: Update application
                 href: api/application-update.md
+              - name: Upsert application
+                href: api/application-upsert.md  
               - name: Delete application
                 href: api/application-delete.md
               - name: Get delta
@@ -693,6 +726,8 @@ items:
                         href: api/federatedidentitycredential-get.md
                       - name: Update
                         href: api/federatedidentitycredential-update.md
+                      - name: Upsert
+                        href: api/federatedidentitycredential-upsert.md
                       - name: Delete
                         href: api/federatedidentitycredential-delete.md
               - name: Owners
@@ -764,6 +799,8 @@ items:
                 href: api/serviceprincipal-get.md
               - name: Update
                 href: api/serviceprincipal-update.md
+              - name: Upsert
+                href: api/serviceprincipal-upsert.md
               - name: Delete
                 href: api/serviceprincipal-delete.md
               - name: List deleted service principals
@@ -8673,6 +8710,88 @@ items:
                 href: api/documentsetversion-delete.md
               - name: Restore
                 href: api/documentsetversion-restore.md
+          - name: Pages
+            items:
+              - name: Base site page
+                href: resources/basesitepage.md
+                items:
+                  - name: List
+                    href: api/basesitepage-list.md
+                  - name: Get
+                    href: api/basesitepage-get.md
+                  - name: Delete
+                    href: api/basesitepage-delete.md
+              - name: Site page
+                href: resources/sitepage.md
+                items:
+                  - name: List
+                    href: api/sitepage-list.md
+                  - name: Create
+                    href: api/sitepage-create.md
+                  - name: Get
+                    href: api/sitepage-get.md
+                  - name: Update
+                    href: api/sitepage-update.md
+                  - name: Delete
+                    href: api/basesitepage-delete.md
+                  - name: Publish
+                    href: api/sitepage-publish.md
+                  - name: Horizontal section
+                    items:
+                      - name: Horizontal section
+                        href: resources/horizontalsection.md
+                      - name: List
+                        href: api/horizontalsection-list.md
+                      - name: Create
+                        href: api/sitepage-post-horizontalsection.md
+                      - name: Get
+                        href: api/horizontalsection-get.md
+                      - name: Update
+                        href: api/horizontalsection-update.md
+                      - name: Delete
+                        href: api/horizontalsection-delete.md
+                      - name: Column
+                        items:
+                          - name: Horizontal section column
+                            href: resources/horizontalsectioncolumn.md
+                          - name: List
+                            href: api/horizontalsectioncolumn-list.md
+                          - name: Get
+                            href: api/horizontalsectioncolumn-get.md
+                  - name: Vertical section
+                    items:
+                      - name: Vertical section
+                        href: resources/verticalsection.md
+                      - name: Create
+                        href: api/sitepage-post-verticalsection.md
+                      - name: Get
+                        href: api/verticalsection-get.md
+                      - name: Update
+                        href: api/verticalsection-update.md
+                      - name: Delete
+                        href: api/verticalsection-delete.md
+              - name: Web part
+                items:
+                  - name: Web part
+                    href: resources/webpart.md
+                  - name: Text web part
+                    href: resources/textwebpart.md
+                  - name: Standard web part
+                    href: resources/standardwebpart.md
+                  - name: List
+                    href: api/webpart-list.md
+                  - name: Create
+                    href: api/sitepage-create-webpart.md
+                  - name: Get
+                    href: api/webpart-get.md
+                  - name: Update
+                    href: api/webpart-update.md
+                  - name: Delete
+                    href: api/webpart-delete.md
+                  - name: Get position
+                    href: api/webpart-getposition.md
+                  - name: Get by position
+                    href: api/sitepage-getwebpartsbyposition.md
           - name: Rich long-running operation
             items:
               - name: Rich long-running operation

@@ -5,7 +5,6 @@ author: "awang119"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Create onlineMeeting

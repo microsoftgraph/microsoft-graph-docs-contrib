@@ -7,33 +7,20 @@ author: sebastienlevert
 
 # Use the Microsoft Graph Toolkit with Electron
 
-This article describes the step-by-step process of using the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have a Electron app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
+This article describes how to use the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have an Electron app that shows the upcoming appointments of the currently signed-in user from Microsoft 365.
 
 ## Create an Electron app
 
-Create a new Electron app by cloning the [electron-quick-start-typescript](https://github.com/electron/electron-quick-start-typescript) repository. This will create a new Electron app using TypeScript, which will help you write more robust code and avoid runtime errors.
+Scaffold a new Electron app by using [Electron Forge](https://www.electronforge.io/). Doing this creates a new Electron app in TypeScript, which helps you write more robust code and avoid runtime errors.
 
 ```cmd
-git clone https://github.com/electron/electron-quick-start-typescript
+npm init electron-app@latest mgt-app -- --template=webpack-typescript
 ```
 
-Change the working directory to the newly created app and install all dependencies.
+Change the working directory to the newly created app.
 
 ```cmd
-cd electron-quick-start-typescript
-npm install
-```
-
-Install the '@microsoft/mgt-components' package that contains all the Microsoft Graph-connected web components.
-
-```cmd
-npm i @microsoft/mgt-components
-```
-
-Install the `@microsoft/mgt-electron-provider` and `@microsoft/mgt-element` npm packages as well. These will allow you to provide authentication for your app using MSAL and use the Microsoft Graph Toolkit components.
-
-```cmd
-npm i @microsoft/mgt-element @microsoft/mgt-electron-provider
+cd mgt-app
 ```
 
 Confirm that you can run the app.
@@ -41,6 +28,21 @@ Confirm that you can run the app.
 ```cmd
 npm start
 ```
+
+Open the `package.json` file and ensure that electron dev dependency version is `28.2.4`. `28.2.4` is the current maximum version for the peer dependency required by `@microsoft/mgt-electron-provider`.
+
+Install the '@microsoft/mgt-components' package that contains all the Microsoft Graph-connected web components.
+
+```cmd
+npm i @microsoft/mgt-components
+```
+
+Install the `@microsoft/mgt-electron-provider` and `@microsoft/mgt-element` npm packages as well. These allow you to provide authentication for your app using MSAL and use the Microsoft Graph Toolkit components.
+
+```cmd
+npm i @microsoft/mgt-element @microsoft/mgt-electron-provider
+```
+
 
 ## Create an app/client ID
 
@@ -65,27 +67,68 @@ To create the app in Microsoft Entra ID:
 
 ## Configure the Microsoft Graph Toolkit authentication provider
 
-### Initializing ElectronProvider in your renderer process
+### Initialize a ContextBridge in your preload script
 
-The `ElectronProvider` is responsible for communicating with `ElectronAuthenticator` (in the main process) to request access tokens and receive information regarding signed in state that is required for the mgt components to work.
+Starting with Electron v12, context isolation is enabled by default and this is a recommended security setting for all applications. With context isolation, developers must explicitly expose APIs from their main process for use in the renderer process via a ContextBridge. For more information, see [Context Isolation in the Electron docs](https://www.electronjs.org/docs/latest/tutorial/context-isolation).
 
-To initialize the `ElectronProvider`, add the following code to the _src/renderer.ts_ file.
+Open the _src/preload.ts_ file and add the following code:
+
+```ts
+import { type IpcRendererEvent, contextBridge, ipcRenderer } from 'electron';
+import { AuthenticationProviderOptions } from '@microsoft/microsoft-graph-client';
+
+contextBridge.exposeInMainWorld("main", {
+  electronProvider: {
+    mgtAuthState: (callback: (event: IpcRendererEvent, authState: string) => void) => ipcRenderer.on('mgtAuthState', callback),
+    token: (options?: AuthenticationProviderOptions) => ipcRenderer.invoke('token', options),
+    login: () => ipcRenderer.invoke('login'),
+    logout: () => ipcRenderer.invoke('logout'),
+    approvedScopes: (callback: (event: IpcRendererEvent, scopes: string[]) => void) => ipcRenderer.on('approvedScopes', callback),
+  },
+});
+```
+
+### Initializing ElectronContextBridgeProvider in your renderer process
+
+The `ElectronContextBridgeProvider` is responsible for communicating with `ElectronAuthenticator` (in the main process) to request access tokens and receive information about the signed in state that is required for the toolkit components to work.
+
+To use Microsoft Graph Toolkit components in your applications, they must be registered in the browser window that they open. To do this, you must import the register functions for each component you want to use.
+
+To initialize the `ElectronContextBridgeProvider` and register the Microsoft Graph Toolkit components, add the following code to the _src/renderer.ts_ file.
 
 ```ts
 import { Providers } from "@microsoft/mgt-element";
-import { ElectronProvider } from "@microsoft/mgt-electron-provider/dist/Provider";
-// import the mgt components so we can use them in our html
-import "@microsoft/mgt-components";
+import { registerMgtAgendaComponent, registerMgtLoginComponent } from '@microsoft/mgt-components';
+import {
+  type IContextBridgeImpl,
+} from "@microsoft/mgt-electron-provider/dist/Provider";
+import { ElectronContextBridgeProvider } from "@microsoft/mgt-electron-provider/dist/Provider/ElectronContextBridgeProvider";
+
+// this provides typings for the object added to the renderer window by the preload script
+declare global {
+  interface Window {
+    // can be named anything, like "electronApi"
+    main: {
+      electronProvider: IContextBridgeImpl;
+    };
+  }
+}
 
 // initialize the auth provider globally
-Providers.globalProvider = new ElectronProvider();
+const init = () => {
+  Providers.globalProvider = new ElectronContextBridgeProvider(window.main.electronProvider);
+  registerMgtLoginComponent();
+  registerMgtAgendaComponent();
+};
+
+init();
 ```
 
 ### Initializing ElectronAuthenticator in your main process
 
-The `ElectronAuthenticator` is responsible for setting up the configuration variables for MSAL authentication, acquiring access tokens, and communicating with the `ElectronProvider`. Initialize the `ElectronAuthenticator` in the main process and set up the configuration variables such as client ID and required scopes.
+The `ElectronAuthenticator` is responsible for setting up the configuration variables for MSAL authentication, acquiring access tokens, and communicating with the `ElectronContextBridgeProvider`. The `ElectronAuthenticator` is initialized in the main process and set up the configuration variables such as client ID and required scopes.
 
-First, open _src/main.ts_ and import `ElectronAuthenticator` and `MsalElectronConfig` from `@microsoft/mgt-electron-provider` at the top of the page.
+First, open _src/index.ts_ and import `ElectronAuthenticator` and `MsalElectronConfig` from `@microsoft/mgt-electron-provider` at the top of the page.
 
 ```ts
 import {
@@ -94,11 +137,18 @@ import {
 } from "@microsoft/mgt-electron-provider/dist/Authenticator";
 ```
 
+Then add import the `COMMON_AUTHORITY_URL` constant.
+
+```ts
+import { COMMON_AUTHORITY_URL } from '@microsoft/mgt-electron-provider/dist/Authenticator/Constants';
+```
+
 Next, add these lines of code in the `createWindow()` function to initialize the ElectronAuthenticator, right after where `mainWindow` is declared. Replace `<your_client_id>` with the client ID from your app registration.
 
 ```ts
 const config: MsalElectronConfig = {
   clientId: "<your_client_id>",
+  authority: COMMON_AUTHORITY_URL, // Uses the common auth endpoint
   mainWindow: mainWindow, //This is the BrowserWindow instance that requires authentication
   scopes: [
     "user.read",
@@ -115,18 +165,30 @@ const config: MsalElectronConfig = {
 ElectronAuthenticator.initialize(config);
 ```
 
-### Set nodeIntegration to true
+### Add a development Content Security Policy
 
-In main.ts, where the new instance of BrowserWindow is created, make sure that you set `nodeIntegration` to `true` under webPreferences. If you skip this step, you might run into a `Uncaught ReferenceError: require is not defined` error. To keep this simple, remove any preloading scripts.
+The application that Electron Forge scaffolds includes a default Content Security Policy (CSP), which disallows fetching data from a remote server. For development purposes, you can add a CSP that is highly permissive. For production apps, you need to craft a robust CSP that enables your application to function while reducing the attack surface for bad actors.
+
+Open the _forge.config.ts_ file and replace the existing config object being passed to the WebpackPlugin constructor with the following config object.
 
 ```ts
-const mainWindow = new BrowserWindow({
-  height: 600,
-  webPreferences: {
-    nodeIntegration: true, //Set this to true
+{
+  mainConfig,
+  devContentSecurityPolicy: "default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;",
+  renderer: {
+    config: rendererConfig,
+    entryPoints: [
+      {
+        html: './src/index.html',
+        js: './src/renderer.ts',
+        name: 'main_window',
+        preload: {
+          js: './src/preload.ts',
+        },
+      },
+    ],
   },
-  width: 800,
-});
+}
 ```
 
 ### Add components to your HTML page
@@ -138,93 +200,15 @@ Add some content to your app. You can now use the Microsoft Graph toolkit compon
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Sample Electron-MGT App</title>
+    <title>Hello World!</title>
   </head>
   <body>
+    <h1>❤️ Hello World! 🦒</h1>
+    <p>Welcome to your MGT Electron application.</p>
     <mgt-login></mgt-login>
     <mgt-agenda group-by-day></mgt-agenda>
-    <script type="module" src="./dist/renderer.js"></script>
   </body>
 </html>
-```
-
-> **Note:** Remove any Content-Security-Policy response headers or `meta` tags if you are copying this onto an existing file.
-
-### Bundle your app using webpack
-
-Before you can run the app, you need to bundle your code to ensure that all your modular dependencies are included in the final payload. If you are already bundling your app code, you can skip this step.
-
-#### Install webpack
-
-```cmd
-npm install webpack webpack-cli ts-loader --save-dev
-```
-
-#### webpack.config.js
-
-Create a new _webpack.config.js_ file in the root folder of your project, and paste the following configuration.
-
-```js
-const path = require("path");
-module.exports = [
-  {
-    mode: "development",
-    entry: "./src/renderer.ts",
-    target: "electron-renderer",
-    module: {
-      rules: [
-        {
-          test: /\.ts$/,
-          include: [/src/],
-          use: [{ loader: "ts-loader" }],
-        },
-      ],
-    },
-    output: {
-      path: __dirname + "/dist",
-      filename: "renderer.js",
-    },
-    resolve: {
-      extensions: [".ts", ".js"],
-      modules: ["node_modules", path.resolve(__dirname + "src")],
-    },
-  },
-  {
-    mode: "development",
-    entry: "./src/main.ts",
-    target: "electron-main",
-    module: {
-      rules: [
-        {
-          test: /\.ts$/,
-          include: [/src/],
-          use: [{ loader: "ts-loader" }],
-        },
-      ],
-    },
-    output: {
-      path: __dirname + "/dist",
-      filename: "main.js",
-    },
-    resolve: {
-      extensions: [".ts", ".js"],
-      modules: ["node_modules", path.resolve(__dirname + "src")],
-    },
-  },
-];
-```
-
-As you can see, the front end (renderer process) and the back-end (main process), are bundled separately. This is because in Electron, the renderer process runs in the browser context and the main process runs in the node context.
-
-#### Add the webpacking script in `package.json`
-
-Add the following under `scripts` in your `package.json`.
-
-```json
-"scripts": {
-  "webpack": "webpack",
-  "start": "npm run webpack && electron dist/main.js"
-}
 ```
 
 #### Run your app
@@ -244,9 +228,9 @@ let config: MsalElectronConfig = {
 };
 ```
 
-For more details about how to implement this, see the [Microsoft Authentication Library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) sample.
+For more information about how to implement this, see the [Microsoft Authentication Library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) sample.
 
-## Next Steps
+## Related content
 
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Microsoft Q&A](/answers/products/m365#microsoft-graph).
