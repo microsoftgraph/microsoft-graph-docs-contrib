@@ -3,7 +3,7 @@ title: "privilegedAccessGroupAssignmentScheduleRequest: cancel"
 description: "Cancel an access assignment request to a group whose membership and ownership are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -49,7 +49,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

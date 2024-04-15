@@ -3,7 +3,7 @@ title: "attendee resource type"
 description: "An event attendee. The attendee can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "iamgirishck"
 ---
 
@@ -27,7 +27,7 @@ Derived from [attendeeBase](attendeebase.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

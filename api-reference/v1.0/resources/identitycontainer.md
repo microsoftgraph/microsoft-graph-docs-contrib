@@ -3,7 +3,7 @@ title: "identityContainer resource type"
 description: "Represents the entry point to different features in External Identities for both Microsoft Entra ID and Azure AD B2C tenants."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "namkedia"
 ---
 
@@ -35,7 +35,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityContainer",

@@ -3,7 +3,7 @@ title: "Delete filePlanReferenceTemplate"
 description: "Delete a filePlanReferenceTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -56,7 +56,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/labels/filePlanReferences/{filePlanReferenceTemplateId}
+DELETE https://graph.microsoft.com/beta/security/labels/filePlanReferences/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
 # [C#](#tab/csharp)
@@ -94,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/security/labels/filePlanReferences/{file
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >
 <!-- {
   "blockType": "response",

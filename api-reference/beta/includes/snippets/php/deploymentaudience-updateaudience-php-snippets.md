@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\UpdateAudiencePostRequestBody;
+use Microsoft\Graph\Generated\Models\UpdatableAsset;
+use Microsoft\Graph\Generated\Models\AzureADDevice;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

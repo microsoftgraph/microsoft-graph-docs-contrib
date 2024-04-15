@@ -3,7 +3,7 @@ title: "Remove member from educationClass"
 description: "Remove an educationUser from an educationClass."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

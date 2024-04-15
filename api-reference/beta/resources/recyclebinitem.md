@@ -1,9 +1,9 @@
 ---
 author: "vanshisingh"
 title: "recycleBinItem resource type"
-description: "Represents information about a deleted item in a recycleBin."
+description: "Represents information about a deleted item in a recycleBin of a SharePoint site."
 ms.localizationpriority: "medium"
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ Inherits from [baseItem](baseitem.md).
 
 | Method                                                  | Return Type                                                 | Description                                                                              |
 |:--------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
-| [List recycleBinItems](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site. |
+| [List items](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md). |
 
 ## Properties
 
@@ -35,7 +35,7 @@ Inherits from [baseItem](baseitem.md).
 
 ## JSON Representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

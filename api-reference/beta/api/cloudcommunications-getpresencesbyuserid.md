@@ -4,7 +4,7 @@ description: "Get the presence information for multiple users."
 author: "ananmishr"
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # cloudCommunications: getPresencesByUserId

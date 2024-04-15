@@ -3,7 +3,7 @@ title: "plannerUserIds resource type"
 description: "The **plannerUserIds** resource represents the list of users IDs that a plan is shared with and is an Open Type. If you're using Microsoft 365 groups, use the Groups API to manage group membership to share the group's plan. You can also add existing members of the group to this collection though it isn't required for them to access the plan owned by the group."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Properties of an Open Type can be defined by the client. In this case, the clien
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

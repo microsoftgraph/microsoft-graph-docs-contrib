@@ -3,7 +3,7 @@ title: "timeConstraint resource type"
 description: "Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots."
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Restricts meeting time suggestions to certain hours and days of the week accordi
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

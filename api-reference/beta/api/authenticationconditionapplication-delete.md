@@ -3,7 +3,7 @@ title: "Delete authenticationConditionApplication (from a user flow)"
 description: "Remove an application from an externalUsersSelfServiceSignupEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 ## Examples
 
 #### Request
-Here's an example of a request. `63856651-13d9-4784-9abf-20758d509e19` represents the **appId** of the application, also known as the client ID, not the object ID.
+The following example shows a request. `63856651-13d9-4784-9abf-20758d509e19` represents the **appId** of the application, also known as the client ID, not the object ID.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -97,7 +97,7 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 ---
 
 #### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

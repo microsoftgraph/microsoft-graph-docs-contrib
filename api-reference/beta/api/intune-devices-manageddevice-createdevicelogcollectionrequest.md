@@ -3,7 +3,7 @@ title: "createDeviceLogCollectionRequest action"
 description: "Intune Devices Manageddevice Createdevicelogcollectionrequest Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

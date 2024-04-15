@@ -3,7 +3,7 @@ title: "Download all resources from a set of assignments"
 description: "Learn how to use Microsoft Graph to to download all SharePoint resources from a set of assignments."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

@@ -59,6 +59,8 @@ For details about how authorization works with different scopes, see [Authorizat
 
 Finally, the wizard confirms some key information on the app for you to review. You can select **Approve**, **Decline**, or **Cancel**. An action on an app is all or nothing. Authorizing an app means you're authorizing all access specified in the previous steps.
 
+An approval is valid for 180 days, after which the approval is considered to be **Expired**. An admin can renew an approval in the Microsoft 365 admin center by choosing **Approve**, which renews the authorization for another 180 days. Similarly, an admin can choose ***Decline** to revoke an approval. 
+
 When authorizing an app, you might encounter these error messages:
 
 - `App approver and owner cannot be the same user.`

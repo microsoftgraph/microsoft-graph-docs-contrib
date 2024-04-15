@@ -3,7 +3,7 @@ title: "Update enrollmentRestrictionsConfigurationPolicySetItem"
 description: "Update the properties of a enrollmentRestrictionsConfigurationPolicySetItem object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Filter resource type"
 description: "Manages the filtering of a table's column."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Manages the filtering of a table's column.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

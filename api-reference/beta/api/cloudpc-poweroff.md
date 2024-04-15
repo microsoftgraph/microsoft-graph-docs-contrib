@@ -3,7 +3,7 @@ title: "cloudPC: powerOff"
 description: "Power off a specific Cloud PC."
 author: "rbayetov"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

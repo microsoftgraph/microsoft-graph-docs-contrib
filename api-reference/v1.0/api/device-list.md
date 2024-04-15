@@ -3,7 +3,7 @@ title: "List devices"
 description: "Retrieve a list of device objects registered in the organization."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

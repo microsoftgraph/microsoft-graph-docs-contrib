@@ -3,7 +3,7 @@ title: "List partners"
 description: "Get a list of all partner configurations within a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "serviceProvisioningError resource type"
 description: "Represents an abstract base type for service provisioning errors."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "PaulEkirapa"
 ---
 
@@ -27,7 +27,7 @@ Base type of [serviceProvisioningXmlError](../resources/serviceprovisioningxmler
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

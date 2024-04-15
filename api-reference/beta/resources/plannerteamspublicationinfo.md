@@ -3,7 +3,7 @@ title: "plannerTeamsPublicationInfo resource type"
 description: "Contains detailed information about the publication process that created a plannerTask."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 

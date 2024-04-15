@@ -11,6 +11,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcOnPremisesConnection(
 	display_name = "test-canary-02",
+	connection_type = CloudPcOnPremisesConnectionType.HybridAzureADJoin,
 	type = CloudPcOnPremisesConnectionType.HybridAzureADJoin,
 	subscription_id = "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
 	ad_domain_name = "contoso001.com",

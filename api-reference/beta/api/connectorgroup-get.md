@@ -3,7 +3,7 @@ title: "Get connectorGroup"
 description: "Retrieve the properties of a connectorGroup object."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 

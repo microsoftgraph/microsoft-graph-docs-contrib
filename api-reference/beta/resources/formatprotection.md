@@ -3,7 +3,7 @@ title: "FormatProtection resource type"
 description: "Represents the format protection of a range object."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 author: "ruoyingl"
 ---
 
@@ -35,7 +35,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

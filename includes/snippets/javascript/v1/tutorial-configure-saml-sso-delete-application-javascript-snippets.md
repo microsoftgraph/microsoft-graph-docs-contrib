@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/applications/a9be408a-6c31-4141-8cea-52fcd4a61be8')
+await client.api('/applications/b7308000-8bb3-467b-bfc7-8dbbfd759ad9')
 	.delete();
 
 ```

@@ -3,7 +3,7 @@ title: "Create groupPolicySettingMapping"
 description: "Create a new groupPolicySettingMapping object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

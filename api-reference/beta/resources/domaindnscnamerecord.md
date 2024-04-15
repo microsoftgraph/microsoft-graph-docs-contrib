@@ -3,7 +3,7 @@ title: "domainDnsCnameRecord resource type"
 description: "Represents a CNAME record added to the DNS zone file of a particular domain in the tenant."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ None
 
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

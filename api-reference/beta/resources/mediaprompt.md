@@ -3,7 +3,7 @@ title: "mediaPrompt resource type"
 description: "Contains information about the audio file to be played and other additional settings."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

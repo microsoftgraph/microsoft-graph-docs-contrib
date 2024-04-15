@@ -3,7 +3,7 @@ title: "mfaDetail resource type"
 description: "Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in and auth details (for example: Phone, SMS or voicemail) "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
 ---
 
@@ -22,7 +22,7 @@ Indicates MFA details for a specific sign-in. It includes the authentication met
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

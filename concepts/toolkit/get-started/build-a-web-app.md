@@ -12,15 +12,15 @@ This topic describes how to get started with Microsoft Graph Toolkit in a web ap
 Getting started with the Toolkit involves the following steps:
 
 1. Add Microsoft Graph Toolkit to your project.
-2. Initialize the MSAL2 Provider.
+2. Initialize the Microsoft Authentication Library 2(MSAL2) Provider.
 3. Add components.
 4. Test your application.
 
 ## Add Microsoft Graph Toolkit to your project
 
-You can use Microsoft Graph Toolkit in your application by installing the npm packages or loading it from a CDN.
+You can use Microsoft Graph Toolkit in your application by installing the npm packages or loading it from a Content Delivery Network(CDN).
 
-# [CDN](#tab/html)
+# [CDN](#tab/cdn)
 
 To use the toolkit via a CDN, add the following script and markup to your HTML page:
 
@@ -38,7 +38,7 @@ To use the toolkit via a CDN, add the following script and markup to your HTML p
 
 # [npm](#tab/npm)
 
-Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm packages to your project:
+Using the Toolkit via ES6 modules gives you the full control of the bundling process and allows you to bundle only the code you need for your application. To use the ES6 modules, add the following npm packages to your project:
 
 ```cmd
 npm install @microsoft/mgt-components
@@ -56,7 +56,7 @@ The Microsoft Graph Toolkit providers enable authentication and access to Micros
 
 You can choose to initialize the provider in either your JavaScript code or HTML.
 
-# [JavaScript](#tab/JavaScript)
+# [JavaScript](#tab/javascript)
 
 To initialize the MSAL provider in your JavaScript, add the following code to your application:
 
@@ -69,7 +69,7 @@ Providers.globalProvider = new Msal2Provider({
 });
 ```
 
-# [HTML](#tab/HTML)
+# [HTML](#tab/html)
 
 If you prefer to use a declarative approach, you can alter the initialization script and add the `mgt-msal2-provider` component to your HTML page, and set the `client-id` to your application client-id.
 
@@ -77,7 +77,7 @@ If you prefer to use a declarative approach, you can alter the initialization sc
 <script type="module">
   import {
     registerMgtComponents,
-    registerMgtMsal2Provider
+    registerMgtMsal2Provider,
   } from "https://unpkg.com/@microsoft/mgt@4";
   registerMgtMsal2Provider();
   registerMgtComponents();
@@ -85,7 +85,9 @@ If you prefer to use a declarative approach, you can alter the initialization sc
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 ```
 
-The client ID is the only property required to initialize the provider, but you can set additional options. For the full list, see [MSAL2 Provider](../providers/msal2.md).
+---
+
+The client ID is the only property required to initialize the provider, but you can set more options. For the full list, see [MSAL2 Provider](../providers/msal2.md).
 
 ### Creating an app/client ID
 
@@ -95,9 +97,9 @@ In order to get a client ID, you need to [register your application](./add-aad-a
 
 After you initialize the MSAL2 provider, you can start using any of the Toolkit components.
 
-# [JavaScript](#tab/JavaScript)
+# [JavaScript](#tab/javascript)
 
-This is an example using the ES6 modules, the MSAL2 Provider initialized in JavaScript, and the Login component:
+This example uses the ES6 modules, the MSAL2 Provider initialized in JavaScript, and the `Login` component:
 
 ```javascript
 import { Providers } from "@microsoft/mgt-element";
@@ -119,9 +121,9 @@ function component() {
 document.body.appendChild(component());
 ```
 
-# [HTML](#tab/HTML)
+# [HTML](#tab/html)
 
-The following is a full working example that shows loading Microsoft Graph Toolkit from a CDN, the MSAL2 Provider initialized in JavaScript, and the Login component:
+The following example shows a fully working usage that is loading Microsoft Graph Toolkit from a CDN, the MSAL2 Provider initialized in JavaScript, and the `Login` component:
 
 ```html
 <script type="module">
@@ -136,7 +138,9 @@ The following is a full working example that shows loading Microsoft Graph Toolk
 <mgt-login></mgt-login>
 ```
 
-The following example uses the ES6 modules, the MSAL2 Provider initialized in HTML, and the Login component:
+---
+
+The following example uses the ES6 modules, the MSAL2 Provider initialized in HTML, and the `Login` component:
 
 ```html
 <script type="module">
@@ -150,6 +154,8 @@ The following example uses the ES6 modules, the MSAL2 Provider initialized in HT
 <mgt-login></mgt-login>
 ```
 
+---
+
 ## Test your app
 
 To test your app, MSAL requires the page to be hosted in a web server for the authentication redirects.
@@ -160,21 +166,22 @@ If you're just getting started and want to play around, you can use [Live Server
 
 ## Track a user's sign in state
 
-You can detect when a user has successfully signed in and display specific components accordingly. For example, display the agenda component if the user has signed in. Otherwise, display the sign in interface.
+You can detect when a user is successfully signed in and display specific components accordingly. For example, display the agenda component if the user is signed in. Otherwise, display the sign in interface.
 
-To properly inspect the user's sign in state, add an event handler to the `providerUpdated` event using the `Providers.onProviderUpdated` function. In the handler, check the provider state stored on the `Providers.globalProvider.state` property.
+The package `mgt-element` provides the `isSignedIn` utility function that you can call to ascertain if a user is signed in.
 
-# [JavaScript](#tab/JavaScript)
+# [JavaScript](#tab/javascript)
 
 If you're using the toolkit via the npm packages, you can import the `Provider` and `ProviderState` from `@microsoft/mgt-element`.
 
 ```javascript
-import { Providers, ProviderState } from "@microsoft/mgt-element";
+import { Providers } from "@microsoft/mgt-element";
 import {
   registerMgtLoginComponent,
   registerMgtAgendaComponent,
 } from "@microsoft/mgt-components";
 import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
+import { isSignedIn } from "@microsoft/mgt-element";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
@@ -184,7 +191,7 @@ registerMgtLoginComponent();
 registerMgtAgendaComponent();
 
 const loadAgenda = () => {
-  if (Providers.globalProvider.state === ProviderState.SignedIn) {
+  if (isSignedIn()) {
     document.getElementById("main").innerHTML = "<mgt-agenda></mgt-agenda>";
   }
 };
@@ -192,15 +199,14 @@ const loadAgenda = () => {
 Providers.onProviderUpdated(loadAgenda);
 ```
 
-# [HTML](#tab/HTML)
+# [HTML](#tab/html)
 
-If you're using the toolkit from a CDN, you need to access JavaScript functions and objects by using a module script in the same way that you would when using the toolkit via npm packages.
+If you're using the toolkit from a CDN, you need to access JavaScript functions and objects by using a module script in the same way that you do when using the toolkit via npm packages.
 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
     <script type="module">
       import {
@@ -221,12 +227,12 @@ If you're using the toolkit from a CDN, you need to access JavaScript functions 
     <div id="main">
       <mgt-login></mgt-login>
     </div>
-    <script>
-    </script>
+    <script></script>
   </body>
 </html>
 ```
 
+---
 
 ## Next Steps
 

@@ -1,7 +1,8 @@
 ---
 author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: ric.lewis
-ms.prod: "change-notifications"
+ms.prod: change-notifications
 ms.topic: include
 ms.localizationpriority: high
 ---
@@ -25,7 +26,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Outlook [event][] | Changes to all events in a user's mailbox: `/users/{id}/events` , `/me/events` | A maximum of 1,000 active subscriptions per mailbox for all applications is allowed. |
 | Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox: `/users/{id}/contacts` , `/me/contacts` | A maximum of 1,000 active subscriptions per mailbox for all applications is allowed. |
 | Security [alert][] | Changes to a specific alert: `/security/alerts/{id}` <br><br>Changes to filtered alerts: `/security/alerts/?$filter={parameters}` | For more information, see [Security API alerts](/graph/api/resources/security-api-overview?view=graph-rest-beta#alerts&preserve-view=true).|
-| Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | Maximum subscription quotas: <li> Per organization: 100 total subscriptions. |
+| Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | Maximum subscription quotas: <li> Per organization: 100 total subscriptions.<br/><br/>**NOTE:** Creation of call records also trigger the `updated` **changeType**. |
 | Teams [callRecording][] | All recordings in an organization: `communications/onlineMeetings/getAllRecordings` <br><br> All recordings for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` <br><br> A call recording that becomes available in a meeting organized by a specific user: `users/{id}/onlineMeetings/getAllRecordings` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per app and user combination: 1 <li> Per user (for subscriptions tracking recordings in all onlineMeetings organized by the user): 10 subscriptions. <li> Per organization: 10,000 total subscriptions. |
 | Teams [callTranscript][] | All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <br><br> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` <br><br> A call transcript that becomes available in a meeting organized by a specific user: `users/{id}/onlineMeetings/getAllTranscripts` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per app and user combination: 1 <li> Per user (for subscriptions tracking transcripts in all onlineMeetings organized by the user): 10 subscriptions. <li> Per organization: 10,000 total subscriptions. |
 | Teams [chat][] | Changes to any chat in the tenant: `/chats`  <br><br> Changes to a specific chat: `/chats/{id}` <br><br> Changes to all chats in an organization where a particular Teams app is installed: `/appCatalogs/teamsApps/{id}/installedToChats`  | Maximum subscription quotas: <li> Per app and chat combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |

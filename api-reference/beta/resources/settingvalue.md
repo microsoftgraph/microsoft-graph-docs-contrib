@@ -3,7 +3,7 @@ title: "settingValue resource type"
 description: "A setting represented by a name/value pair."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ---
@@ -25,7 +25,7 @@ A setting represented by a name/value pair.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

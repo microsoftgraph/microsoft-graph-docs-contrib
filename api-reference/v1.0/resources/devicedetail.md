@@ -3,7 +3,7 @@ title: "deviceDetail resource type"
 description: "Indicates device details associated with a device used for signing in. The information includes information like device browser and  operating system, and whether the device is Microsoft Entra ID managed."
 ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Indicates device details associated with a device used for signing in. The infor
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

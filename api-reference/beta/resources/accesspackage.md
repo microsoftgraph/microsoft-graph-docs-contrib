@@ -3,7 +3,7 @@ title: "accessPackage resource type"
 description: "An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -70,7 +70,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

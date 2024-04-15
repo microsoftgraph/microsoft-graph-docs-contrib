@@ -3,7 +3,7 @@ title: "singleValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a single value. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
+ms.subservice: cloud-pc
 author: "SuryaLashmiS"
 ---
 
@@ -40,7 +40,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

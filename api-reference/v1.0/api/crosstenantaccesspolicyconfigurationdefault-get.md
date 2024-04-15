@@ -3,7 +3,7 @@ title: "Get crossTenantAccessPolicyConfigurationDefault"
 description: "Read the default configuration of a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -215,6 +215,15 @@ Content-Type: application/json
         }
       ]
     }
+  },
+  "invitationRedemptionIdentityProviderConfiguration": 
+  { 
+    "primaryIdentityProviderPrecedenceOrder": [ 
+        "externalFederation", 
+        "azureActiveDirectory", 
+        "socialIdentityProviders" 
+    ],
+    "fallbackIdentityProvider": "defaultConfiguredIdp" 
   }
 }
 ```

@@ -3,7 +3,7 @@ title: "zebraFotaNetworkType enum type"
 description: "Represents various network types for Zebra FOTA deployment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
