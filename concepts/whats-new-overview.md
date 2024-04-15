@@ -16,6 +16,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## April 2024: Deprecation
+
+### Legacy Security API
+
+- Deprecated the `/security/alerts` endpoint in beta and v1.0.
+- Deprecated the `/security/tiindicators` endpoint in beta and v1.0.
+
 ## April 2024: New and generally available
 
 ### Applications

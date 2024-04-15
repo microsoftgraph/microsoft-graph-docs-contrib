@@ -1,5 +1,5 @@
 ---
-title: "alert resource type"
+title: "alert resource type (deprecated)"
 description: "Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified."
 ms.localizationpriority: medium
 author: "preetikr"
@@ -7,7 +7,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# alert resource type
+# alert resource type  (deprecated)
 
 Namespace: microsoft.graph
 

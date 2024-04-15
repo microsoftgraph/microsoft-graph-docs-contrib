@@ -1,0 +1,48 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "4b15561a-0e99-4c0f-9ba1-80b9a1351fe8",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "alert",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [alert](https://learn.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-1.0) resource. The alert entity will stop returning data on April 10, 2026.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "4b15561a-0e99-4c0f-9ba1-80b9a1351fe8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-15T20:34:41.7424684Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Legacy API"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4b15561a-0e99-4c0f-9ba1-80b9a1351fe8",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "alert",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [alert](https://learn.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-beta) resource. The alert entity will stop returning data on April 10, 2026.",
+          "Target": "alert"
+        },
+        {
+          "Id": "4b15561a-0e99-4c0f-9ba1-80b9a1351fe8",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "tiIndicator",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [tiIndicator](https://learn.microsoft.com/en-us/graph/api/resources/tiindicator?view=graph-rest-beta) resource. The tiIndicator entity will stop returning data on April 10, 2026.",
+          "Target": "tiIndicator"
+        }
+      ],
+      "Id": "4b15561a-0e99-4c0f-9ba1-80b9a1351fe8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-15T20:34:41.7424684Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Legacy API"
+    }    
+  ]
+}

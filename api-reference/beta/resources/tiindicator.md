@@ -1,5 +1,5 @@
 ---
-title: "tiIndicator resource type"
+title: "tiIndicator resource type (deprecated)"
 description: "Threat intelligence (TI) indicators represent data used to identify malicious activities."
 ms.localizationpriority: medium
 author: "preetikr"
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# tiIndicator resource type
+# tiIndicator resource type (deprecated)
 
 Namespace: microsoft.graph
 
