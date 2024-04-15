@@ -18,11 +18,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## April 2024: Deprecation
 
-### Legacy Security API
-
-- Deprecated the `/security/alerts` endpoint in beta and v1.0.
-- Deprecated the `/security/tiindicators` endpoint in beta and v1.0.
-
 ## April 2024: New and generally available
 
 ### Applications
@@ -36,6 +31,10 @@ Use the upsert capability to create an [application](/graph/api/resources/applic
 ### Groups
 
 Added the [upsert](/graph/api/group-upsert) capability to the [group resource type](/graph/api/resources/group). Use this capability to create a group if it doesn't exist, or update an existing group, by using the **uniqueName** client-provided key.
+
+### Security | Legacy alerts
+
+The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
 
 ### Sites and lists
 
@@ -62,6 +61,14 @@ When calling the [industry data ETL API](/graph/api/resources/industrydata-overv
 ### People and workplace intelligence | People 
 
 Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights) method on the **peopleAdminSettings** resource..
+
+### Security | Legacy alerts
+
+The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
+
+### Security | Threat intelligence indicator
+
+The `/security/tiindicators` endpoint is deprecated and will stop returning data on **April 10, 2026**.
 
 ### Teamwork and communications | Messaging
 [Send chatMessage in a channel or a chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-post?view=graph-rest-beta&tabs=http) with a file attachment in it using file share link. 
