@@ -16876,16 +16876,17 @@ items:
                   - name: List
                     href: api/security-auditlogquery-list-records.md
           - name: Custom detection rules
+            href: resources/security-detectionrule.md
             items:
-              - name: List custom detection rules
+              - name: List
                 href: api/security-detectionrule-list.md
-              - name: Get custom detection rule
+              - name: Get
                 href: api/security-detectionrule-get.md
-              - name: Create custom detection rule
+              - name: Create
                 href: api/security-detectionrule-post-detectionRules.md
-              - name: Update custom detection rule
+              - name: Update
                 href: api/security-detectionrule-update.md
-              - name: Delete custom detection rule
+              - name: Delete
                 href: api/security-detectionrule-delete.md
           - name: eDiscovery (preview)
             items:
