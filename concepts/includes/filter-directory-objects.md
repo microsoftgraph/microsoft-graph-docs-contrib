@@ -22,7 +22,7 @@ ms.topic: include
 
 ## Application properties
 
-| Property                             | eq                  | startsWith          | ge/le           | eq Null             |
+| Property                                      | eq                  | startsWith          | ge/le           | eq Null             |
 |-----------------------------------------------|---------------------|---------------------|-----------------|---------------------|
 | appId                                         | ![Default][RDS]     |                     |                 |                     |
 | createdDateTime                               | ![Default][RDS]     |                     | ![Default][RDS] | ![Advanced][AQP]    |
@@ -66,7 +66,7 @@ The following properties of the application entity support `$count` of a collect
 
 ## Device properties
 
-| FormattedProperty                                | eq               | startsWith       | ge/le            | eq Null             |
+| Property                                         | eq               | startsWith       | ge/le            | eq Null             |
 |--------------------------------------------------|------------------|------------------|------------------|---------------------|
 | accountEnabled                                   | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
 | alternativeSecurityIds/any(a:a/identityProvider) | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![NotSupported][NS] |
@@ -87,7 +87,7 @@ The following properties of the application entity support `$count` of a collect
 | mdmAppId                                         | ![Default][RDS]  |                  |                  |                     |
 | model                                            | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
 | onPremisesLastSyncDateTime                       | ![Default][RDS]  |                  | ![Default][RDS]  | ![NotSupported][NS] |
-| onPremisesSecurityIdentifier                     | ![Default][RDS]  |                  |                  |                     |
+| onPremisesSecurityIdentifier                     | ![Default][RDS]  |                  |                  | ![Advanced][AQP]    |
 | onPremisesSyncEnabled                            | ![Default][RDS]  |                  |                  | ![Advanced][AQP]    |
 | operatingSystem                                  | ![Default][RDS]  | ![Default][RDS]  |                  | ![Advanced][AQP]    |
 | operatingSystemVersion                           | ![Default][RDS]  | ![Default][RDS]  |                  | ![Advanced][AQP]    |
@@ -113,7 +113,7 @@ The following properties of the **device** entity support `$count` of a collecti
 
 ## Group properties
 
-| FormattedProperty                                          | eq               | startsWith       | ge/le            | eq Null             |
+| Property                                          | eq               | startsWith       | ge/le            | eq Null             |
 |------------------------------------------------------------|------------------|------------------|------------------|---------------------|
 | appRoleAssignments/any(a:a/id)                             | ![Default][RDS]  |                  |                  |                     |
 | assignedLicenses/any(a:a/skuId)                            | ![Default][RDS]  |                  |                  |                     |
@@ -158,7 +158,7 @@ The following properties of the **group** entity support `$count` of a collectio
 
 ## Organizational contact properties
 
-| FormattedProperty                                          | eq               | startsWith       | ge/le           | eq Null             |
+| Property                                          | eq               | startsWith       | ge/le           | eq Null             |
 |------------------------------------------------------------|------------------|------------------|-----------------|---------------------|
 | companyName                                                | ![Advanced][AQP] | ![Advanced][AQP] |                 | ![Advanced][AQP]    |
 | department                                                 | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
@@ -184,7 +184,7 @@ The following properties of the **orgContact** entity support `$count` of a coll
 
 ## Service principal properties
 
-| FormattedProperty                                                          | eq                  | startsWith          | ge/le           | eq Null             |
+| Property                                                          | eq                  | startsWith          | ge/le           | eq Null             |
 |----------------------------------------------------------------------------|---------------------|---------------------|-----------------|---------------------|
 | accountEnabled                                                             | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
 | alternativeNames/any(p:p)                                                  | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
@@ -226,7 +226,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 
 ## User properties
 
-| FormattedProperty                                                   | eq                  | startsWith          | ge/le            | eq Null             |
+| Property                                                   | eq                  | startsWith          | ge/le            | eq Null             |
 |---------------------------------------------------------------------|---------------------|---------------------|------------------|---------------------|
 | accountEnabled                                                      | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | ageGroup                                                            | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
@@ -301,7 +301,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 
 The following properties of the **user** entity support `$count` of a collection in a filter expression.
 
-| FormattedProperty                   | eq Count 0       | eq Count 1          |
+| Property                   | eq Count 0       | eq Count 1          |
 |-------------------------------------|------------------|---------------------|
 | assignedLicenses/$count             | ![Advanced][AQP] | ![NotSupported][NS] |
 | onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
