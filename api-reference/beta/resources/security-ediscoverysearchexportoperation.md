@@ -79,7 +79,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|search|[ediscoverySearch](../resources/security-ediscoverysearch.md)|The eDiscovery searches under each case.|
+|search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|The eDiscovery searches under each case.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
