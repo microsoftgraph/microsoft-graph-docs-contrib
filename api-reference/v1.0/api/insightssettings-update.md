@@ -11,20 +11,19 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Update privacy settings to display or return the specified type of insights in an organization. The type of settings can be item insights.
+Update privacy settings to display or return the specified type of insights in an organization. Currently, [itemInsights](../resources/iteminsights.md) is the only supported type of settings.
 
-To learn more about customizing insights privacy for your organization, see:
--  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy)
+To learn more about customizing insights privacy for your organization, see [Customize item insights privacy in Microsoft Graph](/graph/insights-customize-item-insights-privacy).
 
 ## Permissions
 
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### To update **item insights** settings for an organization
+### To update itemInsights settings for an organization
 <!-- { "blockType": "permissions", "name": "insightssettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/insightssettings-update-permissions.md)]
 
->**Note:** Using delegated permissions for this operation to update insights for contacts, item, or people requires the signed-in user to have a Global Administrator role.
+>**Note:** Using delegated permissions for this operation to update item insights requires the signed-in user to have a Global Administrator role.
 
 ## HTTP request
 
@@ -49,9 +48,9 @@ PATCH /admin/people/itemInsights
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |disabledForGroup|String| The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
-|isEnabledInOrganization|Boolean| `true` if the specified insight type is enabled for the organization; `false` if the specified insight type is disabled for all users without exceptions. Default is `true`. Optional.|
+|isEnabledInOrganization|Boolean| `true` if the specified insight type is enabled for the organization; `false` if the specified insight type is disabled for all users without exceptions. The default value is `true`. Optional.|
 
->**Note:** This operation does not verify the **disabledForGroup** property value if you include it in the request body. If you set the **disabledForGroup** property to a String, this operation does not check the existence of the corresponding Microsoft Entra group. This means, if you set **disabledForGroup** to a Microsoft Entra group that does not exist or is deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable the specified type of insights for _all_ the users in the organization.
+>**Note:** This operation doesn't verify the **disabledForGroup** property value if you include it in the request body. If you set the **disabledForGroup** property to a String, this operation doesn't check the existence of the corresponding Microsoft Entra group. This means, if you set **disabledForGroup** to a Microsoft Entra group that doesn't exist or is deleted afterwards, this operation can't identify any group membership and disable item insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation enables the specified type of insights for _all_ the users in the organization.
 
 ## Response
 
