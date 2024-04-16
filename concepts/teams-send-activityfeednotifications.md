@@ -81,7 +81,7 @@ The following tabs show the types of activity feed notification cards that you c
 
 **iOS**
 
-:::image type="content" source="images/iOS.png" alt-text="Screenshot shows the activity feed notifications in a iOS." border="false":::
+:::image type="content" source="images/ios-notification.png" alt-text="Screenshot shows the activity feed notifications in a iOS." border="false":::
 
 ---
 
