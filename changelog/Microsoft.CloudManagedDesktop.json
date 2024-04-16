@@ -4975,7 +4975,7 @@
                 "ApiChange": "Member",
                 "ChangedApiName": "shared",
                 "ChangeType": "Deprecation",
-                "Description": "Deprecated the **shared** member to the **cloudPcProvisioningType** enumeration. The **shared** member is deprecated and will stop returning data on April 30, 2027. Going forward, use the **sharedbyuser** member.",
+                "Description": "Deprecated the **shared** member on the **cloudPcProvisioningType** enumeration. 
                 "Target": "cloudPcProvisioningType"
               },
               {
