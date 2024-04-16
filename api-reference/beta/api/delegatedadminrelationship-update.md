@@ -66,9 +66,9 @@ If successful, this method returns either a `200 OK` or a `202 Accepted` respons
 |Location|The location of the long-running operation.|
 |Retry-After|The time after which a subsequent API call can be made to the Location URL to check the status of the long-running operation.|
 
-This method returns a `202 Accepted` if you remove Microsoft Entra Role Global Administrator from the existing relationship while its **status** property is `active`. It includes a URL in the Location header for monitoring the operation's completion.
+This method returns a `202 Accepted` if you remove Microsoft Entra Role Global Administrator from the existing relationship while its **status** property is `active`. The response  includes a URL in the Location header for monitoring the operation's completion.
 
-If you supply values other than Microsoft Entra Roles to the ones in the existing object, the API returns a `200 OK` response code with the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
+If you supply property other than [delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md) to the ones in the existing [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object, the API returns a `200 OK` response code with the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
 
 ## Examples
 
