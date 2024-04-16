@@ -138,7 +138,7 @@ Content-Type: application/json
 
 ## Check scope of workflow
 
-Now that the workflow is created take note of your workflow ID, and then add the user you want to test the workflow on to the *Sales* department. After 15-30 minutes you can check to see if the user is queued to have the workflow run for them by checking the execution scope of your workflow. To see if a user is queued to have the workflow run for them, you would check execution scope by doing the following:
+Now that the workflow is created, take note of your workflow ID, and then add the user you want to test the workflow on to the *Sales* department. After 15-30 minutes, you can determine whether the user is queued to have the workflow run for them by checking the execution scope of your workflow. To determine whether a user is queued to have the workflow run for them, use the following request.
 
 <!-- {
   "blockType": "request",
