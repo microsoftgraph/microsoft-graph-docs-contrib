@@ -86,9 +86,9 @@ For details about how to validate tokens and decrypt the payload, see [Set up ch
 ## Event notifications types
 
 The following are the supported meeting events:
-- callStarted - Occurs when the meeting call has started.
-- callEnded - Occurs when the meeting call has ended.
-- rosterUpdate - Occurs when a participant joins or exits the meeting call.
+- callStarted - Events for when the meeting call has started.
+- callEnded - Events for when the meeting call has ended.
+- rosterUpdate - Events for when a participant joins and exits the call or lobby.
 
 ### Decrypted payload examples
 
@@ -170,7 +170,7 @@ The following are the supported meeting events:
         }
       },
       "isInLobby": false,
-      "@removed": {
+      "removedState": {
         "@odata.type": "#microsoft.graph.removedState",
         "reason": "Participant exited the call."
       },
@@ -180,7 +180,7 @@ The following are the supported meeting events:
 }
 ```
 
-The **rosterUpdated** event contain a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **@removed** property represent participants that have exited the collection. See [participant](/graph/api/resources/participant) for more details on participants information.
+The **rosterUpdated** event contain a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **removedState** property represent participants that have exited the collection. See [participant](/graph/api/resources/participant) for more details on participants information.
 
 ## Related content
 
