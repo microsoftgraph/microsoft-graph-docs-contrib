@@ -3,7 +3,7 @@ title: "plannerBaseApprovalAttachment resource type"
 description: "Represents the base approval attachment that is added to a plannerTask, which contains the common properties that are required for an approval."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
