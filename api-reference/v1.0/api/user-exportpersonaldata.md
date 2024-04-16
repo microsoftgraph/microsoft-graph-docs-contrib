@@ -4,7 +4,7 @@ description: "Submits a data policy operation request, made by a Company Adminis
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
