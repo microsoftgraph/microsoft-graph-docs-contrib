@@ -603,6 +603,14 @@
         {
           "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
           "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/graph/api/educationassignment-list-gradingcategory?view=graph-rest-beta) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Method",
           "ChangedApiName": "PUT",
           "ChangeType": "Addition",
           "Description": "Added the [post](https://learn.microsoft.com/graph/api/educationassignment-post-gradingcategory?view=graph-rest-beta) operation to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
@@ -622,6 +630,14 @@
           "ChangedApiName": "Update",
           "ChangeType": "Addition",
           "Description": "Added the [update] (https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-beta) operation to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/graph/api/educationassignment-list-gradingcategory?view=graph-rest-beta) operation to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-beta) resource.",
           "Target": "educationAssignmentSettings"
         },
         {
@@ -647,6 +663,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [educationGradingCategory](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingCategory?view=graph-rest-beta) resource",
           "Target": "educationGradingCategory"
+        },
+        {
+          "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
+          "ApiChange": "Resource",
+          "ChangedApiName": "POST",
+          "ChangeType": "Change",
+          "Description": "Added the **gradingCategories** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
         }
       ],
       "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
