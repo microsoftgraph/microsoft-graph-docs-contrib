@@ -17211,12 +17211,12 @@ items:
                 href: api/alert-updatealerts.md
           - name: Partner Security
             items:
-              - name: Partner Security Alerts
+              - name: Security Alerts
                 items:
                   - name: Overview
                     displayName: CSP Partner's Customer Security Alerts API
                     href: resources/partner.security-partnersecurityalert-api-overview.md
-                  - name: API
+                  - name: Partner security alert
                     href: resources/partner.security-partnersecurityalert.md
                     items:
                       - name: List
