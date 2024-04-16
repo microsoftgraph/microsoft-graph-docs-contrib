@@ -10,12 +10,11 @@ ms.subservice: "teams"
 
 The Microsoft Teams activity feed notifies users of changes to enable them to triage items that require attention. Activity feed notifications in Teams including the following features:
 
-* Native integration with Teams that brings the user seamlessly into the Tab app and additional user engagement from **Activity** pane to your app.
+* Native integration with Teams brings the user seamlessly into the Tab app and provides additional user engagement from **Activity** pane to your app.
 * Operating system notifications in Teams desktop and mobile clients that include a pop-up and sound.
 * Customizable notification content that enables you to show more or less preview content to the user.
 * Ability to deep link your tab, personal app, bot message, or Adaptive Card to a notification to increase user engagement with your app.
 * Ability to send activity feed notification to multiple recipients, such as batch notifications to a group of users.
-* App manifest (formerly Teams app manifest) localization to support templated text in activity feed notifications.
 
 You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. In this way, you can provide richer experiences and engage users by helping them stay up to date with changes in the tools and workflows they use.
 
