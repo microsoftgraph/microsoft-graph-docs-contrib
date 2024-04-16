@@ -81,7 +81,7 @@ Depending on the resource and the permission type (delegated or application) req
 > - OnlineMeetingTranscript.Read.Chat
 > - ChatSettings.Read.Chat
 > - ChatSettings.ReadWrite.Chat
->- Chat.Manage.Chat
+> - Chat.Manage.Chat
 > - ChannelMessage.Read.Group
 > - ChatMember.Read.Chat
 
