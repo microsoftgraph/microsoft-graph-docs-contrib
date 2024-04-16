@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "0502954c-40a6-4bdd-9613-5c399ef7e93f",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0).",
+          "Target": "application"
+        }
+      ],
+      "Id": "0502954c-40a6-4bdd-9613-5c399ef7e93f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-15T00:00:00.304139Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0502954c-40a6-4bdd-9613-5c399ef7e93f",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta).",
+          "Target": "application"
+        }
+      ],
+      "Id": "0502954c-40a6-4bdd-9613-5c399ef7e93f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-15T00:00:00.304139Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "92b81fc6-e655-4cba-abc4-24def81fa8d0",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
