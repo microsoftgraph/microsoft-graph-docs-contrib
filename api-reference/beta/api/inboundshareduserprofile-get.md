@@ -2,6 +2,7 @@
 title: "Get inboundSharedUserProfile"
 description: "Read the properties of an inboundSharedUserProfile."
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
