@@ -68,7 +68,7 @@ The following example shows how an admin updates the **disabledForGroup** privac
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/admin/people/itemInsights
+PATCH https://graph.microsoft.com/v1.0/admin/people/itemInsights
 Content-type: application/json
 
 {
