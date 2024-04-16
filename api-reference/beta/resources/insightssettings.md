@@ -1,6 +1,6 @@
 ---
 title: "insightsSettings resource type"
-description: "Represents privacy settings for insights."
+description: "Represents settings to calculate and manage the display or programmatic return of a specific type of insights in an organization."
 ms.localizationpriority: medium
 author: "simonhult"
 ms.subservice: "insights"
@@ -8,6 +8,8 @@ doc_type: resourcePageType
 ---
 
 # insightsSettings resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List contactInsights](../api/organizationsettings-list-contactinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of the [insightsSettings](insightssettings.md) resource for displaying contact insights in an organization. |
-| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the properties of the [insightsSettings](insightssettings.md) resource for displaying item insights in an organization. |
+| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) collection | Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning item insights in an organization. |
 | [List peopleInsights](../api/organizationsettings-list-peopleinsights.md) | [insightsSettings](insightssettings.md) | Get the properties of the [insightsSettings](insightssettings.md) resource for displaying people insights in an organization. |
 | [Update insightsSettings](../api/insightssettings-update.md) | [insightsSettings](insightssettings.md) | Update the properties of an **insightsSettings** resource to manage the display or return of the specified type of insights, which can be contact insights, item insights, or people insights. |
 
@@ -35,8 +37,8 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` if insights of the specified type are enabled for the organization; `false` if insights of the specified type are disabled for all users without exceptions. Default is `true`. Optional.|
 |disabledForGroup|String| The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
+|isEnabledInOrganization|Boolean| `true` if insights of the specified type are enabled for the organization; `false` if insights of the specified type are disabled for all users without exceptions. The default value is `true`. Optional.|
 
 ## JSON representation
 
