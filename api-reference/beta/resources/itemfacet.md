@@ -26,6 +26,7 @@ Represents the abstract base type that all resource types in the [profile](profi
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created.|
 |source|[personDataSource](../resources/persondatasource.md)|Where the values within an entity originated if synced from another service.|
+|sources|[profileSourceAnnotation](../resources/profileSourceAnnotation.md)|Where the values within an entity originated if synced from another source.|
 
 ## Relationships
 None.
@@ -58,7 +59,10 @@ The following JSON representation shows the resource type.
   },
   "source": {
     "@odata.type": "microsoft.graph.personDataSource"
-  }
+  },
+  "sources": {
+    "@odata.type": "microsoft.graph.profileSourceAnnotation"
+  },
 }
 ```
 
