@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "e9a68508-c3db-45c4-b887-37c6a6b07162",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileSourceAnnotation",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileSourceAnnotation](https://learn.microsoft.com/en-us/graph/api/resources/profileSourceAnnotation?view=graph-rest-beta) resource.",
+          "Target": "profileSourceAnnotation"
+        },
+        {
+          "Id": "e9a68508-c3db-45c4-b887-37c6a6b07162",
+          "ApiChange": "Property",
+          "ChangedApiName": "sources",
+          "ChangeType": "Addition",
+          "Description": "Added the **sources** property to the [itemFacet](https://learn.microsoft.com/en-us/graph/api/resources/itemFacet?view=graph-rest-beta) resource.",
+          "Target": "itemFacet"
+        },
+        {
+          "Id": "e9a68508-c3db-45c4-b887-37c6a6b07162",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileSource](https://learn.microsoft.com/en-us/graph/api/resources/profileSource?view=graph-rest-beta) resource.",
+          "Target": "profileSource"
+        }
+      ],
+      "Id": "e9a68508-c3db-45c4-b887-37c6a6b07162",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-16T15:57:02.8925834Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
           "ApiChange": "Resource",
           "ChangedApiName": "profileCardAnnotation",
