@@ -51,7 +51,7 @@ The components include:
 |**Text preview**|Shows a truncated line from the start of the notification.|
 |**Topic**|Resource being talked about or text value of topic from Request Body.|
 
-The following image shows an example of an activity feed notification about a user mentioned in a Yammer community.
+The following image shows an example of an activity feed notification in Teams about a user shared a post in app:
 
 ![An image of a Yammer activity feed notification](images/teams-activityfeednotifications/examplefeednotification.png)
 
