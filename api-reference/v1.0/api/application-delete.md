@@ -3,7 +3,7 @@ title: "Delete application"
 description: "Delete an application object."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -92,7 +92,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

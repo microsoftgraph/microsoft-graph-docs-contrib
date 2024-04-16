@@ -3,7 +3,7 @@ title: "delegatedAdminServiceManagementDetail resource type"
 description: "Contains the management details of a service in the customer tenant that's managed by delegated administration."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: resourcePageType
 ---
 
@@ -18,21 +18,21 @@ Contains the management details of a service in the customer tenant that's manag
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminServiceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md)|Get a list of the **delegatedAdminServiceManagementDetail** objects and their properties.|
+|[List delegatedAdminServiceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md) collection|Get a list of the **delegatedAdminServiceManagementDetail** objects and their properties.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier of a managed service. Read-only.|
-|serviceName|String|The name of a managed service. Read-only.|
 |serviceManagementUrl|String|The URL of the management portal for the managed service. Read-only.|
+|serviceName|String|The name of a managed service. Read-only.|
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -45,7 +45,7 @@ Here's a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
   "id": "String (identifier)",
-  "serviceName": "String",
-  "serviceManagementUrl": "String"
+  "serviceManagementUrl": "String",
+  "serviceName": "String"
 }
 ```

@@ -3,7 +3,7 @@ title: "customAuthenticationExtension resource type"
 description: "Custom authentication extensions let you interact with external systems during a user authentication session."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -18,6 +18,8 @@ Custom authentication extensions define interactions with external systems durin
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+
+You can have a maximum of 100 custom extension policies.
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 

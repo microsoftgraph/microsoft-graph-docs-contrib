@@ -3,7 +3,7 @@ title: "Delete timeOff"
 description: "Delete a timeOff instance from a schedule."
 author: "aaku"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -19,17 +19,15 @@ Delete a [timeOff](../resources/timeoff.md) instance from a [schedule](../resour
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All* |
+This API supports admin permissions. Global admins can access groups that they aren't a member of.
 
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+<!-- { "blockType": "permissions", "name": "timeoff_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/timeoff-delete-permissions.md)]
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+> [!NOTE]
+> The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
 
 ## HTTP request
 

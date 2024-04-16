@@ -4,7 +4,7 @@ description: "Install an app in the personal scope of the specified user."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Install app for user

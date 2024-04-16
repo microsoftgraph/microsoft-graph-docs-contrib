@@ -2,8 +2,9 @@
 title: "tenantReference resource type"
 description: "Represents the information used to identify a Microsoft Entra tenant."
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

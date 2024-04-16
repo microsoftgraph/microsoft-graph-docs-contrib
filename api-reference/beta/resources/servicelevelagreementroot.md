@@ -3,7 +3,7 @@ title: "serviceLevelAgreementRoot resource type"
 description: "A placeholder to allow for the desired URL path for Microsoft Entra SLA attainment."
 author: "SarahBar"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

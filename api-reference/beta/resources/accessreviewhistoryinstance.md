@@ -3,7 +3,7 @@ title: "accessReviewHistoryInstance resource type"
 description: "Represents a recurrence of an accessReviewHistoryDefinition object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -39,7 +39,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

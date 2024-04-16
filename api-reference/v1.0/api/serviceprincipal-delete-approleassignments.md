@@ -3,7 +3,7 @@ title: "Delete appRoleAssignment"
 description: "Delete an appRoleAssignment from a service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "sureshja"
 ---
 
@@ -58,7 +58,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here is an example of the request to delete an app role assignment.
+The following example shows a request to delete an app role assignment.
 
 
 # [HTTP](#tab/http)

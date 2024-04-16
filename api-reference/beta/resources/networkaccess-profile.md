@@ -3,7 +3,7 @@ title: "network access profile resource type"
 description: "A profile serves as a container for forwarding policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -37,7 +37,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Traffic forwarding policies associated with this profile.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,7 +3,7 @@ title: "relation resource type"
 description: "Represents the relationship between terms in a term store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 |toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The to [term] of the relation. The term to which the relationship is defined.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

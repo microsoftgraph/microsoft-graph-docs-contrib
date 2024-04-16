@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
@@ -46,6 +46,26 @@ Namespace: microsoft.graph
 |:-------------------|
 | clientSecret       |
 | certificate        |
+| unknownFutureValue |
+
+### plannerTaskCompletionRequirements values
+
+| Member             |
+|:-------------------|
+| none               |
+| checklistCompletion|
+| unknownFutureValue |
+| formCompletion     |
+| approvalCompletion |
+
+### plannerApprovalStatus values 
+
+| Member             |
+|:-------------------|
+| requested          |
+| approved           |
+| rejected           |
+| cancelled          |
 | unknownFutureValue |
 
 ### applicationKeyOrigin values
@@ -112,7 +132,7 @@ Namespace: microsoft.graph
 | others             |
 | unknownFutureValue |
 
-### releaseType values 
+### releaseType values
 
 |Member|
 |:---|
@@ -1277,6 +1297,8 @@ Namespace: microsoft.graph
 | gpsLocationCondition                              |
 | riskBasedPolicy                                   |
 | unknownFutureValue                                |
+| scopeBasedAuthRequirementPolicy                   |
+| authenticationStrengths                           |
 
 
 ### riskDetail values
@@ -1298,6 +1320,9 @@ Namespace: microsoft.graph
 | adminConfirmedServicePrincipalCompromised |
 | adminDismissedAllRiskForServicePrincipal  |
 | m365DAdminDismissedDetection              |
+| userChangedPasswordOnPremises             |
+| adminDismissedRiskForSignIn               |
+| adminConfirmedAccountSafe                 |
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -1449,6 +1474,7 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+|excused|
 
 ### educationFeedbackResourceOutcomeStatus values
 
@@ -1816,6 +1842,14 @@ Namespace: microsoft.graph
 |manager
 |system
 |unknownFutureValue
+
+### windowsSettingType values 
+
+| Member             |
+| :----------------- |
+| roaming            |
+| backup             |
+| unknownFutureValue |
 
 ### workforceIntegrationEncryptionProtocol values
 
@@ -3081,6 +3115,8 @@ Possible values for user account types (group membership), per Windows definitio
 | Member
 |:-------
 | low
+| medium
+| high
 
 ### permissionType values
 
@@ -3115,6 +3151,14 @@ Possible values for user account types (group membership), per Windows definitio
 | custom  |
 | gallery |
 | unknownFutureValue |
+
+### cloudPcPolicySettingType values 
+
+|Member|
+|:---|
+|region|
+|singleSignOn|
+|unknownFutureValue|
 
 ### chatType values
 
@@ -4283,6 +4327,18 @@ Possible values for user account types (group membership), per Windows definitio
 |tenant|
 |unknownFutureValue|
 
+### rootDomains values
+
+| Member|
+|:---|
+|none|
+|all|
+|allFederated|
+|allManaged|
+|enumerated|
+|allManagedAndEnumeratedFederated|
+|unknownFutureValue|
+
 ### allowedRolePrincipalTypes values
 
 |Member|
@@ -4598,13 +4654,23 @@ Possible values for user account types (group membership), per Windows definitio
 |noRecentDataCollected|
 |unknownFutureValue|
 
-### printReleaseType values 
+### devicePlatformType values
 
-|Member|
-|:---|
-|direct|
-|qrCode|
-|unknownFutureValue|
+| Member             |
+|:-------------------|
+| android            |
+| androidForWork     |
+| iOS                |
+| macOS              |
+| windowsPhone81     |
+| windows81AndLater  |
+| windows10AndLater  |
+| androidWorkProfile |
+| unknown            |
+| androidAOSP        |
+| androidMobileApplicationManagement|
+| iOSMobileApplicationManagement|
+| unknownFutureValue|
 
 ### bookingPageAccessControl values 
 
@@ -4612,6 +4678,15 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |unrestricted|
 |restrictedToOrganization|
+|unknownFutureValue|
+
+### bookingsServiceAvailabilityType values 
+
+|Member|
+|:---|
+|bookWhenStaffAreFree|
+|notBookable|
+|customWeeklyHours|
 |unknownFutureValue|
 
 ### conditionalAccessTransferMethods values

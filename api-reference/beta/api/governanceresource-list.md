@@ -3,7 +3,7 @@ title: "List governanceResources"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
 ---
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

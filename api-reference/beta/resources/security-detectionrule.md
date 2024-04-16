@@ -1,9 +1,9 @@
 ---
 title: "detectionRule resource type"
-description: "Represents a custom detection rule written in **Advanced hunting** to automatically recognize security events when they occur, and to trigger alerts and response actions."
+description: "Represents a custom detection rule written in Advanced hunting to automatically recognize security events when they occur, and to trigger alerts and response actions."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,21 +13,23 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom detection rules are types of protection rules you can design and tweak using [advanced hunting](../api/security-security-runhuntingquery.md) queries.
+Represents a custom detection rule written in **Advanced hunting** to automatically recognize security events when they occur, and to trigger alerts and response actions.
+
+Custom detection rules are types of protection rules that you can design and tweak by using [advanced hunting](../api/security-security-runhuntingquery.md) queries.
 These rules let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints.
 A custom detection rule automatically recognizes security events when they occur, and triggers alerts and response actions.
-You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
+You can set them to run at regular intervals, generating alerts and taking response actions whenever matches occur.
 
 Inherits from [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md).
 
 ## Methods
 | Method                                                                       | Return type                                                                                 | Description                                                                                                                         |
 |:-----------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| [List detectionRules](../api/security-detectionrule-list.md)                 | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) collection | Get a list of the [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) objects and their properties.    |
-| [Get detectionRule](../api/security-detectionrule-get.md)                    | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)            | Read the properties and relationships of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object. |
-| [Create detectionRule](../api/security-detectionrule-post-detectionRules.md) | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)            | Create a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md).                                          |
-| [Update detectionRule](../api/security-detectionrule-update.md)              | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)            | Update the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.                 |
-| [Delete detectionRule](../api/security-detectionrule-delete.md)              | None                                                                                        | Delete a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.                                   |
+| [List](../api/security-detectionrule-list.md)                 | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) collection | Get a list of the [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) objects and their properties.    |
+| [Get](../api/security-detectionrule-get.md)                    | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)            | Read the properties and relationships of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object. |
+| [Create](../api/security-detectionrule-post-detectionRules.md) | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)            | Create a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md).                                          |
+| [Update](../api/security-detectionrule-update.md)              | [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md)            | Update the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.                 |
+| [Delete](../api/security-detectionrule-delete.md)              | None                                                                                        | Delete a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object.                                   |
 
 ## Properties
 | Property             | Type                                                                                 | Description                                                                                                                                               |

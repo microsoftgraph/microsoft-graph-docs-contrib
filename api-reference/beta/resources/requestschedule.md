@@ -3,7 +3,7 @@ title: "requestSchedule resource type"
 description: "An request schedule can be included in an access package assignment request and is present in an access package assignment. In PIM, use this resource to define the schedule for when the principal will have an eligible or active role assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "migrationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationStatus** enumeration type.",
+          "Target": "migrationStatus"
+        },
+        {
+          "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relyingPartyDetailedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingPartyDetailedSummary?view=graph-rest-1.0) resource and its associated methods.",
+          "Target": "relyingPartyDetailedSummary"
+        },
+        {
+          "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getRelyingPartyDetailedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [getRelyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/reportRoot-getRelyingPartyDetailedSummary?view=graph-rest-1.0) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportRoot"
+        }
+      ],
+      "Id": "009b9861-5f94-4e3f-a903-1508a8ddbb7e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-01T00:00:00.5014179Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "59d08010-8301-4111-b32b-251f53a5e836",
           "ApiChange": "Enumeration",
           "ChangedApiName": "filteringPolicyAction",
@@ -47,6 +81,100 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-14T06:17:24.8888112Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ae2d8960-db43-4dbb-98e9-5bec853afa97",
+          "ApiChange": "Member",
+          "ChangedApiName": "scopeBasedAuthRequirementPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the `scopeBasedAuthRequirementPolicy` member to the **requirementProvider** enumeration.",
+          "Target": "requirementProvider"
+        },
+        {
+          "Id": "ae2d8960-db43-4dbb-98e9-5bec853afa97",
+          "ApiChange": "Member",
+          "ChangedApiName": "authenticationStrengths",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationStrengths` member to the **requirementProvider** enumeration.",
+          "Target": "requirementProvider"
+        }
+      ],
+      "Id": "ae2d8960-db43-4dbb-98e9-5bec853afa97",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-28T15:28:45.6996336Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0e3407ba-55b3-4798-9d4b-c7e58b25d6b6",
+          "ApiChange": "Member",
+          "ChangedApiName": "userChangedPasswordOnPremises",
+          "ChangeType": "Addition",
+          "Description": "Added the `userChangedPasswordOnPremises` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "0e3407ba-55b3-4798-9d4b-c7e58b25d6b6",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminDismissedRiskForSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminDismissedRiskForSignIn` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "0e3407ba-55b3-4798-9d4b-c7e58b25d6b6",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminConfirmedAccountSafe",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminConfirmedAccountSafe` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "0e3407ba-55b3-4798-9d4b-c7e58b25d6b6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-05T00:00:00.2909376Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3b33c800-075c-44f3-b922-ed3e7bee6503",
+          "ApiChange": "Member",
+          "ChangedApiName": "userChangedPasswordOnPremises",
+          "ChangeType": "Addition",
+          "Description": "Added the `userChangedPasswordOnPremises` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "3b33c800-075c-44f3-b922-ed3e7bee6503",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminDismissedRiskForSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminDismissedRiskForSignIn` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "3b33c800-075c-44f3-b922-ed3e7bee6503",
+          "ApiChange": "Member",
+          "ChangedApiName": "adminConfirmedAccountSafe",
+          "ChangeType": "Addition",
+          "Description": "Added the `adminConfirmedAccountSafe` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "3b33c800-075c-44f3-b922-ed3e7bee6503",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-05T00:00:00.2913103Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },

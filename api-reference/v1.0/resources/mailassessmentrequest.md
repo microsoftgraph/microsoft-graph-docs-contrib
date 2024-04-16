@@ -3,7 +3,7 @@ title: "mailAssessmentRequest resource type"
 description: "Used to create and retrieve a mail threat assessment."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -45,7 +45,7 @@ When you create a mail threat assessment request, the mail should be received by
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

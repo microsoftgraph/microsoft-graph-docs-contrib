@@ -4,7 +4,7 @@ description: "Delete conversationMember from a channel."
 author: "akjo"
 doc_type: "apiPageType"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Delete conversationMember
@@ -47,7 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 
 ### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

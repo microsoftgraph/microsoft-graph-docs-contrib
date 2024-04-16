@@ -3,7 +3,7 @@ title: "fileStorageContainer: activate"
 description: "Activate a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "accessPackageUserDirectoryAttributeStore resource type"
 description: "The type used to indicate that values will be saved to the user object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

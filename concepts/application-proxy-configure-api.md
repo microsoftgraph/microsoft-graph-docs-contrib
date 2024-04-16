@@ -2,10 +2,11 @@
 title: "Configure application proxy using Microsoft Graph APIs"
 description: "Provide remote access and single sign-on to on-premises applications by configuring Microsoft Entra application proxy using Microsoft Graph APIs."
 author: FaithOmbongi
+ma.author: ombongifaith
 ms.reviewer: dhruvinrshah, arpadg
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 02/28/2024
 #customer intent: As a developer, I want to configure Microsoft Entra application proxy programmatically using Microsoft Graph, so that I can automate the process of providing secure remote access and single sign-on to on-premises web applications for users.
 ---
@@ -298,35 +299,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-update-application-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-add-uris-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-update-application-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-add-uris-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-update-application-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-add-uris-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-update-application-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-add-uris-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-update-application-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-add-uris-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-update-application-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-add-uris-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-update-application-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-add-uris-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-update-application-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-add-uris-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -361,35 +362,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-update-application-2-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-update-onpremisespublishing-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-update-application-2-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-update-onpremisespublishing-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-update-application-2-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-update-onpremisespublishing-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-update-application-2-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-update-onpremisespublishing-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-update-application-2-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-update-onpremisespublishing-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-update-application-2-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-update-onpremisespublishing-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-update-application-2-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-update-onpremisespublishing-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-update-application-2-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-update-onpremisespublishing-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -496,7 +497,7 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-create-connectorgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
@@ -504,11 +505,11 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-create-connectorgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-create-connectorgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -516,15 +517,15 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-create-connectorgroup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-create-connectorgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-create-connectorgroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

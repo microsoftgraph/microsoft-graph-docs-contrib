@@ -3,7 +3,7 @@ title: "availabilityItem resource type"
 description: "Indicates the status of a staff member for a given time slot."
 author: "kwekua"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Indicates the status of a [staff member](bookingstaffmember.md) for a given time
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

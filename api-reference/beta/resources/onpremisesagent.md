@@ -3,7 +3,7 @@ title: "onPremisesAgent resource type"
 description: "onPremisesAgent resource type."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -42,7 +42,7 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

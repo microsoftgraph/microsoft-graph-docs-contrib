@@ -3,7 +3,7 @@ title: "requiredResourceAccess resource type"
 description: "Specifies the set of OAuth 2.0 permission scopes and app roles."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -22,7 +22,7 @@ Specifies the set of OAuth 2.0 permission scopes and app roles under the specifi
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

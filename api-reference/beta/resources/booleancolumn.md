@@ -4,7 +4,7 @@ description: "Indicates that the column in a columnDefinition holds a boolean va
 title: "booleanColumn resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 # booleanColumn resource type
 

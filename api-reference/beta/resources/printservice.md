@@ -3,7 +3,7 @@ title: printService resource type
 description: Represents a Microsoft Entra tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (for example, discovery, notifications, registration and IPP) and have one or more endpoints.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ Represents a Microsoft Entra tenant-specific description of a print service inst
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "privilegedAccessGroupAssignmentSchedule resource type"
 description: "Represents the schedule of membership or ownership assignments to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -45,7 +45,7 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 |principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request to the group that's governed by PIM. Supports `$expand` and `$select` nested in `$expand` for **id** only.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

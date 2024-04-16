@@ -3,7 +3,7 @@ title: "run: summary"
 description: "Get a summary of runs for a specified time period."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,7 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

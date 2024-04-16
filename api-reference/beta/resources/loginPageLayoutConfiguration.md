@@ -3,7 +3,7 @@ title: "loginPageLayoutConfiguration resource type"
 description: "Contains details of the layout of the sign-in page for a tenant."
 author: "quievey"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Contains details of the layout of the sign-in page for a tenant.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"

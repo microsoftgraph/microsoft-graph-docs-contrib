@@ -1,11 +1,12 @@
 ---
 title: "Reduce missing change notifications and removed subscriptions"
 description: "Subscribe to Microsoft Graph lifecycle notifications to help you minimize the risk of missed change notifications or removed subscriptions."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
+ms.topic: how-to
 ms.localizationpriority: high
-ms.prod: "change-notifications"
+ms.prod: change-notifications
 ms.custom: graphiamtop20
 ms.date: 12/27/2023
 #customer intent: As a developer, I want to manage the lifecycle events for change notifications, so that I can build resilient and "always on" apps that receive notifications of all changes.

@@ -3,7 +3,7 @@ title: "Get educationAssignmentResource"
 description: "Get the properties of a specific resource on an assignment.  "
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

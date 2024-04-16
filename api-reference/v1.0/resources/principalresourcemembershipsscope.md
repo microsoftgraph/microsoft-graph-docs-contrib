@@ -3,7 +3,7 @@ title: "principalResourceMembershipsScope resource type"
 description: "Allows for the selection of access review scope to review access of the selected principals to the selected resources."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ You must also specify the **@odata.type** type property with the value `#microso
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.principalResourceMembershipsScope"

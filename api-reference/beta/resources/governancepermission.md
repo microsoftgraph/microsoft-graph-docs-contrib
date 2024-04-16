@@ -3,7 +3,7 @@ title: "governancePermission resource type"
 description: "Represents the access permission that a governanceSubject has to a specific governanceResource.  "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
 ---
@@ -28,7 +28,7 @@ Represents the access permission that a [governanceSubject](../resources/governa
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

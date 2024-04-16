@@ -3,7 +3,7 @@ title: "administrativeUnit resource type"
 description: "An administrative unit provides a conceptual container for user, group, and device directory objects."
 ms.localizationpriority: medium
 author: "DougKirschner"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -63,7 +63,7 @@ This resource supports:
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

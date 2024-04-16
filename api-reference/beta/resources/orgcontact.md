@@ -1,9 +1,9 @@
 ---
 title: "orgContact resource type"
-description: "Here is a JSON representation of the resource"
+description: "The following JSON representation shows the resource type."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -71,7 +71,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

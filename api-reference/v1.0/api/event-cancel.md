@@ -3,7 +3,7 @@ title: "event: cancel"
 description: "This action allows the organizer of a meeting to send a cancellation message and cancel the event. "
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -67,7 +67,7 @@ If successful, this method returns `202 Accepted` response code. It doesn't retu
 ## Example
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -119,7 +119,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,9 +1,9 @@
 ---
 title: "filePlanDescriptor resource type"
-description: "Represents a group of columns associated with a particular retention label, to improve the manageability and organization of the content you need to label."
+description: "Represents a set of optional descriptors to supplement a retention label and improve the manageability and organization of content in Microsoft 365 for an organization."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a group of columns to improve the manageability and organization of the content you need to label.
+Represents a _set_ of optional file plan descriptors to supplement a [retention label](security-retentionlabel.md) and improve the manageability and organization of Microsoft 365 content.
 
+You can add a descriptor by using the POST operation of the corresponding file plan descriptor _template_, and specifying data for the descriptor. For example, to include a [citation](security-citation.md) descriptor, use the [create citationTemplate](../api/security-labelsroot-post-citations.md) operation. Similarly, you can use the GET or DELETE operations on the template resource for the descriptor.
+
+To list the descriptors that supplement a retention label, use the [GET](../api/security-retentionlabel-get.md) operation on that [retentionLabel](security-retentionlabel.md) resource and  apply `$expand` on the **descriptors** relationship.
+
+For information on how retention labels and file plan descriptors work in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), see [Use file plan to create and manage retention labels](/purview/file-plan-manager).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -42,7 +47,7 @@ None.
 |filePlanReferenceTemplate|[microsoft.graph.security.filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md)|Specifies a unique alpha-numeric identifier for an organization’s retention schedule.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
