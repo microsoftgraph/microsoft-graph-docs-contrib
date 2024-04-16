@@ -1,19 +1,19 @@
 ---
-title: "List insightsSettings"
-description: "Retrieve properties of insightsSettings object for displaying or returning item insights in an organization."
+title: "List itemInsights"
+description: "Get the properties of an insightsSettings object for displaying or returning item insights in an organization."
 author: "larsb"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
-# List insightsSettings
+# List itemInsights
 
 Namespace: microsoft.graph
 
 Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning item insights in an organization.
 
-To learn how to customize the privacy of item insights in an organization, see [Customize item insights privacy](/graph/insights-customize-item-insights-privacy).
+To learn how to customize the privacy of item insights in an organization, see [Customize item insights privacy in Microsoft Graph](/graph/insights-customize-item-insights-privacy).
 
 ## Permissions
 
@@ -35,6 +35,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /admin/people/itemInsights
 ```
+
+## Optional query parameters
+TODO
 
 ## Request headers
 
@@ -61,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/people/itemInsights
+GET https://graph.microsoft.com/v1.0/admin/people/itemInsights
 ```
 
 ### Response
