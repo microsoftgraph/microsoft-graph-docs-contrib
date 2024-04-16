@@ -1,9 +1,9 @@
 ---
 title: "Dictionary resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "A bag of name-value pairs value pairs"
+author: "manusidd"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A bag of name-value pairs value pairs.
 
 ## Properties
 |Property|Type|Description|

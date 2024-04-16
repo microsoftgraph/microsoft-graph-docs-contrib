@@ -7,7 +7,7 @@ ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
 ---
 
-### securityAlertConfidence values 
+# securityAlertConfidence values 
 
 
 
@@ -18,7 +18,7 @@ doc_type: resourcePageType
 |high|
 |unknownFutureValue|
 
-### securityAlertResolvedReason values 
+# securityAlertResolvedReason values 
 
 
 
@@ -29,7 +29,7 @@ doc_type: resourcePageType
 |fraud|
 |unknownFutureValue|
 
-### securityAlertSeverity values 
+# securityAlertSeverity values 
 
 
 
@@ -41,7 +41,7 @@ doc_type: resourcePageType
 |low|
 |unknownFutureValue|
 
-### securityAlertStatus values 
+# securityAlertStatus values 
 
 
 

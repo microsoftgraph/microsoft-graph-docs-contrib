@@ -48,7 +48,6 @@ PATCH /security/partner/securityAlerts/{partnerSecurityAlertId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |status|microsoft.graph.partner.security.securityAlertStatus|The status of the alert. The possible values are: `active`, `resolved`, `investigating`, `unknownFutureValue`. Required.|

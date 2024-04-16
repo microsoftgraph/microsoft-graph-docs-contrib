@@ -614,7 +614,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "partnerSecurity",
           "ChangeType": "Addition",
-          "Description": "Added the [partnerSecurity](https://learn.microsoft.com/en-us/graph/api/resources/partner.security-partnerSecurity?view=graph-rest-beta) resource.",
+          "Description": "Added the [partnerSecurity](https://learn.microsoft.com/en-us/graph/api/resources/partner.security-partnerSecurityAlert?view=graph-rest-beta) resource.",
           "Target": "partnerSecurity"
         },
         {
