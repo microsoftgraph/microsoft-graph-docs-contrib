@@ -61,7 +61,7 @@ Represents a Cloud PC provisioning policy.
 | shared             | Indicates provisioning policy when a dedicated Cloud PC is provisioned for each user in the assignment group. Users are always connected to the same Cloud PC. However, Cloud PC availability is limited by the total number of active sessions. Starting April 30, 2027, this property will no longer be supported and will be marked as deprecated. Use sharedByUser instead.             |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                                                                           |
 | sharedByUser     | Indicates provisioning policy when a dedicated Cloud PC is provisioned for each user in the assignment group. Users are always connected to the the same Cloud PC. However Cloud PC availability is limited by the total number of active sessions.                                                  |
-| sharedByEntraGroup   | Indicates provisioning policy associated with Cloud PCs shared by an Entra (Azure AD) group. When a shared Cloud PC is provisioned and available for any user in the Entra ID assignment group to connect to. Users may be connected to a different Cloud PC on each connection and availability is limited by the number of provisioned Cloud PCs.                                     |
+| sharedByEntraGroup   | Indicates provisioning policy associated with Cloud PCs shared by a Microsoft Entra (Azure AD) group. When a shared Cloud PC is provisioned and available for any user in the Microsoft Entra ID assignment group to connect to. Users may be connected to a different Cloud PC on each connection and availability is limited by the number of provisioned Cloud PCs.                                     |
 
 ## Relationships
 
