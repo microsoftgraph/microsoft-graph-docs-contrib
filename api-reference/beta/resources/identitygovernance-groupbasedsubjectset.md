@@ -1,6 +1,6 @@
 ---
 title: "groupBasedSubjectSet resource type"
-description: "Specifies the group to define the subject that is the scope of a lifecycle workflow membershipChangeTrigger configuration."
+description: "Defines the group that is the scope of a lifecycle workflow membershipChangeTrigger configuration."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -18,8 +18,7 @@ Defines the group that is the scope of a lifecycle workflow [membershipChangeTri
 Inherits from [microsoft.graph.subjectSet](../resources/subjectset.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
