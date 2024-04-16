@@ -239,3 +239,58 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
+### Example 3: Add a Microsoft Entra role as a resource in an access package
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_role_accesspackage"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+    "role": {
+        "originId": "Eligible",
+        "displayName": "Eligible Member",
+        "originSystem": "DirectoryRole",
+        "resource": {
+            "id": "ea036095-57a6-4c90-a640-013edf151eb1"
+        }
+    },
+    "scope": {
+        "description": "Root Scope",
+        "displayName": "Root",
+        "isRootScope": true,
+        "originSystem": "DirectoryRole",
+        "originId": "c4e39bd9-1100-46d3-8c65-fb160da0071f"
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+   "id": "ea036095-57a6-4c90-a640-013edf151eb1_c4e39bd9-1100-46d3-8c65-fb160da0071f",
+   "createdDateTime": "2023-06-28T01:19:48.4216782Z"
+}
+```
