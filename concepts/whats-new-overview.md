@@ -20,11 +20,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Applications
 
-Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
+- Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/applications-post-applications). Previously, you could only add secrets to existing apps through the [Update application](https://learn.microsoft.com/graph/api/application-update) or the [addPassword](https://learn.microsoft.com/graph/api/application-addpassword) operations.
+- Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
 
-- [Upsert application](/graph/api/application-upsert)
-- [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert)
-- [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert)
+    - [Upsert application](/graph/api/application-upsert)
+    - [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert)
+    - [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert)
 
 ### Groups
 
@@ -49,7 +50,7 @@ Associate users or groups as sponsors for a guest user's privileges in the tenan
 
 ### Identity and access | Network access
 
-Updated the definition of physical locations for customer premises equipment in the Global Secure Access services from the [branchSite resource type](/graph/api/resources/networkaccess-branchsite?view=graph-rest-beta&perserve-view=true) to the [remoteNetwork resource type](/graph/api/resources/networkaccess-remotenetwork?view=graph-rest-beta&perserve-view=true). The **branchSite** resource type and its associated properties, relationships, and endpoints are deprecated will be retired soon. Use the **remoteNetwork** resource type and its associated properties, relationships, and endpoints.
+Updated the definition of physical locations for customer premises equipment in the Global Secure Access services from the [branchSite resource type](/graph/api/resources/networkaccess-branchsite?view=graph-rest-beta&preserve-view=true) to the [remoteNetwork resource type](/graph/api/resources/networkaccess-remotenetwork?view=graph-rest-beta&preserve-view=true). The **branchSite** resource type and its associated properties, relationships, and endpoints are deprecated will be retired soon. Use the **remoteNetwork** resource type and its associated properties, relationships, and endpoints.
 
 ### Industry data ETL
 
