@@ -3,7 +3,7 @@ title: "plannerApprovalRequirement resource type"
 description: "Represents whether a plannerTask must have an approval completion requirement created for it."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
