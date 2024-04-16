@@ -38,7 +38,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 
 ```msgraph-interactive
@@ -77,6 +76,8 @@ The following example shows a request.
   "tags": "service.sharepoint"
 }
 -->
+
+# [HTTP](#tab/http)
 
 ```msgraph-interactive
 GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages
