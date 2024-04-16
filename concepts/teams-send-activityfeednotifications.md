@@ -49,7 +49,7 @@ The components include:
 |**Title: Actor + reason**|*Actor* is the name of the user or app that initiated the activity. *Reason* describes the activity.|
 |**Timestamp**|Shows when the activity happened.|
 |**Text preview**|Shows a truncated line from the start of the notification.|
-|**Location**|Shows where the activity happened in Teams.|
+|**Topic**|Resource being talked about or text value of topic from Request Body.|
 
 The following image shows an example of an activity feed notification about a user mentioned in a Yammer community.
 
@@ -61,22 +61,27 @@ The following tabs show the types of activity feed notification cards that you c
 
 # [Desktop](#tab/desktop)
 
-:::image type="content" source="images/activity-feed-notifications-desktop.png" alt-text="Screenshot that shows activity feed notifications in a desktop."  lightbox="images/activity-feed-notifications-desktop.png" border="false":::
+**Teams custom**
 
-  |Counter  |Description  |
-  |---------|---------|
-  |1     | Teams custom       |
-  |2     | Windows       |
-  |3     | Mac |
+:::image type="content" source="images/teams-custom.png" alt-text="Screenshot that shows activity feed notifications in a desktop Teams custom." border="false":::
+
+**Windows**
+
+:::image type="content" source="images/windows.png" alt-text="Screenshot that shows activity feed notifications in a Windows desktop Teams." border="false":::
+
+**Mac**
+
+:::image type="content" source="images/mac.png" alt-text="Screenshot that shows activity feed notifications in a Mac desktop Teams." border="false":::
 
 # [Mobile](#tab/mobile)
 
-:::image type="content" source="images/activity-feed-notifications-mobile.png" alt-text="Screenshot shows the activity feed notifications in a mobile." border="false":::
+**Android**
 
-  |Counter  |Description  |
-  |---------|---------|
-  |1     | Android        |
-  |2     |  iOS       |
+:::image type="content" source="images/android.png" alt-text="Screenshot shows the activity feed notifications in a Andriod." border="false":::
+
+**iOS**
+
+:::image type="content" source="images/iOS.png" alt-text="Screenshot shows the activity feed notifications in a iOS." border="false":::
 
 ---
 
