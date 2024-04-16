@@ -2,7 +2,7 @@
 title: "Get certificateBasedAuthConfiguration"
 description: "Get the properties of a certificatebasedauthconfiguration object."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---

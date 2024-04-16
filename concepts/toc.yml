@@ -637,8 +637,10 @@ items:
           href: tutorial-lifecycle-workflows-scheduled-leaver.md
         - name: Automate employee offboarding
           href: tutorial-lifecycle-workflows-offboard-custom-workflow.md
+        - name: Automate employee mover tasks (preview)
+          href: tutorial-lifecycle-workflows-mover-custom-workflow.md  
         - name: Configure employeeLeaveDateTime
-          href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md
+          href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md 
       - name: Manage access to resources
         href: tutorial-access-package-api.md
         displayName: governance, identity
@@ -876,6 +878,10 @@ items:
     - name: Overview
       href: teams-concept-overview.md
       displayName: teams, team, teamwork, Microsoft Teams
+    - name: Messaging APIs
+      items:
+        - name: Working with Microsoft Teams messaging
+          href: teams-messaging-overview.md
     - name: Activity feed notifications
       items:
       - name: Send activity feed notifications
@@ -1107,7 +1113,7 @@ items:
       href: extensibility-open-users.md
     - name: Use schema extensions
       href: extensibility-schema-groups.md
-  - name: Microsoft Graph activity logs (preview)
+  - name: Microsoft Graph activity logs
     href: microsoft-graph-activity-logs-overview.md
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio

@@ -18,6 +18,7 @@ Contains information about a license assigned to a user.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List licenseDetails](../api/user-list-licensedetails.md) | [licenseDetails](../resources/licensedetails.md) collection |Retrieve a list of [licenseDetails](../resources/licensedetails.md) objects for a user.|
+|[getTeamsLicensingDetails](../api/licensedetails-getteamslicensingdetails.md)|[teamsLicensingDetails](../resources/teamsLicensingDetails.md) object|Get the Microsoft Teams license details for the specified user.|
 
 <!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 

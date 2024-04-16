@@ -1,6 +1,6 @@
 ---
 title: "filePlanDescriptorBase resource type"
-description: "Represents the name for each file plan descriptor column associated with a particular label."
+description: "Specifies properties common to file plan descriptor resources."
 author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the name for each [file plan descriptor](../resources/security-fileplandescriptor.md) column associated with a particular label.
+Specifies properties common to file plan descriptor resources. Base type for each of the descriptors: [appliedCategory](security-appliedcategory.md), [authority](security-authority.md), [citation](security-citation.md), [department](security-department.md), [filePlanReference](security-fileplanreference.md), and [subCategory](security-subcategory.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Unique string that defines the name for each [file plan descriptor](../resources/security-fileplandescriptor.md) associated with a particular retention label.|
+|displayName|String|Unique string that defines the name for the file plan descriptor associated with a particular retention label.|
 
 ## Relationships
 None.

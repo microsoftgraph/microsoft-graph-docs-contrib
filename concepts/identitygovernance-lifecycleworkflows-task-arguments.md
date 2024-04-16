@@ -5,9 +5,9 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: alexander.filipin
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance"
+ms.subservice: entra-id-governance
 ms.topic: how-to
-ms.date: 03/19/2024
+ms.date: 04/05/2024
 #Customer intent: As a developer automating user lifecycle processes, I want to learn how to use Microsoft Graph to configure the arguments property of built-in tasks in Lifecycle Workflows, so that I can automate basic lifecycle processes for my users.
 ---
 
@@ -15,7 +15,7 @@ ms.date: 03/19/2024
 
 The Lifecycle Workflows API in Microsoft Graph enables you to automate basic lifecycle processes for your users at three levels: Joiner, Leaver, and Mover. Core to the workflows is **tasks** that represent the specific actions that run automatically when a workflow is triggered.
 
-Microsoft Graph supports [22 built-in tasks](/graph/api/resources/identitygovernance-task) that you can use to create your custom workflows. Each task has a set of arguments that are allowed for that task. For example, a task to generate a temporary access pass (TAP) for a user allows you to configure the lifetime of the TAP and whether the user can reuse it. A task to add a user to a group requires you to specify the groups to which you want to add the user. This configuration is made on the **arguments** property of a task.
+Microsoft Graph supports [24 built-in tasks](/graph/api/resources/identitygovernance-task) that you can use to create your custom workflows. Each task has a set of arguments that are allowed for that task. For example, a task to generate a temporary access pass (TAP) for a user allows you to configure the lifetime of the TAP and whether the user can reuse it. A task to add a user to a group requires you to specify the groups to which you want to add the user. This configuration is made on the **arguments** property of a task.
 
 This article provides guidance on the allowed configuration for the **arguments** property of [tasks](/graph/api/resources/identitygovernance-task) in Lifecycle Workflows.
 
@@ -29,6 +29,9 @@ This article provides guidance on the allowed configuration for the **arguments*
 | Add user to groups | 22085229-5809-45e8-97fd-270d28d66910 | **name**: `groupID`<br/>**value**: a valid group ID or a comma-separated list of groups to which the user is added as a member. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"` |
 | Add user to teams | e440ed8d-25a1-4618-84ce-091ed5be5594 | **name**: `teamID`<br/>**value**: a valid group ID or a comma-separated list of teams to which the user is added as a member. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"` |
 | Enable user account | 6fc52c9d-398b-4305-9763-15f42c1676fc | None |
+| Run a custom task extension | 4262b724-8dba-4fad-afc3-43fcbb497a0e | name: `CustomTaskExtensionID`<br/>value: The ID of the custom task extension |
+| Assign licenses to users (Preview) | 683c87a4-2ad4-420b-97d4-220d90afcd24 | name: `licenses`<br/>value: The ID of the license you want to assign |
+| Remove selected license assignments from user (Preview) | 5fc402a8-daaf-4b7b-9203-da868b05fc5f | name: `licenses`<br/>value: The ID of the license you want to assign |
 | Run a custom task extension | 4262b724-8dba-4fad-afc3-43fcbb497a0e | **name**: `CustomTaskExtensionID`<br/>**value**: The ID of the custom task extension |
 | Disable user account | 1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950 | None |
 | Remove user from selected group | 1953a66c-751c-45e5-8bfe-01462c70da3c | **name**: `groupID`<br/>**value**: a valid group ID or a comma-separated list of groups that the user is a member of. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"` |
@@ -39,7 +42,7 @@ This article provides guidance on the allowed configuration for the **arguments*
 | Delete user | 8d18588d-9ad3-4c0f-99d0-ec215f0e3dff | None |
 | Send email to notify manager of user move | aab41899-9972-422a-9d97-f626014578b7 | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. Doesn't customize the custom text of the email, and should be set in the same language as the custom text.  <br/> |
 | Send email to manager before user last day | 52853a3e-f4e5-4eb8-bb24-1ac09a1da935 | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. Doesn't customize the custom text of the email, and should be set in the same language as the custom text.  <br/> |
-| Send email on users last day | 9c0a1eaf-5bda-4392-9d9e-6e155bb57411 | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject for the email being sent.<br/><br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. Won't customize the custom text of the email, and should be set in the same language as the custom text.  <br/> |
+| Send email on users last day | 9c0a1eaf-5bda-4392-9d9e-6e155bb57411 | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject for the email being sent.<br/><br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. Doesn't customize the custom text of the email, and should be set in the same language as the custom text.  <br/> |
 | Send offboarding email to users manager after their last day | 6f22ddd4-b3a5-47a4-a846-0d7c201a49ce | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. Doesn't customize the custom text of the email, and should be set in the same language as the custom text.  <br/> |
 | Request user access package assignment | c1ec1e76-f374-4375-aaa6-0bb6bd4c60be | **name**: `assignmentPolicyId`<br/>**value**: A valid assignment policy ID (String) for the access package you want to assign the user.<br/><br/>**name**: `accessPackageId`<br/>**value**: A valid access package ID for the access package you want to assign to the user. |
 | Remove access package assignment for user | 4a0b64f2-c7ec-46ba-b117-18f262946c50 | **name**: `accessPackageId`<br/>**value**: A valid access package ID for the access package you want to unassign from the user. |

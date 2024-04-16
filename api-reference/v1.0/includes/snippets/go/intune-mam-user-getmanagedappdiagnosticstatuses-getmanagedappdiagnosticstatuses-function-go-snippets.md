@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getManagedAppDiagnosticStatuses, err := graphClient.Users().ByUserId("user-id").GetManagedAppDiagnosticStatuses().Get(context.Background(), nil)
+getManagedAppDiagnosticStatuses, err := graphClient.Users().ByUserId("user-id").GetManagedAppDiagnosticStatuses().GetAsGetManagedAppDiagnosticStatusesGetResponse(context.Background(), nil)
 
 
 ```
