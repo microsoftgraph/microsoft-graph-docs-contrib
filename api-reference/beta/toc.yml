@@ -685,6 +685,12 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: Create notebook
                 href: api/onenote-post-notebooks.md
+          - name: Password-based SSO credentials
+            items:
+            - name: Get
+              href: api/group-getpasswordsinglesignoncredentials.md
+            - name: Delete
+              href: api/group-deletepasswordsinglesignoncredentials.md
           - name: Photo
             items:
               - name: Profile photo

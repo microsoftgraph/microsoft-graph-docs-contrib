@@ -1,0 +1,30 @@
+{
+    "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "59eba248-2c11-4bc7-80bb-922379a49afb",
+            "ApiChange": "Method",
+            "ChangedApiName": "deletePasswordSingleSignOnCredentials",
+            "ChangeType": "Addition",
+            "Description": "Added the [deletePasswordSingleSignOnCredentials](https://learn.microsoft.com/en-us/graph/api/group-deletePasswordSingleSignOnCredentials?view=graph-rest-beta) method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+            "Target": "group"
+          },
+          {
+            "Id": "59eba248-2c11-4bc7-80bb-922379a49afb",
+            "ApiChange": "Method",
+            "ChangedApiName": "getPasswordSingleSignOnCredentials",
+            "ChangeType": "Addition",
+            "Description": "Added the [getPasswordSingleSignOnCredentials](https://learn.microsoft.com/en-us/graph/api/group-getPasswordSingleSignOnCredentials?view=graph-rest-beta) method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+            "Target": "group"
+          }
+        ],
+        "Id": "59eba248-2c11-4bc7-80bb-922379a49afb",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-03-12T21:19:27.6231417Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Directory management"
+      }
+    ]
+  }
