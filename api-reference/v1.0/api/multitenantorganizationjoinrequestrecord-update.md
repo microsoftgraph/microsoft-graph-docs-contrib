@@ -14,9 +14,7 @@ Join a multitenant organization, after the owner of the multitenant organization
 
 Before a tenant added to a multitenant organization can participate in the multitenant organization, the administrator of the joining tenant must submit a join request.
 
-To allow for asynchronous processing, you must wait a **minimum of 2 hours** between creation and joining a multitenant organization.
-
-Furthermore, to allow for asynchronous processing, you must wait **up to 4 hours** before joining a multitenant organization is completed.
+To allow for asynchronous processing, you must wait **up to 2 hours** before joining a multitenant organization is completed.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

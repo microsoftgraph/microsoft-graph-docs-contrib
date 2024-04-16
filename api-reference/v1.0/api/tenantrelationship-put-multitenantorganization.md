@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 Create a new multitenant organization. By default, the creator tenant becomes an owner tenant upon successful creation. Only owner tenants can manage a multitenant organization.
 
-To allow for asynchronous processing, you must wait a **minimum of 2 hours** between creation and joining a multitenant organization.
-
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
