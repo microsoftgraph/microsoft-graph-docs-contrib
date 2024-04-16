@@ -1,6 +1,6 @@
 ---
 title: "plannerBasicApprovalAttachment resource type"
-description: "Represents the approval attachment, which is added to a plannerTask."
+description: "Represents the approval attachment that is added to a plannerTask."
 author: "ShravanthiReddy"
 ms.localizationpriority: medium
 ms.prod: "planner"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource represents the approval attachment, of type basic, which is created by the approval extensibility service and is added to a [plannerTask](plannertask.md).
+Represents the approval attachment, of type basic, that is created by the approval extensibility service and is added to a [plannerTask](plannertask.md).
 
 Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalId|String|Read-only. The identifier of the approval in the approval service|
-|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|The status of the approval. Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md). The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only.
+|approvalId|String|Read-only. The identifier of the approval in the approval service.|
+|status|[plannerApprovalStatus](../resources/plannerbaseapprovalattachment.md#plannerapprovalstatus-values)|The status of the approval. Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md). The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`. Read-only.|
 
 ### plannerApprovalStatus values 
 
@@ -31,7 +31,7 @@ Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalat
 |approved|The plannerTask is approved.|
 |rejected|The plannerTask is rejected.|
 |cancelled|The requestor canceled the approval.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.||
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
