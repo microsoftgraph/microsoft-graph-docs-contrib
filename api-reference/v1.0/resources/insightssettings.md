@@ -19,7 +19,7 @@ Item insights and [meeting hours insights](https://support.microsoft.com/office/
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) collection | Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning item insights in an organization. |
+| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning item insights in an organization. |
 | [Update insightsSettings](../api/insightssettings-update.md) | [insightsSettings](insightssettings.md) | Update privacy settings to display or return the specified type of insights in an organization. Currently, [itemInsights](iteminsights.md) is the only supported type of settings. |
 
 ## Properties
