@@ -4975,7 +4975,7 @@
                 "ApiChange": "Member",
                 "ChangedApiName": "shared",
                 "ChangeType": "Deprecation",
-                "Description": "Deprecated the **shared** member on the **cloudPcProvisioningType** enumeration. 
+                "Description": "Deprecated the **shared** member on the **cloudPcProvisioningType** enumeration.",
                 "Target": "cloudPcProvisioningType"
               },
               {
