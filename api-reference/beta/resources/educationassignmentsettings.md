@@ -3,7 +3,7 @@ title: "educationAssignmentSettings resource type"
 description: "Specifies class-level assignments settings."
 author: "dipakboyed"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -33,7 +33,7 @@ Specifies class-level assignments settings.
 |gradingCategories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

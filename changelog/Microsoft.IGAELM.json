@@ -1,5 +1,23 @@
 {
   "changelog": [
+     {
+       "ChangeList": [
+         {
+           "Id": "2e9689f1-ac83-4805-bd3e-6916503a87d1",
+           "ApiChange": "Resource",
+           "ChangedApiName": "targetUserSponsors",
+           "ChangeType": "Addition",
+           "Description": "Added the [targetUserSponsors](https://learn.microsoft.com/en-us/graph/api/resources/targetUserSponsors?view=graph-rest-1.0) resource.",
+           "Target": "targetUserSponsors"
+         }
+        ],
+        "Id": "2e9689f1-ac83-4805-bd3e-6916503a87d1",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2024-04-04T23:23:06.9229074Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Governance"
+      },
       {
         "ChangeList": [
           {
@@ -1177,6 +1195,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-01-18T00:00:00.115598Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b5be627d-ca1f-4131-8dfa-df7d29a028d0",
+          "ApiChange": "Property",
+          "ChangedApiName": "connectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectionInfo** property to the [accessPackageResourceEnvironment](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageResourceEnvironment?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageResourceEnvironment"
+        }
+      ],
+      "Id": "b5be627d-ca1f-4131-8dfa-df7d29a028d0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-06T07:11:46.7810315Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

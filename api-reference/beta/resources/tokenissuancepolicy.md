@@ -3,7 +3,7 @@ title: "tokenIssuancePolicy resource type"
 description: "Represents the policy to specify the characteristics of SAML tokens issued by Azure AD."
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 

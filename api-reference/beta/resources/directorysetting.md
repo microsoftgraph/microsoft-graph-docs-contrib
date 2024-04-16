@@ -3,7 +3,7 @@ title: "directorySetting resource type"
 description: "Directory settings can be created based on the available directorySettingTemplates, and changed from their preset defaults."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -44,7 +44,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

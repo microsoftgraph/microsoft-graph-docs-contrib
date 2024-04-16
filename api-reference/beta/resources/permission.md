@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 # permission resource type
@@ -24,7 +24,7 @@ OneDrive for Business and SharePoint document libraries don't return the **inher
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

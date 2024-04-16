@@ -3,7 +3,7 @@ title: "identitySource resource type"
 description: "The identitySource type is the abstract base type for an identity source for a connected organization."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # identitySource resource type
@@ -18,7 +18,7 @@ None.
 ## Relationships
 None.
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identitySource"

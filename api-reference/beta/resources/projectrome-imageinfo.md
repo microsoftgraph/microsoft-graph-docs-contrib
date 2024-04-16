@@ -2,7 +2,7 @@
 title: imageInfo resource type
 description: A complex type for representing the **attribution** property in the visualInfo part of the activity object.
 ms.localizationpriority: medium
-ms.prod: project-rome
+ms.subservice: project-rome
 doc_type: resourcePageType
 author: ailae
 ---
@@ -25,7 +25,7 @@ A complex type for representing the **attribution** property in the [visualInfo]
 
 ## JSON Representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

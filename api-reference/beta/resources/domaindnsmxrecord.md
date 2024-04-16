@@ -3,7 +3,7 @@ title: "domainDnsMxRecord resource type"
 description: "Represents an MX record added to the DNS zone file of a particular domain in the tenant."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ Direct queries to this resource aren't supported. See the [domain](domain.md) ar
 None
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

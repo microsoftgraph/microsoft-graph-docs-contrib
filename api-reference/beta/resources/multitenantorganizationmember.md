@@ -3,7 +3,7 @@ title: "multiTenantOrganizationMember resource type"
 description: "Defines a tenant added to a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

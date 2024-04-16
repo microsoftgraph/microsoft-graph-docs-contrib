@@ -3,7 +3,7 @@ title: "Create windowsHealthMonitoringConfiguration"
 description: "Create a new windowsHealthMonitoringConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

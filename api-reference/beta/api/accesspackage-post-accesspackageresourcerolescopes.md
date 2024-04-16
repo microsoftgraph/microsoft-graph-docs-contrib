@@ -3,7 +3,7 @@ title: "Create accessPackageResourceRoleScope"
 description: "Create a new accessPackageResourceRoleScope for adding a resource role to an access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -53,7 +53,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 #### Request
 
-The following example shows a request.  Prior to this request, the access package resource `1d08498d-72a1-403f-8511-6b1f875746a0` for the group `b31fe1f1-3651-488f-bd9a-1711887fd4ca` must already have been added to the access package catalog containing this access package.  The resource could have been added to the catalog by [creating an access package resource request](entitlementmanagement-post-accesspackageresourcerequests.md).
+The following example shows a request. Previous to this request, the access package resource `1d08498d-72a1-403f-8511-6b1f875746a0` for the group `b31fe1f1-3651-488f-bd9a-1711887fd4ca` must already have been added to the access package catalog containing this access package.  The resource could have been added to the catalog by [creating an access package resource request](entitlementmanagement-post-accesspackageresourcerequests.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -142,9 +142,9 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request for a non-root scope resource.  The access package resource for the site must already have been added to the access package catalog containing this access package.
+The following example shows a request for a non-root scope resource. The access package resource for the site must already have been added to the access package catalog containing this access package.
 
-The request contains an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object, which can be obtained from an earlier request to [list access package resource roles of a resource in a catalog](accesspackagecatalog-list-accesspackageresourceroles.md). Each type of resource defines the format of the originId field in a resource role. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+The request contains an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object, which can be obtained from an earlier request to [list access package resource roles of a resource in a catalog](accesspackagecatalog-list-accesspackageresourceroles.md). Each type of resource defines the format of the originId field in a resource role. For a SharePoint Online site, the originId is the sequence number of the role in the site.
 
 If the [accessPackageResourceScope](../resources/accesspackageresourcescope.md) object obtained from an earlier request to [list access package resources](accesspackagecatalog-list-accesspackageresources.md) has the resource as a root scope (**isRootScope** set to `true`), include the **isRootScope** property in the **accessPackageResourceScope** object of the request.
 
@@ -239,3 +239,58 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
+### Example 3: Add a Microsoft Entra role as a resource in an access package
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_role_accesspackage"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+    "role": {
+        "originId": "Eligible",
+        "displayName": "Eligible Member",
+        "originSystem": "DirectoryRole",
+        "resource": {
+            "id": "ea036095-57a6-4c90-a640-013edf151eb1"
+        }
+    },
+    "scope": {
+        "description": "Root Scope",
+        "displayName": "Root",
+        "isRootScope": true,
+        "originSystem": "DirectoryRole",
+        "originId": "c4e39bd9-1100-46d3-8c65-fb160da0071f"
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+   "id": "ea036095-57a6-4c90-a640-013edf151eb1_c4e39bd9-1100-46d3-8c65-fb160da0071f",
+   "createdDateTime": "2023-06-28T01:19:48.4216782Z"
+}
+```

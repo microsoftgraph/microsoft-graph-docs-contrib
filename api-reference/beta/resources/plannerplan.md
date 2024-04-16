@@ -3,7 +3,7 @@ title: "plannerPlan resource type"
 description: "Represents a plan in Microsoft 365."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -49,7 +49,7 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

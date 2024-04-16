@@ -4,7 +4,7 @@ description: "Update an identityProvider in a b2xIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # Update a userFlowIdentityProvider
@@ -22,10 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "b2xidentityuserflow_userflowidentityproviders_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/b2xidentityuserflow-userflowidentityproviders-update-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External ID user flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 

@@ -3,7 +3,7 @@ title: "Delete aospDeviceOwnerEnterpriseWiFiConfiguration"
 description: "Deletes a aospDeviceOwnerEnterpriseWiFiConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

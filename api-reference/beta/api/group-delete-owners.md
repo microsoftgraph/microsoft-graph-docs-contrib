@@ -4,7 +4,7 @@ description: "Use this API to remove an owner from a Microsoft 365 group or a se
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 

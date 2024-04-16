@@ -3,7 +3,7 @@ title: "cloudPcOverview resource type"
 description: "Represents an overview of cloud PCs for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -24,6 +24,7 @@ Represents an overview of cloud PCs for a given managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|frontlineLicensesCount|Int32|The total number of cloud PC devices that have the `Frontline` SKU. Optional. Read-only.|
 |id|String|The unique identifier for the cloud PC overview. Required. Read-only.|
 |lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Optional. Read-only.|
 |numberOfCloudPcConnectionStatusFailed|Int32|The number of cloud PC connections that have a status of `failed`. Optional. Read-only.|
@@ -61,6 +62,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedTenants.cloudPcOverview",
+  "frontlineLicensesCount": "Integer",
   "id": "String (identifier)",
   "lastRefreshedDateTime": "String (timestamp)",
   "numberOfCloudPcConnectionStatusFailed": "Integer",

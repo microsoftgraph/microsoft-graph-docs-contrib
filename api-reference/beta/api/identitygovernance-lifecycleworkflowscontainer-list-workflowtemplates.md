@@ -3,7 +3,7 @@ title: "List workflowTemplates"
 description: "Get a list of the workflowTemplate objects and their properties."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -60,9 +60,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_workflowtemplate"
@@ -71,40 +70,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflowTemplates
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflowtemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-workflowtemplate-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-workflowtemplate-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-workflowtemplate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-workflowtemplate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-workflowtemplate-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-workflowtemplate-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-list-workflowtemplate-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -121,6 +86,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflowTemplates",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identityGovernance/lifecycleWorkflows/workflowTemplates?$select=category,description",
     "value": [
         {
             "category": "joiner",
@@ -145,7 +111,7 @@ Content-Type: application/json
                     "category": "joiner",
                     "continueOnError": false,
                     "description": "Generate Temporary Access Pass and send via email to user's manager",
-                    "displayName": "Generate TAP And Send Email",
+                    "displayName": "Generate TAP And send email",
                     "executionSequence": 1,
                     "id": "3e062c24-d219-483d-9258-288f2a039b94",
                     "isEnabled": true,
@@ -186,7 +152,7 @@ Content-Type: application/json
                     "category": "joiner,leaver",
                     "continueOnError": false,
                     "description": "Enable user account in the directory",
-                    "displayName": "Enable User Account",
+                    "displayName": "Enable user account",
                     "executionSequence": 1,
                     "id": "e18f3208-311c-46a3-a27b-d9c15cd595bc",
                     "isEnabled": true,
@@ -197,7 +163,7 @@ Content-Type: application/json
                     "category": "joiner",
                     "continueOnError": false,
                     "description": "Send welcome email to new hire",
-                    "displayName": "Send Welcome Email",
+                    "displayName": "Send welcome email",
                     "executionSequence": 2,
                     "id": "e9551045-4302-499f-9108-60b9e23c067a",
                     "isEnabled": true,
@@ -208,7 +174,7 @@ Content-Type: application/json
                     "category": "joiner,leaver",
                     "continueOnError": false,
                     "description": "Add user to selected groups",
-                    "displayName": "Add User To Groups",
+                    "displayName": "Add user to groups",
                     "executionSequence": 3,
                     "id": "560acd0c-321e-4e7e-9f31-ff8899c55878",
                     "isEnabled": true,
@@ -216,6 +182,241 @@ Content-Type: application/json
                     "arguments": [
                         {
                             "name": "groupID",
+                            "value": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "joiner",
+            "description": "Configure onboarding tasks for an employee after their first day of work.",
+            "displayName": "Post-Onboarding of an employee",
+            "id": "dce038a6-482a-46a2-9ee0-675c5e8477b9",
+            "executionConditions": {
+                "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+                "scope": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                    "rule": "department eq 'Marketing'"
+                },
+                "trigger": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+                    "timeBasedAttribute": "employeeHireDate",
+                    "offsetInDays": 7
+                }
+            },
+            "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflowTemplates('dce038a6-482a-46a2-9ee0-675c5e8477b9')/tasks",
+            "tasks": [
+                {
+                    "category": "joiner,leaver",
+                    "continueOnError": false,
+                    "description": "Add user to selected groups",
+                    "displayName": "Add user to groups",
+                    "executionSequence": 1,
+                    "id": "33350498-4404-487f-94ae-db312e436eda",
+                    "isEnabled": true,
+                    "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
+                    "arguments": [
+                        {
+                            "name": "groupID",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "joiner,leaver",
+                    "continueOnError": false,
+                    "description": "Add user to selected Teams",
+                    "displayName": "Add user To Teams",
+                    "executionSequence": 2,
+                    "id": "6f7925a5-633d-4cd9-9c4b-8f4b2f040e2b",
+                    "isEnabled": true,
+                    "taskDefinitionId": "e440ed8d-25a1-4618-84ce-091ed5be5594",
+                    "arguments": [
+                        {
+                            "name": "teamID",
+                            "value": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "mover",
+            "description": "Execute real-time tasks for employee job changes",
+            "displayName": "Real-time employee job change",
+            "id": "77a82a99-9dfb-471d-a396-107954328b7f",
+            "executionConditions": {
+                "@odata.type": "#microsoft.graph.identityGovernance.onDemandExecutionOnly"
+            },
+            "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflowTemplates('77a82a99-9dfb-471d-a396-107954328b7f')/tasks",
+            "tasks": [
+                {
+                    "category": "joiner,leaver,mover",
+                    "continueOnError": false,
+                    "description": "Run a Custom Task Extension to callout to an external system.",
+                    "displayName": "Run a Custom Task Extension",
+                    "executionSequence": 1,
+                    "id": "f187bcde-830a-4f4b-bed0-e2347b418c01",
+                    "isEnabled": true,
+                    "taskDefinitionId": "4262b724-8dba-4fad-afc3-43fcbb497a0e",
+                    "arguments": [
+                        {
+                            "name": "customTaskExtensionID",
+                            "value": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "mover",
+            "description": "Configure mover tasks for employees once their group membership changes",
+            "displayName": "Employee group membership changes",
+            "id": "56da3093-d105-40d4-9886-fccd074f2f2a",
+            "executionConditions": {
+                "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+                "scope": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.groupBasedSubjectSet",
+                    "groups": [
+                        {
+                            "id": "groupID"
+                        }
+                    ]
+                },
+                "trigger": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.membershipChangeTrigger",
+                    "changeType": "add"
+                }
+            },
+            "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflowTemplates('56da3093-d105-40d4-9886-fccd074f2f2a')/tasks",
+            "tasks": [
+                {
+                    "category": "leaver,mover",
+                    "continueOnError": false,
+                    "description": "Remove user assignment of selected access package",
+                    "displayName": "Remove access package assignment for user",
+                    "executionSequence": 1,
+                    "id": "db0500d1-c988-4114-a005-f227649aedfd",
+                    "isEnabled": true,
+                    "taskDefinitionId": "4a0b64f2-c7ec-46ba-b117-18f262946c50",
+                    "arguments": [
+                        {
+                            "name": "accessPackageId",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "joiner,leaver,mover",
+                    "continueOnError": false,
+                    "description": "Remove user from membership of selected Teams",
+                    "displayName": "Remove user from selected Teams",
+                    "executionSequence": 2,
+                    "id": "b1049615-0be5-43dc-a919-1f5bf6db967b",
+                    "isEnabled": true,
+                    "taskDefinitionId": "06aa7acb-01af-4824-8899-b14e5ed788d6",
+                    "arguments": [
+                        {
+                            "name": "teamID",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "mover",
+                    "continueOnError": false,
+                    "description": "Send email to notify user’s manager of user move",
+                    "displayName": "Send email to notify manager of user move",
+                    "executionSequence": 3,
+                    "id": "96c00437-3a06-4710-bd0b-ab57773a9189",
+                    "isEnabled": true,
+                    "taskDefinitionId": "aab41899-9972-422a-9d97-f626014578b7",
+                    "arguments": []
+                }
+            ]
+        },
+        {
+            "category": "mover",
+            "description": "Configure mover tasks for employees once their job profile changes",
+            "displayName": "Employee job profile change",
+            "id": "16819b2d-74e9-4fb9-9ba7-48b8a26ab11d",
+            "executionConditions": {
+                "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+                "scope": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                    "rule": "department eq 'Marketing'"
+                },
+                "trigger": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.attributeChangeTrigger",
+                    "triggerAttributes": [
+                        {
+                            "name": "department"
+                        }
+                    ]
+                }
+            },
+            "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflowTemplates('16819b2d-74e9-4fb9-9ba7-48b8a26ab11d')/tasks",
+            "tasks": [
+                {
+                    "category": "mover",
+                    "continueOnError": false,
+                    "description": "Send email to notify user’s manager of user move",
+                    "displayName": "Send email to notify manager of user move",
+                    "executionSequence": 1,
+                    "id": "96c00437-3a06-4710-bd0b-ab57773a9189",
+                    "isEnabled": true,
+                    "taskDefinitionId": "aab41899-9972-422a-9d97-f626014578b7",
+                    "arguments": []
+                },
+                {
+                    "category": "joiner,leaver,mover",
+                    "continueOnError": false,
+                    "description": "Remove user from membership of selected Azure AD groups",
+                    "displayName": "Remove user from selected groups",
+                    "executionSequence": 2,
+                    "id": "e9e641d3-e457-433c-9d6c-78a4f2505aef",
+                    "isEnabled": true,
+                    "taskDefinitionId": "1953a66c-751c-45e5-8bfe-01462c70da3c",
+                    "arguments": [
+                        {
+                            "name": "groupID",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "joiner,leaver,mover",
+                    "continueOnError": false,
+                    "description": "Remove user from membership of selected Teams",
+                    "displayName": "Remove user from selected Teams",
+                    "executionSequence": 3,
+                    "id": "b1049615-0be5-43dc-a919-1f5bf6db967b",
+                    "isEnabled": true,
+                    "taskDefinitionId": "06aa7acb-01af-4824-8899-b14e5ed788d6",
+                    "arguments": [
+                        {
+                            "name": "teamID",
+                            "value": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "joiner,mover",
+                    "continueOnError": false,
+                    "description": "Request user assignment to selected access package",
+                    "displayName": "Request user access package assignment",
+                    "executionSequence": 4,
+                    "id": "8c2c653f-46a1-4042-9b4d-2c3d503a4fcc",
+                    "isEnabled": true,
+                    "taskDefinitionId": "c1ec1e76-f374-4375-aaa6-0bb6bd4c60be",
+                    "arguments": [
+                        {
+                            "name": "assignmentPolicyId",
+                            "value": ""
+                        },
+                        {
+                            "name": "accessPackageId",
                             "value": ""
                         }
                     ]
@@ -258,7 +459,7 @@ Content-Type: application/json
                     "category": "leaver",
                     "continueOnError": false,
                     "description": "Delete user account in Azure AD",
-                    "displayName": "Delete User Account",
+                    "displayName": "Delete user account",
                     "executionSequence": 3,
                     "id": "adbd4f05-99f0-4260-a155-7657623ca071",
                     "isEnabled": true,
@@ -343,7 +544,7 @@ Content-Type: application/json
                     "category": "joiner,leaver",
                     "continueOnError": false,
                     "description": "Disable user account in the directory",
-                    "displayName": "Disable User Account",
+                    "displayName": "Disable user account",
                     "executionSequence": 1,
                     "id": "8d9eab35-6c32-4b76-acbd-6a22cb07aa6a",
                     "isEnabled": true,
@@ -419,7 +620,7 @@ Content-Type: application/json
                     "category": "leaver",
                     "continueOnError": false,
                     "description": "Delete user account in Azure AD",
-                    "displayName": "Delete User Account",
+                    "displayName": "Delete user account",
                     "executionSequence": 3,
                     "id": "46849618-30e7-4b67-abf0-f8c7f0d54b95",
                     "isEnabled": true,
@@ -436,9 +637,9 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_workflowtemplate_filter_category"
@@ -447,38 +648,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflowTemplates?$filter=category eq 'leaver'
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflowtemplate-filter-category-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-workflowtemplate-filter-category-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-workflowtemplate-filter-category-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-workflowtemplate-filter-category-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-workflowtemplate-filter-category-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-workflowtemplate-filter-category-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-workflowtemplate-filter-category-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-list-workflowtemplate-filter-category-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

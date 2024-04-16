@@ -3,7 +3,7 @@ title: "Get approvalStep"
 description: "Retrieve the properties of an approvalStep object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

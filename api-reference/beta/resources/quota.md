@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Quota
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # quota resource type
@@ -18,7 +18,7 @@ The **quota** resource provides details about space constraints on a [drive](dri
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

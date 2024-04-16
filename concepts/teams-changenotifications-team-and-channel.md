@@ -3,7 +3,7 @@ title: "Get change notifications for teams and channels using Microsoft Graph"
 description: "Learn how to get notifications for changes (create, update, and delete) for teams and channels using Microsoft Graph APIs."
 author: "anandab"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 

@@ -4,7 +4,7 @@ description: "Allows retrieval of the properties of the directorySettingTemplate
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [directorySettingTemplate](../resources/directorysettingtemplate.md) object in the response body.
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

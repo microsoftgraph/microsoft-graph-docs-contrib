@@ -3,7 +3,7 @@ title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -27,7 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-* Global Administrator
 * Users
 * Directory Readers
 * Directory Writers
@@ -86,7 +85,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

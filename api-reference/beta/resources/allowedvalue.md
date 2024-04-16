@@ -3,7 +3,7 @@ title: "allowedValue resource type"
 description: "Represents a predefined value that is allowed for a custom security attribute definition."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -41,7 +41,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

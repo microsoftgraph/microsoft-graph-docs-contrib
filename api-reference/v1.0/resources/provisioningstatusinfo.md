@@ -3,7 +3,7 @@ title: "provisioningStatusInfo resource type"
 description: "Describes the status of the provisioning summary event."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ---
 
@@ -23,7 +23,7 @@ Describes the status of the provisioning summary event.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

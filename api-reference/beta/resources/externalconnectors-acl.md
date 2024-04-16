@@ -3,7 +3,7 @@ title: "acl resource type"
 description: "An access control entry for an item indexed by a Microsoft Search externalConnection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -26,7 +26,7 @@ An access control entry for an item indexed by a Microsoft Search [externalConne
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

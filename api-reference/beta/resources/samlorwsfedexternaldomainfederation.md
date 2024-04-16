@@ -3,7 +3,7 @@ title: "samlOrWsFedExternalDomainFederation resource type"
 description: "Represents SAML/WS-Fed federation set up with a Microsoft Entra tenant"
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

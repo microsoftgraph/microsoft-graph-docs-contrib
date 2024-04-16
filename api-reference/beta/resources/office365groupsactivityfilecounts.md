@@ -1,8 +1,8 @@
 ---
 title: "office365GroupsActivityFileCounts resource type"
-description: "Here's a JSON representation of the resource."
+description: "The following JSON representation shows the resource type."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: resourcePageType
 ---
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
 

@@ -3,7 +3,7 @@ title: "workingHours resource type"
 description: "Represents the days of the week and hours in a specific time zone that the user works."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ appropriate time zone.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

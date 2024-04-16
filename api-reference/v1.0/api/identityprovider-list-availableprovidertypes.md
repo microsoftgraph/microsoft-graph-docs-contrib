@@ -4,7 +4,7 @@ description: "Retrieve all available identity provider types in the directory."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List availableProviderTypes (deprecated)
@@ -23,10 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identityprovider_list_availableprovidertypes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityprovider-list-availableprovidertypes-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* External Identity Provider Administrator
+[!INCLUDE [rbac-identity-provider-apis](../includes/rbac-for-apis/rbac-identity-provider-apis.md)]
 
 ## HTTP request
 

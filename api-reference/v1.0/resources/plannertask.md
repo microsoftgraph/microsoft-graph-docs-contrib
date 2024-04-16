@@ -3,7 +3,7 @@ title: "plannerTask resource type"
 description: "Represents a Planner task in Microsoft 365."
 ms.localizationpriority: high
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -57,7 +57,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -3,7 +3,7 @@ title: "Create externalDomainName"
 description: "Create a new externalDomainName object."
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -20,10 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "samlorwsfedexternaldomainfederation_post_domains" } -->
 [!INCLUDE [permissions-table](../includes/permissions/samlorwsfedexternaldomainfederation-post-domains-permissions.md)]
 
-The work or school account needs to belong to one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Global Administrator
-* External Identity Provider Administrator
+[!INCLUDE [rbac-identity-provider-apis](../includes/rbac-for-apis/rbac-identity-provider-apis.md)]
 
 ## HTTP request
 

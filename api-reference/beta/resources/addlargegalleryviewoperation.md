@@ -3,7 +3,7 @@ title: "addLargeGalleryViewOperation resource type"
 description: "Describes the response format for an operation that adds the large gallery view."
 author: "navali-msft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

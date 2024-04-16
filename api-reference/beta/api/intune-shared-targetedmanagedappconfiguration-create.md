@@ -3,7 +3,7 @@ title: "Create targetedManagedAppConfiguration"
 description: "Create a new targetedManagedAppConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

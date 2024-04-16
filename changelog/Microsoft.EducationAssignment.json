@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationGradingSchemeGrade",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationGradingSchemeGrade](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingSchemeGrade?view=graph-rest-beta) resource type.",
+          "Target": "educationGradingSchemeGrade"
+        },
+        {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gradingScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingScheme** relationship to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "defaultGradingScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultGradingScheme** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gradingSchemes",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingSchemes** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationGradingScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationGradingScheme](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingScheme?view=graph-rest-beta) resource",
+          "Target": "educationGradingScheme"
+        }
+      ],
+      "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-02-15T18:05:21.1005157Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "291ce8b6-4d43-4b9b-8753-99857e72b666",
           "ApiChange": "Member",
           "ChangedApiName": "inactive",
@@ -2515,6 +2565,24 @@
       "CreatedDateTime": "2017-11-01T00:00:00",
       "WorkloadArea": "Education",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "719aaf78-b8a3-4756-a690-7e703139542b",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$expand` query parameter for the [Get educationAssignment](https://learn.microsoft.com/graph/api/educationassignment-get?view=graph-rest-1.0) method of the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "719aaf78-b8a3-4756-a690-7e703139542b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-20T17:22:42.5007887Z",
+      "WorkloadArea": "Education",
+      "SubArea": "Assignment"
     }
   ]
 }

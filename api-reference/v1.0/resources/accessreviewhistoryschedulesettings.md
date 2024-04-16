@@ -3,7 +3,7 @@ title: "accessReviewHistoryScheduleSettings resource type"
 description: "In Microsoft Entra access reviews, the accessReviewHistoryScheduleSettings represents the settings associated with an access review history definition series."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Defines the settings of an [accessReviewHistoryDefinition](accessreviewhistoryde
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewHistoryScheduleSettings"

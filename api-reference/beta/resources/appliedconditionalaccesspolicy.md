@@ -3,7 +3,7 @@ title: "appliedConditionalAccessPolicy resource type"
 description: "Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ Indicates the attributes related to applied conditional access policy or policie
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

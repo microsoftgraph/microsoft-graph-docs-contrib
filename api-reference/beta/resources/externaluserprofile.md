@@ -3,7 +3,8 @@ title: "externalUserProfile resource type"
 description: "Represents the profile of an external user in a Microsoft Entra tenant."
 ms.localizationpriority: high
 author: "jkdouglas"
-ms.prod: "directory-management"
+ms.reviewer: mapamu
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

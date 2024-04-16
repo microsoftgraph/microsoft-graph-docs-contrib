@@ -4,7 +4,7 @@ description: "Represents the result of membership evaluation."
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "resourcePageType"
 ---
 
@@ -26,7 +26,7 @@ Represents the result of membership evaluation.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

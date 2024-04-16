@@ -3,7 +3,7 @@ title: "roleManagementAlert resource type"
 description: "Represents an alert singleton that exposes security alerts, definitions, and configurations in PIM for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ None.
 |operations|[longRunningOperation](../resources/longrunningoperation.md) collection|Represents operations on resources that take a long time to complete and can run in the background until completion. |
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

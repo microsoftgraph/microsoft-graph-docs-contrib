@@ -3,7 +3,7 @@ title: "mailFolder resource type"
 description: "A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -112,7 +112,7 @@ By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only 
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

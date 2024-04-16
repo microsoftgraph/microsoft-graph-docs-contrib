@@ -4,7 +4,7 @@ description: "Get the properties and relationships of a group object."
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### Response
 
-Here's an example of the response. It includes only the default properties.
+The following example shows the response. It includes only the default properties.
 
 > **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 

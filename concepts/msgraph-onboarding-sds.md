@@ -3,7 +3,7 @@ title: "Set up School Data Sync"
 description: "Learn how to set up School Data Sync to work with education APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 
@@ -44,6 +44,7 @@ To access the School Data Sync admin portal, launch a private web browser, go to
     ![Screenshot of the profile page](./images/msgraph-onboarding/sds10-settingup.png)
 
 
-## Next steps
+## Next step
 
-- [Set up Microsoft Teams](/graph/msgraph-onboarding-msteams) to set up classes (optional).
+> [!div class="nextstepaction"]
+> [Set up Microsoft Teams to set up classes](/graph/msgraph-onboarding-msteams)

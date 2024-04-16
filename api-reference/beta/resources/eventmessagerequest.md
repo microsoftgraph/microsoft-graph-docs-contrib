@@ -3,7 +3,7 @@ title: "eventMessageRequest resource type"
 description: "A message that represents a meeting request."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -21,7 +21,7 @@ To respond to the meeting request, first, use the **event** navigation property 
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

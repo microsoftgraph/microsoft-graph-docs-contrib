@@ -3,7 +3,7 @@ title: "Use the Microsoft Search API to search with interleaved results"
 description: "Learn how to use the Microsoft Search API in Microsoft Graph to search multiple entities in one request and get interleaved results."
 author: "yiwenwang"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 ---
 
 # Use the Microsoft Search API to search with interleaved results
@@ -34,11 +34,11 @@ The following table shows the relationship between different entity types that c
 
 ### Example 1: Search with SharePoint file types and all connectors combination
 
-Here's an example of a request that searches with SharePoint file types and all combination of connectors.
+The following example shows a request that searches with SharePoint file types and all combination of connectors.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -128,11 +128,11 @@ Content-type: application/json
 
 ### Example 2: Search with SharePoint file types and specific connector combination
 
-Here's an example of a request that searches with SharePoint file types and a specific combination of connectors.
+The following example shows a request that searches with SharePoint file types and a specific combination of connectors.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -243,11 +243,11 @@ Content-type: application/json
 
 ### Example 3: Search with bookmark and acronym combination
 
-Here's an example of a request that searches with bookmark and acronym as entity types.
+The following example shows a request that searches with bookmark and acronym as entity types.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
