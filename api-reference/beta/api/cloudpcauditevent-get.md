@@ -116,11 +116,11 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
   "id": "250473f5-029f-4037-813d-ba4768201d61",
-  "displayName": "Update OnPremisesConnection",
+  "displayName": "Update OnPremisesConnection",
   "componentName": "CloudPcOnPremisesConnectionsController",
   "activity": null,
   "activityDateTime": "2021-02-14T13:10:51.814636+08:00",
-  "activityType": "Patch CloudPcOnPremisesConnection",
+  "activityType": "Patch CloudPcOnPremisesConnection",
   "activityOperationType": "Patch",
   "activityResult": "Success",
   "correlationId": "a5c71cc6-2271-4d5c-9bfe-d94781e83fe6",
