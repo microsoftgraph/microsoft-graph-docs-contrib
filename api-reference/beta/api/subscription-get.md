@@ -76,7 +76,14 @@ Depending on the resource and the permission type (delegated or application) req
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 
 > [!NOTE]
-> The OnlineMeetingRecording.Read.Chat, OnlineMeetingTranscript.Read.Chat, ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat, Chat.Manage.Chat, ChannelMessage.Read.Group and ChatMember.Read.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> The following permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent):
+> - OnlineMeetingRecording.Read.Chat
+> - OnlineMeetingTranscript.Read.Chat
+> - ChatSettings.Read.Chat
+> - ChatSettings.ReadWrite.Chat
+> - Chat.Manage.Chat
+> - ChannelMessage.Read.Group
+> - ChatMember.Read.Chat
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
