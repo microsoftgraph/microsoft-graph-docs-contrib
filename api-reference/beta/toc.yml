@@ -17216,15 +17216,15 @@ items:
                   - name: Overview
                     displayName: CSP Partner's Customer Security Alerts API
                     href: resources/partner.security-partnersecurityalert-api-overview.md
-                  - name: Partner security alert
+                  - name: API
                     href: resources/partner.security-partnersecurityalert.md
                     items:
                       - name: List
                         href: api/partner.security-partnersecurityalert-list.md
                       - name: Get
                         href: api/partner.security-partnersecurityalert-get.md
-                      - name: api/Update
-                        href: partner.security-partnersecurityalert-update.md      
+                      - name: Update
+                        href: api/partner.security-partnersecurityalert-update.md      
           - name: Records management
             items:
               - name: Overview
