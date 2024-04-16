@@ -61,7 +61,7 @@ The following example shows how to update a webpart.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webpartId}
+PATCH /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/webParts/58ce69a6-bcb0-4f35-b6cd-d757d95f1a8e
 Content-Type: application/json
 
 {
