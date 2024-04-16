@@ -64,7 +64,7 @@ The following example shows how to create an export job to download the `TotalAg
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -163,7 +163,7 @@ The following example shows how to create an export job to download the `RemoteC
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

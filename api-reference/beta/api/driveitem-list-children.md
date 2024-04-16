@@ -147,7 +147,7 @@ GET /drives/{drive-id}/items/root/children
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
+GET https://graph.microsoft.com/beta/drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
 ## Response

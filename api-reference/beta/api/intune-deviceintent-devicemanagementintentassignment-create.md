@@ -3,7 +3,7 @@ title: "Create deviceManagementIntentAssignment"
 description: "Create a new deviceManagementIntentAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

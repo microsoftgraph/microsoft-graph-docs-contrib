@@ -280,7 +280,7 @@ Content-Type: application/json
 }-->
 
 ```http
-POST /communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/invite
+POST https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/invite
 Content-Type: application/json
 
 {
@@ -560,7 +560,7 @@ will be read and the rest of the participants will be ignored.
 }-->
 
 ```http
-POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+POST https://graph.microsoft.com/beta/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
 Content-Type: application/json
 
 {
@@ -978,7 +978,7 @@ For more information about how to create an online meeting, see [Create onlineMe
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -988,7 +988,7 @@ The following is an example of a request.
 }-->
 
 ```http
-POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+POST https://graph.microsoft.com/beta/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
 Content-Type: application/json
 
 {

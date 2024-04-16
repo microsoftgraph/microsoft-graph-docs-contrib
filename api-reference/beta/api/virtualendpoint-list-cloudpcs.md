@@ -61,7 +61,7 @@ The following example shows how to get a list of all [cloudPC](../resources/clou
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -158,7 +158,7 @@ The following example shows how to use the `$top` query parameter to get the top
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -207,7 +207,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs?$
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -222,9 +222,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbeta_cpc_int/$metadata#deviceManagement/virtualEndpoint/cloudPCs",
+    "@odata.context": "https://graph.microsoft.com/testprodbeta_cpc_int/$metadata#deviceManagement/virtualEndpoint/cloudPCs",
     "@odata.count": 200,
-    "@odata.nextLink": "https://canary.graph.microsoft.com/testprodbeta_cpc_int/deviceManagement/virtualEndpoint/cloudPCs?$top=2&$skiptoken=7d4e1527-fe5a-4d86-81eb-2c532ac567ce",
+    "@odata.nextLink": "https://graph.microsoft.com/testprodbeta_cpc_int/deviceManagement/virtualEndpoint/cloudPCs?$top=2&$skiptoken=7d4e1527-fe5a-4d86-81eb-2c532ac567ce",
     "value": [
         {
             "id": "fd0230cd-4e05-4ecd-ad05-72f8a30042f1",

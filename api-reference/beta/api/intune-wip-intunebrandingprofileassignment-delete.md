@@ -3,7 +3,7 @@ title: "Delete intuneBrandingProfileAssignment"
 description: "Deletes a intuneBrandingProfileAssignment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

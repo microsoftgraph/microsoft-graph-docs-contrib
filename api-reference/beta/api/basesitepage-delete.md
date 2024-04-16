@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 The following example shows a request.
 
 ```http
-DELETE /sites/{site-id}/pages/{page-id}
+DELETE https://graph.microsoft.com/beta/sites/a69edae4-9208-4f60-9aa3-cd0911ff0ce1/pages/7f7a2740-2d74-47ba-af0c-71ed3a3384ca
 ```
 
 ### Response

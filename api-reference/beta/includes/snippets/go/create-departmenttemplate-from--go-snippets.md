@@ -9,7 +9,6 @@ import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
@@ -17,10 +16,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewDepartmentTemplate()
-displayName := "String"
+displayName := "Finance"
 requestBody.SetDisplayName(&displayName) 
-createdBy := graphmodels.NewIdentitySet()
-requestBody.SetCreatedBy(createdBy)
 
 departments, err := graphClient.Security().Labels().Departments().Post(context.Background(), requestBody, nil)
 

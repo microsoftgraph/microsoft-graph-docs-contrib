@@ -51,7 +51,7 @@ Here's an example of how to call this API.
 <!-- { "blockType": "request", "name": "delete-drive-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
-DELETE /me/drive/items/{item-id}
+DELETE https://graph.microsoft.com/v1.0/me/drive/items/{item-id}
 ```
 
 # [C#](#tab/csharp)

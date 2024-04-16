@@ -72,6 +72,7 @@ The following bulk request uses the SCIM standard Core User and Enterprise User 
 **Processing details:** The provisioning service reads the two user records. It uses the matching attribute for `userName` and `externalId` that's configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. It resolves the manager reference using the `manager.value` field. Specify the `externalId` of the user's manager in this field. In the following example, the provisioning service assigns *Barbara Jensen* as the manager for *Kathy Jensen*.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_from_SCIM_standard_schema"
@@ -216,6 +217,11 @@ Content-Type: application/scim+json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-from-scim-standard-schema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -244,6 +250,7 @@ The following bulk request uses the SCIM standard Core User and Enterprise User 
 **Processing details:** The provisioning service reads the two user records. It uses the matching attribute for `userName` and `externalId` that's configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. If you include the two custom attributes `urn:contoso:employee:HireDate` and `urn:contoso:employee:JobCode` in your provisioning job attribute mapping, it's processed, and the corresponding target attributes are set.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_from_SCIM_custom_schema"
@@ -399,6 +406,12 @@ Content-Type: application/scim+json
 
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-from-scim-custom-schema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -424,6 +437,7 @@ request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, change the user's department, and disable sign-in for the user.  This example assumes you have configured a mapping for the **externalId**, **department**, and **active** fields, and you have an existing Microsoft Entra user that has an attribute matching the **externalId**.  
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_for_update"
@@ -456,6 +470,11 @@ Content-Type: application/scim+json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-for-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
