@@ -12,7 +12,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when its **status** property is `created`. However, you can update the **autoExtendDuration** property when **status** is either `created` or `active`. You can remove Microsoft Entra Role (Global Administrator) when **status** is `active`, which indicates a long running operation.
+Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. 
+
+>**Notes:**
+>* You can update this relationship when its **status** property is `created`.
+>* You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
+>* You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long running operation.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -66,9 +71,9 @@ If successful, this method returns either a `200 OK` or a `202 Accepted` respons
 |Location|The location of the long-running operation.|
 |Retry-After|The time after which a subsequent API call can be made to the Location URL to check the status of the long-running operation.|
 
-This method returns a `202 Accepted` if you remove Microsoft Entra Role Global Administrator from the existing relationship while its **status** property is `active`. The response  includes a URL in the Location header for monitoring the operation's completion.
+This method returns a `202 Accepted` response if you remove the Microsoft Entra Global Administrator role from the relationship while its **status** property is `active`. The response includes a URL in the Location header that you can use to monitor the operation's progress.
 
-If you supply property other than [delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md) to the ones in the existing [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object, the API returns a `200 OK` response code with the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
+If you don't supply the template ID that corresponds to the Microsoft Entra Global Administrator role in the `unifiedRoles` array in the `accessDetails` property of the request body, then the API returns `200 OK` and the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
 
 ## Examples
 
