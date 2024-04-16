@@ -62,7 +62,7 @@ The following example shows a request.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}/getPositionOfWebPart
+GET https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/7f50f45e-714a-4264-9c59-3bf43ea4db8f/microsoft.graph.sitePage/webParts/58ce69a6-bcb0-4f35-b6cd-d757d95f1a8e/getPositionOfWebPart
 ```
 
 ### Response
