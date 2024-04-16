@@ -54,6 +54,7 @@ Represents a Cloud PC provisioning policy.
 |windowsSettings (deprecated)|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific Windows settings to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. The **windowsSettings** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **windowsSetting** property.|
 
 ### cloudPcProvisioningType values
+ The following table lists the members of an `[evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this evolvable enum: `sharedByUser`,`sharedByEntraGroup`.
 
 | Member              | Description                                                                           |
 |:--------------------|:--------------------------------------------------------------------------------------|
