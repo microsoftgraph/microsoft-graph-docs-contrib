@@ -45,7 +45,7 @@ For details about how to use this resource to add pull printing support to Unive
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

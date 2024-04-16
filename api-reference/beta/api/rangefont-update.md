@@ -3,7 +3,7 @@ title: "Update rangefont"
 description: "Update the properties of rangefont object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

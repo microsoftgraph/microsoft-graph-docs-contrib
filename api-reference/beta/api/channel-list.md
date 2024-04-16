@@ -22,15 +22,12 @@ Retrieve the list of [channels](../resources/channel.md) in this [team](../resou
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they aren't a member of.
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelSettings.Read.Group, ChannelSettings.ReadWrite.Group, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "channel_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-list-permissions.md)]
 
 > [!NOTE]
 > - The ChannelSettings.Read.Group and ChannelSettings.ReadWrite.Group permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
@@ -142,7 +139,8 @@ Content-type: application/json
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
       "membershipType": "standard",
       "email": "someperson@microsoft.com",
-      "moderationSettings": null
+      "moderationSettings": null,
+      "isArchived": false
     }
   ]
 }
@@ -222,7 +220,8 @@ Content-type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "General",
       "description": "test private team",
-      "membershipType": "private"
+      "membershipType": "private",
+      "isArchived": false,
     }
   ]
 }
@@ -309,6 +308,7 @@ Content-length: 262
             "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
             "membershipType": "shared",
             "email": "someperson@microsoft.com",
+            "isArchived": false,
             "moderationSettings": null
         }
     ]

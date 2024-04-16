@@ -116,6 +116,12 @@ The  [incident](security-incident.md) resource and its APIs allow you to sort 
 
 The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam emails, phishing URLs or malware attachments they receive to Microsoft. The policy check result and rescan result can help tenant administrators understand the threat scanning verdict and adjust their organizational policy.
 
+
+## Records management
+
+Most organizations need to manage data to proactively comply with industry regulations and internal policies, reduce risk in the event of litigation or a security breach, and let people effectively and agiley share knowledge that is current and relevant to them. You can use the [records management APIs](../resources/security-recordsmanagement-overview.md) to systematically apply [retention labels](security-retentionlabel.md) to different types of content that require different retention settings. For example, you can configure the start of retention period from when the content was created, last modified, labeled or when an event occurs for a particular event type. Further, you can use [file plan descriptors](security-fileplandescriptor.md) to improve the manageability of these retention labels.
+
+
 ## Secure Score
 
 [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/A-new-home-and-an-all-new-look-for-Microsoft-Secure-Score/ba-p/529641) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you did to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph security [secureScore](securescore.md) and [secureScoreControlProfile](securescorecontrolprofile.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.

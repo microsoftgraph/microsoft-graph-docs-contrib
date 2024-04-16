@@ -116,6 +116,10 @@ This resource supports:
 | [List tasks](../api/planneruser-list-tasks.md) | [plannerTask](plannertask.md) collection | Get plannerTasks assigned to the user. |
 | **Schema extensions** |  |  |
 | [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource. |
+| **Sponsors** | | |
+| [Assign sponsors](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
+| [List sponsors](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
+| [Remove sponsors](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
 | **Teamwork** |  |  |
 | [List apps installed for user](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user. |
 | [Gets the installed app for user](../api/userteamwork-get-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
@@ -217,7 +221,7 @@ This resource supports:
 |surname|String|The user's surname (family name or last name). Maximum length is 64 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |usageLocation|String|A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.  Examples include: `US`, `JP`, and `GB`. Not nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md).<br>NOTE: This property can't contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) and `$orderby`.
-|userType|String|A string value that can be used to classify user types in your directory, such as `Member` and `Guest`. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users)         |
+|userType|String|A string value that can be used to classify user types in your directory. The possible values are `Member` and `Guest`. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users)         |
 
 > [!TIP]
 > Directory and schema extensions and their associated data are returned only on `$select`; Open extensions and their associated data are returned only on `$expand`.
@@ -310,6 +314,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |photos|[profilePhoto](profilephoto.md) collection| The collection of the user's profile photos in different sizes. Read-only.|
 |planner|[plannerUser](planneruser.md)| Entry-point to the Planner resource that might exist for a user. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand` and returns up to 100 objects.|
+|sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
 |transitiveMemberOf| [directoryObject](directoryobject.md) collection |  The groups, including nested groups, and directory roles that a user is a member of. Nullable.|

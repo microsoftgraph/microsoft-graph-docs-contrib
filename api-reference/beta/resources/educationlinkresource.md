@@ -28,7 +28,7 @@ A subclass of [educationResource](educationresource.md). This resource is a link
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

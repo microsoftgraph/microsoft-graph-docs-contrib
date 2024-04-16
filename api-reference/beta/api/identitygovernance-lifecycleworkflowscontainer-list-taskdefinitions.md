@@ -62,7 +62,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_taskdefinition"
@@ -71,40 +70,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskdefinition-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-taskdefinition-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-taskdefinition-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-taskdefinition-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-taskdefinition-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-taskdefinition-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-taskdefinition-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-list-taskdefinition-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -122,12 +87,12 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/taskDefinitions",
-    "@odata.count": 16,
+    "@odata.count": 25,
     "value": [
         {
-            "category": "joiner,leaver",
+            "category": "joiner,leaver,mover",
             "description": "Add user to selected groups",
-            "displayName": "Add User To Groups",
+            "displayName": "Add user to groups",
             "id": "22085229-5809-45e8-97fd-270d28d66910",
             "version": 1,
             "parameters": [
@@ -141,21 +106,39 @@ Content-Type: application/json
         {
             "category": "joiner,leaver",
             "description": "Disable user account in the directory",
-            "displayName": "Disable User Account",
+            "displayName": "Disable user account",
             "id": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
             "version": 1,
-            "parameters": []
+            "parameters": [
+                {
+                    "name": "disableOnPremisesAccount",
+                    "values": [
+                        "true",
+                        "false"
+                    ],
+                    "valueType": "enum"
+                }
+            ]
         },
         {
             "category": "joiner,leaver",
             "description": "Enable user account in the directory",
-            "displayName": "Enable User Account",
+            "displayName": "Enable user account",
             "id": "6fc52c9d-398b-4305-9763-15f42c1676fc",
             "version": 1,
-            "parameters": []
+            "parameters": [
+                {
+                    "name": "enableOnPremisesAccount",
+                    "values": [
+                        "true",
+                        "false"
+                    ],
+                    "valueType": "enum"
+                }
+            ]
         },
         {
-            "category": "joiner,leaver",
+            "category": "joiner,leaver,mover",
             "description": "Remove user from membership of selected Azure AD groups",
             "displayName": "Remove user from selected groups",
             "id": "1953a66c-751c-45e5-8bfe-01462c70da3c",
@@ -171,7 +154,7 @@ Content-Type: application/json
         {
             "category": "joiner",
             "description": "Generate Temporary Access Pass and send via email to user's manager",
-            "displayName": "Generate TAP And Send Email",
+            "displayName": "Generate TAP and send email",
             "id": "1b555e50-7f65-41d5-b514-5894a026d10d",
             "version": 1,
             "parameters": [
@@ -187,21 +170,62 @@ Content-Type: application/json
                         "false"
                     ],
                     "valueType": "enum"
+                },
+                {
+                    "name": "cc",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customSubject",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customBody",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "locale",
+                    "values": [],
+                    "valueType": "string"
                 }
             ]
         },
         {
             "category": "joiner",
             "description": "Send welcome email to new hire",
-            "displayName": "Send Welcome Email",
+            "displayName": "Send welcome email",
             "id": "70b29d51-b59a-4773-9280-8841dfd3f2ea",
             "version": 1,
-            "parameters": []
+            "parameters": [
+                {
+                    "name": "cc",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customSubject",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customBody",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "locale",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
         },
         {
-            "category": "joiner,leaver",
-            "description": "Add user to selected teams",
-            "displayName": "Add User To Teams",
+            "category": "joiner,leaver,mover",
+            "description": "Add user to selected Teams",
+            "displayName": "Add user to Teams",
             "id": "e440ed8d-25a1-4618-84ce-091ed5be5594",
             "version": 1,
             "parameters": [
@@ -215,13 +239,22 @@ Content-Type: application/json
         {
             "category": "leaver",
             "description": "Delete user account in Azure AD",
-            "displayName": "Delete User Account",
+            "displayName": "Delete user account",
             "id": "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
             "version": 1,
-            "parameters": []
+            "parameters": [
+                {
+                    "name": "deleteOnPremisesAccount",
+                    "values": [
+                        "true",
+                        "false"
+                    ],
+                    "valueType": "enum"
+                }
+            ]
         },
         {
-            "category": "joiner,leaver",
+            "category": "joiner,leaver,mover",
             "description": "Remove user from membership of selected Teams",
             "displayName": "Remove user from selected Teams",
             "id": "06aa7acb-01af-4824-8899-b14e5ed788d6",
@@ -259,7 +292,7 @@ Content-Type: application/json
             "parameters": []
         },
         {
-            "category": "joiner,leaver",
+            "category": "joiner,leaver,mover",
             "description": "Run a Custom Task Extension to callout to an external system.",
             "displayName": "Run a Custom Task Extension",
             "id": "4262b724-8dba-4fad-afc3-43fcbb497a0e",
@@ -278,7 +311,28 @@ Content-Type: application/json
             "displayName": "Send email before user’s last day",
             "id": "52853a3e-f4e5-4eb8-bb24-1ac09a1da935",
             "version": 1,
-            "parameters": []
+            "parameters": [
+                {
+                    "name": "cc",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customSubject",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customBody",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "locale",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
         },
         {
             "category": "leaver",
@@ -286,13 +340,198 @@ Content-Type: application/json
             "displayName": "Send email on user’s last day",
             "id": "9c0a1eaf-5bda-4392-9d9e-6e155bb57411",
             "version": 1,
-            "parameters": []
+            "parameters": [
+                {
+                    "name": "cc",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customSubject",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customBody",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "locale",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
         },
         {
             "category": "leaver",
             "description": "Send offboarding email to user’s manager after the last day of work",
             "displayName": "Send email after user’s last day",
             "id": "6f22ddd4-b3a5-47a4-a846-0d7c201a49ce",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "cc",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customSubject",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customBody",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "locale",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "joiner",
+            "description": "Send onboarding reminder email to user’s manager",
+            "displayName": "Send onboarding reminder email",
+            "id": "3C860712-2D37-42A4-928F-5C93935D26A1",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "cc",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customSubject",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customBody",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "locale",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "joiner,mover",
+            "description": "Request user assignment to selected access package",
+            "displayName": "Request user access package assignment",
+            "id": "c1ec1e76-f374-4375-aaa6-0bb6bd4c60be",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "assignmentPolicyId",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "accessPackageId",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "leaver,mover",
+            "description": "Remove user assignment of selected access package",
+            "displayName": "Remove access package assignment for user",
+            "id": "4a0b64f2-c7ec-46ba-b117-18f262946c50",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "accessPackageId",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "leaver",
+            "description": "Remove all access packages assigned to the user",
+            "displayName": "Remove all access package assignments for user",
+            "id": "42ae2956-193d-4f39-be06-691b8ac4fa1d",
+            "version": 1,
+            "parameters": []
+        },
+        {
+            "category": "leaver",
+            "description": "Cancel all pending access packages assignment requests for the user",
+            "displayName": "Cancel pending access package assignment requests for user",
+            "id": "498770d9-bab7-4e4c-b73d-5ded82a1d0b3",
+            "version": 1,
+            "parameters": []
+        },
+        {
+            "category": "mover",
+            "description": "Send email to notify user’s manager of user move",
+            "displayName": "Send email to notify manager of user move",
+            "id": "aab41899-9972-422a-9d97-f626014578b7",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "cc",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customSubject",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "customBody",
+                    "values": [],
+                    "valueType": "string"
+                },
+                {
+                    "name": "locale",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "joiner,mover",
+            "description": "Assign selected licenses to the user",
+            "displayName": "Assign licenses to user",
+            "id": "683c87a4-2ad4-420b-97d4-220d90afcd24",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "licenses",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "leaver,mover",
+            "description": "Remove selected licenses assigned to the user",
+            "displayName": "Remove licenses from user",
+            "id": "5fc402a8-daaf-4b7b-9203-da868b05fc5f",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "licenses",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        },
+        {
+            "category": "leaver,mover",
+            "description": "Transfer groups the user owned to the user's manager",
+            "displayName": "Transfer group ownership to manager",
+            "id": "dde2a64c-8420-447b-9075-7309449de5cd",
             "version": 1,
             "parameters": []
         }
@@ -306,7 +545,6 @@ Content-Type: application/json
 
 The following example shows a request. Because the **category** is a flagged enumeration that can be one of `joiner`, `joiner,leaver`, or `leaver`, the `has` operator checks tasks where the category includes "joiner".
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_list_taskdefinition_filter_category"
@@ -315,40 +553,6 @@ The following example shows a request. Because the **category** is a flagged enu
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions?$filter=category has 'joiner'
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskdefinition-filter-category-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-taskdefinition-filter-category-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-taskdefinition-filter-category-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-list-taskdefinition-filter-category-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-list-taskdefinition-filter-category-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-taskdefinition-filter-category-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-taskdefinition-filter-category-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-list-taskdefinition-filter-category-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 

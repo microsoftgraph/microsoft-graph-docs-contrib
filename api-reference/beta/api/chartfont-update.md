@@ -3,7 +3,7 @@ title: "Update workbookChartFont"
 description: "Update the properties of workbookChartFont object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 | Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that didn't change.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -54,6 +54,7 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 
 If successful, this method returns a `200 OK` response code and updated [workbookChartFont](../resources/workbookchartfont.md) object in the response body.
+
 ## Example
 ##### Request
 The following example shows a request.

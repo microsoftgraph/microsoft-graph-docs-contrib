@@ -215,7 +215,7 @@ items:
                   - name: Insights settings
                     href: resources/insightssettings.md
                   - name: List
-                    href: api/organizationsettings-list-iteminsights.md
+                    href: api/peopleadminsettings-list-iteminsights.md
                   - name: Update
                     href: api/insightssettings-update.md
               - name: User control (preview)
@@ -701,7 +701,6 @@ items:
                 href: api/profilephoto-update.md
               - name: Delete photo
                 href: api/profilephoto-delete.md
-                
           - name: Planner
             items:
               - name: Planner plan
@@ -798,7 +797,7 @@ items:
                       - name: Update
                         href: api/federatedidentitycredential-update.md
                       - name: Upsert
-                        href: api/federatedidentitycredential-upsert.md                        
+                        href: api/federatedidentitycredential-upsert.md
                       - name: Delete
                         href: api/federatedidentitycredential-delete.md
               - name: Owners
@@ -1376,6 +1375,23 @@ items:
                 href: api/place-get.md
               - name: Update place
                 href: api/place-update.md
+              - name: Devices (preview)
+                items:
+                  - name: Workplace sensor device
+                    href: resources/workplacesensordevice.md
+                    items:
+                      - name: List
+                        href: api/workplace-list-sensordevices.md
+                      - name: Create
+                        href: api/workplace-post-sensordevices.md
+                      - name: Get
+                        href: api/workplacesensordevice-get.md
+                      - name: Update
+                        href: api/workplacesensordevice-update.md
+                      - name: Delete
+                        href: api/workplacesensordevice-delete.md
+                      - name: Ingest telemetry
+                        href: api/workplacesensordevice-ingesttelemetry.md    
       - name: Change notifications
         items:
           - name: Overview
@@ -1640,9 +1656,9 @@ items:
                     href: api/usersettings-list-windows.md
                   - name: Get
                     href: api/windowssetting-get.md
-              - name: Windows setting instance                    
+              - name: Windows setting instance
                 href: resources/windowssettinginstance.md
-                items:              
+                items:
                   - name: List
                     href: api/windowssetting-list-instances.md
                   - name: Get
@@ -1798,7 +1814,7 @@ items:
                     href: api/browsersharedcookie-update.md
                   - name: Delete
                     href: api/browsersitelist-delete-sharedcookies.md
-          - name: Cloud PC (preview)
+          - name: Cloud PC
             items:
               - name: Overview
                 href: resources/cloudpc-api-overview.md
@@ -1967,6 +1983,10 @@ items:
                     href: api/cloudpcprovisioningpolicy-update.md
                   - name: Delete
                     href: api/cloudpcprovisioningpolicy-delete.md
+                  - name: Apply
+                    href: api/cloudpcprovisioningpolicy-apply.md
+                  - name: Apply configuration
+                    href: api/cloudpcprovisioningpolicy-applyconfig.md
                   - name: Assign
                     href: api/cloudpcprovisioningpolicy-assign.md
               - name: Cloud PC reports
@@ -1988,7 +2008,7 @@ items:
                   - name: Get real-time remote connection latency
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
                   - name: Get real-time remote connection status
-                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md                    
+                    href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
                   - name: Get remote action status reports
                     href: api/cloudpcreports-getactionstatusreports.md
                   - name: Get shared-use license usage reports (deprecated)
@@ -2048,6 +2068,30 @@ items:
                     href: api/cloudpcusersetting-delete.md
                   - name: Assign
                     href: api/cloudpcusersetting-assign.md
+              - name: Cloud PC bulk action
+                items:
+                  - name: Cloud PC bulk action
+                    href: resources/cloudpcbulkaction.md
+                  - name: Cloud PC bulk power off
+                    href: resources/cloudpcbulkpoweroff.md
+                  - name: Cloud PC bulk power on
+                    href: resources/cloudpcbulkpoweron.md
+                  - name: Cloud PC bulk reprovision
+                    href: resources/cloudpcbulkreprovision.md
+                  - name: Cloud PC bulk resize
+                    href: resources/cloudpcbulkresize.md
+                  - name: Cloud PC bulk restart
+                    href: resources/cloudpcbulkrestart.md
+                  - name: Cloud PC bulk restore
+                    href: resources/cloudpcbulkrestore.md
+                  - name: Cloud PC bulk troubleshoot
+                    href: resources/cloudpcbulktroubleshoot.md
+                  - name: List
+                    href: api/virtualendpoint-list-bulkactions.md
+                  - name: Create
+                    href: api/virtualendpoint-post-bulkactions.md
+                  - name: Get
+                    href: api/cloudpcbulkaction-get.md
               - name: Alert monitoring
                 items:
                   - name: Monitoring
@@ -2064,6 +2108,8 @@ items:
                         href: api/devicemanagement-alertrecord-getportalnotifications.md
                       - name: Set portal notification as sent
                         href: api/devicemanagement-alertrecord-setportalnotificationassent.md
+                      - name: Set list of portal notifications as sent
+                        href: api/devicemanagement-alertrecord-changealertrecordsportalnotificationassent.md
                   - name: Alert rule
                     href: resources/devicemanagement-alertrule.md
                     items:
@@ -10297,6 +10343,15 @@ items:
                     href: api/windowsupdates-deploymentaudience-updateaudience.md
                   - name: Update by ID
                     href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+              - name: Product
+                href: resources/windowsupdates-product.md
+                items:
+                  - name: Get known issues by time range
+                    href: api/windowsupdates-product-getknownissuesbytimerange.md
+                  - name: Find by catalog ID
+                    href: api/windowsupdates-product-findbycatalogid.md
+                  - name: Find by knowledge base number
+                    href: api/windowsupdates-product-findbykbnumber.md
               - name: Resource connection
                 href: resources/windowsupdates-resourceconnection.md
                 items:
@@ -11830,7 +11885,7 @@ items:
                         href: api/organizationsettings-list-contactinsights.md
                       - name: Update
                         href: api/insightssettings-update.md
-                  - name: Org control for item insights (preview)
+                  - name: Org control for item insights (deprecated)
                     items:
                       - name: Insights settings
                         href: resources/insightssettings.md
@@ -12976,7 +13031,7 @@ items:
                   - name: On attribute collection start
                     href: resources/onattributecollectionstartlistener.md
                   - name: On attribute collection submit
-                    href: resources/onattributecollectionsubmitlistener.md 
+                    href: resources/onattributecollectionsubmitlistener.md
                   - name: On authentication method load start
                     href: resources/onauthenticationmethodloadstartlistener.md
                   - name: On interactive authentication flow start
@@ -12984,7 +13039,7 @@ items:
                   - name: On token issuance start
                     href: resources/ontokenissuancestartlistener.md
                   - name: On user create start
-                    href: resources/onusercreatestartlistener.md   
+                    href: resources/onusercreatestartlistener.md
                   - name: List
                     href: api/identitycontainer-list-authenticationeventlisteners.md
                   - name: Create
@@ -13117,7 +13172,7 @@ items:
                       - name: Get
                         href: api/platformcredentialauthenticationmethod-get.md
                       - name: Delete
-                        href: api/platformcredentialauthenticationmethod-delete.md                       
+                        href: api/platformcredentialauthenticationmethod-delete.md
               - name: Authentication strengths
                 items:
                   - name: Overview
@@ -14169,7 +14224,7 @@ items:
                         href: api/authenticationconditionsapplications-post-includeapplications.md
                       - name: Remove applications
                         href: api/authenticationconditionapplication-delete.md
-          - name: Multicloud permissions management (preview) 
+          - name: Multicloud permissions management (preview)
             items:
             - name: Overview
               href: resources/permissions-management-api-overview.md
@@ -14194,7 +14249,7 @@ items:
                       items:
                       - name: List
                         href: api/awsassociatedidentities-list-all.md
-                      - name: Get 
+                      - name: Get
                         href: api/awsidentity-get.md
                     - name: AWS role
                       href: resources/awsrole.md
@@ -14202,13 +14257,13 @@ items:
                       - name: List
                         href: api/awsassociatedidentities-list-roles.md
                       - name: Get
-                        href: api/awsrole-get.md 
+                        href: api/awsrole-get.md
                     - name: AWS user
                       href: resources/awsuser.md
                       items:
                       - name: List
                         href: api/awsassociatedidentities-list-users.md
-                      - name: Get 
+                      - name: Get
                         href: api/awsuser-get.md
                       - name: List assumable roles
                         href: api/awsuser-list-assumableroles.md
@@ -14217,21 +14272,21 @@ items:
                     items:
                     - name: List
                       href: api/awsauthorizationsystem-list-actions.md
-                    - name: Get 
-                      href: api/awsauthorizationsystemtypeaction-get.md 
+                    - name: Get
+                      href: api/awsauthorizationsystemtypeaction-get.md
                   - name: AWS policy
                     href: resources/awspolicy.md
                     items:
                     - name: List
                       href: api/awsauthorizationsystem-list-policies.md
-                    - name: Get 
+                    - name: Get
                       href: api/awspolicy-get.md
                   - name: AWS resource
                     href: resources/awsauthorizationsystemresource.md
                     items:
                     - name: List
                       href: api/awsauthorizationsystem-list-resources.md
-                    - name: Get 
+                    - name: Get
                       href: api/awsauthorizationsystemresource-get.md
                   - name: AWS services
                     href: resources/authorizationsystemtypeservice.md
@@ -14248,13 +14303,13 @@ items:
                 - name: Azure authorization system inventory
                   items:
                   - name: Azure identities
-                    items: 
+                    items:
                     - name: All Azure identities
                       href: resources/azureidentity.md
                       items:
                       - name: List
                         href: api/azureassociatedidentities-list-all.md
-                      - name: Get 
+                      - name: Get
                         href: api/azureidentity-get.md
                     - name: Azure managed identity
                       href: resources/azuremanagedidentity.md
@@ -14268,36 +14323,36 @@ items:
                       items:
                       - name: List
                         href: api/azureassociatedidentities-list-serviceprincipals.md
-                      - name: Get 
+                      - name: Get
                         href: api/azureserviceprincipal-get.md
                     - name: Azure user
                       href: resources/azureuser.md
                       items:
                       - name: List
                         href: api/azureassociatedidentities-list-users.md
-                      - name: Get 
-                        href: api/azureuser-get.md   
+                      - name: Get
+                        href: api/azureuser-get.md
                   - name: Azure action
                     href: resources/azureauthorizationsystemtypeaction.md
                     items:
                     - name: List
                       href: api/azureauthorizationsystem-list-actions.md
-                    - name: Get 
+                    - name: Get
                       href: api/azureauthorizationsystemtypeaction-get.md
                   - name: Azure resource
                     href: resources/azureauthorizationsystemresource.md
                     items:
                     - name: List
                       href: api/azureauthorizationsystem-list-resources.md
-                    - name: Get 
-                      href: api/azureauthorizationsystemresource-get.md  
+                    - name: Get
+                      href: api/azureauthorizationsystemresource-get.md
                   - name: Azure role definition
                     href: resources/azureroledefinition.md
                     items:
                     - name: List
                       href: api/azureauthorizationsystem-list-roledefinitions.md
-                    - name: Get 
-                      href: api/azureroledefinition-get.md  
+                    - name: Get
+                      href: api/azureroledefinition-get.md
                   - name: Azure services
                     href: resources/authorizationsystemtypeservice.md
                     items:
@@ -14319,14 +14374,14 @@ items:
                       items:
                       - name: List
                         href: api/gcpassociatedidentities-list-all.md
-                      - name: Get 
+                      - name: Get
                         href: api/gcpidentity-get.md
                     - name: GCP user
                       href: resources/gcpuser.md
                       items:
                       - name: List
                         href: api/gcpassociatedidentities-list-users.md
-                      - name: Get 
+                      - name: Get
                         href: api/gcpuser-get.md
                     - name: GCP service account
                       href: resources/gcpserviceaccount.md
@@ -14334,20 +14389,20 @@ items:
                       - name: List
                         href: api/gcpassociatedidentities-list-serviceaccounts.md
                       - name: Get
-                        href: api/gcpserviceaccount-get.md     
+                        href: api/gcpserviceaccount-get.md
                   - name: GCP action
                     href: resources/gcpauthorizationsystemtypeaction.md
                     items:
                     - name: List
                       href: api/gcpauthorizationsystem-list-actions.md
-                    - name: Get 
+                    - name: Get
                       href: api/gcpauthorizationsystemtypeaction-get.md
                   - name: GCP resource
                     href: resources/gcpauthorizationsystemresource.md
                     items:
                     - name: List
                       href: api/gcpauthorizationsystem-list-resources.md
-                    - name: Get 
+                    - name: Get
                       href: api/gcpauthorizationsystemresource-get.md
                   - name: GCP role
                     href: resources/gcprole.md
@@ -14355,7 +14410,7 @@ items:
                     - name: List
                       href: api/gcpauthorizationsystem-list-roles.md
                     - name: Get
-                      href: api/gcprole-get.md 
+                      href: api/gcprole-get.md
                   - name: GCP services
                     href: resources/authorizationsystemtypeservice.md
                     items:
@@ -14371,14 +14426,14 @@ items:
                 - name: Create
                   href: api/permissionsmanagement-post-scheduledpermissionsrequests.md
                 - name: Cancel all
-                  href: api/scheduledpermissionsrequest-cancelall.md  
+                  href: api/scheduledpermissionsrequest-cancelall.md
               - name: Permissions request change
                 href: resources/permissionsrequestchange.md
                 items:
                 - name: List
                   href: api/permissionsmanagement-list-permissionsrequestchanges.md
                 - name: Get
-                  href: api/permissionsrequestchange-get.md  
+                  href: api/permissionsrequestchange-get.md
             - name: Permissions analytics
               items:
               - name: Permissions creep index distribution
@@ -14627,7 +14682,7 @@ items:
                 - name: List
                   href: api/externallyaccessibleawsstoragebucketfinding-list.md
                 - name: Get
-                  href: api/externallyaccessibleawsstoragebucketfinding-get.md   
+                  href: api/externallyaccessibleawsstoragebucketfinding-get.md
               - name: Open AWS security group
                 href: resources/openawssecuritygroupfinding.md
                 items:
@@ -14724,7 +14779,7 @@ items:
               - name: AWS IAM access key age
                 href: resources/awsidentityaccessmanagementkeyagefinding.md
                 items:
-                - name: List 
+                - name: List
                   href: api/awsidentityaccessmanagementkeyagefinding-list.md
                 - name: Get
                   href: api/awsidentityaccessmanagementkeyagefinding-get.md
@@ -14841,7 +14896,7 @@ items:
                       - name: List
                         href: api/networkaccess-networkaccessroot-list-filteringpolicies.md
                       - name: Create
-                        href: api/networkaccess-filteringpolicy-post-policyrules.md 
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
                       - name: Get
                         href: api/networkaccess-filteringpolicy-get.md
                       - name: Update
@@ -14858,13 +14913,13 @@ items:
                       - name: List
                         href: api/networkaccess-filteringpolicylink-list.md
                       - name: Get
-                        href: api/networkaccess-filteringpolicylink-get.md 
+                        href: api/networkaccess-filteringpolicylink-get.md
                       - name: Update
                         href: api/networkaccess-filteringpolicylink-update.md
                       - name: Delete
                         href: api/networkaccess-filteringpolicylink-delete.md
                       - name: List policy
-                        href: api/networkaccess-policylink-list-policy.md 
+                        href: api/networkaccess-policylink-list-policy.md
                       - name: Add policy
                         href: api/networkaccess-filteringpolicy-post-policyrules.md
                       - name: Remove policy
@@ -14875,14 +14930,14 @@ items:
                       - name: List
                         href: api/networkaccess-filteringrule-list.md
                       - name: Get
-                        href: api/networkaccess-filteringrule-get.md 
+                        href: api/networkaccess-filteringrule-get.md
                       - name: Create
                         href: api/networkaccess-filteringrule-post.md
                       - name: Update
                         href: api/networkaccess-filteringrule-update.md
                       - name: Delete
-                        href: api/networkaccess-filteringrule-delete.md                      
-              - name: Branch site
+                        href: api/networkaccess-filteringrule-delete.md
+              - name: Branch site (deprecated)
                 href: resources/networkaccess-branchsite.md
                 items:
                   - name: List
@@ -14912,7 +14967,7 @@ items:
                     href: resources/networkaccess-connectivityconfigurationlink.md
                     items:
                       - name: Get
-                        href: api/networkaccess-branchconnectivityconfiguration-get.md 
+                        href: api/networkaccess-branchconnectivityconfiguration-get.md
                   - name: Forwarding profile
                     items:
                       - name: List
@@ -14921,6 +14976,41 @@ items:
                         href: api/networkaccess-branchsite-post-forwardingprofiles.md
                       - name: Update forwarding profile for branch
                         href: api/networkaccess-forwardingprofile-update.md
+              - name: Remote network
+                href: resources/networkaccess-remotenetwork.md
+                items:
+                  - name: List
+                    href: api/networkaccess-connectivity-list-remotenetworks.md
+                  - name: Create
+                    href: api/networkaccess-connectivity-post-remotenetworks.md
+                  - name: Get
+                    href: api/networkaccess-remotenetwork-get.md
+                  - name: Update
+                    href: api/networkaccess-remotenetwork-update.md
+                  - name: Delete
+                    href: api/networkaccess-connectivity-delete-remotenetworks.md
+                  - name: Device link
+                    href: resources/networkaccess-devicelink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-remotenetwork-list-devicelinks.md
+                      - name: Get
+                        href: api/networkaccess-devicelink-get.md
+                      - name: Create
+                        href: api/networkaccess-remotenetwork-post-devicelinks.md
+                      - name: Delete
+                        href: api/networkaccess-devicelink-delete.md
+                  - name: Connectivity configuration
+                    href: resources/networkaccess-remotenetworkconnectivityconfiguration.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-remotenetworkconnectivityconfiguration-get.md
+                  - name: Forwarding profile
+                    items:
+                      - name: List
+                        href: api/networkaccess-remotenetwork-list-forwardingprofiles.md
+                      - name: Update forwarding profile for remote network
+                        href: api/networkaccess-remotenetwork-post-forwardingprofiles.md
               - name: Traffic logs
                 href: resources/networkaccess-logs.md
                 items:
@@ -14951,9 +15041,9 @@ items:
                   - name: Get device usage summary
                     href: api/networkaccess-reports-getdeviceusagesummary.md
                   - name: Get device usage report
-                    href: api/networkaccess-reports-devicereport.md  
+                    href: api/networkaccess-reports-devicereport.md
                   - name: Get user usage report
-                    href: api/networkaccess-reports-userreport.md    
+                    href: api/networkaccess-reports-userreport.md
                   - name: Get transaction summaries
                     href: api/networkaccess-reports-transactionsummaries.md
               - name: Remote network reports
@@ -15100,6 +15190,62 @@ items:
                 href: api/industrydata-industrydatarun-get.md
               - name: Get statistics
                 href: api/industrydata-industrydatarun-getstatistics.md
+          - name: Outbound provisioning flow set
+            href: resources/industrydata-outboundprovisioningflowset.md
+            items:
+              - name: List
+                href: api/industrydata-industrydataroot-list-outboundprovisioningflowsets.md
+              - name: Create
+                href: api/industrydata-industrydataroot-post-outboundprovisioningflowsets.md
+              - name: Get
+                href: api/industrydata-outboundprovisioningflowset-get.md
+              - name: Update
+                href: api/industrydata-outboundprovisioningflowset-update.md
+              - name: Delete
+                href: api/industrydata-industrydataroot-delete-outboundprovisioningflowsets.md
+          - name: Provisioning flow
+            href: resources/industrydata-provisioningflow.md
+            items:
+              - name: List
+                href: api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
+              - name: Create
+                href: api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+              - name: Administrative unit provisioning flow
+                href: resources/industrydata-administrativeunitprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-administrativeunitprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-administrativeunitprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-administrativeunitprovisioningflow-delete.md
+              - name: Class group provisioning flow
+                href: resources/industrydata-classgroupprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-classgroupprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-classgroupprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-classgroupprovisioningflow-delete.md
+              - name: Security group provisioning flow
+                href: resources/industrydata-securitygroupprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-securitygroupprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-securitygroupprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-securitygroupprovisioningflow-delete.md
+              - name: User provisioning flow
+                href: resources/industrydata-userprovisioningflow.md
+                items:
+                  - name: Get
+                    href: api/industrydata-userprovisioningflow-get.md
+                  - name: Update
+                    href: api/industrydata-userprovisioningflow-update.md
+                  - name: Delete
+                    href: api/industrydata-userprovisioningflow-delete.md
           - name: Reference definition
             href: resources/industrydata-referencedefinition.md
             items:
@@ -15445,6 +15591,14 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
+              - name: Org control for item insights settings (preview)
+                items:
+                - name: Insights settings
+                  href: resources/insightssettings.md
+                - name: List
+                  href: api/peopleadminsettings-list-iteminsights.md
+                - name: Update
+                  href: api/insightssettings-update.md
               - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
@@ -15772,7 +15926,7 @@ items:
                   - name: Insights settings
                     href: resources/insightssettings.md
                   - name: List
-                    href: api/organizationsettings-list-iteminsights.md
+                    href: api/peopleadminsettings-list-iteminsights.md
                   - name: Update
                     href: api/insightssettings-update.md
               - name: User control (preview)
@@ -16551,18 +16705,6 @@ items:
                 href: resources/security-huntingrowresult.md
               - name: Single property schema
                 href: resources/security-singlepropertyschema.md
-          - name: Custom detection rules
-            items:
-              - name: List custom detection rules
-                href: api/security-detectionrule-list.md
-              - name: Get custom detection rule
-                href: api/security-detectionrule-get.md
-              - name: Create custom detection rule
-                href: api/security-detectionrule-post-detectionRules.md
-              - name: Update custom detection rule
-                href: api/security-detectionrule-update.md
-              - name: Delete custom detection rule
-                href: api/security-detectionrule-delete.md
           - name: Alerts and incidents
             items:
               - name: Alert
@@ -16613,6 +16755,24 @@ items:
                     href: api/usersimulationdetails-list.md
                   - name: Get simulation overview
                     href: api/simulationreportoverview-get.md
+              - name: Training campaigns (preview)
+                items:
+                  - name: Training campaign
+                    href: resources/trainingcampaign.md
+                  - name: List
+                    href: api/attacksimulationroot-list-trainingcampaigns.md
+                  - name: Create
+                    href: api/attacksimulationroot-post-trainingcampaigns.md
+                  - name: Get
+                    href: api/trainingcampaign-get.md
+                  - name: Update
+                    href: api/trainingcampaign-update.md
+                  - name: Delete
+                    href: api/attacksimulationroot-delete-trainingcampaigns.md
+                  - name: List users
+                    href: api/usertrainingcampaigndetails-list.md
+                  - name: Get overview
+                    href: api/trainingcampaignreportoverview-get.md
               - name: Attack simulation operation
                 items:
                   - name: Attack simulation operation
@@ -16707,7 +16867,7 @@ items:
             items:
               - name: Audit log query
                 href: resources/security-auditlogquery.md
-                items: 
+                items:
                   - name: List
                     href: api/security-auditcoreroot-list-auditlogqueries.md
                   - name: Create
@@ -16721,6 +16881,19 @@ items:
                 items:
                   - name: List
                     href: api/security-auditlogquery-list-records.md
+          - name: Custom detection rules (preview)
+            href: resources/security-detectionrule.md
+            items:
+              - name: List
+                href: api/security-detectionrule-list.md
+              - name: Get
+                href: api/security-detectionrule-get.md
+              - name: Create
+                href: api/security-detectionrule-post-detectionRules.md
+              - name: Update
+                href: api/security-detectionrule-update.md
+              - name: Delete
+                href: api/security-detectionrule-delete.md
           - name: eDiscovery (preview)
             items:
               - name: Case
@@ -16961,6 +17134,18 @@ items:
                   href: api/security-analyzedemail-get.md
                 - name: Remediate
                   href: api/security-analyzedemail-remediate.md
+          - name: Identites (preview)
+            items:
+            - name: Health issue
+              items:
+                - name: Health issue
+                  href: resources/security-healthissue.md
+                - name: List
+                  href: api/security-identityContainer-list-healthissues.md
+                - name: Get
+                  href: api/security-healthissue-get.md
+                - name: Update
+                  href: api/security-healthissue-update.md
           - name: Information protection
             items:
               - name: Labels (deprecated)
@@ -17034,9 +17219,7 @@ items:
             items:
               - name: Overview
                 href: resources/security-recordsmanagement-overview.md
-              - name: Label (preview)
-                href: resources/security-labelsroot.md
-              - name: Retention label (preview)
+              - name: Retention label
                 href: resources/security-retentionlabel.md
                 items:
                   - name: List
@@ -17050,74 +17233,97 @@ items:
                   - name: Delete
                     href: api/security-retentionlabel-delete.md
               - name: File plan descriptors
-                href: resources/security-fileplandescriptor.md
                 items:
-                  - name: File plan reference
-                    href: resources/security-fileplanreference.md
-                    items:
-                      - name: List
-                        href: api/security-labelsroot-list-fileplanreferences.md
-                      - name: Create
-                        href: api/security-labelsroot-post-fileplanreferences.md
-                      - name: Get
-                        href: api/security-fileplanreferencetemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-fileplanreferences.md
+                - name: File plan descriptors
+                  items:
+                  - name: File plan descriptor set
+                    href: resources/security-fileplandescriptor.md
+                  - name: Applied category
+                    href: resources/security-appliedcategory.md
                   - name: Authority
                     href: resources/security-authority.md
-                    items:
-                      - name: List
-                        href: api/security-labelsroot-list-authorities.md
-                      - name: Create
-                        href: api/security-labelsroot-post-authorities.md
-                      - name: Get
-                        href: api/security-authoritytemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-authorities.md
-                  - name: Category
-                    href: resources/security-appliedcategory.md
-                    items:
-                      - name: List
-                        href: api/security-labelsroot-list-categories.md
-                      - name: Create
-                        href: api/security-labelsroot-post-categories.md
-                      - name: Get
-                        href: api/security-categorytemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-categories.md
-                  - name: Subcategory
-                    href: resources/security-subcategory.md
-                    items:
-                      - name: List
-                        href: api/security-categorytemplate-list-subcategories.md
-                      - name: Create
-                        href: api/security-categorytemplate-post-subcategories.md
-                      - name: Get
-                        href: api/security-subcategorytemplate-get.md
-                      - name: Delete
-                        href: api/security-categorytemplate-delete-subcategories.md
-                  - name: Department
-                    href: resources/security-department.md
-                    items:
-                      - name: List
-                        href: api/security-labelsroot-list-departments.md
-                      - name: Create
-                        href: api/security-labelsroot-post-departments.md
-                      - name: Get
-                        href: api/security-departmenttemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-departments.md
                   - name: Citation
                     href: resources/security-citation.md
+                  - name: Department
+                    href: resources/security-department.md
+                  - name: File plan reference
+                    href: resources/security-fileplanreference.md
+                  - name: Subcategory
+                    href: resources/security-subcategory.md
+                - name: File plan descriptor templates
+                  items:
+                  - name: Applied category template
                     items:
-                      - name: List
-                        href: api/security-labelsroot-list-citations.md
-                      - name: Create
-                        href: api/security-labelsroot-post-citations.md
-                      - name: Get
-                        href: api/security-citationtemplate-get.md
-                      - name: Delete
-                        href: api/security-labelsroot-delete-citations.md
+                    - name: Category template
+                      href: resources/security-categorytemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-categories.md
+                    - name: Create
+                      href: api/security-labelsroot-post-categories.md
+                    - name: Get
+                      href: api/security-categorytemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-categories.md
+                  - name: Authority template
+                    items:
+                    - name: Authority template
+                      href: resources/security-authoritytemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-authorities.md
+                    - name: Create
+                      href: api/security-labelsroot-post-authorities.md
+                    - name: Get
+                      href: api/security-authoritytemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-authorities.md
+                  - name: Citation template
+                    items:
+                    - name: Citation template
+                      href: resources/security-citationtemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-citations.md
+                    - name: Create
+                      href: api/security-labelsroot-post-citations.md
+                    - name: Get
+                      href: api/security-citationtemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-citations.md
+                  - name: Department template
+                    items:
+                    - name: Department template
+                      href: resources/security-departmenttemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-departments.md
+                    - name: Create
+                      href: api/security-labelsroot-post-departments.md
+                    - name: Get
+                      href: api/security-departmenttemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-departments.md              
+                  - name: File plan reference template
+                    items:
+                    - name: File plan reference template
+                      href: resources/security-fileplanreferencetemplate.md
+                    - name: List
+                      href: api/security-labelsroot-list-fileplanreferences.md
+                    - name: Create
+                      href: api/security-labelsroot-post-fileplanreferences.md
+                    - name: Get
+                      href: api/security-fileplanreferencetemplate-get.md
+                    - name: Delete
+                      href: api/security-labelsroot-delete-fileplanreferences.md
+                  - name: Subcategory template
+                    items:
+                    - name: Subcategory template
+                      href: resources/security-subcategorytemplate.md
+                    - name: List
+                      href: api/security-categorytemplate-list-subcategories.md
+                    - name: Create
+                      href: api/security-categorytemplate-post-subcategories.md
+                    - name: Get
+                      href: api/security-subcategorytemplate-get.md
+                    - name: Delete
+                      href: api/security-categorytemplate-delete-subcategories.md
               - name: Retention event
                 href: resources/security-retentionevent.md
                 items:
@@ -17456,7 +17662,7 @@ items:
               - name: List followed sites
                 href: api/sites-list-followed.md
               - name: List operations
-                href: api/site-list-operations.md               
+                href: api/site-list-operations.md
               - name: List recycle bin items
                 href: api/recyclebin-list-items.md
               - name: List subsites
@@ -17465,6 +17671,8 @@ items:
                 href: api/site-search.md
               - name: Unfollow site
                 href: api/site-unfollow.md
+              - name: Get delta
+                href: api/site-delta.md
           - name: List
             items:
               - name: List
@@ -17545,12 +17753,12 @@ items:
                 href: api/listitem-createlink.md
               - name: Get activities by interval
                 href: api/itemactivity-getbyinterval.md
+              - name: Get delta
+                href: api/listitem-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
               - name: List versions
                 href: api/listitem-list-versions.md
-              - name: Get delta
-                href: api/listitem-delta.md
           - name: Document set version
             items:
               - name: Document set version
@@ -17565,7 +17773,7 @@ items:
                 href: api/documentsetversion-delete.md
               - name: Restore
                 href: api/documentsetversion-restore.md
-          - name: Pages (preview)
+          - name: Pages
             items:
               - name: Base site page
                 href: resources/basesitepage.md
@@ -18306,7 +18514,7 @@ items:
                         href: api/virtualappointment-getvirtualappointmentjoinweburl.md
                       - name: Send SMS notification
                         href: api/virtualappointment-sendvirtualappointmentsms.md
-                      - name: Send SMS reminder 
+                      - name: Send SMS reminder
                         href: api/virtualappointment-sendvirtualappointmentremindersms.md
                       - name: Virtual appointment (deprecated)
                         href: resources/virtualappointment.md
@@ -18400,7 +18608,7 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
-          - name: Settings (preview)
+          - name: Settings
             items:
               - name: License details
                 href: resources/licensedetails.md
@@ -18497,6 +18705,10 @@ items:
                     href: api/channel-patch.md
                   - name: Delete channel
                     href: api/channel-delete.md
+                  - name: Archive channel
+                    href: api/channel-archive.md
+                  - name: Unarchive channel
+                    href: api/channel-unarchive.md  
                   - name: Remove incoming channel
                     href: api/team-delete-incomingchannels.md
                   - name: Add member
@@ -19434,4 +19646,3 @@ items:
                 href: api/workbookdocumenttask-list-changes.md
               - name: Get
                 href: api/workbookdocumenttaskchange-get.md
-
