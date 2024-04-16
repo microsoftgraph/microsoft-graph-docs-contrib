@@ -25,7 +25,7 @@ This is an abstract type that's inherited by the [crossTenantSynchronizationReso
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.crossTenantResource"

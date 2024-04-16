@@ -29,7 +29,7 @@ None.
 |multiTenantOrganization|[multiTenantOrganization](../resources/multitenantorganization.md)|Defines an organization with more than one instance of Microsoft Entra ID.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
