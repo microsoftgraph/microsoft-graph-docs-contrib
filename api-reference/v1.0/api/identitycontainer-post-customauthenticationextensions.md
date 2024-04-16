@@ -49,6 +49,13 @@ You can specify the following properties when creating a **customAuthenticationE
 |displayName|String|Display name for the custom extension. Optional.|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Optional.|
 
+Specific custom extension types have additional properties which may be set:
+
+### onTokenIssuanceStartCustomExtension object
+
+|Property|Type|Description|
+|:---|:---|:---|
+|claimsForTokenConfiguration|[onTokenIssuanceStartReturnClaim](../resources/ontokenissuancestartreturnclaim.md) collection|Collection of claims to be returned by the API called by this custom authentication extension. Only used for claims mapping admin UX. Optional. |
 
 ## Response
 
