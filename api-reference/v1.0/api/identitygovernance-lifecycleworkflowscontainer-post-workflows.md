@@ -1,6 +1,6 @@
 ---
 title: "Create workflow"
-description: "Create a new workflow object. You can create up to 50 workflows in a tenant."
+description: "Create a new workflow object. You can create up to 100 workflows in a tenant."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
