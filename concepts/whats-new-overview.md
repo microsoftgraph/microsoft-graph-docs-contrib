@@ -32,6 +32,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added the [upsert](/graph/api/group-upsert) capability to the [group resource type](/graph/api/resources/group). Use this capability to create a group if it doesn't exist, or update an existing group, by using the **uniqueName** client-provided key.
 
+### Security | Legacy alerts
+
+The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
+
 ### Sites and lists
 
 You can now:
@@ -68,6 +72,14 @@ When calling the [industry data ETL API](/graph/api/resources/industrydata-overv
 ### People and workplace intelligence | People 
 
 Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) method on the **peopleAdminSettings** resource.
+
+### Security | Legacy alerts
+
+The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
+
+### Security | Threat intelligence indicator
+
+The `/security/tiindicators` endpoint is deprecated and will stop returning data on **April 10, 2026**.
 
 ### Teamwork and communications | Messaging
 
