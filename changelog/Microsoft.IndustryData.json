@@ -3,6 +3,14 @@
     {
       "ChangeList": [
         {
+            "Id": "c28ab5fe-0a0b-4452-b183-4be0201be4ee",
+            "ApiChange": "Method",
+            "ChangedApiName": "reset",
+            "ChangeType": "Addition",
+            "Description": "Added the [reset](https://learn.microsoft.com/en-us/graph/api/industryData-provisioningFlow-reset?view=graph-rest-beta) method to the [provisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-provisioningFlow?view=graph-rest-beta) resource.",
+            "Target": "provisioningFlow"
+        },
+        {
           "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
           "ApiChange": "Enumeration",
           "ChangedApiName": "additionalClassGroupAttributes",
