@@ -60,7 +60,6 @@ Singleton entity that acts as a container for all device management functionalit
 |macOSSoftwareUpdateAccountSummaries|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) collection|The MacOS software update account summaries for this account.|
 |hardwareConfigurations|[hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) collection|The hardware configurations for this account.|
 |hardwarePasswordInfo|[hardwarePasswordInfo](../resources/intune-deviceconfig-hardwarepasswordinfo.md) collection|The hardware password info for this account.|
-|endpointPrivilegeManagementProvisioningStatus|[endpointPrivilegeManagementProvisioningStatus](../resources/intune-deviceconfig-endpointprivilegemanagementprovisioningstatus.md)|Endpoint privilege management (EPM) tenant provisioning status contains tenant level license and onboarding state information.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
