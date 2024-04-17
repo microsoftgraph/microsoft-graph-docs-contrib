@@ -17209,12 +17209,12 @@ items:
                 href: api/alert-update.md
               - name: Update multiple alerts
                 href: api/alert-updatealerts.md
-          - name: Partner Security
+          - name: Partner security
             items:
-              - name: Security Alerts
+              - name: Security alerts
                 items:
                   - name: Overview
-                    displayName: CSP Partner's Customer Security Alerts API
+                    displayName: CSP partner's customer security alerts API
                     href: resources/partner.security-partnersecurityalert-api-overview.md
                   - name: Partner security alert
                     href: resources/partner.security-partnersecurityalert.md
