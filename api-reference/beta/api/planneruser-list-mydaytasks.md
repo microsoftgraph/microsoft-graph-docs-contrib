@@ -1,6 +1,6 @@
 ---
 title: "List myDayTasks"
-description: "Retrieve a list of planner tasks to be shown in the user's My Day view."
+description: "Retrieve a list of planner tasks to be shown in the user's My Day view.My Day is a view within planner app which will show all the tasks, a user has to focus today based on either user adds the task to the view or the due date of the task is today."
 ms.localizationpriority: medium
 author: "NupurGarg"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of **plannerTask** objects to be shown in the user's My Day view.
+Retrieve a list of **plannerTask** objects to be shown in the user's My Day view.My Day is a view within planner app which will show all the tasks, a user has to focus today based on either user adds the task to the view or the due date of the task is today.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
