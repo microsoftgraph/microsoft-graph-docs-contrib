@@ -37,7 +37,8 @@ GET /admin/people/itemInsights
 ```
 
 ## Optional query parameters
-TODO
+
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
