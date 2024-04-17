@@ -17197,7 +17197,7 @@ items:
                     href: api/informationprotection-post-threatassessmentrequests.md
                   - name: Get
                     href: api/threatassessmentrequest-get.md
-          - name: Legacy alerts
+          - name: Legacy alerts (deprecated)
             items:
               - name: Alert
                 href: resources/alert.md
@@ -17536,7 +17536,7 @@ items:
                     href: api/security-whoisrecord-list-history.md
                   - name: Get
                     href: api/security-whoishistoryrecord-get.md
-          - name: Threat intelligence indicator (preview)
+          - name: Threat intelligence indicator (deprecated)
             items:
               - name: Threat intelligence indicator
                 href: resources/tiindicator.md
