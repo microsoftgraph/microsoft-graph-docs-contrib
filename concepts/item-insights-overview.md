@@ -76,4 +76,4 @@ Looking for the API reference for this service?
 ## Next steps
 
 - Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the insights API with your own files. Sign in, expand **Insights** in the column on the left, and try the sample queries.
-- Learn more about [customizing item insights privacy for users](insights-customize-item-insights-privacy.md), and the [insights settings API (preview)](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
+- Learn more about [customizing item insights privacy for users](insights-customize-item-insights-privacy.md), and the [insights settings API](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
