@@ -9,39 +9,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
-chatMessage.setSubject("Announcement Subheading");
+chatMessage.setSubject(null);
 ItemBody body = new ItemBody();
-body.setContentType(BodyType.Text);
-body.setContent("<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text");
+body.setContentType(BodyType.Html);
+body.setContent("<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>");
 chatMessage.setBody(body);
 LinkedList<ChatMessageAttachment> attachments = new LinkedList<ChatMessageAttachment>();
 ChatMessageAttachment chatMessageAttachment = new ChatMessageAttachment();
-chatMessageAttachment.setId("d7ddbf876ae340c3a03bada395ec7da7");
-chatMessageAttachment.setContentType("application/vnd.microsoft.teams.messaging-announcementBanner");
+chatMessageAttachment.setId("74d20c7f34aa4a7fb74e2b30004247c5");
+chatMessageAttachment.setContentType("application/vnd.microsoft.card.thumbnail");
 chatMessageAttachment.setContentUrl(null);
-chatMessageAttachment.setContent("{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}");
+chatMessageAttachment.setContent("{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}");
 chatMessageAttachment.setName(null);
 chatMessageAttachment.setThumbnailUrl(null);
+chatMessageAttachment.setTeamsAppId("881b8843-fd91-49e5-9ac2-47ec497ffbe5");
 attachments.add(chatMessageAttachment);
 chatMessage.setAttachments(attachments);
-LinkedList<ChatMessageHostedContent> hostedContents = new LinkedList<ChatMessageHostedContent>();
-ChatMessageHostedContent chatMessageHostedContent = new ChatMessageHostedContent();
-byte[] contentBytes = Base64.getDecoder().decode("iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4c6QAAAARnQU1BA");
-chatMessageHostedContent.setContentBytes(contentBytes);
-chatMessageHostedContent.setContentType("image/png");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("@microsoft.graph.temporaryId", "1");
-chatMessageHostedContent.setAdditionalData(additionalData);
-hostedContents.add(chatMessageHostedContent);
-ChatMessageHostedContent chatMessageHostedContent1 = new ChatMessageHostedContent();
-byte[] contentBytes1 = Base64.getDecoder().decode("iVBORw0KGgoAAAANSUhEUgAAA5YAAAB4CAYAAACJrW0RAAAAAXNSR0IArs4c6QAAIABJREFUe");
-chatMessageHostedContent1.setContentBytes(contentBytes1);
-chatMessageHostedContent1.setContentType("image/png");
-HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
-additionalData1.put("@microsoft.graph.temporaryId", "2");
-chatMessageHostedContent1.setAdditionalData(additionalData1);
-hostedContents.add(chatMessageHostedContent1);
-chatMessage.setHostedContents(hostedContents);
 ChatMessage result = graphClient.teams().byTeamId("{team-id}").channels().byChannelId("{channel-id}").messages().post(chatMessage);
 
 

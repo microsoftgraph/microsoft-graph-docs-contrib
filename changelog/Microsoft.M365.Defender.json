@@ -2175,6 +2175,42 @@
       "CreatedDateTime": "2024-03-19T20:21:42.8192752Z",
       "WorkloadArea": "Security",
       "SubArea": "Identites"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "aa7ee310-edd7-4fc4-99a4-e39412b4c0d0",
+          "ApiChange": "Property",
+          "ChangedApiName": "resolvingComment",
+          "ChangeType": "Addition",
+          "Description": "Added the **resolvingComment** property to the [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource.",
+          "Target": "incident"
+        }
+      ],
+      "Id": "aa7ee310-edd7-4fc4-99a4-e39412b4c0d0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-11T14:45:21.9587412Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "61450d6a-25b8-4733-9dd8-fe3b0985331b",
+          "ApiChange": "Property",
+          "ChangedApiName": "resolvingComment",
+          "ChangeType": "Addition",
+          "Description": "Added the **resolvingComment** property to the [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-1.0) resource.",
+          "Target": "incident"
+        }
+      ],
+      "Id": "61450d6a-25b8-4733-9dd8-fe3b0985331b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-11T14:45:21.9589769Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }
