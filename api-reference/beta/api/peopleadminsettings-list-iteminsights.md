@@ -1,13 +1,13 @@
 ---
-title: "List insightsSettings"
-description: "Retrieve properties of insightsSettings object for displaying or returning item insights in an organization."
+title: "List itemInsights"
+description: "Get the properties of an insightsSettings object for displaying or returning item insights in an organization."
 author: "jolintve"
 ms.localizationpriority: medium
 ms.subservice: "insights"
 doc_type: apiPageType
 ---
 
-# List insightsSettings
+# List itemInsights
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning item insights in an organization.
 
-To learn how to customize the privacy of item insights in an organization, see [Customize item insights privacy](/graph/insights-customize-item-insights-privacy).
+To learn how to customize the privacy of item insights in an organization, see [Customize item insights privacy in Microsoft Graph](/graph/insights-customize-item-insights-privacy).
 
 ## Permissions
 
