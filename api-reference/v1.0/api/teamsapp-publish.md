@@ -326,7 +326,7 @@ Content-type: application/json
 <details>
 <summary>Inner error codes</summary>
 
-| Error code | Error message | Comment |
+| Error code | Error message | Description |
 | :---- | ---- | ---- |
 |`Serialization_FileNotValidJson`	| The file could not be parsed as a JSON object.| The file that you provided didn't comply with the valid JSON format.|
 |`Serialization_ManifestVersionPropertyMissing`	| The file does not contain the "{0}" property.	| The manifest file is missing the `manifestVersion` property. In this context, {0} is the string for `manifestVersion` property.|
@@ -336,7 +336,7 @@ Content-type: application/json
 |`SchemaError_Maximum`	| Integer {0} exceeds maximum value of {1}.	| A JSON file failed the `maximum` check of the schema. {0} is the value that exceeded the maximum and {1} is the maximum. |
 |`SchemaError_Minimum`	| Integer {0} is less than minimum value of {1}.	| A JSON file failed the `minimum` check of the schema. {0} is the value that exceeded the minimum and {1} is the minimum.|
 |`SchemaError_MaximumLength`	| String {0} exceeds maximum length of {1}.	| A JSON file failed the `maximumLength` check of the schema. {0} is the string that exceeds maximum length and {1} is the maximum.|
-|`SchemaError_MinimumLength`	| String {0} is less than minimum length of {1}. | A JSON file failed the `minimumLength` check of the schema. {0} is the string that is less than the minimum length and {1} is the minimum..|
+|`SchemaError_MinimumLength`	| String {0} is less than minimum length of {1}. | A JSON file failed the `minimumLength` check of the schema. {0} is the string that is less than the minimum length and {1} is the minimum.|
 |`SchemaError_Pattern`	| String {0} does not match regex pattern "{1}". | A JSON file failed the `pattern` check of the schema. {0} is the value that doesn't match the pattern and {1} is the expected pattern.|
 |`SchemaError_ContentEncoding`| String {0} does not validate against content encoding {1}.	| A JSON file failed the `contentEncoding` check of the schema. {0} is a string content encoding and {1} is the expected content encoding.|
 |`SchemaError_Format`	| String {0} does not validate against format {1}.	| A JSON file failed the `format` check of the schema. {0} is the string that isn't in the expected format and {1} is the expected format.|
