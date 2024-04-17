@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/security/labels/categories/82d00422-1f60-46
 
 ---
 
-
 ### Response
 Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

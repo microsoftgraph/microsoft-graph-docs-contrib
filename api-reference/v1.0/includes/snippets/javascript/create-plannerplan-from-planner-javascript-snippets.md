@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const plannerPlan = {
   container: {
-    url: 'https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874'
+    url: 'https://graph.microsoft.com/v1.0/groups/ebf3b108-5234-4e22-b93d-656d7dae5874'
   },
   title: 'title-value'
 };

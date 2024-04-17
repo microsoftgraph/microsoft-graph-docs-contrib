@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestToken := "1230919asd190410jlka"
 
-requestParameters := &graphsites.SiteItemListItemItemItemRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SiteItemListItemItemsDelta()RequestBuilderGetQueryParameters{
 	Token: &requestToken,
 }
-configuration := &graphsites.SiteItemListItemItemItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SiteItemListItemItemsDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-items, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByListItemId("listItem-id").Get(context.Background(), configuration)
+delta, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```
