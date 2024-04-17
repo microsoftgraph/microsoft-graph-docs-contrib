@@ -935,7 +935,7 @@ items:
       - name: List all teams
         href: teams-list-all-teams.md
     - name: Embed Teams meeting and calling in your app
-      href: https://learn.microsoft.com/en-us/microsoftteams/platform/get-started/b2c-apps
+      href: /microsoftteams/platform/get-started/b2c-apps?context=graph/context
     - name: Embed Teams chat in your app
       href: teams-embed-within-own-app.md
     - name: Payment models and licensing requirements
