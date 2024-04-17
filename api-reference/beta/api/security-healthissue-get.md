@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/security/identities/healthIssues/b3c1b5fc-8
 
 ---
 
-
 ### Response
 
 The following example shows the response.
