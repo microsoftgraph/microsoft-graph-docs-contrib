@@ -9,14 +9,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [workingTimeSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workingtimeschedule?view=graph-rest-beta) resource and supported methods.",
           "Target": "workingTimeSchedule"
-        },
-        {
-          "Id": "f31cf2dc-17ab-400e-bd7d-e6c728d249f1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "solution",
-          "ChangeType": "Addition",
-          "Description": "Added the [solution](https://learn.microsoft.com/en-us/graph/api/resources/solution?view=graph-rest-beta) resource and a supported method.",
-          "Target": "solution"
         }
       ],
       "Id": "f31cf2dc-17ab-400e-bd7d-e6c728d249f1",

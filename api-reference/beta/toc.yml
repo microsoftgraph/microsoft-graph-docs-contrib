@@ -391,12 +391,6 @@ items:
                 href: api/profile-get.md
               - name: Delete user's profile
                 href: api/profile-delete.md
-          - name: Solution (preview)
-            items:
-              - name: Solution
-                href: resources/solution.md
-              - name: Get
-                href: api/solution-get.md
           - name: Sponsors
             items:
               - name: Add sponsor
