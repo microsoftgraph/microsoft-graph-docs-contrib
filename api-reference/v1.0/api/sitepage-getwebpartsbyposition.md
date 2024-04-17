@@ -70,15 +70,22 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_webparts_by_position"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/getWebPartsByPosition?isInVerticalSection=true
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-webparts-by-position-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

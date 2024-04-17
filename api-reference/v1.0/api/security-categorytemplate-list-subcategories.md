@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/security/labels/categories/{categoryTemplat
 
 ---
 
-
 ### Response
 Here's an example of the response.
 
