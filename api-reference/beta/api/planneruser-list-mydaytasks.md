@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of **plannerTask** objects to be shown in the user's My Day view.My Day is a view within planner app which will show all the tasks, a user has to focus today based on either user adds the task to the view or the due date of the task is today.
+Retrieve a list of [plannerTask](../resources/plannertask.md) objects to be shown in the user's My Day view within Planner. This method returns the list of tasks that the user added to the My Day view or that are due today.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
