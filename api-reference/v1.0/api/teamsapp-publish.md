@@ -321,14 +321,16 @@ Content-type: application/json
 }
 ```
 
+<br>
+
 <details>
 <summary>Inner error codes</summary>
 
-| Error Code | Error Message | Comment |
-| ---- | ---- | ---- |
-|`Serialization_FileNotValidJson`	| The file could not be parsed as a JSON object.| The developer provided the file but it did not conform to valid JSON.|
-|`Serialization_ManifestVersionPropertyMissing`	| The file does not contain the "{0}" property.	| The manifest file did not have a 'manifestVersion' property at all. {0} is the string 'manifestVersion'.|
-|`Serialization_FileMissing`	| The file {0} could not be found in the app package.	| The developer did not provide an expected file in the app package.|
+| Error code | Error message | Comment |
+| :---- | ---- | ---- |
+|`Serialization_FileNotValidJson`	| The file could not be parsed as a JSON object.| The developer provided the file but it didn't conform to valid JSON.|
+|`Serialization_ManifestVersionPropertyMissing`	| The file does not contain the "{0}" property.	| The manifest file didn't have a 'manifestVersion' property at all. {0} is the string 'manifestVersion'.|
+|`Serialization_FileMissing`	| The file {0} could not be found in the app package.	| The developer didn't provide an expected file in the app package.|
 |`Serialization_TrailingCommaInManifestJsonFile`	| Manifest json file contains trailing comma.	| The manifest json file contains trailing comma.|
 |`SchemaError_MultipleOf`	| Integer {0} is not a multiple of {1}.	| A JSON file failed the "multipleOf" check of the schema. {0} is the integer and {1} is the required multiple.|
 |`SchemaError_Maximum`	| Integer {0} exceeds maximum value of {1}.	| A JSON file failed the "maximum" check of the schema. {0} is the value that exceeded the maximum and {1} is the maximum.|
