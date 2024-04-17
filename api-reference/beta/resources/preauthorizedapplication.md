@@ -25,7 +25,7 @@ In some rare cases, an identifier listed in the `permissionIds` property may ref
 |permissionIds|String collection| The unique identifier for the [scopes](permissionscope.md) the client application is granted. |
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

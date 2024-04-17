@@ -465,7 +465,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-riskdetection-riskyusersdismiss-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----      
+---
 
 After dismissing the risk user, you can rerun the request in Step 2 and will notice that the **MyTestUser1** user account now has a risk level of `none` and a riskState of `dismissed`.
 

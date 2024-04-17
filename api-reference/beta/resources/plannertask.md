@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object that can contain more information about the task. For more information about relationships between group, plan, and task, see [Use the Planner REST API](planner-overview.md)
+Represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object that can contain more information about the task. For more information about relationships between group, plan, and task, see [Use the Planner REST API](planner-overview.md).
 
 
 ## Methods
@@ -29,10 +29,10 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|Number of checklist items with value set to `false`, representing incomplete items.|
-|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task has been applied. See [applied Categories](plannerappliedcategories.md) for possible values.|
+|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task is applied. See [plannerAppliedCategories resource type](plannerappliedcategories.md) for possible values.|
 |assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|The set of assignees the task is assigned to.|
-|bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service. |
+|bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service. |
 |checklistItemCount|Int32|Number of checklist items that are present on the task.|
 |completedBy|[identitySet](identityset.md)|Identity of the user that completed the task.|
 |completedDateTime|DateTimeOffset|Read-only. Date and time at which the `'percentComplete'` of the task is set to `'100'`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
@@ -42,15 +42,17 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Contains information about the origin of the task.|
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |hasDescription|Boolean|Read-only. Value is `true` if the details object of the task has a nonempty description and `false` otherwise.|
-|id|String|Read-only. ID of the task. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|id|String|Read-only. A unique 28-character case-sensitive ID for the task. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|isOnMyDay|Boolean|A Boolean value that indicates whether to show this task in the MyDay view. `true` to show the task. Otherwise, `false`.|
+|isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
-|priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
+|priority|Int32|The priority of the task. Valid values are between `0` and `10`, inclusive. Larger values indicate lower priority. For example, `0` has the highest priority and `10` has the lowest priority. Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low". Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
 |previewType|String|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Defines active or inactive recurrence for the task. `null` when the recurrence has never been defined for the task.|
 |referenceCount|Int32|Number of external references that exist on the task.|
-|specifiedCompletionRequirements|[plannerTaskCompletionRequirements](../resources/plannertask.md#plannertaskcompletionrequirements-values)|Indicates all the requirements specified on the **plannerTask**. Possible values are: `none`, `checklistCompletion`, `unknownFutureValue`. Read-only. The [plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md) in [plannerTaskDetails](plannertaskdetails.md) has details of the requirements specified, if any. |
+|specifiedCompletionRequirements|[plannerTaskCompletionRequirements](../resources/plannertask.md#plannertaskcompletionrequirements-values)|Indicates all the requirements specified on the **plannerTask**. Possible values are: `none`, `checklistCompletion`, `unknownFutureValue`, `formCompletion`, `approvalCompletion`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `checklistCompletion`,`formCompletion`, `approvalCompletion`. **conditionalAccessConditions** is a multi-valued enumeration and the property can contain multiple values in a comma-separated list. Read-only. The [plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md) in [plannerTaskDetails](plannertaskdetails.md) has details of the requirements specified, if any. |
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |title|String|Title of the task.|
 
@@ -61,6 +63,8 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 | none                | No requirement.                                                |
 | checklistCompletion | Some or all of the checklist items are required to be checked. |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.              |
+| formCompletion      | Some or all of the forms must be submitted to complete the planner task.         |
+| approvalCompletion  | Approval is required.                                     |
 
 ## Relationships
 
@@ -68,12 +72,12 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.|
 |bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.|
-|details|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable. Additional details about the task.|
+|details|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable. More details about the task.|
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -101,6 +105,8 @@ Here's a JSON representation of the resource.
   "dueDateTime": "String (timestamp)",
   "hasDescription": "Boolean",
   "id": "String (identifier)",
+  "isOnMyDay": "Boolean",
+  "isOnMyDayLastModifiedDate": "Date",
   "orderHint": "String",
   "percentComplete": "Int32",
   "planId": "String",

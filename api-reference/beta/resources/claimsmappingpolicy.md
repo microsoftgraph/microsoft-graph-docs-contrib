@@ -97,7 +97,7 @@ The properties below form the JSON object that represents a claims-mapping polic
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
