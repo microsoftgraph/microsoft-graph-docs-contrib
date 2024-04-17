@@ -64,6 +64,10 @@ When calling the [industry data ETL API](/graph/api/resources/industrydata-overv
 
 Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) method on the **peopleAdminSettings** resource.
 
+### Reports | Identity and access reports
+
+Added the `nativeAuth` member as a supported protocol type to the **authenticationProtocol** in the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) resource.
+
 ### Teamwork and communications | Messaging
 
 [Send chatMessage in a channel or a chat](/graph/api/chatmessage-post?view=graph-rest-beta&preserve-view=true) with a file attachment in it using file share link. 
