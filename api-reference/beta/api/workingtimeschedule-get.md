@@ -3,7 +3,7 @@ title: "Get workingTimeSchedule"
 description: "Read the properties and relationships of a workingTimeSchedule object."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get solution"
 description: "Read the properties and relationships of a solution object."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "entra-users"
 doc_type: apiPageType
 ---
 

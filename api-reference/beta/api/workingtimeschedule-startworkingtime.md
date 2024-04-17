@@ -3,7 +3,7 @@ title: "workingTimeSchedule: startWorkingTime"
 description: "Trigger the policies associated with the start of working hours for a specific user."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /users/{userId}/solutions/schedule/startWorkingTime
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|User ID that started working.|
+|userId|String|ID of the user whose working hours started.|
 
 ## Request headers
 

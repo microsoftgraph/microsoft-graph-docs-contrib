@@ -3,7 +3,7 @@ title: "workingTimeSchedule: endWorkingTime"
 description: "Trigger the policies associated with the end of working hours for a specific user."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /users/{userId}/solutions/schedule/endWorkingTime
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|User ID that ended working.|
+|userId|String|ID of the user whose working time ended.|
 
 ## Request headers
 

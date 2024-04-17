@@ -3,7 +3,7 @@ title: "workingTimeSchedule resource type"
 description: "Represents user's working time schedule entity."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents user's working time schedule entity.
+Represents a user's scheduled working hours.
 
 ## Methods
 

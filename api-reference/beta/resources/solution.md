@@ -3,7 +3,7 @@ title: "solution resource type"
 description: "Represents a user's custom solution entity."
 author: "galalalym"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
