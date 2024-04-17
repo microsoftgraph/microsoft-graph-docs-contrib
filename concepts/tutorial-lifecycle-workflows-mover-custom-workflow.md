@@ -6,7 +6,7 @@ ms.author: owinfrey
 ms.reviewer: Alexander.Filipin
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance"
+ms.subservice: entra-id-governance
 ms.date: 04/13/2024
 #Customer intent: As a developer integrating with Microsoft Graph, I want to use lifecycle workflows APIs to automate employee mover tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
