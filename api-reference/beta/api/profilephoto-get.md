@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "kristinmcleod"
 ms.prod: "people"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get profilePhoto

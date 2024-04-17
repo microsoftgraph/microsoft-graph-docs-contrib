@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "mahage-msft"
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Update reviewSetQuery

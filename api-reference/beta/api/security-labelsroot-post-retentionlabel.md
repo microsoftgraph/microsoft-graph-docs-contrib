@@ -5,7 +5,6 @@ author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Create retentionLabel
@@ -136,10 +135,6 @@ Content-length: 555
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-retentionlabel-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-retentionlabel-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

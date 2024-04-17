@@ -6,7 +6,6 @@ title: Delete an entry from a SharePoint list
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Delete an item from a list
 

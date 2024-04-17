@@ -6,7 +6,6 @@ title: List drives
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # List available drives
 

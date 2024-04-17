@@ -4,8 +4,8 @@ description: "Delete a pendingExternalUserProfile object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.subservice: "entra-directory-management"
-ms.topic: reference
 ---
 
 # Delete pendingExternalUserProfile

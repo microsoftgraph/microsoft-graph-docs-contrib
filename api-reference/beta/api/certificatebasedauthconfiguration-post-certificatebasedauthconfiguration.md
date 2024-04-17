@@ -2,10 +2,9 @@
 title: "Create certificateBasedAuthConfiguration"
 description: "Use this API to create a new certificateBasedAuthConfiguration."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Create certificateBasedAuthConfiguration

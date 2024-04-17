@@ -5,7 +5,6 @@ author: sangle7
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Update sitePage
@@ -81,7 +80,7 @@ The following example shows a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
+PATCH https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage
 Content-Type: application/json
 
 {
@@ -119,7 +118,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.sitePage",
   "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
   "name": "sample.aspx",
-  "webUrl": "https://a830edad9050849yd.sharepoint.com/SitePages/sample.aspx",
+  "webUrl": "https://contoso.sharepoint.com/SitePages/sample.aspx",
   "title": "sample",
   "pageLayout": "article",
   "showComments": true,
@@ -137,18 +136,12 @@ Content-Type: application/json
     }
   },
   "publishingState": {
-    "level": "checkout",
-    "versionId": "0.1",
-    "checkedOutBy": {
-      "user": {
-        "displayName": "Rahul Mittal",
-        "email": "rahmit@contoso.com"
-      }
-    }
+    "level": "draft",
+    "versionId": "0.1"
   },
   "titleArea": {
     "enableGradientEffect": true,
-    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+    "imageWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
     "layout": "colorBlock",
     "showAuthor": true,
     "showPublishedDate": false,

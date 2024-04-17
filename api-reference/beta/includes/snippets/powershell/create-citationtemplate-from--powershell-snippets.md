@@ -8,12 +8,9 @@ Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.citationTemplate"
-	displayName = "String"
-	createdBy = @{
-		"@odata.type" = "microsoft.graph.identitySet"
-	}
-	citationUrl = "String"
-	citationJurisdiction = "String"
+	displayName = "Contoso Company Policy"
+	citationUrl = "www.citationUrl.com"
+	citationJurisdiction = "Contoso"
 }
 
 New-MgBetaSecurityLabelCitation -BodyParameter $params

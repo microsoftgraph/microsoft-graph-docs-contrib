@@ -5,7 +5,6 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.subservice: universal-print
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Delete allowedUser from printerShare
@@ -76,10 +75,6 @@ DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/{i
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-alloweduser-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-alloweduser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
