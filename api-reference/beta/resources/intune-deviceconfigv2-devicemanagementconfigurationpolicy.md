@@ -53,7 +53,6 @@ Device Management Configuration Policy
 |Relationship|Type|Description|
 |:---|:---|:---|
 |settings|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) collection|Policy settings|
-|assignments|[deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) collection|Policy assignments|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
