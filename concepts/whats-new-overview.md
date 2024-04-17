@@ -20,7 +20,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Applications
 
-- Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/applications-post-applications). Previously, you could only add secrets to existing apps through the [Update application](https://learn.microsoft.com/graph/api/application-update) or the [addPassword](https://learn.microsoft.com/graph/api/application-addpassword) operations.
+- Updated the default value for **signInAudience** for new [applications](/graph/api/resources/application) from `AzureADandPersonalMicrosoftAccount` to `AzureADMyOrg`. Going forward, if you don't explicitly assign a value to the property during [app creation](/graph/api/application-post-applications), the app is automatically assigned the value `AzureADMyOrg`.
+- Added the support for adding password secrets to applications during [app creation](/graph/api/application-post-applications). Previously, you could only add secrets to existing apps through the [Update application](/graph/api/application-update) or the [addPassword](/graph/api/application-addpassword) operations.
 - Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
 
     - [Upsert application](/graph/api/application-upsert)
