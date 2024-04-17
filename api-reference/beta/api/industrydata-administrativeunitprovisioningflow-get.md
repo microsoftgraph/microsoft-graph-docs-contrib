@@ -62,15 +62,46 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_administrativeunitprovisioningflow"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/industryData/OutboundProvisioningFlowSets/9ab41255-5364-4c53-e15c-08dc4ab6ee03/provisioningFlows/f66e97ad-0870-46e0-3ff3-08dc49dccdc9
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunitprovisioningflow-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-administrativeunitprovisioningflow-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunitprovisioningflow-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunitprovisioningflow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-administrativeunitprovisioningflow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-administrativeunitprovisioningflow-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-administrativeunitprovisioningflow-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

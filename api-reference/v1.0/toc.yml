@@ -8196,7 +8196,7 @@ items:
                     href: api/informationprotection-post-threatassessmentrequests.md
                   - name: Get
                     href: api/threatassessmentrequest-get.md
-          - name: Legacy alert
+          - name: Legacy alert (deprecated)
             items:
               - name: Alert
                 href: resources/alert.md
