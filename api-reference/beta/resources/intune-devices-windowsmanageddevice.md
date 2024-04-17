@@ -125,7 +125,6 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceHealthScriptStates|[deviceHealthScriptPolicyState](../resources/intune-devices-devicehealthscriptpolicystate.md) collection|Results of device health scripts that ran for this device. Default is empty list. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|queryResults|[deviceQueryResult](../resources/intune-devices-devicequeryresult.md) collection|Results of device query that ran for this device. Default is empty list. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

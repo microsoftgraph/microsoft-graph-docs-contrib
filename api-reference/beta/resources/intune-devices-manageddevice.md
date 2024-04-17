@@ -148,10 +148,8 @@ Devices that are managed or pre-enrolled through Intune
 |skuFamily|String|Device sku family|
 |securityPatchLevel|String|This indicates the security patch level of the operating system. These special updates contain important security fixes. For iOS/MacOS they are in (a) format. For android its in 2017-08-07 format. This property is read-only.|
 |skuNumber|Int32|Device sku number, see also: https://learn.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
-|retrieveDeviceLogCollectionRequests|[deviceLogCollectionResponseV2](../resources/intune-devices-devicelogcollectionresponsev2.md) collection|List of log collection requests V2|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features. Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device. Default is an empty list. To retrieve actual values GET call needs to be made, with device id and included in select parameter.|
-|supplementalDeviceDetails|[supplementalDeviceDetail](../resources/intune-devices-supplementaldevicedetail.md) collection|List of properties provided by the device to describe its own state. Each property includes a title, value, and value type. These properties will be specific to platform and are dynamically populated by the device. Default is an empty list. To retrieve actual values GET call needs to be made, with device id and included as a $SELECT parameter. Read only.|
 |enrollmentProfileName|String|Name of the enrollment profile assigned to the device. Default value is empty string, indicating no enrollment profile was assgined. This property is read-only.|
 |bootstrapTokenEscrowed|Boolean|Reports if the managed device has an escrowed Bootstrap Token. This is only for macOS devices. To get, include BootstrapTokenEscrowed in the select clause and query with a device id. If FALSE, no bootstrap token is escrowed. If TRUE, the device has escrowed a bootstrap token with Intune. This property is read-only.|
 |deviceFirmwareConfigurationInterfaceManaged|Boolean|Indicates whether the device is DFCI managed. When TRUE the device is DFCI managed. When FALSE, the device is not DFCI managed. The default value is FALSE.|
@@ -166,9 +164,6 @@ Devices that are managed or pre-enrolled through Intune
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests|
 |deviceHealthScriptStates|[deviceHealthScriptPolicyState](../resources/intune-devices-devicehealthscriptpolicystate.md) collection|Results of device health scripts that ran for this device. Default is empty list. This property is read-only.|
-|queryResults|[deviceQueryResult](../resources/intune-devices-devicequeryresult.md) collection|Results of device query that ran for this device. Default is empty list. This property is read-only.|
-|deviceInventories|[deviceInventory](../resources/intune-devices-deviceinventory.md) collection|All Intune inventory data collected for this device. This property is read-only.|
-
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -385,22 +380,6 @@ Here is a JSON representation of the resource.
   "skuFamily": "String",
   "securityPatchLevel": "String",
   "skuNumber": 1024,
-  "retrieveDeviceLogCollectionRequests": [
-    {
-      "@odata.type": "microsoft.graph.deviceLogCollectionResponseV2",
-      "requestId": "String",
-      "status": "String",
-      "managedDeviceId": "Guid",
-      "errorCode": 1024,
-      "requestedDateTimeUTC": "String (timestamp)",
-      "completedDateTimeUTC": "String (timestamp)",
-      "initiatedByUserPrincipalName": "String",
-      "expirationDateTimeUTC": "String (timestamp)",
-      "size": "4.2",
-      "sizeInKB": "4.2",
-      "enrolledByUserPrincipalName": "String"
-    }
-  ],
   "managementFeatures": "String",
   "chromeOSDeviceInfo": [
     {
@@ -409,14 +388,6 @@ Here is a JSON representation of the resource.
       "value": "String",
       "valueType": "String",
       "updatable": true
-    }
-  ],
-  "supplementalDeviceDetails": [
-    {
-      "@odata.type": "microsoft.graph.supplementalDeviceDetail",
-      "propertyName": "String",
-      "propertyValue": "String",
-      "propertyType": "String"
     }
   ],
   "enrollmentProfileName": "String",
