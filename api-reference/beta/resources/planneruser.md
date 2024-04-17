@@ -42,7 +42,7 @@ Provides access to Planner resources for a [user](user.md).
 |recentPlans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) that the user recently viewed in apps that support recent plans. |
 |rosterPlans|[plannerPlan](../resources/plannerplan.md) collection|Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) the user is a member.|
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.|
-|myDayTasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) to be shown in the MyDay view of the user.|
+|myDayTasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) to be shown in the My Day view of the user.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
