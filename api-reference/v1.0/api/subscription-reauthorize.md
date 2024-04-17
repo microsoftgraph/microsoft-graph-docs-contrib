@@ -3,7 +3,7 @@ title: "subscription: reauthorize"
 description: "Reauthorize a subscription when you receive a reauthorizationRequired challenge."
 author: "keylimesoda"
 ms.localizationpriority: medium
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 doc_type: apiPageType
 ---
 
