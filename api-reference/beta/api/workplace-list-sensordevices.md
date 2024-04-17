@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/workplace/sensorDevices
 
 ---
 
-
 ### Response
 The following example shows the response.
 <!-- {

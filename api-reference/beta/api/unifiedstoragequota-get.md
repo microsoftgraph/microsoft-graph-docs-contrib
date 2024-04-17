@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/me/settings/storage/quota
 
 ---
 
-
 #### Response
 Here's an example  of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -169,7 +168,6 @@ GET https://graph.microsoft.com/beta/users/1234BBS1121YY95/settings/storage/quot
 
 ---
 
-
 #### Response
 Here's an example  of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -241,7 +239,6 @@ GET https://graph.microsoft.com/beta/me/settings/storage/quota?$expand=services
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 Here's an example  of the response
