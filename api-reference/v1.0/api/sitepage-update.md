@@ -93,6 +93,7 @@ If successful, this method returns a `200 OK` response code and an updated [site
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_sitepage"
@@ -110,6 +111,13 @@ Content-Type: application/json
   "showRecommendedPages": false
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-sitepage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 ### Response

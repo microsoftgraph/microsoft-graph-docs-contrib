@@ -7,7 +7,7 @@ ms.prod: change-notifications
 ms.topic: tutorial
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.date: 03/20/2024
+ms.date: 03/25/2024
 #customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through Azure Event Hubs so I can build apps that process the changes according to the business requirements.
 ---
 
@@ -28,7 +28,7 @@ The article guides you through the process of managing your Microsoft Graph subs
 - You need to provision an event hub.
 - You need to provision an Azure Key Vault.
 
-## Set up the Azure KeyVault and Azure Event Hubs
+## Set up the Azure Event Hubs authentication
 
 <!-- Start of "Use Azure CLI" tab-->
 # [Use Azure CLI](#tab/change-notifications-eventhubs-azure-cli)
@@ -120,6 +120,36 @@ Steps:
 1. For **Secret permissions**, select **Get**, and for **Select Principal**, select **Microsoft Graph Change Tracking**. Select **Add**.
 
 <!-- End of "Use the Azure portal" tab-->
+
+<!-- Start of "Use the Azure portal (RBAC)" tab-->
+# [Use the Azure portal (RBAC)](#tab/change-notifications-eventhubs-azure-portal-rbac)
+
+##### Configure the event hub
+
+In this section you:
+
+- Create an Event Hubs namespace.
+- Add a hub to that namespace to relay and deliver notifications.
+- Add a shared access policy that allows you to get a connection string to the newly created hub.
+
+Steps:
+
+1. Sign in to the [Azure portal](https://portal.azure.com) with privileges to create resources in your Azure subscription.
+1. Select **Create a resource** > type **Event Hubs** in the search bar > select the **Event Hubs** suggestion. 
+1. On the Event Hubs creation page, select **Create**.
+1. Fill in the Event Hubs namespace creation details, and then select **Create**.
+1. When the event hub namespace is provisioned, go to the page for the namespace.
+1. Select **Event Hubs** and **+ Event Hub**.
+1. Give a name to the new event hub, and select **Create**.
+1. After the event hub is created, select the name of the event hub, and then select **Access Control (IAM)** from the sidebar.
+1. Select **Role Assignments**.
+1. Select **+ Add** and select **Add Role Assignment**.
+1. Under **Role** > **Job function roles** > select **Azure Event Hubs Data Sender** > select **Next**.
+1. Under the **Members** tab, select **Assign access to User, group, or service principal**.
+1. Select **+ Select members** > search for and select **Microsoft Graph Change Tracking**.
+1. Select **Review + assign** to complete the process.
+ 
+<!-- End of "Use the Azure portal rbac" tab-->
 ---
 
 ## Create the subscription and receive notifications
