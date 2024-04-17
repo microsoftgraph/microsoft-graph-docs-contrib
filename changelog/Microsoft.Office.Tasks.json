@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "1d153744-5c7f-4062-afab-c4387812f3d6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "myDayTasks",
+          "ChangeType": "Addition",
+          "Description": "Added the **myDayTasks** relationship to the [plannerUser](https://learn.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource.",
+          "Target": "plannerUser"
+        },
+        {
+          "Id": "1d153744-5c7f-4062-afab-c4387812f3d6",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [List myDayTasks](https://learn.microsoft.com/en-us/graph/api/planneruser-list-mydaytasks?view=graph-rest-beta) method.",
+          "Target": "plannerUser"
+        } 
+      ],
+      "Id": "1d153744-5c7f-4062-afab-c4387812f3d6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-16T16:35:53.1796359Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "386945e6-5671-43ad-8c17-24dc5f67f4e2",
           "ApiChange": "Property",
           "ChangedApiName": "isOnMyDay",
@@ -75,15 +101,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **completionRequirements** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
-        },
-        {
-          "Id": "747342ae-9391-43e9-82a0-d7d2a31e06d4",
-          "ApiChange": "Resource",
-          "ChangedApiName": "myDayTasks",
-          "ChangeType": "Addition",
-          "Description": "Added the **myDayTasks** relationship to the [plannerUser](https://learn.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource.",
-          "Target": "plannerUser"
-        }        
+        }   
       ],
       "Id": "9125b26a-eff1-4f7a-acd0-46c133b934fa",
       "Cloud": "Prod",
