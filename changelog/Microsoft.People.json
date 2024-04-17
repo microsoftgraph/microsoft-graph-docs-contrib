@@ -603,32 +603,24 @@
           "ApiChange": "Resource",
           "ChangedApiName": "insightsSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightsSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightsSettings?view=graph-rest-1.0) resource and supported methods.",
           "Target": "insightsSettings"
+        },
+        {
+          "Id": "b1744bcd-b91a-45a7-abef-284ab92829d1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemInsights](https://learn.microsoft.com/en-us/graph/api/resources/itemInsights?view=graph-rest-1.0) resource.",
+          "Target": "itemInsights"
         },
         {
           "Id": "b1744bcd-b91a-45a7-abef-284ab92829d1",
           "ApiChange": "Relationship",
-          "ChangedApiName": "iteminsights",
+          "ChangedApiName": "itemInsights",
           "ChangeType": "Addition",
-          "Description": "Added the **iteminsights** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the **itemInsights** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-1.0) resource.",
           "Target": "peopleAdminSettings"
-        },
-        {
-          "Id": "b1744bcd-b91a-45a7-abef-284ab92829d1",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-1.0) method to the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-1.0) resource.",
-          "Target": "insightsSettings"
-        },
-        {
-          "Id": "b1744bcd-b91a-45a7-abef-284ab92829d1",
-          "ApiChange": "Method",
-          "ChangedApiName": "PATCH",
-          "ChangeType": "Addition",
-          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/insightssettings-update?view=graph-rest-1.0) operation to the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-1.0) resource",
-          "Target": "insightsSettings"
         }
       ],
       "Id": "b1744bcd-b91a-45a7-abef-284ab92829d1",
@@ -636,7 +628,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2024-03-05T15:26:15.2757589Z",
       "WorkloadArea": "People and workplace intelligence",
-      "SubArea": "People"
+      "SubArea": "People admin settings"
     }
   ]
 }
