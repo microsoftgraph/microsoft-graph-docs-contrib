@@ -1,6 +1,6 @@
 ---
 title: "Update partnerSecurityAlert"
-description: "Update the properties of a microsoft.graph.partner.security.partnerSecurityAlert object."
+description: "Update the properties of a partnerSecurityAlert object."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.partner.security.partnerSecurityAlert](../resources/partner.security-partnersecurityalert.md) object.
+Update the properties of a [partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) object.
 
 ## Permissions
 
@@ -78,7 +78,6 @@ Content-Type: application/json
   "resolvedReason": "String"
 }
 ```
-
 
 ### Response
 
