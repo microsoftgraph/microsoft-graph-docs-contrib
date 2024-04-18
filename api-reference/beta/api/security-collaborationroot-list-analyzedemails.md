@@ -45,7 +45,7 @@ In the request URL, provide the following required query parameters with values.
 
 ### OData query parameters
 
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skiptoken`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following example shows how to use the `$filter` parameter to customize the response.
 <!-- {
@@ -53,7 +53,8 @@ The following example shows how to use the `$filter` parameter to customize the 
 }
 -->
 ``` http
-GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=NetworkMessageId eq  'bde1f764-bbf4-5673-fbba-0asdhsgfhf1'
+GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=networkMessageId eq 'bde1f764-bbf4-5673-fbba-0asdhsgfhf1'
+GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=networkMessageId eq 'bde1f764-bbf4-5673-fbba-0asdhsgfhf1' and recipientEmailAddress eq 'abc@def.com'
 ```
 
 ## Request headers
@@ -84,7 +85,6 @@ The following example shows a request.
 GET https:security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -103,20 +103,20 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.analyzedEmail",
-      "id": "3570a93a-82b1-ffb9-8c26-a9a2ca002a17",
-      "loggedDateTime": "String (timestamp)",
+      "id": "String",
+      "loggedDateTime": "Datetime",
       "networkMessageId": "String",
       "internetMessageId": "String",
       "senderDetail": {
         "@odata.type": "microsoft.graph.security.analyzedEmailSenderDetail"
       },
-      "recipientEmailAddresses": [
-        "String"
-      ],
+      "recipientEmailAddress": "String",
       "distributionList": "String",
       "subject": "String",
       "returnPath": "String",
-      "directionality": "String",
+      "directionality": {
+        "@odata.type": "microsoft.graph.security.antispamDirectionality"
+      },
       "originalDelivery": {
         "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
       },
@@ -124,17 +124,7 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
       },
       "attachmentsCount": "Integer",
-      "attachments": [
-        {
-          "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
-        }
-      ],
       "urlsCount": "Integer",
-      "urls": [
-        {
-          "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
-        }
-      ],
       "language": "String",
       "sizeInBytes": "Integer",
       "alertIds": [
@@ -148,7 +138,11 @@ Content-Type: application/json
       "overrideSources": [
         "String"
       ],
-      "threatType": "String",
+      "threatTypes": [
+        {
+          "@odata.type": "microsoft.graph.security.threatType"
+        }
+      ]
       "detectionMethods": [
         "String"
       ],
@@ -168,4 +162,3 @@ Content-Type: application/json
   ]
 }
 ```
-

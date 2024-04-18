@@ -53,9 +53,8 @@ The following table lists the parameters that are required when you call this ac
 |description|String| The description of the remediation. |
 |severity|microsoft.graph.security.remediationSeverity| The severity of the remediation. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 |action|microsoft.graph.security.remediationAction|The types of move and delete actions that are supported. The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
-|approverUpn|String| Tracks who approved the action. |
 |remediateSendersCopy|Boolean| For internal or outbound email, indicates whether to remediate the sender's copy of an email. |
-|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|The unique ID of the analyzed email. The ID can be found from the analyzedemails, analyzedemails/Id or runHuntingQuery/reportId.
+|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection| Combination of networkMessageId and recipientEmailAddress. |
 
 ## Response
 
@@ -84,13 +83,15 @@ Content-Type: application/json
     "severity": "medium",
     "action": "softDelete",
     "remediateSendersCopy": "false",
-     "analyzedEmails": [
-        {
-            "id": "73ca4154-58d8-43d0-a890-08dc18c52e6d-1311265001240363512-1"
-        },
-        {
-            "id": "73ca4154-58d8-43d0-a890-08dc18c52e6d-13805748846361900678-1"
-        }
+    "analyzedEmails": [
+      {
+        "networkMessageId": "73ca4154-58d8-43d0-a890-08dc18c52e6d",
+        "recipientEmailAddress": "abc@def.com"
+      },
+      {
+        "networkMessageId": "73ca4154-58d8-43d0-a890-08dc18c52e6d",
+        "recipientEmailAddress": "ghi@jkl.com"
+      }
     ]
 }
 ```
@@ -144,7 +145,3 @@ Location: https://security.microsoft.com/action-center/history?filters={"bulkId"
 Content-Type: application/json;text/plain
 Content-Length: 0
 ```
-
-
-
-

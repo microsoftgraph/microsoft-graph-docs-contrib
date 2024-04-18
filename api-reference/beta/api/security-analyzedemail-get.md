@@ -32,7 +32,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /security/collaboration/analyzedEmails/{analyzedEmailId}
 ```
 
-
 ## Request headers
 
 |Name|Description|
@@ -113,20 +112,20 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.analyzedEmail",
-    "id": "3570a93a-82b1-ffb9-8c26-a9a2ca002a17",
-    "loggedDateTime": "String (timestamp)",
+    "id": "String",
+    "loggedDateTime": "Datetime",
     "networkMessageId": "String",
     "internetMessageId": "String",
     "senderDetail": {
       "@odata.type": "microsoft.graph.security.analyzedEmailSenderDetail"
     },
-    "recipientEmailAddresses": [
-      "String"
-    ],
+    "recipientEmailAddress": "String",
     "distributionList": "String",
     "subject": "String",
     "returnPath": "String",
-    "directionality": "String",
+    "directionality": {
+      "@odata.type": "microsoft.graph.security.antispamDirectionality"
+    },
     "originalDelivery": {
       "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
     },
@@ -158,7 +157,11 @@ Content-Type: application/json
     "overrideSources": [
       "String"
     ],
-    "threatType": "String",
+    "threatTypes": [
+      {
+        "@odata.type": "microsoft.graph.security.threatType"
+      }
+    ],
     "detectionMethods": [
       "String"
     ],
@@ -177,4 +180,3 @@ Content-Type: application/json
   }
 }
 ```
-
