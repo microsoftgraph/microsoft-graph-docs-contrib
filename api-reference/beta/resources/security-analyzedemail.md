@@ -124,9 +124,7 @@ The following JSON representation shows the resource type.
   "distributionList": "String",
   "subject": "String",
   "returnPath": "String",
-  "directionality": {
-    "@odata.type": "microsoft.graph.security.antispamDirectionality"
-  },
+  "directionality": "microsoft.graph.security.antispamDirectionality",
   "originalDelivery": {
     "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
   },
@@ -159,9 +157,7 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "threatTypes": [
-    {
-      "@odata.type": "microsoft.graph.security.threatType"
-    }
+    "microsoft.graph.security.threatType"
   ],
   "detectionMethods": [
     "String"

@@ -123,9 +123,7 @@ Content-Type: application/json
     "distributionList": "String",
     "subject": "String",
     "returnPath": "String",
-    "directionality": {
-      "@odata.type": "microsoft.graph.security.antispamDirectionality"
-    },
+    "directionality": "microsoft.graph.security.antispamDirectionality",
     "originalDelivery": {
       "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
     },
@@ -158,9 +156,7 @@ Content-Type: application/json
       "String"
     ],
     "threatTypes": [
-      {
-        "@odata.type": "microsoft.graph.security.threatType"
-      }
+      "microsoft.graph.security.threatType"
     ],
     "detectionMethods": [
       "String"
