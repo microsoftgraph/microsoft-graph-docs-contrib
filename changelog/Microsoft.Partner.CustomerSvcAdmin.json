@@ -555,7 +555,7 @@
         },
         {
           "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "securityAlertConfidence",
           "ChangeType": "Addition",
           "Description": "Added the **securityAlertConfidence** enumeration type.",
@@ -563,7 +563,7 @@
         },
         {
           "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "securityAlertResolvedReason",
           "ChangeType": "Addition",
           "Description": "Added the **securityAlertResolvedReason** enumeration type.",
@@ -571,7 +571,7 @@
         },
         {
           "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "securityAlertSeverity",
           "ChangeType": "Addition",
           "Description": "Added the **securityAlertSeverity** enumeration type.",
@@ -579,7 +579,7 @@
         },
         {
           "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "securityAlertStatus",
           "ChangeType": "Addition",
           "Description": "Added the **securityAlertStatus** enumeration type.",
@@ -590,7 +590,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activityLog",
           "ChangeType": "Addition",
-          "Description": "Added the [activityLog](https://learn.microsoft.com/en-us/graph/api/resources/partner.security-activityLog?view=graph-rest-beta) resource.",
+          "Description": "Added the [activityLog](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-activityLog?view=graph-rest-beta) resource.",
           "Target": "activityLog"
         },
         {
@@ -598,7 +598,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "additionalDataDictionary",
           "ChangeType": "Addition",
-          "Description": "Added the [additionalDataDictionary](https://learn.microsoft.com/en-us/graph/api/resources/partner.security-additionalDataDictionary?view=graph-rest-beta) resource.",
+          "Description": "Added the [additionalDataDictionary](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-additionalDataDictionary?view=graph-rest-beta) resource.",
           "Target": "additionalDataDictionary"
         },
         {
@@ -606,7 +606,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "affectedResource",
           "ChangeType": "Addition",
-          "Description": "Added the [affectedResource](https://learn.microsoft.com/en-us/graph/api/resources/partner.security-affectedResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [affectedResource](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-affectedResource?view=graph-rest-beta) resource.",
           "Target": "affectedResource"
         },
         {
@@ -614,7 +614,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "partnerSecurity",
           "ChangeType": "Addition",
-          "Description": "Added the [partnerSecurity](https://learn.microsoft.com/en-us/graph/api/resources/partner.security-partnerSecurity?view=graph-rest-beta) resource.",
+          "Description": "Added the [partnerSecurity](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-partnerSecurity?view=graph-rest-beta) resource and supported methods.",
           "Target": "partnerSecurity"
         },
         {
@@ -622,7 +622,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "partnerSecurityAlert",
           "ChangeType": "Addition",
-          "Description": "Added the [partnerSecurityAlert](https://learn.microsoft.com/en-us/graph/api/resources/partner.security-partnerSecurityAlert?view=graph-rest-beta) resource.",
+          "Description": "Added the [partnerSecurityAlert](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-partnerSecurityAlert?view=graph-rest-beta) resource.",
           "Target": "partnerSecurityAlert"
         },
         {
