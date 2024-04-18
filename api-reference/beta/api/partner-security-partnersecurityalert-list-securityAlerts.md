@@ -1,19 +1,19 @@
 ---
-title: "List partnerSecurityAlert objects"
-description: "Get a list of the microsoft.graph.partner.security.partnerSecurityAlert objects and their properties."
+title: "List partnerSecurityAlert"
+description: "Get a list of the partnerSecurityAlert objects and their properties."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
 ---
 
-# List partnerSecurityAlert objects
+# List partnerSecurityAlert
 
 Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.partner.security.partnerSecurityAlert](../resources/partner.security-partnersecurityalert.md) objects and their properties.
+Get a list of the [partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) objects and their properties.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [partnerSecurityAlert](../resources/partner.security-partnersecurityalert.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.partner.security.partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) objects in the response body.
 
 ## Examples
 
@@ -67,7 +67,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/partner/securityAlerts
 ```
-
 
 ### Response
 
