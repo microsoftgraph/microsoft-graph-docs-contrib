@@ -4,7 +4,7 @@ description: "Renew a subscription by extending its expiry time."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: apiPageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ---
 
 # Update subscription

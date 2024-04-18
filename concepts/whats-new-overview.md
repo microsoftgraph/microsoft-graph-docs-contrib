@@ -20,7 +20,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Applications
 
-- Added the support for adding password secrets to applications during [app creation](https://learn.microsoft.com/graph/api/applications-post-applications). Previously, you could only add secrets to existing apps through the [Update application](https://learn.microsoft.com/graph/api/application-update) or the [addPassword](https://learn.microsoft.com/graph/api/application-addpassword) operations.
+- Updated the default value for **signInAudience** for new [applications](/graph/api/resources/application) from `AzureADandPersonalMicrosoftAccount` to `AzureADMyOrg`. Going forward, if you don't explicitly assign a value to the property during [app creation](/graph/api/application-post-applications), the app is automatically assigned the value `AzureADMyOrg`.
+- Added the support for adding password secrets to applications during [app creation](/graph/api/application-post-applications). Previously, you could only add secrets to existing apps through the [Update application](/graph/api/application-update) or the [addPassword](/graph/api/application-addpassword) operations.
 - Use the upsert capability to create an [application](/graph/api/resources/application), [federatedIdentityCredential](/graph/api/resources/federatedidentitycredential), or [servicePrincipal](/graph/api/resources/serviceprincipal) if it doesn't exist, or update an existing object, by using a client-provided key. For more information, see the following API operations:
 
     - [Upsert application](/graph/api/application-upsert)
@@ -30,6 +31,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Groups
 
 Added the [upsert](/graph/api/group-upsert) capability to the [group resource type](/graph/api/resources/group). Use this capability to create a group if it doesn't exist, or update an existing group, by using the **uniqueName** client-provided key.
+
+### Security | Legacy alerts
+
+The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
 
 ### Sites and lists
 
@@ -48,6 +53,10 @@ Associate users or groups as sponsors for a guest user's privileges in the tenan
 
 ## April 2024: New in preview only
 
+### Device and app management | Cloud PC
+
+Deprecated the **type** property on [cloudPcAuditResource](/graph/api/resources/cloudpcauditresource?view=graph-rest-beta&preserve-view=true) in favor of the **resourceType** property.
+
 ### Identity and access | Network access
 
 Updated the definition of physical locations for customer premises equipment in the Global Secure Access services from the [branchSite resource type](/graph/api/resources/networkaccess-branchsite?view=graph-rest-beta&preserve-view=true) to the [remoteNetwork resource type](/graph/api/resources/networkaccess-remotenetwork?view=graph-rest-beta&preserve-view=true). The **branchSite** resource type and its associated properties, relationships, and endpoints are deprecated will be retired soon. Use the **remoteNetwork** resource type and its associated properties, relationships, and endpoints.
@@ -63,6 +72,14 @@ When calling the [industry data ETL API](/graph/api/resources/industrydata-overv
 ### People and workplace intelligence | People 
 
 Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) method on the **peopleAdminSettings** resource.
+
+### Security | Legacy alerts
+
+The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
+
+### Security | Threat intelligence indicator
+
+The `/security/tiindicators` endpoint is deprecated and will stop returning data on **April 10, 2026**.
 
 ### Teamwork and communications | Messaging
 
