@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policyroot-list-federatedtokenvalidationpolicy-permissions.md)]
 
+[!INCLUDE [rbac-federatedtokenvalidationpolicy-apis](../includes/rbac-for-apis/rbac-federatedtokenvalidationpolicy-apis.md)]
+
 ## HTTP request
 
 <!-- {

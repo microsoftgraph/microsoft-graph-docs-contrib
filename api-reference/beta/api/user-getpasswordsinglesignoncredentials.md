@@ -3,7 +3,7 @@ title: "user: getPasswordSingleSignOnCredentials"
 description: "Get the list of password-based single sign-on credentials for a given user. This API returns the encrypted passwords as null or empty strings."
 author: "AllisonAm"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
