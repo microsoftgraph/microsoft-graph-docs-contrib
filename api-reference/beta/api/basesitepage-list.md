@@ -23,8 +23,8 @@ Get the collection of [baseSitePage][] objects from the site pages [list][] in a
 | :----------- | :------------------------- |
 | [sitePage][] | Represents a regular page. |
 
-[basesitepage]: ../resources/baseSitePage.md
-[sitepage]: ../resources/sitePage.md
+[baseSitePage]: ../resources/baseSitePage.md
+[sitePage]: ../resources/sitePage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -82,7 +82,7 @@ The following example shows a request.
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages
 ```
 
 # [C#](#tab/csharp)
@@ -145,7 +145,7 @@ Content-type: application/json
       "id": "5fa48f95-2fdf-40e8-a28c-6d0d8345bcd2",
       "lastModifiedDateTime": "2023-04-16T08:37:51Z",
       "name": "Account holistic.aspx",
-      "webUrl": "SitePages/Account holistic.aspx",
+      "webUrl": "https://contoso.sharepoint.com/SitePages/Account holistic.aspx",
       "title": "CSS Global Lithuanian meter",
       "pageLayout": "article",
       "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/a830edad9050849vanaukyisx52.spgrid.com/_layouts/15/images/sitepagethumbnail.png",
@@ -184,7 +184,7 @@ Content-type: application/json
       "id": "da0f67be-977e-4d09-88ac-506a1002e678",
       "lastModifiedDateTime": "2023-04-16T06:39:30Z",
       "name": "Analyst Fresh.aspx",
-      "webUrl": "SitePages/Analyst Fresh.aspx",
+      "webUrl": "https://contoso.sharepoint.com/SitePages/Analyst Fresh.aspx",
       "title": "Lesotho Account Metal Analyst du",
       "pageLayout": "article",
       "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/a830edad9050849vanaukyisx52.spgrid.com/_layouts/15/images/sitepagethumbnail.png",
