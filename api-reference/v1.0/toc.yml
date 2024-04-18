@@ -32,8 +32,8 @@ items:
     href: toc/users/toc.yml
   - name: Groups
     href: toc/groups/toc.yml
-  - name: Applications SO COOL
-    href: toc/applications-so-cool/toc.yml
+  - name: Applications
+    href: toc/applications/toc.yml
   - name: Calendars
     href: toc/calendars/toc.yml
   - name: Change notifications

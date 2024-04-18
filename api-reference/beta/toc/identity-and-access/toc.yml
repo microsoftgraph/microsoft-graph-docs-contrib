@@ -109,6 +109,20 @@ items:
         href: ../../api/directory-post-customsecurityattributedefinitions.md
       - name: Update customSecurityAttributeDefinition
         href: ../../api/customsecurityattributedefinition-update.md
+  - name: Deleted item
+    items:
+    - name: Deleted item
+      href: ../../resources/directory.md
+    - name: Get deleted item
+      href: ../../api/directory-deleteditems-get.md
+    - name: Restore deleted item
+      href: ../../api/directory-deleteditems-restore.md
+    - name: List deleted items
+      href: ../../api/directory-deleteditems-list.md
+    - name: Permanently delete an item
+      href: ../../api/directory-deleteditems-delete.md
+    - name: List deleted items owned by a user
+      href: ../../api/directory-deleteditems-getuserownedobjects.md
   - name: Device
     items:
     - name: Device
@@ -159,20 +173,6 @@ items:
       href: ../../api/directory-list-devicelocalcredentials.md
     - name: Get deviceLocalCredentialInfo
       href: ../../api/devicelocalcredentialinfo-get.md
-  - name: Directory
-    items:
-    - name: Directory
-      href: ../../resources/directory.md
-    - name: Get deleted item
-      href: ../../api/directory-deleteditems-get.md
-    - name: Restore deleted item
-      href: ../../api/directory-deleteditems-restore.md
-    - name: List deleted items
-      href: ../../api/directory-deleteditems-list.md
-    - name: Permanently delete an item
-      href: ../../api/directory-deleteditems-delete.md
-    - name: List deleted items owned by a user
-      href: ../../api/directory-deleteditems-getuserownedobjects.md
   - name: Directory object
     items:
     - name: Directory object
@@ -2561,13 +2561,13 @@ items:
       href: ../../resources/invitation.md
     - name: Create invitation
       href: ../../api/invitation-post.md
-  - name: Multi-tenant organization
+  - name: Multitenant organization
     items:
     - name: Overview
       href: ../../resources/multitenantorganization-overview.md
-    - name: Multi tenant organization
+    - name: Multitenant organization
       items:
-      - name: Multi tenant organization
+      - name: Multitenant organization
         href: ../../resources/multitenantorganization.md
       - name: Create multiTenantOrganization
         href: ../../api/tenantrelationship-put-multitenantorganization.md
@@ -2575,9 +2575,9 @@ items:
         href: ../../api/multitenantorganization-get.md
       - name: Update multiTenantOrganization
         href: ../../api/multitenantorganization-update.md
-    - name: Multi tenant organization member
+    - name: Member
       items:
-      - name: Multi tenant organization member
+      - name: Member
         href: ../../resources/multitenantorganizationmember.md
       - name: List multiTenantOrganizationMembers
         href: ../../api/multitenantorganization-list-tenants.md
@@ -2589,17 +2589,17 @@ items:
         href: ../../api/multitenantorganizationmember-update.md
       - name: Remove multiTenantOrganizationMember
         href: ../../api/multitenantorganization-delete-tenants.md
-    - name: Multi tenant organization join request record
+    - name: Join request
       items:
-      - name: Multi tenant organization join request record
+      - name: Join request
         href: ../../resources/multitenantorganizationjoinrequestrecord.md
       - name: Get multiTenantOrganizationJoinRequestRecord
         href: ../../api/multitenantorganizationjoinrequestrecord-get.md
       - name: Update multiTenantOrganizationJoinRequestRecord
         href: ../../api/multitenantorganizationjoinrequestrecord-update.md
-    - name: Multi tenant organization partner configuration template
+    - name: Partner configuration template
       items:
-      - name: Multi tenant organization partner configuration template
+      - name: Partner configuration template
         href: ../../resources/multitenantorganizationpartnerconfigurationtemplate.md
       - name: Get multiTenantOrganizationPartnerConfigurationTemplate
         href: ../../api/multitenantorganizationpartnerconfigurationtemplate-get.md
@@ -2607,9 +2607,9 @@ items:
         href: ../../api/multitenantorganizationpartnerconfigurationtemplate-update.md
       - name: resetToDefaultSettings
         href: ../../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
-    - name: Multi tenant organization identity sync policy template
+    - name: Identity sync policy template
       items:
-      - name: Multi tenant organization identity sync policy template
+      - name: Identity sync policy template
         href: ../../resources/multitenantorganizationidentitysyncpolicytemplate.md
       - name: Get multiTenantOrganizationIdentitySyncPolicyTemplate
         href: ../../api/multitenantorganizationidentitysyncpolicytemplate-get.md
@@ -2665,8 +2665,6 @@ items:
       href: ../../api/organizationalbrandinglocalization-update.md
     - name: Delete organizationalBrandingLocalization
       href: ../../api/organizationalbrandinglocalization-delete.md
-  - name: Organizational branding properties
-    href: ../../resources/organizationalbrandingproperties.md
   - name: Policies
     items:
     - name: Overview

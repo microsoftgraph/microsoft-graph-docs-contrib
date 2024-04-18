@@ -8593,7 +8593,7 @@ items:
       href: ../../resources/appsinstallationoptionsformac.md
     - name: Apps installation options for windows
       href: ../../resources/appsinstallationoptionsforwindows.md
-- name: Multi-tenant management (preview)
+- name: Multitenant management (preview)
   items:
   - name: Aggregated policy compliance
     items:
