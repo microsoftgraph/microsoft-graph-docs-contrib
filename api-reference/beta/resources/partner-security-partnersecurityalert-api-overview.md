@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.partner.security
 
-As a partner in the Cloud Solution Provider (CSP) program, you're responsible for your customer's Azure consumption; therefore, it's important that you're aware of any anomalous usage in your customer's Azure subscriptions. Use Microsoft Graph [partner security alerts](../resources/partner-security-partnersecurityalert.md) to detect patterns of fraudulent activities and misuse in Azure resources to help reduce your exposure to online transaction risks.
+As a partner in the Cloud Solution Provider (CSP) program, you're responsible for your customer's Azure consumption; therefore, it's important that you're aware of any anomalous usage in your customer's Azure subscriptions. Microsoft is releasing the new API for partners to protect and respond to critical security alerts that impact the customers. Use Microsoft Graph [partner security alerts](../resources/partner-security-partnersecurityalert.md) to detect patterns of fraudulent activities and misuse in Azure resources to help reduce your exposure to online transaction risks. Mitigating and responding to the alerts within 24 hours can significantly help reduce the financial loss that may incur during the compromise.
+
+For more details, please review [steps recommended](https://learn.microsoft.com/en-us/partner-center/azure-fraud-notification#what-additional-steps-can-you-take-to-lower-the-risk-of-compromise) to contain the compromise immediately on your customer’s tenant or Azure subscriptions.  
 
 The partner security alerts API is defined in the OData subnamespace `microsoft.graph.partners.security`.
 
