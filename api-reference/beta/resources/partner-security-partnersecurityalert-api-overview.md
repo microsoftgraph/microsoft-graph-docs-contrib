@@ -1,5 +1,5 @@
 ---
-title: "CSP Partner Security Alerts API overview"
+title: "Use the partner security alerts API in Microsoft Graph (preview)"
 description: "Overview and usecases."
 author: "manusidd"
 ms.localizationpriority: medium
@@ -7,11 +7,13 @@ ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
 ---
 
-# CSP Partner Security Alerts API overview
+# Use the partner security alerts API in Microsoft Graph (preview)
 
 Namespace: microsoft.graph.partner.security
 
-As a partner in the Cloud Solution Provider (CSP) program, you're responsible for your customer's Azure consumption, so it's important that you're aware of any anomalous usage in your customer's Azure subscriptions. Use Microsoft Graph [partner security alerts](../resources/partner-security-partnersecurityalert.md) to detect patterns of fraudulent activities and misuse in Azure resources to help reduce your exposure to online transaction risks.
+As a partner in the Cloud Solution Provider (CSP) program, you're responsible for your customer's Azure consumption; therefore, it's important that you're aware of any anomalous usage in your customer's Azure subscriptions. Use Microsoft Graph [partner security alerts](../resources/partner-security-partnersecurityalert.md) to detect patterns of fraudulent activities and misuse in Azure resources to help reduce your exposure to online transaction risks.
+
+The partner security alerts API is defined in the OData subnamespace `microsoft.graph.partners.security`.
 
 ## Authorization
 
