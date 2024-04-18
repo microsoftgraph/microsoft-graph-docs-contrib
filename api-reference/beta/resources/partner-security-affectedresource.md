@@ -1,6 +1,6 @@
 ---
 title: "affectedResource resource type"
-description: "Contains details of the resources affected by the security alert."
+description: "Contains details of the resources that are affected by a security alert."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains details of the resources affected by the security alert.
+Contains details of the resources that are affected by a security alert.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|resourceId|String|A string representing the resource path of the affected by the security alert.|
-|resourceType|String|A string representing the type of resource.|
+|resourceId|String|The resource path of the affected by the security alert.|
+|resourceType|String|The type of resource.|
 
 ## Relationships
 None.
