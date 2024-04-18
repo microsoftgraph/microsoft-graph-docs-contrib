@@ -1,9 +1,9 @@
 ---
 title: "provisioningFlow: reset"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Reset a provisioningFlow"
+author: "dakelle"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "industry-data-etl"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Reset a [provisioningFlow](../resources/industrydata-provisioningflow.md). This will re-provision all current data as if it were the initial run while clearing out the existing errors associated in the flow.
 
 ## Permissions
 
@@ -38,9 +38,9 @@ POST /external/industryData/outboundProvisioningFlowSets/{outboundProvisioningFl
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Name         | Description               |
+| :----------- | :------------------------ |
+| Authorization| Bearer {token}. Required. |
 
 ## Request body
 
@@ -68,7 +68,7 @@ POST https://graph.microsoft.com/beta/external/industryData/outboundProvisioning
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
