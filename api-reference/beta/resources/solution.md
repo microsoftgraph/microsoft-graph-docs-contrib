@@ -15,12 +15,6 @@ Namespace: microsoft.graph
 
 Represents a user's custom solution entity.
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get solution](../api/solution-get.md)|[solution](../resources/solution.md)|Read the properties and relationships of a [solution](../resources/solution.md) object.|
-
 ## Properties
 
 |Property|Type|Description|
