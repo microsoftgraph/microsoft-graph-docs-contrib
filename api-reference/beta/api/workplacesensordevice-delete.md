@@ -88,7 +88,6 @@ DELETE https://graph.microsoft.com/beta/workplace/sensorDevices/ade7078f-4bf5-42
 
 ---
 
-
 ### Response
 The following example shows the response.
 <!-- {

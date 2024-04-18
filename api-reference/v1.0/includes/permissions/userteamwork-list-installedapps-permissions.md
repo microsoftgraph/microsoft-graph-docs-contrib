@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|TeamsAppInstallation.ReadForUser|TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteAndConsentForUser, TeamsAppInstallation.ReadWriteAndConsentSelfForUser, TeamsAppInstallation.ReadWriteForUser|
+|Delegated (work or school account)|TeamsAppInstallation.ReadForUser|TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteAndConsentForUser, TeamsAppInstallation.ReadWriteAndConsentSelfForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWriteSelectedForUser|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|TeamsAppInstallation.ReadForUser.All|TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All|
+|Application|TeamsAppInstallation.ReadForUser.All|TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteSelectedForUser.All|
 

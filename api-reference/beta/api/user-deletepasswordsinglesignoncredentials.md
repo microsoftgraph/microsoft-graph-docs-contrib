@@ -3,7 +3,7 @@ title: "user: deletePasswordSingleSignOnCredentials"
 description: "Delete password-based single sign-on credentials for a service principal that is associated to a user."
 author: "AllisonAm"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
