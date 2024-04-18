@@ -142,7 +142,7 @@ Content-Type: application/json
         {
           "@odata.type": "microsoft.graph.security.threatType"
         }
-      ]
+      ],
       "detectionMethods": [
         "String"
       ],
