@@ -39,10 +39,10 @@ Don't supply a request body for this method.
 
 
 ## Response
-If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -53,7 +53,6 @@ The following example shows a request.
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZp8=
-
 ```
 
 # [C#](#tab/csharp)
@@ -90,7 +89,7 @@ DELETE https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

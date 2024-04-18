@@ -15,20 +15,20 @@ $params = @{
 				pattern = @{
 					type = "Weekly"
 					daysOfWeek = @(
-						"Monday"
-						"Wednesday"
-						"Friday"
-					)
-					interval = 1
-				}
-				range = @{
-					type = "noEnd"
-				}
-			}
-			timeZone = "Pacific Standard Time"
-			timeSlots = $null
-		}
-	)
+					"Monday"
+				"Wednesday"
+			"Friday"
+		)
+		interval = 1
+	}
+	range = @{
+		type = "noEnd"
+	}
+}
+timeZone = "Pacific Standard Time"
+timeSlots = $null
+}
+)
 }
 
 Update-MgUserSettingShiftPreference -UserId $userId -BodyParameter $params

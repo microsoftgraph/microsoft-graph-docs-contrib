@@ -279,6 +279,14 @@ items:
                 href: resources/plannertask.md
               - name: List tasks
                 href: api/planneruser-list-tasks.md
+          - name: Sponsors
+            items:
+              - name: Add sponsor
+                href: api/user-post-sponsors.md
+              - name: List sponsors
+                href: api/user-list-sponsors.md
+              - name: Remove sponsor
+                href: api/user-delete-sponsors.md
           - name: Teamwork and communications
             items:
               - name: Installed app
@@ -301,6 +309,27 @@ items:
                 href: api/chat-get.md
               - name: List chats for user
                 href: api/chat-list.md
+              - name: Settings
+                items:
+                  - name: License details
+                    href: resources/licensedetails.md
+                    items:
+                    - name: Get
+                      href: api/licenseDetails-getteamslicensingdetails.md
+                  - name: Organization settings
+                    items:
+                    - name: Teamwork
+                      href: resources/teamwork.md
+                      items:
+                      - name: Get
+                        href: api/teamwork-get.md
+                  - name: User settings
+                    items:
+                    - name: User teamwork
+                      href: resources/userteamwork.md
+                      items:
+                        - name: Get
+                          href: api/userteamwork-get.md
           - name: To-do task
             items:
               - name: To-do task
@@ -336,6 +365,8 @@ items:
                 href: api/group-get.md
               - name: Update group
                 href: api/group-update.md
+              - name: Upsert group
+                href: api/group-upsert.md
               - name: Delete group
                 href: api/group-delete.md
               - name: Renew group
@@ -625,6 +656,8 @@ items:
                 href: api/application-get.md
               - name: Update application
                 href: api/application-update.md
+              - name: Upsert application
+                href: api/application-upsert.md  
               - name: Delete application
                 href: api/application-delete.md
               - name: Get delta
@@ -693,6 +726,8 @@ items:
                         href: api/federatedidentitycredential-get.md
                       - name: Update
                         href: api/federatedidentitycredential-update.md
+                      - name: Upsert
+                        href: api/federatedidentitycredential-upsert.md
                       - name: Delete
                         href: api/federatedidentitycredential-delete.md
               - name: Owners
@@ -764,6 +799,8 @@ items:
                 href: api/serviceprincipal-get.md
               - name: Update
                 href: api/serviceprincipal-update.md
+              - name: Upsert
+                href: api/serviceprincipal-upsert.md
               - name: Delete
                 href: api/serviceprincipal-delete.md
               - name: List deleted service principals
@@ -1150,7 +1187,7 @@ items:
               - name: Create category
                 href: api/outlookuser-post-mastercategories.md
               - name: List modules
-                href: api/educationclass-list-modules.md                
+                href: api/educationclass-list-modules.md
               - name: Get category
                 href: api/outlookcategory-get.md
               - name: Update category
@@ -1289,9 +1326,9 @@ items:
                     href: api/usersettings-list-windows.md
                   - name: Get
                     href: api/windowssetting-get.md
-              - name: Windows setting instance                    
+              - name: Windows setting instance
                 href: resources/windowssettinginstance.md
-                items:              
+                items:
                   - name: List
                     href: api/windowssetting-list-instances.md
                   - name: Get
@@ -1453,6 +1490,47 @@ items:
                 href: resources/cloudpc-api-overview.md
               - name: Virtual endpoint
                 href: resources/virtualendpoint.md
+              - name: Cloud PC
+                href: resources/cloudpc.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-cloudpcs.md
+                  - name: Get
+                    href: api/cloudpc-get.md
+                  - name: End grace period
+                    href: api/cloudpc-endgraceperiod.md
+                  - name: Reboot
+                    href: api/cloudpc-reboot.md
+                  - name: Rename
+                    href: api/cloudpc-rename.md
+                  - name: Restore
+                    href: api/cloudpc-restore.md
+                  - name: Troubleshoot
+                    href: api/cloudpc-troubleshoot.md
+              - name: Cloud PC audit event
+                href: resources/cloudpcauditevent.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-auditevents.md
+                  - name: Get
+                    href: api/cloudpcauditevent-get.md
+                  - name: Get audit activity types
+                    href: api/cloudpcauditevent-getauditactivitytypes.md
+              - name: Cloud PC Azure network connection
+                href: resources/cloudpconpremisesconnection.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-onpremisesconnections.md
+                  - name: Create
+                    href: api/virtualendpoint-post-onpremisesconnections.md
+                  - name: Get
+                    href: api/cloudpconpremisesconnection-get.md
+                  - name: Update
+                    href: api/cloudpconpremisesconnection-update.md
+                  - name: Delete
+                    href: api/cloudpconpremisesconnection-delete.md
+                  - name: Run health checks
+                    href: api/cloudpconpremisesconnection-runhealthcheck.md
               - name: Cloud PC device image
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -1473,6 +1551,36 @@ items:
                     href: api/virtualendpoint-list-galleryimages.md
                   - name: Get
                     href: api/cloudpcgalleryimage-get.md
+              - name: Cloud PC provisioning policy
+                href: resources/cloudpcprovisioningpolicy.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-provisioningpolicies.md
+                  - name: Create
+                    href: api/virtualendpoint-post-provisioningpolicies.md
+                  - name: Get
+                    href: api/cloudpcprovisioningpolicy-get.md
+                  - name: Update
+                    href: api/cloudpcprovisioningpolicy-update.md
+                  - name: Delete
+                    href: api/cloudpcprovisioningpolicy-delete.md
+                  - name: Assign
+                    href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Cloud PC user setting
+                href: resources/cloudpcusersetting.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-usersettings.md
+                  - name: Create
+                    href: api/virtualendpoint-post-usersettings.md
+                  - name: Get
+                    href: api/cloudpcusersetting-get.md
+                  - name: Update
+                    href: api/cloudpcusersetting-update.md
+                  - name: Delete
+                    href: api/cloudpcusersetting-delete.md
+                  - name: Assign
+                    href: api/cloudpcusersetting-assign.md
           - name: Cloud printing
             items:
               - name: Print
@@ -4738,7 +4846,7 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md  
+                href: api/educationassignment-delta.md
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md
               - name: Update grading category
@@ -4811,7 +4919,7 @@ items:
             - name: Pin module
               href: api/educationmodule-pin.md
             - name: Unpin module
-              href: api/educationmodule-unpin.md                  
+              href: api/educationmodule-unpin.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -7362,6 +7470,13 @@ items:
             items:
             - name: Microsoft Entra activity reports
               items:
+                - name: AD FS application activity
+                  items:
+                    - name: Relying party detailed summary
+                      href: resources/relyingpartydetailedsummary.md
+                      items:
+                        - name: Get relying party detailed summary
+                          href: api/reportroot-getrelyingpartydetailedsummary.md
                 - name: Registration and usage
                   items:
                     - name: Overview
@@ -8114,32 +8229,137 @@ items:
                 href: api/alert-update.md
           - name: Records management
             items:
-              - name: Overview
-                href: resources/security-recordsManagement-overview.md
-              - name: Retention event
-                href: resources/security-retentionevent.md
+            - name: Overview
+              href: resources/security-recordsmanagement-overview.md
+            - name: Retention label
+              href: resources/security-retentionlabel.md
+              items:
+              - name: List
+                href: api/security-labelsroot-list-retentionlabel.md
+              - name: Create
+                href: api/security-labelsroot-post-retentionlabel.md
+              - name: Get
+                href: api/security-retentionlabel-get.md
+              - name: Update
+                href: api/security-retentionlabel-update.md
+              - name: Delete
+                href: api/security-retentionlabel-delete.md
+            - name: File plan descriptors
+              items:
+              - name: File plan descriptors
                 items:
-                  - name: List
-                    href: api/security-retentionevent-list.md
-                  - name: Create
-                    href: api/security-retentionevent-post.md
-                  - name: Get
-                    href: api/security-retentionevent-get.md
-                  - name: Delete
-                    href: api/security-retentionevent-delete.md
-              - name: Retention event type
-                href: resources/security-retentioneventtype.md
+                - name: File plan descriptor set
+                  href: resources/security-fileplandescriptor.md
+                - name: Applied category
+                  href: resources/security-appliedcategory.md
+                - name: Authority
+                  href: resources/security-authority.md
+                - name: Citation
+                  href: resources/security-citation.md
+                - name: Department
+                  href: resources/security-department.md
+                - name: File plan reference
+                  href: resources/security-fileplanreference.md
+                - name: Subcategory
+                  href: resources/security-subcategory.md
+              - name: File plan descriptor templates
                 items:
+                - name: Applied category template
+                  items:
+                  - name: Category template
+                    href: resources/security-categorytemplate.md
                   - name: List
-                    href: api/security-retentioneventtype-list.md
+                    href: api/security-labelsroot-list-categories.md
                   - name: Create
-                    href: api/security-retentioneventtype-post.md
+                    href: api/security-labelsroot-post-categories.md
                   - name: Get
-                    href: api/security-retentioneventtype-get.md
-                  - name: Update
-                    href: api/security-retentioneventtype-update.md
+                    href: api/security-categorytemplate-get.md
                   - name: Delete
-                    href: api/security-retentioneventtype-delete.md
+                    href: api/security-labelsroot-delete-categories.md
+                - name: Authority template
+                  items:
+                  - name: Authority template
+                    href: resources/security-authoritytemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-authorities.md
+                  - name: Create
+                    href: api/security-labelsroot-post-authorities.md
+                  - name: Get
+                    href: api/security-authoritytemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-authorities.md
+                - name: Citation template
+                  items:
+                  - name: Citation template
+                    href: resources/security-citationtemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-citations.md
+                  - name: Create
+                    href: api/security-labelsroot-post-citations.md
+                  - name: Get
+                    href: api/security-citationtemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-citations.md
+                - name: Department template
+                  items:
+                  - name: Department template
+                    href: resources/security-departmenttemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-departments.md
+                  - name: Create
+                    href: api/security-labelsroot-post-departments.md
+                  - name: Get
+                    href: api/security-departmenttemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-departments.md              
+                - name: File plan reference template
+                  items:
+                  - name: File plan reference template
+                    href: resources/security-fileplanreferencetemplate.md
+                  - name: List
+                    href: api/security-labelsroot-list-fileplanreferences.md
+                  - name: Create
+                    href: api/security-labelsroot-post-fileplanreferences.md
+                  - name: Get
+                    href: api/security-fileplanreferencetemplate-get.md
+                  - name: Delete
+                    href: api/security-labelsroot-delete-fileplanreferences.md
+                - name: Subcategory template
+                  items:
+                  - name: Subcategory template
+                    href: resources/security-subcategorytemplate.md
+                  - name: List
+                    href: api/security-categorytemplate-list-subcategories.md
+                  - name: Create
+                    href: api/security-categorytemplate-post-subcategories.md
+                  - name: Get
+                    href: api/security-subcategorytemplate-get.md
+                  - name: Delete
+                    href: api/security-categorytemplate-delete-subcategories.md
+            - name: Retention event
+              href: resources/security-retentionevent.md
+              items:
+              - name: List
+                href: api/security-retentionevent-list.md
+              - name: Create
+                href: api/security-retentionevent-post.md
+              - name: Get
+                href: api/security-retentionevent-get.md
+              - name: Delete
+                href: api/security-retentionevent-delete.md
+            - name: Retention event type
+              href: resources/security-retentioneventtype.md
+              items:
+              - name: List
+                href: api/security-retentioneventtype-list.md
+              - name: Create
+                href: api/security-retentioneventtype-post.md
+              - name: Get
+                href: api/security-retentioneventtype-get.md
+              - name: Update
+                href: api/security-retentioneventtype-update.md
+              - name: Delete
+                href: api/security-retentioneventtype-delete.md
           - name: Secure score
             href: resources/securescore.md
             items:
@@ -8462,18 +8682,20 @@ items:
           - name: List item
             href: resources/listitem.md
             items:
-              - name: Get item
-                href: api/listitem-get.md
               - name: Create item
                 href: api/listitem-create.md
-              - name: Update item
+              - name: Get
+                href: api/listitem-get.md
+              - name: Update
                 href: api/listitem-update.md
-              - name: Delete item
+              - name: Delete
                 href: api/listitem-delete.md
-              - name: List versions
-                href: api/listitem-list-versions.md
+              - name: Get delta
+                href: api/listitem-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
+              - name: List versions
+                href: api/listitem-list-versions.md
           - name: Document set version
             items:
               - name: Document set version

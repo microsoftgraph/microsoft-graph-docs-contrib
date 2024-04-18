@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`.|
+|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`. The `CloudPcId` filter is required; for example: `CloudPcId eq xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. If this filter is missing, malformed, or invalid, a query config will be thrown.|
 |select|String collection|OData select syntax. The columns to include in the report.|
 |search|String|The string to search for.|
 |groupBy|String collection|A list of columns that describe how to group the data in the report.|
@@ -83,10 +83,10 @@ Content-length: 199
         "UsageInHour",
         "RoundTripTimeInMsP50",
         "AvailableBandwidthInMBpsP50",
-        "RemoteSignInTimeInSec",
+        "RemoteSignInTimeInSec"
     ],
     "top": 25,
-    "skip": 0,
+    "skip": 0
 }
 ```
 

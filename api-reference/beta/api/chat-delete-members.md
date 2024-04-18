@@ -22,7 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_delete_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-delete-members-permissions.md)]
 
-> **Note**: The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 

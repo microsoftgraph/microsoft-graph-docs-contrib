@@ -28,6 +28,7 @@ This object is an abstract base type from which the following resources are deri
 + [singleServicePrincipal](singleserviceprincipal.md)
 + [targetManager](targetmanager.md)
 + [targetApplicationOwners](targetapplicationowners.md)
++ [targetUserSponsors](targetusersponsors.md)
 
 
 ## Properties

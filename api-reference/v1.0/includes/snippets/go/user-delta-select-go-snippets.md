@@ -22,7 +22,7 @@ configuration := &graphusers.UsersDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-delta, err := graphClient.Users().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.Users().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

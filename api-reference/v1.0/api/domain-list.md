@@ -22,9 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-list-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
+The work or school account needs to belong to one of the following Microsoft Entra roles:
 
-* Global Administrator
 * User Administrator
 * Helpdesk Administrator
 * Service Support Administrator
