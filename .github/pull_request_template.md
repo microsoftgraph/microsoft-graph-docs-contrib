@@ -5,6 +5,8 @@
 
 
 ---
+> [!NOTE]
+> The following guidance is for Microsoft employees only. Community contributors can ignore this message; our content team will manage the status.
 <details><summary><i>After you've created your PR</i>, expand this section for tips and additional instructions.</summary>
 
 
