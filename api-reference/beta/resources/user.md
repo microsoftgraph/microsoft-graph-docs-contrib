@@ -371,6 +371,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
 |security|[security](security.md) |Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
+|solutions|[solution](../resources/solution.md)| Represents a user's custom solution entity. Read-Only. Nullable.|
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
