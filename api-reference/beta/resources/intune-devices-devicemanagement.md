@@ -108,8 +108,6 @@ Singleton entity that acts as a container for all device management functionalit
 |userExperienceAnalyticsAnomalyDevice|[userExperienceAnalyticsAnomalyDevice](../resources/intune-devices-userexperienceanalyticsanomalydevice.md) collection|The user experience analytics anomaly entity contains device details.|
 |userExperienceAnalyticsAnomalyCorrelationGroupOverview|[userExperienceAnalyticsAnomalyCorrelationGroupOverview](../resources/intune-devices-userexperienceanalyticsanomalycorrelationgroupoverview.md) collection|The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly.|
 |userExperienceAnalyticsDeviceTimelineEvent|[userExperienceAnalyticsDeviceTimelineEvent](../resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md) collection|The user experience analytics device events entity contains NRT device timeline event details.|
-|privilegeManagementElevations|[privilegeManagementElevation](../resources/intune-devices-privilegemanagementelevation.md) collection|The endpoint privilege management elevation event entity contains elevation details.|
-
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
