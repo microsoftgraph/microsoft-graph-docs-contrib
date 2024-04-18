@@ -385,7 +385,7 @@ Content-type: application/json
 |`ApiSpecificationFileRequiredParameterContainUnsupportedLocation` 	| Api based compose extension have unsupported parameter location defined on apiSpecificationFile for {0}. Currently only path and query supported.|	 The message appears when an API-based compose extension have unsupported parameter location defined on `apiSpecificationFile`.|
 |`ApiSpecificationFileRequestBodyContainUnsupportedMediaType`	 |Api based compose extension have unsupported media type defined in request body on apiSpecificationFile. Currently only application/json is supported.	| The message appears when an API-based compose extension have unsupported `media` type defined in request body on `apiSpecificationFile`.|
 |`ApiSpecificationFileRequestBodyContainUnsupportedSchemaType`	| Api based compose extension have unsupported schema type defined in request body on apiSpecificationFile. Currently arrays are not supported.	| The message appears when an API-based compose extension have unsupported schema type defined in request body on `apiSpecificationFile`.|
-|`ApiSpecificationFileRequestBodySchemaContainKeywords` |	 Api based compose extension have keywords ||
+|`ApiSpecificationFileRequestBodySchemaContainKeywords` |	 Api based compose extension have keywords |The message appears when an API-based compose extension have keywords defined in request body on `apiSpecificationFile`.|
 |`ApiSpecificationFileRequiredParameterOrPropertyNotDefinedOnManifest`	| Api based compose extension have required parameters or properties {0} not defined on manifest.	| The message appears when an API-based compose extension have `required` parameters not defined in the app manifest.|
 |`ApiSpecificationFileResponseContainUnsupportedMediaType`	| Api based compose extension have unsupported media type defined in response on apiSpecificationFile. Currently only application/json supported.	| The message appears when an API-based compose extension have unsupported `media` type defined in response on `apiSpecificationFile`.|
 |`ApiSpecificationFileServerUrlsContainHttp`|	 Api based compose extension have server urls that have http protocal defined on apiSpecificationFile.	| The message appears when an API-based compose extension have server urls that contain `http` protocal on `apiSpecificationFile`.|
@@ -417,7 +417,7 @@ Content-type: application/json
 |`InvalidColor32x32IconHeightAndWidth`|	 Color 32x32 icon should be 32x32 with only white and transparent	| The color 32x32 icon doesn't have the correct dimensions.|
 |`InvalidColorIconHeightAndWidth`	| Color Icon is not as per the required dimension.	| The color icon doesn't have the correct dimensions.|
 |`InvalidOutlineIconHeightAndWidth` |	 Small icon should be 32x32 with only white and transparent	| The outline icon doesn't have the correct dimensions.|
-|`InvalidOutlineIconTransparency`	| Outline icon is not transparent. It's Alpha|	|
+|`InvalidOutlineIconTransparency`	| Outline icon is not transparent. It's Alpha| The outline icon isn't transparent. It contains pixels that are neither transparent nor white, with an Alpha, R, G, B value of {0},{1},{2},{3}.	|
 |`ParameterOnManifestNotDefinedOnApiSpecFile` |	 Api based compose extension have parameters {0} on manifest not defined on api specification file.	| The message appears when an API-based compose extension parameters in the app manifest isn't defined on api specification file. |
 |`ReservedActivitiesValidation` 	| Manifest should not contain reserved Activity Type 'systemDefault'.	| The error occurs when the `systemDefault` activity type is defined in the app manifest.|
 |`ReservedStaticTabNameShouldBeNull` 	| Reserved tab "Name" property should not be specified	| This message appears when the reserved `staticTabs` name property is specified.|
@@ -431,7 +431,7 @@ Content-type: application/json
 |`VersionContainsOnlyNumbersDotSeparated`|	 App version supports only numbers in the '#.#.#' format.	| The version in the app package doesn't match pattern '#.#.#'.|
 |`VersionHasMajorLessThan1`	 |App version should not start with '0'. Ex: 0.0.1 or 0.1 are not valid app versions and 1.0 / 1.5.1 / 1.0.0 / 2.5.0 are valid app versions. In case of new update in manifest to an existing app in store | You need to increase your app version. For example, if the current version of your app in the store is 1.0 and you’re submitting an update for validation, the version number of the update must be higher than 1.0.|
 |`ShortNameLengthCheck` |	Maximum character length for Short Name must not exceed 30 chars	|The error occurs when the short name exceeds 32 characters.|
-|`ApiSpecificationFileParameterContainUnsupportedSchemaType` |	Api based compose extension have unsupported parameter schema type defined on apiSpecificationFile.Arrays are not supported.	|The message appears when an API-based compose extension have unsupported parameter schema type defined in the apiSpecificationFile.|
+|`ApiSpecificationFileParameterContainUnsupportedSchemaType` |	Api based compose extension have unsupported parameter schema type defined on apiSpecificationFile.Arrays are not supported.	|The message appears when an API-based compose extension have unsupported parameter schema type defined in the `apiSpecificationFile`.|
 
 </details>
 
