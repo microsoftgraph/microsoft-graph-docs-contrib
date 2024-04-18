@@ -1,6 +1,6 @@
 ---
 title: "additionalDataDictionary resource type"
-description: "A bag of name-value pairs value pairs which contain additional details about the alert."
+description: "Represents a bag of name-value pairs that contain additional details about an alert."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,12 +13,11 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A bag of name-value pairs value pairs which contain additional details about the alert.
+Represents a bag of name-value pairs that contain additional details about an alert.
 
+Inherits from [dictionary](../resources/dictionary.md).
 
-Inherits from [microsoft.graph.Dictionary](../resources/dictionary.md).
-
-## Relationships
+## Properties
 None.
 
 ## JSON representation
