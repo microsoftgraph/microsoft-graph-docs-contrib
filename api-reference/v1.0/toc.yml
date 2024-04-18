@@ -9247,27 +9247,27 @@ items:
                         href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
-              - name: Settings
+          - name: Settings
+            items:
+              - name: License details
+                href: resources/licensedetails.md
                 items:
-                  - name: License details
-                    href: resources/licensedetails.md
+                  - name: Get
+                    href: api/licenseDetails-getteamslicensingdetails.md
+              - name: Organization settings
+                items:
+                  - name: Teamwork
+                    href: resources/teamwork.md
                     items:
                       - name: Get
-                        href: api/licenseDetails-getteamslicensingdetails.md
-                  - name: Organization settings
+                        href: api/teamwork-get.md
+              - name: User settings
+                items:
+                  - name: User teamwork
+                    href: resources/userteamwork.md
                     items:
-                      - name: Teamwork
-                        href: resources/teamwork.md
-                        items:
-                          - name: Get
-                            href: api/teamwork-get.md
-                  - name: User settings
-                    items:
-                      - name: User teamwork
-                        href: resources/userteamwork.md
-                        items:
-                          - name: Get
-                            href: api/userteamwork-get.md
+                      - name: Get
+                        href: api/userteamwork-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:
