@@ -219,9 +219,9 @@ items:
       href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
     - name: Get
       href: ../../api/singlevaluelegacyextendedproperty-get.md
-  - name: Multi value legacy extended property
+  - name: Multivalue legacy extended property
     items:
-    - name: Multi value legacy extended property
+    - name: Multivalue legacy extended property
       href: ../../resources/multivaluelegacyextendedproperty.md
     - name: Post
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md

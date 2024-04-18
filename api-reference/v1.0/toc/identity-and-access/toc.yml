@@ -41,9 +41,9 @@ items:
       href: ../../api/contract-get.md
     - name: List contracts
       href: ../../api/contract-list.md
-  - name: Directory
+  - name: Deleted item
     items:
-    - name: Directory
+    - name: Deleted item
       href: ../../resources/directory.md
     - name: Get deleted item
       href: ../../api/directory-deleteditems-get.md
@@ -1823,8 +1823,6 @@ items:
       href: ../../api/organizationalbrandinglocalization-update.md
     - name: Delete organizationalBrandingLocalization
       href: ../../api/organizationalbrandinglocalization-delete.md
-  - name: Organizational branding properties
-    href: ../../resources/organizationalbrandingproperties.md
   - name: Policies
     items:
     - name: Overview

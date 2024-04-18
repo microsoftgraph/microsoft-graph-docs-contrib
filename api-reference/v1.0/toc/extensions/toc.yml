@@ -1,9 +1,9 @@
 items:
 - name: Overview
   href: ../../graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http
-- name: Extension property
+- name: Directory extension
   items:
-  - name: Extension property
+  - name: Directory extension
     href: ../../resources/extensionproperty.md
   - name: Create extensionProperties
     href: ../../api/application-post-extensionproperty.md
