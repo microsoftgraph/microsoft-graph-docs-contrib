@@ -1,6 +1,6 @@
 ---
 title: "provisioningFlow: reset"
-description: "Reset a provisioningFlow"
+description: "Reset a provisioningFlow."
 author: "dakelle"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset a [provisioningFlow](../resources/industrydata-provisioningflow.md). This will re-provision all current data as if it were the initial run while clearing out the existing errors associated in the flow.
+Reset a [provisioningFlow](../resources/industrydata-provisioningflow.md). This action will reprovision all current data as if it were the initial run while clearing out the existing errors associated in the flow.
 
 ## Permissions
 
