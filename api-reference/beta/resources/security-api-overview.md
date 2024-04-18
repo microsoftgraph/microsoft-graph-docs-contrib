@@ -84,11 +84,14 @@ Alerts from the following security providers are available via these rich alerts
 
 ### Legacy alerts
 
-These [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline the management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response. 
+> [!NOTE]
+> The legacy alerts API is deprecated and will be removed by April 2026. We recommend that you migrate to the new [alerts and incidents](/graph/api/resources/security-alert) API.
+
+The legacy [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline the management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response. 
 
 With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph security API by updating your **alert** entity.
 
-Alerts from the following security providers are available via this legacy **alert** resource. Support for GET alerts, PATCH alerts, and subscribe (via webhooks) is indicated in the following table.
+Alerts from the following security providers are available via the legacy **alert** resource. Support for GET alerts, PATCH alerts, and subscribe (via webhooks) is indicated in the following table.
 
 | Security provider | <p align="center">GET alert</p>| <p align="center">PATCH alert</p>| <p align="center">Subscribe to alert</p>|
 |:------------------|:---------|:-----------|:------------------|
@@ -106,7 +109,7 @@ Alerts from the following security providers are available via this legacy **ale
 
 \*\* Microsoft Defender for Endpoint requires additional [user roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph security API. Only the users in both Microsoft Defender for Endpoint and Microsoft Graph security API roles can have access to the Microsoft Defender for Endpoint data. Because application-only authentication is not limited by this, we recommend that you use an application-only authentication token.
 
-\*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you will get Microsoft Defender for Identity alerts only if you have joined Unified SecOps and connected Microsoft Defender for Identity into Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/azure-advanced-threat-protection/atp-mcas-integration).
+\*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you get Microsoft Defender for Identity alerts only if you have joined Unified SecOps and connected Microsoft Defender for Identity into Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/azure-advanced-threat-protection/atp-mcas-integration).
 
 ## Attack simulation and training
 
@@ -147,6 +150,11 @@ The  [incident](security-incident.md) resource and its APIs allow you to sort 
 
 > **Note:** We recommend that you use the [threat submission](https://github.com/microsoftgraph/microsoft-graph-docs/pull/16242/files#threat-submission) API instead.
 
+
+## Records management
+
+Most organizations need to manage data to proactively comply with industry regulations and internal policies, reduce risk in the event of litigation or a security breach, and let their employees effectively and agiley share knowledge that is current and relevant to them. You can use the [records management APIs](../resources/security-recordsmanagement-overview.md) to systematically apply [retention labels](security-retentionlabel.md) to different types of content that require different retention settings. For example, you can configure the start of retention period from when the content was created, last modified, labeled or when an event occurs for a particular event type. Further, you can use [file plan descriptors](security-fileplandescriptor.md) to improve the manageability of these retention labels.
+
 ## Secure Score
 
 [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The [secureScore](securescores.md) and [secureScoreControlProfile](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score will be after you adopt security features.
@@ -158,6 +166,9 @@ Microsoft Defender Threat Intelligence delivers world-class threat intelligence 
 The threat intelligence APIs (preview) allow you to operationalize intelligence found within the user interface. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including IoCs and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
 
 ## Threat intelligence indicators (preview)
+
+> [!NOTE]
+> The [tiIndicator](tiindicator.md) entity is deprecated and will be removed by April 2026.
 
 Threat indicators also referred to as indicators of compromise (IoCs), represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers can generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. These indicators are then used in various security tools to defend against related threats.
 
@@ -176,7 +187,7 @@ Threat indicators sent via the Microsoft Graph security API are available today 
 
 The Microsoft Graph threat submission API helps organizations to submit a threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft checks the submission against the organizational policies in effect and sends it to human graders for analysis. The result then helps tenant administrators understand the threat scanning verdict and adjust their organizational policy. Admins can also use the results to report legitimate emails to prevent them from getting blocked.
 
-> **Note:** We recommend that you use this API instead of the deprecated Information Protection threat assessment API. The threat submission API provides unified security threat submission functionality and adds unified result support, user submission query support, tenant allow block list support, admin review support and app-only mode support.
+> **Note:** We recommend that you use the threat submission API instead of the deprecated Information Protection threat assessment API. The threat submission API provides unified security threat submission functionality and adds unified result support, user submission query support, tenant allow block list support, admin review support and app-only mode support.
 
 ## Email and collaboration protection (preview)
 
@@ -187,7 +198,7 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 ## Identities
 
 ### Health Issues
-The Defender for Identity health issues API allows you to monitor the health status of your sensors and agents across your hybrid identity infrastructure. You can use this API to retrieve information about the current health issues of your sensors, such as the issue type, status, configuration, and severity. You can also use this API to identify and resolve any issues that may affect the functionality or security of your sensors and agents.
+The Defender for Identity health issues API allows you to monitor the health status of your sensors and agents across your hybrid identity infrastructure. You can use the health issues API to retrieve information about the current health issues of your sensors, such as the issue type, status, configuration, and severity. You can also use the API to identify and resolve any issues that may affect the functionality or security of your sensors and agents.
 
 ## Common use cases
 

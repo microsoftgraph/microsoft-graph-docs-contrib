@@ -36,9 +36,9 @@ Inherits from [entity](../resources/entity.md).
 |createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information for the creator of the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
 |description|[itemBody](../resources/itembody.md)|Description of the virtual event.|
 |displayName|String|Display name of the virtual event. |
-|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones).|
+|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 |id|String|Unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
-|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones).|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 |status|[virtualEventStatus](#virtualeventstatus-values)|Status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
 
 ### virtualEventStatus values

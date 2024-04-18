@@ -41,7 +41,7 @@ Configuring user flow attributes in your Microsoft Entra ID or Azure AD B2C tena
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

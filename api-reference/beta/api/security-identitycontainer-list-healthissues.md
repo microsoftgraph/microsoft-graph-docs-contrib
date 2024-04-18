@@ -34,11 +34,11 @@ GET /security/identities/healthIssues
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response, for example: `$count`, `$filter`, `$skip`, `$top`.
+This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
 
-The following are examples of their use:
+The following examples show how to use optional query parameters.
 
-See all open health alerts.
+### Get all open health alerts
 <!-- {
   "blockType": "ignored"
 }
@@ -47,7 +47,7 @@ See all open health alerts.
 GET /security/identities/healthIssues?$filter=Status eq 'open'
 ```
 
-See top five open health alerts.
+### Get the top five open health alerts
 <!-- {
   "blockType": "ignored"
 }
@@ -56,24 +56,24 @@ See top five open health alerts.
 GET /security/identities/healthIssues?$filter=Status eq 'open'&$top=5
 ```
 
-See open health alerts based on issue type.
+### Get open health alerts based on issue type
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=healthIssueType eq 'global'
-GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=healthIssueType eq 'sensor'
+GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueType eq 'global'
+GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueType eq 'sensor'
 ```
 
-See open health alerts based on severity.
+### Get open health alerts based on severity
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=severity eq 'medium'
-GET /security/identities/healthIssues?$filter=Status eq 'open'&$filter=severity eq 'low'
+GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'medium'
+GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'low'
 ```
 
 See open global health alerts that domain name \ sensor DNS name ends with spesific value (name=contoso.com)
@@ -82,11 +82,9 @@ See open global health alerts that domain name \ sensor DNS name ends with spesi
 }
 -->
 ``` http
-GET /security/identities/healthissues?$filter=Status eq 'open'&$filter=healthIssueType eq 'global'&$filter=domainNames/any(s:endswith(s,'contoso.com'))
-GET /security/identities/healthissues?$filter=Status eq 'open'&$filter=healthIssueType eq 'global'&$filter=sensorDNSNames/any(s:endswith(s,'contoso.com'))
+GET /security/identities/healthissues?$filter=Status eq 'open' and healthIssueType eq 'global' and domainNames/any(s:endswith(s,'contoso.com'))
+GET /security/identities/healthissues?$filter=Status eq 'open' and healthIssueType eq 'global' and sensorDNSNames/any(s:endswith(s,'contoso.com'))
 ```
-
-For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -107,6 +105,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_healthIssues"
@@ -116,6 +115,39 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/security/identities/healthIssues
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-healthissues-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-healthissues-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-healthissues-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-healthissues-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-healthissues-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-healthissues-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-healthissues-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-healthissues-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
