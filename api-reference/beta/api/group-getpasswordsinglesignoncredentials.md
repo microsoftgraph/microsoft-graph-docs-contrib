@@ -72,7 +72,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.AppManagement.passwordSingleSignOnCredentialSet)"
+  "@odata.type": "Collection(microsoft.graph.passwordSingleSignOnCredentialSet)"
 }
 -->
 ``` http

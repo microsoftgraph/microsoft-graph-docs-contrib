@@ -1,5 +1,5 @@
 ---
-title: "group: deletePasswordSingleSignOnCredentials"
+title: "Group: deletePasswordSingleSignOnCredentials"
 description: "Delete password-based single sign-on credentials for a service principal that is associated to a group."
 author: "AllisonAm"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# group: deletePasswordSingleSignOnCredentials
+# Group: deletePasswordSingleSignOnCredentials
 
 Namespace: microsoft.graph
 
