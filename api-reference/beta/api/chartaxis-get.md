@@ -3,7 +3,7 @@ title: "Get workbookChartAxis"
 description: "Retrieve the properties and relationships of workbookChartAxis object."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Name      |Description|
 |:----------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 Don't supply a request body for this method.
@@ -48,6 +48,7 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [workbookChartAxis](../resources/workbookchartaxis.md) object in the response body.
+
 ## Example
 ##### Request
 The following example shows a request.

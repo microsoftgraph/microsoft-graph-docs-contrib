@@ -15,6 +15,11 @@ $params = @{
 		forceChangePasswordNextSignIn = $false
 		password = "xWwvJ]6NMw+bWH-d"
 	}
+	extkmpdyld2_graphLearnCourses = @{
+		courseId = 
+		courseName = "Explore Microsoft Graph"
+		courseType = "Online"
+	}
 }
 
 New-MgBetaUser -BodyParameter $params

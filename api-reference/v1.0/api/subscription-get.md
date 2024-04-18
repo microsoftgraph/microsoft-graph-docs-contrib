@@ -3,7 +3,7 @@ title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
 ms.localizationpriority: high
 author: "keylimesoda"
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 doc_type: apiPageType
 ---
 

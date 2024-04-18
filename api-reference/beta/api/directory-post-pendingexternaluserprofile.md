@@ -4,6 +4,7 @@ description: "Create a new pendingExternalUserProfile object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.subservice: "entra-directory-management"
 ---
 
@@ -115,6 +116,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-pendingexternaluserprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-pendingexternaluserprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
