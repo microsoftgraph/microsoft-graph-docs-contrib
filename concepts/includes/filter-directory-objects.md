@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
-ms.prod: non-product-specific
+ms.subservice: entra-applications
 ms.topic: include
 ---
 
