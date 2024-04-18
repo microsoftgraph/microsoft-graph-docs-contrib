@@ -18,6 +18,8 @@ Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][]
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
