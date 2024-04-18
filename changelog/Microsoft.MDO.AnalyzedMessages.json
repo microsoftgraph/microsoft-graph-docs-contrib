@@ -265,6 +265,72 @@
       "CreatedDateTime": "2024-03-07T04:00:25.443567Z",
       "WorkloadArea": "Security",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Member",
+          "ChangedApiName": "phish",
+          "ChangeType": "Addition",
+          "Description": "Added the `phish` member to the **threatType** enumeration.",
+          "Target": "threatType"
+        },
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Member",
+          "ChangedApiName": "phishing",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `phishing` member from the **threatType** enumeration.",
+          "Target": "threatType"
+        },
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Property",
+          "ChangedApiName": "recipientEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **recipientEmailAddress** property to the [analyzedEmail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmail?view=graph-rest-beta) resource.",
+          "Target": "analyzedEmail"
+        },
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Property",
+          "ChangedApiName": "recipientEmailAddresses",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **recipientEmailAddresses** property from the [analyzedEmail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmail?view=graph-rest-beta) resource.",
+          "Target": "analyzedEmail"
+        },
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Property",
+          "ChangedApiName": "threatType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **threatType** property from the [analyzedEmail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmail?view=graph-rest-beta) resource.",
+          "Target": "analyzedEmail"
+        },
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Property",
+          "ChangedApiName": "threatTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **threatTypes** property to the [analyzedEmail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmail?view=graph-rest-beta) resource.",
+          "Target": "analyzedEmail"
+        },
+        {
+          "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+          "ApiChange": "Property",
+          "ChangedApiName": "remediate",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **approverUpn** property from the [remediate](https://learn.microsoft.com/en-us/graph/api/security-analyzedEmail-remediate?view=graph-rest-beta) method to the [analyzedEmail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmail?view=graph-rest-beta) resource.",
+          "Target": "analyzedEmail"
+        }
+      ],
+      "Id": "19bec22c-c9a4-4920-9907-15d9e1231366",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-18T08:00:08.5523362Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }
