@@ -56,7 +56,7 @@ PATCH /security/partner/securityAlerts/{partnerSecurityAlertId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.partner.security.partnerSecurityAlert](../resources/partner.security-partnersecurityalert.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.partner.security.partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) object in the response body.
 
 ## Examples
 
