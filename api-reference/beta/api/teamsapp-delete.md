@@ -29,14 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
-| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
+| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.|
 | Application                            | Not supported. |
 
-> **Note:**
->
-> * Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
-> * You can only use the `AppCatalog.Submit` permission to delete app definitions in review.
+> [!NOTE]
+> - The Directory.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> - You can only use the AppCatalog.Submit permission to delete app definitions in review.
 
 ## HTTP request
 
@@ -48,7 +47,7 @@ To delete an app from the app catalog:
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-To delete an app that has been submitted but has not been approved:
+To delete an app that is submitted but isn't yet approved:
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
