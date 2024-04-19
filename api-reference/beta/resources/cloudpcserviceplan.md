@@ -43,7 +43,7 @@ For examples of currently available service plans, see [Windows 365 compare plan
 |:---|:---|
 |enterprise|Enterprise service plan type for enterprise customers.|
 |business|Business service plan type for Very Small Business (VSB) customers.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
