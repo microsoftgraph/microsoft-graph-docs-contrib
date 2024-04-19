@@ -908,5 +908,63 @@
         "WorkloadArea": "Customer booking",
         "SubArea": ""
       }
+	{
+	  "ChangeList": [
+		{
+		  "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
+		  "ApiChange": "Enumeration",
+		  "ChangedApiName": "bookingStaffMembershipStatus",
+		  "ChangeType": "Addition",
+		  "Description": "Added the **bookingStaffMembershipStatus** enumeration type.",
+		  "Target": "bookingStaffMembershipStatus"
+		},
+		{
+		  "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
+		  "ApiChange": "Property",
+		  "ChangedApiName": "customerEmailAddress",
+		  "ChangeType": "Addition",
+		  "Description": "Added the **customerEmailAddress** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
+		  "Target": "bookingAppointment"
+		},
+		{
+		  "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
+		  "ApiChange": "Property",
+		  "ChangedApiName": "customerName",
+		  "ChangeType": "Addition",
+		  "Description": "Added the **customerName** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
+		  "Target": "bookingAppointment"
+		},
+		{
+		  "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
+		  "ApiChange": "Property",
+		  "ChangedApiName": "customerNotes",
+		  "ChangeType": "Addition",
+		  "Description": "Added the **customerNotes** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
+		  "Target": "bookingAppointment"
+		},
+		{
+		  "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
+		  "ApiChange": "Property",
+		  "ChangedApiName": "customerPhone",
+		  "ChangeType": "Addition",
+		  "Description": "Added the **customerPhone** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-1.0) resource.",
+		  "Target": "bookingAppointment"
+		},
+		{
+		  "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
+		  "ApiChange": "Property",
+		  "ChangedApiName": "membershipStatus",
+		  "ChangeType": "Addition",
+		  "Description": "Added the **membershipStatus** property to the [bookingStaffMember](https://learn.microsoft.com/en-us/graph/api/resources/bookingStaffMember?view=graph-rest-1.0) resource.",
+		  "Target": "bookingStaffMember"
+		}
+	  ],
+	  "Id": "4029cac7-6d74-4191-9fd2-50916740d2b1",
+	  "Cloud": "Prod",
+	  "Version": "v1.0",
+	  "CreatedDateTime": "2024-03-29T05:13:34.5018285Z",
+	  "WorkloadArea": "Customer booking",
+	  "SubArea": ""
+	}
     ]
 }
