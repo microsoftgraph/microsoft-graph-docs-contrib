@@ -309,27 +309,6 @@ items:
                 href: api/chat-get.md
               - name: List chats for user
                 href: api/chat-list.md
-              - name: Settings
-                items:
-                  - name: License details
-                    href: resources/licensedetails.md
-                    items:
-                    - name: Get
-                      href: api/licenseDetails-getteamslicensingdetails.md
-                  - name: Organization settings
-                    items:
-                    - name: Teamwork
-                      href: resources/teamwork.md
-                      items:
-                      - name: Get
-                        href: api/teamwork-get.md
-                  - name: User settings
-                    items:
-                    - name: User teamwork
-                      href: resources/userteamwork.md
-                      items:
-                        - name: Get
-                          href: api/userteamwork-get.md
           - name: To-do task
             items:
               - name: To-do task
@@ -8218,7 +8197,7 @@ items:
                     href: api/informationprotection-post-threatassessmentrequests.md
                   - name: Get
                     href: api/threatassessmentrequest-get.md
-          - name: Legacy alert
+          - name: Legacy alert (deprecated)
             items:
               - name: Alert
                 href: resources/alert.md
@@ -9269,6 +9248,27 @@ items:
                         href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
+          - name: Settings
+            items:
+              - name: License details
+                href: resources/licensedetails.md
+                items:
+                  - name: Get
+                    href: api/licenseDetails-getteamslicensingdetails.md
+              - name: Organization settings
+                items:
+                  - name: Teamwork
+                    href: resources/teamwork.md
+                    items:
+                      - name: Get
+                        href: api/teamwork-get.md
+              - name: User settings
+                items:
+                  - name: User teamwork
+                    href: resources/userteamwork.md
+                    items:
+                      - name: Get
+                        href: api/userteamwork-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:

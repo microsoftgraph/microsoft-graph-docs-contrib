@@ -2,7 +2,7 @@
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: ric.lewis
-ms.prod: change-notifications
+ms.subservice: change-notifications
 ms.topic: include
 ms.localizationpriority: high
 ---
