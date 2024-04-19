@@ -2,7 +2,7 @@ name: Update cloud support status
 
 on:
   schedule:
-  - cron: 0 11 * * *
+  - cron: 0 11 * * 1
   workflow_dispatch:
 
 permissions:
@@ -29,12 +29,13 @@ jobs:
         dotnet-version: 8.x
     - name: Install hidi
       run: dotnet tool install microsoft.openapi.hidi -g
-    - name: Transform CSDL
+    - name: Apply XSLT to CSDL files
       working-directory: ./metadata
       shell: pwsh
       run: |
         ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/v1.0-Prod.csdl -outputPath ../../transformed_v1.0-Prod.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+    - name: Transform CSDL with hidi
+      run: hidi transform --cs transformed_v1.0-Prod.csdl -o ./schemas/openapi/v1.0/Prod.yml --co -f Yaml --sp ./conversion-settings/openapi.json
+      working-directory: ./metadata
     - run: ls
       working-directory: ./metadata
-  
-      
