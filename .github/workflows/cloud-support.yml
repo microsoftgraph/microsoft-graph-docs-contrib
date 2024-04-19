@@ -23,10 +23,18 @@ jobs:
       with:
         repository: microsoftgraph/msgraph-metadata
         path: metadata
+    - name: Checkout tool repo
+      uses: actions/checkout@v4.1.3
+      with:
+        repository: microsoftgraph/msgraph-cloud-support
+        path: tool
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.x
+    - name: Build cloud support tool
+      working-directory: ./tool
+      run: dotnet build --configuration Release
     - name: Install hidi
       run: dotnet tool install microsoft.openapi.hidi -g
     - name: Create metadata output director
@@ -46,6 +54,7 @@ jobs:
         ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/beta-Fairfax.csdl -outputPath ../../transformed_beta-Fairfax.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
         ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/beta-Mooncake.csdl -outputPath ../../transformed_beta-Mooncake.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
     - name: Transform CSDL with hidi
+      working-directory: ./metadata
       run: |
         hidi transform --cs transformed_v1.0-Prod.csdl -o ../openapi/v1.0/Prod.yml --co -f Yaml --sp ./conversion-settings/openapi.json
         hidi transform --cs transformed_v1.0-Fairfax.csdl -o ../openapi/v1.0/Fairfax.yml --co -f Yaml --sp ./conversion-settings/openapi.json
@@ -53,6 +62,22 @@ jobs:
         hidi transform --cs transformed_beta-Prod.csdl -o ../openapi/beta/Prod.yml --co -f Yaml --sp ./conversion-settings/openapi.json
         hidi transform --cs transformed_beta-Fairfax.csdl -o ../openapi/beta/Fairfax.yml --co -f Yaml --sp ./conversion-settings/openapi.json
         hidi transform --cs transformed_beta-Mooncake.csdl -o ../openapi/beta/Mooncake.yml --co -f Yaml --sp ./conversion-settings/openapi.json
-      working-directory: ./metadata
-    - run: ls
-      working-directory: ./openapi
+    - name: Run cloud support tool
+      run: |
+        ./tool/src/bin/Release/net8.0/CheckCloudSupport --open-api ./openapi/v1.0 --api-docs ./docs/api-reference/v1.0/api --remove-old-includes
+        ./tool/src/bin/Release/net8.0/CheckCloudSupport --open-api ./openapi/beta --api-docs ./docs/api-reference/beta/api --remove-old-includes
+    - name: Commit updates and open pull request
+      working-directory: ./docs
+      shell: pwsh
+      run: |
+        $status = git status --porcelain
+        if ($status -eq $null) {
+          Write-Host "No changes to commit." -ForegroundColor Green
+        } else {
+          $timestamp = Get-Date -Format FileDateTimeUniversal
+          git checkout cloud-support/$timestamp
+          git add .
+          git commit -m "Update cloud support status"
+          git push --set-upstream origin cloud-support/$timestamp
+          gh pr create --base main --title "Update cloud support status" --body "Ran cloud support tool"
+        }
