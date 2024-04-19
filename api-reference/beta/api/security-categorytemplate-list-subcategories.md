@@ -1,6 +1,6 @@
 ---
 title: "List subcategories"
-description: "Get the subcategoryTemplate resources from the subcategories navigation property."
+description: "Get a list of subcategoryTemplate resources associated with a category template."
 author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
