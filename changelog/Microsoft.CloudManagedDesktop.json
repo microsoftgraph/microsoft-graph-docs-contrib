@@ -30,30 +30,6 @@
             "ChangeList": [
                 {
                     "Id": "b3b442cf-70ba-f2d3-a43e-89c05542829a",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "sharedByUser",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `sharedByUser` member to the **cloudPcProvisioningType** enumeration.",
-                    "Target": "cloudPcProvisioningType"
-                },
-                {
-                    "Id": "b3b442cf-70ba-f2d3-a43e-89c05542829a",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "sharedByEntraGroup",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `sharedByEntraGroup` member to the **cloudPcProvisioningType** enumeration.",
-                    "Target": "cloudPcProvisioningType"
-                },
-                {
-                    "Id": "b3b442cf-70ba-f2d3-a43e-89c05542829a",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "shared",
-                    "ChangeType": "Deprecation",
-                    "Description": "Deprecated the `shared` member of the **cloudPcProvisioningType** enumeration. The `shared` member is deprecated and will stop returning on April 30, 2027.",
-                    "Target": "cloudPcProvisioningType"
-                },
-                {
-                    "Id": "b3b442cf-70ba-f2d3-a43e-89c05542829a",
                     "ApiChange": "Property",
                     "ChangedApiName": "allotmentDisplayName",
                     "ChangeType": "Addition",
