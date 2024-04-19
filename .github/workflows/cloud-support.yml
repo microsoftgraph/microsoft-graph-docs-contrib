@@ -14,11 +14,24 @@ jobs:
     name: Update cloud support
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4.1.3
-      name: Checkout docs repo
-    - uses: actions/checkout@v4.1.3
-      name: Checkout metadata repo
+    - name: Checkout docs repo
+      uses: actions/checkout@v4.1.3
+      with:
+        path: docs
+    - name: Checkout metadata repo
+      uses: actions/checkout@v4.1.3
       with:
         repository: microsoftgraph/msgraph-metadata
         path: metadata
     - run: ls
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.x
+    - name: Install hidi
+      run: dotnet tool install microsoft.openapi.hidi -g
+    - name: Transform CSDL
+      working-directory: ./metadata
+      run: |
+        ./transforms/csdl/transform.ps1 -xslPath ./transforms/csdl/preprocess_csdl.xsl -inputPath ./schemas/v1.0-Prod.csdl -outputPath ./transformed_v1.0-Prod.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+      
