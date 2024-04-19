@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-List properties and relationships of the [user](../resources/intune-troubleshooting-user.md) objects.
+List properties and relationships of the [user](../resources/intune-shared-user.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -47,7 +47,7 @@ GET /users
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [user](../resources/intune-troubleshooting-user.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [user](../resources/intune-shared-user.md) objects in the response body.
 
 ## Example
 

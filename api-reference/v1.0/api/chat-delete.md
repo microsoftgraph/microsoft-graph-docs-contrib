@@ -19,6 +19,8 @@ Soft-delete a [chat](../resources/chat.md). When invoked with delegated permissi
 > After chats are deleted, tenant admins have seven days to restore them. Chats deleted for more than seven days can't be restored.
 > One delete request per second per tenant is allowed. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
