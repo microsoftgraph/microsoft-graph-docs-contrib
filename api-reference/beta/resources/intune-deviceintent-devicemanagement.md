@@ -20,8 +20,8 @@ Singleton entity that acts as a Container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-deviceintent-devicemanagement-get.md)|[deviceManagement](../resources/intune-deviceintent-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-deviceintent-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-deviceintent-devicemanagement-update.md)|[deviceManagement](../resources/intune-deviceintent-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-deviceintent-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-deviceintent-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-deviceintent-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|
