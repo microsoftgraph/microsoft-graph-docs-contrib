@@ -29,13 +29,13 @@ For examples of currently available service plans, see [Windows 365 compare plan
 |:---|:---|:---|
 |displayName|String|The name for the service plan. Read-only.|
 |id|String|Unique identifier for the service plan. Read-only.|
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs. By default, the license type is `dedicated`. Possible values are: `dedicated`, `shared`, `unknownFutureValue`, `sharedByUser`, `sharedByEntraGroup`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`. The `shared` member is deprecated and will stop returning on April 30, 2027. Going forward, use either the `sharedByUser` or `sharedByEntraGroup` members depending on the device configuration.|
 |ramInGB|Int32|The size of the RAM in GB. Read-only.|
+|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`, `unknownFutureValue`. Read-only.|
 |storageInGB|Int32|The size of the OS Disk in GB. Read-only.|
 |type|[cloudPcServicePlanType](#cloudpcserviceplantype-values)|The type of the service plan. Possible values are: `enterprise`, `business`, `unknownFutureValue`. Read-only.|
 |userProfileInGB|Int32|The size of the user profile disk in GB. Read-only.|
 |vCpuCount|Int32|The number of vCPUs. Read-only.|
-|supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`, `unknownFutureValue`. Read-only.|
-|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs. By default, the license type is `dedicated`. Possible values are `dedicated`, `shared`, `sharedByUser`, and `sharedByEntraGroup`. The `shared` value is being deprecated and will stop being supported on April 30, 2027.|
 
 ### cloudPcServicePlanType values
 
@@ -43,7 +43,7 @@ For examples of currently available service plans, see [Windows 365 compare plan
 |:---|:---|
 |enterprise|Enterprise service plan type for enterprise customers.|
 |business|Business service plan type for Very Small Business (VSB) customers.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -51,7 +51,7 @@ None.
 
 ## JSON representation
 
-The following json is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
