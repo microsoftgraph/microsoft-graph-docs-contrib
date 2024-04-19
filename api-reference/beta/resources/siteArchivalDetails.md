@@ -1,6 +1,6 @@
 ---
 author: "vanshisingh"
-description: "Archival Details Facet"
+description: "Represents the archival details of a siteCollection."
 title: "siteArchivalDetails"
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
@@ -8,14 +8,15 @@ doc_type: apiPageType
 ---
 
 # siteArchivalDetails resource type
-The **SiteArchivalDetails** facet represents the archival details of the siteCollection.
+
+Represents the archival details of a [siteCollection](/graph/sitecollection).
 
 ## Properties
 | Property      | Type   | Description                                    |
 |:------------- |:------ |:-----------------------------------------------|
-| archiveStatus | siteArchiveStatus enum | Represents the current archive status of the site collection. Returned only on $select.|
+| archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Returned only on `$select`.|
 
-## siteArchiveStatus enumeration
+## siteArchiveStatus values
 
 | Value         | Description                                           |
 |:--------------|:------------------------------------------------------|
