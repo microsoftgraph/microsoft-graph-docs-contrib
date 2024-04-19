@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Deletes a [deviceCategory](../resources/intune-onboarding-devicecategory.md).
+Deletes a [deviceCategory](../resources/intune-shared-devicecategory.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

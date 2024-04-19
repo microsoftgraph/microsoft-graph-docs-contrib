@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [reportRoot](../resources/intune-troubleshooting-reportroot.md) object.
+Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,9 +44,9 @@ PATCH /reports
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [reportRoot](../resources/intune-troubleshooting-reportroot.md) object.
+In the request body, supply a JSON representation for the [reportRoot](../resources/intune-shared-reportroot.md) object.
 
-The following table shows the properties that are required when you create the [reportRoot](../resources/intune-troubleshooting-reportroot.md).
+The following table shows the properties that are required when you create the [reportRoot](../resources/intune-shared-reportroot.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [reportRoot](../resources/intune-troubleshooting-reportroot.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [reportRoot](../resources/intune-shared-reportroot.md) object in the response body.
 
 ## Example
 
