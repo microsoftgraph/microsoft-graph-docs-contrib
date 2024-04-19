@@ -20,4 +20,5 @@ jobs:
       name: Checkout metadata repo
       with:
         repository: microsoftgraph/msgraph-metadata
+        path: metadata
     - run: ls
