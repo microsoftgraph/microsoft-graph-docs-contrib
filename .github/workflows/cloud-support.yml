@@ -46,16 +46,13 @@ jobs:
     - name: Apply XSLT to CSDL files
       working-directory: ./metadata
       shell: pwsh
-      env:
-        SCRIPT: ./transforms/csdl/transform.ps1
-        XSL: preprocess_csdl.xsl
       run: |
-        $SCRIPT -xslPath $XSL -inputPath ../../schemas/v1.0-Prod.csdl -outputPath ../../transformed_v1.0-Prod.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
-        $SCRIPT -xslPath $XSL -inputPath ../../schemas/v1.0-Fairfax.csdl -outputPath ../../transformed_v1.0-Fairfax.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
-        $SCRIPT -xslPath $XSL -inputPath ../../schemas/v1.0-Mooncake.csdl -outputPath ../../transformed_v1.0-Mooncake.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
-        $SCRIPT -xslPath $XSL -inputPath ../../schemas/beta-Prod.csdl -outputPath ../../transformed_beta-Prod.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
-        $SCRIPT -xslPath $XSL -inputPath ../../schemas/beta-Fairfax.csdl -outputPath ../../transformed_beta-Fairfax.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
-        $SCRIPT -xslPath $XSL -inputPath ../../schemas/beta-Mooncake.csdl -outputPath ../../transformed_beta-Mooncake.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/v1.0-Prod.csdl -outputPath ../../transformed_v1.0-Prod.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/v1.0-Fairfax.csdl -outputPath ../../transformed_v1.0-Fairfax.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/v1.0-Mooncake.csdl -outputPath ../../transformed_v1.0-Mooncake.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/beta-Prod.csdl -outputPath ../../transformed_beta-Prod.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/beta-Fairfax.csdl -outputPath ../../transformed_beta-Fairfax.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/beta-Mooncake.csdl -outputPath ../../transformed_beta-Mooncake.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
     - name: Transform CSDL with hidi
       working-directory: ./metadata
       env:
