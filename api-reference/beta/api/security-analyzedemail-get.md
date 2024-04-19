@@ -5,7 +5,6 @@ author: "malvika-balaraj"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get analyzedEmail
@@ -15,6 +14,8 @@ Namespace: microsoft.graph.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [analyzedEmail](../resources/security-analyzedemail.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

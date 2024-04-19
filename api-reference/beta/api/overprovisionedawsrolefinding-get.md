@@ -4,9 +4,8 @@ description: "Read the properties and relationships of an overprovisionedAwsRole
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get overprovisionedAwsRoleFinding

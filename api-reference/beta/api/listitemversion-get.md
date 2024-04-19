@@ -6,7 +6,6 @@ title: Get a previous version of a list item - SharePoint API
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Get a ListItemVersion resource (preview)
 

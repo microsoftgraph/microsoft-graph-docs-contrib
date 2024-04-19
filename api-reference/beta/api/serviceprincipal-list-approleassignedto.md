@@ -5,7 +5,6 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
-ms.topic: reference
 ---
 
 # List appRoleAssignments granted for a service principal
@@ -22,7 +21,7 @@ If the resource service principal is an application that has app roles granted t
 
 >**Note** This request might have replication delays for app role assignments that were recently granted or removed.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

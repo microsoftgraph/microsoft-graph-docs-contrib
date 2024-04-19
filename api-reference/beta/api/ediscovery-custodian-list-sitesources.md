@@ -5,7 +5,6 @@ author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List custodian siteSources

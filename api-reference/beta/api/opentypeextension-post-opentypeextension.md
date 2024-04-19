@@ -4,8 +4,7 @@ description: "Create an open extension (openTypeExtension object) and add custom
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
-ms.topic: reference
+ms.subservice: extensions
 ---
 
 # Create openTypeExtension

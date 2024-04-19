@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.subservice: "entra-monitoring-health"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # List provisioningObjectSummary

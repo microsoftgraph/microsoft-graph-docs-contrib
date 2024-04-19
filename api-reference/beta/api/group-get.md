@@ -6,7 +6,6 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
 ms.subservice: "entra-groups"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get group

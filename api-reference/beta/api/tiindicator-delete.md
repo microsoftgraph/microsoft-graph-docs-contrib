@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Delete threat intelligence indicator

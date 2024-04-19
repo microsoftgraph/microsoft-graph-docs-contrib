@@ -5,7 +5,6 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Create authenticationEventListener
@@ -23,6 +22,9 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
 
+> [!NOTE]
+>
+> You can have a maximum of 250 event listeners.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

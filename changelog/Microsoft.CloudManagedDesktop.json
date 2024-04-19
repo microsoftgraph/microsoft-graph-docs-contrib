@@ -1,6 +1,32 @@
 {
     "changelog": [
         {
+          "ChangeList": [
+            {
+              "Id": "ab4407dd-6951-4347-85df-29d7b877d8e2",
+              "ApiChange": "Property",
+              "ChangedApiName": "resourceType",
+              "ChangeType": "Addition",
+              "Description": "Added the **resourceType** property to the [cloudPcAuditResource](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAuditResource?view=graph-rest-beta) resource.",
+              "Target": "cloudPcAuditResource"
+            },
+            {
+              "Id": "ab4407dd-6951-4347-85df-29d7b877d8e2",
+              "ApiChange": "Property",
+              "ChangedApiName": "type",
+              "ChangeType": "Deprecation",
+              "Description": "Deprecated the **type** property of the [cloudPcAuditResource](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAuditResource?view=graph-rest-beta) resource. The **type** property will stop returning data on May 8, 2024. Going forward, use the **resourceType** property.",
+              "Target": "cloudPcAuditResource"
+            }
+          ],
+          "Id": "ab4407dd-6951-4347-85df-29d7b877d8e2",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2024-04-16T13:01:28.7126311Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                {
                  "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
@@ -935,6 +961,96 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-09-29T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkAction",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkAction?view=graph-rest-beta) resource and its methods.",
+                    "Target": "cloudPcBulkAction"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkActionSummary",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkActionSummary](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkActionSummary?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkActionSummary"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkPowerOff",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkPowerOff](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOff?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkPowerOff"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkPowerOn",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkPowerOn](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOn?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkPowerOn"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkReprovision",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkReprovision](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkReprovision?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkReprovision"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkResize",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkResize](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkResize?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkResize"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkRestart",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkRestart](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestart?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkRestart"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkRestore",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkRestore](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestore?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkRestore"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkTroubleshoot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkTroubleshoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkTroubleshoot?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkTroubleshoot"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "bulkActions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bulkActions** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-21T05:55:14.173894Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },

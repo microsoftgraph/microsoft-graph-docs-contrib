@@ -5,7 +5,6 @@ title: List followed items
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # List followed items
 

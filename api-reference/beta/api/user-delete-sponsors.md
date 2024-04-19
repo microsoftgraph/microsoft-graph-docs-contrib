@@ -3,9 +3,8 @@ title: "Remove sponsor"
 description: "Remove a user's sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Remove sponsor

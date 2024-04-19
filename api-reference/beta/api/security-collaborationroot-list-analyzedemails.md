@@ -5,7 +5,6 @@ author: "ajaj-shaikh"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List analyzedEmails
@@ -17,6 +16,8 @@ Namespace: microsoft.graph.security
 Get a list of [analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.
 
 This API allows Security Operations teams to have direct access to hunt (query) for threats, IOCs, attack vectors, and evidences for a tenant. It is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats. It consists of email metadata, verdict information, related underlying entities (attachments/URL), filters, and more.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

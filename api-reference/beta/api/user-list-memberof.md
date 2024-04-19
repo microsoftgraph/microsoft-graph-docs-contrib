@@ -4,9 +4,8 @@ description: "Get groups, directory roles, and administrative units that the use
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List a user's direct memberships

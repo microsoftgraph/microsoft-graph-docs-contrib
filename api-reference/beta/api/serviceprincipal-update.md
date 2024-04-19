@@ -5,7 +5,6 @@ author: "sureshja"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
-ms.topic: reference
 ---
 
 # Update servicePrincipal
@@ -19,7 +18,7 @@ Update the properties of [servicePrincipal](../resources/serviceprincipal.md) ob
 > [!IMPORTANT]
 > Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./serviceprincipal-addpassword.md) and [removePassword](./serviceprincipal-removepassword.md) methods to update the password or secret for a servicePrincipal.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

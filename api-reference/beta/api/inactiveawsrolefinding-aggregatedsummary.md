@@ -4,9 +4,8 @@ description: "Retrieve the raw count of inactive roles relative to the total rol
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # inactiveAwsRoleFinding: aggregatedSummary

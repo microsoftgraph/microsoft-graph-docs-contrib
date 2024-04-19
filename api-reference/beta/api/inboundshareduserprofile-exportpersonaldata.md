@@ -2,10 +2,10 @@
 title: "inboundSharedUserProfile: exportPersonalData"
 description: "Create a request to export the personal data for an inboundSharedUserProfile."
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # inboundSharedUserProfiles: exportPersonalData
