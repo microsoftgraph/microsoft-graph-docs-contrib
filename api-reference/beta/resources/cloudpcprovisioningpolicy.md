@@ -58,7 +58,7 @@ Represents a Cloud PC provisioning policy.
 | Member              | Description                                                                           |
 |:--------------------|:--------------------------------------------------------------------------------------|
 | dedicated           | Indicates that a dedicated license is used for provisioning Cloud PCs. Default value. |
-| shared | Indicates that a shared license is used for provisioning Cloud PCs.                  |
+| shared              | Indicates that a shared license is used for provisioning Cloud PCs.                   |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.                                      |
 
 ## Relationships
