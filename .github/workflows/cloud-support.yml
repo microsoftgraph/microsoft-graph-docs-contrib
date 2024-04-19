@@ -40,8 +40,19 @@ jobs:
       shell: pwsh
       run: |
         ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/v1.0-Prod.csdl -outputPath ../../transformed_v1.0-Prod.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/v1.0-Fairfax.csdl -outputPath ../../transformed_v1.0-Fairfax.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/v1.0-Mooncake.csdl -outputPath ../../transformed_v1.0-Mooncake.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/beta-Fairfax.csdl -outputPath ../../transformed_beta-Fairfax.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/beta-Fairfax.csdl -outputPath ../../transformed_beta-Fairfax.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/beta-Mooncake.csdl -outputPath ../../transformed_beta-Mooncake.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
     - name: Transform CSDL with hidi
-      run: hidi transform --cs transformed_v1.0-Prod.csdl -o ../openapi/v1.0/Prod.yml --co -f Yaml --sp ./conversion-settings/openapi.json
+      run: |
+        hidi transform --cs transformed_v1.0-Prod.csdl -o ../openapi/v1.0/Prod.yml --co -f Yaml --sp ./conversion-settings/openapi.json
+        hidi transform --cs transformed_v1.0-Fairfax.csdl -o ../openapi/v1.0/Fairfax.yml --co -f Yaml --sp ./conversion-settings/openapi.json
+        hidi transform --cs transformed_v1.0-Mooncake.csdl -o ../openapi/v1.0/Mooncake.yml --co -f Yaml --sp ./conversion-settings/openapi.json
+        hidi transform --cs transformed_beta-Prod.csdl -o ../openapi/beta/Prod.yml --co -f Yaml --sp ./conversion-settings/openapi.json
+        hidi transform --cs transformed_beta-Fairfax.csdl -o ../openapi/beta/Fairfax.yml --co -f Yaml --sp ./conversion-settings/openapi.json
+        hidi transform --cs transformed_beta-Mooncake.csdl -o ../openapi/beta/Mooncake.yml --co -f Yaml --sp ./conversion-settings/openapi.json
       working-directory: ./metadata
     - run: ls
-      working-directory: ./metadata
+      working-directory: ./openapi
