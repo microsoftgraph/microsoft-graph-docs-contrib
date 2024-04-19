@@ -24,3 +24,4 @@ Supported setting types
 |settingsCatalog|1|Visible to setting catalog policy type.|
 |template|2|Visible to template policy type.|
 |unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+|inventoryCatalog|8|Visible to inventory catalog policy type.|
