@@ -1,13 +1,15 @@
 ---
-title: "Partner Security Alerts enumeration values"
-description: "Partner Security Alerts enumeration values"
+title: "Partner security enum values"
+description: "Microsoft Graph partner security enumeration values."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
 ---
 
-# Partner Security Alerts enumeration values
+# Partner security enum values
+
+Namespace: microsoft.graph.partner.security
 
 ### securityAlertConfidence values
 
