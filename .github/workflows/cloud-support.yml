@@ -23,7 +23,6 @@ jobs:
       with:
         repository: microsoftgraph/msgraph-metadata
         path: metadata
-    - run: ls
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
@@ -34,5 +33,8 @@ jobs:
       working-directory: ./metadata
       shell: pwsh
       run: |
-        ./transforms/csdl/transform.ps1 -xslPath ./transforms/csdl/preprocess_csdl.xsl -inputPath ./schemas/v1.0-Prod.csdl -outputPath ./transformed_v1.0-Prod.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+        ./transforms/csdl/transform.ps1 -xslPath preprocess_csdl.xsl -inputPath ../../schemas/v1.0-Prod.csdl -outputPath ../../transformed_v1.0-Prod.csdl -addInnerErrorDescription $true -removeCapabilityAnnotations $false -csdlVersion v1.0
+    - run: ls
+      working-directory: ./metadata
+  
       
