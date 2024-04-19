@@ -4943,6 +4943,8 @@ items:
                 href: api/educationsubmission-return.md
               - name: Reassign submission
                 href: api/educationsubmission-reassign.md
+              - name: Excuse submission
+                href: api/educationsubmission-excuse.md
           - name: Outcome
             items:
               - name: Outcome
