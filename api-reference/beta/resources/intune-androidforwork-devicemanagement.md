@@ -20,8 +20,8 @@ Singleton entity that acts as a container for Android for Work settings function
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-androidforwork-devicemanagement-get.md)|[deviceManagement](../resources/intune-androidforwork-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-androidforwork-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-androidforwork-devicemanagement-update.md)|[deviceManagement](../resources/intune-androidforwork-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-androidforwork-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-androidforwork-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-androidforwork-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|
