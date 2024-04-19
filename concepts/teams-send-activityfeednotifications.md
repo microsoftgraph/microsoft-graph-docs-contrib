@@ -10,7 +10,7 @@ ms.subservice: "teams"
 
 The Microsoft Teams activity feed notifies users of changes to enable them to triage items that require attention. Activity feed notifications in Teams include the following features:
 
-* Native integration with Teams that brings the user seamlessly into the Tab app and provides additional user engagement from **Activity** pane to your app.
+* Native integration with Teams that brings the user seamlessly into the Tab app and provides additional user engagement from the Teams **Activity** pane to your app.
 * Operating system notifications in Teams desktop and mobile clients that include a pop-up and sound.
 * Customizable notification content that enables you to show more or less preview content to the user.
 * Ability to deep link your tab, personal app, bot message, or Adaptive Card to a notification to increase user engagement with your app.
