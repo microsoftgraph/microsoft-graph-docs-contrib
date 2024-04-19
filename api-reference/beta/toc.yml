@@ -16144,13 +16144,6 @@ items:
                     href: resources/dailyuserinsightmetricsroot.md
                   - name: Monthly user insight
                     href: resources/monthlyuserinsightmetricsroot.md
-                  - name: Active users breakdown (deprecated)
-                    href: resources/activeusersbreakdownmetric.md
-                    items:
-                    - name: List daily
-                      href: api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
-                    - name: List monthly
-                      href: api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
                   - name: Active users
                     href: resources/activeusersmetric.md
                     items:
@@ -17197,7 +17190,7 @@ items:
                     href: api/informationprotection-post-threatassessmentrequests.md
                   - name: Get
                     href: api/threatassessmentrequest-get.md
-          - name: Legacy alerts
+          - name: Legacy alerts (deprecated)
             items:
               - name: Alert
                 href: resources/alert.md
@@ -17552,7 +17545,7 @@ items:
                     href: api/security-whoisrecord-list-history.md
                   - name: Get
                     href: api/security-whoishistoryrecord-get.md
-          - name: Threat intelligence indicator (preview)
+          - name: Threat intelligence indicator (deprecated)
             items:
               - name: Threat intelligence indicator
                 href: resources/tiindicator.md

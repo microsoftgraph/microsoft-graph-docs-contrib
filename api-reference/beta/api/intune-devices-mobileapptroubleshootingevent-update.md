@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) object.
+Update the properties of a [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,9 +44,9 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) object.
+In the request body, supply a JSON representation for the [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.
 
-The following table shows the properties that are required when you create the [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md).
+The following table shows the properties that are required when you create the [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object in the response body.
 
 ## Example
 

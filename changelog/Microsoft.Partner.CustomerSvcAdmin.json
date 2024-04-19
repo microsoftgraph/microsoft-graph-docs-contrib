@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "eb1faabd-d16d-4935-8ef3-be6337245147",
+          "ApiChange": "Member",
+          "ChangedApiName": "delegatedAdminRelationshipUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `delegatedAdminRelationshipUpdate` member to the **delegatedAdminRelationshipOperationType** enumeration.",
+          "Target": "delegatedAdminRelationshipOperationType"
+        }
+      ],
+      "Id": "eb1faabd-d16d-4935-8ef3-be6337245147",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-18T05:09:11.5104907Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Partner customer administration"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
           "ApiChange": "Enum Type",
           "ChangedApiName": "delegatedAdminAccessAssignmentStatus",

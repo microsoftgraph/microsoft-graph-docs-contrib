@@ -3,6 +3,7 @@ title: "Microsoft Graph service-specific throttling limits"
 description: "Identify the throttling limits for each Microsoft Graph service to apply best practices to manage throttling in your application."
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.subservice: non-product-specific
 #Customer intent: As a developer using Microsoft Graph to access multiple services, I want to understand the throttling limits imposed by each service, so that I can ensure my application stays within the allowed limits and avoids being throttled.
 ---
 
