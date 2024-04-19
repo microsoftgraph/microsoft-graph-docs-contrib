@@ -70,6 +70,7 @@ The following example shows the response when the `Prefer: include-unknown-enum-
 
 ```http
 HTTP/1.1 200 Ok
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.educationSubmission",
     "status": "returned",
@@ -153,6 +154,7 @@ The following example shows the response when the `Prefer: include-unknown-enum-
 
 ```http
 HTTP/1.1 200 Ok
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.educationSubmission",
     "status": "returned",
