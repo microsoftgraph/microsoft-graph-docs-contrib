@@ -69,13 +69,17 @@ jobs:
     - name: Commit updates and open pull request
       working-directory: ./docs
       shell: pwsh
+      env:
+        GH_TOKEN: ${{ github.token }}
       run: |
         $status = git status --porcelain
         if ($status -eq $null) {
           Write-Host "No changes to commit." -ForegroundColor Green
         } else {
           $timestamp = Get-Date -Format FileDateTimeUniversal
-          git checkout cloud-support/$timestamp
+          git config user.email "GraphTooling@service.microsoft.com"
+          git config user.name "Microsoft Graph DevX Tooling"
+          git checkout -b cloud-support/$timestamp
           git add .
           git commit -m "Update cloud support status"
           git push --set-upstream origin cloud-support/$timestamp
