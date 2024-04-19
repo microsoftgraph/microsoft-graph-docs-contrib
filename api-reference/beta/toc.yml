@@ -16144,13 +16144,6 @@ items:
                     href: resources/dailyuserinsightmetricsroot.md
                   - name: Monthly user insight
                     href: resources/monthlyuserinsightmetricsroot.md
-                  - name: Active users breakdown (deprecated)
-                    href: resources/activeusersbreakdownmetric.md
-                    items:
-                    - name: List daily
-                      href: api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
-                    - name: List monthly
-                      href: api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
                   - name: Active users
                     href: resources/activeusersmetric.md
                     items:
@@ -16875,17 +16868,18 @@ items:
                 items:
                   - name: List
                     href: api/security-auditlogquery-list-records.md
-          - name: Custom detection rules
+          - name: Custom detection rules (preview)
+            href: resources/security-detectionrule.md
             items:
-              - name: List custom detection rules
+              - name: List
                 href: api/security-detectionrule-list.md
-              - name: Get custom detection rule
+              - name: Get
                 href: api/security-detectionrule-get.md
-              - name: Create custom detection rule
+              - name: Create
                 href: api/security-detectionrule-post-detectionRules.md
-              - name: Update custom detection rule
+              - name: Update
                 href: api/security-detectionrule-update.md
-              - name: Delete custom detection rule
+              - name: Delete
                 href: api/security-detectionrule-delete.md
           - name: eDiscovery (preview)
             items:
@@ -17196,7 +17190,7 @@ items:
                     href: api/informationprotection-post-threatassessmentrequests.md
                   - name: Get
                     href: api/threatassessmentrequest-get.md
-          - name: Legacy alerts
+          - name: Legacy alerts (deprecated)
             items:
               - name: Alert
                 href: resources/alert.md
@@ -17535,7 +17529,7 @@ items:
                     href: api/security-whoisrecord-list-history.md
                   - name: Get
                     href: api/security-whoishistoryrecord-get.md
-          - name: Threat intelligence indicator (preview)
+          - name: Threat intelligence indicator (deprecated)
             items:
               - name: Threat intelligence indicator
                 href: resources/tiindicator.md
@@ -17766,7 +17760,7 @@ items:
                 href: api/documentsetversion-delete.md
               - name: Restore
                 href: api/documentsetversion-restore.md
-          - name: Pages (preview)
+          - name: Pages
             items:
               - name: Base site page
                 href: resources/basesitepage.md
@@ -18601,7 +18595,7 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
-          - name: Settings (preview)
+          - name: Settings
             items:
               - name: License details
                 href: resources/licensedetails.md

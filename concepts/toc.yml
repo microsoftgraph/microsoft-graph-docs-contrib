@@ -637,8 +637,10 @@ items:
           href: tutorial-lifecycle-workflows-scheduled-leaver.md
         - name: Automate employee offboarding
           href: tutorial-lifecycle-workflows-offboard-custom-workflow.md
+        - name: Automate employee mover tasks (preview)
+          href: tutorial-lifecycle-workflows-mover-custom-workflow.md  
         - name: Configure employeeLeaveDateTime
-          href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md
+          href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md 
       - name: Manage access to resources
         href: tutorial-access-package-api.md
         displayName: governance, identity
@@ -938,7 +940,9 @@ items:
         href: teams-create-group-and-team.md
       - name: List all teams
         href: teams-list-all-teams.md
-    - name: Embed Teams in your app
+    - name: Embed Teams meeting and calling in your app
+      href: /microsoftteams/platform/get-started/b2c-apps?context=graph/context
+    - name: Embed Teams chat in your app
       href: teams-embed-within-own-app.md
     - name: Payment models and licensing requirements
       href: teams-licenses.md
