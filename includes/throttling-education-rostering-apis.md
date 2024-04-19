@@ -1,7 +1,7 @@
 ---
 author: "mlafleur"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: education
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
