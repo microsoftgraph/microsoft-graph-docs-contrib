@@ -70,11 +70,11 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/groups/{groupsId}/deletePasswordSingleSignOnCredentials
+POST https://graph.microsoft.com/beta/groups/314ac440-129f-4cb3-ad61-24ef4a7de1d9/deletePasswordSingleSignOnCredentials
 Content-Type: application/json
 
 {
-  "id": "String"
+  "id": "314ac440-129f-4cb3-ad61-24ef4a7de1d9"
 }
 ```
 
