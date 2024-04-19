@@ -35,7 +35,7 @@ For examples of currently available service plans, see [Windows 365 compare plan
 |userProfileInGB|Int32|The size of the user profile disk in GB. Read-only.|
 |vCpuCount|Int32|The number of vCPUs. Read-only.|
 |supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`, `unknownFutureValue`. Read-only.|
-|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs. By default, the license type is `dedicated`. Possible values are: `dedicated`, `shared`, `unknownFutureValue`, `sharedByUser`, `sharedByEntraGroup`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`. The `shared` member is deprecated and will stop returning on April 30, 2027.|
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs. By default, the license type is `dedicated`. Possible values are: `dedicated`, `shared`, `unknownFutureValue`.|
 
 ### cloudPcServicePlanType values
 
@@ -43,7 +43,7 @@ For examples of currently available service plans, see [Windows 365 compare plan
 |:---|:---|
 |enterprise|Enterprise service plan type for enterprise customers.|
 |business|Business service plan type for Very Small Business (VSB) customers.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don not use.|
 
 ## Relationships
 
