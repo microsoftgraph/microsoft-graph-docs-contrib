@@ -60,8 +60,8 @@ Represents a Cloud PC provisioning policy.
 | dedicated           | Indicates that a dedicated license is used for provisioning Cloud PCs. Default value. |
 | shared (deprecated) | Indicates that a shared license is used for provisioning Cloud PCs. The `shared` member is deprecated and will stop returning on April 30, 2027.                  |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.                                      |
-| sharedByUser | TODO |
-| sharedByEntraGroup | TODO |
+| sharedByUser     | Indicates the provisioning policy when a dedicated Cloud PC is provisioned for each user in the assignment group. Users are always connected to the same Cloud PC. However, Cloud PC availability is limited by the total number of active sessions. |
+| sharedByEntraGroup   | Indicates the provisioning policy associated with Cloud PCs shared by a Microsoft Entra (Azure AD) group. When a shared Cloud PC is provisioned and available for any user in the Microsoft Entra ID assignment group to connect to. Users may be connected to a different Cloud PC on each connection and availability is limited by the number of provisioned Cloud PCs. |
 
 ## Relationships
 
