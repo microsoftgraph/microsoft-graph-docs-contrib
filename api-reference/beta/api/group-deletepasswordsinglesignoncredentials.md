@@ -51,7 +51,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of the service principal linked to the credential set that will be deleted.|
+|id|String|The ID of the service principal linked to the credential set to delete.|
 
 
 
