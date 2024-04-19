@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "e7f9a3df-164a-43eb-b056-dd1bb1e4d620",
+          "Id": "eb1faabd-d16d-4935-8ef3-be6337245147",
           "ApiChange": "Member",
           "ChangedApiName": "delegatedAdminRelationshipUpdate",
           "ChangeType": "Addition",
@@ -11,10 +11,10 @@
           "Target": "delegatedAdminRelationshipOperationType"
         }
       ],
-      "Id": "e7f9a3df-164a-43eb-b056-dd1bb1e4d620",
+      "Id": "eb1faabd-d16d-4935-8ef3-be6337245147",
       "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-04-17T05:04:27.4250377Z",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-18T05:09:11.5104907Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Partner customer administration"
     },

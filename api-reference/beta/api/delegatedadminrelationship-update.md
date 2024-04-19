@@ -61,7 +61,19 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body.
+If successful, this method returns either a `200 OK` or a `202 Accepted` response code. The response body contains a 
+ [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object when the response is `200 OK`.
+
+### Response headers
+|Name|Description|
+|:---|:---|
+|Content-Type|application/json.|
+|Location|The location of the long-running operation.|
+|Retry-After|The time after which a subsequent API call can be made to the Location URL to check the status of the long-running operation.|
+
+This method returns a `202 Accepted` response if you remove the Microsoft Entra Global Administrator role from the relationship while its **status** property is `active`. The response includes a URL in the Location header that you can use to monitor the operation's progress.
+
+If you don't supply the template ID that corresponds to the Microsoft Entra Global Administrator role in the `unifiedRoles` array in the `accessDetails` property of the request body, then the API returns `200 OK` and the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
 
 ## Examples
 

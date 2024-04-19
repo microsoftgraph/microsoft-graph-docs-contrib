@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get a list of [bookingService](../resources/bookingservice.md) objects in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
