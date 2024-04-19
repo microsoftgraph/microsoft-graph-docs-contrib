@@ -155,7 +155,7 @@ Content-type: application/json
                 }
             ],
             "customerTimeZone": "America/Chicago",
-			"customerName": "John Doe",
+			"customerName": "Bob Kelly",
 			"customerEmailAddress": "bobk@tailspintoys.com",
 			"customerPhone": "213-555-0103",
 			"customerNotes": "This is a test note",
