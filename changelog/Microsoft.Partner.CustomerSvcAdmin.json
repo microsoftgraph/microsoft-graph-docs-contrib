@@ -565,14 +565,6 @@
       "ChangeList": [
         {
           "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
-          "ApiChange": "Resource",
-          "ChangedApiName": "security",
-          "ChangeType": "Addition",
-          "Description": "Added the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
           "ApiChange": "Enum type",
           "ChangedApiName": "securityAlertConfidence",
           "ChangeType": "Addition",
@@ -602,6 +594,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **securityAlertStatus** enumeration type.",
           "Target": "securityAlertStatus"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "partner",
+          "ChangeType": "Addition",
+          "Description": "Added the **partner** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
         },
         {
           "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
@@ -642,14 +642,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [partnerSecurityAlert](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-partnerSecurityAlert?view=graph-rest-beta) resource.",
           "Target": "partnerSecurityAlert"
-        },
-        {
-          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
-          "ApiChange": "Resource",
-          "ChangedApiName": "Dictionary",
-          "ChangeType": "Addition",
-          "Description": "Added the [Dictionary](https://learn.microsoft.com/en-us/graph/api/resources/Dictionary?view=graph-rest-beta) resource.",
-          "Target": "Dictionary"
         }
       ],
       "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
