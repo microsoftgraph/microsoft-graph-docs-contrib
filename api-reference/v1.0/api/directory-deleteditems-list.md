@@ -56,9 +56,9 @@ ConsistencyLevel: eventual
 
 This example requires the **ConsistencyLevel** header because the `$orderby` and `$count` query parameters are used in the query.
 
-### Examples using the $orderby OData query parameter
+### $orderby OData query parameter examples
 
-The `$orderby` OData query parameter is supported on the **deletedDateTime**, **displayName**, and **userPrincipalName** properties of the deleted object types. On the **deletedDateTime** property, the query requires adding the [advanced query parameters](/graph/aad-advanced-queries) (**ConsistencyLevel** header set to `true` and `$count=true` query string).
+The `$orderby` OData query parameter is supported on the **deletedDateTime**, **displayName**, and **userPrincipalName** properties of the deleted object types. On the **deletedDateTime** property, the query requires adding the [advanced query parameters](/graph/aad-advanced-queries) (**ConsistencyLevel** header set to `eventual` and `$count=true` query string).
 
 | OData cast | Properties supporting $orderby | Example |
 | :--- | :--- | :--- |
