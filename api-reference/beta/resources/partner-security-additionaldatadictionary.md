@@ -15,8 +15,6 @@ Namespace: microsoft.graph.partner.security
 
 Represents a bag of name-value pairs that contain additional details about an alert.
 
-Inherits from [dictionary](../resources/dictionary.md).
-
 ## Properties
 None.
 
@@ -32,4 +30,3 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.partner.security.additionalDataDictionary"
 }
 ```
-
