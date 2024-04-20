@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "partner-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/partnersecurityalert-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/partnersecurityalert-list-securityalerts-permissions.md)]
 
 ## HTTP request
 
