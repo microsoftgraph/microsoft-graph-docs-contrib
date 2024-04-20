@@ -4,7 +4,7 @@ description: "Read the properties of a partnerSecurityAlert object."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
 # Get partnerSecurityAlert
