@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.partner.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 ### securityAlertConfidence values
 
 |Member|
