@@ -1,6 +1,6 @@
 ---
 title: "citationTemplate resource type"
-description: "The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted."
+description: "Represents the specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted."
 author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted. This resource supports CRUD operations to apply and manage the [filePlanCitation](security-fileplancitation.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **citation** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
+Represents the specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted. This resource supports CRUD operations to apply and manage the [filePlanCitation](security-fileplancitation.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **citation** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
