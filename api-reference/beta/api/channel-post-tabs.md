@@ -45,7 +45,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## Request body
 
-A [teamsTab](../resources/teamstab.md).
+In the request body, supply a JSON representation of a [teamsTab](../resources/teamstab.md).
 
 > [!NOTE] 
 > When you pin a static tab, Teams takes the **displayName** and **configuration** from the app manifest. If these properties are specified in the request body, this API returns a `400 Bad Request` response code.
