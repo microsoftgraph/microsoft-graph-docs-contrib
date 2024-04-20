@@ -1,5 +1,5 @@
 ---
-title: "List partnerSecurityAlert"
+title: "List securityAlerts"
 description: "Get a list of the partnerSecurityAlert objects and their properties."
 author: "manusidd"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "partner-customer-administration"
 doc_type: apiPageType
 ---
 
-# List partnerSecurityAlert
+# List securityAlerts
 
 Namespace: microsoft.graph.partner.security
 
