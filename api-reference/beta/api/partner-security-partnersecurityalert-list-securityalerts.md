@@ -4,7 +4,7 @@ description: "Get a list of the partnerSecurityAlert objects and their propertie
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
 # List partnerSecurityAlert
