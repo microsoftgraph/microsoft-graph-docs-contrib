@@ -3297,6 +3297,40 @@
     {
       "ChangeList": [
         {
+          "Id": "bf45100d-adbf-4634-a018-539cc47f6ab2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activeUsersBreakdownMetric",
+          "ChangeType": "Deletion",
+          "Description": "Removed the retired **activeUsersBreakdownMetric** resource and its associated APIs. Use the existing [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeusersmetric?view=graph-rest-beta) resource type instead.",
+          "Target": "activeUsersBreakdownMetric"
+        },
+        {
+          "Id": "bf45100d-adbf-4634-a018-539cc47f6ab2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "activeUsersBreakdown",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **activeUsersBreakdown** relationship from the [dailyUserInsightMetricsRoot](https://learn.microsoft.com/en-us/graph/api/resources/dailyUserInsightMetricsRoot?view=graph-rest-beta) resource.",
+          "Target": "dailyUserInsightMetricsRoot"
+        },
+        {
+          "Id": "bf45100d-adbf-4634-a018-539cc47f6ab2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "activeUsersBreakdown",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **activeUsersBreakdown** relationship from the [monthlyUserInsightMetricsRoot](https://learn.microsoft.com/en-us/graph/api/resources/monthlyUserInsightMetricsRoot?view=graph-rest-beta) resource.",
+          "Target": "monthlyUserInsightMetricsRoot"
+        }
+      ],
+      "Id": "bf45100d-adbf-4634-a018-539cc47f6ab2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-03T18:17:01.6984827Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1ead5bd8-991d-47ca-9ac9-18ac13ea8aa5",
           "ApiChange": "Member",
           "ChangedApiName": "aadGraphDeprecationApplication",

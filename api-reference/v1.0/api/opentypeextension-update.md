@@ -3,7 +3,7 @@ title: "Update open extension"
 description: "Update an open extension (openTypeExtension object) with the properties in the request body:"
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: apiPageType
 ---
 
