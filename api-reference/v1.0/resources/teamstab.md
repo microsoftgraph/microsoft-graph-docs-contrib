@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents a tab pinned (attached) to a [channel](channel.md) or a [chat](chat.md).
 
-For more information on tabs, see [Build tabs for Teams](/microsoftteams/platform/tabs/what-are-tabs).
+For more information about tabs, see [Build tabs for Teams](/microsoftteams/platform/tabs/what-are-tabs).
 
 ## Methods
 
