@@ -39,7 +39,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 |subcategories|[microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) collection|Represents all subcategories under a particular category.|
 
 ## JSON representation
-The following JSON representation shows the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
