@@ -45,5 +45,5 @@ The following are requests for working with the partner security alerts API in M
 
 The partner security alerts API in Microsoft Graph enables detection of fraudulent activities and misuse in Azure resources, which helps reduce your exposure to online transaction risks. Follow these steps to get started:
 
-- Drill down into [partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md).
+- Drill down on the methods and properties of the [partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) resource.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
