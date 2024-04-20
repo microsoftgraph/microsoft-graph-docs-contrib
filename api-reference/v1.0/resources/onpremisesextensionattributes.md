@@ -4,7 +4,7 @@ description: "The **onPremisesExtensionAttributes** property of the user entity 
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 

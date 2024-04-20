@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Deletes a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).
+Deletes a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
