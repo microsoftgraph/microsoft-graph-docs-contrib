@@ -4,7 +4,7 @@ description: "Schema extensions allow you to define a schema to extend and add s
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: resourcePageType
-ms.prod: "extensions"
+ms.subservice: extensions
 ---
 
 # schemaExtension resource type (schema extensions)
