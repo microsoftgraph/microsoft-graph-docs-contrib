@@ -1,6 +1,6 @@
 ---
 title: "synchronizationInfo resource type"
-description: "Contains information about how an object was synchronized. This information is only populated for objects that are synchronized using cross-tenant synchronization or multitenant organizations."
+description: "Contains information about how an object was synchronized."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains information about how an object was synchronized. This information is only populated for objects that are synchronized using [cross-tenant synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview) or [multitenant organizations](/entra/identity/multi-tenant-organizations/multi-tenant-organization-overview).
+Contains information about how an object was synchronized. This information is typically populated for external users after invitation redemption in supported clouds, in [multitenant organizations](/entra/identity/multi-tenant-organizations/multi-tenant-organization-overview), and for target users of [cross-tenant synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview).
 
 
 ## Properties
