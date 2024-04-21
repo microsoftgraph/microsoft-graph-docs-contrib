@@ -1,6 +1,6 @@
 ---
 title: "crossTenantResource resource type"
-description: "Contains origin and synchronization information, if available, about external users."
+description: "Contains origin information, if available, about external users."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains origin and synchronization information, if available, about external users. This information is typically populated for external users after invitation redemption in supported clouds, in [multitenant organizations](/entra/identity/multi-tenant-organizations/multi-tenant-organization-overview), and for target users of [cross-tenant synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview).
+Contains origin information, if available, about external users. This information is typically populated for external users after invitation redemption in supported clouds, in [multitenant organizations](/entra/identity/multi-tenant-organizations/multi-tenant-organization-overview), and for target users of [cross-tenant synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview).
 
 This is an abstract type that's inherited by the [crossTenantSynchronizationResource](crosstenantsynchronizationresource.md) resource type.
 
