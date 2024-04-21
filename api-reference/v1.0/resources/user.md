@@ -4,7 +4,7 @@ description: "Represents a Microsoft Entra user account. Inherits from directory
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 
