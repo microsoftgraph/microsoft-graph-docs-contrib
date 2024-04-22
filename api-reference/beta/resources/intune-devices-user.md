@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List users](../api/intune-devices-user-list.md)|[user](../resources/intune-devices-user.md) collection|List properties and relationships of the [user](../resources/intune-devices-user.md) objects.|
-|[Get user](../api/intune-devices-user-get.md)|[user](../resources/intune-devices-user.md)|Read properties and relationships of the [user](../resources/intune-devices-user.md) object.|
-|[Create user](../api/intune-devices-user-create.md)|[user](../resources/intune-devices-user.md)|Create a new [user](../resources/intune-devices-user.md) object.|
-|[Delete user](../api/intune-devices-user-delete.md)|None|Deletes a [user](../resources/intune-devices-user.md).|
-|[Update user](../api/intune-devices-user-update.md)|[user](../resources/intune-devices-user.md)|Update the properties of a [user](../resources/intune-devices-user.md) object.|
+|[List users](../api/intune-devices-user-list.md)|[user](../resources/intune-shared-user.md) collection|List properties and relationships of the [user](../resources/intune-shared-user.md) objects.|
+|[Get user](../api/intune-devices-user-get.md)|[user](../resources/intune-shared-user.md)|Read properties and relationships of the [user](../resources/intune-shared-user.md) object.|
+|[Create user](../api/intune-devices-user-create.md)|[user](../resources/intune-shared-user.md)|Create a new [user](../resources/intune-shared-user.md) object.|
+|[Delete user](../api/intune-devices-user-delete.md)|None|Deletes a [user](../resources/intune-shared-user.md).|
+|[Update user](../api/intune-devices-user-update.md)|[user](../resources/intune-shared-user.md)|Update the properties of a [user](../resources/intune-shared-user.md) object.|
 |[removeAllDevicesFromManagement action](../api/intune-devices-user-removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
 |[getLoggedOnManagedDevices function](../api/intune-devices-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-devices-manageddevice.md) collection||
 
