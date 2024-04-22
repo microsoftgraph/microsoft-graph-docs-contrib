@@ -40,6 +40,14 @@ GET /security/partner/securityAlerts/{partnerSecurityAlertId}
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+#### Supported query patterns
+
+| Pattern                | Supported | Syntax                                | Notes |
+|------------------------|:---------:|---------------------------------------|-------|
+| Filter                 |     ✓     | `/securityAlerts?$filter=propA eq 'value'` |       |
+| Count                  |     ✓     | `/securityAlerts/$count`                   |       |
+| Select                 |     ✓     | `/securityAlerts?$select=propA,propB`      |       |
+
 ## Request headers
 
 |Name|Description|
@@ -65,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/partner/securityAlerts/{partnerSecurityAlertId}
+GET https://graph.microsoft.com/beta/security/partner/securityAlerts/d8b202fc-a216-3404-69ef-bdffa445eff6
 ```
 
 
@@ -84,40 +92,52 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.partner.security.partnerSecurityAlert",
     "id": "d8b202fc-a216-3404-69ef-bdffa445eff6",
-    "displayName": "String",
-    "description": "String",
-    "alertType": "String",
-    "status": "String",
-    "severity": "String",
-    "confidenceLevel": "String",
-    "customerTenantId": "String",
-    "subscriptionId": "String",
-    "valueAddedResellerTenantId": "String",
-    "catalogOfferId": "String",
-    "detectedDateTime": "String (timestamp)",
-    "firstObservedDateTime": "String (timestamp)",
-    "lastObservedDateTime": "String (timestamp)",
-    "resolvedReason": "String",
-    "resolvedOnDateTime": "String (timestamp)",
-    "resolvedBy": "String",
-    "isTest": "Boolean",
+    "displayName": "Action Required: Virtual machine connecting to crypto currency mining pool Detected",
+    "description": "Analysis of azure resource network activity detected the resource was connecting to a crypto currency mining pool.  this would often be an indication that your azure resource is compromised.",
+    "alertType": "networkConnectionsToCryptoMiningPools",
+    "status": "active",
+    "severity": "high",
+    "confidenceLevel": "medium",
+    "customerTenantId": "1889e718-414b-4bad-8bbe-c1135bd39a41",
+    "subscriptionId": "5f6e6521-6e5f-4b0b-80aa-bd44fad7a398",
+    "valueAddedResellerTenantId": "c296b2ce-8cd1-4346-9e82-d8eccca70d65",
+    "catalogOfferId": "MS-AZR-0017G",
+    "detectedDateTime": "2024-01-23T16:03:33.05Z",
+    "firstObservedDateTime": "2024-01-23T16:03:33.05Z",
+    "lastObservedDateTime": "2024-01-23T16:03:33.05Z",
+    "resolvedReason": "fraud",
+    "resolvedOnDateTime": "2024-02-23T16:03:33.05Z",
+    "resolvedBy": "testuser@testtestgaapartneraccount01.onmicrosoft.com",
+    "isTest": "false",
     "affectedResources": [
       {
-        "@odata.type": "microsoft.graph.partner.security.affectedResource"
+        "resourceId": "/subscriptions/subscription-id/resourceGroups/resourcegroup-name/providers/Microsoft.Compute/virtualMachines/vm-name",
+        "resourceType": "AzureResource"
       }
     ],
     "activityLogs": [
       {
-        "@odata.type": "microsoft.graph.partner.security.activityLog"
+        {
+          "statusFrom": "active",
+          "statusTo": "investigating",
+          "updatedBy": "testuser2@testtestgaapartneraccount01.onmicrosoft.com",
+          "updatedDateTime": "2023-08-10T08:47:10.8454142Z"
+        },
+        {
+            "statusFrom": "investigating",
+            "statusTo": "resolved",
+            "updatedBy": "testuser2@testtestgaapartneraccount01.onmicrosoft.com",
+            "updatedDateTime": "2023-08-10T08:47:25.2089246Z"
+        }
       }
     ],
     "additionalDetails": {
-      "@odata.type": "microsoft.graph.partner.security.additionalDataDictionary"
+      "VM_IP": "[  \"vm-ip\"]",
+      "MiningPool_IP": "[  \"mining-pool-ip\"]",
+      "ConnectionCount": "5",
+      "CryptoCurrencyMiningPoolDomainName": "pool-name.com"
     }
-  }
 }
 ```
 

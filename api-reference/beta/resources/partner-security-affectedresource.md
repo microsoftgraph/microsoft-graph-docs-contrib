@@ -18,7 +18,7 @@ Contains details of the resources that are affected by a security alert.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|resourceId|String|The resource path of the affected by the security alert.|
+|resourceId|String|The resource path of the resource affected by the security alert.|
 |resourceType|String|The type of resource.|
 
 ## Relationships

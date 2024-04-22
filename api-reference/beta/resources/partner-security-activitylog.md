@@ -1,6 +1,6 @@
 ---
 title: "activityLog resource type"
-description: "Represents the activity by a partner and contains details of the state transitions, by whom and when."
+description: "Represents the activity undertaken by a partner and includes details of state transitions, who performed them, and when they occurred."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the activity by a partner and contains details of the state transitions, by whom and when.
+Represents the activity undertaken by a partner and includes details of state transitions, who performed them, and when they occurred.
 
 ## Properties
 |Property|Type|Description|

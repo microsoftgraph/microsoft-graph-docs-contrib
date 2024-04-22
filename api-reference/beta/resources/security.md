@@ -32,7 +32,7 @@ None.
 |collaboration|[microsoft.graph.security.collaborationRoot](../resources/security-collaborationroot.md)|Enables read and other actions on collaborative entities in Microsoft Defender.|
 |identities|[microsoft.graph.security.identityContainer](../resources/security-identityContainer.md)|A container for security identities APIs.|
 |incidents | [microsoft.graph.security.incident](security-incident.md) collection | A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.|
-|partner| [microsoft.graph.partner.security.partnerSecurity](../resources/partner-security-partnersecurity.md) | TODO |
+|partner| [microsoft.graph.partner.security.partnerSecurity](../resources/partner-security-partnersecurity.md) | A cotainer for safeguarding Microsoft CSP partner's customer Microsoft Azure resources, encompassing alerts, scores, and all aspects of security. |
 |secureScores | [secureScore](securescores.md) collection | Measurements of tenants’ security posture to help protect them from threats. |
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
 |tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
