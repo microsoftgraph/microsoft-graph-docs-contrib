@@ -63,7 +63,7 @@ If successful, this action returns a `200 OK` response code and a [authenticatio
 ### Example 1: Supply and validate a potential custom authentication extension configuration
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "customauthenticationextensionthis.validateauthenticationconfiguration"
@@ -128,7 +128,7 @@ Content-Type: application/json
 ### Example 2: Validate the configuration of a specific existing custom authentication extension
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",

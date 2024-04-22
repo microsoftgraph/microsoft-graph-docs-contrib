@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request to update an authentication event listener's trigger conditions:
+The following example shows a request to update an authentication event listener's trigger conditions:
 
 <!-- {
   "blockType": "request",
