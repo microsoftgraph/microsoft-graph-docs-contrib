@@ -1,6 +1,6 @@
 ---
 title: "security: runHuntingQuery"
-description: "Run Hunting query API."
+description: "Query a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment."
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
