@@ -3,7 +3,7 @@ title: "chats: getAllMessages"
 description: "Get messages from all chats that a user is a participant in."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

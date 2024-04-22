@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItemServicePrincipalTarget resource type"
 description: "Represents the target of a review as a service principal target."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

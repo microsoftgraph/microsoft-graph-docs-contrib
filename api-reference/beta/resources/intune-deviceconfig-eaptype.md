@@ -3,7 +3,7 @@ title: "eapType enum type"
 description: "Extensible Authentication Protocol (EAP) configuration types."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "syncPayloadsActionResult resource type"
 description: "SyncPayloadsActionResult represents the result of executing the SyncPayloads action on tracking the live reporting data for this policy or app regarding its removal or restoration process"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "signIn resource type"
 description: "Details user and application sign-in activity for a tenant (directory)."
 author: "egreenberg14"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

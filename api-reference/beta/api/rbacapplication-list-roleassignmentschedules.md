@@ -3,7 +3,7 @@ title: "List roleAssignmentSchedules"
 description: "Get the schedules for active role assignment operations."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

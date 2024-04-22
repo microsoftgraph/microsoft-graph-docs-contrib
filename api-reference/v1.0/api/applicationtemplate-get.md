@@ -2,8 +2,8 @@
 title: 'Get applicationTemplate'
 description: 'Retrieve the properties and relationships of applicationtemplate object.'
 ms.localizationpriority: medium
-author: 'luleonpla'
-ms.prod: 'applications'
+author: luleonpla
+ms.subservice: entra-applications
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates/00000007-0000-0000-c00
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 

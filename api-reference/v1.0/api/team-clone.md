@@ -3,7 +3,7 @@ title: "team: clone"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -20,13 +20,14 @@ You can specify which parts of the team to clone:
 - **settings** – Copies all settings within the team, along with key group settings.
 - **tabs** – Copies the tabs within channels.
 
-> **Note:** This method isn't supported for organization-wide teams.
+> [!NOTE]
+> This method isn't supported for organization-wide teams.
 
 > [!NOTE]
-> A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=18955).
+> A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/graph/known-issues).
 
 When tabs are cloned, they aren't configured. The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen. 
-If the user who opens the tab doesn't have permission to configure apps, they'll see a message that says that the tab isn't configured.
+If the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 
 Cloning is a long-running operation. After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) returned by the `Location:` header to see if it's `running`, `succeeded`, or `failed`. You should continue to GET until the status isn't `running`. The recommended delay between GETs is 5 seconds.
 
@@ -34,15 +35,13 @@ Cloning is a long-running operation. After the POST clone returns, you need to G
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | Team.Create, Group.ReadWrite.All**, Directory.ReadWrite.All** |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application                            | Team.Create, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+<!-- { "blockType": "permissions", "name": "team_clone" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-clone-permissions.md)]
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> [!NOTE]
+> The Group.ReadWrite.All and Directory.ReadWrite.All are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -60,10 +59,10 @@ POST /teams/{id}/clone
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). If classification isn't specified, the classification is copied from the original team/group.|
-|description|String (optional)|An optional description for the group. If this property isn't specified, it is left blank.|
+|classification|String (optional)|Describes a classification for the group (such as low, medium, or high business impact). If classification isn't specified, the classification is copied from the original team/group.|
+|description|String (optional)|An optional description for the group. If this property isn't specified, it's left blank.|
 |displayName|String|The display name for the group. This property is required when a group is created and it can't be cleared during updates. Supports $filter and $orderby.|
-|mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property isn't specified, it is computed from the displayName. Known issue: this property is currently ignored.|
+|mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports `filter`. If this property isn't specified, it's computed from the displayName. This property is currently ignored.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-separated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility isn't specified, the visibility is copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
 
@@ -77,7 +76,7 @@ When the operation is complete, the operation resource tells you the ID of the c
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,7 +84,7 @@ Here's an example of the request.
   "name": "clone_team"
 }-->
 ```http
-POST /teams/{id}/clone
+POST https://graph.microsoft.com/v1.0/teams/{id}/clone
 Content-Type: application/json
 
 {  
@@ -132,7 +131,7 @@ Content-Type: application/json
 ---
 
 ### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

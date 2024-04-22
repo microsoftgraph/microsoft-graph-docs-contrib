@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
@@ -55,6 +55,26 @@ Namespace: microsoft.graph
 |:-------------------|
 | clientSecret       |
 | certificate        |
+| unknownFutureValue |
+
+### plannerTaskCompletionRequirements values
+
+| Member             |
+|:-------------------|
+| none               |
+| checklistCompletion|
+| unknownFutureValue |
+| formCompletion     |
+| approvalCompletion |
+
+### plannerApprovalStatus values 
+
+| Member             |
+|:-------------------|
+| requested          |
+| approved           |
+| rejected           |
+| cancelled          |
 | unknownFutureValue |
 
 ### applicationKeyOrigin values
@@ -1286,6 +1306,8 @@ Namespace: microsoft.graph
 | gpsLocationCondition                              |
 | riskBasedPolicy                                   |
 | unknownFutureValue                                |
+| scopeBasedAuthRequirementPolicy                   |
+| authenticationStrengths                           |
 
 
 ### riskDetail values
@@ -1461,6 +1483,7 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+|excused|
 
 ### educationFeedbackResourceOutcomeStatus values
 
@@ -3138,6 +3161,14 @@ Possible values for user account types (group membership), per Windows definitio
 | gallery |
 | unknownFutureValue |
 
+### cloudPcPolicySettingType values 
+
+|Member|
+|:---|
+|region|
+|singleSignOn|
+|unknownFutureValue|
+
 ### chatType values
 
 | Member             | Value | Description                                                                                                                                                        |
@@ -4649,14 +4680,6 @@ Possible values for user account types (group membership), per Windows definitio
 | androidMobileApplicationManagement|
 | iOSMobileApplicationManagement|
 | unknownFutureValue|
-
-### printReleaseType values 
-
-|Member|
-|:---|
-|direct|
-|qrCode|
-|unknownFutureValue|
 
 ### bookingPageAccessControl values 
 

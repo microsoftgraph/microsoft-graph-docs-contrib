@@ -3,7 +3,7 @@ title: customers resource type
 description: Represents a customer in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
@@ -64,7 +64,7 @@ A Tax Area(taxArea) must exist in the Tax Area table.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json

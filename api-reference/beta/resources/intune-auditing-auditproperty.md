@@ -3,7 +3,7 @@ title: "auditProperty resource type"
 description: "A class containing the properties for Audit Property."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

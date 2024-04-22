@@ -4,8 +4,9 @@ description: "Learn how an app obtains an access token from the Microsoft identi
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: jackson.woods
+ms.topic: tutorial
 ms.localizationpriority: high
-ms.subservice: "entra-applications"
+ms.subservice: entra-applications
 ms.custom: graphiamtop20
 ms.date: 09/08/2023
 #customer intent: As a developer, I want to understand how my app can run with it's own identity, without a signed in user, and call Microsoft Graph to access resources in a tenant.
@@ -34,9 +35,11 @@ For an app to get authorization and access to Microsoft Graph using the authoriz
 4. Use the access token to call Microsoft Graph.
 5. [Optional] Use the refresh token to renew an expired access token.
 
+<!--
 > [!TIP]
 > [![Try steps 2-5 in Postman](./images/auth-v2/runinpostman.png)](https://app.getpostman.com/run-collection/f77994d794bab767596d)<br/>
 > Try steps 2-5 in Postman. Don't forget to replace tokens and IDs!
+-->
 
 ## 1. Register the app
 

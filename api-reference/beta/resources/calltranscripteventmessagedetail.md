@@ -3,7 +3,7 @@ title: "callTranscriptEventMessageDetail resource type"
 description: "Represents the details of an event message about call transcript."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "filteringPolicyLink resource type"
 description: "The association between a filtering policy and a filtering profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

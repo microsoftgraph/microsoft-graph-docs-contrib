@@ -3,7 +3,7 @@ title: "bookingSchedulingPolicy resource type"
 description: "Represents the set of policies that determine how appointments should be created in a Microsoft Bookings calendar."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

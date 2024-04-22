@@ -51,7 +51,7 @@ Types of source related to the user. Includes mailbox and site both by default.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

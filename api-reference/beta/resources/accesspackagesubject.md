@@ -3,7 +3,7 @@ title: "accessPackageSubject resource type"
 description: "In Microsoft Entra entitlement management, a subject of an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 
@@ -47,7 +47,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

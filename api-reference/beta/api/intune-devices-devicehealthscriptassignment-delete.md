@@ -3,7 +3,7 @@ title: "Delete deviceHealthScriptAssignment"
 description: "Deletes a deviceHealthScriptAssignment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

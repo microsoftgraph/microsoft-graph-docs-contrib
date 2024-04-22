@@ -3,7 +3,7 @@ title: "Update permission"
 description: "Update the permission object on a site."
 author: "BarrySh"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "deviceManagementBooleanSettingInstance resource type"
 description: "A setting instance representing a boolean value"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "teamsAppResourceSpecificPermission resource type"
 description: "Represents the resource-specific permission associated with a teamsApp."
 author: "sweta-thapliyal"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

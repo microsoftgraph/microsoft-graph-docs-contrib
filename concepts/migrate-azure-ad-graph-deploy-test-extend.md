@@ -4,7 +4,7 @@ description: "Describes how to migrate Azure Active Directory (Azure AD) Graph a
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
-ms.topic: conceptual
+ms.topic: quickstart
 ms.localizationpriority: medium
 ms.subservice: entra-applications
 ms.date: 02/14/2024

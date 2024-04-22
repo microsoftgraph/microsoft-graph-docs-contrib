@@ -4,7 +4,7 @@ description: "Represents a previous version of an item or entity."
 title: "baseItemVersion resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # baseItemVersion resource type
@@ -26,7 +26,7 @@ Represents a previous version of an item or entity.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 

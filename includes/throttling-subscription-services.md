@@ -1,7 +1,7 @@
 ---
 author: "keylimesoda"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: change-notifications
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->

@@ -3,7 +3,7 @@ title: "Create depIOSEnrollmentProfile"
 description: "Create a new depIOSEnrollmentProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

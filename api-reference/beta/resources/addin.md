@@ -1,6 +1,6 @@
 ---
 title: "addIn resource type"
-description: "Defines custom behavior that a consuming service can use to call an app in specific contexts."
+description: "Represents a custom behavior that a consuming service can use to call an app in specific contexts."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"

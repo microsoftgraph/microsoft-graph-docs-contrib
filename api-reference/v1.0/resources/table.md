@@ -3,7 +3,7 @@ title: "Table resource type"
 description: "Represents an Excel table."
 author: "lumine2008"
 ms.localizationpriority: high
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -60,7 +60,7 @@ Represents an Excel table.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

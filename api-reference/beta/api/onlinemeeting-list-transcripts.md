@@ -3,7 +3,7 @@ title: "List transcripts"
 description: "Retrieve the list of transcripts associated with a Microsoft Teams online meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

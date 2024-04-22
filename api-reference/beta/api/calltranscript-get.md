@@ -3,7 +3,7 @@ title: "Get callTranscript"
 description: "Retrieve a single callTranscript associated with a Microsoft Teams online meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

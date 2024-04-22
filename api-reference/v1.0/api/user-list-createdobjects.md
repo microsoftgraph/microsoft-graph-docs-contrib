@@ -4,7 +4,7 @@ description: "Get a list of directory objects that were created by the user."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/createdObjects
 ---
 
 ##### Response
-Here's an example of the response. From the response, the user created a Microsoft 365 group, an application, and its service principal.
+The following example shows the response. From the response, the user created a Microsoft 365 group, an application, and its service principal.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

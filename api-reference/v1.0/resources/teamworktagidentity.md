@@ -3,7 +3,7 @@ title: "teamworkTagIdentity resource type"
 description: "Represents a tag in Microsoft Teams."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

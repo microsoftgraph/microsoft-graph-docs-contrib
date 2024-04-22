@@ -3,7 +3,7 @@ title: "visualProperties resource type"
 description: "Represents the visual content, namely title and body, of a visual notification targeted to a user.  "
 ms.localizationpriority: medium
 author: "merzink"
-ms.prod: "notifications"
+ms.subservice: "notifications"
 doc_type: "resourcePageType"
 ---
 

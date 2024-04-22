@@ -3,7 +3,7 @@ title: "omaSettingStringXml resource type"
 description: "OMA Settings StringXML definition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

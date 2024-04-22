@@ -3,7 +3,7 @@ title: "meetingParticipants resource type"
 description: "Represents participants in a meeting."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

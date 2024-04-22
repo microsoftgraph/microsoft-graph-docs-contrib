@@ -3,7 +3,7 @@ title: "assignmentFilterPayloadType enum type"
 description: "Represents the payload type AssignmentFilter is being assigned to."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

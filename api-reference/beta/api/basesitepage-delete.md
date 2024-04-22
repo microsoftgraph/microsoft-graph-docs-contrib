@@ -3,7 +3,7 @@ author: "sangle7"
 description: "Delete a sitePage from the site pages list in a site."
 title: "Delete baseSitePage"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Delete baseSitePage
@@ -40,7 +40,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).| Required|
-| _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted.
+| _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted.
 
 ## Request body
 
@@ -59,8 +59,9 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 The following example shows a request.
 
 ```http
-DELETE /sites/{site-id}/pages/{page-id}
+DELETE https://graph.microsoft.com/beta/sites/a69edae4-9208-4f60-9aa3-cd0911ff0ce1/pages/7f7a2740-2d74-47ba-af0c-71ed3a3384ca
 ```
+
 ### Response
 
 The following example shows the response.

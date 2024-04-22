@@ -1,6 +1,6 @@
 ---
 title: "organization resource type"
-description: "Represents a Microsoft Entra tenant. "
+description: "Represents the Microsoft Entra tenant that the user or application is authenticated to."
 ms.localizationpriority: medium
 author: "suawat"
 ms.reviewer: "alvarorahul, iamut"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Microsoft Entra tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
+Represents the Microsoft Entra tenant that the user or application is authenticated to. Only the read and update operations are supported on this resource. Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
 
@@ -29,24 +29,24 @@ Represents the Microsoft Entra tenant that the user or application is signed in 
 | Property | Type    | Description |
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | The collection of service plans associated with the tenant. Not nullable. |
-| businessPhones | String collection | Telephone number for the organization. Although this is a string collection, only one number can be set for this property. |
+| businessPhones | String collection | Telephone number for the organization. Although this property is a string collection, only one number can be set. |
 | city | String | City name of the address for the organization. |
 | country | String | Country/region name of the address for the organization. |
 | countryLetterCode | String | Country or region abbreviation for the organization in ISO 3166-2 format. |
-| createdDateTime | DateTimeOffset | Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
+| createdDateTime | DateTimeOffset | Timestamp of when the organization was created. The value can't be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | defaultUsageLocation | String | Two-letter ISO 3166 country code indicating the default service usage location of an organization. |
 | deletedDateTime | DateTimeOffset | Represents date and time of when the Microsoft Entra tenant was deleted using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | The directory size quota information of an organization. |
 | displayName | String | The display name for the tenant. |
 | id | String | The tenant ID, a unique identifier representing the organization (or tenant). Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
-| isMultipleDataLocationsForServicesEnabled | Boolean | `true` if organization is Multi-Geo enabled; `false` if organization is not Multi-Geo enabled; `null` (default). Read-only. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
+| isMultipleDataLocationsForServicesEnabled | Boolean | `true` if organization is Multi-Geo enabled; `false` if organization isn't Multi-Geo enabled; `null` (default). Read-only. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | String collection | Not nullable. |
 | onPremisesLastPasswordSyncDateTime  | DateTimeOffset  | The last time a password sync request was received for the tenant. |
 | onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-| onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; Nullable. `null` if this object has never been synced from an on-premises directory (default). |
+| onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; Nullable. `null`, if this object isn't synced from on-premises active directory (default). |
 | partnerTenantType | partnerTenantType | The type of partnership this tenant has with Microsoft. The possible values are: `microsoftSupport`, `syndicatePartner`, `breadthPartner`, `breadthPartnerDelegatedAdmin`, `resellerPartnerDelegatedAdmin`, `valueAddedResellerPartnerDelegatedAdmin`, `unknownFutureValue`. Nullable. For more information about the possible types, see [partnerTenantType values](#partnertenanttype-values).|
 | postalCode | String | Postal code of the address for the organization. |
-| preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 Code; for example `en`. |
+| preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 code; for example, `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | The privacy profile of an organization. |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) collection | Not nullable. |
 | securityComplianceNotificationMails | String collection | Not nullable.|
@@ -54,7 +54,7 @@ Represents the Microsoft Entra tenant that the user or application is signed in 
 | state | String | State name of the address for the organization. |
 | street | String | Street name of the address for organization. |
 | technicalNotificationMails |String collection | Not nullable. |
-| tenantType | String | Not nullable. The tenant type option that was selected when the tenant was created. The possible values are: <li> `AAD` - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. <li> `AAD B2C` An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios.  <li> `CIAM` - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.  |
+| tenantType | String | Not nullable. Can be one of the following types: <li> `AAD` - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. <li> `AAD B2C` An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios.  <li> `CIAM` - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.  |
 | verifiedDomains | [verifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable. |
 
 ### partnerTenantType values
@@ -62,11 +62,11 @@ Represents the Microsoft Entra tenant that the user or application is signed in 
 | Member | Description |
 |-----------------------------------------|----------------------------------------------------------------------------|
 | microsoftSupport | Legacy support tenant of Microsoft that was used to provide administrative support to all customer tenants. |
-| breadthPartner | The partner can provide administrative support for their customers. However, the partner is not allowed to resell to or request delegated admin permissions from customers. |
+| breadthPartner | The partner can provide administrative support for their customers. However, the partner isn't allowed to resell to or request delegated admin permissions from customers. |
 | breadthPartnerDelegatedAdmin | Similar to Breadth Partner except they can request for delegated admin permissions (DAP) from customer tenants. |
-| syndicatePartner | The partner exclusively resells and manages Microsoft 365 and Intune for their customers. The customer cannot buy additional subscriptions directly or through other Microsoft partners. |
-| resellerPartnerDelegatedAdmin | The partner that can resell and manage Microsoft 365 and Intune for their customers. There is no exclusivity clause like for syndication partners. The customer can buy additional direct subscriptions directly from Microsoft or through other Microsoft partners. |
-| valueAddedResellerPartnerDelegatedAdmin | Are Tier 2 partners. They are Microsoft partners that have a relationship with another Microsoft partner such as a reseller. |
+| syndicatePartner | The partner exclusively resells and manages Microsoft 365 and Intune for their customers. The customer can't buy more subscriptions directly or through other Microsoft partners. |
+| resellerPartnerDelegatedAdmin | The partner that can resell and manage Microsoft 365 and Intune for their customers. There's no exclusivity clause like for syndication partners. The customer can buy more subscriptions directly from Microsoft or through other Microsoft partners. |
+| valueAddedResellerPartnerDelegatedAdmin | They're Tier 2 partners. They're Microsoft partners that have a relationship with another Microsoft partner such as a reseller. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
@@ -80,7 +80,7 @@ Represents the Microsoft Entra tenant that the user or application is signed in 
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

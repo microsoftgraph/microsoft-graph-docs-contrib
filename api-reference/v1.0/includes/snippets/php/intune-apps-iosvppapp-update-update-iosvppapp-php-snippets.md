@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IosVppApp;
+use Microsoft\Graph\Generated\Models\MimeContent;
+use Microsoft\Graph\Generated\Models\VppLicensingType;
+use Microsoft\Graph\Generated\Models\IosDeviceType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -3,7 +3,7 @@ title: "Create TableColumn"
 description: "Use this API to create a new TableColumn."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ If successful, this method returns `201 Created` response code and [workbookTabl
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [workbookTableColumn](../resources/workbooktablecolumn.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

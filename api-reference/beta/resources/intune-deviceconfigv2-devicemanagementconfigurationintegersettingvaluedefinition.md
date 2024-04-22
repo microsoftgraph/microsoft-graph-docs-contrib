@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationIntegerSettingValueDefinition resource type
 description: "Intune Deviceconfigv2 Devicemanagementconfigurationintegersettingvaluedefinition Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

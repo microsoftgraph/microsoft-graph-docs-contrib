@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/filePlanReferences/{filePlanReferenceTemplateId}
+GET https://graph.microsoft.com/beta/security/labels/filePlanReferences/b1f7b518-a44f-1d4b-c6f1-ab8771d3907c
 ```
 
 # [C#](#tab/csharp)
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/security/labels/filePlanReferences/{filePla
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,12 +113,15 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.security.filePlanReferenceTemplate",
     "id": "b1f7b518-a44f-1d4b-c6f1-ab8771d3907c",
-    "displayName": "String",
+    "displayName": "FIN 01-02-001",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)"
-  }
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
+  },
+  "createdDateTime" : "2021-03-24T02:09:08Z"
+}
 }
 ```
 

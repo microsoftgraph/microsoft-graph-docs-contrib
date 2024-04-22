@@ -3,7 +3,7 @@ title: "workbookFilterCriteria resource type"
 description: "Represents the filtering criteria applied to a column."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "excel"
+ms.subservice: "excel"
 author: "ruoyingl"
 ---
 
@@ -29,7 +29,7 @@ Represents the filtering criteria applied to a column.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

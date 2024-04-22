@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -56,8 +56,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/labels/citations/{citationTemplateId}
-```
+DELETE https://graph.microsoft.com/beta/security/labels/citations/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-citationtemplate-csharp-snippets.md)]
@@ -94,7 +93,7 @@ DELETE https://graph.microsoft.com/beta/security/labels/citations/{citationTempl
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >
 <!-- {
   "blockType": "response",

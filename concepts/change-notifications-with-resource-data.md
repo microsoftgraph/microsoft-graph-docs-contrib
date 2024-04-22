@@ -4,8 +4,8 @@ description: "Microsoft Graph uses a webhook mechanism to deliver change notific
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
-ms.topic: conceptual
-ms.prod: "change-notifications"
+ms.topic: concept-article
+ms.subservice: "change-notifications"
 ms.localizationpriority: high
 ms.date: 06/23/2023
 #customer intent: As a developer, I want to receive notifications of changed data for specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
