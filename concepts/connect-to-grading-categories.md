@@ -39,7 +39,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 
 ## Create grading categories
 
-Grading categories are used to grade the creativity, accuracy, style, or tone of your output, you can create custom grading categories that suit your needs. This section shows how to create grading categories for your assignments. 
+Grading categories are used to weight assignments in the final class grade. This section shows how to create grading categories for your class.
 
 ### Request
 
@@ -101,7 +101,7 @@ Content-type: application/json
 
 ## Add a grading category to an assignment
 
-An assignment can be weighted by grading categories. These are different criteria that evaluate the output on things like accuracy, creativity, or style. Each category can have different weights and scoring types. You can use the following API to add a grading category to an assignment.
+An assignment can be weighted by assigning it a grading category. Assigning a grading category to an assignment will determine how much it contributes to the final class grade. You can use the following API to add a grading category to an assignment.
 
 - [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory): Allows you to give an assignment a grading category, causing it to contribute to the class average grade as part of that grading category.
 
@@ -131,7 +131,8 @@ HTTP/1.1 204 No Content
 ```
 
 ## Update a grading category
-You might want to change the criteria or the weight of a grading category for your assignment. For example, this can help you fine-tune your evaluation and better reflect your expectations and goals. This section shows you how to update a grading category. You will also learn about some common scenarios where updating a grading category can be useful. 
+
+You might want to change the details of a grading category, like its display name or weight or you might want to delete one grading category and replace the percentage points it took up with an existing or new grading category. This section shows you how to update one or more grading categories.
 
 - [Update single gradingCategory](/graph/api/educationgradingcategory-update): This is used to update a single gradingCategory.
 
