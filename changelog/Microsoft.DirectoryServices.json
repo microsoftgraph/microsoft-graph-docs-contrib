@@ -15901,6 +15901,32 @@
       "CreatedDateTime": "2024-01-30T22:18:10.5714447Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d73fda59-009d-4aad-80fa-90000c6b4cb2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "claimsPolicy",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **claimsPolicy** relationship from the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "d73fda59-009d-4aad-80fa-90000c6b4cb2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "claimsPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimsPolicy** relationship to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "d73fda59-009d-4aad-80fa-90000c6b4cb2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-17T12:41:34.9810554Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }

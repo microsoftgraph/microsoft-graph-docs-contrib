@@ -88,6 +88,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[getPasswordSingleSignOnCredentials](../api/serviceprincipal-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md)|Get a credential set for the user or group specified in the body.|
 |[updatePasswordSingleSignOnCredentials](../api/serviceprincipal-updatepasswordsinglesignoncredentials.md)|None|Update a credential set for the user or group specified in the body.|
 |[deletePasswordSingleSignOnCredentials](../api/serviceprincipal-deletepasswordsinglesignoncredentials.md)|None|Delete a credential set for the user or group specified in the body.|
+|[Get customClaimsPolicy](../api/serviceprincipal-list-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md) collection|Get the customClaimsPolicy resources from the claimsPolicy navigation property.|
+|[Create/Replace customClaimsPolicy](../api/serviceprincipal-put-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Create or replace a new customClaimsPolicy object for a service principal|
+|[Update customClaimsPolicy](../api/serviceprincipal-patch-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Update the  customClaimsPolicy object for a service principal|
 
 ## Properties
 
@@ -149,6 +152,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|App role assignments for this app or service, granted to users, groups, and other service principals.Supports `$expand`.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|App role assignment for another app or service, granted to this service principal. Supports `$expand`.|
 |claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) collection|The claimsMappingPolicies assigned to this service principal. Supports `$expand`.|
+|claimsPolicy|[customClaimsPolicy](../resources/customclaimspolicy.md)|A claims policy that allows application admins to customize the claims that will be emitted in tokens affected by this policy.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects created by this service principal. Read-only. Nullable.|
 |delegatedPermissionClassifications|[delegatedPermissionClassification](delegatedpermissionclassification.md) collection|The permission classifications for delegated permissions exposed by the app that this service principal represents. Supports `$expand`.|
 |endpoints|[endpoint](endpoint.md) collection|Endpoints available for discovery. Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.|

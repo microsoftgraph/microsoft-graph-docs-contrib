@@ -1,19 +1,19 @@
 ---
-title: "Get customClaimsPolicy"
-description: "Read the properties and relationships of a customClaimsPolicy object."
+title: "List customClaimsPolicy"
+description: "Get the customClaimsPolicy resources from the claimsPolicy navigation property."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
 doc_type: apiPageType
 ---
 
-# Get customClaimsPolicy
+# List customClaimsPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [customClaimsPolicy](../resources/customclaimspolicy.md) object.
+Get the customClaimsPolicy resources from the claimsPolicy navigation property.
 
 ## Permissions
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "customclaimspolicy-get-permissions"
+  "name": "serviceprincipal-list-claimspolicy-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/customclaimspolicy-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-claimspolicy-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /policies/claimsPolicy
+GET /servicePrincipals/{servicePrincipalsId}/claimsPolicy
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [customClaimsPolicy](../resources/customclaimspolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [customClaimsPolicy](../resources/customclaimspolicy.md) objects in the response body.
 
 ## Examples
 
@@ -61,11 +61,11 @@ If successful, this method returns a `200 OK` response code and a [customClaimsP
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_customclaimspolicy"
+  "name": "list_customclaimspolicy"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/claimsPolicy
+GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/claimsPolicy
 ```
 
 ### Response
@@ -75,7 +75,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.customClaimsPolicy"
+  "@odata.type": "Collection(microsoft.graph.customClaimsPolicy)"
 }
 -->
 ``` http
@@ -83,20 +83,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.customClaimsPolicy",
-    "id": "f914f36d-167e-3fa7-cfa2-355cc5a36689",
-    "includeBasicClaimSet": "Boolean",
-    "includeApplicationIdInIssuer": "Boolean",
-    "audienceOverride": "String",
-    "groupFilter": {
-      "@odata.type": "microsoft.graph.groupClaimFilterBase"
-    },
-    "claims": [
-      {
-        "@odata.type": "microsoft.graph.customClaim"
-      }
-    ]
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.customClaimsPolicy",
+      "id": "f914f36d-167e-3fa7-cfa2-355cc5a36689",
+      "includeBasicClaimSet": "Boolean",
+      "includeApplicationIdInIssuer": "Boolean",
+      "audienceOverride": "String",
+      "claims": [
+        {
+          "@odata.type": "microsoft.graph.customClaim"
+        }
+      ]
+    }
+  ]
 }
 ```
