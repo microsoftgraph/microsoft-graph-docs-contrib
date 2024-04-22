@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Add (pin) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). The app must be [preinstalled in the team](../api/team-list-installedapps.md) and have the [configurableTabs](/microsoftteams/platform/resources/schema/manifest-schema#configurabletabs) property defined in the app manifest.
 
+> **Note**: If the app manifest for a given **appId** contains a static tab that matches the current scope (**team**), the static tab is pinned by default.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -44,6 +46,8 @@ POST /teams/{team-id}/channels/{channel-id}/tabs
 
 A [teamsTab](../resources/teamstab.md).
 
+> [!NOTE] 
+> When you pin a static tab, Teams takes the **displayName** and **configuration** from the app manifest. If these properties are specified in the request body, this API returns a `400 Bad Request` response code.
 ## Response
 
 If successful, this method returns a `201 Created` response code.

@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a subscription."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: apiPageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ---
 
 # Get subscription
