@@ -26,7 +26,7 @@ The article guides you through the process of managing your Microsoft Graph subs
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK relays the notifications to your application.
 - You don't need to reply to the [notification URL validation](change-notifications-delivery-webhooks.md#notificationurl-validation). You can ignore the validation message that you receive.
 - You need to provision an event hub.
-- You need to provision an Azure Key Vault.
+- You'll need to provision an Azure Key Vault or add our Microsoft Graph Change Tracking service to the data sender role on your Event Hub.
 
 ## Set up the Azure Event Hubs authentication
 
@@ -158,11 +158,25 @@ After you create the required Azure KeyVault and Azure Event Hubs services, you 
 
 #### Create the subscription
 
-Subscriptions to change notifications with Event Hubs are almost identical to change notifications with webhooks. The main difference during subscription creation is the **notificationUrl**. You must set it to `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
+Creating a subscription to receive change notifications with Event Hubs is nearly identical to webhook subscription creation, but with important changes in the **notificationUrl** property.  Please first review [webhook subscription creation steps](/graph/api/subscription-post-subscriptions) before continuing.
+
+At subscription creation the **notificationUrl** must point to your Event Hubs location.
+
+##### Using Key Vault
+If you are using Key Vault, the **notificationUrl** property will look like this:  `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
 
 - `azurekeyvaultname` - The name you gave to the key vault when you created it. Can be found in the DNS name.
 - `secretname` - The name you gave to the secret when you created it. Can be found on the Azure Key Vault **Secrets** page.
-- `domainname` - The name of your tenant; for example, contoso.com or contoso.com. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and select the subscription. The domain name is displayed under the **Directory** field.
+- `domainname` - The name of your tenant; for example, consto.onmicrosoft.com or contoso.com. Because this domain will be used to access the Azure Key Vault, it is important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and click the subscription. The domain name is displayed under the **Directory** field.
+
+##### Using Role-based access control
+If you are using Role-based access control, the **notificationUrl** property will look like this:
+
+`EventHub:https://&lt;eventhubnamespace&gt;.servicebus.windows.net/eventhubname/&lt;eventhubname&gt;?tenantId=&lt;domainname&gt;`
+
+- `eventhubnamespace` the name you give to the Event Hub namespace.  Can be found in the Event Hubs Overview page under Host name.
+- `eventhubname` is the name you give to the Event Hub.  Can be found in the Event Hubs->Overview->Event Hubs
+- `domainname`The name of your tenant; for example, consto.onmicrosoft.com or contoso.com. Because this domain will be used to access the Azure EventHub, it isi mportant that it matches the domain used by the Azure subscription that holds the Azure EventHub. To get this information, you can go to the overview page of the Microsoft Entra ID. The domain name is displayed under the **TenantId or Primary domain**.
 
 > [!NOTE]
 > Duplicate subscriptions aren't allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
