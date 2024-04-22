@@ -4,7 +4,7 @@ description: "Represents the identity of a participant in a callRecord."
 title: "participant resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # participant resource type
