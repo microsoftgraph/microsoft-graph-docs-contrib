@@ -44,18 +44,11 @@ You can specify the following properties when creating a **customAuthenticationE
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Optional.|
+|claimsForTokenConfiguration|[onTokenIssuanceStartReturnClaim](../resources/ontokenissuancestartreturnclaim.md) collection|Collection of claims to be returned by the API called by this custom authentication extension. Can be set for **onTokenIssuanceStartCustomExtension** object only. Only used for claims mapping admin UX. Optional. |
 |clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the custom extension. Optional.|
 |description|String|Description for the custom extension. Optional.|
 |displayName|String|Display name for the custom extension. Optional.|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Optional.|
-
-Specific custom extension types have additional properties which may be set:
-
-### onTokenIssuanceStartCustomExtension object
-
-|Property|Type|Description|
-|:---|:---|:---|
-|claimsForTokenConfiguration|[onTokenIssuanceStartReturnClaim](../resources/ontokenissuancestartreturnclaim.md) collection|Collection of claims to be returned by the API called by this custom authentication extension. Only used for claims mapping admin UX. Optional. |
 
 ## Response
 
@@ -63,9 +56,8 @@ If successful, this method returns a `201 Created` response code and a [customAu
 
 ## Examples
 
-### Example 1: Create an onTokenIssuanceStartCustomExtension object
 
-#### Request
+### Request
 
 The following example shows a request.
 
@@ -107,7 +99,7 @@ Content-length: 468
 ```
 
 
-#### Response
+### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 The applications on which an authenticationEventListener should trigger.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
@@ -31,10 +30,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.authenticationConditionsApplications",
-  "includeApplications": {
-    "@odata.type": "#microsoft.graph.authenticationConditionApplication",
-  }
+  "@odata.type": "#microsoft.graph.authenticationConditionsApplications"
 }
 ```
 

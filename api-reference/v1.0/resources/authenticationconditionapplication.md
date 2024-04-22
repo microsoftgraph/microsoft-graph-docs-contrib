@@ -1,6 +1,6 @@
 ---
 title: "authenticationConditionApplication resource type"
-description: "An object representing the application that will be triggered for an authenticationEventListener."
+description: "Represents the application that is triggered for an authenticationEventListener."
 author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,17 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An object representing the application that will be triggered for an authenticationEventListener.
+Represents the application that is triggered for an authenticationEventListener.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.|
+|appId|String|The identifier for an application corresponding to a condition that triggers an authenticationEventListener.|
 
 ## Relationships
 None.

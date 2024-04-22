@@ -52,12 +52,10 @@ If successful, this method returns a `201 Created` response code and an [authent
 
 ## Examples
 
-### Example 1: Create an onTokenIssuanceStartListener object
 
-#### Request
+### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_authenticationeventlistener_onTokenIssuanceStartListener"
@@ -88,7 +86,7 @@ Content-length: 312
 }
 ```
 
-#### Response
+### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
