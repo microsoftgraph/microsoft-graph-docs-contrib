@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "ChangeList": [
+            {
+              "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
+              "ApiChange": "Member",
+              "ChangedApiName": "excused",
+              "ChangeType": "Addition",
+              "Description": "Added the `excused` member to the **educationSubmissionStatus** enumeration.",
+              "Target": "educationSubmissionStatus"
+            },
+            {
+              "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
+              "ApiChange": "Property",
+              "ChangedApiName": "excusedBy",
+              "ChangeType": "Addition",
+              "Description": "Added the **excusedBy** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
+              "Target": "educationSubmission"
+            },
+            {
+              "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
+              "ApiChange": "Property",
+              "ChangedApiName": "excusedDateTime",
+              "ChangeType": "Addition",
+              "Description": "Added the **excusedDateTime** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
+              "Target": "educationSubmission"
+            },
+            {
+              "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
+              "ApiChange": "Method",
+              "ChangedApiName": "excuse",
+              "ChangeType": "Addition",
+              "Description": "Added the [excuse](https://learn.microsoft.com/en-us/graph/api/educationSubmission-excuse?view=graph-rest-1.0) method to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
+              "Target": "educationSubmission"
+            }
+          ],
+          "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
+          "Cloud": "Prod",
+          "Version": "v1.0",
+          "CreatedDateTime": "2024-04-19T18:32:24.5964486Z",
+          "WorkloadArea": "Education",
+          "SubArea": ""
+        },
+        {
           "Id": "b6a86a9a-9f1e-4f97-a22e-34dbe8d44202",
           "ApiChange": "Resource",
           "ChangedApiName": "educationGradingSchemeGrade",
@@ -2601,48 +2643,6 @@
       "CreatedDateTime": "2024-03-20T17:22:42.5007887Z",
       "WorkloadArea": "Education",
       "SubArea": "Assignment"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
-          "ApiChange": "Member",
-          "ChangedApiName": "excused",
-          "ChangeType": "Addition",
-          "Description": "Added the `excused` member to the **educationSubmissionStatus** enumeration.",
-          "Target": "educationSubmissionStatus"
-        },
-        {
-          "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
-          "ApiChange": "Property",
-          "ChangedApiName": "excusedBy",
-          "ChangeType": "Addition",
-          "Description": "Added the **excusedBy** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
-          "Target": "educationSubmission"
-        },
-        {
-          "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
-          "ApiChange": "Property",
-          "ChangedApiName": "excusedDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **excusedDateTime** property to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
-          "Target": "educationSubmission"
-        },
-        {
-          "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
-          "ApiChange": "Method",
-          "ChangedApiName": "excuse",
-          "ChangeType": "Addition",
-          "Description": "Added the [excuse](https://learn.microsoft.com/en-us/graph/api/educationSubmission-excuse?view=graph-rest-1.0) method to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-1.0) resource.",
-          "Target": "educationSubmission"
-        }
-      ],
-      "Id": "383f489d-791e-4504-9d90-bf4e097a6835",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2024-04-19T18:32:24.5964486Z",
-      "WorkloadArea": "Education",
-      "SubArea": ""
-    }
+    }    
   ]
 }
