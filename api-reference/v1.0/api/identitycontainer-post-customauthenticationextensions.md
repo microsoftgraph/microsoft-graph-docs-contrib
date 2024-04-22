@@ -43,12 +43,12 @@ You can specify the following properties when creating a **customAuthenticationE
 
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Optional.|
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension.|
 |claimsForTokenConfiguration|[onTokenIssuanceStartReturnClaim](../resources/ontokenissuancestartreturnclaim.md) collection|Collection of claims to be returned by the API called by this custom authentication extension. Can be set for **onTokenIssuanceStartCustomExtension** object only. Used to populate claims mapping experience in Microsoft Entra admin center. Optional. |
 |clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the custom extension. Optional.|
 |description|String|Description for the custom extension. Optional.|
-|displayName|String|Display name for the custom extension. Optional.|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Optional.|
+|displayName|String|Display name for the custom extension.|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call.|
 
 ## Response
 
