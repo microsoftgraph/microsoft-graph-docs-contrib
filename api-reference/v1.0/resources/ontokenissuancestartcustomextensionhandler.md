@@ -25,7 +25,7 @@ None.
 |configuration|[customExtensionOverwriteConfiguration](../resources/customExtensionOverwriteConfiguration.md)|Configuration regarding properties of the custom extension which can be overwritten per event listener. If no values are provided, the properties on the custom extension are used.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onTokenIssuanceStartCustomExtensionHandler"

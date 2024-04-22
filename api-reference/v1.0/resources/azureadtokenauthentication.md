@@ -21,7 +21,7 @@ Defines the Microsoft Entra application used to authenticate an app with a custo
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.azureAdTokenAuthentication",
