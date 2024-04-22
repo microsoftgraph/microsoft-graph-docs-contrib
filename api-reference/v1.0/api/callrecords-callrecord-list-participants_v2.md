@@ -3,7 +3,7 @@ title: "List participants_v2"
 description: "Get the list of participant objects associated with a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
