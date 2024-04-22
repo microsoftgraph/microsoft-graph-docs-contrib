@@ -12,10 +12,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. 
 
->**Notes:**
->* You can update this relationship when its **status** property is `created`.
->* You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
->* You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long running operation.
+The following restrictions apply:
+- You can update this relationship when its **status** property is `created`.
+- You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
+- You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long-running operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
