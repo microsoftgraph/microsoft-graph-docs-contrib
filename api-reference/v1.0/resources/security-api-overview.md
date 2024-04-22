@@ -60,13 +60,16 @@ Alerts from the following security providers are available via these rich alerts
 
 ### Legacy alerts
 
-These [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response.
+> [!NOTE]
+> The legacy alerts API is deprecated and will be removed by April 2026. We recommend that you migrate to the new [alerts and incidents](/graph/api/resources/security-alert) API.
+
+The legacy [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response.
 
 The legacy version of the security API offers the [alert](alert.md) resource which federates calling of supported Azure and Microsoft 365 Defender security providers. This **alert** resource aggregates alert data that’s common among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. This enables applications to correlate alerts and context to improve threat protection and response. 
 
 With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph security API by updating your **alert** entity.
 
-Alerts from the following providers are available via this **alert** resource. Support for GET alerts, PATCH alerts, and subscribe (via webhooks) is indicated in the following table.
+Alerts from the following providers are available via the **alert** resource. Support for GET alerts, PATCH alerts, and subscribe (via webhooks) is indicated in the following table.
 
 | Security provider | <p align="center">GET alert</p>| <p align="center">PATCH alert</p>| <p align="center">Subscribe to alert</p>|
 |:------------------|:---------|:-----------|:------------------|
@@ -82,7 +85,7 @@ Alerts from the following providers are available via this **alert** resource. S
 
 \*\* Microsoft Defender for Endpoint requires additional [user roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph security API. Only the users in both Microsoft Defender for Endpoint and Microsoft Graph security API roles can access the Microsoft Defender for Endpoint data. Because application-only authentication is not limited by this, we recommend that you use an application-only authentication token.
 
-\*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you will get Microsoft Defender for Identity alerts only if you joined Unified SecOps and connected Microsoft Defender for Identity into Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/defender-for-identity/mcas-integration).
+\*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you get Microsoft Defender for Identity alerts only if you joined Unified SecOps and connected Microsoft Defender for Identity into Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/defender-for-identity/mcas-integration).
 
 ## Attack simulation and training
 
@@ -116,6 +119,12 @@ The  [incident](security-incident.md) resource and its APIs allow you to sort 
 
 The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam emails, phishing URLs or malware attachments they receive to Microsoft. The policy check result and rescan result can help tenant administrators understand the threat scanning verdict and adjust their organizational policy.
 
+
+## Records management
+
+Most organizations need to manage data to proactively comply with industry regulations and internal policies, reduce risk in the event of litigation or a security breach, and let people effectively and agiley share knowledge that is current and relevant to them. You can use the [records management APIs](../resources/security-recordsmanagement-overview.md) to systematically apply [retention labels](security-retentionlabel.md) to different types of content that require different retention settings. For example, you can configure the start of retention period from when the content was created, last modified, labeled or when an event occurs for a particular event type. Further, you can use [file plan descriptors](security-fileplandescriptor.md) to improve the manageability of these retention labels.
+
+
 ## Secure Score
 
 [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/A-new-home-and-an-all-new-look-for-Microsoft-Secure-Score/ba-p/529641) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you did to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph security [secureScore](securescore.md) and [secureScoreControlProfile](securescorecontrolprofile.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
@@ -128,7 +137,7 @@ The threat intelligence APIs allow you to operationalize intelligence found with
 
 ## Common use cases
 
-The following are some of the most popular requests for working with the Microsoft Graph security API:
+The following are some of the most popular requests for working with the Microsoft Graph security API.
 
 | **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
@@ -177,11 +186,8 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 
 ## Related content
 
-[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph security API samples:
+[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to this Microsoft Graph security API sample:
 
-- [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
-- [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
-- [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
 - [PowerShell sample](/powershell/scripting/developer/prog-guide/windows-powershell-sample-code)
 
 Explore other options to connect with the Microsoft Graph security API:

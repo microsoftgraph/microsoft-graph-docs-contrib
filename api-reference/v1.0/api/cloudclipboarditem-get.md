@@ -3,7 +3,7 @@ title: "Get cloudClipboardItem"
 description: "Read the properties and relationships of a cloudClipboardItem object. "
 author: "yuechen7"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Read the properties and relationships of a [cloudClipboardItem](../resources/clo
 - An app on behalf of the user if the user grants delegated access to it.
 
 This API doesn't support using another user's credentials to get a [cloudClipboardItem](../resources/cloudclipboarditem.md) for a user.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
