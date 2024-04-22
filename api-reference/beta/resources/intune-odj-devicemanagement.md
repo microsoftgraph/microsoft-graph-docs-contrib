@@ -20,8 +20,8 @@ Singleton entity that acts as a container for all domain join connector entities
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-odj-devicemanagement-get.md)|[deviceManagement](../resources/intune-odj-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-odj-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-odj-devicemanagement-update.md)|[deviceManagement](../resources/intune-odj-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-odj-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-odj-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-odj-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|

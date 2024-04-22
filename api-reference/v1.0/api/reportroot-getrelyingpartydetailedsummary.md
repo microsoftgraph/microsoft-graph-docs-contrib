@@ -3,7 +3,7 @@ title: "reportRoot: getRelyingPartyDetailedSummary"
 description: "Get a summary of AD FS relying parties information."
 author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: entra-monitoring-health
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 
 Get a summary of AD FS relying parties information.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
