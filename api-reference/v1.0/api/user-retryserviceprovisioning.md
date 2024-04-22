@@ -3,7 +3,7 @@ title: "user: retryServiceProvisioning"
 description: "Retries user service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: "apiPageType"
 ---
 
