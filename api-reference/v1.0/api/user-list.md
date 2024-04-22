@@ -949,10 +949,10 @@ Content-type: application/json
 
 ### Example 12: List information about synchronized users
 
-The following example lists origin and synchronization information, if available, about external users. Add a `$filter` parameter for the source tenant and add a `$select` parameter for [originTenantInfo](../resources/user.md).
+The following example lists origin and synchronization information, if available, about B2B collaboration users. Add a `$filter` parameter for the source tenant and add a `$select` parameter for [originTenantInfo](../resources/user.md).
 
-- `originTenantId`: ID of the source tenant
-- `originId`: ID of the original user in the source tenant
+- `originTenantId`: ID of the origin or source Microsoft Entra tenant
+- `originId`: ID of the original user in the origin or source Microsoft Entra tenant
 - `creationType`: User was created using cross-tenant synchronization
 
 For more information, see [Configure cross-tenant synchronization using PowerShell or Microsoft Graph API](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph).
