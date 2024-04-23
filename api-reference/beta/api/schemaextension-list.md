@@ -4,7 +4,7 @@ description: "Get a list of schemaExtension objects created by any apps you own 
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
+ms.subservice: extensions
 ---
 
 # List schemaExtensions

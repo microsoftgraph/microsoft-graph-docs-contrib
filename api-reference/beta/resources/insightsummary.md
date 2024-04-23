@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 Represents a daily or monthly summary of all usage insights on apps registered in your tenant that is configured for Microsoft Entra External ID for customers. A user (in **activeUsers**) can be counted more that once if they use multiple device platforms.
 
 This resource represents a summary of the insights. For a breakdown of each insight, see the following resources and their associated APIs:
-- [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md)
 - [activeUsers](../resources/activeusersmetric.md)
 - [authentications](../resources/authenticationsmetric.md)
 - [mfaCompletion](../resources/mfacompletionmetric.md)
