@@ -158,9 +158,9 @@ After you create the required Azure KeyVault and Azure Event Hubs services, you 
 
 #### Create the subscription
 
-Creating a subscription to receive change notifications with Event Hubs is nearly identical to webhook subscription creation, but with important changes in the **notificationUrl** property.  Please first review [webhook subscription creation steps](/graph/api/subscription-post-subscriptions) before continuing.
+Creating a subscription to receive change notifications with Event Hubs is nearly identical to webhook subscription creation, but with important changes in the **notificationUrl** property. First review [webhook subscription creation steps](/graph/api/subscription-post-subscriptions) before continuing.
 
-At subscription creation the **notificationUrl** must point to your Event Hubs location.
+At subscription creation, the **notificationUrl** must point to your Event Hubs location.
 
 ##### Using Key Vault
 If you are using Key Vault, the **notificationUrl** property will look like this:  `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
