@@ -182,7 +182,7 @@ If you're using role-based access control, the **notificationUrl** property look
 
 - `eventhubnamespace` is the name you give to the Event Hub namespace. Can be found in the Event Hubs Overview page under Host name.
 - `eventhubname` is the name you give to the Event Hub. Can be found in the Event Hubs -> Overview -> Event Hubs.
-- `domainname` is the name of your tenant; for example, contoso.com. Because this domain is used to access the Azure EventHub, it's important that it matches the domain used by the Azure subscription that holds the Azure Event Hub. To get this information, select the Microsoft Entra ID menu on the Azure portal and check the Overview page. The domain name is displayed under the **Primary domain**.
+- `domainname` is the name of your tenant; for example, contoso.com. Because this domain is used to access the Azure Event Hub, it's important that it matches the domain used by the Azure subscription that holds the Azure Event Hub. To get this information, select the Microsoft Entra ID menu on the Azure portal and check the Overview page. The domain name is displayed under the **Primary domain**.
 
 <!-- End of "Using RBAC tab-->
 ---
