@@ -1,6 +1,6 @@
 ---
 title: "authenticationEventListener resource type"
-description: "Listener for taking action on events in the authentication process"
+description: "Listener for taking action on events in the authentication process."
 author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
