@@ -22,7 +22,7 @@ This is an abstract type.
 | :--------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [List provisioningFlow objects](../api/industrydata-outboundprovisioningflowset-list-provisioningflows.md) | [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md) collection | Get a list of the provisioningflow objects and their properties.    |
 | [Create provisioningFlow](../api/industrydata-outboundprovisioningflowset-post-provisioningflows.md)       | [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md)            | Create a new provisioningflow object.                               |
-| [Reset provisioningFlow](../api/industrydata-provisioningflow-reset.md)                                    | [microsoft.graph.industryData.provisioningFlow](industrydata-provisioningflow.md)            | Resets a provisioningflow object.                                   |
+| [Reset provisioningFlow](../api/industrydata-provisioningflow-reset.md)                                    | None                                                                                         | Resets a provisioningflow object.                                   |
 
 ## Properties
 
