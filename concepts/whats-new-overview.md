@@ -28,6 +28,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
     - [Upsert federatedIdentityCredential](/graph/api/federatedidentitycredential-upsert)
     - [Upsert servicePrincipal](/graph/api/serviceprincipal-upsert)
 
+### Identity and access | Governance
+
+Use the [Create](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows) operation on the [workflow](/graph/api/resources/identitygovernance-workflow) resource to create now up to 100 workflows that is an increase from the previous limit of 50.
+
+### Identity and access | Identity and sign-in
+
+Configure the [default identity provider](/graph/api/resources/defaultinvitationredemptionidentityproviderconfiguration) to use in redemption flow settings for Microsoft Entra ID B2B collaboration.
+
 ### Groups
 
 Added the [upsert](/graph/api/group-upsert) capability to the [group resource type](/graph/api/resources/group). Use this capability to create a group if it doesn't exist, or update an existing group, by using the **uniqueName** client-provided key.
@@ -44,15 +52,8 @@ You can now:
 
 Work with [site pages](/graph/api/resources/sitepage) and [horizonal](/graph/api/resources/horizontalsection) and [vertical](/graph/api/resources/verticalsection) sections of pages.  
 
-### Identity and access | Governance
-
-Use the [Create](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows) operation on the [workflow](/graph/api/resources/identitygovernance-workflow) resource to create now up to 100 workflows that is an increase from the previous limit of 50.
-
-### Identity and access | Identity and sign-in
-
-Configure the [default identity provider](/graph/api/resources/defaultinvitationredemptionidentityproviderconfiguration) to use in redemption flow settings for Microsoft Entra ID B2B collaboration.
-
 ### Users
+
 Associate users or groups as sponsors for a guest user's privileges in the tenant and keep the guest user's information and access updated. You can [assign a sponsor](/graph/api/user-post-sponsors), [list sponsors](/graph/api/user-list-sponsors), and [remove a sponsor](/graph/api/user-delete-sponsors).
 
 ## April 2024: New in preview only
