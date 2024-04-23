@@ -9,7 +9,17 @@
             "ChangeType": "Addition",
             "Description": "Added the [reset](https://learn.microsoft.com/en-us/graph/api/industryData-provisioningFlow-reset?view=graph-rest-beta) method to the [provisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-provisioningFlow?view=graph-rest-beta) resource.",
             "Target": "provisioningFlow"
-        },
+        }
+      ],
+      "Id": "c28ab5fe-0a0b-4452-b183-4be0201be4ee",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-22T21:45:45.2355566Z",
+      "WorkloadArea": "Industry data ETL",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
           "ApiChange": "Enumeration",

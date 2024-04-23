@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/external/industryData/outboundProvisioningFlowSets/{outboundProvisioningFlowSetId}/provisioningFlows/{provisioningFlowId}/reset
+POST https://graph.microsoft.com/beta/external/industryData/outboundProvisioningFlowSets/8c33d025-5e64-4550-2aa3-08dc4ac66fca/provisioningFlows/51f99e09-bdc5-47ff-7a0a-08dc4ac74cf1/reset
 ```
 
 
