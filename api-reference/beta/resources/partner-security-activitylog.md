@@ -36,12 +36,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partner.security.activityLog",
-  "statusFrom": {
-    "@odata.type": "microsoft.graph.partner.security.securityAlertStatus"
-},
-  "statusTo": {
-    "@odata.type": "microsoft.graph.partner.security.securityAlertStatus"
-},
+  "statusFrom": "String",
+  "statusTo": "String",
   "updatedBy": "String",
   "updatedDateTime": "String (timestamp)"
 }
