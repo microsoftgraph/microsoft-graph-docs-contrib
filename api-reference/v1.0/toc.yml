@@ -6378,36 +6378,34 @@ items:
                         href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
                       - name: Get authentication method modes
                         href: api/authenticationmethodmodedetail-get.md
-              - name: Custom authentication extensions
+               - name: Authentication event listeners
+                href: resources/authenticationeventlistener.md
                 items:
-                - name: Custom authentication extension
-                  href: resources/customauthenticationextension.md
-                  items:
-                  - name: On token issuance start
-                    href: resources/ontokenissuancestartcustomextension.md
-                  - name: List
-                    href: api/identitycontainer-list-customauthenticationextensions.md
-                  - name: Create
-                    href: api/identitycontainer-post-customauthenticationextensions.md
-                  - name: Get
-                    href: api/customauthenticationextension-get.md
-                  - name: Update
-                    href: api/customauthenticationextension-update.md
-                  - name: Delete
-                    href: api/customauthenticationextension-delete.md
-                - name: Authentication event listeners
-                  href: resources/authenticationeventlistener.md
-                  items:
-                  - name: List
-                    href: api/identitycontainer-list-authenticationeventlisteners.md
-                  - name: Create
-                    href: api/identitycontainer-post-authenticationeventlisteners.md
-                  - name: Get
-                    href: api/authenticationeventlistener-get.md
-                  - name: Update
-                    href: api/authenticationeventlistener-update.md
-                  - name: Delete
-                    href: api/authenticationeventlistener-delete.md
+                - name: List
+                  href: api/identitycontainer-list-authenticationeventlisteners.md
+                - name: Create
+                  href: api/identitycontainer-post-authenticationeventlisteners.md
+                - name: Get
+                  href: api/authenticationeventlistener-get.md
+                - name: Update
+                  href: api/authenticationeventlistener-update.md
+                - name: Delete
+                  href: api/authenticationeventlistener-delete.md
+              - name: Custom authentication extension
+                href: resources/customauthenticationextension.md
+                items:
+                - name: On token issuance start
+                  href: resources/ontokenissuancestartcustomextension.md
+                - name: List
+                  href: api/identitycontainer-list-customauthenticationextensions.md
+                - name: Create
+                  href: api/identitycontainer-post-customauthenticationextensions.md
+                - name: Get
+                  href: api/customauthenticationextension-get.md
+                - name: Update
+                  href: api/customauthenticationextension-update.md
+                - name: Delete
+                  href: api/customauthenticationextension-delete.md
               - name: Certificate-based auth configuration
                 displayName: CBA
                 href: resources/certificatebasedauthconfiguration.md
