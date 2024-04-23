@@ -92,52 +92,50 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
  {
-    "id": "d8b202fc-a216-3404-69ef-bdffa445eff6",
-    "displayName": "Action Required: Virtual machine connecting to crypto currency mining pool Detected",
-    "description": "Analysis of azure resource network activity detected the resource was connecting to a crypto currency mining pool.  this would often be an indication that your azure resource is compromised.",
-    "alertType": "networkConnectionsToCryptoMiningPools",
-    "status": "active",
-    "severity": "high",
-    "confidenceLevel": "medium",
-    "customerTenantId": "1889e718-414b-4bad-8bbe-c1135bd39a41",
-    "subscriptionId": "5f6e6521-6e5f-4b0b-80aa-bd44fad7a398",
-    "valueAddedResellerTenantId": "c296b2ce-8cd1-4346-9e82-d8eccca70d65",
-    "catalogOfferId": "MS-AZR-0017G",
-    "detectedDateTime": "2024-01-23T16:03:33.05Z",
-    "firstObservedDateTime": "2024-01-23T16:03:33.05Z",
-    "lastObservedDateTime": "2024-01-23T16:03:33.05Z",
-    "resolvedReason": "fraud",
-    "resolvedOnDateTime": "2024-02-23T16:03:33.05Z",
-    "resolvedBy": "testuser@testtestgaapartneraccount01.onmicrosoft.com",
-    "isTest": "false",
-    "affectedResources": [
-      {
-        "resourceId": "/subscriptions/subscription-id/resourceGroups/resourcegroup-name/providers/Microsoft.Compute/virtualMachines/vm-name",
-        "resourceType": "AzureResource"
-      }
-    ],
-    "activityLogs": [
-      {
-        {
-          "statusFrom": "active",
-          "statusTo": "investigating",
-          "updatedBy": "testuser2@testtestgaapartneraccount01.onmicrosoft.com",
-          "updatedDateTime": "2023-08-10T08:47:10.8454142Z"
-        },
-        {
-            "statusFrom": "investigating",
-            "statusTo": "resolved",
-            "updatedBy": "testuser2@testtestgaapartneraccount01.onmicrosoft.com",
-            "updatedDateTime": "2023-08-10T08:47:25.2089246Z"
-        }
-      }
-    ],
-    "additionalDetails": {
-      "VM_IP": "[  \"vm-ip\"]",
-      "MiningPool_IP": "[  \"mining-pool-ip\"]",
-      "ConnectionCount": "5",
-      "CryptoCurrencyMiningPoolDomainName": "pool-name.com"
+  "id": "d8b202fc-a216-3404-69ef-bdffa445eff6",
+  "displayName": "Action Required: Virtual machine connecting to crypto currency mining pool Detected",
+  "description": "Analysis of Azure resource network activity detected the resource was connecting to a crypto currency mining pool. This would often be an indication that your Azure resource is compromised.",
+  "alertType": "networkConnectionsToCryptoMiningPools",
+  "status": "active",
+  "severity": "high",
+  "confidenceLevel": "medium",
+  "customerTenantId": "1889e718-414b-4bad-8bbe-c1135bd39a41",
+  "subscriptionId": "5f6e6521-6e5f-4b0b-80aa-bd44fad7a398",
+  "valueAddedResellerTenantId": "c296b2ce-8cd1-4346-9e82-d8eccca70d65",
+  "catalogOfferId": "MS-AZR-0017G",
+  "detectedDateTime": "2024-01-23T16:03:33.05Z",
+  "firstObservedDateTime": "2024-01-23T16:03:33.05Z",
+  "lastObservedDateTime": "2024-01-23T16:03:33.05Z",
+  "resolvedReason": "fraud",
+  "resolvedOnDateTime": "2024-02-23T16:03:33.05Z",
+  "resolvedBy": "danas@contoso.com",
+  "isTest": false,
+  "affectedResources": [
+    {
+      "resourceId": "/subscriptions/subscription-id/resourceGroups/resourcegroup-name/providers/Microsoft.Compute/virtualMachines/vm-name",
+      "resourceType": "AzureResource"
     }
+  ],
+  "activityLogs": [
+    {
+      "statusFrom": "active",
+      "statusTo": "investigating",
+      "updatedBy": "samanthab@contoso.com",
+      "updatedDateTime": "2023-08-10T08:47:10.8454142Z"
+    },
+    {
+      "statusFrom": "investigating",
+      "statusTo": "resolved",
+      "updatedBy": "samanthab@contoso.com",
+      "updatedDateTime": "2023-08-10T08:47:25.2089246Z"
+    }
+  ],
+  "additionalDetails": {
+    "VM_IP": "[  \"vm-ip\"]",
+    "MiningPool_IP": "[  \"mining-pool-ip\"]",
+    "ConnectionCount": "5",
+    "CryptoCurrencyMiningPoolDomainName": "pool-name.com"
+  }
 }
 ```
 
