@@ -14,6 +14,8 @@ Restore a  [deletedChat](../resources/deletedchat.md) to an active [chat](../res
 
 >**Note:** This operation is not supported for non-admin users.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -80,6 +82,10 @@ POST https://graph.microsoft.com/v1.0/teamwork/deletedChats/19:64dedcac16b74a209
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/deletedchatundodelete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/deletedchatundodelete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

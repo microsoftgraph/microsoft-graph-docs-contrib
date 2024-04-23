@@ -4,7 +4,8 @@ description: "Microsoft Graph provides optional query parameters that you can us
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
-ms.subservice: "entra-applications"
+ms.topic: concept-article
+ms.subservice: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 08/22/2023

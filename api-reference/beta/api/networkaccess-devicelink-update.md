@@ -1,6 +1,6 @@
 ---
 title: "Update deviceLink"
-description: "Update the device link associated with a specific branch."
+description: "Update the device link associated with a specific branch or remote network."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the device link associated with a specific branch.
+Update the device link associated with a specific branch or remote network.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -25,13 +25,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
 ## HTTP request
-
+> [!NOTE]
+> The `/branches/{branchSiteId}/...` path will be retired soon. Use the `/remoteNetworks/{remoteNetworkId}/...` path instead.
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 PATCH /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+PATCH /networkAccess
 ```
 
 ## Request headers

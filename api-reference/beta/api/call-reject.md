@@ -60,6 +60,7 @@ The following examples show how to call this API.
 
 #### Request
 
+The following examples shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -110,6 +111,7 @@ Content-Length: 24
 ---
 
 ##### Response
+The following examples shows the response.
 
 <!-- {
   "blockType": "response"
@@ -175,7 +177,7 @@ Content-Type: application/json
 
 ##### Request
 
-
+The following examples shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -226,6 +228,8 @@ Content-Length: 24
 ---
 
 ##### Response
+
+The following examples shows the response.
 <!-- {
   "blockType": "response"
 } -->

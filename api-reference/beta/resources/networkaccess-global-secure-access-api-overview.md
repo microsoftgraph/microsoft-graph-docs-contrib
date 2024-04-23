@@ -23,13 +23,10 @@ The network access APIs provide a framework to configure how you want to forward
 | [forwardingPolicy](../resources/networkaccess-forwardingpolicy.md) | Defines the rules for routing or bypassing specific traffic type through the Global Secure Access services. Each policy is tried to one traffic type that can be Microsoft 365, Internet, or Private traffic. A forwarding policy can have only forwarding policy rules. |
 | [forwardingPolicyLink](../resources/networkaccess-forwardingpolicylink.md) | Represents the relationship between a forwarding profile and a forwarding policy, and maintains the current state of the connection.|
 | [policyRule](../resources/networkaccess-policyrule.md) | Maintains the core definition of a policy ruleset. |
-| [branchSite](../resources/networkaccess-branchsite.md) | Represents the physical branch office locations from where users and devices connect to access the cloud, public, or private apps. Each branch comprises devices and the connection of devices in a branch is maintained via customer-premises equipment (CPE).|
-
-<!--
-| Filtering profiles | Groups filtering policies, which are then associated with Conditional Access policies in Azure AD to leverage a rich set of user-context conditions.|
-| Filtering policies | Encapsulates various policies configured by administrators, such as network filtering policies, data loss prevention, and threat protection.|
-| [Filtering policy links](../resources/networkaccess-filteringpolicylink.md) | Represents the relationship between a filtering profile and a filtering policy, and maintains the current state of the connection.|
--->
+| [remoteNetwork](../resources/networkaccess-remotenetwork.md) | Represents the physical location from where users and devices connect to access the cloud, public, or private apps. Each remote network comprises devices and the connection of devices in a remote network is maintained via customer-premises equipment (CPE).|
+| [filteringProfile](../resources/networkaccess-filteringprofile.md) | Groups filtering policies, which are then associated with Conditional Access policies in Microsoft Entra to leverage a rich set of user-context conditions.|
+| [filteringPolicy](../resources/networkaccess-filteringpolicy.md) | Encapsulates various policies configured by administrators, such as network filtering policies, data loss prevention, and threat protection.|
+| [filteringPolicLink](../resources/networkaccess-filteringpolicylink.md) | Represents the relationship between a filtering profile and a filtering policy, and maintains the current state of the connection.|
 
 ## Onboard to the service process
 
@@ -47,20 +44,20 @@ The following APIs allow an admin to manage and configure forwarding profiles. T
 | Sample operations | Description |
 |--|--|
 | [List forwarding profiles](../api/networkaccess-networkaccessroot-list-forwardingprofiles.md) | List the forwarding profiles configured for the tenant. You can also retrieve the associated policies using the `$expand` query parameter.|
-| [Update forwardingProfile](../api/networkaccess-forwardingprofile-update.md) | Enable or disable a forwarding profile or configure associations such as the branch. |
+| [Update forwardingProfile](../api/networkaccess-forwardingprofile-update.md) | Enable or disable a forwarding profile or configure associations such as the remote network. |
 | [List forwarding policies](../api/networkaccess-networkaccessroot-list-forwardingpolicies.md) | List the forwarding policies configured for the tenant. You can also retrieve the associated forwarding policy rules using the `$expand` query parameter.|
 | [List forwarding policy links](../api/networkaccess-forwardingprofile-list-policies.md) | List the policy links associated with a forwarding profile. You can also retrieve the associated forwarding policy rules using the `$expand` query parameter.|
 
-## Branches
+## Remote networks
 
-A branch or remote network scenario involves user devices or user-less devices like printers establishing connectivity via customer-premises equipment (CPE), also known as device links, at the physical branch office location.
+A remote network scenario involves user devices or user-less devices like printers establishing connectivity via customer-premises equipment (CPE), also known as device links, at a physical office location.
 
-Use the following APIs to manage the branch details once a branch is onboarded to the service.
+Use the following APIs to manage the details of a remote network that you've onboarded to the service.
 
 | Sample operations | Description |
 |--|--|
-| [Create a branch](../api/networkaccess-connectivity-post-branches.md) <br/>[Create device links for a branch](../api/networkaccess-branchsite-post-devicelinks.md) <br/>[Create forwarding profiles for a branch](../api/networkaccess-branchsite-post-forwardingprofiles.md)| Create branches and their associated device links and forwarding profiles.|
-| [List branches](../api/networkaccess-connectivity-list-branches.md) <br/>[List device links for a branch](../api/networkaccess-branchsite-list-devicelinks.md) <br/>[List forwarding profiles for a branch](../api/networkaccess-branchsite-list-forwardingprofiles.md)| List branches and their associated device links and forwarding profiles.|
+| [Create a remote network](../api/networkaccess-connectivity-post-remotenetworks.md) <br/>[Create device links for a remote network](../api/networkaccess-remotenetwork-post-devicelinks.md) <br/>[Create forwarding profiles for a remote network](../api/networkaccess-remotenetwork-post-forwardingprofiles.md)| Create remote networks and their associated device links and forwarding profiles.|
+| [List remote networks](../api/networkaccess-connectivity-list-remotenetworks.md) <br/>[List device links for a remote network](../api/networkaccess-remotenetwork-list-devicelinks.md) <br/>[List forwarding profiles for a remote network](../api/networkaccess-remotenetwork-list-forwardingprofiles.md)| List remote networks and their associated device links and forwarding profiles.|
 
 ## Access controls
 
@@ -83,12 +80,6 @@ Forwarding options allows administrators to enable or disable the ability to ski
 ## Audit logs
 
 Monitoring and auditing of events within your environment is crucial for maintaining security, compliance, and operational efficiency. The Global Secure Access events are logged in the [directory logs](../resources/directoryaudit.md) and can be retrieved using associated APIs.
-
-<!--
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/directoryAudits?$filter=
-```
--->
 
 ## Traffic logs and reports
 
