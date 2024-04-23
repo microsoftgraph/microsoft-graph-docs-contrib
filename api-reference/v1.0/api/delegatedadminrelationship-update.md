@@ -12,10 +12,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. 
 
->**Notes:**
->* You can update this relationship when its **status** property is `created`.
->* You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
->* You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long running operation.
+The following restrictions apply:
+- You can update this relationship when its **status** property is `created`.
+- You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
+- You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long-running operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -76,6 +76,7 @@ If you don't supply the template ID that corresponds to the Microsoft Entra Glob
 ## Examples
 
 ### Request
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,6 +116,22 @@ Content-Type: application/json
 }
 ```
 
+``` http
+PATCH https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836
+If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
+Content-Type: application/json
+
+{
+  "accessDetails": {
+    "unifiedRoles": [
+      {
+        "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
+      },
+    ]
+  }
+}
+```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-delegatedadminrelationship-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -150,6 +167,7 @@ Content-Type: application/json
 ---
 
 ### Response
+The following example shows the request.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -191,6 +209,25 @@ Content-Type: application/json
     ]
   },
   "autoExtendDuration": "P180D"
+}
+```
+
+The following is an example response that returns a `202 Accepted` response code along with **Location** and **Retry-After** headers.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.delegatedAdminRelationship"
+}
+-->
+
+``` http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5e5594d3-6f82-458b-b567-77db4811f0cd-00000000-0000-0000-0000-000000001234/operations/d8dbb27b-7fe7-4523-a3df-f766355fe0f2
+Retry-After: 10
+Content-Type: application/json
+
+{
 }
 ```
 
