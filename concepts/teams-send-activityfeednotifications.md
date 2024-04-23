@@ -40,7 +40,7 @@ Activity feed notifications in Teams are comprised of multiple pieces of informa
 
 ![Image showing the components of an activity feed notification, including actor, reason, time stamp, preview, and topic.](images/teams-activityfeednotifications/notificationtemplate.png)
 
-The components include:
+The following table describes the components.
 
 |Component|Description|
 |----------|-----------|
