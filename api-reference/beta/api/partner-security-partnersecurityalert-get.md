@@ -38,15 +38,7 @@ GET /security/partner/securityAlerts/{partnerSecurityAlertId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-#### Supported query patterns
-
-| Pattern                | Supported | Syntax                                | Notes |
-|------------------------|:---------:|---------------------------------------|-------|
-| Filter                 |     ✓     | `/securityAlerts?$filter=propA eq 'value'` |       |
-| Count                  |     ✓     | `/securityAlerts/$count`                   |       |
-| Select                 |     ✓     | `/securityAlerts?$select=propA,propB`      |       |
+This method supports the `$count`, `$filter`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
