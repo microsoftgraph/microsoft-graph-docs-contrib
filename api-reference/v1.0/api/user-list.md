@@ -947,68 +947,6 @@ Content-type: application/json
 }
 ```
 
-### Example 12: List information about synchronized users
-
-The following example lists origin and synchronization information, if available, about B2B collaboration users. Add a `$filter` parameter for the source tenant and add a `$select` parameter for [originTenantInfo](../resources/user.md).
-
-- `originTenantId`: ID of the origin or source Microsoft Entra tenant
-- `originId`: ID of the original user in the origin or source Microsoft Entra tenant
-- `creationType`: User was created using cross-tenant synchronization
-
-For more information, see [Configure cross-tenant synchronization using PowerShell or Microsoft Graph API](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph).
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "list_users_origintenantinfo"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=originTenantInfo,displayName,id&$filter=originTenantInfo/microsoft.graph.crossTenantSynchronizationResource/synchronizationInfo/creationType eq 'TenantToTenantSync'
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(originTenantInfo)",
-    "value": [
-        {
-            "displayName": "User1",
-            "id": "cc9b0598-d9cb-4659-8552-067049cb8675",
-            "originTenantInfo": {
-                "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
-                "originTenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
-                "originId": "c28334bc-4f66-44de-b9b1-5dccc28496b1",
-                "synchronizationInfo": {
-                    "creationType": "tenantToTenantSync"
-                }
-            }
-        },
-        {
-            "displayName": "User4",
-            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
-            "originTenantInfo": {
-                "@odata.type": "#microsoft.graph.crossTenantSynchronizationResource",
-                "originTenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",
-                "originId": "1897469a-2d9b-4337-a372-947efcbf8f4a",
-                "synchronizationInfo": {
-                    "creationType": "tenantToTenantSync"
-                }
-            }
-        }
-    ]
-}
-```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

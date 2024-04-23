@@ -612,38 +612,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **isInMultiTenantOrganization** property to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
-        },
-        {
-          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
-          "ApiChange": "Property",
-          "ChangedApiName": "originTenantInfo",
-          "ChangeType": "Addition",
-          "Description": "Added the **originTenantInfo** property to the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) resource.",
-          "Target": "user"
-        },
-        {
-          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
-          "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantSynchronizationResource",
-          "ChangeType": "Addition",
-          "Description": "Added the [crossTenantSynchronizationResource](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantsynchronizationresource?view=graph-rest-1.0) resource type.",
-          "Target": "crossTenantSynchronizationResource"
-        },
-        {
-          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
-          "ApiChange": "Resource",
-          "ChangedApiName": "synchronizationInfo",
-          "ChangeType": "Addition",
-          "Description": "Added the [synchronizationInfo](https://learn.microsoft.com/en-us/graph/api/resources/synchronizationinfo?view=graph-rest-1.0) resource type.",
-          "Target": "synchronizationInfo"
-        },
-        {
-          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "synchronizationInfoCreationType",
-          "ChangeType": "Addition",
-          "Description": "Added the **synchronizationInfoCreationType** enumeration.",
-          "Target": "synchronizationInfoCreationType"
         }
       ],
       "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
