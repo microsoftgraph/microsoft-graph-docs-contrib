@@ -186,3 +186,18 @@ Content-Type: application/json
    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api/domain-post-federationconfiguration.md:
+      Exception processing links.
+      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
+  ]
+}
+-->

@@ -3,6 +3,7 @@ title: "Microsoft Graph service-specific throttling limits"
 description: "Identify the throttling limits for each Microsoft Graph service to apply best practices to manage throttling in your application."
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.subservice: non-product-specific
 #Customer intent: As a developer using Microsoft Graph to access multiple services, I want to understand the throttling limits imposed by each service, so that I can ensure my application stays within the allowed limits and avoids being throttled.
 ---
 
@@ -72,7 +73,8 @@ The limits listed in the following table apply to the following resource:
 
 | Limit type      | Limit    |
 | -------------- | ------------ |
-| Per tenant | 10,000 requests per 20 seconds |
+| Per application for all tenants | 15,000 requests per 20 seconds |
+| Per tenant for all applications | 10,000 requests per 20 seconds |
 | Per application per tenant  | 1,500 requests per 20 seconds |
 | Per call record | 10 requests per 20 seconds (first page) <br/> 50 requests per 5 minutes (subsequent pages) |
 

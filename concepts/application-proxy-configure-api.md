@@ -2,6 +2,7 @@
 title: "Configure application proxy using Microsoft Graph APIs"
 description: "Provide remote access and single sign-on to on-premises applications by configuring Microsoft Entra application proxy using Microsoft Graph APIs."
 author: FaithOmbongi
+ma.author: ombongifaith
 ms.reviewer: dhruvinrshah, arpadg
 ms.topic: tutorial
 ms.localizationpriority: medium

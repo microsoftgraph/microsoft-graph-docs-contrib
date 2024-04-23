@@ -60,7 +60,7 @@ If successful, this action returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-### Example 1: Create a new version of a workflow
+### Example 1: Create a new version of a joiner workflow with time based trigger
 
 #### Request
 

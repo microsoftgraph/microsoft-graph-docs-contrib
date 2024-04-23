@@ -41,10 +41,10 @@ PATCH /planner/tasks/{id}
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|specifies the categories to which the planner task has been applied. See [applied Categories](../resources/plannerappliedcategories.md) for possible values.|
-|assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|
+|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Specifies the categories to which the Planner task was applied. See [applied Categories](../resources/plannerappliedcategories.md) for possible values.|
+|assigneePriority|String|Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|The set of users the task is assigned to.|
-|bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It's 28 characters long and case-sensitive. [Format validation](../resources/tasks-identifiers-disclaimer.md) is done on the service. |
+|bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. This value 28 characters long and case-sensitive. [Format validation](../resources/tasks-identifiers-disclaimer.md) is done on the service. |
 |conversationThreadId|String|Thread ID of the conversation on the task and is the ID of the conversation thread object created in the group.|
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|
@@ -60,7 +60,7 @@ PATCH /planner/tasks/{id}
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an empty content. If the request specifies the `Prefer` header with a `return=representation` preference, then this method returns a `200 OK` response code and an updated [plannerTask](../resources/plannertask.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an empty content. If the request specifies the `Prefer` header with a `return=representation` preference, this method returns a `200 OK` response code and an updated [plannerTask](../resources/plannertask.md) object in the response body.
 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 

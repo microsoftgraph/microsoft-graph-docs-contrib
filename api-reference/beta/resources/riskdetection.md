@@ -1,11 +1,12 @@
 ---
 title: "riskDetection resource type"
-description: "Represents all risk detections in AzureAD tenants."
+description: "Represents all risk detections in a Microsoft Entra tenant."
 author: "tracyshi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
+
 # riskDetection resource type
 
 Namespace: microsoft.graph

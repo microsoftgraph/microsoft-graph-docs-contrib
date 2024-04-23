@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [bookingCustomer](../resources/bookingcustomer.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

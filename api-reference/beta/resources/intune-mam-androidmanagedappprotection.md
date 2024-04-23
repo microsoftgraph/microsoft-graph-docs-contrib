@@ -23,11 +23,11 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List androidManagedAppProtections](../api/intune-mam-androidmanagedappprotection-list.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) collection|List properties and relationships of the [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) objects.|
-|[Get androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-get.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Read properties and relationships of the [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) object.|
-|[Create androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-create.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Create a new [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) object.|
-|[Delete androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-delete.md)|None|Deletes a [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
-|[Update androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-update.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Update the properties of a [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) object.|
+|[List androidManagedAppProtections](../api/intune-mam-androidmanagedappprotection-list.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) collection|List properties and relationships of the [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) objects.|
+|[Get androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-get.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Read properties and relationships of the [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) object.|
+|[Create androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-create.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Create a new [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) object.|
+|[Delete androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-delete.md)|None|Deletes a [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md).|
+|[Update androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-update.md)|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Update the properties of a [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) object.|
 
 ## Properties
 |Property|Type|Description|

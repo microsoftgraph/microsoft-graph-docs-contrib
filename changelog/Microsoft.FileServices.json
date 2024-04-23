@@ -1,5 +1,39 @@
 {
   "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "db0286e8-ee26-40c2-a706-e331bf6fcb0c",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "siteArchiveStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **siteArchiveStatus** enumeration type.",
+            "Target": "siteArchiveStatus"
+          },
+          {
+            "Id": "db0286e8-ee26-40c2-a706-e331bf6fcb0c",
+            "ApiChange": "Resource",
+            "ChangedApiName": "siteArchivalDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the [siteArchivalDetails](https://learn.microsoft.com/en-us/graph/api/resources/siteArchivalDetails?view=graph-rest-beta) resource.",
+            "Target": "siteArchivalDetails"
+          },
+          {
+            "Id": "db0286e8-ee26-40c2-a706-e331bf6fcb0c",
+            "ApiChange": "Property",
+            "ChangedApiName": "archivalDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the **archivalDetails** property to the [siteCollection](https://learn.microsoft.com/en-us/graph/api/resources/siteCollection?view=graph-rest-beta) resource.",
+            "Target": "siteCollection"
+          }
+        ],
+        "Id": "db0286e8-ee26-40c2-a706-e331bf6fcb0c",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-04-15T06:57:37.5509045Z",
+        "WorkloadArea": "Sites and lists",
+        "SubArea": ""
+      },
      {
       "ChangeList": [
         {
@@ -46,7 +80,8 @@
           "Description": "Added the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource and its methods.",
           "Target": "fileStorageContainer"
         },
-        { "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerCustomPropertyDictionary",
           "ChangeType": "Addition",
@@ -143,7 +178,7 @@
           "Description": "Added the [removeRetentionLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
           "Target": "driveItem"
         },
-       {
+        {
           "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
           "ApiChange": "Method",
           "ChangedApiName": "setRetentionLabel",
@@ -217,7 +252,7 @@
           "Description": "Added the [removeRetentionLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-removeretentionlabel?view=graph-rest-1.0) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "driveItem"
         },
-       {
+        {
           "Id": "7a1f574d-c348-4ce9-890b-d55b58b2d3c2",
           "ApiChange": "Method",
           "ChangedApiName": "setRetentionLabel",
@@ -3806,6 +3841,224 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-13T10:21:51.737705Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "horizontalSectionLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **horizontalSectionLayoutType** enumeration type.",
+          "Target": "horizontalSectionLayoutType"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pageLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **pageLayoutType** enumeration type.",
+          "Target": "pageLayoutType"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pagePromotionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **pagePromotionType** enumeration type.",
+          "Target": "pagePromotionType"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sectionEmphasisType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sectionEmphasisType** enumeration type.",
+          "Target": "sectionEmphasisType"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "titleAreaLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **titleAreaLayoutType** enumeration type.",
+          "Target": "titleAreaLayoutType"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "titleAreaTextAlignmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **titleAreaTextAlignmentType** enumeration type.",
+          "Target": "titleAreaTextAlignmentType"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metaDataKeyStringPair",
+          "ChangeType": "Addition",
+          "Description": "Added the [metaDataKeyStringPair](https://learn.microsoft.com/en-us/graph/api/resources/metaDataKeyStringPair?view=graph-rest-1.0) resource.",
+          "Target": "metaDataKeyStringPair"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metaDataKeyValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [metaDataKeyValuePair](https://learn.microsoft.com/en-us/graph/api/resources/metaDataKeyValuePair?view=graph-rest-1.0) resource.",
+          "Target": "metaDataKeyValuePair"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reactionsFacet",
+          "ChangeType": "Addition",
+          "Description": "Added the [reactionsFacet](https://learn.microsoft.com/en-us/graph/api/resources/reactionsFacet?view=graph-rest-1.0) resource.",
+          "Target": "reactionsFacet"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serverProcessedContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [serverProcessedContent](https://learn.microsoft.com/en-us/graph/api/resources/serverProcessedContent?view=graph-rest-1.0) resource.",
+          "Target": "serverProcessedContent"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "titleArea",
+          "ChangeType": "Addition",
+          "Description": "Added the [titleArea](https://learn.microsoft.com/en-us/graph/api/resources/titleArea?view=graph-rest-1.0) resource.",
+          "Target": "titleArea"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webPartData",
+          "ChangeType": "Addition",
+          "Description": "Added the [webPartData](https://learn.microsoft.com/en-us/graph/api/resources/webPartData?view=graph-rest-1.0) resource.",
+          "Target": "webPartData"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webPartPosition",
+          "ChangeType": "Addition",
+          "Description": "Added the [webPartPosition](https://learn.microsoft.com/en-us/graph/api/resources/webPartPosition?view=graph-rest-1.0) resource.",
+          "Target": "webPartPosition"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseSitePage",
+          "ChangeType": "Addition",
+          "Description": "Added the [baseSitePage](https://learn.microsoft.com/en-us/graph/api/resources/baseSitePage?view=graph-rest-1.0) resource.",
+          "Target": "baseSitePage"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "canvasLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the [canvasLayout](https://learn.microsoft.com/en-us/graph/api/resources/canvasLayout?view=graph-rest-1.0) resource.",
+          "Target": "canvasLayout"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "horizontalSection",
+          "ChangeType": "Addition",
+          "Description": "Added the [horizontalSection](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSection?view=graph-rest-1.0) resource.",
+          "Target": "horizontalSection"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "horizontalSectionColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the [horizontalSectionColumn](https://learn.microsoft.com/en-us/graph/api/resources/horizontalSectionColumn?view=graph-rest-1.0) resource.",
+          "Target": "horizontalSectionColumn"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pages",
+          "ChangeType": "Addition",
+          "Description": "Added the **pages** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sitePage",
+          "ChangeType": "Addition",
+          "Description": "Added the [sitePage](https://learn.microsoft.com/en-us/graph/api/resources/sitePage?view=graph-rest-1.0) resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "standardWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the [standardWebPart](https://learn.microsoft.com/en-us/graph/api/resources/standardWebPart?view=graph-rest-1.0) resource.",
+          "Target": "standardWebPart"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "textWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the [textWebPart](https://learn.microsoft.com/en-us/graph/api/resources/textWebPart?view=graph-rest-1.0) resource.",
+          "Target": "textWebPart"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verticalSection",
+          "ChangeType": "Addition",
+          "Description": "Added the [verticalSection](https://learn.microsoft.com/en-us/graph/api/resources/verticalSection?view=graph-rest-1.0) resource.",
+          "Target": "verticalSection"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webPart",
+          "ChangeType": "Addition",
+          "Description": "Added the [webPart](https://learn.microsoft.com/en-us/graph/api/resources/webPart?view=graph-rest-1.0) resource.",
+          "Target": "webPart"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the publish method to the sitePage resource.",
+          "Target": "sitePage"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPositionOfWebPart",
+          "ChangeType": "Addition",
+          "Description": "Added the getPositionOfWebPart method to the webPart resource.",
+          "Target": "webPart"
+        },
+        {
+          "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+          "ApiChange": "Method",
+          "ChangedApiName": "getWebPartsByPosition",
+          "ChangeType": "Addition",
+          "Description": "Added the getWebPartsByPosition method to the sitePage resource.",
+          "Target": "sitePage"
+        }
+      ],
+      "Id": "153d11d0-4cbe-4e5e-aeaa-0e8869f1f1c8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-12T03:30:57.9480878Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
