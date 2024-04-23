@@ -1,5 +1,5 @@
 ---
-title: "Create customClaimsPolicy"
+title: "Create/Replace customClaimsPolicy"
 description: "Create a new customClaimsPolicy object or replace an existing customClaimsPolicy object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
@@ -49,7 +49,6 @@ In the request body, supply a JSON representation of the [customClaimsPolicy](..
 
 You can specify the following properties when creating a **customClaimsPolicy**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |includeBasicClaimSet|Boolean|This property determines whether the basic claim set is included in tokens affected by this policy. If set to `true`, all claims in the basic claim set are emitted in tokens affected by the policy. By default the basic claim set isn't in the tokens, unless they're explicitly configured in this policy. Optional.|
@@ -87,7 +86,6 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 ### Response
 
