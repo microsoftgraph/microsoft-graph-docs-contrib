@@ -15204,6 +15204,8 @@ items:
                 href: api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
               - name: Create
                 href: api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+              - name: Reset
+                href: api/industrydata-provisioningflow-reset.md
               - name: Administrative unit provisioning flow
                 href: resources/industrydata-administrativeunitprovisioningflow.md
                 items:
