@@ -176,7 +176,7 @@ If you're using role-based access control, the **notificationUrl** property look
 
 - `eventhubnamespace` the name you give to the Event Hub namespace.  Can be found in the Event Hubs Overview page under Host name.
 - `eventhubname` is the name you give to the Event Hub.  Can be found in the Event Hubs->Overview->Event Hubs
-- `domainname`The name of your tenant; for example, consto.onmicrosoft.com or contoso.com. Because this domain will be used to access the Azure EventHub, it isi mportant that it matches the domain used by the Azure subscription that holds the Azure EventHub. To get this information, you can go to the overview page of the Microsoft Entra ID. The domain name is displayed under the **TenantId or Primary domain**.
+- `domainname`The name of your tenant; for example, consto.onmicrosoft.com or contoso.com. Because this domain will be used to access the Azure EventHub, it isi mportant that it matches the domain used by the Azure subscription that holds the Azure EventHub. To get this information, visit the Microsoft Entra admin center -> Expand the Identity menu -> select the Overview menu -> under the Overview tab, the domain name is displayed under the Primary domain.
 
 > [!NOTE]
 > Duplicate subscriptions aren't allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
