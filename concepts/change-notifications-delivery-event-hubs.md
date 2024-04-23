@@ -170,7 +170,7 @@ If you're using Key Vault, the **notificationUrl** property looks like this: `Ev
 - `domainname` - The name of your tenant; for example, contoso.com. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and click the subscription. The domain name is displayed under the **Directory** field.
 
 ##### Using Role-based access control
-If you are using Role-based access control, the **notificationUrl** property will look like this:
+If you're using role-based access control, the **notificationUrl** property looks like this:
 
 `EventHub:https://&lt;eventhubnamespace&gt;.servicebus.windows.net/eventhubname/&lt;eventhubname&gt;?tenantId=&lt;domainname&gt;`
 
