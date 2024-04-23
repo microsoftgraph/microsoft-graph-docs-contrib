@@ -163,7 +163,7 @@ Creating a subscription to receive change notifications with Event Hubs is nearl
 At subscription creation, the **notificationUrl** must point to your Event Hubs location.
 
 ##### Using Key Vault
-If you are using Key Vault, the **notificationUrl** property will look like this:  `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
+If you're using Key Vault, the **notificationUrl** property looks like this: `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
 
 - `azurekeyvaultname` - The name you gave to the key vault when you created it. Can be found in the DNS name.
 - `secretname` - The name you gave to the secret when you created it. Can be found on the Azure Key Vault **Secrets** page.
