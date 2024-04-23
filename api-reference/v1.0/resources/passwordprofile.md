@@ -4,7 +4,7 @@ description: "Contains the password profile associated with a user. The **passwo
 ms.localizationpriority: high
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 

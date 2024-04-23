@@ -4,7 +4,7 @@ description: "Get groups, directory roles, and administrative units that the use
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 

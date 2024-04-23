@@ -3,7 +3,7 @@ title: "authorizationInfo resource type"
 description: "Represents the identifiers that can be used to identify and authenticate a user in non-Azure AD environments."
 author: "vimrang"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 
