@@ -26,7 +26,7 @@ The article guides you through the process of managing your Microsoft Graph subs
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK relays the notifications to your application.
 - You don't need to reply to the [notification URL validation](change-notifications-delivery-webhooks.md#notificationurl-validation). You can ignore the validation message that you receive.
 - You need to provision an event hub.
-- You'll need to provision an Azure Key Vault or add our Microsoft Graph Change Tracking service to the data sender role on your Event Hub.
+- You need to provision an Azure Key Vault or add the Microsoft Graph Change Tracking service to the Data Sender role on your Event Hub.
 
 ## Set up the Azure Event Hubs authentication
 
