@@ -15885,14 +15885,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [customClaimsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/customClaimsPolicy?view=graph-rest-beta) resource and its methods.",
           "Target": "customClaimsPolicy"
-        },
-        {
-          "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "claimsPolicy",
-          "ChangeType": "Addition",
-          "Description": "Added the **claimsPolicy** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
-          "Target": "policyRoot"
         }
       ],
       "Id": "8a4d2211-a422-4222-ae28-091295fbafa7",
@@ -15904,14 +15896,6 @@
     },
     {
       "ChangeList": [
-        {
-          "Id": "d73fda59-009d-4aad-80fa-90000c6b4cb2",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "claimsPolicy",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **claimsPolicy** relationship from the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
-          "Target": "policyRoot"
-        },
         {
           "Id": "d73fda59-009d-4aad-80fa-90000c6b4cb2",
           "ApiChange": "Relationship",

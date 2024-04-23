@@ -71,6 +71,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Assign claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Assign a claimsMappingPolicy to this object.|
 |[List claimsMappingPolicies](../api/serviceprincipal-list-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Get all claimsMappingPolicies assigned to this object.|
 |[Remove claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Remove a claimsMappingPolicy from this object.|
+|[Create/Replace customClaimsPolicy](../api/serviceprincipal-put-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Create a new customClaimsPolicy object or replace the existing customClaimsPolicy object for a service principal.|
+|[Get customClaimsPolicy](../api/serviceprincipal-get-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Get the customClaimsPolicy resources from the customClaimsPolicy navigation property.|
+|[Update customClaimsPolicy](../api/serviceprincipal-patch-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Update the customClaimsPolicy object for a service principal.|
 |[Assign homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection| Assign a homeRealmDiscoveryPolicy to this object.|
 |[List homeRealmDiscoveryPolicies](../api/serviceprincipal-list-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection| Get all homeRealmDiscoveryPolicies assigned to this object.|
 |[Remove homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection| Remove a homeRealmDiscoveryPolicy from this object.|
@@ -88,9 +91,6 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[getPasswordSingleSignOnCredentials](../api/serviceprincipal-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md)|Get a credential set for the user or group specified in the body.|
 |[updatePasswordSingleSignOnCredentials](../api/serviceprincipal-updatepasswordsinglesignoncredentials.md)|None|Update a credential set for the user or group specified in the body.|
 |[deletePasswordSingleSignOnCredentials](../api/serviceprincipal-deletepasswordsinglesignoncredentials.md)|None|Delete a credential set for the user or group specified in the body.|
-|[Get customClaimsPolicy](../api/serviceprincipal-list-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md) collection|Get the customClaimsPolicy resources from the claimsPolicy navigation property.|
-|[Create/Replace customClaimsPolicy](../api/serviceprincipal-put-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Create or replace a new customClaimsPolicy object for a service principal|
-|[Update customClaimsPolicy](../api/serviceprincipal-patch-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Update the  customClaimsPolicy object for a service principal|
 
 ## Properties
 

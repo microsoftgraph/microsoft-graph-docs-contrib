@@ -1,19 +1,19 @@
 ---
 title: "Create customClaimsPolicy"
-description: "Create a new customClaimsPolicy object."
+description: "Create a new customClaimsPolicy object or replace an existing customClaimsPolicy object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
 doc_type: apiPageType
 ---
 
-# Create customClaimsPolicy
+# Create/Replace customClaimsPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new customClaimsPolicy object.
+Create a new customClaimsPolicy object or replace an existing customClaimsPolicy object.
 
 ## Permissions
 

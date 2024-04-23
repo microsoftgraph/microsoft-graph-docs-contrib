@@ -1,19 +1,19 @@
 ---
-title: "List customClaimsPolicy"
-description: "Get the customClaimsPolicy resources from the claimsPolicy navigation property."
+title: "Get customClaimsPolicy"
+description: "Get the customClaimsPolicy resource from the claimsPolicy navigation property."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
 doc_type: apiPageType
 ---
 
-# List customClaimsPolicy
+# Get customClaimsPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the customClaimsPolicy resources from the claimsPolicy navigation property.
+Get the customClaimsPolicy resource from the claimsPolicy navigation property.
 
 ## Permissions
 
@@ -21,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "serviceprincipal-list-claimspolicy-permissions"
+  "name": "serviceprincipal-get-claimspolicy-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-claimspolicy-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-get-claimspolicy-permissions.md)]
 
 ## HTTP request
 
