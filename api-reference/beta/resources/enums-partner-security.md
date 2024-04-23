@@ -4,7 +4,7 @@ description: "Microsoft Graph partner security enumeration values."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
-doc_type: resourcePageType
+doc_type: enumPageType
 ---
 
 # Partner security enum values
