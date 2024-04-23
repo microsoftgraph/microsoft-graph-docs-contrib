@@ -3,7 +3,7 @@ title: "extensionSchemaProperty resource type"
 description: "Use the **extensionSchemaProperty** resource to define a property's name and its type, as part of a schemaExtension definition."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "extensions"
+ms.subservice: extensions
 author: "dkershaw10"
 ---
 
@@ -20,7 +20,7 @@ Use the **extensionSchemaProperty** resource to define a property's name and its
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |name|String| The name of the strongly typed property defined as part of a schema extension.|
-|type|String| The type of the property that is defined as part of a schema extension.  Allowed values are `Binary`, `Boolean`, `DateTime`, `Integer` or `String`. See the table below for more details.|
+|type|String| The type of the property that is defined as part of a schema extension. Allowed values are `Binary`, `Boolean`, `DateTime`, `Integer`, or `String`. For more information, see [Supported property data types](#supported-property-data-types).|
 
 ### Supported property data types 
 The following data types are supported when defining a property in a schema extension:
@@ -28,9 +28,9 @@ The following data types are supported when defining a property in a schema exte
 | Property Type | Remarks |
 |-------------|------------|
 | Binary | 256 bytes maximum. |
-| Boolean | Not supported for messages, events and posts. |
-| DateTime | Must be specified in ISO 8601 format. Will be stored in UTC. |
-| Integer | 32-bit value. Not supported for messages, events and posts. |
+| Boolean | Not supported for messages, events, and posts. |
+| DateTime | Must be specified in ISO 8601 format. Is stored in UTC. |
+| Integer | 32-bit value. Not supported for messages, events, and posts. |
 | String | 256 characters maximum. |
 
 ## JSON representation
