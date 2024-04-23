@@ -85,7 +85,7 @@ Content-Type: application/json
 {
   "id": "d8b202fc-a216-3404-69ef-bdffa445eff6",
   "displayName": "Action Required: Virtual machine connecting to crypto currency mining pool Detected",
-  "description": "Analysis of azure resource network activity detected the resource was connecting to a crypto currency mining pool. This would often be an indication that your Azure resource is compromised.",
+  "description": "Analysis of Azure resource network activity detected the resource was connecting to a crypto currency mining pool. This would often be an indication that your Azure resource is compromised.",
   "alertType": "networkConnectionsToCryptoMiningPools",
   "status": "active",
   "severity": "high",
