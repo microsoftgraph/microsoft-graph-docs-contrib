@@ -162,14 +162,20 @@ Creating a subscription to receive change notifications with Event Hubs is nearl
 
 At subscription creation, the **notificationUrl** must point to your Event Hubs location.
 
-##### Using Key Vault
+<!-- Start of "Using Key Vault" tab-->
+# [Using Key Vault](#tab/change-notifications-eventhubs-keyvault)
+
 If you're using Key Vault, the **notificationUrl** property looks like this: `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
 
 - `azurekeyvaultname` - The name you gave to the key vault when you created it. Can be found in the DNS name.
 - `secretname` - The name you gave to the secret when you created it. Can be found on the Azure Key Vault **Secrets** page.
 - `domainname` - The name of your tenant; for example, contoso.com. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and click the subscription. The domain name is displayed under the **Directory** field.
 
-##### Using Role-based access control
+<!-- End of "Using Key Vault tab-->
+
+<!-- Start of "Using RBAC" tab-->
+# [Using role-based access control](#tab/change-notifications-eventhubs-rbac)
+
 If you're using role-based access control, the **notificationUrl** property looks like this:
 
 `EventHub:https://&lt;eventhubnamespace&gt;.servicebus.windows.net/eventhubname/&lt;eventhubname&gt;?tenantId=&lt;domainname&gt;`
@@ -180,6 +186,8 @@ If you're using role-based access control, the **notificationUrl** property look
 
 > [!NOTE]
 > Duplicate subscriptions aren't allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
+
+<!-- End of "Using RBAC tab-->
 
 #### Receive notifications
 
