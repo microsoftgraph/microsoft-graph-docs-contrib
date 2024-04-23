@@ -87,6 +87,8 @@ Content-Type: application/json
 
 A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. When a deployment is created, a deployment audience is automatically created as a relationship.
 
+The deployment can be created as a Recommended one which requires no manual intervention by the end-user or as an Optional one which provides the ability to download and install the update at their convenience. 
+
 Below is an example of creating a deployment of a feature update, with optional settings configuring the [deployment schedule](windowsupdates-schedule-deployment.md) and [monitoring rules](windowsupdates-manage-monitoring-rules.md). [Safeguards](windowsupdates-manage-safeguards.md) are applied by default. The targeted devices are specified in the next step.
 
 ### Request
@@ -121,7 +123,13 @@ Content-type: application/json
                     "action": "pauseDeployment"
                 }
             ]
+        },
+        "userExperience": {
+            "offerAsOptional": false, 
+            "daysUntilForcedReboot": null
         }
+            
+    
     }
 }
 ```
@@ -164,7 +172,10 @@ Content-Type: application/json
                 }
             ]
         },
-        "userExperience": null
+        "userExperience": {
+            "offerAsOptional": false, 
+            "daysUntilForcedReboot": null
+        }
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
