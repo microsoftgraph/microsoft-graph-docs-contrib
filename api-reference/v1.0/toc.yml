@@ -6378,7 +6378,7 @@ items:
                         href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
                       - name: Get authentication method modes
                         href: api/authenticationmethodmodedetail-get.md
-               - name: Authentication event listeners
+              - name: Authentication event listeners
                 href: resources/authenticationeventlistener.md
                 items:
                 - name: List
