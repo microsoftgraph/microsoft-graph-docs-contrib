@@ -52,6 +52,30 @@ You can now:
 
 Work with [site pages](/graph/api/resources/sitepage) and [horizonal](/graph/api/resources/horizontalsection) and [vertical](/graph/api/resources/verticalsection) sections of pages.  
 
+<<<<<<< HEAD
+=======
+### Identity and access | Governance
+
+Use the [Create](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows) operation on the [workflow](/graph/api/resources/identitygovernance-workflow) resource to create now up to 100 workflows that is an increase from the previous limit of 50.
+
+### Identity and access | Identity and sign-in
+
+Configure the [default identity provider](/graph/api/resources/defaultinvitationredemptionidentityproviderconfiguration) to use in redemption flow settings for Microsoft Entra ID B2B collaboration.
+
+### Teamwork and communications | Calls and online meetings
+
+Get the list of [callRecord](/graph/api/resources/callrecords-callrecord) objects and their properties and the associated [participant](/graph/api/resources/callrecords-participant) objects for each **callRecord** using the following APIs:
+
+- [List callRecords](/graph/api/callrecords-cloudcommunications-list-callrecords)
+- [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2)
+
+The following properties are deprecated:
+
+- **organizer** property on [callRecord](/graph/api/resources/callrecords-callrecord) in favor of the **organizer_v2** relationship.
+- **participants** property on [callRecord](/graph/api/resources/callrecords-callrecord) in favor of the **participants_v2** relationship.
+- **identity** property on [participantEndpoint](/graph/api/resources/callrecords-participantendpoint) in favor of the **associatedIdentity** property.
+
+>>>>>>> ad8af92fae29cd86120ea861b3102e3906dcdeff
 ### Users
 
 Associate users or groups as sponsors for a guest user's privileges in the tenant and keep the guest user's information and access updated. You can [assign a sponsor](/graph/api/user-post-sponsors), [list sponsors](/graph/api/user-list-sponsors), and [remove a sponsor](/graph/api/user-delete-sponsors).
@@ -186,6 +210,7 @@ Added the ability to get, get list, update Microsoft Defender for Identity [heal
 ### Users
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Identity and access | Identity and sign-in
 
 - Introduced the following more granular delegated and application permissions for managing tenant branding through the [organizationalBranding](/graph/api/resources/organizationalbranding?view=graph-rest-beta&preserve-view=true) and [organizationalBrandingLocalization](/graph/api/resources/organizationalbrandinglocalization?view=graph-rest-beta&preserve-view=true) resource types:
@@ -260,6 +285,9 @@ Microsoft Teams custom meeting templates allow you to specify values for many of
 =======
 Added the ability to convert an external user to an internal member user using the [user: convertExternalToInternalMemberUser](/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta&preserve-view=true) API. This conversion allows the converted users to maintain their existing user object and access, while gaining the full privileges of an internal member user in the tenant.
 >>>>>>> 3b1003db42a320ec2d0e8c21b4fbb8032f5198cd
+=======
+Added the ability to convert an external user to an internal member user using the [user: convertExternalToInternalMemberUser](/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-beta&preserve-view=true) API. This conversion allows the converted users to maintain their existing user object and access, while gaining the full privileges of an internal member user in the tenant.
+>>>>>>> ad8af92fae29cd86120ea861b3102e3906dcdeff
 
 ## Contribute to Microsoft Graph
 
