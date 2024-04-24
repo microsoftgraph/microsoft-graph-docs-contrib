@@ -15579,30 +15579,30 @@
       "CreatedDateTime": "2023-12-07T12:54:51.8497231Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
-    }
+    },
     {
       "ChangeList": [
         {
-          "Id": "b5d4a760-801b-4be0-be95-58c37aa76fda",
-          "ApiChange": "Property",
-          "ChangedApiName": "registrationCampaign",
+          "Id": "0b3e7745-3b9a-4e75-8e37-98322e48d28f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentCustomization",
           "ChangeType": "Addition",
-          "Description": "Added the **registrationCampaign** property to the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-1.0) resource.",
+          "Description": "Added the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-1.0) resource.",
           "Target": "contentCustomization"
         },
         {
-          "Id": "b5d4a760-801b-4be0-be95-58c37aa76fda",
+          "Id": "0b3e7745-3b9a-4e75-8e37-98322e48d28f",
           "ApiChange": "Property",
-          "ChangedApiName": "registrationCampaignRelativeUrl",
+          "ChangedApiName": "contentCustomization",
           "ChangeType": "Addition",
-          "Description": "Added the **registrationCampaignRelativeUrl** property to the [contentCustomization](https://learn.microsoft.com/en-us/graph/api/resources/contentCustomization?view=graph-rest-1.0) resource.",
-          "Target": "contentCustomization"
+          "Description": "Added the **contentCustomization** property to the [organizationalBrandingProperties](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-1.0) resource.",
+          "Target": "organizationalBrandingProperties"
         }
       ],
-      "Id": "b5d4a760-801b-4be0-be95-58c37aa76fda",
+      "Id": "0b3e7745-3b9a-4e75-8e37-98322e48d28f",
       "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2024-03-14T08:55:26.3710897Z",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-23T07:03:44.8496431Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }
