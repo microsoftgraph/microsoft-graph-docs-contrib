@@ -6865,6 +6865,96 @@
       "CreatedDateTime": "2024-01-29T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "122e04ff-4f46-4c6c-a1dc-441e36ae4b3e",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true&tabs=http) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "122e04ff-4f46-4c6c-a1dc-441e36ae4b3e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-24T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d5db85f2-a894-48d0-b320-1b2161437b78",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) or [list](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "d5db85f2-a894-48d0-b320-1b2161437b78",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-24T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f97124e5-8c3d-43c7-a5b5-b38241363ad4",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "f97124e5-8c3d-43c7-a5b5-b38241363ad4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-24T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "faef6dfa-d425-43ab-b82d-1d118391ddea",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "faef6dfa-d425-43ab-b82d-1d118391ddea",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-24T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "248ef1d3-701b-42d8-b4cc-dce7f15e7c71",
+          "ApiChange": "Property",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added new property **isHiddenForAllMembers** to [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) entity.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "248ef1d3-701b-42d8-b4cc-dce7f15e7c71",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-24T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

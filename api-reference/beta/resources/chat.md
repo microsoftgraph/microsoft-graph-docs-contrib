@@ -78,6 +78,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
 | webUrl| String | The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.|
+| isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all members of the chat.
 
 
 ### chatType values 
