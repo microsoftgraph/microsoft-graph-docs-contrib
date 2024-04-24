@@ -1,23 +1,23 @@
 ---
-title: "Use the partner security alerts API in Microsoft Graph (preview)"
-description: "The partner security alerts API can help CSP partners detect patterns of fraudulent activities and misuse in Azure resources of their customers."
+title: "Use the partner security alert API in Microsoft Graph (preview)"
+description: "The partner security alert API can help CSP partners detect patterns of fraudulent activities and misuse in Azure resources of their customers."
 author: "manusidd"
 ms.localizationpriority: medium
 ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
 ---
 
-# Use the partner security alerts API in Microsoft Graph (preview)
+# Use the partner security alert API in Microsoft Graph (preview)
 
 Namespace: microsoft.graph.partner.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As a partner in the Cloud Solution Provider (CSP) program, you're responsible for your customer's Azure consumption; therefore, it's important that you're aware of any anomalous usage in your customer's Azure subscriptions. Adopt the new API for partners to protect and respond to critical security alerts that impact the customers. Use Microsoft Graph [partner security alerts](../resources/partner-security-partnersecurityalert.md) to detect patterns of fraudulent activities and misuse in Azure resources to help reduce your exposure to online transaction risks. Mitigating and responding to the alerts within 24 hours can significantly help reduce the financial loss that might incur during the compromise.
+As a partner in the Cloud Solution Provider (CSP) program, you're responsible for your customer's Azure consumption; therefore, it's important that you're aware of any anomalous usage in your customer's Azure subscriptions. Use Microsoft Graph [partner security alert](../resources/partner-security-partnersecurityalert.md) API to detect patterns of fraudulent activities and misuse in Azure resources to help reduce your exposure to online transaction risks. Mitigating and responding to the alerts within 24 hours can significantly contribute to minimizing the financial loss that might incur during the compromise.
 
 For details on how to immediately contain a compromise on your customer’s tenant or Azure subscriptions, see [What additional steps can you take to lower the risk of compromise](/partner-center/azure-fraud-notification#what-additional-steps-can-you-take-to-lower-the-risk-of-compromise).
 
-The partner security alerts API is defined in the OData subnamespace `microsoft.graph.partners.security`.
+The partner security alert API is defined in the OData subnamespace `microsoft.graph.partners.security`.
 
 ## Authorization
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## Common use cases
 
-The following are requests for working with the partner security alerts API in Microsoft Graph.
+The following are requests for working with the partner security alert API in Microsoft Graph.
 
 | Use cases   | REST operations | Try it in Graph Explorer |
 |:---------------|:--------|:----------|
@@ -43,7 +43,7 @@ The following are requests for working with the partner security alerts API in M
 
 ## Next steps
 
-The partner security alerts API in Microsoft Graph enables detection of fraudulent activities and misuse in Azure resources, which helps reduce your exposure to online transaction risks. Follow these steps to get started:
+The partner security alert API in Microsoft Graph enables detection of fraudulent activities and misuse in Azure resources, which helps reduce your exposure to online transaction risks. Follow these steps to get started:
 
 - Drill down on the methods and properties of the [partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) resource.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
