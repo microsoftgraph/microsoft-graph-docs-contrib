@@ -167,7 +167,22 @@
         },
         {
             "source_path_from_root": "/api-reference/beta/resources/security-intelligenceprofilesponsorstate.md",
-            "redirect_url": "/graph/api/resources/security-intelligenceprofilecountryorregionoforigin.md?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/security-intelligenceprofilecountryorregionoforigin?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/resources/azure-ad-overview.md",
+            "redirect_url": "/graph/api/resources/identity-network-access-overview?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/resources/azure-ad-overview.md",
+            "redirect_url": "/graph/api/resources/identity-network-access-overview?view=graph-rest-1.0",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/concepts/azuread-identity-access-management-concept-overview",
+            "redirect_url": "/graph/identity-network-access-overview",
             "redirect_document_id": true
         }
     ]
