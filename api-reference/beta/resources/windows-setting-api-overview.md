@@ -141,7 +141,7 @@ Properties in the object are commonly a subset of those that are available in th
 
 #### Payload types
 
-Some payload types have a special role in the Windows settings backup process.
+The payload types described in this section have a special role in the Windows settings backup process.
 
 #### windows.data.platform.backuprestore.deviceprofile 
 
