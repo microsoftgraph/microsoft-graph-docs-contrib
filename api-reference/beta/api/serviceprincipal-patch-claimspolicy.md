@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [customCl
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_customclaimspolicy_from_"
+  "name": "update_customclaimspolicy_from_"
 }
 -->
 ``` http
