@@ -67,6 +67,9 @@ If successful, this method returns a `201 Created` response code with the ID of 
 ## Examples
 
 ### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_bookmark_from_bookmarks_e1"
