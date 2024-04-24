@@ -9,9 +9,9 @@ doc_type: conceptualPageType
 
 # Deploy a feature update using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited security updates, and driver updates. This topic focuses on deployments of feature updates. For information on deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).  For infomation about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
+With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](windowsupdates-deployments.md) of Windows 10/11 feature updates, expedited security updates, and driver updates. This topic focuses on deployments of feature updates. For information on deploying expedited security updates, see [Deploy an expedited security update](windowsupdates-deploy-expedited-update.md).  For information about deploying driver updates, see [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
-When you deploy a feature update to a device, Windows Update offers the specified update to the device if it hasn't yet received the update. For example, if you deploy Windows 10 feature update version 20H2 to a device that is enrolled in feature update management and is currently on an older version of Windows 10, the device updates to version 20H2. If the device is already at or above version 20H2, it stays on its current version. If the device isn't enrolled in feature update management, the device isn't affected by this operation.
+When you deploy a feature update to a device, Windows Update offers the specified update to the device if it hasn't yet received the update. For example, if you deploy Windows 10 feature update version 20H2 to a device that is enrolled in feature update management and is currently on an older version of Windows 10, the device updates to version 20H2. If the device is already at or beyond version 20H2, it stays on its current version. If the device isn't enrolled in feature update management, the device isn't affected by this operation.
 
 As long as a device remains enrolled in feature update management, the device doesn't receive any other feature updates from Windows Update unless explicitly deployed using the deployment service.
 
@@ -27,7 +27,7 @@ As long as a device remains enrolled in feature update management, the device do
 
 You can query the deployment service catalog to get a list of updates that can be deployed to devices as content in a deployment.
 
-Below is an example of querying for all Windows 10 feature updates that are deployable by the deployment service.
+The following example shows how to query for all Windows 10 feature updates that are deployable by the deployment service.
 
 ### Request
 
