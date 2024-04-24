@@ -33,7 +33,7 @@ None.
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
-  "blockType": "ignore",
+  "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.partner.security.partnerSecurity",
   "baseType": "microsoft.graph.entity",
