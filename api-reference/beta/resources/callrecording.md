@@ -55,8 +55,11 @@ The following JSON representation shows the resource type.
 ```json
 {
   "content": "Stream",
-  "createdDateTime": "String (timestamp)",  
+  "createdDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",  
   "id": "String (identifier)",
+  "callId": "String (identifier)",
+  "contentCorrelationId": "String (identifier)",
   "meetingId": "String",
   "meetingOrganizerId": "String",
   "meetingOrganizer": {"@odata.type": "microsoft.graph.identitySet"},
