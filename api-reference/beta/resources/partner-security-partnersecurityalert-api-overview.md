@@ -1,5 +1,5 @@
 ---
-title: "Use the partner security alerts API in Microsoft Graph (preview)"
+title: "Use the partner security alert API in Microsoft Graph (preview)"
 description: "The partner security alerts API can help CSP partners detect patterns of fraudulent activities and misuse in Azure resources of their customers."
 author: "manusidd"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "partner-customer-administration"
 doc_type: resourcePageType
 ---
 
-# Use the partner security alerts API in Microsoft Graph (preview)
+# Use the partner security alert API in Microsoft Graph (preview)
 
 Namespace: microsoft.graph.partner.security
 
