@@ -89,7 +89,7 @@ A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content
 
 The deployment can be created as a Recommended one, which requires no manual intervention by the end-user or as an Optional one, which provides the ability to download and install the update at their convenience. 
 
-Below is an example of creating a deployment of a feature update, with optional settings configuring the [deployment schedule](windowsupdates-schedule-deployment.md) and [monitoring rules](windowsupdates-manage-monitoring-rules.md). [Safeguards](windowsupdates-manage-safeguards.md) are applied by default. The targeted devices are specified in the next step.
+The following example shows how to create a deployment of a feature update, with optional settings configuring the [deployment schedule](windowsupdates-schedule-deployment.md) and [monitoring rules](windowsupdates-manage-monitoring-rules.md). [Safeguards](windowsupdates-manage-safeguards.md) are applied by default. The targeted devices are specified in the next step.
 
 ### Request
 
@@ -125,11 +125,9 @@ Content-type: application/json
             ]
         },
         "userExperience": {
-            "offerAsOptional": false, 
+            "offerAsOptional": false,
             "daysUntilForcedReboot": null
         }
-            
-    
     }
 }
 ```
