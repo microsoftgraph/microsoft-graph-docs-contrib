@@ -51,3 +51,9 @@ Namespace: microsoft.graph.partner.security
 |investigating|
 |unknownFutureValue|
 
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.partner.security"
+}
+-->
