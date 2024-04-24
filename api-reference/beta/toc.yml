@@ -1644,19 +1644,21 @@ items:
                   - name: Get
                     href: api/cloudclipboarditem-get.md
               - name: Windows settings
-                href: resources/windowssetting.md
                 items:
-                  - name: List
-                    href: api/usersettings-list-windows.md
-                  - name: Get
-                    href: api/windowssetting-get.md
-              - name: Windows setting instance
-                href: resources/windowssettinginstance.md
-                items:
-                  - name: List
-                    href: api/windowssetting-list-instances.md
-                  - name: Get
-                    href: api/windowssettinginstance-get.md
+                  - name: Windows setting
+                    href: resources/windowssetting.md
+                    items:
+                      - name: List
+                        href: api/usersettings-list-windows.md
+                      - name: Get
+                        href: api/windowssetting-get.md
+                  - name: Windows setting instance                    
+                    href: resources/windowssettinginstance.md
+                    items:              
+                      - name: List
+                        href: api/windowssetting-list-instances.md
+                      - name: Get
+                        href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
@@ -17979,6 +17981,8 @@ items:
                 href: api/plannertask-delete.md
               - name: List user's tasks
                 href: api/planneruser-list-tasks.md
+              - name: List user's My Day tasks
+                href: api/planneruser-list-mydaytasks.md
               - name: Get delta
                 href: api/plannertask-delta.md
           - name: Bucket
@@ -18114,6 +18118,8 @@ items:
                 href: api/planneruser-list-recentplans.md
               - name: List user's assigned tasks
                 href: api/planneruser-list-tasks.md
+              - name: List user's My Day tasks
+                href: api/planneruser-list-mydaytasks.md
           - name: Task details
             href: resources/plannertaskdetails.md
             items:
