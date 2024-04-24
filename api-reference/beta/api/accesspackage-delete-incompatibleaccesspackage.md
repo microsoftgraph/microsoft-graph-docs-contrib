@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Remove accessPackage from incompatibleAccessPackages
@@ -86,10 +85,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/remove-incompatibleaccesspackage-from-accesspackage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/remove-incompatibleaccesspackage-from-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

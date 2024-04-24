@@ -4,9 +4,8 @@ description: "A raw count of inactive serverless functions in the specified AWS,
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # inactiveServerlessFunctionFinding: aggregatedSummary

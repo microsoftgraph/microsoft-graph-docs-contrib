@@ -64,7 +64,7 @@ stages:
     - pwsh: $(tocGeneratorApp) --api-docs $(v1ReferenceRoot)/api --resource-docs $(v1ReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(v1ReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(v1ReferenceRoot)/toc.yml --static-toc $(v1ReferenceRoot)/toc/static-toc.yml
       displayName: Generate v1 reference TOC
 
-    - pwsh: $(tocGeneratorApp) --api-docs $(betaReferenceRoot)/api --resource-docs $(betaReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(betaReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(betaReferenceRoot)/toc.yml --static-toc $(betaReferenceRoot)/toc/static-toc.yml
+    - pwsh: $(tocGeneratorApp) --api-docs $(betaReferenceRoot)/api --resource-docs $(betaReferenceRoot)/resources --csdl $(workloadsFolderPath) --mapping $(betaReferenceRoot)/toc/toc.mapping.json --terms-override $(referenceRoot)/toc.terms.overrides.json --toc $(betaReferenceRoot)/toc.yml --static-toc $(betaReferenceRoot)/toc/static-toc.yml --api-version beta
       displayName: Generate beta reference TOC
 
     - pwsh: |

@@ -5,7 +5,6 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # virtualEndpoint: retrieveScopedPermissions

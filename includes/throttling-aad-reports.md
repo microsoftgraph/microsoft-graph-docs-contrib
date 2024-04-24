@@ -1,7 +1,7 @@
 ---
 author: "egreenberg14"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: entra-monitoring-health
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->

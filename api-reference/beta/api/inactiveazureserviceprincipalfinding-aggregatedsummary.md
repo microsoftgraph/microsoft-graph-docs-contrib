@@ -4,9 +4,8 @@ description: "View the count of inactive Azure service principals for the specif
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # inactiveAzureServicePrincipalFinding: aggregatedSummary

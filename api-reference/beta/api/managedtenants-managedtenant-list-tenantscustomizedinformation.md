@@ -5,7 +5,6 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List tenantCustomizedInformation
@@ -37,9 +36,9 @@ GET /tenantRelationships/managedTenants/tenantsCustomizedInformation
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top`.
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Name          | Description                                                                                               |
+| :------------ | :-------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 
 ## Request body
 Don't supply a request body for this method.
@@ -126,6 +125,19 @@ Content-Type: application/json
           "email": "hector@fourthcoffee.com",
           "phone": "5558009732"
         }
+      ],
+      "businessRelationship": "Managed",
+      "complianceRequirements": [
+        "NIST",
+        "HIPPA"
+      ],
+      "managedServicesPlans": [
+        "Microsoft Entra ID P1"
+      ],
+      "note": "This is a test note.",
+      "noteLastModifiedDateTime": "2024-04-03 00:10:21.1989208",
+      "partnerRelationshipManagerUserIds": [
+        "3c23994c-711b-46f6-ab1e-0aeef19413f3"
       ]
     },
     {
@@ -143,6 +155,18 @@ Content-Type: application/json
           "email": "timothy@consolidatedmessenger.com",
           "phone": "5558001379"
         }
+      ],
+      "businessRelationship": "Managed",
+      "complianceRequirements": [
+        "CMMC"
+      ],
+      "managedServicesPlans": [
+        "Microsoft 365 Business Premium"
+      ],
+      "note": "This is another test note",
+      "noteLastModifiedDateTime": "2024-04-01 18:15:23.00",
+      "partnerRelationshipManagerUserIds": [
+        "8c6881ca-8968-4650-adeb-6ec34180098c"
       ]
     }
   ]

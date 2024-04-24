@@ -2,10 +2,10 @@
 title: "tenantReference: removePersonalData"
 description: "Create a request to remove the personal data for an outboundSharedUserProfile."
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # tenantReference: removePersonalData

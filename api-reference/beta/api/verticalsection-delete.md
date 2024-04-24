@@ -5,7 +5,6 @@ author: sangle7
 ms.localizationpriority: medium
 ms.subservice: sharepoint
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Delete verticalSection
@@ -39,13 +38,13 @@ DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/ve
 
 ## Request body
 
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
 ## Response
 
 If successful, this call returns a `204 No Content`. It doesn't return anything in the response body.
 
-If the vertical section is not found, this method returns `404 Not Found`.
+If the vertical section isn't found, this method returns `404 Not Found`.
 
 ## Example
 
@@ -56,7 +55,7 @@ If the vertical section is not found, this method returns `404 Not Found`.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
+DELETE https://graph.microsoft.com/beta/sites/a69edae4-9208-4f60-9aa3-cd0911ff0ce1/pages/7f7a2740-2d74-47ba-af0c-71ed3a3384ca/microsoft.graph.sitePage/canvasLayout/verticalSection
 ```
 ### Response
 

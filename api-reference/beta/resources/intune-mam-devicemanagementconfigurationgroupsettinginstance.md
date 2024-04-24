@@ -25,7 +25,7 @@ Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune
 |:---|:---|:---|
 |settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
-|groupSettingValue|[deviceManagementConfigurationGroupSettingValue](../resources/intune-mam-devicemanagementconfigurationgroupsettingvalue.md)|GroupSetting value|
+|groupSettingValue|[deviceManagementConfigurationGroupSettingValue](../resources/intune-shared-devicemanagementconfigurationgroupsettingvalue.md)|GroupSetting value|
 
 ## Relationships
 None

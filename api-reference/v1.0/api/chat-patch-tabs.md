@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 Update the properties of the specified [tab](../resources/teamstab.md) in a [chat](../resources/chat.md). 
 This can be used to configure the content of the tab.
 
-> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab pinned in the meeting will be updated.
+> [!NOTE] 
+> - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab pinned in the meeting will be updated.
+> - You can't use this API to update a static tab. An attempt to update a static tab returns a `400 Bad Request` response code.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

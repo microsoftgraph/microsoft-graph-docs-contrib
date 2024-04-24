@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "myra-ramdenbourg"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List device transitive memberships

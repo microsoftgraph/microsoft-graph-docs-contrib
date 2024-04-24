@@ -5,7 +5,6 @@ author: "sthapliyal"
 ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.topic: reference
 ---
 
 # Delete chat

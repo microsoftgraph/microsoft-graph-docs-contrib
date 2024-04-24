@@ -4,9 +4,8 @@ description: "Convert an external user to an internal member."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # user: convertExternalToInternalMemberUser
@@ -16,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Convert an externally authenticated user into an internal user. The user is able to sign into the host tenant as an internal user and access resources as a member. For more information about this conversion, see [Convert external users to internal users](/entra/identity/users/convert-external-users-internal).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -110,6 +111,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/userthisconvertexternaltointernalmemberuser-cloudonly-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userthisconvertexternaltointernalmemberuser-cloudonly-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/userthisconvertexternaltointernalmemberuser-cloudonly-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -188,6 +193,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -254,6 +263,10 @@ POST https://graph.microsoft.com/beta/users/0b8cc234-ef87-4015-9785-cbb42000d41c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/userthisconvertexternaltointernalmemberuser-synceduser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userthisconvertexternaltointernalmemberuser-synceduser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

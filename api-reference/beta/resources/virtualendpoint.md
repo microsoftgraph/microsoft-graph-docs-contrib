@@ -45,6 +45,8 @@ Inherits from [entity](../resources/entity.md).
 |[Create cloudPcExternalPartnerSetting](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
 |[List frontLintServicePlans](../api/virtualendpoint-list-frontlineserviceplans.md) |[cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) collection|Get a list of the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) objects and their properties.|
 |[List sharedUseServicePlans](../api/virtualendpoint-list-shareduseserviceplans.md) (deprecated)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|List properties and relationships of the [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) objects.|
+|[List bulkActions](../api/virtualendpoint-list-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
+|[Create cloudPcBulkAction](../api/virtualendpoint-post-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Create a new [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
 
 ## Properties
 
@@ -57,6 +59,7 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|Cloud PC audit event.|
+|bulkActions|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Bulk actions applied to a Cloud PC.|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) collection|Cloud managed virtual desktops.|
 |crossCloudGovernmentOrganizationMapping|[cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md)|Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.|
 |deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|

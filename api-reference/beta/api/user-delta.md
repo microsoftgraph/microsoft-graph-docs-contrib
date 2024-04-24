@@ -4,9 +4,8 @@ description: "Get newly created, updated, or deleted users without having to per
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # user: delta

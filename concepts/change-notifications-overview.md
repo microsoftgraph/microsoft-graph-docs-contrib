@@ -5,7 +5,7 @@ author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
 ms.topic: concept-article
-ms.prod: change-notifications
+ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 12/27/2023

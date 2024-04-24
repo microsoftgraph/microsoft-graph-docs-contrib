@@ -4,16 +4,15 @@ description: "Submits a data policy operation request, made by a Company Adminis
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # user: exportPersonalData
 
 Namespace: microsoft.graph
 
-Submit a data policy operation request from a company administrator or an application to export an organizational user's data. This data includes the user's data stored in OneDrive and their activity reports. For more guidance about exporting data while complying with regulations, see [Data Subject Requests and the GDPR and CCPA](/compliance/regulatory/gdpr-data-subject-requests).
+Submit a data policy operation request from a company administrator or an application to export an organizational user's data. This data includes the user's data stored in OneDrive and their activity reports. For more information about exporting data while complying with regulations, see [Data Subject Requests and the GDPR and CCPA](/compliance/regulatory/gdpr-data-subject-requests).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -39,7 +38,7 @@ POST /users/{id}/exportPersonalData
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description |
+| Parameter       | Type    |Description |
 |:---------------|:--------|:----------|
 |storageLocation|String|This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.|
 

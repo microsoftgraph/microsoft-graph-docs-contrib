@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "sumitgupta3"
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # channel: unarchive
@@ -19,6 +18,8 @@ Restore an archived [channel](../resources/channel.md). Unarchiving restores the
 Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchive operation completes successfully, which might occur after this method responds.
 
 > **Note**: An archived channel that belongs to an archived team cannot be unarchived. Unarchive the team before you unarchive the channel; otherwise, an error will occur.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

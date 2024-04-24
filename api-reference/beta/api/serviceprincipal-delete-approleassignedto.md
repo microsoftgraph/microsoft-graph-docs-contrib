@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
-ms.topic: reference
 ---
 
 # Delete appRoleAssignedTo
@@ -16,7 +15,7 @@ Namespace: microsoft.graph
 
 Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user, group, or client service principal has been granted for a resource service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

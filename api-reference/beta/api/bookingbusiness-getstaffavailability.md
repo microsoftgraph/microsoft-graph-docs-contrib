@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: kwekua
 ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # bookingsBusiness: getStaffAvailability
@@ -16,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the availability information of [staff members](../resources/bookingstaffmember.md) of a [Microsoft Bookings calendar](../resources/bookingappointment.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

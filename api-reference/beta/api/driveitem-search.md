@@ -6,7 +6,6 @@ title: Search for files
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Search for driveItems within a drive
 

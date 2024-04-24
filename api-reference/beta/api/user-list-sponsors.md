@@ -3,9 +3,8 @@ title: "List sponsors"
 description: "Get a user's sponsors."
 ms.localizationpriority: medium
 author: "sadia353"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List sponsors

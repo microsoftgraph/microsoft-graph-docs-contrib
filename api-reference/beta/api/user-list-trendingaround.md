@@ -4,9 +4,8 @@ description: "Calculated insight that returns the list of items trending around 
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List trendingAround

@@ -4,9 +4,8 @@ description: "Get all services in a GCP authorization system."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List services (for a GCP authorization system)

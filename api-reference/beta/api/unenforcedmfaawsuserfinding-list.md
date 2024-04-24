@@ -4,9 +4,8 @@ description: "Get a list of the unenforcedMfaAwsUserFinding objects and their pr
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List unenforcedMfaAwsUserFinding objects

@@ -5,7 +5,6 @@ author: "rwaithera"
 ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get peopleAdminSettings

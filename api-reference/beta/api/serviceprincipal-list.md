@@ -5,7 +5,6 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
-ms.topic: reference
 ---
 
 # List servicePrincipals
@@ -16,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

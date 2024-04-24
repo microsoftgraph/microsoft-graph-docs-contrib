@@ -5,7 +5,6 @@ author: "razortbone"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Update bookingCustomQuestion
@@ -16,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

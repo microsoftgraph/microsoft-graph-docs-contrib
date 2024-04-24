@@ -5,7 +5,6 @@ author: "nkramer"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Update tab
@@ -17,6 +16,9 @@ Namespace: microsoft.graph
 Update the properties of the specified [tab](../resources/teamstab.md).
 
 This API can be used to configure the content of the tab.
+
+> [!NOTE] 
+> You can't use this API to update a static tab. An attempt to update a static tab returns a `400 Bad Request` response code.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

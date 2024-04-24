@@ -5,7 +5,6 @@ title: "listItem: delta"
 ms.localizationpriority: "medium"
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # listItem: delta
@@ -316,9 +315,6 @@ Content-type: application/json
       },
       "deleted": {
         "state": "deleted"
-      },
-      "@removed": {
-        "reason": "deleted"
       }
     }
   ],

@@ -3,9 +3,8 @@ title: "List appRoleAssignments granted to a user"
 description: "Retrieve the list of app role assignments granted to a user."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "psignoret"
-ms.topic: reference
 ---
 
 # List appRoleAssignments granted to a user

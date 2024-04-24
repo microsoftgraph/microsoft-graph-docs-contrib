@@ -4,8 +4,7 @@ description: "Get an open extension (openTypeExtension object) identified by nam
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
-ms.topic: reference
+ms.subservice: extensions
 ---
 
 # Get openTypeExtension

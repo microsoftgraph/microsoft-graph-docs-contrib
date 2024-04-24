@@ -5,7 +5,6 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "psignoret"
-ms.topic: reference
 ---
 
 # Grant an appRoleAssignment for a service principal
@@ -24,7 +23,7 @@ To grant an app role assignment, you need three identifiers:
 - `resourceId`: The `id` of the resource **servicePrincipal** which has defined the app role.
 - `appRoleId`: The `id` of the **appRole** (defined on the resource service principal) to assign to a user, group, or service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

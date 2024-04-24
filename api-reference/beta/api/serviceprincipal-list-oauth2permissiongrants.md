@@ -5,7 +5,6 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "psignoret"
-ms.topic: reference
 ---
 
 # List oauth2PermissionGrants granted to a service principal
@@ -16,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, representing delegated permissions granted to the service principal (representing the client application) to access an API on behalf of a user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Assign claimsMappingPolicy
@@ -16,7 +15,7 @@ Namespace: microsoft.graph
 
 Assign a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) to a [servicePrincipal](../resources/servicePrincipal.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

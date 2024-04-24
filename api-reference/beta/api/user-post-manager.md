@@ -4,9 +4,8 @@ description: "Assign a user's manager."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Assign a manager

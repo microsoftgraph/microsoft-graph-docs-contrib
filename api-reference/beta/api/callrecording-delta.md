@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "JacobSatora"
 ms.subservice: "teams"
-ms.topic: reference
 ---
 
 # callRecording: delta
