@@ -31,7 +31,7 @@ select := []string {
 	"UDPConnectionPercentage",
 	"LastConnectionGateway",
 	"LastConnectionProtocol",
-	"EventDateTime",
+	"LastActiveTime",
 }
 requestBody.SetSelect(select)
 skip := int32(0)

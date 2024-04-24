@@ -27,7 +27,9 @@ select := []string {
 	"ManagedDeviceName",
 	"UserPrincipalName",
 	"TotalUsageInHour",
-	"DaysSinceLastSignIn",
+	"LastActiveTime",
+	"PcType",
+	"CreatedDate"
 }
 requestBody.SetSelect(select)
 

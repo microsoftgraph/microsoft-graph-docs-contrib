@@ -20,7 +20,9 @@ var requestBody = new GetTotalAggregatedRemoteConnectionReportsPostRequestBody
 		"ManagedDeviceName",
 		"UserPrincipalName",
 		"TotalUsageInHour",
-		"DaysSinceLastSignIn",
+		"LastActiveTime",
+		"PcType",
+		"CreatedDate"
 	},
 };
 

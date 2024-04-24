@@ -84,7 +84,9 @@ Content-length: 199
         "ManagedDeviceName",
         "UserPrincipalName",
         "TotalUsageInHour",
-        "DaysSinceLastSignIn"
+        "LastActiveTime",
+        "PcType",
+        "CreatedDate"
     ]
 }
 ```

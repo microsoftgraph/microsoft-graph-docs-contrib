@@ -18,7 +18,9 @@ request_body = GetTotalAggregatedRemoteConnectionReportsPostRequestBody(
 		"ManagedDeviceName",
 		"UserPrincipalName",
 		"TotalUsageInHour",
-		"DaysSinceLastSignIn",
+		"LastActiveTime",
+		"PcType",
+		"CreatedDate"
 	],
 )
 

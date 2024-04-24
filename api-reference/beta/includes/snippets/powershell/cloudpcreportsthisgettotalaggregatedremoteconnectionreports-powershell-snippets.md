@@ -15,7 +15,9 @@ $params = @{
 "ManagedDeviceName"
 "UserPrincipalName"
 "TotalUsageInHour"
-"DaysSinceLastSignIn"
+"LastActiveTime"
+"PcType"
+"CreatedDate"
 )
 }
 

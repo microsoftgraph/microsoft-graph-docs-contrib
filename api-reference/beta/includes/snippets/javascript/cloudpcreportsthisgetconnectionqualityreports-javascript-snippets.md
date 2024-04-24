@@ -24,7 +24,7 @@ const stream = {
     'UDPConnectionPercentage',
     'LastConnectionGateway',
     'LastConnectionProtocol',
-    'EventDateTime'
+    'LastActiveTime'
   ],
   skip: '0',
   top: '25',

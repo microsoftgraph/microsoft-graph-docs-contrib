@@ -17,7 +17,9 @@ select.add("CloudPcId");
 select.add("ManagedDeviceName");
 select.add("UserPrincipalName");
 select.add("TotalUsageInHour");
-select.add("DaysSinceLastSignIn");
+select.add("LastActiveTime");
+select.add("PcType");
+select.add("CreatedDate");
 getTotalAggregatedRemoteConnectionReportsPostRequestBody.setSelect(select);
 graphClient.deviceManagement().virtualEndpoint().reports().getTotalAggregatedRemoteConnectionReports().post(getTotalAggregatedRemoteConnectionReportsPostRequestBody);
 

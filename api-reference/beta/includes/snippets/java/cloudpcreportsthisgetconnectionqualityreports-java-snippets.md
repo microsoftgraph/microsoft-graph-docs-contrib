@@ -22,7 +22,7 @@ select.add("AvgRemoteSignInTimeInSecP50");
 select.add("UDPConnectionPercentage");
 select.add("LastConnectionGateway");
 select.add("LastConnectionProtocol");
-select.add("EventDateTime");
+select.add("LastActiveTime");
 getConnectionQualityReportsPostRequestBody.setSelect(select);
 getConnectionQualityReportsPostRequestBody.setSkip(0);
 getConnectionQualityReportsPostRequestBody.setTop(25);
