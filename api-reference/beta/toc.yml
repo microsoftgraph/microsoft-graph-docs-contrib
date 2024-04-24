@@ -1628,8 +1628,9 @@ items:
                   - name: Get
                     href: api/cloudclipboarditem-get.md
               - name: Windows settings
-                href: resources/windows-setting-api-overview.md
                 items:
+                  - name: Overview
+                    href: resources/windows-setting-api-overview.md
                   - name: Windows setting
                     href: resources/windowssetting.md
                     items:
