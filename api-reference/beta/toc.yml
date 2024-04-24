@@ -17217,7 +17217,7 @@ items:
               - name: Update alert
                 href: api/alert-update.md
               - name: Update multiple alerts
-                href: api/alert-updatealerts.md              
+                href: api/alert-updatealerts.md
           - name: Records management
             items:
               - name: Overview
