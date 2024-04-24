@@ -13,7 +13,7 @@ use Microsoft\Graph\Generated\Models\WebApplication;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Application();
-$requestBody->setIdentifierUris(['https://contosoiwaapp-contoso.msappproxy.net', 	]);
+$requestBody->setIdentifierUris(['api://32977d3b-ee0e-4614-9f50-f583a07842d2', 	]);
 $web = new WebApplication();
 $web->setRedirectUris(['https://contosoiwaapp-contoso.msappproxy.net', 	]);
 $web->setHomePageUrl('https://contosoiwaapp-contoso.msappproxy.net');
