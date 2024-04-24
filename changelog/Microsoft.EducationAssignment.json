@@ -406,24 +406,6 @@
         }
       ],
       "Cloud": "Prod",
-      "CreatedDateTime": "2024-04-22T03:14:22.628566Z",
-      "Id": "79a508b6-2af7-4efe-9253-efc0e104ffaf",
-      "Version": "beta",
-      "WorkloadArea": "Education",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "ApiChange": "Method",
-          "ChangedApiName": "excuse",
-          "ChangeType": "Addition",
-          "Description": "Added the [excuse](https://learn.microsoft.com/en-us/graph/api/educationsubmission-excuse?view=graph-rest-beta) method to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
-          "Id": "79a508b6-2af7-4efe-9253-efc0e104ffaf",
-          "Target": "educationSubmission"
-        }
-      ],
-      "Cloud": "Prod",
       "CreatedDateTime": "2023-11-13T03:14:22.628566Z",
       "Id": "79a508b6-2af7-4efe-9253-efc0e104ffaf",
       "Version": "beta",
