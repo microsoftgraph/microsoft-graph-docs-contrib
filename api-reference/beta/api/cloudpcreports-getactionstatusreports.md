@@ -3,7 +3,7 @@ title: "cloudPcReports: getActionStatusReports"
 description: "Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -19,13 +19,10 @@ Get the remote action status reports, including data such as the Cloud PC ID, Cl
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | CloudPC.Read.All, CloudPC.ReadWrite.All     |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | CloudPC.Read.All, CloudPC.ReadWrite.All     |
+<!-- { "blockType": "permissions", "name": "cloudpcreports_getactionstatusreports" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcreports-getactionstatusreports-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ POST /deviceManagement/virtualEndpoint/reports/getActionStatusReports
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -211,8 +208,8 @@ Content-Type: application/octet-stream
       "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
       "Resize to 64GB RAM - John",
       "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
-      "john@cpccustomer001.onmicrosoft.com",
-      "connie@cpccustomer001.onmicrosoft.com",
+      "john@contoso.com",
+      "connie@contoso.com",
       "Resize",
       "failed",
       "2020-07-23T10:10:57Z",

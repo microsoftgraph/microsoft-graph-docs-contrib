@@ -3,12 +3,11 @@ title: "fileStorageContainer: activate"
 description: "Activate a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
 # fileStorageContainer: activate
-
 
 Namespace: microsoft.graph
 
@@ -43,7 +42,7 @@ POST /storage/fileStorage/containers/{containerId}/activate
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

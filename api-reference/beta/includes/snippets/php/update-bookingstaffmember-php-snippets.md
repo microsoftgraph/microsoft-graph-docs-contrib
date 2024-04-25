@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\BookingStaffMember;
+use Microsoft\Graph\Generated\Models\BookingWorkHours;
+use Microsoft\Graph\Generated\Models\BookingWorkTimeSlot;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -87,6 +91,6 @@ $workingHoursArray []= $workingHoursBookingWorkHours5;
 $requestBody->setWorkingHours($workingHoursArray);
 
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->staffMembers()->byBookingStaffMemberId('bookingStaffMember-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->staffMembers()->byBookingStaffMemberId('bookingStaffMember-id')->patch($requestBody)->wait();
 
 ```

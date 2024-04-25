@@ -3,7 +3,7 @@ title: "Delete webPart"
 description: "Delete a webPart object."
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout
 
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
-|Authorization|Bearer {token}.| Required|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).| Required|
 | _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted.
 
 ## Request body
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content`. It doesn't return anythin
 <!-- { "blockType": "request", "name": "delete-webpart", "scopes": "sites.readwrite.all" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
+DELETE https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/webParts/58ce69a6-bcb0-4f35-b6cd-d757d95f1a8e
 ```
 
 # [C#](#tab/csharp)
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/micro
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-webpart-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-webpart-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

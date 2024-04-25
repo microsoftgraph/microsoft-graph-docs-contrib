@@ -4,7 +4,7 @@ description: "Read the properties and relationships of an encryptedGcpStorageBuc
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ This method does not support OData query parameters to help customize the respon
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -59,10 +59,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxFbmNyeXB0ZWRHY3BTdG9yYWdlQnVja2V0RmluZGluZyw0NjM4OQ/microsoft.graph.encryptedGcpStorageBucketFinding
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-encryptedgcpstoragebucketfinding-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-encryptedgcpstoragebucketfinding-javascript-snippets.md)]

@@ -3,7 +3,7 @@ title: "diagnostic resource type"
 description: "Information about an error or warning for a OneNote operation."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: notes
+ms.subservice: onenote
 author: "jewan-microsoft"
 ---
 
@@ -17,7 +17,7 @@ Information about an error or warning for a OneNote operation.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

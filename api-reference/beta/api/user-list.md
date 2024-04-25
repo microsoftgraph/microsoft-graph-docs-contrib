@@ -2,8 +2,9 @@
 title: "List users"
 description: "Retrieve a list of user objects."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -52,7 +53,7 @@ The following properties are not supported in personal Microsoft accounts and wi
 
 | Header | Value |
 |:------ |:----- |
-| Authorization | Bearer {token} (required)  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
@@ -139,7 +140,7 @@ Content-type: application/json
       "mailNickname":"contoso1_gmail.com#EXT#",
       "otherMails":["contoso1@gmail.com"],
       "proxyAddresses":["SMTP:contoso1@gmail.com"],
-      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"contoso1_gmail.com#EXT#@contoso.com"
     }
   ]
 }
@@ -256,7 +257,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2b-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -316,7 +317,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission. 
+The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -396,7 +397,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission. 
+The following example shows a request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the *AuditLog.Read.All* permission.
 
 <!-- {
   "blockType": "ignored",
@@ -558,7 +559,7 @@ Content-type: application/json
       "mailNickname":"a_contoso.com#EXT#",
       "otherMails":["a@contoso.com"],
       "proxyAddresses":["SMTP:a@contoso.com"],
-      "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"a_contoso.com#EXT#@contoso.com"
     }
   ]
 }
@@ -763,7 +764,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-to-count-e10-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -815,7 +816,7 @@ Content-type: application/json
       "mail":"'contosoadmin1@gmail.com",
       "mailNickname":"contosoadmin1_gmail.com#EXT#",
       "proxyAddresses":["SMTP:contosoadmin1@gmail.com"],
-      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@contoso.com"
     }
   ]
 }

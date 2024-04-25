@@ -4,7 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.education_user import EducationUser
+from msgraph.generated.models.physical_address import PhysicalAddress
+from msgraph.generated.models.education_student import EducationStudent
+from msgraph.generated.models.education_teacher import EducationTeacher
+from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.assigned_license import AssignedLicense
+from msgraph.generated.models.assigned_plan import AssignedPlan
+from msgraph.generated.models.password_profile import PasswordProfile
+from msgraph.generated.models.provisioned_plan import ProvisionedPlan
+from msgraph.generated.models.education_on_premises_info import EducationOnPremisesInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

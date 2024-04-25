@@ -3,7 +3,7 @@ title: "Update retentionLabel"
 description: "Update the properties of a retentionLabel object."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -16,7 +16,7 @@ Update the properties of a [retentionLabel](../resources/security-retentionlabel
 
 To update a [disposition review stage](../resources/security-dispositionreviewstage.md), include the **actionAfterRetentionPeriod** property in the request body with one of the possible values specified.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,7 +38,7 @@ PATCH /security/labels/retentionLabels/{retentionLabelId}
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -51,18 +51,19 @@ PATCH /security/labels/retentionLabels/{retentionLabelId}
 |descriptionForUsers|String|This is an optional property that provides the label information for the user.|
 |dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Review stages during which reviewers are notified to determine whether a document must be deleted or retained.|
 |retentionDuration|[microsoft.graph.security.retentionDuration](../resources/security-retentionduration.md)|Specifies the number of days to retain the content.|
-|defaultRecordBehavior|microsoft.graph.security.defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created.The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`.|
+|defaultRecordBehavior|microsoft.graph.security.defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created. The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`.|
 |labelToBeApplied|String|Specifies the replacement label to be applied automatically after the retention period of the current label ends. |
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,19 +72,16 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}
+PATCH https://graph.microsoft.com/beta/security/labels/retentionLabels/9563a605-e827-4324-a5a9-09efddff1e50
 Content-Type: application/json
 Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
   "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDuration"
+    "@odata.type": "microsoft.graph.security.retentionDurationInDays",
+    "days": 2555
   },
-  "descriptionForAdmins": "String",
-  "descriptionForUsers": "String",
-  "labelToBeApplied": "String",
-  "defaultRecordBehavior": "String"
 }
 ```
 
@@ -122,27 +120,13 @@ Content-length: 555
 ---
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+Here's an example of the response.
+
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.retentionLabel"
+  "blockType": "response"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.retentionLabel",
-  "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
-  "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDuration"
-  },
-  "descriptionForAdmins": "String",
-  "descriptionForUsers": "String",
-  "labelToBeApplied": "String",
-  "defaultRecordBehavior": "String"
-}
+HTTP/1.1 204 No Content
 ```
 

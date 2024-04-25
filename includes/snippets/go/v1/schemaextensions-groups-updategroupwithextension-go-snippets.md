@@ -17,14 +17,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewGroup()
 additionalData := map[string]interface{}{
-graphlearn_courses := graphmodels.New()
+bellowscollege_courses := graphmodels.New()
 courseId := "123"
-graphlearn_courses.SetCourseId(&courseId) 
+bellowscollege_courses.SetCourseId(&courseId) 
 courseName := "New Managers"
-graphlearn_courses.SetCourseName(&courseName) 
+bellowscollege_courses.SetCourseName(&courseName) 
 courseType := "Online"
-graphlearn_courses.SetCourseType(&courseType) 
-	requestBody.SetGraphlearn_courses(graphlearn_courses)
+bellowscollege_courses.SetCourseType(&courseType) 
+	requestBody.SetBellowscollege_courses(bellowscollege_courses)
 }
 requestBody.SetAdditionalData(additionalData)
 

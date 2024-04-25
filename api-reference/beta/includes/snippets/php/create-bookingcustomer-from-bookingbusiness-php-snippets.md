@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\BookingCustomer;
+use Microsoft\Graph\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Generated\Models\Phone;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -43,6 +47,6 @@ $phonesArray []= $phonesPhone2;
 $requestBody->setPhones($phonesArray);
 
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customers()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->customers()->post($requestBody)->wait();
 
 ```

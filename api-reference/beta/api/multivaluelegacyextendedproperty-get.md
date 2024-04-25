@@ -3,7 +3,7 @@ title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: non-product-specific
+ms.subservice: non-product-specific
 author: "SuryaLashmiS"
 ---
 
@@ -147,7 +147,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

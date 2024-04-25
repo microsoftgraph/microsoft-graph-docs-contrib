@@ -3,7 +3,7 @@ title: "failedOperation resource type"
 description: "Represents an export operation that failed to complete."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
 Represents an export operation that failed to complete.
 

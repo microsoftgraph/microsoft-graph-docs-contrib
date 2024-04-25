@@ -3,7 +3,7 @@ title: "Create webPart"
 description: "Create a new webPart at a specified position in the sitePage"
 author: sangle7
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [webPart] at a specified position in the [sitePage].
 
-[sitepage]: ../resources/sitePage.md
+[sitePage]: ../resources/sitePage.md
 [webPart]: ../resources/webPart.md
 
 ## Permissions
@@ -44,7 +44,7 @@ POST /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/h
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -66,7 +66,7 @@ The following example shows how to create a new webpart.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts
+POST /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts
 Content-Type: application/json
 
 {

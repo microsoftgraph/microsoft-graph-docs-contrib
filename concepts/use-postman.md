@@ -48,7 +48,7 @@ You don't need the agent if you're using the Postman for Windows app. If you ope
 
 ## Step 3: Create a Microsoft Entra application
 
-To use this collection in your own developer tenant, create a Microsoft Entra application and give it the appropriate permissions for the requests that you want to call. If you don't have a developer tenant, you can sign up for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
+To use this collection in your own developer tenant, create a Microsoft Entra application and give it the appropriate permissions for the requests that you want to call. If you don't have a Microsoft 365 tenant, you might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
@@ -69,6 +69,8 @@ To use this collection in your own developer tenant, create a Microsoft Entra ap
 The application now has two permissions configured. `Mail.Read` is added as a delegated permission, which is a permission that requires a signed-in user. The application can read mail on behalf of the user. `User.Read.All` is added as an application permission, which is a permission that does not require a signed-in user. The application can read users in Microsoft Entra ID.
 
 ## Step 4: Configure authentication
+
+**IMPORTANT:** In the following steps, <u>always set values in the "Current value" column</u>, not the "Initial value" column. This ensures that your secrets and tokens are saved locally on your machine.
 
 In this step, you set up the environment variables in Postman that you use to retrieve an access token.
 
@@ -104,6 +106,6 @@ Certain [conditional access policies](/azure/active-directory/conditional-access
 
 See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-forbidden-access-to-odata-is-disabled).
 
-## See also
+## Related content
 
 - [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)

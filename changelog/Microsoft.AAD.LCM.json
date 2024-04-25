@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "2452248e-8074-411b-be6a-516c9cf679dc",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Change",
+          "Description": "Updated the [Create](https://learn.microsoft.com/en-us/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta) operation for the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) resource to now support the creation of up to 100 workflows, an increase from the previous limit of 50.",
+          "Target": "workflow"
+        }
+     ],
+     "Id": "2452248e-8074-411b-be6a-516c9cf679dc",
+     "Cloud": "Prod",
+     "Version": "beta",
+     "CreatedDateTime": "2024-04-18T00:00:00.4220905Z",
+     "WorkloadArea": "Identity and access",
+     "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f3fdc4fc-f82a-4cc9-8ef9-bb4d61064300",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Change",
+          "Description": "Updated the [Create](https://learn.microsoft.com/en-us/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-1.0) operation for the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) resource to now support the creation of up to 100 workflows, an increase from the previous limit of 50.",
+          "Target": "workflow"
+        }
+     ],
+     "Id": "f3fdc4fc-f82a-4cc9-8ef9-bb4d61064300",
+     "Cloud": "Prod",
+     "Version": "v1.0",
+     "CreatedDateTime": "2024-04-18T00:00:00.4220905Z",
+     "WorkloadArea": "Identity and access",
+     "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
@@ -411,6 +447,56 @@
       "CreatedDateTime": "2023-12-06T09:31:11.1773353Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "25e60695-da0e-40bd-af14-d0afbf76f1ae",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "membershipChangeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **membershipChangeType** enumeration type.",
+          "Target": "membershipChangeType"
+        },
+        {
+          "Id": "25e60695-da0e-40bd-af14-d0afbf76f1ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeChangeTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-attributeChangeTrigger?view=graph-rest-beta) resource.",
+          "Target": "attributeChangeTrigger"
+        },
+        {
+          "Id": "25e60695-da0e-40bd-af14-d0afbf76f1ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupBasedSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupBasedSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-groupBasedSubjectSet?view=graph-rest-beta) resource.",
+          "Target": "groupBasedSubjectSet"
+        },
+        {
+          "Id": "25e60695-da0e-40bd-af14-d0afbf76f1ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membershipChangeTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [membershipChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-membershipChangeTrigger?view=graph-rest-beta) resource.",
+          "Target": "membershipChangeTrigger"
+        },
+        {
+          "Id": "25e60695-da0e-40bd-af14-d0afbf76f1ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "triggerAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [triggerAttribute](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-triggerAttribute?view=graph-rest-beta) resource.",
+          "Target": "triggerAttribute"
+        }
+      ],
+      "Id": "25e60695-da0e-40bd-af14-d0afbf76f1ae",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-15T13:37:55.8912697Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
     },
     {
       "ChangeList": [
@@ -903,6 +989,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-10-10T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "927921b0-bbc6-46cb-a99e-b58b3001b7ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "maximumRetries",
+          "ChangeType": "Addition",
+          "Description": "Added the **maximumRetries** property to the [customExtensionClientConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "customExtensionClientConfiguration"
+        }
+      ],
+      "Id": "927921b0-bbc6-46cb-a99e-b58b3001b7ef",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-24T15:31:43.4881624Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

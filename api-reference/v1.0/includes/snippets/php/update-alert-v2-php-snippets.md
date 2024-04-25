@@ -5,12 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Alert;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Alert();
-$requestBody->setAssignedTo('secAdmin@contoso.onmicrosoft.com');
+$requestBody->setAssignedTo('secAdmin@contoso.com');
 $requestBody->setClassification(new AlertClassification('truePositive'));
 $requestBody->setDetermination(new AlertDetermination('malware'));
 $requestBody->setStatus(new AlertStatus('inProgress'));

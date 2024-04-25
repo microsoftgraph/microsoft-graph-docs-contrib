@@ -2,8 +2,9 @@
 title: "user resource type"
 description: "Represents a Microsoft Entra user account. Inherits from directoryObject."
 author: "yyuank"
+ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 
@@ -34,9 +35,10 @@ This resource supports:
 | [Get user](../api/user-get.md) | [user](user.md) | Read properties and relationships of user object. |
 | [Update user](../api/user-update.md) | [user](user.md) | Update user object. |
 | [Delete user](../api/user-delete.md) | None | Delete user object. |
-| [Get delta](../api/user-delta.md) | user collection | Get incremental changes for users. |
+| [Get delta](../api/user-delta.md) | [user](user.md) collection | Get incremental changes for users. |
 | [changePassword](../api/user-changepassword.md) | None | Update your own password. |
-| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | None | Invalidate all of the user's refresh tokens issued to applications. |
+| [Convert external user to internal member user](../api/user-convertexternaltointernalmemberuser.md) | [user](user.md) | Convert an externally authenticated user into an internal member user. |
+| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | [user](user.md) | Invalidate all of the user's refresh tokens issued to applications. |
 | [validatePassword](../api/user-validatepassword.md)|[passwordValidationInformation](../resources/passwordvalidationinformation.md)|Validate a user's password against the organization's password validation policy and report whether the password is valid. |
 | **App role assignments**|||
 | [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles that a user has been assigned. |
@@ -124,6 +126,9 @@ This resource supports:
 | [List Outlook categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) collection                                 | Get all the categories defined for the user. |
 | [Translate Exchange Ids](../api/user-translateexchangeids.md) | [convertIdResult](convertidresult.md) collection | Translate identifiers of Outlook-related resources between formats. |
 | [Update user mailbox settings](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Enable, configure, or disable one or more mailboxSettings for a user. |
+| **Password-based single sign-on credentials** |||
+| [getPasswordSingleSignOnCredentials](../api/user-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md) collection|Get the list of password-based single sign-on credentials for given user. Passwords are never returned, and instead are always returned as null or empty strings.|
+| [deletePasswordSingleSignOnCredentials](../api/user-deletepasswordsinglesignoncredentials.md)|None|Delete password-based single sign-on credential for a given service principal that is associated to a given user.|
 | **People** |||
 | [List people](../api/user-list-people.md) | [person](person.md) | Retrieve a list of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships. |
 | **Photo** |||
@@ -200,13 +205,14 @@ This resource supports:
 | employeeId | String | The employee identifier assigned to the user by the organization. The maximum length is 16 characters.<br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with a user. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`).|
 | employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`).|
+| externalUserConvertedOn | DateTimeOffset | The date and time when the user was converted from external to internal.
 | externalUserState | String | For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `in`). |
 | externalUserStateChangeDateTime | String | Shows the timestamp for the latest change to the externalUserState property. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `in`). |
 | faxNumber | String | The fax number of the user. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | givenName | String | The given name (first name) of the user. Maximum length is 64 characters. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br> Returned only on `$select`. <br> **Note:** This property is specific to SharePoint Online. We recommend using the native **employeeHireDate** property to set and update hire date values using Microsoft Graph APIs. |
 | id | String | The unique identifier for the user. It should be treated as an opaque identifier. Inherited from [directoryObject](directoryobject.md). Not nullable. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
-| identities | [objectIdentity](objectIdentity.md) collection | Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account. It may contain multiple items with the same **signInType** value. <br><br>Supports `$filter` (`eq`) including on `null` values, only where the **signInType** is not `userPrincipalName`. |
+| identities | [objectIdentity](objectIdentity.md) collection | Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account. It may contain multiple items with the same **signInType** value. <br><br> Supports `$filter` (`eq`) with limitations. <!--Supports `$filter` (`eq`) including on `null` values, only where the **signInType** is not `userPrincipalName`.--> |
 | imAddresses | String collection | The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for users to describe their interests. <br><br>Returned only on `$select`. |
@@ -258,7 +264,7 @@ This resource supports:
 | surname | String | The user's surname (family name or last name). Maximum length is 64 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | usageLocation | String | A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.  Examples include: `US`, `JP`, and `GB`. Not nullable. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where the domain must be present in the tenant's verified domain collection. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md).<br>NOTE: This property can't contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, `' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) and `$orderby`.
-| userType | String | A String value that can be used to classify user types in your directory, such as `Member` and `Guest`. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users) |
+| userType | String | A String value that can be used to classify user types in your directory. The possible values are `Member` and `Guest`. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users) |
 
 > [!TIP]
 > Directory extensions and associated data are returned by default; schema extensions and associated data are returned only on `$select`; and open extensions and associated data are returned only on `$expand`.
@@ -445,6 +451,7 @@ The following is a JSON representation of the resource.
   "employeeLeaveDateTime": "String (timestamp)",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
   "employeeType": "String",
+  "externalUserConvertedOn": "String (timestamp)",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
   "faxNumber": "String",
@@ -532,7 +539,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

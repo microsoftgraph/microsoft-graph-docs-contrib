@@ -3,7 +3,7 @@ title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
 author: "frank-masuelli"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ This method supports the `$select` query parameter. For general information, see
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

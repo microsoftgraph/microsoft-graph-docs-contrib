@@ -55,6 +55,7 @@ const bookingAppointment = {
     invoiceId: '1001',
     'invoiceStatus@odata.type':'#microsoft.graph.bookingInvoiceStatus',
     invoiceStatus: 'open',
+    isCustomerAllowedToManageBooking: true,
     invoiceUrl: 'theInvoiceUrl',
     isLocationOnline: true,
     optOutOfCustomerEmail: false,
@@ -171,7 +172,7 @@ const bookingAppointment = {
     ]
 };
 
-await client.api('/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/appointments')
+await client.api('/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/appointments')
 	.version('beta')
 	.post(bookingAppointment);
 

@@ -3,7 +3,7 @@ title: "Get transitiveReports for orgContact"
 description: "Get the count of transitive reports for an organizational contact."
 author: "dkershaw10"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ This method does not support the use of query parameters, but does require the `
 
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | ConsistencyLevel | eventual. Required. |
 
 ## Request body

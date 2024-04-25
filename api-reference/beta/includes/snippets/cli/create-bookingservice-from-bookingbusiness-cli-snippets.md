@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta booking-businesses services create --booking-business-id {bookingBusiness-id} --body '{\
+mgc-beta solutions booking-businesses services create --booking-business-id {bookingBusiness-id} --body '{\
     "@odata.type":"#microsoft.graph.bookingService",\
     "defaultDuration":"PT1H30M",\
     "defaultLocation":{\
@@ -48,6 +48,7 @@ mgc-beta booking-businesses services create --booking-business-id {bookingBusine
     "displayName":"Bento",\
     "isLocationOnline": true,\
     "smsNotificationsEnabled": true,\
+    "isCustomerAllowedToManageBooking": true,\
     "languageTag": "en-US",\
     "isHiddenFromCustomers":false,\
     "notes":"Home-cooked special",\

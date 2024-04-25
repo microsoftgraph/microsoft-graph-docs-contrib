@@ -3,7 +3,7 @@ title: "Cross-tenant access settings API overview"
 description: "Cross-tenant access settings let you manage both B2B collaboration and B2B direct connect for your organization."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -342,12 +342,33 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 </td>
 <td> Users in group 'g1' are blocked from accessing application 'a1' only. All users, including users in group 'g1' are able to access any other application. </td>
 </tr>
+<tr>
+<td>
+    Prioritize using an external federation over Entra ID during guest user invitation redemption
+</td>
+<td>
+
+``` json 
+"invitationRedemptionIdentityProviderConfiguration": { 
+    "primaryIdentityProviderPrecedenceOrder": [ 
+        "externalFederation",
+        "azureActiveDirectory", 
+        "socialIdentityProviders" 
+    ], 
+    "fallbackIdentityProvider": "defaultConfiguredIdp" 
+} 
+```
+</td>
+<td>
+Check if the guest user is from an externally federated partner before trying Entra ID for authentication.
+</td>
+</tr>
 </table>
 
 ## Cross-tenant access settings vs tenant restrictions
 
 Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Microsoft Entra organizations. Tenant Restrictions are for controlling how your employees use **other Microsoft Entra organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require additional signals to be injected into the authentication requests to be enforced, because Tenant Restrictions are scoped to networks and devices, not accounts. Learn more about [Tenant Restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
 
-## See also
+## Related content
 
 - [Tutorial: Configure cross-tenant synchronization](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph&toc=/graph/toc.json) 

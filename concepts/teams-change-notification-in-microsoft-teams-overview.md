@@ -3,7 +3,7 @@ title: "Change notifications for Microsoft Teams resources"
 description: "Subscribe to resource and resource data changes in Microsoft Teams using the Microsoft Graph API. Learn about change notification types and payloads."
 author: "anandab-msft"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -28,10 +28,13 @@ For details about which resources support which types of change notifications, s
 
 The following table lists the Microsoft Teams resources that support change notifications and their corresponding resource paths. Apply the resource path for your scenario as specified when [creating a subscription](/graph/api/subscription-post-subscriptions). The type of the resource path payload is the type under the "Resource" column or a collection of that type.
 
+> [!NOTE]
+> Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
+
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications** |
 |:----------------|:------------|:-----------------------------------------|
-| Teams [callRecording](/graph/api/resources/callrecording) | All recordings in an organization: `communications/onlineMeetings/getAllRecordings`  <br>All recordings for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` <br>A call recording that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllRecordings` | Yes |
-| Teams [callTranscript](/graph/api/resources/calltranscript) | All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <br> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` <br>A call transcript that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllTranscripts` | Yes |
+| Teams [callRecording](/graph/api/resources/callrecording) | All recordings in an organization: `communications/onlineMeetings/getAllRecordings`  <br>All recordings for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` <br>A call recording that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllRecordings` <br>A call recording that becomes available in a meeting where a particular Teams app is installed: `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllRecordings` * | Yes |
+| Teams [callTranscript](/graph/api/resources/calltranscript) | All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <br> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` <br>A call transcript that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllTranscripts` <br> A call transcript that becomes available in a meeting where a particular Teams app is installed: `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllTrancripts` * | Yes |
 | Teams [channel](/graph/api/resources/channel) | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
 | Teams [chat](/graph/api/resources/chat) | Changes to any chat in the tenant:<br>`/chats` <br>Changes to a specific chat:<br>`/chats/{id}`<br/>Changes to any chat in the tenant where a particular Teams app is installed:<br/>`/appCatalogs/teamsApps/{id}/installedToChats` | Yes |
 | Teams [chatMessage](/graph/api/resources/chatMessage) | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages`<br>Changes to chat messages in all chats a particular user is part of:<br>`/users/{id}/chats/getAllMessages`<br>Changes to chat messages in all the chats in the tenant where a particular Teams app is installed:<br>`/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` | Yes |
@@ -142,7 +145,7 @@ The previous example shows a notification corresponding to a chat message resour
 > [!NOTE]
 > GET calls always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation returns the updated resource.
 
-## See also
+## Related content
 
 * [Microsoft Graph change notifications](change-notifications-overview.md)
 * [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)

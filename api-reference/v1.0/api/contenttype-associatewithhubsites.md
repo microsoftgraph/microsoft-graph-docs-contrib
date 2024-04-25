@@ -4,7 +4,7 @@ title: "contentType: associateWithHubSites"
 description: "Associate a content type with a list of hub sites."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: associateWithHubSites
@@ -43,7 +43,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

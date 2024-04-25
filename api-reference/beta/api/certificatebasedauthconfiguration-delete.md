@@ -2,8 +2,8 @@
 title: "Delete certificateBasedAuthConfiguration"
 description: "Delete certificateBasedAuthConfiguration."
 ms.localizationpriority: medium
-author: "adimitui"
-ms.prod: "identity-and-sign-in"
+author: "vimrang"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ DELETE /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -4,7 +4,7 @@ description: "Automate the provisioning of identities from HR systems, Active Di
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Microsoft Entra ID synchronization API overview
@@ -67,7 +67,7 @@ To work with the Microsoft Entra ID synchronization APIs, Microsoft Graph suppor
 - Application.Read.All
 - Application.ReadWrite.All
 
-And the following [Microsoft Entra directory roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+And the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - Application Administrator
 - Cloud Application Administrator
@@ -211,7 +211,7 @@ HTTP/1.1 200 OK
     "synchronizationRules": []
 }
 ```
-## See also
+## Related content
 
 * [Configure synchronization with directory extension attributes](/graph/synchronization-configure-with-directory-extension-attributes)
 * [Configure synchronization with custom target attributes](/graph/synchronization-configure-with-custom-target-attributes)

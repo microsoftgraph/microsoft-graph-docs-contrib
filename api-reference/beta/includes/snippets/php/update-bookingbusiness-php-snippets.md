@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\BookingBusiness;
+use Microsoft\Graph\Generated\Models\BookingSchedulingPolicy;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -19,6 +22,6 @@ $schedulingPolicy->setSendConfirmationsToOwner(true);
 $schedulingPolicy->setAllowStaffSelection(true);
 $requestBody->setSchedulingPolicy($schedulingPolicy);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->patch($requestBody)->wait();
 
 ```

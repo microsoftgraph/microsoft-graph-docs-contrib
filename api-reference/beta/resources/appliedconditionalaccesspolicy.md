@@ -3,7 +3,7 @@ title: "appliedConditionalAccessPolicy resource type"
 description: "Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ Indicates the attributes related to applied conditional access policy or policie
 |excludeRulesSatisfied|[conditionalAccessRuleSatisfied](conditionalaccessrulesatisfied.md) collection|List of key-value pairs containing each matched exclude condition in the conditional access policy. Example: `[{"devicePlatform" : "DevicePlatform"}]` means the policy didn't apply, because the DevicePlatform condition was a match.|
 |id|String|Identifier of the conditional access policy.|
 |includeRulesSatisfied|[conditionalAccessRuleSatisfied](conditionalaccessrulesatisfied.md) collection|List of key-value pairs containing each matched include condition in the conditional access policy. Example: `[{ "application" : "AllApps"}, {"users": "Group"}]`, meaning Application condition was a match because AllApps are included *and* Users condition was a match because the user was part of the included Group rule.|
-|result|appliedConditionalAccessPolicyResult| Indicates the result of the CA policy that was triggered. Possible values are: `success`, `failure`, `notApplied` (Policy isn't applied because policy conditions weren't met),`notEnabled` (This is due to the policy in disabled state), `unknown`, `unknownFutureValue`, `reportOnlySuccess`, `reportOnlyFailure`, `reportOnlyNotApplied`, `reportOnlyInterrupted`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reportOnlySuccess`, `reportOnlyFailure`, `reportOnlyNotApplied`, `reportOnlyInterrupted`.|
+|result|appliedConditionalAccessPolicyResult| Indicates the result of the CA policy that was triggered. Possible values are: `success`, `failure`, `notApplied` (policy isn't applied because policy conditions weren't met), `notEnabled` (this is due to the policy in a disabled state), `unknown`, `unknownFutureValue`, `reportOnlySuccess`, `reportOnlyFailure`, `reportOnlyNotApplied`, `reportOnlyInterrupted`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reportOnlySuccess`, `reportOnlyFailure`, `reportOnlyNotApplied`, `reportOnlyInterrupted`.|
 |sessionControlsNotSatisfied|String collection|Refers to the session controls that a sign-in activity didn't satisfy. (Example: `Application enforced Restrictions`).|
 
 
@@ -36,7 +36,7 @@ Indicates the attributes related to applied conditional access policy or policie
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

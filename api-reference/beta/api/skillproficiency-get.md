@@ -41,7 +41,7 @@ This method supports the `$select` query parameter. Specify a list of properties
 
 | Name           | Description                  |
 |:---------------|:-----------------------------|
-| Authorization  | Bearer {token}. Required.    |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required.  |
 
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and the requested [s
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/me/profile/skills/{id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

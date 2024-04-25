@@ -3,7 +3,7 @@ title: "List landingPages"
 description: "Get a list of the landingPage objects and their properties."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ If the result set spans multiple pages, the response body contains an `@odata.ne
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "Delete externalMeetingRegistration"
 description: "Disable and delete an external meeting registration."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}/registration
 
 | Name            | Description               |
 | :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

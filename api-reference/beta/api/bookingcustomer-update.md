@@ -1,13 +1,13 @@
 ---
-title: "Update bookingcustomer"
+title: "Update bookingCustomer"
 description: "Update the properties of a bookingCustomer object."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
-# Update bookingcustomer
+# Update bookingCustomer
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [bookingCustomer](../resources/bookingcustomer.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/customers/{id}
+PATCH /solutions/bookingbusinesses/{id}/customers/{id}
 ```
 
 ## Optional request headers
@@ -38,29 +38,29 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 | Authorization  | Bearer {code}|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
-|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business, and other addresses.|
+|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business, and mobile numbers.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and updated [bookingCustomer](../resources/bookingcustomer.md) object in the response body.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_bookingcustomer",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "8bb19078-0f45-4efb-b2c5-da78b860f73a"]
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
+PATCH https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 Content-type: application/json
 
 {
@@ -93,10 +93,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-bookingcustomer-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingcustomer-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-bookingcustomer-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +100,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,7 +111,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.com')/customers/$entity",
     "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
     "displayName": "Adele",
     "emailAddress": "adele@relecloud.com"

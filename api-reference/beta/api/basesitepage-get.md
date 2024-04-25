@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a baseSitePage object."
 ms.date: 03/15/2018
 title: Get baseSitePage
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -39,13 +39,13 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. 
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -71,7 +71,7 @@ If successful, this method returns a `200` and a [baseSitePage](../resources/bas
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pages/{page-id}
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202
 ```
 
 # [C#](#tab/csharp)
@@ -133,7 +133,7 @@ Content-type: application/json
     "id": "f45354cb-d634-45df-8b88-2b4e96a1dc45",
     "lastModifiedDateTime": "2023-04-16T10:01:41Z",
     "name": "Electronic Convertible.aspx",
-    "webUrl": "SitePages/Electronic Convertible.aspx",
+    "webUrl": "https://contoso.sharepoint.com/SitePages/Electronic Convertible.aspx",
     "title": "Electronic Convertible",
     "pageLayout": "article",
     "thumbnailWebUrl": "https://media.akamai.odsp.cdn.office.net/_layouts/15/images/sitepagethumbnail.png",
@@ -147,13 +147,13 @@ Content-type: application/json
     "createdBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "lastModifiedBy": {
         "user": {
             "displayName": "admin_contoso",
-            "email": "admin@contoso.onmicrosoft.com"
+            "email": "admin@contoso.com"
         }
     },
     "parentReference": {

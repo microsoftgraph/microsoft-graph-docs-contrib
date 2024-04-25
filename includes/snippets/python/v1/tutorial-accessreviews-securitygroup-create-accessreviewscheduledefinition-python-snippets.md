@@ -4,7 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_review_schedule_definition import AccessReviewScheduleDefinition
+from msgraph.generated.models.access_review_scope import AccessReviewScope
+from msgraph.generated.models.access_review_schedule_settings import AccessReviewScheduleSettings
+from msgraph.generated.models.patterned_recurrence import PatternedRecurrence
+from msgraph.generated.models.recurrence_range import RecurrenceRange
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -39,8 +44,8 @@ request_body = AccessReviewScheduleDefinition(
 				type = RecurrenceRangeType.Numbered,
 				number_of_occurrences = 0,
 				recurrence_time_zone = None,
-				start_date = "2022-02-11",
-				end_date = "2022-02-16",
+				start_date = "2024-03-21",
+				end_date = "2024-03-30",
 			),
 		),
 	),

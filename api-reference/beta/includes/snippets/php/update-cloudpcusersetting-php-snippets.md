@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\CloudPcUserSetting;
+use Microsoft\Graph\Generated\Models\CloudPcRestorePointSetting;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -15,6 +18,7 @@ $requestBody->setDisplayName('Example');
 $requestBody->setSelfServiceEnabled(true);
 $restorePointSetting = new CloudPcRestorePointSetting();
 $restorePointSetting->setFrequencyInHours(16);
+$restorePointSetting->setFrequencyType(new CloudPcRestorePointFrequencyType('sixteenHours'));
 $restorePointSetting->setUserRestoreEnabled(true);
 $requestBody->setRestorePointSetting($restorePointSetting);
 $requestBody->setLocalAdminEnabled(false);

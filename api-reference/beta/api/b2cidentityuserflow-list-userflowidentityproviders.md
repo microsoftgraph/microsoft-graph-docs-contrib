@@ -4,7 +4,7 @@ description: "List all identity providers in a b2cIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List a userflowidentityproviders
@@ -24,10 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "b2cidentityuserflow_list_userflowidentityproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/b2cidentityuserflow-list-userflowidentityproviders-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External ID user flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ GET /identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

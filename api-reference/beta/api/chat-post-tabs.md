@@ -3,7 +3,7 @@ title: "Add tab to chat"
 description: "Adds (pins) a tab to the specified chat. "
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -16,20 +16,20 @@ Namespace: microsoft.graph
 Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md). 
 The corresponding app must already be [installed in the chat](../api/chat-list-installedapps.md).
 
-> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab will get added to the meeting.
+> **Notes**:
+> * If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then the tab is effectively added to the meeting.
+> * If the app manifest for a given **appId** contains a static tab that matches the current scope (`chat`/`groupChat`), the static tab is pinned by default.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWriteSelfForChat, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-| Application                            | TeamsTab.Create.Chat*, TeamsTab.ReadWrite.Chat*, TeamsTab.Create, TeamsTab.ReadWriteSelfForChat.All, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chat_post_tabs" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-post-tabs-permissions.md)]
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamsTab.Create.Chat and TeamsTab.ReadWrite.Chat permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +40,14 @@ POST /chats/{chat-id}/tabs
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
 In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).
+
+> [!NOTE] 
+> When you pin a static tab, Teams takes the **displayName** and **configuration** from the app manifest. If these properties are specified in the request body, this API returns a `400 Bad Request` response code.
 
 ## Response
 
@@ -144,7 +147,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Add tab to channel](channel-post-tabs.md)

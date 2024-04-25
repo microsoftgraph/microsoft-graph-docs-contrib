@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph API to work with Project Rome"
 description: "Project Rome is a Microsoft initiative to build a cross-device experiences platform. Project Rome enables an app on a local client or service to interact with apps and services on a remote host when the user signs in with the same Microsoft account that they use to sign in on the client device. This allows you to program cross-device and cross-platform experiences that are centered around user tasks rather than devices."
 ms.localizationpriority: medium
 author: "ailae"
-ms.prod: project-rome
+ms.subservice: project-rome
 doc_type: conceptualPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is a Microsoft initiative to build a cross-device experiences platform. Project Rome enables an app on a local client or service to interact with apps and services on a remote host when the user signs in with the same Microsoft account that they use to sign in on the client device. This allows you to program cross-device and cross-platform experiences that are centered around user tasks rather than devices.
 
-A key component is exposed via Microsoft Graph to enable these experiences: activities.
+The following key capabilities are exposed via Microsoft Graph to help you enable cross-device experiences.
 
 ## Activities
 
@@ -34,3 +34,13 @@ You can use the following Microsoft Graph APIs to create and retrieve user activ
 - [Create or replace a history item](../api/projectrome-put-historyitem.md)
 - [Delete a history item](../api/projectrome-delete-historyitem.md)
 
+## Roaming data
+
+Access Windows data stored in the cloud via the cloud clipboard and Windows settings APIs.
+
+The Cloud Clipboard feature in Windows enables users to copy and paste items such as text, images, and links across their applications and devices. You can use the cloud clipboard APIs in Microsoft Graph to:
+
+- [List cloud clipboard items for the signed-in user](/graph//api/cloudclipboardroot-list-items)
+- [Get a cloud clipboard item for a user](/graph/api/cloudclipboarditem-get)
+
+The Windows setting API in Microsoft Graph enables users and authorized third parties acting on behalf of users to retrieve their Windows operating system settings data stored in the Microsoft cloud. For details about using the Windows setting API, see [Use the Windows settings API](/graph/api/resources/windows-setting-api-overview).

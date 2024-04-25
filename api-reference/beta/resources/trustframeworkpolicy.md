@@ -3,7 +3,7 @@ title: "trustFrameworkPolicy"
 description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This describes the operations available on a trustFrameworkPolicy object for the tenant."
 ms.localizationpriority: medium
 author: "Nickgmicrosoft"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 # trustFrameworkPolicy resource type
@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 - [trustFrameworkPolicy schema](/azure/active-directory-b2c/trustframeworkpolicy) for information about the schema elements.
 - [trustFrameworkPolicy.xsd](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)

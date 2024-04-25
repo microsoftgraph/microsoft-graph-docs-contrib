@@ -3,7 +3,7 @@ title: "getManagedDevicesWithAppFailures function"
 description: "Retrieves the list of devices with failed apps"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ GET /users/{usersId}/getManagedDevicesWithAppFailures
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

@@ -3,7 +3,7 @@ title: "Delete calendar"
 description: "Delete a calendar other than the default calendar."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -58,10 +58,6 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/v1.0/me/calendar
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-calendar-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -69,7 +65,7 @@ DELETE https://graph.microsoft.com/v1.0/me/calendar
 ---
 
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

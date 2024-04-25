@@ -3,7 +3,7 @@ title: "Use the Microsoft Graph identity protection APIs"
 description: "Use Microsoft Graph to query and receive information about risks detected by Microsoft Entra ID Protection."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: conceptualPageType
 ms.date: 08/17/2022
 ---
@@ -46,20 +46,14 @@ For specific guidance and additional information, see [Identify and remediate ri
 
 ## What licenses do I need?
 
-Microsoft Entra ID Protection is a premium feature. You need specific licenses to access full details. 
-
-### For users
-You need a Microsoft Entra ID P1 or P2 license to access the Microsoft Graph [riskDetection API](riskdetection.md) (note: P1 licenses receive limited risk information). The [riskyUsers API](riskyuser.md) is only available with a Microsoft Entra ID P2 license. 
-
-### For service principals
-You need a Workload Identities Premium license to access the Microsoft Graph [servicePrincipalRiskDetection API](serviceprincipalriskdetection.md) and the [riskyServicePrincipals API](riskyserviceprincipal.md).
+Microsoft Entra ID Protection for both users and service principals is a premium feature. You need specific licenses to access the full reports. For more information, see [Identity Protection license requirements](/entra/id-protection/overview-identity-protection#license-requirements).
 
 ## How much data is available?
 
 The availability of risk data is governed by the [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 
-## See also
+## Related content
 
 * [About Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 * [Get started with Microsoft Entra ID Protection and Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

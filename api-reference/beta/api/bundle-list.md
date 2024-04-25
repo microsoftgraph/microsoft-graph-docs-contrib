@@ -3,7 +3,7 @@ author: "spgraph-docs-team"
 title: "List bundles"
 description: "List the bundles in a user's drive."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ You can't use the `expand=children` query parameter to list bundles.
 
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -62,7 +62,7 @@ To request an enumeration of all bundles defined in the drive, you can make a re
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles_e1", "tags": "service.onedrive" } -->
@@ -146,7 +146,7 @@ To filter the list of bundles returned from a request to the bundles collection,
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles-e2", "tags": "service.onedrive" } -->

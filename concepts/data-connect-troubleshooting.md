@@ -3,7 +3,7 @@ title: "Troubleshoot Microsoft Graph Data Connect"
 description: "Get troubleshooting information related to using Microsoft Graph Data Connect."
 author: "David1997sb"
 ms.localizationpriority: high
-ms.prod: "data-connect"
+ms.subservice: "data-connect"
 ---
 
 # Troubleshoot Microsoft Graph Data Connect
@@ -155,11 +155,11 @@ The following scenarios provide troubleshooting information for registering a Mi
 
 ### No authorization
 
-In the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure), when you create or update a Microsoft Fabric app registration, the system tries to create a resource of type _Microsoft.GraphServices_ for billing purposes.
+In the [Microsoft Graph Data Connect experience in the Azure portal](https://aka.ms/mgdcinazure), when you create or update a Microsoft Fabric app registration, the system tries to create a resource of type **Microsoft.GraphServices** for billing purposes.
 
 ![Screenshot that shows an error encountered during the creation of a billing resource.](images/app-registration-unable-create-resource.png)
 
-The previous image indicates that you don't have the _Microsoft.GraphServices_ resource provider registered nor permission to register it in the selected subscription. You need to request a subscription administrator to register this resource provider. For more information, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types) and [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup?tabs=azurecloudshell#enable-an-application). The following image shows a registered _Microsoft.GraphServices_ resource provider.
+The previous image indicates that you don't have the **Microsoft.GraphServices** resource provider registered nor permission to register it in the selected subscription. You need to request a subscription administrator to register this resource provider. For more information, see [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types) and [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup?tabs=azurecloudshell#enable-an-application). The following image shows a registered **Microsoft.GraphServices** resource provider.
 
 ![Screenshot that shows the Microsoft.GraphServices resource provider that should be registered.](images/app-registration-graph-provider.png)
 
@@ -177,11 +177,11 @@ az resource create --resource-group <resource_group_name> --name mgdc-<app_id> -
 
 ### Already premium usage
 
-The following error message indicates that a _Microsoft.GraphServices_ type resource was already manually created for the app with a different name. This resource is used for billing purposes, and no further action is required.
+The following error message indicates that a **Microsoft.GraphServices** type resource was already manually created for the app with a different name. This resource is used for billing purposes, and no further action is required.
 
 ![Screenshot that shows an error for the already existent billing resource.](images/app-registration-already-premium-usage.png)
 
-## See also
+## Related content
 
 - [Data Connect overview](data-connect-concept-overview.md)
 - [Data Connect FAQ](data-connect-faq.md)

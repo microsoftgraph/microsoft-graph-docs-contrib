@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.access_package_resource_request import AccessPackageResourceRequest
+from msgraph.generated.models.access_package_resource import AccessPackageResource
+from msgraph.generated.models.access_package_resource_environment import AccessPackageResourceEnvironment
 
 graph_client = GraphServiceClient(credentials, scopes)
 

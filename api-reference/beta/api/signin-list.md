@@ -4,7 +4,7 @@ doc_type: apiPageType
 description: "Get a list of the user sign-ins in a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 ---
 
 # List signIns
@@ -35,8 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Microsoft Entra ID.
 
-In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-+ Global Administrator
+In addition to the delegated permissions, the signed-in user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) that allow them to read sign-in reports.
+
 + Global Reader
 + Reports Reader
 + Security Administrator
@@ -57,11 +57,13 @@ GET /auditLogs/signIns
 
 This method supports the `$top`, `$skiptoken`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+To avoid having the request time out, apply the `$filter` parameter with a time range for which to get all sign-ins, as shown in [Example 1](signin-list.md#example-1-list-all-sign-ins-during-a-specific-time-period).
+
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -73,12 +75,12 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 ## Examples
 
-### Example 1: List all sign-ins
+### Example 1: List all sign-ins during a specific time period
 In this example, the response object shows the user signed in using MFA that was triggered by a conditional access policy, and the primary authentication method is through FIDO.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,7 +88,7 @@ Here's an example of the request.
   "name": "get_signins_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signIns
+GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z
 ```
 
 # [C#](#tab/csharp)
@@ -286,7 +288,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signins-2-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -451,7 +453,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventType
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signins-ne-noninteractiveuser-java-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

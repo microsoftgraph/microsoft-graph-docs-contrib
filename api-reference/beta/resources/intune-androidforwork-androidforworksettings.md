@@ -3,7 +3,7 @@ title: "androidForWorkSettings resource type"
 description: "Settings for Android For Work."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "deviceAndAppManagementData resource type"
 description: "Exported Data"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Exported Data
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|Not yet documented|
+|content|Stream||
 
 ## Relationships
 None

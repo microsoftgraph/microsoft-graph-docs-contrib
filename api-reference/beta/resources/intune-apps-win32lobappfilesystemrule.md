@@ -3,7 +3,7 @@ title: "win32LobAppFileSystemRule resource type"
 description: "A complex type to store file or folder rule data for a Win32 LOB app."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ Inherits from [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |path|String|The file or folder path to look up.|
 |fileOrFolderName|String|The file or folder name to look up.|
 |check32BitOn64System|Boolean|A value indicating whether to expand environment variables in the 32-bit context on 64-bit systems.|
-|operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|The file system operation type. Possible values are: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
+|operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|The file system operation type. Possible values are: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`, `sizeInBytes`, `appVersion`, `unknownFutureValue`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|The operator for file or folder detection. Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |comparisonValue|String|The file or folder comparison value.|
 

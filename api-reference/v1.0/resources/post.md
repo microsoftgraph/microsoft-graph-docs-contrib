@@ -3,7 +3,7 @@ title: "post resource type"
 description: "Represents an individual Post item within a conversationThread entity."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -71,7 +71,7 @@ This resource lets you add your own data to custom properties using [extensions]
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -133,7 +133,7 @@ Here is a JSON representation of the resource
 
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)

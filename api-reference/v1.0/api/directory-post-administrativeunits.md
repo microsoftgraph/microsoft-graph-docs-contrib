@@ -3,7 +3,7 @@ title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -22,10 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directory_post_administrativeunits" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-post-administrativeunits-permissions.md)]
 
-To create an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Privileged Role Administrator
-* Global Administrator
+To create an administrative unit, the calling principal must be assigned at least the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +33,7 @@ POST /directory/administrativeUnits
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -130,7 +127,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)

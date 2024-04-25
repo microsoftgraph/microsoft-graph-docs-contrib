@@ -3,7 +3,7 @@ title: "List webinars"
 description: "Get the list of all virtual event webinars created in a tenant."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ This method supports the `$count` [OData query parameter](/graph/query-parameter
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

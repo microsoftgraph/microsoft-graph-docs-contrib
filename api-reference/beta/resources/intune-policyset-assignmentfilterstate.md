@@ -3,7 +3,7 @@ title: "assignmentFilterState resource type"
 description: "Represents result of GetState API."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

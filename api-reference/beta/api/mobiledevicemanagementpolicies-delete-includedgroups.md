@@ -3,7 +3,7 @@ title: "Delete includeGroup"
 description: "Delete a group from the list of groups included in a mobile device management policy."
 author: "ravennMSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ DELETE /policies/mobileDeviceManagementPolicies/{id}/includedGroups/{id}/$ref
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -87,10 +87,6 @@ DELETE https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-group-included-groups-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-group-included-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

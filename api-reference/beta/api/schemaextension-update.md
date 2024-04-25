@@ -4,7 +4,7 @@ description: "Update properties in the definition of the specified schemaExtensi
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
+ms.subservice: extensions
 ---
 
 # Update schemaExtension
@@ -46,7 +46,7 @@ PATCH /schemaExtensions/{id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json |
 
 ## Request body
@@ -147,7 +147,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)

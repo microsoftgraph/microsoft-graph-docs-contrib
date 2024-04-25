@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\BookingService;
+use Microsoft\Graph\Generated\Models\Location;
+use Microsoft\Graph\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Generated\Models\BookingReminder;
+use Microsoft\Graph\Generated\Models\BookingSchedulingPolicy;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -59,6 +65,7 @@ $requestBody->setDescription('Individual bento box lunch delivery');
 $requestBody->setDisplayName('Bento');
 $requestBody->setIsLocationOnline(true);
 $requestBody->setSmsNotificationsEnabled(true);
+$requestBody->setIsCustomerAllowedToManageBooking(true);
 $requestBody->setLanguageTag('en-US');
 $requestBody->setIsHiddenFromCustomers(false);
 $requestBody->setNotes('Home-cooked special');
@@ -81,6 +88,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->services()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->services()->post($requestBody)->wait();
 
 ```

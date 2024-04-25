@@ -3,7 +3,7 @@ title: "Add a member"
 description: "Use this API to add a member (user, group, or device) to an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -26,10 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-* Privileged Role Administrator
-* Global Administrator
+To add a user, group, or device to an administrative unit, the calling principal must be assigned at least the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ### Permissions to create a new group
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
@@ -39,10 +36,9 @@ To add a user, group, or device to an administrative unit, the calling principal
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+To create a new group in an administrative unit, the calling principal must be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Privileged Role Administrator
-* Global Administrator
 * Groups Administrator
 
 ## HTTP request
@@ -62,7 +58,7 @@ POST /directory/administrativeUnits/{id}/members
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -71,7 +67,7 @@ POST /directory/administrativeUnits/{id}/members
 In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added.
 
 ### Creating a new group
-The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit. 
+The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit.
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
@@ -151,7 +147,7 @@ In the request body, provide the `id` of the [user](../resources/user.md) or [gr
 
 #### Response
 The following example shows the response.
- 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -244,37 +240,37 @@ Content-type: application/json
 
 {
    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
-	 "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-	 "deletedDateTime": null,
-	 "classification": null,
-	 "createdDateTime": "2018-12-22T02:21:05Z",
-	 "description": "Self help community for golf",
-	 "displayName": "Golf Assist",
-	 "expirationDateTime": null,
-	 "groupTypes": [
-	     "Unified"
-	 ],
+     "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+     "deletedDateTime": null,
+     "classification": null,
+     "createdDateTime": "2018-12-22T02:21:05Z",
+     "description": "Self help community for golf",
+     "displayName": "Golf Assist",
+     "expirationDateTime": null,
+     "groupTypes": [
+         "Unified"
+     ],
    "isAssignableToRole": null,
-	 "mail": "golfassist@contoso.com",
-	 "mailEnabled": true,
-	 "mailNickname": "golfassist",
-	 "membershipRule": null,
-	 "membershipRuleProcessingState": null,
-	 "onPremisesLastSyncDateTime": null,
-	 "onPremisesSecurityIdentifier": null,
-	 "onPremisesSyncEnabled": null,
-	 "preferredDataLocation": "CAN",
-	 "preferredLanguage": null,
-	 "proxyAddresses": [
-	     "SMTP:golfassist@contoso.onmicrosoft.com"
-	 ],
-	 "renewedDateTime": "2018-12-22T02:21:05Z",
-	 "resourceBehaviorOptions": [],
-	 "resourceProvisioningOptions": [],
-	 "securityEnabled": false,
-	 "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
-	 "theme": null,
-	 "visibility": "Public",
-	 "onPremisesProvisioningErrors": []
+     "mail": "golfassist@contoso.com",
+     "mailEnabled": true,
+     "mailNickname": "golfassist",
+     "membershipRule": null,
+     "membershipRuleProcessingState": null,
+     "onPremisesLastSyncDateTime": null,
+     "onPremisesSecurityIdentifier": null,
+     "onPremisesSyncEnabled": null,
+     "preferredDataLocation": "CAN",
+     "preferredLanguage": null,
+     "proxyAddresses": [
+         "SMTP:golfassist@contoso.com"
+     ],
+     "renewedDateTime": "2018-12-22T02:21:05Z",
+     "resourceBehaviorOptions": [],
+     "resourceProvisioningOptions": [],
+     "securityEnabled": false,
+     "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
+     "theme": null,
+     "visibility": "Public",
+     "onPremisesProvisioningErrors": []
 }
 ```

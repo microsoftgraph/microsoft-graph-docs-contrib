@@ -4,7 +4,7 @@ description: "Follow the steps in this guide to try creating a Microsoft Graph c
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 
 # Use Postman to try the Microsoft Graph connectors API
@@ -69,6 +69,6 @@ Find the **Put item** sample request in the **Content sync** folder. Use this sa
 
 For details about how to resolve errors, see [Resolve Microsoft Graph authorization errors](/graph/resolve-auth-errors).
 
-## See also
+## Related content
 
 - [Use Postman with the Microsoft Graph API](use-postman.md)

@@ -1,9 +1,9 @@
 ---
 title: "Delete linkedResource"
-description: "Deletes a linkedResource object."
+description: "Delete a linkedResource object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [linkedResource](../resources/linkedresource.md) object.
+Delete a [linkedResource](../resources/linkedresource.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -35,7 +35,7 @@ DELETE /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -47,7 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -103,6 +103,3 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-

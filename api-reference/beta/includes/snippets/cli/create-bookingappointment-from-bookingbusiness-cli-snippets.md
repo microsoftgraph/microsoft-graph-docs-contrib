@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta booking-businesses appointments create --booking-business-id {bookingBusiness-id} --body '{\
+mgc-beta solutions booking-businesses appointments create --booking-business-id {bookingBusiness-id} --body '{\
     "@odata.type":"#microsoft.graph.bookingAppointment",\
     "customerEmailAddress":"jordanm@contoso.com",\
     "customerLocation":{\
@@ -50,6 +50,7 @@ mgc-beta booking-businesses appointments create --booking-business-id {bookingBu
     "invoiceId":"1001",\
     "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",\
     "invoiceStatus":"open",\
+    "isCustomerAllowedToManageBooking": true,\
     "invoiceUrl":"theInvoiceUrl",\
     "isLocationOnline": true,\
     "optOutOfCustomerEmail": false,\

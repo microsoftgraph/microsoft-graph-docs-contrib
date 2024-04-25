@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Calendar calendar = new Calendar();
-calendar.name = "Social events";
+calendar.setName("Social events");
+Calendar result = graphClient.me().calendar().patch(calendar);
 
-graphClient.me().calendar()
-	.buildRequest()
-	.patch(calendar);
 
 ```

@@ -3,7 +3,7 @@ title: "Create TableRow"
 description: "Adds rows to the end of a table. "
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 
 | Name | Description |
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required.|
 | Prefer  | respond-async. Indicates that the request is an async request. Optional.  |
 | Workbook-Session-Id  | {Workbook-Session-Id}. Created from the **createSession** request. Optional.|
@@ -65,7 +65,7 @@ In this example, two rows of data are inserted at the end of the table.
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,6 +98,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/tablerowcollection-add-table-row-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-table-row-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,7 +118,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -175,6 +179,10 @@ Workbook-Session-Id: {Workbook-Session-Id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tablerowcollection-add-table-row-async-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablerowcollection-add-table-row-async-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)

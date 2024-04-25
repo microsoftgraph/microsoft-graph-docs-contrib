@@ -1,9 +1,10 @@
 ---
 title: "groupWritebackConfiguration resource type"
 description: "Indicates whether writeback of cloud groups to on-premises Active Directory is enabled and the target group type for the on-premises group."
-author: "Jordanndahl"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +30,7 @@ Inherits from [writebackConfiguration](../resources/writebackconfiguration.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.groupWritebackConfiguration"

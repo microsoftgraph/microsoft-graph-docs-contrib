@@ -3,7 +3,7 @@ title: "Get bitlockerRecoveryKey"
 description: "Retrieve the properties and relationships of a bitlockerRecoveryKey object."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -24,14 +24,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "bitlockerrecoverykey_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/bitlockerrecoverykey-get-permissions.md)]
 
->**Note:** For delegated permissions to allow apps to get **bitLockerRecoveryKey** resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from: 
-* Global administrator
-* Cloud device administrator
-* Helpdesk administrator
-* Intune service administrator
-* Security administrator
-* Security reader
-* Global reader
+>**Note:** For delegated permissions to allow apps to get **bitLockerRecoveryKey** resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json), or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from: 
+
+* Cloud Device Administrator
+* Helpdesk Administrator
+* Intune Service Administrator
+* Security Administrator
+* Security Reader
+* Global Reader
 
 ## HTTP request
 To get the specified BitLocker key without returning the **key** property:
@@ -58,7 +58,7 @@ This method supports the `$select` OData query parameter to return the **key** p
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |User-Agent|The identifier for the calling application. This value contains information about the operating system and the browser used. Required.|
 |ocp-client-name|The name of the client application performing the API call. This header is used for debugging purposes. Optional.|
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|

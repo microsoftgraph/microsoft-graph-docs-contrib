@@ -3,7 +3,7 @@ title: "Get userFlowApiConnectorConfiguration"
 description: "Get the userFlowApiConnectorConfiguration property of a b2cIdentityUserFlow."
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -22,10 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "b2cidentityuserflow_get_apiconnectorconfiguration" } -->
 [!INCLUDE [permissions-table](../includes/permissions/b2cidentityuserflow-get-apiconnectorconfiguration-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
@@ -46,7 +43,7 @@ This method supports the `$expand` OData query parameter to help customize the r
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -74,10 +71,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration?$expand=postFederationSignup,postAttributeCollection
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflows-apiconnectorconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-b2cuserflows-apiconnectorconfiguration-javascript-snippets.md)]

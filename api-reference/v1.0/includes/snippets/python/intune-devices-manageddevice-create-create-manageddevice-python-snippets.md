@@ -4,7 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.managed_device import ManagedDevice
+from msgraph.generated.models.device_action_result import DeviceActionResult
+from msgraph.generated.models.configuration_manager_client_enabled_features import ConfigurationManagerClientEnabledFeatures
+from msgraph.generated.models.device_health_attestation_state import DeviceHealthAttestationState
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -113,6 +117,7 @@ request_body = ManagedDevice(
 	notes = "Notes value",
 	ethernet_mac_address = "Ethernet Mac Address value",
 	physical_memory_in_bytes = 5,
+	enrollment_profile_name = "Enrollment Profile Name value",
 )
 
 result = await graph_client.device_management.managed_devices.post(request_body)

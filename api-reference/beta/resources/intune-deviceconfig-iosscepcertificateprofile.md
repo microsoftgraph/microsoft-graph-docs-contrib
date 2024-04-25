@@ -3,7 +3,7 @@ title: "iosScepCertificateProfile resource type"
 description: "iOS SCEP certificate profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

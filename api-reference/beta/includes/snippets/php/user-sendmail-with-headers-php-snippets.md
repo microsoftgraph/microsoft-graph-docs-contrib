@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\SendMailPostRequestBody;
+use Microsoft\Graph\Generated\Models\Message;
+use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\Recipient;
+use Microsoft\Graph\Generated\Models\EmailAddress;
+use Microsoft\Graph\Generated\Models\InternetMessageHeader;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -18,7 +25,7 @@ $messageBody->setContent('The group represents Nevada.');
 $message->setBody($messageBody);
 $toRecipientsRecipient1 = new Recipient();
 $toRecipientsRecipient1EmailAddress = new EmailAddress();
-$toRecipientsRecipient1EmailAddress->setAddress('AlexW@contoso.OnMicrosoft.com');
+$toRecipientsRecipient1EmailAddress->setAddress('AlexW@contoso.com');
 $toRecipientsRecipient1->setEmailAddress($toRecipientsRecipient1EmailAddress);
 $toRecipientsArray []= $toRecipientsRecipient1;
 $message->setToRecipients($toRecipientsArray);

@@ -4,31 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String id = "5793aa3b-cca9-4794-679a240f8b58";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-LinkedList<Credential> credentialsList = new LinkedList<Credential>();
-Credential credentials = new Credential();
-credentials.fieldId = "param_username";
-credentials.value = "myusername";
-credentials.type = "username";
+com.microsoft.graph.beta.serviceprincipals.item.createpasswordsinglesignoncredentials.CreatePasswordSingleSignOnCredentialsPostRequestBody createPasswordSingleSignOnCredentialsPostRequestBody = new com.microsoft.graph.beta.serviceprincipals.item.createpasswordsinglesignoncredentials.CreatePasswordSingleSignOnCredentialsPostRequestBody();
+createPasswordSingleSignOnCredentialsPostRequestBody.setId("5793aa3b-cca9-4794-679a240f8b58");
+LinkedList<Credential> credentials = new LinkedList<Credential>();
+Credential credential = new Credential();
+credential.setFieldId("param_username");
+credential.setValue("myusername");
+credential.setType("username");
+credentials.add(credential);
+Credential credential1 = new Credential();
+credential1.setFieldId("param_password");
+credential1.setValue("pa$$w0rd");
+credential1.setType("password");
+credentials.add(credential1);
+createPasswordSingleSignOnCredentialsPostRequestBody.setCredentials(credentials);
+var result = graphClient.servicePrincipals().byServicePrincipalId("{servicePrincipal-id}").createPasswordSingleSignOnCredentials().post(createPasswordSingleSignOnCredentialsPostRequestBody);
 
-credentialsList.add(credentials);
-Credential credentials1 = new Credential();
-credentials1.fieldId = "param_password";
-credentials1.value = "pa$$w0rd";
-credentials1.type = "password";
-
-credentialsList.add(credentials1);
-
-graphClient.servicePrincipals("{id}")
-	.createPasswordSingleSignOnCredentials(ServicePrincipalCreatePasswordSingleSignOnCredentialsParameterSet
-		.newBuilder()
-		.withId(id)
-		.withCredentials(credentialsList)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

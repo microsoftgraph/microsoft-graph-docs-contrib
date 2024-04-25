@@ -3,7 +3,7 @@ title: "Delete accessPackage"
 description: "Delete accessPackage."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete an [accessPackage](../resources/accesspackage.md) object.
 
-You can't delete an access package if it has any **accessPackageAssignment**. To delete the access package, first [query if there are any assignments](entitlementmanagement-list-accesspackageassignments.md) with a filter to indicate the specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`. For more information on how to remove assignments that are still in the delivered state, see [Remove an assignment](entitlementmanagement-post-accesspackageassignmentrequests.md#example-4-remove-an-assignment).
+You can't delete an access package if it has any **accessPackageAssignment**. To delete the access package, first [query if there are any assignments](entitlementmanagement-list-accesspackageassignments.md) with a filter to indicate the specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`. For more information on how to remove assignments that are still in the delivered state, see [Remove an assignment](entitlementmanagement-post-accesspackageassignmentrequests.md#example-2-remove-an-assignment).
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -39,7 +39,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackages/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer \{token\}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

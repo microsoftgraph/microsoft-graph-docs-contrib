@@ -16,9 +16,9 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGroup()
-displayName := "New Managers March 2017"
+displayName := "New Managers March 2024"
 requestBody.SetDisplayName(&displayName) 
-description := "New Managers training course for March 2017"
+description := "New Managers training course for March 2024"
 requestBody.SetDescription(&description) 
 groupTypes := []string {
 	"Unified",
@@ -26,19 +26,19 @@ groupTypes := []string {
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true
 requestBody.SetMailEnabled(&mailEnabled) 
-mailNickname := "newMan201703"
+mailNickname := "newMan202403"
 requestBody.SetMailNickname(&mailNickname) 
 securityEnabled := false
 requestBody.SetSecurityEnabled(&securityEnabled) 
 additionalData := map[string]interface{}{
-graphlearn_courses := graphmodels.New()
+bellowscollege_courses := graphmodels.New()
 courseId := "123"
-graphlearn_courses.SetCourseId(&courseId) 
+bellowscollege_courses.SetCourseId(&courseId) 
 courseName := "New Managers"
-graphlearn_courses.SetCourseName(&courseName) 
+bellowscollege_courses.SetCourseName(&courseName) 
 courseType := "Online"
-graphlearn_courses.SetCourseType(&courseType) 
-	requestBody.SetGraphlearn_courses(graphlearn_courses)
+bellowscollege_courses.SetCourseType(&courseType) 
+	requestBody.SetBellowscollege_courses(bellowscollege_courses)
 }
 requestBody.SetAdditionalData(additionalData)
 

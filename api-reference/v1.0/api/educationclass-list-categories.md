@@ -3,7 +3,7 @@ title: "List assignmentCategories"
 description: "Retrieve a list of category objects."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ All [properties](../resources/educationcategory.md#properties) are supported for
 
 | Header        | Value                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

@@ -3,7 +3,7 @@ title: "Delete custom properties from a fileStorageContainer"
 description: "Delete custom properties from a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ PATCH /storage/fileStorage/containers/{containerId}/customProperties
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-type}| application/json. Required.|
 
 ## Request body

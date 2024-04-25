@@ -1,9 +1,9 @@
 ---
 title: "deviceCompliancePolicyScript resource type"
-description: ""
+description: "Intune Deviceconfig Devicecompliancepolicyscript Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

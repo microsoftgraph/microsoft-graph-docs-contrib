@@ -4,7 +4,7 @@ description: "Retrieve a list of b2xIdentityUserFlow objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 ---
 
 # List b2xIdentityUserFlows
@@ -22,10 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "identitycontainer_list_b2xuserflows" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identitycontainer-list-b2xuserflows-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow administrator
+[!INCLUDE [rbac-b2xb2c-user-flows-apis](../includes/rbac-for-apis/rbac-b2xb2c-user-flows-apis.md)]
 
 ## HTTP request
 
@@ -43,7 +40,7 @@ You can use `$expand` to expand specific user flow properties that aren't expand
 
 |Name|Description|
 |:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -59,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -109,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -145,7 +142,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -195,7 +192,7 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows?$expand=identityProvi
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 

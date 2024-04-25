@@ -2,18 +2,19 @@
 title: "Quickstart: Register an app in the Microsoft identity platform"
 description: In this quickstart, you learn how to register an application with the Microsoft identity platform.
 services: active-directory
-author: faithombongi
-ms.reviewer: ombongifaith, jackson.woods
-ms.date: 01/11/2024
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
+ms.date: 01/22/2024
 ms.topic: include
-ms.prod: applications
+ms.subservice: entra-applications
 #Customer intent: As developer, I want to know how to register my client application with the Microsoft identity platform so it can be authorized to access data in the Microsoft cloud.
 
 # Content in this include file is largely duplicated from https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app
 - 
 ---
 
-For your app to use the identity and access management (IAM) capabilities of Microsoft Entra ID, including accessing protected resources, you must register it first. Then the Microsoft identity platform performs the IAM functions for the registered applications. This article shows you how to register an application in the Microsoft Entra admin center.
+For your app to use the identity and access management (IAM) capabilities of Microsoft Entra ID, including accessing protected resources, you must register it first. Then the Microsoft identity platform performs the IAM functions for the registered applications. This article shows you how to register a *web application* in the Microsoft Entra admin center. You can learn more about [app types you can register in the Microsoft identity platform](/entra/identity-platform/v2-app-types).
 
 > [!TIP]
 > To register an application for Azure AD B2C, follow the steps in [Tutorial: Register a web application in Azure AD B2C](/azure/active-directory-b2c/tutorial-register-applications).

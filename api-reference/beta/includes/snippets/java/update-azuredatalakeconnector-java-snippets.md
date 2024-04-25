@@ -4,13 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-AzureDataLakeConnector industryDataConnector = new AzureDataLakeConnector();
-industryDataConnector.displayName = "API Monitor 60201009";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.external().industryData().dataConnectors("51dca0a0-85f6-4478-f526-08daddab2271")
-	.buildRequest()
-	.patch(industryDataConnector);
+com.microsoft.graph.beta.models.industrydata.AzureDataLakeConnector industryDataConnector = new com.microsoft.graph.beta.models.industrydata.AzureDataLakeConnector();
+industryDataConnector.setOdataType("microsoft.graph.industryData.azureDataLakeConnector");
+industryDataConnector.setDisplayName("API Monitor 60201009");
+com.microsoft.graph.models.industrydata.IndustryDataConnector result = graphClient.external().industryData().dataConnectors().byIndustryDataConnectorId("{industryDataConnector-id}").patch(industryDataConnector);
+
 
 ```

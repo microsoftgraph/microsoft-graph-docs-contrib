@@ -3,7 +3,7 @@ title: "userRegistrationMethodCount resource type"
 description: "Represents the number of users registered for an authentication method."
 author: "kvenkit"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

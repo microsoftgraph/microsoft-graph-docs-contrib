@@ -3,7 +3,7 @@ title: "List a user's oauth2PermissionGrants"
 description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants, granted on behalf of a user."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -45,7 +45,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 

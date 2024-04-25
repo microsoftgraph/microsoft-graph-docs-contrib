@@ -4,20 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String comment = "I will probably be able to make it.";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Boolean sendResponse = true;
+com.microsoft.graph.users.item.events.item.tentativelyaccept.TentativelyAcceptPostRequestBody tentativelyAcceptPostRequestBody = new com.microsoft.graph.users.item.events.item.tentativelyaccept.TentativelyAcceptPostRequestBody();
+tentativelyAcceptPostRequestBody.setComment("I will probably be able to make it.");
+tentativelyAcceptPostRequestBody.setSendResponse(true);
+graphClient.me().events().byEventId("{event-id}").tentativelyAccept().post(tentativelyAcceptPostRequestBody);
 
-graphClient.me().events("AAMkADADVj3fyAABZ5ieyAAA=")
-	.tentativelyAccept(EventTentativelyAcceptParameterSet
-		.newBuilder()
-		.withProposedNewTime(null)
-		.withSendResponse(sendResponse)
-		.withComment(comment)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

@@ -3,7 +3,7 @@ title: "deviceManagementComplianceActionType enum type"
 description: "Scheduled Action Type Enum"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

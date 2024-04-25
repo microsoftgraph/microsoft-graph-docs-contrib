@@ -3,7 +3,7 @@ title: "chat: getAllRetainedMessages"
 description: "Get retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats."
 author: "AgnesLiu"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -57,11 +57,22 @@ The following example shows a request that uses the `$top` and `$filter` query p
 ```http
 GET /users/{id}/chats/getAllRetainedMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
+
+The following table lists examples that show how to use the `$filter` parameter.
+
+|Scenario                                  | `$filter` parameter                                                                       |Possible values                                                                                             |
+|:-----------------------------------------|:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+|Get messages sent by user identity type   |$filter=from/user/userIdentityType eq '{teamworkUserIdentityType}'                      |aadUser, onPremiseAadUser, anonymousGuest, federatedUser, personalMicrosoftAccountUser, skypeUser, phoneUser|
+|Get messages sent by application type     |$filter=from/application/applicationIdentityType eq '{teamworkApplicationIdentity}'     |aadApplication, bot, tenantBot, office365Connector, outgoingWebhook                                         |
+|Get messages sent by user ID              |$filter=from/user/id eq '{oid}'                                                         ||
+|Get control (system event) messages       |$filter=messageType eq 'systemEventMessage'                                             ||
+|Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
+
 ## Request headers
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -109,6 +120,10 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/chatthisgetallretainedmessages-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chatthisgetallretainedmessages-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -178,6 +193,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

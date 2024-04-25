@@ -5,6 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\EdiscoveryHoldPolicy;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -16,7 +18,7 @@ $additionalData = [
 	'userSources@odata.bind' => [
 			[
 				'@odata.type' => 'microsoft.graph.security.userSource',
-				'email' => 'SalesTeam@M365x809305.OnMicrosoft.com',
+				'email' => 'SalesTeam@contoso.com',
 			],
 		],
 	'siteSources@odata.bind' => [

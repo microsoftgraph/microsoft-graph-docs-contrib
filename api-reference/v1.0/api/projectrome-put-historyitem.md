@@ -2,7 +2,7 @@
 title: "Create or replace a historyItem"
 description: "Create a new or replace an existing history item for an existing user activity."
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 author: "ailae"
 doc_type: apiPageType
 ---
@@ -67,10 +67,6 @@ Content-type: application/json
     "lastActiveDateTime": "2015-02-11T20:54:04.3457274+00:00"
 }
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/upsert-historyitem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/upsert-historyitem-javascript-snippets.md)]

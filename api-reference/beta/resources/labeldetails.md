@@ -3,7 +3,7 @@ title: "labelDetails resource type"
 description: "Represents the label details of an information protection label."
 ms.localizationpriority: medium
 author: "tommoser"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 

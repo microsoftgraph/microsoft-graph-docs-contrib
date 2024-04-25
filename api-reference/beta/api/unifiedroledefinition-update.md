@@ -4,7 +4,7 @@ description: "Update the properties of a unifiedRoleDefinition object."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ---
 
@@ -69,7 +69,7 @@ PATCH /roleManagement/cloudPc/roleDefinitions/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

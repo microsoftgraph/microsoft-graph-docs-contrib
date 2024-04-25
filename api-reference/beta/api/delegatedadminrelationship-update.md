@@ -3,7 +3,7 @@ title: "Update delegatedAdminRelationship"
 description: "Update the properties of a delegatedAdminRelationship object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
+ms.subservice: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. You can only update a relationship when it's in the `created` **status**. However, you can update the **autoExtendDuration** property when the relationship is in either the `created` or `active` **status**.
+Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. 
+
+>**Notes:**
+>* You can update this relationship when its **status** property is `created`.
+>* You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
+>* You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long running operation.
+
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -21,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "delegatedadminrelationship_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/delegatedadminrelationship-update-permissions.md)]
+
+[!INCLUDE [rbac-gdap-apis-customer-only](../includes/rbac-for-apis/rbac-gdap-apis-customer-only.md)]
 
 ## HTTP request
 
@@ -35,7 +43,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminRelationship** to be updated. Retrieve the ETag value from a LIST or GET operation. Required.|
 |Content-Type|application/json. Required.|
 
@@ -48,12 +56,24 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner requests or has access to in the customer tenant.|
 |autoExtendDuration|Duration| The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: `P0D`, `PT0S`, `P180D`. The default value is `PT0S`. `PT0S` indicates that the relationship expires when the **endDateTime** is reached and it isn't automatically extended.|
 |customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship.|
-|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner.|
+|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. Maximum length is 50 characters.|
 |duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body.
+If successful, this method returns either a `200 OK` or a `202 Accepted` response code. The response body contains a 
+ [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object when the response is `200 OK`.
+
+### Response headers
+|Name|Description|
+|:---|:---|
+|Content-Type|application/json.|
+|Location|The location of the long-running operation.|
+|Retry-After|The time after which a subsequent API call can be made to the Location URL to check the status of the long-running operation.|
+
+This method returns a `202 Accepted` response if you remove the Microsoft Entra Global Administrator role from the relationship while its **status** property is `active`. The response includes a URL in the Location header that you can use to monitor the operation's progress.
+
+If you don't supply the template ID that corresponds to the Microsoft Entra Global Administrator role in the `unifiedRoles` array in the `accessDetails` property of the request body, then the API returns `200 OK` and the original [delegatedAdminRelationship](../resources/delegatedAdminRelationship.md) object in the response body.
 
 ## Examples
 

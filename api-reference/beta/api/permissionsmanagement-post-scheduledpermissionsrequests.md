@@ -4,7 +4,7 @@ description: "Create a new scheduledPermissionsRequest object."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ POST /identityGovernance/permissionsManagement/scheduledPermissionsRequests
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

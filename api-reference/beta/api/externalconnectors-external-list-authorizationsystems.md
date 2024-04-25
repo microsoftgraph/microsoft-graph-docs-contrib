@@ -4,7 +4,7 @@ description: "List the authorizationSystem objects and their properties."
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports the `$filter`, `$orderby`, and `$skip` OData query paramete
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

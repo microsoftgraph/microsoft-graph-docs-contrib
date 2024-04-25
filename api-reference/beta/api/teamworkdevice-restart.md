@@ -3,7 +3,7 @@ title: "teamworkDevice: restart"
 description: "Restart the specified Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "teamwork"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /teamwork/devices/{teamworkDeviceId}/restart
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

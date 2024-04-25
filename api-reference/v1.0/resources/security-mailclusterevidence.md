@@ -4,7 +4,7 @@ description: "A mail cluster that is reported in the alert as evidence."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 # mailClusterEvidence resource type

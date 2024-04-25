@@ -3,7 +3,7 @@ title: "managedDeviceEnrollmentFailureDetails function"
 description: "Not yet documented"
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

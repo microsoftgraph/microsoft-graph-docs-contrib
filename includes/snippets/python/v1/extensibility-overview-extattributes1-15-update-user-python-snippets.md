@@ -4,7 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.user import User
+from msgraph.generated.models.on_premises_extension_attributes import OnPremisesExtensionAttributes
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -3,7 +3,7 @@ title: "permissionGrantPolicy resource type"
 description: "Specifies the conditions under which consent can be authorized."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "psignoret"
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 A permission grant policy is used to specify the conditions under which consent can be granted.
 
 A permission grant policy consists of a list of **includes** condition sets, and a list of **excludes** condition sets. For an event to match a permission grant policy, it must match *at least one* of the **includes** conditions sets, and *none* of the **excludes** condition sets.
+
+For more information, see [Manage app consent policies](/entra/identity/enterprise-apps/manage-app-consent-policies).
 
 ## Methods
 
@@ -44,7 +46,7 @@ A permission grant policy consists of a list of **includes** condition sets, and
 | includes | [permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets that are *included* in this permission grant policy. Automatically expanded on `GET`.|
 | excludes |[permissionGrantConditionSet](permissiongrantconditionset.md) collection| Condition sets that are *excluded* in this permission grant policy. Automatically expanded on `GET`.|
 | includeAllPreApprovedApplications  | Boolean | Set to `true` to create all pre-approval policies in the tenant. Set to `false` to disable all pre-approval policies in the tenant. The default is `false`.|
-| resourceScopeType  |String| The resource type the pre-approval policy applies to. Possible values: `group` for [groups](../resources/group.md) and [teams](../resources/team.md), `chat` for [chats](../resources/chat.md), `tenant` for all supported resources in the tenant. Required.|
+| resourceScopeType  |String| The resource type the pre-approval policy applies to. Possible values: `team` for [groups](../resources/group.md) and [teams](../resources/team.md), `chat` for [chats](../resources/chat.md), `tenant` for all supported resources in the tenant. Required.|
 
 ## Relationships
 

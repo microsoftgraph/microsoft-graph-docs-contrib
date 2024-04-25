@@ -3,7 +3,7 @@ title: "List identityProviders (in a user flow)"
 description: "List identity provider for an externalusersselfservicesignupeventsflow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports some of the OData query parameters to help customize the re
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -47,12 +47,12 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a new [identityProviders](../resources/identityprovider.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [identityProviderBase](../resources/identityproviderbase.md) objects in the response body.
 
 ## Examples
 
 #### Request
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 ---
 
 #### Response
-Here's an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,7 +3,7 @@ title: "List riskyUsers"
 description: "Get a list of the riskyUser objects and their properties."
 author: "tracyshi"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -38,7 +38,7 @@ This method supports the `$filter` and `$select` [OData query parameters](/graph
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

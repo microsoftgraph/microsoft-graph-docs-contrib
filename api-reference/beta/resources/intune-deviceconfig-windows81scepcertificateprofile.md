@@ -3,7 +3,7 @@ title: "windows81SCEPCertificateProfile resource type"
 description: "Windows 8.1+ SCEP certificate profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

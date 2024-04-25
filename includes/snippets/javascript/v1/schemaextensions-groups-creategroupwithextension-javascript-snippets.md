@@ -11,15 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-    displayName: 'New Managers March 2017',
-    description: 'New Managers training course for March 2017',
+    displayName: 'New Managers March 2024',
+    description: 'New Managers training course for March 2024',
     groupTypes: [
         'Unified'
     ],
     mailEnabled: true,
-    mailNickname: 'newMan201703',
+    mailNickname: 'newMan202403',
     securityEnabled: false,
-    graphlearn_courses: {
+    bellowscollege_courses: {
         courseId: '123',
         courseName: 'New Managers',
         courseType: 'Online'

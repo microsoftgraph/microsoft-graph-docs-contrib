@@ -1,11 +1,11 @@
 ---
 title: "Use the $search query parameter in Microsoft Graph"
 description: "Microsoft Graph supports the $search OData query parameter to restrict the results of a request to match a search criterion."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: non-product-specific
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 08/22/2023
 #Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use search expressions to get only the items that meet specific criteria, and reduce the amount of data the app processes, improving app efficiency.
@@ -173,11 +173,11 @@ Content-type: application/json
            "department": "Finance",
            "officeLocation": "12/1110",
            "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
+           "userPrincipalName": "irenem@contoso.com",
+           "imAddress": "sip:irenem@contoso.com",
            "scoredEmailAddresses": [
                {
-                   "address": "irenem@contoso.onmicrosoft.com",
+                   "address": "irenem@contoso.com",
                    "relevanceScore": -16.446060612802224
                }
            ],
@@ -198,14 +198,14 @@ Content-type: application/json
 }
 ```
 
-To learn more about the People API, see [Get information about relevant people](./people-insights-overview.md#search-people).  
+To learn more about the People API, see [Get information about relevant people](./people-insights-overview.md#search-people).
 
 ## Using $search on directory object collections
 
 > [!NOTE]
 > There's a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185) related to `$search` on directory objects for values that contain an ampersand (&) symbol.
 
-Microsoft Entra resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in [advanced queries](./aad-advanced-queries.md). The search implementation does **not** support "contains" logic. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
+Microsoft Entra ID resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in [advanced queries](./aad-advanced-queries.md). The search implementation does **not** support "contains" logic. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
 
 - **Spaces**: `hello world` => `hello`, `world`
 - **Different casing**⁽<sup>1</sup>⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
@@ -217,7 +217,8 @@ Microsoft Entra resources and their relationships that derive from [directoryObj
 
 > [!NOTE]
 >
-> - After tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, displayName `李四(David Li)` will match search strings such as `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
+> - After tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, displayName `李四(David Li)` matches search strings such as `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
+> - A change in the alphabet, such as from Latin to Cyrillic or Chinese, doesn't create a new token. For example, displayName `蓝色group` matches the `蓝色group` and `蓝色` search strings, but not `group`; while displayName `group蓝色` matches the `group蓝色` and `group` search strings, but not `蓝色` or `蓝`.
 > - The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
 For example:
 
@@ -245,7 +246,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/search-groups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -266,7 +267,7 @@ ConsistencyLevel: eventual
 
 ---
 
-This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.  
+This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.
 
 `$search` can be used together with `$filter`:
 
@@ -357,7 +358,7 @@ Both the string inputs you provide in `$search`, as well as the searchable prope
 [search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.0
 [search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 
-## See also
+## Related content
 
 - [Use query parameters to customize responses](/graph/query-parameters)
 - [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)

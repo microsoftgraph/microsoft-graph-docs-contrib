@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\CloudPcProvisioningPolicy;
+use Microsoft\Graph\Generated\Models\CloudPcDomainJoinConfiguration;
+use Microsoft\Graph\Generated\Models\CloudPcWindowsSettings;
+use Microsoft\Graph\Generated\Models\CloudPcWindowsSetting;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -36,6 +41,9 @@ $requestBody->setOnPremisesConnectionId('4e47d0f6-6f77-44f0-8893-c0fe1701ffff');
 $windowsSettings = new CloudPcWindowsSettings();
 $windowsSettings->setLanguage('en-US');
 $requestBody->setWindowsSettings($windowsSettings);
+$windowsSetting = new CloudPcWindowsSetting();
+$windowsSetting->setLocale('en-US');
+$requestBody->setWindowsSetting($windowsSetting);
 $requestBody->setProvisioningType(new CloudPcProvisioningType('dedicated'));
 
 $result = $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->post($requestBody)->wait();

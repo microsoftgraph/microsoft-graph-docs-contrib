@@ -3,7 +3,7 @@ title: "credential resource type"
 description: "Indicates a single credential used for sign-in to an application."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -23,6 +23,9 @@ Indicates a single credential used for sign-in to an application. For example, u
 |type|String|The type for this credential. Valid values: username, password, or other.|
 |value|String|The value for this credential. e.g, mysuperhiddenpassword. Note the value for passwords is write-only, the value can never be read back.|
 
+## Relationships
+None.
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
@@ -38,6 +41,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.credential",
   "fieldId": "param_username",
   "value": "myusername",
   "type": "username"

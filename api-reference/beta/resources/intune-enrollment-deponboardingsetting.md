@@ -3,7 +3,7 @@ title: "depOnboardingSetting resource type"
 description: "The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,9 +29,9 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |[generateEncryptionPublicKey action](../api/intune-enrollment-deponboardingsetting-generateencryptionpublickey.md)|String|Generate a public key to use to encrypt the Apple device enrollment program token|
 |[uploadDepToken action](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|None|Uploads a new Device Enrollment Program token|
 |[syncWithAppleDeviceEnrollmentProgram action](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|None|Synchronizes between Apple Device Enrollment Program and Intune|
-|[shareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|None|Not yet documented|
-|[unshareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|None|Not yet documented|
-|[getExpiringVppTokenCount function](../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md)|Int32|Not yet documented|
+|[shareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|None||
+|[unshareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|None||
+|[getExpiringVppTokenCount function](../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md)|Int32||
 
 ## Properties
 |Property|Type|Description|

@@ -1,26 +1,36 @@
 ---
 author: spgraph-docs-team
-description: The siteCollection resource provides more information about a site collection.
+description: Provides more information about a site collection.
 ms.date: 09/10/2017
-title: SiteCollection
+title: aiteCollection resource type
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
-# SiteCollection resource
+# siteCollection resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **siteCollection** resource provides more information about a site collection.
+Provides more information about a site collection.
 
-If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.
+If a [**site**](site.md) resource has a non-null **siteCollection** property, the site is a root site for a site collection.
+
+## Properties
+
+| Property             | Type     | Description                                                                         |
+| :------------------- | :------- | :---------------------------------------------------------------------------------- |
+| **hostname**         | string   | The hostname for the site collection. Read-only.                                    |
+| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Only present for multi-geo tenants. Read-only.       |
+| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only. |
+| **archivalDetails**  | [siteArchivalDetails][] | Represents whether the site collection is recently archived, fully archived, or reactivating. Possible values are: `recentlyArchived`, `fullyArchived`, `reactivating`, `unknownFutureValue`.  |
+
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -34,19 +44,16 @@ Here is a JSON representation of the resource.
 {
   "hostname": "contoso.sharepoint.com",
   "dataLocationCode": "EUR",
-  "root": { "@odata.type": "microsoft.graph.root" }
+  "root": { "@odata.type": "microsoft.graph.root" },
+  "archivalDetails": {
+    "@odata.type": "microsoft.graph.siteArchivalDetails",
+    "archiveStatus": "fullyArchived"
+  }
 }
 ```
 
-## Properties
-
-| Property             | Type     | Description                                                                         |
-| :------------------- | :------- | :---------------------------------------------------------------------------------- |
-| **hostname**         | string   | The hostname for the site collection. Read-only.                                    |
-| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.       |
-| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only. |
-
 [root]: root.md
+[siteArchivalDetails]: siteArchivalDetails.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

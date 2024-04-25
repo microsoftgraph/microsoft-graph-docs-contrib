@@ -3,7 +3,7 @@ title: "userScopeTeamsAppInstallation resource type"
 description: "Represents a teamsApp installed in the personal scope of a user."
 author: "AkJo"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -55,7 +55,7 @@ This type inherits from [teamsAppInstallation](teamsappinstallation.md).
 }
 ```
 
-## See also
+## Related content
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)

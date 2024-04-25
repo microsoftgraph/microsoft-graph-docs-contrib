@@ -5,6 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\Events\EventsRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Generated\Models\Event;
+use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Generated\Models\Attendee;
+use Microsoft\Graph\Generated\Models\EmailAddress;
+use Microsoft\Graph\Generated\Models\Location;
+use Microsoft\Graph\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Generated\Models\OutlookGeoCoordinates;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -25,14 +35,14 @@ $end->setTimeZone('Pacific Standard Time');
 $requestBody->setEnd($end);
 $attendeesAttendee1 = new Attendee();
 $attendeesAttendee1EmailAddress = new EmailAddress();
-$attendeesAttendee1EmailAddress->setAddress('DanaS@contoso.onmicrosoft.com');
+$attendeesAttendee1EmailAddress->setAddress('DanaS@contoso.com');
 $attendeesAttendee1EmailAddress->setName('Dana Swope');
 $attendeesAttendee1->setEmailAddress($attendeesAttendee1EmailAddress);
 $attendeesAttendee1->setType(new AttendeeType('required'));
 $attendeesArray []= $attendeesAttendee1;
 $attendeesAttendee2 = new Attendee();
 $attendeesAttendee2EmailAddress = new EmailAddress();
-$attendeesAttendee2EmailAddress->setAddress('AlexW@contoso.onmicrosoft.com');
+$attendeesAttendee2EmailAddress->setAddress('AlexW@contoso.com');
 $attendeesAttendee2EmailAddress->setName('Alex Wilber');
 $attendeesAttendee2->setEmailAddress($attendeesAttendee2EmailAddress);
 $attendeesAttendee2->setType(new AttendeeType('required'));

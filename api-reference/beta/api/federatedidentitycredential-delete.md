@@ -3,7 +3,7 @@ title: "Delete federatedIdentityCredential"
 description: "Deletes a federatedIdentityCredential object."
 author: "nickludwig"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -41,7 +41,7 @@ DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIde
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

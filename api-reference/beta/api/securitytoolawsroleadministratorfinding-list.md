@@ -4,7 +4,7 @@ description: "Get a list of the securityToolAwsRoleAdministratorFinding objects 
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 
@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.securityToolAwsRoleAdministratorFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.securityToolAwsRoleAdministratorFinding
 ```
 
 ## Optional query parameters
@@ -37,7 +37,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

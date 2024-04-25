@@ -3,7 +3,7 @@ title: "Assign claimsMappingPolicy"
 description: "Assign a claimsMappingPolicy to a service principal."
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Assign a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) to a [servicePrincipal](../resources/servicePrincipal.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -43,7 +43,7 @@ POST /servicePrincipals(appId='{appId}')/claimsMappingPolicies/$ref
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json |
 
 ## Request body

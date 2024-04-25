@@ -4,23 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 IosUpdateDeviceStatus iosUpdateDeviceStatus = new IosUpdateDeviceStatus();
-iosUpdateDeviceStatus.installStatus = IosUpdatesInstallStatus.AVAILABLE;
-iosUpdateDeviceStatus.osVersion = "Os Version value";
-iosUpdateDeviceStatus.deviceId = "Device Id value";
-iosUpdateDeviceStatus.userId = "User Id value";
-iosUpdateDeviceStatus.deviceDisplayName = "Device Display Name value";
-iosUpdateDeviceStatus.userName = "User Name value";
-iosUpdateDeviceStatus.deviceModel = "Device Model value";
-iosUpdateDeviceStatus.complianceGracePeriodExpirationDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:56:44.951111+00:00");
-iosUpdateDeviceStatus.status = ComplianceStatus.NOT_APPLICABLE;
-iosUpdateDeviceStatus.lastReportedDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T08:00:17.7769392+00:00");
-iosUpdateDeviceStatus.userPrincipalName = "User Principal Name value";
+iosUpdateDeviceStatus.setOdataType("#microsoft.graph.iosUpdateDeviceStatus");
+iosUpdateDeviceStatus.setInstallStatus(IosUpdatesInstallStatus.Available);
+iosUpdateDeviceStatus.setOsVersion("Os Version value");
+iosUpdateDeviceStatus.setDeviceId("Device Id value");
+iosUpdateDeviceStatus.setUserId("User Id value");
+iosUpdateDeviceStatus.setDeviceDisplayName("Device Display Name value");
+iosUpdateDeviceStatus.setUserName("User Name value");
+iosUpdateDeviceStatus.setDeviceModel("Device Model value");
+OffsetDateTime complianceGracePeriodExpirationDateTime = OffsetDateTime.parse("2016-12-31T23:56:44.951111-08:00");
+iosUpdateDeviceStatus.setComplianceGracePeriodExpirationDateTime(complianceGracePeriodExpirationDateTime);
+iosUpdateDeviceStatus.setStatus(ComplianceStatus.NotApplicable);
+OffsetDateTime lastReportedDateTime = OffsetDateTime.parse("2017-01-01T00:00:17.7769392-08:00");
+iosUpdateDeviceStatus.setLastReportedDateTime(lastReportedDateTime);
+iosUpdateDeviceStatus.setUserPrincipalName("User Principal Name value");
+IosUpdateDeviceStatus result = graphClient.deviceManagement().iosUpdateStatuses().byIosUpdateDeviceStatusId("{iosUpdateDeviceStatus-id}").patch(iosUpdateDeviceStatus);
 
-graphClient.deviceManagement().iosUpdateStatuses("{iosUpdateDeviceStatusId}")
-	.buildRequest()
-	.patch(iosUpdateDeviceStatus);
 
 ```

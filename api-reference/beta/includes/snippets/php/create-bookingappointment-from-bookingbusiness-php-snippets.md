@@ -5,6 +5,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\BookingAppointment;
+use Microsoft\Graph\Generated\Models\Location;
+use Microsoft\Graph\Generated\Models\PhysicalAddress;
+use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Generated\Models\BookingReminder;
+use Microsoft\Graph\Generated\Models\BookingCustomerInformationBase;
+use Microsoft\Graph\Generated\Models\BookingCustomerInformation;
+use Microsoft\Graph\Generated\Models\OutlookGeoCoordinates;
+use Microsoft\Graph\Generated\Models\BookingQuestionAnswer;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -59,6 +69,7 @@ $invoiceDate->setTimeZone('UTC');
 $requestBody->setInvoiceDate($invoiceDate);
 $requestBody->setInvoiceId('1001');
 $requestBody->setInvoiceStatus(new BookingInvoiceStatus('open'));
+$requestBody->setIsCustomerAllowedToManageBooking(true);
 $requestBody->setInvoiceUrl('theInvoiceUrl');
 $requestBody->setIsLocationOnline(true);
 $requestBody->setOptOutOfCustomerEmail(false);
@@ -193,6 +204,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->appointments()->post($requestBody)->wait();
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->appointments()->post($requestBody)->wait();
 
 ```

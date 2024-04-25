@@ -3,7 +3,7 @@ title: "androidDeviceOwnerWiFiConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Android device to connect to desired Wi-Fi endpoint. By specifying the authentication method and security types expected by Wi-Fi endpoint you can make the Wi-Fi connection seamless for end user. This profile provides limited and simpler security types than Enterprise Wi-Fi profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -50,11 +50,12 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |wiFiSecurityType|[androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Possible values are: `open`, `wep`, `wpaPersonal`, `wpaEnterprise`.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 |preSharedKeyIsSet|Boolean|This is the pre-shared key for WPA Personal Wi-Fi network.|
-|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Specify the proxy setting for Wi-Fi configuration. Possible values include none, manual, and automatic. Possible values are: `none`, `manual`, `automatic`.|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Specify the proxy setting for Wi-Fi configuration. Possible values include none, manual, and automatic. Possible values are: `none`, `manual`, `automatic`, `unknownFutureValue`.|
 |proxyManualAddress|String|Specify the proxy server IP address. Android documentation does not specify IPv4 or IPv6. For example: 192.168.1.1.|
 |proxyManualPort|Int32|Specify the proxy server port.|
 |proxyAutomaticConfigurationUrl|String|Specify the proxy server configuration script URL.|
 |proxyExclusionList|String|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
+|macAddressRandomizationMode|[macAddressRandomizationMode](../resources/intune-deviceconfig-macaddressrandomizationmode.md)|The MAC address randomization mode for Android device Wi-Fi configuration. Possible values include automatic and hardware. Default value is automatic. Possible values are: `automatic`, `hardware`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -120,6 +121,7 @@ Here is a JSON representation of the resource.
   "proxyManualAddress": "String",
   "proxyManualPort": 1024,
   "proxyAutomaticConfigurationUrl": "String",
-  "proxyExclusionList": "String"
+  "proxyExclusionList": "String",
+  "macAddressRandomizationMode": "String"
 }
 ```

@@ -3,7 +3,7 @@ title: "wipeAndBlockManagedApps action"
 description: "Blocks the managed app user from app check-in."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Blocks the managed app user from app check-in.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).  In addition to the listed permissions, an authenticated user must be assigned the Managed apps/Wipe permission in an Intune Role. Your automation must use delegated permissions as only granting application permissions as listed in the table are insufficient to complete the wipe action.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /users/{usersId}/wipeAndBlockManagedApps
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

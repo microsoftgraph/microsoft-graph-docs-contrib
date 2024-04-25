@@ -3,7 +3,7 @@ title: "Add attachment"
 description: "Add an attachment when creating a group post."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 In the request body, provide a JSON object that includes a **post** parameter.
@@ -62,7 +62,7 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 ## Examples
 ### Example 1: Include a file attachment
 #### Request
-Here is an example of a request that includes a file as an attachment when creating a post.
+The following example shows a request that includes a file as an attachment when creating a post.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -124,7 +124,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_with_post"
@@ -136,7 +136,7 @@ HTTP/1.1 202 Accpted
 ### Example 2: Include an item attachment
 
 #### Request
-Here is an example of a request that includes an event as an attachment when creating a post.
+The following example shows a request that includes an event as an attachment when creating a post.
 
 
 # [HTTP](#tab/http)
@@ -214,7 +214,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_with_post"
@@ -226,7 +226,7 @@ HTTP/1.1 202 Accepted
 ### Example 3: Include a reference attachment
 
 #### Request
-Here is an example of a request that includes a reference attachment when creating a post.
+The following example shows a request that includes a reference attachment when creating a post.
 The attachment points to a folder on OneDrive.
 
 
@@ -271,7 +271,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-reference-attachment-with-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -293,7 +293,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_with_post"

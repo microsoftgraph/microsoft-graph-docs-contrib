@@ -3,7 +3,7 @@ title: "List appRoleAssignments granted to a user"
 description: "Retrieve the list of app role assignments granted to a user."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "psignoret"
 ---
 
@@ -43,7 +43,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 | Name           | Description                |
 |:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

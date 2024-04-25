@@ -4,19 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-String pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA";
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-String password = "<password>";
+com.microsoft.graph.identity.apiconnectors.item.uploadclientcertificate.UploadClientCertificatePostRequestBody uploadClientCertificatePostRequestBody = new com.microsoft.graph.identity.apiconnectors.item.uploadclientcertificate.UploadClientCertificatePostRequestBody();
+uploadClientCertificatePostRequestBody.setPkcs12Value("eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA");
+uploadClientCertificatePostRequestBody.setPassword("<password>");
+var result = graphClient.identity().apiConnectors().byIdentityApiConnectorId("{identityApiConnector-id}").uploadClientCertificate().post(uploadClientCertificatePostRequestBody);
 
-graphClient.identity().apiConnectors("{id}")
-	.uploadClientCertificate(IdentityApiConnectorUploadClientCertificateParameterSet
-		.newBuilder()
-		.withPkcs12Value(pkcs12Value)
-		.withPassword(password)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

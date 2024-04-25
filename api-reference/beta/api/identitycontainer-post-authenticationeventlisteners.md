@@ -3,7 +3,7 @@ title: "Create authenticationEventListener"
 description: "Create a new authenticationEventListener object."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -22,6 +22,9 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
 
+> [!NOTE]
+>
+> You can have a maximum of 250 event listeners.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,7 +47,7 @@ POST /identity/authenticationEventListeners
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

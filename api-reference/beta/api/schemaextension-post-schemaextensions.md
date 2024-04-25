@@ -4,7 +4,7 @@ description: "Create a new schemaExtension definition to extend a supporting res
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
+ms.subservice: extensions
 ---
 
 # Create schemaExtension
@@ -47,7 +47,7 @@ POST /schemaExtensions
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json  |
 
 ## Request body
@@ -407,7 +407,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)

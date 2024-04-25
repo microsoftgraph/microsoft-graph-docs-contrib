@@ -4,7 +4,7 @@ description: "Provides the synchronization engine information about a directory 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # directoryDefinition resource type
@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

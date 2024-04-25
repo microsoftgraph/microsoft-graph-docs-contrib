@@ -2,7 +2,7 @@
 title: "reportRoot: getOffice365ActiveUserCounts"
 description: "Get the count of daily active users in the reporting period by product."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---
@@ -47,7 +47,7 @@ In the request URL, provide the following parameter with a valid value.
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 

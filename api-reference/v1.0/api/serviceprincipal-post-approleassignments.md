@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment to a service principal"
 description: "Grant an app role assignment to a service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 author: "psignoret"
 ---
 
@@ -54,7 +54,7 @@ POST /servicePrincipals(appId='{appId}')/appRoleAssignments
 
 | Name       | Description|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -127,7 +127,7 @@ In this example, note that the value used as the service principal **id** in the
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 

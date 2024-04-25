@@ -1,9 +1,9 @@
 ---
 title: "Create workflow"
-description: "Create a new workflow object. You can create up to 50 workflows in a tenant."
+description: "Create a new workflow object. You can create up to 100 workflows in a tenant."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.identityGovernance
 
-Create a new [workflow](../resources/identitygovernance-workflow.md) object. You can create up to 50 workflows in a tenant.
+Create a new [workflow](../resources/identitygovernance-workflow.md) object. You can create up to 100 workflows in a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -38,7 +38,7 @@ POST /identityGovernance/lifecycleWorkflows/workflows
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 #### Request
 
-The following is an example of a request that creates a workflow with the following configuration:
+The following example shows a request that creates a workflow with the following configuration:
 + It's a "joiner" workflow that's enabled and schedule to run.
 + It runs for new users that are based in Australia, on their employeeHireDate.
 + Two tasks are carried out when the workflow runs: the user's account is enabled and a "Welcome" email is sent to the user.
@@ -202,7 +202,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

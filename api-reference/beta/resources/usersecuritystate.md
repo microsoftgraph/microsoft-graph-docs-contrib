@@ -3,7 +3,8 @@ title: "userSecurityState resource type"
 description: "Contains stateful information about the user account."
 ms.localizationpriority: medium
 author: "yyuank"
-ms.prod: "users"
+ms.reviewer: "iamut"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 

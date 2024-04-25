@@ -3,7 +3,7 @@ title: "plannerPlan: moveToContainer"
 description: "Move a planner plan object from one planner plan container to another."
 ms.localizationpriority: medium
 author: "vasrinwork"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ POST /planner/plans/{planId}/moveToContainer
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 | If-Match  | Last known ETag value for the **plannerPlan** to be moved. Required.|
 

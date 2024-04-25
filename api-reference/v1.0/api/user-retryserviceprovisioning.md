@@ -3,7 +3,7 @@ title: "user: retryServiceProvisioning"
 description: "Retries user service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: "apiPageType"
 ---
 
@@ -17,13 +17,10 @@ Retry the [user](../resources/user.md) service provisioning.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                                           |
-| :------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | User.ReadWrite, User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite                                                                                                        |
-| Application                            | User.ManageIdentities.All, User.EnableDisableAccount.All, User.ReadWrite.All, Directory.ReadWrite.All                 |
+<!-- { "blockType": "permissions", "name": "user_retryserviceprovisioning" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-retryserviceprovisioning-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,12 +32,12 @@ POST /users/{id}/retryServiceProvisioning
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,7 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +94,7 @@ POST https://graph.microsoft.com/v1.0/users/{id}/retryServiceProvisioning
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

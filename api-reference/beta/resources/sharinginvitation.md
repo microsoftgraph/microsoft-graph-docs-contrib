@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: SharingInvitation
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.subservice: onedrive
 ---
 
 # SharingInvitation resource type
@@ -18,7 +18,7 @@ The **SharingInvitation** resource groups invitation-related data items into a s
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

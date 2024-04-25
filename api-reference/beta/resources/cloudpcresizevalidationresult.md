@@ -3,7 +3,7 @@ title: "cloudPcResizeValidationResult resource type"
 description: "Represents the validation result of a single resized Cloud PC during the bulk-resize action."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -40,7 +40,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcResizeValidationResult"

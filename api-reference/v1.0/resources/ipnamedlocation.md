@@ -4,7 +4,7 @@ description: "Represents a Microsoft Entra ID named location defined by IP range
 ms.localizationpriority: medium
 author: "lisaychuang"
 ms.reviewer: conditionalaccesspm
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -43,7 +43,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -64,7 +64,7 @@ Here's a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related content
 
 + [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
 + [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)

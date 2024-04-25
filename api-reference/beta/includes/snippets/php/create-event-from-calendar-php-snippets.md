@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Event;
+use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Generated\Models\Location;
+use Microsoft\Graph\Generated\Models\Attendee;
+use Microsoft\Graph\Generated\Models\EmailAddress;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -28,7 +35,7 @@ $location->setDisplayName('Harry\'s Bar');
 $requestBody->setLocation($location);
 $attendeesAttendee1 = new Attendee();
 $attendeesAttendee1EmailAddress = new EmailAddress();
-$attendeesAttendee1EmailAddress->setAddress('adelev@contoso.onmicrosoft.com');
+$attendeesAttendee1EmailAddress->setAddress('adelev@contoso.com');
 $attendeesAttendee1EmailAddress->setName('Adele Vance');
 $attendeesAttendee1->setEmailAddress($attendeesAttendee1EmailAddress);
 $attendeesAttendee1->setType(new AttendeeType('required'));

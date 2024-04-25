@@ -58,6 +58,10 @@ This control uses the following Microsoft Graph APIs and permissions.
 | - | - | - |
 | Default | Chat.Create, ChatMessage.Send | [/chats](/graph/api/chat-post), [/chats/{id}/messages](/graph/api/chat-post-messages) |
 
+### Subcomponents
+
+The `mgt-new-chat` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-people-picker](people-picker.md).
+
 ## Authentication
 
 The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).

@@ -10,17 +10,17 @@ $params = @{
 	assignedTo = "String"
 	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
 	comments = @(
-		"String"
-	)
-	feedback = "@odata.type: microsoft.graph.alertFeedback"
-	status = "@odata.type: microsoft.graph.alertStatus"
-	tags = @(
-		"String"
-	)
-	vendorInformation = @{
-		provider = "String"
-		vendor = "String"
-	}
+	"String"
+)
+feedback = "@odata.type: microsoft.graph.alertFeedback"
+status = "@odata.type: microsoft.graph.alertStatus"
+tags = @(
+"String"
+)
+vendorInformation = @{
+provider = "String"
+vendor = "String"
+}
 }
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params

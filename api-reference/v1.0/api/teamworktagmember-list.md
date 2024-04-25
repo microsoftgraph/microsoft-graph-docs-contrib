@@ -3,7 +3,7 @@ title: "List teamworkTagMembers"
 description: "Get a list of the members of a standard tag in a team and their properties."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -31,14 +31,17 @@ GET /teams/{team-id}/tags/{teamworkTag-id}/members
 ```
 
 ## Optional query parameters
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
+
+This method supports the `$filter` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -49,8 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

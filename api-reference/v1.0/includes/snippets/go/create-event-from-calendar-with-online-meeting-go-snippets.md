@@ -44,7 +44,7 @@ requestBody.SetLocation(location)
 
 attendee := graphmodels.NewAttendee()
 emailAddress := graphmodels.NewEmailAddress()
-address := "adelev@contoso.onmicrosoft.com"
+address := "adelev@contoso.com"
 emailAddress.SetAddress(&address) 
 name := "Adele Vance"
 emailAddress.SetName(&name) 
@@ -52,7 +52,7 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.attendeeable {
+attendees := []graphmodels.Attendeeable {
 	attendee,
 }
 requestBody.SetAttendees(attendees)

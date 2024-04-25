@@ -4,7 +4,7 @@ description: "Get a count of the AWS IAM Access Keys that have not been used in 
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,7 @@ GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIde
 ## Function parameters
 
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that are required with this function.
+The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -46,7 +46,7 @@ The following table shows the parameters that are required with this function.
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -3,7 +3,7 @@ title: "event resource type"
 description: "An event in a calendar."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -136,7 +136,7 @@ This resource supports:
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -203,7 +203,7 @@ Here is a JSON representation of the resource
 }
 ```
 
-## See also
+## Related content
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Get incremental changes to events in a folder](/graph/delta-query-events)

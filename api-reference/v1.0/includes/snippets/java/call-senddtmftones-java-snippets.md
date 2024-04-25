@@ -4,34 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+// Code snippets are only available for the latest version. Current version is 6.x
 
-LinkedList<Tone> tonesList = new LinkedList<Tone>();
-tonesList.add(Tone.TONE1);
-tonesList.add(Tone.TONE2);
-tonesList.add(Tone.TONE3);
-tonesList.add(Tone.TONE4);
-tonesList.add(Tone.TONE5);
-tonesList.add(Tone.TONE6);
-tonesList.add(Tone.TONE7);
-tonesList.add(Tone.TONE8);
-tonesList.add(Tone.TONE9);
-tonesList.add(Tone.TONE0);
-tonesList.add(Tone.STAR);
-tonesList.add(Tone.POUND);
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-int delayBetweenTonesMs = 1000;
+com.microsoft.graph.communications.calls.item.senddtmftones.SendDtmfTonesPostRequestBody sendDtmfTonesPostRequestBody = new com.microsoft.graph.communications.calls.item.senddtmftones.SendDtmfTonesPostRequestBody();
+LinkedList<Tone> tones = new LinkedList<Tone>();
+tones.add(Tone.Tone1);
+tones.add(Tone.Tone2);
+tones.add(Tone.Tone3);
+tones.add(Tone.Tone4);
+tones.add(Tone.Tone5);
+tones.add(Tone.Tone6);
+tones.add(Tone.Tone7);
+tones.add(Tone.Tone8);
+tones.add(Tone.Tone9);
+tones.add(Tone.Tone0);
+tones.add(Tone.Star);
+tones.add(Tone.Pound);
+sendDtmfTonesPostRequestBody.setTones(tones);
+sendDtmfTonesPostRequestBody.setDelayBetweenTonesMs(1000);
+sendDtmfTonesPostRequestBody.setClientContext("e0be71f1-a14f-4cec-b65a-e7aba5db7c53");
+var result = graphClient.communications().calls().byCallId("{call-id}").sendDtmfTones().post(sendDtmfTonesPostRequestBody);
 
-String clientContext = "e0be71f1-a14f-4cec-b65a-e7aba5db7c53";
-
-graphClient.communications().calls("481f3600-983e-4276-9b59-c1b30ec8d125")
-	.microsoft.graph.sendDtmfTones(CallMicrosoft.graph.sendDtmfTonesParameterSet
-		.newBuilder()
-		.withTones(tonesList)
-		.withDelayBetweenTonesMs(delayBetweenTonesMs)
-		.withClientContext(clientContext)
-		.build())
-	.buildRequest()
-	.post();
 
 ```

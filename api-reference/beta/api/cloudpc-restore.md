@@ -3,7 +3,7 @@ title: "cloudPC: restore"
 description: "Restore a specific Cloud PC."
 author: "xumzheng"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -39,7 +39,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/restore
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

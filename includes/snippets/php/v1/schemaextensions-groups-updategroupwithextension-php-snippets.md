@@ -5,13 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Group;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Group();
 $additionalData = [
-	'graphlearn_courses' => [
+	'bellowscollege_courses' => [
 		'courseId' => '123',
 		'courseName' => 'New Managers',
 		'courseType' => 'Online',

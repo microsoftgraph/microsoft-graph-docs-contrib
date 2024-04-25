@@ -3,7 +3,7 @@ title: "updatableAssetGroup: addMembers"
 description: "Add members to an updatableAssetGroup."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body

@@ -4,7 +4,7 @@ description: "Get details about an inactive group in AWS, Azure, or GCP environm
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 
@@ -59,7 +59,7 @@ This method does not support any OData query parameters to help customize the re
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.
@@ -82,10 +82,6 @@ The following example shows a request for an inactive group in a GCP project.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxJbmFjdGl2ZUdyb3VwRmluZGluZyw2MDI0NA/microsoft.graph.inactiveGroupFinding
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-inactivegroupfinding-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-inactivegroupfinding-javascript-snippets.md)]

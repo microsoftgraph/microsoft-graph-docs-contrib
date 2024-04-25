@@ -3,7 +3,7 @@ title: "summarizeDeviceResourcePerformance function"
 description: "Intune Devices Userexperienceanalyticsresourceperformance Summarizedeviceresourceperformance Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ GET /deviceManagement/userExperienceAnalyticsResourcePerformance/summarizeDevice
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body
@@ -67,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 726
+Content-Length: 979
 
 {
   "value": [
@@ -86,7 +88,14 @@ Content-Length: 726
       "ramSpikeTimeScore": 1,
       "ramSpikeTimePercentageThreshold": 10.333333333333334,
       "deviceResourcePerformanceScore": 14,
-      "averageSpikeTimeScore": 5
+      "averageSpikeTimeScore": 5,
+      "machineType": "physical",
+      "cpuDisplayName": "Cpu Display Name value",
+      "totalProcessorCoreCount": 7,
+      "cpuClockSpeedInMHz": 6.0,
+      "totalRamInMB": 4.0,
+      "diskType": "hdd",
+      "healthStatus": "insufficientData"
     }
   ]
 }

@@ -3,7 +3,7 @@ title: "Create extensionProperty (directory extension)"
 description: "Create a new directory extension."
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: "apiPageType"
 ---
 
@@ -34,7 +34,7 @@ POST /applications(appId='{appId}')/extensionProperties
 ## Request headers
 | Name       | Description|
 |:-----------|:----------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type | application/json. Required. |
 
 ## Request body

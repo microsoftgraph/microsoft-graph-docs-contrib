@@ -1,9 +1,9 @@
 ---
 title: "deviceManagementConfigurationOptionDefinition resource type"
-description: "Not yet documented"
+description: "Intune Deviceconfigv2 Devicemanagementconfigurationoptiondefinition Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |optionValue|[deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|Value of the option|
-|dependentOn|[deviceManagementConfigurationDependentOn](../resources/intune-deviceconfigv2-devicemanagementconfigurationdependenton.md) collection|List of dependent settings for this option|
-|dependedOnBy|[deviceManagementConfigurationSettingDependedOnBy](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdependedonby.md) collection|List of Settings that depends on this option|
+|dependentOn|[deviceManagementConfigurationDependentOn](../resources/intune-shared-devicemanagementconfigurationdependenton.md) collection|List of dependent settings for this option|
+|dependedOnBy|[deviceManagementConfigurationSettingDependedOnBy](../resources/intune-shared-devicemanagementconfigurationsettingdependedonby.md) collection|List of Settings that depends on this option|
 |itemId|String|Identifier of option|
 |description|String|Description of the option|
 |helpText|String|Help text of the option|

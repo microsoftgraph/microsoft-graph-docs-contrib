@@ -3,7 +3,7 @@ title: "submissionResult resource type"
 description: "Represents the result of a review after the threat submission is processed by Microsoft."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -109,7 +109,7 @@ Represents the result of a review after the threat submission is processed by Mi
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.submissionResult"

@@ -2,8 +2,9 @@
 title: "groupLifecyclePolicy resource type"
 description: "Represents a lifecycle policy for a Microsoft 365 group."
 ms.localizationpriority: medium
-author: "Jordanndahl"
-ms.prod: "groups"
+author: "yuhko-msft"
+ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -45,7 +46,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

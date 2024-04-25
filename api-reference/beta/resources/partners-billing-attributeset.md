@@ -3,7 +3,7 @@ title: "attributeSet enum type"
 description: "Represents attributes for exported data sets in the Microsoft Graph partner billing API."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: enumPageTypes
 ---
 
@@ -12,6 +12,8 @@ doc_type: enumPageTypes
 Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
 Represents attributes for exported data sets in the Microsoft Graph partner billing API. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes.
 

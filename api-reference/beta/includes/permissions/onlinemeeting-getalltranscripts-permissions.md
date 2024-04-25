@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|OnlineMeetings.Read|OnlineMeetings.ReadWrite, OnlineMeetingArtifact.Read.All|
+|Delegated (work or school account)|Not supported.|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OnlineMeetings.Read.All|OnlineMeetings.ReadWrite.All, OnlineMeetingArtifact.Read.All|
+|Application|OnlineMeetingTranscript.Read.All|Not available.|
 

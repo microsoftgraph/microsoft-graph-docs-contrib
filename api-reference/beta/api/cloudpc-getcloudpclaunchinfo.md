@@ -3,7 +3,7 @@ title: "cloudPC: getCloudPcLaunchInfo"
 description: "Get the Cloud PC launch information for the signed-in user."
 author: "andrewku0409"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -35,7 +35,7 @@ GET /me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 Don't supply a request body for this method.

@@ -1,9 +1,9 @@
 ---
-title: "Publish teamsapp"
+title: "Publish teamsApp"
 description: "Publish an app to the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -23,15 +23,13 @@ The **requiresReview** property allows any user to submit an app for review by a
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission Type                        | Permissions (from least to most privileged)|
-|:----------------------------------     |:-------------|
-| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "teamsapp_publish" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamsapp-publish-permissions.md)]
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> [!NOTE]
+> The Directory.ReadWrite.All permission is supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -51,13 +49,13 @@ POST /appCatalogs/teamsApps?requiresReview={Boolean}
 
 |Property|Type|Description|
 |----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set **requiresReview** to `true`. A user who has admin privileges can opt not to set **requiresReview** or set the value to `false`  and the app will be considered approved and will publish instantly.|
+|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set **requiresReview** to `true`. A user who has admin privileges can opt not to set **requiresReview** or set the value to `false`  and the app is approved and immediately published.|
 
 ## Request headers
 
 | Header        | Value           |
 |:--------------|:--------------  |
-| Authorization | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/zip. Required. |
 
 ## Request body
@@ -68,7 +66,7 @@ Each app in the app catalog must have a unique manifest ID.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object.
+If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object. If the app manifest has any validation errors, the request returns an error response with details about the schema errors.
 
 ## Examples
 
@@ -100,6 +98,10 @@ Content-type: application/zip
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -174,6 +176,10 @@ Content-type: application/zip
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-teamsapp-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-teamsapp-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -269,7 +275,58 @@ Content-type: application/json
 }
 ```
 
-## See also
+### Example 4: Publish an app with an error in the app manifest to the app catalog 
+
+#### Request
+
+The following example shows a request.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
+Content-type: application/zip
+
+[Zip file containing a Teams app package]
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "name | Required properties are missing from object: [].; developer.websiteUrl | String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+        "innerError": {
+            "code": "UnableToParseTeamsAppManifest",
+            "message": "name | Required properties are missing from object: [].; developer.websiteUrl | String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+            "details": [
+                {
+                    "code": "SchemaError_Required",
+                    "message": "Required properties are missing from object: [].",
+                    "target": "name"
+                },
+                {
+                    "code": "SchemaError_Pattern",
+                    "message": "String \"hs://www.yo.com\" does not match regex pattern \"^[Hh][Tt][Tt][Pp][Ss]?://\".",
+                    "target": "developer.websiteUrl"
+                }
+            ],
+            "date": "2024-01-18T21:47:58",
+            "request-id": "d1878136-bc88-421a-b342-c3d883db31a1",
+            "client-request-id": "d1878136-bc88-421a-b342-c3d883db31a1"
+        }
+    }
+}
+```
+
+## Related content
 
 - [App catalog C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-appcatalog-lifecycle/csharp)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

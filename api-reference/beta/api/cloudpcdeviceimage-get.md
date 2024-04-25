@@ -3,7 +3,7 @@ title: "Get cloudPcDeviceImage"
 description: "Read the properties and relationships of a cloudPcDeviceImage object."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ This method supports `$select` OData query parameter to help customize the respo
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -57,7 +57,6 @@ If successful, this method returns a `200 OK` response code and a [cloudPcDevice
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcDevice
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/eda7ed64-7705-4079-9d08-c2bd883f4fff
 ```
 
 # [C#](#tab/csharp)
@@ -118,17 +117,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/deviceImages/$entity",
     "id": "eda7ed64-7705-4079-9d08-c2bd883f4fff",
-    "displayName": "Display Name value",
-    "expirationDate": "2022-11-10",
-    "osBuildNumber": "OS Build Number value",
+    "displayName": "ImageForDev",
+    "expirationDate": "2024-06-11",
+    "osBuildNumber": "21H2",
     "osStatus": "supported",
-    "operatingSystem": "Operating System value",
-    "version": "Version value",
-    "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",
-    "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
-    "status": "pending",
-    "statusDetails": null
+    "operatingSystem": "Windows 10 Enterprise",
+    "version": "0.0.1",
+    "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+    "lastModifiedDateTime": "2023-11-03T07:03:44.97Z",
+    "status": "ready",
+    "statusDetails": null,
+    "errorCode": null
 }
 ```

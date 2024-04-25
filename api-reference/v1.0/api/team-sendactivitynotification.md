@@ -3,28 +3,26 @@ title: "team: sendActivityNotification"
 description:  Send an activity feed notification in scope of a team.
 author: eddie-lee-msft
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 
 # team: sendActivityNotification
 Namespace: microsoft.graph
 
-Send an activity feed notification in the scope of a team. For more details about sending notifications and the requirements for doing so, see
+Send an activity feed notification in the scope of a team. For more information about sending notifications and the requirements for doing so, see
 [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|TeamsActivity.Send|
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|TeamsActivity.Send.Group*, TeamsActivity.Send|
+<!-- { "blockType": "permissions", "name": "team_sendactivitynotification" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-sendactivitynotification-permissions.md)]
 
->**Note:** Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamsActivity.Send.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -39,7 +37,7 @@ POST /teams/{teamId}/sendActivityNotification
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -49,12 +47,13 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Topic of the notification. Specifies the resource being talked about.|
-|activityType|String|Activity type. This must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
-|chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
-|previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
-|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. For more details, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md), [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md), and [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). |
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|The topic of the notification. Specifies the resource being talked about.|
+|activityType|String|The activity type. Activity types must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
+|chainId|Int64|Optional. The chain ID for the notification. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
+|previewText|[itemBody](../resources/itembody.md)|The preview text for the notification. Microsoft Teams shows the first 150 characters.|
+|templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview).|
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|The recipient of the notification. For more information, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md), [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md), and [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). |
+| teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
 
@@ -156,7 +155,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Notify a user about a channel tab
 
-Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [tab](../resources/teamstab.md) in a [channel](../resources/channel.md). The tab hosts a page showing the user the status of their hotel reservation. Selecting the notification will take the user to the tab, where they can check their reservation.
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [tab](../resources/teamstab.md) in a [channel](../resources/channel.md). The tab hosts a page showing the user the status of their hotel reservation. Selecting the notification takes the user to the tab, where they can check their reservation.
 
 #### Request
 
@@ -242,7 +241,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Notify a user about a channel tab using user principal name
 
-Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [tab](../resources/teamstab.md) in a [channel](../resources/channel.md). The tab hosts a page showing the user the status of their hotel reservation. Selecting the notification will take the user to the tab, where they can check their reservation.
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [tab](../resources/teamstab.md) in a [channel](../resources/channel.md). The tab hosts a page showing the user the status of their hotel reservation. Selecting the notification takes the user to the tab, where they can check their reservation.
 
 #### Request
 
@@ -329,7 +328,7 @@ HTTP/1.1 204 No Content
 
 ### Example 4: Notify a user about an event using custom topic
 
-As seen in the previous examples, you can link to different aspects of the team. However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when setting `topic` source to `text`.
+As seen in the previous examples, you can link to different aspects of the team. However, if you want to link to an aspect that isn't part of the team or isn't represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when setting `topic` source to `text`.
 
 #### Request
 
@@ -412,7 +411,7 @@ HTTP/1.1 204 No Content
 
 ### Example 5: Notify the team members about pending finance approval requests
 
-The following example shows how you can send an activity feed notification to all team members. This example is similar to previous examples. However, in this case, the **recipient** is a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Note that the **teamId** specified in the **recipient** must match the **teamId** specified in the request URL.
+The following example shows how you can send an activity feed notification to all team members. This example is similar to previous examples. However, in this case, the **recipient** is a [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). The **teamId** specified in the **recipient** must match the **teamId** specified in the request URL.
 
 > **Note:** The ability to send notifications to all team members is limited to teams with 10,000 members or less. If the team exceeds 10,000 members, none of the team members will receive a notification.
 
@@ -503,7 +502,7 @@ HTTP/1.1 204 No Content
 
 ### Example 6: Notify the channel members about pending finance approval requests
 
-The following example shows how you can send an activity feed notification to all channel members. This example is similar to the previous example. However, in this case, the **recipient** is a [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Note that the **teamId** specified in the **recipient** must match the **teamId** specified in the request URL.
+The following example shows how you can send an activity feed notification to all channel members. This example is similar to the previous example. However, in this case, the **recipient** is a [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). The **teamId** specified in the **recipient** must match the **teamId** specified in the request URL.
 
 #### Request
 
@@ -593,7 +592,7 @@ HTTP/1.1 204 No Content
 
 ### Example 7: Notify about pending finance approval requests in channel message reply location
 
-Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [channel message reply](../api/chatmessage-get.md#example-3-get-reply-to-a-message-in-a-channel). The channel message reply shows the status of the user's hotel reservation. Selecting the notification will take the user to the reply message in the channel, where they can check their reservation status.
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [channel message reply](../api/chatmessage-get.md#example-3-get-reply-to-a-message-in-a-channel). The channel message reply shows the status of the user's hotel reservation. Selecting the notification takes the user to the reply message in the channel, where they can check their reservation status.
 
 #### Request
 
@@ -683,7 +682,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related content
 
 - [Activity feed notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/csharp)
 - [Activity feed notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/nodejs)

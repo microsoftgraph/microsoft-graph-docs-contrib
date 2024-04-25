@@ -3,7 +3,8 @@ title: "List directReports"
 description: "Get a user's direct reports."
 ms.localizationpriority: high
 author: "yyuank"
-ms.prod: "users"
+ms.reviewer: "iamut"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -38,6 +39,8 @@ GET /users/{id | userPrincipalName}/directReports
 
 To retrieve the user and their direct reports, use the `$expand` query parameter:
 
+>**Note**: `$expand` returns a maximum of 20 objects. For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=directReports
@@ -51,7 +54,7 @@ This method supports the `$select`, `$count`, `$expand`, and `$filter` [OData qu
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json  |
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
@@ -63,7 +66,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/me/directReports
 ---
 
 ### Response
-Here is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -132,12 +135,12 @@ Content-type: application/json
             "displayName": "Conf Room Adams",
             "givenName": null,
             "jobTitle": null,
-            "mail": "Adams@Contoso.OnMicrosoft.com",
+            "mail": "Adams@contoso.com",
             "mobilePhone": null,
             "officeLocation": null,
             "preferredLanguage": null,
             "surname": null,
-            "userPrincipalName": "Adams@Contoso.OnMicrosoft.com"
+            "userPrincipalName": "Adams@contoso.com"
         }
     ]
 }

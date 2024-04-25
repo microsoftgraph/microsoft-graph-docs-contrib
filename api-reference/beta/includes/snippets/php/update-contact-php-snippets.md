@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Contact;
+use Microsoft\Graph\Generated\Models\TypedEmailAddress;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -13,10 +16,10 @@ $requestBody = new Contact();
 $emailAddressesTypedEmailAddress1 = new TypedEmailAddress();
 $emailAddressesTypedEmailAddress1->setType(new EmailType('personal'));
 $emailAddressesTypedEmailAddress1->setName('Pavel Bansky');
-$emailAddressesTypedEmailAddress1->setAddress('pavelb@adatum.onmicrosoft.com');
+$emailAddressesTypedEmailAddress1->setAddress('pavelb@contoso.com');
 $emailAddressesArray []= $emailAddressesTypedEmailAddress1;
 $emailAddressesTypedEmailAddress2 = new TypedEmailAddress();
-$emailAddressesTypedEmailAddress2->setAddress('pavelb@fabrikam.onmicrosoft.com');
+$emailAddressesTypedEmailAddress2->setAddress('pavelb@contoso.com');
 $emailAddressesTypedEmailAddress2->setName('Pavel Bansky');
 $emailAddressesTypedEmailAddress2->setType(new EmailType('other'));
 $emailAddressesTypedEmailAddress2->setOtherLabel('Volunteer work');

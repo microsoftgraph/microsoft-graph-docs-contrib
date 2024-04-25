@@ -3,7 +3,7 @@ title: "Get bookingCustomQuestion"
 description: "Read the properties and relationships of a bookingCustomQuestion object."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [bookingCustomQuestion](../resources/bookingcustomquestion.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ```http
-GET /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
+GET /solutions/bookingbusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
 ```
 
 ## Optional query parameters
@@ -43,7 +43,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -62,12 +62,12 @@ If successful, this method returns a `200 OK` response code and a [bookingCustom
 <!-- {
   "blockType": "request",
   "name": "get_bookingcustomquestion",
-  "sampleKeys": ["contosolunchdelivery@contoso.onmicrosoft.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
+  "sampleKeys": ["contosolunchdelivery@contoso.com", "3bc6fde0-4ad3-445d-ab17-0fc15dba0774"]
 }
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@contoso.onmicrosoft.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
+GET https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchdelivery@contoso.com/customQuestions/3bc6fde0-4ad3-445d-ab17-0fc15dba0774
 ```
 
 # [C#](#tab/csharp)
@@ -92,10 +92,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-bookingcustomquestion-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingcustomquestion-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

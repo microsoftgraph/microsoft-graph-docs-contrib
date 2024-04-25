@@ -3,7 +3,7 @@ title: "Create plannerPlan"
 description: "Create a new planner plan."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [plannerPlan](../resources/plannerplan.md).
+Create a new [plannerPlan](../resources/plannerplan.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -35,7 +35,7 @@ POST /planner/plans
 
 | Name          | Description               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required.|
 
 ## Request body
@@ -49,7 +49,7 @@ The following table lists the properties that are required when you create a [pl
 |container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. You can only change this property by moving a plan from one container to another using [plan move to container](../api/plannerplan-movetocontainer.md).|
 |title|String|The title of the plan.|
 
->**Note:** If the container is a Microsoft 365 group, the user who is creating the plan must be a member of the group that will contain the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
+>**Note:** If the container is a Microsoft 365 group, the user who creates the plan must be a member of the group that contains the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you aren't added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
 ## Response
 

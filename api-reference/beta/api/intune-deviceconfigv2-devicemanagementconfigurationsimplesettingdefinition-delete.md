@@ -3,7 +3,7 @@ title: "Delete deviceManagementConfigurationSimpleSettingDefinition"
 description: "Deletes a deviceManagementConfigurationSimpleSettingDefinition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -35,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
+DELETE /deviceManagement/inventorySettings/{deviceManagementConfigurationSettingDefinitionId}
 DELETE /deviceManagement/complianceSettings/{deviceManagementConfigurationSettingDefinitionId}
 DELETE /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
@@ -44,7 +45,7 @@ DELETE /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigura
 ## Request headers
 |Header|Value|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept|application/json|
 
 ## Request body

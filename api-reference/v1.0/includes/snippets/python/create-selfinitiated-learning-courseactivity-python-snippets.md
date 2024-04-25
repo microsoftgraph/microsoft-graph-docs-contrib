@@ -4,7 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-
+from msgraph import GraphServiceClient
+from msgraph.generated.models.learning_self_initiated_course import LearningSelfInitiatedCourse
 
 graph_client = GraphServiceClient(credentials, scopes)
 
