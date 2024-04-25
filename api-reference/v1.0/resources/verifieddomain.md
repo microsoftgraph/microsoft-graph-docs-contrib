@@ -15,13 +15,13 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 
 
 ## Properties
-| Property     | Type    | Description                                                                          |
-|:-------------|:--------|:-------------------------------------------------------------------------------------|
-| capabilities | String  | For example, `Email`, `OfficeCommunicationsOnline`.                                  |
-| isDefault    | Boolean | `true` if this is the default domain associated with the tenant; otherwise, `false`. |
-| isInitial    | Boolean | `true` if this is the initial domain associated with the tenant; otherwise, `false`. |
-| name         | String  | The domain name; for example, contoso.com`.                             |
-| type         | String  | For example, `Managed`.                                                              |
+| Property | Type | Description|
+|---------|---------|---------|
+| capabilities | String | For example, `Email`, `OfficeCommunicationsOnline`. |
+| isDefault | Boolean | `true` if this is the default domain associated with the tenant; otherwise, `false`. |
+| isInitial | Boolean | `true` if this is the initial domain associated with the tenant; otherwise, `false`. |
+| name | String | The domain name; for example, `contoso.com`. |
+| type | String | For example, `Managed`. |
 
 ## JSON representation
 
