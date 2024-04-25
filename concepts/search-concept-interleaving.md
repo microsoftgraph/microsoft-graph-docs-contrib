@@ -329,26 +329,26 @@ The following example shows how to interleave Teams chatMessage and Outlook mess
 
 #### Request
 
-The following example shows a request.
+The following example shows the interleaving request for chatMessage and message.
 
 ```http
 POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
-  "requests": [
-    {
-      "entityTypes": [
-        "chatMessage",
-        "message"
-      ],
-      "query": {
-        "queryString": "test"
-      },
-      "from": 0,
-      "size": 25
-    }
-  ]
+    "requests": [
+        {
+            "entityTypes": [
+                "chatMessage",
+                "message"
+            ],
+            "query": {
+                "queryString": "*"
+            },
+            "from": 0,
+            "size": 5
+        }
+    ]
 }
 ```
 
@@ -363,47 +363,22 @@ Content-type: application/json
 {
     "value": [
         {
-            "searchTerms": [
-                "test"
-            ],
+            "searchTerms": [],
             "hitsContainers": [
                 {
                     "hits": [
                         {
-                            "hitId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA/PUmjl3OgEumTcnPoOXsegAAAgFYAAAA/PUmjl3OgEumTcnPoOXsegABEKoqZAAAAA==",
+                            "hitId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA/PUmjl3OgEumTcnPoOXsegAAAgFYAAAA/PUmjl3OgEumTcnPoOXsegABBugTfgAAAA==",
                             "rank": 1,
-                            "summary": "<c0>test</c0> group chat",
+                            "summary": "hi",
                             "resource": {
                                 "@odata.type": "microsoft.graph.chatMessage",
-                                "id": "1659062009715",
-                                "createdDateTime": "2022-07-29T02:33:31Z",
-                                "lastModifiedDateTime": "2022-07-29T02:33:32Z",
-                                "subject": "",
-                                "importance": "normal",
-                                "webLink": "https://teams.microsoft.com/l/message/19%3a1b0e043e1bd043e686c153180dbd0b2d%40thread.v2/1659062009715?context=%7B%22contextType%22:%22chat%22%7D",
-                                "from": {
-                                    "emailAddress": {
-                                        "name": "Chentong Xiang",
-                                        "address": "cxiang@microsoft.com"
-                                    }
-                                },
-                                "channelIdentity": {},
-                                "etag": "1659062009715",
-                                "chatId": "19:1b0e043e1bd043e686c153180dbd0b2d@thread.v2"
-                            }
-                        },
-                        {
-                            "hitId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA/PUmjl3OgEumTcnPoOXsegAAAgFYAAAA/PUmjl3OgEumTcnPoOXsegABBugTfQAAAA==",
-                            "rank": 2,
-                            "summary": "<c0>test</c0>",
-                            "resource": {
-                                "@odata.type": "microsoft.graph.chatMessage",
-                                "id": "1657786710216",
-                                "createdDateTime": "2022-07-14T08:18:31Z",
+                                "id": "1657786709667",
+                                "createdDateTime": "2022-07-14T08:18:30Z",
                                 "lastModifiedDateTime": "2022-07-14T08:19:07Z",
                                 "subject": "",
                                 "importance": "normal",
-                                "webLink": "https://teams.microsoft.com/l/message/19%3a8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578%40unq.gbl.spaces/1657786710216?context=%7B%22contextType%22:%22chat%22%7D",
+                                "webLink": "https://teams.microsoft.com/l/message/19%3a8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578%40unq.gbl.spaces/1657786709667?context=%7B%22contextType%22:%22chat%22%7D",
                                 "from": {
                                     "emailAddress": {
                                         "name": "Tong Zheng",
@@ -413,8 +388,30 @@ Content-type: application/json
                                 "channelIdentity": {
                                     "channelId": "19:8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578@unq.gbl.spaces"
                                 },
-                                "etag": "1657786710216",
+                                "etag": "1657786709667",
                                 "chatId": "19:8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578@unq.gbl.spaces"
+                            }
+                        },
+                        {
+                            "hitId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA-PUmjl3OgEumTcnPoOXsegAAAgEBAAAAAPz1Jo5dzoBLpk3Jz6Dl7HoAAAIJWgAAAA==",
+                            "rank": 2,
+                            "summary": "",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.message",
+                                "createdDateTime": "2021-06-11T23:17:11Z",
+                                "lastModifiedDateTime": "2021-06-12T02:58:00Z",
+                                "receivedDateTime": "2021-06-11T23:17:11Z",
+                                "sentDateTime": "2021-06-11T23:17:11Z",
+                                "hasAttachments": false,
+                                "internetMessageId": "<DM5PR00MB0406C60478A4456D6B0F83F8D4349@DM5PR00MB0406.namprd00.prod.outlook.com>",
+                                "bodyPreview": "",
+                                "importance": "normal",
+                                "parentFolderId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgAuAAAD7MLXbKjTeUeUiM62OAqxBAEA-PUmjl3OgEumTcnPoOXsegAAAgEBAAAAAA==",
+                                "conversationId": "AAQkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgAQANQdjNmPALIE6YAJmOz4Qn4=",
+                                "isRead": true,
+                                "isDraft": true,
+                                "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA%2FPUmjl3OgEumTcnPoOXsegAAAgEBAAAAAPz1Jo5dzoBLpk3Jz6Dl7HoAAAIJWgAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+                                "inferenceClassification": "focused"
                             }
                         }
                     ],
