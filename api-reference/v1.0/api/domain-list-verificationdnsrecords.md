@@ -1,7 +1,7 @@
 ---
 title: "List verificationDnsRecords"
 description: "Retrieve a list of domainDnsRecord objects."
-author: "adimitui"
+author: "adimtafra00itui"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

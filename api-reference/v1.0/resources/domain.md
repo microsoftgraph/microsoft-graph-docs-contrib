@@ -1,7 +1,7 @@
 ---
 title: "domain resource type"
 description: "Represents a domain associated with the tenant."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType

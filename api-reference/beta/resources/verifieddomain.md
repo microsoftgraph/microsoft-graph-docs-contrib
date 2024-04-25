@@ -4,7 +4,7 @@ description: "Specifies a domain for a tenant. The verifiedDomains property of t
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
-author: "adimitui"
+author: "tafra00"
 ---
 
 # verifiedDomain resource type
