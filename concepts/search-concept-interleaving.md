@@ -67,7 +67,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of an interleaving response.
+The following example shows the interleaving response.
 
 ```http
 HTTP/1.1 200 OK
@@ -162,7 +162,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of an interleaving response.
+The following example shows the interleaving response.
 
 ```http
 HTTP/1.1 200 OK
@@ -272,7 +272,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of an interleaving response for bookmark and acronym.
+The following example shows the interleaving response for bookmark and acronym.
 
 ```http
 HTTP/1.1 200 OK
@@ -354,7 +354,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of an interleaving response for chatMessage and message.
+The following example shows the interleaving response for chatMessage and message.
 
 ```http
 HTTP/1.1 200 OK
