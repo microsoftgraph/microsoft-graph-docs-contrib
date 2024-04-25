@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta security labels retention-labels create --body '{\
+mgc security labels retention-labels create --body '{\
   "@odata.type": "#microsoft.graph.security.retentionLabel",\
   "displayName": "Retention Schedule 10005",\
   "behaviorDuringRetentionPeriod": "retain",\
