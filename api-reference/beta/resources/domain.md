@@ -49,17 +49,17 @@ To associate a domain with a tenant:
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-|authenticationType|String| Indicates the configured authentication type for the domain. The value is either `Managed` or `Federated`. `Managed` indicates a cloud managed domain where Microsoft Entra ID performs user authentication. `Federated` indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable. |
+|authenticationType|String| Indicates the configured authentication type for the domain. The value is either `Managed` or `Federated`. `Managed` indicates a cloud managed domain where Microsoft Entra ID performs user authentication. `Federated` indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable.  <br/><br/>To update this property in delegated scenarios, the calling app must be assigned the *Directory.AccessAsUser.All* delegated permission. |
 |availabilityStatus|String| This property is always `null` except when the [verify](../api/domain-verify.md) action is used. When the [verify](../api/domain-verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either `AvailableImmediately` or `EmailVerifiedDomainTakeoverScheduled`.|
 |id|String| The fully qualified name of the domain. Key, immutable, not nullable, unique. |
-|isAdminManaged|Boolean| The value of the property is `false` if the DNS record management of the domain has been delegated to Microsoft 365. Otherwise, the value is `true`. Not nullable |
+|isAdminManaged|Boolean| The value of the property is `false` if the DNS record management of the domain is delegated to Microsoft 365. Otherwise, the value is `true`. Not nullable |
 |isDefault|Boolean| `true` if this is the default domain that is used for user creation. There's only one default domain per company. Not nullable |
 |isInitial|Boolean| `true` if this is the initial domain created by Microsoft Online Services (contoso.com). There's only one initial domain per company. Not nullable |
 |isRoot|Boolean| `true` if the domain is a verified root domain. Otherwise, `false` if the domain is a subdomain or unverified. Not nullable |
 |isVerified|Boolean| `true` if the domain has completed domain ownership verification. Not nullable |
-|passwordNotificationWindowInDays|Int32|Specifies the number of days before a user receives notification that their password expires. If the property isn't set, a default value of 14 days is used.|
+|passwordNotificationWindowInDays|Int32|Specifies the number of days before a user receives notification that their password will expire. If the property isn't set, a default value of 14 days is used.|
 |passwordValidityPeriodInDays|Int32| Specifies the length of time that a password is valid before it must be changed. If the property isn't set, a default value of 90 days is used. |
-|supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`,`SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values that you can add/remove using Graph API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable.|
+|supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`,`SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values that you can add or remove using the API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable.|
 |state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
 
 ## Relationships

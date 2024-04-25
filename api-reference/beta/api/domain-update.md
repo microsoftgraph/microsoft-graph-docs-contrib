@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of domain object.
+Update the properties of [domain](../resources/domain.md) object.
 
 > **Important:**
 > Only verified domains can be updated.

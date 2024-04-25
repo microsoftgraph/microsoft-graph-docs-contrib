@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of domain object.
+Update the properties of [domain](../resources/domain.md) object.
 
 > **Important:**
 > Only verified domains can be updated.
