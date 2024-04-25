@@ -175,9 +175,8 @@ Other factors that affect a request cost:
 - Creating a user in a Microsoft Entra ID B2C tenant increases cost by 4
 
 > [!NOTE]
-> A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
->
-> Using `$select` for `directoryObjects/getByIds` and `getObjectsById` decreases cost by 2
+> - A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> - Using `$select` for `directoryObjects/getByIds` and `getObjectsById` decreases the cost by 2.
 
 ### Additional headers
 
