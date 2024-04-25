@@ -176,7 +176,7 @@ Other factors that affect a request cost:
 
 > [!NOTE]
 > - A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
-> - Using `$select` for `directoryObjects/getByIds` and `getObjectsById` decreases the cost by 2.
+> - Using `$select` for `directoryObjects/getByIds` and `getObjectsById` will result in 2 ResourceUnits.
 
 ### Additional headers
 
