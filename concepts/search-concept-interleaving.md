@@ -18,8 +18,8 @@ The following table shows the relationship between different entity types that c
 |--------------|---------|----------|---------|-------------|-------|-----------|-------|--------------|------|----------|--------|------|------|
 | acronym      | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
 | bookmark     | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
-| message      | -       | -        | True    | -           | -     | -         | -     | -            | -    | -        | -      | -    | -    |
-| chatMessage  | -       | -        | -       | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+| message      | -       | -        | True    | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+| chatMessage  | -       | -        | True    | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
 | drive        | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
 | driveItem    | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
 | event        | -       | -        | -       | -           | -     | -         | True  | -            | -    | -        | -      | -    | -    |
@@ -320,6 +320,111 @@ Content-type: application/json
       ]
     }
   ]
+}
+```
+
+### Example 4: Interleave Teams and Outlook content
+
+The following example shows how to interleave Teams chatMessage and Outlook message content.
+
+#### Request
+
+The following example shows a request.
+
+```http
+POST https://graph.microsoft.com/v1.0/search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "chatMessage",
+        "message"
+      ],
+      "query": {
+        "queryString": "test"
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+```
+
+#### Response
+
+Here's an example of an interleaving response for chatMessage and message.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "searchTerms": [
+                "test"
+            ],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA/PUmjl3OgEumTcnPoOXsegAAAgFYAAAA/PUmjl3OgEumTcnPoOXsegABEKoqZAAAAA==",
+                            "rank": 1,
+                            "summary": "<c0>test</c0> group chat",
+                            "resource": {
+                                "@odata.type": "microsoft.graph.chatMessage",
+                                "id": "1659062009715",
+                                "createdDateTime": "2022-07-29T02:33:31Z",
+                                "lastModifiedDateTime": "2022-07-29T02:33:32Z",
+                                "subject": "",
+                                "importance": "normal",
+                                "webLink": "https://teams.microsoft.com/l/message/19%3a1b0e043e1bd043e686c153180dbd0b2d%40thread.v2/1659062009715?context=%7B%22contextType%22:%22chat%22%7D",
+                                "from": {
+                                    "emailAddress": {
+                                        "name": "Chentong Xiang",
+                                        "address": "cxiang@microsoft.com"
+                                    }
+                                },
+                                "channelIdentity": {},
+                                "etag": "1659062009715",
+                                "chatId": "19:1b0e043e1bd043e686c153180dbd0b2d@thread.v2"
+                            }
+                        },
+                        {
+                            "hitId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA/PUmjl3OgEumTcnPoOXsegAAAgFYAAAA/PUmjl3OgEumTcnPoOXsegABBugTfQAAAA==",
+                            "rank": 2,
+                            "summary": "<c0>test</c0>",
+                            "resource": {
+                                "@odata.type": "microsoft.graph.chatMessage",
+                                "id": "1657786710216",
+                                "createdDateTime": "2022-07-14T08:18:31Z",
+                                "lastModifiedDateTime": "2022-07-14T08:19:07Z",
+                                "subject": "",
+                                "importance": "normal",
+                                "webLink": "https://teams.microsoft.com/l/message/19%3a8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578%40unq.gbl.spaces/1657786710216?context=%7B%22contextType%22:%22chat%22%7D",
+                                "from": {
+                                    "emailAddress": {
+                                        "name": "Tong Zheng",
+                                        "address": "Tong.Zheng@microsoft.com"
+                                    }
+                                },
+                                "channelIdentity": {
+                                    "channelId": "19:8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578@unq.gbl.spaces"
+                                },
+                                "etag": "1657786710216",
+                                "chatId": "19:8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578@unq.gbl.spaces"
+                            }
+                        }
+                    ],
+                    "total": 2,
+                    "moreResultsAvailable": false
+                }
+            ]
+        }
+    ],
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)"
 }
 ```
 
