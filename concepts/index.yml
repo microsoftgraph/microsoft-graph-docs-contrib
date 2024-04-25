@@ -22,12 +22,15 @@ highlightedContent:
     - title: Microsoft Graph REST API
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0
-    - title: Microsoft Graph Data Connect
-      itemType: overview
-      url: ./data-connect-concept-overview.md
     - title: Microsoft Graph connectors
       itemType: overview
       url: ./connecting-external-content-connectors-overview.md
+    - tite: What's new? 
+      itemType: whats-new
+      url: /graph/whats-new-overview
+    - title: Microsoft Graph Data Connect
+      itemType: overview
+      url: ./data-connect-concept-overview.md
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -67,14 +70,14 @@ conceptualContent:
         - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Access and manage messages and mail data.
-    - title: What's new?
+    - title: Microsoft Graph Data Connect
       links:
-        - url: ./whats-new-overview.md
-          itemType: whats-new
-          text: Discover new and updated Microsoft Graph APIs.
-        - url: https://developer.microsoft.com/en-us/graph/changelog
-          itemType: whats-new
-          text: Explore the API changelog. 
+        - url: /graph/data-connect-concept-overview
+          itemType: overview
+          text: Explore Microsoft Graph Data Connect.
+        - url: /graph/data-connect-quickstart
+          itemType: get-started
+          text: Build a Data Connect application. 
     - title: All services and features
       links:
         - url: ./overview-major-services.md
