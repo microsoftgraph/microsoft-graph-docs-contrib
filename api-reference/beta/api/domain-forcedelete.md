@@ -1,7 +1,7 @@
 ---
 title: "domain: forceDelete"
 description: "Deletes a domain using an asynchronous operation."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

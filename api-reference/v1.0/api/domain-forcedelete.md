@@ -1,17 +1,17 @@
 ---
-title: "Force domain deletion"
-description: "Deletes a domain using an asynchronous long-running operation."
-author: "adimitui"
+title: "domain: forceDelete"
+description: "Delete a domain using an asynchronous long-running operation."
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
-# Force domain deletion
+# domain: forceDelete
 
 Namespace: microsoft.graph
 
-Deletes a domain using an asynchronous long-running operation.
+Delete a domain using an asynchronous long-running operation.
 
 Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
 
