@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/v1.0/security/labels/authorities/6cf65e55-6ba
 
 ---
 
-
 ### Response
 Here's an example of the response.
 >

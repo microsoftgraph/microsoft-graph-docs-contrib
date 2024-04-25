@@ -1,7 +1,7 @@
 ---
 author: "idwilliams"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: m365-lighthouse
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->

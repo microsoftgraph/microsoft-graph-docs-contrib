@@ -34,6 +34,6 @@ $params = @{
 	}
 }
 
-New-MgBetaEntitlementManagementAssignmentRequest -BodyParameter $params
+New-MgBetaEntitlementManagementAccessPackageAssignmentRequest -BodyParameter $params
 
 ```
