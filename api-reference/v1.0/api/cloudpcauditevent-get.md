@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

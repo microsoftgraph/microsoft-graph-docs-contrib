@@ -4,7 +4,7 @@ description: "Customize your synchronization schema to include Microsoft Entra d
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
-ms.subservice: "entra-applications"
+ms.subservice: entra-applications
 ms.date: 06/27/2023
 ---
 

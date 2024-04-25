@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "1d153744-5c7f-4062-afab-c4387812f3d6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "myDayTasks",
+          "ChangeType": "Addition",
+          "Description": "Added the **myDayTasks** relationship to the [plannerUser](https://learn.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource.",
+          "Target": "plannerUser"
+        },
+        {
+          "Id": "1d153744-5c7f-4062-afab-c4387812f3d6",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [List myDayTasks](https://learn.microsoft.com/en-us/graph/api/planneruser-list-mydaytasks?view=graph-rest-beta) method.",
+          "Target": "plannerUser"
+        } 
+      ],
+      "Id": "1d153744-5c7f-4062-afab-c4387812f3d6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-22T16:35:53.1796359Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "386945e6-5671-43ad-8c17-24dc5f67f4e2",
           "ApiChange": "Property",
           "ChangedApiName": "isOnMyDay",
@@ -75,7 +101,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **completionRequirements** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
-        }
+        }   
       ],
       "Id": "9125b26a-eff1-4f7a-acd0-46c133b934fa",
       "Cloud": "Prod",
@@ -1949,6 +1975,88 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-04-03T12:10:19.8563344Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerApprovalStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerApprovalStatus** enumeration type.",
+          "Target": "plannerApprovalStatus"
+        },
+        {
+          "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+          "ApiChange": "Member",
+          "ChangedApiName": "formCompletion",
+          "ChangeType": "Addition",
+          "Description": "Added the `formCompletion` member to the **plannerTaskCompletionRequirements** enumeration.",
+          "Target": "plannerTaskCompletionRequirements"
+        },
+        {
+          "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+          "ApiChange": "Member",
+          "ChangedApiName": "approvalCompletion",
+          "ChangeType": "Addition",
+          "Description": "Added the `approvalCompletion` member to the **plannerTaskCompletionRequirements** enumeration.",
+          "Target": "plannerTaskCompletionRequirements"
+        },
+        {
+          "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerApprovalRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerApprovalRequirement](https://learn.microsoft.com/en-us/graph/api/resources/plannerApprovalRequirement?view=graph-rest-beta) resource.",
+          "Target": "plannerApprovalRequirement"
+        },
+        {
+          "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerBaseApprovalAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerBaseApprovalAttachment](https://learn.microsoft.com/en-us/graph/api/resources/plannerBaseApprovalAttachment?view=graph-rest-beta) resource.",
+          "Target": "plannerBaseApprovalAttachment"
+        },
+        {
+          "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerBasicApprovalAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerBasicApprovalAttachment](https://learn.microsoft.com/en-us/graph/api/resources/plannerBasicApprovalAttachment?view=graph-rest-beta) resource.",
+          "Target": "plannerBasicApprovalAttachment"
+        },
+        {
+          "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+          "ApiChange": "Property",
+          "ChangedApiName": "approvalRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalRequirement** property to the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCompletionRequirementDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskCompletionRequirementDetails"
+        },
+        {
+          "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+          "ApiChange": "Property",
+          "ChangedApiName": "approvalAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalAttachment** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskPropertyRule"
+        },
+        {
+          "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+          "ApiChange": "Property",
+          "ChangedApiName": "approvalAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalAttachment** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskDetails"
+        }
+      ],
+      "Id": "a5e85dbb-3f55-4948-824d-d9654972f58e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-15T17:42:49.507591Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     }

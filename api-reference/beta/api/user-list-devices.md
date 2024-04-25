@@ -4,7 +4,7 @@ description: "Get a list of user devices that support Project Rome capabilities.
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 

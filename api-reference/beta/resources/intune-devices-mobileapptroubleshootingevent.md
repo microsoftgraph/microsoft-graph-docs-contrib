@@ -20,11 +20,11 @@ MobileAppTroubleshootingEvent Entity.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List mobileAppTroubleshootingEvents](../api/intune-devices-mobileapptroubleshootingevent-list.md)|[mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) collection|List properties and relationships of the [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) objects.|
-|[Get mobileAppTroubleshootingEvent](../api/intune-devices-mobileapptroubleshootingevent-get.md)|[mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md)|Read properties and relationships of the [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) object.|
-|[Create mobileAppTroubleshootingEvent](../api/intune-devices-mobileapptroubleshootingevent-create.md)|[mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md)|Create a new [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) object.|
-|[Delete mobileAppTroubleshootingEvent](../api/intune-devices-mobileapptroubleshootingevent-delete.md)|None|Deletes a [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md).|
-|[Update mobileAppTroubleshootingEvent](../api/intune-devices-mobileapptroubleshootingevent-update.md)|[mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md)|Update the properties of a [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) object.|
+|[List mobileAppTroubleshootingEvents](../api/intune-devices-mobileapptroubleshootingevent-list.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) collection|List properties and relationships of the [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) objects.|
+|[Get mobileAppTroubleshootingEvent](../api/intune-devices-mobileapptroubleshootingevent-get.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Read properties and relationships of the [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.|
+|[Create mobileAppTroubleshootingEvent](../api/intune-devices-mobileapptroubleshootingevent-create.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Create a new [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.|
+|[Delete mobileAppTroubleshootingEvent](../api/intune-devices-mobileapptroubleshootingevent-delete.md)|None|Deletes a [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md).|
+|[Update mobileAppTroubleshootingEvent](../api/intune-devices-mobileapptroubleshootingevent-update.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|Update the properties of a [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object.|
 
 ## Properties
 |Property|Type|Description|
