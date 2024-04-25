@@ -1,6 +1,6 @@
 ---
 title: "domain: forceDelete"
-description: "Deletes a domain using an asynchronous operation."
+description: "Delete a domain using an asynchronous operation."
 author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a domain using an asynchronous operation.
+Delete a domain using an asynchronous operation.
 
-Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
+Before performing this operation, you must update or remove any references to **Exchange** as the provisioning service.
 
 The following actions are performed as part of this operation:
 
@@ -27,9 +27,9 @@ The following actions are performed as part of this operation:
 
 * If the number of objects to be renamed is greater than 1,000, an error is returned.
 
-* If one of the applications to be renamed is a multi-tenant app, an error is returned.
+* If one of the applications to be renamed is a multitenant app, an error is returned.
 
-After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain-get.md). If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
+After the domain deletion completes, API operations for the deleted domain return a 404 HTTP response code. To verify deletion of a domain, you can perform a [get domain](domain-get.md). If the domain was successfully deleted, a 404 HTTP response code is returned in the response.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -65,7 +65,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| Option to disable renamed user accounts. If a user account is disabled, the user will not be allowed to sign in.<br>*True* (default) - User accounts renamed as part of this operation are disabled.<br>*False* - User accounts renamed as part of this operation are not disabled. |
+|disableUserAccounts|Boolean| Option to disable renamed user accounts. If a user account is disabled, the user isn't allowed to sign in.<br>`true` (default) - User accounts renamed as part of this operation are disabled.<br>`false` - User accounts renamed as part of this operation aren't disabled. |
 
 ## Response
 

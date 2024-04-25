@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-For each [domain](domain.md) in the tenant, you may be required to add DNS record(s) to the DNS zone file of the domain before the domain can be used by Microsoft Online Services. These DNS records are represented
+For each [domain](domain.md) in the tenant, you may be required to add DNS records to the DNS zone file of the domain before the domain can be used by Microsoft Online Services. These DNS records are represented.
 
 The **domainDnsRecord** resource type is used to present such DNS records as exposed through the **serviceConfigurationRecords** and **verificationDnsRecords**. This resource type is the base entity for the following resources:
 + [domainDnsCnameRecord](domaindnscnamerecord.md)
@@ -25,10 +25,10 @@ The **domainDnsRecord** resource type is used to present such DNS records as exp
 None.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |id|String| Unique identifier assigned to this entity. Not nullable, Read-only.|
-|isOptional|Boolean| If `false`, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. |
+|isOptional|Boolean| If `false`, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain. |
 |label|String| Value used when configuring the name of the DNS record at the DNS host. |
 |recordType|String| Indicates what type of DNS record this entity represents. The value can be `CName`, `Mx`, `Srv`, or `Txt`. |
 |supportedService|String| Microsoft Online Service or feature that has a dependency on this DNS record. Can be one of the following values: `null`, `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`.|

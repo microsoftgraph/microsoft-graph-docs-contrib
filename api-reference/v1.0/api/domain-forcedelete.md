@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Delete a domain using an asynchronous long-running operation.
 
-Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
+Before performing this operation, you must update or remove any references to **Exchange** as the provisioning service.
 
 The following actions are performed as part of this operation:
 
@@ -27,7 +27,7 @@ The following actions are performed as part of this operation:
 
 * If one of the `applications` to be renamed is a multitenant app, an error is returned.
 
-After the domain deletion completes, API operations for the deleted domain will return an HTTP 404 status code. To verify deletion of a domain, you can perform a [get domain](domain-get.md) operation.
+After the domain deletion completes, API operations for the deleted domain return an HTTP 404 status code. To verify deletion of a domain, you can perform a [get domain](domain-get.md) operation.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -63,7 +63,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| Option to disable user accounts that are renamed. If a user account is disabled, the user won't be allowed to sign in. If set to **true** the `users` updated as part of this operation will be disabled.  Default value is **true**. |
+|`disableUserAccounts`|`Boolean`| Option to disable user accounts that are renamed. If a user account is disabled, the user isn't allowed to sign in. If set to `true` the users updated as part of this operation are disabled. Default value is `true`. |
 
 ## Response body
 
