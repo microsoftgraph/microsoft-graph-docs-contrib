@@ -1,5 +1,23 @@
 {
   "changelog": [
+     {
+       "ChangeList": [
+         {
+           "Id": "2e9689f1-ac83-4805-bd3e-6916503a87d1",
+           "ApiChange": "Resource",
+           "ChangedApiName": "targetUserSponsors",
+           "ChangeType": "Addition",
+           "Description": "Added the [targetUserSponsors](https://learn.microsoft.com/en-us/graph/api/resources/targetUserSponsors?view=graph-rest-1.0) resource.",
+           "Target": "targetUserSponsors"
+         }
+        ],
+        "Id": "2e9689f1-ac83-4805-bd3e-6916503a87d1",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2024-04-04T23:23:06.9229074Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Governance"
+      },
       {
         "ChangeList": [
           {
@@ -1195,6 +1213,24 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-03-06T07:11:46.7810315Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "56d0833c-0ddf-4b83-89c4-6e107f8ac7d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "maximumRetries",
+          "ChangeType": "Addition",
+          "Description": "Added the **maximumRetries** property to the [customExtensionClientConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "customExtensionClientConfiguration"
+        }
+      ],
+      "Id": "56d0833c-0ddf-4b83-89c4-6e107f8ac7d2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-24T15:31:43.4884252Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }
