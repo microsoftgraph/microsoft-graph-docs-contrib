@@ -106,10 +106,6 @@ tools:
       imageSrc: ./images/hub/icon01-sdk.svg
       url: /graph/sdks/sdks-overview
     # Card
-    - title: Quick start
-      imageSrc: ./images/hub/icon02-quickstart.svg
-      url: https://developer.microsoft.com/graph/quick-start
-    # Card
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: https://developer.microsoft.com/en-us/graph/graph-explorer
@@ -117,17 +113,23 @@ tools:
     - title: Microsoft Graph Toolkit
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
+     # Card
+    - title: Deploy with Bicep
+      imageSrc: ./images/hub/icon02-quickstart.svg
+      url: /graph/overview
 
 additionalContent:
   sections:
     - title: Resources
       items:
         # Card
-        - title: Learning paths and tutorials
+        - title: Training and tutorials
           links:
+            - text: Quick Start
+              url: https://developer.microsoft.com/graph/quick-start
             - text: Microsoft Graph fundamentals
               url: /training/paths/m365-msgraph-fundamentals/
-            - text: Microsoft learning paths
+            - text: Microsoft Graph learning paths
               url: /training/browse/?products=ms-graph&resource_type=learning%20path
             - text: Tutorials
               url: /graph/tutorials
