@@ -9,8 +9,6 @@ ms.prod: "cross-device-experiences"
 
 # Use the Windows settings API in Microsoft Graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 The Windows setting API enables users and authorized third parties acting on behalf of users to retrieve their Windows operating system settings data stored in the Microsoft cloud. The Windows settings data is available in the Microsoft cloud only when users activate the feature. The scope of data available for each user depends on their backup settings selections. The default values for any settings remain local and aren't transferred to the cloud. The Windows settings API only shares settings data that the user uploads to the cloud.
 
 ## Windows settings
