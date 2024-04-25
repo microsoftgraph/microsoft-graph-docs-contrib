@@ -22,9 +22,6 @@ highlightedContent:
     - title: Microsoft Graph REST API
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0
-    - title: Microsoft Graph connectors
-      itemType: overview
-      url: ./connecting-external-content-connectors-overview.md
     - title: What's new? 
       itemType: whats-new
       url: /graph/whats-new-overview
@@ -79,6 +76,14 @@ conceptualContent:
         - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Access and manage messages and mail data.
+    - title: Microsoft Graph connectors
+      links:
+        - url: /graph/connecting-external-content-connectors-overview
+          itemType: overview
+          text: Explore Microsoft Graph connectors.
+        - url: /graph/connecting-external-content-build-quickstart
+          itemType: get-started
+          text: Build your first connector.
     - title: Microsoft Graph Data Connect
       links:
         - url: /graph/data-connect-concept-overview
