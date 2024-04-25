@@ -88,8 +88,8 @@ For details about how to validate tokens and decrypt the payload, see [Set up ch
 The following are the supported meeting events:
 - callStarted - Events for when the meeting call has started.
 - callEnded - Events for when the meeting call has ended.
-- rosterUpdate - Events for when a participant joins and exits the call or lobby.
-
+- rosterUpdated - Events for when a participant joins and exits the call or lobby.
+  - The **rosterUpdated** event contain a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **removedState** property represent participants that have exited the collection. See [participant](/graph/api/resources/participant) for more details on participants information.
 ### Decrypted payload examples
 
 #### CallStarted
@@ -114,8 +114,7 @@ The following are the supported meeting events:
 }
 ```
 
-#### RosterUpdated
-
+#### RosterUpdated - Participant joins into call or lobby modality
 ```json
 {
   "@odata.type": "#microsoft.graph.callevent",
@@ -128,9 +127,8 @@ The following are the supported meeting events:
       "info": {
         "identity": {
           "user": {
-            "@odata.type": "#microsoft.graph.communicationsUserIdentity",
             "id": "f3ce5e01-0724-43c7-ae4d-80ca18703a96",
-            "displayName": "A user change within the meeting call",
+            "displayName": "A user roster update in the call",
             "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
           }
         }
@@ -139,30 +137,64 @@ The following are the supported meeting events:
       "id": "e1018298-976a-4956-93e8-f58e43b0016c"
     },
     {
-      "@odata.type": "#microsoft.graph.participant",
       "info": {
-        "@odata.type": "#microsoft.graph.participantInfo",
         "identity": {
-          "@odata.type": "#microsoft.graph.communicationsIdentitySet",
           "user": {
-            "@odata.type": "#microsoft.graph.communicationsUserIdentity",
             "id": "e8bbbe0e-6e3d-42db-9082-213abbe8ee5c",
-            "displayName": "User has made a change in the lobby of the call",
+            "displayName": "User roster update in the lobby of the call",
             "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
           }
         }
       },
       "isInLobby": true,
       "id": "a7cc3ddb-a469-410d-8057-44dba3b0c073"
-    },
+    }
+  ]
+}
+```
+
+#### RosterUpdated - Participant enters an inactive state (not in Lobby or Call)
+```json
+{
+  "@odata.type": "#microsoft.graph.callevent",
+  "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
+  "id": "{notificationId}",
+  "eventType": "rosterUpdated",
+  "eventDateTime": "2022-02-28T00:00:00.0000000Z",
+  "participants@delta": [
     {
-      "@odata.type": "#microsoft.graph.participant",
       "info": {
-        "@odata.type": "#microsoft.graph.participantInfo",
         "identity": {
-          "@odata.type": "#microsoft.graph.communicationsIdentitySet",
           "user": {
-            "@odata.type": "#microsoft.graph.communicationsUserIdentity",
+            "id": "f3ce5e01-0724-43c7-ae4d-80ca18703a96",
+            "displayName": "A user change within the meeting call",
+            "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
+          }
+        }
+      },
+      "isInLobby": false,
+      "removedState": {
+        "reason": "Participant has entered an inactive state in the roster."
+      },
+      "id": "e1018298-976a-4956-93e8-f58e43b0016c"
+    }
+  ]
+}
+```
+
+#### RosterUpdated - Participant exits the call
+```json
+{
+  "@odata.type": "#microsoft.graph.callevent",
+  "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
+  "id": "{notificationId}",
+  "eventType": "rosterUpdated",
+  "eventDateTime": "2022-02-28T00:00:00.0000000Z",
+  "participants@delta": [
+    {
+      "info": {
+        "identity": {
+          "user": {
             "id": "e98eb11c-8385-445e-8b19-4a2f169ac5bc",
             "displayName": "User that is leaving the call",
             "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
@@ -171,16 +203,13 @@ The following are the supported meeting events:
       },
       "isInLobby": false,
       "removedState": {
-        "@odata.type": "#microsoft.graph.removedState",
-        "reason": "Participant exited the call."
+        "reason": "Participant has left the meeting call."
       },
       "id": "347040dd-aa51-4ada-8a44-510c65a3a2d3"
     }
   ]
 }
 ```
-
-The **rosterUpdated** event contain a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **removedState** property represent participants that have exited the collection. See [participant](/graph/api/resources/participant) for more details on participants information.
 
 ## Related content
 
