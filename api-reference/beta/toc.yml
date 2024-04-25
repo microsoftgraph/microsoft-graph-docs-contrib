@@ -1644,19 +1644,23 @@ items:
                   - name: Get
                     href: api/cloudclipboarditem-get.md
               - name: Windows settings
-                href: resources/windowssetting.md
                 items:
-                  - name: List
-                    href: api/usersettings-list-windows.md
-                  - name: Get
-                    href: api/windowssetting-get.md
-              - name: Windows setting instance
-                href: resources/windowssettinginstance.md
-                items:
-                  - name: List
-                    href: api/windowssetting-list-instances.md
-                  - name: Get
-                    href: api/windowssettinginstance-get.md
+                  - name: Overview
+                    href: resources/windows-setting-api-overview.md
+                  - name: Windows setting
+                    href: resources/windowssetting.md
+                    items:
+                      - name: List
+                        href: api/usersettings-list-windows.md
+                      - name: Get
+                        href: api/windowssetting-get.md
+                  - name: Windows setting instance                    
+                    href: resources/windowssettinginstance.md
+                    items:              
+                      - name: List
+                        href: api/windowssetting-list-instances.md
+                      - name: Get
+                        href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
@@ -11668,7 +11672,7 @@ items:
                     href: api/device-list-transitivememberof.md
                   - name: List device usage rights
                     href: api/device-list-usagerights.md
-              - name: Device local credential (preview)
+              - name: Device local credential
                 items:
                   - name: Device local credential
                     href: resources/devicelocalcredentialinfo.md
@@ -13017,7 +13021,7 @@ items:
                         href: api/agreementfile-list-localizations.md
           - name: Identity and sign-in
             items:
-              - name: Authentication event listeners (preview)
+              - name: Authentication event listeners
                 href: resources/authenticationeventlistener.md
                 items:
                   - name: On attribute collection
@@ -13380,7 +13384,7 @@ items:
                         href: api/outboundshareduserprofile-list-tenants.md
                       - name: Remove personal data
                         href: api/tenantreference-removepersonaldata.md
-              - name: Custom authentication extensions (preview)
+              - name: Custom authentication extensions
                 href: resources/customauthenticationextension.md
                 items:
                   - name: On attribute collection start
@@ -13631,13 +13635,6 @@ items:
                     href: api/multitenantorganizationidentitysyncpolicytemplate-update.md
                   - name: Reset
                     href: api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
-              - name: Organization
-                href: resources/organization.md
-                items:
-                  - name: Get org details
-                    href: api/organization-get.md
-                  - name: Update org details
-                    href: api/organization-update.md
               - name: Organizational branding
                 href: resources/organizationalbranding.md
                 items:
@@ -16144,13 +16141,6 @@ items:
                     href: resources/dailyuserinsightmetricsroot.md
                   - name: Monthly user insight
                     href: resources/monthlyuserinsightmetricsroot.md
-                  - name: Active users breakdown (deprecated)
-                    href: resources/activeusersbreakdownmetric.md
-                    items:
-                    - name: List daily
-                      href: api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
-                    - name: List monthly
-                      href: api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
                   - name: Active users
                     href: resources/activeusersmetric.md
                     items:
@@ -17984,6 +17974,8 @@ items:
                 href: api/plannertask-delete.md
               - name: List user's tasks
                 href: api/planneruser-list-tasks.md
+              - name: List user's My Day tasks
+                href: api/planneruser-list-mydaytasks.md
               - name: Get delta
                 href: api/plannertask-delta.md
           - name: Bucket
@@ -18119,6 +18111,8 @@ items:
                 href: api/planneruser-list-recentplans.md
               - name: List user's assigned tasks
                 href: api/planneruser-list-tasks.md
+              - name: List user's My Day tasks
+                href: api/planneruser-list-mydaytasks.md
           - name: Task details
             href: resources/plannertaskdetails.md
             items:
