@@ -25,7 +25,7 @@ highlightedContent:
     - title: Microsoft Graph connectors
       itemType: overview
       url: ./connecting-external-content-connectors-overview.md
-    - tite: What's new? 
+    - title: What's new? 
       itemType: whats-new
       url: /graph/whats-new-overview
     - title: Integration patterns
@@ -39,7 +39,7 @@ highlightedContent:
       url: /graph/use-the-api
     - title: Deploy with Bicep
       itemType: concept
-      url: 
+      url: /graph/overview
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
