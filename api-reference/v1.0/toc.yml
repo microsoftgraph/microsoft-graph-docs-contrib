@@ -382,26 +382,6 @@ items:
                 href: api/user-list-joinedteams.md
               - name: List associated teams
                 href: api/associatedteaminfo-list.md
-              - name: Group setting
-                href: resources/groupsetting.md
-                items:
-                  - name: Create
-                    href: api/group-post-settings.md
-                  - name: Get
-                    href: api/groupsetting-get.md
-                  - name: List
-                    href: api/group-list-settings.md
-                  - name: Update
-                    href: api/groupsetting-update.md
-                  - name: Delete
-                    href: api/groupsetting-delete.md
-              - name: Group setting template
-                href: resources/groupsettingtemplate.md
-                items:
-                  - name: List group setting templates
-                    href: api/groupsettingtemplate-list.md
-                  - name: Get group setting template
-                    href: api/groupsettingtemplate-get.md
               - name: List lifecycle policies
                 href: api/group-list-grouplifecyclepolicies.md
               - name: List photos
@@ -5414,6 +5394,26 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+              - name: Group setting
+                href: resources/groupsetting.md
+                items:
+                  - name: Create
+                    href: api/group-post-settings.md
+                  - name: Get
+                    href: api/groupsetting-get.md
+                  - name: List
+                    href: api/group-list-settings.md
+                  - name: Update
+                    href: api/groupsetting-update.md
+                  - name: Delete
+                    href: api/groupsetting-delete.md
+              - name: Group setting template
+                href: resources/groupsettingtemplate.md
+                items:
+                  - name: List group setting templates
+                    href: api/groupsettingtemplate-list.md
+                  - name: Get group setting template
+                    href: api/groupsettingtemplate-get.md
               - name: On-premises directory synchronization
                 href: resources/onpremisesdirectorysynchronization.md
                 items:
@@ -6357,6 +6357,34 @@ items:
                         href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
                       - name: Get authentication method modes
                         href: api/authenticationmethodmodedetail-get.md
+              - name: Authentication event listeners
+                href: resources/authenticationeventlistener.md
+                items:
+                - name: List
+                  href: api/identitycontainer-list-authenticationeventlisteners.md
+                - name: Create
+                  href: api/identitycontainer-post-authenticationeventlisteners.md
+                - name: Get
+                  href: api/authenticationeventlistener-get.md
+                - name: Update
+                  href: api/authenticationeventlistener-update.md
+                - name: Delete
+                  href: api/authenticationeventlistener-delete.md
+              - name: Custom authentication extension
+                href: resources/customauthenticationextension.md
+                items:
+                - name: On token issuance start
+                  href: resources/ontokenissuancestartcustomextension.md
+                - name: List
+                  href: api/identitycontainer-list-customauthenticationextensions.md
+                - name: Create
+                  href: api/identitycontainer-post-customauthenticationextensions.md
+                - name: Get
+                  href: api/customauthenticationextension-get.md
+                - name: Update
+                  href: api/customauthenticationextension-update.md
+                - name: Delete
+                  href: api/customauthenticationextension-delete.md
               - name: Certificate-based auth configuration
                 displayName: CBA
                 href: resources/certificatebasedauthconfiguration.md
@@ -6642,6 +6670,63 @@ items:
                 items:
                   - name: Create invitation
                     href: api/invitation-post.md
+              - name: Multitenant organization
+                items:
+                - name: Overview
+                  displayName: Multitenant organization, MTO
+                  href: resources/multitenantorganization-overview.md
+                - name: Multitenant organization
+                  items:
+                  - name: Multitenant organization
+                    href: resources/multitenantorganization.md
+                  - name: Create
+                    href: api/tenantrelationship-put-multitenantorganization.md
+                  - name: Get
+                    href: api/multitenantorganization-get.md
+                  - name: Update
+                    href: api/multitenantorganization-update.md
+                - name: Tenant
+                  items:
+                  - name: Tenant
+                    href: resources/multitenantorganizationmember.md
+                  - name: List
+                    href: api/multitenantorganization-list-tenants.md
+                  - name: Add
+                    href: api/multitenantorganization-post-tenants.md
+                  - name: Get
+                    href: api/multitenantorganizationmember-get.md
+                  - name: Update
+                    href: api/multitenantorganizationmember-update.md
+                  - name: Remove
+                    href: api/multitenantorganization-delete-tenants.md
+                - name: Join request
+                  items:
+                  - name: Join request
+                    href: resources/multitenantorganizationjoinrequestrecord.md
+                  - name: Get
+                    href: api/multitenantorganizationjoinrequestrecord-get.md
+                  - name: Update
+                    href: api/multitenantorganizationjoinrequestrecord-update.md
+                - name: Partner configuration template
+                  items:
+                  - name: Partner configuration template
+                    href: resources/multitenantorganizationpartnerconfigurationtemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+                - name: Identity sync policy template
+                  items:
+                  - name: Identity sync policy template
+                    href: resources/multitenantorganizationidentitysyncpolicytemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
               - name: Organizational branding
                 href: resources/organizationalbranding.md
                 items:
