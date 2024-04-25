@@ -496,12 +496,93 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)"
 }
 ```
+## Example 7: Search Hidden Content
+
+You can use the optional "includeHiddenContent" property which allows developers to return content in Search results that is normally hidden from the default search experience. Examples of hidden content include archived content and SharePoint Embedded (RaaS). By default, this property is set to false, preventing hidden content from being returned.  
+
+You can also optionally include KQL to scope hidden content query to content type of interest. For example, in SPO, Archive Sites is a feature that will allow admins to mark certain SP Sites (and soon other SP containers and objects) as “archived”.  If hidden content is not available, only the relevant nonhidden content will be shown (provided no other errors) and you'll get a successful 200 response.  
+
+In the following example, you can use queryTemplate for scoping with KQL with the includeHiddenContent property however this is optional and not needed. Note that you can also scope on SharePoint Embedded content using properties such as ContainerTypeId, where you can learn more information about that and other properties in [SharePoint Embedded Container Types | Microsoft Learn](https://learn.microsoft.com/en-us/sharepoint/dev/embedded/concepts/app-concepts/containertypes).
+
+### Request
+```HTTP
+POST https://graph.microsoft.com/beta/search/query 
+
+Content-Type: application/json 
+
+{ 
+
+    "requests": [ 
+        { 
+            "entityTypes": [ 
+                "driveItem" 
+            ], 
+            "query": { 
+
+                "queryString": "*", 
+                "queryTemplate": "({searchTerms} AuthorOWSUSER:TestContoso)"
+            }, 
+            "sharePointOneDriveOptions": { 
+                "includeHiddenContent": true 
+            } 
+        } 
+    ] 
+} 
+```
+
+### Response
+
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+{ 
+    "value": [ 
+        { 
+            "searchTerms": [], 
+            "hitsContainers": [ 
+                { 
+                    "hits": [ 
+                        { 
+                            { 
+                                "hitId": "fc78bcb9-8b26-4bba-a250-389def493e0f", 
+                                "rank": 2, 
+                                "summary": "<c0>STS</c0>_<c0>View</c0> <c0>MySiteDocumentLibrary</c0> <c0>domain</c0>_<c0>allow</c0>:<c0>ALL</c0><ddd/>", 
+                                "resource": { 
+                                    "@odata.type": "#microsoft.graph.list", 
+                                    "displayName": "TestContoso - Documents", 
+                                    "id": "fc78bcb9-8b26-4bba-a250-389def493e0f", 
+                                    "createdBy": { 
+                                        "user": { 
+                                            "displayName": "System Account" 
+                                        } 
+                                    }, 
+                                    "lastModifiedDateTime": "2024-03-08T18:06:33Z", 
+                                    "name": "Documents", 
+
+                                    "parentReference": { 
+                                        "siteId": "contoso-my.sharepoint.com,44776ebc-4ddc-4f7e-afb8-b706c77e0883,a118ff93-1105-40b9-bed0-2cd07cd4b2a4" 
+                                    }, 
+                                    "webUrl": "https://contoso-my.sharepoint.com/personal/contoso_onmicrosoft_com/Documents/Forms/All.aspx" 
+                                } 
+                            } 
+                        ], 
+                        "total": 1, 
+                        "moreResultsAvailable": false 
+                    } 
+                ] 
+            } 
+        ], 
+        "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)" 
+    } 
+```
 
 ## Known limitations
 
 - When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
 
 - The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
+- 
+- includeHiddenContent only works with delegated permission scenario. It is not applicable for application permissions, where the includeHiddenContent property is overridden to be set to false. 
 
 ## Next steps
 
