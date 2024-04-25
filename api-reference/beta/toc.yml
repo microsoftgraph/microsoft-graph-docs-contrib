@@ -13019,7 +13019,7 @@ items:
                         href: api/agreementfile-list-localizations.md
           - name: Identity and sign-in
             items:
-              - name: Authentication event listeners (preview)
+              - name: Authentication event listeners
                 href: resources/authenticationeventlistener.md
                 items:
                   - name: On attribute collection
@@ -13382,7 +13382,7 @@ items:
                         href: api/outboundshareduserprofile-list-tenants.md
                       - name: Remove personal data
                         href: api/tenantreference-removepersonaldata.md
-              - name: Custom authentication extensions (preview)
+              - name: Custom authentication extensions
                 href: resources/customauthenticationextension.md
                 items:
                   - name: On attribute collection start
