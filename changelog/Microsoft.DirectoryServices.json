@@ -494,6 +494,136 @@
     {
       "ChangeList": [
         {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyTemplate](https://learn.microsoft.com/en-us/graph/api/resources/policytemplate?view=graph-rest-1.0) resource type.",
+          "Target": "policyTemplate"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "multiTenantOrganization",
+          "ChangeType": "Addition",
+          "Description": "Added the **multiTenantOrganization** relationship to the [tenantRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantrelationship?view=graph-rest-1.0) resource.",
+          "Target": "tenantRelationship"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantOrganization",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantOrganization](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganization?view=graph-rest-1.0) resource type. Use this resource and its associated methods to manage a multitenant organization.",
+          "Target": "multiTenantOrganization"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantOrganizationJoinRequestRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantOrganizationJoinRequestRecord](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganizationjoinrequestrecord?view=graph-rest-1.0) resource type.",
+          "Target": "multiTenantOrganizationJoinRequestRecord"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantOrganizationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantOrganizationMember](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganizationmember?view=graph-rest-1.0) resource type. Use this resource and its associated methods to manage the membership of tenants in a multitenant organization.",
+          "Target": "multiTenantOrganizationMember"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantOrganizationPartnerConfigurationTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantOrganizationPartnerConfigurationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganizationpartnerconfigurationtemplate?view=graph-rest-1.0) resource type.",
+          "Target": "multiTenantOrganizationPartnerConfigurationTemplate"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantOrganizationIdentitySyncPolicyTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantOrganizationIdentitySyncPolicyTemplate](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganizationidentitysyncpolicytemplate?view=graph-rest-1.0) resource type.",
+          "Target": "multiTenantOrganizationIdentitySyncPolicyTemplate"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantOrganizationJoinRequestTransitionDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantOrganizationJoinRequestTransitionDetails](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganizationjoinrequesttransitiondetails?view=graph-rest-1.0) resource type.",
+          "Target": "multiTenantOrganizationJoinRequestTransitionDetails"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantOrganizationMemberTransitionDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantOrganizationMemberTransitionDetails](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganizationmembertransitiondetails?view=graph-rest-1.0) resource type.",
+          "Target": "multiTenantOrganizationMemberTransitionDetails"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "multiTenantOrganizationMemberProcessingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **multiTenantOrganizationMemberProcessingStatus** enumeration type.",
+          "Target": "multiTenantOrganizationMemberProcessingStatus"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "multiTenantOrganizationMemberRole",
+          "ChangeType": "Addition",
+          "Description": "Added the **multiTenantOrganizationMemberRole** enumeration type.",
+          "Target": "multiTenantOrganizationMemberRole"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "multiTenantOrganizationMemberState",
+          "ChangeType": "Addition",
+          "Description": "Added the **multiTenantOrganizationMemberState** enumeration type.",
+          "Target": "multiTenantOrganizationMemberState"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "multiTenantOrganizationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **multiTenantOrganizationState** enumeration type.",
+          "Target": "multiTenantOrganizationState"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "templateApplicationLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateApplicationLevel** enumeration type.",
+          "Target": "templateApplicationLevel"
+        },
+        {
+          "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+          "ApiChange": "Property",
+          "ChangedApiName": "isInMultiTenantOrganization",
+          "ChangeType": "Addition",
+          "Description": "Added the **isInMultiTenantOrganization** property to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        }
+      ],
+      "Id": "774986b3-d401-40fe-ac0e-e2a8e0b66d22",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-23T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "25f1b056-4f77-4fc5-a8f3-f111c76298aa",
           "ApiChange": "Member",
           "ChangedApiName": "medium",
