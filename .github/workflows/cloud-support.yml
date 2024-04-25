@@ -72,7 +72,7 @@ jobs:
         $TOOL --open-api ./openapi/beta --api-docs ./docs/api-reference/beta/api --remove-old-includes
     - name: Get token
       id: get_token
-      uses: microsoftgraph/get-app-token@v1.0.3
+      uses: microsoftgraph/get-app-token@v1.0.4
       with:
         application-id: ${{ secrets.APPLICATION_ID }}
         application-private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
