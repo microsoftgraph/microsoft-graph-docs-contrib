@@ -382,26 +382,6 @@ items:
                 href: api/user-list-joinedteams.md
               - name: List associated teams
                 href: api/associatedteaminfo-list.md
-              - name: Group setting
-                href: resources/groupsetting.md
-                items:
-                  - name: Create
-                    href: api/group-post-settings.md
-                  - name: Get
-                    href: api/groupsetting-get.md
-                  - name: List
-                    href: api/group-list-settings.md
-                  - name: Update
-                    href: api/groupsetting-update.md
-                  - name: Delete
-                    href: api/groupsetting-delete.md
-              - name: Group setting template
-                href: resources/groupsettingtemplate.md
-                items:
-                  - name: List group setting templates
-                    href: api/groupsettingtemplate-list.md
-                  - name: Get group setting template
-                    href: api/groupsettingtemplate-get.md
               - name: List lifecycle policies
                 href: api/group-list-grouplifecyclepolicies.md
               - name: List photos
@@ -5414,6 +5394,26 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+              - name: Group setting
+                href: resources/groupsetting.md
+                items:
+                  - name: Create
+                    href: api/group-post-settings.md
+                  - name: Get
+                    href: api/groupsetting-get.md
+                  - name: List
+                    href: api/group-list-settings.md
+                  - name: Update
+                    href: api/groupsetting-update.md
+                  - name: Delete
+                    href: api/groupsetting-delete.md
+              - name: Group setting template
+                href: resources/groupsettingtemplate.md
+                items:
+                  - name: List group setting templates
+                    href: api/groupsettingtemplate-list.md
+                  - name: Get group setting template
+                    href: api/groupsettingtemplate-get.md
               - name: On-premises directory synchronization
                 href: resources/onpremisesdirectorysynchronization.md
                 items:
