@@ -326,10 +326,10 @@ Content-type: application/json
 
 | Error code | Error message | Description |
 | :---- | ---- | ---- |
-|`Serialization_FileNotValidJson`	| The file could not be parsed as a JSON object.| The file that you provided didn't comply with the valid JSON format.|
+|`Serialization_FileNotValidJson`	| The file could not be parsed as a JSON object.| The file that you provided didn't comply with a valid JSON format.|
 |`Serialization_ManifestVersionPropertyMissing`	| The file does not contain the "{0}" property.	| The manifest file is missing the `manifestVersion` property. In this context, {0} is the string for `manifestVersion` property.|
 |`Serialization_FileMissing`	| The file {0} could not be found in the app package.	| You didn't provide an expected file in the app package.|
-|`Serialization_TrailingCommaInManifestJsonFile`	| Manifest json file contains trailing comma.	| The manifest json file contains trailing comma.|
+|`Serialization_TrailingCommaInManifestJsonFile`	| Manifest json file contains trailing comma.	| The manifest JSON file contains trailing comma.|
 |`SchemaError_MultipleOf`	| Integer {0} is not a multiple of {1}.	| A JSON file failed the `multipleOf` check of the schema. In this context, {0} represents the integer value and {1} signifies the required multiple. |
 |`SchemaError_Maximum`	| Integer {0} exceeds maximum value of {1}.	| A JSON file failed the `maximum` check of the schema. {0} is the value that exceeded the maximum and {1} is the maximum. |
 |`SchemaError_Minimum`	| Integer {0} is less than minimum value of {1}.	| A JSON file failed the `minimum` check of the schema. {0} is the value that exceeded the minimum and {1} is the minimum.|
@@ -397,8 +397,8 @@ Content-type: application/json
 |`CommonSchemaUrlIsRequiredField`	| Schema URL must be present.	| The error occurs when schema isn't provided.|
 |`DashboardCardBothIconNameAndUrlPresent`	| Dashboard cards icon should not contain both icon name and url.	| Dashboard cards icon mustn't contain both icon name and url.|
 |`DashboardCardEntityIdsAreNotUnique`	| Dashboard card entity ids should be unique.	| Entity Ids for dashboards card aren't unique.|
-|`DeveloperNameIsRequiredField`	| Required field 'developer name' is missing in the manifest.	| The developer name isn't provided.|
-|`DeveloperNameLengthCheck`	| Maximum character length must not exceed 32 chars.	| The developer name length is more than 32 characters.|
+|`DeveloperNameIsRequiredField`	| Required field 'developer name' is missing in the manifest.	| Developer name isn't provided.|
+|`DeveloperNameLengthCheck`	| Maximum character length must not exceed 32 chars.	| Developer name length is more than 32 characters.|
 |`DeveloperPrivacyUrlIsRequiredField`	| Required field 'privacyUrl' is missing in the manifest.	| The error occurs when the `privacyUrl` is missing in the app manifest. |
 |`DeveloperPrivacyUrlMustBeHttps`	| Privacy URL must be secured Support URL (HTTPS).	| The error occurs when the developer privacy url isn't `https`.|
 |`DeveloperTermsOfUseUrlIsRequiredField`	| Required field 'termsOfUseUrl' is missing in the manifest.	| The error occurs when the `termsOfUseUrl` is missing.|
