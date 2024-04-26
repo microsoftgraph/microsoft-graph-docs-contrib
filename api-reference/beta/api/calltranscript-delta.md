@@ -77,7 +77,7 @@ The following example shows a series of three requests to synchronize the call t
 - Step 2: [second request](#second-request) and [response](#second-response)
 - Step 3: [third request](#third-request) and [final response](#third-and-final-response-for-the-round).
 
-See also what you'll do in the [next round to get more transcripts](#example-2-next-round-to-get-additional-transcripts).
+See also what you'll do in the [next round to get more transcripts](#example-2-next-round-to-get-more-transcripts).
 
 #### Initial request
 
