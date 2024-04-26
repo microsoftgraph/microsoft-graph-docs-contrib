@@ -7,7 +7,7 @@ ms.service: entra-id
 doc_type: apiPageType
 ---
 
-# Create/Replace customClaimsPolicy
+# Create or replace customClaimsPolicy
 
 Namespace: microsoft.graph
 
