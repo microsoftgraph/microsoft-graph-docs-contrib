@@ -1,7 +1,7 @@
 ---
 title: "virtualEventTownhall resource type"
 description: "Represents information about a virtual event town hall."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -21,9 +21,9 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Create](../api/virtualeventsroot-post-townhalls.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
-| [Get](../api/virtualeventtownhall-get.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
-| [Update](../api/virtualeventtownhall-update.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Create](../api/virtualeventsroot-post-virtualevents.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Get](../api/virtualevent-get.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Update](../api/virtualevent-update.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
 | [Publish](../api/virtualevent-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 | [Cancel](../api/virtualevent-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 
@@ -42,6 +42,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the town hall. Possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`. Inherited from [virtualEvent](../resources/virtualevent.md). |
+
 ### meetingAudience values
 
 | Value | Description |

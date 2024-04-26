@@ -1,7 +1,7 @@
 ---
 title: "virtualEvent: publish"
 description: "Publish a virtual event to make it visible to its audience."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Publish a virtual event to make it visible to its audience.
 
-Currently the supported virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event types are [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,7 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /solutions/virtualEvents/townhalls/{townhallId}/publish
+POST /solutions/virtualEvents/webinars/{id}/publish
+POST /solutions/virtualEvents/townhalls/{id}/publish
 ```
 
 ## Request headers
@@ -58,7 +59,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "virtualeventthis.publish",
+  "name": "virtualevent.publish",
   "sampleKeys": ["bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->

@@ -1,7 +1,7 @@
 ---
 title: "virtualEvent: cancel"
 description: "Cancel a virtual event."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Cancel a virtual event.
 
-Currently the supported virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md). A canceled town hall has its **status** set to `canceled` permanently. You can still get a canceled town hall by using the [Get virtualEventTownhall](../api/virtualeventtownhall-get.md) API.
+Currently the supported virtual event types are [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md). A canceled virtual event has its **status** set to `canceled` permanently. You can still get a canceled virtual event by using the [Get virtualEvent](../api/virtualevent-get.md) API.
 
 ## Permissions
 
@@ -34,7 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /solutions/virtualEvents/townhalls/{townhallId}/cancel
+POST /solutions/virtualEvents/webinars/{id}/cancel
+POST /solutions/virtualEvents/townhalls/{id}/cancel
 ```
 
 ## Request headers
@@ -59,7 +60,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "virtualeventthis.cancel",
+  "name": "virtualevent.cancel",
   "sampleKeys": ["bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->

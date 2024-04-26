@@ -1,18 +1,20 @@
 ---
-title: "Update virtualEventTownhall"
-description: "Update the properties of a virtualEventTownhall object."
-author: "awang119"
+title: "Update virtualEvent"
+description: "Update the properties of a virtualEvent object."
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update virtualEventTownhall
+# Update virtualEvent
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+Update the properties of a virtual event object.
+
+Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 
@@ -20,10 +22,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualeventtownhall-update-permissions"
+  "name": "virtualevent-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventtownhall-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualevent-update-permissions.md)]
 
 ## HTTP request
 
@@ -32,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /solutions/virtualEvents/webinars/{id}
 PATCH /solutions/virtualEvents/townhalls/{id}
 ```
 
@@ -48,15 +51,15 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. Optional. |
-| description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| displayName | String | Display name of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the virtual event. |
+| description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
+| displayName | String | Display name of the virtual event. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [virtualEventTownhall](../resources/virtualeventtownhall.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [virtualEventWebinar](../resources/virtualeventwebinar.md) or [virtualEventTownhall](../resources/virtualeventtownhall.md) object in the response body.
 
 ## Examples
 
