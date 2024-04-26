@@ -7,17 +7,15 @@ ms.subservice: "cloud-communications"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for Microsoft Teams meeting call updates
+# Get change notifications for Microsoft Teams meeting call event updates
 
-Change notifications in Microsoft Graph enable you to subscribe to call started/ended and call roster updates for Microsoft Teams online meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload. 
+Change notifications in Microsoft Graph enable you to subscribe to call started, call ended, and roster updated for Microsoft Teams online meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload. 
 
 A subscription has a max expiry period of 3 days. To persist the subscription for more than this period, a subscription renewal request must be made. For details, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
 
-To get change notifications for a meeting's call events, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. 
-
 This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
-### Permissions
+## Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -25,7 +23,22 @@ This resource supports notifications with resource data. For more information ab
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All | beta |
 
-### Example
+## Subscribe to online meeting call events
+
+To get change notifications for the call events for a meeting, subscribe to `/communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents`, where the `joinWebUrl` is the HTTP-encoded value of the meeting join URL.
+
+For example, the `joinWebUrl` in the following URL must be acquired for an online meeting. 
+
+`https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22048c94fb-dda6-48b8-9fc8-6740ee418fb9%22%7d`
+
+To park a subscription, the argument must be HTTP-encoded and used as the `joinWebUrl` in the resource property, as shown in the following example.
+
+`https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522048c94fb-dda6-48b8-9fc8-6740ee418fb9%2522%257d`
+
+> [!NOTE]
+> Replace `{JoinWebUrl}` with the actual HTTP-encoded value when you specifiy the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
+
+### Subscription payload sample
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -34,7 +47,7 @@ Content-Type: application/json
 {
   "changeType": "updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'",
+  "resource": "communications/onlineMeetings(joinWebUrl='https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522048c94fb-dda6-48b8-9fc8-6740ee418fb9%2522%257d')/meetingCallEvents",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -42,9 +55,6 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
-
-> [!NOTE]
-> Replace `{JoinWebUrl}` with the actual value when specifying the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
 ## Notifications with encrypted resource data
 
@@ -55,12 +65,12 @@ Content-Type: application/json
     "clientState": "{secret client state}",
     "changeType": "updated",
     "tenantId": "{Organization/Tenant id}",
-    "resource": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+    "resource": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
     "subscriptionExpirationDateTime": "2022-02-28T00:00:00.0000000Z",
     "resourceData": {
-      "@odata.id": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-      "@odata.type": "#microsoft.graph.onlineMeeting",
-      "id": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'"
+      "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
+      "@odata.type": "#microsoft.graph.callevent",
+      "id": "{notificationId}'"
     },
     "organizationId": "{Organization/Tenant id}",
     "encryptedContent": {
@@ -80,89 +90,130 @@ For details about how to validate tokens and decrypt the payload, see [Set up ch
 ## Event notifications types
 
 The following are the supported meeting events:
-- CallStarted - Occurs when the meeting call has started.
-- CallEnded - Occurs when the meeting call has ended.
-- CallRosterUpdate - Occurs when a participant joins or exits the meeting call.
-
+- callStarted - Events for when the meeting call has started.
+- callEnded - Events for when the meeting call has ended.
+- rosterUpdated - Events for when a participant joins and exits the call or lobby.
+  - The **rosterUpdated** event contain a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **removedState** property represent participants that have exited the collection. See [participant](/graph/api/resources/participant) for more details on participants information.
 ### Decrypted payload examples
 
 #### CallStarted
 ```json
 {
-  "@odata.type":"#Microsoft.Graph.onlineMeeting",
-  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "eventType":"{Microsoft.Communication.CallStarted}",
+  "@odata.type":"#microsoft.graph.callevent",
+  "@odata.id":"communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
+  "id":"{notificationId}'",
+  "eventType":"callStarted",
   "eventDateTime":"2022-02-28T00:00:00.0000000Z",
-  "state":"active"
 }
 
 ```
 #### CallEnded
 ```json
 {
-  "@odata.type":"#Microsoft.Graph.onlineMeeting",
-  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "eventType":"{Microsoft.Communication.CallEnded}",
+  "@odata.type":"#microsoft.graph.callevent",
+  "@odata.id":"communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
+  "id":"{notificationId}",
+  "eventType":"callEnded",
   "eventDateTime":"2022-02-28T00:00:00.0000000Z",
-  "state":"inactive"
 }
 ```
 
-#### CallRosterUpdate
-
+#### RosterUpdated - Participant joins into call or lobby modality
 ```json
 {
-  "@odata.type":"#Microsoft.Graph.onlineMeeting",
-  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "eventType":"Microsoft.Communication.CallRosterUpdate",
-  "eventDateTime":"2022-02-28T00:00:00.0000000Z",
-  "activeParticipants@joined": [
+  "@odata.type": "#microsoft.graph.callevent",
+  "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
+  "id": "{notificationId}",
+  "eventType": "rosterUpdated",
+  "eventDateTime": "2022-02-28T00:00:00.0000000Z",
+  "participants@delta": [
     {
-      "Id": "a4d67b60-56a5-4202-9f1c-f123ff40621e",
-      "Identity": 
-      {
-        "User": 
-        {
-          "Id": "f92ca67f-0564-414b-8caa-8c95b8099928",
-          "DisplayName": "user display name",
-          "TenantId": "85045508-f5bd-405e-a553-52700f86e29c"
+      "info": {
+        "identity": {
+          "user": {
+            "id": "f3ce5e01-0724-43c7-ae4d-80ca18703a96",
+            "displayName": "A user roster update in the call",
+            "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
+          }
         }
-      }
-    }
-  ],
-  "activeParticipants@exited": [
+      },
+      "isInLobby": false,
+      "id": "e1018298-976a-4956-93e8-f58e43b0016c"
+    },
     {
-      "Id": "11141402-1b62-4795-b540-4ffee8544231",
-      "Identity": 
-      {
-        "AzureCommunicationServicesUser": 
-        {
-          "AzureCommunicationServicesResourceId": "534c244d-49f8-47a1-9e8e-70d115a2ef4d",
-          "Id": "8:acs:534c244d-49f8-47a1-9e8e-70d115a2ef4d_28f01a7b-42cd-4e37-ae1a-bd653377f4b7",
-          "DisplayName": "acs user display name"
+      "info": {
+        "identity": {
+          "user": {
+            "id": "e8bbbe0e-6e3d-42db-9082-213abbe8ee5c",
+            "displayName": "User roster update in the lobby of the call",
+            "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
+          }
         }
-      }
+      },
+      "isInLobby": true,
+      "id": "a7cc3ddb-a469-410d-8057-44dba3b0c073"
     }
   ]
 }
 ```
 
-**CallRosterUpdate** events include two properties, **activeParticipants@joined** to depict participants added to a meeting call and **activeParticipants@exited** for participants leaving the meeting call. 
-
-An active participant is represented as follows:
-
+#### RosterUpdated - Participant enters an inactive state (not in Lobby or Call)
 ```json
 {
-  "Id": "string",
-  "Identity": "microsoft.graph.communicationsIdentitySet"
+  "@odata.type": "#microsoft.graph.callevent",
+  "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
+  "id": "{notificationId}",
+  "eventType": "rosterUpdated",
+  "eventDateTime": "2022-02-28T00:00:00.0000000Z",
+  "participants@delta": [
+    {
+      "info": {
+        "identity": {
+          "user": {
+            "id": "f3ce5e01-0724-43c7-ae4d-80ca18703a96",
+            "displayName": "A user change within the meeting call",
+            "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
+          }
+        }
+      },
+      "isInLobby": false,
+      "removedState": {
+        "reason": "Participant has entered an inactive state in the roster."
+      },
+      "id": "e1018298-976a-4956-93e8-f58e43b0016c"
+    }
+  ]
 }
 ```
 
-- The **Id** property corresponds to participant ID, which is a unique identifier assigned to each participant in the meeting call.
-- The **Identity** property corresponds to the **communicationsIdentitySet**. For details, see [communicationsIdentitySet resource type](/graph/api/resources/communicationsidentityset?view=graph-rest-beta&preserve-view=true).
+#### RosterUpdated - Participant exits the call
+```json
+{
+  "@odata.type": "#microsoft.graph.callevent",
+  "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
+  "id": "{notificationId}",
+  "eventType": "rosterUpdated",
+  "eventDateTime": "2022-02-28T00:00:00.0000000Z",
+  "participants@delta": [
+    {
+      "info": {
+        "identity": {
+          "user": {
+            "id": "e98eb11c-8385-445e-8b19-4a2f169ac5bc",
+            "displayName": "User that is leaving the call",
+            "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
+          }
+        }
+      },
+      "isInLobby": false,
+      "removedState": {
+        "reason": "Participant has left the meeting call."
+      },
+      "id": "347040dd-aa51-4ada-8a44-510c65a3a2d3"
+    }
+  ]
+}
+```
 
 ## Related content
 
