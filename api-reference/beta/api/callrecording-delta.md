@@ -52,6 +52,11 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 | `$skiptoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked. |
 | Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page
 
+## Known Issues
+
+> 1. Using Top query sometimes does not return a nextLink. Try without the top query in case of missing next link.
+> 2. The delta API may return older recordings which are syned and not newly modified. This happens when there are unrelated updates to meetings. As a workaround, the created date time returned with each recording can be used to identify old or new recordings.
+
 ## Request headers
 | Header        | Value                     |
 |---------------|---------------------------|

@@ -46,7 +46,7 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|meetingOrganizerUserId|String|Meeting Organizer User Id, to filter for artifacts for meetings organized by the given user id.|
+|meetingOrganizerUserId|String|Meeting Organizer User identifier, to filter for artifacts for meetings organized by the given user identifier.|
 |startDateTime|DateTimeOffset|Optional parameter to filter for artifacts that are created after the given start date|
 |endDateTime|DateTimeOffset|Optional parameter to filter for artifacts that are created before the given end date|
 
@@ -56,6 +56,10 @@ The following table lists the parameters that are required when you call this fu
 | ---------------------- | :-------: | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page
 
+## Known Issues
+
+> 1. Using Top query sometimes does not return a nextLink. Try without the top query in case of missing next link.
+> 2. For older meetings where Transcripts are not turned on, the result may not have the recordings. The fix is being rolled out, updates to follow.
 
 ## Request headers
 | Header       | Value |
