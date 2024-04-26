@@ -23,16 +23,20 @@ This resource supports notifications with resource data. For more information ab
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All | beta |
 
-## Subscribe to online meeting call events.
+## Subscribe to online meeting call events
 
-To get change notifications for a meeting's call events, subscribe to **/communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents** where the `joinWebUrl` is the HTTP encoded value of the meeting join url.
+To get change notifications for the call events for a meeting, subscribe to `/communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents`, where the `joinWebUrl` is the HTTP-encoded value of the meeting join URL.
 
-As an example, the `joinWebUrl` in 1 must be acquired for an online meeting. To park a subscription, the argument must be HTTP encoded to 2 and used as the `joinWebUrl` in the resource property.
-1. `https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22048c94fb-dda6-48b8-9fc8-6740ee418fb9%22%7d`
-2. `https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522048c94fb-dda6-48b8-9fc8-6740ee418fb9%2522%257d`
+For example, the `joinWebUrl` in the following URL must be acquired for an online meeting. 
+
+`https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22048c94fb-dda6-48b8-9fc8-6740ee418fb9%22%7d`
+
+To park a subscription, the argument must be HTTP-encoded and used as the `joinWebUrl` in the resource property, as shown in the following example.
+
+`https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522048c94fb-dda6-48b8-9fc8-6740ee418fb9%2522%257d`
 
 > [!NOTE]
-> Replace `{JoinWebUrl}` with the actual http encoded value when specifying the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
+> Replace `{JoinWebUrl}` with the actual HTTP-encoded value when you specifiy the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
 ### Subscription payload sample
 
