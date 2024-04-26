@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/externalAuthenticationMethodConfiguration
+https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{id}
 ```
 
 
@@ -81,24 +81,19 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.externalAuthenticationMethodConfiguration",
-    "id": "2832c576-4d71-6df6-3d62-de9be9455558",
-    "state": "String",
-    "excludeTargets": [
-      {
-        "@odata.type": "microsoft.graph.excludeTarget"
-      }
-    ],
-    "displayName": "String",
-    "appId": "String",
-    "openIdConnectSetting": {
-      "@odata.type": "microsoft.graph.openIdConnectSetting"
-    }
-  }
+  "@odata.type": "#microsoft.graph.externalAuthenticationMethodConfiguration",
+  "id": "b3107ab7-68c7-4553-a167-48c1e9c24d52",
+  "displayName": "Adatum",
+  "appId": "fb262304-618c-4ffb-878a-114490bdf200",
+  "openIdConnectSetting": {
+      "clientId": "06a011bd-ec92-4404-80fb-db6d5ada8ee2",
+      "discoveryUrl": "https//Adatum.com/.well-known/openid-configuration"
+  },
+  "state": "disabled",
+  "excludeTargets": [],
+  "includeTargets": []
 }
+
 ```
 

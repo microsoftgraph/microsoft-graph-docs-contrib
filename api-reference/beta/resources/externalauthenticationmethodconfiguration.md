@@ -31,17 +31,17 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|**TODO: Add Description**|
-|state|authenticationMethodState|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).The possible values are: `enabled`, `disabled`.|
+|appId|String|AppID for the App Registration in Entra ID representing the integration with the external provider|
+|displayName|String|Display name for the external authentication method.  This is the name shown to users during sign-in.|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|id|String|The unique identifier for an entity. Read-only. Inherited from [entity](../resources/entity.md).|
+|openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|Open ID Connection settings used by this external authentication method|
+|state|authenticationMethodState|The state of the method in the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|**TODO: Add Description**|
+|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use an authentication method as part of an authentication method policy in Microsoft Entra ID.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -48,14 +48,12 @@ PATCH /externalAuthenticationMethodConfiguration
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|state|authenticationMethodState|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`. Optional.|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|**TODO: Add Description** Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Optional.|
-|displayName|String|**TODO: Add Description** Required.|
-|appId|String|**TODO: Add Description** Required.|
-|openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|**TODO: Add Description** Required.|
+|state|authenticationMethodState|The state of the method in the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`. Optional.|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups representing the users that should be excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Optional.|
+|appId|String|AppID for the App Registration in Entra ID representing the integration with the external provider|
+|openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|Object representing the required settings for the OIDC request to the external provider.|
 
 
 
@@ -74,23 +72,21 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/externalAuthenticationMethodConfiguration
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{id}
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.externalAuthenticationMethodConfiguration",
-  "state": "String",
-  "excludeTargets": [
+  "includeTargets": [
     {
-      "@odata.type": "microsoft.graph.excludeTarget"
+        "targetType": "group",
+        "id": "b183b746-e7db-4fa2-bafc-69ecf18850dd",
+        "isRegistrationRequired": false,
     }
   ],
-  "displayName": "String",
-  "appId": "String",
-  "openIdConnectSetting": {
-    "@odata.type": "microsoft.graph.openIdConnectSetting"
-  }
+  "state": "enabled"
 }
+
 ```
 
 
@@ -104,23 +100,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.externalAuthenticationMethodConfiguration",
-  "id": "2832c576-4d71-6df6-3d62-de9be9455558",
-  "state": "String",
-  "excludeTargets": [
-    {
-      "@odata.type": "microsoft.graph.excludeTarget"
-    }
-  ],
-  "displayName": "String",
-  "appId": "String",
-  "openIdConnectSetting": {
-    "@odata.type": "microsoft.graph.openIdConnectSetting"
-  }
-}
+HTTP/1.1 204 NO CONTENT
 ```
 
