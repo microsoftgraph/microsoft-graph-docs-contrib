@@ -40,6 +40,10 @@ Configure the [default identity provider](/graph/api/resources/defaultinvitation
 
 Added the [upsert](/graph/api/group-upsert) capability to the [group resource type](/graph/api/resources/group). Use this capability to create a group if it doesn't exist, or update an existing group, by using the **uniqueName** client-provided key.
 
+### Reports | Identity and access reports
+
+Added the **lastSuccessfulSignInDateTime** and **lastSuccessfulSignInRequestId** properties to the [signInActivity](/graph/api/resources/signinactivity) resource. Use the **lastSuccessfulSignInDateTime** property to provide the last *successful* sign-in time for a specific user, regardless of whether the sign-in was interactive or non-interactive. The data isn't backfilled for this property.
+
 ### Security | Legacy alerts
 
 The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
