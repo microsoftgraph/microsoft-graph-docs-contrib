@@ -1,7 +1,7 @@
 ---
 title: "Delete domain"
-description: "Deletes a domain from a tenant."
-author: "adimitui"
+description: "Delete a domain from a tenant."
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes a domain from a tenant.
+Delete a domain from a tenant.
 
 > **Important:**
 > - Deleted domains are not recoverable.<br />

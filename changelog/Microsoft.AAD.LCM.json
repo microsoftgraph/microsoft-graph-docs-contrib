@@ -10,13 +10,13 @@
           "Description": "Updated the [Create](https://learn.microsoft.com/en-us/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta) operation for the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) resource to now support the creation of up to 100 workflows, an increase from the previous limit of 50.",
           "Target": "workflow"
         }
-     ],
-     "Id": "2452248e-8074-411b-be6a-516c9cf679dc",
-     "Cloud": "Prod",
-     "Version": "beta",
-     "CreatedDateTime": "2024-04-18T00:00:00.4220905Z",
-     "WorkloadArea": "Identity and access",
-     "SubArea": "Governance"
+      ],
+      "Id": "2452248e-8074-411b-be6a-516c9cf679dc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-18T00:00:00.4220905Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -28,13 +28,13 @@
           "Description": "Updated the [Create](https://learn.microsoft.com/en-us/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-1.0) operation for the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) resource to now support the creation of up to 100 workflows, an increase from the previous limit of 50.",
           "Target": "workflow"
         }
-     ],
-     "Id": "f3fdc4fc-f82a-4cc9-8ef9-bb4d61064300",
-     "Cloud": "Prod",
-     "Version": "v1.0",
-     "CreatedDateTime": "2024-04-18T00:00:00.4220905Z",
-     "WorkloadArea": "Identity and access",
-     "SubArea": "Governance"
+      ],
+      "Id": "f3fdc4fc-f82a-4cc9-8ef9-bb4d61064300",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-18T00:00:00.4220905Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -46,13 +46,13 @@
           "Description": "Added the **Update** operation to the [task](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource.",
           "Target": "task"
         }
-     ],
-     "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
-     "Cloud": "Prod",
-     "Version": "beta",
-     "CreatedDateTime": "2023-01-24T00:00:00.4220905Z",
-     "WorkloadArea": "Identity and access",
-     "SubArea": "Governance"
+      ],
+      "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-01-24T00:00:00.4220905Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -64,13 +64,13 @@
           "Description": "Added the **List** operation to [retrieve users that are in scope of execution conditions of a workflow](https://learn.microsoft.com/en-us/graph/api/workflow-list-executionscope?view=graph-rest-beta) in Lifecycle Workflows.",
           "Target": "workflow"
         }
-     ],
-     "Id": "66538043-58e5-48fb-82d7-a603551c232f",
-     "Cloud": "Prod",
-     "Version": "beta",
-     "CreatedDateTime": "2023-02-02T00:00:00.4220905Z",
-     "WorkloadArea": "Identity and access",
-     "SubArea": "Governance"
+      ],
+      "Id": "66538043-58e5-48fb-82d7-a603551c232f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-02-02T00:00:00.4220905Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -989,6 +989,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-10-10T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "927921b0-bbc6-46cb-a99e-b58b3001b7ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "maximumRetries",
+          "ChangeType": "Addition",
+          "Description": "Added the **maximumRetries** property to the [customExtensionClientConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "customExtensionClientConfiguration"
+        }
+      ],
+      "Id": "927921b0-bbc6-46cb-a99e-b58b3001b7ef",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-24T15:31:43.4881624Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }
