@@ -179,8 +179,8 @@ POST https://graph.microsoft.com/v1.0/applications
 Content-type: application/json
 
 {
-  "displayName": "MyAppName"
-  "passwordCredential": [
+  "displayName": "MyAppName",
+  "passwordCredentials": [
     {
       "displayName": "Password name"
     }
