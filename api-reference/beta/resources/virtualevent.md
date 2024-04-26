@@ -13,21 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for a virtual event. 
-
-Base type of [virtualEventTownhall](virtualeventtownhall.md) and [virtualEventWebinar](virtualeventwebinar.md).
+Represents an abstract base type for a virtual event. Base type of [virtualEventTownhall](virtualeventtownhall.md) and [virtualEventWebinar](virtualeventwebinar.md).
 
 Inherits from [entity](../resources/entity.md).
 
 > [!TIP]
 > This is an abstract type and can't be used directly. Use the derived types [virtualEventTownhall](virtualeventtownhall.md) or [virtualEventWebinar](virtualeventwebinar.md) instead.
-
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-| [Cancel](../api/virtualevent-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md). This method is only available via the [virtualEventTownhall](virtualeventtownhall.md) resource.|
-| [Publish](../api/virtualevent-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md). This method is only available via the [virtualEventTownhall](virtualeventtownhall.md) resource.|
 
 ## Properties
 
