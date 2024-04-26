@@ -23,6 +23,7 @@ ms.localizationpriority: high
 | Teams [conversationMember][]                   | 4,320 minutes (3 days)        |
 | Teams [onlineMeeting][]                        | 4,320 minutes (3 days)        |
 | Teams [team][]                                 | 4,320 minutes (3 days)        |
+| Teams [teamsAppInstallation][]                 | 4,320 minutes (3 days)        |
 | Group [conversation][]                         | 4,230 minutes (under 3 days)  |
 | OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)|
 | SharePoint [list][]                            | 42,300 minutes (under 30 days)|
@@ -60,3 +61,4 @@ ms.localizationpriority: high
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
+[teamsAppInstallation]: /graph/api/resources/teamsappinstallation
