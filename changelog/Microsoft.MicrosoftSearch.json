@@ -803,6 +803,24 @@
       "CreatedDateTime": "2023-03-07T04:12:04.628237Z",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "315f3ab4-1c82-4aca-8da1-415d30e694d9",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeHiddenContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeHiddenContent** property to the [sharePointOneDriveOptions](https://learn.microsoft.com/en-us/graph/api/resources/sharePointOneDriveOptions?view=graph-rest-beta) resource.",
+          "Target": "sharePointOneDriveOptions"
+        }
+      ],
+      "Id": "315f3ab4-1c82-4aca-8da1-415d30e694d9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-17T16:18:50.2020416Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
