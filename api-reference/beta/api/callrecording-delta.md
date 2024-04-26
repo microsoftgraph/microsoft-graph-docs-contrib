@@ -22,7 +22,7 @@ A GET request with the delta function returns either:
 - A `@odata.nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or
 - A `@odata.deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).
 
-State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next **delta** function call for that same recording view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you start the next round of synchronization to get the new recordings added after acquiring `@odata.deltaLink`.
+State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next **delta** function call for that same recording view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you start the next round of synchronization to get the new recordings added after acquiring `@odata.deltaLink`.
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
@@ -71,7 +71,7 @@ The following example shows a series of three requests to synchronize the call r
 - Step 2: [second request](#second-request) and [response](#second-response)
 - Step 3: [third request](#third-request) and [final response](#third-and-final-response-for-the-round).
 
-See also what you'll do in the [next round to get additional recordings](#example-2-next-round-to-get-additional-recordings).
+See also what you'll do in the [next round to get more recordings](#example-2-next-round-to-get-additional-recordings).
 
 #### Initial request
 
@@ -135,7 +135,7 @@ $skiptoken={skipToken1}
 
 #### Second response
 
-The second response returns the next call recording(s) and a `@odata.nextLink` property with a `skipToken`, which indicates there are more recordings.
+The second response returns one or more next call recordings and a `@odata.nextLink` property with a `skipToken`, which indicates there are more recordings.
 
 <!-- {
   "blockType": "response",
@@ -186,7 +186,7 @@ GET https://graph.microsoft.com/beta/users({userId})/onlineMeetings/getAllRecord
 
 #### Third and final response for the round
 
-The third response returns the only remaining recordings and a `@odata.deltaLink` property with a `deltaToken` which indicates that all recordings have been returned. Save and use the `@odata.deltaLink` URL to query for any new recording that is added from this point onwards.
+The third response returns the only remaining recordings and a `@odata.deltaLink` property with a `deltaToken`, which indicates that all recordings are returned. Save and use the `@odata.deltaLink` URL to query for any new recording that is added from this point onwards.
 
 <!-- {
   "blockType": "response",
@@ -226,7 +226,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Next round to get additional recordings
+### Example 2: Next round to get more recordings
 
 Using the `@odata.deltaLink` from the last request in the last round, you can get only those recordings added since the `@odata.deltaLink` was acquired.
 

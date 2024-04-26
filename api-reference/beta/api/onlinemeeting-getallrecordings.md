@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances for which the specified user is the organizer. This API currently does not support getting call recordings from channel meetings.
+Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances for which the specified user is the organizer. This API currently doesn't support getting call recordings from channel meetings.
 
-You can apply the [delta](callrecording-delta.md) function on **getAllRecordings** to synchronize and get [callRecording](../resources/callrecording.md) resources as they are added for **onlineMeeting** instances organized by the specified user.
+You can apply the [delta](callrecording-delta.md) function on **getAllRecordings** to synchronize and get [callRecording](../resources/callrecording.md) resources as they're added for **onlineMeeting** instances organized by the specified user.
 
-Delta query supports both full synchronization that gets all the recordings for online meetings organized by the user, and incremental synchronization that gets recordings that have been added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Delta query supports both Full synchronization and Incremental synchronization. Full synchronization gets all the recordings for online meetings organized by the user. Incremental synchronization gets recordings that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
-Find more information in the [delta query](/graph/delta-query-overview) documentation. For additional examples, see [callRecording: delta](callrecording-delta.md).
+Find more information in the [delta query](/graph/delta-query-overview) documentation. For more examples, see [callRecording: delta](callrecording-delta.md).
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
@@ -46,9 +46,9 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|meetingOrganizerUserId|String|Meeting Organizier User Id, to filter for artifacts for meetings organized by the given user id.|
-|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts which are created after the given start date|
-|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts which are created before the given end date|
+|meetingOrganizerUserId|String|Meeting Organizer User Id, to filter for artifacts for meetings organized by the given user id.|
+|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts that are created after the given start date|
+|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts that are created before the given end date|
 
 ## Supported query patterns
 
@@ -135,7 +135,7 @@ HTTP/1.1 200 SUCCESS
 
 ### Example 2: Get all recordings of a given meeting organizer with date range filter
 
-The following example shows a request to get all recordings of a given meeting organizer, that are created between a given start date and an end date
+The following example shows a request to get all recordings of a given meeting organizer, that are created between a given start date and an end date.
 
 #### Request
 
@@ -200,4 +200,4 @@ HTTP/1.1 200 SUCCESS
 
 [Delta query overview](/graph/delta-query-overview) 
 
-[Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)
+[Export content with the Microsoft Teams export APIs.](/microsoftteams/export-teams-content)
