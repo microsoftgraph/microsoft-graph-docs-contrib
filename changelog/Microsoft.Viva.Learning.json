@@ -1,7 +1,7 @@
 {
   "changelog": [
     {
-      "ChangeList": [      
+      "ChangeList": [
         {
           "Id": "c8fe7a7c-7235-44d0-bb72-b31ca8d1b9ed",
           "ApiChange": "Resource",
@@ -188,7 +188,7 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Employee learning"
     },
- {
+    {
       "ChangeList": [
         {
           "Id": "2bbb372e-272d-401a-9bab-0c1b6e38977f",

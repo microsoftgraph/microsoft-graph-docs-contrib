@@ -123,7 +123,7 @@
       "SubArea": "Partner billing reports"
     },
     {
-      "ChangeList": [                               
+      "ChangeList": [
         {
           "Id": "b9c98ce4-20c9-48d8-9023-52bde6ceb89f",
           "ApiChange": "Resource",
@@ -279,7 +279,7 @@
       "SubArea": "Partner billing reports"
     },
     {
-      "ChangeList": [                               
+      "ChangeList": [
         {
           "Id": "8b9489ef-dabc-47c9-982d-45afd83b4b1d",
           "ApiChange": "Resource",
