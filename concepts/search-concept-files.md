@@ -348,9 +348,9 @@ You can use KQL in search terms of queries for OneDrive and SharePoint. For exam
 
 - `"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\""` scopes the query to a particular folder within a site.
-- `"query": "contoso AND isDocument=true"` scopes the query to only return documents. Any container (folder, document library) will not be returned.
+- `"query": "contoso AND isDocument=true"` scopes the query to only return documents. Any container (folder, document library) isn't returned.
 - `"query": "contoso contentclass:STS_List_Events"` scopes the query to Calendar events stored in SharePoint.
-- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` scopes the query to filter SharePoint and OneDrive items by date
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` scopes the query to filter SharePoint and OneDrive items by date.
 
 In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
 
@@ -501,7 +501,7 @@ Content-Type: application/json
 
 You can use the optional **includeHiddenContent** property to include normally hidden content in search results, such as archived content and SharePoint Embedded (RaaS). By default, this property is set to `false` that prevents hidden content from being returned.
 
-You can also include KQL to scope your query for hidden content to specific content types. For example, in SharePoint, administrators can mark sites as archived. If hidden content isn't available, the search results only include relevant non-hidden content, provided there're no other errors, and return a `200 OK` response code
+You can also include KQL to scope your query for hidden content to specific content types. For example, in SharePoint, administrators can mark sites as archived. If hidden content isn't available, the search results only include relevant nonhidden content, provided there're no other errors, and return a `200 OK` response code.
 
 The following example shows how to use the **queryTemplate** to scope the query with KQL and the **includeHiddenContent** property to include hidden content. You can also scope queries on SharePoint Embedded content using properties such as **ContainerTypeId**. For more information about container types in SharePoint Embedded, see [SharePoint Embedded Container Types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes).
 
