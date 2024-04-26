@@ -764,7 +764,7 @@
         }
       ],
       "Id": "24aa20f2-b68f-4d45-9550-e3dcb3eef1d1",
-      "Cloud": "Review",
+      "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-04-09T13:42:56.9121213Z",
       "WorkloadArea": "Identity and access",
