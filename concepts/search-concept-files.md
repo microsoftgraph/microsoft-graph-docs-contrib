@@ -570,7 +570,7 @@ Content-type: application/json
       ]
     }
   ],
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)"
 }
 ```
 
