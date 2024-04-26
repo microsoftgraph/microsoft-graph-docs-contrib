@@ -3,7 +3,7 @@ title: "Update virtualEventTownhall"
 description: "Update the properties of a virtualEventTownhall object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

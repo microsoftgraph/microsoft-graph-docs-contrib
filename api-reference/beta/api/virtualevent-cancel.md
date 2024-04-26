@@ -3,7 +3,7 @@ title: "virtualEvent: cancel"
 description: "Cancel a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

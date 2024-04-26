@@ -3,7 +3,7 @@ title: "virtualEvent: publish"
 description: "Publish a virtual event to make it visible to its audience."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

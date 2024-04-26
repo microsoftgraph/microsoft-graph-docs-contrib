@@ -3,7 +3,7 @@ title: "Delete virtualEventPresenter"
 description: "Delete a virtualEventPresenter object."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) from a virtual event.
 
-Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 

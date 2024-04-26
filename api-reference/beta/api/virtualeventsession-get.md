@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object. 
 
-Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md) and [virtualEventWebinar](../resources/virtualeventwebinar.md).
+Currently, the following virtual event types are supported: [virtualEventTownhall](../resources/virtualeventtownhall.md) and [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -32,19 +32,24 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+
+
+To get a session of a webinar:
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-
-To get a session of a webinar:
-
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}
 ```
 
 To get a session of a town hall:
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}
 ```
