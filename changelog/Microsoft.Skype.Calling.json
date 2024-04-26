@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventPresenter",
+          "ChangeType": "Addition",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualevent-list-presenters?view=graph-rest-beta) operation to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventPresenter",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/virtualevent-post-presenters?view=graph-rest-beta) operation to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventPresenter",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get](https://learn.microsoft.com/en-us/graph/api/virtualeventpresenter-get?view=graph-rest-beta) operation to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventPresenter",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/virtualeventpresenter-delete?view=graph-rest-beta) operation to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventpresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualevent-cancel?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-beta) resource. Currently, you can only use the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualevent-cancel?view=graph-rest-beta) method in combination with the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualevent-publish?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-beta) resource. Currently, you can only use the [publish](https://learn.microsoft.com/en-us/graph/api/virtualevent-publish?view=graph-rest-beta) method in combination with the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventTownhall",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource and supported methods.",
+          "Target": "virtualEventTownhall"
+        }
+      ],
+      "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-25T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {    
           "Id": "41affe43-d5ad-4c41-a018-a094b0f34482",
           "ApiChange": "Resource",
           "ChangedApiName": "chatrestrictions",
