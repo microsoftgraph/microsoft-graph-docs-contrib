@@ -173,7 +173,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 HTTP/1.1 200 SUCCESS
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(callTranscript)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/users({userId})/onlineMeetings/getAllTranscripts(meetingOrganizerUserId='8b081ef6-4792-4def-b2c9-c363a1bf41d5')?skipToken={skipToken}",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/users({userId})/onlineMeetings/getAllTranscripts(meetingOrganizerUserId='8b081ef6-4792-4def-b2c9-c363a1bf41d5', startDateTime=2024-01-15T00:00:00Z, endDateTime=2024-01-31T00:00:00Z)?skipToken={skipToken}",
     "@odata.count": 1,
     "value": [
         {
