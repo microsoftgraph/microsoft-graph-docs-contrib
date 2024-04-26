@@ -559,6 +559,96 @@
       "CreatedDateTime": "2023-10-26T07:11:11.4334173Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Partner customer administration"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "securityAlertConfidence",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityAlertConfidence** enumeration type.",
+          "Target": "securityAlertConfidence"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "securityAlertResolvedReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityAlertResolvedReason** enumeration type.",
+          "Target": "securityAlertResolvedReason"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "securityAlertSeverity",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityAlertSeverity** enumeration type.",
+          "Target": "securityAlertSeverity"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "securityAlertStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityAlertStatus** enumeration type.",
+          "Target": "securityAlertStatus"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "partner",
+          "ChangeType": "Addition",
+          "Description": "Added the **partner** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activityLog",
+          "ChangeType": "Addition",
+          "Description": "Added the [activityLog](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-activityLog?view=graph-rest-beta) resource.",
+          "Target": "activityLog"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "additionalDataDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [additionalDataDictionary](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-additionalDataDictionary?view=graph-rest-beta) resource.",
+          "Target": "additionalDataDictionary"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "affectedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [affectedResource](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-affectedResource?view=graph-rest-beta) resource.",
+          "Target": "affectedResource"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "partnerSecurity",
+          "ChangeType": "Addition",
+          "Description": "Added the [partnerSecurity](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-partnerSecurity?view=graph-rest-beta) resource and supported methods.",
+          "Target": "partnerSecurity"
+        },
+        {
+          "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "partnerSecurityAlert",
+          "ChangeType": "Addition",
+          "Description": "Added the [partnerSecurityAlert](https://learn.microsoft.com/en-us/graph/api/resources/partner-security-partnerSecurityAlert?view=graph-rest-beta) resource.",
+          "Target": "partnerSecurityAlert"
+        }
+      ],
+      "Id": "5d5b7898-ffc8-45bd-9f1a-4ed62481cabd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-15T04:41:01.6039027Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Partner customer administration"
     }
   ]
 }
