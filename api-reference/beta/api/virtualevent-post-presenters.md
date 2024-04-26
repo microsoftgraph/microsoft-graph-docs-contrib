@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object to a virtual event. 
+Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object on a virtual event. 
 
-Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 
