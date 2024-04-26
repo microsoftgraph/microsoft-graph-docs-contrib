@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all [virtualEventPresenter](../resources/virtualeventpresenter.md) objects of a virtual event.
+Get the list of all [virtualEventPresenter](../resources/virtualeventpresenter.md) objects associated with a virtual event.
 
-Currently the supported virtual event type is: [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 
