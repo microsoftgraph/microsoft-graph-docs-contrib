@@ -296,9 +296,9 @@
       "Id": "cb014057-a8c8-4eb6-9136-a06afcab55d6",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-03-19T06:50:48.0647108Z",
-      "WorkloadArea": "Microsoft.Viva.Learning",
-      "SubArea": ""
+      "CreatedDateTime": "2024-04-25T06:50:48.0647108Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Employee learning"
     },
     {
       "ChangeList": [
@@ -322,9 +322,9 @@
       "Id": "e3a761e5-c279-4c6f-af37-01dc9afbaac4",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2024-03-28T08:28:26.3329574Z",
-      "WorkloadArea": "Viva Learning",
-      "SubArea": ""
+      "CreatedDateTime": "2024-04-25T08:28:26.3329574Z",
+      "WorkloadArea": Teamwork and communications",
+      "SubArea": "Employee learning"
     }
   ]
 }
