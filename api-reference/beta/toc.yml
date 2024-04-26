@@ -10769,15 +10769,15 @@ items:
           - name: Assignment
             href: resources/educationassignment.md
             items:
-              - name: Create assignment
+              - name: Create
                 href: api/educationclass-post-assignments.md
-              - name: Get assignment
+              - name: Get
                 href: api/educationassignment-get.md
-              - name: Update assignment
+              - name: Update
                 href: api/educationassignment-update.md
-              - name: Delete assignment
+              - name: Delete
                 href: api/educationassignment-delete.md
-              - name: Publish assignment
+              - name: Publish
                 href: api/educationassignment-publish.md
               - name: List submissions for assignment
                 href: api/educationassignment-list-submissions.md
@@ -10812,13 +10812,13 @@ items:
           - name: Assignment resources
             href: resources/educationassignmentresource.md
             items:
-              - name: List assignment resources
+              - name: List
                 href: api/educationassignment-list-resources.md
-              - name: Create assignment resource
+              - name: Create
                 href: api/educationassignment-post-resources.md
-              - name: Get assignment resource
+              - name: Get
                 href: api/educationassignmentresource-get.md
-              - name: Delete resource from assignment
+              - name: Delete from assignment
                 href: api/educationassignmentresource-delete.md                 
           - name: Assignment settings
             href: resources/educationassignmentsettings.md

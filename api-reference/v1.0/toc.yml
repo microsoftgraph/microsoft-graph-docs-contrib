@@ -4813,13 +4813,13 @@ items:
           - name: Assignment Resources
             href: resources/educationassignmentresource.md
             items:
-              - name: List assignment resources
+              - name: List
                 href: api/educationassignment-list-resources.md
-              - name: Create assignment resource
+              - name: Create
                 href: api/educationassignment-post-resource.md
-              - name: Get assignment resource
+              - name: Get
                 href: api/educationassignmentresource-get.md
-              - name: Delete resource from assignment
+              - name: Delete from assignment
                 href: api/educationassignmentresource-delete.md             
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
