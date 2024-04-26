@@ -759,7 +759,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [externalAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/externalAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [externalAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/externalAuthenticationMethodConfiguration?view=graph-rest-beta) resource and its associated methods.",
           "Target": "externalAuthenticationMethodConfiguration"
         }
       ],
