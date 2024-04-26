@@ -337,7 +337,8 @@
           "ChangeType": "Addition",
           "Description": "Added the [trainingSetting](https://learn.microsoft.com/en-us/graph/api/resources/trainingSetting?view=graph-rest-1.0) resource type.",
           "Target": "trainingSetting"
-        },        {
+        },
+        {
           "Id": "f790cf16-283a-4044-bd17-a6a7c72bdf38",
           "ApiChange": "Resource",
           "ChangedApiName": "attackSimulationOperation",

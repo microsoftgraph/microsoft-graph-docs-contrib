@@ -19,7 +19,7 @@ You can create or update the following types of group:
 - Microsoft 365 group (unified group)
 - Security group
 
- By default, this operation returns only a subset of the properties for each group. For a list of properties that are returned by default, see thethe [Properties](../resources/group.md#properties) section of the [group](../resources/group.md) resource. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
+ By default, this operation returns only a subset of the properties for each group. For a list of properties that are returned by default, see the [Properties](../resources/group.md#properties) section of the [group](../resources/group.md) resource. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
 > **Note**: To create a [team](../resources/team.md), first create a group, and then add a team to it. For more information, see [Create team](../api/team-put-teams.md).
 
