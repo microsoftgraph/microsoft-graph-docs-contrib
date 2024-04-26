@@ -1,7 +1,7 @@
 ---
 title: "virtualEventRegistrationConfiguration resource type"
 description: "Represents the registration configuration of a virtual event."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType

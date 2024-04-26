@@ -1,7 +1,7 @@
 ---
 title: "virtualEventSession resource type"
 description: "Represents information about a virtual event session."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
