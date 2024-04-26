@@ -55,7 +55,7 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 ## Known Issues
 
 > 1. Using Top query sometimes does not return a nextLink. Try without the top query in case of missing next link.
-> 2. The delta API may return older transcripts which are syned and not newly modified. This happens when there are unrelated updates to meetings. As a workaround, the created date time returned with each transcript can be used to identify old or new recordings.
+> 2. The delta API may return older transcripts which are synced and not newly modified. This happens when there are unrelated updates to meetings. As a workaround, the created date time returned with each transcript can be used to identify old or new recordings.
 
 
 ## Request headers
