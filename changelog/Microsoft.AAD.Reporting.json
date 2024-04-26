@@ -3335,6 +3335,32 @@
       "CreatedDateTime": "2024-02-23T18:25:58.892085Z",
       "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cf87be6a-9ea4-4468-8318-d383d2de76b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastSuccessfulSignInDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastSuccessfulSignInDateTime** property to the [signInActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-1.0) resource.",
+          "Target": "signInActivity"
+        },
+        {
+          "Id": "cf87be6a-9ea4-4468-8318-d383d2de76b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastSuccessfulSignInRequestId",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastSuccessfulSignInRequestId** property to the [signInActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-1.0) resource.",
+          "Target": "signInActivity"
+        }
+      ],
+      "Id": "cf87be6a-9ea4-4468-8318-d383d2de76b8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-26T20:31:40.7734069Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     }
   ]
 }
