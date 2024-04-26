@@ -1,5 +1,5 @@
 ---
-title: "Create/Replace customClaimsPolicy"
+title: "Create or replace customClaimsPolicy"
 description: "Create a new customClaimsPolicy object or replace an existing customClaimsPolicy object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.service: entra-id
 doc_type: apiPageType
 ---
 
-# Create/Replace customClaimsPolicy
+# Create or replace customClaimsPolicy
 
 Namespace: microsoft.graph
 
