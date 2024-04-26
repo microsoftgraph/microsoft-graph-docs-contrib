@@ -1,5 +1,5 @@
 ---
-title: "Create/Replace customClaimsPolicy"
+title: "Create or replace customClaimsPolicy"
 description: "Create a new customClaimsPolicy object or replace an existing customClaimsPolicy object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
