@@ -1,6 +1,6 @@
 ---
 title: "externalAuthenticationMethodConfiguration resource type"
-description: "specifies the properties and connection information of an external authentication method"
+description: "Specifies the properties and connection information for an external authentication method."
 author: "gregk-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Specifies the properties and connection information for an external authentication method.
 
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
