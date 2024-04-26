@@ -45,7 +45,15 @@ To make sure that Copilot for Microsoft 365 uses your content effectively:
 - Apply the `searchable` property label to schema properties with stored content that you would like your users' prompts to match against in Copilot. The `searchable` label is the most important with respect to Copilot because it defines which schema properties can be searched against.
 - Add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](/graph/api/resources/externalconnectors-activitysettings) when you [create your connection](/graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` enables the platform to detect when users share URLs from your external content with each other. Copilot for Microsoft 365 has a higher likelihood of displaying content that has been shared with that user.
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. For a list of supported activity types, see [externalActivity](/graph/api/resources/externalconnectors-externalactivity). Items that have more activities are boosted in importance.
-- Provide meaningful descriptions in the `description` property when [creating connections](/graph/api/externalconnectors-external-post-connections). Rich descriptions improve the likelihood of displaying content in Copilot.
+- Provide meaningful descriptions in the `description` property when [creating connections](/graph/api/externalconnectors-external-post-connections). Rich descriptions improve the likelihood of displaying content in Copilot. The connection description should answer the following questions briefly:
+
+  - What kind of content does this connection have?
+
+  - How do users refer to this content source in their respective orgs?
+
+  - What part of the workflow do users refer to this content in their day-to-day work?
+
+  - What are some characteristics of the content?
 
 In addition, search administrators should ensure that your Microsoft Graph connector connections are enabled for [inline results](/microsoftsearch/connectors-in-all-vertical), by using the following steps:
 
