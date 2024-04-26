@@ -1827,6 +1827,80 @@
     {
       "ChangeList": [
         {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b09",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-v1.0) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-v1.0) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b02",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/teamwork-get?view=graph-rest-v1.0) operation to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Target": "teamwork"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b77",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [getTeamsLicensingDetails](https://learn.microsoft.com/en-us/graph/api/licenseDetails-getteamslicensingdetails?view=graph-rest-v1.0) operation to the [licensedetails](https://learn.microsoft.com/en-us/graph/api/resources/licensedetails?view=graph-rest-v1.0) resource.",
+          "Target": "licensedetails"
+        },
+        {
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291h",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamslicensingdetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamslicensingdetails](https://learn.microsoft.com/en-us/graph/api/resources/teamslicensingdetails?view=graph-rest-v1.0) resource.",
+          "Target": "teamslicensingdetails"
+        },
+        {
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291h",
+          "ApiChange": "Property",
+          "ChangedApiName": "isTeamsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isTeamsEnabled** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Target": "teamwork"
+        },
+        {
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+          "ApiChange": "Property",
+          "ChangedApiName": "region",
+          "ChangeType": "Addition",
+          "Description": "Added the **region** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-v1.0) resource.",
+          "Target": "teamwork"
+        },
+        {
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+          "ApiChange": "Property",
+          "ChangedApiName": "locale",
+          "ChangeType": "Addition",
+          "Description": "Added the **locale** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-v1.0) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+          "ApiChange": "Property",
+          "ChangedApiName": "locale",
+          "ChangeType": "Addition",
+          "Description": "Added the **region** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-v1.0 resource.",
+          "Target": "userTeamwork"
+        }
+      ],
+      "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2852",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-10T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Settings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6ed394c1-490d-437d-866d-bc66c04f4eb3",
           "ApiChange": "Method",
           "ChangedApiName": "getAllRecordings",
