@@ -20,9 +20,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get customClaimsPolicy](../api/serviceprincipal-get-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Read the properties and relationships of a [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
-|[Create/Replace customClaimsPolicy](../api/serviceprincipal-patch-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Create a new [customClaimsPolicy](../resources/customclaimspolicy.md) object or replace an existing [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
-|[Update customClaimsPolicy](../api/serviceprincipal-put-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Update the properties of a [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
+|[Get customClaimsPolicy](../api/claimspolicy-get.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Read the properties and relationships of a [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
+|[Create/Replace customClaimsPolicy](../api/claimspolicy-create.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Create a new [customClaimsPolicy](../resources/customclaimspolicy.md) object or replace an existing [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
+|[Update customClaimsPolicy](../api/claimspolicy-update.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Update the properties of a [customClaimsPolicy](../resources/customclaimspolicy.md) object.|
 
 ## Properties
 |Property|Type|Description|

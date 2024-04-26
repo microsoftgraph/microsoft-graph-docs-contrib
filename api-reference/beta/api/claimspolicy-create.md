@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "serviceprincipal-put-claimspolicy-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-put-claimspolicy-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/claimspolicy-create-permissions.md)]
 
 ## HTTP request
 
