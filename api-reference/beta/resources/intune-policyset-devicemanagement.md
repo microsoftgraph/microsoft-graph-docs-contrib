@@ -3,7 +3,7 @@ title: "deviceManagement resource type"
 description: "Singleton entity that acts as a container for all device and app management functionality."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Singleton entity that acts as a container for all device and app management func
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-policyset-devicemanagement-get.md)|[deviceManagement](../resources/intune-policyset-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-policyset-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-policyset-devicemanagement-update.md)|[deviceManagement](../resources/intune-policyset-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-policyset-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-policyset-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-policyset-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 |[getAssignmentFiltersStatusDetails action](../api/intune-policyset-devicemanagement-getassignmentfiltersstatusdetails.md)|[assignmentFilterStatusDetails](../resources/intune-policyset-assignmentfilterstatusdetails.md)||
 |[evaluateAssignmentFilter action](../api/intune-policyset-devicemanagement-evaluateassignmentfilter.md)|Stream||
 

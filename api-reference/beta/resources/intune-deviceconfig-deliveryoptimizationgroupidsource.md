@@ -3,7 +3,7 @@ title: "deliveryOptimizationGroupIdSource resource type"
 description: "GroupId Support Types"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

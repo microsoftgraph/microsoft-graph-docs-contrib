@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -270,7 +270,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 ---
 
 #### Response
-Here is an example of the response. The properties of the associated event are returned in the response.
+The following example shows the response. The properties of the associated event are returned in the response.
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

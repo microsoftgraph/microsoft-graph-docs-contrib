@@ -3,7 +3,7 @@ title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [deviceCategory](../resources/intune-onboarding-devicecategory.md) object.
+Update the properties of a [deviceCategory](../resources/intune-shared-devicecategory.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,9 +44,9 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceCategory](../resources/intune-onboarding-devicecategory.md) object.
+In the request body, supply a JSON representation for the [deviceCategory](../resources/intune-shared-devicecategory.md) object.
 
-The following table shows the properties that are required when you create the [deviceCategory](../resources/intune-onboarding-devicecategory.md).
+The following table shows the properties that are required when you create the [deviceCategory](../resources/intune-shared-devicecategory.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceCategory](../resources/intune-onboarding-devicecategory.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceCategory](../resources/intune-shared-devicecategory.md) object in the response body.
 
 ## Example
 

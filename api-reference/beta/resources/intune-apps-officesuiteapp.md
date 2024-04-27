@@ -3,7 +3,7 @@ title: "officeSuiteApp resource type"
 description: "Contains properties and inherited properties for the Office365 Suite App."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

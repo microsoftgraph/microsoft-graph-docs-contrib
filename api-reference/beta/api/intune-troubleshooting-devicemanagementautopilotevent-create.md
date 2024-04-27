@@ -3,7 +3,7 @@ title: "Create deviceManagementAutopilotEvent"
 description: "Create a new deviceManagementAutopilotEvent object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

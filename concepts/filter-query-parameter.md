@@ -1,27 +1,28 @@
 ---
-title: "Use the filter query parameter to filter a collection of objects"
-description: "Learn how to use the filter OData query parameter and its operators against different types of properties in Microsoft Graph."
+title: "Use the $filter query parameter to filter a collection of objects"
+description: "Learn how to use the $filter OData query parameter and its operators to filter a collection of resources in Microsoft Graph."
 author: FaithOmbongi
 ms.author: ombongifaith
+ms.topic: how-to
 ms.reviewer: "Luca.Spolidoro"
 ms.localizationpriority: high
-ms.subservice: "entra-applications"
+ms.subservice: non-product-specific
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/14/2023
+ms.date: 04/19/2024
 #Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use filter expressions to get only the items that meet specific criteria, and reduce the amount of data the app processes, improving app efficiency.
 ---
 
-# Use the filter query parameter
+# Use the $filter query parameter
 
 Microsoft Graph supports the `$filter` [OData](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955) query parameter to retrieve a subset of a collection.
 
 The expression specified with `$filter` is evaluated for each resource in the collection, and only items where the expression evaluates to `true` are included in the response. Resources for which the expression evaluates to `false` or to `null`, or which reference properties that are unavailable due to permissions, are omitted from the response.
 
-The `$filter` query parameter can also be used to retrieve relationships like **members**, **memberOf**, **transitiveMembers**, and **transitiveMemberOf**. For example, "get all the security groups that I'm a member of".
+The `$filter` query parameter can also be applied against relationships like **members**, **memberOf**, **transitiveMembers**, and **transitiveMemberOf**. For example, "get all the security groups that I'm a member of".
 
 ## Operators and functions supported in filter expressions
 
-Support for `$filter` operators varies across Microsoft Graph APIs. The following operators and functions are supported:
+Microsoft Graph supports the use of following operators and functions. However, support by individual resources and its properties or relationships may vary. In addition, some properties and relationships support `$filter` only with [advanced queries](/graph/aad-advanced-queries). See the specific resource documentation for details, and [Syntax for using the filter OData query parameter](#syntax-for-using-the-filter-odata-query-parameter) for examples of how to use these operators and functions.
 
 | Operator type         | Operator                                                                                                                                         |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -29,21 +30,15 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 | Relational operators  | <ul><li> Less than (`lt`) </li><li> Greater than (`gt`)</li><li> Less than or equal to (`le`)</li><li> Greater than or equal to (`ge`)</li></ul> |
 | Lambda operators      | <ul><li> Any (`any`) </li><li> All (`all`)</li></ul>                                                                                             |
 | Conditional operators | <ul><li> And (`and`) </li><li> Or (`or`)</li>                                                                                                    |
-| Functions             | <ul><li> Starts with (`startsWith`) </li><li> Ends with (`endsWith`)</li><li> Contains (`contains`)</li></ul>                                                                   |
-
-See [Syntax for using the filter OData query parameter](#syntax-for-using-the-filter-odata-query-parameter) for examples of how to use these operators and functions.
-
-> [!NOTE]
-> Support for these operators varies by entity and some properties support `$filter` only with [advanced queries](/graph/aad-advanced-queries). See the specific resource documentation for details.
+| Functions             | <ul><li> Starts with (`startswith`) </li><li> Ends with (`endswith`)</li><li> Contains (`contains`)</li></ul>                                                                   |
 
 ## Filter using lambda operators
 
-OData defines the `any` and `all` operators to evaluate matches on multi-valued properties, that is, either collection of primitive values such as String types or collection of entities.
+OData defines the `any` and `all` operators to evaluate matches on multi-valued properties, that is, either collection of primitive values such as String types or collection of resources.
 
 ### `any` operator
 
-The `any` operator iteratively applies a Boolean expression to each item of a collection and returns `true` if the expression is `true` for *at least one item* of the collection, otherwise it returns `false`.
-The following query string shows the syntax for the `any` operator:
+The `any` operator iteratively applies a Boolean expression to each item of a collection and returns `true` if the expression is `true` for *at least one item* of the collection, otherwise it returns `false`. The following query string shows the syntax for the `any` operator:
 
 ```http
 $filter=collection/any(property:property/subProperty eq 'value-to-match')
@@ -62,7 +57,7 @@ The equivalent syntax in `C#` and `LINQ` is as follows:
 collection.Any(property => property.subProperty == "value-to-match")
 ```
 
-For example, the **imAddresses** property of the `user` resource contains a collection of String primitive types. The following query retrieves only users with an imAddress of `admin@contoso.com`.
+For example, the **imAddresses** property of the `user` resource contains a collection of String primitive types. The following query retrieves only users with at least one imAddress of `admin@contoso.com`.
 
 
 # [HTTP](#tab/http)
@@ -108,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=imAddresses/any(i:i eq 'admin
 
 ---
 
-The **assignedLicenses** property of the `user` resource contains a collection of **assignedLicense** objects, a complex type with two properties, **skuId** and **disabledPlans**. The following query retrieves only users with an assigned license identified by the **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
+The **assignedLicenses** property of the `user` resource contains a collection of **assignedLicense** objects, a complex type with two properties, **skuId** and **disabledPlans**. The following query retrieves only users with at least one assigned license identified by the **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
 
 
 # [HTTP](#tab/http)
@@ -204,7 +199,7 @@ ConsistencyLevel: eventual
 
 ### `all` operator
 
-The `all` operator applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *all the items* of the collection, otherwise it returns `false`. Currently, no property supports it.
+The `all` operator applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *all the items* of the collection, otherwise it returns `false`. Currently, it isn't supported in Microsoft Graph.
 
 ## Examples using the filter query operator
 
@@ -213,12 +208,12 @@ The following table shows some examples that use the `$filter` query parameter. 
 > [!NOTE]
 >
 > + Examples marked with <sup>**</sup> are only supported with [advanced query capabilities](/graph/aad-advanced-queries).
-> + Click the examples to try them in [Graph Explorer][graph-explorer].
+> + Click the HTTP method to try the examples in [Graph Explorer][graph-explorer].
 
 | Description                                                                                                                           | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | :------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Get all users with the name Mary across multiple properties.                                                                          | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) `~/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`                                                                              |
-| Get all users with mail domain equal to 'hotmail.com'                                                                                 | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$count=true&$filter=endsWith(mail,'@hotmail.com')`<sup> [ ** ](#**) </sup>                                                                                                                                                     |
+| Get all users with mail domain equal to 'hotmail.com'                                                                                 | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3Dendswith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$count=true&$filter=endswith(mail,'@hotmail.com')`<sup> [ ** ](#**) </sup>                                                                                                                                                     |
 | Get all users without assigned licenses                                                                                               | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DassignedLicenses%2F%24count%2Bne%2B0%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=assignedLicenses/$count eq 0&$count=true`<sup> [ ** ](#**) </sup>                                                                                                                                                                                         |
 | Get all the signed-in user's events that start after 7/1/2017.                                                                        | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) `~/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`. <br/>**NOTE:** The **dateTime** property of the event entity is a String type.                                                                                                                                                                                                                                                                |
 | Get all emails from a specific address received by the signed-in user.                                                                | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) `~/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`                                                                                                                                                                                                                                                                                                 |
@@ -235,8 +230,6 @@ The following table shows some examples that use the `$filter` query parameter. 
 
 The following article demonstrates the syntax for using the `$filter` OData query parameter and its associated operators. The examples are provided for guidance only and don't reflect a comprehensive list for the application of `$filter`.
 
-These examples show how to use `$filter` to match against supported properties and relationships that are primitive types, complex types, enumeration types, or a collection of one of these types.
-
 > [!NOTE]
 >
 > + GUID and DateTimeOffset values aren't enclosed in quotes in `$filter` expressions.
@@ -250,13 +243,13 @@ These examples show how to use `$filter` to match against supported properties a
 | `eq`                   | `~/users?$filter=userType eq 'Member'`                                                                                             |
 | `not`                  | `~/users?$filter=not(userType eq 'Member')`<sup> [ ** ](#**) </sup>                                                                                       |
 | `ne`                   | `~/users?$filter=companyName ne null`<sup> [ ** ](#**) </sup>                                                                                             |
-| `startsWith`           | `~/users?$filter=startsWith(userPrincipalName, 'admin')`                                                                           |
-| `endsWith`             | `~/users?$filter=endsWith(mail,'@outlook.com')`<sup> [ ** ](#**) </sup>                                                                                   |
+| `startswith`           | `~/users?$filter=startswith(userPrincipalName, 'admin')`                                                                           |
+| `endswith`             | `~/users?$filter=endswith(mail,'@outlook.com')`<sup> [ ** ](#**) </sup>                                                                                   |
 | `in`                   | `~/users?$filter=mail in ('mail1@domain.com', 'mail2@domain.com')`  <br/><br/> **Note:** For query strings using `in` operator, the request is limited to 15 expressions in the filter clause by default or a URL length of 2,048 characters when using [advanced query capabilities](./aad-advanced-queries.md).                                                                                          |
 | `le`                   | `~/devices?$filter=registrationDateTime le 2021-01-02T12:00:00Z`<sup> [ ** ](#**) </sup>                                                                  |
 | `ge`                   | `~/devices?$filter=registrationDateTime ge 2021-01-02T12:00:00Z`<sup> [ ** ](#**) </sup>                                                                  |
-| `not` and `endsWith`   | `~/users?$filter=not(endsWith(mail, 'contoso.com'))`<sup> [ ** ](#**) </sup>                                                                          |
-| `not` and `startsWith` | `~/users?$filter=not(startsWith(mail, 'A'))`<sup> [ ** ](#**) </sup>                                                                                      |
+| `not` and `endswith`   | `~/users?$filter=not(endswith(mail, 'contoso.com'))`<sup> [ ** ](#**) </sup>                                                                          |
+| `not` and `startswith` | `~/users?$filter=not(startswith(mail, 'A'))`<sup> [ ** ](#**) </sup>                                                                                      |
 | `not` and `eq`         | `~/users?$filter=not(companyName eq 'Contoso E.A.')`<sup> [ ** ](#**) </sup>                                                                              |
 | `not` and `in`         | `~/users?$filter=not(userType in ('Member'))`<sup> [ ** ](#**) </sup>                                                                                     |
 | `contains`             | `~/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')` |
@@ -269,23 +262,15 @@ These examples show how to use `$filter` to match against supported properties a
 | `eq`                                     | `~/groups?$filter=groupTypes/any(c:c eq 'Unified')`                |
 | `not`                                    | `~/groups?$filter=not(groupTypes/any(c:c eq 'Unified'))`<sup> [ ** ](#**) </sup>          |
 | `ne`                                     | `~/users?$filter=companyName ne null`<sup> [ ** ](#**) </sup>                             |
-| `startsWith`                             | `~/users?$filter=businessPhones/any(p:startsWith(p, '44'))`<sup> [ ** ](#**) </sup>       |
-| `endsWith`                               | `~/users?$filter=endsWith(mail,'@outlook.com')`<sup> [ ** ](#**) </sup>                   |
-| `not` and `endsWith`                     | `~/groups?$filter=not(endsWith(mail,'contoso.com'))`<sup> [ ** ](#**) </sup>          |
-| `not` and `startsWith`                   | `~/groups?$filter=not(startsWith(mail,'Pineview'))`<sup> [ ** ](#**) </sup>               |
+| `startswith`                             | `~/users?$filter=businessPhones/any(p:startswith(p, '44'))`<sup> [ ** ](#**) </sup>       |
+| `endswith`                               | `~/users?$filter=endswith(mail,'@outlook.com')`<sup> [ ** ](#**) </sup>                   |
+| `not` and `endswith`                     | `~/groups?$filter=not(endswith(mail,'contoso.com'))`<sup> [ ** ](#**) </sup>          |
+| `not` and `startswith`                   | `~/groups?$filter=not(startswith(mail,'Pineview'))`<sup> [ ** ](#**) </sup>               |
 | `not` and `eq`                           | `~/groups?$filter=not(mail eq 'PineviewSchoolStaff@Contoso.com')`<sup> [ ** ](#**) </sup> |
 | `eq` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count eq 0`<sup> [ ** ](#**) </sup>                    |
 | `ne` and `$count` for empty collections  | `~/users?$filter=assignedLicenses/$count ne 0`<sup> [ ** ](#**) </sup>                    |
 | `not` and `$count` for empty collections | `~/users?$filter=not(assignedLicenses/$count eq 0)`<sup> [ ** ](#**) </sup>               |
 | `$count` for collections with one object | `~/servicePrincipals?$filter=owners/$count eq 1`<sup> [ ** ](#**) </sup>                  |
-
-For the list of all properties of directory objects that support count of a collection in a filter expression, see [Count of a collection in a filter expression](/graph/aad-advanced-queries#count-of-a-collection-in-a-filter-expression).
-
-<!--`in` - otherMails example;
-`not` and `in`;
-no examples available for ge and le
--->
-
 
 ### For GUID types
 
@@ -321,8 +306,8 @@ Hiding because the latest iteration of the report doesn't include these properti
 |-----------------|--------------------------------------------------------------------------------------------|
 | `eq`           | `~/users?$filter=certificateUserIds/any(x:x eq '9876543210@mil')`<sup> [ ** ](#**) </sup>      |
 | `not` and `eq` | `~/users?$filter=not(certificateUserIds/any(x:x eq '9876543210@mil'))`<sup> [ ** ](#**) </sup> |
-| `startsWith`   | `~/users?$filter=certificateUserIds/any(x:startswith(x,'987654321'))`<sup> [ ** ](#**) </sup>  |
-| `endsWith`     | `~/users?$filter=proxyAddresses/any(p:endsWith(p,'contoso.com'))`<sup> [ ** ](#**) </sup>                    |
+| `startswith`   | `~/users?$filter=certificateUserIds/any(x:startswith(x,'987654321'))`<sup> [ ** ](#**) </sup>  |
+| `endswith`     | `~/users?$filter=proxyAddresses/any(p:endswith(p,'contoso.com'))`<sup> [ ** ](#**) </sup>                    |
 
 
 ## Related content

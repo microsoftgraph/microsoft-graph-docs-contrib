@@ -3,7 +3,7 @@ title: "androidDeviceOwnerEnrollmentProfileType enum type"
 description: "Android Device Owner Enrollment Profile types."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

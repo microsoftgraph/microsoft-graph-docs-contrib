@@ -3,7 +3,7 @@ title: "iosDerivedCredentialAuthenticationConfiguration resource type"
 description: "iOS Derived Credential profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

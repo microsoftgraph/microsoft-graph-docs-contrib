@@ -3,7 +3,7 @@ title: "managedAppDataIngestionLocation enum type"
 description: "Locations which can be used to bring data into organization documents"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

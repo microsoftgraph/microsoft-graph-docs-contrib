@@ -3,7 +3,7 @@ title: "user resource type"
 description: "Represents an Azure Active Directory user object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,11 +20,11 @@ Represents an Azure Active Directory user object.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List users](../api/intune-mam-user-list.md)|[user](../resources/intune-mam-user.md) collection|List properties and relationships of the [user](../resources/intune-mam-user.md) objects.|
-|[Get user](../api/intune-mam-user-get.md)|[user](../resources/intune-mam-user.md)|Read properties and relationships of the [user](../resources/intune-mam-user.md) object.|
-|[Create user](../api/intune-mam-user-create.md)|[user](../resources/intune-mam-user.md)|Create a new [user](../resources/intune-mam-user.md) object.|
-|[Delete user](../api/intune-mam-user-delete.md)|None|Deletes a [user](../resources/intune-mam-user.md).|
-|[Update user](../api/intune-mam-user-update.md)|[user](../resources/intune-mam-user.md)|Update the properties of a [user](../resources/intune-mam-user.md) object.|
+|[List users](../api/intune-mam-user-list.md)|[user](../resources/intune-shared-user.md) collection|List properties and relationships of the [user](../resources/intune-shared-user.md) objects.|
+|[Get user](../api/intune-mam-user-get.md)|[user](../resources/intune-shared-user.md)|Read properties and relationships of the [user](../resources/intune-shared-user.md) object.|
+|[Create user](../api/intune-mam-user-create.md)|[user](../resources/intune-shared-user.md)|Create a new [user](../resources/intune-shared-user.md) object.|
+|[Delete user](../api/intune-mam-user-delete.md)|None|Deletes a [user](../resources/intune-shared-user.md).|
+|[Update user](../api/intune-mam-user-update.md)|[user](../resources/intune-shared-user.md)|Update the properties of a [user](../resources/intune-shared-user.md) object.|
 |[getManagedAppDiagnosticStatuses function](../api/intune-mam-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
 |[getManagedAppPolicies function](../api/intune-mam-user-getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Gets app restrictions for a given user.|
 |[wipeManagedAppRegistrationByDeviceTag action](../api/intune-mam-user-wipemanagedappregistrationbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|

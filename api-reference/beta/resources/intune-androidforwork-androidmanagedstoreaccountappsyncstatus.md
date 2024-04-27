@@ -3,7 +3,7 @@ title: "androidManagedStoreAccountAppSyncStatus enum type"
 description: "Sync status of the tenant with the Google EMM API"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

@@ -113,7 +113,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request
 
-Here's an example of the request using the `$filter=isof('{resource type}')` parameter on users and groups. There's no `$select` parameter, so a default set of properties is tracked and returned.
+The following example shows a request using the `$filter=isof('{resource type}')` parameter on users and groups. There's no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
 <!-- {

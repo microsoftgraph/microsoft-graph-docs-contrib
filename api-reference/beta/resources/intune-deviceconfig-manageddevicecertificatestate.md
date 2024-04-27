@@ -3,7 +3,7 @@ title: "managedDeviceCertificateState resource type"
 description: "Intune Deviceconfig Manageddevicecertificatestate Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

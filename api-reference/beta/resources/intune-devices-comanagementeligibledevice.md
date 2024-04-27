@@ -3,7 +3,7 @@ title: "comanagementEligibleDevice resource type"
 description: "Device Co-Management eligibility state"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

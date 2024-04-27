@@ -3,7 +3,7 @@ title: "Delete groupPolicyPresentationComboBox"
 description: "Deletes a groupPolicyPresentationComboBox."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

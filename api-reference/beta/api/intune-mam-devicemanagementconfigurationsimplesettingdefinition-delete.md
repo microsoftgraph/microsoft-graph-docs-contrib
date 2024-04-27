@@ -3,7 +3,7 @@ title: "Delete deviceManagementConfigurationSimpleSettingDefinition"
 description: "Deletes a deviceManagementConfigurationSimpleSettingDefinition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

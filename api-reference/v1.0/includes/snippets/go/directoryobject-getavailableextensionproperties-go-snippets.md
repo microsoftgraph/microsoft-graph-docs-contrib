@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphdirectoryobjects.NewGetAvailableExtensionPropertiesPostRequestBody()
 
-getAvailableExtensionProperties, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(context.Background(), requestBody, nil)
+getAvailableExtensionProperties, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().PostAsGetAvailableExtensionPropertiesPostResponse(context.Background(), requestBody, nil)
 
 
 ```

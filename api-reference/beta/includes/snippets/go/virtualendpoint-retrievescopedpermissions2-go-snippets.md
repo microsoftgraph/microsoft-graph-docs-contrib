@@ -25,7 +25,7 @@ configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointRetrieveS
 	QueryParameters: requestParameters,
 }
 
-retrieveScopedPermissions, err := graphClient.DeviceManagement().VirtualEndpoint().RetrieveScopedPermissions().Get(context.Background(), configuration)
+retrieveScopedPermissions, err := graphClient.DeviceManagement().VirtualEndpoint().RetrieveScopedPermissions().GetAsRetrieveScopedPermissionsGetResponse(context.Background(), configuration)
 
 
 ```

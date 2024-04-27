@@ -3,7 +3,7 @@ title: "managementAgentType enum type"
 description: "Management agent type."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

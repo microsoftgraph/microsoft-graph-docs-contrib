@@ -3,7 +3,7 @@ title: "deviceManagementResourceAccessProfileBase resource type"
 description: "Base Profile Type for Resource Access"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -35,6 +35,7 @@ Base Profile Type for Resource Access
 |creationDateTime|DateTimeOffset|DateTime profile was created|
 |lastModifiedDateTime|DateTimeOffset|DateTime profile was last modified|
 |roleScopeTagIds|String collection|Scope Tags|
+|serverApplicabilityRules|[applicabilityRule](../resources/intune-rapolicy-applicabilityrule.md) collection|The list of Applicability Rules for a Device Configuration Profile|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -60,6 +61,14 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
     "String"
+  ],
+  "serverApplicabilityRules": [
+    {
+      "@odata.type": "microsoft.graph.osVersionApplicabilityRule",
+      "filterType": "String",
+      "minOSVersion": "String",
+      "maxOSVersion": "String"
+    }
   ]
 }
 ```

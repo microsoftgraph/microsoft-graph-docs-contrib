@@ -3,7 +3,7 @@ title: "loggedOnUser resource type"
 description: "Logged On User"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

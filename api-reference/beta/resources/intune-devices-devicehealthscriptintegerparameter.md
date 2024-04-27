@@ -3,7 +3,7 @@ title: "deviceHealthScriptIntegerParameter resource type"
 description: "Properties of the  Integer script parameter."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Update roleScopeTagAutoAssignment"
 description: "Update the properties of a roleScopeTagAutoAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

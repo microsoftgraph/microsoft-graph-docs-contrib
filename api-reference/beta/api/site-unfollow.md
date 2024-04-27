@@ -1,7 +1,7 @@
 ---
 author: learafa
 title: Unfollow site
-description: Unfollow a user's site
+description: Unfollow a user's site.
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Unfollow a user's [site](../resources/site.md) or multiple sites.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -31,7 +33,7 @@ POST /users/{user-id}/followedSites/remove
 
 ## Request body
 
-In the request body, supply an array of JSON objects with the id parameter mentioned in the table below. 
+In the request body, supply an array of JSON objects with the `id` parameter. 
 
 
 | Name                 | Value  | Description                                                            |
@@ -41,7 +43,7 @@ In the request body, supply an array of JSON objects with the id parameter menti
 ## Response
 
 * If the request is successful, this method returns a `204` status code with no content.  
-* If an error occurred while unfollowing any of the specified sites, this method returns a `207` status code and the response body contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.
+* If an error occurred while unfollowing any of the specified sites, this method returns a `207` status code and the response body contains an array of entries that contain [error](/graph/errors) objects and site IDs that indicate which sites were not unfollowed.
 
 ## Example
 
@@ -54,7 +56,7 @@ The following example shows how to unfollow multiple sites.
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /users/{user-id}/followedSites/remove
+POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/remove
 Content-Type: application/json
 
 {
@@ -70,15 +72,43 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/unfollow-site-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/unfollow-site-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/unfollow-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/unfollow-site-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unfollow-site-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/unfollow-site-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
 
-If successful, it returns the following JSON response. 
+If successful, the request returns the following response. 
 
 <!-- { "blockType": "response" } -->
 
@@ -86,7 +116,7 @@ If successful, it returns the following JSON response.
 HTTP/1.1 204 No Content
 ```
 
-If an error occurred, it returns the following JSON response 
+If an error occurred, the request returns the following JSON response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

@@ -3,7 +3,7 @@ title: "List onPremEncryptedPayloads"
 description: "List properties and relationships of the onPremEncryptedPayload objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

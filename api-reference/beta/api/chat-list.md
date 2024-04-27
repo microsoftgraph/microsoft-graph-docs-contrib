@@ -90,7 +90,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -197,7 +197,7 @@ Content-type: application/json
 ### Example 2: List all chats along with the members of each chat
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -604,7 +604,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request that will filter all the chats based on a specific member's display name.
+The following example shows a request that will filter all the chats based on a specific member's display name.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -749,7 +749,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
+The following example shows a request. **lastMessagePreview/createdDateTime** is passed to sort chats by the most to least recent chat messages.
 
 
 # [HTTP](#tab/http)

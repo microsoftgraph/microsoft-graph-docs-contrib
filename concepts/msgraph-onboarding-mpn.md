@@ -33,7 +33,7 @@ Use the following steps to join Microsoft Partner Network:
 
 You can now access [Partner Center](https://partner.microsoft.com/) with your Microsoft Partner Network account.
 
-## Next steps
+## Set up your development environment
 
 Set up your development environment. You can create two types of EDU tenants:
 

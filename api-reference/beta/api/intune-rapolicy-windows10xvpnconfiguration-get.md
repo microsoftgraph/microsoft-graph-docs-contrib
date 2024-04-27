@@ -3,7 +3,7 @@ title: "Get windows10XVpnConfiguration"
 description: "Read properties and relationships of the windows10XVpnConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 604
+Content-Length: 759
 
 {
   "value": {
@@ -78,6 +78,12 @@ Content-Length: 604
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
+    ],
+    "serverApplicabilityRules": [
+      {
+        "@odata.type": "microsoft.graph.applicabilityRule",
+        "filterType": "include"
+      }
     ],
     "authenticationCertificateId": "39b4cd38-cd38-39b4-38cd-b43938cdb439",
     "customXmlFileName": "Custom Xml File Name value",

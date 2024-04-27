@@ -3,7 +3,7 @@ title: "managedDeviceEnrollmentAbandonmentDetails function"
 description: "Metadata for Enrollment abandonment details report"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ The following table shows the parameters that can be used with this function.
 
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune-troubleshooting-report.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.
 
 ## Example
 

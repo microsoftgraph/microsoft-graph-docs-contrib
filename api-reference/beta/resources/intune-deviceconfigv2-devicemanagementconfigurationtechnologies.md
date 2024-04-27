@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationTechnologies enum type"
 description: "Describes which technology this setting can be deployed with"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 
@@ -29,6 +29,7 @@ Describes which technology this setting can be deployed with
 |exchangeOnline|256|Setting can be deployed through the Exchange Online agent channel.|
 |mobileApplicationManagement|512|Setting can be deployed through the Mobile Application Management (MAM) channel|
 |linuxMdm|1024|Setting can be deployed through the Linux Mdm channel.|
+|extensibility|2048|Setting can be deployed through the Extensibility channel.|
 |enrollment|4096|Setting can be deployed through device enrollment.|
 |endpointPrivilegeManagement|8192|Setting can be deployed using the Endpoint privilege management channel|
 |unknownFutureValue|16384|Evolvable enumeration sentinel value. Do not use.|

@@ -3,7 +3,7 @@ title: "connectorStatusDetails resource type"
 description: "Represent connector status"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

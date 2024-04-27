@@ -27,7 +27,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

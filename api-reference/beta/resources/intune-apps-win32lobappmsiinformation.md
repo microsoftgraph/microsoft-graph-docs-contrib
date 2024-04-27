@@ -3,7 +3,7 @@ title: "win32LobAppMsiInformation resource type"
 description: "Contains MSI app properties for a Win32 App."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

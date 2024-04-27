@@ -55,14 +55,14 @@ If the vertical section already exists, this method returns a `409 Conflict` res
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
+PUT https://graph.microsoft.com/beta/sites/a69edae4-9208-4f60-9aa3-cd0911ff0ce1/pages/7f7a2740-2d74-47ba-af0c-71ed3a3384ca/microsoft.graph.sitePage/canvasLayout/verticalSection
 Content-Type: application/json
 
 {

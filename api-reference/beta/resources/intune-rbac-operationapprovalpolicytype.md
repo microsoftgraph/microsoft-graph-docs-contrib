@@ -3,7 +3,7 @@ title: "operationApprovalPolicyType enum type"
 description: "The set of available policy types that can be configured for approval. There is no default value for this enum, indicating that the policy type must always be chosen."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

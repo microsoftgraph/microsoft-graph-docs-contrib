@@ -3,7 +3,7 @@ title: "endpointSecurityConfigurationType enum type"
 description: "The endpoint security policy type."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

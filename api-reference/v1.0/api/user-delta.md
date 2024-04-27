@@ -4,7 +4,7 @@ description: "Get newly created, updated, or deleted users without having to per
 ms.localizationpriority: high
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -105,7 +105,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request
 
-Here's an example of the request. There's no `$select` parameter, so a default set of properties is tracked and returned.
+The following example shows a request. There's no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -44,7 +44,7 @@ This example restores a version of a listItem identified by `{item-id}` and `{ve
 <!-- { "blockType": "request", "name": "restore-item-version-listItem", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
+POST https://graph.microsoft.com/beta/sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
 ## Response

@@ -3,7 +3,7 @@ title: "deviceManagementTemplateInsightsDefinition resource type"
 description: "template insights definition"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

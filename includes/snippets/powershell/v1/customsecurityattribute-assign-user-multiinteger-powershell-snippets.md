@@ -12,11 +12,11 @@ $params = @{
 			"@odata.type" = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue"
 			"CostCenter@odata.type" = "#Collection(Int32)"
 			CostCenter = @(
-				
-				
-			)
-		}
-	}
+			
+		
+	)
+}
+}
 }
 
 Update-MgUser -UserId $userId -BodyParameter $params

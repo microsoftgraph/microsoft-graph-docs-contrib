@@ -2,7 +2,7 @@
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: ric.lewis
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ms.topic: include
 ms.localizationpriority: high
 ---
@@ -27,7 +27,7 @@ The following table lists the latency to expect between an event happening in th
 | [conversationMember][]  | Less than 10 seconds | 60 minutes      |
 | [driveItem][]           | Less than 1 minute   | 5 minutes       |
 | [event][]               | Unknown              | Unknown         |
-| [group][]               | Less than 2 minutes  | 15 minutes      |
+| [group][]               | Unknown              | Unknown         |
 | [list][]                | Less than 1 minute   | 5 minutes       |
 | [message][]             | Less than 1 minute   | 3 minutes       |
 | [onlineMeeting][]       | Less than 10 seconds | 1 minute        |
@@ -36,7 +36,7 @@ The following table lists the latency to expect between an event happening in th
 | [printTaskDefinition][] | Less than 1 minute   | 5 minutes       |
 | [team][]                | Less than 10 seconds | 60 minutes      |
 | [todoTask][]            | Less than 2 minutes  | 15 minutes      |
-| [user][]                | Less than 2 minutes  | 15 minutes      |
+| [user][]                | Unknown              | Unknown         |
 
 <sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert is created. It doesn't include the time it takes for a rule to create an alert from the data.
 

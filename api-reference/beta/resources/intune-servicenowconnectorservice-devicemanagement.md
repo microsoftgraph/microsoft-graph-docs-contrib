@@ -3,7 +3,7 @@ title: "deviceManagement resource type"
 description: "Singleton that acts as container for a collection of Resource Access entities."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Singleton that acts as container for a collection of Resource Access entities.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-servicenowconnectorservice-devicemanagement-get.md)|[deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-servicenowconnectorservice-devicemanagement-update.md)|[deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-servicenowconnectorservice-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-servicenowconnectorservice-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-servicenowconnectorservice-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "reportRoot resource type"
 description: "The resource that represents an instance of History Reports."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,10 +20,10 @@ The resource that represents an instance of History Reports.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get reportRoot](../api/intune-deviceconfig-reportroot-get.md)|[reportRoot](../resources/intune-deviceconfig-reportroot.md)|Read properties and relationships of the [reportRoot](../resources/intune-deviceconfig-reportroot.md) object.|
-|[Update reportRoot](../api/intune-deviceconfig-reportroot-update.md)|[reportRoot](../resources/intune-deviceconfig-reportroot.md)|Update the properties of a [reportRoot](../resources/intune-deviceconfig-reportroot.md) object.|
-|[deviceConfigurationUserActivity function](../api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity.md)|[report](../resources/intune-deviceconfig-report.md)|Metadata for the device configuration user activity report|
-|[deviceConfigurationDeviceActivity function](../api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity.md)|[report](../resources/intune-deviceconfig-report.md)|Metadata for the device configuration device activity report|
+|[Get reportRoot](../api/intune-deviceconfig-reportroot-get.md)|[reportRoot](../resources/intune-shared-reportroot.md)|Read properties and relationships of the [reportRoot](../resources/intune-shared-reportroot.md) object.|
+|[Update reportRoot](../api/intune-deviceconfig-reportroot-update.md)|[reportRoot](../resources/intune-shared-reportroot.md)|Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.|
+|[deviceConfigurationUserActivity function](../api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity.md)|[report](../resources/intune-shared-report.md)|Metadata for the device configuration user activity report|
+|[deviceConfigurationDeviceActivity function](../api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity.md)|[report](../resources/intune-shared-report.md)|Metadata for the device configuration device activity report|
 
 ## Properties
 |Property|Type|Description|

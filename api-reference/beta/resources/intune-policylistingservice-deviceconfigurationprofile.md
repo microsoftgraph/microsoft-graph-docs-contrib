@@ -3,7 +3,7 @@ title: "deviceConfigurationProfile resource type"
 description: "The listing service profile entity contains the meta data of an Intune configuration profile "
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get mobileAppContentFile"
 description: "Read properties and relationships of the mobileAppContentFile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

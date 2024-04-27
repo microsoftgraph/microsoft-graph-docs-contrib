@@ -3,7 +3,7 @@ title: "Create groupPolicyPresentationComboBox"
 description: "Create a new groupPolicyPresentationComboBox object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

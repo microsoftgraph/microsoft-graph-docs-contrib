@@ -3,7 +3,7 @@ title: "macOSExtensionsConfiguration resource type"
 description: "MacOS extensions configuration profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

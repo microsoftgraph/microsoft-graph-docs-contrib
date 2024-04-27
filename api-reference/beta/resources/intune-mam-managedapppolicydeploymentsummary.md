@@ -3,7 +3,7 @@ title: "managedAppPolicyDeploymentSummary resource type"
 description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

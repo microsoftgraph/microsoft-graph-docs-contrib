@@ -3,7 +3,7 @@ title: "Get windowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the windowsAutopilotDeploymentProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) object.
+Read properties and relationships of the [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -52,7 +52,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) object in the response body.
 
 ## Example
 
@@ -67,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1475
+Content-Length: 1907
 
 {
   "value": {
@@ -76,6 +76,7 @@ Content-Length: 1475
     "displayName": "Display Name value",
     "description": "Description value",
     "language": "Language value",
+    "locale": "Locale value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "outOfBoxExperienceSettings": {
@@ -86,6 +87,15 @@ Content-Length: 1475
       "deviceUsageType": "shared",
       "skipKeyboardSelectionPage": true,
       "hideEscapeLink": true
+    },
+    "outOfBoxExperienceSetting": {
+      "@odata.type": "microsoft.graph.outOfBoxExperienceSetting",
+      "privacySettingsHidden": true,
+      "eulaHidden": true,
+      "userType": "standard",
+      "deviceUsageType": "shared",
+      "keyboardSelectionPageSkipped": true,
+      "escapeLinkHidden": true
     },
     "enrollmentStatusScreenSettings": {
       "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -98,9 +108,11 @@ Content-Length: 1475
       "allowDeviceUseOnInstallFailure": true
     },
     "extractHardwareHash": true,
+    "hardwareHashExtractionEnabled": true,
     "deviceNameTemplate": "Device Name Template value",
     "deviceType": "surfaceHub2",
     "enableWhiteGlove": true,
+    "preprovisioningAllowed": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],

@@ -3,7 +3,7 @@ title: "Create windows81CompliancePolicy"
 description: "Create a new windows81CompliancePolicy object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

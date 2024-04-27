@@ -3,7 +3,7 @@ title: "Manage resource access certificates in Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that manage resource access certificates for a tenant organization."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 ---
 
 # Manage resource access certificates in Intune
