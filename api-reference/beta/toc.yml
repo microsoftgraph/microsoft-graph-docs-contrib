@@ -10800,7 +10800,7 @@ items:
               - name: Get delta
                 href: api/educationassignment-delta.md
               - name: Attach grading category to assignment
-                href: api/educationassignment-post-gradingcategories.md
+                href: api/educationassignment-post-gradingcategory.md
               - name: Remove grading category from assignment
                 href: api/educationassignment-delete-gradingcategory.md
               - name: Activate assignment
