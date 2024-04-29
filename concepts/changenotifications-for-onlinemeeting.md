@@ -25,7 +25,7 @@ This resource supports notifications with resource data. For more information ab
 
 ## Subscribe to online meeting call events
 
-To get change notifications for the call events for a meeting, subscribe to `/communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents`, where the `joinWebUrl` is the URL encoded value of the meeting join URL.
+To get change notifications for the call events for a meeting, subscribe to `/communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents`, where the `joinWebUrl` is the URL-encoded value of the meeting join URL.
 
 For example, the `joinWebUrl` in the following URL must be acquired for an online meeting. 
 
