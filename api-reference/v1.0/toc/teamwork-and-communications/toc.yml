@@ -77,24 +77,38 @@ items:
   items:
   - name: Overview
     href: ../../resources/communications-api-overview.md
-  - name: Presence
+  - name: Call records
     items:
-    - name: Presence
-      href: ../../resources/presence.md
-    - name: Get presence
-      href: ../../api/presence-get.md
-    - name: Get presence of multiple users
-      href: ../../api/cloudcommunications-getpresencesbyuserid.md
-    - name: Set presence
-      href: ../../api/presence-setpresence.md
-    - name: Clear presence
-      href: ../../api/presence-clearpresence.md
-    - name: Set user preferred presence
-      href: ../../api/presence-setuserpreferredpresence.md
-    - name: Clear user preferred presence
-      href: ../../api/presence-clearuserpreferredpresence.md
-    - name: Set user status message
-      href: ../../api/presence-setstatusmessage.md
+    - name: Overview
+      href: ../../resources/callrecords-api-overview.md
+    - name: Call record
+      items:
+      - name: Call record
+        href: ../../resources/callrecords-callrecord.md
+      - name: Get callRecord
+        href: ../../api/callrecords-callrecord-get.md
+      - name: getPstnCalls
+        href: ../../api/callrecords-callrecord-getpstncalls.md
+      - name: getDirectRoutingCalls
+        href: ../../api/callrecords-callrecord-getdirectroutingcalls.md
+    - name: Direct routing log row
+      items:
+      - name: Direct routing log row
+        href: ../../resources/callrecords-directroutinglogrow.md
+      - name: getDirectRoutingCalls
+        href: ../../api/callrecords-callrecord-getdirectroutingcalls.md
+    - name: PSTN call log row
+      items:
+      - name: PSTN call log row
+        href: ../../resources/callrecords-pstncalllogrow.md
+      - name: getPstnCalls
+        href: ../../api/callrecords-callrecord-getpstncalls.md
+    - name: Session
+      items:
+      - name: Session
+        href: ../../resources/callrecords-session.md
+      - name: List sessions
+        href: ../../api/callrecords-callrecord-list-sessions.md
   - name: Calls
     items:
     - name: Call
@@ -203,38 +217,6 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get addLargeGalleryViewOperation
         href: ../../api/addlargegalleryviewoperation-get.md
-  - name: Call records
-    items:
-    - name: Overview
-      href: ../../resources/callrecords-api-overview.md
-    - name: Call record
-      items:
-      - name: Call record
-        href: ../../resources/callrecords-callrecord.md
-      - name: Get callRecord
-        href: ../../api/callrecords-callrecord-get.md
-      - name: getPstnCalls
-        href: ../../api/callrecords-callrecord-getpstncalls.md
-      - name: getDirectRoutingCalls
-        href: ../../api/callrecords-callrecord-getdirectroutingcalls.md
-    - name: Direct routing log row
-      items:
-      - name: Direct routing log row
-        href: ../../resources/callrecords-directroutinglogrow.md
-      - name: getDirectRoutingCalls
-        href: ../../api/callrecords-callrecord-getdirectroutingcalls.md
-    - name: PSTN call log row
-      items:
-      - name: PSTN call log row
-        href: ../../resources/callrecords-pstncalllogrow.md
-      - name: getPstnCalls
-        href: ../../api/callrecords-callrecord-getpstncalls.md
-    - name: Session
-      items:
-      - name: Session
-        href: ../../resources/callrecords-session.md
-      - name: List sessions
-        href: ../../api/callrecords-callrecord-list-sessions.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -293,6 +275,24 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentremindersms.md
       - name: Send virtual appointment SMS
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
+  - name: Presence
+    items:
+    - name: Presence
+      href: ../../resources/presence.md
+    - name: Get presence
+      href: ../../api/presence-get.md
+    - name: Get presence of multiple users
+      href: ../../api/cloudcommunications-getpresencesbyuserid.md
+    - name: Set presence
+      href: ../../api/presence-setpresence.md
+    - name: Clear presence
+      href: ../../api/presence-clearpresence.md
+    - name: Set user preferred presence
+      href: ../../api/presence-setuserpreferredpresence.md
+    - name: Clear user preferred presence
+      href: ../../api/presence-clearuserpreferredpresence.md
+    - name: Set user status message
+      href: ../../api/presence-setstatusmessage.md
   - name: Virtual events
     items:
     - name: Virtual event webinar
@@ -598,6 +598,14 @@ items:
       href: ../../api/chat-post-pinnedmessages.md
     - name: Unpin message
       href: ../../api/chat-delete-pinnedmessages.md
+  - name: Deleted chat
+    items:
+    - name: Deleted chat
+      href: ../../resources/deletedchat.md
+    - name: Get deletedChat
+      href: ../../api/deletedchat-get.md
+    - name: undoDelete deletedChat
+      href: ../../api/deletedchat-undodelete.md
   - name: Team
     items:
     - name: Team
@@ -660,14 +668,6 @@ items:
       href: ../../api/team-delete-installedapps.md
     - name: List permission grants
       href: ../../api/team-list-permissiongrants.md
-  - name: Deleted team
-    items:
-    - name: Deleted team
-      href: ../../resources/deletedteam.md
-    - name: getAllMessages
-      href: ../../api/deletedteam-getallmessages.md
-    - name: List deletedTeams
-      href: ../../api/teamwork-list-deletedteams.md
   - name: Teamwork tag
     items:
     - name: Teamwork tag
@@ -704,6 +704,34 @@ items:
       href: ../../api/userteamwork-sendactivitynotification.md
     - name: Send notification to multiple users in bulk
       href: ../../api/teamwork-sendactivitynotificationtorecipients.md
+- name: Settings
+  items:
+  - name: License details
+    items:
+    - name: License details
+      href: ../../resources/licensedetails.md
+    - name: List licenseDetails
+      href: ../../api/user-list-licensedetails.md
+    - name: getTeamsLicensingDetails
+      href: ../../api/licensedetails-getteamslicensingdetails.md
+  - name: Organization settings
+    items:
+    - name: Teamwork
+      items:
+      - name: Teamwork
+        href: ../../resources/teamwork.md
+      - name: List deletedTeams
+        href: ../../api/teamwork-list-deletedteams.md
+      - name: Get teamwork
+        href: ../../api/teamwork-get.md
+  - name: User settings
+    items:
+    - name: User teamwork
+      items:
+      - name: User teamwork
+        href: ../../resources/userteamwork.md
+      - name: Get userTeamwork
+        href: ../../api/userteamwork-get.md
 - name: Shift management
   items:
   - name: Offer shift request

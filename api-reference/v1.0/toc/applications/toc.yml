@@ -53,34 +53,94 @@ items:
       href: ../../api/application-setverifiedpublisher.md
     - name: Unset verified publisher
       href: ../../api/application-unsetverifiedpublisher.md
-- name: Application template
-  items:
   - name: Application template
-    href: ../../resources/applicationtemplate.md
-  - name: List applicationTemplate
-    href: ../../api/applicationtemplate-list.md
-  - name: Get applicationTemplate
-    href: ../../api/applicationtemplate-get.md
-  - name: Instantiate applicationTemplate
-    href: ../../api/applicationtemplate-instantiate.md
-- name: Federated identity credential
-  items:
-  - name: Overview
-    href: ../../resources/federatedidentitycredentials-overview.md
+    items:
+    - name: Application template
+      href: ../../resources/applicationtemplate.md
+    - name: List applicationTemplate
+      href: ../../api/applicationtemplate-list.md
+    - name: Get applicationTemplate
+      href: ../../api/applicationtemplate-get.md
+    - name: Instantiate applicationTemplate
+      href: ../../api/applicationtemplate-instantiate.md
+  - name: Directory extension
+    items:
+    - name: Directory extension
+      href: ../../resources/extensionproperty.md
+    - name: Create extensionProperties
+      href: ../../api/application-post-extensionproperty.md
+    - name: List extensionProperties
+      href: ../../api/application-list-extensionproperty.md
+    - name: Get extensionProperty
+      href: ../../api/extensionproperty-get.md
+    - name: Delete extensionProperty
+      href: ../../api/extensionproperty-delete.md
+    - name: Get available extensions
+      href: ../../api/directoryobject-getavailableextensionproperties.md
   - name: Federated identity credential
-    href: ../../resources/federatedidentitycredential.md
-  - name: List federatedIdentityCredentials
-    href: ../../api/application-list-federatedidentitycredentials.md
-  - name: Create federatedIdentityCredential
-    href: ../../api/application-post-federatedidentitycredentials.md
-  - name: Get federatedIdentityCredential
-    href: ../../api/federatedidentitycredential-get.md
-  - name: Update federatedIdentityCredential
-    href: ../../api/federatedidentitycredential-update.md
-  - name: Upsert federatedIdentityCredential
-    href: ../../api/federatedidentitycredential-upsert.md
-  - name: Delete federatedIdentityCredential
-    href: ../../api/federatedidentitycredential-delete.md
+    items:
+    - name: Overview
+      href: ../../resources/federatedidentitycredentials-overview.md
+    - name: Federated identity credential
+      href: ../../resources/federatedidentitycredential.md
+    - name: List federatedIdentityCredentials
+      href: ../../api/application-list-federatedidentitycredentials.md
+    - name: Create federatedIdentityCredential
+      href: ../../api/application-post-federatedidentitycredentials.md
+    - name: Get federatedIdentityCredential
+      href: ../../api/federatedidentitycredential-get.md
+    - name: Update federatedIdentityCredential
+      href: ../../api/federatedidentitycredential-update.md
+    - name: Upsert federatedIdentityCredential
+      href: ../../api/federatedidentitycredential-upsert.md
+    - name: Delete federatedIdentityCredential
+      href: ../../api/federatedidentitycredential-delete.md
+  - name: Policies
+    items:
+    - name: Remote desktop security configuration
+      items:
+      - name: Remote desktop security configuration
+        href: ../../resources/remotedesktopsecurityconfiguration.md
+      - name: Create remoteDesktopSecurityConfiguration
+        href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+      - name: Get remoteDesktopSecurityConfiguration
+        href: ../../api/remotedesktopsecurityconfiguration-get.md
+      - name: Update remoteDesktopSecurityConfiguration
+        href: ../../api/remotedesktopsecurityconfiguration-update.md
+      - name: Delete remoteDesktopSecurityConfiguration
+        href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+    - name: Token issuance policy
+      items:
+      - name: Token issuance policy
+        href: ../../resources/tokenissuancepolicy.md
+      - name: List tokenIssuancePolicy
+        href: ../../api/tokenissuancepolicy-list.md
+      - name: Create tokenIssuancePolicy
+        href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
+      - name: Get tokenIssuancePolicy
+        href: ../../api/tokenissuancepolicy-get.md
+      - name: Update tokenIssuancePolicy
+        href: ../../api/tokenissuancepolicy-update.md
+      - name: Delete tokenIssuancePolicy
+        href: ../../api/tokenissuancepolicy-delete.md
+      - name: List appliesTo
+        href: ../../api/tokenissuancepolicy-list-appliesto.md
+    - name: Token lifetime policy
+      items:
+      - name: Token lifetime policy
+        href: ../../resources/tokenlifetimepolicy.md
+      - name: List tokenLifetimePolicies
+        href: ../../api/tokenlifetimepolicy-list.md
+      - name: Create tokenLifetimePolicy
+        href: ../../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+      - name: Get tokenLifetimePolicy
+        href: ../../api/tokenlifetimepolicy-get.md
+      - name: Update tokenLifetimePolicy
+        href: ../../api/tokenlifetimepolicy-update.md
+      - name: Delete tokenLifetimePolicy
+        href: ../../api/tokenlifetimepolicy-delete.md
+      - name: List appliesTo
+        href: ../../api/tokenlifetimepolicy-list-appliesto.md
 - name: Service principal
   items:
   - name: Service principal
@@ -203,80 +263,6 @@ items:
       href: ../../api/serviceprincipal-list-tokenlifetimepolicies.md
     - name: Remove tokenLifetimePolicy
       href: ../../api/serviceprincipal-delete-tokenlifetimepolicies.md
-- name: Policies
-  items:
-  - name: Remote desktop security configuration
-    items:
-    - name: Remote desktop security configuration
-      href: ../../resources/remotedesktopsecurityconfiguration.md
-    - name: Create remoteDesktopSecurityConfiguration
-      href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-    - name: Get remoteDesktopSecurityConfiguration
-      href: ../../api/remotedesktopsecurityconfiguration-get.md
-    - name: Update remoteDesktopSecurityConfiguration
-      href: ../../api/remotedesktopsecurityconfiguration-update.md
-    - name: Delete remoteDesktopSecurityConfiguration
-      href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-  - name: Token issuance policy
-    items:
-    - name: Token issuance policy
-      href: ../../resources/tokenissuancepolicy.md
-    - name: List tokenIssuancePolicy
-      href: ../../api/tokenissuancepolicy-list.md
-    - name: Create tokenIssuancePolicy
-      href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
-    - name: Get tokenIssuancePolicy
-      href: ../../api/tokenissuancepolicy-get.md
-    - name: Update tokenIssuancePolicy
-      href: ../../api/tokenissuancepolicy-update.md
-    - name: Delete tokenIssuancePolicy
-      href: ../../api/tokenissuancepolicy-delete.md
-    - name: List appliesTo
-      href: ../../api/tokenissuancepolicy-list-appliesto.md
-  - name: Token lifetime policy
-    items:
-    - name: Token lifetime policy
-      href: ../../resources/tokenlifetimepolicy.md
-    - name: List tokenLifetimePolicies
-      href: ../../api/tokenlifetimepolicy-list.md
-    - name: Create tokenLifetimePolicy
-      href: ../../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-    - name: Get tokenLifetimePolicy
-      href: ../../api/tokenlifetimepolicy-get.md
-    - name: Update tokenLifetimePolicy
-      href: ../../api/tokenlifetimepolicy-update.md
-    - name: Delete tokenLifetimePolicy
-      href: ../../api/tokenlifetimepolicy-delete.md
-    - name: List appliesTo
-      href: ../../api/tokenlifetimepolicy-list-appliesto.md
-  - name: Application authentication method policy
-    items:
-    - name: Tenant app management policy
-      items:
-      - name: Tenant app management policy
-        href: ../../resources/tenantAppManagementPolicy.md
-      - name: Get
-        href: ../../api/tenantAppManagementPolicy-get.md
-      - name: Update
-        href: ../../api/tenantAppManagementPolicy-update.md
-    - name: App management policy
-      items:
-      - name: App management policy
-        href: ../../resources/appmanagementpolicy.md
-      - name: List
-        href: ../../api/appmanagementpolicy-list.md
-      - name: Create
-        href: ../../api/appmanagementpolicy-post.md
-      - name: Get
-        href: ../../api/appmanagementpolicy-get.md
-      - name: Update
-        href: ../../api/appmanagementpolicy-update.md
-      - name: Delete
-        href: ../../api/appmanagementpolicy-delete.md
-      - name: List appliesTo
-        href: ../../api/appmanagementpolicy-list-appliesto.md
-      - name: Assign appliesTo
-        href: ../../api/appmanagementpolicy-post-appliesto.md
 - name: Synchronization
   items:
   - name: Overview
@@ -289,16 +275,6 @@ items:
       href: ../../api/synchronization-synchronization-acquireaccesstoken.md
     - name: Add secrets
       href: ../../api/synchronization-serviceprincipal-put-synchronization.md
-  - name: Synchronization template
-    items:
-    - name: Synchronization template
-      href: ../../resources/synchronization-synchronizationtemplate.md
-    - name: List
-      href: ../../api/synchronization-synchronization-list-templates.md
-    - name: Get
-      href: ../../api/synchronization-synchronizationtemplate-get.md
-    - name: Update
-      href: ../../api/synchronization-synchronizationtemplate-update.md
   - name: Synchronization job
     items:
     - name: Synchronization job
@@ -347,3 +323,13 @@ items:
       href: ../../api/synchronization-synchronizationschema-functions.md
     - name: Parse attribute mapping expression
       href: ../../api/synchronization-synchronizationschema-parseexpression.md
+  - name: Synchronization template
+    items:
+    - name: Synchronization template
+      href: ../../resources/synchronization-synchronizationtemplate.md
+    - name: List
+      href: ../../api/synchronization-synchronization-list-templates.md
+    - name: Get
+      href: ../../api/synchronization-synchronizationtemplate-get.md
+    - name: Update
+      href: ../../api/synchronization-synchronizationtemplate-update.md

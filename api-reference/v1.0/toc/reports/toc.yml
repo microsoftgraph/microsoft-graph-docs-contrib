@@ -3,6 +3,14 @@ items:
   items:
   - name: Microsoft Entra activity reports
     items:
+    - name: AD FS application activity
+      items:
+      - name: Relying party detailed summary
+        items:
+        - name: Relying party detailed summary
+          href: ../../resources/relyingpartydetailedsummary.md
+        - name: List relyingPartyDetailedSummary
+          href: ../../api/reportroot-getrelyingpartydetailedsummary.md
     - name: Registration and usage
       items:
       - name: Overview
@@ -281,6 +289,12 @@ items:
   items:
   - name: Overview
     href: ../../resources/partners-billing-api-overview.md
+  - name: Billed reconciliation
+    items:
+    - name: Billed reconciliation
+      href: ../../resources/partners-billing-billedreconciliation.md
+    - name: export
+      href: ../../api/partners-billing-billedreconciliation-export.md
   - name: Billed usage
     items:
     - name: Billed usage

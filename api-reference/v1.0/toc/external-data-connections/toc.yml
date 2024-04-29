@@ -1,12 +1,6 @@
 items:
 - name: Overview
   href: ../../resources/connectors-api-overview.md
-- name: Connection operation
-  items:
-  - name: Connection operation
-    href: ../../resources/externalconnectors-connectionoperation.md
-  - name: Get connectionOperation
-    href: ../../api/externalconnectors-connectionoperation-get.md
 - name: External connection
   items:
   - name: External connection
@@ -37,6 +31,14 @@ items:
     href: ../../api/externalconnectors-externalgroup-update.md
   - name: Delete externalGroup
     href: ../../api/externalconnectors-externalgroup-delete.md
+- name: Identity
+  items:
+  - name: Identity
+    href: ../../resources/externalconnectors-identity.md
+  - name: Create identity
+    href: ../../api/externalconnectors-externalgroup-post-members.md
+  - name: Delete identity
+    href: ../../api/externalconnectors-externalgroupmember-delete.md
 - name: External item
   items:
   - name: External item
@@ -51,14 +53,6 @@ items:
     href: ../../api/externalconnectors-externalitem-delete.md
   - name: Add activities
     href: ../../api/externalconnectors-externalitem-addactivities.md
-- name: Identity
-  items:
-  - name: Identity
-    href: ../../resources/externalconnectors-identity.md
-  - name: Create identity
-    href: ../../api/externalconnectors-externalgroup-post-members.md
-  - name: Delete identity
-    href: ../../api/externalconnectors-externalgroupmember-delete.md
 - name: Schema
   items:
   - name: Schema
@@ -67,6 +61,12 @@ items:
     href: ../../api/externalconnectors-externalconnection-patch-schema.md
   - name: Get schema
     href: ../../api/externalconnectors-schema-get.md
+- name: Connection operation
+  items:
+  - name: Connection operation
+    href: ../../resources/externalconnectors-connectionoperation.md
+  - name: Get connectionOperation
+    href: ../../api/externalconnectors-connectionoperation-get.md
 - name: Complex types
   items:
   - name: Acl

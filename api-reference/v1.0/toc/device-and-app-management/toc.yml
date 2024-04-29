@@ -60,6 +60,108 @@ items:
       href: ../../resources/identity.md
     - name: Identity set
       href: ../../resources/identityset.md
+- name: Cloud PC
+  items:
+  - name: Overview
+    href: ../../resources/cloudpc-api-overview.md
+  - name: Cloud PC
+    items:
+    - name: Cloud PC
+      href: ../../resources/cloudpc.md
+    - name: List cloudPCs
+      href: ../../api/virtualendpoint-list-cloudpcs.md
+    - name: Get cloudPC
+      href: ../../api/cloudpc-get.md
+    - name: End grace period
+      href: ../../api/cloudpc-endgraceperiod.md
+    - name: Reboot
+      href: ../../api/cloudpc-reboot.md
+    - name: Rename
+      href: ../../api/cloudpc-rename.md
+    - name: Troubleshoot
+      href: ../../api/cloudpc-troubleshoot.md
+    - name: Restore
+      href: ../../api/cloudpc-restore.md
+  - name: Cloud PC audit event
+    items:
+    - name: Cloud PC audit event
+      href: ../../resources/cloudpcauditevent.md
+    - name: List auditEvents
+      href: ../../api/virtualendpoint-list-auditevents.md
+    - name: Get cloudPcAuditEvent
+      href: ../../api/cloudpcauditevent-get.md
+    - name: getAuditActivityTypes function
+      href: ../../api/cloudpcauditevent-getauditactivitytypes.md
+  - name: Cloud PC Azure network connection
+    items:
+    - name: Cloud PC Azure network connection
+      href: ../../resources/cloudpconpremisesconnection.md
+    - name: List onPremisesConnections
+      href: ../../api/virtualendpoint-list-onpremisesconnections.md
+    - name: Get cloudPcOnPremisesConnection
+      href: ../../api/cloudpconpremisesconnection-get.md
+    - name: Create cloudPcOnPremisesConnection
+      href: ../../api/virtualendpoint-post-onpremisesconnections.md
+    - name: Update cloudPcOnPremisesConnection
+      href: ../../api/cloudpconpremisesconnection-update.md
+    - name: Delete cloudPcOnPremisesConnection
+      href: ../../api/cloudpconpremisesconnection-delete.md
+    - name: RunHealthChecks of a cloudPcOnPremisesConnection
+      href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
+  - name: Cloud PC device image
+    items:
+    - name: Cloud PC device image
+      href: ../../resources/cloudpcdeviceimage.md
+    - name: List deviceImages
+      href: ../../api/virtualendpoint-list-deviceimages.md
+    - name: Get cloudPcDeviceImage
+      href: ../../api/cloudpcdeviceimage-get.md
+    - name: Create cloudPcDeviceImage
+      href: ../../api/virtualendpoint-post-deviceimages.md
+    - name: Delete cloudPcDeviceImage
+      href: ../../api/cloudpcdeviceimage-delete.md
+    - name: getSourceImages
+      href: ../../api/cloudpcdeviceimage-getsourceimages.md
+  - name: Cloud PC gallery image
+    items:
+    - name: Cloud PC gallery image
+      href: ../../resources/cloudpcgalleryimage.md
+    - name: List galleryImages
+      href: ../../api/virtualendpoint-list-galleryimages.md
+    - name: Get cloudPcGalleryImage
+      href: ../../api/cloudpcgalleryimage-get.md
+  - name: Cloud PC provisioning policy
+    items:
+    - name: Cloud PC provisioning policy
+      href: ../../resources/cloudpcprovisioningpolicy.md
+    - name: List provisioningPolicies
+      href: ../../api/virtualendpoint-list-provisioningpolicies.md
+    - name: Create cloudPcProvisioningPolicy
+      href: ../../api/virtualendpoint-post-provisioningpolicies.md
+    - name: Get cloudPcProvisioningPolicy
+      href: ../../api/cloudpcprovisioningpolicy-get.md
+    - name: Update cloudPcProvisioningPolicy
+      href: ../../api/cloudpcprovisioningpolicy-update.md
+    - name: Delete cloudPcProvisioningPolicy
+      href: ../../api/cloudpcprovisioningpolicy-delete.md
+    - name: Assign
+      href: ../../api/cloudpcprovisioningpolicy-assign.md
+  - name: Cloud PC user setting
+    items:
+    - name: Cloud PC user setting
+      href: ../../resources/cloudpcusersetting.md
+    - name: List userSettings
+      href: ../../api/virtualendpoint-list-usersettings.md
+    - name: Create cloudPcUserSetting
+      href: ../../api/virtualendpoint-post-usersettings.md
+    - name: Get cloudPcUserSetting
+      href: ../../api/cloudpcusersetting-get.md
+    - name: Update cloudPcUserSetting
+      href: ../../api/cloudpcusersetting-update.md
+    - name: Delete cloudPcUserSetting
+      href: ../../api/cloudpcusersetting-delete.md
+    - name: Assign
+      href: ../../api/cloudpcusersetting-assign.md
 - name: Cloud printing
   displayName: Universal Print
   items:
@@ -2748,9 +2850,9 @@ items:
         href: ../../api/virtualendpoint-list-galleryimages.md
       - name: Get cloudPcGalleryImage
         href: ../../api/cloudpcgalleryimage-get.md
-    - name: Cloud PC on-premises connection
+    - name: Cloud PC Azure network connection
       items:
-      - name: Cloud PC on-premises connection
+      - name: Cloud PC Azure network connection
         href: ../../resources/cloudpconpremisesconnection.md
       - name: List onPremisesConnections
         href: ../../api/virtualendpoint-list-onpremisesconnections.md
@@ -2930,6 +3032,190 @@ items:
         href: ../../resources/intune-mam-windowsinformationprotectionresourcecollection.md
       - name: Windows information protection store app
         href: ../../resources/intune-mam-windowsinformationprotectionstoreapp.md
+  - name: Onboarding
+    items:
+    - name: Overview
+      href: ../../resources/intune-onboarding-conceptual.md
+    - name: Compliance management partner
+      items:
+      - name: Compliance management partner
+        href: ../../resources/intune-onboarding-compliancemanagementpartner.md
+      - name: List complianceManagementPartners
+        href: ../../api/intune-onboarding-compliancemanagementpartner-list.md
+      - name: Get complianceManagementPartner
+        href: ../../api/intune-onboarding-compliancemanagementpartner-get.md
+      - name: Create complianceManagementPartner
+        href: ../../api/intune-onboarding-compliancemanagementpartner-create.md
+      - name: Delete complianceManagementPartner
+        href: ../../api/intune-onboarding-compliancemanagementpartner-delete.md
+      - name: Update complianceManagementPartner
+        href: ../../api/intune-onboarding-compliancemanagementpartner-update.md
+    - name: Device enrollment configuration
+      items:
+      - name: Device enrollment configuration
+        href: ../../resources/intune-onboarding-deviceenrollmentconfiguration.md
+      - name: List deviceEnrollmentConfigurations
+        href: ../../api/intune-onboarding-deviceenrollmentconfiguration-list.md
+      - name: Get deviceEnrollmentConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentconfiguration-get.md
+      - name: setPriority action
+        href: ../../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md
+      - name: assign action
+        href: ../../api/intune-onboarding-deviceenrollmentconfiguration-assign.md
+    - name: Device enrollment limit configuration
+      items:
+      - name: Device enrollment limit configuration
+        href: ../../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
+      - name: List deviceEnrollmentLimitConfigurations
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md
+      - name: Get deviceEnrollmentLimitConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
+      - name: Create deviceEnrollmentLimitConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-create.md
+      - name: Delete deviceEnrollmentLimitConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-delete.md
+      - name: Update deviceEnrollmentLimitConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentlimitconfiguration-update.md
+    - name: Device enrollment platform restrictions configuration
+      items:
+      - name: Device enrollment platform restrictions configuration
+        href: ../../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md
+      - name: List deviceEnrollmentPlatformRestrictionsConfigurations
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md
+      - name: Get deviceEnrollmentPlatformRestrictionsConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
+      - name: Create deviceEnrollmentPlatformRestrictionsConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create.md
+      - name: Delete deviceEnrollmentPlatformRestrictionsConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-delete.md
+      - name: Update deviceEnrollmentPlatformRestrictionsConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-update.md
+    - name: Device enrollment Windows Hello for Business configuration
+      items:
+      - name: Device enrollment Windows Hello for Business configuration
+        href: ../../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md
+      - name: List deviceEnrollmentWindowsHelloForBusinessConfigurations
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-list.md
+      - name: Get deviceEnrollmentWindowsHelloForBusinessConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get.md
+      - name: Create deviceEnrollmentWindowsHelloForBusinessConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create.md
+      - name: Delete deviceEnrollmentWindowsHelloForBusinessConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-delete.md
+      - name: Update deviceEnrollmentWindowsHelloForBusinessConfiguration
+        href: ../../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-update.md
+    - name: Device management Exchange connector
+      items:
+      - name: Device management Exchange connector
+        href: ../../resources/intune-onboarding-devicemanagementexchangeconnector.md
+      - name: List deviceManagementExchangeConnectors
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-list.md
+      - name: Get deviceManagementExchangeConnector
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-get.md
+      - name: Create deviceManagementExchangeConnector
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-create.md
+      - name: Delete deviceManagementExchangeConnector
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-delete.md
+      - name: Update deviceManagementExchangeConnector
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-update.md
+      - name: sync action
+        href: ../../api/intune-onboarding-devicemanagementexchangeconnector-sync.md
+    - name: Device management partner
+      items:
+      - name: Device management partner
+        href: ../../resources/intune-onboarding-devicemanagementpartner.md
+      - name: List deviceManagementPartners
+        href: ../../api/intune-onboarding-devicemanagementpartner-list.md
+      - name: Get deviceManagementPartner
+        href: ../../api/intune-onboarding-devicemanagementpartner-get.md
+      - name: Create deviceManagementPartner
+        href: ../../api/intune-onboarding-devicemanagementpartner-create.md
+      - name: Delete deviceManagementPartner
+        href: ../../api/intune-onboarding-devicemanagementpartner-delete.md
+      - name: Update deviceManagementPartner
+        href: ../../api/intune-onboarding-devicemanagementpartner-update.md
+      - name: terminate action
+        href: ../../api/intune-onboarding-devicemanagementpartner-terminate.md
+    - name: Enrollment configuration assignment
+      items:
+      - name: Enrollment configuration assignment
+        href: ../../resources/intune-onboarding-enrollmentconfigurationassignment.md
+      - name: List enrollmentConfigurationAssignments
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-list.md
+      - name: Get enrollmentConfigurationAssignment
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-get.md
+      - name: Create enrollmentConfigurationAssignment
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-create.md
+      - name: Delete enrollmentConfigurationAssignment
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-delete.md
+      - name: Update enrollmentConfigurationAssignment
+        href: ../../api/intune-onboarding-enrollmentconfigurationassignment-update.md
+    - name: Mobile threat defense connector
+      items:
+      - name: Mobile threat defense connector
+        href: ../../resources/intune-onboarding-mobilethreatdefenseconnector.md
+      - name: List mobileThreatDefenseConnectors
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-list.md
+      - name: Get mobileThreatDefenseConnector
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-get.md
+      - name: Create mobileThreatDefenseConnector
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-create.md
+      - name: Delete mobileThreatDefenseConnector
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-delete.md
+      - name: Update mobileThreatDefenseConnector
+        href: ../../api/intune-onboarding-mobilethreatdefenseconnector-update.md
+    - name: On-premises conditional access settings
+      items:
+      - name: On-premises conditional access settings
+        href: ../../resources/intune-onboarding-onpremisesconditionalaccesssettings.md
+      - name: Get onPremisesConditionalAccessSettings
+        href: ../../api/intune-onboarding-onpremisesconditionalaccesssettings-get.md
+      - name: Update onPremisesConditionalAccessSettings
+        href: ../../api/intune-onboarding-onpremisesconditionalaccesssettings-update.md
+    - name: VPP token
+      items:
+      - name: VPP token
+        href: ../../resources/intune-onboarding-vpptoken.md
+      - name: List vppTokens
+        href: ../../api/intune-onboarding-vpptoken-list.md
+      - name: Get vppToken
+        href: ../../api/intune-onboarding-vpptoken-get.md
+      - name: Create vppToken
+        href: ../../api/intune-onboarding-vpptoken-create.md
+      - name: Delete vppToken
+        href: ../../api/intune-onboarding-vpptoken-delete.md
+      - name: Update vppToken
+        href: ../../api/intune-onboarding-vpptoken-update.md
+      - name: syncLicenses action
+        href: ../../api/intune-onboarding-vpptoken-synclicenses.md
+    - name: Complex types
+      items:
+      - name: All devices assignment target
+        href: ../../resources/intune-shared-alldevicesassignmenttarget.md
+      - name: All licensed users assignment target
+        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
+      - name: Compliance management partner assignment
+        href: ../../resources/intune-onboarding-compliancemanagementpartnerassignment.md
+      - name: Configuration manager collection assignment target
+        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Device and app management assignment target
+        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
+      - name: Device and app management data
+        href: ../../resources/intune-onboarding-deviceandappmanagementdata.md
+      - name: Device enrollment platform restriction
+        href: ../../resources/intune-onboarding-deviceenrollmentplatformrestriction.md
+      - name: Device management partner assignment
+        href: ../../resources/intune-onboarding-devicemanagementpartnerassignment.md
+      - name: Exclusion group assignment target
+        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
+      - name: Group assignment target
+        href: ../../resources/intune-shared-groupassignmenttarget.md
+      - name: Intune brand
+        href: ../../resources/intune-onboarding-intunebrand.md
+      - name: Mime content
+        href: ../../resources/intune-shared-mimecontent.md
+      - name: Rgb color
+        href: ../../resources/intune-onboarding-rgbcolor.md
   - name: Role-based access control (RBAC)
     items:
     - name: Overview
@@ -3010,6 +3296,27 @@ items:
         href: ../../resources/intune-rbac-resourceaction.md
       - name: Role permission
         href: ../../resources/intune-rbac-rolepermission.md
+- name: Microsoft 365 apps
+  displayName: Microsoft 365 applications
+  items:
+  - name: Installation options
+    items:
+    - name: Installation options
+      href: ../../resources/m365appsinstallationoptions.md
+    - name: Get m365AppsInstallationOptions
+      href: ../../api/m365AppsInstallationOptions-get.md
+    - name: Update m365AppsInstallationOptions
+      href: ../../api/m365AppsInstallationOptions-update.md
+  - name: Complex types
+    items:
+    - name: Admin
+      href: ../../resources/admin.md
+    - name: Admin Microsoft 365 apps
+      href: ../../resources/adminmicrosoft365apps.md
+    - name: Apps installation options for mac
+      href: ../../resources/appsinstallationoptionsformac.md
+    - name: Apps installation options for windows
+      href: ../../resources/appsinstallationoptionsforwindows.md
 - name: Service health and communications
   items:
   - name: Overview

@@ -33,6 +33,14 @@ items:
       href: ../../api/administrativeunit-get-scopedrolemembers.md
     - name: Remove a scopedRoleMember
       href: ../../api/administrativeunit-delete-scopedrolemembers.md
+  - name: BitLocker recovery key
+    items:
+    - name: BitLocker recovery key
+      href: ../../resources/bitlockerrecoverykey.md
+    - name: List recoveryKeys
+      href: ../../api/bitlocker-list-recoverykeys.md
+    - name: Get bitlockerRecoveryKey
+      href: ../../api/bitlockerrecoverykey-get.md
   - name: Contract
     items:
     - name: Contract
@@ -41,6 +49,46 @@ items:
       href: ../../api/contract-get.md
     - name: List contracts
       href: ../../api/contract-list.md
+  - name: Custom security attributes
+    items:
+    - name: Overview
+      href: ../../resources/custom-security-attributes-overview.md
+    - name: Allowed value
+      items:
+      - name: Allowed value
+        href: ../../resources/allowedvalue.md
+      - name: List allowedValues
+        href: ../../api/customsecurityattributedefinition-list-allowedvalues.md
+      - name: Get allowedValue
+        href: ../../api/allowedvalue-get.md
+      - name: Create allowedValue
+        href: ../../api/customsecurityattributedefinition-post-allowedvalues.md
+      - name: Update allowedValue
+        href: ../../api/allowedvalue-update.md
+    - name: Attribute set
+      items:
+      - name: Attribute set
+        href: ../../resources/attributeset.md
+      - name: List attributeSets
+        href: ../../api/directory-list-attributesets.md
+      - name: Get attributeSet
+        href: ../../api/attributeset-get.md
+      - name: Create attributeSet
+        href: ../../api/directory-post-attributesets.md
+      - name: Update attributeSet
+        href: ../../api/attributeset-update.md
+    - name: Custom security attribute definition
+      items:
+      - name: Custom security attribute definition
+        href: ../../resources/customsecurityattributedefinition.md
+      - name: List customSecurityAttributeDefinitions
+        href: ../../api/directory-list-customsecurityattributedefinitions.md
+      - name: Get customSecurityAttributeDefinition
+        href: ../../api/customsecurityattributedefinition-get.md
+      - name: Create customSecurityAttributeDefinition
+        href: ../../api/directory-post-customsecurityattributedefinitions.md
+      - name: Update customSecurityAttributeDefinition
+        href: ../../api/customsecurityattributedefinition-update.md
   - name: Deleted item
     items:
     - name: Deleted item
@@ -91,6 +139,14 @@ items:
       items:
       - name: Add schema extension values
         href: ../../graph/extensibility-schema-groups
+  - name: Device local credential info
+    items:
+    - name: Device local credential info
+      href: ../../resources/devicelocalcredentialinfo.md
+    - name: List deviceLocationCredentialInfo
+      href: ../../api/directory-list-devicelocalcredentials.md
+    - name: Get deviceLocalCredentialInfo
+      href: ../../api/devicelocalcredentialinfo-get.md
   - name: Directory object
     items:
     - name: Directory object
@@ -169,6 +225,28 @@ items:
       href: ../../api/domain-verify.md
     - name: Promote domain
       href: ../../api/domain-promote.md
+  - name: Group setting
+    items:
+    - name: Group setting
+      href: ../../resources/groupsetting.md
+    - name: Create setting
+      href: ../../api/group-post-settings.md
+    - name: Get setting
+      href: ../../api/groupsetting-get.md
+    - name: List settings
+      href: ../../api/group-list-settings.md
+    - name: Update setting
+      href: ../../api/groupsetting-update.md
+    - name: Delete setting
+      href: ../../api/groupsetting-delete.md
+  - name: Group setting template
+    items:
+    - name: Group setting template
+      href: ../../resources/groupsettingtemplate.md
+    - name: Get groupSettingTemplate
+      href: ../../api/groupsettingtemplate-get.md
+    - name: List groupSettingTemplate
+      href: ../../api/groupsettingtemplate-list.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -177,16 +255,6 @@ items:
       href: ../../api/onpremisesdirectorysynchronization-get.md
     - name: Update onPremisesDirectorySynchronization
       href: ../../api/onpremisesdirectorysynchronization-update.md
-  - name: Organization
-    items:
-    - name: Organization
-      href: ../../resources/organization.md
-    - name: List organizations
-      href: ../../api/organization-list.md
-    - name: Get organization
-      href: ../../api/organization-get.md
-    - name: Update
-      href: ../../api/organization-update.md
   - name: Org contact
     items:
     - name: Org contact
@@ -213,78 +281,16 @@ items:
         href: ../../api/directoryobject-getmembergroups.md
       - name: getMemberObjects
         href: ../../api/directoryobject-getmemberobjects.md
-  - name: Subscribed SKU
+  - name: Organization
     items:
-    - name: Subscribed SKU
-      href: ../../resources/subscribedsku.md
-    - name: Get subscribedSku
-      href: ../../api/subscribedsku-get.md
-    - name: List subscribedsku
-      href: ../../api/subscribedsku-list.md
-  - name: Tenant information
-    items:
-    - name: Tenant information
-      href: ../../resources/tenantinformation.md
-    - name: Find tenant by domain name
-      href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
-    - name: Find tenant by tenant ID
-      href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
-  - name: BitLocker recovery key
-    items:
-    - name: BitLocker recovery key
-      href: ../../resources/bitlockerrecoverykey.md
-    - name: List recoveryKeys
-      href: ../../api/bitlocker-list-recoverykeys.md
-    - name: Get bitlockerRecoveryKey
-      href: ../../api/bitlockerrecoverykey-get.md
-  - name: Device local credential info
-    items:
-    - name: Device local credential info
-      href: ../../resources/devicelocalcredentialinfo.md
-    - name: List deviceLocationCredentialInfo
-      href: ../../api/directory-list-devicelocalcredentials.md
-    - name: Get deviceLocalCredentialInfo
-      href: ../../api/devicelocalcredentialinfo-get.md
-  - name: Custom security attributes
-    items:
-    - name: Overview
-      href: ../../resources/custom-security-attributes-overview.md
-    - name: Allowed value
-      items:
-      - name: Allowed value
-        href: ../../resources/allowedvalue.md
-      - name: List allowedValues
-        href: ../../api/customsecurityattributedefinition-list-allowedvalues.md
-      - name: Get allowedValue
-        href: ../../api/allowedvalue-get.md
-      - name: Create allowedValue
-        href: ../../api/customsecurityattributedefinition-post-allowedvalues.md
-      - name: Update allowedValue
-        href: ../../api/allowedvalue-update.md
-    - name: Attribute set
-      items:
-      - name: Attribute set
-        href: ../../resources/attributeset.md
-      - name: List attributeSets
-        href: ../../api/directory-list-attributesets.md
-      - name: Get attributeSet
-        href: ../../api/attributeset-get.md
-      - name: Create attributeSet
-        href: ../../api/directory-post-attributesets.md
-      - name: Update attributeSet
-        href: ../../api/attributeset-update.md
-    - name: Custom security attribute definition
-      items:
-      - name: Custom security attribute definition
-        href: ../../resources/customsecurityattributedefinition.md
-      - name: List customSecurityAttributeDefinitions
-        href: ../../api/directory-list-customsecurityattributedefinitions.md
-      - name: Get customSecurityAttributeDefinition
-        href: ../../api/customsecurityattributedefinition-get.md
-      - name: Create customSecurityAttributeDefinition
-        href: ../../api/directory-post-customsecurityattributedefinitions.md
-      - name: Update customSecurityAttributeDefinition
-        href: ../../api/customsecurityattributedefinition-update.md
+    - name: Organization
+      href: ../../resources/organization.md
+    - name: List organizations
+      href: ../../api/organization-list.md
+    - name: Get organization
+      href: ../../api/organization-get.md
+    - name: Update
+      href: ../../api/organization-update.md
   - name: Role management
     items:
     - name: Role management
@@ -315,6 +321,22 @@ items:
         href: ../../api/unifiedroleassignment-get.md
       - name: Delete unifiedRoleAssignment
         href: ../../api/unifiedroleassignment-delete.md
+  - name: Subscribed SKU
+    items:
+    - name: Subscribed SKU
+      href: ../../resources/subscribedsku.md
+    - name: Get subscribedSku
+      href: ../../api/subscribedsku-get.md
+    - name: List subscribedsku
+      href: ../../api/subscribedsku-list.md
+  - name: Tenant information
+    items:
+    - name: Tenant information
+      href: ../../resources/tenantinformation.md
+    - name: Find tenant by domain name
+      href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
+    - name: Find tenant by tenant ID
+      href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
   items:
@@ -1330,6 +1352,20 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
+  - name: Authentication event listener
+    items:
+    - name: Authentication event listener
+      href: ../../resources/authenticationeventlistener.md
+    - name: List authenticationEventListener objects
+      href: ../../api/identitycontainer-list-authenticationeventlisteners.md
+    - name: Create authenticationEventListener
+      href: ../../api/identitycontainer-post-authenticationeventlisteners.md
+    - name: Get authenticationEventListener
+      href: ../../api/authenticationeventlistener-get.md
+    - name: Update authenticationEventListener
+      href: ../../api/authenticationeventlistener-update.md
+    - name: Delete authenticationEventListener
+      href: ../../api/authenticationeventlistener-delete.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1614,6 +1650,24 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-update.md
       - name: Delete crossTenantIdentitySyncPolicyPartner
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
+  - name: Custom authentication extension
+    items:
+    - name: Custom authentication extension
+      href: ../../resources/customauthenticationextension.md
+    - name: List customAuthenticationExtensions
+      href: ../../api/identitycontainer-list-customauthenticationextensions.md
+    - name: Create customAuthenticationExtension
+      href: ../../api/identitycontainer-post-customauthenticationextensions.md
+    - name: Get customAuthenticationExtension
+      href: ../../api/customauthenticationextension-get.md
+    - name: Update customAuthenticationExtension
+      href: ../../api/customauthenticationextension-update.md
+    - name: Delete customAuthenticationExtension
+      href: ../../api/customauthenticationextension-delete.md
+    - name: validateAuthenticationConfiguration
+      href: ../../api/customauthenticationextension-validateauthenticationconfiguration.md
+    - name: On token issuance start custom extension
+      href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation
     items:
     - name: Data policy operation
@@ -1792,6 +1846,63 @@ items:
       href: ../../resources/invitation.md
     - name: Create invitation
       href: ../../api/invitation-post.md
+  - name: Multitenant organization
+    displayName: MTO
+    items:
+    - name: Overview
+      href: ../../resources/multitenantorganization-overview.md
+    - name: Multitenant organization
+      items:
+      - name: Multitenant organization
+        href: ../../resources/multitenantorganization.md
+      - name: Create multiTenantOrganization
+        href: ../../api/tenantrelationship-put-multitenantorganization.md
+      - name: Get multiTenantOrganization
+        href: ../../api/multitenantorganization-get.md
+      - name: Update multiTenantOrganization
+        href: ../../api/multitenantorganization-update.md
+    - name: Multitenant organization member
+      items:
+      - name: Multitenant organization member
+        href: ../../resources/multitenantorganizationmember.md
+      - name: List multiTenantOrganizationMembers
+        href: ../../api/multitenantorganization-list-tenants.md
+      - name: Add multiTenantOrganizationMember
+        href: ../../api/multitenantorganization-post-tenants.md
+      - name: Get multiTenantOrganizationMember
+        href: ../../api/multitenantorganizationmember-get.md
+      - name: Update multiTenantOrganizationMember
+        href: ../../api/multitenantorganizationmember-update.md
+      - name: Remove multiTenantOrganizationMember
+        href: ../../api/multitenantorganization-delete-tenants.md
+    - name: Multitenant organization join request record
+      items:
+      - name: Multitenant organization join request record
+        href: ../../resources/multitenantorganizationjoinrequestrecord.md
+      - name: Get multiTenantOrganizationJoinRequestRecord
+        href: ../../api/multitenantorganizationjoinrequestrecord-get.md
+      - name: Update multiTenantOrganizationJoinRequestRecord
+        href: ../../api/multitenantorganizationjoinrequestrecord-update.md
+    - name: Multitenant organization partner configuration template
+      items:
+      - name: Multitenant organization partner configuration template
+        href: ../../resources/multitenantorganizationpartnerconfigurationtemplate.md
+      - name: Get multiTenantOrganizationPartnerConfigurationTemplate
+        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-get.md
+      - name: Update multiTenantOrganizationPartnerConfigurationTemplate
+        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-update.md
+      - name: resetToDefaultSettings
+        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+    - name: Multitenant organization identity sync policy template
+      items:
+      - name: Multitenant organization identity sync policy template
+        href: ../../resources/multitenantorganizationidentitysyncpolicytemplate.md
+      - name: Get multiTenantOrganizationIdentitySyncPolicyTemplate
+        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-get.md
+      - name: Update multiTenantOrganizationIdentitySyncPolicyTemplate
+        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
+      - name: resetToDefaultSettings
+        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
   - name: OAuth 2 permission grant
     items:
     - name: OAuth 2 permission grant

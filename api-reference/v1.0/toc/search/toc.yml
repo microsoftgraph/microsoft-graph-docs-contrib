@@ -1,4 +1,50 @@
 items:
+- name: Answer
+  items:
+  - name: Overview
+    href: ../../resources/search-api-answers-overview.md
+  - name: Acronym
+    items:
+    - name: Acronym
+      href: ../../resources/search-acronym.md
+    - name: List acronyms
+      href: ../../api/search-searchentity-list-acronyms.md
+    - name: Create acronym
+      href: ../../api/search-searchentity-post-acronyms.md
+    - name: Get acronym
+      href: ../../api/search-acronym-get.md
+    - name: Update acronym
+      href: ../../api/search-acronym-update.md
+    - name: Delete acronym
+      href: ../../api/search-acronym-delete.md
+  - name: Bookmark
+    items:
+    - name: Bookmark
+      href: ../../resources/search-bookmark.md
+    - name: List bookmarks
+      href: ../../api/search-searchentity-list-bookmarks.md
+    - name: Create bookmark
+      href: ../../api/search-searchentity-post-bookmarks.md
+    - name: Get bookmark
+      href: ../../api/search-bookmark-get.md
+    - name: Update bookmark
+      href: ../../api/search-bookmark-update.md
+    - name: Delete bookmark
+      href: ../../api/search-bookmark-delete.md
+  - name: QnA
+    items:
+    - name: QnA
+      href: ../../resources/search-qna.md
+    - name: List qnas
+      href: ../../api/search-searchentity-list-qnas.md
+    - name: Create qna
+      href: ../../api/search-searchentity-post-qnas.md
+    - name: Get qna
+      href: ../../api/search-qna-get.md
+    - name: Update qna
+      href: ../../api/search-qna-update.md
+    - name: Delete qna
+      href: ../../api/search-qna-delete.md
 - name: Query
   items:
   - name: Overview
@@ -9,6 +55,10 @@ items:
       href: ../../resources/searchentity.md
     - name: query
       href: ../../api/search-query.md
+  - name: Search request
+    href: ../../resources/searchrequest.md
+  - name: Search response
+    href: ../../resources/searchresponse.md
   - name: Complex types
     items:
     - name: Aggregation option
@@ -41,10 +91,6 @@ items:
       href: ../../resources/searchhitscontainer.md
     - name: Search query
       href: ../../resources/searchquery.md
-    - name: Search request
-      href: ../../resources/searchrequest.md
-    - name: Search response
-      href: ../../resources/searchresponse.md
     - name: Share point one drive options
       href: ../../resources/sharepointonedriveoptions.md
     - name: Sort property

@@ -5,24 +5,24 @@
       "overview": "../../resources/applications-api-overview.md",
       "resources": [
         "application",
-        "applicationTemplate",
-        "federatedIdentityCredential",
         "servicePrincipal"
       ],
       "childNodes": [
         {
-          "name": "Policies",
+          "name": "Application",
+          "shouldSort": true,
           "resources": [
-            "remoteDesktopSecurityConfiguration",
-            "tokenIssuancePolicy",
-            "tokenLifetimePolicy"
+            "applicationTemplate",
+            "extensionProperty",
+            "federatedIdentityCredential"
           ],
           "childNodes": [
             {
-              "name": "Application authentication method policy",
+              "name": "Policies",
               "resources": [
-                "tenantAppManagementPolicy",
-                "appManagementPolicy"
+                "remoteDesktopSecurityConfiguration",
+                "tokenIssuancePolicy",
+                "tokenLifetimePolicy"
               ]
             }
           ]
@@ -30,6 +30,7 @@
         {
           "name": "Synchronization",
           "overview": "../../resources/synchronization-overview.md",
+          "shouldSort": true,
           "resources": [
             "synchronization",
             "synchronizationTemplate",
@@ -131,6 +132,23 @@
             "userActivity",
             "activityHistoryItem"
           ]
+        },
+        {
+          "name": "Roaming data",
+          "resources": [
+            "cloudClipboardRoot",
+            "cloudClipboardItem"
+          ],
+          "childNodes": [
+            {
+              "name": "Windows settings",
+              "overview": "../../resources/windows-setting-api-overview.md",
+              "resources": [
+                "windowsSetting",
+                "windowsSettingInstance"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -192,6 +210,19 @@
             "dateTimeTimeZone",
             "identity",
             "identitySet"
+          ]
+        },
+        {
+          "name": "Cloud PC",
+          "overview": "../../resources/cloudpc-api-overview.md",
+          "resources": [
+            "cloudPC",
+            "cloudPcAuditEvent",
+            "cloudPcOnPremisesConnection",
+            "cloudPcDeviceImage",
+            "cloudPcGalleryImage",
+            "cloudPcProvisioningPolicy",
+            "cloudPcUserSetting"
           ]
         },
         {
@@ -660,6 +691,40 @@
               ]
             },
             {
+              "name": "Onboarding",
+              "overview": "../../resources/intune-onboarding-conceptual.md",
+              "resources": [
+                "complianceManagementPartner",
+                "deviceAppManagement",
+                "deviceCategory",
+                "deviceEnrollmentConfiguration",
+                "deviceEnrollmentLimitConfiguration",
+                "deviceEnrollmentPlatformRestrictionsConfiguration",
+                "deviceEnrollmentWindowsHelloForBusinessConfiguration",
+                "deviceManagementExchangeConnector",
+                "deviceManagementPartner",
+                "enrollmentConfigurationAssignment",
+                "mobileThreatDefenseConnector",
+                "onPremisesConditionalAccessSettings",
+                "vppToken"
+              ],
+              "complexTypes": [
+                "allDevicesAssignmentTarget",
+                "allLicensedUsersAssignmentTarget",
+                "complianceManagementPartnerAssignment",
+                "configurationManagerCollectionAssignmentTarget",
+                "deviceAndAppManagementAssignmentTarget",
+                "deviceAndAppManagementData",
+                "deviceEnrollmentPlatformRestriction",
+                "deviceManagementPartnerAssignment",
+                "exclusionGroupAssignmentTarget",
+                "groupAssignmentTarget",
+                "intuneBrand",
+                "mimeContent",
+                "rgbColor"
+              ]
+            },
+            {
               "name": "Role-based access control (RBAC)",
               "overview": "../../resources/intune-rbac-conceptual.md",
               "resources": [
@@ -674,6 +739,21 @@
                 "rolePermission"
               ]
             }
+          ]
+        },
+        {
+          "name": "Microsoft 365 apps",
+          "keywords": [
+            "Microsoft 365 applications"
+          ],
+          "resources": [
+            "m365AppsInstallationOptions"
+          ],
+          "complexTypes": [
+            "admin",
+            "adminMicrosoft365Apps",
+            "appsInstallationOptionsForMac",
+            "appsInstallationOptionsForWindows"
           ]
         },
         {
@@ -770,12 +850,12 @@
       "name": "External data connections",
       "overview": "../../resources/connectors-api-overview.md",
       "resources": [
-        "microsoft.graph.externalConnectors.connectionOperation",
         "microsoft.graph.externalConnectors.externalConnection",
         "microsoft.graph.externalConnectors.externalGroup",
-        "microsoft.graph.externalConnectors.externalItem",
         "microsoft.graph.externalConnectors.identity",
-        "microsoft.graph.externalConnectors.schema"
+        "microsoft.graph.externalConnectors.externalItem",
+        "microsoft.graph.externalConnectors.schema",
+        "microsoft.graph.externalConnectors.connectionOperation"
       ],
       "complexTypes": [
         "Json",
@@ -826,6 +906,7 @@
       "childNodes": [
         {
           "name": "Directory management",
+          "shouldSort": true,
           "resources": [
             "administrativeUnit",
             "contract",
@@ -835,6 +916,8 @@
             "directoryRole",
             "directoryRoleTemplate",
             "domain",
+            "groupSetting",
+            "groupSettingTemplate",
             "onPremisesDirectorySynchronization",
             "organization",
             "orgContact",
@@ -1145,6 +1228,8 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
+            "authenticationEventListener",
+            "customAuthenticationExtension",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "organizationalBranding",
@@ -1206,6 +1291,12 @@
               ]
             },
             {
+              "name": "Custom authentication extension",
+              "resources": [
+                "onTokenIssuanceStartCustomExtension"
+              ]
+            },
+            {
               "name": "Identity protection",
               "overview": "../../resources/identityprotection-overview.md",
               "resources": [
@@ -1247,6 +1338,20 @@
               "name": "Identity provider (deprecated)",
               "resources": [
                 "identityProvider"
+              ]
+            },
+            {
+              "name": "Multitenant organization",
+              "overview": "../../resources/multitenantorganization-overview.md",
+              "keywords": [
+                "MTO"
+              ],
+              "resources": [
+                "multiTenantOrganization",
+                "multiTenantOrganizationMember",
+                "multiTenantOrganizationJoinRequestRecord",
+                "multiTenantOrganizationPartnerConfigurationTemplate",
+                "multiTenantOrganizationIdentitySyncPolicyTemplate"
               ]
             },
             {
@@ -1452,6 +1557,12 @@
               "name": "Microsoft Entra activity reports",
               "childNodes": [
                 {
+                  "name": "AD FS application activity",
+                  "resources": [
+                    "relyingPartyDetailedSummary"
+                  ]
+                },
+                {
                   "name": "Registration and usage",
                   "overview": "../../resources/authenticationmethods-usage-insights-overview.md",
                   "resources": [
@@ -1493,6 +1604,7 @@
           "name": "Partner billing reports",
           "overview": "../../resources/partners-billing-api-overview.md",
           "resources": [
+            "microsoft.graph.partners.billing.billedReconciliation",
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
@@ -1505,10 +1617,21 @@
       "name": "Search",
       "childNodes": [
         {
+          "name": "Answer",
+          "overview": "../../api/resources/search-api-answers-overview.md",
+          "resources": [
+            "microsoft.graph.search.acronym",
+            "microsoft.graph.search.bookmark",
+            "microsoft.graph.search.qna"
+          ]
+        },
+        {
           "name": "Query",
           "overview": "../../resources/search-api-overview.md",
           "resources": [
-            "searchEntity"
+            "searchEntity",
+            "searchRequest",
+            "searchResponse"
           ],
           "complexTypes": [
             "Json",
@@ -1526,8 +1649,6 @@
             "searchHit",
             "searchHitsContainer",
             "searchQuery",
-            "searchRequest",
-            "searchResponse",
             "sharePointOneDriveOptions",
             "sortProperty"
           ]
@@ -1622,7 +1743,7 @@
           ]
         },
         {
-          "name": "Legacy alert",
+          "name": "Legacy alert (deprecated)",
           "resources": [
             "alert"
           ]
@@ -1631,25 +1752,15 @@
           "name": "Records management",
           "overview": "../../resources/security-recordsmanagement-overview.md",
           "resources": [
-            "microsoft.graph.security.authorityTemplate",
-            "microsoft.graph.security.categoryTemplate",
-            "microsoft.graph.security.citationTemplate",
-            "microsoft.graph.security.departmentTemplate",
-            "microsoft.graph.security.dispositionReviewStage",
-            "microsoft.graph.security.filePlanReferenceTemplate",
-            "microsoft.graph.security.labelsRoot",
-            "microsoft.graph.security.retentionEvent",
-            "microsoft.graph.security.retentionEventType",
             "microsoft.graph.security.retentionLabel",
-            "microsoft.graph.security.subcategoryTemplate"
+            "microsoft.graph.security.retentionEvent",
+            "microsoft.graph.security.retentionEventType"
           ],
           "complexTypes": [
             "microsoft.graph.security.eventPropagationResult",
             "microsoft.graph.security.eventQuery",
-            "microsoft.graph.security.filePlanDescriptor",
             "microsoft.graph.security.filePlanDescriptorBase",
             "microsoft.graph.security.filePlanDescriptorTemplate",
-            "microsoft.graph.security.filePlanReference",
             "identity",
             "identitySet",
             "publicError",
@@ -1659,6 +1770,36 @@
             "microsoft.graph.security.retentionDurationForever",
             "microsoft.graph.security.retentionDurationInDays",
             "microsoft.graph.security.retentionEventStatus"
+          ],
+          "childNodes": [
+            {
+              "name": "File plan descriptors",
+              "childNodes": [
+                {
+                  "name": "File plan descriptors",
+                  "resources": [
+                    "microsoft.graph.security.filePlanDescriptor",
+                    "microsoft.graph.security.appliedCategory",
+                    "microsoft.graph.security.authority",
+                    "microsoft.graph.security.citation",
+                    "microsoft.graph.security.department",
+                    "microsoft.graph.security.filePlanReference",
+                    "microsoft.graph.security.subCategory"
+                  ]
+                },
+                {
+                  "name": "File plan descriptor templates",
+                  "resources": [
+                    "microsoft.graph.security.categoryTemplate",
+                    "microsoft.graph.security.authorityTemplate",
+                    "microsoft.graph.security.citationTemplate",
+                    "microsoft.graph.security.departmentTemplate",
+                    "microsoft.graph.security.filePlanReferenceTemplate",
+                    "microsoft.graph.security.subcategoryTemplate"
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -1797,6 +1938,7 @@
         {
           "name": "Calls and online meetings",
           "overview": "../../resources/communications-api-overview.md",
+          "shouldSort": true,
           "resources": [
             "presence"
           ],
@@ -1883,8 +2025,8 @@
             "chat",
             "chatMessage",
             "pinnedChatMessageInfo",
+            "deletedChat",
             "team",
-            "deletedTeam",
             "teamworkTag",
             "teamworkTagMember"
           ],
@@ -1908,6 +2050,26 @@
                   "name": "Send notification to multiple users in bulk",
                   "href": "../../api/teamwork-sendactivitynotificationtorecipients.md"
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Settings",
+          "resources": [
+            "licenseDetails"
+          ],
+          "childNodes": [
+            {
+              "name": "Organization settings",
+              "resources": [
+                "teamwork"
+              ]
+            },
+            {
+              "name": "User settings",
+              "resources": [
+                "userTeamwork"
               ]
             }
           ]
