@@ -1,5 +1,5 @@
 ---
-title: "Manage identity and network access by using Microsoft Graph"
+title: "Manage Microsoft Entra identity and network access by using Microsoft Graph"
 description: "Microsoft Graph provides REST APIs to help manage identity and network access capabilities, most of which are available through Microsoft Entra."
 ms.localizationpriority: high
 doc_type: conceptualPageType
@@ -10,7 +10,7 @@ ms.reviewer: dkershaw10
 ms.date: 04/29/2024
 ---
 
-# Manage identity and network access by using Microsoft Graph
+# Manage Microsoft Entra identity and network access by using Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
