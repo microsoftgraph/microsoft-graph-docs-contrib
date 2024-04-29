@@ -63,7 +63,7 @@ The following example enumerates all containers of a given container type.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers?$filter=containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082
 ```
 
 ### Response
