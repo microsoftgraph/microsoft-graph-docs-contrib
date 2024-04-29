@@ -56,7 +56,7 @@ The following table lists the parameters that are required when you call this ac
 |severity|microsoft.graph.security.remediationSeverity| The severity of the remediation. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 |action|microsoft.graph.security.remediationAction|The types of move and delete actions that are supported. The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
 |remediateSendersCopy|Boolean| For internal or outbound email, indicates whether to remediate the sender's copy of an email. |
-|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection| Combination of networkMessageId and recipientEmailAddress. |
+|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection| Contains the **networkMessageId** and **recipientEmailAddress** of the analyzed emails. |
 
 ## Response
 
