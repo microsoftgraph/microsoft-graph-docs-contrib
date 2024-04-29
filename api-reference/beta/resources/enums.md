@@ -101,6 +101,7 @@ Namespace: microsoft.graph
 | Required           |
 | Recommeded         |
 | UnknownFutureValue |
+| PeerRecommeded     |
 
 ### courseStatus values
 
