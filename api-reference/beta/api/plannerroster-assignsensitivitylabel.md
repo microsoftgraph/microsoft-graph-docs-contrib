@@ -65,4 +65,4 @@ If a previously existing label assignment was applied with microsoft.graph.sensi
 
 #### 404 Not Found
 
-If a label can't be found (or if the label is not in scope for the user), the request fails, and the **code** property on the error resource type will be "SensitivityLabelNotFound".
+If a label can't be found (or if the label is not in scope for the user), the request fails, and the **code** property on the error resource type is "SensitivityLabelNotFound".
