@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph REST API beta endpoint reference"
-description: "Documentation for the Microsoft Graph REST API beta endpoint, which includes APIs that are currently in preview and aren't yet generally available."
+description: "Find reference content for the Microsoft Graph REST APIs in the beta endpoint, which includes APIs that are currently in preview and aren't yet generally available."
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: "non-product-specific"
@@ -10,10 +10,7 @@ ms.topic: overview
 
 # Microsoft Graph REST API beta endpoint reference
 
-The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and aren't yet generally available. We invite you to try these APIs and provide your feedback via the following channels:
-
-- [GitHub](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/issues) - For feedback on the Preview APIs. Tag with `beta`.
-- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-api) - For questions or help with your code. Tag with `microsoft-graph-api`.
+The reference content in this section documents the Microsoft Graph REST APIs in the `beta` endpoint. The beta endpoint includes APIs that are currently in preview and aren't yet generally available. We invite you to try these APIs and provide your feedback.
 
 > [!NOTE]
 > The APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps.
@@ -28,10 +25,18 @@ https://graph.microsoft.com/beta/{resource}?[query_parameters]
 
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 
+## Microsoft Graph v1.0 endpoint
+
+Currently two versions of Microsoft Graph REST APIs are available - v1.0 and beta.
+
+If you're interested in using APIs that have reached general availability (GA), see [Microsoft Graph v1.0 endpoint reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). 
+
+To determine whether a beta API is available in v1.0, use the version selector in the left navigation. If the API is availalble in v1.0, you can switch to the v1.0 reference topic.
+
 ## What's new
 Find out [what's new](/graph/whats-new-overview) in the beta endpoint.
 
-Explore the [API changelog](https://developer.microsoft.com/en-us/graph/changelog) for more details about changes to Microsoft Graph APIs.
+For details about changes to Microsoft Graph APIs in beta , explore the [API changelog](https://developer.microsoft.com/en-us/graph/changelog/?filterBy=beta).
 
 ## Related content
 
