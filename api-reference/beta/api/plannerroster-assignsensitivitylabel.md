@@ -55,7 +55,7 @@ If-Match: "string"
 
 #### 400 Bad Request
 
-If the label has sublabels, then it cannot be applied to the roster. Only labels that have no sublabels can be applied.  The request fails, and the **code** property on the error response is "SensitivityLabelHasSublabels".
+If the label has sublabels, then it can't be applied to the roster. Only labels that have no sublabels can be applied.  The request fails, and the **code** property on the error response is "SensitivityLabelHasSublabels".
 
 #### 403 Forbidden
 
@@ -65,4 +65,4 @@ If a previously existing label assignment was applied with microsoft.graph.sensi
 
 #### 404 Not Found
 
-If a label can't be found (or if the label is not in scope for the user), the request fails, and the **code** property on the error resource type is "SensitivityLabelNotFound".
+If a label can't be found (or if the label isn't in scope for the user), the request fails, and the **code** property on the error resource type is "SensitivityLabelNotFound".
