@@ -94,52 +94,52 @@ Represents the capabilities reported by a printer.
 |stapleDualRight|30|Staple the document twice along the right edge.|
 |stapleDualBottom|31|Staple the document twice along the bottom edge.|
 |unknownFutureValue|32|Evolvable enumeration sentinel value. Don't use.|
-| `stapleTripleLeft`|33| Bind the Document(s) with three staples (wire stitches) along the left edge.|
-| `stapleTripleTop`|34| Bind the Document(s) with three staples (wire stitches) along the top edge.|
-| `stapleTripleRight`|35| Bind the Document(s) with three staples (wire stitches) along the right edge.|
-| `stapleTripleBottom`|36| Bind the Document(s) with three staples (wire stitches) along the bottom edge.|
-| `bindLeft`|37| Bind the Document(s) along the left edge; the type of the binding is site defined. |
-| `bindTop`|38| Bind the Document(s) along the top edge; the type of the binding is site defined.|
-| `bindRight`|39| Bind the Document(s) along the right edge; the type of the binding is site defined.|
-| `bindBottom`|40| Bind the Document(s) along the bottom edge; the type of the binding is site defined. |
-| `foldAccordion`|41| Accordion-fold the hardcopy output vertically into four sections.|
-| `foldDoubleGate`|42| Fold the top and bottom quarters of the hardcopy output towards the midline, then fold in half vertically.|
-| `foldGate`|43| Fold the top and bottom quarters of the hardcopy output towards the midline.|
-| `foldHalf`|44| Fold the hardcopy output in half vertically.|
-| `foldHalfZ`|45| Fold the hardcopy output in half horizontally, then Z-fold the paper vertically into three sections.|
-| `foldLeftGate`|46| Fold the top quarter of the hardcopy output towards the midline.|
-| `foldLetter`|47| Fold the hardcopy output into three sections vertically; sometimes also known as a C fold. |
-| `foldParallel`|48| Fold the hardcopy output in half vertically two times, yielding four sections.|
-| `foldPoster`|49| Fold the hardcopy output in half horizontally and vertically; sometimes also called a cross fold.|
-| `foldRightGate`|50| Fold the bottom quarter of the hardcopy output towards the midline.|
-| `foldZ`|51| Fold the hardcopy output vertically into three sections, forming a Z.|
-| `foldEngineeringZ`|52| Fold the hardcopy output vertically into three sections, forming a Z but leaving room for binding, punching, or stapling along the top edge.|
-| `punchTopLeft`|53| Punch a single hole in the top left of the hardcopy output.|
-| `punchBottomLeft`|54| Punch a single hole in the bottom left of the hardcopy output.|
-| `punchTopRight`|55| Punch a single hole in the top right of the hardcopy output.|
-| `punchBottomRight`|56| Punch a single hole in the bottom right of the hardcopy output.|
-| `punchDualLeft`|57| Punch two holes on the left side of the hardcopy output.|
-| `punchDualTop`|58| Punch two holes on the top side of the hardcopy output.|
-| `punchDualRight`|59| Punch two holes on the right side of the hardcopy output.|
-| `punchDualBottom`|60| Punch two holes on the bottom side of the hardcopy output.|
-| `punchTripleLeft`|61| Punch three holes on the left side of the hardcopy output.|
-| `punchTripleTop`|62| Punch three holes on the top side of the hardcopy output.|
-| `punchTripleRight`|63| Punch three holes on the right side of the hardcopy output.|
-| `punchTripleBottom`|64| Punch three holes on the bottom side of the hardcopy output.|
-| `punchQuadLeft`|65| Punch four holes on the left side of the hardcopy output.|
-| `punchQuadTop`|66| Punch four holes on the top side of the hardcopy output.|
-| `punchQuadRight`|67| Punch four holes on the right side of the hardcopy output.|
-| `punchQuadBottom`|68| Punch four holes on the bottom side of the hardcopy output.|
-| `fold`|69|  Fold the hardcopy output.|
-| `Trim`|70|  Trim the hardcopy output on one or more edges. |
-| `Bale`|71|  Bale the set(s). |
-| `BookletMaker`|72|  Deliver the set(s) to the signature booklet maker. |
-| `Coat`|73|  Apply a protective liquid or powdered coating to each sheet. |
-| `Laminate`|74|  Apply a protective (solid) material to each sheet. |
-| `TrimAfterPages`|75|  Trim output after each page. |
-| `TrimAfterDocuments`|76|  Trim output after each document. |
-| `TrimAfterCopies`|77|  Trim output after each set. |
-| `TrimAfterJob`|78|  Trim output after job. |
+|stapleTripleLeft|33| Bind the Document(s) with three staples (wire stitches) along the left edge.|
+|stapleTripleTop|34| Bind the Document(s) with three staples (wire stitches) along the top edge.|
+|stapleTripleRight|35| Bind the Document(s) with three staples (wire stitches) along the right edge.|
+|stapleTripleBottom|36| Bind the Document(s) with three staples (wire stitches) along the bottom edge.|
+|bindLeft|37| Bind the Document(s) along the left edge; the type of the binding is site defined. |
+|bindTop|38| Bind the Document(s) along the top edge; the type of the binding is site defined.|
+|bindRight|39| Bind the Document(s) along the right edge; the type of the binding is site defined.|
+|bindBottom|40| Bind the Document(s) along the bottom edge; the type of the binding is site defined. |
+|foldAccordion|41| Accordion-fold the hardcopy output vertically into four sections.|
+|foldDoubleGate|42| Fold the top and bottom quarters of the hardcopy output towards the midline, then fold in half vertically.|
+|foldGate|43| Fold the top and bottom quarters of the hardcopy output towards the midline.|
+|foldHalf|44| Fold the hardcopy output in half vertically.|
+|foldHalfZ|45| Fold the hardcopy output in half horizontally, then Z-fold the paper vertically into three sections.|
+|foldLeftGate|46| Fold the top quarter of the hardcopy output towards the midline.|
+|foldLetter|47| Fold the hardcopy output into three sections vertically; sometimes also known as a C fold. |
+|foldParallel|48| Fold the hardcopy output in half vertically two times, yielding four sections.|
+|foldPoster|49| Fold the hardcopy output in half horizontally and vertically; sometimes also called a cross fold.|
+|foldRightGate|50| Fold the bottom quarter of the hardcopy output towards the midline.|
+|foldZ|51| Fold the hardcopy output vertically into three sections, forming a Z.|
+|foldEngineeringZ|52| Fold the hardcopy output vertically into three sections, forming a Z but leaving room for binding, punching, or stapling along the top edge.|
+|punchTopLeft|53| Punch a single hole in the top left of the hardcopy output.|
+|punchBottomLeft|54| Punch a single hole in the bottom left of the hardcopy output.|
+|punchTopRight|55| Punch a single hole in the top right of the hardcopy output.|
+|punchBottomRight|56| Punch a single hole in the bottom right of the hardcopy output.|
+|punchDualLeft|57| Punch two holes on the left side of the hardcopy output.|
+|punchDualTop|58| Punch two holes on the top side of the hardcopy output.|
+|punchDualRight|59| Punch two holes on the right side of the hardcopy output.|
+|punchDualBottom|60| Punch two holes on the bottom side of the hardcopy output.|
+|punchTripleLeft|61| Punch three holes on the left side of the hardcopy output.|
+|punchTripleTop|62| Punch three holes on the top side of the hardcopy output.|
+|punchTripleRight|63| Punch three holes on the right side of the hardcopy output.|
+|punchTripleBottom|64| Punch three holes on the bottom side of the hardcopy output.|
+|punchQuadLeft|65| Punch four holes on the left side of the hardcopy output.|
+|punchQuadTop|66| Punch four holes on the top side of the hardcopy output.|
+|punchQuadRight|67| Punch four holes on the right side of the hardcopy output.|
+|punchQuadBottom|68| Punch four holes on the bottom side of the hardcopy output.|
+|fold|69|  Fold the hardcopy output.|
+|Trim|70|  Trim the hardcopy output on one or more edges. |
+|Bale|71|  Bale the set(s). |
+|BookletMaker|72|  Deliver the set(s) to the signature booklet maker. |
+|Coat|73|  Apply a protective liquid or powdered coating to each sheet. |
+|Laminate|74|  Apply a protective (solid) material to each sheet. |
+|TrimAfterPages|75|  Trim output after each page. |
+|TrimAfterDocuments|76|  Trim output after each document. |
+|TrimAfterCopies|77|  Trim output after each set. |
+|TrimAfterJob|78|  Trim output after job. |
 
 ## printOrientation values
 
