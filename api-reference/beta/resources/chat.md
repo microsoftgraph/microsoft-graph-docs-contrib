@@ -72,13 +72,13 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
+| isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all members of the chat.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
 | webUrl| String | The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.|
-| isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all members of the chat.
 
 
 ### chatType values 
@@ -105,7 +105,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -115,19 +115,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "chatType": "string",
-  "createdDateTime": "dateTimeOffset",
+  "chatType": "String",
+  "createdDateTime": "String (timestamp)",
+  "isHiddenForAllMembers": "Boolean",
   "id": "string (identifier)",
-  "lastUpdatedDateTime": "dateTimeOffset",  
+  "lastUpdatedDateTime": "String (timestamp)",  
   "onlineMeetingInfo": {
     "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
   },
-  "tenantId": "string",  
-  "topic": "string",
+  "tenantId": "String",  
+  "topic": "String",
   "viewpoint": {
     "@odata.type": "microsoft.graph.chatViewpoint"
   },
-  "webUrl": "string"
+  "webUrl": "String"
 }
 ```
 
