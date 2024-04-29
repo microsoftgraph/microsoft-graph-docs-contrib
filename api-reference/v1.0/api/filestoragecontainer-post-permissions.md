@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /storage/fileStorage/containers/{fileStorageContainerId}/permissions
+POST /storage/fileStorage/containers/{containerId}/permissions
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ The following example shows how to add a new user as a reader to a container.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/permissions
+POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions
 Content-type: application/json
 
 {
