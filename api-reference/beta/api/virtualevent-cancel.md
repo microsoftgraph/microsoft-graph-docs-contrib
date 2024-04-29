@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a virtual event.
+Cancel a virtual event. A canceled virtual event has its **status** set to `canceled` permanently. You can still get a canceled virtual event by using the [Get virtualEvent](../api/virtualevent-get.md) API.
 
-Currently the supported virtual event types are [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md). A canceled virtual event has its **status** set to `canceled` permanently. You can still get a canceled virtual event by using the [Get virtualEvent](../api/virtualevent-get.md) API.
+Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 
