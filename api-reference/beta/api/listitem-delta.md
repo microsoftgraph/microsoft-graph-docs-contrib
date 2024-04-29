@@ -315,9 +315,6 @@ Content-type: application/json
       },
       "deleted": {
         "state": "deleted"
-      },
-      "@removed": {
-        "reason": "deleted"
       }
     }
   ],

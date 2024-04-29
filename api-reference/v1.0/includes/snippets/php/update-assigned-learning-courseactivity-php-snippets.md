@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\LearningAssignment;
+use Microsoft\Graph\Generated\Models\DateTimeTimeZone;
+use Microsoft\Graph\Generated\Models\ItemBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

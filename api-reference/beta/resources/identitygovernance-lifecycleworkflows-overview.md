@@ -3,7 +3,7 @@ title: "Overview of Lifecycle Workflows APIs"
 description: "Use Lifecycle Workflows to manage the lifecycle of users in your organization."
 ms.localizationpriority: medium
 author: "AlexFilipin"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 03/12/2024
 ---
@@ -14,13 +14,13 @@ ms.date: 03/12/2024
 
 Lifecycle Workflows is an Identity Governance service in Microsoft Entra ID that enables organizations to automate basic lifecycle processes for their users at three levels:
 
-1. **Joiner**: When an individual comes into scope of needing access; for example, a new employee joining a company or organization.
+1. **Joiner**: When an individual comes into the scope of needing access; for example, a new employee joining a company or organization.
 2. **Mover**: When an individual moves between boundaries within an organization; for example, a user who was in marketing is now a member of the sales organization. This movement might require more access or authorization, or revocation of other privileges.
-3. **Leaver**: When an individual leaves the scope of needing access, access might need to be revoked, and the user deprovisioned. For example, an employee who is retiring or has been terminated.
+3. **Leaver**: When an individual leaves the scope of needing access, access might need to be revoked, and the user deprovisioned. For example, an employee who is retiring or terminated.
 
-For this reason, Lifecycle Workflows can be referred to as the **Joiner-Mover-Leaver** (JML) workflow. Only the *joiner* and *leaver* processes are currently implemented.
+For this reason, lifecycle workflows can be referred to as the **Joiner-Mover-Leaver** (JML) workflow.
 
-The lifecycle workflows APIs in Microsoft Graph allow you to automate the Lifecycle Workflows capabilities for your organization. This article introduced the set of APIs that enable the Lifecycle Workflows service in Microsoft Entra ID.
+The lifecycle workflow APIs in Microsoft Graph allow you to automate the Lifecycle workflow capabilities for your organization. This article introduced the set of APIs that enable the Lifecycle Workflows service in Microsoft Entra ID.
 
 The lifecycle workflows APIs are defined in the OData subnamespace, microsoft.graph.identityGovernance.
 
@@ -82,18 +82,18 @@ When creating or updating a workflow, use the [workflowExecutionConditions resou
 
 ### Create and manage workflows
 
-After identifying the tasks and execution conditions that you want to define for your workflow, use the [workflow resource type](identitygovernance-workflow.md), and its associated methods to create and manage the workflow. You can create up to 50 workflows in a tenant. The category of the task must match the category of the workflow. Each workflow can have up to 25 tasks. Therefore:
+After identifying the tasks and execution conditions that you want to define for your workflow, use the [workflow resource type](identitygovernance-workflow.md), and its associated methods to create and manage the workflow. You can create up to 100 workflows in a tenant. The category of the task must match the category of the workflow. Each workflow can have up to 25 tasks. Therefore:
 
-+ A task supported for only the "leaver" workflow category can't be specified in a "joiner" workflow scenario, and vice versa.
-+ A task supported for both "leaver" and "joiner" workflow categories can be specified in either a "joiner" or "leaver" workflow scenario.
++ A task supported for only the "leaver" workflow category can't be specified in a "joiner" or "mover" workflow scenario, and vice versa.
++ A task supported for "joiner", "mover", and "leaver" workflow categories can be specified in either a "joiner", "mover" or "leaver" workflow scenario.
 
-You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. The tenant schedule can take care of regular new hires and terminations, while you can run a workflow on-demand to immediately terminate an employee's access if there was a sensitive event.
+You can schedule a workflow to run based on the [tenant-wide schedule](#settings) or run it on-demand. The tenant schedule can take care of scheduled new hires and terminations, while you can run a workflow on-demand immediately to terminate an employee's access if there is a sensitive event.
 
 ### Workflow versions
 
 While a workflow is in use, you might need to update execution conditions and tasks for a workflow. However, Lifecycle Workflows doesn't allow you to update these properties for an existing workflow.
 
-Instead of creating new workflows, use the [workflowVersion resource type](identitygovernance-workflowversion.md) and its associated methods to create and manage a new workflow version, based off an existing workflow object. The workflow version can have similar or a different set of tasks and execution conditions.
+Instead of creating new workflows, use the [workflowVersion resource type](identitygovernance-workflowversion.md) and its associated methods to create and manage a new workflow version, based on an existing workflow object. The workflow version can have a similar or a different set of tasks and execution conditions.
 
 ## Reports
 

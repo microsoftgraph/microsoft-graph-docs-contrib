@@ -35,8 +35,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information for the creator of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | displayName | String | Display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
 
@@ -52,9 +52,9 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Value | Description |
 | ----- | ----------- |
-| draft | The webinar is in draft and only visible to the organizer. |
-| published | The organizer published the webinar and it's visible to the audience. |
-| canceled | The organizer canceled the webinar. |
+| draft | The virtual event is in draft and only visible to the organizer. |
+| published | The organizer published the virtual event and it's visible to the audience. |
+| canceled | The organizer canceled the virtual event. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships

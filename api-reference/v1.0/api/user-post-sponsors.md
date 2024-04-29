@@ -3,7 +3,7 @@ title: "Add sponsor"
 description: "Assign a user a sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -53,6 +53,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 The following example shows a request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_userSponsors"
@@ -66,6 +67,12 @@ Content-Type: application/json
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{user-id}"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersponsors-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -83,6 +90,7 @@ HTTP/1.1 204 No Content
 
 The following example shows a request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_groupSponsors"
@@ -96,6 +104,12 @@ Content-Type: application/json
   "@odata.id": "https://graph.microsoft.com/v1.0/groups/{group-id}"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsponsors-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
