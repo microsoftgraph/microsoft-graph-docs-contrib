@@ -599,6 +599,48 @@
       "CreatedDateTime": "2023-12-08T00:00:00",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+	      },
+        {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) or [list](https://learn.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       }
+      ],
+      "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-24T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
     }
   ]
 }
