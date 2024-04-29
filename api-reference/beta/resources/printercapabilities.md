@@ -94,10 +94,10 @@ Represents the capabilities reported by a printer.
 |stapleDualRight|30|Staple the document twice along the right edge.|
 |stapleDualBottom|31|Staple the document twice along the bottom edge.|
 |unknownFutureValue|32|Evolvable enumeration sentinel value. Don't use.|
-| `stapleTripleLeft`|33| Bind the Document(s) with three staples (wire stitches) along the left edge, assuming a portrait Document (see above).|
-| `stapleTripleTop`|34| Bind the Document(s) with three staples (wire stitches) along the top edge, assuming a portrait Document (see above).|
-| `stapleTripleRight`|35| Bind the Document(s) with three staples (wire stitches) along the right edge, assuming a portrait Document (see above).|
-| `stapleTripleBottom`|36| Bind the Document(s) with three staples (wire stitches) along the bottom edge, assuming a portrait Document (see above).|
+| `stapleTripleLeft`|33| Bind the Document(s) with three staples (wire stitches) along the left edge.|
+| `stapleTripleTop`|34| Bind the Document(s) with three staples (wire stitches) along the top edge.|
+| `stapleTripleRight`|35| Bind the Document(s) with three staples (wire stitches) along the right edge.|
+| `stapleTripleBottom`|36| Bind the Document(s) with three staples (wire stitches) along the bottom edge.|
 | `bindLeft`|37| Bind the Document(s) along the left edge; the type of the binding is site defined. |
 | `bindTop`|38| Bind the Document(s) along the top edge; the type of the binding is site defined.|
 | `bindRight`|39| Bind the Document(s) along the right edge; the type of the binding is site defined.|
