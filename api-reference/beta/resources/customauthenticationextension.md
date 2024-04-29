@@ -23,6 +23,10 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
 Learn how to use this API when [Configuring a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context).
 
+> [!NOTE]
+>
+> You can have a maximum of 100 custom extension policies.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
