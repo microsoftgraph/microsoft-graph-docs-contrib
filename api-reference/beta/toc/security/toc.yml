@@ -191,15 +191,15 @@ items:
   items:
   - name: Detection rule
     href: ../../resources/security-detectionrule.md
-  - name: List detectionRules
+  - name: List
     href: ../../api/security-detectionrule-list.md
-  - name: Get detectionRule
+  - name: Get
     href: ../../api/security-detectionrule-get.md
-  - name: Create detectionRule
+  - name: Create
     href: ../../api/security-detectionrule-post-detectionRules.md
-  - name: Update detectionRule
+  - name: Update
     href: ../../api/security-detectionrule-update.md
-  - name: Delete detectionRule
+  - name: Delete
     href: ../../api/security-detectionrule-delete.md
 - name: eDiscovery
   items:

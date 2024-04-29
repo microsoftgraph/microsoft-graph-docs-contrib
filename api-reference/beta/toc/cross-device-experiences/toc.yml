@@ -51,9 +51,9 @@ items:
     items:
     - name: Windows setting
       href: ../../resources/windowssetting.md
-    - name: List Windows settings
+    - name: List
       href: ../../api/usersettings-list-windows.md
-    - name: Get windowsSetting
+    - name: Get
       href: ../../api/windowssetting-get.md
     - name: List instances
       href: ../../api/windowssetting-list-instances.md

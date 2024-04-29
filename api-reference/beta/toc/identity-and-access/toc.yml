@@ -3963,28 +3963,22 @@ items:
       href: ../../api/networkaccess-branchsite-update.md
     - name: Delete branchSite
       href: ../../api/networkaccess-branchsite-delete.md
-    - name: List deviceLinks
-      href: ../../api/networkaccess-branchsite-list-devicelinks.md
-    - name: Create deviceLink
-      href: ../../api/networkaccess-branchsite-post-devicelinks.md
-    - name: List forwardingProfiles
-      href: ../../api/networkaccess-branchsite-list-forwardingprofiles.md
-    - name: Create forwardingProfile
-      href: ../../api/networkaccess-branchsite-post-forwardingprofiles.md
     - name: Device link
       items:
       - name: Device link
         href: ../../resources/networkaccess-devicelink.md
       - name: List deviceLinks
-        href: ../../api/networkaccess-branchsite-list-devicelinks.md
+        href: ../../api/networkaccess-remotenetwork-list-devicelinks.md
       - name: Create deviceLink
-        href: ../../api/networkaccess-branchsite-post-devicelinks.md
+        href: ../../api/networkaccess-remotenetwork-post-devicelinks.md
       - name: Get deviceLink
         href: ../../api/networkaccess-devicelink-get.md
-      - name: Update deviceLink
-        href: ../../api/networkaccess-devicelink-update.md
       - name: Delete deviceLink
-        href: ../../api/networkaccess-branchsite-delete-devicelinks.md
+        href: ../../api/networkaccess-devicelink-delete.md
+      - name: List deviceLinks for a branchSite (deprecated)
+        href: ../../api/networkaccess-branchsite-list-devicelinks.md
+      - name: Create deviceLink for a branchSite (deprecated)
+        href: ../../api/networkaccess-branchsite-post-devicelinks.md
     - name: Connectivity configuration link
       href: ../../resources/networkaccess-connectivityconfigurationlink.md
   - name: Enriched audit logs

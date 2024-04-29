@@ -13,6 +13,8 @@ items:
     href: ../../api/application-get.md
   - name: Update application
     href: ../../api/application-update.md
+  - name: Upsert application
+    href: ../../api/application-upsert.md
   - name: Delete application
     href: ../../api/application-delete.md
   - name: Get delta
@@ -37,30 +39,6 @@ items:
       href: ../../api/application-addkey.md
     - name: Remove key
       href: ../../api/application-removekey.md
-  - name: Extensions
-    items:
-    - name: List extensionProperties
-      href: ../../api/application-list-extensionproperty.md
-    - name: Create extensionProperties
-      href: ../../api/application-post-extensionproperty.md
-    - name: Get extensionProperty
-      href: ../../api/extensionproperty-delete.md
-    - name: Delete extensionProperty
-      href: ../../api/extensionproperty-delete.md
-    - name: Get available extension properties
-      href: ../../api/directoryobject-getavailableextensionproperties.md
-  - name: Federated identity credentials
-    items:
-    - name: List federatedIdentityCredential
-      href: ../../api/application-list-federatedidentitycredentials.md
-    - name: Create federatedIdentityCredential
-      href: ../../api/application-post-federatedidentitycredentials.md
-    - name: Get federatedIdentityCredential
-      href: ../../api/federatedidentitycredential-get.md
-    - name: Update federatedIdentityCredential
-      href: ../../api/federatedidentitycredential-update.md
-    - name: Delete federatedIdentityCredential
-      href: ../../api/federatedidentitycredential-delete.md
   - name: Owners
     items:
     - name: List owners
@@ -69,20 +47,6 @@ items:
       href: ../../api/application-post-owners.md
     - name: Remove owner
       href: ../../api/application-delete-owners.md
-  - name: Policies
-    items:
-    - name: Assign tokenIssuancePolicy
-      href: ../../api/application-post-tokenissuancepolicies.md
-    - name: List tokenIssuancePolicies
-      href: ../../api/application-list-tokenissuancepolicies.md
-    - name: Remove tokenIssuancePolicy
-      href: ../../api/application-delete-tokenissuancepolicies.md
-    - name: Assign tokenLifetimePolicy
-      href: ../../api/application-post-tokenlifetimepolicies.md
-    - name: List tokenLifetimePolicies
-      href: ../../api/application-list-tokenlifetimepolicies.md
-    - name: Remove tokenLifetimePolicy
-      href: ../../api/application-delete-tokenlifetimepolicies.md
   - name: Verified publisher
     items:
     - name: Set verified publisher
@@ -113,6 +77,8 @@ items:
     href: ../../api/federatedidentitycredential-get.md
   - name: Update federatedIdentityCredential
     href: ../../api/federatedidentitycredential-update.md
+  - name: Upsert federatedIdentityCredential
+    href: ../../api/federatedidentitycredential-upsert.md
   - name: Delete federatedIdentityCredential
     href: ../../api/federatedidentitycredential-delete.md
 - name: Service principal
@@ -127,6 +93,8 @@ items:
     href: ../../api/serviceprincipal-get.md
   - name: Update servicePrincipal
     href: ../../api/serviceprincipal-update.md
+  - name: Upsert servicePrincipal
+    href: ../../api/serviceprincipal-upsert.md
   - name: Delete servicePrincipal
     href: ../../api/serviceprincipal-delete.md
   - name: List deleted servicePrincipals

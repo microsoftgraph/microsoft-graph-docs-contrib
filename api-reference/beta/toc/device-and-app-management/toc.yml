@@ -362,6 +362,10 @@ items:
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
     - name: List sharedUseServicePlans
       href: ../../api/virtualendpoint-list-shareduseserviceplans.md
+    - name: List bulkActions
+      href: ../../api/virtualendpoint-list-bulkactions.md
+    - name: Create cloudPcBulkAction
+      href: ../../api/virtualendpoint-post-bulkactions.md
   - name: Complex types
     items:
     - name: App scope
@@ -5834,6 +5838,8 @@ items:
         href: ../../api/intune-devices-devicelogcollectionresponse-update.md
       - name: createDownloadUrl action
         href: ../../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
+      - name: downloadDeviceLogs action
+        href: ../../api/intune-devices-devicelogcollectionresponse-downloaddevicelogs.md
     - name: Device management abstract complex setting definition
       items:
       - name: Device management abstract complex setting definition
@@ -6384,8 +6390,8 @@ items:
         href: ../../api/intune-devices-manageddevice-rotatelocaladminpassword.md
       - name: pauseConfigurationRefresh action
         href: ../../api/intune-devices-manageddevice-pauseconfigurationrefresh.md
-      - name: syncPayloads action
-        href: ../../api/intune-devices-manageddevice-syncpayloads.md
+      - name: changeAssignments action
+        href: ../../api/intune-devices-manageddevice-changeassignments.md
       - name: appDiagnostics function
         href: ../../api/intune-devices-manageddevice-appdiagnostics.md
       - name: downloadAppDiagnostics action

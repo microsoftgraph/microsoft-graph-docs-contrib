@@ -87,6 +87,8 @@ items:
     href: ../../resources/planneruser.md
   - name: List tasks
     href: ../../api/planneruser-list-tasks.md
+  - name: List myDayTasks
+    href: ../../api/planneruser-list-mydaytasks.md
   - name: List favoritePlans
     href: ../../api/planneruser-list-favoriteplans.md
   - name: List recentPlans
