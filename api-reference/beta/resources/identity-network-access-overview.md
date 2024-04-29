@@ -14,7 +14,7 @@ ms.date: 04/29/2024
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With Microsoft Graph, you can manage identity and network access capabilities, most of which are available through [Microsoft Entra](/entra/fundamentals/whatis). The APIs in Microsoft Graph help you to automate identity and network access management tasks and integrate with any application, a programmatic alternative to the administrator portals such as the Microsoft Entra admin center.
+With Microsoft Graph, you can manage identity and network access capabilities, most of which are available through [Microsoft Entra](/entra/fundamentals/whatis). The APIs in Microsoft Graph help you to automate identity and network access management tasks and integrate with any application, and are the programmatic alternative to the administrator portals such as the Microsoft Entra admin center.
 
 Microsoft Entra is a family of identity and network access capabilities that are available in the following products. All these capabilities are available through Microsoft Graph APIs:
 - Microsoft Entra ID that groups identity and access management (IAM) capabilities.
@@ -62,7 +62,7 @@ A core functionality of identity and access management is managing your tenant c
 | Manage the base settings for your Microsoft Entra tenant | [organization resource type](organization.md) and its associated APIs |
 | Manage the tenant-wide settings for your Microsoft Entra tenant, such as whether people and item insights are enabled for the organization. | [organizationSettings resource type](organizationsettings.md) and its associated APIs |
 | Retrieve the organizational contacts that might be synchronized from on-premises directories or from Exchange Online | [orgContact resource type](orgcontact.md) and its associated APIs |
-| Discover the basic details of other Micrososft Entra tenants by querying using the tenant ID or the domain name | [tenantInformation resource type](tenantinformation.md) and its associated APIs |
+| Discover the basic details of other Microsoft Entra tenants by querying using the tenant ID or the domain name | [tenantInformation resource type](tenantinformation.md) and its associated APIs |
 | Configure trusted certificate authorities for certificates that can be assigned to apps and service principals in the tenant. | [certificateBasedApplicationConfiguration resource type](certificatebasedapplicationconfiguration.md) and its associated APIs |
 | Manage the delegated permissions  and their assignments to service principals in the tenant | [oAuth2PermissionGrant resource type](oauth2permissiongrant.md) and its associated APIs |
 
@@ -100,13 +100,16 @@ For more information, see [Overview of Microsoft Entra ID Governance using Micro
 
 ## Microsoft Entra External ID for external tenants
 
+The following API use cases ar supported to customize how users interact with your customer-facing applications. For administrators, most of the features available in Microsoft Entra ID and also supported for Microsoft Entra External ID for external tenants. For example, domain management, application management, and conditional access.
+
 | Use cases | API operations |
 |--|--|
-| User flows for Microsoft Entra External ID for external tenants | [authenticationEventsFlow resource type](authenticationeventsflow.md) and its associated APIs |
-| Manage identity providers for for Microsoft Entra External ID. You can identify the identity providers that are supported or configured in the tenant. | See [identityProviderBase resoruce type](identityproviderbase.md) and its associated APIs |
+| User flows for Microsoft Entra External ID for external tenants and self-service sign-up experiences | [authenticationEventsFlow resource type](authenticationeventsflow.md) and its associated APIs |
+| Manage identity providers for Microsoft Entra External ID. You can identify the identity providers that are supported or configured in the tenant. | See [identityProviderBase resoruce type](identityproviderbase.md) and its associated APIs |
 | Customize sign-in UIs to match your company branding, including applying branding that's based on the browser language | [organizationalBranding resource type](organizationalbranding.md) and its associated APIs |
 | Manage identity providers for Microsoft Entra External ID, such as social identities | [identityProviderBase resoruce type](identityproviderbase.md) and its associated APIs |
 | Manage user profiles in Microsoft Entra External ID for customers | For more information, see [Default user permissions in customer tenants](/graph/api/resources/users#default-user-permissions-in-customer-tenants) |
+| Add your own business logic to the authentication experiences by integrating with systems that are external to Microsoft Entra ID| [authenticationEventListener resource type](authenticationeventlistener.md) and [customAuthenticationExtension resource type](customauthenticationextension.md) and their associated APIs |
 
 ## Multicloud permissions management
 
@@ -124,7 +127,7 @@ With Microsoft Graph, you can access [Microsoft Entra](/entra/fundamentals/whati
 | Use cases                                           | API operations                                                |
 |-----------------------------------------------------|---------------------------------------------------------------|
 | Manage contracts for the partner with its customers | [contract resource type](contract.md) and its associated APIs |
-| Microsoft partners in the Cloud Solution Provider (CSP), Value Added Reseller (VAR), or Advisor programs can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives additional control to customers over their security posture while allowing them to receive support from the Microsoft resellers. | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
+| Microsoft partners in the Cloud Solution Provider (CSP), Value Added Reseller (VAR), or Advisor programs can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers. | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
 
 ---
 
