@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "assignSensitivityLabel",
           "ChangeType": "Addition",
-          "Description": "Added the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/plannerroster-assign-sensitivitylabel?view=graph-rest-beta) method to the [plannerRoster](https://learn.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) resource.",
+          "Description": "Added the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/plannerroster-assignsensitivitylabel?view=graph-rest-beta) method to the [plannerRoster](https://learn.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) resource.",
           "Target": "assignSensitivityLabel"
         }
       ],
