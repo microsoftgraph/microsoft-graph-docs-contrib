@@ -4810,7 +4810,7 @@ items:
                 href: api/educationassignment-activate.md
               - name: Deactivate assignment
                 href: api/educationassignment-deactivate.md
-          - name: Assignment resources
+          - name: Assignment resource
             href: resources/educationassignmentresource.md
             items:
               - name: List
