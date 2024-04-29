@@ -263,6 +263,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | licenseDetails/any(l:l/id)                                 | ![][RDS] |            |          |          |
 | mail                                                       | ![][RDS] | ![][RDS]   |          | ![][AQP] |
 | mailNickname                                               | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| manager/id                                                 | ![][NS]  |            |          |          |
 | mobilePhone                                                | ![][AQP] | ![][AQP]   |          | ![][AQP] |
 | oauth2PermissionGrants/any(o:o/id)                         | ![][RDS] |            |          |          |
 | officeLocation                                             | ![][AQP] | ![][AQP]   |          | ![][AQP] |
