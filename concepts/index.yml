@@ -23,7 +23,7 @@ highlightedContent:
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0
     - title: NEW! Deploy with Bicep
-      itemType: concept
+      itemType: deploy
       url: /graph/overview
     - title: What's new? 
       itemType: whats-new
