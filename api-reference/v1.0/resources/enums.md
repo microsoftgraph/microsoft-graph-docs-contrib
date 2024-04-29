@@ -2061,6 +2061,52 @@ Possible values for user account types (group membership), per Windows definitio
 | stapleDualRight    |
 | stapleDualBottom   |
 | unknownFutureValue |
+| stapleTripleLeft|
+| stapleTripleTop|
+| stapleTripleRight|
+| stapleTripleBottom|
+| bindLeft|
+| bindTop|
+| bindRight|
+| bindBottom|
+| foldAccordion|
+| foldDoubleGate|
+| foldGate|
+| foldHalf|
+| foldHalfZ|
+| foldLeftGate|
+| foldLetter|
+| foldParallel|
+| foldPoster|
+| foldRightGate|
+| foldZ|
+| foldEngineeringZ|
+| punchTopLeft|
+| punchBottomLeft|
+| punchTopRight|
+| punchBottomRight|
+| punchDualLeft|
+| punchDualTop|
+| punchDualRight|
+| punchDualBottom|
+| punchTripleLeft|
+| punchTripleTop|
+| punchTripleRight|
+| punchTripleBottom|
+| punchQuadLeft|
+| punchQuadTop|
+| punchQuadRight|
+| punchQuadBottom|
+| fold|
+| trim|
+| bale|
+| bookletMaker|
+| coat|
+| laminate|
+| trimAfterPages|
+| trimAfterDocuments|
+| trimAfterCopies|
+| trimAfterJob|
 
 ### printMultipageLayout values
 
