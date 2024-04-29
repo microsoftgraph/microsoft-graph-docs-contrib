@@ -88,7 +88,7 @@ The following example shows how to create a searchable custom property called `c
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/customProperties
+PATCH https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties
 Content-Type: application/json
 
 {
@@ -117,7 +117,7 @@ The following example shows how to create multiple custom properties for a conta
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/customProperties
+PATCH https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties
 Content-Type: application/json
 
 {
