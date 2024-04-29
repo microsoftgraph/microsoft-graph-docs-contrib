@@ -4772,20 +4772,20 @@ items:
           - name: Assignment
             href: resources/educationassignment.md
             items:
-              - name: Create assignment
+              - name: Create
                 href: api/educationclass-post-assignment.md
-              - name: Get assignment
+              - name: Get
                 href: api/educationassignment-get.md
-              - name: Update assignment
+              - name: Update
                 href: api/educationassignment-update.md
-              - name: Delete assignment
+              - name: Delete
                 href: api/educationassignment-delete.md
+              - name: Publish
+                href: api/educationassignment-publish.md
               - name: Set up assignment resources folder
                 href: api/educationassignment-setupresourcesfolder.md
               - name: Set up assignment feedback resources folder
                 href: api/educationassignment-setupfeedbackresourcesfolder.md
-              - name: Publish assignment
-                href: api/educationassignment-publish.md
               - name: List submissions for assignment
                 href: api/educationassignment-list-submissions.md
               - name: Get rubric attached to assignment
