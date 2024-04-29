@@ -1,6 +1,6 @@
 ---
 title: "List fileStorageContainer custom properties"
-description: "List the custom properties of a fileStorageContainer"
+description: "List the custom properties of a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"

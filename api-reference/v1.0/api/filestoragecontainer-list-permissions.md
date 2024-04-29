@@ -1,6 +1,6 @@
 ---
 title: "List permissions"
-description: "Get the set of permissions for a fileStorageContainer."
+description: "Get the permissions for a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"

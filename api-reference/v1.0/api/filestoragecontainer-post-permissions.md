@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add a [permission](../resources/permission.md) to an existing [fileStorageContainer](../resources/filestoragecontainer.md). 
+Add a [permission](../resources/permission.md) to a [fileStorageContainer](../resources/filestoragecontainer.md). 
 
 
 ## Permissions

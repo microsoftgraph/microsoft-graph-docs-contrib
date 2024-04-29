@@ -24,7 +24,7 @@ Contains the custom property values stored in a [fileStorageContainerCustomPrope
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
