@@ -10809,7 +10809,7 @@ items:
                 href: api/educationassignment-deactivate.md
               - name: Create grading scheme
                 href: api/educationassignment-post-gradingscheme.md
-          - name: Assignment resources
+          - name: Assignment resource
             href: resources/educationassignmentresource.md
             items:
               - name: List
