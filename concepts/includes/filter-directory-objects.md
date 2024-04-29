@@ -11,308 +11,307 @@ ms.topic: include
 
 ## Administrative unit properties
 
-| Property                      | eq               | startsWith       | eq Null             |
-|-------------------------------|------------------|------------------|---------------------|
-| description                   | ![Advanced][AQP] | ![Advanced][AQP] | ![Advanced][AQP]    |
-| displayName                   | ![Default][RDS]  | ![Default][RDS]  | ![Advanced][AQP]    |
-| isMemberManagementRestricted  | ![Default][RDS]  |                  | ![NotSupported][NS] |
-| membershipRule                | ![Default][RDS]  | ![Default][RDS]  | ![NotSupported][NS] |
-| membershipRuleProcessingState | ![Default][RDS]  |                  | ![NotSupported][NS] |
-| scopedRoleMembers/any(s:s/id) | ![Default][RDS]  |
+| Property                      | eq       | startsWith | eq Null  |
+| ----------------------------- | -------- | ---------- | -------- |
+| description                   | ![][AQP] | ![][AQP]   | ![][AQP] |
+| displayName                   | ![][RDS] | ![][RDS]   | ![][AQP] |
+| isMemberManagementRestricted  | ![][RDS] |            | ![][NS]  |
+| membershipRule                | ![][RDS] | ![][RDS]   | ![][NS]  |
+| membershipRuleProcessingState | ![][RDS] |            | ![][NS]  |
+| scopedRoleMembers/any(s:s/id) | ![][RDS] |            |          |
 
 ## Application properties
 
-| Property                                      | eq                  | startsWith          | ge/le           | eq Null             |
-|-----------------------------------------------|---------------------|---------------------|-----------------|---------------------|
-| appId                                         | ![Default][RDS]     |                     |                 |                     |
-| createdDateTime                               | ![Default][RDS]     |                     | ![Default][RDS] | ![Advanced][AQP]    |
-| createdOnBehalfOf/id                          | ![Default][RDS]     |                     |                 |                     |
-| description                                   | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
-| disabledByMicrosoftStatus                     | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
-| displayName                                   | ![Default][RDS]     | ![Default][RDS]     |                 | ![Advanced][AQP]    |
-| federatedIdentityCredentials/any(f:f/issuer)  | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![NotSupported][NS] |
-| federatedIdentityCredentials/any(f:f/name)    | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![NotSupported][NS] |
-| federatedIdentityCredentials/any(f:f/subject) | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![NotSupported][NS] |
-| identifierUris/any(p:p)                       | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
-| info/logoUrl                                  | ![NotSupported][NS] | ![NotSupported][NS] |                 | ![Advanced][AQP]    |
-| info/termsOfServiceUrl                        | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![NotSupported][NS] |
-| notes                                         | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
-| publicClient/redirectUris/any(p:p)            | ![Advanced][AQP]    | ![Advanced][AQP]    |                 |                     |
-| publisherDomain                               | ![Default][RDS]     | ![Default][RDS]     |                 | ![NotSupported][NS] |
-| requiredResourceAccess/any(r:r/resourceAppId) | ![Advanced][AQP]    |                     |                 |                     |
-| serviceManagementReference                    | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
-| signInAudience                                | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
-| spa/redirectUris/any(p:p)                     | ![Advanced][AQP]    | ![Advanced][AQP]    |                 |                     |
-| tags/any(p:p)                                 | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
-| uniqueName                                    | ![Default][RDS]     | ![Default][RDS]     |                 | ![NotSupported][NS] |
-| verifiedPublisher/displayName                 | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
-| web/homePageUrl                               | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
-| web/redirectUris/any(p:p)                     | ![Advanced][AQP]    | ![Advanced][AQP]    |
+| Property                                      | eq       | startsWith | ge/le    | eq Null  |
+| --------------------------------------------- | -------- | ---------- | -------- | -------- |
+| appId                                         | ![][RDS] |            |          |          |
+| createdDateTime                               | ![][RDS] |            | ![][RDS] | ![][AQP] |
+| createdOnBehalfOf/id                          | ![][RDS] |            |          |          |
+| description                                   | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| disabledByMicrosoftStatus                     | ![][RDS] |            |          | ![][NS]  |
+| displayName                                   | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| federatedIdentityCredentials/any(f:f/issuer)  | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| federatedIdentityCredentials/any(f:f/name)    | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| federatedIdentityCredentials/any(f:f/subject) | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| identifierUris/any(p:p)                       | ![][RDS] | ![][RDS]   |          |          |
+| info/logoUrl                                  | ![][NS]  | ![][NS]    |          | ![][AQP] |
+| info/termsOfServiceUrl                        | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| notes                                         | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| publicClient/redirectUris/any(p:p)            | ![][AQP] | ![][AQP]   |          |          |
+| publisherDomain                               | ![][RDS] | ![][RDS]   |          | ![][NS]  |
+| requiredResourceAccess/any(r:r/resourceAppId) | ![][AQP] |            |          |          |
+| serviceManagementReference                    | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| signInAudience                                | ![][RDS] |            |          | ![][NS]  |
+| spa/redirectUris/any(p:p)                     | ![][AQP] | ![][AQP]   |          |          |
+| tags/any(p:p)                                 | ![][RDS] | ![][RDS]   |          |          |
+| uniqueName                                    | ![][RDS] | ![][RDS]   |          | ![][NS]  |
+| verifiedPublisher/displayName                 | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| web/homePageUrl                               | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| web/redirectUris/any(p:p)                     | ![][AQP] | ![][AQP]   |          |          |
 
 The following properties of the application entity support `$count` of a collection in a filter expression.
 
-| Property                            | eq Count 0       | eq Count 1          |
-|-------------------------------------|------------------|---------------------|
-| extensionProperties/$count          | ![Advanced][AQP] | ![NotSupported][NS] |
-| federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
+| Property                            | eq Count 0 | eq Count 1 |
+| ----------------------------------- | ---------- | ---------- |
+| extensionProperties/$count          | ![][AQP]   | ![][NS]    |
+| federatedIdentityCredentials/$count | ![][AQP]   | ![][NS]    |
 
 ## Contract properties
 
-| Property          | eq              | startsWith      |
-|-------------------|-----------------|-----------------|
-| customerId        | ![Default][RDS] |                 |
-| defaultDomainName | ![Default][RDS] | ![Default][RDS] |
-| displayName       | ![Default][RDS] | ![Default][RDS] |
+| Property          | eq       | startsWith |
+| ----------------- | -------- | ---------- |
+| customerId        | ![][RDS] |            |
+| defaultDomainName | ![][RDS] | ![][RDS]   |
+| displayName       | ![][RDS] | ![][RDS]   |
 
 ## Device properties
 
-| Property                                         | eq               | startsWith       | ge/le            | eq Null             |
-|--------------------------------------------------|------------------|------------------|------------------|---------------------|
-| accountEnabled                                   | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| alternativeSecurityIds/any(a:a/identityProvider) | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![NotSupported][NS] |
-| alternativeSecurityIds/any(a:a/type)             | ![Default][RDS]  |                  | ![Advanced][AQP] | ![NotSupported][NS] |
-| approximateLastSignInDateTime                    | ![Default][RDS]  |                  | ![Default][RDS]  | ![Advanced][AQP]    |
-| deviceCategory                                   | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
-| deviceId                                         | ![Default][RDS]  |                  |                  |                     |
-| deviceOwnership                                  | ![Advanced][AQP] |                  |                  | ![Advanced][AQP]    |
-| displayName                                      | ![Default][RDS]  | ![Default][RDS]  |                  | ![Advanced][AQP]    |
-| enrollmentProfileName                            | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
-| extensionAttributes/extensionAttribute1-15       | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
-| hostnames/any(p:p)                               | ![Default][RDS]  | ![Default][RDS]  |                  |                     |
-| isCompliant                                      | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| isManaged                                        | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| isRooted                                         | ![Advanced][AQP] |                  |                  | ![Advanced][AQP]    |
-| managementType                                   | ![Advanced][AQP] |                  |                  | ![Advanced][AQP]    |
-| manufacturer                                     | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
-| mdmAppId                                         | ![Default][RDS]  |                  |                  |                     |
-| model                                            | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
-| onPremisesLastSyncDateTime                       | ![Default][RDS]  |                  | ![Default][RDS]  | ![NotSupported][NS] |
-| onPremisesSecurityIdentifier                     | ![Default][RDS]  |                  |                  | ![Advanced][AQP]    |
-| onPremisesSyncEnabled                            | ![Default][RDS]  |                  |                  | ![Advanced][AQP]    |
-| operatingSystem                                  | ![Default][RDS]  | ![Default][RDS]  |                  | ![Advanced][AQP]    |
-| operatingSystemVersion                           | ![Default][RDS]  | ![Default][RDS]  |                  | ![Advanced][AQP]    |
-| physicalIds/any(p:p)                             | ![Default][RDS]  |                  |                  |                     |
-| profileType                                      | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| registrationDateTime                             | ![Advanced][AQP] |                  | ![Advanced][AQP] | ![Advanced][AQP]    |
-| trustType                                        | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
+| Property                                         | eq       | startsWith | ge/le    | eq Null  |
+| ------------------------------------------------ | -------- | ---------- | -------- | -------- |
+| accountEnabled                                   | ![][RDS] |            |          | ![][NS]  |
+| alternativeSecurityIds/any(a:a/identityProvider) | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| alternativeSecurityIds/any(a:a/type)             | ![][RDS] |            | ![][AQP] | ![][NS]  |
+| approximateLastSignInDateTime                    | ![][RDS] |            | ![][RDS] | ![][AQP] |
+| deviceCategory                                   | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| deviceId                                         | ![][RDS] |            |          |          |
+| deviceOwnership                                  | ![][AQP] |            |          | ![][AQP] |
+| displayName                                      | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| enrollmentProfileName                            | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| extensionAttributes/extensionAttribute1-15       | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| hostnames/any(p:p)                               | ![][RDS] | ![][RDS]   |          |          |
+| isCompliant                                      | ![][RDS] |            |          | ![][NS]  |
+| isManaged                                        | ![][RDS] |            |          | ![][NS]  |
+| isRooted                                         | ![][AQP] |            |          | ![][AQP] |
+| managementType                                   | ![][AQP] |            |          | ![][AQP] |
+| manufacturer                                     | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| mdmAppId                                         | ![][RDS] |            |          |          |
+| model                                            | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| onPremisesLastSyncDateTime                       | ![][RDS] |            | ![][RDS] | ![][NS]  |
+| onPremisesSecurityIdentifier                     | ![][RDS] |            |          | ![][AQP] |
+| onPremisesSyncEnabled                            | ![][RDS] |            |          | ![][AQP] |
+| operatingSystem                                  | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| operatingSystemVersion                           | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| physicalIds/any(p:p)                             | ![][RDS] |            |          |          |
+| profileType                                      | ![][RDS] |            |          | ![][NS]  |
+| registrationDateTime                             | ![][AQP] |            | ![][AQP] | ![][AQP] |
+| trustType                                        | ![][RDS] |            |          | ![][NS]  |
 
 The following properties of the **device** entity support `$count` of a collection in a filter expression.
 
-| Property            | eq Count 0       | eq Count 1          |
-|---------------------|------------------|---------------------|
-| physicalIds/$count  | ![Advanced][AQP] | ![NotSupported][NS] |
-| systemLabels/$count | ![Advanced][AQP] | ![NotSupported][NS] |
+| Property            | eq Count 0 | eq Count 1 |
+| ------------------- | ---------- | ---------- |
+| physicalIds/$count  | ![][AQP]   | ![][NS]    |
+| systemLabels/$count | ![][AQP]   | ![][NS]    |
 
 ## Directory role properties
 
-| Property       | eq               | startsWith       | eq Null             |
-|----------------|------------------|------------------|---------------------|
-| description    | ![Advanced][AQP] | ![Advanced][AQP] | ![Advanced][AQP]    |
-| displayName    | ![Default][RDS]  | ![Advanced][AQP] | ![Advanced][AQP]    |
-| roleTemplateId | ![Default][RDS]  |                  | ![NotSupported][NS] |
+| Property       | eq       | startsWith | eq Null  |
+| -------------- | -------- | ---------- | -------- |
+| description    | ![][AQP] | ![][AQP]   | ![][AQP] |
+| displayName    | ![][RDS] | ![][AQP]   | ![][AQP] |
+| roleTemplateId | ![][RDS] |            | ![][NS]  |
 
 ## Group properties
 
-| Property                                                   | eq               | startsWith       | ge/le            | eq Null             |
-|------------------------------------------------------------|------------------|------------------|------------------|---------------------|
-| appRoleAssignments/any(a:a/id)                             | ![Default][RDS]  |                  |                  |                     |
-| assignedLicenses/any(a:a/skuId)                            | ![Default][RDS]  |                  |                  |                     |
-| classification                                             | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |
-| createdByAppId                                             | ![Default][RDS]  |                  |                  |                     |
-| createdOnBehalfOf/id                                       | ![Default][RDS]  |                  |                  |                     |
-| description                                                | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
-| displayName                                                | ![Default][RDS]  | ![Default][RDS]  |                  | ![Advanced][AQP]    |
-| expirationDateTime                                         | ![Advanced][AQP] |                  | ![Advanced][AQP] | ![NotSupported][NS] |
-| hasMembersWithLicenseErrors                                | ![Default][RDS]  |                  |                  | ![Default][RDS]     |
-| infoCatalogs/any(p:p)                                      | ![Default][RDS]  | ![Default][RDS]  |                  |                     |
-| isAssignableToRole                                         | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| mail                                                       | ![Default][RDS]  | ![Default][RDS]  |                  | ![Advanced][AQP]    |
-| mailEnabled                                                | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| mailNickname                                               | ![Default][RDS]  | ![Default][RDS]  |                  | ![Advanced][AQP]    |
-| membershipRule                                             | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |
-| membershipRuleProcessingState                              | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| onPremisesLastSyncDateTime                                 | ![Default][RDS]  |                  | ![Default][RDS]  | ![NotSupported][NS] |
-| onPremisesProvisioningErrors/any(o:o/category)             | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| onPremisesSamAccountName                                   | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![NotSupported][NS] |
-| onPremisesSecurityIdentifier                               | ![Default][RDS]  |                  |                  | ![Advanced][AQP]    |
-| onPremisesSyncEnabled                                      | ![Default][RDS]  |                  |                  | ![Advanced][AQP]    |
-| preferredLanguage                                          | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
-| proxyAddresses/any(p:p)                                    | ![Default][RDS]  | ![Default][RDS]  |                  |                     |
-| renewedDateTime                                            | ![Default][RDS]  |                  | ![Default][RDS]  | ![NotSupported][NS] |
-| resourceBehaviorOptions/any(p:p)                           | ![Default][RDS]  |                  |                  |                     |
-| resourceProvisioningOptions/any(p:p)                       | ![Default][RDS]  |                  |                  |                     |
-| securityEnabled                                            | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| settings/any(s:s/displayName)                              | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |
-| settings/any(s:s/id)                                       | ![Default][RDS]  |                  |                  |                     |
-| uniqueName                                                 | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |
+| Property                                                   | eq       | startsWith | ge/le    | eq Null  |
+| ---------------------------------------------------------- | -------- | ---------- | -------- | -------- |
+| appRoleAssignments/any(a:a/id)                             | ![][RDS] |            |          |          |
+| assignedLicenses/any(a:a/skuId)                            | ![][RDS] |            |          |          |
+| classification                                             | ![][RDS] | ![][RDS]   |          | ![][NS]  |
+| createdByAppId                                             | ![][RDS] |            |          |          |
+| createdOnBehalfOf/id                                       | ![][RDS] |            |          |          |
+| description                                                | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| displayName                                                | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| expirationDateTime                                         | ![][AQP] |            | ![][AQP] | ![][NS]  |
+| hasMembersWithLicenseErrors                                | ![][RDS] |            |          | ![][RDS] |
+| infoCatalogs/any(p:p)                                      | ![][RDS] | ![][RDS]   |          |          |
+| isAssignableToRole                                         | ![][RDS] |            |          | ![][NS]  |
+| mail                                                       | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| mailEnabled                                                | ![][RDS] |            |          | ![][NS]  |
+| mailNickname                                               | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| membershipRule                                             | ![][RDS] | ![][RDS]   |          | ![][NS]  |
+| membershipRuleProcessingState                              | ![][RDS] |            |          | ![][NS]  |
+| onPremisesLastSyncDateTime                                 | ![][RDS] |            | ![][RDS] | ![][NS]  |
+| onPremisesProvisioningErrors/any(o:o/category)             | ![][RDS] |            |          | ![][NS]  |
+| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![][RDS] |            |          | ![][NS]  |
+| onPremisesSamAccountName                                   | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| onPremisesSecurityIdentifier                               | ![][RDS] |            |          | ![][AQP] |
+| onPremisesSyncEnabled                                      | ![][RDS] |            |          | ![][AQP] |
+| preferredLanguage                                          | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| proxyAddresses/any(p:p)                                    | ![][RDS] | ![][RDS]   |          |          |
+| renewedDateTime                                            | ![][RDS] |            | ![][RDS] | ![][NS]  |
+| resourceBehaviorOptions/any(p:p)                           | ![][RDS] |            |          |          |
+| resourceProvisioningOptions/any(p:p)                       | ![][RDS] |            |          |          |
+| securityEnabled                                            | ![][RDS] |            |          | ![][NS]  |
+| settings/any(s:s/displayName)                              | ![][RDS] | ![][RDS]   |          | ![][NS]  |
+| settings/any(s:s/id)                                       | ![][RDS] |            |          |          |
+| uniqueName                                                 | ![][RDS] | ![][RDS]   |          | ![][NS]  |
 
 The following properties of the **group** entity support `$count` of a collection in a filter expression.
 
-| Property                            | eq Count 0       | eq Count 1          |
-|-------------------------------------|------------------|---------------------|
-| assignedLicenses/$count             | ![Advanced][AQP] | ![NotSupported][NS] |
-| onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
+| Property                            | eq Count 0 | eq Count 1 |
+| ----------------------------------- | ---------- | ---------- |
+| assignedLicenses/$count             | ![][AQP]   | ![][NS]    |
+| onPremisesProvisioningErrors/$count | ![][AQP]   | ![][NS]    |
+| proxyAddresses/$count               | ![][AQP]   | ![][NS]    |
 
 ## Organizational contact properties
 
-| Property                                                   | eq               | startsWith       | ge/le           | eq Null             |
-|------------------------------------------------------------|------------------|------------------|-----------------|---------------------|
-| companyName                                                | ![Advanced][AQP] | ![Advanced][AQP] |                 | ![Advanced][AQP]    |
-| department                                                 | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
-| displayName                                                | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
-| givenName                                                  | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
-| jobTitle                                                   | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
-| mail                                                       | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
-| mailNickname                                               | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
-| manager/id                                                 | ![Default][RDS]  |                  |                 |                     |
-| onPremisesLastSyncDateTime                                 | ![Default][RDS]  |                  | ![Default][RDS] | ![NotSupported][NS] |
-| onPremisesProvisioningErrors/any(o:o/category)             | ![Default][RDS]  |                  |                 | ![NotSupported][NS] |
-| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Default][RDS]  |                  |                 | ![NotSupported][NS] |
-| onPremisesSyncEnabled                                      | ![Default][RDS]  |                  |                 | ![Advanced][AQP]    |
-| proxyAddresses/any(p:p)                                    | ![Default][RDS]  | ![Default][RDS]  |                 |                     |
-| surname                                                    | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
+| Property                                                   | eq       | startsWith | ge/le    | eq Null  |
+| ---------------------------------------------------------- | -------- | ---------- | -------- | -------- |
+| companyName                                                | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| department                                                 | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| displayName                                                | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| givenName                                                  | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| jobTitle                                                   | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| mail                                                       | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| mailNickname                                               | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| manager/id                                                 | ![][RDS] |            |          |          |
+| onPremisesLastSyncDateTime                                 | ![][RDS] |            | ![][RDS] | ![][NS]  |
+| onPremisesProvisioningErrors/any(o:o/category)             | ![][RDS] |            |          | ![][NS]  |
+| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![][RDS] |            |          | ![][NS]  |
+| onPremisesSyncEnabled                                      | ![][RDS] |            |          | ![][AQP] |
+| proxyAddresses/any(p:p)                                    | ![][RDS] | ![][RDS]   |          |          |
+| surname                                                    | ![][RDS] | ![][RDS]   |          | ![][AQP] |
 
 The following properties of the **orgContact** entity support `$count` of a collection in a filter expression.
 
-| Property                            | eq Count 0       | eq Count 1          |
-|-------------------------------------|------------------|---------------------|
-| onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
+| Property                            | eq Count 0 | eq Count 1 |
+| ----------------------------------- | ---------- | ---------- |
+| onPremisesProvisioningErrors/$count | ![][AQP]   | ![][NS]    |
+| proxyAddresses/$count               | ![][AQP]   | ![][NS]    |
 
 ## Service principal properties
 
-| Property                                                                   | eq                  | startsWith          | ge/le           | eq Null             |
-|----------------------------------------------------------------------------|---------------------|---------------------|-----------------|---------------------|
-| accountEnabled                                                             | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
-| alternativeNames/any(p:p)                                                  | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
-| appId                                                                      | ![Default][RDS]     |                     |                 |                     |
-| appOwnerOrganizationId                                                     | ![Advanced][AQP]    |                     |                 |                     |
-| appRoleAssignedTo/any(a:a/id)                                              | ![Default][RDS]     |                     |                 |                     |
-| appRoleAssignmentRequired                                                  | ![Advanced][AQP]    |                     |                 | ![NotSupported][NS] |
-| appRoleAssignments/any(a:a/id)                                             | ![Default][RDS]     |                     |                 |                     |
-| applicationTemplateId                                                      | ![Default][RDS]     |                     |                 |                     |
-| createdObjects/any(c:c/id)                                                 | ![Advanced][AQP]    |                     |                 |                     |
-| delegatedPermissionClassifications/any(d:d/id)                             | ![Default][RDS]     |                     |                 |                     |
-| description                                                                | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
-| displayName                                                                | ![Default][RDS]     | ![Default][RDS]     |                 | ![Advanced][AQP]    |
-| federatedIdentityCredentials/any(f:f/issuer)                               | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![NotSupported][NS] |
-| federatedIdentityCredentials/any(f:f/name)                                 | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![NotSupported][NS] |
-| federatedIdentityCredentials/any(f:f/subject)                              | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![NotSupported][NS] |
-| homepage                                                                   | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
-| info/logoUrl                                                               | ![NotSupported][NS] | ![NotSupported][NS] |                 | ![Advanced][AQP]    |
-| info/termsOfServiceUrl                                                     | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![NotSupported][NS] |
-| notes                                                                      | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
-| oauth2PermissionGrants/any(o:o/id)                                         | ![Default][RDS]     |                     |                 |                     |
-| preferredSingleSignOnMode                                                  | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
-| preferredTokenSigningKeyEndDateTime                                        | ![Default][RDS]     |                     | ![Default][RDS] | ![NotSupported][NS] |
-| publisherName                                                              | ![Default][RDS]     | ![Default][RDS]     |                 | ![NotSupported][NS] |
-| remoteDesktopSecurityConfiguration/id                                      | ![Default][RDS]     |                     |                 |                     |
-| remoteDesktopSecurityConfiguration/targetDeviceGroups/any(t:t/displayName) | ![Default][RDS]     | ![Default][RDS]     |                 | ![NotSupported][NS] |
-| remoteDesktopSecurityConfiguration/targetDeviceGroups/any(t:t/id)          | ![Default][RDS]     |                     |                 |                     |
-| servicePrincipalNames/any(p:p)                                             | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
-| servicePrincipalType                                                       | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
-| tags/any(p:p)                                                              | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
-| verifiedPublisher/displayName                                              | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
+| Property                                                                   | eq       | startsWith | ge/le    | eq Null  |
+| -------------------------------------------------------------------------- | -------- | ---------- | -------- | -------- |
+| accountEnabled                                                             | ![][RDS] |            |          | ![][NS]  |
+| alternativeNames/any(p:p)                                                  | ![][RDS] | ![][RDS]   |          |          |
+| appId                                                                      | ![][RDS] |            |          |          |
+| appOwnerOrganizationId                                                     | ![][AQP] |            |          |          |
+| appRoleAssignedTo/any(a:a/id)                                              | ![][RDS] |            |          |          |
+| appRoleAssignmentRequired                                                  | ![][AQP] |            |          | ![][NS]  |
+| appRoleAssignments/any(a:a/id)                                             | ![][RDS] |            |          |          |
+| applicationTemplateId                                                      | ![][RDS] |            |          |          |
+| createdObjects/any(c:c/id)                                                 | ![][AQP] |            |          |          |
+| delegatedPermissionClassifications/any(d:d/id)                             | ![][RDS] |            |          |          |
+| description                                                                | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| displayName                                                                | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| federatedIdentityCredentials/any(f:f/issuer)                               | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| federatedIdentityCredentials/any(f:f/name)                                 | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| federatedIdentityCredentials/any(f:f/subject)                              | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| homepage                                                                   | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| info/logoUrl                                                               | ![][NS]  | ![][NS]    |          | ![][AQP] |
+| info/termsOfServiceUrl                                                     | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| notes                                                                      | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| oauth2PermissionGrants/any(o:o/id)                                         | ![][RDS] |            |          |          |
+| preferredSingleSignOnMode                                                  | ![][RDS] |            |          | ![][NS]  |
+| preferredTokenSigningKeyEndDateTime                                        | ![][RDS] |            | ![][RDS] | ![][NS]  |
+| publisherName                                                              | ![][RDS] | ![][RDS]   |          | ![][NS]  |
+| remoteDesktopSecurityConfiguration/id                                      | ![][RDS] |            |          |          |
+| remoteDesktopSecurityConfiguration/targetDeviceGroups/any(t:t/displayName) | ![][RDS] | ![][RDS]   |          | ![][NS]  |
+| remoteDesktopSecurityConfiguration/targetDeviceGroups/any(t:t/id)          | ![][RDS] |            |          |          |
+| servicePrincipalNames/any(p:p)                                             | ![][RDS] | ![][RDS]   |          |          |
+| servicePrincipalType                                                       | ![][RDS] |            |          | ![][NS]  |
+| tags/any(p:p)                                                              | ![][RDS] | ![][RDS]   |          |          |
+| verifiedPublisher/displayName                                              | ![][AQP] | ![][AQP]   |          | ![][AQP] |
 
 The following properties of the **servicePrincipal** entity support `$count` of a collection in a filter expression.
 
-| Property                            | eq Count 0       | eq Count 1          |
-|-------------------------------------|------------------|---------------------|
-| federatedIdentityCredentials/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| ownedObjects/$count                 | ![Advanced][AQP] | ![Advanced][AQP]    |
+| Property                            | eq Count 0 | eq Count 1 |
+| ----------------------------------- | ---------- | ---------- |
+| federatedIdentityCredentials/$count | ![][AQP]   | ![][NS]    |
+| ownedObjects/$count                 | ![][AQP]   | ![][AQP]   |
 
 ## User properties
 
-| Property                                                            | eq                  | startsWith          | ge/le            | eq Null             |
-|---------------------------------------------------------------------|---------------------|---------------------|------------------|---------------------|
-| accountEnabled                                                      | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| ageGroup                                                            | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| appRoleAssignments/any(a:a/id)                                      | ![Default][RDS]     |                     |                  |                     |
-| assignedLicenses/any(a:a/skuId)                                     | ![Default][RDS]     |                     |                  |                     |
-| assignedPlans/any(a:a/capabilityStatus)                             | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
-| assignedPlans/any(a:a/service)                                      | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
-| assignedPlans/any(a:a/servicePlanId)                                | ![Advanced][AQP]    |                     |                  |                     |
-| authorizationInfo/certificateUserIds/any(p:p)                       | ![Advanced][AQP]    |                     |                  |                     |
-| businessPhones/any(p:p)                                             | ![Advanced][AQP]    | ![Advanced][AQP]    |                  |                     |
-| city                                                                | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| cloudRealtimeCommunicationInfo/isSipEnabled                         | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| companyName                                                         | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| consentProvidedForMinor                                             | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| country                                                             | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| createdDateTime                                                     | ![Default][RDS]     |                     | ![Default][RDS]  | ![Advanced][AQP]    |
-| createdObjects/any(c:c/id)                                          | ![Advanced][AQP]    |                     |                  |                     |
-| creationType                                                        | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| department                                                          | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| displayName                                                         | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| employeeHireDate                                                    | ![Advanced][AQP]    |                     | ![Advanced][AQP] | ![NotSupported][NS] |
-| employeeId                                                          | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
-| employeeOrgData/costCenter                                          | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
-| employeeOrgData/division                                            | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
-| employeeType                                                        | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
-| externalUserState                                                   | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| faxNumber                                                           | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| givenName                                                           | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| identities/any(i:i/issuer)                                          | ![Default][RDS]     | ![NotSupported][NS] |                  | ![Default][RDS]     |
-| imAddresses/any(p:p)                                                | ![Default][RDS]     | ![Default][RDS]     |                  |                     |
-| infoCatalogs/any(p:p)                                               | ![Default][RDS]     | ![Default][RDS]     |                  |                     |
-| isLicenseReconciliationNeeded                                       | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| isResourceAccount                                                   | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| jobTitle                                                            | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| licenseDetails/any(l:l/id)                                          | ![Default][RDS]     |                     |                  |                     |
-| mail                                                                | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| mailNickname                                                        | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| manager/id                                                          | ![Default][RDS]     |                     |                  |                     |
-| mobilePhone                                                         | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| oauth2PermissionGrants/any(o:o/id)                                  | ![Default][RDS]     |                     |                  |                     |
-| officeLocation                                                      | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| onPremisesDistinguishedName                                         | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| onPremisesExtensionAttributes/extensionAttribute1-15                | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| onPremisesImmutableId                                               | ![Default][RDS]     |                     |                  |                     |
-| onPremisesLastSyncDateTime                                          | ![Default][RDS]     |                     | ![Default][RDS]  | ![NotSupported][NS] |
-| onPremisesProvisioningErrors/any(o:o/category)                      | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| onPremisesProvisioningErrors/any(o:o/propertyCausingError)          | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| onPremisesSamAccountName                                            | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
-| onPremisesSecurityIdentifier                                        | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
-| onPremisesSipInfo/isSipEnabled                                      | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
-| onPremisesSyncEnabled                                               | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
-| otherMails/any(p:p)                                                 | ![Default][RDS]     | ![Default][RDS]     |                  |                     |
-| passwordPolicies                                                    | ![NotSupported][NS] | ![NotSupported][NS] |                  | ![Advanced][AQP]    |
-| passwordProfile/forceChangePasswordNextSignIn                       | ![Advanced][AQP]    |                     |                  | ![Advanced][AQP]    |
-| passwordProfile/forceChangePasswordNextSignInWithMfa                | ![Advanced][AQP]    |                     |                  | ![Advanced][AQP]    |
-| postalCode                                                          | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| preferredLanguage                                                   | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| provisionedPlans/any(p:p/provisioningStatus)                        | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
-| provisionedPlans/any(p:p/service)                                   | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
-| proxyAddresses/any(p:p)                                             | ![Default][RDS]     | ![Default][RDS]     |                  |                     |
-| scopedRoleMemberOf/any(s:s/id)                                      | ![Default][RDS]     |                     |                  |                     |
-| showInAddressList                                                   | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
-| state                                                               | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
-| streetAddress                                                       | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| surname                                                             | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| usageLocation                                                       | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| userPrincipalName                                                   | ![Default][RDS]     | ![Default][RDS]     |                  | ![NotSupported][NS] |
-| userType                                                            | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
+| Property                                                   | eq       | startsWith | ge/le    | eq Null  |
+| ---------------------------------------------------------- | -------- | ---------- | -------- | -------- |
+| accountEnabled                                             | ![][RDS] |            |          | ![][NS]  |
+| ageGroup                                                   | ![][RDS] |            |          | ![][NS]  |
+| appRoleAssignments/any(a:a/id)                             | ![][RDS] |            |          |          |
+| assignedLicenses/any(a:a/skuId)                            | ![][RDS] |            |          |          |
+| assignedPlans/any(a:a/capabilityStatus)                    | ![][AQP] |            |          | ![][NS]  |
+| assignedPlans/any(a:a/service)                             | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| assignedPlans/any(a:a/servicePlanId)                       | ![][AQP] |            |          |          |
+| authorizationInfo/certificateUserIds/any(p:p)              | ![][AQP] |            |          |          |
+| businessPhones/any(p:p)                                    | ![][AQP] | ![][AQP]   |          |          |
+| city                                                       | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| cloudRealtimeCommunicationInfo/isSipEnabled                | ![][RDS] |            |          | ![][NS]  |
+| companyName                                                | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| consentProvidedForMinor                                    | ![][RDS] |            |          | ![][NS]  |
+| country                                                    | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| createdDateTime                                            | ![][RDS] |            | ![][RDS] | ![][AQP] |
+| createdObjects/any(c:c/id)                                 | ![][AQP] |            |          |          |
+| creationType                                               | ![][RDS] |            |          | ![][NS]  |
+| department                                                 | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| displayName                                                | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| employeeHireDate                                           | ![][AQP] |            | ![][AQP] | ![][NS]  |
+| employeeId                                                 | ![][RDS] |            |          | ![][AQP] |
+| employeeOrgData/costCenter                                 | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| employeeOrgData/division                                   | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| employeeType                                               | ![][AQP] |            |          | ![][NS]  |
+| externalUserState                                          | ![][RDS] |            |          | ![][NS]  |
+| faxNumber                                                  | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| givenName                                                  | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| identities/any(i:i/issuer)                                 | ![][RDS] | ![][NS]    |          | ![][RDS] |
+| imAddresses/any(p:p)                                       | ![][RDS] | ![][RDS]   |          |          |
+| infoCatalogs/any(p:p)                                      | ![][RDS] | ![][RDS]   |          |          |
+| isLicenseReconciliationNeeded                              | ![][RDS] |            |          | ![][NS]  |
+| isResourceAccount                                          | ![][RDS] |            |          | ![][NS]  |
+| jobTitle                                                   | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| licenseDetails/any(l:l/id)                                 | ![][RDS] |            |          |          |
+| mail                                                       | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| mailNickname                                               | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| mobilePhone                                                | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| oauth2PermissionGrants/any(o:o/id)                         | ![][RDS] |            |          |          |
+| officeLocation                                             | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| onPremisesDistinguishedName                                | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| onPremisesExtensionAttributes/extensionAttribute1-15       | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| onPremisesImmutableId                                      | ![][RDS] |            |          |          |
+| onPremisesLastSyncDateTime                                 | ![][RDS] |            | ![][RDS] | ![][NS]  |
+| onPremisesProvisioningErrors/any(o:o/category)             | ![][RDS] |            |          | ![][NS]  |
+| onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![][RDS] |            |          | ![][NS]  |
+| onPremisesSamAccountName                                   | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| onPremisesSecurityIdentifier                               | ![][RDS] |            |          | ![][AQP] |
+| onPremisesSipInfo/isSipEnabled                             | ![][AQP] |            |          | ![][NS]  |
+| onPremisesSyncEnabled                                      | ![][RDS] |            |          | ![][AQP] |
+| otherMails/any(p:p)                                        | ![][RDS] | ![][RDS]   |          |          |
+| passwordPolicies                                           | ![][NS]  | ![][NS]    |          | ![][AQP] |
+| passwordProfile/forceChangePasswordNextSignIn              | ![][AQP] |            |          | ![][AQP] |
+| passwordProfile/forceChangePasswordNextSignInWithMfa       | ![][AQP] |            |          | ![][AQP] |
+| postalCode                                                 | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| preferredLanguage                                          | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| provisionedPlans/any(p:p/provisioningStatus)               | ![][AQP] |            |          | ![][NS]  |
+| provisionedPlans/any(p:p/service)                          | ![][AQP] | ![][AQP]   |          | ![][NS]  |
+| proxyAddresses/any(p:p)                                    | ![][RDS] | ![][RDS]   |          |          |
+| scopedRoleMemberOf/any(s:s/id)                             | ![][RDS] |            |          |          |
+| showInAddressList                                          | ![][AQP] |            |          | ![][NS]  |
+| state                                                      | ![][RDS] |            |          | ![][AQP] |
+| streetAddress                                              | ![][AQP] | ![][AQP]   |          | ![][AQP] |
+| surname                                                    | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| usageLocation                                              | ![][RDS] | ![][RDS]   |          | ![][AQP] |
+| userPrincipalName                                          | ![][RDS] | ![][RDS]   |          | ![][NS]  |
+| userType                                                   | ![][RDS] |            |          | ![][AQP] |
 
 The following properties of the **user** entity support `$count` of a collection in a filter expression.
 
-| Property                   | eq Count 0       | eq Count 1          |
-|-------------------------------------|------------------|---------------------|
-| assignedLicenses/$count             | ![Advanced][AQP] | ![NotSupported][NS] |
-| onPremisesProvisioningErrors/$count | ![Advanced][AQP] | ![NotSupported][NS] |
-| otherMails/$count                   | ![Advanced][AQP] | ![NotSupported][NS] |
-| ownedObjects/$count                 | ![Advanced][AQP] | ![Advanced][AQP]    |
-| proxyAddresses/$count               | ![Advanced][AQP] | ![NotSupported][NS] |
+| Property                            | eq Count 0 | eq Count 1 |
+| ----------------------------------- | ---------- | ---------- |
+| assignedLicenses/$count             | ![][AQP]   | ![][NS]    |
+| onPremisesProvisioningErrors/$count | ![][AQP]   | ![][NS]    |
+| otherMails/$count                   | ![][AQP]   | ![][NS]    |
+| ownedObjects/$count                 | ![][AQP]   | ![][AQP]   |
+| proxyAddresses/$count               | ![][AQP]   | ![][NS]    |
 
 The following table shows support for `$filter` by other extension properties on the **user** object.
 
-| Extension type                                                                      | eq                  | startsWith          | eq null             |
-|-------------------------------------------------------------------------------------|---------------------|---------------------|---------------------|
-| [Schema extensions](/graph/extensibility-overview#schema-extensions)                | ![Advanced][AQP]    | ![Advanced][AQP]    | ![Advanced][AQP]    |
-| [Open extensions](/graph/extensibility-overview#open-extensions)                    | ![NotSupported][NS] | ![NotSupported][NS] | ![NotSupported][NS] |
-| [Directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions) | ![Default][RDS]     | ![Advanced][AQP]    | ![Advanced][AQP]    |
+| Extension type                                                                      | eq       | startsWith | eq null  |
+| ----------------------------------------------------------------------------------- | -------- | ---------- | -------- |
+| [Schema extensions](/graph/extensibility-overview#schema-extensions)                | ![][AQP] | ![][AQP]   | ![][AQP] |
+| [Open extensions](/graph/extensibility-overview#open-extensions)                    | ![][NS]  | ![][NS]    | ![][NS]  |
+| [Directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions) | ![][RDS] | ![][AQP]   | ![][AQP] |
 
-[RDS]: ../images/yesandnosymbols/greencheck.svg
-[AQP]: ../images/yesandnosymbols/whitecheck-in-greencircle.svg
-[NS]: ../images/yesandnosymbols/no.svg
+[RDS]: ../images/yesandnosymbols/greencheck.svg "Default"
+[AQP]: ../images/yesandnosymbols/whitecheck-in-greencircle.svg "Advanced"
+[NS]: ../images/yesandnosymbols/no.svg "NotSupported"
