@@ -55,7 +55,7 @@ If-Match: "string"
 
 #### 400 Bad Request
 
-If the label has sublabels, then it cannot be applied to the roster. Only labels that have no sublabels can be applied.  The request fails, and the **code** property on the error response is "SensitivityLabelHasSublabels"
+If the label has sublabels, then it cannot be applied to the roster. Only labels that have no sublabels can be applied.  The request fails, and the **code** property on the error response is "SensitivityLabelHasSublabels".
 
 #### 403 Forbidden
 
