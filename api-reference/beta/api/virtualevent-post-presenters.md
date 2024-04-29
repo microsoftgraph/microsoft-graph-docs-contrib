@@ -49,6 +49,12 @@ POST /solutions/virtualEvents/townhalls/{townhallId}/presenters
 
 In the request body, supply a JSON representation of the [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
 
+You can specify the following properties when you create a presenter on a **virtualEventTownhall**:
+
+|Property|Type|Description|
+|:---|:---|:---|
+| identity | [communicationsUserIdentity](../resources/communicationsuseridentity.md) or [communicationsGuestIdentity](../resources/communicationsguestidentity.md)  | Identity information of the presenter.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [virtualEventPresenter](../resources/virtualeventpresenter.md) object in the response body.
