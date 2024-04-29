@@ -114,7 +114,7 @@ tools:
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
      # Card
-    - title: Deploy with Bicep
+    - title: Bicep templates for Microsoft Graph resources
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: /graph/overview
 
