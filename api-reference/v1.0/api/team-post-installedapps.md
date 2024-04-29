@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code. It doesn't return a
 
 ## Examples
 
-### Example 1: Install app in a team
+### Example 1: Install the app in a team
 
 #### Request
 
@@ -130,7 +130,7 @@ The following example shows the response.
 HTTP/1.1 200 OK
 ```
 
-### Example 2: Install app in a team and consent to the resource-specific permissions required by the app
+### Example 2: Install the app in a team and consent to the resource-specific permissions required by the app
 
 To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
@@ -207,7 +207,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 ```
 
-### Example 3: Install app in a team and without consent to the resource-specific permissions required by the app
+### Example 3: Install the app in a team and without consent to the resource-specific permissions required by the app
 
 #### Request
 
