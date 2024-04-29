@@ -26,10 +26,8 @@ items:
     href: ../../api/user-invalidateallrefreshtokens.md
   - name: Retry service provisioning
     href: ../../api/user-retryserviceprovisioning.md
-  - name: Delete password-based SSO credential
-    href: ../../api/user-deletepasswordsinglesignoncredentials.md
-  - name: Get password-based SSO credentials
-    href: ../../api/user-getpasswordsinglesignoncredentials.md
+  - name: Convert external to internal user
+    href: ../../api/user-convertexternaltointernalmemberuser.md
 - name: App role assignment
   href: ../../resources/approleassignment.md
   items:
@@ -185,7 +183,7 @@ items:
     - name: Insights settings
       href: ../../resources/insightssettings.md
     - name: List
-      href: ../../api/organizationsettings-list-iteminsights.md
+      href: ../../api/peopleadminsettings-list-iteminsights.md
     - name: Update
       href: ../../api/insightssettings-update.md
   - name: User control (preview)
@@ -272,6 +270,12 @@ items:
     href: ../../api/outlookuser-post-tasks.md
   - name: List tasks
     href: ../../api/outlookuser-list-tasks.md
+- name: Password-based SSO credentials
+  items:
+  - name: Get
+    href: ../../api/user-getpasswordsinglesignoncredentials.md
+  - name: Delete
+    href: ../../api/user-deletepasswordsinglesignoncredentials.md
 - name: People
   items:
   - name: Person

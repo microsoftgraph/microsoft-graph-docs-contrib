@@ -12,6 +12,8 @@ items:
     href: ../../api/group-get.md
   - name: Update group
     href: ../../api/group-update.md
+  - name: Upsert group
+    href: ../../api/group-upsert.md
   - name: Delete group
     href: ../../api/group-delete.md
   - name: Renew group
@@ -249,7 +251,6 @@ items:
     href: ../../api/profilephoto-update.md
   - name: Delete photo
     href: ../../api/profilephoto-delete.md
-
 - name: Planner
   items:
   - name: Planner plan
