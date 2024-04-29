@@ -61,6 +61,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | ------------ | ---- | ----------- |
 | registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of webinar session. |
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -99,3 +100,6 @@ The following JSON representation shows the resource type.
 }
 ```
 
+## Related content
+
+[List meetingAttendanceReports](../api/meetingattendancereport-list.md)

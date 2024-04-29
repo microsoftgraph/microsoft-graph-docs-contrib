@@ -81,7 +81,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
