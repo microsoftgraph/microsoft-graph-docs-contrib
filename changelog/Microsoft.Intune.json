@@ -641,7 +641,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mobileAppCatalogPackage",
           "ChangeType": "Addition",
-          "Description": "Added the [mobileAppCatalogPackage](https://learn.microsoft.com/graph/api/resources/intune-mobileAppCatalogPackage?view=graph-rest-beta) resource.",
+          "Description": "Added the mobileAppCatalogPackage resource.",
           "Target": "mobileAppCatalogPackage"
         },
         {
@@ -1764,7 +1764,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancelApproval",
           "ChangeType": "Addition",
-          "Description": "Added the [cancelApproval](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) method to the [operationApprovalRequest](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the cancelApproval method to the operationApprovalRequest resource.",
           "Target": "operationApprovalRequest"
         },
         {
@@ -1772,7 +1772,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancelMyRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [cancelMyRequest](https://learn.microsoft.com/graph/api/intune-rbac-operationapprovalrequest-cancelmyrequest?view=graph-rest-beta) method to the [cancelMyRequest](https://learn.microsoft.com/graph/api/intune-rbac-operationapprovalrequest-cancelmyrequest?view=graph-rest-beta) resource.",
+          "Description": "Added the cancelMyRequest method to the cancelMyRequest resource.",
           "Target": "cancelMyRequest"
         },
         {
@@ -1780,7 +1780,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reject",
           "ChangeType": "Addition",
-          "Description": "Added the [reject](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) method to the [operationApprovalRequest](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the reject  method to the operationApprovalRequest resource.",
           "Target": "operationApprovalRequest"
         },
         {
@@ -1788,7 +1788,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveRequestStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveRequestStatus](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) method to the [operationApprovalRequest](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the retrieveRequestStatus method to the operationApprovalRequest resource.",
           "Target": "operationApprovalRequest"
         },
         {
@@ -1796,7 +1796,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveApprovableOperations",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveApprovableOperations](https://learn.microsoft.com/graph/api/intune-operationApprovalPolicy?view=graph-rest-beta) method to the [operationApprovalPolicy](https://learn.microsoft.com/graph/api/intune-operationApprovalPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the retrieveApprovableOperations method to the operationApprovalPolicy resource.",
           "Target": "operationApprovalPolicy"
         },
         {
@@ -1804,7 +1804,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveMyRequestById",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveMyRequestById](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) method to the [operationApprovalRequest](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the retrieveMyRequestById method to the operationApprovalRequest resource.",
           "Target": "operationApprovalRequest"
         },
         {
@@ -1812,7 +1812,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveMyRequests",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveMyRequests](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) method to the [operationApprovalRequest](https://learn.microsoft.com/graph/api/intune-operationApprovalRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the retrieveMyRequests method to the operationApprovalRequest resource.",
           "Target": "operationApprovalRequest"
         },
         {
@@ -1820,7 +1820,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveOperationsRequiringApproval",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveOperationsRequiringApproval](https://learn.microsoft.com/graph/api/intune-operationApprovalPolicy?view=graph-rest-beta) method to the [operationApprovalPolicy](https://learn.microsoft.com/graph/api/intune-operationApprovalPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the retrieveOperationsRequiringApproval method to the operationApprovalPolicy resource.",
           "Target": "operationApprovalPolicy"
         },
         {
