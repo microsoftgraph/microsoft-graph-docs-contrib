@@ -10712,7 +10712,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getOperationsAllowedApproval",
           "ChangeType": "Deletion",
-          "Description": "Removed the **getOperationsAllowedApproval** method from the [getOperationsAllowedApproval](https://learn.microsoft.com/graph/api/intune-rbac-operationapprovalpolicy-getoperationsallowedapproval?view=graph-rest-beta) resource.",
+          "Description": "Removed the **getOperationsAllowedApproval** method from the getOperationsAllowedApproval resource.",
           "Target": "getOperationsAllowedApproval"
         },
         {
@@ -14094,7 +14094,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "source",
           "ChangeType": "Addition",
-          "Description": "Added the **source** property to the [deviceManagementConfigurationPolicyAssignment](https://learn.microsoft.com/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment?view=graph-rest-beta) resource.",
+          "Description": "Added the **source** property to the deviceManagementConfigurationPolicyAssignment resource.",
           "Target": "deviceManagementConfigurationPolicyAssignment"
         },
         {
@@ -14102,7 +14102,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sourceId",
           "ChangeType": "Addition",
-          "Description": "Added the **sourceId** property to the [deviceManagementConfigurationPolicyAssignment](https://learn.microsoft.com/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment?view=graph-rest-beta) resource.",
+          "Description": "Added the **sourceId** property to the deviceManagementConfigurationPolicyAssignment resource.",
           "Target": "deviceManagementConfigurationPolicyAssignment"
         },
         {
