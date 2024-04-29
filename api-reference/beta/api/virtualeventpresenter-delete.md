@@ -17,6 +17,8 @@ Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) from a v
 
 Currently the supported virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
