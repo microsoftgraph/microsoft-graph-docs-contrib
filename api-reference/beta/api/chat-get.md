@@ -133,7 +133,8 @@ Content-type: application/json
     "viewpoint": {
         "isHidden": true,
         "lastMessageReadDateTime": "2021-05-06T23:55:07.191Z"
-    }
+    },
+    "isHiddenForAllMembers": false
 }
 ```
 
@@ -211,7 +212,8 @@ Content-type: application/json
     "viewpoint": {
         "isHidden": false,
         "lastMessageReadDateTime": "2021-07-06T22:26:27.98Z"
-    }
+    },
+    "isHiddenForAllMembers": false
 }
 ```
 
@@ -290,6 +292,7 @@ Content-type: application/json
         "isHidden": false,
         "lastMessageReadDateTime": "2021-08-09T17:38:24.101Z"
     },
+    "isHiddenForAllMembers": false,
     "members": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -428,6 +431,7 @@ Content-type: application/json
         "isHidden": false,
         "lastMessageReadDateTime": "2021-08-17T18:04:32.583Z"
     },
+    "isHiddenForAllMembers": false,
     "onlineMeetingInfo": {
         "calendarEventId": "AAMkADAzMjNhY2NiLWVmNDItNDVjYS05MnFjLTExY2U0ZWMyZTNmZQBGAAAAAAARDMODhhR0TZRGWo9nN0NcBwAmvYmLhDvYR6hCFdQLgxR-AAAAAAENAAAmvYmLhDvYR6hCFdQLgxR-AABkrglJAAA=",
         "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3Ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?context=%7b%22Tid%22%3a%222432b57b-0abd-43db-aa7b-16eadd115d34%22%2c%22Oid%22%3a%22bfb5bb25-3a8d-487d-9828-7875ced51a30%22%7d",
@@ -529,6 +533,7 @@ Content-type: application/json
         "isHidden": true,
         "lastMessageReadDateTime": "2022-09-08T23:11:54.353Z"
     },
+    "isHiddenForAllMembers": false,
     "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Aebe3857aa388434bab0cad9d2e09f4de%40thread.v2')/lastMessagePreview/$entity",
     "lastMessagePreview": {
         "id": "1662678714353",
