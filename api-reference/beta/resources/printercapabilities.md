@@ -131,15 +131,15 @@ Represents the capabilities reported by a printer.
 |punchQuadRight|67| Punch four holes on the right side of the hardcopy output.|
 |punchQuadBottom|68| Punch four holes on the bottom side of the hardcopy output.|
 |fold|69|  Fold the hardcopy output.|
-|Trim|70|  Trim the hardcopy output on one or more edges. |
-|Bale|71|  Bale the set(s). |
-|BookletMaker|72|  Deliver the set(s) to the signature booklet maker. |
-|Coat|73|  Apply a protective liquid or powdered coating to each sheet. |
-|Laminate|74|  Apply a protective (solid) material to each sheet. |
-|TrimAfterPages|75|  Trim output after each page. |
-|TrimAfterDocuments|76|  Trim output after each document. |
-|TrimAfterCopies|77|  Trim output after each set. |
-|TrimAfterJob|78|  Trim output after job. |
+|trim|70|  Trim the hardcopy output on one or more edges. |
+|bale|71|  Bale the set(s). |
+|bookletMaker|72|  Deliver the set(s) to the signature booklet maker. |
+|coat|73|  Apply a protective liquid or powdered coating to each sheet. |
+|laminate|74|  Apply a protective (solid) material to each sheet. |
+|trimAfterPages|75|  Trim output after each page. |
+|trimAfterDocuments|76|  Trim output after each document. |
+|trimAfterCopies|77|  Trim output after each set. |
+|trimAfterJob|78|  Trim output after job. |
 
 ## printOrientation values
 
