@@ -36,7 +36,7 @@ To park a subscription, the argument must be URL encoded and used as the `joinWe
 `https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522048c94fb-dda6-48b8-9fc8-6740ee418fb9%2522%257d`
 
 > [!NOTE]
-> Replace `{JoinWebUrl}` with the actual URL encoded value when you specifiy the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
+> Replace `{JoinWebUrl}` with the actual URL-encoded value when you specifiy the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
 ### Subscription payload sample
 
