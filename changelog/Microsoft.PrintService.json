@@ -1,5 +1,761 @@
 {
   "changelog": [
+{
+      "ChangeList": [
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "stapleTripleLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `stapleTripleLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "stapleTripleTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `stapleTripleTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "stapleTripleRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `stapleTripleRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "stapleTripleBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `stapleTripleBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "bindLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "bindTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "bindRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "bindBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldAccordion",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldAccordion` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldDoubleGate",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldDoubleGate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldGate",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldGate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldHalf",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldHalf` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldHalfZ",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldHalfZ` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldLeftGate",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldLeftGate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldLetter",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldLetter` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldParallel",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldParallel` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldPoster",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldPoster` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldRightGate",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldRightGate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldZ",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldZ` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldEngineeringZ",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldEngineeringZ` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTopLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTopLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchBottomLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchBottomLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTopRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTopRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchBottomRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchBottomRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchDualLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchDualLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchDualTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchDualTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchDualRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchDualRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchDualBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchDualBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTripleLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTripleLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTripleTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTripleTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTripleRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTripleRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTripleBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTripleBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchQuadLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchQuadLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchQuadTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchQuadTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchQuadRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchQuadRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchQuadBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchQuadBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "fold",
+          "ChangeType": "Addition",
+          "Description": "Added the `fold` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "trim",
+          "ChangeType": "Addition",
+          "Description": "Added the `trim` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "bale",
+          "ChangeType": "Addition",
+          "Description": "Added the `bale` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "bookletMaker",
+          "ChangeType": "Addition",
+          "Description": "Added the `bookletMaker` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "coat",
+          "ChangeType": "Addition",
+          "Description": "Added the `coat` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "laminate",
+          "ChangeType": "Addition",
+          "Description": "Added the `laminate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "trimAfterPages",
+          "ChangeType": "Addition",
+          "Description": "Added the `trimAfterPages` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "trimAfterDocuments",
+          "ChangeType": "Addition",
+          "Description": "Added the `trimAfterDocuments` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "trimAfterCopies",
+          "ChangeType": "Addition",
+          "Description": "Added the `trimAfterCopies` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+          "ApiChange": "Member",
+          "ChangedApiName": "trimAfterJob",
+          "ChangeType": "Addition",
+          "Description": "Added the `trimAfterJob` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        }
+      ],
+      "Id": "6b23f1db-4b98-4f9f-bb8d-0124dd0bd853",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-29T11:37:40.789642Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "stapleTripleLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `stapleTripleLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "stapleTripleTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `stapleTripleTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "stapleTripleRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `stapleTripleRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "stapleTripleBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `stapleTripleBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "bindLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "bindTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "bindRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "bindBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `bindBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldAccordion",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldAccordion` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldDoubleGate",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldDoubleGate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldGate",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldGate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldHalf",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldHalf` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldHalfZ",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldHalfZ` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldLeftGate",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldLeftGate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldLetter",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldLetter` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldParallel",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldParallel` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldPoster",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldPoster` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldRightGate",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldRightGate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldZ",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldZ` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "foldEngineeringZ",
+          "ChangeType": "Addition",
+          "Description": "Added the `foldEngineeringZ` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTopLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTopLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchBottomLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchBottomLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTopRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTopRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchBottomRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchBottomRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchDualLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchDualLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchDualTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchDualTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchDualRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchDualRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchDualBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchDualBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTripleLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTripleLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTripleTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTripleTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTripleRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTripleRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchTripleBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchTripleBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchQuadLeft",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchQuadLeft` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchQuadTop",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchQuadTop` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchQuadRight",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchQuadRight` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "punchQuadBottom",
+          "ChangeType": "Addition",
+          "Description": "Added the `punchQuadBottom` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "fold",
+          "ChangeType": "Addition",
+          "Description": "Added the `fold` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "trim",
+          "ChangeType": "Addition",
+          "Description": "Added the `trim` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "bale",
+          "ChangeType": "Addition",
+          "Description": "Added the `bale` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "bookletMaker",
+          "ChangeType": "Addition",
+          "Description": "Added the `bookletMaker` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "coat",
+          "ChangeType": "Addition",
+          "Description": "Added the `coat` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "laminate",
+          "ChangeType": "Addition",
+          "Description": "Added the `laminate` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "trimAfterPages",
+          "ChangeType": "Addition",
+          "Description": "Added the `trimAfterPages` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "trimAfterDocuments",
+          "ChangeType": "Addition",
+          "Description": "Added the `trimAfterDocuments` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "trimAfterCopies",
+          "ChangeType": "Addition",
+          "Description": "Added the `trimAfterCopies` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+          "ApiChange": "Member",
+          "ChangedApiName": "trimAfterJob",
+          "ChangeType": "Addition",
+          "Description": "Added the `trimAfterJob` member to the **printFinishing** enumeration.",
+          "Target": "printFinishing"
+        }
+      ],
+      "Id": "4a2bafc6-4c82-40f2-a65c-7609c3c8d801",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-29T11:37:40.7899081Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
     {
       "ChangeList": [
         {
