@@ -22,12 +22,12 @@ highlightedContent:
     - title: Microsoft Graph REST API
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0
-    - title: What's new? 
-      itemType: whats-new
-      url: /graph/whats-new-overview
     - title: NEW! Deploy with Bicep
       itemType: concept
       url: /graph/overview
+    - title: What's new? 
+      itemType: whats-new
+      url: /graph/whats-new-overview
     - title: Integration patterns
       itemType: architecture
       url: /graph/integration-patterns-overview
@@ -114,7 +114,7 @@ tools:
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
      # Card
-    - title: Bicep templates for Microsoft Graph resources
+    - title: Bicep templates
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: /graph/overview
 
