@@ -5,6 +5,9 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
+toc.keywords:
+- Workload identity federation
+- workload identities
 ---
 
 # federatedIdentityCredential resource type

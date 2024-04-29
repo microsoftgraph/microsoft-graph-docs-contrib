@@ -5,6 +5,8 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.keywords:
+- access review decisions
 ---
 
 # accessReviewInstanceDecisionItem resource type

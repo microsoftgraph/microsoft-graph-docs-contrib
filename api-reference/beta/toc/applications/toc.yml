@@ -104,6 +104,7 @@ items:
   - name: Instantiate applicationTemplate
     href: ../../api/applicationtemplate-instantiate.md
 - name: Federated identity credential
+  displayName: Workload identity federation, workload identities
   items:
   - name: Overview
     href: ../../resources/federatedidentitycredentials-overview.md

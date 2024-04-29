@@ -49,6 +49,10 @@
     },
     {
       "name": "Calendars",
+      "keywords": [
+        "Outlook",
+        "Outlook calendar"
+      ],
       "resources": [
         "calendar",
         "event",
@@ -79,6 +83,24 @@
     },
     {
       "name": "Change notifications",
+      "keywords": [
+        "Webhooks",
+        "Outlook mail",
+        "Outlook calendar",
+        "Outlook contacts",
+        "Outlook contact",
+        "People",
+        "Microsoft Teams",
+        "Teams",
+        "OneDrive",
+        "OneDrive for Business",
+        "OneDrive business",
+        "OneDrive personal",
+        "SharePoint",
+        "Security",
+        "Users",
+        "Groups"
+      ],
       "overview": "../../resources/change-notifications-api-overview.md",
       "resources": [
         "subscription"
@@ -87,6 +109,10 @@
     {
       "name": "Compliance",
       "overview": "../../resources/complianceapioverview.md",
+      "keywords": [
+        "Compliance API",
+        "Microsoft Graph Compliance API"
+      ],
       "resources": [
         "subjectRightsRequest"
       ]
@@ -94,6 +120,9 @@
     {
       "name": "Cross-device experiences",
       "overview": "../../resources/project-rome-overview.md",
+      "keywords": [
+        "Project Rome"
+      ],
       "childNodes": [
         {
           "name": "Activity feed",
@@ -108,6 +137,10 @@
     {
       "name": "Customer booking",
       "overview": "../../resources/booking-api-overview.md",
+      "keywords": [
+        "Bookings",
+        "Microsoft Bookings"
+      ],
       "resources": [
         "bookingAppointment",
         "bookingBusiness",
@@ -142,6 +175,12 @@
         {
           "name": "Browser management",
           "overview": "../../resources/browser-edge-api-overview.md",
+          "keywords": [
+            "Edge",
+            "Internet Explorer",
+            "IE mode",
+            "site list"
+          ],
           "resources": [
             "browserSharedCookie",
             "browserSite",
@@ -157,6 +196,9 @@
         },
         {
           "name": "Cloud printing",
+          "keywords": [
+            "Universal Print"
+          ],
           "resources": [
             "print",
             "printConnector",
@@ -224,6 +266,9 @@
         {
           "name": "Corporate management",
           "overview": "../../resources/intune-graph-overview.md",
+          "keywords": [
+            "Intune"
+          ],
           "childNodes": [
             {
               "name": "App management",
@@ -709,6 +754,12 @@
     {
       "name": "Extensions",
       "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http",
+      "keywords": [
+        "Directory extensions",
+        "Schema extensions",
+        "Open extensions",
+        "On-premises extensions"
+      ],
       "resources": [
         "extensionProperty",
         "openTypeExtension",
@@ -750,6 +801,13 @@
     {
       "name": "Files",
       "overview": "../../resources/onedrive.md",
+      "keywords": [
+        "OneDrive",
+        "OneDrive for Business",
+        "OneDrive business",
+        "OneDrive personal",
+        "SharePoint"
+      ],
       "resources": [
         "drive",
         "driveItem",
@@ -760,6 +818,11 @@
     {
       "name": "Identity and access",
       "overview": "../../resources/azure-ad-overview.md",
+      "keywords": [
+        "Azure AD",
+        "Microsoft identity platform",
+        "Identity and access"
+      ],
       "childNodes": [
         {
           "name": "Directory management",
@@ -803,6 +866,13 @@
         {
           "name": "Governance",
           "overview": "../../resources/identitygovernance-overview.md",
+          "keywords": [
+            "Identity Governance",
+            "Access reviews",
+            "Entitlement Management",
+            "Terms of Use",
+            "Privileged Identity Management"
+          ],
           "childNodes": [
             {
               "name": "Access reviews",
@@ -944,6 +1014,13 @@
             {
               "name": "Lifecycle workflows",
               "overview": "../../resources/identitygovernance-lifecycleworkflows-overview.md",
+              "keywords": [
+                "LCW",
+                "Identity Governance",
+                "Joiner",
+                "Mover",
+                "Leaver"
+              ],
               "resources": [
                 "microsoft.graph.identityGovernance.customTaskExtension",
                 "microsoft.graph.identityGovernance.lifecycleManagementSettings",
@@ -994,6 +1071,9 @@
                     {
                       "name": "Reports",
                       "overview": "../../resources/identitygovernance-lifecycleworkflows-reporting-overview.md",
+                      "keywords": [
+                        "Lifecycle Workflows reporting"
+                      ],
                       "resources": [
                         "microsoft.graph.identityGovernance.userProcessingResult",
                         "microsoft.graph.identityGovernance.taskReport",
@@ -1011,6 +1091,11 @@
                 {
                   "name": "PIM for Microsoft Entra roles",
                   "overview": "../../resources/privilegedidentitymanagementv3-overview.md",
+                  "keywords": [
+                    "Privileged Identity Management",
+                    "PIM",
+                    "Identity Governance"
+                  ],
                   "resources": [
                     "unifiedRoleAssignmentScheduleRequest",
                     "unifiedRoleAssignmentSchedule",
@@ -1220,6 +1305,12 @@
         {
           "name": "Granular delegated admin privileges",
           "overview": "../../resources/delegatedadminrelationships-api-overview.md",
+          "keywords": [
+            "GDAP",
+            "Partner Center",
+            "CSP",
+            "VAR"
+          ],
           "resources": [
             "delegatedAdminAccessAssignment",
             "delegatedAdminCustomer",
@@ -1240,6 +1331,10 @@
     {
       "name": "Mail",
       "overview": "../../resources/mail-api-overview.md",
+      "keywords": [
+        "Outlook",
+        "Outlook mail"
+      ],
       "resources": [
         "message",
         "attachment",
@@ -1269,6 +1364,9 @@
     {
       "name": "Notes",
       "overview": "../../resources/onenote-api-overview.md",
+      "keywords": [
+        "OneNote"
+      ],
       "resources": [
         "notebook",
         "onenote",
@@ -1322,6 +1420,12 @@
     },
     {
       "name": "Personal contacts",
+      "keywords": [
+        "Outlook",
+        "Outlook contacts",
+        "Outlook contact",
+        "People"
+      ],
       "resources": [
         "contact",
         "contactFolder",
@@ -1612,6 +1716,12 @@
     {
       "name": "Sites and lists",
       "overview": "../../resources/sharepoint.md",
+      "keywords": [
+        "SharePoint",
+        "OneDrive",
+        "OneDrive for Business",
+        "OneDrive business"
+      ],
       "resources": [
         "site",
         "list",
@@ -1638,6 +1748,9 @@
     {
       "name": "Tasks and plans",
       "overview": "../../resources/planner-overview.md",
+      "keywords": [
+        "Planner"
+      ],
       "resources": [
         "plannerAssignedToTaskBoardTaskFormat",
         "plannerBucket",
@@ -1667,6 +1780,9 @@
     {
       "name": "Teamwork and communications",
       "overview": "../../resources/teams-api-overview.md",
+      "keywords": [
+        "Microsoft Teams"
+      ],
       "childNodes": [
         {
           "name": "Apps",
@@ -1747,6 +1863,9 @@
         {
           "name": "Employee learning",
           "overview": "../../resources/viva-learning-api-overview.md",
+          "keywords": [
+            "Viva Learning"
+          ],
           "resources": [
             "learningContent",
             "learningCourseActivity",
@@ -1830,6 +1949,9 @@
     {
       "name": "To-do tasks",
       "overview": "../../resources/todo-overview.md",
+      "keywords": [
+        "Microsoft To Do"
+      ],
       "resources": [
         "todoTaskList",
         "todoTask",
@@ -1841,6 +1963,9 @@
     {
       "name": "Workbooks and charts",
       "overview": "../../resources/excel.md",
+      "keywords": [
+        "Excel"
+      ],
       "resources": [
         "workbook",
         "workbookApplication",

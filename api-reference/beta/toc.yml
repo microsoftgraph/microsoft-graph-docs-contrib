@@ -36,40 +36,51 @@ items:
     href: toc/applications/toc.yml
   - name: Calendars
     href: toc/calendars/toc.yml
+    displayName: Outlook, Outlook calendar
   - name: Change notifications
     href: toc/change-notifications/toc.yml
+    displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
   - name: Compliance
     href: toc/compliance/toc.yml
+    displayName: Compliance API, Microsoft Graph Compliance API
   - name: Cross-device experiences
     href: toc/cross-device-experiences/toc.yml
+    displayName: Project Rome
   - name: Customer booking
     href: toc/customer-booking/toc.yml
+    displayName: Bookings, Microsoft Bookings
   - name: Device and app management
     href: toc/device-and-app-management/toc.yml
   - name: Education
     href: toc/education/toc.yml
   - name: Extensions
     href: toc/extensions/toc.yml
+    displayName: Directory extensions, Schema extensions, Open extensions, On-premises extensions
   - name: External data connections
     href: toc/external-data-connections/toc.yml
   - name: Files
     href: toc/files/toc.yml
+    displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
   - name: Financials (preview)
     href: toc/financials-(preview)/toc.yml
   - name: Identity and access
     href: toc/identity-and-access/toc.yml
+    displayName: Azure AD, Microsoft identity platform, Identity and access
   - name: Industry data ETL (preview)
     href: toc/industry-data-etl-(preview)/toc.yml
   - name: Mail
     href: toc/mail/toc.yml
+    displayName: Outlook, Outlook mail
   - name: Notes
     href: toc/notes/toc.yml
+    displayName: OneNote
   - name: Notifications (deprecated)
     href: toc/notifications-(deprecated)/toc.yml
   - name: People and workplace intelligence
     href: toc/people-and-workplace-intelligence/toc.yml
   - name: Personal contacts
     href: toc/personal-contacts/toc.yml
+    displayName: Outlook, Outlook contacts, Outlook contact, People
   - name: Reports
     href: toc/reports/toc.yml
   - name: Search
@@ -78,11 +89,16 @@ items:
     href: toc/security/toc.yml
   - name: Sites and lists
     href: toc/sites-and-lists/toc.yml
+    displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business
   - name: Tasks and plans
     href: toc/tasks-and-plans/toc.yml
+    displayName: Planner
   - name: Teamwork and communications
     href: toc/teamwork-and-communications/toc.yml
+    displayName: Microsoft Teams
   - name: To-do tasks
     href: toc/to-do-tasks/toc.yml
+    displayName: Microsoft To Do
   - name: Workbooks and charts
     href: toc/workbooks-and-charts/toc.yml
+    displayName: Excel

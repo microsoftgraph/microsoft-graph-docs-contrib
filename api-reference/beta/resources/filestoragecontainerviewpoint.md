@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerViewpoint resource type"
-description: "Represents data specific to the current user of a fileStorageContainer".
+description: "Represents data specific to the current user of a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -25,7 +25,7 @@ Represents data specific to the current user of a  [fileStorageContainer](../res
 None.
 
 ## JSON representation
-The following JSON representation shows the resource type. 
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

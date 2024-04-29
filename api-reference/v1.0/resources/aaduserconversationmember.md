@@ -29,9 +29,9 @@ This type inherits from [conversationMember](conversationmember.md).
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of `private`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
 |[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a chat.|
-|[Add chat member](../api/chat-post-members.md) | Location header | Add a member to a chat.| 
+|[Add chat member](../api/chat-post-members.md) | Location header | Add a member to a chat.|
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a member in a chat.|
-|[Remove chat member](../api/chat-delete-members.md) | None | Remove a member from a chat.| 
+|[Remove chat member](../api/chat-delete-members.md) | None | Remove a member from a chat.|
 
 ## Properties
 
@@ -62,7 +62,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "displayName" : "string",
   "email" : "string",
-  "id": "string (identifier)", 
+  "id": "string (identifier)",
   "roles" : ["string"],
   "tenantId": "string",
   "userId" : "string",

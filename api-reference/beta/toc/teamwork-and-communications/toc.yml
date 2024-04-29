@@ -490,6 +490,7 @@ items:
     - name: Get userTeamwork
       href: ../../api/userteamwork-get.md
 - name: Employee learning
+  displayName: Viva Learning
   items:
   - name: Overview
     href: ../../resources/viva-learning-api-overview.md

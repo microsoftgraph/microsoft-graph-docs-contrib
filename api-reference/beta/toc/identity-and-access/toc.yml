@@ -466,6 +466,7 @@ items:
       - name: To-do settings
         href: ../../resources/todosettings.md
   - name: Role management
+    displayName: Unified RBAC
     items:
     - name: Role management
       href: ../../resources/rolemanagement.md
@@ -588,6 +589,7 @@ items:
       - name: Delete certificateAuthorityAsEntity
         href: ../../api/certificateauthorityasentity-delete.md
 - name: Governance
+  displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
   items:
   - name: Overview
     href: ../../resources/identitygovernance-overview.md
@@ -648,6 +650,7 @@ items:
       - name: List pendingAccessReviewInstances (deprecated)
         href: ../../api/accessreviewinstance-pendingaccessreviewinstances.md
     - name: Access review instance decision item
+      displayName: access review decisions
       items:
       - name: Access review instance decision item
         href: ../../resources/accessreviewinstancedecisionitem.md
@@ -1294,6 +1297,7 @@ items:
       - name: Verified credential data
         href: ../../resources/verifiedcredentialdata.md
   - name: Lifecycle workflows
+    displayName: LCW, Identity Governance, Joiner, Mover, Leaver
     items:
     - name: Overview
       href: ../../resources/identitygovernance-lifecycleworkflows-overview.md
@@ -1386,6 +1390,7 @@ items:
         - name: Get task
           href: ../../api/identitygovernance-task-get.md
       - name: Reports
+        displayName: Lifecycle Workflows reporting
         items:
         - name: Overview
           href: ../../resources/identitygovernance-lifecycleworkflows-reporting-overview.md
@@ -1504,6 +1509,7 @@ items:
   - name: Privileged Identity Management iteration 3
     items:
     - name: PIM for Microsoft Entra roles
+      displayName: Privileged Identity Management, PIM, Identity Governance
       items:
       - name: Overview
         href: ../../resources/privilegedidentitymanagementv3-overview.md
@@ -2072,6 +2078,7 @@ items:
       - name: Delete
         href: ../../api/softwareoathauthenticationmethod-delete.md
     - name: Temporary Access Pass authentication method
+      displayName: TAP
       items:
       - name: Temporary Access Pass authentication method
         href: ../../resources/temporaryaccesspassauthenticationmethod.md
@@ -2164,6 +2171,7 @@ items:
       - name: Get authenticationMethodModeDetail
         href: ../../api/authenticationmethodmodedetail-get.md
   - name: Certificate based auth configuration
+    displayName: CBA
     items:
     - name: Certificate based auth configuration
       href: ../../resources/certificatebasedauthconfiguration.md
@@ -2252,6 +2260,7 @@ items:
       - name: Get conditionalAccessTemplate
         href: ../../api/conditionalaccesstemplate-get.md
   - name: Cross-tenant access
+    displayName: Cross-tenant access settings, XTAP
     items:
     - name: Overview
       href: ../../resources/crosstenantaccesspolicy-overview.md
@@ -2562,6 +2571,7 @@ items:
     - name: Create invitation
       href: ../../api/invitation-post.md
   - name: Multitenant organization
+    displayName: MTO
     items:
     - name: Overview
       href: ../../resources/multitenantorganization-overview.md
@@ -2806,6 +2816,7 @@ items:
         - name: Delete voiceAuthenticationMethodConfiguration
           href: ../../api/voiceauthenticationmethodconfiguration-delete.md
       - name: X509 certificate authentication method configuration
+        displayName: certificate-based authentication, CBA
         items:
         - name: X509 certificate authentication method configuration
           href: ../../resources/x509certificateauthenticationmethodconfiguration.md
@@ -3926,6 +3937,7 @@ items:
         - name: Get securityToolAwsServerlessFunctionAdministratorFinding
           href: ../../api/securitytoolawsserverlessfunctionadministratorfinding-get.md
 - name: Network access (preview)
+  displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
   items:
   - name: Overview
     href: ../../resources/networkaccess-global-secure-access-api-overview.md
@@ -4132,6 +4144,7 @@ items:
 - name: Partner customer administration
   items:
   - name: Granular delegated admin privileges
+    displayName: GDAP, Partner Center, CSP, VAR
     items:
     - name: Overview
       href: ../../resources/delegatedadminrelationships-api-overview.md

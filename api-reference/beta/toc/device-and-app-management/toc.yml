@@ -1,5 +1,6 @@
 items:
 - name: Browser management
+  displayName: Edge, Internet Explorer, IE mode, site list
   items:
   - name: Overview
     href: ../../resources/browser-edge-api-overview.md
@@ -430,6 +431,7 @@ items:
     - name: Unified role permission
       href: ../../resources/unifiedrolepermission.md
 - name: Cloud printing
+  displayName: Universal Print
   items:
   - name: Print
     items:
@@ -700,6 +702,7 @@ items:
     - name: User identity
       href: ../../resources/useridentity.md
 - name: Corporate management
+  displayName: Intune
   items:
   - name: Overview
     href: ../../resources/intune-graph-overview.md
@@ -8286,6 +8289,7 @@ items:
       - name: Unified role permission
         href: ../../resources/unifiedrolepermission.md
 - name: Device updates (preview)
+  displayName: Windows updates
   items:
   - name: Microsoft Entra device
     items:
@@ -8574,6 +8578,7 @@ items:
     - name: Windows Update filter
       href: ../../resources/windowsupdates-windowsupdatefilter.md
 - name: Microsoft 365 apps
+  displayName: Microsoft 365 applications
   items:
   - name: Installation options
     items:

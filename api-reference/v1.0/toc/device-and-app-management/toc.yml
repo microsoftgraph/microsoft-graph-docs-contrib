@@ -1,5 +1,6 @@
 items:
 - name: Browser management
+  displayName: Edge, Internet Explorer, IE mode, site list
   items:
   - name: Overview
     href: ../../resources/browser-edge-api-overview.md
@@ -60,6 +61,7 @@ items:
     - name: Identity set
       href: ../../resources/identityset.md
 - name: Cloud printing
+  displayName: Universal Print
   items:
   - name: Print
     items:
@@ -302,6 +304,7 @@ items:
     - name: User identity
       href: ../../resources/useridentity.md
 - name: Corporate management
+  displayName: Intune
   items:
   - name: Overview
     href: ../../resources/intune-graph-overview.md
