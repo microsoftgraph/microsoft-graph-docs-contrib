@@ -3,7 +3,7 @@ title: "virtualEventTownhall resource type"
 description: "Represents information about a virtual event town hall."
 author: "frankpeng7"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
