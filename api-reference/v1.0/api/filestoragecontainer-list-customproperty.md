@@ -49,7 +49,7 @@ The following example shows how to get a custom property named `clientUniquieId`
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/customProperties/clientUniqueId
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties/clientUniqueId
 ```
 
 ### Response
@@ -78,7 +78,7 @@ The following example shows how to get all the custom properties of a **fileStor
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/{containerId}/customProperties/
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties/
 ```
 
 ### Response
