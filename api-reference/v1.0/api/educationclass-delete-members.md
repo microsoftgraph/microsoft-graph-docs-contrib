@@ -50,7 +50,7 @@ The following example shows a request.
   "name": "create_educationclass_from_educationschool_1"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{member-id}
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{member-id}/$ref
 ```
 
 # [JavaScript](#tab/javascript)
