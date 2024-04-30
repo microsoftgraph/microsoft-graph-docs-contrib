@@ -1,7 +1,7 @@
 ---
 title: "openIdConnectSetting resource type"
 description: "Specifies the OpenID connection properties used for an external authentication method."
-author: "gregk-msft"
+author: "gregkmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
