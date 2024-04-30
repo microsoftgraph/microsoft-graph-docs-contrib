@@ -5174,38 +5174,38 @@ items:
               - name: Delete permission
                 href: api/permission-delete.md
        - name: File storage containers
-            href: resources/filestoragecontainer.md
-            items:
-              - name: List file storage containers
-                href: api/filestorage-list-containers.md
-              - name: Create file storage container
-                href: api/filestoragecontainer-post.md
-              - name: Get file storage container
-                href: api/filestoragecontainer-get.md
-              - name: Get drive
-                href: api/filestoragecontainer-get-drive.md
-              - name: Update file storage containers
-                href: api/filestoragecontainer-update.md
-              - name: Delete file storage container
-                href: api/filestorage-delete-containers.md
-              - name: Activate file storage container
-                href: api/filestoragecontainer-activate.md
-              - name: List permissions
-                href: api/filestoragecontainer-list-permissions.md
-              - name: Add permissions
-                href: api/filestoragecontainer-post-permissions.md
-              - name: Update permissions
-                href: api/filestoragecontainer-update-permissions.md
-              - name: Delete permissions
-                href: api/filestoragecontainer-delete-permissions.md
-              - name: List custom property
-                href: api/filestoragecontainer-list-customproperty.md
-              - name: Add custom property
-                href: api/filestoragecontainer-post-customproperty.md
-              - name: Update custom property
-                href: api/filestoragecontainer-update-customproperty.md
-              - name: Delete custom property
-                href: api/filestoragecontainer-delete-customproperty.md
+          href: resources/filestoragecontainer.md
+          items:
+            - name: List file storage containers
+              href: api/filestorage-list-containers.md
+            - name: Create file storage container
+              href: api/filestoragecontainer-post.md
+            - name: Get file storage container
+              href: api/filestoragecontainer-get.md
+            - name: Get drive
+              href: api/filestoragecontainer-get-drive.md
+            - name: Update file storage containers
+              href: api/filestoragecontainer-update.md
+            - name: Delete file storage container
+              href: api/filestorage-delete-containers.md
+            - name: Activate file storage container
+              href: api/filestoragecontainer-activate.md
+            - name: List permissions
+              href: api/filestoragecontainer-list-permissions.md
+            - name: Add permissions
+              href: api/filestoragecontainer-post-permissions.md
+            - name: Update permissions
+              href: api/filestoragecontainer-update-permissions.md
+            - name: Delete permissions
+              href: api/filestoragecontainer-delete-permissions.md
+            - name: List custom property
+              href: api/filestoragecontainer-list-customproperty.md
+            - name: Add custom property
+              href: api/filestoragecontainer-post-customproperty.md
+            - name: Update custom property
+              href: api/filestoragecontainer-update-customproperty.md
+            - name: Delete custom property
+              href: api/filestoragecontainer-delete-customproperty.md
       - name: Identity and access
         items:
           - name: Overview
