@@ -11,7 +11,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Text placeholder: introduction]
+Contains information about the webinar registration configuration. 
 
 ## Methods
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 
 | Property | Type | Description |
 | ---------| ---- | ---------- -|
-| registrationWebUrl | String | [text placeholder: description].  |
+| registrationWebUrl | String | Registration portal URL of the webinar. |
 
 ## JSON representation
 
