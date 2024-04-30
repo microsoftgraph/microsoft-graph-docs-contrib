@@ -33,7 +33,7 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.filePlanAthority"
+  "@odata.type": "microsoft.graph.security.filePlanAuthority"
 }
 -->
 ``` json
