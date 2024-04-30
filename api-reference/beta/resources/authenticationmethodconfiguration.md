@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodConfigurations"
-description: "authenticationMethodConfigurations object."
+description: "An abstract type that represents the settings for each authentication method."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type that represents the settings for each authentication method. It has the configuration of whether a specific authentication method is enabled or disabled for the tenant and which users and groups can register and use that method.
+An abstract type that represents the settings for each authentication method. It has the configuration of whether a specific authentication method is enabled or disabled for the tenant and which users and groups can register and use that method.
 
 The following authentication methods are derived from the **authenticationMethodConfiguration** resource type:
 + [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)

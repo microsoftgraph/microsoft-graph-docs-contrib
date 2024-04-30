@@ -33,12 +33,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{id}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/b3107ab7-68c7-4553-a167-48c1e9c24d52
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/b3107ab7-68c7-4553-a167-48c1e9c24d52
 ```
 
 
@@ -81,6 +81,8 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.externalAuthenticationMethodConfiguration",
   "id": "b3107ab7-68c7-4553-a167-48c1e9c24d52",
@@ -94,6 +96,5 @@ HTTP/1.1 200 OK
   "excludeTargets": [],
   "includeTargets": []
 }
-
 ```
 

@@ -749,24 +749,24 @@
         {
           "Id": "24aa20f2-b68f-4d45-9550-e3dcb3eef1d1",
           "ApiChange": "Resource",
-          "ChangedApiName": "openIdConnectSetting",
-          "ChangeType": "Addition",
-          "Description": "Added the [openIdConnectSetting](https://learn.microsoft.com/en-us/graph/api/resources/openIdConnectSetting?view=graph-rest-beta) resource.",
-          "Target": "openIdConnectSetting"
-        },
-        {
-          "Id": "24aa20f2-b68f-4d45-9550-e3dcb3eef1d1",
-          "ApiChange": "Resource",
           "ChangedApiName": "externalAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
           "Description": "Added the [externalAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/externalAuthenticationMethodConfiguration?view=graph-rest-beta) resource and its associated methods.",
           "Target": "externalAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "24aa20f2-b68f-4d45-9550-e3dcb3eef1d1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "openIdConnectSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [openIdConnectSetting](https://learn.microsoft.com/en-us/graph/api/resources/openIdConnectSetting?view=graph-rest-beta) resource.",
+          "Target": "openIdConnectSetting"
         }
       ],
       "Id": "24aa20f2-b68f-4d45-9550-e3dcb3eef1d1",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-04-09T13:42:56.9121213Z",
+      "CreatedDateTime": "2024-05-01T00:00:00.9121213Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

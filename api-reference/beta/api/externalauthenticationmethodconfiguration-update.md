@@ -50,16 +50,16 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|authenticationMethodState|The state of the method in the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`. Optional.|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups representing the users that should be excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Optional.|
-|appId|String|AppID for the App Registration in Entra ID representing the integration with the external provider|
+|state|authenticationMethodState|The state of the method in the policy. The possible values are: `enabled`, `disabled`. |
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups representing the users that should be excluded from the policy. |
+|appId|String|**appId** for the app registration in Microsoft Entra ID representing the integration with the external provider.|
 |openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|Object representing the required settings for the OIDC request to the external provider.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [externalAuthenticationMethodConfiguration](../resources/externalauthenticationmethodconfiguration.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -93,13 +93,12 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 204 NO CONTENT
+HTTP/1.1 204 No Content
 ```
 

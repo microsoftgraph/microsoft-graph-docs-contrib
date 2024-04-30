@@ -28,12 +28,12 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|AppID for the App Registration in Entra ID representing the integration with the external provider|
-|displayName|String|Display name for the external authentication method.  This is the name shown to users during sign-in.|
+|appId|String|**appId** for the app registration in Microsoft Entra ID representing the integration with the external provider.|
+|displayName|String|Display name for the external authentication method. This name is shown to users during sign-in.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|id|String|The unique identifier for an entity. Read-only. Inherited from [entity](../resources/entity.md).|
-|openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|Open ID Connection settings used by this external authentication method|
-|state|authenticationMethodState|The state of the method in the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).The possible values are: `enabled`, `disabled`.|
+|id|String|The unique identifier for this object. Read-only. Inherited from [entity](../resources/entity.md).|
+|openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|Open ID Connection settings used by this external authentication method.|
+|state|authenticationMethodState|The state of the method in the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
