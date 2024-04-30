@@ -12,9 +12,9 @@ This article describes the support and breaking change policies for Microsoft Gr
 
 Microsoft Graph follows the [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle).
 
-As new versions of the Microsoft Graph REST APIs are released, earlier versions will be retired. Microsoft declares a version as deprecated at least 24 months in advance of retiring it. Similarly, for individual APIs that have reached general availability (GA), Microsoft declares an API as deprecated at least 24 months in advance of removing it from the GA version. 
+As new versions of the Microsoft Graph REST APIs are released, earlier versions will be retired. Microsoft declares a version as deprecated at least 24 months in advance of retiring it. Similarly, for individual APIs that reached general availability (GA), Microsoft declares an API as deprecated at least 24 months in advance of removing it from the GA version. 
 
-For Microsoft Graph SDKs, only the latest major version of any given library is supported and updated with new features, bug fixes, and workarounds. The major version prior to the latest version is supported for 12 months from the release date of the latest major version, for security fixes only. We recommend that you upgrade to the latest version of the SDKs whenever possible.
+For Microsoft Graph SDKs, only the latest major version of any given library is supported and updated with new features, bug fixes, and workarounds. The major version that precedes the latest version is supported for 12 months from the release date of the latest major version, for security fixes only. We recommend that you upgrade to the latest version of the SDKs whenever possible.
 
 When we increment the major version of the API (for example, from v1.0 to v2.0), we're announcing that the current version (in this example, v1.0) is immediately deprecated and we'll no longer support it 24 months after the announcement. We might make exceptions to this policy for service security or health reliability issues.
 
@@ -55,18 +55,18 @@ We make no guarantees that a beta feature will be promoted to the current versio
 
 ### Current version
 
-The current version of Microsoft Graph is v1.0. Exposed under `https://graph.microsoft.com/v1.0`, the Microsoft Graph API v1.0 version contains features that are generally available and ready for production use. For v1.0 API documentation, see [Microsoft Graph v1.0 endpoint reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true).
+The current version of Microsoft Graph is v1.0. These APIs are accessible in the `https://graph.microsoft.com/v1.0` endpoint. The Microsoft Graph API v1.0 version contains features that are generally available and ready for production use. For v1.0 API documentation, see [Microsoft Graph v1.0 endpoint reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true).
 
 ## Preview status
 An API or feature in Microsoft Graph is labeled as "(preview)" to indicate that its behavior is _unique_ in the beta endpoint. 
 
-The behavior of most APIs and features in the v1.0 version is in parity with the beta version. A minority of APIs are marked as "preview" for one of the following reasons: 
+The behavior of most APIs and features in the v1.0 version is in parity with the beta version. Some APIs are marked as "preview" for one of the following reasons: 
 - The APIs are available in beta only
 - The behavior of the APIs is different in beta than v1.0.
 
 Like any other API in the beta endpoint, we can introduce breaking changes to APIs that are marked as preview without notice. Don't access APIs from the beta endpoint in production apps.
 
-Note that APIs can be in preview even when the feature or product itself is generally available.
+APIs can be in preview even when the feature or product itself is generally available.
 
 ### Deprecated and unsupported versions
 
