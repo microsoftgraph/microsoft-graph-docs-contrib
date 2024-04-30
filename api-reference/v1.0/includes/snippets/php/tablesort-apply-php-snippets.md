@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ApplyPostRequestBody;
+use Microsoft\Graph\Generated\Models\WorkbookSortField;
+use Microsoft\Graph\Generated\Models\WorkbookIcon;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

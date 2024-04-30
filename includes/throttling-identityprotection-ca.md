@@ -1,7 +1,7 @@
 ---
 author: "ebasseri"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: entra-sign-in
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->

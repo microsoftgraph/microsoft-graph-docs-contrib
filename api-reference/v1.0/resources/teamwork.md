@@ -18,12 +18,15 @@ A container for the range of Microsoft Teams functionalities that are available 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
+|[Get teamwork](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.|
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|id|string| A unique identifier. |
+|id|string|The default teamwork identifier.|
+|isTeamsEnabled|Boolean|Indicates whether Microsoft Teams is enabled for the organization.|  
+|region|string|Represents the region of the organization. [!INCLUDE [supported-regions](../../includes/teamwork-supported-regions.md)]|
 
 ## Relationships
 
@@ -45,7 +48,10 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "string"
+    "@odata.type": "#microsoft.graph.teamwork",
+    "id": "String",
+    "isTeamsEnabled": "boolean",
+    "region": "String"
 }
 
 ```

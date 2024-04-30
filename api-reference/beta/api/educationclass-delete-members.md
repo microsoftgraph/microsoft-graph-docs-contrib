@@ -53,7 +53,7 @@ The following example shows a request.
   "sampleKeys": ["11003", "14008"]
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
+DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008/$ref
 ```
 
 # [JavaScript](#tab/javascript)
