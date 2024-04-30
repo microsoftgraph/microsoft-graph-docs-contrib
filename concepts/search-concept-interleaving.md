@@ -325,11 +325,11 @@ Content-type: application/json
 
 ### Example 4: Interleave Teams and Outlook content
 
-The following example shows how to interleave Teams chatMessage and Outlook message content.
+The following example shows how to interleave Teams chat message and Outlook message content.
 
 #### Request
 
-The following example shows the interleaving request for chatMessage and message.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/v1.0/search/query
@@ -354,7 +354,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the interleaving response for chatMessage and message.
+The following example shows the interleaving response.
 
 ```http
 HTTP/1.1 200 OK
@@ -427,13 +427,12 @@ Content-type: application/json
 
 ## Known limitations
 
-- Customized sort isn't supported in interleaving scenario, all of them are ordered by relevance.
-- QueryTemplate is only supported for file items in interleaving query, it can't filter out any externalItem results in the response.
-  The behavior could be changed in the future and allow queryTemplate to filter out the externalItem results. We don't suggest using queryTemplate in interleaving requests.
+- Customized sort isn't supported in interleaving scenarios, all items are ordered by relevance.
+- QueryTemplate is only supported for file items in an interleaving query. External item results aren't filtered out in the response. We don't recommend that you use queryTemplate in interleaving requests.
 - Collapse isn't supported.
-- Speller modification isn't supported, speller suggestion can be used as normal.
+- Speller modification isn't supported. Speller suggestions only are supported.
 - Result template isn't supported.
-- Aggregation limitation, if same aggregated field both exist in Sharepoint file types (site, drive, driveItem, list, listItem) and connectors. Aggregation result shows two same aggregation buckets with same name, suggest to rename one of its name to bypass the limitation.
+- Aggregation limitations occur if the aggregated field exists in multiple Sharepoint file types (**site**, **drive**, **driveItem**, **list**, **listItem**) and connectors. Aggregation results shows two aggregation buckets with the same name; to bypass the limitation, rename one of them.
 
 ## Next steps
 
