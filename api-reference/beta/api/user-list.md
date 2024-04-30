@@ -387,7 +387,7 @@ Content-type: application/json
         "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
         "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
         "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200",
-        "lastSuccessfulSignInDateTime": "0001-01-01T00:00:00Z",
+        "lastSuccessfulSignInDateTime": "",
         "lastSuccessfulSignInRequestId": ""
       }
     }
@@ -435,7 +435,7 @@ Content-type: application/json
         "lastSignInRequestId": "d4d31c40-4c36-4775-ad59-7d1e6a171f00",
         "lastNonInteractiveSignInDateTime": "0001-01-01T00:00:00Z",
         "lastNonInteractiveSignInRequestId": "",
-        "lastSuccessfulSignInDateTime": "0001-01-01T00:00:00Z",
+        "lastSuccessfulSignInDateTime": "",
         "lastSuccessfulSignInRequestId": ""
       }
     },
@@ -447,7 +447,7 @@ Content-type: application/json
         "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
         "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
         "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200",
-        "lastSuccessfulSignInDateTime": "0001-01-01T00:00:00Z",
+        "lastSuccessfulSignInDateTime": "",
         "lastSuccessfulSignInRequestId": ""
       }
     }
