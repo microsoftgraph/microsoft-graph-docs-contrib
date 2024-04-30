@@ -28,7 +28,7 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
