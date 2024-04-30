@@ -633,6 +633,22 @@
           "ChangeType": "Addition",
           "Description": "Enabled change notifications support to [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
           "Target": "subscription"
+       },
+       {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [reauthorize](https://learn.microsoft.com/en-us/graph/api/subscription-reauthorize?view=graph-rest-beta) a subscription for [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview).",
+          "Target": "subscription"
+       },
+       {
+          "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for a new query string, [notifyOnUserSpecificProperties](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#notification-payloads-for-user-specific-properties), when subscribing to [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview) or when subscribing to [notifications in a particular chat](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-a-particular-chat).",
+          "Target": "subscription"
        }
       ],
       "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
