@@ -50,7 +50,6 @@ The following versions of the Microsoft Graph API are currently available.
 In general, APIs debut in the beta version and are accessible in the `https://graph.microsoft.com/beta` endpoint. For beta API documentation, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true). Expect breaking changes and deprecation of APIs in the beta version from time to time. Don't take a production dependency on beta APIs.
 
 We make no guarantees that a beta feature will be promoted to the current version. When the Microsoft Graph API team believes that a beta feature is ready for general availability, we add that feature to the latest current version. If the promotion of the feature would result in a breaking change to the current version, the version number is incremented, with the new version becoming the current version.
-Our developer community can post feature requests on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph), including requests for new features and requests to promote existing beta APIs to the current version.
 
 ### Current version
 
@@ -59,17 +58,17 @@ The current version of Microsoft Graph is v1.0. Exposed under `https://graph.mic
 ## Preview status
 An API or feature in Microsoft Graph is labeled as "(preview)" to indicate its behavior is _unique_ in the beta endpoint. 
 
-The behavior of most APIs and features in the v1.0 version is in parity with the beta version. "preview" qualifies a minority of APIs and features in one of the following two cases: 
-- Available in only beta
-- Available in beta differently than in v1.0
+The behavior of most APIs and features in the v1.0 version is in parity with the beta version. A minority of APIs are marked as "preview" for one of the following reasons: 
+- The APIs are available in beta only
+- The behavior of the APIs is different in beta than v1.0.
 
-Like any other API in the beta endpoint, APIs marked in the documentation as "(preview)" may experience breaking changes without notice. Don't access APIs from the beta endpoint in production apps.
+Like any other API in the beta endpoint, we can introduce breaking changes to APIs that are marked as preview without notice. Don't access APIs from the beta endpoint in production apps.
 
-As an example, [attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true) is a feature that has been generally available for administrators in the [Microsoft 365 Defender portal](https://security.microsoft.com/). When the REST API for attack simulation training becomes available in Microsoft Graph in only the beta endpoint, the REST API [documentation](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#attack-simulation-and-training-preview) is labeled as "(preview)". The "(preview)" label applies to the REST API and its documentation in Microsoft Graph, even though the service itself is generally available.
+Note that APIs can be in preview even when the feature or product itself is generally available.
 
 ### Deprecated and unsupported versions
 
-There are currently no deprecated versions of Microsoft Graph.
+Currently, no versions of Microsoft Graph are deprecated or unsupported.
 
 ## Terms of use
 

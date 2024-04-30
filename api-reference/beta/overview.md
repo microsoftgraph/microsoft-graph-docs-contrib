@@ -23,20 +23,22 @@ Microsoft Graph API requests to the beta endpoint use the following pattern:
 https://graph.microsoft.com/beta/{resource}?[query_parameters]
 ```
 
-For details, see [Use the Microsoft Graph API](/graph/use-the-api).
+For more information about Microsoft Graph REST API calls, see [Use the Microsoft Graph API](/graph/use-the-api).
 
 ## Microsoft Graph v1.0 endpoint
 
 Currently two versions of Microsoft Graph REST APIs are available - v1.0 and beta.
 
-If you're interested in using APIs that have reached general availability (GA), see [Microsoft Graph v1.0 endpoint reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). 
+If you're interested in using APIs that are generally availabile, see [Microsoft Graph v1.0 endpoint reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). 
 
-To determine whether a beta API is available in v1.0, use the version selector in the left navigation. If the API is availalble in v1.0, you can switch to the v1.0 reference topic.
+To determine whether a beta API is available in v1.0, use the version selector in the left navigation. If the API is available in v1.0, you can switch to the v1.0 reference article.
+
+For more information, see [versioning and support](/graph/versioning-and-support).
 
 ## What's new
 Find out [what's new](/graph/whats-new-overview) in the beta endpoint.
 
-For details about changes to Microsoft Graph APIs in beta , explore the [API changelog](https://developer.microsoft.com/en-us/graph/changelog/?filterBy=beta).
+For details about changes to Microsoft Graph APIs in beta, explore the [API changelog](https://developer.microsoft.com/en-us/graph/changelog/?filterBy=beta).
 
 ## Related content
 
