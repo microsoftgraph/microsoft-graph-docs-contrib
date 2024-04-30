@@ -1,7 +1,7 @@
 ---
 title: "Create domain"
 description: "Adds a domain to the tenant."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

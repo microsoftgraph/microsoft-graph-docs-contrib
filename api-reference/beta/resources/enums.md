@@ -497,6 +497,8 @@ Namespace: microsoft.graph
 | saml20             |
 | deviceCode         |
 | unknownFutureValue |
+| authenticationTransfer|
+| nativeAuth         |
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
