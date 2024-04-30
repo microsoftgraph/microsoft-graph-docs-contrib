@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Supports CRUD operations to apply and manage the [filePlanAuthority](security-fileplanauthority.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **authority** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
+Specifies the underlying authority that describes the type of content to be retained and its retention schedule. This resource supports CRUD operations to apply and manage the [filePlanAuthority](security-fileplanauthority.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **authority** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
@@ -35,7 +35,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -1,6 +1,6 @@
 ---
 title: "List subcategories"
-description: "Get the subcategoryTemplate resources from the subcategories navigation property."
+description: "Get a list of subcategoryTemplate resources associated with a category template."
 author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of subcategories [subcategoryTemplate](../resources/security-subcategorytemplate.md) associated with a category template.
+Get a list of [subcategoryTemplate](../resources/security-subcategorytemplate.md) objects associated with a category template.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
