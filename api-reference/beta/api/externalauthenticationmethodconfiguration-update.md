@@ -1,7 +1,7 @@
 ---
 title: "Update externalAuthenticationMethodConfiguration"
 description: "Update the properties of an externalAuthenticationMethodConfiguration object."
-author: "gregk-msft"
+author: "gregkmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /externalAuthenticationMethodConfiguration
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{id}
 ```
 
 ## Request headers
@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{id}
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/b183b746-e7db-4fa2-bafc-69ecf18850dd
 Content-Type: application/json
 
 {

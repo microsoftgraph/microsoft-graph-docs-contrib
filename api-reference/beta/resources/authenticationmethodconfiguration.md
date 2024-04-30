@@ -17,6 +17,7 @@ This is an abstract type that represents the settings for each authentication me
 
 The following authentication methods are derived from the **authenticationMethodConfiguration** resource type:
 + [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
++ [externalAuthenticationMethodConfiguration](externalauthenticationmethodconfiguration.md)
 + [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
 + [hardwareOathAuthenticationMethodConfiguration](hardwareoathauthenticationmethodconfiguration.md)
 + [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)

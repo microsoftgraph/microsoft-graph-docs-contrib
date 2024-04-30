@@ -1,7 +1,7 @@
 ---
 title: "Delete externalAuthenticationMethodConfiguration"
 description: "Delete an externalAuthenticationMethodConfiguration object."
-author: "gregk-msft"
+author: "gregkmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /externalAuthenticationMethodConfiguration
+DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/{id}
 ```
 
 ## Request headers
