@@ -34,9 +34,14 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Teams [chatMessage][] | Changes to chat messages in all channels in all teams: `/teams/getAllMessages` <br><br> Changes to chat messages in a specific channel: `/teams/{id}/channels/{id}/messages` <br><br> Changes to chat messages in all chats: `/chats/getAllMessages`  <br><br> Changes to chat messages in a specific chat: `/chats/{id}/messages` <br><br> Changes to chat messages in all chats a particular user is part of: `/users/{id}/chats/getAllMessages` <br><br> Changes to chat messages for all chats in an organization where a particular Teams app is installed: `/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` | Maximum subscription quotas: <li> Per app and channel or chat combination: 1 subscription. <li> Per user (for subscriptions tracking chat messages in all chats the user is part of): 10 subscriptions. <li> Per organization: 10,000 total subscriptions. |
 | Teams [channel][] | Changes to channels in all teams: `/teams/getAllChannels` <br><br> Changes to channel in a specific team: `/teams/{id}/channels` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | Teams [conversationMember][] | Changes to membership in a specific team: `/teams/{id}/members` <br><br> Changes to membership in all channels under a specific team: `teams/{id}/channels/getAllMembers` <br><br> Changes to membership in a specific chat: `/chats/{id}/members`  <br><br> Changes to membership for all chats in an organization where a particular Teams app is installed: `/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` <br><br> Changes to membership in all chats: `/chats/getAllMembers` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
+| [offerShiftRequest] [] | Changes to any offer shift request in a team: /teams/{teamId}/schedule/offerShiftRequests | Maximum subscription quotas: <li> Per resource path and application combination: 1 subscription per tenant.<li> Per resource path and user combination: 10 delegated user subscriptions per tenant. |
 | Teams [onlineMeeting][] <sup>*<sup> | Changes to an online meeting: `/communications/onlineMeetings/?$filter=JoinWebUrl eq {joinWebUrl}` |  |
+| [openShiftChangeRequest] [] | Changes to any open shift request in a team: /teams/{id}/schedule/openShiftChangeRequests | Maximum subscription quotas:<li> Per app and resource path combination: 1.<li> Per user and resource path combination: 10 subscriptions.<li> Per organization: 10,000 total subscriptions. |
 | Teams [presence][] | Changes to a single user's presence:  `/communications/presences/{id}` <br><br> Changes to multiple user presences:  `/communications/presences?$filter=id in ({id},{id}...)` |  |
+| [shift] [] | Changes to any shift in a team: teams/{teamId}/schedule/shifts | Maximum subscription quotas:<li> Per app and resource path combination: 1.<li> Per user and resource path combination: 10 subscriptions.<li> Per organization: 10,000 total subscriptions. |
+| [swapShiftsChangeRequest] [] | Changes to any swap shift request in a team: /teams/{teamId}/schedule/swapShiftsChangeRequests | Maximum subscription quotas:<li> Per app and resource path combination: 1.<li> Per user and resource path combination: 10 subscriptions.<li> Per organization: 10,000 total subscriptions. |
 | Teams [team][] | Changes to any team in the tenant: `/teams` <br><br> Changes to a specific team: `/teams/{id}` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
+| [timeOffRequest] [] | Changes to any time off in a team: teams/{teamId}/schedule/timeOffRequests | Maximum subscription quotas:<li> Per app and resource path combination: 1.<li> Per user and resource path combination: 10 subscriptions.<li> Per organization: 10,000 total subscriptions. |
 | [todoTask][] | Changes to all task in a specific task list: `/me/todo/lists/{todoTaskListId}/tasks` | - |
 | [user][] | Changes to all users: `/users` <br><br> Changes to a specific user: `/users/{id}` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for personal Microsoft accounts like outlook.com.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of users also trigger the `updated` **changeType**. |
 
@@ -60,10 +65,15 @@ Some of these resources support rich notifications (notifications with resource 
 [alert]: /graph/api/resources/alert
 [chatMessage]: /graph/api/resources/chatmessage
 [callRecord]: /graph/api/resources/callrecords-callrecord
+[offershiftrequest]: /graph/api/resources/offershiftrequest
+[openshiftchangerequest]: /graph/api/resources/openshiftchangerequest
 [presence]: /graph/api/resources/presence
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[shift]: /graph/api/resources/shift
+[swapshiftschangerequest]: /graph/api/resources/swapshiftschangerequest
 [team]: /graph/api/resources/team
+[timeoffrequest]: /graph/api/resources/timeoffrequest
 [todoTask]: /graph/api/resources/todotask
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
