@@ -27,6 +27,8 @@ This resource is the base type for the following evidence types:
 * [blobContainerEvidence](security-blobcontainerevidence.md)
 * [blobEvidence](security-blobevidence.md)
 * [cloudApplicationEvidence](security-cloudapplicationevidence.md)
+* [cloudLogonRequestEvidence](security-cloudlogonrequestevidence.md)
+* [cloudLogonSessionEvidence](security-cloudlogonsessionevidence.md)
 * [containerEvidence](security-containerevidence.md)
 * [containerImageEvidence](security-containerimageevidence.md)
 * [containerRegistryEvidence](security-containerregistryevidence.md)
