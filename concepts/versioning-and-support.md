@@ -12,7 +12,7 @@ This article describes the support and breaking change policies for Microsoft Gr
 
 Microsoft Graph follows the [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle).
 
-As new versions of the Microsoft Graph REST APIs and Microsoft Graph SDKs are released, earlier versions will be retired. Microsoft declares a version as deprecated at least 24 months in advance of retiring it. Similarly, for individual APIs that are generally available (GA), Microsoft declares an API as deprecated at least 24 months in advance of removing it from the GA version.
+As new versions of the Microsoft Graph REST APIs are released, earlier versions will be retired. Microsoft declares a version as deprecated at least 24 months in advance of retiring it. Similarly, for individual APIs that are generally available (GA), Microsoft declares an API as deprecated at least 24 months in advance of removing it from the GA version. For Microsoft Graph SDKs, only the latest major version of any given library is supported and updated with new features, bug fixes, and workarounds. The major version prior to the latest version is supported for 12 months from the release date of the latest major version, for security fixes only. We recommend that you upgrade to the latest version of the SDKs whenever possible.
 
 When we increment the major version of the API (for example, from v1.0 to v2.0), we're announcing that the current version (in this example, v1.0) is immediately deprecated and we'll no longer support it 24 months after the announcement. We might make exceptions to this policy for service security or health reliability issues.
 

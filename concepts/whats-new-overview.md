@@ -34,7 +34,10 @@ Use the [Create](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-
 
 ### Identity and access | Identity and sign-in
 
-Configure the [default identity provider](/graph/api/resources/defaultinvitationredemptionidentityproviderconfiguration) to use in redemption flow settings for Microsoft Entra ID B2B collaboration.
+- Configure the [default identity provider](/graph/api/resources/defaultinvitationredemptionidentityproviderconfiguration) to use in redemption flow settings for Microsoft Entra ID B2B collaboration.
+- Use a [custom authentication extension](/graph/api/resources/customauthenticationextension) to manage the configuration and get data from a system external to Microsoft Entra ID, such as a database, so to customize the authentication experience for users. This feature is available for both Microsoft Entra for workforce tenants and Microsoft Entra External ID.
+- To customize an authentication process, use an [authentication event listener](/graph/api/resources/authenticationEventListener) to manage listeners and handlers that trigger the execution of custom logic during the authentication experience. This feature is available for both Microsoft Entra for workforce tenants and Microsoft Entra External ID.
+- Multiple tenants in Microsoft Entra ID can now collaborate seamlessly as a single entity by using [multi-tenant organization APIs](/graph/api/resources/multitenantorganization-overview). Set up and manage a multi-tenant organization, and configure cross-tenant policies for multi-tenant organization tenants through policy templates.
 
 ### Groups
 
@@ -66,6 +69,8 @@ Associate users or groups as sponsors for a guest user's privileges in the tenan
 
 - Use the **allotmentDisplayName** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to divide tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment.
 - Deprecated the **type** property on [cloudPcAuditResource](/graph/api/resources/cloudpcauditresource?view=graph-rest-beta&preserve-view=true) in favor of the **resourceType** property.
+- Deprecated the `shared` member on [cloudPcProvisioningType](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true#cloudpcprovisioningtype-values) in favor of the `sharedByUser` member.
+- Added the `sharedbyEntraGroup` member as a new provisioning type under [cloudPcProvisioningType](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true#cloudpcprovisioningtype-values).
 
 ### Identity and access | Governance
 
@@ -89,7 +94,8 @@ Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint i
 
 ### Reports | Identity and access reports
 
-The previously deprecated **activeUsersBreakdownMetric** resource and its associated APIs are now retired. To get insights into daily and monthly user activity on apps registered in your tenant that's configured for Microsoft Entra External ID for customers, use the [activeUsersMetric resource type](/graph/api/resources/activeusersmetric?view=graph-rest-beta&preserve-view=true) and its associated APIs.
+- Added the `nativeAuth` member as a supported protocol type to the **authenticationProtocol** in the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) resource.
+- The previously deprecated **activeUsersBreakdownMetric** resource and its associated APIs are now retired. To get insights into daily and monthly user activity on apps registered in your tenant that's configured for Microsoft Entra External ID for customers, use the [activeUsersMetric resource type](/graph/api/resources/activeusersmetric?view=graph-rest-beta&preserve-view=true) and its associated APIs.
 
 ### Security | Legacy alerts
 
@@ -98,6 +104,16 @@ The `/security/alerts` endpoint is deprecated and will stop returning data on **
 ### Security | Threat intelligence indicator
 
 The `/security/tiindicators` endpoint is deprecated and will stop returning data on **April 10, 2026**.
+
+### Teamwork and communications | Calls and online meetings
+
+A town hall is a type of meeting available in Microsoft Teams. Whether you're marking milestone achievements within your organization or covering an election, town hall features enable you to provide high-quality production experiences to large audiences. You can create, publish, and cancel town hall meetings by using the following APIs:
+
+- [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true)
+- [virtualEvent: publish](/graph/api/virtualevent-publish?view=graph-rest-beta&preserve-view=true)
+- [virtualEvent: cancel](/graph/api/virtualevent-cancel?view=graph-rest-beta&preserve-view=true)
+
+For more information about town hall APIs, see [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications | Messaging
 
