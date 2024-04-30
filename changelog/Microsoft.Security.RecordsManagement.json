@@ -611,73 +611,147 @@
     {
       "ChangeList": [
         {
-          "Id": "8483ca01-94ab-4be1-bcfb-f2150aff8e99",
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
           "ApiChange": "GET",
           "ChangedApiName": "subcategoryTemplate",
           "ChangeType": "Change",
-          "Description": "Changed the subcategory API url. Changed subCategory to subcategory.",
+          "Description": "Changed subCategory to subcategory in the URL.",
           "Target": "subcategoryTemplate"
         },
         {
-          "Id": "12b48651-1365-4bda-adb6-93017a9de1c5",
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
           "ApiChange": "POST",
           "ChangedApiName": "subcategoryTemplate",
           "ChangeType": "Change",
-          "Description": "Changed the subcategory API url. Changed subCategory to subcategory.",
+          "Description": "Changed subCategory to subcategory in the URL.",
           "Target": "subcategoryTemplate"
         },
         {
-          "Id": "c0f0c482-25df-402f-adc9-12fcfe394fdc",
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
           "ApiChange": "DELETE",
           "ChangedApiName": "subcategoryTemplate",
           "ChangeType": "Change",
-          "Description": "Changed the subcategory API url. Changed subCategory to subcategory.",
+          "Description": "Changed subCategory to subcategory in the URL.",
           "Target": "subcategoryTemplate"
         },
         {
-          "Id": "619d2533-fcf4-4a8b-990f-25f36e72754f",
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
           "ApiChange": "Resource",
-          "ChangedApiName": "appliedcategory",
+          "ChangedApiName": "appliedCategory",
           "ChangeType": "Change",
-          "Description": "Renamed resource appliedcategory to fileplanappliedcategory.",
-          "Target": "fileplanappliedcategory"
+          "Description": "Renamed the **appliedCategory** resource type to [filePlanAppliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanappliedcategory?view=graph-rest-v1.0).",
+          "Target": "filePlanAppliedCategory"
         },
         {
-          "Id": "c2a3d845-3531-4008-8439-e936863384de",
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
           "ApiChange": "Resource",
           "ChangedApiName": "authority",
           "ChangeType": "Change",
-          "Description": "Renamed resource authority to fileplanauthority.",
-          "Target": "fileplanauthority"
+          "Description": "Renamed the **authority** resource to [filePlanAppliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanauthority?view=graph-rest-v1.0).",
+          "Target": "filePlanAppliedCategory"
         },
         {
-          "Id": "75d585b3-7d6b-4dd5-8780-a13e750af715",
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
           "ApiChange": "Resource",
           "ChangedApiName": "citation",
           "ChangeType": "Change",
-          "Description": "Renamed resource citation to fileplancitation.",
-          "Target": "fileplancitation"
+          "Description": "Renamed the **citation** resource to [filePlanCitation](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplancitation?view=graph-rest-v1.0).",
+          "Target": "filePlanCitation"
         },
         {
-          "Id": "1bede002-136c-4e21-ba9b-558abee3b72e",
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
           "ApiChange": "Resource",
           "ChangedApiName": "department",
           "ChangeType": "Change",
-          "Description": "Renamed resource department to fileplandepartment.",
+          "Description": "Renamed the **department** resource to [fileplandepartment](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandepartment?view=graph-rest-v1.0).",
           "Target": "fileplandepartment"
         },
         {
-          "Id": "d3740625-2031-4387-8594-7b6c1aaae351",
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
           "ApiChange": "Resource",
           "ChangedApiName": "subcategory",
           "ChangeType": "Change",
-          "Description": "Renamed resource subcategory to fileplansubcategory.",
+          "Description": "Renamed the **subcategory** resource to [filePlanSubcategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplansubcategory?view=graph-rest-v1.0).",
           "Target": "fileplansubcategory"
         }
       ],
-      "Id": "f59d02ce-24fd-4f4f-bfdf-4141cd80e57c",
+      "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
       "Cloud": "Prod",
       "Version": "v1.0",
+      "CreatedDateTime": "2024-04-30T14:01:24.5697379Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Records management"
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "GET",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed subCategory to subcategory in the URL.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "POST",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed subCategory to subcategory in the URL.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "DELETE",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed subCategory to subcategory in the URL.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appliedCategory",
+          "ChangeType": "Change",
+          "Description": "Renamed the **appliedCategory** resource type to [filePlanAppliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanappliedcategory?view=graph-rest-beta).",
+          "Target": "filePlanAppliedCategory"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authority",
+          "ChangeType": "Change",
+          "Description": "Renamed the **authority** resource to [filePlanAppliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanauthority?view=graph-rest-beta).",
+          "Target": "filePlanAppliedCategory"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "citation",
+          "ChangeType": "Change",
+          "Description": "Renamed the **citation** resource to [filePlanCitation](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplancitation?view=graph-rest-beta).",
+          "Target": "filePlanCitation"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "department",
+          "ChangeType": "Change",
+          "Description": "Renamed the **department** resource to [fileplandepartment](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandepartment?view=graph-rest-beta).",
+          "Target": "fileplandepartment"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subcategory",
+          "ChangeType": "Change",
+          "Description": "Renamed the **subcategory** resource to [filePlanSubcategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplansubcategory?view=graph-rest-beta).",
+          "Target": "fileplansubcategory"
+        }
+      ],
+      "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+      "Cloud": "Prod",
+      "Version": "beta",
       "CreatedDateTime": "2024-04-30T14:01:24.5697379Z",
       "WorkloadArea": "Security",
       "SubArea": "Records management"
