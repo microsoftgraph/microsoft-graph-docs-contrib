@@ -4706,13 +4706,3 @@ Possible values for user account types (group membership), per Windows definitio
 |moderate|
 |elevated|
 |unknownFutureValue|
-
-### insiderRiskLevel values 
-
-|Member|
-|:---|
-|none|
-|minor|
-|moderate|
-|elevated|
-|unknownFutureValue|
