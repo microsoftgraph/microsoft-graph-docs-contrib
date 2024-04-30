@@ -21,8 +21,8 @@ Contains details of the various content options to be customized in the authenti
 |:---|:---|:---|
 |attributeCollection|[keyValue](../resources/keyvalue.md) collection| Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.|
 |attributeCollectionRelativeUrl|String| A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.|
-|registrationCampaign|[keyValue](../resources/keyvalue.md) collection| Represents the content options to be customized during the Proof Up interrupt for MFA |
-|registrationCampaignRelativeUrl|String| A relative URL for the content options to be customized during the MFA proof-up interruption. |
+|registrationCampaign|[keyValue](../resources/keyvalue.md) collection| Represents content options to customize during MFA proofup interruptions. |
+|registrationCampaignRelativeUrl|String| The relative URL of the content options to customize during MFA proofup interruptions. |
 
 ## Relationships
 None.
