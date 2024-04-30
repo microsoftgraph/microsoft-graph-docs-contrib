@@ -451,7 +451,7 @@ Content-type: application/json
         "user": {
             "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "670374fa-3b0e-4a3b-9d33-0e1bc5ff1956",
-            "displayName": "Sumana NonAdmin",
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser",
             "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
         }
