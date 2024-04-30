@@ -12,14 +12,6 @@
             },
             {
             "Id": "eee21f5a-24a4-45f0-b456-102b11cde153",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "insiderRiskLevel",
-            "ChangeType": "Addition",
-            "Description": "Added the **insiderRiskLevel** enumeration type.",
-            "Target": "insiderRiskLevel"
-            },
-            {
-            "Id": "eee21f5a-24a4-45f0-b456-102b11cde153",
             "ApiChange": "Property",
             "ChangedApiName": "insiderRiskLevels",
             "ChangeType": "Addition",
