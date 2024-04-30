@@ -2775,6 +2775,32 @@
       "CreatedDateTime": "2024-02-23T18:25:58.892085Z",
       "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "49319a51-e574-41cd-82c1-d5089af53c22",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "requiredLicenses",
+          "ChangeType": "Addition",
+          "Description": "Added the **requiredLicenses** enumeration type.",
+          "Target": "requiredLicenses"
+        },
+        {
+          "Id": "49319a51-e574-41cd-82c1-d5089af53c22",
+          "ApiChange": "Property",
+          "ChangedApiName": "requiredLicenses",
+          "ChangeType": "Addition",
+          "Description": "Added the **requiredLicenses** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        }
+      ],
+      "Id": "49319a51-e574-41cd-82c1-d5089af53c22",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-30T17:15:00.4448573Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
     }
   ]
 }

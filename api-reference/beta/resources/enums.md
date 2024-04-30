@@ -140,6 +140,18 @@ Namespace: microsoft.graph
 |generallyAvailable|
 |unknownFutureValue|
 
+### requiredLicenses values
+
+|Member|
+|:---|
+|notApplicable|
+|microsoftEntraIdFree|
+|microsoftEntraIdP1|
+|microsoftEntraIdP2|
+|microsoftEntraIdGovernance|
+|microsoftEntraWorkloadId|
+|unknownFutureValue|
+
 ### recommendationCategory values
 
 | Member               |
