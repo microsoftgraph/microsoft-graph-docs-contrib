@@ -426,7 +426,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/testprodbetateamsgraphdev/$metadata#chats('19%3Abcf84b15c2994a909770f7d05bc4fe16%40thread.v2')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Abcf84b15c2994a909770f7d05bc4fe16%40thread.v2')/messages/$entity",
     "id": "1706763669648",
     "replyToId": null,
     "etag": "1707948456260",
