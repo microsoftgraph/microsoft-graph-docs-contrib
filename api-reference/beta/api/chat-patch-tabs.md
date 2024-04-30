@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 Update the properties of the specified [tab](../resources/teamstab.md) in a [chat](../resources/chat.md). 
 This API can be used to configure the content of the tab.
 
-> **Note:** If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab pinned in the meeting will be updated.
+> [!NOTE] 
+> - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab pinned in the meeting will be updated.
+> - You can't use this API to update a static tab. An attempt to update a static tab returns a `400 Bad Request` response code.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -27,7 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_patch_tabs" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-patch-tabs-permissions.md)]
 
-> **Note:** The TeamsTab.ReadWrite.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The TeamsTab.ReadWrite.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -46,7 +49,7 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 | Content-Type  | application/json. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.
+In the request body, supply a JSON representation of a [tab](../resources/teamstab.md) object.
 
 ## Response
 

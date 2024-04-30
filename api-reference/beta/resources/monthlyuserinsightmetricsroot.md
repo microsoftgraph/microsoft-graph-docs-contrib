@@ -22,7 +22,6 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |activeUsers|[activeUsersMetric](../resources/activeusersmetric.md) collection|Insights for active users on apps registered in the tenant for a specified period.|
-|activeUsersBreakdown (deprecated)|[activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection|Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.|
 |authentications|[authenticationsMetric](../resources/authenticationsmetric.md) collection|Insights for authentications on apps registered in the tenant for a specified period.|
 |mfaCompletions|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection|Insights for MFA usage on apps registered in the tenant for a specified period.|
 |requests|[userRequestsMetric](../resources/userrequestsmetric.md) collection| Insights for all user requests on apps registered in the tenant for a specified period.|

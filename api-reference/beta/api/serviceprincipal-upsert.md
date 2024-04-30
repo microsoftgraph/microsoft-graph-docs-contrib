@@ -18,6 +18,8 @@ Create a new [servicePrincipal](../resources/serviceprincipal.md) object if it d
 > [!IMPORTANT]
 > Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords or secrets for a servicePrincipal.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -25,9 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_upsert" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-upsert-permissions.md)]
 
-For multitenant apps, the calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+For multitenant apps, the calling user must also be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-+ Global Administrator
 + Application Administrator
 + Cloud Application Administrator roles
 

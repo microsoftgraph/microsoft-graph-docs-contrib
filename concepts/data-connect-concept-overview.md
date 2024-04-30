@@ -13,7 +13,7 @@ In a hybrid workplace, organizations must develop a data-driven culture to evolv
  
 The potential this data holds is powerful; however, to remain competitive, organizations must unlock access to their Microsoft 365 data and streamline their manual analytical processes. Data is an organization's competitive advantage. 
 
-You can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph) to access your Microsoft 365 data for enterprise analytics. Data Connect provides secure, scalable access to relevant Microsoft 365 datasets in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
+You can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph/data-connect) to access your Microsoft 365 data for enterprise analytics. Data Connect provides secure, scalable access to relevant Microsoft 365 datasets in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
 
 Data Connect unlocks several enterprise analytics scenarios, including: 
 

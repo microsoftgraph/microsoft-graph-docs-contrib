@@ -48,6 +48,26 @@ Namespace: microsoft.graph
 | certificate        |
 | unknownFutureValue |
 
+### plannerTaskCompletionRequirements values
+
+| Member             |
+|:-------------------|
+| none               |
+| checklistCompletion|
+| unknownFutureValue |
+| formCompletion     |
+| approvalCompletion |
+
+### plannerApprovalStatus values 
+
+| Member             |
+|:-------------------|
+| requested          |
+| approved           |
+| rejected           |
+| cancelled          |
+| unknownFutureValue |
+
 ### applicationKeyOrigin values
 
 | Member             |
@@ -477,6 +497,8 @@ Namespace: microsoft.graph
 | saml20             |
 | deviceCode         |
 | unknownFutureValue |
+| authenticationTransfer|
+| nativeAuth         |
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
@@ -1277,6 +1299,8 @@ Namespace: microsoft.graph
 | gpsLocationCondition                              |
 | riskBasedPolicy                                   |
 | unknownFutureValue                                |
+| scopeBasedAuthRequirementPolicy                   |
+| authenticationStrengths                           |
 
 
 ### riskDetail values
@@ -1452,6 +1476,7 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+|excused|
 
 ### educationFeedbackResourceOutcomeStatus values
 
@@ -3128,6 +3153,14 @@ Possible values for user account types (group membership), per Windows definitio
 | custom  |
 | gallery |
 | unknownFutureValue |
+
+### cloudPcPolicySettingType values 
+
+|Member|
+|:---|
+|region|
+|singleSignOn|
+|unknownFutureValue|
 
 ### chatType values
 
