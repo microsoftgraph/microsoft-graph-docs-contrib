@@ -1,5 +1,5 @@
 ---
-title: "Manage Microsoft Entra identity and network access by using Microsoft Graph"
+title: "Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph"
 description: "Microsoft Graph provides REST APIs to help manage identity and network access capabilities, most of which are available through Microsoft Entra."
 ms.localizationpriority: high
 doc_type: conceptualPageType
@@ -10,7 +10,7 @@ ms.reviewer: dkershaw10
 ms.date: 04/30/2024
 ---
 
-# Manage Microsoft Entra identity and network access by using Microsoft Graph
+# Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,15 +55,11 @@ A core functionality of identity and access management is managing your tenant c
 | Administrator roles, including Microsoft Entra administrator roles, are one of the most sensitive resources in a tenant. You can manage the lifecycle of their assignment in the tenant, including creating custom roles, assigning roles, tracking changes to role assignments, and removing assignees from roles. | [directoryRole resource type](directoryrole.md)  and [directoryRoleTemplate resource type](directoryroletemplate.md)and their associated APIs <li> [roleManagement resource type](rolemanagement.md) and its associated APIs <br/><br/> These APIs allow you to make direct role assignments. Alternatively, you can use Privileged Identity Management APIs for [Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [groups](privilegedidentitymanagement-for-groups-api-overview.md) to make just-in-time and time-bound role assignments, instead of direct forever active assignments. |
 | Define the following configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. <li> Settings for Microsoft 365 groups such as guest user access, classifications, and naming policies <li> Password rule settings such as banned password lists and lockout duration <li> Prohibited names for applications, reserved words, and blocking trademark violations <li> Custom conditional access policy URL <li> Consent policies such as user consent requests, group-specific consent, and consent for risky apps | [directorySetting resource type](directorysetting.md) and [directorySettingTemplate resource type](directorysettingtemplate.md)  and their associated APIs <br/><br/> For more information, see [Overview of group settings](/graph/group-directory-settings). |
 | Domain management operations such as: <li> associating a domain with your tenant <li> retrieving DNS records <li> verifying domain ownership <li> associating specific services with specific domains <li> deleting domains | [domain resource type](domain.md) and its associated APIs |
-| Manage the profile objects for external users that you're invited to collaborate via Teams. These APIs aren't similar to the invitation APIs for Microsoft Entra External ID B2B collaboration. | [externalUserProfile resource type](externaluserprofile.md) and [pendingExternalUserProfile resource type](externaluserprofile.md) and their associated APIs |
 | Configure and manage staged rollout of specific Microsoft Entra ID features | [featureRolloutPolicy resource type](featurerolloutpolicy.md) and its associated APIs |
-| Manage the policies for Mobile Device Management (MDM) and Mobile Application Management (MAM) autoenrollment for Microsoft Entra joined and registered devices | [mobilityManagementPolicy resource type](mobilitymanagementpolicy.md) and its associated APIs |
 | Configure options that are available in Microsoft Entra Cloud Sync such as preventing accidental deletions and managing group writebacks. | [onPremisesDirectorySynchronization resource type](onpremisesdirectorysynchronization.md) and its associated APIs |
 | Manage the base settings for your Microsoft Entra tenant | [organization resource type](organization.md) and its associated APIs |
-| Manage the tenant-wide settings for your Microsoft Entra tenant, such as whether people and item insights are enabled for the organization. | [organizationSettings resource type](organizationsettings.md) and its associated APIs |
 | Retrieve the organizational contacts that might be synchronized from on-premises directories or from Exchange Online | [orgContact resource type](orgcontact.md) and its associated APIs |
 | Discover the basic details of other Microsoft Entra tenants by querying using the tenant ID or the domain name | [tenantInformation resource type](tenantinformation.md) and its associated APIs |
-| Configure trusted certificate authorities for certificates that can be assigned to apps and service principals in the tenant. | [certificateBasedApplicationConfiguration resource type](certificatebasedapplicationconfiguration.md) and its associated APIs |
 | Manage the delegated permissions  and their assignments to service principals in the tenant | [oAuth2PermissionGrant resource type](oauth2permissiongrant.md) and its associated APIs |
 
 ---
@@ -76,14 +72,12 @@ A core functionality of identity and access management is managing your tenant c
 | Manage authentication methods that are supported in Microsoft Entra ID | See [Microsoft Entra authentication methods API overview](authenticationmethods-overview.md) and [Microsoft Entra authentication methods policies API overview](authenticationmethodspolicies-overview.md) |
 | Manage the authentication methods or combinations of authentication methods that you can apply as grant control in Microsoft Entra Conditional Access | See [Microsoft Entra authentication strengths API overview](authenticationstrengths-overview.md) |
 |Manage tenant-wide authorization policies such as: <li> enable SSPR for administrator accounts <li>enable self-service join for guests <li> limit who can invite guests <li> whether users can consent to risky apps <li> block the use of MSOL <li> customize the default user permissions <li> identity private preview features enabled <li>Customize the guest user permissions between User, Guest User, and Restricted Guest User| [authorizationPolicy resource type](authorizationpolicy.md) and its associated APIs|
-|Configure Continuous Access Evaluation (CAE), which allows access tokens to be revoked based on critical events and policy evaluation rather than relying on token expiry based on lifetime.| [continuousAccessEvaluationPolicy resource type](continuousaccessevaluationpolicy.md) and its associated APIs|
 | Manage the policies for certificate-based authentication in the tenant | [certificateBasedAuthConfiguration resource type](certificatebasedauthconfiguration.md) and its associated APIs |
 | Manage Microsoft Entra conditional access policies | [conditionalAccessRoot resource type](conditionalaccessroot.md) and its associated APIs |
 | Manage cross-tenant access settings and manage outbound restrictions, inbound restrictions, tenant restrictions, and cross-tenant synchronization of users in multitenant organizations. | See [Cross-tenant access settings API overview](crosstenantaccesspolicy-overview.md) |
 | Manage the user profiles that are shared with you or external tenants using B2B direct connect, including removing and exporting personal data | [inboundSharedUserProfile resource type](inboundshareduserprofile.md) and [outboundSharedUserProfile resource type](outboundshareduserprofile.md) and their associated APIs |
 | Configure how and which external systems interact with Microsoft Entra ID during a user authentication session | [customAuthenticationExtension resource type](customauthenticationextension.md) and its associated APIs |
 | Manage requests against user data in the organization, such as exporting personal data | [dataPolicyOperation resource type](datapolicyoperation.md) and its associated APIs |
-|Configure the policies for managing Microsoft Entra join and Microsoft Entra register devices|[deviceRegistrationPolicy resource type](deviceregistrationpolicy.md) and its associated APIs|
 | Manage the tenant-wide policy that controls whether external users can leave a Microsoft Entra tenant via self-service controls, for example, through the **organizations** menu of the **My Account** portal. | [externalIdentitiesPolicy resource type](externalidentitiespolicy.md) and its associated APIs |
 |Force auto-acceleration sign-in to skip the username entry screen and automatically forward users to federated sign-in endpoints. |[homeRealmDiscoveryPolicy resource type](homerealmdiscoverypolicy.md) resource type and its associated APIs|
 | Detect, investigate, and remediate identity-based risks using Microsoft Entra ID Protection and feed the data into security information and event management (SIEM) tools for further investigation and correlation. | See [Use the Microsoft Graph identity protection APIs](identityprotection-overview.md) |
@@ -91,12 +85,8 @@ A core functionality of identity and access management is managing your tenant c
 | Invite external users to collaborate with your tenant by using Microsoft Entra External ID | [invitation resource type](invitation.md) and its associated APIs |
 | Define a group of tenants belonging to your organization and streamline intra-organization cross-tenant collaboration | See [Multitenant organization API overview](multitenantorganization-overview.md) |
 | Customize sign-in UIs to match your company branding, including applying branding that's based on the browser language | [organizationalBranding resource type](organizationalbranding.md) and its associated APIs |
-| Customize the UI/UX in Azure AD B2C using the Identity Experience Framework (IEF) | [trustFrameworkKeySet resource type](trustframeworkkeyset.md) and [trustFrameworkPolicy resource type](trustframeworkpolicy.md) and their associated APIs |
 | User flows for Microsoft Entra External ID for workforce | The following resource types and their associated APIs: <li>[b2xIdentityUserFlow](b2xidentityuserflow.md) to configure the base user flow and its properties such as identity providers <li> [identityUserFlowAttribute](identityuserflowattribute.md) to manage built-in and custom user flow attributes <li> [identityUserFlowAttributeAssignment](identityuserflowattributeassignment.md) to manage user flow attribute assignments <li> [userFlowLanguageConfiguration resource type](userflowlanguageconfiguration.md) to configure custom languages for user flows |
-| User flows for Azure AD B2C | The following resource types and their associated APIs: <li>[b2cIdentityUserFlow ](b2cidentityuserflow.md) to configure the base user flow and its properties such as identity providers <li> [identityUserFlowAttribute](identityuserflowattribute.md) to manage built-in and custom user flow attributes <li> [identityUserFlowAttributeAssignment](identityuserflowattributeassignment.md) to manage user flow attribute assignments <li> [userFlowLanguageConfiguration resource type](userflowlanguageconfiguration.md) to configure custom languages for user flows |
-| User flows for Microsoft Entra External ID for external tenants | [authenticationEventsFlow resource type](authenticationeventsflow.md) and its associated APIs |
 |Manage app consent policies and condition sets|[permissionGrantPolicy resource type](permissiongrantpolicy.md)|
-|Manage app consent pre-approval policies|[permissionGrantPreApprovalPolicy resource type](permissiongrantpreapprovalpolicy.md)|
 |Enable or disable security defaults in Microsoft Entra ID|[identitySecurityDefaultsEnforcementPolicy resource type](identitysecuritydefaultsenforcementpolicy.md)|
 
 ---
@@ -111,20 +101,11 @@ The following API use cases ar supported to customize how users interact with yo
 
 | Use cases | API operations |
 |--|--|
-| User flows for Microsoft Entra External ID for external tenants and self-service sign-up experiences | [authenticationEventsFlow resource type](authenticationeventsflow.md) and its associated APIs |
 | Manage identity providers for Microsoft Entra External ID. You can identify the identity providers that are supported or configured in the tenant. | See [identityProviderBase resoruce type](identityproviderbase.md) and its associated APIs |
 | Customize sign-in UIs to match your company branding, including applying branding that's based on the browser language | [organizationalBranding resource type](organizationalbranding.md) and its associated APIs |
 | Manage identity providers for Microsoft Entra External ID, such as social identities | [identityProviderBase resoruce type](identityproviderbase.md) and its associated APIs |
 | Manage user profiles in Microsoft Entra External ID for customers | For more information, see [Default user permissions in customer tenants](/graph/api/resources/users#default-user-permissions-in-customer-tenants) |
 | Add your own business logic to the authentication experiences by integrating with systems that are external to Microsoft Entra ID| [authenticationEventListener resource type](authenticationeventlistener.md) and [customAuthenticationExtension resource type](customauthenticationextension.md) and their associated APIs |
-
-## Multicloud permissions management
-
-For more information, see [Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs](permissions-management-api-overview.md).
-
-## Network access management
-
-For more information, see [Secure access to cloud, public, and private apps using Microsoft Graph network access APIs](networkaccess-global-secure-access-api-overview.md).
 
 ## Partner tenant management
 
