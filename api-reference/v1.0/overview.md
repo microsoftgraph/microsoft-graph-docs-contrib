@@ -47,7 +47,7 @@ Microsoft Graph API requests to the v1.0 endpoint use the following pattern:
 https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
-For details, see [Use the Microsoft Graph API](/graph/use-the-api).
+For more information about Microsoft Graph REST API calls, see [Use the Microsoft Graph API](/graph/use-the-api).
 
 ## Microsoft Graph beta endpoint
 
@@ -57,7 +57,7 @@ If you're interested in new or enhanced APIs that are still in preview status, s
 > [!CAUTION]
 > APIs in preview status are subject to change, and might break existing scenarios without notice. Don't take a production dependency on APIs in the `beta` endpoint.
 
-For more information, see [versioning and support](/graph/versioning-and-support).
+For more information, see [Versioning and support](/graph/versioning-and-support).
 
 ## What's new
 Find out [what's new](/graph/whats-new-overview) in the v1.0 endpoint.

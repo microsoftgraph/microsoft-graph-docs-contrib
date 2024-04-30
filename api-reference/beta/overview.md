@@ -29,11 +29,11 @@ For more information about Microsoft Graph REST API calls, see [Use the Microsof
 
 Currently two versions of Microsoft Graph REST APIs are available - v1.0 and beta.
 
-If you're interested in using APIs that are generally availabile, see [Microsoft Graph v1.0 endpoint reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). 
+If you're interested in using APIs that are generally available, see [Microsoft Graph v1.0 endpoint reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). 
 
 To determine whether a beta API is available in v1.0, use the version selector in the left navigation. If the API is available in v1.0, you can switch to the v1.0 reference article.
 
-For more information, see [versioning and support](/graph/versioning-and-support).
+For more information, see [Versioning and support](/graph/versioning-and-support).
 
 ## What's new
 Find out [what's new](/graph/whats-new-overview) in the beta endpoint.
