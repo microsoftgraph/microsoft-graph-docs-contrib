@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.set_cloud_pc_review_status_post_request_body import SetCloudPcReviewStatusPostRequestBody
+from msgraph.generated.devicemanagement.manageddevices.item.set_cloud_pc_review_status.set_cloud_pc_review_status_post_request_body import SetCloudPcReviewStatusPostRequestBody
 from msgraph.generated.models.cloud_pc_review_status import CloudPcReviewStatus
 
 graph_client = GraphServiceClient(credentials, scopes)

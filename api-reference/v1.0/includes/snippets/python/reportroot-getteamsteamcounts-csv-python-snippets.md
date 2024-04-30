@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.reports.getTeamsTeamCounts(period='{period}').get_teams_team_counts_with_period_request_builder import GetTeamsTeamCountsWithPeriodRequestBuilder
+from msgraph.generated.reports.get_teams_team_counts(period='{period}').get_teams_team_counts_with_period_request_builder import GetTeamsTeamCountsWithPeriodRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -36,6 +36,8 @@ duration , err := abstractions.ParseISODuration("PT20M")
 requestBody.SetDuration(&duration) 
 format := "Book"
 requestBody.SetFormat(&format) 
+level := graphmodels.BEGINNER_LEVEL 
+requestBody.SetLevel(&level) 
 createdDateTime , err := time.Parse(time.RFC3339, "2018-01-01T00:00:00Z")
 requestBody.SetCreatedDateTime(&createdDateTime) 
 lastModifiedDateTime , err := time.Parse(time.RFC3339, "2021-04-01T04:26:06.1995367Z")
