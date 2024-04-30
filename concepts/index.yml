@@ -22,21 +22,12 @@ highlightedContent:
     - title: Microsoft Graph REST API
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0
+    - title: Integrate with Copilot for Microsoft 365
+      itemType: concept
+      url: /graph/connecting-external-content-experiences#copilot-for-microsoft-365
     - title: NEW! Deploy with Bicep
       itemType: deploy
       url: /graph/overview
-    - title: What's new? 
-      itemType: whats-new
-      url: /graph/whats-new-overview
-    - title: Integration patterns
-      itemType: architecture
-      url: /graph/integration-patterns-overview
-    - title: Authentication and authorization
-      itemType: concept
-      url: /graph/auth/
-    - title: Use the API
-      itemType: concept
-      url: /graph/use-the-api
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -96,7 +87,10 @@ conceptualContent:
       links:
         - url: ./overview-major-services.md
           itemType: concept
-          text: Explore services for productivity, collaboration, people and workplace intelligence, education, and more.  
+          text: Explore services for productivity, collaboration, people and workplace intelligence, education, and more.
+        - url: /graph/whats-new-overview
+          itemType: whats-new
+          text: Find out what's new in the beta and v1.0 APIs.
 tools:
   title: SDKs and tools
   items:
