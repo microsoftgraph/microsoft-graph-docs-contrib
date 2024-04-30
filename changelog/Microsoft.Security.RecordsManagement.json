@@ -599,20 +599,86 @@
           "ChangeType": "Addition",
           "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-v1.0) operation to [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource",
           "Target": "subCategoryTemplate"
-        },
-        {
-          "Id": "8bc12a96-302b-4e99-97d3-664f959cacc9",
-          "ApiChange": "GET,POST,DELETE",
-          "ChangedApiName": "subcategoryTemplate",
-          "ChangeType": "Change",
-          "Description": "Changed the subcategory API url.",
-          "Target": "subcategoryTemplate"
         }
       ],
       "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-07-24T14:01:24.5697379Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Records management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8483ca01-94ab-4be1-bcfb-f2150aff8e99",
+          "ApiChange": "GET",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed the subcategory API url. Changed subCategory to subcategory.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "12b48651-1365-4bda-adb6-93017a9de1c5",
+          "ApiChange": "POST",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed the subcategory API url. Changed subCategory to subcategory.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "c0f0c482-25df-402f-adc9-12fcfe394fdc",
+          "ApiChange": "DELETE",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed the subcategory API url. Changed subCategory to subcategory.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "619d2533-fcf4-4a8b-990f-25f36e72754f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appliedcategory",
+          "ChangeType": "Change",
+          "Description": "Renamed resource appliedcategory to fileplanappliedcategory.",
+          "Target": "fileplanappliedcategory"
+        },
+        {
+          "Id": "c2a3d845-3531-4008-8439-e936863384de",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authority",
+          "ChangeType": "Change",
+          "Description": "Renamed resource authority to fileplanauthority.",
+          "Target": "fileplanauthority"
+        },
+        {
+          "Id": "75d585b3-7d6b-4dd5-8780-a13e750af715",
+          "ApiChange": "Resource",
+          "ChangedApiName": "citation",
+          "ChangeType": "Change",
+          "Description": "Renamed resource citation to fileplancitation.",
+          "Target": "fileplancitation"
+        },
+        {
+          "Id": "1bede002-136c-4e21-ba9b-558abee3b72e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "department",
+          "ChangeType": "Change",
+          "Description": "Renamed resource department to fileplandepartment.",
+          "Target": "fileplandepartment"
+        },
+        {
+          "Id": "d3740625-2031-4387-8594-7b6c1aaae351",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subcategory",
+          "ChangeType": "Change",
+          "Description": "Renamed resource subcategory to fileplansubcategory.",
+          "Target": "fileplansubcategory"
+        }
+      ],
+      "Id": "f59d02ce-24fd-4f4f-bfdf-4141cd80e57c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-30T14:01:24.5697379Z",
       "WorkloadArea": "Security",
       "SubArea": "Records management"
     }
