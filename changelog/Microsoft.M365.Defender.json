@@ -2158,16 +2158,8 @@
           "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
           "ApiChange": "Method",
           "ChangedApiName": "runHuntingQuery",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **runHuntingQuery** method from the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-1.0) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
-          "ApiChange": "Method",
-          "ChangedApiName": "runHuntingQuery",
           "ChangeType": "Addition",
-          "Description": "Added the [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runHuntingQuery?view=graph-rest-1.0) method to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security-security?view=graph-rest-1.0) resource.",
+          "Description": "Added a timespan optional param to the body request.",
           "Target": "security"
         }
       ],
