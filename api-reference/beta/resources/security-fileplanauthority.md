@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.filePlanAthority",
+  "@odata.type": "#microsoft.graph.security.filePlanAuthority",
   "displayName": "String"
 }
 ```
