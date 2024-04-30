@@ -90,7 +90,8 @@ Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint i
 
 ### Reports | Identity and access reports
 
-The previously deprecated **activeUsersBreakdownMetric** resource and its associated APIs are now retired. To get insights into daily and monthly user activity on apps registered in your tenant that's configured for Microsoft Entra External ID for customers, use the [activeUsersMetric resource type](/graph/api/resources/activeusersmetric?view=graph-rest-beta&preserve-view=true) and its associated APIs.
+- Added the `nativeAuth` member as a supported protocol type to the **authenticationProtocol** in the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) resource.
+- The previously deprecated **activeUsersBreakdownMetric** resource and its associated APIs are now retired. To get insights into daily and monthly user activity on apps registered in your tenant that's configured for Microsoft Entra External ID for customers, use the [activeUsersMetric resource type](/graph/api/resources/activeusersmetric?view=graph-rest-beta&preserve-view=true) and its associated APIs.
 
 ### Security | Legacy alerts
 
