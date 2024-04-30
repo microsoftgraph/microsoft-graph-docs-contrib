@@ -1,5 +1,5 @@
 ---
-title: "Identity and network access API overview"
+title: "Microsoft Entra identity and network access API overview"
 description: "Use the identity and network access APIs in Microsoft Graph to manage and protect any identity and secure access to any resource on-premises, in hybrid environments, and cloud environments."
 author: FaithOmbongi
 ms.author: ombongifaith
@@ -8,13 +8,13 @@ ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.subservice: entra-id
 ms.custom: scenarios:getting-started
-ms.date: 04/23/2024
+ms.date: 04/30/2024
 #customer intent: As a developer, I want to understand how I can use Microsoft Graph to integrate Microsoft Entra for identity and network access, and build custom apps that access services on-premises, hybrid, and in the cloud.
 ---
 
-# Identity and network access API overview
+# Microsoft Entra identity and network access API overview
 
-The Microsoft Entra family of identity and network access solutions help you to protect any identity and secure access to any resource. You can use the [Microsoft Entra REST APIs in Microsoft Graph](/graph/api/resources/azure-ad-overview) to automate identity and access management tasks and integrate with any application.
+The Microsoft Entra family of identity and network access solutions help you to protect any identity and secure access to any resource. You can use the [Microsoft Graph APIs for Microsoft Entra services](/graph/api/resources/identity-network-access-overview) to automate identity and access management tasks and integrate with any application.
 
 ## Why use the Microsoft Entra APIs?
 
@@ -95,10 +95,10 @@ Use the **Global Secure Access APIs** for identity-centric configurations to sec
 
 Looking for the API reference for this service?
 
-- [Microsoft Entra identity and access management API in Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0&preserve-view=true)
-- [Microsoft Entra identity and access management API in Microsoft Graph beta](/graph/api/resources/azure-ad-overview?view=graph-rest-beta&preserve-view=true)
+- [Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph v1.0](/graph/api/resources/identity-network-access-overview)?view=graph-rest-1.0&preserve-view=true)
+- [Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph beta](/graph/api/resources/identity-network-access-overview)?view=graph-rest-beta&preserve-view=true)
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Microsoft Entra REST APIs and features and the related Microsoft Graph resources](/graph/api/resources/azure-ad-overview)
+> [Microsoft Graph APIs for Microsoft Entra features](/graph/api/resources/identity-network-access-overview)
