@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AndroidManagedAppRegistration;
+use Microsoft\Graph\Generated\Models\ManagedAppFlaggedReason;
+use Microsoft\Graph\Generated\Models\AndroidMobileAppIdentifier;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
