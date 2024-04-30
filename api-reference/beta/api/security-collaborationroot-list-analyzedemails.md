@@ -56,7 +56,7 @@ The following example shows how to use the `$filter` parameter to customize the 
 -->
 ``` http
 GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=networkMessageId eq 'bde1f764-bbf4-5673-fbba-0asdhsgfhf1'
-GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=networkMessageId eq 'bde1f764-bbf4-5673-fbba-0asdhsgfhf1' and recipientEmailAddress eq 'abc@def.com'
+GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=networkMessageId eq 'bde1f764-bbf4-5673-fbba-0asdhsgfhf1' and recipientEmailAddress eq 'bilbobaggins@contoso.com'
 ```
 
 ## Request headers

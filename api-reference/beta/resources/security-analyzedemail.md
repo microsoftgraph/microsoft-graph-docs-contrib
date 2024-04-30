@@ -53,7 +53,7 @@ Contains metadata for email messages that are analyzed for security threats.
 |sizeInBytes|Int32| Size of the email in bytes.|
 |spamConfidenceLevel|String|Spam confidence of the email.|
 |subject|String|Subject of the email.|
-|threatTypes|[microsoft.graph.security.threatType](#threattype-values) collection|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
+|threatTypes|[microsoft.graph.security.threatType](#threattype-values) collection|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phish`, `none`, `unknownFutureValue`.|
 |urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|A collection of the URLs in the email.|
 |urlsCount|Int32|The number of URLs in the email.|
 
