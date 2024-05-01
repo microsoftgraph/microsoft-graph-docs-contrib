@@ -15,6 +15,15 @@ Namespace: microsoft.graph
 
 Represents information about a presenter of a virtual event.
 
+## Methods
+
+| Method | Return Type |Description |
+| ------ | ----------- | ---------- |
+| [List](../api/virtualevent-list-presenters.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Get the list of all [virtualEventPresenter](../resources/virtualeventpresenter.md) objects of a virtual event. |
+| [Create](../api/virtualevent-post-presenters.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Get](../api/virtualeventpresenter-get.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Delete](../api/virtualeventpresenter-delete.md) | None | Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+
 ## Properties
 
 |Property|Type|Description|
