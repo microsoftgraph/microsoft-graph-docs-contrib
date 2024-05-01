@@ -22,6 +22,19 @@ Represents the audience evaluated by Conditional Access during a sign-in event.
 |applicationId|String|The ID of the application.|
 |audienceReasons|conditionalAccessAudienceReason|An enumeration value that that indicates the reasons this audience was included for a sign-in request.|
 
+## Possible values
+
+|resourcelessRequest|
+|confidentialClientIdToken|
+|confidentialClientNonIdToken|
+|resourceMapping|
+|resourceMappingDefault|
+|scopeMapping|
+|scopeMappingDefault|
+|delegatedScope  |
+|firstPartyResourceDefault|
+|thirdPartyResourceDefault|
+|unknownFutureValue|
 
 ## JSON representation
 
