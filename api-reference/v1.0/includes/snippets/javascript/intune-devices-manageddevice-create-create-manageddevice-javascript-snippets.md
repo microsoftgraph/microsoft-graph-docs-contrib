@@ -114,7 +114,8 @@ const managedDevice = {
   udid: 'Udid value',
   notes: 'Notes value',
   ethernetMacAddress: 'Ethernet Mac Address value',
-  physicalMemoryInBytes: 5
+  physicalMemoryInBytes: 5,  
+  enrollmentProfileName: 'Enrollment Profile Name value'
 };
 
 await client.api('/deviceManagement/managedDevices')

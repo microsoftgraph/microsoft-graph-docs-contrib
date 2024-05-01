@@ -382,26 +382,6 @@ items:
                 href: api/user-list-joinedteams.md
               - name: List associated teams
                 href: api/associatedteaminfo-list.md
-              - name: Group setting
-                href: resources/groupsetting.md
-                items:
-                  - name: Create
-                    href: api/group-post-settings.md
-                  - name: Get
-                    href: api/groupsetting-get.md
-                  - name: List
-                    href: api/group-list-settings.md
-                  - name: Update
-                    href: api/groupsetting-update.md
-                  - name: Delete
-                    href: api/groupsetting-delete.md
-              - name: Group setting template
-                href: resources/groupsettingtemplate.md
-                items:
-                  - name: List group setting templates
-                    href: api/groupsettingtemplate-list.md
-                  - name: Get group setting template
-                    href: api/groupsettingtemplate-get.md
               - name: List lifecycle policies
                 href: api/group-list-grouplifecyclepolicies.md
               - name: List photos
@@ -1299,19 +1279,23 @@ items:
                   - name: Get
                     href: api/cloudclipboarditem-get.md
               - name: Windows settings
-                href: resources/windowssetting.md
                 items:
-                  - name: List
-                    href: api/usersettings-list-windows.md
-                  - name: Get
-                    href: api/windowssetting-get.md
-              - name: Windows setting instance
-                href: resources/windowssettinginstance.md
-                items:
-                  - name: List
-                    href: api/windowssetting-list-instances.md
-                  - name: Get
-                    href: api/windowssettinginstance-get.md
+                  - name: Overview
+                    href: resources/windows-setting-api-overview.md
+                  - name: Windows setting
+                    href: resources/windowssetting.md
+                    items:
+                      - name: List
+                        href: api/usersettings-list-windows.md
+                      - name: Get
+                        href: api/windowssetting-get.md
+                  - name: Windows setting instance
+                    href: resources/windowssettinginstance.md
+                    items:
+                      - name: List
+                        href: api/windowssetting-list-instances.md
+                      - name: Get
+                        href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
@@ -4788,37 +4772,29 @@ items:
           - name: Assignment
             href: resources/educationassignment.md
             items:
-              - name: Create assignment
+              - name: Create
                 href: api/educationclass-post-assignment.md
-              - name: Get assignment
+              - name: Get
                 href: api/educationassignment-get.md
-              - name: Update assignment
+              - name: Update
                 href: api/educationassignment-update.md
-              - name: Delete assignment
+              - name: Delete
                 href: api/educationassignment-delete.md
+              - name: Publish
+                href: api/educationassignment-publish.md
               - name: Set up assignment resources folder
                 href: api/educationassignment-setupresourcesfolder.md
               - name: Set up assignment feedback resources folder
                 href: api/educationassignment-setupfeedbackresourcesfolder.md
-              - name: Publish assignment
-                href: api/educationassignment-publish.md
-              - name: List assignment resources
-                href: api/educationassignment-list-resources.md
-              - name: Create assignment resource
-                href: api/educationassignment-post-resource.md
-              - name: Get assignment resource
-                href: api/educationassignmentresource-get.md
-              - name: Delete resource from assignment
-                href: api/educationassignmentresource-delete.md
               - name: List submissions for assignment
                 href: api/educationassignment-list-submissions.md
               - name: Get rubric attached to assignment
                 href: api/educationassignment-get-rubric.md
               - name: List categories
                 href: api/educationassignment-list-categories.md
-              - name: Add category
+              - name: Attach category to assignment
                 href: api/educationassignment-post-categories.md
-              - name: Remove category
+              - name: Remove category from assignment
                 href: api/educationassignment-remove-category.md
               - name: Attach rubric to assignment
                 href: api/educationassignment-put-rubric.md
@@ -4826,16 +4802,25 @@ items:
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
                 href: api/educationassignment-delta.md
-              - name: Add grading category
+              - name: Attach grading category to assignment
                 href: api/educationassignment-post-gradingcategory.md
-              - name: Update grading category
-                href: api/educationgradingcategory-update.md
-              - name: Remove grading category
+              - name: Remove grading category from assignment
                 href: api/educationassignment-delete-gradingcategory.md
               - name: Activate assignment
                 href: api/educationassignment-activate.md
               - name: Deactivate assignment
                 href: api/educationassignment-deactivate.md
+          - name: Assignment resource
+            href: resources/educationassignmentresource.md
+            items:
+              - name: List
+                href: api/educationassignment-list-resources.md
+              - name: Create
+                href: api/educationassignment-post-resource.md
+              - name: Get
+                href: api/educationassignmentresource-get.md
+              - name: Delete from assignment
+                href: api/educationassignmentresource-delete.md             
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -5416,6 +5401,26 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+              - name: Group setting
+                href: resources/groupsetting.md
+                items:
+                  - name: Create
+                    href: api/group-post-settings.md
+                  - name: Get
+                    href: api/groupsetting-get.md
+                  - name: List
+                    href: api/group-list-settings.md
+                  - name: Update
+                    href: api/groupsetting-update.md
+                  - name: Delete
+                    href: api/groupsetting-delete.md
+              - name: Group setting template
+                href: resources/groupsettingtemplate.md
+                items:
+                  - name: List group setting templates
+                    href: api/groupsettingtemplate-list.md
+                  - name: Get group setting template
+                    href: api/groupsettingtemplate-get.md
               - name: On-premises directory synchronization
                 href: resources/onpremisesdirectorysynchronization.md
                 items:
@@ -6359,6 +6364,34 @@ items:
                         href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
                       - name: Get authentication method modes
                         href: api/authenticationmethodmodedetail-get.md
+              - name: Authentication event listeners
+                href: resources/authenticationeventlistener.md
+                items:
+                - name: List
+                  href: api/identitycontainer-list-authenticationeventlisteners.md
+                - name: Create
+                  href: api/identitycontainer-post-authenticationeventlisteners.md
+                - name: Get
+                  href: api/authenticationeventlistener-get.md
+                - name: Update
+                  href: api/authenticationeventlistener-update.md
+                - name: Delete
+                  href: api/authenticationeventlistener-delete.md
+              - name: Custom authentication extension
+                href: resources/customauthenticationextension.md
+                items:
+                - name: On token issuance start
+                  href: resources/ontokenissuancestartcustomextension.md
+                - name: List
+                  href: api/identitycontainer-list-customauthenticationextensions.md
+                - name: Create
+                  href: api/identitycontainer-post-customauthenticationextensions.md
+                - name: Get
+                  href: api/customauthenticationextension-get.md
+                - name: Update
+                  href: api/customauthenticationextension-update.md
+                - name: Delete
+                  href: api/customauthenticationextension-delete.md
               - name: Certificate-based auth configuration
                 displayName: CBA
                 href: resources/certificatebasedauthconfiguration.md
@@ -6644,6 +6677,63 @@ items:
                 items:
                   - name: Create invitation
                     href: api/invitation-post.md
+              - name: Multitenant organization
+                items:
+                - name: Overview
+                  displayName: Multitenant organization, MTO
+                  href: resources/multitenantorganization-overview.md
+                - name: Multitenant organization
+                  items:
+                  - name: Multitenant organization
+                    href: resources/multitenantorganization.md
+                  - name: Create
+                    href: api/tenantrelationship-put-multitenantorganization.md
+                  - name: Get
+                    href: api/multitenantorganization-get.md
+                  - name: Update
+                    href: api/multitenantorganization-update.md
+                - name: Tenant
+                  items:
+                  - name: Tenant
+                    href: resources/multitenantorganizationmember.md
+                  - name: List
+                    href: api/multitenantorganization-list-tenants.md
+                  - name: Add
+                    href: api/multitenantorganization-post-tenants.md
+                  - name: Get
+                    href: api/multitenantorganizationmember-get.md
+                  - name: Update
+                    href: api/multitenantorganizationmember-update.md
+                  - name: Remove
+                    href: api/multitenantorganization-delete-tenants.md
+                - name: Join request
+                  items:
+                  - name: Join request
+                    href: resources/multitenantorganizationjoinrequestrecord.md
+                  - name: Get
+                    href: api/multitenantorganizationjoinrequestrecord-get.md
+                  - name: Update
+                    href: api/multitenantorganizationjoinrequestrecord-update.md
+                - name: Partner configuration template
+                  items:
+                  - name: Partner configuration template
+                    href: resources/multitenantorganizationpartnerconfigurationtemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+                - name: Identity sync policy template
+                  items:
+                  - name: Identity sync policy template
+                    href: resources/multitenantorganizationidentitysyncpolicytemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
               - name: Organizational branding
                 href: resources/organizationalbranding.md
                 items:
