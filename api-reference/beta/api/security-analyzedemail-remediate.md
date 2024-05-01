@@ -88,11 +88,11 @@ Content-Type: application/json
     "analyzedEmails": [
       {
         "networkMessageId": "73ca4154-58d8-43d0-a890-08dc18c52e6d",
-        "recipientEmailAddress": "frodo@contoso.com"
+        "recipientEmailAddress": "hannah.jarvis@contoso.com"
       },
       {
         "networkMessageId": "73ca4154-58d8-43d0-a890-08dc18c52e6d",
-        "recipientEmailAddress": "bilbobaggins@contoso.com"
+        "recipientEmailAddress": "preston.morales@contoso.com"
       }
     ]
 }
