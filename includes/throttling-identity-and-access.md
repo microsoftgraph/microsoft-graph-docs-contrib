@@ -1,7 +1,7 @@
 ---
 author: "sureshja"
 ms.localizationpriority: high
-ms.prod: "msgraph"
+ms.subservice: entra-id
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->

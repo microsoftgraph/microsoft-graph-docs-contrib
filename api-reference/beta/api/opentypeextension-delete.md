@@ -4,7 +4,7 @@ description: "Delete an open extension (openTypeExtension object) from the speci
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
+ms.subservice: extensions
 ---
 
 # Delete openTypeExtension

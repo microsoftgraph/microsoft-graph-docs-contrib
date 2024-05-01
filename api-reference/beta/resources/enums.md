@@ -48,6 +48,26 @@ Namespace: microsoft.graph
 | certificate        |
 | unknownFutureValue |
 
+### plannerTaskCompletionRequirements values
+
+| Member             |
+|:-------------------|
+| none               |
+| checklistCompletion|
+| unknownFutureValue |
+| formCompletion     |
+| approvalCompletion |
+
+### plannerApprovalStatus values 
+
+| Member             |
+|:-------------------|
+| requested          |
+| approved           |
+| rejected           |
+| cancelled          |
+| unknownFutureValue |
+
 ### applicationKeyOrigin values
 
 | Member             |
@@ -477,6 +497,8 @@ Namespace: microsoft.graph
 | saml20             |
 | deviceCode         |
 | unknownFutureValue |
+| authenticationTransfer|
+| nativeAuth         |
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
@@ -2634,13 +2656,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### stagedFeatureName values
 
-| Member                    | Description                   |
-| :------------------------ | :---------------------------- |
-| passthroughAuthentication | Passthrough Authentication    |
-| seamlessSso               | Seamless Single Sign-on       |
-| passwordHashSync          | Password Hash Synchronization |
-| emailAsAlternateId        | Email as an alternate ID      |
-| unknownFutureValue        | A sentinel member             |
+| Member                    |
+| :------------------------ |
+| passthroughAuthentication |
+| seamlessSso               |
+| passwordHashSync          |
+| emailAsAlternateId        |
+| unknownFutureValue        |
+| certificateBasedAuthentication |
 
 ### tokenIssuerType values
 

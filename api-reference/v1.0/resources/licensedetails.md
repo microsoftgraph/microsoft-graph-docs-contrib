@@ -3,7 +3,7 @@ title: "licenseDetails resource type"
 description: "Contains information about a license assigned to a user."
 ms.localizationpriority: medium
 author: "frank-masuelli"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 
