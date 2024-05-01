@@ -6985,92 +6985,147 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
               - name: User flows
                 items:
-                  - name: Self-service sign up user flows in Microsoft Entra ID
-                    items:
+                  - name: User flows in workforce tenant
+                    items: 
                       - name: Self-service sign up user flow
-                        href: resources/b2xidentityuserflow.md
-                      - name: List
-                        href: api/identitycontainer-list-b2xuserflows.md
-                      - name: Create
-                        href: api/identitycontainer-post-b2xuserflows.md
-                      - name: Get
-                        href: api/b2xidentityuserflow-get.md
-                      - name: Delete
-                        href: api/b2xidentityuserflow-delete.md
-                      - name: List identity providers
-                        href: api/b2xidentityuserflow-list-identityproviders.md
-                      - name: Add identity provider
-                        href: api/b2xidentityuserflow-post-identityproviders.md
-                      - name: Remove identity provider
-                        href: api/b2xidentityuserflow-delete-identityproviders.md
-                      - name: List user attribute assignments
-                        href: api/b2xidentityuserflow-list-userattributeassignments.md
-                      - name: Create user attribute assignment
-                        href: api/b2xidentityuserflow-post-userattributeassignments.md
-                      - name: List languages
-                        href: api/b2xidentityuserflow-list-languages.md
-                      - name: Get API connectors configuration
-                        href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
-                      - name: Configure an API connector
-                        href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
-                  - name: User flow attributes
-                    items:
-                      - name: User flow attribute
-                        href: resources/identityuserflowattribute.md
-                      - name: List
-                        href: api/identityuserflowattribute-list.md
-                      - name: Create
-                        href: api/identityuserflowattribute-post.md
-                      - name: Get
-                        href: api/identityuserflowattribute-get.md
-                      - name: Update
-                        href: api/identityuserflowattribute-update.md
-                      - name: Delete
-                        href: api/identityuserflowattribute-delete.md
-                  - name: User flow attribute assignment
-                    items:
+                        items:
+                          - name: Self-service sign up user flow
+                            href: resources/b2xidentityuserflow.md
+                          - name: List
+                            href: api/identitycontainer-list-b2xuserflows.md
+                          - name: Create
+                            href: api/identitycontainer-post-b2xuserflows.md
+                          - name: Get
+                            href: api/b2xidentityuserflow-get.md
+                          - name: Delete
+                            href: api/b2xidentityuserflow-delete.md
+                          - name: List identity providers
+                            href: api/b2xidentityuserflow-list-identityproviders.md
+                          - name: Add identity provider
+                            href: api/b2xidentityuserflow-post-identityproviders.md
+                          - name: Remove identity provider
+                            href: api/b2xidentityuserflow-delete-identityproviders.md
+                          - name: List user attribute assignments
+                            href: api/b2xidentityuserflow-list-userattributeassignments.md
+                          - name: Create user attribute assignment
+                            href: api/b2xidentityuserflow-post-userattributeassignments.md
+                          - name: List languages
+                            href: api/b2xidentityuserflow-list-languages.md
+                          - name: Get API connectors configuration
+                            href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+                          - name: Configure an API connector
+                            href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+                      - name: User flow attributes
+                        items:
+                          - name: User flow attribute
+                            href: resources/identityuserflowattribute.md
+                          - name: List
+                            href: api/identityuserflowattribute-list.md
+                          - name: Create
+                            href: api/identityuserflowattribute-post.md
+                          - name: Get
+                            href: api/identityuserflowattribute-get.md
+                          - name: Update
+                            href: api/identityuserflowattribute-update.md
+                          - name: Delete
+                            href: api/identityuserflowattribute-delete.md
                       - name: User flow attribute assignment
-                        href: resources/identityuserflowattributeassignment.md
-                      - name: Get
-                        href: api/identityuserflowattributeassignment-get.md
-                      - name: Update
-                        href: api/identityuserflowattributeassignment-update.md
-                      - name: Delete
-                        href: api/identityuserflowattributeassignment-delete.md
-                  - name: User flow language configuration
-                    items:
+                        items:
+                          - name: User flow attribute assignment
+                            href: resources/identityuserflowattributeassignment.md
+                          - name: Get
+                            href: api/identityuserflowattributeassignment-get.md
+                          - name: Update
+                            href: api/identityuserflowattributeassignment-update.md
+                          - name: Delete
+                            href: api/identityuserflowattributeassignment-delete.md
                       - name: User flow language configuration
-                        href: resources/userflowlanguageconfiguration.md
-                      - name: Get
-                        href: api/userflowlanguageconfiguration-get.md
-                      - name: List default pages
-                        href: api/userflowlanguageconfiguration-list-defaultpages.md
-                      - name: List overrides pages
-                        href: api/userflowlanguageconfiguration-list-overridespages.md
-                      - name: User flow language page
-                        href: resources/userflowlanguagepage.md
-                      - name: Get
-                        href: api/userflowlanguagepage-get.md
-                      - name: Update
-                        href: api/userflowlanguagepage-put.md
-                      - name: Delete
-                        href: api/userflowlanguagepage-delete.md
-                  - name: API connectors
+                        items:
+                          - name: User flow language configuration
+                            href: resources/userflowlanguageconfiguration.md
+                          - name: Get
+                            href: api/userflowlanguageconfiguration-get.md
+                          - name: List default pages
+                            href: api/userflowlanguageconfiguration-list-defaultpages.md
+                          - name: List overrides pages
+                            href: api/userflowlanguageconfiguration-list-overridespages.md
+                          - name: User flow language page
+                            href: resources/userflowlanguagepage.md
+                          - name: Get
+                            href: api/userflowlanguagepage-get.md
+                          - name: Update
+                            href: api/userflowlanguagepage-put.md
+                          - name: Delete
+                            href: api/userflowlanguagepage-delete.md
+                      - name: API connectors
+                        items:
+                          - name: API connector
+                            href: resources/identityapiconnector.md
+                          - name: List
+                            href: api/identityapiconnector-list.md
+                          - name: Create
+                            href: api/identityapiconnector-create.md
+                          - name: Get
+                            href: api/identityapiconnector-get.md
+                          - name: Update
+                            href: api/identityapiconnector-update.md
+                          - name: Upload a client certificate
+                            href: api/identityapiconnector-uploadclientcertificate.md
+                          - name: Delete
+                            href: api/identityapiconnector-delete.md
+                  - name: User flows in external tenant
                     items:
-                      - name: API connector
-                        href: resources/identityapiconnector.md
-                      - name: List
-                        href: api/identityapiconnector-list.md
-                      - name: Create
-                        href: api/identityapiconnector-create.md
-                      - name: Get
-                        href: api/identityapiconnector-get.md
-                      - name: Update
-                        href: api/identityapiconnector-update.md
-                      - name: Upload a client certificate
-                        href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Delete
-                        href: api/identityapiconnector-delete.md
+                      - name: Authentication events flow
+                        href: resources/authenticationeventsflow.md
+                      - name: Self-service sign up user flow
+                        href: resources/externalusersselfservicesignupeventsflow.md
+                      - name: List user flows
+                        href: api/identitycontainer-list-authenticationeventsflows.md
+                      - name: Create user flow
+                        href: api/identitycontainer-post-authenticationeventsflows.md
+                      - name: Get user flow
+                        href: api/authenticationeventsflow-get.md
+                      - name: Update user flow
+                        href: api/authenticationeventsflow-update.md
+                      - name: Delete user flow
+                        href: api/authenticationeventsflow-delete.md
+                      - name: Identity providers
+                        items:
+                        - name: List identity providers in a user flow
+                          href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
+                        - name: Add identity provider to a user flow
+                          href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
+                        - name: Remove identity provider from a user flow
+                          href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
+                      - name: User flow attributes
+                        items:
+                          - name: User flow attribute
+                            href: resources/identityuserflowattribute.md
+                          - name: List
+                            href: api/identityuserflowattribute-list.md
+                          - name: Create
+                            href: api/identityuserflowattribute-post.md
+                          - name: Get
+                            href: api/identityuserflowattribute-get.md
+                          - name: Update
+                            href: api/identityuserflowattribute-update.md
+                          - name: Delete
+                            href: api/identityuserflowattribute-delete.md
+                          - name: List attributes in a user flow
+                            href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
+                          - name: Add attributes to a user flow
+                            href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
+                          - name: Remove attributes from a user flow
+                            href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
+                      - name: Authentication condition applications
+                        href: resources/authenticationconditionapplication.md
+                        items:
+                          - name: List applications
+                            href: api/authenticationconditionsapplications-list-includeapplications.md
+                          - name: Add applications
+                            href: api/authenticationconditionsapplications-post-includeapplications.md
+                          - name: Remove applications
+                            href: api/authenticationconditionapplication-delete.md
           - name: Partner customer administration
             items:
               - name: Granular delegated admin privileges

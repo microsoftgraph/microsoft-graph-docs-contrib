@@ -93,6 +93,184 @@
     {
       "ChangeList": [
         {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationAttributeCollectionInputType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationAttributeCollectionInputType** enumeration type.",
+          "Target": "authenticationAttributeCollectionInputType"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "userType",
+          "ChangeType": "Addition",
+          "Description": "Added the **userType** enumeration type.",
+          "Target": "userType"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAttributeCollectionInputConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAttributeCollectionInputConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionInputConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "authenticationAttributeCollectionInputConfiguration"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAttributeCollectionOptionConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAttributeCollectionOptionConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionOptionConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "authenticationAttributeCollectionOptionConfiguration"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAttributeCollectionPage",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAttributeCollectionPage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionPage?view=graph-rest-1.0) resource.",
+          "Target": "authenticationAttributeCollectionPage"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationAttributeCollectionPageViewConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAttributeCollectionPageViewConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionPageViewConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "authenticationAttributeCollectionPageViewConfiguration"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionExternalUsersSelfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionExternalUsersSelfServiceSignUp?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionExternalUsersSelfServiceSignUp"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionHandler?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionHandler"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp?view=graph-rest-1.0) resource.",
+          "Target": "onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAuthenticationMethodLoadStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAuthenticationMethodLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onAuthenticationMethodLoadStartHandler?view=graph-rest-1.0) resource.",
+          "Target": "onAuthenticationMethodLoadStartHandler"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp?view=graph-rest-1.0) resource.",
+          "Target": "onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onInteractiveAuthFlowStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onInteractiveAuthFlowStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onInteractiveAuthFlowStartHandler?view=graph-rest-1.0) resource.",
+          "Target": "onInteractiveAuthFlowStartHandler"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onUserCreateStartExternalUsersSelfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [onUserCreateStartExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onUserCreateStartExternalUsersSelfServiceSignUp?view=graph-rest-1.0) resource.",
+          "Target": "onUserCreateStartExternalUsersSelfServiceSignUp"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onUserCreateStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onUserCreateStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onUserCreateStartHandler?view=graph-rest-1.0) resource.",
+          "Target": "onUserCreateStartHandler"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationEventsFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventsFlow?view=graph-rest-1.0) resource.",
+          "Target": "authenticationEventsFlow"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalUsersSelfServiceSignUpEventsFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalUsersSelfServiceSignUpEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/externalUsersSelfServiceSignUpEventsFlow?view=graph-rest-1.0) resource.",
+          "Target": "externalUsersSelfServiceSignUpEventsFlow"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "authenticationEventsFlows",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationEventsFlows** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionListener](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionListener?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionListener"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAuthenticationMethodLoadStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAuthenticationMethodLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onAuthenticationMethodLoadStartListener?view=graph-rest-1.0) resource.",
+          "Target": "onAuthenticationMethodLoadStartListener"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onInteractiveAuthFlowStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onInteractiveAuthFlowStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onInteractiveAuthFlowStartListener?view=graph-rest-1.0) resource.",
+          "Target": "onInteractiveAuthFlowStartListener"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onUserCreateStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onUserCreateStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onUserCreateStartListener?view=graph-rest-1.0) resource.",
+          "Target": "onUserCreateStartListener"
+        }
+      ],
+      "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-19T17:30:39.4167183Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8a63383f-7189-44dc-bbd0-4c26e4c575ee",
           "ApiChange": "Relationship",
           "ChangedApiName": "authenticationEventListeners",
