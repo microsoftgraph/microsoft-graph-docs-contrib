@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.users.item.appRoleAssignments.app_role_assignments_request_builder import AppRoleAssignmentsRequestBuilder
+from msgraph.generated.users.item.app_role_assignments.app_role_assignments_request_builder import AppRoleAssignmentsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

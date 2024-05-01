@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.compliance.ediscovery.cases.item.sourceCollections.item.source_collection_item_request_builder import SourceCollectionItemRequestBuilder
+from msgraph.generated.compliance.ediscovery.cases.item.source_collections.item.source_collection_item_request_builder import SourceCollectionItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
