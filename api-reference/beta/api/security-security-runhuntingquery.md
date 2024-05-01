@@ -54,7 +54,7 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 
 | Parameter    | Type            | Description                                                                                                                      | Example                                                            |
 |:-------------|:----------------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
-| Query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
+| Query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
 | Timespan     | String          | Optional. Interval of time over which to query data, in ISO 8601 format. Default value is 30 days, meaning if no startTime is specified, the query looks back 30 days from now. If a time filter is specified in both the query and the startTime parameter, the shorter time span is applied. For example, if the query has a filter for the last 7 days and the startTime is 10 days ago, the query only looks back 7 days. | |
 
 ## Response
