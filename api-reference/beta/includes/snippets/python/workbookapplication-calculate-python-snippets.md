@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.calculate_post_request_body import CalculatePostRequestBody
+from msgraph.generated.drives.item.items.item.workbook.application.calculate.calculate_post_request_body import CalculatePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

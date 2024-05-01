@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.get_compliance_policy_non_compliance_summary_report_post_request_body import GetCompliancePolicyNonComplianceSummaryReportPostRequestBody
+from msgraph.generated.devicemanagement.reports.get_compliance_policy_non_compliance_summary_report.get_compliance_policy_non_compliance_summary_report_post_request_body import GetCompliancePolicyNonComplianceSummaryReportPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

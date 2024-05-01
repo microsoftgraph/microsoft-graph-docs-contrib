@@ -10769,23 +10769,15 @@ items:
           - name: Assignment
             href: resources/educationassignment.md
             items:
-              - name: Create assignment
+              - name: Create
                 href: api/educationclass-post-assignments.md
-              - name: Get assignment
+              - name: Get
                 href: api/educationassignment-get.md
-              - name: Update assignment
+              - name: Update
                 href: api/educationassignment-update.md
-              - name: Delete assignment
+              - name: Delete
                 href: api/educationassignment-delete.md
-              - name: List assignment resources
-                href: api/educationassignment-list-resources.md
-              - name: Create assignment resource
-                href: api/educationassignment-post-resources.md
-              - name: Get assignment resource
-                href: api/educationassignmentresource-get.md
-              - name: Delete resource from assignment
-                href: api/educationassignmentresource-delete.md
-              - name: Publish assignment
+              - name: Publish
                 href: api/educationassignment-publish.md
               - name: List submissions for assignment
                 href: api/educationassignment-list-submissions.md
@@ -10797,9 +10789,9 @@ items:
                 href: api/educationassignment-get-rubric.md
               - name: List categories
                 href: api/educationassignment-list-categories.md
-              - name: Add category
+              - name: Attach category to assignment
                 href: api/educationassignment-post-categories.md
-              - name: Remove category
+              - name: Remove category from assignment
                 href: api/educationassignment-remove-category.md
               - name: Attach rubric to assignment
                 href: api/educationassignment-put-rubric.md
@@ -10807,11 +10799,9 @@ items:
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
                 href: api/educationassignment-delta.md
-              - name: Add grading category
+              - name: Attach grading category to assignment
                 href: api/educationassignment-post-gradingcategory.md
-              - name: Update grading category
-                href: api/educationgradingcategory-update.md
-              - name: Remove grading category
+              - name: Remove grading category from assignment
                 href: api/educationassignment-delete-gradingcategory.md
               - name: Activate assignment
                 href: api/educationassignment-activate.md
@@ -10819,6 +10809,17 @@ items:
                 href: api/educationassignment-deactivate.md
               - name: Create grading scheme
                 href: api/educationassignment-post-gradingscheme.md
+          - name: Assignment resource
+            href: resources/educationassignmentresource.md
+            items:
+              - name: List
+                href: api/educationassignment-list-resources.md
+              - name: Create
+                href: api/educationassignment-post-resources.md
+              - name: Get
+                href: api/educationassignmentresource-get.md
+              - name: Delete from assignment
+                href: api/educationassignmentresource-delete.md                 
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -11524,8 +11525,8 @@ items:
       - name: Identity and access
         items:
           - name: Overview
-            displayName: Azure AD, Microsoft identity platform, Identity and access
-            href: resources/azure-ad-overview.md
+            displayName: Microsoft Entra, Azure AD, Microsoft identity platform, Identity and access
+            href: resources/identity-network-access-overview.md
           - name: Directory management
             items:
               - name: Administrative unit
@@ -14171,7 +14172,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Delete
                         href: api/identityapiconnector-delete.md
-              - name: User flows for Microsoft Entra ID for customers (preview)
+              - name: User flows for Microsoft Entra External ID in external tenants (preview)
                 items:
                   - name: Authentication events flow
                     href: resources/authenticationeventsflow.md
