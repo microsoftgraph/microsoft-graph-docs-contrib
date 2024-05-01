@@ -72,7 +72,7 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 
 ## Examples
 
-## Example 1: Query with default timespan
+### Example 1: Query with default timespan
 
 ### Request
 
