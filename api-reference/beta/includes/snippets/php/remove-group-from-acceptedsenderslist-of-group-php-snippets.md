@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Groups\Item\AcceptedSenders\$ref\RefRequestBuilderDeleteRequestConfiguration;
+use Microsoft\Graph\Generated\Groups\Item\AcceptedSenders\Ref\RefRequestBuilderDeleteRequestConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

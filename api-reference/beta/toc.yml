@@ -11525,8 +11525,8 @@ items:
       - name: Identity and access
         items:
           - name: Overview
-            displayName: Azure AD, Microsoft identity platform, Identity and access
-            href: resources/azure-ad-overview.md
+            displayName: Microsoft Entra, Azure AD, Microsoft identity platform, Identity and access
+            href: resources/identity-network-access-overview.md
           - name: Directory management
             items:
               - name: Administrative unit
@@ -14163,7 +14163,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Delete
                         href: api/identityapiconnector-delete.md
-              - name: User flows for Microsoft Entra ID for customers (preview)
+              - name: User flows for Microsoft Entra External ID in external tenants (preview)
                 items:
                   - name: Authentication events flow
                     href: resources/authenticationeventsflow.md
