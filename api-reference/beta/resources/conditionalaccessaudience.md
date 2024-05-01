@@ -1,5 +1,5 @@
 ---
-title: "conditionalAccessAudience resource type"
+title: "conditionalaccessAudience resource type"
 description: "Represents the audience evaluated by Conditional Access during a sign-in event."
 ms.localizationpriority: medium
 author: "egreenberg14"
