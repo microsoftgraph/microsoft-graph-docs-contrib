@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.identityGovernance.appConsent.appConsentRequests.app_consent_requests_request_builder import AppConsentRequestsRequestBuilder
+from msgraph.generated.identity_governance.app_consent.app_consent_requests.app_consent_requests_request_builder import AppConsentRequestsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

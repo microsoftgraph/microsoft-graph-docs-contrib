@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.mark_chat_read_for_user_post_request_body import MarkChatReadForUserPostRequestBody
+from msgraph.generated.chats.item.mark_chat_read_for_user.mark_chat_read_for_user_post_request_body import MarkChatReadForUserPostRequestBody
 from msgraph.generated.models.teamwork_user_identity import TeamworkUserIdentity
 
 graph_client = GraphServiceClient(credentials, scopes)
