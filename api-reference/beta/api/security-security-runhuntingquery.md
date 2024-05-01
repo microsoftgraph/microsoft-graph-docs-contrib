@@ -97,7 +97,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 }
 ```
 
-### Response
+#### Response
 
 ```json
 {
