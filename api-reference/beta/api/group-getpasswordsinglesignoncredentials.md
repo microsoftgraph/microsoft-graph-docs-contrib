@@ -1,6 +1,6 @@
 ---
 title: "group: getPasswordSingleSignOnCredentials"
-description: "Get the list of password-based single sign-on credentials for a group. This API returns the encrypted passwords as either null or empty strings."
+description: "Get the list of password-based single sign-on credentials for a group. This API returns the encrypted passwords as null."
 author: "AllisonAm"
 ms.localizationpriority: medium
 ms.prod: "groups"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of password-based single sign-on credentials for a group. This API returns the encrypted passwords as either nulls or empty strings.
+Get the list of password-based single sign-on credentials for a group. This API returns the encrypted passwords as null.
 
 ## Permissions
 
