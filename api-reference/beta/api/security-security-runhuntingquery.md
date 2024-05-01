@@ -131,7 +131,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 }
 ```
 
-## Example 2: Query with optional Timespan parameter specified
+### Example 2: Query with optional the timespan parameter specified
 
 #### Request
 
