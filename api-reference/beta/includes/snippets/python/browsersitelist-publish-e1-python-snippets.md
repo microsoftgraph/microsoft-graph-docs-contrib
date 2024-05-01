@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.publish_post_request_body import PublishPostRequestBody
+from msgraph.generated.admin.edge.internetexplorermode.sitelists.item.publish.publish_post_request_body import PublishPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
