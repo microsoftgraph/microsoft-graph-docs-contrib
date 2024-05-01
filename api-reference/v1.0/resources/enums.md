@@ -3059,6 +3059,18 @@ Possible values for user account types (group membership), per Windows definitio
 | Failed           |
 | EntryLevelErrors |
 
+### stagedFeatureName values
+
+| Member                         |
+|:-------------------------------|
+| passthroughAuthentication      |
+| seamlessSso                    |
+| passwordHashSync               |
+| emailAsAlternateId             |
+| unknownFutureValue             |
+| certificateBasedAuthentication |
+| multiFactorAuthentication      |
+
 ### synchronizationJobRestartScope values
 
 |Member|

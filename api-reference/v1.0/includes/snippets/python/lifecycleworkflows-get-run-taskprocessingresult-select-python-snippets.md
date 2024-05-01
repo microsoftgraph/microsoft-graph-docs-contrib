@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.identityGovernance.lifecycleWorkflows.workflows.item.runs.item.userProcessingResults.user_processing_results_request_builder import UserProcessingResultsRequestBuilder
+from msgraph.generated.identity_governance.lifecycle_workflows.workflows.item.runs.item.user_processing_results.user_processing_results_request_builder import UserProcessingResultsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

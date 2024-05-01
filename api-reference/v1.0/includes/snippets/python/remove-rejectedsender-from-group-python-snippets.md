@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.groups.item.rejectedSenders.$ref.ref_request_builder import RefRequestBuilder
+from msgraph.generated.groups.item.rejected_senders.ref.ref_request_builder import RefRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.planner.tasks.item.progressTaskBoardFormat.progress_task_board_format_request_builder import ProgressTaskBoardFormatRequestBuilder
+from msgraph.generated.planner.tasks.item.progress_task_board_format.progress_task_board_format_request_builder import ProgressTaskBoardFormatRequestBuilder
 from msgraph.generated.models.planner_progress_task_board_task_format import PlannerProgressTaskBoardTaskFormat
 
 graph_client = GraphServiceClient(credentials, scopes)
