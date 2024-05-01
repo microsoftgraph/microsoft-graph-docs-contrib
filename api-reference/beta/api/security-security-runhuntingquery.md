@@ -133,7 +133,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 ## Example 2: Query with optional Timespan parameter specified
 
-### Request
+#### Request
 
 This example specifies a KQL query which does the following:
 - Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
