@@ -14163,7 +14163,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Delete
                         href: api/identityapiconnector-delete.md
-              - name: User flows for Microsoft Entra ID for customers (preview)
+              - name: User flows for Microsoft Entra External ID in external tenants (preview)
                 items:
                   - name: Authentication events flow
                     href: resources/authenticationeventsflow.md
