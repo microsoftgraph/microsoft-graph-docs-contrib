@@ -11525,8 +11525,8 @@ items:
       - name: Identity and access
         items:
           - name: Overview
-            displayName: Azure AD, Microsoft identity platform, Identity and access
-            href: resources/azure-ad-overview.md
+            displayName: Microsoft Entra, Azure AD, Microsoft identity platform, Identity and access
+            href: resources/identity-network-access-overview.md
           - name: Directory management
             items:
               - name: Administrative unit
