@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.planner.tasks.item.bucketTaskBoardFormat.bucket_task_board_format_request_builder import BucketTaskBoardFormatRequestBuilder
+from msgraph.generated.planner.tasks.item.bucket_task_board_format.bucket_task_board_format_request_builder import BucketTaskBoardFormatRequestBuilder
 from msgraph.generated.models.planner_bucket_task_board_task_format import PlannerBucketTaskBoardTaskFormat
 
 graph_client = GraphServiceClient(credentials, scopes)

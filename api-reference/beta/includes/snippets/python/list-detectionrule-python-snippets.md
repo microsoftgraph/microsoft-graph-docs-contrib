@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.security.rules.detectionRules.detection_rules_request_builder import DetectionRulesRequestBuilder
+from msgraph.generated.security.rules.detection_rules.detection_rules_request_builder import DetectionRulesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

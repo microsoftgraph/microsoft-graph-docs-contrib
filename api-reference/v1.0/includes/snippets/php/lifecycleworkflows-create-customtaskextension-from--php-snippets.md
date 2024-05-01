@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\CustomTaskExtension;
 use Microsoft\Graph\Generated\Models\LogicAppTriggerEndpointConfiguration;
-use Microsoft\Graph\Generated\Models\CustomExtensionAuthenticationConfiguration;
+use Microsoft\Graph\Generated\Models\AzureAdTokenAuthentication;
 use Microsoft\Graph\Generated\Models\CustomExtensionClientConfiguration;
 use Microsoft\Graph\Generated\Models\CustomTaskExtensionCallbackConfiguration;
 
@@ -24,20 +24,14 @@ $endpointConfiguration->setSubscriptionId('c500b67c-e9b7-4ad2-a90d-77d41385ae55'
 $endpointConfiguration->setResourceGroupName('RG-LCM');
 $endpointConfiguration->setLogicAppWorkflowName('ManagerAccess');
 $requestBody->setEndpointConfiguration($endpointConfiguration);
-$authenticationConfiguration = new CustomExtensionAuthenticationConfiguration();
+$authenticationConfiguration = new AzureAdTokenAuthentication();
 $authenticationConfiguration->setOdataType('#microsoft.graph.azureAdTokenAuthentication');
-$additionalData = [
-	'resourceId' => '542dc01a-0b5d-4edc-b3f9-5cfe6393f557',
-];
-$authenticationConfiguration->setAdditionalData($additionalData);
+$authenticationConfiguration->setResourceId('542dc01a-0b5d-4edc-b3f9-5cfe6393f557');
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
 $clientConfiguration = new CustomExtensionClientConfiguration();
 $clientConfiguration->setOdataType('#microsoft.graph.customExtensionClientConfiguration');
+$clientConfiguration->setMaximumRetries(1);
 $clientConfiguration->setTimeoutInMilliseconds(1000);
-$additionalData = [
-	'maximumRetries' => 1,
-];
-$clientConfiguration->setAdditionalData($additionalData);
 $requestBody->setClientConfiguration($clientConfiguration);
 $callbackConfiguration = new CustomTaskExtensionCallbackConfiguration();
 $callbackConfiguration->setOdataType('#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration');
