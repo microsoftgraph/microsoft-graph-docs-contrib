@@ -93,3 +93,7 @@ The following JSON representation shows the resource type.
   "status": "String"
 }
 ```
+
+## Related content
+
+[List meetingAttendanceReports](../api/meetingattendancereport-list.md)

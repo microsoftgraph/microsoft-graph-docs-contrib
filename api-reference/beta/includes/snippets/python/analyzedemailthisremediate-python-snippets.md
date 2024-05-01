@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.remediate_post_request_body import RemediatePostRequestBody
+from msgraph.generated.security.collaboration.analyzedemails.microsoft_graph_security_remediate.remediate_post_request_body import RemediatePostRequestBody
 from msgraph.generated.models.analyzed_email import AnalyzedEmail
 
 graph_client = GraphServiceClient(credentials, scopes)

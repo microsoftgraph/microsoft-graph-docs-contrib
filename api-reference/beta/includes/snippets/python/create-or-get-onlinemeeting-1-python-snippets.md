@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.create_or_get_post_request_body import CreateOrGetPostRequestBody
+from msgraph.generated.users.item.onlinemeetings.create_or_get.create_or_get_post_request_body import CreateOrGetPostRequestBody
 from msgraph.generated.models.meeting_participants import MeetingParticipants
 from msgraph.generated.models.meeting_participant_info import MeetingParticipantInfo
 from msgraph.generated.models.identity_set import IdentitySet
