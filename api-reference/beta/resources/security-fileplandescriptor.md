@@ -31,7 +31,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |authority|[microsoft.graph.security.filePlanAuthority](../resources/security-fileplanauthority.md)|Represents the file plan descriptor of type authority applied to a particular retention label.|
-|appliedcategory|[microsoft.graph.security.filePlanAppliedCategory](../resources/security-fileplanappliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention label.|
+|appliedCategory|[microsoft.graph.security.filePlanAppliedCategory](../resources/security-fileplanappliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention label.|
 |citation|[microsoft.graph.security.filePlanCitation](../resources/security-fileplancitation.md)|Represents the file plan descriptor of type citation applied to a particular retention label.|
 |department|[microsoft.graph.security.filePlanDepartment](../resources/security-fileplandepartment.md)|Represents the file plan descriptor of type department applied to a particular retention label.|
 |filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplanreference.md)|Represents the file plan descriptor of type filePlanReference applied to a particular retention label.  |
@@ -61,16 +61,16 @@ Here's a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.filePlanDescriptor",
   "id": "String (identifier)",
   "authority": {
-    "@odata.type": "microsoft.graph.security.authority"
+    "@odata.type": "microsoft.graph.security.filePlanAuthority"
   },
   "category": {
-    "@odata.type": "microsoft.graph.security.appliedCategory"
+    "@odata.type": "microsoft.graph.security.filePlanAppliedCategory"
   },
   "citation": {
-    "@odata.type": "microsoft.graph.security.citation"
+    "@odata.type": "microsoft.graph.security.filePlanCitation"
   },
   "department": {
-    "@odata.type": "microsoft.graph.security.department"
+    "@odata.type": "microsoft.graph.security.filePlanDepartment"
   },
   "filePlanReference": {
     "@odata.type": "microsoft.graph.security.filePlanReference"

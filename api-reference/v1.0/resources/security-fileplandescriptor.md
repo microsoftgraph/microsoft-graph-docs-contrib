@@ -29,7 +29,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |authority|[microsoft.graph.security.filePlanAuthority](../resources/security-fileplanauthority.md)|Represents the file plan descriptor of type authority applied to a particular retention label.|
-|appliedcategory|[microsoft.graph.security.filePlanAppliedCategory](../resources/security-fileplanappliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention label.|
+|appliedCategory|[microsoft.graph.security.filePlanAppliedCategory](../resources/security-fileplanappliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention label.|
 |citation|[microsoft.graph.security.filePlanCitation](../resources/security-fileplancitation.md)|Represents the file plan descriptor of type citation applied to a particular retention label.|
 |department|[microsoft.graph.security.filePlanDepartment](../resources/security-fileplandepartment.md)|Represents the file plan descriptor of type department applied to a particular retention label.|
 |filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplanreference.md)|Represents the file plan descriptor of type filePlanReference applied to a particular retention label.  |

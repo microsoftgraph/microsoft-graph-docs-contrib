@@ -647,8 +647,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authority",
           "ChangeType": "Change",
-          "Description": "Renamed the **authority** resource to [filePlanAppliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanauthority?view=graph-rest-v1.0).",
-          "Target": "filePlanAppliedCategory"
+          "Description": "Renamed the **authority** resource to [filePlanAuthority](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanauthority?view=graph-rest-v1.0).",
+          "Target": "filePlanAuthority"
         },
         {
           "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
@@ -663,16 +663,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "department",
           "ChangeType": "Change",
-          "Description": "Renamed the **department** resource to [fileplandepartment](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandepartment?view=graph-rest-v1.0).",
-          "Target": "fileplandepartment"
+          "Description": "Renamed the **department** resource to [filePlanDepartment](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandepartment?view=graph-rest-v1.0).",
+          "Target": "filePlanDepartment"
         },
         {
           "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
           "ApiChange": "Resource",
-          "ChangedApiName": "subcategory",
+          "ChangedApiName": "subCategory",
           "ChangeType": "Change",
-          "Description": "Renamed the **subcategory** resource to [filePlanSubcategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplansubcategory?view=graph-rest-v1.0).",
-          "Target": "fileplansubcategory"
+          "Description": "Renamed the **subCategory** resource to [filePlanSubcategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplansubcategory?view=graph-rest-v1.0).",
+          "Target": "filePlanSubcategory"
         }
       ],
       "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
@@ -721,8 +721,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authority",
           "ChangeType": "Change",
-          "Description": "Renamed the **authority** resource to [filePlanAppliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanauthority?view=graph-rest-beta).",
-          "Target": "filePlanAppliedCategory"
+          "Description": "Renamed the **authority** resource to [filePlanAuthority](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanauthority?view=graph-rest-beta).",
+          "Target": "filePlanAuthority"
         },
         {
           "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
@@ -737,16 +737,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "department",
           "ChangeType": "Change",
-          "Description": "Renamed the **department** resource to [fileplandepartment](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandepartment?view=graph-rest-beta).",
-          "Target": "fileplandepartment"
+          "Description": "Renamed the **department** resource to [filePlanDepartment](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandepartment?view=graph-rest-beta).",
+          "Target": "filePlanDepartment"
         },
         {
           "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
           "ApiChange": "Resource",
-          "ChangedApiName": "subcategory",
+          "ChangedApiName": "subCategory",
           "ChangeType": "Change",
-          "Description": "Renamed the **subcategory** resource to [filePlanSubcategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplansubcategory?view=graph-rest-beta).",
-          "Target": "fileplansubcategory"
+          "Description": "Renamed the **subCategory** resource to [filePlanSubcategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplansubcategory?view=graph-rest-beta).",
+          "Target": "filePlanSubcategory"
         }
       ],
       "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
