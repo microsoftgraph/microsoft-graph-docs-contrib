@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.security.attackSimulation.loginPages.login_pages_request_builder import LoginPagesRequestBuilder
+from msgraph.generated.security.attack_simulation.login_pages.login_pages_request_builder import LoginPagesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
