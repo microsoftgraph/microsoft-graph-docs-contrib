@@ -34,6 +34,32 @@
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
+      {
+      "ChangeList": [
+        {
+          "Id": "10895057-379c-41a6-9b42-cd41467811eb",
+          "ApiChange": "Member",
+          "ChangedApiName": "nativeAuth",
+          "ChangeType": "Addition",
+          "Description": "Added the `nativeAuth` member to the **protocolType** enumeration.",
+          "Target": "protocolType"
+        },
+        {
+          "Id": "10895057-379c-41a6-9b42-cd41467811eb",
+          "ApiChange": "Member",
+          "ChangedApiName": "authenticationTransfer",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationTransfer` member to the **protocolType** enumeration.",
+          "Target": "protocolType"
+        }
+      ],
+      "Id": "10895057-379c-41a6-9b42-cd41467811eb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-29T22:26:51.4900043Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
     {
       "ChangeList": [
         {
@@ -2115,7 +2141,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activeUsersBreakdownMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [activeUsersBreakdownMetric] resource and supported methods.",
+          "Description": "Added the **activeUsersBreakdownMetric** resource and supported methods.",
           "Target": "activeUsersBreakdownMetric"
         },
         {
@@ -2597,7 +2623,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activeUsersBreakdownMetric",
           "ChangeType": "Deprecation",
-          "Description": "The [activeUsersBreakdownMetric] resource and its associated methods is deprecated and will stop returning data on March 9, 2024. Use the existing [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeusersmetric?view=graph-rest-beta) resource type instead.",
+          "Description": "The **activeUsersBreakdownMetric** resource and its associated methods is deprecated and will stop returning data on March 9, 2024. Use the existing [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeusersmetric?view=graph-rest-beta) resource type instead.",
           "Target": "activeUsersBreakdownMetric"
         }
       ],
