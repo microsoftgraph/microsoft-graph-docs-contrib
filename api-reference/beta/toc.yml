@@ -11525,8 +11525,8 @@ items:
       - name: Identity and access
         items:
           - name: Overview
-            displayName: Azure AD, Microsoft identity platform, Identity and access
-            href: resources/azure-ad-overview.md
+            displayName: Microsoft Entra, Azure AD, Microsoft identity platform, Identity and access
+            href: resources/identity-network-access-overview.md
           - name: Directory management
             items:
               - name: Administrative unit
@@ -13755,6 +13755,15 @@ items:
                             href: api/emailauthenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/emailauthenticationmethodconfiguration-delete.md
+                      - name: External authentication methods policy
+                        href: resources/externalauthenticationmethodconfiguration.md
+                        items:
+                          - name: Get
+                            href: api/externalauthenticationmethodconfiguration-get.md
+                          - name: Update
+                            href: api/externalauthenticationmethodconfiguration-update.md
+                          - name: Delete
+                            href: api/externalauthenticationmethodconfiguration-delete.md
                       - name: FIDO2 policy
                         href: resources/fido2authenticationmethodconfiguration.md
                         items:
@@ -14163,7 +14172,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Delete
                         href: api/identityapiconnector-delete.md
-              - name: User flows for Microsoft Entra ID for customers (preview)
+              - name: User flows for Microsoft Entra External ID in external tenants (preview)
                 items:
                   - name: Authentication events flow
                     href: resources/authenticationeventsflow.md
@@ -17224,17 +17233,17 @@ items:
                   - name: File plan descriptor set
                     href: resources/security-fileplandescriptor.md
                   - name: Applied category
-                    href: resources/security-appliedcategory.md
+                    href: resources/security-fileplanappliedcategory.md
                   - name: Authority
-                    href: resources/security-authority.md
+                    href: resources/security-fileplanauthority.md
                   - name: Citation
-                    href: resources/security-citation.md
+                    href: resources/security-fileplancitation.md
                   - name: Department
-                    href: resources/security-department.md
+                    href: resources/security-fileplandepartment.md
                   - name: File plan reference
                     href: resources/security-fileplanreference.md
                   - name: Subcategory
-                    href: resources/security-subcategory.md
+                    href: resources/security-fileplansubcategory.md
                 - name: File plan descriptor templates
                   items:
                   - name: Applied category template

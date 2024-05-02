@@ -5178,7 +5178,7 @@ items:
         items:
           - name: Overview
             displayName: Azure AD, Microsoft identity platform, Identity and access
-            href: resources/azure-ad-overview.md
+            href: resources/identity-network-access-overview.md
           - name: Directory management
             items:
               - name: Administrative unit
@@ -8320,17 +8320,17 @@ items:
                 - name: File plan descriptor set
                   href: resources/security-fileplandescriptor.md
                 - name: Applied category
-                  href: resources/security-appliedcategory.md
+                  href: resources/security-fileplanappliedcategory.md
                 - name: Authority
-                  href: resources/security-authority.md
+                  href: resources/security-fileplanauthority.md
                 - name: Citation
-                  href: resources/security-citation.md
+                  href: resources/security-fileplancitation.md
                 - name: Department
-                  href: resources/security-department.md
+                  href: resources/security-fileplandepartment.md
                 - name: File plan reference
                   href: resources/security-fileplanreference.md
                 - name: Subcategory
-                  href: resources/security-subcategory.md
+                  href: resources/security-fileplansubcategory.md
               - name: File plan descriptor templates
                 items:
                 - name: Applied category template

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.ingest_telemetry_post_request_body import IngestTelemetryPostRequestBody
+from msgraph.generated.workplace.sensordevices.ingest_telemetry.ingest_telemetry_post_request_body import IngestTelemetryPostRequestBody
 from msgraph.generated.models.workplace_sensor_device_telemetry import WorkplaceSensorDeviceTelemetry
 
 graph_client = GraphServiceClient(credentials, scopes)
