@@ -139,7 +139,7 @@ The following example shows a request to get all recordings of a given meeting o
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5", 2024-01-15T00:00:00Z, 2024-01-31T00:00:00Z],
+  "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5", "2024-01-15T00:00:00Z", "2024-01-31T00:00:00Z"],
   "name": "get_allrecordings"
 }-->
 ```msgraph-interactive
@@ -194,6 +194,6 @@ Content-type: application/json
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
-[Delta query overview](/graph/delta-query-overview) 
+[Delta query overview](/graph/delta-query-overview)
 
 [Export content with the Microsoft Teams export APIs.](/microsoftteams/export-teams-content)
