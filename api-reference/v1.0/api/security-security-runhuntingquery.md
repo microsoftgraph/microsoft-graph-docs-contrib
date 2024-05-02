@@ -63,11 +63,11 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 ## Examples
 
 ### Timespan format examples
-- **Date/Date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
-- **Duration/EndDate**: "P30D/2024-02-15T08:00:00Z" - A period before the end date.
-- **Start/Duration**: "2024-02-01T08:00:00Z/P30D" - Start date and duration.
-- **ISO8601 Duration**: "P30D" - Duration from now backwards.
-- **Single Date/Time**: "2024-02-01T08:00:00Z" - Start time with end time defaulted to the current time.
+- **Date/date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
+- **Duration/endDate**: "P30D/2024-02-15T08:00:00Z" - A period before the end date.
+- **Start/duration**: "2024-02-01T08:00:00Z/P30D" - Start date and duration.
+- **ISO8601 duration**: "P30D" - Duration from now backwards.
+- **Single date/time**: "2024-02-01T08:00:00Z" - Start time with end time defaulted to the current time.
 
 ### Example 1: Query with default timespan
 
@@ -132,8 +132,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 #### Request
 
-This example specifies a KQL query which does the following:
-- Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
+This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
 
 # [HTTP](#tab/http)
 <!-- {
