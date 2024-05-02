@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.bulk_restore_cloud_pc_post_request_body import BulkRestoreCloudPcPostRequestBody
+from msgraph.generated.devicemanagement.manageddevices.bulk_restore_cloud_pc.bulk_restore_cloud_pc_post_request_body import BulkRestoreCloudPcPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
