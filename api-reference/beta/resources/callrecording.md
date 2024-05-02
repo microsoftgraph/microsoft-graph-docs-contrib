@@ -28,17 +28,16 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
+| callId | String | The unique identifier for the **call** related to this recording. Read-only.|
 | content | Stream | The content of the recording. Read-only.|
+| contentCorrelationId | String | The unique identifier for correlating a set of recording and transcript.|
 | createdDateTime | DateTimeOffset |  Date and time at which the recording was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-| endDateTime | DatetimeOffset |  Date and time at which the recording ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. Read-only.|
+| endDateTime | DatetimeOffset |  Date and time at which the recording ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id | String | The unique identifier for the recording. Read-only. Inherited from [entity](../resources/entity.md).|
 | meetingId | String | The unique identifier of the **onlineMeeting** related to this recording. Read-only.|
-| callId | String | The unique identifier for the **call** related to this recording. Read-only.|
-| contentCorrelationId | String | The unique identifier for correlating a set of recording and transcript.|
-| meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this recording. Read-only.|
 | meetingOrganizer|  [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this recording. Read-only.|
+| meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this recording. Read-only.|
 | recordingContentUrl| String| The URL which can be used to access the content of the recording. Read-only.|
-
 
 ## JSON representation
 
@@ -54,15 +53,15 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "callId": "String",
   "content": "Stream",
+  "contentCorrelationId": "String",
   "createdDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",  
+  "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "callId": "String (identifier)",
-  "contentCorrelationId": "String (identifier)",
   "meetingId": "String",
-  "meetingOrganizerId": "String",
   "meetingOrganizer": {"@odata.type": "microsoft.graph.identitySet"},
+  "meetingOrganizerId": "String",
   "recordingContentUrl": "String"
 }
 ```
