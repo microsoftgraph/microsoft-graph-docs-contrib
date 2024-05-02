@@ -28,15 +28,15 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
+| callId | String | The unique identifier for the **call** related to this recording. Read-only.|
 | content| Stream| The content of the transcript. Read-only.|
-| createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-| endDateTime | DatetimeOffset |  Date and time at which the recording ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. Read-only.| 
+| contentCorrelationId | String | The unique identifier for correlating a set of recording and transcript.|
+| createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. he timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+| endDateTime | DatetimeOffset |  Date and time at which the recording ends. he timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.| 
 | id| String| The unique identifier for the transcript. Read-only.|
 | meetingId | String | The unique identifier of the online meeting related to this transcript. Read-only.|
-| callId | String | The unique identifier for the **call** related to this recording. Read-only.|
-| contentCorrelationId | String | The unique identifier for correlating a set of recording and transcript.|
+| meetingOrganizer| [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
 | meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
-| meetingOrganizer| IdentitySet| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
 | metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
 | transcriptContentUrl| String| The URL which can be used to access the content of the transcript. Read-only.|
 
@@ -52,15 +52,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "callId": "String",
   "content": "Stream",
-  "createdDateTime": "DateTimeOffset",
-  "endDateTime": "String (timestamp)",  
+  "contentCorrelationId": "String",
+  "createdDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "callId": "String (identifier)",
-  "contentCorrelationId": "String (identifier)",
   "meetingId": "String",
+  "meetingOrganizer": {"@odata.type": "microsoft.graph.identitySet"},
   "meetingOrganizerId": "String",
-  "meetingOrganizer": "IdentitySet",  
   "metadataContent": "Stream",
   "transcriptContentUrl": "String"
 }
