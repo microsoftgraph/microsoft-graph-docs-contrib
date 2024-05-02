@@ -19,7 +19,7 @@ You can apply the [delta](calltranscript-delta.md) function on **getAllTranscrip
 
 Delta query supports both full synchronization and incremental synchronization. Full synchronization gets all the transcripts for online meetings organized by the user. Incremental synchronization gets transcripts that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
-For more information see [delta query](/graph/delta-query-overview). For more examples, see [callTranscript: delta](calltranscript-delta.md).
+For more information, see [delta query](/graph/delta-query-overview). For more examples, see [callTranscript: delta](calltranscript-delta.md).
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
@@ -58,7 +58,7 @@ The following table lists the parameters that are required when you call this fu
 
 ## Known Issues
 
-> 1. Using the `top` query sometimes does not return a nextLink. Try without the `top` query in case you are missing next link.
+> 1. The `top` query may not return a nextLink. To obtain the nextLink, avoid using the `top` query.
 > 2. When a meeting does not have any spoken words, accessing the transcript content URL returns an error.
 
 
@@ -194,7 +194,5 @@ Content-type: application/json
 ## Related content
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
-
 [Delta query overview](/graph/delta-query-overview)
-
-[Export content with the Microsoft Teams export APIs.](/microsoftteams/export-teams-content)
+[Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)

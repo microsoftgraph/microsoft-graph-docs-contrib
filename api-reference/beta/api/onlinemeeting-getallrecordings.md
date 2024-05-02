@@ -58,7 +58,7 @@ The following table lists the parameters that are required when you call this fu
 
 ## Known Issues
 
-> 1. Using the `Top` query sometimes does not return a nextLink. Try without the `top` query in case you are missing next link.
+> 1. The `top` query may not return a nextLink. To obtain the nextLink, avoid using the `top` query.
 > 2. For older meetings where transcripts are not turned on, the result may not include the recordings
 
 ## Request headers
