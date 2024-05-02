@@ -4,9 +4,8 @@ description: "Check a user's password against the organization's password valida
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # user: validatePassword

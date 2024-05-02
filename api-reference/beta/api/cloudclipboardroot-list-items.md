@@ -5,7 +5,6 @@ author: "yuechen7"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List cloudClipboard items
@@ -20,6 +19,8 @@ Get a list of the [cloudClipboardItem](../resources/cloudclipboarditem.md) objec
 - An app on behalf of the user if the user grants delegated access to it.
 
 This API doesn't support using another user's credentials to get a [cloudClipboardItem](../resources/cloudclipboarditem.md) for a user. 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

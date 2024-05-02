@@ -4,9 +4,8 @@ description: "View the count of super AWS resources for the specified authorizat
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # superAwsResourceFinding: aggregatedSummary

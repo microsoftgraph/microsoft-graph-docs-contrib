@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "madehmer"
 ms.subservice: "insights"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # List activityStatistics

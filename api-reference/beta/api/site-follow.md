@@ -5,13 +5,14 @@ description: Follow a user's site/sites.
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Follow site 
 
 Namespace: microsoft.graph
 
 Follow a user's [site](../resources/site.md) or multiple sites.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

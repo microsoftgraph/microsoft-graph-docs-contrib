@@ -5,7 +5,6 @@ author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List recoveryKeys
@@ -25,15 +24,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "bitlocker_list_recoverykeys" } -->
 [!INCLUDE [permissions-table](../includes/permissions/bitlocker-list-recoverykeys-permissions.md)]
 
-For delegated permissions to allow apps to get **bitLockerRecoveryKey** resources on behalf of the signed-in user, the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or the calling user must be in one of the following directory roles:
+For delegated permissions to allow apps to get **bitLockerRecoveryKey** resources on behalf of the signed-in user, the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or the calling user must be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
-* Global administrator
-* Cloud device administrator
-* Helpdesk administrator
-* Intune service administrator
-* Security administrator
-* Security reader
-* Global reader
+* Cloud Device Administrator
+* Helpdesk Administrator
+* Intune Service Administrator
+* Security Administrator
+* Security Reader
+* Global Reader
 
 ## HTTP request
 To get a list of BitLocker keys within the tenant:

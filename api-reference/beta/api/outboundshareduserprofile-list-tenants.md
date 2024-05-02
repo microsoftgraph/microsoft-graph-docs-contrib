@@ -2,10 +2,10 @@
 title: "Get tenantReferences"
 description: "List the tenant references of an outboundSharedUserProfile."
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get tenantReferences

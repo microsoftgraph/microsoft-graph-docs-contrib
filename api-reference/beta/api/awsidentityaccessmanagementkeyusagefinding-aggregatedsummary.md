@@ -4,9 +4,8 @@ description: "Get a count of the AWS IAM Access Keys that have not been used in 
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # awsIdentityAccessManagementKeyUsageFinding: aggregatedSummary

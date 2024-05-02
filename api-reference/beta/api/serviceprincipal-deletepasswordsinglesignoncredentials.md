@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "sureshja"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # servicePrincipal: deletePasswordSingleSignOnCredentials
@@ -16,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete single sign-on credentials using a password for a user or group.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

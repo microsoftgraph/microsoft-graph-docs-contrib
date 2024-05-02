@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "mecampos"
 ms.subservice: "search"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Update schema

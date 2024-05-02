@@ -4,9 +4,8 @@ description: "Retrieve a list of scopedRoleMembership for the user."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List scopedAdministratorOf

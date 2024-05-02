@@ -4,9 +4,8 @@ description: "Get a list of the assignedComputeInstanceDetails objects and their
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List assignedComputeInstanceDetails

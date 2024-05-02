@@ -4,8 +4,7 @@ description: "Create a new schemaExtension definition to extend a supporting res
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
-ms.topic: reference
+ms.subservice: extensions
 ---
 
 # Create schemaExtension

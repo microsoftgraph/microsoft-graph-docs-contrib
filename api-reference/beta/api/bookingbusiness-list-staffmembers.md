@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List staffMembers
@@ -16,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

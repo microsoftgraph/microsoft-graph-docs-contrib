@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-groups"
 author: "psignoret"
-ms.topic: reference
 ---
 
 # Delete appRoleAssignment

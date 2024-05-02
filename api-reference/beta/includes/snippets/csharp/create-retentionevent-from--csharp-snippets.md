@@ -19,7 +19,7 @@ var requestBody = new RetentionEvent
 	{
 		new EventQuery
 		{
-			OdataType = "microsoft.graph.security.eventQueries",
+			OdataType = "microsoft.graph.security.eventQuery",
 		},
 	},
 	EventTriggerDateTime = DateTimeOffset.Parse("String (timestamp)"),

@@ -3,9 +3,8 @@ title: "Grant an appRoleAssignment to a user"
 description: "Grant an app role assignment to a user."
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: "users"
+ms.subservice: entra-users
 author: "psignoret"
-ms.topic: reference
 ---
 
 # Grant an appRoleAssignment to a user

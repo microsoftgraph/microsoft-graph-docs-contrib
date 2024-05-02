@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "Profile"
 doc_type: "apiPageType"
-ms.topic: reference
 ---
 
 # Get userAccountInformation

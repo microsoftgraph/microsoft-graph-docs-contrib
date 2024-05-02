@@ -4,9 +4,8 @@ description: "List the details of inactive AWS resources."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List inactiveAwsResourceFinding objects

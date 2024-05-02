@@ -5,7 +5,6 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # Get conditionalAccessSettings

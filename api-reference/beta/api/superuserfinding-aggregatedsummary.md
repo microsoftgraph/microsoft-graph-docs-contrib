@@ -4,9 +4,8 @@ description: "View the raw count of super users in the specified AWS, Azure, or 
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # superUserFinding: aggregatedSummary

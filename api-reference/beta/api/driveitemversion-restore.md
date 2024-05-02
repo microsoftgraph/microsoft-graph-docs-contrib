@@ -6,7 +6,6 @@ title: Restore a previous version
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.topic: reference
 ---
 # Restore a previous version of a DriveItem
 

@@ -4,9 +4,8 @@ description: View the count of AWS users with unenforced MFA in your authorizati
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # unenforcedMfaAwsUserFinding: aggregatedSummary

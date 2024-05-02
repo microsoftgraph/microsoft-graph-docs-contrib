@@ -4,9 +4,8 @@ description: "Invalidates all of the user's refresh tokens issued to application
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # user: invalidateAllRefreshTokens

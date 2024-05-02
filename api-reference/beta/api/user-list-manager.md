@@ -4,9 +4,8 @@ description: "Get user's manager. Returns the user or contact assigned as the us
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List manager

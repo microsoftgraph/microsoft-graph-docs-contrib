@@ -2,10 +2,10 @@
 title: "List outboundSharedUserProfiles"
 description: "Retrieve the properties of all outboundSharedUserProfiles."
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.topic: reference
 ---
 
 # List outboundSharedUserProfiles
