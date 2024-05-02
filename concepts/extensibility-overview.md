@@ -526,7 +526,7 @@ You manage the [schema extension definitions](/graph/api/resources/schemaextensi
 - Use PATCH to either store data in the schema extension property or update or delete the stored data.
     - To delete data from a property, set its value to `null`.
     - To delete data from *all* properties, set every property to `null`. If all properties are `null`, the schema extension object is also deleted.
-    - To update any property, you must specify *all* properties in the request body. Otherwise, Microsoft Graph updates the unspecified properties to `null`.
+    - To update any property, you may specify only the changed properties in the request body. Omitted properties would not be updated and retain their previous value.
 - Use GET to read the schema extension properties for all users or individual users in the tenant.
 
 #### Define a schema extension
