@@ -141,7 +141,7 @@ The following example shows a request to get all transcripts of a given meeting 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5", "2024-01-15T00:00:00Z", "2024-01-31T00:00:00Z"],
-  "name": "get_alltranscripts"
+  "name": "get_alltranscripts_with_dates"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllTranscripts(meetingOrganizerUserId='8b081ef6-4792-4def-b2c9-c363a1bf41d5', startDateTime=2024-01-15T00:00:00Z, endDateTime=2024-01-31T00:00:00Z)
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_alltranscripts",
+  "name": "get_alltranscripts_with_dates",
   "@odata.type": "microsoft.graph.callTranscript",
   "isCollection": true
 } -->
