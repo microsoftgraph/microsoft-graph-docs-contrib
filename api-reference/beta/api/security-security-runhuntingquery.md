@@ -46,7 +46,7 @@ POST /security/runHuntingQuery
 |Content-Type|application/json. Required.|
 
 > [!NOTE]
-> If you're using non-ANSI characters in your query, for example to query email subjects with malformed or lookalike characters, use `application/json; charset=utf-8` for the Content-Type header. 
+> If you're using non-ANSI characters in your query, for example, to query email subjects with malformed or lookalike characters, use `application/json; charset=utf-8` for the Content-Type header. 
 
 ## Request body
 
@@ -74,7 +74,7 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 
 #### Request
 
-The following example specifies a KQL query that does the following:
+The following example specifies a KQL query and:
 - Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema.
 - Filters on the condition that the powershell.exe process initiates the event.
 - Specifies the output of three columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
