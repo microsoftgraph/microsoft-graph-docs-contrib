@@ -1,6 +1,6 @@
 ---
 title: "security: runHuntingQuery"
-description: "Run Hunting query API"
+description: "Run the hunting query API."
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
 
-This is the method for advanced hunting in Microsoft 365 Defender. This method includes a query in Kusto Query Language (KQL). It specifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide&preserve-view=true) and a piped sequence of operators to filter or search that data, and format the query output in specific ways. 
+This method is for advanced hunting in Microsoft 365 Defender. This method includes a query in Kusto Query Language (KQL). It specifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide&preserve-view=true) and a piped sequence of operators to filter or search that data and format the query output in specific ways. 
 
 Find out more about [hunting for threats across devices, emails, apps, and identities](/microsoft-365/security/defender/advanced-hunting-query-emails-devices?view=o365-worldwide&preserve-view=true). Learn about [KQL](/azure/data-explorer/kusto/query/).
 
@@ -55,7 +55,7 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 | Parameter    | Type            | Description                                                                                                                      | Example                                                            |
 |:-------------|:----------------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
 | Query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
-| Timespan     | String          | Optional. Interval of time over which to query data, in ISO 8601 format. Default value is 30 days, meaning if no startTime is specified, the query looks back 30 days from now. If a time filter is specified in both the query and the startTime parameter, the shorter time span is applied. For example, if the query has a filter for the last 7 days and the startTime is 10 days ago, the query only looks back 7 days. | |
+| Timespan     | String          | Optional. Interval of time over which to query data, in ISO 8601 format. Default value is 30 days, meaning if no startTime is specified, the query looks back 30 days from now. If a time filter is specified in both the query and the startTime parameter, the shorter time span is applied. For example, if the query has a filter for the last 7 days and the startTime is 10 days ago, the query only looks back seven days. | |
 
 ## Response
 
@@ -76,10 +76,10 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 
 The following example specifies a KQL query that does the following:
 - Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema.
-- Filters on the condition that the event is initiated by the powershell.exe process.
-- Specifies the output of 3 columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
+- Filters on the condition that the powershell.exe process initiates the event.
+- Specifies the output of three columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
 - Sorts the output by the `Timestamp` value.
-- Limits the output to 2 records (2 rows).
+- Limits the output to two records (two rows).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -133,8 +133,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 #### Request
 
-This example specifies a KQL query which does the following:
-- Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
+This example specifies a KQL query and looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
 
 # [HTTP](#tab/http)
 <!-- {
