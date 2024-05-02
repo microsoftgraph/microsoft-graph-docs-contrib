@@ -3,7 +3,7 @@ title: "windows10ImportedPFXCertificateProfile resource type"
 description: "Windows 10 Desktop and Mobile PFX Import certificate profile"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

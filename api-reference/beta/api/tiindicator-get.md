@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [tiIndicator](
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > [!NOTE]
 > The response object shown here might be shortened for readability.

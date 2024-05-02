@@ -68,7 +68,7 @@ The following example updates the description for a custom security attribute de
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -148,7 +148,7 @@ The following example updates the status of an existing predefined value and add
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -232,7 +232,7 @@ The following example deactivates a custom security attribute definition.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -2,7 +2,7 @@
 title: "SharePoint sites and content API overview"
 description: "Use the SharePoint REST API in Microsoft Graph to integrate solutions with SharePoint sites and content that users collaborate on and share across an organization."
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 ms.custom: scenarios:getting-started
 ---
 

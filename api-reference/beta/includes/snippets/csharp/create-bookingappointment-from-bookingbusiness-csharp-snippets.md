@@ -70,6 +70,7 @@ var requestBody = new BookingAppointment
 	},
 	InvoiceId = "1001",
 	InvoiceStatus = BookingInvoiceStatus.Open,
+	IsCustomerAllowedToManageBooking = true,
 	InvoiceUrl = "theInvoiceUrl",
 	IsLocationOnline = true,
 	OptOutOfCustomerEmail = false,

@@ -3,7 +3,7 @@ title: "Get cloudClipboardItem"
 description: "Read the properties and relationships of a cloudClipboardItem object. "
 author: "yuechen7"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 ---
 
@@ -17,15 +17,13 @@ Read the properties and relationships of a [cloudClipboardItem](../resources/clo
 
 This API doesn't support using another user's credentials to get a [cloudClipboardItem](../resources/cloudclipboarditem.md) for a user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "cloudclipboarditem-get-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "cloudclipboarditem_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudclipboarditem-get-permissions.md)]
 
 ## HTTP request
@@ -63,7 +61,7 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, th
 |:---|:---|:---|
 |400|Bad request|The request is malformed or incorrect, such as an invalid `cloudClipboardItemId`.|
 |403|Forbidden|The caller can't perform the action. It indicates that the user doesn't consent to sharing  [cloudClipboardItem](../resources/cloudclipboarditem.md).|
-|409|Conflict|The current state conflicts with what the request expects. It usually indicates that the user isn't eligible for the cloud clipboard feature because the user doesn't have at least two strongly authenticated devices.|
+|409|Conflict|The current state conflicts with what the request expects. It usually indicates that the user isn't eligible for the cloud clipboard feature because they don't have at least two devices authenticated through multi-factor authentication during the sign-in process.|
 |429|Too many requests|The request rate limit has been exceeded. Wait for the time specified in the `Retry-After` header and try again.| 
 
 ## Examples

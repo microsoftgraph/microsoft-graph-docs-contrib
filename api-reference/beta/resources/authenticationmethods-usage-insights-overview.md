@@ -3,7 +3,7 @@ title: "Working with the authentication methods usage report API"
 description: "The authentication methods usage report helps you understand how users in your organization are using Microsoft Entra authentication capabilities such as self-service password reset and multifactor authentication (MFA)."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: "conceptualPageType"
 ms.date: 01/18/2024
 ---

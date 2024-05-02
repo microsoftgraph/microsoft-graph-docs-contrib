@@ -3,7 +3,7 @@ title: "specifiedCaptiveNetworkPlugins resource type"
 description: "Specifies all the Captive network plugins allowed during the IKEv2 AlwaysOn VPN connection"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

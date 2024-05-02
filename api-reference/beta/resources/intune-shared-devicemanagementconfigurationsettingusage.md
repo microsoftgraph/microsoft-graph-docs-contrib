@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSettingUsage enum type"
 description: "Supported setting types"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

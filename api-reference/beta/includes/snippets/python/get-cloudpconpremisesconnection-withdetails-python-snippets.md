@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.deviceManagement.virtualEndpoint.onPremisesConnections.item.cloud_pc_on_premises_connection_item_request_builder import CloudPcOnPremisesConnectionItemRequestBuilder
+from msgraph.generated.device_management.virtual_endpoint.on_premises_connections.item.cloud_pc_on_premises_connection_item_request_builder import CloudPcOnPremisesConnectionItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = CloudPcOnPremisesConnectionItemRequestBuilder.CloudPcOnPremisesConnectionItemRequestBuilderGetQueryParameters(
-		select = ["id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse"],
+		select = ["id","displayName","healthCheckStatus","healthCheckStatusDetail","healthCheckStatusDetails","inUse"],
 )
 
 request_configuration = CloudPcOnPremisesConnectionItemRequestBuilder.CloudPcOnPremisesConnectionItemRequestBuilderGetRequestConfiguration(

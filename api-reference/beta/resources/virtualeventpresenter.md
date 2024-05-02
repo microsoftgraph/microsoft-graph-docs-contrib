@@ -3,7 +3,7 @@ title: "virtualEventPresenter resource type"
 description: "Represents information about a presenter of a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -14,6 +14,15 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about a presenter of a virtual event.
+
+## Methods
+
+| Method | Return Type |Description |
+| ------ | ----------- | ---------- |
+| [List](../api/virtualevent-list-presenters.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Get the list of all [virtualEventPresenter](../resources/virtualeventpresenter.md) objects of a virtual event. |
+| [Create](../api/virtualevent-post-presenters.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Get](../api/virtualeventpresenter-get.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Delete](../api/virtualeventpresenter-delete.md) | None | Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 
 ## Properties
 

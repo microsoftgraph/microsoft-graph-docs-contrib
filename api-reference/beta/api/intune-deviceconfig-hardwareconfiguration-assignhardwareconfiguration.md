@@ -3,7 +3,7 @@ title: "assignHardwareConfiguration action"
 description: "Intune Deviceconfig Hardwareconfiguration Assignhardwareconfiguration Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

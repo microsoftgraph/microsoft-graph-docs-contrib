@@ -3,7 +3,7 @@ title: "macOSFileVaultRecoveryKeyTypes enum type"
 description: "Recovery key types for macOS FileVault"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

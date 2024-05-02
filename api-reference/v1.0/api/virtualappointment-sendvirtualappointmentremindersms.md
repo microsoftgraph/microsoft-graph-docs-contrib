@@ -3,7 +3,7 @@ title: "virtualAppointment: sendVirtualAppointmentReminderSms"
 description: "Send an SMS reminder to external attendees for a Teams virtual appointment."
 author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

@@ -77,7 +77,7 @@ Specifying the `$value` parameter returns the message content in MIME format, an
 ## Examples
 ### Example 1: Get a specific message
 #### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -248,7 +248,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 ---
 
 #### Response
-Here is an example of the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
+The following example shows the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "name": "get_message_headers",
@@ -337,7 +337,7 @@ Prefer: outlook.body-content-type="text"
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {
   "blockType": "response",

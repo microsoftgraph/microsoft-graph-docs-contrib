@@ -3,7 +3,7 @@ title: "win32LobAppPublishingConstraints resource type"
 description: "Contains properties for Win32 LOB app publishing constraints."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Contains properties for Win32 LOB app publishing constraints.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|maxContentFileSizeInBytes|Int64|Indicates the maximum Win32 LOB content file size in bytes that can be uploaded.|
+|maxContentFileSizeInBytes|Int64|Indicates the maximum Win32 LOB content file size in bytes that can be uploaded. Valid values 0 to 42949672960|
 
 ## Relationships
 None

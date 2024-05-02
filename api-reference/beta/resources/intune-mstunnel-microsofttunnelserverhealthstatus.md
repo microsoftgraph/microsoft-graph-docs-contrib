@@ -3,7 +3,7 @@ title: "microsoftTunnelServerHealthStatus enum type"
 description: "Enum of possible MicrosoftTunnelServer health status types"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

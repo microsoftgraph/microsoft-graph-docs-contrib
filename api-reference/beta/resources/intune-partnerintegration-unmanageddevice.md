@@ -3,7 +3,7 @@ title: "unmanagedDevice resource type"
 description: "Unmanaged device discovered in the network."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

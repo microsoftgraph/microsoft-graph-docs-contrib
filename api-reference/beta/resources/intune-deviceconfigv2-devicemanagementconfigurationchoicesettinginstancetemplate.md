@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationChoiceSettingInstanceTemplate resource type
 description: "Choice Setting Instance Template"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

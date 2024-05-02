@@ -3,6 +3,7 @@ title: "Microsoft Graph service-specific throttling limits"
 description: "Identify the throttling limits for each Microsoft Graph service to apply best practices to manage throttling in your application."
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+ms.subservice: non-product-specific
 #Customer intent: As a developer using Microsoft Graph to access multiple services, I want to understand the throttling limits imposed by each service, so that I can ensure my application stays within the allowed limits and avoids being throttled.
 ---
 
@@ -59,8 +60,8 @@ The preceding limits apply to the following resources:
 
 | Resource      | Limits per app    |
 | -------------- | ------------ |
-| [Calls](/graph/api/resources/call) | 15,000 requests in a 60-second period, per application per tenant |
-| [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
+| [Calls](/graph/api/resources/call) | 50,000 requests in a 15-second period, per application per tenant |
+| [Meeting information](/graph/api/resources/meetinginfo)   | 2,000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1,500 requests in a 30-second period, per application per tenant |
 | [Virtual event](/graph/api/resources/virtualevent) | 10,000 requests/app each month |
 
@@ -72,7 +73,8 @@ The limits listed in the following table apply to the following resource:
 
 | Limit type      | Limit    |
 | -------------- | ------------ |
-| Per tenant | 10,000 requests per 20 seconds |
+| Per application for all tenants | 15,000 requests per 20 seconds |
+| Per tenant for all applications | 10,000 requests per 20 seconds |
 | Per application per tenant  | 1,500 requests per 20 seconds |
 | Per call record | 10 requests per 20 seconds (first page) <br/> 50 requests per 5 minutes (subsequent pages) |
 
@@ -136,9 +138,9 @@ The following table lists base request costs. Any requests not listed have a bas
 | GET | `applications` | 2 | 0 |
 | GET | `applications/{id}/extensionProperties` | 2 | 0 |
 | GET | `contracts` | 3 | 0 |
-| POST | `directoryObjects/getByIds` |  3 | 0 |
+| POST | `directoryObjects/getByIds` | 5 | 0 |
 | GET | `domains/{id}/domainNameReferences` | 4 | 0 |
-| POST | `getObjectsById` | 3 | 0 |
+| POST | `getObjectsById` | 5 | 0 |
 | GET | `groups/{id}/members` | 3 | 0 |
 | GET | `groups/{id}/transitiveMembers` | 5 | 0 |
 | POST | `isMemberOf` | 4 | 0 |
@@ -173,7 +175,8 @@ Other factors that affect a request cost:
 - Creating a user in a Microsoft Entra ID B2C tenant increases cost by 4
 
 > [!NOTE]
-> A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> - A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> - Using `$select` for `directoryObjects/getByIds` and `getObjectsById` will result in 2 ResourceUnits.
 
 ### Additional headers
 
@@ -480,11 +483,6 @@ The following limits apply to any type of requests for service communications un
 | ------------ | ------------------------ |
 | Any | 240 requests per 60 seconds |
 |Any | 800 requests per hour |
-
-
-## Skype service limits
-
-[!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
 
 ## Subscription service limits
 

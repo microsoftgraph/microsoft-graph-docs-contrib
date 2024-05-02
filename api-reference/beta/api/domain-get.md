@@ -1,7 +1,7 @@
 ---
 title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -25,9 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-get-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
+The work or school account needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
-* Global Administrator
 * User Administrator
 * Helpdesk Administrator
 * Service Support Administrator

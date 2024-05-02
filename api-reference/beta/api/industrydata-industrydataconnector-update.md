@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -70,7 +70,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH /external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
+PATCH https://graph.microsoft.com/beta/external/industryData/dataConnectors/51dca0a0-85f6-4478-f526-08daddab2271
 Content-type: application/json
 
 {

@@ -3,7 +3,7 @@ title: "detonationObservables resource type"
 description: Represents detonation details.
 author: malvika-balaraj
 ms.localizationpriority: medium
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 

@@ -1,216 +1,230 @@
 {
-    "changelog": [
+  "changelog": [
+    {
+      "ChangeList": [
         {
-          "ChangeList": [
-            {
-              "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
-              "ApiChange": "Property",
-              "ChangedApiName": "receivers",
-              "ChangeType": "Deletion",
-              "Description": "Removed the **receivers** property from the [notificationChannel](https://learn.microsoft.com/en-us/graph/api/resources/deviceManagement-notificationChannel?view=graph-rest-beta) resource. Going forward, use the **notificationReceivers** property instead.",
-              "Target": "notificationChannel"
-            }
-          ],
-          "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
-          "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2023-10-09T10:40:03.4590295Z",
-          "WorkloadArea": "Device and app management",
-          "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "ruleCondition",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [ruleCondition](https://learn.microsoft.com/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta) resource type",
-                    "Target": "ruleCondition"
-                },
-                {
-                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "conditionCategory",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **conditionCategory** enumeration type",
-                    "Target": "conditionCategory"
-                    
-                },
-                {
-                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "relationshipType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **relationshipType** enumeration type",
-                    "Target": "relationshipType"
-                    
-                },
-                {
-                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "conditions",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **conditions** property to the [alertRule](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta) resource type and supported methods.",
-                    "Target": "relationshipType"
-                    
-                },
-                {
-                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "cloudPcInaccessibleScenario",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `cloudPcInaccessibleScenario` member to the **alertRuleTemplate** enumeration.",
-                    "Target": "alertRuleTemplate"
-                    
-                }
-            ],
-            "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-11-13T06:35:09.9640775Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "cloudPcInGracePeriodScenario",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `cloudPcInGracePeriodScenario` member to the **alertRuleTemplate** enumeration.",
-                    "Target": "alertRuleTemplate"
-                }
-            ],
-            "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-08-02T06:35:09.9640775Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "aggregationType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **aggregationType** enumeration type.",
-                    "Target": "aggregationType"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "alertRuleTemplate",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **alertRuleTemplate** enumeration type.",
-                    "Target": "alertRuleTemplate"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "alertStatusType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **alertStatusType** enumeration type.",
-                    "Target": "alertStatusType"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "notificationChannelType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **notificationChannelType** enumeration type.",
-                    "Target": "notificationChannelType"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "operatorType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **operatorType** enumeration type.",
-                    "Target": "operatorType"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "ruleSeverityType",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **ruleSeverityType** enumeration type.",
-                    "Target": "ruleSeverityType"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "notificationReceiver",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [notificationReceiver](https://learn.microsoft.com/graph/api/resources/devicemanagement-notificationreceiver?view=graph-rest-beta) resource type.",
-                    "Target": "notificationReceiver"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "monitoring",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [monitoring](https://learn.microsoft.com/graph/api/resources/devicemanagement-monitoring?view=graph-rest-beta) resource type.",
-                    "Target": "deviceManagement"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "alertImpact",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [alertImpact](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertimpact?view=graph-rest-beta) resource type.",
-                    "Target": "alertImpact"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "notificationChannel",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [notificationChannel](https://learn.microsoft.com/graph/api/resources/devicemanagement-notificationchannel?view=graph-rest-beta) resource type.",
-                    "Target": "notificationChannel"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "portalNotification",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [portalNotification](https://learn.microsoft.com/graph/api/resources/devicemanagement-portalnotification?view=graph-rest-beta) resource type.",
-                    "Target": "portalNotification"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "ruleThreshold",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [ruleThreshold](https://learn.microsoft.com/graph/api/resources/devicemanagement-rulethreshold?view=graph-rest-beta) resource type.",
-                    "Target": "ruleThreshold"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "alertRecord",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [alertRecord](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta) resource and supported methods.",
-                    "Target": "alertRecord"
-                },
-                {
-                    "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "alertRule",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [alertRule](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta) resource and supported methods.",
-                    "Target": "alertRule"
-                }
-            ],
-            "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2022-10-11T06:35:09.9640775Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
+          "Id": "e71cd5c7-4f63-a7b7-d230-7a27783fe81a",
+          "ApiChange": "Method",
+          "ChangedApiName": "changeAlertRecordsPortalNotificationAsSent",
+          "ChangeType": "Addition",
+          "Description": "Added the **changeAlertRecordsPortalNotificationAsSent** method to the [alertRecord](https://learn.microsoft.com/en-us/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta) resource.",
+          "Target": "changeAlertRecordsPortalNotificationAsSent"
         }
-    ]
+      ],
+      "Id": "e71cd5c7-4f63-a7b7-d230-7a27783fe81a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-25T10:40:03.4590295Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
+          "ApiChange": "Property",
+          "ChangedApiName": "receivers",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **receivers** property from the [notificationChannel](https://learn.microsoft.com/en-us/graph/api/resources/deviceManagement-notificationChannel?view=graph-rest-beta) resource. Going forward, use the **notificationReceivers** property instead.",
+          "Target": "notificationChannel"
+        }
+      ],
+      "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-09T10:40:03.4590295Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ruleCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the [ruleCondition](https://learn.microsoft.com/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta) resource type",
+          "Target": "ruleCondition"
+        },
+        {
+          "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "conditionCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionCategory** enumeration type",
+          "Target": "conditionCategory"
+        },
+        {
+          "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "relationshipType",
+          "ChangeType": "Addition",
+          "Description": "Added the **relationshipType** enumeration type",
+          "Target": "relationshipType"
+        },
+        {
+          "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "conditions",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditions** property to the [alertRule](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta) resource type and supported methods.",
+          "Target": "relationshipType"
+        },
+        {
+          "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPcInaccessibleScenario",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudPcInaccessibleScenario` member to the **alertRuleTemplate** enumeration.",
+          "Target": "alertRuleTemplate"
+        }
+      ],
+      "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-13T06:35:09.9640775Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPcInGracePeriodScenario",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudPcInGracePeriodScenario` member to the **alertRuleTemplate** enumeration.",
+          "Target": "alertRuleTemplate"
+        }
+      ],
+      "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-02T06:35:09.9640775Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "aggregationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **aggregationType** enumeration type.",
+          "Target": "aggregationType"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "alertRuleTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **alertRuleTemplate** enumeration type.",
+          "Target": "alertRuleTemplate"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "alertStatusType",
+          "ChangeType": "Addition",
+          "Description": "Added the **alertStatusType** enumeration type.",
+          "Target": "alertStatusType"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "notificationChannelType",
+          "ChangeType": "Addition",
+          "Description": "Added the **notificationChannelType** enumeration type.",
+          "Target": "notificationChannelType"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "operatorType",
+          "ChangeType": "Addition",
+          "Description": "Added the **operatorType** enumeration type.",
+          "Target": "operatorType"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "ruleSeverityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **ruleSeverityType** enumeration type.",
+          "Target": "ruleSeverityType"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "notificationReceiver",
+          "ChangeType": "Addition",
+          "Description": "Added the [notificationReceiver](https://learn.microsoft.com/graph/api/resources/devicemanagement-notificationreceiver?view=graph-rest-beta) resource type.",
+          "Target": "notificationReceiver"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "monitoring",
+          "ChangeType": "Addition",
+          "Description": "Added the [monitoring](https://learn.microsoft.com/graph/api/resources/devicemanagement-monitoring?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertImpact",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertImpact](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertimpact?view=graph-rest-beta) resource type.",
+          "Target": "alertImpact"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "notificationChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the [notificationChannel](https://learn.microsoft.com/graph/api/resources/devicemanagement-notificationchannel?view=graph-rest-beta) resource type.",
+          "Target": "notificationChannel"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "portalNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the [portalNotification](https://learn.microsoft.com/graph/api/resources/devicemanagement-portalnotification?view=graph-rest-beta) resource type.",
+          "Target": "portalNotification"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ruleThreshold",
+          "ChangeType": "Addition",
+          "Description": "Added the [ruleThreshold](https://learn.microsoft.com/graph/api/resources/devicemanagement-rulethreshold?view=graph-rest-beta) resource type.",
+          "Target": "ruleThreshold"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertRecord](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta) resource and supported methods.",
+          "Target": "alertRecord"
+        },
+        {
+          "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertRule](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta) resource and supported methods.",
+          "Target": "alertRule"
+        }
+      ],
+      "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-10-11T06:35:09.9640775Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    }
+  ]
 }

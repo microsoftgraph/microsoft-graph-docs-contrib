@@ -1,5 +1,5 @@
 ---
-title: "List forwardingProfiles (for a branch)"
+title: "List forwardingProfiles (deprecated)"
 description: "Retrieve a list of traffic forwarding profiles associated with a branch."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,10 +7,13 @@ ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# List forwardingProfiles (for a branch)
+# List forwardingProfiles (deprecated)
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> Deprecated and to be retired soon. Use the [remoteNetwork resource type](../resources/networkaccess-remotenetwork.md) and its associated methods instead.
 
 Retrieve a list of traffic forwarding profiles associated with a branch.
 
@@ -52,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List the contents of a folder
 ms.localizationpriority: high
-ms.prod: sharepoint
+ms.subservice: sharepoint
 description: "Return a collection of DriveItems in the children relationship of a DriveItem."
 doc_type: apiPageType
 ---
@@ -147,7 +147,7 @@ GET /drives/{drive-id}/items/{item-id}/children
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
+GET https://graph.microsoft.com/v1.0/drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
 ## Response

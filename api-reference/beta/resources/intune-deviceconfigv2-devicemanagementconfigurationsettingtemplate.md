@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSettingTemplate resource type"
 description: "Setting Template"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

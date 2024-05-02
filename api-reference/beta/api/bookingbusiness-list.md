@@ -3,7 +3,7 @@ title: "List bookingBusinesses"
 description: "Get a collection of bookingBusiness objects that has been created for the tenant."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ You can also query for Bookings businesses by specifying a string in a `query` p
 
 > **Note:** Results are limited to 500 mailboxes. Pagination of the results is not currently supported.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

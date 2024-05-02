@@ -4,7 +4,7 @@ title: "contentType: unpublish"
 description: "Unpublish a content type from a content type hub site."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 ---
 
 # contentType: unpublish

@@ -3,7 +3,7 @@ title: "learningAssignment resource type"
 description: "Represents the details of a learning activity assigned to a user."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: resourcePageType
 ---
 

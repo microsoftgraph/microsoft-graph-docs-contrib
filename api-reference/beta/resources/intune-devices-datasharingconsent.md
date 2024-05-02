@@ -3,7 +3,7 @@ title: "dataSharingConsent resource type"
 description: "Data sharing consent information."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
