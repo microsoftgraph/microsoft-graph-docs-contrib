@@ -61,7 +61,7 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 
 If successful, this action returns a `200 OK` response code and a [huntingQueryResults](../resources/security-huntingqueryresults.md) in the response body.
 
-### Examples for timespan
+## Examples
 
 ### Timespan format examples
 - **Date/Date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
@@ -70,11 +70,9 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 - **ISO8601 Duration**: "P30D" - Duration from now backwards.
 - **Single Date/Time**: "2024-02-01T08:00:00Z" - Start time with end time defaulted to the current time.
 
-## Examples
-
 ### Example 1: Query with default timespan
 
-### Request
+#### Request
 
 The following example specifies a KQL query that does the following:
 - Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema.
