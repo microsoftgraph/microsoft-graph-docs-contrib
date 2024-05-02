@@ -17,7 +17,7 @@ Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md)
 
 You can apply the [delta](callrecording-delta.md) function on **getAllRecordings** to synchronize and get [callRecording](../resources/callrecording.md) resources as they're added for **onlineMeeting** instances organized by the specified user.
 
-Delta query supports both Full synchronization and Incremental synchronization. Full synchronization gets all the recordings for online meetings organized by the user. Incremental synchronization gets recordings that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Delta query supports both full synchronization and incremental synchronization. Full synchronization gets all the recordings for online meetings organized by the user. Incremental synchronization gets recordings that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
 Find more information in the [delta query](/graph/delta-query-overview) documentation. For more examples, see [callRecording: delta](callrecording-delta.md).
 
@@ -46,15 +46,15 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|meetingOrganizerUserId|String|Meeting Organizer User identifier, to filter for artifacts for meetings organized by the given user identifier.|
-|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts that are created after the given start date|
-|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts that are created before the given end date|
+|meetingOrganizerUserId|String|The user identifier of the meeting organizer to filter for artifacts for meetings organized by the given user identifier.|
+|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date.|
+|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date.|
 
 ## Supported query patterns
 
 | Pattern                | Supported | Syntax                                                  | Notes                                                                                                        |
 | ---------------------- | :-------: | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page
+| Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page.
 
 ## Known Issues
 

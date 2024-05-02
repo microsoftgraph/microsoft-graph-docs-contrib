@@ -50,11 +50,11 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 |:---------------|:--------|:----------|
 | `$deltatoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | `$skiptoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked. |
-| Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page
+| Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page.
 
 ## Known Issues
 
-> 1. Using Top query sometimes does not return a nextLink. Try without the top query in case of missing next link.
+> 1. The `top` query may not return a nextLink. To obtain the nextLink, avoid using the `top` query.
 > 2. The delta API may return older transcripts which are synced and not newly modified. This happens when there are unrelated updates to meetings. As a workaround, the created date time returned with each transcript can be used to identify old or new transcripts.
 
 
