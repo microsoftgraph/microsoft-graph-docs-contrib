@@ -98,7 +98,9 @@ The response includes two call recordings and a `@odata.nextLink` response heade
   "isCollection": true
 } -->
 ```http
-HTTP/1.1 200 SUCCESS
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(callRecording)",
     "@odata.nextLink": "https://graph.microsoft.com/beta/users({userId})/onlineMeetings/getAllRecordings(meetingOrganizerUserId='8b081ef6-4792-4def-b2c9-c363a1bf41d5')/delta?skipToken={skipToken1}",
@@ -130,7 +132,6 @@ HTTP/1.1 200 SUCCESS
 #### Second request
 
 The second request specifies the `@odata.nextLink` URL returned from the previous response. Notice that it no longer has to specify the same query parameters as in the initial request, as the `skipToken` in the `@odata.nextLink` URL encodes and includes them.
-
 
 <!-- { "blockType": "ignored" } -->
 ```http
