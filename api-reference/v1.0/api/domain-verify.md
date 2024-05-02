@@ -1,7 +1,7 @@
 ---
 title: "domain: verify"
 description: "Validates the ownership of the domain."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

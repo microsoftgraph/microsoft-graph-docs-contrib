@@ -3,11 +3,11 @@ title: "Receive change notifications through Azure Event Hubs"
 description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.prod: change-notifications
+ms.subservice: change-notifications
 ms.topic: tutorial
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.date: 03/20/2024
+ms.date: 03/25/2024
 #customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through Azure Event Hubs so I can build apps that process the changes according to the business requirements.
 ---
 
@@ -26,9 +26,9 @@ The article guides you through the process of managing your Microsoft Graph subs
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK relays the notifications to your application.
 - You don't need to reply to the [notification URL validation](change-notifications-delivery-webhooks.md#notificationurl-validation). You can ignore the validation message that you receive.
 - You need to provision an event hub.
-- You need to provision an Azure Key Vault.
+- You need to provision an Azure Key Vault or add the Microsoft Graph Change Tracking service to the Data Sender role on your Event Hub.
 
-## Set up the Azure KeyVault and Azure Event Hubs
+## Set up the Azure Event Hubs authentication
 
 <!-- Start of "Use Azure CLI" tab-->
 # [Use Azure CLI](#tab/change-notifications-eventhubs-azure-cli)
@@ -120,6 +120,36 @@ Steps:
 1. For **Secret permissions**, select **Get**, and for **Select Principal**, select **Microsoft Graph Change Tracking**. Select **Add**.
 
 <!-- End of "Use the Azure portal" tab-->
+
+<!-- Start of "Use the Azure portal (RBAC)" tab-->
+# [Use the Azure portal (RBAC)](#tab/change-notifications-eventhubs-azure-portal-rbac)
+
+##### Configure the event hub
+
+In this section you:
+
+- Create an Event Hubs namespace.
+- Add a hub to that namespace to relay and deliver notifications.
+- Add a shared access policy that allows you to get a connection string to the newly created hub.
+
+Steps:
+
+1. Sign in to the [Azure portal](https://portal.azure.com) with privileges to create resources in your Azure subscription.
+1. Select **Create a resource** > type **Event Hubs** in the search bar > select the **Event Hubs** suggestion. 
+1. On the Event Hubs creation page, select **Create**.
+1. Fill in the Event Hubs namespace creation details, and then select **Create**.
+1. When the event hub namespace is provisioned, go to the page for the namespace.
+1. Select **Event Hubs** and **+ Event Hub**.
+1. Give a name to the new event hub, and select **Create**.
+1. After the event hub is created, select the name of the event hub, and then select **Access Control (IAM)** from the sidebar.
+1. Select **Role Assignments**.
+1. Select **+ Add** and select **Add Role Assignment**.
+1. Under **Role** > **Job function roles** > select **Azure Event Hubs Data Sender** > select **Next**.
+1. Under the **Members** tab, select **Assign access to User, group, or service principal**.
+1. Select **+ Select members** > search for and select **Microsoft Graph Change Tracking**.
+1. Select **Review + assign** to complete the process.
+ 
+<!-- End of "Use the Azure portal rbac" tab-->
 ---
 
 ## Create the subscription and receive notifications
@@ -128,11 +158,34 @@ After you create the required Azure KeyVault and Azure Event Hubs services, you 
 
 #### Create the subscription
 
-Subscriptions to change notifications with Event Hubs are almost identical to change notifications with webhooks. The main difference during subscription creation is the **notificationUrl**. You must set it to `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
+Creating a subscription to receive change notifications with Event Hubs is nearly identical to webhook subscription creation, but with important changes in the **notificationUrl** property. First review [webhook subscription creation steps](/graph/api/subscription-post-subscriptions) before continuing.
+
+At subscription creation, the **notificationUrl** must point to your Event Hubs location.
+
+<!-- Start of "Using Key Vault" tab-->
+# [Using Key Vault](#tab/change-notifications-eventhubs-keyvault)
+
+If you're using Key Vault, the **notificationUrl** property looks like this: `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>`, with the following values:
 
 - `azurekeyvaultname` - The name you gave to the key vault when you created it. Can be found in the DNS name.
 - `secretname` - The name you gave to the secret when you created it. Can be found on the Azure Key Vault **Secrets** page.
-- `domainname` - The name of your tenant; for example, contoso.com or contoso.com. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and select the subscription. The domain name is displayed under the **Directory** field.
+- `domainname` - The name of your tenant; for example, contoso.com. Because this domain is used to access the Azure Key Vault, it's important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and click the subscription. The domain name is displayed under the **Directory** field.
+
+<!-- End of "Using Key Vault tab-->
+
+<!-- Start of "Using RBAC" tab-->
+# [Using role-based access control](#tab/change-notifications-eventhubs-rbac)
+
+If you're using role-based access control, the **notificationUrl** property looks like this:
+
+`EventHub:https://&lt;eventhubnamespace&gt;.servicebus.windows.net/eventhubname/&lt;eventhubname&gt;?tenantId=&lt;domainname&gt;`
+
+- `eventhubnamespace` is the name you give to the Event Hub namespace. Can be found in the Event Hubs Overview page under Host name.
+- `eventhubname` is the name you give to the Event Hub. Can be found in the Event Hubs -> Overview -> Event Hubs.
+- `domainname` is the name of your tenant; for example, contoso.com. Because this domain is used to access the Azure Event Hub, it's important that it matches the domain used by the Azure subscription that holds the Azure Event Hub. To get this information, select the Microsoft Entra ID menu on the Azure portal and check the Overview page. The domain name is displayed under the **Primary domain**.
+
+<!-- End of "Using RBAC tab-->
+---
 
 > [!NOTE]
 > Duplicate subscriptions aren't allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.

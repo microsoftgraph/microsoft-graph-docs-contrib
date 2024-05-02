@@ -23,12 +23,12 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |reactionContentUrl|String|The hosted content URL for the custom reaction type. |
-|reactionType|String|Supported values are unicodes and  `custom`. Some backward compatible reactions types values are  `like`, `angry`, `sad`, `laugh`, `heart`, `surprised` |
+|reactionType|String|Supported values are Unicode characters and `custom`. Some backward-compatible reaction types include `like`, `angry`, `sad`, `laugh`, `heart`, and `surprised`. |
 |user|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|The user who reacted to the message.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

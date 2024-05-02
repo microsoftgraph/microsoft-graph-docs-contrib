@@ -426,7 +426,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetateamsgraphdev/$metadata#chats('19%3Abcf84b15c2994a909770f7d05bc4fe16%40thread.v2')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Abcf84b15c2994a909770f7d05bc4fe16%40thread.v2')/messages/$entity",
     "id": "1706763669648",
     "replyToId": null,
     "etag": "1707948456260",
@@ -451,7 +451,7 @@ Content-type: application/json
         "user": {
             "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "670374fa-3b0e-4a3b-9d33-0e1bc5ff1956",
-            "displayName": "Sumana NonAdmin",
+            "displayName": "Adele Vance",
             "userIdentityType": "aadUser",
             "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
         }

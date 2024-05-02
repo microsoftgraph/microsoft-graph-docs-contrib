@@ -3,7 +3,7 @@ title: "Remove sponsor"
 description: "Remove a user's sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -53,6 +53,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_sponsors_from_user"
@@ -61,6 +62,12 @@ The following is an example of a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/users/{user-id}/sponsors/{directory-object-id}/$ref
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-sponsors-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
