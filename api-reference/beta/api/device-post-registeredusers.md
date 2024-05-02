@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "device_post_registeredusers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/device-post-registeredusers-permissions.md)]
 
-The calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Global Administrator*, *Intune Administrator*, or *Windows 365 Administrator*.
+The calling user must also be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Intune Administrator* or *Windows 365 Administrator*.
 
 ## HTTP request
 

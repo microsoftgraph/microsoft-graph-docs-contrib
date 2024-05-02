@@ -55,7 +55,7 @@ Once a share recipient or delegate has been set up for a calendar, you can [upda
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

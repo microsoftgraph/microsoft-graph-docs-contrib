@@ -553,6 +553,48 @@
       "CreatedDateTime": "2023-11-02T08:55:18.080Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "eb70d296-5b0b-4646-a93a-3ac8e6ea16d8",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "iteminsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **iteminsights** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-beta) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "eb70d296-5b0b-4646-a93a-3ac8e6ea16d8",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PeopleSettings.Read.All",
+          "ChangeType": "Added",
+          "Description": "Added the `PeopleSettings.Read.All` delegated permission to the [GET](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta) operation of the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-beta) resource.",
+          "Target": "insightsSettings"
+        },
+        {
+          "Id": "eb70d296-5b0b-4646-a93a-3ac8e6ea16d8",
+          "ApiChange": "Permission",
+          "ChangedApiName": "PeopleSettings.ReadWrite.All",
+          "ChangeType": "Added",
+          "Description": "Added the `PeopleSettings.ReadWrite.All` delegated permission to the [UPDATE](https://learn.microsoft.com/en-us/graph/api/insightssettings-update?view=graph-rest-beta) operations of the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-beta) resource.",
+          "Target": "insightsSettings"
+        },
+        {
+          "Id": "eb70d296-5b0b-4646-a93a-3ac8e6ea16d8",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta) method to the [insightsSettings](https://learn.microsoft.com/en-us/graph/api/resources/insightssettings?view=graph-rest-beta) resource, to get tenant-level settings for item insights.",
+          "Target": "insightsSettings"
+        }
+      ],
+      "Id": "eb70d296-5b0b-4646-a93a-3ac8e6ea16d8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-03T11:19:49.1889037Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
     }
   ]
 }

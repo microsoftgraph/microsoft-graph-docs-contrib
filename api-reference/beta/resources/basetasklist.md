@@ -46,7 +46,7 @@ The following methods apply to any of the derived types of **baseTaskList** (**w
 |tasks|[baseTask](../resources/basetask.md) collection|The tasks in this task list. Read-only. Nullable.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

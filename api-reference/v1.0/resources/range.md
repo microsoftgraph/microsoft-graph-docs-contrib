@@ -74,7 +74,7 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

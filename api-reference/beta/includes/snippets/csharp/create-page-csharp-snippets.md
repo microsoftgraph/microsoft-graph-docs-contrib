@@ -20,7 +20,7 @@ var requestBody = new SitePage
 	TitleArea = new TitleArea
 	{
 		EnableGradientEffect = true,
-		ImageWebUrl = "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+		ImageWebUrl = "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
 		Layout = TitleAreaLayoutType.ColorBlock,
 		ShowAuthor = true,
 		ShowPublishedDate = false,
