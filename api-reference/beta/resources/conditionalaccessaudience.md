@@ -20,10 +20,12 @@ Represents the audience evaluated by Conditional Access during a sign-in event.
 | Property   | Type    |Description|
 |:---------------|:--------|:----------|
 |applicationId|String|The ID of the application.|
-|audienceReasons|conditionalAccessAudienceReason|An enumeration value that that indicates the reasons this audience was included for a sign-in request.|
+|audienceReasons|[conditionalAccessAudienceReason](#conditionalaccessaudiencereason-values)|Indicates the reasons this audience was included for a sign-in request.|
 
-## Possible values
+## conditionalAccessAudienceReason values
 
+|Member|
+|:-----|
 |resourcelessRequest|
 |confidentialClientIdToken|
 |confidentialClientNonIdToken|
