@@ -2130,16 +2130,34 @@
       "ChangeList": [
         {
           "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
-          "ApiChange": "Method",
-          "ChangedApiName": "runHuntingQuery",
+          "ApiChange": "Property",
+          "ChangedApiName": "timespan",
           "ChangeType": "Addition",
-          "Description": "Added a timespan optional param to the body request.",
+          "Description": "Added a 'timespan' optional property to [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runhuntingquery?view=graph-rest-1.0) resource.",
           "Target": "security"
         }
       ],
       "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
       "Cloud": "Prod",
       "Version": "v1.0",
+      "CreatedDateTime": "2024-03-20T14:25:35.9322853Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
+          "ApiChange": "Property",
+          "ChangedApiName": "timespan",
+          "ChangeType": "Addition",
+          "Description": "Added a 'timespan' optional property to [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runhuntingquery?view=graph-rest-beta) resource.",
+          "Target": "security"
+        }
+      ],
+      "Id": "3a486443-fc77-4d0e-bb13-861fab04038b",
+      "Cloud": "Prod",
+      "Version": "beta",
       "CreatedDateTime": "2024-03-20T14:25:35.9322853Z",
       "WorkloadArea": "Security",
       "SubArea": ""
