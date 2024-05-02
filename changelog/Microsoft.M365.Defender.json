@@ -2133,7 +2133,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "timespan",
           "ChangeType": "Addition",
-          "Description": "Added a 'timespan' optional property to [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runhuntingquery?view=graph-rest-1.0) resource.",
+          "Description": "Added the `timespan` parameter to the [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runhuntingquery?view=graph-rest-1.0) resource.",
           "Target": "security"
         }
       ],
@@ -2151,7 +2151,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "timespan",
           "ChangeType": "Addition",
-          "Description": "Added a 'timespan' optional property to [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runhuntingquery?view=graph-rest-beta) resource.",
+          "Description": "Added the `timespan` parameter to the [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runhuntingquery?view=graph-rest-beta) resource.",
           "Target": "security"
         }
       ],
