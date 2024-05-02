@@ -251,6 +251,17 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
 }
 ```
 
+**Example: A message with an emoji (Only available in beta)**
+
+```json
+{
+    "body": {
+        "contentType": "html",
+        "content": "<p><customemoji id=\"dGVzdHNjOzAtd3VzLWQyLTdiNWRkZGQ2ZGVjMDNkYzIwNTgxY2NkYTE1MmEyZTM4\" alt=\"testsc\" source=\"https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706638496169/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1jYW5hcnkuYXN5bmNndy50ZWFtcy5taWNyb3NvZnQuY29tL3YxL29iamVjdHMvMC13dXMtZDItN2I1ZGRkZDZkZWMwM2RjMjA1ODFjY2RhMTUyYTJlMzgvdmlld3MvaW1ndDJfYW5pbQ==/$value\"></customemoji></p>"
+    }
+}
+```
+
 ### channelIdentity
 
 If a [chatMessage](/graph/api/resources/chatmessage) is sent in a [channel](/graph/api/resources/channel), the **channelIdentity** property contains details about the channel. This includes the ID of the [channel](/graph/api/resources/channel) and the [team](/graph/api/resources/team). This property is read-only.
@@ -641,6 +652,28 @@ The following example shows a message with reactions.
                 "device": null,
                 "user": {
                     "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": null,
+                    "userIdentityType": "aadUser"
+                }
+            }
+        }
+    ]
+```
+
+The following example shows a message with custom reaction (Only available in beta).
+
+```json
+    "reactions": [
+        {
+            "reactionType": "custom",
+            "reactionContentUrl": "https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648/hostedContents/aWQ9MC13dXMtZDExLTc3ZmI2NmY4MTMwMGI2OGEzYzRkOWUyNmU1YTc5ZmMyLHR5cGU9MSx1cmw9/$value",
+            "createdDateTime": "2024-02-14T22:07:02.288Z",
+            "user": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "28c10244-4bad-4fda-993c-f332faef94f0",
                     "displayName": null,
                     "userIdentityType": "aadUser"
                 }
