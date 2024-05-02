@@ -18,7 +18,6 @@ Provides the search content options when a search is performed using application
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |includeContent|searchContent| The type of search content. The possible values are: `sharedContent`, `privateContent`, `unknownFutureValue`. Read-only. |
-|includeHiddenContent|Boolean| Indicates whether the search results include content that is normally hidden, such as archived content and SharePoint Embedded (RaaS). The default value is `false` that prevents hidden content from being returned. You can also optionally include KQL to scope your query for hidden content to specific content types. |
 
 ## JSON representation
 
@@ -35,7 +34,6 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "includeContent": "String",
-  "includeHiddenContent": "Boolean"
+  "includeContent": "String"
 }
 ```
