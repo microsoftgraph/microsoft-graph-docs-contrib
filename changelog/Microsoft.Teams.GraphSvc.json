@@ -1904,32 +1904,16 @@
           "Id": "6ed394c1-490d-437d-866d-bc66c04f4eb3",
           "ApiChange": "Method",
           "ChangedApiName": "getAllRecordings",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **getAllRecordings** method from the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
-          "Target": "onlineMeeting"
-        },
-        {
-          "Id": "6ed394c1-490d-437d-866d-bc66c04f4eb3",
-          "ApiChange": "Method",
-          "ChangedApiName": "getAllRecordings",
-          "ChangeType": "Addition",
-          "Description": "Added the [getAllRecordings](https://learn.microsoft.com/en-us/graph/api/onlineMeeting-getAllRecordings?view=graph-rest-beta) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Updated the [getAllRecordings](https://learn.microsoft.com/en-us/graph/api/onlineMeeting-getAllRecordings?view=graph-rest-beta) method to use function parameters.",
           "Target": "onlineMeeting"
         },
         {
           "Id": "6ed394c1-490d-437d-866d-bc66c04f4eb3",
           "ApiChange": "Method",
           "ChangedApiName": "getAllTranscripts",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **getAllTranscripts** method from the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
-          "Target": "onlineMeeting"
-        },
-        {
-          "Id": "6ed394c1-490d-437d-866d-bc66c04f4eb3",
-          "ApiChange": "Method",
-          "ChangedApiName": "getAllTranscripts",
-          "ChangeType": "Addition",
-          "Description": "Added the [getAllTranscripts](https://learn.microsoft.com/en-us/graph/api/onlineMeeting-getAllTranscripts?view=graph-rest-beta) method to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "ChangeType": "Change",
+          "Description": "Updated the [getAllTranscripts](https://learn.microsoft.com/en-us/graph/api/onlineMeeting-getAllTranscripts?view=graph-rest-beta) method to use function parameters.",
           "Target": "onlineMeeting"
         }
       ],

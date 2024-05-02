@@ -67,10 +67,6 @@ The following table lists the parameters that are required when you call this fu
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request body
-
-Don't supply a request body for this method.
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and a list of [callTranscript](../resources/calltranscript.md) objects in the response body.
