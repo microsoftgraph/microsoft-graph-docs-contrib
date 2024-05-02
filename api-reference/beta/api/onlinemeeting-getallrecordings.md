@@ -58,8 +58,8 @@ The following table lists the parameters that are required when you call this fu
 
 ## Known Issues
 
-> 1. Using Top query sometimes does not return a nextLink. Try without the top query in case of missing next link.
-> 2. For older meetings where Transcripts are not turned on, the result may not have the recordings. The fix is being rolled out, updates to follow.
+> 1. Using the `Top` query sometimes does not return a nextLink. Try without the `top` query in case you are missing next link.
+> 2. For older meetings where transcripts are not turned on, the result may not include the recordings
 
 ## Request headers
 | Header       | Value |
@@ -196,4 +196,4 @@ Content-type: application/json
 
 [Delta query overview](/graph/delta-query-overview)
 
-[Export content with the Microsoft Teams export APIs.](/microsoftteams/export-teams-content)
+[Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)

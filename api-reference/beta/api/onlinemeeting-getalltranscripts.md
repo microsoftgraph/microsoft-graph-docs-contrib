@@ -17,9 +17,9 @@ Get all transcripts from scheduled [onlineMeeting](../resources/onlinemeeting.md
 
 You can apply the [delta](calltranscript-delta.md) function on **getAllTranscripts** to synchronize and get [callTranscript](../resources/calltranscript.md) resources as they're added for **onlineMeeting** instances organized by the specified user.
 
-Delta query supports both Full synchronization and Incremental synchronization. Full synchronization gets all the transcripts for online meetings organized by the user. Incremental synchronization gets transcripts that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+Delta query supports both full synchronization and incremental synchronization. Full synchronization gets all the transcripts for online meetings organized by the user. Incremental synchronization gets transcripts that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
-Find more information in the [delta query](/graph/delta-query-overview) documentation. For more examples, see [callTranscript: delta](calltranscript-delta.md).
+For more information see [delta query](/graph/delta-query-overview). For more examples, see [callTranscript: delta](calltranscript-delta.md).
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
@@ -46,19 +46,19 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|meetingOrganizerUserId|String|Meeting Organizer User identifier, to filter for artifacts for meetings organized by the given user identifier.|
-|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts that are created after the given start date|
-|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts that are created before the given end date|
+|meetingOrganizerUserId|String|The user identifier of the meeting organizer. To filter for artifacts for meetings organized by the given user identifier.|
+|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date.|
+|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date.|
 
 ## Supported query patterns
 
 | Pattern                | Supported | Syntax                                                  | Notes                                                                                                        |
 | ---------------------- | :-------: | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page
+| Page size              |     ✓     | `top`                                                   | Allows the caller to specify the maximum number of objects per page.
 
 ## Known Issues
 
-> 1. Using Top query sometimes does not return a nextLink. Try without the top query in case of missing next link.
+> 1. Using the `top` query sometimes does not return a nextLink. Try without the `top` query in case you are missing next link.
 > 2. When a meeting does not have any spoken words, accessing the transcript content URL returns an error.
 
 
