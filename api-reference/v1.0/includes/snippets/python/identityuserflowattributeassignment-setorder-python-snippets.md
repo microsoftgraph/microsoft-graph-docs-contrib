@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.set_order_post_request_body import SetOrderPostRequestBody
+from msgraph.generated.identity.b2xuserflows.item.userattributeassignments.set_order.set_order_post_request_body import SetOrderPostRequestBody
 from msgraph.generated.models.assignment_order import AssignmentOrder
 
 graph_client = GraphServiceClient(credentials, scopes)
