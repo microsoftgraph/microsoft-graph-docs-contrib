@@ -53,14 +53,14 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 
 | Parameter    | Type            | Description                                                                                                                      | Example                                                            |
 |:-------------|:----------------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
-| Query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information on KQL syntax, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
-| Timespan     | String          | Optional. The timespan for the query in Kusto Query Language (KQL). If provided, the query will be executed within this timespan. If not provided, the default timespan of 30 days will be used, specified in ISO 8601 format. | |
+| Query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
+| Timespan     | String          | Optional. Interval of time over which to query data, in ISO 8601 format. Default value is 30 days, meaning if no startTime is specified, the query looks back 30 days from now. If a time filter is specified in both the query and the startTime parameter, the shorter time span is applied. For example, if the query has a filter for the last 7 days and the startTime is 10 days ago, the query only looks back 7 days. | |
 
 ## Response
 
 If successful, this action returns a `200 OK` response code and a [huntingQueryResults](../resources/security-huntingqueryresults.md) in the response body.
 
-### Examples for Timespan
+## Examples
 
 ### Timespan format examples
 - **Date/Date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
@@ -69,11 +69,9 @@ If successful, this action returns a `200 OK` response code and a [huntingQueryR
 - **ISO8601 Duration**: "P30D" - Duration from now backwards.
 - **Single Date/Time**: "2024-02-01T08:00:00Z" - Start time with end time defaulted to the current time.
 
-## Examples
+### Example 1: Query with default timespan
 
-## Example 1: Query with default timespan
-
-### Request
+#### Request
 
 The following example specifies a KQL query that does the following:
 - Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema.
@@ -96,7 +94,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 }
 ```
 
-### Response
+#### Response
 
 ```json
 {
@@ -130,9 +128,9 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 }
 ```
 
-## Example 2: Query with optional Timespan parameter specified
+### Example 2: Query with optional the timespan parameter specified
 
-### Request
+#### Request
 
 This example specifies a KQL query which does the following:
 - Looks into the [DeviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
@@ -152,7 +150,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 }
 ```
 
-### Response
+#### Response
 
 ```json
 {
