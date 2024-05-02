@@ -80,7 +80,7 @@ The following example shows a request to get all the recordings of a given meeti
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["1c9165ff-ae92-49af-89b4-415554a36a51"],
+  "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5"],
   "name": "get_allrecordings"
 }-->
 ```msgraph-interactive
@@ -110,15 +110,15 @@ HTTP/1.1 200 SUCCESS
             "@odata.type": "#microsoft.graph.callRecording",
             "id": "VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=",
             "meetingId": "MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy",
-            "meetingOrganizerId": "1c9165ff-ae92-49af-89b4-415554a36a51",
+            "meetingOrganizerId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "createdDateTime": "2023-12-02T06:59:34.7411768Z",
-            "recordingContentUrl": "https://graph.microsoft.com/beta/users/1c9165ff-ae92-49af-89b4-415554a36a51/onlineMeetings/MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy/recordings/VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=/content",
+            "recordingContentUrl": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy/recordings/VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=/content",
             "meetingOrganizer": {
                 "application": null,
                 "device": null,
                 "user": {
                     "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-                    "id": "1c9165ff-ae92-49af-89b4-415554a36a51",
+                    "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
                     "displayName": null,
                     "userIdentityType": "aadUser",
                     "tenantId": "a1d286db-6149-4b3d-95ad-23c9e1bf6853"
@@ -137,7 +137,7 @@ The following example shows a request to get all recordings of a given meeting o
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["1c9165ff-ae92-49af-89b4-415554a36a51", 2024-01-15T00:00:00Z, 2024-01-31T00:00:00Z],
+  "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5", 2024-01-15T00:00:00Z, 2024-01-31T00:00:00Z],
   "name": "get_allrecordings"
 }-->
 ```msgraph-interactive
@@ -167,15 +167,15 @@ HTTP/1.1 200 SUCCESS
             "@odata.type": "#microsoft.graph.callRecording",
             "id": "VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=",
             "meetingId": "MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy",
-            "meetingOrganizerId": "1c9165ff-ae92-49af-89b4-415554a36a51",
+            "meetingOrganizerId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "createdDateTime": "2023-12-02T06:59:34.7411768Z",
-            "recordingContentUrl": "https://graph.microsoft.com/beta/users/1c9165ff-ae92-49af-89b4-415554a36a51/onlineMeetings/MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy/recordings/VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=/content",
+            "recordingContentUrl": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/MSoxYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTEqMCoqMTk6bWVldGluZ19PVEJsT1RjeE16QXROemMwWVMwMFl6QTFMVGhpWldFdFpUaGtNMlk0WkRKaFlUQTFAdGhyZWFkLnYy/recordings/VjIjIzExYzkxNjVmZi1hZTkyLTQ5YWYtODliNC00MTU1NTRhMzZhNTFhMWQyODZkYi02MTQ5LTRiM2QtOTVhZC0yM2M5ZTFiZjY4NTMwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODA3ZTcwYzAyM2U4MGEwOWVmN2ZmZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDI3N2Q3NzZjYmNmMjQ5NGNiNDk0NDExZGE3YzRhMmM1IyM3YTM2NDRjYi1mMDA3LTRjMDAtOWJiMy1jMTUzYzE4ODY4NGY=/content",
             "meetingOrganizer": {
                 "application": null,
                 "device": null,
                 "user": {
                     "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-                    "id": "1c9165ff-ae92-49af-89b4-415554a36a51",
+                    "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
                     "displayName": null,
                     "userIdentityType": "aadUser",
                     "tenantId": "a1d286db-6149-4b3d-95ad-23c9e1bf6853"
