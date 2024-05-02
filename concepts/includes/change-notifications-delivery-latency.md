@@ -30,11 +30,16 @@ The following table lists the latency to expect between an event happening in th
 | [group][]               | Unknown              | Unknown         |
 | [list][]                | Less than 1 minute   | 5 minutes       |
 | [message][]             | Less than 1 minute   | 3 minutes       |
+| [offerShiftRequest][]   | Less than 1 minute   | 60 minutes      |
 | [onlineMeeting][]       | Less than 10 seconds | 1 minute        |
+| [openShiftChangeRequest][]| Less than 1 minute | 60 minutes      |
 | [presence][]            | Less than 10 seconds | 1 minute        |
 | [printer][]             | Less than 1 minute   | 5 minutes       |
 | [printTaskDefinition][] | Less than 1 minute   | 5 minutes       |
+| [shift][]               | Less than 1 minute   | 60 minutes      |
+| [swapShiftsChangeRequest][]| Less than 1 minute| 60 minutes      |
 | [team][]                | Less than 10 seconds | 60 minutes      |
+| [timeOffRequest][]      | Less than 1 minute   | 60 minutes      |
 | [todoTask][]            | Less than 2 minutes  | 15 minutes      |
 | [user][]                | Unknown              | Unknown         |
 
@@ -52,13 +57,18 @@ The following table lists the latency to expect between an event happening in th
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[offershiftrequest]: /graph/api/resources/offershiftrequest
+[openshiftchangerequest]: /graph/api/resources/openshiftchangerequest
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[shift]: /graph/api/resources/shift
+[swapshiftschangerequest]: /graph/api/resources/swapshiftschangerequest
 [todoTask]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
+[timeoffrequest]: /graph/api/resources/timeoffrequest
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording

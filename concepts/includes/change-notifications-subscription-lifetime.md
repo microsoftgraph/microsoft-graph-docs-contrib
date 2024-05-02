@@ -23,6 +23,11 @@ ms.localizationpriority: high
 | Teams [conversationMember][]                   | 4,320 minutes (3 days)        |
 | Teams [onlineMeeting][]                        | 4,320 minutes (3 days)        |
 | Teams [team][]                                 | 4,320 minutes (3 days)        |
+| Teams Shifts [offerShiftRequest][]             | 360 minutes (6 hours)         |
+| Teams Shifts [openShiftChangeRequest][]        | 360 minutes (6 hours)         |
+| Teams Shifts [shift][]                         | 360 minutes (6 hours)         |
+| Teams Shifts [swapShiftsChangeRequest][]       | 360 minutes (6 hours)         |
+| Teams Shifts [timeOffRequest][]                | 360 minutes (6 hours)         |
 | Group [conversation][]                         | 4,230 minutes (under 3 days)  |
 | OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)|
 | SharePoint [list][]                            | 42,300 minutes (under 30 days)|
@@ -50,13 +55,18 @@ ms.localizationpriority: high
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[offershiftrequest]: /graph/api/resources/offershiftrequest
+[openshiftchangerequest]: /graph/api/resources/openshiftchangerequest
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[shift]: /graph/api/resources/shift
+[swapshiftschangerequest]: /graph/api/resources/swapshiftschangerequest
 [todoTask]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
+[timeoffrequest]: /graph/api/resources/timeoffrequest
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
