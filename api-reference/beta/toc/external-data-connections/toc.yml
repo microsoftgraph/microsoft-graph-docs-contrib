@@ -1,18 +1,6 @@
 items:
 - name: Overview
   href: ../../resources/connectors-api-overview.md
-- name: Connection operation
-  items:
-  - name: Connection operation
-    href: ../../resources/externalconnectors-connectionoperation.md
-  - name: Get connectionOperation
-    href: ../../api/externalconnectors-connectionoperation-get.md
-- name: Connection quota
-  items:
-  - name: Connection quota
-    href: ../../resources/externalconnectors-connectionquota.md
-  - name: Get connectionQuota
-    href: ../../api/externalconnectors-connectionquota-get.md
 - name: External connection
   items:
   - name: External connection
@@ -35,6 +23,16 @@ items:
     href: ../../api/externalconnectors-externalconnection-put-items.md
   - name: Get connectionQuota
     href: ../../api/externalconnectors-connectionquota-get.md
+- name: Connection quota
+  items:
+  - name: Connection quota
+    href: ../../resources/externalconnectors-connectionquota.md
+  - name: Get connectionQuota
+    href: ../../api/externalconnectors-connectionquota-get.md
+- name: External activity
+  href: ../../resources/externalconnectors-externalactivity.md
+- name: External activity result
+  href: ../../resources/externalconnectors-externalactivityresult.md
 - name: External group
   items:
   - name: External group
@@ -45,6 +43,14 @@ items:
     href: ../../api/externalconnectors-externalgroup-delete.md
   - name: Create member
     href: ../../api/externalconnectors-externalgroup-post-members.md
+- name: External group member
+  items:
+  - name: External group member
+    href: ../../resources/externalconnectors-externalgroupmember.md
+  - name: Create externalGroupMember
+    href: ../../api/externalconnectors-externalgroup-post-members.md
+  - name: Delete externalGroupMember
+    href: ../../api/externalconnectors-externalgroupmember-delete.md
 - name: External item
   items:
   - name: External item
@@ -59,14 +65,6 @@ items:
     href: ../../api/externalconnectors-externalitem-delete.md
   - name: Add activities
     href: ../../api/externalconnectors-externalitem-addactivities.md
-- name: Identity
-  items:
-  - name: Identity
-    href: ../../resources/externalconnectors-identity.md
-  - name: Create identity
-    href: ../../api/externalconnectors-externalgroup-post-members.md
-  - name: Delete identity
-    href: ../../api/externalconnectors-externalgroup-delete.md
 - name: Schema
   items:
   - name: Schema
@@ -77,6 +75,12 @@ items:
     href: ../../api/externalconnectors-schema-get.md
   - name: Update schema
     href: ../../api/externalconnectors-schema-update.md
+- name: Connection operation
+  items:
+  - name: Connection operation
+    href: ../../resources/externalconnectors-connectionoperation.md
+  - name: Get connectionOperation
+    href: ../../api/externalconnectors-connectionoperation-get.md
 - name: Complex types
   items:
   - name: Acl
@@ -87,10 +91,6 @@ items:
     href: ../../resources/externalconnectors-configuration.md
   - name: Display template
     href: ../../resources/externalconnectors-displaytemplate.md
-  - name: External activity
-    href: ../../resources/externalconnectors-externalactivity.md
-  - name: External activity result
-    href: ../../resources/externalconnectors-externalactivityresult.md
   - name: External item content
     href: ../../resources/externalconnectors-externalitemcontent.md
   - name: Item id resolver

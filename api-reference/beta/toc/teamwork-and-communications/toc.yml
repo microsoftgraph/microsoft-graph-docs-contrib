@@ -389,18 +389,18 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
   - name: Virtual events
     items:
-    - name: Virtual event webinar
+    - name: Virtual event presenter
       items:
-      - name: Virtual event webinar
-        href: ../../resources/virtualeventwebinar.md
-      - name: List webinars
-        href: ../../api/virtualeventsroot-list-webinars.md
-      - name: Get virtualEventWebinar
-        href: ../../api/virtualeventwebinar-get.md
-      - name: List by user role
-        href: ../../api/virtualeventwebinar-getbyuserrole.md
-      - name: List by user ID and role
-        href: ../../api/virtualeventwebinar-getbyuseridandrole.md
+      - name: Virtual event presenter
+        href: ../../resources/virtualeventpresenter.md
+      - name: List
+        href: ../../api/virtualevent-list-presenters.md
+      - name: Create
+        href: ../../api/virtualevent-post-presenters.md
+      - name: Get
+        href: ../../api/virtualeventpresenter-get.md
+      - name: Delete
+        href: ../../api/virtualeventpresenter-delete.md
     - name: Virtual event registration
       items:
       - name: Virtual event registration
@@ -417,6 +417,32 @@ items:
         href: ../../api/virtualevent-list-sessions.md
       - name: Get virtualEventSession
         href: ../../api/virtualeventsession-get.md
+    - name: Virtual event townhall
+      items:
+      - name: Virtual event townhall
+        href: ../../resources/virtualeventtownhall.md
+      - name: Create
+        href: ../../api/virtualeventsroot-post-townhalls.md
+      - name: Get
+        href: ../../api/virtualeventtownhall-get.md
+      - name: Update
+        href: ../../api/virtualeventtownhall-update.md
+      - name: Publish
+        href: ../../api/virtualevent-publish.md
+      - name: Cancel
+        href: ../../api/virtualevent-cancel.md
+    - name: Virtual event webinar
+      items:
+      - name: Virtual event webinar
+        href: ../../resources/virtualeventwebinar.md
+      - name: List webinars
+        href: ../../api/virtualeventsroot-list-webinars.md
+      - name: Get virtualEventWebinar
+        href: ../../api/virtualeventwebinar-get.md
+      - name: List by user role
+        href: ../../api/virtualeventwebinar-getbyuserrole.md
+      - name: List by user ID and role
+        href: ../../api/virtualeventwebinar-getbyuseridandrole.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
@@ -461,7 +487,7 @@ items:
       href: ../../api/teamworkdeviceoperation-list.md
     - name: Get teamworkDeviceOperation
       href: ../../api/teamworkdeviceoperation-get.md
-- name: Settings (preview)
+- name: Settings
   items:
   - name: License details
     items:
@@ -471,24 +497,28 @@ items:
       href: ../../api/user-list-licensedetails.md
     - name: getTeamsLicensingDetails
       href: ../../api/licensedetails-getteamslicensingdetails.md
-  - name: Teamwork
+  - name: Organization settings
     items:
     - name: Teamwork
-      href: ../../resources/teamwork.md
-    - name: List deletedTeams
-      href: ../../api/teamwork-list-deletedteams.md
-    - name: List teamTemplates
-      href: ../../api/teamwork-list-teamtemplates.md
-    - name: Get teamwork
-      href: ../../api/teamwork-get.md
-  - name: User teamwork
+      items:
+      - name: Teamwork
+        href: ../../resources/teamwork.md
+      - name: List deletedTeams
+        href: ../../api/teamwork-list-deletedteams.md
+      - name: List teamTemplates
+        href: ../../api/teamwork-list-teamtemplates.md
+      - name: Get teamwork
+        href: ../../api/teamwork-get.md
+  - name: User settings
     items:
     - name: User teamwork
-      href: ../../resources/userteamwork.md
-    - name: List installedApps
-      href: ../../api/userteamwork-list-installedapps.md
-    - name: Get userTeamwork
-      href: ../../api/userteamwork-get.md
+      items:
+      - name: User teamwork
+        href: ../../resources/userteamwork.md
+      - name: List installedApps
+        href: ../../api/userteamwork-list-installedapps.md
+      - name: Get userTeamwork
+        href: ../../api/userteamwork-get.md
 - name: Employee learning
   displayName: Viva Learning
   items:
@@ -790,6 +820,14 @@ items:
       href: ../../api/chat-post-pinnedmessages.md
     - name: Unpin a message from chat
       href: ../../api/chat-delete-pinnedmessages.md
+  - name: Deleted chat
+    items:
+    - name: Deleted chat
+      href: ../../resources/deletedchat.md
+    - name: Get deletedChat
+      href: ../../api/deletedchat-get.md
+    - name: undoDelete deletedChat
+      href: ../../api/deletedchat-undodelete.md
   - name: Team
     items:
     - name: Team
@@ -860,14 +898,6 @@ items:
       href: ../../api/team-getshifts.md
     - name: Get time offs across all joined teams
       href: ../../api/team-gettimesoff.md
-  - name: Deleted team
-    items:
-    - name: Deleted team
-      href: ../../resources/deletedteam.md
-    - name: getAllMessages
-      href: ../../api/deletedteam-getallmessages.md
-    - name: List deletedTeams
-      href: ../../api/teamwork-list-deletedteams.md
   - name: Teamwork tag
     items:
     - name: Teamwork tag

@@ -1,0 +1,31 @@
+items:
+- name: Employee engagement (preview)
+  items:
+  - name: Overview
+    href: ../../resources/engagement-api-overview.md
+  - name: Community
+    items:
+    - name: Community
+      href: ../../resources/community.md
+    - name: Create community
+      href: ../../api/employeeexperience-post-communities.md
+    - name: Get community
+      href: ../../api/community-get.md
+  - name: Engagement async operation
+    items:
+    - name: Engagement async operation
+      href: ../../resources/engagementasyncoperation.md
+    - name: Get engagementAsyncOperation
+      href: ../../api/engagementasyncoperation-get.md
+- name: Employee goals (preview)
+  items:
+  - name: Goals export job
+    items:
+    - name: Goals export job
+      href: ../../resources/goalsexportjob.md
+    - name: List goalsExportJobs
+      href: ../../api/goals-list-exportjobs.md
+    - name: Create goalsExportJob
+      href: ../../api/goals-post-exportjobs.md
+    - name: Get goalsExportJob
+      href: ../../api/goalsexportjob-get.md

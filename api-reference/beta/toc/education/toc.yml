@@ -391,7 +391,7 @@ items:
     href: ../../resources/educationlinkedassignmentresource.md
   - name: Education media resource
     href: ../../resources/educationmediaresource.md
-  - name: Education one roster api data provider
+  - name: Education one roster API data provider
     href: ../../resources/educationonerosterapidataprovider.md
   - name: Education power point resource
     href: ../../resources/educationpowerpointresource.md

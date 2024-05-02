@@ -1,16 +1,6 @@
 items:
 - name: Overview
   href: ../../resources/industrydata-overview.md
-- name: Administrative unit provisioning flow
-  items:
-  - name: Administrative unit provisioning flow
-    href: ../../resources/industrydata-administrativeunitprovisioningflow.md
-  - name: Get administrativeUnitProvisioningFlow
-    href: ../../api/industrydata-administrativeunitprovisioningflow-get.md
-  - name: Update administrativeUnitProvisioningFlow
-    href: ../../api/industrydata-administrativeunitprovisioningflow-update.md
-  - name: Delete administrativeUnitProvisioningFlow
-    href: ../../api/industrydata-administrativeunitprovisioningflow-delete.md
 - name: Azure Data Lake connector
   items:
   - name: Azure Data Lake connector
@@ -27,16 +17,6 @@ items:
     href: ../../api/industrydata-azuredatalakeconnector-delete.md
   - name: getUploadSession
     href: ../../api/industrydata-azuredatalakeconnector-getuploadsession.md
-- name: Class group provisioning flow
-  items:
-  - name: Class group provisioning flow
-    href: ../../resources/industrydata-classgroupprovisioningflow.md
-  - name: Get classGroupProvisioningFlow
-    href: ../../api/industrydata-classgroupprovisioningflow-get.md
-  - name: Update classGroupProvisioningFlow
-    href: ../../api/industrydata-classgroupprovisioningflow-update.md
-  - name: Delete classGroupProvisioningFlow
-    href: ../../api/industrydata-classgroupprovisioningflow-delete.md
 - name: File validate operation
   items:
   - name: File validate operation
@@ -125,6 +105,46 @@ items:
     href: ../../api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
   - name: Create provisioningFlow
     href: ../../api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+  - name: Administrative unit provisioning flow
+    items:
+    - name: Administrative unit provisioning flow
+      href: ../../resources/industrydata-administrativeunitprovisioningflow.md
+    - name: Get administrativeUnitProvisioningFlow
+      href: ../../api/industrydata-administrativeunitprovisioningflow-get.md
+    - name: Update administrativeUnitProvisioningFlow
+      href: ../../api/industrydata-administrativeunitprovisioningflow-update.md
+    - name: Delete administrativeUnitProvisioningFlow
+      href: ../../api/industrydata-administrativeunitprovisioningflow-delete.md
+  - name: Class group provisioning flow
+    items:
+    - name: Class group provisioning flow
+      href: ../../resources/industrydata-classgroupprovisioningflow.md
+    - name: Get classGroupProvisioningFlow
+      href: ../../api/industrydata-classgroupprovisioningflow-get.md
+    - name: Update classGroupProvisioningFlow
+      href: ../../api/industrydata-classgroupprovisioningflow-update.md
+    - name: Delete classGroupProvisioningFlow
+      href: ../../api/industrydata-classgroupprovisioningflow-delete.md
+  - name: Security group provisioning flow
+    items:
+    - name: Security group provisioning flow
+      href: ../../resources/industrydata-securitygroupprovisioningflow.md
+    - name: Get securityGroupProvisioningFlow
+      href: ../../api/industrydata-securitygroupprovisioningflow-get.md
+    - name: Update securityGroupProvisioningFlow
+      href: ../../api/industrydata-securitygroupprovisioningflow-update.md
+    - name: Delete securityGroupProvisioningFlow
+      href: ../../api/industrydata-securitygroupprovisioningflow-delete.md
+  - name: User provisioning flow
+    items:
+    - name: User provisioning flow
+      href: ../../resources/industrydata-userprovisioningflow.md
+    - name: Get userProvisioningFlow
+      href: ../../api/industrydata-userprovisioningflow-get.md
+    - name: Update userProvisioningFlow
+      href: ../../api/industrydata-userprovisioningflow-update.md
+    - name: Delete userProvisioningFlow
+      href: ../../api/industrydata-userprovisioningflow-delete.md
 - name: Reference definition
   items:
   - name: Reference definition
@@ -141,16 +161,6 @@ items:
     href: ../../api/industrydata-rolegroup-list.md
   - name: Get roleGroup
     href: ../../api/industrydata-rolegroup-get.md
-- name: Security group provisioning flow
-  items:
-  - name: Security group provisioning flow
-    href: ../../resources/industrydata-securitygroupprovisioningflow.md
-  - name: Get securityGroupProvisioningFlow
-    href: ../../api/industrydata-securitygroupprovisioningflow-get.md
-  - name: Update securityGroupProvisioningFlow
-    href: ../../api/industrydata-securitygroupprovisioningflow-update.md
-  - name: Delete securityGroupProvisioningFlow
-    href: ../../api/industrydata-securitygroupprovisioningflow-delete.md
 - name: Source system definition
   items:
   - name: Source system definition
@@ -165,16 +175,6 @@ items:
     href: ../../api/industrydata-sourcesystemdefinition-update.md
   - name: Delete sourceSystemDefinition
     href: ../../api/industrydata-sourcesystemdefinition-delete.md
-- name: User provisioning flow
-  items:
-  - name: User provisioning flow
-    href: ../../resources/industrydata-userprovisioningflow.md
-  - name: Get userProvisioningFlow
-    href: ../../api/industrydata-userprovisioningflow-get.md
-  - name: Update userProvisioningFlow
-    href: ../../api/industrydata-userprovisioningflow-update.md
-  - name: Delete userProvisioningFlow
-    href: ../../api/industrydata-userprovisioningflow-delete.md
 - name: Year time period definition
   items:
   - name: Year time period definition

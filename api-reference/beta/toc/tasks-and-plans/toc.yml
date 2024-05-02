@@ -1,22 +1,6 @@
 items:
 - name: Overview
   href: ../../resources/planner-overview.md
-- name: Planner bucket
-  items:
-  - name: Planner bucket
-    href: ../../resources/plannerbucket.md
-  - name: Get plannerBucket
-    href: ../../api/plannerbucket-get.md
-  - name: List plannerTasks
-    href: ../../api/plannerbucket-list-tasks.md
-  - name: Create
-    href: ../../api/planner-post-buckets.md
-  - name: Update
-    href: ../../api/plannerbucket-update.md
-  - name: Delete
-    href: ../../api/plannerbucket-delete.md
-  - name: Get delta
-    href: ../../api/plannerbucket-delta.md
 - name: Planner plan
   items:
   - name: Planner plan
@@ -35,6 +19,34 @@ items:
     href: ../../api/plannerplan-delta.md
   - name: Move plannerPlan to Container
     href: ../../api/plannerplan-movetocontainer.md
+- name: Planner task
+  items:
+  - name: Planner task
+    href: ../../resources/plannertask.md
+  - name: Get plannerTask
+    href: ../../api/plannertask-get.md
+  - name: Update
+    href: ../../api/plannertask-update.md
+  - name: Delete
+    href: ../../api/plannertask-delete.md
+  - name: Get delta
+    href: ../../api/plannertask-delta.md
+- name: Planner bucket
+  items:
+  - name: Planner bucket
+    href: ../../resources/plannerbucket.md
+  - name: Get plannerBucket
+    href: ../../api/plannerbucket-get.md
+  - name: List plannerTasks
+    href: ../../api/plannerbucket-list-tasks.md
+  - name: Create
+    href: ../../api/planner-post-buckets.md
+  - name: Update
+    href: ../../api/plannerbucket-update.md
+  - name: Delete
+    href: ../../api/plannerbucket-delete.md
+  - name: Get delta
+    href: ../../api/plannerbucket-delta.md
 - name: Planner plan details
   items:
   - name: Planner plan details
@@ -61,26 +73,6 @@ items:
     href: ../../api/plannerroster-list-plans.md
   - name: List user's rosterPlans
     href: ../../api/planneruser-list-rosterplans.md
-- name: Planner task
-  items:
-  - name: Planner task
-    href: ../../resources/plannertask.md
-  - name: Get plannerTask
-    href: ../../api/plannertask-get.md
-  - name: Update
-    href: ../../api/plannertask-update.md
-  - name: Delete
-    href: ../../api/plannertask-delete.md
-  - name: Get delta
-    href: ../../api/plannertask-delta.md
-- name: Planner task details
-  items:
-  - name: Planner task details
-    href: ../../resources/plannertaskdetails.md
-  - name: Get plannerTaskDetails
-    href: ../../api/plannertaskdetails-get.md
-  - name: Update
-    href: ../../api/plannertaskdetails-update.md
 - name: Planner user
   items:
   - name: Planner user
@@ -97,6 +89,14 @@ items:
     href: ../../api/planneruser-list-rosterplans.md
   - name: Update
     href: ../../api/planneruser-update.md
+- name: Planner task details
+  items:
+  - name: Planner task details
+    href: ../../resources/plannertaskdetails.md
+  - name: Get plannerTaskDetails
+    href: ../../api/plannertaskdetails-get.md
+  - name: Update
+    href: ../../api/plannertaskdetails-update.md
 - name: Business scenarios (preview)
   items:
   - name: Overview

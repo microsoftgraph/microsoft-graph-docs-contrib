@@ -5,6 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
+toc.title: Cloud PC Azure network connection
 ---
 
 # cloudPcOnPremisesConnection resource type

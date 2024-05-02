@@ -53,6 +53,8 @@ items:
     href: toc/device-and-app-management/toc.yml
   - name: Education
     href: toc/education/toc.yml
+  - name: Employee experience
+    href: toc/employee-experience/toc.yml
   - name: Extensions
     href: toc/extensions/toc.yml
     displayName: Directory extensions, Schema extensions, Open extensions, On-premises extensions

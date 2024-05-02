@@ -171,7 +171,7 @@ items:
     href: ../../api/sharepointsettings-get.md
   - name: Update settings
     href: ../../api/sharepointsettings-update.md
-- name: Pages (preview)
+- name: Pages
   items:
   - name: Base site page
     items:

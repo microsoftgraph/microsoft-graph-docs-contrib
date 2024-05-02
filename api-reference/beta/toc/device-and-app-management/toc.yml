@@ -166,14 +166,6 @@ items:
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
     - name: Reupload cloudPcDeviceImage
       href: ../../api/cloudpcdeviceimage-reupload.md
-  - name: Cloud PC export job
-    items:
-    - name: Cloud PC export job
-      href: ../../resources/cloudpcexportjob.md
-    - name: Create cloudPcExportJob
-      href: ../../api/cloudpcreports-post-exportjobs.md
-    - name: Get cloudPcExportJob
-      href: ../../api/cloudpcexportjob-get.md
   - name: Cloud PC external partner setting
     items:
     - name: Cloud PC external partner setting
@@ -202,9 +194,9 @@ items:
       href: ../../api/virtualendpoint-list-galleryimages.md
     - name: Get cloudPcGalleryImage
       href: ../../api/cloudpcgalleryimage-get.md
-  - name: Cloud PC on-premises connection
+  - name: Cloud PC Azure network connection
     items:
-    - name: Cloud PC on-premises connection
+    - name: Cloud PC Azure network connection
       href: ../../resources/cloudpconpremisesconnection.md
     - name: List onPremisesConnections
       href: ../../api/virtualendpoint-list-onpremisesconnections.md
@@ -276,6 +268,14 @@ items:
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
     - name: getRawRemoteConnectionReports
       href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
+    - name: Cloud PC export job
+      items:
+      - name: Cloud PC export job
+        href: ../../resources/cloudpcexportjob.md
+      - name: Create cloudPcExportJob
+        href: ../../api/cloudpcreports-post-exportjobs.md
+      - name: Get cloudPcExportJob
+        href: ../../api/cloudpcexportjob-get.md
   - name: Cloud PC service plan
     items:
     - name: Cloud PC service plan
@@ -366,6 +366,8 @@ items:
       href: ../../api/virtualendpoint-list-bulkactions.md
     - name: Create cloudPcBulkAction
       href: ../../api/virtualendpoint-post-bulkactions.md
+  - name: Alert monitoring
+    items: []
   - name: Complex types
     items:
     - name: App scope
@@ -8784,6 +8786,12 @@ items:
       href: ../../api/managedtenants-tenanttag-assigntag.md
     - name: unassignTag
       href: ../../api/managedtenants-tenanttag-unassigntag.md
+  - name: Tenant usage
+    items:
+    - name: Tenant usage
+      href: ../../resources/managedtenants-tenantusage.md
+    - name: List tenantUsage
+      href: ../../api/managedtenants-managedtenant-list-tenantusage.md
   - name: Windows device malware state
     items:
     - name: Windows device malware state

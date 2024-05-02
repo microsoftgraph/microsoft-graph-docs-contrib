@@ -33,6 +33,12 @@ items:
       href: ../../api/projectrome-delete-historyitem.md
 - name: Roaming data
   items:
+  - name: Cloud clipboard
+    items:
+    - name: Cloud clipboard
+      href: ../../resources/cloudclipboardroot.md
+    - name: List items
+      href: ../../api/cloudclipboardroot-list-items.md
   - name: Cloud clipboard item
     items:
     - name: Cloud clipboard item
@@ -41,30 +47,28 @@ items:
       href: ../../api/cloudclipboardroot-list-items.md
     - name: Get cloudClipboardItem
       href: ../../api/cloudclipboarditem-get.md
-  - name: Cloud clipboard root
+  - name: Windows settings
     items:
-    - name: Cloud clipboard root
-      href: ../../resources/cloudclipboardroot.md
-    - name: List items
-      href: ../../api/cloudclipboardroot-list-items.md
-  - name: Windows setting
-    items:
+    - name: Overview
+      href: ../../resources/windows-setting-api-overview.md
     - name: Windows setting
-      href: ../../resources/windowssetting.md
-    - name: List
-      href: ../../api/usersettings-list-windows.md
-    - name: Get
-      href: ../../api/windowssetting-get.md
-    - name: List instances
-      href: ../../api/windowssetting-list-instances.md
-  - name: Windows setting instance
-    items:
+      items:
+      - name: Windows setting
+        href: ../../resources/windowssetting.md
+      - name: List
+        href: ../../api/usersettings-list-windows.md
+      - name: Get
+        href: ../../api/windowssetting-get.md
+      - name: List instances
+        href: ../../api/windowssetting-list-instances.md
     - name: Windows setting instance
-      href: ../../resources/windowssettinginstance.md
-    - name: List instances
-      href: ../../api/windowssetting-list-instances.md
-    - name: Get windowsSettingInstance
-      href: ../../api/windowssettinginstance-get.md
+      items:
+      - name: Windows setting instance
+        href: ../../resources/windowssettinginstance.md
+      - name: List instances
+        href: ../../api/windowssetting-list-instances.md
+      - name: Get windowsSettingInstance
+        href: ../../api/windowssettinginstance-get.md
   - name: Complex types
     items:
     - name: Cloud clipboard item payload

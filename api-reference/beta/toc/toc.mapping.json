@@ -3,13 +3,29 @@
     {
       "name": "Applications",
       "overview": "../../resources/applications-api-overview.md",
+      "shouldSort": true,
       "resources": [
         "application",
-        "applicationTemplate",
-        "federatedIdentityCredential",
         "servicePrincipal"
       ],
       "childNodes": [
+        {
+          "name": "Application",
+          "shouldSort": true,
+          "resources": [
+            "applicationTemplate",
+            "federatedIdentityCredential"
+          ],
+          "childNodes": [
+            {
+              "name": "Policies",
+              "resources": [
+                "tokenIssuancePolicy",
+                "tokenLifetimePolicy"
+              ]
+            }
+          ]
+        },
         {
           "name": "On-premises publishing",
           "overview": "../../resources/onpremisespublishingprofile-root.md",
@@ -37,23 +53,6 @@
             "verifiedCustomDomainCertificatesMetadata",
             "webApplicationSegment",
             "webSegmentConfiguration"
-          ]
-        },
-        {
-          "name": "Policies",
-          "resources": [
-            "remoteDesktopSecurityConfiguration",
-            "tokenIssuancePolicy",
-            "tokenLifetimePolicy"
-          ],
-          "childNodes": [
-            {
-              "name": "Application authentication method policy",
-              "resources": [
-                "tenantAppManagementPolicy",
-                "appManagementPolicy"
-              ]
-            }
           ]
         },
         {
@@ -138,6 +137,7 @@
     {
       "name": "Compliance",
       "overview": "../../resources/complianceapioverview.md",
+      "shouldSort": true,
       "keywords": [
         "Compliance API",
         "Microsoft Graph Compliance API"
@@ -194,13 +194,21 @@
         {
           "name": "Roaming data",
           "resources": [
-            "cloudClipboardItem",
             "cloudClipboardRoot",
-            "windowsSetting",
-            "windowsSettingInstance"
+            "cloudClipboardItem"
           ],
           "complexTypes": [
             "cloudClipboardItemPayload"
+          ],
+          "childNodes": [
+            {
+              "name": "Windows settings",
+              "overview": "../../resources/windows-setting-api-overview.md",
+              "resources": [
+                "windowsSetting",
+                "windowsSettingInstance"
+              ]
+            }
           ]
         }
       ]
@@ -278,7 +286,6 @@
             "cloudPcAuditEvent",
             "cloudPcCrossCloudGovernmentOrganizationMapping",
             "cloudPcDeviceImage",
-            "cloudPcExportJob",
             "cloudPcExternalPartnerSetting",
             "cloudPcFrontLineServicePlan",
             "cloudPcGalleryImage",
@@ -327,6 +334,22 @@
             "keyValuePair",
             "microsoftManagedDesktop",
             "unifiedRolePermission"
+          ],
+          "childNodes": [
+            {
+              "name": "Alert monitoring",
+              "resources": [
+                "monitoring",
+                "alertRecord",
+                "alertRule"
+              ]
+            },
+            {
+              "name": "Cloud PC reports",
+              "resources": [
+                "cloudPcExportJob"
+              ]
+            }
           ]
         },
         {
@@ -1529,6 +1552,7 @@
             "microsoft.graph.managedTenants.tenantDetailedInformation",
             "microsoft.graph.managedTenants.tenantGroup",
             "microsoft.graph.managedTenants.tenantTag",
+            "microsoft.graph.managedTenants.tenantUsage",
             "microsoft.graph.managedTenants.windowsDeviceMalwareState",
             "microsoft.graph.managedTenants.windowsProtectionState"
           ],
@@ -1657,6 +1681,25 @@
       ]
     },
     {
+      "name": "Employee experience",
+      "childNodes": [
+        {
+          "name": "Employee engagement (preview)",
+          "overview": "../../resources/engagement-api-overview.md",
+          "resources": [
+            "community",
+            "engagementAsyncOperation"
+          ]
+        },
+        {
+          "name": "Employee goals (preview)",
+          "resources": [
+            "goalsExportJob"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Extensions",
       "overview": "/graph/extensibility-overview?context=graph%2Fapi%2F1.0&preserve-view=true&tabs=http",
       "keywords": [
@@ -1675,13 +1718,15 @@
       "name": "External data connections",
       "overview": "../../resources/connectors-api-overview.md",
       "resources": [
-        "microsoft.graph.externalConnectors.connectionOperation",
-        "microsoft.graph.externalConnectors.connectionQuota",
         "microsoft.graph.externalConnectors.externalConnection",
+        "microsoft.graph.externalConnectors.connectionQuota",
+        "microsoft.graph.externalConnectors.externalActivity",
+        "microsoft.graph.externalConnectors.externalActivityResult",
         "microsoft.graph.externalConnectors.externalGroup",
+        "microsoft.graph.externalConnectors.externalGroupMember",
         "microsoft.graph.externalConnectors.externalItem",
-        "microsoft.graph.externalConnectors.identity",
-        "microsoft.graph.externalConnectors.schema"
+        "microsoft.graph.externalConnectors.schema",
+        "microsoft.graph.externalConnectors.connectionOperation"
       ],
       "complexTypes": [
         "Json",
@@ -1689,8 +1734,6 @@
         "microsoft.graph.externalConnectors.activitySettings",
         "microsoft.graph.externalConnectors.configuration",
         "microsoft.graph.externalConnectors.displayTemplate",
-        "microsoft.graph.externalConnectors.externalActivity",
-        "microsoft.graph.externalConnectors.externalActivityResult",
         "microsoft.graph.externalConnectors.externalItemContent",
         "microsoft.graph.externalConnectors.itemIdResolver",
         "microsoft.graph.externalConnectors.property",
@@ -1934,6 +1977,7 @@
               "shouldSort": true,
               "resources": [
                 "approval",
+                "approvalStep",
                 "accessPackage",
                 "accessPackageAssignment",
                 "accessPackageAssignmentPolicy",
@@ -2116,6 +2160,25 @@
                     "unifiedRoleManagementPolicyAssignment",
                     "approval",
                     "approvalStep"
+                  ],
+                  "childNodes": [
+                    {
+                      "name": "Role management alerts",
+                      "resources": [
+                        "unifiedRoleManagementAlert",
+                        "unifiedRoleManagementAlertDefinition",
+                        "unifiedRoleManagementAlertConfiguration",
+                        "invalidLicenseAlertConfiguration",
+                        "noMfaOnRoleActivationAlertConfiguration",
+                        "redundantAssignmentAlertConfiguration",
+                        "rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration",
+                        "sequentialActivationRenewalsAlertConfiguration",
+                        "staleSignInAlertConfiguration",
+                        "tooManyGlobalAdminsAssignedToTenantAlertConfiguration",
+                        "unifiedRoleManagementAlertIncident",
+                        "longRunningOperation"
+                      ]
+                    }
                   ]
                 },
                 {
@@ -2175,7 +2238,6 @@
           "resources": [
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "organization",
             "organizationalBranding",
             "organizationalBrandingLocalization",
             "certificateBasedAuthConfiguration",
@@ -2186,7 +2248,7 @@
           ],
           "childNodes": [
             {
-              "name": "Authentication event listeners (preview)",
+              "name": "Authentication event listeners",
               "resources": [
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
@@ -2265,7 +2327,7 @@
               ]
             },
             {
-              "name": "Custom authentication extensions (preview)",
+              "name": "Custom authentication extensions",
               "resources": [
                 "customAuthenticationExtension",
                 "onAttributeCollectionStartCustomExtension",
@@ -2315,7 +2377,8 @@
             {
               "name": "Identity provider (deprecated)",
               "resources": [
-                "identityProvider"
+                "identityProvider",
+                "openIdConnectProvider"
               ]
             },
             {
@@ -2348,7 +2411,6 @@
                 "authenticationEventsPolicy",
                 "authenticationFlowsPolicy",
                 "b2cAuthenticationMethodsPolicy",
-                "invokeUserFlowListener",
                 "featureRolloutPolicy",
                 "continuousAccessEvaluationPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
@@ -2650,12 +2712,11 @@
                 "VAR"
               ],
               "resources": [
-                "delegatedAdminAccessAssignment",
-                "delegatedAdminCustomer",
                 "delegatedAdminRelationship",
-                "delegatedAdminRelationshipOperation",
+                "delegatedAdminAccessAssignment",
                 "delegatedAdminRelationshipRequest",
-                "delegatedAdminServiceManagementDetail"
+                "delegatedAdminRelationshipOperation",
+                "delegatedAdminCustomer"
               ],
               "complexTypes": [
                 "delegatedAdminAccessContainer",
@@ -2672,9 +2733,7 @@
       "name": "Industry data ETL (preview)",
       "overview": "../../resources/industrydata-overview.md",
       "resources": [
-        "microsoft.graph.industryData.administrativeUnitProvisioningFlow",
         "microsoft.graph.industryData.azureDataLakeConnector",
-        "microsoft.graph.industryData.classGroupProvisioningFlow",
         "microsoft.graph.industryData.fileValidateOperation",
         "microsoft.graph.industryData.inboundFileFlow",
         "microsoft.graph.industryData.inboundFlow",
@@ -2684,9 +2743,7 @@
         "microsoft.graph.industryData.provisioningFlow",
         "microsoft.graph.industryData.referenceDefinition",
         "microsoft.graph.industryData.roleGroup",
-        "microsoft.graph.industryData.securityGroupProvisioningFlow",
         "microsoft.graph.industryData.sourceSystemDefinition",
-        "microsoft.graph.industryData.userProvisioningFlow",
         "microsoft.graph.industryData.yearTimePeriodDefinition"
       ],
       "complexTypes": [
@@ -2726,6 +2783,17 @@
         "microsoft.graph.industryData.userMatchingSetting",
         "microsoft.graph.industryData.validateOperation",
         "microsoft.graph.industryData.yearReferenceValue"
+      ],
+      "childNodes": [
+        {
+          "name": "Provisioning flow",
+          "resources": [
+            "microsoft.graph.industryData.administrativeUnitProvisioningFlow",
+            "microsoft.graph.industryData.classGroupProvisioningFlow",
+            "microsoft.graph.industryData.securityGroupProvisioningFlow",
+            "microsoft.graph.industryData.userProvisioningFlow"
+          ]
+        }
       ]
     },
     {
@@ -3022,7 +3090,9 @@
           "name": "Query",
           "overview": "../../resources/search-api-overview.md",
           "resources": [
-            "searchEntity"
+            "searchEntity",
+            "searchRequest",
+            "searchResponse"
           ],
           "complexTypes": [
             "Json",
@@ -3042,8 +3112,6 @@
             "searchHitsContainer",
             "searchQuery",
             "searchQueryString",
-            "searchRequest",
-            "searchResponse",
             "sharePointOneDriveOptions",
             "sortProperty"
           ]
@@ -3155,6 +3223,12 @@
           ]
         },
         {
+          "name": "Identities (preview)",
+          "resources": [
+            "microsoft.graph.security.healthIssue"
+          ]
+        },
+        {
           "name": "Information protection",
           "resources": [
             "informationProtectionLabel",
@@ -3181,7 +3255,7 @@
           ]
         },
         {
-          "name": "Legacy alert",
+          "name": "Legacy alerts (deprecated)",
           "resources": [
             "alert"
           ]
@@ -3206,7 +3280,7 @@
           ]
         },
         {
-          "name": "Threat intelligence",
+          "name": "Threat intelligence (preview)",
           "overview": "../../resources/security-threatintelligence-overview.md",
           "resources": [
             "microsoft.graph.security.article",
@@ -3249,7 +3323,7 @@
           ]
         },
         {
-          "name": "Threat submission",
+          "name": "Threat submission (preview)",
           "resources": [
             "microsoft.graph.security.emailThreatSubmission",
             "microsoft.graph.security.emailThreatSubmissionPolicy",
@@ -3282,7 +3356,7 @@
       ],
       "childNodes": [
         {
-          "name": "Pages (preview)",
+          "name": "Pages",
           "resources": [
             "baseSitePage",
             "sitePage",
@@ -3317,13 +3391,13 @@
         "Planner"
       ],
       "resources": [
-        "plannerBucket",
         "plannerPlan",
+        "plannerTask",
+        "plannerBucket",
         "plannerPlanDetails",
         "plannerRoster",
-        "plannerTask",
-        "plannerTaskDetails",
-        "plannerUser"
+        "plannerUser",
+        "plannerTaskDetails"
       ],
       "complexTypes": [
         "businessScenarioGroupTarget",
@@ -3487,9 +3561,11 @@
             {
               "name": "Virtual events",
               "resources": [
-                "virtualEventWebinar",
+                "virtualEventPresenter",
                 "virtualEventRegistration",
-                "virtualEventSession"
+                "virtualEventSession",
+                "virtualEventTownhall",
+                "virtualEventWebinar"
               ]
             }
           ]
@@ -3505,11 +3581,23 @@
           ]
         },
         {
-          "name": "Settings (preview)",
+          "name": "Settings",
           "resources": [
-            "licenseDetails",
-            "teamwork",
-            "userTeamwork"
+            "licenseDetails"
+          ],
+          "childNodes": [
+            {
+              "name": "Organization settings",
+              "resources": [
+                "teamwork"
+              ]
+            },
+            {
+              "name": "User settings",
+              "resources": [
+                "userTeamwork"
+              ]
+            }
           ]
         },
         {
@@ -3535,8 +3623,8 @@
             "chat",
             "chatMessage",
             "pinnedChatMessageInfo",
+            "deletedChat",
             "team",
-            "deletedTeam",
             "teamworkTag",
             "teamworkTagMember"
           ],

@@ -21,6 +21,10 @@
     "override": "AOSP"
   },
   {
+    "term": "api",
+    "override": "API"
+  },
+  {
     "term": "app x",
     "override": "AppX"
   },
@@ -256,6 +260,16 @@
   {
     "term": "pkcs",
     "override": "PKCS"
+  },
+  {
+    "term": "pre approval",
+    "override": "preapproval",
+    "caseSensitive": true
+  },
+  {
+    "term": "Pre approval",
+    "override": "Preapproval",
+    "caseSensitive": true
   },
   {
     "term": "pstn",

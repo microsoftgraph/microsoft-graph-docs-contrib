@@ -441,6 +441,18 @@ items:
       href: ../../resources/security-detonationdetails.md
     - name: Detonation observables
       href: ../../resources/security-detonationobservables.md
+- name: Identities (preview)
+  items:
+  - name: Health issue
+    items:
+    - name: Health issue
+      href: ../../resources/security-healthissue.md
+    - name: List
+      href: ../../api/security-identityContainer-list-healthissues.md
+    - name: Get
+      href: ../../api/security-healthissue-get.md
+    - name: Update
+      href: ../../api/security-healthissue-update.md
 - name: Information protection
   items:
   - name: Information protection label
@@ -535,7 +547,7 @@ items:
         href: ../../resources/identityset.md
       - name: Threat assessment result
         href: ../../resources/threatassessmentresult.md
-- name: Legacy alert
+- name: Legacy alerts (deprecated)
   items:
   - name: Alert
     items:
@@ -659,7 +671,7 @@ items:
     href: ../../api/securityactions-list.md
   - name: Cancel security action
     href: ../../api/securityaction-cancelsecurityaction.md
-- name: Threat intelligence
+- name: Threat intelligence (preview)
   items:
   - name: Overview
     href: ../../resources/security-threatintelligence-overview.md
@@ -901,6 +913,7 @@ items:
       href: ../../api/tiindicator-deletetiindicators.md
 - name: Threat submission
   href: ../../resources/security-threatsubmission.md
+- name: Threat submission (preview)
   items:
   - name: Email threat submission
     items:

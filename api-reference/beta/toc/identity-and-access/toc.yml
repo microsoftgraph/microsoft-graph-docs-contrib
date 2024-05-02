@@ -1120,6 +1120,16 @@ items:
         href: ../../api/approval-get.md
       - name: filterByCurrentUser
         href: ../../api/approval-filterbycurrentuser.md
+    - name: Approval step
+      items:
+      - name: Approval step
+        href: ../../resources/approvalstep.md
+      - name: List approvalSteps
+        href: ../../api/approval-list-steps.md
+      - name: Get approvalStep
+        href: ../../api/approvalstep-get.md
+      - name: Update approvalStep
+        href: ../../api/approvalstep-update.md
     - name: Connected organization
       items:
       - name: Connected organization
@@ -1633,6 +1643,68 @@ items:
           href: ../../api/approvalstep-get.md
         - name: Update approvalStep
           href: ../../api/approvalstep-update.md
+      - name: Role management alerts
+        items:
+        - name: Unified role management alert
+          items:
+          - name: Unified role management alert
+            href: ../../resources/unifiedrolemanagementalert.md
+          - name: List alerts
+            href: ../../api/rolemanagementalert-list-alerts.md
+          - name: Get unifiedRoleManagementAlert
+            href: ../../api/unifiedrolemanagementalert-get.md
+          - name: Update unifiedRoleManagementAlert
+            href: ../../api/unifiedrolemanagementalert-update.md
+          - name: refresh
+            href: ../../api/unifiedrolemanagementalert-refresh.md
+        - name: Unified role management alert definition
+          items:
+          - name: Unified role management alert definition
+            href: ../../resources/unifiedrolemanagementalertdefinition.md
+          - name: List alertDefinitions
+            href: ../../api/rolemanagementalert-list-alertdefinitions.md
+          - name: Get unifiedRoleManagementAlertDefinition
+            href: ../../api/unifiedrolemanagementalertdefinition-get.md
+        - name: Unified role management alert configuration
+          items:
+          - name: Unified role management alert configuration
+            href: ../../resources/unifiedrolemanagementalertconfiguration.md
+          - name: List alertConfigurations
+            href: ../../api/rolemanagementalert-list-alertconfigurations.md
+          - name: Get unifiedRoleManagementAlertConfiguration
+            href: ../../api/unifiedrolemanagementalertconfiguration-get.md
+          - name: Update unifiedRoleManagementAlertConfiguration
+            href: ../../api/unifiedrolemanagementalertconfiguration-update.md
+        - name: Invalid license alert configuration
+          href: ../../resources/invalidlicensealertconfiguration.md
+        - name: No MFA on role activation alert configuration
+          href: ../../resources/nomfaonroleactivationalertconfiguration.md
+        - name: Redundant assignment alert configuration
+          href: ../../resources/redundantassignmentalertconfiguration.md
+        - name: Roles assigned outside privileged identity management alert configuration
+          href: ../../resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md
+        - name: Sequential activation renewals alert configuration
+          href: ../../resources/sequentialactivationrenewalsalertconfiguration.md
+        - name: Stale sign in alert configuration
+          href: ../../resources/stalesigninalertconfiguration.md
+        - name: Too many global admins assigned to tenant alert configuration
+          href: ../../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md
+        - name: Unified role management alert incident
+          items:
+          - name: Unified role management alert incident
+            href: ../../resources/unifiedrolemanagementalertincident.md
+          - name: List alertIncidents
+            href: ../../api/unifiedrolemanagementalert-list-alertincidents.md
+          - name: Get unifiedRoleManagementAlertIncident
+            href: ../../api/unifiedrolemanagementalertincident-get.md
+          - name: remediate
+            href: ../../api/unifiedrolemanagementalertincident-remediate.md
+        - name: Long running operation
+          items:
+          - name: Long running operation
+            href: ../../resources/longrunningoperation.md
+          - name: Get longRunningOperation
+            href: ../../api/longrunningoperation-get.md
     - name: PIM for Groups
       items:
       - name: Overview
@@ -1873,7 +1945,7 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
-  - name: Authentication event listeners (preview)
+  - name: Authentication event listeners
     items:
     - name: Authentication event listener
       items:
@@ -2334,7 +2406,7 @@ items:
         href: ../../api/outboundshareduserprofile-list-tenants.md
       - name: Remove personal data
         href: ../../api/tenantreference-removepersonaldata.md
-  - name: Custom authentication extensions (preview)
+  - name: Custom authentication extensions
     items:
     - name: Custom authentication extension
       items:
@@ -2564,6 +2636,22 @@ items:
         href: ../../api/identityprovider-delete.md
       - name: List available provider types
         href: ../../api/identityprovider-list-availableprovidertypes.md
+    - name: Open id connect provider
+      items:
+      - name: Open id connect provider
+        href: ../../resources/openidconnectprovider.md
+      - name: List
+        href: ../../api/identityprovider-list.md
+      - name: Create
+        href: ../../api/identityprovider-post-identityproviders.md
+      - name: Get
+        href: ../../api/identityprovider-get.md
+      - name: Update
+        href: ../../api/identityprovider-update.md
+      - name: Delete
+        href: ../../api/identityprovider-delete.md
+      - name: List available provider types
+        href: ../../api/identityprovider-list-availableprovidertypes.md
   - name: Invitation
     items:
     - name: Invitation
@@ -2643,16 +2731,6 @@ items:
       href: ../../api/oauth2permissiongrant-delete.md
     - name: Delta
       href: ../../api/oauth2permissiongrant-delta.md
-  - name: Organization
-    items:
-    - name: Organization
-      href: ../../resources/organization.md
-    - name: List organizations
-      href: ../../api/organization-list.md
-    - name: Get organization
-      href: ../../api/organization-get.md
-    - name: Update organization
-      href: ../../api/organization-update.md
   - name: Organizational branding
     items:
     - name: Organizational branding
@@ -2930,8 +3008,6 @@ items:
         href: ../../api/identitysecuritydefaultsenforcementpolicy-get.md
       - name: Update
         href: ../../api/identitysecuritydefaultsenforcementpolicy-update.md
-    - name: Invoke user flow listener
-      href: ../../resources/invokeuserflowlistener.md
     - name: Permission grant policy
       items:
       - name: Permission grant policy
@@ -2960,9 +3036,9 @@ items:
           href: ../../api/permissiongrantpolicy-post-excludes.md
         - name: Remove exclude condition set
           href: ../../api/permissiongrantpolicy-delete-excludes.md
-    - name: Permission grant pre approval policy
+    - name: Permission grant preapproval policy
       items:
-      - name: Permission grant pre approval policy
+      - name: Permission grant preapproval policy
         href: ../../resources/permissiongrantpreapprovalpolicy.md
       - name: List permissionGrantPreApprovalPolicies
         href: ../../api/policyroot-list-permissiongrantpreapprovalpolicies.md
@@ -3192,9 +3268,9 @@ items:
         href: ../../api/userflowlanguageconfiguration-list-defaultpages.md
       - name: List overridesPages
         href: ../../api/userflowlanguageconfiguration-list-overridespages.md
-    - name: Identity api connector
+    - name: Identity API connector
       items:
-      - name: Identity api connector
+      - name: Identity API connector
         href: ../../resources/identityapiconnector.md
       - name: List
         href: ../../api/identityapiconnector-list.md
@@ -4142,28 +4218,6 @@ items:
     items:
     - name: Overview
       href: ../../resources/delegatedadminrelationships-api-overview.md
-    - name: Delegated admin access assignment
-      items:
-      - name: Delegated admin access assignment
-        href: ../../resources/delegatedadminaccessassignment.md
-      - name: Create delegatedAdminAccessAssignment
-        href: ../../api/delegatedadminrelationship-post-accessassignments.md
-      - name: List delegatedAdminAccessAssignments
-        href: ../../api/delegatedadminrelationship-list-accessassignments.md
-      - name: Get delegatedAdminAccessAssignment
-        href: ../../api/delegatedadminaccessassignment-get.md
-      - name: Update delegatedAdminAccessAssignment
-        href: ../../api/delegatedadminaccessassignment-update.md
-      - name: Delete delegatedAdminAccessAssignment
-        href: ../../api/delegatedadminaccessassignment-delete.md
-    - name: Delegated admin customer
-      items:
-      - name: Delegated admin customer
-        href: ../../resources/delegatedadmincustomer.md
-      - name: List delegatedAdminCustomers
-        href: ../../api/tenantrelationship-list-delegatedadmincustomers.md
-      - name: Get delegatedAdminCustomer
-        href: ../../api/delegatedadmincustomer-get.md
     - name: Delegated admin relationship
       items:
       - name: Delegated admin relationship
@@ -4178,14 +4232,20 @@ items:
         href: ../../api/delegatedadminrelationship-update.md
       - name: Delete delegatedAdminRelationship
         href: ../../api/delegatedadminrelationship-delete.md
-    - name: Delegated admin relationship operation
+    - name: Delegated admin access assignment
       items:
-      - name: Delegated admin relationship operation
-        href: ../../resources/delegatedadminrelationshipoperation.md
-      - name: List delegatedAdminRelationshipOperations
-        href: ../../api/delegatedadminrelationship-list-operations.md
-      - name: Get delegatedAdminRelationshipOperation
-        href: ../../api/delegatedadminrelationshipoperation-get.md
+      - name: Delegated admin access assignment
+        href: ../../resources/delegatedadminaccessassignment.md
+      - name: Create delegatedAdminAccessAssignment
+        href: ../../api/delegatedadminrelationship-post-accessassignments.md
+      - name: List delegatedAdminAccessAssignments
+        href: ../../api/delegatedadminrelationship-list-accessassignments.md
+      - name: Get delegatedAdminAccessAssignment
+        href: ../../api/delegatedadminaccessassignment-get.md
+      - name: Update delegatedAdminAccessAssignment
+        href: ../../api/delegatedadminaccessassignment-update.md
+      - name: Delete delegatedAdminAccessAssignment
+        href: ../../api/delegatedadminaccessassignment-delete.md
     - name: Delegated admin relationship request
       items:
       - name: Delegated admin relationship request
@@ -4196,12 +4256,22 @@ items:
         href: ../../api/delegatedadminrelationship-post-requests.md
       - name: Get delegatedAdminRelationshipRequest
         href: ../../api/delegatedadminrelationshiprequest-get.md
-    - name: Delegated admin service management detail
+    - name: Delegated admin relationship operation
       items:
-      - name: Delegated admin service management detail
-        href: ../../resources/delegatedadminservicemanagementdetail.md
-      - name: List delegatedAdminServiceManagementDetails
-        href: ../../api/delegatedadmincustomer-list-servicemanagementdetails.md
+      - name: Delegated admin relationship operation
+        href: ../../resources/delegatedadminrelationshipoperation.md
+      - name: List delegatedAdminRelationshipOperations
+        href: ../../api/delegatedadminrelationship-list-operations.md
+      - name: Get delegatedAdminRelationshipOperation
+        href: ../../api/delegatedadminrelationshipoperation-get.md
+    - name: Delegated admin customer
+      items:
+      - name: Delegated admin customer
+        href: ../../resources/delegatedadmincustomer.md
+      - name: List delegatedAdminCustomers
+        href: ../../api/tenantrelationship-list-delegatedadmincustomers.md
+      - name: Get delegatedAdminCustomer
+        href: ../../api/delegatedadmincustomer-get.md
     - name: Complex types
       items:
       - name: Delegated admin access container
