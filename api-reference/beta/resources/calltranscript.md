@@ -31,8 +31,8 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | callId | String | The unique identifier for the **call** related to this recording. Read-only.|
 | content| Stream| The content of the transcript. Read-only.|
 | contentCorrelationId | String | The unique identifier for correlating a set of recording and transcript.|
-| createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. he timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-| endDateTime | DatetimeOffset |  Date and time at which the recording ends. he timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.| 
+| createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+| endDateTime | DatetimeOffset |  Date and time at which the recording ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.| 
 | id| String| The unique identifier for the transcript. Read-only.|
 | meetingId | String | The unique identifier of the online meeting related to this transcript. Read-only.|
 | meetingOrganizer| [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
@@ -42,7 +42,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
