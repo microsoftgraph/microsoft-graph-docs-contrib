@@ -43,7 +43,7 @@ For more information on how retention labels work, when to use them, and how Mic
 |descriptionForAdmins|String|Provides label information for the admin. Optional.|
 |descriptionForUsers|String|Provides the label information for the user. Optional.|
 |displayName|String|Unique string that defines a label name.|
-|id|String|Unique ID of the retentionLabel. [entity](/graph/api/resources/entity).|
+|id|String|Unique ID of the retentionLabel.|
 |isInUse|Boolean|Specifies whether the label is currently being used.|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionLabel.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the retentionLabel was modified.|

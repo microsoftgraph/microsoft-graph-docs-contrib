@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.users.item.findMeetingTimes.find_meeting_times_request_builder import FindMeetingTimesRequestBuilder
-from msgraph.generated.models.find_meeting_times_post_request_body import FindMeetingTimesPostRequestBody
+from msgraph.generated.users.item.find_meeting_times.find_meeting_times_request_builder import FindMeetingTimesRequestBuilder
+from msgraph.generated.users.item.find_meeting_times.find_meeting_times_post_request_body import FindMeetingTimesPostRequestBody
 from msgraph.generated.models.attendee_base import AttendeeBase
 from msgraph.generated.models.email_address import EmailAddress
 from msgraph.generated.models.location_constraint import LocationConstraint
