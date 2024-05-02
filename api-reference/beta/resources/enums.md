@@ -140,6 +140,18 @@ Namespace: microsoft.graph
 |generallyAvailable|
 |unknownFutureValue|
 
+### requiredLicenses values
+
+|Member|
+|:---|
+|notApplicable|
+|microsoftEntraIdFree|
+|microsoftEntraIdP1|
+|microsoftEntraIdP2|
+|microsoftEntraIdGovernance|
+|microsoftEntraWorkloadId|
+|unknownFutureValue|
+
 ### recommendationCategory values
 
 | Member               |
@@ -2656,13 +2668,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### stagedFeatureName values
 
-| Member                    | Description                   |
-| :------------------------ | :---------------------------- |
-| passthroughAuthentication | Passthrough Authentication    |
-| seamlessSso               | Seamless Single Sign-on       |
-| passwordHashSync          | Password Hash Synchronization |
-| emailAsAlternateId        | Email as an alternate ID      |
-| unknownFutureValue        | A sentinel member             |
+| Member                    |
+| :------------------------ |
+| passthroughAuthentication |
+| seamlessSso               |
+| passwordHashSync          |
+| emailAsAlternateId        |
+| unknownFutureValue        |
+| certificateBasedAuthentication |
 
 ### tokenIssuerType values
 

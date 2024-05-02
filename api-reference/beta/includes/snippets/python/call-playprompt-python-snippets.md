@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.play_prompt_post_request_body import PlayPromptPostRequestBody
+from msgraph.generated.communications.calls.item.play_prompt.play_prompt_post_request_body import PlayPromptPostRequestBody
 from msgraph.generated.models.prompt import Prompt
 from msgraph.generated.models.media_prompt import MediaPrompt
 from msgraph.generated.models.media_info import MediaInfo

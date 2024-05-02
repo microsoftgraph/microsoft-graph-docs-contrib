@@ -99,3 +99,6 @@ The following JSON representation shows the resource type.
 }
 ```
 
+## Related content
+
+[List meetingAttendanceReports](../api/meetingattendancereport-list.md)

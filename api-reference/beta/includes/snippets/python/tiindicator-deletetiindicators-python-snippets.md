@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.delete_ti_indicators_post_request_body import DeleteTiIndicatorsPostRequestBody
+from msgraph.generated.security.tiindicators.delete_ti_indicators.delete_ti_indicators_post_request_body import DeleteTiIndicatorsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
