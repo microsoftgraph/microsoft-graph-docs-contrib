@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-put-customclaimspolicy-permissions.md)]
 
+[!INCLUDE [rbac-customclaimspolicy-apis-create](../includes/rbac-for-apis/rbac-customclaimspolicy-apis-create.md)]
+
 ## HTTP request
 
 <!-- {
