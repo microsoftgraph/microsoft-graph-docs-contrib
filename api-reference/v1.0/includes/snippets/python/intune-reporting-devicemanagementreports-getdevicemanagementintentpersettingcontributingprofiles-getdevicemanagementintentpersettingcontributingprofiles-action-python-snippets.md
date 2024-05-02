@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.get_device_management_intent_per_setting_contributing_profiles_post_request_body import GetDeviceManagementIntentPerSettingContributingProfilesPostRequestBody
+from msgraph.generated.devicemanagement.reports.get_device_management_intent_per_setting_contributing_profiles.get_device_management_intent_per_setting_contributing_profiles_post_request_body import GetDeviceManagementIntentPerSettingContributingProfilesPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

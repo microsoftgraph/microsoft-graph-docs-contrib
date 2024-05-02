@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.submit_ti_indicators_post_request_body import SubmitTiIndicatorsPostRequestBody
+from msgraph.generated.security.tiindicators.submit_ti_indicators.submit_ti_indicators_post_request_body import SubmitTiIndicatorsPostRequestBody
 from msgraph.generated.models.ti_indicator import TiIndicator
 
 graph_client = GraphServiceClient(credentials, scopes)
