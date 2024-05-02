@@ -499,9 +499,9 @@ Content-Type: application/json
 
 ## Example 7: Search hidden content
 
-You can use the optional **includeHiddenContent** property to include normally hidden content in search results, such as archived content and SharePoint Embedded (RaaS). By default, this property is set to `false` that prevents hidden content from being returned.
+You can use the **includeHiddenContent** property to include normally hidden content in search results, such as archived content and SharePoint Embedded (RaaS). By default, this property is set to `false` that prevents hidden content from being returned.
 
-You can also include KQL to scope your query for hidden content to specific content types. For example, in SharePoint, administrators can mark sites as archived. If hidden content isn't available, the search results only include relevant nonhidden content, provided there're no other errors, and return a `200 OK` response code.
+You can also optionally include KQL to scope your query for hidden content to specific content types. For example, in SharePoint, administrators can mark sites as archived. If hidden content isn't available, the search results only include relevant nonhidden content, provided there're no other errors, and return a `200 OK` response code.
 
 The following example shows how to use the **queryTemplate** to scope the query with KQL and the **includeHiddenContent** property to include hidden content. You can also scope queries on SharePoint Embedded content using properties such as **ContainerTypeId**. For more information about container types in SharePoint Embedded, see [SharePoint Embedded Container Types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes).
 
