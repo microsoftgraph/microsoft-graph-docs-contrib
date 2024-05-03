@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.groups.item.calendarView.calendar_view_request_builder import CalendarViewRequestBuilder
+from msgraph.generated.groups.item.calendar_view.calendar_view_request_builder import CalendarViewRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

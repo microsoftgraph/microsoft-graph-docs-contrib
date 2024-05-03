@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new CloudPCItemRequestBuilderGetRequestConfiguration();
 $queryParameters = CloudPCItemRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult"];
+$queryParameters->select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult","allotmentDisplayName"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
