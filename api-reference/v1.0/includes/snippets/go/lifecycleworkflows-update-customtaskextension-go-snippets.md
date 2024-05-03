@@ -32,12 +32,10 @@ requestBody.SetEndpointConfiguration(endpointConfiguration)
 authenticationConfiguration := graphmodels.NewAzureAdPopTokenAuthentication()
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 clientConfiguration := graphmodels.NewCustomExtensionClientConfiguration()
+maximumRetries := int32(1)
+clientConfiguration.SetMaximumRetries(&maximumRetries) 
 timeoutInMilliseconds := int32(1000)
 clientConfiguration.SetTimeoutInMilliseconds(&timeoutInMilliseconds) 
-additionalData := map[string]interface{}{
-	"maximumRetries" : int32(1) , 
-}
-clientConfiguration.SetAdditionalData(additionalData)
 requestBody.SetClientConfiguration(clientConfiguration)
 callbackConfiguration := graphmodelsidentitygovernance.NewCustomTaskExtensionCallbackConfiguration()
 timeoutDuration , err := abstractions.ParseISODuration("PT20M")

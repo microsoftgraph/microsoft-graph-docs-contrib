@@ -11,23 +11,23 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Purview records management APIs help organizations manage retention and deletion of data to meet their legal obligations and compliance regulations, and increases efficiency by enabling the regular disposition of items that no longer have to be retained.
+The Microsoft Purview records management APIs help organizations manage retention and deletion of data to meet their legal obligations and compliance regulations. The records management APIs increase efficiency by enabling the regular disposition of items that no longer have to be retained.
 
 The records management solution is a part of the Microsoft Purview compliance center.
 
 ## Manage retention labels
-Many organizations need to manage their data to comply with industry regulations and internal policies, reduce risks of litigation or security breach, and let their employees effectively and agiley share knowledge that is current and relevant to them. Managing data commonly involves appropriately retaining or deleting different types of content. 
+Many organizations need to manage their data to comply with industry regulations and internal policies, reduce risks of litigation or security breach, and let their employees effectively share knowledge that is current and relevant to them. Managing data commonly involves retaining or deleting different types of content. 
 
 You can use [retention labels](security-retentionlabel.md) to configure retention and deletion settings for Microsoft 365 content. For example, you can set retention periods from when the content was labeled and you can set disposition review as the action at the end of the retention period. 
 
-In addition, you can use [file plan descriptors](security-fileplandescriptor.md) to supplement a retention label and improve the manageability and organization of Microsoft 365 content. Examples of file plan descriptors include [authority](security-authority.md), [citation](security-citation.md), and [department](security-department.md).
+In addition, you can use [file plan descriptors](security-fileplandescriptor.md) to supplement a retention label and improve the manageability and organization of Microsoft 365 content. Examples of file plan descriptors include [authority](security-fileplanauthority.md), [citation](security-fileplancitation.md), and [department](security-fileplandepartment.md).
 
 ## Trigger events for an existing label
 Some scenarios require starting a retention period for certain documents upon a specific event, such as an employee leaving an organization, a contract expiring, or the fiscal year ending. 
 
 You can use the [retentionLabel](security-retentionlabel.md) resource to support event-based retention, by setting the **retentionTrigger** property as `dateOfEvent` and associating the label with a [retentionEventType](security-retentioneventtype.md) resource. A [retentionEvent](security-retentionevent.md) is associated with a **retentionEventType** as well. When a triggering event happens, only content with that retention label applied is retained for the specified retention period.
 
-As an example: in an organization, when an employee leaves, employment records must be retained for 5 years. Use the **retentionLabel** and **retentionEvent** APIs to do the following for each employee record when the employee starts:
+For example, in an organization, when an employee leaves, employment records must be retained for 5 years. Use the **retentionLabel** and **retentionEvent** APIs to do the following for each employee record when the employee starts:
 1. Apply a **retentionLabel** configured as follows:
    - A display name of "Personnel information"
    - A **retentionDuration** of 1827 days (5 years)
