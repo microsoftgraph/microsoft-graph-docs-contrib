@@ -76,6 +76,9 @@ Bulk subscriptions for user presence can be created by setting the subscription 
 Change notifications for presence events are triggered when changes to a user's availability and activity are made.
 
 ### Example: Basic presence notifications
+> [!NOTE]
+> Since basic notifications do not include resource data besides the id of which resource data changed. A separate call to graph will be required to access user presence data.
+
 ```json
 {
   "value": [{

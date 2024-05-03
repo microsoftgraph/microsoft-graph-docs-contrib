@@ -38,7 +38,9 @@ To park a subscription, the argument must be URL encoded and used as the `joinWe
 > [!NOTE]
 > Replace `{JoinWebUrl}` with the actual URL-encoded value when you specifiy the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
-### Subscription payload sample
+Set `includeResourceData` to `true` and provide appropriate values for `encryptionCertificate` and `encryptionCertificateId` to subscribe to rich notifications. Basic notifications without change data will be sent if these properties are not provided.
+
+### Subscription to rich notifications payload sample
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -56,8 +58,13 @@ Content-Type: application/json
 }
 ```
 
-## Notifications with encrypted resource data
+> [!NOTE]
+> Subscription to basic notifications are available for change notifications for meetings calls. However, because basic notifications do not contain data related to the details of changes besides the id of resource and there is no Microsoft Graph API available to get meeting call data with this id, we highly recommend that subscriptions are created for rich notifications for change notifications in meeting calls. See **Rich notifications** section for more information.
 
+## Rich notifications
+Subscribing to rich notifications for change events in an active meeting call will allow details of changes encrypted in notification payload.
+
+### Rich notification payload example
 ```json
 {
   "value": [{
@@ -85,16 +92,14 @@ Content-Type: application/json
 }
 ```
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
-
-## Event notifications types
+#### Event notifications types
 
 The following are the supported meeting events:
 - callStarted - Events for when the meeting call has started.
 - callEnded - Events for when the meeting call has ended.
 - rosterUpdated - Events for when a participant joins and exits the call or lobby.
   - The **rosterUpdated** event contain a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **removedState** property represent participants that have exited the collection. See [participant](/graph/api/resources/participant) for more details on participants information.
-### Decrypted payload examples
+#### Decrypted payload examples
 
 #### CallStarted
 ```json
