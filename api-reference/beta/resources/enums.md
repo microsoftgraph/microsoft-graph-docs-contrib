@@ -140,6 +140,18 @@ Namespace: microsoft.graph
 |generallyAvailable|
 |unknownFutureValue|
 
+### requiredLicenses values
+
+|Member|
+|:---|
+|notApplicable|
+|microsoftEntraIdFree|
+|microsoftEntraIdP1|
+|microsoftEntraIdP2|
+|microsoftEntraIdGovernance|
+|microsoftEntraWorkloadId|
+|unknownFutureValue|
+
 ### recommendationCategory values
 
 | Member               |
@@ -2899,6 +2911,23 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |bound|
 |unbound|
+|unknownFutureValue|
+
+### conditionalAccessAudienceReason values
+
+| Member |
+| :----- |
+|none|
+|resourcelessRequest|
+|confidentialClientIdToken|
+|confidentialClientNonIdToken|
+|resourceMapping|
+|resourceMappingDefault|
+|scopeMapping|
+|scopeMappingDefault|
+|delegatedScope  |
+|firstPartyResourceDefault|
+|thirdPartyResourceDefault|
 |unknownFutureValue|
 
 ### persistentBrowserSessionMode values

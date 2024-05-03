@@ -29,7 +29,7 @@ For details, see [Disposition of content](/microsoft-365/compliance/disposition)
 |id|String|Unique ID for each stage. |
 |name|String|Name representing each stage within a collection. |
 |reviewersEmailAddresses|String collection|A collection of reviewers at each stage. |
-|stageNumber|Int32|The sequence number for each stage of the disposition review. |
+|stageNumber|String|The unique sequence number for each stage of the disposition review. |
 
 
 ## Relationships
@@ -49,7 +49,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.security.dispositionReviewStage",
   "id": "String (identifier)",
-  "stageNumber": "Integer",
+  "stageNumber": "String",
   "name": "String",
   "reviewersEmailAddresses": [
     "String"
