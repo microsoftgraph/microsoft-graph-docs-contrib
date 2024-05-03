@@ -2282,9 +2282,9 @@ items:
         href: ../../api/userflowlanguageconfiguration-list-defaultpages.md
       - name: List overridesPages
         href: ../../api/userflowlanguageconfiguration-list-overridespages.md
-    - name: Identity api connector
+    - name: Identity API connector
       items:
-      - name: Identity api connector
+      - name: Identity API connector
         href: ../../resources/identityapiconnector.md
       - name: List
         href: ../../api/identityapiconnector-list.md
