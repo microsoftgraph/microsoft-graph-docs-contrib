@@ -1,7 +1,7 @@
 ---
 title: "List domains"
 description: "Retrieve a list of domain objects."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

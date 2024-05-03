@@ -79,7 +79,7 @@ Forwarding options allows administrators to enable or disable the ability to ski
 
 ## Audit logs
 
-Monitoring and auditing of events within your environment is crucial for maintaining security, compliance, and operational efficiency. The Global Secure Access events are logged in the [directory logs](../resources/directoryaudit.md) and can be retrieved using associated APIs.
+Monitoring and auditing of events within your environment is crucial for maintaining security, compliance, and operational efficiency. The Global Secure Access events are logged in the [directory logs](../resources/directoryaudit.md) and [sign-in logs](../resources/signin.md) can be retrieved using associated APIs.
 
 ## Traffic logs and reports
 

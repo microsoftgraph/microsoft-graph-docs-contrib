@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.answer_post_request_body import AnswerPostRequestBody
+from msgraph.generated.communications.calls.item.answer.answer_post_request_body import AnswerPostRequestBody
 from msgraph.generated.models.app_hosted_media_config import AppHostedMediaConfig
 from msgraph.generated.models.modality import Modality
 from msgraph.generated.models.incoming_call_options import IncomingCallOptions

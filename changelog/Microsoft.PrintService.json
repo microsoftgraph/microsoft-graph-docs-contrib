@@ -19807,7 +19807,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printJob",
           "ChangeType": "Addition",
-          "Description": "Added [update](https://learn.microsoft.com/en-us/graph/api/printjob-update?view=graph-rest-beta\u0026preserve-view=true) support to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta\u0026preserve-view=true) resource.",
+          "Description": "Added [update](https://learn.microsoft.com/en-us/graph/api/printjob-update?view=graph-rest-beta&preserve-view=true) support to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) resource.",
           "Target": "printJob"
         }
       ],
