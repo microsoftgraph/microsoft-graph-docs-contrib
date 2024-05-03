@@ -59,7 +59,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Subscription to basic notifications are available for change notifications for meetings calls. However, because basic notifications do not contain data related to the details of changes besides the ID of resource and there is no Microsoft Graph API available to get meeting call data with this ID, we highly recommend that subscriptions are created for rich notifications for change notifications in meeting calls. For more information, see the  **Rich notifications** section.
+> Subscription to basic notifications are available for change notifications for meetings calls. However, because basic notifications do not contain data related to the details of changes besides the ID of resource and there is no Microsoft Graph API available to get meeting call data with this ID, we highly recommend that subscriptions are created for rich notifications for change notifications in meeting calls. For more information, see the  [**Rich notifications**](#rich-notifications) section.
 
 ## Rich notifications
 Subscribing to rich notifications for change events in an active meeting call allows details of changes encrypted in notification payload.
