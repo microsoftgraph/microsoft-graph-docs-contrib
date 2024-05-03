@@ -77,7 +77,7 @@ Change notifications for presence events are triggered when changes to a user's 
 
 ### Example: Basic presence notifications
 > [!NOTE]
-> Since basic notifications do not include resource data besides the id of which resource data changed. A separate call to graph will be required to access user presence data.
+> Since basic notifications do not include resource data besides the ID of which resource data changed. A separate call to graph is required to access user presence data.
 
 ```json
 {
