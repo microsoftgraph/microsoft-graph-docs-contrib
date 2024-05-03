@@ -62,7 +62,7 @@ The following JSON representation shows the resource type.
   },
   "sources": {
     "@odata.type": "microsoft.graph.profileSourceAnnotation"
-  },
+  }
 }
 ```
 
