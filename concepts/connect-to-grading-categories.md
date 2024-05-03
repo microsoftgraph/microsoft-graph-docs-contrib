@@ -12,6 +12,8 @@ This article provides guidance on setting up and using the grading categories fo
 
 Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from homework assignments and 40% from test assignments.
 
+Assignments contribute to their grading category in proportion to their point values, and their grading category modifies their contribution to the final grade. For example, for a class with two assignments in a grading category that contributes 50% of the class grade, if the first assignment has 10 points, and the second has 40 points, then the assignments will contribute 5% and 20%, respectively, to the total grade.
+
 Grading categories are defined on the class's settings. Every assignment that contributes to the final average grade needs to have a grading category.
 
 > [!NOTE]
@@ -256,6 +258,8 @@ You can delete a grading category when you no longer need it for your assignment
 
 - [Remove gradingCategory](/graph/api/educationassignment-delete-gradingcategory): Use this method to remove a grading category from the assignment settings and the grading interface.
 
+> **Note:** The assignments with the deleted grading category will retain the grading but teachers will not be able to assign the deleted grading category to other assignments.
+
 ```http
 DELETE /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
 ```
@@ -265,7 +269,31 @@ DELETE /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$
 The following example shows a request. 
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/0bcb37af-3676-47ef-ae93-8de22ce5ff1d/gradingCategory/$ref
+PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
+Content-type: application/json
+
+Request Body
+{
+    "gradingCategories@delta": [
+        {
+            "id": "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e",
+            "displayName": "Changing this grading category's name"
+        },
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#gradingCategories/$deletedEntity",
+            "id": "e2a86277-24f9-4f29-8196-8c83fc69d00d",
+            "reason": "Deleting this grading category"
+        },
+        {
+            "displayName": "Adding a new grading category 01",
+            "percentageWeight": 30
+        },
+        {
+            "displayName": "Adding a new grading category 02",
+            "percentageWeight": 10
+        }
+    ]
+}
 ```
 
 ### Response
@@ -274,6 +302,56 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 204 No Content
+```
+
+## Error while Delete grading category using Delta Payload
+
+When you try to delete one of the grading category using the delta payload without replacing it with other grading category to make the sum of all grading categories to 100, the error displayed in response is shown in this section.
+
+```http
+PATCH /education/classes/{classId}/assignmentSettings
+```
+
+### Request
+
+The following example shows a request. 
+
+```http
+PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
+Content-type: application/json
+
+Request Body
+{
+    "gradingCategories@delta": [
+        {
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#gradingCategories/$deletedEntity",
+            "id": "426f653d-c383-4758-8790-4a1fe53116b1",
+            "reason": "Deleting this grading category"
+        }
+    ]
+}
+```
+
+### Response
+
+The following example shows the response.
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "invalidRequestBody",
+            "message": "GradingCategory weights must sum to 100.",
+            "date": "2024-05-03T19:00:25",
+            "request-id": "1d7a1230-f43e-4053-9313-f835d020772a",
+            "client-request-id": "8248d438-b6b4-cee0-0121-a04cc08ba4d8"
+        }
+    }
+}
 ```
 
 ## Permissions
