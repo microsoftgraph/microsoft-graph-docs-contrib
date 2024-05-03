@@ -54,7 +54,7 @@ The following table lists the parameters that are required when you call this fu
 
 | Pattern                | Supported | Syntax                                                  | Notes                                                                                                        |
 | ---------------------- | :-------: | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page.
+| Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page. |
 
 ## Known Issues
 
