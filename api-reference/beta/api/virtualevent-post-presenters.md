@@ -55,7 +55,7 @@ You can specify the following properties when you create a presenter on a **virt
 
 |Property|Type|Description|
 |:---|:---|:---|
-| identity | [communicationsUserIdentity](../resources/communicationsuseridentity.md) or [communicationsGuestIdentity](../resources/communicationsguestidentity.md)  | Identity information of the presenter.|
+|identity|[identity](../resources/identity.md)|Identity information of the presenter. The supported identites are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 
 ## Response
 
@@ -65,11 +65,12 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 
 ### Example 1: Create an in-tenant presenter
 
+The following example shows how to create an internal user as a presenter on a **virtualEventTownhall**. 
+
 #### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventpresenter_internal_",
@@ -83,8 +84,8 @@ Content-Type: application/json
 {
   "identity": {
     "@odata.type": "#microsoft.graph.communicationsUserIdentity",
-    "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
-  },
+    "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b"
+  }
 }
 ```
 
@@ -116,8 +117,9 @@ Content-Type: application/json
 }
 ```
 
-
 ### Example 2: Create an external presenter
+
+The following example shows how to create an external user as a presenter on a **virtualEventTownhall**. 
 
 #### Request
 
@@ -137,7 +139,7 @@ Content-Type: application/json
   "identity": {
     "@odata.type": "#microsoft.graph.communicationsGuestIdentity",
     "displayName": "Guest Speaker",
-    "email": "guest.speaker@microsoft.com"
+    "email": "guest.speaker@contoso.com"
   }
 }
 ```
@@ -159,13 +161,13 @@ Content-Type: application/json
 
 {
   "id": "184975c0-4096-4a02-b251-c48546691c42",
-  "email": "guest.speaker@microsoft.com,
+  "email": "guest.speaker@contoso.com,
   "presenterDetails": null,
   "identity": {
       "@odata.type": "#microsoft.graph.communicationsGuestIdentity",
       "id": "184975c0-4096-4a02-b251-c48546691c42",
       "displayName": "Guest Speaker",
-      "email": "guest.speaker@microsoft.com"
+      "email": "guest.speaker@contoso.com"
   }
 }
 ```
