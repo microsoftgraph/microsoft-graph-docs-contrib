@@ -59,7 +59,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Subscription to basic notifications are available for change notifications for meetings calls. However, because basic notifications do not contain data related to the details of changes besides the ID of resource and there is no Microsoft Graph API available to get meeting call data with this ID, we highly recommend that subscriptions are created for rich notifications for change notifications in meeting calls. For more information, see the  [**Rich notifications**](#rich-notifications) section.
+> Subscription to basic notifications are available for change notifications for meeting calls. However, because basic notifications do not contain data related to the details of changes besides the ID of the resource and there is no Microsoft Graph API available to get meeting call data with this ID, we highly recommend that subscriptions are created for rich notifications for change notifications in meeting calls. For more information, see the [Rich notifications](#rich-notifications) section.
 
 ## Rich notifications
 Subscribing to rich notifications for change events in an active meeting call allows details of changes encrypted in notification payload.
@@ -98,7 +98,7 @@ The following are the supported meeting events:
 - callStarted - Events for when the meeting call started.
 - callEnded - Events for when the meeting call ended.
 - rosterUpdated - Events for when a participant joins and exits the call or lobby.
-  - The **rosterUpdated** event contains a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **removedState** property represent participants that exited the collection. See [participant](/graph/api/resources/participant) for more details on participants information.
+  - The **rosterUpdated** event contains a collection of meeting call participant changes in **participants@delta**. This collection depicts user participant changes in the meeting call roster. Participants with the **removedState** property represent participants who exited the collection. For more information, see [participant](/graph/api/resources/participant).
 #### Decrypted payload examples
 
 #### CallStarted
