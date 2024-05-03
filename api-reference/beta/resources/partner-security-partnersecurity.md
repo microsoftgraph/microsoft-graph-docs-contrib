@@ -29,6 +29,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |securityAlerts|[microsoft.graph.partner.security.partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) collection|The security alerts or a vulnerability of a CSP partner's customer that the partner must be made aware of for further action.|
+|securityScore|[microsoft.graph.partner.security.securityScore](../resources/partner-security-partnerSecurityScore.md) singleton|The security score calculated for CSP partner and their customers.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
