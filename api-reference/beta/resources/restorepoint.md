@@ -7,13 +7,13 @@ ms.subservice: backup-and-restore
 author: "tkanaujia, maniksingh"
 ---
 
-# process resource type
+# restorePoint resource type
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-RestorePoints represent the timestamp when an artifact is protected (as per /graph/api/resource/protectionpolicy).
+RestorePoints represent the timestamp when an artifact is protected [](../resources/protectionpolicy.md).
 
 ## Properties
 
@@ -21,8 +21,14 @@ RestorePoints represent the timestamp when an artifact is protected (as per /gra
 |:---------------|:--------|:----------|
 |protectionDateTime|DateTimeOffset|Date time when restore point was created.|
 |expirationDateTime|DateTimeTimeZone|Expiration date time of the restore point.|
-|tags|RestorePointTags|Specifies the preference of of restore points|
+|tags|[restorePointTags](../resources/restorepoint.md#restorePointTags-values)|Specifies the preference of of restore points.|
 
+### restorePointTags values
+|Member | Description |
+|:------|:------------|
+|none   | No Tag      |
+|fastRestore | Tag to fast restore the restore point|
+|unknownFutureValue | Marker value for future compatibility|
 
 ## JSON representation
 
@@ -33,7 +39,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.restorepoint"
+  "@odata.type": "microsoft.graph.restorePoint"
 }-->
 
 ```json
@@ -50,7 +56,7 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "process resource",
+  "description": "restorePoint resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
