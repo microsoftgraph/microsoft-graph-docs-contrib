@@ -2,6 +2,56 @@
   "changelog": [
     {
       "ChangeList": [
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Property",
+              "ChangedApiName": "crossRegionDisasterRecoverySetting",
+              "ChangeType": "Addition",
+              "Description": "Added the **crossRegionDisasterRecoverySetting** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
+              "Target": "cloudPcUserSetting"
+          },
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcCrossRegionDisasterRecoverySetting",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcCrossRegionDisasterRecoverySetting"
+          },
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcDisasterRecoveryAzureConnectionSetting",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcDisasterRecoveryAzureConnectionSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryAzureConnectionSetting?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcDisasterRecoveryAzureConnectionSetting"
+          },
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting"
+          },
+          {
+              "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcDisasterRecoveryNetworkSetting",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcDisasterRecoveryNetworkSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDisasterRecoveryNetworkSetting?view=graph-rest-beta) resource type.",
+              "Target": "cloudPcDisasterRecoveryNetworkSetting"
+          }
+      ],
+      "Id": "9cbdf346-f050-4ca6-bb06-64ceb8146547",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-03-27T02:11:25.5385096Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "ab4407dd-6951-4347-85df-29d7b877d8e2",
           "ApiChange": "Property",
