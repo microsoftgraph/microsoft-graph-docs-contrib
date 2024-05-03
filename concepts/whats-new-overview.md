@@ -93,6 +93,10 @@ Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint i
 - Added the `nativeAuth` member as a supported protocol type to the **authenticationProtocol** in the [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) resource.
 - The previously deprecated **activeUsersBreakdownMetric** resource and its associated APIs are now retired. To get insights into daily and monthly user activity on apps registered in your tenant that's configured for Microsoft Entra External ID for customers, use the [activeUsersMetric resource type](/graph/api/resources/activeusersmetric?view=graph-rest-beta&preserve-view=true) and its associated APIs.
 
+### Security | eDiscovery
+
+Export [results](/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-beta&preserve-view=true) and a [report](/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-beta&preserve-view=true) from an [ediscoverySearch](/graph/api/resources/security-ediscoverysearch?view=graph-rest-beta&preserve-view=true).
+
 ### Security | Legacy alerts
 
 The `/security/alerts` endpoint is deprecated and will stop returning data on **April 10, 2026**.
@@ -100,10 +104,6 @@ The `/security/alerts` endpoint is deprecated and will stop returning data on **
 ### Security | Threat intelligence indicator
 
 The `/security/tiindicators` endpoint is deprecated and will stop returning data on **April 10, 2026**.
-
-### Security | eDiscovery
-
-Export [results](/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-beta&preserve-view=true) and a [report](/graph/api/security-ediscoverysearch-exportreport?view=graph-rest-beta&preserve-view=true) from an [ediscoverySearch](/graph/api/resources/security-ediscoverysearch?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications | Calls and online meetings
 
