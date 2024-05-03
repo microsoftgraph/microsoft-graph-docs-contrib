@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.policies.authenticationStrengthPolicies.authentication_strength_policies_request_builder import AuthenticationStrengthPoliciesRequestBuilder
+from msgraph.generated.policies.authentication_strength_policies.authentication_strength_policies_request_builder import AuthenticationStrengthPoliciesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

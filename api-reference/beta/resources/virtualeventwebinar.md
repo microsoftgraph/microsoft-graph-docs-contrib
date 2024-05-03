@@ -52,9 +52,9 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Value | Description |
 | ----- | ----------- |
-| draft | The webinar is in draft and only visible to the organizer. |
-| published | The organizer published the webinar and it's visible to the audience. |
-| canceled | The organizer canceled the webinar. |
+| draft | The virtual event is in draft and only visible to the organizer. |
+| published | The organizer published the virtual event and it's visible to the audience. |
+| canceled | The organizer canceled the virtual event. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
@@ -89,3 +89,7 @@ The following JSON representation shows the resource type.
   "status": "String"
 }
 ```
+
+## Related content
+
+[List meetingAttendanceReports](../api/meetingattendancereport-list.md)

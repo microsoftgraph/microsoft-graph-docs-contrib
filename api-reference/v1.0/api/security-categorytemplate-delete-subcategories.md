@@ -1,16 +1,16 @@
 ---
-title: "Delete subCategoryTemplate"
-description: "Delete a subCategoryTemplate object."
+title: "Delete subcategoryTemplate"
+description: "Delete a subcategoryTemplate object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Delete subCategoryTemplate
+# Delete subcategoryTemplate
 Namespace: microsoft.graph.security
 
-Delete a [subCategoryTemplate](../resources/security-subcategorytemplate.md) object.
+Delete a [subcategoryTemplate](../resources/security-subcategorytemplate.md) object.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /security/labels/categories/{categoryTemplateId}/subCategories/{subCategoryTemplateId}/$ref
+DELETE /security/labels/categories/{categoryTemplateId}/subcategories/{subcategoryTemplateId}/$ref
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ Here's an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/security/labels/categories/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5/subCategories/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5
+DELETE https://graph.microsoft.com/v1.0/security/labels/categories/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5/subcategories/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
 # [C#](#tab/csharp)
