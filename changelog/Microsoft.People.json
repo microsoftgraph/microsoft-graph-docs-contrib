@@ -17,6 +17,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **sources** property to the [itemFacet](https://learn.microsoft.com/en-us/graph/api/resources/itemFacet?view=graph-rest-beta) resource.",
           "Target": "itemFacet"
+        },
+        {
+          "Id": "ba51d4ae-b58a-4038-bb67-a1d76c56f327",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileSource](https://learn.microsoft.com/en-us/graph/api/resources/profileSource?view=graph-rest-beta) resource.",
+          "Target": "profileSource"
         }
       ],
       "Id": "ba51d4ae-b58a-4038-bb67-a1d76c56f327",
