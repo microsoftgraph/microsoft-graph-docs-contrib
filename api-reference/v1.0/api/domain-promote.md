@@ -1,7 +1,7 @@
 ---
 title: "domain: promote"
 description: "Promote a verified subdomain to the root domain."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

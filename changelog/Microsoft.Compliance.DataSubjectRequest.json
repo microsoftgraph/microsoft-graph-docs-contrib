@@ -2,7 +2,7 @@
   "changelog": [
     {
       "ChangeList": [
-         {
+        {
           "Id": "269e5da0-1864-497f-be83-ec8a9442ee66",
           "ApiChange": "Member",
           "ChangedApiName": "approval",
