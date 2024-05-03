@@ -157,7 +157,7 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
 - attachment - Represents the position of an attachment reference.
 - systemEventMessage - When the **content** property of the **itemBody** resource is set to `<systemEventMessage/>`, the message represents a special event. For more information, see [Get system messages](/graph/system-messages).
 - emoji - When body of the message contains an emoji, the `$"<emoji id="IdOfTheEmoji" alt="AlternateRepresentationOfEmoji" title="TitleOfEmoji"></emoji>"` element represents the properties of an emoji:
-    - id - IThe D of the emoji.
+    - id - The ID of the emoji.
     - alt - An alternate representation for the emoji; for example, Unicode.
     - title - A title for the emoji.
 
@@ -251,7 +251,9 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
 }
 ```
 
-**Example: A message with an emoji (Only available in beta)**
+**Example: A message with a custom emoji**
+
+>**Note:** Custom emojis are only available on the `/beta` endpoint.
 
 ```json
 {
@@ -642,7 +644,10 @@ The **reactions** property represents reactions from other users on the message,
 
 The following example shows a message with reactions.
 
+>**Note:** The display name isn't always present.
+
 ```json
+{
     "reactions": [
         {
             "reactionType": "like",
@@ -658,11 +663,17 @@ The following example shows a message with reactions.
             }
         }
     ]
+}
 ```
 
-The following example shows a message with custom reaction (Only available in beta).
+The following example shows a message with a custom reaction.
+
+>**Note:**
+> * Custom reactions are only available on the `/beta` endpoint.
+> * The display name isn't always present.
 
 ```json
+{
     "reactions": [
         {
             "reactionType": "custom",
@@ -680,9 +691,8 @@ The following example shows a message with custom reaction (Only available in be
             }
         }
     ]
+}
 ```
-
-> **Note:** The display name isn't always present.
 
 ### replyToId
 
