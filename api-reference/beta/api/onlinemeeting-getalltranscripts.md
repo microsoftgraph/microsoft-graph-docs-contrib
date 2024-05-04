@@ -56,10 +56,9 @@ The following table lists the parameters that are required when you call this fu
 | ---------------------- | :-------: | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | Page size              |     ✓     | `top`                                                   | Allows the caller to specify the maximum number of objects per page. |
 
-## Known Issues
-
-> 1. The `top` query may not return a nextLink. To obtain the nextLink, avoid using the `top` query.
-> 2. When a meeting does not have any spoken words, accessing the transcript content URL returns an error.
+> [!NOTE]
+> - The `top` query might not return a nextLink. To get the nextLink, avoid using the `top` query.
+> - When a meeting doesn't have any spoken words, accessing the transcript content URL returns an error.
 
 
 ## Request headers
