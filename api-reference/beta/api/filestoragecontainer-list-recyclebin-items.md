@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_recyclebin"
+  "name": "list_recyclebin_items"
 }
 -->
 ``` http
@@ -72,7 +72,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.recyclebinitem)"
+  "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
 ``` http
