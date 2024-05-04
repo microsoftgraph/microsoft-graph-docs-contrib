@@ -41,7 +41,7 @@ Represents a location where multiple users or a group of users can store files a
 |[Update fileStorageContainer column](../api/filestoragecontainer-update-column.md)|[columnDefinition](../resources/columndefinition.md)|Update column in a fileStorageContainer.|
 |[Delete fileStorageContainer column](../api/filestoragecontainer-delete-column.md)|None|Delete column  from a fileStorageContainer.|
 |[Get fileStorageContainer column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get column from a fileStorageContainer.|
-|[Restore fileStorageContainer recyclebin items](../api/filestoragecontainer-restore-recyclebin-items.md) collection|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Restore recycle bin items in a fileStorageContainer.|
+|[Restore fileStorageContainer recyclebin items](../api/filestoragecontainer-restore-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
 |[Delete fileStorageContainer recyclebin items](../api/filestoragecontainer-delete-recyclebin-items.md)|None|Delete recycle bin items from a fileStorageContainer.|
 |[List fileStorageContainer recyclebin items](../api/filestoragecontainer-get-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 
