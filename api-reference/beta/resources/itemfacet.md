@@ -3,7 +3,8 @@ title: "itemFacet resource type"
 description: "itemFacet resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: "people"
+ms.service: "Microsoft Graph"
+ms.subservice: "People"
 doc_type: "resourcePageType"
 ---
 
