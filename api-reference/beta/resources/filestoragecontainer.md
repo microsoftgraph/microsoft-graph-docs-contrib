@@ -26,22 +26,23 @@ Represents a location where multiple users or a group of users can store files a
 |[Activate fileStorageContainer](../api/filestoragecontainer-activate.md)|None|Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Restore fileStorageContainer](../api/filestoragecontainer-restore.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Restore a deleted [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Permanent Delete fileStorageContainer](../api/filestoragecontainer-permanentdelete.md)|None|Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
+|[Remove deleted fileStorageContainer](../api/filestoragecontainer-delete-deletedcontainers.md)|None|Remove a deleted [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md)|Get the drive resource from a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md)| List permissions on a fileStorageContainer.|
 |[Create permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Add permission to a fileStorageContainer.|
 |[Update permissions](../api/filestoragecontainer-update-permissions.md)|[permission](../resources/permission.md)|Update permission on a fileStorageContainer.|
-|[Delete permissions](../api/filestoragecontainer-delete-permissions.md)|[permission](../resources/permission.md)|Delete permission from a fileStorageContainer.|
+|[Delete permissions](../api/filestoragecontainer-delete-permissions.md)|None|Delete permission from a fileStorageContainer.|
 |[List fileStorageContainer custom property](../api/filestoragecontainer-list-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|List custom properties of the fileStorageContainer.|
 |[Create fileStorageContainer custom property](../api/filestoragecontainer-post-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Create custom property to the fileStorageContainer.|
 |[Update fileStorageContainer custom property](../api/filestoragecontainer-update-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Update custom property on a fileStorageContainer.|
-|[Delete fileStorageContainer custom property](../api/filestoragecontainer-delete-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Delete custom property from a fileStorageContainer.|
+|[Delete fileStorageContainer custom property](../api/filestoragecontainer-delete-customproperty.md)|None|Delete custom property from a fileStorageContainer.|
 |[List fileStorageContainer columns](../api/filestoragecontainer-list-columns.md)|[columnDefinition](../resources/columndefinition.md)|List columns in a fileStorageContainer.|
 |[Create fileStorageContainer column](../api/filestoragecontainer-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create columnDefinition for afileStorageContainer.|
 |[Update fileStorageContainer column](../api/filestoragecontainer-update-column.md)|[columnDefinition](../resources/columndefinition.md)|Update column in a fileStorageContainer.|
-|[Delete fileStorageContainer column](../api/filestoragecontainer-delete-column.md)|[columnDefinition](../resources/columndefinition.md)|Delete column  from a fileStorageContainer.|
+|[Delete fileStorageContainer column](../api/filestoragecontainer-delete-column.md)|None|Delete column  from a fileStorageContainer.|
 |[Get fileStorageContainer column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get column from a fileStorageContainer.|
 |[Restore fileStorageContainer recyclebin items](../api/filestoragecontainer-restore-recyclebin-items.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Restore recyclebin items in a fileStorageContainer.|
-|[Delete fileStorageContainer recyclebin items](../api/filestoragecontainer-delete-recyclebin-items.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Delete recyclebin items from a fileStorageContainer.|
+|[Delete fileStorageContainer recyclebin items](../api/filestoragecontainer-delete-recyclebin-items.md)|None|Delete recyclebin items from a fileStorageContainer.|
 |[List fileStorageContainer recyclebin items](../api/filestoragecontainer-get-recyclebin-items.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|List recyclebin items in a fileStorageContainer.|
 
 
