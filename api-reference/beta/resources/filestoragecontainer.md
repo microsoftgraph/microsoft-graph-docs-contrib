@@ -19,13 +19,13 @@ Represents a location where multiple users or a group of users can store files a
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List fileStorageContainers](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Get a list of the [fileStorageContainer](../resources/filestoragecontainer.md) objects and their properties.|
-|[Create fileStorageContainer](../api/filestoragecontainer-post-filestoragecontainers.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object.|
+|[Create fileStorageContainer](../api/filestoragecontainer-post.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get fileStorageContainer](../api/filestoragecontainer-get.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Read the properties and relationships of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Update fileStorageContainer](../api/filestoragecontainer-update.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Delete fileStorageContainer](../api/filestorage-delete-containers.md)|None|Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Activate fileStorageContainer](../api/filestoragecontainer-activate.md)|None|Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Restore fileStorageContainer](../api/filestoragecontainer-restore.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Restore a deleted [fileStorageContainer](../resources/filestoragecontainer.md) object.|
-|[Remove deleted fileStorageContainer](../api/filestoragecontainer-delete-deletedcontainers.md)|None|Remove a deleted [fileStorageContainer](../resources/filestoragecontainer.md) object.|
+|[Remove deleted fileStorageContainer](../api/filestorage-delete-deletedcontainers.md)|None|Remove a deleted [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Permanent Delete fileStorageContainer](../api/filestoragecontainer-permanentdelete.md)|None|Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md)|Get the drive resource from a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md) collection| List permissions on a fileStorageContainer.|
@@ -43,7 +43,7 @@ Represents a location where multiple users or a group of users can store files a
 |[Get fileStorageContainer column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get column from a fileStorageContainer.|
 |[Restore fileStorageContainer recyclebin items](../api/filestoragecontainer-restore-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
 |[Delete fileStorageContainer recyclebin items](../api/filestoragecontainer-delete-recyclebin-items.md)|None|Delete recycle bin items from a fileStorageContainer.|
-|[List fileStorageContainer recyclebin items](../api/filestoragecontainer-get-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
+|[Get fileStorageContainer recyclebin items](../api/filestoragecontainer-list-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 
 
 ## Properties
@@ -73,7 +73,6 @@ Represents a location where multiple users or a group of users can store files a
 |recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
 
 ### roles property values
-
 |Value|Description|
 |:---|:---|
 |reader|Readers can read **fileStorageContainer** metadata and the content inside.|
