@@ -45,7 +45,6 @@ Represents a location where multiple users or a group of users can store files a
 |[Delete fileStorageContainer recyclebin items](../api/filestoragecontainer-delete-recyclebin-items.md)|None|Delete recycle bin items from a fileStorageContainer.|
 |[Get fileStorageContainer recyclebin items](../api/filestoragecontainer-list-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
