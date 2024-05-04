@@ -65,7 +65,6 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -78,4 +77,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
