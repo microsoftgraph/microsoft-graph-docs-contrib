@@ -143,21 +143,21 @@ For discovery (search scenarios), note the following:
 - When you use a property as a label that contains large content, you might increase search latency and have to wait longer for search to return results.
 - Especially in the scenario where you configure a custom vertical that allows search over more than one connection, the search results greatly benefit from appointing as many labels as possible.
 
-### Rank Hints 
+### Rank hints 
 
-Rank Hints can be applied to textual properties that are not mapped to semantic labels and are set as searchable. They can be set in a range from **default** to **very high** in the Search Admin portal. The hints are consumed with other attributes of each item, to return the most relevant items for a given query. 
+Rank hints can be applied to textual properties that are not mapped to semantic labels and are set as searchable. They can be set in a range from **default** to **very high** in the Search Admin portal. The hints are consumed with other attributes of each item, to return the most relevant items for a given query. 
 
-On the **Search and Intelligence** tab in the Admin portal, go to **Customization** > **Relevance Tuning**. 
+On the **Search and intelligence** tab in the Admin portal, go to **Customization** > **Relevance tuning**. 
 
-![Relevance tuning -1](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/6f58a0b7-a558-4709-803b-fcbae9cb4eb3)
+![Screenshot of the Search and intelligence tab with Relevance Tuning highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/6f58a0b7-a558-4709-803b-fcbae9cb4eb3)
 
-To see a list of connections that can be tuned, choose **View Details** > **Configure Rank Hints**.  
+To see a list of connections that can be tuned, choose **View Details** > **Configure rank hints**.  
 
-![Relevance tuning -2](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/7472fceb-6062-4079-8205-ce165ff12788)
+![Screenshot of the Relevance tuning tab with Configure rank hints highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/7472fceb-6062-4079-8205-ce165ff12788)
 
 Change the importance weights on available source properties.
 
-![Relevance tuning -3 Rank hints](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/51f79ff9-5a1f-405c-86ba-2aad677fb95b)
+![Screenshot of the Relevance tuning tab showing importance weights for a selected property](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/51f79ff9-5a1f-405c-86ba-2aad677fb95b)
 
 
 
