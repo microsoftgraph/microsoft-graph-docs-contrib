@@ -11273,8 +11273,34 @@ items:
                 href: api/filestoragecontainer-update.md
               - name: Delete file storage container
                 href: api/filestorage-delete-containers.md
+              - name: List deleted file storage containers
+                href: api/filestorage-list-deletedcontainers.md
+              - name: Get deleted file storage container
+                href: api/filestorage-get-deletedcontainers.md
+              - name: Permanently delete file storage container
+                href: api/filestoragecontainer-permanentdelete.md
+              - name: Remove deleted file storage container
+                href: api/filestorage-delete-deletedcontainer.md
+              - name: Restore deleted file storage container
+                href: api/filestoragecontainer-restore.md
               - name: Activate file storage container
                 href: api/filestoragecontainer-activate.md
+              - name: Delete recycle bin items
+                href: api/filestoragecontainer-delete-recyclebini-tems.md
+              - name: Get recycle bin items
+                href: api/filestoragecontainer-list-recyclebin-items.md
+              - name: Restore recycle bin items
+                href: api/filestoragecontainer-restore-recyclebin-items.md
+              - name: List columns
+                href: api/filestoragecontainer-list-columns.md
+              - name: Add column
+                href: api/filestoragecontainer-post-columns.md
+              - name: Update column
+                href: api/filestoragecontainer-update-column.md
+              - name: Get column
+                href: api/filestoragecontainer-get-column.md
+              - name: Delete file storage container column
+                href: api/filestoragecontainer-delete-column.md
               - name: List permissions
                 href: api/filestoragecontainer-list-permissions.md
               - name: Add permissions
