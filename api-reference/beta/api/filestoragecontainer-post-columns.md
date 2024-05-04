@@ -54,7 +54,7 @@ Only the following type-related properties are supported and they are mutually e
 |boolean|[booleanColumn](../resources/booleancolumn.md)|This column stores boolean values.|
 |choice|[choiceColumn](../resources/choicecolumn.md)|This column stores data from a list of choices.|
 |currency|[currencyColumn](../resources/currencycolumn.md)|This column stores currency values.|
-|dateTime|[.dateTimeColumn](../resources/datetimecolumn.md)|This column stores DateTime values.|
+|dateTime|[dateTimeColumn](../resources/datetimecolumn.md)|This column stores DateTime values.|
 |hyperlinkOrPicture|[hyperlinkOrPictureColumn](../resources/hyperlinkorpicturecolumn.md)|This column stores hyperlink or picture values.|
 |number|[numberColumn](../resources/numbercolumn.md)|This column stores number values.|
 |personOrGroup|[personOrGroupColumn](../resources/personorgroupcolumn.md)|This column stores Person or Group values.|
