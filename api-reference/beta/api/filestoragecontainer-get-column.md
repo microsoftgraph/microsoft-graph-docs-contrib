@@ -1,20 +1,19 @@
 ---
-title: "Delete fileStorageContainer"
-description: "Delete a fileStorageContainer object."
+title: "Get column"
+description: "Get a column from a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Delete fileStorageContainer
+# Get column
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. If you delete fileStorageContainer using this method, they are moved to the deleted container collection and can be restored afterward.
+Get the properties of a column represented as a [columnDefinition](../resources/columndefinition.md) in a [fileStorageContainer](../resources/filestoragecontainer.md). 
 
 ## Permissions
 
@@ -22,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestorage-delete-containers-permissions"
+  "name": "filestoragecontainer-get-columns-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestorage-delete-containers-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-get-columns-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{containerId}
+GET /storageContainers/{containerId}/columns/{column-id}
 ```
 
 ## Request headers
@@ -43,13 +42,14 @@ DELETE /storage/fileStorage/containers/{containerId}
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
+
 ## Request body
 
 Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and a [columnDefinition](../resources/columndefinition.md) object in the response body.
 
 ## Examples
 
@@ -58,11 +58,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainer"
+  "name": "get_columndefinition_for_fileStorageContainer"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
+GET https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
 ```
 
 
@@ -72,10 +72,28 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.columndefinition"
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "description": "test",
+  "displayName": "Title",
+  "enforceUniqueValues": false,
+  "hidden": false,
+  "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
+  "indexed": false,
+  "name": "Title",
+  "text": {
+    "allowMultipleLines": false,
+    "appendChangesToExistingText": false,
+    "linesForEditing": 0,
+    "maxLength": 255
+  }
+}
 ```
 

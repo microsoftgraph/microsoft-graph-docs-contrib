@@ -1,20 +1,19 @@
 ---
-title: "Delete fileStorageContainer"
-description: "Delete a fileStorageContainer object."
+title: "Delete column"
+description: "Delete a columnDefinition from a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Delete fileStorageContainer
+# Delete column
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. If you delete fileStorageContainer using this method, they are moved to the deleted container collection and can be restored afterward.
+Delete a [columnDefinition](../resources/columndefinition.md) from a [fileStorageContainer](../resources/filestoragecontainer.md). 
 
 ## Permissions
 
@@ -22,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestorage-delete-containers-permissions"
+  "name": "filestoragecontainer-delete-columns-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestorage-delete-containers-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-columns-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{containerId}
+DELETE /storageContainers/{containerId}/columns/{column-id}
 ```
 
 ## Request headers
@@ -58,11 +57,26 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainer"
+  "name": "delete_columndefinition_for_fileStorageContainer"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
+DELETE https://graph.microsoft.com/bet/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
+Content-Type: application/json
+
+{
+  "description": "test",
+  "enforceUniqueValues": false,
+  "hidden": false,
+  "indexed": false,
+  "name": "Title",
+  "text": {
+    "allowMultipleLines": false,
+    "appendChangesToExistingText": false,
+    "linesForEditing": 0,
+    "maxLength": 255
+  }
+}
 ```
 
 

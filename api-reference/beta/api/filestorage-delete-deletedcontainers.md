@@ -1,20 +1,19 @@
 ---
-title: "Delete fileStorageContainer"
-description: "Delete a fileStorageContainer object."
+title: "Remove deleted fileStorageContainer"
+description: "Remove a deleted fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Delete fileStorageContainer
+# Remove deleted fileStorageContainer
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. If you delete fileStorageContainer using this method, they are moved to the deleted container collection and can be restored afterward.
+Permanently remove a [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection. If you remove fileStorageContainers using this method, they are permanently removed from the deleted container collection. Therefore, they cannot be restored afterward.
 
 ## Permissions
 
@@ -22,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestorage-delete-containers-permissions"
+  "name": "filestorage-delete-deletedcontainers-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestorage-delete-containers-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestorage-delete-deletedcontainers-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{containerId}
+DELETE /deletedStorageContainers/{containerId}
 ```
 
 ## Request headers
@@ -58,11 +57,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainer"
+  "name": "remove_deleted_filestoragecontainer"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
+DELETE https://graph.microsoft.com/beta/deletedStorageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
 ```
 
 
@@ -72,7 +71,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
 }
 -->
 ``` http

@@ -1,20 +1,19 @@
 ---
-title: "Delete fileStorageContainer"
-description: "Delete a fileStorageContainer object."
+title: "Delete recycleBin items"
+description: "Delete items from fileStorageContainer recycleBin."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# Delete fileStorageContainer
+# Create recycleBin
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. If you delete fileStorageContainer using this method, they are moved to the deleted container collection and can be restored afterward.
+Permanently delete [recycleBinItem](../resources/recyclebinitem.md) objects from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). The items deleted by this method cannot be restored.
 
 ## Permissions
 
@@ -22,10 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestorage-delete-containers-permissions"
+  "name": "filestoragecontainer-delete-recyclebin-items-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestorage-delete-containers-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-recyclebin-items-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{containerId}
+POST /storageContainers/{containerId}/recycleBin/items/delete
 ```
 
 ## Request headers
@@ -42,10 +41,12 @@ DELETE /storage/fileStorage/containers/{containerId}
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the [recycleBinItem](../resources/recyclebinitem.md) objects to delete. 
+
 
 ## Response
 
@@ -58,13 +59,18 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainer"
+  "name": "delete_filestoragecontainer_recyclebin_items",
+  "@odata.type": Collection("microsoft.graph.recyclebinitem")
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
-```
+POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/delete
+Content-Type: application/json
 
+{
+  "ids": ["5d625d33-338c-4a77-a98a-3e287116440c", "73133853-48f2-4956-bc4a-03f8d1675042"]
+}
+```
 
 ### Response
 
