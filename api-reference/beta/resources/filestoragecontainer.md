@@ -92,7 +92,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fileStorageContainer",
-  {
   "id": "string (identifier)",
   "displayName": "string",
   "description": "string",
