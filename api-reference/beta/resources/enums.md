@@ -10,6 +10,13 @@ author: "MSGraphDocsvTeam"
 # Enum values
 
 Namespace: microsoft.graph
+### fileStorageContainerOwnershipType
+
+| Member             |
+|:-------------------|
+| tenantOwned        |
+| userOwned          |
+| unknownfuturevalue |
 
 ### fileStorageContainerStatus values
 
