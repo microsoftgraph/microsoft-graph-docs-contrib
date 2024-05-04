@@ -19,7 +19,7 @@ Returns information specific to the calling user for this drive item.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accessOperations|[driveItemAccessOperationsViewpoint](../resources/driveitemaccessoperationsviewpoint.md)| Indicates if the user can perform the described actions on this item.|
+|accessOperations|[driveItemAccessOperationsViewpoint](../resources/driveitemaccessoperationsviewpoint.md)| Indicates whether the user can perform the described actions on this item.|
 |sharing|[sharingViewpoint](../resources/sharingviewpoint.md)| Indicates sharing operations the current user can take on the specified item.|
 
 ## Relationships
