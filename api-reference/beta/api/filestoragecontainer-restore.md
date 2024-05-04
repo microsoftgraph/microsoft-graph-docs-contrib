@@ -79,8 +79,8 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{}
-  "@odata.type": "#microsoft.graph.fileStorageContainer",
+{
+  "@odata.type": "microsoft.graph.fileStorageContainer",
   "id": "b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z",
   "displayName": "My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
