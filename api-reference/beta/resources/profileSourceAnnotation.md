@@ -17,12 +17,12 @@ Namespace: microsoft.graph
 Represents the sources the user data comes from, such as Entra, UPA, Connector, etc.
 
 ## Properties
-| Property	    | Type	           |Description                                                        |
-|:--------------|:-----------------|:------------------------------------------------------------------|
-|id             |String            |Unique identifier of the source.                                   |
-|profileSource  |profileSource     |Gives details of the Source like displayName, webUrl, localizations|
-|isDefaultSource|Boolean           |Flag to indicate whether the source is the default one.            |
-|properties     |Collection(String)|Names of properties having data from this source.                  |
+| Property	    | Type	                                            |Description                                                               |
+|:--------------|:--------------------------------------------------|:-------------------------------------------------------------------------|
+|id             |String                                             |Unique identifier of the source.                                          |
+|profileSource  |[profileSource](../resources/profileSource.md)     |Represents metadata of the Source like displayName, webUrl, localizations.|
+|isDefaultSource|Boolean                                            |Flag to indicate whether the source is the default one.                   |
+|properties     |Collection(String)                                 |Names of properties having data from this source.                         |
 
 ## JSON representation
 
