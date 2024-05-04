@@ -10,3 +10,4 @@ ms.localizationpriority: medium
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|FileStorageContainer.Selected|Not supported.|
 
+
