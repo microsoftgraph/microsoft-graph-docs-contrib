@@ -112,7 +112,6 @@ The following JSON representation shows the resource type.
   "expiryDateTime": "string (timestamp)",
   "itemMajorVersionLimit": "int64",
   "isItemVersioningEnabled": "boolean",
-  "lockState": {"@odata.type": "microsoft.graph.siteLockState"}
 }
 ```
 
