@@ -42,7 +42,6 @@ GET https://graph.microsoft.com/beta/users/{usersId}/onlineMeetings/getAllRecord
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -56,10 +55,10 @@ The following table lists the parameters that are required when you call this fu
 | ---------------------- | :-------: | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page. |
 
-## Known Issues
-
-> 1. The `top` query may not return a nextLink. To obtain the nextLink, avoid using the `top` query.
-> 2. For older meetings where transcripts are not turned on, the result may not include the recordings
+> [!NOTE]
+> The following known issues are associated with the query parameters:
+> - The `top` query might not return a nextLink. To get the nextLink, avoid using the `top` query.
+> - For older meetings where transcripts are not turned on, the result might not include the recordings.
 
 ## Request headers
 | Header       | Value |
