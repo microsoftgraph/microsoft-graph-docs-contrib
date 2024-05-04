@@ -17,6 +17,8 @@ Get a list of [analyzedEmail](../resources/security-analyzedemail.md) objects an
 
 This API allows Security Operations teams to have direct access to hunt (query) for threats, IOCs, attack vectors, and evidences for a tenant. It is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats. It consists of email metadata, verdict information, related underlying entities (attachments/URL), filters, and more.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -45,7 +47,7 @@ In the request URL, provide the following required query parameters with values.
 
 ### OData query parameters
 
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skip`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$skiptoken`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following example shows how to use the `$filter` parameter to customize the response.
 <!-- {
@@ -53,7 +55,8 @@ The following example shows how to use the `$filter` parameter to customize the 
 }
 -->
 ``` http
-GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=NetworkMessageId eq  'bde1f764-bbf4-5673-fbba-0asdhsgfhf1'
+GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=networkMessageId eq 'bde1f764-bbf4-5673-fbba-0asdhsgfhf1'
+GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=networkMessageId eq 'bde1f764-bbf4-5673-fbba-0asdhsgfhf1' and recipientEmailAddress eq 'tomas.richardson@contoso.com'
 ```
 
 ## Request headers
@@ -84,7 +87,6 @@ The following example shows a request.
 GET https:security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -103,20 +105,18 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.analyzedEmail",
-      "id": "3570a93a-82b1-ffb9-8c26-a9a2ca002a17",
-      "loggedDateTime": "String (timestamp)",
+      "id": "String",
+      "loggedDateTime": "Datetime",
       "networkMessageId": "String",
       "internetMessageId": "String",
       "senderDetail": {
         "@odata.type": "microsoft.graph.security.analyzedEmailSenderDetail"
       },
-      "recipientEmailAddresses": [
-        "String"
-      ],
+      "recipientEmailAddress": "String",
       "distributionList": "String",
       "subject": "String",
       "returnPath": "String",
-      "directionality": "String",
+      "directionality": "microsoft.graph.security.antispamDirectionality",
       "originalDelivery": {
         "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
       },
@@ -124,17 +124,7 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
       },
       "attachmentsCount": "Integer",
-      "attachments": [
-        {
-          "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
-        }
-      ],
       "urlsCount": "Integer",
-      "urls": [
-        {
-          "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
-        }
-      ],
       "language": "String",
       "sizeInBytes": "Integer",
       "alertIds": [
@@ -148,7 +138,9 @@ Content-Type: application/json
       "overrideSources": [
         "String"
       ],
-      "threatType": "String",
+      "threatTypes": [
+        "microsoft.graph.security.threatType"
+      ],
       "detectionMethods": [
         "String"
       ],
@@ -168,4 +160,3 @@ Content-Type: application/json
   ]
 }
 ```
-

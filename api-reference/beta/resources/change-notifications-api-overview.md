@@ -4,7 +4,7 @@ description: "Deliver change notifications to clients."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: conceptualPageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ---
 
 # Use the Microsoft Graph API to get change notifications
