@@ -1,6 +1,6 @@
 ---
 title: "sharePointSharingAbilities resource type"
-description: "Provides information on which sharing links are available to the user."
+description: "Provides information about which sharing links are available to the user."
 author: "ziebd"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides information on which sharing links are available to the user.
+Provides information about which sharing links are available to the user.
 
 ## Properties
 
