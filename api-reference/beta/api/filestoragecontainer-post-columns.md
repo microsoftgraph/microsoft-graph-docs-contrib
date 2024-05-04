@@ -51,14 +51,14 @@ Only the following type-related properties are supported and they are mutually e
 
 |Property|Type|Description|
 |:---|:---|:---|
-|boolean|[oneDrive.booleanColumn](../resources/booleancolumn.md)|This column stores boolean values.|
-|choice|[oneDrive.choiceColumn](../resources/choicecolumn.md)|This column stores data from a list of choices.|
-|currency|[oneDrive.currencyColumn](../resources/currencycolumn.md)|This column stores currency values.|
-|dateTime|[oneDrive.dateTimeColumn](../resources/datetimecolumn.md)|This column stores DateTime values.|
-|hyperlinkOrPicture|[oneDrive.hyperlinkOrPictureColumn](../resources/hyperlinkorpicturecolumn.md)|This column stores hyperlink or picture values.|
-|number|[oneDrive.numberColumn](../resources/numbercolumn.md)|This column stores number values.|
-|personOrGroup|[oneDrive.personOrGroupColumn](../resources/personorgroupcolumn.md)|This column stores Person or Group values.|
-|text|[oneDrive.textColumn](../resources/textcolumn.md)|This column stores text values.|
+|boolean|[booleanColumn](../resources/booleancolumn.md)|This column stores boolean values.|
+|choice|[choiceColumn](../resources/choicecolumn.md)|This column stores data from a list of choices.|
+|currency|[currencyColumn](../resources/currencycolumn.md)|This column stores currency values.|
+|dateTime|[.dateTimeColumn](../resources/datetimecolumn.md)|This column stores DateTime values.|
+|hyperlinkOrPicture|[hyperlinkOrPictureColumn](../resources/hyperlinkorpicturecolumn.md)|This column stores hyperlink or picture values.|
+|number|[numberColumn](../resources/numbercolumn.md)|This column stores number values.|
+|personOrGroup|[personOrGroupColumn](../resources/personorgroupcolumn.md)|This column stores Person or Group values.|
+|text|[textColumn](../resources/textcolumn.md)|This column stores text values.|
 
 ## Response
 
