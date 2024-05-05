@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+# virtualEventWebinarRegistrationConfiguration resource type
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about a webinar registration configuration.
@@ -22,7 +24,7 @@ Contains information about a webinar registration configuration.
 ## Properties
 
 | Property | Type | Description |
-| ---------| ---- | ---------- -|
+| ---------| ---- | ------------|
 | registrationWebUrl | String | Registration portal URL of the webinar. |
 
 ## JSON representation
