@@ -3,6 +3,7 @@ title: "Microsoft Graph REST API v1.0 endpoint reference"
 description: "Find reference content for Microsoft Graph REST APIs in the v1.0 endpoint, which includes APIs in general availability (GA) status."
 ms.localizationpriority: high
 author: "lauragra"
+ms.service: "microsoft-graph"
 ms.subservice: "non-product-specific"
 doc_type: conceptualPageType
 ms.topic: overview
@@ -51,7 +52,8 @@ For more information about Microsoft Graph REST API calls, see [Use the Microsof
 
 ## Microsoft Graph beta endpoint
 
-Currently two versions of Microsoft Graph REST APIs are available - v1.0 and beta.
+Currently, two versions of Microsoft Graph REST APIs are available: v1.0 and beta.
+
 If you're interested in new or enhanced APIs that are still in preview status, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true). 
 
 > [!CAUTION]
@@ -62,7 +64,7 @@ For more information, see [Versioning and support](/graph/versioning-and-support
 ## What's new
 Find out [what's new](/graph/whats-new-overview) in the v1.0 endpoint.
 
-For details about changes to Microsoft Graph APIs in v1.0, explore the [API changelog](https://developer.microsoft.com/en-us/graph/changelog/?filterBy=v1.0).
+For details about changes to Microsoft Graph APIs in v1.0, explore the [API changelog](https://developer.microsoft.com/en-us/graph/changelog/?filterby=v1.0).
 
 ## Related content
 
