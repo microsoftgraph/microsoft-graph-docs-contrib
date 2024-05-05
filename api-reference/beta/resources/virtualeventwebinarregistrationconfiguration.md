@@ -11,7 +11,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about the webinar registration configuration. 
+Contains information about a webinar registration configuration.
 
 ## Methods
 
