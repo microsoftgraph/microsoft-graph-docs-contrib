@@ -60,7 +60,8 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_virtualeventwebinarregistrationconfiguration"
+  "name": "get_virtualeventwebinarregistrationconfiguration",
+  "sampleKeys": ["88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33"]
 }
 -->
 ``` http
@@ -82,5 +83,5 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "registrationWebUrl": "https://events.teams.microsoft.com/event/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33"
+  "registrationWebUrl": "https://events.teams.microsoft.com/event/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33"
 }
