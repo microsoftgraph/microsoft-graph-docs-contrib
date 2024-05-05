@@ -85,13 +85,13 @@ Content-Type: application/json
       "id": "5d625d33-338c-4a77-a98a-3e287116440c",
       "name": "document.docx",
       "size": 1024,
-      "deletedDateTime": "2022-04-25T20:11:51Z"
-      "title": "my document"
+      "deletedDateTime": "2022-04-25T20:11:51Z",
+      "title": "my document",
       "deletedBy": {
         "user": {
           "displayName": "Tenant Admin User",
-          "id": "12"
-          "userPrincipalName": "ksam@microsoft.com"
+          "id": "EBA7DBE0-B42F-4BC8-AEF6-97B66EFC77D0",
+          "userPrincipalName": "jhan@contoso.com"
         }
       }
     }
