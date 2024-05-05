@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.roleManagement.directory.resourceNamespaces.item.resourceActions.resource_actions_request_builder import ResourceActionsRequestBuilder
+from msgraph.generated.role_management.directory.resource_namespaces.item.resource_actions.resource_actions_request_builder import ResourceActionsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

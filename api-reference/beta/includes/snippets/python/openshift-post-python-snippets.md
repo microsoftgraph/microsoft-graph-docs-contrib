@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.teams.item.schedule.openShifts.open_shifts_request_builder import OpenShiftsRequestBuilder
+from msgraph.generated.teams.item.schedule.open_shifts.open_shifts_request_builder import OpenShiftsRequestBuilder
 from msgraph.generated.models.open_shift import OpenShift
 from msgraph.generated.models.open_shift_item import OpenShiftItem
 from msgraph.generated.models.shift_activity import ShiftActivity

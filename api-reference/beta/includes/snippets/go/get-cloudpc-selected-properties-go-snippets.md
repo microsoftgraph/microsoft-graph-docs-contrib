@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointCloudPCItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult"},
+	Select: [] string {"id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult","allotmentDisplayName"},
 }
 configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointCloudPCItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
