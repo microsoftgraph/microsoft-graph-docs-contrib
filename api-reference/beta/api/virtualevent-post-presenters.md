@@ -139,7 +139,7 @@ Content-Type: application/json
   "identity": {
     "@odata.type": "#microsoft.graph.communicationsGuestIdentity",
     "displayName": "Guest Speaker",
-    "email": "guest.speaker@contoso.com"
+    "email": "guest.speaker@fabrikam.com"
   }
 }
 ```
@@ -161,13 +161,13 @@ Content-Type: application/json
 
 {
   "id": "184975c0-4096-4a02-b251-c48546691c42",
-  "email": "guest.speaker@contoso.com",
+  "email": "guest.speaker@fabrikam.com",
   "presenterDetails": null,
   "identity": {
     "@odata.type": "#microsoft.graph.communicationsGuestIdentity",
     "id": "184975c0-4096-4a02-b251-c48546691c42",
     "displayName": "Guest Speaker",
-    "email": "guest.speaker@contoso.com"
+    "email": "guest.speaker@fabrikam.com"
   }
 }
 ```
