@@ -59,7 +59,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "restore_filestoragecontainer_recyclebin_items",
-  "@odata.type": "Collection(microsoft.graph.recyclebinitem)"
+  "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
 ``` http
@@ -78,7 +78,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.recyclebinitem)"
+  "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
 ``` http
