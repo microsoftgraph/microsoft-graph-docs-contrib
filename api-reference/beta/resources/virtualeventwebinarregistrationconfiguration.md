@@ -17,7 +17,7 @@ Contains information about the webinar registration configuration.
 
 | Method | Return Type |Description |
 | ------ | ----------- | ---------- |
-| [Get virtualEventWebinarRegistrationConfiguration](../api/virtualeventwebinarregistrationconfiguration-get.md) | [webinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) collection | Read the properties and relationships of a [webinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object. |
+| [Get virtualEventWebinarRegistrationConfiguration](../api/virtualeventwebinarregistrationconfiguration-get.md) | [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) collection | Read the properties and relationships of a [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object. |
 
 ## Properties
 
@@ -27,7 +27,7 @@ Contains information about the webinar registration configuration.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
