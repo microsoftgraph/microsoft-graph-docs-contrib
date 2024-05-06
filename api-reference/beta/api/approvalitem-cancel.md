@@ -1,6 +1,6 @@
 ---
 title: "approvalItem: cancel"
-description: "Cancel is used for cancelling the approval item. This endpoint would be triggered by the owner of the approval item."
+description: "Cancel the approval item. This endpoint would be triggered by the owner of the approval item."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "Approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel is used for cancelling the approval item, this endpoint would be triggered by the owner of the approval item.
+Cancel the approval item. This endpoint would be triggered by the owner of the approval item.
 
 ## Permissions
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an approval item that can be [created](../api/approvalsolution-post-approvalitems.md) by a user and assigned to approvers. The approver can [respond](../api/approvalitem-post-responses.md) to the [approval item request](approvalitemrequest.md). Users can list all the [approval items](../api/approvalsolution-list-approvalitems.md), [approval item requests](../api/approvalitem-list-requests.md) or [approval item responses](../api/approvalitem-list-responses.md). Owners can also [cancel](../api/approvalitem-cancel.md) the approval item if its not already completed.
+An approval item is an object that represents the approval including the decision, requests and responses associated. Users can create new approval items, view the ones sent or received, and take actions on them.
 
 ## Methods
 |Method|Return type|Description|
