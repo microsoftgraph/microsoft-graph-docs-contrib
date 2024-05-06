@@ -93,5 +93,5 @@ jobs:
           git add .
           git commit -m "Update cloud support status"
           git push --set-upstream origin cloud-support/$timestamp
-          gh pr create --base main --title "Update cloud support status" --body "Ran cloud support tool"
+          gh pr create --base main --title "Update cloud support status" --body "Ran cloud support tool" --label "ready to merge"
         }
