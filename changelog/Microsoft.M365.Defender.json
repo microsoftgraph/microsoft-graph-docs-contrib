@@ -2141,7 +2141,12 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-03-20T14:25:35.9322853Z",
-
+      "WorkloadArea": "Security",
+      "SubArea": "Advanced hunting"
+    },
+    {
+      "ChangeList": [
+        {
       "Id": "413ee7bf-c1c5-4fc9-bc15-df0060a80895",
           "ApiChange": "Enumeration",
           "ChangedApiName": "healthIssueSeverity",
@@ -2222,6 +2227,12 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-03-20T14:25:35.9322853Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Advanced hunting"
+    },
+    {
+      "ChangeList": [
+        {
 
           "Id": "61450d6a-25b8-4733-9dd8-fe3b0985331b",
           "ApiChange": "Property",
