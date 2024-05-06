@@ -5463,24 +5463,6 @@
       "CreatedDateTime": "2024-01-29T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "c15a5805-f2eb-4a3c-a721-99ba20b7e63f",
-          "ApiChange": "Property",
-          "ChangedApiName": "chat",
-          "ChangeType": "Addition",
-          "Description": "Added the **isHiddenForAllMembers** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
-          "Target": "chat"
-        }
-      ],
-      "Id": "c15a5805-f2eb-4a3c-a721-99ba20b7e63f",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2024-04-24T00:00:00",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Messaging"
     }
   ]
 }
