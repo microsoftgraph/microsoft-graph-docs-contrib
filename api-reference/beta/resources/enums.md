@@ -4785,6 +4785,17 @@ Possible values for user account types (group membership), per Windows definitio
 |customAwaitAll|
 |unknownFutureValue|
 
+### approvalOperationStatus values 
+
+|Member|
+|:---|
+|scheduled|
+|inProgress|
+|succeeded|
+|failed|
+|timeout|
+|unknownFutureValue|
+
 ### approverRole values 
 
 |Member|

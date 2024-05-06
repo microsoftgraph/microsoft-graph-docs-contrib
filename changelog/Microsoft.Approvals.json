@@ -1,0 +1,38 @@
+{
+    "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "91963e84-b763-44d3-8d27-0f389d151b8d",
+            "ApiChange": "Resource",
+            "ChangedApiName": "publicError",
+            "ChangeType": "Addition",
+            "Description": "Added the [publicError](https://learn.microsoft.com/en-us/graph/api/resources/publicError?view=graph-rest-beta) resource.",
+            "Target": "publicError"
+          },
+          {
+            "Id": "91963e84-b763-44d3-8d27-0f389d151b8d",
+            "ApiChange": "Resource",
+            "ChangedApiName": "publicErrorDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the [publicErrorDetail](https://learn.microsoft.com/en-us/graph/api/resources/publicErrorDetail?view=graph-rest-beta) resource.",
+            "Target": "publicErrorDetail"
+          },
+          {
+            "Id": "91963e84-b763-44d3-8d27-0f389d151b8d",
+            "ApiChange": "Resource",
+            "ChangedApiName": "publicInnerError",
+            "ChangeType": "Addition",
+            "Description": "Added the [publicInnerError](https://learn.microsoft.com/en-us/graph/api/resources/publicInnerError?view=graph-rest-beta) resource.",
+            "Target": "publicInnerError"
+          }
+        ],
+        "Id": "91963e84-b763-44d3-8d27-0f389d151b8d",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2024-05-02T17:46:53.7419999Z",
+        "WorkloadArea": "Approvals",
+        "SubArea": ""
+      }
+    ]
+  }

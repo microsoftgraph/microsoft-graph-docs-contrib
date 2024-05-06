@@ -87,27 +87,11 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.approval.approvalItemResponse"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.approval.approvalItemResponse",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.approvalIdentitySet"
-  },
-  "comments": "String",
-  "response": "String",
-  "owners": [
-    {
-      "@odata.type": "microsoft.graph.approvalIdentitySet"
-    }
-  ]
-}
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/solutions/approval/operations/{operationId}
 ```
 

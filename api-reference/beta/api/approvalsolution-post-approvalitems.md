@@ -92,16 +92,9 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.approvalIdentitySet"
     }
   ],
-  "state": "String",
-  "allowCancel": "Boolean",
-  "completedDateTime": "String (timestamp)",
-  "viewPoint": {
-    "@odata.type": "microsoft.graph.approvalItemViewPoint"
-  },
   "owner": {
     "@odata.type": "microsoft.graph.approvalIdentitySet"
-  },
-  "result": "String"
+  }
 }
 ```
 
@@ -112,40 +105,10 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.approval.approvalItem"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.approval.approvalItem",
-  "id": "864a2951-a6cb-c407-1957-6dd2fbae7a84",
-  "displayName": "String",
-  "description": "String",
-  "allowEmailNotification": "Boolean",
-  "approvalType": "String",
-  "responsePrompts": [
-    "String"
-  ],
-  "approvers": [
-    {
-      "@odata.type": "microsoft.graph.approvalIdentitySet"
-    }
-  ],
-  "state": "String",
-  "allowCancel": "Boolean",
-  "createdDateTime": "String (timestamp)",
-  "completedDateTime": "String (timestamp)",
-  "viewPoint": {
-    "@odata.type": "microsoft.graph.approvalItemViewPoint"
-  },
-  "owner": {
-    "@odata.type": "microsoft.graph.approvalIdentitySet"
-  },
-  "result": "String"
-}
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/solutions/approval/operations/{operationId}
 ```
-
