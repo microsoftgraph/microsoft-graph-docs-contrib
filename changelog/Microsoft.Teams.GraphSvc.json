@@ -1903,7 +1903,7 @@
         {
           "Id": "c15a5805-f2eb-4a3c-a721-99ba20b7e63f",
           "ApiChange": "Property",
-          "ChangedApiName": "chat",
+          "ChangedApiName": "isHiddenForAllMembers",
           "ChangeType": "Addition",
           "Description": "Added the **isHiddenForAllMembers** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
