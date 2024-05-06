@@ -12,7 +12,7 @@ This article provides guidance on setting up and using the grading categories fo
 
 Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from homework assignments and 40% from test assignments.
 
-Assignments contribute to their grading category in proportion to their point values, and their grading category modifies their contribution to the final grade. For example, for a class with two assignments in a grading category that contributes 50% of the class grade, if the first assignment has 10 points, and the second has 40 points, then the assignments will contribute 5% and 20%, respectively, to the total grade.
+Assignments contribute to their grading category in proportion to their point values, and their grading category modifies their contribution to the final grade. For example, consider a class with two assignments in a grading category that contributes 50% of the class grade. If the first assignment has 10 points, and the second has 40 points, then the assignments contribute 5% and 20%, respectively, to the total grade.
 
 Grading categories are defined on the class's settings. Every assignment that contributes to the final average grade needs to have a grading category.
 
@@ -103,9 +103,9 @@ Content-type: application/json
 
 ## Add a grading category to an assignment
 
-An assignment can be weighted by assigning it a grading category. Assigning a grading category to an assignment will determine how much it contributes to the final class grade. You can use the following API to add a grading category to an assignment.
+You weight an assignment's contribution to the final class grade by giving the assignment a grading category. You can use the following API to add a grading category to an assignment.
 
-- [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory): Allows you to give an assignment a grading category, causing it to contribute to the class average grade as part of that grading category.
+- [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory): Gives an assignment a grading category, causing it to contribute to the class average grade as part of that grading category.
 
 ```http
 PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
@@ -134,7 +134,7 @@ HTTP/1.1 204 No Content
 
 ## Update a grading category
 
-You might want to change the details of a grading category, like its display name or weight or you might want to delete one grading category and replace the percentage points it took up with an existing or new grading category. This section shows you how to update one or more grading categories.
+You can change the details of a grading category, like its display name or weight. You can also delete one grading category and replace its contribution with an existing or new grading category. This section shows you how to update one or more grading categories.
 
 - [Update single gradingCategory](/graph/api/educationgradingcategory-update): This is used to update a single gradingCategory.
 
@@ -306,7 +306,7 @@ HTTP/1.1 204 No Content
 
 ## Error while Delete grading category using Delta Payload
 
-When you try to delete one of the grading category using the delta payload without replacing it with other grading category to make the sum of all grading categories to 100, the error displayed in response is shown in this section.
+When you try to delete a grading category using the delta payload without replacing it with other grading category to make the sum of all grading categories to 100, the error displayed in response is shown in this section.
 
 ```http
 PATCH /education/classes/{classId}/assignmentSettings
