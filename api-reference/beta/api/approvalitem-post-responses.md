@@ -3,7 +3,7 @@ title: "Create approvalItemResponse"
 description: "Create a new approvalItemResponse object."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "Approvals"
+ms.subservice: "microsoft-approvals"
 doc_type: apiPageType
 ---
 

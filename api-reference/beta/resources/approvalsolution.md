@@ -3,7 +3,7 @@ title: "approvalSolution resource type"
 description: "Entity used for managing the Approval solutions"
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "Approvals"
+ms.subservice: "microsoft-approvals"
 doc_type: resourcePageType
 ---
 

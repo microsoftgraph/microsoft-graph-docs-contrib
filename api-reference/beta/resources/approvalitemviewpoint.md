@@ -3,7 +3,7 @@ title: "approvalItemViewPoint resource type"
 description: "Represents user viewpoints data on the ApprovalItem. The data includes the users roles regarding the approval item."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "Approvals"
+ms.subservice: "microsoft-approvals"
 doc_type: resourcePageType
 ---
 

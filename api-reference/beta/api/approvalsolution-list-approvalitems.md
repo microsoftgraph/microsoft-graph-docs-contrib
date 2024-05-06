@@ -3,7 +3,7 @@ title: "List approvalItem objects"
 description: "Get a list of the approvalItem objects and their properties."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "Approvals"
+ms.subservice: "microsoft-approvals"
 doc_type: apiPageType
 ---
 

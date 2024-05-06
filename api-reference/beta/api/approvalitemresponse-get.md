@@ -3,7 +3,7 @@ title: "Get approvalItemResponse"
 description: "Read the properties and relationships of an approvalItemResponse object."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "Approvals"
+ms.subservice: "microsoft-approvals"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "approvalItemRequest resource type"
 description: "Collections of requests created for each approver on the approval item."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "Approvals"
+ms.subservice: "microsoft-approvals"
 doc_type: resourcePageType
 ---
 
