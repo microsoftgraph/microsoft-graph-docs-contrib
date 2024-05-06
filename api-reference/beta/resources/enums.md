@@ -4730,6 +4730,41 @@ Possible values for user account types (group membership), per Windows definitio
 |authenticationTransfer|
 |unknownFutureValue|
 
+### sharingRole values 
+
+|Member|
+|:---|
+|none|
+|view|
+|edit|
+|manageList|
+|review|
+|restrictedView|
+|submitOnly|
+|unknownFutureValue|
+
+### sharingScope values 
+
+|Member|
+|:---|
+|anyone|
+|organization|
+|specificPeople|
+|anonymous|
+|users|
+|unknownFutureValue|
+
+### sharingVariant values 
+
+|Member|
+|:---|
+|none|
+|requiresAuthentication|
+|passwordProtected|
+|addressBar|
+|embed|
+|unknownFutureValue|
+
 ### approvalItemState values 
 
 |Member|
