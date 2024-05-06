@@ -7,7 +7,7 @@ ms.subservice: "insights"
 ms.custom: scenarios:getting-started
 ---
 
-# Customize item insights privacy in Microsoft Graph (preview)
+# Customize item insights privacy in Microsoft Graph
 
 Item insights are relationships that Microsoft calculates using advanced machine learning techniques. When users collaborate over documents, SharePoint sites and lists, Teams chats and channels, Microsoft aggregates these activities as signals. From the signals Microsoft derives insights to make user-centric content recommendations for users in an organization.
 
@@ -31,14 +31,11 @@ There are a few ways to customize users' item insights privacy settings:
   - [Microsoft Graph PowerShell SDK](#configure-item-insights-settings-via-powershell)
   - [Microsoft Graph REST API](#configure-item-insights-settings-using-the-rest-api)
 
-> [!NOTE]
-> The REST and PowerShell APIs for item insights settings are currently available only in the beta version.
-
 The rest of this article describes how an administrator can customize item insights privacy in an organization. 
 
 ## Background
 
-At the time of first release in 2014, Office Graph was a backend service for Delve. They shared a set of privacy controls over both the Office Graph insights and the Delve user experience. Office Graph has since evolved and become more independent and powerful, as part of every Microsoft 365 experience and of Microsoft Graph. To offer a coherent Microsoft Graph schema, Microsoft introduced an [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true) entity which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-beta&preserve-view=true) resource, and has kept **officeGraphInsights** around for backward compatibility. The introduction of **itemInsights** also de-couples the privacy story for the two independent pieces.  
+At the time of first release in 2014, Office Graph was a backend service for Delve. They shared a set of privacy controls over both the Office Graph insights and the Delve user experience. Office Graph has since evolved and become more independent and powerful, as part of every Microsoft 365 experience and of Microsoft Graph. To offer a coherent Microsoft Graph schema, Microsoft introduced an [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-1.0&preserve-view=true) entity which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0&preserve-view=true) resource, and has kept **officeGraphInsights** around for backward compatibility. The introduction of **itemInsights** also de-couples the privacy story for the two independent pieces.
 
 While existing apps could continue to use **officeGraphInsights**, these apps should upgrade to **itemInsights** to gain the flexibility to fine-tune item insights in Office Graph and Delve.
 
@@ -46,7 +43,7 @@ While existing apps could continue to use **officeGraphInsights**, these apps sh
 
 Item insights settings provide flexibility for administrators to use Microsoft Entra tools. Administrators can disable item insights for an entire organization, or for only members of a specified Microsoft Entra group. They can configure item insights in the Microsoft 365 admin center, or by using the PowerShell SDK or Microsoft Graph REST API with due permissions. Keep in mind that the _global administrator role_ is required.
 
-The next section describes using the admin center, and is followed by the section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights settings using the REST API](#configure-item-insights-settings-using-the-rest-api). Then refer to the [read](/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
+The next section describes using the admin center, and is followed by the section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights settings using the REST API](#configure-item-insights-settings-using-the-rest-api). Then refer to the [read](/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-1.0&preserve-view=true) or [update](/graph/api/insightssettings-update?view=graph-rest-1.0&preserve-view=true) REST operations for more information.
 
 ### Configure item insights settings via Microsoft 365 admin center
 
@@ -64,12 +61,6 @@ Confirm the following additional prerequisites. Then you can use the [Microsoft 
 * **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
 #### Command examples
-
-> [!NOTE]
-> Because item insights commands are only available in beta, switch to the beta profile before calling it.
-> ```powershell
->    Select-MgProfile beta
-> ```
 
 To get item insights configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$TenantId` with your Microsoft Entra tenant ID. You can retrieve this ID from the overview page of your Microsoft Entra ID.
 
@@ -99,12 +90,12 @@ Alternatively, you can change the default and disable item insights for a specif
 
 ### Configure item insights settings using the REST API
 
-Because item insights privacy settings are enabled for the entire organization, they are exposed through a navigation property named **itemInsights** in [peopleAdminSettings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true). You can change the default in one of two ways:
+Because item insights privacy settings are enabled for the entire organization, they are exposed through a navigation property named **itemInsights** in [peopleAdminSettings](/graph/api/resources/peopleadminsettings?view=graph-rest-1.0&preserve-view=true). You can change the default in one of two ways:
 
-- Disable item insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) resource to `false`. 
+- Disable item insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-1.0&preserve-view=true) resource to `false`. 
 - Disable item insights for a _subset_ of users, by assigning these users in a Microsoft Entra group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
-Use the [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) operation to set the **isEnabledInOrganization** and **disabledForGroup** properties accordingly.
+Use the [update](/graph/api/insightssettings-update?view=graph-rest-1.0&preserve-view=true) operation to set the **isEnabledInOrganization** and **disabledForGroup** properties accordingly.
 
 | How item insights are enabled | isEnabledInOrganization | disabledForGroup |
 |:-------------|:------------|:------------|
@@ -113,7 +104,6 @@ Use the [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserv
 | Disabled for the entire organization | `false` | ignored |
 
 Keep the following in mind when updating item insights settings:
-- [insights settings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) are available only in the beta endpoint.
 - Get the ID of a Microsoft Entra group from the Microsoft Entra admin center, and make sure the group exists, because the update operation does not check the existence of the group. Specifying a non-existent group in **disabledForGroup** does _not_ disable insights for any users in the organization.
 - Regardless of item insights settings, Delve continues to respect Delve tenant and user level [privacy settings](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true).
 
