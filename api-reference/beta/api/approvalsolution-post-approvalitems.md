@@ -52,12 +52,12 @@ You can specify the following properties when creating an **approvalItem**.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The displayName of the approval request. Required.|
-|description|String|This is the description of the approval request. Optional.|
+|description|String|The description of the approval request. Optional.|
 |allowEmailNotification|Boolean|This property would be used for enabling email notification. Optional.|
 |approvalType|approvalItemType|The approval type describes the workflow of the approvalItem. The possible values are: `basic`, `basicAwaitAll`, `custom`, `customAwaitAll`, `unknownFutureValue`. Required.|
 |responsePrompts|String collection|Approval response prompts. The input length here would be minimum of 2 and maximum of 2. Optional.|
 |approvers|[microsoft.approval.approvalIdentitySet](../resources/approvalidentityset.md) collection|This property is used for setting the identity of the Principals the ApprovalItem is assigned to. Required.|
-|owner|[microsoft.approval.approvalIdentitySet](../resources/approvalidentityset.md)|This is the identity set of the principal who owns the approval item. The owner field would only be provided during the creation of the ApprovalItem when an application is creating an ApprovalItem on behalf of the principal, if the owner field is not provided the user information from the user context would be used. Optional.|
+|owner|[microsoft.approval.approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the principal who owns the approval item. The owner field would only be provided when an application is creating an ApprovalItem on behalf of the principal. If the owner field is not provided the user information from the user context is used. Optional.|
 
 
 ## Response

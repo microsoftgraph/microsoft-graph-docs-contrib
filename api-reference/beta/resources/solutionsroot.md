@@ -35,7 +35,7 @@ To access Bookings currencies, use the following syntax:
 https://graph.microsoft.com/{version}/solutions/bookingCurrencies 
 ```
 
-To access business scenarios, use the folloing syntax:
+To access business scenarios, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http

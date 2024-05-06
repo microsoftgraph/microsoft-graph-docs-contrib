@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a keyed collection of [identity](identity.md) resources. It is used to represent a set of identities associated with an approval item.
+Represents a keyed collection of [identity](identity.md) resources. It's used to represent a set of identities associated with an approval item.
 
 Inherits from [identitySet](../resources/identityset.md).
 
@@ -22,7 +22,7 @@ Inherits from [identitySet](../resources/identityset.md).
 |:---|:---|:---|
 |application|[identity](../resources/identity.md)|The application associated with the approval item. Inherited from [identitySet](../resources/identityset.md).|
 |device|[identity](../resources/identity.md)|The device associated with the approval item. Inherited from [identitySet](../resources/identityset.md).|
-|group|[identity](../resources/identity.md)|The AAD group associated with the approval item.|
+|group|[identity](../resources/identity.md)|The Entra group associated with the approval item.|
 |user|[identity](../resources/identity.md)|The user associated with the approval item. Inherited from [identitySet](../resources/identityset.md).|
 
 ## Relationships

@@ -1,6 +1,6 @@
 ---
 title: "approvalItemResponse resource type"
-description: "This entity type is used for managing the ApprovalItem response(s)."
+description: "This entity type is used for managing the ApprovalItem responses."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "microsoft-approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This entity type is used for managing the ApprovalItem response(s).
+This entity type is used for managing the ApprovalItem responses.
 
 ## Methods
 |Method|Return type|Description|

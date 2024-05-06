@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an entity used for managing the Approval solutions.
+Entity used for managing the Approval solutions.
 
 ## Methods
 |Method|Return type|Description|
