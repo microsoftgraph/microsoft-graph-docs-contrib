@@ -55,15 +55,14 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 | Parameter    | Type            | Description                                                                                                                      | Example                                                            |
 |:-------------|:----------------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
 | Query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
-| Timespan     | String          | Optional. Interval of time over which to query data, in ISO 8601 format. Default value is 30 days, meaning if no startTime is specified, the query looks back 30 days from now. If a time filter is specified in both the query and the startTime parameter, the shorter time span is applied. For example, if the query has a filter for the last 7 days and the startTime is 10 days ago, the query only looks back seven days. | |
+| Timespan     | String          | Optional. The interval of time over which to query data, in ISO 8601 format. The default value is 30 days, meaning if no startTime is specified, the query looks back 30 days from now. If a time filter is specified in both the query and the startTime parameter, the shorter time span is applied. For example, if the query has a filter for the last 7 days and the startTime is 10 days ago, the query only looks back seven days. | |
 
 ## Response
 
 If successful, this action returns a `200 OK` response code and a [huntingQueryResults](../resources/security-huntingqueryresults.md) in the response body.
 
 ## Examples
-
-### Timespan format examples
+The format for the timespan examples is: 
 - **Date/Date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
 - **Duration/endDate**: "P30D/2024-02-15T08:00:00Z" - A period before the end date.
 - **Start/duration**: "2024-02-01T08:00:00Z/P30D" - Start date and duration.
