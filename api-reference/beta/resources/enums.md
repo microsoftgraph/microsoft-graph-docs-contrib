@@ -4699,3 +4699,42 @@ Possible values for user account types (group membership), per Windows definitio
 |deviceCodeFlow|
 |authenticationTransfer|
 |unknownFutureValue|
+
+### approvalItemState values 
+
+|Member|
+|:---|
+|canceled|
+|created|
+|pending|
+|completed|
+|unknownFutureValue|
+
+### approvalItemType values 
+
+|Member|
+|:---|
+|basic|
+|basicAwaitAll|
+|custom|
+|customAwaitAll|
+|unknownFutureValue|
+
+### approverRole values 
+
+|Member|
+|:---|
+|owner|
+|approver|
+|unknownFutureValue|
+
+### provisionState values 
+
+|Member|
+|:---|
+|notProvisioned|
+|provisioningInProgress|
+|provisioningFailed|
+|provisioningCompleted|
+|unknownFutureValue|
+
