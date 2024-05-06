@@ -1,8 +1,8 @@
 ---
-title: "urlEvidence resource type"
-description: "A url that is reported in the alert as evidence."
-ms.date: 09/09/2021
-author: "BenAlfasi"
+title: "cloudLogonRequestEvidence resource type"
+description: "A cloud logon request for an account."
+ms.date: 30/04/2024
+author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 # cloudLogonRequestEvidence resource type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A cloud logon request for an account.
 
