@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.policies.roleManagementPolicyAssignments.role_management_policy_assignments_request_builder import RoleManagementPolicyAssignmentsRequestBuilder
+from msgraph.generated.policies.role_management_policy_assignments.role_management_policy_assignments_request_builder import RoleManagementPolicyAssignmentsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
