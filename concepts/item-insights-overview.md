@@ -69,7 +69,7 @@ After your item insights are disabled, the following happens:
 
 Looking for the API reference for this service?
 
-- [Insights API in Microsoft Graph v1.0](/graph/api/resources/officegraphinsights)
+- [Insights API in Microsoft Graph v1.0](/graph/api/resources/iteminsights?view=graph-rest-1.0&preserve-view=true)
 - [Insights API in Microsoft Graph beta](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true)
 
 
