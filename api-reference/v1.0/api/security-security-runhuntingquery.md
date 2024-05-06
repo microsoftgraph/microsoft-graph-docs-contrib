@@ -134,7 +134,6 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery"
