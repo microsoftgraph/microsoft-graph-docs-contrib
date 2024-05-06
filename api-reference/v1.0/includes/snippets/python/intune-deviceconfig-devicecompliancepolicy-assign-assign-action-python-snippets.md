@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.assign_post_request_body import AssignPostRequestBody
+from msgraph.generated.devicemanagement.devicecompliancepolicies.item.assign.assign_post_request_body import AssignPostRequestBody
 from msgraph.generated.models.device_compliance_policy_assignment import DeviceCompliancePolicyAssignment
 from msgraph.generated.models.configuration_manager_collection_assignment_target import ConfigurationManagerCollectionAssignmentTarget
 

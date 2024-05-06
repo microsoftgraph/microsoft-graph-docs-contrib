@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.upload_pkcs12_post_request_body import UploadPkcs12PostRequestBody
+from msgraph.generated.trustframework.keysets.item.upload_pkcs12.upload_pkcs12_post_request_body import UploadPkcs12PostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
