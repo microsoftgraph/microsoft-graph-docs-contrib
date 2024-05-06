@@ -2,7 +2,7 @@
 title: "profileSourceAnnotation resource type"
 description: "Represents the sources the user data comes from, such as Entra, UPA, Connector, etc."
 ms.localizationpriority: medium
-author: "yuanlec"
+author: "caiyuanle"
 ms.service: "microsoft-graph"
 ms.subservice: "people"
 doc_type: resourcePageType
