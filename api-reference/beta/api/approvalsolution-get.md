@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the [provisioning](../resources/approvalsolution-provision.md) state of [approvalSolution](../resources/approvalsolution.md) for a tenant.
+Read the [provisioning](../api/approvalsolution-provision.md) state of [approvalSolution](../resources/approvalsolution.md) for a tenant.
 
 ## Permissions
 

@@ -19,10 +19,7 @@ Collections of requests created for each approver on the approval item.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/approvalitem-list-requests.md)|[approvalItemRequest](../resources/approvalitemrequest.md) collection|Get a list of the [approvalItemRequest](../resources/approvalitemrequest.md) objects and their properties.|
-|[Create](../api/approvalitem-post-requests.md)|[approvalItemRequest](../resources/approvalitemrequest.md)|Create a new [approvalItemRequest](../resources/approvalitemrequest.md) object.|
 |[Get](../api/approvalitemrequest-get.md)|[approvalItemRequest](../resources/approvalitemrequest.md)|Read the properties and relationships of an [approvalItemRequest](../resources/approvalitemrequest.md) object.|
-|[Update](../api/approvalitemrequest-update.md)|[approvalItemRequest](../resources/approvalitemrequest.md)|Update the properties of an [approvalItemRequest](../resources/approvalitemrequest.md) object.|
-|[Delete](../api/approvalitem-delete-requests.md)|None|Delete an [approvalItemRequest](../resources/approvalitemrequest.md) object.|
 
 ## Properties
 |Property|Type|Description|
