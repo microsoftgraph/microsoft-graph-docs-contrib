@@ -11,6 +11,10 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+Use [itemInsights](iteminsights.md) in place of **officeGraphInsights** to access the insights API.
+
+**officeGraphInsights** is for backward compatibility from earlier versions of the insights API. It is the base type for [itemInsights](iteminsights.md).
+
 Insights are relationships calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for Business documents trending around users.
 
 Insights are returned by the following APIs:
