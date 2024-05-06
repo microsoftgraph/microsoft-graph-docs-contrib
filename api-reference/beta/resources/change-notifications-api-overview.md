@@ -27,9 +27,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][], [baseTask][] (deprecated) |
+| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [offerShiftRequest][], [openShiftChangeRequest][], [presence][], [chatMessage][] (preview), [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [todoTask][], [baseTask][] (deprecated) |
 | Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
-| Application                            | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlineMeeting][], [printer][], [printTaskDefinition][], [team][] |
+| Application                            | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [offerShiftRequest][], [openShiftChangeRequest][], [onlineMeeting][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][] |
 
 ## Related content
 
@@ -54,10 +54,15 @@ In general, subscription operations require read permission to the resource. For
 [user]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
+[offerShiftRequest]: ./offershiftrequest.md
+[openShiftChangeRequest]: ./openshiftchangerequest.md
 [presence]: ./presence.md
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[shift]: ./shift.md
+[swapShiftsChangeRequest]: ./swapshiftschangerequest.md
 [team]: ./team.md
+[timeOffRequest]: ./timeoffrequest.md
 [baseTask]: ./baseTask.md
 [todoTask]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
