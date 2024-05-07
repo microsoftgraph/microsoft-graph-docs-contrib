@@ -1,6 +1,6 @@
 ---
 title: "List includeApplications (for a user flow)"
-description: "List applications for an externalusersselfservicesignupeventsflow."
+description: "List applications for an authenticationEventsFlow."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List includeApplications (for a user flow)
 Namespace: microsoft.graph
 
-List the applications linked to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. These are the applications for which the authentication experience that's defined by the user flow is enabled.
+List the applications linked to an [authenticationEventsFlow](../resources/authenticationeventsflow.md).  These are the applications for which the authentication experience defined by the user flow is enabled.
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` and a collection of [identityUserFlowAttribute](../resources/identityuserflowattribute.md) objects in the response body. 
+If successful, this method returns a `200 OK` and a collection of [authenticationConditionApplication](../resources/authenticationconditionapplication.md) objects in the response body. 
 
 ## Examples
 
