@@ -1,0 +1,43 @@
+{
+  "name": "Onboarding",
+  "overview": "../../resources/intune-onboarding-conceptual.md",
+  "resources": [
+    "complianceManagementPartner",
+    "deviceComanagementAuthorityConfiguration",
+    "deviceEnrollmentLimitConfiguration",
+    "deviceEnrollmentNotificationConfiguration",
+    "deviceEnrollmentPlatformRestrictionConfiguration",
+    "deviceEnrollmentPlatformRestrictionsConfiguration",
+    "deviceEnrollmentWindowsHelloForBusinessConfiguration",
+    "deviceManagementExchangeConnector",
+    "deviceManagementExchangeOnPremisesPolicy",
+    "deviceManagementPartner",
+    "enrollmentConfigurationAssignment",
+    "mobileThreatDefenseConnector",
+    "onPremisesConditionalAccessSettings",
+    "vppToken",
+    "windows10EnrollmentCompletionPageConfiguration"
+  ],
+  "complexTypes": [
+    "allDevicesAssignmentTarget",
+    "allLicensedUsersAssignmentTarget",
+    "certificateConnectorSetting",
+    "companyPortalBlockedAction",
+    "complianceManagementPartnerAssignment",
+    "configurationManagerCollectionAssignmentTarget",
+    "deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementData",
+    "deviceEnrollmentPlatformRestriction",
+    "deviceManagementExchangeAccessRule",
+    "deviceManagementExchangeDeviceClass",
+    "deviceManagementPartnerAssignment",
+    "exclusionGroupAssignmentTarget",
+    "groupAssignmentTarget",
+    "intuneBrand",
+    "mimeContent",
+    "rgbColor",
+    "vppTokenActionResult",
+    "vppTokenLicenseSummary",
+    "vppTokenRevokeLicensesActionResult"
+  ]
+}

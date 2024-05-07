@@ -1,0 +1,29 @@
+{
+  "name": "Software updates",
+  "resources": [
+    "windowsFeatureUpdateProfileAssignment",
+    "windowsFeatureUpdateProfile",
+    "windowsQualityUpdateProfileAssignment",
+    "windowsQualityUpdateProfile",
+    "windowsDriverUpdateProfileAssignment",
+    "windowsDriverUpdateProfile",
+    "windowsDriverUpdateInventory",
+    "windowsUpdateCatalogItem",
+    "windowsFeatureUpdateCatalogItem",
+    "windowsQualityUpdateCatalogItem"
+  ],
+  "complexTypes": [
+    "deviceAndAppManagementAssignmentTarget",
+    "bulkDriverActionResult",
+    "windowsUpdateRolloutSettings",
+    "windowsDriverUpdateProfileInventorySyncStatus",
+    "iosAvailableUpdateVersion",
+    "allLicensedUsersAssignmentTarget",
+    "groupAssignmentTarget",
+    "exclusionGroupAssignmentTarget",
+    "allDevicesAssignmentTarget",
+    "configurationManagerCollectionAssignmentTarget",
+    "scopeTagGroupAssignmentTarget",
+    "expeditedWindowsQualityUpdateSettings"
+  ]
+}
