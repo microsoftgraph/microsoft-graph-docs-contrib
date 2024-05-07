@@ -3116,18 +3116,16 @@ items:
       href: ../../api/trustframeworkkeyset-get.md
     - name: Update
       href: ../../api/trustframeworkkeyset-update.md
-    - name: Delete
-      href: ../../api/trustframeworkkeyset-delete.md
-    - name: Generate key
+    - name: generateKey
       href: ../../api/trustframeworkkeyset-generatekey.md
-    - name: Get active key
-      href: ../../api/trustframeworkkeyset-getactivekey.md
-    - name: Upload certificate
-      href: ../../api/trustframeworkkeyset-uploadcertificate.md
-    - name: Upload PKCS12
-      href: ../../api/trustframeworkkeyset-uploadpkcs12.md
-    - name: Upload secret
+    - name: uploadSecret
       href: ../../api/trustframeworkkeyset-uploadsecret.md
+    - name: getActiveKey
+      href: ../../api/trustframeworkkeyset-getactivekey.md
+    - name: uploadCertificate
+      href: ../../api/trustframeworkkeyset-uploadcertificate.md
+    - name: uploadPkcs12
+      href: ../../api/trustframeworkkeyset-uploadpkcs12.md
   - name: Trust framework policy
     items:
     - name: Trust framework policy

@@ -8296,6 +8296,178 @@ items:
         href: ../../resources/intune-rbac-rolepermission.md
       - name: Unified role permission
         href: ../../resources/unifiedrolepermission.md
+  - name: Software updates
+    items:
+    - name: Windows feature update profile assignment
+      items:
+      - name: Windows feature update profile assignment
+        href: ../../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md
+      - name: List windowsFeatureUpdateProfileAssignments
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofileassignment-list.md
+      - name: Get windowsFeatureUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofileassignment-get.md
+      - name: Create windowsFeatureUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofileassignment-create.md
+      - name: Delete windowsFeatureUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofileassignment-delete.md
+      - name: Update windowsFeatureUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofileassignment-update.md
+    - name: Windows feature update profile
+      items:
+      - name: Windows feature update profile
+        href: ../../resources/intune-softwareupdate-windowsfeatureupdateprofile.md
+      - name: List windowsFeatureUpdateProfiles
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofile-list.md
+      - name: Get windowsFeatureUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofile-get.md
+      - name: Create windowsFeatureUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofile-create.md
+      - name: Delete windowsFeatureUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofile-delete.md
+      - name: Update windowsFeatureUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofile-update.md
+      - name: assign action
+        href: ../../api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md
+    - name: Windows quality update profile assignment
+      items:
+      - name: Windows quality update profile assignment
+        href: ../../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md
+      - name: List windowsQualityUpdateProfileAssignments
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofileassignment-list.md
+      - name: Get windowsQualityUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofileassignment-get.md
+      - name: Create windowsQualityUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofileassignment-create.md
+      - name: Delete windowsQualityUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofileassignment-delete.md
+      - name: Update windowsQualityUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofileassignment-update.md
+    - name: Windows quality update profile
+      items:
+      - name: Windows quality update profile
+        href: ../../resources/intune-softwareupdate-windowsqualityupdateprofile.md
+      - name: List windowsQualityUpdateProfiles
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofile-list.md
+      - name: Get windowsQualityUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofile-get.md
+      - name: Create windowsQualityUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofile-create.md
+      - name: Delete windowsQualityUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofile-delete.md
+      - name: Update windowsQualityUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofile-update.md
+      - name: assign action
+        href: ../../api/intune-softwareupdate-windowsqualityupdateprofile-assign.md
+    - name: Windows driver update profile assignment
+      items:
+      - name: Windows driver update profile assignment
+        href: ../../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md
+      - name: List windowsDriverUpdateProfileAssignments
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofileassignment-list.md
+      - name: Get windowsDriverUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofileassignment-get.md
+      - name: Create windowsDriverUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofileassignment-create.md
+      - name: Delete windowsDriverUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofileassignment-delete.md
+      - name: Update windowsDriverUpdateProfileAssignment
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofileassignment-update.md
+    - name: Windows driver update profile
+      items:
+      - name: Windows driver update profile
+        href: ../../resources/intune-softwareupdate-windowsdriverupdateprofile.md
+      - name: List windowsDriverUpdateProfiles
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofile-list.md
+      - name: Get windowsDriverUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofile-get.md
+      - name: Create windowsDriverUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofile-create.md
+      - name: Delete windowsDriverUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofile-delete.md
+      - name: Update windowsDriverUpdateProfile
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofile-update.md
+      - name: assign action
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md
+      - name: executeAction action
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md
+      - name: syncInventory action
+        href: ../../api/intune-softwareupdate-windowsdriverupdateprofile-syncinventory.md
+    - name: Windows driver update inventory
+      items:
+      - name: Windows driver update inventory
+        href: ../../resources/intune-softwareupdate-windowsdriverupdateinventory.md
+      - name: List windowsDriverUpdateInventories
+        href: ../../api/intune-softwareupdate-windowsdriverupdateinventory-list.md
+      - name: Get windowsDriverUpdateInventory
+        href: ../../api/intune-softwareupdate-windowsdriverupdateinventory-get.md
+      - name: Create windowsDriverUpdateInventory
+        href: ../../api/intune-softwareupdate-windowsdriverupdateinventory-create.md
+      - name: Delete windowsDriverUpdateInventory
+        href: ../../api/intune-softwareupdate-windowsdriverupdateinventory-delete.md
+      - name: Update windowsDriverUpdateInventory
+        href: ../../api/intune-softwareupdate-windowsdriverupdateinventory-update.md
+    - name: Windows Update catalog item
+      items:
+      - name: Windows Update catalog item
+        href: ../../resources/intune-softwareupdate-windowsupdatecatalogitem.md
+      - name: List windowsUpdateCatalogItems
+        href: ../../api/intune-softwareupdate-windowsupdatecatalogitem-list.md
+      - name: Get windowsUpdateCatalogItem
+        href: ../../api/intune-softwareupdate-windowsupdatecatalogitem-get.md
+    - name: Windows feature update catalog item
+      items:
+      - name: Windows feature update catalog item
+        href: ../../resources/intune-softwareupdate-windowsfeatureupdatecatalogitem.md
+      - name: List windowsFeatureUpdateCatalogItems
+        href: ../../api/intune-softwareupdate-windowsfeatureupdatecatalogitem-list.md
+      - name: Get windowsFeatureUpdateCatalogItem
+        href: ../../api/intune-softwareupdate-windowsfeatureupdatecatalogitem-get.md
+      - name: Create windowsFeatureUpdateCatalogItem
+        href: ../../api/intune-softwareupdate-windowsfeatureupdatecatalogitem-create.md
+      - name: Delete windowsFeatureUpdateCatalogItem
+        href: ../../api/intune-softwareupdate-windowsfeatureupdatecatalogitem-delete.md
+      - name: Update windowsFeatureUpdateCatalogItem
+        href: ../../api/intune-softwareupdate-windowsfeatureupdatecatalogitem-update.md
+    - name: Windows quality update catalog item
+      items:
+      - name: Windows quality update catalog item
+        href: ../../resources/intune-softwareupdate-windowsqualityupdatecatalogitem.md
+      - name: List windowsQualityUpdateCatalogItems
+        href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-list.md
+      - name: Get windowsQualityUpdateCatalogItem
+        href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-get.md
+      - name: Create windowsQualityUpdateCatalogItem
+        href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-create.md
+      - name: Delete windowsQualityUpdateCatalogItem
+        href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-delete.md
+      - name: Update windowsQualityUpdateCatalogItem
+        href: ../../api/intune-softwareupdate-windowsqualityupdatecatalogitem-update.md
+    - name: Complex types
+      items:
+      - name: All devices assignment target
+        href: ../../resources/intune-shared-alldevicesassignmenttarget.md
+      - name: All licensed users assignment target
+        href: ../../resources/intune-shared-alllicensedusersassignmenttarget.md
+      - name: Bulk driver action result
+        href: ../../resources/intune-softwareupdate-bulkdriveractionresult.md
+      - name: Configuration manager collection assignment target
+        href: ../../resources/intune-shared-configurationmanagercollectionassignmenttarget.md
+      - name: Device and app management assignment target
+        href: ../../resources/intune-shared-deviceandappmanagementassignmenttarget.md
+      - name: Exclusion group assignment target
+        href: ../../resources/intune-shared-exclusiongroupassignmenttarget.md
+      - name: Expedited windows quality update settings
+        href: ../../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md
+      - name: Group assignment target
+        href: ../../resources/intune-shared-groupassignmenttarget.md
+      - name: iOS available update version
+        href: ../../resources/intune-softwareupdate-iosavailableupdateversion.md
+      - name: Scope tag group assignment target
+        href: ../../resources/intune-shared-scopetaggroupassignmenttarget.md
+      - name: Windows driver update profile inventory sync status
+        href: ../../resources/intune-softwareupdate-windowsdriverupdateprofileinventorysyncstatus.md
+      - name: Windows Update rollout settings
+        href: ../../resources/intune-softwareupdate-windowsupdaterolloutsettings.md
 - name: Device updates (preview)
   displayName: Windows updates
   items:
