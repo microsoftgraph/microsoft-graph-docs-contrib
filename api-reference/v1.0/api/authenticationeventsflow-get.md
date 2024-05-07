@@ -10,7 +10,8 @@ doc_type: apiPageType
 # Get authenticationEventsFlow
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. Only [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object types are available.
+Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. The **@odata.type** property in the response object indicates the type of the authenticationEventListener object. The following derived subtypes are supported:
+- [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 

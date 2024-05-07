@@ -1,6 +1,6 @@
 ---
 title: "onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp resource type"
-description: "Managed handler for loading the authentication methods during the authentication step in an external identities user flow."
+description: "Managed handler that customizes the authentication methods an external user can select when authenticating to an application"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This is a managed handler for the loading of authentication methods during the authentication step in an external identities user flow on a Microsoft Entra workforce or customer tenant. It defines the authentication methods that a user can select.
+This is a managed handler for the event when authentication methods are ready to be presented to an external user in a customized authentication flow for an application on a Microsoft Entra external tenant. This handler defines which identity providers and authentication methods the user can select for primary (first-factor) authentication, and is defined as part of a multi-event policy, [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md). 
 
 Inherits from [onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md).
 

@@ -1,6 +1,6 @@
 ---
 title: "onInteractiveAuthFlowStartHandler resource type"
-description: "Represents a step in a multi-event user flow policy defining what happens when an authentication flow is ready to be initiated by the user."
+description: "A handler for when an authentication flow is ready to be initiated."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used to configure what to invoke if the **onInteractiveAuthFlowStart** event resolves to this listener. It represents a step in a multi-event policy that defines what happens when when an authentication flow is ready to be initiated.
+A handler for the event when an authentication flow is ready to be initiated.
 
 This is an abstract complex type from which the [onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp](../resources/oninteractiveauthflowstartexternalusersselfservicesignup.md) subtype is derived.
 

@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionHandler resource type"
-description: "Represents a step in a multi-event user flow policy defining what happens when attributes are ready to be collected from the user."
+description: "A handler for when attributes are collected in the authentication flow"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used to configure what to invoke when attributes are ready to be collected from the user as defined in the **onAttributeCollectionHandler** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
+A handler for the event when attributes are ready to be collected from the user in an authentication flow. May be part of an [authenticationEventsFlow](../resources/authenticationeventsflow.md).
 
 This is an abstract complex type from which the [onAttributeCollectionExternalUsersSelfServiceSignUp](../resources/onattributecollectionexternalusersselfservicesignup.md) subtype is derived.
 

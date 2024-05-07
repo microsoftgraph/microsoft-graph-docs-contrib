@@ -1,6 +1,6 @@
 ---
 title: "onUserCreateStartExternalUsersSelfServiceSignUp resource type"
-description: "Managed handler for user creation step in an external identities self-service sign-up user flow."
+description: "Managed handler that customizes how an external user is created during the provisioning flow"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a managed handler for the user creation step in an external identities self-service sign-up user flow on a Microsoft Entra workforce or customer tenant. It defines whether a guest or member user type is created.
+This is a managed handler for the user creation step of a customized authentication flow for an application in a Microsoft Entra external tenant defined by a multi-event policy, [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md). 
+It defines what type of user is created.
 
 Inherits from [onUserCreateStartHandler](../resources/onusercreatestarthandler.md). Complex type.
 

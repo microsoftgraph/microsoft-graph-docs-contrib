@@ -1,6 +1,6 @@
 ---
 title: "onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp resource type"
-description: "Managed handler for the starting authentication step of an external identities user flow."
+description: "Managed handler that customizes what happens when an external user initiates authenticating to an application."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This is a managed handler for the starting authentication step in an external identities user flow on a Microsoft Entra workforce or customer tenant. It defines whether a user can sign up, that is create an account; otherwise, a user will is only able to sign-in.
+This is a managed handler for the initiation of a customized authentication flow for an application on a Microsoft Entra external tenant. It defines whether a user can register (sign-up) or just sign-in, and is defined as part of a multi-event policy, [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md).
 
 Inherits from [onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md).
 

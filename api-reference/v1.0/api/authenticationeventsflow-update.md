@@ -10,7 +10,8 @@ doc_type: apiPageType
 # Update authenticationEventsFlow
 Namespace: microsoft.graph
 
-Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. Only the [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type is supported.
+Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. You must secify the **@odata.type** property. The following derived subtypes are supported:
+- [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 

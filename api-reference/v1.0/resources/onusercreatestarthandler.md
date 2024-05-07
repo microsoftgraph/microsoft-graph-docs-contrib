@@ -1,6 +1,6 @@
 ---
 title: "onUserCreateStartHandler resource type"
-description: "Represents a step in a multi-event user flow policy defining what happens during user creation."
+description: "A handler for when user is about to be created in a provisioning flow"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used to configure what to invoke during user creation as defined in the **onUserCreateStartHandler** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
+A handler for the event when a user is about to be created in a provisioning flow.  May be part of an [authenticationEventsFlow](../resources/authenticationeventsflow.md).
 
 This is an abstract complex type from which the [onUserCreateStartExternalUsersSelfServiceSignUp](../resources/onusercreatestartexternalusersselfservicesignup.md) subtype is derived.
 

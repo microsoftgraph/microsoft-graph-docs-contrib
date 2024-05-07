@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionExternalUsersSelfServiceSignUp resource type"
-description: "Managed handler for the attribute collection step in an external identities user flow."
+description: "Managed handler that customizes what attributes are collected from an external user when authenticating to an application"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This is a managed handler for the attribute collection step in an external identities user flow on a Microsoft Entra workforce or customer tenant. It defines what attributes to collect from a user and how the attribute collection will be rendered for the user.
+This is a managed handler for attribute collection step of a customized authentication flow for an application in a Microsoft Entra external tenant defined by a multi-event policy, [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md).  This handler defines what attributes to collect from a user. For web-hosted auth flows, it also defines how the attribute collection will be rendered for the user.
 
 Inherits from [onAttributeCollectionHandler](../resources/onattributecollectionhandler.md).
 

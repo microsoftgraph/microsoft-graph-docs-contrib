@@ -13,7 +13,16 @@ Namespace: microsoft.graph
 
 To customize the authentication process, listeners can be registered which specify that for some event, on some conditions, some custom logic can be invoked. This is an abstract type from which the following types are derived.
 
+- [onInteractiveAuthFlowStartListener resource type](../resources/oninteractiveauthflowstartlistener.md) resource type
+- [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
+- [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
+- [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
 - [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md) resource type
+
+> [!NOTE]
+>
+> You can have a maximum of 250 event listeners.
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods

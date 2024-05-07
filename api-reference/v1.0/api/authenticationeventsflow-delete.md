@@ -10,7 +10,8 @@ doc_type: apiPageType
 # Delete authenticationEventsFlow
 Namespace: microsoft.graph
 
-Delete a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) resource by ID. Only [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object types are available.
+Delete a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) resource by ID. The following derived subtypes are supported:
+- [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 

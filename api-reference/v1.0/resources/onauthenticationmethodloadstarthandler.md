@@ -1,6 +1,6 @@
 ---
 title: "onAuthenticationMethodLoadStartHandler resource type"
-description: "Represents a step in a multi-event user flow policy defining what happens when authentication methods are ready to be presented to the user."
+description: "A handler for when authentication methods are ready to be presented to the user in an authentication flow"
 author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used to configure what to invoke when authentication methods are ready to be presented to the user as defined in the **onAuthenticationMethodLoadStartHandler** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
+A handler for the event when authentication methods are ready to be presented to the user in an authentication flow.
 
 This is an abstract complex type from which the [onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp](../resources/onauthenticationmethodloadstartexternalusersselfservicesignup.md) subtype is derived.
 
