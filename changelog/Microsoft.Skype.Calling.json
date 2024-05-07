@@ -11,7 +11,7 @@
           "Target": "virtualEventWebinar"
         },
         {
-          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "Id": "1c97b312-73da-4ebc-bb0c-7ab74d883bd9",
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventWebinarRegistrationConfiguration",
           "ChangeType": "Addition",
