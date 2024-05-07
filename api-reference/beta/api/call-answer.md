@@ -19,6 +19,27 @@ The bot is expected to answer, [reject](./call-reject.md) or [redirect](./call-r
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
+| PSTN Scenerios                                                                           | supported/not supported |
+| -----------------------------------------------------------------------------------------| ------------------------|
+| Incoming call to Bot's PSTN number and then bot invites another PSTN                     | Supported               |
+| Incoming call to Bot's PSTN number and then bot transfer to another PSTN                 | Supported               |
+| Incoming call to Bot's PSTN number and then bot redirects to another PSTN                | Supported               |
+| Incoming call to Bot's UPN and then bot invites another PSTN                             | Not Supported           |
+| Incoming call to Bot's UPN and then bot transfer to another PSTN: Not supported          | Not Supported           |
+| Incoming call to Bot's UPN and then bot redirects to another PSTN: Not supported         | Not Supported           |
+| Incoming call to Bot's Instance Id and then bot invites another PSTN                     | Supported               |
+| Incoming call to Bot's Instance Id and then bot transfer to another PSTN                 | Supported               |
+| Incoming call to Bot's Instance Id and then bot redirects to another PSTN                | Supported               |
+| Incoming call to Bot's UPN from Scheduled Meeting and then bot invites PSTN              | Not Supported           |
+| Incoming call to Bot's Instance Id from Scheduled Meeting and then bot invites PSTN      | Supported               |
+| Outgoing call from Bot (with Instance Id) to a PSTN                                      | Supported               |
+| Outgoing call from Bot (without Instance Id) to a PSTN                                   | Not Supported           |
+| P2P call between Bot and another peer (Teams user, PSTN), bot invites another PSTN       | Supported               |
+| P2P call between Bot and another peer (Teams user, PSTN), bot invites another Teams user | Supported               |
+| Bot join the scheduled meeting and then invite PSTN                                      | Supported               |
+| Bot join the call using Join Token and then invite PSTN                                  | Not Supported           |
+
+
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
