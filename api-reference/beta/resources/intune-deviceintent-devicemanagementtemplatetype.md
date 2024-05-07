@@ -3,7 +3,7 @@ title: "deviceManagementTemplateType enum type"
 description: "Template type"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

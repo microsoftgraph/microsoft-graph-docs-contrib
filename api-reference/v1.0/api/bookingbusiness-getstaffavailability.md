@@ -3,7 +3,7 @@ title: "bookingsBusiness: getStaffAvailability"
 description: "Learn how to get the availability information of staff members of a Microsoft Bookings calendar."
 ms.localizationpriority: medium
 author: kwekua
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get the availability information of [staff members](../resources/bookingstaffmember.md) of a [Microsoft Bookings calendar](../resources/bookingappointment.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a [staffAvailabi
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

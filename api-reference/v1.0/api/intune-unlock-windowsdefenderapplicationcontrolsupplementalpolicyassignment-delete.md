@@ -3,7 +3,7 @@ title: "Delete windowsDefenderApplicationControlSupplementalPolicyAssignment"
 description: "Deletes a windowsDefenderApplicationControlSupplementalPolicyAssignment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

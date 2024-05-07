@@ -1,7 +1,7 @@
 ---
 title: "domainDnsTxtRecord resource type"
 description: "Represents a TXT record added to the DNS zone file of a particular domain in the tenant."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
@@ -17,7 +17,7 @@ Represents a TXT record added to the DNS zone file of a particular domain in the
 Direct queries to this resource aren't supported. See the [domain](domain.md) article for information on how to query for domain service records.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |id|String| Unique identifier assigned to this entity. Not nullable, Read-only. |
 |isOptional|Boolean| If false, the TXT record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. |
@@ -32,7 +32,7 @@ None
 
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

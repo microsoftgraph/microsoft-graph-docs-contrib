@@ -3,7 +3,7 @@ title: "Get callRecord"
 description: "Retrieve the properties and relationships of callrecord object."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and the requested [m
 
 #### Request
 
-The following is an example of the request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows a request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).
 
 
 # [HTTP](#tab/http)
@@ -176,7 +176,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.
+The following example shows a request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.
 
 
 # [HTTP](#tab/http)

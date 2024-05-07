@@ -3,7 +3,7 @@ title: "windows10VpnProxyServer resource type"
 description: "VPN Proxy Server."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

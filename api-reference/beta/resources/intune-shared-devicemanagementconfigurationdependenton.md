@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationDependentOn resource type"
 description: "Intune Shared Devicemanagementconfigurationdependenton Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Update properties in the definition of the specified schemaExtensi
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "extensions"
+ms.subservice: extensions
 ---
 
 # Update schemaExtension

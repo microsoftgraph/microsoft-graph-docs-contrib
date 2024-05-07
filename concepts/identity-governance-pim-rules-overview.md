@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: concept-article
-ms.prod: "governance"
+ms.subservice: entra-id-governance
 ms.date: 06/08/2023
 #Customer intent: As a developer, I want to understand how to map PIM settings in the Microsoft Entra admin center to the corresponding rules in Microsoft Graph, so that I can configure and update the rules effectively.
 ---
@@ -51,7 +51,7 @@ The following image shows the activation role settings on the Microsoft Entra ad
 | Number | Microsoft Entra admin center UX Description                                                                                                                                        | Microsoft Graph rule ID / Derived resource type                                                   | Enforced for caller |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------|
 | 1      | Activation maximum duration (hours)                                                                                                                                | `Expiration_EndUser_Assignment` / unifiedRoleManagementPolicyExpirationRule                       | End user            |
-| 2      | On activation, require: None, Azure MFA <br/><br/>Require ticket information on activation<br/><br/>Require justification on activation | `Enablement_EndUser_Assignment` / unifiedRoleManagementPolicyEnablementRule                        | End user               |
+| 2      | On activation, require: None, Azure MFA <br/><br/>Require ticket information on activation<br/><br/>Require justification on activation | `Enablement_Admin_Eligibility` / unifiedRoleManagementPolicyEnablementRule                        | Admin               |
 | 3      | On activation, require: Microsoft Entra Conditional Access authentication context (Preview)                                                                               | `AuthenticationContext_EndUser_Assignment` / unifiedRoleManagementPolicyAuthenticationContextRule | End user            |
 | 4      | Require approval to activate                                                                                                                                       | `Approval_EndUser_Assignment` / unifiedRoleManagementPolicyApprovalRule                           | End user            |
 

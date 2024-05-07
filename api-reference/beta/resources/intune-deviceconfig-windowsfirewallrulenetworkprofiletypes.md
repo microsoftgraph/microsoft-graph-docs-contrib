@@ -3,7 +3,7 @@ title: "windowsFirewallRuleNetworkProfileTypes enum type"
 description: "Flags representing which network profile types apply to a firewall rule."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

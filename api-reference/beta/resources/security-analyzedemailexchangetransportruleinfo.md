@@ -3,7 +3,7 @@ title: "analyzedEmailExchangeTransportRuleInfo resource type"
 description: Represents mail flow rules in Exchange Online.
 author: MishraSoumyaMS
 ms.localizationpriority: medium
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 

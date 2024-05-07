@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	permissionGrantPolicyIdsAssignedToDefaultUserRole = @(
-		"managePermissionGrantsForSelf.microsoft-user-default-low"
-	)
+	"managePermissionGrantsForSelf.microsoft-user-default-low"
+)
 }
 
 Update-MgBetaPolicyAuthorizationPolicy -AuthorizationPolicyId $authorizationPolicyId -BodyParameter $params

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-supportedLanguages, err := graphClient.Me().Outlook().SupportedLanguages().Get(context.Background(), nil)
+supportedLanguages, err := graphClient.Me().Outlook().SupportedLanguages().GetAsSupportedLanguagesGetResponse(context.Background(), nil)
 
 
 ```

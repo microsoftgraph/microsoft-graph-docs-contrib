@@ -4,7 +4,7 @@ description: "The status of a long-running operation."
 ms.localizationpriority: medium
 author: "zhvolosh"
 ms.reviewer: intelligentaccesspm
-ms.prod: teamwork
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 

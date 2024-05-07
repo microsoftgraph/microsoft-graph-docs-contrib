@@ -3,7 +3,7 @@ title: "cloudClipboardRoot resource type"
 description: "Represents the information and properties of a cloudClipboardRoot"
 author: "yuechen7"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Represents the information and properties of a cloudClipboardRoot and serves as 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List items](../api/cloudclipboardroot-list-items.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md) collection|"Get a list of the **cloudClipboard** items and their properties.|
+|[List items](../api/cloudclipboardroot-list-items.md)|[cloudClipboardItem](../resources/cloudclipboarditem.md) collection|Get a list of the **cloudClipboard** items and their properties.|
 
 ## Properties
 

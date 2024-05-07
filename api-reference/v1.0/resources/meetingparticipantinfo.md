@@ -3,7 +3,7 @@ title: "meetingParticipantInfo resource type"
 description: "Information about a participant in a meeting."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -39,7 +39,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

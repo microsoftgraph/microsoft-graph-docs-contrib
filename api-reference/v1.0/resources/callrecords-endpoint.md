@@ -3,7 +3,7 @@ title: "endpoint resource type"
 description: "The endpoint type"
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

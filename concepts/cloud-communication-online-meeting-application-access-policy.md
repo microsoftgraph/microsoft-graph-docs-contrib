@@ -3,7 +3,7 @@ title: "Configure an application access policy using the cloud communications AP
 description: "Use the cloud communications API in Microsoft Graph to configure an access policy that allows applications to access cloud communications resources."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Configure application access to online meetings or virtual events
@@ -34,7 +34,7 @@ The following table compares application access policy for online meeting and vi
 |----------|----------------|---------------|
 | _policy_1_ is assigned to _user_1_, _policy_2_ is assigned to _user_2_ | _app_1_ can only access online meetings as _user_1_<br>_app_2_ can only access online meetings as _user_2_ | _app_1_ can only access virtual events created by _user_1_<br>_app_2_ can only access virtual events created by _user_2_ |
 | _policy_1_ is assigned to _user_1_ and _user_2_ | _app_1_ can access online meetings as _user_1_<br>_app_1_ can access online meetings as _user_2_ | _app_1_ can access virtual events created by _user_1_<br>_app_1_ can access virtual events created by _user_2_ |
-| _policy_3_ is assigned to _user_1_, no policy is assigned to _user_2_ | _app_1_ can access online meeting as _user_1_ and _user_2_<br>No app can access online meeting as _user_2_ | _app_1_ can access virtual events created by _user_1_ and _user_2_<br>No app can access virtual events created by _user_2_ |
+| _policy_3_ is assigned to _user_1_, no policy is assigned to _user_2_ | _app_1_ and _app_2_ can access online meeting as _user_1_<br>No app can access online meeting as _user_2_ | _app_1_ and _app_2_ can access virtual events created by _user_1_<br>No app can access virtual events created by _user_2_ |
 | _policy_3_ is assigned to the whole tenant | Both _app_1_ and _app_2_ can access online meetings as either _user_1_ or _user_2_ |  Both _app_1_ and _app_2_ can access virtual events created by either _user_1_ or _user_2_ |
 
 ## Configure application access policy

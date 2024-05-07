@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationSetting resource type"
 description: "Intune Mam Devicemanagementconfigurationsetting Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

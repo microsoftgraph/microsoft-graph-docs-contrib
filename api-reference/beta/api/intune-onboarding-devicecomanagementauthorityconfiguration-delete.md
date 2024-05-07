@@ -3,7 +3,7 @@ title: "Delete deviceComanagementAuthorityConfiguration"
 description: "Deletes a deviceComanagementAuthorityConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

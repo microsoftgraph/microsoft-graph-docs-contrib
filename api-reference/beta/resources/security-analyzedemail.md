@@ -3,7 +3,7 @@ title: "analyzedEmail resource type"
 description: Contains metadata for email messages that are analyzed for security threats.
 author: "ajaj-shaikh"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.stop_hold_music_post_request_body import StopHoldMusicPostRequestBody
+from msgraph.generated.communications.calls.item.participants.item.stop_hold_music.stop_hold_music_post_request_body import StopHoldMusicPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -3,7 +3,7 @@ title: "iPv4Range resource type"
 description: "IPv4 Range definition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationGroupSettingValue resource type"
 description: "Value of the GroupSetting"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Value of the GroupSetting
 
 
-Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-mam-devicemanagementconfigurationsettingvalue.md)
+Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-shared-devicemanagementconfigurationsettingvalue.md)
 
 ## Properties
 |Property|Type|Description|

@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\PrintJob;
+use Microsoft\Graph\Generated\Models\PrintJobConfiguration;
+use Microsoft\Graph\Generated\Models\IntegerRange;
+use Microsoft\Graph\Generated\Models\PrintMargin;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

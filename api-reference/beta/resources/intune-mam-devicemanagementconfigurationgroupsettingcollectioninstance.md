@@ -3,7 +3,7 @@ title: "deviceManagementConfigurationGroupSettingCollectionInstance resource typ
 description: "Instance of a GroupSettingCollection"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -25,7 +25,7 @@ Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune
 |:---|:---|:---|
 |settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
-|groupSettingCollectionValue|[deviceManagementConfigurationGroupSettingValue](../resources/intune-mam-devicemanagementconfigurationgroupsettingvalue.md) collection|A collection of GroupSetting values|
+|groupSettingCollectionValue|[deviceManagementConfigurationGroupSettingValue](../resources/intune-shared-devicemanagementconfigurationgroupsettingvalue.md) collection|A collection of GroupSetting values|
 
 ## Relationships
 None

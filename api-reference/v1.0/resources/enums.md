@@ -2,7 +2,7 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
@@ -55,6 +55,15 @@ Namespace: microsoft.graph
 | otherExternalUser      |
 | serviceProvider        |
 | unknownFutureValue     |
+
+### migrationStatus values 
+
+|Member|
+|:---|
+|ready|
+|needsReview|
+|additionalStepsRequired|
+|unknownFutureValue|
 
 ### appCredentialRestrictionType values
 
@@ -137,6 +146,50 @@ Namespace: microsoft.graph
 | :----- |
 | user   |
 | group  |
+
+### multiTenantOrganizationMemberProcessingStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberRole values
+
+|Member|
+|:---|
+|owner|
+|member|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberState values
+
+|Member|
+|:---|
+|pending|
+|active|
+|removed|
+|unknownFutureValue|
+
+### multiTenantOrganizationState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### templateApplicationLevel values
+
+|Member|
+|:---|
+|none|
+|newPartners|
+|existingPartners|
+|unknownFutureValue|
 
 ### federatedIdpMfaBehavior values
 | Member                        |
@@ -2996,6 +3049,18 @@ Possible values for user account types (group membership), per Windows definitio
 | Failed           |
 | EntryLevelErrors |
 
+### stagedFeatureName values
+
+| Member                         |
+|:-------------------------------|
+| passthroughAuthentication      |
+| seamlessSso                    |
+| passwordHashSync               |
+| emailAsAlternateId             |
+| unknownFutureValue             |
+| certificateBasedAuthentication |
+| multiFactorAuthentication      |
+
 ### synchronizationJobRestartScope values
 
 |Member|
@@ -3219,3 +3284,15 @@ Possible values for user account types (group membership), per Windows definitio
 | assigned           |
 | unknownFutureValue |
 | inactive           |
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
+|unknownFutureValue|
