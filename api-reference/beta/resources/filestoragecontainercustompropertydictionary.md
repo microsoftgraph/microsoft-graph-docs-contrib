@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)] 
 
 Represents a [dictionary](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/dictionary.md)  that stores the custom properties of a [fileStorageContainer](../resources/filestoragecontainer.md) in key/value pairs.
 
