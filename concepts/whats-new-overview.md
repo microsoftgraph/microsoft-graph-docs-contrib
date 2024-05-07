@@ -22,6 +22,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added the **includeHiddenContent** property to the [sharePointOneDriveOptions](/graph/api/resources/sharepointonedriveoptions?view=graph-rest-beta&preserve-view=true) resource that allows you to include normally hidden content, such as archived content and SharePoint Embedded (RaaS), in search results.
 
+### Teamwork and communications | Messaging
+
+- Use the **reactionContentUrl** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) to represent the hosted content URL for a custom reaction in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
+- Use the `<customemoji></customemoji>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent custom emojis in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
+
 ## April 2024: New and generally available
 
 ### Applications
