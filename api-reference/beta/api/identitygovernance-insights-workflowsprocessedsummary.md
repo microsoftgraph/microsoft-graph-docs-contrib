@@ -1,9 +1,9 @@
 ---
 title: "insights: workflowsProcessedSummary"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "The summary of workflowsProcessedSummary for a lifecycle workflow."
+author: "krbain"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -13,11 +13,18 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Provide a summary of workflows processed for a specified time period. Because the amount of workflows processed results returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "identitygovernance-insights-workflowsprocessedsummary-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/identitygovernance-insights-workflowsprocessedsummary-permissions.md)]
 
 ## HTTP request
 
@@ -30,6 +37,7 @@ GET /identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary
 ```
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 The following table lists the parameters that are required when you call this function.
 
@@ -37,7 +45,6 @@ The following table lists the parameters that are required when you call this fu
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|The start and time of the workflowsProcessedSummary.|
 |endDateTime|DateTimeOffset|The end date time of the workflowsProcessedSummary.|
-
 
 ## Request headers
 
@@ -82,8 +89,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.identityGovernance.workflowsInsightsSummary"
+  {
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.workflowsInsightsSummary", 
+   "totalRuns" : 106,
+   "successfulRuns" : 71,
+   "failedRuns": 35,
+   "totalUsers" : 150,
+   "successfulUsers" : 112,
+   "failedUsers" : 38 ,
+   "totalTasks" : 75,
+   "successfulTasks" : 56,
+   "failedTasks" :19 ,  
   }
 }
 ```

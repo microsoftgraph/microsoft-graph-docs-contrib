@@ -18,6 +18,7 @@ Represents the insights container for the cross workflow reporting functionaliti
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/identitygovernance-lifecycleworkflowscontainer-list-insights.md)|[microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md) collection|Get a list of the [microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md) objects and their properties.|
