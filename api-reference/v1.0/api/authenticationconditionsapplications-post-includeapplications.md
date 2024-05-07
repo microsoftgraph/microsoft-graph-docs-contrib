@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Add includeApplication (to a user flow)
 Namespace: microsoft.graph
 
-Add or link an application to a user flow, or [authenticationEventsFlow](../resources/authenticationeventsflow.md).  This enables the authentication experience defined by the user flow to be enabled for the application. An application can only be linked to one user flow.
+Add or link an application to a user flow, or [authenticationEventsFlow](../resources/authenticationeventsflow.md). This enables the authentication experience defined by the user flow to be enabled for the application. An application can only be linked to one user flow.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]

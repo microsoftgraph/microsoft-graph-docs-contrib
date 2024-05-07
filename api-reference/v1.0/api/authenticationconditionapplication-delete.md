@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete authenticationConditionApplication (from a user flow)
 Namespace: microsoft.graph
 
-Remove or unlink [an application](../resources/authenticationconditionapplication.md) from an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. This disables the customized authentication experience that's defined for the application.
+Remove or unlink [an application](../resources/authenticationconditionapplication.md) from an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. This disables the customized authentication experience defined for the application.
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 

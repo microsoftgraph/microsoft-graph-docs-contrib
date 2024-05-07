@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Add identityProvider (to a user flow)
 Namespace: microsoft.graph
 
-Add an identity provider to an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type. The [identity provider must first be configured in the tenant](../api/identitycontainer-list-identityproviders.md).
+Add an identity provider to an external identities self-service user flow represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type. The [identity provider must first be configured in the tenant](../api/identitycontainer-list-identityproviders.md).
 
 
 ## Permissions
@@ -38,7 +38,7 @@ POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON representation of the ID of the [identityProvider](../resources/identityproviderbase.md) you want to add. For self-service sign up user flows, the values can be `EmailPassword-OAUTH`, `EmailOtpSignup-OAUTH`, `Google-OAUTH` or `Facebook-OAUTH`.
+In the request body, provide a JSON representation of the ID of the [identityProvider](../resources/identityproviderbase.md) you want to add. For self-service user flows, the values can be `EmailPassword-OAUTH`, `EmailOtpSignup-OAUTH`, `Google-OAUTH`, or `Facebook-OAUTH`.
 
 ## Response
 

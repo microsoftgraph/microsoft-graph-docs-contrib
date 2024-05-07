@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List includeApplications (for a user flow)
 Namespace: microsoft.graph
 
-List the applications linked to an [authenticationEventsFlow](../resources/authenticationeventsflow.md).  These are the applications for which the authentication experience defined by the user flow is enabled.
+List the applications linked to an [authenticationEventsFlow](../resources/authenticationeventsflow.md). These are the applications for which the authentication experience defined by the user flow is enabled.
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 

@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update authenticationEventsFlow
 Namespace: microsoft.graph
 
-Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. You must secify the **@odata.type** property. The following derived subtypes are supported:
+Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. You must specify the **@odata.type** property. The following derived subtypes are supported:
 - [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
@@ -66,7 +66,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 ### Example 1: Update the display name and priority of an authenticationEventsFlow
 
 #### Request
-The following example shows a request that updates the display name of a specific external identities user flow (an authentication event type), as well as the priority for all the listeners associated with the policy.
+The following example shows a request that updates the display name of a specific external identities user flow (an authentication event type), and the priority for all the listeners associated with the policy.
 
 <!-- {
   "blockType": "request",
@@ -95,9 +95,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update the onAttributeCollection event of a self-service sign up user flow
+### Example 2: Update the onAttributeCollection event of a self-service sign-up user flow
 
-Add city (built-in attribute) as an attribute to be collected during the attribute collection step of a self-service sign up user flow. You must specify in the **inputs** object all attributes that you want to retain, otherwise they are removed from the user flow.
+Add city (built-in attribute) as an attribute to be collected during the attribute collection step of a self-service sign-up user flow. You must specify in the **inputs** object all attributes that you want to retain, otherwise they're removed from the user flow.
 
 #### Request
 
@@ -189,9 +189,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Remove an attribute collected during a self-service sign up user flow
+### Example 3: Remove an attribute collected during a self-service sign-up user flow
 
-Remove city as an attribute to be collected during the attribute collection step of a self-service sign up user flow. By excluding the city attribute from the request body, the attribute is removed from the user flow.
+Remove city as an attribute to be collected during the attribute collection step of a self-service sign-up user flow. By excluding the city attribute from the request body, the attribute is removed from the user flow.
 
 #### Request
 
