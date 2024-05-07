@@ -49,7 +49,7 @@ Content-Type: application/json
 ## Subscribe to changes in a particular chat
 
 
-To get change notifications for all changes related to a particular chat, subscribe to `/chats/{id}`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This resource also supports [providing the `notifyOnUserSpecificProperties` query string parameter](#notification-payloads-for-user-specific-properties) in user context.
+To get change notifications for all changes related to a particular chat, subscribe to `/chats/{id}`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification and [providing the **notifyOnUserSpecificProperties** query string parameter](#notification-payloads-for-user-specific-properties) in user context.
 
 ### Permissions
 
@@ -62,6 +62,8 @@ To get change notifications for all changes related to a particular chat, subscr
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### Example 1: Subscribe to changes in a particular chat
+
+The following example shows how to subscribe to receive notifications of changes in a particular chat.
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -79,7 +81,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to changes in a particular chat with the `notifyOnUserSpecificProperties` query parameter provided
+### Example 2: Subscribe to changes in a particular chat using the **notifyOnUserSpecificProperties** query parameter
+
+The following example shows how to subscribe to receive notifications of changes in a particular chat by providing the **notifyOnUserSpecificProperties** query parameter.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -97,21 +101,23 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to changes at the user level (preview)
+## Subscribe to changes in any chat at user level (preview)
 
-To get notified of all changes across all chats a particular user is part of, subscribe to `/users/{user-id}/chats`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This resource also supports [providing the `notifyOnUserSpecificProperties` query string parameter](#notification-payloads-for-user-specific-properties) in user context.
+To get change notifications for all changes across all chats a particular user is part of, subscribe to `/users/{user-id}/chats`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification and [providing the **notifyOnUserSpecificProperties** query string parameter](#notification-payloads-for-user-specific-properties) in user context.
 
 [!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
 ### Permissions
 
-| Permission type                        | Permissions (from least to most privileged)                  |
-| :------------------------------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Chat.ReadBasic, Chat.Read, Chat.ReadWrite                                               |
-| Delegated (personal Microsoft account) | Not supported.                                               |
+| Permission type                        | Permissions (from least to most privileged)           |
+| :------------------------------------- | :---------------------------------------------------- |
+| Delegated (work or school account)     | Chat.ReadBasic, Chat.Read, Chat.ReadWrite             |
+| Delegated (personal Microsoft account) | Not supported.                                        |
 | Application                            | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
-### Example 1: Subscribe to user level chats
+### Example 1: Subscribe to changes in user-level chats
+
+The following example shows how to subscribe to receive notifications of changes across all chats a particular user is part of.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -129,7 +135,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to user level chats using the 'me' path
+### Example 2: Subscribe to changes in user-level chats using the `me` path
+
+The following example shows how to subscribe to receive notifications of changes across all chats the signed-in user is part of.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -147,7 +155,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Subscribe to user level chats with the `notifyOnUserSpecificProperties` query parameter provided
+### Example 3: Subscribe to changes in user-level chats using the **notifyOnUserSpecificProperties** query parameter
+
+The following example shows how to subscribe to receive notifications of changes across all chats a particular user is part of by providing the **notifyOnUserSpecificProperties** query parameter.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -197,7 +207,7 @@ Content-Type: application/json
 }
 ```
 
-## Notification Payloads
+## Notification payloads
 
 ### Notifications with resource data
 
@@ -277,9 +287,10 @@ The decrypted notification payload looks like the following. The payload conform
 ```
 
 #### Notification payloads for user-specific properties
-When the query string parameter `notifyOnUserSpecificProperties` with value `true` is provided during subscription creation, two types of payloads with different sets of information will be sent to the subscriber. One type will contain user-specific properties while the other will not contain user-specific properties. 
 
-> **Note**: The query string parameter `notifyOnUserSpecificProperties` is only supported for chat subscriptions in user context. It is only supported for subscriptions to a particular chat or subscriptions at the user level.
+When you provide the query string parameter **notifyOnUserSpecificProperties** with value `true` during subscription creation, two types of payloads with different sets of information are sent to the subscriber. One type contains user-specific properties, while the other doesn't contain user-specific properties.
+
+> **Note**: The query string parameter **notifyOnUserSpecificProperties** is only supported for chat subscriptions in user context. It is only supported for subscriptions to a particular chat or subscriptions at the user level.
 
 The following payload describes the information sent in the request for notifications containing user-specific properties.
 
