@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Groups\Item\Members\Graph\User\$count\CountRequestBuilderGetRequestConfiguration;
+use Microsoft\Graph\Generated\Groups\Item\Members\Graph\User\Count\CountRequestBuilderGetRequestConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

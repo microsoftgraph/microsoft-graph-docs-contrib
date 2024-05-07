@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.redirect_post_request_body import RedirectPostRequestBody
+from msgraph.generated.print.printers.item.jobs.item.redirect.redirect_post_request_body import RedirectPostRequestBody
 from msgraph.generated.models.print_job_configuration import PrintJobConfiguration
 from msgraph.generated.models.integer_range import IntegerRange
 from msgraph.generated.models.print_margin import PrintMargin

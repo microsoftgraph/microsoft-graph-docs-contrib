@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.servicePrincipals.item.synchronization.jobs.item.restart.restart_request_builder import RestartRequestBuilder
-from msgraph.generated.models.restart_post_request_body import RestartPostRequestBody
+from msgraph.generated.service_principals.item.synchronization.jobs.item.restart.restart_request_builder import RestartRequestBuilder
+from msgraph.generated.serviceprincipals.item.synchronization.jobs.item.restart.restart_post_request_body import RestartPostRequestBody
 from msgraph.generated.models.synchronization_job_restart_criteria import SynchronizationJobRestartCriteria
 
 graph_client = GraphServiceClient(credentials, scopes)

@@ -57,6 +57,7 @@ The following example updates the description and display name for a multitenant
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_multitenantorganization"
@@ -71,6 +72,12 @@ Content-Type: application/json
   "description": "Multitenant organization between Contoso, Fabrikam, and Woodgrove Bank"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-multitenantorganization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
