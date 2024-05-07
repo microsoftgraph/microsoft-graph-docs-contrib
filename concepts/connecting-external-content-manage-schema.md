@@ -143,6 +143,26 @@ For discovery (search scenarios), note the following:
 - When you use a property as a label that contains large content, you might increase search latency and have to wait longer for search to return results.
 - Especially in the scenario where you configure a custom vertical that allows search over more than one connection, the search results greatly benefit from appointing as many labels as possible.
 
+### Rank hints 
+
+Rank hints can be applied to textual properties that are not mapped to semantic labels and are set as searchable. They can be set in a range from **default** to **very high** in the Search admin portal. The hints are consumed with other attributes of each item, to return the most relevant items for a given query. 
+
+Use the following steps to set rank hints:
+
+1. On the **Search and intelligence** tab in the admin portal, go to **Customization** > **Relevance tuning**. 
+
+  ![Screenshot of the Search and intelligence tab with Relevance Tuning highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/6f58a0b7-a558-4709-803b-fcbae9cb4eb3)
+
+2. To see a list of connections that can be tuned, choose **View Details** > **Configure rank hints**.  
+
+  ![Screenshot of the Relevance tuning tab with Configure rank hints highlighted](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/7472fceb-6062-4079-8205-ce165ff12788)
+
+3. Change the importance weights on available source properties.
+
+  ![Screenshot of the Relevance tuning tab showing importance weights for a selected property](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/assets/72018014/51f79ff9-5a1f-405c-86ba-2aad677fb95b)
+
+
+
 ### Default result types
 
 Labels also affect how default result types are generated. Adding the title and content labels at a minimum ensures that a result type is created for your connection.
