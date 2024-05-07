@@ -288,9 +288,9 @@ The decrypted notification payload looks like the following. The payload conform
 
 #### Notification payloads for user-specific properties
 
-When you provide the query string parameter **notifyOnUserSpecificProperties** with value `true` during subscription creation, two types of payloads with different sets of information are sent to the subscriber. One type contains user-specific properties, while the other doesn't contain user-specific properties.
+When you provide the query string parameter **notifyOnUserSpecificProperties** with value `true` during subscription creation, two types of payloads with different sets of information are sent to the subscriber. One type contains user-specific properties; the other doesn't contain user-specific properties.
 
-> **Note**: The query string parameter **notifyOnUserSpecificProperties** is only supported for chat subscriptions in user context. It is only supported for subscriptions to a particular chat or subscriptions at the user level.
+> **Note**: The query string parameter **notifyOnUserSpecificProperties** is supported only for chat subscriptions in user context, specifically for subscriptions to a particular chat or at the user level.
 
 The following payload describes the information sent in the request for notifications containing user-specific properties.
 
