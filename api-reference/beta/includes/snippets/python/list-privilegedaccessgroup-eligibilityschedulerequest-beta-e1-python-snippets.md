@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.identityGovernance.privilegedAccess.group.eligibilityScheduleRequests.eligibility_schedule_requests_request_builder import EligibilityScheduleRequestsRequestBuilder
+from msgraph.generated.identity_governance.privileged_access.group.eligibility_schedule_requests.eligibility_schedule_requests_request_builder import EligibilityScheduleRequestsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

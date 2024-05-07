@@ -607,6 +607,154 @@
       "CreatedDateTime": "2023-07-24T14:01:24.5697379Z",
       "WorkloadArea": "Security",
       "SubArea": "Records management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
+          "ApiChange": "GET",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed subCategory to subcategory in the URL.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
+          "ApiChange": "POST",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed subCategory to subcategory in the URL.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
+          "ApiChange": "DELETE",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed subCategory to subcategory in the URL.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appliedCategory",
+          "ChangeType": "Change",
+          "Description": "Renamed the **appliedCategory** resource type to [filePlanAppliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanappliedcategory?view=graph-rest-v1.0).",
+          "Target": "filePlanAppliedCategory"
+        },
+        {
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authority",
+          "ChangeType": "Change",
+          "Description": "Renamed the **authority** resource to [filePlanAuthority](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanauthority?view=graph-rest-v1.0).",
+          "Target": "filePlanAuthority"
+        },
+        {
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "citation",
+          "ChangeType": "Change",
+          "Description": "Renamed the **citation** resource to [filePlanCitation](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplancitation?view=graph-rest-v1.0).",
+          "Target": "filePlanCitation"
+        },
+        {
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "department",
+          "ChangeType": "Change",
+          "Description": "Renamed the **department** resource to [filePlanDepartment](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandepartment?view=graph-rest-v1.0).",
+          "Target": "filePlanDepartment"
+        },
+        {
+          "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subCategory",
+          "ChangeType": "Change",
+          "Description": "Renamed the **subCategory** resource to [filePlanSubcategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplansubcategory?view=graph-rest-v1.0).",
+          "Target": "filePlanSubcategory"
+        }
+      ],
+      "Id": "5d38e6be-8f67-484f-a13e-5b75fc67f0ca",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-04-30T14:01:24.5697379Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Records management"
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "GET",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed subCategory to subcategory in the URL.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "POST",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed subCategory to subcategory in the URL.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "DELETE",
+          "ChangedApiName": "subcategoryTemplate",
+          "ChangeType": "Change",
+          "Description": "Changed subCategory to subcategory in the URL.",
+          "Target": "subcategoryTemplate"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appliedCategory",
+          "ChangeType": "Change",
+          "Description": "Renamed the **appliedCategory** resource type to [filePlanAppliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanappliedcategory?view=graph-rest-beta).",
+          "Target": "filePlanAppliedCategory"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authority",
+          "ChangeType": "Change",
+          "Description": "Renamed the **authority** resource to [filePlanAuthority](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplanauthority?view=graph-rest-beta).",
+          "Target": "filePlanAuthority"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "citation",
+          "ChangeType": "Change",
+          "Description": "Renamed the **citation** resource to [filePlanCitation](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplancitation?view=graph-rest-beta).",
+          "Target": "filePlanCitation"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "department",
+          "ChangeType": "Change",
+          "Description": "Renamed the **department** resource to [filePlanDepartment](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplandepartment?view=graph-rest-beta).",
+          "Target": "filePlanDepartment"
+        },
+        {
+          "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subCategory",
+          "ChangeType": "Change",
+          "Description": "Renamed the **subCategory** resource to [filePlanSubcategory](https://learn.microsoft.com/en-us/graph/api/resources/security-fileplansubcategory?view=graph-rest-beta).",
+          "Target": "filePlanSubcategory"
+        }
+      ],
+      "Id": "bf8a9227-dd36-44d4-9879-235020c5fd9d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-30T14:01:24.5697379Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Records management"
     }
   ]
 }
