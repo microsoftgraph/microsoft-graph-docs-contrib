@@ -55,6 +55,7 @@ In the request body, provide a JSON object with the following parameters.
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
 | name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
+| childrenOnly    | bool                                           | Optional. Default is false. If set to true, it will the copy the driveItem's children only without copying the driveItem itself. Valid on for folder items. |
 
 **Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
 
@@ -62,12 +63,12 @@ In the request body, provide a JSON object with the following parameters.
 
 Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.
 
-## Example
+## Examples
 
 This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The new copy of the file is named `contoso plan (copy).txt`.
 
-### Request
+### Request 1
 
 The following example shows a request.
 
@@ -84,6 +85,64 @@ Content-Type: application/json
     "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
   },
   "name": "contoso plan (copy).txt"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/copy-item-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/copy-item-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/copy-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/copy-item-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/copy-item-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/copy-item-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+This example copies the children in a folder identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
+The new copy of the file is named `contoso plan (copy).txt`. The childrenOnly boolean set to true.
+
+### Request 2
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
+Content-Type: application/json
+
+{
+  "parentReference": {
+    "driveId": "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B",
+    "id": "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+  },
+  "name": "contoso plan (copy).txt".
+  "childrenOnly": true
 }
 ```
 
