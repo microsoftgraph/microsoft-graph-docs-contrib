@@ -311,7 +311,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_authenticationeventsflow_selfservicesignup_identityproviders"

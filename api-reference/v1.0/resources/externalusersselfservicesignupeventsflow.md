@@ -84,12 +84,6 @@ The following JSON representation shows the resource type.
   "onAttributeCollection": {
     "@odata.type": "microsoft.graph.onAttributeCollectionHandler"
   },
-  "onAttributeCollectionStart": {
-    "@odata.type": "microsoft.graph.onAttributeCollectionStartHandler"
-  },
-  "onAttributeCollectionSubmit": {
-    "@odata.type": "microsoft.graph.onAttributeCollectionSubmitHandler"
-  },
   "onUserCreateStart": {
     "@odata.type": "microsoft.graph.onUserCreateStartHandler"
   }
