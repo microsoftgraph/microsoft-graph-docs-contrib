@@ -1,18 +1,18 @@
 ---
-title: "List subCategories"
-description: "Get the subCategoryTemplate resources from the subCategories navigation property."
+title: "List subcategories"
+description: "Get a list of subcategoryTemplate resources associated with a category template."
 author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List subCategories
+# List subcategories
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of subcategories [subCategoryTemplate](../resources/security-subcategorytemplate.md) associated with a category template.
+Get a list of [subcategoryTemplate](../resources/security-subcategorytemplate.md) objects associated with a category template.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/labels/categories/{categoryTemplateId}/subCategories
+GET /security/labels/categories/{categoryTemplateId}/subcategories
 ```
 
 ## Optional query parameters
@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.subcategoryTemplate](../resources/security-subcategorytemplate.md) objects in the response body.
 
 ## Examples
 
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/categories/{categoryTemplateId}/subCategories
+GET https://graph.microsoft.com/beta/security/labels/categories/{categoryTemplateId}/subcategories
 ```
 
 # [C#](#tab/csharp)
@@ -101,7 +101,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.subCategoryTemplate)"
+  "@odata.type": "Collection(microsoft.graph.security.subcategoryTemplate)"
 }
 -->
 ``` http
@@ -111,7 +111,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
+      "@odata.type": "#microsoft.graph.security.subcategoryTemplate",
       "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
       "displayName": "Vendor Invoice",
       "createdBy": {

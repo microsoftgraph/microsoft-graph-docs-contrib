@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "badd5ede-5cd6-420c-b715-1c763643091f",
+          "ApiChange": "Member",
+          "ChangedApiName": "delegatedAdminRelationshipUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the `delegatedAdminRelationshipUpdate` member to the **delegatedAdminRelationshipOperationType** enumeration.",
+          "Target": "delegatedAdminRelationshipOperationType"
+        }
+      ],
+      "Id": "badd5ede-5cd6-420c-b715-1c763643091f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-03T11:48:19.6470118Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Partner customer administration"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "eb1faabd-d16d-4935-8ef3-be6337245147",
           "ApiChange": "Member",
           "ChangedApiName": "delegatedAdminRelationshipUpdate",
@@ -255,8 +273,7 @@
       "SubArea": "Partner customer administration"
     },
     {
-      "ChangeList":
-      [
+      "ChangeList": [
         {
           "Id": "143620a9-1156-453f-abf1-816e9c72a5ee",
           "ApiChange": "Enum Type",
@@ -477,7 +494,7 @@
     },
     {
       "ChangeList": [
-		    {
+        {
           "Id": "d68a33be-ca1b-461a-b215-69ba3144a394",
           "ApiChange": "Member",
           "ChangedApiName": "approve",
@@ -537,29 +554,29 @@
     },
     {
       "ChangeList": [
-            {
-              "Id": "80aec7bf-811c-46b9-bb97-9db36b618153",
-              "ApiChange": "Property",
-              "ChangedApiName": "autoExtendDuration",
-              "ChangeType": "Addition",
-              "Description": "Added the **autoExtendDuration** property to the [delegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationship?view=graph-rest-1.0) resource.",
-              "Target": "delegatedAdminRelationship"
-            },
-            {
-              "Id": "80aec7bf-811c-46b9-bb97-9db36b618153",
-              "ApiChange": "Property",
-              "ChangedApiName": "autoExtendDuration",
-              "ChangeType": "Addition",
-              "Description": "Added the **autoExtendDuration** property to the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-1.0) resource.",
-              "Target": "resellerDelegatedAdminRelationship"
-            }
-          ],
+        {
           "Id": "80aec7bf-811c-46b9-bb97-9db36b618153",
-          "Cloud": "Prod",
-          "Version": "v1.0",
-          "CreatedDateTime": "2023-10-26T07:11:11.4334173Z",
-          "WorkloadArea": "Identity and access",
-          "SubArea": "Partner customer administration"
+          "ApiChange": "Property",
+          "ChangedApiName": "autoExtendDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoExtendDuration** property to the [delegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationship?view=graph-rest-1.0) resource.",
+          "Target": "delegatedAdminRelationship"
+        },
+        {
+          "Id": "80aec7bf-811c-46b9-bb97-9db36b618153",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoExtendDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoExtendDuration** property to the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-1.0) resource.",
+          "Target": "resellerDelegatedAdminRelationship"
         }
-      ]
+      ],
+      "Id": "80aec7bf-811c-46b9-bb97-9db36b618153",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-26T07:11:11.4334173Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Partner customer administration"
     }
+  ]
+}

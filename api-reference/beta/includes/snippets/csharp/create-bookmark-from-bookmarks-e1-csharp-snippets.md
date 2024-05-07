@@ -24,7 +24,7 @@ var requestBody = new Bookmark
 		},
 		ReservedKeywords = new List<string>
 		{
-			"Contoso",
+			"Unique keyword",
 		},
 		MatchSimilarKeywords = true,
 	},
