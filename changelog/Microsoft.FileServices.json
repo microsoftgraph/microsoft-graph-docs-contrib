@@ -109,7 +109,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",
           "ChangeType": "Addition",
-          "Description": "Added the **permissions** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **permissions** relationship to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
         },
         {
@@ -117,7 +117,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "drive",
           "ChangeType": "Addition",
-          "Description": "Added the **drive** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **drive** relationship to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
         },
         {
@@ -125,7 +125,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "columnDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the **columnDefinition** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **columnDefinition** relationship to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
         },
         {
@@ -133,7 +133,23 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "recycleBin",
           "ChangeType": "Addition",
-          "Description": "Added the **recycleBin** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **recycleBin** relationship to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
+          "ApiChange": "Property",
+          "ChangedApiName": "	fileStorageContainerOwnershipType",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileStorageContainerOwnershipType** property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
+          "ApiChange": "Property",
+          "ChangedApiName": "	fileStorageContainerStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileStorageContainerStatus** property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
         }
       ],
