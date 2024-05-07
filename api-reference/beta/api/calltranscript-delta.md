@@ -26,6 +26,13 @@ State tokens are opaque to the client. To proceed with a round of change trackin
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
+### Known issues
+
+The following known issues are associated with this API:
+
+- [Using the `$top` query parameter might not return the @odata.nextLink](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
+- [Delta queries might older artifacts when meetings have unrelated changes](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934).
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -52,11 +59,6 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 | `$skiptoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked. |
 | `$top`    |     integer     | Allows the caller to specify the maximum number of objects per page. |
 
-> [!NOTE]
-> The following known issues are associated with this API:
->
-> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931)` related to using the `top` query.
-> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934)` related to returning older items for unrelated changes to meetings.
 
 ## Request headers
 | Header        | Value                     |
