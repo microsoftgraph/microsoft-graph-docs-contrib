@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects from the deleted container collection.
+Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects from the deleted container collection. 
 
 ## Permissions
 

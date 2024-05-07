@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a [fileStorageContainer](../resources/filestoragecontainer.md) that has been deleted and is currently in the deleted container collection. 
+Restore a [fileStorageContainer](../resources/filestoragecontainer.md) that has been deleted and is currently in the deleted container collection.  
 
 ## Permissions
 

@@ -1,5 +1,5 @@
 ---
-title: "Permanently delete fileStorageContainer"
+title: "fileStorageContainer: permanentDelete"
 description: "Permanently delete a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
