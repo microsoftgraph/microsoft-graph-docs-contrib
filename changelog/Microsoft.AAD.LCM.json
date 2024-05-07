@@ -57,6 +57,96 @@
     {
       "ChangeList": [
         {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Resource",
+          "ChangedApiName": "topTasksInsightsSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [topTasksInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topTasksInsightsSummary?view=graph-rest-beta) resource.",
+          "Target": "topTasksInsightsSummary"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Resource",
+          "ChangedApiName": "topWorkflowsInsightsSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [topWorkflowsInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topWorkflowsInsightsSummary?view=graph-rest-beta) resource.",
+          "Target": "topWorkflowsInsightsSummary"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowsInsightsByCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowsInsightsByCategory](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsInsightsByCategory?view=graph-rest-beta) resource.",
+          "Target": "workflowsInsightsByCategory"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowsInsightsSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowsInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsInsightsSummary?view=graph-rest-beta) resource.",
+          "Target": "workflowsInsightsSummary"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Resource",
+          "ChangedApiName": "insights",
+          "ChangeType": "Addition",
+          "Description": "Added the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource.",
+          "Target": "insights"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "insights",
+          "ChangeType": "Addition",
+          "Description": "Added the **insights** relationship to the [lifecycleWorkflowsContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleWorkflowsContainer?view=graph-rest-beta) resource.",
+          "Target": "lifecycleWorkflowsContainer"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Method",
+          "ChangedApiName": "topTasksProcessedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [topTasksProcessedSummary](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [topTasksProcessedSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topTasksProcessedSummary?view=graph-rest-beta) resource.",
+          "Target": "topTasksProcessedSummary"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Method",
+          "ChangedApiName": "topWorkflowsProcessedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [topWorkflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [topWorkflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topWorkflowsProcessedSummary?view=graph-rest-beta) resource.",
+          "Target": "topWorkflowsProcessedSummary"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Method",
+          "ChangedApiName": "workflowsProcessedByCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowsProcessedByCategory](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [workflowsProcessedByCategory](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsProcessedByCategory?view=graph-rest-beta) resource.",
+          "Target": "workflowsProcessedByCategory"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Method",
+          "ChangedApiName": "workflowsProcessedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [workflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsProcessedSummary?view=graph-rest-beta) resource.",
+          "Target": "workflowsProcessedSummary"
+        }
+      ],
+      "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-07T20:19:39.6796022Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8daac6d1-148c-4f4e-ba80-241e70edaf9e",
           "ApiChange": "Relationship",
           "ChangedApiName": "lifecycleWorkflows",
