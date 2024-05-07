@@ -19,14 +19,14 @@ Currently, the **virtualEventWebinarRegistrationConfiguration** resource inherit
 
 ## Methods
 
-| Method | Return Type |Description |
-| ------ | ----------- | ---------- |
+|Method|Return type|Description|
+|:---|:---|:---|
 | [Get virtualEventWebinarRegistrationConfiguration](../api/virtualeventwebinarregistrationconfiguration-get.md) | [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) | Read the properties and relationships of a [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object. |
 
 ## Properties
 
-| Property | Type | Description |
-| ---------| ---- | ------------|
+|Property|Type|Description|
+|:---|:---|:---|
 | registrationWebUrl | String | Registration portal URL of the webinar. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 
 ## JSON representation
