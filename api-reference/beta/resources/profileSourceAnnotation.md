@@ -20,7 +20,6 @@ Represents the sources the user data comes from, such as Entra, UPA, Connector, 
 | Property	    | Type	                                            |Description                                                               |
 |:--------------|:--------------------------------------------------|:-------------------------------------------------------------------------|
 |id             |String                                             |Unique identifier of the source.                                          |
-|profileSource  |[profileSource](../resources/profileSource.md)     |Represents metadata of the Source like displayName, webUrl, localizations.|
 |isDefaultSource|Boolean                                            |Flag to indicate whether the source is the default one.                   |
 |properties     |Collection(String)                                 |Names of properties having data from this source.                         |
 
@@ -39,9 +38,6 @@ The following JSON representation shows the resource type.
 ```json
 {
   "id": "String (GUID)",
-  "profileSource": {
-    "@odata.type": "microsoft.graph.profileSource"
-  },
   "isDefaultSource": "Boolean",
   "properties": "Collection(String)"
 }
