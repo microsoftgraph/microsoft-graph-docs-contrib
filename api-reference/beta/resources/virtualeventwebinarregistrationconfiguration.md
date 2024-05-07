@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Contains information about a webinar registration configuration.
 
+Currently, the **virtualEventWebinarRegistrationConfiguration** resource inherits a subset of the properties and relationships from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md).
+
 ## Methods
 
 | Method | Return Type |Description |
@@ -25,7 +27,7 @@ Contains information about a webinar registration configuration.
 
 | Property | Type | Description |
 | ---------| ---- | ------------|
-| registrationWebUrl | String | Registration portal URL of the webinar. |
+| registrationWebUrl | String | Registration portal URL of the webinar. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 
 ## JSON representation
 
@@ -35,7 +37,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventWebinarRegistrationConfiguration",
-  "baseType": "microsoft.graph.entity",
+  "baseType": "microsoft.graph.virtualEventRegistrationConfiguration",
   "openType": false
 }
 -->
