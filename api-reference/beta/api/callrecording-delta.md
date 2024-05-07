@@ -53,11 +53,15 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 | `$top` |     integer     | Allows the caller to specify the maximum number of objects per page. |
 
 > [!NOTE]
-> The following known issues are associated with the query parameters: 
-> - The `top` query might not return a nextLink. To get the nextLink, avoid using the `top` query.
-> - The delta API might return older recordings that are synced and not newly modified. This happens when there are unrelated updates to meetings. As a workaround, the created date time returned with each recording can be used to identify old or new recordings.
+> The following known issues are associated with this API:
+>
+> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931)` related to using the `top` query.
+> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22932)` related to accessing content URL for meetings which do not have any valid content to transcribe.
+> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22933)` related to exporting recordings for meetings which do not have transcription turned on.
+> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934)` related to returning older items for unrelated changes to meetings.
 
 ## Request headers
+
 | Header        | Value                     |
 |---------------|---------------------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|

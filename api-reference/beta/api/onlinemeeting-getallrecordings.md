@@ -56,11 +56,13 @@ In the request URL, provide the following query parameters with values.
 | Page size              |     ✓     | `top`                                                   | Allows caller to specify max number of objects per page. |
 
 > [!NOTE]
-> The following known issues are associated with the query parameters:
-> - The `top` query might not return a nextLink. To get the nextLink, avoid using the `top` query.
-> - For older meetings where transcripts are not turned on, the result might not include the recordings.
+> The following known issues are associated with this API:
+>
+> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931)` related to using the `top` query.
+> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22933)` related to exporting recordings for meetings which do not have transcription turned on.
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|

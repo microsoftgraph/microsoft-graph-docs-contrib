@@ -56,11 +56,13 @@ In the request URL, provide the following query parameters with values.
 | Page size              |     ✓     | `top`                                                   | Allows the caller to specify the maximum number of objects per page. |
 
 > [!NOTE]
-> - The `top` query might not return a nextLink. To get the nextLink, avoid using the `top` query.
-> - When a meeting doesn't have any spoken words, accessing the transcript content URL returns an error.
-
+> The following known issues are associated with this API:
+>
+> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931)` related to using the `top` query.
+> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22932)` related to accessing content URL for meetings which do not have any valid content to transcribe.
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
