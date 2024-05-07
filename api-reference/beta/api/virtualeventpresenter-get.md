@@ -1,7 +1,7 @@
 ---
 title: "Get presenter"
 description: "Read the properties and relationships of a virtualEventPresenter object."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
+
+Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -34,6 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
 GET /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
 ```
 

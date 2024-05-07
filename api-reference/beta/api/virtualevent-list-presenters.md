@@ -1,7 +1,7 @@
 ---
 title: "List presenters"
 description: "Get the list of all virtualEventPresenter objects of a virtual event."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the list of all [virtualEventPresenter](../resources/virtualeventpresenter.md) objects associated with a virtual event.
 
-Currently the supported virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,10 +36,10 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-To list all presenters of a town hall:
 
 ``` http
-GET /solutions/virtualEvents/townhalls/{townhallId}/presenters
+GET /solutions/virtualEvents/webinars/{id}/presenters
+GET /solutions/virtualEvents/townhalls/{id}/presenters
 ```
 
 ## Request headers
