@@ -59,6 +59,7 @@ If successful, this method returns a `204 No Content` response code and an updat
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_trustframeworkkey_v2"
@@ -72,6 +73,12 @@ Content-Type: application/json
   "status": "enabled"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-trustframeworkkey-v2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
