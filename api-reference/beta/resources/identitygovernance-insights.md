@@ -21,11 +21,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/identitygovernance-lifecycleworkflowscontainer-list-insights.md)|[microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md) collection|Get a list of the [microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md) objects and their properties.|
-|[Create](../api/identitygovernance-lifecycleworkflowscontainer-post-insights.md)|[microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md)|Create a new [microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md) object.|
-|[Get](../api/identitygovernance-insights-get.md)|[microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md)|Read the properties and relationships of a [microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md) object.|
-|[Update](../api/identitygovernance-insights-update.md)|[microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md)|Update the properties of a [microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md) object.|
-|[Delete](../api/identitygovernance-lifecycleworkflowscontainer-delete-insights.md)|None|Delete a [microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md) object.|
 |[topWorkflowsProcessedSummary](../api/identitygovernance-insights-topworkflowsprocessedsummary.md)|[microsoft.graph.identityGovernance.topWorkflowsInsightsSummary](../resources/identitygovernance-topworkflowsinsightssummary.md) collection|Summarizes the top runs for workflows for a given data range.|
 |[topTasksProcessedSummary](../api/identitygovernance-insights-toptasksprocessedsummary.md)|[microsoft.graph.identityGovernance.topTasksInsightsSummary](../resources/identitygovernance-toptasksinsightssummary.md) collection|Summarizes the top runs for tasks for a given data range.|
 |[workflowsProcessedSummary](../api/identitygovernance-insights-workflowsprocessedsummary.md)|[microsoft.graph.identityGovernance.workflowsInsightsSummary](../resources/identitygovernance-workflowsinsightssummary.md)|Summarizes the workflows, users and tasks processed for a given date range.|
