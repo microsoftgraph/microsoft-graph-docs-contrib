@@ -4845,3 +4845,12 @@ Possible values for user account types (group membership), per Windows definitio
 |addressBar|
 |embed|
 |unknownFutureValue|
+
+### trustFrameworkKeyStatus values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
