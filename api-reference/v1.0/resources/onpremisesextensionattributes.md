@@ -4,7 +4,7 @@ description: "The **onPremisesExtensionAttributes** property of the user entity 
 ms.localizationpriority: medium
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 
@@ -41,7 +41,7 @@ The **extensionAttributes** property of the [device](device.md) entity is manage
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -1,18 +1,18 @@
 ---
-title: "List Outlook categories"
-description: "Get all the categories that have been defined for the user."
+title: "List masterCategories"
+description: "Get all the categories that have been defined for a user."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# List Outlook categories
+# List masterCategories
 
 Namespace: microsoft.graph
 
 
-Get all the categories that have been defined for the user.
+Get all the categories that have been defined for a user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

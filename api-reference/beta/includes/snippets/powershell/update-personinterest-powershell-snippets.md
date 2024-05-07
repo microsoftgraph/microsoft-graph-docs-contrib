@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
 	categories = @(
-		"Sports"
-	)
+	"Sports"
+)
 }
 
 # A UPN can also be used as -UserId.

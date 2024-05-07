@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\X509CertificateAuthenticationMethodConfiguration;
+use Microsoft\Graph\Generated\Models\X509CertificateUserBinding;
+use Microsoft\Graph\Generated\Models\X509CertificateAuthenticationModeConfiguration;
+use Microsoft\Graph\Generated\Models\X509CertificateRule;
+use Microsoft\Graph\Generated\Models\X509CertificateIssuerHintsConfiguration;
+use Microsoft\Graph\Generated\Models\AuthenticationMethodTarget;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

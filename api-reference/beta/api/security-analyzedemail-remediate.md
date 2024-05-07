@@ -17,6 +17,8 @@ Remove a potential threat from end users' mailboxes.
 
 Remediation means to take prescribed action against a threat. This API can trigger email purge actions like move to junk, move to deleted items, soft delete, hard delete, or move to Inbox. This API enables scenarios and use cases such as SOAR integration, playbooks, and automations. For more information read [email remediation, trigger action and track actions](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide&preserve-view=true). If there is false positives admins can take move to inbox action.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -53,9 +55,8 @@ The following table lists the parameters that are required when you call this ac
 |description|String| The description of the remediation. |
 |severity|microsoft.graph.security.remediationSeverity| The severity of the remediation. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 |action|microsoft.graph.security.remediationAction|The types of move and delete actions that are supported. The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
-|approverUpn|String| Tracks who approved the action. |
 |remediateSendersCopy|Boolean| For internal or outbound email, indicates whether to remediate the sender's copy of an email. |
-|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|The unique ID of the analyzed email. The ID can be found from the analyzedemails, analyzedemails/Id or runHuntingQuery/reportId.
+|analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection| Contains the **networkMessageId** and **recipientEmailAddress** values of the analyzed emails. |
 
 ## Response
 
@@ -84,13 +85,15 @@ Content-Type: application/json
     "severity": "medium",
     "action": "softDelete",
     "remediateSendersCopy": "false",
-     "analyzedEmails": [
-        {
-            "id": "73ca4154-58d8-43d0-a890-08dc18c52e6d-1311265001240363512-1"
-        },
-        {
-            "id": "73ca4154-58d8-43d0-a890-08dc18c52e6d-13805748846361900678-1"
-        }
+    "analyzedEmails": [
+      {
+        "networkMessageId": "73ca4154-58d8-43d0-a890-08dc18c52e6d",
+        "recipientEmailAddress": "hannah.jarvis@contoso.com"
+      },
+      {
+        "networkMessageId": "73ca4154-58d8-43d0-a890-08dc18c52e6d",
+        "recipientEmailAddress": "preston.morales@contoso.com"
+      }
     ]
 }
 ```
@@ -129,7 +132,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 The following example shows the response.
@@ -145,7 +147,3 @@ Location: https://security.microsoft.com/action-center/history?filters={"bulkId"
 Content-Type: application/json;text/plain
 Content-Length: 0
 ```
-
-
-
-

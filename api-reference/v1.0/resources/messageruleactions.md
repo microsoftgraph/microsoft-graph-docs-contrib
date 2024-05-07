@@ -30,7 +30,7 @@ Represents the set of actions that are available to a rule.
 | stopProcessingRules | Boolean | Indicates whether subsequent rules should be evaluated. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

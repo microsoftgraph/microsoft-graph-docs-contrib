@@ -98,7 +98,6 @@ DELETE https://graph.microsoft.com/beta/search/qnas/733b26d5-af76-4eea-ac69-1a0c
 
 ---
 
-
 ### Response
 
 The following example shows the response.

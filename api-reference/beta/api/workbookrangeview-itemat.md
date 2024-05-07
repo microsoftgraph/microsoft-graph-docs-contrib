@@ -3,7 +3,7 @@ title: "workbookRangeView: itemAt"
 description: "One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Permissions."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

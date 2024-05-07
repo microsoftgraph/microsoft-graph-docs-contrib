@@ -1,7 +1,7 @@
 ---
 title: "Update domain"
 description: "Update the properties of domain object."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -11,10 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of domain object.
-
-> **Important:**
-> Only verified domains can be updated.
+Update the properties of [domain](../resources/domain.md) object. Only verified domains can be updated.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -26,9 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-update-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
+The work or school account needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-* Global Administrator
 * Domain Name Administrator
 * Security Administrator
 * External Identity Provider Administrator

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\SendVirtualAppointmentReminderSmsPostRequestBody;
+use Microsoft\Graph\Generated\Models\AttendeeNotificationInfo;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

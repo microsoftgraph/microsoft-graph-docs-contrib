@@ -18,7 +18,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 startDateTime := "{startDateTime}"
 endDateTime := "{endDateTime}"
 interval := "{interval}"
-getActivitiesByInterval, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").GetActivitiesByIntervalWithStartDateTimeWithEndDateTimeWithInterval(&startDateTime, &endDateTime, &interval).Get(context.Background(), nil)
+getActivitiesByInterval, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").GetActivitiesByIntervalWithStartDateTimeWithEndDateTimeWithInterval(&startDateTime, &endDateTime, &interval).GetAsGetActivitiesByIntervalWithStartDateTimeWithEndDateTimeWithIntervalGetResponse(context.Background(), nil)
 
 
 ```
