@@ -7,15 +7,15 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "registrationConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [registrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta) relationship to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Description": "Added the **registrationConfiguration** relationship to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
           "Target": "virtualEventWebinar"
         },
         {
           "Id": "1c97b312-73da-4ebc-bb0c-7ab74d883bd9",
-          "ApiChange": "Method",
+          "ApiChange": "Resource",
           "ChangedApiName": "virtualEventWebinarRegistrationConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [Get](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinarregistrationconfiguration-get?view=graph-rest-beta) operation to the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta) resource and a supported method.",
           "Target": "virtualEventWebinarRegistrationConfiguration"
         }
       ],
