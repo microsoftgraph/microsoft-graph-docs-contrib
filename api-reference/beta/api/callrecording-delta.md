@@ -26,6 +26,15 @@ State tokens are opaque to the client. To proceed with a round of change trackin
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
+### Known issues
+
+The following known issues are associated with this API:
+
+- [Using the `$top` query parameter might not return the @odata.nextLink](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
+- [Transcript URLs might not include any content](https://developer.microsoft.com/en-us/graph/known-issues/?search=22932).
+- [Recordings aren't exported for meetings that don't have transcription turned on](https://developer.microsoft.com/en-us/graph/known-issues/?search=22933).
+- [Delta queries might older artifacts when meetings have unrelated changes](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934).
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -51,14 +60,6 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 | `$deltatoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | `$skiptoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked. |
 | `$top` |     integer     | Allows the caller to specify the maximum number of objects per page. |
-
-> [!NOTE]
-> The following known issues are associated with this API:
->
-> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931)` related to using the `top` query.
-> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22932)` related to accessing content URL for meetings which do not have any valid content to transcribe.
-> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22933)` related to exporting recordings for meetings which do not have transcription turned on.
-> - This API has a `[known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934)` related to returning older items for unrelated changes to meetings.
 
 ## Request headers
 
