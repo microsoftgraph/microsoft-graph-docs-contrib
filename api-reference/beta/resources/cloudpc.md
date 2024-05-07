@@ -75,7 +75,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The power state of a Cloud PC. The possible values are: `running`, `poweredOff`, `unknown`. This property only supports shift work Cloud PCs.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
-|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`. Default value is `dedicated`. |
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`,`sharedByUser`, `sharedByUser`. Default value is `dedicated`. The `shared` member is deprecated and will stop returning on April 30, 2027. |
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
