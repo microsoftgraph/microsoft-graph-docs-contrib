@@ -117,6 +117,7 @@ request_body = ManagedDevice(
 	notes = "Notes value",
 	ethernet_mac_address = "Ethernet Mac Address value",
 	physical_memory_in_bytes = 5,
+	enrollment_profile_name = "Enrollment Profile Name value",
 )
 
 result = await graph_client.device_management.managed_devices.post(request_body)

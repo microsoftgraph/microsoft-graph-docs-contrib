@@ -119,6 +119,7 @@ var requestBody = new ManagedDevice
 	Notes = "Notes value",
 	EthernetMacAddress = "Ethernet Mac Address value",
 	PhysicalMemoryInBytes = 5L,
+	EnrollmentProfileName = "Enrollment Profile Name value",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

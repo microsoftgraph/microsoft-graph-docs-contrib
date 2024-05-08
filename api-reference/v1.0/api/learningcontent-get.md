@@ -137,6 +137,7 @@ Content-type: application/json
     "numberOfPages": 10,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [
@@ -236,6 +237,7 @@ Content-type: application/json
     "numberOfPages": 10,
     "duration": "PT20M",
     "format": "Book",
+    "level": "Beginner",
     "createdDateTime": "2018-01-01T00:00:00",
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
     "contributors": [

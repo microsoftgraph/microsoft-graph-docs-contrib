@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.add_activities_post_request_body import AddActivitiesPostRequestBody
+from msgraph.generated.external.connections.item.items.item.microsoft_graph_external_connectors_add_activities.add_activities_post_request_body import AddActivitiesPostRequestBody
 from msgraph.generated.models.external_activity import ExternalActivity
 from msgraph.generated.models.identity import Identity
 

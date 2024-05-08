@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.mark_unread_post_request_body import MarkUnreadPostRequestBody
+from msgraph.generated.admin.serviceannouncement.messages.mark_unread.mark_unread_post_request_body import MarkUnreadPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
