@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Protection Policy represents the plan defined by the Global Admin for protecting the M365 data of an organization. It will contain details of what data to protect, when to protect it and for what time period to retain the protected data for a single M365 service.
+Protection Policy represents the plan defined by the Global Admin(or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online) for protecting the M365 data of an organization. It will contain details of what data to protect, when to protect it and for what time period to retain the protected data for a single M365 service.
 This is an abstract type.
 
 
