@@ -3,7 +3,7 @@ title: "protectionUnitBase resource type"
 description: "Describes protection unit and it's properties"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
-ms.subservice: "backup-and-restore"
+ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 ---
 
