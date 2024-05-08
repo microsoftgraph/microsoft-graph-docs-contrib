@@ -92,16 +92,16 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "export_result1"
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
-"cache-control": "no-store, must-revalidate, no-cache, max-age=0",
-"client-request-id": "e4df5508-d119-4517-183c-4c2494610209",
-"content-length": "0",
-"location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('01826ce3-43a3-4235-a121-81d05926efae')",
-"request-id": "1660b394-1e62-4f2f-a258-7b1bb97cd935"
+cache-control: no-store must-revalidate no-cache max-age=0
+client-request-id: e4df5508-d119-4517-183c-4c2494610209
+content-length: 0
+location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('01826ce3-43a3-4235-a121-81d05926efae')
+request-id: 1660b394-1e62-4f2f-a258-7b1bb97cd935
 ```
 
 ### Example 2: Export results, which include items with search hits and partially indexed items in all targeted locations, with no additional options selected, emails as .pst files for each mailbox
@@ -134,16 +134,16 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "export_result2"
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
-"cache-control": "no-store, must-revalidate, no-cache, max-age=0",
-"client-request-id": "9090b2a6-8758-384f-fcd3-bfb1a9b9ab45",
-"content-length": "0",
-"location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('c74d3039-5c79-4093-8e45-2abb94e32ba9')",
-"request-id": "b41df48d-48ce-4f4c-a05f-e7c866cbdb9f"
+cache-control: no-store must-revalidate no-cache max-age=0
+client-request-id: 9090b2a6-8758-384f-fcd3-bfb1a9b9ab45
+content-length: 0
+location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('c74d3039-5c79-4093-8e45-2abb94e32ba9')
+request-id: b41df48d-48ce-4f4c-a05f-e7c866cbdb9f
 ```
 
 ### Example 3: Export results, which include items with search hits and partially indexed items in locations with search hits only, with no additional options selected, emails as .msg files for each message
@@ -176,16 +176,16 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "export_result3"
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
-"cache-control": "no-store, must-revalidate, no-cache, max-age=0",
-"client-request-id": "90bf9512-00df-c6bb-3930-6cd678090fc9",
-"content-length": "0",
-"location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('4bf812e0-44ad-4856-a302-b4ea79725573')",
-"request-id": "a6544400-74c2-4696-9fb4-dbc31276f4bc"
+cache-control: no-store must-revalidate no-cache max-age=0
+client-request-id: 90bf9512-00df-c6bb-3930-6cd678090fc9
+content-length: 0
+location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('4bf812e0-44ad-4856-a302-b4ea79725573')
+request-id: a6544400-74c2-4696-9fb4-dbc31276f4bc
 ```
 
 ### Example 4: Export results, which include partially indexed items in all targeted locations, with all additional options selected, emails as .eml files for each message
@@ -219,16 +219,16 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "export_result4"
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
-"cache-control": "no-store, must-revalidate, no-cache, max-age=0",
-"client-request-id": "f22303c3-c112-8269-19f5-da33adf8d227",
-"content-length": "0",
-"location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('05b5c707-ed0d-4f5c-bbfd-e4941137baf1')",
-"request-id": "ea78b6b6-e0f4-488c-a31c-02120567d3af"
+cache-control: no-store must-revalidate no-cache max-age=0
+client-request-id: f22303c3-c112-8269-19f5-da33adf8d227
+content-length: 0
+location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('05b5c707-ed0d-4f5c-bbfd-e4941137baf1')
+request-id: ea78b6b6-e0f4-488c-a31c-02120567d3af
 ```
 
 ### Example 5: Export results, which include partially indexed items in locations with search hits only, with cloud attachments, emails as .eml files for each message
@@ -261,14 +261,14 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "export_result5"
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
-"cache-control": "no-store, must-revalidate, no-cache, max-age=0",
-"client-request-id": "7067f49f-972c-e360-9fd7-c5d4a3a23e0e",
-"content-length": "0",
-"location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('d488f23e-f3cb-4a1c-9b9f-88ac4342f534')",
-"request-id": "eb9dfff4-504f-4603-a2a3-c49690c03951"
+cache-control: no-store must-revalidate no-cache max-age=0
+client-request-id: 7067f49f-972c-e360-9fd7-c5d4a3a23e0e
+content-length: 0
+location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('d488f23e-f3cb-4a1c-9b9f-88ac4342f534')
+request-id: eb9dfff4-504f-4603-a2a3-c49690c03951
 ```
