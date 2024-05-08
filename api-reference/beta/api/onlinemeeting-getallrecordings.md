@@ -17,7 +17,7 @@ Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md)
 
 You can apply the [delta](callrecording-delta.md) function on **getAllRecordings** to synchronize and get [callRecording](../resources/callrecording.md) resources as they're added for **onlineMeeting** instances organized by the specified user.
 
-Delta query supports both full synchronization and incremental synchronization. Full synchronization gets all the recordings for online meetings organized by the user. Incremental synchronization gets recordings that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+The delta query supports both full synchronization and incremental synchronization. Full synchronization gets all the recordings for online meetings organized by the user. Incremental synchronization gets recordings that are added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
 Find more information in the [delta query](/graph/delta-query-overview) documentation. For more examples, see [callRecording: delta](callrecording-delta.md).
 
