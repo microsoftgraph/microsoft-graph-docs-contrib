@@ -449,7 +449,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [unenforcedMfaAwsUserFinding](https://learn.microsoft.com/en-us/graph/api/resources/unenforcedMfaAwsUserFinding?view=graph-rest-beta) resource and its associated methods.",
           "Target": "unenforcedMfaAwsUserFinding"
-        },        
+        },
         {
           "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
           "ApiChange": "Resource",

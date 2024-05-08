@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.resume_post_request_body import ResumePostRequestBody
+from msgraph.generated.identitygovernance.entitlementmanagement.accesspackageassignmentrequests.item.resume.resume_post_request_body import ResumePostRequestBody
 from msgraph.generated.models.access_package_assignment_request_callback_data import AccessPackageAssignmentRequestCallbackData
 
 graph_client = GraphServiceClient(credentials, scopes)

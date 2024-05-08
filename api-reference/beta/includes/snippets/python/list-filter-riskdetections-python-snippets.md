@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.identityProtection.riskDetections.risk_detections_request_builder import RiskDetectionsRequestBuilder
+from msgraph.generated.identity_protection.risk_detections.risk_detections_request_builder import RiskDetectionsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

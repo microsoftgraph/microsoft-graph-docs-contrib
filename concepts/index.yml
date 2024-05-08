@@ -46,7 +46,7 @@ conceptualContent:
           text: Enable user collaboration and integration across services.
     - title: Identity and access management
       links:
-        - url: ./azuread-identity-access-management-concept-overview.md
+        - url: ./identity-network-access-overview.md
           itemType: overview
           text: Use Microsoft Entra methods to manage access and authenticate users.
     - title: Security

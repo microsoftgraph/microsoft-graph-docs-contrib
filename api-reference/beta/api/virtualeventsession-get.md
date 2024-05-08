@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.
+Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object. 
+
+Currently, the following virtual event types are supported: [virtualEventTownhall](../resources/virtualeventtownhall.md) and [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -30,19 +32,31 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+
+
+To get a session of a webinar:
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-To get a session of a webinar:
-
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}
 ```
 
+To get a session of a town hall:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}
+```
+
 ## Optional query parameters
 
-This method does not support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
