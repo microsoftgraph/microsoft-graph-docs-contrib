@@ -89,7 +89,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  {
    "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.workflowsInsightsSummary", 
    "totalRuns" : 106,
    "successfulRuns" : 71,
@@ -99,7 +98,6 @@ Content-Type: application/json
    "failedUsers" : 38 ,
    "totalTasks" : 75,
    "successfulTasks" : 56,
-   "failedTasks" :19 ,  
-  }
+   "failedTasks" :19 ,   
 }
 ```
