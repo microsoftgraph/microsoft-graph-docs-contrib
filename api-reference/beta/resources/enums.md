@@ -4810,7 +4810,7 @@ Possible values for user account types (group membership), per Windows definitio
 |trailing|
 |leadingAndTrailing|
 |unknownFutureValue|
-=======
+
 ### sharingRole values 
 
 |Member|
@@ -4853,4 +4853,3 @@ Possible values for user account types (group membership), per Windows definitio
 |enabled|
 |disabled|
 |unknownFutureValue|
-
