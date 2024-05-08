@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "fd206e74-9b6d-47d5-a0c9-8e8d20a033c1",
+          "ApiChange": "Property",
+          "ChangedApiName": "callId",
+          "ChangeType": "Addition",
+          "Description": "Added the **callId** property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-beta) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "fd206e74-9b6d-47d5-a0c9-8e8d20a033c1",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCorrelationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCorrelationId** property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-beta) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "fd206e74-9b6d-47d5-a0c9-8e8d20a033c1",
+          "ApiChange": "Property",
+          "ChangedApiName": "endDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **endDateTime** property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-beta) resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "fd206e74-9b6d-47d5-a0c9-8e8d20a033c1",
+          "ApiChange": "Property",
+          "ChangedApiName": "callId",
+          "ChangeType": "Addition",
+          "Description": "Added the **callId** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "fd206e74-9b6d-47d5-a0c9-8e8d20a033c1",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCorrelationId",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCorrelationId** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "fd206e74-9b6d-47d5-a0c9-8e8d20a033c1",
+          "ApiChange": "Property",
+          "ChangedApiName": "endDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **endDateTime** property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "fd206e74-9b6d-47d5-a0c9-8e8d20a033c1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-24T10:26:07.7686964Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c691ef0b-866c-4b62-8a12-65dc2109a655",
           "ApiChange": "Parameter",
           "ChangedApiName": "getAllMessages",
