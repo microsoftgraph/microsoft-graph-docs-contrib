@@ -1,9 +1,9 @@
 ---
 title: "Get contentModel"
 description: "This API helps retrieve a content model by its Id"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "travislius"
 ms.localizationpriority: medium
-ms.subservice: "SharePoint Premium"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

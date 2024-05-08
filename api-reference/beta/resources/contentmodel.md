@@ -1,9 +1,9 @@
 ---
 title: "contentModel resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "A content model is an AI model used to process documents in SharePoint document libraries."
+author: "travislius"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

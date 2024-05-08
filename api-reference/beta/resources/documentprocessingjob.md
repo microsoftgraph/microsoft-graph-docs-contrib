@@ -1,9 +1,9 @@
 ---
 title: "documentProcessingJob resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "The documentProcessingJob resource provides the information to process a document, or documents in a folde"
+author: "travislius"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 

@@ -17662,8 +17662,6 @@ items:
                 href: api/site-getapplicablecontenttypesforlist.md
               - name: Get lists
                 href: api/list-list.md
-              - name: Get lists
-                href: api/list-list.md
               - name: Get site analytics
                 href: api/itemanalytics-get.md
               - name: Get site settings
@@ -17688,6 +17686,10 @@ items:
                 href: api/site-unfollow.md
               - name: Get delta
                 href: api/site-delta.md
+              - name: Get content model
+                href: api/contentmodel-get.md
+              - name: Create document processing job
+                href: api/site-post-documentprocessingjobs.md
           - name: List
             items:
               - name: List
