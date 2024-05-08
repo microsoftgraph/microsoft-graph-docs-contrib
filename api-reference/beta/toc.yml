@@ -1855,8 +1855,10 @@ items:
                     href: api/cloudpc-getprovisionedcloudpcs.md
                   - name: Get remote action results
                     href: api/manageddevice-getcloudpcremoteactionresults.md
-                  - name: Get review status
+                  - name: Get review status (deprecated)
                     href: api/manageddevice-getcloudpcreviewstatus.md
+                  - name: Retrieve review status
+                    href: api/cloudpc-retrievereviewstatus.md
                   - name: Get shift work access state (deprecated)
                     href: api/cloudpc-getshiftworkcloudpcaccessstate.md
                   - name: Get supported remote actions
@@ -1879,8 +1881,10 @@ items:
                     href: api/cloudpc-restore.md
                   - name: Restore remotely (deprecated)
                     href: api/manageddevice-restorecloudpc.md
-                  - name: Set review status
+                  - name: Set review status (deprecated)
                     href: api/manageddevice-setcloudpcreviewstatus.md
+                  - name: Set review status
+                    href: api/cloudpc-setreviewstatus.md
                   - name: Troubleshoot
                     href: api/cloudpc-troubleshoot.md
                   - name: Retry partner agent installation
