@@ -1,5 +1,5 @@
 ---
-title: "Update presenter"
+title: "Update virtualEventPresenter"
 description: "Update the properties of a virtualEventPresenter object."
 author: "frankpeng7"
 ms.localizationpriority: medium
@@ -7,14 +7,15 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update presenter
+# Update virtualEventPresenter
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
 
-Currently the supported virtual event type is: [virtualEventWebinar](../resources/virtualeventwebinar.md).
+Currently the supported virtual event type is [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 ## Permissions
 
@@ -63,16 +64,17 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be/presenters/831affc2-4c8a-9929-50e7-02964563b6e4
-Content-Type: application/json
+Content-type: application/json
+
 {
-    "bio": {
-        "content": "Lead Product Manager of Contoso Sales department",
-        "contentType": "text"
-    },
-    "company": "Contoso",
-    "jobTitle": "Product Manager",
-    "linkedInProfileWebUrl": "https://linkedin.com/in/DianeDemoss",
-    "personalSiteWebUrl": "https://DianeDemoss.com"
+  "bio": {
+    "content": "Lead Product Manager of Contoso Sales department",
+    "contentType": "text"
+  },
+  "company": "Contoso",
+  "jobTitle": "Product Manager",
+  "linkedInProfileWebUrl": "https://linkedin.com/in/DianeDemoss",
+  "personalSiteWebUrl": "https://DianeDemoss.com"
 }
 ```
 
@@ -88,7 +90,8 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
+
 {
   "@odata.type": "#microsoft.graph.virtualEventPresenter",
   "id": "831affc2-4c8a-9929-50e7-02964563b6e4",
