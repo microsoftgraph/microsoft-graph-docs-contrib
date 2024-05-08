@@ -49,8 +49,8 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|roles|String collection|Additional roles assigned to the user. Optional. Currently, no additional roles are available for users.|
-|tenantId|String|Identifier of the tenant the user belongs to. Optional. Currently, roster members cannot be from different tenants.|
+|roles|String collection|Other roles assigned to the user. Optional. Currently, no other roles are available for users.|
+|tenantId|String|Identifier of the tenant the user belongs to. Optional. Currently, roster members can't be from different tenants.|
 |userId|String|Identifier of the user.|
 
 ## Response
@@ -139,4 +139,4 @@ Content-Type: application/json
 
 #### 403 Forbidden
 
-If the sensitivityLabel on the roster disallows the addition of guest users, and the request would add guest users to the plannerRoster, the request will fail, and the **code** property on the error resource type will be "AddingGuestUsersProhibitedByLabel"
+If the sensitivityLabel on the roster disallows the addition of guest users, and the request would add guest users to the plannerRoster, the request fails, and the **code** property on the error resource type is "AddingGuestUsersProhibitedByLabel".
