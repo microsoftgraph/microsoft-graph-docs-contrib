@@ -71,7 +71,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "export_result"
+  "name": "export_result1"
 }
 -->
 ``` http
@@ -97,6 +97,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
+
 {
     "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
     "client-request-id": "e4df5508-d119-4517-183c-4c2494610209",
@@ -115,7 +116,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "export_result"
+  "name": "export_result2"
 }
 -->
 ``` http
@@ -142,6 +143,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
+
 {
     "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
     "client-request-id": "9090b2a6-8758-384f-fcd3-bfb1a9b9ab45",
@@ -160,7 +162,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "export_result"
+  "name": "export_result3"
 }
 -->
 ``` http
@@ -187,6 +189,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
+
 {
     "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
     "client-request-id": "90bf9512-00df-c6bb-3930-6cd678090fc9",
@@ -205,7 +208,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "export_result"
+  "name": "export_result4"
 }
 -->
 ``` http
@@ -233,6 +236,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
+
 {
     "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
     "client-request-id": "f22303c3-c112-8269-19f5-da33adf8d227",
@@ -251,7 +255,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "export_result"
+  "name": "export_result5"
 }
 -->
 ``` http
@@ -278,6 +282,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
+
 {
     "cache-control": "no-store, must-revalidate, no-cache, max-age=0",
     "client-request-id": "7067f49f-972c-e360-9fd7-c5d4a3a23e0e",
