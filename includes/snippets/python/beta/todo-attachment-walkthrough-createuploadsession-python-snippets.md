@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.create_upload_session_post_request_body import CreateUploadSessionPostRequestBody
+from msgraph.generated.users.item.todo.lists.item.tasks.item.attachments.create_upload_session.create_upload_session_post_request_body import CreateUploadSessionPostRequestBody
 from msgraph.generated.models.attachment_info import AttachmentInfo
 
 graph_client = GraphServiceClient(credentials, scopes)

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.identity.conditionalAccess.policies.policies_request_builder import PoliciesRequestBuilder
+from msgraph.generated.identity.conditional_access.policies.policies_request_builder import PoliciesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
