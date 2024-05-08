@@ -85,7 +85,7 @@ Updated the definition of physical locations for customer premises equipment in 
 
 ### Identity and access | Partner customer administration
 
-As a partner in the Cloud Solution Provider (CSP) program, you're responsible for your customer's Azure consumption; therefore, it's important that you're aware of any anomalous usage in your customer's Azure subscriptions. Use the [partner security alert](/graph/api/resources/partner-security-partnersecurityalert?view=graph-rest-beta&preserve-view=true) API in Microsoft Graph to detect fraudulent activities and misuse in your customer's Azure resources. Mitigating and responding to the alerts within 24 hours can significantly help reduce the financial loss that might incur during the compromise.
+As a partner in the Cloud Solution Provider (CSP) program, you're responsible for your customer's Azure consumption; therefore, it's important that you're aware of any anomalous usage in your customer's Azure subscriptions. Use the [partner security alert](/graph/api/resources/partner-security-partnersecurityalert?view=graph-rest-beta&preserve-view=true) API in Microsoft Graph to detect fraudulent activities and misuse in your customer's Azure resources. Mitigating and responding to the alerts within 24 hours can help to significantly reduce the financial loss that might your customers might incur during the compromise.
 
 ### Industry data ETL
 
