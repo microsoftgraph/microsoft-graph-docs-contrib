@@ -1,6 +1,6 @@
 ---
 title: "Assign sensitivity label to planner roster"
-description: "Assign a sensitivity label to the **plannerRoster** object."
+description: "Assign a sensitivity labelto a plannerRoster object."
 ms.localizationpriority: medium
 author: "WiRawlinWork"
 ms.subservice: "planner"
