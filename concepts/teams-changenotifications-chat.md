@@ -292,7 +292,7 @@ When you provide the query string parameter **notifyOnUserSpecificProperties** w
 
 > **Note**: The query string parameter **notifyOnUserSpecificProperties** is supported only for chat subscriptions in user context, specifically for subscriptions to a particular chat or at the user level.
 
-The following payload describes the information sent in the request for notifications containing user-specific properties.
+The following payload describes the information sent in a request for notifications that contain user-specific properties. The payload contains a subset of properties from the [chat](/graph/api/resources/chat?preserve-view=true) schema, including the **viewpoint** property with a nonnull value, specific to the subscribing user. The omission of other properties from the **chat** schema doesn't imply any change in their values.
 
 ```json
 {
@@ -308,9 +308,8 @@ The following payload describes the information sent in the request for notifica
   }
 }
 ```
-Notice that the payload contains a subset of properties in the [chats](/graph/api/resources/chat?preserve-view=true) schema. Notably, the `viewpoint` property is present with a non-null value. The value of the `viewpoint` property is specific to the user that subscribed. Other properties in the chats schema are omitted - this does not mean that the values of those properties have changed.
 
-The following payload describes the information sent in the request for notifications that do not contain user-specific properties.
+The following payload describes the information sent in a request for notifications that don't contain user-specific properties. The payload doesn't include the **viewpoint** property; however, this doesn't imply a change in its value for the user.
 
 ```json
 {
@@ -374,11 +373,10 @@ The following payload describes the information sent in the request for notifica
   "pinnedMessages": []
 }
 ```
-Notice that the payload does not contain the `viewpoint` property. This does not mean the value of the `viewpoint` property for the user has changed.
 
 ### Notifications without resource data
 
-The following decrypted payload describes the information sent in the request for notifications without resource data. This particular payload signifies that a new chat has been created.
+The following decrypted payload describes the information sent in a request for notifications without resource data. This particular payload signifies that a new chat has been created.
 
 ```json
 {
