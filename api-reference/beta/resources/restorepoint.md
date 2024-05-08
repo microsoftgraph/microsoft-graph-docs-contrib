@@ -36,8 +36,8 @@ RestorePoints represent the timestamp when an [artifact](../resources/restoreart
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id of the restore point.|
-|protectionDateTime|DateTimeOffset|Expiration date time of the restore point.|
-|expirationDateTime|DateTimeOffset|Date time when restore point was created.|
+|protectionDateTime|DateTimeOffset|Date time when restore point was created.|
+|expirationDateTime|DateTimeOffset|Expiration date time of the restore point.|
 |tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Specifies the preference of of restore points..The possible values are: `none`, `fastRestore`, `unknownFutureValue`.|
 
 ### restorePointTags values
