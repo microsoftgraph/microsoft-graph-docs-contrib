@@ -237,7 +237,7 @@ HTTP/1.1 202 Accepted
 
 ```
 
-### Example 5 : Export an item report which includes partially indexed items in locations with search hits only, with cloud attachments.
+### Example 5 : Export an item report which includes partially indexed items in locations with search hits only, with cloud attachments
 
 #### Request
 
