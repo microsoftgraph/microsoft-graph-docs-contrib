@@ -18,11 +18,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## May 2024: New in preview only
 
+### Change notifications
+
+Enabled change notifications support to [list](/graph/api/subscription-list?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [reauthorize](/graph/api/subscription-reauthorize?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), or [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) a subscription for [user-scoped chat notifications](/graph/teams-changenotifications-chat?view=graph-rest-beta&preserve-view=true#subscribe-to-changes-at-the-user-level-preview).
+
 ### Teamwork and communications | Messaging
 
 - Use the **reactionContentUrl** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) to represent the hosted content URL for a custom reaction in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
 - Use the `<customemoji></customemoji>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent custom emojis in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
-- Use the **isHiddenForAllMembers** property to indicate whether a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) is hidden from all its members.
+- Use the **isHiddenForAllMembers** property to indicate whether a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) is hidden from all its members. 
 
 ## April 2024: New and generally available
 
