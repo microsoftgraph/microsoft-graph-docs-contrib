@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore session APIs are used by Global Admin(or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online) to perform restore related tasks on artifacts which are protected as part of Protection Policy.
+Restore session APIs are used by Global Admin or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online) to perform restore related tasks on artifacts which are protected as part of Protection Policy.
 
 ## Methods
 |Method|Return type|Description|

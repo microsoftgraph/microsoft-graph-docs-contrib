@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore session APIs are used by Global Admin(or SharePoint Online Admin for OneDrive to perform restore related tasks on artifacts which are protected as part of mailbox protection policy.
+Restore session APIs are used by Global Admin or SharePoint Online Admin for OneDrive to perform restore related tasks on artifacts which are protected as part of mailbox protection policy.
 
 Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
