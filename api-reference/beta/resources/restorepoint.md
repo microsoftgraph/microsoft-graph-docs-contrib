@@ -1,67 +1,75 @@
 ---
-title: "Restore Point"
+title: "restorePoint resource type"
 description: "Describes Restore Point and it's properties"
-ms.localizationpriority: medium
-doc_type: resourcePageType
-ms.subservice: backup-and-restore
 author: "tkanaujia, maniksingh"
+ms.localizationpriority: medium
+ms.subservice: backup-and-restore
+doc_type: resourcePageType
 ---
 
 # restorePoint resource type
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-RestorePoints represent the timestamp when an artifact is protected [](../resources/protectionpolicy.md).
+RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPoliy](../resources/protectionpolicy.md).
+
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List restorePoint objects](../api/siterestoreartifact-list-restorepoint.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties.|
+|[Create restorePoint](../api/siterestoreartifact-post-restorepoint.md)|[restorePoint](../resources/restorepoint.md)|Create a new [restorePoint](../resources/restorepoint.md) object.|
+|[Get restorePoint](../api/restorepoint-get.md)|[restorePoint](../resources/restorepoint.md)|Read the properties and relationships of a [restorePoint](../resources/restorepoint.md) object.|
+|[Update restorePoint](../api/restorepoint-update.md)|[restorePoint](../resources/restorepoint.md)|Update the properties of a [restorePoint](../resources/restorepoint.md) object.|
+|[Delete restorePoint](../api/siterestoreartifact-delete-restorepoint.md)|None|Delete a [restorePoint](../resources/restorepoint.md) object.|
+|[search](../api/restorepoint-search.md)|[restorePointSearchResponse](../resources/restorepointsearchresponse.md)|Search restorepoints for given [protectionUnits](../resources/protectionunitbase.md)|
+|[List protectionPolicyBase](../api/restorepoint-list-protectionpolicy.md)|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|Get the protectionPolicyBase resources from the protectionPolicy navigation property.|
+|[Add protectionPolicyBase](../api/restorepoint-post-protectionpolicy.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Add protectionPolicy by posting to the protectionPolicy collection.|
+|[Remove protectionPolicyBase](../api/restorepoint-delete-protectionpolicy.md)|None|Remove a [protectionPolicyBase](../resources/protectionpolicybase.md) object.|
+|[List protectionUnitBase](../api/restorepoint-list-protectionunit.md)|[protectionUnitBase](../resources/protectionunitbase.md) collection|Get the protectionUnitBase resources from the protectionUnit navigation property.|
+|[Add protectionUnitBase](../api/restorepoint-post-protectionunit.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Add protectionUnit by posting to the protectionUnit collection.|
+|[Remove protectionUnitBase](../api/restorepoint-delete-protectionunit.md)|None|Remove a [protectionUnitBase](../resources/protectionunitbase.md) object.|
 
 ## Properties
-
-| Property   | Type|Description|
-|:---------------|:--------|:----------|
-|protectionDateTime|DateTimeOffset|Date time when restore point was created.|
-|expirationDateTime|DateTimeTimeZone|Expiration date time of the restore point.|
-|tags|[restorePointTags](../resources/restorepoint.md#restorePointTags-values)|Specifies the preference of of restore points.|
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Id of the restore point.|
+|protectionDateTime|DateTimeOffset|Expiration date time of the restore point.|
+|expirationDateTime|DateTimeOffset|Date time when restore point was created.|
+|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Specifies the preference of of restore points..The possible values are: `none`, `fastRestore`, `unknownFutureValue`.|
 
 ### restorePointTags values
 |Member | Description |
 |:------|:------------|
 |none   | No Tag      |
-|fastRestore | Tag to fast restore the restore point|
+|fastRestore | Tag to get fast restore point|
 |unknownFutureValue | Marker value for future compatibility|
 
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|protectionPolicy|[protectionPolicyBase](../resources/protectionpolicybase.md)| Protection Policy represents the plan defined by the Global Admin for protecting the M365 data of an organization|
+|protectionUnit|[protectionUnitBase](../resources/protectionunitbase.md)|Protection Units refers to the site/drive/mailbox units that are being protected under the Protection Policy.|
+
 ## JSON representation
-
-The following is a JSON representation of the resource.
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.restorePoint"
-}-->
-
-```json
-{
-  "protectionDateTime": "dateTimeOffset",
-  "expirationDateTime": "dateTimeTimeZone",
-  "tags": "string"
-}
-
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "restorePoint resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.restorePoint",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
 }
 -->
-
+``` json
+{
+  "@odata.type": "#microsoft.graph.restorePoint",
+  "id": "String (identifier)",
+  "protectionDateTime": "String (timestamp)",
+  "expirationDateTime": "String (timestamp)",
+  "tags": "String"
+}
+```
 
