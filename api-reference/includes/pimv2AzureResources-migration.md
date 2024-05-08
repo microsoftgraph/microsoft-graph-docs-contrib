@@ -6,11 +6,11 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041-->
 
-### Migrate to the Azure Resource Manager PIM API for Azure resource roles
+### Migrate to the Azure Resource Manager PIM APIs for Azure resource roles
 
 The PIM iteration 3 API to manage Azure resources is now available through the Azure Resource Manager REST APIs. Use this guidance to migrate your existing APIs to the new [Azure Resource Manager APIs](/rest/api/authorization/privileged-role-eligibility-rest-sample).
 
-The following table describes how the new APIs map to the existing Microsoft Graph APIs.
+The following table describes how the Azure Resource Manager PIM APIs map to the existing Microsoft Graph APIs.
 
 | Operation | Microsoft Graph API (iteration 2) | Azure Resource Manager API (iteration 3) |
 | --------- | ------------ | -------------- |
