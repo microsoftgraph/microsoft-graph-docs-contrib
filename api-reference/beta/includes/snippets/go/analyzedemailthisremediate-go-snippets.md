@@ -30,11 +30,15 @@ requestBody.SetRemediateSendersCopy(&remediateSendersCopy)
 
 
 analyzedEmail := graphmodelssecurity.NewAnalyzedEmail()
-id := "73ca4154-58d8-43d0-a890-08dc18c52e6d-1311265001240363512-1"
-analyzedEmail.SetId(&id) 
+networkMessageId := "73ca4154-58d8-43d0-a890-08dc18c52e6d"
+analyzedEmail.SetNetworkMessageId(&networkMessageId) 
+recipientEmailAddress := "hannah.jarvis@contoso.com"
+analyzedEmail.SetRecipientEmailAddress(&recipientEmailAddress) 
 analyzedEmail1 := graphmodelssecurity.NewAnalyzedEmail()
-id := "73ca4154-58d8-43d0-a890-08dc18c52e6d-13805748846361900678-1"
-analyzedEmail1.SetId(&id) 
+networkMessageId := "73ca4154-58d8-43d0-a890-08dc18c52e6d"
+analyzedEmail1.SetNetworkMessageId(&networkMessageId) 
+recipientEmailAddress := "preston.morales@contoso.com"
+analyzedEmail1.SetRecipientEmailAddress(&recipientEmailAddress) 
 
 analyzedEmails := []graphmodelssecurity.AnalyzedEmailable {
 	analyzedEmail,

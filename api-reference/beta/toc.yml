@@ -15148,6 +15148,20 @@ items:
                         items:
                           - name: List
                             href: api/delegatedadmincustomer-list-servicemanagementdetails.md
+              - name: Partner security alert (preview)
+                items:
+                  - name: Overview
+                    displayName: CSP partner's customer security alerts API
+                    href: resources/partner-security-partnersecurityalert-api-overview.md
+                  - name: Partner security alert
+                    href: resources/partner-security-partnersecurityalert.md
+                    items:
+                      - name: List
+                        href: api/partner-security-partnersecurityalert-list-securityalerts.md
+                      - name: Get
+                        href: api/partner-security-partnersecurityalert-get.md
+                      - name: Update
+                        href: api/partner-security-partnersecurityalert-update.md  
       - name: Industry data ETL (preview)
         items:
           - name: Overview
@@ -18625,6 +18639,11 @@ items:
                             href: api/virtualeventregistration-list.md
                           - name: Get
                             href: api/virtualeventregistration-get.md
+                      - name: Registration configuration (preview)
+                        href: resources/virtualeventwebinarregistrationconfiguration.md
+                        items:
+                          - name: Get
+                            href: api/virtualeventwebinarregistrationconfiguration-get.md
           - name: Devices (preview)
             items:
               - name: Provisioned device
