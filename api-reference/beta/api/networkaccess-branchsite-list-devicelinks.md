@@ -1,5 +1,5 @@
 ---
-title: "List deviceLinks"
+title: "List deviceLinks (deprecated)"
 description: "Retrieve a list of device links associated with a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,10 +7,13 @@ ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# List deviceLinks
+# List deviceLinks (deprecated)
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> Deprecated and to be retired soon. Use the [remoteNetwork resource type](../resources/networkaccess-remotenetwork.md) and its associated methods instead.
 
 Retrieve a list of device links associated with a specific branch.
 

@@ -24,7 +24,7 @@ Specifies the index of the URLs where user tokens are sent for sign-in. This is 
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

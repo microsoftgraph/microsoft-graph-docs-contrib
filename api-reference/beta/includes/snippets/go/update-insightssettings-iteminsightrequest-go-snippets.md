@@ -19,7 +19,7 @@ requestBody := graphmodels.NewInsightsSettings()
 disabledForGroup := "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 requestBody.SetDisabledForGroup(&disabledForGroup) 
 
-itemInsights, err := graphClient.Organization().ByOrganizationId("organization-id").Settings().ItemInsights().Patch(context.Background(), requestBody, nil)
+itemInsights, err := graphClient.Admin().People().ItemInsights().Patch(context.Background(), requestBody, nil)
 
 
 ```

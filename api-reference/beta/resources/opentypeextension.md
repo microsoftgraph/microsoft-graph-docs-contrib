@@ -4,7 +4,7 @@ description: "Open extensions (formerly known as Office 365 data extensions) pro
 ms.localizationpriority: medium
 author: "dkershaw10"
 doc_type: resourcePageType
-ms.prod: "extensions"
+ms.subservice: extensions
 ---
 
 # openTypeExtension resource type (open extensions)
@@ -17,11 +17,11 @@ Namespace: microsoft.graph
 
 Represents open extensions (also known as open type extensions, and formerly known as Office 365 data extensions), an [extensibility option](/graph/extensibility-overview) that provides an easy way to directly add untyped properties to a resource in Microsoft Graph.
 
-Any open extension added to a resource shows up in the **extensions** navigation property. Each extension has an **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `com.contoso.ContactInfo`. **Do not use** the Microsoft domain (`com.microsoft` or `com.onmicrosoft`) in an extension name.
+Any open extension added to a resource shows up in the **extensions** navigation property. Each extension has an **extensionName** property, which is the only predefined, writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `com.contoso.ContactInfo`. **Do not use** the Microsoft domain (`com.microsoft` or `com.onmicrosoft`) in an extension name.
 
 Derives from the [extension](extension.md) abstract type.
 
-Open extensions are supported by the following resources.
+The following resource support open extensions:
 
 + [user](/graph/api/resources/user)
 + [group](/graph/api/resources/group)
@@ -43,16 +43,16 @@ For more information about Microsoft Graph extensibility including limits for op
 
 ### Outlook-specific considerations
 
-Each open extension present on an Outlook resource (event, message, or personal contact) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties). When you create open extensions for Outlook, consider that MAPI named properties are a finite resource in a user's mailbox. When a user's named property quota is exhausted, you can't create any more named properties for that user. This can result in unexpected behavior from clients that rely on named properties to function.
+Each open extension on an Outlook resource (event, message, or personal contact) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties). When you create open extensions for Outlook, consider that MAPI named properties are a finite resource in a user's mailbox. When a user's named property quota is exhausted, you can't create anymore named properties for that user. This can result in unexpected behavior from clients that rely on named properties to function.
 
 Apply the following guidelines when you create open extensions on Outlook resources:
 
-- Create the minimum number of extensions required. Most applications should require no more than one extension. Extensions have no set defined properties or structure, so you can store multiple values in a single extension.
-- Avoid naming extensions in a variable manner (such as based on user input, etc.). Each time an open extension is created with a new name that has not been used in a user's mailbox before, a new MAPI named property is created. Removing the extension does not remove the named property.
+- Create the minimum number of extensions required. Most applications should require no more than one extension. Extensions have no defined properties or structure, so you can store multiple values in a single extension.
+- Avoid naming extensions in a variable manner (such as based on user input, etc.). Each time an open extension is created with a new name that hasn't been used in a user's mailbox before, a new MAPI named property is created. Removing the extension doesn't remove the named property.
 
 ### Use open extensions (for Outlook resources) or extended properties
 
-Open extensions are the recommended solution for most scenarios involving storing and accessing custom data. If, however, you need to access custom data for Outlook MAPI properties that are not already exposed through the [Microsoft Graph API metadata](/graph/traverse-the-graph#microsoft-graph-api-metadata), you can use [extended properties and its REST API](extended-properties-overview.md). You can verify which properties the metadata
+Open extensions are the recommended solution for most scenarios involving storing and accessing custom data. If, however, you need to access custom data for Outlook MAPI properties that aren't already exposed through the [Microsoft Graph API metadata](/graph/traverse-the-graph#microsoft-graph-api-metadata), you can use [extended properties and its REST API](extended-properties-overview.md). You can verify which properties the metadata
 exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 ## Methods
@@ -69,7 +69,7 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |extensionName|String|A unique text identifier for an open type data extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only. <br/><br/> The **id** must be defined during the Create operation via one of the following ways: <ul><li> Explicitly define the **id** property in the request body. <li> Define an **extensionName** property in the request body, and Microsoft Graph automatically assigns the same value to the **id** property. <ul><li> In subsequent updates, you can change the **extensionName** property value to one that's different from the **id** value. <li>In subsequent updates, specifying only the **id** property in the request body automatically deletes the **extensionName** property from the open extension.</ul></ul>|
+|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only. <br/><br/> The **id** must be defined during the *Create* operation via one of the following ways: <ul><li> Explicitly define the **id** property in the request body. <li> Define an **extensionName** property in the request body, and Microsoft Graph automatically assigns the same value to the **id** property. <ul><li> In subsequent updates, you can change the **extensionName** property value to one that's different from the **id** value. <li>In subsequent updates, specifying only the **id** property in the request body automatically deletes the **extensionName** property from the open extension.</ul></ul>|
 
 ## Relationships
 
@@ -77,7 +77,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

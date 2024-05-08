@@ -21,7 +21,7 @@ Represents an error from a failed workbook operation.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.change_password_post_request_body import ChangePasswordPostRequestBody
+from msgraph.generated.users.item.change_password.change_password_post_request_body import ChangePasswordPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

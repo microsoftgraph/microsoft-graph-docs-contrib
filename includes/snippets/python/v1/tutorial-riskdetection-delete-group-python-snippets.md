@@ -9,7 +9,7 @@ from msgraph import GraphServiceClient
 graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.groups.by_group_id('group-id').delete()
+await graph_client.identity.conditional_access.policies.by_conditional_access_policy_id('conditionalAccessPolicy-id').delete()
 
 
 ```

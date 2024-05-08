@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.batch_record_decisions_post_request_body import BatchRecordDecisionsPostRequestBody
+from msgraph.generated.users.item.pendingaccessreviewinstances.item.batch_record_decisions.batch_record_decisions_post_request_body import BatchRecordDecisionsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

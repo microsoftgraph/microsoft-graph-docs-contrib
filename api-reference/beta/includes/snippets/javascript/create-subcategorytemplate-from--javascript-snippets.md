@@ -10,16 +10,13 @@ const options = {
 
 const client = Client.init(options);
 
-const subCategoryTemplate = {
-  '@odata.type': '#microsoft.graph.security.subCategoryTemplate',
-  displayName: 'String',
-  createdBy: {
-    '@odata.type': 'microsoft.graph.identitySet'
-  }
+const subcategoryTemplate = {
+  '@odata.type': '#microsoft.graph.security.subcategoryTemplate',
+  displayName: 'Vendor Invoice',
 };
 
-await client.api('/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories')
+await client.api('/security/labels/categories/{categoryTemplateId}/subcategories')
 	.version('beta')
-	.post(subCategoryTemplate);
+	.post(subcategoryTemplate);
 
 ```

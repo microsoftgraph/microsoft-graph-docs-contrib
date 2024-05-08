@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.NetworkAccess().Connectivity().Branches().ByBranchSiteId("branchSite-id").DeviceLinks().ByDeviceLinkId("deviceLink-id").Delete(context.Background(), nil)
+graphClient.NetworkAccess().Connectivity().RemoteNetworks().ByRemoteNetworkId("remoteNetwork-id").DeviceLinks().ByDeviceLinkId("deviceLink-id").Delete(context.Background(), nil)
 
 
 ```

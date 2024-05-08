@@ -45,7 +45,7 @@ Some **linkedResource** objects aren't associated with any web URLs, in which ca
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
