@@ -146,6 +146,35 @@ Content-Type: application/json
       },
       "managedBy": "windows365",
       "provisioningType": "dedicated"
+    },
+    {
+      "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+      "description": "Description value",
+      "displayName": "Display Name value",
+      "domainJoinConfigurations": [
+        {
+          "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+          "type": "hybridAzureADJoin"
+        }
+      ],
+      "microsoftManagedDesktop":
+      {
+          "managedType": "starterManaged",
+          "profile": null
+      },
+      "autopatch": {
+          "autopatchGroupId": "91197a0b-3a74-408d-ba88-bce3fdc4e5eb"
+      },
+      "enableSingleSignOn": true,
+      "id": "d8e7b30f-6753-41cb-8644-28635957c1a4",
+      "imageDisplayName": "Image Display Name value",
+      "imageId": "Image ID value",
+      "imageType":"custom",
+      "windowsSetting": {
+          "locale": "en-US"
+      },
+      "managedBy": "windows365",
+      "provisioningType": "dedicated"
     }
   ]
 }
