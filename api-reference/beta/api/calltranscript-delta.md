@@ -31,7 +31,7 @@ For more information, see the [delta query](/graph/delta-query-overview) documen
 The following known issues are associated with this API:
 
 - [Using the `$top` query parameter might not return the @odata.nextLink](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
-- [Delta queries might older artifacts when meetings have unrelated changes](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934).
+- [Delta queries might return older artifacts when meetings have unrelated changes](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934).
 
 ## Permissions
 
