@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. 
 
->**Notes:**
->* You can update this relationship when its **status** property is `created`.
->* You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
->* You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long running operation.
+The following restrictions apply:
+- You can update this relationship when its **status** property is `created`.
+- You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
+- You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long-running operation.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -78,6 +78,7 @@ If you don't supply the template ID that corresponds to the Microsoft Entra Glob
 ## Examples
 
 ### Request
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -152,6 +153,7 @@ Content-Type: application/json
 ---
 
 ### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -193,6 +195,25 @@ Content-Type: application/json
     ]
   },
   "autoExtendDuration": "P180D"
+}
+```
+
+The following is an example response that returns a `202 Accepted` response code along with **Location** and **Retry-After** headers.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.delegatedAdminRelationship"
+}
+-->
+
+``` http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5e5594d3-6f82-458b-b567-77db4811f0cd-00000000-0000-0000-0000-000000001234/operations/d8dbb27b-7fe7-4523-a3df-f766355fe0f2
+Retry-After: 10
+Content-Type: application/json
+
+{
 }
 ```
 

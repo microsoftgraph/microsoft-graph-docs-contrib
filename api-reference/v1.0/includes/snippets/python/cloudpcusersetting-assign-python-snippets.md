@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.assign_post_request_body import AssignPostRequestBody
+from msgraph.generated.devicemanagement.virtualendpoint.usersettings.item.assign.assign_post_request_body import AssignPostRequestBody
 from msgraph.generated.models.cloud_pc_user_setting_assignment import CloudPcUserSettingAssignment
 from msgraph.generated.models.cloud_pc_management_group_assignment_target import CloudPcManagementGroupAssignmentTarget
 
