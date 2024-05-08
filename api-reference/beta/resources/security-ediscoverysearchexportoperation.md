@@ -62,7 +62,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 |Member|Description|
 |:----|-----------|
-| pst | Mails are grouped in PST format. |
+| pst | Include individual .pst files for each mailbox. |
 | msg | Include .msg for each message.        |
 | eml | Include .eml for each message.        |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
