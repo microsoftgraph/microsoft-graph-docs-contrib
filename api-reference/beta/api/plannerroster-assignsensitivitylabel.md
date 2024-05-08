@@ -7,7 +7,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Apply a [sensitivitylabelassignment](../resources/sensitivitylabelassignment.md) to a [plannerRoster](../resources/plannerroster.md) object
+# Assign sensitivitylabelassignment
 
 Rosters can be assigned sensitivity labels to further protect the roster.
 
