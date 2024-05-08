@@ -92,6 +92,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "name": "export_result1"
 }
 -->
@@ -134,6 +135,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "name": "export_result2"
 }
 -->
@@ -176,6 +178,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "name": "export_result3"
 }
 -->
@@ -219,6 +222,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "name": "export_result4"
 }
 -->
@@ -261,6 +265,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "name": "export_result5"
 }
 -->

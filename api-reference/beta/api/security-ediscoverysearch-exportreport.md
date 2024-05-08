@@ -90,16 +90,17 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "name": "export_report1",
+  "truncated": true,
+  "name": "export_report1"
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
-"cache-control": "no-store must-revalidate no-cache max-age=0"
-"client-request-id": "e0c4fae7-5b2b-51c7-582d-7e8389752e24"
-"content-length": "0"
-"location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('f57fc79d-bea8-42ac-b0be-217302d5683c')"
-"request-id": "9f6eceeb-2e33-474b-a997-ad778fa22d18"
+cache-control: no-store must-revalidate no-cache max-age=0
+client-request-id: e0c4fae7-5b2b-51c7-582d-7e8389752e24
+content-length: 0
+location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('f57fc79d-bea8-42ac-b0be-217302d5683c')
+request-id: 9f6eceeb-2e33-474b-a997-ad778fa22d18
 ```
 
 ### Example 2: Export an item report, which includes items with search hits and partially indexed items in all targeted locations, with no additional options selected
@@ -131,6 +132,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "name": "export_report2"
 }
 -->
@@ -151,6 +153,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
+  "truncated": true,
   "name": "export_report3"
 }
 -->
@@ -172,6 +175,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "name": "export_report3"
 }
 -->
@@ -214,6 +218,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "name": "export_report4"
 }
 -->
@@ -255,6 +260,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "name": "export_report5"
 }
 -->
