@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/insights/topWorkflowsProcessedSummary(startDateTime=String (timestamp),endDateTime=String (timestamp))
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/insights/topWorkflowsProcessedSummary(startDateTime=String(timestamp),endDateTime=String(timestamp))
 ```
 
 ### Response
