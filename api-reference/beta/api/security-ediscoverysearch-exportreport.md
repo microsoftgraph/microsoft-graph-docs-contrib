@@ -62,7 +62,7 @@ If the export has started successfully, this action returns a `202 Accepted` res
 
 ## Examples
 
-### Example 1 : Export an item report which includes items with search hits only, excluding partially indexed itmes, with no additional options selected
+### Example 1 : Export an item report, which includes items with search hits only, excluding partially indexed itmes, with no additional options selected
 
 #### Request
 
@@ -104,7 +104,7 @@ HTTP/1.1 202 Accepted
 }
 
 ```
-### Example 2 : Export an item report which includes items with search hits and partially indexed items in all targeted locations, with no additional options selected
+### Example 2 : Export an item report, which includes items with search hits and partially indexed items in all targeted locations, with no additional options selected
 
 #### Request
 
@@ -148,7 +148,7 @@ HTTP/1.1 202 Accepted
 
 ```
 
-### Example 3 : Export an item report which includes items with search hits and partially indexed items in locations with search hits only, with no additional options selected
+### Example 3 : Export an item report, which includes items with search hits and partially indexed items in locations with search hits only, with no additional options selected
 
 #### Request
 
@@ -192,7 +192,7 @@ HTTP/1.1 202 Accepted
 
 ```
 
-### Example 4 : Export an item report which includes partially indexed items in all targeted locations, with all additional options selected
+### Example 4 : Export an item report, which includes partially indexed items in all targeted locations, with all additional options selected
 
 #### Request
 
@@ -237,7 +237,7 @@ HTTP/1.1 202 Accepted
 
 ```
 
-### Example 5 : Export an item report which includes partially indexed items in locations with search hits only, with cloud attachments
+### Example 5 : Export an item report, which includes partially indexed items in locations with search hits only, with cloud attachments
 
 #### Request
 

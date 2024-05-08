@@ -63,7 +63,7 @@ If the export has started successfully, this action returns a `202 Accepted` res
 
 ## Examples
 
-### Example 1 : Export results which include items with search hits only, exclude partially indexed itmes, with no additional options selected, emails as .pst files for each mailbox
+### Example 1 : Export results, which include items with search hits only, exclude partially indexed itmes, with no additional options selected, emails as .pst files for each mailbox
 
 #### Request
 
@@ -107,7 +107,7 @@ HTTP/1.1 202 Accepted
 
 ```
 
-### Example 2 : Export results which include items with search hits and partially indexed items in all targeted locations, with no additional options selected, emails as .pst files for each mailbox
+### Example 2 : Export results, which include items with search hits and partially indexed items in all targeted locations, with no additional options selected, emails as .pst files for each mailbox
 
 #### Request
 
@@ -152,7 +152,7 @@ HTTP/1.1 202 Accepted
 
 ```
 
-### Example 3 : Export results which include items with search hits and partially indexed items in locations with search hits only, with no additional options selected, emails as .msg files for each message
+### Example 3 : Export results, which include items with search hits and partially indexed items in locations with search hits only, with no additional options selected, emails as .msg files for each message
 
 #### Request
 
@@ -197,7 +197,7 @@ HTTP/1.1 202 Accepted
 
 ```
 
-### Example 4 : Export results which include partially indexed items in all targeted locations, with all additional options selected, emails as .eml files for each message
+### Example 4 : Export results, which include partially indexed items in all targeted locations, with all additional options selected, emails as .eml files for each message
 
 #### Request
 
@@ -243,7 +243,7 @@ HTTP/1.1 202 Accepted
 
 ```
 
-### Example 5 : Export results which include partially indexed items in locations with search hits only, with cloud attachments, emails as .eml files for each message
+### Example 5 : Export results, which include partially indexed items in locations with search hits only, with cloud attachments, emails as .eml files for each message
 
 #### Request
 
