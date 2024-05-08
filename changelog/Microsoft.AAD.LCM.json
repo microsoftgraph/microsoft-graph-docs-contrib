@@ -137,7 +137,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "topTasksProcessedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topTasksProcessedSummary](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [topTasksProcessedSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topTasksProcessedSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the [topTasksProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identitygovernance-insights-toptasksprocessedsummary?view=graph-rest-beta) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource.",
           "Target": "topTasksProcessedSummary"
         },
         {
@@ -145,7 +145,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "topWorkflowsProcessedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topWorkflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [topWorkflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topWorkflowsProcessedSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the [topWorkflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identitygovernance-insights-topworkflowsprocessedsummary?view=graph-rest-beta) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource.",
           "Target": "topWorkflowsProcessedSummary"
         },
         {
@@ -153,7 +153,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "workflowsProcessedByCategory",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsProcessedByCategory](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [workflowsProcessedByCategory](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsProcessedByCategory?view=graph-rest-beta) resource.",
+          "Description": "Added the [workflowsProcessedByCategory](https://learn.microsoft.com/en-us/graph/api/identitygovernance-insights-workflowsprocessedbycategory?view=graph-rest-beta) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource.",
           "Target": "workflowsProcessedByCategory"
         },
         {
@@ -161,7 +161,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "workflowsProcessedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [workflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsProcessedSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the [workflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identitygovernance-insights-workflowsprocessedsummary?view=graph-rest-beta) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource.",
           "Target": "workflowsProcessedSummary"
         }
       ],
