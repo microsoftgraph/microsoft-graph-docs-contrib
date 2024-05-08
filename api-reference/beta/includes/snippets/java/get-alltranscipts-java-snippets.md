@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-var result = graphClient.users().byUserId("{user-id}").onlineMeetings().getAllTranscripts().get(requestConfiguration -> {
+OnlineMeeting result = graphClient.users().byUserId("{user-id}").onlineMeetings().byOnlineMeetingId("{onlineMeeting-id}").get(requestConfiguration -> {
 	requestConfiguration.queryParameters.filter = "meetingOrganizerId eq '8b081ef6-4792-4def-b2c9-c363a1bf41d5'";
 });
 
