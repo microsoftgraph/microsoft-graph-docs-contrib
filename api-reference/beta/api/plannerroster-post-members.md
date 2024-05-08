@@ -139,4 +139,4 @@ Content-Type: application/json
 
 #### 403 Forbidden
 
-If the sensitivityLabel on the roster disallows the addition of guest users, and the request would add guest users to the plannerRoster, the request fails, and the **code** property on the error resource type is "AddingGuestUsersProhibitedByLabel".
+If the sensitivityLabel on the roster disallows the addition of guests, and the request would add guests to the plannerRoster, the request fails, and the **code** property on the error resource type is "AddingGuestUsersProhibitedByLabel".

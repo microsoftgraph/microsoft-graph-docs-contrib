@@ -17,7 +17,7 @@ Represents a collection of users who are collaborating on a [plannerPlan](planne
 
 Deleting a **plannerRoster** also deletes the plan and all tasks in the plan. A **plannerRoster** is also automatically deleted under the following conditions:
 
-* The **plannerRoster** doesn't contain a plan 24 hours after its creation. Membership information is completely erased within 30 days of this deletion.
+* The **plannerRoster** doesn't contain a plan 24 hours after its creation. Membership information is erased within 30 days of this deletion.
 * The **plannerRoster** doesn't have any users remaining in the membership list because the last user removed themselves. Roster, its plan, and all contained tasks are deleted within 30 days of this operation.
 * The **plannerRoster** doesn't have any users remaining in the membership list because the last user was permanently deleted. Roster, its plan, and all contained tasks are deleted immediately. Deleted users are permanently erased within 30 days of their deletion; however, tenant administrators can also choose to permanently delete users without this delay.
 
@@ -47,7 +47,6 @@ Deleting a **plannerRoster** also deletes the plan and all tasks in the plan. A 
 |plans|[plannerPlan](../resources/plannerplan.md) collection|Retrieves the plans contained by the **plannerRoster**.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

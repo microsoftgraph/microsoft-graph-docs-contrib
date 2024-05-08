@@ -126,5 +126,5 @@ If labels are mandatory for the user, and the created roster would have no sensi
 
 If the roster would be created with guest members initially added to the roster, but the proposed sensitivityLabel disallows the addition of guests, the request fails, and the **code** property on the error resource type is "AddingGuestUsersProhibitedByLabel".
 
-If the provided label does not have the correct tenant ID, the request fails. The **code** property on the error response is "TenantIdIsIncorrect".
+If the provided label doesn't have the correct tenant ID, the request fails. The **code** property on the error response is "TenantIdIsIncorrect".
 
