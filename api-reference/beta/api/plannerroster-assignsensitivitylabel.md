@@ -27,27 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST https://graph.microsoft.com/beta/planner/rosters/{rosterId}/assignSensitivityLabel
 ```
 
-## Response
-
-If successful, this API returns the updated roster
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "name": "assign_sensitivitylabel_to_roster_",
-  "@odata.type": "microsoft.graph.plannerRoster"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.plannerRoster",
-  "id": "6519868f-868f-6519-8f86-19658f861965"
-}
-```
-
 ## Examples
 
 ### Request
@@ -66,6 +45,27 @@ If-Match: "string"
 {
     "assignmentMethod" : "microsoft.graph.sensitivityLabelAssignmentMethod",
     "sensitivityLabelId": "string"
+}
+```
+
+### Response
+
+If successful, this API returns the updated roster
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "assign_sensitivitylabel_to_roster_",
+  "@odata.type": "microsoft.graph.plannerRoster"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.plannerRoster",
+  "id": "6519868f-868f-6519-8f86-19658f861965"
 }
 ```
 
