@@ -16,16 +16,17 @@ Namespace: microsoft.graph
 Represents the filtering criteria applied to a column.
 
 ## Properties
+
 | Property	      | Type	                 |Description|
 |:----------------|:-------------------------|:----------|
-| color           | String                   | *TODO*    |
-| criterion1      | String                   | *TODO*    |
-| criterion2      | String                   | *TODO*    |
-| dynamicCriteria | String                   | *TODO*    |
-| filterOn        | String                   | *TODO*    |
-| icon            | [workbookIcon](workbookicon.md)  | *TODO*    |
-| operator        | String                   | *TODO*    |
-| values          | [Json](json.md)          | *TODO*    |
+| color           | String                   | The color applied to the cell.   |
+| criterion1      | String                   | A custom criterion.  |
+| criterion2      | String                   | A custom criterion.    |
+| dynamicCriteria | String                   | A dynamic formula specified in a custom filter.   |
+| filterOn        | String                   | Indicates whether a filter is applied to a column.    |
+| icon            | [workbookIcon](workbookicon.md)  | An icon applied via conditional formatting.   |
+| operator        | String                   | An operator in a cell; for example, `=`, `>`, `<`, `<=`, or `<>`.    |
+| values          | [Json](json.md)          | The values that appear in the cell.    |
 
 ## JSON representation
 
