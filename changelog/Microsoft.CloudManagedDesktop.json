@@ -9,6 +9,14 @@
           "ChangeType": "Addition",
           "Description": "Added possible values to **provisioningType** property of [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
+        },
+        {
+          "Id": "a4055d6d-2123-4e14-9603-abe10f33fe8a",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "provisioningType",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `shared` member of the **cloudPcProvisioningType** enumeration. The `shared` member is deprecated and will stop returning on April 30, 2027. Going forward, use the `sharedByUser` member.",
+          "Target": "cloudPC"
         }
       ],
       "Id": "a4055d6d-2123-4e14-9603-abe10f33fe8a",
