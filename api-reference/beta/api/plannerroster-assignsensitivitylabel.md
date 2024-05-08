@@ -34,6 +34,7 @@ If successful, this API returns the updated roster
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "assign_sensitivitylabel_to_roster_",
   "@odata.type": "microsoft.graph.plannerRoster"
 }
 -->
