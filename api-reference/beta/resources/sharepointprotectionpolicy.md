@@ -41,11 +41,11 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |id|String|The unique identifier of the protection rule associated to the policy.|
 |displayName|String|Name of the policy being created|
 |createdDateTime|DateTimeOffset|The time of creation of the policy.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Timestamp of last modification of this policy .|
+|createdBy|identitySet|The identity of person who created the policy.|
+|lastModifiedBy|identitySet|Timestamp of last modification of this policy .|
 |lastModifiedDateTime|DateTimeOffset|Identity of the person who last modified this policy.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Complex type containing details of all the retention settings for the policy.|
-|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicybase-resource-type)|Status of the policy. It is an aggregated status of protection units.The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
+|status|[protectionPolicyStatus](../resources/sharepointprotectionpolicy.md#protectionpolicybase-resource-type)|Status of the policy. It is an aggregated status of protection units.The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
 
 ### protectionPolicyStatus values
 |Member | Description |
