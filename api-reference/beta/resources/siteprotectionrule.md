@@ -1,33 +1,30 @@
 ---
-title: "protectionRuleBase resource type"
-description: "Describes protection unit and it's properties "
+title: "siteProtectionRule resource type"
+description: "Describes site protection unit and it's properties"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 ---
 
-# protectionRuleBase resource type
+# siteProtectionRule resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Protection rule is defined as a criterion specified by the client to identify the M365 resources that need to be protected at a defined protection plan. This rule can be of two types i.e.,
+This derived entity contains the site expression and other metadata. It is associated to the SharePoint protection policy.
 
-Inclusion: Protection policy should contain units that match the specified criteria.
-Exclusion: Protection policy should NOT contain units that match the specified criteria.
-The rule execution policy can also be static or dynamic i.e., whether the rule needs to be executed one time or at a regular interval to find the matching M365 resources.
-
-This is an abstract type.
+Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List protectionRuleBase objects](../api/protectionrulebase-list.md)|[protectionRuleBase](../resources/protectionrulebase.md) collection|Get a list of the [protectionRuleBase](../resources/protectionrulebase.md) objects and their properties.|
-|[Get protectionRuleBase](../api/protectionrulebase-get.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Read the properties and relationships of a [protectionRuleBase](../resources/protectionrulebase.md) object.|
-|[Update protectionRuleBase](../api/protectionrulebase-update.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object.|
-|[Delete protectionRuleBase](../api/protectionrulebase-delete.md)|None|Delete a [protectionRuleBase](../resources/protectionrulebase.md) object.|
+|[List siteProtectionRule objects](../api/sharepointprotectionpolicy-list-siteinclusionrules.md)|[siteProtectionRule](../resources/siteprotectionrule.md) collection|Get a list of the [siteProtectionRule](../resources/siteprotectionrule.md) objects and their properties.|
+|[Create siteProtectionRule](../api/sharepointprotectionpolicy-post-siteinclusionrules.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Create a new [siteProtectionRule](../resources/siteprotectionrule.md) object.|
+|[Get siteProtectionRule](../api/siteprotectionrule-get.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Read the properties and relationships of a [siteProtectionRule](../resources/siteprotectionrule.md) object.|
+|[Update siteProtectionRule](../api/siteprotectionrule-update.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Update the properties of a [siteProtectionRule](../resources/siteprotectionrule.md) object.|
+|[Delete siteProtectionRule](../api/sharepointprotectionpolicy-delete-siteinclusionrules.md)|None|Delete a [siteProtectionRule](../resources/siteprotectionrule.md) object.|
 |[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
 
 ## Properties
@@ -51,7 +48,6 @@ This is an abstract type.
 |completedWithErrors | In case of any failures while applying the protection rule to the corresponding policy, the status of protectionRuleBase will be completedWithErrors. The state transition is active to completedWithErrors.|
 |unknownFutureValue | Marker value for future compatibility.|
 
-
 ## Relationships
 None.
 
@@ -60,14 +56,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.protectionRuleBase",
-  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.siteProtectionRule",
+  "baseType": "microsoft.backupRestore.protectionRuleBase",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.protectionRuleBase",
+  "@odata.type": "#microsoft.graph.siteProtectionRule",
   "id": "String (identifier)",
   "status": "String",
   "createdDateTime": "String (timestamp)",
@@ -81,7 +77,8 @@ The following JSON representation shows the resource type.
   "error": {
     "@odata.type": "microsoft.graph.publicError"
   },
-  "isAutoApplyEnabled": "Boolean"
+  "isAutoApplyEnabled": "Boolean",
+  "siteExpression": "String"
 }
 ```
 
