@@ -21,8 +21,8 @@
             ],
             "Id": "1d461cc3-80cf-4761-8c06-05972e729209",
             "Cloud": "Prod",
-            "Version": "v1.0",
-            "CreatedDateTime": "2024-04-22T09:24:41.3424906Z",
+            "Version": "beta",
+            "CreatedDateTime": "2024-04-22T10:25:21.3434973Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
