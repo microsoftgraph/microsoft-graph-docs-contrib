@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore session APIs are used by Global Admin or SharePoint Online Admin for OneDrive to perform restore related tasks on artifacts which are protected as part of mailbox protection policy.
+Restore session APIs are used by Global Admin or Exchange Online Admin for Exchange Online to perform restore related tasks on artifacts which are protected as part of mailbox protection policy.
 
 Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
@@ -39,9 +39,9 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resource/restoresessionbase.md#protectonUnitStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resource/exchangerestoresession.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
-### protectionUnitStatus values
+### restoreSessionStatus values
 |Member | Description |
 |:------|:------------|
 |draft|All artifacts are in "added" status, restore session status is "draft".|
