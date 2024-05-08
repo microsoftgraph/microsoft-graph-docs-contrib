@@ -339,9 +339,9 @@
             {
               "name": "Alert monitoring",
               "resources": [
-                "monitoring",
-                "alertRecord",
-                "alertRule"
+                "microsoft.graph.deviceManagement.monitoring",
+                "microsoft.graph.deviceManagement.alertRecord",
+                "microsoft.graph.deviceManagement.alertRule"
               ]
             },
             {

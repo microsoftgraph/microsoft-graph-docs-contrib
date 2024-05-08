@@ -367,7 +367,24 @@ items:
     - name: Create cloudPcBulkAction
       href: ../../api/virtualendpoint-post-bulkactions.md
   - name: Alert monitoring
-    items: []
+    items:
+    - name: Monitoring
+      href: ../../resources/devicemanagement-monitoring.md
+      displayName: Microsoft Endpoint Manager admin center alerts
+    - name: Alert record
+      items:
+      - name: Alert record
+        href: ../../resources/devicemanagement-alertrecord.md
+      - name: List alertRecords
+        href: ../../api/devicemanagement-alertrecord-list.md
+      - name: Get alertRecord
+        href: ../../api/devicemanagement-alertrecord-get.md
+      - name: getPortalNotifications
+        href: ../../api/devicemanagement-alertrecord-getportalnotifications.md
+      - name: setPortalNotificationAsSent
+        href: ../../api/devicemanagement-alertrecord-setportalnotificationassent.md
+    - name: Alert rule
+      href: ../../resources/devicemanagement-alertrule.md
   - name: Complex types
     items:
     - name: App scope

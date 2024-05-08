@@ -1336,12 +1336,12 @@
                   "name": "File plan descriptors",
                   "resources": [
                     "microsoft.graph.security.filePlanDescriptor",
-                    "microsoft.graph.security.appliedCategory",
-                    "microsoft.graph.security.authority",
-                    "microsoft.graph.security.citation",
-                    "microsoft.graph.security.department",
+                    "microsoft.graph.security.filePlanAppliedCategory",
+                    "microsoft.graph.security.filePlanAuthority",
+                    "microsoft.graph.security.filePlanCitation",
+                    "microsoft.graph.security.filePlanDepartment",
                     "microsoft.graph.security.filePlanReference",
-                    "microsoft.graph.security.subCategory"
+                    "microsoft.graph.security.filePlanSubcategory"
                   ]
                 },
                 {

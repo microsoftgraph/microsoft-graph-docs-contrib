@@ -465,18 +465,18 @@ items:
       items:
       - name: File plan descriptor
         href: ../../resources/security-fileplandescriptor.md
-      - name: Applied category
-        href: ../../resources/security-appliedcategory.md
-      - name: Authority
-        href: ../../resources/security-authority.md
-      - name: Citation
-        href: ../../resources/security-citation.md
-      - name: Department
-        href: ../../resources/security-department.md
+      - name: File plan applied category
+        href: ../../resources/security-fileplanappliedcategory.md
+      - name: File plan authority
+        href: ../../resources/security-fileplanauthority.md
+      - name: File plan citation
+        href: ../../resources/security-fileplancitation.md
+      - name: File plan department
+        href: ../../resources/security-fileplandepartment.md
       - name: File plan reference
         href: ../../resources/security-fileplanreference.md
-      - name: Sub category
-        href: ../../resources/security-subcategory.md
+      - name: File plan subcategory
+        href: ../../resources/security-fileplansubcategory.md
     - name: File plan descriptor templates
       items:
       - name: Category template
@@ -491,9 +491,9 @@ items:
           href: ../../api/security-categorytemplate-get.md
         - name: Delete categories
           href: ../../api/security-labelsroot-delete-categories.md
-        - name: List subCategories
+        - name: List subcategories
           href: ../../api/security-categorytemplate-list-subcategories.md
-        - name: Create subCategories
+        - name: Create subcategories
           href: ../../api/security-categorytemplate-post-subcategories.md
       - name: Authority template
         items:
@@ -547,13 +547,13 @@ items:
         items:
         - name: Subcategory template
           href: ../../resources/security-subcategorytemplate.md
-        - name: List subCategories
+        - name: List subcategories
           href: ../../api/security-categorytemplate-list-subcategories.md
-        - name: Create subCategories
+        - name: Create subcategories
           href: ../../api/security-categorytemplate-post-subcategories.md
-        - name: Get subCategories
+        - name: Get subcategories
           href: ../../api/security-subcategorytemplate-get.md
-        - name: Delete subCategories
+        - name: Delete subcategories
           href: ../../api/security-categorytemplate-delete-subcategories.md
   - name: Complex types
     items:
