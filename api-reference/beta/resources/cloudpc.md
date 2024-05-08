@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into Intune and managed through the Microsoft Endpoint Manager portal, so the Cloud PC also has a corresponding Intune managed device ID.
+Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in Intune and managed through the Microsoft Endpoint Manager portal, so the Cloud PC also has a corresponding Intune-managed device ID.
 
 ## Methods
 
@@ -31,7 +31,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Rename](../api/cloudpc-rename.md)|None|Rename a specific Cloud PC object. Use this API to update the **displayName** for the Cloud PC entity.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a Cloud PC object.|
 |[Bulk reprovision remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
-|[Resize remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing Cloud PC to another configuration with new vCPU and storage size through Intune managed device ID.|
+|[Resize remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing Cloud PC to another configuration with a new vCPU and storage size through Intune managed device ID.|
 |[Start](../api/cloudpc-start.md)|None|Start a specific Cloud PC for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
 |[Stop](../api/cloudpc-stop.md)|None|Stop a specific Cloud PC for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific Cloud PC object. Use this API to check the health status of the Cloud PC and the session host.|
@@ -57,15 +57,15 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |Property|Type|Description|
 |:---|:---|:---|
 |aadDeviceId|String|The Microsoft Entra device ID of the Cloud PC.|
-|allotmentDisplayName|String|The allotment name divides tenant licenses into smaller batches or groups that helps restrict the number of licenses available for use in a specific assignment. When the **provisioningType** is `dedicated`, the allotment name is `null`. Read-only.|
+|allotmentDisplayName|String|The allotment name divides tenant licenses into smaller batches or groups that help restrict the number of licenses available for use in a specific assignment. When the **provisioningType** is `dedicated`, the allotment name is `null`. Read-only.|
 |connectivityResult|[cloudPcConnectivityResult](../resources/cloudpcconnectivityresult.md)|The connectivity health check result of a Cloud PC, including the updated timestamp and whether the Cloud PC can be connected.|
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
-|gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happen. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example, `{ "time": "2014-01-01T00:00:00Z"}`.|
-|lastModifiedDateTime|DateTimeOffset|The last modified date and time of the Cloud PC. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|The last modified date and time of the Cloud PC. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`.|
 |lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the enterprise Cloud PCs. The supported remote actions are: `Reboot`, `Rename`, `Reprovision`, `Restore`, `Troubleshoot`.|
 |managedDeviceId|String|The Intune device ID of the Cloud PC.|
 |managedDeviceName|String|The Intune device name of the Cloud PC.|
@@ -75,9 +75,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |powerState|[cloudPcPowerState](#cloudpcpowerstate-values)|The power state of a Cloud PC. The possible values are: `running`, `poweredOff`, `unknown`. This property only supports shift work Cloud PCs.|
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
-|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`,`sharedByUser`, `sharedByUser`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`. Default value is `dedicated`. 
-  > [!CAUTION] 
-  > The `shared` member is deprecated and will stop returning on April 30, 2027； going forward, use the `sharedByUser` member. |
+|provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. Possible values are: `dedicated`, `shared`, `unknownFutureValue`,`sharedByUser`, `sharedByUser`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`. The default value is `dedicated`. CAUTION: The `shared` member is deprecated and will stop returning on April 30, 2027； in the future, use the `sharedByUser` member. |
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
@@ -90,9 +88,9 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 
 |Member|Description|
 |:---|:---|
-|notAvailable|The Cloud PC isn't provisioned, or is in a state where encryption isn't available.|
+|notAvailable|The Cloud PC isn't provisioned or is in a state where encryption isn't available.|
 |notEncrypted|The Cloud PC should be encrypted, but the encryption isn't done so yet (reserved, shouldn't happen).|
-|encryptedUsingPlatformManagedKey|The Cloud PC is encrypted using a platform managed key. This member is the default value if the customer-managed key isn't enabled.|
+|encryptedUsingPlatformManagedKey|The Cloud PC is encrypted using a platform-managed key. This member is the default value if the customer-managed key isn't enabled.|
 |encryptedUsingCustomerManagedKey|The Cloud PC is encrypted using the customer-managed key.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
@@ -101,7 +99,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |Member|Description|
 |:---|:---|
 |running|The Cloud PC status is running.|
-|poweredOff|The Cloud PC status is power off.|
+|poweredOff|The Cloud PC status is powered off.|
 |unknown|The Cloud PC status is unknown.|
 
 ### cloudPcStatus values
@@ -112,12 +110,12 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |notProvisioned|The Cloud PC hasn't been provisioned yet.|
 |provisioning|Cloud PC provisioning is in progress.|
 |provisioned|The Cloud PC is provisioned and users can access it.|
-|inGracePeriod|The Cloud PC is in the one week grace period before deprovision.|
+|inGracePeriod|The Cloud PC is in the one-week grace period before deprovision.|
 |deprovisioning|The Cloud PC is deprovisioning.|
 |failed|The operation on Cloud PC failed.|
 |provisionedWithWarnings|The Cloud PC is provisioned and end users can access it with some warnings. The user can continue to use this Cloud PC.|
 |resizing|The Cloud PC is resizing.|
-|pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in grace period is more than the number of total available licenses. |
+|pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in the grace period is more than the number of total available licenses. |
 |restoring|The Cloud PC is restoring.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 |movingRegion|Indicates that the Cloud PC is being moved from one region to another.|
@@ -132,7 +130,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |activationFailed|Indicates that the frontline Cloud PC activation failed after the user requested a frontline Cloud PC.|
 |active|Indicates that the frontline Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
-|standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in standby state is still accessible by the user.|
+|standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in a standby state is still accessible by the user.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### shiftWorkCloudPcAccessState values (deprecated)
@@ -145,7 +143,7 @@ The following table lists the members of an [evolvable enumeration](#shiftworkcl
 |activationFailed|Indicates that the shift work Cloud PC activation failed after the user requested a shift work Cloud PC.|
 |active|Indicates that the shift work Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
-|waitlisted (deprecated)|Indicates that the shift work Cloud PC is in waitlisted state after the user requests to connect this Cloud PC and all shared use licenses are being actively used. This value is deprecated and will stop returning on May 17, 2023. |
+|waitlisted (deprecated)|Indicates that the shift work Cloud PC is in a waitlisted state after the user requests to connect this Cloud PC and all shared use licenses are being actively used. This value is deprecated and will stop returning on May 17, 2023. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 |standbyMode|Indicates that the shift work Cloud PC is in a standby state before it's shut down and deallocated. A shift work Cloud PC in standby state is still accessible by the user.|
 
