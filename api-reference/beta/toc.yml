@@ -13866,12 +13866,12 @@ items:
                         href: api/claimsmappingpolicy-delete.md
                       - name: List applied to applications
                         href: api/claimsmappingpolicy-list-appliesto.md
-                  - name: Custom Claims policy
+                  - name: Custom claims policy
                     href: resources/customclaimspolicy.md
                     items:
                       - name: Get
                         href: api/customclaimspolicy-get.md
-                      - name: Create/Replace
+                      - name: Create or replace
                         href: api/serviceprincipal-put-customclaimspolicy.md
                       - name: Update
                         href: api/customclaimspolicy-update.md
