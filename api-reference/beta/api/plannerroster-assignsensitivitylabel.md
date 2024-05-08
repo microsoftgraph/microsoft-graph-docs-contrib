@@ -29,7 +29,23 @@ POST https://graph.microsoft.com/beta/planner/rosters/{rosterId}/assignSensitivi
 
 ## Response
 
-If successful, this API returns a `204 No Content`.
+If successful, this API returns the updated roster
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.plannerRoster"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.plannerRoster",
+  "id": "6519868f-868f-6519-8f86-19658f861965"
+}
+```
 
 ## Examples
 
@@ -45,6 +61,7 @@ If successful, this API returns a `204 No Content`.
 POST https://graph.microsoft.com/beta/planner/rosters/{rosterId}/assignSensitivityLabel
 Content-type: application/json
 If-Match: "string"
+
 {
     "assignmentMethod" : "microsoft.graph.sensitivityLabelAssignmentMethod",
     "sensitivityLabelId": "string"
