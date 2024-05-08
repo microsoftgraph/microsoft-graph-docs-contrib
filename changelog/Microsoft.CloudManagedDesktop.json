@@ -7,7 +7,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "provisioningType",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the `shared` member in the **cloudPcProvisioningType** enumeration".
+          "Description": "Deprecated the `shared` member in the **cloudPcProvisioningType** enumeration.",
           "Target": "cloudPC"
         }
       ],
