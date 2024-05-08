@@ -30,13 +30,13 @@ Restore Artifact refers to the site/drive/mailbox units' restore point and desti
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the restore artifact|
-|completionDateTime|DateTimeOffset|The time of createion of the restore artifact.|
+|completionDateTime|DateTimeOffset|The time when restoration of restore artifact is completed.|
 |destinationType|destinationType|Describes preference for restoration destination.The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
 |error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
-|startDateTime|DateTimeOffset|The time when restore session started creating restore artifact|
-|status|artifactRestoreStatus|Status of the restore artifact.The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
+|startDateTime|DateTimeOffset|The time when restoration of restore artifact is started.|
+|status|artifactRestoreStatus|The individual restoration status of the restore artifact..The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
-### restoreSessionStatus values
+### artifactRestoreStatus values
 |Member | Description |
 |:------|:------------|
 |added|Initial Status when restore artifact has been added to restore session.|
