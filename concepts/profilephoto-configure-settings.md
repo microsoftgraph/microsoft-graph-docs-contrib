@@ -13,29 +13,11 @@ controlling the environment where user profile photos can be updated
 within the organization and which roles are required to update profile
 user photos within the organization.
 
-This setting is only available to tenants that have a hybrid identity. Hybrid identity uses accounts that originate in an on-premises AD DS and have a copy in the Microsoft Entra tenant of a Microsoft 365 subscription. To determine whether this applies to you see [here](https://learn.microsoft.com/en-us/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide). For such hybrid tenants, Global Administrators can configure whether user profile photo updates from on-premises should take effect
-within the cloud or whether user profile photo updates within the
-organization are to be made from the cloud only. 
-
-## Steps for admins 
-
-1. Configure your chosen User Profile Photos environment 
-    1. Cloud  
-    2. On-premises 
-
-2. Migrate existing User Profile Photo actions to the chosen environment 
-    1. On-premises to cloud 
-    2. Cloud to on-premises 
-
-3. Clean-up User Profile Photos in the non-supported environment 
-    1. On-premises 
-    2. Cloud 
-
 ## Configure the User Profile Photo environment 
 
 For tenants that have a hybrid identity, user accounts can be synced
 from on-premises Active Directory to the cloud via [Directory
-Sync](https://learn.microsoft.com/en-us/azure/active-directory/architecture/sync-directory). 
+Sync](https://learn.microsoft.com/en-us/azure/active-directory/architecture/sync-directory). To determine whether you have a hybrid identity see [here](https://learn.microsoft.com/en-us/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide). 
 For such hybrid tenants, Global Administrators can configure whether
 such user profile photo updates from on-premises should take effect
 within the cloud or whether user profile photo updates within the
@@ -100,9 +82,9 @@ Content-Type: application/json
 
 {
 
-    \"source\": \"cloud\",
+    "source": "cloud",
 
-    \"allowedRoles\": null
+    "allowedRoles": null
 
 }
 ```
@@ -119,9 +101,9 @@ Content-Type: application/json
 
 {
 
-    \"source\": \"cloud\",
+    "source": "cloud",
 
-    \"allowedRoles\": null
+    "allowedRoles": null
 
 }
 ```
@@ -135,9 +117,9 @@ Content-Type: application/json
 
 {
 
-    \"source\": \"cloud\",
+    "source": "cloud",
 
-    \"allowedRoles\": null
+    "allowedRoles": null
 
 }
 ```
@@ -158,9 +140,9 @@ Content-Type: application/json
 
 {
 
-    \"source\": \"cloud\",
+    "source": "cloud",
 
-    \"allowedRoles\": \[\"62e90394-69f5-4237-9190-012177145e10\"\]
+    "allowedRoles": ["62e90394-69f5-4237-9190-012177145e10"]
 
 }
 ```
@@ -169,9 +151,9 @@ a photoUpdateSettings object in the response body.
 ```http
 {
 
-    \"source\": \"cloud\",
+    "source": "cloud",
 
-    \"allowedRoles\": \[\"62e90394-69f5-4237-9190-012177145e10\"\]
+    "allowedRoles": ["62e90394-69f5-4237-9190-012177145e10"]
 
 }
 ```
@@ -186,9 +168,9 @@ Content-Type: application/json
 
 {
 
-    \"source\": \"cloud\",
+    "source": "cloud",
 
-    \"allowedRoles\": \[\" fe930be7-5e62-47db-91af-98c3a49a38b1\"\]
+    "allowedRoles": [" fe930be7-5e62-47db-91af-98c3a49a38b1"]
 
 }
 ```
@@ -197,9 +179,9 @@ a photoUpdateSettings object in the response body.
 ```http
 {
 
-    \"source\": \"cloud\",
+    "source": "cloud",
 
-    \"allowedRoles\": \[\" fe930be7-5e62-47db-91af-98c3a49a38b1\"\]
+    "allowedRoles": [" fe930be7-5e62-47db-91af-98c3a49a38b1"]
 
 }
 ```
@@ -214,10 +196,10 @@ Content-Type: application/json
 
 {
 
-    \"source\": \"cloud\",
+    "source": "cloud",
 
-    \"allowedRoles\": \[\"62e90394-69f5-4237-9190-012177145e10\",
-\"fe930be7-5e62-47db-91af-98c3a49a38b1\"\]
+    "allowedRoles": ["62e90394-69f5-4237-9190-012177145e10",
+"fe930be7-5e62-47db-91af-98c3a49a38b1"]
 
 }
 ```
@@ -226,10 +208,10 @@ a photoUpdateSettings object in the response body.
 ```http
 {
 
-    \"source\": \"cloud\",
+    "source": "cloud",
 
-    \"allowedRoles\": \[\"62e90394-69f5-4237-9190-012177145e10\",
-\"fe930be7-5e62-47db-91af-98c3a49a38b1\"\]
+    "allowedRoles": ["62e90394-69f5-4237-9190-012177145e10",
+"fe930be7-5e62-47db-91af-98c3a49a38b1"]
 
 }
 ```
@@ -244,9 +226,9 @@ Content-Type: application/json
 
 {
 
-    \"source\": \"onpremises\",
+    "source": "onpremises",
 
-    \"allowedRoles\": null
+    "allowedRoles": null
 
 }
 ```
@@ -255,32 +237,9 @@ a photoUpdateSettings object in the response body.
 ```http
 {
 
-    \"source\": \"onPremises\",
+    "source": "onPremises",
 
-    \"allowedRoles\": null
+    "allowedRoles": null
 
 }
 ```
-## Clean up User Profile Photos in the non-supported environment
-
-After updating the User Profile Photo Environment, it is advised that
-user profile photos in the non-supported environment are removed.
-
-### On-premises
-
-The on-premises photo can be removed from Active Directory using
-Exchange PowerShell, as described in
-[this](https://learn.microsoft.com/en-us/powershell/module/exchange/remove-userphoto)
-document.
-
-### Cloud
-
-The cloud user profile photo can be removed using the Microsoft Graph,
-as described in
-[this](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete?view=graph-rest-1.0&tabs=http)
-document.
-
-## How the introduction of admin controls impacts existing photos stored in the cloud and on-premises 
-
-There is no impact on existing photos stored in the cloud and
-on-premises.  
