@@ -57,8 +57,8 @@ Inherits from [entity](../resources/entity.md).
 | holdUpdate | The operation represents updating legal hold (apply/remove) for custodians and non-custodial data sources.
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 | purgeData | The operation represents purging content from the source workloads. |
-| exportReport | TODO |
-| exportResult | TODO |
+| exportReport | The operation represents exporting an item report from an estimated search.|
+| exportResult | The operation represents exporting item results from an estimated search. |
 
 ### caseOperationStatus values
 
