@@ -1,5 +1,5 @@
 ---
-title: "insights resource type"
+title: "Insights resource type"
 description: "Represents the insights container that routes users to specific cross workflow functionality views."
 author: "krbain"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
-# insights resource type
+# Insights resource type
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -23,7 +23,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |[topWorkflowsProcessedSummary](../api/identitygovernance-insights-topworkflowsprocessedsummary.md)|[microsoft.graph.identityGovernance.topWorkflowsInsightsSummary](../resources/identitygovernance-topworkflowsinsightssummary.md) collection|Summarizes the top runs for workflows for a given data range.|
 |[topTasksProcessedSummary](../api/identitygovernance-insights-toptasksprocessedsummary.md)|[microsoft.graph.identityGovernance.topTasksInsightsSummary](../resources/identitygovernance-toptasksinsightssummary.md) collection|Summarizes the top runs for tasks for a given data range.|
-|[workflowsProcessedSummary](../api/identitygovernance-insights-workflowsprocessedsummary.md)|[microsoft.graph.identityGovernance.workflowsInsightsSummary](../resources/identitygovernance-workflowsinsightssummary.md)|Summarizes the workflows, users and tasks processed for a given date range.|
+|[workflowsProcessedSummary](../api/identitygovernance-insights-workflowsprocessedsummary.md)|[microsoft.graph.identityGovernance.workflowsInsightsSummary](../resources/identitygovernance-workflowsinsightssummary.md)|Summarizes the workflows, users, and tasks processed for a given date range.|
 |[workflowsProcessedByCategory](../api/identitygovernance-insights-workflowsprocessedbycategory.md)|[microsoft.graph.identityGovernance.workflowsInsightsByCategory](../resources/identitygovernance-workflowsinsightsbycategory.md)|Summarizes workflow processing for each workflow category for a given date range.|
 
 ## Properties
