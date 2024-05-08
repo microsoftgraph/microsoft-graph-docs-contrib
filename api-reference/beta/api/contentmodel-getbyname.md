@@ -81,7 +81,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "oneDrive.contentModel"
+  "@odata.type": "microsoft.graph.contentModel"
 }
 -->
 ``` http

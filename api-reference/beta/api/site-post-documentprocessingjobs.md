@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/sites/{sitesId}/documentProcessingJobs
 Content-Type: application/json
 
 {
-  "@odata.type": "#oneDrive.documentProcessingJob",
+  "@odata.type": "#microsoft.graph.documentProcessingJob",
   "jobType": "File",
   "listItemUniqueId": "5955b119-99c1-4af9-97ed-3449e02de6f1",
 }
@@ -92,7 +92,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "oneDrive.documentProcessingJob"
+  "@odata.type": "microsoft.graph.documentProcessingJob"
 }
 -->
 ``` http

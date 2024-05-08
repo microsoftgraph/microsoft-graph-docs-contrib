@@ -3114,6 +3114,35 @@ Possible values for user account types (group membership), per Windows definitio
 | approvalStatus     | Content approval status column.                    |
 | unknownFutureValue | unknownFuturevalue                                 |
 
+### contentModelType values 
+
+|Member|
+|:---|
+|teachingMethod|
+|layoutMethod|
+|freeformSelectionMethod|
+|prebuiltContractModel|
+|prebuiltInvoiceModel|
+|prebuiltReceiptModel|
+|unknownFutureValue|
+
+### documentProcessingJobStatus values 
+
+|Member|
+|:---|
+|inProgress|
+|completed|
+|failed|
+|unknownFutureValue|
+
+### documentProcessingJobType values 
+
+|Member|
+|:---|
+|file|
+|folder|
+|unknownFutureValue|
+
 ### connectedOrganizationState values
 
 | Member             | Value | Description                                                                                                                                                                                                      |
