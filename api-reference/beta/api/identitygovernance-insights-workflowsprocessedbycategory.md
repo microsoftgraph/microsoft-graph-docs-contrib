@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/insights/workflowsProcessedByCategory(startDateTime=String (timestamp),endDateTime=String (timestamp))
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/insights/workflowsProcessedByCategory(startDateTime=String(timestamp),endDateTime=String(timestamp))
 ```
 
 
@@ -91,7 +91,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   { 
     "totalJoinerRuns" : 136, 
     "successfulJoinerRuns" : 112, 
     "failedJoinerRuns" : 24,  
@@ -101,6 +100,5 @@ Content-Type: application/json
     "totalLeaverRuns" : 103, 
     "successfulLeaverRuns" : 96, 
     "failedLeaverRuns" : 7,       
-  }
 }
 ```
