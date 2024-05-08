@@ -42,7 +42,7 @@ The following are examples of backward compatible changes:
 - Changes to the order of properties
 - Changes to the length or format of opaque strings, such as resource IDs
 
->**Note:** Over time, we will update the list of backward compatible changes. If you generate your own client proxies (like WCF clients), our guidance is that your client applications should be prepared to receive properties and derived types not previously defined by the Microsoft Graph API service. Microsoft Graph API follows the guidance described in the [Model Versioning](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) section in the [Microsoft REST API guidelines](https://github.com/microsoft/api-guidelines/).
+>**Note:** Over time, we update the list of backward compatible changes. If you generate your own client proxies (like WCF clients), our guidance is that your client applications should be prepared to receive properties and derived types not previously defined by the Microsoft Graph API service. Microsoft Graph API follows the guidance described in the [Model Versioning](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) section in the [Microsoft REST API guidelines](https://github.com/microsoft/api-guidelines/).
 
 ## Versions
 
@@ -58,15 +58,17 @@ We make no guarantees that a beta feature will be promoted to the current versio
 The current version of Microsoft Graph is v1.0. These APIs are accessible in the `https://graph.microsoft.com/v1.0` endpoint. The Microsoft Graph API v1.0 version contains features that are generally available and ready for production use. For v1.0 API documentation, see [Microsoft Graph v1.0 endpoint reference](/graph/api/overview?view=graph-rest-1.0&preserve-view=true).
 
 ## Preview status
+
 An API or feature in Microsoft Graph is labeled as "(preview)" to indicate that its behavior is _unique_ in the beta endpoint. 
 
 The behavior of most APIs and features in the v1.0 version is in parity with the beta version. Some APIs are marked as "preview" for one of the following reasons: 
 - The APIs are available in beta only
-- The behavior of the APIs is different in beta than v1.0.
+- The behavior of the APIs is different in beta than v1.0
 
 Like any other API in the beta endpoint, we can introduce breaking changes to APIs that are marked as preview without notice. Don't access APIs from the beta endpoint in production apps.
 
-APIs can be in preview even when the feature or product itself is generally available.
+> **Note:**
+> APIs can be in preview even when the feature or product itself is generally available.
 
 ### Deprecated and unsupported versions
 
