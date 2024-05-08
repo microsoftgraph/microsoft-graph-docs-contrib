@@ -63,7 +63,7 @@ If the export has started successfully, this action returns a `202 Accepted` res
 
 ## Examples
 
-### Example 1 : Export results which include items with search hits only, excluding partially indexed itmes, with no additional options selected, emails as .pst files for each mailbox
+### Example 1 : Export results which include items with search hits only, exclude partially indexed itmes, with no additional options selected, emails as .pst files for each mailbox
 
 #### Request
 
@@ -164,7 +164,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/searches('6c2ab774-2d2a-46b9-a601-3130f518757b')/exportReport
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/searches('6c2ab774-2d2a-46b9-a601-3130f518757b')/exportResult
 Content-Type: application/json
 
 {
@@ -209,7 +209,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/searches('6c2ab774-2d2a-46b9-a601-3130f518757b')/exportReport
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/searches('6c2ab774-2d2a-46b9-a601-3130f518757b')/exportResult
 Content-Type: application/json
 
 {
@@ -255,7 +255,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/searches('6c2ab774-2d2a-46b9-a601-3130f518757b')/exportReport
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/searches('6c2ab774-2d2a-46b9-a601-3130f518757b')/exportResult
 Content-Type: application/json
 
 {
