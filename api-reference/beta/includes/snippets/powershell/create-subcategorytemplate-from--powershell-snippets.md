@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.security.subCategoryTemplate"
+	"@odata.type" = "#microsoft.graph.security.subcategoryTemplate"
 	displayName = "Vendor Invoice"
 }
 
