@@ -1,6 +1,6 @@
 ---
 title: "siteProtectionRule resource type"
-description: "Describes site protection unit and it's properties"
+description: "Describes site protection rule and it's properties"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"

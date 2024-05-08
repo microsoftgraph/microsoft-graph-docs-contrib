@@ -1,6 +1,6 @@
 ---
 title: "protectionRuleBase resource type"
-description: "Describes protection unit and it's properties "
+description: "Describes protection rule and it's properties "
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
