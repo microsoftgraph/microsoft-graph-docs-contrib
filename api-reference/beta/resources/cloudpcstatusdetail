@@ -1,0 +1,51 @@
+---
+title: "cloudPcStatusDetail resource type"
+description: "Describes the extended detail of the Cloud PC status or action status, including code, message and additional information."
+author: "AshleyYangSZ"
+ms.localizationpriority: medium
+ms.subservice: "cloud-pc"
+doc_type: resourcePageType
+---
+
+# cloudPcStatusDetails resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Describes the extended detail of the Cloud PC status or action status, including code, message and additional information.
+
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+|code|String|The error/warning code associated with the Cloud PC status. Example: `"code": "internalServerError"`.|
+|message|String|The status message associated with error code. Example: `"message": "There was an internal server error. Please contact support xxx."`. |
+|additionalInformation|[keyValuePair](../resources/keyvaluepair.md) collection|Any additional information about the Cloud PC status. Example: `"additionalInformation": ["{'@odata.type': 'microsoft.graph.keyValuePair','name': 'retriable','value': true }] "`|
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.cloudPcStatusDetails",
+  "openType": false
+}
+-->
+
+``` json
+{
+  "@odata.type": "#microsoft.graph.cloudPcStatusDetails",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair"
+    }
+  ],
+  "code": "String",
+  "message": "String"
+}
+```

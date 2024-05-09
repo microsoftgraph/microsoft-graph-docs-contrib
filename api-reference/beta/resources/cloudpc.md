@@ -80,7 +80,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
 |status|[microsoft.graph.cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `restoring`, `pendingProvision`, `unknownFutureValue`, `movingRegion`, `resizePendingLicense`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `movingRegion`, `resizePendingLicense`.|
-|statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status.|
+|statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. Starting from January 31, 2023, statusDetails property will no longer be supported and will be marked as deprecated. Please use statusDetail instead.|
+|statusDetail|[cloudPcStatusDetail](../resources/cloudpcstatusdetail.md)|The extended detail of the Cloud PC status or action status, including code, message and additional information.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
 
