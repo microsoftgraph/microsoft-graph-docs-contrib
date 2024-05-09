@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcStatusDetail",
   "code": "String",
-  "message": "String"
+  "message": "String",
   "additionalInformation": [
     {
       "@odata.type": "microsoft.graph.keyValuePair"
