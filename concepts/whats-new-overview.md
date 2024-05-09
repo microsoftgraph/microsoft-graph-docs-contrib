@@ -17,6 +17,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
 ## May 2024: New in preview only
+### Sites and lists | Content models and document processing jobs
+- [Content model](/graph/api/resources/contentModel?view=graph-rest-beta&preserve-view=true) support is added to sites. 
+    - Use [get model](/graph/api/resources/contentModel-get?view=graph-rest-beta&preserve-view=true) or [get model by name](/graph/api/resources/contentModel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentModel?view=graph-rest-beta&preserve-view=true) resource. 
+    - Add a [content model](/graph/api/resources/contentModel?view=graph-rest-beta&preserve-view=true) to a library by using [add to drive](/graph/api/resources/contentModel-addtodrive?view=graph-rest-beta&preserve-view=true) method to make it ready to process files.
+    - Remove a [content model](/graph/api/resources/contentModel?view=graph-rest-beta&preserve-view=true) from library by using [remove from drive](/graph/api/resources/contentModel-removefromdrive?view=graph-rest-beta&preserve-view=true) method.
+    - Use [get applied drives](/graph/api/resources/contentModel-getapplieddrives?view=graph-rest-beta&preserve-view=true) to list all libraries associated with the content model.
+- New files in the added libraries are automatically processed by [content model](/graph/api/resources/contentModel?view=graph-rest-beta&preserve-view=true)s. Create [document processing jobs]((/graph/api/resources/documentprocessingjob?view=graph-rest-beta&preserve-view=true)) to process existing files.
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -26,6 +33,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Use the **reactionContentUrl** property on [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true) to represent the hosted content URL for a custom reaction in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
 - Use the `<customemoji></customemoji>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent custom emojis in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).
+
 
 ## April 2024: New and generally available
 

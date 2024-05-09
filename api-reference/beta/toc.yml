@@ -17686,8 +17686,6 @@ items:
                 href: api/site-unfollow.md
               - name: Get delta
                 href: api/site-delta.md
-              - name: Get content model
-                href: api/contentmodel-get.md
               - name: Create document processing job
                 href: api/site-post-documentprocessingjobs.md
           - name: List
@@ -17752,6 +17750,18 @@ items:
                 href: api/contenttype-publish.md
               - name: Unpublish
                 href: api/contenttype-unpublish.md
+          - name: Content model
+            items:   
+              - name: Get content model
+                href: api/contentmodel-get.md
+              - name: Get content model by name
+                href: api/contentmodel-getbyname.md
+              - name: Get applied drives
+                href: api/contentmodel-getapplieddrives.md
+              - name: Add to drive
+                href: api/contentmodel-addtodrive.md
+              - name: Remove from drive
+                href: api/contentmodel-removefromdrive.md
           - name: List item
             items:
               - name: List item
@@ -17790,6 +17800,9 @@ items:
                 href: api/documentsetversion-delete.md
               - name: Restore
                 href: api/documentsetversion-restore.md
+          - name: Document processing job
+              - name: Create document processing job
+                href: api/site-post-documentprocessingjob.md
           - name: Pages
             items:
               - name: Base site page

@@ -3,6 +3,112 @@
     {
       "ChangeList": [
         {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "contentModelType",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentModelType** enumeration type.",
+          "Target": "contentModelType"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "documentProcessingJobStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentProcessingJobStatus** enumeration type.",
+          "Target": "documentProcessingJobStatus"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "documentProcessingJobType",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentProcessingJobType** enumeration type.",
+          "Target": "documentProcessingJobType"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentModelUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentModelUsage](https://learn.microsoft.com/en-us/graph/api/resources/contentModelUsage?view=graph-rest-beta) resource.",
+          "Target": "contentModelUsage"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentModel",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
+          "Target": "contentModel"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "documentProcessingJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [documentProcessingJob](https://learn.microsoft.com/en-us/graph/api/resources/documentProcessingJob?view=graph-rest-beta) resource.",
+          "Target": "documentProcessingJob"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "contentModels",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentModels** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "documentProcessingJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentProcessingJobs** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Method",
+          "ChangedApiName": "addToDrive",
+          "ChangeType": "Addition",
+          "Description": "Added the [addToDrive](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [addToDrive](https://learn.microsoft.com/en-us/graph/api/resources/addToDrive?view=graph-rest-beta) resource.",
+          "Target": "addToDrive"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeFromDrive",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeFromDrive](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [removeFromDrive](https://learn.microsoft.com/en-us/graph/api/resources/removeFromDrive?view=graph-rest-beta) resource.",
+          "Target": "removeFromDrive"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAppliedDrives",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAppliedDrives](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [getAppliedDrives](https://learn.microsoft.com/en-us/graph/api/resources/getAppliedDrives?view=graph-rest-beta) resource.",
+          "Target": "getAppliedDrives"
+        },
+        {
+          "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByName",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByName](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [getByName](https://learn.microsoft.com/en-us/graph/api/resources/getByName?view=graph-rest-beta) resource.",
+          "Target": "getByName"
+        }
+      ],
+      "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-29T21:58:04.4246236Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "db0286e8-ee26-40c2-a706-e331bf6fcb0c",
           "ApiChange": "Enumeration",
           "ChangedApiName": "siteArchiveStatus",
