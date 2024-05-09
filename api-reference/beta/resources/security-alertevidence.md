@@ -81,7 +81,7 @@ This resource is the base type for the following evidence types:
 | Member                     | Description                                    |
 | :--------------------------| :--------------------------------------------- |
 | none                       | No threats were found.                         |
-| remediated                 | Remediation action has completed successfully. |
+| remediated                 | Remediation action completed successfully. |
 | prevented                  | The threat was prevented from executing.       |
 | blocked                    | The threat was blocked while executing.        |
 | notFound                   | The evidence wasn't found.                    |
@@ -98,13 +98,13 @@ This resource is the base type for the following evidence types:
 | source                     | The entity the activity originated from, for example, device, user, IP address, etc.                                                                                         |
 | destination                | The entity the activity was sent to, for example, device, user, IP address, etc.                                                                                             |
 | created                    | The entity was created as a result of the actions of an attacker, for example, a user account was created.                                                                   |
-| added                      | The entity was added as a result of the actions of an attacker, for example, a user account was added to a permissions group.                                                |
-| compromised                | The entity was compromised and is under the control of an attacker, for example, a user account was compromised and used to log into a cloud service.                        |
-| edited                     | The entity was edited or changed by an attacker, for example, the registry key for a service was edited to point to the location of a new malicious payload.                 |
-| attacked                   | The entity was attacked, for example, a device was targeted in a DDoS attack.                                                                                                |
-| attacker                   | The entity represents the attacker, for example, the attacker`s IP address observed logging into a cloud service using a compromised user account.                           |
-| commandAndControl          | The entity is being used for command and control, for example, a C2 (command and control) domain used by malware.                                                            |
-| loaded                     | The entity was loaded by a process under the control of an attacker, for example, a Dll was loaded into an attacker-controlled process.                                      |
+| added                      | The entity was added as a result of the actions of an attacker. For example, a user account was added to a permissions group.                                                |
+| compromised                | The entity was compromised and is under the control of an attacker. For example, a user account was compromised and used to log into a cloud service.                        |
+| edited                     | The entity was edited or changed by an attacker. For example, the registry key for a service was edited to point to the location of a new malicious payload.                 |
+| attacked                   | The entity was attacked. For example, a device was targeted in a DDoS attack.                                                                                                |
+| attacker                   | The entity represents the attacker. For example, the attacker`s IP address observed logging into a cloud service using a compromised user account.                           |
+| commandAndControl          | The entity is being used for command and control. For example, a C2 (command and control) domain used by malware.                                                            |
+| loaded                     | The entity was loaded by a process under the control of an attacker. For example, a Dll was loaded into an attacker-controlled process.                                      |
 | suspicious                 | The entity is suspected of being malicious or controlled by an attacker but hasn't been incriminated.                                                               |
 | policyViolator             | The entity is a violator of a customer defined policy.                                                                                                               |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |
