@@ -47,7 +47,7 @@ POST /storageContainers/{containerId}/columns
 
 In the request body, supply a JSON representation of the [columnDefinition](../resources/columndefinition.md) object.
 
-Only the following type-related properties are supported and they are mutually exclusive; a column can only have one of them specified.
+Only the following type-related properties are supported and they're mutually exclusive; a column can only have one of them specified at a time.
 
 |Property|Type|Description|
 |:---|:---|:---|

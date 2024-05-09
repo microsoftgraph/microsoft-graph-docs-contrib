@@ -68,6 +68,7 @@ GET https://graph.microsoft.com/beta/deletedStorageContainers/b!ISJs1WRro0y0EWgk
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

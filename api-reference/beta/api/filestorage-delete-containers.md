@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. If you delete fileStorageContainer using this method, they are moved to the deleted container collection and can be restored afterward. 
+Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. Deleting a file storage container with this API moves it to the deleted container collection, so that it can be restored later. 
 
 ## Permissions
 

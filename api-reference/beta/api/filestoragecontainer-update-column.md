@@ -45,7 +45,7 @@ PATCH /storageContainers/{containerId}/columns/{column-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [columnDefinition](../resources/columndefinition.md) object with the properties to update. The `id` property cannot be changed. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
+In the request body, supply a JSON representation of the [columnDefinition](../resources/columndefinition.md) object with the properties to update. The `id` property can't be changed. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
 
 ## Response
 
@@ -75,7 +75,9 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

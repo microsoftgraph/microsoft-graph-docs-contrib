@@ -1,6 +1,6 @@
 ---
 title: "fileStorage resource type"
-description: "Facilitates the structures of active and deleted fileStorageContainers"
+description: "Represents the structure of active and deleted fileStorageContainer objects."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Facilitates the structures of active and deleted fileStorageContainers.
+Represents the structure of active and deleted fileStorageContainer objects.
 
 ## Relationships
 |Relationship|Type|Description|

@@ -37,7 +37,7 @@ GET /deletedStorageContainers?$filter=containerTypeId eq {containerTypeId}
 ```
 
 ## Query parameters
-This method requires the `containerTypeId` parameter. It supports OData skip-top paging, `$orderBy` and `$filter` query parameters; `$expand` query parameter is not supported.
+This method requires the `containerTypeId` parameter. It supports OData skip-top paging and the `$orderBy` and `$filter` query parameters, but doesn't support the `$expand` query parameter.
 
 ## Request headers
 
@@ -71,7 +71,9 @@ GET  https://graph.microsoft.com/beta/deletedStorageContainers?$filter=container
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

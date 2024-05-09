@@ -1,6 +1,6 @@
 ---
 title: "Restore deleted fileStorageContainer"
-description: "Restore deleted fileStorageContainer."
+description: "Restore deleted fileStorageContainer from the deleted container collection."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a [fileStorageContainer](../resources/filestoragecontainer.md) that has been deleted and is currently in the deleted container collection.  
+Restore a deleted [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection.  
 
 ## Permissions
 
@@ -68,7 +68,9 @@ POST https://graph.microsoft.com/beta/deletedStorageContainers/b!ISJs1WRro0y0EWg
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "filestoragecontainer-delete-columns-permissions"
 }
 -->
+
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-columns-permissions.md)]
 
 ## HTTP request
