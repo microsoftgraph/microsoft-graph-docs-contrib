@@ -159,6 +159,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [fileStorage] resource and its relationships.",
           "Target": "fileStorage"
+        },
+        {
+          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "containers",
+          "ChangeType": "Addition",
+          "Description": "Added the **containers** relationship to fileStorage resource.",
+          "Target": "fileStorage"
+        },
+        {
+          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "deletedContainers",
+          "ChangeType": "Addition",
+          "Description": "Added the **deletedContainers** relationship to fileStorage resource.",
+          "Target": "fileStorage"
         }
       ],
       "Id": "a376b86e-b5eb-4d9e-8270-de3cc02af307",
