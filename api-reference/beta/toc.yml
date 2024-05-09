@@ -17802,7 +17802,7 @@ items:
                 href: api/documentsetversion-restore.md
           - name: Document processing job
               - name: Create document processing job
-                href: api/site-post-documentprocessingjob.md
+                href: api/site-post-documentprocessingjobs.md
           - name: Pages
             items:
               - name: Base site page

@@ -3,7 +3,7 @@ title: "contentModel: getByName"
 description: "Read the properties and relationships of a contentModel object by its model name."
 author: "travislius"
 ms.localizationpriority: medium
-ms.subservice: sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

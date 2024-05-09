@@ -49,10 +49,9 @@ In the request body, supply a JSON representation of the [documentProcessingJob]
 
 You can specify the following properties when creating a **documentProcessingJob**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|jobType|documentProcessingJobType|Document processing Job type. The possible values are: `File`, `Folder`. Optional.|
+|jobType|documentProcessingJobType|Document processing Job type. The possible values are: `file`, `folder`. Optional.|
 |status|documentProcessingJobStatus|Document processing Job status. The possible values are: `inProgress`, `completed`, `failed`, `notStarted`. Typically when a job is created, its initial status is `notStarted`. Optional.|
 |createdDateTime|DateTimeOffset|Date and time of item creation. Read-only. Optional.|
 |listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. It is one of the sharepointIds. It can be retrieved by Drive item Graph API. Check out sharepointIds for more details. Required.|
