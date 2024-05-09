@@ -44,6 +44,7 @@ You must use the `Prefer: include-unknown-enum-members` request header to get th
 > [!NOTE]
 > To add or change a payment model for a subscribed resource of a change notification, you must create a new change notification subscription with the new payment model; updating an existing change notification does not work.
 
+You can use the **notifyOnUserSpecificProperties** query string parameter when you subscribe to changes in a particular chat or at user level. When you set the query string parameter **notifyOnUserSpecificProperties** to `true` during subscription creation, two types of payloads are sent to the subscriber. One type contains user-specific properties, and the other is sent without them. For more information, see [Get change notifications for chats using Microsoft Graph](/graph/teams-changenotifications-chat).
 
 #### Request example
 
