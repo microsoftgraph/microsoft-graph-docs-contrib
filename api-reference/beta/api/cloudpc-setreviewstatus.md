@@ -64,7 +64,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "manageddevicethis.setcloudpcreviewstatus"
+  "name": "cloudpcthis.setreviewstatus",
 }
 -->
 ``` http

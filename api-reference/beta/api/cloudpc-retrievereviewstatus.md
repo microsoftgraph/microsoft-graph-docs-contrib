@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "ignored",
 }
 -->
 ``` http
@@ -48,10 +48,11 @@ If successful, this method returns a `200 OK` response code and a [cloudpcreview
 
 The following example shows a request.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpc.retrieveReviewStatus"
+  "name": "cloudpc.retrieveReviewStatus",
 }
 -->
 ``` http
@@ -64,10 +65,11 @@ GET https://graph.microsoft.com/beta/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a7
 
 The following example shows the response.
 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "string"
+  "@odata.type": "string",
 }
 -->
 ``` http
@@ -83,6 +85,6 @@ Content-Type: application/json
     "subscriptionName": "deschutes-INT-DR-test",
     "azureStorageAccountId": "/subscriptions/cb6ad4c4-8a17-4245-a644-e4436b1ee204/resourceGroups/ReviewTest/providers/Microsoft.Storage/storageAccounts/reviewtransfer",
     "azureStorageAccountName": "reviewtransfer",
-    "azureStorageContainerName": "container"
+    "azureStorageContainerName": "container",
 }
 ```
