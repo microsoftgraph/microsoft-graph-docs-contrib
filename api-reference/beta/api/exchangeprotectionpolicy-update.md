@@ -49,7 +49,7 @@ PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPol
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md)|
+|displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/exchangeprotectionpolicy.md)|
 |mailboxProtectionUnits@delta|Collection([mailboxProtectionUnit](../resources/mailboxprotectionunit.md))|Collection of the mailboxProtectionUnit to be added/removed to the exchangeProtectionPolicy.|
 
 ## Response
