@@ -1,19 +1,19 @@
 ---
-title: "Insights resource type"
-description: "Represents the insights container that routes users to specific cross workflow functionality views."
+title: "insights resource type"
+description: "Represents insights into the health and processing of lifecycle workflows across different workflows."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
-# Insights resource type
+# insights resource type
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the insights container for the cross workflow reporting functionalities with lifecycle workflows. This allows workflow history, by tenant, to be viewed through multiple views. As this holds all cross workflow information by tenant, there will only be one insights resource per tenant.
+Represents insights into the health and processing of lifecycle workflows across different workflows. The insights include the number of total, successful, and failed workflow executions, tasks processed, and users processed across all workflows for the tenant for a given period.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
