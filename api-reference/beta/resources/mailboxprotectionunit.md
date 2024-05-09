@@ -34,7 +34,6 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |id|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |lastModifiedDateTime|DateTimeOffset|The time of last modification of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|mailboxType|mailboxType|Identifies the type of mailbox. The possible values are: `userMailbox`, `sharedMailbox`, `unknownFutureValue`.|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |status|protectionUnitStatus|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
@@ -70,8 +69,7 @@ The following JSON representation shows the resource type.
   },
   "directoryObjectId": "String",
   "displayName": "String",
-  "email": "String",
-  "mailboxType": "String"
+  "email": "String"
 }
 ```
 
