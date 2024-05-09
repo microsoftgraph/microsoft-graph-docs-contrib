@@ -19,11 +19,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ## May 2024: New in preview only
 ### Sites and lists | Content models and document processing jobs
 - [Content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) support is added to sites. 
-    - Use [get model](/graph/api/resources/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [get model by name](/graph/api/resources/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource. 
-    - Add a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) to a library by using [add to drive](/graph/api/resources/contentmodel-addtodrive?view=graph-rest-beta&preserve-view=true) method to make it ready to process files.
-    - Remove a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) from library by using [remove from drive](/graph/api/resources/contentmodel-removefromdrive?view=graph-rest-beta&preserve-view=true) method.
-    - Use [get applied drives](/graph/api/resources/contentmodel-getapplieddrives?view=graph-rest-beta&preserve-view=true) to list all libraries associated with the content model.
-- New files in the added libraries are automatically processed by [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true)s. Create [document processing jobs]((/graph/api/resources/documentprocessingjobs?view=graph-rest-beta&preserve-view=true)) to process existing files.
+    - Use [get model](/graph/api/resources/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [get model by name](/graph/api/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource. 
+    - Add a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) to a library by using [add to drive](/graph/api/contentmodel-addtodrive?view=graph-rest-beta&preserve-view=true) method to make it ready to process files.
+    - Remove a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) from library by using [remove from drive](/graph/api/contentmodel-removefromdrive?view=graph-rest-beta&preserve-view=true) method.
+    - Use [get applied drives](/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta&preserve-view=true) to list all libraries associated with the content model.
+- New files in the added libraries are automatically processed by [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true)s. Create [document processing jobs](/graph/api/resources/documentprocessingjob?view=graph-rest-beta&preserve-view=true) to process existing files.
 
 ### Teamwork and communications | Calls and online meetings
 

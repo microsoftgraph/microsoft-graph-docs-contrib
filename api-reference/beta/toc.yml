@@ -17801,6 +17801,7 @@ items:
               - name: Restore
                 href: api/documentsetversion-restore.md
           - name: Document processing job
+            items:
               - name: Create document processing job
                 href: api/site-post-documentprocessingjobs.md
           - name: Pages
