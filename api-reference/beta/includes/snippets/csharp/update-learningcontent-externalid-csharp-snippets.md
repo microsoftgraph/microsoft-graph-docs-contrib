@@ -20,6 +20,7 @@ var requestBody = new LearningContent
 	NumberOfPages = 9,
 	Duration = TimeSpan.Parse("PT20M"),
 	Format = "Book",
+	Level = Level.Beginner,
 	CreatedDateTime = DateTimeOffset.Parse("2018-01-01T00:00:00"),
 	LastModifiedDateTime = DateTimeOffset.Parse("2021-04-01T04:26:06.1995367Z"),
 	AdditionalTags = new List<string>
