@@ -199,6 +199,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-permanentdelete?view=graph-rest-beta) method to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
+        },
+       {
+          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "storage",
+          "ChangeType": "Addition",
+          "Description": "Added the [storage] resource and its relationships.",
+          "Target": "storage"
+        },
+        {
+          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "fileStorage",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileStorage** relationship to storage resource.",
+          "Target": "storage"
         }
       ],
       "Id": "a376b86e-b5eb-4d9e-8270-de3cc02af307",
