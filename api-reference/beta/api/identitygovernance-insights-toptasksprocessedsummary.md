@@ -1,6 +1,6 @@
 ---
 title: "insights: topTasksProcessedSummary"
-description: "The summary of top tasks processed by Lifecycle workflows in a tenant."
+description: "The summary of the most processed tasks by Lifecycle workflows in a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of top tasks processed results for a specified time period.
+Provides a summary of of the most processed tasks, known as top tasks, for a specified time period.
 
 ## Permissions
 
@@ -43,9 +43,8 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
-
+|startDateTime|DateTimeOffset|The start date, and time, of the insight summary for most tasks processed in a tenant.|
+|endDateTime|DateTimeOffset|The end date, and time, of the insight summary for most tasks processed in a tenant.|
 
 ## Request headers
 

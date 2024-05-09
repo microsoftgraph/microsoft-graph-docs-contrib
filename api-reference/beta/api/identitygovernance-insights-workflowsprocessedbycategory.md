@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of workflows processed in a tenant by the workflow category.
+Provide a summary of workflows processed, by category, in a tenant.
 
 ## Permissions
 

@@ -102,6 +102,14 @@
         },
         {
           "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "insights",
+          "ChangeType": "Addition",
+          "Description": "Added the **insights** relationship to the [lifecycleWorkflowsContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleWorkflowsContainer?view=graph-rest-beta) resource.",
+          "Target": "lifecycleWorkflowsContainer"
+        },
+        {
+          "Id": "942cc41c-bf67-4bd8-9bb0-1e914b8e2693",
           "ApiChange": "Resource",
           "ChangedApiName": "topWorkflowsInsightsSummary",
           "ChangeType": "Addition",

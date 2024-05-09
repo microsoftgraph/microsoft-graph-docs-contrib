@@ -33,6 +33,7 @@ None.
 |:---|:---|:---|
 |customTaskExtensions|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|The **customTaskExtension** instance.|
 |deletedItems|[deletedItemContainer](../resources/deleteditemcontainer.md)|Deleted workflows in your lifecycle workflows instance.|
+|insights|[microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md)|The insight container holding workflow insight summaries for a tenant.|
 |settings|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|The settings of the lifecycle workflows instance.|
 |taskDefinitions|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|The definition of tasks within the lifecycle workflows instance.|
 |workflows|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|The workflows in the lifecycle workflows instance.|
