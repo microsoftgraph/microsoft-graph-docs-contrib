@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the answer(s) of a [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md).
+Represents one or more answers to a [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md).
 
 ## Properties
 

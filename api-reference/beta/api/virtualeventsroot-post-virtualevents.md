@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new virtual event object in draft mode.
 
-Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 ## Permissions
 
@@ -70,7 +70,7 @@ You can specify the following properties when you create a [virtualEventTownhall
 | description | [itemBody](../resources/itembody.md) | Description of the town hall. |
 | displayName | String | Display name of the town hall. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. |
-| invitedAttendees | [identity](../resources/identity.md) collection | Attendees invited to the town hall. The supported identites are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md), [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+| invitedAttendees | [identity](../resources/identity.md) collection | Attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. |
 
