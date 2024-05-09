@@ -159,7 +159,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [fileStorage] resource and its relationships.",
           "Target": "fileStorage"
-        },
+        }
       ],
       "Id": "a376b86e-b5eb-4d9e-8270-de3cc02af307",
       "Cloud": "Prod",
