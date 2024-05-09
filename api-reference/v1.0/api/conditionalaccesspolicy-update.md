@@ -76,7 +76,7 @@ Content-type: application/json
         "signInRiskLevels": [
             "high",
             "medium",
-            "low",
+            "low"
         ]
     }
 }
