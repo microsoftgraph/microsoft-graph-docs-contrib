@@ -70,6 +70,9 @@ The following JSON representation shows the resource type.
   "managedDeviceId": "String",
   "statusDetails": {
     "@odata.type": "microsoft.graph.cloudPcStatusDetails"
+  },
+  "statusDetail": {
+    "@odata.type": "microsoft.graph.cloudPcStatusDetail"
   }
 }
 ```
