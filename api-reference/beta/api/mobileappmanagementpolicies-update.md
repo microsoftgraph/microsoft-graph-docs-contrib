@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
