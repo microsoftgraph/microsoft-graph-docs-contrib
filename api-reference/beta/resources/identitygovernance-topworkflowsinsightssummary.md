@@ -19,13 +19,13 @@ The topWorkflowsInsightSummary represents a summary of the top workflows ran wit
 
 |Property|Type|Description|
 |:---|:---|:---|
-|failedRuns|Int32|Failed run count of workflow.|
-|failedUsers|Int32|Failed users who were successfully processed.|
-|successfulRuns|Int32|Successful run count of the workflow.|
-|successfulUsers|Int32|Successful users processed by the workflow.|
-|totalRuns|Int32|Total run count of workflow.|
+|failedRuns|Int32|Count of failed runs for workflow.|
+|failedUsers|Int32|Count of failed users who were successfully processed.|
+|successfulRuns|Int32|Count of successful runs of the workflow.|
+|successfulUsers|Int32|Count of successful users processed by the workflow.|
+|totalRuns|Int32|Count of total runs of workflow.|
 |totalUsers|Int32|Total number of users processed by the workflow.|
-|workflowCategory|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|Notes the category of the workflow.The possible values are: `joiner`, `leaver`, `unknownFutureValue`, `mover`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mover`.|
+|workflowCategory|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`, `mover`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mover`.|
 |workflowDisplayName|String|The name of the workflow.|
 |workflowId|String|The workflow ID.|
 |workflowVersion|Int32|The version of the workflow that was a top workflow ran.|
