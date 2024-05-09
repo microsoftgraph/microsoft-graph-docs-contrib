@@ -1,6 +1,6 @@
 ---
 title: "insights: topTasksProcessedSummary"
-description: "The summary of top tasks processed by Lifecycle workflows in a tenant."
+description: "The summary of top tasks processed by Lifecycle Workflows in a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of top tasks processed results for a specified time period.
+Provide a summary of top tasks processed results for a specified period.
 
 ## Permissions
 
