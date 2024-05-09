@@ -118,7 +118,7 @@ Retrieving a list of entities is similar to retrieving a single entity, except o
 
 ---
 
-The object returned when retrieving a list of entities is likely be a paged collection. For details about how to get the complete list of entities, see [paging through a collection](../paging.md).
+The object returned when retrieving a list of entities will likely be a paged collection. For details about how to get the complete list of entities, see [paging through a collection](../paging.md).
 
 ## Access an item of a collection
 
@@ -224,7 +224,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 ## Make a POST request to create a new entity
 
-For SDKs that support a fluent style, new items can be added to collections with an `Add` method. For template-based SDKs, the request object exposes a `post` method. For PowerShell, a `New-*` command accepts parameters that map to the entity to add. The created entity is returned from the call.
+For fluent style and template-based SDKs, new items can be added to collections with a `Post` method. For PowerShell, a `New-*` command accepts parameters that map to the entity to add. The created entity is returned from the call.
 
 # [C#](#tab/csharp)
 
