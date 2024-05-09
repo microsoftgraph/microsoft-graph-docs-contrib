@@ -20,7 +20,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Search
 
-Added the **includeHiddenContent** property to the [sharePointOneDriveOptions](/graph/api/resources/sharepointonedriveoptions?view=graph-rest-beta&preserve-view=true) resource that allows you to include normally hidden content, such as archived content and SharePoint Embedded (RaaS), in search results.
+Use the **includeHiddenContent** property on the [sharePointOneDriveOptions](/graph/api/resources/sharepointonedriveoptions?view=graph-rest-beta&preserve-view=true) resource to include hidden content, such as archived content and SharePoint Embedded (RaaS), in search results.
 
 ### Teamwork and communications | Calls and online meetings
 
