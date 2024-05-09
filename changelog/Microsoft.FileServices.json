@@ -71,7 +71,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "addToDrive",
           "ChangeType": "Addition",
-          "Description": "Added the [addToDrive](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [addToDrive](https://learn.microsoft.com/en-us/graph/api/resources/addToDrive?view=graph-rest-beta) resource.",
+          "Description": "Added the [addToDrive](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
           "Target": "addToDrive"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "removeFromDrive",
           "ChangeType": "Addition",
-          "Description": "Added the [removeFromDrive](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [removeFromDrive](https://learn.microsoft.com/en-us/graph/api/resources/removeFromDrive?view=graph-rest-beta) resource.",
+          "Description": "Added the [removeFromDrive](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
           "Target": "removeFromDrive"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAppliedDrives",
           "ChangeType": "Addition",
-          "Description": "Added the [getAppliedDrives](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [getAppliedDrives](https://learn.microsoft.com/en-us/graph/api/resources/getAppliedDrives?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAppliedDrives](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
           "Target": "getAppliedDrives"
         },
         {
@@ -95,7 +95,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getByName",
           "ChangeType": "Addition",
-          "Description": "Added the [getByName](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [getByName](https://learn.microsoft.com/en-us/graph/api/resources/getByName?view=graph-rest-beta) resource.",
+          "Description": "Added the [getByName](https://learn.microsoft.com/en-us/graph/api/?view=graph-rest-beta) method to the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
           "Target": "getByName"
         }
       ],
