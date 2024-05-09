@@ -450,10 +450,10 @@
        },
        {
           "Id": "8de35ae1-390f-4c7b-9b78-551daa193078",
-          "ApiChange": "Method",
-          "ChangedApiName": "POST",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "subscription",
           "ChangeType": "Addition",
-          "Description": "Added support for a new query string, [notifyOnUserSpecificProperties](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#notification-payloads-for-user-specific-properties), when subscribing to [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-at-the-user-level-preview) or when subscribing to [notifications in a particular chat](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-a-particular-chat).",
+          "Description": "Enabled the `$notifyOnUserSpecificProperties` query parameter when you subscribe either to [user-scoped chat notifications](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat#subscribe-to-changes-at-the-user-level-preview) or [notifications in a particular chat](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-beta#subscribe-to-changes-in-a-particular-chat).",
           "Target": "subscription"
        }
       ],
