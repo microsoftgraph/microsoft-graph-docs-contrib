@@ -1,6 +1,6 @@
 ---
 title: "insights: workflowsProcessedByCategory"
-description: "The summary of workflowsProcessedByCategory for a lifecycle workflow tenant."
+description: "Provide a summary of workflows processed in a tenant by the workflow category."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of workflows processed in a tenant by category.
+Provide a summary of workflows processed in a tenant by the workflow category.
 
 ## Permissions
 
