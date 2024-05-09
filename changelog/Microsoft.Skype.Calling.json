@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventWebinar",
           "ChangeType": "Addition",
-          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/virtualevent-post-virtualevent?view=graph-rest-beta) operation to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-post-virtualevent?view=graph-rest-beta) operation to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
           "Target": "virtualEventWebinar"
         },
         {
