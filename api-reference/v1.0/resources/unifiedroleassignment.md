@@ -40,7 +40,7 @@ Inherits from [entity](entity.md).
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|appScope|[appScope](appscope.md)|Read-only property with details of the app specific scope when the assignment scope is app specific. Containment entity. Supports `$expand`.|
+|appScope|[appScope](appscope.md)|Read-only property with details of the app specific scope when the assignment scope is app specific. Containment entity. Supports `$expand` for the entitlement provider only.|
 |directoryScope|[directoryObject](directoryobject.md)|The directory object that is the scope of the assignment. Read-only. Supports `$expand`.|
 |principal|[directoryObject](directoryobject.md)| Referencing the assigned principal. Read-only. Supports `$expand`.|
 |roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|The roleDefinition the assignment is for.  Supports `$expand`.|
