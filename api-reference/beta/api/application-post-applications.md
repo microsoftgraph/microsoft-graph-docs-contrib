@@ -185,7 +185,7 @@ POST https://graph.microsoft.com/beta/applications
 Content-type: application/json
 
 {
-  "displayName": "MyAppName"
+  "displayName": "MyAppName",
   "passwordCredentials": [
     {
       "displayName": "Password name"
