@@ -1,6 +1,6 @@
 ---
 title: "contentModel: addToDrive"
-description: "If a content model is properly trained or configured, users use this API to apply the model to document libraries. New documents in the libraries are automatically processed by the model."
+description: "If a content model is properly trained or configured, users use this API to apply the model to document libraries. The model automatically processes new documents in the libraries."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-If a content model is properly trained or configured, users use this API to apply the model to document libraries. New documents in the libraries are automatically processed by the model.
+If a content model is properly trained or configured, users use this API to apply the model to document libraries. The model automatically processes new documents in the libraries.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|driveId|String|model applied to drive Id|
+|driveId|String|model applied to drive ID|
 
 
 

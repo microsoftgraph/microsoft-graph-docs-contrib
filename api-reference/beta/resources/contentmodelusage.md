@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The contentModelUsage resource provides the information of where a [contentModel](../resources/contentmodel.md) is applied. It also provides information about the model itself, including the model version, by whom, and when it is applied.
+The contentModelUsage resource provides the information of where a [contentModel](../resources/contentmodel.md) is applied. It also provides information about the model itself, including the model version, by whom, and when applied.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application which first applied the [contentModel](../resources/contentmodel.md) to the library.|
+|createdBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application, which first applied the [contentModel](../resources/contentmodel.md) to the library.|
 |createdDateTime|DateTimeOffset|Date and time of the [contentModel](../resources/contentmodel.md) is first applied.|
-|driveId|String|The id of the drive where the [contentModel](../resources/contentmodel.md) is applied|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application which last applied the [contentModel](../resources/contentmodel.md) to the library.|
+|driveId|String|The ID of the drive where the [contentModel](../resources/contentmodel.md) is applied|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application, which last applied the [contentModel](../resources/contentmodel.md) to the library.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the [contentModel](../resources/contentmodel.md) is last applied.|
-|modelId|String|The id of the [contentModel](../resources/contentmodel.md)|
+|modelId|String|The ID of the [contentModel](../resources/contentmodel.md)|
 |modelVersion|String|	The version of the current applied [contentModel](../resources/contentmodel.md).|
 
 ## Relationships

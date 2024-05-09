@@ -51,7 +51,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|driveId|String|Id of the drive that the model is removed from |
+|driveId|String|ID of the drive that the model is removed from |
 
 
 

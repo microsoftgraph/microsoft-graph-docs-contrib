@@ -1,6 +1,6 @@
 ---
 title: "Get contentModel"
-description: "This API helps retrieve a content model by its Id"
+description: "This API helps retrieve a content model by its ID."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
