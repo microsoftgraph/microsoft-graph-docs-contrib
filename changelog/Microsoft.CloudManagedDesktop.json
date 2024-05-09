@@ -1,5 +1,102 @@
 {
-  "changelog": [
+  "changelog": [{
+    "ChangeList": [
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Member",
+        "ChangedApiName": "cloudPcStatus",
+        "ChangeType": "Addition",
+        "Description": "Added the `modifyingSingleSignOn` member to the **cloudPcStatus** enumeration.",
+        "Target": "cloudPC"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "statusDetail",
+        "ChangeType": "Addition",
+        "Description": "Added the `statusDetail` property to **cloudPc**.",
+        "Target": "cloudPc"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "statusDetails",
+        "ChangeType": "Deprecation",
+        "Description": "Deprecated the `statusDetails` property to **cloudPc**.",
+        "Target": "cloudPc"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "connectionSetting",
+        "ChangeType": "Addition",
+        "Description": "Added the `connectionSetting` property to **cloudPc**.",
+        "Target": "cloudPc"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "statusDetails",
+        "ChangeType": "Deprecation",
+        "Description": "Deprecated the `statusDetails` property to **cloudPcRemoteActionResult**.",
+        "Target": "cloudPcRemoteActionResult"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "connectionSetting",
+        "ChangeType": "Addition",
+        "Description": "Added the `connectionSetting` property to **cloudPcRemoteActionResult**.",
+        "Target": "cloudPcRemoteActionResult"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "cloudPcConnectionSetting",
+        "ChangeType": "Addition",
+        "Description": "Added the [cloudPcConnectionSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcconnectionsetting?view=graph-rest-beta) resource type.",
+        "Target": "cloudPcConnectionSetting"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "cloudPcStatusDetail",
+        "ChangeType": "Addition",
+        "Description": "Added the [cloudPcStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcstatusdetail?view=graph-rest-beta) resource type.",
+        "Target": "cloudPcStatusDetail"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "cloudPcStatusDetail",
+        "ChangeType": "Deprecation",
+        "Description": "Deprecated the [cloudPcStatusDetails](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcstatusdetails?view=graph-rest-beta) resource type.",
+        "Target": "cloudPcStatusDetail"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "cloudPcConnectivityResult",
+        "ChangeType": "Addition",
+        "Description": "Added the `lastModifiedDateTime` member to the **cloudPcConnectivityResult** enumeration.",
+        "Target": "cloudPcConnectivityResult"
+      },
+      {
+        "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+        "ApiChange": "Resource",
+        "ChangedApiName": "cloudPcConnectivityResult",
+        "ChangeType": "Deprecation",
+        "Description": "Deprecated the `updatedDateTime` member to the **cloudPcConnectivityResult** enumeration.",
+        "Target": "cloudPcConnectivityResult"
+      }
+    ],
+    "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
+    "Cloud": "Prod",
+    "Version": "beta",
+    "CreatedDateTime": "2024-05-09T15:23:41.3476306Z",
+    "WorkloadArea": "Device and app management",
+    "SubArea": "Cloud PC"
+    },
     {
       "ChangeList": [
         {
