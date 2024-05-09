@@ -54,12 +54,13 @@ If successful, this method returns a `200 OK` response code and a [cloudpcreview
 The following example shows a request.
 
 
-# [HTTP](#tab/http)
+### [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpc.retrieveReviewStatus",
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/retrieveReviewStatus
 ```
@@ -70,13 +71,13 @@ GET https://graph.microsoft.com/beta/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a7
 
 The following example shows the response.
 
-
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "string",
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
