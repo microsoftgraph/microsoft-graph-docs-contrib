@@ -151,7 +151,15 @@
           "ChangeType": "Addition",
           "Description": "Added the **fileStorageContainerStatus** property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
-        }
+        },
+        {
+          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorage",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorage] resource and its relationships.",
+          "Target": "fileStorage"
+        },
       ],
       "Id": "a376b86e-b5eb-4d9e-8270-de3cc02af307",
       "Cloud": "Prod",
