@@ -1,6 +1,6 @@
 ---
 title: "insights: topWorkflowsProcessedSummary"
-description: "The summary of the most processed workflows by Lifecycle workflows in a tenant."
+description: "The summary of the most processed workflows by Lifecycle Workflows in a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
