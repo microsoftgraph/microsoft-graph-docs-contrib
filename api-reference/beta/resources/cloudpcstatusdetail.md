@@ -7,7 +7,7 @@ ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcStatusDetails resource type
+# cloudPcStatusDetail resource type
 
 Namespace: microsoft.graph
 
@@ -32,14 +32,14 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.cloudPcStatusDetails",
+  "@odata.type": "microsoft.graph.cloudPcStatusDetail",
   "openType": false
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcStatusDetails",
+  "@odata.type": "#microsoft.graph.cloudPcStatusDetail",
   "code": "String",
   "message": "String"
   "additionalInformation": [
