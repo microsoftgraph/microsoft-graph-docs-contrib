@@ -78,7 +78,7 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 201 Created
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
