@@ -36,17 +36,17 @@
       {
         "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
         "ApiChange": "Resource",
-        "ChangedApiName": "statusDetails",
-        "ChangeType": "Deprecation",
-        "Description": "Deprecated the `statusDetails` property to **cloudPcRemoteActionResult**.",
+        "ChangedApiName": "statusDetail",
+        "ChangeType": "Addition",
+        "Description": "Added the `statusDetail` property to **cloudPcRemoteActionResult**.",
         "Target": "cloudPcRemoteActionResult"
       },
       {
         "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
         "ApiChange": "Resource",
-        "ChangedApiName": "connectionSetting",
-        "ChangeType": "Addition",
-        "Description": "Added the `connectionSetting` property to **cloudPcRemoteActionResult**.",
+        "ChangedApiName": "statusDetails",
+        "ChangeType": "Deprecation",
+        "Description": "Deprecated the `statusDetails` property to **cloudPcRemoteActionResult**.",
         "Target": "cloudPcRemoteActionResult"
       },
       {
@@ -68,10 +68,10 @@
       {
         "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
         "ApiChange": "Resource",
-        "ChangedApiName": "cloudPcStatusDetail",
+        "ChangedApiName": "cloudPcStatusDetailS",
         "ChangeType": "Deprecation",
         "Description": "Deprecated the [cloudPcStatusDetails](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcstatusdetails?view=graph-rest-beta) resource type.",
-        "Target": "cloudPcStatusDetail"
+        "Target": "cloudPcStatusDetailS"
       },
       {
         "Id": "b5dc7f15-e9a7-7e5e-70dd-3499e077b6fb",
