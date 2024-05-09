@@ -43,9 +43,8 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|The start date time of the workflowsProcessedByCategory insight summary.|
-|endDateTime|DateTimeOffset|The end date time of the workflowsProcessedByCategory insight summary.|
-
+|startDateTime|DateTimeOffset|The start date, and time, of the insight summary for workflows processed by category in a tenant.|
+|endDateTime|DateTimeOffset|The end date, and time, of the insight summary for workflows processed by category in a tenant.|
 
 ## Request headers
 
