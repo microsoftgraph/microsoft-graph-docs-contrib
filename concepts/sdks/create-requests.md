@@ -222,7 +222,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 ---
 
-## Make a POST request to create a new entity
+## Creating a new entity with POST
 
 For fluent style and template-based SDKs, new items can be added to collections with a `Post` method. For PowerShell, a `New-*` command accepts parameters that map to the entity to add. The created entity is returned from the call.
 
@@ -292,7 +292,7 @@ Most updates in Microsoft Graph are performed using a `PATCH` method; therefore,
 
 ## Use HTTP headers to control request behavior
 
-You can attach custom headers to a request using a `Header()` function. For PowerShell, adding headers is only possible with the `Invoke-GraphRequest` method. Some Microsoft Graph scenarios use custom headers to adjust the behavior of the request.
+You can attach custom headers to a request using the `Headers` collection. For PowerShell, adding headers is only possible with the `Invoke-GraphRequest` method. Some Microsoft Graph scenarios use custom headers to adjust the behavior of the request.
 
 # [C#](#tab/csharp)
 
