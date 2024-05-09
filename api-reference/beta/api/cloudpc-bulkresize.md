@@ -141,7 +141,8 @@ Content-Type: application/json
         "lastUpdatedDateTime": "2021-06-23T09:28:32.8260338Z",
         "cloudPcId": "30d0e128-de93-41dc-89ec-33d84bb662a0",
         "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
-        "statusDetails": null
+        "statusDetails": null,
+        "statusDetail": null
       },
       {
         "@odata.type":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcRemoteActionResult",
@@ -151,7 +152,8 @@ Content-Type: application/json
         "lastUpdatedDateTime": "2021-06-23T09:28:32.8260338Z",
         "cloudPcId": "7c82a3e3-9459-44e4-94d9-b92f93bf78dd",
         "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d65970",
-        "statusDetails": null
+        "statusDetails": null,
+        "statusDetail": null
       }
     ]
 }
