@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.create_forward_post_request_body import CreateForwardPostRequestBody
+from msgraph.generated.users.item.messages.item.create_forward.create_forward_post_request_body import CreateForwardPostRequestBody
 from msgraph.generated.models.message import Message
 from msgraph.generated.models.recipient import Recipient
 from msgraph.generated.models.email_address import EmailAddress

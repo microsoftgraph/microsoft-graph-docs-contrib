@@ -1,10 +1,10 @@
 ---
 title: "trustFrameworkKey resource type"
 description: "Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that represents a cryptographic key. The structure of this resource follows the format defined in RFC 7517 Section 4."
+author: "gysingh"
 ms.localizationpriority: medium
-author: "valnav"
 ms.subservice: "entra-sign-in"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # trustFrameworkKey resource type
@@ -17,69 +17,58 @@ Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-| kid | string | The unique identifier for the key.   |
-| kty | String | The **kty** (key type) parameter identifies the cryptographic algorithm family used with the key, The valid values are `rsa`, `oct`. |
-| use | String | The **use** (public key use) parameter identifies the intended use of the public key.  The **use** parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data. Possible values are: `sig` (signature), `enc` (encryption)  |
-| x5c | string collection | The **x5c** (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates [RFC 5280](https://tools.ietf.org/html/rfc5280). |
-| x5t | string | The **x5t** (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate [RFC 5280](https://tools.ietf.org/html/rfc5280). |
-| e | string | RSA Key - public exponent |
-| d| string | RSA Key - private exponent. Field can't be read back. |
-| n | string | RSA Key - modulus |
-| p | string | RSA Key - first prime. Field can't be read back. |
-| q | string | RSA Key - second prime. Field can't be read back. |
-| dp | string | RSA Key - first exponent. Field can't be read back. |
-| dq | string | RSA Key - second exponent. Field can't be read back. |
-| qi | string | RSA Key - Coefficient. Field can't be read back. |
-| k | string | Symmetric Key for oct key type. Field can't be read back.   |
-| nbf | int | This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.) |
-| exp | int | This value is a NumericDate as defined in RFC 7519 (A JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.) |
+|Property|Type|Description|
+|:---|:---|:---|
+|d|String|RSA Key - private exponent. The field isn't readable.|
+|dp|String|RSA Key - first exponent. The field isn't readable.|
+|dq|String|RSA Key - second exponent. The field isn't readable.|
+|e|String|RSA Key - public exponent. |
+|exp|Int64|This value is a NumericDate as defined in RFC 7519. That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.|
+|k|String|Symmetric Key for oct key type. The field isn't readable.|
+|kid|String|The unique identifier for the key.|
+|kty|String|The **kty** (key type) parameter identifies the cryptographic algorithm family used with the key. The valid values are `rsa`, `oct`.|
+|n|String|RSA Key - modulus.|
+|nbf|Int64|This value is a NumericDate as defined in RFC 7519. That is, a JSON numeric value representing the number of seconds from 1970-01-01T00:00:00Z UTC until the specified UTC date/time, ignoring leap seconds.|
+|p|String|RSA Key - first prime. The field isn't readable.|
+|q|String|RSA Key - second prime. The field isn't readable.|
+|qi|String|RSA Key - Coefficient. The field isn't readable.|
+|status|trustFrameworkKeyStatus|Status of the key. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|use|String|The **use** (public key use) parameter identifies the intended use of the public key. The **use** parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data. Possible values are: `sig` (signature), `enc` (encryption).|
+|x5c|String collection|The **x5c** (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates. For more information, see [RFC 5280](https://tools.ietf.org/html/rfc5280).|
+|x5t|String|The **x5t** (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate. For more information, see [RFC 5280](https://tools.ietf.org/html/rfc5280).|
 
-
+## Relationships
+None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.trustFrameworkKey",
-  "baseType": null
-}-->
-
-```json
+  "@odata.type": "microsoft.graph.trustFrameworkKey"
+}
+-->
+``` json
 {
-  "d": "String",
-  "dp": "String",
-  "dq": "String",
-  "e": "String",
-  "exp": 1024,
+  "@odata.type": "#microsoft.graph.trustFrameworkKey",
   "k": "String",
-  "kid": "String",
+  "x5c": [
+    "String"
+  ],
+  "x5t": "String",
   "kty": "String",
+  "use": "String",
+  "status": "String",
+  "exp": "Integer",
+  "nbf": "Integer",
+  "kid": "String (identifier)",
+  "e": "String",
   "n": "String",
-  "nbf": 1024,
+  "d": "String",
   "p": "String",
   "q": "String",
-  "qi": "String",
-  "use": "String",
-  "x5c": ["String"],
-  "x5t": "String"
+  "dp": "String",
+  "dq": "String",
+  "qi": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "trustFrameworkKey resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
 
