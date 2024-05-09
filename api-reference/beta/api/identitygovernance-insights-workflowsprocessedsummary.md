@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of workflows processed for a specified time period. Because the amount of workflows processed results returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
+Provide a summary of workflows processed for a specified period. Because the amount of results for processed workflows as returned by the [List xxxx](../api/) API call can be overwhelming, this summary gives you a quick overview based on counts.
 
 ## Permissions
 
