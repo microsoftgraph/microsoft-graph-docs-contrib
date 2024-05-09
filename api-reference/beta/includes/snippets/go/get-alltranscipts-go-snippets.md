@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "meetingOrganizerId eq '8b081ef6-4792-4def-b2c9-c363a1bf41d5'"
 
-requestParameters := &graphusers.UserItemOnlineMeetingsGetAllTranscripts()RequestBuilderGetQueryParameters{
+requestParameters := &graphusers.UserItemOnlineMeetingItemRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphusers.UserItemOnlineMeetingsGetAllTranscripts()RequestBuilderGetRequestConfiguration{
+configuration := &graphusers.UserItemOnlineMeetingItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-getAllTranscripts, err := graphClient.Users().ByUserId("user-id").OnlineMeetings().GetAllTranscripts().GetAsGetAllTranscriptsGetResponse(context.Background(), configuration)
+onlineMeetings, err := graphClient.Users().ByUserId("user-id").OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Get(context.Background(), configuration)
 
 
 ```
