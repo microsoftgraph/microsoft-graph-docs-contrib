@@ -70,6 +70,7 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/setReviewStatus
 Content-Type: application/json
+
 {
   "reviewStatus": {
     "inReview": true,

@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # cloudPC: retrieveReviewStatus
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Get the [cloudpcreviewstatus](..\resources\cloudpcreviewstatus.md) of a  Cloud PC.
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "cloudpc_get" } -->
@@ -26,16 +28,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored",
 }
 -->
+
 ``` http
 GET /cloudPCs/{cloudPCId}/retrieveReviewStatus
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
+
+|Name        |Description         |
+|:---------- |:------------------ |
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -75,6 +80,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcReviewStatus",
     "inReview": true,
