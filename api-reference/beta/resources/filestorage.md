@@ -20,6 +20,3 @@ Facilitates the structures of active and deleted fileStorageContainers.
 |:---|:---|:---|
 |containers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Collection of active fileStorageContainers|
 |deletedContainers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Collection of deleted fileStorageContainers|
-
-
-
