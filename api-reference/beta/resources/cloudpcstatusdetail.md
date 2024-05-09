@@ -1,6 +1,6 @@
 ---
 title: "cloudPcStatusDetail resource type"
-description: "Describes the extended detail of the Cloud PC status or action status, including code, message and additional information."
+description: "Describes the extended detail of the Cloud PC status or action status, including code, message, and additional information."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the extended detail of the Cloud PC status or action status, including code, message and additional information.
+Describes the extended detail of the Cloud PC status or action status, including code, message, and additional information.
 
 ## Properties
 
