@@ -43,8 +43,8 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|The start date and time of the topWorkflowsProcessedSummary.|
-|endDateTime|DateTimeOffset|The end date and time of the topWorkflowsProcessedSummary.|
+|startDateTime|DateTimeOffset|The start date, and time, of the summary of the most workflows processed in a tenant.|
+|endDateTime|DateTimeOffset|The end date, and time, of the summary of the most workflows processed in a tenant.|
 
 ## Request headers
 
