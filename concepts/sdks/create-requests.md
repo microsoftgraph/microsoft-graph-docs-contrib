@@ -258,7 +258,7 @@ For fluent style and template-based SDKs, new items can be added to collections 
 
 ## Updating an existing entity with PATCH
 
-Most updates in Microsoft Graph are performed using a `PATCH` method; therefore, it's only necessary to include the properties you want to change in the object you pass.
+Most updates in Microsoft Graph are performed using a `Patch` method; therefore, it's only necessary to include the properties you want to change in the object you pass.
 
 # [C#](#tab/csharp)
 
@@ -326,7 +326,7 @@ You can attach custom headers to a request using the `Headers` collection. For P
 
 ## Provide custom query parameters
 
-For SDKs that support a fluent style, you can provide custom query parameter values using a list of `QueryOptions` objects. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell and Go, defined query parameters for a given API are exposed as parameters to the corresponding command.
+For SDKs that support the fluent style, you can provide custom query parameter values using the `QueryParameters` object. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell and Go, defined query parameters for a given API are exposed as parameters to the corresponding command.
 
 # [C#](#tab/csharp)
 
