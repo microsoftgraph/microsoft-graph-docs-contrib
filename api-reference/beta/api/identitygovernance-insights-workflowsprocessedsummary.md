@@ -1,6 +1,6 @@
 ---
 title: "insights: workflowsProcessedSummary"
-description: "The summary of workflowsProcessedSummary for a lifecycle workflow."
+description: "The summary of workflows processed Lifecycle workflows within a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of workflows processed for a specified period. Because the amount of results for processed workflows as returned by the [List xxxx](../api/) API call can be overwhelming, this summary gives you a quick overview based on counts.
+Provides a summary of all workflows processed within a tenant for a specified period. Because the amount of results for listed workflows as returned by the [List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md) does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
 
 ## Permissions
 
@@ -43,8 +43,8 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|The start and time of the workflowsProcessedSummary.|
-|endDateTime|DateTimeOffset|The end date time of the workflowsProcessedSummary.|
+|startDateTime|DateTimeOffset|The start date, and time, of the summary report of workflows processed in a tenant.|
+|endDateTime|DateTimeOffset|The end date, time, of the summary report of workflows processed in a tenant.|
 
 ## Request headers
 
