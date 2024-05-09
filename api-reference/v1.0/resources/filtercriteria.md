@@ -22,7 +22,7 @@ Represents the filtering criteria applied to a column.
 | criterion2      | String                   | A custom criterion.    |
 | dynamicCriteria | String                   | A dynamic formula specified in a custom filter.   |
 | filterOn        | String                   | Indicates whether a filter is applied to a column.    |
-| icon            | [workbookIcon](workbookicon.md)  | An icon applied via conditional formatting.   |
+| icon            | [workbookIcon](icon.md)  | An icon applied to a cell via conditional formatting.   |
 | operator        | String                   | An operator in a cell; for example, `=`, `>`, `<`, `<=`, or `<>`.    |
 | values          | [Json](json.md)          | The values that appear in the cell.    |
 
