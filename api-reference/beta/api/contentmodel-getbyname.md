@@ -93,7 +93,6 @@ Content-Type: application/json
     "id": "ede4bb84-6c94-4c39-8acf-3d9dbb667fba",
     "name":"BenefitChangeNotice",
     "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
          "user": {
             "displayName": "Graph API",
             "email": "graph@MICROSOFT.COM",
@@ -105,7 +104,6 @@ Content-Type: application/json
     },
     "created": "2023-04-30T08:32:00Z",
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
          "user": {
             "displayName": "Graph API",
             "email": "graph@MICROSOFT.COM",

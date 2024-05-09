@@ -83,7 +83,6 @@ Content-Type: application/json
   "value": [
     {
       "createdBy": {
-           "@odata.type": "microsoft.graph.identitySet"
             "user": {
                 "displayName": "Graph API",
                 "email": "graph@MICROSOFT.COM",
@@ -95,7 +94,6 @@ Content-Type: application/json
         },
       "createdDateTime": "2023-05-31T20:31:51Z",
       "lastModifiedBy": {
-            "@odata.type": "microsoft.graph.identitySet"
             "user": {
                 "displayName": "Graph API",
                 "email": "graph@MICROSOFT.COM",
