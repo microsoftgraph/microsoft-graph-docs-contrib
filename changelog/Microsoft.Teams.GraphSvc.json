@@ -1955,6 +1955,32 @@
       "CreatedDateTime": "2024-04-10T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Settings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6ed394c1-490d-437d-866d-bc66c04f4eb3",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRecordings",
+          "ChangeType": "Change",
+          "Description": "Updated the [getAllRecordings](https://learn.microsoft.com/en-us/graph/api/onlineMeeting-getAllRecordings?view=graph-rest-beta) method to use function parameters.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "6ed394c1-490d-437d-866d-bc66c04f4eb3",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllTranscripts",
+          "ChangeType": "Change",
+          "Description": "Updated the [getAllTranscripts](https://learn.microsoft.com/en-us/graph/api/onlineMeeting-getAllTranscripts?view=graph-rest-beta) method to use function parameters.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "6ed394c1-490d-437d-866d-bc66c04f4eb3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-03T22:21:52.1606075Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }

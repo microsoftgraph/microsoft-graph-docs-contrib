@@ -5463,6 +5463,32 @@
       "CreatedDateTime": "2024-01-29T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2d086d88-2211-481f-bd46-e9baa17fd000",
+          "ApiChange": "Property",
+          "ChangedApiName": "reactionContentUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **reactionContentUrl** property to the [chatMessageReaction](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagereaction?view=graph-rest-beta) resource to represent the hosted content URL for a custom reaction in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta).",
+          "Target": "chatMessageReaction"
+        },
+        {
+          "Id": "2d086d88-2211-481f-bd46-e9baa17fd000",
+          "ApiChange": "Property",
+          "ChangedApiName": "content",
+          "ChangeType": "Change",
+          "Description": "Added new `<customemoji></customemoji>` tag support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-beta) resource to represent custom emojis in the message body in a [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta). This change shows up in the actual **content** property of the message body when you [get a chat message in a channel or chat](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-beta).",
+          "Target": "itemBody"
+        }
+      ],
+      "Id": "2d086d88-2211-481f-bd46-e9baa17fd000",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-06T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
