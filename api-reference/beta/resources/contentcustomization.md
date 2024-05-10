@@ -26,7 +26,7 @@ Contains details of the various content options to be customized in the authenti
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.contentCustomization"
