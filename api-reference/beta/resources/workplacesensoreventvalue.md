@@ -20,7 +20,7 @@ Represents the data collected and reported by wifi device or badge swiping devic
 | Property                   | Type    | Description                                                    |
 |:---------------------------|:--------|:---------------------------------------------------------------|
 | eventType | [workplaceSensorEventType](../resources/workplacesensoreventvalue.md#workplacesensoreventtype-values) | The type of possible sensor event value. The possible values are: `badgeIn`, `badgeOut`, `wifiConnect`, `wifiDisconnect`, `unknownFutureValue`.  |
-| user | [emailIdentity](../resources/emailidentity.md) | The unique identifier of a user. It could be email or Microsoft Entra ID. |
+| user | [emailIdentity](../resources/emailidentity.md) | The unique identifier of a user. It could be an email or a Microsoft Entra ID. |
 
 ### workplaceSensorEventType values
 | Member             | Description                                                                                                                                                                                        |
