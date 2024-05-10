@@ -40,7 +40,6 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|Required. The display name for the events policy.|
 |description|String|The description of the events policy.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request that will be used to decide whether the events policy will be invoked.|
-|priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Defaults to 500.|
 
 ## Relationships
 None.
@@ -63,8 +62,7 @@ The following JSON representation shows the resource type.
   "description": "String",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
-  },
-  "priority": "Integer"
+  }
 }
 ```
 

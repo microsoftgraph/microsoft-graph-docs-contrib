@@ -80,7 +80,6 @@ Content-Type: application/json
             "id": "EmailPassword-OAUTH",
             "displayName": "Email with password",
             "identityProviderType": "EmailPassword",
-            "state": null
         },
         {
             "@odata.type": "#microsoft.graph.socialIdentityProvider",

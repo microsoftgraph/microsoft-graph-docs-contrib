@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete authenticationEventsFlow
 Namespace: microsoft.graph
 
-Delete a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) resource by ID. The following derived subtypes are supported:
+Delete a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) resource by ID. This also [removes or unlinks](authenticationconditionapplication-delete.md) all applications from the flow, which disables the customized authentication experience defined for the application.  The following derived subtypes are supported:
 - [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/
+DELETE /identity/authenticationEventsFlows/{authenticationEventsFlow-id}
 ```
 
 ## Request headers

@@ -10,8 +10,7 @@ doc_type: apiPageType
 # Update authenticationEventListener
 Namespace: microsoft.graph
 
-Update the properties of an [authenticationEventListener](../resources/authenticationeventlistener.md) object. You must specify the **@odata.type** property. The following derived subtypes are supported:
-- [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)
+Update the properties of an [authenticationEventListener](../resources/authenticationeventlistener.md) object. You must specify the **@odata.type** property and the value of the [authenticationEventListener](../resources/authenticationeventlistener.md) object type to update.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

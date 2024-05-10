@@ -22,7 +22,6 @@ Inherits from [onUserCreateStartHandler](../resources/onusercreatestarthandler.m
 |userTypeToCreate|String| The type of user to create. Maps to userType property of [user](user.md) object. The possible values are: `member`, `guest`, `unknownFutureValue`.|
 <!--
 |accessPackages|[authenticationAccessPackageConfiguration](../resources/authenticationaccesspackageconfiguration.md) collection|Optional. Defines the access package attached to the user flow - for which a request will be submitted. Applicable only to user flows configured in Azure AD workforce tenant.**SHOULD BE HIDDEN**|
-|userTypeToCreate|userType|Defines the type of user created by this authentication flow. The possible values are: `member`, `guest`, `unknownFutureValue`.|
 -->
 
 ## Relationships

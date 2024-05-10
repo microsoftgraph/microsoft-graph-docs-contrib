@@ -85,12 +85,8 @@ Content-Type: application/json
         "id": "0313cc37-d421-421d-857b-87804d61e33e",
         "displayName": "Woodgrove Drive User Flow",
         "description": "For onboarding consumers to the Woodgrove Drive application",
-        "priority": 50,
-        "onAttributeCollectionStart": null,
-        "onAttributeCollectionSubmit": null,
         "conditions": {
             "applications": {
-                "includeAllApplications": false,
                 "includeApplications@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventsFlows('0313cc37-d421-421d-857b-87804d61e33e')/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications",
                 "includeApplications": []
             }
@@ -106,8 +102,7 @@ Content-Type: application/json
                     "@odata.type": "#microsoft.graph.builtInIdentityProvider",
                     "id": "EmailPassword-OAUTH",
                     "displayName": "Email with password",
-                    "identityProviderType": "EmailPassword",
-                    "state": null
+                    "identityProviderType": "EmailPassword"
                 },
                 {
                     "@odata.type": "#microsoft.graph.socialIdentityProvider",
@@ -129,9 +124,7 @@ Content-Type: application/json
         },
         "onAttributeCollection": {
             "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-            "accessPackages": [],
             "attributeCollectionPage": {
-                "customStringsFileId": null,
                 "views": [
                     {
                         "title": null,

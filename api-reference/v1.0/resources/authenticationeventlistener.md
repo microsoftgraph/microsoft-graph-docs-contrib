@@ -39,6 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger.|
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
+|authenticationEventsFlowId|String|Indicates the authenticationEventListener is associated with an [authenticationEventsFlow](../resources/authenticationeventsflow.md). Read-only.
 
 ## Relationships
 None.

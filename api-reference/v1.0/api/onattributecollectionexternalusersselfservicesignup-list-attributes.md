@@ -33,7 +33,7 @@ GET /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microsoft.
 
 ## Optional query parameters
 
-This method supports the `$filter`, `$expand`,  `$orderby`, and  `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$expand`,  `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers

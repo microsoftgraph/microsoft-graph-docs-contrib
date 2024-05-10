@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update authenticationEventsFlow
 Namespace: microsoft.graph
 
-Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. You must specify the **@odata.type** property. The following derived subtypes are supported:
+Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. You must specify the **@odata.type** property and the value of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) object type to update. The following derived subtypes are supported:
 - [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
@@ -51,11 +51,6 @@ You must include the **@odata.type** property with a value of the specific user 
 |displayName|String|The display name for the events policy. |
 |description|String|The description of the events policy.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request that is used to decide whether the events policy is invoked. |
-|priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. |
-|onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|The configuration for what to invoke for the onInteractiveAuthFlowStart event. |
-|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|The configuration for what to invoke for the onAuthenticationMethodLoadStart event. Must have at least one identity provider linked.|
-|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke for the onAttributeCollection event.|
-|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke for the onUserCreateStart event.|
 
 ## Response
 
@@ -63,10 +58,10 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 ## Examples
 
-### Example 1: Update the display name and priority of an authenticationEventsFlow
+### Example 1: Update the display name of an external identities self-service sign-up user flow
 
 #### Request
-The following example shows a request that updates the display name of a specific external identities user flow (an authentication event type), and the priority for all the listeners associated with the policy.
+The following example shows a request that updates the display name of a specific external identities user flow.
 
 <!-- {
   "blockType": "request",
@@ -80,7 +75,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
   "displayName": "New user flow description",
-  "priority": 200
 }
 ```
 
@@ -95,7 +89,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update the onAttributeCollection event of a self-service sign-up user flow
+### Example 2: Update the onAttributeCollection event of an external identities self-service sign-up user flow
 
 Add city (built-in attribute) as an attribute to be collected during the attribute collection step of a self-service sign-up user flow. You must specify in the **inputs** object all attributes that you want to retain, otherwise they're removed from the user flow.
 
@@ -115,7 +109,6 @@ Content-Type: application/json
     "onAttributeCollection": {
         "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
         "attributeCollectionPage": {
-            "customStringsFileId": null,
             "views": [
                 {
                     "title": null,
@@ -189,7 +182,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Remove an attribute collected during a self-service sign-up user flow
+### Example 3: Remove an attribute collected during an external identities self-service sign-up user flow
 
 Remove city as an attribute to be collected during the attribute collection step of a self-service sign-up user flow. By excluding the city attribute from the request body, the attribute is removed from the user flow.
 
@@ -209,7 +202,6 @@ Content-Type: application/json
     "onAttributeCollection": {
         "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
         "attributeCollectionPage": {
-            "customStringsFileId": null,
             "views": [
                 {
                     "title": null,

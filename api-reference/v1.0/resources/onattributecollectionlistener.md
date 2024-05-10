@@ -20,7 +20,6 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 |:---|:---|:---|
 |id|String|Required. Inherited from [entity](../resources/entity.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|priority|Int32|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. Configuration for what to invoke if the event resolves to this listener.|
 
@@ -41,7 +40,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.onAttributeCollectionListener",
   "id": "String (identifier)",
-  "priority": "Integer",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },

@@ -16,7 +16,6 @@ Represents the attribute collection page that is part of a self-service user flo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customStringsFileId|String|Nullable.|
 |views|[authenticationAttributeCollectionPageViewConfiguration](../resources/authenticationattributecollectionpageviewconfiguration.md) collection|A collection of displays of the attribute collection page.|
 
 ## Relationships
@@ -32,7 +31,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.authenticationAttributeCollectionPage",
-  "customStringsFileId": "String",
   "views": [
     {
       "@odata.type": "microsoft.graph.authenticationAttributeCollectionPageViewConfiguration"

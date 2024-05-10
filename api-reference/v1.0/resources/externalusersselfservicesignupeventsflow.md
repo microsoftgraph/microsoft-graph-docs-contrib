@@ -32,11 +32,6 @@ Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.m
 |[List attributes](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Retrieve all user attributes associated with an external identities self-service sign-up user flow.|
 |[Add an attribute](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md)|None|Retrieve all user attributes associated with an external identities self-service sign-up user flow.|
 |[Delete an attribute](../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md)|None|Remove a user flow attribute from an external identities self-service sign-up user flow.|
-<!--|[List listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
-|[Get listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
-|[Create listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
-|[Update listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
-|[Delete listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|-->
 
 ## Properties
 
@@ -46,7 +41,6 @@ Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.m
 |displayName|String|Required. The display name for the events policy. Must be unique. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |description|String|Optional. The description of the events policy. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Optional. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke when an authentication flow is ready to be initiated. |
 |onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke when attributes are ready to be collected from the user.|
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked.|
@@ -74,7 +68,6 @@ The following JSON representation shows the resource type.
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
-  "priority": "Integer",
   "onInteractiveAuthFlowStart": {
     "@odata.type": "microsoft.graph.onInteractiveAuthFlowStartHandler"
   },
