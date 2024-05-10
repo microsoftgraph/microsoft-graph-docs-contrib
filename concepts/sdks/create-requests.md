@@ -224,7 +224,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 ## Creating a new entity with POST
 
-For fluent style and template-based SDKs, new items can be added to collections with a `Post` method. For PowerShell, a `New-*` command accepts parameters that map to the entity to add. The created entity is returned from the call.
+For fluent style and template-based SDKs, new items can be added to collections with a `POST` method. For PowerShell, a `New-*` command accepts parameters that map to the entity to add. The created entity is returned from the call.
 
 # [C#](#tab/csharp)
 
@@ -258,7 +258,7 @@ For fluent style and template-based SDKs, new items can be added to collections 
 
 ## Updating an existing entity with PATCH
 
-Most updates in Microsoft Graph are performed using a `Patch` method; therefore, it's only necessary to include the properties you want to change in the object you pass.
+Most updates in Microsoft Graph are performed using a `PATCH` method; therefore, it's only necessary to include the properties you want to change in the object you pass.
 
 # [C#](#tab/csharp)
 
