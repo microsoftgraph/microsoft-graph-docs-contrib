@@ -12,9 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!CAUTION]
-> [PM content placeholder]
-
 Represents external registration details of an [onlineMeeting](../resources/onlinemeeting.md).
 
 Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
