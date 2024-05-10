@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.end_break_post_request_body import EndBreakPostRequestBody
+from msgraph.generated.teams.item.schedule.timecards.item.end_break.end_break_post_request_body import EndBreakPostRequestBody
 from msgraph.generated.models.item_body import ItemBody
 
 graph_client = GraphServiceClient(credentials, scopes)

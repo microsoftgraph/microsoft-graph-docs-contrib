@@ -15,6 +15,7 @@ mgc-beta employee-experience learning-providers learning-contents patch --learni
     "numberOfPages": 9,\
     "duration": "PT20M",\
     "format": "Book",\
+    "level": "Beginner",\
     "createdDateTime": "2018-01-01T00:00:00Z",\
     "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",\
     "contributors": ["Scott Simpson"],\

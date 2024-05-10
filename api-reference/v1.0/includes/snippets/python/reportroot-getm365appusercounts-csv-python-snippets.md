@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.reports.getM365AppUserCounts(period='{period}').get_m365_app_user_counts_with_period_request_builder import GetM365AppUserCountsWithPeriodRequestBuilder
+from msgraph.generated.reports.get_m365_app_user_counts(period='{period}').get_m365_app_user_counts_with_period_request_builder import GetM365AppUserCountsWithPeriodRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

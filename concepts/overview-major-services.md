@@ -38,7 +38,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Identity and access management | Microsoft Entra ID | Creates and manages directory resources such as users, groups, and applications. Manages access to resources and data. Gives customers access to sign-in and account risk data in Microsoft Entra ID.| [Microsoft Entra identity and access management overview](azuread-identity-access-management-concept-overview.md)  |
+| Identity and access management | Microsoft Entra ID | Creates and manages directory resources such as users, groups, and applications. Manages access to resources and data. Gives customers access to sign-in and account risk data in Microsoft Entra ID.| [Microsoft Entra identity and access management overview](identity-network-access-overview.md)  |
 
 ## Productivity
 
