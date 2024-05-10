@@ -16,6 +16,11 @@ Namespace: microsoft.graph
 
 A collection of groups that are enabled to use an authentication method as part of an authentication method policy in Microsoft Entra ID. Inherits from [entity](entity.md).
 
+The following types are derived from this resource type:
+- [microsoftAuthenticatorAuthenticationMethodTarget](../resources/microsoftauthenticatorauthenticationmethodtarget.md)
+- [smsAuthenticationMethodTarget](../resources/smsauthenticationmethodtarget.md)
+- [voiceAuthenticationMethodTarget](../resources/voiceauthenticationmethodtarget.md)
+
 
 ## Properties
 |Property|Type|Description|

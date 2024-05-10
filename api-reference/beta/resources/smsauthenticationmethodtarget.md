@@ -1,6 +1,6 @@
 ---
 title: "smsAuthenticationMethodTarget resource type"
-description: "A collection of groups enabled to use Text Message authentication methods policy."
+description: "A collection of groups enabled to use text message authentication methods policy."
 author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of groups enabled to use [Text Message authentication methods policy](../resources/smsAuthenticationMethodConfiguration.md) in Microsoft Entra ID.
+A collection of groups enabled to use [text message authentication methods policy](../resources/smsAuthenticationMethodConfiguration.md) in Microsoft Entra ID. Inherits from [authenticationMethodTarget](authenticationMethodTarget.md).
 
 ## Properties
 |Property|Type|Description|
