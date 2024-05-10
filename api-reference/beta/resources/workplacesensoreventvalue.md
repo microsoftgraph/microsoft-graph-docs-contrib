@@ -35,11 +35,11 @@ The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.workplacesensoreventvalue"
+  "@odata.type": "microsoft.graph.workplaceSensorEventValue"
 }-->
 ```json
 {
-  "@odata.type": "#microsoft.graph.workplacesensoreventvalue",
+  "@odata.type": "#microsoft.graph.workplaceSensorEventValue",
   "eventType": "String",
   "user": {"@odata.type": "microsoft.graph.emailIdentity"}
 }

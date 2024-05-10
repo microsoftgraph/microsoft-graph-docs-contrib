@@ -50,7 +50,7 @@ The following JSON representation shows the resource type.
   "sensorId": "String",
   "sensorType": "String",
   "timestamp": "String (timestamp)",
-  "eventValue": {"@odata.type": "microsoft.graph.workplacesensoreventvalue"},
+  "eventValue": {"@odata.type": "microsoft.graph.workplaceSensorEventValue"},
   "locationHint": "String"
 }
 ```
