@@ -1,6 +1,6 @@
 ---
 title: "mfaDetail resource type"
-description: "Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in and auth details (for example: Phone, SMS or voicemail) "
+description: "Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in and auth details (for example, Phone, SMS, or voicemail) "
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
@@ -10,15 +10,16 @@ author: "egreenberg14"
 # mfaDetail resource type
 
 Namespace: microsoft.graph
-Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in and auth details (for example: Phone, SMS or voicemail)
+
+Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in and auth details (for example: Phone, SMS, or voicemail)
 
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|authDetail|String|Indicates the MFA auth detail for the corresponding Sign-in activity when the MFA Required is "Yes".|
-|authMethod|String|Indicates the MFA Auth methods (SMS, Phone, Authenticator App are some of the value) for the corresponding sign-in activity when the MFA Required field is "Yes".|
+|authDetail|String|Indicates the MFA auth detail for the corresponding sign-in activity when the MFA Required is "Yes".|
+|authMethod|String|Indicates the MFA Auth methods (SMS, Phone, Authenticator App are some of the values) for the corresponding sign-in activity when the MFA Required field is "Yes".|
 
 ## JSON representation
 
