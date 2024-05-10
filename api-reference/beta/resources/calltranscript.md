@@ -30,7 +30,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 |:---------------|:--------|:----------|
 | callId | String | The unique identifier for the [call](call.md) that is related to this transcript. Read-only.|
 | content| Stream| The content of the transcript. Read-only.|
-| contentCorrelationId | String | The unique identifier to correlate a transcript with its corresponding recording. Read-only.|
+| contentCorrelationId | String | The unique identifier that links a transcript with its corresponding recording. Read-only.|
 | createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | endDateTime | DateTimeOffset |  Date and time at which the transcription ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.| 
 | id| String| The unique identifier for the transcript. Read-only.|
