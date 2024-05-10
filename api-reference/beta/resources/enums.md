@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 | Member             |
 |:-------------------|
 | tenantOwned        |
-| userOwned          |
 | unknownfuturevalue |
 
 ### fileStorageContainerStatus values

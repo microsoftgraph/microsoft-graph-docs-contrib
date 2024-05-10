@@ -58,7 +58,7 @@ Represents a location where multiple users or a group of users can store files a
 |isItemVersioningEnabled|Boolean|Indicates whether versioning is enabled for the **fileStorageContainer**. The setting is applicable to all items in the **fileStorageContainer**. Read-Write.|
 |itemMajorVersionLimit|Int32|Maximum number of major versions allowed for items in the **fileStorageContainer**. Read-write.|
 |owners|[userIdentity](../resources/useridentity.md) collection|List of users who own the **fileStorageContainer**. Read-only.|
-|ownershipType|fileStorageContainerOwnershipType|Ownership type of the **fileStorageContainer**.The possible values are: `tenantOwned`, `userOwned`. Read-only.|
+|ownershipType|fileStorageContainerOwnershipType|Ownership type of the **fileStorageContainer**.The possible values are: `tenantOwned`. Read-only.|
 |status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours. The possible values are: `inactive`, `active`. Read-only.|
 |storageUsedInBytes|Int64|Storage used in the **fileStorageContainer**. In bytes. Read-only.||
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
