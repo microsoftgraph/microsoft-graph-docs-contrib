@@ -32,7 +32,7 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 | content | Stream | The content of the recording. Read-only.|
 | contentCorrelationId | String | The unique identifier for correlating a set of recording and transcript.|
 | createdDateTime | DateTimeOffset |  Date and time at which the recording was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-| endDateTime | DatetimeOffset |  Date and time at which the recording ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+| endDateTime | DateTimeOffset |  Date and time at which the recording ends. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id | String | The unique identifier for the recording. Read-only. Inherited from [entity](../resources/entity.md).|
 | meetingId | String | The unique identifier of the **onlineMeeting** related to this recording. Read-only.|
 | meetingOrganizer|  [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this recording. Read-only.|
