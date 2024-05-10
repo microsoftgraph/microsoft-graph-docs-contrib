@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalMeetingRegistration",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [externalMeetingRegistration](https://learn.microsoft.com/en-us/graph/api/externalmeetingregistration?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Deprecated the [externalMeetingRegistration](https://learn.microsoft.com/en-us/graph/api/resources/externalmeetingregistration?view=graph-rest-beta) resource and supported methods.",
           "Target": "externalMeetingRegistration"
         }
       ],
