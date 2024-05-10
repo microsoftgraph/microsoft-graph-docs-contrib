@@ -15,9 +15,9 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-## PSTN Scenarios
+## PSTN scenarios
 
-| PSTN Scenarios                                                                           | supported/not supported |
+| PSTN scenarios                                                                           | supported/not supported |
 | -----------------------------------------------------------------------------------------| ------------------------|
 | Incoming call to Bot's PSTN number and then bot invites another PSTN                     | Supported               |
 | Incoming call to Bot's PSTN number and then bot transfer to another PSTN                 | Supported               |
