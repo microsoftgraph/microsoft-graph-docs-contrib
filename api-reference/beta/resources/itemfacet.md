@@ -61,9 +61,11 @@ The following JSON representation shows the resource type.
   "source": {
     "@odata.type": "microsoft.graph.personDataSource"
   },
-  "sources": {
-    "@odata.type": "microsoft.graph.profileSourceAnnotation"
-  }
+  "sources": [
+    {
+      "@odata.type": "microsoft.graph.profileSourceAnnotation"
+    }
+  ]
 }
 ```
 
