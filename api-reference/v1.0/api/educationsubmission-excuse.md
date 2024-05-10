@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Excuse a submission. Excused submissions aren't included in average grade calculations. Grading rubrics and feedback are deleted. Only teachers can perform this action. 
+Excuse a [submission](../resources/educationsubmission.md). Excused submissions aren't included in average grade calculations. Grading rubrics and feedback are deleted. Only teachers can perform this action. 
 
-If the `Prefer: include-unknown-enum-members` request header is provided, the excused submission shows the **excused** status. Otherwise, the submission status retains to **returned** status. For more information about how to use this header, see the [Examples](#examples) section.
+If the `Prefer: include-unknown-enum-members` request header is provided, the excused submission shows the **excused** status. Otherwise, the submission status retains the **returned** status. For more information about how to use this header, see the [Examples](#examples) section.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
