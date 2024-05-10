@@ -12658,6 +12658,18 @@ items:
                         href: api/identitygovernance-lifecyclemanagementsettings-get.md
                       - name: Update
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
+                  - name: Insights
+                    items:
+                      - name: Insights
+                        href: resources/identitygovernance-insights.md
+                      - name: topWorkflowsProcessedSummary
+                        href: api/identitygovernance-insights-topworkflowsprocessedsummary.md
+                      - name: topTasksProcessedSummary
+                        href: api/identitygovernance-insights-toptasksprocessedsummary.md
+                      - name: workflowsProcessedSummary
+                        href: api/identitygovernance-insights-workflowsprocessedsummary.md
+                      - name: workflowsProcessedByCategory
+                        href: api/identitygovernance-insights-workflowsprocessedbycategory.md         
               - name: Privileged Identity Management iteration 3
                 items:
                   - name: PIM for Microsoft Entra roles
