@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The workflow insights summary provides a numerical summary of run information for workflows in a tenant. Total, successful, and failed values are provided for workflow, task, and user processing by a workflow. The information here is general information about information reported in the insights of a Lifecycle workflow tenant. More detailed specific task and workflow insight summaries can be found in [topTasksInsightsSummary](//api-reference/beta/resources/identitygovernance-toptasksinsightssummary.md) and [topWorkflowsInsightsSummary](//api-reference/beta/resources/identitygovernance-topworkflowsinsightssummary.md).
+The workflow insights summary provides a numerical summary of run information for workflows in a tenant. Total, successful, and failed values are provided for workflow, task, and user processing by a workflow. The information here is general information about information reported in the insights of a Lifecycle workflow tenant. More detailed specific task and workflow insight summaries can be found in [topTasksInsightsSummary](identitygovernance-toptasksinsightssummary.md) and [topWorkflowsInsightsSummary](identitygovernance-topworkflowsinsightssummary.md).
 
 ## Properties
 

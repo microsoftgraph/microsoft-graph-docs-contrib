@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a summary of the total, successful, and failed workflows run in a a tenant by category. Category can be **Joiner**, **Mover**, or **Leaver**. For full insights information about workflows processed in a tenant, see [topWorkflowsInsightsSummary](//api-reference/beta/resources/identitygovernance-topworkflowsinsightssummary.md)
+Represents a summary of the total, successful, and failed workflows run in a a tenant by category. Category can be **Joiner**, **Mover**, or **Leaver**. For full insights information about workflows processed in a tenant, see [topWorkflowsInsightsSummary](identitygovernance-topworkflowsinsightssummary.md)
 
 ## Properties
 
