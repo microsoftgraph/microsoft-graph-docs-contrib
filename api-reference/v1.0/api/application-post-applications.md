@@ -173,7 +173,10 @@ Content-type: application/json
 ### Example 2: Create a new application and add a password secret
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_application_with_passwordcredentials"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/applications
 Content-type: application/json
