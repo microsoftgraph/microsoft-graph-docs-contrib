@@ -134,7 +134,7 @@ Inherits from [onlineMeetingBase](../resources/onlineMeetingBase.md).
 > [!TIP]
 >
 >- The **meetingAttendanceReport** property is deprecated. It will remain in beta for backward compatibility. Going forward, please use **attendanceReports** property to retrieve attendance reports of an online meeting.
->- [PM content placeholder]
+>- The type of **registration** can only be [externalMeetingRegistration](externalmeetingregistration.md), which inherits from [meetingRegistrationBase](meetingregistrationbase.md) because [meetingRegistration](meetingregistration.md) is being deprecated and will not be supported by **July 31, 2024**. 
 
 ## JSON representation
 
