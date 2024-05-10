@@ -159,22 +159,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [workplaceSensorEventValue](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensorEventValue?view=graph-rest-beta) resource.",
           "Target": "workplaceSensorEventValue"
-        },
-        {
-          "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "emailIdentity",
-          "ChangeType": "Addition",
-          "Description": "Added the [emailIdentity](https://learn.microsoft.com/en-us/graph/api/resources/emailIdentity?view=graph-rest-beta) resource.",
-          "Target": "emailIdentity"
-        },
-        {
-          "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
-          "ApiChange": "Resource",
-          "ChangedApiName": "identity",
-          "ChangeType": "Addition",
-          "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource.",
-          "Target": "identity"
         }
       ],
       "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
