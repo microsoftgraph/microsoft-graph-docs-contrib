@@ -2,9 +2,9 @@
 title: "workbookIcon resource type"
 description: "Represents a cell icon."
 ms.localizationpriority: medium
-author: "ruoyingl"
-ms.subservice: excel
 doc_type: resourcePageType
+ms.subservice: "excel"
+author: "ruoyingl"
 ---
 
 # workbookIcon resource type
