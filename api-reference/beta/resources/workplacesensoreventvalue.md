@@ -25,7 +25,7 @@ Represents the data collected and reported by wifi device or badge swiping devic
 ### workplaceSensorEventType values
 | Member             | Description                                                                                                                                                                                        |
 |:-------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| badgeIn          | An event that a user enters a place by swiping the badge. |
+| badgeIn          | An event in which a user enters a place by swiping the badge. |
 | badgeOut        | An event in which a user exits a place by swiping the badge. |
 | wifiConnect  | An event in which a user connects to the wifi device. |
 | wifiDisconnect          | An event in which a user disconnects from the wifi device. |
