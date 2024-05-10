@@ -20,7 +20,7 @@ Represents the details of the Cloud PC connectivity status, including whether th
 |:---|:---|:---|
 |failedHealthCheckItems|[cloudPcHealthCheckItem](../resources/cloudpchealthcheckitem.md) collection|A list of failed health check items. If the status property is `available`, this property will be empty.|
 |status|[cloudPcConnectivityStatus](#cloudpcconnectivitystatus-values)|Connectivity status of the Cloud PC. Possible values are: `unknown`, `available`, `availableWithWarning`, `unavailable`, and `unknownFutureValue`.|
-|updatedDateTime|string|Datetime when the status was updated. Starting from January 31, 2023, updatedDatetime property will no longer be supported and will be marked as deprecated. Please use lastModifiedDateTime instead. Read-Only. |
+|updatedDateTime|string|Datetime when the status was updated. Starting from August 31, 2024, updatedDatetime property will no longer be supported and will be marked as deprecated. Please use lastModifiedDateTime instead. Read-Only. |
 |lastModifiedDateTime|string|The last modified time for connectivity status of the Cloud PC. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`. |
 
 ### cloudPcConnectivityStatus values
