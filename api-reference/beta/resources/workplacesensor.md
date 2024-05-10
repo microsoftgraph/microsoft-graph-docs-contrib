@@ -33,7 +33,7 @@ Represents a sensor on hardware that collects and reports data on physical or en
 | inferredOccupancy  | The sensor estimates the occupancy status of the place based on other clues, such as the presence of a laptop or a backpack. Use it for sensors that don't directly detect motion or people count. |
 | heartbeat          | The sensor reports the heartbeat of the device. It indicates if the device is online or not. Use it for sensors that monitor the status of the device.                                             |
 | badge | The sensor reports badge-swiping events of the people. Use it for sensors that accept active user interactions. |
-| wifi | The sensor reports the device's wifi connection and disconnects events from people. Use it for sensors that connect to other devices with wifi. |
+| wifi | The sensor reports the device's Wi-Fi connection and disconnects events from people. Use it for sensors that connect to other devices with Wi-Fi. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                                                                                                   |
 
 ## Relationships

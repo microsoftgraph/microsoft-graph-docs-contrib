@@ -25,7 +25,7 @@ Represents the data collected and reported by a sensor on a device, such as occu
 |sensorId|String|The user-defined unique identifier of the sensor on the device. Optional. If the device has multiple sensors of the same type, the property must be provided to identify each sensor. If the device has unique sensor types, the property can be omitted. The default value is the sensor type.|
 |sensorType|[workplaceSensorType](../resources/workplacesensor.md#workplacesensortype-values)| The type of sensor. The possible values are: `occupancy`, `peopleCount`, `inferredOccupancy`, `heartbeat`, `badge`, `wifi`, `unknownFutureValue`.|
 |timestamp|DateTimeOffset|The date and time when the sensor measured and reported its value. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-|eventValue| [workplaceSensorEventValue](../resources/workplacesensoreventvalue.md)| The extra values associated with badge and wifi signals. |
+|eventValue| [workplaceSensorEventValue](../resources/workplacesensoreventvalue.md)| The extra values associated with badge and Wi-Fi signals. |
 |locationHint|String|The additional information to indicate the location of the device. |
 
 ## Relationships
