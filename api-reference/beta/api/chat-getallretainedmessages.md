@@ -22,7 +22,7 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 > **Note:**  
-> This API requires [Teams Retention Policy setup](https://learn.microsoft.com/en-us/purview/create-retention-policies?tabs=teams-retention).
+> This API requires [Teams Retention Policy setup](/purview/create-retention-policies?tabs=teams-retention).
 > To learn more about Teams Retention policy, see the [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) for further details.
 
 ## Permissions
