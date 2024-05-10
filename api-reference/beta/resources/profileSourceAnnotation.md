@@ -17,11 +17,11 @@ Namespace: microsoft.graph
 Represents the sources the user data comes from, such as Entra, UPA, Connector, etc.
 
 ## Properties
-| Property	    | Type	                                            |Description                                                               |
-|:--------------|:--------------------------------------------------|:-------------------------------------------------------------------------|
-|id             |String                                             |Unique identifier of the source.                                          |
-|isDefaultSource|Boolean                                            |Flag to indicate whether the source is the default one.                   |
-|properties     |Collection(String)                                 |Names of properties having data from this source.                         |
+|Property	|Type	|Description|
+|:--------|:----|:----------|
+|id|String|The unique identifier of the source.|
+|isDefaultSource|Boolean|Indicates whether the source is the default one.|
+|properties|Collection(String)|The names of properties that have data from this source.|
 
 ## JSON representation
 
