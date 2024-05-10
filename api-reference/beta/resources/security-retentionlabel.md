@@ -13,7 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents how customers can manage their data, including whether and for how long to retain or delete it.
+Represents how organizations, for compliance and governance purposes, can manage their data at an item level (email or document), including whether and for how long to retain or delete the item. 
+
+Organizations can use retention labels for different types of content that require different retention settings. For example, they can apply a retention label to tax forms and supporting documents to retain them for the period required by law.
+
+Organizations can configure retention labels with the retention periods and actions based on factors such as the date last modified or created. They can also start different retention periods by specifying an [event that can trigger retention](security-retentionevent.md) when the event occurs.
+
+For more information on how retention labels work, when to use them, and how Microsoft Purview supports retention labels to let you configure retention and deletion settings, see [Learn about retention policies and retention labels](/purview/retention).
 
 ## Methods
 |Method|Return type|Description|
@@ -30,14 +36,14 @@ Represents how customers can manage their data, including whether and for how lo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionAfterRetentionPeriod|microsoft.graph.security.actionAfterRetentionPeriod| Specifies the action to take on a document with this label applied during the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
+|actionAfterRetentionPeriod|microsoft.graph.security.actionAfterRetentionPeriod| Specifies the action to take on the labeled document after the period specified by the retentionDuration property expires. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
 |behaviorDuringRetentionPeriod|microsoft.graph.security.behaviorDuringRetentionPeriod|Specifies how the behavior of a document with this label should be during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the retentionLabel.|
 |createdDateTime|DateTimeOffset|Represents the date and time in which the retentionLabel is created.|
 |descriptionForAdmins|String|Provides label information for the admin. Optional.|
 |descriptionForUsers|String|Provides the label information for the user. Optional.|
 |displayName|String|Unique string that defines a label name.|
-|id|String|Unique ID of the retentionLabel. [entity](/graph/api/resources/entity).|
+|id|String|Unique ID of the retentionLabel.|
 |isInUse|Boolean|Specifies whether the label is currently being used.|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionLabel.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the retentionLabel was modified.|

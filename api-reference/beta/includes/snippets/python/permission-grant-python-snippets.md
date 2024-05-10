@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.grant_post_request_body import GrantPostRequestBody
+from msgraph.generated.shares.item.permission.grant.grant_post_request_body import GrantPostRequestBody
 from msgraph.generated.models.drive_recipient import DriveRecipient
 
 graph_client = GraphServiceClient(credentials, scopes)

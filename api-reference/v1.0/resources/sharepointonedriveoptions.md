@@ -21,7 +21,7 @@ Provides the search content options when a search is performed using application
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -34,6 +34,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "includeContent": "string"
+  "includeContent": "String"
 }
 ```

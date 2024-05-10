@@ -22,7 +22,7 @@ Base type of [bookingStaffMember](bookingstaffmember.md).
 |id|String|ID of the staff member. Inherited from [entity](../resources/entity.md).|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
