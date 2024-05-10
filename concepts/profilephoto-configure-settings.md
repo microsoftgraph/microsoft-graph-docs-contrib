@@ -1,54 +1,33 @@
 ---
-title: "Manage user profile photo settings in Microsoft 365 using Microsoft Graph"
+title: "Manage user profile photo settings in Microsoft 365 by using Microsoft Graph"
 description: "How admins can set where photos can be changed by the user"
+author: "shivanioslo"
 ms.author: "shivansingh"
-ms.date: 04/24/2024
+ms.topic: concept-article
+ms.localizationpriority: medium
 ---
 
-#  Manage user profile photo settings in Microsoft 365 using Microsoft Graph
+#  Manage user profile photo settings in Microsoft 365 by using Microsoft Graph
 
-Using the Microsoft Graph API, Global Administrators can get and
-configure photo update settings in an organization. This includes
-controlling the environment where user profile photos can be updated
-within the organization and which roles are required to update profile
+Using the Microsoft Graph API, Global Administrators can get and configure photo update settings in an organization. This includes controlling the environment where user profile photos can be updated within the organization and which roles are required in order to update profile
 user photos within the organization.
 
-## Configure the User Profile Photo environment 
+## Configure the user profile photo environment 
 
-For tenants that have a hybrid identity, user accounts can be synced
-from on-premises Active Directory to the cloud via [Directory
-Sync](https://learn.microsoft.com/en-us/azure/active-directory/architecture/sync-directory). To determine whether you have a hybrid identity see [here](https://learn.microsoft.com/en-us/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide). 
-For such hybrid tenants, Global Administrators can configure whether
-such user profile photo updates from on-premises should take effect
-within the cloud or whether user profile photo updates within the
-organization are to be made from the cloud only.
+For hybrid tenants, user accounts can be synced from on-premises Microsoft Entra ID to the cloud via [directory sync](/azure/active-directory/architecture/sync-directory). To determine whether you have a hybrid environment, see [Determine your identity model](/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide). For hybrid tenants, Global Administrators can configure whether user profile photo updates made on-premises sync to the cloud, or whether user profile photo updates are made from the cloud only.
 
-Configuration of user profile photo updates does not impact other user
-account properties.  Also, configuring of the environment where new
-updates can be performed does not affect existing user profile photos
-(neither cloud nor on-premises user profile photos). 
+Configuration of user profile photo updates does not impact other user account properties. Also, this configuration does not affect existing user profile photos in the cloud or on-premises.
 
-### Cloud 
+### Cloud environment
 
-Hybrid tenants that select cloud as their user profile photo master will
-not have on-premises user profile photos synced to the cloud. User
-profile photos can be updated through Entra ID or Microsoft Graph, as
-described in
-[this](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/change-user-profile-photos)
-document. For tenants that select this configuration, an additional
-option to disable user profile photo updates is available. 
+Hybrid tenants that use the cloud for user profile photos don't sync on-premises user profile photos to the cloud. User profile photos can be updated through Entra ID or Microsoft Graph; for more information, see
+[Change user profile photos](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/change-user-profile-photos). For tenants that select this configuration, an additional option to disable user profile photo updates is available. 
 
-*Note: Configuring this option does not remove the on-premises photos
-stored in Active Directory or sync the cloud photos to on-premises. Once
-this option has been selected, tenant admins are advised to remove the
-Active Directory user profile photos using Exchange PowerShell cmdlets,
-as described in
-[this](https://learn.microsoft.com/en-us/powershell/module/exchange/remove-userphoto)
-document. * 
+Configuring this option does not remove on-premises photos that are stored in Entra ID or sync cloud photos to on-premises. If you select this option, tenant admins should remove the
+Entra ID user profile photos by using Exchange PowerShell cmdlets. For more information, see [Remove-UserPhoto](/powershell/module/exchange/remove-userphoto)
+document.  
 
- 
-
-### On-premises  
+### On-premises environment
 
 Hybrid tenants that select on-premises as their user profile photo
 master will continue to have user profile photos synced from on-premises
