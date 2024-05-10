@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
-# externalMeetingRegistration resource type (deprecated)
+# externalMeetingRegistration resource type
 
 Namespace: microsoft.graph
 

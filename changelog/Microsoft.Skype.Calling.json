@@ -9,14 +9,6 @@
           "ChangeType": "Deprecation",
           "Description": "Deprecated the [meetingRegistration](https://learn.microsoft.com/graph/api/resources/meetingregistration?view=graph-rest-beta) resource and supported methods.",
           "Target": "meetingRegistration"
-        },
-        {
-          "Id": "846c3719-761a-4b27-9873-84dfe3ac1602",
-          "ApiChange": "Resource",
-          "ChangedApiName": "externalMeetingRegistration",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [externalMeetingRegistration](https://learn.microsoft.com/en-us/graph/api/resources/externalmeetingregistration?view=graph-rest-beta) resource and supported methods.",
-          "Target": "externalMeetingRegistration"
         }
       ],
       "Id": "846c3719-761a-4b27-9873-84dfe3ac1602",

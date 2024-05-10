@@ -18476,7 +18476,7 @@ items:
                         href: api/calltranscript-delta.md
                       - name: List transcripts by organizer
                         href: api/onlinemeeting-getalltranscripts.md
-                  - name: External meeting registration (deprecated)
+                  - name: External meeting registration
                     href: resources/externalmeetingregistration.md
                     items:
                       - name: Create
