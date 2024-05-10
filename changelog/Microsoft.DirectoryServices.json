@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "64b291a7-719d-4f30-b64e-07ef9d7fbbae",
+          "ApiChange": "Permission",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Change",
+          "Description": "Updated the delegated and application permissions in [Delete permissionGrantPreApprovalPolicy](https://learn.microsoft.com/graph/api/permissiongrantpreapprovalpolicy-delete?view=graph-rest-beta) to replace `PermissionGrantPolicy.ReadWrite.All` with `Policy.ReadWrite.PermissionGrant`. `PermissionGrantPolicy.ReadWrite.All` isn't a valid permission for this API and using it results in a `403 Forbidden` error.",
+          "Target": "permissionGrantPreApprovalPolicy"
+        }
+      ],
+      "Id": "64b291a7-719d-4f30-b64e-07ef9d7fbbae",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-09T16:45:20.304139Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a890c0f1-c9d0-45a3-a5dc-48497cd8367d",
           "ApiChange": "Method",
           "ChangedApiName": "POST",
@@ -9415,7 +9433,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "policies,this blog post,activityBasedTimeoutPolicies,claimsMappingPolicies,homeRealmDiscoveryPolicies,tokenLifetimePolicies",
           "ChangeType": "Change",
-          "Description": "Updated the existing policies collection with a [policies](https://learn.microsoft.com/en-us/graph/api/resources/policy-overview?view=graph-rest-beta) URL segment. Typed policy resources are now grouped under the policies segment as described in [this blog post](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). This update adds four typed policy resources: <br> <li>[activityBasedTimeoutPolicies](https://learn.microsoft.com/en-us/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](https://learn.microsoft.com/en-us/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](https://learn.microsoft.com/en-us/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) and </li> <li>[tokenLifetimePolicies](https://learn.microsoft.com/en-us/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li>",
+          "Description": "Updated the existing policies collection with a [policies](https://learn.microsoft.com/en-us/graph/api/resources/policy-overview?view=graph-rest-beta) URL segment. Typed policy resources are now grouped under the policies segment. This update adds four typed policy resources: <br> <li>[activityBasedTimeoutPolicies](https://learn.microsoft.com/en-us/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](https://learn.microsoft.com/en-us/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](https://learn.microsoft.com/en-us/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) and </li> <li>[tokenLifetimePolicies](https://learn.microsoft.com/en-us/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li>",
           "Target": "policies,this blog post,activityBasedTimeoutPolicies,claimsMappingPolicies,homeRealmDiscoveryPolicies,tokenLifetimePolicies"
         },
         {
@@ -9533,7 +9551,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "policies,this blog post,activityBasedTimeoutPolicies,claimsMappingPolicies,homeRealmDiscoveryPolicies,tokenLifetimePolicies",
           "ChangeType": "Change",
-          "Description": "Updated the existing policies collection with a [policies](https://learn.microsoft.com/en-us/graph/api/resources/policy-overview?view=graph-rest-beta) URL segment. Typed policy resources are now grouped under the policies segment as described in [this blog post](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). This update adds four typed policy resources: <br> <li>[activityBasedTimeoutPolicies](https://learn.microsoft.com/en-us/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](https://learn.microsoft.com/en-us/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](https://learn.microsoft.com/en-us/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) and </li> <li>[tokenLifetimePolicies](https://learn.microsoft.com/en-us/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li>",
+          "Description": "Updated the existing policies collection with a [policies](https://learn.microsoft.com/en-us/graph/api/resources/policy-overview?view=graph-rest-beta) URL segment. Typed policy resources are now grouped under the policies segment. This update adds four typed policy resources: <br> <li>[activityBasedTimeoutPolicies](https://learn.microsoft.com/en-us/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](https://learn.microsoft.com/en-us/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](https://learn.microsoft.com/en-us/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) and </li> <li>[tokenLifetimePolicies](https://learn.microsoft.com/en-us/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li>",
           "Target": "policies,this blog post,activityBasedTimeoutPolicies,claimsMappingPolicies,homeRealmDiscoveryPolicies,tokenLifetimePolicies"
         },
         {
