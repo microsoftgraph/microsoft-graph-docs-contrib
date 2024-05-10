@@ -28,7 +28,7 @@ Represents the data collected and reported by wifi device or badge swiping devic
 | badgeIn          | An event that a user enters a place by swiping the badge. |
 | badgeOut        | An event that a user exits a place by swiping the badge. |
 | wifiConnect  | An event that a user connects to the wifi device. |
-| wifiDisconnect          | An event that a user disconnects from the wifi device. |
+| wifiDisconnect          | An event in which a user disconnects from the wifi device. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 ## JSON representation
 The following JSON representation shows the resource type.
