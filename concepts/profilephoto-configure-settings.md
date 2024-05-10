@@ -1,6 +1,6 @@
 ---
 title: "Manage user profile photo settings in Microsoft 365 by using Microsoft Graph"
-description: "How admins can set where photos can be changed by the user"
+description: "Learn how to configure where and how user profile photos are managed in your orgnaization."
 author: "shivanioslo"
 ms.author: "shivansingh"
 ms.topic: concept-article
@@ -9,8 +9,8 @@ ms.localizationpriority: medium
 
 #  Manage user profile photo settings in Microsoft 365 by using Microsoft Graph
 
-Using the Microsoft Graph API, Global Administrators can get and configure photo update settings in an organization. This includes controlling the environment where user profile photos can be updated within the organization and which roles are required in order to update profile
-user photos within the organization.
+Using the Microsoft Graph API, Global Administrators can get and configure photo update settings in an organization. This includes controlling the environment where user profile photos can be updated within the organization and which roles are required to update profile
+user photos.
 
 ## Configure the user profile photo environment 
 
@@ -21,15 +21,15 @@ Configuration of user profile photo updates does not impact other user account p
 ### Cloud environment
 
 Hybrid tenant environments where user profile photos are stored in the cloud don't sync on-premises profile photos to the cloud. User profile photos can be updated through Entra ID or Microsoft Graph; for more information, see
-[Change user profile photos](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/change-user-profile-photos). For tenants that use this configuration, an additional option to disable user profile photo updates is available. 
+[Change user profile photos](/microsoft-365/admin/add-users/change-user-profile-photos). For tenants that use this configuration, an option to disable user profile photo updates is available. 
 
 Configuring this option does not remove on-premises photos that are stored in Entra ID or sync cloud photos to on-premises. If you select this option, tenant admins should remove the
 Entra ID user profile photos by using Exchange PowerShell cmdlets. For more information, see [Remove-UserPhoto](/powershell/module/exchange/remove-userphoto).  
 
 ### On-premises environment
 
-Hybrid tenants that store user profile photos on-premises will continue to sync user profile photos from on-premises to the cloud, and user profile photo updates will be visible
-across Microsoft 365 products. Updates through cloud services will be disabled for both admins and users. The option to disable user profile photos is not available when the photos are stored
+Hybrid tenants that store user profile photos on-premises continue to sync user profile photos from on-premises to the cloud, and user profile photo updates are visible
+across Microsoft 365 products. Updates through cloud services are disabled for both admins and users. The option to disable user profile photos is not available when the photos are stored
 on-premises.
 
 > [!Important]
