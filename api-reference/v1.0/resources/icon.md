@@ -18,8 +18,8 @@ Represents an icon in a cell in an Excel workbook.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Icon](../api/icon-get.md) | [Icon](icon.md) |Read properties and relationships of icon object.|
-|[Update](../api/icon-update.md) | [Icon](icon.md)	|Update Icon object. |
+|[Get](../api/icon-get.md) | [workbookIcon](icon.md) |Read properties and relationships of icon object.|
+|[Update](../api/icon-update.md) | [workbookIcon](icon.md)	|Update Icon object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -28,7 +28,7 @@ Represents an icon in a cell in an Excel workbook.
 |set|string|Represents the set that the icon is part of. The possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation

@@ -1,5 +1,5 @@
 ---
-title: "Update icon"
+title: "Update workbookIcon"
 description: "Update the properties of icon object."
 ms.localizationpriority: medium
 author: "ruoyingl"
@@ -7,11 +7,11 @@ ms.subservice: excel
 doc_type: apiPageType
 ---
 
-# Update icon
+# Update workbookIcon
 
 Namespace: microsoft.graph
 
-Update the properties of icon object.
+Update the properties of an icon object in a workbook.
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -36,7 +36,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
@@ -45,9 +45,9 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [Icon](../resources/icon.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookIcon](../resources/icon.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -63,7 +63,7 @@ Content-type: application/json
   "index": 99
 }
 ```
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
