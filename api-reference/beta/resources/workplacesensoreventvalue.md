@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the data collected and reported by wifi device or badge swiping device
+Represents the data collected and reported by a Wi-Fi or badge-swiping device.
 
 ## Properties
 
