@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.models.security.SubcategoryTemplate subcategoryTemplate = new com.microsoft.graph.beta.models.security.SubcategoryTemplate();
-subcategoryTemplate.setOdataType("#microsoft.graph.security.subCategoryTemplate");
+subcategoryTemplate.setOdataType("#microsoft.graph.security.subcategoryTemplate");
 subcategoryTemplate.setDisplayName("Vendor Invoice");
 com.microsoft.graph.models.security.SubcategoryTemplate result = graphClient.security().labels().categories().byCategoryTemplateId("{categoryTemplate-id}").subcategories().post(subcategoryTemplate);
 
