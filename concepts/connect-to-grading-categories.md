@@ -14,7 +14,7 @@ Teachers can use grading categories to weight assignments in the class grade. Fo
 
 Assignments contribute to their grading category in proportion to their point values, and their grading category modifies their contribution to the final grade. For example, consider a class with two assignments in a grading category that contributes 50% of the class grade. If the first assignment has 10 points, and the second has 40 points, then the assignments contribute 5% and 20%, respectively, to the total grade.
 
-Grading categories are defined on the class's settings. Every assignment that contributes to the final average grade needs to have a grading category. The total weights of grading categories should always add upto 100 during create, update or delete operations as shown in the following API's. 
+Grading categories are defined on the class's settings. Every assignment that contributes to the final average grade needs to have a grading category. The total weights of grading categories must always add up to 100 during create, update or delete operations. 
 
 > [!NOTE]
 > You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
@@ -308,7 +308,7 @@ HTTP/1.1 204 No Content
 
 When you try to delete a grading category using the delta payload without replacing it with other grading category to make the sum of all grading categories to 100, the error displayed in response is shown in this section.
 
-> Note: The assignments with the deleted grading category will retain the grading but teachers will not be able to assign the deleted grading category to other assignments.
+> **Note**: When you delete a grading category, the assignments with the grading category continue to contribute to the final grade as if the category were present, but teachers will not be able to assign the deleted grading category to other assignments.
 
 ```http
 PATCH /education/classes/{classId}/assignmentSettings
