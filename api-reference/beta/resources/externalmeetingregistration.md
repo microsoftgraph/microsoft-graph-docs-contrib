@@ -6,11 +6,14 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
-# externalMeetingRegistration resource type
+# externalMeetingRegistration resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> [PM content placeholder]
 
 Represents external registration details of an [onlineMeeting](../resources/onlinemeeting.md).
 

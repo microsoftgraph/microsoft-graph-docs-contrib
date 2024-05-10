@@ -7,11 +7,14 @@ ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# meetingRegistration resource type
+# meetingRegistration resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> [PM content placeholder]
 
 Contains registration details of an online meeting, such as a [Microsoft Teams Webinar](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3). 
 

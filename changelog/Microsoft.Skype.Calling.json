@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "846c3719-761a-4b27-9873-84dfe3ac1602",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingRegistration",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [meetingRegistration](https://learn.microsoft.com/graph/api/resources/meetingregistration?view=graph-rest-beta) resource and supported methods.",
+          "Target": "meetingRegistration"
+        },
+        {
+          "Id": "846c3719-761a-4b27-9873-84dfe3ac1602",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalMeetingRegistration",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [externalMeetingRegistration](https://learn.microsoft.com/en-us/graph/api/externalmeetingregistration?view=graph-rest-beta) resource and supported methods.",
+          "Target": "externalMeetingRegistration"
+        }
+      ],
+      "Id": "846c3719-761a-4b27-9873-84dfe3ac1602",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-10T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1c97b312-73da-4ebc-bb0c-7ab74d883bd9",
           "ApiChange": "Relationship",
           "ChangedApiName": "registrationConfiguration",

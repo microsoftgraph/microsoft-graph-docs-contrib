@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# meetingRegistrationBase resource type
+# meetingRegistrationBase resource type (deprecated)
 
 Namespace: microsoft.graph
 
