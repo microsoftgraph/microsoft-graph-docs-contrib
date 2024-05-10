@@ -79,7 +79,6 @@ The following example shows how to call this API.
 #### Request
 The following example shows the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -207,7 +206,6 @@ Content-Type: application/json
 ```
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -399,7 +397,6 @@ Content-Type: application/json
 ```
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
