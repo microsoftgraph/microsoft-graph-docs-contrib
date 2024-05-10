@@ -1,6 +1,6 @@
 ---
 title: "topWorkflowsInsightsSummary resource type"
-description: "Represents a summary of top workflows ran within a tenant."
+description: "Represents a summary of the workflows processed the most within a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The topWorkflowsInsightSummary represents a summary of the top workflows ran within a tenant, and its run history. Total, failed, and successful run and processing history are provided.
+The topWorkflowsInsightSummary represents a summary of the workflows processed the most, which are called top workflows, within a tenant. Workflow details are provided along with the specific workflow's total, failed, and successful run and processing history.
 
 ## Properties
 
