@@ -66,6 +66,10 @@ The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups
+
+{
+    "displayName": "New Group"
+}
 ```
 
 # [C#](#tab/csharp)
@@ -102,13 +106,6 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 ---
 
-In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
-
-```json
-{
-    "displayName": "New Group"
-}
-```
 
 ### Response
 
