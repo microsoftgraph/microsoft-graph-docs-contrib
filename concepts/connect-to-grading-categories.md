@@ -14,7 +14,7 @@ Teachers can use grading categories to weight assignments in the class grade. Fo
 
 Assignments contribute to their grading category in proportion to their point values, and their grading category modifies their contribution to the final grade. For example, consider a class with two assignments in a grading category that contributes 50% of the class grade. If the first assignment has 10 points, and the second has 40 points, then the assignments contribute 5% and 20%, respectively, to the total grade.
 
-Grading categories are defined on the class's settings. Every assignment that contributes to the final average grade needs to have a grading category. The total weights of grading categories must always add up to 100 during create, update or delete operations. 
+Grading categories are defined on the class's settings. Every assignment that contributes to the final average grade needs to have a grading category. The total weights of grading categories must always add up to 100 during create, update, or delete operations. 
 
 > [!NOTE]
 > You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
@@ -136,7 +136,7 @@ HTTP/1.1 204 No Content
 
 You can change the details of a grading category, like its display name or weight. You can also delete one grading category and replace its contribution with an existing or new grading category. This section shows you how to update one or more grading categories.
 
-- [Update single gradingCategory](/graph/api/educationgradingcategory-update): This is used to update a single gradingCategory.
+- [Update single gradingCategory](/graph/api/educationgradingcategory-update): This API is used to update a single gradingCategory.
 
 ### Example 1: Update a single grading category
 
