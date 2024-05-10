@@ -58,7 +58,7 @@ If successful, this API returns a `202 Accepted` response that contains a link t
 
 ### Example 1: Delegated permissions
 
-Here's an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
+The following example shows a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
 #### Request
 
@@ -74,7 +74,7 @@ Content-Type: application/json
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description"
+  "description": "My Sample Team's Description"
 }
 ```
 
@@ -132,7 +132,9 @@ Content-Length: 0
 
 ### Example 2: Application permissions
 
-Here's an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+The following example shows a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+
+>**Note:** You can only specify a single member as the owner in this scenario.
 
 #### Request
 <!-- markdownlint-disable MD025 -->
