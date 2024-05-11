@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the list of all [virtualEventPresenter](../resources/virtualeventpresenter.md) objects associated with a virtual event.
 
-Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md), [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
