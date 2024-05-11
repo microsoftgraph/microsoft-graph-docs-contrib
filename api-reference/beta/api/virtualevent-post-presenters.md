@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object on a virtual event.
 
-Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md), [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,9 +36,17 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+To create a presenter for a town hall:
+
 ``` http
-POST /solutions/virtualEvents/webinars/{id}/presenters
-POST /solutions/virtualEvents/townhalls/{id}/presenters
+POST /solutions/virtualEvents/townhalls/{townhallId}/presenters
+```
+
+To create a presenter for a webinar:
+
+``` http
+POST /solutions/virtualEvents/webinars/{webinarId}/presenters
 ```
 
 ## Request headers
