@@ -7,11 +7,14 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: setCloudPcReviewStatus
+# managedDevice: setCloudPcReviewStatus (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [reprovision](../api/cloudpc-setreviewstatus.md) API.
 
 Set the review status of a specific Cloud PC device. Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious. After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
