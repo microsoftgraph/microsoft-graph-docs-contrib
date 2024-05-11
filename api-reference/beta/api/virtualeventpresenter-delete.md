@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) from a virtual event.
 
-Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md), [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,9 +36,17 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+To delete a presenter from a town hall:
+
+``` http
+DELETE /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
+```
+
+To delete a presenter from a webinar:
+
 ``` http
 DELETE /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
-DELETE /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
 ```
 
 ## Request headers
