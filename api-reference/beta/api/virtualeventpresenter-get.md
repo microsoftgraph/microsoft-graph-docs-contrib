@@ -1,5 +1,5 @@
 ---
-title: "Get presenter"
+title: "Get virtualEventPresenter"
 description: "Read the properties and relationships of a virtualEventPresenter object."
 author: "frankpeng7"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get presenter
+# Get virtualEventPresenter
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
