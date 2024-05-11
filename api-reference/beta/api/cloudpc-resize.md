@@ -70,6 +70,7 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}/resize
 Content-Type: application/json
+
 {
   "targetServicePlanId": "30d0e128-de93-41dc-89ec-33d84bb662a0"
 }
