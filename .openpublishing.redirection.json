@@ -12,172 +12,172 @@
         },
         {
             "source_path": "api-reference/v1.0/resources/nameditem.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbooknameditem.md",
+            "redirect_url": "/graph/api/resources/workbooknameditem",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/table.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbooktable.md",
+            "redirect_url": "/graph/api/resources/workbooktable",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/worksheet.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookworksheet.md",
+            "redirect_url": "/graph/api/resources/workbookworksheet",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chart.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchart.md",
+            "redirect_url": "/graph/api/resources/workbookchart",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartaxes.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartaxes.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxes",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartdatalabels.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartdatalabels.md",
+            "redirect_url": "/graph/api/resources/workbookchartdatalabels",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartareaformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartareaformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartareaformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartlegend.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartlegend.md",
+            "redirect_url": "/graph/api/resources/workbookchartlegend",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartseries.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartseries.md",
+            "redirect_url": "/graph/api/resources/workbookchartseries",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/charttitle.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookcharttitle.md",
+            "redirect_url": "/graph/api/resources/workbookcharttitle",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartfill.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartfill.md",
+            "redirect_url": "/graph/api/resources/workbookchartfill",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartfont.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartfont.md",
+            "redirect_url": "/graph/api/resources/workbookchartfont",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartaxis.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartaxis.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxis",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartaxisformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartaxisformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxisformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartgridlines.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartgridlines.md",
+            "redirect_url": "/graph/api/resources/workbookchartgridlines",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartaxistitle.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartaxistitle.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxistitle",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartlineformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartlineformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartlineformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartaxistitleformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartaxistitleformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartaxistitleformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartdatalabelformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartdatalabelformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartdatalabelformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartgridlinesformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartgridlinesformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartgridlinesformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartlegendformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartlegendformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartlegendformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartpoint.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartpoint.md",
+            "redirect_url": "/graph/api/resources/workbookchartpoint",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartpointformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartpointformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartpointformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/chartseriesformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookchartseriesformat.md",
+            "redirect_url": "/graph/api/resources/workbookchartseriesformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/charttitleformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookcharttitleformat.md",
+            "redirect_url": "/graph/api/resources/workbookcharttitleformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/filter.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookfilter.md",
+            "redirect_url": "/graph/api/resources/workbookfilter",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/range.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookrange.md",
+            "redirect_url": "/graph/api/resources/workbookrange",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/rangeformat.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookrangeformat.md",
+            "redirect_url": "/graph/api/resources/workbookrangeformat",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/rangesort.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookrangesort.md",
+            "redirect_url": "/graph/api/resources/workbookrangesort",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/rangeborder.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookrangeborder.md",
+            "redirect_url": "/graph/api/resources/workbookrangeborder",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/rangefill.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookrangefill.md",
+            "redirect_url": "/graph/api/resources/workbookrangefill",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/rangefont.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookrangefont.md",
+            "redirect_url": "/graph/api/resources/workbookrangefont",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/tablesort.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbooktablesort.md",
+            "redirect_url": "/graph/api/resources/workbooktablesort",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference/v1.0/resources/worksheetprotection.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/workbookworksheetprotection.md",
+            "redirect_url": "/graph/api/resources/workbookworksheetprotection",
             "redirect_document_id": true
         }
     ]
