@@ -98,3 +98,4 @@ With Microsoft 365 certification, you affirm your dedication to adhering to secu
 
 * [Overview of Microsoft Graph permissions](permissions-overview.md)
 * [Microsoft Graph permissions reference](permissions-reference.md)
+* [Resource-specific consent for your Teams app](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
