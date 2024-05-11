@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Create a new [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.
+Create a new [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -115,6 +115,7 @@ The following table shows the properties that are required when you create the i
 |minimumWipeSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |allowedIosDeviceModels|String|Semicolon seperated list of device models allowed, as a string, for the managed app to work.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfAccountIsClockedOut|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or warn, if the user is clocked out (non-working time). Possible values are: `block`, `wipe`, `warn`.|
 |thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected. This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False.|
 |disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.|
@@ -129,7 +130,7 @@ The following table shows the properties that are required when you create the i
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object in the response body.
 
 ## Example
 
@@ -138,7 +139,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections
 Content-type: application/json
-Content-length: 3838
+Content-length: 3883
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -216,6 +217,7 @@ Content-length: 3838
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
+  "appActionIfAccountIsClockedOut": "wipe",
   "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
@@ -238,7 +240,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4010
+Content-Length: 4055
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -319,6 +321,7 @@ Content-Length: 4010
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
+  "appActionIfAccountIsClockedOut": "wipe",
   "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,

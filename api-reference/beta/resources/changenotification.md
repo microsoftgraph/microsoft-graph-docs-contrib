@@ -4,7 +4,7 @@ description: "Represents the change notification sent to the subscriber."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ---
 
 # changeNotification resource type

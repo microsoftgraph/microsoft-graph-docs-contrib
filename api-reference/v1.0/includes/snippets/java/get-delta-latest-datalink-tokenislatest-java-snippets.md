@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-ListItem result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").items().byListItemId("{listItem-id}").get(requestConfiguration -> {
+var result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").items().delta().get(requestConfiguration -> {
 	requestConfiguration.queryParameters.token = "latest";
 });
 
