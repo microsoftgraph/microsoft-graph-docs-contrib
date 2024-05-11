@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.
 
-Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md), [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
