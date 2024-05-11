@@ -309,27 +309,6 @@ items:
                 href: api/chat-get.md
               - name: List chats for user
                 href: api/chat-list.md
-              - name: Settings
-                items:
-                  - name: License details
-                    href: resources/licensedetails.md
-                    items:
-                    - name: Get
-                      href: api/licenseDetails-getteamslicensingdetails.md
-                  - name: Organization settings
-                    items:
-                    - name: Teamwork
-                      href: resources/teamwork.md
-                      items:
-                      - name: Get
-                        href: api/teamwork-get.md
-                  - name: User settings
-                    items:
-                    - name: User teamwork
-                      href: resources/userteamwork.md
-                      items:
-                        - name: Get
-                          href: api/userteamwork-get.md
           - name: To-do task
             items:
               - name: To-do task
@@ -403,26 +382,6 @@ items:
                 href: api/user-list-joinedteams.md
               - name: List associated teams
                 href: api/associatedteaminfo-list.md
-              - name: Group setting
-                href: resources/groupsetting.md
-                items:
-                  - name: Create
-                    href: api/group-post-settings.md
-                  - name: Get
-                    href: api/groupsetting-get.md
-                  - name: List
-                    href: api/group-list-settings.md
-                  - name: Update
-                    href: api/groupsetting-update.md
-                  - name: Delete
-                    href: api/groupsetting-delete.md
-              - name: Group setting template
-                href: resources/groupsettingtemplate.md
-                items:
-                  - name: List group setting templates
-                    href: api/groupsettingtemplate-list.md
-                  - name: Get group setting template
-                    href: api/groupsettingtemplate-get.md
               - name: List lifecycle policies
                 href: api/group-list-grouplifecyclepolicies.md
               - name: List photos
@@ -1320,19 +1279,23 @@ items:
                   - name: Get
                     href: api/cloudclipboarditem-get.md
               - name: Windows settings
-                href: resources/windowssetting.md
                 items:
-                  - name: List
-                    href: api/usersettings-list-windows.md
-                  - name: Get
-                    href: api/windowssetting-get.md
-              - name: Windows setting instance
-                href: resources/windowssettinginstance.md
-                items:
-                  - name: List
-                    href: api/windowssetting-list-instances.md
-                  - name: Get
-                    href: api/windowssettinginstance-get.md
+                  - name: Overview
+                    href: resources/windows-setting-api-overview.md
+                  - name: Windows setting
+                    href: resources/windowssetting.md
+                    items:
+                      - name: List
+                        href: api/usersettings-list-windows.md
+                      - name: Get
+                        href: api/windowssetting-get.md
+                  - name: Windows setting instance
+                    href: resources/windowssettinginstance.md
+                    items:
+                      - name: List
+                        href: api/windowssetting-list-instances.md
+                      - name: Get
+                        href: api/windowssettinginstance-get.md
       - name: Customer booking
         displayName: Bookings, Microsoft Bookings
         items:
@@ -4809,37 +4772,29 @@ items:
           - name: Assignment
             href: resources/educationassignment.md
             items:
-              - name: Create assignment
+              - name: Create
                 href: api/educationclass-post-assignment.md
-              - name: Get assignment
+              - name: Get
                 href: api/educationassignment-get.md
-              - name: Update assignment
+              - name: Update
                 href: api/educationassignment-update.md
-              - name: Delete assignment
+              - name: Delete
                 href: api/educationassignment-delete.md
+              - name: Publish
+                href: api/educationassignment-publish.md
               - name: Set up assignment resources folder
                 href: api/educationassignment-setupresourcesfolder.md
               - name: Set up assignment feedback resources folder
                 href: api/educationassignment-setupfeedbackresourcesfolder.md
-              - name: Publish assignment
-                href: api/educationassignment-publish.md
-              - name: List assignment resources
-                href: api/educationassignment-list-resources.md
-              - name: Create assignment resource
-                href: api/educationassignment-post-resource.md
-              - name: Get assignment resource
-                href: api/educationassignmentresource-get.md
-              - name: Delete resource from assignment
-                href: api/educationassignmentresource-delete.md
               - name: List submissions for assignment
                 href: api/educationassignment-list-submissions.md
               - name: Get rubric attached to assignment
                 href: api/educationassignment-get-rubric.md
               - name: List categories
                 href: api/educationassignment-list-categories.md
-              - name: Add category
+              - name: Attach category to assignment
                 href: api/educationassignment-post-categories.md
-              - name: Remove category
+              - name: Remove category from assignment
                 href: api/educationassignment-remove-category.md
               - name: Attach rubric to assignment
                 href: api/educationassignment-put-rubric.md
@@ -4847,16 +4802,25 @@ items:
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
                 href: api/educationassignment-delta.md
-              - name: Add grading category
+              - name: Attach grading category to assignment
                 href: api/educationassignment-post-gradingcategory.md
-              - name: Update grading category
-                href: api/educationgradingcategory-update.md
-              - name: Remove grading category
+              - name: Remove grading category from assignment
                 href: api/educationassignment-delete-gradingcategory.md
               - name: Activate assignment
                 href: api/educationassignment-activate.md
               - name: Deactivate assignment
                 href: api/educationassignment-deactivate.md
+          - name: Assignment resource
+            href: resources/educationassignmentresource.md
+            items:
+              - name: List
+                href: api/educationassignment-list-resources.md
+              - name: Create
+                href: api/educationassignment-post-resource.md
+              - name: Get
+                href: api/educationassignmentresource-get.md
+              - name: Delete from assignment
+                href: api/educationassignmentresource-delete.md             
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -5214,7 +5178,7 @@ items:
         items:
           - name: Overview
             displayName: Azure AD, Microsoft identity platform, Identity and access
-            href: resources/azure-ad-overview.md
+            href: resources/identity-network-access-overview.md
           - name: Directory management
             items:
               - name: Administrative unit
@@ -5435,6 +5399,26 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+              - name: Group setting
+                href: resources/groupsetting.md
+                items:
+                  - name: Create
+                    href: api/group-post-settings.md
+                  - name: Get
+                    href: api/groupsetting-get.md
+                  - name: List
+                    href: api/group-list-settings.md
+                  - name: Update
+                    href: api/groupsetting-update.md
+                  - name: Delete
+                    href: api/groupsetting-delete.md
+              - name: Group setting template
+                href: resources/groupsettingtemplate.md
+                items:
+                  - name: List group setting templates
+                    href: api/groupsettingtemplate-list.md
+                  - name: Get group setting template
+                    href: api/groupsettingtemplate-get.md
               - name: On-premises directory synchronization
                 href: resources/onpremisesdirectorysynchronization.md
                 items:
@@ -6378,6 +6362,34 @@ items:
                         href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
                       - name: Get authentication method modes
                         href: api/authenticationmethodmodedetail-get.md
+              - name: Authentication event listeners
+                href: resources/authenticationeventlistener.md
+                items:
+                - name: List
+                  href: api/identitycontainer-list-authenticationeventlisteners.md
+                - name: Create
+                  href: api/identitycontainer-post-authenticationeventlisteners.md
+                - name: Get
+                  href: api/authenticationeventlistener-get.md
+                - name: Update
+                  href: api/authenticationeventlistener-update.md
+                - name: Delete
+                  href: api/authenticationeventlistener-delete.md
+              - name: Custom authentication extension
+                href: resources/customauthenticationextension.md
+                items:
+                - name: On token issuance start
+                  href: resources/ontokenissuancestartcustomextension.md
+                - name: List
+                  href: api/identitycontainer-list-customauthenticationextensions.md
+                - name: Create
+                  href: api/identitycontainer-post-customauthenticationextensions.md
+                - name: Get
+                  href: api/customauthenticationextension-get.md
+                - name: Update
+                  href: api/customauthenticationextension-update.md
+                - name: Delete
+                  href: api/customauthenticationextension-delete.md
               - name: Certificate-based auth configuration
                 displayName: CBA
                 href: resources/certificatebasedauthconfiguration.md
@@ -6663,6 +6675,63 @@ items:
                 items:
                   - name: Create invitation
                     href: api/invitation-post.md
+              - name: Multitenant organization
+                items:
+                - name: Overview
+                  displayName: Multitenant organization, MTO
+                  href: resources/multitenantorganization-overview.md
+                - name: Multitenant organization
+                  items:
+                  - name: Multitenant organization
+                    href: resources/multitenantorganization.md
+                  - name: Create
+                    href: api/tenantrelationship-put-multitenantorganization.md
+                  - name: Get
+                    href: api/multitenantorganization-get.md
+                  - name: Update
+                    href: api/multitenantorganization-update.md
+                - name: Tenant
+                  items:
+                  - name: Tenant
+                    href: resources/multitenantorganizationmember.md
+                  - name: List
+                    href: api/multitenantorganization-list-tenants.md
+                  - name: Add
+                    href: api/multitenantorganization-post-tenants.md
+                  - name: Get
+                    href: api/multitenantorganizationmember-get.md
+                  - name: Update
+                    href: api/multitenantorganizationmember-update.md
+                  - name: Remove
+                    href: api/multitenantorganization-delete-tenants.md
+                - name: Join request
+                  items:
+                  - name: Join request
+                    href: resources/multitenantorganizationjoinrequestrecord.md
+                  - name: Get
+                    href: api/multitenantorganizationjoinrequestrecord-get.md
+                  - name: Update
+                    href: api/multitenantorganizationjoinrequestrecord-update.md
+                - name: Partner configuration template
+                  items:
+                  - name: Partner configuration template
+                    href: resources/multitenantorganizationpartnerconfigurationtemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+                - name: Identity sync policy template
+                  items:
+                  - name: Identity sync policy template
+                    href: resources/multitenantorganizationidentitysyncpolicytemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
               - name: Organizational branding
                 href: resources/organizationalbranding.md
                 items:
@@ -8217,7 +8286,7 @@ items:
                     href: api/informationprotection-post-threatassessmentrequests.md
                   - name: Get
                     href: api/threatassessmentrequest-get.md
-          - name: Legacy alert
+          - name: Legacy alert (deprecated)
             items:
               - name: Alert
                 href: resources/alert.md
@@ -8251,17 +8320,17 @@ items:
                 - name: File plan descriptor set
                   href: resources/security-fileplandescriptor.md
                 - name: Applied category
-                  href: resources/security-appliedcategory.md
+                  href: resources/security-fileplanappliedcategory.md
                 - name: Authority
-                  href: resources/security-authority.md
+                  href: resources/security-fileplanauthority.md
                 - name: Citation
-                  href: resources/security-citation.md
+                  href: resources/security-fileplancitation.md
                 - name: Department
-                  href: resources/security-department.md
+                  href: resources/security-fileplandepartment.md
                 - name: File plan reference
                   href: resources/security-fileplanreference.md
                 - name: Subcategory
-                  href: resources/security-subcategory.md
+                  href: resources/security-fileplansubcategory.md
               - name: File plan descriptor templates
                 items:
                 - name: Applied category template
@@ -8710,6 +8779,88 @@ items:
                 href: api/documentsetversion-delete.md
               - name: Restore
                 href: api/documentsetversion-restore.md
+          - name: Pages
+            items:
+              - name: Base site page
+                href: resources/basesitepage.md
+                items:
+                  - name: List
+                    href: api/basesitepage-list.md
+                  - name: Get
+                    href: api/basesitepage-get.md
+                  - name: Delete
+                    href: api/basesitepage-delete.md
+              - name: Site page
+                href: resources/sitepage.md
+                items:
+                  - name: List
+                    href: api/sitepage-list.md
+                  - name: Create
+                    href: api/sitepage-create.md
+                  - name: Get
+                    href: api/sitepage-get.md
+                  - name: Update
+                    href: api/sitepage-update.md
+                  - name: Delete
+                    href: api/basesitepage-delete.md
+                  - name: Publish
+                    href: api/sitepage-publish.md
+                  - name: Horizontal section
+                    items:
+                      - name: Horizontal section
+                        href: resources/horizontalsection.md
+                      - name: List
+                        href: api/horizontalsection-list.md
+                      - name: Create
+                        href: api/sitepage-post-horizontalsection.md
+                      - name: Get
+                        href: api/horizontalsection-get.md
+                      - name: Update
+                        href: api/horizontalsection-update.md
+                      - name: Delete
+                        href: api/horizontalsection-delete.md
+                      - name: Column
+                        items:
+                          - name: Horizontal section column
+                            href: resources/horizontalsectioncolumn.md
+                          - name: List
+                            href: api/horizontalsectioncolumn-list.md
+                          - name: Get
+                            href: api/horizontalsectioncolumn-get.md
+                  - name: Vertical section
+                    items:
+                      - name: Vertical section
+                        href: resources/verticalsection.md
+                      - name: Create
+                        href: api/sitepage-post-verticalsection.md
+                      - name: Get
+                        href: api/verticalsection-get.md
+                      - name: Update
+                        href: api/verticalsection-update.md
+                      - name: Delete
+                        href: api/verticalsection-delete.md
+              - name: Web part
+                items:
+                  - name: Web part
+                    href: resources/webpart.md
+                  - name: Text web part
+                    href: resources/textwebpart.md
+                  - name: Standard web part
+                    href: resources/standardwebpart.md
+                  - name: List
+                    href: api/webpart-list.md
+                  - name: Create
+                    href: api/sitepage-create-webpart.md
+                  - name: Get
+                    href: api/webpart-get.md
+                  - name: Update
+                    href: api/webpart-update.md
+                  - name: Delete
+                    href: api/webpart-delete.md
+                  - name: Get position
+                    href: api/webpart-getposition.md
+                  - name: Get by position
+                    href: api/sitepage-getwebpartsbyposition.md
           - name: Rich long-running operation
             items:
               - name: Rich long-running operation
@@ -9186,6 +9337,27 @@ items:
                         href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
+          - name: Settings
+            items:
+              - name: License details
+                href: resources/licensedetails.md
+                items:
+                  - name: Get
+                    href: api/licenseDetails-getteamslicensingdetails.md
+              - name: Organization settings
+                items:
+                  - name: Teamwork
+                    href: resources/teamwork.md
+                    items:
+                      - name: Get
+                        href: api/teamwork-get.md
+              - name: User settings
+                items:
+                  - name: User teamwork
+                    href: resources/userteamwork.md
+                    items:
+                      - name: Get
+                        href: api/userteamwork-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:

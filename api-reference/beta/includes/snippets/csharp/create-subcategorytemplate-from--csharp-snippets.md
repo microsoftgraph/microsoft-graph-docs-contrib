@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Models.Security;
 
 var requestBody = new SubcategoryTemplate
 {
-	OdataType = "#microsoft.graph.security.subCategoryTemplate",
+	OdataType = "#microsoft.graph.security.subcategoryTemplate",
 	DisplayName = "Vendor Invoice",
 };
 

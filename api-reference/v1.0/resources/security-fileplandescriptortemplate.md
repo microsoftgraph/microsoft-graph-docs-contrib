@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Specifies the properties common to the template resources for file plan descriptors. Base type for each of the template resources: [authorityTemplate](security-authoritytemplate.md), [categoryTemplate](security-categorytemplate.md), [citationTemplate](security-citationtemplate.md), [departmentTemplate](security-departmenttemplate.md), [filePlanReferenceTemplate](security-fileplanreferencetemplate.md), and [subCategoryTemplate](security-subcategorytemplate.md).
+Specifies the properties common to the template resources for file plan descriptors. Base type for each of the template resources: [authorityTemplate](security-authoritytemplate.md), [categoryTemplate](security-categorytemplate.md), [citationTemplate](security-citationtemplate.md), [departmentTemplate](security-departmenttemplate.md), [filePlanReferenceTemplate](security-fileplanreferencetemplate.md), and [subcategoryTemplate](security-subcategorytemplate.md).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -24,7 +24,7 @@ None.
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the filePlanDescriptorTemplate column.|
 |createdDateTime|DateTimeOffset|Represents the date and time in which the filePlanDescriptorTemplate is created.|
 |displayName|String|Unique string that defines a filePlanDescriptorTemplate name.|
-|id|String|Unique ID of the filePlanDecriptorTemplate column. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Unique ID of the filePlanDecriptorTemplate column. Read-only.|
 
 ## Relationships
 None.

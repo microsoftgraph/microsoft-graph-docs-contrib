@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Represents workflows created using Lifecycle Workflows. Workflows, when triggered by execution conditions, automate parts of the lifecycle management process using tasks. These tasks can either be built-in tasks, or a custom task can be called using the custom task extension which integrate with Azure Logic Apps.
 
-You can create up to 50 workflows in a tenant.
+You can create up to 100 workflows in a tenant.
 
 Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 

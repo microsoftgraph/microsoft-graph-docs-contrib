@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.identityGovernance.entitlementManagement.catalogs.catalogs_request_builder import CatalogsRequestBuilder
+from msgraph.generated.identity_governance.entitlement_management.catalogs.catalogs_request_builder import CatalogsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

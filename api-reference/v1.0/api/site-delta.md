@@ -19,7 +19,9 @@ Your application should continue making calls using the **@odata.nextLink** unti
 After you receive all the changes, you can apply them to your local state.
 To monitor future changes, call the **delta** API by using the **@odata.deltaLink** in the previous response.
 
-Deleted sites are returned with the @removed annotation with the reason for removal. Any resources marked as deleted should be removed from your local state.
+Any resources marked as deleted should be removed from your local state.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -229,9 +231,6 @@ Content-type: application/json
             "displayName": "All Company",
             "isPersonalSite": false,
             "id": "bd565af7-7963-4658-9a77-26e11ac73186",
-            "@removed": {
-                "reason": "deleted"
-            },
             "root": {}
         }
     ]

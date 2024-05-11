@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.enroll_assets_post_request_body import EnrollAssetsPostRequestBody
+from msgraph.generated.admin.windows.updates.updatableassets.microsoft_graph_windows_updates_enroll_assets.enroll_assets_post_request_body import EnrollAssetsPostRequestBody
 from msgraph.generated.models.updatable_asset import UpdatableAsset
 from msgraph.generated.models.azure_a_d_device import AzureADDevice
 

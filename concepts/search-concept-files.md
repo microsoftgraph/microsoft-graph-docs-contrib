@@ -348,9 +348,9 @@ You can use KQL in search terms of queries for OneDrive and SharePoint. For exam
 
 - `"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\""` scopes the query to a particular folder within a site.
-- `"query": "contoso AND isDocument=true"` scopes the query to only return documents. Any container (folder, document library) will not be returned.
+- `"query": "contoso AND isDocument=true"` scopes the query to only return documents. Any container (folder, document library) isn't returned.
 - `"query": "contoso contentclass:STS_List_Events"` scopes the query to Calendar events stored in SharePoint.
-- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` scopes the query to filter SharePoint and OneDrive items by date
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` scopes the query to filter SharePoint and OneDrive items by date.
 
 In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
 
@@ -497,11 +497,90 @@ Content-Type: application/json
 }
 ```
 
+## Example 7: Search hidden content
+
+Use the **includeHiddenContent** property to include hidden content, such as archived content and SharePoint Embedded (RaaS), in search results. By default, this property is set to `false`, which prevents hidden content from being returned.
+
+You can also optionally include KQL to scope your query for hidden content to specific content types. For example, in SharePoint, administrators can mark sites as archived. If hidden content isn't available, the search results only include relevant nonhidden content, provided there are no other errors, and return a `200 OK` response code.
+
+The following example shows how to use the **queryTemplate** to scope the query with KQL and the **includeHiddenContent** property to include hidden content. You can also scope queries on SharePoint Embedded content using properties such as **ContainerTypeId**. For more information about container types in SharePoint Embedded, see [SharePoint Embedded Container Types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes).
+
+### Request
+
+```HTTP
+POST /search/query
+Content-Type: application/json
+
+{
+    "requests": [
+        {
+            "entityTypes": [
+                "driveItem"
+            ],
+            "query": {
+                "queryString": "*",
+                "queryTemplate": "({searchTerms} AuthorOWSUSER:TestContoso)"
+            },
+            "sharePointOneDriveOptions": {
+                "includeHiddenContent": true
+            }
+        }
+    ]
+}
+```
+
+### Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "searchTerms": [],
+      "hitsContainers": [
+        {
+          "hits": [
+            {
+              "hitId": "fc78bcb9-8b26-4bba-a250-389def493e0f",
+              "rank": 2,
+              "summary": "<c0>STS</c0>_<c0>View</c0> <c0>MySiteDocumentLibrary</c0> <c0>domain</c0>_<c0>allow</c0>:<c0>ALL</c0><ddd/>",
+              "resource": {
+                "@odata.type": "#microsoft.graph.list",
+                "displayName": "TestContoso - Documents",
+                "id": "fc78bcb9-8b26-4bba-a250-389def493e0f",
+                "createdBy": {
+                  "user": {
+                    "displayName": "System Account"
+                  }
+                },
+                "lastModifiedDateTime": "2024-03-08T18:06:33Z",
+                "name": "Documents",
+                "parentReference": {
+                  "siteId": "contoso-my.sharepoint.com,44776ebc-4ddc-4f7e-afb8-b706c77e0883,a118ff93-1105-40b9-bed0-2cd07cd4b2a4"
+                },
+                "webUrl": "https://contoso-my.sharepoint.com/personal/contoso_onmicrosoft_com/Documents/Forms/All.aspx"
+              }
+            }
+          ],
+          "total": 1,
+          "moreResultsAvailable": false
+        }
+      ]
+    }
+  ],
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)"
+}
+```
+
 ## Known limitations
 
 - When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
 
 - The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
+
+- The **includeHiddenContent** property only works in scenarios with delegated permissions. It isn't applicable for application permissions, where the **includeHiddenContent** property is automatically set to `false`.
 
 ## Next steps
 
