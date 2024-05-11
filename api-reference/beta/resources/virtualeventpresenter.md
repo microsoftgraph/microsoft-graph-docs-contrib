@@ -22,7 +22,7 @@ Represents information about a presenter of a virtual event.
 | [List](../api/virtualevent-list-presenters.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Get the list of all [virtualEventPresenter](../resources/virtualeventpresenter.md) objects of a virtual event. |
 | [Create](../api/virtualevent-post-presenters.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Create a new [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 | [Get](../api/virtualeventpresenter-get.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
-| [Update](../api/virtualeventpresenter-update.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Update details of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
+| [Update](../api/virtualeventpresenter-update.md) | [virtualEventPresenter](../resources/virtualeventpresenter.md) | Update the properties of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 | [Delete](../api/virtualeventpresenter-delete.md) | None | Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) object. |
 
 ## Properties
