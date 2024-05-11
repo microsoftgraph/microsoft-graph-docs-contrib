@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-# [HTTP](#tab/http)
+## HTTP
 <!-- {
   "blockType": "request",
   "name": "cloudpc_createSnapshot"
