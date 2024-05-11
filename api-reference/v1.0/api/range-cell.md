@@ -46,7 +46,7 @@ In the path, provide the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [Range](../resources/workbookrange.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

@@ -29,7 +29,7 @@ Some of these services are designed to enable rich scenarios around a [user](./r
 5. [Subscribe to](./api/subscription-post-subscriptions.md) and [track changes](./api/event-delta.md) in Lisa's calendar, tell Lisa when she's spending more than 80% of her time in meetings.
 6. [Set automatic replies](./api/user-update-mailboxsettings.md#example-1) when Lisa is away from the office.
 7. [Get the people who are most relevant to Lisa](./api/user-list-people.md), based on communication, collaboration, and business relationships.
-8. Get the latest sales projection from a [chart](./resources/chart.md) in an Excel file in Lisa's OneDrive.
+8. Get the latest sales projection from a [chart](./resources/workbookchart.md) in an Excel file in Lisa's OneDrive.
 9. [Find the tasks assigned to Lisa in Planner](./api/planneruser-list-tasks.md).
 
 ### Microsoft 365 group use cases in v1.0
