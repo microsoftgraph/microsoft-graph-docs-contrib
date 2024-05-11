@@ -5121,6 +5121,30 @@
           "ChangeType": "Deprecation",
           "Description": "Deprecated the **resizeCloudPc** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [resize](https://learn.microsoft.com/en-us/graph/api/cloudpc-resize?view=graph-rest-beta) API instead.",
           "Target": "cloudPC"
+        },
+        {
+          "Id":"dc000323-a09d-49eB-a3b9-ce220d5049c1",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkReprovisionCloudPc",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **bulkReprovisionCloudPc** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [bulkReprovision](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta) API instead.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id":"6b8fc886-769a-4dfd-9770-3f080f8456be",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkRestoreCloudPc",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **bulkRestoreCloudPc** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [bulkRestore](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta) API instead.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id":"96ae0a06-489f-44ae-aad4-ddd9917720da",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkResize",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **bulkResize** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [bulkresize](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta) API instead.",
+          "Target": "cloudPC"
         }
       ],
       "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",

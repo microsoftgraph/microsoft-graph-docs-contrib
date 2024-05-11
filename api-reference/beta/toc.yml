@@ -1833,11 +1833,11 @@ items:
                     href: api/user-list-cloudpcs.md
                   - name: Get Cloud PC
                     href: api/cloudpc-get.md
-                  - name: Bulk-reprovision remotely
+                  - name: Bulk-reprovision remotely (deprecate)
                     href: api/manageddevice-bulkreprovisioncloudpc.md
-                  - name: Bulk resize
+                  - name: Bulk resize (deprecate)
                     href: api/cloudpc-bulkresize.md
-                  - name: Bulk-restore remotely
+                  - name: Bulk-restore remotely (deprecate)
                     href: api/manageddevice-bulkrestorecloudpc.md
                   - name: Bulk-set review status
                     href: api/manageddevice-bulksetcloudpcreviewstatus.md
@@ -1879,7 +1879,7 @@ items:
                     href: api/manageddevice-reprovisioncloudpc.md
                   - name: Resize remotely (deprecated)
                     href: api/manageddevice-resizecloudpc.md
-                  - name: Resize remotely
+                  - name: Resize
                     href: api/cloudpc-resize.md
                   - name: Restore
                     href: api/cloudpc-restore.md

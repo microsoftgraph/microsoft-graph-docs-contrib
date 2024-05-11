@@ -7,10 +7,13 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: bulkRestoreCloudPc
+# managedDevice: bulkRestoreCloudPc (deprecate)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [bulkrestore](../resources/cloudpcbulkrestore.md) API.
 
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 

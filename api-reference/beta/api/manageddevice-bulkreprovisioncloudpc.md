@@ -7,11 +7,14 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: bulkReprovisionCloudPc
+# managedDevice: bulkReprovisionCloudPc (deprecate)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [bulkreprovision](../resources/cloudpcbulkreprovision.md) API.
 
 Bulk reprovision a set of Cloud PC devices with Intune [managed device](../resources/cloudpc.md) IDs.
 
