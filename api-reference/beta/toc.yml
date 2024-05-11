@@ -18564,7 +18564,7 @@ items:
                     href: api/presence-setstatusmessage.md
               - name: Virtual event
                 items:              
-                  - name: Presenter
+                  - name: Presenter (preview)
                     href: resources/virtualeventpresenter.md
                     items:
                       - name: List
@@ -18582,7 +18582,7 @@ items:
                         href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
-                  - name: Town hall
+                  - name: Town hall (preview)
                     href: resources/virtualeventtownhall.md
                     items:
                       - name: Create
