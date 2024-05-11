@@ -35,9 +35,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To get a presenter of a town hall:
+
+``` http
+GET /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
+```
+
+To get a presenter of a webinar:
+
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
-GET /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
 ```
 
 ## Request headers
