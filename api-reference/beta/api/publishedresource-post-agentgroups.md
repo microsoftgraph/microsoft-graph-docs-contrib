@@ -60,7 +60,6 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/publishedResources/1234b780-965f-4149-85c5-a8c73e58b67d/agentGroups/$ref
 Content-type: application/json
 
-```http
 {
  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups/2B032383-897C-42BA-917E-700B6890BDC3/"
 }
@@ -79,7 +78,21 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "publishingType": "provisioning",
+    "displayName": "Demo provisioning",
+    "id": "aed0b780-965f-4149-85c5-a8c73e58b67d",
+    "resourceName": "domain1.contoso.com",
+    "agentGroups": [
+        {
+            "id": "2d55ed41-1619-4848-92bb-0576d3038682",
+            "displayName": "Group 1"
+        }
+    ]
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

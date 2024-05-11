@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let subcategories = await client.api('/security/labels/categories/{categoryTemplateId}/subCategories')
+let subcategories = await client.api('/security/labels/categories/{categoryTemplateId}/subcategories')
 	.get();
 
 ```

@@ -65,12 +65,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 137
+Content-Length: 86
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.rbacApplicationMultiple",
-    "id": "ee4797e5-97e5-ee47-e597-47eee59747ee"
+    "@odata.type": "#microsoft.graph.rbacApplicationMultiple"
   }
 }
 ```

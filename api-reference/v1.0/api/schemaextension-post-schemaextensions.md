@@ -3,7 +3,7 @@ title: "Create schemaExtension"
 description: "Create a new schemaExtension definition to extend a supporting resource type."
 ms.localizationpriority: high
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: apiPageType
 ---
 

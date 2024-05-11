@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc applications patch --application-id {application-id} --body '{\
     "identifierUris": [\
-        "https://contosoiwaapp-contoso.msappproxy.net"\
+        "api://32977d3b-ee0e-4614-9f50-f583a07842d2"\
     ],\
     "web": {\
         "redirectUris": [\

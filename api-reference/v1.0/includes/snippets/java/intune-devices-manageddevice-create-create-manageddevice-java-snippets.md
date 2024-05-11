@@ -122,6 +122,7 @@ managedDevice.setUdid("Udid value");
 managedDevice.setNotes("Notes value");
 managedDevice.setEthernetMacAddress("Ethernet Mac Address value");
 managedDevice.setPhysicalMemoryInBytes(5L);
+managedDevice.setEnrollmentProfileName("Enrollment Profile Name value");
 ManagedDevice result = graphClient.deviceManagement().managedDevices().post(managedDevice);
 
 

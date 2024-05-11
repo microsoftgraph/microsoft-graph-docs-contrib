@@ -3,7 +3,7 @@ title: "userIdentity resource type"
 description: "In the context of a Microsoft Entra audit log, the resource represents the user information that initiated or was affected by an audit activity."
 ms.localizationpriority: medium
 author: "dhanyahk"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: resourcePageType
 ---
 

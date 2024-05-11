@@ -22,18 +22,14 @@ Create a new [team](../resources/team.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Team.Create, Group.ReadWrite.All**, Directory.ReadWrite.All** |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+<!-- { "blockType": "permissions", "name": "team_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-post-permissions.md)]
 
-> **Note**: The Teamwork.Migrate.All permission is *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
-In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
-
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> [!NOTE]
+>  The Teamwork.Migrate.All permission is only supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
+> - The Group.ReadWrite.All and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -62,7 +58,7 @@ If successful, this API returns a `202 Accepted` response that contains a link t
 
 ### Example 1: Delegated permissions
 
-Here's an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
+The following example shows a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
 #### Request
 
@@ -78,7 +74,7 @@ Content-Type: application/json
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description"
+  "description": "My Sample Team's Description"
 }
 ```
 
@@ -136,7 +132,9 @@ Content-Length: 0
 
 ### Example 2: Application permissions
 
-Here's an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+The following example shows a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+
+>**Note:** You can only specify a single member as the owner in this scenario.
 
 #### Request
 <!-- markdownlint-disable MD025 -->
@@ -541,7 +539,7 @@ To create a team from a non-standard base template, you want to change the `temp
 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
-> [!Note]
+> [!NOTE]
 > It can take up to 24 hours for Teams users to see a custom template change in the gallery.
 
 #### Request

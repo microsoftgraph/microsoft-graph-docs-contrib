@@ -2,6 +2,7 @@
 title: "Update pendingExternalUserProfile"
 description: "Update the properties of a pendingExternalUserProfile object."
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
