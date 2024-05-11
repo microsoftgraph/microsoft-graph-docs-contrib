@@ -7,7 +7,7 @@ ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
-# Get WorksheetProtection
+# Get worksheetProtection
 
 Namespace: microsoft.graph
 
@@ -41,7 +41,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [WorkbookWorksheetProtection](../resources/worksheetprotection.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [workbookWorksheetProtection](../resources/workbookworksheetprotection.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.
