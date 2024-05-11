@@ -292,7 +292,7 @@ When you provide the query string parameter **notifyOnUserSpecificProperties** w
 
 > **Note**: The query string parameter **notifyOnUserSpecificProperties** is supported only for chat subscriptions in user context, specifically for subscriptions to a particular chat or at the user level.
 
-The following payload describes the information sent in a request for notifications that contain user-specific properties. The payload contains a subset of properties from the [chat](/graph/api/resources/chat?preserve-view=true) schema, including the **viewpoint** property with a nonnull value, specific to the subscribing user. The omission of other properties from the **chat** schema doesn't imply any change in their values.
+The following payload describes the information sent in a request for notifications that contain user-specific properties. The payload contains a subset of properties from the [chat](/graph/api/resources/chat?preserve-view=true) schema, including the **viewpoint** property with a non-null value, specific to the subscribing user. The omission of other properties from the **chat** schema doesn't imply any change in their values.
 
 ```json
 {
@@ -309,7 +309,7 @@ The following payload describes the information sent in a request for notificati
 }
 ```
 
-The following payload describes the information sent in a request for notifications that don't contain user-specific properties. The payload doesn't include the **viewpoint** property; however, this doesn't imply a change in its value for the user.
+The following payload describes the information sent in a request for notifications that don't contain user-specific properties. The payload doesn't include the **viewpoint** property; however, this situation doesn't imply a change in its value for the user.
 
 ```json
 {
