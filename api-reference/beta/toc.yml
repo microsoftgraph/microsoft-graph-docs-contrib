@@ -1843,6 +1843,8 @@ items:
                     href: api/manageddevice-bulksetcloudpcreviewstatus.md
                   - name: Change user accout type
                     href: api/cloudpc-changeuseraccounttype.md
+                  - name: Create snapshot
+                    href: api/cloudpc-createsnapshot.md
                   - name: End grace period
                     href: api/cloudpc-endgraceperiod.md
                   - name: Get connectivity history
@@ -1875,8 +1877,10 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: Reprovision remotely (deprecated)
                     href: api/manageddevice-reprovisioncloudpc.md
-                  - name: Resize remotely
+                  - name: Resize remotely (deprecated)
                     href: api/manageddevice-resizecloudpc.md
+                  - name: Resize remotely
+                    href: api/cloudpc-resize.md
                   - name: Restore
                     href: api/cloudpc-restore.md
                   - name: Restore remotely (deprecated)

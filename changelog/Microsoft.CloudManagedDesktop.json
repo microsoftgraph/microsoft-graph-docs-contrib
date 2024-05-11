@@ -5097,6 +5097,22 @@
           "ChangeType": "Deprecation",
           "Description": "Deprecated the **setCloudPcReviewStatus** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [setReviewStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-setreviewstatus?view=graph-rest-beta) API instead.",
           "Target": "cloudPc"
+        },
+        {
+          "Id": "3b9babe4-7c68-461a-b4db-eded6ad2f5f4",
+          "ApiChange": "Method",
+          "ChangedApiName": "createSnapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the [create snapshot](https://docs.microsoft.com/en-us/graph/api/cloudpc-createsnapshot?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "ad2fc780-e9d8-4a52-85a5-5463a77b2f20",
+          "ApiChange": "Method",
+          "ChangedApiName": "resize",
+          "ChangeType": "Addition",
+          "Description": "Added the [resize](https://docs.microsoft.com/en-us/graph/api/cloudpc-resize?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
         }
       ],
       "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
