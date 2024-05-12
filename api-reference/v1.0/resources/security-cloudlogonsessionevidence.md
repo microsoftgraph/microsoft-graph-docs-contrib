@@ -17,17 +17,17 @@ A cloud logon session by an account.
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
-| Property              | Type                                                              |Description|
-|:----------------------|:------------------------------------------------------------------|:---|
-| sessionId             | String                                                            | The session id for the account reported in the alert, e.g. 177997dc-5cba-435a-abdd-2bab21926d00 | Yes     | Yes      |
-| account               | [microsoft.graph.security.userEvidence](security-userevidence.md) | The Account associated with the logon session                                                   | No      | Yes      |
-| protocol              | String                                                            | The auth protocol that is used in this session, if known                                        | No      | Yes      |                                                                      |        |          |
-| deviceName            | String                                                            | The friendly name of the device, if known                                                       | No      | Yes      |                                                                       |        |          |
-| operatingSystem       | String                                                            | The operating system that the device is running, if known                                       | No      | Yes      |                                                                  |        |          |
-| browser               | String                                                            | The browser that is used for the logon, if known                                                | No      | Yes      |                                                                       |        |          |
-| userAgent             | String                                                            | The user agent that is used for the logon, if known                                             | No      | Yes      |                                                                     |        |          |
-| startUtcDateTime      | DateTime                                                          | The session start time, if known                                                                | No      | Yes      |                                                                      |        |          |
-| previousLogonDateTime | DateTime                                                          | The previous logon time for this account, if known                                              | No      | Yes      |                                                                     |        |          |
+| Property  | Type |Description|
+|:----------|:-------|:---|
+| sessionId | String| The session id for the account reported in the alert, e.g. 177997dc-5cba-435a-abdd-2bab21926d00 | 
+| account| [microsoft.graph.security.userEvidence](security-userevidence.md) | The Account associated with the logon session|
+| protocol  | String| The auth protocol that is used in this session, if known|
+| deviceName| String| The friendly name of the device, if known  |
+| operatingSystem  | String| The operating system that the device is running, if known|
+| browser| String | The browser that is used for the logon, if known |
+| userAgent  | String | The user agent that is used for the logon, if known |
+| startUtcDateTime | DateTime| The session start time, if known  |
+| previousLogonDateTime | DateTime| The previous logon time for this account, if known  |
 
 ## Relationships
 None.
