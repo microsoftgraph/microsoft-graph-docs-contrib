@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 This is an abstract type for the custom claim attribute base.
 
 ## Properties
-|Property|Type|Description|
+None.
 |:---|:---|:---|
 
 ## Relationships
