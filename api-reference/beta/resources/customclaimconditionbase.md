@@ -16,8 +16,7 @@ Namespace: microsoft.graph
 Represents an abstract type for a custom claim condition base.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

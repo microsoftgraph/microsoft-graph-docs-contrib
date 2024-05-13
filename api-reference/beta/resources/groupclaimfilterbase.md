@@ -16,8 +16,7 @@ Namespace: microsoft.graph
 This is an abstract type for base group filter.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

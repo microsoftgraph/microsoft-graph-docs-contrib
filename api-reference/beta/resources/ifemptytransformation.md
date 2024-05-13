@@ -1,6 +1,6 @@
 ---
 title: "ifEmptyTransformation resource type"
-description: "Outputs an attribute or constant if the input is null or empty."
+description: " Contains the output of a transformation if the input is null or empty."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outputs an attribute or constant if the input is null or empty.
+ Contains the output of a transformation if the input is null or empty.
 
 Inherits from [customClaimTransformation](../resources/customclaimtransformation.md).
 
