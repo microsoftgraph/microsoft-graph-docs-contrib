@@ -121,7 +121,7 @@ Content-Type: application/json
 
 {
     "displayName": "Export 2",
-    "exportCriteria": "searchHits, partiallyIndexed",
+    "exportCriteria": ["searchHits", "partiallyIndexed"],
     "exportLocation": "responsiveLocations, nonresponsiveLocations",
     "additionalOptions": "none"
 }
