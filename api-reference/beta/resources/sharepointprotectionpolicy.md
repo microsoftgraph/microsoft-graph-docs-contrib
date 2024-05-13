@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Protection Policy represents the plan defined by the Global Admin or SharePoint Online Admin to protect SharePoint Online. It will contain details of what data to protect, when to protect it and for what time period to retain the protected data for a single M365 service.
+SharePoint protection policy represents the plan defined by the Global Admin or SharePoint Online Admin to protect SharePoint Online. It will contain details of what data to protect, when to protect it and for what time period to retain the protected data for a single M365 service.
 
 
 Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
@@ -21,10 +21,10 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sharePointProtectionPolicy objects](../api/backuprestoreroot-list-sharepointprotectionpolicies.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) collection|Get a list of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) objects and their properties.|
-|[Create sharePointProtectionPolicy](../api/backuprestoreroot-post-sharepointprotectionpolicies.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Create a new [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object.|
+|[Create sharePointProtectionPolicy](../api/sharepointprotectionpolicy-create.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Create a new [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) |
+|[Update sharePointProtectionPolicy](../api/sharepointprotectionpolicy-update.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Update the properties of a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) |
+<!-- |[List sharePointProtectionPolicy objects](../api/backuprestoreroot-list-sharepointprotectionpolicies.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) collection|Get a list of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) objects and their properties.|
 |[Get sharePointProtectionPolicy](../api/sharepointprotectionpolicy-get.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Read the properties and relationships of a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object.|
-|[Update sharePointProtectionPolicy](../api/sharepointprotectionpolicy-update.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Update the properties of a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object.|
 |[Delete sharePointProtectionPolicy](../api/backuprestoreroot-delete-sharepointprotectionpolicies.md)|None|Delete a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object.|
 |[activate](../api/sharepointprotectionpolicy-activate.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Activate an inactive protection policy|
 |[deactivate](../api/sharepointprotectionpolicy-deactivate.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Deactivate an active protection policy|
@@ -33,7 +33,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |[Remove siteInclusionRules](../api/sharepointprotectionpolicy-delete-siteinclusionrules.md)|None|Remove a [siteProtectionRule](../resources/siteprotectionrule.md) object.|
 |[List siteProtectionUnits](../api/sharepointprotectionpolicy-list-siteprotectionunits.md)|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Get the siteProtectionUnit resources from the siteProtectionUnits navigation property.|
 |[Add siteProtectionUnit](../api/sharepointprotectionpolicy-post-siteprotectionunits.md)|[siteProtectionUnit](../resources/siteprotectionunit.md)|Add siteProtectionUnits by posting to the siteProtectionUnits collection.|
-|[Remove siteProtectionUnits](../api/sharepointprotectionpolicy-delete-siteprotectionunits.md)|None|Remove a [siteProtectionUnit](../resources/siteprotectionunit.md) object.|
+|[Remove siteProtectionUnits](../api/sharepointprotectionpolicy-delete-siteprotectionunits.md)|None|Remove a [siteProtectionUnit](../resources/siteprotectionunit.md) object.| -->
 
 ## Properties
 |Property|Type|Description|
@@ -41,10 +41,10 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |id|String|The unique identifier of the protection rule associated to the policy.|
 |displayName|String|Name of the policy being created|
 |createdDateTime|DateTimeOffset|The time of creation of the policy.|
-|createdBy|identitySet|The identity of person who created the policy.|
-|lastModifiedBy|identitySet|Timestamp of last modification of this policy .|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Timestamp of last modification of this policy .|
 |lastModifiedDateTime|DateTimeOffset|Identity of the person who last modified this policy.|
-|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Complex type containing details of all the retention settings for the policy.|
+<!-- |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Complex type containing details of all the retention settings for the policy.| -->
 |status|[protectionPolicyStatus](../resources/sharepointprotectionpolicy.md#protectionpolicystatus-values)|Status of the policy. It is an aggregated status of protection units.The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
 
 ### protectionPolicyStatus values
@@ -86,11 +86,11 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "retentionSettings": [
-    {
-      "@odata.type": "microsoft.graph.retentionSetting"
-    }
-  ]
+  // "retentionSettings": [
+  //   {
+  //     "@odata.type": "microsoft.graph.retentionSetting"
+  //   }
+  // ]
 }
 ```
 
