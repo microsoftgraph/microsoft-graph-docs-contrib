@@ -121,8 +121,8 @@ Content-Type: application/json
 
 {
     "displayName": "Export 2",
-    "exportCriteria": "searchHits", "partiallyIndexed",
-    "exportLocation": "responsiveLocations, nonresponsiveLocations",
+    "exportCriteria": ["searchHits", "partiallyIndexed",]
+    "exportLocation": ["responsiveLocations, nonresponsiveLocations",]
     "additionalOptions": "none"
 }
 ```
@@ -164,7 +164,7 @@ Content-Type: application/json
 
 {
     "displayName": "Export 3",
-    "exportCriteria": "searchHits, partiallyIndexed",
+    "exportCriteria": ["searchHits, partiallyIndexed",]
     "exportLocation": "responsiveLocations",
     "additionalOptions": "none"
 }
