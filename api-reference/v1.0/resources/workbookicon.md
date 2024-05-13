@@ -18,8 +18,8 @@ Represents an icon in a cell in an Excel workbook.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get](../api/icon-get.md) | [workbookIcon](icon.md) |Read properties and relationships of icon object.|
-|[Update](../api/icon-update.md) | [workbookIcon](icon.md)	|Update Icon object. |
+|[Get](../api/icon-get.md) | [workbookIcon](workbookicon.md) |Read properties and relationships of a workbookIcon object.|
+|[Update](../api/icon-update.md) | [workbookIcon](workbookicon.md)	|Update a workbookIcon object. |
 
 ## Properties
 | Property	   | Type	|Description|
