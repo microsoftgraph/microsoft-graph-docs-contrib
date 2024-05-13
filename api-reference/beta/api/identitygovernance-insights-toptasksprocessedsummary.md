@@ -1,6 +1,6 @@
 ---
 title: "insights: topTasksProcessedSummary"
-description: "The summary of the most processed tasks by Lifecycle workflows in a tenant."
+description: "The summary of the most processed tasks by Lifecycle Workflows in a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"

@@ -1,6 +1,6 @@
 ---
 title: "workflowsInsightsSummary resource type"
-description: "The summary of workflow usage, known as insights, of Lifecycle workflows in a tenant."
+description: "The summary of workflow usage, known as insights, of Lifecycle Workflows in a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
