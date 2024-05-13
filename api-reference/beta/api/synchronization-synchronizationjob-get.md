@@ -48,7 +48,7 @@ If successful, returns a `200 OK` response with a [synchronizationJob](../resour
 ## Example
 
 ##### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ---
 
 ##### Response
-The following is an example of a response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

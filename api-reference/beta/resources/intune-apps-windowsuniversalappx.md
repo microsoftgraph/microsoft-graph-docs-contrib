@@ -3,7 +3,7 @@ title: "windowsUniversalAppX resource type"
 description: "Contains properties and inherited properties for Windows Universal AppX Line Of Business apps. Inherits from `mobileLobApp`."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

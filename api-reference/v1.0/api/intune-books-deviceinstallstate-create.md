@@ -3,7 +3,7 @@ title: "Create deviceInstallState"
 description: "Create a new deviceInstallState object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

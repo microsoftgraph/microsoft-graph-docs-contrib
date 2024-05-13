@@ -3,7 +3,7 @@ title: "hasActiveDeployments action"
 description: "Intune Androidfotaservice Zebrafotaconnector Hasactivedeployments Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

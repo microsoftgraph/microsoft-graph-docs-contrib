@@ -3,7 +3,7 @@ title: "List cloudClipboard items"
 description: "Get a list of the cloudClipboard items and their properties."
 author: "yuechen7"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: apiPageType
 ---
 
@@ -19,15 +19,13 @@ Get a list of the [cloudClipboardItem](../resources/cloudclipboarditem.md) objec
 
 This API doesn't support using another user's credentials to get a [cloudClipboardItem](../resources/cloudclipboarditem.md) for a user. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "cloudclipboardroot-list-items-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "cloudclipboardroot_list_items" } -->
 [!INCLUDE [permissions-table](../includes/permissions/cloudclipboardroot-list-items-permissions.md)]
 
 ## HTTP request

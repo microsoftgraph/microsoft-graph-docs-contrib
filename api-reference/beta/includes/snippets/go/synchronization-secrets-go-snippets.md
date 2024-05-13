@@ -48,7 +48,7 @@ value := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 }
 requestBody.SetValue(value)
 
-secrets, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Secrets().Put(context.Background(), requestBody, nil)
+secrets, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Secrets().PutAsSecretsPutResponse(context.Background(), requestBody, nil)
 
 
 ```

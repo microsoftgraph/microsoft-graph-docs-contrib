@@ -3,7 +3,7 @@ title: "windows10CertificateProfileBase resource type"
 description: "Base class for Windows 10 certificate profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

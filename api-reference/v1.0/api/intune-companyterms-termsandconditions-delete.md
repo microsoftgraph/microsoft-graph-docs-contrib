@@ -3,7 +3,7 @@ title: "Delete termsAndConditions"
 description: "Deletes a termsAndConditions."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

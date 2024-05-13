@@ -3,7 +3,7 @@ title: "deviceManagementReports resource type"
 description: "Singleton entity that acts as a container for all reports functionality."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

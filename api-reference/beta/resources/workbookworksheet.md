@@ -3,7 +3,7 @@ title: "workbookWorksheet resource type"
 description: "An Excel worksheet is a grid of cells."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

@@ -31,7 +31,7 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Represents a **hybridAgentUpdaterConfiguration** object.|
 |id|String| Represents a publishing type. Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
-|isEnabled|Boolean| Represents if [Microsoft Entra application proxy](/azure/active-directory/app-proxy/what-is-application-proxy) is enabled for the tenant. |
+|isEnabled|Boolean| Represents if [Microsoft Entra application proxy](/entra/identity/app-proxy/) is enabled for the tenant. |
 
 ## Relationships
 

@@ -4,7 +4,7 @@ description: "List the awsAuthorizationSystemAction objects and their properties
 author: "mrudulahg01"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: apiPageType
 ---
 
@@ -179,7 +179,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsof
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -3,7 +3,7 @@ title: "Create androidForWorkCustomConfiguration"
 description: "Create a new androidForWorkCustomConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

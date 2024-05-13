@@ -3,7 +3,7 @@ title: "connectorHealthState enum type"
 description: "Connector health state for connector status"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

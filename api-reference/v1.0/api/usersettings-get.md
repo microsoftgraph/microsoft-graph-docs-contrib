@@ -4,7 +4,7 @@ description: "Read the user and organization settings object."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/me/settings
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

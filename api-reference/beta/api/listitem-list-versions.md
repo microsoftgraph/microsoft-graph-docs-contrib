@@ -50,7 +50,7 @@ This example retrieves the versions of a listItem in a SharePoint list:
 <!-- { "blockType": "request", "name": "get-previous-versions-listitem", "scopes": "files.read" } -->
 
 ```http
-GET /sites/{site-id}/items/{item-id}/versions
+GET https://graph.microsoft.com/beta/sites/{site-id}/items/{item-id}/versions
 ```
 
 ### Response

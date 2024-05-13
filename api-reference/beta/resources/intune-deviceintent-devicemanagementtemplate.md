@@ -3,7 +3,7 @@ title: "deviceManagementTemplate resource type"
 description: "Entity that represents a defined collection of device settings"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

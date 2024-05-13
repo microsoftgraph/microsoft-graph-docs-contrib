@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getPasswordSingleSignOnCredentials, err := graphClient.Users().ByUserId("user-id").GetPasswordSingleSignOnCredentials().Post(context.Background(), nil)
+getPasswordSingleSignOnCredentials, err := graphClient.Users().ByUserId("user-id").GetPasswordSingleSignOnCredentials().PostAsGetPasswordSingleSignOnCredentialsPostResponse(context.Background(), nil)
 
 
 ```

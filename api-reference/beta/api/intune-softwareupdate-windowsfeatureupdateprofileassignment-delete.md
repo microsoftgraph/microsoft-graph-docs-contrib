@@ -3,7 +3,7 @@ title: "Delete windowsFeatureUpdateProfileAssignment"
 description: "Deletes a windowsFeatureUpdateProfileAssignment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

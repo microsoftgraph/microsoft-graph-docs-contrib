@@ -3,7 +3,7 @@ title: "summarizeDeviceRemoteConnection function"
 description: "Intune Devices Userexperienceanalyticsremoteconnection Summarizedeviceremoteconnection Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

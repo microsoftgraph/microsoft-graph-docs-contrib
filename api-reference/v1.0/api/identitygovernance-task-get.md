@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 #### Request
 
-The following is an example of a request to get a task from a workflow.
+The following example shows a request to get a task from a workflow.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -147,7 +147,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request to get a task from a workflow version.
+The following example shows a request to get a task from a workflow version.
 
 # [HTTP](#tab/http)
 <!-- {

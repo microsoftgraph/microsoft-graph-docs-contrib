@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-invalidateAllRefreshTokens, err := graphClient.Me().InvalidateAllRefreshTokens().Post(context.Background(), nil)
+invalidateAllRefreshTokens, err := graphClient.Me().InvalidateAllRefreshTokens().PostAsInvalidateAllRefreshTokensPostResponse(context.Background(), nil)
 
 
 ```

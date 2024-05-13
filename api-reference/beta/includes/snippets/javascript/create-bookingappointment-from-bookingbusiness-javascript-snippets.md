@@ -55,6 +55,7 @@ const bookingAppointment = {
     invoiceId: '1001',
     'invoiceStatus@odata.type':'#microsoft.graph.bookingInvoiceStatus',
     invoiceStatus: 'open',
+    isCustomerAllowedToManageBooking: true,
     invoiceUrl: 'theInvoiceUrl',
     isLocationOnline: true,
     optOutOfCustomerEmail: false,

@@ -66,7 +66,7 @@ This example saves all role assignments as a .csv file in the subscription Wingt
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/export?filter=resourceId+eq+'85dfe48a-55d3-49fc-8f36-ee14b7f6f720'
 ```
 ##### Response
-Here is an example of the response. 
+The following example shows the response. 
 ```http
 HTTP/1.1 200 OK
 Content-Type:application/octet-stream

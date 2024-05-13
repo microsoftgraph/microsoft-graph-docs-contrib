@@ -3,7 +3,7 @@ title: "user resource type"
 description: "Intune Onboarding User Source_Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List users](../api/intune-onboarding-user-list.md)|[user](../resources/intune-onboarding-user.md) collection|List properties and relationships of the [user](../resources/intune-onboarding-user.md) objects.|
-|[Get user](../api/intune-onboarding-user-get.md)|[user](../resources/intune-onboarding-user.md)|Read properties and relationships of the [user](../resources/intune-onboarding-user.md) object.|
-|[Create user](../api/intune-onboarding-user-create.md)|[user](../resources/intune-onboarding-user.md)|Create a new [user](../resources/intune-onboarding-user.md) object.|
-|[Delete user](../api/intune-onboarding-user-delete.md)|None|Deletes a [user](../resources/intune-onboarding-user.md).|
-|[Update user](../api/intune-onboarding-user-update.md)|[user](../resources/intune-onboarding-user.md)|Update the properties of a [user](../resources/intune-onboarding-user.md) object.|
+|[List users](../api/intune-onboarding-user-list.md)|[user](../resources/intune-shared-user.md) collection|List properties and relationships of the [user](../resources/intune-shared-user.md) objects.|
+|[Get user](../api/intune-onboarding-user-get.md)|[user](../resources/intune-shared-user.md)|Read properties and relationships of the [user](../resources/intune-shared-user.md) object.|
+|[Create user](../api/intune-onboarding-user-create.md)|[user](../resources/intune-shared-user.md)|Create a new [user](../resources/intune-shared-user.md) object.|
+|[Delete user](../api/intune-onboarding-user-delete.md)|None|Deletes a [user](../resources/intune-shared-user.md).|
+|[Update user](../api/intune-onboarding-user-update.md)|[user](../resources/intune-shared-user.md)|Update the properties of a [user](../resources/intune-shared-user.md) object.|
 |[exportDeviceAndAppManagementData function](../api/intune-onboarding-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)||
 |[exportDeviceAndAppManagementData function](../api/intune-onboarding-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)||
-|[getEffectiveDeviceEnrollmentConfigurations function](../api/intune-onboarding-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection||
+|[getEffectiveDeviceEnrollmentConfigurations function](../api/intune-onboarding-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection||
 
 ## Properties
 |Property|Type|Description|
@@ -38,7 +38,7 @@ Namespace: microsoft.graph
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection|Get enrollment configurations targeted to the user|
+|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection|Get enrollment configurations targeted to the user|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

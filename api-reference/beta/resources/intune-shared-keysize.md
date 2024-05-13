@@ -3,7 +3,7 @@ title: "keySize enum type"
 description: "Key Size Options."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

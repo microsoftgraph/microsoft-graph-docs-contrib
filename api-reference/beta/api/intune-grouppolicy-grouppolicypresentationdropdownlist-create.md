@@ -3,7 +3,7 @@ title: "Create groupPolicyPresentationDropdownList"
 description: "Create a new groupPolicyPresentationDropdownList object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

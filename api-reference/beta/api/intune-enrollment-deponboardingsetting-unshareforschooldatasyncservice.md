@@ -3,7 +3,7 @@ title: "unshareForSchoolDataSyncService action"
 description: "Intune Enrollment Deponboardingsetting Unshareforschooldatasyncservice Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.users.item.contactFolders.delta.delta_request_builder import DeltaRequestBuilder
+from msgraph.generated.users.item.contact_folders.delta.delta_request_builder import DeltaRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

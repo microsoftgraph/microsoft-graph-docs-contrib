@@ -1,6 +1,6 @@
 ---
 title: "virtualEventWebinar: getByUserIdAndRole"
-description: "List all webinars where the specified user is either the organizer or a coorganizer."
+description: "Get a list of virtualEventWebinar objects where the specified user is either the organizer or a coorganizer."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the specified user is either the organizer or a coorganizer.
+Get a list of [virtualEventWebinar](../resources/virtualeventwebinar.md) objects where the specified user is either the organizer or a coorganizer.
 
 ## Permissions
 
@@ -57,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [virtualEventWebinar](../resources/virtualeventwebinar.md) objects in the response body.
 
 ## Examples
 

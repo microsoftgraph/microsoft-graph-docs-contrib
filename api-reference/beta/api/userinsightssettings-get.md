@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [userInsightsS
 
 ### Request
 
-The following is an example of the request to get user item insights and meeting hours insights settings.
+The following example shows a request to get user item insights and meeting hours insights settings.
 
 
 # [HTTP](#tab/http)

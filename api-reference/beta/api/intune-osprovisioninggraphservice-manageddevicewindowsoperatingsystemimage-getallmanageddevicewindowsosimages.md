@@ -3,7 +3,7 @@ title: "getAllManagedDeviceWindowsOSImages function"
 description: "Intune Osprovisioninggraphservice Manageddevicewindowsoperatingsystemimage Getallmanageddevicewindowsosimages Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

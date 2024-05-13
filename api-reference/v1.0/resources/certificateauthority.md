@@ -2,7 +2,7 @@
 title: "certificateAuthority resource type"
 description: "Represents a certificate authority."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a certificate authority.
+Used by the **certificateAuthorities** property of [certificateBasedAuthConfiguration resource type](certificatebasedauthconfiguration.md) to represent a certificate authority.
 
 ## Properties
 

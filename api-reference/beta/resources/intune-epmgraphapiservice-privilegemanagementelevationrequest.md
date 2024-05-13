@@ -3,7 +3,7 @@ title: "privilegeManagementElevationRequest resource type"
 description: "These are elevation approval requests for EPM support arbitrated scenario initiated by IW user that admins can take action on."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -25,6 +25,7 @@ These are elevation approval requests for EPM support arbitrated scenario initia
 |[getAllElevationRequests action](../api/intune-epmgraphapiservice-privilegemanagementelevationrequest-getallelevationrequests.md)|[privilegeManagementElevationRequest](../resources/intune-epmgraphapiservice-privilegemanagementelevationrequest.md) collection||
 |[approve action](../api/intune-epmgraphapiservice-privilegemanagementelevationrequest-approve.md)|[privilegeManagementElevationRequest](../resources/intune-epmgraphapiservice-privilegemanagementelevationrequest.md)||
 |[deny action](../api/intune-epmgraphapiservice-privilegemanagementelevationrequest-deny.md)|[privilegeManagementElevationRequest](../resources/intune-epmgraphapiservice-privilegemanagementelevationrequest.md)||
+|[revoke action](../api/intune-epmgraphapiservice-privilegemanagementelevationrequest-revoke.md)|[privilegeManagementElevationRequest](../resources/intune-epmgraphapiservice-privilegemanagementelevationrequest.md)||
 
 ## Properties
 |Property|Type|Description|

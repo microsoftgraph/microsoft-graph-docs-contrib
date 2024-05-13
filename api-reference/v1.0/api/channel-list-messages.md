@@ -28,7 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "channel_list_messages" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-messages-permissions.md)]
 
-> **Note**: The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The ChannelMessage.Read.Group permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -119,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 ---
 
 #### Response
-The following is an example of the request. `@odata.nextLink` in the response can be used to get the next page of messages.
+The following example shows a request. `@odata.nextLink` in the response can be used to get the next page of messages.
 
 <!-- {
   "blockType": "response",

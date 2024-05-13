@@ -77,7 +77,7 @@ The following example shows how to call this API when the caller submits a passw
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -130,7 +130,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -162,7 +162,7 @@ The following example shows how to call this API when the caller doesn't submit 
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/authorities/{authorityTemplateId}
+GET https://graph.microsoft.com/beta/security/labels/authorities/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
 # [C#](#tab/csharp)
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/security/labels/authorities/{authorityTempl
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,13 +112,16 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.authorityTemplate",
-    "id": "a94af2e3-853b-6fcc-c898-d61d3a6d9efc",
-    "displayName": "String",
+    "id": "6cf65e55-6baf-44ff-5dcc-08d8de97b1d5",
+    "displayName": "Business",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)"
-  }
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+            }
+  },
+  "createdDateTime" : "2021-03-24T02:09:08Z"
+}
 }
 ```
 

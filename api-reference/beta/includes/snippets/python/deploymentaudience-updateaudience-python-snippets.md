@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.update_audience_post_request_body import UpdateAudiencePostRequestBody
+from msgraph.generated.admin.windows.updates.deploymentaudiences.item.microsoft_graph_windows_updates_update_audience.update_audience_post_request_body import UpdateAudiencePostRequestBody
 from msgraph.generated.models.updatable_asset import UpdatableAsset
 from msgraph.generated.models.azure_a_d_device import AzureADDevice
 

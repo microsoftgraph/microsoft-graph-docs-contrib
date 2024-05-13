@@ -3,7 +3,7 @@ title: "appLogCollectionDownloadDetails resource type"
 description: "Intune Devices Applogcollectiondownloaddetails Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

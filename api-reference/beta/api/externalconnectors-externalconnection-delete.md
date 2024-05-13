@@ -50,7 +50,7 @@ If successful, this method returns `202 Accepted` response code. It doesn't retu
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 
@@ -103,7 +103,7 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr
 ### Response
 <!-- markdownlint-enable MD024 -->
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

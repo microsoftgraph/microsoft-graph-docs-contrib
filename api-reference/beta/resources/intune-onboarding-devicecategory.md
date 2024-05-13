@@ -3,7 +3,7 @@ title: "deviceCategory resource type"
 description: "Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,11 +20,11 @@ Device categories provides a way to organize your devices. Using device categori
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List deviceCategories](../api/intune-onboarding-devicecategory-list.md)|[deviceCategory](../resources/intune-onboarding-devicecategory.md) collection|List properties and relationships of the [deviceCategory](../resources/intune-onboarding-devicecategory.md) objects.|
-|[Get deviceCategory](../api/intune-onboarding-devicecategory-get.md)|[deviceCategory](../resources/intune-onboarding-devicecategory.md)|Read properties and relationships of the [deviceCategory](../resources/intune-onboarding-devicecategory.md) object.|
-|[Create deviceCategory](../api/intune-onboarding-devicecategory-create.md)|[deviceCategory](../resources/intune-onboarding-devicecategory.md)|Create a new [deviceCategory](../resources/intune-onboarding-devicecategory.md) object.|
-|[Delete deviceCategory](../api/intune-onboarding-devicecategory-delete.md)|None|Deletes a [deviceCategory](../resources/intune-onboarding-devicecategory.md).|
-|[Update deviceCategory](../api/intune-onboarding-devicecategory-update.md)|[deviceCategory](../resources/intune-onboarding-devicecategory.md)|Update the properties of a [deviceCategory](../resources/intune-onboarding-devicecategory.md) object.|
+|[List deviceCategories](../api/intune-onboarding-devicecategory-list.md)|[deviceCategory](../resources/intune-shared-devicecategory.md) collection|List properties and relationships of the [deviceCategory](../resources/intune-shared-devicecategory.md) objects.|
+|[Get deviceCategory](../api/intune-onboarding-devicecategory-get.md)|[deviceCategory](../resources/intune-shared-devicecategory.md)|Read properties and relationships of the [deviceCategory](../resources/intune-shared-devicecategory.md) object.|
+|[Create deviceCategory](../api/intune-onboarding-devicecategory-create.md)|[deviceCategory](../resources/intune-shared-devicecategory.md)|Create a new [deviceCategory](../resources/intune-shared-devicecategory.md) object.|
+|[Delete deviceCategory](../api/intune-onboarding-devicecategory-delete.md)|None|Deletes a [deviceCategory](../resources/intune-shared-devicecategory.md).|
+|[Update deviceCategory](../api/intune-onboarding-devicecategory-update.md)|[deviceCategory](../resources/intune-shared-devicecategory.md)|Update the properties of a [deviceCategory](../resources/intune-shared-devicecategory.md) object.|
 
 ## Properties
 |Property|Type|Description|

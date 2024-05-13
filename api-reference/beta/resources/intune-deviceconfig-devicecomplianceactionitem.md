@@ -3,7 +3,7 @@ title: "deviceComplianceActionItem resource type"
 description: "Scheduled Action Configuration"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

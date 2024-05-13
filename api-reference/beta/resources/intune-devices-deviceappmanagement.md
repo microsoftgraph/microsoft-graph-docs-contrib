@@ -3,7 +3,7 @@ title: "deviceAppManagement resource type"
 description: "Singleton entity that acts as a container for all device app management functionality."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Singleton entity that acts as a container for all device app management function
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceAppManagement](../api/intune-devices-deviceappmanagement-get.md)|[deviceAppManagement](../resources/intune-devices-deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune-devices-deviceappmanagement.md) object.|
-|[Update deviceAppManagement](../api/intune-devices-deviceappmanagement-update.md)|[deviceAppManagement](../resources/intune-devices-deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune-devices-deviceappmanagement.md) object.|
+|[Get deviceAppManagement](../api/intune-devices-deviceappmanagement-get.md)|[deviceAppManagement](../resources/intune-shared-deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) object.|
+|[Update deviceAppManagement](../api/intune-devices-deviceappmanagement-update.md)|[deviceAppManagement](../resources/intune-shared-deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|

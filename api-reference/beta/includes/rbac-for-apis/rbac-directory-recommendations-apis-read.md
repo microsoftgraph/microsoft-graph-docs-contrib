@@ -12,4 +12,3 @@ For delegated scenarios, the calling user must have at least one of the followin
 - Application Administrator
 - Security Administrator
 - Cloud Application Administrator
-- Global Administrator

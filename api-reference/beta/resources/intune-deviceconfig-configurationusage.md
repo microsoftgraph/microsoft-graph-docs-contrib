@@ -3,7 +3,7 @@ title: "configurationUsage enum type"
 description: "Possible values of the ConfigurationUsage list."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "microsoftTunnelServer resource type"
 description: "Entity that represents a single Microsoft Tunnel server"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

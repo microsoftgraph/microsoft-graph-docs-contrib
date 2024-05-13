@@ -19,7 +19,7 @@ requestBody := graphgrouplifecyclepolicies.NewRenewGroupPostRequestBody()
 groupId := "ffffffff-ffff-ffff-ffff-ffffffffffff"
 requestBody.SetGroupId(&groupId) 
 
-renewGroup, err := graphClient.GroupLifecyclePolicies().RenewGroup().Post(context.Background(), requestBody, nil)
+renewGroup, err := graphClient.GroupLifecyclePolicies().RenewGroup().PostAsRenewGroupPostResponse(context.Background(), requestBody, nil)
 
 
 ```

@@ -87,7 +87,7 @@ If successful, this method returns `201 Created` response code and [event](../re
 ### Example 1: Create an event in the specified time zone, and assign the event an optional transactionId value.
 
 #### Request
-Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the start and end times in the response. It also sets the **transactionId** property to reduce unnecessary retries on the server.
+The following example shows a request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the start and end times in the response. It also sets the **transactionId** property to reduce unnecessary retries on the server.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -605,7 +605,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
-Here is an example of the response.
+The following example shows the response.
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -725,7 +725,7 @@ Content-type: application/json
 ### Example 4: Create and enable an event as an online meeting
 
 #### Request
-Here is an example of a request which creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
+The following example shows a request which creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
 times in the response.
 
 

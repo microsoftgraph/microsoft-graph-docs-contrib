@@ -518,7 +518,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request for adding an application to a catalog, including specifying a required attribute of that application.
+The following example shows a request for adding an application to a catalog, including specifying a required attribute of that application.
 
 
 # [HTTP](#tab/http)

@@ -75,7 +75,7 @@ The following example shows a request.
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /me/drive/items/{item-id}/copy
+POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/copy
 Content-Type: application/json
 
 {

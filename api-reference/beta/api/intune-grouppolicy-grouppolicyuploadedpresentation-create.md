@@ -3,7 +3,7 @@ title: "Create groupPolicyUploadedPresentation"
 description: "Create a new groupPolicyUploadedPresentation object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

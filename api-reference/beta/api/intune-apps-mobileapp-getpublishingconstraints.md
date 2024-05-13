@@ -3,7 +3,7 @@ title: "getPublishingConstraints function"
 description: "Intune Apps Mobileapp Getpublishingconstraints Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

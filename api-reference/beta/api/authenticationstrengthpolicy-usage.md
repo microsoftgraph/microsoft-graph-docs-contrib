@@ -50,7 +50,7 @@ If successful, this function returns a `200 OK` response code and an [authentica
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

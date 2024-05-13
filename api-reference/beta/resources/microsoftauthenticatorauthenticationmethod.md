@@ -41,7 +41,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |device|[device](../resources/device.md)|The registered device on which Microsoft Authenticator resides. This property is null if the device is not registered for passwordless Phone Sign-In.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

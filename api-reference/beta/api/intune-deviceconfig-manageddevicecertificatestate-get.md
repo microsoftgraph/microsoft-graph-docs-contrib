@@ -3,7 +3,7 @@ title: "Get managedDeviceCertificateState"
 description: "Read properties and relationships of the managedDeviceCertificateState object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

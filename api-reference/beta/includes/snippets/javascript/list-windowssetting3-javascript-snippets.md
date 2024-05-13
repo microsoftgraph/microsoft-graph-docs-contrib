@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+let windows = await client.api('/me/settings/windows')
+	.version('beta')
+	.filter('settingType eq \'backup\'')
+	.get();
+
+```

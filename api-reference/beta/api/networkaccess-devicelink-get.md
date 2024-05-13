@@ -1,7 +1,7 @@
 ---
 title: "Get deviceLink"
-description: "Retrieve the device link associated with a specific branch."
-author: Moti-ba
+description: "Retrieve the device link associated with a specific branch or remote network."
+author: abhijeetsinha
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the device link associated with a specific branch.
+Retrieves a specific device link associated with a remote network.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -24,13 +24,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 ## HTTP request
-
+> [!NOTE]
+> The `/branches/{branchSiteId}/...` path will be retired soon. Use the `/remoteNetworks/{remoteNetworkId}/...` path instead.
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/deviceLinks/{deviceLinkId}
 ```
 
 ## Optional query parameters
@@ -51,7 +53,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -59,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
+GET https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04/deviceLinks/47aab2e9-7f5c-42ba-bbfc-1b049193126a
 ```
 
 # [C#](#tab/csharp)
@@ -106,20 +109,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/branches('047d69c4-2448-45cc-8c0a-40f3ad93c86c')/deviceLinks/$entity",
-    "id": "1030ca77-40e9-4cd3-bf71-b5d74c2f3cb0",
-    "name": "Backup Link",
-    "ipAddress": "24.123.22.168",
-    "version": "1.0.0",
-    "deviceVendor": "checkPoint",
-    "lastModifiedDateTime": "2023-05-23T09:19:30Z",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/connectivity/remoteNetworks('dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04')/deviceLinks/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET networkAccess/connectivity/remoteNetworks('<guid>')/deviceLinks('<guid>')?$select=bandwidthCapacityInMbps,bgpConfiguration",
+    "id": "47aab2e9-7f5c-42ba-bbfc-1b049193126a",
+    "name": "name",
+    "ipAddress": "1.2.3.1",
+    "bandwidthCapacityInMbps": "mbps500",
+    "deviceVendor": "barracudaNetworks",
+    "lastModifiedDateTime": "2024-01-27T07:09:17Z",
     "bgpConfiguration": {
-        "ipAddress": "1.128.24.22",
-        "asn": 4
+        "localIpAddress": "1.2.1.1",
+        "peerIpAddress": "1.2.3.1",
+        "asn": 899
+    },
+    "redundancyConfiguration": {
+        "zoneLocalIpAddress": null,
+        "redundancyTier": "noRedundancy"
     },
     "tunnelConfiguration": {
         "@odata.type": "#microsoft.graph.networkaccess.tunnelConfigurationIKEv2Default",
-        "preSharedKey": "342342342342342342342342"
+        "preSharedKey": "dcf"
     }
 }
 ```

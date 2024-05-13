@@ -50,7 +50,7 @@ If successful, the API call returns a `204 No Content`. It doesn't return anythi
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 This example unfollows an item identified by `{item-id}`.
 
 
@@ -58,7 +58,7 @@ This example unfollows an item identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-POST /me/drive/items/{item-id}/unfollow
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/unfollow
 ```
 
 # [C#](#tab/csharp)

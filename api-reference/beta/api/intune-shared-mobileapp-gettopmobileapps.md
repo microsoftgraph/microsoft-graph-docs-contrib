@@ -3,7 +3,7 @@ title: "getTopMobileApps function"
 description: "Intune Shared Mobileapp Gettopmobileapps Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

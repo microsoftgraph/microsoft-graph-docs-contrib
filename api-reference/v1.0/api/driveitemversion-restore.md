@@ -54,7 +54,7 @@ This example restores a version of a file identified by `{item-id}` and `{versio
 <!-- { "blockType": "request", "name": "restore-item-version", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
 # [C#](#tab/csharp)

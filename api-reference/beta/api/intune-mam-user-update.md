@@ -3,7 +3,7 @@ title: "Update user"
 description: "Update the properties of a user object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [user](../resources/intune-mam-user.md) object.
+Update the properties of a [user](../resources/intune-shared-user.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -44,9 +44,9 @@ PATCH /users/{usersId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [user](../resources/intune-mam-user.md) object.
+In the request body, supply a JSON representation for the [user](../resources/intune-shared-user.md) object.
 
-The following table shows the properties that are required when you create the [user](../resources/intune-mam-user.md).
+The following table shows the properties that are required when you create the [user](../resources/intune-shared-user.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune-mam-user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune-shared-user.md) object in the response body.
 
 ## Example
 

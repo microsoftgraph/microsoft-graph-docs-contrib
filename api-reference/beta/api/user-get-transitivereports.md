@@ -4,7 +4,7 @@ description: "Get the count of transitive reports for a user."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a count of trans
 
 ### Request
 
-Here's an example of the request. The `$count` query segment is required.
+The following example shows a request. The `$count` query segment is required.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/users/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

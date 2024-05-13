@@ -3,7 +3,7 @@ title: "Create iosVppApp"
 description: "Create a new iosVppApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

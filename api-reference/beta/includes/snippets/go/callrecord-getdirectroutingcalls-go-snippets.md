@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 fromDateTime , err := time.Parse(time.RFC3339, "{fromDateTime}")
 toDateTime , err := time.Parse(time.RFC3339, "{toDateTime}")
-microsoftGraphCallRecordsGetDirectRoutingCalls, err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetDirectRoutingCallsWithFromDateTimeWithToDateTime(&fromDateTime, &toDateTime).Get(context.Background(), nil)
+microsoftGraphCallRecordsGetDirectRoutingCalls, err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetDirectRoutingCallsWithFromDateTimeWithToDateTime(&fromDateTime, &toDateTime).GetAsGetDirectRoutingCallsWithFromDateTimeWithToDateTimeGetResponse(context.Background(), nil)
 
 
 ```

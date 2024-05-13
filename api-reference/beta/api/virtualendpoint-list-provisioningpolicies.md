@@ -126,10 +126,6 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
       "description": "Description value",
       "displayName": "Display Name value",
-      "domainJoinConfiguration": {
-          "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-          "type": "hybridAzureADJoin"
-      },
       "domainJoinConfigurations": [
         {
           "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
@@ -142,13 +138,9 @@ Content-Type: application/json
       ],
       "enableSingleSignOn": true,
       "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
-      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
       "imageDisplayName": "Image Display Name value",
       "imageId": "Image ID value",
       "imageType":"custom",
-      "windowsSettings": {
-        "language": "en-US"
-      },
       "windowsSetting": {
           "locale": "en-US"
       },

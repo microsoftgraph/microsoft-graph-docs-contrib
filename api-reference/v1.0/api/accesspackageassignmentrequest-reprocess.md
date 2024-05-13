@@ -52,7 +52,7 @@ If successful, this method returns a  `202 Accepted` response code and retries t
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 
 <!-- {

@@ -65,7 +65,7 @@ The following example configures the partner-specific policy by setting the inbo
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -141,7 +141,7 @@ The following example configures the partner-specific policy by consenting for B
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

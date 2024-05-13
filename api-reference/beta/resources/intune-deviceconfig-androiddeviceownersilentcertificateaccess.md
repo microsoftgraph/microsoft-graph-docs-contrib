@@ -3,7 +3,7 @@ title: "androidDeviceOwnerSilentCertificateAccess resource type"
 description: "Contain the package ID that has the pre-granted access to the certificate."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

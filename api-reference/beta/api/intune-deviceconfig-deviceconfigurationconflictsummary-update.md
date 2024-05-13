@@ -3,7 +3,7 @@ title: "Update deviceConfigurationConflictSummary"
 description: "Update the properties of a deviceConfigurationConflictSummary object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

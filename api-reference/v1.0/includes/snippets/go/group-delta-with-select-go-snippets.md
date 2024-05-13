@@ -22,7 +22,7 @@ configuration := &graphgroups.GroupsDelta()RequestBuilderGetRequestConfiguration
 	QueryParameters: requestParameters,
 }
 
-delta, err := graphClient.Groups().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.Groups().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

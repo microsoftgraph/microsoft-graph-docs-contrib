@@ -3,7 +3,7 @@ title: "List managedAppProtections"
 description: "List properties and relationships of the managedAppProtection objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

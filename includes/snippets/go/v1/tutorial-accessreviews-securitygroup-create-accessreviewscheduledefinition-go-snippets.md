@@ -63,9 +63,9 @@ numberOfOccurrences := int32(0)
 range.SetNumberOfOccurrences(&numberOfOccurrences) 
 recurrenceTimeZone := null
 range.SetRecurrenceTimeZone(&recurrenceTimeZone) 
-startDate := 2022-02-11
+startDate := 2024-03-21
 range.SetStartDate(&startDate) 
-endDate := 2022-02-16
+endDate := 2024-03-30
 range.SetEndDate(&endDate) 
 recurrence.SetRange(range)
 settings.SetRecurrence(recurrence)

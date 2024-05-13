@@ -3,7 +3,7 @@ title: "enrollmentTroubleshootingEvent resource type"
 description: "Event representing an enrollment failure."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

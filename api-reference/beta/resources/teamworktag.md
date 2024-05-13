@@ -51,7 +51,7 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |members|[teamworkTagMember](../resources/teamworktagmember.md) collection|Users assigned to the tag.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

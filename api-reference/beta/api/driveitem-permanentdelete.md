@@ -53,7 +53,7 @@ The following example shows how to call this API.
 ### Request
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/permanentDelete
+POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/permanentDelete
 ```
 
 ### Response

@@ -3,7 +3,7 @@ title: "Update macOSTrustedRootCertificate"
 description: "Update the properties of a macOSTrustedRootCertificate object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

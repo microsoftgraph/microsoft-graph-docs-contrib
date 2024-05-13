@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-sharedWithMe, err := graphClient.Drives().ByDriveId("drive-id").SharedWithMe().Get(context.Background(), nil)
+sharedWithMe, err := graphClient.Drives().ByDriveId("drive-id").SharedWithMe().GetAsSharedWithMeGetResponse(context.Background(), nil)
 
 
 ```

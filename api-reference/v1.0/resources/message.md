@@ -17,7 +17,7 @@ The maximum total number of recipients included in the **toRecipients**, **ccRec
 
 This resource supports:
 
-- Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". Once the message has been sent, you cannot modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message-get.md) operation.
+- Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". After the message is sent, you cannot modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message-get.md) operation.
 - Adding your own data as custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
@@ -25,7 +25,7 @@ by providing a [delta](../api/message-delta.md) function.
 
 ## Methods
 
-| Method       | Return Type  |Description|
+| Method       | Return type  |Description|
 |:---------------|:--------|:----------|
 |[List messages](../api/user-list-messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). |
 |[Create message](../api/user-post-messages.md) | [message](message.md) | [Create](../api/user-post-messages.md#request-1) a draft of a new message. |
@@ -36,7 +36,7 @@ by providing a [delta](../api/message-delta.md) function.
 |[createForward](../api/message-createforward.md)|[Message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
 |[createReply](../api/message-createreply.md)|[Message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
 |[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
-|[delta](../api/message-delta.md)|[message](message.md) collection| Get a set of messages that have been added, deleted, or updated in a specified folder.|
+|[delta](../api/message-delta.md)|[message](message.md) collection| Get a set of messages that were added, deleted, or updated in a specified folder.|
 |[forward](../api/message-forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
 |[move](../api/message-move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
 |[reply](../api/message-reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
@@ -62,7 +62,6 @@ by providing a [delta](../api/message-delta.md) function.
 |bccRecipients|[recipient](recipient.md) collection|The Bcc: recipients for the message.|
 |body|[itemBody](itembody.md)|The body of the message. It can be in HTML or text format. Find out about [safe HTML in a message body](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
 |bodyPreview|String|The first 255 characters of the message body. It is in text format.|
-|categories|String collection|The categories associated with the message.|
 |ccRecipients|[recipient](recipient.md) collection|The Cc: recipients for the message.|
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
@@ -89,7 +88,7 @@ by providing a [delta](../api/message-delta.md) function.
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message. **uniqueBody** is not returned by default but can be retrieved for a given message by use of the `?$select=uniqueBody` query. It can be in HTML or text format.|
-|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL cannot be accessed from within an iFrame.|
+|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.<br><br>The message opens in the browser if you are signed in to your mailbox via Outlook on the web. You are prompted to sign in if you are not already signed in with the browser.<br><br>This URL cannot be accessed from within an iFrame.|
 
 
 ## Relationships
@@ -102,7 +101,7 @@ by providing a [delta](../api/message-delta.md) function.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

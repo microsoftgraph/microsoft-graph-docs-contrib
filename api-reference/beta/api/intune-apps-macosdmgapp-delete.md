@@ -3,7 +3,7 @@ title: "Delete macOSDmgApp"
 description: "Deletes a macOSDmgApp."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

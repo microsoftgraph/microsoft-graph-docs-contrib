@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let cloudPcOnPremisesConnection = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections/{id}')
 	.version('beta')
-	.select('id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse')
+	.select('id,displayName,healthCheckStatus,healthCheckStatusDetail,healthCheckStatusDetails,inUse')
 	.get();
 
 ```

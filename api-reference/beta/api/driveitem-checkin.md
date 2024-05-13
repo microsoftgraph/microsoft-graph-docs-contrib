@@ -54,7 +54,7 @@ This example checks in a file identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drives/{drive-id}/items/{item-id}/checkin
+POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/checkin
 Content-Type: application/json
 
 {

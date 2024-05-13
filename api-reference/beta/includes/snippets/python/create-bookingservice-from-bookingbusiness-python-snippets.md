@@ -60,6 +60,7 @@ request_body = BookingService(
 	display_name = "Bento",
 	is_location_online = True,
 	sms_notifications_enabled = True,
+	is_customer_allowed_to_manage_booking = True,
 	language_tag = "en-US",
 	is_hidden_from_customers = False,
 	notes = "Home-cooked special",

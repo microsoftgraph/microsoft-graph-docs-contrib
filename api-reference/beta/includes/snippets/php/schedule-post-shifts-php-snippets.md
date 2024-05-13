@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Shift;
+use Microsoft\Graph\Generated\Models\ShiftItem;
+use Microsoft\Graph\Generated\Models\ShiftActivity;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

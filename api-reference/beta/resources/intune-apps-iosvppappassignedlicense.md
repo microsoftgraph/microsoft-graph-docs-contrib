@@ -3,7 +3,7 @@ title: "iosVppAppAssignedLicense resource type"
 description: "iOS Volume Purchase Program license assignment. This class does not support Create, Delete, or Update."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

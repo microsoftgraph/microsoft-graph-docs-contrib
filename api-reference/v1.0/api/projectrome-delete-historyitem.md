@@ -49,7 +49,7 @@ If successful, this method returns the `204 No Content` response code if the his
 
 ##### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -63,7 +63,7 @@ PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{i
 
 ##### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

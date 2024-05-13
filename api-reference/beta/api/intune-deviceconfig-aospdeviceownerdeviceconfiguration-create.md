@@ -3,7 +3,7 @@ title: "Create aospDeviceOwnerDeviceConfiguration"
 description: "Create a new aospDeviceOwnerDeviceConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

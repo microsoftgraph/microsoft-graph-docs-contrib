@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [w
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/me/profile/positions/{id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

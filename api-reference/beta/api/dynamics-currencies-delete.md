@@ -50,7 +50,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
@@ -58,7 +58,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id
 
 ### Response
 
-Here's an example of the response. 
+The following example shows the response. 
 
 ```http
 HTTP/1.1 204 No Content

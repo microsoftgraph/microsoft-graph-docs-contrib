@@ -31,7 +31,7 @@ configuration := &graphdirectoryobjects.DirectoryObjectsDelta()RequestBuilderGet
 	QueryParameters: requestParameters,
 }
 
-delta, err := graphClient.DirectoryObjects().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.DirectoryObjects().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

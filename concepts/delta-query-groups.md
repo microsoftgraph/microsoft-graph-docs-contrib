@@ -4,7 +4,8 @@ description: "Use delta query to discover changes without fetching the entire se
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
-ms.prod: "change-notifications"
+ms.topic: tutorial
+ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 01/12/2024
@@ -397,7 +398,7 @@ Some things to note about the example response:
 - The objects are returned with the same set of properties originally specified via the `$select` query parameter.
 - Both changed and unchanged properties are included - the **description** property has a new value, while the **displayName** property hasn't changed.
 - `members@delta` contains the following changes to the group membership.
-  - The user with ID `632f6bb2-3ec8-4c1f-9073-0027a8c6859` was removed from the group - either by removing their membership or by deleting the user object itself. The `@removed` property describes that. Only users that are permanently deleted are removed from groups. Users that are temporarily deleted keep their group memberships and don't appear in the delta result until they're permanently deleted. For details, see [directory (deleted items)](/graph/api/resources/directory).
+  - The user with ID `632f6bb2-3ec8-4c1f-9073-0027a8c6859` was removed from the group by removing their membership, as described by the `@removed` property. Objects that are removed from a group through deletion of the object aren't detected by delta queries.
   - The second user with ID `37de1ae3-408f-4702-8636-20824abda004` was added to the group.
 
 A group object can contain the `@removed` annotation in the following scenarios:

@@ -3,7 +3,7 @@ title: "Delete depIOSEnrollmentProfile"
 description: "Deletes a depIOSEnrollmentProfile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

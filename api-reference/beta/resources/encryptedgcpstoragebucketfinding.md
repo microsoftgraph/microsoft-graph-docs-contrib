@@ -4,7 +4,7 @@ description: "Represents the findings for GCP encrypted storage buckets."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

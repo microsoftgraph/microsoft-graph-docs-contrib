@@ -3,7 +3,7 @@ title: "Delete privilegeManagementElevationRequest"
 description: "Deletes a privilegeManagementElevationRequest."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

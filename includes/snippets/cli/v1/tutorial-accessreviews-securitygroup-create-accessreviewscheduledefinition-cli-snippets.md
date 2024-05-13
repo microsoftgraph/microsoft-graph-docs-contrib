@@ -32,8 +32,8 @@ mgc identity-governance access-reviews definitions create --body '{\
                 "type": "numbered",\
                 "numberOfOccurrences": 0,\
                 "recurrenceTimeZone": null,\
-                "startDate": "2022-02-11",\
-                "endDate": "2022-02-16"\
+                "startDate": "2024-03-21",\
+                "endDate": "2024-03-30"\
             }\
         }\
     }\

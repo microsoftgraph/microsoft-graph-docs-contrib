@@ -149,7 +149,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request using $select query option.
+The following example shows a request using $select query option.
 
 # [HTTP](#tab/http)
 <!-- {

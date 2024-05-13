@@ -3,7 +3,7 @@ title: "reject action"
 description: "Rejects the requested instance of an operationApprovalRequest."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

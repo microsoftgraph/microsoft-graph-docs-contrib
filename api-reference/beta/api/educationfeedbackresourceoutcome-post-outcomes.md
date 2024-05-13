@@ -50,7 +50,7 @@ This method returns a `400 Bad Request` when the submission has exceeded more th
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

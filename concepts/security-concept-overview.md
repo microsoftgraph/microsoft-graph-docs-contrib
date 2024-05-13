@@ -23,11 +23,11 @@ For information about authorization, see [Authorization and the Microsoft Graph 
 
 The [Microsoft Graph security API](/graph/api/resources/security-api-overview) makes it easy to connect with security solutions from Microsoft and partners. It allows you to more readily realize and enrich the value of these solutions. You can connect easily with the Microsoft Graph security API by using one of the following approaches, depending on your requirements:
 
-- Write code – Find [code samples](https://aka.ms/graphsecurityapicode) in C#, Java, NodeJS, and more.
-- [Connect using scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Find [PowerShell samples](https://aka.ms/graphsecuritypowershellsample).
+- Write code – Find [code samples](/graph/security-concept-overview) in C#, Java, NodeJS, and more.
+- [Connect using scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Find [PowerShell samples](/powershell/scripting/developer/prog-guide/windows-powershell-sample-code).
 - [Drag and drop into workflows and playbooks](https://aka.ms/graphsecurityconnectorsblogpost) – Use [Microsoft Graph security connectors](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) for [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/), and [Power Apps](https://powerapps.microsoft.com/).
 - [Get data into reports and dashboards](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – Use the [Microsoft Graph security connector for Power BI](/power-bi/connect-data/desktop-connect-graph-security).
-- [Connect using Jupyter notebooks](https://jupyter.org/) – Find [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks).
+- [Connect using Jupyter notebooks](https://jupyter.org/) – Find [Jupyter notebook samples](/azure/machine-learning/samples-notebooks).
 
 ### Submit threats and trigger whole automation flow
 
@@ -109,5 +109,5 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- Explore [Microsoft Graph security API samples](https://aka.ms/graphsecurityapicode)
+- Explore [Microsoft Graph security API samples](/graph/security-concept-overview)
 - Interested in becoming a security provider? Reach out to [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).

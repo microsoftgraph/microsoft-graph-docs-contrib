@@ -3,7 +3,7 @@ title: "macOSContentCachingClientPolicy enum type"
 description: "Determines which clients a content cache will serve."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

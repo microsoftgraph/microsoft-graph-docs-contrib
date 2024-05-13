@@ -3,7 +3,7 @@ title: "Update groupPolicyPresentationValue"
 description: "Update the properties of a groupPolicyPresentationValue object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

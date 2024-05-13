@@ -3,7 +3,7 @@ title: "enablement enum type"
 description: "Intune Onboarding Enablement Source_Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

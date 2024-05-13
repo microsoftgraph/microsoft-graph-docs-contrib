@@ -3,7 +3,7 @@ title: "windowsAppXAppAssignmentSettings resource type"
 description: "Contains properties used when assigning a Windows AppX mobile app to a group."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

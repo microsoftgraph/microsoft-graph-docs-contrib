@@ -3,7 +3,7 @@ title: "Delete deviceLogCollectionResponse"
 description: "Deletes a deviceLogCollectionResponse."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

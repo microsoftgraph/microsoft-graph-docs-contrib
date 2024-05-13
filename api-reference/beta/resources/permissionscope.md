@@ -32,7 +32,7 @@ Delegated permissions can be requested by client applications needing an access 
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

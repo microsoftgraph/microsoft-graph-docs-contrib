@@ -30,7 +30,7 @@ types := []string {
 }
 requestBody.SetTypes(types)
 
-getByIds, err := graphClient.DirectoryObjects().GetByIds().Post(context.Background(), requestBody, nil)
+getByIds, err := graphClient.DirectoryObjects().GetByIds().PostAsGetByIdsPostResponse(context.Background(), requestBody, nil)
 
 
 ```

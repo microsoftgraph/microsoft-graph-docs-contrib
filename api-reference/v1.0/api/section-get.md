@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [onenoteSection](../resources/section.md) object in the response body.
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sections/1-0bc35248-e4e2-4759-ad
 ---
 
 ##### Response
-Here's an example of the response. Note: The response object shown here's truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here's truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,7 +3,7 @@ title: "androidWorkProfileCompliancePolicy resource type"
 description: "This class contains compliance settings for Android Work Profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

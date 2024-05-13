@@ -3,7 +3,7 @@ title: "configManagerPolicySummary resource type"
 description: "A ConfigManager policy summary."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

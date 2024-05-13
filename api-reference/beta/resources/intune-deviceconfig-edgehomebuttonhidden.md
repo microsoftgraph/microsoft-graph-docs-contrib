@@ -3,7 +3,7 @@ title: "edgeHomeButtonHidden resource type"
 description: "Hide the home button."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

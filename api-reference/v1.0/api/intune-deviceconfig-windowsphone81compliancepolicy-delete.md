@@ -3,7 +3,7 @@ title: "Delete windowsPhone81CompliancePolicy"
 description: "Deletes a windowsPhone81CompliancePolicy."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create deviceAppManagementTask"
 description: "Create a new deviceAppManagementTask object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request to retrieve the app roles assignments that have been granted for a given resource service principal.
+The following example shows a request to retrieve the app roles assignments that have been granted for a given resource service principal.
 
 
 # [HTTP](#tab/http)
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00063ffc-54e9-405d-b8f3-5
 
 ### Response
 
-Here is an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 

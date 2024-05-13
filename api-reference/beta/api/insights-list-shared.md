@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a list of [share
 
 ### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/me/insights/shared
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

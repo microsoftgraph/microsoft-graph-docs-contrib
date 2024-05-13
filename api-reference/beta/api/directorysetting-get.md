@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and [directorySettin
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

@@ -39,7 +39,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

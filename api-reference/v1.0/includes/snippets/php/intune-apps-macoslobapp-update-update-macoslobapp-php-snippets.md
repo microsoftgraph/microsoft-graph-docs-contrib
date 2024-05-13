@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\MacOSLobApp;
+use Microsoft\Graph\Generated\Models\MimeContent;
+use Microsoft\Graph\Generated\Models\MacOSMinimumOperatingSystem;
+use Microsoft\Graph\Generated\Models\MacOSLobChildApp;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

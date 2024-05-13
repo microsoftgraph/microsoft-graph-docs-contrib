@@ -3,7 +3,7 @@ title: "Create mobileAppCategory"
 description: "Create a new mobileAppCategory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

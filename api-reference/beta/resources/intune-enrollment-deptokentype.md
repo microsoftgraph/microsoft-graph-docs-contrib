@@ -3,7 +3,7 @@ title: "depTokenType enum type"
 description: "Intune Enrollment Deptokentype Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

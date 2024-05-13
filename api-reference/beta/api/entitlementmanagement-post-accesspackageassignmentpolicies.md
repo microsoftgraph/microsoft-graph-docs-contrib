@@ -151,7 +151,7 @@ The following example shows a more complex policy with two-stage approvals and a
 
 #### Request
 
-The following is an example of the request to create an access package assignment policy. 
+The following example shows a request to create an access package assignment policy. 
 
 
 # [HTTP](#tab/http)

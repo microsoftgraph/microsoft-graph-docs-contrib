@@ -3,7 +3,7 @@ title: "Get user"
 description: "Read properties and relationships of the user object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [user](../resources/intune-onboarding-user.md) object.
+Read properties and relationships of the [user](../resources/intune-shared-user.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -50,7 +50,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [user](../resources/intune-onboarding-user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [user](../resources/intune-shared-user.md) object in the response body.
 
 ## Example
 

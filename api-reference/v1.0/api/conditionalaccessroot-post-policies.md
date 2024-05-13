@@ -148,7 +148,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -295,7 +295,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -359,7 +359,7 @@ Content-type: application/json
 ### Example 3: Use all conditions and controls
 
 #### Request
-Here's an example of the request to use all the conditions and controls.
+The following example shows a request to use all the conditions and controls.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -504,7 +504,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -691,7 +691,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

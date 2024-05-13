@@ -57,7 +57,7 @@ An Invoice (appliesToInvoiceId) must exist in the Sales Invoices Table.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 ```json
 {

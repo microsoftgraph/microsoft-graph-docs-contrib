@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getCredentialUserRegistrationCount, err := graphClient.Reports().GetCredentialUserRegistrationCount().Get(context.Background(), nil)
+getCredentialUserRegistrationCount, err := graphClient.Reports().GetCredentialUserRegistrationCount().GetAsGetCredentialUserRegistrationCountGetResponse(context.Background(), nil)
 
 
 ```

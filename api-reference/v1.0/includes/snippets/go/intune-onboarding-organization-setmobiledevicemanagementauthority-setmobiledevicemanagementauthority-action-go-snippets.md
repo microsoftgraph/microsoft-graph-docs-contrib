@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-setMobileDeviceManagementAuthority, err := graphClient.Organization().ByOrganizationId("organization-id").SetMobileDeviceManagementAuthority().Post(context.Background(), nil)
+setMobileDeviceManagementAuthority, err := graphClient.Organization().ByOrganizationId("organization-id").SetMobileDeviceManagementAuthority().PostAsSetMobileDeviceManagementAuthorityPostResponse(context.Background(), nil)
 
 
 ```

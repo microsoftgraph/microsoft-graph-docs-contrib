@@ -3,7 +3,7 @@ title: "Update windowsPhone81AppX"
 description: "Update the properties of a windowsPhone81AppX object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

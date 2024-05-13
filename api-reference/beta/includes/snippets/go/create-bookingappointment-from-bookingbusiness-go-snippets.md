@@ -88,6 +88,8 @@ invoiceId := "1001"
 requestBody.SetInvoiceId(&invoiceId) 
 invoiceStatus := graphmodels.OPEN_BOOKINGINVOICESTATUS 
 requestBody.SetInvoiceStatus(&invoiceStatus) 
+isCustomerAllowedToManageBooking := true
+requestBody.SetIsCustomerAllowedToManageBooking(&isCustomerAllowedToManageBooking) 
 invoiceUrl := "theInvoiceUrl"
 requestBody.SetInvoiceUrl(&invoiceUrl) 
 isLocationOnline := true

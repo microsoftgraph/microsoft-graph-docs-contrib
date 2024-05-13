@@ -3,7 +3,7 @@ title: "Delete androidCompliancePolicy"
 description: "Deletes a androidCompliancePolicy."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

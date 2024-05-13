@@ -60,7 +60,7 @@ If successful, this method returns `200 OK` response code. If the group is added
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",

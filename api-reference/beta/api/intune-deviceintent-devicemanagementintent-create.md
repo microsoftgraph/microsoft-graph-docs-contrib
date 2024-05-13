@@ -3,7 +3,7 @@ title: "Create deviceManagementIntent"
 description: "Create a new deviceManagementIntent object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -13,7 +13,7 @@ request_body = InsightsSettings(
 	disabled_for_group = "edbfe4fb-ec70-4300-928f-dbb2ae86c981",
 )
 
-result = await graph_client.organization.by_organization_id('organization-id').settings.item_insights.patch(request_body)
+result = await graph_client.admin.people.item_insights.patch(request_body)
 
 
 ```

@@ -3,7 +3,7 @@ title: "driverUpdateProfileApprovalType enum type"
 description: "An enum type to represent approval type of a driver update profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

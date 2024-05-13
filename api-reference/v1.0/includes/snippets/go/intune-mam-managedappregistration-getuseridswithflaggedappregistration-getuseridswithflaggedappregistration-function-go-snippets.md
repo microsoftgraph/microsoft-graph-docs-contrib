@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getUserIdsWithFlaggedAppRegistration, err := graphClient.DeviceAppManagement().ManagedAppRegistrations().GetUserIdsWithFlaggedAppRegistration().Get(context.Background(), nil)
+getUserIdsWithFlaggedAppRegistration, err := graphClient.DeviceAppManagement().ManagedAppRegistrations().GetUserIdsWithFlaggedAppRegistration().GetAsGetUserIdsWithFlaggedAppRegistrationGetResponse(context.Background(), nil)
 
 
 ```

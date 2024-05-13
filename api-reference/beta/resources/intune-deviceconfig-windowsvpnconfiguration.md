@@ -3,7 +3,7 @@ title: "windowsVpnConfiguration resource type"
 description: "Windows VPN configuration profile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

@@ -213,6 +213,8 @@ ethernetMacAddress := "Ethernet Mac Address value"
 requestBody.SetEthernetMacAddress(&ethernetMacAddress) 
 physicalMemoryInBytes := int64(5)
 requestBody.SetPhysicalMemoryInBytes(&physicalMemoryInBytes) 
+enrollmentProfileName := "Enrollment Profile Name value"
+requestBody.SetEnrollmentProfileName(&enrollmentProfileName) 
 
 managedDevices, err := graphClient.DeviceManagement().ManagedDevices().Post(context.Background(), requestBody, nil)
 

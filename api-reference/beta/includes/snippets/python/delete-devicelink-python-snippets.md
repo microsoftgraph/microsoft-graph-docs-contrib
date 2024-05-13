@@ -9,7 +9,7 @@ from msgraph import GraphServiceClient
 graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.network_access.connectivity.branches.by_branch_site_id('branchSite-id').device_links.by_device_link_id('deviceLink-id').delete()
+await graph_client.network_access.connectivity.remote_networks.by_remote_network_id('remoteNetwork-id').device_links.by_device_link_id('deviceLink-id').delete()
 
 
 ```

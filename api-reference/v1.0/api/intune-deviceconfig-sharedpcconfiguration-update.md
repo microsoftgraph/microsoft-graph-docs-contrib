@@ -3,7 +3,7 @@ title: "Update sharedPCConfiguration"
 description: "Update the properties of a sharedPCConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

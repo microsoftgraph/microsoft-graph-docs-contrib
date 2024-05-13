@@ -44,7 +44,7 @@ If successful, this method returns a `200 OK` response code.
 
 ### Request
 
-The following is an example of a request that clears the preferred availability and activity status for a user.
+The following example shows a request that clears the preferred availability and activity status for a user.
 
 # [HTTP](#tab/http)
 <!-- {

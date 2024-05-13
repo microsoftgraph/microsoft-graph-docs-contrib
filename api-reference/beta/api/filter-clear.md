@@ -46,7 +46,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 ## Example
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

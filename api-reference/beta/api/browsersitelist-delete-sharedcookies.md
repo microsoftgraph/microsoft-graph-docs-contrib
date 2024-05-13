@@ -49,7 +49,7 @@ If the shared cookie was not previously published, then this method returns a `2
 ### Example 1: Delete a shared cookie that was not previously published
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,7 +111,7 @@ HTTP/1.1 204 No Content
 ### Example 2: Delete a shared cookie that was previously published
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

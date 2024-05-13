@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=
 
 ### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

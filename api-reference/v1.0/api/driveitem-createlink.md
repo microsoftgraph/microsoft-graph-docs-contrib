@@ -103,7 +103,7 @@ All existing permissions are removed when sharing for the first time i
 }-->
 
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -185,7 +185,7 @@ To create a company sharable link, use the **scope** parameter with a value of `
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/createLink
 Content-Type: application/json
 
 {
@@ -265,7 +265,7 @@ When an embed link is created the `webHtml` property contains the HTML code for 
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
-POST /me/drive/items/{item-id}/createLink
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/createLink
 Content-Type: application/json
 
 {

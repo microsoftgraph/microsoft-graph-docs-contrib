@@ -1,6 +1,6 @@
 ---
 title: "addIn resource type"
-description: "Here's a JSON representation of the resource."
+description: "The following JSON representation shows the resource type."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
@@ -22,7 +22,7 @@ Defines custom behavior that a consuming service can use to call an app in speci
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

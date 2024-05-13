@@ -3,7 +3,7 @@ title: "Create payloadCompatibleAssignmentFilter"
 description: "Create a new payloadCompatibleAssignmentFilter object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

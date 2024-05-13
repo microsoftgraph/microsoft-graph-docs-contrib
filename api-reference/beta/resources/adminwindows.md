@@ -3,7 +3,7 @@ title: "adminWindows resource type"
 description: "Represents a container for all Windows administrator functionalities."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 

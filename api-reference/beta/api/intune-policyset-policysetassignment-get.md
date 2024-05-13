@@ -3,7 +3,7 @@ title: "Get policySetAssignment"
 description: "Read properties and relationships of the policySetAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "windowsDomainJoinConfiguration resource type"
 description: "Intune Enrollment Windowsdomainjoinconfiguration Source_Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get windowsDomainJoinConfiguration](../api/intune-enrollment-windowsdomainjoinconfiguration-get.md)|[windowsDomainJoinConfiguration](../resources/intune-enrollment-windowsdomainjoinconfiguration.md)|Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune-enrollment-windowsdomainjoinconfiguration.md) object.|
-|[Update windowsDomainJoinConfiguration](../api/intune-enrollment-windowsdomainjoinconfiguration-update.md)|[windowsDomainJoinConfiguration](../resources/intune-enrollment-windowsdomainjoinconfiguration.md)|Update the properties of a [windowsDomainJoinConfiguration](../resources/intune-enrollment-windowsdomainjoinconfiguration.md) object.|
+|[Get windowsDomainJoinConfiguration](../api/intune-enrollment-windowsdomainjoinconfiguration-get.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object.|
+|[Update windowsDomainJoinConfiguration](../api/intune-enrollment-windowsdomainjoinconfiguration-update.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Update the properties of a [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|

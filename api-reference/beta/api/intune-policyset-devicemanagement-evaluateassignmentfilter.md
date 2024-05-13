@@ -3,7 +3,7 @@ title: "evaluateAssignmentFilter action"
 description: "Intune Policyset Devicemanagement Evaluateassignmentfilter Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

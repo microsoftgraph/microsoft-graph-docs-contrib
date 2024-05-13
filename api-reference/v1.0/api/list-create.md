@@ -60,7 +60,7 @@ If the **list** facet or **template** is unspecified, the list defaults to the `
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /sites/{site-id}/lists
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 Content-Type: application/json
 
 {

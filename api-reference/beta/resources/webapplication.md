@@ -26,7 +26,7 @@ Specifies settings for a web application.
 |redirectUriSettings| [redirectUriSettings](redirecturisettings.md) collection | Specifies the index of the URLs where user tokens are sent for sign-in. This is only valid for applications using SAML.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

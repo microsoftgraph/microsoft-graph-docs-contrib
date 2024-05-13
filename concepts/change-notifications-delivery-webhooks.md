@@ -4,7 +4,8 @@ description: "Change notifications can be delivered via different channels, incl
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: keylimesoda
-ms.prod: "change-notifications"
+ms.topic: how-to
+ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 01/03/2024

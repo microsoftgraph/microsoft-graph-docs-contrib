@@ -80,7 +80,7 @@ If successful, this method returns a `200 OK` response code and a [sharedDriveIt
 
 ### Request
 
-Here's an example of the request to retrieve a shared item:
+The following example shows a request to retrieve a shared item:
 
 
 # [HTTP](#tab/http)
@@ -126,7 +126,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
 

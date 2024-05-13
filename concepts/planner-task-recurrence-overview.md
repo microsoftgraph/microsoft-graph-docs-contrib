@@ -411,7 +411,7 @@ The following example request and response show how to set **percentComplete** t
 
 #### Request
 
-The following is an example of a request that is identical for a task with or without recurrence.
+The following example shows a request that is identical for a task with or without recurrence.
 
 ```json
 PATCH https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV

@@ -63,7 +63,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Example
 ### Request
-Here's an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/notifications/

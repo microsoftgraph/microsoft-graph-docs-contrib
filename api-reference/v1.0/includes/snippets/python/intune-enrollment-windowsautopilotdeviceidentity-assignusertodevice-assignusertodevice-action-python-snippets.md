@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.assign_user_to_device_post_request_body import AssignUserToDevicePostRequestBody
+from msgraph.generated.devicemanagement.windowsautopilotdeviceidentities.item.assign_user_to_device.assign_user_to_device_post_request_body import AssignUserToDevicePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

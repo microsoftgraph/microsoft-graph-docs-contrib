@@ -3,7 +3,7 @@ title: "Create privilegeManagementElevationRequest"
 description: "Create a new privilegeManagementElevationRequest object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

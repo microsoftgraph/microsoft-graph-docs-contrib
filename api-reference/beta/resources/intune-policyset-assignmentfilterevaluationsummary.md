@@ -3,7 +3,7 @@ title: "assignmentFilterEvaluationSummary resource type"
 description: "Represent result summary for assignment filter evaluation"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

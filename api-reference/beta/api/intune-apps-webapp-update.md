@@ -3,7 +3,7 @@ title: "Update webApp"
 description: "Update the properties of a webApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

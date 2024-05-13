@@ -3,7 +3,7 @@ title: "getDevicesStatusByPolicyPlatformComplianceReport action"
 description: "Intune Reporting Devicemanagementreports Getdevicesstatusbypolicyplatformcompliancereport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

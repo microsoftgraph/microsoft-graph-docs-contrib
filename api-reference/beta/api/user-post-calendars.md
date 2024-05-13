@@ -47,7 +47,7 @@ If successful, this method returns `201 Created` response code and a [calendar](
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

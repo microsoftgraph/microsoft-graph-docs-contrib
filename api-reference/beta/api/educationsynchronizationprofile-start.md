@@ -43,7 +43,7 @@ If successful, this method returns a `200 OK` response code. If unsuccessful, it
 
 ## Example
 ##### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +89,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ---
 
 ##### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

@@ -3,7 +3,7 @@ title: "Error codes for workbooks and charts APIs"
 description: "Lists and describes the error codes that are returned by the workbooks and charts APIs in Microsoft Graph when a request sent through the API fails."
 author: "grangeryy"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Error codes for workbooks and charts APIs

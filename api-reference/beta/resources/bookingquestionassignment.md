@@ -25,7 +25,7 @@ Contains the set of custom questions associated with a particular service.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bookingQuestionAssignment"

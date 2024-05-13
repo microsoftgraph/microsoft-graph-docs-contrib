@@ -67,7 +67,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Create a draft message in JSON format to reply to an existing message.
 Here is an example of how to call this API.
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +113,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -157,7 +157,7 @@ ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCA
 ```
 
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.message",

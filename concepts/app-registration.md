@@ -17,7 +17,7 @@ In the [Azure portal](https://aka.ms/mgdcinazure) experience, developers and ten
 ### Landing page
 
 > [!IMPORTANT]
-> If Microsoft Graph Data Connect hasn't been enabled by your admin, the portal experience is disabled. For details about how Global Administrators can enable Data Connect, see [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](https://github.com/microsoftgraph/microsoft-graph-docs/blob/45b4b22b5db4a87be256b59130e74bf49c2e7fd1/includes/data-connect-quickstart-02.md?plain=1#L45)
+> If Microsoft Graph Data Connect hasn't been enabled by your admin, the portal experience is disabled. For details about how Global Administrators can enable Data Connect, see [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=1)
 
 The first screen of the Azure portal experience prompts you to register your first app with Data Connect, or load existing registrations into a summary table view.
 

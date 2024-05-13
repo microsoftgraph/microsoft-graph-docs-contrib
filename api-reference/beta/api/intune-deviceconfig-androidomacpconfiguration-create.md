@@ -3,7 +3,7 @@ title: "Create androidOmaCpConfiguration"
 description: "Create a new androidOmaCpConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

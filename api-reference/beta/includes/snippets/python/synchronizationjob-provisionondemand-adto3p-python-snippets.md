@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.provision_on_demand_post_request_body import ProvisionOnDemandPostRequestBody
+from msgraph.generated.serviceprincipals.item.synchronization.jobs.item.provision_on_demand.provision_on_demand_post_request_body import ProvisionOnDemandPostRequestBody
 from msgraph.generated.models.synchronization_job_application_parameters import SynchronizationJobApplicationParameters
 from msgraph.generated.models.synchronization_job_subject import SynchronizationJobSubject
 

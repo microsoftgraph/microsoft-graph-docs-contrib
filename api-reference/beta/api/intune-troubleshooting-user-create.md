@@ -3,7 +3,7 @@ title: "Create user"
 description: "Create a new user object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Create a new [user](../resources/intune-troubleshooting-user.md) object.
+Create a new [user](../resources/intune-shared-user.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the u
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [user](../resources/intune-troubleshooting-user.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [user](../resources/intune-shared-user.md) object in the response body.
 
 ## Example
 

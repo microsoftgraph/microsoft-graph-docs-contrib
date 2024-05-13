@@ -3,7 +3,7 @@ title: "user: retryServiceProvisioning"
 description: "Retries user service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "users"
+ms.subservice: entra-users
 doc_type: "apiPageType"
 ---
 
@@ -39,7 +39,7 @@ POST /users/{id}/retryServiceProvisioning
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -24,7 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "chat_post_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/chat-post-members-permissions.md)]
 
-> **Note:** The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> The Chat.Manage.Chat permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -54,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a Location 
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -111,7 +112,7 @@ content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -129,7 +130,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -185,7 +186,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -203,7 +204,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -260,7 +261,7 @@ content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -278,7 +279,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -335,7 +336,7 @@ content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -353,7 +354,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -411,7 +412,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {
@@ -429,7 +430,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 
@@ -489,7 +490,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!--
 {

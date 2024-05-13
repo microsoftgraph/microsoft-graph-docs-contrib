@@ -3,7 +3,7 @@ title: "Create iosUpdateConfiguration"
 description: "Create a new iosUpdateConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

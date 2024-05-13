@@ -26,7 +26,7 @@ Every decision item in an access review represents a principal's access to a res
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"

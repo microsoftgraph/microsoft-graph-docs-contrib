@@ -3,7 +3,7 @@ title: "refreshDeviceComplianceReportSummarization action"
 description: "Intune Deviceconfig Devicecompliancepolicy Refreshdevicecompliancereportsummarization Source_Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

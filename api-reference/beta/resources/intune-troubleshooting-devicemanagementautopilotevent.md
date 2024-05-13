@@ -3,7 +3,7 @@ title: "deviceManagementAutopilotEvent resource type"
 description: "Represents an Autopilot flow event."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

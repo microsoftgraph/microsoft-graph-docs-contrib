@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-uploadUrl, err := graphClient.Education().SynchronizationProfiles().ByEducationSynchronizationProfileId("educationSynchronizationProfile-id").UploadUrl().Get(context.Background(), nil)
+uploadUrl, err := graphClient.Education().SynchronizationProfiles().ByEducationSynchronizationProfileId("educationSynchronizationProfile-id").UploadUrl().GetAsUploadUrlGetResponse(context.Background(), nil)
 
 
 ```

@@ -25,9 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_post_serviceprincipals" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-post-serviceprincipals-permissions.md)]
 
-For multi-tenant apps, the calling user must also be in one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+For multi-tenant apps, the calling user must also be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
-+ Global Administrator
 + Application Administrator
 + Cloud Application Administrator roles
 
@@ -54,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a [serviceP
 
 ## Examples
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -106,7 +105,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here's an example of the response. 
+The following example shows the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

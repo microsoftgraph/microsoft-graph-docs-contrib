@@ -13,10 +13,10 @@ mgc-beta device-management virtual-endpoint reports get-remote-connection-histor
         "UsageInHour",\
         "RoundTripTimeInMsP50",\
         "AvailableBandwidthInMBpsP50",\
-        "RemoteSignInTimeInSec",\
+        "RemoteSignInTimeInSec"\
     ],\
     "top": 25,\
-    "skip": 0,\
+    "skip": 0\
 }\
 '
 

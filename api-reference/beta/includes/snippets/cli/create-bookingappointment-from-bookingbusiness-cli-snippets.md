@@ -50,6 +50,7 @@ mgc-beta solutions booking-businesses appointments create --booking-business-id 
     "invoiceId":"1001",\
     "invoiceStatus@odata.type":"#microsoft.graph.bookingInvoiceStatus",\
     "invoiceStatus":"open",\
+    "isCustomerAllowedToManageBooking": true,\
     "invoiceUrl":"theInvoiceUrl",\
     "isLocationOnline": true,\
     "optOutOfCustomerEmail": false,\

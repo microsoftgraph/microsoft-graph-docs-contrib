@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\LogTeleconferenceDeviceQualityPostRequestBody;
+use Microsoft\Graph\Generated\Models\TeleconferenceDeviceQuality;
+use Microsoft\Graph\Generated\Models\TeleconferenceDeviceMediaQuality;
+use Microsoft\Graph\Generated\Models\TeleconferenceDeviceAudioQuality;
+use Microsoft\Graph\Generated\Models\TeleconferenceDeviceVideoQuality;
+use Microsoft\Graph\Generated\Models\TeleconferenceDeviceScreenSharingQuality;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

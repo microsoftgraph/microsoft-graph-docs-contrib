@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and an updated list 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

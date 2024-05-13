@@ -44,10 +44,12 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.
 
-Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.
+>**Note:** Images don't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.
+
 ## Example
-##### Request
-Here's an example of the request.
+### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,8 +94,9 @@ GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 
 ---
 
-##### Response
-Here's an example of the response.
+### Response
+
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and [Permission](../
 
 ### Request
 
-Here is an example of the request to access a permission on a folder.
+The following example shows a request to access a permission on a folder.
 
 
 # [HTTP](#tab/http)

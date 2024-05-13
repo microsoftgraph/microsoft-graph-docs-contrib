@@ -15,7 +15,7 @@ Privileged Identity Management (PIM) is a feature of [Microsoft Entra ID Governa
 The PIM for Microsoft Entra roles APIs allow you to govern privileged access and limit excessive access to Microsoft Entra roles. This article introduces the governance capabilities of PIM for Microsoft Entra roles APIs in Microsoft Graph.
 
 > [!NOTE]
-> To manage Azure resource roles use the [Azure Resource Manager (ARM) APIs for PIM](/rest/api/authorization/privileged-role-eligibility-rest-sample).
+> To manage Azure resource roles use the [Azure Resource Manager APIs for PIM](/rest/api/authorization/privileged-role-eligibility-rest-sample).
 >
 > PIM APIs for managing security alerts for Microsoft Entra roles are available on the `beta` endpoint only. For more information, see [Security alerts for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta#security-alerts-for-azure-ad-roles&preserve-view=true).
 
@@ -92,21 +92,6 @@ For more information about using Microsoft Graph to configure rules, see [Overvi
 [!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
-<!--
-## Permissions and privileges
-
-To call the [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md) and [Create roleEligibilityScheduleRequests](../api/rbacapplication-post-roleeligibilityschedulerequests.md) APIs with admin actions, the calling app must:
-+ Have a *Global Administrator* or *Privileged Role Administrator* role
-+ Be granted one of the following permissions:
-  + RoleAssignmentSchedule.ReadWrite.Directory
-  + RoleEligibilitySchedule.ReadWrite.Directory
-  + RoleManagement.ReadWrite.Directory
-
-The app must also be assigned the appropriate permissions to retrieve their role assignments and eligibilities, or call the [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md) and [Create roleEligibilityScheduleRequests](../api/rbacapplication-post-roleeligibilityschedulerequests.md) APIs with user actions.
-
-For more information about permissions to call PIM APIs, see the [Microsoft Graph permissions reference: Role management permissions](/graph/permissions-reference#role-management-permissions).
-
--->
 
 ## Licensing
 

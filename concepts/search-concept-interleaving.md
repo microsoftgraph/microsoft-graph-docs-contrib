@@ -18,8 +18,8 @@ The following table shows the relationship between different entity types that c
 |--------------|---------|----------|---------|-------------|-------|-----------|-------|--------------|------|----------|--------|------|------|
 | acronym      | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
 | bookmark     | True    | True     | -       | -           | -     | -         | -     | -            | -    | -        | -      | True | -    |
-| message      | -       | -        | True    | -           | -     | -         | -     | -            | -    | -        | -      | -    | -    |
-| chatMessage  | -       | -        | -       | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+| message      | -       | -        | True    | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
+| chatMessage  | -       | -        | True    | True        | -     | -         | -     | -            | -    | -        | -      | -    | -    |
 | drive        | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
 | driveItem    | -       | -        | -       | -           | True  | True      | -     | True         | True | True     | -      | -    | True |
 | event        | -       | -        | -       | -           | -     | -         | True  | -            | -    | -        | -      | -    | -    |
@@ -34,11 +34,11 @@ The following table shows the relationship between different entity types that c
 
 ### Example 1: Search with SharePoint file types and all connectors combination
 
-Here's an example of a request that searches with SharePoint file types and all combination of connectors.
+The following example shows a request that searches with SharePoint file types and all combination of connectors.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -67,7 +67,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of an interleaving response.
+The following example shows the interleaving response.
 
 ```http
 HTTP/1.1 200 OK
@@ -128,11 +128,11 @@ Content-type: application/json
 
 ### Example 2: Search with SharePoint file types and specific connector combination
 
-Here's an example of a request that searches with SharePoint file types and a specific combination of connectors.
+The following example shows a request that searches with SharePoint file types and a specific combination of connectors.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -162,7 +162,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of an interleaving response.
+The following example shows the interleaving response.
 
 ```http
 HTTP/1.1 200 OK
@@ -243,11 +243,11 @@ Content-type: application/json
 
 ### Example 3: Search with bookmark and acronym combination
 
-Here's an example of a request that searches with bookmark and acronym as entity types.
+The following example shows a request that searches with bookmark and acronym as entity types.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/search/query
@@ -272,7 +272,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of an interleaving response for bookmark and acronym.
+The following example shows the interleaving response for bookmark and acronym.
 
 ```http
 HTTP/1.1 200 OK
@@ -323,15 +323,116 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Interleave Teams and Outlook content
+
+The following example shows how to interleave Teams chat message and Outlook message content.
+
+#### Request
+
+The following example shows a request.
+
+```http
+POST https://graph.microsoft.com/v1.0/search/query
+Content-Type: application/json
+
+{
+    "requests": [
+        {
+            "entityTypes": [
+                "chatMessage",
+                "message"
+            ],
+            "query": {
+                "queryString": "*"
+            },
+            "from": 0,
+            "size": 5
+        }
+    ]
+}
+```
+
+#### Response
+
+The following example shows the interleaving response.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "searchTerms": [],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA/PUmjl3OgEumTcnPoOXsegAAAgFYAAAA/PUmjl3OgEumTcnPoOXsegABBugTfgAAAA==",
+                            "rank": 1,
+                            "summary": "hi",
+                            "resource": {
+                                "@odata.type": "microsoft.graph.chatMessage",
+                                "id": "1657786709667",
+                                "createdDateTime": "2022-07-14T08:18:30Z",
+                                "lastModifiedDateTime": "2022-07-14T08:19:07Z",
+                                "subject": "",
+                                "importance": "normal",
+                                "webLink": "https://teams.microsoft.com/l/message/19%3a8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578%40unq.gbl.spaces/1657786709667?context=%7B%22contextType%22:%22chat%22%7D",
+                                "from": {
+                                    "emailAddress": {
+                                        "name": "Tong Zheng",
+                                        "address": "Tong.Zheng@microsoft.com"
+                                    }
+                                },
+                                "channelIdentity": {
+                                    "channelId": "19:8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578@unq.gbl.spaces"
+                                },
+                                "etag": "1657786709667",
+                                "chatId": "19:8b00f92f-63ba-4ad7-822e-862219ba93b3_ba9f3156-32ae-4308-bd33-64a92319b578@unq.gbl.spaces"
+                            }
+                        },
+                        {
+                            "hitId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA-PUmjl3OgEumTcnPoOXsegAAAgEBAAAAAPz1Jo5dzoBLpk3Jz6Dl7HoAAAIJWgAAAA==",
+                            "rank": 2,
+                            "summary": "",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.message",
+                                "createdDateTime": "2021-06-11T23:17:11Z",
+                                "lastModifiedDateTime": "2021-06-12T02:58:00Z",
+                                "receivedDateTime": "2021-06-11T23:17:11Z",
+                                "sentDateTime": "2021-06-11T23:17:11Z",
+                                "hasAttachments": false,
+                                "internetMessageId": "<DM5PR00MB0406C60478A4456D6B0F83F8D4349@DM5PR00MB0406.namprd00.prod.outlook.com>",
+                                "bodyPreview": "",
+                                "importance": "normal",
+                                "parentFolderId": "AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgAuAAAD7MLXbKjTeUeUiM62OAqxBAEA-PUmjl3OgEumTcnPoOXsegAAAgEBAAAAAA==",
+                                "conversationId": "AAQkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgAQANQdjNmPALIE6YAJmOz4Qn4=",
+                                "isRead": true,
+                                "isDraft": true,
+                                "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGNhZjFkYzQ3LTc2MDYtNGZiMS04ZGE3LTQ2MjUyZmRlMzA0NgBGAAAD7MLXbKjTeUeUiM62OAqxBAcA%2FPUmjl3OgEumTcnPoOXsegAAAgEBAAAAAPz1Jo5dzoBLpk3Jz6Dl7HoAAAIJWgAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+                                "inferenceClassification": "focused"
+                            }
+                        }
+                    ],
+                    "total": 2,
+                    "moreResultsAvailable": false
+                }
+            ]
+        }
+    ],
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)"
+}
+```
+
 ## Known limitations
 
-- Customized sort isn't supported in interleaving scenario, all of them are ordered by relevance.
-- QueryTemplate is only supported for file items in interleaving query, it can't filter out any externalItem results in the response.
-  The behavior could be changed in the future and allow queryTemplate to filter out the externalItem results. We don't suggest using queryTemplate in interleaving requests.
+- Customized sort isn't supported in interleaving scenarios, all items are ordered by relevance.
+- QueryTemplate is only supported for file items in an interleaving query. External item results aren't filtered out in the response. We don't recommend that you use queryTemplate in interleaving requests.
 - Collapse isn't supported.
-- Speller modification isn't supported, speller suggestion can be used as normal.
+- Speller modification isn't supported. Speller suggestions only are supported.
 - Result template isn't supported.
-- Aggregation limitation, if same aggregated field both exist in Sharepoint file types (site, drive, driveItem, list, listItem) and connectors. Aggregation result shows two same aggregation buckets with same name, suggest to rename one of its name to bypass the limitation.
+- Aggregation limitations occur if the aggregated field exists in multiple Sharepoint file types (**site**, **drive**, **driveItem**, **list**, **listItem**) and connectors. Aggregation results shows two aggregation buckets with the same name; to bypass the limitation, rename one of them.
 
 ## Next steps
 

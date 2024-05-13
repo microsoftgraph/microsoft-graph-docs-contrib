@@ -4,7 +4,7 @@ description: "Represents the inactive serverless functions in AWS, Azure, and GC
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
+ms.subservice: entra-permissions-management
 doc_type: resourcePageType
 ---
 

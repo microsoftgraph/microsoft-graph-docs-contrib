@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc-beta device-management virtual-endpoint on-premises-connections create --body '{\
   "displayName": "test-canary-02",\
+  "connectionType": "hybridAzureADJoin",\
   "type": "hybridAzureADJoin",\
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",\
   "adDomainName": "contoso001.com",\

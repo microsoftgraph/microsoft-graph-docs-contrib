@@ -3,7 +3,7 @@ title: "Create importedDeviceIdentityResult"
 description: "Create a new importedDeviceIdentityResult object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

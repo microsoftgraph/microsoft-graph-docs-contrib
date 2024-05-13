@@ -62,7 +62,7 @@ A `207 Multi-Status` response code indicates that only some of the added **exter
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

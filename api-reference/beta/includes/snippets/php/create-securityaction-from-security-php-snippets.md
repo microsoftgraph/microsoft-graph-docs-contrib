@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\SecurityAction;
+use Microsoft\Graph\Generated\Models\KeyValuePair;
+use Microsoft\Graph\Generated\Models\SecurityVendorInformation;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

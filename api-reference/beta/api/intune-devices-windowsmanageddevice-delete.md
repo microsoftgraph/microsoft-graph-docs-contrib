@@ -3,7 +3,7 @@ title: "Delete windowsManagedDevice"
 description: "Deletes a windowsManagedDevice."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

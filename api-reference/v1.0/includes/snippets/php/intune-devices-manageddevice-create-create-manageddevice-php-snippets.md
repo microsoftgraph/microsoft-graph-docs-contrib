@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ManagedDevice;
+use Microsoft\Graph\Generated\Models\DeviceActionResult;
+use Microsoft\Graph\Generated\Models\ConfigurationManagerClientEnabledFeatures;
+use Microsoft\Graph\Generated\Models\DeviceHealthAttestationState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -114,6 +119,7 @@ $requestBody->setUdid('Udid value');
 $requestBody->setNotes('Notes value');
 $requestBody->setEthernetMacAddress('Ethernet Mac Address value');
 $requestBody->setPhysicalMemoryInBytes(5);
+$requestBody->setEnrollmentProfileName('Enrollment Profile Name value');
 
 $result = $graphServiceClient->deviceManagement()->managedDevices()->post($requestBody)->wait();
 

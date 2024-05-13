@@ -26,7 +26,7 @@ Represents the scope tag info with display name and identity.
 None
 
 ## JSON Representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo"

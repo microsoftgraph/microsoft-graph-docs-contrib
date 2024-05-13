@@ -3,7 +3,7 @@ title: "Create managedMobileApp"
 description: "Create a new managedMobileApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

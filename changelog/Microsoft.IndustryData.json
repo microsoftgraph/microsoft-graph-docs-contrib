@@ -3,6 +3,200 @@
     {
       "ChangeList": [
         {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "additionalClassGroupAttributes",
+          "ChangeType": "Addition",
+          "Description": "Added the **additionalClassGroupAttributes** enumeration type.",
+          "Target": "additionalClassGroupAttributes"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "additionalUserAttributes",
+          "ChangeType": "Addition",
+          "Description": "Added the **additionalUserAttributes** enumeration type.",
+          "Target": "additionalUserAttributes"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "filterOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **filterOptions** enumeration type.",
+          "Target": "filterOptions"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "additionalClassGroupOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [additionalClassGroupOptions](https://learn.microsoft.com/en-us/graph/api/resources/industryData-additionalClassGroupOptions?view=graph-rest-beta) resource.",
+          "Target": "additionalClassGroupOptions"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "additionalUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [additionalUserOptions](https://learn.microsoft.com/en-us/graph/api/resources/industryData-additionalUserOptions?view=graph-rest-beta) resource.",
+          "Target": "additionalUserOptions"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminUnitCreationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminUnitCreationOptions](https://learn.microsoft.com/en-us/graph/api/resources/industryData-adminUnitCreationOptions?view=graph-rest-beta) resource.",
+          "Target": "adminUnitCreationOptions"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "basicFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [basicFilter](https://learn.microsoft.com/en-us/graph/api/resources/industryData-basicFilter?view=graph-rest-beta) resource.",
+          "Target": "basicFilter"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classGroupConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [classGroupConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/industryData-classGroupConfiguration?view=graph-rest-beta) resource.",
+          "Target": "classGroupConfiguration"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enrollmentMappings",
+          "ChangeType": "Addition",
+          "Description": "Added the [enrollmentMappings](https://learn.microsoft.com/en-us/graph/api/resources/industryData-enrollmentMappings?view=graph-rest-beta) resource.",
+          "Target": "enrollmentMappings"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filter",
+          "ChangeType": "Addition",
+          "Description": "Added the [filter](https://learn.microsoft.com/en-us/graph/api/resources/industryData-filter?view=graph-rest-beta) resource.",
+          "Target": "filter"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordSettings](https://learn.microsoft.com/en-us/graph/api/resources/industryData-passwordSettings?view=graph-rest-beta) resource.",
+          "Target": "passwordSettings"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sectionRoleReferenceValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [sectionRoleReferenceValue](https://learn.microsoft.com/en-us/graph/api/resources/industryData-sectionRoleReferenceValue?view=graph-rest-beta) resource.",
+          "Target": "sectionRoleReferenceValue"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityGroupCreationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityGroupCreationOptions](https://learn.microsoft.com/en-us/graph/api/resources/industryData-securityGroupCreationOptions?view=graph-rest-beta) resource.",
+          "Target": "securityGroupCreationOptions"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "simplePasswordSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [simplePasswordSettings](https://learn.microsoft.com/en-us/graph/api/resources/industryData-simplePasswordSettings?view=graph-rest-beta) resource.",
+          "Target": "simplePasswordSettings"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/industryData-userConfiguration?view=graph-rest-beta) resource.",
+          "Target": "userConfiguration"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userCreationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [userCreationOptions](https://learn.microsoft.com/en-us/graph/api/resources/industryData-userCreationOptions?view=graph-rest-beta) resource.",
+          "Target": "userCreationOptions"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userManagementOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [userManagementOptions](https://learn.microsoft.com/en-us/graph/api/resources/industryData-userManagementOptions?view=graph-rest-beta) resource.",
+          "Target": "userManagementOptions"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "administrativeUnitProvisioningFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [administrativeUnitProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-administrativeUnitProvisioningFlow?view=graph-rest-beta) resource and its methods.",
+          "Target": "administrativeUnitProvisioningFlow"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classGroupProvisioningFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [classGroupProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-classGroupProvisioningFlow?view=graph-rest-beta) resource and its methods.",
+          "Target": "classGroupProvisioningFlow"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outboundProvisioningFlowSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [outboundProvisioningFlowSet](https://learn.microsoft.com/en-us/graph/api/resources/industryData-outboundProvisioningFlowSet?view=graph-rest-beta) resource and its methods.",
+          "Target": "outboundProvisioningFlowSet"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provisioningFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [provisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-provisioningFlow?view=graph-rest-beta) resource and its methods.",
+          "Target": "provisioningFlow"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityGroupProvisioningFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityGroupProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-securityGroupProvisioningFlow?view=graph-rest-beta) resource and its methods.",
+          "Target": "securityGroupProvisioningFlow"
+        },
+        {
+          "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userProvisioningFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [userProvisioningFlow](https://learn.microsoft.com/en-us/graph/api/resources/industryData-userProvisioningFlow?view=graph-rest-beta) resource and its methods.",
+          "Target": "userProvisioningFlow"
+        }
+      ],
+      "Id": "3aad1368-e44f-424c-8a0c-fc04da2f35ec",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-04-01T20:01:05.2704004Z",
+      "WorkloadArea": "Industry data ETL",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "be76b629-01ee-4362-976d-088a5d861bb0",
           "ApiChange": "Enum type",
           "ChangedApiName": "inboundDomain",

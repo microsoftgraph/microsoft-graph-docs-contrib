@@ -3,7 +3,7 @@ title: "deviceManagement resource type"
 description: "Singleton entity that acts as a container for all device management functionality."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-softwareupdate-devicemanagement-get.md)|[deviceManagement](../resources/intune-softwareupdate-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-softwareupdate-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-softwareupdate-devicemanagement-update.md)|[deviceManagement](../resources/intune-softwareupdate-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-softwareupdate-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-softwareupdate-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-softwareupdate-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|

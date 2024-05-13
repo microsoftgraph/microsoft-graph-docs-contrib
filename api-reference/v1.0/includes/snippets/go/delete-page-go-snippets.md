@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Onenote().Pages().ByOnenotePageId("onenotePage-id").Delete(context.Background(), nil)
+graphClient.Sites().BySiteId("site-id").Pages().ByBaseSitePageId("baseSitePage-id").Delete(context.Background(), nil)
 
 
 ```

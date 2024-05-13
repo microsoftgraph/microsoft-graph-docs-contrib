@@ -3,7 +3,7 @@ title: "win32LobAppAutoUpdateSupersededApps enum type"
 description: "Contains value for auto-update superseded apps."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

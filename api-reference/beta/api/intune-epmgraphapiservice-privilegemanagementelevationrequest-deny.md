@@ -3,7 +3,7 @@ title: "deny action"
 description: "Intune Epmgraphapiservice Privilegemanagementelevationrequest Deny Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

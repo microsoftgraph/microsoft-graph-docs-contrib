@@ -44,7 +44,7 @@ request_body = AccessReviewScheduleDefinition(
 	),
 	reviewers = [
 		AccessReviewReviewerScope(
-			query = "/users/f674a1c9-4a40-439c-bfa3-4b61a9f29d85",
+			query = "/users/2560f739-2e0e-4550-9fa0-1a1e67ae0ab8",
 			query_type = "MicrosoftGraph",
 		),
 	],
@@ -54,7 +54,7 @@ request_body = AccessReviewScheduleDefinition(
 		justification_required_on_approval = True,
 		default_decision_enabled = False,
 		default_decision = "None",
-		instance_duration_in_days = 3,
+		instance_duration_in_days = 1,
 		recommendations_enabled = False,
 		recurrence = PatternedRecurrence(
 			pattern = RecurrencePattern(
@@ -63,7 +63,7 @@ request_body = AccessReviewScheduleDefinition(
 			),
 			range = RecurrenceRange(
 				type = RecurrenceRangeType.NoEnd,
-				start_date = "2022-03-02",
+				start_date = "2024-03-25",
 			),
 		),
 	),

@@ -130,7 +130,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following is an example of the request to delete an attachment on an event.
+The following example shows a request to delete an attachment on an event.
 
 # [HTTP](#tab/http)
 <!-- {

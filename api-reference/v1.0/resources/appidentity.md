@@ -24,7 +24,7 @@ Indicates the identity of the application that performed the action or was chang
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

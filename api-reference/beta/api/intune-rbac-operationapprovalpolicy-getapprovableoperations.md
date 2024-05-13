@@ -3,7 +3,7 @@ title: "getApprovableOperations function"
 description: "Intune Rbac Operationapprovalpolicy Getapprovableoperations Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "deviceManagement resource type"
 description: "Singleton that acts as container for a collection of Resource Access entities."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,8 +20,8 @@ Singleton that acts as container for a collection of Resource Access entities.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-rapolicy-devicemanagement-get.md)|[deviceManagement](../resources/intune-rapolicy-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-rapolicy-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-rapolicy-devicemanagement-update.md)|[deviceManagement](../resources/intune-rapolicy-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-rapolicy-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-rapolicy-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-rapolicy-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -31,7 +31,7 @@ Singleton that acts as container for a collection of Resource Access entities.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-rapolicy-devicemanagementderivedcredentialsettings.md) collection|Collection of Derived credential settings associated with account.|
+|derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) collection|Collection of Derived credential settings associated with account.|
 |resourceAccessProfiles|[deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) collection|Collection of resource access settings associated with account.|
 
 ## JSON Representation

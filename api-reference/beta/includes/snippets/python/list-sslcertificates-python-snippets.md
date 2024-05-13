@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.security.threatIntelligence.sslCertificates.ssl_certificates_request_builder import SslCertificatesRequestBuilder
+from msgraph.generated.security.threat_intelligence.ssl_certificates.ssl_certificates_request_builder import SslCertificatesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

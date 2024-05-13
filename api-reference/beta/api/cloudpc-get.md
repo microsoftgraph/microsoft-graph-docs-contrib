@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -162,7 +162,7 @@ Content-Type: application/json
     "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-    "provisioningType": "shared",
+    "provisioningType": "sharedByUser",
     "diskEncryptionState": "notAvailable"
 }
 ```
@@ -171,8 +171,7 @@ Content-Type: application/json
 
 #### Request
 
-Here's an example of a request.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -182,7 +181,7 @@ Here's an example of a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName
 ```
 
 # [C#](#tab/csharp)
@@ -221,7 +220,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -264,7 +263,8 @@ Content-Type: application/json
           "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain"
         }
       ]
-    }
+    },
+    "allotmentDisplayName": null
 }
 ```
 
@@ -272,7 +272,7 @@ Content-Type: application/json
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -322,7 +322,7 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac1
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -366,7 +366,7 @@ Content-Type: application/json
     "userPrincipalName": "pmitchell@contoso.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-    "provisioningType": "shared",
+    "provisioningType": "dedicated",
     "diskEncryptionState": "notAvailable"
 }
 ```

@@ -3,7 +3,7 @@ title: "Get windows81WifiImportConfiguration"
 description: "Read properties and relationships of the windows81WifiImportConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

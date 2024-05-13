@@ -24,7 +24,7 @@ subject.SetObjectId(&objectId)
 }
 requestBody.SetAdditionalData(additionalData)
 
-getApplicablePolicyRequirements, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().ByAccessPackageId("accessPackage-id").GetApplicablePolicyRequirements().Post(context.Background(), requestBody, nil)
+getApplicablePolicyRequirements, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().ByAccessPackageId("accessPackage-id").GetApplicablePolicyRequirements().PostAsGetApplicablePolicyRequirementsPostResponse(context.Background(), requestBody, nil)
 
 
 ```

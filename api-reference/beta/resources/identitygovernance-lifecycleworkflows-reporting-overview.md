@@ -16,7 +16,7 @@ Lifecycle Workflows offers reports that enable organizations to gain insight int
 
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
-The lifecycle workflows API is defined in the OData subnamespace, microsoft.graph.identityGovernance.
+The lifecycle workflows API is defined in the OData subnamespace, microsoft.graph.identityGovernance.  
 
 ## Key elements of Lifecycle Workflows reports
 

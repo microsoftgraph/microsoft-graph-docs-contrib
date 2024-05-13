@@ -3,7 +3,7 @@ title: "mobileAppRelationship resource type"
 description: "Describes a relationship between two mobile apps."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

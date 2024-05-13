@@ -3,7 +3,7 @@ title: "deviceManagementIntentAssignment resource type"
 description: "Intent assignment entity"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

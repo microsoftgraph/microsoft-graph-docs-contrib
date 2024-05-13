@@ -51,7 +51,7 @@ If successful, this method returns a `202 Accepted` response code and a [startHo
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { 

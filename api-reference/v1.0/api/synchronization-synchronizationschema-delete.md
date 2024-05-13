@@ -47,14 +47,14 @@ If successful, this method returns a `201 No Content` response code. It does not
 ## Example
 
 ##### Request
-The following is an example of a request.
+The following example shows a request.
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
 ##### Response
-The following is an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

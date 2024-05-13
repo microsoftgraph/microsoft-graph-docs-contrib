@@ -51,7 +51,7 @@ If successful, this method returns `201 Created` response code with the [message
 ### Example 1: Create a new reply to a chatMessage
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

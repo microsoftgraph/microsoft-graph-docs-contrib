@@ -151,7 +151,7 @@ Access the list item associated with the following components.
 | {list-id}                  | The GUID ID of the list (`SPList`) in the site.                     |
 | {item-id}                  | The GUID or integer ID of the list item (`SPListItem`) in the list. |
 
-The following is an example of a request that contains the previous components.
+The following example shows a request that contains the previous components.
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{hostname}:/{site-server-relative-url}:/lists/{list-id}/items/{item-id}

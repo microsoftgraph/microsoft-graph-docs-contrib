@@ -3,7 +3,7 @@ title: "Update macOSWebClip"
 description: "Update the properties of a macOSWebClip object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

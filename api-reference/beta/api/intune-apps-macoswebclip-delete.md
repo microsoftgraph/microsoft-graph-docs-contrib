@@ -3,7 +3,7 @@ title: "Delete macOSWebClip"
 description: "Deletes a macOSWebClip."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

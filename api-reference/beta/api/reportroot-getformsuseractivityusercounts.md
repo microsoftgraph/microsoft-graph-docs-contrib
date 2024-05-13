@@ -84,7 +84,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/reports/getFormsUserActivityUserCounts(peri
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 ```http
@@ -125,7 +125,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -137,7 +137,7 @@ GET https://graph.microsoft.com/beta/reports/getFormsUserActivityUserCounts(peri
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

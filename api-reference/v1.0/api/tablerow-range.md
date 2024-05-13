@@ -3,7 +3,7 @@ title: "TableRow: Range"
 description: "Returns the range object associated with the entire row."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a [range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and a [range](../resources/workbookrange.md) object in the response body.
 
 ## Examples
 

@@ -102,7 +102,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 #### Request
 
-Here's an example of the request. Because there's no `$select` parameter, a default set of properties is tracked and returned.
+The following example shows a request. Because there's no `$select` parameter, a default set of properties is tracked and returned.
 
 
 # [HTTP](#tab/http)

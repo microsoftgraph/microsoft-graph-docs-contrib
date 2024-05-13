@@ -53,7 +53,7 @@ To access the root SharePoint site with a relative path:
 <!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
-GET /sites/{hostname}:/{relative-path}
+GET https://graph.microsoft.com/v1.0/sites/{hostname}:/{relative-path}
 ```
 
 ### Response

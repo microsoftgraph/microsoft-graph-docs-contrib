@@ -50,7 +50,7 @@ If successful, this method returns a `201 Created` response code and a new [educ
 
 #### Request
 
-The following is an example of the request to post a credit rubric (a rubric with no points).
+The following example shows a request to post a credit rubric (a rubric with no points).
 
 
 # [HTTP](#tab/http)
@@ -254,7 +254,7 @@ Content-type: application/json
 
 ### Example 2: Post a points rubric
 
-The following is an example of the request to post a rubric with points.
+The following example shows a request to post a rubric with points.
 
 
 # [HTTP](#tab/http)

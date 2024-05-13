@@ -3,7 +3,7 @@ title: "Delete deviceManagementReusablePolicySetting"
 description: "Deletes a deviceManagementReusablePolicySetting."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

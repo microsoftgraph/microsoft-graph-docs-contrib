@@ -194,7 +194,7 @@ The following example shows how to get the attendance report for a webinar sessi
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 

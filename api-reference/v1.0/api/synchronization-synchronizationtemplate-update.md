@@ -46,7 +46,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ### Examples
 
 ##### Request
-The following is an example of a request. 
+The following example shows a request. 
 
 >**Note:** The request object shown here is shortened for readability. Include all the properties in an actual call.
 
@@ -74,7 +74,7 @@ Content-type: application/json
 ---
 
 ##### Response
-The following is an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

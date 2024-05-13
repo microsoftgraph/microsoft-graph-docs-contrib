@@ -38,7 +38,7 @@ Represents the processing status of the printer, including any errors.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

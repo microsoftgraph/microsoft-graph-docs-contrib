@@ -54,7 +54,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-bundle" } -->
@@ -98,7 +98,7 @@ DELETE https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 

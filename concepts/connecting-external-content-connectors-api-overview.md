@@ -48,4 +48,5 @@ To learn more, see [Use external groups to manage permissions to Microsoft Graph
 
 ## Next step
 
-- [Build a custom connector](/graph/connecting-external-content-build-quickstart)
+> [!div class="nextstepaction"]
+> [Build a custom connector](/graph/connecting-external-content-build-quickstart)

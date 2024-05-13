@@ -5,6 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleDefinition;
+use Microsoft\Graph\Generated\Models\AccessReviewQueryScope;
+use Microsoft\Graph\Generated\Models\AccessReviewStageSettings;
+use Microsoft\Graph\Generated\Models\AccessReviewReviewerScope;
+use Microsoft\Graph\Generated\Models\AccessReviewScheduleSettings;
+use Microsoft\Graph\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Generated\Models\RecurrenceRange;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

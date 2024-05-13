@@ -3,7 +3,7 @@ title: "List activeDirectoryWindowsAutopilotDeploymentProfiles"
 description: "List properties and relationships of the activeDirectoryWindowsAutopilotDeploymentProfile objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1627
+Content-Length: 2083
 
 {
   "value": [
@@ -72,6 +72,7 @@ Content-Length: 1627
       "displayName": "Display Name value",
       "description": "Description value",
       "language": "Language value",
+      "locale": "Locale value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "outOfBoxExperienceSettings": {
@@ -82,6 +83,15 @@ Content-Length: 1627
         "deviceUsageType": "shared",
         "skipKeyboardSelectionPage": true,
         "hideEscapeLink": true
+      },
+      "outOfBoxExperienceSetting": {
+        "@odata.type": "microsoft.graph.outOfBoxExperienceSetting",
+        "privacySettingsHidden": true,
+        "eulaHidden": true,
+        "userType": "standard",
+        "deviceUsageType": "shared",
+        "keyboardSelectionPageSkipped": true,
+        "escapeLinkHidden": true
       },
       "enrollmentStatusScreenSettings": {
         "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -94,9 +104,11 @@ Content-Length: 1627
         "allowDeviceUseOnInstallFailure": true
       },
       "extractHardwareHash": true,
+      "hardwareHashExtractionEnabled": true,
       "deviceNameTemplate": "Device Name Template value",
       "deviceType": "surfaceHub2",
       "enableWhiteGlove": true,
+      "preprovisioningAllowed": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],

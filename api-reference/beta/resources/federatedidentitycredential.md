@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 | description | String | The un-validated, user-provided description of the federated identity credential. It has a limit of 600 characters. Optional.  |
 | id| String | The unique identifier for the federated identity. Required. Read-only.  |
 | issuer | String | The URL of the external identity provider and must match the `issuer` claim of the external token being exchanged. The combination of the values of **issuer** and **subject** must be unique on the app. It has a limit of 600 characters. Required. |
-| name | String | is the unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly. It is immutable once created. Required. Not nullable. Supports `$filter` (`eq`). |
+| name | String | The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly. It is immutable once created. Alternate key. Required. Not nullable. Supports `$filter` (`eq`). |
 | subject | String | Required. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the `sub` claim within the token presented to Microsoft Entra ID. The combination of **issuer** and **subject** must be unique on the app. It has a limit of 600 characters. Supports `$filter` (`eq`). |
 
 

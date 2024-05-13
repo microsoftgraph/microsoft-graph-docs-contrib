@@ -1,7 +1,7 @@
 ---
-author: spgraph-docs-team
-title: listItem resource
-description: Represents an item in a sharepoint list.
+author: "spgraph-docs-team"
+title: "listItem resource"
+description: "Represents an item in a SharePoint list."
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
@@ -35,6 +35,7 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 | [List documentSetVersions](../api/listitem-list-documentsetversions.md)  | [documentSetVersion][] collection  | Get a list of the versions of a document set item in a list.              |
 | [Create documentSetVersion](../api/listitem-post-documentsetversions.md) | [documentSetVersion][]             | Create a new version of a document set item in a list.                    |
 | [Restore documentSetVersion](../api/documentsetversion-restore.md)       | No Content                         | Restore the document set item to a specific version.                      |
+| [Get delta](../api/listitem-delta.md) | [listItem](../resources/listitem.md) collection | Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection. |
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -98,7 +99,7 @@ The following properties are inherited from **[baseItem][]**.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

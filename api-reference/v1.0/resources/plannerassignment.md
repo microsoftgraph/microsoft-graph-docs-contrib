@@ -22,7 +22,7 @@ The **plannerAssignment** resource represents the assignment of a task to a user
 |orderHint|String|Hint used to order assignees in a task. The format is defined as outlined [here](planner-order-hint-format.md).|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

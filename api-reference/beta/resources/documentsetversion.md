@@ -38,7 +38,7 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 | lastModifiedBy       | [identitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|
 | lastModifiedDateTime | [dateTimeOffset](../resources/timestamp.md)          | Date and time when the version was last modified. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).     |
 | published            | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).| 
-| shouldCaptureMinorVersion | boolean  | If `true`, minor versions of items are also captured; otherwise, only major versions will be captured. Default value is `false`.|
+| shouldCaptureMinorVersion | boolean  | If `true`, minor versions of items are also captured; otherwise, only major versions are captured. The default value is `false`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -46,7 +46,7 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 | fields        | [fieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

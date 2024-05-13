@@ -3,7 +3,7 @@ title: "getScopesForUser function"
 description: "Intune Rbac Resourceoperation Getscopesforuser Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

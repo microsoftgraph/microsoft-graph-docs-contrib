@@ -3,7 +3,7 @@ title: "Create windowsAutopilotDeploymentProfilePolicySetItem"
 description: "Create a new windowsAutopilotDeploymentProfilePolicySetItem object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "deviceConfigurationUserActivity function"
 description: "Metadata for the device configuration user activity report"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -47,7 +47,7 @@ GET /reports/deviceConfigurationUserActivity
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune-deviceconfig-report.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.
 
 ## Example
 

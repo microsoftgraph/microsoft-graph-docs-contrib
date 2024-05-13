@@ -23,7 +23,7 @@ configuration := &graphusers.ItemMailFolderItemMessagesDelta()RequestBuilderGetR
 	Headers: headers,
 }
 
-delta, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").Messages().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").Messages().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

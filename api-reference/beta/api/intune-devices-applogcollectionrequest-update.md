@@ -3,7 +3,7 @@ title: "Update appLogCollectionRequest"
 description: "Update the properties of a appLogCollectionRequest object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

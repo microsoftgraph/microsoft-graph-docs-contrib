@@ -71,7 +71,7 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 
 ## Example
 ### Request
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

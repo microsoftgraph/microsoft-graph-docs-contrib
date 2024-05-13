@@ -22,8 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "adminconsentrequestpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/adminconsentrequestpolicy-get-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-+ Global Administrator
+When calling on behalf of a user, the user needs to belong to at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+
 + Global Reader
 + Cloud Application Administrator
 + Application Administrator

@@ -3,7 +3,7 @@ title: "Update windowsMobileMSI"
 description: "Update the properties of a windowsMobileMSI object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

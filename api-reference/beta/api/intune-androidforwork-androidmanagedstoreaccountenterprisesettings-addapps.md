@@ -3,7 +3,7 @@ title: "addApps action"
 description: "Intune Androidforwork Androidmanagedstoreaccountenterprisesettings Addapps Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

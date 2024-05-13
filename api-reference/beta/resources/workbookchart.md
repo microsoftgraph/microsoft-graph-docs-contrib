@@ -3,7 +3,7 @@ title: "workbookChart resource type"
 description: "Represents a chart object in a workbook."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -55,7 +55,7 @@ Represents a chart object in a workbook.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

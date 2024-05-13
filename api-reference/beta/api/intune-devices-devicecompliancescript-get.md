@@ -3,7 +3,7 @@ title: "Get deviceComplianceScript"
 description: "Read properties and relationships of the deviceComplianceScript object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

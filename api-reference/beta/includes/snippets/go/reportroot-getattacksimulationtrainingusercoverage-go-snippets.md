@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getAttackSimulationTrainingUserCoverage, err := graphClient.Reports().GetAttackSimulationTrainingUserCoverage().Get(context.Background(), nil)
+getAttackSimulationTrainingUserCoverage, err := graphClient.Reports().GetAttackSimulationTrainingUserCoverage().GetAsGetAttackSimulationTrainingUserCoverageGetResponse(context.Background(), nil)
 
 
 ```

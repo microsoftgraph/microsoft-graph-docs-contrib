@@ -64,7 +64,7 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 ## Examples
 ### Example 1: Include a file attachment
 #### Request
-Here is an example of a request that includes a file as an attachment when creating a post.
+The following example shows a request that includes a file as an attachment when creating a post.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -126,7 +126,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_with_post"
@@ -138,7 +138,7 @@ HTTP/1.1 202 Accpted
 ### Example 2: Include an item attachment
 
 #### Request
-Here is an example of a request that includes an event as an attachment when creating a post.
+The following example shows a request that includes an event as an attachment when creating a post.
 
 
 # [HTTP](#tab/http)
@@ -216,7 +216,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_with_post"
@@ -228,7 +228,7 @@ HTTP/1.1 202 Accepted
 ### Example 3: Include a reference attachment
 
 #### Request
-Here is an example of a request that includes a reference attachment when creating a post.
+The following example shows a request that includes a reference attachment when creating a post.
 The attachment points to a folder on OneDrive.
 
 # [HTTP](#tab/http)
@@ -294,7 +294,7 @@ Content-type: application/json
 ---
 
 #### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_with_post"

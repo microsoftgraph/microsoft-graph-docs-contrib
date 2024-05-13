@@ -3,7 +3,7 @@ title: "platform enum type"
 description: "Intune Enrollment Platform Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

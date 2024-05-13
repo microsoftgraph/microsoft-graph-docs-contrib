@@ -3,7 +3,7 @@ title: "Create enterpriseCodeSigningCertificate"
 description: "Create a new enterpriseCodeSigningCertificate object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

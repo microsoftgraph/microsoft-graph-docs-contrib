@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewApplication()
 identifierUris := []string {
-	"https://contosoiwaapp-contoso.msappproxy.net",
+	"api://32977d3b-ee0e-4614-9f50-f583a07842d2",
 }
 requestBody.SetIdentifierUris(identifierUris)
 web := graphmodels.NewWebApplication()

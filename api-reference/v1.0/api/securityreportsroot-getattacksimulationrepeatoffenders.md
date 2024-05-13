@@ -48,7 +48,7 @@ If successful, this function returns a `200 OK` response code and an [attackSimu
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

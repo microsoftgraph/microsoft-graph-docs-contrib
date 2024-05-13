@@ -39,7 +39,7 @@ GET /security/attackSimulation/trainings/{trainingId}
 
 ## Optional query parameters
 
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [training](../
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -155,6 +155,7 @@ Content-Type: application/json
         "email": "yibsu",
         "id": null,
         "displayName": null
-    }
+    },
+    "customUrl" : null
 }
 ```
