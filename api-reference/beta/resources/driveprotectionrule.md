@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionRule resource type"
-description: "Describes mailbodrive protection rule and it's properties""
+description: "Describes drive protection rule and it's properties""
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -20,22 +20,23 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List driveProtectionRule objects](../api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Get a list of the [driveProtectionRule](../resources/driveprotectionrule.md) objects and their properties.|
-|[Create driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-post-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Create a new [driveProtectionRule](../resources/driveprotectionrule.md) object.|
-|[Get driveProtectionRule](../api/driveprotectionrule-get.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md) object.|
-|[Update driveProtectionRule](../api/driveprotectionrule-update.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Update the properties of a [driveProtectionRule](../resources/driveprotectionrule.md) object.|
-|[Delete driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-delete-driveinclusionrules.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md) object.|
-|[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
+|[List driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Get a list of the [driveProtectionRule](../resources/driveprotectionrule.md) and their properties.|
+|[Create driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-create-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Create a new [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[Get driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-get-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[Delete driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-delete-driveinclusionrules.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md).|
+|[run](../api/driveprotectionrule-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
+<!-- |[Update driveProtectionRule](../api/driveprotectionrule-update.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Update the properties of a [driveProtectionRule](../resources/driveprotectionrule.md) object.| -->
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the protection rule associated to the policy.|
-|createdBy|identitySet|The identity of person who created the rule.|
+|createdBy|[identitySet](../resources/identityset.md)entitySet|The identity of person who created the rule.|
 |createdDateTime|DateTimeOffset|The time of creation of the rule.|
-|error|publicError|Error details will be populated here, if any operation on rule expression fails|
+|driveExpression|String|A property which contains the appropriate drive expression|
+|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if any operation on rule expression fails|
 |isAutoApplyEnabled|Boolean|A boolean flag indicating whether the protection rule is static or dynamic. Static rules gets executed one time whereas dynamic rule listens to all changes in the system and updates the protection unit list.|
-|lastModifiedBy|identitySet|Identity of the person who last modified this rule.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this rule .|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 

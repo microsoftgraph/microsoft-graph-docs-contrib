@@ -20,23 +20,24 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List mailboxProtectionRule objects](../api/exchangeprotectionpolicy-list-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|Get a list of the [mailboxProtectionRule](../resources/mailboxprotectionrule.md) objects and their properties.|
-|[Create mailboxProtectionRule](../api/exchangeprotectionpolicy-post-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Create a new [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.|
-|[Get mailboxProtectionRule](../api/mailboxprotectionrule-get.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.|
-|[Update mailboxProtectionRule](../api/mailboxprotectionrule-update.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Update the properties of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.|
-|[Delete mailboxProtectionRule](../api/exchangeprotectionpolicy-delete-mailboxinclusionrules.md)|None|Delete a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.|
-|[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
+|[List mailboxProtectionRule](../api/exchangeprotectionpolicy-list-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|Get a list of the [mailboxProtectionRule](../resources/mailboxprotectionrule.md) and their properties.|
+|[Create mailboxProtectionRule](../api/exchangeprotectionpolicy-create-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Create a new [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[Get mailboxProtectionRule](../api/exchangeprotectionpolicy-get-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[Delete mailboxProtectionRule](../api/exchangeprotectionpolicy-delete-mailboxinclusionrules.md)|None|Delete a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[run](../api/mailboxprotectionrule-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
+<!-- |[Update mailboxProtectionRule](../api/mailboxprotectionrule-update.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Update the properties of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).| -->
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the protection rule associated to the policy.|
-|createdBy|identitySet|The identity of person who created the rule.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the rule.|
 |createdDateTime|DateTimeOffset|The time of creation of the rule.|
-|error|publicError|Error details will be populated here, if any operation on rule expression fails|
+|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if any operation on rule expression fails|
 |isAutoApplyEnabled|Boolean|A boolean flag indicating whether the protection rule is static or dynamic. Static rules gets executed one time whereas dynamic rule listens to all changes in the system and updates the protection unit list.|
-|lastModifiedBy|identitySet|Identity of the person who last modified this rule.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this rule .|
+|mailboxExpression|String|A property which contains the appropriate mailbox expression|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
 ### protectionRuleStatus values
