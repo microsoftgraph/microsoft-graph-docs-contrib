@@ -211,7 +211,7 @@ HTTP/1.1 201 Created
 
 #### Request
 
-The following example shows a request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
