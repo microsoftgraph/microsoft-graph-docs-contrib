@@ -1,6 +1,6 @@
 ---
 title: "Create or replace customClaimsPolicy"
-description: "Create a new custom claims policy object or if it doesn't exist, or replace an existing one."
+description: "Create a new custom claims policy object if it doesn't exist, or replace an existing one."
 "
 author: "rahul-nagraj"
 ms.localizationpriority: medium
