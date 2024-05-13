@@ -27,11 +27,11 @@ Represents a customer in Dynamics 365 Business Central.
 ## Properties
 | Property	  | Type	 |Description|
 |:------------|:---------|:----------|
-|id           |GUID      |The unique ID of the item. Non-editable.|
+|id           |GUID      |The unique ID of the item. Noneditable.|
 |number       |string    |The customer number.|
-|displayName  |string    |Specifies the customer's name. This name will appear on all sales documents for the customer.|
+|displayName  |string    |Specifies the customer's name. This name appears on all sales documents for the customer.|
 |type         |string    |Specifies the type of customer, can be "Company" or "Person".|
-|address      |[NAV.PostalAddress](../resources/dynamics-complextypes.md)|Specifies the customer's address. This address will appear on all sales documents for the customer.|
+|address      |[NAV.PostalAddress](../resources/dynamics-complextypes.md)|Specifies the customer's address. This address appears on all sales documents for the customer.|
 |phoneNumber  |string    |Specifies the customer's telephone number.|
 |email        |string    |Specifies the customer's email address.|
 |website      |string    |Specifies the customer's home page address.|
@@ -44,7 +44,7 @@ Represents a customer in Dynamics 365 Business Central.
 |paymentTermsId|GUID     |Specifies which payment term the customer uses.|
 |paymentMethodId|GUID    |Specifies which payment method the customer uses.|
 |shipmentMethodId|GUID   |Specifies which shipment method the customer uses.|
-|blocked      |string    |Specifies that transactions with the customer cannot be posted. Set to **All**, if the customer is blocked, set to blank if not blocked.|
+|blocked      |string    |Specifies that transactions with the customer can't be posted. Set to **All**, if the customer is blocked, set to blank if not blocked.|
 |balance      |numeric   |Specifies the payment amount that the customer owes for completed sales. This value is also known as the customer's balance. Read-Only.|
 |overdueAmount|numeric   |Specifies the customer's overdue amount.|
 |totalSalesExcludingTax|numeric|Specifies the total sales amount excluding tax of the customer.|

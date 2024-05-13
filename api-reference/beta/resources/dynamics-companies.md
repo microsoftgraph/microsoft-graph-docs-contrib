@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the company.
+Here's a JSON representation of the company.
 
 ```json
 {

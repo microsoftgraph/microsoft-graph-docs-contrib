@@ -1,11 +1,10 @@
 ---
-title: "account resource type"
-description: "Represents an account object in Dynamics 365 Business Central."
-services: "project-madeira"
-documentationcenter: ''
-author: "SusanneWindfeldPedersen"
+title: account resource type
+description: Represents an account object in Dynamics 365 Business Central.
+services: project-madeira
+author: SusanneWindfeldPedersen
 ms.localizationpriority: medium
-ms.subservice: "d365-business-central"
+ms.subservice: d365-business-central
 doc_type: resourcePageType
 ---
 
@@ -41,7 +40,6 @@ None.
 
 The following JSON representation shows the resource type.
 
-
 ```json
 {
   "blocked": "Boolean",
@@ -53,5 +51,3 @@ The following JSON representation shows the resource type.
   "subCategory": "String"
 }
 ```
-
-

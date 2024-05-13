@@ -32,7 +32,7 @@ Represents a currency used in Dynamics 365 Business Central.
 |amountRoundingPrecision|Decimal |The size of the interval to be used when rounding amounts for this currency.|
 |code                   |String  |The currency code.                                  |
 |displayName            |String  |The display name for the currency.                          |
-|id                     |String    |The unique identifier of the currency. Non-editable.                  |
+|id                     |String    |The unique identifier of the currency. Noneditable.                  |
 |lastModifiedDateTime   |Datetime|The date and time the currency was last modified. Read-Only.       |
 |symbol                 |String  |The symbol for this currency that appears on checks.|
 
@@ -42,7 +42,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource.
 
 ```json
 {
