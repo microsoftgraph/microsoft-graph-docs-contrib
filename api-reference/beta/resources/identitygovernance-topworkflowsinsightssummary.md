@@ -20,7 +20,7 @@ The topWorkflowsInsightSummary represents a summary of the workflows processed t
 |Property|Type|Description|
 |:---|:---|:---|
 |failedRuns|Int32|Count of failed runs for workflow.|
-|failedUsers|Int32|Count of failed users who were successfully processed.|
+|failedUsers|Int32|Count of failed users who were processed.|
 |successfulRuns|Int32|Count of successful runs of the workflow.|
 |successfulUsers|Int32|Count of successful users processed by the workflow.|
 |totalRuns|Int32|Count of total runs of workflow.|

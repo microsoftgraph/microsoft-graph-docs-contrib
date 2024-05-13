@@ -19,15 +19,15 @@ The workflow insights summary provides a numerical summary of run information fo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|failedRuns|Int32|Failed workflows runs processed in the tenant.|
-|failedTasks|Int32|Failed tasks processed in the tenant.|
-|failedUsers|Int32|Failed users processed by workflows in the tenant.|
-|successfulRuns|Int32|Successful workflow runs processed in the tenant.|
-|successfulTasks|Int32|Successful tasks processed in the tenant.|
-|successfulUsers|Int32|Successful users processed by workflows in the tenant.|
-|totalRuns|Int32|Total workflows processed in the tenant.|
-|totalTasks|Int32|Total tasks processed by workflows in the tenant.|
-|totalUsers|Int32|Total users processed  by workflows in the tenant.|
+|failedRuns|Int32|Count of failed workflow runs processed in the tenant.|
+|failedTasks|Int32|Count of failed tasks processed in the tenant.|
+|failedUsers|Int32|Count of failed users processed by workflows in the tenant.|
+|successfulRuns|Int32|Count of successful workflow runs processed in the tenant.|
+|successfulTasks|Int32|Count of successful tasks processed in the tenant.|
+|successfulUsers|Int32|Count of successful users processed by workflows in the tenant.|
+|totalRuns|Int32|Count of total workflows processed in the tenant.|
+|totalTasks|Int32|Count of total tasks processed by workflows in the tenant.|
+|totalUsers|Int32|Count of total users processed by workflows in the tenant.|
 
 ## Relationships
 

@@ -19,14 +19,14 @@ The topTasksInsightSummary represents a summary of the top tasks ran within a te
 
 |Property|Type|Description|
 |:---|:---|:---|
-|failedTasks|Int32|Failed run count of the task.|
-|failedUsers|Int32| Failed users processed by the task.|
-|successfulTasks|Int32|Successful run count of task.|
-|successfulUsers|Int32|Successful users processed by the task.|
-|taskDefinitionDisplayName|String|Name of task.|
-|taskDefinitionId|String|The task definition ID.|
-|totalTasks|Int32|Total run count of task.|
-|totalUsers|Int32|Total users processed by the task.|
+|failedTasks|Int32|Count of failed runs of the task.|
+|failedUsers|Int32|Count of failed users who were processed by the task.|
+|successfulTasks|Int32|Count of successful runs of the task.|
+|successfulUsers|Int32|Count of successful users processed by the task.|
+|taskDefinitionDisplayName|String|The name of the task.|
+|taskDefinitionId|String|The task ID.|
+|totalTasks|Int32|Count of total runs of the task.|
+|totalUsers|Int32|Count of total users processed by the task.|
 
 ## Relationships
 
