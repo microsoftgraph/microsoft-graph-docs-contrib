@@ -22,7 +22,7 @@ Inherits from [customClaimBase](../resources/customclaimbase.md).
 |:---|:---|:---|
 |configurations|[customClaimConfiguration](../resources/customclaimconfiguration.md) collection|One or more configurations that describe how the claim is sourced and under what conditions. Inherited from [customClaimBase](../resources/customclaimbase.md).|
 |nameIdFormat|samlNameIDFormat|Allows to specify the format of the saml nameID claim value. The possible values are: `default`, `unspecified`, `emailAddress`, `windowsDomainQualifiedName`, `persistent`, `unknownFutureValue`.|
-|serviceProviderNameQualifier|String|Allows the specification of a service provider name qualifier reflected in the sAML response. The value provided must match one of the service provider names configured for the application and is only applicable for IdP-initiated applications (the sign-on URL should be empty for the IdP-initiated applications), in all other cases this value will be ignored.|
+|serviceProviderNameQualifier|String|Allows the specification of a service provider name qualifier reflected in the sAML response. The value provided must match one of the service provider names configured for the application and is only applicable for IdP-initiated applications (the sign-on URL should be empty for the IdP-initiated applications), in all other cases this value is ignored.|
 
 ## Relationships
 None.
