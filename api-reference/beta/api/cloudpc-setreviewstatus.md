@@ -61,7 +61,7 @@ If successful, this action returns a `204 No Content` response code.
 The following is an example of a request.
 
 
-# [HTTP](#tab/http)
+## HTTP
 <!-- {
   "blockType": "request",
   "name": "cloudpcthis.setreviewstatus",
@@ -79,6 +79,8 @@ Content-Type: application/json
   }
 }
 ```
+
+---
 
 ### Response
 

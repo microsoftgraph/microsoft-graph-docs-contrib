@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: create snapshot"
-description: "Create snapshot for a specific Cloud PC device with CloudPc Id."
+description: "Create snapshot for a specific Cloud PC device with CloudPC ID."
 author: "Jiaer Huang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create snapshot for a specific Cloud PC device with CloudPc Id.
+Create snapshot for a specific Cloud PC device with CloudPC ID.
 
 ## Permissions
 
@@ -44,7 +44,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/createSnapshot
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
