@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Protection Policy represents the plan defined by the Global Admin(or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online) for protecting the M365 data of an organization. It will contain details of what data to protect, when to protect it and for what time period to retain the protected data for a single M365 service.
+Protection Policy represents the plan defined by the Global Admin (or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online) for protecting the M365 data of an organization. It will contain details of what data to protect, when to protect it and for what time period to retain the protected data for a single M365 service.
 This is an abstract type.
 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List protectionPolicyBase objects](../api/backuprestoreroot-list-protectionpolicies.md)|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|Get a list of the [protectionPolicyBase](../resources/protectionpolicybase.md) objects and their properties.|
+|[List protectionPolicyBase](../api/backuprestoreroot-list-protectionpolicies.md)|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|Get a list of the [protectionPolicyBase](../resources/protectionpolicybase.md) and their properties.|
 |[Create protectionPolicyBase](../api/backuprestoreroot-post-protectionpolicies.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Create a new [protectionPolicyBase](../resources/protectionpolicybase.md) object.|
 |[Get protectionPolicyBase](../api/protectionpolicybase-get.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.|
 |[Update protectionPolicyBase](../api/protectionpolicybase-update.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Update the properties of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.|

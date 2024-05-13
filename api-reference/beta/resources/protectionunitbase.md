@@ -30,12 +30,12 @@ This is an abstract type.
 |:---|:---|:---|
 |id|String|The unique identitifer of the protection unit|
 |policyId|String|The unique identifier of the protection policy based on which protection unit was created|
-|createdBy|identitySet|The identity of person who created the protection unit|
+|createdBy|ident[identitySet](../resources/identityset.md)itySet|The identity of person who created the protection unit|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit|
-|error|publicError|Describes error occurred while creating a protection unit|
-|lastModifiedBy|identitySet|The identity of person who modified|
+|error|[publicError](../resources/publicerror.md)|Describes error occurred while creating a protection unit|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who modified|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this protection unit|
-|status|[protectionUnitStatus](../resource/protectionunitbase.md#protectionunitstatus-values)|Status of the protection unit.The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|Status of the protection unit.The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
 |Member | Description |

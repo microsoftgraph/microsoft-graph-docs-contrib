@@ -19,18 +19,18 @@ RestorePoints represent the timestamp when an [artifact](../resources/restoreart
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List restorePoint objects](../api/siterestoreartifact-list-restorepoint.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties.|
-|[Create restorePoint](../api/siterestoreartifact-post-restorepoint.md)|[restorePoint](../resources/restorepoint.md)|Create a new [restorePoint](../resources/restorepoint.md) object.|
+|[List restorePoint](../api/siterestoreartifact-list-restorepoint.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) and their properties.|
+|[Search](../api/restorepoint-search.md)|[restorePointSearchResponse](../resources/restorepointsearchresponse.md)|Search restorepoints for given [protectionUnits](../resources/protectionunitbase.md)|
+<!-- |[Create restorePoint](../api/siterestoreartifact-post-restorepoint.md)|[restorePoint](../resources/restorepoint.md)|Create a new [restorePoint](../resources/restorepoint.md) object.|
 |[Get restorePoint](../api/restorepoint-get.md)|[restorePoint](../resources/restorepoint.md)|Read the properties and relationships of a [restorePoint](../resources/restorepoint.md) object.|
 |[Update restorePoint](../api/restorepoint-update.md)|[restorePoint](../resources/restorepoint.md)|Update the properties of a [restorePoint](../resources/restorepoint.md) object.|
 |[Delete restorePoint](../api/siterestoreartifact-delete-restorepoint.md)|None|Delete a [restorePoint](../resources/restorepoint.md) object.|
-|[search](../api/restorepoint-search.md)|[restorePointSearchResponse](../resources/restorepointsearchresponse.md)|Search restorepoints for given [protectionUnits](../resources/protectionunitbase.md)|
 |[List protectionPolicyBase](../api/restorepoint-list-protectionpolicy.md)|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|Get the protectionPolicyBase resources from the protectionPolicy navigation property.|
 |[Add protectionPolicyBase](../api/restorepoint-post-protectionpolicy.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Add protectionPolicy by posting to the protectionPolicy collection.|
 |[Remove protectionPolicyBase](../api/restorepoint-delete-protectionpolicy.md)|None|Remove a [protectionPolicyBase](../resources/protectionpolicybase.md) object.|
 |[List protectionUnitBase](../api/restorepoint-list-protectionunit.md)|[protectionUnitBase](../resources/protectionunitbase.md) collection|Get the protectionUnitBase resources from the protectionUnit navigation property.|
 |[Add protectionUnitBase](../api/restorepoint-post-protectionunit.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Add protectionUnit by posting to the protectionUnit collection.|
-|[Remove protectionUnitBase](../api/restorepoint-delete-protectionunit.md)|None|Remove a [protectionUnitBase](../resources/protectionunitbase.md) object.|
+|[Remove protectionUnitBase](../api/restorepoint-delete-protectionunit.md)|None|Remove a [protectionUnitBase](../resources/protectionunitbase.md) object.| -->
 
 ## Properties
 |Property|Type|Description|

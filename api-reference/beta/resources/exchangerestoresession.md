@@ -20,26 +20,26 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List exchangeRestoreSession objects](../api/backuprestoreroot-list-exchangerestoresessions.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|Get a list of the [exchangeRestoreSession](../resources/exchangerestoresession.md) objects and their properties.|
-|[Create exchangeRestoreSession](../api/backuprestoreroot-post-exchangerestoresessions.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md) object.|
-|[Get exchangeRestoreSession](../api/exchangerestoresession-get.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Read the properties and relationships of an [exchangeRestoreSession](../resources/exchangerestoresession.md) object.|
-|[Update exchangeRestoreSession](../api/exchangerestoresession-update.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Update the properties of an [exchangeRestoreSession](../resources/exchangerestoresession.md) object.|
+|[Create exchangeRestoreSession](../api/exchangerestoresession-create.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md).|
+|[List exchangeRestoreSession](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|Get a list of the [exchangeRestoreSession](../resources/exchangerestoresession.md) and their properties.|
+|[Update exchangeRestoreSession](../api/exchangerestoresession-update.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Update the properties of an [exchangeRestoreSession](../resources/exchangerestoresession.md).|
+<!-- |[Get exchangeRestoreSession](../api/exchangerestoresession-get.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Read the properties and relationships of an [exchangeRestoreSession](../resources/exchangerestoresession.md) object.|
 |[Delete exchangeRestoreSession](../api/backuprestoreroot-delete-exchangerestoresessions.md)|None|Delete an [exchangeRestoreSession](../resources/exchangerestoresession.md) object.|
 |[activate](../api/exchangerestoresession-activate.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Activates a draft restore session|
 |[List mailboxRestoreArtifacts](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Get the mailboxRestoreArtifact resources from the mailboxRestoreArtifacts navigation property.|
-|[Create mailboxRestoreArtifact](../api/exchangerestoresession-post-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md)|Create a new mailboxRestoreArtifact object.|
+|[Create mailboxRestoreArtifact](../api/exchangerestoresession-post-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md)|Create a new mailboxRestoreArtifact object.| -->
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the restore session created|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session.|
-|createdBy|identitySet|The identity of person who created the restore session.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the restore session.|
 |createdDateTime|DateTimeOffset|The time of completion of the restore session.|
-|error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
-|lastModifiedBy|identitySet|Identity of the person who last modified this restore session.|
+|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resource/exchangerestoresession.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resources/exchangerestoresession.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
 |Member | Description |
