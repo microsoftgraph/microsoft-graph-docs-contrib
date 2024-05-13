@@ -1,6 +1,6 @@
 ---
 title: "profileSourceAnnotation resource type"
-description: "Represents the sources the user data comes from, such as Entra, UPA, Connector, etc."
+description: "Represents the sources the user data comes from, such as Entra, UPA, Connector, and so on."
 ms.localizationpriority: medium
 author: "caiyuanle"
 ms.service: "microsoft-graph"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the sources the user data comes from, such as Entra, UPA, Connector, etc.
+Represents the sources the user data comes from, such as Entra, UPA, Connector, and so on.
 
 ## Properties
 |Property	|Type	|Description|

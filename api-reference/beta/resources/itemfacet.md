@@ -1,6 +1,6 @@
 ---
 title: "itemFacet resource type"
-description: "itemFacet resource type"
+description: "Represents the abstract base type for the all resource types in the profile entity set."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.service: "microsoft-graph"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.
+Represents the abstract base type for the all resource types in the [profile](profile.md) entity set.
 
 ## Properties
 |Property|Type|Description|
