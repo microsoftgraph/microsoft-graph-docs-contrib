@@ -4765,6 +4765,22 @@ Possible values for user account types (group membership), per Windows definitio
 |embed|
 |unknownFutureValue|
 
+### trustFrameworkKeyStatus values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### trustFrameworkKeyStatus values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### approvalItemState values 
 
 |Member|

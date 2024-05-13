@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "1c97b312-73da-4ebc-bb0c-7ab74d883bd9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationConfiguration** relationship to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "1c97b312-73da-4ebc-bb0c-7ab74d883bd9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventWebinarRegistrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta) resource and a supported method.",
+          "Target": "virtualEventWebinarRegistrationConfiguration"
+        }
+      ],
+      "Id": "1c97b312-73da-4ebc-bb0c-7ab74d883bd9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-07T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventPresenter",
