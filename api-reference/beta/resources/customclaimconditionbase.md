@@ -17,7 +17,6 @@ Represents an abstract type for a custom claim condition base.
 
 ## Properties
 None.
-|:---|:---|:---|
 
 ## Relationships
 None.

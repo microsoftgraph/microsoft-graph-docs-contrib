@@ -1,6 +1,6 @@
 ---
 title: "customClaimAttributeBase resource type"
-description: "Custom claim attribute base"
+description: "Custom claim attribute base."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
@@ -17,7 +17,6 @@ This is an abstract type for the custom claim attribute base.
 
 ## Properties
 None.
-|:---|:---|:---|
 
 ## Relationships
 None.

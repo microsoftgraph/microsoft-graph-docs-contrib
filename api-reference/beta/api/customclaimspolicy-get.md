@@ -1,6 +1,6 @@
 ---
 title: "Get customClaimsPolicy"
-description: "Get the properties and relationships of a custom claims policy object. "
+description: "Get the properties and relationships of a custom claims policy object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
