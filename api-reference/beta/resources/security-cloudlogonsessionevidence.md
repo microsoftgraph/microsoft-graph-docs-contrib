@@ -1,7 +1,7 @@
 ---
 title: "cloudLogonSessionEvidence resource type"
 description: "A cloud logon session by an account."
-ms.date: 30/04/2024
+ms.date: 30/4/2024
 author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -21,7 +21,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 ## Properties
 | Property  | Type |Description|
 |:----------|:-------|:---|
-| sessionId | String| The session id for the account reported in the alert, e.g. 177997dc-5cba-435a-abdd-2bab21926d00 | 
+| sessionId | String| The session id for the account reported in the alert | 
 | account| [microsoft.graph.security.userEvidence](security-userevidence.md) | The Account associated with the logon session|
 | protocol  | String| The auth protocol that is used in this session, if known|
 | deviceName| String| The friendly name of the device, if known  |
