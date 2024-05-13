@@ -73,6 +73,9 @@ Lifecycle Workflows supports the following user properties for configuring the r
 
 You can also configure rules using [Directory (Microsoft Entra ID) extensions](/graph/extensibility-overview#directory-azure-ad-extensions) and [custom security attributes](/graph/api/resources/custom-security-attributes-overview). It is not supported to configure rules with schema extensions or open extensions.
 
+> [!NOTE]
+> Using custom security attributes requires the Attribute Assignment Administrator role. For more information, see: [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference#attribute-assignment-administrator).
+
 #### Examples of rules
 
 | Example rule                                                           | Description                                                                             |
