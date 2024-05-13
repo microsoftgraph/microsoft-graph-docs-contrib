@@ -109,6 +109,64 @@
       "CreatedDateTime": "2024-02-08T00:26:43.6656685Z",
       "WorkloadArea": "Calendar",
       "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workplaceSensorEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **workplaceSensorEventType** enumeration type.",
+          "Target": "workplaceSensorEventType"
+        },
+        {
+          "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
+          "ApiChange": "Member",
+          "ChangedApiName": "badge",
+          "ChangeType": "Addition",
+          "Description": "Added the `badge` member to the **workplaceSensorType** enumeration.",
+          "Target": "workplaceSensorType"
+        },
+        {
+          "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
+          "ApiChange": "Member",
+          "ChangedApiName": "wifi",
+          "ChangeType": "Addition",
+          "Description": "Added the `wifi` member to the **workplaceSensorType** enumeration.",
+          "Target": "workplaceSensorType"
+        },
+        {
+          "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
+          "ApiChange": "Property",
+          "ChangedApiName": "eventValue",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventValue** property to the [workplaceSensorDeviceTelemetry](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensorDeviceTelemetry?view=graph-rest-beta) resource.",
+          "Target": "workplaceSensorDeviceTelemetry"
+        },
+        {
+          "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
+          "ApiChange": "Property",
+          "ChangedApiName": "locationHint",
+          "ChangeType": "Addition",
+          "Description": "Added the **locationHint** property to the [workplaceSensorDeviceTelemetry](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensorDeviceTelemetry?view=graph-rest-beta) resource.",
+          "Target": "workplaceSensorDeviceTelemetry"
+        },
+        {
+          "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workplaceSensorEventValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [workplaceSensorEventValue](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensorEventValue?view=graph-rest-beta) resource.",
+          "Target": "workplaceSensorEventValue"
+        }
+      ],
+      "Id": "58d595a9-f4f2-4da5-ad2b-bbd3e25f5ca1",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-10T21:07:51.9198392Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
     }
   ]
 }
