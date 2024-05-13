@@ -73,7 +73,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.directoryObject)"
+  "@odata.type": "microsoft.graph.directoryObject"
 }
 -->
 ``` http
@@ -81,17 +81,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "displayName": "Adele Vance",
-   "givenName": "Adele",
-   "jobTitle": "Retail Manager",
-   "mail": "AdeleV@contoso.com",
-   "mobilePhone": "+1 425 555 0109",
-   "officeLocation": "18/2111",
-   "preferredLanguage": "en-US",
-   "surname": "Vance",
-   "invitedBy": "93636d4a-4d22-4f76-841f-1d4c7ca7de9d",
-   "userPrincipalName": "AdeleV@contoso.com",
-   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
+    "value": [
+    {
+       "displayName": "Adele Vance",
+       "givenName": "Adele",
+       "jobTitle": "Retail Manager",
+       "mail": "AdeleV@contoso.com",
+       "mobilePhone": "+1 425 555 0109",
+       "officeLocation": "18/2111",
+       "preferredLanguage": "en-US",
+       "surname": "Vance",
+       "invitedBy": "93636d4a-4d22-4f76-841f-1d4c7ca7de9d",
+       "userPrincipalName": "AdeleV@contoso.com",
+       "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
+    }
+    ]
 }
 ```
 
