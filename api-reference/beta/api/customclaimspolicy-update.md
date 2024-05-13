@@ -1,6 +1,6 @@
 ---
 title: "Update customClaimsPolicy"
-description: "Update an existing customClaimsPolicy object."
+description: "Update a custom claims policy object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id

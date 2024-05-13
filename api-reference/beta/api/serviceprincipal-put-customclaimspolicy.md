@@ -1,6 +1,7 @@
 ---
 title: "Create or replace customClaimsPolicy"
-description: "Create a new customClaimsPolicy object or replace an existing customClaimsPolicy object."
+description: "Create a new custom claims policy object or if it doesn't exist, or replace an existing one."
+"
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
