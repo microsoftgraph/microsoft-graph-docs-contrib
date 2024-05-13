@@ -14,6 +14,7 @@ ms.localizationpriority: high
 | Resource                                       | Maximum expiration time       |
 |:-----------------------------------------------|:------------------------------|
 | Security [alert][]                             | 43,200 minutes (under 30 days)|
+| Teams [approvals][]                            | 43,200 minutes (under 30 days)|
 | Teams [callRecord][]                           | 4,230 minutes (under 3 days)  |
 | Teams [callRecording][]                        | 4,320 minutes (3 days)        |
 | Teams [callTranscript][]                       | 4,320 minutes (3 days)        |
@@ -60,3 +61,4 @@ ms.localizationpriority: high
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
+[approvals]: /graph/api/resources/approvals
