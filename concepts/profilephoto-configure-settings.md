@@ -51,7 +51,7 @@ Content-Type: application/json
 
 {
     "source": "cloud",
-    "allowedRoles": null
+    "allowedRoles": {}
 }
 ```
 
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 {
     "source": "cloud",
-    "allowedRoles": null
+    "allowedRoles": {}
 }
 ```
 ## Block users from changing their user profile photos 
@@ -184,6 +184,6 @@ Content-Type: application/json
 
 {
     "source": "onPremises",
-    "allowedRoles": null
+    "allowedRoles": {}
 }
 ```
