@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new customClaimsPolicy object or replace an existing customClaimsPolicy object.
+Create a new [customClaimsPolicy](../resources/customclaimspolicy.md) object if it doesn't exist, or replace an existing one.
 
 ## Permissions
 

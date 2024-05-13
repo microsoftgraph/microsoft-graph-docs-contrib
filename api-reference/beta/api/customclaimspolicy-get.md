@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the customClaimsPolicy resource from the claimsPolicy navigation property.
+Get the properties and relationships of a [customClaimsPolicy](../resources/customclaimspolicy.md) object.
 
 ## Permissions
 
