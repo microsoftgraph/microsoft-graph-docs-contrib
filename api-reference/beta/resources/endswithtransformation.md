@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outputs an attribute or constant if the input ends with the specified value.
+Contains the output of a transformation if the input ends with the specified value.
 
 Inherits from [customClaimTransformation](../resources/customclaimtransformation.md).
 
