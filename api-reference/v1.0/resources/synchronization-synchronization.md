@@ -24,7 +24,6 @@ Represents the capability for Microsoft Entra identity synchronization through t
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| Identifier. Inherited from [entity](entity.md).|
 |secrets|[synchronizationSecretKeyStringValuePair](synchronization-synchronizationsecretkeystringvaluepair.md) collection| Represents a collection of credentials to access provisioned cloud applications.|
 
 ## Relationships

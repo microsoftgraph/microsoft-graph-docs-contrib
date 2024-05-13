@@ -6,8 +6,8 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.keywords:
-  - certificate-based authentication
-  - CBA
+- certificate-based authentication
+- CBA
 ---
 
 # x509CertificateAuthenticationMethodConfiguration resource type
