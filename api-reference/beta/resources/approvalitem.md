@@ -21,7 +21,7 @@ An approval item is an object that represents the approval including the decisio
 |[List](../api/approvalsolution-list-approvalitems.md)|[approvalItem](../resources/approvalitem.md) collection|Get a list of the [approvalItem](../resources/approvalitem.md) objects and their properties.|
 |[Create](../api/approvalsolution-post-approvalitems.md)|[approvalItem](../resources/approvalitem.md)|Create a new [approvalItem](../resources/approvalitem.md) object.|
 |[Get](../api/approvalitem-get.md)|[approvalItem](../resources/approvalitem.md)|Read the properties and relationships of an [approvalItem](../resources/approvalitem.md) object.|
-|[cancel](../api/approvalitem-cancel.md)|None|Cancel the approval item. The owner of the approval can trigger this endpoint.|
+|[Cancel](../api/approvalitem-cancel.md)|None|Cancel the approval item. The owner of the approval can trigger this endpoint.|
 |[List requests](../api/approvalitem-list-requests.md)|[approvalItemRequest](../resources/approvalitemrequest.md) collection|Get the approvalItemRequest resources from the requests navigation property.|
 |[List responses](../api/approvalitem-list-responses.md)|[approvalItemResponse](../resources/approvalitemresponse.md) collection|Get the approvalItemResponse resources from the responses navigation property.|
 |[Create approvalItemResponse](../api/approvalitem-post-responses.md)|[approvalItemResponse](../resources/approvalitemresponse.md)|Create a new approvalItemResponse object.|

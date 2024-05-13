@@ -20,8 +20,6 @@ Inherits from [identitySet](../resources/identityset.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|application|[identity](../resources/identity.md)|The application associated with the approval item. Inherited from [identitySet](../resources/identityset.md).|
-|device|[identity](../resources/identity.md)|The device associated with the approval item. Inherited from [identitySet](../resources/identityset.md).|
 |group|[identity](../resources/identity.md)|The Entra group associated with the approval item.|
 |user|[identity](../resources/identity.md)|The user associated with the approval item. Inherited from [identitySet](../resources/identityset.md).|
 
@@ -38,12 +36,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.approvalIdentitySet",
-  "application": {
-    "@odata.type": "microsoft.graph.identity"
-  },
-  "device": {
-    "@odata.type": "microsoft.graph.identity"
-  },
   "user": {
     "@odata.type": "microsoft.graph.identity"
   },
