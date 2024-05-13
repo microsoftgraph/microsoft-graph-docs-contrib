@@ -15,9 +15,14 @@ Namespace: microsoft.graph
 
 Get all retained messages from all [chats](../resources/chatmessage.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
+To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
+
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+> [!NOTE]  
+> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies).
 
 ## Permissions
 
