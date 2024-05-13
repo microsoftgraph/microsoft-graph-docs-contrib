@@ -1,6 +1,6 @@
 ---
 title: "startsWithTransformation resource type"
-description: "Outputs an attribute or constant if the input starts with the specified value."
+description: Contains the output of a transformation if the input starts with the specified value."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outputs an attribute or constant if the input starts with the specified value.
+Contains the output of a transformation if the input starts with the specified value.
 
 Inherits from [customClaimTransformation](../resources/customclaimtransformation.md).
 
