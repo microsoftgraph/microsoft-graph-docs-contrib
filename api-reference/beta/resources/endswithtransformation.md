@@ -1,6 +1,6 @@
 ---
 title: "endsWithTransformation resource type"
-description: "Outputs an attribute or constant if the input ends with the specified value."
+description: "Contains the output of a transformation if the input ends with the specified value."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.service: entra-id
