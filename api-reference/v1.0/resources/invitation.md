@@ -38,14 +38,14 @@ Creating an invitation returns a redemption URL in the response (*inviteRedeemUr
 |invitedUserType|String|The userType of the user being invited. By default, this is `Guest`. You can invite as `Member` if you're a company administrator. |
 |inviteRedirectUrl|String|The URL the user should be redirected to once the invitation is redeemed. Required.|
 |inviteRedeemUrl|String|The URL the user can use to redeem their invitation. Read-only.|
-|resetRedemption|Boolean|Reset the user's redemption status and reinvite a user while retaining their user identifier, group memberships, and app assignments. This property allows you to enable a user to sign-in using a different email address from the one in the previous invitation. For more information about using this property, see [Reset redemption status for a guest user](/azure/active-directory/external-identities/reset-redemption-status#use-microsoft-graph-api-to-reset-redemption-status).|
+|resetRedemption|Boolean|Reset the user's redemption status and reinvite a user while retaining their user identifier, group memberships, and app assignments. This property allows you to enable a user to sign-in using a different email address from the one in the previous invitation. When `true`, the **invitedUser**/**id** relationship is required. For more information about using this property, see [Reset redemption status for a guest user](/entra/external-id/reset-redemption-status).|
 |sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited. The default is `false`.|
 |status|String|The status of the invitation. Possible values are: `PendingAcceptance`, `Completed`, `InProgress`, and `Error`.|
 
 ## Relationships
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
-|invitedUser|[User](user.md)|The user created as part of the invitation creation. Read-Only|
+|invitedUser|[User](user.md)|The user created as part of the invitation creation. Read-only. The **id** property is required in the request body to reset a redemption status.|
 
 ## JSON representation
 Here's a JSON representation of the resource
