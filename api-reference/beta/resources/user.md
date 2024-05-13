@@ -173,6 +173,7 @@ This resource supports:
 | **Cloud PC**|||
 |[List cloudPCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
+|[List invitedBy](../api/user-list-invitedby.md)|[directoryObject](../resources/directoryobject.md)|Get the directoryObject resources from the invitedBy navigation property.|
 
 ## Properties
 
