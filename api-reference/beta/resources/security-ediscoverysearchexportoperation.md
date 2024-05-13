@@ -100,7 +100,7 @@ The following JSON representation shows the resource type.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "description": "String",
-  "displayName": "String"
+  "displayName": "String",
   "exportCriteria":  [{"@odata.type": "microsoft.graph.security.exportCriteria"}],
   "exportFileMetadata": [{"@odata.type": "microsoft.graph.security.ediscoveryExportFileMetadata"}],
   "exportFormat": "String",
