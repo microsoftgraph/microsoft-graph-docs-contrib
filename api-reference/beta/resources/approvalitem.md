@@ -3,7 +3,7 @@ title: "approvalItem resource type"
 description: "Represents an approval item."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-approvals"
+ms.subservice: "approvals"
 doc_type: resourcePageType
 ---
 

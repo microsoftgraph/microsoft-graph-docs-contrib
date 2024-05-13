@@ -3,7 +3,7 @@ title: "approvalIdentitySet resource type"
 description: "Represents a keyed collection of identity resources."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-approvals"
+ms.subservice: "approvals"
 doc_type: resourcePageType
 ---
 

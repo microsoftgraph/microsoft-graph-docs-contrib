@@ -3,7 +3,7 @@ title: "approvalItemResponse resource type"
 description: "This entity type is used for managing the ApprovalItem responses."
 author: "asgautam1997"
 ms.localizationpriority: medium
-ms.subservice: "microsoft-approvals"
+ms.subservice: "approvals"
 doc_type: resourcePageType
 ---
 
