@@ -48,7 +48,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the [siteProtectionRule](../resources/siteprotectionrule.md) object.
 
 ## Response
 
@@ -70,11 +70,11 @@ Content-Type: application/json
 Application: application/json
 Odata-Version: 4.0
 Authorization: Bearer <Access-Token>
+
+{
+    "siteExpression": "((displayName -contains 'Finance')  -or  (displayName -contains 'Legal'))"
+}
 ```
-
-### Request Body
-
-In the request body, supply a JSON representation of the [siteProtectionRule](../resources/siteprotectionrule.md) object.
 
 ### Response
 
