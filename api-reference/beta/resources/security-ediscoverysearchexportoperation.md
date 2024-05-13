@@ -28,7 +28,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |createdDateTime|DateTimeOffset|The date and time when the operation was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. Inherited from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).|
 |description|String|The name of export provided by the user.|
 |displayName|String|The description of the export by the user.|
-|exportCriteria|[microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values) collection|Items to be included in the export. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
+|exportCriteria|[microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values)|Items to be included in the export. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`.|
 |exportFileMetadata|[microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md) collection|Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**.|
 |exportFormat|[microsoft.graph.security.exportFormat](../resources/security-ediscoverysearchexportoperation.md#exportformat-values)|Format of the emails of the export. The possible values are: `pst`, `msg`, `eml`, `unknownFutureValue`.|
 |exportLocation|[microsoft.graph.security.exportLocation](../resources/security-ediscoverysearchexportoperation.md#exportlocation-values)| Locations to be included in the search. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`.|
@@ -100,7 +100,7 @@ The following JSON representation shows the resource type.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "description": "String",
-  "displayName":  [{"@odata.type": "microsoft.graph.security.exportCriteria"}],
+  "displayName": "String"
   "exportCriteria": "String",
   "exportFileMetadata": [{"@odata.type": "microsoft.graph.security.ediscoveryExportFileMetadata"}],
   "exportFormat": "String",
