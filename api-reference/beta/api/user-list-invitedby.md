@@ -73,7 +73,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.DirectoryServices.directoryObject)"
+  "@odata.type": "Collection(Microsoft.graph.directoryObject)"
 }
 -->
 ``` http
