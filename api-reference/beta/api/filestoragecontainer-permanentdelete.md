@@ -55,11 +55,13 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.permanentdelete"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permanentDelete
 ```

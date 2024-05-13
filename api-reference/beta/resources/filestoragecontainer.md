@@ -35,12 +35,12 @@ Represents a location where multiple users or a group of users can store files a
 |[List fileStorageContainer custom property](../api/filestoragecontainer-list-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md) collection|List custom properties of the fileStorageContainer.|
 |[Create fileStorageContainer custom property](../api/filestoragecontainer-post-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Create custom property to the fileStorageContainer.|
 |[Update fileStorageContainer custom property](../api/filestoragecontainer-update-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Update custom property on a fileStorageContainer.|
-|[Delete fileStorageContainer custom property](../api/filestoragecontainer-delete-customproperty.md)|None|Delete custom property from a fileStorageContainer.|
+|[Delete fileStorageContainer custom property](../api/filestoragecontainer-delete-customproperty.md)|None|Delete a custom property from a fileStorageContainer.|
 |[List fileStorageContainer columns](../api/filestoragecontainer-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|List columns in a fileStorageContainer.|
-|[Create fileStorageContainer column](../api/filestoragecontainer-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create columnDefinition for afileStorageContainer.|
-|[Update fileStorageContainer column](../api/filestoragecontainer-update-column.md)|[columnDefinition](../resources/columndefinition.md)|Update column in a fileStorageContainer.|
-|[Delete fileStorageContainer column](../api/filestoragecontainer-delete-column.md)|None|Delete column  from a fileStorageContainer.|
-|[Get fileStorageContainer column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get column from a fileStorageContainer.|
+|[Create fileStorageContainer column](../api/filestoragecontainer-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a columnDefinition for afileStorageContainer.|
+|[Update fileStorageContainer column](../api/filestoragecontainer-update-column.md)|[columnDefinition](../resources/columndefinition.md)|Update a column in a fileStorageContainer.|
+|[Delete fileStorageContainer column](../api/filestoragecontainer-delete-column.md)|None|Delete a column from a fileStorageContainer.|
+|[Get fileStorageContainer column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get a column from a fileStorageContainer.|
 |[Restore fileStorageContainer recyclebin items](../api/filestoragecontainer-restore-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
 |[Delete fileStorageContainer recyclebin items](../api/filestoragecontainer-delete-recyclebin-items.md)|None|Delete recycle bin items from a fileStorageContainer.|
 |[Get fileStorageContainer recyclebin items](../api/filestoragecontainer-list-recyclebin-items.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
@@ -68,7 +68,7 @@ Represents a location where multiple users or a group of users can store files a
 |:---|:---|:---|
 |columns|[columnDefinition](../resources/columndefinition.md) collection|The set of custom structured metadata supported by the **fileStorageContainer**. Read-write.|
 |drive|[drive](../resources/drive.md)|The drive of the resource **fileStorageContainer**. Read-only.|
-|permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. Permission for each user is set by the **roles** property. The possible values are 'reader', 'writer', 'manager', and 'owner'. Read-write.|
+|permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. The permission for each user is set by the **roles** property. The possible values are 'reader', 'writer', 'manager', and 'owner'. Read-write.|
 |recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
 
 ### roles property values

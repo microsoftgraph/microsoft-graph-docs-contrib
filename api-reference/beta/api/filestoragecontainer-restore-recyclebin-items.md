@@ -32,6 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /storageContainers/{containerId}/recycleBin/items/restore
 ```
@@ -56,12 +57,14 @@ If successful, this method returns a `207 Multi-Status` response code and the se
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "restore_filestoragecontainer_recyclebin_items",
   "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
+
 ``` http
 POST  https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/restore
 Content-Type: application/json
@@ -76,12 +79,14 @@ Content-Type: application/json
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
+
 ``` http
 HTTP/1.1 207 Multi-Status
 Content-Type: application/json

@@ -69,11 +69,13 @@ If successful, this method returns a `201 Created` response code and a [columnDe
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_columndefinition_for_fileStorageContainer"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns
 Content-Type: application/json
@@ -97,13 +99,16 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.columnDefinition"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
