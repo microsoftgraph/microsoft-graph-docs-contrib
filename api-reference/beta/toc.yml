@@ -18573,6 +18573,8 @@ items:
                         href: api/virtualevent-post-presenters.md
                       - name: Get
                         href: api/virtualeventpresenter-get.md
+                      - name: Update
+                        href: api/virtualeventpresenter-update.md
                       - name: Delete
                         href: api/virtualeventpresenter-delete.md
                   - name: Session

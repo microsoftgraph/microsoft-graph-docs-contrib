@@ -36,16 +36,10 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-To list all presenters of a town hall:
 
 ``` http
-GET /solutions/virtualEvents/townhalls/{townhallId}/presenters
-```
-
-To list all presenters of a webinar:
-
-``` http
-GET /solutions/virtualEvents/webinars/{webinarId}/presenters
+GET /solutions/virtualEvents/townhalls/{id}/presenters
+GET /solutions/virtualEvents/webinars/{id}/presenters
 ```
 
 ## Request headers
