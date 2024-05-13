@@ -15,7 +15,7 @@ ms.date: 10/12/2023
 The PIM for Microsoft Entra roles APIs allow you to govern privileged access and limit excessive access to Microsoft Entra roles. This article introduces the governance capabilities of PIM for Microsoft Entra roles APIs in Microsoft Graph.
 
 > [!NOTE]
-> To manage Azure resource roles use the [PIM APIs for Azure Resource Manager (ARM)](/rest/api/authorization/privileged-role-eligibility-rest-sample).
+> To manage Azure resource roles use the [PIM APIs for Azure Resource Manager](/rest/api/authorization/privileged-role-eligibility-rest-sample).
 
 ## PIM APIs for managing active role assignments
 
