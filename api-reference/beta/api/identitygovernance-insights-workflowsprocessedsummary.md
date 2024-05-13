@@ -1,6 +1,6 @@
 ---
 title: "insights: workflowsProcessedSummary"
-description: "The summary of workflows processed Lifecycle workflows within a tenant."
+description: "The summary of workflows processed by Lifecycle Workflows within a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
