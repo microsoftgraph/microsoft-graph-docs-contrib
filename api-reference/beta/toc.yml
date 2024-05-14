@@ -12662,13 +12662,13 @@ items:
                     items:
                       - name: Insights
                         href: resources/identitygovernance-insights.md
-                      - name: Top Workflows Summary
+                      - name: Top workflows summary
                         href: api/identitygovernance-insights-topworkflowsprocessedsummary.md
-                      - name: Top Tasks Summary
+                      - name: Top tasks summary
                         href: api/identitygovernance-insights-toptasksprocessedsummary.md
-                      - name: Workflows processed Summary
+                      - name: Workflows processed summary
                         href: api/identitygovernance-insights-workflowsprocessedsummary.md
-                      - name: Workflows processed by Category
+                      - name: Workflows processed by category
                         href: api/identitygovernance-insights-workflowsprocessedbycategory.md         
               - name: Privileged Identity Management iteration 3
                 items:
