@@ -92,7 +92,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}?$notifyOnUserSpecificProperties=true",
+  "resource": "/chats/{id}?notifyOnUserSpecificProperties=true",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -166,7 +166,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/users/456bbcdb-1e1c-4f3f-b7d0-ad7b9abcdefc/chats?$notifyOnUserSpecificProperties=true",
+  "resource": "/users/456bbcdb-1e1c-4f3f-b7d0-ad7b9abcdefc/chats?notifyOnUserSpecificProperties=true",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
