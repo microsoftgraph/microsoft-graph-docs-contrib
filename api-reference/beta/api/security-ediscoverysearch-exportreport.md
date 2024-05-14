@@ -63,7 +63,9 @@ If the export has started successfully, this action returns a `202 Accepted` res
 
 ## Examples
 
-### Example 1: Export an item report, which includes items with search hits only, excluding partially indexed itmes, with no additional options selected
+### Example 1: Export a report of items with search hits only, excluding partially indexed items, without additional options
+
+The following example shows how to export a report of items with search hits only, excluding partially indexed items, with no additional options selected.
 
 #### Request
 
@@ -79,9 +81,9 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a
 Content-Type: application/json
 
 {
-    "displayName": "Export 1",
-    "exportCriteria": "searchHits",
-    "additionalOptions": "none"
+  "displayName": "Export 1",
+  "exportCriteria": "searchHits",
+  "additionalOptions": "none"
 }
 ```
 
@@ -97,14 +99,13 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-cache-control: no-store must-revalidate no-cache max-age=0
-client-request-id: e0c4fae7-5b2b-51c7-582d-7e8389752e24
-content-length: 0
-location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('f57fc79d-bea8-42ac-b0be-217302d5683c')
-request-id: 9f6eceeb-2e33-474b-a997-ad778fa22d18
+Content-Length: 0
+Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('f57fc79d-bea8-42ac-b0be-217302d5683c')
 ```
 
-### Example 2: Export an item report, which includes items with search hits and partially indexed items in all targeted locations, with no additional options selected
+### Example 2: Export a report of items with search hits and partially indexed items in all targeted locations, without additional options
+
+The following examples shows how to export a report of items with search hits and partially indexed items in all targeted locations, with no additional options selected.
 
 #### Request
 
@@ -120,10 +121,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a
 Content-Type: application/json
 
 {
-    "displayName": "Export 2",
-    "exportCriteria": "searchHits, partiallyIndexed",
-    "exportLocation": "responsiveLocations, nonresponsiveLocations",
-    "additionalOptions": "none"
+  "displayName": "Export 2",
+  "exportCriteria": "searchHits, partiallyIndexed",
+  "exportLocation": "responsiveLocations, nonresponsiveLocations",
+  "additionalOptions": "none"
 }
 ```
 
@@ -139,14 +140,13 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-cache-control: no-store must-revalidate no-cache max-age=0
-client-request-id: 55375def-1c8c-8290-6f8f-6a6f509dd350
-content-length: 0
-location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('cbcb4807-e76e-4ef0-bd5b-e2177c13f07e')
-request-id: 10f66416-4ec4-4d1f-aecf-e9d8f4243166
+Content-Length: 0
+Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('cbcb4807-e76e-4ef0-bd5b-e2177c13f07e')
 ```
 
-### Example 3: Export an item report, which includes items with search hits and partially indexed items in locations with search hits only, with no additional options selected
+### Example 3: Export a report of items with search hits and partially indexed items in locations with search hits, without additional options
+
+The following example shows how to export a report of items with search hits and partially indexed items in locations with search hits, with no additional options selected.
 
 #### Request
 
@@ -163,10 +163,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a
 Content-Type: application/json
 
 {
-    "displayName": "Export 3",
-    "exportCriteria": "searchHits, partiallyIndexed",
-    "exportLocation": "responsiveLocations",
-    "additionalOptions": "none"
+  "displayName": "Export 3",
+  "exportCriteria": "searchHits, partiallyIndexed",
+  "exportLocation": "responsiveLocations",
+  "additionalOptions": "none"
 }
 ```
 
@@ -182,14 +182,13 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-cache-control: no-store must-revalidate no-cache max-age=0
-client-request-id: 58c21aaa-a5d2-79f0-2df9-ea450dfcf733
-content-length: 0
-location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('c56f66de-b780-4efc-aa0c-4ef3271ad6b4')
-request-id: 54c02d0f-0d52-4384-b95a-3023c8c8457d
+Content-Length: 0
+Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('c56f66de-b780-4efc-aa0c-4ef3271ad6b4')
 ```
 
-### Example 4: Export an item report, which includes partially indexed items in all targeted locations, with all additional options selected
+### Example 4: Export a report of partially indexed items in all targeted locations with all additional options selected
+
+The following example shows how to export a report of partially indexed items in all targeted locations with all additional options selected.
 
 #### Request
 
@@ -205,12 +204,11 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a
 Content-Type: application/json
 
 {
-    "displayName": "Export 4",
-    "exportCriteria": "partiallyIndexed",
-    "exportLocation": "responsiveLocations, nonresponsiveLocations",
-    "additionalOptions": "teamsAndYammerConversations, cloudAttachments, allDocumentVersions, subfolderContents, listAttachments"
+  "displayName": "Export 4",
+  "exportCriteria": "partiallyIndexed",
+  "exportLocation": "responsiveLocations, nonresponsiveLocations",
+  "additionalOptions": "teamsAndYammerConversations, cloudAttachments, allDocumentVersions, subfolderContents, listAttachments"
 }
-
 ```
 
 #### Response
@@ -225,14 +223,13 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-cache-control: no-store, must-revalidate, no-cache, max-age=0
-client-request-id: d609f853-f4b8-d9ad-f68a-d9d8bb5d9781
-content-length: 0
-location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('572d44e2-5e77-4443-a2ed-cd036bdc0304')
-request-id: 1e835184-4f74-4dfa-8d82-9d3d7e73ffc2
+Content-Length: 0
+Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('572d44e2-5e77-4443-a2ed-cd036bdc0304')
 ```
 
-### Example 5: Export an item report, which includes partially indexed items in locations with search hits only, with cloud attachments
+### Example 5: Export a report of partially indexed items in locations with search hits and cloud attachments
+
+The following example shows how to export a report of partially indexed items in locations with search hits and cloud attachments.
 
 #### Request
 
@@ -248,10 +245,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/'dbc06feb-a
 Content-Type: application/json
 
 {
-    "displayName": "Export 5",
-    "exportCriteria": "partiallyIndexed",
-    "exportLocation": "responsiveLocations",
-    "additionalOptions": "cloudAttachments"
+  "displayName": "Export 5",
+  "exportCriteria": "partiallyIndexed",
+  "exportLocation": "responsiveLocations",
+  "additionalOptions": "cloudAttachments"
 }
 ```
 
@@ -267,9 +264,6 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-cache-control: no-store, must-revalidate, no-cache, max-age=0
-client-request-id: f511546b-8bd0-0bf6-8ebb-fb0b3c88ade3
-content-length: 0
-location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('788159f9-f860-43f2-8fc5-0fc17df0e696')
-request-id: d5998b96-f890-4114-b9f5-98001a0956e0
+Content-Length: 0
+Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('788159f9-f860-43f2-8fc5-0fc17df0e696')
 ```
