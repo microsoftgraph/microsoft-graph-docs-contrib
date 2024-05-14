@@ -1875,10 +1875,10 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: Reprovision remotely (deprecated)
                     href: api/manageddevice-reprovisioncloudpc.md
-                  - name: Resize remotely (deprecated)
-                    href: api/manageddevice-resizecloudpc.md
                   - name: Resize
                     href: api/cloudpc-resize.md
+                  - name: Resize remotely (deprecated)
+                    href: api/manageddevice-resizecloudpc.md
                   - name: Restore
                     href: api/cloudpc-restore.md
                   - name: Restore remotely (deprecated)
