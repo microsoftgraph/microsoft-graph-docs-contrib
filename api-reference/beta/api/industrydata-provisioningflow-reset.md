@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset a [provisioningFlow](../resources/industrydata-provisioningflow.md). This action reprovisions all current data as if it were the initial run while clearing out the existing errors associated in the flow.
+Reset a [provisioningFlow](../resources/industrydata-provisioningflow.md). This action reprovisions all current data as if it were the initial run, and clears out the existing errors associated with the flow.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 ACCEPTED` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -75,6 +75,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 202 ACCEPTED
+HTTP/1.1 202 Accepted
 ```
 
