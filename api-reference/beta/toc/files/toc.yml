@@ -1,0 +1,173 @@
+items:
+- name: Overview
+  href: ../../resources/onedrive.md
+- name: Drive
+  items:
+  - name: Drive
+    href: ../../resources/drive.md
+  - name: Get drive
+    href: ../../api/drive-get.md
+  - name: Get drive root
+    href: ../../api/driveitem-get.md
+  - name: List activities
+    href: ../../api/activities-list.md
+  - name: List followed items
+    href: ../../api/drive-list-following.md
+  - name: List children
+    href: ../../api/driveitem-list-children.md
+  - name: List changes
+    href: ../../api/driveitem-delta.md
+  - name: Search
+    href: ../../api/driveitem-search.md
+  - name: Get special folder
+    href: ../../api/drive-get-specialfolder.md
+- name: Drive item
+  items:
+  - name: Drive item
+    href: ../../resources/driveitem.md
+  - name: Get item
+    href: ../../api/driveitem-get.md
+  - name: List activities
+    href: ../../api/activities-list.md
+  - name: Get analytics
+    href: ../../api/itemanalytics-get.md
+  - name: Get activities by interval
+    href: ../../api/itemactivity-getbyinterval.md
+  - name: List children
+    href: ../../api/driveitem-list-children.md
+  - name: List versions
+    href: ../../api/driveitem-list-versions.md
+  - name: Create item
+    href: ../../api/driveitem-post-children.md
+  - name: Update item
+    href: ../../api/driveitem-update.md
+  - name: Upload content
+    href: ../../api/driveitem-put-content.md
+  - name: Download content
+    href: ../../api/driveitem-get-content.md
+  - name: Download content
+    href: ../../api/driveitem-get-contentstream.md
+  - name: Download specific file format
+    href: ../../api/driveitem-get-content-format.md
+  - name: Delete item
+    href: ../../api/driveitem-delete.md
+  - name: PermanentDelete item
+    href: ../../api/driveitem-permanentDelete.md
+  - name: Restore item
+    href: ../../api/driveitem-restore.md
+  - name: Move item
+    href: ../../api/driveitem-move.md
+  - name: Copy item
+    href: ../../api/driveitem-copy.md
+  - name: Search items
+    href: ../../api/driveitem-search.md
+  - name: List changes in a drive
+    href: ../../api/driveitem-delta.md
+  - name: Follow item
+    href: ../../api/driveitem-follow.md
+  - name: Unfollow item
+    href: ../../api/driveitem-unfollow.md
+  - name: List thumbnails
+    href: ../../api/driveitem-list-thumbnails.md
+  - name: Create sharing link
+    href: ../../api/driveitem-createlink.md
+  - name: Add permissions
+    href: ../../api/driveitem-invite.md
+  - name: List permissions
+    href: ../../api/driveitem-list-permissions.md
+  - name: Delete permission
+    href: ../../api/permission-delete.md
+  - name: Get WebSocket channel
+    href: ../../api/subscriptions-socketio.md
+  - name: Preview item
+    href: ../../api/driveitem-preview.md
+  - name: Check in
+    href: ../../api/driveitem-checkin.md
+  - name: Check out
+    href: ../../api/driveitem-checkout.md
+  - name: Revoke grants
+    href: ../../api/permission-revokegrants.md
+  - name: Extract sensitivity labels
+    href: ../../api/driveitem-extractsensitivitylabels.md
+  - name: Assign sensitivity label
+    href: ../../api/driveitem-assignsensitivitylabel.md
+  - name: Get retention label
+    href: ../../api/driveitem-getretentionlabel.md
+  - name: Set retention label
+    href: ../../api/driveitem-setretentionlabel.md
+  - name: Remove retention label
+    href: ../../api/driveitem-removeretentionlabel.md
+  - name: Lock or unlock record
+    href: ../../api/driveitem-lockorunlockrecord.md
+- name: Bundle
+  items:
+  - name: Bundle
+    href: ../../resources/bundle.md
+  - name: List bundles
+    href: ../../api/bundle-list.md
+  - name: Get bundle
+    href: ../../api/bundle-get.md
+  - name: Create bundle
+    href: ../../api/drive-post-bundles.md
+  - name: Add item
+    href: ../../api/bundle-addItem.md
+  - name: Remove item
+    href: ../../api/bundle-removeItem.md
+  - name: Update bundle
+    href: ../../api/bundle-update.md
+  - name: Delete bundle
+    href: ../../api/bundle-delete.md
+- name: Permission
+  items:
+  - name: Permission
+    href: ../../resources/permission.md
+  - name: List permissions
+    href: ../../api/driveitem-list-permissions.md
+  - name: Get permission
+    href: ../../api/permission-get.md
+  - name: Create link
+    href: ../../api/driveitem-createlink.md
+  - name: Invite people
+    href: ../../api/driveitem-invite.md
+  - name: Update
+    href: ../../api/permission-update.md
+  - name: Delete
+    href: ../../api/permission-delete.md
+  - name: Add users to sharing link
+    href: ../../api/permission-grant.md
+  - name: Revoke grants
+    href: ../../api/permission-revokegrants.md
+- name: File storage container
+  items:
+  - name: File storage container
+    href: ../../resources/filestoragecontainer.md
+  - name: List fileStorageContainers
+    href: ../../api/filestorage-list-containers.md
+  - name: Create fileStorageContainer
+    href: ../../api/filestoragecontainer-post.md
+  - name: Get fileStorageContainer
+    href: ../../api/filestoragecontainer-get.md
+  - name: Update fileStorageContainer
+    href: ../../api/filestoragecontainer-update.md
+  - name: Delete fileStorageContainer
+    href: ../../api/filestorage-delete-containers.md
+  - name: Activate fileStorageContainer
+    href: ../../api/filestoragecontainer-activate.md
+  - name: Get drive
+    href: ../../api/filestoragecontainer-get-drive.md
+  - name: List permissions
+    href: ../../api/filestoragecontainer-list-permissions.md
+  - name: Create permissions
+    href: ../../api/filestoragecontainer-post-permissions.md
+  - name: Update permissions
+    href: ../../api/filestoragecontainer-update-permissions.md
+  - name: Delete permissions
+    href: ../../api/filestoragecontainer-delete-permissions.md
+  - name: List fileStorageContainer custom property
+    href: ../../api/filestoragecontainer-list-customproperty.md
+  - name: Create fileStorageContainer custom property
+    href: ../../api/filestoragecontainer-post-customproperty.md
+  - name: Update fileStorageContainer custom property
+    href: ../../api/filestoragecontainer-update-customproperty.md
+  - name: Delete fileStorageContainer custom property
+    href: ../../api/filestoragecontainer-delete-customproperty.md
