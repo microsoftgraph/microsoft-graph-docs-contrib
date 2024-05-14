@@ -4,7 +4,8 @@ description: "Represents a defined collection of Azure resource information that
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
-doc_type: resourcePageType
+doc_type: resourcePageType,
+toc.title: Cloud PC Azure network connection
 ---
 
 # cloudPcOnPremisesConnection resource type
@@ -98,7 +99,7 @@ The following is an example of the resource type.
     "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
     "endDateTime": "String (timestamp)",
     "healthChecks": [
-      { 
+      {
         "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
         "additionalDetail": "String",
         "displayName": "String",
