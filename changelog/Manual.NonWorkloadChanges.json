@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applications",
+          "ChangeType": "Addition",
+          "Description": "Added the Microsoft Graph Bicep resource for deploying the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource type using Bicep templates for Microsoft Graph resources in infrastructure-as-code (IaC) scenarios. For more information, see [Bicep templates for Microsoft Graph resources](https://learn.microsoft.com/en-us/graph/templates/overview-bicep-templates-for-graph).",
+          "Target": "application"
+        }
+      ],
+      "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-16T00:00:00.5014179Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0a01c9dd-93ec-4529-875e-842a925277d1",
           "ApiChange": "Resource",
           "ChangedApiName": "ediscoveryCase,reviewSet,reviewSetQuery",
