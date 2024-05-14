@@ -189,9 +189,9 @@ Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('4bf812e0-44ad-4856-a302-b4ea79725573')
 ```
 
-### Example 4: Export results with partially indexed items in all targeted locations, with all additional options, as .eml files for each email
+### Example 4: Export results with partially indexed items in all targeted locations, with all additional options, as .eml files for each message
 
-The following example shows how to export results with partially indexed items in all targeted locations, with all additional options selected, as .eml files for each email.
+The following example shows how to export results with partially indexed items in all targeted locations, with all additional options selected, as .eml files for each message.
 
 #### Request
 
@@ -231,9 +231,9 @@ Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('05b5c707-ed0d-4f5c-bbfd-e4941137baf1')
 ```
 
-### Example 5: Export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each email
+### Example 5: Export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message
 
-The following example shows how to export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each email.
+The following example shows how to export results with partially indexed items in search hit locations, with cloud attachments, as .eml files for each message.
 
 #### Request
 
