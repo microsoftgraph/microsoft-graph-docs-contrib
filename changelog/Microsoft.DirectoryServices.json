@@ -3137,6 +3137,24 @@
     {
       "ChangeList": [
         {
+          "Id": "7113b2f7-d165-4ce7-96b9-d2b173872922",
+          "ApiChange": "Method",
+          "ChangedApiName": "List invitedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **List invitedBy** method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "7113b2f7-d165-4ce7-96b9-d2b173872922",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-14T15:18:53.171307Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
           "ApiChange": "Resource",
           "ChangedApiName": "groupWritebackConfiguration",
