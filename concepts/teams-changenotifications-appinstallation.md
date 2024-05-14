@@ -11,8 +11,6 @@ ms.custom: scenarios:getting-started
 
 Change notifications allow you to subscribe to events related to app installation, upgrade, and uninstallation. You can get notified whenever the [Teams app installation](/graph/api/resources/teamsappinstallation) and where the event took place.
 
-This article describes scenarios for the **Teams app installation** resources. For more information, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
-
 If a customer needs any additional information, they can use Teams app ID and app installation ID returned in the notification payload to fetch the necessary information separately.
 
 ## Subscribe to Teams app installation
@@ -29,7 +27,7 @@ One of the following permissions is required to subscribe to `/appCatalogs/teams
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadSelected.All|
 
-### Example
+### Examples
 
 The following example shows how to subscribe for app installation in Teams.
 
@@ -49,7 +47,7 @@ Content-Type: application/json
 }
 ```
 
-If an app only has scope specific app permissions, then you must specify the scope filter on the resource while creating subscription:
+If an app only has scope-specific app permissions, you must declare the scope `$filter` query parameter while you create subscription by adding it to the subscription resource:
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -67,7 +65,7 @@ Content-Type: application/json
 } 
 ```
 
-If you want an app rely on resource specific consent (RSC) permissions, you must declare `useResourceSpecificConsentBasedAuthorization=true` query parameter while subscription creation by appending to the subscription resource:
+For apps that utilize resource-specific consent (RSC) permissions, you must declare `useResourceSpecificConsentBasedAuthorization=true` query parameter while you create subscription by adding it to the subscription resource:
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -84,15 +82,11 @@ Content-Type: application/json
 }
 ```
 
-The supported RSC permissions are:  
-
-* TeamsAppInstallation.Read.Chat
-* TeamsAppInstallation.Read.Group
-* TeamsAppInstallation.Read.User
+The supported RSC permissions are `TeamsAppInstallation.Read.Chat`, `TeamsAppInstallation.Read.Group`, and `TeamsAppInstallation.Read.User`.
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following:
+The following is the payload for notifications with resource data:
 
 ```json
 {
@@ -119,7 +113,7 @@ For notifications with resource data, the payload looks like the following:
 }
 ```
 
-The decrypted notification payload looks like the following. The payload conforms to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) schema.
+The following is the decrypted notification payload. The payload adheres to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) schema.
 
 ```json
 {
@@ -132,10 +126,8 @@ The decrypted notification payload looks like the following. The payload conform
 "chatId":"19:49dec384fef2435a92829852608d52c3@thread.v2", 
 "scope":"groupChat" 
 } 
-} 
-
-
-
+}
+```
 
 ## See also
 
