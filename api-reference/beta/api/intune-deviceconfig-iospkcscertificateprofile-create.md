@@ -3,7 +3,7 @@ title: "Create iosPkcsCertificateProfile"
 description: "Create a new iosPkcsCertificateProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

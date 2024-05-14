@@ -3,7 +3,7 @@ title: "Get outlookTask"
 description: "Get the properties and relationships of an Outlook task in the user's mailbox."
 ms.localizationpriority: medium
 author: "mashriv"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and [outlookTask](..
 
 #### Request
 
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 #### Response
 
-Here is an example of the response. By default, the date-time properties in the response are in UTC.
+The following example shows the response. By default, the date-time properties in the response are in UTC.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -216,7 +216,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### Response
 
-Here is an example of the response. The date-time properties in the response are returned in the specified Pacific Standard Time.
+The following example shows the response. The date-time properties in the response are returned in the specified Pacific Standard Time.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -3,7 +3,7 @@ title: "conditionalAccessSettings resource type"
 description: "Conditional access settings define how you can restore users source IP and how you can use compliant network validation to ensure that the user is connecting from a verified network."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: global-secure-access
+ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

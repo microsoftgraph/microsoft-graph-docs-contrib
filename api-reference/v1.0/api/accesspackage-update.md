@@ -3,7 +3,7 @@ title: "Update accessPackage"
 description: "Update the properties of an accessPackage object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: governance
+ms.subservice: entra-id-governance
 doc_type: apiPageType
 ---
 # Update accessPackage

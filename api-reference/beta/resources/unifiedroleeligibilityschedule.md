@@ -3,7 +3,7 @@ title: "unifiedRoleEligibilitySchedule resource type"
 description: "Represents a schedule for an eligible role assignment operations through Microsoft Entra Privileged Identity Management."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

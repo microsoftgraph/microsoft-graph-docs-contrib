@@ -3,7 +3,7 @@ title: "List sessions"
 description: "Get a list of all virtualEventSession objects under a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.
 
+Currently, the following virtual event types are supported: [virtualEventTownhall](../resources/virtualeventtownhall.md) and [virtualEventWebinar](../resources/virtualeventwebinar.md).
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -25,7 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventsession-list-permissions.md)]
 
 > [!NOTE]
->
 > To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registrants' information from virtual events created by that specific user.
 
 ## HTTP request
@@ -34,10 +35,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
 To list all sessions of a webinar:
 
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions
+```
+
+To list all sessions of a town hall:
+
+``` http
+GET /solutions/virtualEvents/townhalls/{townhallId}/sessions
 ```
 
 ## Optional query parameters

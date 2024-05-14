@@ -3,7 +3,7 @@ title: "Delete iosVppEBook"
 description: "Deletes a iosVppEBook."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

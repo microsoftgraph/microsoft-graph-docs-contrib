@@ -3,7 +3,7 @@ title: "OneNote API overview"
 description: "Use the OneNote API in Microsoft Graph to access OneNote notebooks, sections, and pages to create solutions that help your users plan and organize ideas and information."
 author: "Jewan-microsoft"
 ms.localizationpriority: high
-ms.prod: "onenote"
+ms.subservice: "onenote"
 ms.custom: scenarios:getting-started
 ---
 

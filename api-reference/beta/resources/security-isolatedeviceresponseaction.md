@@ -3,7 +3,7 @@ title: "isolateDeviceResponseAction resource type"
 description: "Describes a response action that uses Microsoft Defender to apply full network isolation to a device."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

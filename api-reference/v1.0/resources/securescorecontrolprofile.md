@@ -3,7 +3,7 @@ title: "secureScoreControlProfile resource type"
 description: "Represents a tenant's  per control data."
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: security
+ms.subservice: security
 doc_type: resourcePageType
 ---
 

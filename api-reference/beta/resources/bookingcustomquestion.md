@@ -3,7 +3,7 @@ title: "bookingCustomQuestion resource type"
 description: "Represents a custom question for a bookingBusiness."
 author: "razortbone"
 ms.localizationpriority: medium
-ms.prod: "bookings"
+ms.subservice: "microsoft-bookings"
 doc_type: resourcePageType
 ---
 

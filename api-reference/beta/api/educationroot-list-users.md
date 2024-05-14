@@ -3,7 +3,7 @@ title: "List users"
 description: "Retrieve a list of user objects. These user objects will include education-specific properties."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

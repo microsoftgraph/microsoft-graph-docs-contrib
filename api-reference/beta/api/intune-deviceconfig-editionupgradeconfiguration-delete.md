@@ -3,7 +3,7 @@ title: "Delete editionUpgradeConfiguration"
 description: "Deletes a editionUpgradeConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

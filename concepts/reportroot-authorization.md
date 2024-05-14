@@ -3,7 +3,7 @@ title: "Authorization for APIs to read Microsoft 365 usage reports"
 description: "Microsoft 365 usage reports are protected by both permissions and Microsoft Entra roles. Learn how to assign a role to a user."
 author: "kszb"
 ms.localizationpriority: high
-ms.prod: "reports"
+ms.subservice: "reports"
 ---
 
 # Authorization for APIs to read Microsoft 365 usage reports

@@ -1,13 +1,13 @@
 ---
-title: "SortField resource type"
+title: workbookSortField resource type
 description: "Represents a condition in a sorting operation."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: excel
+ms.subservice: excel
 doc_type: resourcePageType
 ---
 
-# SortField resource type
+# workbookSortField resource type
 
 Namespace: microsoft.graph
 
@@ -25,7 +25,7 @@ Represents a condition in a sorting operation.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

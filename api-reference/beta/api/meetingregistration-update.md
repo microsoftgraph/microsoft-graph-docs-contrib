@@ -3,7 +3,7 @@ title: "Update meetingRegistration"
 description: "Update the details of a meeting registration associated with an online meeting."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 

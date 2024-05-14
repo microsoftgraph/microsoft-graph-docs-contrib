@@ -3,7 +3,7 @@ title: "recommendation: postpone"
 description: "Postpone action on a recommendation object to a specified future date and time."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ If successful, this action returns a `200 OK` response code and a [recommendatio
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

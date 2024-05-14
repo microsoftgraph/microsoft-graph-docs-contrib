@@ -3,7 +3,7 @@ title: "externalItem resource type"
 description: "An item added to a Microsoft Graph connection."
 ms.localizationpriority: medium
 author: "snlraju-msft"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

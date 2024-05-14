@@ -4,7 +4,7 @@ description: "The pendingContentUpdate resource indicates that an operation that
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
 ms.date: 08/06/2019
-ms.prod: notes
+ms.subservice: onenote
 doc_type: "resourcePageType"
 ---
 

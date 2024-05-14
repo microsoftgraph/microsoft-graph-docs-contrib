@@ -3,7 +3,7 @@ title: "win32LobAppRuleType enum type"
 description: "Contains rule types for Win32 LOB apps."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

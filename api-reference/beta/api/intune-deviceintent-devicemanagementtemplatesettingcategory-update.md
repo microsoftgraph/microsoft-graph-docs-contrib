@@ -3,7 +3,7 @@ title: "Update deviceManagementTemplateSettingCategory"
 description: "Update the properties of a deviceManagementTemplateSettingCategory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

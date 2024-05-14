@@ -3,7 +3,7 @@ title: "accessPackageResourceAttribute resource type"
 description: "A resource that exposes properties for the requestor of an access package to provide custom information that may be used to make approval decisions for the access package."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

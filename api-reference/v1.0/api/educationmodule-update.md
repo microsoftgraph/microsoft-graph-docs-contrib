@@ -3,7 +3,7 @@ title: "Update educationModule"
 description: "Update an educationModule object."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

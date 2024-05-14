@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\OnTokenIssuanceStartListener;
+use Microsoft\Graph\Generated\Models\AuthenticationConditions;
+use Microsoft\Graph\Generated\Models\AuthenticationConditionsApplications;
+use Microsoft\Graph\Generated\Models\AuthenticationConditionApplication;
+use Microsoft\Graph\Generated\Models\OnTokenIssuanceStartCustomExtensionHandler;
+use Microsoft\Graph\Generated\Models\OnTokenIssuanceStartCustomExtension;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

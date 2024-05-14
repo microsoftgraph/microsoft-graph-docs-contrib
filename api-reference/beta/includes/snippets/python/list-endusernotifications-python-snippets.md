@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.security.attackSimulation.endUserNotifications.end_user_notifications_request_builder import EndUserNotificationsRequestBuilder
+from msgraph.generated.security.attack_simulation.end_user_notifications.end_user_notifications_request_builder import EndUserNotificationsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

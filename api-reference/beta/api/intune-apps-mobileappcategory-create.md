@@ -3,7 +3,7 @@ title: "Create mobileAppCategory"
 description: "Create a new mobileAppCategory object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -51,9 +51,9 @@ The following table shows the properties that are required when you create the m
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The key of the entity.|
+|id|String|The key of the entity. This property is read-only.|
 |displayName|String|The name of the app category.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the mobileAppCategory was last modified. This property is read-only.|
 
 
 

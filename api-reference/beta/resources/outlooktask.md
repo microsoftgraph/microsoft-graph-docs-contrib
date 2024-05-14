@@ -3,7 +3,7 @@ title: "outlookTask resource type"
 description: "An Outlook item that can track a work item. "
 author: "mashriv"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -85,7 +85,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the task. Read-only. Nullable.|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

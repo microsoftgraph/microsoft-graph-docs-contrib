@@ -3,7 +3,7 @@ title: "approvalStep resource type"
 description: "Specifies a decision step in an approval in entitlement management and PIM."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

@@ -3,7 +3,7 @@ title: "Add owner"
 description: "Add an owner to an application."
 author: "sureshja"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

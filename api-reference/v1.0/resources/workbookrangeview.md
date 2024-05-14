@@ -1,13 +1,13 @@
 ---
-title: "rangeView resource type"
+title: "workbookRangeView resource type"
 description: "RangeView represents a set of visible cells of the parent range."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
-# rangeView resource type
+# workbookRangeView resource type
 
 Namespace: microsoft.graph
 RangeView represents a set of visible cells of the parent range.
@@ -18,7 +18,7 @@ RangeView represents a set of visible cells of the parent range.
 |:---------------|:--------|:----------|
 |[List rows](../api/workbookrangeview-list-rows.md) |[workbookRangeView](workbookrangeview.md) collection| Get a workbookRangeView object collection.|
 |[Itemat](../api/workbookrangeview-itemat.md)|[workbookRangeView](workbookrangeview.md)|Get a range view item based in index.|
-|[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|Return the range object associated with the range view|
+|[Range](../api/workbookrangeview-range.md)|[workbookRange](workbookrange.md)|Return the range object associated with the range view|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -41,7 +41,7 @@ RangeView represents a set of visible cells of the parent range.
 |rows|[workbookRangeView](workbookrangeview.md) collection| Represents a collection of range views associated with the range. Read-only.	Read-only.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",

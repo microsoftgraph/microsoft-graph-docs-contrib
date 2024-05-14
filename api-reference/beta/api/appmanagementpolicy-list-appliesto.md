@@ -3,7 +3,7 @@ title: "List appliesTo"
 description: "List resources assigned to an application management policy."
 ms.localizationpriority: medium
 author: "madansr7"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -149,7 +149,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request using $select query option.
+The following example shows a request using $select query option.
 
 # [HTTP](#tab/http)
 <!-- {

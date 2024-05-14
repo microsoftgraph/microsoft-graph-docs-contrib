@@ -3,7 +3,7 @@ title: "fileAssessmentRequest resource type"
 description: "Used to create and retrieve a file threat assessment."
 ms.localizationpriority: medium
 author: "hafen-ms"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -43,7 +43,7 @@ The file can be a text file or Word document or binary file received in an email
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

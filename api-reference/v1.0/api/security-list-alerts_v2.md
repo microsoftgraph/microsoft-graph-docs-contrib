@@ -3,7 +3,7 @@ title: "List alerts_v2"
 description: "Get a list of the security alert objects and their properties."
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

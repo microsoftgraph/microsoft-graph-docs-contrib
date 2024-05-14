@@ -3,7 +3,7 @@ title: "educationCategory resource type"
 description: "A category that can be applied to assignments."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

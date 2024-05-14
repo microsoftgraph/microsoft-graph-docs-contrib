@@ -3,7 +3,7 @@ title: "teamworkPeripheral resource type"
 description: "Represents the details about the peripherals attached to a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

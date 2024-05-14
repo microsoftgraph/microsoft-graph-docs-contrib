@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-retrieveScopedPermissions, err := graphClient.DeviceManagement().VirtualEndpoint().RetrieveScopedPermissions().Get(context.Background(), nil)
+retrieveScopedPermissions, err := graphClient.DeviceManagement().VirtualEndpoint().RetrieveScopedPermissions().GetAsRetrieveScopedPermissionsGetResponse(context.Background(), nil)
 
 
 ```

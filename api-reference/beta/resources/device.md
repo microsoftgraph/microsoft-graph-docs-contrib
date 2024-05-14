@@ -3,7 +3,7 @@ title: "device resource type"
 description: "Represents a device registered in the directory."
 ms.localizationpriority: medium
 author: "sandeo-MSFT"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -67,7 +67,7 @@ This resource is an open type that allows other properties to be passed in. You 
 |isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `not`).|
 |isManaged|Boolean|`true` if the device is managed by a Mobile Device Management (MDM) app; otherwise, `false`. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `not`). |
 |isManagementRestricted|Boolean|Indicates whether the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. The default value is `false`. Read-only. <br/><br/> To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the `Directory.Write.Restricted` permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.|
-|isRooted|Boolean|`true` if device is rooted; `false` if device is jail-broken. This can only be updated by Intune.|
+|isRooted|Boolean|`true` if the device is rooted; `false` if the device is jail-broken. This property can only be updated by Intune.|
 |kind| String| Form factor of the device. Only returned if the user signs in with a Microsoft account as part of Project Rome. |
 |managementType|String|Management channel of the device.  This property is set by Intune. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |manufacturer| String| Manufacturer of the device. Read-only. |

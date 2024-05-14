@@ -3,7 +3,7 @@ title: "List deviceLocalCredentialInfo"
 description: "Get a list of deviceLocalCredentialInfo and their properties, excluding the credentials property."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -46,7 +46,7 @@ The response might also contain an `odata.nextLink`, which you can use to page t
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,10 +56,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "devicelocalcredentialinfo_list"
 }
 -->
 ``` http
@@ -70,7 +71,7 @@ ocp-client-version: "1.2"
 ```
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

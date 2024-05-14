@@ -3,7 +3,7 @@ title: "Remove resourceRoleScope from an access package"
 description: "Remove a resourceRoleScope from an access package."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

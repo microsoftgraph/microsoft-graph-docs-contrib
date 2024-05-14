@@ -3,7 +3,7 @@ title: "group: retryServiceProvisioning"
 description: "Retry the group service provisioning."
 ms.localizationpriority: medium
 author: "PaulEkirapa"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: "apiPageType"
 ---
 
@@ -39,7 +39,7 @@ POST /groups/{id}/retryServiceProvisioning
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -3,7 +3,7 @@ title: "List windows10MobileCompliancePolicies"
 description: "List properties and relationships of the windows10MobileCompliancePolicy objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

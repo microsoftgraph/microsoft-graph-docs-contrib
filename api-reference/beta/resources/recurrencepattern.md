@@ -3,7 +3,7 @@ title: "recurrencePattern resource type"
 description: "Describes the frequency by which a recurring event repeats."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "iamgirishck"
 ---
 

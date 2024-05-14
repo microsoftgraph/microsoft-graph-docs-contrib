@@ -3,7 +3,7 @@ title: "plannerAssignedToTaskBoardTaskFormat resource type"
 description: "Represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned)."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
-ms.prod: "planner"
+ms.subservice: "planner"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ Represents the information used to render a task correctly in the **AssignedTo**
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

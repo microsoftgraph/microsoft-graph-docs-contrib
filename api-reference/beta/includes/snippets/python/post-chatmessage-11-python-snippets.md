@@ -8,40 +8,24 @@ from msgraph import GraphServiceClient
 from msgraph.generated.models.chat_message import ChatMessage
 from msgraph.generated.models.item_body import ItemBody
 from msgraph.generated.models.chat_message_attachment import ChatMessageAttachment
-from msgraph.generated.models.chat_message_hosted_content import ChatMessageHostedContent
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ChatMessage(
-	subject = "Announcement Subheading",
+	subject = None,
 	body = ItemBody(
-		content_type = BodyType.Text,
-		content = "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text",
+		content_type = BodyType.Html,
+		content = "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>",
 	),
 	attachments = [
 		ChatMessageAttachment(
-			id = "d7ddbf876ae340c3a03bada395ec7da7",
-			content_type = "application/vnd.microsoft.teams.messaging-announcementBanner",
+			id = "74d20c7f34aa4a7fb74e2b30004247c5",
+			content_type = "application/vnd.microsoft.card.thumbnail",
 			content_url = None,
-			content = "{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}",
+			content = "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
 			name = None,
 			thumbnail_url = None,
-		),
-	],
-	hosted_contents = [
-		ChatMessageHostedContent(
-			content_bytes = base64.urlsafe_b64decode("iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4c6QAAAARnQU1BA"),
-			content_type = "image/png",
-			additional_data = {
-					"@microsoft_graph_temporary_id" : "1",
-			}
-		),
-		ChatMessageHostedContent(
-			content_bytes = base64.urlsafe_b64decode("iVBORw0KGgoAAAANSUhEUgAAA5YAAAB4CAYAAACJrW0RAAAAAXNSR0IArs4c6QAAIABJREFUe"),
-			content_type = "image/png",
-			additional_data = {
-					"@microsoft_graph_temporary_id" : "2",
-			}
+			teams_app_id = "881b8843-fd91-49e5-9ac2-47ec497ffbe5",
 		),
 	],
 )

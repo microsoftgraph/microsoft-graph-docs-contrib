@@ -3,7 +3,7 @@ title: "States, transitions, and limitations for submissions"
 description: "Learn about the transitions that occur in the submission states throughout the process flow and which education APIs in Microsoft Graph are involved."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

@@ -3,7 +3,7 @@ title: "searchAggregation resource type"
 description: "Provides the details of the search aggregation in the search response."
 ms.localizationpriority: medium
 author: "njerigrevious"
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: "resourcePageType"
 ---
 

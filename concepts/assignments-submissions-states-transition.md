@@ -3,7 +3,7 @@ title: "Teacher and student actions for assignments and submissions"
 description: "Learn how to get the assignments and related submissions for Teachers and Students with state transition rules."
 ms.localizationpriority: medium
 author: "AshwaniBansal1"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 

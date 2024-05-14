@@ -3,7 +3,7 @@ title: "usersignininsight resource type"
 description: "In the Microsoft Entra access reviews, the userSignInInsight resource represents insights provided to reviewers based on the user's last sign-in date and time."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

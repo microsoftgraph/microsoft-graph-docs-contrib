@@ -3,7 +3,7 @@ title: "syncApps action"
 description: "Intune Androidforwork Androidforworksettings Syncapps Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

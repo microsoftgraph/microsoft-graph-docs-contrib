@@ -4,7 +4,7 @@ description: "A container for Microsoft Teams features available for organizatio
 author: "akumar39"
 doc_type: resourcePageType
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # teamwork resource type
@@ -18,23 +18,27 @@ A container for the range of Microsoft Teams functionalities that are available 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
+|[Get teamwork](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.|
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|id|string| A unique identifier. |
+|id|string|The default teamwork identifier.|
+|isTeamsEnabled|Boolean|Indicates whether Microsoft Teams is enabled for the organization.|  
+|region|string|Represents the region of the organization. [!INCLUDE [supported-regions](../../includes/teamwork-supported-regions.md)]|
 
 ## Relationships
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| The deleted team.|
+|deletedChats|[deletedChat](../resources/deletedchat.md) collection| A collection of deleted chats.|
 |teamsAppSettings|[teamsAppSettings](../resources/teamsappsettings.md)|Represents tenant-wide settings for all [Teams apps](teamsapp.md) in the tenant.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -44,7 +48,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string"
+    "@odata.type": "#microsoft.graph.teamwork",
+    "id": "String",
+    "isTeamsEnabled": "boolean",
+    "region": "String"
 }
 
 ```

@@ -3,7 +3,7 @@ title: "teamsAppSettings resource type"
 description: "Represents tenant-wide settings for all Microsoft Teams apps in a tenant."
 author: "subray2014"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

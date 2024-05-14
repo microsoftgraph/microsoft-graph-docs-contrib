@@ -3,7 +3,7 @@ title: "List linkedResources"
 description: "Get the linkedResources from the linkedResources navigation property."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

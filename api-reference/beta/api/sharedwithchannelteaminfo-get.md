@@ -4,7 +4,7 @@ description: "Get a team that has been shared with a specified channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # Get sharedWithChannelTeamInfo

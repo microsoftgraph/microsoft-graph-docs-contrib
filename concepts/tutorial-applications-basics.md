@@ -1,12 +1,12 @@
 ---
 title: "Manage a Microsoft Entra application using Microsoft Graph"
 description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.prod: "applications"
+ms.subservice: entra-applications
 ms.date: 08/14/2023
 #Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to programmatically create and manage applications and service principals in my tenant.
 ---
@@ -354,6 +354,8 @@ Content-Type: application/json
 
 ### Create app roles on an application object
 
+To keep any existing app roles, include them in the request. Otherwise, they are replaced with the new object.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -558,7 +560,10 @@ You manage the app instance lock feature through the **servicePrincipalLockConfi
 #### To lock all sensitive properties of a service principal
 
 When **isEnabled** and **allProperties** is set to `true`, even if other properties of the servicePrincipalLockConfiguration object are `null`, then all sensitive properties of the service principal are locked.
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-serviceprincipallockconfig-all"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46fb63102f7
 
@@ -573,7 +578,10 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 #### To lock specific sensitive properties of a service principal
 
 The following example locks the **keyCredentials** and **passwordCredentials** properties of the service principal and enables the app instance lock feature.
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-application-basics-serviceprincipallockconfig-specific"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46fb63102f7
 

@@ -3,7 +3,7 @@ title: "onAttributeCollectionHandler resource type"
 description: "Represents a step in a multi-event user flow policy defining what happens when attributes are ready to be collected from the user."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

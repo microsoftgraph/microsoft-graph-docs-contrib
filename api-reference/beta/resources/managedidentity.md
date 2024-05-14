@@ -3,7 +3,7 @@ title: "managedIdentity resource type"
 description: "Represents details of the managed identity that was used to sign into the target resource."
 author: "phoebeweiser"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

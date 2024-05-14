@@ -3,7 +3,7 @@ title: "tasks resource type"
 description: "Represents the To Do tasks service available to a user"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ None.
 |lists|[baseTaskList](../resources/basetasklist.md) collection|The task lists in the users mailbox.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

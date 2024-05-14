@@ -3,7 +3,7 @@ title: "Create deviceManagementConfigurationRedirectSettingDefinition"
 description: "Create a new deviceManagementConfigurationRedirectSettingDefinition object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

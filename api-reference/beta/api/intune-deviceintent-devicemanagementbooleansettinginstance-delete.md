@@ -3,7 +3,7 @@ title: "Delete deviceManagementBooleanSettingInstance"
 description: "Deletes a deviceManagementBooleanSettingInstance."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

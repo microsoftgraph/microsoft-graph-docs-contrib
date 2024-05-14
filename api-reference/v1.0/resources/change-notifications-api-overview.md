@@ -3,7 +3,7 @@ title: "Overview:  Microsoft Graph API change notifications"
 description: "Deliver change notifications to clients."
 ms.localizationpriority: high
 author: "keylimesoda"
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 doc_type: conceptualPageType
 ms.date: 09/10/2022
 ---

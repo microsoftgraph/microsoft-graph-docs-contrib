@@ -3,7 +3,7 @@ title: "welcomeScreenMeetingInformation enum type"
 description: "Possible values for welcome screen meeting information."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

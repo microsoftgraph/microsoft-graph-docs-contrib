@@ -3,7 +3,7 @@ title: "cloudPC: troubleshoot"
 description: "Troubleshoot a specific Cloud PC. Use this API to check the health status of the Cloud PC and the session host."
 author: "RuiHou105"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

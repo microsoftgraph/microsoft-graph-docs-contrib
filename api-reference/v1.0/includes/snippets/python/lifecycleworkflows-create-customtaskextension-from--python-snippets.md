@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.custom_task_extension import CustomTaskExtension
 from msgraph.generated.models.logic_app_trigger_endpoint_configuration import LogicAppTriggerEndpointConfiguration
-from msgraph.generated.models.custom_extension_authentication_configuration import CustomExtensionAuthenticationConfiguration
+from msgraph.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
 from msgraph.generated.models.custom_extension_client_configuration import CustomExtensionClientConfiguration
 from msgraph.generated.models.custom_task_extension_callback_configuration import CustomTaskExtensionCallbackConfiguration
 
@@ -22,18 +22,14 @@ request_body = CustomTaskExtension(
 		resource_group_name = "RG-LCM",
 		logic_app_workflow_name = "ManagerAccess",
 	),
-	authentication_configuration = CustomExtensionAuthenticationConfiguration(
+	authentication_configuration = AzureAdTokenAuthentication(
 		odata_type = "#microsoft.graph.azureAdTokenAuthentication",
-		additional_data = {
-				"resource_id" : "542dc01a-0b5d-4edc-b3f9-5cfe6393f557",
-		}
+		resource_id = "542dc01a-0b5d-4edc-b3f9-5cfe6393f557",
 	),
 	client_configuration = CustomExtensionClientConfiguration(
 		odata_type = "#microsoft.graph.customExtensionClientConfiguration",
+		maximum_retries = 1,
 		timeout_in_milliseconds = 1000,
-		additional_data = {
-				"maximum_retries" : 1,
-		}
 	),
 	callback_configuration = CustomTaskExtensionCallbackConfiguration(
 		odata_type = "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",

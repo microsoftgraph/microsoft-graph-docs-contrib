@@ -3,7 +3,7 @@ title: "article resource type"
 description: "Articles are narratives by Microsoft that provide insight into threat actors, tooling, attacks, and vulnerabilities."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

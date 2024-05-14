@@ -3,7 +3,7 @@ title: "Get change notifications for Microsoft Teams virtual event updates"
 description: "Use change notifications in Microsoft Graph to enable you to subscribe to various events for Microsoft Teams online meetings."
 author: "awang119"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ms.custom: "scenarios:getting-started"
 ---
 

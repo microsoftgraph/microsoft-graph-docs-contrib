@@ -4,7 +4,7 @@ description: "Represents a Microsoft Entra directory role. Microsoft Entra direc
 ms.localizationpriority: high
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 
@@ -47,7 +47,7 @@ This resource supports:
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

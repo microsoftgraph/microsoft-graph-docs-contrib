@@ -74,7 +74,7 @@ To check the status of the purge data operation, make a GET request to the locat
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

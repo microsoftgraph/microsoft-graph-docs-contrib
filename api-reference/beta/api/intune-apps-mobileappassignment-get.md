@@ -3,7 +3,7 @@ title: "Get mobileAppAssignment"
 description: "Read properties and relationships of the mobileAppAssignment object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

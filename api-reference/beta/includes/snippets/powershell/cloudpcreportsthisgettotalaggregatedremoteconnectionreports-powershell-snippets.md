@@ -11,12 +11,12 @@ $params = @{
 	skip = 0
 	filter = "(TotalUsageInHour ge 40 and TotalUsageInHour le 80)"
 	select = @(
-		"CloudPcId"
-		"ManagedDeviceName"
-		"UserPrincipalName"
-		"TotalUsageInHour"
-		"DaysSinceLastSignIn"
-	)
+	"CloudPcId"
+"ManagedDeviceName"
+"UserPrincipalName"
+"TotalUsageInHour"
+"DaysSinceLastSignIn"
+)
 }
 
 Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport -BodyParameter $params

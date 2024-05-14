@@ -3,7 +3,7 @@ title: "createToken action"
 description: "Intune Androidforwork Androidforworkenrollmentprofile Createtoken Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

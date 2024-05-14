@@ -3,7 +3,7 @@ title: "Get windows10EasEmailProfileConfiguration"
 description: "Read properties and relationships of the windows10EasEmailProfileConfiguration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "keyBooleanValuePair resource type"
 description: "A key-value pair with a string key and a Boolean value."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

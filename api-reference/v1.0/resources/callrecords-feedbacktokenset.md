@@ -3,7 +3,7 @@ title: "feedbackTokenSet resource type"
 description: "The feedbackTokenSet type"
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
@@ -19,7 +19,7 @@ Explicit property names won't be documented since the feedback token names can c
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

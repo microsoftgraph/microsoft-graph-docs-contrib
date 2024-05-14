@@ -3,7 +3,7 @@ title: "Manage phone numbers for bots by using the cloud communications API"
 description: "Learn how to create a bot that is reachable through a phone number, and assign, unassign, or update a bot phone number by using the Microsoft Graph cloud communications API."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Manage phone numbers for bots

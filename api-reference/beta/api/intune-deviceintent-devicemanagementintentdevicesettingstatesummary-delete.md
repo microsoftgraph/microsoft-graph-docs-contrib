@@ -3,7 +3,7 @@ title: "Delete deviceManagementIntentDeviceSettingStateSummary"
 description: "Deletes a deviceManagementIntentDeviceSettingStateSummary."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

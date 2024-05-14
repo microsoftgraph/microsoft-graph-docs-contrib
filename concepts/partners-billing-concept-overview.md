@@ -3,7 +3,7 @@ title: "Use the partner billing API in Microsoft Graph to access billing data"
 description: "Learn how to use the partner billing API in Microsoft Graph to facilitate the export of billing data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 ---
 
 # Use the partner billing API in Microsoft Graph to access billing data

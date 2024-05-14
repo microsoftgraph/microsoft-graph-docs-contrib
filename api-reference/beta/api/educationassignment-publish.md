@@ -3,7 +3,7 @@ title: "educationAssignment: publish"
 description: "Change the state of an educationAssignment from its original draft status to the published status."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 Ok` response code and an [educationAss
 The following example shows how to call this API.
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +102,7 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 ---
 
 ### Response
-The following is an example of a response. 
+The following example shows the response. 
 
 <!-- {
   "blockType": "response",

@@ -3,7 +3,7 @@ title: "Create resourceOperation"
 description: "Create a new resourceOperation object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

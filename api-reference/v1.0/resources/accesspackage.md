@@ -3,7 +3,7 @@ title: "accessPackage resource type"
 description: "An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # accessPackage resource type
@@ -58,7 +58,7 @@ Each access package is referenced by a single access package catalog, and has li
 |resourceRoleScopes| [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | The resource roles and scopes in this access package. |
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

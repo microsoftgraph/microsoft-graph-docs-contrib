@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.$value_put_request_body import $valuePutRequestBody
+from msgraph.generated.identity.b2cuserflows.item.languages.item.overridespages.item.value.$value_put_request_body import $valuePutRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

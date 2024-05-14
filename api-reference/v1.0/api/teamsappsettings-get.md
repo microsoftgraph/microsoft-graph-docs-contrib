@@ -3,7 +3,7 @@ title: "Get teamsAppSettings"
 description: "Read the properties and relationships of a teamsAppSettings object."
 author: "subray2014"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

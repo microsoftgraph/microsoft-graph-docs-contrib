@@ -3,7 +3,7 @@ title: "Get workbookDocumentTask"
 description: "Get the properties and relationships of workbookDocumentTask object."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

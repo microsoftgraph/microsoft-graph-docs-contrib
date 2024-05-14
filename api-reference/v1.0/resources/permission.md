@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Permission
 ms.localizationpriority: high
 description: "The Permission resource provides information about a sharing permission granted for a DriveItem resource."
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ OneDrive for Business and SharePoint document libraries don't return the **inher
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

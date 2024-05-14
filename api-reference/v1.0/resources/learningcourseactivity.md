@@ -3,7 +3,7 @@ title: "learningCourseActivity resource type"
 description: "Represents the activities that are part of an employee learning course."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.subservice: "viva-learning"
 doc_type: resourcePageType
 ---
 

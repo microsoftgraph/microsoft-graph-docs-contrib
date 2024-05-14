@@ -3,7 +3,7 @@ title: "resourceReference resource type"
 description: "Complex type containing properties of Insights."
 author: "simonhult"
 ms.localizationpriority: medium
-ms.prod: "insights"
+ms.subservice: "insights"
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ Complex type containing properties of [itemInsights](iteminsights.md)
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

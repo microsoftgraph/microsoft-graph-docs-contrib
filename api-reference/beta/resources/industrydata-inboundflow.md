@@ -3,7 +3,7 @@ title: "inboundFlow resource type"
 description: "An abstract base type for all flows that bring data into the canonical store in the Azure Data Lake."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "industry-data-etl"
+ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 

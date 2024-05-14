@@ -3,7 +3,7 @@ title: "Get educationUser"
 description: "Retrieve the properties and relationships of a user."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

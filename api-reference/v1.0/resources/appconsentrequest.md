@@ -3,7 +3,7 @@ title: "appConsentRequest resource type"
 description: "Represents the request that a user creates when they request the tenant admin for consent to access an app or to grant permissions to an app."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

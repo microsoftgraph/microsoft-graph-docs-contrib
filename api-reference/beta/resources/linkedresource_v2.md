@@ -3,7 +3,7 @@ title: "linkedResource_v2 resource type"
 description: "Represents an item in a partner application related to a baseTask"
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -45,7 +45,7 @@ Some **linkedResource** objects aren't associated with any web URLs, in which ca
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

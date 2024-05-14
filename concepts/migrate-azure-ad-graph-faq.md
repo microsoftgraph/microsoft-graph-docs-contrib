@@ -1,11 +1,11 @@
 ---
 title: "Azure AD Graph to Microsoft Graph migration FAQ"
 description: "Provides answers to frequently asked questions about migrating from Azure Active Directory (Azure AD) Graph to Microsoft Graph."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: entra-applications
 ms.topic: faq
 ms.date: 06/22/2023
 #Customer intent: As a developer, I want to understand more about why I should migrate my app from Azure AD Graph to Microsoft Graph.

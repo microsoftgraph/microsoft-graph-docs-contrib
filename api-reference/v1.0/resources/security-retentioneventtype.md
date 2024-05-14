@@ -3,7 +3,7 @@ title: "retentionEventType resource type"
 description: "Represents a single group for the same type of retention events. An event type is a generic description for similar events that can be used with any label with event-based retention."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -41,7 +41,7 @@ For details, see [Start retention when an event occurs](/microsoft-365/complianc
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

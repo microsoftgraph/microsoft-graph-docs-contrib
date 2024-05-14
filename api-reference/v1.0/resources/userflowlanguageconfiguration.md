@@ -3,7 +3,7 @@ title: "userFlowLanguageConfiguration resource type"
 description: "Allows a user flow to support multiple languages."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -41,7 +41,7 @@ For [Microsoft Entra user flows](/azure/active-directory/external-identities/use
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

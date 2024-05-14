@@ -3,7 +3,7 @@ title: "Create assignmentPolicies"
 description: "Create a new accessPackageAssignmentPolicy object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 # Create assignmentPolicies

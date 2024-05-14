@@ -3,7 +3,7 @@ title: "workbookRangeFormat resource type"
 description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -46,7 +46,7 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

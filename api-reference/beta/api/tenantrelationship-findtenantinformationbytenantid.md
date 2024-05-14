@@ -3,7 +3,7 @@ title: "tenantRelationship: findTenantInformationByTenantId"
 description: "Given a tenant ID, search for a tenant and read its tenantInformation."
 author: "adimitui"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

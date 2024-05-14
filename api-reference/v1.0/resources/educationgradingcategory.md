@@ -3,7 +3,7 @@ title: "educationGradingCategory resource type"
 description: "Represents the weighted contribution of an assignment to a class average grade."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

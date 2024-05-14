@@ -3,7 +3,7 @@ title: "blobEvidence resource type"
 description: "Represents a storage blob."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

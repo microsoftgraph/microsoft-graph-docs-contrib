@@ -1,9 +1,9 @@
 ---
 title: "accessPackage: moveToCatalog"
-description: "Allows callers to move an access package from one catalog to the another."
+description: "Allows callers to move an access package from one catalog to the other."
 author: "fsheik"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|catalogId|String|ID of the catalog to which the access package will be moved.|
+|catalogId|String|ID of the catalog to which the access package is moved.|
 
 
 
@@ -56,7 +56,7 @@ If successful, this action returns a `200 OK` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

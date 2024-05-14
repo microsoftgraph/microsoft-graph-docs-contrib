@@ -3,7 +3,7 @@ title: "Create workbookCommentReply"
 description: "Create a new workbookCommentReply."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: "apiPageType"
 ---
 

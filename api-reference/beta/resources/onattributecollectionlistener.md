@@ -3,7 +3,7 @@ title: "onAttributeCollectionListener resource type"
 description: "Listener for the onAttributeCollection event"
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

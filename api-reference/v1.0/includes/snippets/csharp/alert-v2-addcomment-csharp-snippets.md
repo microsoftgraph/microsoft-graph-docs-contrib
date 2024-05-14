@@ -16,7 +16,7 @@ var requestBody = new AlertComment
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Security.Alerts_v2["{alert-id}"].Comments.PostAsync(requestBody);
+var result = await graphClient.Security.Alerts_v2["{alert-id}"].Comments.PostAsCommentsPostResponseAsync(requestBody);
 
 
 ```

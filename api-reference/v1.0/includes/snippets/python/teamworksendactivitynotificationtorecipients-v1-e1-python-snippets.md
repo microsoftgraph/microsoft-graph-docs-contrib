@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.send_activity_notification_to_recipients_post_request_body import SendActivityNotificationToRecipientsPostRequestBody
+from msgraph.generated.teamwork.send_activity_notification_to_recipients.send_activity_notification_to_recipients_post_request_body import SendActivityNotificationToRecipientsPostRequestBody
 from msgraph.generated.models.teamwork_activity_topic import TeamworkActivityTopic
 from msgraph.generated.models.item_body import ItemBody
 from msgraph.generated.models.teamwork_notification_recipient import TeamworkNotificationRecipient

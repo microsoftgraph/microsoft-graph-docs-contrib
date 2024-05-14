@@ -3,7 +3,7 @@ title: "wellKnownTaskList resource type"
 description: "A built-in task list that can't be renamed or deleted."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

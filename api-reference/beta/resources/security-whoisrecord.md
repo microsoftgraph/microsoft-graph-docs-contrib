@@ -3,7 +3,7 @@ title: "whoisRecord resource type"
 description: "Represents a WHOIS record that contains information about a registered host, the contacts for the registered host, and other metadata about the registration."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

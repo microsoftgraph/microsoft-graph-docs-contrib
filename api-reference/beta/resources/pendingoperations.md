@@ -4,7 +4,7 @@ description: "The pendingOperations resource indicates that one or more operatio
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
 ms.date: 08/06/2019
-ms.prod: files
+ms.subservice: onedrive
 doc_type: "resourcePageType"
 ---
 

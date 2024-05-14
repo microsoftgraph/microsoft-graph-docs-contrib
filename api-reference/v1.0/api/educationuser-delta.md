@@ -3,7 +3,7 @@ title: "educationUser: delta"
 description: "Get newly created or updated users without having to perform a full read of the entire user collection."
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

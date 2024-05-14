@@ -3,7 +3,7 @@ title: "Create customSecurityAttributeDefinition"
 description: "Create a new customSecurityAttributeDefinition object."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -77,7 +77,7 @@ The following example adds a new custom security attribute definition that is a 
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -137,7 +137,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -173,7 +173,7 @@ The following example adds a new custom security attribute definition that suppo
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -234,7 +234,7 @@ Content-length: 310
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -272,7 +272,7 @@ Here's an example that adds a new custom security attribute definition with a li
 
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -346,7 +346,7 @@ Content-Type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

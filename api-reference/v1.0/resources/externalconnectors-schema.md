@@ -3,7 +3,7 @@ title: "schema resource type"
 description: "The connection schema determines how your content added into a connection will be used in various Microsoft Graph experiences."
 author: "mecampos"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

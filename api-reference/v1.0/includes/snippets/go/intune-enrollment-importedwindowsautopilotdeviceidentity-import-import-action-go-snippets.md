@@ -50,7 +50,7 @@ importedWindowsAutopilotDeviceIdentities := []graphmodels.ImportedWindowsAutopil
 }
 requestBody.SetImportedWindowsAutopilotDeviceIdentities(importedWindowsAutopilotDeviceIdentities)
 
-import, err := graphClient.DeviceManagement().ImportedWindowsAutopilotDeviceIdentities().Import().Post(context.Background(), requestBody, nil)
+import, err := graphClient.DeviceManagement().ImportedWindowsAutopilotDeviceIdentities().Import().PostAsImportPostResponse(context.Background(), requestBody, nil)
 
 
 ```

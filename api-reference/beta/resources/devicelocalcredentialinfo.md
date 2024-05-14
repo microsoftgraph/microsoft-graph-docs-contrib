@@ -3,7 +3,7 @@ title: "deviceLocalCredentialInfo resource type"
 description: "Represents local administrator credential information for all device objects in Microsoft Entra ID that are enabled with Local Admin Password Solution (LAPS)."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

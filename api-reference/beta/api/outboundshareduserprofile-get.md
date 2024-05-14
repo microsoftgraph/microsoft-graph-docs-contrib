@@ -2,8 +2,9 @@
 title: "Get outboundSharedUserProfile"
 description: "Get the details of an outboundSharedUserProfile."
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

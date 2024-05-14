@@ -3,7 +3,7 @@ title: "hostReputationRule resource type"
 description: "Represents a rule that is used (in combination with other rules) to determine the reputation of a hostname or IP address."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

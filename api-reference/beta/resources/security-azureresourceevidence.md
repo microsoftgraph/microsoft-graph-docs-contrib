@@ -3,7 +3,7 @@ title: "azureResourceEvidence resource type"
 description: "Represents an Azure resource such as a VM, Storage, or KeyVault."
 author: "MSRonBorysowski"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

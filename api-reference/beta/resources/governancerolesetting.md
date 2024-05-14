@@ -3,7 +3,7 @@ title: "governanceRoleSetting resource type"
 description: "Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
 ---
@@ -48,7 +48,7 @@ Represents a set of configurations on each role definition that needs to be eval
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

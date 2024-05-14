@@ -4,7 +4,7 @@ description: The listItemVersion resource represents a previous version of a Lis
 ms.date: 09/17/2017
 title: ListItemVersion
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 

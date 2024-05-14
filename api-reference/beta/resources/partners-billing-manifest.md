@@ -3,7 +3,7 @@ title: "manifest resource type"
 description: "Represents metadata for the exported data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

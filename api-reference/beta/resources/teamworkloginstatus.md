@@ -3,7 +3,7 @@ title: "teamworkLoginStatus resource type"
 description: "Represents Microsoft Teams, Skype for Business, and Exchange sign-in status for a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

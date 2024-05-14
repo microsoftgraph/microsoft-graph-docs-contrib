@@ -3,7 +3,7 @@ title: "businessScenarioTask resource type"
 description: "Represents a plannerTask that is associated with a businessScenario and contains additional scenario data."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: resourcePageType
 ---
 

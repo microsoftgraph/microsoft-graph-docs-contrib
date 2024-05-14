@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\SourceSystemDefinition;
+use Microsoft\Graph\Generated\Models\UserMatchingSetting;
+use Microsoft\Graph\Generated\Models\UserMatchTargetReferenceValue;
+use Microsoft\Graph\Generated\Models\IdentifierTypeReferenceValue;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

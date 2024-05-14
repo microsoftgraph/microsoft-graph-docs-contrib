@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\TransferPostRequestBody;
+use Microsoft\Graph\Generated\Models\InvitationParticipantInfo;
+use Microsoft\Graph\Generated\Models\IdentitySet;
+use Microsoft\Graph\Generated\Models\Identity;
+use Microsoft\Graph\Generated\Models\ParticipantInfo;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

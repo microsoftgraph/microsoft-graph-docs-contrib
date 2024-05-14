@@ -3,7 +3,7 @@ title: "educationModule: setUpResourcesFolder"
 description: "Create a SharePoint folder to upload files for a given educationModule."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

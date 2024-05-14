@@ -3,7 +3,7 @@ title: "signingCertificateUpdateStatus resource type"
 description: "Provides status of the last update of the signing certificate."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

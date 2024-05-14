@@ -3,7 +3,7 @@ title: "List lists"
 description: "Get a list of the todoTaskList objects and their properties."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

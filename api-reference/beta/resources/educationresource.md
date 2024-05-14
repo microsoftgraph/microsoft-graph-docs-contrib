@@ -3,7 +3,7 @@ title: "educationResource resource type"
 description: "An abstract type that represents the base class for all education-related resource objects in a system."
 ms.localizationpriority: medium
 author: "mmast-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -33,7 +33,7 @@ This resource stores the common properties across all resource types.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

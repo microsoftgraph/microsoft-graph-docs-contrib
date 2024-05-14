@@ -3,7 +3,7 @@ title: "companySubscription resource type"
 description: "Represents subscriptions for a tenant."
 ms.localizationpriority: medium
 author: "arp19690"
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

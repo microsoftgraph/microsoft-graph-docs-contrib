@@ -21,6 +21,8 @@ var requestBody = new Schedule
 	TimeOffRequestsEnabled = true,
 	StartDayOfWeek = DayOfWeekObject.Tuesday,
 	ActivitiesIncludedWhenCopyingShiftsEnabled = true,
+	IsCrossLocationShiftsEnabled = true,
+	IsCrossLocationShiftRequestApprovalRequired = true,
 	TimeClockEnabled = true,
 	TimeClockSettings = new TimeClockSettings
 	{

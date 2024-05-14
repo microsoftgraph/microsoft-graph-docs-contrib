@@ -3,7 +3,7 @@ title: "Update tokenIssuancePolicy"
 description: "Update the properties of tokenIssuancePolicy object."
 ms.localizationpriority: medium
 author: "luleonpla"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

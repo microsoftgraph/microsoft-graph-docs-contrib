@@ -3,7 +3,7 @@ title: "enumeratedDeviceRegistrationMembership resource type"
 description: "Indicates the users and groups this device registration policy applies to."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

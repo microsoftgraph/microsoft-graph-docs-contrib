@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ProvisionOnDemandPostRequestBody;
+use Microsoft\Graph\Generated\Models\SynchronizationJobApplicationParameters;
+use Microsoft\Graph\Generated\Models\SynchronizationJobSubject;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

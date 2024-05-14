@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Use the special collection to access a special folder by name."
 title: Get Special Folders
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # Get a special folder by name

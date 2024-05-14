@@ -3,7 +3,7 @@ title: "channel: removeEmail"
 description: "Remove a channel's provisioned email."
 author: "anandab-msft"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

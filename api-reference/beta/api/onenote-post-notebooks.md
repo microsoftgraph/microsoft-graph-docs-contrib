@@ -3,7 +3,7 @@ title: "Create notebook"
 description: "Create a new OneNote notebook."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.subservice: "onenote"
 doc_type: apiPageType
 ---
 

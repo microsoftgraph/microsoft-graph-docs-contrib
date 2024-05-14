@@ -3,7 +3,7 @@ title: "List dayNote"
 description: "Retrieve the properties and relationships of all day notes in a team."
 author: fmcgurrenw
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: apiPageType
 ---
 

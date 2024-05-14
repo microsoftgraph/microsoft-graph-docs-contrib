@@ -3,7 +3,7 @@ title: "conditionalAccessDevices resource type"
 description: "Represents devices in the policy scope."
 ms.localizationpriority: medium
 author: "SanDeo-MSFT"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

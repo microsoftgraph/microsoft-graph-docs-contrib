@@ -3,7 +3,7 @@ title: "hostTracker resource type"
 description: "Represents a unique code or value found within web pages and often used to track user interaction."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

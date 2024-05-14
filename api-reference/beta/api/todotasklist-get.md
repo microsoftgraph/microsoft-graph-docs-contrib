@@ -3,7 +3,7 @@ title: "Get todoTaskList"
 description: "Read the properties and relationships of a todoTaskList object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

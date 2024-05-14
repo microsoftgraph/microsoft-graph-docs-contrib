@@ -3,7 +3,7 @@ title: "Delete deviceCompliancePolicyAssignment"
 description: "Deletes a deviceCompliancePolicyAssignment."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

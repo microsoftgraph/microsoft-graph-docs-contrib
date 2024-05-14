@@ -4,7 +4,7 @@ description: "Learn how to use Microsoft Graph to create and manage connections.
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
-ms.prod: search
+ms.subservice: search
 ---
 <!---<author of this doc: rsamai>--->
 

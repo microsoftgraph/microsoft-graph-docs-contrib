@@ -3,7 +3,7 @@ title: "call resource type"
 description: "The **call** resource is created when there's an incoming call for the application or the application creates a new outgoing call via a `POST` on `communications/calls`."
 author: "ananmishr"
 ms.localizationpriority: high
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -95,7 +95,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

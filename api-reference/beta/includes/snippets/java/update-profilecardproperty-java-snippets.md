@@ -14,7 +14,7 @@ ProfileCardAnnotation profileCardAnnotation = new ProfileCardAnnotation();
 profileCardAnnotation.setDisplayName("Cost Center");
 LinkedList<DisplayNameLocalization> localizations = new LinkedList<DisplayNameLocalization>();
 DisplayNameLocalization displayNameLocalization = new DisplayNameLocalization();
-displayNameLocalization.setLanguageTag("nb-NO");
+displayNameLocalization.setLanguageTag("no");
 displayNameLocalization.setDisplayName("Kostnadssenter");
 localizations.add(displayNameLocalization);
 profileCardAnnotation.setLocalizations(localizations);

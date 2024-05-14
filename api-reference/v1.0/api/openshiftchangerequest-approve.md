@@ -3,7 +3,7 @@ title: "openShiftChangeRequest: approve"
 description: "Approve an openShiftChangeRequest request."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "apiPageType"
 ---
 
@@ -56,7 +56,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

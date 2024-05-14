@@ -5,6 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\MdmWindowsInformationProtectionPolicy;
+use Microsoft\Graph\Generated\Models\WindowsInformationProtectionResourceCollection;
+use Microsoft\Graph\Generated\Models\WindowsInformationProtectionDataRecoveryCertificate;
+use Microsoft\Graph\Generated\Models\WindowsInformationProtectionApp;
+use Microsoft\Graph\Generated\Models\WindowsInformationProtectionStoreApp;
+use Microsoft\Graph\Generated\Models\WindowsInformationProtectionProxiedDomainCollection;
+use Microsoft\Graph\Generated\Models\ProxiedDomain;
+use Microsoft\Graph\Generated\Models\WindowsInformationProtectionIPRangeCollection;
+use Microsoft\Graph\Generated\Models\IpRange;
+use Microsoft\Graph\Generated\Models\IPv6Range;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

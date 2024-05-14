@@ -4,7 +4,7 @@ description: "Defines how the synchronization should be performed for the synchr
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationRule resource type

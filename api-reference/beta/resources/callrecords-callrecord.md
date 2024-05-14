@@ -3,7 +3,7 @@ title: "callRecord resource type"
 description: "Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting."
 ms.localizationpriority: medium
 author: "mcm223"
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

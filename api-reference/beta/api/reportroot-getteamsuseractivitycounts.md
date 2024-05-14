@@ -2,7 +2,7 @@
 title: "reportRoot: getTeamsUserActivityCounts"
 description: "Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed users."
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "zhiliqiao"
 doc_type: apiPageType
 ---
@@ -91,7 +91,7 @@ Here's an example that outputs CSV.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -136,7 +136,7 @@ Here's an example that returns JSON.
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -151,7 +151,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

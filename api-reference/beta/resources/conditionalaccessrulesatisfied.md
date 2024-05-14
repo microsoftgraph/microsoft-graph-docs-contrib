@@ -3,7 +3,7 @@ title: "conditionalAccessRulesSatisfied resource type"
 description: "Indicates the conditional access rules satisfied during an authentication event."
 ms.localizationpriority: medium
 author: "egreenberg14"
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

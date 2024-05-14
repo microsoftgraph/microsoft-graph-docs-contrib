@@ -3,8 +3,9 @@ title: "accessReviewInstanceDecisionItem resource type"
 description: "Represents a decision on an accessReviewInstance."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
+toc.keywords: [ access review decisions ]
 ---
 
 # accessReviewInstanceDecisionItem resource type

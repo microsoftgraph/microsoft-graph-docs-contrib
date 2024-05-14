@@ -3,7 +3,7 @@ title: "Delete programControl (deprecated)"
 description: "In the Microsoft Entra access reviews feature, delete a programControl object.  This unlinks an access review from a program."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 

@@ -3,7 +3,7 @@ title: "homeRealmDiscoveryPolicy resource type"
 description: "Represents a policy to control Microsoft Entra authentication behavior for federated users."
 ms.localizationpriority: medium
 author: "nickludwig"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -78,7 +78,7 @@ The properties below form the JSON object that represents a token lifetime polic
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

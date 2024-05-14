@@ -3,7 +3,7 @@ title: "Get termStore group"
 description: "Read the properties and relationships of a group object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy  
+ms.subservice: sharepoint  
 doc_type: apiPageType
 ---
 

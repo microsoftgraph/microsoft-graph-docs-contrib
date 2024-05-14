@@ -1,11 +1,10 @@
 ---
 title: "agedAccountsPayable resource type"
-description: "Represents an agedAccountsPayable object in Dynamics 365 Business Central that shows the aging of a vendor account.".
+description: "Represents an agedAccountsPayable object in Dynamics 365 Business Central that shows the aging of a vendor account."
 services: "project-madeira"
-documentationcenter: ""
 author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
-ms.prod: "dynamics-365-business-central"
+ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 

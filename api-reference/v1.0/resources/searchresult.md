@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: searchResult resource type
 ms.localizationpriority: medium
 description: "The searchResult resource indicates than an item is the response to a search query."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 

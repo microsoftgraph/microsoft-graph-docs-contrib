@@ -7,10 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc-beta security labels file-plan-references create --body '{\
   "@odata.type": "#microsoft.graph.security.filePlanReferenceTemplate",\
-  "displayName": "String",\
-  "createdBy": {\
-    "@odata.type": "microsoft.graph.identitySet"\
-  }\
+  "displayName": "FIN 01-02-001",\
 }\
 '
 

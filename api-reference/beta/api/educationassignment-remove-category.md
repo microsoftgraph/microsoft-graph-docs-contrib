@@ -3,7 +3,7 @@ title: "Remove educationCategory"
 description: "Remove an existing educationCategory from this educationAssignment."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 ms.collection: "education"
 doc_type: apiPageType
 ---

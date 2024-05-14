@@ -3,7 +3,7 @@ title: "accountTargetContent resource type"
 description: "Represents included or excluded users for an attack simulation training campaign."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ author: spgraph-docs-team
 ms.localizationpriority: medium
 title: "hashes resource type"
 description: "The Hashes resource groups available hashes into a single structure for an item."
-ms.prod: files
+ms.subservice: onedrive
 doc_type: resourcePageType
 ---
 
@@ -17,7 +17,7 @@ The **hashes** resource groups available hashes into a single structure for an i
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

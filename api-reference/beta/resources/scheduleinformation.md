@@ -3,7 +3,7 @@ title: "scheduleInformation resource type"
 description: "Represents the availability of a user, distribution list, or resource for a specified time period. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 author: "iamgirishck"
 ---
 

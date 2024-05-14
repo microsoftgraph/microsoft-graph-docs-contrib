@@ -3,7 +3,7 @@ title: "teamworkFeaturesConfiguration resource type"
 description: "Represents the Microsoft Teams client configuration details for a Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

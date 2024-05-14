@@ -3,7 +3,7 @@ title: "deletedItemContainer resource type"
 description: "A container for deleted lifecycle workflow objects during the period before they're permanently deleted."
 author: "AlexFilipin"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

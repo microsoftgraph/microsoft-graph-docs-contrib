@@ -3,7 +3,7 @@ title: "teamworkDeviceHealth resource type"
 description: "Represents the health details of a Microsoft Teams-enabled device."
 author: "adsrivastava2"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

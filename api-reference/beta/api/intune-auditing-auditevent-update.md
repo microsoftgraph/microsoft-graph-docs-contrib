@@ -3,7 +3,7 @@ title: "Update auditEvent"
 description: "Update the properties of a auditEvent object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

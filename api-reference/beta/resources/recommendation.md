@@ -3,7 +3,7 @@ title: "recommendation resource type"
 description: "Represents a Microsoft Entra ID best practice or improvement action recommended by Microsoft for your Microsoft Entra tenant."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

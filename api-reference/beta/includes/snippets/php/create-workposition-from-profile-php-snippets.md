@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\WorkPosition;
+use Microsoft\Graph\Generated\Models\PositionDetail;
+use Microsoft\Graph\Generated\Models\CompanyDetail;
+use Microsoft\Graph\Generated\Models\PhysicalAddress;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

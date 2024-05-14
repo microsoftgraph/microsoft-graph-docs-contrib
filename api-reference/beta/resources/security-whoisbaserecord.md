@@ -3,7 +3,7 @@ title: "whoisBaseRecord resource type"
 description: "An abstract type that represents a whoisBaseRecord."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

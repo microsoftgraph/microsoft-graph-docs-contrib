@@ -3,7 +3,7 @@ title: "virtualEventPresenterDetails resource type"
 description: "Detail information about a virtual event presenter."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "azureADAuthentication resource type"
 description: "Collects the Microsoft Entra SLA attainment for each month for a Microsoft Entra tenant."
 author: "SarahBar"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

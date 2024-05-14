@@ -19,7 +19,7 @@ request_body = RetentionEvent(
 	description = "String",
 	event_queries = [
 		EventQuery(
-			odata_type = "microsoft.graph.security.eventQueries",
+			odata_type = "microsoft.graph.security.eventQuery",
 		),
 	],
 	event_trigger_date_time = "String (timestamp)",

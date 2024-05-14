@@ -3,7 +3,7 @@ title: "taskFileAttachment resource type"
 description: "Represents a file, such as a text file or Word document, attached to a todoTask."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

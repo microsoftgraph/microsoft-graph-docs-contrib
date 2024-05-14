@@ -3,7 +3,7 @@ title: "deviceManagementReports resource type"
 description: "DeviceManagementReports class for Reporting V2"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

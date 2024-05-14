@@ -4,7 +4,7 @@ description: "Update the synchronization schema for a given job or template. Thi
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # Update synchronizationSchema
@@ -45,7 +45,7 @@ If successful, returns a `204 No Content` response code. It doesn't return anyth
 ## Example
 
 ##### Request
-The following is an example of a request.
+The following example shows a request.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
@@ -108,7 +108,7 @@ Content-type: application/json
 ---
 
 ##### Response
-The following is an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

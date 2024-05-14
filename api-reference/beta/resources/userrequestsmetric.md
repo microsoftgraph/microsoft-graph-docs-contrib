@@ -3,7 +3,7 @@ title: "userRequestsMetric resource type"
 description: "Represents daily and monthly insights on all user requests for apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

@@ -15,7 +15,7 @@ var requestBody = new AddGroupPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.GroupLifecyclePolicies["{groupLifecyclePolicy-id}"].AddGroup.PostAsync(requestBody);
+var result = await graphClient.GroupLifecyclePolicies["{groupLifecyclePolicy-id}"].AddGroup.PostAsAddGroupPostResponseAsync(requestBody);
 
 
 ```

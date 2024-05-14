@@ -21,6 +21,9 @@ $params = @{
 	priority = 500
 	handler = @{
 		"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler"
+		customExtension = @{
+			id = "6fc5012e-7665-43d6-9708-4370863f4e6e"
+		}
 	}
 }
 

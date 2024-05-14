@@ -3,7 +3,7 @@ title: "shift resource type"
 description: "Represents a unit of scheduled work in a schedule."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

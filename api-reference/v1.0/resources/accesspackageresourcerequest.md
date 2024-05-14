@@ -3,7 +3,7 @@ title: "accessPackageResourceRequest resource type"
 description: "An access package resource request is a request to add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

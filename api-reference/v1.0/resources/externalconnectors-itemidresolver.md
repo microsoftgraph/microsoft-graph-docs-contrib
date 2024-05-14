@@ -3,7 +3,7 @@ title: "itemIdResolver resource type"
 description: Defines the rules for resolving a given URL to a connector item's ID."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "preApprovalDetail resource type"
 description: "A preApprovalDetail describes a list of conditions under which an app can be preapproved for consent."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

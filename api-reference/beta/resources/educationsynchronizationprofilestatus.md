@@ -3,7 +3,7 @@ title: "educationSynchronizationProfileStatus resource type"
 description: "Represents the synchronization status of a school data synchronization profile."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

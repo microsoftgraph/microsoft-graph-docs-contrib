@@ -3,7 +3,7 @@ title: "deletedTeam resource type"
 description: "Represents a deleted team in Microsoft Teams."
 author: agnesliu
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "messageRule resource type"
-description: "A rule that applies to messages in the Inbox of a user."
+description: "Represents a rule that applies to messages in the Inbox of a user."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-A rule that applies to messages in the Inbox of a user.
+Represents a rule that applies to messages in the Inbox of a user.
 
 In Outlook, you can set up rules for incoming messages in the Inbox to carry out specific actions upon certain conditions.
 
@@ -33,7 +33,7 @@ and available rule conditions and exceptions are represented by the [messageRule
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | Actions to be taken on a message when the corresponding conditions are fulfilled. |
-| conditions | [messageRulePredicates](messagerulepredicates.md) | Conditions that when fulfilled, will trigger the corresponding actions for that rule. |
+| conditions | [messageRulePredicates](messagerulepredicates.md) | Conditions that when fulfilled trigger the corresponding actions for that rule. |
 | displayName | String | The display name of the rule. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Exception conditions for the rule. |
 | hasError | Boolean | Indicates whether the rule is in an error condition. Read-only. |
@@ -44,7 +44,7 @@ and available rule conditions and exceptions are represented by the [messageRule
 
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

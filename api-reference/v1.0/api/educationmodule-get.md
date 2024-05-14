@@ -3,7 +3,7 @@ title: "Get educationModule"
 description: "Get the properties and relationships of a module."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

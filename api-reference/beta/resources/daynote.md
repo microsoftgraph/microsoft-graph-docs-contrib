@@ -3,7 +3,7 @@ title: dayNote resource type
 description: Represents a piece of text that communicates a note relevant for a specific day on a teams schedule.
 author: fmcgurrenw
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.subservice: teams
 doc_type: resourcePageType
 ---
 

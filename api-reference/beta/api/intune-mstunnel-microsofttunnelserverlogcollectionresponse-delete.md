@@ -3,7 +3,7 @@ title: "Delete microsoftTunnelServerLogCollectionResponse"
 description: "Deletes a microsoftTunnelServerLogCollectionResponse."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

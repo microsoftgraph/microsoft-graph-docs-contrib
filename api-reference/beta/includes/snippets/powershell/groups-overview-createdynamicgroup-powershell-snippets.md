@@ -10,14 +10,14 @@ $params = @{
 	description = "Marketing department folks"
 	displayName = "Marketing department"
 	groupTypes = @(
-		"Unified"
-		"DynamicMembership"
-	)
-	mailEnabled = $true
-	mailNickname = "marketing"
-	securityEnabled = $false
-	membershipRule = "user.department -eq "Marketing""
-	membershipRuleProcessingState = "on"
+	"Unified"
+"DynamicMembership"
+)
+mailEnabled = $true
+mailNickname = "marketing"
+securityEnabled = $false
+membershipRule = "user.department -eq "Marketing""
+membershipRuleProcessingState = "on"
 }
 
 New-MgBetaGroup -BodyParameter $params

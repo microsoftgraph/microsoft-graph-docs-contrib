@@ -3,7 +3,7 @@ title: "authenticationBehaviors resource type"
 description: "Authentication behaviors provide applications flexibility in adopting breaking-change behaviors related to token issuance."
 author: "medhir"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

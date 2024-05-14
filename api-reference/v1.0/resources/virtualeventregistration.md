@@ -3,7 +3,7 @@ title: "virtualEventRegistration resource type"
 description: "Represents an attendee's registration record of a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

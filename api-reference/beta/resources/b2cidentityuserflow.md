@@ -3,7 +3,7 @@ title: "b2cIdentityUserFlow resource type"
 description: "Represents a user flow within an Azure Active Directory B2C tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 author: "jkdouglas"
 ---
 

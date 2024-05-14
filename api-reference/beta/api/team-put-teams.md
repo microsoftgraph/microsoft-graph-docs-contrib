@@ -3,7 +3,7 @@ title: "Create team from group"
 description: "Create a new team from a group."
 author: "nkramer"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

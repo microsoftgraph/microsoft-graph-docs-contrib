@@ -3,7 +3,7 @@ title: "filteringProfile resource type"
 description: "Associates network access policies with Microsoft Entra ID Conditional Access policies, so that access policies can be applied to users and groups."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.subservice: entra-id
 doc_type: resourcePageType
 ---
 

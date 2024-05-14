@@ -3,7 +3,7 @@ title: "deletedChat resource type"
 description: "Represents a deleted chat in Microsoft Teams."
 author: sthapliyal
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create microsoftTunnelServer"
 description: "Create a new microsoftTunnelServer object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

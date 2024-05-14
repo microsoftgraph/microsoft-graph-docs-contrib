@@ -3,7 +3,7 @@ title: "optionalClaim resource type"
 description: "PROVIDE DESCRIPTION HERE"
 ms.localizationpriority: medium
 author: "sureshja"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

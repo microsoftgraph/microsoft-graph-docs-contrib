@@ -3,7 +3,7 @@ title: "Delete roleDefinition"
 description: "Deletes a roleDefinition."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

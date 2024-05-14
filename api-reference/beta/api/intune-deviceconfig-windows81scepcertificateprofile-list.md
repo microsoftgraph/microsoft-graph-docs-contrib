@@ -3,7 +3,7 @@ title: "List windows81SCEPCertificateProfiles"
 description: "List properties and relationships of the windows81SCEPCertificateProfile objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

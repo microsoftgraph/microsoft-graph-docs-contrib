@@ -3,7 +3,7 @@ title: "Delete windowsStoreApp"
 description: "Deletes a windowsStoreApp."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

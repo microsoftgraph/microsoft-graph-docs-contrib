@@ -3,7 +3,7 @@ title: "Get macOSImportedPFXCertificateProfile"
 description: "Read properties and relationships of the macOSImportedPFXCertificateProfile object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

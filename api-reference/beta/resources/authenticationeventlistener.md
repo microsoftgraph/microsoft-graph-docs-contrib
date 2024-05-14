@@ -3,7 +3,7 @@ title: "authenticationEventListener resource type"
 description: "**Representation of listener for on events in the authentication process**"
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -22,6 +22,10 @@ To customize the authentication process, listeners can be registered which speci
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
+
+> [!NOTE]
+>
+> You can have a maximum of 250 event listeners.
 
 Inherits from [entity](../resources/entity.md).
 

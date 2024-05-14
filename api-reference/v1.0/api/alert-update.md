@@ -3,7 +3,7 @@ title: "Update alert"
 description: "Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 

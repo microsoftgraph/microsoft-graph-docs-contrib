@@ -3,7 +3,7 @@ title: "approvalStage resource type"
 description: "Specifies a decision stage in an approval in entitlement management and PIM."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

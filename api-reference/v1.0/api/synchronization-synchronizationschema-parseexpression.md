@@ -4,7 +4,7 @@ description: "Parse a given string expression into an attributeMappingSource obj
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 ---
 
 # synchronizationSchema: parseExpression

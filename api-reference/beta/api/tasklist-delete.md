@@ -3,7 +3,7 @@ title: "Delete baseTaskList"
 description: "Deletes a taskList object."
 author: "devindrajit"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get accessReviewScheduleDefinition"
 description: "Read the properties and relationships of an accessReviewScheduleDefinition object."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

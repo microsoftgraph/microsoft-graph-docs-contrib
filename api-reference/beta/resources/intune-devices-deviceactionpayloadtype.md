@@ -3,7 +3,7 @@ title: "deviceActionPayloadType enum type"
 description: "A list of possible payload types to execute this action on the managed device. Payload represents existing Intune resource such as policy or app. Currently supported payload types are Application, DeviceConfiguration and DeviceManagementConfigurationPolicy"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

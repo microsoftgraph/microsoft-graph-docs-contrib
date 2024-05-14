@@ -3,7 +3,7 @@ title: "timeStamp resource type"
 description: "Date and time information for a point in time."
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
-ms.prod: sites-and-lists
+ms.subservice: sharepoint
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ Date and time information for a point in time.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

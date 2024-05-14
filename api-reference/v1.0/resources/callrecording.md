@@ -3,7 +3,7 @@ title: "callRecording resource type"
 description: "Represents a recording associated with an online meeting."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

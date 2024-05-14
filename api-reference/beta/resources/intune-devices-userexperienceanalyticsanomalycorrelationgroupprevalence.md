@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsAnomalyCorrelationGroupPrevalence enum type"
 description: "Indicates the level of prevalence of the correlation group features in the anomaly. Possible values are: high, medium or low"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

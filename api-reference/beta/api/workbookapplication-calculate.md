@@ -3,7 +3,7 @@ title: "workbookApplication: calculate"
 description: "Recalculate all currently opened workbooks in Excel."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code. It doesn't return a
 ## Example
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

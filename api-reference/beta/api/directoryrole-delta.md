@@ -4,7 +4,7 @@ description: "Get newly created, updated, or deleted directory roles without hav
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.reviewer: msodsrbac
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

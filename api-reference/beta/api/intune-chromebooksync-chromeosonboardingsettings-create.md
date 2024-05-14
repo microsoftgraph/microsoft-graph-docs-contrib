@@ -3,7 +3,7 @@ title: "Create chromeOSOnboardingSettings"
 description: "Create a new chromeOSOnboardingSettings object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

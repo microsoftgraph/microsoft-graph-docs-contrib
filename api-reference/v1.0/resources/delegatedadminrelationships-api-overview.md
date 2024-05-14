@@ -3,9 +3,8 @@ title: "Granular delegated admin privileges (GDAP) API overview"
 description: "Granular delegated admin privileges (GDAP) allow Microsoft partners to configure and request granular and time-bound access to their customers' environments, allowing customers to enforce a least-privileged access for Microsoft partners."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: partner-customer-administration
-doc_type: resourcePageType
-ms.custom: zt-include
+doc_type: conceptualPageType
+ms.subservice: partner-customer-administration
 ---
 
 # Granular delegated admin privileges (GDAP) API overview
@@ -40,7 +39,7 @@ The following diagram shows the status of the Delegated Admin relationship trans
 
 Send the invitation link to the customer for them to approve the GDAP request. For example, `https://admin.microsoft.com/AdminPortal/Home#/partners/invitation/granularAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is an invitation link, where `5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836` is the admin relationship request ID. After the customer approves the GDAP request, the GDAP relationship will transition to an active state.
 
-To finalize the workflow for enabling admin on behalf of (AOBO) management of the customer's tenant, proceed by creating a new access assignment for the delegated admin relationship by using the [Create accessAssignments](../api/delegatedadminrelationship-post-accessassignments.md) API. 
+To finalize the workflow for enabling admin on behalf of (AOBO) management of the customer's tenant, proceed by creating a new access assignment for the delegated admin relationship by using the [Create accessAssignments](../api/delegatedadminrelationship-post-accessassignments.md) API.
 
 
 ### Lifecycle of a GDAP relationship access assignment
@@ -108,7 +107,7 @@ To manage delegated admin relationships, the calling principal must be in the pa
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
+[!INCLUDE [zero-trust](../../../includes/identity-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 

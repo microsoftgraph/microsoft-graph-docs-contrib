@@ -3,7 +3,7 @@ title: "Supported call types in the cloud communications API"
 description: "Learn about the supported call types in the cloud communications API in Microsoft Graph and how they're used for the signaling process."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Supported call types

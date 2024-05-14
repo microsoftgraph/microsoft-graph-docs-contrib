@@ -1,12 +1,13 @@
 ---
 title: "Configure SAML-based single sign-on using Microsoft Graph"
 description: "Learn how to automate configuration of SAML-based single sign-on (SSO) for your Microsoft Entra application using Microsoft Graph APIs."
-author: "FaithOmbongi"
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: alamaral
 ms.localizationpriority: high
 ms.topic: tutorial
 ms.custom: scenarios:getting-started
-ms.prod: applications
+ms.subservice: entra-applications
 ms.date: 02/23/2024
 #customer intent: As a developer, I want to configure SAML-based single sign-on for my application using Microsoft Graph, so that I can improve usability of apps by enabling secure authentication and authorization for users.
 ---
@@ -22,7 +23,7 @@ In this tutorial, you learn how to:
 > * Add app roles to an application and grant them to users
 > * Configure claims to emit in the SAML token
 > * Configure a certificate for federated SSO
-> * Retrieve the Microsoft Entra ID SAML metadata for your application that you use to complete the intergation
+> * Retrieve the Microsoft Entra ID SAML metadata for your application that you use to complete the integration
 
 ## Prerequisites
 

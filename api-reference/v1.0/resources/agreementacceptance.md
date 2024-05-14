@@ -3,7 +3,7 @@ title: "agreementAcceptance resource type"
 description: "Represents the current status of a user within scope of a company's customizable terms of use powered by Microsoft Entra ID Governance."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: AlexFilipin
 ---
 

@@ -3,7 +3,7 @@ title: "Delete windowsDriverUpdateProfile"
 description: "Deletes a windowsDriverUpdateProfile."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -16,6 +16,12 @@ $params = @{
 		actionInfo = @{
 			"@odata.type" = "microsoft.graph.azureRolePermissionsDefinitionAction"
 			roles = @(
+				@{
+					id = "cdda3590-29a3-44f6-95f2-9f980659eb04"
+				}
+				@{
+					id = "312a565d-c81f-4fd8-895a-4e21e48d571c"
+				}
 			)
 		}
 		identityInfo = @{

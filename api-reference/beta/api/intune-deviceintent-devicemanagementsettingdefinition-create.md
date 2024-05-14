@@ -3,7 +3,7 @@ title: "Create deviceManagementSettingDefinition"
 description: "Create a new deviceManagementSettingDefinition object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

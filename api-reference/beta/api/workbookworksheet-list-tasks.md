@@ -3,7 +3,7 @@ title: "List workbookDocumentTasks"
 description: "Get a list of workbookDocumentTask objects."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

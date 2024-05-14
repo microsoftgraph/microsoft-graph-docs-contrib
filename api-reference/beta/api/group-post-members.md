@@ -4,7 +4,7 @@ description: "Add a member to a Microsoft 365 or security group through the memb
 ms.localizationpriority: medium
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ The following table shows the least privileged permission that's required by eac
 | [user](../resources/user.md)              | GroupMember.ReadWrite.All                               | Not supported.                         | GroupMember.ReadWrite.All                               |
 
 > [!IMPORTANT]
-> To add members to a role-assignable group, the calling user must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
+> To add members to a role-assignable group, the caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
 
 ## HTTP request
 

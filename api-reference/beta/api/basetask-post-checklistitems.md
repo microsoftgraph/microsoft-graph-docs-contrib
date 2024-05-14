@@ -3,7 +3,7 @@ title: "Create checklistItem"
 description: "Create a new checklistItem object."
 author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

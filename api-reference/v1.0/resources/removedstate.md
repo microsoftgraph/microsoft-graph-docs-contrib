@@ -3,7 +3,7 @@ title: "removedState resource type"
 description: "Represents the reason why a participant resource was removed from a roster."
 author: "sasthana"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

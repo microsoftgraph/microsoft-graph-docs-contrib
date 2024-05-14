@@ -3,7 +3,7 @@ title: "Get managedAppOperation"
 description: "Read properties and relationships of the managedAppOperation object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ author: spgraph-docs-team
 title: "site resource type"
 description: The site resource provides metadata and relationships for a Sharepoint site.
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: resourcePageType
 ---
 
@@ -24,16 +24,18 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get site for a group][] | site | Access the team site for a group.
 | [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource.
 | [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.
-| [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
+| [Get delta](../api/site-delta.md) | [site](../resources/site.md) collection | Get newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.
+| [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match the keywords provided.
 | [Follow site][]          | collection of site | Follow a user's site or multiple sites.
 | [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
-| [List followed sites][]  | collection of site | List the sites that have been followed by the signed in user.
+| [List followed sites][]  | collection of site | List the sites that are followed by the signed-in user.
 | [Get permission][]             | GET /sites/{site-id}/permissions/{permission-id}
 | [List permissions][]           | GET /sites/{site-id}/permissions
 | [Create permissions][]         | POST /sites/{site-id}/permissions
 | [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 | [List operations](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
+| [List pages][]                                    | GET /sites/{site-id}/pages                                  |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -52,6 +54,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Create permissions]: ../api/site-post-permissions.md
 [Delete permission]: ../api/site-delete-permission.md
 [Update permission]: ../api/site-update-permission.md
+[List pages]: ../api/baseSitePage-list.md
 
 ## Properties
 
@@ -64,8 +67,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
 | **isPersonalSite**       | bool                                | Identifies whether the site is personal or not. Read-only.                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | The date and time the item was last modified. Read-only.                                       |
-| **name**                 | string                              | The name / title of the item.                                                                  |
-| **root**                 | [root](root.md)                     | If present, indicates that this is the root site in the site collection. Read-only.            |
+| **name**                 | string                              | The name/title of the item.                                                                  |
+| **root**                 | [root](root.md)                     | If present, provides the root site in the site collection. Read-only.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | **webUrl**               | string (url)                        | URL that displays the item in the browser. Read-only.                                          |
@@ -85,7 +88,7 @@ The `root` identifier always references the root site for a given target, as fol
 
 | Relationship      | Type                                             | Description
 |:------------------|:-------------------------------------------------|:----------------------
-| **analytics**     | [itemAnalytics][] resource                       | Analytics about the view activities that took place in this site.
+| **analytics**     | [itemAnalytics][] resource                       | Analytics about the view activities that took place on this site.
 | **columns**       | Collection([columnDefinition][])                 | The collection of column definitions reusable across lists under this site.
 | **contentTypes**  | Collection([contentType][])                      | The collection of content types defined for this site.
 | **drive**         | [drive][]                                        | The default drive (document library) for this site.
@@ -94,6 +97,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **lists**         | Collection([list][])                             | The collection of lists under this site.
 | **onenote**       | [onenote][]                                      | Calls the OneNote service for notebook related operations.
 | **operations**    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the site.
+| **pages**           | Collection([baseSitePage][])                                                        | The collection of pages in the baseSitePages list in this site.                                                                                |
 | **permissions**   | Collection([permission][])                       | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])                             | The collection of the sub-sites under this site.
 | **termStore**     | [microsoft.graph.termStore.store]                | The default termStore under this site.
@@ -102,6 +106,7 @@ The `root` identifier always references the root site for a given target, as fol
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
+[baseSitePage]: baseSitePage.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
@@ -113,7 +118,7 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 The **site** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 

@@ -3,7 +3,7 @@ title: riskyServicePrincipal resource type
 description: 'Represents Microsoft Entra Workload ID that are at risk, including risk for applications, service principals and Managed Identities. '
 author: ebasseri
 ms.localizationpriority: medium
-ms.prod: identity-and-sign-in
+ms.subservice: entra-sign-in
 doc_type: resourcePageType
 ---
 

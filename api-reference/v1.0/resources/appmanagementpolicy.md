@@ -3,7 +3,7 @@ title: "appManagementPolicy resource type"
 description: "Represents an application auth method policy for enforcing app management restrictions on specific applications or service principals."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

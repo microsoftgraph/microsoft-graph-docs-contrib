@@ -3,7 +3,7 @@ title: "crossTenantIdentitySyncPolicyPartner resource type"
 description: "Defines the cross-tenant policy for synchronization of users from a partner tenant."
 author: "rolyon"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "acronym resource type"
-description: "An acronym is an administrative answer in Microsoft Search results to define common acronyms in a organization."
+description: "Represents an acronym that is an administrative answer in Microsoft Search results to define common acronyms in an organization."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -13,36 +13,41 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An acronym is an administrative answer in Microsoft Search results to define common acronyms in an organization.
+Represents an acronym that is an administrative answer in Microsoft Search results to define common acronyms in an organization.
 
-Inherits from [searchAnswer](../resources/search-searchAnswer.md).
+Inherits from [searchAnswer](../resources/search-searchanswer.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List acronyms](../api/search-searchentity-list-acronyms.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md) collection|Get a list of the [acronym](../resources/search-acronym.md) objects and their properties.|
 |[Create acronym](../api/search-searchentity-post-acronyms.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md)|Create a new [acronym](../resources/search-acronym.md) object.|
 |[Get acronym](../api/search-acronym-get.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md)|Read the properties and relationships of an [acronym](../resources/search-acronym.md) object.|
 |[Update acronym](../api/search-acronym-update.md)|[microsoft.graph.search.acronym](../resources/search-acronym.md)|Update the properties of an [acronym](../resources/search-acronym.md) object.|
-|[Delete acronym](../api/search-acronym-delete.md)|None|Deletes an [acronym](../resources/search-acronym.md) object.|
+|[Delete acronym](../api/search-acronym-delete.md)|None|Delete an [acronym](../resources/search-acronym.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|description|String|A brief description of the acronym that gives users more information about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 |id|String|The unique identifier (GUID) for the acronym. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user that created or last modified the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of when the acronym is created or edited. Inherited from [searchAnswer](../resources/search-searchAnswer.md). Read-only.|
-|standsFor|String collection|What the acronym stands for.|
-|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
-|webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user who created or last modified the acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the acronym was created or last edited. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only.|
+|standsFor|String|What the acronym stands for.|
+|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
+|webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Relationships
+
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -54,18 +59,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.search.acronym",
-  "id": "String (identifier)",
-  "displayName": "String",
   "description": "String",
-  "webUrl": "String",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "standsFor": [
-    "String"
-  ],
-  "state": "String"
+  "standsFor": "String",
+  "state": "String",
+  "webUrl": "String"
 }
 ```
-

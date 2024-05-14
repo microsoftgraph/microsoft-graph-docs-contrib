@@ -3,7 +3,7 @@ title: "emailPayloadDetail resource type"
 description: "Represents details of an email type payload."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

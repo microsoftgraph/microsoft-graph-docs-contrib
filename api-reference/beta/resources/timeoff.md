@@ -3,7 +3,7 @@ title: "timeOff resource type"
 description: "Represents a unit of nonwork in a schedule."
 author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

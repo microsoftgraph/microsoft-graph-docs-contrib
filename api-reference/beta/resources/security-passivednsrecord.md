@@ -3,7 +3,7 @@ title: "passiveDnsRecord resource type"
 description: "Represents a passive DNS record."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

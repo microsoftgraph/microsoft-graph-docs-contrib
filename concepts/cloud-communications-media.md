@@ -3,7 +3,7 @@ title: "Choose a media hosting option by using the cloud communications API"
 description: "Use the cloud communications API in Microsoft Graph to choose a media hosting option that enables your bots to send and receive audio- and video-related content."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Choose a media hosting option

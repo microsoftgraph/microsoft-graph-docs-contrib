@@ -3,7 +3,7 @@ title: "conversationThread resource type"
 description: "A conversationThread is a collection of posts."
 author: "mikemcleanlive"
 ms.localizationpriority: medium
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: resourcePageType
 ---
 
@@ -50,7 +50,7 @@ A new thread is created when a recipient is removed from the thread.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

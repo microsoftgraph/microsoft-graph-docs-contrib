@@ -30,7 +30,7 @@ keywords := []string {
 }
 keywords.SetKeywords(keywords)
 reservedKeywords := []string {
-	"Contoso",
+	"Unique keyword",
 }
 keywords.SetReservedKeywords(reservedKeywords)
 matchSimilarKeywords := true

@@ -4,7 +4,7 @@ description: "Change the **classifyAs** field of a Focused Inbox override as spe
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "SuryaLashmiS"
-ms.prod: mail
+ms.subservice: mail
 ---
 
 # Update inferenceClassificationOverride

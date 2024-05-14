@@ -3,7 +3,7 @@ title: "List featureRolloutPolicies"
 description: "Retrieve a list of featureRolloutPolicy objects."
 ms.localizationpriority: medium
 author: "madhavpatel6"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

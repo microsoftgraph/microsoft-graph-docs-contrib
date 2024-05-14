@@ -3,7 +3,7 @@ title: "Create permission"
 description: "Create a new permission object."
 author: "BarrySh"
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List riskyServicePrincipals"
 description: "Retrieve the properties and relationships of riskyServicePrincipal objects."
 author: "ebasseri"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

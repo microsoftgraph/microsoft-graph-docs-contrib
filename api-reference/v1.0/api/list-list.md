@@ -2,7 +2,7 @@
 author: spgraph-docs-team
 title: Get lists in a site
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 description: "Get the collection of lists for a site."
 doc_type: apiPageType
 ---
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

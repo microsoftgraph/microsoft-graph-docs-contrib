@@ -3,7 +3,7 @@ title: "educationFeedbackOutcome resource type"
 description: "An educationOutcome that gives feedback in the form of text."
 ms.localizationpriority: medium
 author: "dipakboyed"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "resourcePageType"
 ---
 

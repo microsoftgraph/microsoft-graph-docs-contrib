@@ -3,7 +3,7 @@ title: printDocument resource type
 description: Represents a document being printed.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 

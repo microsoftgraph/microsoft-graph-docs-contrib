@@ -22,7 +22,7 @@ messageIds := []string {
 }
 requestBody.SetMessageIds(messageIds)
 
-unfavorite, err := graphClient.Admin().ServiceAnnouncement().Messages().Unfavorite().Post(context.Background(), requestBody, nil)
+unfavorite, err := graphClient.Admin().ServiceAnnouncement().Messages().Unfavorite().PostAsUnfavoritePostResponse(context.Background(), requestBody, nil)
 
 
 ```

@@ -3,7 +3,7 @@ title: "educationModuleResource resource type"
 description: "A wrapper object that stores the resources associated with a module."
 ms.localizationpriority: medium
 author: "v-rmanda"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

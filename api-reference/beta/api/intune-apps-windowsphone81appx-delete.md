@@ -3,7 +3,7 @@ title: "Delete windowsPhone81AppX"
 description: "Deletes a windowsPhone81AppX."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

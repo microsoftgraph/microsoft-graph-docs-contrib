@@ -3,7 +3,7 @@ title: "Get unifiedRoleManagementPolicyRule"
 description: "Retrieve a rule defined for a role management policy."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

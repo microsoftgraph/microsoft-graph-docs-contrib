@@ -1,11 +1,11 @@
 ---
 title: "Use the $search query parameter in Microsoft Graph"
 description: "Microsoft Graph supports the $search OData query parameter to restrict the results of a request to match a search criterion."
-author: "FaithOmbongi"
+author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
-ms.prod: "applications"
+ms.subservice: non-product-specific
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 08/22/2023
 #Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use search expressions to get only the items that meet specific criteria, and reduce the amount of data the app processes, improving app efficiency.

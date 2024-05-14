@@ -3,7 +3,7 @@ title: "managedDeviceComplianceTrend resource type"
 description: "Represents a trend of compliant and non-compliant devices for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -39,7 +39,7 @@ Represents a trend of compliant and non-compliant devices for a given managed te
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,7 +3,7 @@ title: "hybridAgentUpdaterConfiguration resource type"
 description: "hybridAgentUpdaterConfiguration resource type."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 
@@ -40,7 +40,7 @@ The update of the agent follows the below priority list
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

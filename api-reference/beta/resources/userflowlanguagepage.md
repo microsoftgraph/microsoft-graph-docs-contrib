@@ -3,7 +3,7 @@ title: "userFlowLanguagePage resource type"
 description: "User flow language pages are used to determine the strings users will be shown during the user journey you have configured using user flows."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -35,7 +35,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

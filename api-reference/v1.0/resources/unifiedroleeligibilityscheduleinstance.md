@@ -3,7 +3,7 @@ title: "unifiedRoleEligibilityScheduleInstance resource type"
 description: "Represents the instance for a role eligibility in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

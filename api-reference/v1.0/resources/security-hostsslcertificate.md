@@ -3,7 +3,7 @@ title: "hostSslCertificate resource type"
 description: "Represents an observed relationship between a host and an sslCertificate."
 author: "nblankenau"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

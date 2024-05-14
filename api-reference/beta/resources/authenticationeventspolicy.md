@@ -3,7 +3,7 @@ title: "authenticationEventsPolicy resource type"
 description: "Authentication events are used to invoke user flows at specific points in the authentication flow."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ A resource that specifies the events in the authentication experience, with each
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

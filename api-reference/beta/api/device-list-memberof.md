@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "Get groups or administrative units that this device is a direct member of. This operation is not transitive."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get unifiedRoleEligibilitySchedule"
 description: "Read the properties and relationships of an unifiedRoleEligibilitySchedule object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List windowsQualityUpdateProfileAssignments"
 description: "List properties and relationships of the windowsQualityUpdateProfileAssignment objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

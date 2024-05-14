@@ -3,7 +3,7 @@ title: "List partners"
 description: "Get a list of all partner configurations within a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -127,6 +127,7 @@ Content-Type: application/json
     {
       "tenantId": "123f4846-ba00-4fd7-ba43-dac1f8f63013",
       "inboundTrust": null,
+      "isInMultiTenantOrganization": false,
       "automaticUserConsentSettings": {
         "inboundAllowed": null,
         "outboundAllowed": null

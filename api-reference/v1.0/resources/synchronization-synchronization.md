@@ -3,7 +3,7 @@ title: "synchronization resource type"
 description: "Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ Represents the capability for Microsoft Entra identity synchronization through t
 |templates|[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) collection| Preconfigured synchronization settings for a particular application.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.synchronization",

@@ -4,7 +4,7 @@ description: "Use the groups API to create and manage different types of groups 
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.subservice: "entra-groups"
 doc_type: conceptualPageType
 ms.date: 11/16/2022
 ---

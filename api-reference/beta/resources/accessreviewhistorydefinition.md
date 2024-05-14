@@ -3,7 +3,7 @@ title: "accessReviewHistoryDefinition resource type"
 description: "Represents a collection of access review history data."
 author: "jyothig123"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -48,7 +48,7 @@ An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInst
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

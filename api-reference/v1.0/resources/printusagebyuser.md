@@ -3,7 +3,7 @@ title: printUsageByUser resource type
 description: Describes print activity for a user during a specified time period (usageDate).
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: cloud-printing
+ms.subservice: universal-print
 doc_type: resourcePageType
 ---
 

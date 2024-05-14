@@ -3,7 +3,7 @@ title: "Update tiIndicator"
 description: "Update the properties of a tiIndicator object."
 ms.localizationpriority: medium
 author: "preetikr"
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -76,7 +76,7 @@ If the optional request header is used, the method returns a `200 OK` response c
 
 #### Request
 
-Here's an example of the request without the `Prefer` header.
+The following example shows a request without the `Prefer` header.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -129,7 +129,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -143,7 +143,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-Here's an example of the request that includes the `Prefer` header.
+The following example shows a request that includes the `Prefer` header.
 
 
 # [HTTP](#tab/http)
@@ -200,7 +200,7 @@ Prefer: return=representation
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > [!NOTE]
 > The response object shown here might be shortened for readability.

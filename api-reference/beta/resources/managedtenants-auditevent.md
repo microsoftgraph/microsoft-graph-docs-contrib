@@ -3,7 +3,7 @@ title: "auditEvent resource type"
 description: "Represents an audit event for managed tenants in Microsoft 365 Lighthouse."
 author: "vkumar2015"
 ms.localizationpriority: medium
-ms.prod: "multi-tenant-management"
+ms.subservice: "m365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -43,7 +43,7 @@ Represents an audit event for managed tenants in Microsoft 365 Lighthouse.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

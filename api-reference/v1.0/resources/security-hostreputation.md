@@ -3,7 +3,7 @@ title: "hostReputation resource type"
 description: "Represents the reputation of a host based on a series of rules."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

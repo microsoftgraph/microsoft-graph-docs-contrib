@@ -3,7 +3,7 @@ title: "user: sendMail"
 description: "Send the message specified in the request body using either JSON or MIME format."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

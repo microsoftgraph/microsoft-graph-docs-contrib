@@ -3,7 +3,7 @@ title: "Delete defaultDeviceCompliancePolicy"
 description: "Deletes a defaultDeviceCompliancePolicy."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

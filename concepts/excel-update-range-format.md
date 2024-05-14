@@ -3,7 +3,7 @@ title: "Update a range format in Excel"
 description: "View examples that show how to use Excel in Microsoft Graph to update properties of the RangeFormat, RangeFill, and RangeFont properties of a specified range."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 ---
 
 # Update a range format in Excel

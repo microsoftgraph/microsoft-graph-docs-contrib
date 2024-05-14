@@ -3,7 +3,7 @@ title: "simulation resource type"
 description: "Represents an attack simulation training campaign in a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -65,15 +65,15 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The simulation status is not defined. |
+|unknown| The simulation status isn't defined. |
 |draft| The simulation is in draft mode. |
 |running| The simulation is running. |
 |scheduled| The simulation is scheduled. |
-|succeeded| The simulation has succeeded. |
-|failed| The simulation has failed. |
+|succeeded| The simulation is complete with success status. |
+|failed| The simulation is complete with fail status. |
 |cancelled| The simulation is cancelled. |
 |excluded| The simulation is excluded. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ### simulationAttackTechnique values
 
@@ -85,8 +85,9 @@ Inherits from [entity](../resources/entity.md).
 |driveByUrl| Attack technique that involves an end user clicking a URL link in the phishing payload. |
 |linkInAttachment| Attack technique that involves an end user clicking a URL link in an attachment. |
 |linkToMalwareFile| Attack technique that involves an end user clicking a URL link to a malware file. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 |oAuthConsentGrant|  Attack technique that involves an end user who gives access consent to an app.|
+|phishTraining|  Attack technique that involves training end users on actions to be performed on a phish mail.|
 
 ### simulationAttackType values
 
@@ -96,27 +97,27 @@ Inherits from [entity](../resources/entity.md).
 |social| Attack that uses social skills to manipulate victims psychologically, creating a false sense of curiosity, urgency, or fear. |
 |cloud| Attack on a host or user in a cloud environment, for example, denial of service attacks.|
 |endpoint| Attack on endpoints of a corporate network, such as desktops, laptops, mobile phones, and Internet of Things (IoT) devices. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ### simulationContentStatus values
 
 |Member|Description |
 |:---|:---|
-|unknown| The simulation content status is not defined. |
+|unknown| The simulation content status isn't defined. |
 |draft| The simulation content status is in draft state. |
 |ready| The simulation content status is in ready state. |
 |archive| The simulation content status is archive state. |
 |delete| The simulation content status is in delete state. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ### simulationContentSource values
 
 |Member|Description |
 |:---|:---|
-|unknown| The simulation content source is not defined. |
+|unknown| The simulation content source isn't defined. |
 |global| The simulation content source is global. |
 |tenant| The simulation content source is tenant. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 

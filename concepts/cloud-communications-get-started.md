@@ -3,7 +3,7 @@ title: "Get started with the cloud communications API"
 description: "Use the cloud communications API in Microsoft Graph to build bots for your customers. Learn how to register your bot and then manage the state of your bot."
 author: "ananmishr"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # Register a bot with the cloud communications API

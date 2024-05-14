@@ -3,7 +3,7 @@ title: "Create authenticationListener"
 description: "Create a new authenticationListener object for the onSignUpStart event."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

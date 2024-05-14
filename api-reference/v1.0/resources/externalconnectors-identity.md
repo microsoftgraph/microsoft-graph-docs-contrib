@@ -3,7 +3,7 @@ title: "identity resource type"
 description: "Represents an identity used to set permissions on external content added to Microsoft Graph."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ Represents an [identity](externalconnectors-identity.md) used to set permissions
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

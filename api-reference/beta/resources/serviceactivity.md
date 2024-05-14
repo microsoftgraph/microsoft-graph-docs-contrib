@@ -3,7 +3,7 @@ title: "serviceActivity resource type"
 description: "A placeholder for the Microsoft Entra service activity URL."
 author: "Zacharypeng"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ---
 

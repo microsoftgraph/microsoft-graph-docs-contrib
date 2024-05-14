@@ -3,7 +3,7 @@ title: "Get workbookDocumentTaskChange"
 description: "Get the properties and relationships of a workbookDocumentTaskChange object."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "accessPackageResourceRoleScope resource type"
 description: "An access package resource role scope is a reference to both a scope within a resource, and a role in that resource."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

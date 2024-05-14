@@ -3,7 +3,7 @@ title: "Create permission"
 description: "Add a permission to a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

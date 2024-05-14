@@ -9,14 +9,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Application application = new Application();
+LinkedList<String> identifierUris = new LinkedList<String>();
+identifierUris.add("https://signin.aws.amazon.com/saml");
+application.setIdentifierUris(identifierUris);
 WebApplication web = new WebApplication();
 LinkedList<String> redirectUris = new LinkedList<String>();
 redirectUris.add("https://signin.aws.amazon.com/saml");
 web.setRedirectUris(redirectUris);
 application.setWeb(web);
-LinkedList<String> identifierUris = new LinkedList<String>();
-identifierUris.add("https://signin.aws.amazon.com/saml");
-application.setIdentifierUris(identifierUris);
 Application result = graphClient.applications().byApplicationId("{application-id}").patch(application);
 
 

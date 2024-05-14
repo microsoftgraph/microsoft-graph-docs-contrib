@@ -3,7 +3,7 @@ author: spgraph-docs-team
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
 title: "driveItem: createUploadSession"
 ms.localizationpriority: medium
-ms.prod: "sites-and-lists"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 # driveItem: createUploadSession
@@ -377,7 +377,7 @@ To indicate that your app is committing an existing upload session, the PUT requ
 <!-- { "blockType": "request", "name": "explicit-upload-commit" } -->
 
 ```http
-PUT /me/drive/root:/{path_to_file}
+PUT https://graph.microsoft.com/beta/me/drive/root:/{path_to_file}
 Content-Type: application/json
 If-Match: {etag or ctag}
 

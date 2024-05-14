@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointOnPremisesConnectionItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","displayName","healthCheckStatus","healthCheckStatusDetails","inUse"},
+	Select: [] string {"id","displayName","healthCheckStatus","healthCheckStatusDetail","healthCheckStatusDetails","inUse"},
 }
 configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointOnPremisesConnectionItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

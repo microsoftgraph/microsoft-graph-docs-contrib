@@ -3,7 +3,7 @@ title: "stopAndQuarantineFileResponseAction resource type"
 description: "Describes response action that moves the file from its current location to quarantine."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

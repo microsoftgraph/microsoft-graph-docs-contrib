@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest: resume"
 description: "Resume accessPackageAssignmentRequest objects."
 ms.localizationpriority: medium
 author: "vikama-microsoft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ---
 

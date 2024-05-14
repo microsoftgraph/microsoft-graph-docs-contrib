@@ -3,7 +3,7 @@ title: "Delete iosUpdateDeviceStatus"
 description: "Deletes a iosUpdateDeviceStatus."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

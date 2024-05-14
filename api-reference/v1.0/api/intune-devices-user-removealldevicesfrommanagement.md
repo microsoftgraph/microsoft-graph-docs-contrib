@@ -3,7 +3,7 @@ title: "removeAllDevicesFromManagement action"
 description: "Retire all devices from management for this user"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

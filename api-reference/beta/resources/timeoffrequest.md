@@ -3,7 +3,7 @@ title: "timeOffRequest resource type"
 description: "Represents a type of shift request to take timeoff."
 ms.localizationpriority: medium
 author: "akumar39"
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: "resourcePageType"
 ---
 

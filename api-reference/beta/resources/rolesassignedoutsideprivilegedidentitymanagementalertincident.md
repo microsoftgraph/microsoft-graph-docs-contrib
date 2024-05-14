@@ -3,7 +3,7 @@ title: "rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident resource t
 description: "Represents an alert incident that is triggered if roles have been assigned outside of Privileged Identity Management in the last 30 days."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "workbookRange: resizedRange"
 description: "Get a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns."
 ms.localizationpriority: medium
 author: "lumine2008"
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: apiPageType
 ---
 
@@ -43,7 +43,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/resizedRange(de
 Don't supply a request body for this method.
 
 ### Response
-If successful, this method returns a `200 OK` response code and a [workbookRange](../resources/range.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [workbookRange](../resources/workbookrange.md) object in the response body.
 
 ## Example
 

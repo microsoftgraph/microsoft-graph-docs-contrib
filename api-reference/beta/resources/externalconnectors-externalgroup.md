@@ -3,7 +3,7 @@ title: "externalGroup resource type"
 description: "Represents a non-Microsoft Entra group."
 author: "snlraju-msft"
 ms.localizationpriority: medium
-ms.prod: "search"
+ms.subservice: "search"
 doc_type: resourcePageType
 ---
 

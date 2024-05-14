@@ -3,7 +3,7 @@ title: "Create educationCategory"
 description: "Create a new educationCategory on an educationClass."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

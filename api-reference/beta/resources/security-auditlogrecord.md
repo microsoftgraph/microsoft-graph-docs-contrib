@@ -3,7 +3,7 @@ title: "auditLogRecord resource type"
 description: "Represents an audit log entry that contains standard audit attributes and auditData specific to the Microsoft 365 service."
 author: "arishojaswi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

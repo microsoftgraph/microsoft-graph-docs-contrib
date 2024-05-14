@@ -3,7 +3,7 @@ title: "List businessScenarioTasks"
 description: "Get a list of the businessScenarioTask objects and their properties."
 author: "TarkanSevilmis"
 ms.localizationpriority: medium
-ms.prod: "business-scenarios"
+ms.subservice: "business-scenarios"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ The following example shows a request that gets all tasks related to a scenario.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -150,7 +150,7 @@ The following example shows a request that gets all tasks associated with a spec
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -242,7 +242,7 @@ The following example shows a request that gets all tasks created in a specific 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

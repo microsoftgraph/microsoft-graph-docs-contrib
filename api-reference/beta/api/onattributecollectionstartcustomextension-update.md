@@ -3,7 +3,7 @@ title: "Update onAttributeCollectionStartCustomExtension"
 description: "Associate a custom extension with an onAttributeCollectionStartCustomExtension object that's linked to an onAttributeCollectionStartListener object."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "serviceNowConnectionStatus enum type"
 description: "Status of ServiceNow Connection"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

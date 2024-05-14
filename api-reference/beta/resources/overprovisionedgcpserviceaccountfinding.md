@@ -4,8 +4,8 @@ description: "Represents over-provisioned GCP service accounts."
 author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
-doc_type: apiPageType
+ms.subservice: entra-permissions-management
+doc_type: resourcePageType
 ---
 
 # overprovisionedGcpServiceAccountFinding resource type

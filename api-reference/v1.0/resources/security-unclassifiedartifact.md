@@ -3,7 +3,7 @@ title: "unclassifiedArtifact resource type"
 description: "Represents artifacts observed by Microsoft Security services that don't have a supporting API."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -33,7 +33,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

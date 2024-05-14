@@ -3,7 +3,7 @@ title: "workbookDocumentTaskChange resource type"
 description: "Represents a task change history of a workbookDocumentTask."
 author: "VictorZheng-qizheng"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

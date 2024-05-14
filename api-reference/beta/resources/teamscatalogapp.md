@@ -3,7 +3,7 @@ title: "teamsCatalogApp resource type"
 description: "see teamsApp."
 author: "nkramer"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

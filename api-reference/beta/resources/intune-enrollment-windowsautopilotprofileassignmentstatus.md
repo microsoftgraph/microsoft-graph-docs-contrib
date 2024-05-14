@@ -3,7 +3,7 @@ title: "windowsAutopilotProfileAssignmentStatus enum type"
 description: "Intune Enrollment Windowsautopilotprofileassignmentstatus Resources ."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

@@ -3,7 +3,7 @@ title: "sensitivityLabel resource type"
 description: "Describes the sensitivity protection label that details how to properly apply a sensitivity label to information."
 author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

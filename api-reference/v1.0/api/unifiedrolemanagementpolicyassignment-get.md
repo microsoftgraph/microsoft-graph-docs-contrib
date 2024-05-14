@@ -3,7 +3,7 @@ title: "Get unifiedRoleManagementPolicyAssignment"
 description: "Get the details of a role management policy assignment including the policy and rules associated with the Microsoft Entra role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

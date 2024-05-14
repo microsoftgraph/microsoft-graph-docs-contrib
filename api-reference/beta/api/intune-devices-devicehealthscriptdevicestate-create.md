@@ -3,7 +3,7 @@ title: "Create deviceHealthScriptDeviceState"
 description: "Create a new deviceHealthScriptDeviceState object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

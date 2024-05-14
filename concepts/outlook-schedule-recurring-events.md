@@ -3,7 +3,7 @@ title: "Schedule repeating appointments as recurring events in Outlook"
 description: "Create recurring events by using the recurrence rule, which includes the recurrence pattern - how often an event repeats - and the recurrence range - for how long."
 author: "iamgirishck"
 ms.localizationpriority: high
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # Schedule repeating appointments as recurring events in Outlook
@@ -353,7 +353,7 @@ To create a recurrence rule, you must specify both a pattern and a range. Any pa
 
   Because the value of **startDate** is after the first Thursday in August, the first occurrence of this series will be in September.
 
-## Next steps
+## Related content
 
 - Find out more about [integrating with Outlook calendar](outlook-calendar-concept-overview.md).
 - See other recurring event examples in the calendar API reference:

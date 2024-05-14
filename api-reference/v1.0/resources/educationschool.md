@@ -3,7 +3,7 @@ title: "educationSchool resource type"
 description: "A resource representing a school and used to manage the classes, teachers, and students of the represented school.  "
 author: "mlafleur"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 
@@ -56,7 +56,7 @@ Inherits from [educationOrganization](../resources/educationorganization.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

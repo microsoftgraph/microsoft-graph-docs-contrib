@@ -3,7 +3,7 @@ title: "targetDeviceGroup resource type"
 description: "Represents the group of devices configured for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

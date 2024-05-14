@@ -3,7 +3,7 @@ title: "callTranscript resource type"
 description: "Represents a transcript associated with an online meeting."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

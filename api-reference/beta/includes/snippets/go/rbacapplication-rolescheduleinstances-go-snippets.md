@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-roleScheduleInstances, err := graphClient.RoleManagement().Directory().RoleScheduleInstancesWithDirectoryScopeIdWithAppScopeIdWithPrincipalIdWithRoleDefinitionId(&directoryScopeId, &appScopeId, &principalId, &roleDefinitionId).Get(context.Background(), nil)
+roleScheduleInstances, err := graphClient.RoleManagement().Directory().RoleScheduleInstancesWithDirectoryScopeIdWithAppScopeIdWithPrincipalIdWithRoleDefinitionId(&directoryScopeId, &appScopeId, &principalId, &roleDefinitionId).GetAsRoleScheduleInstancesGetResponse(context.Background(), nil)
 
 
 ```

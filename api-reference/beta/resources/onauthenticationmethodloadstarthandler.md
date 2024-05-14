@@ -3,7 +3,7 @@ title: "onAuthenticationMethodLoadStartHandler resource type"
 description: "Represents a step in a multi-event user flow policy defining what happens when authentication methods are ready to be presented to the user."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

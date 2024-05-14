@@ -3,7 +3,7 @@ title: "Create detectedApp"
 description: "Create a new detectedApp object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "oneNoteResource resource type"
 description: "An image or other file resource on a OneNote page. "
 ms.localizationpriority: medium
 author: "jewan-microsoft"
-ms.prod: notes
+ms.subservice: onenote
 doc_type: resourcePageType
 ---
 

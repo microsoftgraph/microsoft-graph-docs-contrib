@@ -3,7 +3,7 @@ title: "Delete userAppInstallStatus"
 description: "Deletes a userAppInstallStatus."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "educationModule resource type"
 description: "Represents a group or individual learning resources which are then arranged in a neat, systematic manner."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: resourcePageType
 ---
 

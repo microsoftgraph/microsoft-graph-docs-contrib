@@ -3,7 +3,7 @@ title: "accessPackageAssignmentPolicy resource type"
 description: "An access package assignment policy specifies the policy by which subjects can request or be assigned an access package via an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: "resourcePageType"
 ---
 

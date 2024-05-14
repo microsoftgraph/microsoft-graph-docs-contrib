@@ -8,14 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphsites "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
+requestParameters := &graphsites.SiteItemPageItemGraph.sitePageRequestBuilderGetQueryParameters{
+	Select: [] string {"id","name"},
+}
+configuration := &graphsites.SiteItemPageItemGraph.sitePageRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
 
-graphSitePage, err := graphClient.Sites().BySiteId("site-id").Pages().ByBaseSitePageId("baseSitePage-id").GraphSitePage().Get(context.Background(), nil)
+graphSitePage, err := graphClient.Sites().BySiteId("site-id").Pages().ByBaseSitePageId("baseSitePage-id").GraphSitePage().Get(context.Background(), configuration)
 
 
 ```

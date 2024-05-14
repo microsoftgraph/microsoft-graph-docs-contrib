@@ -3,7 +3,7 @@ title: "hostCookie resource type"
 description: "Cookies are small pieces of data sent from a server to a client as the user browses the internet."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

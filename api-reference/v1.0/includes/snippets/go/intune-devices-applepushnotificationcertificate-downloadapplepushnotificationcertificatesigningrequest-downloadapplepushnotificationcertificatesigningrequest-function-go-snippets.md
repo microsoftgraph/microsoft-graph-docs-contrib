@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-downloadApplePushNotificationCertificateSigningRequest, err := graphClient.DeviceManagement().ApplePushNotificationCertificate().DownloadApplePushNotificationCertificateSigningRequest().Get(context.Background(), nil)
+downloadApplePushNotificationCertificateSigningRequest, err := graphClient.DeviceManagement().ApplePushNotificationCertificate().DownloadApplePushNotificationCertificateSigningRequest().GetAsDownloadApplePushNotificationCertificateSigningRequestGetResponse(context.Background(), nil)
 
 
 ```

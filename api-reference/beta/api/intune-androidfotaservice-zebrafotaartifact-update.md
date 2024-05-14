@@ -3,7 +3,7 @@ title: "Update zebraFotaArtifact"
 description: "Update the properties of a zebraFotaArtifact object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

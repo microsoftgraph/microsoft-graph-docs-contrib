@@ -3,7 +3,7 @@ title: "Get permissionGrantPreApprovalPolicy"
 description: "Read the properties and relationships of a permissionGrantPreApprovalPolicy object."
 author: "yuhko-msft"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 

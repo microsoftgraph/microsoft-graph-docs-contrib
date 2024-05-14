@@ -3,7 +3,7 @@ title: "cloudPcUserRoleScopeTagInfo resource type"
 description: "Represents the scope tag info with display name and identity."
 author: "ecmadao"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Represents the scope tag info with display name and identity.
 None
 
 ## JSON Representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo"

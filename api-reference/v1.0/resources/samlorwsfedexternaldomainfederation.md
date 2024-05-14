@@ -3,7 +3,7 @@ title: "samlOrWsFedExternalDomainFederation resource type"
 description: "Represents a way to federate your Microsoft Entra tenant with an external organization whose identity provider supports the SAML or WS-Fed protocol."
 author: "namkedia"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

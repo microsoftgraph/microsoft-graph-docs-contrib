@@ -3,7 +3,7 @@ title: "List roleManagementPolicyAssignments"
 description: "Get the details of all role management policy assignments including the policies and rules associated with the Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

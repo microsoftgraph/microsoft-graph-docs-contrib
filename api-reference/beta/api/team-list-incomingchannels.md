@@ -4,7 +4,7 @@ description: "Get the list of incoming channels."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # List incomingChannels

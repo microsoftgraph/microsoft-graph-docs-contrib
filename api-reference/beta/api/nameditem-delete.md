@@ -3,7 +3,7 @@ title: "Delete namedItem"
 description: Delete a workbookNamedItem object
 author: isvargasmsft
 ms.localizationpriority: medium
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: apiPageType
 ---
 
@@ -92,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{itemID}/workbook/names/{
 ---
 
 ### Response
-Here is an example of the response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response",
   "isEmpty": true

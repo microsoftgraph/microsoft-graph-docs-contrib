@@ -3,7 +3,7 @@ title: "outlookUser resource type"
 description: "Represents the Outlook services available to a user."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

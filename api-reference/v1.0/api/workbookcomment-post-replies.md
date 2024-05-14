@@ -3,7 +3,7 @@ title: "Create workbookCommentReply"
 description: "Use this API to create a new workbookCommentReply."
 ms.localizationpriority: medium
 author: "grangeryy"
-ms.prod: workbooks-and-charts
+ms.subservice: excel
 doc_type: "apiPageType"
 ---
 

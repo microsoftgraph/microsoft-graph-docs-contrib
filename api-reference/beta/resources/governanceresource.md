@@ -3,7 +3,7 @@ title: "governanceResource resource type"
 description: "Represents resources that are managed Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, etc."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
 ---
@@ -54,7 +54,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity se
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

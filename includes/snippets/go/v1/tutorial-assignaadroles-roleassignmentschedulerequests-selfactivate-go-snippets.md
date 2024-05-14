@@ -27,7 +27,7 @@ requestBody.SetDirectoryScopeId(&directoryScopeId)
 justification := "Need to invalidate all app refresh tokens for Contoso users."
 requestBody.SetJustification(&justification) 
 scheduleInfo := graphmodels.NewRequestSchedule()
-startDateTime , err := time.Parse(time.RFC3339, "2021-09-04T15:13:00.000Z")
+startDateTime , err := time.Parse(time.RFC3339, "2024-03-25T15:13:00.000Z")
 scheduleInfo.SetStartDateTime(&startDateTime) 
 expiration := graphmodels.NewExpirationPattern()
 type := graphmodels.AFTERDURATION_EXPIRATIONPATTERNTYPE 

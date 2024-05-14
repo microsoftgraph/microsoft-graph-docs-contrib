@@ -3,7 +3,7 @@ title: "updateWindow resource type"
 description: "updateWindow resource type."
 ms.localizationpriority: medium
 author: "dhruvinrshah"
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ---
 

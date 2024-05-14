@@ -4,7 +4,7 @@ description: "A time period."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "vrod9429"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 ---
 
 # timeSlot resource type

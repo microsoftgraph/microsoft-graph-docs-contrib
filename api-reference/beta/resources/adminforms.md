@@ -3,7 +3,7 @@ title: "adminForms resource type"
 description: "Company-wide configuration for Microsoft Forms"
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 

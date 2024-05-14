@@ -3,7 +3,7 @@ title: "protectionRule resource type"
 description: "Represents a rule, which contains basic properties such as ID, name, and so on."
 author: "mmekler"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

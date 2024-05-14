@@ -18,12 +18,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewAdministrativeUnit()
 displayName := "Executive Division"
 requestBody.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-	"membershipType" : "Dynamic", 
-	"membershipRule" : "(user.country -eq \"United States\")", 
-	"membershipRuleProcessingState" : "On", 
-}
-requestBody.SetAdditionalData(additionalData)
+membershipType := "Dynamic"
+requestBody.SetMembershipType(&membershipType) 
+membershipRule := "(user.country -eq \"United States\")"
+requestBody.SetMembershipRule(&membershipRule) 
+membershipRuleProcessingState := "On"
+requestBody.SetMembershipRuleProcessingState(&membershipRuleProcessingState) 
 
 administrativeUnits, err := graphClient.AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").Patch(context.Background(), requestBody, nil)
 

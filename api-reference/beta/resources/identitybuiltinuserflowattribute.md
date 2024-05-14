@@ -3,7 +3,7 @@ title: "identityBuiltInUserFlowAttribute resource type"
 description: "Represents a built-in user flow attribute in Microsoft Entra ID for workforce tenants, Microsoft Entra ID for customers tenants, and Azure AD B2C tenants that can be used in self-service sign-up user flows."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -33,7 +33,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

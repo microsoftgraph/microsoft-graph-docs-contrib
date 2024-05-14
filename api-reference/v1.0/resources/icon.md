@@ -1,13 +1,13 @@
 ---
-title: "Icon resource type"
+title: workbookIcon resource type
 description: "Represents a cell icon."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: excel
+ms.subservice: excel
 doc_type: resourcePageType
 ---
 
-# Icon resource type
+# workbookIcon resource type
 
 Namespace: microsoft.graph
 
@@ -33,7 +33,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

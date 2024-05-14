@@ -3,7 +3,7 @@ title: "groupPolicyMigrationReport resource type"
 description: "The Group Policy migration report."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

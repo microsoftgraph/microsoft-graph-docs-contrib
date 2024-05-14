@@ -3,7 +3,7 @@ title: "azureCommunicationServicesUserConversationMember resource type"
 description: "Represents an Azure Communication Services user in a chat."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

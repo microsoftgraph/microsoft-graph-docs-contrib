@@ -1,23 +1,31 @@
 ---
 title: "userTeamwork resource type"
-description: "A container for Microsoft Teams features available per user."
+description: "Represents a container for the range of Microsoft Teams functionalities that are available per user in the tenant."
 author: "akjo"
 doc_type: resourcePageType
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ---
 
 # userTeamwork resource type
 
 Namespace: microsoft.graph
 
-A container for the range of Microsoft Teams functionalities that are available per user in the tenant.
+Represents a container for the range of Microsoft Teams functionalities that are available per user in the tenant.
+
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get userTeamwork](../api/userteamwork-get.md)|[userTeamwork](../resources/userteamwork.md)|Get userTeamwork settings for the specified [user](../resources/user.md), which includes the Microsoft Teams region and the locale chosen by the user.|
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|id|string| A unique identifier. |
+|id| String|The unique identifier for the **userTeamwork** object.|
+|locale|String |The chosen locale of a user in Microsoft Teams.|  
+|region |String|The region of the user in Microsoft Teams.|
 
 ## Relationships
 
@@ -28,7 +36,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -38,7 +46,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string"
+  "id": "String (identifier)",
+  "locale" : "String",
+  "region" : "String"
 }
 ```
 
@@ -55,3 +65,6 @@ The following is a JSON representation of the resource.
 }
 -->
 
+## Related content
+
+- [teamwork resource type](teamwork.md)

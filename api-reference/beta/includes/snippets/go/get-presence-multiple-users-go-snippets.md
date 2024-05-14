@@ -22,7 +22,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-getPresencesByUserId, err := graphClient.Communications().GetPresencesByUserId().Post(context.Background(), requestBody, nil)
+getPresencesByUserId, err := graphClient.Communications().GetPresencesByUserId().PostAsGetPresencesByUserIdPostResponse(context.Background(), requestBody, nil)
 
 
 ```

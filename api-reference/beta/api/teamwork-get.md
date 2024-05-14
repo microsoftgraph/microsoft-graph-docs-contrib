@@ -3,7 +3,7 @@ title: "Get teamwork."
 description: "Get organization settings for teamwork, such as the region of the organization and the Microsoft Teams enablement status."
 author: "mea"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

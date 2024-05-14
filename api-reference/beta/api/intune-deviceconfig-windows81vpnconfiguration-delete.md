@@ -3,7 +3,7 @@ title: "Delete windows81VpnConfiguration"
 description: "Deletes a windows81VpnConfiguration."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

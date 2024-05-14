@@ -3,7 +3,7 @@ title: "workbookTableRow resource type"
 description: "Represents a row in a table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,7 @@ Represents a row in a table.
 |[Get](../api/tablerow-get.md) | [workbookTableRow]( workbooktablerow.md) |Read the properties and relationships of a tableRow object.|
 |[Update](../api/tablerow-update.md) | [workbookTableRow]( workbooktablerow.md)	|Update a workbookTableRow object. |
 |[Delete](../api/tablerow-delete.md)|None|Delete a row from the table.|
-|[Range](../api/tablerow-range.md)|[Range](range.md)|Return the range object associated with the entire row.|
+|[Range](../api/tablerow-range.md)|[Range](workbookrange.md)|Return the range object associated with the entire row.|
 |[Itemat](../api/tablerowcollection-itemat.md)|[workbookTableRow]( workbooktablerow.md)|Get a row based on its position in the collection.|
 |[Add](../api/tablerowcollection-add.md)|[workbookTableRow]( workbooktablerow.md)|Add a new row to the table.|
 

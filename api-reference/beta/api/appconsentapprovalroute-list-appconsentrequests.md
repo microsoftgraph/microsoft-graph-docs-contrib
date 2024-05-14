@@ -3,7 +3,7 @@ title: "List appConsentRequests"
 description: "Retrieve appConsentRequest objects and their properties."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

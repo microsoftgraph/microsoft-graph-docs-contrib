@@ -3,7 +3,7 @@ title: "Delete tokenLifetimePolicy"
 description: "Delete tokenLifetimePolicy."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 

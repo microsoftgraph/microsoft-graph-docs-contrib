@@ -3,7 +3,7 @@ title: "driveItem: removeRetentionLabel"
 description: "Remove a retention label from a driveItem."
 author: "kyracatwork"
 ms.localizationpriority: medium
-ms.prod: "files"
+ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 

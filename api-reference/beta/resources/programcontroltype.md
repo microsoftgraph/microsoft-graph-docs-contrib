@@ -3,7 +3,7 @@ title: "programControlType resource type (deprecated)"
 description: "In the Microsoft Entra access reviews feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "shubhamguptacal"
 ---
 
@@ -47,7 +47,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

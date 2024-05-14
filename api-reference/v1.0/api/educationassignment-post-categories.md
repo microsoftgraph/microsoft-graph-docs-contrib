@@ -3,7 +3,7 @@ title: "Create educationCategories"
 description: "Add an existing educationCategory to an educationAssignment"
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: "apiPageType"
 ---
 

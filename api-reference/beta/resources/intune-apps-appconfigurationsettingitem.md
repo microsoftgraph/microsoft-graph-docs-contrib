@@ -3,7 +3,7 @@ title: "appConfigurationSettingItem resource type"
 description: "Contains properties for App configuration setting item."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

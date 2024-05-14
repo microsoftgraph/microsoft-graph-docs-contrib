@@ -5,6 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ScheduledPermissionsRequest;
+use Microsoft\Graph\Generated\Models\AwsPermissionsDefinition;
+use Microsoft\Graph\Generated\Models\PermissionsDefinitionAuthorizationSystem;
+use Microsoft\Graph\Generated\Models\AwsActionsPermissionsDefinitionAction;
+use Microsoft\Graph\Generated\Models\AwsStatement;
+use Microsoft\Graph\Generated\Models\AwsCondition;
+use Microsoft\Graph\Generated\Models\PermissionsDefinitionAuthorizationSystemIdentity;
+use Microsoft\Graph\Generated\Models\SamlIdentitySource;
+use Microsoft\Graph\Generated\Models\RequestSchedule;
+use Microsoft\Graph\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Generated\Models\PatternedRecurrence;
+use Microsoft\Graph\Generated\Models\RecurrencePattern;
+use Microsoft\Graph\Generated\Models\DayOfWeek;
+use Microsoft\Graph\Generated\Models\RecurrenceRange;
+use Microsoft\Graph\Generated\Models\TicketInfo;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -3,7 +3,7 @@ title: "intelligenceProfileIndicator resource type"
 description: "Represents an indicator of threat or compromise related to the contents of an intelligenceProfile."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

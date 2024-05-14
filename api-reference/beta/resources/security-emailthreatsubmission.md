@@ -3,7 +3,7 @@ title: "emailThreatSubmission resource type"
 description: "Reports suspected spam, malware or phishing emails to Microsoft Defender for Office 365."
 author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
@@ -42,7 +42,7 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md). Bas
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,7 +3,7 @@ title: "List authenticationEventsFlows"
 description: "Get a list of the authenticationEventsFlow objects and their properties."
 author: "nanguil"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List all user flows
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -345,7 +345,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -391,7 +391,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 ---
 
 #### Response
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -540,7 +540,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -587,7 +587,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 ---
 
 #### Response
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -870,7 +870,7 @@ Content-Type: application/json
 ### Example 4: List user flow associated with specific application ID
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -917,7 +917,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=
 
 #### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

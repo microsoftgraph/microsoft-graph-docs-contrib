@@ -3,7 +3,7 @@ title: "governanceRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Privileged Identity Management."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 author: "rkarim-ms"
 ROBOTS: NOINDEX
 ---
@@ -68,7 +68,7 @@ Represents the request for role assignment operations in Privileged Identity Man
 
 ### JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

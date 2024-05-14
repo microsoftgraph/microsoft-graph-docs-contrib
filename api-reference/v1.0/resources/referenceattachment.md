@@ -2,7 +2,7 @@
 title: "referenceAttachment resource type"
 description: "A link to a file (such as a text file or Word document) on a OneDrive for Business cloud drive or other supported storage locations, attached to an event, message, or post."
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 author: "SuryaLashmiS"
 doc_type: resourcePageType
 ---
@@ -39,7 +39,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",

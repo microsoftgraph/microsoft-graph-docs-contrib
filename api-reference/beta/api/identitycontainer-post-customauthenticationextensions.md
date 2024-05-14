@@ -3,7 +3,7 @@ title: "Create customAuthenticationExtension"
 description: "Create a new customAuthenticationExtension object."
 author: "soneff"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -17,6 +17,10 @@ Create a new [customAuthenticationExtension](../resources/customauthenticationex
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+
+> [!NOTE]
+>
+> You can have a maximum of 100 custom extension policies.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

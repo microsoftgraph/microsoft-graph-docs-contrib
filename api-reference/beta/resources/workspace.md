@@ -3,7 +3,7 @@ title: "workspace resource type"
 description: "Specifies the properties of a workspace in a tenant."
 ms.localizationpriority: medium
 author: "slister1001"
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: "resourcePageType"
 ---
 
@@ -36,21 +36,21 @@ In Exchange Online, each workspace is associated with a workspace mailbox. Deriv
 | emailAddress           | String                                            | Email address of the workspace. |
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the workspace is on. |
-| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the workspace location in latitude, longitude and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the workspace. Read-only. |
+| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the workspace location in latitude, longitude, and optionally, altitude coordinates. |
+| id                     | String                                            | Unique identifier for the workspace. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
 | isWheelChairAccessible | Boolean                                           | Specifies whether the workspace is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the workspace, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the workspace, for example, "quiet workspace". |
 | phone                  | String                                            | The phone number of the workspace. |
-| placeId                | String                                            | An alternate immutable unique identifier of the place. |
+| placeId                | String                                            | A unique, immutable identifier for the workspace. Read-only. The value of this identifier is equal to the **ExternalDirectoryObjectId** returned from the `Get-Mailbox` cmdlet. |
 | tags                   | String collection                                 | Specifies other features of the workspace; for example, the type of view or furniture type. |
 
 ### bookingType values
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
-| standard | The workspace can be reserved based on the other settings in this cmdlet. This is the default value. |
-| reserved | The workspace is available only on a first come, first served basis. It can't be reserved.|
+| standard | The workspace can be reserved based on the other settings in this cmdlet. This value is the default. |
+| reserved | The workspace is available only on a first-come, first-served basis. It can't be reserved.|
 
 ## Relationships
 

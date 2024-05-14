@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.set_priority_post_request_body import SetPriorityPostRequestBody
+from msgraph.generated.devicemanagement.deviceenrollmentconfigurations.item.set_priority.set_priority_post_request_body import SetPriorityPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

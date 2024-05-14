@@ -3,7 +3,7 @@ title: "entitlementManagementSettings resource type"
 description: "Represents tenant-wide settings for Microsoft Entra entitlement management."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 # entitlementManagementSettings resource type

@@ -3,7 +3,7 @@ title: "callStartedEventMessageDetail resource type"
 description: "Represents the details of an event message about call started."
 author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 

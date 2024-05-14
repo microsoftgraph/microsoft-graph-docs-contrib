@@ -3,7 +3,7 @@ title: "certificateAuthorityAsEntity resource type"
 description: "Represents a trusted certificate authority."
 author: "madansr7"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

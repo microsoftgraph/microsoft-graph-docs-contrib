@@ -3,7 +3,7 @@ title: "List accessPackageResourceEnvironments"
 description: "Retrieve a list of accessPackageResourceEnvironment objects."
 author: "markwahl-msft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
@@ -115,7 +115,10 @@ Content-Type: application/json
       "description": "https://contoso.sharepoint.com/",
       "originSystem": "SharePointOnline",
       "originId": "https://contoso-admin.sharepoint.com/",
-      "isDefaultEnvironment": false
+      "isDefaultEnvironment": false,
+      "connectionInfo": {
+        "url": "https://contoso-admin.sharepoint.com/"
+    }
     }
   ]
 }

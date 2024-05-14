@@ -16,7 +16,7 @@ This scenario is a non-interactive use case that relies on data changes triggere
 - A low data volume per human interaction, but a potentially high data volume depending on the number of users.
 - A near-real-time data latency to generate up-to-date feed.
   
-The best integration option for this scenario is to use Microsoft Graph change notifications, which can deliver event notifications as well as the contents of a shared message, and implement webhooks. The client app provides a client secret and an encryption key, and exposes an HTTP endpoint where the Microsoft Graph notification service posts changes. The client app can accept and promptly respond to synchronous Microsoft Graph requests, and can scale to handle events triggered by other clients that generate messages. This type of app interaction is called push mode.
+The best integration option for this scenario is to use Microsoft Graph change notifications, which can deliver event notifications as well as the contents of a shared message, and implement webhooks. The client app provides a client secret and an encryption key and exposes an HTTP endpoint where the Microsoft Graph notification service posts changes. The client app can accept and promptly respond to synchronous Microsoft Graph requests and can scale to handle events triggered by other clients that generate messages. This type of app interaction is called push mode.
 
 The following diagram shows the architecture for this solution.
 
@@ -40,7 +40,7 @@ The following considerations support the use of this integration pattern:
 
 - **Availability**: Microsoft Graph calls the client webhook whenever a new message is published in a shared channel or a chat. The webhook must have high availability throughout the day or even for a full 24 hours.
 
-- **Latency**: The webhook must acknowledge Microsoft Graph notification requests within three seconds. If Microsoft Graph does not receive a 200 class code within this time, it resends the change notification multiple times, for up to fout hours.
+- **Latency**: The webhook must acknowledge Microsoft Graph notification requests within three seconds. If Microsoft Graph does not receive a 200 class code within this time, it resends the change notification multiple times, for up to four hours.
 
 - **Scalability**: The client webhook must be able to scale for a high volume of notifications at any time of the day. It can do this by adding more instances to the app service and instantiating more function app instances to update the destination service promptly.
 

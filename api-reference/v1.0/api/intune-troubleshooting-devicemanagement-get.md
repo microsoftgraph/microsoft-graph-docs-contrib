@@ -3,7 +3,7 @@ title: "Get deviceManagement"
 description: "Read properties and relationships of the deviceManagement object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

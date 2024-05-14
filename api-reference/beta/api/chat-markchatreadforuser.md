@@ -3,7 +3,7 @@ title: "chat: markChatReadForUser"
 description: "Mark a chat as read till the current time, or the last message received or sent."
 author: "sweta-thapliyal"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create windowsFeatureUpdateCatalogItem"
 description: "Create a new windowsFeatureUpdateCatalogItem object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

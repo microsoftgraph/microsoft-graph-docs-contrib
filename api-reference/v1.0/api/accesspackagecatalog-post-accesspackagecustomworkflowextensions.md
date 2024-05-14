@@ -3,7 +3,7 @@ title: "Create accessPackageCustomWorkflowExtension"
 description: "Create a new accessPackageCustomWorkflowExtension object."
 author: "vikama-microsoft"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

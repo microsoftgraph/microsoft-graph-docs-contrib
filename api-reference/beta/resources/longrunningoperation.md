@@ -3,7 +3,7 @@ title: "longRunningOperation resource type"
 description: "Represents the status of a long-running operation."
 author: "stuartcl"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

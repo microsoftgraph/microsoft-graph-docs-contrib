@@ -3,7 +3,7 @@ title: "Get appConsentRequest"
 description: "Read the properties and relationships of an appConsentRequest object."
 author: "eringreenlee"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 

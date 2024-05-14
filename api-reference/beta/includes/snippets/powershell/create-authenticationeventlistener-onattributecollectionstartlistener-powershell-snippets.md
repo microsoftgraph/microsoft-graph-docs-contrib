@@ -21,6 +21,9 @@ $params = @{
 	}
 	handler = @{
 		"@odata.type" = "#microsoft.graph.onAttributeCollectionStartCustomExtensionHandler"
+		customExtension = @{
+			id = "2d9c3e8d-88a9-444e-8c4c-f0c6c4fe1c02"
+		}
 	}
 }
 

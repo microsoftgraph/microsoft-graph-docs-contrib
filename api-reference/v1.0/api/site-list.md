@@ -2,7 +2,7 @@
 title: "List sites"
 description: "List all available sites in an organization or list the sites that match the provided filter criteria and query options."
 ms.localizationpriority: medium
-ms.prod: "sharepoint"
+ms.subservice: "sharepoint"
 doc_type: apiPageType
 author: "spgraph-docs-team"
 ---

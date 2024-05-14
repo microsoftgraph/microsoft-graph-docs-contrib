@@ -3,7 +3,7 @@ title: "List notificationMessageTemplates"
 description: "List properties and relationships of the notificationMessageTemplate objects."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 441
+Content-Length: 484
 
 {
   "value": [
@@ -71,6 +71,7 @@ Content-Length: 441
       "id": "e1db399b-399b-e1db-9b39-dbe19b39dbe1",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "displayName": "Display Name value",
+      "description": "Description value",
       "defaultLocale": "Default Locale value",
       "brandingOptions": "includeCompanyLogo",
       "roleScopeTagIds": [

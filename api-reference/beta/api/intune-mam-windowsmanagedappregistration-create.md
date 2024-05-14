@@ -3,7 +3,7 @@ title: "Create windowsManagedAppRegistration"
 description: "Create a new windowsManagedAppRegistration object."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: apiPageType
 ---
 

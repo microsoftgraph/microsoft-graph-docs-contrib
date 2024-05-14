@@ -3,7 +3,7 @@ title: "Get chat"
 description: "Retrieve a single chat."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 

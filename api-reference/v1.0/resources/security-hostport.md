@@ -3,7 +3,7 @@ title: "hostPort resource type"
 description: "Represents the connection endpoints that direct data to and from the services that run on a host."
 author: "angelo-moulic"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

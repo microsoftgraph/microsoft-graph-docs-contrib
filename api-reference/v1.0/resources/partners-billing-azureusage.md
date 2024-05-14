@@ -3,7 +3,7 @@ title: "azureUsage resource type"
 description: "Represents details for billed and unbilled Azure usage data."
 author: "sourishdeb"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 

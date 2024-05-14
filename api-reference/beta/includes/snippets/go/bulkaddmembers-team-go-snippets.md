@@ -44,7 +44,7 @@ values := []graphmodels.ConversationMemberable {
 }
 requestBody.SetValues(values)
 
-add, err := graphClient.Teams().ByTeamId("team-id").Members().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Teams().ByTeamId("team-id").Members().Add().PostAsAddPostResponse(context.Background(), requestBody, nil)
 
 
 ```

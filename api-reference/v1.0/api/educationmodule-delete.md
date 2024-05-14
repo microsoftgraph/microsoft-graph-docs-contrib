@@ -3,7 +3,7 @@ title: "Delete educationModule"
 description: "Delete an existing module. Only teachers within a class can delete modules."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

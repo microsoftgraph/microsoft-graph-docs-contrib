@@ -2,7 +2,7 @@
 title: "Identity and access reports API overview"
 description: "Access identity and access reports to get information about how people in your business use applications in your Microsoft Entra tenant."
 ms.localizationpriority: high
-ms.prod: "identity-and-access-reports"
+ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
 doc_type: conceptualPageType
 ---

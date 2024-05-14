@@ -4,7 +4,7 @@ description: "Contains information about a user's presence, including their avai
 author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 ---
 
 # presence resource type
@@ -17,7 +17,7 @@ Contains information about a user's presence, including their availability and u
 
 > **Note:** This resource is currently only supported for Microsoft Teams users.
 
-This resource supports subscribing to [change notifications](/graph/webhooks).
+This resource supports subscribing to [change notifications](/graph/changenotifications-for-presence).
 
 ## Methods
 

@@ -3,7 +3,7 @@ title: "List categoryTemplates"
 description: "Get a list of the categoryTemplate objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/security/labels/categories
 ---
 
 ### Response
-The following example shows the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,12 +113,27 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.categoryTemplate",
       "id": "e2c79762-34a9-75ba-b6f0-a7c9a57978ef",
-      "displayName": "String",
+      "displayName": "Accounts Payable",
       "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+       "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Admin"
+        }
       },
-      "createdDateTime": "String (timestamp)"
-    }
+      "createdDateTime": "2021-03-24T02:09:08Z"
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.categoryTemplate",
+      "id": "6cf65e55-6baf-44ff-5dcc-08d8de97b1d5",
+      "displayName": "Accounts",
+      "createdBy": {
+       "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Admin"
+        }
+      },
+      "createdDateTime": "2021-03-24T02:09:08Z"
+      }
   ]
 }
 ```

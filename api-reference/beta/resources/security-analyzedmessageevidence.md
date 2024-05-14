@@ -4,7 +4,7 @@ description: "An email, or analyzed message, that is reported in the alert as ev
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
-ms.prod: "security"
+ms.subservice: "security"
 doc_type: resourcePageType
 ---
 

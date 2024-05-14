@@ -3,7 +3,7 @@ title: "Pause sync on an educationSynchronizationProfile"
 description: "Pause the sync of a specific school data synchronization profile in the tenant."
 author: "mmast-msft"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 

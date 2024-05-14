@@ -3,7 +3,7 @@ title: "deviceActionPayloadStatus enum type"
 description: "A list of possible status values for the policy or app regarding their executed action on the managed device. For example, a policy included in the deviceActionPayloads list has just been executed the action. Its status starts with inProgress until it's successfully removed to reflect as removed status or failed to be removed to reflect as error status on the managed device. Similar status change happens for restoration process"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

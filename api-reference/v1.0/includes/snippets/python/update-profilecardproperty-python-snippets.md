@@ -17,7 +17,7 @@ request_body = ProfileCardProperty(
 			display_name = "Cost Center",
 			localizations = [
 				DisplayNameLocalization(
-					language_tag = "nb-NO",
+					language_tag = "no",
 					display_name = "Kostnadssenter",
 				),
 			],

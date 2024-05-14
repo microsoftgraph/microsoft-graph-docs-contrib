@@ -19,7 +19,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphserviceprincipals.NewAddTokenSigningCertificatePostRequestBody()
 displayName := "CN=AWSContoso"
 requestBody.SetDisplayName(&displayName) 
-endDateTime , err := time.Parse(time.RFC3339, "2024-01-25T00:00:00Z")
+endDateTime , err := time.Parse(time.RFC3339, "2027-01-22T00:00:00Z")
 requestBody.SetEndDateTime(&endDateTime) 
 
 addTokenSigningCertificate, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddTokenSigningCertificate().Post(context.Background(), requestBody, nil)

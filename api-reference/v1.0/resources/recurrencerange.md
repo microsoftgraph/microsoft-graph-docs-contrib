@@ -3,7 +3,7 @@ title: "recurrenceRange resource type"
 description: "Describes a date range over which a recurring event repeats. "
 ms.localizationpriority: medium
 author: "iamgirishck"
-ms.prod: "governance"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ Use the **type** property to specify the different types of **recurrenceRange**.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

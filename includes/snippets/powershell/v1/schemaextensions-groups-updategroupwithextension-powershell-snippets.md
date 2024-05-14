@@ -7,6 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
+	bellowscollege_courses = @{
+		courseId = "123"
+		courseName = "New Managers"
+		courseType = "Online"
+	}
 }
 
 Update-MgGroup -GroupId $groupId -BodyParameter $params

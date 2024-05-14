@@ -3,7 +3,7 @@ title: "bitlockerRecoveryKey resource type"
 description: "BitLocker recovery key resource"
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
 

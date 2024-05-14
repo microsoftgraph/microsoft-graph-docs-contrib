@@ -3,7 +3,7 @@ title: "Get change notifications for chat membership using Microsoft Graph"
 description: "Learn how to get notifications for changes for chat membership using Microsoft Graph APIs."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 

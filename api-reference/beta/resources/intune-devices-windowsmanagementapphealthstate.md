@@ -3,7 +3,7 @@ title: "windowsManagementAppHealthState resource type"
 description: "Windows management app health state entity."
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: resourcePageType
 ---
 

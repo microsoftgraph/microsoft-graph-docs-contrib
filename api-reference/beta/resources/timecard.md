@@ -3,7 +3,7 @@ title: "timecard resource type"
 description: "Represents a timecard entry in the schedule."
 author: "akumar39"
 ms.localizationpriority: medium
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 doc_type: resourcePageType_
 ---
 

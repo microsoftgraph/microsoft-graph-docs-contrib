@@ -3,7 +3,7 @@ title: "windowsDefenderTamperProtectionOptions enum type"
 description: "Defender TamperProtection setting options"
 author: "jaiprakashmb"
 localization_priority: Normal
-ms.prod: "intune"
+ms.subservice: "intune"
 doc_type: enumPageType
 ---
 

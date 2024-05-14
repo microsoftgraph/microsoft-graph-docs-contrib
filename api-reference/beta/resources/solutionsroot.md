@@ -3,7 +3,7 @@ title: "solutionsRoot resource type"
 description: "The entry point for Microsoft Bookings, virtual event webinar, and business scenario APIs."
 author: "vikailas-microsoft"
 ms.localizationpriority: medium
-ms.prod: "non-product-specific"
+ms.subservice: "non-product-specific"
 doc_type: resourcePageType
 ---
 

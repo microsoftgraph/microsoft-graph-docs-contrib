@@ -3,7 +3,7 @@ title: "List events"
 description: "Retrieve a list of event objects."
 author: "iamgirishck"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

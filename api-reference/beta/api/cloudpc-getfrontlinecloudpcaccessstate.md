@@ -3,7 +3,7 @@ title: "cloudPC: getFrontlineCloudPcAccessState"
 description: "Get the access state of a frontline Cloud PC."
 author: "ningjingbogithub"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 

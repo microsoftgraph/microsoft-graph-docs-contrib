@@ -2,7 +2,7 @@
 title: "reportRoot: getMailboxUsageDetail"
 description: "Get details about mailbox usage."
 ms.localizationpriority: high
-ms.prod: "reports"
+ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
 ---

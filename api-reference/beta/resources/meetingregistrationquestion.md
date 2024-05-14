@@ -3,7 +3,7 @@ title: "meetingRegistrationQuestion resource type"
 description: "Represents a custom registration question, other than first name, last name, and email address, associated with a meetingRegistration."
 author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "cloud-communications"
+ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 

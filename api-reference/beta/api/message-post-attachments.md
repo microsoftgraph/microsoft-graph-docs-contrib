@@ -3,7 +3,7 @@ title: "Add attachment"
 description: "Use this API to add an attachment to a message. "
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
@@ -73,7 +73,7 @@ If successful, this method returns `201 Created` response code and the [Attachme
 ## Example (file attachment)
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -128,7 +128,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 ##### Response
-Here is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_message_beta",
@@ -155,7 +155,7 @@ Content-type: application/json
 ## Example (item attachment)
 
 ##### Request
-Here is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -227,7 +227,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_beta",
@@ -251,7 +251,7 @@ Content-type: application/json
 ## Example (reference attachment)
 
 ##### Request
-Here is an example of a request that adds a reference attachment to an existing message.
+The following example shows a request that adds a reference attachment to an existing message.
 The attachment points to a folder on OneDrive.
 
 # [HTTP](#tab/http)

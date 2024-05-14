@@ -4,7 +4,7 @@ description: "Delete a subscription."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: apiPageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ---
 
 # Delete subscription
@@ -116,7 +116,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

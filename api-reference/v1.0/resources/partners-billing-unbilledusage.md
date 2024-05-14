@@ -1,9 +1,9 @@
 ---
 title: "unbilledUsage resource type"
 description: "Represents details for unbilled Azure usage data."
-author: "sourishdeb"
+author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "reports"
+ms.subservice: "reports"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,7 @@ Represents details for unbilled Azure usage data.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[export](../api/partners-billing-unbilledusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the unbilled Azure usage data for a specific billing period and a given currency.|
+|[export](../api/partners-billing-unbilledusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export unbilled Azure usage data for a specific billing period and currency.|
 
 ## Properties
 
@@ -27,11 +27,11 @@ None.
 
 ### billingPeriod values
 
-| Member             | Description                                      |
-|:-------------------|:-------------------------------------------------|
-| current            | The current billing period.                      |
-| last               | The billing period for the last month.           |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+| Member             | Description                                              |
+|:-------------------|:---------------------------------------------------------|
+| current            | The current month or billing period that is in progress. |
+| last               | The last month or billing period.                        |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.         |
 
 ## Relationships
 

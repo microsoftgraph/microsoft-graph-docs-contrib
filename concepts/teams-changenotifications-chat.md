@@ -3,7 +3,7 @@ title: "Get change notifications for chats using Microsoft Graph"
 description: "Learn how to get notifications for changes (create and update) for chats using Microsoft Graph APIs."
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 

@@ -3,7 +3,7 @@ title: "messageRulePredicates resource type"
 description: "Represents the set of conditions and exceptions that are available for a rule."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -50,7 +50,7 @@ Represents the set of conditions and exceptions that are available for a rule.
 | withinSizeRange | [sizeRange](sizerange.md) | Represents the minimum and maximum sizes (in kilobytes) that an incoming message must fall in between in order for the condition or exception to apply. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

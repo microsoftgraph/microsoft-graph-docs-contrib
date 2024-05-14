@@ -3,7 +3,7 @@ title: "workbookTableRow resource type"
 description: "Represents a row in a table."
 author: "lumine2008"
 ms.localizationpriority: medium
-ms.prod: "excel"
+ms.subservice: "excel"
 doc_type: resourcePageType
 ---
 

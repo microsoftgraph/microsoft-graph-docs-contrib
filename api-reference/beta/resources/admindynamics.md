@@ -3,7 +3,7 @@ title: "adminDynamics resource type"
 description: "Company-wide configuration for Microsoft Dynamics 365"
 author: "zadinsmo"
 ms.localizationpriority: medium
-ms.prod: "applications"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
