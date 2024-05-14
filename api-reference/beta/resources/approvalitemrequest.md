@@ -25,7 +25,7 @@ Collections of requests created for each approver on the approval item.
 |Property|Type|Description|
 |:---|:---|:---|
 |approver|[approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the principal assigned to this request.|
-|createdDateTime|DateTimeOffset|Creation time for the request.|
+|createdDateTime|DateTimeOffset|The date and time at which the request was created.|
 |isReassigned|Boolean|A flag used for identifying if a request was reassigned.|
 |reassignedFrom|[approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the principal who reassigned the request.|
 
