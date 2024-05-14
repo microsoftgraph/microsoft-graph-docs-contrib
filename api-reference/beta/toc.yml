@@ -1859,8 +1859,6 @@ items:
                     href: api/manageddevice-getcloudpcremoteactionresults.md
                   - name: Get review status (deprecated)
                     href: api/manageddevice-getcloudpcreviewstatus.md
-                  - name: Retrieve review status
-                    href: api/cloudpc-retrievereviewstatus.md
                   - name: Get shift work access state (deprecated)
                     href: api/cloudpc-getshiftworkcloudpcaccessstate.md
                   - name: Get supported remote actions
@@ -1885,6 +1883,8 @@ items:
                     href: api/cloudpc-restore.md
                   - name: Restore remotely (deprecated)
                     href: api/manageddevice-restorecloudpc.md
+                  - name: Retrieve review status
+                    href: api/cloudpc-retrievereviewstatus.md
                   - name: Set review status (deprecated)
                     href: api/manageddevice-setcloudpcreviewstatus.md
                   - name: Set review status
