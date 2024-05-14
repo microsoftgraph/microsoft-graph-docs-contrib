@@ -90,6 +90,53 @@ The supported RSC permissions are:
 * TeamsAppInstallation.Read.Group
 * TeamsAppInstallation.Read.User
 
+### Notifications with resource data
+
+For notifications with resource data, the payload looks like the following:
+
+```json
+{
+    "value": [{ 
+        "subscriptionId": "7ac50e0f-4526-44bc-8e75-834c16143e5d", 
+        "changeType": "created", 
+        "clientState": "<<--SpecifiedClientState-->>", 
+        "subscriptionExpirationDateTime": "2023-11-16T11:00:00.0000000Z", 
+        "resource": "appCatalogs/teamsApps('19d56a5e-86a2-489b-aa5c-88a60f92b83e')/installations('N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=')", 
+        "resourceData": { 
+            "id": "N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=", 
+            "@odata.type": "#Microsoft.Graph.teamsAppInstallation", 
+            "@odata.id": "appCatalogs/teamsApps('19d56a5e-86a2-489b-aa5c-88a60f92b83e')/installations('N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=')" 
+        }, 
+        "encryptedContent": { 
+            "data": "<<--EncryptedContent-->", 
+            "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>", 
+            "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>", 
+            "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>" 
+        }, 
+        "tenantId": "<<--TenantForWhichNotificationWasSent-->>" 
+    }], 
+    "validationTokens": ["<<--ValidationTokens-->>"] 
+}
+```
+
+The decrypted notification payload looks like the following. The payload conforms to the [teamsAppInstallation](/graph/api/resources/teamsappinstallation) schema.
+
+```json
+{
+"id":"MTk6NDlkZWMzODRmZWYyNDM1YTkyODI5ODUyNjA4ZDUyYzNAdGhyZWFkLnYyIyM5NWVhZTRmNi0zZmNjLTQyOWItOWEzMC1kYWY5M2Y4ZjBiYjQ=", 
+"teamsApp":{ 
+"id":"95eae4f6-3fcc-429b-9a30-daf93f8f0bb4" 
+}, 
+"scopeInfo":{ 
+"@odata.type":"#microsoft.graph.groupChatTeamsAppInstallationScopeInfo", 
+"chatId":"19:49dec384fef2435a92829852608d52c3@thread.v2", 
+"scope":"groupChat" 
+} 
+} 
+
+
+
+
 ## See also
 
 [Microsoft Graph change notifications](change-notifications-overview.md)
