@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Entity that represents a multi-event policy, that is, a **user flow**, and holds the handler configuration for multiple events. Each property of name *eventType* is optional and corresponds to the handler configuration on the event listener. This is a management level for the atomic authenticationEventListener that allows for managing of multiple listeners under the same priority and condition set. This provides a better managed view of checking which event listeners will be executed under a certain circumstance.
+Represents a multi-event policy, that is, a **user flow**, and holds the handler configuration for multiple events. Each property of name *eventType* is optional and corresponds to the handler configuration on the event listener. This resource allows for managing multiple [authenticationEventListener](../resources/authenticationeventlistener.md) objects under the same priority and condition set. This resource provides a better-managed view of checking which event listeners are executed under a certain circumstance.
 
-If no handler is set for an event, then this policy won't effect that event in any authentication, and no listener is created for that event.
+If no handler is set for an event, then this policy doesn't effect that event in any authentication, and no listener is created for that event.
 
-Additionally, this entity works as an orchestration step for the various event listeners it manages. For each event listener managed by the entity, it creates, modify, or delete the event listener accordingly. This means on creation time, it creates multiple event listeners and handles any rollback scenarios for any failing requests.
+Additionally, this entity works as an orchestration step for the various event listeners it manages. For each event listener that it manages, it creates, modifies, or deletes the event listener accordingly. This means on creation time, it creates multiple event listeners and manages any rollback scenarios for any failing requests.
 
-This is an abstract type from which the [externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type is derived.
+This resource is an abstract type from which the [externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type is derived.
 
 Inherits from [entity](../resources/entity.md).
 
