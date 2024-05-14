@@ -38,7 +38,7 @@ An approval item is an object that represents the approval including the decisio
 |description|String|The description of the approval request.|
 |displayName|String|The displayName of the approval request. Required.|
 |id|String|The approval item unique id. Read-only.|
-|owner|[approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the principal who owns the approval item. The owner field would only be provided when an application is creating an ApprovalItem on behalf of the principal. If the owner field is not provided the user information from the user context is used.|
+|owner|[approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the principal who owns the approval item. The owner field would only be provided when an application is creating an ApprovalItem on behalf of the principal. If the owner field isn't provided the user information from the user context is used.|
 |responsePrompts|String collection|Approval response prompts. The input length here would be minimum of 2 and maximum of 2.|
 |result|String|The result field would only be populated once the ApprovalItem gotten to it final state. The result of the approvalItem is based on the approvalType. The result could either be a single response or multiple responses separated by semi-colon. Read-only.|
 |state|approvalItemState|The approvalItem state. The possible values are: `canceled`, `created`, `pending`, `completed`, `unknownFutureValue`. Read-only.|

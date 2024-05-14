@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the approvalItemRequest resources from the requests navigation property.
+Get the [approvalItemRequest](../resources/approvalitemrequest.md) resources from the requests navigation property.
 
 ## Permissions
 

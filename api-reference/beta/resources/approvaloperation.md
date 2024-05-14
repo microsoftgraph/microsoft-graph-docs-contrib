@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an approval operation, and provides the status of the operation.
+Represents an approval operation and its status.
 
 ## Methods
 |Method|Return type|Description|
@@ -23,7 +23,7 @@ Represents an approval operation, and provides the status of the operation.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The DateTimeOffset for when this operation was created.|
+|createdDateTime|DateTimeOffset|The date and time when this operation was created.|
 |error|[publicError](../resources/publicerror.md)|The error if the operation failed.|
 |lastActionDateTime|DateTimeOffset|The DateTimeOffset for when this operation was last updated.|
 |resourceLocation|String|The URL location for the resource that you can make a GET call for.|

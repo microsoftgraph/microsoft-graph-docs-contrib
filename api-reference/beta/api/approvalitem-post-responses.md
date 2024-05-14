@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new approvalItemResponse object.
+Create a new [approvalItemResponse](../resources/approvalitemresponse.md) object.
 
 ## Permissions
 
