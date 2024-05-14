@@ -40,7 +40,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification to this rule.|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|The status of the protection rule. The following are the possible values: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
- ## driveExpression examples
+ ### driveExpression examples
 The drive expression can be of following formats.
 | Property                                 | Operator                                   | Example                                                                  |
 | ------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------- |

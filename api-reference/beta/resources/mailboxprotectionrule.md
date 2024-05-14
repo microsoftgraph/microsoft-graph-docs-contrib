@@ -40,7 +40,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |mailboxExpression|String|Contains mailbox expression.[mailboxExpression example](../resources/mailboxprotectionrule.md#mailboxExpression-examples)|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
- ## mailboxExpression examples
+ ### mailboxExpression examples
 The mailbox expression can be of following formats.
 | Property                                 | Operator                                   | Example                                                                  |
 | ------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------- |
