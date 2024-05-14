@@ -32,7 +32,7 @@ An approval item is an object that represents the approval including the decisio
 |allowCancel|Boolean|This property would be True if the ApprovalItem can be canceled. Read-only.|
 |allowEmailNotification|Boolean|This property would be used for enabling email notification.|
 |approvalType|approvalItemType|The approval type describes the workflow of the approvalItem. The possible values are: `basic`, `basicAwaitAll`, `custom`, `customAwaitAll`, `unknownFutureValue`. Required.|
-|approvers|[approvalIdentitySet](../resources/approvalidentityset.md) collection|This property is used for setting the identity of the Principals the ApprovalItem is initially assigned to. Required.|
+|approvers|[approvalIdentitySet](../resources/approvalidentityset.md) collection|The identity of the principals to whom the approval item was initially assigned. Required.|
 |completedDateTime|DateTimeOffset|Approval request completion time. Read-only.|
 |createdDateTime|DateTimeOffset|Creation time of the approval request. Read-only.|
 |description|String|The description of the approval request.|
