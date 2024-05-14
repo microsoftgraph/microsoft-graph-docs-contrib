@@ -18,6 +18,19 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## May 2024: New in preview only
 
+### Microsoft Graph Bicep templates
+
+Use the new [Bicep templates for Microsoft Graph resources](/graph/templates/overview-bicep-templates-for-graph) to deploy Microsoft Graph resources for your infrastructure as code (IaC) projects. The following Microsoft Graph resources are currently supported as Bicep resource types:
+
+- application
+- appRoleAssignedTo
+- group
+- federatedIdentityCredential
+- oauth2PermissionGrant
+- servicePrincipal
+
+Microsoft Graph Bicep is currently in preview, but can be used to deploy Microsoft Graph resources that are in `v1.0` and `beta`.
+
 ### Identity and access | Identity and sign-in
 
 - Use the [externalAuthenticationMethodConfiguration resource type](/graph/api/resources/externalAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) and its associated methods to manage the configuration of external authentication methods and define users who can use the external authentication methods to satisfy the second factor of Microsoft Entra ID multifactor authentication requirements.
