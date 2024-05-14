@@ -1,5 +1,5 @@
 ---
-title: "Sortfield resource type"
+title: workbookSortField resource type
 description: "Represents a condition in a sorting operation."
 ms.localizationpriority: medium
 author: "ruoyingl"
@@ -7,7 +7,7 @@ ms.subservice: excel
 doc_type: resourcePageType
 ---
 
-# SortField resource type
+# workbookSortField resource type
 
 Namespace: microsoft.graph
 
