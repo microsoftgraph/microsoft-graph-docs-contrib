@@ -18580,7 +18580,7 @@ items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
                     items:
-                      - name: List in tenant
+                      - name: List in organization
                         href: api/virtualeventsroot-list-webinars.md
                       - name: List by user role
                         href: api/virtualeventwebinar-getbyuserrole.md
