@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 Create a new [authenticationEventsFlow](../resources/authenticationeventsflow.md) object that is of the type specified in the request body. The following derived subtypes are supported:
 - [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
-
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -49,7 +47,6 @@ You can specify the following properties when creating an **authenticationEvents
 |displayName|String|Required. The display name for the events policy. Must be unique.|
 |description|String|Optional. The description of the events policy.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Optional. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked.|
-|priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. |
 
 ## Response
 
@@ -176,9 +173,7 @@ Content-Type: application/json
     },
     "onAttributeCollection": {
         "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-        "accessPackages": [],
         "attributeCollectionPage": {
-            "customStringsFileId": null,
             "views": [
                 {
                     "title": null,
@@ -331,9 +326,6 @@ Content-Type: application/json
     "id": "1d51b447-eb52-4ec8-ae4e-0a35ebc148ea",
     "displayName": "Woodgrove Drive User Flow",
     "description": null,
-    "priority": 500,
-    "onAttributeCollectionStart": null,
-    "onAttributeCollectionSubmit": null,
     "onUserCreateStart": null,
     "conditions": {
         "applications": {
@@ -349,9 +341,7 @@ Content-Type: application/json
     },
     "onAttributeCollection": {
         "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-        "accessPackages": [],
         "attributeCollectionPage": {
-            "customStringsFileId": null,
             "views": [
                 {
                     "title": null,
@@ -516,9 +506,6 @@ Content-Type: application/json
     "id": "{authentictionEventsFlow-id}",
     "displayName": "Woodgrove User Flow 2",
     "description": null,
-    "priority": 500,
-    "onAttributeCollectionStart": null,
-    "onAttributeCollectionSubmit": null,
     "onUserCreateStart": null,
     "conditions": {
         "applications": {
@@ -534,7 +521,6 @@ Content-Type: application/json
     },
     "onAttributeCollection": {
         "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
-        "accessPackages": [],
         "attributeCollectionPage": {
             "customStringsFileId": null,
             "views": [

@@ -14,8 +14,6 @@ Get a collection of authentication events policies that are derived from [authen
 - [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)
  
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
-
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -92,7 +90,6 @@ Content-Type: application/json
             "id": "79a67c51-c86d-4a48-8313-1e14ac821e16",
             "displayName": "TestUserFlow1",
             "description": null,
-            "priority": 50,
             "onAttributeCollectionStart": null,
             "onAttributeCollectionSubmit": null,
             "conditions": {
@@ -113,15 +110,12 @@ Content-Type: application/json
                         "@odata.type": "#microsoft.graph.builtInIdentityProvider",
                         "id": "EmailPassword-OAUTH",
                         "displayName": "Email with password",
-                        "identityProviderType": "EmailPassword",
-                        "state": null
-                    }
+                        "identityProviderType": "EmailPassword"                    }
                 ]
             },
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
                 "attributeCollectionPage": {
-                    "customStringsFileId": null,
                     "views": [
                         {
                             "title": null,
@@ -182,7 +176,6 @@ Content-Type: application/json
             "id": "0313cc37-d421-421d-857b-87804d61e33e",
             "displayName": "Woodgrove Drive User Flow",
             "description": "For onboarding consumers to the Woodgrove Drive application",
-            "priority": 50,
             "onAttributeCollectionStart": null,
             "onAttributeCollectionSubmit": null,
             "conditions": {
@@ -203,8 +196,7 @@ Content-Type: application/json
                         "@odata.type": "#microsoft.graph.builtInIdentityProvider",
                         "id": "EmailPassword-OAUTH",
                         "displayName": "Email with password",
-                        "identityProviderType": "EmailPassword",
-                        "state": null
+                        "identityProviderType": "EmailPassword"
                     },
                     {
                         "@odata.type": "#microsoft.graph.socialIdentityProvider",
@@ -227,7 +219,6 @@ Content-Type: application/json
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
                 "attributeCollectionPage": {
-                    "customStringsFileId": null,
                     "views": [
                         {
                             "title": null,
@@ -343,7 +334,6 @@ Content-Type: application/json
             "id": "0313cc37-d421-421d-857b-87804d61e33e",
             "displayName": "Woodgrove Drive User Flow",
             "description": "For onboarding consumers to the Woodgrove Drive application",
-            "priority": 50,
             "onAttributeCollectionStart": null,
             "onAttributeCollectionSubmit": null,
             "conditions": {
@@ -364,8 +354,7 @@ Content-Type: application/json
                         "@odata.type": "#microsoft.graph.builtInIdentityProvider",
                         "id": "EmailPassword-OAUTH",
                         "displayName": "Email with password",
-                        "identityProviderType": "EmailPassword",
-                        "state": null
+                        "identityProviderType": "EmailPassword"
                     },
                     {
                         "@odata.type": "#microsoft.graph.socialIdentityProvider",
@@ -388,7 +377,6 @@ Content-Type: application/json
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
                 "attributeCollectionPage": {
-                    "customStringsFileId": null,
                     "views": [
                         {
                             "title": null,
@@ -504,7 +492,6 @@ Content-Type: application/json
             "id": "0313cc37-d421-421d-857b-87804d61e33e",
             "displayName": "TestUserFlow3",
             "description": "my user flow description newestXXX",
-            "priority": 50,
             "onAttributeCollectionStart": null,
             "onAttributeCollectionSubmit": null,
             "conditions": {
@@ -525,15 +512,13 @@ Content-Type: application/json
                         "@odata.type": "#microsoft.graph.builtInIdentityProvider",
                         "id": "AADSignup-OAUTH",
                         "displayName": "Azure Active Directory Sign up",
-                        "identityProviderType": "AADSignup",
-                        "state": null
+                        "identityProviderType": "AADSignup"
                     },
                     {
                         "@odata.type": "#microsoft.graph.builtInIdentityProvider",
                         "id": "EmailPassword-OAUTH",
                         "displayName": "Email with password",
-                        "identityProviderType": "EmailPassword",
-                        "state": null
+                        "identityProviderType": "EmailPassword"
                     },
                     {
                         "@odata.type": "#microsoft.graph.socialIdentityProvider",
@@ -556,7 +541,6 @@ Content-Type: application/json
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
                 "attributeCollectionPage": {
-                    "customStringsFileId": null,
                     "views": [
                         {
                             "title": null,
@@ -636,7 +620,6 @@ Content-Type: application/json
             "id": "f5b9b311-cb87-445b-a655-e6e6a4d3e582",
             "displayName": "TestUserFlow4",
             "description": null,
-            "priority": 50,
             "onAttributeCollectionStart": null,
             "onAttributeCollectionSubmit": null,
             "conditions": {
@@ -657,15 +640,13 @@ Content-Type: application/json
                         "@odata.type": "#microsoft.graph.builtInIdentityProvider",
                         "id": "EmailPassword-OAUTH",
                         "displayName": "Email with password",
-                        "identityProviderType": "EmailPassword",
-                        "state": null
+                        "identityProviderType": "EmailPassword"
                     }
                 ]
             },
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
                 "attributeCollectionPage": {
-                    "customStringsFileId": null,
                     "views": [
                         {
                             "title": null,
@@ -799,7 +780,6 @@ Content-Type: application/json
             "id": "b5ca7ddb-f5e4-4dea-8ee5-282116ddc71d",
             "displayName": "Test User Flow",
             "description": null,
-            "priority": 500,
             "onAttributeCollectionStart": null,
             "onAttributeCollectionSubmit": null,
             "conditions": {
@@ -824,15 +804,13 @@ Content-Type: application/json
                         "@odata.type": "#microsoft.graph.builtInIdentityProvider",
                         "id": "EmailPassword-OAUTH",
                         "displayName": "Email with password",
-                        "identityProviderType": "EmailPassword",
-                        "state": null
+                        "identityProviderType": "EmailPassword"
                     }
                 ]
             },
             "onAttributeCollection": {
                 "@odata.type": "#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp",
                 "attributeCollectionPage": {
-                    "customStringsFileId": null,
                     "views": [
                         {
                             "title": null,

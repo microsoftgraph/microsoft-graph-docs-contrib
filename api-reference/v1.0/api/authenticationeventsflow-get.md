@@ -10,10 +10,8 @@ doc_type: apiPageType
 # Get authenticationEventsFlow
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. The **@odata.type** property in the response object indicates the type of the authenticationEventListener object. The following derived subtypes are supported:
+Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. The **@odata.type** property in the response object indicates the type of the object, which can be one of the following derived subtypes:
 - [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)
-
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -34,7 +32,7 @@ GET /identity/authenticationEventsFlows/{authenticationEventsFlow-id}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

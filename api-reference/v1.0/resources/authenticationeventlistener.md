@@ -61,6 +61,7 @@ The following JSON representation shows the resource type.
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },
+  "authenticationEventsFlowId": "String"
 }
 ```
 
