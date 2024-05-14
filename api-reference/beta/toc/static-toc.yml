@@ -1,0 +1,34 @@
+items:
+- name: Overview of Microsoft Graph
+  href: /graph/overview?context=graph/api/beta
+- name: What's new
+  href: /graph/whats-new-overview?context=graph/api/beta
+- name: API changelog
+  href: https://developer.microsoft.com/en-us/graph/changelog
+  displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
+- name: Quick start
+  href: https://developer.microsoft.com/en-us/graph/quick-start
+- name: Authentication and authorization
+  href: /graph/auth/index?context=graph/api/beta
+- name: Permissions reference
+  href: /graph/permissions-reference
+- name: Use the API
+  href: /graph/use-the-api?context=graph/api/beta
+- name: Use SDKs
+  href: /graph/sdks/sdks-overview?context=graph/api/beta
+- name: Use the toolkit
+  href: /graph/toolkit/overview?context=graph/api/beta
+- name: Known issues
+  href: https://developer.microsoft.com/graph/known-issues
+- name: Errors
+  href: /graph/errors?context=graph/api/beta
+  displayName: Microsoft Graph error responses and error resource types
+- name: API beta reference
+  expanded: true
+  items:
+  - name: Overview
+    href: overview.md
+  - name: Users
+    href: toc/users/toc.yml
+  - name: Groups
+    href: toc/groups/toc.yml

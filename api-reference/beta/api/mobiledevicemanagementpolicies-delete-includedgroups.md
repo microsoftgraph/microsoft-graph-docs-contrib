@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete a group from the list of groups included in a mobile device management policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -3,7 +3,7 @@ title: "Working with Microsoft Teams messaging APIs in Microsoft Graph"
 description: "Working with Microsoft Teams messaging"
 author: "RamjotSingh"
 ms.localizationpriority: high
-ms.prod: "microsoft-teams"
+ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ---
 
@@ -65,7 +65,7 @@ The following example shows the schema for an tab attachment.
 ```
 #### card attachment
 
-Cards represent visual elements backed by a predefined schema. Teams supports the cards defined by the [Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object) in addition to the following card types:
+Cards represent visual elements backed by a predefined schema. Teams supports the cards defined by the [Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0&preserve-view=true#attachment-object) in addition to the following card types:
 
 - Code snippet - Set **contentType** to `application/vnd.microsoft.card.codesnippet`
 - Announcement card - Set **contentType** set to `application/vnd.microsoft.card.announcement`
@@ -156,10 +156,14 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
 - at - A reference to an [chatMessageMention](/graph/api/resources/chatmessagemention) that represents the details of a user, application, [channel](/graph/api/resources/channel?preserve-view=true), [team](/graph/api/resources/team), or [tag](/graph/api/resources/teamworktag) that is @mentioned.
 - attachment - Represents the position of an attachment reference.
 - systemEventMessage - When the **content** property of the **itemBody** resource is set to `<systemEventMessage/>`, the message represents a special event. For more information, see [Get system messages](/graph/system-messages).
-- emoji - When body of the message contains an emoji, the `$"<emoji id="IdOfTheEmoji" alt="AlternateRepresentationOfEmoji" title="TitleOfEmoji"></emoji>"` element represents the properties of an emoji:
-    - id - IThe D of the emoji.
+- emoji - When the body of the message contains an emoji, the `$"<emoji id="IdOfTheEmoji" alt="AlternateRepresentationOfEmoji" title="TitleOfEmoji"></emoji>"` element represents the properties of an *emoji*:
+    - id - The ID of the emoji.
     - alt - An alternate representation for the emoji; for example, Unicode.
     - title - A title for the emoji.
+- customemoji - When the body of the message contains a custom emoji, the `$"<customemoji id=\"dGVzdHNjOzAtd3VzLWQyLTdiNWRkZGQ2ZGVjMDNkYzIwNTgxY2NkYTE1MmEyZTM4\" alt=\"testsc\" source=\"https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706638496169/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1jYW5hcnkuYXN5bmNndy50ZWFtcy5taWNyb3NvZnQuY29tL3YxL29iamVjdHMvMC13dXMtZDItN2I1ZGRkZDZkZWMwM2RjMjA1ODFjY2RhMTUyYTJlMzgvdmlld3MvaW1ndDJfYW5pbQ==/$value\"></customemoji>"` element represents the properties of a *customemoji*:
+    - id - The ID of the custom emoji.
+    - alt - An alternate representation for the custom emoji; for example, the name of the custom emoji.
+    - source - The hosted content of the custom emoji associated with the message.
 
 **Example: A message that @mentions a team**
 
@@ -247,6 +251,19 @@ The **chatMessage** schema supports the following non-HTML elements that Teams a
     "body": {
         "contentType": "html",
         "content": "<p><emoji id=\"smile\" alt=\"🙂\" title=\"Smile\"></emoji></p>"
+    }
+}
+```
+
+**Example: A message with a custom emoji**
+
+>**Note:** Custom emojis are only available on the `/beta` endpoint.
+
+```json
+{
+    "body": {
+        "contentType": "html",
+        "content": "<p><customemoji id=\"dGVzdHNjOzAtd3VzLWQyLTdiNWRkZGQ2ZGVjMDNkYzIwNTgxY2NkYTE1MmEyZTM4\" alt=\"testsc\" source=\"https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706638496169/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1jYW5hcnkuYXN5bmNndy50ZWFtcy5taWNyb3NvZnQuY29tL3YxL29iamVjdHMvMC13dXMtZDItN2I1ZGRkZDZkZWMwM2RjMjA1ODFjY2RhMTUyYTJlMzgvdmlld3MvaW1ndDJfYW5pbQ==/$value\"></customemoji></p>"
     }
 }
 ```
@@ -631,7 +648,10 @@ The **reactions** property represents reactions from other users on the message,
 
 The following example shows a message with reactions.
 
+>**Note:** The display name isn't always present.
+
 ```json
+{
     "reactions": [
         {
             "reactionType": "like",
@@ -647,9 +667,36 @@ The following example shows a message with reactions.
             }
         }
     ]
+}
 ```
 
-> **Note:** The display name isn't always present.
+The following example shows a message with a custom reaction.
+
+>**Note:**
+> * Custom reactions are only available on the `/beta` endpoint.
+> * The display name isn't always present.
+
+```json
+{
+    "reactions": [
+        {
+            "reactionType": "custom",
+            "reactionContentUrl": "https://graph.microsoft.com/beta/chats/19:bcf84b15c2994a909770f7d05bc4fe16@thread.v2/messages/1706763669648/hostedContents/aWQ9MC13dXMtZDExLTc3ZmI2NmY4MTMwMGI2OGEzYzRkOWUyNmU1YTc5ZmMyLHR5cGU9MSx1cmw9/$value",
+            "createdDateTime": "2024-02-14T22:07:02.288Z",
+            "user": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+                    "displayName": null,
+                    "userIdentityType": "aadUser"
+                }
+            }
+        }
+    ]
+}
+```
 
 ### replyToId
 
