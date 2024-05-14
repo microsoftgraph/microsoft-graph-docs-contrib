@@ -5,6 +5,7 @@ author: "yuechen7"
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: resourcePageType
+toc.title: Cloud clipboard
 ---
 
 # cloudClipboardRoot resource type
