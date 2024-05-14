@@ -19,7 +19,7 @@ Entity used for managing the Approval solutions.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/approvalsolution-get.md)|[approvalSolution](../resources/approvalsolution.md)|Read the properties and relationships of an [approvalSolution](../resources/approvalsolution.md) object.|
-|[provision](../api/approvalsolution-provision.md)|None|Provisions an Approval instance on behalf of the tenant.|
+|[provision](../api/approvalsolution-provision.md)|None|Provisions an approval solution instance on behalf of the tenant.|
 |[List approvalItems](../api/approvalsolution-list-approvalitems.md)|[approvalItem](../resources/approvalitem.md) collection|Get the approvalItem resources from the approvalItems navigation property.|
 |[Create approvalItem](../api/approvalsolution-post-approvalitems.md)|[approvalItem](../resources/approvalitem.md)|Create a new approvalItem object.|
 

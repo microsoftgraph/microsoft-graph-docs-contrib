@@ -53,12 +53,11 @@ You can specify the following properties when creating an **approvalItem**.
 |:---|:---|:---|
 |displayName|String|The displayName of the approval request. Required.|
 |description|String|The description of the approval request. Optional.|
-|allowEmailNotification|Boolean|This property would be used for enabling email notification. Optional.|
-|approvalType|approvalItemType|The approval type describes the workflow of the approvalItem. The possible values are: `basic`, `basicAwaitAll`, `custom`, `customAwaitAll`, `unknownFutureValue`. Required.|
-|responsePrompts|String collection|Approval response prompts. The input length here would be minimum of 2 and maximum of 2. Optional.|
-|approvers|[microsoft.approval.approvalIdentitySet](../resources/approvalidentityset.md) collection|This property is used for setting the identity of the Principals the ApprovalItem is assigned to. Required.|
-|owner|[microsoft.approval.approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the principal who owns the approval item. The owner field would only be provided when an application is creating an ApprovalItem on behalf of the principal. If the owner field is not provided the user information from the user context is used. Optional.|
-
+|allowEmailNotification|Boolean|Indicates whether email notification is enabled. Optional.|
+|approvalType|approvalItemType|The workflow type of the approval item. The possible values are: `basic`, `basicAwaitAll`, `custom`, `customAwaitAll`. Required.|
+|responsePrompts|String collection|Approval response prompts. Only provide a value for this property when creating a custom approval item. For custom approval items, supply two response prompt strings. The default response prompts are "Approve" and "Reject". Optional.|
+|approvers|[microsoft.approval.approvalIdentitySet](../resources/approvalidentityset.md) collection|The identity of the principals to whom the approval item was initially assigned. Required.|
+|owner|[microsoft.approval.approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the principal who owns the approval item. Only provide a value for this property when creating an approval item on behalf of the principal. If the owner field isn't provided, the user information from the user context is used. Optional.|
 
 ## Response
 

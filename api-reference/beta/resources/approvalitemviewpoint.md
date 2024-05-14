@@ -1,6 +1,6 @@
 ---
 title: "approvalItemViewPoint resource type"
-description: "Represents user viewpoints data on the ApprovalItem. The data includes the users roles regarding the approval item."
+description: "Represents user viewpoints data on the approval item. The data includes the users roles regarding the approval item."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents user viewpoints data on the ApprovalItem. The data includes the users roles regarding the approval item.
+Represents user viewpoints data on the approval item. The data includes the user's roles for the approval item.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|roles|approverRole collection|Collection of roles in regard to an ApprovalItem on behalf of the requesting user.|
+|roles|approverRole collection|Collection of roles associated with the requesting user for the approval item. If the owner of the approval item is making the request, the collection of roles will include the role `owner`. If the requesting user was assigned as an approver, the collection will include the role `approver`.|
 
 ## Relationships
 None.

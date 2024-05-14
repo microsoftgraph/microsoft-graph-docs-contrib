@@ -1,6 +1,6 @@
 ---
 title: "approvalItemResponse resource type"
-description: "This entity type is used for managing the ApprovalItem responses."
+description: "This entity type is used for managing the approval item responses."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This entity type is used for managing the ApprovalItem responses.
+This entity type is used for managing the approval item responses.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,7 +27,7 @@ This entity type is used for managing the ApprovalItem responses.
 |:---|:---|:---|
 |comments|String|The comment made by the approver.|
 |createdBy|[approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the approver.|
-|createdDateTime|DateTimeOffset|Creation time of the response.|
+|createdDateTime|DateTimeOffset|Creation date and time of the response.|
 |owners|[approvalIdentitySet](../resources/approvalidentityset.md) collection|The identity set of the principal who owns the approval item.|
 |response|String|Approver response based on the response options.|
 

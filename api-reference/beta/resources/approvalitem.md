@@ -29,19 +29,19 @@ An approval item is an object that represents the approval including the decisio
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowCancel|Boolean|This property would be True if the ApprovalItem can be canceled. Read-only.|
-|allowEmailNotification|Boolean|This property would be used for enabling email notification.|
-|approvalType|approvalItemType|The approval type describes the workflow of the approvalItem. The possible values are: `basic`, `basicAwaitAll`, `custom`, `customAwaitAll`, `unknownFutureValue`. Required.|
-|approvers|[approvalIdentitySet](../resources/approvalidentityset.md) collection|This property is used for setting the identity of the Principals the ApprovalItem is initially assigned to. Required.|
-|completedDateTime|DateTimeOffset|Approval request completion time. Read-only.|
-|createdDateTime|DateTimeOffset|Creation time of the approval request. Read-only.|
+|allowCancel|Boolean|Indicates whether the approval item can be canceled.|
+|allowEmailNotification|Boolean|Indicates whether email notification is enabled.|
+|approvalType|approvalItemType|The workflow type of the approval item. The possible values are: `basic`, `basicAwaitAll`, `custom`, `customAwaitAll`. Required.|
+|approvers|[approvalIdentitySet](../resources/approvalidentityset.md) collection|The identity of the principals to whom the approval item was initially assigned. Required.|
+|completedDateTime|DateTimeOffset|Approval request completion date and time. Read-only.|
+|createdDateTime|DateTimeOffset|Creation date and time of the approval request. Read-only.|
 |description|String|The description of the approval request.|
 |displayName|String|The displayName of the approval request. Required.|
-|id|String|The approval item unique id. Read-only.|
-|owner|[approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the principal who owns the approval item. The owner field would only be provided when an application is creating an ApprovalItem on behalf of the principal. If the owner field is not provided the user information from the user context is used.|
-|responsePrompts|String collection|Approval response prompts. The input length here would be minimum of 2 and maximum of 2.|
-|result|String|The result field would only be populated once the ApprovalItem gotten to it final state. The result of the approvalItem is based on the approvalType. The result could either be a single response or multiple responses separated by semi-colon. Read-only.|
-|state|approvalItemState|The approvalItem state. The possible values are: `canceled`, `created`, `pending`, `completed`, `unknownFutureValue`. Read-only.|
+|id|String|The unique id for the approval item. Read-only.|
+|owner|[approvalIdentitySet](../resources/approvalidentityset.md)|The identity set of the principal who owns the approval item. Only provide a value for this property when creating an approval item on behalf of the principal. If the owner field isn't provided, the user information from the user context is used.|
+|responsePrompts|String collection|Approval response prompts. Only provide a value for this property when creating a custom approval item. For custom approval items, supply two response prompt strings. The default response prompts are "Approve" and "Reject".|
+|result|String|The result field is only populated once the approval item is in its final state. The result of the approval item is based on the approvalType. For basic approval items, the result will either be "Approved" or "Rejected". For custom approval items, the result could either be a single response or multiple responses separated by a semi-colon. Read-only.|
+|state|approvalItemState|The approval item state. The possible values are: `canceled`, `created`, `pending`, `completed`. Read-only.|
 |viewPoint|[approvalItemViewPoint](../resources/approvalitemviewpoint.md)|Represents user viewpoints data on the ApprovalItem. The data includes the users roles regarding the approval item. Read-only.|
 
 ## Relationships

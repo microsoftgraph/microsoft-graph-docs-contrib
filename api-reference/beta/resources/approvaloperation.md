@@ -23,10 +23,10 @@ Represents an approval operation, and provides the status of the operation.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The DateTimeOffset for when this operation was created.|
+|createdDateTime|DateTimeOffset|Creation date and time for the operation.|
 |error|[publicError](../resources/publicerror.md)|The error if the operation failed.|
 |lastActionDateTime|DateTimeOffset|The DateTimeOffset for when this operation was last updated.|
-|resourceLocation|String|The URL location for the resource that you can make a GET call for.|
+|resourceLocation|String|The URL for the resource that was newly created or acted upon.|
 |status|approvalOperationStatus|The status of the operation. The possible values are: `scheduled`, `inProgress`, `succeeded`, `failed`, `timeout`, `unknownFutureValue`.|
 
 ## Relationships
