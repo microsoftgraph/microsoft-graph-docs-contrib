@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.set_presence_post_request_body import SetPresencePostRequestBody
+from msgraph.generated.users.item.presence.set_presence.set_presence_post_request_body import SetPresencePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

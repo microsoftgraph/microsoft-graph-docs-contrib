@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.acquire_access_token_post_request_body import AcquireAccessTokenPostRequestBody
+from msgraph.generated.applications.item.synchronization.acquire_access_token.acquire_access_token_post_request_body import AcquireAccessTokenPostRequestBody
 from msgraph.generated.models.synchronization_secret_key_string_value_pair import SynchronizationSecretKeyStringValuePair
 
 graph_client = GraphServiceClient(credentials, scopes)

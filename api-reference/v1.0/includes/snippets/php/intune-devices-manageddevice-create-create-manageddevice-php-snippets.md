@@ -119,6 +119,7 @@ $requestBody->setUdid('Udid value');
 $requestBody->setNotes('Notes value');
 $requestBody->setEthernetMacAddress('Ethernet Mac Address value');
 $requestBody->setPhysicalMemoryInBytes(5);
+$requestBody->setEnrollmentProfileName('Enrollment Profile Name value');
 
 $result = $graphServiceClient->deviceManagement()->managedDevices()->post($requestBody)->wait();
 

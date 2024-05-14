@@ -34,7 +34,7 @@ The following table compares application access policy for online meeting and vi
 |----------|----------------|---------------|
 | _policy_1_ is assigned to _user_1_, _policy_2_ is assigned to _user_2_ | _app_1_ can only access online meetings as _user_1_<br>_app_2_ can only access online meetings as _user_2_ | _app_1_ can only access virtual events created by _user_1_<br>_app_2_ can only access virtual events created by _user_2_ |
 | _policy_1_ is assigned to _user_1_ and _user_2_ | _app_1_ can access online meetings as _user_1_<br>_app_1_ can access online meetings as _user_2_ | _app_1_ can access virtual events created by _user_1_<br>_app_1_ can access virtual events created by _user_2_ |
-| _policy_3_ is assigned to _user_1_, no policy is assigned to _user_2_ | _app_1_ can access online meeting as _user_1_ and _user_2_<br>No app can access online meeting as _user_2_ | _app_1_ can access virtual events created by _user_1_ and _user_2_<br>No app can access virtual events created by _user_2_ |
+| _policy_3_ is assigned to _user_1_, no policy is assigned to _user_2_ | _app_1_ and _app_2_ can access online meeting as _user_1_<br>No app can access online meeting as _user_2_ | _app_1_ and _app_2_ can access virtual events created by _user_1_<br>No app can access virtual events created by _user_2_ |
 | _policy_3_ is assigned to the whole tenant | Both _app_1_ and _app_2_ can access online meetings as either _user_1_ or _user_2_ |  Both _app_1_ and _app_2_ can access virtual events created by either _user_1_ or _user_2_ |
 
 ## Configure application access policy

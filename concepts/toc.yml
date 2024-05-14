@@ -606,8 +606,8 @@ items:
   - name: Identity and access
     items:
     - name: Overview
-      href: azuread-identity-access-management-concept-overview.md
-      displayName: Azure AD, Microsoft identity platform, identity, access
+      href: identity-network-access-overview.md
+      displayName: Microsoft Entra, Azure AD, Microsoft identity platform
     - name: Directory management
       items:
       - name: "Manage custom security attribute assignments"

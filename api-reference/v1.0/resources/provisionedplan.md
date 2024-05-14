@@ -1,8 +1,8 @@
 ---
 title: "provisionedPlan resource type"
-description: "The **provisionedPlans** property of the user entity and the organization entity is a collection of **provisionedPlan**."
+description: "The provisionedPlans property of the user entity and the organization entity is a collection of provisionedPlan objects."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "sauwat"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.
+Used by the **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity.
 
 
 ## Properties

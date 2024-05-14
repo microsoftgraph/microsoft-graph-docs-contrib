@@ -176,14 +176,17 @@ Content-type: application/json
 ### Example 2: Create a new application and add a password secret
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_application_with_passwordcredentials"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/applications
 Content-type: application/json
 
 {
-  "displayName": "MyAppName"
-  "passwordCredential": [
+  "displayName": "MyAppName",
+  "passwordCredentials": [
     {
       "displayName": "Password name"
     }
@@ -229,7 +232,7 @@ Content-type: application/json
             "endDateTime": "2026-04-01T19:10:02.6576213Z",
             "hint": "puE",
             "keyId": "09a0c91a-1bc3-4eaf-a945-c88c041fad6c",
-            "secretText": "puE8Q~IWkcVp1ZjAsVAWQOtGTQzJ5m-BKkBkhauv",
+            "secretText": "1234567890abcdefghijklmnopqrstuvwxyzabcd",
             "startDateTime": "2024-04-01T19:10:02.6576213Z"
         }
     ],

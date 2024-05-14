@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the list of password-based single sign-on credentials for a given user. This API returns the encrypted passwords as null or empty strings.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

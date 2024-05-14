@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete the password-based single sign-on credentials for a given user to a given service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
