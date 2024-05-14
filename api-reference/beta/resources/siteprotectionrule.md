@@ -1,6 +1,6 @@
 ---
 title: "siteProtectionRule resource type"
-description: "Describes site protection rule and it's properties"
+description: "Describes site protection rule and its properties"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This derived entity contains the site expression and other metadata. It is associated to the SharePoint protection policy.
+Describes Site Protection Rule and its properties. It is associated to the SharePoint Protection Policy.
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
@@ -30,15 +30,23 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the protection rule associated to the policy.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the rule.|
-|createdDateTime|DateTimeOffset|The time of creation of the rule.|
+|id|String|The unique identifier of the protection rule associated with the policy.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the rule.|
+|createdDateTime|DateTimeOffset|The date and time that the rule was created.|
 |error|[publicError](../resources/publicerror.md)|Error details will be populated here, if any operation on rule expression fails|
 |isAutoApplyEnabled|Boolean|A boolean flag indicating whether the protection rule is static or dynamic. Static rules gets executed one time whereas dynamic rule listens to all changes in the system and updates the protection unit list.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this rule .|
-|siteExpression|String|A property which contains the appropriate site expression.|
+|siteExpression|String|Contains site expression.[siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples)|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+
+ ### siteExpression examples
+The site expression can be of following formats.
+| Property                                 | Operator   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                                | Example                                                                  |
+| ------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------- |
+| `displayName`      | `-contains` |   `((displayName -contains 'Finance') -or (displayName -contains 'Legal'))`  |
+| `lastModifiedDateTime` | `-ge` |    `(((displayName -contains 'Finance') -or (webUrl -contains 'Legal')) -and (lastModifiedDateTime -ge '2024-02-26T11:36:20Z'))`   |   
+| `webUrl` | `-contains` |    `((displayName -contains 'Finance') -or (webUrl -contains 'Legal'))`     |
 
 ### protectionRuleStatus values
 |Member | Description |

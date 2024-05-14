@@ -1,6 +1,6 @@
 ---
 title: "mailboxProtectionRule resource type"
-description: "Describes mailbox protection rule and it's properties""
+description: "Describes mailbox protection rule and its properties"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This derived entity contains the site expression and other metadata. It is associated to the exchange mailbox protection policy.
+Describes Mailbox Protection Rule and its properties. It is associated to the exchange Mailbox Protection Policy.
 
 Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
@@ -30,15 +30,22 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the protection rule associated to the policy.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the rule.|
-|createdDateTime|DateTimeOffset|The time of creation of the rule.|
+|id|String|The unique identifier of the protection rule associated with the policy.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the rule.|
+|createdDateTime|DateTimeOffset|The date and time that the rule was created.|
 |error|[publicError](../resources/publicerror.md)|Error details will be populated here, if any operation on rule expression fails|
 |isAutoApplyEnabled|Boolean|A boolean flag indicating whether the protection rule is static or dynamic. Static rules gets executed one time whereas dynamic rule listens to all changes in the system and updates the protection unit list.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this rule .|
-|mailboxExpression|String|A property which contains the appropriate mailbox expression|
+|mailboxExpression|String|Contains mailbox expression.[mailboxExpression example](../resources/mailboxprotectionrule.md#mailboxExpression-examples)|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+
+ ## mailboxExpression examples
+The mailbox expression can be of following formats.
+| Property                                 | Operator                                   | Example                                                                  |
+| ------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `memberOf`      | `-any` |  `(memberOf -any (group.id -in ['d7f5150a-0c6f-4894-a6a1-6df77b26f375']))`         |
+| `group.id` | `-in` |   `(memberOf -any (group.id -in ['d7f5150a-0c6f-4894-a6a1-6df77b26f375', '363cdbd0-f091-4644-93e4-64c1020c94d8']))`              |  
 
 ### protectionRuleStatus values
 |Member | Description |
