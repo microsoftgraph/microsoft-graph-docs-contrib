@@ -1,6 +1,6 @@
 ---
 title: "virtualEvent resource type"
-description: "Represents an abstract base type for a virtual event. "
+description: "Represents an abstract base type for a virtual event."
 author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -24,13 +24,13 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information for the creator of the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
-|description|[itemBody](../resources/itembody.md)|Description of the virtual event.|
-|displayName|String|Display name of the virtual event. |
-|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
-|id|String|Unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
+|createdBy|[communicationsIdentitySet](communicationsidentityset.md)|The identity information for the creator of the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
+|description|[itemBody](../resources/itembody.md)|A description of the virtual event.|
+|displayName|String|The display name of the virtual event. |
+|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The end time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
+|id|String|The unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
-|status|[virtualEventStatus](#virtualeventstatus-values)|Status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
+|status|[virtualEventStatus](#virtualeventstatus-values)|The status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
 
 ### virtualEventStatus values
 
@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |presenters|[virtualEventPresenter](../resources/virtualeventpresenter.md) collection|The virtual event presenters.|
-|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|Sessions for the virtual event.|
+|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|The sessions for the virtual event.|
 
 ## JSON representation
 

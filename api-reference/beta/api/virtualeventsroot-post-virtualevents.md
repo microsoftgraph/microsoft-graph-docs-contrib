@@ -55,24 +55,24 @@ You can specify the following properties when you create a [virtualEventWebinar]
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | [meetingAudience](../resources/virtualeventwebinar.md#meetingaudience-values) | The audience to whom the webinar is visible. |
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
-| description | [itemBody](../resources/itembody.md) | Description of the webinar. |
-| displayName | String | Display name of the webinar. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar ends. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar starts. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the webinar. |
+| description | [itemBody](../resources/itembody.md) | A description of the webinar. |
+| displayName | String | The display name of the webinar. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar ends. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar starts. |
 
 You can specify the following properties when you create a [virtualEventTownhall](../resources/virtualeventtownhall.md):
 
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | [meetingAudience](../resources/virtualeventtownhall.md#meetingaudience-values) | The audience to whom the town hall is visible. |
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | Identity information of coorganizers of the town hall. |
-| description | [itemBody](../resources/itembody.md) | Description of the town hall. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the town hall. |
+| description | [itemBody](../resources/itembody.md) | A description of the town hall. |
 | displayName | String | Display name of the town hall. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. |
-| invitedAttendees | [identity](../resources/identity.md) collection | Attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall ends. |
+| invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall starts. |
 
 ## Response
 
