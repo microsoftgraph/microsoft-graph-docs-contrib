@@ -24,10 +24,10 @@ Represents a chart object in a workbook.
 |[Update](../api/chart-update.md) | [workbookChart](workbookchart.md)	|Update Chart object. |
 |[Image](../api/chart-image.md)|Image base64 encoded string|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
 |[Delete](../api/chart-delete.md)|None|Deletes the chart object.|
-|[Setdata](../api/chart-setdata.md)|None|Resets the source data for the chart.|
-|[Setposition](../api/chart-setposition.md)|None|Positions the chart relative to cells on the worksheet.|
+|[Set data](../api/chart-setdata.md)|None|Resets the source data for the chart.|
+|[Set position](../api/chart-setposition.md)|None|Positions the chart relative to cells on the worksheet.|
 |[List](../api/chart-list.md) | [workbookChart](workbookchart.md) collection |Get chart object collection. |
-|[Itemat](../api/chartcollection-itemat.md)|[workbookChart](workbookchart.md)|Gets a chart based on its position in the collection.|
+|[Item at](../api/chartcollection-itemat.md)|[workbookChart](workbookchart.md)|Gets a chart based on its position in the collection.|
 |[Add](../api/chartcollection-add.md)|[workbookChart](workbookchart.md)|Creates a new chart.|
 
 ## Properties
@@ -44,11 +44,11 @@ Represents a chart object in a workbook.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |axes|[workbookChartAxes](workbookchartaxes.md)|Represents chart axes. Read-only.|
-|dataLabels|[workbookChartDataLabels](workbookchartdatalabels.md)|Represents the datalabels on the chart. Read-only.|
+|dataLabels|[workbookChartDataLabels](workbookchartdatalabels.md)|Represents the data labels on the chart. Read-only.|
 |format|[workbookChartAreaFormat](workbookchartareaformat.md)|Encapsulates the format properties for the chart area. Read-only.|
 |legend|[workbookChartLegend](workbookchartlegend.md)|Represents the legend for the chart. Read-only.|
 |series|[workbookChartSeries](workbookchartseries.md) collection|Represents either a single series or collection of series in the chart. Read-only.|
-|title|[workbookChartTitle](workbookcharttitle.md)|Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.|
+|title|[workbookChartTitle](workbookcharttitle.md)|Represents the title of the specified chart, including the text, visibility, position and formatting of the title. Read-only.|
 |worksheet|[workbookWorksheet](workbookworksheet.md)|The worksheet containing the current chart. Read-only.|
 
 ## JSON representation

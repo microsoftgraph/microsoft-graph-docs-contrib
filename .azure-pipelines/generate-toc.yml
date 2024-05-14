@@ -19,6 +19,7 @@ resources:
   - repository: AD-AggregatorService-Workloads
     type: git
     name: One/AD-AggregatorService-Workloads
+    ref: master
     endpoint: MSAzure/One
 
 pool:
@@ -42,6 +43,7 @@ stages:
     steps:
     - checkout: self
       displayName: Checkout docs repo
+      persistCredentials: true
 
     - checkout: msgraph-toc-gen
       displayName: Checkout TOC generator repo
@@ -68,14 +70,21 @@ stages:
       displayName: Generate beta reference TOC
 
     - pwsh: |
+        git config user.email "GraphTooling@service.microsoft.com"
+        git config user.name "Microsoft Graph DevX Tooling"
+      displayName: Configure git
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
+
+    - pwsh: |
         $status = git status --porcelain
         if ($status -eq $null) {
           Write-Host "No changes to commit." -ForegroundColor Green
         } else {
           $timestamp = Get-Date -Format FileDateTimeUniversal
-          git checkout toc-gen/$timestamp
+          git checkout -b toc-gen/$timestamp
           git add .
           git commit -m "Generated reference TOC"
           git push --set-upstream origin toc-gen/$timestamp
         }
+      workingDirectory: $(Build.SourcesDirectory)/microsoft-graph-docs
       displayName: Commit and push TOC updates
