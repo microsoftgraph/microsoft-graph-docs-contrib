@@ -81,7 +81,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to changes in a particular chat using the **notifyOnUserSpecificProperties** query parameter
+### Example 2: Subscribe to changes in a particular chat using the **notifyOnUserSpecificProperties** query parameter (preview)
 
 The following example shows how to subscribe to receive notifications of changes in a particular chat by providing the **notifyOnUserSpecificProperties** query parameter.
 
