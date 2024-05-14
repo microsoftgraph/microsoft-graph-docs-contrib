@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an approval operation, and provides the status of the operation.
+Represents an approval operation and its status.
 
 ## Methods
 |Method|Return type|Description|

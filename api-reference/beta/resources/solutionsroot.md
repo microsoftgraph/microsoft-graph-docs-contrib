@@ -69,7 +69,7 @@ None.
 |bookingCurrencies|[bookingcurrency](bookingcurrency.md) collection | A collection of monetary currencies supported by a [bookingBusiness](bookingbusiness.md). Read-only. Nullable.|
 |businessScenarios|[businessScenario](businessscenario.md) collection | A collection of scenarios that contain relevant data and configuration information for a specific problem domain.|
 |virtualEvents|virtualEventsRoot collection | A collection of virtual events.|
-|approval|[approvalSolution](../resources/approvalsolution.md)| Approval navigation property that allows you to manage your |approvalItems|(approvalitem.md).|
+|approval|[approvalSolution](../resources/approvalsolution.md)| Approval navigation property that allows you to manage your [approvalItems](approvalitem.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.

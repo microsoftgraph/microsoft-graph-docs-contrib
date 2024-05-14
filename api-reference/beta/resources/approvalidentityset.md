@@ -1,6 +1,6 @@
 ---
 title: "approvalIdentitySet resource type"
-description: "Represents a keyed collection of identity resources."
+description: "Represents a keyed collection of identity resources that are associated with an approval item."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a keyed collection of [identity](identity.md) resources. It's used to represent a set of identities associated with an approval item.
+Represents a keyed collection of [identity](identity.md) resources that are associated with an approval item.
 
 Inherits from [identitySet](../resources/identityset.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|group|[identity](../resources/identity.md)|The Entra group associated with the approval item.|
+|group|[identity](../resources/identity.md)|The Microsoft Entra group associated with the approval item.|
 |user|[identity](../resources/identity.md)|The user associated with the approval item. Inherited from [identitySet](../resources/identityset.md).|
 
 ## Relationships

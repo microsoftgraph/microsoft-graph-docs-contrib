@@ -1,6 +1,6 @@
 ---
 title: "approvalItemViewPoint resource type"
-description: "Represents user viewpoints data on the approval item. The data includes the users roles regarding the approval item."
+description: "Represents user viewpoints data on the approval item. The data includes the user's roles regarding the approval item."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"

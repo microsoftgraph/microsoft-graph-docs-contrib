@@ -1,6 +1,6 @@
 ---
 title: "approvalSolution resource type"
-description: "Entity used for managing the Approval solutions"
+description: "Represents approval provisioning status."
 author: "asgautam1997"
 ms.localizationpriority: medium
 ms.subservice: "approvals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entity used for managing the Approval solutions.
+Represents approval provisioning status.
 
 ## Methods
 |Method|Return type|Description|
