@@ -55,7 +55,7 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |Member|Description|
 |:----|-----------|
 | searchHits | Export collected items with search hits.|
-| partiallyIndexed | Include partially indexed items (unrecognized format, are encrypted, or weren’t indexed for other reasons).|
+| partiallyIndexed | Include partially indexed items, such as those in unrecognized formats, encrypted, or not indexed for other reasons.|
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### exportFormat values
