@@ -24,7 +24,7 @@ Represents a container for the range of Microsoft Teams functionalities that are
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |id| String|The unique identifier for the **userTeamwork** object.|
-|locale|String |The chosen locale of a user in Microsoft Teams.|  
+|locale|String |The chosen locale of a user in Microsoft Teams. A locale representation for the user, which includes the user's preferred language and country/region. |  
 |region |String|The region of the user in Microsoft Teams.|
 
 ## Relationships
