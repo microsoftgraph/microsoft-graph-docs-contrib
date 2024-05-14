@@ -25,10 +25,13 @@ The following are examples of types:
 
 ## Methods
 
-| Method                                                                       | Return type                                                                                        | Description                                                                                                   |
-| :--------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| [List referenceDefinitions](../api/industrydata-referencedefinition-list.md) | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) collection | Get a list of the [referenceDefinition](industrydata-referencedefinition.md) objects and their properties.    |
-| [Get referenceDefinition](../api/industrydata-referencedefinition-get.md)    | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md)            | Read the properties and relationships of a [referenceDefinition](industrydata-referencedefinition.md) object. |
+| Method                                                                           | Return type                                                                                          | Description                                                                                                                            |
+| :------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| [List referenceDefinitions](../api/industrydata-referencedefinition-list.md)     | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) collection   | Get a list of the [referenceDefinition](industrydata-referencedefinition.md) objects and their properties.                             |
+| [Get referenceDefinition](../api/industrydata-referencedefinition-get.md)        | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md)              | Read the properties and relationships of a [referenceDefinition](industrydata-referencedefinition.md) object.                          |
+| [Create referenceDefinition](../api/industrydata-referencedefinitions-post.md)   | [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) | Create a new [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) object.              |
+| [Update referenceDefinition](../api/industrydata-referencedefinition-update.md)  | [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) | Update the properties of a [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) object.|
+| [Delete referenceDefinition](../api/industrydata-referencedefinitions-delete.md) | None                                                                                                 | Delete a [microsoft.graph.industryData.referenceDefinition](../resources/industrydata-referencedefinition.md) object.                  |
 
 ## Properties
 
@@ -36,6 +39,7 @@ The following are examples of types:
 | :------------------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | code                 | String         | The code value for the definition that must be unique within the **referenceType**.                                                                                                                                                           |
 | createdDateTime      | DateTimeOffset | The date and time when the definition was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.               |
+| displayName          | String         | Human-readable representation of the Code for display in a user interface.                                                                                                                                                                    |
 | isDisabled           | Boolean        | Indicates whether the definition has been disabled.                                                                                                                                                                                           |
 | lastModifiedDateTime | DateTimeOffset | The date and time when the definition was most recently changed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | referenceType        | String         | The categorical type for a collection of enumerated values.                                                                                                                                                                                   |
@@ -63,6 +67,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.industryData.referenceDefinition",
   "code": "String",
   "createdDateTime": "String (timestamp)",
+  "displayName": "String",
   "isDisabled": "Boolean",
   "lastModifiedDateTime": "String (timestamp)",
   "referenceType": "String",

@@ -33,6 +33,7 @@ Inherits from [fileDataConnector](industrydata-filedataconnector.md).
 | Property    | Type   | Description                                                                                                |
 | :---------- | :----- | :--------------------------------------------------------------------------------------------------------- |
 | displayName | String | Name of the data connector. Inherited from [industryDataConnector](industrydata-industrydataconnector.md). |
+| fileFormat  |[microsoft.graph.industryData.fileFormatReferenceValue](../resources/industrydata-fileformatreferencevalue.md)|File format that external systems can upload using this connector|
 
 ## Relationships
 
@@ -56,6 +57,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
-  "displayName": "String"
+  "displayName": "String",
+  "fileFormat": {
+    "@odata.type": "microsoft.graph.industryData.fileFormatReferenceValue"
+  }
 }
 ```

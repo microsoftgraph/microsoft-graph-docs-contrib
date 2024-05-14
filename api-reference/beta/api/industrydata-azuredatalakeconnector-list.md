@@ -128,12 +128,20 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
       "displayName": "Rostering connector",
-      "id": "51dca0a0-85f6-4478-f526-08daddab2271"
+      "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+      "fileFormat": {
+        "@odata.type": "microsoft.graph.industryData.fileFormatReferenceValue",
+        "code": "schoolDataSyncV1"
+      }
     },
     {
       "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
       "displayName": "CSV connector",
-      "id": "f02aa680-4cdc-4d57-f4e1-08daddab2271"
+      "id": "f02aa680-4cdc-4d57-f4e1-08daddab2271",
+      "fileFormat": {
+        "@odata.type": "microsoft.graph.industryData.fileFormatReferenceValue",
+        "code": "schoolDataSyncV1"
+      }
     }
   ]
 }

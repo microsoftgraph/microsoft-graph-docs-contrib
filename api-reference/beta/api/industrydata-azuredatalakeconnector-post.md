@@ -51,6 +51,7 @@ You can specify the following properties when you create an **azureDataLakeConne
 | Property    | Type   | Description                               |
 | :---------- | :----- | :---------------------------------------- |
 | displayName | String | The name of the data connector. Required. |
+| fileFormat  | [microsoft.graph.industryData.fileFormatReferenceValue](../resources/industrydata-fileformatreferencevalue.md) | A pointer to a file format entry in the [referenceDefinition](../resources/industrydata-referencedefinition.md) collection. Optional. |
 
 ## Response
 
@@ -77,7 +78,11 @@ Content-length: 104
 {
     "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
     "displayName": "CSV connector",
-    "sourceSystem@odata.bind": "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')"
+    "sourceSystem@odata.bind": "https://graph.microsoft.com/beta/external/industryData/sourceSystems('aa050107-5784-4a8e-1876-08daddab21bc')",
+    "fileFormat": {
+      "@odata.type": "microsoft.graph.industryData.fileFormatReferenceValue",
+      "code": "schoolDataSyncV1"
+    }
 }
 ```
 
@@ -135,6 +140,10 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
   "displayName": "CSV connector",
-  "id": "51dca0a0-85f6-4478-f526-08daddab2271"
+  "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+  "fileFormat": {
+    "@odata.type": "microsoft.graph.industryData.fileFormatReferenceValue",
+    "code": "schoolDataSyncV1"
+  }
 }
 ```

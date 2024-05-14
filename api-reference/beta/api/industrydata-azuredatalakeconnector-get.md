@@ -125,6 +125,10 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",
   "displayName": "CSV connector",
-  "id": "51dca0a0-85f6-4478-f526-08daddab2271"
+  "id": "51dca0a0-85f6-4478-f526-08daddab2271",
+  "fileFormat": {
+    "@odata.type": "microsoft.graph.industryData.fileFormatReferenceValue",
+    "code": "schoolDataSyncV1"
+  }
 }
 ```
