@@ -50,6 +50,9 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|
 |unsubmittedDateTime|DateTimeOffset|Moment in time when the submission was moved from submitted into the working state. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |webUrl|String| The deep link URL for the given submission.|
+|excusedBy|[identitySet](identityset.md)| The user that marked the submission as excused.|
+|excusedDateTime|DateTimeOffset|The time that the submission was excused. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+
 
 ## Relationships
 | Relationship | Type	|Description|
