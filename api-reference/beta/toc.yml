@@ -18505,7 +18505,7 @@ items:
                         href: api/meetingregistration-update.md
                       - name: Delete
                         href: api/meetingregistration-delete.md
-                      - name: Meeting registrant
+                      - name: Meeting registrant (deprecated)
                         href: resources/meetingregistrant.md
                         items:
                           - name: List

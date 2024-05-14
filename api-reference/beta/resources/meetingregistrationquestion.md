@@ -7,11 +7,14 @@ ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# meetingRegistrationQuestion resource type
+# meetingRegistrationQuestion resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The meeting registration API is deprecated and will stop returning data on **July 31, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [blog post](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
 
 Represents a custom registration question, other than first name, last name, and email address, associated with a [meetingRegistration](meetingRegistration.md).
 

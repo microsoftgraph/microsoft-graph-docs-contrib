@@ -7,11 +7,14 @@ ms.subservice: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# meetingRegistrant resource type
+# meetingRegistrant resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The meeting registration API is deprecated and will stop returning data on **July 31, 2024**. Please use the new [webinar APIs](../resources/virtualeventwebinar.md). For more information, see [blog post](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-the-microsoft-graph-meeting-registration-beta-apis/). 
 
 Represents a meeting registrant who has enrolled in an [online meeting](onlinemeeting.md). 
 
