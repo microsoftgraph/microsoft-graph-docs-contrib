@@ -18,10 +18,12 @@ request_body = RemediatePostRequestBody(
 	remediate_senders_copy = False,
 	analyzed_emails = [
 		AnalyzedEmail(
-			id = "73ca4154-58d8-43d0-a890-08dc18c52e6d-1311265001240363512-1",
+			network_message_id = "73ca4154-58d8-43d0-a890-08dc18c52e6d",
+			recipient_email_address = "hannah.jarvis@contoso.com",
 		),
 		AnalyzedEmail(
-			id = "73ca4154-58d8-43d0-a890-08dc18c52e6d-13805748846361900678-1",
+			network_message_id = "73ca4154-58d8-43d0-a890-08dc18c52e6d",
+			recipient_email_address = "preston.morales@contoso.com",
 		),
 	],
 )
