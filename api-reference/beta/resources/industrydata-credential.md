@@ -1,5 +1,5 @@
 ---
-title: "credential resource type"
+title: "industryData credential resource type"
 description: "Base abstract type for all kinds of credentials supported in the industryData API."
 author: "dakelle"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
 ---
 
-# credential resource type
+# industryData credential resource type
 
 Namespace: microsoft.graph.industryData
 
