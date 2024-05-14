@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
     }
   ],
   "attributeCollectionRelativeUrl": "String",
-  "registrationCampaign": [
+   "registrationCampaign": [
     {
       "@odata.type": "microsoft.graph.keyValue"
     }
