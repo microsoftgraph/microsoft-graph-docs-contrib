@@ -25,7 +25,7 @@ Represents an approval operation and its status.
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time when this operation was created.|
 |error|[publicError](../resources/publicerror.md)|The error if the operation failed.|
-|lastActionDateTime|DateTimeOffset|The DateTimeOffset for when this operation was last updated.|
+|lastActionDateTime|DateTimeOffset|The date and time when this operation was most recently updated.|
 |resourceLocation|String|The URL location for the resource that you can make a GET call for.|
 |status|approvalOperationStatus|The status of the operation. The possible values are: `scheduled`, `inProgress`, `succeeded`, `failed`, `timeout`, `unknownFutureValue`.|
 
