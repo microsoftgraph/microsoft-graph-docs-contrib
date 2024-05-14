@@ -45,7 +45,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "index": int,
+  "index": "int",
   "set": "string"
 }
 
