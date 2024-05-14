@@ -46,9 +46,9 @@ Inherits from [entity](../resources/entity.md).
 |[Add attribute to a user flow](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md)|None|Add an **identityUserFlowAttribute** object associated with an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
 |[Remove attribute from a user flow](../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md)|None|Remove an **identityUserFlowAttribute** object associated with an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
 |**Linked applications**|||
-|[List linked applications](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List listeners associated with an external identities self-service sign-up user flow.|
-|[Add linked application](../api/authenticationconditionsapplications-post-includeapplications.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
-|[Remove linked application](../api/authenticationconditionapplication-delete.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
+|[List](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List the applications linked to an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
+|[Add](../api/authenticationconditionsapplications-post-includeapplications.md)|None|Add an application to an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
+|[Remove](../api/authenticationconditionapplication-delete.md)|None|Remove an application from an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
 
 ## Properties
 |Property|Type|Description|
