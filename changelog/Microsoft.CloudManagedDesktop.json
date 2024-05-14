@@ -5067,87 +5067,87 @@
     {
       "ChangeList": [
         {
-          "Id": "21463301-01d0-4f4f-b461-38c059f07bd5",
+          "Id": "d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
           "ChangedApiName": "retrieveReviewStatus",
           "ChangeType": "Addition",
-          "Description": "Added the **retrieveReviewStatus** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Description": "Added the [retrieveReviewStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievereviewstatus?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPc"
         },
         {
-          "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
+          "Id": "d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
           "ChangedApiName": "setReviewStatus",
           "ChangeType": "Addition",
-          "Description": "Added the **setReviewStatus** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Description": "Added the [setReviewStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-setreviewstatus?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPc"
         },
         {
-          "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
-          "ApiChange": "Method",
-          "ChangedApiName": "getCloudPcReviewStatus",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the **getCloudPcReviewStatus** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [retrieveReviewStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievereviewstatus?view=graph-rest-beta) API instead.",
-          "Target": "cloudPc"
-        },
-        {
-          "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
-          "ApiChange": "Method",
-          "ChangedApiName": "setCloudPcReviewStatus",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the **setCloudPcReviewStatus** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [setReviewStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-setreviewstatus?view=graph-rest-beta) API instead.",
-          "Target": "cloudPc"
-        },
-        {
-          "Id": "3b9babe4-7c68-461a-b4db-eded6ad2f5f4",
+          "Id": "d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
           "ChangedApiName": "createSnapshot",
           "ChangeType": "Addition",
-          "Description": "Added the **createSnapshot** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Description": "Added the [createSnapshot](https://learn.microsoft.com/en-us/graph/api/cloudpc-createsnapshot?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         },
         {
-          "Id": "ad2fc780-e9d8-4a52-85a5-5463a77b2f20",
+          "Id": "d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
           "ChangedApiName": "resize",
           "ChangeType": "Addition",
-          "Description": "Added the **resize** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Description": "Added the [resize](https://learn.microsoft.com/en-us/graph/api/cloudpc-resize?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
+        },        
+        {
+          "Id": "d76dc9ea-68f4-40d2-9a50-81bd77823090",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCloudPcReviewStatus",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [retrieveReviewStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievereviewstatus?view=graph-rest-beta) API.",
+          "Target": "cloudPc"
         },
         {
-          "Id":"9fb08539-629c-4860-9ba4-3fae38f5332f",
+          "Id": "d76dc9ea-68f4-40d2-9a50-81bd77823090",
+          "ApiChange": "Method",
+          "ChangedApiName": "setCloudPcReviewStatus",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [setCloudPcReviewStatus](https://learn.microsoft.com/en-us/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [setReviewStatus](https://learn.microsoft.com/en-us/graph/api/cloudpc-setreviewstatus?view=graph-rest-beta) API.",
+          "Target": "cloudPc"
+        },
+        {
+          "Id":"d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
           "ChangedApiName": "resizeCloudPc",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **resizeCloudPc** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [resize](https://learn.microsoft.com/en-us/graph/api/cloudpc-resize?view=graph-rest-beta) API instead.",
+          "Description": "Deprecated the [resizeCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [resize](https://learn.microsoft.com/en-us/graph/api/cloudpc-resize?view=graph-rest-beta) API.",
           "Target": "cloudPC"
         },
         {
-          "Id":"dc000323-a09d-49eB-a3b9-ce220d5049c1",
+          "Id":"d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
           "ChangedApiName": "bulkReprovisionCloudPc",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **bulkReprovisionCloudPc** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [bulkReprovision](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta) API instead.",
+          "Description": "Deprecated the [bulkReprovisionCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkreprovisioncloudpc?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [cloudPcBulkReprovision](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         },
         {
-          "Id":"6b8fc886-769a-4dfd-9770-3f080f8456be",
+          "Id":"d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
           "ChangedApiName": "bulkRestoreCloudPc",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **bulkRestoreCloudPc** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [bulkRestore](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta) API instead.",
+          "Description": "Deprecated the [bulkRestoreCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [cloudPcBulkRestore](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         },
         {
-          "Id":"96ae0a06-489f-44ae-aad4-ddd9917720da",
+          "Id":"d76dc9ea-68f4-40d2-9a50-81bd77823090",
           "ApiChange": "Method",
           "ChangedApiName": "bulkResize",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **bulkResize** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [bulkresize](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta) API instead.",
+          "Description": "Deprecated the [bulkResize](https://learn.microsoft.com/en-us/graph/api/cloudpc-bulkresize?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [cloudPcBulkResize](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         }
       ],
-      "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
+      "Id": "d76dc9ea-68f4-40d2-9a50-81bd77823090",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-04-25T06:58:17.7596296Z",
