@@ -1,19 +1,19 @@
 ---
-title: "List driveRestoreArtifact objects"
-description: "Get a list of the driveRestoreArtifact objects and their properties under oneDriveForBusinessRestoreSession"
+title: "List driveRestoreArtifact"
+description: "Get a list of the driveRestoreArtifact and their properties for an oneDriveForBusinessRestoreSession for the tenant"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# List driveRestoreArtifact objects
+# List driveRestoreArtifact
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [driveRestoreArtifact](../resources/driverestoreartifact.md) under an OneDrive Restore Session for the tenant
+List all the [driveRestoreArtifact](../resources/driverestoreartifact.md) for an [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) for the tenant.
 
 
 ## Permissions
@@ -25,7 +25,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "onedriveforbusinessrestoresession-list-driverestoreartifacts-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessrestoresession-list-driverestoreartifacts-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessrestoresession-list-driverestoreartifacts-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
 
 ## HTTP request
 
@@ -53,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) in the response body.
 
 ## Examples
 

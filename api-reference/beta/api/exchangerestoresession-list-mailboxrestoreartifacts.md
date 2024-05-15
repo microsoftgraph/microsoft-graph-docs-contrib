@@ -1,19 +1,19 @@
 ---
-title: "List mailboxRestoreArtifact objects"
-description: "Get a list of the mailboxRestoreArtifact objects and their properties under exchange restore session"
+title: "List mailboxRestoreArtifact"
+description: "Get a list of the mailboxRestoreArtifact and their properties for an exchangeRestoreSession"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# List mailboxRestoreArtifact objects
+# List mailboxRestoreArtifact
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) under an Exchange Restore Session for the tenant
+List all the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) for an [exchangeRestoreSession](../resources/exchangerestoresession.md) for the tenant.
 
 ## Permissions
 
@@ -24,7 +24,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "exchangerestoresession-list-mailboxrestoreartifacts-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/exchangerestoresession-list-mailboxrestoreartifacts-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/exchangerestoresession-list-mailboxrestoreartifacts-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
 
 ## HTTP request
 
@@ -52,7 +58,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) in the response body.
 
 ## Examples
 
@@ -61,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_mailboxrestoreartifact"
+  "name": "mailboxrestoreartifact_list"
 }
 -->
 ``` http

@@ -1,19 +1,19 @@
 ---
-title: "List siteRestoreArtifact objects"
-description: "List all the siteRestoreArtifact under a SharePoint Restore Session for the tenant."
+title: "List siteRestoreArtifact"
+description: "List all the siteRestoreArtifact for a SharePoint Restore Session for the tenant."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# List siteRestoreArtifact objects
+# List siteRestoreArtifact
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [siteRestoreArtifact](../resources/siterestoreartifact.md) under a SharePoint Restore Session for the tenant
+List all the [siteRestoreArtifact](../resources/siterestoreartifact.md) for a [sharePointRestoreSession](../resources/sharepointrestoresession.md) for the tenant
 
 ## Permissions
 
@@ -24,7 +24,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "sharepointrestoresession-list-siterestoreartifacts-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/sharepointrestoresession-list-siterestoreartifacts-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/sharepointrestoresession-list-siterestoreartifacts-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+
 
 ## HTTP request
 
@@ -52,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) in the response body.
 
 ## Examples
 
@@ -61,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_siterestoreartifact"
+  "name": "siterestoreartifact_list"
 }
 -->
 ``` http
