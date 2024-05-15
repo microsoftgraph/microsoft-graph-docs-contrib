@@ -802,6 +802,14 @@
       "ChangeList": [
         {
           "Id": "1db3f0eb-cd6b-43ce-8ad4-514193431a19",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "endpointType",
+          "ChangeType": "Addition",
+          "Description": "Added the **endpointType** enumeration type.",
+          "Target": "endpointType"
+        },
+        {
+          "Id": "1db3f0eb-cd6b-43ce-8ad4-514193431a19",
           "ApiChange": "Property",
           "ChangedApiName": "participants",
           "ChangeType": "Deprecation",
