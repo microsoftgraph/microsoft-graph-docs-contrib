@@ -1,19 +1,21 @@
 ---
 title: "List driveInclusionRules"
-description: "List driveInclusionRules for a OneDriveForBusinessProtectionPolicy"
+description: "List Drive Inclusion Rules for a OneDriveForBusiness Protection Policy"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Get driveProtectionRule
+# List driveInclusionRules
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md) object.
+List [driveProtectionRule](../resources/driveprotectionrule.md) in a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+
+An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
 
 ## Permissions
 
@@ -24,7 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "onedriveforbusinessprotectionpolicy-list-driveinclusionrules-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-list-driveinclusionrules-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-list-driveinclusionrules-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -52,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [driveProtectionRule](../resources/driveprotectionrule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [driveProtectionRule](../resources/driveprotectionrule.md) in the response body.
 
 ## Examples
 
@@ -61,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a [driveProtecti
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_onedriveforbusinessprotectionpolicy_driveinclusionrule"
+  "name": "onedriveforbusinessprotectionpolicy_list_driveinclusionrule"
 }
 -->
 ``` http

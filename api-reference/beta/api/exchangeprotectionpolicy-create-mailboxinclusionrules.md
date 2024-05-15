@@ -1,19 +1,21 @@
 ---
 title: "Create mailboxInclusionRule"
-description: "Create MailBoxInclusionRules for an Exchange Protetion Policy."
+description: "Create Mailbox Inclusion Rule for an Exchange Protection Policy."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Get mailboxInclusionRule
+# Create mailboxInclusionRule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.
+Create a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+
+An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
 
 ## Permissions
 
@@ -24,7 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "exchangeprotectionpolicy-create-mailboxinclusionrules-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-create-mailboxinclusionrules-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-create-mailboxinclusionrules-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -48,11 +55,11 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-In the request body, supply a JSON representation of the [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.
+In the request body, supply a JSON representation of the [mailboxProtectionRule](../resources/mailboxprotectionrule.md).
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in the response body.
 
 ## Examples
 
@@ -61,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [mailboxP
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_exchangeprotectionpolicy_mailboxinclusionrule"
+  "name": "exchangeprotectionpolicy_create_mailboxinclusionrule"
 }
 -->
 
@@ -76,6 +83,7 @@ Authorization: Bearer <Access-Token>
    "userExpression": "(memberOf -any (group.id -in ['f218eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
+
 ### Response
 
 The following example shows the response.

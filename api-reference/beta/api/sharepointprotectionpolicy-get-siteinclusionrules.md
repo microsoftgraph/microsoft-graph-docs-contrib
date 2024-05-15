@@ -1,19 +1,21 @@
 ---
-title: "Get siteProtectionRule"
-description: "Get a siteProtectionRule"
+title: "Get siteInclusionRule"
+description: "Get Site Inclusion Rule in a SharePoint Protection Policy."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Get siteProtectionRule
+# Get siteInclusionRule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [siteProtectionRule](../resources/siteprotectionrule.md) object.
+Get a [siteInclusionRule](../resources/siteprotectionrule.md) in a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+
+An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
 
 ## Permissions
 
@@ -24,7 +26,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "sharepointprotectionpolicy-get-siteinclusionrule-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-get-siteinclusionrule-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-get-siteinclusionrule-permissions.md)]-->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -52,7 +60,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [siteProtectionRule](../resources/siteprotectionrule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [siteProtectionRule](../resources/siteprotectionrule.md) in the response body.
 
 ## Examples
 
@@ -61,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a [siteProtectio
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_sharepointprotectionpolicy_siteinclusionrule"
+  "name": "sharepointprotectionpolicy_get_siteinclusionrule"
 }
 -->
 ``` http
@@ -111,4 +119,3 @@ Content-Location: /solutions/backupRestore/sharePointProtectionPolicies/71633878
    "siteExpression": "((displayName -contains 'Finance')  -or  (displayName -contains 'Legal'))"
 }
 ```
-

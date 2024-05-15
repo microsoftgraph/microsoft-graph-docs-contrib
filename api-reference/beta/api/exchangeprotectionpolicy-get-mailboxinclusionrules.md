@@ -1,6 +1,6 @@
 ---
 title: "Get mailboxInclusionRule"
-description: "Get MailBoxInclusionRule for an Exchange Protetion Policy."
+description: "Get Mailbox Inclusion Rule for an Exchange Protection Policy."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.
+Get a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+
+An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
 
 ## Permissions
 
@@ -52,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in the response body.
 
 ## Examples
 
@@ -61,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [mailboxProtec
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_exchangeprotectionpolicy_mailboxinclusionrule"
+  "name": "get_exchangeprotectionpolicy_get_mailboxinclusionrule"
 }
 -->
 ``` http

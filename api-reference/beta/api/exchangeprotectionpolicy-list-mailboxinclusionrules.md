@@ -1,19 +1,21 @@
 ---
-title: "List mailboxInclusionRule"
-description: "List MailBoxInclusionRules for an Exchange Protetion Policy."
+title: "List mailboxInclusionRules"
+description: "List Mailbox Inclusion Rules for an Exchange Protection Policy."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Get mailboxInclusionRule
+# List mailboxInclusionRules
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.
+List [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+
+An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
 
 ## Permissions
 
@@ -24,7 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "exchangeprotectionpolicy-list-mailboxinclusionrules-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-list-mailboxinclusionrules-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-list-mailboxinclusionrules-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -52,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in the response body.
 
 ## Examples
 
@@ -61,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a [mailboxProtec
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_exchangeprotectionpolicy_mailboxinclusionrule"
+  "name": "exchangeprotectionpolicy_list_mailboxinclusionrule"
 }
 -->
 ``` http
