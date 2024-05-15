@@ -3,8 +3,8 @@ title: "Use the Microsoft Graph security API"
 description: "The Microsoft Graph security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners."
 ms.localizationpriority: high
 author: "preetikr"
+doc_type: conceptualPageType
 ms.subservice: "security"
-doc_type: resourcePageType
 ---
 
 # Use the Microsoft Graph security API
@@ -80,7 +80,6 @@ Alerts from the following security providers are available via these rich alerts
 - [Microsoft Defender for Identity](/defender-for-identity/alerts-overview)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview?view=o365-worldwide&preserve-view=true)
 - [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide&preserve-view=true)
-
 
 ### Legacy alerts
 
