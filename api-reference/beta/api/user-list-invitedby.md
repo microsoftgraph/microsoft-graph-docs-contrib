@@ -1,6 +1,6 @@
 ---
 title: "List invitedBy"
-description: "Get the user or application who invited a particular user into the tenant."
+description: "Get the user or servicePrincipal who invited a particular user into the tenant."
 author: "sponnada"
 ms.localizationpriority: medium
 ms.subservice: "entra-users"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the user, or service principal, that invited the specified user into the tenant.
+Returns the [user](../resources/user.md), or [servicePrincipal](../resources/serviceprincipal.md), that invited the specified user into the tenant.
 
 ## Permissions
 
@@ -83,6 +83,7 @@ Content-Type: application/json
 {
     "value": [
     {
+       "@odata.type": "#Microsoft.DirectoryServices.User",
        "displayName": "Adele Vance",
        "givenName": "Adele",
        "jobTitle": "Retail Manager",
