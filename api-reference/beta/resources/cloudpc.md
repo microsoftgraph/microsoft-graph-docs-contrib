@@ -30,7 +30,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Reboot](../api/cloudpc-reboot.md)|None|Reboot a specific Cloud PC object.|
 |[Rename](../api/cloudpc-rename.md)|None|Rename a specific Cloud PC object. Use this API to update the **displayName** for the Cloud PC entity.|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a Cloud PC object.|
-|[Resize](../api/cloudpc-resize.md)|None|Upgrade or downgrade an existing Cloud PC to another configuration with new vCPU and storage size through Cloud PC ID.|
+|[Resize](../api/cloudpc-resize.md)|None|Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.|
 |[Start](../api/cloudpc-start.md)|None|Start a specific Cloud PC for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
 |[Stop](../api/cloudpc-stop.md)|None|Stop a specific Cloud PC for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific Cloud PC object. Use this API to check the health status of the Cloud PC and the session host.|
