@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelswindowsupdates.NewDeployment()
 content := graphmodelswindowsupdates.NewCatalogContent()
@@ -51,6 +51,7 @@ monitoring.SetMonitoringRules(monitoringRules)
 settings.SetMonitoring(monitoring)
 requestBody.SetSettings(settings)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 deployments, err := graphClient.Admin().Windows().Updates().Deployments().Post(context.Background(), requestBody, nil)
 
 

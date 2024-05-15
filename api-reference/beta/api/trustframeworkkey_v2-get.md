@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{trustFrameworkKeySe
 
 ---
 
-
 ### Response
 
 The following example shows the response.
