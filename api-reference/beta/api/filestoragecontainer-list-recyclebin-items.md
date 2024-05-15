@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List recycleBin items
+# List recycle bin items
 
 Namespace: microsoft.graph
 
