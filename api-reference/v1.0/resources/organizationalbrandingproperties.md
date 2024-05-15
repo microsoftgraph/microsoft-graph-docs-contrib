@@ -85,6 +85,9 @@ The following JSON representation shows the resource type.
   "cdnList": [
     "String"
   ],
+  "contentCustomization": {
+    "@odata.type": "microsoft.graph.contentCustomization"
+  }, 
   "signInPageText": "String",
   "squareLogo": "Stream",
   "squareLogoRelativeUrl": "String",
