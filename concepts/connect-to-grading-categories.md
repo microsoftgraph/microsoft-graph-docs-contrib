@@ -136,7 +136,7 @@ HTTP/1.1 204 No Content
 
 You can change the details of a grading category, like its display name or weight. You can also delete one grading category and replace its contribution with an existing or new grading category. This section shows you how to update one or more grading categories.
 
-- [Update single gradingCategory](/graph/api/educationgradingcategory-update): This API is used to update a single gradingCategory.
+To update a single granding category, see [Update single gradingCategory](/graph/api/educationgradingcategory-update).
 
 ### Example 1: Update a single grading category
 
