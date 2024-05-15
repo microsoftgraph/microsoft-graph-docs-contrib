@@ -1,19 +1,20 @@
 ---
-title: "Delete mailboxProtectionRule"
-description: "Delete a mailboxProtectionRule object."
+title: "Delete mailboxInclusionRules"
+description: "Delete a mailboxInclusionRules."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
-# Delete mailboxProtectionRule
+# Delete mailboxInclusionRules
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.
+Delete a [mailboxInclusionRules](../resources/mailboxprotectionrule.md).
+Deletion of a rule is allowed once it reaches the completed or completedWithErrors state. Deletion of a [mailboxInclusionRules](../resources/mailboxprotectionrule.md) will not remove the Protection Units corresponding to the rule from the Exchange protection policy.
 
 ## Permissions
 
@@ -24,7 +25,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "exchangeprotectionpolicy-delete-mailboxinclusionrules-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-delete-mailboxinclusionrules-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-delete-mailboxinclusionrules-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -33,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/$ref
+DELETE /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}
 ```
 
 ## Request headers
@@ -57,7 +64,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_mailboxprotectionrule"
+  "name": "mailboxprotectionrule_delete"
 }
 -->
 ``` http

@@ -1,19 +1,20 @@
 ---
-title: "Delete siteProtectionRule"
-description: "Delete a siteProtectionRule object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Delete siteInclusionRule"
+description: "Delete a siteInclusionRule."
+author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Delete siteProtectionRule
+# Delete siteInclusionRule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [siteProtectionRule](../resources/siteprotectionrule.md) object.
+Delete a [siteInclusionRule](../resources/siteprotectionrule.md).
+Deletion of a rule is allowed once it reaches the completed or completedWithErrors state. Deletion of a [siteInclusionRule](../resources/siteprotectionrule.md) will not remove the Protection Units corresponding to the rule from the SharePoint protection policy.
 
 ## Permissions
 
@@ -24,7 +25,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "sharepointprotectionpolicy-delete-siteinclusionrules-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-delete-siteinclusionrules-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-delete-siteinclusionrules-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+
 
 ## HTTP request
 
@@ -33,7 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules/{siteProtectionRuleId}/$ref
+DELETE /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules/{siteProtectionRuleId}
 ```
 
 ## Request headers
@@ -57,7 +65,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_siteprotectionrule"
+  "name": "siteprotectionrule_delete"
 }
 -->
 ``` http

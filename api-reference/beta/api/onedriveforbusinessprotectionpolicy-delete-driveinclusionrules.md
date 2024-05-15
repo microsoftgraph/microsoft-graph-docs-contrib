@@ -1,19 +1,20 @@
 ---
-title: "Delete driveProtectionRule"
-description: "Delete a driveProtectionRule object."
+title: "Delete driveInclusionRule"
+description: "Delete a driveInclusionRule."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
-# Delete driveProtectionRule
+# Delete driveInclusionRule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [driveProtectionRule](../resources/driveprotectionrule.md) object.
+Delete a [driveInclusionRule](../resources/driveprotectionrule.md).
+Deletion of a rule is allowed once it reaches the completed or completedWithErrors state. Deletion of a [driveInclusionRule](../resources/driveprotectionrule.md) will not remove the protection units corresponding to the rule from the OneDrive protection policy.
 
 ## Permissions
 
@@ -24,7 +25,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "onedriveforbusinessprotectionpolicy-delete-driveinclusionrules-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-delete-driveinclusionrules-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-delete-driveinclusionrules-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -33,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}/$ref
+DELETE /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}
 ```
 
 ## Request headers
