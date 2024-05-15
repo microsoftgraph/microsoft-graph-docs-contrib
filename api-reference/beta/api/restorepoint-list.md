@@ -1,19 +1,19 @@
 ---
-title: "List restorePoint objects"
-description: "Get a list of the restorePoint objects and their properties."
+title: "List restorePoint"
+description: "Get a list of the restorePoint and their properties."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 ---
 
-# List restorePoint objects
+# List restorePoint
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties.
+Get a list of the [restorePoint](../resources/restorepoint.md) and their properties.
 
 ## Permissions
 
@@ -21,10 +21,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "siterestoreartifact-list-restorepoint-permissions"
+  "name": "restorepoint-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/siterestoreartifact-list-restorepoint-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/restorepoint-list-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+
 
 ## HTTP request
 
@@ -52,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [restorePoint](../resources/restorepoint.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [restorePoint](../resources/restorepoint.md) in the response body.
 
 ## Examples
 
