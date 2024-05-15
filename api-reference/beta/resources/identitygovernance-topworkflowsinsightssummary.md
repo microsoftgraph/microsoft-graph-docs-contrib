@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The topWorkflowsInsightSummary represents a summary of the workflows processed the most, which are called top workflows, within a tenant. Workflow details are provided along with the specific workflow's total, failed, and successful run and processing history.
+Represents a summary of the workflows that are processed the most, or the _top workflows_, within a tenant, including workflow details and the total, failed, and successful run and processing history for the workflow.
 
 ## Properties
 

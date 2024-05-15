@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The topTasksInsightSummary represents a summary of the top tasks ran within a tenant. Total, failed, and successful tasks and user processing processing history are provided.
+Represents a summary of the top tasks ran within a tenant, including total, failed, and successful tasks and user processing history.
 
 ## Properties
 

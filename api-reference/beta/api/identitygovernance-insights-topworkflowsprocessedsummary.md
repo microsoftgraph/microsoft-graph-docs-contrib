@@ -1,6 +1,6 @@
 ---
 title: "insights: topWorkflowsProcessedSummary"
-description: "The summary of the most processed workflows by Lifecycle Workflows in a tenant."
+description: "Get a summary of the most processed workflows by Lifecycle Workflows in a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides a summary of the workflows processed the most, known as top workflows, for a specified period in a tenant. Workflow basic details are given, along with run information. For information on tasks processed, see: [insights: topTasksProcessedSummary](identitygovernance-insights-toptasksprocessedsummary.md).
+Provide a summary of the workflows processed the most, known as top workflows, for a specified period in a tenant. Workflow basic details are given, along with run information. For information about tasks processed, see [insights: topTasksProcessedSummary](identitygovernance-insights-toptasksprocessedsummary.md).
 
 ## Permissions
 
@@ -38,8 +38,7 @@ GET /identityGovernance/lifecycleWorkflows/insights/topWorkflowsProcessedSummary
 
 ## Function parameters
 
-In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
+In the request URL, provide the following query parameters with values. The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

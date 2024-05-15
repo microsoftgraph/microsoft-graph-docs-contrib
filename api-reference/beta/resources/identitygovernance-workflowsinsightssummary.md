@@ -1,6 +1,6 @@
 ---
 title: "workflowsInsightsSummary resource type"
-description: "The summary of workflow usage, known as insights, of Lifecycle Workflows in a tenant."
+description: "Provides a summary of workflow usage, known as insights, of Lifecycle Workflows in a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The workflow insights summary provides a numerical summary of run information for workflows in a tenant. Total, successful, and failed values are provided for workflow, task, and user processing by a workflow. The information here is general information about information reported in the insights of a Lifecycle workflow tenant. More detailed specific task and workflow insight summaries can be found in [topTasksInsightsSummary](identitygovernance-toptasksinsightssummary.md) and [topWorkflowsInsightsSummary](identitygovernance-topworkflowsinsightssummary.md).
+Provides a numerical summary of run information for workflows in a tenant, including total, successful, and failed tasks and user processing information. This resource contains information reported in the insights of a Lifecycle workflow tenant. More detailed specific task and workflow insight summaries are included in the [topTasksInsightsSummary](identitygovernance-toptasksinsightssummary.md) and [topWorkflowsInsightsSummary](identitygovernance-topworkflowsinsightssummary.md) resources.
 
 ## Properties
 
