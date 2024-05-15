@@ -3,7 +3,7 @@ title: "contentCustomization resource type"
 description: "Contains details of the various content options for a tenant."
 author: "quievey"
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Contains details of the various content options to be customized in the authenti
 None.
 
 ## JSON representation
-The following JSON representation shows the resource type.
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.contentCustomization"
@@ -40,12 +40,6 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.keyValue"
     }
   ],
-  "attributeCollectionRelativeUrl": "String",
-"registrationCampaign": [
-    {
-      "@odata.type": "microsoft.graph.keyValue"
-    }
-  ],
-  "registrationCampaignRelativeUrl": "String"
+  "attributeCollectionRelativeUrl": "String"
 }
 ```
