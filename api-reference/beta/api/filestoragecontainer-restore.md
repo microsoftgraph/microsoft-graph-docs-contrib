@@ -55,6 +55,7 @@ If successful, this action returns a `200 OK` response code and a [fileStorageCo
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.restore"

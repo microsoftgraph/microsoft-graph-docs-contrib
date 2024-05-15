@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the structure of active and deleted fileStorageContainer objects.
+Represents the structure of active and deleted [fileStorageContainer](../resources/filestoragecontainer.md) objects.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|containers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Collection of active fileStorageContainers|
-|deletedContainers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Collection of deleted fileStorageContainers|
+|containers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of active fileStorageContainers|
+|deletedContainers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of deleted fileStorageContainers|

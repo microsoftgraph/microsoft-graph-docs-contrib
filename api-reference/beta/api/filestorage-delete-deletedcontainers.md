@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently remove a [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection. Removing a file storage container with this API permanently removes it from the deleted container collection. Therefore, they can't be restored later. 
+Permanently remove a [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection. Removing a file storage container with this API permanently removes it from the deleted container collection. Therefore, it can't be restored later. 
 
 ## Permissions
 

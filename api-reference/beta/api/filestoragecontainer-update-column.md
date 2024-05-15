@@ -56,6 +56,7 @@ If successful, this method returns a `200 OK` response code and a [columnDefinit
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_columndefinition_for_fileStorageContainer"

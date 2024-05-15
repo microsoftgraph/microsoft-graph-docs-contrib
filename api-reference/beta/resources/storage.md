@@ -1,6 +1,6 @@
 ---
 title: "storage resource type"
-description: "Facilitates the structures of active and deleted fileStorageContainers"
+description: "Facilitates the structures of active and deleted fileStorageContainers."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"

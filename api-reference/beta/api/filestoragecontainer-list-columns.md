@@ -32,6 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /storageContainers/{containerId}/columns
 ```
@@ -60,6 +61,7 @@ The following example shows a request.
   "name": "list_columndefinition"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns
 ```
@@ -68,7 +70,9 @@ GET https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
