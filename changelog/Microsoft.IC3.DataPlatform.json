@@ -810,6 +810,14 @@
         },
         {
           "Id": "1db3f0eb-cd6b-43ce-8ad4-514193431a19",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/communicationsIdentitySet?view=graph-rest-1.0) resource.",
+          "Target": "communicationsIdentitySet"
+        },
+        {
+          "Id": "1db3f0eb-cd6b-43ce-8ad4-514193431a19",
           "ApiChange": "Property",
           "ChangedApiName": "participants",
           "ChangeType": "Deprecation",
