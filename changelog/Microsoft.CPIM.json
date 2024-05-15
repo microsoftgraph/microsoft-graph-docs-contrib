@@ -94,6 +94,38 @@
       "ChangeList": [
         {
           "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "authenticationEventsFlows",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationEventsFlows** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationEventsFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventsFlow?view=graph-rest-1.0) resource and its associated methods. Use this resource and its derived types and API operations to manage user flows in Microsoft Entra External ID in external tenants.",
+          "Target": "authenticationEventsFlow"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalUsersSelfServiceSignUpEventsFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalUsersSelfServiceSignUpEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/externalUsersSelfServiceSignUpEventsFlow?view=graph-rest-1.0) resource.",
+          "Target": "externalUsersSelfServiceSignUpEventsFlow"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionExternalUsersSelfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionExternalUsersSelfServiceSignUp?view=graph-rest-1.0) resource.",
+          "Target": "onAttributeCollectionExternalUsersSelfServiceSignUp"
+        },
+        {
+          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
           "ApiChange": "Enumeration",
           "ChangedApiName": "authenticationAttributeCollectionInputType",
           "ChangeType": "Addition",
@@ -139,14 +171,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [authenticationAttributeCollectionPageViewConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/authenticationAttributeCollectionPageViewConfiguration?view=graph-rest-1.0) resource.",
           "Target": "authenticationAttributeCollectionPageViewConfiguration"
-        },
-        {
-          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
-          "ApiChange": "Resource",
-          "ChangedApiName": "onAttributeCollectionExternalUsersSelfServiceSignUp",
-          "ChangeType": "Addition",
-          "Description": "Added the [onAttributeCollectionExternalUsersSelfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/onAttributeCollectionExternalUsersSelfServiceSignUp?view=graph-rest-1.0) resource.",
-          "Target": "onAttributeCollectionExternalUsersSelfServiceSignUp"
         },
         {
           "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
@@ -203,30 +227,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [onUserCreateStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onUserCreateStartHandler?view=graph-rest-1.0) resource.",
           "Target": "onUserCreateStartHandler"
-        },
-        {
-          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
-          "ApiChange": "Resource",
-          "ChangedApiName": "authenticationEventsFlow",
-          "ChangeType": "Addition",
-          "Description": "Added the [authenticationEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventsFlow?view=graph-rest-1.0) resource.",
-          "Target": "authenticationEventsFlow"
-        },
-        {
-          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
-          "ApiChange": "Resource",
-          "ChangedApiName": "externalUsersSelfServiceSignUpEventsFlow",
-          "ChangeType": "Addition",
-          "Description": "Added the [externalUsersSelfServiceSignUpEventsFlow](https://learn.microsoft.com/en-us/graph/api/resources/externalUsersSelfServiceSignUpEventsFlow?view=graph-rest-1.0) resource.",
-          "Target": "externalUsersSelfServiceSignUpEventsFlow"
-        },
-        {
-          "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "authenticationEventsFlows",
-          "ChangeType": "Addition",
-          "Description": "Added the **authenticationEventsFlows** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-1.0) resource.",
-          "Target": "identityContainer"
         },
         {
           "Id": "6473c9bd-9e7e-42b8-9d39-e74e1bec5cc5",
