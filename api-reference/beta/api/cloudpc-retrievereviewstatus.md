@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [cloudpcreviewstatus](..\resources\cloudpcreviewstatus.md) of a  Cloud PC.
+Get the [review status](..\resources\cloudpcreviewstatus.md) of a  Cloud PC.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /cloudPCs/{cloudPCId}/retrieveReviewStatus
 
 |Name        |Description         |
 |:---------- |:------------------ |
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudpcreviewstatus](../resources/cloudpcreviewstatus.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPcReviewStatus](../resources/cloudpcreviewstatus.md) object in the response body.
 
 ## Examples
 
@@ -53,8 +53,6 @@ If successful, this method returns a `200 OK` response code and a [cloudpcreview
 
 The following example shows a request.
 
-
-## HTTP
 <!-- {
   "blockType": "request",
   "name": "cloudpc.retrieveReviewStatus",
@@ -65,8 +63,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/retrieveReviewStatus
 ```
 
----
-
 ### Response
 
 The following example shows the response.
@@ -74,7 +70,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "string",
+  "@odata.type": "microsoft.graph.cloudPcReviewStatus",
 }
 -->
 
@@ -83,15 +79,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcReviewStatus",
-    "inReview": true,
-    "userAccessLevel": "restricted",
-    "reviewStartDateTime": "2021-06-23T09:18:32.8260335Z",
-    "restorePointDateTime": "2021-06-23T09:28:32.8260335Z",
-    "subscriptionId": "cb6ad4c4-8a17-4245-a644-e4436b1ee204",
-    "subscriptionName": "deschutes-INT-DR-test",
-    "azureStorageAccountId": "/subscriptions/cb6ad4c4-8a17-4245-a644-e4436b1ee204/resourceGroups/ReviewTest/providers/Microsoft.Storage/storageAccounts/reviewtransfer",
-    "azureStorageAccountName": "reviewtransfer",
-    "azureStorageContainerName": "container",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcReviewStatus",
+  "inReview": true,
+  "userAccessLevel": "restricted",
+  "reviewStartDateTime": "2021-06-23T09:18:32.8260335Z",
+  "restorePointDateTime": "2021-06-23T09:28:32.8260335Z",
+  "subscriptionId": "cb6ad4c4-8a17-4245-a644-e4436b1ee204",
+  "subscriptionName": "deschutes-INT-DR-test",
+  "azureStorageAccountId": "/subscriptions/cb6ad4c4-8a17-4245-a644-e4436b1ee204/resourceGroups/ReviewTest/providers/Microsoft.Storage/storageAccounts/reviewtransfer",
+  "azureStorageAccountName": "reviewtransfer",
+  "azureStorageContainerName": "container"
 }
 ```
