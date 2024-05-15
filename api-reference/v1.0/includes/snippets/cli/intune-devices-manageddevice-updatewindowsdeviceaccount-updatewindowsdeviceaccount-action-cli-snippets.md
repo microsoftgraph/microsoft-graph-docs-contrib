@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc device-management managed-devices update-windows-device-account post --managed-device-id {managedDevice-id} --body '{\
   "updateWindowsDeviceAccountActionParameter": {\
     "@odata.type": "microsoft.graph.updateWindowsDeviceAccountActionParameter",\
