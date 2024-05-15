@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "ignored"
 }
 -->
 
@@ -55,7 +55,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "cloudpc.retrieveReviewStatus",
+  "name": "cloudpc.retrieveReviewStatus"
 }
 -->
 
@@ -70,7 +70,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcReviewStatus",
+  "@odata.type": "microsoft.graph.cloudPcReviewStatus"
 }
 -->
 
