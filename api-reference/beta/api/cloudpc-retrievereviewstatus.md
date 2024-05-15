@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [review status](..\resources\cloudpcreviewstatus.md) of a  Cloud PC.
+Get the [review status](..\resources\cloudpcreviewstatus.md) of a Cloud PC.
 
 ## Permissions
 
