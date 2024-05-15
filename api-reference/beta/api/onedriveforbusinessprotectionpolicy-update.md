@@ -1,5 +1,5 @@
 ---
-title: "oneDriveForBusinessProtectionPolicy: Update"
+title: "Update oneDriveForBusinessProtectionPolicy"
 description: "Updates the Protection Policy for a M365 service OneDrive"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds/removes [driveprotectionunit](../resources/driveprotectionunit.md) to [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object.
+Updates the Protection Policy for a M365 service OneDrive. Adds/removes [driveprotectionunit](../resources/driveprotectionunit.md) to [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
-To remove, specify the @removed annotation in the request body for the respective protection unit together with the driveProtectionUnit.Id.
+To remove, specify the @removed annotation in the request body for the respective protection unit together with the Id of the [driveprotectionunit](../resources/driveprotectionunit.md).
 
 ## Permissions
 
@@ -25,7 +25,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "onedriveforbusinessprotectionpolicy-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-update-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-create-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -53,7 +58,7 @@ PATCH /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveFo
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) in the response body.
 
 ## Examples
 
@@ -75,6 +80,7 @@ Odata-Version: 4.0
   "driveProtectionUnits@delta": [
     {
       "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
+    }
     {
       "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
@@ -93,7 +99,6 @@ Odata-Version: 4.0
   ]
 }
 ```
-
 
 ### Response
 
@@ -217,4 +222,3 @@ Odata–Version: 4.0
   ]
 }
 ```
-

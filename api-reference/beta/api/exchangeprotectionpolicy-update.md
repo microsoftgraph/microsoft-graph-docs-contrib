@@ -1,5 +1,5 @@
 ---
-title: "exchangeProtectionPolicy: Update"
+title: "Update exchangeProtectionPolicy"
 description: "Updates the Protection Policy for a M365 service Exchange"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds/removes [mailboxprotectionunit](../resources/mailboxprotectionunit.md) to [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object.
+Updates the Protection Policy for a M365 service Exchange. Adds/removes [mailboxprotectionunit](../resources/mailboxprotectionunit.md) to [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
-To remove, specify the @removed annotation in the request body for the respective protection unit together with the mailboxProtectionUnit.Id. [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object.
+To remove, specify the @removed annotation in the request body for the respective Protection Unit together with the Id of the [mailboxprotectionunit](../resources/mailboxprotectionunit.md).
 
 ## Permissions
 
@@ -26,7 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "exchangeprotectionpolicy-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-update-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-create-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -54,7 +59,7 @@ PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPol
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) in the response body.
 
 ## Examples
 

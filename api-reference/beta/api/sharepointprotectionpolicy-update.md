@@ -1,5 +1,5 @@
 ---
-title: "sharePointProtectionPolicy: Update"
+title: "Update sharePointProtectionPolicy"
 description: "Updates the Protection Policy for a M365 service SharePoint Online"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds/removes [siteprotectionunit](../resources/siteprotectionunit.md) to [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object.
+Updates the Protection Policy for a M365 service SharePoint Online. Adds/removes [siteprotectionunit](../resources/siteprotectionunit.md) to [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
-To remove, specify the @removed annotation in the request body for the respective protection unit together with the siteProtectionUnit.Id. [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object.
+To remove, specify the @removed annotation in the request body for the respective Protection Unit together with the Id of the [siteprotectionunit](../resources/siteprotectionunit.md).
 
 ## Permissions
 
@@ -25,7 +25,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "sharepointprotectionpolicy-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-update-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-create-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -49,11 +54,11 @@ PATCH /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectio
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/sharepointprotectionpolicy.md)|
-|siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the mailboxProtectionUnit to be added/removed to the sharePointProtectionPolicy.|
+|siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnit to be added/removed to the sharePointProtectionPolicy.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) in the response body.
 
 ## Examples
 
@@ -110,7 +115,6 @@ Odata-Version: 4.0
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -327,4 +331,3 @@ Odata–Version: 4.0
   ]
 }
 ```
-
