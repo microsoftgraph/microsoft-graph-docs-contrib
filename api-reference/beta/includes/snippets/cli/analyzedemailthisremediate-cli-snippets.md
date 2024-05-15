@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta security collaboration analyzed-emails microsoft-graph-security-remediate post --body '{\
     "displayName": "Clean up Phish email",\
     "description": "Delete email",\
