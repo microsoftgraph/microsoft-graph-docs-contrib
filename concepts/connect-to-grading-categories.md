@@ -14,7 +14,7 @@ Teachers can use grading categories to weight assignments in the class grade. Fo
 
 Assignments contribute to a grade based on their point values and the weight assigned to the grading category. For example, in a class with two assignments in a grading category that represents 50% of the grade, if the first assignment has 10 points, and the second has 40 points, the assignments contribute 5% and 20% to the total grade.
 
-Grading categories are defined on the class's settings. Every assignment that contributes to the final average grade needs to have a grading category. The total weights of grading categories must always add up to 100 during create, update, or delete operations. 
+Grading categories are defined in the settings of a class. Every assignment that contributes to the final average grade must have a grading category applied. The weights of the grading categories for a class must add up to 100 during create, update, or delete operations. 
 
 > [!NOTE]
 > You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
