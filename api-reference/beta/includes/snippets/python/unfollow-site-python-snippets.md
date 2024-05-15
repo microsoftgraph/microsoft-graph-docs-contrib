@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.remove_post_request_body import RemovePostRequestBody
+from msgraph.generated.users.item.followedsites.remove.remove_post_request_body import RemovePostRequestBody
 from msgraph.generated.models.site import Site
 
 graph_client = GraphServiceClient(credentials, scopes)

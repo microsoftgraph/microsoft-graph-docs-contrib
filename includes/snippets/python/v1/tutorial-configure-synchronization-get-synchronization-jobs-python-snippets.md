@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.servicePrincipals.item.synchronization.jobs.jobs_request_builder import JobsRequestBuilder
+from msgraph.generated.service_principals.item.synchronization.jobs.jobs_request_builder import JobsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

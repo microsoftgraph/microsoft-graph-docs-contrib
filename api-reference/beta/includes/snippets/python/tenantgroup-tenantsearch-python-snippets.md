@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.tenant_search_post_request_body import TenantSearchPostRequestBody
+from msgraph.generated.tenantrelationships.managedtenants.tenantgroups.microsoft_graph_managed_tenants_tenant_search.tenant_search_post_request_body import TenantSearchPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

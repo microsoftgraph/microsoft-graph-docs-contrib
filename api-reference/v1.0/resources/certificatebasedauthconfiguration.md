@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.keywords: [ CBA ]
 ---
 
 # certificateBasedAuthConfiguration resource type

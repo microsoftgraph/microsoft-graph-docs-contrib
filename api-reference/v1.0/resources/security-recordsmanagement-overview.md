@@ -16,7 +16,7 @@ Many organizations need to manage their data to comply with industry regulations
 
 You can use [retention labels](security-retentionlabel.md) to configure retention and deletion settings for Microsoft 365 content. For example, you can set retention periods from when the content was labeled and you can set disposition review as the action at the end of the retention period. 
 
-In addition, you can use [file plan descriptors](security-fileplandescriptor.md) to supplement a retention label and improve the manageability and organization of Microsoft 365 content. Examples of file plan descriptors include [authority](security-authority.md), [citation](security-citation.md), and [department](security-department.md).
+In addition, you can use [file plan descriptors](security-fileplandescriptor.md) to supplement a retention label and improve the manageability and organization of Microsoft 365 content. Examples of file plan descriptors include [authority](security-fileplanauthority.md), [citation](security-fileplancitation.md), and [department](security-fileplandepartment.md).
 
 ## Trigger events for an existing label
 Some scenarios require starting a retention period for certain documents upon a specific event, such as an employee leaving an organization, a contract expiring, or the fiscal year ending. 

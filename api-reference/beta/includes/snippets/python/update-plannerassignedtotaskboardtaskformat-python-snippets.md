@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.planner.tasks.item.assignedToTaskBoardFormat.assigned_to_task_board_format_request_builder import AssignedToTaskBoardFormatRequestBuilder
+from msgraph.generated.planner.tasks.item.assigned_to_task_board_format.assigned_to_task_board_format_request_builder import AssignedToTaskBoardFormatRequestBuilder
 from msgraph.generated.models.planner_assigned_to_task_board_task_format import PlannerAssignedToTaskBoardTaskFormat
 from msgraph.generated.models.planner_order_hints_by_assignee import PlannerOrderHintsByAssignee
 

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelsidentitygovernance.NewCustomTaskExtension()
 displayName := "Grant manager access to mailbox and OneDrive"
@@ -32,18 +32,17 @@ requestBody.SetEndpointConfiguration(endpointConfiguration)
 authenticationConfiguration := graphmodels.NewAzureAdPopTokenAuthentication()
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 clientConfiguration := graphmodels.NewCustomExtensionClientConfiguration()
+maximumRetries := int32(1)
+clientConfiguration.SetMaximumRetries(&maximumRetries) 
 timeoutInMilliseconds := int32(1000)
 clientConfiguration.SetTimeoutInMilliseconds(&timeoutInMilliseconds) 
-additionalData := map[string]interface{}{
-	"maximumRetries" : int32(1) , 
-}
-clientConfiguration.SetAdditionalData(additionalData)
 requestBody.SetClientConfiguration(clientConfiguration)
 callbackConfiguration := graphmodelsidentitygovernance.NewCustomTaskExtensionCallbackConfiguration()
 timeoutDuration , err := abstractions.ParseISODuration("PT20M")
 callbackConfiguration.SetTimeoutDuration(&timeoutDuration) 
 requestBody.SetCallbackConfiguration(callbackConfiguration)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 customTaskExtensions, err := graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensions().ByCustomTaskExtensionId("customTaskExtension-id").Patch(context.Background(), requestBody, nil)
 
 

@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.drives.item.items.item.workbook.closeSession.close_session_request_builder import CloseSessionRequestBuilder
-from msgraph.generated.models.close_session_post_request_body import CloseSessionPostRequestBody
+from msgraph.generated.drives.item.items.item.workbook.close_session.close_session_request_builder import CloseSessionRequestBuilder
+from msgraph.generated.drives.item.items.item.workbook.close_session.close_session_post_request_body import CloseSessionPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

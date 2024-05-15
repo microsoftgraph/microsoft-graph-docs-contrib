@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.users.item.security.informationProtection.sensitivityLabels.microsoft.graph.security.evaluateRemoval.evaluate_removal_request_builder import EvaluateRemovalRequestBuilder
-from msgraph.generated.models.evaluate_removal_post_request_body import EvaluateRemovalPostRequestBody
+from msgraph.generated.users.item.security.information_protection.sensitivity_labels.microsoft.graph.security.evaluate_removal.evaluate_removal_request_builder import EvaluateRemovalRequestBuilder
+from msgraph.generated.users.item.security.informationprotection.sensitivitylabels.microsoft_graph_security_evaluate_removal.evaluate_removal_post_request_body import EvaluateRemovalPostRequestBody
 from msgraph.generated.models.content_info import ContentInfo
 from msgraph.generated.models.key_value_pair import KeyValuePair
 from msgraph.generated.models.downgrade_justification import DowngradeJustification

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.onPremisesPublishingProfiles.item.on_premises_publishing_profile_item_request_builder import OnPremisesPublishingProfileItemRequestBuilder
+from msgraph.generated.on_premises_publishing_profiles.item.on_premises_publishing_profile_item_request_builder import OnPremisesPublishingProfileItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
