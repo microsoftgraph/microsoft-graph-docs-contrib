@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.assign_post_request_body import AssignPostRequestBody
+from msgraph.generated.deviceappmanagement.managedebooks.item.assign.assign_post_request_body import AssignPostRequestBody
 from msgraph.generated.models.managed_e_book_assignment import ManagedEBookAssignment
 from msgraph.generated.models.all_licensed_users_assignment_target import AllLicensedUsersAssignmentTarget
 

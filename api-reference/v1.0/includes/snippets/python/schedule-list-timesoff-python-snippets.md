@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.teams.item.schedule.timesOff.times_off_request_builder import TimesOffRequestBuilder
+from msgraph.generated.teams.item.schedule.times_off.times_off_request_builder import TimesOffRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

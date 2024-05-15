@@ -30,7 +30,7 @@ Represents information about a presenter of a virtual event.
 |:---|:---|:---|
 |email|String|Email address of the presenter.|
 |id|String|Unique identifier of the presenter. Inherited from [entity](../resources/entity.md).|
-|identity|[identity](../resources/identity.md)|Identity information of the presenter. The supported identites are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+|identity|[identity](../resources/identity.md)|Identity information of the presenter. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 |presenterDetails|[virtualEventPresenterDetails](../resources/virtualeventpresenterdetails.md)|Other detail information of the presenter.|
 
 ## JSON representation

@@ -20,7 +20,7 @@ $requestBody->setWebUrl('http://www.contoso.com/');
 $requestBody->setDescription('Try or buy Contoso for Home or Business and view product information');
 $keywords = new AnswerKeyword();
 $keywords->setKeywords(['Contoso', 'install', 	]);
-$keywords->setReservedKeywords(['Contoso', 	]);
+$keywords->setReservedKeywords(['Unique keyword', 	]);
 $keywords->setMatchSimilarKeywords(true);
 $requestBody->setKeywords($keywords);
 $requestBody->setAvailabilityStartDateTime(null);

@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Represents a _set_ of optional file plan descriptors to supplement a [retention label](security-retentionlabel.md) and improve the manageability and organization of Microsoft 365 content.
 
-You can add a descriptor by using the POST operation of the corresponding file plan descriptor _template_, and specifying data for the descriptor. For example, to include a [citation](security-citation.md) descriptor, use the [create citationTemplate](../api/security-labelsroot-post-citations.md) operation. Similarly, you can use the GET or DELETE operations on the template resource for the descriptor.
+You can add a descriptor by using the POST operation of the corresponding file plan descriptor _template_, and specifying data for the descriptor. For example, to include a [filePlanCitation](security-fileplancitation.md) descriptor, use the [create citationTemplate](../api/security-labelsroot-post-citations.md) operation. Similarly, you can use the GET or DELETE operations on the template resource for the descriptor.
 
 To list the descriptors that supplement a retention label, use the [GET](../api/security-retentionlabel-get.md) operation on that [retentionLabel](security-retentionlabel.md) resource and  apply `$expand` on the **descriptors** relationship.
 
@@ -30,10 +30,10 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authority|[microsoft.graph.security.authority](../resources/security-authority.md)|Represents the file plan descriptor of type authority applied to a particular retention label.|
-|appliedcategory|[microsoft.graph.security.appliedCategory](../resources/security-appliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention label.|
-|citation|[microsoft.graph.security.citation](../resources/security-citation.md)|Represents the file plan descriptor of type citation applied to a particular retention label.|
-|department|[microsoft.graph.security.department](../resources/security-department.md)|Represents the file plan descriptor of type department applied to a particular retention label.|
+|authority|[microsoft.graph.security.filePlanAuthority](../resources/security-fileplanauthority.md)|Represents the file plan descriptor of type authority applied to a particular retention label.|
+|appliedCategory|[microsoft.graph.security.filePlanAppliedCategory](../resources/security-fileplanappliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention label.|
+|citation|[microsoft.graph.security.filePlanCitation](../resources/security-fileplancitation.md)|Represents the file plan descriptor of type citation applied to a particular retention label.|
+|department|[microsoft.graph.security.filePlanDepartment](../resources/security-fileplandepartment.md)|Represents the file plan descriptor of type department applied to a particular retention label.|
 |filePlanReference|[microsoft.graph.security.filePlanReference](../resources/security-fileplanreference.md)|Represents the file plan descriptor of type filePlanReference applied to a particular retention label.  |
 
 
@@ -61,16 +61,16 @@ Here's a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.filePlanDescriptor",
   "id": "String (identifier)",
   "authority": {
-    "@odata.type": "microsoft.graph.security.authority"
+    "@odata.type": "microsoft.graph.security.filePlanAuthority"
   },
   "category": {
-    "@odata.type": "microsoft.graph.security.appliedCategory"
+    "@odata.type": "microsoft.graph.security.filePlanAppliedCategory"
   },
   "citation": {
-    "@odata.type": "microsoft.graph.security.citation"
+    "@odata.type": "microsoft.graph.security.filePlanCitation"
   },
   "department": {
-    "@odata.type": "microsoft.graph.security.department"
+    "@odata.type": "microsoft.graph.security.filePlanDepartment"
   },
   "filePlanReference": {
     "@odata.type": "microsoft.graph.security.filePlanReference"
