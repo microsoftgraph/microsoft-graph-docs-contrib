@@ -12,7 +12,7 @@ This article provides guidance on setting up and using the grading categories fo
 
 Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from homework assignments and 40% from test assignments.
 
-Assignments contribute to their grading category in proportion to their point values, and their grading category modifies their contribution to the final grade. For example, consider a class with two assignments in a grading category that contributes 50% of the class grade. If the first assignment has 10 points, and the second has 40 points, then the assignments contribute 5% and 20%, respectively, to the total grade.
+Assignments contribute to a grade based on their point values and the weight assigned to the grading category. For example, in a class with two assignments in a grading category that represents 50% of the grade, if the first assignment has 10 points, and the second has 40 points, the assignments contribute 5% and 20% to the total grade.
 
 Grading categories are defined on the class's settings. Every assignment that contributes to the final average grade needs to have a grading category. The total weights of grading categories must always add up to 100 during create, update, or delete operations. 
 
