@@ -3141,7 +3141,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List invitedBy",
           "ChangeType": "Addition",
-          "Description": "Added the **List invitedBy** method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the [List invitedBy](https://learn.microsoft.com/en-us/graph/api/user-list-invitedby?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
