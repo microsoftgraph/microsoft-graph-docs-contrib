@@ -292,6 +292,8 @@ items:
       href: toolkit/permissions.md
     - name: Upgrade to the latest version
       href: toolkit/upgrade.md
+  - name: Deploy with Bicep
+    href: /graph/templates?context=graph/context
 - name: Services and features
   expanded: true
   items:
