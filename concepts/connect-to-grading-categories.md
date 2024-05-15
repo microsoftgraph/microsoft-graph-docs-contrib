@@ -306,7 +306,7 @@ HTTP/1.1 204 No Content
 
 ## Error while Delete grading category using Delta Payload
 
-When you try to delete a grading category using the delta payload without replacing it with other grading category to make the sum of all grading categories to 100, the error displayed in response is shown in this section.
+When you try to delete a grading category by using the delta payload without replacing it with another grading category to keep the total of all categories to 100, the call results in an error, as shown in the following example.
 
 > **Note**: When you delete a grading category, the assignments with the grading category continue to contribute to the final grade as if the category were present, but teachers will not be able to assign the deleted grading category to other assignments.
 
