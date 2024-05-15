@@ -37,7 +37,7 @@ Represents a location where multiple users or a group of users can store files a
 
 |Property|Type|Description|
 |:---|:---|:---|
-|containerTypeId|Guid|Container type ID of the fileStorageContainer. Each container must have only one container type. Read-only.|
+|containerTypeId|Guid|Container type ID of the fileStorageContainer. For details about container types, see [Container Types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). Each container must have only one container type. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of the fileStorageContainer creation. Read-only.|
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the **fileStorageContainer**. Read-write.|
 |description|String|Provides a user-visible description of the **fileStorageContainer**. Read-write.|
