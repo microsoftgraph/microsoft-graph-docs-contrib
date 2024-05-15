@@ -51,11 +51,11 @@ The following table shows the properties that you can configure when you create 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|attributeSet|String|Name of the attribute set. Case insensitive. Required.|
+|attributeSet|String|Name of the attribute set. Case sensitive. Required.|
 |description|String|Description of the custom security attribute. Can be up to 128 characters long and include Unicode characters. Can't contain spaces or special characters. Can be changed later. Optional.|
 |isCollection|Boolean|Indicates whether multiple values can be assigned to the custom security attribute. Can't be changed later. If **type** is set to `Boolean`, **isCollection** can't be set to `true`. Required.|
 |isSearchable|Boolean|Indicates whether custom security attribute values are indexed for searching on objects that are assigned attribute values. Can't be changed later. Required.|
-|name|String|Name of the custom security attribute. Must be unique within an attribute set. Can be up to 32 characters long and include Unicode characters. Can't contain spaces or special characters. Can't be changed later. Case insensitive. Required.|
+|name|String|Name of the custom security attribute. Must be unique within an attribute set. Can be up to 32 characters long and include Unicode characters. Can't contain spaces or special characters. Can't be changed later. Case sensitive. Required.|
 |status|String|Specifies whether the custom security attribute is active or deactivated. Acceptable values are `Available` and `Deprecated`. Can be changed later. Required.|
 |type|String|Data type for the custom security attribute values. Supported types are: `Boolean`, `Integer`, and `String`. Can't be changed later. Required.|
 |usePreDefinedValuesOnly|Boolean|Indicates whether only predefined values can be assigned to the custom security attribute. If set to `false`, free-form values are allowed. Can later be changed from `true` to `false`, but can't be changed from `false` to `true`. If **type** is set to `Boolean`, **usePreDefinedValuesOnly** can't be set to `true`. Required.|

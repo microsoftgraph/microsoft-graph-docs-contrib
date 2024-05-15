@@ -18,6 +18,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## May 2024: New in preview only
 
+### Identity and access | Identity and sign-in
+
+- Use the [externalAuthenticationMethodConfiguration resource type](/graph/api/resources/externalAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true) and its associated methods to manage the configuration of external authentication methods and define users who can use the external authentication methods to satisfy the second factor of Microsoft Entra ID multifactor authentication requirements.
+- Added API operations to retrieve or update keys in an Azure AD B2C Identity Experience Framework (IEF) policy through the new [trustFrameworkKey_v2 resource type](/graph/api/resources/trustframeworkkey_v2?view=graph-rest-beta&preserve-view=true) and its associated methods.
+
+### Search
+
+Use the **includeHiddenContent** property on the [sharePointOneDriveOptions](/graph/api/resources/sharepointonedriveoptions?view=graph-rest-beta&preserve-view=true) resource to include hidden content, such as archived content and SharePoint Embedded (RaaS), in search results.
+
 ### Teamwork and communications | Calls and online meetings
 
 [Get](/graph/api/virtualeventwebinarregistrationconfiguration-get?view=graph-rest-beta&preserve-view=true) information about a [webinar registration configuration](/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta&preserve-view=true).
@@ -141,6 +150,6 @@ Are there scenarios you'd like Microsoft Graph to support?
 - [Join](https://ux.microsoft.com/Panel/M365Devs?utm_source=graphDocs) our research panel to provide your input on our developer experiences.
 
 ## Related content
-- [Microsoft Graph developer blog](https://devblogs.microsoft.com/microsoft365dev/category/microsoft-graph/)
+- [Microsoft Graph developer blog](https://devblogs.microsoft.com/microsoft365dev/category/microsoft-graph/).
 - [Microsoft Graph API changelog](https://developer.microsoft.com/graph/changelog/).
 - [Microsoft Graph what's new history](whats-new-earlier.md).
