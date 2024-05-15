@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the abstract base type for the all resource types in the [profile](profile.md) entity set.
+Represents the abstract base type for all resource types in the [profile](profile.md) entity set.
 
 ## Properties
 |Property|Type|Description|
