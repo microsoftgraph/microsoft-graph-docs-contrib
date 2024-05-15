@@ -101,7 +101,7 @@ The following JSON representation shows the resource type.
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "exportCriteria":  {"@odata.type": "microsoft.graph.security.exportCriteria"},
+  "exportCriteria": "String",
   "exportFileMetadata": [{"@odata.type": "microsoft.graph.security.ediscoveryExportFileMetadata"}],
   "exportFormat": "String",
   "exportLocation": "String",
