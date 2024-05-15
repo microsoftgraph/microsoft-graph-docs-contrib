@@ -157,7 +157,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorage",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorage](https://learn.microsoft.com/en-us/graph/api/resources/filestorage?view=graph-rest-beta) resource",
+          "Description": "Added the [fileStorage](https://learn.microsoft.com/en-us/graph/api/resources/filestorage?view=graph-rest-beta) resource.",
           "Target": "fileStorage"
         },
         {
@@ -181,7 +181,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "storage",
           "ChangeType": "Addition",
-          "Description": "Added the [storage] (https://learn.microsoft.com/en-us/graph/api/resources/storage?view=graph-rest-beta) resource",
+          "Description": "Added the [storage] (https://learn.microsoft.com/en-us/graph/api/resources/storage?view=graph-rest-beta) resource.",
           "Target": "storage"
         }
       ],
