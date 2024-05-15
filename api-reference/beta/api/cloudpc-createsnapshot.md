@@ -1,9 +1,9 @@
 ---
-title: "cloudPC: create snapshot"
-description: "Create snapshot for a specific Cloud PC device with CloudPC ID."
+title: "cloudPC: createSnapshot"
+description: "Create snapshot for a specific Cloud PC device using the CloudPC ID."
 author: "Jiaer Huang"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create snapshot for a specific Cloud PC device with CloudPC ID.
+Create snapshot for a specific Cloud PC device using the CloudPC ID.
 
 ## Permissions
 
@@ -50,22 +50,24 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Examples
 
 ### Request
 
-## HTTP
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "cloudpc_createSnapshot"
 }
 -->
-
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}/createSnapshot
 ```
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
