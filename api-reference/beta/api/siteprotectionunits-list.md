@@ -1,6 +1,6 @@
 ---
 title: "List siteProtectionUnits"
-description: "List siteProtectionUnits"
+description: "List all Site Protection Units"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [siteProtectionUnit](../resources/siteprotectionunit.md) object.
+List all Site Protection Units. Read the properties and relationships of a [siteProtectionUnit](../resources/siteprotectionunit.md).
 
 ## Permissions
 
@@ -24,7 +24,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "siteprotectionunits-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/siteprotectionunits-list-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/siteprotectionunits-list-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -53,20 +58,20 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [siteProtectionUnit](../resources/siteprotectionunit.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [siteProtectionUnit](../resources/siteprotectionunit.md) in the response body.
 
 ## Examples
 
 ### Example 1
 
-List siteProtectionUnits under a sharePointProtectionPolicy
+List siteProtectionUnits under a sharePointProtectionPolicy.
 
 #### Request
 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_siteprotectionunit"
+  "name": "list_siteprotectionunit"
 }
 -->
 ``` http
@@ -270,14 +275,14 @@ Odata–Version: 4.0
 
 ### Example 2
 
-List all siteProtectionUnits in a tenant
+List all siteProtectionUnits in a tenant.
 
 #### Request
 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_siteprotectionunit"
+  "name": "list_all_siteprotectionunit"
 }
 -->
 ``` http
@@ -302,7 +307,7 @@ Content–Type: application / json
 Odata–Version: 4.0
 
 {
-  "@odata.nextLink": "/solutions/backupRestore/siteProtectionUnits?skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "@odata.nextLink": "/solutions/backupRestore/siteProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
   "values": [
     {
       "@odata.type": "#microsoft.graph.siteProtectionUnit",

@@ -1,6 +1,6 @@
 ---
 title: "Delete protectionPolicyBase"
-description: "Delete protectionPolicyBase by Id"
+description: "Delete a Protection Policy"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storge"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.
+Delete a Protection Policy. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
 ## Permissions
 
@@ -23,7 +23,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "protectionpolicybase-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-delete-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-delete-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 

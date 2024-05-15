@@ -1,6 +1,6 @@
 ---
 title: "Get protectionPolicyBase"
-description: "Get protectionPolicyBase by Id"
+description: "Get a Protection Policy by Id"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storge"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.
+Get a Protection Policy by Id. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
 ## Permissions
 
@@ -23,7 +23,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "protectionpolicybase-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-get-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-get-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -127,4 +132,3 @@ Odata–Version: 4.0
    ]
 }
 ```
-

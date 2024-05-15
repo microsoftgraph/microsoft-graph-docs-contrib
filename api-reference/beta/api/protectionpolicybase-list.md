@@ -1,6 +1,6 @@
 ---
 title: "List protectionPolicyBase"
-description: "List all protectionPolicies in a tenant"
+description: "List all the Protection Policies available in a tenant."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the protectionPolicies available in a tenant.
-Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md) object.
+List all the Protection Policies available in a tenant.
+Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
 ## Permissions
 
@@ -25,7 +25,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "protectionpolicybase-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-list-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-list-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -53,7 +58,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [protectionPolicyBase](../resources/protectionpolicybase.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [protectionPolicyBase](../resources/protectionpolicybase.md) in the response body.
 
 ## Examples
 
@@ -213,4 +218,3 @@ Odata–Version: 4.0
   ]
 }
 ```
-

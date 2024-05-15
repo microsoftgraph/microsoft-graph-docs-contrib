@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "onedriveforbusinessprotectionpolicy-create-permissions"
 }
 -->
-<!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-create-permissions.md)]-->
+<!--[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-create-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|

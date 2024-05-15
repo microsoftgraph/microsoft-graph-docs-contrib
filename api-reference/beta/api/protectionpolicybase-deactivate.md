@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deactive a Protection Policy
+Deactivate a Protection Policy.
 
 ## Permissions
 
@@ -24,7 +24,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "protectionpolicybase-deactivate-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-deactivate-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-deactivate-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -54,7 +59,7 @@ If successful, this action returns a `202 Accepted` response code and a [protect
 
 ### Example 1
 
-Deactivating the policy when it is in active state.
+Deactivating the Protection Policy when it is in active state.
 
 #### Request
 
@@ -132,7 +137,7 @@ Content-Location: /solutions/backupRestore/ProtectionPolicies('61633878-8321-495
 ```
 ### Example 2
 
-Deactivating the policy when it is in updating state.
+Deactivating the Protection Policy when it is in updating state.
 
 #### Request
 

@@ -1,6 +1,6 @@
 ---
 title: "List mailboxProtectionUnits"
-description: "List mailboxProtectionUnits"
+description: "List all Mailbox Protection Units"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [mailboxProtectionUnit](../resources/mailboxprotectionunit.md).
+List all Mailbox Protection Units. Read the properties and relationships of a [mailboxProtectionUnit](../resources/mailboxprotectionunit.md).
 
 ## Permissions
 
@@ -24,7 +24,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "mailboxprotectionunits-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/mailboxprotectionunits-list-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/mailboxprotectionunits-list-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -53,7 +58,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [mailboxProtectionUnit](../resources/mailboxprotectionunit.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [mailboxProtectionUnit](../resources/mailboxprotectionunit.md) in the response body.
 
 ## Examples
 
@@ -275,7 +280,7 @@ List all mailboxProtectionUnits in a tenant.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_mailboxprotectionunit"
+  "name": "list_all_mailboxprotectionunit"
 }
 -->
 ``` http
