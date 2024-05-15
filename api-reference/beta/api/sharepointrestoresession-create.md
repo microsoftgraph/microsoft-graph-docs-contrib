@@ -57,7 +57,7 @@ You can specify the following properties when creating a **sharePointRestoreSess
 
 |Property|Type|Description|
  |:---|:---|:---|
- |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|
+ |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of [siteRestoreArtifact](../resources/siterestoreartifact.md)|
 <!--|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 |createdDateTime|DateTimeOffset|DateTimeOffset|The time of completion of the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
 |createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The identity of person who created the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
@@ -115,21 +115,33 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.backupRestore.sharePointRestoreSession",
-  "id": "1f1d563f-95ed-72e3-9096-998291f6e0f7",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
+  "@odata.context": " /solutions/backupRestore/$metadata#restoreSessions/$entity",
+  "@odata.id": "/solutions/backupRestore/sharepointRestoreSessions(61633878-8321-4950-bfaf-ed285bdd1461)",
+  "@odata.type": "#microsoft.graph.sharepointRestoreSession",
+  "id": "61633878-8321-4950-bfaf-ed285bdd1461",
+  "status": "activating",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "ABC"
+    }
   },
-  "completedDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
+  "createdDateTime": "2015-06-19T12-01-03.45Z",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "DEF"
+    }
   },
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "lastModifiedDateTime": "2015-06-19T12-01-03.45Z"
 }
 ```
 

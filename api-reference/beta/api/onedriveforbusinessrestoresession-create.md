@@ -58,7 +58,7 @@ You can specify the following properties when creating an **oneDriveForBusinessR
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|driveRestoreArtifacts|[driveRestoreArtifact collection](../resources/driverestoreartifact.md)|
+|driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Collection of [driveRestoreArtifact](../resources/driverestoreartifact.md)|
 <!-- |id|String|The unique identifier of the restore session created|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the restore session.|
@@ -118,21 +118,32 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.backupRestore.oneDriveForBusinessRestoreSession",
-  "id": "aa8db46c-ccb9-5144-8553-76ad7939fa74",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
+  "@odata.context": "/solutions/backupRestore/$metadata#oneDriveForBusinessRestoreSession/$entity",
+  "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
+  "status": "draft",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "ABC"
+    }
   },
-  "completedDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
+  "createdDateTime": "2023-03-30T12-01-03.45Z",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "DEF"
+    }
   },
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+  "error": null
 }
 ```
 
