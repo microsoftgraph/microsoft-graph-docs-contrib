@@ -1,19 +1,20 @@
 ---
 title: "Create siteInclusionRules"
-description: "Create siteProtectionRules in a SharePointProtectionPolicy."
+description: "Create Site Inclusion Rules in a SharePoint Protection Policy."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Get siteProtectionRule
+# Create siteInclusionRules
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [siteProtectionRule](../resources/siteprotectionrule.md) object.
+Create a [siteInclusionRule](../resources/siteprotectionrule.md) in a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
 
 ## Permissions
 
@@ -24,7 +25,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "sharepointprotectionpolicy-create-siteinclusionrule-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-create-siteinclusionrule-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-create-siteinclusionrule-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+
 
 ## HTTP request
 
@@ -61,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a [siteProt
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_sharepointprotectionpolicy_siteinclusionrule"
+  "name": "sharepointprotectionpolicy_create_siteinclusionrules"
 }
 -->
 ``` http

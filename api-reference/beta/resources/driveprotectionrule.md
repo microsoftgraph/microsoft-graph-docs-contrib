@@ -31,7 +31,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the protection rule associated with the policy.|
-|createdBy|[identitySet](../resources/identityset.md)entitySet|The identity of the person who created the rule.|
+|createdBy|[identitySet](../resources/identityset.md) entitySet|The identity of the person who created the rule.|
 |createdDateTime|DateTimeOffset|The date and time that the rule was created.|
 |driveExpression|String|Contains drive expression.[driveExpression example](../resources/driveprotectionrule.md#driveExpression-examples)|
 |error|[publicError](../resources/publicerror.md)|Error details will be populated here, if any operation on rule expression fails|

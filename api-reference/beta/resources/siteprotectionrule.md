@@ -42,7 +42,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 
  ### siteExpression examples
 The site expression can be of following formats.
-| Property                                 | Operator   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                                | Example                                                                  |
+| Property                                 | Operator                                | Example                                                                  |
 | ------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------- |
 | `displayName`      | `-contains` |   `((displayName -contains 'Finance') -or (displayName -contains 'Legal'))`  |
 | `lastModifiedDateTime` | `-ge` |    `(((displayName -contains 'Finance') -or (webUrl -contains 'Legal')) -and (lastModifiedDateTime -ge '2024-02-26T11:36:20Z'))`   |   
