@@ -818,6 +818,14 @@
         },
         {
           "Id": "1db3f0eb-cd6b-43ce-8ad4-514193431a19",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [userIdentity](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-userIdentity?view=graph-rest-1.0) resource.",
+          "Target": "userIdentity"
+        },
+        {
+          "Id": "1db3f0eb-cd6b-43ce-8ad4-514193431a19",
           "ApiChange": "Property",
           "ChangedApiName": "participants",
           "ChangeType": "Deprecation",
