@@ -23,7 +23,7 @@ Grading categories are defined in the settings of a class. Every assignment that
 
 A class is a group of students and teachers who share assignments and feedback. You get the list of classes from your education tenant. Then, you can locate the class where you want to set grading categories on assignments.
 
-- [List Classes](/graph/api/educationclass-list): List the classes, so that you can find the one you want and copy the class's ID.
+To get a list of the classes in your tenant, see [List classes](/graph/api/educationclass-list).
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes
