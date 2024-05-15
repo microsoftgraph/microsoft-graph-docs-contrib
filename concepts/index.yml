@@ -27,7 +27,7 @@ highlightedContent:
       url: /graph/connecting-external-content-experiences#copilot-for-microsoft-365
     - title: NEW! Deploy with Bicep
       itemType: deploy
-      url: /graph/overview
+      url: /graph/templates/
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -110,7 +110,7 @@ tools:
      # Card
     - title: Bicep templates
       imageSrc: ./images/hub/icon02-quickstart.svg
-      url: /graph/overview
+      url: /graph/templates/
 
 additionalContent:
   sections:
