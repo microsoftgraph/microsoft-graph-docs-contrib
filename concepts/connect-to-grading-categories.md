@@ -304,7 +304,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## Error while Delete grading category using Delta Payload
+## Error example: Delete a grading category by using delta payload
 
 When you try to delete a grading category by using the delta payload without replacing it with another grading category to keep the total of all categories to 100, the call results in an error, as shown in the following example.
 
