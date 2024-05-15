@@ -1,5 +1,5 @@
 ---
-title: "Create and update grading categories"
+title: "Create or update grading categories by using Microsoft Graph."
 description: "Teachers can use grading categories to weight assignments in the class grade."
 ms.localizationpriority: medium
 author: "v-rmanda"
@@ -7,17 +7,18 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Grading Categories
-This article provides guidance on setting up and using the grading categories for a class.
+# Create or update grading categories by using Microsoft Graph.
+This article describes how to set up and use the grading categories for a class using .
 
-Teachers can use grading categories to weight assignments in the class grade. For example, a class could have 60% of its grade come from homework assignments and 40% from test assignments.
+Teachers use grading categories to apply weights to assignments for student grades. For example, homework might account for 60% of a grade and tests account for 40% of a grade.
 
 Assignments contribute to a grade based on their point values and the weight assigned to the grading category. For example, in a class with two assignments in a grading category that represents 50% of the grade, if the first assignment has 10 points, and the second has 40 points, the assignments contribute 5% and 20% to the total grade.
 
 Grading categories are defined in the settings of a class. Every assignment that contributes to the final average grade must have a grading category applied. The weights of the grading categories for a class must add up to 100 during create, update, or delete operations. 
 
-> [!NOTE]
-> You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
+## Permissions
+
+The assignments API supports delegated (per user) only. 
 
 ## Get a class
 
@@ -308,8 +309,6 @@ HTTP/1.1 204 No Content
 
 When you try to delete a grading category by using the delta payload without replacing it with another grading category to keep the total of all categories to 100, the call results in an error, as shown in the following example.
 
-> **Note**: When you delete a grading category, the assignments with the grading category continue to contribute to the final grade as if the category were present, but teachers will not be able to assign the deleted grading category to other assignments.
-
 ```http
 PATCH /education/classes/{classId}/assignmentSettings
 ```
@@ -356,6 +355,5 @@ Content-type: application/json
 }
 ```
 
-## Permissions
-
-The assignments API supports delegated (per user) only. 
+> [!NOTE]
+> You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
