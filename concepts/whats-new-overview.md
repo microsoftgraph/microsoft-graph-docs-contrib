@@ -26,9 +26,9 @@ Deprecated the following methods on [cloudPC](https://learn.microsoft.com/en-us/
 - [getCloudPcReviewStatus](/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method in favor of the [retrieveReviewStatus](/graph/api/cloudpc-retrievereviewstatus?view=graph-rest-beta&preserve-view=true) API.
 - [setCloudPcReviewStatus](/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) method in favor of the [setReviewStatus](/graph/api/cloudpc-setreviewstatus?view=graph-rest-beta&preserve-view=true) API.
 - [resizeCloudPc](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true) method in favor of the [resize](/graph/api/cloudpc-resize?view=graph-rest-beta&preserve-view=true) API.
-- [bulkReprovisionCloudPc](/graph/api/manageddevice-bulkreprovisioncloudpc?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkReprovision](/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta&preserve-view=true) resource and supported APIs instead.
-- [bulkRestoreCloudPc](/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkRestore](/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta&preserve-view=true) resource  and and supported APIs instead.
-- [bulkResize](/graph/api/cloudpc-bulkresize?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkResize](/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta&preserve-view=true) resource and supported APIs instead.
+- [bulkReprovisionCloudPc](/graph/api/manageddevice-bulkreprovisioncloudpc?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkReprovision](/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+- [bulkRestoreCloudPc](/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkRestore](/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
+- [bulkResize](/graph/api/cloudpc-bulkresize?view=graph-rest-beta&preserve-view=true) method; use the [cloudPcBulkResize](/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta&preserve-view=true) resource and its supported APIs instead.
 
 ### Identity and access | Identity and sign-in
 
