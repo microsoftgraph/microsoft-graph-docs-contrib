@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: createSnapshot"
-description: "Create snapshot for a specific Cloud PC device using the Cloud PC ID."
+description: "Create a snapshot for a specific Cloud PC device."
 author: "Jiaer Huang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create snapshot for a specific Cloud PC device using the Cloud PC ID.
+Create a snapshot for a specific Cloud PC device.
 
 ## Permissions
 
