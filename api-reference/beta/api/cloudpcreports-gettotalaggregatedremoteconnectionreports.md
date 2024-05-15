@@ -158,8 +158,16 @@ Content-Type: application/octet-stream
             "PropertyType": "Double"
         },
         {
-            "Column": "DaysSinceLastSignIn",
-            "PropertyType": "Int64"
+            "Column": "LastActiveTime",
+            "PropertyType": "DateTime"
+        },
+        {
+            "Column": "PcType",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "CreatedDate",
+            "PropertyType": "DateTime"
         }
     ],
     "Values": [
@@ -168,7 +176,9 @@ Content-Type: application/octet-stream
             "CPC-DisplayName",
             "connie@contoso.com",
             66.36944444444444,
-            0
+            "2023-04-17T01:43:18",
+            "Cloud PC Enterprise 8vCPU/32GB/512GB",
+            "2022-03-30T13:48:38"
         ]
     ]
 }
