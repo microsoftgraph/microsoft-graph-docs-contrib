@@ -1,19 +1,19 @@
 ---
-title: "sharePointProtectionPolicy: Create"
-description: "Create the Protection Policy for a M365 service Sharepoint"
+title: "Create a new sharePointProtectionPolicy"
+description: "Create a Protection Policy for a M365 service Sharepoint"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# sharePointProtectionPolicy: create
+# Create a new sharePointProtectionPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Policy will be created in 'inactive' state. User can also provide a list of Protection Units under the policy.
+Create a Protection Policy for a M365 service Sharepoint. Policy will be created in 'inactive' state. User can also provide a list of Protection Units under the policy.
 
 Refer to [site](../resources/site.md) for the format of siteId.
 
@@ -26,7 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "sharepointprotectionpolicy-create-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-create-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-create-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -149,4 +154,3 @@ Odata – Version: 4.0
   ]
 }
 ```
-

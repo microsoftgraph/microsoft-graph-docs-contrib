@@ -1,19 +1,19 @@
 ---
-title: "exchangeProtectionPolicy: Create"
-description: "Create the Protection Policy for a M365 service Exchange"
+title: "Create a new exchangeProtectionPolicy"
+description: "Create a Protection Policy for a M365 service Exchange"
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# exchangeProtectionPolicy: create
+# Create a new exchangeProtectionPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Policy will be created in 'inactive' state. User can also provide a list of Protection Units under the policy.
+Create a Protection Policy for a M365 service Exchange. Policy will be created in 'inactive' state. User can also provide a list of Protection Units under the policy.
 
 Refer to [users](../resources/user.md) for the format of userId.
 
@@ -26,7 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "exchangeprotectionpolicy-create-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-create-permissions.md)]
+<!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-create-permissions.md)]-->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -148,4 +153,3 @@ Odata – Version: 4.0
   ]
 }
 ```
-
