@@ -256,7 +256,7 @@ Content-type: application/json
 
 You can delete a grading category when you no longer need it for your assignment, or if you want to simplify your evaluation process. Deleting a grading category removes it from the assignment settings and the grading interface. 
 
-- [Remove gradingCategory](/graph/api/educationassignment-delete-gradingcategory): Use this method to remove a grading category from the assignment settings and the grading interface.
+To remove a grading category from the assignment settings and the grading interface, see [Remove gradingCategory](/graph/api/educationassignment-delete-gradingcategory).
 
 > **Note:** Assignments in the deleted grading category retain their grades, but teachers can't assign the deleted grading category to other assignments.
 
