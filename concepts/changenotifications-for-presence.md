@@ -74,8 +74,11 @@ Bulk subscriptions for user presence can be created by setting the subscription 
 ## Receive presence event notifications
 
 Change notifications for presence events are triggered when changes to a user's availability and activity are made.
+### Basic presence notifications
 
-### Example: Basic presence notifications
+Basic notifications notify subscribers about the identity of which resource changed. Using this information, users are expected to make a separate GET call to get the details of the data. For presence this means that basic notifications will provide information about which user's presence changed but no data about the details of user's presence. Subscribers are expected to use the [GET presence apis](/graph/api/presence-get) to discover the state of user's availability and activity.
+
+#### Payload example
 ```json
 {
   "value": [{
@@ -95,16 +98,14 @@ Change notifications for presence events are triggered when changes to a user's 
 }
 ```
 
-### Example: Presence notifications with resource data 
-
-Presence notifications with resource data have the following additional properties encrypted in the payload:
-- Availability or base presence information (available, away, busy)
-- Activity or information that's supplemental to the availability (in a meeting, in call)
-
+### Rich presence notifications 
+Rich notifications notify subscribers about the changes that occurred to a resource. For rich presence notifications, subscribers will be contain data about changes to user's `Availability` and `Activity`. The data here however, is encrypted for as a security measure. Please see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) on details subscribing to rich notifications.
 > [Note]:
 > The availability and activity can be the same value.
 
 For more information about possible combinations of availability and activity, see [Presence properties](/graph/api/resources/presence).
+
+#### Payload example
 
 ```json
 {
