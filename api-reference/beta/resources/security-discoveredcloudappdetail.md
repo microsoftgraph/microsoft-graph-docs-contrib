@@ -1,0 +1,90 @@
+---
+title: "discoveredCloudAppDetail resource type"
+description: "**TODO: Add Description**"
+author: "nechamam"
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: resourcePageType
+---
+
+# discoveredCloudAppDetail resource type
+
+Namespace: microsoft.graph.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**TODO: Add Description**
+
+
+Inherits from [microsoft.graph.entity](../resources/entity.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/security-discoveredcloudappdetail-list.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) collection|Get a list of the [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) objects and their properties.|
+|[Get](../api/security-discoveredcloudappdetail-get.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md)|Read the properties and relationships of a [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) object.|
+|[Update](../api/security-discoveredcloudappdetail-update.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md)|Update the properties of a [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) object.|
+|[Delete](../api/security-discoveredcloudappdetail-delete.md)|None|Delete a [microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) object.|
+|[List discoveredCloudAppInfo](../api/security-discoveredcloudappdetail-list-appinfo.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) collection|Get the discoveredCloudAppInfo resources from the appInfo navigation property.|
+|[Add discoveredCloudAppInfo](../api/security-discoveredcloudappdetail-post-appinfo.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Add appInfo by posting to the appInfo collection.|
+|[Remove discoveredCloudAppInfo](../api/security-discoveredcloudappdetail-delete-appinfo.md)|None|Remove a [microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) object.|
+|[List ipAddresses](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get the discoveredCloudAppIPAddress resources from the ipAddresses navigation property.|
+|[Create discoveredCloudAppIPAddress](../api/security-discoveredcloudappdetail-post-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md)|Create a new discoveredCloudAppIPAddress object.|
+|[List users](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get the discoveredCloudAppUser resources from the users navigation property.|
+|[Create discoveredCloudAppUser](../api/security-discoveredcloudappdetail-post-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md)|Create a new discoveredCloudAppUser object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|category|microsoft.graph.security.appCategory|**TODO: Add Description**.The possible values are: `security`, `collaboration`, `hostingServices`, `onlineMeetings`, `newsAndEntertainment`, `eCommerce`, `education`, `cloudStorage`, `marketing`, `operationsManagement`, `health`, `advertising`, `productivity`, `accountingAndFinance`, `contentManagement`, `contentSharing`, `businessManagement`, `communications`, `dataAnalytics`, `businessIntelligence`, `webemail`, `codeHosting`, `webAnalytics`, `socialNetwork`, `crm`, `forums`, `humanResourceManagement`, `transportationAndTravel`, `productDesign`, `sales`, `cloudComputingPlatform`, `projectManagement`, `personalInstantMessaging`, `developmentTools`, `itServices`, `supplyChainAndLogistics`, `propertyManagement`, `customerSupport`, `internetOfThings`, `vendorManagementSystems`, `websiteMonitoring`, `generativeAi`, `unknown`, `unknownFutureValue`.|
+|displayName|String|**TODO: Add Description**|
+|domains|String collection|**TODO: Add Description**|
+|downloadNetworkTrafficInBytes|Int64|**TODO: Add Description**|
+|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|ipAddressCount|Int64|**TODO: Add Description**|
+|lastSeenDateTime|DateTimeOffset|**TODO: Add Description**|
+|riskScore|Int64|**TODO: Add Description**|
+|tags|String collection|**TODO: Add Description**|
+|transactionCount|Int64|**TODO: Add Description**|
+|uploadNetworkTrafficInBytes|Int64|**TODO: Add Description**|
+|userCount|Int64|**TODO: Add Description**|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|appInfo|[discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|**TODO: Add Description**|
+|ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|**TODO: Add Description**|
+|users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|**TODO: Add Description**|
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.security.discoveredCloudAppDetail",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.discoveredCloudAppDetail",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "tags": [
+    "String"
+  ],
+  "riskScore": "Integer",
+  "uploadNetworkTrafficInBytes": "Integer",
+  "downloadNetworkTrafficInBytes": "Integer",
+  "transactionCount": "Integer",
+  "ipAddressCount": "Integer",
+  "userCount": "Integer",
+  "lastSeenDateTime": "String (timestamp)",
+  "domains": [
+    "String"
+  ],
+  "category": "String"
+}
+```
+
