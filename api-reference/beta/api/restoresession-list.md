@@ -1,6 +1,6 @@
 ---
 title: "List restoreSessionBase objects"
-description: "Get a list of the restoreSessionBase objects and their properties."
+description: "Get a list of the Restore Session Base and their properties."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [restoreSessionBase](../resources/restoresessionbase.md) objects and their properties.
+Get a list of the [restoreSessions](../resources/restoresessionbase.md) and their properties.
 
 ## Permissions
 
@@ -21,10 +21,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "backuprestoreroot-list-restoresessions-permissions"
+  "name": "restoresession-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-list-restoresessions-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/restoresession-list-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
 
 ## HTTP request
 
@@ -61,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_restoresessionbase"
+  "name": "restoresession_list"
 }
 -->
 ``` http
