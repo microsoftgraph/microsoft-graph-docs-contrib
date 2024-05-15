@@ -32,7 +32,7 @@ Represents the type of conditions that govern when the policy applies.
 |servicePrincipalRiskLevels|riskLevel collection| Service principal risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`, `unknownFutureValue`.|
 |signInRiskLevels|riskLevel collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
-|insiderRiskLevels|conditionalAccessInsiderRiskLevels| Insider Risk levels included in the policy.The possible values are: `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
+|insiderRiskLevels|conditionalAccessInsiderRiskLevels| Insider risk levels included in the policy. The possible values are: `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
 
 ## Relationships
 
