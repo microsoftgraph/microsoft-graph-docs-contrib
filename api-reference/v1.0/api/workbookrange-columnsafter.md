@@ -44,7 +44,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/columnsAfter(cou
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
 
 ## Example
 Here's an example of how to call this API.

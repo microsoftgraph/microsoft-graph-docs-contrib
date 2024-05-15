@@ -3,8 +3,8 @@ author: "vanshisingh"
 title: "recycleBin resource type"
 description: "Provides a list of recycleBinItems."
 ms.localizationpriority: "medium"
+doc_type: resourcePageType
 ms.subservice: "sharepoint"
-doc_type: apiPageType
 ---
 
 # recycleBin resource type

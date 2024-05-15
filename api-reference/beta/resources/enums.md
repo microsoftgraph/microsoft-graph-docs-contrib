@@ -2913,6 +2913,23 @@ Possible values for user account types (group membership), per Windows definitio
 |unbound|
 |unknownFutureValue|
 
+### conditionalAccessAudienceReason values
+
+| Member |
+| :----- |
+|none|
+|resourcelessRequest|
+|confidentialClientIdToken|
+|confidentialClientNonIdToken|
+|resourceMapping|
+|resourceMappingDefault|
+|scopeMapping|
+|scopeMappingDefault|
+|delegatedScope  |
+|firstPartyResourceDefault|
+|thirdPartyResourceDefault|
+|unknownFutureValue|
+
 ### persistentBrowserSessionMode values
 
 | Member |
@@ -4711,4 +4728,47 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |deviceCodeFlow|
 |authenticationTransfer|
+|unknownFutureValue|
+
+### sharingRole values 
+
+|Member|
+|:---|
+|none|
+|view|
+|edit|
+|manageList|
+|review|
+|restrictedView|
+|submitOnly|
+|unknownFutureValue|
+
+### sharingScope values 
+
+|Member|
+|:---|
+|anyone|
+|organization|
+|specificPeople|
+|anonymous|
+|users|
+|unknownFutureValue|
+
+### sharingVariant values 
+
+|Member|
+|:---|
+|none|
+|requiresAuthentication|
+|passwordProtected|
+|addressBar|
+|embed|
+|unknownFutureValue|
+
+### trustFrameworkKeyStatus values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
 |unknownFutureValue|
