@@ -1,6 +1,6 @@
 ---
 title: "Create oneDriveForBusinessRestoreSession"
-description: "Create a new oneDriveForBusinessRestoreSession object."
+description: "Create a new OneDrive for Business Restore Session."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.
+Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
 ## Permissions
 
@@ -21,10 +21,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "backuprestoreroot-post-onedriveforbusinessrestoresessions-permissions"
+  "name": "onedriveforbusinessrestoresession-create-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-post-onedriveforbusinessrestoresessions-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessrestoresession-create-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
 
 ## HTTP request
 
@@ -45,21 +51,22 @@ POST /solutions/backupRestore/oneDriveForBusinessRestoreSessions
 
 ## Request body
 
-In the request body, supply a JSON representation of the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.
+In the request body, supply a JSON representation of the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
 You can specify the following properties when creating an **oneDriveForBusinessRestoreSession**.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the restore session created|
+|driveRestoreArtifacts|[driveRestoreArtifact collection](../resources/driverestoreartifact.md)|
+<!-- |id|String|The unique identifier of the restore session created|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the restore session.|
 |createdDateTime|DateTimeOffset|The time of completion of the restore session.|
 |error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resource/onedriveforbusinessrestoresession.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resource/onedriveforbusinessrestoresession.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.| -->
 
 
 
@@ -74,7 +81,7 @@ If successful, this method returns a `201 Created` response code and an [oneDriv
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_onedriveforbusinessrestoresession_from_"
+  "name": "create_onedriveforbusinessrestoresession"
 }
 -->
 ``` http
@@ -82,15 +89,16 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusines
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.backupRestore.oneDriveForBusinessRestoreSession",
-  "status": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "completedDateTime": "String (timestamp)",
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "driveRestoreArtifacts": [
+    {
+      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "destinationType": "new"
+    },
+    {
+      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
+      "destinationType": "new"
+    }
+  ]
 }
 ```
 

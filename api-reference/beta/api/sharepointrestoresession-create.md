@@ -1,6 +1,6 @@
 ---
 title: "Create sharePointRestoreSession"
-description: "Create a new sharePointRestoreSession object."
+description: "Create a new SharePoint Restore Session."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.
+Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
 ## Permissions
 
@@ -21,10 +21,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "backuprestoreroot-post-sharepointrestoresessions-permissions"
+  "name": "sharepointrestoresession-create-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-post-sharepointrestoresessions-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/sharepointrestoresession-create-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
 
 ## HTTP request
 
@@ -45,20 +51,20 @@ POST /solutions/backupRestore/sharePointRestoreSessions
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.
+In the request body, supply a JSON representation of the [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
 You can specify the following properties when creating a **sharePointRestoreSession**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
-|:---|:---|:---|
-|status|restoreSessionStatus||status|restoreSessionStatus|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+ |:---|:---|:---|
+ |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|
+<!--|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 |createdDateTime|DateTimeOffset|DateTimeOffset|The time of completion of the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
 |createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The identity of person who created the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
 |lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
-|error|[microsoft.graph.publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
+|error|[microsoft.graph.publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.| -->
 
 
 
@@ -73,23 +79,23 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_sharepointrestoresession_from_"
+  "name": "create_sharepointrestoresession"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions
 Content-Type: application/json
-
 {
-  "@odata.type": "#microsoft.backupRestore.sharePointRestoreSession",
-  "status": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "completedDateTime": "String (timestamp)",
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "siteRestoreArtifacts": [
+    {
+      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
+      "destinationType": "inPlace"
+    },
+    {
+      "restorePoint": { "@odata.id": "1f1fccc3-a642-4f61-bf49-f37b9a888280" },
+      "destinationType": "inPlace"
+    }
+  ]
 }
 ```
 
