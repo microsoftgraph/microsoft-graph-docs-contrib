@@ -33,7 +33,7 @@ GET https://graph.microsoft.com/beta/education/classes
 
 To create and manage assignments, you need to set up grading categories. You can get all the assignment settings in a class. Then, you can inspect them to see which ones need grading categories.
 
-- [Get assignment settings](/graph/api/educationassignmentsettings-get): Gets the assignment settings for a class.
+To get the assignment settings for a class, see [get assignment settings](/graph/api/educationassignmentsettings-get).
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
