@@ -35,8 +35,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Stop](../api/cloudpc-stop.md)|None|Stop a specific Cloud PC for a user. Currently, only Windows 365 Frontline Cloud PCs are supported. |
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific Cloud PC object. Use this API to check the health status of the Cloud PC and the session host.|
 |[Restore](../api/cloudpc-restore.md)|None|Restore a Cloud PC object to a previous state from a snapshot.|
-|[Set review status by cloudpcId](..\api\cloudpc-setreviewstatus.md)|None|Set the review status of a specific Cloud PC device by cloudpcId.|
-|[Retrieve review status](..\api\cloudpc-retrievereviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the review status of a specific Cloud PC device by cloudpcId.|
+|[Set review status](..\api\cloudpc-setreviewstatus.md)|None|Set the review status of a specific Cloud PC device using the Cloud PC ID.|
+|[Retrieve review status](..\api\cloudpc-retrievereviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the [review status](..\resources\cloudpcreviewstatus.md) of a Cloud PC.|
 |[Bulk set review status](../api/manageddevice-bulksetcloudpcreviewstatus.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.|
 |[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the Cloud PC devices that are attributed to the signed-in user.|
 |[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
@@ -54,7 +54,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Reprovision remote action](../api/manageddevice-reprovisioncloudpc.md) (deprecated)|None|Reprovision a Cloud PC with an Intune  [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [reprovision](../api/cloudpc-reprovision.md) API.|
 |[Resize remote action](../api/manageddevice-resizecloudpc.md) (deprecate)|None|Upgrade or downgrade an existing Cloud PC to another configuration with a new vCPU and storage size through Intune managed device ID. This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [cloudPC: resize](../api/cloudpc-resize.md) API.|
 |[Restore remote action](../api/manageddevice-restorecloudpc.md) (deprecated)|None|Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [restore](../api/cloudpc-restore.md) API.|
-|[Set review status by managedDeviceId](../api/manageddevice-setcloudpcreviewstatus.md) (deprecate)|None|Set the review status of a specific Cloud PC device by managedDeviceId. This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [cloudPC: setReviewStatus](../api/cloudpc-setreviewstatus.md) API.|
+|[Set review status](../api/manageddevice-setcloudpcreviewstatus.md) (deprecate)|None|Set the review status of a specific Cloud PC device using the managed device ID. This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [cloudPC: setReviewStatus](../api/cloudpc-setreviewstatus.md) API.|
 
 ## Properties
 
