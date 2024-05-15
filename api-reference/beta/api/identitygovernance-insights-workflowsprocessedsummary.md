@@ -1,6 +1,6 @@
 ---
 title: "insights: workflowsProcessedSummary"
-description: "The summary of workflows processed by Lifecycle Workflows within a tenant."
+description: "Get the summary of workflows processed by Lifecycle Workflows within a tenant."
 author: "krbain"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides a summary of all workflows processed within a tenant for a specified period. Because the amount of results for listed workflows as returned by the [List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md) does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
+Provide a summary of all workflows processed within a tenant for a specified period. Because the amount of results for listed workflows as returned by the [List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md) does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
 
 ## Permissions
 
@@ -38,8 +38,7 @@ GET /identityGovernance/lifecycleWorkflows/insights/workflowsProcessedSummary
 
 ## Function parameters
 
-In the request URL, provide the following query parameters with values.
-The following table lists the parameters that are required when you call this function.
+In the request URL, provide the following query parameters with values. The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
