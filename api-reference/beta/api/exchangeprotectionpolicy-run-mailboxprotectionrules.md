@@ -1,19 +1,20 @@
 ---
-title: "driveProtectionRule: run"
-description: "Actives drive protection rule."
+title: "Run mailboxInclusionRule"
+description: "Actives mailboxInclusionRule."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
-# driveProtectionRule: run
+# Run mailboxInclusionRule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active. The state transition is draft -> active.
+Activates [mailboxInclusionRule](../resources/mailboxprotectionrule.md)
+Upon running the protection rule using the /run API, the status of Protection Rule transitions to active. The state transition is draft -> active.
 
 ## Permissions
 
@@ -21,10 +22,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "driveprotectionrule-run-permissions"
+  "name": "exchangeprotectionpolicy-run-mailboxprotectionrules-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/driveprotectionrule-run-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-run-mailboxprotectionrules-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -33,8 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /solutions/backupRestore/driveInclusionRules/{driveProtectionRuleId}/run
-POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}/run
+POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/run
 ```
 
 ## Request headers
@@ -58,11 +64,11 @@ If successful, this action returns a `200 OK` response code and a [protectionRul
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "driveprotectionrulethis.run"
+  "name": "mailboxprotectionrulethis.run"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/driveInclusionRules/{driveProtectionRuleId}/run
+POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/run
 ```
 
 
@@ -77,8 +83,9 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
+Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}
 
 {
   "value": {

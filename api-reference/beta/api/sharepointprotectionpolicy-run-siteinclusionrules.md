@@ -1,19 +1,20 @@
 ---
-title: "siteProtectionRule: run"
-description: "Actives site protection rule."
+title: "Run siteInclusionRule"
+description: "Actives siteInclusionRule."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
-# siteProtectionRule: run
+# Run siteInclusionRule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active. The state transition is draft -> active.
+Activates [siteInclusionRule](../resources/siteprotectionrule.md).
+Upon running the protection rule using the /run API, the status of Protection Rule transitions to active. The state transition is draft -> active.
 
 ## Permissions
 
@@ -21,10 +22,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "siteprotectionrule-run-permissions"
+  "name": "sharepointprotectionpolicy-run-siteinclusionrules"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/siteprotectionrule-run-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-run-siteinclusionrules-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -61,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/siteInclusionRules/{siteProtectionRuleId}/run
+POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules/{siteProtectionRuleId}/run
 ```
 
 
@@ -76,8 +83,9 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
+Content-Location: /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules/{siteProtectionRuleId}
 
 {
   "value": {
