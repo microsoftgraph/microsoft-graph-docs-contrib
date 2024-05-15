@@ -193,7 +193,7 @@ Content-Type: application/octet-stream
       "PropertyType": "String"
     },
     {
-      "Column": "EventDateTime",
+      "Column": "LastActiveTime",
       "PropertyType": "DateTime"
     }
   ],
