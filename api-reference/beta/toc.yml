@@ -14223,7 +14223,7 @@ items:
                         href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
                       - name: Remove attributes from a user flow
                         href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
-                  - name: Authentication condition applications
+                  - name: Linked applications
                     href: resources/authenticationconditionapplication.md
                     items:
                       - name: List applications
@@ -15232,6 +15232,8 @@ items:
                 href: api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
               - name: Create
                 href: api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+              - name: Reset
+                href: api/industrydata-provisioningflow-reset.md
               - name: Administrative unit provisioning flow
                 href: resources/industrydata-administrativeunitprovisioningflow.md
                 items:

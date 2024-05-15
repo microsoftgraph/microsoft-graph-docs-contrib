@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc tenant-relationships multi-tenant-organization tenants delete --multi-tenant-organization-member-id {multiTenantOrganizationMember-id}
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Create or replace an activity"
-description: "Create a new or replace an existing user activity for your app.
+description: "Create a new or replace an existing user activity for your app."
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 doc_type: apiPageType
