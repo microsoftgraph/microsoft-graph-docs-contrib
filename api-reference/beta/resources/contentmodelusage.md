@@ -1,6 +1,6 @@
 ---
 title: "contentModelUsage resource type"
-description: "The contentModelUsage resource provides the information of where a [contentModel](../resources/contentmodel.md) is applied."
+description: "Provides information on where, by whom, and when a [contentModel](../resources/contentmodel.md) is applied."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The contentModelUsage resource provides the information of where a [contentModel](../resources/contentmodel.md) is applied. It also provides information about the model itself, including the model version, by whom, and when applied.
+Provides information on where, by whom, and when a [contentModel](../resources/contentmodel.md) is applied, including information about the model itself, like the model version.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application, which first applied the [contentModel](../resources/contentmodel.md) to the library.|
 |createdDateTime|DateTimeOffset|Date and time of the [contentModel](../resources/contentmodel.md) is first applied.|
-|driveId|String|The ID of the drive where the [contentModel](../resources/contentmodel.md) is applied|
+|driveId|String|The ID of the drive where the [contentModel](../resources/contentmodel.md) is applied.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application, which last applied the [contentModel](../resources/contentmodel.md) to the library.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the [contentModel](../resources/contentmodel.md) is last applied.|
-|modelId|String|The ID of the [contentModel](../resources/contentmodel.md)|
+|modelId|String|The ID of the [contentModel](../resources/contentmodel.md).|
 |modelVersion|String|	The version of the current applied [contentModel](../resources/contentmodel.md).|
 
 ## Relationships

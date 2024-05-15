@@ -1,6 +1,6 @@
 ---
 title: "Get contentModel"
-description: "This API helps retrieve a content model by its ID."
+description: "Read the properties and relationships of a content model object."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"

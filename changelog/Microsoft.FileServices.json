@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentModel",
           "ChangeType": "Addition",
-          "Description": "Added the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
+          "Description": "Added the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource and its methods.",
           "Target": "contentModel"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "documentProcessingJob",
           "ChangeType": "Addition",
-          "Description": "Added the [documentProcessingJob](https://learn.microsoft.com/en-us/graph/api/resources/documentProcessingJob?view=graph-rest-beta) resource.",
+          "Description": "Added the [documentProcessingJob](https://learn.microsoft.com/en-us/graph/api/resources/documentProcessingJob?view=graph-rest-beta) resource and its methods.",
           "Target": "documentProcessingJob"
         },
         {
@@ -72,7 +72,7 @@
           "ChangedApiName": "addToDrive",
           "ChangeType": "Addition",
           "Description": "Added the [addToDrive](https://learn.microsoft.com/en-us/graph/api/contentmodel-addtodrive?view=graph-rest-beta) method to the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
-          "Target": "addToDrive"
+          "Target": "contentModel"
         },
         {
           "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
@@ -80,7 +80,7 @@
           "ChangedApiName": "removeFromDrive",
           "ChangeType": "Addition",
           "Description": "Added the [removeFromDrive](https://learn.microsoft.com/en-us/graph/api/contentmodel-removefromdrive?view=graph-rest-beta) method to the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
-          "Target": "removeFromDrive"
+          "Target": "contentModel"
         },
         {
           "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
@@ -88,7 +88,7 @@
           "ChangedApiName": "getAppliedDrives",
           "ChangeType": "Addition",
           "Description": "Added the [getAppliedDrives](https://learn.microsoft.com/en-us/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta) method to the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
-          "Target": "getAppliedDrives"
+          "Target": "contentModel"
         },
         {
           "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",
@@ -96,7 +96,7 @@
           "ChangedApiName": "getByName",
           "ChangeType": "Addition",
           "Description": "Added the [getByName](https://learn.microsoft.com/en-us/graph/api/contentmodel-getbyname?view=graph-rest-beta) method to the [contentModel](https://learn.microsoft.com/en-us/graph/api/resources/contentModel?view=graph-rest-beta) resource.",
-          "Target": "getByName"
+          "Target": "contentModel"
         }
       ],
       "Id": "47ae1bd2-01d4-40f7-82eb-3d4ff76df11a",

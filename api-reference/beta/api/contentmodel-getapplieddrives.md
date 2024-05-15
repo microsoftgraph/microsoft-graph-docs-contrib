@@ -1,6 +1,6 @@
 ---
 title: "contentModel: getAppliedDrives"
-description: "List all the applied document libraries of a contentModel."
+description: "List all the contentModelUsage information of an applied contentModel."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"

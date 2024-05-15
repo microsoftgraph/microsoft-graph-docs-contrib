@@ -1,6 +1,6 @@
 ---
 title: "documentProcessingJob resource type"
-description: "The documentProcessingJob resource provides the information to process a document, or documents in a folder."
+description: "Provides the information to process a document, or documents in a folder."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,21 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The documentProcessingJob resource provides the information to process a document, or documents in a folder with [contentModel](../resources/contentmodel.md)s.
+Provides the information to process a document, or documents in a folder with [contentModel](../resources/contentmodel.md) objects.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/site-post-documentprocessingjobs.md)|[documentProcessingJob](../resources/documentprocessingjob.md)|Create a new [documentProcessingJob](../resources/documentprocessingjob.md) object.|
+|[Create](../api/site-post-documentprocessingjobs.md)|[documentProcessingJob](../resources/documentprocessingjob.md)|Create a new documentProcessingJob object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Date and time of item creation. Read-only.|
-|ID|String|The ID of the document processing job. Read-only.|
-|jobType|documentProcessingJobType|the Document Processing Job type. The possible values are: `File`, `Folder`|
-|listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. It's one of the sharepointIds. Use Drive item Graph API to get listItemUniqueId. Check out sharepointIds for more details.|
-|status|documentProcessingJobStatus|The Document Processing Job status. The possible values are: `inProgress`, `completed`, `failed`, `unknownFutureValue`.|
+|Id|String|The ID of the document processing job. Read-only.|
+|jobType|documentProcessingJobType|the document processing job type. The possible values are: `file`, `folder`|
+|listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. It's one of the sharepointIds. Check the [driveItem](../resources/driveitem.md) resource to get listItemUniqueId. Or [sharepointids](../resources/sharepointids.md) for more details.|
+|status|documentProcessingJobStatus|The document processing Job status. The possible values are: `inProgress`, `completed`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 None.

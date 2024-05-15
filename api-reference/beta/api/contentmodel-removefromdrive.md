@@ -1,6 +1,6 @@
 ---
 title: "contentModel: removeFromDrive"
-description: "Use this API to remove the [contentModel](../resources/contentmodel.md) from the document library."
+description: "Remove a [contentModel](../resources/contentmodel.md) from the document library."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to remove the [contentModel](../resources/contentmodel.md) from the document library.
+Remove a [contentModel](../resources/contentmodel.md) from the document library.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|driveId|String|ID of the drive that the model is removed from |
+|driveId|String|Drive ID from which the model is removed. |
 
 
 

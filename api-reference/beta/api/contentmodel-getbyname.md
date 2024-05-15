@@ -42,7 +42,7 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|modelName|String|**TODO: Add Description**|
+|modelName|String|full model file name, including file extention|
 
 
 ## Request headers
