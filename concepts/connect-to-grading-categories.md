@@ -103,7 +103,7 @@ Content-type: application/json
 
 ## Add a grading category to an assignment
 
-You weight an assignment's contribution to the final class grade by giving the assignment a grading category. You can use the following API to add a grading category to an assignment.
+You weight an assignment's contribution to the final class grade by giving the assignment a grading category.
 
 To add a grading category to an assignment, see [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory).
 
