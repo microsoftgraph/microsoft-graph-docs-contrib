@@ -599,6 +599,48 @@
       "CreatedDateTime": "2024-04-24T15:31:43.488417Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b824de6b-3d13-48a2-9720-5ce519e5a305",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "trustFrameworkKeyStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **trustFrameworkKeyStatus** enumeration type.",
+          "Target": "trustFrameworkKeyStatus"
+        },
+        {
+          "Id": "b824de6b-3d13-48a2-9720-5ce519e5a305",
+          "ApiChange": "Property",
+          "ChangedApiName": "status",
+          "ChangeType": "Addition",
+          "Description": "Added the **status** property to the [trustFrameworkKey](https://learn.microsoft.com/en-us/graph/api/resources/trustFrameworkKey?view=graph-rest-beta) resource.",
+          "Target": "trustFrameworkKey"
+        },
+        {
+          "Id": "b824de6b-3d13-48a2-9720-5ce519e5a305",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "keys_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the **keys_v2** relationship to the [trustFrameworkKeySet](https://learn.microsoft.com/en-us/graph/api/resources/trustFrameworkKeySet?view=graph-rest-beta) resource.",
+          "Target": "trustFrameworkKeySet"
+        },
+        {
+          "Id": "b824de6b-3d13-48a2-9720-5ce519e5a305",
+          "ApiChange": "Resource",
+          "ChangedApiName": "trustFrameworkKey_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the [trustFrameworkKey_v2](https://learn.microsoft.com/en-us/graph/api/resources/trustFrameworkKey_v2?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "trustFrameworkKey_v2"
+        }
+      ],
+      "Id": "b824de6b-3d13-48a2-9720-5ce519e5a305",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-06T09:05:40.4087924Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
