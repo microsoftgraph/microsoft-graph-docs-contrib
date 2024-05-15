@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|string|The default teamwork identifier.|
 |isTeamsEnabled|Boolean|Indicates whether Microsoft Teams is enabled for the organization.|  
-|region|string|Represents the region of the organization.|
+|region|string|The **region** property represents the organization's or the user's region. The property contains the user's region (if available) for users who have a valid multigeo license. For users without multigeo licenses, the **region** property contains the organization's region. <br> The **region** value can be any region supported by the Teams payload. Possible values: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, AG08 (USNAT), AG08 (USSEC), and China.|
 
 ## Relationships
 | Relationship | Type | Description |
