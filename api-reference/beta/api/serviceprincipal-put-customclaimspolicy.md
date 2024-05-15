@@ -60,7 +60,7 @@ You can specify the following properties when creating a **customClaimsPolicy**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [customClaimsPolicy](../resources/customclaimspolicy.md) object in the response body.
+If successful, this method returns a `204` response code and a [customClaimsPolicy](../resources/customclaimspolicy.md) object in the response body.
 
 ## Examples
 
