@@ -27,7 +27,7 @@ Represents a container for the range of Microsoft Teams functionalities that are
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |id| String|The unique identifier for the **userTeamwork** object.|
-|locale|String |A user’s locale is represented by their preferred language and country or region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).|  
+|locale|String |A user’s locale is represented by their preferred language and country or region. For example, `en-us`. The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm). The locale property refers to the locale setting specific to Teams, which doesn't follow Office level locale setting.|  
 |region |String|The region of the user in Microsoft Teams.|
 
 ## Relationships
