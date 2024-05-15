@@ -157,34 +157,10 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorage",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorage] resource and its relationships.",
+          "Description": "Added the [fileStorage](https://learn.microsoft.com/en-us/graph/api/resources/filestorage?view=graph-rest-beta) resource",
           "Target": "fileStorage"
         },
         {
-          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "containers",
-          "ChangeType": "Addition",
-          "Description": "Added the **containers** relationship to fileStorage resource.",
-          "Target": "fileStorage"
-        },
-        {
-          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "deletedContainers",
-          "ChangeType": "Addition",
-          "Description": "Added the **deletedContainers** relationship to fileStorage resource.",
-          "Target": "fileStorage"
-        },
-        {
-          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
-          "ApiChange": "Method",
-          "ChangedApiName": "activate",
-          "ChangeType": "Addition",
-          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-activate?view=graph-rest-beta) method to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
-          "Target": "fileStorageContainer"
-        },
-         {
           "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
           "ApiChange": "Method",
           "ChangedApiName": "restore",
@@ -200,20 +176,12 @@
           "Description": "Added the [permanentDelete](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-permanentdelete?view=graph-rest-beta) method to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
         },
-       {
+        {
           "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
           "ApiChange": "Resource",
           "ChangedApiName": "storage",
           "ChangeType": "Addition",
-          "Description": "Added the [storage] resource and its relationships.",
-          "Target": "storage"
-        },
-        {
-          "Id": "1fdbc30f-9203-4e05-866c-cdab7f55d1b7",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "fileStorage",
-          "ChangeType": "Addition",
-          "Description": "Added the **fileStorage** relationship to storage resource.",
+          "Description": "Added the [storage] (https://learn.microsoft.com/en-us/graph/api/resources/storage?view=graph-rest-beta) resource",
           "Target": "storage"
         }
       ],
