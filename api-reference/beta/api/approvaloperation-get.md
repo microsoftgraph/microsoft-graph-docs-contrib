@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/approval/operations/{approvalOperationId}
+GET https://graph.microsoft.com/beta/solutions/approval/operations/1c281a99-f105-4f88-86fa-52d797323908
 ```
 
 
@@ -84,16 +84,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.approval.approvalOperation",
-    "createdDateTime": "String (timestamp)",
-    "lastActionDateTime": "String (timestamp)",
-    "status": "String",
-    "resourceLocation": "String",
-    "error": {
-      "@odata.type": "microsoft.graph.publicError"
-    }
-  }
+  "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#solutions/approval/operations/$entity",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastActionDateTime": "0001-01-02T00:00:00Z",
+  "status": "succeeded",
+  "resourceLocation": "https://canary.graph.microsoft.com/beta/solutions/approval/approvalitems/7d096f68-c4fe-4967-99dc-df0248c33a77",
+  "error": null
 }
 ```
 

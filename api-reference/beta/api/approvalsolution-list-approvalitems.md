@@ -84,33 +84,58 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#approvalItem",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/approval/approvalItems?$skiptoken=RFNwdAIAAQAAABc6X3BvZHBzcWxAbWljcm9zb2Z0LmNvbSlVc2VyX2FhOWVlOTdlLTk1M2YtNGNlNy05OTBkLTExMTYyOTkzYjQxN7kAAAAAAAAAAAAA",
   "value": [
     {
-      "@odata.type": "#microsoft.approval.approvalItem",
-      "id": "864a2951-a6cb-c407-1957-6dd2fbae7a84",
-      "displayName": "String",
-      "description": "String",
-      "allowEmailNotification": "Boolean",
-      "approvalType": "String",
-      "responsePrompts": [
-        "String"
-      ],
-      "approvers": [
-        {
-          "@odata.type": "microsoft.graph.approvalIdentitySet"
-        }
-      ],
-      "state": "String",
-      "allowCancel": "Boolean",
-      "createdDateTime": "String (timestamp)",
-      "completedDateTime": "String (timestamp)",
+      "id": "d3a7405e-452a-47e0-9c35-9335225ba55d",
+      "state":"Pending",
       "viewPoint": {
-        "@odata.type": "microsoft.graph.approvalItemViewPoint"
+        "roles": ["Owner"]
       },
-      "owner": {
-        "@odata.type": "microsoft.graph.approvalIdentitySet"
+      "owner":{
+        "user": {
+            "displayName": "Bill Gates",
+            "id": "f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473"
+        }
       },
-      "result": "String"
+      "approvalType": "awaitAll",
+      "displayName":"Title of approval",
+      "description":"Details of approval",
+      "result":null,
+      "allowCancel":true,
+      "allowEmailNotification": true,
+      "createdDateTime":"2022-04-12T20:51:19Z",
+      "completedDateTime":null,
+      "responseOptions":[
+        "Approve",
+        "Reject"
+      ]
+    },
+    {
+      "id": "d3a7405e-452a-47e0-9c35-9335225ba55d",
+      "state":"Completed",
+      "viewPoint": {
+        "roles": ["Owner"]
+      },
+      "owner":{
+        "user": {
+            "id": "39d1a7fb-5f54-4c89-b513-241683718c9b",
+            "displayName": "Satya Nadella"
+        }
+      },
+      "approvalType": "basic",
+      "displayName":"Title of approval",
+      "description":"Details of approval",
+      "result":"Approve",
+      "allowCancel":true,
+      "allowEmailNotification": false,
+      "createdDateTime":"2022-04-12T20:51:19Z",
+      "completedDateTime":"2022-04-12T20:51:19Z",
+      "responseOptions":[
+        "Approve",
+        "Reject"
+      ]
     }
   ]
 }

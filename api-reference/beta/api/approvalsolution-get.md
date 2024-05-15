@@ -84,10 +84,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.approval.approvalSolution",
-    "provisioningStatus": "String"
-  }
+  "provisioningStatus": "provisioningCompleted"
 }
 ```
 

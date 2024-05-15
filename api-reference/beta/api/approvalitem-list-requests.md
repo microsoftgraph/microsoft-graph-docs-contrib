@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/approval/approvalItems/{approvalItemId}/requests
+GET https://graph.microsoft.com/beta/solutions/approval/approvalItems/d3a7405e-452a-47e0-9c35-9335225ba55d/requests
 ```
 
 
@@ -84,17 +84,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#requests/$entity",
+  "values":[
     {
-      "@odata.type": "#microsoft.approval.approvalItemRequest",
-      "createdDateTime": "String (timestamp)",
-      "approver": {
-        "@odata.type": "microsoft.graph.approvalIdentitySet"
+      "id":"9d4c5640-1da7-4739-924f-d10b70c734c1",
+      "owner":{
+          "user":{
+            "id":"39d1a7fb-5f54-4c89-b513-241683718c9b",
+            "displayName":"Tom Gates"
+          }
       },
-      "reassignedFrom": {
-        "@odata.type": "microsoft.graph.approvalIdentitySet"
+      "createdDateTime":"2022-04-13T00:17:49Z",
+      "isReassigned": false
+    },
+    {
+      "id":"9d4c5640-1da7-4739-924f-d10b70c734c2",
+      "owner":{
+          "group":{
+            "id":"f2926053-5479-4bce-ad4c-8394ce51d6c5",
+            "displayName":"Jack Gates"
+          }
       },
-      "isReassigned": "Boolean"
+      "createdDateTime":"2022-04-18T00:17:49Z",
+      "isReassigned": false
+    },
+    {
+      "id":"8d4c7640-1da7-4739-924f-d10b70c734c2",
+      "owner":{
+          "user":{
+            "id":"f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473",
+            "displayName":"Harry Gates"
+          }
+      },
+      "createdDateTime":"2022-04-18T00:17:49Z",
+      "isReassigned": true
     }
   ]
 }

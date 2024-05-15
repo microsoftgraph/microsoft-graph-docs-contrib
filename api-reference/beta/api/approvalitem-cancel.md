@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/approval/approvalItems/{approvalItemId}/cancel
+POST https://graph.microsoft.com/beta/solutions/approval/approvalItems/ad65e077-4920-4bbd-a57e-b7f152958b83/cancel
 ```
 
 
@@ -76,6 +76,6 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/solutions/approval/operations/{operationId}
+Location: https://graph.microsoft.com/beta/solutions/approval/operations/1a837203-b794-4cea-8def-47a7d1f89335
 ```
 

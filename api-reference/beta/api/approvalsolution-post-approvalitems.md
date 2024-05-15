@@ -78,22 +78,23 @@ POST https://graph.microsoft.com/beta/solutions/approval/approvalItems
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.approval.approvalItem",
-  "displayName": "String",
-  "description": "String",
-  "allowEmailNotification": "Boolean",
-  "approvalType": "String",
-  "responsePrompts": [
-    "String"
-  ],
-  "approvers": [
+  "approvers":[
     {
-      "@odata.type": "microsoft.graph.approvalIdentitySet"
+      "user": {
+        "id": "39d1a7fb-5f54-4c89-b513-241683718c9b",
+        "displayName": "Satya Nadella"
+      }
+    },
+    {
+      "group": {
+        "id": "f2926053-5479-4bce-ad4c-8394ce51d6c5"
+      }
     }
   ],
-  "owner": {
-    "@odata.type": "microsoft.graph.approvalIdentitySet"
-  }
+  "displayName":"Title of approval",
+  "description":"Details of approval",
+  "approvalType": "basic",
+  "allowEmailNotification": true
 }
 ```
 
@@ -109,5 +110,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/solutions/approval/operations/{operationId}
+Location: https://graph.microsoft.com/beta/solutions/approval/operations/1a837203-b794-4cea-8def-47a7d1f89335
 ```

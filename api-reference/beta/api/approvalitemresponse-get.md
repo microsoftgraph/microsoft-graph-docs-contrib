@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/approval/approvalItems/{approvalItemId}/responses/{approvalItemResponseId}
+GET https://graph.microsoft.com/beta/solutions/approval/approvalItems/7d096f68-c4fe-4967-99dc-df0248c33a77/responses/9d4c5640-1da7-4739-924f-d10b70c734c1
 ```
 
 
@@ -84,20 +84,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.approval.approvalItemResponse",
-    "createdDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.approvalIdentitySet"
-    },
-    "comments": "String",
-    "response": "String",
-    "owners": [
-      {
-        "@odata.type": "microsoft.graph.approvalIdentitySet"
-      }
-    ]
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/approval/approvalItems('7d096f68-c4fe-4967-99dc-df0248c33a77')/responses/$entity",
+  "id":"9d4c5640-1da7-4739-924f-d10b70c734c1",
+  "response":"Approve",
+  "comments":"Approve this request",
+  "createdBy":{
+      "user": {
+          "displayName": "Bill Gates",
+          "id": "f4d6b152-d3c6-4c27-9bc6-1cd5cdcb8473"
+        }
+  },
+  "createdDateTime":"2022-04-12T20:51:19Z",
+  "onBehalfOf":[
+    {
+        "user":{
+          "id":"39d1a7fb-5f54-4c89-b513-241683718c9b",
+          "displayName":"Satya Nadella"
+        }
+    }
+  ]
 }
 ```
 

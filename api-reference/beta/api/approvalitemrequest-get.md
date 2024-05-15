@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/approval/approvalItems/{approvalItemId}/requests/{approvalItemRequestId}
+GET https://graph.microsoft.com/beta/solutions/approval/approvalItems/7d096f68-c4fe-4967-99dc-df0248c33a77/requests/817d2849-c546-47f0-9c38-1a1a38ac6648
 ```
 
 
@@ -84,17 +84,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.approval.approvalItemRequest",
-    "createdDateTime": "String (timestamp)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/approval/approvalItems('7d096f68-c4fe-4967-99dc-df0248c33a77')/requests/$entity",
+    "id": "817d2849-c546-47f0-9c38-1a1a38ac6648",
+    "createdDateTime": "2024-05-14T17:59:23Z",
+    "isReassigned": false,
+    "reassignedFrom": null,
     "approver": {
-      "@odata.type": "microsoft.graph.approvalIdentitySet"
-    },
-    "reassignedFrom": {
-      "@odata.type": "microsoft.graph.approvalIdentitySet"
-    },
-    "isReassigned": "Boolean"
-  }
+        "group": null,
+        "user": {
+            "id": "fff4d3ad-2d6b-4294-a8d6-bdaab2ead051",
+            "displayName": null
+        }
+    }
 }
 ```
 

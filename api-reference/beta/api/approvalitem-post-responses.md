@@ -70,13 +70,12 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/approval/approvalItems/{approvalItemId}/responses
+POST https://graph.microsoft.com/beta/solutions/approval/approvalItems/d3a7405e-452a-47e0-9c35-9335225ba55d/responses
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.approval.approvalItemResponse",
-  "comments": "String",
-  "response": "String",
+  "response": "Approve",
+  "comments": "Approve this request"
 }
 ```
 
@@ -92,6 +91,6 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/solutions/approval/operations/{operationId}
+Location: https://graph.microsoft.com/beta/solutions/approval/operations/1a837203-b794-4cea-8def-47a7d1f89335
 ```
 
