@@ -1,6 +1,6 @@
 ---
 title: "Delete restoreSessionBase"
-description: "Delete a restoreSessionBase object."
+description: "Delete a Restore Session Base."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [restoreSessionBase](../resources/restoresessionbase.md) object.
+Delete a [restoreSessionBase](../resources/restoresessionbase.md).
 
 ## Permissions
 
@@ -21,10 +21,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "backuprestoreroot-delete-restoresessions-permissions"
+  "name": "restoresession-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-delete-restoresessions-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/restoresession-delete-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
 
 ## HTTP request
 
@@ -33,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /solutions/backupRestore/restoreSessions/{restoreSessionBaseId}/$ref
+DELETE /solutions/backupRestore/restoreSessions/{restoreSessionBaseId}
 ```
 
 ## Request headers
@@ -57,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_restoresessionbase"
+  "name": "restoresessionbase_delete"
 }
 -->
 ``` http

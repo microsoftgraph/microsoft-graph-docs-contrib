@@ -1,19 +1,19 @@
 ---
-title: "restoreSessionBase: activate"
-description: "Activates a draft restore session."
+title: "Activate restoreSessionBase"
+description: "Activates a draft Restore Session."
 author: "tkanaujia, maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# restoreSessionBase: activate
+# Activate restoreSessionBase
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activates a draft restore session corresponding to a given restore session id.
+Activates a draft [restoreSessionBase](../resources/restoresessionbase.md) identifed by an Id.
 
 ## Permissions
 
@@ -21,11 +21,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "restoresessionbase-activate-permissions"
+  "name": "restoresession-activate-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/restoresessionbase-activate-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/restoresession-activate-permissions.md)] -->
 
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
 ## HTTP request
 
 <!-- {
