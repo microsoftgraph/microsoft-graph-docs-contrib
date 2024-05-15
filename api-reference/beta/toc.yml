@@ -14223,7 +14223,7 @@ items:
                         href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
                       - name: Remove attributes from a user flow
                         href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
-                  - name: Authentication condition applications
+                  - name: Linked applications
                     href: resources/authenticationconditionapplication.md
                     items:
                       - name: List applications
@@ -15122,6 +15122,20 @@ items:
                         items:
                           - name: List
                             href: api/delegatedadmincustomer-list-servicemanagementdetails.md
+              - name: Partner security alert (preview)
+                items:
+                  - name: Overview
+                    displayName: CSP partner's customer security alerts API
+                    href: resources/partner-security-partnersecurityalert-api-overview.md
+                  - name: Partner security alert
+                    href: resources/partner-security-partnersecurityalert.md
+                    items:
+                      - name: List
+                        href: api/partner-security-partnersecurityalert-list-securityalerts.md
+                      - name: Get
+                        href: api/partner-security-partnersecurityalert-get.md
+                      - name: Update
+                        href: api/partner-security-partnersecurityalert-update.md  
       - name: Industry data ETL (preview)
         items:
           - name: Overview
@@ -15218,6 +15232,8 @@ items:
                 href: api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
               - name: Create
                 href: api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+              - name: Reset
+                href: api/industrydata-provisioningflow-reset.md
               - name: Administrative unit provisioning flow
                 href: resources/industrydata-administrativeunitprovisioningflow.md
                 items:
@@ -18599,6 +18615,11 @@ items:
                             href: api/virtualeventregistration-list.md
                           - name: Get
                             href: api/virtualeventregistration-get.md
+                      - name: Registration configuration (preview)
+                        href: resources/virtualeventwebinarregistrationconfiguration.md
+                        items:
+                          - name: Get
+                            href: api/virtualeventwebinarregistrationconfiguration-get.md
           - name: Devices (preview)
             items:
               - name: Provisioned device

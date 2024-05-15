@@ -116,22 +116,6 @@ Content-Type: application/json
 }
 ```
 
-``` http
-PATCH https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836
-If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
-Content-Type: application/json
-
-{
-  "accessDetails": {
-    "unifiedRoles": [
-      {
-        "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
-      },
-    ]
-  }
-}
-```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-delegatedadminrelationship-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

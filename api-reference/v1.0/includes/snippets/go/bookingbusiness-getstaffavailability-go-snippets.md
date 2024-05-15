@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,9 +15,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphsolutions.NewGetStaffAvailabilityPostRequestBody()
 staffIds := []string {
@@ -34,6 +34,7 @@ timeZone := "Pacific Standard Time"
 endDateTime.SetTimeZone(&timeZone) 
 requestBody.SetEndDateTime(endDateTime)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 getStaffAvailability, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").GetStaffAvailability().PostAsGetStaffAvailabilityPostResponse(context.Background(), requestBody, nil)
 
 
