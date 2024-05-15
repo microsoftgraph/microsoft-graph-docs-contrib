@@ -43,7 +43,7 @@ POST /deviceManagement/virtualEndpoint/reports/exportJobs
 ## Request body
 In the request body, supply a JSON representation of the [cloudPcExportJob](../resources/cloudpcexportjob.md) object.
 
-You can specify the following properties when creating a **cloudPcExportJob**.
+You can specify the following properties when you create a **cloudPcExportJob**.
 
 |Property|Type|Description|
 |:---|:---|:---|
