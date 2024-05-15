@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.admin.windows.updates.products.microsoft.graph.windowsUpdates.findByKbNumber(kbNumber={kbNumber}).find_by_kb_number_with_kb_number_request_builder import FindByKbNumberWithKbNumberRequestBuilder
+from msgraph.generated.admin.windows.updates.products.microsoft.graph.windows_updates.find_by_kb_number(kb_number={kb_number}).find_by_kb_number_with_kb_number_request_builder import FindByKbNumberWithKbNumberRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

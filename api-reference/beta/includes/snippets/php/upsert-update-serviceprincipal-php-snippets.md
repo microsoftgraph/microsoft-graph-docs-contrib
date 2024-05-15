@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\ServicePrincipals(appId='{appId}')\ServicePrincipalsWithAppIdRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Generated\ServicePrincipals_with_app_id\ServicePrincipalsWithAppIdRequestBuilderPatchRequestConfiguration;
 use Microsoft\Graph\Generated\Models\ServicePrincipal;
 
 

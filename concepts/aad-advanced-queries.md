@@ -131,20 +131,20 @@ These advanced query capabilities are supported only on directory objects and th
 
 The following table lists query scenarios on directory objects that are supported only in advanced queries:
 
-| Description | Example |
-|:--|:--|
-| Use of `$count` as a URL segment | [GET](https://developer.microsoft.com/graph/graph-explorer?request=groups%2F%24count&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/groups/$count` |
-| Use of `$count` as a query string parameter | [GET](https://developer.microsoft.com/graph/graph-explorer?request=servicePrincipals%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/servicePrincipals?$count=true` |
-| Use of `$count` in a `$filter` expression | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedLicenses%2F%24count%2Bne%2B0%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=assignedLicenses/$count eq 0&$count=true` |
-| Use of `$search` | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24search%3D%22displayName%3ABrowser%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/applications?$search="displayName:Browser"` |
-| Use of `$orderby` on select properties | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/applications?$orderby=displayName&$count=true` |
-| Use of `$filter` with the `endsWith` operator | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40outlook.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$count=true&$filter=endsWith(mail,'@outlook.com')` |
-| Use of `$filter` and `$orderby` in the same query | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$filter=startsWith( displayName, 'Box')&$count=true` |
-| Use of `$filter` with the `startsWith` operators on specific properties. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true` |
-| Use of `$filter` with `ne` and `not` operators | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true` |
-| Use of `$filter` with `not` and `startsWith` operators | [GET](https://developer.microsoft.com/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=NOT startsWith(displayName, 'Conf')&$count=true` |
-| Use of `$filter` on a collection with `endsWith` operator | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DproxyAddresses%2Fany(p%3AendsWith(p%2C%2B'contoso.com'))%26select%3Did%2CdisplayName%2Cproxyaddresses&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$count=true&$filter=proxyAddresses/any (p:endsWith(p, 'contoso.com'))&$select=id,displayName,proxyaddresses` |
-| Use of OData cast with transitive members list | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/me/transitiveMemberOf/microsoft.graph.group?$count=true` |
+| Description                                                              | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| :----------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use of `$count` as a URL segment                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=groups%2F%24count&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/groups/$count`                                                                                                                                                                                                                                     |
+| Use of `$count` as a query string parameter                              | [GET](https://developer.microsoft.com/graph/graph-explorer?request=servicePrincipals%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/servicePrincipals?$count=true`                                                                                                                                                                                                   |
+| Use of `$count` in a `$filter` expression                                | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedLicenses%2F%24count%2Bne%2B0%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=assignedLicenses/$count eq 0&$count=true`                                                                                                                             |
+| Use of `$search`                                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24search%3D%22displayName%3ABrowser%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/applications?$search="displayName:Browser"`                                                                                                                                                                   |
+| Use of `$orderby` on select properties                                   | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/applications?$orderby=displayName&$count=true`                                                                                                                                                             |
+| Use of `$filter` with the `endsWith` operator                            | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40outlook.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$count=true&$filter=endsWith(mail,'@outlook.com')`                                                                                                                                     |
+| Use of `$filter` and `$orderby` in the same query                        | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$filter=startsWith(displayName, 'Box')&$count=true`                                                                    |
+| Use of `$filter` with the `startsWith` operators on specific properties. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true`                                               |
+| Use of `$filter` with `ne` and `not` operators                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`                                                                         |
+| Use of `$filter` with `not` and `startsWith` operators                   | [GET](https://developer.microsoft.com/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                                                                    |
+| Use of `$filter` on a collection with `endsWith` operator                | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DproxyAddresses%2Fany(p%3AendsWith(p%2C%2B'contoso.com'))%26select%3Did%2CdisplayName%2Cproxyaddresses&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/users?$count=true&$filter=proxyAddresses/any (p:endsWith(p, 'contoso.com'))&$select=id,displayName,proxyaddresses` |
+| Use of OData cast with transitive members list                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `~/me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                                                                           |
 
 > [!NOTE]
 >
@@ -169,7 +169,7 @@ Properties of directory objects behave differently in their support for query pa
 
 The following tables summarize support for `$filter` operators by properties of directory objects, and indicates where querying is supported through advanced query capabilities.
 
-**Legend**
+### Legend
 
 + ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$filter` operator works by default for that property.
 + ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
@@ -188,7 +188,7 @@ The following tables summarize support for `$filter` operators by properties of 
 
 The following table summarizes support for `$orderby` by properties of directory objects and indicates where sorting is supported through advanced query capabilities.
 
-**Legend**
+### Legend
 
 + ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$orderby` operator works by default for that property.
 + ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$orderby` operator **requires** *advanced query parameters*, which are:
@@ -196,29 +196,30 @@ The following table summarizes support for `$orderby` by properties of directory
   + `$count=true` query string
 + Use of `$filter` and `$orderby` in the same query for directory objects always requires advanced query parameters. For more information, see [Query scenarios that require advanced query capabilities](#query-scenarios-that-require-advanced-query-capabilities).
 
-| Directory object   | Property name                 | Supports $orderby |
-|--------------------|-------------------------------|-------------------|
-| administrativeUnit | createdDateTime               | ![Advanced][AQP]  |
-| administrativeUnit | deletedDateTime               | ![Advanced][AQP]  |
-| administrativeUnit | displayName                   | ![Advanced][AQP]  |
-| application        | createdDateTime               | ![Advanced][AQP]  |
-| application        | deletedDateTime               | ![Advanced][AQP]  |
-| application        | displayName                   | ![Advanced][AQP]  |
-| orgContact         | createdDateTime               | ![Advanced][AQP]  |
-| orgContact         | displayName                   | ![Advanced][AQP]  |
-| device             | approximateLastSignInDateTime | ![Advanced][AQP]  |
-| device             | createdDateTime               | ![Advanced][AQP]  |
-| device             | deletedDateTime               | ![Advanced][AQP]  |
-| device             | displayName                   | ![Advanced][AQP]  |
-| group              | deletedDateTime               | ![Advanced][AQP]  |
-| group              | displayName                   | ![Default][RDS]   |
-| servicePrincipal   | createdDateTime               | ![Advanced][AQP]  |
-| servicePrincipal   | deletedDateTime               | ![Advanced][AQP]  |
-| servicePrincipal   | displayName                   | ![Advanced][AQP]  |
-| user               | createdDateTime               | ![Advanced][AQP]  |
-| user               | deletedDateTime               | ![Advanced][AQP]  |
-| user               | displayName                   | ![Default][RDS]   |
-| user               | userPrincipalName             | ![Default][RDS]   |
+| Directory object   | Property name                 | $orderby |
+| ------------------ | ----------------------------- | -------- |
+| administrativeUnit | createdDateTime               | ![][AQP] |
+| administrativeUnit | deletedDateTime               | ![][AQP] |
+| administrativeUnit | displayName                   | ![][AQP] |
+| application        | createdDateTime               | ![][AQP] |
+| application        | deletedDateTime               | ![][AQP] |
+| application        | displayName                   | ![][AQP] |
+| orgContact         | createdDateTime               | ![][AQP] |
+| orgContact         | displayName                   | ![][AQP] |
+| device             | approximateLastSignInDateTime | ![][AQP] |
+| device             | createdDateTime               | ![][AQP] |
+| device             | deletedDateTime               | ![][AQP] |
+| device             | displayName                   | ![][AQP] |
+| group              | deletedDateTime               | ![][AQP] |
+| group              | displayName                   | ![][RDS] |
+| servicePrincipal   | createdDateTime               | ![][AQP] |
+| servicePrincipal   | deletedDateTime               | ![][AQP] |
+| servicePrincipal   | displayName                   | ![][AQP] |
+| user               | createdDateTime               | ![][AQP] |
+| user               | deletedDateTime               | ![][AQP] |
+| user               | displayName                   | ![][RDS] |
+| user               | userPrincipalName             | ![][RDS] |
+| [*all others*]     | [*all others*]                | ![][NS]  |
 
 ## Error handling for advanced queries on directory objects
 
@@ -537,6 +538,6 @@ Content-type: application/json
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
 + [Explore advanced query capabilities for Microsoft Entra ID objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
 
-[RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
-[AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
-[NS]: ../concepts/images/yesandnosymbols/no.svg
+[RDS]: ../concepts/images/yesandnosymbols/greencheck.svg "Default"
+[AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg "Advanced"
+[NS]: ../concepts/images/yesandnosymbols/no.svg "Not Supported"

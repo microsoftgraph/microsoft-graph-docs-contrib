@@ -2,7 +2,7 @@
 title: "domainDnsUnavailableRecord resource type"
 description: "Indicates that serviceConfigurationRecords can't be generated."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "tafra00"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---

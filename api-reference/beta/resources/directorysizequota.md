@@ -4,14 +4,14 @@ description: "Represents a company's used and total directory quota."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
-author: "adimitui"
+author: "suawat"
 ---
 
 # directorySizeQuota resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a company's used and total directory quota.
+Represents a [tenant's](organization.md) used and total directory quota.
 
 ## Properties
 | Property   | Type|Description|

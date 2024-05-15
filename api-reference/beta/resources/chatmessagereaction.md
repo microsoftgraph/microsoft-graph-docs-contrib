@@ -21,13 +21,14 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|reactionType|String|Supported values are `like`, `angry`, `sad`, `laugh`, `heart`, `surprised`. |
+|createdDateTime|DateTimeOffset|The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|reactionContentUrl|String|The hosted content URL for the custom reaction type. |
+|reactionType|String|Supported values are Unicode characters and `custom`. Some backward-compatible reaction types include `like`, `angry`, `sad`, `laugh`, `heart`, and `surprised`. |
 |user|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|The user who reacted to the message.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -41,6 +42,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "createdDateTime": "String (timestamp)",
+  "reactionContentUrl": "String",
   "reactionType": "String",
   "user": {"@odata.type": "microsoft.graph.chatMessageReactionIdentitySet"}
 }
@@ -55,5 +57,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

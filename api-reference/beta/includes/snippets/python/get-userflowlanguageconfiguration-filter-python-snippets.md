@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.identity.b2cUserFlows.item.languages.languages_request_builder import LanguagesRequestBuilder
+from msgraph.generated.identity.b2c_user_flows.item.languages.languages_request_builder import LanguagesRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

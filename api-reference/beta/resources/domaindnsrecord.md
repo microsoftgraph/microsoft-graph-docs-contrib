@@ -2,7 +2,7 @@
 title: "domainDnsRecord resource type"
 description: "The domainDnsRecord entity is used to present DNS records."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "tafra00"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For each [domain](domain.md) in the tenant, you may be required to add DNS record(s) to the DNS zone file of the domain before the domain can be used by Microsoft Online Services. The **domainDnsRecord** entity is used to present such DNS records. This resource type is the base entity for the following resources:
+For each [domain](domain.md) in the tenant, you may be required to add DNS records to the DNS zone file of the domain before the domain can be used by Microsoft Online Services. The **domainDnsRecord** entity is used to present such DNS records. This resource type is the base entity for the following resources:
 + [domainDnsCnameRecord](domaindnscnamerecord.md)
 + [domainDnsMxRecord](domaindnsmxrecord.md)
 + [domainDnsSrvRecord](domaindnssrvrecord.md)
@@ -25,12 +25,12 @@ For each [domain](domain.md) in the tenant, you may be required to add DNS recor
 None.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |id|String| Unique identifier assigned to this entity. Not nullable, Read-only.|
-|isOptional|Boolean| If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. |
+|isOptional|Boolean| If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain. |
 |label|String| Value used when configuring the name of the DNS record at the DNS host. |
-|recordType|String| Indicates what type of DNS record this entity represents. The value can be one of the following: `CName`, `Mx`, `Srv`, `Txt`. |
+|recordType|String| Indicates what type of DNS record this entity represents. The value can be one of the following values: `CName`, `Mx`, `Srv`, `Txt`. |
 |supportedService|String| Microsoft Online Service or feature that has a dependency on this DNS record. Can be one of the following values: `null`, `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`.|
 |ttl|Int32| Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable. |
 

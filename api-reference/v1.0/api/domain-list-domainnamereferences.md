@@ -1,7 +1,7 @@
 ---
 title: "List domainNameReferences"
 description: "Retrieve a list of directoryObject with a reference to the domain."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

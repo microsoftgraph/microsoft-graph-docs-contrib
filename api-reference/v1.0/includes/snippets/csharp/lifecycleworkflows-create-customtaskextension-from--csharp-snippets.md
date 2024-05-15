@@ -21,26 +21,16 @@ var requestBody = new CustomTaskExtension
 		ResourceGroupName = "RG-LCM",
 		LogicAppWorkflowName = "ManagerAccess",
 	},
-	AuthenticationConfiguration = new CustomExtensionAuthenticationConfiguration
+	AuthenticationConfiguration = new AzureAdTokenAuthentication
 	{
 		OdataType = "#microsoft.graph.azureAdTokenAuthentication",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"resourceId" , "542dc01a-0b5d-4edc-b3f9-5cfe6393f557"
-			},
-		},
+		ResourceId = "542dc01a-0b5d-4edc-b3f9-5cfe6393f557",
 	},
 	ClientConfiguration = new CustomExtensionClientConfiguration
 	{
 		OdataType = "#microsoft.graph.customExtensionClientConfiguration",
+		MaximumRetries = 1,
 		TimeoutInMilliseconds = 1000,
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"maximumRetries" , 1
-			},
-		},
 	},
 	CallbackConfiguration = new CustomTaskExtensionCallbackConfiguration
 	{
