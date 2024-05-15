@@ -53,8 +53,8 @@ PATCH /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/sharepointprotectionpolicy.md)|
-|siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnit to be added/removed to the sharePointProtectionPolicy.|
+|displayName|String|Display Name of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|
+|siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnit to be added/removed to the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 
 ## Response
 
