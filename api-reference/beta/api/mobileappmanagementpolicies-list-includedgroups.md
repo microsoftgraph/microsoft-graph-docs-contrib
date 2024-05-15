@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the list of groups that are included in a mobile app management policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

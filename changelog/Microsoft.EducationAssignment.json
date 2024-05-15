@@ -653,7 +653,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **gradingCategories** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta) resource.",
           "Target": "educationAssignmentSettings"
-        },
+        },        
         {
           "Id": "5b87dca1-1f01-4c0a-8c5d-add65ebe8762",
           "ApiChange": "Resource",

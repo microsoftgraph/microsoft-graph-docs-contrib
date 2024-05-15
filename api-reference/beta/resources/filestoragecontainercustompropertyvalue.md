@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerCustomPropertyValue resource type"
-description: "Contains the custom property values stored in a fileStorageContainerCustomPropertyDictionary".
+description: "Contains the custom property values stored in a fileStorageContainerCustomPropertyDictionary"
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.add_formula_local_post_request_body import AddFormulaLocalPostRequestBody
+from msgraph.generated.drives.item.items.item.workbook.names.add_formula_local.add_formula_local_post_request_body import AddFormulaLocalPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

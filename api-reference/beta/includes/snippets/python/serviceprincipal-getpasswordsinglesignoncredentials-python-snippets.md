@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.get_password_single_sign_on_credentials_post_request_body import GetPasswordSingleSignOnCredentialsPostRequestBody
+from msgraph.generated.serviceprincipals.item.get_password_single_sign_on_credentials.get_password_single_sign_on_credentials_post_request_body import GetPasswordSingleSignOnCredentialsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

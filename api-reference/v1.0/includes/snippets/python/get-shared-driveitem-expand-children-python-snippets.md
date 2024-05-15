@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.shares.item.driveItem.drive_item_request_builder import DriveItemRequestBuilder
+from msgraph.generated.shares.item.drive_item.drive_item_request_builder import DriveItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

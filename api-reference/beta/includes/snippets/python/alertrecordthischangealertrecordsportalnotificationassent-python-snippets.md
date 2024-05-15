@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.change_alert_records_portal_notification_as_sent_post_request_body import ChangeAlertRecordsPortalNotificationAsSentPostRequestBody
+from msgraph.generated.devicemanagement.monitoring.alertrecords.microsoft_graph_device_management_change_alert_records_portal_notification_as_sent.change_alert_records_portal_notification_as_sent_post_request_body import ChangeAlertRecordsPortalNotificationAsSentPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

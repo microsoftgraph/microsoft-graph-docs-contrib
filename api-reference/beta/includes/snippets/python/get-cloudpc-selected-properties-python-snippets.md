@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.deviceManagement.virtualEndpoint.cloudPCs.item.cloud_p_c_item_request_builder import CloudPCItemRequestBuilder
+from msgraph.generated.device_management.virtual_endpoint.cloud_p_cs.item.cloud_p_c_item_request_builder import CloudPCItemRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = CloudPCItemRequestBuilder.CloudPCItemRequestBuilderGetQueryParameters(
-		select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult"],
+		select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult","allotmentDisplayName"],
 )
 
 request_configuration = CloudPCItemRequestBuilder.CloudPCItemRequestBuilderGetRequestConfiguration(

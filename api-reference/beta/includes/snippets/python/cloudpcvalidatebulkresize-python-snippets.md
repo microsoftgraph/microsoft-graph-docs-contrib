@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.validate_bulk_resize_post_request_body import ValidateBulkResizePostRequestBody
+from msgraph.generated.devicemanagement.virtualendpoint.cloudpcs.validate_bulk_resize.validate_bulk_resize_post_request_body import ValidateBulkResizePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 
