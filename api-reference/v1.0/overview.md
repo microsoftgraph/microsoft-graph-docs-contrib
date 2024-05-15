@@ -30,7 +30,7 @@ Some of these services are designed to enable rich scenarios around a [user](./r
 - [Subscribe to](./api/subscription-post-subscriptions.md) and [track changes](./api/event-delta.md) in a user's calendar, and tell the user when they're spending more than 80% of their time in meetings.
 - [Set automatic replies](./api/user-update-mailboxsettings.md#example-1) when a user is away from the office.
 - [Get the people who are most relevant to a user](./api/user-list-people.md), based on communication, collaboration, and business relationships.
-- Get the latest sales projection from a [chart](./resources/chart.md) in an Excel file in a user's OneDrive.
+- Get the latest sales projection from a [chart](./resources/workbookchart.md) in an Excel file in a user's OneDrive.
 - [Find the tasks assigned to a user in Planner](./api/planneruser-list-tasks.md).
 
 ### Microsoft 365 group use cases in v1.0
