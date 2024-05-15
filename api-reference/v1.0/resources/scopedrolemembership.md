@@ -1,6 +1,6 @@
 ---
 title: "scopedRoleMembership resource type"
-description: "A scoped-role membership describes a user's membership of a directory role, that is further scoped to an Administrative Unit.  Scoped-role membership provides a mechanism to allow a tenant-wide company administrator to delegate administrative privileges to a user to manage users and groups in a subset of the organization.
+description: "A scoped-role membership describes a user's membership of a directory role, that is further scoped to an Administrative Unit.  Scoped-role membership provides a mechanism to allow a tenant-wide company administrator to delegate administrative privileges to a user to manage users and groups in a subset of the organization."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-directory-management"
