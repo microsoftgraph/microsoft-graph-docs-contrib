@@ -14231,7 +14231,7 @@ items:
                         href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
                       - name: Remove attributes from a user flow
                         href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
-                  - name: Authentication condition applications
+                  - name: Linked applications
                     href: resources/authenticationconditionapplication.md
                     items:
                       - name: List applications
