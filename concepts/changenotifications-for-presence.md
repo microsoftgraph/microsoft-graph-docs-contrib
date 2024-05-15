@@ -99,7 +99,7 @@ Basic notifications notify subscribers about the identity of which resource chan
 ```
 
 ### Rich presence notifications 
-Rich notifications notify subscribers about the changes that occurred to a resource. For rich presence notifications, subscribers will be contain data about changes to user's `Availability` and `Activity`. The data here however, is encrypted for as a security measure. Please see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) on details subscribing to rich notifications.
+Rich notifications notify subscribers about the changes that occurred to a resource. For rich presence notifications, subscribers will be notified when the user's `Availability` and `Activity` has changed. The data here however, is encrypted as a security measure. Please see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) on details subscribing to rich notifications.
 > [Note]:
 > The availability and activity can be the same value.
 
