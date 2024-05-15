@@ -13,7 +13,7 @@ ms.topic: overview
 
 The reference content in this section documents the Microsoft Graph REST APIs in the `beta` endpoint. The beta endpoint includes APIs that are currently in preview and aren't yet generally available. We invite you to try these APIs and provide your feedback.
 
-> [!NOTE]
+> [!CAUTION]
 > The APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps.
 
 ## Call the beta endpoint
