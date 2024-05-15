@@ -5,7 +5,7 @@ author: "ashyasingh"
 ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.subservice: entra-permissions-management
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
 # superAwsResourceFinding resource type

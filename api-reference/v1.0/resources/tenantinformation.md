@@ -13,6 +13,13 @@ Namespace: microsoft.graph
 
 Information about your Microsoft Entra tenant that is publicly displayed to users in other Microsoft Entra tenants.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Find tenant by domain name](../api/tenantrelationship-findtenantinformationbydomainname.md) | tenantInformation | Given a domain name, search for a tenant and read its information. |
+| [Find tenant by tenant ID](../api/tenantrelationship-findtenantinformationbytenantid.md) | tenantInformation | Given a tenant ID, search for a tenant and read its information. |
+
 ## Properties
 
 |Property|Type|Description|

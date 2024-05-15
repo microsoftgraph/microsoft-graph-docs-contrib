@@ -106,7 +106,6 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 ---
 
-
 ### Response
 
 The following example shows the response.
