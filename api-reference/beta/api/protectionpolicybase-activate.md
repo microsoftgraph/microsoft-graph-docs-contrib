@@ -66,7 +66,7 @@ Activate an inactive Protection Policy
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "protectionpolicybasethis.activate"
+  "name": "protectionpolicybase_activate_example_1"
 }
 -->
 
@@ -144,7 +144,7 @@ Activate an already active Protection Policy
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "protectionpolicybasethis.activate"
+  "name": "protectionpolicybase_activate_example_2"
 }
 -->
 

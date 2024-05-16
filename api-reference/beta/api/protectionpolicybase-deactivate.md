@@ -66,7 +66,7 @@ Deactivating the Protection Policy when it is in active state.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "protectionpolicybasethis.deactivate"
+  "name": "protectionpolicybase_deactivate_example_1
 }
 -->
 
@@ -144,7 +144,7 @@ Deactivating the Protection Policy when it is in updating state.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "protectionpolicybasethis.deactivate"
+  "name": "protectionpolicybase_deactivate_example_2"
 }
 -->
 

@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 <!--[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-permissions.md)]-->
+
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
@@ -66,11 +67,13 @@ If successful, this method returns a `200 OK` response code and a [driveProtecti
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessprotectionpolicy_get_driveinclusionrule"
 }
 -->
+
 ``` http
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/userDriveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 Content-Type: application/json
@@ -82,15 +85,17 @@ Authorization: Bearer <Access-Token>
 ### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.driveProtectionRule"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
-Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/userDriveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/userDriveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
    "@odata.type": "#microsoft.graph.userDriveProtectionRule",

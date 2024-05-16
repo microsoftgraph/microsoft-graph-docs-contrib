@@ -85,6 +85,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions
 Content-Type: application/json
+
 {
   "siteRestoreArtifacts": [
     {
