@@ -81,11 +81,13 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "sharepointprotectionpolicy.create"
+  "name": "sharepointprotectionpolicy_create"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies
 Authorization: Bearer <Access-Token>

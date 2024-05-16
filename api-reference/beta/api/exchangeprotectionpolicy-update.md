@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [exch
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_exchangeprotectionpolicy"
+  "name": "exchangeprotectionpolicy_update"
 }
 -->
 ``` http
@@ -116,7 +116,7 @@ Content–Type: application / json
 Odata–Version: 4.0
 {
   "displayName": "Exchange Policy - Inadvertent data loss",
-  "userMailboxProtectionUnits@delta": [
+  "mailboxProtectionUnits@delta": [
     {
       "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
       "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",

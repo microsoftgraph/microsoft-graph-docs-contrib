@@ -23,10 +23,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "sharepointprotectionpolicy-get-siteinclusionrule-permissions"
+  "name": "sharepointprotectionpolicy-get-siteinclusionrules-permissions"
 }
 -->
-<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-get-siteinclusionrule-permissions.md)]-->
+<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-get-siteinclusionrules-permissions.md)]-->
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
@@ -69,9 +69,10 @@ If successful, this method returns a `200 OK` response code and a [siteProtectio
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "sharepointprotectionpolicy_get_siteinclusionrule"
+  "name": "sharepointprotectionpolicy_get_siteinclusionrules"
 }
 -->
+
 ``` http
 GET /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 Content-Type: application/json
@@ -89,12 +90,13 @@ The following example shows the response.
   "@odata.type": "microsoft.backupRestore.siteProtectionRule"
 }
 -->
+
 ``` http
-200 OK
+HTTP/1.1 200 OK
 Content-Location: /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
-   "@odata.type": "#microsoft.graph.siteProtectionRule",
+   "@odata.type": "#microsoft.backupRestore.siteProtectionRule",
    "id":"61633878-8321-4950-bfaf-ed285bdd1461",
    "status" : "completed",
    "createdBy":{

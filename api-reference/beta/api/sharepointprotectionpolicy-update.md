@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_sharepointprotectionpolicy"
+  "name": "sharepointprotectionpolicy_update"
 }
 -->
 ``` http

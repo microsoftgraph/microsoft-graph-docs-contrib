@@ -23,10 +23,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "exchangeprotectionpolicy-get-mailboxinclusionrule-permissions"
+  "name": "exchangeprotectionpolicy-get-mailboxinclusionrules-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-get-mailboxinclusionrule-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-get-mailboxinclusionrules-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -84,11 +90,11 @@ The following example shows the response.
 }
 -->
 ``` http
-200 OK
+Http/1.1 200 OK
 Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
-   "@odata.type": "#microsoft.graph.mailboxProtectionRule",
+   "@odata.type": "#microsoft.backupRestore.mailboxProtectionRule",
    "id":"61633878-8321-4950-bfaf-ed285bdd1461",
    "status" : "active",
    "createdBy":{

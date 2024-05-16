@@ -83,7 +83,7 @@ If successful, this method returns a `201 Created` response code and a [exchange
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "exchangeprotectionpolicy.create"
+  "name": "exchangeprotectionpolicy_create"
 }
 -->
 
@@ -108,7 +108,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 201 Created
-Content–Type: application / json
+Content–Type: application/json
 Content-Location: solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-8f0b-d0bbf794bec7
 Odata – Version: 4.0
 
