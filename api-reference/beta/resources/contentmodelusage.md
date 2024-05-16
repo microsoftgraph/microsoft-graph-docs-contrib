@@ -1,6 +1,6 @@
 ---
 title: "contentModelUsage resource type"
-description: "Provides information on where, by whom, and when a [contentModel](../resources/contentmodel.md) is applied."
+description: "Provides information on where, by whom, and when a content model is applied."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
