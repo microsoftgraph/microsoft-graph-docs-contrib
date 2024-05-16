@@ -33,6 +33,9 @@
       "title",
       "description",
       "doc_type"
+    ],
+    "textToRemoveFromPropertyNames": [
+      "(deprecated)"
     ]
   },
   "schemaDiffConfig": {
