@@ -95,7 +95,7 @@ Content-Location: /solutions/backupRestore/ProtectionPolicies('61633878-8321-495
 {
    "@odata.context":" /solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
    "@odata.id":"/solutions/backupRestore/ProtectionPolicies(61633878-8321-4950-bfaf-ed285bdd1461)",
-   "@odata.type": "#microsoft.graph.exchangeProtectionPolicy"
+   "@odata.type": "#microsoft.graph.exchangeProtectionPolicy",
    "id":"61633878-8321-4950-bfaf-ed285bdd1461",
    "displayName":"Exchange Protection Policy",
    "status":"updating",

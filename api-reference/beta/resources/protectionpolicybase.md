@@ -39,7 +39,6 @@ This is an abstract type.
 |lastModifiedDateTime|DateTimeOffset|Identity of the person who last modified this policy.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Complex type containing details of all the retention settings for the policy.|
 |status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|Status of the policy. It is an aggregated status of protection units.The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
-|
 
 ### protectionPolicyStatus values
 |Member | Description |

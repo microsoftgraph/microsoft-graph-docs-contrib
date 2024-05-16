@@ -24,7 +24,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |[Create siteProtectionRule](../api/sharepointprotectionpolicy-create-siteinclusionrules.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Create a new [siteProtectionRule](../resources/siteprotectionrule.md).|
 |[Get siteProtectionRule](../api/sharepointprotectionpolicy-get-siteinclusionrules.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Read the properties and relationships of a [siteProtectionRule](../resources/siteprotectionrule.md).|
 |[Delete siteProtectionRule](../api/sharepointprotectionpolicy-delete-siteinclusionrules.md)|None|Delete a [siteProtectionRule](../resources/siteprotectionrule.md).|
-|[run](../api/siteprotectionrule-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
+|[run](../api/sharepointprotectionpolicy-run-siteinclusionrules.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
 <!-- |[Update siteProtectionRule](../api/siteprotectionrule-update.md)|[siteProtectionRule](../resources/siteprotectionrule.md)|Update the properties of a [siteProtectionRule](../resources/siteprotectionrule.md) object.| -->
 
 ## Properties
@@ -38,9 +38,9 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this rule .|
 |siteExpression|String|Contains site expression.[siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples)|
-|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-examples )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionRuleStatus](../resources/siteprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
- ### siteExpression examples
+### siteExpression examples
 The site expression can be of following formats.
 | Property                                 | Operator                                | Example                                                                  |
 | ------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------- |
