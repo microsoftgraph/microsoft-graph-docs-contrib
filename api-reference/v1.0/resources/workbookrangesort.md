@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ```
 
 ##### Response
-The following example shows the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

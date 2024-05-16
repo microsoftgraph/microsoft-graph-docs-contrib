@@ -111,7 +111,7 @@ The following JSON representation shows the resource type.
     "mailboxLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
     },
-    "pauseAfterDownload": "Boolean",
+    "pauseAfterEstimate": "Boolean",
     "regulations": [
         "String"
     ],
