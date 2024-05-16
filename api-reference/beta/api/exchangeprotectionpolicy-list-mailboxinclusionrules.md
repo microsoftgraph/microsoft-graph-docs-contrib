@@ -85,7 +85,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.mailboxProtectionRule"
+  "@odata.type": "microsoft.graph.mailboxProtectionRule"
 }
 -->
 ``` http

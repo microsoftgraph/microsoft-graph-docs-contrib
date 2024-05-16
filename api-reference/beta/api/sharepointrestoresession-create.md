@@ -59,12 +59,12 @@ You can specify the following properties when creating a **sharePointRestoreSess
  |:---|:---|:---|
  |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of [siteRestoreArtifact](../resources/siterestoreartifact.md)|
 <!--|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
-|createdDateTime|DateTimeOffset|DateTimeOffset|The time of completion of the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The identity of person who created the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
-|completedDateTime|DateTimeOffset|The time of creation of the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
-|error|[microsoft.graph.publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.| -->
+|createdDateTime|DateTimeOffset|DateTimeOffset|The time of completion of the restore session. Inherited from [microsoft.graph.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
+|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The identity of person who created the restore session. Inherited from [microsoft.graph.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
+|completedDateTime|DateTimeOffset|The time of creation of the restore session. Inherited from [microsoft.graph.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session. Inherited from [microsoft.graph.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session. Inherited from [microsoft.graph.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
+|error|[microsoft.graph.publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error. Inherited from [microsoft.graph.restoreSessionBase](../resources/restoresessionbase.md). Optional.| -->
 
 
 

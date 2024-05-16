@@ -83,7 +83,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.backupRestore.driveRestoreArtifact)"
+  "@odata.type": "Collection(microsoft.graph.driveRestoreArtifact)"
 }
 -->
 ``` http
@@ -93,7 +93,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.backupRestore.driveRestoreArtifact",
+      "@odata.type": "#microsoft.graph.driveRestoreArtifact",
       "id": "a558944c-e98a-ae56-cc8e-dc6aaf63fd09",
       "destinationType": "String",
       "status": "String",

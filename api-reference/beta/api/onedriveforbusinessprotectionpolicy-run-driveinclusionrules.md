@@ -79,7 +79,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.protectionRuleBase"
+  "@odata.type": "microsoft.graph.protectionRuleBase"
 }
 -->
 ``` http
@@ -89,7 +89,7 @@ Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies
 
 {
   "value": {
-    "@odata.type": "#microsoft.backupRestore.protectionRuleBase",
+    "@odata.type": "#microsoft.graph.protectionRuleBase",
     "id": "String (identifier)",
     "status": "String",
     "createdDateTime": "String (timestamp)",

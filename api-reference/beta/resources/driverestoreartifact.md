@@ -64,7 +64,7 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|restorePoint|[restorePoint](../resources/restorepoint.md)|Restore artifact refers to the onedrive unit's restore point and destination relevant details that can be used to restore it. Inherited from [microsoft.backupRestore.restoreArtifactBase](../resources/restoreartifactbase.md)|
+|restorePoint|[restorePoint](../resources/restorepoint.md)|Restore artifact refers to the onedrive unit's restore point and destination relevant details that can be used to restore it. Inherited from [microsoft.graph.restoreArtifactBase](../resources/restoreartifactbase.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -72,7 +72,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.driveRestoreArtifact",
-  "baseType": "microsoft.backupRestore.restoreArtifactBase",
+  "baseType": "microsoft.graph.restoreArtifactBase",
   "openType": false
 }
 -->

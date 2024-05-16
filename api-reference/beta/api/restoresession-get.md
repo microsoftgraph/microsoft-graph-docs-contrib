@@ -82,7 +82,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.restoreSessionBase"
+  "@odata.type": "microsoft.graph.restoreSessionBase"
 }
 -->
 ``` http
@@ -91,7 +91,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.backupRestore.restoreSessionBase",
+    "@odata.type": "#microsoft.graph.restoreSessionBase",
     "id": "8c3b5c30-3899-8712-95f9-f3c6b4e5324d",
     "status": "String",
     "createdDateTime": "String (timestamp)",

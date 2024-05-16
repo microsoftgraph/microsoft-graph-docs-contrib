@@ -106,7 +106,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.restorePointSearchResponse"
+  "@odata.type": "microsoft.graph.restorePointSearchResponse"
 }
 -->
 ``` http

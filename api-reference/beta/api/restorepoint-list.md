@@ -83,7 +83,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.backupRestore.restorePoint)"
+  "@odata.type": "Collection(microsoft.graph.restorePoint)"
 }
 -->
 ``` http
@@ -93,7 +93,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.backupRestore.restorePoint",
+      "@odata.type": "#microsoft.graph.restorePoint",
       "id": "897ad3fa-fc5a-9f41-b566-969202fc1d99",
       "protectionDateTime": "String (timestamp)",
       "expirationDateTime": "String (timestamp)",

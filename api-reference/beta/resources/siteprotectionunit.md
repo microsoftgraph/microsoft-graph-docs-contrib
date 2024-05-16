@@ -56,7 +56,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.siteProtectionUnit",
-  "baseType": "microsoft.backupRestore.protectionUnitBase",
+  "baseType": "microsoft.graph.protectionUnitBase",
   "openType": false
 }
 -->

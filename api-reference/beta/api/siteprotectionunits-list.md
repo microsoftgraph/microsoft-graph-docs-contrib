@@ -86,7 +86,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.siteProtectionUnit"
+  "@odata.type": "microsoft.graph.siteProtectionUnit"
 }
 -->
 ``` http
@@ -297,7 +297,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.siteProtectionUnit"
+  "@odata.type": "microsoft.graph.siteProtectionUnit"
 }
 -->
 ``` http

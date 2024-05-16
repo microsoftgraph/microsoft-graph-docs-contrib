@@ -82,7 +82,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.backupRestore.mailboxRestoreArtifact)"
+  "@odata.type": "Collection(microsoft.graph.mailboxRestoreArtifact)"
 }
 -->
 ``` http
@@ -92,7 +92,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.backupRestore.mailboxRestoreArtifact",
+      "@odata.type": "#microsoft.graph.mailboxRestoreArtifact",
       "id": "90511b62-94fa-a267-c848-fa9d58af8af2",
       "destinationType": "String",
       "status": "String",

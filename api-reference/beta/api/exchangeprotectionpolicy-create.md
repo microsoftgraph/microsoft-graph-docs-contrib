@@ -102,7 +102,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.exchangeProtectionPolicy"
+  "@odata.type": "microsoft.graph.exchangeProtectionPolicy"
 }
 -->
 

@@ -87,7 +87,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.siteProtectionRule"
+  "@odata.type": "microsoft.graph.siteProtectionRule"
 }
 -->
 
@@ -96,7 +96,7 @@ HTTP/1.1 200 OK
 Content-Location: /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
-   "@odata.type": "#microsoft.backupRestore.siteProtectionRule",
+   "@odata.type": "#microsoft.graph.siteProtectionRule",
    "id":"61633878-8321-4950-bfaf-ed285bdd1461",
    "status" : "completed",
    "createdBy":{

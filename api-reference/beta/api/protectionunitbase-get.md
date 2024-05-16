@@ -80,7 +80,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.protectionUnitBase"
+  "@odata.type": "microsoft.graph.protectionUnitBase"
 }
 -->
 ``` http

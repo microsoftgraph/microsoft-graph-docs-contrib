@@ -83,7 +83,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.backupRestore.siteRestoreArtifact)"
+  "@odata.type": "Collection(microsoft.graph.siteRestoreArtifact)"
 }
 -->
 ``` http
@@ -93,7 +93,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.backupRestore.siteRestoreArtifact",
+      "@odata.type": "#microsoft.graph.siteRestoreArtifact",
       "id": "4459abc4-2f9c-8250-f7cb-f8ebecea34f5",
       "destinationType": "String",
       "status": "String",

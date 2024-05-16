@@ -67,7 +67,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.exchangeProtectionPolicy",
-  "baseType": "microsoft.backupRestore.protectionPolicyBase",
+  "baseType": "microsoft.graph.protectionPolicyBase",
   "openType": false
 }
 -->

@@ -103,7 +103,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.sharePointProtectionPolicy"
+  "@odata.type": "microsoft.graph.sharePointProtectionPolicy"
 }
 -->
 

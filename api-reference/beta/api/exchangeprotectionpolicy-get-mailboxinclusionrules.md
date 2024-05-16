@@ -86,7 +86,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.mailboxProtectionRule"
+  "@odata.type": "microsoft.graph.mailboxProtectionRule"
 }
 -->
 ``` http
@@ -94,7 +94,7 @@ Http/1.1 200 OK
 Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
-   "@odata.type": "#microsoft.backupRestore.mailboxProtectionRule",
+   "@odata.type": "#microsoft.graph.mailboxProtectionRule",
    "id":"61633878-8321-4950-bfaf-ed285bdd1461",
    "status" : "active",
    "createdBy":{
