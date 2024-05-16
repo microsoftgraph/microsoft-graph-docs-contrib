@@ -1,7 +1,7 @@
 ---
 title: "List mailboxRestoreArtifact"
 description: "Get a list of the mailboxRestoreArtifact and their properties for an exchangeRestoreSession"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

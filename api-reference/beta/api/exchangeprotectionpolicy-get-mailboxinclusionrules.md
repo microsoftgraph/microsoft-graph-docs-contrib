@@ -1,7 +1,7 @@
 ---
 title: "Get mailboxInclusionRule"
 description: "Get Mailbox Inclusion Rule for an Exchange Protection Policy."
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

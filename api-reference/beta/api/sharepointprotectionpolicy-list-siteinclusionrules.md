@@ -1,7 +1,7 @@
 ---
 title: "List siteInclusionRules"
 description: "List Site Inclusion Rules in a SharePoint Protection Policy."
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

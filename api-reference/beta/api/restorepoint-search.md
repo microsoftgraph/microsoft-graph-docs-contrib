@@ -1,7 +1,7 @@
 ---
 title: "restorePoint: search"
 description: "Search Restore Points for Protection Units."
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

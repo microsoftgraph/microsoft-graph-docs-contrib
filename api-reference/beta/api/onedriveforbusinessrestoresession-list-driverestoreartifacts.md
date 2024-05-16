@@ -1,7 +1,7 @@
 ---
 title: "List driveRestoreArtifact"
 description: "Get a list of the driveRestoreArtifact and their properties for an oneDriveForBusinessRestoreSession for the tenant"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

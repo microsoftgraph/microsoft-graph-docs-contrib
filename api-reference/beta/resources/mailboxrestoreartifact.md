@@ -1,7 +1,7 @@
 ---
 title: "mailboxRestoreArtifact resource type"
 description: "Describes mailbox restore artifact and it's properties"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

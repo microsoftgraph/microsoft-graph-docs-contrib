@@ -1,7 +1,7 @@
 ---
 title: "List protectionPolicyBase"
 description: "List all the Protection Policies available in a tenant."
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "mailboxProtectionRule resource type"
 description: "Describes mailbox protection rule and its properties"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Create a new oneDriveForBusinessProtectionPolicy"
 description: "Create a Protection Policy for a M365 service OneDrive"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

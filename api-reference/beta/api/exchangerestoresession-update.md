@@ -1,7 +1,7 @@
 ---
 title: "Update exchangeRestoreSession"
 description: "Update the properties of an Exchange Restore Session."
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

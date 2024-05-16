@@ -1,7 +1,7 @@
 ---
 title: "Create oneDriveForBusinessRestoreSession"
 description: "Create a new OneDrive for Business Restore Session."
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

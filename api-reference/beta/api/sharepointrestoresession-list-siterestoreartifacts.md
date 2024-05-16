@@ -1,7 +1,7 @@
 ---
 title: "List siteRestoreArtifact"
 description: "List all the siteRestoreArtifact for a SharePoint Restore Session for the tenant."
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

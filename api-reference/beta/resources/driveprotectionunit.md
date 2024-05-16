@@ -1,7 +1,7 @@
 ---
 title: "driveProtectionUnit resource type"
 description: "Describes a drive protection unit"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

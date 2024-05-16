@@ -1,7 +1,7 @@
 ---
 title: "Create sharePointRestoreSession"
 description: "Create a new SharePoint Restore Session."
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

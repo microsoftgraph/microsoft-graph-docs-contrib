@@ -1,7 +1,7 @@
 ---
 title: "protectionPolicyBase resource type"
 description: "Describes protection policy base type resource and it's properties"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

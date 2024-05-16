@@ -1,7 +1,7 @@
 ---
 title: "Get protectionUnitBase"
 description: "Get a Protection Unit"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storge"
 doc_type: apiPageType

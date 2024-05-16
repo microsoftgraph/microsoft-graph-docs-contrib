@@ -1,7 +1,7 @@
 ---
 title: "List oneDriveForBusinessRestoreSession objects"
 description: "Get a list of the oneDriveForBusinessRestoreSession objects and their properties."
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType

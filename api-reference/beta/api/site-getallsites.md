@@ -2,7 +2,7 @@
 title: "sites: getAllSites"
 description: "List all sites across geographies in an organization - OneDrive API"
 author: tushar20
-ms.author: tkanaujia
+ms.author: tushar20
 ms.date: 5/3/2023
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"

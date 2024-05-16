@@ -1,7 +1,7 @@
 ---
 title: "Get driveInclusionRule"
 description: "Get Drive Inclusion Rule for a OneDriveForBusiness Protection Policy"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

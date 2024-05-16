@@ -1,7 +1,7 @@
 ---
 title: "List protectionUnitBase"
 description: "List all protectionUnits"
-author: "tkanaujia, maniksingh"
+author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storge"
 doc_type: apiPageType
