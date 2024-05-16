@@ -1,5 +1,5 @@
 ---
-title: "applicationSignInDetailedSummary resource type"
+title: "applicationSignInSummary resource type"
 description: "Represents an application sign-in summary."
 ms.localizationpriority: medium
 author: "egreenberg14"
@@ -51,7 +51,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "appDisplayName": "String",
-  "appId": "String (identifier)",
   "failedSignInCount": 1024,
   "successPercentage": 1024,
   "successfulSignInCount": 1024

@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphauditlogs "github.com/microsoftgraph/msgraph-beta-sdk-go/auditlogs"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 
 requestTop := int32(1)
@@ -25,6 +25,7 @@ configuration := &graphauditlogs.AuditLogsCustomSecurityAttributeAuditsRequestBu
 	QueryParameters: requestParameters,
 }
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 customSecurityAttributeAudits, err := graphClient.AuditLogs().CustomSecurityAttributeAudits().Get(context.Background(), configuration)
 
 
