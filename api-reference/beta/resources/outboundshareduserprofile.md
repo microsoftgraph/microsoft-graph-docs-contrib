@@ -1,8 +1,8 @@
 ---
 title: "outboundSharedUserProfile resource type"
 description: "Represents a Microsoft Entra user that has shared their profile data with an external Microsoft Entra tenant using B2B direct connect."
-author: "jkdouglas"
-ms.reviewer: mapamu
+author: "yyuank"
+ms.reviewer: mapamu, iamut
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
