@@ -79,7 +79,7 @@ If successful, this action returns a `200 OK` response code and a [restorePointS
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "restorepointthis.search"
+  "name": "restorepoint_search"
 }
 -->
 ``` http

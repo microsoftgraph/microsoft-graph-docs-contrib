@@ -24,7 +24,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "protectionunitbase-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/protectionunitbase-list-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/protectionunitbase-list-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+
 
 ## HTTP request
 
@@ -61,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a [protectionUni
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_protectionunitbase"
+  "name": "protectionunitbase_list"
 }
 -->
 ``` http

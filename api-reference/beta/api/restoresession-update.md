@@ -24,7 +24,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "restoresessionbase-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/restoresessionbase-update-permissions.md)]
+<!-- [!INCLUDE [permissions-table](../includes/permissions/restoresessionbase-update-permissions.md)] -->
+
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+
 
 ## HTTP request
 
@@ -72,7 +79,7 @@ If successful, this method returns a `200 OK` response code and an updated [rest
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_restoresessionbase"
+  "name": "restoresessionbase_update"
 }
 -->
 ``` http
@@ -80,7 +87,7 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/restoreSessions/{
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.restoreSessionBase",
+  "@odata.type": "#microsoft.backupRestore.restoreSessionBase",
   "status": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
@@ -91,7 +98,6 @@ Content-Type: application/json
   }
 }
 ```
-
 
 ### Response
 
@@ -107,7 +113,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.restoreSessionBase",
+  "@odata.type": "#microsoft.backupRestore.restoreSessionBase",
   "id": "8c3b5c30-3899-8712-95f9-f3c6b4e5324d",
   "status": "String",
   "createdDateTime": "String (timestamp)",

@@ -80,7 +80,7 @@ If successful, this method returns a `201 Created` response code and an [exchang
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_exchangerestoresession"
+  "name": "exchangerestoresession_create"
 }
 -->
 ``` http
