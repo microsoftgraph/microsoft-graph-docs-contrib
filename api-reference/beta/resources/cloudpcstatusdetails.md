@@ -1,5 +1,5 @@
 ---
-title: "cloudPcStatusDetails resource type"
+title: "cloudPcStatusDetails resource type (deprecated)"
 description: "Represents details about the status of a Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcStatusDetails resource type
+# cloudPcStatusDetails resource type (deprecated)
 
 Namespace: microsoft.graph
 
