@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**TODO: This is a sample desciption**
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
