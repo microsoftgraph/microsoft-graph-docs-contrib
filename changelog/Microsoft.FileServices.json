@@ -208,6 +208,14 @@
         },
         {
           "Id": "1c40646d-fdfa-4b32-88b8-3ec43dea8f04",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Dictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the **Dictionary** resource.",
+          "Target": "fileStorage"
+        },
+        {
+          "Id": "1c40646d-fdfa-4b32-88b8-3ec43dea8f04",
           "ApiChange": "Property",
           "ChangedApiName": "fileStorageContainerStatus",
           "ChangeType": "Addition",
