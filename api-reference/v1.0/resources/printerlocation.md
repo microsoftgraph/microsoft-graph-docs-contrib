@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
   "longitude": "Double",
   "altitudeInMeters": "Integer",
   "streetAddress": "String",
-  "subunit": [
+  "subUnit": [
     "String"
   ],
   "city": "String",
