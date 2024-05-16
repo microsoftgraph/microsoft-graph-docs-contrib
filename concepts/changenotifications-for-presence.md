@@ -77,7 +77,7 @@ Change notifications for presence events are triggered when changes to a user's 
 
 ### Example: Basic presence notifications
 > [!NOTE]
-> Since basic notifications do not include resource data besides the ID of which resource data changed. A separate GET presence call to graph is required to access user presence data. For more information, see [GET presence](/graph/api/presence-get).
+> Because basic notifications only include the ID of the resource that changed, you need to make a separate GET presence call to Microsoft Graph to access user presence data. For more information, see [GET presence](/graph/api/presence-get).
 
 ```json
 {
