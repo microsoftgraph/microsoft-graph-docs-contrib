@@ -1,7 +1,7 @@
 ---
 title: "List driveProtectionUnits"
 description: "List all Drive Protection Units"
-author: "tushar20, manikantsinghms"
+author: tushar20, manikantsinghms
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
