@@ -15,7 +15,7 @@ Represents the archival details of a [siteCollection](/graph/sitecollection).
 
 | Property      | Type   | Description                                    |
 |:------------- |:------ |:-----------------------------------------------|
-| archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Returned only on `$select`.|
+| archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Returned only on `$select`. The possible values are: `recentlyArchived`, `fullyArchived`, `reactivating`, `unknownFutureValue`.|
 
 ## siteArchiveStatus values
 
