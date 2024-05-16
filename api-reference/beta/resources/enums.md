@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### groupAccessType values
+
+| Member             |
+|:-------------------|
+| none               |
+| private            |
+| secret             |
+| public             |
+
 ### fileStorageContainerStatus values
 
 | Member             |
@@ -4773,6 +4782,7 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |unknownFutureValue|
 
+<<<<<<< HEAD
 ### trustFrameworkKeyStatus values
 
 |Member|
@@ -4830,3 +4840,13 @@ Possible values for user account types (group membership), per Windows definitio
 |provisioningCompleted|
 |unknownFutureValue|
 
+=======
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+>>>>>>> ccd333be3709b45701f54a7e7c7a83bfe8b7536e
