@@ -18,6 +18,15 @@ Namespace: microsoft.graph
 | tenantOwned        |
 | unknownfuturevalue |
 
+### groupAccessType values
+
+| Member             |
+|:-------------------|
+| none               |
+| private            |
+| secret             |
+| public             |
+
 ### fileStorageContainerStatus values
 
 | Member             |
@@ -4778,5 +4787,14 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
 |unknownFutureValue|
 
