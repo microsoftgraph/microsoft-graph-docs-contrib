@@ -15155,6 +15155,19 @@ items:
                 href: api/industrydata-azuredatalakeconnector-delete.md
               - name: Get upload session
                 href: api/industrydata-azuredatalakeconnector-getuploadsession.md
+          - name: One Roster api data connector
+            href: resources/industrydata-onerosterapidataconnector.md
+            items:
+              - name: List
+                href: api/industrydata-onerosterapidataconnector-list.md
+              - name: Create
+                href: api/industrydata-onerosterapidataconnector-post.md
+              - name: Get
+                href: api/industrydata-onerosterapidataconnector-get.md
+              - name: Update
+                href: api/industrydata-onerosterapidataconnector-update.md
+              - name: Delete
+                href: api/industrydata-onerosterapidataconnector-delete.md
           - name: File validate operation
             href: resources/industrydata-filevalidateoperation.md
             items:
@@ -15162,6 +15175,19 @@ items:
                 href: api/industrydata-filevalidateoperation-list.md
               - name: Get
                 href: api/industrydata-filevalidateoperation-get.md
+          - name: Inbound api flow
+            href: resources/industrydata-inboundapiflow.md
+            items:
+              - name: List
+                href: api/industrydata-inboundapiflow-list.md
+              - name: Create
+                href: api/industrydata-inboundapiflow-post.md
+              - name: Get
+                href: api/industrydata-inboundapiflow-get.md
+              - name: Update
+                href: api/industrydata-inboundapiflow-update.md
+              - name: Delete
+                href: api/industrydata-inboundapiflow-delete.md
           - name: Inbound file flow
             href: resources/industrydata-inboundfileflow.md
             items:
@@ -15275,6 +15301,12 @@ items:
                 href: api/industrydata-referencedefinition-list.md
               - name: Get
                 href: api/industrydata-referencedefinition-get.md
+              - name: Get
+                href: api/industrydata-referencedefinition-delete.md
+              - name: Get
+                href: api/industrydata-referencedefinition-post.md
+              - name: Get
+                href: api/industrydata-referencedefinition-update.md
           - name: Role group
             href: resources/industrydata-rolegroup.md
             items:
