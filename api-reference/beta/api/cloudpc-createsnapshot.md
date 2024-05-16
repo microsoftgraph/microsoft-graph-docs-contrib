@@ -1,7 +1,7 @@
 ---
 title: "cloudPC: create snapshot"
 description: "Create snapshot for a specific Cloud PC device with CloudPC ID."
-author: "Jiaer Huang"
+author: "Guojing Li (liguojing929)"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType

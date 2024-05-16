@@ -1,7 +1,7 @@
 ---
 title: "cloudPC: resize"
 description: "Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size."
-author: "Jiaer Huang"
+author: "Guojing Li (liguojing929)"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "cloudPC: bulkResize"
 description: "Bulk resizes a set of Cloud PC devices."
-author: "Aria Zhang (yuzhang3)"
+author: "Guojing Li (liguojing929)"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [bulkresize](../resources/cloudpcbulkresize.md) API.
+> This API is deprecated and will stop returning data on September 24, 2023. Going forward, use the [bulkresize](../resources/cloudpcbulkresize.md) API.
 
 Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed [validation](cloudpc-validatebulkresize.md). If any devices can't be resized, those devices indicate "resize failed". The remaining devices are `provisioned` for the resize process.
 

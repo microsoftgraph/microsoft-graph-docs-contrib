@@ -19,8 +19,8 @@ Get the [cloudpcreviewstatus](..\resources\cloudpcreviewstatus.md) of a  Cloud P
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "cloudpc_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpc-get-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudpc_retrievereviewstatus" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpc-retrievereviewstatus-permissions.md)]
 
 ## HTTP request
 
@@ -32,6 +32,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /cloudPCs/{cloudPCId}/retrieveReviewStatus
 ```
+
+## Optional query parameters
+
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](https://learn.microsoft.com/en-us/graph/query-parameters?tabs=http).
 
 ## Request headers
 

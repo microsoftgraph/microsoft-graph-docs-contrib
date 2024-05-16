@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [retrieveReviewStatus](../api/cloudpc-retrievereviewstatus.md) API.
+> This API is deprecated and will stop returning data on April 30, 2024. Going forward, use the [retrieveReviewStatus](../api/cloudpc-retrievereviewstatus.md) API.
 
 Get the review status of a specific Cloud PC device.
 
