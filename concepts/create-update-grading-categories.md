@@ -1,5 +1,5 @@
 ---
-title: "Create or update grading categories by using Microsoft Graph."
+title: "Create or update grading categories by using Microsoft Graph"
 description: "Teachers can use grading categories to weight assignments in the class grade."
 ms.localizationpriority: medium
 author: "v-rmanda"
@@ -7,8 +7,9 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Create or update grading categories by using Microsoft Graph.
-This article describes how to set up and use the grading categories for a class using .
+# Create or update grading categories by using Microsoft Graph
+
+This article describes how to set up and use the grading categories for a class by using the education API in Microsoft Graph.
 
 Teachers use grading categories to apply weights to assignments for student grades. For example, homework might account for 60% of a grade and tests account for 40% of a grade.
 
