@@ -147,7 +147,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource and its methods.",
+          "Description": "Added the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource and its methods.",
           "Target": "fileStorageContainer"
         },
         {
@@ -155,7 +155,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerCustomPropertyDictionary",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerCustomPropertyDictionary](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertydictionary?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileStorageContainerCustomPropertyDictionary](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertydictionary?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainerCustomPropertyDictionary"
         },
         {
@@ -163,7 +163,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerCustomPropertyValue",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerCustomPropertyValue](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertyvalue?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileStorageContainerCustomPropertyValue](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertyvalue?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainerCustomPropertyValue"
         },
         {
@@ -171,7 +171,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerViewpoint",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainerviewpoint?view=graph-rest-beta) resource.",
+          "Description": "Added the [fileStorageContainerViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainerviewpoint?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
         },
         {
@@ -179,7 +179,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",
           "ChangeType": "Addition",
-          "Description": "Added the **permissions** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **permissions** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
         },
         {
@@ -187,7 +187,31 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "drive",
           "ChangeType": "Addition",
-          "Description": "Added the **drive** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **drive** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "1c40646d-fdfa-4b32-88b8-3ec43dea8f04",
+          "ApiChange": "Resource",
+          "ChangedApiName": "storage",
+          "ChangeType": "Addition",
+          "Description": "Added the [storage] (https://learn.microsoft.com/en-us/graph/api/resources/storage?view=graph-rest-1.0) resource.",
+          "Target": "storage"
+        },
+        {
+          "Id": "1c40646d-fdfa-4b32-88b8-3ec43dea8f04",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorage",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorage](https://learn.microsoft.com/en-us/graph/api/resources/filestorage?view=graph-rest-1.0) resource.",
+          "Target": "fileStorage"
+        },
+        {
+          "Id": "1c40646d-fdfa-4b32-88b8-3ec43dea8f04",
+          "ApiChange": "Property",
+          "ChangedApiName": "fileStorageContainerStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileStorageContainerStatus** property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
         }
       ],
