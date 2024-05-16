@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Team();
 $requestBody->setDisplayName('My Sample Team');
-$requestBody->setDescription('My Sample Team’s Description');
+$requestBody->setDescription('My Sample Team\'s Description');
 $additionalData = [
 	'template@odata.bind' => 'https://graph.microsoft.com/beta/teamsTemplates(\'standard\')',
 ];
