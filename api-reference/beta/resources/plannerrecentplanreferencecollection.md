@@ -30,7 +30,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection"
+  "@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection",
+  "openType": true
 }-->
 
 ```json
