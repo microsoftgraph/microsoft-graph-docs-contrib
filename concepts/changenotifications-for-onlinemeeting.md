@@ -59,7 +59,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Subscriptions to basic notifications are available for change notifications for meeting calls. However, because basic notifications only contain the resource ID and no other details, and there there isn't an API that gets meeting call data with this ID, we recommend that subscribe to rich notifications for change notifications for meeting calls. For more information, see the [Rich notifications](#rich-notifications) section.
+> Subscriptions to basic notifications are available for change notifications for meeting calls. However, because basic notifications only contain the resource ID and no other details, and an API that gets meeting call data with this ID isn't available, we recommend that subscribe to rich notifications for change notifications for meeting calls. For more information, see the [Rich notifications](#rich-notifications) section.
 
 ## Rich notifications
 When you subscribe to rich notifications for change events in an active meeting call, details of the changes are encrypted in the notification payload.
