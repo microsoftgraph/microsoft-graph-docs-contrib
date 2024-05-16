@@ -95,8 +95,8 @@ Use the **Global Secure Access APIs** for identity-centric configurations to sec
 
 Looking for the API reference for this service?
 
-- [Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph v1.0](/graph/api/resources/identity-network-access-overview)?view=graph-rest-1.0&preserve-view=true)
-- [Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph beta](/graph/api/resources/identity-network-access-overview)?view=graph-rest-beta&preserve-view=true)
+- [Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph v1.0](/graph/api/resources/identity-network-access-overview?view=graph-rest-1.0&preserve-view=true)
+- [Manage Microsoft Entra identity and network access capabilities by using Microsoft Graph beta](/graph/api/resources/identity-network-access-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next step
 

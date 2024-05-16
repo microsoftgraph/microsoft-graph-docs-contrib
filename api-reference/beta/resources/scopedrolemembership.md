@@ -39,7 +39,8 @@ The following JSON representation shows the resource type.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.scopedRoleMembership"
+  "@odata.type": "microsoft.graph.scopedRoleMembership",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json

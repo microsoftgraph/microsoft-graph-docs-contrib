@@ -1,6 +1,6 @@
 ---
-title: vendors resource type 
-description: A vendor object in Dynamics 365 Business Central. 
+title: vendor resource type
+description: A vendor object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -9,7 +9,7 @@ ms.subservice: "d365-business-central"
 doc_type: resourcePageType
 ---
 
-# vendors resource type
+# vendor resource type
 
 Namespace: microsoft.graph
 
@@ -21,9 +21,9 @@ Represents a vendor in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get vendors](../api/dynamics-vendor-get.md)|vendors|Gets a vendor object.|
-|[Post vendors](../api/dynamics-create-vendor.md)|vendors|Creates a vendor object.|
-|[Patch vendors](../api/dynamics-vendor-update.md)|vendors|Updates a vendor object.|
+|[Get vendor](../api/dynamics-vendor-get.md)|vendor|Gets a vendor object.|
+|[Post vendor](../api/dynamics-create-vendor.md)|vendor|Creates a vendor object.|
+|[Patch vendor](../api/dynamics-vendor-update.md)|vendor|Updates a vendor object.|
 |[Delete vendor](../api/dynamics-vendor-delete.md)|none|Deletes a vendor object.|
 
 ## Properties
@@ -45,7 +45,7 @@ Represents a vendor in Dynamics 365 Business Central.
 |taxLiable|boolean|Specifies if the vendor is liable for tax.|
 |blocked|string|Specifies which transactions with the vendor that can't be posted. Accepted values are blank, Payment or All|
 |balance|decimal|The vendor's balance. Read-Only.|
-|lastModifiedDateTime|datetime|The last datetime the vendor was modified. Read-Only.|  
+|lastModifiedDateTime|datetime|The last datetime the vendor was modified. Read-Only.|
 
 
 ## Relationships

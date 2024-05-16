@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "Name": "Timestamp",
-    "Type": "DateTime"
+    "name": "Timestamp",
+    "type": "DateTime"
 }
 ```
