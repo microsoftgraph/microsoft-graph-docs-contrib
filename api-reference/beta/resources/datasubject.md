@@ -39,8 +39,7 @@ The following is a JSON representation of the resource.
   "email": "String",
   "firstName": "String",
   "lastName": "String",
-  "residency": "String",
-  "SSN": "String"
+  "residency": "String"
 }
 ```
 

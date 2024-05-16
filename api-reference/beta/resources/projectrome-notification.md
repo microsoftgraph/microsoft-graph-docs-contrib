@@ -63,7 +63,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "targetHostName": "String",
-  "appNotificationid": "String (identifier)",
+  "appNotificationId": "String (identifier)",
   "groupName": "String", 
   "targetPolicy": {"@odata.type": "microsoft.graph.targetPolicyEndpoints"},
   "payload": {"@odata.type": "microsoft.graph.payloadTypes"},

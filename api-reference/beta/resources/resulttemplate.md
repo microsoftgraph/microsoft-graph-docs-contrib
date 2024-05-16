@@ -32,17 +32,14 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.resultTemplate",
-  "baseType": null
+  "@odata.type": "microsoft.graph.resultTemplate"
 }-->
 
 
 ```json
 {
-   "resultTemplateId": {
-      "displayName": "String",
-      "body": "Json schema"
-   }
+    "displayName": "String",
+    "body": "Json schema"
 }
 ```
 

@@ -46,7 +46,6 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

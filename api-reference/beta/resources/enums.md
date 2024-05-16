@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### groupAccessType values
+
+| Member             |
+|:-------------------|
+| none               |
+| private            |
+| secret             |
+| public             |
+
 ### fileStorageContainerStatus values
 
 | Member             |
