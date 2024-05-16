@@ -30,6 +30,53 @@ To get a list of the classes in your tenant, see [List classes](/graph/api/educa
 GET https://graph.microsoft.com/beta/education/classes
 ```
 
+### Request
+
+The following example shows a request. 
+
+```http
+GET https://graph.microsoft.com/beta/education/classes
+```
+
+### Response
+
+The following example shows the response.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/classes?$skiptoken=RFNwdAoAAQAAAAAAAAAAFAAAAFc2PSDBhntHjvzu16e1Nf8BAAAAAAAAAAAAAAAAAAAXMS4yLjg0MC4xMTM1NTYuMS40LjIzMzEGAAAAAAAB1vIxCWc1gUyNlbXz2-SlPQEBAQAAAQEAAAA",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes?$select=classCode,course",
+    "value": [
+        {
+            "id": "602ac15e-695c-4095-9efc-8f5baa860e33",
+            "description": "English 6",
+            "displayName": "English 6",
+            "mailNickname": "Section_1657",
+            "externalSource": "sis",
+            "externalSourceDetail": "SIS",
+            "externalId": "1657",
+            "externalName": "English 6",
+            "classCode": "5",
+            "course": {
+                "courseNumber": "ENG100",
+                "displayName": "English 6",
+                "externalId": "111"
+            },
+            "term": {
+                "displayName": "2014-2015",
+                "endDate": "2015-05-23",
+                "externalId": "1288",
+                "startDate": "2014-05-26"
+            }
+        }
+    ]
+}
+```
+
 ## Get assignment settings
 
 To create and manage assignments, you need to set up grading categories. You can get all the assignment settings in a class. Then, you can inspect them to see which ones need grading categories.
@@ -38,6 +85,56 @@ To get the assignment settings for a class, see [get assignment settings](/graph
 
 ```http
 GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
+```
+### Request
+
+The following example shows a request. 
+
+```http
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
+```
+
+### Response
+
+The following example shows the response.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignmentSettings?$select=submissionAnimationDisabled",
+    "submissionAnimationDisabled": true,
+    "gradingCategories@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories": [],
+    "gradingSchemes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes",
+    "gradingSchemes": [
+        {
+            "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
+            "displayName": "New GradingScheme name 01",
+            "hidePointsDuringGrading": false,
+            "grades": []
+        },
+        {
+            "id": "696290ba-1925-490e-a5d2-026bad0dbdc1",
+            "displayName": "New name for Pass/Fail Scheme",
+            "hidePointsDuringGrading": false,
+            "grades": [
+                {
+                    "displayName": "Pass",
+                    "minPercentage": 60,
+                    "defaultPercentage": 100
+                },
+                {
+                    "displayName": "Fail",
+                    "minPercentage": 0,
+                    "defaultPercentage": 0
+                }
+            ]
+        }
+    ]
+}
 ```
 
 ## Create grading categories
