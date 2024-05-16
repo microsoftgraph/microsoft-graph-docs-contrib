@@ -41,7 +41,7 @@ Represents an Excel table.
 |highlightFirstColumn|Boolean|Indicates whether the first column contains special formatting.	|
 |highlightLastColumn|Boolean|Indicates whether the last column contains special formatting.	|
 |id|string|Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. This property should be interpreted as an opaque string value and shouldn't be parsed to any other type. Read-only.|
-|legacyId|String|Legacy ID used in older Excel clients. The value of the identifier remains the same even when the table is renamed. This property should be interpreted as an opaque string value and shouldn't be parsed to any other type. Read-only.	
+|legacyId|String|Legacy ID used in older Excel clients. The value of the identifier remains the same even when the table is renamed. This property should be interpreted as an opaque string value and shouldn't be parsed to any other type. Read-only.
 |name|string|Name of the table.|
 |showBandedRows|Boolean|Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.	|
 |showBandedColumns|Boolean|Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.	|

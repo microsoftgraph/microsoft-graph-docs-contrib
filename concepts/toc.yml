@@ -1183,8 +1183,6 @@ items:
       href: migrate-exchange-web-services-authentication.md
     - name: API mapping
       href: migrate-exchange-web-services-api-mapping.md
-  - name: Outlook REST APIs
-    href: /outlook/rest/compare-graph?context=graph/context
 - name: API v1.0 reference
   href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
   displayName: Microsoft Graph REST API v1.0 reference

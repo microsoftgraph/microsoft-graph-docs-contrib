@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta access-reviews create --body '{\
     "displayName":"TestReview",\
     "startDateTime":"2017-02-10T00:35:53.214Z",\
