@@ -213,6 +213,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **fileStorageContainerStatus** property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "1c40646d-fdfa-4b32-88b8-3ec43dea8f04",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-activate?view=graph-rest-1.0) method to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
         }
       ],
       "Id": "a376b86e-b5eb-4d9e-8270-de3cc02af307",
