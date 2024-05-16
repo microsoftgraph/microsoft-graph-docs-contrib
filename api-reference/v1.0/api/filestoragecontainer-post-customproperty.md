@@ -49,7 +49,7 @@ You can specify the following properties when you create a custom property.
 
 ## Response
 
-If successful, this method returns either a `200 Created` or `201 Created` response code.
+If successful, this method returns a `200 Created` response code.
 
 ## Examples
 
@@ -111,38 +111,6 @@ The following example shows the response.
 HTTP/1.1 200 Created
 ```
 
-### Request
-The following example shows how to create multiple custom properties for a container.
-<!-- {
-  "blockType": "request",
-  "name": "post_filestoragecontainer_customproperty_3"
-}
--->
-``` http
-PATCH https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties
-Content-Type: application/json
 
-{
-  "property1": {
-    "value": "valueOfProperty1",
-    "isSearchable": true
-  },
-  "property2": {
-    "value": "valueOfProperty2",
-    "isSearchable": false
-  }
-}
-```
-
-### Response
-The following example shows the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 201 Created
-```
 
 
