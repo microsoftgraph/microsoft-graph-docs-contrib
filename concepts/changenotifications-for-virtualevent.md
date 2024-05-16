@@ -28,7 +28,7 @@ The following table provides a summary of subscribable virtual event types, the 
 | All events (tenant-level)                               | `solutions/virtualEvents/events`                                                          | created                   | Application                |
 | All events (tenant-level by organizer/co-organizer IDs) | `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`     | created                   | Application                |
 | The events of a specific webinar                        | `solutions/virtualEvents/webinars/{webinarId}`                                            | updated                   | Application, delegated     |
-| Attendance report ready events for a webinar's sessions | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                       | created                   | Application, delegated     | 
+| Attendance report ready events for a webinar | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                       | created                   | Application, delegated     | 
 | The session events of a webinar                         | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                   | created, updated          | Application, delegated     |
 | The registration events of a webinar                    | `solutions/virtualEvents/webinars/{webinarId}/registrations`                              | created, updated          | Application, delegated     |
 
@@ -325,7 +325,7 @@ The following JSON examples show the responses for each supported change type of
 
 ### Attendance report created
 
-Events that are created by an attendance report return the endpoint of the **meetingAttendanceReport** object that was created. Users can use this endpoint in the **resourceData** property to query for the details in **meetingAttendanceReport** object.
+Events that are created by an attendance report return the endpoint of the **meetingAttendanceReport** object.  Users can use this endpoint in the **resourceData.@odata.id** property to query for the details in the **meetingAttendanceReport** object.
 
 ```json
 {
