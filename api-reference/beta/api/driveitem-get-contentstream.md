@@ -1,7 +1,7 @@
 ---
 title: Get file by contentStream
 author: manikantsinghms
-ms.author: manikantsinghms
+ms.author: maniksingh
 description: "Download the contents of the primary stream (file) of a driveItem. Only driveItem objects with the file property can be downloaded."
 ms.localizationpriority: medium
 ms.date: 3/6/2024
