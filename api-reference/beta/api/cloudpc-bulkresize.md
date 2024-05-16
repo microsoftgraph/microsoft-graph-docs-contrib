@@ -1,5 +1,5 @@
 ---
-title: "cloudPC: bulkResize"
+title: "cloudPC: bulkResize (deprecated)"
 description: "Bulk resizes a set of Cloud PC devices."
 author: "Guojing Li (liguojing929)"
 ms.localizationpriority: medium

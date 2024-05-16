@@ -1,9 +1,9 @@
 ---
 title: "cloudPC: resize"
-description: "Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size."
+description: "Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size."
 author: "Guojing Li (liguojing929)"
 ms.localizationpriority: medium
-ms.prod: "cloud-pc"
+ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
+Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
 ## Permissions
 
@@ -40,17 +40,18 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/resize
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|targetServicePlanId|String|The target service plan ID of the resize configuration with new vCPU and storage size.|
+|targetServicePlanId|String|The target service plan ID for the resize configuration with a new vCPU and storage size.|
 
 ## Response
 
@@ -60,7 +61,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-## HTTP
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "cloudpc_resize"
@@ -77,6 +79,8 @@ Content-Type: application/json
 ```
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

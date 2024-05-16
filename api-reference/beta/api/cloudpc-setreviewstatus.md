@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: setReviewStatus"
-description: "Set the review status of a specific Cloud PC device."
+description: "Set the review status of a specific Cloud PC device using the Cloud PC ID."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the review status of a specific Cloud PC device. Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious. After the review is completed, use this API again to set the Cloud PC back to a normal state.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+Set the review status of a specific Cloud PC device using the Cloud PC ID. Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC suspicious. After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -37,18 +35,17 @@ POST /cloudPCs/{cloudPCId}/setReviewStatus
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameter that can be used with this action.
+The following table shows the parameter that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |reviewStatus|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|The new review status of the Cloud PC.|
-
 
 ## Response
 
@@ -58,13 +55,11 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
-
-## HTTP
 <!-- {
   "blockType": "request",
-  "name": "cloudpcthis.setreviewstatus",
+  "name": "cloudpcthis.setreviewstatus"
 }
 -->
 ``` http
@@ -80,15 +75,13 @@ Content-Type: application/json
 }
 ```
 
----
-
 ### Response
 
 The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": true
 }
 -->
 ``` http

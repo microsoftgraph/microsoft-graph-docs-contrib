@@ -1833,12 +1833,6 @@ items:
                     href: api/user-list-cloudpcs.md
                   - name: Get Cloud PC
                     href: api/cloudpc-get.md
-                  - name: Bulk-reprovision remotely (deprecate)
-                    href: api/manageddevice-bulkreprovisioncloudpc.md
-                  - name: Bulk resize (deprecate)
-                    href: api/cloudpc-bulkresize.md
-                  - name: Bulk-restore remotely (deprecate)
-                    href: api/manageddevice-bulkrestorecloudpc.md
                   - name: Bulk-set review status
                     href: api/manageddevice-bulksetcloudpcreviewstatus.md
                   - name: Change user accout type
@@ -1857,12 +1851,6 @@ items:
                     href: api/cloudpc-getprovisionedcloudpcs.md
                   - name: Get remote action results
                     href: api/manageddevice-getcloudpcremoteactionresults.md
-                  - name: Get review status (deprecated)
-                    href: api/manageddevice-getcloudpcreviewstatus.md
-                  - name: Retrieve review status
-                    href: api/cloudpc-retrievereviewstatus.md
-                  - name: Get shift work access state (deprecated)
-                    href: api/cloudpc-getshiftworkcloudpcaccessstate.md
                   - name: Get supported remote actions
                     href: api/cloudpc-getsupportedcloudpcremoteactions.md
                   - name: Power on
@@ -1875,18 +1863,12 @@ items:
                     href: api/cloudpc-rename.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
-                  - name: Reprovision remotely (deprecated)
-                    href: api/manageddevice-reprovisioncloudpc.md
-                  - name: Resize remotely (deprecated)
-                    href: api/manageddevice-resizecloudpc.md
                   - name: Resize
                     href: api/cloudpc-resize.md
                   - name: Restore
                     href: api/cloudpc-restore.md
-                  - name: Restore remotely (deprecated)
-                    href: api/manageddevice-restorecloudpc.md
-                  - name: Set review status (deprecated)
-                    href: api/manageddevice-setcloudpcreviewstatus.md
+                  - name: Retrieve review status
+                    href: api/cloudpc-retrievereviewstatus.md
                   - name: Set review status
                     href: api/cloudpc-setreviewstatus.md
                   - name: Troubleshoot
@@ -1895,6 +1877,24 @@ items:
                     href: api/cloudpc-retrypartneragentinstallation.md
                   - name: Validate bulk resize
                     href: api/cloudpc-validatebulkresize.md
+                  - name: Bulk-reprovision remotely (deprecate)
+                    href: api/manageddevice-bulkreprovisioncloudpc.md
+                  - name: Bulk resize (deprecate)
+                    href: api/cloudpc-bulkresize.md
+                  - name: Bulk-restore remotely (deprecate)
+                    href: api/manageddevice-bulkrestorecloudpc.md
+                  - name: Get review status (deprecated)
+                    href: api/manageddevice-getcloudpcreviewstatus.md
+                  - name: Get shift work access state (deprecated)
+                    href: api/cloudpc-getshiftworkcloudpcaccessstate.md
+                  - name: Reprovision remotely (deprecated)
+                    href: api/manageddevice-reprovisioncloudpc.md
+                  - name: Resize remotely (deprecated)
+                    href: api/manageddevice-resizecloudpc.md
+                  - name: Restore remotely (deprecated)
+                    href: api/manageddevice-restorecloudpc.md
+                  - name: Set review status (deprecated)
+                    href: api/manageddevice-setcloudpcreviewstatus.md
               - name: Cloud PC audit event
                 href: resources/cloudpcauditevent.md
                 items:
@@ -14231,7 +14231,7 @@ items:
                         href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
                       - name: Remove attributes from a user flow
                         href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
-                  - name: Authentication condition applications
+                  - name: Linked applications
                     href: resources/authenticationconditionapplication.md
                     items:
                       - name: List applications
@@ -15240,6 +15240,8 @@ items:
                 href: api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
               - name: Create
                 href: api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+              - name: Reset
+                href: api/industrydata-provisioningflow-reset.md
               - name: Administrative unit provisioning flow
                 href: resources/industrydata-administrativeunitprovisioningflow.md
                 items:

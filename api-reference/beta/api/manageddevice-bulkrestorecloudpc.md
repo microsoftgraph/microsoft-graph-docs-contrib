@@ -1,5 +1,5 @@
 ---
-title: "managedDevice: bulkRestoreCloudPc"
+title: "managedDevice: bulkRestoreCloudPc (deprecate)"
 description: "Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time."
 author: "rongting"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [bulkrestore](../resources/cloudpcbulkrestore.md) API.
+> This API is deprecated and will stop returning data on August 31, 2024. Going forward, use the [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md) resource.
 
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
