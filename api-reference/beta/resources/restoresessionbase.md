@@ -35,7 +35,7 @@ Restore session APIs are used by Global Admin or SharePoint Online Admin for Sha
 |error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
 |lastModifiedBy|identitySet|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resource/restoresessionbase.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resource/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
 |Member | Description |

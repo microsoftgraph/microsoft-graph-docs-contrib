@@ -37,7 +37,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |isAutoApplyEnabled|Boolean|A boolean flag indicating whether the protection rule is static or dynamic. Static rules gets executed one time whereas dynamic rule listens to all changes in the system and updates the protection unit list.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this rule .|
-|mailboxExpression|String|Contains mailbox expression.[mailboxExpression example](../resources/mailboxprotectionrule.md#mailboxExpression-examples)|
+|mailboxExpression|String|Contains mailbox expression.[mailboxExpression example](../resources/mailboxprotectionrule.md#mailboxexpression-examples)|
 |status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
  ### mailboxExpression examples
@@ -66,7 +66,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailboxProtectionRule",
-  "baseType": "microsoft.backupRestore.protectionRuleBase",
+  "baseType": "microsoft.graph.protectionRuleBase",
   "openType": false
 }
 -->

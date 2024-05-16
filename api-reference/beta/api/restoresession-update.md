@@ -58,7 +58,7 @@ PATCH /solutions/backupRestore/restoreSessions/{restoreSessionBaseId}
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the restore session updated|
-|status|[restoreSessionStatus](../resource/restoresessionbase.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resource/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session.|
 |createdBy|identitySet|The identity of person who created the restore session.|
 |createdDateTime|DateTimeOffset|The time of completion of the restore session.|
@@ -87,7 +87,7 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/restoreSessions/{
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.backupRestore.restoreSessionBase",
+  "@odata.type": "#microsoft.graph.restoreSessionBase",
   "status": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
@@ -113,7 +113,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.backupRestore.restoreSessionBase",
+  "@odata.type": "#microsoft.graph.restoreSessionBase",
   "id": "8c3b5c30-3899-8712-95f9-f3c6b4e5324d",
   "status": "String",
   "createdDateTime": "String (timestamp)",

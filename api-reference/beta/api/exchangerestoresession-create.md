@@ -66,7 +66,7 @@ You can specify the following properties when creating an **exchangeRestoreSessi
 |error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
 |lastModifiedBy|identitySet|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resource/exchangerestoresession.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.| -->
+|status|[restoreSessionStatus](../resource/exchangerestoresession.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.| -->
 
 
 ## Response
@@ -109,7 +109,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.exchangeRestoreSession"
+  "@odata.type": "microsoft.graph.exchangeRestoreSession"
 }
 -->
 ``` http

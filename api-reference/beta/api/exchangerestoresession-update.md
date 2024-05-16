@@ -60,7 +60,7 @@ PATCH /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId
 |:---|:---|:---|
 |mailboxRestoreArtifacts|[maiboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md)|
 <!-- |id|String|The unique identifier of the restore session updated|
-|status|[restoreSessionStatus](../resource/restoresessionbase.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resource/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session.|
 |createdBy|identitySet|The identity of person who created the restore session.|
 |createdDateTime|DateTimeOffset|The time of completion of the restore session.|

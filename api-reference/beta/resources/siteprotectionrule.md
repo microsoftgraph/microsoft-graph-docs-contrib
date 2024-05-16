@@ -38,7 +38,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this rule .|
 |siteExpression|String|Contains site expression.[siteExpression example](../resources/siteprotectionrule.md#siteexpression-examples)|
-|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
+|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-examples )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
  ### siteExpression examples
 The site expression can be of following formats.
@@ -66,7 +66,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.siteProtectionRule",
-  "baseType": "microsoft.backupRestore.protectionRuleBase",
+  "baseType": "microsoft.graph.protectionRuleBase",
   "openType": false
 }
 -->

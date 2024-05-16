@@ -33,7 +33,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |id|String|The unique identifier of the protection rule associated with the policy.|
 |createdBy|[identitySet](../resources/identityset.md) entitySet|The identity of the person who created the rule.|
 |createdDateTime|DateTimeOffset|The date and time that the rule was created.|
-|driveExpression|String|Contains drive expression.[driveExpression example](../resources/driveprotectionrule.md#driveExpression-examples)|
+|driveExpression|String|Contains drive expression.[driveExpression example](../resources/driveprotectionrule.md#driveexpression-examples)|
 |error|[publicError](../resources/publicerror.md)|Error details will be populated here, if any operation on rule expression fails|
 |isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Static rules run once; dynamic rules listen to all changes in the system and update the protection unit list.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
@@ -65,7 +65,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.driveProtectionRule",
-  "baseType": "microsoft.backupRestore.protectionRuleBase",
+  "baseType": "microsoft.graph.protectionRuleBase",
   "openType": false
 }
 -->

@@ -58,7 +58,7 @@ You can specify the following properties when creating a **sharePointRestoreSess
 |Property|Type|Description|
  |:---|:---|:---|
  |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of [siteRestoreArtifact](../resources/siterestoreartifact.md)|
-<!--|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoreSessionStatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+<!--|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 |createdDateTime|DateTimeOffset|DateTimeOffset|The time of completion of the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
 |createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|The identity of person who created the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session. Inherited from [microsoft.backupRestore.restoreSessionBase](../resources/restoresessionbase.md). Optional.|
@@ -79,7 +79,7 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_sharepointrestoresession"
+  "name": "sharepointrestoresession_create"
 }
 -->
 ``` http
@@ -107,7 +107,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.sharePointRestoreSession"
+  "@odata.type": "microsoft.graph.sharePointRestoreSession"
 }
 -->
 ``` http
