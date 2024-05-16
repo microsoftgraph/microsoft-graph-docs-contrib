@@ -78,7 +78,7 @@ Odata-Version: 4.0
 
 {
   "displayName": "Exchange Policy - Inadvertent data loss",
-  "userMailboxProtectionUnits@delta": [
+  "mailboxProtectionUnits@delta": [
     {
       "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" //Create a new user Protection unit and add it under the policy.
     },
