@@ -37,7 +37,7 @@ The rest of this article describes how an administrator can customize item insig
 
 At the time of first release in 2014, Office Graph was a backend service for Delve. They shared a set of privacy controls over both the Office Graph insights and the Delve user experience. Office Graph has since evolved and become more independent and powerful, as part of every Microsoft 365 experience and of Microsoft Graph. To offer a coherent Microsoft Graph schema, Microsoft introduced an [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-1.0&preserve-view=true) entity which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0&preserve-view=true) resource, and has kept **officeGraphInsights** around for backward compatibility. The introduction of **itemInsights** also de-couples the privacy story for the two independent pieces.
 
-While existing apps could continue to use **officeGraphInsights**, these apps should upgrade to **itemInsights** to gain the flexibility to fine-tune item insights in Office Graph and Delve.
+Although existing apps can continue to use **officeGraphInsights**, they should upgrade to **itemInsights** to gain the flexibility to fine-tune item insights in Office Graph and Delve.
 
 ## How to customize item insights in an organization
 
