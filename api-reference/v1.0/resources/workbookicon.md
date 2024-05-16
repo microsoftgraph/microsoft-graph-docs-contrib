@@ -1,25 +1,25 @@
 ---
-title: workbookIcon resource type
+title: "workbookIcon resource type"
 description: "Represents a cell icon."
 ms.localizationpriority: medium
-author: "ruoyingl"
-ms.subservice: excel
 doc_type: resourcePageType
+ms.subservice: "excel"
+author: "ruoyingl"
 ---
 
 # workbookIcon resource type
 
 Namespace: microsoft.graph
 
-Represents a cell icon.
+Represents an icon in a cell in an Excel workbook.
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Icon](../api/icon-get.md) | [Icon](icon.md) |Read properties and relationships of icon object.|
-|[Update](../api/icon-update.md) | [Icon](icon.md)	|Update Icon object. |
+|[Get](../api/icon-get.md) | [workbookIcon](workbookicon.md) |Read properties and relationships of a workbookIcon object.|
+|[Update](../api/icon-update.md) | [workbookIcon](workbookicon.md)	|Update a workbookIcon object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -28,7 +28,7 @@ Represents a cell icon.
 |set|string|Represents the set that the icon is part of. The possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
@@ -45,7 +45,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "index": 1024,
+  "index": "int",
   "set": "string"
 }
 
