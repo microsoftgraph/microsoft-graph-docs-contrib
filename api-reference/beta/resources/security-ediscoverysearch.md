@@ -26,6 +26,8 @@ Represents an eDiscovery search. For details, see [Collect data for a case in eD
 |[Delete ediscoverySearch](../api/security-ediscoverycase-delete-searches.md)|None|Delete an [microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) object.|
 |[estimateStatistics](../api/security-ediscoverysearch-estimatestatistics.md)|None|Run an estimate statistics operation on the data contained in the eDiscovery search.|
 |[purgeData](../api/security-ediscoverysearch-purgedata.md)|None|Run a purge data operation on the Teams data contained in the eDiscovery search.|
+|[exportReport](../api/security-ediscoverysearch-exportreport.md)|None|Export an item report from an estimated [ediscoverySearch](../resources/security-ediscoverysearch.md).|
+|[exportResult](../api/security-ediscoverysearch-exportresult.md)|None|Export results from an estimated [ediscoverySearch](../resources/security-ediscoverysearch.md).|
 |[List additionalSources](../api/security-ediscoverysearch-list-additionalsources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md) collection|Get the list of [additional sources](../resources/security-datasource.md) associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).|
 |[Add additionalSources](../api/security-ediscoverysearch-post-additionalsources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Create a new [additional source](../resources/security-datasource.md) associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).|
 |[List ediscoveryEstimateOperation](../api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md)|[microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) collection|Get the last [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.|
@@ -42,7 +44,7 @@ Represents an eDiscovery search. For details, see [Collect data for a case in eD
 |contentQuery|String|The query string in KQL (Keyword Query Language) query. For details, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions). You can refine searches by using fields paired with values; for example, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **eDiscovery search**.|
 |createdDateTime|DateTimeOffset|The date and time the **eDiscovery search** was created.|
-|dataSourceScopes|microsoft.graph.security.dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
+|dataSourceScopes|microsoft.graph.security.dataSourceScopes|When specified, the collection spans across a service for an entire workload. Possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
 |description|String|The description of the **eDiscovery search**.|
 |displayName|String|The display name of the **eDiscovery search**.|
 |id|String| The ID for the **eDiscovery search**. Read-only. |
@@ -53,7 +55,7 @@ Represents an eDiscovery search. For details, see [Collect data for a case in eD
 
 |Member|Description|
 |:----|-----------|
-|none|Do not specify any scopes - locations would be referenced separately.|
+|none|Don't specify any scopes - locations would be referenced separately.|
 |allTenantMailboxes|Include all tenant mailboxes in the **eDiscovery search**.|
 |allTenantSites|Include all tenant sites in the **eDiscovery search**.|
 |allCaseCustodians|Include all custodian locations in the **eDiscovery search**.|
