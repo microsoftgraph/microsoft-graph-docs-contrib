@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 Change notifications in Microsoft Graph enable you to subscribe to call started, call ended, and roster updated for Microsoft Teams online meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload. 
 
-A subscription has a max expiry period of three days. To persist the subscription for more than this period, a subscription renewal request must be made. For more information, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
+A subscription has a maximum expiry period of three days. To persist the subscription for more than this period, a subscription renewal request must be made. For more information, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
 
 This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
@@ -59,10 +59,10 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Subscription to basic notifications are available for change notifications for meeting calls. However, because basic notifications do not contain data related to the details of changes besides the ID of the resource and there is no Microsoft Graph API available to get meeting call data with this ID, we highly recommend that subscriptions are created for rich notifications for change notifications in meeting calls. For more information, see the [Rich notifications](#rich-notifications) section.
+> Subscriptions to basic notifications are available for change notifications for meeting calls. However, because basic notifications only contain the resource ID and no other details, and there there isn't an API that gets meeting call data with this ID, we recommend that subscribe to rich notifications for change notifications for meeting calls. For more information, see the [Rich notifications](#rich-notifications) section.
 
 ## Rich notifications
-Subscribing to rich notifications for change events in an active meeting call allows details of changes encrypted in notification payload.
+When you subscribe to rich notifications for change events in an active meeting call, details of the changes are encrypted in the notification payload.
 
 ### Rich notification payload example
 ```json
@@ -162,7 +162,7 @@ The following are the supported meeting events:
 }
 ```
 
-#### RosterUpdated - participant enters an inactive state (not in lobby or Call)
+#### RosterUpdated - Participant enters an inactive state (not in lobby or Call)
 ```json
 {
   "@odata.type": "#microsoft.graph.callevent",
@@ -191,7 +191,7 @@ The following are the supported meeting events:
 }
 ```
 
-#### RosterUpdated - participant exits the call
+#### RosterUpdated - Participant exits the call
 ```json
 {
   "@odata.type": "#microsoft.graph.callevent",
