@@ -34,6 +34,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |appId|String|The application identifier in Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that the corresponding sign-in activity triggers. Apps need more Conditional Access-related privileges to read the details of this property. For more information, see [Viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#viewing-applied-conditional-access-ca-policies-in-sign-ins).|
 |appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, which the corresponding events in the sign-in event triggered.|
+|appTokenProtectionStatus|tokenProtectionStatus|Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the app token was bound to the device.|
 |authenticationAppDeviceDetails|[authenticationAppDeviceDetails](../resources/authenticationappdevicedetails.md)|Provides details about the app and device used during a Microsoft Entra authentication step.|
 |authenticationAppPolicyEvaluationDetails|[authenticationAppPolicyDetails](../resources/authenticationapppolicydetails.md) collection|Provides details of the Microsoft Entra policies applied to a user and client authentication app during an authentication step.|
 |authenticationContextClassReferences|[authenticationContext](authenticationcontext.md) collection|Contains a collection of values that represent the conditional access authentication contexts applied to the sign-in.|
@@ -99,7 +100,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |userId|String|The identifier of the user. <br/><br/> Supports `$filter` (`eq`).|
 |userPrincipalName|String|The UPN of the user. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userType|signInUserType|Identifies whether the user is a member or guest in the tenant. Possible values are: `member`, `guest`, `unknownFutureValue`.|
-|mfaDetail (deprecated)|String|This property is deprecated.|
+|mfaDetail (deprecated)|[mfaDetail](../resources/mfadetail.md)|This property is deprecated.|
 
 
 ## Relationships
@@ -132,7 +133,9 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.appliedAuthenticationEventListener"
     }
   ],
-  "appTokenProtectionStatus": "String",
+  "appTokenProtectionStatus": {
+      "@odata.type": "microsoft.graph.tokenProtectionStatus"
+  },
   "authenticationAppDeviceDetails": {
       "@odata.type": "microsoft.graph.authenticationAppDeviceDetails"
   },
@@ -197,9 +200,6 @@ The following JSON representation shows the resource type.
   },
   "processingTimeInMilliseconds": "Integer",
   "riskDetail": "String",
-  "riskEventTypes": [
-    "String"
-  ],
   "riskEventTypes_v2": [
     "String"
   ],

@@ -76,6 +76,9 @@ Bulk subscriptions for user presence can be created by setting the subscription 
 Change notifications for presence events are triggered when changes to a user's availability and activity are made.
 
 ### Example: Basic presence notifications
+> [!NOTE]
+> Because basic notifications only include the ID of the resource that changed, you need to make a separate GET presence call to Microsoft Graph to access user presence data. For more information, see [GET presence](/graph/api/presence-get).
+
 ```json
 {
   "value": [{
