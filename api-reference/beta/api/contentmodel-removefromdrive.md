@@ -1,6 +1,6 @@
 ---
 title: "contentModel: removeFromDrive"
-description: "Remove a [contentModel](../resources/contentmodel.md) from the document library."
+description: "Remove a content model object from the document library."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
