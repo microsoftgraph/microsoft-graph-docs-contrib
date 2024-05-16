@@ -22,7 +22,7 @@ The assignments API supports delegated (per user) only.
 
 ## Get a class
 
-A class is a group of students and teachers who share assignments and feedback. You get the list of classes from your education tenant. Then, you can locate the class where you want to set grading categories on assignments.
+A class is a group of students and teachers who share assignments and feedback. You get the list of classes from your education tenant. Then, you can identify the class where you want to set grading categories on assignments.
 
 To get a list of the classes in your tenant, see [List classes](/graph/api/educationclass-list).
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 ## Add a grading category to an assignment
 
-You weight an assignment's contribution to the final class grade by giving the assignment a grading category. You can use the following API to add a grading category to an assignment.
+You weight an assignment's contribution to the final class grade by giving the assignment a grading category.
 
 To add a grading category to an assignment, see [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory).
 
