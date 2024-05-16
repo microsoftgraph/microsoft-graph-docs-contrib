@@ -31,9 +31,9 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 
-|authority|[microsoft.graph.security.authority](../resources/security-authority.md)|Represents the file plan descriptor of type authority applied to a particular retention label.|
-|category|[microsoft.graph.security.appliedCategory](../resources/security-appliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention label.|
-|citation|[microsoft.graph.security.citation](../resources/security-citation.md)|Represents the file plan descriptor of type citation applied to a particular retention label.|
+|authority|[microsoft.graph.security.authority](../resources/security-fileplanauthority.md)|Represents the file plan descriptor of type authority applied to a particular retention label.|
+|category|[microsoft.graph.security.appliedCategory](../resources/security-fileplanappliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention label.|
+|citation|[microsoft.graph.security.citation](../resources/security-fileplancitation.md)|Represents the file plan descriptor of type citation applied to a particular retention label.|
 |authority|[microsoft.graph.security.filePlanAuthority](../resources/security-fileplanauthority.md)|Represents the file plan descriptor of type authority applied to a particular retention label.|
 |appliedCategory|[microsoft.graph.security.filePlanAppliedCategory](../resources/security-fileplanappliedcategory.md)|Represents the file plan descriptor of type category applied to a particular retention label.|
 |citation|[microsoft.graph.security.filePlanCitation](../resources/security-fileplancitation.md)|Represents the file plan descriptor of type citation applied to a particular retention label.|
