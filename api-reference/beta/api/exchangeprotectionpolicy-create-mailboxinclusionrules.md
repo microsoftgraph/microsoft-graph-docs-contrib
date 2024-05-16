@@ -94,7 +94,7 @@ The following example shows the response.
 }
 -->
 ``` http
-201 Created
+HTTP/1.1 200 OK
 Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
