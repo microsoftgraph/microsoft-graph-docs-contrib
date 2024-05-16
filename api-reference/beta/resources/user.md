@@ -85,7 +85,6 @@ This resource supports:
 | [Get deleted user](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted user by ID. |
 | [Restore deleted user](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Restore a user deleted in the tenant in the last 30 days. |
 | [Permanently delete user](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted user from the tenant. |
-|[List invitedBy](../api/user-list-invitedby.md)|[directoryObject](../resources/directoryobject.md)|Get the directoryObject resources from the invitedBy navigation property.|
 | **Drive** |||
 | [Get drive](../api/drive-get.md) | [drive](drive.md) | Retrieve the properties and relationships of a Drive resource. |
 | [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |
@@ -151,6 +150,7 @@ This resource supports:
 | [Assign sponsors](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
 | [List sponsors](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
 | [Remove sponsors](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
+| [List invitedBy](../api/user-list-invitedby.md)|[directoryObject](../resources/directoryobject.md)|Get the user or service principal that invited the specified user into the tenant.|
 | **Teamwork** |||
 |[List apps installed for user](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user.|
 |[Get the installed app for user](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
