@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "exchangeprotectionpolicy-create-permissions"
+  "name": "exchangeprotectionpolicy_create_permissions"
 }
 -->
 <!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-create-permissions.md)]-->
@@ -83,7 +83,7 @@ If successful, this method returns a `201 Created` response code and a [exchange
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "exchangeprotectionpolicy_create"
+  "name": "exchangeprotectionpolicy-create"
 }
 -->
 

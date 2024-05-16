@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "exchangeprotectionpolicy-update-permissions"
+  "name": "exchangeprotectionpolicy_update_permissions"
 }
 -->
 <!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-update-permissions.md)]-->
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [exch
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "exchangeprotectionpolicy_update"
+  "name": "exchangeprotectionpolicy-update"
 }
 -->
 ``` http

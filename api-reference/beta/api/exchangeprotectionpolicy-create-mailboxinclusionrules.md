@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "exchangeprotectionpolicy-create-mailboxinclusionrules-permissions"
+  "name": "exchangeprotectionpolicy_create_mailboxinclusionrules_permissions"
 }
 -->
 <!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-create-mailboxinclusionrules-permissions.md)]-->
@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [mailboxP
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "exchangeprotectionpolicy_create_mailboxinclusionrule"
+  "name": "exchangeprotectionpolicy-create-mailboxinclusionrules"
 }
 -->
 
