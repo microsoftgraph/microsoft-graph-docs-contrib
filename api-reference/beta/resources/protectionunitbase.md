@@ -30,7 +30,7 @@ This is an abstract type.
 |:---|:---|:---|
 |id|String|The unique identitifer of the protection unit|
 |policyId|String|The unique identifier of the protection policy based on which protection unit was created|
-|createdBy|ident[identitySet](../resources/identityset.md)itySet|The identity of person who created the protection unit|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit|
 |error|[publicError](../resources/publicerror.md)|Describes error occurred while creating a protection unit|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who modified|

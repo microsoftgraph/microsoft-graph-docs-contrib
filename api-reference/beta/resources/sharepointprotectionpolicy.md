@@ -67,14 +67,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.sharePointProtectionPolicy",
+  "@odata.type": "microsoft.backupRestore.sharePointProtectionPolicy",
   "baseType": "microsoft.backupRestore.protectionPolicyBase",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.sharePointProtectionPolicy",
+  "@odata.type": "#microsoft.backupRestore.sharePointProtectionPolicy",
   "id": "String (identifier)",
   "displayName": "String",
   "status": "String",
