@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /dataDiscoveryRoot/cloudAppDiscovery/uploadedStreams
+GET /dataDiscovery/cloudAppDiscovery/uploadedStreams
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [cloudAppDiscoveryReport](../resources/cloudappdiscoveryreport.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) objects in the response body.
 
 ## Examples
 
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/dataDiscoveryRoot/cloudAppDiscovery/uploadedStreams
+GET https://graph.microsoft.com/beta/dataDiscovery/cloudAppDiscovery/uploadedStreams
 ```
 
 

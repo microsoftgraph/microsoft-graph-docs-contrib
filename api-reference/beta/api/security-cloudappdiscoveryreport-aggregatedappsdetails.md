@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /dataDiscoveryRoot/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/aggregatedAppsDetails
+GET /dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/aggregatedAppsDetails
 ```
 
 ## Function parameters
@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/dataDiscoveryRoot/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/aggregatedAppsDetails(period=String (duration))
+GET https://graph.microsoft.com/beta/dataDiscovery/cloudAppDiscovery/uploadedStreams/{cloudAppDiscoveryReportId}/aggregatedAppsDetails(period=String (duration))
 ```
 
 

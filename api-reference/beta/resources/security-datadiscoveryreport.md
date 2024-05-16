@@ -22,12 +22,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security-datadiscoveryroot-list-cloudappdiscovery.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) collection|Get a list of the [microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) objects and their properties.|
-|[Create](../api/security-datadiscoveryroot-post-cloudappdiscovery.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|Create a new [microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) object.|
 |[Get](../api/security-datadiscoveryreport-get.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|Read the properties and relationships of a [microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) object.|
-|[Update](../api/security-datadiscoveryreport-update.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md)|Update the properties of a [microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) object.|
-|[Delete](../api/security-datadiscoveryroot-delete-cloudappdiscovery.md)|None|Delete a [microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) object.|
 |[List uploadedStreams](../api/security-datadiscoveryreport-list-uploadedstreams.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|Get the cloudAppDiscoveryReport resources from the uploadedStreams navigation property.|
-|[Create cloudAppDiscoveryReport](../api/security-datadiscoveryreport-post-uploadedstreams.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md)|Create a new cloudAppDiscoveryReport object.|
 
 ## Properties
 |Property|Type|Description|
