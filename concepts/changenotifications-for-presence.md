@@ -80,6 +80,7 @@ Basic notifications notify subscribers about the identity of which resource chan
 For basic presence notifications, it provides information about which user's presence changed but no data about the details of user's presence. Subscribers are expected to use the [GET presence APIs](/graph/api/presence-get) to discover the state of user's availability and activity.
 
 #### Payload example
+
 ```json
 {
   "value": [{

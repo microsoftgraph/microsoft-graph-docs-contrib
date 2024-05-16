@@ -43,7 +43,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
   ],
   "@odata.type": "microsoft.graph.externalConnectors.schema",
-  "keyProperty": "id"
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json
