@@ -7,7 +7,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Assign sensitivitylabelassignment
+# microsoft.graph.plannerRoster: assignSensitivityLabel
 
 Rosters can be assigned sensitivity labels to further protect the roster.
 
@@ -26,6 +26,19 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST https://graph.microsoft.com/beta/planner/rosters/{rosterId}/assignSensitivityLabel
 ```
+## Request headers
+
+| Name       | Type | Description |
+|:---------------|:--------|:--------|
+| If-Match | string | The etag for the roster being edited. Required.  |
+
+## Request body
+
+In the request body, provide a JSON object with the following parameters.
+| Parameter    | Type        | Description |
+|:-------------|:------------|:------------|
+| sensitivityLabelId | string | ID of the label being applied to the roster. |
+| assignmentMethod | microsoft.graph.sensitivityLabelAssignmentMethod | The assignment method with which the sensitivity label is applied to the roster. |
 
 ## Examples
 
