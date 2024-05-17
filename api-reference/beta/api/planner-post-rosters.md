@@ -118,9 +118,9 @@ Content-Type: application/json
 }
 ```
 
-### Errors
+### See also
 
-#### 403 Forbidden
+The method will fail in the following situations, resulting in a 403 error (see [Errors] (https://learn.microsoft.com/en-us/graph/errors))
 
 If labels are mandatory for the user, and the created roster would have no sensitivity label, the request fails, and the **code** property of the error resource type is "SensitivityLabelsAreMandatory".
 

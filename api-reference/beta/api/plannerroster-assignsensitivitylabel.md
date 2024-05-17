@@ -1,6 +1,6 @@
 ---
 title: "Assign sensitivity label to planner roster"
-description: "Assign a sensitivity labelto a plannerRoster object."
+description: "Assign a sensitivity label to a plannerRoster object."
 ms.localizationpriority: medium
 author: "WiRawlinWork"
 ms.subservice: "planner"
@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # microsoft.graph.plannerRoster: assignSensitivityLabel
 
-Rosters can be assigned sensitivity labels to further protect the roster.
+Assign a sensitivity label to a plannerRoster object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -82,7 +82,9 @@ Content-Type: application/json
 }
 ```
 
-### Error Conditions
+### See also
+
+The method will fail in the following situations, resulting in an error (see [Errors] (https://learn.microsoft.com/en-us/graph/errors))
 
 #### 400 Bad Request
 
