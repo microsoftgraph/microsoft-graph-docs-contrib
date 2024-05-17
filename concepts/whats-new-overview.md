@@ -16,6 +16,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## May 2024: New and generally available
+
+### People and workplace intelligence | People admin settings
+
+- Use more [granular privacy control](insights-customize-item-insights-privacy.md) over the availability and display of [item insights](/graph/api/resources/iteminsights?view=graph-rest-1.0&preserve-view=true) in Microsoft 365. These insights represent the relationships between a user and documents in OneDrive for work or school, calculated using advanced analytics and machine learning techniques. 
+- Update [insightsSettings](insightssettings.md) to disable item insights for a specific Microsoft Entra group or an entire organization. You can also use the [List itemInsights](/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta) API for displaying or returning item insights in an organization.
+
 ## May 2024: New in preview only
 
 ### Identity and access | Identity and sign-in
