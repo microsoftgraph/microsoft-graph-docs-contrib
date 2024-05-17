@@ -47,6 +47,8 @@ Deleting a **plannerRoster** also deletes the plan and all tasks in the plan. A 
 |plans|[plannerPlan](../resources/plannerplan.md) collection|Retrieves the plans contained by the **plannerRoster**.|
 
 ## JSON representation
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

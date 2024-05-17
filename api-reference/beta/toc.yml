@@ -18129,6 +18129,8 @@ items:
                 href: api/plannerroster-list-plans.md
               - name: List user's plans in rosters
                 href: api/planneruser-list-rosterplans.md
+              - name: Assign sensitivity label to a roster
+                href: api/plannerroster-assignsensitivitylabel.md
           - name: Planner user
             href: resources/planneruser.md
             items:
