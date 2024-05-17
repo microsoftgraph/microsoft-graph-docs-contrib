@@ -17,19 +17,15 @@ Assignments contribute to a grade based on their point values and the weight ass
 
 Grading categories are defined in the settings of a class. Every assignment that contributes to the final average grade must have a grading category applied. The weights of the grading categories for a class must add up to 100 during create, update, or delete operations. 
 
-## Permissions
+To work with grading categories in your app, you need to get the ID of the class and the assignment settings for that class. You can see below in this article how to create or update the grading categories that are defined in the assignment settings. 
 
-The assignments API supports delegated (per user) only. 
+>**Note:** The graph API endpoints support delegated (per user) only.
 
 ## Get a class
 
 A class is a group of students and teachers who share assignments and feedback. To work with grading categories, you first get the list of classes from your education tenant, then you identify the class for which you want to set grading categories on assignments.
 
 To get a list of the classes in your tenant, see [List classes](/graph/api/educationclass-list).
-
-```http
-GET https://graph.microsoft.com/beta/education/classes
-```
 
 ### Request
 
@@ -80,13 +76,10 @@ Content-type: application/json
 
 ## Get assignment settings
 
-To create and manage assignments, you need to set up grading categories. You can get all the assignment settings in a class. Then, you can inspect them to see which ones need grading categories.
+To add grading categories, you first need to get the assignment settings for the class, and identify which grading category needs to be applied for specific assignments.
 
 To get the assignment settings for a class, see [Get assignment settings](/graph/api/educationassignmentsettings-get).
 
-```http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
-```
 ### Request
 
 The following example shows a request. 
@@ -206,10 +199,6 @@ You weight an assignment's contribution to the final class grade by giving the a
 
 To add a grading category to an assignment, see [Add gradingCategory](/graph/api/educationassignment-post-gradingcategory).
 
-```http
-PUT /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
-```
-
 ### Request
 
 The following example shows a request. 
@@ -238,10 +227,6 @@ You can change the details of a grading category, like its display name or weigh
 To update a single granding category, see [Update single gradingCategory](/graph/api/educationgradingcategory-update).
 
 ### Example 1: Update a single grading category
-
-```http
-PATCH /education/classes/{classId}/assignmentSettings/gradingCategories/{gradingCategoryId}
-```
 
 ### Request
 
@@ -275,10 +260,6 @@ Content-type: application/json
 }
 ```
 ### Example 2: Use a delta payload to create, update and/or delete grading categories
-
-```http
-PATCH /education/classes/{classId}/assignmentSettings/
-```
 
 ### Request
 
@@ -359,10 +340,6 @@ To remove a grading category from the assignment settings and the grading interf
 
 > **Note:** Assignments in the deleted grading category retain their grades, but teachers can't assign the deleted grading category to other assignments.
 
-```http
-DELETE /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$ref
-```
-
 ### Request
 
 The following example shows a request. 
@@ -406,10 +383,6 @@ HTTP/1.1 204 No Content
 ## Error example: Delete a grading category by using delta payload
 
 When you try to delete a grading category by using the delta payload without replacing it with another grading category to keep the total of all categories to 100, the call results in an error, as shown in the following example.
-
-```http
-PATCH /education/classes/{classId}/assignmentSettings
-```
 
 ### Request
 
