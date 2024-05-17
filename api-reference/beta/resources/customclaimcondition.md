@@ -20,7 +20,7 @@ Inherits from [customClaimConditionBase](../resources/customclaimconditionbase.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|memberOf|String collection|A list of groups (guids) to which the user/application must be a member for this condition to be applied.|
+|memberOf|String collection|A list of groups (GUIDs) to which the user/application must be a member for this condition to be applied.|
 |userType|claimConditionUserType|The type of user this condition applies to. The possible values are: `any`, `members`, `allGuests`, `aadGuests`, `externalGuests`, `unknownFutureValue`.|
 
 ## Relationships
