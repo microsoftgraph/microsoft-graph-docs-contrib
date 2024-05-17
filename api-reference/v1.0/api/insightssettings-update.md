@@ -39,7 +39,7 @@ PATCH /admin/people/itemInsights
 | Header       | Value|
 |:-----------|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an [insightsSett
 
 ### Request
 
-The following example shows how an admin updates the **disabledForGroup** privacy setting in order to prohibit displaying item insights of users in a particular Microsoft Entra group.
+The following example shows how an admin updates the **disabledForGroup** privacy setting to prevent the display of item insights of users in a particular Microsoft Entra group.
 
 <!-- {
   "blockType": "request",
@@ -69,7 +69,7 @@ The following example shows how an admin updates the **disabledForGroup** privac
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/admin/people/itemInsights
-Content-type: application/json
+Content-Type: application/json
 
 {
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
