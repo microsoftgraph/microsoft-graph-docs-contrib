@@ -63,7 +63,7 @@ If-Match: "string"
 
 ### Response
 
-If successful, this API returns the updated roster
+If successful, this API returns the updated roster.
 
 <!-- {
   "blockType": "response",
