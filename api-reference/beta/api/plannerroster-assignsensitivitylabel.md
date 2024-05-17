@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 ## Examples
 
 ### Request
-
+The following example shows a request. 
 <!-- {
   "blockType": "request",
   "name": "assign_sensitivitylabel_to_roster_"
@@ -63,7 +63,7 @@ If-Match: "string"
 
 ### Response
 
-If successful, this API returns the updated roster
+If successful, this API returns the updated roster.
 
 <!-- {
   "blockType": "response",

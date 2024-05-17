@@ -30,7 +30,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerPlanContextCollection"
+  "@odata.type": "microsoft.graph.plannerPlanContextCollection",
+  "openType": true
 }-->
 
 ```json
