@@ -46,7 +46,7 @@ In Outlook, there's a default task group `My Tasks` which you can't rename or de
 |taskFolders|[outlookTaskFolder](outlooktaskfolder.md) collection| The collection of task folders in the task group. Read-only. Nullable.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

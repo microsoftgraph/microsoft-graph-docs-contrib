@@ -42,7 +42,7 @@ Represents a user-user communication or a user-meeting communication in the case
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

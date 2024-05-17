@@ -34,7 +34,7 @@ Inherits from [policyBase](../resources/policybase.md).
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -47,7 +47,6 @@ Here's a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.externalIdentitiesPolicy",
   "id": "String (identifier)",
-  "deletedDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "allowExternalIdentitiesToLeave": "Boolean",

@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\InformationProtection\Policy\Labels\EvaluateRemoval\EvaluateRemovalRequestBuilderPostRequestConfiguration;
+use Microsoft\Graph\Generated\Models\EvaluateRemovalPostRequestBody;
+use Microsoft\Graph\Generated\Models\ContentInfo;
+use Microsoft\Graph\Generated\Models\KeyValuePair;
+use Microsoft\Graph\Generated\Models\DowngradeJustification;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

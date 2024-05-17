@@ -2,6 +2,7 @@
 title: "Configure application proxy using Microsoft Graph APIs"
 description: "Provide remote access and single sign-on to on-premises applications by configuring Microsoft Entra application proxy using Microsoft Graph APIs."
 author: FaithOmbongi
+ma.author: ombongifaith
 ms.reviewer: dhruvinrshah, arpadg
 ms.topic: tutorial
 ms.localizationpriority: medium
@@ -273,7 +274,7 @@ Also, configure the **onPremisesPublishing** property to set the internal and ex
 
 ### Step 2.1: Configure the URIs
 
-The request returns a `204 No content` response.
+The following request uses the value of **appId** for the **identifierUris** property. You can also use any other identifier that matches the application id URI format expected by Microsoft Entra ID. The request returns a `204 No content` response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -286,7 +287,7 @@ Content-type: application/json
 
 {
     "identifierUris": [
-        "https://contosoiwaapp-contoso.msappproxy.net"
+        "api://32977d3b-ee0e-4614-9f50-f583a07842d2"
     ],
     "web": {
         "redirectUris": [

@@ -32,7 +32,7 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 |id|String| The object id of the onPremisesAgent. Read-only.|
 |machineName|String|The name of the machine that the agent is running on. Read-only|
 |status|agentStatus| Possible values are: `active`, `inactive`.|
-|publishingType|String| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|supportedPublishingTypes|String collection| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## Relationships
 
@@ -42,7 +42,7 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

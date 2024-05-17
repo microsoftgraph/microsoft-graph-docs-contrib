@@ -15,7 +15,7 @@ const accessReviewInstanceDecisionItem = {
     justification: 'The IT Helpdesk requires continued access to the User Administrator role to manage user account support requests, lifecycle, and access to resources'
 };
 
-await client.api('/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/decisions/62fd1c5b-04b8-4703-9fd7-dce6232c3775')
+await client.api('/identityGovernance/accessReviews/definitions/02800b79-1a6f-40b7-8381-c0bebc3763bd/instances/30f0cb53-da42-402e-8be5-9005f9c374f7/decisions/888007fa-1d32-4000-a359-fd1d5876a3ed')
 	.post(accessReviewInstanceDecisionItem);
 
 ```

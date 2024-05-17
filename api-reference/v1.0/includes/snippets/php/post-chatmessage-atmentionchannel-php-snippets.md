@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ChatMessage;
+use Microsoft\Graph\Generated\Models\ItemBody;
+use Microsoft\Graph\Generated\Models\ChatMessageMention;
+use Microsoft\Graph\Generated\Models\ChatMessageMentionedIdentitySet;
+use Microsoft\Graph\Generated\Models\TeamworkConversationIdentity;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

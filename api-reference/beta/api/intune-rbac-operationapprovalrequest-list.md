@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1824
+Content-Length: 1751
 
 {
   "value": [
@@ -111,7 +111,6 @@ Content-Length: 1824
       "status": "needsApproval",
       "requestJustification": "Request Justification value",
       "approvalJustification": "Approval Justification value",
-      "operationApprovalPolicies": "Operation Approval Policies value",
       "requiredOperationApprovalPolicyTypes": [
         "deviceAction"
       ]

@@ -5,6 +5,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ConditionalAccessPolicy;
+use Microsoft\Graph\Generated\Models\ConditionalAccessConditionSet;
+use Microsoft\Graph\Generated\Models\RiskLevel;
+use Microsoft\Graph\Generated\Models\ConditionalAccessClientApp;
+use Microsoft\Graph\Generated\Models\ConditionalAccessApplications;
+use Microsoft\Graph\Generated\Models\ConditionalAccessUsers;
+use Microsoft\Graph\Generated\Models\ConditionalAccessPlatforms;
+use Microsoft\Graph\Generated\Models\ConditionalAccessDevicePlatform;
+use Microsoft\Graph\Generated\Models\ConditionalAccessLocations;
+use Microsoft\Graph\Generated\Models\ConditionalAccessDeviceStates;
+use Microsoft\Graph\Generated\Models\ConditionalAccessGrantControls;
+use Microsoft\Graph\Generated\Models\ConditionalAccessGrantControl;
+use Microsoft\Graph\Generated\Models\ConditionalAccessSessionControls;
+use Microsoft\Graph\Generated\Models\CloudAppSecuritySessionControl;
+use Microsoft\Graph\Generated\Models\SignInFrequencySessionControl;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

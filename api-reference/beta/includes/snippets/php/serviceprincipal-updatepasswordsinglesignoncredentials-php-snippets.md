@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\UpdatePasswordSingleSignOnCredentialsPostRequestBody;
+use Microsoft\Graph\Generated\Models\Credential;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

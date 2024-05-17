@@ -41,7 +41,7 @@ Every **accessReviewStage** contains a list of [decision items](accessreviewinst
 |decisions|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

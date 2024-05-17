@@ -31,7 +31,7 @@ Represents a base type for [printer](printer.md) and [printerShare](printerShare
 |jobs|[printJob](printjob.md) collection|The list of jobs that are queued for printing by the printer/printerShare.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

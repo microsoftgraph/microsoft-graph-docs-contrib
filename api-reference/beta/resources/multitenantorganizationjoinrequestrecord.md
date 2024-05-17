@@ -5,6 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Join request
 ---
 
 # multiTenantOrganizationJoinRequestRecord resource type
@@ -33,7 +34,7 @@ Defines the status of a tenant joining a multi-tenant organization. Before a ten
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

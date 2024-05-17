@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.users.item.security.informationProtection.sensitivityLabels.microsoft.graph.security.extractContentLabel.extract_content_label_request_builder import ExtractContentLabelRequestBuilder
-from msgraph.generated.models.extract_content_label_post_request_body import ExtractContentLabelPostRequestBody
+from msgraph.generated.users.item.security.information_protection.sensitivity_labels.microsoft.graph.security.extract_content_label.extract_content_label_request_builder import ExtractContentLabelRequestBuilder
+from msgraph.generated.users.item.security.informationprotection.sensitivitylabels.microsoft_graph_security_extract_content_label.extract_content_label_post_request_body import ExtractContentLabelPostRequestBody
 from msgraph.generated.models.content_info import ContentInfo
 from msgraph.generated.models.key_value_pair import KeyValuePair
 

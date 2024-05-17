@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.oauth2PermissionGrants.oauth2_permission_grants_request_builder import Oauth2PermissionGrantsRequestBuilder
+from msgraph.generated.oauth2_permission_grants.oauth2_permission_grants_request_builder import Oauth2PermissionGrantsRequestBuilder
 
 graph_client = GraphServiceClient(credentials, scopes)
 

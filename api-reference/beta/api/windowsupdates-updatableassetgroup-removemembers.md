@@ -3,7 +3,7 @@ title: "updatableAssetGroup: removeMembers"
 description: "Remove members from an updatableAssetGroup."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: apiPageType
 ---
 

@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AnswerPostRequestBody;
+use Microsoft\Graph\Generated\Models\Modality;
+use Microsoft\Graph\Generated\Models\AppHostedMediaConfig;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

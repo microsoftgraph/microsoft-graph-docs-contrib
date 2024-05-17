@@ -2,8 +2,8 @@
 title: 'Get applicationTemplate'
 description: 'Retrieve the properties and relationships of applicationtemplate object.'
 ms.localizationpriority: medium
-author: 'luleonpla'
-ms.prod: 'applications'
+author: luleonpla
+ms.subservice: entra-applications
 doc_type: apiPageType
 ---
 

@@ -27,10 +27,8 @@ request_body = CustomTaskExtension(
 	),
 	client_configuration = CustomExtensionClientConfiguration(
 		odata_type = "#microsoft.graph.customExtensionClientConfiguration",
+		maximum_retries = 1,
 		timeout_in_milliseconds = 1000,
-		additional_data = {
-				"maximum_retries" : 1,
-		}
 	),
 	callback_configuration = CustomTaskExtensionCallbackConfiguration(
 		odata_type = "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",

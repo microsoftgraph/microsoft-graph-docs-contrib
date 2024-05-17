@@ -5,6 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyApprovalRule;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyRuleTarget;
+use Microsoft\Graph\Generated\Models\UnifiedRoleManagementPolicyRuleTargetOperations;
+use Microsoft\Graph\Generated\Models\ApprovalSettings;
+use Microsoft\Graph\Generated\Models\UnifiedApprovalStage;
+use Microsoft\Graph\Generated\Models\SubjectSet;
+use Microsoft\Graph\Generated\Models\SingleUser;
+use Microsoft\Graph\Generated\Models\GroupMembers;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

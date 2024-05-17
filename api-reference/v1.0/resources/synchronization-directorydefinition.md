@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -57,11 +57,6 @@ Here's a JSON representation of the resource.
   "discoverabilities": "String",
   "discoveryDateTime": "DateTimeOffset",
   "id": "String",
-  "metadata": [
-    {
-      "@odata.type": "microsoft.graph.stringKeyStringValuePair"
-    }
-  ],
   "name": "String",
   "objects": [
     {

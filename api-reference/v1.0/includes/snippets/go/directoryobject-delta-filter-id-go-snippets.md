@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-sdk-go/directoryobjects"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 
 requestFilter := "id eq '87d349ed-44d7-43e1-9a83-5f2406dee5bd'"
@@ -25,7 +25,8 @@ configuration := &graphdirectoryobjects.DirectoryObjectsDelta()RequestBuilderGet
 	QueryParameters: requestParameters,
 }
 
-delta, err := graphClient.DirectoryObjects().Delta().Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+delta, err := graphClient.DirectoryObjects().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

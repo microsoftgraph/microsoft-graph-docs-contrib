@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessPackageAssignmentRequest;
+use Microsoft\Graph\Generated\Models\AccessPackageAnswer;
+use Microsoft\Graph\Generated\Models\AccessPackageAnswerString;
+use Microsoft\Graph\Generated\Models\AccessPackageMultipleChoiceQuestion;
+use Microsoft\Graph\Generated\Models\AccessPackageTextInputQuestion;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -39,6 +45,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->assignmentRequests()->post($requestBody)->wait();
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageAssignmentRequests()->post($requestBody)->wait();
 
 ```

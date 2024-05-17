@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.remove_members_post_request_body import RemoveMembersPostRequestBody
+from msgraph.generated.admin.windows.updates.updatableassets.item.microsoft_graph_windows_updates_remove_members.remove_members_post_request_body import RemoveMembersPostRequestBody
 from msgraph.generated.models.updatable_asset import UpdatableAsset
 from msgraph.generated.models.azure_a_d_device import AzureADDevice
 

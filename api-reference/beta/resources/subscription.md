@@ -4,7 +4,7 @@ description: "Represents a subscription that allows a client app to receive chan
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 
 ---
 

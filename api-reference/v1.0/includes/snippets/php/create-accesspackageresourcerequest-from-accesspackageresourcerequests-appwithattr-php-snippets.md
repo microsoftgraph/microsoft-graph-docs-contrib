@@ -5,6 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessPackageResourceRequest;
+use Microsoft\Graph\Generated\Models\AccessPackageResource;
+use Microsoft\Graph\Generated\Models\AccessPackageResourceAttribute;
+use Microsoft\Graph\Generated\Models\AccessPackageUserDirectoryAttributeStore;
+use Microsoft\Graph\Generated\Models\AccessPackageResourceAttributeQuestion;
+use Microsoft\Graph\Generated\Models\AccessPackageTextInputQuestion;
+use Microsoft\Graph\Generated\Models\AccessPackageCatalog;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

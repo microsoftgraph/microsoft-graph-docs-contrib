@@ -2,9 +2,10 @@
 title: "certificateBasedAuthConfiguration resource type"
 description: "Represents a collection of certificate authorities."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
+toc.keywords: [ CBA ]
 ---
 
 # certificateBasedAuthConfiguration resource type

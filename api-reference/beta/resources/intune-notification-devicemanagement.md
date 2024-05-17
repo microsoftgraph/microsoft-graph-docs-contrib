@@ -20,8 +20,8 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagement](../api/intune-notification-devicemanagement-get.md)|[deviceManagement](../resources/intune-notification-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-notification-devicemanagement.md) object.|
-|[Update deviceManagement](../api/intune-notification-devicemanagement-update.md)|[deviceManagement](../resources/intune-notification-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-notification-devicemanagement.md) object.|
+|[Get deviceManagement](../api/intune-notification-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Read properties and relationships of the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
+|[Update deviceManagement](../api/intune-notification-devicemanagement-update.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|

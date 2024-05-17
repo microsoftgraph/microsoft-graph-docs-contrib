@@ -136,7 +136,7 @@ This resource supports:
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -149,7 +149,8 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties",
     "multiValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.event"
+  "@odata.type": "microsoft.graph.event",
+  "baseType": "microsoft.graph.outlookItem"
 }-->
 
 ```json

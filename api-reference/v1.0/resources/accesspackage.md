@@ -58,7 +58,7 @@ Each access package is referenced by a single access package catalog, and has li
 |resourceRoleScopes| [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | The resource roles and scopes in this access package. |
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.topic: concept-article
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: entra-applications
 ms.date: 03/12/2024
 #Customer intent: As a developer, I want to to understand how features differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---

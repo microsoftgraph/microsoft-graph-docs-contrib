@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+toc.title: Deleted item
 ---
 
 # directory resource type
@@ -47,7 +48,7 @@ Inherits from [entity](entity.md).
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

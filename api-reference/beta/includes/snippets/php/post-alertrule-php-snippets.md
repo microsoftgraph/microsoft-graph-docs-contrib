@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AlertRule;
+use Microsoft\Graph\Generated\Models\RuleThreshold;
+use Microsoft\Graph\Generated\Models\RuleCondition;
+use Microsoft\Graph\Generated\Models\NotificationChannel;
+use Microsoft\Graph\Generated\Models\NotificationReceiver;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

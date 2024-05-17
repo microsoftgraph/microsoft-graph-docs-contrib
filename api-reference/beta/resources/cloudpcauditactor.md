@@ -19,25 +19,25 @@ The audit actor represented by the Microsoft Entra user and application associat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `UnknownFutureValue`.|
-|userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
-|applicationId|String|Microsoft Entra application ID.|
 |applicationDisplayName|String|Name of the application.|
-|userPrincipalName|String|User Principal Name (UPN).|
-|servicePrincipalName|String|Service Principal Name (SPN).|
+|applicationId|String|Microsoft Entra application ID.|
 |ipAddress|String|IP address.|
-|userId|String|Microsoft Entra user ID.|
-|userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
 |remoteTenantId|String|The delegated partner tenant ID.|
 |remoteUserId|String|The delegated partner user ID.|
+|servicePrincipalName|String|Service Principal Name (SPN).|
+|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `UnknownFutureValue`.|
+|userId|String|Microsoft Entra user ID.|
+|userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
+|userPrincipalName|String|User Principal Name (UPN).|
+|userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
 
 ### cloudPcAuditActorType values
 
 |Member|Description|
 |:---|:---|
-|itPro|An IT pro performed the operation.|
-|application|The application performed the operation.|
-|partner|A partner performed the operation.|
+|itPro|Indicates the operation was triggered by an IT Pro/IT Admin.|
+|application|Indicates the operation was triggered by an application.|
+|partner|Indicates the operation was triggered by a partner.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships

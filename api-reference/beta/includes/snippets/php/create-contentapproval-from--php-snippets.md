@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\ContentApproval;
+use Microsoft\Graph\Generated\Models\CatalogContent;
+use Microsoft\Graph\Generated\Models\FeatureUpdateCatalogEntry;
+use Microsoft\Graph\Generated\Models\DeploymentSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

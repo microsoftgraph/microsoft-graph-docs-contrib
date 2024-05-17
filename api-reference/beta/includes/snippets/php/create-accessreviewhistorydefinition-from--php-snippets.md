@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessReviewHistoryDefinition;
+use Microsoft\Graph\Generated\Models\AccessReviewHistoryDecisionFilter;
+use Microsoft\Graph\Generated\Models\AccessReviewScope;
+use Microsoft\Graph\Generated\Models\AccessReviewQueryScope;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

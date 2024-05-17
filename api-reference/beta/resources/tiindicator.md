@@ -1,5 +1,5 @@
 ---
-title: "tiIndicator resource type"
+title: "tiIndicator resource type (deprecated)"
 description: "Threat intelligence (TI) indicators represent data used to identify malicious activities."
 ms.localizationpriority: medium
 author: "preetikr"
@@ -7,11 +7,14 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# tiIndicator resource type
+# tiIndicator resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!NOTE]
+> The [tiIndicator](tiindicator.md) entity is deprecated and will be removed by April 2026.
 
 Represents data used to identify malicious activities. 
 
@@ -202,7 +205,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

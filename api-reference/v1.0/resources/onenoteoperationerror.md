@@ -15,7 +15,7 @@ An error from a failed OneNote operation.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

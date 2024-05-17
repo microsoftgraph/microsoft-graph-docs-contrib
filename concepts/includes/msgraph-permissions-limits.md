@@ -1,8 +1,10 @@
 ---
 author: FaithOmbongi
 ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.topic: include
+ms.subservice: entra-applications
 ---
 
 <!-- markdownlint-disable MD041-->

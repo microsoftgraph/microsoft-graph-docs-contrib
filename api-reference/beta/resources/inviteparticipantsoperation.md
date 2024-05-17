@@ -27,7 +27,7 @@ Represents the status of a long-running participant invitation operation, trigge
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

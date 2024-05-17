@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.get_staff_availability_post_request_body import GetStaffAvailabilityPostRequestBody
+from msgraph.generated.solutions.bookingbusinesses.item.get_staff_availability.get_staff_availability_post_request_body import GetStaffAvailabilityPostRequestBody
 from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 
 graph_client = GraphServiceClient(credentials, scopes)

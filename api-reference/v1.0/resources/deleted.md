@@ -20,7 +20,7 @@ See [view changes for an item](../api/driveitem-delta.md) for more information o
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

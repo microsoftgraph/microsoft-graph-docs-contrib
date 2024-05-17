@@ -55,7 +55,7 @@ An app role assignment where the assigned principal is a service principal is an
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

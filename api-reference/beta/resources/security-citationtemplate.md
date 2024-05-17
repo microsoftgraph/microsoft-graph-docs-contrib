@@ -1,6 +1,6 @@
 ---
 title: "citationTemplate resource type"
-description: "The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted."
+description: "Represents the specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted."
 author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
-
+Represents the specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted. This resource supports CRUD operations to apply and manage the [filePlanCitation](security-fileplancitation.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **citation** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
 
@@ -31,16 +30,16 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 |:---|:---|:---|
 |citationJurisdiction|String|Represents the jurisdiction or agency that published the citation.|
 |citationUrl|String|Represents the URL to the published citation.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the citation. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the citation is created. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|displayName|String|Unique string that defines a citation name. Inherited from [microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md).|
-|id|String|Unique ID of the citation. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the citation descriptor. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the citation descriptor is created. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
+|displayName|String|Unique string that defines a citation name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
+|id|String|Unique ID of the citation. Inherited from [microsoft.graph.entity](../resources/entity.md). Read-only.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

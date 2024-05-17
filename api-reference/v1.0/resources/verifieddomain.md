@@ -2,7 +2,7 @@
 title: "verifiedDomain resource type"
 description: "Specifies a domain for a tenant. The verifiedDomains property of the organization entity is a collection of verifiedDomain objects."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "tafra00"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
@@ -15,17 +15,17 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 
 
 ## Properties
-| Property     | Type    | Description                                                                          |
-|:-------------|:--------|:-------------------------------------------------------------------------------------|
-| capabilities | String  | For example, `Email`, `OfficeCommunicationsOnline`.                                  |
-| isDefault    | Boolean | `true` if this is the default domain associated with the tenant; otherwise, `false`. |
-| isInitial    | Boolean | `true` if this is the initial domain associated with the tenant; otherwise, `false`. |
-| name         | String  | The domain name; for example, contoso.com`.                             |
-| type         | String  | For example, `Managed`.                                                              |
+| Property | Type | Description|
+|---------|---------|---------|
+| capabilities | String | For example, `Email`, `OfficeCommunicationsOnline`. |
+| isDefault | Boolean | `true` if this is the default domain associated with the tenant; otherwise, `false`. |
+| isInitial | Boolean | `true` if this is the initial domain associated with the tenant; otherwise, `false`. |
+| name | String | The domain name; for example, `contoso.com`. |
+| type | String | For example, `Managed`. |
 
 ## JSON representation
 
-Here's a JSON representation of the resource
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

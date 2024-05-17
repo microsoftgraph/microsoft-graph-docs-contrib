@@ -5,6 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\DeviceLink;
+use Microsoft\Graph\Generated\Models\BgpConfiguration;
+use Microsoft\Graph\Generated\Models\RedundancyConfiguration;
+use Microsoft\Graph\Generated\Models\TunnelConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -3,7 +3,7 @@ title: "resourceConnection resource type"
 description: "Represents connections to external resources from which more specialized connections are derived."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
-ms.prod: "w10"
+ms.subservice: windows-update-business
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ This resource type is abstract.
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

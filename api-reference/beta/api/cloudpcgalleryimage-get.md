@@ -62,12 +62,13 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcgalleryimage"
+  "name": "get_cloudpcgalleryimage",
+  "sampleKeys": ["MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os"]
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryImages/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/galleryImages/MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os
 ```
 
 # [C#](#tab/csharp)
@@ -136,6 +137,6 @@ Content-Type: application/json
   "sizeInGB": 64,
   "startDate": "2019-11-12",
   "endDate": "2022-05-10",
-  "expiredDate": "2022-11-10"
+  "expirationDate": "2022-11-10"
 }
 ```

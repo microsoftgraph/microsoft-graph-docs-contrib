@@ -35,6 +35,7 @@ To create a team:
 
 You have successfully created your team.
 
-## Next steps
+## Next step
 
-[Use Graph Explorer](/graph/msgraph-onboarding-graphexplorer) to test Microsoft Graph calls.
+> [!div class="nextstepaction"]
+> [Use Graph Explorer to test Microsoft Graph API calls](/graph/msgraph-onboarding-graphexplorer)

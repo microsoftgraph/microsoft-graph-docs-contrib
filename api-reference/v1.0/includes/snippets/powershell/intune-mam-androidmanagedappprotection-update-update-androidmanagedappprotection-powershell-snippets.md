@@ -29,26 +29,26 @@ $params = @{
 	pinCharacterSet = "alphanumericAndSymbol"
 	periodBeforePinReset = "PT3M29.6631862S"
 	allowedDataStorageLocations = @(
-		"sharePoint"
-	)
-	contactSyncBlocked = $true
-	printBlocked = $true
-	fingerprintBlocked = $true
-	disableAppPinIfDevicePinIsSet = $true
-	minimumRequiredOsVersion = "Minimum Required Os Version value"
-	minimumWarningOsVersion = "Minimum Warning Os Version value"
-	minimumRequiredAppVersion = "Minimum Required App Version value"
-	minimumWarningAppVersion = "Minimum Warning App Version value"
-	managedBrowser = "microsoftEdge"
-	isAssigned = $true
-	screenCaptureBlocked = $true
-	disableAppEncryptionIfDeviceEncryptionIsEnabled = $true
-	encryptAppData = $true
-	deployedAppCount = 0
-	minimumRequiredPatchVersion = "Minimum Required Patch Version value"
-	minimumWarningPatchVersion = "Minimum Warning Patch Version value"
-	customBrowserPackageId = "Custom Browser Package Id value"
-	customBrowserDisplayName = "Custom Browser Display Name value"
+	"sharePoint"
+)
+contactSyncBlocked = $true
+printBlocked = $true
+fingerprintBlocked = $true
+disableAppPinIfDevicePinIsSet = $true
+minimumRequiredOsVersion = "Minimum Required Os Version value"
+minimumWarningOsVersion = "Minimum Warning Os Version value"
+minimumRequiredAppVersion = "Minimum Required App Version value"
+minimumWarningAppVersion = "Minimum Warning App Version value"
+managedBrowser = "microsoftEdge"
+isAssigned = $true
+screenCaptureBlocked = $true
+disableAppEncryptionIfDeviceEncryptionIsEnabled = $true
+encryptAppData = $true
+deployedAppCount = 0
+minimumRequiredPatchVersion = "Minimum Required Patch Version value"
+minimumWarningPatchVersion = "Minimum Warning Patch Version value"
+customBrowserPackageId = "Custom Browser Package Id value"
+customBrowserDisplayName = "Custom Browser Display Name value"
 }
 
 Update-MgDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppProtectionId $androidManagedAppProtectionId -BodyParameter $params

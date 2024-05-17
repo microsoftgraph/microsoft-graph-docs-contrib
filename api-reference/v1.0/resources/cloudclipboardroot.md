@@ -3,8 +3,9 @@ title: "cloudClipboardRoot resource type"
 description: "Represents the information and properties of a cloudClipboardRoot"
 author: "yuechen7"
 ms.localizationpriority: medium
-ms.prod: "project-rome"
+ms.subservice: "project-rome"
 doc_type: resourcePageType
+toc.title: Cloud clipboard
 ---
 
 # cloudClipboardRoot resource type

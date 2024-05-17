@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\UpdateWindowsDeviceAccountPostRequestBody;
+use Microsoft\Graph\Generated\Models\UpdateWindowsDeviceAccountActionParameter;
+use Microsoft\Graph\Generated\Models\WindowsDeviceAccount;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

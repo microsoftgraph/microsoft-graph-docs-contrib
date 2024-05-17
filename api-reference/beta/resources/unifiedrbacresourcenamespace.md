@@ -34,7 +34,7 @@ Represents the namespace of the area or service such as Microsoft Entra ID, Intu
 |resourceActions|[unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection|Operations that an authorized principal is allowed to perform.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

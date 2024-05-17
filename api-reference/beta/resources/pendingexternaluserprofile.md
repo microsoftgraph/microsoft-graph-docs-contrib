@@ -3,6 +3,7 @@ title: "pendingExternalUserProfile resource type"
 description: "Represents an external user profile in the Microsoft Entra tenant that hasn't consented to share data with the tenant."
 ms.localizationpriority: high
 author: "jkdouglas"
+ms.reviewer: mapamu
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---

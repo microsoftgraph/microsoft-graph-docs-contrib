@@ -5,6 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IosGeneralDeviceConfiguration;
+use Microsoft\Graph\Generated\Models\AppListItem;
+use Microsoft\Graph\Generated\Models\MediaContentRatingAustralia;
+use Microsoft\Graph\Generated\Models\MediaContentRatingCanada;
+use Microsoft\Graph\Generated\Models\MediaContentRatingFrance;
+use Microsoft\Graph\Generated\Models\MediaContentRatingGermany;
+use Microsoft\Graph\Generated\Models\MediaContentRatingIreland;
+use Microsoft\Graph\Generated\Models\MediaContentRatingJapan;
+use Microsoft\Graph\Generated\Models\MediaContentRatingNewZealand;
+use Microsoft\Graph\Generated\Models\MediaContentRatingUnitedKingdom;
+use Microsoft\Graph\Generated\Models\MediaContentRatingUnitedStates;
+use Microsoft\Graph\Generated\Models\IosNetworkUsageRule;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

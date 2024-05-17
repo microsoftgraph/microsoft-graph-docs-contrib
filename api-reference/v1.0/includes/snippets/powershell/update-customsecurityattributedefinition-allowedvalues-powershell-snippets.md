@@ -8,6 +8,14 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
 	"allowedValues@delta" = @(
+		@{
+			id = "Baker"
+			isActive = $false
+		}
+		@{
+			id = "Skagit"
+			isActive = $true
+		}
 	)
 }
 

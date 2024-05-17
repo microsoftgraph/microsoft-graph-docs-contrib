@@ -12,8 +12,8 @@ $params = @{
 	defaultLocale = "Default Locale value"
 	brandingOptions = "includeCompanyLogo"
 	roleScopeTagIds = @(
-		"Role Scope Tag Ids value"
-	)
+	"Role Scope Tag Ids value"
+)
 }
 
 Update-MgDeviceManagementNotificationMessageTemplate -NotificationMessageTemplateId $notificationMessageTemplateId -BodyParameter $params

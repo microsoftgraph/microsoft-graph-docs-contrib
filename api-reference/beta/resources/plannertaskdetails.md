@@ -26,7 +26,9 @@ Represents the additional information about a task. Each [task](plannertask.md) 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|approvalAttachment|[plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md)|Detailed information about the approval that is attached to the task.|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
+|forms|[plannerFormsDictionary](plannerformsdictionary.md)| Read-only. Represents a dictionary of data about the forms associated with a task. Each entry in the dictionary is a key-value pair, and the value is a [plannerFormReference](plannerformreference.md) object.|
 |completionRequirements|[plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md)|Contains detailed information about requirements on the task.|
 |description|String|Description of the task.|
 |id|String| Read-only. ID of the task details. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
@@ -39,7 +41,7 @@ None.
 
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -52,12 +54,14 @@ Here's a JSON representation of the resource.
 ```json
 {
   "checklist": {"@odata.type": "microsoft.graph.plannerChecklistItems"},
+  "forms": {"@odata.type": "microsoft.graph.plannerFormsDictionary"},
   "completionRequirements": {"@odata.type": "microsoft.graph.plannerTaskCompletionRequirementDetails"},
   "description": "String",
   "id": "String (identifier)",
   "notes": {"@odata.type": "microsoft.graph.itemBody"},
   "previewType": "String",
-  "references": {"@odata.type": "microsoft.graph.plannerExternalReferences"}
+  "references": {"@odata.type": "microsoft.graph.plannerExternalReferences"},
+  "approvalAttachment": {"@odata.type": "microsoft.graph.plannerBaseApprovalAttachment"}
 }
 ```
 
