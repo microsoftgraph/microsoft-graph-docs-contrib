@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for app installation using Microsoft Graph
 
-Change notifications allow you to subscribe to events related to app installation, upgrade, and uninstallation. You can get notified whenever the [Teams app installation](/graph/api/resources/teamsappinstallation) and where the event took place.
+Change notifications allow you to subscribe to teams app related events such as installation, upgrade, and uninstallation. You can get notified whenever the Teams app is installed, upgraded or deleted from a team, chat or user.
 
 If a customer needs any additional information, they can use Teams app ID and app installation ID returned in the notification payload to fetch the necessary information separately.
 
@@ -29,15 +29,14 @@ One of the following permissions is required to subscribe to `/appCatalogs/teams
 
 ### Examples
 
-The following example shows how to subscribe for app installation in Teams.
+The following example shows how to subscribe for Teams App Installation notifications in all scopes:
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
-
 Content-Type: application/json
 {
 "changeType": "created,updated,deleted",
-"resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'personal') or (scopeInfo/scope eq 'team')",
+"resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations,
 "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
 "includeResourceData": true,
 "encryptionCertificate": "{base64encodedCertificate}",
@@ -55,7 +54,7 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
 { 
   "changeType": "created,updated,deleted", 
-  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'personal') or (scopeInfo/scope eq 'team')", 
+  ""resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'personal') or (scopeInfo/scope eq 'team') or (scopeInfo/scope eq 'groupChat')"
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications", 
   "includeResourceData": true, 
   "encryptionCertificate": "{base64encodedCertificate}", 
