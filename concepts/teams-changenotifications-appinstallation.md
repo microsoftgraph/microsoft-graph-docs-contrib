@@ -9,21 +9,21 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for app installation using Microsoft Graph
 
-Change notifications allow you to subscribe to teams app related events such as installation, upgrade, and uninstallation. You can get notified whenever the Teams app is installed, upgraded, or deleted from a team, chat or user.
+Change notifications allow you to subscribe to Teams app related events such as installation, upgrade, and uninstallation. You can get notified whenever the Teams app is installed, upgraded, or deleted from a team, chat, or user.
 
-If a customer needs any additional information, they can use Teams app ID and app installation ID returned in the notification payload to fetch the necessary information separately.
+If the user needs any additional information, they can use Teams app ID and app installation ID returned in the notification payload to fetch the necessary information separately.
 
 ## Subscribe to Teams app installation
 
-To get change notifications for app installation in Teams, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations`.
+To get change notifications for Teams app installation, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations`.
 
 ### Permissions
 
-To subscribe to the Teams apps installation, you can utilize the following specified scope or all scopes along with the corresponding permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+To subscribe to Teams apps installation, you can use the following specified scope or all scopes along with the corresponding permissions. For more information on including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 #### User scope
 
-To get change notifications for Teams app installation in user scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permission:
+To get change notifications for Teams app installation in user scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -31,11 +31,11 @@ To get change notifications for Teams app installation in user scope, subscribe 
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.Read.User* |
 
-*Represents RSC permissions.
+*Represents resource-specific consent (RSC) permissions.
 
 #### Team scope
 
-To get change notifications for Teams app installation in team scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permission:
+To get change notifications for Teams app installation in team scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permissions:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -47,7 +47,7 @@ To get change notifications for Teams app installation in team scope, subscribe 
 
 #### Chat scope
 
-To get change notifications for Teams app installation in chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permission:
+To get change notifications for Teams app installation in chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permissions:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -67,7 +67,7 @@ To get change notifications for Teams app installation in all scope, subscribe t
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadSelected.All |
 
-To get change notifications for Teams app installation in team and chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter= (scopeInfo/scope eq 'groupChat') or (scopeInfo/scope eq 'team')` with one of the permissions from team and chat scopes.
+To get change notifications for Teams app installation in both team and chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter= (scopeInfo/scope eq 'groupChat') or (scopeInfo/scope eq 'team')` with one of the permissions from team and chat scopes.
 
 ### Examples
 
@@ -105,9 +105,9 @@ Content-Type: application/json
 } 
 ```
 
-Ensure that the permissions you need to provide vary based on the scope. In the given example, a subscription was set up for both users and teams, so at least one permission for each scope is necessary.
+Ensure that the permissions you need to provide vary based on the scope. In the given example, a subscription was set up for both users and teams scopes, so at least one permission for each scope is mandatory.
 
-For apps that utilize resource-specific consent (RSC) permissions, you must declare `useResourceSpecificConsentBasedAuthorization=true` query parameter while you create subscription by adding it to the subscription resource:
+For apps that use RSC permissions, you must declare `useResourceSpecificConsentBasedAuthorization=true` query parameter while you create subscription by adding it to the subscription resource:
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
