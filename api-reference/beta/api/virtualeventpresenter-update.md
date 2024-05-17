@@ -68,14 +68,16 @@ PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/fc6e8c15
 Content-Type: application/json
 
 {
-  "bio": {
-    "content": "Lead Product Manager of Contoso Sales department",
-    "contentType": "text"
-  },
-  "company": "Contoso",
-  "jobTitle": "Product Manager",
-  "linkedInProfileWebUrl": "https://linkedin.com/in/DianeDemoss",
-  "personalSiteWebUrl": "https://DianeDemoss.com"
+  "presenterDetails": {
+    "bio": {
+      "content": "Lead Product Manager of Contoso Sales department",
+      "contentType": "text"
+    },
+    "company": "Contoso",
+    "jobTitle": "Product Manager",
+    "linkedInProfileWebUrl": "https://linkedin.com/in/DianeDemoss",
+    "personalSiteWebUrl": "https://DianeDemoss.com"
+  }
 }
 ```
 
