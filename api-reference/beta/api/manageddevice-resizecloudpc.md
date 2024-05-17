@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and will stop returning data on October 30, 2023. Going forward, use the [cloudPC: resize](../api/cloudpc-resize.md) API.
+> This API is deprecated and stopped returning data on October 30, 2023. Going forward, use the [cloudPC: resize](../api/cloudpc-resize.md) API.
 
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
