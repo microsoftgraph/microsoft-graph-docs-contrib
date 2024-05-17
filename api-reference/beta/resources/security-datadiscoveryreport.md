@@ -1,6 +1,6 @@
 ---
 title: "dataDiscoveryReport resource type"
-description: "**TODO: Add Description**"
+description: "**Todo: This is the dataDiscovery report**"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**TODO: Please ensure to read the disclaimer**
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -28,12 +28,12 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|**TODO: These are all the available properties** Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|uploadedStreams|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|**TODO: Add Description**|
+|uploadedStreams|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|**TODO: These are all the available upload streams**|
 
 ## JSON representation
 The following JSON representation shows the resource type.
