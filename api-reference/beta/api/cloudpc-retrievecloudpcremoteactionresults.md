@@ -1,7 +1,7 @@
 ---
 title: "cloudPC: retrieveCloudPcRemoteActionResults"
 description: "Retrieve remote action result and check the status of a specific remote action performed on the associated Cloud PC device."
-author: "RuiHou105"
+author: "Luoyyy"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
