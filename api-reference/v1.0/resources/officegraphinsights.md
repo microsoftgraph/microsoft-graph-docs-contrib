@@ -26,6 +26,9 @@ Insights are returned by the following APIs:
 
 Each insight is returned with a **resourceVisualization** and **resourceReference** complex value type (CVT). The **resourceVisualization** CVT contains properties such as **title** and **previewImageUrl**. Microsoft uses the visualization properties to render the files in experiences like Office Delve.
 
+## Properties
+None.
+
 ## Relationships
 
 | Relationship      | Type          | Description  |
