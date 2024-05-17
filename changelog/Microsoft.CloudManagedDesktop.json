@@ -5063,6 +5063,24 @@
       "CreatedDateTime": "2024-04-01T06:58:17.7596296Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "70140990-a6a0-429c-8487-2947541d220c",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Change",
+          "Description": "Removed the **format** property as a supported parameter for the [Create cloudPcExportJob](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta) method because the only supported format type is currently CSV. If you enter a different format type, it doesn't result in other formats of reports to download.",
+          "Target": "cloudPcExportJob"
+        }
+      ],
+      "Id": "70140990-a6a0-429c-8487-2947541d220c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-16T06:58:17.7596296Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     }
   ]
 }

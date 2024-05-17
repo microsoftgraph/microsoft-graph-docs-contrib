@@ -77,7 +77,6 @@ The following JSON representation shows the resource type.
 {
  "@odata.type": "#microsoft.graph.accessReviewInstance",
  "id": "string (identifier)",
- "displayName": "string",
  "startDateTime": "string (timestamp)",
  "endDateTime": "string (timestamp)",
  "status": "string",
