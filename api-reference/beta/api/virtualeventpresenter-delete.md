@@ -67,7 +67,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following example shows a request.
+The following example shows how to delete a presenter from a **virtualEventTownhall**.
 
 # [HTTP](#tab/http)
 <!-- {
