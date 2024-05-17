@@ -36,7 +36,7 @@ HashMap<String, Object> additionalData = new HashMap<String, Object>();
 assignment.setId("44c741c1-2cf4-40db-83b6-e0112f8e5a83");
 additionalData.put("assignment", assignment);
 accessPackageAssignmentRequest.setAdditionalData(additionalData);
-AccessPackageAssignmentRequest result = graphClient.identityGovernance().entitlementManagement().assignmentRequests().post(accessPackageAssignmentRequest);
+AccessPackageAssignmentRequest result = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests().post(accessPackageAssignmentRequest);
 
 
 ```

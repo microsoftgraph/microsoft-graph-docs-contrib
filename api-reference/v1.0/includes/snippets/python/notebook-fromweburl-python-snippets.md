@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.get_notebook_from_web_url_post_request_body import GetNotebookFromWebUrlPostRequestBody
+from msgraph.generated.users.item.onenote.notebooks.get_notebook_from_web_url.get_notebook_from_web_url_post_request_body import GetNotebookFromWebUrlPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -19,6 +19,9 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
+> [!NOTE]  
+> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies).
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -53,16 +56,6 @@ This method supports the following OData query parameters to help customize the 
 |:--------|:----------|
 | $filter | The [$filter](/graph/query-parameters#filter-parameter) query parameter supports date and time range queries on the **lastModifiedDateTime** property.|
 | $top    | Use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.|
-
-The following table lists examples that show how to use the `$filter` parameter.
-
-|Scenario                                  | `$filter` parameter                                                                       |Possible values                                                                                             |
-|:-----------------------------------------|:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-|Get messages sent by user identity type   |$filter=from/user/userIdentityType eq '{teamworkUserIdentityType}'                      |aadUser, onPremiseAadUser, anonymousGuest, federatedUser, personalMicrosoftAccountUser, skypeUser, phoneUser|
-|Get messages sent by application type     |$filter=from/application/applicationIdentityType eq '{teamworkApplicationIdentity}'     |aadApplication, bot, tenantBot, office365Connector, outgoingWebhook                                         |
-|Get messages sent by user ID              |$filter=from/user/id eq '{oid}'                                                         ||
-|Get control (system event) messages        |$filter=messageType eq 'systemEventMessage'                                             ||
-|Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
 
 ## Request headers
 

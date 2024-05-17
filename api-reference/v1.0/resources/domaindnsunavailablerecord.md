@@ -2,7 +2,7 @@
 title: "domainDnsUnavailableRecord resource type"
 description: "Indicates that serviceConfigurationRecords can't be generated."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "tafra00"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ---
@@ -17,7 +17,7 @@ When you query for the navigation property **serviceConfigurationRecords** for a
 Direct queries to this resource aren't supported. See the [domain](domain.md) article for information on how to query for domain service records.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |description|String|Provides the reason why the **DomainDnsUnavailableRecord** entity is returned. |
 

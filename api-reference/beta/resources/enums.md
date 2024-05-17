@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### groupAccessType values
+
+| Member             |
+|:-------------------|
+| none               |
+| private            |
+| secret             |
+| public             |
+
 ### fileStorageContainerStatus values
 
 | Member             |
@@ -138,6 +147,18 @@ Namespace: microsoft.graph
 |:---|
 |preview|
 |generallyAvailable|
+|unknownFutureValue|
+
+### requiredLicenses values
+
+|Member|
+|:---|
+|notApplicable|
+|microsoftEntraIdFree|
+|microsoftEntraIdP1|
+|microsoftEntraIdP2|
+|microsoftEntraIdGovernance|
+|microsoftEntraWorkloadId|
 |unknownFutureValue|
 
 ### recommendationCategory values
@@ -497,6 +518,8 @@ Namespace: microsoft.graph
 | saml20             |
 | deviceCode         |
 | unknownFutureValue |
+| authenticationTransfer|
+| nativeAuth         |
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
@@ -2654,13 +2677,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### stagedFeatureName values
 
-| Member                    | Description                   |
-| :------------------------ | :---------------------------- |
-| passthroughAuthentication | Passthrough Authentication    |
-| seamlessSso               | Seamless Single Sign-on       |
-| passwordHashSync          | Password Hash Synchronization |
-| emailAsAlternateId        | Email as an alternate ID      |
-| unknownFutureValue        | A sentinel member             |
+| Member                    |
+| :------------------------ |
+| passthroughAuthentication |
+| seamlessSso               |
+| passwordHashSync          |
+| emailAsAlternateId        |
+| unknownFutureValue        |
+| certificateBasedAuthentication |
 
 ### tokenIssuerType values
 
@@ -2896,6 +2920,23 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |bound|
 |unbound|
+|unknownFutureValue|
+
+### conditionalAccessAudienceReason values
+
+| Member |
+| :----- |
+|none|
+|resourcelessRequest|
+|confidentialClientIdToken|
+|confidentialClientNonIdToken|
+|resourceMapping|
+|resourceMappingDefault|
+|scopeMapping|
+|scopeMappingDefault|
+|delegatedScope  |
+|firstPartyResourceDefault|
+|thirdPartyResourceDefault|
 |unknownFutureValue|
 
 ### persistentBrowserSessionMode values
@@ -4696,4 +4737,56 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |deviceCodeFlow|
 |authenticationTransfer|
+|unknownFutureValue|
+
+### sharingRole values 
+
+|Member|
+|:---|
+|none|
+|view|
+|edit|
+|manageList|
+|review|
+|restrictedView|
+|submitOnly|
+|unknownFutureValue|
+
+### sharingScope values 
+
+|Member|
+|:---|
+|anyone|
+|organization|
+|specificPeople|
+|anonymous|
+|users|
+|unknownFutureValue|
+
+### sharingVariant values 
+
+|Member|
+|:---|
+|none|
+|requiresAuthentication|
+|passwordProtected|
+|addressBar|
+|embed|
+|unknownFutureValue|
+
+### trustFrameworkKeyStatus values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### conditionalAccessInsiderRiskLevels values 
+
+|Member|
+|:---|
+|minor|
+|moderate|
+|elevated|
 |unknownFutureValue|

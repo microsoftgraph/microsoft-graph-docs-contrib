@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/v1.0/security/labels/authorities/a94af2e3-853b-6
 
 ---
 
-
 ### Response
 Here's an example of the response.
 

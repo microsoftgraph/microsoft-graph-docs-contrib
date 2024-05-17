@@ -22,7 +22,7 @@ request_body = Bookmark(
 			"install",
 		],
 		reserved_keywords = [
-			"Contoso",
+			"Unique keyword",
 		],
 		match_similar_keywords = True,
 	),

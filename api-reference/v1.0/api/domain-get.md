@@ -1,7 +1,7 @@
 ---
 title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
-author: "adimitui"
+author: "tafra00"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

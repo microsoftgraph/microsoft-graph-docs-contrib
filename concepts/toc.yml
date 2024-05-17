@@ -606,8 +606,8 @@ items:
   - name: Identity and access
     items:
     - name: Overview
-      href: azuread-identity-access-management-concept-overview.md
-      displayName: Azure AD, Microsoft identity platform, identity, access
+      href: identity-network-access-overview.md
+      displayName: Microsoft Entra, Azure AD, Microsoft identity platform
     - name: Directory management
       items:
       - name: "Manage custom security attribute assignments"
@@ -1183,8 +1183,6 @@ items:
       href: migrate-exchange-web-services-authentication.md
     - name: API mapping
       href: migrate-exchange-web-services-api-mapping.md
-  - name: Outlook REST APIs
-    href: /outlook/rest/compare-graph?context=graph/context
 - name: API v1.0 reference
   href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
   displayName: Microsoft Graph REST API v1.0 reference

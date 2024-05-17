@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta groups conversations create --group-id {group-id} --body '{\
   "Topic": "Does anyone have a second?",\
   "Threads": [\

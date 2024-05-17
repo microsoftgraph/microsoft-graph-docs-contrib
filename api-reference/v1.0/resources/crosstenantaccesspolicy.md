@@ -33,6 +33,7 @@ Represents the base policy in the directory for cross-tenant access settings.
 |:---|:---|:---|
 |default|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Defines the default configuration for how your organization interacts with external Microsoft Entra organizations.|
 |partners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Defines partner-specific configurations for external Microsoft Entra organizations.|
+|templates|[policyTemplate](../resources/policytemplate.md)|Represents the base policy in the directory for multitenant organization settings.|
 
 ## JSON representation
 

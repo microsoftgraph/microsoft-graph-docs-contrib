@@ -103,7 +103,8 @@ The following is a JSON representation of the resource.
     "singleValueExtendedProperties"
   ],
   "keyProperty":"id",
-  "@odata.type": "microsoft.graph.contact"
+  "@odata.type": "microsoft.graph.contact",
+  "baseType": "microsoft.graph.outlookItem"
 }-->
 
 ```json

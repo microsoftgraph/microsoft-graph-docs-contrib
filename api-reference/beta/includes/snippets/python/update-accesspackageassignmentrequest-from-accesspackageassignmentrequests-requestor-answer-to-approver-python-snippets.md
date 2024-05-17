@@ -43,7 +43,7 @@ request_body = AccessPackageAssignmentRequest(
 	}
 )
 
-result = await graph_client.identity_governance.entitlement_management.assignment_requests.post(request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_requests.post(request_body)
 
 
 ```

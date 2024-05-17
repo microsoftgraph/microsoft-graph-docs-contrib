@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.postpone_post_request_body import PostponePostRequestBody
+from msgraph.generated.directory.recommendations.item.postpone.postpone_post_request_body import PostponePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

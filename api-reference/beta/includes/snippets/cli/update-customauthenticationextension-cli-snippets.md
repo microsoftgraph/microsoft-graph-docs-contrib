@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity custom-authentication-extensions patch --custom-authentication-extension-id {customAuthenticationExtension-id} --body '{\
     "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",\
     "displayName": "onTokenIssuanceStartCustomExtension",\
