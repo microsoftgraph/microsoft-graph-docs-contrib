@@ -60,7 +60,7 @@ Keep the following tips in mind:
 * The change notification is for Microsoft Graph connector management only when the @odata.type of the resource data matches the one in the sample payload.
 * The **tenantId** identified is the customer's tenant ID. When calling the Microsoft Graph API to [manage Microsoft Graph connections](/graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant ID.
 * You can call the Microsoft Graph API to get the customers's display name and default domain name. This can help you map the **tenantId** to the unique identifier in your system. To learn more, see [find tenant information by tenant ID](/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-1.0&tabs=http).
-* Within **resourceData**, use **state** to determine whether to create or delete connections. **connectorsTicket** are needed when creating the connections.
+* Within **resourceData**, use **state** to determine whether to create or delete connections. **connectorsTicket** is needed when creating the connections.
 
 ### Handling "connector enable" notification
 
@@ -157,7 +157,7 @@ Authorization: bearer {{accessToken}}
 ```
 
 >[!NOTE]
->- {{connectorId}} is the value of the **id** property in the manifest. For details, see [App manifest schema for Teams](/microsoftteams/platform/resources/schema/manifest-schema).
+>- When creating the connection, the {{connectorId}} must be set to the value provided in the notification from Graph Connectors.
 >- You should acquire the {{accessToken}} from the [Microsoft identity platform](/azure/active-directory/develop/v2-app-types) for the tenant that is being notified.
 
 ### Response
