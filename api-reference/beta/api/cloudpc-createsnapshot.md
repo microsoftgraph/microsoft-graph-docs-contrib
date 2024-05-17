@@ -1,7 +1,7 @@
 ---
 title: "cloudPC: createSnapshot"
 description: "Create a snapshot for a specific Cloud PC device."
-author: "Guojing Li (liguojing929)"
+author: "liguojing929"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
