@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for app installation using Microsoft Graph
 
-Change notifications allow you to subscribe to teams app related events such as installation, upgrade, and uninstallation. You can get notified whenever the Teams app is installed, upgraded or deleted from a team, chat or user.
+Change notifications allow you to subscribe to teams app related events such as installation, upgrade, and uninstallation. You can get notified whenever the Teams app is installed, upgraded, or deleted from a team, chat or user.
 
 If a customer needs any additional information, they can use Teams app ID and app installation ID returned in the notification payload to fetch the necessary information separately.
 
@@ -105,7 +105,7 @@ Content-Type: application/json
 } 
 ```
 
-Ensure that the permissions you need to provide vary based on the scope. In the given example, a subscription was set up for both users and teams, so at least one permission for each scope is necessary. For further details, please refer to the permissions table.
+Ensure that the permissions you need to provide vary based on the scope. In the given example, a subscription was set up for both users and teams, so at least one permission for each scope is necessary.
 
 For apps that utilize resource-specific consent (RSC) permissions, you must declare `useResourceSpecificConsentBasedAuthorization=true` query parameter while you create subscription by adding it to the subscription resource:
 
