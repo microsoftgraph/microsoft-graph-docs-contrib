@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta privileged-access role-assignment-requests create --privileged-access-id {privilegedAccess-id} --body '{\
   "roleDefinitionId": "8b4d1d51-08e9-4254-b0a6-b16177aae376",\
   "resourceId": "e5e7d29d-5465-45ac-885f-4716a5ee74b5",\
