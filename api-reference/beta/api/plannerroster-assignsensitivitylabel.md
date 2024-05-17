@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 ## Examples
 
 ### Request
-
+The following example shows a request. 
 <!-- {
   "blockType": "request",
   "name": "assign_sensitivitylabel_to_roster_"
