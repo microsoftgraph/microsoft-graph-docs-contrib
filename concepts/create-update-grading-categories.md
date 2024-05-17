@@ -453,5 +453,6 @@ Content-type: application/json
 }
 ```
 
-> [!NOTE]
-> You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the APIs mentioned in this article.
+## Related content
+
+You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the education APIs.
