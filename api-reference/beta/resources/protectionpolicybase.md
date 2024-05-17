@@ -43,11 +43,11 @@ This is an abstract type.
 ### protectionPolicyStatus values
 |Member | Description |
 |:------|:------------|
-|active | All units are in protected state, policy status is active.|
-|activeWithErrors | Some units are protected while others are unprotected, policy status is activeWithErrors.|
-|inactive | All units are in unprotected state, policy status is inactive.|
-|updating | Some/All units are in protectRequested/unprotectRequested/removeRequested state, policy status is updating.|
-|unknownFutureValue | Marker value for future compatibility.|
+|active | All units are in a protected state; the policy status is active.|
+|activeWithErrors | Some units are protected while others are unprotected; the policy status is `activeWithErrors`.|
+|inactive | All units are in an unprotected state; the policy status is inactive.|
+|updating | Some/all units are in a `protectRequested`, `unprotectRequested, or `removeRequested` state; the policy status is updating.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 None.
