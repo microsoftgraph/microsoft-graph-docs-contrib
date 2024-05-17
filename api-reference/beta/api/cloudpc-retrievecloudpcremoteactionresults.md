@@ -1,6 +1,6 @@
 ---
-title: "managedDevice: getCloudPcRemoteActionResults (deprecated)"
-description: "Check the Cloud PC-specified remote action status for a Cloud PC device."
+title: "cloudPC: retrieveCloudPcRemoteActionResults"
+description: "Retrieve remote action result and check the status of a specific remote action performed on the associated Cloud PC device."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,10 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!CAUTION]
-> Starting from August 31, 2024, cloudPcStatusDetails property will no longer be supported and will be marked as deprecated. Please use [cloudPcStatusDetail](../resources/cloudpcstatusdetail.md) instead.
-
-Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device. Cloud PC supports reprovision and resize remote actions.
+Retrieve [remote action result](../resources/cloudpcremoteactionresult.md) and check the status of a specific remote action performed on the associated Cloud PC device.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -24,8 +21,8 @@ Check the [Cloud PC-specified remote action results](../resources/cloudpcremotea
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "manageddevice_getcloudpcremoteactionresults" } -->
-[!INCLUDE [permissions-table](../includes/permissions/manageddevice-getcloudpcremoteactionresults-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudpc-retrievecloudpcremoteactionresults" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpc-retrievecloudpcremoteactionresults-permissions.md)]
 
 ## HTTP request
 
@@ -35,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-GET /deviceManagement/managedDevices/{managedDeviceId}/getCloudPcRemoteActionResults
+GET /deviceManagement/virtualEndpoint/cloudPCs/{id}/retrieveCloudPcRemoteActionResults
 ```
 
 ## Request headers
@@ -60,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcRemote
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "managedDevice_getCloudPcRemoteActionResults"
+  "name": "cloudpc_retrievecloudpcremoteactionresults"
 }
 -->
 
@@ -126,7 +123,8 @@ Content-Type: application/json
         "lastUpdatedDateTime": "2021-04-25T02:04:53.4722016Z",
         "cloudPcId": "96b3203b-9dc2-48cb-b1e3-a80822ffffff",
         "managedDeviceId": "8e1a54a7-33f6-4659-86b7-dde7c2ffffff",
-        "statusDetails": null
+        "statusDetails": null,
+        "statusDetail": null
     }]
 }
 ```
