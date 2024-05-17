@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**TODO:The field aggregatedAppsDetails shows the information of all apps. You will have to input the specific time period as input for this field**
 
 ## Permissions
 
@@ -42,7 +42,7 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|period|Duration|**TODO: Add Description**|
+|period|Duration|**TODO: Please give the inputs of the time frame you want to query the data**|
 
 
 ## Request headers
