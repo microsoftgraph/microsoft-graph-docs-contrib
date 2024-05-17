@@ -1,13 +1,13 @@
 ---
 title: "Assign sensitivity label to planner roster"
-description: "Assign a sensitivity label to the **plannerRoster** object."
+description: "Assign a sensitivity labelto a plannerRoster object."
 ms.localizationpriority: medium
 author: "WiRawlinWork"
 ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Apply a [sensitivitylabelassignment](../resources/sensitivitylabelassignment.md) to a [plannerRoster](../resources/plannerroster.md) object
+# Assign sensitivitylabelassignment
 
 Rosters can be assigned sensitivity labels to further protect the roster.
 
