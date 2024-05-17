@@ -39,6 +39,7 @@ PATCH /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -56,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [virt
 
 ### Request
 
-The following example shows a request.
+The following example shows how to update a presenter on a **virtualEventWebinar**.
 <!-- {
   "blockType": "request",
   "name": "update_virtualeventpresenter"
@@ -64,7 +65,7 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be/presenters/831affc2-4c8a-9929-50e7-02964563b6e4
-Content-type: application/json
+Content-Type: application/json
 
 {
   "bio": {
