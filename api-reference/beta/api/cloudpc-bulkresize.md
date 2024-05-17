@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 > [!CAUTION]
 > This API is deprecated and will stop returning data on September 24, 2023. Going forward, use the [bulkresize](../resources/cloudpcbulkresize.md) API.
 
-Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed [validation](cloudpc-validatebulkresize.md). If any devices can't be resized, those devices indicate "resize failed". The remaining devices are `provisioned` for the resize process.
+Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that successfully pass [validation](cloudpc-validatebulkresize.md). If any devices can't be resized, those devices indicate "resize failed". The remaining devices are `provisioned` for the resize process.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
