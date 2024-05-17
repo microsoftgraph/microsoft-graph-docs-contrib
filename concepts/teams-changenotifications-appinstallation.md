@@ -19,11 +19,11 @@ To get change notifications for app installation in Teams, subscribe to `/appCat
 
 ### Permissions
 
-You can use one of the following permissions  . To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+To subscribe to the Teams apps installation, you can utilize the following specified scope or all scopes along with the corresponding permissions. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 #### User scope
 
-If the subscription is being made in User scope which is represented by `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')`, one of the following permission is required:
+To get change notifications for Teams app installation in user scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permission:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -31,9 +31,11 @@ If the subscription is being made in User scope which is represented by `/appCat
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.Read.User* |
 
+*Represents RSC permissions.
+
 #### Team scope
 
-If the subscription is being made in Team scope which is represented by `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')`, one of the following permission is required:
+To get change notifications for Teams app installation in team scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'team')` with one of the following permission:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -41,9 +43,11 @@ If the subscription is being made in Team scope which is represented by `/appCat
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.Read.Team* |
 
+*Represents RSC permissions.
+
 #### Chat scope
 
-If the subscription is being made in Chat scope which is represented by `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')`, one of the following permission is required:
+To get change notifications for Teams app installation in chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')` with one of the following permission:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -51,9 +55,11 @@ If the subscription is being made in Chat scope which is represented by `/appCat
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.Read.Chat* |
 
+*Represents RSC permissions.
+
 #### All scopes
 
-If the subscription is being made in all scopes which is represented by `/appCatalogs/teamsApps/{teams-app-id}/installations`, then one of the following permission is required:
+To get change notifications for Teams app installation in all scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations` with one of the following permission:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -61,11 +67,11 @@ If the subscription is being made in all scopes which is represented by `/appCat
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadSelected.All |
 
-If the subscription is being made to 2 scopes such as team and chat, it is represented by `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter= (scopeInfo/scope eq 'groupChat') or (scopeInfo/scope eq 'team')`. They would then need at-least one of the permissions from team and chat tables shown previously.
+To get change notifications for Teams app installation in team and chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter= (scopeInfo/scope eq 'groupChat') or (scopeInfo/scope eq 'team')` with one of the permissions from team and chat scopes.
 
 ### Examples
 
-The following example shows how to subscribe for Teams App Installation notifications in all scopes:
+The following example shows how to subscribe for Teams app installation notifications in all scopes:
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -82,7 +88,7 @@ Content-Type: application/json
 }
 ```
 
-If a subscription in a particular scope is desired, you must declare the scope `$filter` query parameter while you create the subscription. You can do this by adding it to the subscription resource:
+To subscribe for a specific scope, you must declare the scope `$filter` query parameter while you create the subscription. You can do this by adding it to the subscription resource:
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -117,8 +123,6 @@ Content-Type: application/json
   "clientState": "{secretClientState}" 
 }
 ```
-
-The supported RSC permissions are `TeamsAppInstallation.Read.Chat`, `TeamsAppInstallation.Read.Group`, and `TeamsAppInstallation.Read.User`.
 
 ### Notifications with resource data
 
