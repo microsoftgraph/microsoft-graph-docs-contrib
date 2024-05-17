@@ -1,6 +1,6 @@
 ---
 title: "Create or update grading categories by using Microsoft Graph"
-description: "Teachers can use grading categories to weight assignments in the class grade."
+description: "Learn how to use the education API in Microsoft Graph to manage grading categories."
 ms.localizationpriority: medium
 author: "v-rmanda"
 ms.prod: "education"
