@@ -1,6 +1,6 @@
 ---
 title: "localAdminSettings resource type"
-description: "Controls local administrators on AAD joined devices."
+description: "Controls local administrators on Microsoft Entra joined devices."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -12,14 +12,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Controls local administrators on AAD joined devices.
+Controls local administrators on Microsoft Entra joined devices.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|enableGlobalAdmins|Boolean|Whether or not global administrators are local administrators on all AAD joined devices. Note that this will only apply to future registrations. Default is true.|
-|registeringUsers|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines the users\groups that become local administrators on AAD joined devices on the device they are registering.|
+|enableGlobalAdmins|Boolean|Whether or not global administrators are local administrators on all Microsoft Entra joined devices. This will only apply to future registrations. Default is true.|
+|registeringUsers|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines the users\groups that become local administrators on Microsoft Entra joined devices on the device they are registering.|
 
 ## Relationships
 
