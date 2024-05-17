@@ -1,37 +1,37 @@
 ---
-title: "States, transitions, and limitations for submissions"
-description: "Learn about the transitions that occur in the submission states throughout the process flow and which education APIs in Microsoft Graph are involved."
+title: "Status, transitions, and limitations for submissions"
+description: "Learn about the transitions that occur in the submission status throughout the process flow and which education APIs in Microsoft Graph are involved."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: conceptualPageType
 ---
 
-# States, transitions, and limitations for submissions in Microsoft Graph
+# Status, transitions, and limitations for submissions in Microsoft Graph
 
-Submissions are an important part of the interaction between teachers' and students' actions.  This relates to changes in the submission state during the process flow and which education APIs in Microsoft Graph are involved.
+Submissions are an important part of the interaction between teachers' and students' actions.  This relates to changes in the submission status during the process flow and which education APIs in Microsoft Graph are involved.
 
-## Submission states and transitions
+## Submission status and transitions
 
 A submission represents the resources that an individual or group turns in for an assignment. Submissions are owned by an assignment and are automatically created when an assignment is published.
 
 The status is a read-only property in the submission. It changes based on the actions of students and teachers.
 
-| State | Description | REST API call |
+| status | Description | REST API call |
 |:--|:--|:--|
-| Working |	Initial state after the submission is created. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
-| Submitted	| The state after the student turns in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
-| Returned | The state after the teacher has returned an assignment to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
-| Reassigned | The state after the teacher has returned the assignment to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
+| Working |	Initial status after the submission is created. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
+| Submitted	| The status after the student turns in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
+| Returned | The status after the teacher has returned an assignment to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
+| Reassigned | The status after the teacher has returned the assignment to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 | Excuse | Teachers can mark a submission as excused to indicate that the submission has no further action for the student.| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/excuse` |
 
-The following diagram shows the state transition flow.
+The following diagram shows the status transition flow.
 
-![Submission states transitions diagram](images/states-transitions/diagram-submissions.PNG)
+![Submission status transitions diagram](images/states-transitions/diagram-submissions.PNG)
 
-### Submission state transitions based on allowed actions
+### Submission status transitions based on allowed actions
 
-| Current submission state | New action | New state |
+| Current submission status | New action | New status |
 |:--|:--|:--|
 | Working |	Turn in	| Submitted |
 | Working |	Return for revision	| Reassigned |
@@ -54,15 +54,15 @@ The following diagram shows the state transition flow.
 | Excused | Turn in | Submitted |
 
 > [!NOTE]
-> Any action and state transition not listed in the table is not allowed.
+> Any action and status transition not listed in the table is not allowed.
 
 ### Sync vs. async operations over submissions API calls
 
-The following table lists the API calls that affect the submission state and the operation type.
+The following table lists the API calls that affect the submission status and the operation type.
 
 In this case, all the calls are asynchronous, which means the operation starts, and another operation can begin before the first one finishes. The asynchronous operation performs some background activity, and the caller must be polling to get the result.  
 
-| API | Sync or async | Mechanism to get latest state |
+| API | Sync or async | Mechanism to get latest status |
 |:--|:--|:--|
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` | Async | Poll |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` | Async | Poll |
@@ -80,4 +80,4 @@ The following limits apply to all API calls:
 
 ## Related content
 
-- [States, transitions, and limitations for assignments](./assignments-states-transition.md)
+- [Status, transitions, and limitations for assignments](./assignments-status-transition.md)
