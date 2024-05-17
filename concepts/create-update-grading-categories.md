@@ -23,7 +23,7 @@ The assignments API supports delegated (per user) only.
 
 ## Get a class
 
-A class is a group of students and teachers who share assignments and feedback. You get the list of classes from your education tenant. Then, you can identify the class where you want to set grading categories on assignments.
+A class is a group of students and teachers who share assignments and feedback. To work with grading categories, you first get the list of classes from your education tenant, then you identify the class for which you want to set grading categories on assignments.
 
 To get a list of the classes in your tenant, see [List classes](/graph/api/educationclass-list).
 
