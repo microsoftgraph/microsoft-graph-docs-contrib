@@ -19,14 +19,14 @@ Item insights and [meeting hours insights](https://support.microsoft.com/office/
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning item insights in an organization. |
+| [List itemInsights](../api/peopleadminsettings-list-iteminsights.md) | [insightsSettings](insightssettings.md) | Get the properties of an [insightsSettings](../resources/insightssettings.md) object to display or return item insights in an organization. |
 | [Update insightsSettings](../api/insightssettings-update.md) | [insightsSettings](insightssettings.md) | Update privacy settings to display or return the specified type of insights in an organization. Currently, [itemInsights](iteminsights.md) is the only supported type of settings. |
 
 ## Properties
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|disabledForGroup|String| The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
+|disabledForGroup|String| The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members. The default value is `empty`. Optional.|
 |isEnabledInOrganization|Boolean| `true` if insights of the specified type are enabled for the organization; `false` if insights of the specified type are disabled for all users without exceptions. The default value is `true`. Optional.|
 
 ## JSON representation
