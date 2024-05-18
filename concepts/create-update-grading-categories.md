@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Create or update grading categories by using Microsoft Graph
 
-This article describes how to set up and use the grading categories for a class by using the education API in Microsoft Graph.
+This article describes how to use the education API in Microsoft Graph to set up and work with grading categories.
 
 Teachers use grading categories to apply weights to assignments for student grades. For example, homework might account for 60% of a grade and tests account for 40% of a grade.
 
@@ -17,9 +17,9 @@ Assignments contribute to a grade based on their point values and the weight ass
 
 Grading categories are defined in the settings of a class. Every assignment that contributes to the final average grade must have a grading category applied. The weights of the grading categories for a class must add up to 100 during create, update, or delete operations. 
 
-To work with grading categories in your app, you need to get the ID of the class and the assignment settings for that class. You can see below in this article how to create or update the grading categories that are defined in the assignment settings. 
+To work with grading categories in your app, you need to get the ID of the class and the assignment settings for that class. This article walks through the steps to create, add, update, and delete grading categories that are defined in the assignment settings. 
 
->**Note:** The graph API endpoints support delegated (per user) only.
+>**Note:** The education API in Microsoft Graph supports delegated (per user) permissions only.
 
 ## Get a class
 
@@ -428,4 +428,4 @@ Content-type: application/json
 
 ## Related content
 
-You can use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test the education APIs.
+Use [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to test education APIs.
