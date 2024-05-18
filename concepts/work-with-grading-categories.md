@@ -1,5 +1,5 @@
 ---
-title: "Create or update grading categories by using Microsoft Graph"
+title: "Work with grading categories"
 description: "Learn how to use the education API in Microsoft Graph to manage grading categories."
 ms.localizationpriority: medium
 author: "v-rmanda"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Create or update grading categories by using Microsoft Graph
+# Work with grading categories
 
 This article describes how to use the education API in Microsoft Graph to set up and work with grading categories.
 
