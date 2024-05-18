@@ -13880,7 +13880,7 @@ items:
                         href: api/claimsmappingpolicy-delete.md
                       - name: List applied to applications
                         href: api/claimsmappingpolicy-list-appliesto.md
-                  - name: Custom claims policy
+                  - name: Custom claims policy (preview)
                     href: resources/customclaimspolicy.md
                     items:
                       - name: Get
