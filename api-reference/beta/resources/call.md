@@ -84,7 +84,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contains the capabilities of a meeting. Read-only.                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md), [tokenMeetingInfo](tokenmeetinginfo.md), or [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md)            | The meeting information. Required information for meeting scenarios.                                                                                                              |
 |transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | The transcription information for the call. Read-only.                           |
-myParticipantId     | String                                                                                                   | Read-only.                                                                                                                                                                        |
+| myParticipantId     | String                                                                                                   | Read-only.                                                                                                                                                                        |
 | requestedModalities | modality collection                                                                                      | The list of requested modalities. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | The result information. For example, the result can hold termination reason. Read-only.                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | Ringing timeout in seconds for outgoing peer to peer calls. The max value for this attribute is 115 seconds.                                                                                        |
@@ -162,7 +162,6 @@ The following JSON representation shows the resource type.
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
   "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
-  "replacesContext": "String",
   "requestedModalities": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 99,

@@ -57,11 +57,6 @@ The following JSON representation shows the resource type.
   "discoverabilities": "String",
   "discoveryDateTime": "DateTimeOffset",
   "id": "String",
-  "metadata": [
-    {
-      "@odata.type": "microsoft.graph.stringKeyStringValuePair"
-    }
-  ],
   "name": "String",
   "objects": [
     {

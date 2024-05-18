@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta employee-experience learning-providers learning-contents-with-external-id patch --external-id {external-id} --learning-provider-id {learningProvider-id} --body '{\
     "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",\
     "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",\
