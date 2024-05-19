@@ -51,8 +51,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcRemote
 
 ## Examples
 
-#### Request
-
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcRemote
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}/retrieveCloudPcRemoteActionResults
 ```
 
-#### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
