@@ -77,7 +77,7 @@ Change notifications for presence events are triggered when changes to a user's 
 ### Basic presence notifications
 
 Basic notifications notify subscribers about the identity of which resource changed. Once you receive this information, you should make a separate GET call to get the details of the data. 
-For basic presence notifications, you will receive information about which user's presence changed but no data about the details of user's presence. you are expected to use the [GET presence APIs](/graph/api/presence-get) to discover the state of user's availability and activity.
+For basic presence notifications, you will receive information about which user's presence changed but no data about the details of user's presence. You can use the [GET presence APIs](/graph/api/presence-get) to discover the state of user's availability and activity.
 
 #### Payload example
 
