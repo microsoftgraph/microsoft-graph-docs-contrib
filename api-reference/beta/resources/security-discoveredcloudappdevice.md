@@ -19,10 +19,6 @@ Namespace: microsoft.graph.security
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security-endpointdiscoveredcloudappdetail-list-devices.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) collection|Get a list of the [microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) objects and their properties.|
-|[Create](../api/security-endpointdiscoveredcloudappdetail-post-devices.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md)|Create a new [microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) object.|
-|[Get](../api/security-discoveredcloudappdevice-get.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md)|Read the properties and relationships of a [microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) object.|
-|[Update](../api/security-discoveredcloudappdevice-update.md)|[microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md)|Update the properties of a [microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) object.|
-|[Delete](../api/security-endpointdiscoveredcloudappdetail-delete-devices.md)|None|Delete a [microsoft.graph.security.discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) object.|
 
 ## Properties
 |Property|Type|Description|
