@@ -54,7 +54,7 @@ The drive expression can be of following formats.
 |active | Upon running the protection rule using the /run API, the status of protection rule transitions to active. The state transition is draft to active.|
 |completed |Once the protection rule is successfully applied to the corresponding policy, the status of protection rule will be completed. The state transition is active to completed.|
 |completedWithErrors | In case of any failures while applying the protection rule to the corresponding policy, the status of protectionRuleBase will be completedWithErrors. The state transition is active to completedWithErrors.|
-|unknownFutureValue | Marker value for future compatibility.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 None.

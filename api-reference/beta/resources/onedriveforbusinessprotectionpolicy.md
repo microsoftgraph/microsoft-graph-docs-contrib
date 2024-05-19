@@ -54,7 +54,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |activeWithErrors | Some units are protected while others are unprotected, policy status is activeWithErrors.|
 |inactive | All units are in unprotected state, policy status is inactive.|
 |updating | Some/All units are in protectRequested/unprotectRequested/removeRequested state, policy status is updating.|
-|unknownFutureValue | Marker value for future compatibility.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|

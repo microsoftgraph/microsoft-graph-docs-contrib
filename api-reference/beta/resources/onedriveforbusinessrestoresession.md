@@ -51,7 +51,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |completedWithError|Some restore artifacts in failed status, some in succeeded status and all the artifacts are in terminal state, restore session status will be completedWithErrors.|
 |completed| All restore artifacts are in succeeded status, restore session status will be completed.|
 |failed| All restore artifacts are in failed status, restore session status will be failed.|
-|unknownFutureValue| Marker value for future compatibility.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|

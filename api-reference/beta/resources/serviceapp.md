@@ -45,7 +45,7 @@ This entity represents a service application being registered as Backup service 
 |active|The app is active to be used as backup service control app.
 |pendingActive|This app is requested to be activated but not yet active. This app can't be used to control/manage the backup service. This app will have ReadOnly access to the Protection Policies and Protection Units.|
 |pendingInactive|This app is requested to be inactive but not yet inactive. This app can be used to control the backup service until effective date.|
-|unknownFutureValue| Marker value for future compatibility.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 
 ## Relationships

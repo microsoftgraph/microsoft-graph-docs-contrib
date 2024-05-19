@@ -51,15 +51,14 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 |inProgress|This state arrives when restore artifact is/has been picked for restoration.|
 |succeeded|The restore artifact has successfully restored.|
 |failed|This state arrives when restoration of artifact is failed.|
-|unknownFutureValue| Marker value for future compatibility.|
-
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ### destinationType values
 |Member | Description |
 |:------|:------------|
 |new|Restoration will be done at new location. eg. for SharePoint and One Drive new site will be created and content will be restore in newly created site. for Exchange restored folder will be created and content will be restored there.|
 |inPlace|restore will be done on the same location, e.g. on the same site, for one drive on same drive and for exchange artifact will be restored in same mailbox.|
-|unknownFutureValue|Marker value for future compatibility.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|

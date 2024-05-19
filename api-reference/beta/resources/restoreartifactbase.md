@@ -45,7 +45,7 @@ Restore Artifact refers to the site/drive/mailbox units' restore point and desti
 |inProgress|This state arrives when restore artifact is/has been picked for restoration.|
 |succeeded|The restore artifact has successfully restored.|
 |failed|This state arrives when restoration of artifact is failed.|
-|unknownFutureValue| Marker value for future compatibility.|
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|
