@@ -1,6 +1,6 @@
 ---
 title: "dataDiscoveryRoot resource type"
-description: "**TODO: Add Description**"
+description: "Contains data discovery reports entities"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"

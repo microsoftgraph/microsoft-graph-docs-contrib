@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppUser resource type"
-description: "**TODO: Add Description**"
+description: "Respresents discovered user"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -19,10 +19,6 @@ Namespace: microsoft.graph.security
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security-discoveredcloudappdetail-list-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|Get a list of the [microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) objects and their properties.|
-|[Create](../api/security-discoveredcloudappdetail-post-users.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md)|Create a new [microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) object.|
-|[Get](../api/security-discoveredcloudappuser-get.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md)|Read the properties and relationships of a [microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) object.|
-|[Update](../api/security-discoveredcloudappuser-update.md)|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md)|Update the properties of a [microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) object.|
-|[Delete](../api/security-discoveredcloudappdetail-delete-users.md)|None|Delete a [microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) object.|
 
 ## Properties
 |Property|Type|Description|

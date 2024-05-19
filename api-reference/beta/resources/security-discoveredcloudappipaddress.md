@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppIPAddress resource type"
-description: "**TODO: Add Description**"
+description: "Respresents discovered IP address"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -19,10 +19,6 @@ Namespace: microsoft.graph.security
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security-endpointdiscoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get a list of the [microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) objects and their properties.|
-|[Create](../api/security-endpointdiscoveredcloudappdetail-post-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md)|Create a new [microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) object.|
-|[Get](../api/security-discoveredcloudappipaddress-get.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md)|Read the properties and relationships of a [microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) object.|
-|[Update](../api/security-discoveredcloudappipaddress-update.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md)|Update the properties of a [microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) object.|
-|[Delete](../api/security-endpointdiscoveredcloudappdetail-delete-ipaddresses.md)|None|Delete a [microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) object.|
 
 ## Properties
 |Property|Type|Description|
