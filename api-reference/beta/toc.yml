@@ -1385,7 +1385,7 @@ items:
                       - name: Delete
                         href: api/workplacesensordevice-delete.md
                       - name: Ingest telemetry
-                        href: api/workplacesensordevice-ingesttelemetry.md    
+                        href: api/workplacesensordevice-ingesttelemetry.md
       - name: Change notifications
         items:
           - name: Overview
@@ -1654,9 +1654,9 @@ items:
                         href: api/usersettings-list-windows.md
                       - name: Get
                         href: api/windowssetting-get.md
-                  - name: Windows setting instance                    
+                  - name: Windows setting instance
                     href: resources/windowssettinginstance.md
-                    items:              
+                    items:
                       - name: List
                         href: api/windowssetting-list-instances.md
                       - name: Get
@@ -1853,8 +1853,10 @@ items:
                     href: api/cloudpc-getcloudpclaunchinfo.md
                   - name: Get provisioned Cloud PCs
                     href: api/cloudpc-getprovisionedcloudpcs.md
-                  - name: Get remote action results
+                  - name: Get remote action results (deprecated)
                     href: api/manageddevice-getcloudpcremoteactionresults.md
+                  - name: Retrieve remote action results
+                    href: api/cloudpc-retrievecloudpcremoteactionresults.md
                   - name: Get review status
                     href: api/manageddevice-getcloudpcreviewstatus.md
                   - name: Get shift work access state (deprecated)
@@ -10819,7 +10821,7 @@ items:
               - name: Get
                 href: api/educationassignmentresource-get.md
               - name: Delete from assignment
-                href: api/educationassignmentresource-delete.md                 
+                href: api/educationassignmentresource-delete.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -12669,7 +12671,7 @@ items:
                       - name: Get workflows processed summary
                         href: api/identitygovernance-insights-workflowsprocessedsummary.md
                       - name: Get workflows processed by category
-                        href: api/identitygovernance-insights-workflowsprocessedbycategory.md         
+                        href: api/identitygovernance-insights-workflowsprocessedbycategory.md
               - name: Privileged Identity Management iteration 3
                 items:
                   - name: PIM for Microsoft Entra roles
@@ -14031,7 +14033,7 @@ items:
                     - name: Get
                       href: api/trustframeworkkey_v2-get.md
                     - name: Update
-                      href: api/trustframeworkkey_v2-update.md                    
+                      href: api/trustframeworkkey_v2-update.md
               - name: Trust Framework policy
                 href: resources/trustframeworkpolicy.md
                 items:
@@ -15147,7 +15149,7 @@ items:
                       - name: Get
                         href: api/partner-security-partnersecurityalert-get.md
                       - name: Update
-                        href: api/partner-security-partnersecurityalert-update.md  
+                        href: api/partner-security-partnersecurityalert-update.md
       - name: Industry data ETL (preview)
         items:
           - name: Overview
@@ -17332,7 +17334,7 @@ items:
                     - name: Get
                       href: api/security-departmenttemplate-get.md
                     - name: Delete
-                      href: api/security-labelsroot-delete-departments.md              
+                      href: api/security-labelsroot-delete-departments.md
                   - name: File plan reference template
                     items:
                     - name: File plan reference template
@@ -18581,7 +18583,7 @@ items:
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
               - name: Virtual event
-                items:              
+                items:
                   - name: Presenter
                     href: resources/virtualeventpresenter.md
                     items:
@@ -18774,7 +18776,7 @@ items:
                   - name: Archive channel
                     href: api/channel-archive.md
                   - name: Unarchive channel
-                    href: api/channel-unarchive.md  
+                    href: api/channel-unarchive.md
                   - name: Remove incoming channel
                     href: api/team-delete-incomingchannels.md
                   - name: Add member

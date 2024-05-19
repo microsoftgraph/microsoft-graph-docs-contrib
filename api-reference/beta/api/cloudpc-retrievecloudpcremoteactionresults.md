@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcRemote
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/getCloudPcRemoteActionResults
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}/retrieveCloudPcRemoteActionResults
 ```
 
 #### Response
