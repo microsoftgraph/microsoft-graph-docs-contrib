@@ -21,11 +21,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-endpointdiscoveredcloudappdetail-list-appinfo.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) collection|Get a list of the [microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) objects and their properties.|
-|[Create](../api/security-endpointdiscoveredcloudappdetail-post-appinfo.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Create a new [microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) object.|
 |[Get](../api/security-discoveredcloudappinfo-get.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Read the properties and relationships of a [microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) object.|
-|[Update](../api/security-discoveredcloudappinfo-update.md)|[microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|Update the properties of a [microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) object.|
-|[Delete](../api/security-endpointdiscoveredcloudappdetail-delete-appinfo.md)|None|Delete a [microsoft.graph.security.discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md) object.|
+
 
 ## Properties
 |Property|Type|Description|

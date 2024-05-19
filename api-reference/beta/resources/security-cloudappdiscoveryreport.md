@@ -1,6 +1,6 @@
 ---
 title: "cloudAppDiscoveryReport resource type"
-description: "**TODO: Add Description**"
+description: "Represents report of uploaded stream"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: You will be able to generate cloudAppDiscoveryReport by adding applicable properties**
+You will be able to generate cloudAppDiscoveryReport by adding applicable properties
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -22,7 +22,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security-datadiscoveryreport-list-uploadedstreams.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) collection|Get a list of the [microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) objects and their properties.|
-|[Get](../api/security-cloudappdiscoveryreport-get.md)|[microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md)|Read the properties and relationships of a [microsoft.graph.security.cloudAppDiscoveryReport](../resources/security-cloudappdiscoveryreport.md) object.|
 |[aggregatedAppsDetails](../api/security-cloudappdiscoveryreport-aggregatedappsdetails.md)|[microsoft.graph.security.discoveredCloudAppDetail](../resources/security-discoveredcloudappdetail.md) collection|**TODO:Add the appropriate Method. Right now we are supporting Get Method**|
 
 ## Properties
