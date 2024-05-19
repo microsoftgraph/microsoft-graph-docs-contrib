@@ -1,6 +1,6 @@
 ---
 title: "cloudLogonRequestEvidence resource type"
-description: "A cloud logon request for an account."
+description: "Represents a cloud log-on request for an account."
 ms.date: 4/30/2024
 author: "hareldamti"
 ms.localizationpriority: medium
@@ -14,14 +14,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A cloud logon request for an account.
+Represents a cloud log-on request for an account.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
 | Property  |Type|Description|
 |:----------|:---|:---|
-| requestId |String|Unique identifier for a log-on request, while SessionId is maintained as long as same refresh token or authentication cookie is used|
+| requestId |String|The unique identifier for the log-on request.|
 
 ## Relationships
 None.

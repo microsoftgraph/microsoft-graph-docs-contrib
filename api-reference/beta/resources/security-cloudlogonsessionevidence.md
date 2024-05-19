@@ -1,6 +1,6 @@
 ---
 title: "cloudLogonSessionEvidence resource type"
-description: "A cloud logon session by an account."
+description: "Represents a cloud log-on session created by an account."
 ms.date: 4/30/2024
 author: "hareldamti"
 ms.localizationpriority: medium
@@ -14,22 +14,22 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A cloud logon session by an account.
+Represents a cloud log-on session created by an account.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
 | Property  | Type |Description|
 |:----------|:-------|:---|
-| sessionId | String| The session id for the account reported in the alert | 
-| account| [microsoft.graph.security.userEvidence](security-userevidence.md) | The Account associated with the logon session|
-| protocol  | String| The auth protocol that is used in this session, if known|
-| deviceName| String| The friendly name of the device, if known  |
-| operatingSystem  | String| The operating system that the device is running, if known|
-| browser| String | The browser that is used for the logon, if known |
-| userAgent  | String | The user agent that is used for the logon, if known |
-| startUtcDateTime | DateTime| The session start time, if known  |
-| previousLogonDateTime | DateTime| The previous logon time for this account, if known  |
+| sessionId | String| The session id for the account reported in the alert. | 
+| account | [microsoft.graph.security.userEvidence](security-userevidence.md) | The Account associated with the log-on session. |
+| protocol  | String| The auth protocol that is used in this session, if known. |
+| deviceName| String| The friendly name of the device, if known.  |
+| operatingSystem  | String| The operating system that the device is running, if known. |
+| browser| String | The browser that is used for the logon, if known. |
+| userAgent  | String | The user agent that is used for the logon, if known. |
+| startUtcDateTime | DateTime| The session start time, if known.  |
+| previousLogonDateTime | DateTime| The previous logon time for this account, if known.  |
 
 ## Relationships
 None.
