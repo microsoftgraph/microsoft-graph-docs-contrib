@@ -87,7 +87,7 @@ The following example specifies a KQL query and:
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
+POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 {
     "Query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
@@ -98,7 +98,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.huntingQueryResults",
     "schema": [
         {
             "name": "Timestamp",
@@ -140,7 +140,7 @@ This example specifies a KQL query and looks into the [deviceProcessEvents](/mic
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
+POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 {
     "Query": "DeviceProcessEvents",
@@ -152,7 +152,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
+    "@odata.context": "https://graph.microsoft.com//$metadata#microsoft.graph.security.huntingQueryResults",
     "schema": [
         {
             "name": "Timestamp",
