@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |activityLogs|[microsoft.graph.partner.security.activityLog](../resources/partner-security-activitylog.md) collection|Represents the activity by a partner and includes details of state transitions, who performed them, and when they occurred.|
 |additionalDetails|[microsoft.graph.partner.security.additionalDataDictionary](../resources/partner-security-additionaldatadictionary.md)|A bag of name-value pairs that contain additional details about an alert.|
 |affectedResources|[microsoft.graph.partner.security.affectedResource](../resources/partner-security-affectedresource.md) collection|Contains details of the resources affected by the security alert.|
-|alertType|String|The type of vulnerability that impacts the customer due to this alert.|
+|alertType|String|The type of vulnerability that impacts the customer due to this alert. [Alert types reference guide](https://learn.microsoft.com/en-us/partner-center/security/security-alerts-reference-guide).|
 |catalogOfferId|String|The modern offer category ID of the subscription.|
 |confidenceLevel|microsoft.graph.partner.security.securityAlertConfidence|Specifies the confidence in the alert. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 |customerTenantId|String|The impacted customer tenant associated with the alert.|
