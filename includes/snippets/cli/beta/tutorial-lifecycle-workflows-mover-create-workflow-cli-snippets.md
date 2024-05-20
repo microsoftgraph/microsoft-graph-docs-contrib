@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity-governance lifecycle-workflows workflows create --body '{\
     "category": "mover",\
     "description": "Configure mover tasks for a user moved to the Sales department.",\

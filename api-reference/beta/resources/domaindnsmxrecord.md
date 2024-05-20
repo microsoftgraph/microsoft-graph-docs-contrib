@@ -41,12 +41,12 @@ The following JSON representation shows the resource type.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.domainDnsMxRecord"
+  "@odata.type": "microsoft.graph.domainDnsMxRecord",
+  "baseType": "microsoft.graph.domainDnsRecord"
 }-->
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
