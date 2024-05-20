@@ -8629,6 +8629,12 @@ items:
                     href: api/security-whoisrecord-list-history.md
                   - name: Get
                     href: api/security-whoishistoryrecord-get.md
+              - name: EvidenceTypes
+                items: 
+                  - name: CloudLogonRequestEvidence
+                    href: resources/security-cloudlogonrequestevidence.md  
+                  - name: CloudLogonSessionEvidence
+                    href: resources/security-cloudlogonsessionevidence.md  
       - name: Sites and lists
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
         items:

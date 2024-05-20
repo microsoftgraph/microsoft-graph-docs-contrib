@@ -17635,6 +17635,12 @@ items:
                     href: api/security-urlthreatsubmission-get.md
           - name: Errors
             href: resources/security-error-codes.md
+          - name: EvidenceTypes
+            items: 
+              - name: CloudLogonRequestEvidence
+                href: resources/security-cloudlogonrequestevidence.md  
+              - name: CloudLogonSessionEvidence
+                href: resources/security-cloudlogonsessionevidence.md  
       - name: Sites and lists
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
         items:
