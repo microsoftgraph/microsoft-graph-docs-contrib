@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra ID named location defined by global secure access. Automatically created with the name "All COmpliant Network Locations" when you enable Global Secure Access signaling for Conditional Access. Named locations are custom rules that define network locations that can then be used in a Conditional Access policy.
+Represents a Microsoft Entra ID named location defined by global secure access. Automatically created with the name "All Compliant Network Locations" when you enable Global Secure Access signaling for Conditional Access. Named locations are custom rules that define network locations that can then be used in a Conditional Access policy.
 
 
 Inherits from [namedLocation](../resources/namedlocation.md).
@@ -61,6 +61,6 @@ The following JSON representation shows the resource type.
 
 ## Related content
 
-+ [Enable compliant network check with Conditonal Access](/azure/active-directory/global-secure-access/how-to-compliant-network)
++ [Enable compliant network check with Conditional Access](/azure/active-directory/global-secure-access/how-to-compliant-network)
 + [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
 + [Conditional Access: Network assignment](/azure/active-directory/conditional-access/concept-assignment-network)
