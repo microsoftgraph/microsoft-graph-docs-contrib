@@ -38,8 +38,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /solutions/virtualEvents/townhalls/{id}/presenters
-GET /solutions/virtualEvents/webinars/{id}/presenters
+GET /solutions/virtualEvents/townhalls/{townhallId}/presenters
+GET /solutions/virtualEvents/webinars/{webinarId}/presenters
 ```
 
 ## Request headers
