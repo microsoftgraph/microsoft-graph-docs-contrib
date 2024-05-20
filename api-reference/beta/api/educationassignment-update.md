@@ -42,10 +42,10 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| Controls the behavior for students who are added after the assignment is published.|
-|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly` and `unknownFutureValue`. Default value is `none`. Can't be edited when the assignment is published. |
+|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly`, `unknownFutureValue`. Default value is `none`. Can't be modified when the assignment is in `published` status. |
 |allowLateSubmissions|Boolean| Whether submissions can be submitted after the due date.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission. Indicated whether the only items on the submission came from the assignment resource list. |
-|assignDateTime|DateTimeOffset| Date the assignment should be published to students. Can't be edited after the assignment has been published. |
+|assignDateTime|DateTimeOffset| Date the assignment should be published to students. Can't be edited when the assignment is published. |
 |assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Students who get the assignment.|
 |closeDateTime|DateTimeOffset| Date when the assignment is closed for submissions. This is an optional field that can be null if the assignment doesn't allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
