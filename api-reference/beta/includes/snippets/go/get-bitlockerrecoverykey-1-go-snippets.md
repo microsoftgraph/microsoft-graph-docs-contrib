@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
@@ -12,9 +15,6 @@ import (
 	  graphinformationprotection "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("User-Agent", "Dsreg/10.0")
@@ -25,6 +25,7 @@ configuration := &graphinformationprotection.InformationProtectionBitlockerRecov
 	Headers: headers,
 }
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 recoveryKeys, err := graphClient.InformationProtection().Bitlocker().RecoveryKeys().Get(context.Background(), configuration)
 
 

@@ -102,7 +102,7 @@ This resource is the base type for the following evidence types:
 | attacked                   | The entity was attacked. For example, a device was targeted in a DDoS attack.                                                                                                |
 | attacker                   | The entity represents the attacker. For example, the attacker`s IP address observed logging into a cloud service using a compromised user account.                           |
 | commandAndControl          | The entity is being used for command and control. For example, a C2 (command and control) domain used by malware.                                                            |
-| loaded                     | The entity was loaded by a process under the control of an attacker. For example, a Dll was loaded into an attacker-controlled process.                                      |
+| loaded                     | The entity was loaded by a process under the control of an attacker. For example, a DLL was loaded into an attacker-controlled process.                                      |
 | suspicious                 | The entity is suspected of being malicious or controlled by an attacker but hasn't been incriminated.                                                               |
 | policyViolator             | The entity is a violator of a customer defined policy.                                                                                                               |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |

@@ -4928,6 +4928,8 @@ items:
                 href: api/educationsubmission-return.md
               - name: Reassign submission
                 href: api/educationsubmission-reassign.md
+              - name: Excuse submission
+                href: api/educationsubmission-excuse.md
           - name: Outcome
             items:
               - name: Outcome
@@ -10025,7 +10027,7 @@ items:
               - name: Delete
                 href: api/range-delete.md
           - name: Table
-            href: resources/table.md
+            href: resources/workbooktable.md
             items:
               - name: Add table
                 href: api/tablecollection-add.md
@@ -10050,7 +10052,7 @@ items:
               - name: Get range
                 href: api/table-range.md
           - name: Chart
-            href: resources/chart.md
+            href: resources/workbookchart.md
             items:
               - name: List charts
                 href: api/chart-list.md
@@ -10069,7 +10071,7 @@ items:
               - name: Set position data
                 href: api/chart-setposition.md
           - name: Named item
-            href: resources/nameditem.md
+            href: resources/workbooknameditem.md
             items:
               - name: List named item
                 href: api/nameditem-list.md
