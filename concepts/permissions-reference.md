@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/26/2024
+ms.date: 05/17/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1285,6 +1285,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Read and write user and shared contacts 
 | Description | - | Allows the app to create, read, update, and delete contacts a user has permissions to, including their own and shared contacts. 
 | AdminConsentRequired | - | No 
+
+---
+
+### CrossTenantContentMigration.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | b85f44c8-673a-4b31-a0c1-3070d0ae487e 
+| DisplayText | - | Read all cross tenant content migration job details 
+| Description | - | Allows the app to read your tenant's all cross tenant content migration job details on behalf of the signed-in user. 
+| AdminConsentRequired | - | Yes 
+
+---
+
+### CrossTenantContentMigration.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 0569b6eb-c9e3-4dc6-a998-6df963be6689 
+| DisplayText | - | Read and write all cross tenant content migration job details 
+| Description | - | Allows the app to read and write your tenant's all cross tenant content migration job details on behalf of the signed-in user. 
+| AdminConsentRequired | - | Yes 
 
 ---
 
@@ -3683,6 +3705,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### PartnerSecurity.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 21ffa320-2e7f-47d3-a466-7ff04d2dd68d | 5567b981-0bf1-4796-9038-0648b46e116d 
+| DisplayText | Read security alerts of customer with CSP relationship | Read security alerts of customer with CSP relationship 
+| Description | Allows the app to read security alerts of customer with CSP relationship, without a signed-in user. | Allows the app to read security alerts of customer with CSP relationship on behalf of the partner signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### PartnerSecurity.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 04a2c935-5b4b-474a-be42-11f53111f271 | 0cd2c1f6-94a1-4075-ab8c-0b1aff2e1ad5 
+| DisplayText | Read security alerts and update status of security alerts of customer with CSP relationship | Read security alerts and update status of security alerts of customer with CSP relationship 
+| Description | Allows the app to read security alerts and update status of alerts of customer with CSP relationship, without a signed-in user. | Allows the app to read security alerts and update status of alerts of customer with CSP relationship on behalf of the partner signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### PendingExternalUserProfile.Read.All
 
 | Category | Application | Delegated |
@@ -4470,6 +4514,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | - | No 
 
 [!INCLUDE [profile](../includes/permissions-notes/profile.md)]
+
+---
+
+### ProfilePhoto.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e24d31aa-e1ab-4c80-85fe-23018690335d | 469cd065-729e-4dee-b1fa-d92e0fab6310 
+| DisplayText | Read profile photo of a user or group | Read profile photo of a user or group 
+| Description | Allows the app to read all profile photos of users and groups, without a signed-in user | Allows the app to read all profile photos of users and groups, on behalf of the the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### ProfilePhoto.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 27baa7f6-5dfb-4ba8-b1d3-1e812c143013 | f5b24df7-511e-48bb-ae88-643f023b55e1 
+| DisplayText | Read and write profile photo of a user or group | Read and write profile photo of a user or group 
+| Description | Allows the app to read and write all profile photos of users and groups, without a signed-in user | Allows the app to read and write all profile photos of users and groups, on behalf of the the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
 
 ---
 
@@ -5979,6 +6045,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Allow the Teams app to manage only its own tabs for all users | - 
 | Description | Allows a Teams app to read, install, upgrade, and uninstall its own tabs for any user, without a signed-in user. | - 
 | AdminConsentRequired | Yes | - 
+
+---
+
+### TeamsUserConfiguration.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a91eadaf-2c3c-4362-908b-fb172d208fc6 | 5c469ce4-dab5-4afd-b9de-14f1ba4004a7 
+| DisplayText | Read Teams user configurations | Read Teams user configurations 
+| Description | Allows the app to read your tenant's user configurations, without a signed-in user. User configuration may include attributes related to user, such as telephone number, assigned policies, etc. | Allows the app to read your tenant's user configurations on behalf of the signed-in admin user. User configuration may include attributes related to user, such as telephone number, assigned policies, etc. 
+| AdminConsentRequired | Yes | Yes 
 
 ---
 

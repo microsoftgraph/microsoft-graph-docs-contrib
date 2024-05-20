@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta external industry-data data-connectors create --body '{\
     "@odata.type": "#microsoft.graph.industryData.azureDataLakeConnector",\
     "displayName": "CSV connector",\
