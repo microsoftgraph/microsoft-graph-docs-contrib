@@ -265,7 +265,7 @@ Verify that your app registration has the Azure AD Graph API permissions you add
 
 ### Step 4: Grant admin consent
 
-Though you added Azure AD Graph permissions, you haven't granted these permissions to the app. Many permissions require admin consent before they can be used to access organizational data. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a cloud application administrator and grant admin consent for the permissions to the app registration.
+Though you added Azure AD Graph permissions, you haven't granted these permissions to the app. Many permissions require admin consent before they can be used to access organizational data. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a privileged role administrator and grant admin consent for the permissions to the app registration.
 
 ## Grant API permissions without using the consent prompt
 

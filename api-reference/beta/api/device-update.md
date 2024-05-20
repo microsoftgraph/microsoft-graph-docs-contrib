@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 In application-only scenarios and for non-Windows devices, that is, where the **operatingSystem** property is not `Windows`, the app can update only the **extensionAttributes** property.
 
-The calling user must also be in at leaast the *Intune Administrator* [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). A calling user in the *Cloud Device Administrator* role can only enable or disable devices and a user with the *Windows 365 Administrator* role can only update basic device properties.
+The calling user must also be in at least the *Intune Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). A calling user in the *Cloud Device Administrator* role can only enable or disable devices and a user with the *Windows 365 Administrator* role can only update basic device properties.
 
 ## HTTP request
 

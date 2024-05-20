@@ -79,7 +79,7 @@ Administrators can grant the permissions your app needs at the [Microsoft Entra 
 
 > [!IMPORTANT]
 > 
-> When you change the configured permissions, you must also repeat the admin consent process. Changes made in the app registration portal aren't reflected until an authorized administrator such as a cloud application administrator reconsents to the app.
+> When you change the configured permissions, you must also repeat the admin consent process. Changes made in the app registration portal aren't reflected until an authorized administrator such as a privileged role administrator reconsents to the app.
 
 ### Request
 
