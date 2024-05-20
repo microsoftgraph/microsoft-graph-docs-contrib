@@ -42,7 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| Controls the behavior for students who are added after the assignment is published.|
-|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly` and `unknownFutureValue`. Default value is `none`. Can't be modified when assignment is in **Published** state. |
+|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly` and `unknownFutureValue`. Default value is `none`. Can't be modified when assignment is in **Published** status. |
 |allowLateSubmissions|Boolean| Whether submissions can be submitted after the due date.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission. Indicated whether the only items on the submission came from the assignment resource list. |
 |assignDateTime|DateTimeOffset| Date the assignment should be published to students. Can't be edited after the assignment has been published. |
@@ -181,7 +181,7 @@ Content-type: application/json
 
 ## Related content
 
-* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition)
+* [Status, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition)
 * [Specify the default channel for education assignment notifications](/graph/education-build-notificationchannelurl)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
