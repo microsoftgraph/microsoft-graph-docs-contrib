@@ -17,7 +17,7 @@ A submission represents the resources that an individual or group turns in for a
 
 The status is a read-only property in the submission. It changes based on the actions of students and teachers.
 
-| status | Description | REST API call |
+| Status | Description | REST API call |
 |:--|:--|:--|
 | Working |	Initial status after the submission is created. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
 | Submitted	| The status after the student turns in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
