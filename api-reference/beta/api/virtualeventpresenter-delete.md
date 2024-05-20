@@ -37,15 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To delete a presenter from a town hall:
-
 ``` http
 DELETE /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
-```
-
-To delete a presenter from a webinar:
-
-``` http
 DELETE /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
 ```
 
