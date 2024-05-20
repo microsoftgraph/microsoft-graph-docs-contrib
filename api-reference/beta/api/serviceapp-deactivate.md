@@ -62,7 +62,7 @@ If successful, this action returns a `202 Accepted` response code and a [service
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "serviceappthis.deactivate"
+  "name": "serviceapp_deactivate_example_1"
 }
 -->
 ``` http
@@ -135,7 +135,7 @@ If successful, this action returns a `202 Accepted` response code and a [service
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "serviceappthis.deactivate"
+  "name": "serviceapp_deactivate_example_2"
 }
 -->
 ``` http

@@ -1,5 +1,5 @@
 ---
-title: "protectionPolicyBase: deactivate"
+title: "deactivate protectionPolicy"
 description: "Deactivate a ProtectionPolicy"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# protectionPolicyBase: deactivate
+# Deactivate protectionPolicy"
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deactivate a Protection Policy.
+Deactivate a [Protection Policy](../resources/protectionpolicybase.md).
 
 ## Permissions
 

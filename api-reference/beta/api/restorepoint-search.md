@@ -1,19 +1,19 @@
 ---
-title: "restorePoint: search"
+title: "search restorePoint"
 description: "Search Restore Points for Protection Units."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
-doc_type: resourcePageType
+doc_type: apiPageType
 ---
 
-# restorePoint: search
+# Search restorePoint
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search Restore Points for Protection Units.
+Search Restore Points for [Protection Units](../resources/protectionpolicybase.md).
 
 ## Permissions
 
