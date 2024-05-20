@@ -4790,3 +4790,10 @@ Possible values for user account types (group membership), per Windows definitio
 |moderate|
 |elevated|
 |unknownFutureValue|
+
+### compliantNetworkType values 
+
+|Member|
+|:---|
+|allTenantCompliantNetworks|
+|unknownFutureValue|
