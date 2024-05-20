@@ -71,6 +71,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Assign claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Assign a claimsMappingPolicy to this object.|
 |[List claimsMappingPolicies](../api/serviceprincipal-list-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Get all claimsMappingPolicies assigned to this object.|
 |[Remove claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Remove a claimsMappingPolicy from this object.|
+|[Create or replace](../api/serviceprincipal-put-customclaimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Create a new custom claims policy object if it doesn't exist, or replace an existing one.|
 |[Assign homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection| Assign a homeRealmDiscoveryPolicy to this object.|
 |[List homeRealmDiscoveryPolicies](../api/serviceprincipal-list-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection| Get all homeRealmDiscoveryPolicies assigned to this object.|
 |[Remove homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection| Remove a homeRealmDiscoveryPolicy from this object.|
@@ -149,6 +150,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|App role assignments for this app or service, granted to users, groups, and other service principals.Supports `$expand`.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|App role assignment for another app or service, granted to this service principal. Supports `$expand`.|
 |claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) collection|The claimsMappingPolicies assigned to this service principal. Supports `$expand`.|
+|claimsPolicy|[customClaimsPolicy](../resources/customclaimspolicy.md)|A claims policy that allows application admins to customize the claims that will be emitted in tokens affected by this policy.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects created by this service principal. Read-only. Nullable.|
 |delegatedPermissionClassifications|[delegatedPermissionClassification](delegatedpermissionclassification.md) collection|The permission classifications for delegated permissions exposed by the app that this service principal represents. Supports `$expand`.|
 |endpoints|[endpoint](endpoint.md) collection|Endpoints available for discovery. Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.|
