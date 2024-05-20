@@ -27,7 +27,7 @@ The status is a read-only property in the submission. It changes based on the ac
 
 The following diagram shows the status transition flow.
 
-![Submission status transitions diagram](images/states-transitions/diagram-submissions.PNG)
+![Submission status transitions diagram](images/status-transitions/diagram-submissions.PNG)
 
 ### Submission status transitions based on allowed actions
 
