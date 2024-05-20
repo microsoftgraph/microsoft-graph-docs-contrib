@@ -66,8 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /solutions/backupRestore/serviceApps/{71633878-8321-4950-bfaf-ed285bdd1461}/deactivate
-Authorization: Bearer <Access-Token>
+POST /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461/deactivate
 ```
 
 ### Response
@@ -75,14 +74,13 @@ Authorization: Bearer <Access-Token>
 The following example shows the response.
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.serviceApp"
 }
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Content-Type: application / json
 Content-Location: /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461
-Odata-Version: 4.0
 
 {
     "@odata.type": "#microsoft.graph.serviceApp",

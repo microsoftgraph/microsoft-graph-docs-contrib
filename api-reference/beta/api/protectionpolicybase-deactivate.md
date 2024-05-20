@@ -155,13 +155,12 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.protectionPolicyBase"
+  "@odata.type": "microsoft.graph.publicError"
 }
 -->
 
 ``` http
 HTTP/1.1 400 Bad Request
-Content–Type: application/json
 Content-Location: solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
 {
   "error": {
