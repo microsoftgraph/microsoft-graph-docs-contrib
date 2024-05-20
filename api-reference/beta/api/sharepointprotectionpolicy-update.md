@@ -73,7 +73,7 @@ The following example shows a request.
 ``` http
 PATCH /solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 Authorization: Bearer <Access-Token>
-Odata-Version: 4.0
+Content-Type: application/json
 
 {
   "displayName": "SharePoint Policy - Inadvertent data loss",

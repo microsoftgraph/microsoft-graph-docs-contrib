@@ -91,9 +91,6 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies
 Authorization: Bearer <Access-Token>
-Odata-Version: 4.0
-Content-Type: application/json 
-Accept: application/json
 ```
 
 ### Response
@@ -102,7 +99,6 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
   "@odata.type": "microsoft.graph.sharePointProtectionPolicy"
 }
 -->

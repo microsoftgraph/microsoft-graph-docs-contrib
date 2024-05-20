@@ -96,7 +96,7 @@ Content-Location: /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-e
 Odata-Version: 4.0
 
 {
-    "@odata.type": "#microsoft.graph.serviceApp"
+    "@odata.type": "#microsoft.graph.serviceApp",
     "id":"71633878-8321-4950-bfaf-ed285bdd1461",
     "status" : "pendingActive",
     "registrationDateTime":"2023-06-19T12-01-03.45Z",

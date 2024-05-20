@@ -68,14 +68,12 @@ If successful, this method returns a `200 OK` response code and a [siteProtectio
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "sharepointprotectionpolicy_list_siteinclusionrule"
+  "name": "sharepointprotectionpolicy_list_siteinclusionrules"
 }
 -->
+
 ``` http
 GET /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules
-Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
 Authorization: Bearer <Access-Token>
 ```
 
@@ -84,8 +82,7 @@ Authorization: Bearer <Access-Token>
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.mailboxProtectionRule"
+  "@odata.type": "microsoft.graph.siteProtectionRule"
 }
 -->
 ``` http

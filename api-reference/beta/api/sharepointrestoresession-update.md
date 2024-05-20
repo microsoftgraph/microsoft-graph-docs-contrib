@@ -54,7 +54,6 @@ PATCH /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessi
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of [siteRestoreArtifact](../resources/siterestoreartifact.md)|
@@ -66,8 +65,6 @@ PATCH /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessi
 |error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
 |lastModifiedBy|identitySet|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.| -->
-
-
 
 ## Response
 
@@ -84,7 +81,8 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}
+PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952eessions
+Authorization: Bearer <Access-Token>
 Content-Type: application/json
 
 {
@@ -127,16 +125,14 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -194,4 +190,3 @@ Content-Type: application/json
   ]
 }
 ```
-
