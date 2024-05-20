@@ -48,7 +48,6 @@ PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPol
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -74,7 +73,6 @@ The following example shows a request.
 ``` http
 PATCH /solutions/backupRestore/exchangeProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 Authorization: Bearer <Access-Token>
-Odata-Version: 4.0
 
 {
   "displayName": "Exchange Policy - Inadvertent data loss",
@@ -84,7 +82,7 @@ Odata-Version: 4.0
     },
     {
       "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
-    }
+    },
     {
       "@removed": {
         "reason": "changed"

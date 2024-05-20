@@ -33,7 +33,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
 
-
 ## HTTP request
 
 <!-- {
@@ -55,7 +54,6 @@ PATCH /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |mailboxRestoreArtifacts|[maiboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md)|
@@ -67,8 +65,6 @@ PATCH /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId
 |error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
 |lastModifiedBy|identitySet|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.| -->
-
-
 
 ## Response
 

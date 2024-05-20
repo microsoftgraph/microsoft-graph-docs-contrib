@@ -66,9 +66,6 @@ The following example shows a request.
 -->
 ``` http
 DELETE /solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
-Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
 Authorization: Bearer <Access-Token>
 ```
 
@@ -76,9 +73,7 @@ Authorization: Bearer <Access-Token>
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.protectionPolicyBase"
+  "blockType": "response"
 }
 -->
 ``` http

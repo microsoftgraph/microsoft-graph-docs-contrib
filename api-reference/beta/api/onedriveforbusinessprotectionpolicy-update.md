@@ -80,7 +80,7 @@ Odata-Version: 4.0
   "driveProtectionUnits@delta": [
     {
       "userId": "1b014d8c-71fe-4d00-a01a-31850bc5b32c"
-    }
+    },
     {
       "userId": "2b014d8c-71fe-4d00-a01a-31850bc5b32c"
     },
