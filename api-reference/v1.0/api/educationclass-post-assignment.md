@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create a new assignment.
 
-Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publication.
+Only teachers in a class can create an assignment. Assignments start in draft status, which means that students can't see the assignment until it's published.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
