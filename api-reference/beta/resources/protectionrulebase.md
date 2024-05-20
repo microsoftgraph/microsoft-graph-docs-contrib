@@ -19,9 +19,9 @@ Inclusion rules: Rules that indicate that a protection policy should match the s
 
 Protection rules can be static or dynamic, which means the rules can run one time or at regular intervals.
 
-This is an abstract type. This is the base type for [siteProtectionRule](../resources/siteprotectionrule.md). [mailboxProtectionRule](../resources/mailboxprotectionrule.md) and [driveProtectionRule](../resources/driveprotectionrule.md).
+This is an abstract type. This is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md) and [driveProtectionRule](../resources/driveprotectionrule.md).
 
-## Methods
+<!-- ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -29,7 +29,7 @@ This is an abstract type. This is the base type for [siteProtectionRule](../reso
 |[Get protectionRuleBase](../api/protectionrulebase-get.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Read the properties and relationships of a [protectionRuleBase](../resources/protectionrulebase.md) object.|
 |[Update protectionRuleBase](../api/protectionrulebase-update.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object.|
 |[Delete protectionRuleBase](../api/protectionrulebase-delete.md)|None|Delete a [protectionRuleBase](../resources/protectionrulebase.md) object.|
-|[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
+|[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active| -->
 
 ## Properties
 
