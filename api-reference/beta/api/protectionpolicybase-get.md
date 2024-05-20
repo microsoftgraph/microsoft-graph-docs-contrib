@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [protectionPol
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_protectionpolicybase"
+  "name": "protectionpolicybase_get"
 }
 -->
 ``` http
@@ -85,7 +85,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content–Type: application / json
+Content–Type: application/json
 Content-Location: /solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 Odata–Version: 4.0
 

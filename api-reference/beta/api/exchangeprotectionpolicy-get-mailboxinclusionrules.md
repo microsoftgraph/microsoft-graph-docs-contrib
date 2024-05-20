@@ -69,11 +69,11 @@ If successful, this method returns a `200 OK` response code and a [mailboxProtec
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_exchangeprotectionpolicy_get_mailboxinclusionrule"
+  "name": "exchangeprotectionpolicy_get_mailboxinclusionrule"
 }
 -->
 ``` http
-GET /solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
+GET /solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 Content-Type: application/json
 Application: application/json
 Odata-Version: 4.0
