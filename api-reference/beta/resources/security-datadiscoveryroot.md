@@ -21,8 +21,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-datadiscoveryroot-list.md)|[microsoft.graph.security.dataDiscoveryRoot](../resources/security-datadiscoveryroot.md) collection|Get a list of the [microsoft.graph.security.dataDiscoveryRoot](../resources/security-datadiscoveryroot.md) objects and their properties.|
-|[Get](../api/security-datadiscoveryroot-get.md)|[microsoft.graph.security.dataDiscoveryRoot](../resources/security-datadiscoveryroot.md)|Read the properties and relationships of a [microsoft.graph.security.dataDiscoveryRoot](../resources/security-datadiscoveryroot.md) object.|
 |[List dataDiscoveryReport](../api/security-datadiscoveryroot-list-cloudappdiscovery.md)|[microsoft.graph.security.dataDiscoveryReport](../resources/security-datadiscoveryreport.md) collection|Get the dataDiscoveryReport resources from the 
 
 ## Properties

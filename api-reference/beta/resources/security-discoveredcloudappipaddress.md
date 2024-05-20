@@ -18,7 +18,7 @@ Namespace: microsoft.graph.security
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-endpointdiscoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get a list of the [microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) objects and their properties.|
+|[List](../api/security-discoveredcloudappdetail-list-ipaddresses.md)|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|Get a list of the [microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|

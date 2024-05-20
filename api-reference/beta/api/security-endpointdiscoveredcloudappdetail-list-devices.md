@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [discoveredCloudAppDevice](../resources/discoveredcloudappdevice.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [discoveredCloudAppDevice](../resources/security-discoveredcloudappdevice.md) objects in the response body.
 
 ## Examples
 
