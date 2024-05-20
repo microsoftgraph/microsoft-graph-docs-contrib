@@ -86,7 +86,6 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBusinessRestoreSessionId}
-Content-Type: application/json
 
 {
   "driveRestoreArtifacts@delta": [
@@ -135,12 +134,12 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.oneDriveForBusinessRestoreSession"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
 
 {
   "driveRestoreArtifacts@delta": [

@@ -128,13 +128,13 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestore
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointRestoreSession"
 }
 -->
 
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
 
 {
   "siteRestoreArtifacts@delta": [
