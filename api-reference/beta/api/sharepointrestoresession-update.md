@@ -82,8 +82,6 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952eessions
-Authorization: Bearer <Access-Token>
-Content-Type: application/json
 
 {
   "siteRestoreArtifacts@delta": [
@@ -129,7 +127,8 @@ Content-Type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true
 }
 -->
 

@@ -90,7 +90,6 @@ The following example shows a request.
 
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies
-Authorization: Bearer <Access-Token>
 ```
 
 ### Response
@@ -105,9 +104,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 201 Created
-Content–Type: application / json
 Content-Location: solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-8f0b-d0bbf794bec7
-Odata – Version: 4.0
 
 {
   "@odata.context": " /solutions/backupRestore/$metadata#sharePointProtectionPolicies/$entity",

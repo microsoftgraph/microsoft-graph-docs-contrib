@@ -76,10 +76,6 @@ The following example shows a request.
 
 ``` http
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
-Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
-Authorization: Bearer <Access-Token>
 ```
 
 ### Response
@@ -95,7 +91,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 200 OK
-Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
    "@odata.type": "#microsoft.graph.driveProtectionRule",

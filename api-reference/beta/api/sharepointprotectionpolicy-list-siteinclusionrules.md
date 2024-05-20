@@ -74,7 +74,6 @@ The following example shows a request.
 
 ``` http
 GET /solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules
-Authorization: Bearer <Access-Token>
 ```
 
 ### Response
@@ -82,7 +81,8 @@ Authorization: Bearer <Access-Token>
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.siteProtectionRule"
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.siteProtectionRule)"
 }
 -->
 ``` http

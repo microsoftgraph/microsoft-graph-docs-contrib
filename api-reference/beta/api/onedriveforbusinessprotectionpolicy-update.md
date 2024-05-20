@@ -72,8 +72,6 @@ The following example shows a request.
 -->
 ``` http
 PATCH /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
-Authorization: Bearer <Access-Token>
-Odata-Version: 4.0
 
 {
   "displayName": "One Drive  Policy - Inadvertent data loss",
@@ -111,8 +109,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content–Type: application / json
-Odata–Version: 4.0
+
 {
   "displayName": "OneDrive Policy - Inadvertent data loss",
   "driveProtectionUnits@delta": [

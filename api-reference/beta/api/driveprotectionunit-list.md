@@ -301,7 +301,7 @@ HTTP/1.1 200 OK
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
       "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "userId": "384974e2-72cd-48de-a6e8-6985d7c5db90
+      "userId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
       "userDisplayName": "Emily Braun", // Newly Added
       "userEmail": "emilyb@contoso.com", // Newly Added
       "status": "unprotected",
