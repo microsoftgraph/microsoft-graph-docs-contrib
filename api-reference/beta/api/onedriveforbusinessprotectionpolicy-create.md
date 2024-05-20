@@ -1,6 +1,6 @@
 ---
 title: "Create a new oneDriveForBusinessProtectionPolicy"
-description: "Create a Protection Policy for a M365 service OneDrive"
+description: "Create a Protection Policy for a M365 service OneDrive."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a Protection Policy for a M365 service OneDrive. Policy will be created in 'inactive' state. User can also provide a list of Protection Units under the policy.
+Create a Protection Policy for a M365 service OneDrive. Policy is created in 'inactive' state. User can also provide a list of Protection Units under the policy.
 
 Refer to [user](../resources/user.md) for the format of userId.
 
@@ -108,12 +108,12 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 201 Created
-Content–Type: application / json
+Content–Type: application/json
 Content-Location: solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-8f0b-d0bbf794bec7
-Odata – Version: 4.0
+Odata–Version: 4.0
 
 {
-  "@odata.context": " /solutions/backupRestore/$metadata#oneDriveForBusinessProtectionPolicies/$entity",
+  "@odata.context": "/solutions/backupRestore/$metadata#oneDriveForBusinessProtectionPolicies/$entity",
   "id": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7",
   "displayName": "OneDrive Protection Policy",
   "status": "inactive",

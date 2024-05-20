@@ -72,10 +72,6 @@ The following example shows a request.
 
 ``` http
 POST /solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/activate
-Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
-Authorization: Bearer <Access-Token>
 ```
 
 #### Response
@@ -93,7 +89,7 @@ HTTP/1.1 202 Accepted
 Content-Location: /solutions/backupRestore/ProtectionPolicies('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
-  "@odata.context": " /solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
+  "@odata.context": "/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
   "@odata.id": "/solutions/backupRestore/ProtectionPolicies(61633878-8321-4950-bfaf-ed285bdd1461)",
   "@odata.type": "#microsoft.graph.sharePointProtectionPolicy",
   "id": "61633878-8321-4950-bfaf-ed285bdd1461",
@@ -150,10 +146,6 @@ The following example shows a request.
 
 ``` http
 POST /solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/activate
-Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
-Authorization: Bearer <Access-Token>
 ```
 
 #### Response
@@ -169,9 +161,8 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 400 Bad Request
-Content–Type: application / json
+Content–Type: application/json
 Content-Location: solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
-Odata–Version: 4.0
 
 {
   "error": {
