@@ -135,7 +135,7 @@ The following example shows a validation token.
 ```
 
 ## Create or delete Microsoft Graph connections
-You need to send the **connectorTickets** from the payload you received as a `GraphConnectors-Ticket` header when you initiate the creation of the Teams app connection. This following example shows this process.
+You need to send the **connectorTickets** from the payload you received as a `GraphConnectors-Ticket` header when you initiate the creation of the Teams app connection. The following example shows this process.
 
 ### Request
 ```
