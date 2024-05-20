@@ -113,7 +113,7 @@ HTTP/1.1 202 Accepted
 Content-type: application/json
 Content-length: 0
 ```
-You need to send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it tries to publish the change notification a number of times for about 4 hours. After that, the change notification is dropped and isn't delivered.
+You need to send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it tries to publish the change notification a number of times for about four hours. After that, the change notification is dropped and isn't delivered.
 
 >[!NOTE]
 >Send the `202 - Accepted` status code as soon as you receive the change notification, even before you validate its authenticity. You are acknowledging the receipt of the change notification and preventing unnecessary retries.
