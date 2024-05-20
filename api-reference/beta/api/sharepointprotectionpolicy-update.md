@@ -115,7 +115,8 @@ PATCH /solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-b
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointProtectionPolicy"
 }
 -->
 ``` http

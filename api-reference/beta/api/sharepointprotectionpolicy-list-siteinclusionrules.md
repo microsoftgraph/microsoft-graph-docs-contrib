@@ -82,7 +82,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.siteProtectionRule)"
+  "@odata.type": "microsoft.graph.siteProtectionRule"
 }
 -->
 ``` http

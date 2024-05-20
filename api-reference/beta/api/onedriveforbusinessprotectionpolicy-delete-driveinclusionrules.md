@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [driveInclusionRule](../resources/driveprotectionrule.md).
-Deletion of a rule is allowed once it reaches the completed or completedWithErrors state. Deletion of a [driveInclusionRule](../resources/driveprotectionrule.md) will not remove the protection units corresponding to the rule from the OneDrive protection policy.
+Deletion of a rule is allowed once it reaches the completed or completedWithErrors state. Deletion of a [driveInclusionRule](../resources/driveprotectionrule.md) does not remove the protection units corresponding to the rule from the OneDrive protection policy.
 
 ## Permissions
 
