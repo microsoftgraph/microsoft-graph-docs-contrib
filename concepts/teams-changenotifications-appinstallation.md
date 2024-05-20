@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for app installation using Microsoft Graph
 
-Change notifications allow you to subscribe to Teams app related events such as installation, upgrade, and uninstallation. You can get notified whenever the Teams app is installed, upgraded, or deleted from a team, chat, or user.
+Change notifications allow you to subscribe to Teams app related events such as installation, upgrade, and uninstallation. You can get notified whenever the Teams app is installed, upgraded, or deleted from a team, chat, or personal scope. For more information, see [teamsAppInstallation](/graph/api/resources/teamsappinstallation).
 
 If the user needs any additional information, they can use Teams app ID and app installation ID returned in the notification payload to fetch the necessary information separately.
 
@@ -21,9 +21,9 @@ To get change notifications for Teams app installation, subscribe to `/appCatalo
 
 To subscribe to Teams apps installation, you can use the following specified scope or all scopes along with the corresponding permissions. For more information on including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-#### User scope
+#### Personal scope
 
-To get change notifications for Teams app installation in user scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
+To get change notifications for Teams app installation in personal scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'personal')` with one of the following permissions:
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -65,9 +65,7 @@ To get change notifications for Teams app installation in all scope, subscribe t
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadSelected.All |
-
-To get change notifications for Teams app installation in both team and chat scope, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter= (scopeInfo/scope eq 'groupChat') or (scopeInfo/scope eq 'team')` with one of the permissions from team and chat scopes.
+| Application                            | TeamsAppInstallation.Read.All |
 
 ### Examples
 
@@ -105,7 +103,8 @@ Content-Type: application/json
 } 
 ```
 
-Ensure that the permissions you need to provide vary based on the scope. In the given example, a subscription was set up for both users and teams scopes, so at least one permission for each scope is mandatory.
+> [!NOTE]
+> Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for both personal and team scopes, it is mandatory to have at least one permission from each scope.
 
 For apps that use RSC permissions, you must declare `useResourceSpecificConsentBasedAuthorization=true` query parameter while you create subscription by adding it to the subscription resource:
 
@@ -123,6 +122,9 @@ Content-Type: application/json
   "clientState": "{secretClientState}" 
 }
 ```
+
+> [!NOTE]
+> The default value for `useResroouceSpecificConsentBasedAuthorization` query parameter is `false`. If it's not declared, it indicates that you don't intend to use RSC permission for your app.
 
 ### Notifications with resource data
 
