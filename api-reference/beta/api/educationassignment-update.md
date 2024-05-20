@@ -42,7 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| Controls the behavior for students who are added after the assignment is published.|
-|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly` and `unknownFutureValue`. Default value is `none`. Can't be modified when assignment is in **Published** status. |
+|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly` and `unknownFutureValue`. Default value is `none`. Can't be edited when the assignment is published. |
 |allowLateSubmissions|Boolean| Whether submissions can be submitted after the due date.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission. Indicated whether the only items on the submission came from the assignment resource list. |
 |assignDateTime|DateTimeOffset| Date the assignment should be published to students. Can't be edited after the assignment has been published. |
