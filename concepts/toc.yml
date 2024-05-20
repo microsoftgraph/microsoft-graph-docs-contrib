@@ -546,6 +546,8 @@ items:
         href: download-resources-from-assignment.md
       - name: Share assignments with an embedded Teams application
         href: embed-teams-app-in-assignment.md
+      - name: Work with grading categories
+        href: work-with-grading-categories.md  
   - name: External data connections
     items:
     - name: Connectors overview
