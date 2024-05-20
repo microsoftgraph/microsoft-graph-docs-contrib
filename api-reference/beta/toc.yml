@@ -934,10 +934,12 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: Restore deleted service principal
                 href: api/directory-deleteditems-restore.md
-              - name: List createdObjects
+              - name: List created objects
                 href: api/serviceprincipal-list-createdobjects.md
-              - name: List ownedObjects
+              - name: List owned objects
                 href: api/serviceprincipal-list-ownedobjects.md
+              - name: Create or replace custom claims policy
+                href: api/serviceprincipal-put-customclaimspolicy.md
               - name: Get delta
                 href: api/serviceprincipal-delta.md
               - name: Get delta for directory object
@@ -13878,6 +13880,15 @@ items:
                         href: api/claimsmappingpolicy-delete.md
                       - name: List applied to applications
                         href: api/claimsmappingpolicy-list-appliesto.md
+                  - name: Custom claims policy (preview)
+                    href: resources/customclaimspolicy.md
+                    items:
+                      - name: Get
+                        href: api/customclaimspolicy-get.md
+                      - name: Create or replace
+                        href: api/serviceprincipal-put-customclaimspolicy.md
+                      - name: Update
+                        href: api/customclaimspolicy-update.md
                   - name: Continuous access evaluation policy
                     href: resources/continuousaccessevaluationpolicy.md
                     items:
@@ -18584,7 +18595,7 @@ items:
                     href: api/presence-setstatusmessage.md
               - name: Virtual event
                 items:              
-                  - name: Presenter
+                  - name: Presenter (preview)
                     href: resources/virtualeventpresenter.md
                     items:
                       - name: List
@@ -18593,6 +18604,8 @@ items:
                         href: api/virtualevent-post-presenters.md
                       - name: Get
                         href: api/virtualeventpresenter-get.md
+                      - name: Update
+                        href: api/virtualeventpresenter-update.md
                       - name: Delete
                         href: api/virtualeventpresenter-delete.md
                   - name: Session
@@ -18602,7 +18615,7 @@ items:
                         href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
-                  - name: Town hall
+                  - name: Town hall (preview)
                     href: resources/virtualeventtownhall.md
                     items:
                       - name: Create
