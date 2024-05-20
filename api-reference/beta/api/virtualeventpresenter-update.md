@@ -60,11 +60,12 @@ If successful, this method returns a `200 OK` response code and an updated [virt
 The following example shows how to update a presenter on a **virtualEventWebinar**.
 <!-- {
   "blockType": "request",
-  "name": "update_virtualeventpresenter"
+  "name": "update_virtualeventpresenter",
+  "sampleKeys": ["88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33", "831affc2-4c8a-9929-50e7-02964563b6e4"]
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be/presenters/831affc2-4c8a-9929-50e7-02964563b6e4
+PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33/presenters/831affc2-4c8a-9929-50e7-02964563b6e4
 Content-Type: application/json
 
 {
