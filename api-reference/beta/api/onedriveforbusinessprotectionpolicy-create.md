@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 <!--[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-create-permissions.md)]-->
+
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
@@ -40,7 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/
+POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies
 ```
 
 ## Request headers

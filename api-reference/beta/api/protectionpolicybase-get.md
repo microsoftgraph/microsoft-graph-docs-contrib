@@ -80,14 +80,12 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.protectionPolicyBase"
+  "@odata.type": "microsoft.graph.exchangeProtectionPolicy"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
-Content–Type: application/json
 Content-Location: /solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
-Odata–Version: 4.0
 
 {
    "@odata.context":"/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
