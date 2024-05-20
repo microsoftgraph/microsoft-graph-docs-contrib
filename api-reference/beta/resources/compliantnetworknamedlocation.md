@@ -62,6 +62,6 @@ The following JSON representation shows the resource type.
 ## Related content
 
 + [Enable compliant network check with Conditional Access](/azure/global-secure-access/how-to-compliant-network)
-+ [What is GLobal Secure Access?](/azure/global-secure-access/overview-what-is-global-secure-access)
++ [What is Global Secure Access?](/azure/global-secure-access/overview-what-is-global-secure-access)
 + [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
 + [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)
