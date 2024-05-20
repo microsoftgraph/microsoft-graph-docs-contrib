@@ -37,15 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To create a presenter for a town hall:
-
 ``` http
 POST /solutions/virtualEvents/townhalls/{townhallId}/presenters
-```
-
-To create a presenter for a webinar:
-
-``` http
 POST /solutions/virtualEvents/webinars/{webinarId}/presenters
 ```
 
