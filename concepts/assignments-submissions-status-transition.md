@@ -33,7 +33,7 @@ See the code sample for a teacher account with [Education assignment using Micro
 
 For a student, an assignment is actionable if the corresponding submission is in a *working*, *returned* or *reassigned* status. For a teacher, an assignment is actionable if any of the submissions of that assignment are in a *submitted* status.
 
-## status transition rules
+## Status transition rules
 
 The following status transition rules are applicable for both student and teacher roles: 
 
