@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPoliy](../resources/protectionpolicybase.md).
 
-
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List restorePoint](../api/restorepoint-list.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) and their properties.|
@@ -33,6 +33,7 @@ RestorePoints represent the timestamp when an [artifact](../resources/restoreart
 |[Remove protectionUnitBase](../api/restorepoint-delete-protectionunit.md)|None|Remove a [protectionUnitBase](../resources/protectionunitbase.md) object.| -->
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id of the restore point.|
@@ -41,6 +42,7 @@ RestorePoints represent the timestamp when an [artifact](../resources/restoreart
 |tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Specifies the preference of of restore points..The possible values are: `none`, `fastRestore`, `unknownFutureValue`.|
 
 ### restorePointTags values
+
 |Member | Description |
 |:------|:------------|
 |none   | No Tag      |
@@ -48,12 +50,13 @@ RestorePoints represent the timestamp when an [artifact](../resources/restoreart
 |unknownFutureValue | Marker value for future compatibility|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|protectionPolicy|[protectionPolicyBase](../resources/protectionpolicybase.md)| Protection Policy represents the plan defined by the Global Admin for protecting the M365 data of an organization|
 |protectionUnit|[protectionUnitBase](../resources/protectionunitbase.md)|Protection Units refers to the site/drive/mailbox units that are being protected under the Protection Policy.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -72,4 +75,3 @@ The following JSON representation shows the resource type.
   "tags": "String"
 }
 ```
-
