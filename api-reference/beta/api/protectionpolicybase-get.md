@@ -1,6 +1,6 @@
 ---
 title: "Get protectionPolicyBase"
-description: "Get a Protection Policy by Id"
+description: "Get a Protection Policy by ID."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storge"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a Protection Policy by Id. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md).
+Get a Protection Policy by ID. Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
 ## Permissions
 
@@ -71,7 +71,6 @@ The following example shows a request.
 ``` http
 GET /solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 Authorization: Bearer <Access-Token>
-Odata-Version: 4.0
 ```
 
 ### Response

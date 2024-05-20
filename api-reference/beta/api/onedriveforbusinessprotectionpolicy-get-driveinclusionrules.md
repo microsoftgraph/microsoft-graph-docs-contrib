@@ -1,6 +1,6 @@
 ---
 title: "Get driveInclusionRule"
-description: "Get Drive Inclusion Rule for a OneDriveForBusiness Protection Policy"
+description: "Get Drive Inclusion Rule for a OneDriveForBusiness Protection Policy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a [driveProtectionRule](../resources/driveprotectionrule.md) in a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
-An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
+An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule is applied.
 
 ## Permissions
 

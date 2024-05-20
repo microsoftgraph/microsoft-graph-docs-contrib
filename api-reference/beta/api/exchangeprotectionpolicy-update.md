@@ -1,6 +1,6 @@
 ---
 title: "Update exchangeProtectionPolicy"
-description: "Updates the Protection Policy for a M365 service Exchange"
+description: "Updates the Protection Policy for Microsoft 365 service Exchange."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the Protection Policy for a M365 service Exchange. Adds/removes [mailboxprotectionunit](../resources/mailboxprotectionunit.md) to [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+Updates the Protection Policy for Microsoft 365 service Exchange. Adds/removes [mailboxprotectionunit](../resources/mailboxprotectionunit.md) to [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
-To remove, specify the @removed annotation in the request body for the respective Protection Unit together with the Id of the [mailboxprotectionunit](../resources/mailboxprotectionunit.md).
+To remove, specify the @removed annotation in the request body for the respective Protection Unit together with the ID of the [mailboxprotectionunit](../resources/mailboxprotectionunit.md).
 
 ## Permissions
 

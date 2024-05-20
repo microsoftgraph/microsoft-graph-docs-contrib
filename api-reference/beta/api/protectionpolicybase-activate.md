@@ -1,6 +1,6 @@
 ---
 title: "protectionPolicyBase: activate"
-description: "Activate a ProtectionPolicy"
+description: "Activate a ProtectionPolicy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -59,7 +59,7 @@ If successful, this action returns a `202 Accepted` response code and a [protect
 
 ### Example 1
 
-Activate an inactive Protection Policy
+Activate an inactive Protection Policy.
 
 #### Request
 
@@ -133,7 +133,7 @@ Content-Location: /solutions/backupRestore/ProtectionPolicies('61633878-8321-495
 ```
 ### Example 2
 
-Activate an already active Protection Policy
+Activate an already active Protection Policy.
 
 #### Request
 

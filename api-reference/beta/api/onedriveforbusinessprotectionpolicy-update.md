@@ -1,6 +1,6 @@
 ---
 title: "Update oneDriveForBusinessProtectionPolicy"
-description: "Updates the Protection Policy for a M365 service OneDrive"
+description: "Updates the Protection Policy for Microsoft 365 service OneDrive,"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the Protection Policy for a M365 service OneDrive. Adds/removes [driveprotectionunit](../resources/driveprotectionunit.md) to [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Updates the Protection Policy for Microsoft 365 service OneDrive. Adds/removes [driveprotectionunit](../resources/driveprotectionunit.md) to [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
-To remove, specify the @removed annotation in the request body for the respective protection unit together with the Id of the [driveprotectionunit](../resources/driveprotectionunit.md).
+To remove, specify the @removed annotation in the request body for the respective protection unit together with the ID of the [driveprotectionunit](../resources/driveprotectionunit.md).
 
 ## Permissions
 

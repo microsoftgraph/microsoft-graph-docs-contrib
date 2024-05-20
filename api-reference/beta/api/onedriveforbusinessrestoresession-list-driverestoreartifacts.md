@@ -1,6 +1,6 @@
 ---
 title: "List driveRestoreArtifact"
-description: "Get a list of the driveRestoreArtifact and their properties for an oneDriveForBusinessRestoreSession for the tenant"
+description: "Get a list of the driveRestoreArtifact and their properties for a oneDriveForBusinessRestoreSession for the tenant."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the [driveRestoreArtifact](../resources/driverestoreartifact.md) for an [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) for the tenant.
+Get a list of the [driveRestoreArtifact](../resources/driverestoreartifact.md) and their properties for a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) for the tenant.
 
 
 ## Permissions

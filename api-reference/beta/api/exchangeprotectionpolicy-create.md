@@ -1,6 +1,6 @@
 ---
 title: "Create a new exchangeProtectionPolicy"
-description: "Create a Protection Policy for a M365 service Exchange"
+description: "Create a Protection Policy for a M365 service Exchange."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a Protection Policy for a M365 service Exchange. Policy will be created in 'inactive' state. User can also provide a list of Protection Units under the policy.
+Create a Protection Policy for a M365 service Exchange. Policy is created in 'inactive' state. User can also provide a list of Protection Units under the policy.
 
 Refer to [users](../resources/user.md) for the format of userId.
 
