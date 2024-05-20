@@ -59,7 +59,7 @@ Keep the following tips in mind:
 * You can ignore **SubscriptionExpirationDateTime** and **SubscriptionId**.
 * The change notification is for Microsoft Graph connector management only when the @odata.type of the resource data matches the one in the sample payload.
 * The **tenantId** identified is the customer's tenant ID. When calling the Microsoft Graph API to [manage Microsoft Graph connections](/graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant ID.
-* You can call the Microsoft Graph API to get the customer's display name and default domain name. This can help you map the **tenantId** to the unique identifier in your system. To learn more, see [find tenant information by tenant ID](/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-1.0&tabs=http).
+* You can call the Microsoft Graph API to get the customer's display name and default domain name. This can help you map the **tenantId** to the unique identifier in your system. To learn more, see [find tenant information by tenant ID](/graph/api/tenantrelationship-findtenantinformationbytenantid).
 * Within **resourceData**, use **state** to determine whether to create or delete connections. You need the **connectorsTicket** to create the connections.
 
 ### Handling "connector enable" notification
@@ -185,7 +185,7 @@ To validate the experience:
 
 You can submit your Microsoft Graph connector packaged as a Teams app extended across Microsoft 365 to [Microsoft Partner Center](https://partner.microsoft.com/). This allows Microsoft to validate your Microsoft Graph connector, so that other organizations can discover and deploy it in the [Microsoft Teams admin center](https://admin.teams.microsoft.com).
 
-You can use the [step-by-step submission guide](https://learn.microsoft.com/en-us/partner-center/marketplace/add-in-submission-guide) to learn how to submit your app. Make sure that you submit a **Teams app** in the **Microsoft 365 and Copilot** tab in **Marketplace offers**.
+You can use the [step-by-step submission guide](/partner-center/marketplace/add-in-submission-guide) to learn how to submit your app. Make sure that you submit a **Teams app** in the **Microsoft 365 and Copilot** tab in **Marketplace offers**.
 
 You need to submit a PDF in the **Additional certification info** step. Microsoft uses the information you provide in this PDF to make sure that your Microsoft Graph connector performs as expected in Copilot for Microsoft 365. Your PDF must have the following sections:
 - Test accounts, license keys, and credentials
