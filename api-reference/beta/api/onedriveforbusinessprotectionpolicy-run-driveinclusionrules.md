@@ -1,6 +1,6 @@
 ---
 title: "Run driveInclusionRule"
-description: "Actives driveInclusionRule"
+description: "Activates driveInclusionRule"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -64,7 +64,7 @@ If successful, this action returns a `200 OK` response code and a [protectionRul
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "driveprotectionrulethis.run"
+  "name": "driveprotectionrulethis_run"
 }
 -->
 ``` http

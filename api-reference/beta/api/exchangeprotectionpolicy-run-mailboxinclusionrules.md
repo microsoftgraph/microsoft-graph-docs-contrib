@@ -1,6 +1,6 @@
 ---
 title: "Run mailboxInclusionRule"
-description: "Actives mailboxInclusionRule."
+description: "Activates mailboxInclusionRule."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"

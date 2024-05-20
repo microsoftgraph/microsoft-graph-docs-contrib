@@ -1,6 +1,6 @@
 ---
-title: "deactivate protectionPolicy"
-description: "Deactivate a ProtectionPolicy"
+title: "Deactivate protectionPolicy"
+description: "Deactivate a ProtectionPolicy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
