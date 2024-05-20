@@ -162,6 +162,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 400 Bad Request
 Content-Location: solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
+
 {
   "error": {
     "code": "invalidStateForActivation",

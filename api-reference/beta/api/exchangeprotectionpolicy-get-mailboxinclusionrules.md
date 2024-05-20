@@ -74,10 +74,6 @@ The following example shows a request.
 -->
 ``` http
 GET /solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
-Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
-Authorization: Bearer <Access-Token>
 ```
 
 ### Response
@@ -116,6 +112,6 @@ Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/71633878-8
    },
    "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
    "isAutoApplyEnabled": false,
-   "userExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+   "mailboxExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```

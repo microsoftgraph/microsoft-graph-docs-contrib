@@ -20,7 +20,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List mailboxProtectionUnit](../api/mailboxprotectionunits-list.md)|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md) collection|Get a list of the [mailboxProtectionUnit](../resources/mailboxprotectionunit.md) and their properties.|
+|[List mailboxProtectionUnit](../api/mailboxprotectionunit-list.md)|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md) collection|Get a list of the [mailboxProtectionUnit](../resources/mailboxprotectionunit.md) and their properties.|
 
 ## Properties
 |Property|Type|Description|

@@ -20,7 +20,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List siteProtectionUnit](../api/siteprotectionunits-list.md)|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Get a list of the [siteProtectionUnit](../resources/siteprotectionunit.md) and their properties.|
+|[List siteProtectionUnit](../api/siteprotectionunit-list.md)|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Get a list of the [siteProtectionUnit](../resources/siteprotectionunit.md) and their properties.|
 
 ## Properties
 |Property|Type|Description|

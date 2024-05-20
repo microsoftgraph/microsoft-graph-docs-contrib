@@ -20,7 +20,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List driveProtectionUnit](../api/driveprotectionunits-list.md)|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|Get a list of the [driveProtectionUnit](../resources/driveprotectionunit.md) and their properties.|
+|[List driveProtectionUnit](../api/driveprotectionunit-list.md)|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|Get a list of the [driveProtectionUnit](../resources/driveprotectionunit.md) and their properties.|
 
 ## Properties
 |Property|Type|Description|

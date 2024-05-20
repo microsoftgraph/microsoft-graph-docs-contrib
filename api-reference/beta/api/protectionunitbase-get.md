@@ -65,13 +65,11 @@ If successful, this method returns a `200 OK` response code and a [protectionUni
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_protectionunitbase"
+  "name": "protectionunitbase_get"
 }
 -->
 ``` http
 GET /solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c
-Authorization: Bearer <Access-Token>
-Odata-Version: 4.0
 ```
 
 ### Response
@@ -85,8 +83,6 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content–Type: application / json
-Odata–Version: 4.0
 
 {
   "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",

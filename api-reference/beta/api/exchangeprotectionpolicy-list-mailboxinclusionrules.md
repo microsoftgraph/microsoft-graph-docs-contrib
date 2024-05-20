@@ -81,6 +81,7 @@ Authorization: Bearer <Access-Token>
 The following example shows the response.
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.mailboxProtectionRule"
 }
 -->
@@ -94,7 +95,7 @@ Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/71633878-8
    "values":
    [
       {
-         "@odata.type": "#microsoft.graph.userMailboxProtectionRule",
+         "@odata.type": "#microsoft.graph.mailboxProtectionRule",
          "id":"61633878-8321-4950-bfaf-ed285bdd1461",
          "status" : "active",
          "createdBy":{
@@ -116,10 +117,10 @@ Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/71633878-8
          },
          "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
          "isAutoApplyEnabled": false,
-         "userExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+         "mailboxExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
       },
       {
-         "@odata.type": "#microsoft.graph.userMailboxProtectionRule",
+         "@odata.type": "#microsoft.graph.mailboxProtectionRule",
          "id":"61633878-8321-4950-bfaf-ed285bdd1462",
          "status" : "completed",
          "createdBy":{
@@ -141,7 +142,7 @@ Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/71633878-8
          },
          "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
          "isAutoApplyEnabled": false,
-         "userExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+         "mailboxExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
       }
    ]
 }

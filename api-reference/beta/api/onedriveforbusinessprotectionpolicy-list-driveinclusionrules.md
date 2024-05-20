@@ -73,10 +73,6 @@ The following example shows a request.
 -->
 ``` http
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules
-Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
-Authorization: Bearer <Access-Token>
 ```
 
 ### Response
@@ -98,7 +94,7 @@ Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies
    "values":
    [
       {
-         "@odata.type": "#microsoft.graph.userDriveProtectionRule",
+         "@odata.type": "#microsoft.graph.driveProtectionRule",
          "id":"61633878-8321-4950-bfaf-ed285bdd1461",
          "status" : "active",
          "createdBy":{
@@ -120,10 +116,10 @@ Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies
          },
          "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
          "isAutoApplyEnabled": false,
-         "userExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+         "driveExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
       },
       {
-         "@odata.type": "#microsoft.graph.userDriveProtectionRule",
+         "@odata.type": "#microsoft.graph.driveProtectionRule",
          "id":"61633878-8321-4950-bfaf-ed285bdd1462",
          "status" : "completed",
          "createdBy":{
@@ -145,10 +141,10 @@ Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies
          },
          "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
          "isAutoApplyEnabled": false,
-         "userExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+         "driveExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
       },
       {
-         "@odata.type": "#microsoft.graph.userDriveProtectionRule",
+         "@odata.type": "#microsoft.graph.driveProtectionRule",
          "id":"9253d7a1-06fb-48b5-9cbd-d33c310de042",
          // Since the group.id does not exists, hence the status 'completedWithErrors'
          "status" : "completedWithErrors",
@@ -171,7 +167,7 @@ Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies
          },
          "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
          "isAutoApplyEnabled": false,
-         "userExpression": "(memberOf -any (group.id -in ['c818eb4a-ea72-42bd-8f0b-d0bbf794bec7']))",
+         "driveExpression": "(memberOf -any (group.id -in ['c818eb4a-ea72-42bd-8f0b-d0bbf794bec7']))",
          "error" : 
          {
             "code": "invalidGroupId",

@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [exch
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "exchangeprotectionpolicy-update"
+  "name": "exchangeprotectionpolicy_update"
 }
 -->
 ``` http
@@ -105,13 +105,13 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.exchangeProtectionPolicy"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
-Content–Type: application / json
-Odata–Version: 4.0
+
 {
   "displayName": "Exchange Policy - Inadvertent data loss",
   "mailboxProtectionUnits@delta": [

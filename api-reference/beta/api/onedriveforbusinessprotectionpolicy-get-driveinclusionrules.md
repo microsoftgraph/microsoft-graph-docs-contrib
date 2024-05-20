@@ -75,7 +75,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/userDriveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
+GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 Content-Type: application/json
 Application: application/json
 Odata-Version: 4.0
@@ -95,10 +95,10 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 200 OK
-Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/userDriveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
-   "@odata.type": "#microsoft.graph.userDriveProtectionRule",
+   "@odata.type": "#microsoft.graph.driveProtectionRule",
    "id":"61633878-8321-4950-bfaf-ed285bdd1461",
    "status" : "active",
    "createdBy":{
@@ -120,6 +120,6 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDr
    },
    "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
    "isAutoApplyEnabled": false,
-   "userExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+   "driveExpression": "(memberOf -any (group.id -in ['b418eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```

@@ -26,6 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 <!--[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-list-permissions.md)]-->
+
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
@@ -67,13 +68,11 @@ If successful, this method returns a `200 OK` response code and a [protectionPol
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_protectionpolicybase"
+  "name": "protectionpolicybase_list"
 }
 -->
 ``` http
 GET /solutions/backupRestore/ProtectionPolicies
-Authorization: Bearer <Access-Token>
-Odata-Version: 4.0
 ```
 
 ### Response
@@ -87,9 +86,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content–Type: application / json
 Content-Location: /solutions/backupRestore/ProtectionPolicies
-Odata–Version: 4.0
 
 {
   "@odata.context": "/solutions/backupRestore/$metadata#ProtectionPolicies",
