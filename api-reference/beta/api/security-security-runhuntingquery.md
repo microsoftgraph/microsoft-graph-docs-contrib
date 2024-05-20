@@ -1,5 +1,6 @@
 ---
 title: "security: runHuntingQuery"
+
 description: "Run the hunting query API."
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -12,7 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
+Query a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
+
 
 This method is for advanced hunting in Microsoft 365 Defender. This method includes a query in Kusto Query Language (KQL). It specifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide&preserve-view=true) and a piped sequence of operators to filter or search that data and format the query output in specific ways. 
 
@@ -71,6 +73,7 @@ The format for the timespan examples is:
 
 ### Example 1: Query with default timespan
 
+
 #### Request
 
 The following example specifies a KQL query and:
@@ -79,6 +82,7 @@ The following example specifies a KQL query and:
 - Specifies the output of three columns from the same table for each row: `Timestamp`, `FileName`, `InitiatingProcessFileName`.
 - Sorts the output by the `Timestamp` value.
 - Limits the output to two records (two rows).
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -230,7 +234,8 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.security.huntingQueryResults"
+  "@odata.type": "microsoft.graph.security.huntingQueryResults",
+  "truncated": true
 }
 -->
 

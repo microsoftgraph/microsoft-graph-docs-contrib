@@ -107,13 +107,13 @@ The following API use cases ar supported to customize how users interact with yo
 
 ## Partner tenant management
 
-With Microsoft Graph, you can access [Microsoft Entra](/entra/fundamentals/whatis) resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you're a [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider), managing your customer's data. Microsoft Graph also provides methods apps can use, for example, to discover information about users' transitive group and role memberships.
+Microsoft Graph also provides the following identity and access capabilities for Microsoft partners in the Cloud Solution Provider (CSP), Value Added Reseller (VAR), or Advisor programs to help manage their customer tenants.
 
 
 | Use cases                                           | API operations                                                |
 |-----------------------------------------------------|---------------------------------------------------------------|
 | Manage contracts for the partner with its customers | [contract resource type](contract.md) and its associated APIs |
-| Microsoft partners in the Cloud Solution Provider (CSP), Value Added Reseller (VAR), or Advisor programs can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
+| Microsoft partners can empower their customers to ensure the partners have least privileged access to their customers' tenants. This feature gives extra control to customers over their security posture while allowing them to receive support from the Microsoft resellers | See [Granular delegated admin privileges (GDAP) API overview](delegatedadminrelationships-api-overview.md) |
 
 ---
 

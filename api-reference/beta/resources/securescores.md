@@ -62,10 +62,8 @@ The following is a JSON representation of the resource.
 {
   "activeUserCount": "Int32",
   "averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
-  "averageScore": "Double",
   "azureTenantId": "Guid",
   "controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
-  "createdDate": "DateTimeOffset",
   "createdDateTime": "2019-02-07T20:33:53.156Z",
   "currentScore": "Int32",
   "enabledServices": "Collection(string)",
