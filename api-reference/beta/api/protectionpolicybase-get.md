@@ -90,9 +90,9 @@ Content-Location: /solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815
 Odata–Version: 4.0
 
 {
-   "@odata.context":" /solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
+   "@odata.context":"/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
    "@odata.id":"/solutions/backupRestore/ProtectionPolicies(845457dc-4bb2-4815-bef3-8628ebd1952e)",
-   "@odata.type": "#microsoft.graph.exchangeProtectionPolicy"
+   "@odata.type": "#microsoft.graph.exchangeProtectionPolicy",
    "id":"845457dc-4bb2-4815-bef3-8628ebd1952e",
    "displayName":"Exchange Protection",
    "status":"updating",
