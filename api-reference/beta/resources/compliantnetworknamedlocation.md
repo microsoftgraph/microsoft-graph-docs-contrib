@@ -61,6 +61,6 @@ The following JSON representation shows the resource type.
 
 ## Related content
 
-+ [Enable compliant network check with Conditional Access](/azure/active-directory/global-secure-access/how-to-compliant-network)
++ [Enable compliant network check with Conditional Access](/azure/global-secure-access/how-to-compliant-network)
 + [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
-+ [Conditional Access: Network assignment](/azure/active-directory/conditional-access/concept-assignment-network)
++ [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)

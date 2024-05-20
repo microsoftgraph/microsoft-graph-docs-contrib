@@ -1,7 +1,7 @@
 ---
 title: "Get compliantNetworkNamedLocation"
 description: "Retrieve the properties and relationships of a compliantNetworkNamedLocation object."
-author: "ckeaatss"
+author: "ckeatss"
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType

@@ -472,7 +472,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_namedlocations_4"
+  "name": "get_namedlocations_5"
 }-->
 
 ```msgraph-interactive
