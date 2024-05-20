@@ -26,7 +26,7 @@ An assignment represents a task or unit of work assigned to a student or team me
 
 The following diagram shows the status transitions that can occur for assignments.
 
-![Assignment status transitions diagram](images/states-transitions/diagram-assignments.PNG)
+![Assignment status transitions diagram](images/status-transitions/diagram-assignments.PNG)
 
 ### How to verify that an assignment is published
 
