@@ -22,7 +22,7 @@ Get a list of available [restorePoints](../resources/restorepoint.md) for provid
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|restorePoint|[restorePoint](../resources/restorepoint.md)|RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPoliy](../resources/protectionpolicy.md).|
+|restorePoint|[restorePoint](../resources/restorepoint.md)|RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPoliy](../resources/protectionpolicybase.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.

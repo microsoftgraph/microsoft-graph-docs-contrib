@@ -21,10 +21,10 @@ This entity represents a service application being registered as Backup service 
 |[List serviceApp](../api/serviceapps-list.md)|[serviceApp](../resources/serviceapp.md) collection|Get a list of the [serviceApp](../resources/serviceapp.md) and their properties.|
 |[Create serviceApp](../api/serviceapp-create.md)|[serviceApp](../resources/serviceapp.md)|Create a new [serviceApp](../resources/serviceapp.md).|
 |[Get serviceApp](../api/serviceapp-get.md)|[serviceApp](../resources/serviceapp.md)|Read the properties and relationships of a [serviceApp](../resources/serviceapp.md).|
-|[Update serviceApp](../api/serviceapp-update.md)|[serviceApp](../resources/serviceapp.md)|Update the properties of a [serviceApp](../resources/serviceapp.md).|
 |[Delete serviceApp](../api/serviceapp-delete.md)|None|Delete a [serviceApp](../resources/serviceapp.md).|
 |[activate](../api/serviceapp-activate.md)|[serviceApp](../resources/serviceapp.md)|Activate a serviceApp on behalf of the signed-in user|
 |[deactivate](../api/serviceapp-deactivate.md)|[serviceApp](../resources/serviceapp.md)|Deactivate a serviceApp on behalf of the signed-in user|
+<!-- |[Update serviceApp](../api/serviceapp-update.md)|[serviceApp](../resources/serviceapp.md)|Update the properties of a [serviceApp](../resources/serviceapp.md).| -->
 
 ## Properties
 |Property|Type|Description|

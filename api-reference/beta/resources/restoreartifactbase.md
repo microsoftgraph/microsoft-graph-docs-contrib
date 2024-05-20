@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Restore Artifact refers to the site/drive/mailbox units' restore point and destination relevant details that can be used to restore it.
 
-## Methods
+<!-- ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List restoreArtifactBase objects](../api/restoreartifactbase-list.md)|[restoreArtifactBase](../resources/restoreartifactbase.md) collection|Get a list of the [restoreArtifactBase](../resources/restoreartifactbase.md) objects and their properties.|
@@ -24,7 +24,7 @@ Restore Artifact refers to the site/drive/mailbox units' restore point and desti
 |[Delete restoreArtifactBase](../api/restoreartifactbase-delete.md)|None|Delete a [restoreArtifactBase](../resources/restoreartifactbase.md) object.|
 |[List restorePoint](../api/restoreartifactbase-list-restorepoint.md)|[restorePoint](../resources/restorepoint.md) collection|Get the restorePoint resources from the restorePoint navigation property.|
 |[Add restorePoint](../api/restoreartifactbase-post-restorepoint.md)|[restorePoint](../resources/restorepoint.md)|Add restorePoint by posting to the restorePoint collection.|
-|[Remove restorePoint](../api/restoreartifactbase-delete-restorepoint.md)|None|Remove a [restorePoint](../resources/restorepoint.md) object.|
+|[Remove restorePoint](../api/restoreartifactbase-delete-restorepoint.md)|None|Remove a [restorePoint](../resources/restorepoint.md) object.| -->
 
 ## Properties
 |Property|Type|Description|

@@ -1,5 +1,6 @@
 ---
 title: "enable backupRestore service"
+"description": "Enable Backup Restore service."
 author: "maniksingh, tkanaujia"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"

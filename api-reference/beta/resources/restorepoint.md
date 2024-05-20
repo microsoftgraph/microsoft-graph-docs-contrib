@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPoliy](../resources/protectionpolicy.md).
+RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPoliy](../resources/protectionpolicybase.md).
 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List restorePoint](../api/siterestoreartifact-list-restorepoint.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) and their properties.|
+|[List restorePoint](../api/restorepoint-list.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) and their properties.|
 |[Search](../api/restorepoint-search.md)|[restorePointSearchResponse](../resources/restorepointsearchresponse.md)|Search restorepoints for given [protectionUnits](../resources/protectionunitbase.md)|
 <!-- |[Create restorePoint](../api/siterestoreartifact-post-restorepoint.md)|[restorePoint](../resources/restorepoint.md)|Create a new [restorePoint](../resources/restorepoint.md) object.|
 |[Get restorePoint](../api/restorepoint-get.md)|[restorePoint](../resources/restorepoint.md)|Read the properties and relationships of a [restorePoint](../resources/restorepoint.md) object.|

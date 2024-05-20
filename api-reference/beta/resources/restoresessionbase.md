@@ -18,12 +18,12 @@ Restore session APIs are used by Global Admin or SharePoint Online Admin for Sha
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List restoreSessionBase objects](../api/backuprestoreroot-list-restoresessions.md)|[restoreSessionBase](../resources/restoresessionbase.md) collection|Get a list of the [restoreSessionBase](../resources/restoresessionbase.md) objects and their properties.|
-|[Create restoreSessionBase](../api/backuprestoreroot-post-restoresessions.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Create a new [restoreSessionBase](../resources/restoresessionbase.md) object.|
-|[Get restoreSessionBase](../api/restoresessionbase-get.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Read the properties and relationships of a [restoreSessionBase](../resources/restoresessionbase.md) object.|
-|[Update restoreSessionBase](../api/restoresessionbase-update.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Update the properties of a [restoreSessionBase](../resources/restoresessionbase.md) object.|
-|[Delete restoreSessionBase](../api/backuprestoreroot-delete-restoresessions.md)|None|Delete a [restoreSessionBase](../resources/restoresessionbase.md) object.|
-|[activate](../api/restoresessionbase-activate.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Activates a draft restore session|
+|[List restoreSessionBase objects](../api/restoresession-list.md)|[restoreSessionBase](../resources/restoresessionbase.md) collection|Get a list of the [restoreSessionBase](../resources/restoresessionbase.md) objects and their properties.|
+|[Get restoreSessionBase](../api/restoresession-get.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Read the properties and relationships of a [restoreSessionBase](../resources/restoresessionbase.md) object.|
+|[Delete restoreSessionBase](../api/restoresession-delete.md)|None|Delete a [restoreSessionBase](../resources/restoresessionbase.md) object.|
+|[activate](../api/restoresession-activate.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Activates a draft restore session|
+<!-- |[Update restoreSessionBase](../api/restoresessionbase-update.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Update the properties of a [restoreSessionBase](../resources/restoresessionbase.md) object.| -->
+<!-- |[Create restoreSessionBase](../api/restoresessions-create.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Create a new [restoreSessionBase](../resources/restoresessionbase.md) object.| -->
 
 ## Properties
 |Property|Type|Description|
@@ -35,7 +35,7 @@ Restore session APIs are used by Global Admin or SharePoint Online Admin for Sha
 |error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
 |lastModifiedBy|identitySet|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resource/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resources/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
 |Member | Description |
