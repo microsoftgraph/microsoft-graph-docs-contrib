@@ -46,7 +46,25 @@
       "Id": "62c7d0be-0241-4804-b431-c7575ccae574",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-05-20T00:00:00Z",
+      "CreatedDateTime": "2024-05-21T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "846c3719-761a-4b27-9873-84dfe3ac1602",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingRegistration",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [meetingRegistration](https://learn.microsoft.com/graph/api/resources/meetingregistration?view=graph-rest-beta) resource and supported methods.",
+          "Target": "meetingRegistration"
+        }
+      ],
+      "Id": "846c3719-761a-4b27-9873-84dfe3ac1602",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-20T00:00:00",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
