@@ -29,7 +29,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/security-security-runhuntingquery-permissions.md)]
 
 ## HTTP request
-f
 <!-- {
   "blockType": "ignored"
 }
