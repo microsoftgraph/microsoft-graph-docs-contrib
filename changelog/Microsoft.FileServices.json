@@ -193,7 +193,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **drive** relationship to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
-        },
+        }
       ],
       "Id": "a376b86e-b5eb-4d9e-8270-de3cc02af307",
       "Cloud": "Prod",
