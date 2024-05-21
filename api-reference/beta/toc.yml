@@ -18662,7 +18662,7 @@ items:
                         href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
-                  - name: Presenter
+                  - name: Presenter (preview)
                     href: resources/virtualeventpresenter.md
                     items:
                       - name: List
