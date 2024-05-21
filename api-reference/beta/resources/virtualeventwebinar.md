@@ -1,7 +1,7 @@
 ---
 title: "virtualEventWebinar resource type"
 description: "Contains information about a virtual event webinar."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
@@ -61,6 +61,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
+| registrationConfiguration | [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) | Registration configuration of the webinar. |
 | registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 

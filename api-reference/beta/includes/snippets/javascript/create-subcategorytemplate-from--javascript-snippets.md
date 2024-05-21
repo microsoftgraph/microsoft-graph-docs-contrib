@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const subcategoryTemplate = {
-  '@odata.type': '#microsoft.graph.security.subCategoryTemplate',
+  '@odata.type': '#microsoft.graph.security.subcategoryTemplate',
   displayName: 'Vendor Invoice',
 };
 
-await client.api('/security/labels/categories/{categoryTemplateId}/subCategories')
+await client.api('/security/labels/categories/{categoryTemplateId}/subcategories')
 	.version('beta')
 	.post(subcategoryTemplate);
 

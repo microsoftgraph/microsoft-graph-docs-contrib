@@ -105,7 +105,6 @@ The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.outlookItem",
   "openType": true,
   "optionalProperties": [
     "attachments",
@@ -117,6 +116,7 @@ The following JSON representation shows the resource type.
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.message",
+  "baseType": "microsoft.graph.outlookItem",
   "@odata.annotations": [
     {
       "property": "attachments",

@@ -34,6 +34,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |appId|String|The application identifier in Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that the corresponding sign-in activity triggers. Apps need more Conditional Access-related privileges to read the details of this property. For more information, see [Viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#viewing-applied-conditional-access-ca-policies-in-sign-ins).|
 |appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, which the corresponding events in the sign-in event triggered.|
+|appTokenProtectionStatus|tokenProtectionStatus|Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the app token was bound to the device.|
 |authenticationAppDeviceDetails|[authenticationAppDeviceDetails](../resources/authenticationappdevicedetails.md)|Provides details about the app and device used during a Microsoft Entra authentication step.|
 |authenticationAppPolicyEvaluationDetails|[authenticationAppPolicyDetails](../resources/authenticationapppolicydetails.md) collection|Provides details of the Microsoft Entra policies applied to a user and client authentication app during an authentication step.|
 |authenticationContextClassReferences|[authenticationContext](authenticationcontext.md) collection|Contains a collection of values that represent the conditional access authentication contexts applied to the sign-in.|
@@ -47,6 +48,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |azureResourceId|String|Contains a fully qualified Azure Resource Manager ID of an Azure resource accessed during the sign-in.|
 |clientAppUsed|String|The legacy client used for sign-in activity. For example: `Browser`, `Exchange ActiveSync`, `Modern clients`, `IMAP`, `MAPI`, `SMTP`, or `POP`. <br/><br/> Supports `$filter` (`eq`). |
 |clientCredentialType|clientCredentialType|Describes the credential type that a user client or service principal provided to Microsoft Entra ID to authenticate itself. You can review this property to track and eliminate less secure credential types or to watch for clients and service principals using anomalous credential types. The possible values are: `none`, `clientSecret`, `clientAssertion`, `federatedIdentityCredential`, `managedIdentity`, `certificate`, `unknownFutureValue`.|
+|conditionalAccessAudiences|String|A list that indicates the audience that was evaluated by Conditional Access during a sign-in event. <br/><br/> Supports `$filter` (`eq`).|
 |conditionalAccessStatus|conditionalAccessStatus| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
 |correlationId|String|The identifier the client sends when sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling for support. <br/><br/> Supports `$filter` (`eq`).|
 |createdDateTime|DateTimeOffset|The date and time the sign-in was initiated. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br/><br/> Supports `$orderby`, `$filter` (`eq`, `le`, and `ge`).|
@@ -54,6 +56,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |deviceDetail|[deviceDetail](devicedetail.md)|The device information from where the sign-in occurred. Includes information such as deviceId, OS, and browser. <br/><br/> Supports `$filter` (`eq`, `startsWith`) on **browser** and **operatingSystem** properties.|
 |federatedCredentialId|String|Contains the identifier of an application's federated identity credential, if a federated identity credential was used to sign in.|
 |flaggedForReview|Boolean|During a failed sign-in, a user can select a button in the Azure portal to mark the failed event for tenant admins. If a user selects the button to flag the failed sign-in, this value is `true`.|
+|globalSecureAccessIpAddress|String|The Global Secure Access IP address that the sign-in was initiated from.|
 |homeTenantId|String|The tenant identifier of the user initiating the sign-in. Not applicable in Managed Identity or service principal sign ins.|
 |homeTenantName|String|For user sign ins, the identifier of the tenant that the user is a member of. Only populated in cases where the home tenant has provided affirmative consent to Microsoft Entra ID to show the tenant content.|
 |id|String|The identifier representing the sign-in activity. Inherited from [entity](entity.md). <br/><br/> Supports `$filter` (`eq`).|
@@ -62,6 +65,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |ipAddressFromResourceProvider|String|The IP address a user used to reach a resource provider, used to determine Conditional Access compliance for some policies. For example, when a user interacts with Exchange Online, the IP address that Microsoft Exchange receives from the user can be recorded here. This value is often `null`.|
 |isInteractive|Boolean|Indicates whether a user sign in is interactive. In interactive sign in, the user provides an authentication factor to Microsoft Entra ID. These factors include passwords, responses to MFA challenges, biometric factors, or QR codes that a user provides to Microsoft Entra ID or an associated app. In non-interactive sign in, the user doesn't provide an authentication factor. Instead, the client app uses a token or code to authenticate or access a resource on behalf of a user. Non-interactive sign ins are commonly used for a client to sign in on a user's behalf in a process transparent to the user.|
 |isTenantRestricted|Boolean|Shows whether the sign in event was subject to a Microsoft Entra tenant restriction policy.|
+|isThroughGlobalSecureAccess|Boolean|Indicates whether a user came through Global Secure Access service.|
 |location|[signInLocation](signinlocation.md)|The city, state, and two letter country code from where the sign-in occurred. <br/><br/> Supports `$filter` (`eq`, `startsWith`) on **city**, **state**, and **countryOrRegion** properties.|
 |managedServiceIdentity|[managedIdentity](../resources/managedidentity.md)|Contains information about the managed identity used for the sign in, including its type, associated Azure Resource Manager (ARM) resource ID, and federated token information.|
 |networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details including the type of network used and its names.|
@@ -96,7 +100,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |userId|String|The identifier of the user. <br/><br/> Supports `$filter` (`eq`).|
 |userPrincipalName|String|The UPN of the user. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userType|signInUserType|Identifies whether the user is a member or guest in the tenant. Possible values are: `member`, `guest`, `unknownFutureValue`.|
-|mfaDetail (deprecated)|String|This property is deprecated.|
+|mfaDetail (deprecated)|[mfaDetail](../resources/mfadetail.md)|This property is deprecated.|
 
 
 ## Relationships
@@ -129,7 +133,9 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.appliedAuthenticationEventListener"
     }
   ],
-  "appTokenProtectionStatus": "String",
+  "appTokenProtectionStatus": {
+      "@odata.type": "microsoft.graph.tokenProtectionStatus"
+  },
   "authenticationAppDeviceDetails": {
       "@odata.type": "microsoft.graph.authenticationAppDeviceDetails"
   },
@@ -194,9 +200,6 @@ The following JSON representation shows the resource type.
   },
   "processingTimeInMilliseconds": "Integer",
   "riskDetail": "String",
-  "riskEventTypes": [
-    "String"
-  ],
   "riskEventTypes_v2": [
     "String"
   ],
