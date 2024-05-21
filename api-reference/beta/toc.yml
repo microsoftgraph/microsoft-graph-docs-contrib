@@ -18653,7 +18653,7 @@ items:
                         items:
                           - name: Get
                             href: api/virtualeventwebinarregistrationconfiguration-get.md
-                  - name: Town hall
+                  - name: Town hall (preview)
                     href: resources/virtualeventtownhall.md
                   - name: Session
                     href: resources/virtualeventsession.md
