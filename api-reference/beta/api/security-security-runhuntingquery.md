@@ -101,6 +101,8 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
   "truncated": true
 }
 -->
+HTTP/1.1 200 OK
+Content-type: application/json
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.huntingQueryResults",
@@ -139,6 +141,7 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery"
@@ -161,6 +164,8 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
   "truncated": true
 }
 -->
+HTTP/1.1 200 OK
+Content-type: application/json
 ```json
 {
     "@odata.context": "https://graph.microsoft.com//$metadata#microsoft.graph.security.huntingQueryResults",
