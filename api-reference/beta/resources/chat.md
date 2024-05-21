@@ -72,6 +72,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
+| isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
@@ -104,7 +105,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -114,19 +115,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "chatType": "string",
-  "createdDateTime": "dateTimeOffset",
+  "chatType": "String",
+  "createdDateTime": "String (timestamp)",
   "id": "string (identifier)",
-  "lastUpdatedDateTime": "dateTimeOffset",  
+  "isHiddenForAllMembers": "Boolean",
+  "lastUpdatedDateTime": "String (timestamp)",  
   "onlineMeetingInfo": {
     "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
   },
-  "tenantId": "string",  
-  "topic": "string",
+  "tenantId": "String",  
+  "topic": "String",
   "viewpoint": {
     "@odata.type": "microsoft.graph.chatViewpoint"
   },
-  "webUrl": "string"
+  "webUrl": "String"
 }
 ```
 
