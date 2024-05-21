@@ -56,6 +56,7 @@ The following table lists the properties that are required when you create the [
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [plannerRosterMember](../resources/plannerrostermember.md) object in the response body.
+
 This method returns a `403 Forbidden` response code if the sensitivity label on the roster disallows the addition of guests and the request adds guests to the **plannerRoster**. The request fails, and the **code** property on the error resource type has the value `AddingGuestUsersProhibitedByLabel`.
 
 ## Examples
