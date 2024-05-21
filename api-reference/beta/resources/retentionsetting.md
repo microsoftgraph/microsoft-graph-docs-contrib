@@ -1,6 +1,6 @@
 ---
 title: "retentionSetting resource type"
-description: "Details of all the retention settings for the policy"
+description: "Details of all the retention settings for the Protection Policy"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,18 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details of all the retention settings for the policy.
+Details of all the retention settings for the Protection Policy.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |interval|String|Frequency of the backup.|
-|period|Duration|Period to retain the protected data for single M365 service.|
+|period|Duration|Period to retain the protected data for single Microsoft 365 service.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -38,4 +41,3 @@ The following JSON representation shows the resource type.
   "period": "String (duration)"
 }
 ```
-

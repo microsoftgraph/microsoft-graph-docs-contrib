@@ -16,15 +16,18 @@ Namespace: microsoft.graph
 Get a list of available [restorePoints](../resources/restorepoint.md) for provided [protectionUnits](../resources/protectionunitbase.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|restorePoint|[restorePoint](../resources/restorepoint.md)|RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPoliy](../resources/protectionpolicybase.md).|
+|restorePoint|[restorePoint](../resources/restorepoint.md)|RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPolicy](../resources/protectionpolicybase.md).|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -36,4 +39,3 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.restorePointSearchResult"
 }
 ```
-

@@ -1,6 +1,6 @@
 ---
 title: "restorePoint resource type"
-description: "Describes Restore Point and it's properties"
+description: "Describes Restore Point and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,30 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPoliy](../resources/protectionpolicybase.md).
+RestorePoints represent the timestamp when an [artifact](../resources/restoreartifactbase.md) is protected by [protectionPolicy](../resources/protectionpolicybase.md).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List restorePoint](../api/restorepoint-list.md)|[restorePoint](../resources/restorepoint.md) collection|Get a list of the [restorePoint](../resources/restorepoint.md) and their properties.|
-|[Search](../api/restorepoint-search.md)|[restorePointSearchResponse](../resources/restorepointsearchresponse.md)|Search restorepoints for given [protectionUnits](../resources/protectionunitbase.md)|
-<!-- |[Create restorePoint](../api/siterestoreartifact-post-restorepoint.md)|[restorePoint](../resources/restorepoint.md)|Create a new [restorePoint](../resources/restorepoint.md) object.|
-|[Get restorePoint](../api/restorepoint-get.md)|[restorePoint](../resources/restorepoint.md)|Read the properties and relationships of a [restorePoint](../resources/restorepoint.md) object.|
-|[Update restorePoint](../api/restorepoint-update.md)|[restorePoint](../resources/restorepoint.md)|Update the properties of a [restorePoint](../resources/restorepoint.md) object.|
-|[Delete restorePoint](../api/siterestoreartifact-delete-restorepoint.md)|None|Delete a [restorePoint](../resources/restorepoint.md) object.|
-|[List protectionPolicyBase](../api/restorepoint-list-protectionpolicy.md)|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|Get the protectionPolicyBase resources from the protectionPolicy navigation property.|
-|[Add protectionPolicyBase](../api/restorepoint-post-protectionpolicy.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Add protectionPolicy by posting to the protectionPolicy collection.|
-|[Remove protectionPolicyBase](../api/restorepoint-delete-protectionpolicy.md)|None|Remove a [protectionPolicyBase](../resources/protectionpolicybase.md) object.|
-|[List protectionUnitBase](../api/restorepoint-list-protectionunit.md)|[protectionUnitBase](../resources/protectionunitbase.md) collection|Get the protectionUnitBase resources from the protectionUnit navigation property.|
-|[Add protectionUnitBase](../api/restorepoint-post-protectionunit.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Add protectionUnit by posting to the protectionUnit collection.|
-|[Remove protectionUnitBase](../api/restorepoint-delete-protectionunit.md)|None|Remove a [protectionUnitBase](../resources/protectionunitbase.md) object.| -->
+|[Search](../api/restorepoint-search.md)|[restorePointSearchResponse](../resources/restorepointsearchresponse.md)|Search restorepoints for given [protectionUnits](../resources/protectionunitbase.md).|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id of the restore point.|
+|id|String|ID of the restore point.|
 |protectionDateTime|DateTimeOffset|Date time when restore point was created.|
 |expirationDateTime|DateTimeOffset|Expiration date time of the restore point.|
 |tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|Specifies the preference of of restore points..The possible values are: `none`, `fastRestore`, `unknownFutureValue`.|
@@ -46,8 +36,8 @@ RestorePoints represent the timestamp when an [artifact](../resources/restoreart
 |Member | Description |
 |:------|:------------|
 |none   | No Tag      |
-|fastRestore | Tag to get fast restore point|
-|unknownFutureValue | Marker value for future compatibility|
+|fastRestore | Tag to get fast restore point.|
+|unknownFutureValue | Marker value for future compatibility.|
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 ---
 title: "sharePointRestoreSession resource type"
-description: "Describes sharepoint restore session and it's properties"
+description: "Describes sharepoint restore session and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -18,46 +18,46 @@ SharePoint restore session APIs are used by Global Admin or SharePoint Online Ad
 Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create sharePointRestoreSession](../api/sharepointrestoresession-create.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
 |[List siteRestoreArtifacts](../api/sharepointrestoresession-list-siterestoreartifacts.md)|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Get the siteRestoreArtifact resources from the siteRestoreArtifacts navigation property.|
 |[Update sharePointRestoreSession](../api/sharepointrestoresession-update.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Update the properties of a [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
-<!--|[Get sharePointRestoreSession](../api/sharepointrestoresession-get.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Read the properties and relationships of a [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.|
-|[List sharePointRestoreSession](../api/backuprestoreroot-list-sharepointrestoresessions.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md) collection|Get a list of the [sharePointRestoreSession](../resources/sharepointrestoresession.md) objects and their properties.|
-|[Delete sharePointRestoreSession](../api/backuprestoreroot-delete-sharepointrestoresessions.md)|None|Delete a [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.|
-|[activate](../api/sharepointrestoresession-activate.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Activates a draft restore session|
-|[Create siteRestoreArtifact](../api/sharepointrestoresession-post-siterestoreartifacts.md)|[siteRestoreArtifact](../resources/siterestoreartifact.md)|Create a new siteRestoreArtifact object.| -->
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the restore session created|
-|completedDateTime|DateTimeOffset|The time of creation of the restore session.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the restore session.|
-|createdDateTime|DateTimeOffset|The time of completion of the restore session.|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
+|id|String|The unique identifier of the Restore Session created.|
+|completedDateTime|DateTimeOffset|The time of creation of the Restore Session.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the Restore Session.|
+|createdDateTime|DateTimeOffset|The time of completion of the Restore Session.|
+|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the Restore Session fails or completed with error.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this Restore Session.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this Restore Session.|
 |status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
+
 |Member | Description |
 |:------|:------------|
-|draft|All artifacts are in "added" status, restore session status is "draft".|
-|activating|All artifacts are in "scheduling" status, restore session status is "activating".|
-|active|All or any restore artifacts are in scheduled or inProgress status, restore session status will be active.|
-|completedWithError|Some restore artifacts in failed status, some in succeeded status and all the artifacts are in terminal state, restore session status will be completedWithErrors.|
-|completed| All restore artifacts are in succeeded status, restore session status will be completed.|
-|failed| All restore artifacts are in failed status, restore session status will be failed.|
+|draft|All Artifacts are in "added" status, Restore Session status is "draft".|
+|activating|All Artifacts are in "scheduling" status, Restore Session status is "activating".|
+|active|All or any Restore Artifacts are in scheduled or inProgress status, Restore Session status will be active.|
+|completedWithError|Some Restore Artifacts in failed status, some in succeeded status and all the Artifacts are in terminal state, Restore Session status will be completedWithErrors.|
+|completed| All Restore Artifacts are in succeeded status, Restore Session status will be completed.|
+|failed| All Restore Artifacts are in failed status, Restore Session status will be failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of sharepoint site unit restore point and destination relevant details that can be used to restore it|
+|siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of SharePoint site unit Restore Point and destination relevant details that can be used to restore it.|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -86,4 +86,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

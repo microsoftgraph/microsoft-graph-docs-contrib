@@ -1,6 +1,6 @@
 ---
 title: "restoreArtifactBase resource type"
-description: "Describes restore artifact and it's properties"
+description: "Describes restore artifact and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -15,44 +15,37 @@ Namespace: microsoft.graph
 
 Restore Artifact refers to the site/drive/mailbox units' restore point and destination relevant details that can be used to restore it.
 
-<!-- ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List restoreArtifactBase objects](../api/restoreartifactbase-list.md)|[restoreArtifactBase](../resources/restoreartifactbase.md) collection|Get a list of the [restoreArtifactBase](../resources/restoreartifactbase.md) objects and their properties.|
-|[Get restoreArtifactBase](../api/restoreartifactbase-get.md)|[restoreArtifactBase](../resources/restoreartifactbase.md)|Read the properties and relationships of a [restoreArtifactBase](../resources/restoreartifactbase.md) object.|
-|[Update restoreArtifactBase](../api/restoreartifactbase-update.md)|[restoreArtifactBase](../resources/restoreartifactbase.md)|Update the properties of a [restoreArtifactBase](../resources/restoreartifactbase.md) object.|
-|[Delete restoreArtifactBase](../api/restoreartifactbase-delete.md)|None|Delete a [restoreArtifactBase](../resources/restoreartifactbase.md) object.|
-|[List restorePoint](../api/restoreartifactbase-list-restorepoint.md)|[restorePoint](../resources/restorepoint.md) collection|Get the restorePoint resources from the restorePoint navigation property.|
-|[Add restorePoint](../api/restoreartifactbase-post-restorepoint.md)|[restorePoint](../resources/restorepoint.md)|Add restorePoint by posting to the restorePoint collection.|
-|[Remove restorePoint](../api/restoreartifactbase-delete-restorepoint.md)|None|Remove a [restorePoint](../resources/restorepoint.md) object.| -->
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the restore artifact|
+|id|String|The unique identifier of the restore artifact.|
 |completionDateTime|DateTimeOffset|The time when restoration of restore artifact is completed.|
-|destinationType|destinationType|Describes preference for restoration destination.The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
+|destinationType|destinationType|Describes preference for restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
 |error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
 |startDateTime|DateTimeOffset|The time when restoration of restore artifact is started.|
-|status|artifactRestoreStatus|The individual restoration status of the restore artifact..The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|artifactRestoreStatus|The individual restoration status of the restore artifact. The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ### artifactRestoreStatus values
+
 |Member | Description |
 |:------|:------------|
 |added|Initial Status when restore artifact has been added to restore session.|
 |scheduling|Status when activate action is called on the restore session.|
-|scheduled|Status when activate action call is successfull on the restore session.|
-|inProgress|This state arrives when restore artifact is/has been picked for restoration.|
+|scheduled|Status when activate action call is successful on the restore session.|
+|inProgress|Status when restore artifact has been picked for restoration.|
 |succeeded|The restore artifact has successfully restored.|
-|failed|This state arrives when restoration of artifact is failed.|
+|failed|Status when restoration of artifact is failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |restorePoint|[restorePoint](../resources/restorepoint.md)| RestorePoints represent the timestamp when an artifact is protected (as per Protection Policy).|
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -75,4 +68,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-
