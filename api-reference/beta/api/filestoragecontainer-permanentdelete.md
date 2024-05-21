@@ -1,30 +1,30 @@
 ---
-title: "fileStorageContainer: activate"
-description: "Activate a fileStorageContainer object."
+title: "fileStorageContainer: permanentDelete"
+description: "Permanently delete a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# fileStorageContainer: activate  
+# fileStorageContainer: permanentDelete
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.
-
-A **fileStorageContainer** object is created in an inactive state, as indicated by the **status** property. A container that isn't activated within 24 hours after creation is automatically deleted. Upon activation, the value of the status property changes from `inactive` to `active`.
-
-A file storage container can be activated by calling this API or any API that updates or modifies it or its content. For example, uploading a file to a file storage container activates it. It's also activated when you add permissions to it or update them, or create a custom property on it.
+Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting a file storage container with this method permanently removes it. It isn't sent to the deleted container collection. Therefore, it can't be restored later.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "filestoragecontainer_activate" } -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-activate-permissions.md)]
+<!-- {
+  "blockType": "permissions",
+  "name": "filestoragecontainer-permanentdelete-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-permanentdelete-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /storage/fileStorage/containers/{containerId}/activate
+POST /storageContainers/{containerId}/permanentDelete
 ```
 
 ## Request headers
@@ -58,17 +58,19 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "activate_filestoragecontainer"
+  "name": "filestoragecontainerthis.permanentdelete"
 }
 -->
+
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/activate
+POST https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permanentDelete
 ```
+
 
 ### Response
 
 The following example shows the response.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
