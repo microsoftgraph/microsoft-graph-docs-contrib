@@ -57,7 +57,7 @@ The following JSON representation shows the resource type.
   "openType": false 
 }
 -->
-``` json
+``` json 
 {
   "@odata.type": "#microsoft.graph.plannerRoster",
   "id": "String (identifier)"
