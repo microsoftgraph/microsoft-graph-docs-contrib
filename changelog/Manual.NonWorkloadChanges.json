@@ -3,6 +3,114 @@
     {
       "ChangeList": [
         {
+          "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added the Microsoft Graph Bicep resource for deploying the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource type using Bicep templates for Microsoft Graph resources in infrastructure-as-code (IaC) scenarios. For more information, see [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep).",
+          "Target": "application"
+        }
+      ],
+      "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-21T00:00:00.5014179Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the Microsoft Graph Bicep resource for deploying the [federatedIdentityCredential](https://learn.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-1.0) resource type using Bicep templates for Microsoft Graph resources in infrastructure-as-code (IaC) scenarios. For more information, see [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep).",
+          "Target": "federatedIdentityCredential"
+        }
+      ],
+      "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-21T00:00:00.5014179Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the Microsoft Graph Bicep resource for deploying the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource type using Bicep templates for Microsoft Graph resources in infrastructure-as-code (IaC) scenarios. For more information, see [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep).",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-21T00:00:00.5014179Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oAuth2PermissionGrant",
+          "ChangeType": "Addition",
+          "Description": "Added the Microsoft Graph Bicep resource for deploying the [oAuth2PermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-1.0) resource type using Bicep templates for Microsoft Graph resources in infrastructure-as-code (IaC) scenarios. For more information, see [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep).",
+          "Target": "oAuth2PermissionGrant"
+        }
+      ],
+      "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-21T00:00:00.5014179Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appRoleAssignedTo",
+          "ChangeType": "Addition",
+          "Description": "Added the Microsoft Graph Bicep resource for deploying the [appRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/appRoleAssignment?view=graph-rest-1.0) resource type using Bicep templates for Microsoft Graph resources in infrastructure-as-code (IaC) scenarios. For more information, see [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep).",
+          "Target": "appRoleAssignment"
+        }
+      ],
+      "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-21T00:00:00.5014179Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+          "ApiChange": "Resource",
+          "ChangedApiName": "group",
+          "ChangeType": "Addition",
+          "Description": "Added the Microsoft Graph Bicep resource for deploying the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource type using Bicep templates for Microsoft Graph resources in infrastructure-as-code (IaC) scenarios. For more information, see [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep).",
+          "Target": "group"
+        }
+      ],
+      "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-21T00:00:00.5014179Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0a01c9dd-93ec-4529-875e-842a925277d1",
           "ApiChange": "Resource",
           "ChangedApiName": "ediscoveryCase,reviewSet,reviewSetQuery",
