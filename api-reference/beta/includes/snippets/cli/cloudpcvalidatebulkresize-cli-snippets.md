@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta device-management virtual-endpoint cloud-pcs validate-bulk-resize post --body '{\
   "cloudPcIds": [\
     "30d0e128-de93-41dc-89ec-33d84bb662a0", \

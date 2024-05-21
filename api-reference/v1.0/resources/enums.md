@@ -147,6 +147,50 @@ Namespace: microsoft.graph
 | user   |
 | group  |
 
+### multiTenantOrganizationMemberProcessingStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberRole values
+
+|Member|
+|:---|
+|owner|
+|member|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberState values
+
+|Member|
+|:---|
+|pending|
+|active|
+|removed|
+|unknownFutureValue|
+
+### multiTenantOrganizationState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### templateApplicationLevel values
+
+|Member|
+|:---|
+|none|
+|newPartners|
+|existingPartners|
+|unknownFutureValue|
+
 ### federatedIdpMfaBehavior values
 | Member                        |
 | :---------------------------- |
@@ -2105,6 +2149,16 @@ Possible values for user account types (group membership), per Windows definitio
 | emailBox             |
 | checkboxMultiSelect  |
 
+### authenticationAttributeCollectionInputType values
+
+|Member|
+|:---|
+|text|
+|radioSingleSelect|
+|checkboxMultiSelect|
+|boolean|
+|unknownFutureValue|
+
 ### teamworkActivityTopicSource values
 
 | Member    |
@@ -3004,6 +3058,18 @@ Possible values for user account types (group membership), per Windows definitio
 | Succeeded        |
 | Failed           |
 | EntryLevelErrors |
+
+### stagedFeatureName values
+
+| Member                         |
+|:-------------------------------|
+| passthroughAuthentication      |
+| seamlessSso                    |
+| passwordHashSync               |
+| emailAsAlternateId             |
+| unknownFutureValue             |
+| certificateBasedAuthentication |
+| multiFactorAuthentication      |
 
 ### synchronizationJobRestartScope values
 

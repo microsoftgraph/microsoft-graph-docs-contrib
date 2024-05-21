@@ -11,6 +11,6 @@ use Microsoft\Graph\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->networkAccess()->connectivity()->branches()->byBranchSiteId('branchSite-id')->deviceLinks()->byDeviceLinkId('deviceLink-id')->get()->wait();
+$result = $graphServiceClient->networkAccess()->connectivity()->remoteNetworks()->byRemoteNetworkId('remoteNetwork-id')->deviceLinks()->byDeviceLinkId('deviceLink-id')->get()->wait();
 
 ```

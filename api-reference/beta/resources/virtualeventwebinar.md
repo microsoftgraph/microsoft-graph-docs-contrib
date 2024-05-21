@@ -1,7 +1,7 @@
 ---
 title: "virtualEventWebinar resource type"
 description: "Contains information about a virtual event webinar."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
@@ -52,15 +52,16 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Value | Description |
 | ----- | ----------- |
-| draft | The webinar is in draft and only visible to the organizer. |
-| published | The organizer published the webinar and it's visible to the audience. |
-| canceled | The organizer canceled the webinar. |
+| draft | The virtual event is in draft and only visible to the organizer. |
+| published | The organizer published the virtual event and it's visible to the audience. |
+| canceled | The organizer canceled the virtual event. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
+| registrationConfiguration | [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) | Registration configuration of the webinar. |
 | registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
@@ -89,3 +90,7 @@ The following JSON representation shows the resource type.
   "status": "String"
 }
 ```
+
+## Related content
+
+[List meetingAttendanceReports](../api/meetingattendancereport-list.md)

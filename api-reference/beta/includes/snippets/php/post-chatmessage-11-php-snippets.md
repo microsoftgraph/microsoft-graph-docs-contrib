@@ -9,44 +9,26 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\ChatMessage;
 use Microsoft\Graph\Generated\Models\ItemBody;
 use Microsoft\Graph\Generated\Models\ChatMessageAttachment;
-use Microsoft\Graph\Generated\Models\ChatMessageHostedContent;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
-$requestBody->setSubject('Announcement Subheading');
+$requestBody->setSubject(null);
 $body = new ItemBody();
-$body->setContentType(new BodyType('text'));
-$body->setContent('<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text');
+$body->setContentType(new BodyType('html'));
+$body->setContent('<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>');
 $requestBody->setBody($body);
 $attachmentsChatMessageAttachment1 = new ChatMessageAttachment();
-$attachmentsChatMessageAttachment1->setId('d7ddbf876ae340c3a03bada395ec7da7');
-$attachmentsChatMessageAttachment1->setContentType('application/vnd.microsoft.teams.messaging-announcementBanner');
+$attachmentsChatMessageAttachment1->setId('74d20c7f34aa4a7fb74e2b30004247c5');
+$attachmentsChatMessageAttachment1->setContentType('application/vnd.microsoft.card.thumbnail');
 $attachmentsChatMessageAttachment1->setContentUrl(null);
-$attachmentsChatMessageAttachment1->setContent('{\"title\":\"Announcement heading\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"../hostedContents/1/$value\",\"width\":1379,\"height\":268,\"croppedWidth\":918.0,\"croppedHeight\":178.4075416968818,\"leftMargin\":0.0,\"topMargin\":90.7962291515591,\"imageContentType\":\"image/png\"},\"croppedImage\":{\"source\":\"../hostedContents/2/$value\"}}}}');
+$attachmentsChatMessageAttachment1->setContent('{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}');
 $attachmentsChatMessageAttachment1->setName(null);
 $attachmentsChatMessageAttachment1->setThumbnailUrl(null);
+$attachmentsChatMessageAttachment1->setTeamsAppId('881b8843-fd91-49e5-9ac2-47ec497ffbe5');
 $attachmentsArray []= $attachmentsChatMessageAttachment1;
 $requestBody->setAttachments($attachmentsArray);
-
-$hostedContentsChatMessageHostedContent1 = new ChatMessageHostedContent();
-$hostedContentsChatMessageHostedContent1->setContentBytes(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4c6QAAAARnQU1BA')));
-$hostedContentsChatMessageHostedContent1->setContentType('image/png');
-$additionalData = [
-'@microsoft.graph.temporaryId' => '1',
-];
-$hostedContentsChatMessageHostedContent1->setAdditionalData($additionalData);
-$hostedContentsArray []= $hostedContentsChatMessageHostedContent1;
-$hostedContentsChatMessageHostedContent2 = new ChatMessageHostedContent();
-$hostedContentsChatMessageHostedContent2->setContentBytes(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('iVBORw0KGgoAAAANSUhEUgAAA5YAAAB4CAYAAACJrW0RAAAAAXNSR0IArs4c6QAAIABJREFUe')));
-$hostedContentsChatMessageHostedContent2->setContentType('image/png');
-$additionalData = [
-'@microsoft.graph.temporaryId' => '2',
-];
-$hostedContentsChatMessageHostedContent2->setAdditionalData($additionalData);
-$hostedContentsArray []= $hostedContentsChatMessageHostedContent2;
-$requestBody->setHostedContents($hostedContentsArray);
 
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->channels()->byChannelId('channel-id')->messages()->post($requestBody)->wait();

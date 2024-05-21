@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.reprovision_post_request_body import ReprovisionPostRequestBody
+from msgraph.generated.devicemanagement.virtualendpoint.cloudpcs.item.reprovision.reprovision_post_request_body import ReprovisionPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

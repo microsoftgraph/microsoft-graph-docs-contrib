@@ -3,7 +3,7 @@ title: "relyingPartyDetailedSummary resource type"
 description: "Represents the summary of AD FS relying parties' information on daily, weekly, or monthly frequency."
 author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access-reports"
+ms.subservice: entra-monitoring-health
 doc_type: resourcePageType
 ---
 

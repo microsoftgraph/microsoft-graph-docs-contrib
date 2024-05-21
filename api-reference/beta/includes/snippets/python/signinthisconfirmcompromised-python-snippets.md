@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.confirm_compromised_post_request_body import ConfirmCompromisedPostRequestBody
+from msgraph.generated.auditlogs.signins.confirm_compromised.confirm_compromised_post_request_body import ConfirmCompromisedPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

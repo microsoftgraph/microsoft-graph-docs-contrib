@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of an [analyzedEmail](../resources/security-analyzedemail.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -31,7 +33,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /security/collaboration/analyzedEmails/{analyzedEmailId}
 ```
-
 
 ## Request headers
 
@@ -113,20 +114,18 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.analyzedEmail",
-    "id": "3570a93a-82b1-ffb9-8c26-a9a2ca002a17",
-    "loggedDateTime": "String (timestamp)",
+    "id": "String",
+    "loggedDateTime": "Datetime",
     "networkMessageId": "String",
     "internetMessageId": "String",
     "senderDetail": {
       "@odata.type": "microsoft.graph.security.analyzedEmailSenderDetail"
     },
-    "recipientEmailAddresses": [
-      "String"
-    ],
+    "recipientEmailAddress": "String",
     "distributionList": "String",
     "subject": "String",
     "returnPath": "String",
-    "directionality": "String",
+    "directionality": "microsoft.graph.security.antispamDirectionality",
     "originalDelivery": {
       "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
     },
@@ -158,7 +157,9 @@ Content-Type: application/json
     "overrideSources": [
       "String"
     ],
-    "threatType": "String",
+    "threatTypes": [
+      "microsoft.graph.security.threatType"
+    ],
     "detectionMethods": [
       "String"
     ],
@@ -177,4 +178,3 @@ Content-Type: application/json
   }
 }
 ```
-

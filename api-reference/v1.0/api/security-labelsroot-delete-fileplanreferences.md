@@ -90,7 +90,6 @@ DELETE https://graph.microsoft.com/v1.0/security/labels/filePlanReferences/6cf65
 
 ---
 
-
 ### Response
 Here's an example of the response.
 >

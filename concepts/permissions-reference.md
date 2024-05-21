@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/05/2024
+ms.date: 05/17/2024
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1288,6 +1288,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### CrossTenantContentMigration.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | b85f44c8-673a-4b31-a0c1-3070d0ae487e 
+| DisplayText | - | Read all cross tenant content migration job details 
+| Description | - | Allows the app to read your tenant's all cross tenant content migration job details on behalf of the signed-in user. 
+| AdminConsentRequired | - | Yes 
+
+---
+
+### CrossTenantContentMigration.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 0569b6eb-c9e3-4dc6-a998-6df963be6689 
+| DisplayText | - | Read and write all cross tenant content migration job details 
+| Description | - | Allows the app to read and write your tenant's all cross tenant content migration job details on behalf of the signed-in user. 
+| AdminConsentRequired | - | Yes 
+
+---
+
 ### CrossTenantInformation.ReadBasic.All
 
 | Category | Application | Delegated |
@@ -2386,10 +2408,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | 8019c312-3263-48e6-825e-2b833497195b 
-| DisplayText | - | Have full access to the application's folder (preview) 
-| Description | - | (Preview) Allows the app to read, create, update and delete files in the application's folder. 
-| AdminConsentRequired | - | No 
+| Identifier | b47b160b-1054-4efd-9ca0-e2f614696086 | 8019c312-3263-48e6-825e-2b833497195b 
+| DisplayText | Have full access to the application's folder without a signed in user. | Have full access to the application's folder (preview) 
+| Description | Allows the app to read, create, update and delete files in the application's folder without a signed in user. | (Preview) Allows the app to read, create, update and delete files in the application's folder. 
+| AdminConsentRequired | Yes | No 
 
 ---
 
@@ -3683,6 +3705,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### PartnerSecurity.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 21ffa320-2e7f-47d3-a466-7ff04d2dd68d | 5567b981-0bf1-4796-9038-0648b46e116d 
+| DisplayText | Read security alerts of customer with CSP relationship | Read security alerts of customer with CSP relationship 
+| Description | Allows the app to read security alerts of customer with CSP relationship, without a signed-in user. | Allows the app to read security alerts of customer with CSP relationship on behalf of the partner signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### PartnerSecurity.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 04a2c935-5b4b-474a-be42-11f53111f271 | 0cd2c1f6-94a1-4075-ab8c-0b1aff2e1ad5 
+| DisplayText | Read security alerts and update status of security alerts of customer with CSP relationship | Read security alerts and update status of security alerts of customer with CSP relationship 
+| Description | Allows the app to read security alerts and update status of alerts of customer with CSP relationship, without a signed-in user. | Allows the app to read security alerts and update status of alerts of customer with CSP relationship on behalf of the partner signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### PendingExternalUserProfile.Read.All
 
 | Category | Application | Delegated |
@@ -4473,6 +4517,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### ProfilePhoto.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e24d31aa-e1ab-4c80-85fe-23018690335d | 469cd065-729e-4dee-b1fa-d92e0fab6310 
+| DisplayText | Read profile photo of a user or group | Read profile photo of a user or group 
+| Description | Allows the app to read all profile photos of users and groups, without a signed-in user | Allows the app to read all profile photos of users and groups, on behalf of the the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### ProfilePhoto.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 27baa7f6-5dfb-4ba8-b1d3-1e812c143013 | f5b24df7-511e-48bb-ae88-643f023b55e1 
+| DisplayText | Read and write profile photo of a user or group | Read and write profile photo of a user or group 
+| Description | Allows the app to read and write all profile photos of users and groups, without a signed-in user | Allows the app to read and write all profile photos of users and groups, on behalf of the the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### ProgramControl.Read.All
 
 | Category | Application | Delegated |
@@ -4491,6 +4557,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 60a901ed-09f7-4aa5-a16e-7dd3d6f9de36 | 50fd364f-9d93-4ae1-b170-300e87cccf84 
 | DisplayText | Manage all programs | Manage all programs that user can access 
 | Description | Allows the app to read, update, delete and perform actions on programs and program controls in the organization, without a signed-in user. | Allows the app to read, update, delete and perform actions on programs and program controls that the signed-in user has access to in the organization. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### PublicKeyInfrastructure.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 214fda0c-514a-4650-b037-b562b1a66124 | 04a4b2a2-3f26-4fc8-87ee-9c46e68db175 
+| DisplayText | Read all certificate based authentication configurations | Read certificate based authentication configurations 
+| Description | Allows the application to read  certificate-based authentication configuration such as all public key infrastructures (PKI) and certificate authorities (CA) configured for the organization, without a signed-in user. | Allows the application to read certificate-based authentication configuration such as all public key infrastructures (PKI) and certificate authorities (CA) configured for the organization, on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### PublicKeyInfrastructure.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a2b63618-5350-462d-b1b3-ba6eb3684e26 | 3591b7f3-dba8-4bad-b667-7a64bd4f2b83 
+| DisplayText | Read and write all certificate based authentication configurations | Read and write certificate based authentication configurations 
+| Description | Allows the application to read and write certificate-based authentication configuration such as all public key infrastructures (PKI) and certificate authorities (CA) configured for the organization, without a signed-in user. | Allows the application to read  and write certificate-based authentication configuration such as all public key infrastructures (PKI) and certificate authorities (CA) configured for the organization, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
 ---
@@ -4802,6 +4890,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read/Write schedule permissions for a role | Read/Write schedule permissions for a role. 
 | Description | Allows the app to read/write schedule permissions for a specific role in Shifts application without a signed-in user. | Allows the app to read/write schedule permissions for a specific role in Shifts application on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
+
+---
+
+### Schedule-WorkingTime.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 0b21c159-dbf4-4dbb-a6f6-490e412c716e | - 
+| DisplayText | Trigger working time policies and read the working time status | - 
+| Description | Allows the app to trigger the working time policies and read the working time status for other users in your organization, without a signed-in user. | - 
+| AdminConsentRequired | Yes | - 
 
 ---
 
@@ -5949,6 +6048,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### TeamsUserConfiguration.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a91eadaf-2c3c-4362-908b-fb172d208fc6 | 5c469ce4-dab5-4afd-b9de-14f1ba4004a7 
+| DisplayText | Read Teams user configurations | Read Teams user configurations 
+| Description | Allows the app to read your tenant's user configurations, without a signed-in user. User configuration may include attributes related to user, such as telephone number, assigned policies, etc. | Allows the app to read your tenant's user configurations on behalf of the signed-in admin user. User configuration may include attributes related to user, such as telephone number, assigned policies, etc. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
 ### TeamTemplates.Read
 
 | Category | Application | Delegated |
@@ -6705,12 +6815,14 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | OnlineMeetingRecording.Read.Chat | d20f0153-08ff-48a9-b299-96a8d1131d1d | Read the recordings of the meetings associated with this chat  | Allows the app to read recordings of the meetings associated with this chat, without a signed-in user. 
 | OnlineMeetingTranscript.Read.Chat | 8c477e19-f0f7-45f9-ae72-604f77a599e3 | Read the transcripts of the meetings associated with this chat | Allows the app to read transcripts of the meetings associated with this chat, without a signed-in user.  
 | Owner.Read.Group | 70d5316c-9b27-4057-a650-3b0fe49002ab | Read this group's owners | Allows the app to read the basic profile of this group's owners, without a signed-in user. 
+| Team.Read.Group | 41027e3b-d156-4913-bb0d-06cbbe931eb7 | Read this team's metadata | Allows the app to read this team's metadata, without a signed-in user. 
 | TeamMember.Read.Group | b8731755-de22-4604-be08-93e1e5c2d2d6 | Read this team's members | Allows the app to read the members of this team, without a signed-in user. 
 | TeamsActivity.Send.Chat | 119b5846-be45-44cd-87d7-bfc566330e11 | Send activity feed notifications to users in this chat | Allows the app to create new notifications in the teamwork activity feeds of the users in this chat, without a signed-in user. 
 | TeamsActivity.Send.Group | d4539c25-0937-4095-b844-b97228dd8655 | Send activity feed notifications to users in this team | Allows the app to create new notifications in the teamwork activity feeds of the users in this team, without a signed-in user. 
 | TeamsActivity.Send.User | 483c432d-7210-44e7-a362-954c0c5e4108 | Send activity feed notifications to this user | Allows the app to create new notifications in the teamwork activity feed of this user, without a signed-in user. 
 | TeamsAppInstallation.Read.Chat | b60343cd-f77a-4c4f-8036-41938b1abd8b | Read which apps are installed in this chat | Allows the app to read the Teams apps that are installed in this chat along with the permissions granted to each app, without a signed-in user.  
 | TeamsAppInstallation.Read.Group | ba4beb29-863b-4f02-8969-37a289cd91c0 | Read which apps are installed in this team | Allows the app to read the Teams apps that are installed in this team, without a signed-in user.  
+| TeamSettings.Edit.Group | 33f7a028-d012-4bd9-b40f-3c970d089bc8 | Edit this team's settings | Allows the app to edit this team's settings, without a signed-in user. 
 | TeamSettings.Read.Group | 87909ea6-7b07-42cf-b3a0-b8bd8e7072a8 | Read this team's settings | Allows the app to read this team's settings, without a signed-in user. 
 | TeamSettings.ReadWrite.Group | 13451d84-ced2-4d45-9b0d-98688b90e5bf | Read and write this team's settings | Allows the app to read and write this team's settings, without a signed-in user. 
 | TeamsTab.Create.Chat | 0029d2bb-fc98-4712-9310-69dd5fcc94d5 | Create tabs in this chat | Allows the app to create tabs in this chat, without a signed-in user. 

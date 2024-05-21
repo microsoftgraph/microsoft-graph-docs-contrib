@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -12,20 +15,18 @@ import (
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
-
 
 requestToken := "latest"
 
-requestParameters := &graphsites.SiteItemListItemItemItemRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SiteItemListItemItemsDelta()RequestBuilderGetQueryParameters{
 	Token: &requestToken,
 }
-configuration := &graphsites.SiteItemListItemItemItemRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SiteItemListItemItemsDelta()RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-items, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByListItemId("listItem-id").Get(context.Background(), configuration)
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+delta, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().Delta().GetAsDeltaGetResponse(context.Background(), configuration)
 
 
 ```

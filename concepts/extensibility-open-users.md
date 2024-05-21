@@ -4,7 +4,7 @@ description: "Learn how to add an open extension to a user's profile, query it, 
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dkershaw
-ms.prod: "extensions"
+ms.subservice: extensions
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.topic: tutorial

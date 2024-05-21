@@ -102,7 +102,7 @@ const baseSitePage = {
   }
 };
 
-await client.api('/sites/{site-id}/pages')
+await client.api('/sites/a69edae4-9208-4f60-9aa3-cd0911ff0ce1/pages')
 	.version('beta')
 	.post(baseSitePage);
 

@@ -20,8 +20,8 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceCategory](../api/intune-devices-devicecategory-get.md)|[deviceCategory](../resources/intune-devices-devicecategory.md)|Read properties and relationships of the [deviceCategory](../resources/intune-devices-devicecategory.md) object.|
-|[Update deviceCategory](../api/intune-devices-devicecategory-update.md)|[deviceCategory](../resources/intune-devices-devicecategory.md)|Update the properties of a [deviceCategory](../resources/intune-devices-devicecategory.md) object.|
+|[Get deviceCategory](../api/intune-devices-devicecategory-get.md)|[deviceCategory](../resources/intune-shared-devicecategory.md)|Read properties and relationships of the [deviceCategory](../resources/intune-shared-devicecategory.md) object.|
+|[Update deviceCategory](../api/intune-devices-devicecategory-update.md)|[deviceCategory](../resources/intune-shared-devicecategory.md)|Update the properties of a [deviceCategory](../resources/intune-shared-devicecategory.md) object.|
 
 ## Properties
 |Property|Type|Description|

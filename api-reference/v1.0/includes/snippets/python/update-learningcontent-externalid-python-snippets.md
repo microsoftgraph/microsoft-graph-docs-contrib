@@ -19,6 +19,7 @@ request_body = LearningContent(
 	number_of_pages = 9,
 	duration = "PT20M",
 	format = "Book",
+	level = Level.Beginner,
 	created_date_time = "2018-01-01T00:00:00",
 	last_modified_date_time = "2021-04-01T04:26:06.1995367Z",
 	contributors = [

@@ -15,13 +15,10 @@ Get a collection of [webPart](../resources/webpart.md) by providing [webPartPosi
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
+<!-- { "blockType": "permissions", "name": "sitepage_getwebpartsbyposition" } -->
+[!INCLUDE [permissions-table](../includes/permissions/sitepage-getwebpartsbyposition-permissions.md)]
 
 ## HTTP request
 
@@ -70,15 +67,22 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_webparts_by_position"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/getWebPartsByPosition?isInVerticalSection=true
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-webparts-by-position-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

@@ -3,7 +3,7 @@ title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on the Microsoft Graph changes."
 ms.localizationpriority: high
 author: "keylimesoda"
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 doc_type: apiPageType
 ---
 

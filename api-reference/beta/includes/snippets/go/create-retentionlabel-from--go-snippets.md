@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-sdk-go/models/security"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelssecurity.NewRetentionLabel()
 displayName := "Retention Schedule 10005"
@@ -67,6 +67,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 retentionLabels, err := graphClient.Security().Labels().RetentionLabels().Post(context.Background(), requestBody, nil)
 
 

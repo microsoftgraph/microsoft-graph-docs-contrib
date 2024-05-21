@@ -4,7 +4,7 @@ description: "Represents the resource data attached to the change notification s
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
-ms.prod: "change-notifications"
+ms.subservice: change-notifications
 ---
 
 # resourceData resource type

@@ -83,7 +83,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 
 ## JSON representation
 
@@ -92,7 +92,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventSession",
-  "baseType": "microsoft.graph.onlineMeeting",
+  "baseType": "microsoft.graph.onlineMeetingBase",
   "openType": false
 }
 -->
@@ -105,7 +105,6 @@ The following JSON representation shows the resource type.
   "allowParticipantsToChangeName": "Boolean",
   "allowTeamworkReactions": "Boolean",
   "allowedPresenters": "String",
-  "alternativeRecording": "Stream",
   "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},

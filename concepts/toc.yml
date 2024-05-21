@@ -546,6 +546,8 @@ items:
         href: download-resources-from-assignment.md
       - name: Share assignments with an embedded Teams application
         href: embed-teams-app-in-assignment.md
+      - name: Work with grading categories
+        href: work-with-grading-categories.md  
   - name: External data connections
     items:
     - name: Connectors overview
@@ -606,8 +608,8 @@ items:
   - name: Identity and access
     items:
     - name: Overview
-      href: azuread-identity-access-management-concept-overview.md
-      displayName: Azure AD, Microsoft identity platform, identity, access
+      href: identity-network-access-overview.md
+      displayName: Microsoft Entra, Azure AD, Microsoft identity platform
     - name: Directory management
       items:
       - name: "Manage custom security attribute assignments"
@@ -940,7 +942,9 @@ items:
         href: teams-create-group-and-team.md
       - name: List all teams
         href: teams-list-all-teams.md
-    - name: Embed Teams in your app
+    - name: Embed Teams meeting and calling in your app
+      href: /microsoftteams/platform/get-started/b2c-apps?context=graph/context
+    - name: Embed Teams chat in your app
       href: teams-embed-within-own-app.md
     - name: Payment models and licensing requirements
       href: teams-licenses.md
@@ -1181,8 +1185,6 @@ items:
       href: migrate-exchange-web-services-authentication.md
     - name: API mapping
       href: migrate-exchange-web-services-api-mapping.md
-  - name: Outlook REST APIs
-    href: /outlook/rest/compare-graph?context=graph/context
 - name: API v1.0 reference
   href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
   displayName: Microsoft Graph REST API v1.0 reference
