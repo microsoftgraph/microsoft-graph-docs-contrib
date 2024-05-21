@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.security.attack_simulation.landing_pages.landing_pages_request_builder import LandingPagesRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.attack_simulation.landing_pages.landing_pages_request_builder import LandingPagesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = LandingPagesRequestBuilder.LandingPagesRequestBuilderGetQueryPara
 		filter = "source eq 'tenant'",
 )
 
-request_configuration = LandingPagesRequestBuilder.LandingPagesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

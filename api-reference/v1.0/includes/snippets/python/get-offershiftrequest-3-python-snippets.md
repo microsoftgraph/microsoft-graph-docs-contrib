@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.teams.item.schedule.offer_shift_requests.offer_shift_requests_request_builder import OfferShiftRequestsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.offer_shift_request import OfferShiftRequest
 
 graph_client = GraphServiceClient(credentials, scopes)
@@ -16,7 +17,7 @@ request_body = OfferShiftRequest(
 	recipient_user_id = "fe278b61-21ac-4872-8b41-1962bbb98e3c",
 )
 
-request_configuration = OfferShiftRequestsRequestBuilder.OfferShiftRequestsRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Authorization", "Bearer {token}")
 
 

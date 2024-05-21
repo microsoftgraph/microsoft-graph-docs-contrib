@@ -18,7 +18,7 @@ import (
 requestBody := graphmodels.NewUser()
 customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
 additionalData := map[string]interface{}{
-engineering := graphmodels.New()
+engineering := graph.New()
 odataType := "#Collection(String)"
 engineering.SetOdataType(&odataType) 
 	project := []string {

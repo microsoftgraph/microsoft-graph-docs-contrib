@@ -5,10 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Planner\Tasks\Item\AssignedToTaskBoardFormat\AssignedToTaskBoardFormatRequestBuilderPatchRequestConfiguration;
-use Microsoft\Graph\Generated\Models\PlannerAssignedToTaskBoardTaskFormat;
-use Microsoft\Graph\Generated\Models\PlannerOrderHintsByAssignee;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Planner\Tasks\Item\AssignedToTaskBoardFormat\AssignedToTaskBoardFormatRequestBuilderPatchRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\PlannerAssignedToTaskBoardTaskFormat;
+use Microsoft\Graph\Beta\Generated\Models\PlannerOrderHintsByAssignee;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
