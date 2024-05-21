@@ -98,7 +98,7 @@
           "ChangedApiName": "group",
           "ChangeType": "Addition",
           "Description": "Added the Microsoft Graph Bicep resource for deploying the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource type using Bicep templates for Microsoft Graph resources in infrastructure-as-code (IaC) scenarios. For more information, see [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep).",
-          "Target": "application"
+          "Target": "group"
         }
       ],
       "Id": "342387cd-2f3a-4d5f-8cc8-2d3350000a54",
