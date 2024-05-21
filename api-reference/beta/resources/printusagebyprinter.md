@@ -36,7 +36,7 @@ Describes print activity for a printer during a specified time period (usageDate
 |incompleteJobCount|Int64|The number of print jobs that were queued for the printer, but not completed.|
 |mediaSheetCount|Int64|The estimated number of media sheets printed based on reporting by the printer.|
 |pageCount|Int64|The estimated number of pages printed based on reporting by the printer.|
-|printerID|String|The ID of the printer represented by these statistics.|
+|printerId|String|The ID of the printer represented by these statistics.|
 |printerName|String|The name of the printer represented by these statistics.|
 |singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed based on reporting by the printer.|
 |usageDate|Date|The date associated with these statistics.|

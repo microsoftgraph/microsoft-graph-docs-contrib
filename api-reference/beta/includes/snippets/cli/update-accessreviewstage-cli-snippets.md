@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta identity-governance access-reviews definitions instances stages patch --access-review-schedule-definition-id {accessReviewScheduleDefinition-id} --access-review-instance-id {accessReviewInstance-id} --access-review-stage-id {accessReviewStage-id} --body '{\
   "@odata.type": "#microsoft.graph.accessReviewStage",\
   "reviewers": [\

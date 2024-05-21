@@ -42,8 +42,7 @@ Represents a tenant's secure score per control data. By default, this resource r
 |remediation|String|Description of what the control will help remediate.|
 |remediationImpact|String|Description of the impact on users of the remediation.|
 |service|String|Service that owns the control (Exchange, Sharepoint, Microsoft Entra ID).|
-|threats|String collection|List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
-elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).|
+|threats|String collection|List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, spoofing).|
 |tier|String|Control tier (Core, Defense in Depth, Advanced.)	|
 |title|String|Title of the control.|
 |userImpact|String|User impact of implementing control (low, moderate, high).	|

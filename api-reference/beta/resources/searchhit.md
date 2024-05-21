@@ -83,6 +83,18 @@ The following is a JSON representation of the resource.
   "description": "searchHit resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+	"Error: /resources/searchhit.md:
+      Property '_id' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table.",
+	"Error: /resources/searchhit.md:
+      Property '_score' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table.",
+	"Error: /resources/searchhit.md:
+      Property '_sortField' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table.",
+	"Error: /resources/searchhit.md:
+      Property '_summary' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table.",
+	"Error: /resources/searchhit.md:
+      Property '_source' found in resource definition for 'microsoft.graph.searchHit', but not described in markdown table."
+  ]
 }-->
 
