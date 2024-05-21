@@ -53,7 +53,7 @@ The following table lists the properties that are required when you create the [
 |tenantId|String|Identifier of the tenant the user belongs to. Optional. Currently, roster members can't be from different tenants.|
 |userId|String|Identifier of the user.|
 
-## Response
+## Response 
 
 If successful, this method returns a `201 Created` response code and a [plannerRosterMember](../resources/plannerrostermember.md) object in the response body.
 
