@@ -199,7 +199,31 @@
     {
       "ChangeList": [
         {
-          "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+          "ApiChange": "Member",
+          "ChangedApiName": "archiveChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the `archiveChannel` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+          "ApiChange": "Member",
+          "ChangedApiName": "unarchiveChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the `unarchiveChannel` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+          "ApiChange": "Property",
+          "ChangedApiName": "isArchived",
+          "ChangeType": "Addition",
+          "Description": "Added the **isArchived** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
           "ApiChange": "Method",
           "ChangedApiName": "archive",
           "ChangeType": "Addition",
@@ -207,36 +231,20 @@
           "Target": "channel"
         },
         {
-          "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
+          "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
           "ApiChange": "Method",
           "ChangedApiName": "unarchive",
           "ChangeType": "Addition",
           "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/channel-unarchive?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
-        },
-        {
-          "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
-          "ApiChange": "Resource",
-          "ChangedApiName": "teamsAsyncOperation",
-          "ChangeType": "Addition",
-          "Description": "Introduced new enum member `archiveChannel` to **teamsAsyncOperationType**.",
-          "Target": "teamsAsyncOperation"
-        },
-        {
-          "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
-          "ApiChange": "Resource",
-          "ChangedApiName": "teamsAsyncOperation",
-          "ChangeType": "Addition",
-          "Description": "Introduced new enum member `unarchiveChannel` to **teamsAsyncOperationType**.",
-          "Target": "teamsAsyncOperation"
         }
       ],
-      "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
-      "Cloud": "prd",
+      "Id": "c6c1e230-f8e8-4b98-850f-c6f627f7ad88",
+      "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2024-05-21T00:00:00",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
+      "CreatedDateTime": "2024-05-21T07:37:30.2398104Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
     },
     {
       "ChangeList": [
