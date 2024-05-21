@@ -14082,7 +14082,7 @@ items:
                     href: api/trustframework-put-trustframeworkpolicy.md
                   - name: Delete
                     href: api/trustframeworkpolicy-delete.md
-              - name: User flows for Microsoft Entra ID and Azure AD B2C
+              - name: User flows in workforce tenants and Azure AD B2C
                 items:
                   - name: User flow (deprecated)
                     items:
@@ -14134,7 +14134,7 @@ items:
                         href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
                       - name: Configure an API connector
                         href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
-                  - name: Self-service sign up user flows for Microsoft Entra ID
+                  - name: Self-service sign up user flows in workforce tenants
                     items:
                       - name: Self-service sign up user flow
                         href: resources/b2xidentityuserflow.md
@@ -14228,7 +14228,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Delete
                         href: api/identityapiconnector-delete.md
-              - name: User flows for Microsoft Entra External ID in external tenants (preview)
+              - name: User flows in external tenants
                 items:
                   - name: Authentication events flow
                     href: resources/authenticationeventsflow.md

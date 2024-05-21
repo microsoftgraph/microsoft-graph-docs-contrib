@@ -6988,7 +6988,7 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
               - name: User flows
                 items:
-                  - name: User flows in workforce tenant
+                  - name: User flows in workforce tenants
                     items: 
                       - name: Self-service sign up user flow
                         items:
@@ -7076,7 +7076,7 @@ items:
                             href: api/identityapiconnector-uploadclientcertificate.md
                           - name: Delete
                             href: api/identityapiconnector-delete.md
-                  - name: User flows in external tenant
+                  - name: User flows in external tenants
                     items:
                       - name: Authentication events flow
                         href: resources/authenticationeventsflow.md
