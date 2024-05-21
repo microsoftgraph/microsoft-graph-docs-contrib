@@ -18,5 +18,5 @@ Represents the structure of active and deleted [fileStorageContainer](../resourc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|containers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of active fileStorageContainers|
-|deletedContainers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of deleted fileStorageContainers|
+|containers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of active **fileStorageContainer** resources.|
+|deletedContainers|[fileStorageContainer](../resources/filestoragecontainer.md) collection|The collection of deleted **fileStorageContainer** resources.|
