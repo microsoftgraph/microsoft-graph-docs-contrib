@@ -100,9 +100,9 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
   "truncated": true
 }
 -->
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
-```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.huntingQueryResults",
     "schema": [
@@ -133,7 +133,6 @@ Content-type: application/json
     ]
 }
 ```
-
 ### Example 2: Query with optional the timespan parameter specified
 
 #### Request
@@ -163,11 +162,11 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
   "truncated": true
 }
 -->
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
-```json
 {
-    "@odata.context": "https://graph.microsoft.com//$metadata#microsoft.graph.security.huntingQueryResults",
+    "@odata.context": "https://graph.microsoft.com/$metadata#microsoft.graph.security.huntingQueryResults",
     "schema": [
         {
             "name": "Timestamp",

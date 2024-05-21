@@ -100,9 +100,9 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
   "truncated": true
 }
 -->
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
-```json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
     "schema": [
@@ -133,7 +133,6 @@ Content-type: application/json
     ]
 }
 ```
-
 ### Example 2: Query with optional the timespan parameter specified
 
 #### Request
@@ -141,17 +140,6 @@ Content-type: application/json
 This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back.
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "security_runhuntingquery"
-}
--->
-```http
-POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
-
-{
-    "Query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
-}
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery_timespan"
@@ -174,9 +162,9 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
   "truncated": true
 }
 -->
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
-```json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
     "schema": [
