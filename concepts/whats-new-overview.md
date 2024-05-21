@@ -30,6 +30,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 The [custom claims policy](/graph/api/resources/customclaimspolicy) API allows application admins to customize the additional claims emitted in tokens affected by this policy. This API enables admins to manage the claims for their application from the Microsoft Entra portal and by using the Microsoft Graph API interchangeably, allowing more flexibility in their application claims management experience.
 
+### Microsoft Graph Bicep templates
+
+Use the new [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep) to deploy Microsoft Graph resources for your infrastructure as code (IaC) projects. The following Microsoft Graph resources are currently supported as Bicep resource types:
+
+- application
+- appRoleAssignedTo
+- group
+- federatedIdentityCredential
+- oauth2PermissionGrant
+- servicePrincipal
+
+Microsoft Graph Bicep is currently in preview, but can be used to deploy Microsoft Graph resources that are in `v1.0` and `beta`.
 
 ### Search
 
