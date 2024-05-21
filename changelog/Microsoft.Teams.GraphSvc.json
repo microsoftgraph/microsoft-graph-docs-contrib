@@ -199,6 +199,48 @@
     {
       "ChangeList": [
         {
+          "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Method",
+          "ChangedApiName": "archive",
+          "ChangeType": "Addition",
+          "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/channel-archive?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Method",
+          "ChangedApiName": "unarchive",
+          "ChangeType": "Addition",
+          "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/channel-unarchive?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAsyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Introduced new enum member `archiveChannel` to **teamsAsyncOperationType**.",
+          "Target": "teamsAsyncOperation"
+        },
+        {
+          "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAsyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Introduced new enum member `unarchiveChannel` to **teamsAsyncOperationType**.",
+          "Target": "teamsAsyncOperation"
+        }
+      ],
+      "Id": "698dd2i8-3b10-4cd3-u890-351a2d9fd678",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-05-21T00:00:00",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3C049C53-1494-48C0-B57E-E7AE625B7061",
           "ApiChange": "Permission",
           "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat",
