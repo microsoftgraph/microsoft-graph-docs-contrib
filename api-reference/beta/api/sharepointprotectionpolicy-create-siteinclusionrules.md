@@ -29,10 +29,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
-
+|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
@@ -43,10 +42,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 POST /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

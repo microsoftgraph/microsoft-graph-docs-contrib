@@ -1,6 +1,6 @@
 ---
 title: "Delete restoreSessionBase"
-description: "Delete a Restore Session Base."
+description: "Delete a Restore Session Base"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -28,9 +28,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Application|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
 
 ## HTTP request
 

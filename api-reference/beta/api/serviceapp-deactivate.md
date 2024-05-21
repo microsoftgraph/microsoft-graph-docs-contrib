@@ -27,9 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!--[!INCLUDE [permissions-table](../includes/permissions/serviceapp-deactivate-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Control.Read.All|BackupRestore-Control.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|BackupRestore-Control.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Control.Read.All|BackupRestore-Control.ReadWrite.All|
+|Application|BackupRestore-Control.ReadWrite.All|BackupRestore-Control.ReadWrite.All|
 
 ## HTTP request
 

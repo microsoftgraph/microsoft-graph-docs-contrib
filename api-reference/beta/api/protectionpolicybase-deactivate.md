@@ -1,13 +1,13 @@
 ---
-title: "Deactivate protectionPolicy"
-description: "Deactivate a ProtectionPolicy."
+title: "protectionPolicyBase: deactivate"
+description: "Deactivate a ProtectionPolicy"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Deactivate protectionPolicy"
+# protectionPolicyBase: deactivate
 
 Namespace: microsoft.graph
 
@@ -27,9 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!--[!INCLUDE [permissions-table](../includes/permissions/protectionpolicybase-deactivate-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 
