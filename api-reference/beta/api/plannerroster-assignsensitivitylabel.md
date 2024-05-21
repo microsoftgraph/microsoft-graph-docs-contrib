@@ -28,7 +28,6 @@ POST /planner/rosters/{rosterId}/assignSensitivityLabel
 ```
 ## Request headers
 
-| Name       | Type | Description |
 |:---------------|:--------|:--------|
 | If-Match | string | The etag for the roster being edited. Required.  |
 
