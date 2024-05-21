@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The entry point for [Microsoft Bookings](booking-api-overview.md), [virtual event webinar](virtualeventwebinar.md), and [business scenario](businessscenario-overview.md) APIs.
+The entry point for [Microsoft Bookings](booking-api-overview.md), [virtual event](virtualevent.md), and [business scenario](businessscenario-overview.md) APIs.
 
 All Microsoft Graph calls to resources under `/solutions` use the following service root URL:
 
@@ -46,7 +46,14 @@ To access virtual event webinars, use the following syntax:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-https://graph.microsoft.com/{version}/virtualEvents/webinars
+https://graph.microsoft.com/{version}/solutions/virtualEvents/webinars
+```
+
+To access virtual event town halls, use the following syntax:
+
+<!-- { "blockType": "ignored" } -->
+```http
+https://graph.microsoft.com/{version}/solutions/virtualEvents/townhalls
 ```
 
 ## Methods
