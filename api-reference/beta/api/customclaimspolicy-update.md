@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/customclaimspolicy-update-permissions.md)]
 
-[!INCLUDE [rbac-customclaimspolicy-apis-update](../includes/rbac-for-apis/rbac-customclaimspolicy-apis-update.md)]
+[!INCLUDE [rbac-customclaimspolicy-apis-write](../includes/rbac-for-apis/rbac-customclaimspolicy-apis-write.md)]
 
 ## HTTP request
 
