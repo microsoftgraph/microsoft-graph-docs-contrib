@@ -51,15 +51,16 @@ The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id", 
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.plannerRoster",
   "baseType": "microsoft.graph.entity",
-  "openType": false 
+  "openType": false
 }
 -->
-``` json 
+``` json
 {
   "@odata.type": "#microsoft.graph.plannerRoster",
+  "assignedSensitivityLabel": "String",
   "id": "String (identifier)"
 }
 ```
