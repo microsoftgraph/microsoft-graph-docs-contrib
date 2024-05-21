@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta solutions virtual-events townhalls create --body '{\
     "displayName": "The Impact of Tech on Our Lives",\
     "description": "Discusses how technology has changed the way we communicate.",\

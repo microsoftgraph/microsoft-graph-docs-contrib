@@ -936,10 +936,12 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: Restore deleted service principal
                 href: api/directory-deleteditems-restore.md
-              - name: List createdObjects
+              - name: List created objects
                 href: api/serviceprincipal-list-createdobjects.md
-              - name: List ownedObjects
+              - name: List owned objects
                 href: api/serviceprincipal-list-ownedobjects.md
+              - name: Create or replace custom claims policy
+                href: api/serviceprincipal-put-customclaimspolicy.md
               - name: Get delta
                 href: api/serviceprincipal-delta.md
               - name: Get delta for directory object
@@ -11263,20 +11265,46 @@ items:
           - name: File storage containers
             href: resources/filestoragecontainer.md
             items:
-              - name: List file storage containers
+              - name: List
                 href: api/filestorage-list-containers.md
-              - name: Create file storage container
+              - name: Create
                 href: api/filestoragecontainer-post.md
-              - name: Get file storage container
+              - name: Get
                 href: api/filestoragecontainer-get.md
               - name: Get drive
                 href: api/filestoragecontainer-get-drive.md
-              - name: Update file storage containers
+              - name: Update
                 href: api/filestoragecontainer-update.md
-              - name: Delete file storage container
+              - name: Delete
                 href: api/filestorage-delete-containers.md
-              - name: Activate file storage container
+              - name: List deleted
+                href: api/filestorage-list-deletedcontainers.md
+              - name: Get deleted
+                href: api/filestorage-get-deletedcontainers.md
+              - name: Permanently delete 
+                href: api/filestoragecontainer-permanentdelete.md
+              - name: Remove deleted 
+                href: api/filestorage-delete-deletedcontainer.md
+              - name: Restore deleted 
+                href: api/filestoragecontainer-restore.md
+              - name: Activate 
                 href: api/filestoragecontainer-activate.md
+              - name: Delete recycle bin items
+                href: api/filestoragecontainer-delete-recyclebini-tems.md
+              - name: Get recycle bin items
+                href: api/filestoragecontainer-list-recyclebin-items.md
+              - name: Restore recycle bin items
+                href: api/filestoragecontainer-restore-recyclebin-items.md
+              - name: List columns
+                href: api/filestoragecontainer-list-columns.md
+              - name: Add column
+                href: api/filestoragecontainer-post-columns.md
+              - name: Update column
+                href: api/filestoragecontainer-update-column.md
+              - name: Get column
+                href: api/filestoragecontainer-get-column.md
+              - name: Delete file storage container column
+                href: api/filestoragecontainer-delete-column.md
               - name: List permissions
                 href: api/filestoragecontainer-list-permissions.md
               - name: Add permissions
@@ -12660,6 +12688,18 @@ items:
                         href: api/identitygovernance-lifecyclemanagementsettings-get.md
                       - name: Update
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
+                  - name: Insights
+                    items:
+                      - name: Insights
+                        href: resources/identitygovernance-insights.md
+                      - name: Get top workflows summary
+                        href: api/identitygovernance-insights-topworkflowsprocessedsummary.md
+                      - name: Get top tasks summary
+                        href: api/identitygovernance-insights-toptasksprocessedsummary.md
+                      - name: Get workflows processed summary
+                        href: api/identitygovernance-insights-workflowsprocessedsummary.md
+                      - name: Get workflows processed by category
+                        href: api/identitygovernance-insights-workflowsprocessedbycategory.md         
               - name: Privileged Identity Management iteration 3
                 items:
                   - name: PIM for Microsoft Entra roles
@@ -13868,6 +13908,15 @@ items:
                         href: api/claimsmappingpolicy-delete.md
                       - name: List applied to applications
                         href: api/claimsmappingpolicy-list-appliesto.md
+                  - name: Custom claims policy (preview)
+                    href: resources/customclaimspolicy.md
+                    items:
+                      - name: Get
+                        href: api/customclaimspolicy-get.md
+                      - name: Create or replace
+                        href: api/serviceprincipal-put-customclaimspolicy.md
+                      - name: Update
+                        href: api/customclaimspolicy-update.md
                   - name: Continuous access evaluation policy
                     href: resources/continuousaccessevaluationpolicy.md
                     items:
@@ -14225,7 +14274,7 @@ items:
                         href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
                       - name: Remove attributes from a user flow
                         href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
-                  - name: Authentication condition applications
+                  - name: Linked applications
                     href: resources/authenticationconditionapplication.md
                     items:
                       - name: List applications
@@ -17062,6 +17111,10 @@ items:
                     href: api/security-ediscoverycase-delete-searches.md
                   - name: Estimate statistics
                     href: api/security-ediscoverysearch-estimatestatistics.md
+                  - name: Export report
+                    href: api/security-ediscoverysearch-exportreport.md
+                  - name: Export result
+                    href: api/security-ediscoverysearch-exportresult.md
                   - name: Purge data
                     href: api/security-ediscoverysearch-purgedata.md
                   - name: List custodian sources
@@ -18498,7 +18551,7 @@ items:
                             href: api/externalmeetingregistrant-post.md
                           - name: Delete
                             href: api/externalmeetingregistrant-delete.md
-                  - name: Meeting registration (preview)
+                  - name: Meeting registration (deprecated)
                     href: resources/meetingregistration.md
                     items:
                       - name: Create
@@ -18509,7 +18562,7 @@ items:
                         href: api/meetingregistration-update.md
                       - name: Delete
                         href: api/meetingregistration-delete.md
-                      - name: Meeting registrant
+                      - name: Meeting registrant (deprecated)
                         href: resources/meetingregistrant.md
                         items:
                           - name: List
@@ -18568,7 +18621,7 @@ items:
                     href: api/presence-setstatusmessage.md
               - name: Virtual event
                 items:              
-                  - name: Presenter
+                  - name: Presenter (preview)
                     href: resources/virtualeventpresenter.md
                     items:
                       - name: List
@@ -18577,6 +18630,8 @@ items:
                         href: api/virtualevent-post-presenters.md
                       - name: Get
                         href: api/virtualeventpresenter-get.md
+                      - name: Update
+                        href: api/virtualeventpresenter-update.md
                       - name: Delete
                         href: api/virtualeventpresenter-delete.md
                   - name: Session
@@ -18586,7 +18641,7 @@ items:
                         href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
-                  - name: Town hall
+                  - name: Town hall (preview)
                     href: resources/virtualeventtownhall.md
                     items:
                       - name: Create
