@@ -103,6 +103,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
     "schema": [
@@ -165,6 +166,7 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
     "schema": [
