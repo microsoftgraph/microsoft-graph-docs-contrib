@@ -7,7 +7,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List deleted fileStoageContainers
+# List deletedContainers
 
 Namespace: microsoft.graph
 
