@@ -32,31 +32,31 @@ Inherits from [entity](../resources/entity.md).
 |[Update](../api/authenticationeventsflow-update.md)|None|Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. Only objects of the [externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) subtype are available.|
 |[Delete](../api/authenticationeventsflow-delete.md)|None|Delete an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. Only objects of the [externalUserSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) subtype are supported. |
 |**Identity providers in a user flow**|||
-|[List](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Get the identity providers that are defined for an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object type.|
-|[Add](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md)|None|Add an identity provider to an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object type. The identity provider must first be configured in the tenant.|
-|[Remove](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md)|None|Remove an identity provider from an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object type.|
+|[List](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Get the identity providers that are defined for an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object type.|
+|[Add](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md)|None|Add an identity provider to an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object type. The identity provider must first be configured in the tenant.|
+|[Remove](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md)|None|Remove an identity provider from an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object type.|
 |**User flow attributes**|||
 |[List](../api/identityuserflowattribute-list.md)|identityUserFlowAttributes collection|Retrieve all built-in and custom user flow attributes.|
 |[Create](../api/identityuserflowattribute-post.md)|identityUserFlowAttribute|Create a new custom user flow attribute.|
 |[Get](../api/identityuserflowattribute-get.md) |identityUserFlowAttribute|Retrieve properties of a user flow attribute.|
 |[Update](../api/identityuserflowattribute-update.md)|None|Update a custom user flow attribute.|
 |[Delete](../api/identityuserflowattribute-delete.md)|None|Delete a custom user flow attribute.|
-|[List attributes in a user flow](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|None|Get the collection of **identityUserFlowAttribute** objects associated with an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
-|[List attributes in a user flow](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|None|Get the collection of **identityUserFlowAttribute** objects associated with an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
-|[Add attribute to a user flow](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md)|None|Add an **identityUserFlowAttribute** object associated with an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
-|[Remove attribute from a user flow](../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md)|None|Remove an **identityUserFlowAttribute** object associated with an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
+|[List attributes in a user flow](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|None|Get the collection of **identityUserFlowAttribute** objects associated with an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
+|[List attributes in a user flow](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|None|Get the collection of **identityUserFlowAttribute** objects associated with an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
+|[Add attribute to a user flow](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md)|None|Add an **identityUserFlowAttribute** object associated with an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
+|[Remove attribute from a user flow](../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md)|None|Remove an **identityUserFlowAttribute** object associated with an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
 |**Linked applications**|||
-|[List](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List the applications linked to an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
-|[Add](../api/authenticationconditionsapplications-post-includeapplications.md)|None|Add an application to an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
-|[Remove](../api/authenticationconditionapplication-delete.md)|None|Remove an application from an external identities self-service sign up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
+|[List](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List the applications linked to an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
+|[Add](../api/authenticationconditionsapplications-post-includeapplications.md)|None|Add an application to an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
+|[Remove](../api/authenticationconditionapplication-delete.md)|None|Remove an application from an external identities self-service sign-up user flow that's represented by an **externalUsersSelfServiceSignupEventsFlow** object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the entity. Read-only. Inherited from [entity](../resources/entity.md). Auto-generated.|
+|id|String|The unique identifier for the entity. Read-only. Inherited from [entity](../resources/entity.md). Autogenerated.|
 |displayName|String|Required. The display name for the events policy.|
 |description|String|The description of the events policy.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request that will be used to decide whether the events policy will be invoked.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request that's used to decide whether the events policy is invoked.|
 |priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Defaults to 500.|
 
 ## Relationships
