@@ -81,7 +81,7 @@ The following example specifies a KQL query and:
 # [HTTP](#tab/http1)
 <!-- {
   "blockType": "request",
-  "name": "security_runhuntingquery"
+  "name": "security_runhuntingquery_example1"
 }
 -->
 ```http
@@ -134,6 +134,7 @@ Content-type: application/json
     ]
 }
 ```
+
 ### Example 2: Query with optional the timespan parameter specified
 
 #### Request
@@ -143,7 +144,7 @@ This example specifies a KQL query and looks into the [deviceProcessEvents](/mic
 # [HTTP](#tab/http2)
 <!-- {
   "blockType": "request",
-  "name": "security_runhuntingquery"
+  "name": "security_runhuntingquery_example2"
 }
 -->
 ```http

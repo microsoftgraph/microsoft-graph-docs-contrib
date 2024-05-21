@@ -1,3 +1,6 @@
+Here is the corrected version of your markdown file:
+
+```markdown
 ---
 title: "security: runHuntingQuery"
 description: "Run the hunting query API."
@@ -202,85 +205,4 @@ Content-type: application/json
         {
             "Timestamp": "2024-03-26T09:39:49.4353788Z",
             "FileName": "cmd.exe",
-            "InitiatingProcessFileName": "powershell.exe"
-        }
-    ]
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/security-runhuntingquery-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/security-runhuntingquery-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/security-runhuntingquery-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/security-runhuntingquery-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/security-runhuntingquery-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/security-runhuntingquery-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/security-runhuntingquery-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/security-runhuntingquery-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.security.huntingQueryResults",
-  "truncated": true
-}
--->
-
-``` http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "schema": [
-        {
-            "name": "Timestamp",
-            "type": "DateTime"
-        },
-        {
-            "name": "FileName",
-            "type": "String"
-        },
-        {
-            "name": "InitiatingProcessFileName",
-            "type": "String"
-        }
-    ],
-    "results": [
-        {
-            "timestamp": "2020-08-30T06:38:35.7664356Z",
-            "fileName": "conhost.exe",
-            "initiatingProcessFileName": "powershell.exe"
-        },
-        {
-            "timestamp": "2020-08-30T06:38:30.5163363Z",
-            "fileName": "conhost.exe",
-            "initiatingProcessFileName": "powershell.exe"
-        }
-    ]
-}
-```
+            "InitiatingProcessFile
