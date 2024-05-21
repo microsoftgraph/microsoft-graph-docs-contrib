@@ -44,9 +44,9 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a [plannerRoster](../resources/plannerroster.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [plannerRoster](../resources/plannerroster.md) object in the response body.
 
-This method fails in the following situations, each with a respective response code.
+This method fails in the following situations, each with a respective response code. The **code** property on the error response indicates the specific error.
 
 | Response code | Description | Code property value |
 |:------|:-----|:-----|
@@ -80,7 +80,7 @@ If-Match: "string"
 
 ### Response
 
-If successful, this API returns the updated roster.
+The following example shows the response to the updated roster.
 
 <!-- {
   "blockType": "response",
@@ -99,4 +99,3 @@ Content-Type: application/json
 }
 ```
 
-The method will fail in the following situations, resulting in an error (see [Errors] (https://learn.microsoft.com/en-us/graph/errors))
