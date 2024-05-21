@@ -1,5 +1,5 @@
 ---
-title: "Assign sensitivity label to planner roster"
+title: "plannerRoster: assignSensitivityLabel"
 description: "Assign a sensitivity label to a plannerRoster object."
 ms.localizationpriority: medium
 author: "WiRawlinWork"
