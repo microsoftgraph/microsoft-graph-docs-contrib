@@ -41,7 +41,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |Member | Description |
 |:------|:------------|
 |protectRequested | Protection of this unit has been requested to be enabled. This state arrives when policy is activated or new units are added to active policy.|
-|protected | SProtection unit is successfully enabled for protection.|
+|protected | Protection unit is successfully enabled for protection.|
 |unprotectRequested |Protection of unit has been requested to be disabled. This state arrives when policy is deactivated.|
 |unprotected | Protection unit is successfully disabled for protection.|
 |removeRequested |Already protected unit has been requested to be removed from policy. This state arrives when the user wants to explicitly remove units from the policy. |

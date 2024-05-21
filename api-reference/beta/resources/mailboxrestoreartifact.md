@@ -1,6 +1,6 @@
 ---
 title: "mailboxRestoreArtifact resource type"
-description: "Describes mailbox restore artifact and it's properties"
+description: "Describes mailbox restore artifact and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -21,13 +21,6 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List mailboxRestoreArtifact](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Get a list of the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) and their properties.|
-<!-- |[Create mailboxRestoreArtifact](../api/exchangerestoresession-post-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md)|Create a new [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) object.|
-|[Get mailboxRestoreArtifact](../api/mailboxrestoreartifact-get.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md)|Read the properties and relationships of a [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) object.|
-|[Update mailboxRestoreArtifact](../api/mailboxrestoreartifact-update.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md)|Update the properties of a [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) object.|
-|[Delete mailboxRestoreArtifact](../api/exchangerestoresession-delete-mailboxrestoreartifacts.md)|None|Delete a [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) object.|
-|[List restorePoint](../api/mailboxrestoreartifact-list-restorepoint.md)|[restorePoint](../resources/restorepoint.md) collection|Get the restorePoint resources from the restorePoint navigation property.|
-|[Add restorePoint](../api/mailboxrestoreartifact-post-restorepoint.md)|[restorePoint](../resources/restorepoint.md)|Add restorePoint by posting to the restorePoint collection.|
-|[Remove restorePoint](../api/mailboxrestoreartifact-delete-restorepoint.md)|None|Remove a [restorePoint](../resources/restorepoint.md) object.| -->
 
 ## Properties
 |Property|Type|Description|
@@ -47,9 +40,9 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 |added|Initial Status when restore artifact has been added to restore session.|
 |scheduling|Status when activate action is called on the restore session.|
 |scheduled|Status when activate action call is successfull on the restore session.|
-|inProgress|This state arrives when restore artifact is/has been picked for restoration.|
-|succeeded|The restore artifact has successfully restored.|
-|failed|This state arrives when restoration of artifact is failed.|
+|inProgress|Status when restore artifact is/has been picked for restoration.|
+|succeeded|Status when the restore artifact has successfully restored.|
+|failed|Status when restoration of artifact is failed.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
 
 ### destinationType values

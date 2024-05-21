@@ -1,6 +1,6 @@
 ---
 title: "exchangeRestoreSession resource type"
-description: "Describes exchange mailbox restore session and it's properties"
+description: "Describes exchange mailbox restore session and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -23,16 +23,11 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |[Create exchangeRestoreSession](../api/exchangerestoresession-create.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Create a new [exchangeRestoreSession](../resources/exchangerestoresession.md).|
 |[List exchangeRestoreSession](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|Get a list of the [exchangeRestoreSession](../resources/exchangerestoresession.md) and their properties.|
 |[Update exchangeRestoreSession](../api/exchangerestoresession-update.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Update the properties of an [exchangeRestoreSession](../resources/exchangerestoresession.md).|
-<!-- |[Get exchangeRestoreSession](../api/exchangerestoresession-get.md)|[exchangeRestoreSession](../resources/exchangerestoresession.md)|Read the properties and relationships of an [exchangeRestoreSession](../resources/exchangerestoresession.md) object.|
-|[Delete exchangeRestoreSession](../api/backuprestoreroot-delete-exchangerestoresessions.md)|None|Delete an [exchangeRestoreSession](../resources/exchangerestoresession.md) object.|
-|[activate](../api/exchangerestoresession-activate.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Activates a draft restore session|
-|[List mailboxRestoreArtifacts](../api/exchangerestoresession-list-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Get the mailboxRestoreArtifact resources from the mailboxRestoreArtifacts navigation property.|
-|[Create mailboxRestoreArtifact](../api/exchangerestoresession-post-mailboxrestoreartifacts.md)|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md)|Create a new mailboxRestoreArtifact object.| -->
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the restore session created|
+|id|String|The unique identifier of the restore session created.|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the restore session.|
 |createdDateTime|DateTimeOffset|The time of completion of the restore session.|

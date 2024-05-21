@@ -34,7 +34,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |createdBy|[identitySet](../resources/identityset.md) entitySet|The identity of the person who created the rule.|
 |createdDateTime|DateTimeOffset|The date and time that the rule was created.|
 |driveExpression|String|Contains drive expression.[driveExpression example](../resources/driveprotectionrule.md#driveexpression-examples)|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if any operation on rule expression fails|
+|error|[publicError](../resources/publicerror.md)|If the operation fails, contains the details of the error.|
 |isAutoApplyEnabled|Boolean|Indicates whether the protection rule is static or dynamic. Static rules run once; dynamic rules listen to all changes in the system and update the protection unit list.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification to this rule.|

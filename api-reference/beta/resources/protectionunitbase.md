@@ -1,6 +1,6 @@
 ---
 title: "protectionUnitBase resource type"
-description: "Describes protection unit and it's properties"
+description: "Describes Protection Unit and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -20,21 +20,17 @@ This is an abstract type.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get protectionUnitBase](../api/protectionunitbase-get.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.|
-<!-- |[Update protectionUnitBase](../api/protectionunitbase-update.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Update the properties of a [protectionUnitBase](../resources/protectionunitbase.md) object.| -->
-<!-- |[List protectionUnitBase objects](../api/protectionunitbase-list.md)|[protectionUnitBase](../resources/protectionunitbase.md) collection|Get a list of the [protectionUnitBase](../resources/protectionunitbase.md) objects and their properties.| -->
-<!-- |[Create protectionUnitBase](../api/protectionunitbase-create.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Create a new [protectionUnitBase](../resources/protectionunitbase.md) object.| -->
-<!-- |[Delete protectionUnitBase](../api/protectionunitbase-delete.md)|None|Delete a [protectionUnitBase](../resources/protectionunitbase.md) object.| -->
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identitifer of the protection unit|
-|policyId|String|The unique identifier of the protection policy based on which protection unit was created|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit|
-|createdDateTime|DateTimeOffset|The time of creation of the protection unit|
-|error|[publicError](../resources/publicerror.md)|Describes error occurred while creating a protection unit|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who modified|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this protection unit|
+|id|String|The unique identitifer of the protection unit.|
+|policyId|String|The unique identifier of the protection policy based on which protection unit was created.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit.|
+|createdDateTime|DateTimeOffset|The time of creation of the protection unit.|
+|error|[publicError](../resources/publicerror.md)|Describes error occurred while creating a protection unit.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who modified.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this protection unit.|
 |status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|Status of the protection unit.The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
