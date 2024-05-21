@@ -78,7 +78,7 @@ The following example specifies a KQL query and:
 - Sorts the output by the `Timestamp` value.
 - Limits the output to two records (two rows).
 
-# [HTTP](#tab/http1)
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery"
@@ -140,7 +140,7 @@ Content-type: application/json
 
 This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back.
 
-# [HTTP](#tab/http2)
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery_timespan"
