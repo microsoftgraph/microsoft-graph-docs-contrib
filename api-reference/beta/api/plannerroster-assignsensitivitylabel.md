@@ -7,7 +7,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# microsoft.graph.plannerRoster: assignSensitivityLabel
+# plannerRoster: assignSensitivityLabel
 
 Assign a sensitivity label to a plannerRoster object.
 
