@@ -32,8 +32,16 @@ The following table shows the least privileged permission that's required by eac
 | [servicePrincipal](../resources/group.md) | GroupMember.ReadWrite.All and Application.ReadWrite.All | Not supported.                         | GroupMember.ReadWrite.All and Application.ReadWrite.All |
 | [user](../resources/user.md)              | GroupMember.ReadWrite.All                               | Not supported.                         | GroupMember.ReadWrite.All                               |
 
-> [!IMPORTANT]
-> To add members to a role-assignable group, the caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission.
+In delegated scenarios, the calling user with a work or school account must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). The following roles are the least privileged roles that are supported for this operation, except for role-assignable groups:
+ 
+- Directory Writers
+- Groups Administrator
+- Identity Governance Administrator
+- User Administrator
+
+Group owners can only add members to groups that they own.
+
+To add members to a role-assignable group, the app must also be assigned the *RoleManagement.ReadWrite.Directory* permission and the calling user must be assigned a supported Microsoft Entra role. *Privileged Role Administrator* is the least privileged role that is supported for this operation.
 
 ## HTTP request
 
@@ -51,7 +59,7 @@ POST /groups/{group-id}/members/$ref
 
 ## Request body
 
-In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object to be added.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), or [group](../resources/group.md) object to be added.
 
 ## Response
 
