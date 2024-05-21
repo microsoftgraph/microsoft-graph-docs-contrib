@@ -42,6 +42,21 @@ In the request body, provide a JSON object with the following parameters.
 | assignmentMethod | [sensitivityLabelAssignmentMethod](../resources/sensitivitylabelassignment.md#sensitivitylabelassignmentmethod-values) | The method that is used to apply the sensitivity label to the roster. Possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
 | sensitivityLabelId | String | The ID of the label that is applied to the roster. |
 
+## Response
+
+If successful, this method returns `200 OK` response code and a [plannerRoster](../resources/plannerroster.md) object in the response body.
+
+This method fails in the following situations, each with a respective response code.
+
+| Response code | Description | Code property value |
+|:------|:-----|:-----|
+| `400 Bad Request`| If the label has sublabels, it can't be applied to the roster. Only labels without sublabels can be applied. The request fails.  | `SensitivityLabelHasSublabels` |
+| `403 Forbidden` | If labels are mandatory for the user and the user tries to remove the sensitivity label, the request fails. | `SensitivityLabelsAreMandatory` |
+| `403 Forbidden`  | If a previously existing label assignment was applied with `sensitivityLabelAssignmentMethod.privileged` and an app attempts to overwrite the label with `sensitivityLabelAssignmentMethod.standard`, the request fails. | `ExistingSensitivityLabelWasAppliedWithPrivilegedMethod` |
+| `404 Not Found`  | If a label can't be found or if the label isn't in scope for the user, the request fails.                                                                                                                                         | `SensitivityLabelNotFound`  |
+
+For more information about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
+
 ## Examples
 
 ### Request
@@ -84,20 +99,4 @@ Content-Type: application/json
 }
 ```
 
-### See also
-
 The method will fail in the following situations, resulting in an error (see [Errors] (https://learn.microsoft.com/en-us/graph/errors))
-
-#### 400 Bad Request
-
-If the label has sublabels, then it can't be applied to the roster. Only labels that have no sublabels can be applied. The request fails, and the **code** property on the error response is "SensitivityLabelHasSublabels".
-
-#### 403 Forbidden
-
-If labels are mandatory for the user, and the user tries to remove the sensitivity label, the request fails. The **code** property on the error response is "SensitivityLabelsAreMandatory".
-
-If a previously existing label assignment was applied with microsoft.graph.sensitivityLabelAssignmentMethod.privileged and an app attempts to overwrite the label with microsoft.graph.sensitivityLabelAssignmentMethod.standard, the request fails. The **code** property on the error response is "ExistingSensitivityLabelWasAppliedWithPrivilegedMethod".
-
-#### 404 Not Found
-
-If a label can't be found (or if the label isn't in scope for the user), the request fails, and the **code** property on the error resource type is "SensitivityLabelNotFound".
