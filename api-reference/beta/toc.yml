@@ -11261,29 +11261,29 @@ items:
           - name: File storage containers
             href: resources/filestoragecontainer.md
             items:
-              - name: List file storage containers
+              - name: List
                 href: api/filestorage-list-containers.md
-              - name: Create file storage container
+              - name: Create
                 href: api/filestoragecontainer-post.md
-              - name: Get file storage container
+              - name: Get
                 href: api/filestoragecontainer-get.md
               - name: Get drive
                 href: api/filestoragecontainer-get-drive.md
-              - name: Update file storage containers
+              - name: Update
                 href: api/filestoragecontainer-update.md
-              - name: Delete file storage container
+              - name: Delete
                 href: api/filestorage-delete-containers.md
-              - name: List deleted file storage containers
+              - name: List deleted
                 href: api/filestorage-list-deletedcontainers.md
-              - name: Get deleted file storage container
+              - name: Get deleted
                 href: api/filestorage-get-deletedcontainers.md
-              - name: Permanently delete file storage container
+              - name: Permanently delete 
                 href: api/filestoragecontainer-permanentdelete.md
-              - name: Remove deleted file storage container
+              - name: Remove deleted 
                 href: api/filestorage-delete-deletedcontainer.md
-              - name: Restore deleted file storage container
+              - name: Restore deleted 
                 href: api/filestoragecontainer-restore.md
-              - name: Activate file storage container
+              - name: Activate 
                 href: api/filestoragecontainer-activate.md
               - name: Delete recycle bin items
                 href: api/filestoragecontainer-delete-recyclebini-tems.md
