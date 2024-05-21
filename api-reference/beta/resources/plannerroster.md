@@ -32,7 +32,7 @@ Deleting a **plannerRoster** also deletes the plan and all tasks in the plan. A 
 |[Create plannerRosterMember](../api/plannerroster-post-members.md)|[plannerRosterMember](../resources/plannerrostermember.md)|Create a new plannerRosterMember object.|
 |[List plans](../api/plannerroster-list-plans.md)|[plannerPlan](../resources/plannerplan.md) collection|Get the plannerPlan resources from the plans navigation property.|
 |[List user's rosterPlans](../api/planneruser-list-rosterplans.md)|[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) that the user is a member.|
-|[Assign sensitivity label](../api/plannerroster-assignsensitivitylabel.md)|[[plannerRoster](../resources/plannerroster.md)]|Assign a sensitivity label to a [plannerRoster](../resources/plannerroster.md) object.|
+|[Assign sensitivity label](../api/plannerroster-assignsensitivitylabel.md)|[plannerRoster](../resources/plannerroster.md)]|Assign a sensitivity label to a [plannerRoster](../resources/plannerroster.md) object.|
 
 ## Properties
 |Property|Type|Description|
