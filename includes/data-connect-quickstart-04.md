@@ -22,15 +22,15 @@ In this step you will create an Azure Storage account where Microsoft Graph Data
     - **Redundancy**: Geo-redundant storage
     - **Advanced tab**:
       - **Access tier**: Hot
-
+    
     ![Screenshot of the Create a storage account page with Subscription, Resource group, Storage account name, and Region highlighted](../concepts/images/data-connect-azure-storageaccount-create.png)
     
 1. After configuring the values for the **Basics** and **Advanced** tabs, leave the rest of the settings as default.
 
-    > [!NOTE]
-    >  Ensure that within the **Networking** tab, the **Enable public access from all networks** is enabled. The second option **Enable public access from selected virtual networks and IP addresses** can be selected. However, additional steps outside of this tutorial would need to be performed. These steps are highlighted in the [IP addresses section](../concepts/data-connect-troubleshooting.md#issues-adding-network-ip-address-to-allow-list-with-azure-integration-runtime).
+> [!NOTE]
+> Ensure that within the **Networking** tab, the **Enable public access from all networks** is enabled. The second option **Enable public access from selected virtual networks and IP addresses** can be selected. However, additional steps outside of this tutorial would need to be performed. These steps are highlighted in the [IP addresses section](../concepts/data-connect-troubleshooting.md#issues-adding-network-ip-address-to-allow-list-with-azure-integration-runtime).
 
-    ![Screenshot of the Create a storage account page with Networking and Enable public access from all networks highlighted](../concepts/images/data-connect-azure-storage-network-new.png)
+![Screenshot of the Create a storage account page with Networking and Enable public access from all networks highlighted](../concepts/images/data-connect-azure-storage-network-new.png)
 
 1. Review that the settings match those shown in the previous steps and select **Create** to finalize.
 
