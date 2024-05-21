@@ -11263,20 +11263,46 @@ items:
           - name: File storage containers
             href: resources/filestoragecontainer.md
             items:
-              - name: List file storage containers
+              - name: List
                 href: api/filestorage-list-containers.md
-              - name: Create file storage container
+              - name: Create
                 href: api/filestoragecontainer-post.md
-              - name: Get file storage container
+              - name: Get
                 href: api/filestoragecontainer-get.md
               - name: Get drive
                 href: api/filestoragecontainer-get-drive.md
-              - name: Update file storage containers
+              - name: Update
                 href: api/filestoragecontainer-update.md
-              - name: Delete file storage container
+              - name: Delete
                 href: api/filestorage-delete-containers.md
-              - name: Activate file storage container
+              - name: List deleted
+                href: api/filestorage-list-deletedcontainers.md
+              - name: Get deleted
+                href: api/filestorage-get-deletedcontainers.md
+              - name: Permanently delete 
+                href: api/filestoragecontainer-permanentdelete.md
+              - name: Remove deleted 
+                href: api/filestorage-delete-deletedcontainer.md
+              - name: Restore deleted 
+                href: api/filestoragecontainer-restore.md
+              - name: Activate 
                 href: api/filestoragecontainer-activate.md
+              - name: Delete recycle bin items
+                href: api/filestoragecontainer-delete-recyclebini-tems.md
+              - name: Get recycle bin items
+                href: api/filestoragecontainer-list-recyclebin-items.md
+              - name: Restore recycle bin items
+                href: api/filestoragecontainer-restore-recyclebin-items.md
+              - name: List columns
+                href: api/filestoragecontainer-list-columns.md
+              - name: Add column
+                href: api/filestoragecontainer-post-columns.md
+              - name: Update column
+                href: api/filestoragecontainer-update-column.md
+              - name: Get column
+                href: api/filestoragecontainer-get-column.md
+              - name: Delete file storage container column
+                href: api/filestoragecontainer-delete-column.md
               - name: List permissions
                 href: api/filestoragecontainer-list-permissions.md
               - name: Add permissions
@@ -18523,7 +18549,7 @@ items:
                             href: api/externalmeetingregistrant-post.md
                           - name: Delete
                             href: api/externalmeetingregistrant-delete.md
-                  - name: Meeting registration (preview)
+                  - name: Meeting registration (deprecated)
                     href: resources/meetingregistration.md
                     items:
                       - name: Create
@@ -18534,7 +18560,7 @@ items:
                         href: api/meetingregistration-update.md
                       - name: Delete
                         href: api/meetingregistration-delete.md
-                      - name: Meeting registrant
+                      - name: Meeting registrant (deprecated)
                         href: resources/meetingregistrant.md
                         items:
                           - name: List
@@ -18593,7 +18619,7 @@ items:
                     href: api/presence-setstatusmessage.md
               - name: Virtual event
                 items:              
-                  - name: Presenter
+                  - name: Presenter (preview)
                     href: resources/virtualeventpresenter.md
                     items:
                       - name: List
@@ -18602,6 +18628,8 @@ items:
                         href: api/virtualevent-post-presenters.md
                       - name: Get
                         href: api/virtualeventpresenter-get.md
+                      - name: Update
+                        href: api/virtualeventpresenter-update.md
                       - name: Delete
                         href: api/virtualeventpresenter-delete.md
                   - name: Session
@@ -18611,7 +18639,7 @@ items:
                         href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
-                  - name: Town hall
+                  - name: Town hall (preview)
                     href: resources/virtualeventtownhall.md
                     items:
                       - name: Create
