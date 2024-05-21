@@ -154,59 +154,6 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 }
 ```
 
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.security.huntingQueryResults",
-  "truncated": true
-}
--->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
-    "schema": [
-        {
-            "name": "Timestamp",
-            "type": "DateTime"
-        },
-        {
-            "name": "FileName",
-            "type": "String"
-        },
-        {
-            "name": "InitiatingProcessFileName",
-            "type": "String"
-        }
-    ],
-    "results": [
-        {
-            "Timestamp": "2024-12-26T09:39:50.7688641Z",
-            "FileName": "cmd.exe",
-            "InitiatingProcessFileName": "powershell.exe"
-        },
-        {
-            "Timestamp": "2024-09-26T09:39:49.4353788Z",
-            "FileName": "explorer.exe",
-            "InitiatingProcessFileName": "cmd.exe"
-        },
-        {
-            "Timestamp": "2024-06-26T09:39:49.4353788Z",
-            "FileName": "notepad.exe",
-            "InitiatingProcessFileName": "explorer.exe"
-        },
-        {
-            "Timestamp": "2024-03-26T09:39:49.4353788Z",
-            "FileName": "cmd.exe",
-            "InitiatingProcessFileName": "powershell.exe"
-        }
-    ]
-}
-```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/security-runhuntingquery-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
