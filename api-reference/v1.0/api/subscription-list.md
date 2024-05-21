@@ -64,7 +64,7 @@ This API supports the following permission scopes; to learn more, including how 
 |[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)<br/>(/teams/{teamId}/schedule/swapShiftsChangeRequests) <br/>Changes to any swap shift request in a team.| Schedule.Read.All, Schedule.ReadWrite.All| Not supported | Schedule.Read.All, Schedule.ReadWrite.All |
 |[team](../resources/team.md) (/teams – all teams in an organization) | Not supported | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[team](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All, Subscription.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
-|[timeOffRequest](../resources/timeoffrequest.md)<br/>(/teams/{teamId}/schedule/timeOffRequests)<br/>Changes to any time off in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported | Schedule.Read.All, Schedule.ReadWrite.All |
+|[timeOffRequest](../resources/timeoffrequest.md)<br/>(/teams/{teamId}/schedule/timeOffRequests)<br/>Changes to any time off request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported | Schedule.Read.All, Schedule.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite, Subscription.Read.All | Tasks.ReadWrite, Subscription.Read.All | Not supported |
 |[user](../resources/user.md) | User.Read.All, Subscription.Read.All | User.Read.All | User.Read.All |
 

@@ -68,7 +68,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)<br/>(/teams/{teamId}/schedule/swapShiftsChangeRequests) <br/>Changes to any swap shift request in a team.| Schedule.Read.All, Schedule.ReadWrite.All| Not supported | Schedule.Read.All, Schedule.ReadWrite.All |
 |[team](../resources/team.md) (/teams – all teams in an organization) | Not supported | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[team](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
-|[timeOffRequest](../resources/timeoffrequest.md)<br/>(/teams/{teamId}/schedule/timeOffRequests)<br/>Changes to any time off in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported | Schedule.Read.All, Schedule.ReadWrite.All |
+|[timeOffRequest](../resources/timeoffrequest.md)<br/>(/teams/{teamId}/schedule/timeOffRequests)<br/>Changes to any time off request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported | Schedule.Read.All, Schedule.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 |[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
