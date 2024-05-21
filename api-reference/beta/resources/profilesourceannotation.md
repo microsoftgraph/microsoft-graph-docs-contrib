@@ -12,7 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the sources the user data comes from, such as Entra, UPA, Connector, and so on.
@@ -20,20 +19,23 @@ Represents the sources the user data comes from, such as Entra, UPA, Connector, 
 ## Properties
 |Property	|Type	|Description|
 |:--------|:----|:----------|
-|id|String|Unique identifier (a GUID) of the source.|
+|id|String|The unique identifier (GUID) of the source.|
 |isDefaultSource|Boolean|Indicates whether the source is the default one.|
-|properties|Collection(String)|Names of properties that have data from this source.|
+|properties|String collection|Names of properties that have data from this source.|
 
-## Id to Source mapping
-| Id                                   | Source                                    |
+### ID to source mapping
+
+The following table shows the mapping between the **id** value and the source system.
+
+| ID                                   | Source system                             |
 |:-------------------------------------|:------------------------------------------|
 | 4ce763dd-9214-4eff-af7c-da491cc3782d | Microsoft Entra ID                        |
 | 7986c642-b494-4140-8df4-f5ed125e2c67 | Organizational Data in Microsoft 365      |
 | 6cdc4422-8c05-40c5-902e-8ade707725ab | SharePoint User Profile Application (UPA) |
 | 9a3e0ce2-cf4b-477e-b3b3-df246318e251 | Microsoft account (MSA)                   |
-| 46a57efc-33f8-4eec-a512-b90039ad6187 | User Initiated Edits                      |
+| 46a57efc-33f8-4eec-a512-b90039ad6187 | User initiated edits                      |
 
-More details on how profileSourceAnnotation is populated can be found [here](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
+For more information on how to populate the **profileSourceAnnotation** resource, see [Export data from your profile card](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
 
 ## JSON representation
 
@@ -51,6 +53,6 @@ The following JSON representation shows the resource type.
 {
   "id": "String (GUID)",
   "isDefaultSource": "Boolean",
-  "properties": "Collection(String)"
+  "properties": ["String"]
 }
 ```
