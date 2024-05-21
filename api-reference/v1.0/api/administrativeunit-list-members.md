@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-> Note: To list the members of a hidden membership in an administrative unit, the *Member.Read.Hidden* permission is also required.
+> **Note:** To list the members of a hidden membership in an administrative unit, the *Member.Read.Hidden* permission is also required.
 
 ## HTTP request
 
