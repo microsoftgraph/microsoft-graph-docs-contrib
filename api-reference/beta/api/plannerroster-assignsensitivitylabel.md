@@ -8,7 +8,7 @@ doc_type: apiPageType
 ---
 
 # plannerRoster: assignSensitivityLabel
-
+Namespace: microsoft.graph
 Assign a sensitivity label to a [plannerRoster](../resources/plannerroster.md) object.
 
 ## Permissions
