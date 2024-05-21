@@ -39,8 +39,8 @@ POST /planner/rosters/{rosterId}/assignSensitivityLabel
 In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-| sensitivityLabelId | string | ID of the label being applied to the roster. |
-| assignmentMethod | microsoft.graph.sensitivityLabelAssignmentMethod | The assignment method with which the sensitivity label is applied to the roster. |
+| assignmentMethod | [sensitivityLabelAssignmentMethod](../resources/sensitivitylabelassignment.md#sensitivitylabelassignmentmethod-values) | The method that is used to apply the sensitivity label to the roster. Possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
+| sensitivityLabelId | String | The ID of the label that is applied to the roster. |
 
 ## Examples
 
