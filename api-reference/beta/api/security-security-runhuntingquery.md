@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/security-security-runhuntingquery-permissions.md)]
 
 ## HTTP request
-
+f
 <!-- {
   "blockType": "ignored"
 }
@@ -60,7 +60,7 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 
 If successful, this action returns a `200 OK` response code and a [huntingQueryResults](../resources/security-huntingqueryresults.md) in the response body.
 
-# Examples
+## Examples
 The format for the timespan examples is:
 - **Date/Date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
 - **Duration/endDate**: "P30D/2024-02-15T08:00:00Z" - A period before the end date.
