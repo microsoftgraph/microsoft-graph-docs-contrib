@@ -29,9 +29,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+|Application|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
 
 ## HTTP request
 
@@ -57,14 +57,6 @@ PATCH /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId
 |Property|Type|Description|
 |:---|:---|:---|
 |mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md)|
-<!-- |id|String|The unique identifier of the restore session updated|
-|status|[restoreSessionStatus](../resource/restoresessionbase.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
-|completedDateTime|DateTimeOffset|The time of creation of the restore session.|
-|createdBy|identitySet|The identity of person who created the restore session.|
-|createdDateTime|DateTimeOffset|The time of completion of the restore session.|
-|error|publicError|Error details will be populated here, if the restore session fails or completed with error.|
-|lastModifiedBy|identitySet|Identity of the person who last modified this restore session.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.| -->
 
 ## Response
 

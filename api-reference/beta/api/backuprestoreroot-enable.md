@@ -1,19 +1,19 @@
 ---
-title: "Enable backupRestore service"
-description: "Enable Backup Restore service."
+title: "backupRestoreRoot: enable"
+description: "Enable the Backup Storage service for a Microsoft 365 tenant."
 author: "maniksingh, tkanaujia"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Enable backupRestore service
+# backupRestoreRoot: enable
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable backupRestore service.
+Enable the [Backup Storage](../resources/backuprestoreroot.md) service for a Microsoft 365 tenant.
 
 ## Permissions
 
@@ -28,9 +28,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Control.Read.All|BackupRestore-Control.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|BackupRestore-Control.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Control.Read.All|BackupRestore-Control.ReadWrite.All|
+|Application|BackupRestore-Control.ReadWrite.All|BackupRestore-Control.ReadWrite.All|
 
 ## HTTP request
 
@@ -50,11 +50,11 @@ POST /solutions/backupRestore/enable
 
 ## Request body
 
-Don't supply a request body for this method.
+In the request body, supply the appOwnerTenantId under which this application has been registered must be passed as a parameter.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [serviceStatus](../resources/servicestatus.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [serviceStatus](../resources/servicestatus.md) object in the response body.
 
 ## Examples
 
@@ -68,6 +68,10 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/enable
+
+{
+    "appOwnerTenantId": "23014d8c-71fe-4d00-a01a-31850bc5b42a"
+}
 ```
 
 
@@ -83,12 +87,21 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.serviceStatus"
-  }
+    "@odata.type": "#microsoft.graph.serviceStatus",
+    "id":"b3177c20-8d60-4a41-8a6f-1715ac41297f",
+    "status":"enabled",
+    "serviceConsumer":"thirdParty",
+    "lastModifiedBy":{
+        "application":{
+            "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
+        },
+        "user":{
+            "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
+        }
+    },
+    "lastModifiedDateTime":"2023-06-19T12-01-03.45Z"
 }
 ```
 

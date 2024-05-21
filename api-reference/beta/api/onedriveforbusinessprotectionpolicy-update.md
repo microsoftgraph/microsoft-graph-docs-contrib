@@ -28,9 +28,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!--[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-update-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReReadWritead.All|BackupRestore-Configuration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
 
 ## HTTP request
 

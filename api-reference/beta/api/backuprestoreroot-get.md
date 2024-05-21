@@ -1,19 +1,19 @@
 ---
-title: "Get backupRestoreRoot"
-description: "Read the properties and relationships of a backupRestoreRoot."
+title: "Get backupRestore service status"
+description: "Get the serviceStatus of Microsoft 365 Backup and Storage."
 author: "maniksingh, tkanaujia"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Get backupRestoreRoot
+# Get backupRestore service status
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [backupRestoreRoot](../resources/backuprestoreroot.md).
+Get the [serviceStatus](../resources/servicestatus.md) of Microsoft 365 Backup and Storage.
 
 ## Permissions
 
