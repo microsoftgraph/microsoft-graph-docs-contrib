@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a contentModel object by its model name. The name should be the model file full name, including its file extension. For example, exampleModel.classifier.
+Read the properties and relationships of a [contentModel](../resources/contentmodel.md) object by its model name. The name should be the full model filename, including its file extension. For example, exampleModel.classifier.
 
 ## Permissions
 

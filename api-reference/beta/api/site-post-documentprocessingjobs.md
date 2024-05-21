@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new documentProcessingJob object. The job is to queue a document, or all documents in a folder to process by the applied content models.
+Creates a new [documentProcessingJob](../resources/documentprocessingjob.md) object. The job is to queue a document, or all documents in a folder to process by the applied content models.
 
 ## Permissions
 
@@ -54,7 +54,7 @@ You can specify the following properties when creating a **documentProcessingJob
 |jobType|documentProcessingJobType|Document processing job type. The possible values are: `file`, `folder`. Optional.|
 |status|documentProcessingJobStatus|Document processing Job status. The possible values are: `inProgress`, `completed`, `failed`, `notStarted`. Typically when a job is created, its initial status is `notStarted`. Optional.|
 |createdDateTime|DateTimeOffset|Date and time of item creation. Read-only. Optional.|
-|listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. It's one of the sharepointIds. Check the [driveItem](../resources/driveitem.md) resource to get listItemUniqueId. Or [sharepointids](../resources/sharepointids.md) for more details.|
+|listItemUniqueId|String|The listItemUniqueId of the file, or folder to process. It's one of the sharepointIds. Check the [driveItem](../resources/driveitem.md) resource to get listItemUniqueId. For more information, see [sharepointids](../resources/sharepointids.md).|
 
 
 

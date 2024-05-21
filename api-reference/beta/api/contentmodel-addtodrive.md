@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Automatically processes new documents in the libraries. If a content model is properly trained or configured, users use this API to apply the model to document libraries.
+Automatically processes new documents in the libraries. If a [contentModel](../resources/contentmodel.md) is properly trained or configured, users use this API to apply the model to document libraries.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|driveId|String|model Applied to drive ID.|
+|driveId|String|The model applied to drive ID.|
 
 
 
