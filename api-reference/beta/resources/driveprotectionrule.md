@@ -1,6 +1,6 @@
 ---
 title: "driveProtectionRule resource type"
-description: "Describes drive protection rule and its properties"
+description: "Describes drive Protection Rule and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -25,7 +25,6 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |[Get driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-get-driveinclusionrules.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Read the properties and relationships of a [driveProtectionRule](../resources/driveprotectionrule.md).|
 |[Delete driveProtectionRule](../api/onedriveforbusinessprotectionpolicy-delete-driveinclusionrules.md)|None|Delete a [driveProtectionRule](../resources/driveprotectionrule.md).|
 |[run](../api/onedriveforbusinessprotectionpolicy-run-driveinclusionrules.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
-<!-- |[Update driveProtectionRule](../api/driveprotectionrule-update.md)|[driveProtectionRule](../resources/driveprotectionrule.md)|Update the properties of a [driveProtectionRule](../resources/driveprotectionrule.md) object.| -->
 
 ## Properties
 |Property|Type|Description|

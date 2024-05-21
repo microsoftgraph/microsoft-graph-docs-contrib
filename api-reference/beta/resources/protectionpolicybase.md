@@ -1,6 +1,6 @@
 ---
 title: "protectionPolicyBase resource"
-description: "Describes Protection Policy base type resource and its properties"
+description: "Contains details about protection policies applied to Microsoft 365 data."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Protection Policy represents the plan defined by the Global Admin (or SharePoint Online Admin for SharePoint Online/OneDrive & Exchange Online Admin for Exchange Online) for protecting the M365 data of an organization. It will contain details of what data to protect, when to protect it and for what time period to retain the protected data for a single M365 service.
-This is an abstract type.
+Contains details about protection policies applied to Microsoft 365 data in an organization. Protection policies are defined by the Global Admin (or the SharePoint Online Admin or Exchange Online Admin) and include what data to protect, when to protect it, and for what time period to retain the protected data for a single Microsoft 365 service.
 
 This is the base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md), [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
@@ -33,7 +32,7 @@ This is the base type for [sharePointProtectionPolicy](../resources/sharepointpr
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the protection rule associated to the policy.|
-|displayName|String|Name of the policy being created|
+|displayName|String|The name of the policy to be created.|
 |createdDateTime|DateTimeOffset|The time of creation of the policy.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
