@@ -18633,7 +18633,6 @@ items:
                   - name: Cancel
                     href: api/virtualevent-cancel.md      
                   - name: Webinar
-                    href: resources/virtualeventwebinar.md
                     items:
                       - name: List in organization
                         href: api/virtualeventsroot-list-webinars.md
@@ -18653,8 +18652,6 @@ items:
                         items:
                           - name: Get
                             href: api/virtualeventwebinarregistrationconfiguration-get.md
-                  - name: Town hall
-                    href: resources/virtualeventtownhall.md
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:
