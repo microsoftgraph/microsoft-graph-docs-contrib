@@ -109,7 +109,11 @@ The resource documentation contains full examples for managing permissions throu
 
 ### What Permissions Do I need to Manage Permissions?
 
+<<<<<<< HEAD
 The permission requirements vary by level, in all delegated cases the current user also needs sufficient permissions to manage access by calling the API.
+=======
+The permission requirements vary by level, in all delegated cases the current user also needs sufficient permissions to manage access by calling the API. The below table includes scopes and scopes + assigned roles to the parent resource. For example  if you have the Sites.Selected scope AND FullControl role (Sites.Selected+FullControl) you can manage resources within that site collection.
+>>>>>>> d04b14179c4e039b1001fe5ebd7a95f82b191a7c
 
 |Resource|Required Resource Permissions|Notes
 |---|---|---|
