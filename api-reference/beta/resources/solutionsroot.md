@@ -68,7 +68,7 @@ None.
 |bookingBusinesses|[bookingBusiness](bookingbusiness.md) collection | A collection of businesses in Microsoft Bookings. Read-only. Nullable.|
 |bookingCurrencies|[bookingcurrency](bookingcurrency.md) collection | A collection of monetary currencies supported by a [bookingBusiness](bookingbusiness.md). Read-only. Nullable.|
 |businessScenarios|[businessScenario](businessscenario.md) collection | A collection of scenarios that contain relevant data and configuration information for a specific problem domain.|
-|virtualEvents|virtualEventsRoot collection | A collection of virtual events.|
+|virtualEvents|[virtualEventsRoot](virtualeventsroot.md) collection | A collection of virtual events.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
