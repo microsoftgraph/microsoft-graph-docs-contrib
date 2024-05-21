@@ -28,7 +28,7 @@ In this step you will create an Azure Storage account where Microsoft Graph Data
 1. After configuring the values for the **Basics** and **Advanced** tabs, leave the rest of the settings as default.
 
     > [!NOTE]
-    >  Ensure that within the **Networking** tab, only the **Enable public access from all networks** is enabled. Other types of network access are supported; however, we're working on removing additional restrictions required for them. For the time being, only select the first option. For questions about additional network access, contact the [Data Connect team](mailto:dataconnect@microsoft.com).
+    >  Ensure that within the **Networking** tab, the **Enable public access from all networks** is enabled. The second option **Enable public access from selected virtual networks and IP addresses** can be selected. However, additional steps outside of this tutorial would need to be performed. These steps are highlighted in the [IP addresses section](../concepts/data-connect-troubleshooting.md#issues-adding-network-ip-address-to-allow-list-with-azure-integration-runtime).
 
     ![Screenshot of the Create a storage account page with Networking and Enable public access from all networks highlighted](../concepts/images/data-connect-azure-storage-network-new.png)
 
