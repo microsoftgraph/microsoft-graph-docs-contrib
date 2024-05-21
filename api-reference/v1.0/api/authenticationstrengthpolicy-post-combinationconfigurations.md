@@ -1,6 +1,6 @@
 ---
 title: "Create authenticationCombinationConfiguration"
-description: "Create a new authenticationCombinationConfiguration object. In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies."
+description: "Create a new authenticationCombinationConfiguration object."
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
@@ -11,7 +11,9 @@ doc_type: apiPageType
 # Create combinationConfiguration
 Namespace: microsoft.graph
 
-Create a new authenticationCombinationConfiguration object. In use, only [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) may be created, and these may only be created for custom authentication strength policies.
+Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:
+* [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md)
+* [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -46,13 +48,12 @@ You can specify the following properties when creating an **authenticationCombin
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|The combinations to which this configuration applies. The only possible value for fido2combinationConfigurations is `fido2`. Required.|
-
+|appliesToCombinations|authenticationMethodModes collection|The combinations where this configuration applies. For **fido2combinationConfigurations** use `"fido2"`, for **x509certificatecombinationconfiguration** use `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`. Required.|
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [fido2CombinationConfiguration](../resources/fido2CombinationConfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) or an [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md) object in the response body.
 
 ## Examples
 
