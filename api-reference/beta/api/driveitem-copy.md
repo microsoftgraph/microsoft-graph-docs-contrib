@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_copy" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-copy-permissions.md)]
 
+The `FilesStorageContainer.Selected` permission is only for [SharePoint Embedded](/sharepoint/dev/embedded/overview).
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
