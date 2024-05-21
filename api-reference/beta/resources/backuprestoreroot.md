@@ -1,6 +1,6 @@
 ---
 title: "backupRestoreRoot resource type"
-description: "BackupRestoreRoot resource of M365 Backup and Storage"
+description: "BackupRestoreRoot resource of Microsoft 365 Backup and Storage"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -19,14 +19,14 @@ BackupRestoreRoot resource of M365 Backup and Storage.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Enable BackupRestore Service](../api/backuprestoreroot-enable.md)|[backupRestoreRoot](../resources/backuprestoreroot.md)|Enable the BackupRestore Service.|
-|[Get BackupRestore Service](../api/backuprestoreroot-get.md)|[backupRestoreRoot](../resources/backuprestoreroot.md)|Get details of the BackupRestore Service.|
+|[Get](../api/backuprestoreroot-get.md) BackupRestore Service|[backupRestoreRoot](../resources/backuprestoreroot.md)|Get details of the BackupRestore Service.|
+|[Enable](../api/backuprestoreroot-enable.md) BackupRestore Service|[backupRestoreRoot](../resources/backuprestoreroot.md)|Enable the BackupRestore Service.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id of the BackupRestoreRoot|
+|id|String|ID of the BackupRestoreRoot|
 |serviceStatus|[serviceStatus](../resources/servicestatus.md) collection|Represents tenant level service status related to Backup service.|
 
 ## Relationships

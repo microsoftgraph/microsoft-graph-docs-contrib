@@ -1,6 +1,6 @@
 ---
 title: "driveRestoreArtifact resource type"
-description: "Describes onedrive restore artifact and it's properties"
+description: "Describes onedrive restore artifact and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -22,13 +22,6 @@ Inherits from [restoreArtifactBase](../resources/restoreartifactbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List driveRestoreArtifact](../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md)|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Get a list of the [driveRestoreArtifact](../resources/driverestoreartifact.md) and their properties.|
-<!-- |[Create driveRestoreArtifact](../api/onedriveforbusinessrestoresession-post-driverestoreartifacts.md)|[driveRestoreArtifact](../resources/driverestoreartifact.md)|Create a new [driveRestoreArtifact](../resources/driverestoreartifact.md) object.|
-|[Get driveRestoreArtifact](../api/driverestoreartifact-get.md)|[driveRestoreArtifact](../resources/driverestoreartifact.md)|Read the properties and relationships of a [driveRestoreArtifact](../resources/driverestoreartifact.md) object.|
-|[Update driveRestoreArtifact](../api/driverestoreartifact-update.md)|[driveRestoreArtifact](../resources/driverestoreartifact.md)|Update the properties of a [driveRestoreArtifact](../resources/driverestoreartifact.md) object.|
-|[Delete driveRestoreArtifact](../api/onedriveforbusinessrestoresession-delete-driverestoreartifacts.md)|None|Delete a [driveRestoreArtifact](../resources/driverestoreartifact.md) object.|
-|[List restorePoint](../api/driverestoreartifact-list-restorepoint.md)|[restorePoint](../resources/restorepoint.md) collection|Get the restorePoint resources from the restorePoint navigation property.|
-|[Add restorePoint](../api/driverestoreartifact-post-restorepoint.md)|[restorePoint](../resources/restorepoint.md)|Add restorePoint by posting to the restorePoint collection.|
-|[Remove restorePoint](../api/driverestoreartifact-delete-restorepoint.md)|None|Remove a [restorePoint](../resources/restorepoint.md) object.| -->
 
 ## Properties
 |Property|Type|Description|

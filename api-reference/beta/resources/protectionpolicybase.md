@@ -1,6 +1,6 @@
 ---
 title: "protectionPolicyBase resource"
-description: "Describes protection policy base type resource and its properties"
+description: "Describes Protection Policy base type resource and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -36,10 +36,10 @@ This is the base type for [sharePointProtectionPolicy](../resources/sharepointpr
 |displayName|String|Name of the policy being created|
 |createdDateTime|DateTimeOffset|The time of creation of the policy.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Timestamp of last modification of this policy .|
-|lastModifiedDateTime|DateTimeOffset|Identity of the person who last modified this policy.|
-|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Complex type containing details of all the retention settings for the policy.|
-|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|Status of the policy. It is an aggregated status of protection units.The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
+|lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.||
+|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy.|
+|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of protection units of the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
 
 ### protectionPolicyStatus values
 |Member | Description |

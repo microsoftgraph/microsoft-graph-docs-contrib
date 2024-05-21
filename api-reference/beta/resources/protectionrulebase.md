@@ -1,6 +1,6 @@
 ---
 title: "protectionRuleBase resource type"
-description: "Describes protection rule and it's properties "
+description: "Describes Protection Rule and its properties "
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,23 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a protection rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization. There is one type of protection rule:
+Represents a Protection Rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization. There is one type of Protection Rule:
 
 Inclusion rules: Rules that indicate that a protection policy should match the specified criteria.
 
 Protection rules can be static or dynamic, which means the rules can run one time or at regular intervals.
 
 This is an abstract type. This is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md) and [driveProtectionRule](../resources/driveprotectionrule.md).
-
-<!-- ## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List protectionRuleBase objects](../api/protectionrulebase-list.md)|[protectionRuleBase](../resources/protectionrulebase.md) collection|Get a list of the [protectionRuleBase](../resources/protectionrulebase.md) objects and their properties.|
-|[Get protectionRuleBase](../api/protectionrulebase-get.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Read the properties and relationships of a [protectionRuleBase](../resources/protectionrulebase.md) object.|
-|[Update protectionRuleBase](../api/protectionrulebase-update.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object.|
-|[Delete protectionRuleBase](../api/protectionrulebase-delete.md)|None|Delete a [protectionRuleBase](../resources/protectionrulebase.md) object.|
-|[run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active| -->
 
 ## Properties
 
@@ -50,7 +40,7 @@ This is an abstract type. This is the base type for [siteProtectionRule](../reso
 |:------|:------------|
 |draft | The initial status of the protection rule upon creation.|
 |active | The status of the protection rule when it is running.|
-|completed |Once the protection rule is successfully applied to the corresponding policy, the status of protection rule will be completed. The state transition is active to completed.|
+|completed | The status of the protection rule when it is successfully applied to the corresponding policy.|
 |completedWithErrors | The status of the protection rule when the rule ran but encountered errors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.    |
 

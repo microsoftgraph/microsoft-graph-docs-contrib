@@ -1,6 +1,6 @@
 ---
 title: "oneDriveForBusinessRestoreSession resource type"
-description: "Describes onedrive restore session and it's properties"
+description: "Describes onedrive restore session and its properties"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore session APIs are used by Global Admin or SharePoint Online Admin for OneDrive to perform restore related tasks on artifacts which are protected as part of mailbox protection policy.
+Restore session APIs are used by Global Admin or SharePoint Online Admin for OneDrive to perform restore related tasks on artifacts which are protected as part of oneDrive protection policy.
 
 Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
@@ -23,24 +23,18 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |[Create oneDriveForBusinessRestoreSession](../api/onedriveforbusinessrestoresession-create.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md)|Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
 |[List oneDriveForBusinessRestoreSession](../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) collection|Get a list of the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) and their properties.|
 |[Update oneDriveForBusinessRestoreSession](../api/onedriveforbusinessrestoresession-update.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md)|Update the properties of an [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
-<!-- |[Get oneDriveForBusinessRestoreSession](../api/onedriveforbusinessrestoresession-get.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md)|Read the properties and relationships of an [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.|
-|[Delete oneDriveForBusinessRestoreSession](../api/backuprestoreroot-delete-onedriveforbusinessrestoresessions.md)|None|Delete an [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.|
-|[activate](../api/onedriveforbusinessrestoresession-activate.md)|[restoreSessionBase](../resources/restoresessionbase.md)|Activates a draft restore session|
-|[List driveRestoreArtifacts](../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md)|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Get the driveRestoreArtifact resources from the driveRestoreArtifacts navigation property.|
-|[Create driveRestoreArtifact](../api/onedriveforbusinessrestoresession-post-driverestoreartifacts.md)|[driveRestoreArtifact](../resources/driverestoreartifact.md)|Create a new driveRestoreArtifact object.| -->
-
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the restore session created|
+|id|String|The unique identifier of the restore session created.|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the restore session.|
 |createdDateTime|DateTimeOffset|The time of completion of the restore session.|
 |error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resources/onedriveforbusinessrestoresession.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resources/onedriveforbusinessrestoresession.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
 |Member | Description |
@@ -56,7 +50,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Collection of onedrive restore point and destination relevant details that can be used to restore it|
+|driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Collection of onedrive restore point and destination relevant details that can be used to restore it.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

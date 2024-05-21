@@ -25,7 +25,6 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |[Get mailboxProtectionRule](../api/exchangeprotectionpolicy-get-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
 |[Delete mailboxProtectionRule](../api/exchangeprotectionpolicy-delete-mailboxinclusionrules.md)|None|Delete a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
 |[run](../api/exchangeprotectionpolicy-run-mailboxinclusionrules.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Upon running the protection rule using the /run API, the status of protectionRuleBase transitions to active|
-<!-- |[Update mailboxProtectionRule](../api/mailboxprotectionrule-update.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Update the properties of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).| -->
 
 ## Properties
 |Property|Type|Description|
@@ -33,11 +32,11 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |id|String|The unique identifier of the protection rule associated with the policy.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the rule.|
 |createdDateTime|DateTimeOffset|The date and time that the rule was created.|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if any operation on rule expression fails|
+|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if any operation on rule expression fails.|
 |isAutoApplyEnabled|Boolean|A boolean flag indicating whether the protection rule is static or dynamic. Static rules gets executed one time whereas dynamic rule listens to all changes in the system and updates the protection unit list.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this rule .|
-|mailboxExpression|String|Contains mailbox expression.[mailboxExpression example](../resources/mailboxprotectionrule.md#mailboxexpression-examples)|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this rule.|
+|mailboxExpression|String|Contains mailbox expression.[mailboxExpression example](../resources/mailboxprotectionrule.md#mailboxexpression-examples).|
 |status|[protectionRuleStatus](../resources/mailboxprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. It determines the execution status of the rule..The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`.|
 
 ### mailboxExpression examples
