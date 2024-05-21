@@ -24,7 +24,7 @@ Provides information on where, by whom, and when a [contentModel](../resources/c
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user, device, or application, which last applied the [contentModel](../resources/contentmodel.md) to the library.|
 |lastModifiedDateTime|DateTimeOffset|Date and time of the [contentModel](../resources/contentmodel.md) is last applied.|
 |modelId|String|The ID of the [contentModel](../resources/contentmodel.md).|
-|modelVersion|String|	The version of the current applied [contentModel](../resources/contentmodel.md).|
+|modelVersion|String|The version of the current applied [contentModel](../resources/contentmodel.md).|
 
 ## Relationships
 None.
