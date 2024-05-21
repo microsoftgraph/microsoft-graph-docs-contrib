@@ -1,6 +1,5 @@
 ---
 title: "security: runHuntingQuery"
-
 description: "Run the hunting query API."
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -14,7 +13,6 @@ Namespace: microsoft.graph.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Query a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
-
 
 This method is for advanced hunting in Microsoft 365 Defender. This method includes a query in Kusto Query Language (KQL). It specifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide&preserve-view=true) and a piped sequence of operators to filter or search that data and format the query output in specific ways. 
 
@@ -30,14 +28,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_security_runhuntingquery" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-security-runhuntingquery-permissions.md)]
 
-
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/runHuntingQuery
 ```
 
@@ -48,7 +45,7 @@ POST /security/runHuntingQuery
 |Content-Type|application/json. Required.|
 
 > [!NOTE]
-> If you're using non-ANSI characters in your query, for example, to query email subjects with malformed or lookalike characters, use `application/json; charset=utf-8` for the Content-Type header. 
+> If you're using non-ANSI characters in your query, for example, to query email subjects with malformed or lookalike characters, use `application/json; charset=utf-8` for the Content-Type header.
 
 ## Request body
 
@@ -63,8 +60,8 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 
 If successful, this action returns a `200 OK` response code and a [huntingQueryResults](../resources/security-huntingqueryresults.md) in the response body.
 
-## Examples
-The format for the timespan examples is: 
+# Examples
+The format for the timespan examples is:
 - **Date/Date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
 - **Duration/endDate**: "P30D/2024-02-15T08:00:00Z" - A period before the end date.
 - **Start/duration**: "2024-02-01T08:00:00Z/P30D" - Start date and duration.
@@ -72,7 +69,6 @@ The format for the timespan examples is:
 - **Single date/time**: "2024-02-01T08:00:00Z" - Start time with end time defaulted to the current time.
 
 ### Example 1: Query with default timespan
-
 
 #### Request
 
@@ -83,14 +79,13 @@ The following example specifies a KQL query and:
 - Sorts the output by the `Timestamp` value.
 - Limits the output to two records (two rows).
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 {
@@ -100,6 +95,12 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.security.huntingQueryResults",
+  "truncated": true
+}
+-->
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.huntingQueryResults",
@@ -136,14 +137,14 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 #### Request
 
-This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
+This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back.
 
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 {
@@ -154,6 +155,12 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.security.huntingQueryResults",
+  "truncated": true
+}
+-->
 ```json
 {
     "@odata.context": "https://graph.microsoft.com//$metadata#microsoft.graph.security.huntingQueryResults",
@@ -194,6 +201,8 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
         }
     ]
 }
+
+
 ```
 
 # [C#](#tab/csharp)

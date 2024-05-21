@@ -27,14 +27,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_security_runhuntingquery" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-security-runhuntingquery-permissions.md)]
 
-
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/runHuntingQuery
 ```
 
@@ -45,7 +44,7 @@ POST /security/runHuntingQuery
 |Content-Type|application/json. Required.|
 
 > [!NOTE]
-> If you're using non-ANSI characters in your query, for example to query email subjects with malformed or lookalike characters, use `application/json; charset=utf-8` for the Content-Type header. 
+> If you're using non-ANSI characters in your query, for example to query email subjects with malformed or lookalike characters, use `application/json; charset=utf-8` for the Content-Type header.
 
 ## Request body
 
@@ -60,7 +59,7 @@ In the request body, provide a JSON object for the `Query` parameter, and option
 
 If successful, this action returns a `200 OK` response code and a [huntingQueryResults](../resources/security-huntingqueryresults.md) in the response body.
 
-## Examples
+# Examples
 The format for the timespan examples is:
 - **Date/Date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
 - **Duration/endDate**: "P30D/2024-02-15T08:00:00Z" - A period before the end date.
@@ -79,13 +78,12 @@ The following example specifies a KQL query and:
 - Sorts the output by the `Timestamp` value.
 - Limits the output to two records (two rows).
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 {
@@ -95,6 +93,12 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.security.huntingQueryResults",
+  "truncated": true
+}
+-->
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
@@ -131,14 +135,14 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 #### Request
 
-This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back. 
+This example specifies a KQL query and looks into the [deviceProcessEvents](/microsoft-365/security/defender/advanced-hunting-deviceprocessevents-table?view=o365-worldwide&preserve-view=true) table in the advanced hunting schema 60 days back.
 
 <!-- {
   "blockType": "request",
-  "name": "security_runhuntingquery"
+  "name": "security_runhuntingquery_timespan"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 {
@@ -149,6 +153,12 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.security.huntingQueryResults",
+  "truncated": true
+}
+-->
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.huntingQueryResults",
