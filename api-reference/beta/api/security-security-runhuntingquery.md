@@ -78,7 +78,7 @@ The following example specifies a KQL query and:
 - Sorts the output by the `Timestamp` value.
 - Limits the output to two records (two rows).
 
-# [HTTP](#tab/http)
+# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "security_runhuntingquery_example1"
