@@ -68,6 +68,11 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+> [!NOTE]
+>
+> ### Unsupported properties for the `$filter` parameter
+> The following properties are not supported to use with the `$filter` parameter:
+> + `recurrence`
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
