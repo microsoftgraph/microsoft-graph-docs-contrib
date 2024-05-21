@@ -1,7 +1,7 @@
 ---
 title: "Delete virtualEventPresenter"
 description: "Delete a virtualEventPresenter object."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete a [virtualEventPresenter](../resources/virtualeventpresenter.md) from a virtual event.
 
-Currently the supported virtual event type is [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Currently the supported virtual event types are: [virtualEventTownhall](../resources/virtualeventtownhall.md), [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,8 +36,10 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 DELETE /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
+DELETE /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
 ```
 
 ## Request headers
@@ -58,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following example shows a request.
+The following example shows how to delete a presenter from a **virtualEventTownhall**.
 
 # [HTTP](#tab/http)
 <!-- {
