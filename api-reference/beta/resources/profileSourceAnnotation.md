@@ -12,6 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the sources the user data comes from, such as Entra, UPA, Connector, and so on.
@@ -19,9 +20,20 @@ Represents the sources the user data comes from, such as Entra, UPA, Connector, 
 ## Properties
 |Property	|Type	|Description|
 |:--------|:----|:----------|
-|id|String|The unique identifier of the source (Details of the source can be found [here](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data)).|
+|id|String|Unique identifier (a GUID) of the source.|
 |isDefaultSource|Boolean|Indicates whether the source is the default one.|
-|properties|Collection(String)|The names of properties that have data from this source.|
+|properties|Collection(String)|Names of properties that have data from this source.|
+
+## Id to Source mapping
+| Id                                   | Source                                    |
+|:-------------------------------------|:------------------------------------------|
+| 4ce763dd-9214-4eff-af7c-da491cc3782d | Microsoft Entra ID                        |
+| 7986c642-b494-4140-8df4-f5ed125e2c67 | Organizational Data in Microsoft 365      |
+| 6cdc4422-8c05-40c5-902e-8ade707725ab | SharePoint User Profile Application (UPA) |
+| 9a3e0ce2-cf4b-477e-b3b3-df246318e251 | Microsoft account (MSA)                   |
+| 46a57efc-33f8-4eec-a512-b90039ad6187 | User Initiated Edits                      |
+
+More details on how profileSourceAnnotation is populated can be found [here](https://support.microsoft.com/en-us/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
 
 ## JSON representation
 
