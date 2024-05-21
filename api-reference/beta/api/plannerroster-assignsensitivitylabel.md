@@ -28,8 +28,11 @@ POST /planner/rosters/{rosterId}/assignSensitivityLabel
 ```
 ## Request headers
 
-|:---------------|:--------|:--------|
-| If-Match | string | The etag for the roster being edited. Required.  |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+|If-Match|If-match: {etag}. Last known ETag value for the **plannerRoster** to be updated. Required.|
 
 ## Request body
 
