@@ -15,6 +15,8 @@ Excuse a [submission](../resources/educationsubmission.md). Excused submissions 
 
 If the `Prefer: include-unknown-enum-members` request header is provided, the excused submission shows the **excused** status. Otherwise, the submission status retains the **returned** status. For more information about how to use this header, see the [Examples](#examples) section.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
