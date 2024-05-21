@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |description|String|The description for each alert.|
 |detectedDateTime|DateTimeOffset|Time when the alert was detected or created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayName|String|The display name of the alert.|
-|firstObservedDateTime|DateTimeOffset|Time of the first activity associated with the alert. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Subscription.|
+|firstObservedDateTime|DateTimeOffset|Time of the first activity associated with the alert. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|Unique identifier to represent the alert. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |isTest|Boolean|Indicates whether an alert is a test alert.|
 |lastObservedDateTime|DateTimeOffset|Time of the latest activity associated with the alert. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
