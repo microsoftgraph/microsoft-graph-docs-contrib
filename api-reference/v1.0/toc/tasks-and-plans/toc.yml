@@ -1,0 +1,109 @@
+items:
+- name: Overview
+  href: ../../resources/planner-overview.md
+- name: Planner assigned to task board task format
+  items:
+  - name: Planner assigned to task board task format
+    href: ../../resources/plannerassignedtotaskboardtaskformat.md
+  - name: Get plannerAssignedToTaskBoardTaskFormat
+    href: ../../api/plannerassignedtotaskboardtaskformat-get.md
+  - name: Update
+    href: ../../api/plannerassignedtotaskboardtaskformat-update.md
+- name: Planner bucket
+  items:
+  - name: Planner bucket
+    href: ../../resources/plannerbucket.md
+  - name: Get plannerBucket
+    href: ../../api/plannerbucket-get.md
+  - name: List plannerTasks
+    href: ../../api/plannerbucket-list-tasks.md
+  - name: Create
+    href: ../../api/planner-post-buckets.md
+  - name: Update
+    href: ../../api/plannerbucket-update.md
+  - name: Delete
+    href: ../../api/plannerbucket-delete.md
+- name: Planner bucket task board task format
+  items:
+  - name: Planner bucket task board task format
+    href: ../../resources/plannerbuckettaskboardtaskformat.md
+  - name: Get plannerBucketTaskBoardTaskFormat
+    href: ../../api/plannerbuckettaskboardtaskformat-get.md
+  - name: Update
+    href: ../../api/plannerbuckettaskboardtaskformat-update.md
+- name: Planner plan
+  items:
+  - name: Planner plan
+    href: ../../resources/plannerplan.md
+  - name: Get plannerPlan
+    href: ../../api/plannerplan-get.md
+  - name: List buckets
+    href: ../../api/plannerplan-list-buckets.md
+  - name: List tasks
+    href: ../../api/plannerplan-list-tasks.md
+  - name: Update
+    href: ../../api/plannerplan-update.md
+  - name: Delete
+    href: ../../api/plannerplan-delete.md
+- name: Planner plan details
+  items:
+  - name: Planner plan details
+    href: ../../resources/plannerplandetails.md
+  - name: Get plannerPlanDetails
+    href: ../../api/plannerplandetails-get.md
+  - name: Update
+    href: ../../api/plannerplandetails-update.md
+- name: Planner progress task board task format
+  items:
+  - name: Planner progress task board task format
+    href: ../../resources/plannerprogresstaskboardtaskformat.md
+  - name: Get plannerProgressTaskBoardTaskFormat
+    href: ../../api/plannerprogresstaskboardtaskformat-get.md
+  - name: Update
+    href: ../../api/plannerprogresstaskboardtaskformat-update.md
+- name: Planner task
+  items:
+  - name: Planner task
+    href: ../../resources/plannertask.md
+  - name: Get plannerTask
+    href: ../../api/plannertask-get.md
+  - name: Update
+    href: ../../api/plannertask-update.md
+  - name: Delete
+    href: ../../api/plannertask-delete.md
+- name: Planner task details
+  items:
+  - name: Planner task details
+    href: ../../resources/plannertaskdetails.md
+  - name: Get plannerTaskDetails
+    href: ../../api/plannertaskdetails-get.md
+  - name: Update
+    href: ../../api/plannertaskdetails-update.md
+- name: Complex types
+  items:
+  - name: Identity
+    href: ../../resources/identity.md
+  - name: Identity set
+    href: ../../resources/identityset.md
+  - name: Planner applied categories
+    href: ../../resources/plannerappliedcategories.md
+  - name: Planner assignment
+    href: ../../resources/plannerassignment.md
+  - name: Planner assignments
+    href: ../../resources/plannerassignments.md
+  - name: Planner category descriptions
+    href: ../../resources/plannercategorydescriptions.md
+  - name: Planner checklist item
+    href: ../../resources/plannerchecklistitem.md
+  - name: Planner checklist items
+    href: ../../resources/plannerchecklistitems.md
+  - name: Planner external reference
+    href: ../../resources/plannerexternalreference.md
+  - name: Planner external references
+    href: ../../resources/plannerexternalreferences.md
+  - name: Planner order hints by assignee
+    href: ../../resources/plannerorderhintsbyassignee.md
+  - name: Planner plan container
+    href: ../../resources/plannerplancontainer.md
+  - name: Planner user ids
+    href: ../../resources/planneruserids.md

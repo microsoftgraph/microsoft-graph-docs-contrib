@@ -155,7 +155,8 @@ The following JSON representation shows the resource type.
     "singleValueExtendedProperties",
     "multiValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.event"
+  "@odata.type": "microsoft.graph.event",
+  "baseType": "microsoft.graph.outlookItem"
 }-->
 
 ```json

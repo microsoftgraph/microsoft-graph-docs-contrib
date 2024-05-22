@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
   "conversationMemberRoles": [
     "String"
   ],
-  "converstaionMemberUser": {
+  "conversationMemberUser": {
     "@odata.type": "microsoft.graph.teamworkUserIdentity"
   },
   "initiator": {

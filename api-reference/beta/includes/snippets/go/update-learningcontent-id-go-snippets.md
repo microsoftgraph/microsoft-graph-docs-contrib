@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -13,9 +16,6 @@ import (
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodels.NewLearningContent()
 title := "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle"
@@ -64,6 +64,7 @@ requestBody.SetIsPremium(&isPremium)
 isSearchable := true
 requestBody.SetIsSearchable(&isSearchable) 
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 learningContents, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningContents().ByLearningContentId("learningContent-id").Patch(context.Background(), requestBody, nil)
 
 

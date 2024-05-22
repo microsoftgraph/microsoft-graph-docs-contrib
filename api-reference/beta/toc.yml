@@ -18,6 +18,8 @@ items:
     href: /graph/sdks/sdks-overview?context=graph/api/beta
   - name: Use the toolkit
     href: /graph/toolkit/overview?context=graph/api/beta
+  - name: Deploy with Bicep
+    href: /graph/templates?context=graph/api/beta
   - name: Known issues
     href: https://developer.microsoft.com/graph/known-issues
   - name: Errors
@@ -940,10 +942,12 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: Restore deleted service principal
                 href: api/directory-deleteditems-restore.md
-              - name: List createdObjects
+              - name: List created objects
                 href: api/serviceprincipal-list-createdobjects.md
-              - name: List ownedObjects
+              - name: List owned objects
                 href: api/serviceprincipal-list-ownedobjects.md
+              - name: Create or replace custom claims policy
+                href: api/serviceprincipal-put-claimspolicy.md
               - name: Get delta
                 href: api/serviceprincipal-delta.md
               - name: Get delta for directory object
@@ -11267,20 +11271,46 @@ items:
           - name: File storage containers
             href: resources/filestoragecontainer.md
             items:
-              - name: List file storage containers
+              - name: List
                 href: api/filestorage-list-containers.md
-              - name: Create file storage container
+              - name: Create
                 href: api/filestoragecontainer-post.md
-              - name: Get file storage container
+              - name: Get
                 href: api/filestoragecontainer-get.md
               - name: Get drive
                 href: api/filestoragecontainer-get-drive.md
-              - name: Update file storage containers
+              - name: Update
                 href: api/filestoragecontainer-update.md
-              - name: Delete file storage container
+              - name: Delete
                 href: api/filestorage-delete-containers.md
-              - name: Activate file storage container
+              - name: List deleted
+                href: api/filestorage-list-deletedcontainers.md
+              - name: Get deleted
+                href: api/filestorage-get-deletedcontainers.md
+              - name: Permanently delete 
+                href: api/filestoragecontainer-permanentdelete.md
+              - name: Remove deleted 
+                href: api/filestorage-delete-deletedcontainer.md
+              - name: Restore deleted 
+                href: api/filestoragecontainer-restore.md
+              - name: Activate 
                 href: api/filestoragecontainer-activate.md
+              - name: Delete recycle bin items
+                href: api/filestoragecontainer-delete-recyclebini-tems.md
+              - name: Get recycle bin items
+                href: api/filestoragecontainer-list-recyclebin-items.md
+              - name: Restore recycle bin items
+                href: api/filestoragecontainer-restore-recyclebin-items.md
+              - name: List columns
+                href: api/filestoragecontainer-list-columns.md
+              - name: Add column
+                href: api/filestoragecontainer-post-columns.md
+              - name: Update column
+                href: api/filestoragecontainer-update-column.md
+              - name: Get column
+                href: api/filestoragecontainer-get-column.md
+              - name: Delete file storage container column
+                href: api/filestoragecontainer-delete-column.md
               - name: List permissions
                 href: api/filestoragecontainer-list-permissions.md
               - name: Add permissions
@@ -12664,6 +12694,18 @@ items:
                         href: api/identitygovernance-lifecyclemanagementsettings-get.md
                       - name: Update
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
+                  - name: Insights
+                    items:
+                      - name: Insights
+                        href: resources/identitygovernance-insights.md
+                      - name: Get top workflows summary
+                        href: api/identitygovernance-insights-topworkflowsprocessedsummary.md
+                      - name: Get top tasks summary
+                        href: api/identitygovernance-insights-toptasksprocessedsummary.md
+                      - name: Get workflows processed summary
+                        href: api/identitygovernance-insights-workflowsprocessedsummary.md
+                      - name: Get workflows processed by category
+                        href: api/identitygovernance-insights-workflowsprocessedbycategory.md         
               - name: Privileged Identity Management iteration 3
                 items:
                   - name: PIM for Microsoft Entra roles
@@ -13761,7 +13803,7 @@ items:
                             href: api/emailauthenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/emailauthenticationmethodconfiguration-delete.md
-                      - name: External authentication methods policy
+                      - name: External authentication methods policy (preview)
                         href: resources/externalauthenticationmethodconfiguration.md
                         items:
                           - name: Get
@@ -13872,6 +13914,15 @@ items:
                         href: api/claimsmappingpolicy-delete.md
                       - name: List applied to applications
                         href: api/claimsmappingpolicy-list-appliesto.md
+                  - name: Custom claims policy (preview)
+                    href: resources/customclaimspolicy.md
+                    items:
+                      - name: Get
+                        href: api/customclaimspolicy-get.md
+                      - name: Create or replace
+                        href: api/serviceprincipal-put-customclaimspolicy.md
+                      - name: Update
+                        href: api/customclaimspolicy-update.md
                   - name: Continuous access evaluation policy
                     href: resources/continuousaccessevaluationpolicy.md
                     items:
@@ -14019,6 +14070,13 @@ items:
                     href: api/trustframeworkkeyset-uploadpkcs12.md
                   - name: Upload secret
                     href: api/trustframeworkkeyset-uploadsecret.md
+                  - name: Keys
+                    href: resources/trustFrameworkKey_v2.md
+                    items:
+                    - name: Get
+                      href: api/trustframeworkkey_v2-get.md
+                    - name: Update
+                      href: api/trustframeworkkey_v2-update.md                    
               - name: Trust Framework policy
                 href: resources/trustframeworkpolicy.md
                 items:
@@ -14032,7 +14090,7 @@ items:
                     href: api/trustframework-put-trustframeworkpolicy.md
                   - name: Delete
                     href: api/trustframeworkpolicy-delete.md
-              - name: User flows for Microsoft Entra ID and Azure AD B2C
+              - name: User flows in workforce tenants and Azure AD B2C
                 items:
                   - name: User flow (deprecated)
                     items:
@@ -14084,7 +14142,7 @@ items:
                         href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
                       - name: Configure an API connector
                         href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
-                  - name: Self-service sign up user flows for Microsoft Entra ID
+                  - name: Self-service sign up user flows in workforce tenants
                     items:
                       - name: Self-service sign up user flow
                         href: resources/b2xidentityuserflow.md
@@ -14178,7 +14236,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Delete
                         href: api/identityapiconnector-delete.md
-              - name: User flows for Microsoft Entra External ID in external tenants (preview)
+              - name: User flows in external tenants
                 items:
                   - name: Authentication events flow
                     href: resources/authenticationeventsflow.md
@@ -14222,7 +14280,7 @@ items:
                         href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
                       - name: Remove attributes from a user flow
                         href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
-                  - name: Authentication condition applications
+                  - name: Linked applications
                     href: resources/authenticationconditionapplication.md
                     items:
                       - name: List applications
@@ -15121,6 +15179,20 @@ items:
                         items:
                           - name: List
                             href: api/delegatedadmincustomer-list-servicemanagementdetails.md
+              - name: Partner security alert (preview)
+                items:
+                  - name: Overview
+                    displayName: CSP partner's customer security alerts API
+                    href: resources/partner-security-partnersecurityalert-api-overview.md
+                  - name: Partner security alert
+                    href: resources/partner-security-partnersecurityalert.md
+                    items:
+                      - name: List
+                        href: api/partner-security-partnersecurityalert-list-securityalerts.md
+                      - name: Get
+                        href: api/partner-security-partnersecurityalert-get.md
+                      - name: Update
+                        href: api/partner-security-partnersecurityalert-update.md  
       - name: Industry data ETL (preview)
         items:
           - name: Overview
@@ -15217,6 +15289,8 @@ items:
                 href: api/industrydata-outboundprovisioningflowset-list-provisioningflows.md
               - name: Create
                 href: api/industrydata-outboundprovisioningflowset-post-provisioningflows.md
+              - name: Reset
+                href: api/industrydata-provisioningflow-reset.md
               - name: Administrative unit provisioning flow
                 href: resources/industrydata-administrativeunitprovisioningflow.md
                 items:
@@ -17043,6 +17117,10 @@ items:
                     href: api/security-ediscoverycase-delete-searches.md
                   - name: Estimate statistics
                     href: api/security-ediscoverysearch-estimatestatistics.md
+                  - name: Export report
+                    href: api/security-ediscoverysearch-exportreport.md
+                  - name: Export result
+                    href: api/security-ediscoverysearch-exportresult.md
                   - name: Purge data
                     href: api/security-ediscoverysearch-purgedata.md
                   - name: List custodian sources
@@ -18479,7 +18557,7 @@ items:
                             href: api/externalmeetingregistrant-post.md
                           - name: Delete
                             href: api/externalmeetingregistrant-delete.md
-                  - name: Meeting registration (preview)
+                  - name: Meeting registration (deprecated)
                     href: resources/meetingregistration.md
                     items:
                       - name: Create
@@ -18490,7 +18568,7 @@ items:
                         href: api/meetingregistration-update.md
                       - name: Delete
                         href: api/meetingregistration-delete.md
-                      - name: Meeting registrant
+                      - name: Meeting registrant (deprecated)
                         href: resources/meetingregistrant.md
                         items:
                           - name: List
@@ -18548,8 +18626,60 @@ items:
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
               - name: Virtual event
-                items:              
-                  - name: Presenter
+                href: resources/virtualevent.md
+                items:       
+                  - name: Webinar
+                    href: resources/virtualeventwebinar.md
+                    items:
+                      - name: List in organization
+                        href: api/virtualeventsroot-list-webinars.md
+                      - name: List by user role
+                        href: api/virtualeventwebinar-getbyuserrole.md
+                      - name: List by user ID and role
+                        href: api/virtualeventwebinar-getbyuseridandrole.md
+                      - name: Get
+                        href: api/virtualeventwebinar-get.md
+                      - name: Create
+                        href: api/virtualeventsroot-post-webinars.md
+                      - name: Update
+                        href: api/virtualeventwebinar-update.md 
+                      - name: Publish
+                        href: api/virtualeventwebinar-publish.md  
+                      - name: Cancel
+                        href: api/virtualeventwebinar-cancel.md 
+                      - name: Registration
+                        href: resources/virtualeventregistration.md
+                        items:
+                          - name: List
+                            href: api/virtualeventregistration-list.md
+                          - name: Get
+                            href: api/virtualeventregistration-get.md
+                      - name: Registration configuration
+                        href: resources/virtualeventwebinarregistrationconfiguration.md
+                        items:
+                          - name: Get
+                            href: api/virtualeventwebinarregistrationconfiguration-get.md
+                  - name: Town hall (preview)
+                    href: resources/virtualeventtownhall.md
+                    items:
+                      - name: Get
+                        href: api/virtualeventtownhall-get.md
+                      - name: Create
+                        href: api/virtualeventsroot-post-townhalls.md
+                      - name: Update
+                        href: api/virtualeventtownhall-update.md
+                      - name: Publish
+                        href: api/virtualeventtownhall-publish.md  
+                      - name: Cancel
+                        href: api/virtualeventtownhall-cancel.md   
+                  - name: Session
+                    href: resources/virtualeventsession.md
+                    items:
+                      - name: List
+                        href: api/virtualevent-list-sessions.md
+                      - name: Get
+                        href: api/virtualeventsession-get.md
+                  - name: Presenter (preview)
                     href: resources/virtualeventpresenter.md
                     items:
                       - name: List
@@ -18558,46 +18688,10 @@ items:
                         href: api/virtualevent-post-presenters.md
                       - name: Get
                         href: api/virtualeventpresenter-get.md
+                      - name: Update
+                        href: api/virtualeventpresenter-update.md
                       - name: Delete
                         href: api/virtualeventpresenter-delete.md
-                  - name: Session
-                    href: resources/virtualeventsession.md
-                    items:
-                      - name: List
-                        href: api/virtualevent-list-sessions.md
-                      - name: Get
-                        href: api/virtualeventsession-get.md
-                  - name: Town hall
-                    href: resources/virtualeventtownhall.md
-                    items:
-                      - name: Create
-                        href: api/virtualeventsroot-post-townhalls.md
-                      - name: Get
-                        href: api/virtualeventtownhall-get.md
-                      - name: Update
-                        href: api/virtualeventtownhall-update.md
-                      - name: Cancel
-                        href: api/virtualevent-cancel.md
-                      - name: Publish
-                        href: api/virtualevent-publish.md
-                  - name: Webinar
-                    href: resources/virtualeventwebinar.md
-                    items:
-                      - name: List
-                        href: api/virtualeventsroot-list-webinars.md
-                      - name: Get
-                        href: api/virtualeventwebinar-get.md
-                      - name: List by user role
-                        href: api/virtualeventwebinar-getbyuserrole.md
-                      - name: List by user ID and role
-                        href: api/virtualeventwebinar-getbyuseridandrole.md
-                      - name: Registration
-                        href: resources/virtualeventregistration.md
-                        items:
-                          - name: List
-                            href: api/virtualeventregistration-list.md
-                          - name: Get
-                            href: api/virtualeventregistration-get.md
           - name: Devices (preview)
             items:
               - name: Provisioned device

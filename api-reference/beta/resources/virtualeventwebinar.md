@@ -1,7 +1,7 @@
 ---
 title: "virtualEventWebinar resource type"
 description: "Contains information about a virtual event webinar."
-author: "awang119"
+author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
@@ -21,8 +21,12 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Method | Return Type |Description |
 | ------ | ----------- | ---------- |
-| [List webinars](../api/virtualeventsroot-list-webinars.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in the tenant. |
-| [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
+| [Create](../api/virtualeventsroot-post-webinars.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Create a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
+| [Get](../api/virtualeventwebinar-get.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
+| [Update](../api/virtualeventwebinar-update.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Update the properties of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
+| [Publish](../api/virtualeventwebinar-publish.md) | None | Publish a [virtualEventWebinar](../resources/virtualeventwebinar.md). |
+| [Cancel](../api/virtualeventwebinar-cancel.md) | None | Cancel a [virtualEventWebinar](../resources/virtualeventwebinar.md). |
+| [List in tenant](../api/virtualeventsroot-list-webinars.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in the tenant. |
 | [List by user role](../api/virtualeventwebinar-getbyuserrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the signed-in user is either the organizer or a co-organizer. |
 | [List by user ID and role](../api/virtualeventwebinar-getbyuseridandrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the specified user is either the organizer or a co-organizer. |
 
@@ -61,6 +65,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
+| registrationConfiguration | [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) | Registration configuration of the webinar. |
 | registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
