@@ -18,6 +18,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## May 2024: New and generally available
 
+### Identity and access | Identity and sign-in
+
+Customize the authentication experience for your customers by using [user flows in Microsoft Entra External ID in external tenants](/graph/api/resources/authenticationEventsFlow). In the self-service sign-up user flow, you can collect user attributes, disable sign up and only allow sign in, and also integrate with sytems that are external to Microsoft Entra ID.
+
 ### People and workplace intelligence | People admin settings
 
 - Use more [granular privacy control](insights-customize-item-insights-privacy.md) over the availability and display of [item insights](/graph/api/resources/iteminsights) in Microsoft 365. These insights represent the relationships between a user and documents in OneDrive for work or school, calculated using advanced analytics and machine learning techniques. 
@@ -37,6 +41,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 The [custom claims policy](/graph/api/resources/customclaimspolicy) API allows application admins to customize the additional claims emitted in tokens affected by this policy. This API enables admins to manage the claims for their application from the Microsoft Entra portal and by using the Microsoft Graph API interchangeably, allowing more flexibility in their application claims management experience.
 
+### Microsoft Graph Bicep templates
+
+Use the new [Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep) to deploy Microsoft Graph resources for your infrastructure as code (IaC) projects. The following Microsoft Graph resources are currently supported as Bicep resource types:
+
+- application
+- appRoleAssignedTo
+- group
+- federatedIdentityCredential
+- oauth2PermissionGrant
+- servicePrincipal
+
+Microsoft Graph Bicep is currently in preview, but can be used to deploy Microsoft Graph resources that are in `v1.0` and `beta`.
 
 ### Search
 
@@ -48,7 +64,8 @@ Export [results](/graph/api/security-ediscoverysearch-exportresult?view=graph-re
 
 ### Teamwork and communications | Calls and online meetings
 
-[Get](/graph/api/virtualeventwebinarregistrationconfiguration-get?view=graph-rest-beta&preserve-view=true) information about a [webinar registration configuration](/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta&preserve-view=true).
+- [Get](/graph/api/virtualeventwebinarregistrationconfiguration-get?view=graph-rest-beta&preserve-view=true) information about a [webinar registration configuration](/graph/api/resources/virtualeventwebinarregistrationconfiguration?view=graph-rest-beta&preserve-view=true).
+- [List](/graph/api/virtualevent-list-presenters?view=graph-rest-beta), [create](/graph/api/virtualevent-post-presenters?view=graph-rest-beta&preserve-view=true), [get](/graph/api/virtualeventpresenter-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/virtualeventpresenter-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/virtualeventpresenter-delete?view=graph-rest-beta&preserve-view=true) presenters on a [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork and communications | Messaging
 
