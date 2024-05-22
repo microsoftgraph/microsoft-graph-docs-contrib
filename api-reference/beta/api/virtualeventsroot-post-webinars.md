@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new virtual event webinar object in draft mode.
+Create a new [virtualEventWebinar](../resources/virtualeventwebinar.md) object in draft mode.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ POST /solutions/virtualEvents/webinars
 
 In the request body, supply a JSON representation of the supported derived types of [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 
-You can specify the following properties when you create a [virtualEventWebinar](../resources/virtualeventwebinar.md):
+You can specify the following properties when you create a [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
