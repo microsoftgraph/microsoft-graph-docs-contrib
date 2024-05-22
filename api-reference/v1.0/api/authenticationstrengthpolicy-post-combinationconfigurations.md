@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/8313edec-d6af-483f-87b8-ec7cccfd2ab4/combinationConfigurations
+POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}//combinationConfigurations
 Content-Type: application/json
 Content-length: 130
 
@@ -81,6 +81,22 @@ Content-length: 130
   "appliesToCombinations": ["fido2"]
 }
 ```
+
+``` http
+POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations 
+ 
+{ 
+    "@odata.type": "#microsoft.graph.x509CertificateCombinationConfiguration", 
+    "allowedIssuerSkis": [ 
+        "9A4248C6AC8C2931AB2A86537818E92E7B6C97B6" 
+    ], 
+    "allowedPolicyOIDs": [], 
+    "appliesToCombinations": [ 
+    "x509CertificateSingleFactor " 
+    ] 
+} 
+```
+
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationcombinationconfiguration-from--csharp-snippets.md)]
