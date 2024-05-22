@@ -1,21 +1,19 @@
 ---
-title: "Get virtualEvent"
-description: "Read the properties and relationships of a virtualEvent object."
+title: "Get virtualEventWebinar"
+description: "Read the properties and relationships of a virtualEventWebinar object."
 author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get virtualEvent
+# Get virtualEventWebinar
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a virtual event object.
-
-Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md), [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Read the properties and relationships of a virtual event webinar object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,7 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /solutions/virtualEvents/webinars/{id}
-GET /solutions/virtualEvents/townhalls/{id}
 ```
 
 ## Optional query parameters
@@ -57,13 +54,11 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [virtualEventWebinar](../resources/virtualeventwebinar.md) or [virtualEventTownhall](../resources/virtualeventtownhall.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [virtualEventWebinar](../resources/virtualeventwebinar.md) object in the response body.
 
 ## Examples
 
-### Example 1: Get a webinar
-
-#### Request
+### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -110,7 +105,7 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/88b245ac-b
 
 ---
 
-#### Response
+### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -158,81 +153,5 @@ Content-Type: application/json
       }
     ]
   }
-}
-```
-
-### Example 2: Get a town hall
-
-#### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_virtualeventtownhall"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be
-```
-
-#### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.virtualEventTownhall"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.virtualEventTownhall",
-  "id": "fc6e8c15-2fd7-1dd5-caa0-87056e6a12be",
-  "status": "published",
-  "displayName": "The Impact of Tech on Our Lives",
-  "description": {
-    "content": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
-    "contentType": "Html"
-  },
-  "startDateTime": {
-    "dateTime": "2023-11-30T16:30:00",
-    "timeZone": "Eastern Standard Time"
-  },
-  "endDateTime": {
-    "dateTime": "2023-11-30T17:00:00",
-    "timeZone": "Eastern Standard Time"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet",
-    "application": null,
-    "device": null,
-    "user": {
-      "@odata.type": "#microsoft.graph.communicationsUserIdentity",
-      "id": "b7ef013a-c73c-4ec7-8ccb-e56290f45f68",
-      "displayName": "Diane Demoss",
-      "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
-    }
-  },
-  "audience": "everyone",
-  "coOrganizers": [
-    {
-      "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
-      "displayName": "Kenneth Brown",
-      "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
-    }
-  ],
-  "invitedAttendees": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity",
-      "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
-      "displayName": "Emilee Pham",
-      "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
-    }
-  ],
-  "isInviteOnly": false
 }
 ```

@@ -18621,17 +18621,7 @@ items:
                     href: api/presence-setstatusmessage.md
               - name: Virtual event
                 href: resources/virtualevent.md
-                items:     
-                  - name: Get
-                    href: api/virtualevent-get.md
-                  - name: Create
-                    href: api/virtualeventsroot-post-virtualevents.md
-                  - name: Update
-                    href: api/virtualevent-update.md 
-                  - name: Publish
-                    href: api/virtualevent-publish.md  
-                  - name: Cancel
-                    href: api/virtualevent-cancel.md      
+                items:       
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
                     items:
@@ -18641,6 +18631,16 @@ items:
                         href: api/virtualeventwebinar-getbyuserrole.md
                       - name: List by user ID and role
                         href: api/virtualeventwebinar-getbyuseridandrole.md
+                      - name: Get
+                        href: api/virtualeventwebinar-get.md
+                      - name: Create
+                        href: api/virtualeventsroot-post-webinars.md
+                      - name: Update
+                        href: api/virtualeventwebinar-update.md 
+                      - name: Publish
+                        href: api/virtualeventwebinar-publish.md  
+                      - name: Cancel
+                        href: api/virtualeventwebinar-cancel.md 
                       - name: Registration
                         href: resources/virtualeventregistration.md
                         items:
@@ -18655,6 +18655,17 @@ items:
                             href: api/virtualeventwebinarregistrationconfiguration-get.md
                   - name: Town hall (preview)
                     href: resources/virtualeventtownhall.md
+                    items:
+                      - name: Get
+                        href: api/virtualeventtownhall-get.md
+                      - name: Create
+                        href: api/virtualeventsroot-post-townhalls.md
+                      - name: Update
+                        href: api/virtualeventtownhall-update.md
+                      - name: Publish
+                        href: api/virtualeventtownhall-publish.md  
+                      - name: Cancel
+                        href: api/virtualeventtownhall-cancel.md   
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:

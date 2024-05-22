@@ -1,30 +1,29 @@
 ---
-title: "virtualEvent: publish"
-description: "Publish a virtual event to make it visible to its audience."
+title: "virtualEventTownhall: cancel"
+description: "Cancel a virtual event town hall."
 author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualEvent: publish
+# virtualEventTownhall: cancel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publish a virtual event to make it visible to its audience.
-
-Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Cancel a virtual event town hall. A canceled town hall has its **status** set to `canceled` permanently. You can still get a canceled town hall by using the [Get virtualEventTownhall](../api/virtualeventtownhall-get.md) API.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "virtualevent-publish-permissions"
+  "name": "virtualevent-cancel-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualevent-publish-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/virtualevent-cancel-permissions.md)]
 
 ## HTTP request
 
@@ -33,8 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /solutions/virtualEvents/webinars/{id}/publish
-POST /solutions/virtualEvents/townhalls/{id}/publish
+POST /solutions/virtualEvents/townhalls/{id}/cancel
 ```
 
 ## Request headers
@@ -60,16 +58,16 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "virtualevent.publish",
+  "name": "virtualevent.cancel",
   "sampleKeys": ["bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba/publish
+POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba/cancel
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventthispublish-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventthiscancel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

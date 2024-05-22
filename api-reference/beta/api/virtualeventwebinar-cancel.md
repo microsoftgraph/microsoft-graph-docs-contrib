@@ -1,20 +1,18 @@
 ---
-title: "virtualEvent: cancel"
-description: "Cancel a virtual event."
+title: "virtualEventWebinar: cancel"
+description: "Cancel a virtual event webinar."
 author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualEvent: cancel
+# virtualEventWebinar: cancel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a virtual event. A canceled virtual event has its **status** set to `canceled` permanently. You can still get a canceled virtual event by using the [Get virtualEvent](../api/virtualevent-get.md) API.
-
-Currently the supported virtual event types are: [virtualEventWebinar](../resources/virtualeventwebinar.md) and [virtualEventTownhall](../resources/virtualeventtownhall.md).
+Cancel a virtual event webinar. A canceled webinar has its **status** set to `canceled` permanently. You can still get a canceled webinar by using the [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) API.
 
 ## Permissions
 
@@ -35,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /solutions/virtualEvents/webinars/{id}/cancel
-POST /solutions/virtualEvents/townhalls/{id}/cancel
 ```
 
 ## Request headers
@@ -58,22 +55,15 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "virtualevent.cancel",
-  "sampleKeys": ["bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
+  "sampleKeys": ["a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba/cancel
+POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba/cancel
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventthiscancel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
