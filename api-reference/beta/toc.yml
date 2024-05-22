@@ -15333,6 +15333,135 @@ items:
                 href: api/industrydata-yeartimeperioddefinition-update.md
               - name: Delete
                 href: api/industrydata-yeartimeperioddefinition-delete.md
+      - name: Backup Storage
+        displayName: M365 Backup Storage, Microsoft Backup Storage
+        items:
+          - name: Overview
+            href: resources/backuprestoreroot.md
+          - name: Onboarding & Offboarding
+            href: resources/backuprestoreoort.md
+            items:
+              - name: Create Service App
+                href: api/serviceapp-create.md
+              - name: Activate Service App
+                href: api/serviceapp-activate.md
+              - name: Deactivate Service App
+                href: api/serviceapp-deactivate-md
+              - name: List Service Apps
+                href: api/serviceapp-list.md
+              - name: Get Service App
+                href: api/serviceapp-get.md
+              - name: Enable Service
+                href: api/backuprestoreroot-enable.md
+              - name: Get Service Status
+                href: api/backuprestoreroot-get.md
+          - name: Protection Policy
+            href: resources/protectionpolicybase.md
+              - name: Create SharePoint Protection Policy
+                href: api/sharepointprotectionpolicy-create.md
+              - name: Create Exchange Protection Policy
+                href: api/exchangeprotectionpolicy-create.md
+              - name: Create OneDrive Protection Policy
+                href: api/onedriveforbusinessprotectionpolicy-create.md
+              - name: List Protection Policies
+                href: resources/protectionpolicybase-list.md
+              - name: Get Protection Policy
+                href: api/protectionpolicybase-get.md
+              - name: Update SharePoint Protection Policy
+                href: api/sharepointprotectionpolicy-update.md
+              - name: Update Exchange Protection Policy
+                href: api/exchangeprotectionpolicy-update.md
+              - name: Update OneDrive Protection Policy
+                href: api/onedriveforbusinessprotectionpolicy-update.md
+              - name: Delete Protection Policy
+                href: api/protectionpolicybase-delete.md
+              - name: Activate Protection Policy
+                href: api/protectionpolicybase-activate.md
+              - name: Deactivate Protection Policy
+                href: api/protectionpolicybase-deactivate.md
+              - name: List SharePoint Protection Policy
+                href: api/sharepointprotectionpolicy-list-siteinclusionrules.md
+              - name: List Exchange Protection Policy
+                href: api/exchangeprotectionpolicy-list-mailboxinclusionrules.md
+              - name: List OneDrive Protection Policy
+                href: api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md
+          - name: Protection Unit
+            href: resoucres/protectionunitbase.md
+              - name: List Site Protection Units
+                href: api/siteprotectionunit-list.md
+              - name: List Mailbox Protection Units
+                href: api/mailboxprotectionunit-list.md
+              - name: List Drive Protection Units
+                href: api/driveprotectionunit-list.md
+              - name: Get Protection Unit
+                href: api/protectionunitbase-get.md
+          - name: Protection Rule
+            href: resources/protectionrulebase.md
+              - name: Create Site Inclusion Rule
+                href: api/sharepointprotectionpolicy-create-siteinclusionrules.md
+              - name: Create Mailbox Inclusion Rule
+                href: api/exchangeprotectionpolicy-create-mailboxinclusionrules.md
+              - name: Create UserDrive Inclusion Rule
+                href: api/onedriveforbusinessprotectionpolicy-create-driveinclusionrules.md
+              - name: List Site Inclusion Rules
+                href: api/sharepointprotectionpolicy-list-siteinclusionrules.md
+              - name: List Mailbox Inclusion Rules
+                href: api/exchangeprotectionpolicy-list-mailboxinclusionrules.md
+              - name: List OneDrive Inclusion Rules
+                href: api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md
+              - name: Get SharePoint Inclusion Rules
+                href: api/sharepointprotectionpolicy-get-siteinclusionrules.md
+              - name: Get Mailbox Inclusion Rules
+                href: api/exchangeprotectionpolicy-get-mailboxinclusionrules.md
+              - name: Get OneDrive Inclusion Rules
+                href: api/onedriveforbusinessprotectionpolicy-get-driveinclusionrules.md
+              - name: Remove SharePoint Inclusion Rule
+                href: api/sharepointprotectionpolicy-delete-siteinclusionrules.md
+              - name: Remove Exchange Inclusion Rule
+                href: api/exchangeprotectionpolicy-delete-mailboxinclusionrules.md
+              - name: Remove OneDrive Inclusion Rule
+                href: api/onedriveforbusinessprotectionpolicy-delete-driveinclusionrules.md
+              - name: Run Site Inclusion Rule
+                href: api/sharepointprotectionpolicy-run-siteinclusionrules.md
+              - name: Run Mailbox Inclusion Rule
+                href: api/exchangeprotectionpolicy-run-mailboxinclusionrules.md
+              - name: Run OneDrive Inclusion Rule
+                href: api/onedriveforbusinessprotectionpolicy-run-driveinclusionrules.md
+          - name: Restore Point
+            href: resources/restorepoint.md
+              - name: List Restore Point
+                href: api/restorepoint-list.md
+              - name: Search Restore Point
+                href: api/restorepoint-search.md
+          - name: Restore Session
+            href: resourecs/restoresessionbase.md
+              - name: Create SharePoint Restore Session
+                href: api/sharepointrestoresession-create.md
+              - name: Create Mailbox Restore Session
+                href: api/exchangerestoresession-create.md
+              - name: Create OneDrive Restore Session
+                href: api/onedriveforbusinessrestoresession-create.md
+              - name: List Restore Session
+                href: api/restoresession-list.md
+              - name: Get Restore Session
+                href: api/restoresession-get.md
+              - name: Update SharePoint Restore Session
+                href: api/sharepointrestoresession-update.md
+              - name: Update Mailbox Restore Session
+                href: api/exchangerestoresession-update.md
+              - name: Update OneDrive Restore Session
+                href: api/onedriveforbusinessrestoresession-update.md
+              - name: Delete Restore Session
+                href: api/restoresession-delete.md
+              - name: Activate Restore Session
+                href: api/restoresession-activate.md
+          - name: Restore Artifact
+              - name: List Site Artifact
+                href: api/sharepointrestoresession-list-siterestoreartifacts.md
+              - name: List Mailbox Artifact
+                href: api/exchangerestoresession-list-mailboxrestoreartifacts.md
+              - name: List OneDrive Artifact
+                href: api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
