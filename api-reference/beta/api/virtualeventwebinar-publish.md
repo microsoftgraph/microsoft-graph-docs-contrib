@@ -57,7 +57,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "virtualeventwebinar.publish",
-  "sampleKeys": ["bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
+  "sampleKeys": ["a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->
 ``` http
