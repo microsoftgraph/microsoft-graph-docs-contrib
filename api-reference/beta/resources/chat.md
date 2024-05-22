@@ -1,21 +1,21 @@
 ---
-title: "Chat resource type"
-description: "A chat is a collection of chatMessages between one or more participants."
+title: "chat resource type"
+description: "Represents a chat that is a collection of chatMessages between one or more participants."
 author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
-# Chat resource type
+# chat resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A chat is a collection of [chatMessages](chatmessage.md) between one or more participants. Participants can be users or apps.
+Represents a chat that is a collection of [chatMessages](chatmessage.md) between one or more participants. Participants can be users or apps.
 
-> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then some of the listed methods will transitively impact the meeting.
+> **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, some of the listed methods transitively impact the meeting.
 
 ## Methods
 
@@ -70,7 +70,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
-| createdBy | [identitySet](../resources/identitySet.md) | Represents entity that created the chat. Read-only. |
+| createdBy | [identitySet](../resources/identityset.md) | Represents the entity that created the chat. Read-only. |
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
 | isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|
@@ -117,6 +117,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "chatType": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "string (identifier)",
   "isHiddenForAllMembers": "Boolean",
