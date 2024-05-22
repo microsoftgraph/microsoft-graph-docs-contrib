@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDetail resource type"
-description: "**TODO: Add Description**"
+description: "**This is the resource type for discovered apps**"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**Please read disclaimer**
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -30,25 +30,25 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.security.appCategory|**TODO: Add Description**.The possible values are: `security`, `collaboration`, `hostingServices`, `onlineMeetings`, `newsAndEntertainment`, `eCommerce`, `education`, `cloudStorage`, `marketing`, `operationsManagement`, `health`, `advertising`, `productivity`, `accountingAndFinance`, `contentManagement`, `contentSharing`, `businessManagement`, `communications`, `dataAnalytics`, `businessIntelligence`, `webemail`, `codeHosting`, `webAnalytics`, `socialNetwork`, `crm`, `forums`, `humanResourceManagement`, `transportationAndTravel`, `productDesign`, `sales`, `cloudComputingPlatform`, `projectManagement`, `personalInstantMessaging`, `developmentTools`, `itServices`, `supplyChainAndLogistics`, `propertyManagement`, `customerSupport`, `internetOfThings`, `vendorManagementSystems`, `websiteMonitoring`, `generativeAi`, `unknown`, `unknownFutureValue`.|
-|displayName|String|**TODO: Add Description**|
-|domains|String collection|**TODO: Add Description**|
-|downloadNetworkTrafficInBytes|Int64|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|ipAddressCount|Int64|**TODO: Add Description**|
-|lastSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|riskScore|Int64|**TODO: Add Description**|
-|tags|String collection|**TODO: Add Description**|
-|transactionCount|Int64|**TODO: Add Description**|
-|uploadNetworkTrafficInBytes|Int64|**TODO: Add Description**|
-|userCount|Int64|**TODO: Add Description**|
+|category|microsoft.graph.security.appCategory|**This is the category of discovered app**.The possible values are: `security`, `collaboration`, `hostingServices`, `onlineMeetings`, `newsAndEntertainment`, `eCommerce`, `education`, `cloudStorage`, `marketing`, `operationsManagement`, `health`, `advertising`, `productivity`, `accountingAndFinance`, `contentManagement`, `contentSharing`, `businessManagement`, `communications`, `dataAnalytics`, `businessIntelligence`, `webemail`, `codeHosting`, `webAnalytics`, `socialNetwork`, `crm`, `forums`, `humanResourceManagement`, `transportationAndTravel`, `productDesign`, `sales`, `cloudComputingPlatform`, `projectManagement`, `personalInstantMessaging`, `developmentTools`, `itServices`, `supplyChainAndLogistics`, `propertyManagement`, `customerSupport`, `internetOfThings`, `vendorManagementSystems`, `websiteMonitoring`, `generativeAi`, `unknown`, `unknownFutureValue`.|
+|displayName|String|**This is the app Name**|
+|domains|String collection|**This is the domain**|
+|downloadNetworkTrafficInBytes|Int64|**This is download traffic size**|
+|id|String|**This is the SaaSDB ID of App** Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|ipAddressCount|Int64|**This is the IpAddress**|
+|lastSeenDateTime|DateTimeOffset|**This is the lastseendate**|
+|riskScore|Int64|**This is App Riskscore**|
+|tags|String collection|**This is the App tag. Applicable values can be Unsanctioned or Sanctioned or Monitored or a Customtag**|
+|transactionCount|Int64|**This is the App transaction count**|
+|uploadNetworkTrafficInBytes|Int64|**This is the app upload traffic size in bytes**|
+|userCount|Int64|**This is the count of users using app**|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appInfo|[discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|**TODO: Add Description**|
-|ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|**TODO: Add Description**|
-|users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|**TODO: Add Description**|
+|appInfo|[discoveredCloudAppInfo](../resources/security-discoveredcloudappinfo.md)|**This is the Application Information**|
+|ipAddresses|[microsoft.graph.security.discoveredCloudAppIPAddress](../resources/security-discoveredcloudappipaddress.md) collection|**This is the list of IpAddresses that App is accessing**|
+|users|[microsoft.graph.security.discoveredCloudAppUser](../resources/security-discoveredcloudappuser.md) collection|**This is the list of users that are acccessing app**|
 
 ## JSON representation
 The following JSON representation shows the resource type.
