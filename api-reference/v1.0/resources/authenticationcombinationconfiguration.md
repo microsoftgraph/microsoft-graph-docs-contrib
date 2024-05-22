@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Sets restrictions on specific types, modes, or versions of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md). The following resources inherit from this abstract and define the various types of combination configurations:
+Sets restrictions on specific types, modes, or versions of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md). The following resources inherit from the [authentication strength](authenticationstrengths-overview.md) abstract and define the various types of combination configurations:
 * [fido2combinationConfigurations](fido2combinationconfiguration.md) 
 * [x509certificatecombinationconfiguration](x509certificatecombinationconfiguration.md)
 
@@ -23,16 +23,16 @@ Sets restrictions on specific types, modes, or versions of an authentication met
 |[Create](../api/authenticationstrengthpolicy-post-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)| Create a new [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) |
 |[Get](../api/authenticationcombinationconfiguration-get.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Read the properties and relationships of a [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
 |[Update](../api/authenticationcombinationconfiguration-update.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
-|[Delete](../api/authenticationstrengthpolicy-delete-combinationconfigurations.md)|None|Delete an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) obejct.|
+|[Delete](../api/authenticationstrengthpolicy-delete-combinationconfigurations.md)|None|Delete an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must be an **allowedCombinations** object that's defined for the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md). The only possible value for `fido2combinationConfigurations` is `"fido2"`.|
-|id|String|A unique system-generated identifier.|
+|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must be an **allowedCombinations** object, part of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md). The only possible value for `fido2combinationConfigurations` is `"fido2"`.|
+|ID|String|A unique system-generated identifier.|
 
 ## Relationships
-|id|String|A unique system-generated identifier.|
+|ID|String|A unique system-generated identifier.|
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
