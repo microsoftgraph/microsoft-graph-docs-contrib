@@ -1,6 +1,6 @@
 ---
-title: "Update authentication signInPreferences"
-description: "Update the properties of a user's authentication sign in preferences."
+title: "Update authentication method states"
+description: "Update the properties of a user's authentication method states."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -8,12 +8,14 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Update authentication signInPreferences
+# Update authentication method states
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [signInPreferences](../resources/signInPreferences.md) object.
+Update the properties of a user's authentication method states. Use this API to update the following information:
+
+- A user's [signInPreferences](../resources/signInPreferences.md)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

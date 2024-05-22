@@ -1,6 +1,6 @@
 ---
 title: "authentication resource type"
-description: "Exposes relationships that represent the authentication methods supported by Microsoft Entra ID and that can configured for users."
+description: "Exposes authentication method states for users and relationships that represent the authentication methods supported by Microsoft Entra ID."
 author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Exposes relationships that represent the authentication methods supported by Microsoft Entra ID and that can configured for users.
+Exposes authentication method states for users and relationships that represent the authentication methods supported by Microsoft Entra ID.
 
 Inherits from [entity](entity.md).
 
@@ -23,7 +23,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the **authentication**.|
+|id|String|Unique identifier. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
