@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppUser resource type"
-description: "Respresents discovered user"
+description: "Represents discovered user"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**Please read disclaimer**
 
 ## Methods
 |Method|Return type|Description|
@@ -23,7 +23,7 @@ Namespace: microsoft.graph.security
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|userIdentifier|String|**TODO: Add Description**|
+|userIdentifier|String|**These are the available properties for users accessing discovered apps**|
 
 ## Relationships
 None.
