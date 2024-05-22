@@ -28,7 +28,7 @@ Inherits from [namedLocation](../resources/namedlocation.md).
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|compliantNetworkType|compliantNetworkType|Type of network access location. Currently the only possible value is `allTenantCompliantNetworks`.|
+|compliantNetworkType|compliantNetworkType|Type of compliant network. Currently the only possible value is `allTenantCompliantNetworks`.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedlocation.md).|
 |displayName|String|Human-readable name of the location. Required. Not changeable. Inherited from [namedLocation](../resources/namedlocation.md).|
 |id|String|Identifier of a namedLocation object. Read-only. Inherited from [entity](../resources/entity.md).|
