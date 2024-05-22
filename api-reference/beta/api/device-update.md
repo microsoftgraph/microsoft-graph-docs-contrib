@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 In application-only scenarios and for non-Windows devices, that is, where the **operatingSystem** property is not `Windows`, the app can update only the **extensionAttributes** property.
 
-The calling user must also be in at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json): *Intune Administrator* or *Windows 365 Administrator*. A calling user in the *Cloud Device Administrator* role can only enable or disable devices using this API and a user with the *Windows 365 Administrator* role can only update basic device properties. A Global Administrator has full management privileges over the device.
+The calling user must also be in at least the *Intune Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). A calling user in the *Cloud Device Administrator* role can only enable or disable devices and a user with the *Windows 365 Administrator* role can only update basic device properties.
 
 ## HTTP request
 
@@ -47,7 +47,7 @@ In the request body, supply the values for the [device](../resources/device.md) 
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Only callers in Global Administrator and Cloud Device Administrator roles can update this property. |
+|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Only callers with at least the *Cloud Device Administrator* role can update this property. |
 |operatingSystem|String|The type of operating system on the device.|
 |operatingSystemVersion|String|The version of the operating system on the device|
 |displayName|String|The display name for the device.|
