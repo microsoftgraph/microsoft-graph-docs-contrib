@@ -371,7 +371,7 @@ Content-type: application/json
                 }
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -559,7 +559,7 @@ Content-type: application/json
             "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2022-05-03T18:15:42.307Z"
-            }
+            },
             "createdBy": {
                 "application": null,
                 "device": null,
@@ -584,7 +584,7 @@ Content-type: application/json
             "viewpoint": {
                 "isHidden": true,
                 "lastMessageReadDateTime": "2022-03-08T19:55:30.491Z"
-            }
+            },
             "createdBy": {
                 "application": null,
                 "device": null,
@@ -854,7 +854,7 @@ Content-type: application/json
             "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2023-06-29T10:22:15.024Z"
-            }
+            },
             "createdBy": {
                 "application": null,
                 "device": null,
