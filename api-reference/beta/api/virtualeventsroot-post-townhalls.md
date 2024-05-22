@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new virtual event town hall object in draft mode.
+Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object in draft mode.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ POST /solutions/virtualEvents/townhalls
 
 In the request body, supply a JSON representation of the supported derived types of [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
 
-You can specify the following properties when you create a [virtualEventTownhall](../resources/virtualeventtownhall.md):
+You can specify the following properties when you create a [virtualEventTownhall](../resources/virtualeventtownhall.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
