@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|BackupRestore-Control.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Control.ReadWrite.All|BackupRestore-Control.ReadWrite.All|
+|Application|Not supported.|Not supported.|
 
 ## HTTP request
 
