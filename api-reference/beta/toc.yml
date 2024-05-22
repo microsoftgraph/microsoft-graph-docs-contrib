@@ -15357,6 +15357,7 @@ items:
                 href: api/backuprestoreroot-get.md
           - name: Protection Policy
             href: resources/protectionpolicybase.md
+            items:
               - name: Create SharePoint Protection Policy
                 href: api/sharepointprotectionpolicy-create.md
               - name: Create Exchange Protection Policy
@@ -15387,6 +15388,7 @@ items:
                 href: api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules.md
           - name: Protection Unit
             href: resoucres/protectionunitbase.md
+            items:
               - name: List Site Protection Units
                 href: api/siteprotectionunit-list.md
               - name: List Mailbox Protection Units
@@ -15397,6 +15399,7 @@ items:
                 href: api/protectionunitbase-get.md
           - name: Protection Rule
             href: resources/protectionrulebase.md
+            items:
               - name: Create Site Inclusion Rule
                 href: api/sharepointprotectionpolicy-create-siteinclusionrules.md
               - name: Create Mailbox Inclusion Rule
@@ -15429,12 +15432,14 @@ items:
                 href: api/onedriveforbusinessprotectionpolicy-run-driveinclusionrules.md
           - name: Restore Point
             href: resources/restorepoint.md
+            items:
               - name: List Restore Point
                 href: api/restorepoint-list.md
               - name: Search Restore Point
                 href: api/restorepoint-search.md
           - name: Restore Session
             href: resourecs/restoresessionbase.md
+            items:
               - name: Create SharePoint Restore Session
                 href: api/sharepointrestoresession-create.md
               - name: Create Mailbox Restore Session
@@ -15456,6 +15461,8 @@ items:
               - name: Activate Restore Session
                 href: api/restoresession-activate.md
           - name: Restore Artifact
+            href: resources/restoreartifactbasemd
+            items:
               - name: List Site Artifact
                 href: api/sharepointrestoresession-list-siterestoreartifacts.md
               - name: List Mailbox Artifact
