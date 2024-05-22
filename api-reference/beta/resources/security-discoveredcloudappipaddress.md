@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**Please read disclaimer**
 
 ## Methods
 |Method|Return type|Description|
@@ -23,7 +23,7 @@ Namespace: microsoft.graph.security
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ipAddress|String|**TODO: Add Description**|
+|ipAddress|String|**These are the list of properties available to query the IpAddress accessed by discovered SaaS apps**|
 
 ## Relationships
 None.
