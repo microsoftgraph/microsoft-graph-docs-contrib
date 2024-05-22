@@ -1,6 +1,6 @@
 ---
 title: "discoveredCloudAppDevice resource type"
-description: "**TODO: Add Description**"
+description: "**This is a report on the devices that are accessing discovered SaaS apps**"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+**Please read the disclaimer**
 
 ## Methods
 |Method|Return type|Description|
@@ -23,7 +23,7 @@ Namespace: microsoft.graph.security
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
+|name|String|**This is the list of properties available**|
 
 ## Relationships
 None.
