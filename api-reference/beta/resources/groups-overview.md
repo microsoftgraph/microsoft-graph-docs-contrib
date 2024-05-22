@@ -295,6 +295,16 @@ Using Microsoft Graph, you can perform the following common operations on groups
 | Manage OneNote notebooks for a group |[Create](../api/onenote-post-notebooks.md), [list](../api/onenote-list-notebooks.md) |
 | Enable a Microsoft group for Microsoft Teams |[Create](../api/team-put-teams.md) |
 
+## Microsoft Entra roles for managing groups
+
+To manage groups in delegated scenarios, the app must be granted the appropriate permissions and the signed-in user must be in a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). 
+
+The following Microsoft Entra roles are the least privileged roles for managing all aspects of groups through Microsoft Graph, except for role-assignable groups. The least privileged role for managing role-assignable groups is **Privileged Role Administrator**.
+
+- Directory Writers
+- Groups Administrator
+- User Administrator
+
 ## Next step
 
 > [!div class="nextstepaction"]
