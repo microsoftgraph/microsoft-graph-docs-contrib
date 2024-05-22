@@ -86,10 +86,10 @@ Namespace: microsoft.graph
 
 | Member              |
 | :-------------------|
-| Required            |
-| Recommeded          |
-| UnknownFutureValue  |
-| PeerRecommeded          |
+| required            |
+| recommeded          |
+| unknownFutureValue  |
+| peerRecommeded          |
 
 ### courseStatus values
 
