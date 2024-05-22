@@ -25,9 +25,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_list_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-list-members-permissions.md)]
 
-> **Note:** To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
-
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> **Note:** To list the members of a hidden membership group, the *Member.Read.Hidden* permission is also required.
 
 ## HTTP request
 

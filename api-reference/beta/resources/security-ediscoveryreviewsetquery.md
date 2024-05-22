@@ -48,6 +48,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.ediscoveryReviewSetQuery",
+  "baseType": "microsoft.graph.security.ediscoverySearch",
   "openType": false
 }
 -->
