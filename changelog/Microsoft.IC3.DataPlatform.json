@@ -821,7 +821,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [userIdentity](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-userIdentity?view=graph-rest-1.0) resource.",
+          "Description": "Added the [userIdentity](https://learn.microsoft.com/en-us/graph/api/resources/userIdentity?view=graph-rest-1.0) resource.",
           "Target": "userIdentity"
         },
         {
