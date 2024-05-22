@@ -734,7 +734,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request that will filter all the chats based on a specific member's display name.
+The following example shows a request that filters all the chats based on a specific member's display name.
 
 # [HTTP](#tab/http)
 <!-- {

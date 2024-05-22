@@ -1,5 +1,5 @@
 ---
-title: "chat resource type"
+title: "Chat resource type"
 description: "A chat is a collection of chatMessages between one or more participants."
 author: "RamjotSingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
-# chat resource type
+# Chat resource type
 
 Namespace: microsoft.graph
 
