@@ -1095,6 +1095,5 @@ Content-type: application/json
             }
         }
     ]
-
 }
 ```
