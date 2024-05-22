@@ -3,7 +3,7 @@ title: "educationSubmission: excuse"
 description: "Excuse an educationSubmission  object."
 author: "v-rmanda"
 ms.localizationpriority: medium
-ms.prod: "education"
+ms.subservice: "education"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Excuse a [submission](../resources/educationsubmission.md). Excused submissions aren't included in average grade calculations. Grading rubrics and feedback are deleted. Only teachers can perform this action. 
 
 If the `Prefer: include-unknown-enum-members` request header is provided, the excused submission shows the **excused** status. Otherwise, the submission status retains the **returned** status. For more information about how to use this header, see the [Examples](#examples) section.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -211,7 +213,7 @@ HTTP/1.1 200 Ok
 ```
 ## See also
 
-* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
+* [Status, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-status-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
