@@ -11805,6 +11805,8 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
+                  - name: Get rootDomain
+                    href: api/domain-list-rootdomain.md
               - name: External user profiles
                 items:
                 - name: External user profile
