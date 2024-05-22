@@ -1,19 +1,19 @@
 ---
-title: "Create virtualEventTownhall"
-description: "Create a new virtualEventTownhall object in draft mode."
+title: "Create virtualEventWebinar"
+description: "Create a new virtualEventWebinar object in draft mode."
 author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create virtualEventTownhall
+# Create virtualEventWebinar
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object in draft mode.
+Create a new [virtualEventWebinar](../resources/virtualeventwebinar.md) object in draft mode.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /solutions/virtualEvents/townhalls
+POST /solutions/virtualEvents/webinars
 ```
 
 ## Request headers
@@ -45,52 +45,51 @@ POST /solutions/virtualEvents/townhalls
 
 ## Request body
 
-In the request body, supply a JSON representation of the supported derived types of [virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+In the request body, supply a JSON representation of the supported derived types of [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 
-You can specify the following properties when you create a [virtualEventTownhall](../resources/virtualeventtownhall.md).
+You can specify the following properties when you create a [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | [meetingAudience](../resources/virtualeventtownhall.md#meetingaudience-values) | The audience to whom the town hall is visible. |
-| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the town hall. |
-| description | [itemBody](../resources/itembody.md) | A description of the town hall. |
-| displayName | String | Display name of the town hall. |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall ends. |
-| invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
-| isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall starts. |
+| audience | [meetingAudience](../resources/virtualeventwebinar.md#meetingaudience-values) | The audience to whom the webinar is visible. |
+| coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the webinar. |
+| description | [itemBody](../resources/itembody.md) | A description of the webinar. |
+| displayName | String | The display name of the webinar. |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar ends. |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar starts. |
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [virtualEventTownhall](../resources/virtualeventtownhall.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [virtualEventWebinar](../resources/virtualeventwebinar.md) object in the response body.
 
 ## Examples
 
 ### Request
+
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_virtualeventtownhall"
+  "name": "create_virtualeventwebinar"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls
+POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars
 Content-Type: application/json
 
 {     
     "displayName": "The Impact of Tech on Our Lives",
     "description": "Discusses how technology has changed the way we communicate.",
     "startDateTime": {
-      "dateTime": "2023-03-30T10:00:00", 
+      "dateTime": "2024-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 
     },
     "endDateTime": {
-      "dateTime": "2023-03-30T17:00:00", 
+      "dateTime": "2024-03-30T17:00:00", 
       "timeZone": "Pacific Standard Time" 
     },
     "audience": "organization",
     "coOrganizers": [
-      { 
+      {
         "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b", 
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
@@ -105,7 +104,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.virtualEventTownhall"
+  "@odata.type": "microsoft.graph.virtualEventWebinar"
 }
 -->
 ``` http
@@ -113,16 +112,16 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 { 
-    "id": "bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
+    "id": "a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
     "status": "draft",
     "displayName": "The Impact of Tech on Our Lives",
     "description": "Discusses how technology has changed the way we communicate.",
     "startDateTime": {
-      "dateTime": "2023-03-30T10:00:00", 
+      "dateTime": "2024-03-30T10:00:00", 
       "timeZone": "Pacific Standard Time" 
     },
     "endDateTime": {
-      "dateTime": "2023-03-30T17:00:00", 
+      "dateTime": "2024-03-30T17:00:00", 
       "timeZone": "Pacific Standard Time" 
     },
     "audience": "organization",
@@ -141,8 +140,6 @@ Content-Type: application/json
         "displayName": "Kenneth Brown", 
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
-    ],
-    "invitedAttendees": [],
-    "isInviteOnly": false
+    ]
 }
 ```
