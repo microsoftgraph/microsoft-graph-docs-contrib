@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Create combinationConfiguration
+# Create authenticationCombinationConfiguration
 Namespace: microsoft.graph
 
 Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:
@@ -53,7 +53,7 @@ You can specify the following properties when creating an **authenticationCombin
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) or an [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [authenticationCombinationConfiguration](..resources/authenticationCombinationConfiguration.md) object which can be a [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) or an [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md) object in the response body.
 
 ## Examples
 
