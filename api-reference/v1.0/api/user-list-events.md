@@ -68,11 +68,10 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
 > [!NOTE]
->
-> ### Unsupported properties for the `$filter` parameter
-> The following properties are not supported to use with the `$filter` parameter:
-> + `recurrence`
+> You can't use the `$filter` parameter to filter on the **recurrence** property.
+
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
@@ -86,8 +85,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
-## Example
-##### Request
+## Examples
+### Request
 The following example shows a request. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
@@ -138,7 +137,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-##### Response
+### Response
 The following example shows the response. The **body** property is returned in the default HTML format.
 <!-- {
   "blockType": "response",
