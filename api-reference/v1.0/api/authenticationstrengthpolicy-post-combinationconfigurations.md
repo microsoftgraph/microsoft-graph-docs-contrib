@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:
-* [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md)
+* [fido2combinationConfiguration](../resources/fido2combinationconfiguration.md)
 * [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -57,13 +57,15 @@ If successful, this method returns a `201 Created` response code and a [fido2com
 
 ## Examples
 
-### Request
+### Example 1: Create a fido2combinationConfiguration object
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationcombinationconfiguration_from_"
+  "name": "create_authenticationcombinationconfiguration_fido2CombinationConfiguration"
 }
 -->
 ``` http
@@ -81,22 +83,6 @@ Content-length: 130
   "appliesToCombinations": ["fido2"]
 }
 ```
-
-``` http
-POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations 
- 
-{ 
-    "@odata.type": "#microsoft.graph.x509CertificateCombinationConfiguration", 
-    "allowedIssuerSkis": [ 
-        "9A4248C6AC8C2931AB2A86537818E92E7B6C97B6" 
-    ], 
-    "allowedPolicyOIDs": [], 
-    "appliesToCombinations": [ 
-    "x509CertificateSingleFactor " 
-    ] 
-} 
-```
-
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationcombinationconfiguration-from--csharp-snippets.md)]
@@ -132,7 +118,7 @@ POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationS
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -155,5 +141,56 @@ Content-Type: application/json
   ],
   "appliesToCombinations": ["fido2"]
 }
+```
+
+### Example 2: Create a x509CertificateCombinationConfiguration object
+
+#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationcombinationconfiguration_x509CertificateCombinationConfiguration"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations 
+ 
+{ 
+    "@odata.type": "#microsoft.graph.x509CertificateCombinationConfiguration", 
+    "allowedIssuerSkis": [ 
+        "9A4248C6AC8C2931AB2A86537818E92E7B6C97B6" 
+    ], 
+    "allowedPolicyOIDs": [], 
+    "appliesToCombinations": [ 
+        "x509CertificateSingleFactor " 
+    ] 
+} 
+```
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationCombinationConfiguration"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{ 
+    "@odata.type": "#microsoft.graph.x509CertificateCombinationConfiguration", 
+    "id" : "96cb1a17-e45e-4b4f-8b4b-4a9490d63d66",
+    "allowedIssuerSkis": [ 
+        "9A4248C6AC8C2931AB2A86537818E92E7B6C97B6" 
+    ], 
+    "allowedPolicyOIDs": [], 
+    "appliesToCombinations": [ 
+        "x509CertificateSingleFactor " 
+    ] 
+} 
 ```
 
