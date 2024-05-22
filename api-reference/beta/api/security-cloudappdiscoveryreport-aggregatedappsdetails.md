@@ -1,6 +1,6 @@
 ---
 title: "cloudAppDiscoveryReport: aggregatedAppsDetails"
-description: "**TODO: Add Description**"
+description: "This is a aggregation of discovered apps for the given duration"
 author: "nechamam"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO:The field aggregatedAppsDetails shows the information of all apps. You will have to input the specific time period as input for this field**
+**The field aggregatedAppsDetails shows the information of all apps. You will have to input the specific time period as input for this field**
 
 ## Permissions
 
@@ -42,7 +42,7 @@ The following table lists the parameters that are required when you call this fu
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|period|Duration|**TODO: Please give the inputs of the time frame you want to query the data**|
+|period|Duration|**Please input the time frame you want to query the data.The supported time frames are last 7,30 or 90 days**|
 
 
 ## Request headers
