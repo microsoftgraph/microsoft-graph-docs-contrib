@@ -68,7 +68,7 @@ For more information on OData query options, see [OData query parameters](/graph
 | Mail-enabled security groups   | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%2BgroupTypes%2Fany(c%3Ac%2Beq%2B'Unified')%2Band%2BmailEnabled%2Beq%2Btrue%2Band%2BsecurityEnabled%2Beq%2Btrue%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)  `/groups?$filter=NOT groupTypes/any(c:c eq 'Unified') and mailEnabled eq true and securityEnabled eq true&$count=true` <sup> [ ** ](#**) </sup>          |
 | Distribution groups            | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%2BgroupTypes%2Fany(c%3Ac%2Beq%2B'Unified')%2Band%2BmailEnabled%2Beq%2Btrue%2Band%2BsecurityEnabled%2Beq%2Bfalse%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `/groups?$filter=NOT groupTypes/any(c:c eq 'Unified') and mailEnabled eq true and securityEnabled eq false&$count=true` <sup> [ ** ](#**) </sup>           |
 
-<sup>**</sup>: This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
+<sup><a name="**"></a> ** </sup> : This example is only supported with [advanced query capabilities](/graph/aad-advanced-queries).
 
 ## Request headers
 
