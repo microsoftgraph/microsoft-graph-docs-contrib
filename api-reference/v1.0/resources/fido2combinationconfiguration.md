@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Configuration To require specific FIDO2 key types in an authentication strength. An administrator may use this entity to specify which Authenticator Attestation GUIDs (AAGUIDs) are allowed, as part of certain authentication method combinations, in an [authentication strength](authenticationstrengthpolicy.md).
+Configuration to require specific FIDO2 key types in an authentication strength. Use this entity to specify which Authenticator Attestation GUIDs (AAGUIDs) are allowed, as part of certain authentication method combinations, in an [authentication strength](authenticationstrengthpolicy.md).
 
 Inherits and derived from [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md).
 
