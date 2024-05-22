@@ -32,16 +32,14 @@ Microsoft Entra ID supports the following types of groups.
 > [!NOTE]
 > Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) which can't be managed or retrieved through Microsoft Graph.
 
-Only Microsoft 365 and security groups can be managed through the Microsoft Graph groups API. Mail-enabled and distribution groups are read-only through Microsoft Graph.
-
-In Microsoft Graph, the type of group can be identified by the settings of its **groupType**, **mailEnabled**, and **securityEnabled** properties as indicated in the following table.
+In Microsoft Graph, the type of group can be identified by the settings of its **groupType**, **mailEnabled**, and **securityEnabled** properties. The following table indicates how to differentiate the groups by their settings, and whether the group types can be managed through the Microsoft Graph groups APIs.
 
 | Type |groupType | mailEnabled | securityEnabled | Created and managed via the groups APIs |
 |--|--|--|--|--|
 | [Microsoft 365 groups](#microsoft-365-groups) | `["Unified"]` | `true` | `true` or `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | `[]` | `false` | `true` | Yes |
-| [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | `[]` | `true` | `true` | No |
-| Distribution groups | `[]` | `true` | `false` | No |
+| [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | `[]` | `true` | `true` | No; read-only through Microsoft Graph |
+| Distribution groups | `[]` | `true` | `false` | No; read-only through Microsoft Graph |
 
 For more information about groups in Microsoft Entra ID, see [compare groups in Microsoft Entra ID](/microsoft-365/admin/create-groups/compare-groups).
 
@@ -280,12 +278,12 @@ Using Microsoft Graph, you can perform the following common operations on groups
 |:-|:-|
 | **Create groups, manage group characteristics** |  |
 | Create new groups, get existing groups, update the properties on groups, and delete groups. | [Create new groups](../api/group-post-groups.md) <br/> [List groups](../api/group-list.md) <br/> [Update groups](../api/group-update.md) <br/> [Delete groups](../api/group-delete.md) <br/> [Renew](../api/group-renew.md) groups that are about to expire <br/> [Restore](../api/directory-deleteditems-restore.md) deleted Microsoft 365 groups|
-| **Manage group membership and ownership** |  |  |
+| **Manage group membership and ownership** |  |
 | List the members of a group, and add or remove members. | [List members](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md) |
 | Determine whether a user is a member of a group, get all the groups the user is a member of. | [Check member groups](../api/directoryobject-checkmembergroups.md) <br/> [Get member groups](../api/directoryobject-getmembergroups.md) |
 | List the owners of a group, and add or remove owners. | [List owners](../api/group-list-owners.md) <br/> [Add owner](../api/group-post-members.md) <br/> [Remove owner](../api/group-delete-members.md) |
-| **Group functionality for Microsoft 365 apps** |  |  |
-| Manage group conversations | [Create](../api/group-post-conversations), [get](.../api/group-get-conversation.md), or [delete](../api/group-delete-conversation.md)  |
+| **Group functionality for Microsoft 365 apps** |  |
+| Manage group conversations | [Create](../api/group-post-conversations.md), [get](../api/group-get-conversation.md), or [delete](../api/group-delete-conversation.md)  |
 | Schedule and manage calendar events on a group calendar | [Create](../api/group-post-events.md), [list](../api/group-list-events.md), [get](../api/group-get-event.md), [update](../api/group-update-event.md), [delete](../api/group-delete-event.md) |
 | Manage OneNote notebooks for a group |[Create](../api/onenote-post-notebooks.md), [list](../api/onenote-list-notebooks.md) |
 | Enable a Microsoft group for Microsoft Teams |[Create](../api/team-put-teams.md) |
