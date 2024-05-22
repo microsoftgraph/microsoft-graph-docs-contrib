@@ -779,7 +779,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "x509CertificateCombinationConfiguration",
               "ChangeType": "Addition",
-              "Description": "Added the [x509CertificateCombinationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateCombinationConfiguration?view=graph-rest-1.0) resource.",
+              "Description": "Added the [x509CertificateCombinationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateCombinationConfiguration?view=graph-rest-1.0) resource and its associated API operations. Use this resource type to restrict an authentication strength policy to specific certificate properties.",
               "Target": "x509CertificateCombinationConfiguration"
             }
           ],
