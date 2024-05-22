@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publish a virtual event town hall to make it visible to its audience.
+Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md) to make it visible to its audience.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +38,7 @@ POST /solutions/virtualEvents/townhalls/{id}/publish
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -56,7 +56,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "virtualevent.publish",
+  "name": "virtualeventtownhall.publish",
   "sampleKeys": ["bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->

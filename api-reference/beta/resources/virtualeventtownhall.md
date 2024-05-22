@@ -21,11 +21,11 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Create](../api/virtualeventsroot-post-virtualevents.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
-| [Get](../api/virtualevent-get.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
-| [Update](../api/virtualevent-update.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
-| [Publish](../api/virtualevent-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
-| [Cancel](../api/virtualevent-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
+| [Create](../api/virtualeventsroot-post-townhalls.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Get](../api/virtualeventtownhall-get.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Read the properties and relationships of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Update](../api/virtualeventtownhall-update.md) | [virtualEventTownhall](../resources/virtualeventtownhall.md) | Update the properties of a [virtualEventTownhall](../resources/virtualeventtownhall.md) object. |
+| [Publish](../api/virtualeventtownhall-publish.md) | None | Publish a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
+| [Cancel](../api/virtualeventtownhall-cancel.md) | None | Cancel a [virtualEventTownhall](../resources/virtualeventtownhall.md).|
 
 ## Properties
 

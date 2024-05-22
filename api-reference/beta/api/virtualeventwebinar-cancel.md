@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a virtual event webinar. A canceled webinar has its **status** set to `canceled` permanently. You can still get a canceled webinar by using the [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) API.
+Cancel a [virtualEventWebinar](../resources/virtualeventwebinar.md). A canceled webinar has its **status** set to `canceled` permanently. You can still get a canceled webinar by using the [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) API.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ POST /solutions/virtualEvents/webinars/{id}/cancel
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -57,7 +57,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "virtualevent.cancel",
+  "name": "virtualeventwebinar.cancel",
   "sampleKeys": ["a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->

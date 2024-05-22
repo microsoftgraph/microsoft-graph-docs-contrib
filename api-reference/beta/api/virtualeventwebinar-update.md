@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a virtual event webinar object.
+Update the properties of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -41,7 +41,7 @@ PATCH /solutions/virtualEvents/webinars/{id}
 
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
