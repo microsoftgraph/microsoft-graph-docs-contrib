@@ -1,5 +1,5 @@
 ---
-title: "Chat resource type"
+title: "chat resource type"
 description: "A chat is a collection of chatMessages between one or more participants."
 author: "RamjotSingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
-# Chat resource type
+# chat resource type
 
 Namespace: microsoft.graph
 
@@ -58,7 +58,6 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
-| createdBy | [identitySet](../resources/identitySet.md) | Represents entity that created the chat. Read-only. |
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or the list of members was last changed. Read-only.|

@@ -48,7 +48,7 @@ The following table lists the properties that are required to create a chat obje
 |:---|:---|:---|
 |topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
-|members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every user who participates in the chat, including the user who initiates the created request, must be specified in this list. Each member must be assigned a role of `owner` or `guest`. In-tenant guests must be assigned the `guest` role. Out-of-tenant guests must be assigned with `owner` role.|
+|members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every user who will participate in the chat, including the user who initiates the create request, must be specified in this list. Each member must be assigned a role of `owner` or `guest`. In-tenant guest users must be assigned the `guest` role. Out-of-tenant external users must be assigned with `owner` role.|
 
 ## Response
 
@@ -140,22 +140,7 @@ Content-Type: application/json
     "topic": null,
     "createdDateTime": "2020-12-04T23:10:28.51Z",
     "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
-    "chatType": "oneOnOne",
-    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-    "isHiddenForAllMembers": false,
-    "viewpoint": null,
-    "onlineMeetingInfo": null,
-    "createdBy": {
-        "application": null,
-        "device": null,
-        "user": {
-            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-            "displayName": null,
-            "userIdentityType": "aadUser",
-            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
-        }
-    }
+    "chatType": "oneOnOne"
 }
 ```
 
@@ -249,22 +234,7 @@ Content-Type: application/json
     "topic": "Group chat title",
     "createdDateTime": "2020-12-04T23:11:16.175Z",
     "lastUpdatedDateTime": "2020-12-04T23:11:16.175Z",
-    "chatType": "group",
-    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-    "isHiddenForAllMembers": false,
-    "viewpoint": null,
-    "onlineMeetingInfo": null,
-    "createdBy": {
-        "application": null,
-        "device": null,
-        "user": {
-            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-            "displayName": null,
-            "userIdentityType": "aadUser",
-            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
-        }
-    }
+    "chatType": "group"
 }
 ```
 
@@ -352,26 +322,11 @@ Content-Type: application/json
     "topic": null,
     "createdDateTime": "2020-12-04T23:10:28.51Z",
     "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
-    "chatType": "oneOnOne",
-    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-    "isHiddenForAllMembers": false,
-    "viewpoint": null,
-    "onlineMeetingInfo": null,
-    "createdBy": {
-        "application": null,
-        "device": null,
-        "user": {
-            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-            "displayName": null,
-            "userIdentityType": "aadUser",
-            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
-        }
-    }
+    "chatType": "oneOnOne"
 }
 ```
 
-### Example 4: Create a group chat with tenant guest
+### Example 4: Create a group chat with tenant guest user
 
 #### Request
 
@@ -461,22 +416,7 @@ Content-Type: application/json
     "topic": "Group chat title",
     "createdDateTime": "2020-12-04T23:11:16.175Z",
     "lastUpdatedDateTime": "2020-12-04T23:11:16.175Z",
-    "chatType": "group",
-    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-    "isHiddenForAllMembers": false,
-    "viewpoint": null,
-    "onlineMeetingInfo": null,
-    "createdBy": {
-        "application": null,
-        "device": null,
-        "user": {
-            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-            "displayName": null,
-            "userIdentityType": "aadUser",
-            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
-        }
-    }
+    "chatType": "group"
 }
 ```
 
@@ -566,22 +506,7 @@ Content-Type: application/json
     "topic": null,
     "createdDateTime": "2020-12-04T23:10:28.51Z",
     "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
-    "chatType": "oneOnOne",
-    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-    "isHiddenForAllMembers": false,
-    "viewpoint": null,
-    "onlineMeetingInfo": null,
-    "createdBy": {
-        "application": null,
-        "device": null,
-        "user": {
-            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-            "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
-            "displayName": null,
-            "userIdentityType": "aadUser",
-            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
-        }
-    }
+    "chatType": "oneOnOne"
 }
 ```
 
