@@ -3,7 +3,7 @@ title: "Get rootDomain"
 description: "Get the root domain of a sub domain."
 author: "shilpi-kansal"
 ms.localizationpriority: medium
-ms.subservice: "directory-management"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /domains/{domainsId}/rootDomain
+GET /domains/contoso.com/rootDomain
 ```
 
 ## Optional query parameters
 
-This method supports $expand OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/domains/{domainsId}/rootDomain
+GET https://graph.microsoft.com/beta/domains/sub.contoso.com/rootDomain
 ```
 
 
@@ -88,22 +88,21 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.domain",
-      "id": "89bbbd74-10f7-9190-8646-5fc967d3c1e9",
-      "authenticationType": "String",
-      "availabilityStatus": "String",
-      "isAdminManaged": "Boolean",
-      "isDefault": "Boolean",
-      "isInitial": "Boolean",
-      "isRoot": "Boolean",
-      "isVerified": "Boolean",
-      "passwordNotificationWindowInDays": "Integer",
-      "passwordValidityPeriodInDays": "Integer",
+      "id": "contoso.com",
+      "authenticationType": "Managed",
+      "availabilityStatus": null,
+      "isAdminManaged": true,
+      "isDefault": true,
+      "isInitial": true,
+      "isRoot": true,
+      "isVerified": true,
+      "passwordNotificationWindowInDays": 14,
+      "passwordValidityPeriodInDays": 2147483647,
       "supportedServices": [
-        "String"
+        "Email",
+        "OfficeCommunicationsOnline"
       ],
-      "state": {
-        "@odata.type": "microsoft.graph.domainState"
-      }
+      "state": null
     }
   ]
 }
