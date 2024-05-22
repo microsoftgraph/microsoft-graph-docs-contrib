@@ -469,27 +469,27 @@ Content-type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations_5"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.compliantNetworkNamedLocation')
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.compliantNetworkNamedLocation"
-}
--->
+  "@odata.type": "microsoft.graph.namedLocation"
+} -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
