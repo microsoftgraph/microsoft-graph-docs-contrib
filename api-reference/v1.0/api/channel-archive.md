@@ -1,6 +1,6 @@
 ---
 title: "channel: archive"
-description: "Archive a channel in a team. "
+description: "Archive a channel in a team."
 author: "sumitgupta3"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelSettings.ReadWrite.All |
 
-> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> **Note**: This API supports admin permissions. Users with the Global Administrator or Microsoft Teams service admin roles can access teams that they aren't members of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,19 +41,26 @@ POST /groups/{team-id}/team/channels/{channel-id}/archive
 
 ## Request headers
 
-| Header       | Value |
+| Name       |Description|
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Content-Type  | application/json  |
 
 ## Request body
 
-In the request, you can optionally include the `shouldSetSpoSiteReadOnlyForMembers` parameter in a JSON body, as follows.
-```JSON
+In the request body, you can optionally provide a JSON object with the following parameter.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|shouldSetSpoSiteReadOnlyForMembers|Boolean|Defines whether to set permissions for channel members to read-only on the SharePoint Online site associated with the team. If you set it to `false` or omit the parameter, this step is skipped.|
+
+The following example shows the request body with the **shouldSetSpoSiteReadOnlyForMembers** set to `true`.
+
+```json
 {
-    "shouldSetSpoSiteReadOnlyForMembers": true
+  "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-This optional parameter defines whether to set permissions for channel members to read-only on the SharePoint Online site associated with the team. Setting it to false or omitting the body altogether results in this step being skipped.
 
 ## Response
 
