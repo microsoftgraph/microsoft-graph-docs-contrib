@@ -76,8 +76,8 @@ Bulk subscriptions for user presence can be created by setting the subscription 
 Change notifications for presence events are triggered when changes to a user's availability and activity are made.
 ### Basic presence notifications
 
-Basic notifications notify subscribers about the identity of which resource changed. Once you receive this information, you should make a separate GET call to get the details of the data. 
-For basic presence notifications, you receive information about which user's presence changed but no data about the details of user's presence. You can use the [GET presence APIs](/graph/api/presence-get) to discover the state of user's availability and activity.
+Basic notifications notify subscribers about the identity of the resource that changed. When you receive this information, you should make a separate GET call to get the details of the data. 
+For basic presence notifications, you receive information about which user's presence changed but no data about the details of user's presence. You can use the [GET presence APIs](/graph/api/presence-get) to discover the state of the user's availability and activity.
 
 #### Payload example
 
@@ -102,8 +102,9 @@ For basic presence notifications, you receive information about which user's pre
 
 ### Rich presence notifications
 
-Rich notifications notify subscribers about the changes that occurred to a resource. For rich presence notifications, subscribers are notified when the user's `Availability` and `Activity` changes in `encryptedContent.data`. See [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) for information about subscribing to rich notifications and decrypting data.
-> [Note]:
+Rich notifications notify subscribers about the changes that occurred to a resource. For rich presence notifications, subscribers are notified when the user's `Availability` and `Activity` changes in `encryptedContent.data`. For information about subscribing to rich notifications and decrypting data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
+
+> [!NOTE]
 > The availability and activity can be the same value.
 
 For more information about possible combinations of availability and activity, see [Presence properties](/graph/api/resources/presence).
