@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerViewpoint resource type"
-description: "Represents data for the current user of a fileStorageContainer".
+description: "Represents data for the current user of a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"

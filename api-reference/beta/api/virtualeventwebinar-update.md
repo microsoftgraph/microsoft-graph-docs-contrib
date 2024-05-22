@@ -1,18 +1,18 @@
 ---
-title: "Update virtualEventTownhall"
-description: "Update the properties of a virtualEventTownhall object."
+title: "Update virtualEventWebinar"
+description: "Update the properties of a virtualEventWebinar object."
 author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Update virtualEventTownhall
+# Update virtualEventWebinar
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a v[virtualEventTownhall](../resources/virtualeventtownhall.md) object.
+Update the properties of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /solutions/virtualEvents/townhalls/{id}
+PATCH /solutions/virtualEvents/webinars/{id}
 ```
 
 ## Request headers
@@ -54,12 +54,11 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 | description | [itemBody](../resources/itembody.md) | Description of the virtual event. |
 | displayName | String | Display name of the virtual event. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event ends. |
-| invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the virtual event starts. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [virtualEventTownhall](../resources/virtualeventtownhall.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [virtualEventWebinar](../resources/virtualeventwebinar.md) object in the response body.
 
 ## Examples
 
@@ -67,11 +66,11 @@ If successful, this method returns a `200 OK` response code and an updated [virt
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_virtualeventtownhall"
+  "name": "update_virtualeventwebinar"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be
+PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba
 Content-Type: application/json
 
 {
@@ -93,7 +92,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.virtualEventTownhall"
+  "@odata.type": "microsoft.graph.virtualEventWebinar"
 }
 -->
 ``` http
@@ -101,8 +100,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.virtualEventTownhall",
-  "id": "a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
+  "@odata.type": "#microsoft.graph.virtualEventWebinar",
+  "id": "bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
   "status": "draft",
   "displayName": "The Impact of Tech on Our Lives",
   "description": {
@@ -128,19 +127,10 @@ Content-Type: application/json
     }
   },
   "audience": "organization",
-  "isInviteOnly": false,  
   "coOrganizers": [
     {
       "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
       "displayName": "Kenneth Brown",
-      "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
-    }
-  ],
-  "invitedAttendees": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity",
-      "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
-      "displayName": "Emilee Pham",
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ]

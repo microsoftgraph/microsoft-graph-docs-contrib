@@ -1,7 +1,7 @@
 ---
 title: "onAttributeCollectionStartCustomExtension resource type"
 description: "Used for creating a new custom extension based on the onAttributeCollectionStart event."
-author: "garrodonnell"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
