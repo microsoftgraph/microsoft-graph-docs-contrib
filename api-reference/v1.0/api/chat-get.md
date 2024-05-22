@@ -127,6 +127,17 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "onlineMeetingInfo": null,
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+        }
+    },
     "viewpoint": {
         "isHidden": true,
         "lastMessageReadDateTime": "2021-05-06T23:55:07.191Z"
@@ -205,6 +216,17 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
     "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
     "onlineMeetingInfo": null,
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
     "viewpoint": {
         "isHidden": false,
         "lastMessageReadDateTime": "2021-07-06T22:26:27.98Z"
@@ -283,6 +305,17 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
     "onlineMeetingInfo": null,
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+        }
+    },
     "viewpoint": {
         "isHidden": false,
         "lastMessageReadDateTime": "2021-08-09T17:38:24.101Z"
@@ -433,6 +466,17 @@ Content-type: application/json
             "displayName": null,
             "userIdentityType": "aadUser"
         }
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d35"
+        }
     }
 }
 ```
@@ -508,6 +552,17 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3Aebe3857aa388434bab0cad9d2e09f4de%40thread.v2/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
     "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
     "onlineMeetingInfo": null,
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+        }
+    },
     "viewpoint": {
         "isHidden": true,
         "lastMessageReadDateTime": "2022-09-08T23:11:54.353Z"

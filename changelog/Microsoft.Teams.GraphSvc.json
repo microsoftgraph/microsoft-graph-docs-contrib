@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "81211f93-c674-49d6-876b-0a9b613ba9b6",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdBy** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-v1.0) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "81211f93-c674-49d6-876b-0a9b613ba9b6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-08T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db50",
+          "ApiChange": "Property}",
+          "ChangedApiName": "createdBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdBy** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db50",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-08T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c691ef0b-866c-4b62-8a12-65dc2109a655",
           "ApiChange": "Parameter",
           "ChangedApiName": "getAllMessages",

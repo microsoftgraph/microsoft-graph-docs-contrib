@@ -160,12 +160,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-            "isHiddenForAllMembers": false
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            }
         },
         {
             "id": "19:561082c0f3f847a58069deb8eb300807@thread.v2",
@@ -173,12 +185,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-            "isHiddenForAllMembers": false
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            }
         },
         {
             "id": "19:d74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
@@ -186,12 +210,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
-            "isHiddenForAllMembers": false
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            }
         }
     ]
 }
@@ -274,12 +310,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-04-02T08:15:02.091Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -313,12 +361,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -368,12 +428,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -472,11 +544,23 @@ Content-type: application/json
             "createdDateTime": "2021-06-05T00:31:30.767Z",
             "lastUpdatedDateTime": "2021-06-05T00:31:32.806Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "lastMessagePreview": {
                 "id": "1622853091207",
                 "createdDateTime": "2021-06-05T00:31:31.207Z",
@@ -504,11 +588,23 @@ Content-type: application/json
             "createdDateTime": "2020-07-17T22:46:28.077Z",
             "lastUpdatedDateTime": "2021-06-03T08:05:49.788Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
             },
             "isHiddenForAllMembers": false,
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "lastMessagePreview": {
                 "id": "1622707540293",
                 "createdDateTime": "2021-06-03T08:05:40.293Z",
@@ -542,6 +638,18 @@ Content-type: application/json
                 "lastMessageReadDateTime": "2021-06-04T05:34:23.712Z"
             },
             "isHiddenForAllMembers": false,
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "lastMessagePreview": {
                 "id": "1622784857324",
                 "createdDateTime": "2021-06-04T05:34:17.324Z",
@@ -580,11 +688,23 @@ Content-type: application/json
             "createdDateTime": "2021-05-19T16:46:20.564Z",
             "lastUpdatedDateTime": "2021-05-27T22:13:03.169Z",
             "chatType": "group",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
             },
             "isHiddenForAllMembers": false,
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "lastMessagePreview": {
                 "id": "1621533401696",
                 "createdDateTime": "2021-05-20T17:56:41.696Z",
@@ -689,12 +809,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:01:30.233Z"
             },
             "isHiddenForAllMembers": false,
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -728,12 +860,24 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
             "isHiddenForAllMembers": false,
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+                }
+            },
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -840,7 +984,18 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2022-05-03T18:15:42.307Z"
             },
-            "isHiddenForAllMembers": false
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+                }
+            }
         },
         {
             "id": "19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces",
@@ -855,7 +1010,18 @@ Content-type: application/json
                 "isHidden": true,
                 "lastMessageReadDateTime": "2022-03-08T19:55:30.491Z"
             },
-            "isHiddenForAllMembers": false
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+                }
+            }
         }
     ]
 }
@@ -915,7 +1081,18 @@ Content-type: application/json
                 "isHidden": false,
                 "lastMessageReadDateTime": "2023-06-29T10:22:15.024Z"
             },
-            "isHiddenForAllMembers": false
+            "isHiddenForAllMembers": false,
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+                    "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                    "displayName": null,
+                    "userIdentityType": "aadUser",
+                    "tenantId": "aa923623-ae61-49ee-b401-81f414b6ad5a"
+                }
+            }
         }
     ]
 
