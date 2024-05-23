@@ -7,7 +7,7 @@ ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# driveProtectionRule: run
+# driveInclusionRule: run
 
 Namespace: microsoft.graph
 
