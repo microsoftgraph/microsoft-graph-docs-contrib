@@ -12,7 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Sets restrictions on specific types, modes, or versions of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md). The following resources inherit from the [authentication strength](authenticationstrengths-overview.md) abstract and define the various types of combination configurations:
+Sets restrictions on specific types, modes, or versions of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md).
+
+The following resources inherit from this abstract type and define the various types of combination configurations:
 * [fido2combinationConfigurations](fido2combinationconfiguration.md) 
 * [x509certificatecombinationconfiguration](x509certificatecombinationconfiguration.md)
 
@@ -29,10 +31,11 @@ Sets restrictions on specific types, modes, or versions of an authentication met
 |Property|Type|Description|
 |:---|:---|:---|
 |appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must be an **allowedCombinations** object, part of the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md). The only possible value for `fido2combinationConfigurations` is `"fido2"`.|
-|ID|String|A unique system-generated identifier.|
+|id|String|A unique system-generated identifier.|
 
 ## Relationships
-|ID|String|A unique system-generated identifier.|
+None.
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
