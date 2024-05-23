@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.fido2_authentication_method_configuration import Fido2AuthenticationMethodConfiguration
+from msgraph.generated.models.authentication_method_state import AuthenticationMethodState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

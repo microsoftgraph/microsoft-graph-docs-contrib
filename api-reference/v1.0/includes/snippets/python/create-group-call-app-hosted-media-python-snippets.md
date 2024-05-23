@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.call import Call
+from msgraph.generated.models.call_direction import CallDirection
 from msgraph.generated.models.participant_info import ParticipantInfo
 from msgraph.generated.models.identity_set import IdentitySet
 from msgraph.generated.models.identity import Identity

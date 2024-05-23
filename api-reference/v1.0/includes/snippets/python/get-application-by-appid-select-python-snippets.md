@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.applications_with_app_id.applications_with_app_id_request_builder import ApplicationsWithAppIdRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = ApplicationsWithAppIdRequestBuilder.ApplicationsWithAppIdRequestB
 		select = ["id","appId","displayName","requiredResourceAccess"],
 )
 
-request_configuration = ApplicationsWithAppIdRequestBuilder.ApplicationsWithAppIdRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

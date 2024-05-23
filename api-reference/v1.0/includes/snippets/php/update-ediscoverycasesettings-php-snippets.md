@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\EdiscoveryCaseSettings;
-use Microsoft\Graph\Generated\Models\RedundancyDetectionSettings;
-use Microsoft\Graph\Generated\Models\TopicModelingSettings;
-use Microsoft\Graph\Generated\Models\OcrSettings;
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\Security\EdiscoveryCaseSettings
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\Security\RedundancyDetectionSettings
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\Security\TopicModelingSettings
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\Security\OcrSettings
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
