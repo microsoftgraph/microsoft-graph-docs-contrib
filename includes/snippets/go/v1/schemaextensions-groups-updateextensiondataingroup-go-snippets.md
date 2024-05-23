@@ -17,7 +17,7 @@ import (
 
 requestBody := graphmodels.NewGroup()
 additionalData := map[string]interface{}{
-bellowscollege_courses := graphmodels.New()
+bellowscollege_courses := graph.New()
 courseId := "123"
 bellowscollege_courses.SetCourseId(&courseId) 
 courseName := "New Managers"

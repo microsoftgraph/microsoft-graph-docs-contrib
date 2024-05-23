@@ -8,6 +8,8 @@ from msgraph import GraphServiceClient
 from msgraph.generated.models.chat_message import ChatMessage
 from msgraph.generated.models.chat_message_policy_violation import ChatMessagePolicyViolation
 from msgraph.generated.models.chat_message_policy_violation_policy_tip import ChatMessagePolicyViolationPolicyTip
+from msgraph.generated.models.chat_message_policy_violation_verdict_details_types import ChatMessagePolicyViolationVerdictDetailsTypes
+from msgraph.generated.models.chat_message_policy_violation_dlp_action_types import ChatMessagePolicyViolationDlpActionTypes
 
 graph_client = GraphServiceClient(credentials, scopes)
 

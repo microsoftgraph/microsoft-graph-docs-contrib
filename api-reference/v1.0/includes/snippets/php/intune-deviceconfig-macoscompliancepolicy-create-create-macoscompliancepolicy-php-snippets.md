@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\MacOSCompliancePolicy;
+use Microsoft\Graph\Generated\Models\PasswordRequiredType;
+use Microsoft\Graph\Generated\Models\DeviceThreatProtectionRequiredSecurityLevel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
