@@ -27,9 +27,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [offerShiftRequest][], [openShiftChangeRequest][], [presence][], [chatMessage][] (preview), [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [todoTask][], [baseTask][] (deprecated) |
-| Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
-| Application                            | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [offerShiftRequest][], [openShiftChangeRequest][], [onlineMeeting][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][] |
+| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][] (preview), [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [openShiftChangeRequest][], [presence][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [todoTask][], [user][], [baseTask][] (deprecated) |
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][], [baseTask][] (deprecated) |
+| Application                            | [alert][], [callRecord][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][], [contact][],  [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [onlineMeeting][], [openShiftChangeRequest][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [user][] |
 
 ## Related content
 
