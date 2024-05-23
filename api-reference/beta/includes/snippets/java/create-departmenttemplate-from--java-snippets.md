@@ -10,10 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.models.security.DepartmentTemplate departmentTemplate = new com.microsoft.graph.beta.models.security.DepartmentTemplate();
 departmentTemplate.setOdataType("#microsoft.graph.security.departmentTemplate");
-departmentTemplate.setDisplayName("String");
-IdentitySet createdBy = new IdentitySet();
-createdBy.setOdataType("microsoft.graph.identitySet");
-departmentTemplate.setCreatedBy(createdBy);
+departmentTemplate.setDisplayName("Finance");
 com.microsoft.graph.models.security.DepartmentTemplate result = graphClient.security().labels().departments().post(departmentTemplate);
 
 

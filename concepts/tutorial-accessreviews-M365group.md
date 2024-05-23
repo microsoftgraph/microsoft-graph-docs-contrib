@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: jgangadhar
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance"
+ms.subservice: entra-id-governance
 ms.date: 03/25/2024
 #Customer intent: As a developer integrating I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
 ---

@@ -10,10 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.models.security.AuthorityTemplate authorityTemplate = new com.microsoft.graph.beta.models.security.AuthorityTemplate();
 authorityTemplate.setOdataType("#microsoft.graph.security.authorityTemplate");
-authorityTemplate.setDisplayName("String");
-IdentitySet createdBy = new IdentitySet();
-createdBy.setOdataType("microsoft.graph.identitySet");
-authorityTemplate.setCreatedBy(createdBy);
+authorityTemplate.setDisplayName("Business");
 com.microsoft.graph.models.security.AuthorityTemplate result = graphClient.security().labels().authorities().post(authorityTemplate);
 
 

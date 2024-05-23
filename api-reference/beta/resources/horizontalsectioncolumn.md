@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |webparts|[webPart](../resources/webpart.md) collection|The collection of WebParts in this column.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

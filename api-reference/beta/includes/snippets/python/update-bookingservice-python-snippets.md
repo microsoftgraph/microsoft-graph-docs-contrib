@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.booking_service import BookingService
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.booking_service import BookingService
 
 graph_client = GraphServiceClient(credentials, scopes)
 

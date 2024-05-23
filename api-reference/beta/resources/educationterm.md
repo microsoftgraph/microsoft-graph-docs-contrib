@@ -25,7 +25,7 @@ A term. This represents a designated portion of the academic year. It's used wit
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -5,8 +5,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.apply_tags_post_request_body import ApplyTagsPostRequestBody
-from msgraph.generated.models.ediscovery_review_tag import EdiscoveryReviewTag
+from msgraph.generated.security.cases.ediscoverycases.item.reviewsets.item.queries.item.microsoft_graph_security_apply_tags.apply_tags_post_request_body import ApplyTagsPostRequestBody
+from msgraph.generated.models.security.ediscovery_review_tag import EdiscoveryReviewTag
 
 graph_client = GraphServiceClient(credentials, scopes)
 

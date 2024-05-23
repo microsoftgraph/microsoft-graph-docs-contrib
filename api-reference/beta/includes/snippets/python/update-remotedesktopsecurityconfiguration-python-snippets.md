@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.remote_desktop_security_configuration import RemoteDesktopSecurityConfiguration
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.remote_desktop_security_configuration import RemoteDesktopSecurityConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -5,6 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Chats\Item\SendActivityNotification\SendActivityNotificationPostRequestBody
+use Microsoft\Graph\Beta\Generated\Models\TeamworkActivityTopic;
+use Microsoft\Graph\Beta\Generated\Models\Source;
+use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\ChatMembersNotificationRecipient;
+use Microsoft\Graph\Beta\Generated\Models\KeyValuePair;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

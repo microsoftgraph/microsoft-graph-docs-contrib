@@ -36,13 +36,13 @@ npm install @microsoft/mgt-chat
 All components are available via their npm package and are named using PascalCase. To use a component, first import it at the top.
 
 ```ts
-import { Person } from '@microsoft/mgt-react';
+import { Person } from "@microsoft/mgt-react";
 ```
 
 If you're using `mgt-chat`, import the components separately:
 
 ```ts
-import { Chat } from '@microsoft/mgt-chat';
+import { Chat } from "@microsoft/mgt-chat";
 ```
 
 You can now use any of our components anywhere in your JSX as a regular React component.
@@ -62,7 +62,7 @@ For example, you can set the `personDetails` property to an object:
 ```ts
 const App = (props) => {
   const personDetails = {
-    displayName: 'Bill Gates',
+    displayName: "Bill Gates",
   };
 
   return <Person personDetails={personDetails}></Person>;
@@ -72,7 +72,7 @@ const App = (props) => {
 Or, register an event handler:
 
 ```ts
-import { PeoplePicker, People } from '@microsoft/mgt-react';
+import { PeoplePicker, People } from "@microsoft/mgt-react";
 
 const App = (props) => {
   const [people, setPeople] = useState([]);
@@ -81,11 +81,11 @@ const App = (props) => {
     setPeople(e.target.selectedPeople);
   };
 
-  return
-    <div>
-      <PeoplePicker selectionChanged={handleSelectionChanged} />
-      Selected People: <People people={people} />
-    </div>;
+  return;
+  <div>
+    <PeoplePicker selectionChanged={handleSelectionChanged} />
+    Selected People: <People people={people} />
+  </div>;
 };
 ```
 
@@ -96,16 +96,19 @@ Most Microsoft Graph Toolkit components [support templating](../customize-compon
 For example, to create a template to be used for rendering events in the `mgt-agenda` component, first define a component to be used for rendering an event:
 
 ```tsx
-import { MgtTemplateProps } from '@microsoft/mgt-react';
+import { MgtTemplateProps } from "@microsoft/mgt-react";
 
 const MyEvent = (props: MgtTemplateProps) => {
   const { event } = props.dataContext;
-  return <div>
-    {event.subject}<br />
-    {event.attendees
-      .map((attendee: any) => attendee.emailAddress.name)
-      .join(', ')}
-  </div>;
+  return (
+    <div>
+      {event.subject}
+      <br />
+      {event.attendees
+        .map((attendee: any) => attendee.emailAddress.name)
+        .join(", ")}
+    </div>
+  );
 };
 ```
 
@@ -123,8 +126,26 @@ const App = (props) => {
 
 The `template` prop allows you to specify which template to overwrite. In this case, the `MyEvent` component is repeated for every event, and the `event` object is passed as part of the `dataContext` properties.
 
+### Custom React hooks
+
+`mgt-react` provides custom React hooks that you can use in your application to track the state of your application.
+
+#### useIsSignedIn
+
+The `useIsSignedIn` hook uses the React `useState` hook to track the signed-in state within your component. React re-renders your component in response to any changes in this state. It also uses the `useEffect` hook which enhances the lifecycle of the component by monitoring changes in the Microsoft Graph Toolkit provider and updating the component as needed.
+
+```tsx
+import { useIsSignedIn, Agenda } from '@microsoft/mgt-react';
+
+const [isSignedIn] = useIsSignedIn();
+
+const App = (props) => {
+  return { isSignedIn && <Agenda></Agenda> }
+}
+```
+
 ## Related content
 
-* [Get started with the Microsoft Graph Toolkit in React](./use-toolkit-with-react.md)
-* [Learn about authentication providers](../providers/providers.md)
-* [Disambiguation of Microsoft Graph Toolkit components](../customize-components/disambiguation.md)
+- [Get started with the Microsoft Graph Toolkit in React](./use-toolkit-with-react.md)
+- [Learn about authentication providers](../providers/providers.md)
+- [Disambiguation of Microsoft Graph Toolkit components](../customize-components/disambiguation.md)

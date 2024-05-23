@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [workbookWorksheet](../resources/worksheet.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.
 
 ## Examples
 

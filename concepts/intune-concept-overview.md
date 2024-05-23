@@ -50,10 +50,8 @@ Looking for the API reference for this service?
 - [Intune API in Microsoft Graph v1.0](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0&preserve-view=true)
 - [Intune API in Microsoft Graph beta](/graph/api/resources/intune-graph-overview?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
+## Related content
 
 - [Use Azure AD to access the Intune API](/intune/intune-graph-apis).
 - See how to perform common tasks by using the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples).
 - Find out how to [use the Intune REST API](/graph/api/resources/intune-graph-overview).
-- See the [Changelog](changelog.md) for information about what's new in the Intune API.
-- Explore [resources](https://developer.microsoft.com/graph/gallery/) for more ideas about how to use Microsoft Graph.

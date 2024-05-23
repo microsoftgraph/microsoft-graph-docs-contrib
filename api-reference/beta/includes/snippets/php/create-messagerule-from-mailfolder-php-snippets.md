@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\MessageRule;
+use Microsoft\Graph\Beta\Generated\Models\MessageRulePredicates;
+use Microsoft\Graph\Beta\Generated\Models\MessageRuleActions;
+use Microsoft\Graph\Beta\Generated\Models\Recipient;
+use Microsoft\Graph\Beta\Generated\Models\EmailAddress;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

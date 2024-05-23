@@ -4,8 +4,9 @@ description: "Microsoft Graph APIs enable you to register apps, manage app prope
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
+ms.topic: concept-article
 ms.localizationpriority: high
-ms.subservice: "entra-applications"
+ms.subservice: entra-applications
 ms.custom: scenarios:getting-started
 ms.date: 01/23/2024
 #customer intent: As a developer, I want to understand the capabilities available to manage a Microsoft Entra application programmatically using Microsoft Graph.

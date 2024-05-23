@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\IosCompliancePolicy;
+use Microsoft\Graph\Generated\Models\PasscodeRequiredType;
+use Microsoft\Graph\Generated\Models\DeviceThreatProtectionRequiredSecurityLevel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

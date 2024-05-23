@@ -3,8 +3,9 @@ title: "extensionProperty resource type (directory extensions)"
 description: "Represents a directory extension"
 ms.localizationpriority: medium
 author: "dkershaw10"
-ms.prod: "extensions"
+ms.subservice: extensions
 doc_type: "resourcePageType"
+toc.title: Directory extension
 ---
 
 # extensionProperty resource type (directory extensions)

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of [windowsSetting](../resources/windowssetting.md) objects and their properties for the signed in user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -98,6 +100,10 @@ GET https://graph.microsoft.com/v1.0/me/settings/windows
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-windowssetting1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-windowssetting1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -199,6 +205,10 @@ GET https://graph.microsoft.com/v1.0/me/settings/windows?$filter=settingType eq 
 [!INCLUDE [sample-code](../includes/snippets/php/list-windowssetting2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-windowssetting2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-windowssetting2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -293,6 +303,10 @@ GET https://graph.microsoft.com/v1.0/me/settings/windows?$filter=settingType eq 
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-windowssetting3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-windowssetting3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -391,6 +405,10 @@ GET https://graph.microsoft.com/v1.0/me/settings/windows?$filter=windowsDeviceId
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-windowssetting4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-windowssetting4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

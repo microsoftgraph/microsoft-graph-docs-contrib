@@ -86,53 +86,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcAuditEvent",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "componentName": "String",
-  "actor": {
-    "@odata.type": "microsoft.graph.cloudPcAuditActor",
-    "type": "String",
-    "userPermissions": [
-      "String"
-    ],
-    "applicationId": "String",
-    "applicationDisplayName": "String",
-    "userPrincipalName": "String",
-    "servicePrincipalName": "String",
-    "ipAddress": "String",
-    "userId": "String",
-    "userRoleScopeTags": [
-      {
-        "@odata.type": "microsoft.graph.cloudPcUserRoleScopeTagInfo",
-        "displayName": "String",
-        "roleScopeTagId": "String"
-      }
-    ],
-    "remoteTenantId": "String",
-    "remoteUserId": "String"
-  },
   "activity": "String",
   "activityDateTime": "String (timestamp)",
-  "activityType": "String",
   "activityOperationType": "String",
   "activityResult": "String",
+  "activityType": "String",
+  "actor": {"@odata.type": "microsoft.graph.cloudPcAuditActor"},
+  "category": "String",
+  "componentName": "String",
   "correlationId": "String",
-  "resources": [
-    {
-      "@odata.type": "microsoft.graph.cloudPcAuditResource",
-      "displayName": "String",
-      "modifiedProperties": [
-        {
-          "@odata.type": "microsoft.graph.cloudPcAuditProperty",
-          "displayName": "String",
-          "oldValue": "String",
-          "newValue": "String"
-        }
-      ],
-      "type": "String",
-      "resourceId": "String"
-    }
-  ],
-  "category": "String"
+  "displayName": "String",
+  "id": "String (identifier)",
+  "resources": [{"@odata.type": "microsoft.graph.cloudPcAuditResource"}]
 }
 ```

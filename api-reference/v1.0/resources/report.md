@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Working with Microsoft 365 usage reports in Microsoft Graph
 
-With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all. 
+With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all.
 
 For details about the settings that govern identification/de-identification of information in the Microsoft 365 usage reports data, see [Microsoft 365 Reports in the admin center](/microsoft-365/admin/activity-reports/activity-reports) .
 
@@ -21,30 +21,30 @@ Microsoft Graph controls access to resources via permissions. You must specify t
 
 The following table shows the availability for each API across all cloud deployments.
 
-| APIs                                                         | Microsoft Graph global service | **Microsoft Cloud for US Government** | **Microsoft Cloud China operated by 21Vianet** |
-| ------------------------------------------------------------ | ------------------------------ | ------------------------------------- | ---------------------------------------------- 
-| [Microsoft 365 activations](/graph/api/resources/office-365-activations-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Microsoft 365 active users](/graph/api/resources/office-365-active-users-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Microsoft 365 Apps usage](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Microsoft 365 groups activity](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Microsoft Teams device usage](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Microsoft Teams team usage](/graph/api/resources/microsoft-teams-team-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Microsoft Teams user activity](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Outlook activity](/graph/api/resources/email-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Outlook app usage](/graph/api/resources/email-app-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Outlook mailbox usage](/graph/api/resources/mailbox-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [OneDrive activity](/graph/api/resources/onedrive-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [OneDrive usage](/graph/api/resources/onedrive-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [SharePoint activity](/graph/api/resources/sharepoint-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [SharePoint site usage](/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Skype for Business activity](/graph/api/resources/skype-for-business-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Skype for Business device usage](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Skype for Business organizer activity](/graph/api/resources/skype-for-business-organizer-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Skype for Business participant activity](/graph/api/resources/skype-for-business-participant-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Skype for Business peer-to-peer activity](/graph/api/resources/skype-for-business-peer-to-peer-activity?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Yammer activity](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Yammer device usage](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-| [Yammer groups activity](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
+| APIs | Microsoft Graph global service | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet |
+| ---- | ------------------------------ | ----------------------------------| ------------------------------------------ |
+| [Microsoft 365 activations](reportroot.md#microsoft-365-activations)                               | ✔ | ➖ | ➖ |
+| [Microsoft 365 active users](reportroot.md#microsoft-365-active-users)                             | ✔ | ➖ | ➖ |
+| [Microsoft 365 apps usage](reportroot.md#microsoft-365-apps-usage)                                 | ✔ | ➖ | ➖ |
+| [Microsoft 365 groups activity](reportroot.md#microsoft-365-groups-activity)                       | ✔ | ➖ | ➖ |
+| [Microsoft Teams device usage](reportroot.md#microsoft-teams-device-usage)                         | ✔ | ➖ | ➖ |
+| [Microsoft Teams team activity](reportroot.md#microsoft-teams-team-activity)                       | ✔ | ➖ | ➖ |
+| [Microsoft Teams user activity](reportroot.md#microsoft-teams-user-activity)                       | ✔ | ➖ | ➖ |
+| [Outlook activity](reportroot.md#outlook-activity)                                                 | ✔ | ➖ | ➖ |
+| [Outlook app usage](reportroot.md#outlook-app-usage)                                               | ✔ | ➖ | ➖ |
+| [Outlook mailbox usage](reportroot.md#outlook-mailbox-usage)                                       | ✔ | ➖ | ➖ |
+| [OneDrive activity](reportroot.md#onedrive-activity)                                               | ✔ | ➖ | ➖ |
+| [OneDrive usage](reportroot.md#onedrive-usage)                                                     | ✔ | ➖ | ➖ |
+| [SharePoint activity](reportroot.md#sharepoint-activity)                                           | ✔ | ➖ | ➖ |
+| [SharePoint site usage](reportroot.md#sharepoint-site-usage)                                       | ✔ | ➖ | ➖ |
+| [Skype for Business activity](reportroot.md#skype-for-business-activity)                           | ✔ | ➖ | ➖ |
+| [Skype for Business device usage](reportroot.md#skype-for-business-device-usage)                   | ✔ | ➖ | ➖ |
+| [Skype for Business organizer activity](reportroot.md#skype-for-business-organizer-activity)       | ✔ | ➖ | ➖ |
+| [Skype for Business participant activity](reportroot.md#skype-for-business-participant-activity)   | ✔ | ➖ | ➖ |
+| [Skype for Business peer-to-peer activity](reportroot.md#skype-for-business-peer-to-peer-activity) | ✔ | ➖ | ➖ |
+| [Viva Engage activity](reportroot.md#viva-engage-activity)                                         | ✔ | ➖ | ➖ |
+| [Viva Engage device usage](reportroot.md#viva-engage-device-usage)                                 | ✔ | ➖ | ➖ |
+| [Viva Engage groups activity](reportroot.md#viva-engage-groups-activity)                           | ✔ | ➖ | ➖ |
 
 ## Next steps
 

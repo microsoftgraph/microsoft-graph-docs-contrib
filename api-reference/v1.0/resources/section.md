@@ -1,5 +1,5 @@
 ---
-title: "section resource type"
+title: "onenoteSection resource type"
 description: "A section in a OneNote notebook. Sections can contain pages."
 ms.localizationpriority: medium
 author: "jewan-microsoft"
@@ -7,7 +7,7 @@ ms.subservice: onenote
 doc_type: resourcePageType
 ---
 
-# section resource type
+# onenoteSection resource type
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ A section in a OneNote notebook. Sections can contain pages.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

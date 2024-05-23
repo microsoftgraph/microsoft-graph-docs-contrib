@@ -5,6 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\UnifiedRoleAssignmentScheduleRequest;
+use Microsoft\Graph\Generated\Models\Action;
+use Microsoft\Graph\Generated\Models\RequestSchedule;
+use Microsoft\Graph\Generated\Models\ExpirationPattern;
+use Microsoft\Graph\Generated\Models\Type;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

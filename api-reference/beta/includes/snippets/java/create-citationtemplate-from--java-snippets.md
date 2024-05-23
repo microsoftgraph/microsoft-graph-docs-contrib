@@ -10,12 +10,9 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.models.security.CitationTemplate citationTemplate = new com.microsoft.graph.beta.models.security.CitationTemplate();
 citationTemplate.setOdataType("#microsoft.graph.security.citationTemplate");
-citationTemplate.setDisplayName("String");
-IdentitySet createdBy = new IdentitySet();
-createdBy.setOdataType("microsoft.graph.identitySet");
-citationTemplate.setCreatedBy(createdBy);
-citationTemplate.setCitationUrl("String");
-citationTemplate.setCitationJurisdiction("String");
+citationTemplate.setDisplayName("Contoso Company Policy");
+citationTemplate.setCitationUrl("www.citationUrl.com");
+citationTemplate.setCitationJurisdiction("Contoso");
 com.microsoft.graph.models.security.CitationTemplate result = graphClient.security().labels().citations().post(citationTemplate);
 
 

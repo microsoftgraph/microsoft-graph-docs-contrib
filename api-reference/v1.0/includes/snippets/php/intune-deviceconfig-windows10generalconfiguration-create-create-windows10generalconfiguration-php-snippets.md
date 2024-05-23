@@ -5,6 +5,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Windows10GeneralConfiguration;
+use Microsoft\Graph\Generated\Models\DiagnosticsDataSubmissionMode;
+use Microsoft\Graph\Generated\Models\EdgeCookiePolicy;
+use Microsoft\Graph\Generated\Models\DefenderMonitorFileActivity;
+use Microsoft\Graph\Generated\Models\DefenderCloudBlockLevel;
+use Microsoft\Graph\Generated\Models\DefenderPromptForSampleSubmission;
+use Microsoft\Kiota\Abstractions\Types\Time;
+use Microsoft\Graph\Generated\Models\DefenderScanType;
+use Microsoft\Graph\Generated\Models\DefenderSystemScanSchedule;
+use Microsoft\Graph\Generated\Models\DefenderDetectedMalwareActions;
+use Microsoft\Graph\Generated\Models\LowSeverity;
+use Microsoft\Graph\Generated\Models\ModerateSeverity;
+use Microsoft\Graph\Generated\Models\HighSeverity;
+use Microsoft\Graph\Generated\Models\SevereSeverity;
+use Microsoft\Graph\Generated\Models\PasswordRequiredType;
+use Microsoft\Graph\Generated\Models\PrivacyAdvertisingId;
+use Microsoft\Graph\Generated\Models\StartMenuAppListVisibility;
+use Microsoft\Graph\Generated\Models\StartMenuMode;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderDocuments;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderDownloads;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderFileExplorer;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderHomeGroup;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderMusic;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderNetwork;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderPersonalFolder;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderPictures;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderSettings;
+use Microsoft\Graph\Generated\Models\StartMenuPinnedFolderVideos;
+use Microsoft\Graph\Generated\Models\WindowsSpotlightConfigureOnLockScreen;
+use Microsoft\Graph\Generated\Models\Windows10NetworkProxyServer;
+use Microsoft\Graph\Generated\Models\SafeSearchFilter;
+use Microsoft\Graph\Generated\Models\EdgeSearchEngineBase;
+use Microsoft\Graph\Generated\Models\AppsAllowTrustedAppsSideloading;
+use Microsoft\Graph\Generated\Models\DeveloperUnlockSetting;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

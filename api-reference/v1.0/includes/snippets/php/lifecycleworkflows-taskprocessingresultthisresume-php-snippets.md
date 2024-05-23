@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\IdentityGovernance\LifecycleWorkflows\Workflows\Item\Tasks\Item\TaskProcessingResults\Item\MicrosoftGraphIdentityGovernanceResume\ResumePostRequestBody
+use Microsoft\Graph\Generated\Models\Microsoft\Graph\IdentityGovernance\CustomTaskExtensionCallbackData
+use Microsoft\Graph\Generated\Models\IdentityGovernance\OperationStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.groups.groups_request_builder import GroupsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -15,7 +16,7 @@ query_params = GroupsRequestBuilder.GroupsRequestBuilderGetQueryParameters(
 		count = True,
 )
 
-request_configuration = GroupsRequestBuilder.GroupsRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 request_configuration.headers.add("ConsistencyLevel", "eventual")

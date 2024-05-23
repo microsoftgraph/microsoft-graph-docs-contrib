@@ -5,6 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\DeviceManagement\AlertRule
+use Microsoft\Graph\Beta\Generated\Models\DeviceManagement\Severity;
+use Microsoft\Graph\Beta\Generated\Models\DeviceManagement\AlertRuleTemplate;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\DeviceManagement\RuleThreshold
+use Microsoft\Graph\Beta\Generated\Models\DeviceManagement\Aggregation;
+use Microsoft\Graph\Beta\Generated\Models\DeviceManagement\Operator;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\DeviceManagement\RuleCondition
+use Microsoft\Graph\Beta\Generated\Models\DeviceManagement\RelationshipType;
+use Microsoft\Graph\Beta\Generated\Models\DeviceManagement\ConditionCategory;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\DeviceManagement\NotificationChannel
+use Microsoft\Graph\Beta\Generated\Models\DeviceManagement\NotificationChannelType;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\DeviceManagement\NotificationReceiver
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

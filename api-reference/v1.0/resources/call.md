@@ -95,7 +95,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -135,7 +135,6 @@ Here's a JSON representation of the resource.
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
   "myParticipantId": "String",  
-  "replacesContext": "String",
   "requestedModalities": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},

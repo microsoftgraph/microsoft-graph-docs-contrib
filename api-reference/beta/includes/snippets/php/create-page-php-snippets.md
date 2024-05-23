@@ -5,6 +5,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\SitePage;
+use Microsoft\Graph\Beta\Generated\Models\PageLayout;
+use Microsoft\Graph\Beta\Generated\Models\TitleArea;
+use Microsoft\Graph\Beta\Generated\Models\Layout;
+use Microsoft\Graph\Beta\Generated\Models\TextAlignment;
+use Microsoft\Graph\Beta\Generated\Models\CanvasLayout;
+use Microsoft\Graph\Beta\Generated\Models\HorizontalSection;
+use Microsoft\Graph\Beta\Generated\Models\Emphasis;
+use Microsoft\Graph\Beta\Generated\Models\HorizontalSectionColumn;
+use Microsoft\Graph\Beta\Generated\Models\WebPart;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -18,7 +29,7 @@ $requestBody->setShowComments(true);
 $requestBody->setShowRecommendedPages(false);
 $titleArea = new TitleArea();
 $titleArea->setEnableGradientEffect(true);
-$titleArea->setImageWebUrl('/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG');
+$titleArea->setImageWebUrl('https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg');
 $titleArea->setLayout(new TitleAreaLayoutType('colorBlock'));
 $titleArea->setShowAuthor(true);
 $titleArea->setShowPublishedDate(false);

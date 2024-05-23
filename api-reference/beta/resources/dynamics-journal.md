@@ -44,7 +44,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 
 ```json

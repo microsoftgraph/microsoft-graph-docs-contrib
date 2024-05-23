@@ -5,6 +5,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\ServicePrincipals\Item\Synchronization\Secrets\SecretsPutRequestBody
+use Microsoft\Graph\Generated\Models\SynchronizationSecretKeyStringValuePair;
+use Microsoft\Graph\Generated\Models\Key;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

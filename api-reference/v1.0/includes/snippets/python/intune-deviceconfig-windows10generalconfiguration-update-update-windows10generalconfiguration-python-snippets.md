@@ -6,8 +6,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.windows10_general_configuration import Windows10GeneralConfiguration
+from msgraph.generated.models.diagnostic_data_submission_mode import DiagnosticDataSubmissionMode
+from msgraph.generated.models.edge_cookie_policy import EdgeCookiePolicy
+from msgraph.generated.models.defender_monitor_file_activity import DefenderMonitorFileActivity
+from msgraph.generated.models.defender_cloud_block_level_type import DefenderCloudBlockLevelType
+from msgraph.generated.models.defender_prompt_for_sample_submission import DefenderPromptForSampleSubmission
+from msgraph.generated.models.defender_scan_type import DefenderScanType
+from msgraph.generated.models.weekly_schedule import WeeklySchedule
 from msgraph.generated.models.defender_detected_malware_actions import DefenderDetectedMalwareActions
+from msgraph.generated.models.defender_threat_action import DefenderThreatAction
+from msgraph.generated.models.required_password_type import RequiredPasswordType
+from msgraph.generated.models.state_management_setting import StateManagementSetting
+from msgraph.generated.models.windows_start_menu_app_list_visibility_type import WindowsStartMenuAppListVisibilityType
+from msgraph.generated.models.windows_start_menu_mode_type import WindowsStartMenuModeType
+from msgraph.generated.models.visibility_setting import VisibilitySetting
+from msgraph.generated.models.windows_spotlight_enablement_settings import WindowsSpotlightEnablementSettings
 from msgraph.generated.models.windows10_network_proxy_server import Windows10NetworkProxyServer
+from msgraph.generated.models.safe_search_filter_type import SafeSearchFilterType
 from msgraph.generated.models.edge_search_engine_base import EdgeSearchEngineBase
 
 graph_client = GraphServiceClient(credentials, scopes)

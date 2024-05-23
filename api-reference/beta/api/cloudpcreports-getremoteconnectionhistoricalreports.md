@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the remote connection history records of a Cloud PC during a given period. This report contains data such as signInDateTime, signOutDateTime, usageInHour, remoteSignInTimeInSec and roundTripTimeInMsP50, and so on. This data is aggregated hourly for a specified time period, such as the last seven days.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`.|
+|filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`. The `CloudPcId` filter is required; for example: `CloudPcId eq xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. If this filter is missing, malformed, or invalid, a query config will be thrown.|
 |select|String collection|OData select syntax. The columns to include in the report.|
 |search|String|The string to search for.|
 |groupBy|String collection|A list of columns that describe how to group the data in the report.|
@@ -83,10 +83,10 @@ Content-length: 199
         "UsageInHour",
         "RoundTripTimeInMsP50",
         "AvailableBandwidthInMBpsP50",
-        "RemoteSignInTimeInSec",
+        "RemoteSignInTimeInSec"
     ],
     "top": 25,
-    "skip": 0,
+    "skip": 0
 }
 ```
 

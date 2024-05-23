@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the capability of the Microsoft Entra synchronization service to process bulk uploads.
+Represents the capability of the Microsoft Entra synchronization service to process bulk uploads. For more information, see [API-driven inbound provisioning concepts](/entra/identity/app-provisioning/inbound-provisioning-api-concepts).
 
 ## Methods
 

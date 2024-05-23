@@ -26,6 +26,7 @@ RangeView represents a set of visible cells of the parent range.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|cellAddresses|Json|Represents the cell addresses|
 |columnCount|Int32|Returns the number of visible columns. Read-only.|
 |formulas|Json|Represents the formula in A1-style notation.	|
 |formulasLocal|Json|Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.	|
@@ -43,7 +44,7 @@ RangeView represents a set of visible cells of the parent range.
 |rows|[workbookRangeView](workbookrangeview.md) collection| Represents a collection of range views associated with the range. Read-only.	Read-only.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [  ],

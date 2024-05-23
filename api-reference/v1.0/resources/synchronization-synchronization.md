@@ -34,7 +34,7 @@ Represents the capability for Microsoft Entra identity synchronization through t
 |templates|[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) collection| Preconfigured synchronization settings for a particular application.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.synchronization",

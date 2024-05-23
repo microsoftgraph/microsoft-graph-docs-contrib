@@ -3,7 +3,7 @@ title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
 ms.localizationpriority: medium
 author: "madhavpatel6"
-ms.prod: "identity-and-sign-in"
+ms.subservice: entra-sign-in
 doc_type: "resourcePageType"
 ---
 
@@ -19,26 +19,7 @@ The following are limitations of feature rollout:
 - The **appliesTo** field only supports groups.
 - Dynamic groups and nested groups are not supported.
 
-The following are pre-requisites for each of the features that are currently supported for rollout using this rollout policy.
-
-### Passthrough Authentication
-
-* Identify a server running Windows Server 2012 R2 or later where you want the [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) Agent to run. Ensure that the server is domain-joined, can authenticate selected users with Active Directory, and can communicate with Microsoft Entra ID on outbound ports / URLs.
-* [Download](https://aka.ms/getauthagent) & install the Microsoft Entra Connect Authentication Agent on the server.
-* To enable high availability, install additional Authentication Agents on other servers as described [here](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
-* Ensure that you have configured your [Smart Lockout](/azure/active-directory/authentication/howto-password-smart-lockout) settings appropriately. This is to ensure that your users’ on-premises Active Directory accounts don’t get locked out by bad actors.
-
-### SeamlessSso
-
-* Enable [SeamlessSso](/azure/active-directory/hybrid/how-to-connect-sso) for the AD forests based on [these](/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature) instructions.
-
-### PasswordHashSync
-
-* Enable [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) from the “Optional features” page in Microsoft Entra Connect.
-
-### EmailAsAlternateId
-
-* Associate alternate email  with user accounts.
+For more information about staged rollout, see [How to configure staged rollout in Microsoft Entra ID](https://www.youtube.com/watch?v=LFTE1epYDFQ).
 
 ## Methods
 
@@ -58,30 +39,43 @@ The following are pre-requisites for each of the features that are currently sup
 |:-------------|:------------|:------------|
 |description|String|A description for this feature rollout policy.|
 |displayName|String|The display name for this  feature rollout policy.|
-|feature|stagedFeatureName| Possible values are: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`.|
+|feature|stagedFeatureName| Possible values are: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`, `certificateBasedAuthentication`, `multiFactorAuthentication`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `certificateBasedAuthentication`, `multiFactorAuthentication`. For more information about the prerequisites for the enabled features, see [Prerequisites for enabled features](#prerequisites-for-enabled-features).|
 |id|String| Read-only.|
 |isAppliedToOrganization|Boolean|Indicates whether this feature rollout policy should be applied to the entire organization.|
 |isEnabled|Boolean|Indicates whether the feature rollout is enabled.|
 
-### stagedFeatureName values 
+### Prerequisites for enabled features
 
-|Member|
-|:---|
-|passthroughAuthentication|
-|seamlessSso|
-|passwordHashSync|
-|emailAsAlternateId|
-|unknownFutureValue|
+The following are prerequisites for each of the features that are currently supported for rollout using this rollout policy.
+
+#### Passthrough Authentication
+
+* Identify a server running Windows Server 2012 R2 or later where you want the [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) Agent to run. Ensure that the server is domain-joined, can authenticate selected users with Active Directory, and can communicate with Microsoft Entra ID on outbound ports / URLs.
+* [Download](https://aka.ms/getauthagent) & install the Microsoft Entra Connect Authentication Agent on the server.
+* To enable high availability, install additional Authentication Agents on other servers as described [here](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
+* Ensure that you've configured your [Smart Lockout](/azure/active-directory/authentication/howto-password-smart-lockout) settings appropriately. This is to ensure that your users' on-premises Active Directory accounts don't get locked out by bad actors.
+
+#### SeamlessSso
+
+* Enable [SeamlessSso](/azure/active-directory/hybrid/how-to-connect-sso) for the AD forests based on [these](/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature) instructions.
+
+#### PasswordHashSync
+
+* Enable [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) from the "Optional features" page in Microsoft Entra Connect.
+
+#### EmailAsAlternateId
+
+* Associate alternate email  with user accounts.
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| Nullable. Specifies a list of directoryObjects that feature is enabled for.|
+|appliesTo|[directoryObject](directoryobject.md) collection| Nullable. Specifies a list of directoryObject resources that feature is enabled for.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -102,6 +96,10 @@ The following is a JSON representation of the resource.
   "isEnabled": true
 }
 ```
+
+## Related content
+
+- [Migrate to cloud authentication using Staged Rollout](/entra/identity/hybrid/connect/how-to-connect-staged-rollout)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

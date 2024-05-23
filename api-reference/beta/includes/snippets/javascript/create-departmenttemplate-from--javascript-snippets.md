@@ -12,10 +12,7 @@ const client = Client.init(options);
 
 const departmentTemplate = {
   '@odata.type': '#microsoft.graph.security.departmentTemplate',
-  displayName: 'String',
-  createdBy: {
-    '@odata.type': 'microsoft.graph.identitySet'
-  }
+  displayName: 'Finance',
 };
 
 await client.api('/security/labels/departments')
