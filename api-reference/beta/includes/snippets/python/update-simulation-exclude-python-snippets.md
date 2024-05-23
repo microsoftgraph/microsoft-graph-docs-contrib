@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.simulation import Simulation
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.simulation import Simulation
+from msgraph_beta.generated.models.simulation_status import SimulationStatus
 
 graph_client = GraphServiceClient(credentials, scopes)
 

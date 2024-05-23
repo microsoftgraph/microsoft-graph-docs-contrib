@@ -7,8 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\Windows10EndpointProtectionConfiguration;
+use Microsoft\Graph\Generated\Models\FirewallPreSharedKeyEncodingMethod;
+use Microsoft\Graph\Generated\Models\FirewallCertificateRevocationListCheckMethod;
+use Microsoft\Graph\Generated\Models\FirewallPacketQueueingMethod;
 use Microsoft\Graph\Generated\Models\WindowsFirewallNetworkProfile;
+use Microsoft\Graph\Generated\Models\FirewallEnabled;
+use Microsoft\Graph\Generated\Models\AppLockerApplicationControl;
+use Microsoft\Graph\Generated\Models\ApplicationGuardBlockFileTransfer;
+use Microsoft\Graph\Generated\Models\ApplicationGuardBlockClipboardSharing;
 use Microsoft\Graph\Generated\Models\BitLockerRemovableDrivePolicy;
+use Microsoft\Graph\Generated\Models\EncryptionMethod;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

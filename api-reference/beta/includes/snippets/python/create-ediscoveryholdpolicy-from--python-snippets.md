@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.ediscovery_hold_policy import EdiscoveryHoldPolicy
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.security.ediscovery_hold_policy import EdiscoveryHoldPolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.b2c_authentication_methods_policy import B2cAuthenticationMethodsPolicy
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.b2c_authentication_methods_policy import B2cAuthenticationMethodsPolicy
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CertificateBasedAuthConfiguration;
-use Microsoft\Graph\Generated\Models\CertificateAuthority;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\CertificateBasedAuthConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\CertificateAuthority;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
