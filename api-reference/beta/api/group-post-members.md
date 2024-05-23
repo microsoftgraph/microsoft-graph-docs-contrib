@@ -32,12 +32,17 @@ The following table shows the least privileged permission that's required by eac
 | [servicePrincipal](../resources/group.md) | GroupMember.ReadWrite.All and Application.ReadWrite.All | Not supported.                         | GroupMember.ReadWrite.All and Application.ReadWrite.All |
 | [user](../resources/user.md)              | GroupMember.ReadWrite.All                               | Not supported.                         | GroupMember.ReadWrite.All                               |
 
-In delegated scenarios, the calling user with a work or school account must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). The following roles are the least privileged roles that are supported for this operation, except for role-assignable groups:
+In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/update` role permission. The following roles are the least privileged roles that are supported for this operation, except for role-assignable groups:
  
 - Directory Writers
 - Groups Administrator
 - Identity Governance Administrator
 - User Administrator
+- Exchange Administrator - only for Microsoft 365 groups
+- SharePoint Administrator - only for Microsoft 365 groups
+- Teams Administrator - only for Microsoft 365 groups
+- Yammer Administrator - only for Microsoft 365 groups
+- Intune Administrator - only for security groups
 
 Group owners can only add members to groups that they own.
 
