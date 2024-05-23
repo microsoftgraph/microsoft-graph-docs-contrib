@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.list import List
-from msgraph.generated.models.column_definition import ColumnDefinition
-from msgraph.generated.models.text_column import TextColumn
-from msgraph.generated.models.number_column import NumberColumn
-from msgraph.generated.models.list_info import ListInfo
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.list import List
+from msgraph_beta.generated.models.column_definition import ColumnDefinition
+from msgraph_beta.generated.models.text_column import TextColumn
+from msgraph_beta.generated.models.number_column import NumberColumn
+from msgraph_beta.generated.models.list_info import ListInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

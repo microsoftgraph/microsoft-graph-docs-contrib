@@ -7,6 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\Windows81GeneralConfiguration;
+use Microsoft\Graph\Generated\Models\BrowserInternetSecurityLevel;
+use Microsoft\Graph\Generated\Models\BrowserIntranetSecurityLevel;
+use Microsoft\Graph\Generated\Models\BrowserTrustedSitesSecurityLevel;
+use Microsoft\Graph\Generated\Models\PasswordRequiredType;
+use Microsoft\Graph\Generated\Models\UserAccountControlSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

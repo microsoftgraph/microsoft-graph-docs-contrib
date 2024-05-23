@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.policies.cross_tenant_access_policy.partners.partners_request_builder import PartnersRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.policies.cross_tenant_access_policy.partners.partners_request_builder import PartnersRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +15,7 @@ query_params = PartnersRequestBuilder.PartnersRequestBuilderGetQueryParameters(
 		expand = ["identitySynchronization"],
 )
 
-request_configuration = PartnersRequestBuilder.PartnersRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

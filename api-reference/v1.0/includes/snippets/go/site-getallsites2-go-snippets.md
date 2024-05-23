@@ -18,10 +18,10 @@ import (
 
 requestSkiptoken := "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
 
-requestParameters := &graphsites.SitesGetAllSites()RequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SitesGetAllSitesWithRequestBuilderGetQueryParameters{
 	Skiptoken: &requestSkiptoken,
 }
-configuration := &graphsites.SitesGetAllSites()RequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SitesGetAllSitesWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

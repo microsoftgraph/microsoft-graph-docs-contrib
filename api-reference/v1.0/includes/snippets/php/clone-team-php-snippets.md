@@ -6,7 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\ClonePostRequestBody;
+use Microsoft\Graph\Generated\Teams\Item\Clone\ClonePostRequestBody
+use Microsoft\Graph\Generated\Models\PartsToClone;
+use Microsoft\Graph\Generated\Models\Visibility;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

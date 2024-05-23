@@ -22,7 +22,7 @@ resource := graphmodels.NewEducationFileResource()
 displayName := "article.pdf"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
-file := graphmodels.New()
+file := graph.New()
 odataid := "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RPHKSP6THE4ORD2RQAR6MQLF26G"
 file.SetOdataid(&odataid) 
 	resource.SetFile(file)
