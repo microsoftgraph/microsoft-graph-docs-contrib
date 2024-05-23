@@ -5,11 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\OnAttributeCollectionSubmitCustomExtension;
-use Microsoft\Graph\Generated\Models\AzureAdTokenAuthentication;
-use Microsoft\Graph\Generated\Models\HttpRequestEndpoint;
-use Microsoft\Graph\Generated\Models\CustomExtensionClientConfiguration;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\OnAttributeCollectionSubmitCustomExtension;
+use Microsoft\Graph\Beta\Generated\Models\AzureAdTokenAuthentication;
+use Microsoft\Graph\Beta\Generated\Models\HttpRequestEndpoint;
+use Microsoft\Graph\Beta\Generated\Models\CustomExtensionClientConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
