@@ -26,7 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/group-delete-members-permissions.md)]
 
 In delegated scenarios, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the `microsoft.directory/groups/members/update` role permission. The following least privileged roles are supported for this operation, except for role-assignable groups:
- 
+
+- Group owners
 - Directory Writers
 - Groups Administrator
 - Identity Governance Administrator
@@ -36,8 +37,6 @@ In delegated scenarios, the signed-in user must also be assigned a supported [Mi
 - Teams Administrator - for Microsoft 365 groups only
 - Yammer Administrator - for Microsoft 365 groups only
 - Intune Administrator - for security groups only
-
-Group owners can only remove members from groups that they own.
 
 To remove members from a role-assignable group, the app must also be assigned the *RoleManagement.ReadWrite.Directory* permission and the calling user must be assigned a supported Microsoft Entra role. *Privileged Role Administrator* is the least privileged role that is supported for this operation.
 
