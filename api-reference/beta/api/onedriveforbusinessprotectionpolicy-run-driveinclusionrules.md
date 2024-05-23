@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}/run
+POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/userDriveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/run
 ```
 
 
@@ -85,26 +85,31 @@ The following example shows the response.
 ``` http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Content-Location: /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}
+Content-Location: solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/userDriveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.protectionRuleBase",
-    "id": "String (identifier)",
-    "status": "String",
-    "createdDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "error": {
-      "@odata.type": "microsoft.graph.publicError"
-    },
-    "isAutoApplyEnabled": "Boolean"
-  }
+   "@odata.type": "#microsoft.graph.protectionRuleBase",
+   "id":"61633878-8321-4950-bfaf-ed285bdd1461",
+   "status" : "active",
+   "createdBy":{
+      "application":{
+         "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
+      },
+      "user":{
+         "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
+      }
+   },
+   "createdDateTime":"2015-06-19T12-01-03.45Z",
+   "lastModifiedBy":{
+      "application":{
+         "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
+      },
+      "user":{
+         "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
+      }
+   },
+   "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
+   "isAutoApplyEnabled": false
 }
 ```
 
