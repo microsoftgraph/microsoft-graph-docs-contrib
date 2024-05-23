@@ -35,7 +35,7 @@ The following table shows the mapping between the **id** value and the source sy
 | 9a3e0ce2-cf4b-477e-b3b3-df246318e251 | Microsoft account (MSA)                   |
 | 46a57efc-33f8-4eec-a512-b90039ad6187 | User initiated edits                      |
 
-For more information on how to populate the **profileSourceAnnotation** resource, see [Where do property values come from](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
+For more information on how the value of properties in **profileSourceAnnotation** resource is set, see [Where do property values come from](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#ID0EBF=About_Microsoft_365_User_Profile_Data).
 
 ## JSON representation
 
