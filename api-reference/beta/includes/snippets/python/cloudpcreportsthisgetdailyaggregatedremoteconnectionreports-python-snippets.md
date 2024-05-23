@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.devicemanagement.virtualendpoint.reports.get_daily_aggregated_remote_connection_reports.get_daily_aggregated_remote_connection_reports_post_request_body import GetDailyAggregatedRemoteConnectionReportsPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.devicemanagement.virtualendpoint.reports.get_daily_aggregated_remote_connection_reports.get_daily_aggregated_remote_connection_reports_post_request_body import GetDailyAggregatedRemoteConnectionReportsPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

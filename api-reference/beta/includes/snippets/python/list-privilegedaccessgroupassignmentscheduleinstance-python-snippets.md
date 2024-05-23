@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.identity_governance.privileged_access.group.assignment_schedule_instances.assignment_schedule_instances_request_builder import AssignmentScheduleInstancesRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity_governance.privileged_access.group.assignment_schedule_instances.assignment_schedule_instances_request_builder import AssignmentScheduleInstancesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = AssignmentScheduleInstancesRequestBuilder.AssignmentScheduleInsta
 		filter = "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'",
 )
 
-request_configuration = AssignmentScheduleInstancesRequestBuilder.AssignmentScheduleInstancesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

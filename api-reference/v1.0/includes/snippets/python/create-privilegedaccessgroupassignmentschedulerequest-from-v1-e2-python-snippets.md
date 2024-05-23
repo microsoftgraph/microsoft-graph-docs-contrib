@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.privileged_access_group_assignment_schedule_request import PrivilegedAccessGroupAssignmentScheduleRequest
+from msgraph.generated.models.privileged_access_group_relationships import PrivilegedAccessGroupRelationships
+from msgraph.generated.models.schedule_request_actions import ScheduleRequestActions
 from msgraph.generated.models.request_schedule import RequestSchedule
 from msgraph.generated.models.expiration_pattern import ExpirationPattern
+from msgraph.generated.models.expiration_pattern_type import ExpirationPatternType
 
 graph_client = GraphServiceClient(credentials, scopes)
 
