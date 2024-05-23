@@ -5,8 +5,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\Alert;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\Microsoft\Graph\Security\Alert
+use Microsoft\Graph\Beta\Generated\Models\Security\Classification;
+use Microsoft\Graph\Beta\Generated\Models\Security\Determination;
+use Microsoft\Graph\Beta\Generated\Models\Security\Status;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

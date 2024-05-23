@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.policies.role_management_policies.role_management_policies_request_builder import RoleManagementPoliciesRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = RoleManagementPoliciesRequestBuilder.RoleManagementPoliciesReques
 		filter = "scopeId eq '/' and scopeType eq 'DirectoryRole'",
 )
 
-request_configuration = RoleManagementPoliciesRequestBuilder.RoleManagementPoliciesRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 
