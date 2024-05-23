@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.users.item.authentication.operations.item.long_running_operation_item_request_builder import LongRunningOperationItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -14,7 +15,7 @@ query_params = LongRunningOperationItemRequestBuilder.LongRunningOperationItemRe
 		aadgsu = "ssprprod-a",
 )
 
-request_configuration = LongRunningOperationItemRequestBuilder.LongRunningOperationItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

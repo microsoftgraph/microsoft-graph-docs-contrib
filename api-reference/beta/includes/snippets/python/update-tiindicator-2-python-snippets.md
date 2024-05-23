@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.security.ti_indicators.item.ti_indicator_item_request_builder import TiIndicatorItemRequestBuilder
-from msgraph.generated.models.ti_indicator import TiIndicator
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.security.ti_indicators.item.ti_indicator_item_request_builder import TiIndicatorItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
+from msgraph_beta.generated.models.ti_indicator import TiIndicator
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -16,7 +17,7 @@ request_body = TiIndicator(
 	description = "description-after-update",
 )
 
-request_configuration = TiIndicatorItemRequestBuilder.TiIndicatorItemRequestBuilderPatchRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "return=representation")
 
 

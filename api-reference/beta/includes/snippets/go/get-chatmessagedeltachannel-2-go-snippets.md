@@ -18,10 +18,10 @@ import (
 
 requestSkiptoken := "-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58"
 
-requestParameters := &graphteams.TeamItemChannelItemMessagesDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemChannelItemMessagesDeltaWithRequestBuilderGetQueryParameters{
 	Skiptoken: &requestSkiptoken,
 }
-configuration := &graphteams.TeamItemChannelItemMessagesDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemChannelItemMessagesDeltaWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.department_template import DepartmentTemplate
+from msgraph.generated.models.security.department_template import DepartmentTemplate
 
 graph_client = GraphServiceClient(credentials, scopes)
 

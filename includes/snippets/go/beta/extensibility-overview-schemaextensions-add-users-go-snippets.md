@@ -31,7 +31,7 @@ password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 
 requestBody.SetPasswordProfile(passwordProfile)
 additionalData := map[string]interface{}{
-extkmpdyld2_graphLearnCourses := graphmodels.New()
+extkmpdyld2_graphLearnCourses := graph.New()
 courseId := int32(100)
 extkmpdyld2_graphLearnCourses.SetCourseId(&courseId) 
 courseName := "Explore Microsoft Graph"
