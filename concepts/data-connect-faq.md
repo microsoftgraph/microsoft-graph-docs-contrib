@@ -10,7 +10,12 @@ ms.subservice: "data-connect"
 
 Microsoft Graph Data Connect lets developers create applications that customers can use to provide managed access to their at-scale Microsoft Graph datasets. This article provides tips that will help you take advantage of the Microsoft Graph Data Connect feature. For an introduction to Microsoft Graph Data Connect, see the [overview](data-connect-concept-overview.md).
 
-For more questions, see [troubleshooting](data-connect-troubleshooting.md), or reach out to the [Data Connect team](mailto:dataconnect@microsoft.com).
+For more questions, see [troubleshooting](data-connect-troubleshooting.md), or create a new Azure Support request with the following selections:
+
+- Service type: select **Microsoft Graph High-Capacity APIs**
+- Problem type: select **Microsoft Graph Data Connect (MGDC)**
+
+![A screenshot that shows the selection of topics in the Azure Support request to refer to an issue with Microsoft Graph Data Connect.](images/AzureSupportRequestMGDC.png)
 
 ## Is Microsoft Graph Data Connect right for me?
 
