@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := "adminRemove"
 requestBody.SetRequestType(&requestType) 
 additionalData := map[string]interface{}{
-assignment := graphmodels.New()
+assignment := graph.New()
 id := "a6bb6942-3ae1-4259-9908-0133aaee9377"
 assignment.SetId(&id) 
 	requestBody.SetAssignment(assignment)
