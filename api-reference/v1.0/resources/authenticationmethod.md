@@ -32,7 +32,7 @@ The **authenticationMethod** resource type is an abstract type that's inherited 
 
 | Method       | Return type | Description |
 |:-------------|:------------|:------------|
-| [List authenticationMethods](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md) collection | Read the properties and relationships of all of a user's **authenticationMethod** objects. |
+| [List](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md) collection | Read the properties and relationships of all of a user's **authenticationMethod** objects. |
 
 ## Properties
 

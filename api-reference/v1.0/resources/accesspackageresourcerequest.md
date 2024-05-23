@@ -17,8 +17,8 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageResourceRequests](../api/entitlementmanagement-list-resourcerequests.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
-| [Create accessPackageResourceRequest](../api/entitlementmanagement-post-resourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Add, update or remove a **accessPackageResource** from a catalog. |
+| [List](../api/entitlementmanagement-list-resourcerequests.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Retrieve a list of **accessPackageResourceRequest** objects. |
+| [Create](../api/entitlementmanagement-post-resourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Add, update or remove a **accessPackageResource** from a catalog. |
 
 ## Properties
 

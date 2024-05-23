@@ -17,9 +17,9 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageResourceRoleScopes](../api/accesspackage-list-resourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
-| [Create accessPackageResourceRoleScope](../api/accesspackage-post-resourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md)| Create a new **accessPackageResourceRoleScope** object for an access package. |
-| [Delete accessPackageResourceRoleScope](../api/accesspackage-delete-resourcerolescopes.md) | None | Delete an **accessPackageResourceRoleScope** object from an access package. |
+| [List](../api/accesspackage-list-resourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
+| [Create](../api/accesspackage-post-resourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md)| Create a new **accessPackageResourceRoleScope** object for an access package. |
+| [Delete](../api/accesspackage-delete-resourcerolescopes.md) | None | Delete an **accessPackageResourceRoleScope** object from an access package. |
 
 ## Properties
 

@@ -16,13 +16,13 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection|Retrieve a list of **accesspackageassignmentrequest** objects. |
-| [Create accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Creates a new **accessPackageAssignmentRequest** object. |
-|[Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Read properties and relationships of an **accessPackageAssignmentRequest** object. |
-|[Delete accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md)|None|Delete an **accessPackageAssignmentRequest**. |
-|[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Retrieve the list of **accessPackageAssignmentRequest** objects filtered on the signed-in user.|
-|[cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Cancel an **accessPackageAssignmentRequest** object that is in a cancelable state.|
-|[reprocess](../api/accesspackageassignmentrequest-reprocess.md) | None | Automatically retry a user’s request for access to an access package.|
+|[List](../api/entitlementmanagement-list-assignmentrequests.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection|Retrieve a list of **accesspackageassignmentrequest** objects. |
+| [Create](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Creates a new **accessPackageAssignmentRequest** object. |
+|[Get](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Read properties and relationships of an **accessPackageAssignmentRequest** object. |
+|[Delete](../api/accesspackageassignmentrequest-delete.md)|None|Delete an **accessPackageAssignmentRequest**. |
+|[Filter by current user](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Retrieve the list of **accessPackageAssignmentRequest** objects filtered on the signed-in user.|
+|[Cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Cancel an **accessPackageAssignmentRequest** object that is in a cancelable state.|
+|[Reprocess](../api/accesspackageassignmentrequest-reprocess.md) | None | Automatically retry a user’s request for access to an access package.|
 
 ## Properties
 |Property|Type|Description|

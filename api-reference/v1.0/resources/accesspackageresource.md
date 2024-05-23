@@ -17,7 +17,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-resources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| [List](../api/accesspackagecatalog-list-resources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
 
 
 ## Properties
