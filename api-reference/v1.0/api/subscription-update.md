@@ -56,7 +56,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
-|[offerShiftRequest](../resources/offershiftrequest.md)<br/>(/teams/{id}/schedule/openShiftChangeRequests)<br/>Changes to any offer shift request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported | Schedule.Read.All, Schedule.ReadWrite.All |
+|[offerShiftRequest](../resources/offershiftrequest.md)<br/>(/teams/{id}/schedule/offerShiftRequests)<br/>Changes to any offer shift request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported | Schedule.Read.All, Schedule.ReadWrite.All |
 |[openShiftChangeRequest](../resources/openshiftchangerequest.md)<br/>(/teams/{id}/schedule/openShiftChangeRequests)<br/>Changes to any open shift request in a team.| Schedule.Read.All, Schedule.ReadWrite.All| Not supported | Schedule.Read.All, Schedule.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported.  | Not supported.  |
 |[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
