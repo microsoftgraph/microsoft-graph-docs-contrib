@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.presence.clear_presence.clear_presence_post_request_body import ClearPresencePostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.presence.clear_presence.clear_presence_post_request_body import ClearPresencePostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

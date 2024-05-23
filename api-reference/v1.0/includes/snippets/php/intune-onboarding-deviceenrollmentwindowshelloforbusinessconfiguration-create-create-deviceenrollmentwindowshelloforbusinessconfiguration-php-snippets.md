@@ -7,6 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\DeviceEnrollmentWindowsHelloForBusinessConfiguration;
+use Microsoft\Graph\Generated\Models\PinUppercaseCharactersUsage;
+use Microsoft\Graph\Generated\Models\PinLowercaseCharactersUsage;
+use Microsoft\Graph\Generated\Models\PinSpecialCharactersUsage;
+use Microsoft\Graph\Generated\Models\State;
+use Microsoft\Graph\Generated\Models\EnhancedBiometricsState;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
