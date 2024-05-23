@@ -26,6 +26,7 @@ None.
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |apiConnectors|[identityApiConnector](identityApiConnector.md) collection|Represents entry point for API connectors.|
+|authenticationEventsFlows|[authenticationEventsFlow](../resources/authenticationeventsflow.md) collection|Represents the entry point for self-service sign-up and sign-in user flows in both Microsoft Entra workforce and external tenants.|
 |authenticationEventListeners|[authenticationEventListener](authenticationeventlistener.md) collection| Represents listeners for custom authentication extension events in Azure AD for workforce and customers.|
 |b2xUserFlows|[b2xIdentityUserFlow](b2xIdentityUserFlow.md) collection| Represents entry point for B2X/self-service sign-up identity userflows.|
 |conditionalAccess|[conditionalAccessRoot](conditionalAccessRoot.md) collection| the entry point for the Conditional Access (CA) object model.|

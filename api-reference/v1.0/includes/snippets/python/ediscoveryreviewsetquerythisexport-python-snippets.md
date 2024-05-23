@@ -6,6 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.security.cases.ediscoverycases.item.reviewsets.item.queries.item.microsoft_graph_security_export.export_post_request_body import ExportPostRequestBody
+from msgraph.generated.models.export_options import ExportOptions
+from msgraph.generated.models.export_file_structure import ExportFileStructure
 
 graph_client = GraphServiceClient(credentials, scopes)
 

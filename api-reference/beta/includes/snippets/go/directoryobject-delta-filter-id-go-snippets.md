@@ -18,10 +18,10 @@ import (
 
 requestFilter := "id eq '87d349ed-44d7-43e1-9a83-5f2406dee5bd'"
 
-requestParameters := &graphdirectoryobjects.DirectoryObjectsDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphdirectoryobjects.DirectoryObjectsDeltaWithRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphdirectoryobjects.DirectoryObjectsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphdirectoryobjects.DirectoryObjectsDeltaWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
