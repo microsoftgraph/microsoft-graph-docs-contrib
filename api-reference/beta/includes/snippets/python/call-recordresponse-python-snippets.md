@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.communications.calls.item.record_response.record_response_post_request_body import RecordResponsePostRequestBody
-from msgraph.generated.models.prompt import Prompt
-from msgraph.generated.models.media_prompt import MediaPrompt
-from msgraph.generated.models.media_info import MediaInfo
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.communications.calls.item.record_response.record_response_post_request_body import RecordResponsePostRequestBody
+from msgraph_beta.generated.models.prompt import Prompt
+from msgraph_beta.generated.models.media_prompt import MediaPrompt
+from msgraph_beta.generated.models.media_info import MediaInfo
 
 graph_client = GraphServiceClient(credentials, scopes)
 

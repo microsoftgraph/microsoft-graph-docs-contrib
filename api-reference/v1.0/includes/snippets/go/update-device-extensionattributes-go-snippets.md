@@ -17,7 +17,7 @@ import (
 
 requestBody := graphmodels.NewDevice()
 additionalData := map[string]interface{}{
-extensionAttributes := graphmodels.New()
+extensionAttributes := graph.New()
 extensionAttribute1 := "BYOD-Device"
 extensionAttributes.SetExtensionAttribute1(&extensionAttribute1) 
 	requestBody.SetExtensionAttributes(extensionAttributes)

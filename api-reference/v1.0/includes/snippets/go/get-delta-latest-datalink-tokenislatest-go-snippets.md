@@ -18,10 +18,10 @@ import (
 
 requestToken := "latest"
 
-requestParameters := &graphsites.SiteItemListItemItemsDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SiteItemListItemItemsDeltaWithRequestBuilderGetQueryParameters{
 	Token: &requestToken,
 }
-configuration := &graphsites.SiteItemListItemItemsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SiteItemListItemItemsDeltaWithRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

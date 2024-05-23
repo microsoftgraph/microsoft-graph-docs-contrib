@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_assignment_request import AccessPackageAssignmentRequest
+from msgraph.generated.models.access_package_request_type import AccessPackageRequestType
 from msgraph.generated.models.access_package_assignment import AccessPackageAssignment
 
 graph_client = GraphServiceClient(credentials, scopes)

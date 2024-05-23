@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_assignment_policy import AccessPackageAssignmentPolicy
+from msgraph.generated.models.allowed_target_scope import AllowedTargetScope
 from msgraph.generated.models.subject_set import SubjectSet
 from msgraph.generated.models.attribute_rule_members import AttributeRuleMembers
 from msgraph.generated.models.access_package_automatic_request_settings import AccessPackageAutomaticRequestSettings

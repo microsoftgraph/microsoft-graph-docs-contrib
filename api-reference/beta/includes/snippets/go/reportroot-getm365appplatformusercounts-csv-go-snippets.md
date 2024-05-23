@@ -18,10 +18,10 @@ import (
 
 requestFormat := "text/csv"
 
-requestParameters := &graphreports.ReportsGetM365AppPlatformUserCounts(period='{period}')RequestBuilderGetQueryParameters{
+requestParameters := &graphreports.ReportsGetM365AppPlatformUserCountsWithPeriodRequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphreports.ReportsGetM365AppPlatformUserCounts(period='{period}')RequestBuilderGetRequestConfiguration{
+configuration := &graphreports.ReportsGetM365AppPlatformUserCountsWithPeriodRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
