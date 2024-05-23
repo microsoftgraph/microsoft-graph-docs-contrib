@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_inboundapiflow"
+  "name": "get_inboundapiflow",
   "sampleKeys": ["7bd62d17-8c37-4494-f68d-08daddab2911"]
 }
 -->
