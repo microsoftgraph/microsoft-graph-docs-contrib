@@ -132,7 +132,7 @@ The following JSON representation shows the resource type.
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |type|String|The type of requested meeting: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
-|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout isn't present or if it's set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser shows the message in the Outlook on the web review pane.<br><br>The message opens in the browser if you're logged in to your mailbox via Outlook on the web. You are prompted to log in if you aren't already logged in with the browser.<br><br>This URL can't be accessed from within an iFrame.|
+|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout isn't present or if it's set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser shows the message in the Outlook on the web review pane.<br><br>The message opens in the browser if you're signed in to your mailbox via Outlook on the web. You are prompted to sign in if you aren't already logged in with the browser.<br><br>This URL can't be accessed from within an iFrame.|
 
 ## Relationships
 | Relationship | Type	|Description|
