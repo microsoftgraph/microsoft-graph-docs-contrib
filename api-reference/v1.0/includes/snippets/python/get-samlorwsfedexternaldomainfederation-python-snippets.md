@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.directory.federation_configurations.item.identity_provider_base_item_request_builder import IdentityProviderBaseItemRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.directory.federation_configurations.item.identity_provider_base_item_request_builder import IdentityProviderBaseItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = IdentityProviderBaseItemRequestBuilder.IdentityProviderBaseItemRe
 		filter = "domains/any(x: x/id eq 'contoso.com')",
 )
 
-request_configuration = IdentityProviderBaseItemRequestBuilder.IdentityProviderBaseItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

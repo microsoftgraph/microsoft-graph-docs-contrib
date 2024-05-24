@@ -17,7 +17,7 @@ Represents the capability of the Microsoft Entra synchronization service to proc
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Perform bulkUpload](../api/synchronization-synchronizationjob-post-bulkupload.md)| None |Perform a new bulk upload using the synchronization job.|
+|[Perform bulk upload](../api/synchronization-synchronizationjob-post-bulkupload.md)| None |Perform a new bulk upload using the synchronization job.|
 
 ## Properties
 

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.sites.item.lists.item.items.item.list_item_item_request_builder import ListItemItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = ListItemItemRequestBuilder.ListItemItemRequestBuilderGetQueryPara
 		expand = ["fields"],
 )
 
-request_configuration = ListItemItemRequestBuilder.ListItemItemRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 

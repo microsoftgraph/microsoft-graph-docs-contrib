@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\GovernanceRoleSetting;
-use Microsoft\Graph\Generated\Models\GovernanceRuleSetting;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Models\GovernanceRoleSetting;
+use Microsoft\Graph\Beta\Generated\Models\GovernanceRuleSetting;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

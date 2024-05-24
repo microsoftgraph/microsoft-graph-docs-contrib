@@ -54,7 +54,7 @@ defaultLanguage := "en"
 positiveReinforcement.SetDefaultLanguage(&defaultLanguage) 
 endUserNotificationSetting.SetPositiveReinforcement(positiveReinforcement)
 additionalData := map[string]interface{}{
-simulationNotification := graphmodels.New()
+simulationNotification := graph.New()
 targettedUserType := "compromised"
 simulationNotification.SetTargettedUserType(&targettedUserType) 
 odataBind := "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a"

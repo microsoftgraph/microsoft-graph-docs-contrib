@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\EmailFileAssessmentRequest;
+use Microsoft\Graph\Generated\Models\ExpectedAssessment;
+use Microsoft\Graph\Generated\Models\Category;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

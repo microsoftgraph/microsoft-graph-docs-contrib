@@ -2157,6 +2157,16 @@ Possible values for user account types (group membership), per Windows definitio
 | emailBox             |
 | checkboxMultiSelect  |
 
+### authenticationAttributeCollectionInputType values
+
+|Member|
+|:---|
+|text|
+|radioSingleSelect|
+|checkboxMultiSelect|
+|boolean|
+|unknownFutureValue|
+
 ### teamworkActivityTopicSource values
 
 | Member    |

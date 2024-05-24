@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.message import Message
 from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.body_type import BodyType
+from msgraph.generated.models.inference_classification_type import InferenceClassificationType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

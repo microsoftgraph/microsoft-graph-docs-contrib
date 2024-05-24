@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminTodo](../api/admintodo-get.md)|[adminTodo](../resources/admintodo.md)|Read the properties and relationships of a [adminTodo](../resources/admintodo.md) object.|
-|[Update adminTodo](../api/admintodo-update.md)|[adminTodo](../resources/admintodo.md)|Update the properties and relationships of a [adminTodo](../resources/admintodo.md) object.|
+|[Get](../api/admintodo-get.md)|[adminTodo](../resources/admintodo.md)|Read the properties and relationships of a [adminTodo](../resources/admintodo.md) object.|
+|[Update](../api/admintodo-update.md)|[adminTodo](../resources/admintodo.md)|Update the properties and relationships of a [adminTodo](../resources/admintodo.md) object.|
 
 ## Properties
 |Property|Type|Description|

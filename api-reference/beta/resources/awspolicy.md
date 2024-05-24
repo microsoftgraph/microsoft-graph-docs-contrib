@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsPolicies](../api/awsauthorizationsystem-list-policies.md)|[awsPolicy](../resources/awspolicy.md) collection|List all [awsPolicy](../resources/awspolicy.md) objects and their properties for a specific AWS authorization system.|
-|[Get awsPolicy](../api/awspolicy-get.md)|[awsPolicy](../resources/awspolicy.md)|Read the properties and relationships of a single [awsPolicy](../resources/awspolicy.md) object in an AWS authorization system.|
+|[List](../api/awsauthorizationsystem-list-policies.md)|[awsPolicy](../resources/awspolicy.md) collection|List all [awsPolicy](../resources/awspolicy.md) objects and their properties for a specific AWS authorization system.|
+|[Get](../api/awspolicy-get.md)|[awsPolicy](../resources/awspolicy.md)|Read the properties and relationships of a single [awsPolicy](../resources/awspolicy.md) object in an AWS authorization system.|
 
 ## Properties
 |Property|Type|Description|
