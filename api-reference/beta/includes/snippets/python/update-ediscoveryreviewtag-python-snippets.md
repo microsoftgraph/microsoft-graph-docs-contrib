@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.ediscovery_review_tag import EdiscoveryReviewTag
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.security.ediscovery_review_tag import EdiscoveryReviewTag
 
 graph_client = GraphServiceClient(credentials, scopes)
 

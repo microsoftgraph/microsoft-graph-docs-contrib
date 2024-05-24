@@ -8,6 +8,7 @@ from msgraph import GraphServiceClient
 from msgraph.generated.groups.item.threads.item.posts.item.reply.reply_post_request_body import ReplyPostRequestBody
 from msgraph.generated.models.post import Post
 from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.recipient import Recipient
 from msgraph.generated.models.email_address import EmailAddress
 from msgraph.generated.models.attachment import Attachment

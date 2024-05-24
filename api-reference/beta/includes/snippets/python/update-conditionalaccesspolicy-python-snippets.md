@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.conditional_access_policy import ConditionalAccessPolicy
-from msgraph.generated.models.conditional_access_condition_set import ConditionalAccessConditionSet
-from msgraph.generated.models.risk_level import RiskLevel
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.conditional_access_policy import ConditionalAccessPolicy
+from msgraph_beta.generated.models.conditional_access_condition_set import ConditionalAccessConditionSet
+from msgraph_beta.generated.models.risk_level import RiskLevel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

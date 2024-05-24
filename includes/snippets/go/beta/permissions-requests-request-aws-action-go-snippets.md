@@ -50,7 +50,7 @@ effect := graphmodels.ALLOW_AWSSTATEMENTEFFECT
 awsStatement.SetEffect(&effect) 
 condition := graphmodels.NewAwsCondition()
 additionalData := map[string]interface{}{
-numericLessThanEquals := graphmodels.New()
+numericLessThanEquals := graph.New()
 aws:MultiFactorAuthAge := "3600"
 numericLessThanEquals.SetAws:MultiFactorAuthAge(&aws:MultiFactorAuthAge) 
 	condition.SetNumericLessThanEquals(numericLessThanEquals)
@@ -80,7 +80,7 @@ effect := graphmodels.ALLOW_AWSSTATEMENTEFFECT
 awsStatement1.SetEffect(&effect) 
 condition := graphmodels.NewAwsCondition()
 additionalData := map[string]interface{}{
-numericLessThanEquals := graphmodels.New()
+numericLessThanEquals := graph.New()
 aws:MultiFactorAuthAge := "3600"
 numericLessThanEquals.SetAws:MultiFactorAuthAge(&aws:MultiFactorAuthAge) 
 	condition.SetNumericLessThanEquals(numericLessThanEquals)

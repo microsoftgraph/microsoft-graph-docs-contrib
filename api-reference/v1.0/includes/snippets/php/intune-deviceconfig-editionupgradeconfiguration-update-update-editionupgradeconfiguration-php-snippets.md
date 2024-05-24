@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\EditionUpgradeConfiguration;
+use Microsoft\Graph\Generated\Models\LicenseType;
+use Microsoft\Graph\Generated\Models\TargetEdition;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

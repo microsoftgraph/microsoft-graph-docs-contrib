@@ -7,7 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\WindowsUpdateForBusinessConfiguration;
+use Microsoft\Graph\Generated\Models\DeliveryOptimizationMode;
+use Microsoft\Graph\Generated\Models\PrereleaseFeatures;
+use Microsoft\Graph\Generated\Models\AutomaticUpdateMode;
 use Microsoft\Graph\Generated\Models\WindowsUpdateScheduledInstall;
+use Microsoft\Graph\Generated\Models\ScheduledInstallDay;
+use Microsoft\Kiota\Abstractions\Types\Time;
+use Microsoft\Graph\Generated\Models\BusinessReadyUpdatesOnly;
+use Microsoft\Graph\Generated\Models\UpdateWeeks;
+use Microsoft\Kiota\Abstractions\Types\Date;
+use Microsoft\Graph\Generated\Models\AutoRestartNotificationDismissal;
+use Microsoft\Graph\Generated\Models\UserPauseAccess;
+use Microsoft\Graph\Generated\Models\UserWindowsUpdateScanAccess;
+use Microsoft\Graph\Generated\Models\UpdateNotificationLevel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.sign_in_preferences import SignInPreferences
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.sign_in_preferences import SignInPreferences
+from msgraph_beta.generated.models.user_default_authentication_method_type import UserDefaultAuthenticationMethodType
 
 graph_client = GraphServiceClient(credentials, scopes)
 
