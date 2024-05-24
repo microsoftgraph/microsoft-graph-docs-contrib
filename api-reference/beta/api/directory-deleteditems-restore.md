@@ -48,7 +48,13 @@ POST /directory/deleteditems/{id}/restore
 | Content-type | application/json |
 
 ## Request body
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists the parameters that are required when you call this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|autoReconcileProxyConflict|Boolean|Optional parameter. Indicates whether the conflicting proxy addresses should be auto-reconciled or not while restoring a soft-deleted user. Proxy conflict means that one or more of the proxy addresses of the soft-deleted user is also used for another active user. Used only for restoreing soft-deleted [user](../resources/user.md).|
 
 ## Response
 
@@ -65,6 +71,10 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 }-->
 ```http
 POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
+Content-Type: application/json
+{
+  "autoReconcileProxyConflict": "true"
+}
 ```
 
 # [C#](#tab/csharp)
