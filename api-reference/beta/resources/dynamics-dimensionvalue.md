@@ -21,7 +21,7 @@ Represents a dimension value in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description                   |
 |:-------------|:-------------|:-----------------------------|
-|[Get dimensionValue](../api/dynamics-dimensionvalue-get.md)|dimensionValues|Gets a dimension value object.|
+|[Get dimension](../api/dynamics-dimensionvalue-get.md)|dimensionValues|Gets a dimension value object.|
 
 
 ## Properties
