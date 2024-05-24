@@ -6,12 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.users.item.events.events_request_builder import EventsRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.event import Event
 from msgraph.generated.models.item_body import ItemBody
+from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.date_time_time_zone import DateTimeTimeZone
 from msgraph.generated.models.location import Location
 from msgraph.generated.models.attendee import Attendee
 from msgraph.generated.models.email_address import EmailAddress
+from msgraph.generated.models.attendee_type import AttendeeType
+from msgraph.generated.models.online_meeting_provider_type import OnlineMeetingProviderType
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -46,7 +50,7 @@ request_body = Event(
 	online_meeting_provider = OnlineMeetingProviderType.TeamsForBusiness,
 )
 
-request_configuration = EventsRequestBuilder.EventsRequestBuilderPostRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
 

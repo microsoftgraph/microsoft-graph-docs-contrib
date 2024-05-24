@@ -4908,3 +4908,14 @@ Possible values for user account types (group membership), per Windows definitio
 |elevated|
 |unknownFutureValue|
 
+### meetingRequestType values 
+
+|Member|
+|:---|
+|none|
+|newMeetingRequest|
+|fullUpdate|
+|informationalUpdate|
+|silentUpdate|
+|outdated|
+|principalWantsCopy|

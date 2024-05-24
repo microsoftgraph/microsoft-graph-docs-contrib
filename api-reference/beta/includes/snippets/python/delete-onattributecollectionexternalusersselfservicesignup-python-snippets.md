@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.identity.authenticationeventsflows.item.graphexternalusersselfservicesignupeventsflow.onattributecollection.graphonattributecollectionexternalusersselfservicesignup.attributes.ref.$ref_delete_request_body import $refDeleteRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.identity.authenticationeventsflows.item.graphexternalusersselfservicesignupeventsflow.onattributecollection.graphonattributecollectionexternalusersselfservicesignup.attributes.ref.$ref_delete_request_body import $refDeleteRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

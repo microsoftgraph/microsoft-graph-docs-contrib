@@ -19,8 +19,8 @@ requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := graphmodels.ADMINADD_ACCESSPACKAGEREQUESTTYPE 
 requestBody.SetRequestType(&requestType) 
 additionalData := map[string]interface{}{
-accessPackageAssignment := graphmodels.New()
-target := graphmodels.New()
+accessPackageAssignment := graph.New()
+target := graph.New()
 email := "user@contoso.com"
 target.SetEmail(&email) 
 	accessPackageAssignment.SetTarget(target)

@@ -151,7 +151,7 @@ Content-Type: application/x-www-form-urlencoded
 
 client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 &scope=https%3A%2F%2Fgraph.microsoft.com%2F.default
-&client_secret=qWgdYAmab0YSkuL1qKv5bPX
+&client_secret=qWgdYA....L1qKv5bPX
 &grant_type=client_credentials
 ```
 
@@ -161,7 +161,7 @@ curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=535fb089-9ff3-47b6-9bfb-4f1264799865' \
 --data-urlencode 'scope=https://graph.microsoft.com/.default' \
---data-urlencode 'client_secret=qWgdYAmab0YSkuL1qKv5bPX' \
+--data-urlencode 'client_secret=qWgdYA....L1qKv5bPX' \
 --data-urlencode 'grant_type=client_credentials'
 ```
 

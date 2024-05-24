@@ -21,7 +21,7 @@ Currently, the **virtualEventWebinarRegistrationConfiguration** resource inherit
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get virtualEventWebinarRegistrationConfiguration](../api/virtualeventwebinarregistrationconfiguration-get.md) | [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) | Read the properties and relationships of a [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object. |
+| [Get](../api/virtualeventwebinarregistrationconfiguration-get.md) | [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) | Read the properties and relationships of a [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) object. |
 
 ## Properties
 

@@ -16,6 +16,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## May 2024: New and generally available
+
+### Identity and access | Identity and sign-in
+
+Customize the authentication experience for your customers by using [user flows in Microsoft Entra External ID in external tenants](/graph/api/resources/authenticationEventsFlow). In the self-service sign-up user flow, you can collect user attributes, disable sign up and only allow sign in, and also integrate with sytems that are external to Microsoft Entra ID.
+
 ## May 2024: New in preview only
 ### Sites and lists | Content models and document processing jobs
 - [Content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) support is added to sites. 

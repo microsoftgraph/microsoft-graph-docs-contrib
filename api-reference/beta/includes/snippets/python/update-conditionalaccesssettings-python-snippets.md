@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.conditional_access_settings import ConditionalAccessSettings
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.networkaccess.conditional_access_settings import ConditionalAccessSettings
+from msgraph_beta.generated.models.status import Status
 
 graph_client = GraphServiceClient(credentials, scopes)
 
