@@ -1,6 +1,6 @@
 ---
 title: "List driveInclusionRules"
-description: "List Drive Inclusion Rules for a OneDriveForBusiness Protection Policy"
+description: "Get a list of the drive inclusion rules associated with a OneDrive for Business protection policy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,20 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List [driveProtectionRule](../resources/driveprotectionrule.md) in a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Get a list of [driveProtectionRule](../resources/driveprotectionrule.md) bojects associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
-An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
+An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "onedriveforbusinessprotectionpolicy-list-driveinclusionrules-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-list-driveinclusionrules-permissions.md)]-->
+
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|

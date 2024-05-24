@@ -1,6 +1,6 @@
 ---
 title: "Get driveInclusionRule"
-description: "Get Drive Inclusion Rule for a OneDriveForBusiness Protection Policy."
+description: "Get the drive inclusion rules associated with a OneDrive for Business protection policy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,20 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [driveProtectionRule](../resources/driveprotectionrule.md) in a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Get a [driveProtectionRule](../resources/driveprotectionrule.md) object associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
-An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule is applied.
+An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`, and after the rule is applied, the state is either `completed` or `completedWithErrors`.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "onedriveforbusinessprotectionpolicy-get-driveinclusionrule-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-get-driveinclusionrule-permissions.md)]-->
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
@@ -60,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [driveProtectionRule](../resources/driveprotectionrule.md) in the response body.
+If successful, this method returns a `200 OK` response code and a [driveProtectionRule](../resources/driveprotectionrule.md) object in the response body.
 
 ## Examples
 
@@ -75,7 +68,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
+GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 ```
 
 ### Response
