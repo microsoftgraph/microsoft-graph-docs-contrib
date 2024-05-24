@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
-An inclusion rule indicates that Protection Policy should contain Protection Units that match the specified rule criteria. The initial status of a Protection Rule upon creation is active, and the terminal states are completed, completedWithErrors once the rule has been applied.
+An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`, and the terminal states are `completed` or `completedWithErrors` after the rule has been applied.
 
 ## Permissions
 
