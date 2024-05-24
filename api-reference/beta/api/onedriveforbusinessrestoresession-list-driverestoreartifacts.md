@@ -1,19 +1,19 @@
 ---
-title: "List driveRestoreArtifact"
-description: "Get a list of the driveRestoreArtifact and their properties for a oneDriveForBusinessRestoreSession for the tenant."
+title: "List driveRestoreArtifacts"
+description: "Get a list of the driveRestoreArtifacts and their properties for a oneDriveForBusinessRestoreSession for a tenant."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# List driveRestoreArtifact
+# List driveRestoreArtifacts
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [driveRestoreArtifact](../resources/driverestoreartifact.md) and their properties for a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) for the tenant.
+Get a list of the [driveRestoreArtifact](../resources/driverestoreartifact.md) objects and their properties for a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) for a tenant.
 
 
 ## Permissions
@@ -59,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects in the response body.
 
 ## Examples
 
