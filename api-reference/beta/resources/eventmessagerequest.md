@@ -66,6 +66,7 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "meetingMessageType": "microsoft.graph.meetingMessageType",
+  "meetingRequestType": "microsoft.graph.meetingRequestType ",
   "mentionsPreview": {"@odata.type": "microsoft.graph.mentionsPreview"},
   "parentFolderId": "string",
   "previousEndDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
@@ -114,6 +115,7 @@ The following JSON representation shows the resource type.
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |location|[Location](location.md)|The location of the requested meeting.|
 |meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
+|meetingRequestType|String| The type of meeting request. Possible values are: `none`, `newMeetingRequest`, `fullUpdate`, `informationalUpdate`, `silentUpdate`, `outdated`, and `principalWantsCopy`.|
 |mentionsPreview|[mentionsPreview](mentionspreview.md)|Information about mentions in the message. When processing a `GET` /messages request, the server sets this property and includes it in the response by default. The server returns null if there are no mentions in the message. Optional. |
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)| If the meeting update changes the meeting end time, this property specifies the previous meeting end time.|
@@ -123,14 +125,14 @@ The following JSON representation shows the resource type.
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern of the requested meeting.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
 |responseRequested|Boolean|Set to true if the sender would like the invitee to send a response to the requested meeting.|
-|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-delegate-calendar). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
+|sender|[recipient](recipient.md)|The account that is used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-or-delegate-calendar). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|The start time of the requested meeting.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |type|String|The type of requested meeting: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message.|
-|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL cannot be accessed from within an iFrame.|
+|webLink|String|The URL to open the message in Outlook on the web.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout isn't present or if it's set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser shows the message in the Outlook on the web review pane.<br><br>The message opens in the browser if you're signed in to your mailbox via Outlook on the web. You are prompted to sign in if you aren't already logged in with the browser.<br><br>This URL can't be accessed from within an iFrame.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -138,7 +140,7 @@ The following JSON representation shows the resource type.
 |attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the message. Read-only. Nullable.|
 |event|[event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the eventMessage. Read-only. Nullable.|
-|mentions|[mention](mention.md) collection | A collection of mentions in the message, ordered by the **createdDateTime** from the newest to the oldest. By default, a `GET` /messages does not return this property unless you apply `$expand` on the property.|
+|mentions|[mention](mention.md) collection | A collection of mentions in the message, ordered by the **createdDateTime** from the newest to the oldest. By default, a `GET` /messages doesn't return this property unless you apply `$expand` on the property.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the eventMessage. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the eventMessage. Read-only. Nullable.|
 
