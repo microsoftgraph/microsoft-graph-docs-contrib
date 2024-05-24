@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get azureADAuthentication](../api/azureadauthentication-get.md)|[azureADAuthentication](../resources/azureadauthentication.md)|Read the properties and relationships of an [azureADAuthentication](../resources/azureadauthentication.md) object.|
+|[Get Microsoft Entra authentication](../api/azureadauthentication-get.md)|[azureADAuthentication](../resources/azureadauthentication.md)|Read the properties and relationships of an [azureADAuthentication](../resources/azureadauthentication.md) object.|
 
 
 ## Properties

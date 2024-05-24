@@ -19,8 +19,8 @@ Represents the tenant-level settings for Microsoft 365 reports.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminReportSettings](../api/adminreportsettings-get.md)|[adminReportSettings](../resources/adminreportsettings.md)|Get the tenant-level settings for Microsoft 365 Reports.|
-|[Update adminReportSettings](../api/adminreportsettings-update.md)|[adminReportSettings](../resources/adminreportsettings.md)|Update tenant-level settings for Microsoft 365 Reports.|
+|[Get](../api/adminreportsettings-get.md)|[adminReportSettings](../resources/adminreportsettings.md)|Get the tenant-level settings for Microsoft 365 Reports.|
+|[Update](../api/adminreportsettings-update.md)|[adminReportSettings](../resources/adminreportsettings.md)|Update tenant-level settings for Microsoft 365 Reports.|
 
 ## Properties
 

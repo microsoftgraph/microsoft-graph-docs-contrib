@@ -19,8 +19,8 @@ Defines the status of a tenant joining a multi-tenant organization. Before a ten
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get multiTenantOrganizationJoinRequestRecord](../api/multitenantorganizationjoinrequestrecord-get.md)|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|Get the status of a tenant joining a multi-tenant organization.|
-|[Update multiTenantOrganizationJoinRequestRecord](../api/multitenantorganizationjoinrequestrecord-update.md)|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|Join a multi-tenant organization.|
+|[Get](../api/multitenantorganizationjoinrequestrecord-get.md)|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|Get the status of a tenant joining a multi-tenant organization.|
+|[Update](../api/multitenantorganizationjoinrequestrecord-update.md)|[multiTenantOrganizationJoinRequestRecord](../resources/multitenantorganizationjoinrequestrecord.md)|Join a multi-tenant organization.|
 
 ## Properties
 |Property|Type|Description|
