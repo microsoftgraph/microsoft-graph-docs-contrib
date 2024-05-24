@@ -1,6 +1,6 @@
 ---
 title: "Update oneDriveForBusinessProtectionPolicy"
-description: "Updates the Protection Policy for Microsoft 365 service OneDrive,"
+description: "Update the protection policy for the OneDrive service in Microsoft 365."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the Protection Policy for Microsoft 365 service OneDrive. Adds/removes [driveprotectionunit](../resources/driveprotectionunit.md) to [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
-
-To remove, specify the @removed annotation in the request body for the respective protection unit together with the ID of the [driveprotectionunit](../resources/driveprotectionunit.md).
+Update the protection policy for the OneDrive service in Microsoft 365. This method adds a [driveProtectionUnit](../resources/driveprotectionunit.md) to or removes it from a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object.
 
 ## Permissions
 
@@ -55,6 +53,8 @@ PATCH /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveFo
 |:---|:---|:---|
 |displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md)|
 |driveProtectionUnits@delta|Collection([driveProtectionUnit](../resources/driveprotectionunit.md))|Collection of the driveProtectionUnit to be added/removed to the oneDriveForBusinessProtectionPolicy.|
+
+To remove a **driveProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [driveProtectionUnit](../resources/driveprotectionunit.md).
 
 ## Response
 
