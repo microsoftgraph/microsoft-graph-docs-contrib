@@ -18,9 +18,9 @@ Represents the details of the Cloud PC connectivity status, including whether th
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|failedHealthCheckItems|[cloudPcHealthCheckItem](../resources/cloudpchealthcheckitem.md) collection|A list of failed health check items. If the status property is `available`, this property will be empty.|
+|failedHealthCheckItems|[cloudPcHealthCheckItem](../resources/cloudpchealthcheckitem.md) collection|A list of failed health check items. If the status property is `available`, this property is empty.|
 |status|[cloudPcConnectivityStatus](#cloudpcconnectivitystatus-values)|Connectivity status of the Cloud PC. Possible values are: `unknown`, `available`, `availableWithWarning`, `unavailable`, and `unknownFutureValue`.|
-|updatedDateTime (deprecated)|string|Datetime when the status was updated. Starting from August 31, 2024, updatedDatetime property will no longer be supported and will be marked as deprecated. Please use lastModifiedDateTime instead. Read-Only. |
+|updatedDateTime (deprecated)|string|Datetime when the status was updated. Starting from August 31, 2024, updatedDatetime property will no longer be supported and will be marked as deprecated. Use lastModifiedDateTime instead. Read-Only. |
 |lastModifiedDateTime|string|The last modified time for connectivity status of the Cloud PC. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`. |
 
 ### cloudPcConnectivityStatus values
@@ -31,7 +31,7 @@ Represents the details of the Cloud PC connectivity status, including whether th
 |available|1|The Cloud PC is able to be connected.|
 |availableWithWarning|2|The Cloud PC is able to be connected but there are warnings.|
 |unavailable|3|The Cloud PC is unable to be connected.|
-|unknownFutureValue|999|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|999|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.

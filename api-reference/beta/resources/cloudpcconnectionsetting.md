@@ -1,6 +1,6 @@
 ---
 title: "cloudPcConnectionSetting resource type"
-description: "The connection setting of a Cloud PC. Currently, only enableSinleSignOn is supported. IT admin could enable it through updating provisioning policy and calling applyConfig/apply API."
+description: "The connection setting of a Cloud PC. Currently, only enableSinleSignOn is supported. IT admins can enable it by updating the provisioning policy and calling applyConfig/apply API."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The connection setting of a Cloud PC. Currently, only enableSinleSignOn is supported. IT admin could enable it through updating provisioning policy and calling applyConfig/apply API.
+The connection setting of a Cloud PC. Currently, only **enableSinleSignOn** is supported. IT admins can enable it by updating the provisioning policy and calling applyConfig/apply API.
 
 ## Properties
 

@@ -1,6 +1,6 @@
 ---
 title: "cloudPcRemoteActionResult resource type"
-description: "Represents the Cloud PC-specified remote action result."
+description: "Represents a Cloud-PC-specified remote action result."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -31,7 +31,7 @@ Represents the Cloud PC-specified remote action result.
 |managedDeviceId|String|The ID of the Intune managed device on which the remote action is performed. Read-only.|
 |startDateTime|DateTimeOffset|Time the action was initiated. The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
 |lastUpdatedDateTime|DateTimeOffset|Last update time for action. The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|statusDetails (deprecated)|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. Starting from August 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use statusDetail instead. |
+|statusDetails (deprecated)|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. Starting from August 31, 2024, this property will no longer be supported and will be marked as deprecated. Use statusDetail instead. |
 |statusDetail|[cloudPcStatusDetail](../resources/cloudpcstatusdetail.md)|The extended details of the action status, including error code, error message, and additional information. For example, `"statusDetail": {"code": "internalServerError","message": "There was an internal server error. Please contact support xxx.","additionalInformation": [ { "@odata.type":"microsoft.graph.keyValuePair","name": "correlationId","value": "52367774-cfb7-4e9c-ab51-1b864c31f2d1"} ]}` |
 
 ### actionState values
@@ -39,12 +39,12 @@ Represents the Cloud PC-specified remote action result.
 |Member|Description|
 |:---|:---|
 |none|Not a valid action state.|
-|pending|Action is pending.|
-|canceled|Action has been canceled.|
-|active|Action is active.|
-|done|Action completed without errors.|
-|failed|Action failed.|
-|notSupported|Action isn't supported.|
+|pending|The action is pending.|
+|canceled|The action is canceled.|
+|active|The action is active.|
+|done|The action completed without errors.|
+|failed|The action failed.|
+|notSupported|The action isn't supported.|
 
 ## Relationships
 
