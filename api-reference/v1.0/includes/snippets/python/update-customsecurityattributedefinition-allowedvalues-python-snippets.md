@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.directory.custom_security_attribute_definitions.item.custom_security_attribute_definition_item_request_builder import CustomSecurityAttributeDefinitionItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.custom_security_attribute_definition import CustomSecurityAttributeDefinition
 
 graph_client = GraphServiceClient(credentials, scopes)
@@ -25,7 +26,7 @@ request_body = CustomSecurityAttributeDefinition(
 	}
 )
 
-request_configuration = CustomSecurityAttributeDefinitionItemRequestBuilder.CustomSecurityAttributeDefinitionItemRequestBuilderPatchRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("OData-Version", "4.01")
 
 

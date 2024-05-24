@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.secure_score_control_profile import SecureScoreControlProfile
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.secure_score_control_profile import SecureScoreControlProfile
 
 graph_client = GraphServiceClient(credentials, scopes)
 

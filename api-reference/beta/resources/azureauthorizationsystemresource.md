@@ -21,8 +21,8 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureAuthorizationSystemResources](../api/azureauthorizationsystem-list-resources.md)|[azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) collection|Get a list of the [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) objects and their properties.|
-|[Get azureAuthorizationSystemResource](../api/azureauthorizationsystemresource-get.md)|[azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md)|Read the properties and relationships of an [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) object.|
+|[List](../api/azureauthorizationsystem-list-resources.md)|[azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) collection|Get a list of the [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) objects and their properties.|
+|[Get](../api/azureauthorizationsystemresource-get.md)|[azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md)|Read the properties and relationships of an [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) object.|
 
 ## Properties
 |Property|Type|Description|

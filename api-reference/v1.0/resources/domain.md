@@ -33,13 +33,13 @@ To associate a domain with a tenant:
 |:---------------|:--------|:----------|
 |[Get domain](../api/domain-get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
 |[Create domain](../api/domain-post-domains.md) | [domain](domain.md) | Adds a domain to the tenant. |
-|[List domain](../api/domain-list.md) | [domain](domain.md) | Retrieve all domains linked to the tenant. |
-|[List domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
-|[List serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
-|[List verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
+|[List domains](../api/domain-list.md) | [domain](domain.md) | Retrieve all domains linked to the tenant. |
+|[List domain name references](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
+|[List service configuration records](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
+|[List verification DNS records](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
 |[Update domain](../api/domain-update.md) | [domain](domain.md) |Updates a domain.|
 |[Delete domain](../api/domain-delete.md) | None |Deletes a domain.|
-|[ForceDelete domain](../api/domain-forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
+|[Force delete domain](../api/domain-forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain-verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
 |[Promote domain](../api/domain-promote.md)|Boolean|Promote a verified subdomain to the root domain.|
 

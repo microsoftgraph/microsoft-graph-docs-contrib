@@ -7,6 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\DeviceManagementExportJob;
+use Microsoft\Graph\Generated\Models\Format;
+use Microsoft\Graph\Generated\Models\LocalizationType;
+use Microsoft\Graph\Generated\Models\Status;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

@@ -14,7 +14,6 @@ var requestBody = new CloudPcProvisioningPolicy
 	OdataType = "#microsoft.graph.cloudPcProvisioningPolicy",
 	DisplayName = "HR provisioning policy",
 	Description = "Provisioning policy for India HR employees",
-	OnPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
 	ImageId = "Image ID value",
 	ImageDisplayName = "Image Display Name value",
 	ImageType = CloudPcProvisioningPolicyImageType.Custom,
@@ -25,6 +24,12 @@ var requestBody = new CloudPcProvisioningPolicy
 	WindowsSetting = new CloudPcWindowsSetting
 	{
 		Locale = "en-US",
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"onPremisesConnectionId" , "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+		},
 	},
 };
 

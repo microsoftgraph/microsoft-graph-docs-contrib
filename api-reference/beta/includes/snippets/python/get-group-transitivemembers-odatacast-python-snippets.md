@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.groups.item.transitive_members.graph.group.group_request_builder import GroupRequestBuilder
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.groups.item.transitive_members.graph.group.group_request_builder import GroupRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -13,7 +14,7 @@ query_params = GroupRequestBuilder.GroupRequestBuilderGetQueryParameters(
 		count = True,
 )
 
-request_configuration = GroupRequestBuilder.GroupRequestBuilderGetRequestConfiguration(
+request_configuration = RequestConfiguration(
 query_parameters = query_params,
 )
 request_configuration.headers.add("ConsistencyLevel", "eventual")

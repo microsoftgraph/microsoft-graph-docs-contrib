@@ -22,11 +22,11 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List teamworkTags](../api/teamworktag-list.md)|[teamworkTag](teamworktag.md) collection|Get a list of the [tag](../resources/teamworktag.md) objects and their properties.|
-|[Create teamworkTag](../api/teamworktag-post.md)|[teamworkTag](teamworktag.md)|Create a standard [tag](../resources/teamworktag.md) for members in a team.|
-|[Get teamworkTag](../api/teamworktag-get.md)|[teamworkTag](teamworktag.md)|Read the properties and relationships of a [tag](../resources/teamworktag.md) object.|
-|[Update teamworkTag](../api/teamworktag-update.md)|[teamworkTag](teamworktag.md)|Update the properties of a [tag](../resources/teamworktag.md) object.|
-|[Delete teamworkTag](../api/teamworktag-delete.md)|None|Delete a [tag](../resources/teamworktag.md) object permanently.|
+|[List](../api/teamworktag-list.md)|[teamworkTag](teamworktag.md) collection|Get a list of the [tag](../resources/teamworktag.md) objects and their properties.|
+|[Create](../api/teamworktag-post.md)|[teamworkTag](teamworktag.md)|Create a standard [tag](../resources/teamworktag.md) for members in a team.|
+|[Get](../api/teamworktag-get.md)|[teamworkTag](teamworktag.md)|Read the properties and relationships of a [tag](../resources/teamworktag.md) object.|
+|[Update](../api/teamworktag-update.md)|[teamworkTag](teamworktag.md)|Update the properties of a [tag](../resources/teamworktag.md) object.|
+|[Delete](../api/teamworktag-delete.md)|None|Delete a [tag](../resources/teamworktag.md) object permanently.|
 
 ## Properties
 |Property|Type|Description|
