@@ -1,6 +1,6 @@
 ---
 title: "Create documentProcessingJob"
-description: "Create a new documentProcessingJob object."
+description: "Creates a new document processing job object."
 author: "travislius"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
