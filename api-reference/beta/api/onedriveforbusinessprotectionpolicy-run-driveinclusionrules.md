@@ -1,6 +1,6 @@
 ---
-title: "Run driveInclusionRule"
-description: "Activates driveInclusionRule"
+title: "driveInclusionRule: run"
+description: "Activate a driveInclusionRule."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Activates [driveInclusionRule](../resources/driveprotectionrule.md)
+Activate a [driveInclusionRule](../resources/driveprotectionrule.md)
 Upon running the protection rule using the /run API, the status of Protection Rule transitions to active. The state transition is draft -> active.
 
 ## Permissions

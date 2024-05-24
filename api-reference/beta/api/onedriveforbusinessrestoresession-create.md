@@ -1,6 +1,6 @@
 ---
 title: "Create oneDriveForBusinessRestoreSession"
-description: "Create a new OneDrive for Business Restore Session."
+description: "Create a new OneDrive for Business restore session."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
+Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.
 
 ## Permissions
 
@@ -51,14 +51,13 @@ POST /solutions/backupRestore/oneDriveForBusinessRestoreSessions
 
 ## Request body
 
-In the request body, supply a JSON representation of the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
+In the request body, supply a JSON representation of the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.
 
-You can specify the following properties when creating an **oneDriveForBusinessRestoreSession**.
+You can specify the following properties when you create a **oneDriveForBusinessRestoreSession**.
 
-## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Collection of [driveRestoreArtifact](../resources/driverestoreartifact.md)|
+|driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects.|
 <!-- |id|String|The unique identifier of the restore session created|
 |completedDateTime|DateTimeOffset|The time of creation of the restore session.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the restore session.|
@@ -72,7 +71,7 @@ You can specify the following properties when creating an **oneDriveForBusinessR
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object in the response body.
 
 ## Examples
 

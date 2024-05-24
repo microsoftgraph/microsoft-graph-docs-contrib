@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a [driveProtectionRule](../resources/driveprotectionrule.md) object associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
 
-An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`, and after the rule is applied, the state is either `completed` or `completedWithErrors`.
+An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`. After the rule is applied, the state is either `completed` or `completedWithErrors`.
 
 ## Permissions
 
