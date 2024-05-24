@@ -21,10 +21,10 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List filteringPolicyLink objects](../api/networkaccess-filteringpolicylink-list.md)|[microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) collection|Get a list of the [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) objects and their properties.|
-|[Get filteringPolicyLink](../api/networkaccess-filteringpolicylink-get.md)|[microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md)|Get a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.|
-|[Update filteringPolicyLink](../api/networkaccess-filteringpolicylink-update.md)|[microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md)|Update the properties of a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.|
-|[Delete filteringPolicyLink](../api/networkaccess-filteringpolicylink-delete.md)|None|Delete a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.|
+|[List](../api/networkaccess-filteringpolicylink-list.md)|[microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) collection|Get a list of the [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) objects and their properties.|
+|[Get](../api/networkaccess-filteringpolicylink-get.md)|[microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md)|Get a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.|
+|[Update](../api/networkaccess-filteringpolicylink-update.md)|[microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md)|Update the properties of a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.|
+|[Delete](../api/networkaccess-filteringpolicylink-delete.md)|None|Delete a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.|
 
 ## Properties
 |Property|Type|Description|
