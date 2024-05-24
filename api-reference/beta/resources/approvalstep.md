@@ -19,9 +19,9 @@ Specifies a decision step in an [approval](approval.md) in entitlement managemen
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[List approvalSteps](../api/approval-list-steps.md) | [approvalStep](approvalstep.md) collection | List the **approvalStep** objects associated with an **approval** object in entitlement management and PIM. |
-|[Get approvalStep](../api/approvalstep-get.md) | [approvalStep](approvalstep.md) | Retrieve the properties of an **approvalStep** object in entitlement management and PIM. |
-|[Update approvalStep](../api/approvalstep-update.md) | None | Apply approve or deny decision on an **approvalStep** object in entitlement management and PIM. |
+|[List](../api/approval-list-steps.md) | [approvalStep](approvalstep.md) collection | List the **approvalStep** objects associated with an **approval** object in entitlement management and PIM. |
+|[Get](../api/approvalstep-get.md) | [approvalStep](approvalstep.md) | Retrieve the properties of an **approvalStep** object in entitlement management and PIM. |
+|[Update](../api/approvalstep-update.md) | None | Apply approve or deny decision on an **approvalStep** object in entitlement management and PIM. |
 
 ## Properties
 |Property|Type|Description|
