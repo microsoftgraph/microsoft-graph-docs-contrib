@@ -1,6 +1,6 @@
 ---
 title: "Create exchangeRestoreSession"
-description: "Create a new Exchange Restore Session."
+description: "Create a new Exchange restore session."
 author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium

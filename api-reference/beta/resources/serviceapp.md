@@ -20,7 +20,7 @@ Represents a service application being registered as a Backup service control ap
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List serviceApp](../api/serviceapp-list.md)|[serviceApp](../resources/serviceapp.md) collection|Get a list of the [serviceApp](../resources/serviceapp.md) and their properties.|
-|[Create serviceApp](../api/serviceapp-create.md)|[serviceApp](../resources/serviceapp.md)|Create a new [serviceApp](../resources/serviceapp.md).|
+|[Create serviceApp](../api/backuprestoreroot-post-sharepointprotectionpolicies.md)|[serviceApp](../resources/serviceapp.md)|Create a new [serviceApp](../resources/serviceapp.md).|
 |[Get serviceApp](../api/serviceapp-get.md)|[serviceApp](../resources/serviceapp.md)|Read the properties and relationships of a [serviceApp](../resources/serviceapp.md).|
 |[Delete serviceApp](../api/serviceapp-delete.md)|None|Delete a [serviceApp](../resources/serviceapp.md).|
 |[activate](../api/serviceapp-activate.md)|[serviceApp](../resources/serviceapp.md)|Activate a serviceApp on behalf of the signed-in user.|

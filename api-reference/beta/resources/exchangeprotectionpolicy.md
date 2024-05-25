@@ -20,7 +20,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create exchangeProtectionPolicy](../api/exchangeprotectionpolicy-create.md)|[exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md)|Create a new [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[Create exchangeProtectionPolicy](../api/backuprestoreroot-post-exchangeprotectionpolicies.md)|[exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md)|Create a new [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
 |[Update exchangeProtectionPolicy](../api/exchangeprotectionpolicy-update.md)|[exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md)|Update the properties of an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
 
 ## Properties

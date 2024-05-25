@@ -21,7 +21,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create sharePointRestoreSession](../api/sharepointrestoresession-create.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
+|[Create sharePointRestoreSession](../api/backuprestoreroot-post-sharepointrestoresessions.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
 |[List siteRestoreArtifacts](../api/sharepointrestoresession-list-siterestoreartifacts.md)|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Get the siteRestoreArtifact resources from the siteRestoreArtifacts navigation property.|
 |[Update sharePointRestoreSession](../api/sharepointrestoresession-update.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Update the properties of a [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
 

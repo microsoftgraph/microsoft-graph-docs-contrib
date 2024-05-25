@@ -15342,7 +15342,7 @@ items:
             href: resources/backuprestoreoort.md
             items:
               - name: Create Service App
-                href: api/serviceapp-create.md
+                href: api/backuprestoreroot-post-sharepointprotectionpolicies.md
               - name: Activate Service App
                 href: api/serviceapp-activate.md
               - name: Deactivate Service App
@@ -15361,9 +15361,9 @@ items:
               - name: Create SharePoint Protection Policy
                 href: api/sharepointprotectionpolicy-create.md
               - name: Create Exchange Protection Policy
-                href: api/exchangeprotectionpolicy-create.md
+                href: api/backuprestoreroot-post-exchangeprotectionpolicies.md
               - name: Create OneDrive Protection Policy
-                href: api/onedriveforbusinessprotectionpolicy-create.md
+                href: api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies.md
               - name: List Protection Policies
                 href: resources/protectionpolicybase-list.md
               - name: Get Protection Policy
@@ -15441,11 +15441,11 @@ items:
             href: resourecs/restoresessionbase.md
             items:
               - name: Create SharePoint Restore Session
-                href: api/sharepointrestoresession-create.md
+                href: api/backuprestoreroot-post-sharepointrestoresessions.md
               - name: Create Mailbox Restore Session
-                href: api/exchangerestoresession-create.md
+                href: api/backuprestoreroot-post-exchangerestoresessions.md
               - name: Create OneDrive Restore Session
-                href: api/onedriveforbusinessrestoresession-create.md
+                href: api/backuprestoreroot-post-onedriveforbusinessrestoresessions.md
               - name: List Restore Session
                 href: api/restoresession-list.md
               - name: Get Restore Session

@@ -72,7 +72,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.backupRestore.serviceApp"
+  "@odata.type": "microsoft.graph.serviceApp"
 }
 -->
 ``` http

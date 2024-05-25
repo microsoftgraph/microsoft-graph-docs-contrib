@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Create a protection policy for the OneDrive service in Microsoft 365. When the policy is created, its state is set to `inactive`. Users can also provide a list of protection units under the policy.
 
-Refer to [user](../resources/user.md) for the format of userId.
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -74,7 +72,7 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusines
   "displayName": "OneDrive For Business Protection Policy",
   "driveProtectionUnits": [
     {
-      "userId": "Stcdd3a849-dcaf-4a85-af82-7e39fc14019aring"
+      "userId": "cdd3a849-dcaf-4a85-af82-7e39fc14019"
     },
     {
       "userId": "9bc069da-b746-41a4-89ab-26125c6373c7"
