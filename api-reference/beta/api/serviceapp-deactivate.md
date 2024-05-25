@@ -1,7 +1,8 @@
 ---
 title: "serviceApp: deactivate"
 description: "Deactivate a serviceApp"
-author: "tushar20, manikantsinghms"
+author: "tkanaujia"
+ms.reviewer: "maniksingh"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -19,15 +20,9 @@ Deactivate a [serviceApp](../resources/serviceapp.md).
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "serviceapp-deactivate-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/serviceapp-deactivate-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|BackupRestore-Control.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Control.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Not supported.|Not supported.|
 
@@ -66,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461/deactivate
+POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461/deactivate
 ```
 
 ### Response
