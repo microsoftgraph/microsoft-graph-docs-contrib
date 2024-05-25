@@ -15392,7 +15392,7 @@ items:
               - name: List Site Protection Units
                 href: api/siteprotectionunit-list.md
               - name: List Mailbox Protection Units
-                href: api/mailboxprotectionunit-list.md
+                href: api/backuprestoreroot-list-mailboxprotectionunits.md
               - name: List Drive Protection Units
                 href: api/backuprestoreroot-list-driveprotectionunits.md
               - name: Get Protection Unit
