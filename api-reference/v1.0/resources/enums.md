@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### fileStorageContainerStatus values
+
+| Member             |
+|:-------------------|
+| inactive           |
+| active             |
+| unknownfuturevalue |
+
 ### binaryOperator values
 
 |Member|
@@ -2148,6 +2156,16 @@ Possible values for user account types (group membership), per Windows definitio
 | dropdownSingleSelect |
 | emailBox             |
 | checkboxMultiSelect  |
+
+### authenticationAttributeCollectionInputType values
+
+|Member|
+|:---|
+|text|
+|radioSingleSelect|
+|checkboxMultiSelect|
+|boolean|
+|unknownFutureValue|
 
 ### teamworkActivityTopicSource values
 

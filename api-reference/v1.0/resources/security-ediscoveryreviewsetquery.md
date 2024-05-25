@@ -16,13 +16,13 @@ Represents a review set query, which is used to query and cull data stored in a 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List ediscoveryReviewSetQueries](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Get a list of the [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) objects and their properties.|
-|[Create ediscoveryReviewSetQuery](../api/security-ediscoveryreviewset-post-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Create a new [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
-|[Get ediscoveryReviewSetQuery](../api/security-ediscoveryreviewsetquery-get.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Read the properties and relationships of an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
-|[Update ediscoveryReviewSetQuery](../api/security-ediscoveryreviewsetquery-update.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Update the properties of an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
-|[Delete ediscoveryReviewSetQuery](../api/security-ediscoveryreviewset-delete-queries.md)|None|Delete an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
-|[applyTags](../api/security-ediscoveryreviewsetquery-applytags.md)|None|Apply tags to documents that match the specified query.|
-|[export](../api/security-ediscoveryreviewsetquery-export.md)|None|Export documents that match the specified query from a review set.|
+|[List](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Get a list of the [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) objects and their properties.|
+|[Create](../api/security-ediscoveryreviewset-post-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Create a new [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
+|[Get](../api/security-ediscoveryreviewsetquery-get.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Read the properties and relationships of an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
+|[Update](../api/security-ediscoveryreviewsetquery-update.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Update the properties of an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
+|[Delete](../api/security-ediscoveryreviewset-delete-queries.md)|None|Delete an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
+|[Apply tags](../api/security-ediscoveryreviewsetquery-applytags.md)|None|Apply tags to documents that match the specified query.|
+|[Export](../api/security-ediscoveryreviewsetquery-export.md)|None|Export documents that match the specified query from a review set.|
 
 ## Properties
 |Property|Type|Description|

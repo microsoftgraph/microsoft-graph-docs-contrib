@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.connected_organization import ConnectedOrganization
+from msgraph.generated.models.connected_organization_state import ConnectedOrganizationState
 
 graph_client = GraphServiceClient(credentials, scopes)
 

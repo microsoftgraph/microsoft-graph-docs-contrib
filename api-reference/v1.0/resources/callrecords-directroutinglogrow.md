@@ -17,7 +17,7 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow collection](callrecords-directroutinglogrow.md)| List **directRoutingLogRow** objects for a call record. |
+| [List direct routing calls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow collection](callrecords-directroutinglogrow.md)| List **directRoutingLogRow** objects for a call record. |
 
 ## Properties
 

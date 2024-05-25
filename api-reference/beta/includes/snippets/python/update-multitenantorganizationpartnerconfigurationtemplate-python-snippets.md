@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.multi_tenant_organization_partner_configuration_template import MultiTenantOrganizationPartnerConfigurationTemplate
-from msgraph.generated.models.cross_tenant_access_policy_inbound_trust import CrossTenantAccessPolicyInboundTrust
-from msgraph.generated.models.inbound_outbound_policy_configuration import InboundOutboundPolicyConfiguration
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.multi_tenant_organization_partner_configuration_template import MultiTenantOrganizationPartnerConfigurationTemplate
+from msgraph_beta.generated.models.cross_tenant_access_policy_inbound_trust import CrossTenantAccessPolicyInboundTrust
+from msgraph_beta.generated.models.inbound_outbound_policy_configuration import InboundOutboundPolicyConfiguration
+from msgraph_beta.generated.models.template_application_level import TemplateApplicationLevel
 
 graph_client = GraphServiceClient(credentials, scopes)
 

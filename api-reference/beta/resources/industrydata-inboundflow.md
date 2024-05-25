@@ -25,11 +25,11 @@ Base type of [inboundFileFlow](../resources/industrydata-inboundfileflow.md).
 
 | Method                                                          | Return type                                                                        | Description                                                                                    |
 | :-------------------------------------------------------------- | :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| [Create inboundFlow](../api/industrydata-inboundflow-post.md)   | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Create a new [inboundFlow](industrydata-inboundflow.md) object.                                |
-| [List inboundFlows](../api/industrydata-inboundflow-list.md)    | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md) collection | Get a list of the [inboundFlow](industrydata-inboundflow.md) objects and their properties.     |
-| [Get inboundFlow](../api/industrydata-inboundflow-get.md)       | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Read the properties and relationships of an [inboundFlow](industrydata-inboundflow.md) object. |
-| [Update inboundFlow](../api/industrydata-inboundflow-update.md) | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Update the properties of an [inboundFlow](industrydata-inboundflow.md) object.                 |
-| [Delete inboundFlow](../api/industrydata-inboundflow-delete.md) | None                                                                               | Delete an [inboundFlow](industrydata-inboundflow.md) object.                                   |
+| [Create](../api/industrydata-inboundflow-post.md)   | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Create a new [inboundFlow](industrydata-inboundflow.md) object.                                |
+| [List](../api/industrydata-inboundflow-list.md)    | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md) collection | Get a list of the [inboundFlow](industrydata-inboundflow.md) objects and their properties.     |
+| [Get](../api/industrydata-inboundflow-get.md)       | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Read the properties and relationships of an [inboundFlow](industrydata-inboundflow.md) object. |
+| [Update](../api/industrydata-inboundflow-update.md) | [microsoft.graph.industryData.inboundFlow](industrydata-inboundflow.md)            | Update the properties of an [inboundFlow](industrydata-inboundflow.md) object.                 |
+| [Delete](../api/industrydata-inboundflow-delete.md) | None                                                                               | Delete an [inboundFlow](industrydata-inboundflow.md) object.                                   |
 
 ## Properties
 
