@@ -27,7 +27,7 @@ BackupRestoreRoot resource of M365 Backup and Storage.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|ID of the BackupRestoreRoot|
-|serviceStatus|[serviceStatus](../resources/servicestatus.md) collection|Represents tenant level service status related to Backup service.|
+|serviceStatus|[serviceStatus](../resources/servicestatus.md)|Represents tenant level service status related to Backup service.|
 
 ## Relationships
 
@@ -66,10 +66,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.backupRestoreRoot",
   "id": "String (identifier)",
-  "serviceStatus": [
-    {
-      "@odata.type": "microsoft.graph.serviceStatus"
-    }
-  ]
+  "serviceStatus": {
+    "@odata.type": "microsoft.graph.serviceStatus"
+  }
 }
 ```
