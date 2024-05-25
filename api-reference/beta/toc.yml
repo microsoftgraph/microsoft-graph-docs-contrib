@@ -15348,7 +15348,7 @@ items:
               - name: Deactivate Service App
                 href: api/serviceapp-deactivate-md
               - name: List Service Apps
-                href: api/serviceapp-list.md
+                href: api/backuprestoreroot-list-serviceapps.md
               - name: Get Service App
                 href: api/serviceapp-get.md
               - name: Enable Service

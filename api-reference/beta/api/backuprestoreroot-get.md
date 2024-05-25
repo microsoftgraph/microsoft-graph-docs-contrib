@@ -1,7 +1,7 @@
 ---
 title: "Get backupRestoreRoot"
 description: "Get the service status of the Microsoft 365 Backup Storage service in a tenant."
-author: "tushar20",
+author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"

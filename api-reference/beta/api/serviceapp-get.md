@@ -19,13 +19,6 @@ Read the properties and relationships of a [serviceApp](../resources/serviceapp.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "serviceapp-get-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/serviceapp-get-permissions.md)] -->
-
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Control.Read.All|BackupRestore-Control.ReadWrite.All|
@@ -86,20 +79,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.serviceApp",
-    "id": "d03aaa01-a4de-7aec-c60c-c4de2a2d5a2e",
-    "status": "String",
-    "registrationDateTime": "String (timestamp)",
-    "effectiveDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "application": {
-      "@odata.type": "microsoft.graph.identity"
+    "id":"71633878-8321-4950-bfaf-ed285bdd1461",
+    "status": "active",
+    "registrationDateTime":"2023-06-19T12-01-03.45Z",   
+    "lastModifiedDateTime":"2023-06-19T12-01-03.45Z",
+    "lastModifiedBy":{
+        "application":{
+            "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264"
+        },
+        "user":{
+            "id":"845457dc-4bb2-4815-bef3-8628ebd1952e"
+        }
     }
-  }
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "Create oneDriveForBusinessProtectionPolicy"
 description: "Create a Protection Policy for a M365 service OneDrive."
-author: "tushar20",
+author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
