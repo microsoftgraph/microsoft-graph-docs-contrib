@@ -1,37 +1,31 @@
 ---
-title: "Create a new exchangeProtectionPolicy"
+title: "Create exchangeProtectionPolicy"
 description: "Create a Protection Policy for a M365 service Exchange."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "maniksinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Create a new exchangeProtectionPolicy
+# Create exchangeProtectionPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a Protection Policy for a M365 service Exchange. Policy is created in 'inactive' state. User can also provide a list of Protection Units under the policy.
+Create a protection policy for the Exchange service in a Microsoft 365 tenant. The policy is set to `inactive` when it is created. Users can also provide a list of protection units under the policy.
 
-Refer to [users](../resources/user.md) for the format of userId.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "exchangeprotectionpolicy_create_permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-create-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not Available|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not Available|
 
 ## HTTP request
 
@@ -51,21 +45,8 @@ POST /solutions/backupRestore/exchangeProtectionPolicies/
 
 ## Request body
 
-You can specify the following properties when creating a **exchangeProtectionPolicy**.
+In the request body, include a JSON representation of the [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object You can specify the following properties when you create an **exchangeProtectionPolicy** object.
 
-```json
-{
-  "displayName": "String",
-  "mailboxProtectionUnits": [
-    {
-      "userId": "String"
-    },
-    {
-      "userId": "String"
-    }
-  ]
-}
-```
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -74,7 +55,7 @@ You can specify the following properties when creating a **exchangeProtectionPol
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) object in the response body.
 
 ## Examples
 
@@ -88,7 +69,22 @@ The following example shows a request.
 -->
 
 ``` http
-POST /solutions/backupRestore/exchangeProtectionPolicies
+POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies
+
+{
+  "displayName": "Exchange Protection Policy",
+  "mailboxProtectionUnits": [
+    {
+      "userId": "cdd3a849-dcaf-4a85-af82-7e39fc14019a"
+    },
+    {
+      "userId": "9bc069da-b746-41a4-89ab-26125c6373c7"
+    },
+    {
+      "userId": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
+    }
+  ]
+}
 ```
 
 ### Response
@@ -104,7 +100,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 201 Created
-Content-Location: solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-8f0b-d0bbf794bec7
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-8f0b-d0bbf794bec7
 
 {
   "@odata.context": "/solutions/backupRestore/$metadata#exchangeProtectionPolicies/$entity",
