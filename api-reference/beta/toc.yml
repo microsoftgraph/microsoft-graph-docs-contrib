@@ -15394,7 +15394,7 @@ items:
               - name: List Mailbox Protection Units
                 href: api/mailboxprotectionunit-list.md
               - name: List Drive Protection Units
-                href: api/driveprotectionunit-list.md
+                href: api/backuprestoreroot-list-driveprotectionunits.md
               - name: Get Protection Unit
                 href: api/protectionunitbase-get.md
           - name: Protection Rule

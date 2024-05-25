@@ -1,7 +1,8 @@
 ---
 title: "Get backupRestoreRoot"
 description: "Get the service status of the Microsoft 365 Backup Storage service in a tenant."
-author: "maniksingh, tkanaujia"
+author: "tushar20",
+ms.reviewer: "maniksinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -19,18 +20,11 @@ Get the [serviceStatus](../resources/servicestatus.md) of the [Microsoft 365 Bac
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "backuprestoreroot-get-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-get-permissions.md)] -->
-
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Control.Read.All|BackupRestore-Control.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Control.Read.All|Not Available|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Control.Read.All|BackupRestore-Control.ReadWrite.All|
+|Application|BackupRestore-Control.Read.All|Not Available|
 
 ## HTTP request
 
@@ -86,14 +80,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.backupRestoreRoot",
-    "id": "b94bcfce-7c03-4c27-29a2-963ed585c396",
-    "serviceStatus": [
-      {
-        "@odata.type": "microsoft.graph.serviceStatus"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/backupRestore/$entity",
+  "serviceStatus": {
+      "status": "enabled",
+      "disableReason": "none",
+      "backupServiceConsumer": "firstparty",
+      "lastModifiedDateTime": "2024-05-21T04:47:52.5769075Z",
+      "lastModifiedBy": {
+          "user": {
+              "identity": "40927a5d-4f18-4966-9bfe-2e00cd1d0ee8"
+          }
       }
-    ]
   }
 }
 ```
