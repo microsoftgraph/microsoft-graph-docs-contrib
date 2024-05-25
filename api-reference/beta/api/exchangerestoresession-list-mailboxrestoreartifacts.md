@@ -1,7 +1,7 @@
 ---
 title: "List mailboxRestoreArtifacts"
 description: "Get a list of the mailboxRestoreArtifact objects that are associated with an exchangeRestoreSession."
-author: "tushar20",
+author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"

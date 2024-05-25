@@ -1,7 +1,8 @@
 ---
 title: "Update oneDriveForBusinessProtectionPolicy"
 description: "Update the protection policy for the OneDrive service in Microsoft 365."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -18,17 +19,11 @@ Update the protection policy for the OneDrive service in Microsoft 365. This met
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "onedriveforbusinessprotectionpolicy-update-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-update-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReReadWritead.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReReadWritead.All|Not Available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not Available.|
 
 ## HTTP request
 
@@ -48,11 +43,12 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusine
 |Content-Type|application/json. Required.|
 
 ## Request body
+In the request body, supply a JSON representation of the **oneDriveForBusinessProtectionPolicy** with the updated properties.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md)|
-|driveProtectionUnits@delta|Collection([driveProtectionUnit](../resources/driveprotectionunit.md))|Collection of the driveProtectionUnit to be added/removed to the oneDriveForBusinessProtectionPolicy.|
+|displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). Optional|
+|driveProtectionUnits@delta|Collection([driveProtectionUnit](../resources/driveprotectionunit.md))|Collection of the driveProtectionUnit to be added/removed to the oneDriveForBusinessProtectionPolicy. Required|
 
 To remove a **driveProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [driveProtectionUnit](../resources/driveprotectionunit.md).
 
@@ -71,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 
 {
   "displayName": "One Drive  Policy - Inadvertent data loss",

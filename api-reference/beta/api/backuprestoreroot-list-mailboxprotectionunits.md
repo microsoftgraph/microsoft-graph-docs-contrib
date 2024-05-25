@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /solutions/backupRestore/mailboxProtectionUnits
+GET https://graph.microsoft.com/beta/solutions/backupRestore/mailboxProtectionUnits
 ```
 
 #### Response
@@ -271,7 +271,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /solutions/backupRestore/exchangeProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/mailboxProtectionUnits
+GET https://graph.microsoft.com/beta/solutions/solutions/backupRestore/exchangeProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/mailboxProtectionUnits
 ```
 
 #### Response
