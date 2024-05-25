@@ -81,7 +81,7 @@ Content-Type: application/json
 Content-Location: /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461
 
 {
-    "@odata.type": "#microsoft.graph.serviceApp"
+    "@odata.type": "#microsoft.graph.serviceApp",
     "id":"71633878-8321-4950-bfaf-ed285bdd1461",
     "status" : "inactive",
     "registrationDateTime":"2022-06-19T12-01-03.45Z",
