@@ -78,7 +78,7 @@ Most commonly, an application wants to retrieve subscriptions that it originally
 
 ### Advanced scenarios
 
-In some cases, an app wants to retrieve subscriptions created by other apps. For example, a user wants to see all subscriptions created by any app on their behalf. Or, an Global Administrator may want to see all subscriptions from all apps in their directory.
+In some cases, an app wants to retrieve subscriptions created by other apps. For example, a user wants to see all subscriptions created by any app on their behalf. Or, a Global Administrator might want to see all subscriptions from all apps in their directory.
 For such scenarios, a delegated permission Subscription.Read.All is required.
 
 | Context of the calling app | Response contains |
