@@ -1,7 +1,8 @@
 ---
 title: "Create serviceApp"
 description: "Create a new serviceApp."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "maniksinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -19,17 +20,11 @@ Create a new [serviceApp](../resources/serviceapp.md).
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "backuprestoreroot-create-serviceapps-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-create-serviceapps-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|Not supported.|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Control.ReadWrite.All|BackupRestore-Control.ReadWrite.All|
+|Application|BackupRestore-Control.ReadWrite.All|Not Available.|
 
 ## HTTP request
 
@@ -67,9 +62,8 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /solutions/backupRestore/serviceApps
-Content-Type: application/json
-Authorization: Bearer <Access-Token>
+POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps
+```
 
 ### Response
 
@@ -83,7 +77,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Content-Type: application / json
+Content-Type: application/json
 Content-Location: /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461
 
 {
@@ -101,3 +95,4 @@ Content-Location: /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-e
         }
     }
 }
+```
