@@ -90,8 +90,8 @@ Content-Type: application/json
       "startDateTime": "2023-12-04T12:18:55.2117521Z",
       "completionDateTime": "2023-12-04T13:22:12.7209691Z",
       "restoredSiteId": "cad7ca1b-be3c-4d50-8416-152a58b969d7",
-      "restoredSiteName": "testodbsite101", // Newly Added
-      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testodbsite101R0" // Newly Added
+      "restoredSiteName": "testodbsite101",
+      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testodbsite101R0",
       "restorePoint": {
           "id": "e9592a41-9d38-4e94-a16b-4d9fef695c0b_1791648201_11_7",
           "protectionDateTime": "2023-12-04T00:00:00Z",
@@ -108,8 +108,8 @@ Content-Type: application/json
       "startDateTime": "2024-02-10T12:18:55.2117521Z",
       "completionDateTime": "2024-02-10T13:22:12.7209691Z",
       "restoredSiteId": "6cba176d-ef57-4933-b33c-990c8e524894",
-      "restoredSiteName": "testodbsite102", // Newly Added
-      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testodbsite102R0" // Newly Added
+      "restoredSiteName": "testodbsite102",
+      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testodbsite102R0",
       "restorePoint": {
           "id": "3ee54204-6ed5-4130-aea5-b43117a878af_1791648201_11_7",
           "protectionDateTime": "2024-02-10T00:00:00Z",
