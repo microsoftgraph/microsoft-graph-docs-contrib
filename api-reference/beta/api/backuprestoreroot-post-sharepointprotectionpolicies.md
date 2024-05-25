@@ -1,5 +1,5 @@
 ---
-title: "Create a new sharePointProtectionPolicy"
+title: "Create sharePointProtectionPolicy"
 description: "Create a Protection Policy for a M365 service Sharepoint"
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Create a new sharePointProtectionPolicy
+# Create sharePointProtectionPolicy
 
 Namespace: microsoft.graph
 
@@ -15,23 +15,15 @@ Namespace: microsoft.graph
 
 Create a Protection Policy for a M365 service Sharepoint. Policy will be created in 'inactive' state. User can also provide a list of Protection Units under the policy.
 
-Refer to [site](../resources/site.md) for the format of siteId.
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointprotectionpolicy-create-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/sharepointprotectionpolicy-create-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not Available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not Available.|
 
 ## HTTP request
 
@@ -51,26 +43,11 @@ POST /solutions/backupRestore/sharePointProtectionPolicies/
 
 ## Request body
 
-You can specify the following properties when creating a **sharePointProtectionPolicy**.
-
-```json
-{
-  "displayName": "String",
-  "siteProtectionUnits": [
-    {
-      "siteId": "String"
-    },
-    {
-      "siteId": "String"
-    }
-  ]
-}
-```
-
+You can specify the following properties when creating a **sharePointProtectionPolicy** object.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the SharePoint Protection Policy.|
-|siteProtectionUnits|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnits to be added to the sharePointProtectionPolicy.|
+|siteProtectionUnits|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnits to be added to the sharePointProtectionPolicy object. Refer to [site](../resources/site.md) for the format of siteId.|
 
 ## Response
 
@@ -90,6 +67,21 @@ The following example shows a request.
 
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies
+
+{
+  "displayName": "SharePoint Protection Policy",
+  "siteProtectionUnits": [
+    {
+      "siteId": "contoso.sharepoint.com,febad3c2-a7b2-454c-8910-272c7bcf78fc,ba7b70d0-8ba0-4cae-b19a-7cb8c739512f"
+    },
+    {
+      "siteId": "contoso.sharepoint.com/sites/marketing,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"
+    },
+    {
+      "siteId": "contoso.sharepoint.com/sites/hr,3bfc861e-9a17-4a27-9562-3d8b26c81bb5,0271110f-634f-4300-a841-3a8a2e851851"
+    }
+  ]
+}
 ```
 
 ### Response
@@ -105,7 +97,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 201 Created
-Content-Location: solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-8f0b-d0bbf794bec7
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-8f0b-d0bbf794bec7
 
 {
   "@odata.context": " /solutions/backupRestore/$metadata#sharePointProtectionPolicies/$entity",
@@ -118,9 +110,9 @@ Content-Location: solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-
       "displayName": "Microsoft Enhanced Restore"
     },
     "user": {
-      "email": "abc@contoso.com",
+      "email": "User1@contoso.com",
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "ABC"
+      "displayName": "User1"
     }
   },
   "createdDateTime": "2015-06-19T12-01-03.45Z",
@@ -130,9 +122,9 @@ Content-Location: solutions/backupRestore/ProtectionPolicies/b218eb4a-ea72-42bd-
       "displayName": "Microsoft Enhanced Restore"
     },
     "user": {
-      "email": "def@constoso.com",
+      "email": "User2@constoso.com",
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "DEF"
+      "displayName": "User2"
     }
   },
   "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
