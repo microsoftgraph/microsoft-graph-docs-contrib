@@ -1,6 +1,6 @@
 ---
-title: "Create mailboxInclusionRule"
-description: "Create Mailbox Inclusion Rule for an Exchange Protection Policy."
+title: "Create mailboxProtectionRule"
+description: "Create a mailbox protection rule for an Exchange protection policy."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
 
-An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The initial status of a protection rule upon creation is `active`, and the terminal states are `completed` or `completedWithErrors` after the rule has been applied.
+An inclusion rule indicates that a protection policy should contain protection units that match the specified rule criteria. The status of a protection rule on creation is `active`. After the rule is applied, the status is either `completed` or `completedWithErrors`.
 
 ## Permissions
 

@@ -1,6 +1,6 @@
 ---
 title: "List driveProtectionUnits"
-description: "List all Drive Protection Units."
+description: "Get a list of the drive protection units that are associated with a OneDrive for Business protection policy."
 author: tushar20, manikantsinghms
 ms.author: tkanaujia, maniksingh
 ms.localizationpriority: medium
@@ -261,7 +261,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 2: List the driveProtectionUnits associated with a OneDrive for Business Protection Policy
+### Example 2: List the driveProtectionUnits associated with a OneDrive for Business protection policy
 
 The following example shows how to list all the **driveProtectionUnits** associated with a **oneDriveForBusinessProtectionPolicy**.
 

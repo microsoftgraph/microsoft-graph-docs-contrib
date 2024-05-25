@@ -1,6 +1,6 @@
 ---
 title: "backupRestoreRoot: enable"
-description: "Enable the Backup Storage service for a Microsoft 365 tenant."
+description: "Enable the Microsoft 365 Backup Storage service for a tenant."
 author: "maniksingh, tkanaujia"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable the [Backup Storage](../resources/backuprestoreroot.md) service for a Microsoft 365 tenant.
+Enable the [Microsoft 365 Backup Storage](../resources/backuprestoreroot.md) service for a tenant.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ POST /solutions/backupRestore/enable
 
 ## Request body
 
-In the request body, supply the appOwnerTenantId under which this application has been registered must be passed as a parameter.
+In the request body, supply the **appOwnerTenantId** in which this application is registered.
 
 ## Response
 

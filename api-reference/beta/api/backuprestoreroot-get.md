@@ -1,19 +1,19 @@
 ---
-title: "Get backupRestore service status"
-description: "Get the serviceStatus of Microsoft 365 Backup and Storage."
+title: "Get backupRestoreRoot"
+description: "Get the service status of the Microsoft 365 Backup Storage service in a tenant."
 author: "maniksingh, tkanaujia"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Get backupRestore service status
+# Get backupRestoreRoot
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [serviceStatus](../resources/servicestatus.md) of Microsoft 365 Backup and Storage.
+Get the [serviceStatus](../resources/servicestatus.md) of the [Microsoft 365 Backup Storage](../resources/backuprestoreroot.md) service in a tenant.
 
 ## Permissions
 
