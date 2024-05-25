@@ -21,17 +21,11 @@ An inclusion rule indicates that a protection policy should contain protection u
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "exchangeprotectionpolicy_create_mailboxinclusionrules_permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-create-mailboxinclusionrules-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not supported.|
 
 ## HTTP request
 
@@ -43,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -55,11 +45,19 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-In the request body, supply a JSON representation of the [mailboxProtectionRule](../resources/mailboxprotectionrule.md).
+In the request body, supply a JSON representation of the [mailboxInclusionRule](../resources/mailboxprotectionrule.md) object.
+
+You can specifiy the following properties when creating a **mailboxInclusionRule**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|mailboxExpression|String|mailboxExpression supports `memberOf` and `group.id` property. Please refer to [example](../resources/mailboxprotectionrule.md#mailboxexpression-examples) for usage details. Required|
+
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) in the response body.
+If successful, this method returns a `201 Created` response code and a [mailboxInclusionRule](../resources/mailboxprotectionrule.md) object in the response body.
+**mailboxInclusionRule** is a collection of **exchangeProtectionRule** which inherits from [protectionRuleBase](../resources/protectionrulebase.md)
 
 ## Examples
 
@@ -73,14 +71,10 @@ The following example shows a request.
 -->
 
 ``` http
-POST /solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules 
-Content-Type: application/json
-Application: application/json
-Odata-Version: 4.0
-Authorization: Bearer <Access-Token>
+POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules
 
 {
-   "userExpression": "(memberOf -any (group.id -in ['f218eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+   "mailboxExpression": "(memberOf -any (group.id -in ['f218eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
 
@@ -95,10 +89,10 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
 {
-   "@odata.type": "#microsoft.graph.userMailboxProtectionRule",
+   "@odata.type": "#microsoft.graph.mailboxProtectionRule",
    "id":"61633878-8321-4950-bfaf-ed285bdd1461",
    "status" : "active",
    "createdBy":{
@@ -120,6 +114,6 @@ Content-Location: /solutions/backupRestore/exchangeProtectionPolicies/71633878-8
    },
    "lastModifiedDateTime":"2015-06-19T12-01-03.45Z",
    "isAutoApplyEnabled": false,
-   "userExpression": "(memberOf -any (group.id -in ['f218eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
+   "mailboxExpression": "(memberOf -any (group.id -in ['f218eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
