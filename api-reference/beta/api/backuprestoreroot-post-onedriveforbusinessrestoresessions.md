@@ -1,7 +1,8 @@
 ---
 title: "Create oneDriveForBusinessRestoreSession"
 description: "Create a new OneDrive for Business restore session."
-author: "tushar20, manikantsinghms"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -19,18 +20,11 @@ Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusines
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "onedriveforbusinessrestoresession-create-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessrestoresession-create-permissions.md)] -->
-
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Restore.ReadWrite.All|No Available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.ReadWrite.All|BackupRestore-Restore.ReadWrite.All|
+|Application|BackupRestore-Restore.ReadWrite.All|No Available.|
 
 ## HTTP request
 
@@ -57,15 +51,7 @@ You can specify the following properties when you create a **oneDriveForBusiness
 
 |Property|Type|Description|
 |:---|:---|:---|
-|driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects.|
-<!-- |id|String|The unique identifier of the restore session created|
-|completedDateTime|DateTimeOffset|The time of creation of the restore session.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the restore session.|
-|createdDateTime|DateTimeOffset|The time of completion of the restore session.|
-|error|[publicError](../resources/publicerror.md)|Error details will be populated here, if the restore session fails or completed with error.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|status|[restoreSessionStatus](../resource/onedriveforbusinessrestoresession.md#restoresessionstatus-values)|Status of the restore session. It is an aggregated status of restore artifacts.The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.| -->
+|driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects. Required|
 
 
 
@@ -127,7 +113,7 @@ Content-Type: application/json
     },
     "user": {
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "ABC"
+      "displayName": "User1"
     }
   },
   "createdDateTime": "2023-03-30T12-01-03.45Z",
@@ -138,11 +124,10 @@ Content-Type: application/json
     },
     "user": {
       "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-      "displayName": "DEF"
+      "displayName": "User2"
     }
   },
-  "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
-  "error": null
+  "lastModifiedDateTime": "2023-03-30T12-01-03.45Z"
 }
 ```
 
