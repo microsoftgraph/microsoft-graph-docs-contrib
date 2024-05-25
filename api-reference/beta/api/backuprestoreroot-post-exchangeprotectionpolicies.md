@@ -2,7 +2,7 @@
 title: "Create exchangeProtectionPolicy"
 description: "Create a Protection Policy for a M365 service Exchange."
 author: "tushar20"
-ms.reviewer: "maniksinghms"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

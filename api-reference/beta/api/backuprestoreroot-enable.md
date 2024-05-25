@@ -2,7 +2,7 @@
 title: "backupRestoreRoot: enable"
 description: "Enable the Microsoft 365 Backup Storage service for a tenant."
 author: "tushar20"
-ms.reviewer: "maniksinghms"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType

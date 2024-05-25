@@ -2,7 +2,7 @@
 title: "Create serviceApp"
 description: "Create a new serviceApp."
 author: "tushar20"
-ms.reviewer: "maniksinghms"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
