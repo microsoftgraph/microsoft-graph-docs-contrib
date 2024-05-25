@@ -82,7 +82,7 @@ Content-Type: application/json
 
 {
   "@odata.nextLink": "/solutions/backupRestore/oneDriveForBusinessRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952e/driveRestoreArtifacts?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
-  "values": [
+  "value": [
     {
       "id": "959ba739-70b5-43c4-8c90-b2c22014f18e",
       "destinationType": "inPlace",
@@ -95,10 +95,7 @@ Content-Type: application/json
       "restorePoint": {
           "id": "e9592a41-9d38-4e94-a16b-4d9fef695c0b_1791648201_11_7",
           "protectionDateTime": "2023-12-04T00:00:00Z",
-          "expirationDateTime": {
-              "dateTime": "2023-12-18T00:00:00.0000000",
-              "timeZone": ""
-          }
+          "expirationDateTime": "2023-12-18T00:00:00Z"
       }
     },
     {
@@ -113,10 +110,7 @@ Content-Type: application/json
       "restorePoint": {
           "id": "3ee54204-6ed5-4130-aea5-b43117a878af_1791648201_11_7",
           "protectionDateTime": "2024-02-10T00:00:00Z",
-          "expirationDateTime": {
-              "dateTime": "2024-02-25T00:00:00.0000000",
-              "timeZone": ""
-          }
+          "expirationDateTime": "2024-02-24T00:00:00Z"
       }
     }
   ]
