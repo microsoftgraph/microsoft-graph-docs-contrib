@@ -1,6 +1,6 @@
 ---
 title: "Update oneDriveForBusinessRestoreSession"
-description: "Update the properties of a OneDriveForBusiness Restore Session."
+description: "Update the properties of a OneDriveForBusiness restore session."
 author: "tushar20, manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
-To remove, specify the @removed annotation in the request body for the respective Protection Unit together with the ID of the [driveRestoreArtifact](../resources/driverestoreartifact.md).
+Update the properties of a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.
 
 ## Permissions
 
@@ -68,7 +67,7 @@ PATCH /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBu
 |lastModifiedBy|identitySet|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.| -->
 
-
+To remove a drive restore artifact, specify the `@removed` annotation in the request body together with the ID of the [driveRestoreArtifact](../resources/driverestoreartifact.md) object.
 
 ## Response
 
