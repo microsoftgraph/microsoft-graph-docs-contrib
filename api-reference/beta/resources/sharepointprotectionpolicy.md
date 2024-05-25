@@ -21,7 +21,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create sharePointProtectionPolicy](../api/sharepointprotectionpolicy-create.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Create a new [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[Create sharePointProtectionPolicy](../api/backuprestoreroot-post-sharepointprotectionpolicies.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Create a new [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 |[Update sharePointProtectionPolicy](../api/sharepointprotectionpolicy-update.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Update the properties of a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 
 ## Properties

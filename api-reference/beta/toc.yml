@@ -15359,7 +15359,7 @@ items:
             href: resources/protectionpolicybase.md
             items:
               - name: Create SharePoint Protection Policy
-                href: api/sharepointprotectionpolicy-create.md
+                href: api/backuprestoreroot-post-sharepointprotectionpolicies.md
               - name: Create Exchange Protection Policy
                 href: api/backuprestoreroot-post-exchangeprotectionpolicies.md
               - name: Create OneDrive Protection Policy
