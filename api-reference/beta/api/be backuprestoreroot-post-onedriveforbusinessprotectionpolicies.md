@@ -1,19 +1,20 @@
 ---
-title: "Create a new oneDriveForBusinessProtectionPolicy"
+title: "Create oneDriveForBusinessProtectionPolicy"
 description: "Create a Protection Policy for a M365 service OneDrive."
-author: "tushar20, manikantsinghms"
+author: "tushar20",
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# Create a new oneDriveForBusinessProtectionPolicy
+# Create oneDriveForBusinessProtectionPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a Protection Policy for a M365 service OneDrive. Policy is created in 'inactive' state. User can also provide a list of Protection Units under the policy.
+Create a protection policy for the OneDrive service in Microsoft 365. When the policy is created, its state is set to `inactive`. Users can also provide a list of protection units under the policy.
 
 Refer to [user](../resources/user.md) for the format of userId.
 
@@ -21,18 +22,11 @@ Refer to [user](../resources/user.md) for the format of userId.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "onedriveforbusinessprotectionpolicy-create-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessprotectionpolicy-create-permissions.md)]-->
-
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Delegated (work or school account)|BackupRestore-Configuration.ReadWrite.All|Not Available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Configuration.ReadWrite.All|BackupRestore-Configuration.ReadWrite.All|
+|Application|BackupRestore-Configuration.ReadWrite.All|Not Available.|
 
 ## HTTP request
 
@@ -54,24 +48,10 @@ POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies
 
 You can specify the following properties when creating a **oneDriveForBusinessProtectionPolicy**.
 
-```json
-{
-  "displayName": "String",
-  "driveProtectionUnits": [
-    {
-      "userId": "String"
-    },
-    {
-      "userId": "String"
-    }
-  ]
-}
-```
-
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the SharePoint Protection Policy.|
-|driveProtectionUnits|Collection([driveProtectionUnit](../resources/driveprotectionunit.md))|Collection of the driveProtectionUnit to be added to the oneDriveForBusinessProtectionPolicy.|
+|displayName|String|Name of the SharePoint Protection Policy. Required|
+|driveProtectionUnits|Collection([driveProtectionUnit](../resources/driveprotectionunit.md))|Collection of the driveProtectionUnit to be added to the oneDriveForBusinessProtectionPolicy. Required|
 
 ## Response
 
@@ -88,7 +68,22 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies
+POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies
+
+{
+  "displayName": "OneDrive For Business Protection Policy",
+  "driveProtectionUnits": [
+    {
+      "userId": "Stcdd3a849-dcaf-4a85-af82-7e39fc14019aring"
+    },
+    {
+      "userId": "9bc069da-b746-41a4-89ab-26125c6373c7"
+    },
+    {
+      "userId": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
+    }
+  ]
+}
 ```
 
 ### Response
