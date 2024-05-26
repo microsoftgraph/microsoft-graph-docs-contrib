@@ -118,7 +118,7 @@ The following JSON representation shows the resource type.
   }
   ],
   "lastModifiedBy": "String",
-  "sumamry": "String",
+  "sumamry": "String"
 }
 ```
 
