@@ -8721,11 +8721,11 @@ items:
                     href: api/security-whoisrecord-list-history.md
                   - name: Get
                     href: api/security-whoishistoryrecord-get.md
-              - name: EvidenceTypes
+              - name: Evidences
                 items: 
-                  - name: CloudLogonRequestEvidence
+                  - name: Cloud Log-on Request
                     href: resources/security-cloudlogonrequestevidence.md  
-                  - name: CloudLogonSessionEvidence
+                  - name: Cloud Log-on Session
                     href: resources/security-cloudlogonsessionevidence.md  
       - name: Sites and lists
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
