@@ -19,7 +19,7 @@ Represents an application sign-in summary.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [getAzureADApplicationSignInSummary](../api/reportroot-getazureadapplicationsigninsummary.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
+| [Get](../api/reportroot-getazureadapplicationsigninsummary.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
 
 ## Properties
 | Property     | Type        | Description |

@@ -24,10 +24,10 @@ Inherits from [baseTaskList](../resources/basetasklist.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List wellKnownTaskLists](../api/tasks-list-lists.md)|[wellKnownTaskList](../resources/wellknowntasklist.md) collection|Get a list of the [wellKnownTaskList](../resources/wellknowntasklist.md) objects and their properties.|
-|[Get wellKnownTaskList](../api/basetasklist-get.md)|[wellKnownTaskList](../resources/wellknowntasklist.md)|Read the properties and relationships of a [wellKnownTaskList](../resources/wellknowntasklist.md) object.|
-|[List tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
-|[Create baseTask](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
+|[List base task lists](../api/tasks-list-lists.md)|[wellKnownTaskList](../resources/wellknowntasklist.md) collection|Get a list of the [wellKnownTaskList](../resources/wellknowntasklist.md) objects and their properties.|
+|[Get base task list](../api/basetasklist-get.md)|[wellKnownTaskList](../resources/wellknowntasklist.md)|Read the properties and relationships of a [wellKnownTaskList](../resources/wellknowntasklist.md) object.|
+|[List base tasks](../api/basetasklist-list-tasks.md)|[baseTask](../resources/basetask.md) collection|Get the baseTask resources from the tasks navigation property.|
+|[Create base task](../api/basetasklist-post-tasks.md)|[baseTask](../resources/basetask.md)|Create a new baseTask object.|
 
 ## Properties
 |Property|Type|Description|

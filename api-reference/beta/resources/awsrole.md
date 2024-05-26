@@ -21,8 +21,8 @@ Inherits from [awsIdentity](../resources/awsidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List roles](../api/awsassociatedidentities-list-roles.md)|[awsRole](../resources/awsrole.md)|Get a list of the [awsRole](../resources/awsrole.md) objects and their properties.|
-|[Get AWS Role](../api/awsrole-get.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
+|[List](../api/awsassociatedidentities-list-roles.md)|[awsRole](../resources/awsrole.md)|Get a list of the [awsRole](../resources/awsrole.md) objects and their properties.|
+|[Get](../api/awsrole-get.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
 
 ## Properties
 |Property|Type|Description|

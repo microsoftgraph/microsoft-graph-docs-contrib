@@ -16,9 +16,9 @@ Represents a Microsoft Entra tenant-specific description of a print service inst
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [List services](../api/print-list-services.md) | [printService](printservice.md) collection | Get a list of Universal Print services. |
-| [Get service](../api/printservice-get.md) | [printService](printservice.md) | Read the properties and relationships of service object. |
-| [List endpoints](../api/printservice-list-endpoints.md) | [printServiceEndpoint](printserviceendpoint.md) collection | Get a list of endpoints that a service provides. |
+| [List](../api/print-list-services.md) | [printService](printservice.md) collection | Get a list of Universal Print services. |
+| [Get](../api/printservice-get.md) | [printService](printservice.md) | Read the properties and relationships of service object. |
+| [List a service's endpoints](../api/printservice-list-endpoints.md) | [printServiceEndpoint](printserviceendpoint.md) collection | Get a list of endpoints that a service provides. |
 
 ## Properties
 |Property|Type|Description|
