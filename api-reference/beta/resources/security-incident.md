@@ -117,7 +117,8 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.security.recommendedHuntingQuery"
   }
   ],
-  "lastModifiedBy": "String"
+  "lastModifiedBy": "String",
+  "sumamry": "String",
 }
 ```
 
