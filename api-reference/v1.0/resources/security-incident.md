@@ -47,6 +47,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |tenantId|String|The Microsoft Entra tenant in which the alert was created.|
 |systemTags|String collection|The system tags associated with the incident.|
 |resolvingComment|String|User input that explains the resolution of the incident and the classification choice. This property contains free editable text.|
+|summary|String|Summarize the full story of the attack related to the incident.|
 
 
 ### incidentStatus values 
@@ -105,7 +106,8 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "description" : "String",
-  "lastModifiedBy": "String"
+  "lastModifiedBy": "String",
+  "sumamry": "String"
 }
 ```
 
