@@ -52,6 +52,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |recommendedActions|String|A rich text string that represents the actions that are reccomnded to take in order to resolve the incident |
 |recommendedHuntingQueries|Collection(microsoft.graph.security.recommendedHuntingQuery)|List of hunting Kusto Query Language (KQL) queries related to the incident|
 |resolvingComment|String|User input that explains the resolution of the incident and the classification choice. This property contains free editable text.|
+|summary|String|Summarize the full story of the attack related to the incident.|
 
 
 ### incidentStatus values 
