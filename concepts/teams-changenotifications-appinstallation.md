@@ -29,9 +29,7 @@ To get change notifications for Teams app installation in personal scope, subscr
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.Read.User* |
-
-*Represents resource-specific consent (RSC) permissions.
+| Application                            | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All |
 
 #### Team scope
 
@@ -41,9 +39,7 @@ To get change notifications for Teams app installation in team scope, subscribe 
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.Read.Team* |
-
-*Represents RSC permissions.
+| Application                            | TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All|
 
 #### Chat scope
 
@@ -53,9 +49,7 @@ To get change notifications for Teams app installation in chat scope, subscribe 
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.Read.Chat* |
-
-*Represents RSC permissions.
+| Application                            | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All |
 
 #### All scopes
 
@@ -105,26 +99,6 @@ Content-Type: application/json
 
 > [!NOTE]
 > Ensure that the permissions you need to provide vary based on the scope. For example, when the subscription resource is configured for both personal and team scopes, it is mandatory to have at least one permission from each scope.
-
-For apps that use RSC permissions, you must declare `useResourceSpecificConsentBasedAuthorization=true` query parameter while you create subscription by adding it to the subscription resource:
-
-```http
-POST https://graph.microsoft.com/v1.0/subscriptions
-Content-Type: application/json 
-{
-  "changeType": "created,updated,deleted", 
-  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?useResourceSpecificConsentBasedAuthorization=true", 
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications", 
-  "includeResourceData": true, 
-  "encryptionCertificate": "{base64encodedCertificate}", 
-  "encryptionCertificateId": "{customId}", 
-  "expirationDateTime": "2023-11-16T11:00:00.0000000Z", 
-  "clientState": "{secretClientState}" 
-}
-```
-
-> [!NOTE]
-> The default value for `useResroouceSpecificConsentBasedAuthorization` query parameter is `false`. If it's not declared, it indicates that you don't intend to use RSC permission for your app.
 
 ### Notifications with resource data
 
