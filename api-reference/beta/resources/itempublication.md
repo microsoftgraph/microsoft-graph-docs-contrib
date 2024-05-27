@@ -18,11 +18,11 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List publications](../api/profile-list-publications.md)|[itemPublication](../resources/itempublication.md) collection|Get the itemPublication resources from the publications navigation property.|
-|[Create itemPublication](../api/profile-post-publications.md)|[itemPublication](../resources/itempublication.md)|Create a new itemPublication object.|
-|[Get itemPublication](../api/itempublication-get.md)|[itemPublication](../resources/itempublication.md)|Read the properties and relationships of an [itemPublication](../resources/itempublication.md) object.|
-|[Update itemPublication](../api/itempublication-update.md)|[itemPublication](../resources/itempublication.md)|Update the properties of an [itemPublication](../resources/itempublication.md) object.|
-|[Delete itemPublication](../api/itempublication-delete.md)|None|Deletes an [itemPublication](../resources/itempublication.md) object.|
+|[List](../api/profile-list-publications.md)|[itemPublication](../resources/itempublication.md) collection|Get the itemPublication resources from the publications navigation property.|
+|[Create](../api/profile-post-publications.md)|[itemPublication](../resources/itempublication.md)|Create a new itemPublication object.|
+|[Get](../api/itempublication-get.md)|[itemPublication](../resources/itempublication.md)|Read the properties and relationships of an [itemPublication](../resources/itempublication.md) object.|
+|[Update](../api/itempublication-update.md)|[itemPublication](../resources/itempublication.md)|Update the properties of an [itemPublication](../resources/itempublication.md) object.|
+|[Delete](../api/itempublication-delete.md)|None|Deletes an [itemPublication](../resources/itempublication.md) object.|
 
 ## Properties
 |Property|Type|Description|

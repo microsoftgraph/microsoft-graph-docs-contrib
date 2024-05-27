@@ -8,10 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\Simulation;
 use Microsoft\Graph\Generated\Models\EmailIdentity;
+use Microsoft\Graph\Generated\Models\AttackTechnique;
+use Microsoft\Graph\Generated\Models\Status;
 use Microsoft\Graph\Generated\Models\AddressBookAccountTargetContent;
+use Microsoft\Graph\Generated\Models\Type;
 use Microsoft\Graph\Generated\Models\TrainingSetting;
+use Microsoft\Graph\Generated\Models\SettingType;
 use Microsoft\Graph\Generated\Models\EndUserNotificationSetting;
+use Microsoft\Graph\Generated\Models\NotificationPreference;
 use Microsoft\Graph\Generated\Models\PositiveReinforcementNotification;
+use Microsoft\Graph\Generated\Models\DeliveryPreference;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
