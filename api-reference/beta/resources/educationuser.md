@@ -21,13 +21,13 @@ This object provides a targeted subset of properties from the core [user] object
 
 | Method                                               | Return Type                                  | Description                                                                   |
 | :--------------------------------------------------- | :------------------------------------------- | :---------------------------------------------------------------------------- |
-| [Get educationUser](../api/educationuser-get.md)     | [educationUser]                              | Read properties and relationships of an **educationUser** object.             |
+| [Get user](../api/educationuser-get.md)     | [educationUser]                              | Read properties and relationships of an **educationUser** object.             |
 | [List classes](../api/educationuser-list-classes.md) | [educationClass] collection                  | Get the **educationClass** object collection for which the user is member.    |
 | [List schools](../api/educationuser-list-schools.md) | [educationSchool] collection                 | Get the **educationSchool** object collection for which the user is a member. |
 | [Get user](../api/educationuser-get-user.md)         | [user]                                       | Get the simple directory **user** that corresponds to this **educationUser**. |
 | [Update](../api/educationuser-update.md)             | [educationUser]                              | Update an **educationUser** object.                                           |
-| [Delete](../api/educationuser-delete.md)             | None                                         | Delete an **educationUser** object.                                           |
-| [Delta](../api/educationuser-delta.md)               | [educationUser](educationuser.md) collection | Get incremental changes for **educationUsers**.                               |
+| [Delete user](../api/educationuser-delete.md)             | None                                         | Delete an **educationUser** object.                                           |
+| [Get delta](../api/educationuser-delta.md)               | [educationUser](educationuser.md) collection | Get incremental changes for **educationUsers**.                               |
 
 ## Properties
 

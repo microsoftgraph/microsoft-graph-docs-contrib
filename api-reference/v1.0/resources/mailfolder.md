@@ -52,23 +52,23 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-|[List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection|Get all the mail folders in the specified user's mailbox, including any mail search folders.|
-|[Get mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
-|[Create mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Create a new mail folder in the root folder of the user's mailbox.|
-|[List childFolders](../api/mailfolder-list-childfolders.md) |[MailFolder](mailfolder.md) collection| Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level folder collection and navigate to another folder.|
-|[Create childFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Create a new mailFolder under the current one by posting to the childFolders collection.|
-|[Create Message](../api/mailfolder-post-messages.md) |[Message](message.md)| Create a new message in the current mailFolder by posting to the messages collection.|
-|[List messages](../api/mailfolder-list-messages.md) |[Message](message.md) collection| Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox.|
-|[Update](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Update the specified mailFolder object. |
-|[Delete](../api/mailfolder-delete.md) | None |Delete the specified mailFolder object. |
-|[copy](../api/mailfolder-copy.md)|[MailFolder](mailfolder.md)|Copy a mailFolder and its contents to another mailFolder.|
-|[delta](../api/mailfolder-delta.md)|[mailFolder](mailfolder.md) collection|Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.|
-|[move](../api/mailfolder-move.md)|[MailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
+|[List mail search folders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection|Get all the mail folders in the specified user's mailbox, including any mail search folders.|
+|[Get mail search folder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
+|[Create mail folder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Create a new mail folder in the root folder of the user's mailbox.|
+|[List child folders](../api/mailfolder-list-childfolders.md) |[MailFolder](mailfolder.md) collection| Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level folder collection and navigate to another folder.|
+|[Create child folder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Create a new mailFolder under the current one by posting to the childFolders collection.|
+|[Create message in folder](../api/mailfolder-post-messages.md) |[Message](message.md)| Create a new message in the current mailFolder by posting to the messages collection.|
+|[List messages in folder](../api/mailfolder-list-messages.md) |[Message](message.md) collection| Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox.|
+|[Update mail folder](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Update the specified mailFolder object. |
+|[Delete mail search folder](../api/mailfolder-delete.md) | None |Delete the specified mailFolder object. |
+|[Copy mail folder](../api/mailfolder-copy.md)|[MailFolder](mailfolder.md)|Copy a mailFolder and its contents to another mailFolder.|
+|[Get mail folder delta](../api/mailfolder-delta.md)|[mailFolder](mailfolder.md) collection|Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.|
+|[Move mail folder](../api/mailfolder-move.md)|[MailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
-|[Get mailFolder with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [mailFolder](mailfolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
-|[Get mailFolder with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get a mailFolder that contains a multi-value extended property by using `$expand`. |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [mailFolder](mailfolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
+|[Get multi-value property](../api/multivaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get a mailFolder that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 

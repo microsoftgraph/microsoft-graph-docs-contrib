@@ -27,8 +27,8 @@ The following are examples of types:
 
 | Method                                                                       | Return type                                                                                        | Description                                                                                                   |
 | :--------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| [List referenceDefinitions](../api/industrydata-referencedefinition-list.md) | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) collection | Get a list of the [referenceDefinition](industrydata-referencedefinition.md) objects and their properties.    |
-| [Get referenceDefinition](../api/industrydata-referencedefinition-get.md)    | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md)            | Read the properties and relationships of a [referenceDefinition](industrydata-referencedefinition.md) object. |
+| [List](../api/industrydata-referencedefinition-list.md) | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md) collection | Get a list of the [referenceDefinition](industrydata-referencedefinition.md) objects and their properties.    |
+| [Get](../api/industrydata-referencedefinition-get.md)    | [microsoft.graph.industryData.referenceDefinition](industrydata-referencedefinition.md)            | Read the properties and relationships of a [referenceDefinition](industrydata-referencedefinition.md) object. |
 
 ## Properties
 

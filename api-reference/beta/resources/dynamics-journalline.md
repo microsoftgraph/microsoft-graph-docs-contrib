@@ -21,10 +21,10 @@ Represents a line in a journal in Dynamics 365 Business Central.
 
 | Method                                                    | Return Type|Description         |
 |:----------------------------------------------------------|:-----------|:-------------------|
-|[Get journalLine](../api/dynamics-journalline-get.md)      |journalLine|Gets a journal line.   |
-|[Post journalLine](../api/dynamics-create-journalline.md)  |journalLine|Creates a journal line.|
-|[Patch journalLine](../api/dynamics-journalline-update.md) |journalLine|Updates a journal line.|
-|[Delete journalLine](../api/dynamics-journalline-delete.md)|none        |Deletes a journal line.|
+|[Get journal line](../api/dynamics-journalline-get.md)      |journalLine|Gets a journal line.   |
+|[Create journal line](../api/dynamics-create-journalline.md)  |journalLine|Creates a journal line.|
+|[Update journal line](../api/dynamics-journalline-update.md) |journalLine|Updates a journal line.|
+|[Delete journal line](../api/dynamics-journalline-delete.md)|none        |Deletes a journal line.|
 
 ## Properties
 | Property	           | Type	                |Description                                                        |
