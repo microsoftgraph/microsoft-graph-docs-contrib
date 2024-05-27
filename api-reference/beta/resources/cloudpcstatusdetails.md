@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of a Cloud PC status.
+Represents details about a Cloud PC status.
 
 > [!NOTE]
 > Starting from August 31, 2024, cloudPcStatusDetails property will no longer be supported and will be marked as deprecated. Please use [cloudPcStatusDetail](../resources/cloudpcstatusdetail.md) instead.

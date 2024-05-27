@@ -1,6 +1,6 @@
 ---
 title: "cloudPcConnectionSetting resource type"
-description: "The connection setting of a Cloud PC. Currently, only enableSinleSignOn is supported. IT admins can enable it by updating the provisioning policy and calling applyConfig/apply API."
+description: "The connection setting of a Cloud PC. Currently, only enableSingleSignOn is supported. IT admins can enable it by updating the provisioning policy and calling applyConfig/apply API."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The connection setting of a Cloud PC. Currently, only **enableSinleSignOn** is supported. IT admins can enable it by updating the provisioning policy and calling applyConfig/apply API.
+The connection setting of a Cloud PC. Currently, only **enableSingleSignOn** is supported. IT admins can enable it by updating the provisioning policy and calling applyConfig/apply API.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|enableSingleSignOn|Boolean|When `true`, indicates the single sign on is enabled. When `false` indicates single sign on is disabled. default value is `false`.|
+|enableSingleSignOn|Boolean|When `true`, indicates the single sign-on is enabled. When `false` indicates single sign-on is disabled. The default value is `false`.|
 
 ## Relationships
 

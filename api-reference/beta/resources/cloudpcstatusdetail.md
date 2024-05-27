@@ -21,7 +21,7 @@ Describes the extended detail of the Cloud PC status or action status, including
 |:---|:---|:---|
 |code|String|The error/warning code associated with the Cloud PC status. Example: `"code": "internalServerError"`.|
 |message|String|The status message associated with error code. Example: `"message": "There was an internal server error. Please contact support xxx."`. |
-|additionalInformation|[keyValuePair](../resources/keyvaluepair.md) collection|Any additional information about the Cloud PC status. Example: `"additionalInformation": ["{'@odata.type': 'microsoft.graph.keyValuePair','name': 'retriable','value': true }] "`|
+|additionalInformation|[keyValuePair](../resources/keyvaluepair.md) collection|More information about the Cloud PC status. For example, `"additionalInformation": ["{'@odata.type': 'microsoft.graph.keyValuePair','name': 'retriable','value': true }] "`|
 
 ## Relationships
 
