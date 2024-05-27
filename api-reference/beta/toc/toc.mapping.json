@@ -326,6 +326,8 @@
             "cloudPcScopedPermission",
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
+            "cloudPcStatusDetail",
+            "cloudpcconnectionsetting",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
