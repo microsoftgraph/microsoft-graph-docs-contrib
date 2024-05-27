@@ -2214,7 +2214,7 @@
 	      "Version": "beta",
 		    "CreatedDateTime": "2024-05-26T11:35:02.5277871Z",
 		    "WorkloadArea": "Security",
-				"SubArea": ""
+				"SubArea": "Alerts and incidents"
 			},
 			{
 				"ChangeList": [
@@ -2232,7 +2232,7 @@
 				  "Version": "v1.0",
 				  "CreatedDateTime": "2024-05-26T11:35:02.5280165Z",
 				  "WorkloadArea": "Security",
-				  "SubArea": ""
+				  "SubArea": "Alerts and incidents"
 			  }
   ]
 }
