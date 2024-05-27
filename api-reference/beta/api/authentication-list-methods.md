@@ -1,5 +1,5 @@
 ---
-title: "List methods"
+title: "List authentication methods"
 description: "Retrieve a list of authentication methods registered to a user."
 ms.localizationpriority: medium
 author: "jpettere"
@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ---
 
-# List methods
+# List authentication methods
 
 Namespace: microsoft.graph
 
@@ -169,7 +169,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List methods",
+  "description": "List authentication methods",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
