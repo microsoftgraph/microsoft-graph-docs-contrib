@@ -1,7 +1,8 @@
 ---
 title: "List siteProtectionUnits"
-description: "List all Site Protection Units."
-author: "tushar20, manikantsinghms"
+description: "Get a list of the site protection units that are associated with a SharePoint protection policy."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,18 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all Site Protection Units. Read the properties and relationships of a [siteProtectionUnit](../resources/siteprotectionunit.md).
+Get a list of the [siteProtectionUnit](../resources/siteprotectionunit.md) objects that are associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "siteprotectionunits-list-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/siteprotectionunits-list-permissions.md)]-->
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Configuration.Read.All|BackupRestore-Configuration.ReadWrite.All|
@@ -42,10 +37,6 @@ GET /solutions/backupRestore/siteProtectionUnits
 GET /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteProtectionUnits
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -62,9 +53,213 @@ If successful, this method returns a `200 OK` response code and a [siteProtectio
 
 ## Examples
 
-### Example 1
+### Example 1 : List all the siteProtectionUnits in a tenant
 
-List siteProtectionUnits under a sharePointProtectionPolicy.
+The following example shows how to get a list of all the **siteProtectionUnits** objects in a tenant.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_all_siteprotectionunit"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/backupRestore/siteProtectionUnits
+```
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.siteProtectionUnit)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+
+{
+  "@odata.nextLink": "/solutions/backupRestore/siteProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "values": [
+    {
+      "@odata.type": "#microsoft.graph.siteProtectionUnit",
+      "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "siteId": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee4532",
+      "siteName": "Enhanced Restore IDC", // Newly Added
+      "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDC", // Newly Added
+      "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "status": "unprotected",
+      "createdBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "error": null
+    },
+    {
+      "@odata.type": "#microsoft.graph.siteProtectionUnit",
+      "id": "8f014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "siteId": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee5674",
+      "siteName": "Enhanced Restore IDC - 1", // Newly Added
+      "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCOne", // Newly Added
+      "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "status": "unprotectRequested",
+      "createdBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "error": null
+    },
+    {
+      "@odata.type": "#microsoft.graph.siteProtectionUnit",
+      "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e8517765",
+      "siteName": "Enhanced Restore IDC - 2", // Newly Added
+      "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCTwo", // Newly Added
+      "status": "protected",
+      "createdBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "error": null
+    },
+    {
+      "@odata.type": "#microsoft.graph.siteProtectionUnit",
+      "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e850987",
+      "siteName": "Enhanced Restore IDC - 3", // Newly Added
+      "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCThree", // Newly Added
+      "status": "unprotected",
+      "createdBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "error": null
+    },
+    {
+      "@odata.type": "#microsoft.graph.siteProtectionUnit",
+      "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
+      "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,1111110f-634f-4300-a841-3a8a2e851851",
+      "siteName": "Who+", // Newly Added
+      "siteWebUrl": "https://contoso.sharepoint.com/teams/Whoplus", // Newly Added
+      "status": "protectRequested",
+      "createdBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "createdDateTime": "2015-06-19T12-01-03.45Z",
+      "lastModifiedBy": {
+        "application": {
+          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "displayName": "Microsoft Enhanced Restore"
+        },
+        "user": {
+          "email": "abc@contoso.com",
+          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+          "displayName": "ABC"
+        }
+      },
+      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
+      "error": null
+    }
+  ]
+}
+```
+
+### Example 2: List the siteProtectionUnits associated with a SharePoint protection policy.
+
+The following example shows how to list all the **siteProtectionUnits** associated with a **sharePointProtectionPolicy**.
 
 #### Request
 
@@ -75,7 +270,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/siteProtectionUnits
+GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/siteProtectionUnits
 ```
 
 #### Response
@@ -84,7 +279,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.siteProtectionUnit"
+  "@odata.type": "Collection(microsoft.graph.siteProtectionUnit)"
 }
 -->
 ``` http
@@ -238,210 +433,6 @@ HTTP/1.1 200 OK
       "siteName": "Enhanced Restore IDC - 3", // Newly Added
       "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCThree", // Newly Added
       "status": "protected",
-      "createdBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
-      "lastModifiedBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
-      "error": null
-    }
-  ]
-}
-```
-
-### Example 2
-
-List all siteProtectionUnits in a tenant.
-
-#### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "list_all_siteprotectionunit"
-}
--->
-``` http
-GET /solutions/backupRestore/siteProtectionUnits
-```
-
-#### Response
-
-The following example shows the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.siteProtectionUnit"
-}
--->
-``` http
-HTTP/1.1 200 OK
-
-{
-  "@odata.nextLink": "/solutions/backupRestore/siteProtectionUnits?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
-  "values": [
-    {
-      "@odata.type": "#microsoft.graph.siteProtectionUnit",
-      "id": "2b014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "siteId": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee4532",
-      "siteName": "Enhanced Restore IDC", // Newly Added
-      "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDC", // Newly Added
-      "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "status": "unprotected",
-      "createdBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
-      "lastModifiedBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
-      "error": null
-    },
-    {
-      "@odata.type": "#microsoft.graph.siteProtectionUnit",
-      "id": "8f014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "siteId": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee5674",
-      "siteName": "Enhanced Restore IDC - 1", // Newly Added
-      "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCOne", // Newly Added
-      "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "status": "unprotectRequested",
-      "createdBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
-      "lastModifiedBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
-      "error": null
-    },
-    {
-      "@odata.type": "#microsoft.graph.siteProtectionUnit",
-      "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e8517765",
-      "siteName": "Enhanced Restore IDC - 2", // Newly Added
-      "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCTwo", // Newly Added
-      "status": "protected",
-      "createdBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
-      "lastModifiedBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
-      "error": null
-    },
-    {
-      "@odata.type": "#microsoft.graph.siteProtectionUnit",
-      "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e850987",
-      "siteName": "Enhanced Restore IDC - 3", // Newly Added
-      "siteWebUrl": "https://contoso.sharepoint.com/teams/ERIDCThree", // Newly Added
-      "status": "unprotected",
-      "createdBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "createdDateTime": "2015-06-19T12-01-03.45Z",
-      "lastModifiedBy": {
-        "application": {
-          "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-          "displayName": "Microsoft Enhanced Restore"
-        },
-        "user": {
-          "email": "abc@contoso.com",
-          "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
-          "displayName": "ABC"
-        }
-      },
-      "lastModifiedDateTime": "2015-06-19T12-01-03.45Z",
-      "error": null
-    },
-    {
-      "@odata.type": "#microsoft.graph.siteProtectionUnit",
-      "id": "9b014d8c-71fe-4d00-a01a-31850bc5b32c",
-      "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
-      "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,1111110f-634f-4300-a841-3a8a2e851851",
-      "siteName": "Who+", // Newly Added
-      "siteWebUrl": "https://contoso.sharepoint.com/teams/Whoplus", // Newly Added
-      "status": "protectRequested",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

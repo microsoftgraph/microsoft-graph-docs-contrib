@@ -1,13 +1,14 @@
 ---
-title: "List siteRestoreArtifact"
-description: "List all the siteRestoreArtifact for a SharePoint Restore Session for the tenant."
-author: "tushar20, manikantsinghms"
+title: "List siteRestoreArtifacts"
+description: "List all the siteRestoreArtifacts for a SharePoint restore session for the tenant."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# List siteRestoreArtifact
+# List siteRestoreArtifacts
 
 Namespace: microsoft.graph
 
@@ -19,19 +20,11 @@ List all the [siteRestoreArtifact](../resources/siterestoreartifact.md) for a [s
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointrestoresession-list-siterestoreartifacts-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/sharepointrestoresession-list-siterestoreartifacts-permissions.md)] -->
-
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
-
 
 ## HTTP request
 
@@ -42,10 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifacts
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) object in the response body.
 
 ## Examples
 
@@ -72,9 +61,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifacts
+GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952e/siteRestoreArtifacts
 ```
-
 
 ### Response
 
@@ -91,22 +79,45 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
+  "@odata.id": "/solutions/backupRestore/sharepointRestoreSessions(845457dc-4bb2-4815-bef3-8628ebd1952e)",
+  "@odata.nextLink": "/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952e/siteRestoreArtifacts?$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
+  "values": [
     {
-      "@odata.type": "#microsoft.graph.siteRestoreArtifact",
-      "id": "4459abc4-2f9c-8250-f7cb-f8ebecea34f5",
-      "destinationType": "String",
-      "status": "String",
-      "startDateTime": "String (timestamp)",
-      "completionDateTime": "String (timestamp)",
-      "error": {
-        "@odata.type": "microsoft.graph.publicError"
-      },
-      "restoredSiteId": "String",
-      "restoredSiteName": "String",
-      "restoredSiteWebUrl": "String"
+      "id": "959ba739-70b5-43c4-8c90-b2c22014f18a",
+      "destinationType": "inPlace",
+      "status": "succeeded",
+      "startDateTime": "2023-12-04T12:18:55.2117521Z",
+      "completionDateTime": "2023-12-04T13:22:12.7209691Z",
+      "restoredSiteId": "42f0e20e-748a-4444-80bb-d641d1865574",
+      "restoredSiteName": "testsite101", // Newly Added
+      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testsite101R3" // Newly Added
+      "restorePoint": {
+        "id": "c7e702b7-b5ee-4faf-9e43-5fd23b4fb0bf_1701648000_14_1",
+        "protectionDateTime": "2023-12-04T00:00:00Z",
+        "expirationDateTime": {
+          "dateTime": "2023-12-18T00:00:00.0000000",
+          "timeZone": ""
+        }
+      }
+    },
+    {
+      "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
+      "destinationType": "new",
+      "status": "succeeded",
+      "startDateTime": "2024-02-10T12:18:55.2117521Z",
+      "completionDateTime": "2024-02-10T13:22:12.7209691Z",
+      "restoredSiteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
+      "restoredSiteName": "testsite102", // Newly Added
+      "restoredSiteWebUrl": "https://a830edad9050849odb10gb.sharepoint.com/sites/testsite102R0" // Newly Added
+      "restorePoint": {
+        "id": "28684b23-7f38-44bc-91c0-a3c92758030d_1601648000_14_1",
+        "protectionDateTime": "2024-02-10T00:00:00Z",
+        "expirationDateTime": {
+            "dateTime": "2024-02-25T00:00:00.0000000",
+            "timeZone": ""
+        }
+      }
     }
   ]
 }
 ```
-

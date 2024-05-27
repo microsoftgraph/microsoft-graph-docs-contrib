@@ -1,7 +1,8 @@
 ---
 title: "Get serviceApp"
 description: "Read the properties and relationships of a serviceApp."
-author: "maniksingh, tkanaujia"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -60,9 +61,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps/{serviceAppId}
+GET https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461
 ```
-
 
 ### Response
 
@@ -94,4 +94,3 @@ Content-Type: application/json
     }
 }
 ```
-

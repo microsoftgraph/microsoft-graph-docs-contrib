@@ -48,7 +48,7 @@ You can specify the following properties when creating a **serviceApp**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|effectiveDateTime|DateTimeOffset|The time to activate the serviceApp.|
+|effectiveDateTime|DateTimeOffset|The time to activate the serviceApp. Required.|
 
 ## Response
 

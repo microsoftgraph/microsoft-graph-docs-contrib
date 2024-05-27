@@ -1,7 +1,8 @@
 ---
 title: "Delete restoreSessionBase"
-description: "Delete a Restore Session Base"
-author: "tushar20, manikantsinghms"
+description: "Deletes a draft restoreSessionBase"
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,18 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [restoreSessionBase](../resources/restoresessionbase.md).
+Deletes a draft [restoreSessionBase](../resources/restoresessionbase.md) object.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "restoresession-delete-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/restoresession-delete-permissions.md)] -->
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
@@ -67,9 +61,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/solutions/backupRestore/restoreSessions/{restoreSessionBaseId}
+DELETE https://graph.microsoft.com/beta/solutions/backupRestore/restoreSessions/61633878-8321-4950-bfaf-ed285bdd1461
 ```
-
 
 ### Response
 
@@ -83,4 +76,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

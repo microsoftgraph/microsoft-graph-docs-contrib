@@ -1,7 +1,8 @@
 ---
 title: "Get restoreSessionBase"
-description: "Get restore session by Id"
-author: "tushar20, manikantsinghms"
+description: "Get properties of restoreSessionBase by ID."
+author: "tushar20"
+ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -13,18 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get [restoreSession](../resources/restoresessionbase.md) by Id.
+Get properties of [restoreSession](../resources/restoresessionbase.md) object by ID.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "restoresession-get-permissions"
-}
--->
-<!-- [!INCLUDE [permissions-table](../includes/permissions/restoresession-get-permissions.md)] -->
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
@@ -41,10 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /solutions/backupRestore/restoreSessions/{restoreSessionBaseId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -71,9 +61,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/restoreSessions/{restoreSessionBaseId}
+GET https://graph.microsoft.com/beta/solutions/backupRestore/restoreSessions/959ba739-70b5-43c4-8c90-b2c22014f18b
 ```
-
 
 ### Response
 
@@ -90,23 +79,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.restoreSessionBase",
-    "id": "8c3b5c30-3899-8712-95f9-f3c6b4e5324d",
-    "status": "String",
-    "createdDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+  "@odata.type": "#microsoft.graph.sharepointRestoreSession",
+  "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
+  "status": "active",
+  "createdBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
     },
-    "completedDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "error": {
-      "@odata.type": "microsoft.graph.publicError"
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "Ryan"
     }
-  }
+  },
+  "createdDateTime": "2023-03-30T12-01-03.45Z",
+  "lastModifiedBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "Ryan"
+    }
+  },
+  "lastModifiedDateTime": "2023-03-30T12-01-03.45Z",
+  "error": null
 }
 ```
-
