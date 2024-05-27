@@ -4,9 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.models.message_rule import MessageRule
-from msgraph.generated.models.message_rule_actions import MessageRuleActions
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.models.message_rule import MessageRule
+from msgraph_beta.generated.models.message_rule_actions import MessageRuleActions
+from msgraph_beta.generated.models.importance import Importance
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -6,6 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.models.device_management_exchange_connector import DeviceManagementExchangeConnector
+from msgraph.generated.models.device_management_exchange_connector_status import DeviceManagementExchangeConnectorStatus
+from msgraph.generated.models.device_management_exchange_connector_type import DeviceManagementExchangeConnectorType
 
 graph_client = GraphServiceClient(credentials, scopes)
 

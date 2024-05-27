@@ -13,14 +13,14 @@ import (
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
-	  graphserviceprincipals(appid='{appid}') "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals(appid='{appid}')"
+	  graphserviceprincipalswithappid "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipalswithappid"
 	  //other-imports
 )
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "create-if-missing")
 
-configuration := &graphserviceprincipals(appid='{appid}').ServicePrincipals(appId='{appId}')RequestBuilderPatchRequestConfiguration{
+configuration := &graphserviceprincipalswithappid.ServicePrincipalsWithAppIdRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewServicePrincipal()

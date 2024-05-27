@@ -20,7 +20,7 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 | Method                                             | Return Type                                  | Description                                                                 |
 | :------------------------------------------------- | :------------------------------------------- | :-------------------------------------------------------------------------- |
 | [Get subscribedSku](../api/subscribedsku-get.md)   | [subscribedSku](subscribedsku.md)            | Get a specific commercial subscription that an organization has acquired.   |
-| [List subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
+| [List subscribedSkus](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection | Get the list of commercial subscriptions that an organization has acquired. |
 
 ## Properties
 
