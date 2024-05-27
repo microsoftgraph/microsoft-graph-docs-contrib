@@ -327,7 +327,7 @@
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
-            "cloudpcconnectionsetting",
+            "CloudPcConnectionSetting",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
