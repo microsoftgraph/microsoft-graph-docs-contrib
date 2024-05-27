@@ -44,12 +44,12 @@ Apply the principle of least privilege when you assign and grant Microsoft Graph
 
      If an endpoint can use RSC permissions, they’re the best for privacy. Next are delegated permissions, which need user action to access the Graph. Lastly, application permissions are the most sensitive to privacy. For example, if you want to send a message to a chat with the app, use `ChatMessage.Send.Chat` (an RSC permission). It’s better than `Chat.ReadWrite` (a Microsoft Graph permission), which also allows you to read messages.
 
-     If you use RSC permissions, we suggest developers create an admin dashboard as it allows the tenant admin to see and manage where the permissions are used. For example, admins can see which chats have granted the app permissions and can remove these permissions if needed. This reassures customers that they control how their users use the permissions.
+     If you use RSC permissions, we suggest you to create an admin dashboard as it allows the tenant admin to see and manage where the permissions are used. For example, admins can see which chats have granted the app permissions and can remove these permissions if needed. This reassures customers that they control how their users use the permissions.
 
 ## Maximize app value and user experience for customers with limited permissions
 
 * **Provide maximum value**: Even without certain permissions granted on a customer tenant, an app must still offer the greatest value possible, with only the specific functionality requiring the blocked permission being unavailable.
-* **Fallback workarounds**: Developers must have permissionless alternatives ready for when preferred features are blocked, ensuring users still receive the best possible experience.
+* **Fallback workarounds**: You must have permissionless alternatives ready for when preferred features are blocked, ensuring users still receive the best possible experience.
 * **Feature management flexibility**: Apps might use toggles or other management tools to adjust features based on the permissions granted by the customer.
 * **Staggered permissions for user-installed apps**: Apps can use [staggered permissions](/samples/officedev/microsoft-teams-samples/officedev-microsoft-teams-samples-tab-staggered-permission-nodejs/) to request permissions only when necessary for a feature, aligning with user privacy policies, and potentially increasing app usage. It isn't applicable for admin-installed apps.
 
@@ -80,19 +80,19 @@ Apply the principle of least privilege when you assign and grant Microsoft Graph
 
 * **Install app in official channel**: Encourage customers to use Microsoft’s official channels for installing Teams apps to maintain trust and avoid any negative impact.
 * **Avoid alternative methods**: Discourage the use of alternative installation methods, such as links or multiple apps, which can erode customer trust. Exceptions might apply in cases of limitations or known issues like [limiting application permissions to specific Exchange online mailboxes](auth-limit-mailbox-access.md), missing [Outlook mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes), or [SharePoint](/sharepoint/dev/solution-guidance/security-apponly-azureacs) controls.
-* **Admin-installed apps**: For admin-installed apps, developers can set the `defaultblockuntiladminaction` [app manifest](/microsoftteams/platform/resources/schema/manifest-schema) parameter to `true`, which hides the app from tenant users by default until an admin authorizes it. However, this approach might not be suitable for user-installed apps.
+* **Admin-installed apps**: For admin-installed apps, you can set the `defaultblockuntiladminaction` [app manifest](/microsoftteams/platform/resources/schema/manifest-schema) parameter to `true`, which hides the app from tenant users by default until an admin authorizes it. However, this approach might not be suitable for user-installed apps.
 
 ## Update your publisher attestation
 
-**Permission changes**: Developers must update their publisher attestation in the [Microsoft Teams apps security and compliance](/microsoft-365-app-certification/teams/teams-apps) to reflect any permission changes for the app.
+**Permission changes**: You must update their publisher attestation in the [Microsoft Teams apps security and compliance](/microsoft-365-app-certification/teams/teams-apps) to reflect any permission changes for the app.
 
-If this step isn't completed, the detailed list of permissions on the documentation page is different to the list of permissions requested by the app. This impacts the customer trust and adoption.
+If this step isn't completed, the detailed list of permissions on the documentation page is different from the list of permissions requested by the app. This erodes the customer trust and adoption.
 
 ## Microsoft 365 certification for Teams app
 
 **Certification benefits**: Certify your Teams app through the [Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide) program that helps customers to overcome concerns on app security and privacy. It can be the first step for customers to start their approval process for the app permission on their tenant.​
 
-With Microsoft 365 certification, you affirm your dedication to adhering to security and privacy standards, potentially increasing customer confidence and facilitating the approval process for your app.
+With Microsoft 365 certification, you affirm your dedication to adhering to security and privacy standards, which increases the customer confidence and facilitates the approval process for your app.
 
 ## See also
 
