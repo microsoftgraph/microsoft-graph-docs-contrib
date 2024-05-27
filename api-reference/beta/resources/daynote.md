@@ -18,11 +18,11 @@ Represents a piece of text that communicates a note relevant for a specific day 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dayNotes](../api/daynote-list.md)|[dayNote](../resources/daynote.md) collection|Get a list of the [dayNote](../resources/daynote.md) objects and their properties.|
-|[Create dayNote](../api/daynote-create.md)|[dayNote](../resources/daynote.md)|Create a new [dayNote](../resources/daynote.md) object.|
-|[Get dayNote](../api/daynote-get.md)|[dayNote](../resources/daynote.md)|Read the properties and relationships of a [dayNote](../resources/daynote.md) object.|
-|[Update dayNote](../api/daynote-update.md)|[dayNote](../resources/daynote.md)|Update the properties of a [dayNote](../resources/daynote.md) object.|
-|[Delete dayNote](../api/daynote-delete.md)|None|Delete a [dayNote](../resources/daynote.md) object.|
+|[List](../api/daynote-list.md)|[dayNote](../resources/daynote.md) collection|Get a list of the [dayNote](../resources/daynote.md) objects and their properties.|
+|[Create](../api/daynote-create.md)|[dayNote](../resources/daynote.md)|Create a new [dayNote](../resources/daynote.md) object.|
+|[Get](../api/daynote-get.md)|[dayNote](../resources/daynote.md)|Read the properties and relationships of a [dayNote](../resources/daynote.md) object.|
+|[Update](../api/daynote-update.md)|[dayNote](../resources/daynote.md)|Update the properties of a [dayNote](../resources/daynote.md) object.|
+|[Delete](../api/daynote-delete.md)|None|Delete a [dayNote](../resources/daynote.md) object.|
 
 ## Properties
 |Property|Type|Description|
