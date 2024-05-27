@@ -21,7 +21,7 @@ Represents a company resource type in Dynamics 365 Business Central.
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Get company](../api/dynamics-companies-get.md)|company|Get a company.|
+|[Get companies](../api/dynamics-companies-get.md)|company|Get a company.|
 
 ## Properties
 | Property	      | Type |Description                             |

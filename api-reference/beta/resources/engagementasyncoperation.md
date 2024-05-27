@@ -23,7 +23,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get engagementAsyncOperation](../api/engagementasyncoperation-get.md) | [engagementAsyncOperation](../resources/engagementasyncoperation.md) | Get an [engagementAsyncOperation](../resources/engagementasyncoperation.md) to track a long-running operation request. |
+| [Get](../api/engagementasyncoperation-get.md) | [engagementAsyncOperation](../resources/engagementasyncoperation.md) | Get an [engagementAsyncOperation](../resources/engagementasyncoperation.md) to track a long-running operation request. |
 
 ## Properties
 

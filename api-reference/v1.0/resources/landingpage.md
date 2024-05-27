@@ -19,8 +19,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List landingPages](../api/attacksimulationroot-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get a list of the [landingPage](../resources/landingpage.md) objects and their properties.|
-|[Get landingPage](../api/landingpage-get.md)|[landingPage](../resources/landingpage.md)|Get a [landingPage](../resources/landingpage.md) associated with an attack simulation campaign for a tenant.|
+|[List](../api/attacksimulationroot-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get a list of the [landingPage](../resources/landingpage.md) objects and their properties.|
+|[Get](../api/landingpage-get.md)|[landingPage](../resources/landingpage.md)|Get a [landingPage](../resources/landingpage.md) associated with an attack simulation campaign for a tenant.|
 
 ## Properties
 
