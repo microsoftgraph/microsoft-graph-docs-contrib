@@ -38,8 +38,8 @@ POST /groups/{team-id}/team/channels/{channel-id}/unarchive
 
 ## Request headers
 
-| Header       | Value |
-|:-------------|:------|
+|Name|Description|
+|:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
