@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventRegistration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-cancel?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventRegistration",
+          "ChangeType": "Addition",
+          "Description": "Added the [post](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-post?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventRegistration",
+          "ChangeType": "Addition",
+          "Description": "Added the [list session](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-list-virtualeventsession?view=graph-rest-beta) method to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the **cancel** parameter to the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-cancel?view=graph-rest-beta) method.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+          "ApiChange": "Property",
+          "ChangedApiName": "preferredLanguage",
+          "ChangeType": "Addition",
+          "Description": "Added the **preferredLanguage** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+          "ApiChange": "Property",
+          "ChangedApiName": "preferredTimezone",
+          "ChangeType": "Addition",
+          "Description": "Added the **preferredTimezone** property to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        }
+      ],
+      "Id": "8ee931ce-0f58-4bea-b8c6-ca466e4a2722",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-4-30T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "62c7d0be-0241-4804-b431-c7575ccae574",
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventWebinar",
