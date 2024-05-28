@@ -4,7 +4,7 @@
             "source_path": "api-reference/v1.0/resources/printreleasemechanism.md",
             "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
             "redirect_document_id": true
-        },    
+        },
         {
             "source_path": "api-reference/beta/resources/printreleasemechanism.md",
             "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
@@ -184,6 +184,56 @@
             "source_path": "concepts/microsoft365-groups-concept-overview.md",
             "redirect_url": "/graph/api/resources/groups-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-azuredatalakeconnector-delete.md",
+            "redirect_url": "api-reference/beta/api/industrydata-industrydataconnector-delete.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-azuredatalakeconnector-get.md",
+            "redirect_url": "api-reference/beta/api/industrydata-industrydataconnector-get.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-azuredatalakeconnector-list.md",
+            "redirect_url": "api-reference/beta/api/industrydata-industrydataconnector-list.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundfileflow-delete.md",
+            "redirect_url": "api-reference/beta/api/industrydata-inboundflow-delete.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundfileflow-get.md",
+            "redirect_url": "api-reference/beta/api/industrydata-inboundflow-get.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundfileflow-list.md",
+            "redirect_url": "api-reference/beta/api/industrydata-inboundflow-list.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundflow-post.md",
+            "redirect_url": "api-reference/beta/api/industrydata-inboundfileflow-post.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-inboundflow-update.md",
+            "redirect_url": "api-reference/beta/api/industrydata-inboundfileflow-update.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-industrydataconnector-post.md",
+            "redirect_url": "api-reference/beta/api/industrydata-azuredatalakeconnector-post.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/api/industrydata-industrydataconnector-update.md",
+            "redirect_url": "api-reference/beta/api/industrydata-azuredatalakeconnector-update.md",
+            "redirect_document_id": true
         }
     ]
 }
