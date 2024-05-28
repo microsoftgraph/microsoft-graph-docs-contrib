@@ -82,7 +82,7 @@ The request failed because an undetermined error occurred.
 
 ## Codes from 20001 to 29999
 
-The application code has done something wrong.
+The application code did something wrong.
 
 ### 20001
 
@@ -184,7 +184,7 @@ Your request uses an OData feature that isn't supported.
 Your request contains an invalid ID for the target notebook, section group, section, or page entity.
 
 ### 20113
-The resource specified in the request has been deleted.
+The resource specified in the request was deleted.
 
 ### 20115
 The name contains invalid characters. A notebook name cannot contain any of the following characters: `? * \ / : < > | ' "`
@@ -235,13 +235,13 @@ Your request contains an invalid value for Content-Type. Use the value indicated
 Your request contains invalid content. Common causes for this are a missing Content-Type request header and/or no content in the body of the request. 
 
 ### 20133
-Your request specifies a PATCH target that is not supported. See [Update page content](onenote-update-page.md).
+Your request specifies a PATCH target that isn't supported. See [Update page content](onenote-update-page.md).
 
 ### 20134
-Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure it's prefixed with a # symbol. See [Update page content](onenote-update-page.md).
+Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure you prefix it with a # symbol. See [Update page content](onenote-update-page.md).
 
 ### 20135
-Your request specifies an entity type that is not supported for the PATCH operation. See [Update page content](onenote-update-page.md).
+Your request specifies an entity type that isn't supported for the PATCH operation. See [Update page content](onenote-update-page.md).
 
 ### 20136
 Your request contains an invalid or missing **data-render-src** or **data-render-method** attribute. See [Extract data from captures](onenote-extract-data.md).
@@ -269,7 +269,7 @@ See [Use note tags](onenote-note-tags.md).
 The target in your PATCH request doesn't support the specified action. See [Update page content](onenote-update-page.md).
 
 ### 20142
-Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which is not supported. See [Supported OData query string options](onenote-get-content.md#supported-odata-query-string-options).
+Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which isn't supported. See [Supported OData query string options](onenote-get-content.md#supported-odata-query-string-options).
 
 ### 20143
 The OData query is invalid.
@@ -284,7 +284,7 @@ The **select** or **expand** expression in your request contains an invalid term
 The `style="position:absolute"` attribute is specified on an element, but the **body** element does not specify `data-absolute-enabled="true"`, which is required to support positioning. All position settings will be ignored. See [Create absolute positioned elements](onenote-abs-pos.md).
 
 ### 20147
-The `style="position:absolute"` attribute is specified on an element that is not a direct child of the **body** element, which is not supported. If the element is a **div**, **img**, or **object**, make it a direct child of the body; otherwise the position settings is ignored and its content renders inside an absolute positioned div. See [Create absolute positioned elements](onenote-abs-pos.md).
+The `style="position:absolute"` attribute is specified on an element that isn't a direct child of the **body** element, which isn't supported. If the element is a **div**, **img**, or **object**, make it a direct child of the body; otherwise the position settings is ignored and its content renders inside an absolute positioned div. See [Create absolute positioned elements](onenote-abs-pos.md).
 
 ### 20148
 The `style="position:absolute"` attribute is specified on an element type that does not support it. Only **div**, **img**, and **object** elements that are direct children of the page body support positioning. See [Create absolute positioned elements](onenote-abs-pos.md).
@@ -293,10 +293,10 @@ The `style="position:absolute"` attribute is specified on an element type that d
 Your request specifies a target element that cannot be found.
 
 ### 20150
-The request is not valid for this authentication type. Use the `../me/onenote/` path instead.
+The request isn't valid for this authentication type. Use the `../me/onenote/` path instead.
 
 ### 20151
-The request is not valid for this authentication type. Use the `../me/onenote/section/{id}/pages` endpoint to create a page in a specific section.
+The request isn't valid for this authentication type. Use the `../me/onenote/section/{id}/pages` endpoint to create a page in a specific section.
 
 ### 20152
 There is no name value specified for the entity. The name must be defined, and it cannot contain whitespaces only.
@@ -331,7 +331,7 @@ The application has issued too many requests on behalf of a user in a short peri
 For more information, see [Microsoft Graph service-specific throttling guidance](./throttling-limits.md).
 
 ### 20168
-The video source specified in the request is not supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.
+The video source specified in the request isn't supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.
 
 ### 20266
 The number of maximum sections is exceeded for this request. To get pages for accounts with a high number of sections, we recommend getting pages for one section at a time (use the ~/sections/{id}/pages API).
@@ -350,10 +350,10 @@ Nothing more can be added to the requested section because it has reached its ma
 Resource consumption is too high for the request. Either the target user account has a large dataset, or the service is receiving a high number of concurrent requests to the same site (for example, the user's personal site or a team site).
 
 ### 30104
-The user account has been suspended.
+The user account was suspended.
 
 ### 30105
-The user's personal OneDrive for Business site is not provisioned, which is required to access notebooks. The OneNote service will provision the site now. This process may take several minutes.
+The user's personal OneDrive for Business site isn't provisioned, which is required to access notebooks. The OneNote service will provision the site now. This process may take several minutes.
 
 ### 30106
 OneDrive for Business is being provisioned for the user.
@@ -381,7 +381,7 @@ There is a generic error with Student Information Services.
 Multiple users affected by the request had the same username.
 
 ### 30113
-The notebook is not configured to allow invites.
+The notebook isn't configured to allow invites.
 
 ### 30114
 There is a required parameter missing.
