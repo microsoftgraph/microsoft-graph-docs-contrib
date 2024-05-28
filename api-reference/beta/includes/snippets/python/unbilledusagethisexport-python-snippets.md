@@ -4,8 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.reports.partners.billing.usage.unbilled.microsoft_graph_partners_billing_export.export_post_request_body import ExportPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.reports.partners.billing.usage.unbilled.microsoft_graph_partners_billing_export.export_post_request_body import ExportPostRequestBody
+from msgraph_beta.generated.models.attribute_set import AttributeSet
+from msgraph_beta.generated.models.billing_period import BillingPeriod
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -21,9 +21,9 @@ Represents the weighted contribution of an assignment to a class average grade.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add gradingCategory](../api/educationassignment-post-gradingcategory.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
-|[Remove gradingCategory](../api/educationassignment-delete-gradingcategory.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
-|[Update gradingCategory](../api/educationgradingcategory-update.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
+|[Add](../api/educationassignment-post-gradingcategory.md) | [gradingCategory](educationgradingcategory.md) | Add a new **gradingCategory**.|
+|[Delete](../api/educationassignment-delete-gradingcategory.md) | [educationCategory](educationgradingcategory.md) | Remove existing **gradingCategory**.|
+|[Update](../api/educationgradingcategory-update.md) | [educationCategory](educationgradingcategory.md) | Update a single **gradingCategory**.|
 
 
 ## Properties

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta device-management virtual-endpoint on-premises-connections create --body '{\
   "displayName": "test-canary-02",\
   "connectionType": "hybridAzureADJoin",\

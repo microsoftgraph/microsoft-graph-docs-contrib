@@ -7,6 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.education_class import EducationClass
 from msgraph.generated.models.identity_set import IdentitySet
+from msgraph.generated.models.education_external_source import EducationExternalSource
 from msgraph.generated.models.education_term import EducationTerm
 
 graph_client = GraphServiceClient(credentials, scopes)

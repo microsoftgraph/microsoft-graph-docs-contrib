@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 from msgraph import GraphServiceClient
-from msgraph.generated.models.ediscovery_search import EdiscoverySearch
+from msgraph.generated.models.security.ediscovery_search import EdiscoverySearch
 
 graph_client = GraphServiceClient(credentials, scopes)
 

@@ -5,6 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
 import (
 	  "context"
 	  "time"
@@ -12,9 +15,6 @@ import (
 	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
 	  //other-imports
 )
-
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
-
 
 requestBody := graphmodelssecurity.NewAuditLogQuery()
 displayName := "String"
@@ -57,6 +57,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 queries, err := graphClient.Security().AuditLog().Queries().Post(context.Background(), requestBody, nil)
 
 

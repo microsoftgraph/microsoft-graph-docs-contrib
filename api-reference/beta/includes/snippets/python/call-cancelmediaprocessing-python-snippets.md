@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-from msgraph import GraphServiceClient
-from msgraph.generated.communications.calls.item.cancel_media_processing.cancel_media_processing_post_request_body import CancelMediaProcessingPostRequestBody
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.communications.calls.item.cancel_media_processing.cancel_media_processing_post_request_body import CancelMediaProcessingPostRequestBody
 
 graph_client = GraphServiceClient(credentials, scopes)
 

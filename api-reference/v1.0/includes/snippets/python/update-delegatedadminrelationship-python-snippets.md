@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 from msgraph import GraphServiceClient
 from msgraph.generated.tenant_relationships.delegated_admin_relationships.item.delegated_admin_relationship_item_request_builder import DelegatedAdminRelationshipItemRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph.generated.models.delegated_admin_relationship import DelegatedAdminRelationship
 from msgraph.generated.models.delegated_admin_relationship_customer_participant import DelegatedAdminRelationshipCustomerParticipant
 from msgraph.generated.models.delegated_admin_access_details import DelegatedAdminAccessDetails
@@ -38,7 +39,7 @@ request_body = DelegatedAdminRelationship(
 	auto_extend_duration = "P180D",
 )
 
-request_configuration = DelegatedAdminRelationshipItemRequestBuilder.DelegatedAdminRelationshipItemRequestBuilderPatchRequestConfiguration()
+request_configuration = RequestConfiguration()
 request_configuration.headers.add("If-Match", "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\"")
 
 

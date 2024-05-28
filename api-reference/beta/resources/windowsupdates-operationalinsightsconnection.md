@@ -20,9 +20,9 @@ Inherits from [resourceConnection](../resources/windowsupdates-resourceconnectio
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List operationalInsightsConnections](../api/adminwindowsupdates-list-resourceconnections-operationalinsightsconnection.md)|[microsoft.graph.windowsUpdates.operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) collection|Get a list of the [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) objects and their properties.|
-|[Create operationalInsightsConnection](../api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md)|[microsoft.graph.windowsUpdates.operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md)|Create a new [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.|
-|[Get operationalInsightsConnection](../api/windowsupdates-operationalinsightsconnection-get.md)|[microsoft.graph.windowsUpdates.operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md)|Read the properties and relationships of an [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.|
+|[List](../api/adminwindowsupdates-list-resourceconnections-operationalinsightsconnection.md)|[microsoft.graph.windowsUpdates.operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) collection|Get a list of the [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) objects and their properties.|
+|[Create](../api/adminwindowsupdates-post-resourceconnections-operationalinsightsconnection.md)|[microsoft.graph.windowsUpdates.operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md)|Create a new [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.|
+|[Get](../api/windowsupdates-operationalinsightsconnection-get.md)|[microsoft.graph.windowsUpdates.operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md)|Read the properties and relationships of an [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.|
 |[Delete operationalInsightsConnection](../api/windowsupdates-operationalinsightsconnection-delete.md)|None|Delete an [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.|
 
 ## Properties

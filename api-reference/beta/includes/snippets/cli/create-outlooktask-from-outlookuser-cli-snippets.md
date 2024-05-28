@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 mgc-beta users outlook tasks create --user-id {user-id} --body '{\
   "subject": "Shop for children's weekend",\
   "startDateTime": {\
