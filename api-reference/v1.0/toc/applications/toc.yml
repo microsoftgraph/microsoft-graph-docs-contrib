@@ -263,10 +263,120 @@ items:
       href: ../../api/serviceprincipal-list-tokenlifetimepolicies.md
     - name: Remove tokenLifetimePolicy
       href: ../../api/serviceprincipal-delete-tokenlifetimepolicies.md
+  - name: Policies
+    items:
+    - name: Claims mapping policy
+      items:
+      - name: Claims mapping policy
+        href: ../../resources/claimsmappingpolicy.md
+      - name: Create claimsMappingPolicy
+        href: ../../api/claimsmappingpolicy-post-claimsmappingpolicies.md
+      - name: Get claimsMappingPolicy
+        href: ../../api/claimsmappingpolicy-get.md
+      - name: List claimsMappingPolicies
+        href: ../../api/claimsmappingpolicy-list.md
+      - name: Update claimsMappingPolicy
+        href: ../../api/claimsmappingpolicy-update.md
+      - name: Delete claimsMappingPolicy
+        href: ../../api/claimsmappingpolicy-delete.md
+      - name: Directory objects
+        items:
+        - name: List appliesTo
+          href: ../../api/claimsmappingpolicy-list-appliesto.md
+        - name: Assign claimsMappingPolicy
+          href: ../../api/serviceprincipal-post-claimsmappingpolicies.md
+        - name: List assigned claimsMappingPolicy
+          href: ../../api/serviceprincipal-list-claimsmappingpolicies.md
+        - name: Remove claimsMappingPolicy
+          href: ../../api/serviceprincipal-delete-claimsmappingpolicies.md
+    - name: Home realm discovery policy
+      items:
+      - name: Home realm discovery policy
+        href: ../../resources/homerealmdiscoverypolicy.md
+      - name: List
+        href: ../../api/homerealmdiscoverypolicy-list.md
+      - name: Create
+        href: ../../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+      - name: Get
+        href: ../../api/homerealmdiscoverypolicy-get.md
+      - name: Update
+        href: ../../api/homerealmdiscoverypolicy-update.md
+      - name: Delete
+        href: ../../api/homerealmdiscoverypolicy-delete.md
+      - name: List applied to applications
+        href: ../../api/homerealmdiscoverypolicy-list-appliesto.md
+    - name: Permission grant policy
+      items:
+      - name: Permission grant policy
+        href: ../../resources/permissiongrantpolicy.md
+      - name: List
+        href: ../../api/permissiongrantpolicy-list.md
+      - name: Create
+        href: ../../api/permissiongrantpolicy-post-permissiongrantpolicies.md
+      - name: Get
+        href: ../../api/permissiongrantpolicy-get.md
+      - name: Update
+        href: ../../api/permissiongrantpolicy-update.md
+      - name: Include condition sets
+        items:
+        - name: List includes
+          href: ../../api/permissiongrantpolicy-list-includes.md
+        - name: Create in includes
+          href: ../../api/permissiongrantpolicy-post-includes.md
+        - name: Delete from includes
+          href: ../../api/permissiongrantpolicy-delete-includes.md
+      - name: Exclude condition sets
+        items:
+        - name: List excludes
+          href: ../../api/permissiongrantpolicy-list-excludes.md
+        - name: Create in excludes
+          href: ../../api/permissiongrantpolicy-post-excludes.md
+        - name: Delete from excludes
+          href: ../../api/permissiongrantpolicy-delete-excludes.md
+    - name: Permission grant condition set
+      href: ../../resources/permissiongrantconditionset.md
+    - name: Token issuance policy
+      items:
+      - name: Token issuance policy
+        href: ../../resources/tokenissuancepolicy.md
+      - name: List
+        href: ../../api/tokenissuancepolicy-list.md
+      - name: Create
+        href: ../../api/tokenissuancepolicy-post-tokenissuancepolicy.md
+      - name: Get
+        href: ../../api/tokenissuancepolicy-get.md
+      - name: Update
+        href: ../../api/tokenissuancepolicy-update.md
+      - name: Delete
+        href: ../../api/tokenissuancepolicy-delete.md
+      - name: List applied to applications
+        href: ../../api/tokenissuancepolicy-list-appliesto.md
+    - name: Token lifetime policy
+      items:
+      - name: Token lifetime policy
+        href: ../../resources/tokenlifetimepolicy.md
+      - name: List
+        href: ../../api/tokenlifetimepolicy-list.md
+      - name: Create
+        href: ../../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+      - name: Get
+        href: ../../api/tokenlifetimepolicy-get.md
+      - name: Update
+        href: ../../api/tokenlifetimepolicy-update.md
+      - name: Delete
+        href: ../../api/tokenlifetimepolicy-delete.md
+      - name: List applied to applications
+        href: ../../api/tokenlifetimepolicy-list-appliesto.md
 - name: Synchronization
   items:
   - name: Overview
     href: ../../resources/synchronization-overview.md
+  - name: Directory definition
+    items:
+    - name: Directory definition
+      href: ../../resources/synchronization-directorydefinition.md
+    - name: Discover
+      href: ../../api/synchronization-directorydefinition-discover.md
   - name: Synchronization
     items:
     - name: Synchronization
