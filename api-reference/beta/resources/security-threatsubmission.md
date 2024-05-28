@@ -23,15 +23,15 @@ This resource is an abstract type. It's the base type for [emailThreatSubmission
 | Property        | Type                       | Description                                                                      |
 |:----------------|:---------------------------|:---------------------------------------------------------------------------------|
 | adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| Specifies the admin review property that constitutes of who reviewed the user submission, when and what was it identified as. |
-| category        | submissionCategory         | Specifies the category of the submission. Supports `$filter = category eq 'value'`. The possible values are: `notJunk`, `spam`, `phishing`, `malware` and `unkownFutureValue`.|
-| clientSource    | submissionClientSource     | Specifies the source of the submission. The possible values are: `microsoft`,  `other` and `unkownFutureValue`. |
-| contentType     | submissionContentType      | Specifies the type of content being submitted. The possible values are: `email`, `url`, `file`, `app` and `unkownFutureValue`.  |
+| category        | submissionCategory         | Specifies the category of the submission. Supports `$filter = category eq 'value'`. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, and `unkownFutureValue`.|
+| clientSource    | submissionClientSource     | Specifies the source of the submission. The possible values are: `microsoft`, `other`, and `unkownFutureValue`. |
+| contentType     | submissionContentType      | Specifies the type of content being submitted. The possible values are: `email`, `url`, `file`, `app`, and `unkownFutureValue`.  |
 | createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | Specifies who submitted the email as a threat. Supports `$filter = createdBy/email eq 'value'`. |
 | createdDateTime | DateTimeOffset  | Specifies when the threat submission was created. Supports `$filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z`.             |
 | id              | String                     | Specifies the ID of threat submission. |
 | result          | [security.submissionResult](../resources/security-submissionresult.md)          | Specifies the result of the analysis performed by Microsoft.  |
-| source          | submissionSource           | Specifies the role of the submitter. Supports `$filter = source eq 'value'`. The possible values are: `administrator`,  `user` and `unkownFutureValue`.  |
-| status          | longRunningOperationStatus | Indicates whether the threat submission has been analyzed by Microsoft. Supports `$filter = status eq 'value'`. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped` and `unkownFutureValue`. |
+| source          | submissionSource           | Specifies the role of the submitter. Supports `$filter = source eq 'value'`. The possible values are: `administrator`,  `user`, and `unkownFutureValue`.  |
+| status          | longRunningOperationStatus | Indicates whether the threat submission has been analyzed by Microsoft. Supports `$filter = status eq 'value'`. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, and `unkownFutureValue`. |
 | tenantId        | String                     | Indicates the tenant id of the submitter. Not required when created using a `POST` operation. It's extracted from the token of the post API call. |
 
 ## Relationships
