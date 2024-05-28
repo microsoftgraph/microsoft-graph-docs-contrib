@@ -333,6 +333,9 @@ For more information, see [Microsoft Graph service-specific throttling guidance]
 ### 20168
 The video source specified in the request is not supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.
 
+### 20266
+The number of maximum sections is exceeded for this request. To get pages for accounts with a high number of sections, we recommend getting pages for one section at a time (use the ~/sections/{id}/pages API).
+
 
 ## Codes from 30001 to 39999
 Something is wrong with the user's account.
