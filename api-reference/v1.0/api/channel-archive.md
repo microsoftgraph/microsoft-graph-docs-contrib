@@ -118,7 +118,7 @@ The following example shows the `400 Bad Request` response code with a correspon
 <!-- {
   "blockType": "response",
   "name": "archive_channel_on_archived_team",
-  "@odata.type": "odata.error",
+  "@odata.type": "microsoft.graph.publicError",
   "truncated": true
 }-->
 ```http
